@@ -35,7 +35,20 @@ let sessionCorrect = 0;
 let dataUrl = "";
 
 const esc = (s: string) =>
-  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+function hideOtherPanels(current: string): void {
+  for (const id of ["library-panel", "game-panel", "quiz-panel"]) {
+    if (id === current) continue;
+    const p = document.getElementById(id);
+    if (p) p.hidden = true;
+  }
+}
 
 function todayStr(): string {
   const d = new Date();
@@ -59,7 +72,11 @@ function loadReviews(): Record<string, Review> {
 function loadMetric(): QuizMetric {
   try {
     const m = JSON.parse(localStorage.getItem(LS_METRIC) ?? "null") as QuizMetric | null;
-    if (m) return m;
+    if (
+      m &&
+      [m.sessions, m.completed, m.answered, m.correct].every((n) => Number.isFinite(n))
+    )
+      return m;
   } catch {
     /* bỏ qua */
   }
@@ -100,6 +117,7 @@ function shuffle<T>(arr: T[]): T[] {
 async function buildCards(): Promise<Card[]> {
   if (cards.length) return cards;
   const res = await fetch(dataUrl);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const gj = (await res.json()) as {
     features: Array<{ properties: Record<string, string> }>;
   };
@@ -113,7 +131,7 @@ async function buildCards(): Promise<Card[]> {
   );
 
   const pick = <T>(pool: T[], not: T, n: number): T[] =>
-    shuffle(pool.filter((x) => x !== not)).slice(0, n);
+    shuffle([...new Set(pool.filter((x) => x !== not))]).slice(0, n);
 
   const bank: Card[] = [];
   for (const p of merged) {
@@ -184,7 +202,15 @@ function renderQuestion(): void {
       <button id="quiz-start" type="button">Bắt đầu phiên mới (${SESSION_SIZE} câu)</button>
       <p class="muted">Phương pháp lặp lại ngắt quãng: câu trả lời đúng sẽ lâu gặp lại hơn, câu sai quay lại ngay hôm sau. Toàn bộ tiến trình nằm trên máy của bạn.</p>`;
     document.getElementById("quiz-start")?.addEventListener("click", () => {
-      session = pickSession();
+      const next = pickSession();
+      if (next.length === 0) {
+        const fb = content.querySelector(".muted");
+        if (fb)
+          fb.textContent =
+            "🎉 Bạn đã ôn hết mọi thẻ và chưa có thẻ nào đến hạn — quay lại vào ngày mai nhé!";
+        return;
+      }
+      session = next;
       sessionIndex = 0;
       sessionCorrect = 0;
       const m = loadMetric();
@@ -203,7 +229,7 @@ function renderQuestion(): void {
     <div class="quiz-options">${options
       .map((o) => `<button type="button" class="quiz-option" data-v="${esc(o)}">${esc(o)}</button>`)
       .join("")}</div>
-    <div id="quiz-feedback"></div>`;
+    <div id="quiz-feedback" aria-live="polite"></div>`;
   content.querySelectorAll<HTMLButtonElement>(".quiz-option").forEach((btn) =>
     btn.addEventListener("click", () => {
       const ok = btn.dataset.v === card.correct;
@@ -235,15 +261,22 @@ export function initQuiz(geojsonUrl: string): void {
   document.getElementById("quiz-btn")?.addEventListener("click", () => {
     const panel = document.getElementById("quiz-panel");
     if (!panel) return;
+    hideOtherPanels("quiz-panel");
     panel.hidden = false;
     const content = document.getElementById("quiz-content");
     if (content && !cards.length)
       content.innerHTML = `<p class="muted">Đang chuẩn bị câu hỏi…</p>`;
-    void buildCards().then(() => {
-      session = [];
-      sessionIndex = 0;
-      renderQuestion();
-    });
+    void buildCards()
+      .then(() => {
+        session = [];
+        sessionIndex = 0;
+        renderQuestion();
+      })
+      .catch(() => {
+        const c = document.getElementById("quiz-content");
+        if (c)
+          c.innerHTML = `<p class="muted">⚠️ Không tải được ngân hàng câu hỏi — vui lòng kiểm tra kết nối và thử lại.</p>`;
+      });
   });
   document.getElementById("quiz-close")?.addEventListener("click", () => {
     const panel = document.getElementById("quiz-panel");

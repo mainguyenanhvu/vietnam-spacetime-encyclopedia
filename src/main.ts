@@ -285,7 +285,12 @@ async function loadProfile(name: string): Promise<ProvinceProfile | null> {
 }
 
 const esc = (s: string) =>
-  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 const list = (items: string[] | undefined) =>
   items?.length ? `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>` : "";
 
@@ -387,9 +392,9 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
       ];
 
   content.innerHTML = `
-    <h2>${name}</h2>
+    <h2>${esc(name)}</h2>
     <table class="facts">${rows
-      .map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`)
+      .map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`)
       .join("")}</table>
     ${
       isPhapThuoc
@@ -559,6 +564,10 @@ async function openLibrary(): Promise<void> {
   const panel = document.getElementById("library-panel");
   const content = document.getElementById("library-content");
   if (!panel || !content) return;
+  for (const id of ["game-panel", "quiz-panel"]) {
+    const other = document.getElementById(id);
+    if (other) other.hidden = true;
+  }
   panel.hidden = false;
   content.innerHTML = `<p class="muted">Đang tải thư viện…</p>`;
   const lib = await loadLiterature();

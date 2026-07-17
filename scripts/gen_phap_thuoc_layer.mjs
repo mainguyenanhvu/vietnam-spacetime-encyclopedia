@@ -52,6 +52,8 @@ const out = {
       } else {
         const owner = p.thuoc_tinh_63 ?? "";
         p.ky = NAM_KY.has(owner) ? "Nam Kỳ" : TRUNG_KY.has(owner) ? "Trung Kỳ" : "Bắc Kỳ";
+        if (!NAM_KY.has(owner) && !TRUNG_KY.has(owner))
+          console.warn(`⚠️ Đảo «${p.ten}» (thuộc «${owner}») gán Bắc Kỳ theo mặc định — cần rà soát.`);
       }
     } else {
       const name = p["Tỉnh thành cũ"];

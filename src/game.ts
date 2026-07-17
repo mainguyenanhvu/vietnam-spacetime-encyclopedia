@@ -32,7 +32,20 @@ let features: GameFeature[] = [];
 let boundariesUrl = "";
 
 const esc = (s: string) =>
-  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+function hideOtherPanels(current: string): void {
+  for (const id of ["library-panel", "game-panel", "quiz-panel"]) {
+    if (id === current) continue;
+    const p = document.getElementById(id);
+    if (p) p.hidden = true;
+  }
+}
 
 function todayStr(): string {
   const d = new Date();
@@ -71,6 +84,7 @@ function bearingArrow(from: [number, number], to: [number, number]): string {
 async function loadFeatures(): Promise<GameFeature[]> {
   if (features.length) return features;
   const res = await fetch(boundariesUrl);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const gj = (await res.json()) as {
     features: Array<{
       geometry: { type: string; coordinates: number[][][] | number[][][][] };
@@ -138,7 +152,7 @@ function silhouetteSvg(f: GameFeature): string {
 function loadState(): DayState {
   try {
     const s = JSON.parse(localStorage.getItem(LS_STATE) ?? "null") as DayState | null;
-    if (s && s.date === todayStr()) return s;
+    if (s && s.date === todayStr() && Array.isArray(s.guesses)) return s;
   } catch {
     /* bỏ qua */
   }
@@ -152,7 +166,12 @@ function saveState(s: DayState): void {
 function loadStats(): Stats {
   try {
     const s = JSON.parse(localStorage.getItem(LS_STATS) ?? "null") as Stats | null;
-    if (s) return s;
+    if (
+      s &&
+      [s.played, s.wins, s.streak, s.maxStreak].every((n) => Number.isFinite(n)) &&
+      typeof s.lastDate === "string"
+    )
+      return s;
   } catch {
     /* bỏ qua */
   }
@@ -225,8 +244,12 @@ function importProgress(file: File, onDone: () => void): void {
   void file.text().then((text) => {
     try {
       const data = JSON.parse(text) as Record<string, string>;
-      for (const k of [LS_STATE, LS_STATS])
-        if (typeof data[k] === "string") localStorage.setItem(k, data[k]);
+      for (const k of [LS_STATE, LS_STATS]) {
+        if (typeof data[k] !== "string") continue;
+        JSON.parse(data[k]); // phải là JSON hợp lệ
+        localStorage.setItem(k, data[k]);
+      }
+      // loadStats/loadState tự loại bỏ dữ liệu sai cấu trúc khi đọc lại
       onDone();
     } catch {
       alert("Tệp tiến trình không hợp lệ.");
@@ -269,7 +292,7 @@ function render(): void {
     <h2>🎮 Đoán Tỉnh Xưa <span class="muted">— ${todayStr()}</span></h2>
     <p class="muted">Đoán tỉnh/thành (bản đồ 34 tỉnh từ 1/7/2025) qua hình bóng. Sai sẽ được báo khoảng cách và hướng tới đáp án.</p>
     ${silhouetteSvg(target)}
-    <div id="dtx-rows">${guessRows(state, target)}</div>
+    <div id="dtx-rows" aria-live="polite">${guessRows(state, target)}</div>
     ${endBlock}
     <div class="dtx-tools">
       <button id="dtx-export" type="button">💾 Xuất tiến trình</button>
@@ -310,11 +333,18 @@ export function initGame(geojsonUrl: string): void {
   document.getElementById("game-btn")?.addEventListener("click", () => {
     const panel = document.getElementById("game-panel");
     if (!panel) return;
+    hideOtherPanels("game-panel");
     panel.hidden = false;
     const content = document.getElementById("game-content");
     if (content && !features.length)
       content.innerHTML = `<p class="muted">Đang tải trò chơi…</p>`;
-    void loadFeatures().then(render);
+    void loadFeatures()
+      .then(render)
+      .catch(() => {
+        const c = document.getElementById("game-content");
+        if (c)
+          c.innerHTML = `<p class="muted">⚠️ Không tải được dữ liệu trò chơi — vui lòng kiểm tra kết nối và thử lại.</p>`;
+      });
   });
   document.getElementById("game-close")?.addEventListener("click", () => {
     const panel = document.getElementById("game-panel");

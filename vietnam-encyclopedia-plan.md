@@ -93,9 +93,9 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 | 1 | Bản đồ 2 thời kỳ 63⇄34 + layer control + chủ quyền HS-TS + audit CI | M | ✅ 2026-07-17 (v0.2) |
 | 2 | Schema hồ sơ tỉnh + validator CI; 5 tỉnh pilot; đồ thị kế thừa 63→34 (`events.json`) | M | ✅ 2026-07-17 (v0.3) |
 | 2c | **Thư viện văn học**: thơ yêu nước (PD toàn văn / còn bản quyền chỉ trích ≤8 dòng), giai thoại Trạng nguyên, «Lịch sử nước ta» (HCM 1942, PD — văn bản đối chiếu 2 nguồn), cross-link theo tỉnh, validator nguồn trong CI | M | ✅ 2026-07-17 (v0.5) |
-| 2b | **Spike khả thi ranh giới tiền-1976** (1 tuần, 1 thời kỳ mẫu — vd Bắc/Trung/Nam Kỳ 1900 từ bản đồ Commons PD) — chạy TRƯỚC Phase 3 theo phản biện #5 | S | ⏭️ tiếp theo |
-| 3 | Quiz engine (SM-2 localStorage) + game #1 Đoán Tỉnh Xưa + metric giáo dục (completion rate, không PII) | M | 🟡 Game #1 ✅ 2026-07-17 (v0.7: daily silhouette, streak, share, xuất/nhập tiến trình); SM-2 + metric còn lại |
-| 4 | Overlay «wow» đợt 1: bản đồ cổ Taberd 1838 + opacity slider; pin Di tích QGĐB + Bảo vật quốc gia; ribbon niên hiệu | M | — |
+| 2b | Spike ranh giới tiền-1976 → **thành sản phẩm luôn**: lớp Pháp thuộc 1887–1945 (Bắc/Trung/Nam Kỳ 25/19/19, kiểm chứng đa nguồn; đảo gắn theo Dụ 10/1938 & NĐ 21/12/1933; assertion cứng trong script gen). Kết luận spike: ranh giới lịch sử theo phép xấp xỉ địa giới hiện đại KHẢ THI, có disclaimer; ranh giới chính xác từng thời kỳ cần số hoá bản đồ cổ (Phase 6) | S | ✅ 2026-07-17 (v0.8) |
+| 3 | Quiz engine (SM-2 localStorage) + game #1 Đoán Tỉnh Xưa + metric giáo dục (completion rate, không PII) | M | ✅ 2026-07-17 (v0.7–0.8: game + quiz SM-2; ngân hàng 89 thẻ tự sinh = 34 thủ phủ + 24 hợp thành + 31 sáp-nhập-ngược — QA xác nhận 0 thẻ trùng đáp án) |
+| 4 | Overlay «wow» đợt 1: bản đồ cổ Taberd 1838 (✅ viewer trong Thư viện — bản georeference chờ GCP chuẩn); pin Di tích QGĐB + Bảo vật quốc gia; ribbon niên hiệu | M | 🟡 |
 | 5 | 29 tỉnh còn lại (đo giờ/tỉnh từ pilot để lập lịch thực tế) + overlay đợt 2 (làng nghề, trận đánh, bão) | L | — |
 | 6 | Ranh giới lịch sử đầy đủ (tuỳ kết quả spike 2b) + animation morph + Nam tiến | L | — |
 | 7 | Media pipeline (Commons/R2/B2/HF) + PMTiles + Cloudflare Pages migration | M | — |
