@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#topbar {
+  padding: 0.6rem 1rem;
+  background: #7f1d1d;
+  color: #fef3c7;
+}
+
+#topbar h1 {
+  font-size: 1.1rem;
+}
+
+#topbar .subtitle {
+  font-weight: 400;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+#map {
+  flex: 1;
+  min-height: 0;
+}
+
+#timeline-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: #1c1917;
+  color: #e7e5e4;
+  font-size: 0.9rem;
+}
+
+#timeline {
+  flex: 1;
+}
+
+#province-panel {
+  position: absolute;
+  top: 3.5rem;
+  right: 0.75rem;
+  width: min(360px, 90vw);
+  max-height: calc(100% - 9rem);
+  overflow-y: auto;
+  background: #fffbeb;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
+  padding: 1rem;
+  z-index: 10;
+}
+
+#panel-close {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

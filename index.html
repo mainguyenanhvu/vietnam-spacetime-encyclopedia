@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Từ điển bách khoa Việt Nam theo không gian–thời gian: khám phá lịch sử, văn hoá, địa lý các tỉnh thành Việt Nam qua các thời kỳ trên bản đồ tương tác."
+    />
+    <title>Bách khoa Việt Nam — Không gian &amp; Thời gian</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="topbar">
+        <h1>🇻🇳 Bách khoa Việt Nam <span class="subtitle">không gian – thời gian</span></h1>
+      </header>
+      <div id="map"></div>
+      <footer id="timeline-bar">
+        <label for="timeline">Dòng thời gian:</label>
+        <input id="timeline" type="range" min="0" max="0" value="0" disabled />
+        <span id="period-label">Đang tải dữ liệu…</span>
+      </footer>
+      <aside id="province-panel" hidden>
+        <button id="panel-close" aria-label="Đóng">×</button>
+        <div id="panel-content"></div>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

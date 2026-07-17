@@ -1,0 +1,19 @@
+{
+  "name": "vietnam-spacetime-encyclopedia",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Từ điển bách khoa Việt Nam theo không gian–thời gian trên bản đồ tương tác",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "maplibre-gl": "^4.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
