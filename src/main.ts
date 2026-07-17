@@ -184,6 +184,117 @@ function buildLayerControl(): void {
   document.getElementById("app")?.appendChild(el);
 }
 
+// ---------------------------------------------------------------------------
+// Hồ sơ bách khoa tỉnh (public/data/provinces/<slug>.json)
+// ---------------------------------------------------------------------------
+const SLUG_ALIASES: Record<string, string> = {
+  "TP HCM": "thanh-pho-ho-chi-minh",
+};
+
+function slugify(name: string): string {
+  return (
+    SLUG_ALIASES[name] ??
+    name
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      .replace(/đ/g, "d")
+      .replace(/Đ/g, "D")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")
+  );
+}
+
+interface ProvinceProfile {
+  ten: string;
+  trang_thai: string;
+  giai_nghia_ten: string;
+  tong_quan: string;
+  ten_thoi_ky: Array<{ ten: string; thoi_ky: string }>;
+  lich_su: string[];
+  khao_co?: Array<{ ten: string; mo_ta: string }>;
+  van_hoa?: {
+    dac_san?: string[];
+    le_hoi?: string[];
+    lang_nghe?: string[];
+    kien_truc?: string[];
+    phuong_ngu?: string;
+  };
+  danh_nhan: Array<{ ten: string; ghi_chu: string }>;
+  truyen_thuyet?: Array<{ ten: string; tom_tat: string }>;
+  bien_so_xe?: string[];
+  sap_nhap_2025?: string;
+  sources: string[];
+}
+
+const profileCache = new Map<string, ProvinceProfile | null>();
+
+async function loadProfile(name: string): Promise<ProvinceProfile | null> {
+  const slug = slugify(name);
+  if (profileCache.has(slug)) return profileCache.get(slug) ?? null;
+  try {
+    const res = await fetch(
+      `${import.meta.env.BASE_URL}data/provinces/${slug}.json`,
+    );
+    const profile = res.ok ? ((await res.json()) as ProvinceProfile) : null;
+    profileCache.set(slug, profile);
+    return profile;
+  } catch {
+    profileCache.set(slug, null);
+    return null;
+  }
+}
+
+const esc = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const list = (items: string[] | undefined) =>
+  items?.length ? `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>` : "";
+
+function profileHtml(p: ProvinceProfile): string {
+  const vh = p.van_hoa ?? {};
+  const section = (title: string, body: string, open = false) =>
+    body
+      ? `<details class="profile-section"${open ? " open" : ""}><summary>${title}</summary>${body}</details>`
+      : "";
+  return `
+    ${p.trang_thai === "draft" ? `<p class="draft-badge">📝 Bản nháp — đang kiểm chứng nguồn</p>` : ""}
+    <p class="tong-quan">${esc(p.tong_quan)}</p>
+    <p class="giai-nghia">💡 <em>${esc(p.giai_nghia_ten)}</em></p>
+    ${section(
+      "🕰️ Tên gọi qua các thời kỳ",
+      `<table class="facts">${p.ten_thoi_ky
+        .map((t) => `<tr><th>${esc(t.ten)}</th><td>${esc(t.thoi_ky)}</td></tr>`)
+        .join("")}</table>`,
+      true,
+    )}
+    ${section("📜 Dấu mốc lịch sử", list(p.lich_su))}
+    ${section(
+      "🏺 Di chỉ khảo cổ",
+      list(p.khao_co?.map((k) => `${k.ten} — ${k.mo_ta}`)),
+    )}
+    ${section(
+      "🎎 Văn hoá",
+      [
+        vh.dac_san?.length ? `<p><b>Đặc sản:</b> ${esc(vh.dac_san.join(", "))}</p>` : "",
+        vh.le_hoi?.length ? `<p><b>Lễ hội:</b> ${esc(vh.le_hoi.join(", "))}</p>` : "",
+        vh.lang_nghe?.length ? `<p><b>Làng nghề:</b> ${esc(vh.lang_nghe.join(", "))}</p>` : "",
+        vh.kien_truc?.length ? `<p><b>Kiến trúc:</b> ${esc(vh.kien_truc.join(", "))}</p>` : "",
+        vh.phuong_ngu ? `<p><b>Phương ngữ:</b> ${esc(vh.phuong_ngu)}</p>` : "",
+      ].join(""),
+    )}
+    ${section(
+      "🌟 Danh nhân & anh hùng",
+      list(p.danh_nhan.map((d) => `${d.ten}: ${d.ghi_chu}`)),
+    )}
+    ${section(
+      "🐉 Truyền thuyết & giai thoại",
+      list(p.truyen_thuyet?.map((t) => `${t.ten} — ${t.tom_tat}`)),
+    )}
+    ${p.bien_so_xe?.length ? `<p><b>🚗 Biển số xe:</b> ${esc(p.bien_so_xe.join(", "))}</p>` : ""}
+    ${p.sap_nhap_2025 ? `<p><b>🔀 Sắp xếp 2025:</b> ${esc(p.sap_nhap_2025)}</p>` : ""}
+    <details class="sources"><summary>📚 Nguồn hồ sơ</summary>${list(p.sources)}</details>`;
+}
+
 function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   const p = f.properties as Record<string, string | number>;
   const panel = document.getElementById("province-panel");
@@ -222,15 +333,25 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
     <table class="facts">${rows
       .map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`)
       .join("")}</table>
-    <p class="muted coming-soon">
-      Hồ sơ bách khoa đầy đủ (lịch sử, văn hoá, đặc sản, danh nhân, truyền thuyết…)
-      đang được biên soạn — Phase 2.
-    </p>
+    <div id="profile-slot"><p class="muted coming-soon">Đang tải hồ sơ bách khoa…</p></div>
     <details class="sources">
-      <summary>📚 Nguồn dữ liệu</summary>
+      <summary>📚 Nguồn dữ liệu bản đồ</summary>
       <ul>${NGUON_DU_LIEU.map((s) => `<li>${s}</li>`).join("")}</ul>
     </details>`;
   panel.hidden = false;
+
+  if (!isIsland) {
+    void loadProfile(name).then((profile) => {
+      const slot = document.getElementById("profile-slot");
+      if (!slot) return;
+      slot.innerHTML = profile
+        ? profileHtml(profile)
+        : `<p class="muted coming-soon">Hồ sơ bách khoa đầy đủ của tỉnh này đang được biên soạn.</p>`;
+    });
+  } else {
+    const slot = document.getElementById("profile-slot");
+    if (slot) slot.innerHTML = "";
+  }
 }
 
 document.getElementById("panel-close")?.addEventListener("click", () => {

@@ -1,6 +1,6 @@
 # 📘 KẾ HOẠCH TỔNG THỂ — Từ điển bách khoa Việt Nam theo không gian–thời gian trên bản đồ
 
-> **File plan duy nhất của dự án** (mọi cập nhật gộp về đây). v2 — 2026-07-17.
+> **File plan duy nhất của dự án** (mọi cập nhật gộp về đây). v3 — 2026-07-17 (sau vòng phản biện độc lập, xem §10).
 > Repo: https://github.com/mainguyenanhvu/vietnam-spacetime-encyclopedia
 > Live: https://mainguyenanhvu.github.io/vietnam-spacetime-encyclopedia/
 > Research chi tiết: `docs/research/*.md`
@@ -84,23 +84,30 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 
 ## 8. Lộ trình
 
-| Phase | Nội dung | Trạng thái |
-|---|---|---|
-| 0 | Nền móng: research, repo, scaffold, deploy | ✅ 2026-07-17 |
-| 1 | **Bản đồ 2 thời kỳ 63⇄34 + layer control + panel tỉnh + chủ quyền HS-TS** | ✅ 2026-07-17 (v0.2) |
-| 2 | Schema hồ sơ tỉnh + validator CI; 5 tỉnh pilot (Hà Nội, Huế, TP.HCM, Phú Thọ, Cà Mau); đồ thị kế thừa 63→34 từ NQ 202/2025/QH15 | ⏭️ tiếp theo |
-| 3 | Quiz engine (SM-2 localStorage) + game #1 Đoán Tỉnh Xưa + #2 Đua Click | — |
-| 4 | Chế độ thiếu nhi: màn chào chọn nhân vật, cốt truyện Lạc & Âu 5 tỉnh pilot, minh hoạ SVG/Lottie | — |
-| 5 | Overlay layers đợt 1 (UNESCO, làng nghề, trận đánh, bão IBTrACS) + bản đồ cổ opacity slider | — |
-| 6 | Ranh giới tiền-1976 (Pháp thuộc, triều Nguyễn…) — cần số hoá/nguồn học thuật; animation morph timeline | — |
-| 7 | Media pipeline (Commons/R2/B2/HF) + 3D glTF di tích + Cloudflare Pages migration | — |
-| 8 | 34 tỉnh đầy đủ hồ sơ + 54 dân tộc + phủ toàn bộ games | — |
+**MVP retention loop (chốt sau phản biện):** bản đồ 2 thời kỳ + hồ sơ tỉnh (chế độ người lớn) + game «Đoán Tỉnh Xưa». Chế độ thiếu nhi là sản phẩm thứ hai — chỉ khởi động khi MVP đã ship và đo được.
+
+| Phase | Nội dung | Size | Trạng thái |
+|---|---|---|---|
+| 0 | Nền móng: research, repo, scaffold, deploy | S | ✅ 2026-07-17 |
+| 1 | Bản đồ 2 thời kỳ 63⇄34 + layer control + chủ quyền HS-TS + audit CI | M | ✅ 2026-07-17 (v0.2) |
+| 2 | Schema hồ sơ tỉnh + validator CI; 5 tỉnh pilot; đồ thị kế thừa 63→34 (`events.json`) | M | ✅ 2026-07-17 (v0.3) |
+| 2b | **Spike khả thi ranh giới tiền-1976** (1 tuần, 1 thời kỳ mẫu — vd Bắc/Trung/Nam Kỳ 1900 từ bản đồ Commons PD) — chạy TRƯỚC Phase 3 theo phản biện #5 | S | ⏭️ tiếp theo |
+| 3 | Quiz engine (SM-2 localStorage) + game #1 Đoán Tỉnh Xưa + metric giáo dục (completion rate, không PII) | M | ⏭️ |
+| 4 | Overlay «wow» đợt 1: bản đồ cổ Taberd 1838 + opacity slider; pin Di tích QGĐB + Bảo vật quốc gia; ribbon niên hiệu | M | — |
+| 5 | 29 tỉnh còn lại (đo giờ/tỉnh từ pilot để lập lịch thực tế) + overlay đợt 2 (làng nghề, trận đánh, bão) | L | — |
+| 6 | Ranh giới lịch sử đầy đủ (tuỳ kết quả spike 2b) + animation morph + Nam tiến | L | — |
+| 7 | Media pipeline (Commons/R2/B2/HF) + PMTiles + Cloudflare Pages migration | M | — |
+| 8 | Chế độ thiếu nhi: cốt truyện Lạc & Âu (cần người hiệu đính văn hoá được chỉ định trước — gate §9) + games thiếu nhi + 54 dân tộc | XL | — |
 
 ## 9. Cổng kiểm chứng (verification gates)
 - CI: build + schema validation + link-check `sources[]`.
 - ✅ **Kiểm toán chủ quyền tự động trong CI** (`scripts/audit_sovereignty.mjs`, chạy trước build — thiếu là fail deploy): 12 đảo/quần đảo trọng yếu phải có polygon trong MỌI lớp ranh giới — Hoàng Sa, Trường Sa (2 cụm), Phú Quốc, Thổ Chu, Côn Đảo, Bạch Long Vĩ, Cát Bà, Cồn Cỏ, Lý Sơn, Phú Quý, Hòn Khoai. Đã bắt được và sửa 3 đảo thiếu (Thổ Chu, Bạch Long Vĩ, Phú Quý — `scripts/add_missing_islands.mjs`). Danh mục sẽ mở rộng dần (Cô Tô, Cù Lao Chàm, Nam Du, Hòn Mê…).
+- ✅ **Validator hồ sơ tỉnh trong CI** (`scripts/validate_provinces.mjs`): schema bắt buộc + `sources[]` không rỗng + trạng thái `draft|reviewed` — hồ sơ AI-soạn phải mang badge «Bản nháp» trên UI cho tới khi có người kiểm chứng.
 - Reviewer agent cho mọi PR nội dung (đối chiếu nguồn); qa-testing agent trước release.
-- Nội dung thiếu nhi: thêm cổng "văn hoá chính xác" (trang phục dân tộc đúng — đối chiếu Bảo tàng Dân tộc học).
+- **Cổng chủ đề nhạy cảm** (phản biện #6): danh sách chủ đề cần người duyệt (Tây Sơn–Nguyễn, khung thuộc địa, di dân 1954/1975, nhân vật tranh luận) — bám sát SGK/chính sử NXB Giáo dục, không diễn giải riêng; mọi đoạn thuộc danh sách phải `reviewed` mới hiển thị không badge.
+- **Cổng trẻ em** (phản biện #7): route thiếu nhi không thu thập PII, không tracker bên thứ ba (Luật Trẻ em 2016); tiến trình chỉ localStorage + nút xuất/nhập file.
+- **Cổng văn hoá dân tộc** (phản biện #3): trang phục/tập tục 54 dân tộc phải có người hiệu đính được chỉ định danh tính TRƯỚC khi sản xuất art; đối chiếu Bảo tàng Dân tộc học VN.
+- **Cổng license media** (phản biện #9): manifest license per-asset, check CI như pattern audit chủ quyền.
 
 ## 10. 🔄 Tự phản biện liên tục (cập nhật mỗi sprint)
 
@@ -115,7 +122,23 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 7. ❌ Câu chữ thiếu nhi cần chuyên gia giáo dục tiểu học hiệu đính (thuê/nhờ cộng đồng).
 8. 🤔 Mô hình đóng góp cộng đồng (PR nội dung) chưa có CONTRIBUTING.md + template — viết ở Phase 2.
 
-**Quyết định đã chốt:** stack Vite+TS+MapLibre · geodata lqtue (ranh giới) + Free-GIS-Data (đảo) · hosting GH Pages → Cloudflare · media combo Commons/R2/B2/HF · repo mẫu holetexvn chỉ tham khảo (no license).
+**Vòng phản biện độc lập 2026-07-17 (reviewer agent, 14 findings) — phản hồi:**
+- 🔴 #1 Kinh tế sản xuất nội dung → ✅ tiếp thu: 5 tỉnh pilot đã làm end-to-end làm mẫu đo; Phase 5 chỉ lập lịch sau khi đo giờ/tỉnh thực tế. Hồ sơ AI-draft phải qua vòng người kiểm chứng (badge draft).
+- 🔴 #2 Dual-mode nhân đôi scope → ✅ tiếp thu: MVP = chế độ người lớn; thiếu nhi dời xuống Phase 8, chỉ chạy khi MVP có số liệu.
+- 🔴 #3 Trang phục 54 dân tộc → ✅ thành cổng cứng trong §9 (người hiệu đính chỉ định trước khi sản xuất art).
+- 🔴 #4 Roadmap không sizing → ✅ đã thêm cột Size S/M/L/XL.
+- 🔴 #5 Rủi ro lớn nhất xếp cuối → ✅ thêm Phase 2b: spike khả thi ranh giới tiền-1976 TRƯỚC Phase 3.
+- 🔴 #6 Chủ đề lịch sử nhạy cảm → ✅ thành cổng trong §9 (bám chính sử/SGK, danh sách chủ đề cần duyệt).
+- 🔴 #7 Trẻ em/PII → ✅ thành cổng trong §9 (no PII, no tracker, export localStorage).
+- 🔴 #8 Metric giáo dục → ✅ gắn vào Phase 3: đo completion-rate quiz không PII.
+- 🟡 #9 License media → ✅ cổng manifest trong §9 (thực thi ở Phase 7).
+- 🟡 #10 PMTiles quá muộn → ✅ dời lên Phase 7 + quy tắc: không thêm GeoJSON layer >500 KB mới cho tới khi migrate.
+- 🟡 #11 localStorage mất dữ liệu → ✅ thêm nút xuất/nhập tiến trình (Phase 3).
+- 🟡 #12 25 layer không cắt MVP → ✅ Phase 4 chỉ 3 lớp wow; còn lại backlog.
+- 🟡 #13 SEO/a11y/i18n → ⏳ chấp nhận nợ, tách thành workstream riêng khi MVP ship (SEO per-tỉnh cần pre-render — ghi nhận sớm).
+- 🟡 #14 Ai phân xử PR nhạy cảm → ⏳ tạm thời: maintainer + reviewer agent; sẽ mời cố vấn sử học khi có cộng đồng.
+
+**Quyết định đã chốt:** stack Vite+TS+MapLibre · geodata lqtue (ranh giới) + Free-GIS-Data (đảo) · hosting GH Pages → Cloudflare · media combo Commons/R2/B2/HF · repo mẫu holetexvn chỉ tham khảo (no license) · MVP = người lớn + Đoán Tỉnh Xưa · spike tiền-1976 trước quiz.
 
 ## 11. Nguồn trích dẫn dữ liệu đang dùng (runtime hiển thị trong app)
 - Ranh giới 63/34 tỉnh: Lê Quang Tuệ — github.com/lqtue/LacaProvinceMap (chờ xác nhận license).
