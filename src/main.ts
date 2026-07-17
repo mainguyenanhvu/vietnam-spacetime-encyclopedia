@@ -3,6 +3,7 @@ import type { MapGeoJSONFeature } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import { initGame } from "./game";
+import { initQuiz } from "./quiz";
 
 // ---------------------------------------------------------------------------
 // Cấu hình thời kỳ (era). Mỗi era = một lớp ranh giới GeoJSON.
@@ -18,6 +19,12 @@ interface Era {
 
 const ERAS: Era[] = [
   {
+    id: "era-phapthuoc",
+    label: "1887 – 1945 · Pháp thuộc: Bắc Kỳ – Trung Kỳ – Nam Kỳ",
+    file: "data/boundaries/vn-phap-thuoc-1887-1945.geojson",
+    nameKey: "Tỉnh thành cũ",
+  },
+  {
     id: "era-63",
     label: "1976 – 30/6/2025 · 63 tỉnh thành",
     file: "data/boundaries/vn-63-tinh-truoc-2025.geojson",
@@ -31,10 +38,17 @@ const ERAS: Era[] = [
   },
 ];
 
+const KY_COLORS: Record<string, string> = {
+  "Bắc Kỳ": "#2563eb",
+  "Trung Kỳ": "#ca8a04",
+  "Nam Kỳ": "#059669",
+};
+
 const NGUON_DU_LIEU = [
   "Ranh giới 63/34 tỉnh: Lê Quang Tuệ — github.com/lqtue/LacaProvinceMap",
   "Quần đảo Hoàng Sa & Trường Sa: Free-GIS-Data — github.com/nguyenduy1133/Free-GIS-Data",
   "Danh sách sáp nhập: Nghị quyết 202/2025/QH15 — chinhphu.vn",
+  "Phân chia Bắc–Trung–Nam Kỳ: Hiệp ước Patenôtre 1884; Hoàng Sa thuộc Thừa Thiên (Dụ số 10/1938); Trường Sa thuộc Bà Rịa (Nghị định 21/12/1933) — dhannd.bocongan.gov.vn",
   "Nền bản đồ: © OpenStreetMap contributors",
 ];
 
@@ -83,15 +97,36 @@ map.on("load", () => {
       source: era.id,
       layout: { visibility: "none" },
       paint: {
-        "fill-color": [
-          "match",
-          ["get", "loai"],
-          "quan-dao",
-          "#dc2626",
-          "dao",
-          "#ea580c",
-          "#f59e0b",
-        ],
+        "fill-color":
+          era.id === "era-phapthuoc"
+            ? [
+                "match",
+                ["get", "loai"],
+                "quan-dao",
+                "#dc2626",
+                "dao",
+                "#ea580c",
+                [
+                  "match",
+                  ["get", "ky"],
+                  "Bắc Kỳ",
+                  KY_COLORS["Bắc Kỳ"],
+                  "Trung Kỳ",
+                  KY_COLORS["Trung Kỳ"],
+                  "Nam Kỳ",
+                  KY_COLORS["Nam Kỳ"],
+                  "#f59e0b",
+                ],
+              ]
+            : [
+                "match",
+                ["get", "loai"],
+                "quan-dao",
+                "#dc2626",
+                "dao",
+                "#ea580c",
+                "#f59e0b",
+              ],
         "fill-opacity": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
@@ -135,6 +170,7 @@ map.on("load", () => {
 });
 
 initGame(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
+initQuiz(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 
 function setEra(index: number): void {
   currentEra = index;
@@ -310,11 +346,30 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   const isIsland = p["loai"] === "quan-dao" || p["loai"] === "dao";
   const name = isIsland ? String(p["ten"]) : String(p[era.nameKey]);
 
+  const isPhapThuoc = era.id === "era-phapthuoc";
   const rows: Array<[string, string]> = isIsland
+    ? isPhapThuoc
+      ? [
+          ["Chủ quyền", "Việt Nam"],
+          ["Thuộc Kỳ", String(p["ky"] ?? "—")],
+          ["Trực thuộc", String(p["thuoc_tinh_thoi_ky"] ?? "—")],
+          ["Văn bản thời kỳ", String(p["van_ban"] ?? "—")],
+        ]
+      : [
+          ["Chủ quyền", "Việt Nam"],
+          ["Trực thuộc (34 tỉnh)", String(p["thuoc_tinh_34"] ?? "—")],
+          ["Trực thuộc (63 tỉnh)", String(p["thuoc_tinh_63"] ?? "—")],
+        ]
+    : isPhapThuoc
     ? [
-        ["Chủ quyền", "Việt Nam"],
-        ["Trực thuộc (34 tỉnh)", String(p["thuoc_tinh_34"] ?? "—")],
-        ["Trực thuộc (63 tỉnh)", String(p["thuoc_tinh_63"] ?? "—")],
+        ["Thuộc Kỳ", String(p["ky"] ?? "—")],
+        [
+          "Chế độ cai trị",
+          p["ky"] === "Nam Kỳ"
+            ? "Thuộc địa (colonie), cai trị trực tiếp"
+            : "Bảo hộ (protectorat), duy trì triều đình Huế",
+        ],
+        ["Nay thuộc (34 tỉnh)", String(p["Tỉnh thành mới"] ?? "—")],
       ]
     : [
         [
@@ -336,6 +391,11 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
     <table class="facts">${rows
       .map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`)
       .join("")}</table>
+    ${
+      isPhapThuoc
+        ? `<p class="muted">Ranh giới ba Kỳ thể hiện xấp xỉ theo địa giới tỉnh hiện đại; Liên bang Đông Dương thành lập theo sắc lệnh 17/10/1887.</p>`
+        : ""
+    }
     <div id="profile-slot"><p class="muted coming-soon">Đang tải hồ sơ bách khoa…</p></div>
     <details class="sources">
       <summary>📚 Nguồn dữ liệu bản đồ</summary>
@@ -512,7 +572,24 @@ async function openLibrary(): Promise<void> {
     <h3>🇻🇳 Thơ yêu nước qua các thời đại</h3>
     ${lib.poems.map(poemHtml).join("")}
     <h3>🎓 Giai thoại Trạng nguyên – khoa bảng</h3>
-    ${lib.anecdotes.map(anecdoteHtml).join("")}`;
+    ${lib.anecdotes.map(anecdoteHtml).join("")}
+    <h3>🗺️ Bản đồ cổ</h3>
+    <details class="profile-section">
+      <summary>「An Nam Đại Quốc Họa Đồ」 — Giám mục Jean-Louis Taberd, 1838</summary>
+      <p class="giai-nghia">Bản đồ Việt Nam khắc in năm 1838, ghi chú song ngữ Hán – Quốc ngữ – Latinh.
+      Trên Biển Đông, bản đồ ghi rõ <b>«Paracel seu Cát Vàng»</b> (Paracel tức Cát Vàng — Hoàng Sa),
+      một tư liệu phương Tây quan trọng khẳng định chủ quyền lâu đời của Việt Nam đối với quần đảo Hoàng Sa.</p>
+      <img class="old-map" loading="lazy" alt="An Nam Đại Quốc Họa Đồ (Taberd, 1838)"
+        src="https://upload.wikimedia.org/wikipedia/commons/d/dd/An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg" />
+      <p class="muted">Tác phẩm thuộc phạm vi công cộng ·
+        <a href="https://commons.wikimedia.org/wiki/File:An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg"
+           target="_blank" rel="noopener">Xem bản độ phân giải đầy đủ trên Wikimedia Commons</a></p>
+      <details class="sources"><summary>📚 Nguồn</summary><ul>
+        <li>Jean-Louis Taberd, Dictionarium Latino-Anamiticum (phụ bản bản đồ), 1838</li>
+        <li>Wikimedia Commons — tệp scan gốc 3500×6111</li>
+        <li>Trần Đức Anh Sơn (chủ biên), Tư liệu về chủ quyền của Việt Nam đối với quần đảo Hoàng Sa — NXB Văn hóa – Văn nghệ</li>
+      </ul></details>
+    </details>`;
 }
 
 document.getElementById("library-btn")?.addEventListener("click", () => void openLibrary());
