@@ -251,15 +251,37 @@ map.on("load", () => {
     ?.addEventListener("click", () => setMode3D(!is3D));
 });
 
+// Lớp landmark 3D (Three.js) nạp lười ở lần bật 3D đầu tiên để không phình
+// bundle chính cho người dùng không mở chế độ 3D.
+let landmarks3d: { setVisible(v: boolean): void } | null = null;
+let landmarks3dLoading = false;
+
+async function ensureLandmarks3D(): Promise<void> {
+  if (landmarks3d || landmarks3dLoading) return;
+  landmarks3dLoading = true;
+  try {
+    const { createLandmarks3D } = await import("./landmarks3d");
+    landmarks3d = createLandmarks3D(map);
+    landmarks3d.setVisible(is3D);
+  } catch {
+    /* Không tải được Three.js — bản đồ khối 2.5D vẫn hoạt động bình thường. */
+  } finally {
+    landmarks3dLoading = false;
+  }
+}
+
 /**
- * Chế độ 3D: tỉnh thành nổi khối (fill-extrusion), camera nghiêng,
- * hover nhô cao, click bay tới — lấy cảm hứng từ holetexvn/vietnam-3d-map.
+ * Chế độ 3D: tỉnh thành nổi khối (fill-extrusion) + landmark diorama (Three.js),
+ * camera nghiêng, hover nhô cao, click bay tới — lấy cảm hứng từ
+ * holetexvn/vietnam-3d-map (mô hình landmark là mã gốc của dự án này).
  */
 function setMode3D(on: boolean): void {
   is3D = on;
   setEra(currentEra);
   map.easeTo({ pitch: on ? 55 : 0, bearing: on ? -12 : 0, duration: 1200 });
   document.getElementById("threed-btn")?.classList.toggle("active", on);
+  if (on) void ensureLandmarks3D();
+  landmarks3d?.setVisible(on);
 }
 
 initGame(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
