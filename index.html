@@ -13,7 +13,10 @@
     <div id="app">
       <header id="topbar">
         <h1>🇻🇳 Bách khoa Việt Nam <span class="subtitle">không gian – thời gian</span></h1>
-        <button id="library-btn" type="button">📖 Thư viện</button>
+        <nav id="topbar-nav">
+          <button id="game-btn" type="button">🎮 Đoán Tỉnh Xưa</button>
+          <button id="library-btn" type="button">📖 Thư viện</button>
+        </nav>
       </header>
       <div id="map"></div>
       <footer id="timeline-bar">
@@ -28,6 +31,10 @@
       <aside id="library-panel" hidden>
         <button id="library-close" aria-label="Đóng">×</button>
         <div id="library-content"></div>
+      </aside>
+      <aside id="game-panel" hidden>
+        <button id="game-close" aria-label="Đóng">×</button>
+        <div id="game-content"></div>
       </aside>
     </div>
     <script type="module" src="/src/main.ts"></script>

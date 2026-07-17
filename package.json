@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Từ điển bách khoa Việt Nam theo không gian–thời gian trên bản đồ tương tác",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

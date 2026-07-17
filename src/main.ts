@@ -2,6 +2,7 @@ import maplibregl from "maplibre-gl";
 import type { MapGeoJSONFeature } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
+import { initGame } from "./game";
 
 // ---------------------------------------------------------------------------
 // Cấu hình thời kỳ (era). Mỗi era = một lớp ranh giới GeoJSON.
@@ -132,6 +133,8 @@ map.on("load", () => {
   buildTimeline();
   buildLayerControl();
 });
+
+initGame(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 
 function setEra(index: number): void {
   currentEra = index;
@@ -415,6 +418,7 @@ interface HcmPoem {
   gioi_thieu: string;
   cau_tho: string[];
   nhung_nam_quan_trong?: string[];
+  chu_thich?: string;
   sources: string[];
 }
 
@@ -486,7 +490,7 @@ function hcmPoemHtml(h: HcmPoem): string {
     <summary>⭐ «${esc(h.ten)}» — ${esc(h.tac_gia)} (${esc(h.nam)})</summary>
     <p class="giai-nghia">${esc(h.gioi_thieu)}</p>
     <blockquote class="poem hcm-poem">${h.cau_tho.map(esc).join("<br/>")}</blockquote>
-    ${h.nhung_nam_quan_trong?.length ? `<details class="profile-section"><summary>📅 Những năm quan trọng (phụ lục nguyên bản)</summary><blockquote class="poem">${h.nhung_nam_quan_trong.map(esc).join("<br/>")}</blockquote></details>` : ""}
+    ${h.nhung_nam_quan_trong?.length ? `<details class="profile-section"><summary>📅 Những năm quan trọng (phụ lục nguyên bản)</summary><blockquote class="poem">${h.nhung_nam_quan_trong.map(esc).join("<br/>")}</blockquote>${h.chu_thich ? `<p class="muted">${esc(h.chu_thich)}</p>` : ""}</details>` : ""}
     <details class="sources"><summary>📚 Nguồn văn bản</summary>${list(h.sources)}</details>
   </details>`;
 }

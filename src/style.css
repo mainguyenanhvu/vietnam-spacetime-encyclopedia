@@ -17,9 +17,34 @@ body,
 }
 
 #topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
   padding: 0.6rem 1rem;
   background: #7f1d1d;
   color: #fef3c7;
+}
+
+#topbar-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#topbar-nav button {
+  border: 1px solid #fef3c7;
+  background: transparent;
+  color: #fef3c7;
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+#topbar-nav button:hover {
+  background: #fef3c7;
+  color: #7f1d1d;
 }
 
 #topbar h1 {
@@ -201,21 +226,95 @@ body,
   cursor: pointer;
 }
 
-#library-btn {
+#game-panel {
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 94vw);
+  max-height: calc(100% - 9rem);
+  overflow-y: auto;
+  background: #fffbeb;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
+  padding: 1rem;
+  z-index: 20;
+}
+
+#game-close {
   float: right;
-  margin-top: -1.6rem;
-  border: 1px solid #fef3c7;
-  background: transparent;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.dtx-silhouette {
+  display: block;
+  margin: 0.5rem auto;
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.dtx-silhouette path {
+  fill: #7f1d1d;
+}
+
+.dtx-row {
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid #e7e5e4;
+  font-size: 0.9rem;
+}
+
+.dtx-win {
+  background: #dcfce7;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+#dtx-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+#dtx-select {
+  flex: 1;
+  padding: 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #d6d3d1;
+}
+
+#dtx-form button,
+.dtx-end button,
+.dtx-tools button,
+.dtx-import-label {
+  border: 1px solid #7f1d1d;
+  background: #7f1d1d;
   color: #fef3c7;
   border-radius: 6px;
-  padding: 0.25rem 0.6rem;
+  padding: 0.3rem 0.7rem;
   cursor: pointer;
   font-size: 0.85rem;
 }
 
-#library-btn:hover {
-  background: #fef3c7;
+.dtx-tools {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #e7e5e4;
+}
+
+.dtx-tools button,
+.dtx-import-label {
+  background: transparent;
   color: #7f1d1d;
+}
+
+.dtx-end {
+  margin-top: 0.75rem;
 }
 
 .poem {
