@@ -346,7 +346,9 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
       ([profile, lib]) => {
         const slot = document.getElementById("profile-slot");
         if (!slot) return;
-        const poems = lib.poems.filter((p) => p.lien_quan_tinh.includes(slug));
+        const poems = [...lib.poems, ...lib.hcmWorks, ...lib.aboutHcm].filter(
+          (p) => p.lien_quan_tinh.includes(slug),
+        );
         const anecdotes = lib.anecdotes.filter((a) =>
           a.lien_quan_tinh.includes(slug),
         );
@@ -386,6 +388,8 @@ interface Poem {
   ban_quyen: "public-domain" | "cited-excerpt";
   lien_quan_tinh: string[];
   loi_binh?: string;
+  vi_sao_hay?: string;
+  xep_hang?: number;
   nguyen_van: string[];
   ban_dich?: string[];
   ghi_chu_dich?: string;
@@ -414,7 +418,13 @@ interface HcmPoem {
   sources: string[];
 }
 
-let literatureCache: { poems: Poem[]; anecdotes: Anecdote[]; hcm: HcmPoem | null } | null = null;
+let literatureCache: {
+  poems: Poem[];
+  hcmWorks: Poem[];
+  aboutHcm: Poem[];
+  anecdotes: Anecdote[];
+  hcm: HcmPoem | null;
+} | null = null;
 
 async function fetchJson<T>(path: string): Promise<T | null> {
   try {
@@ -427,13 +437,19 @@ async function fetchJson<T>(path: string): Promise<T | null> {
 
 async function loadLiterature() {
   if (literatureCache) return literatureCache;
-  const [poems, anecdotes, hcm] = await Promise.all([
+  const [poems, hcmWorks, aboutHcm, anecdotes, hcm] = await Promise.all([
     fetchJson<{ items: Poem[] }>("data/literature/tho-yeu-nuoc.json"),
+    fetchJson<{ items: Poem[] }>("data/literature/tac-pham-ho-chi-minh.json"),
+    fetchJson<{ items: Poem[] }>("data/literature/tho-ve-bac.json"),
     fetchJson<{ items: Anecdote[] }>("data/literature/giai-thoai-khoa-bang.json"),
     fetchJson<HcmPoem>("data/literature/lich-su-nuoc-ta.json"),
   ]);
   literatureCache = {
     poems: poems?.items ?? [],
+    hcmWorks: hcmWorks?.items ?? [],
+    aboutHcm: (aboutHcm?.items ?? []).sort(
+      (a, b) => (a.xep_hang ?? 99) - (b.xep_hang ?? 99),
+    ),
     anecdotes: anecdotes?.items ?? [],
     hcm,
   };
@@ -441,9 +457,11 @@ async function loadLiterature() {
 }
 
 function poemHtml(p: Poem): string {
-  return `<details class="profile-section"><summary>「${esc(p.ten)}」 — ${esc(p.tac_gia)}</summary>
+  const rank = p.xep_hang ? `<span class="rank-badge">#${p.xep_hang}</span> ` : "";
+  return `<details class="profile-section"><summary>${rank}「${esc(p.ten)}」 — ${esc(p.tac_gia)}</summary>
     <p class="muted">${esc(p.thoi_ky)} · ${esc(p.the_loai)}</p>
     ${p.loi_binh ? `<p class="giai-nghia">💬 ${esc(p.loi_binh)}</p>` : ""}
+    ${p.vi_sao_hay ? `<p class="giai-nghia">🏅 <b>Vì sao được xếp hạng cao:</b> ${esc(p.vi_sao_hay)}</p>` : ""}
     <blockquote class="poem">${p.nguyen_van.map(esc).join("<br/>")}</blockquote>
     ${p.ban_dich ? `<p class="muted">Dịch thơ:</p><blockquote class="poem">${p.ban_dich.map(esc).join("<br/>")}</blockquote>` : ""}
     ${p.ghi_chu_dich ? `<p class="muted">${esc(p.ghi_chu_dich)}</p>` : ""}
@@ -483,6 +501,10 @@ async function openLibrary(): Promise<void> {
   content.innerHTML = `
     <h2>📖 Thư viện</h2>
     ${lib.hcm ? hcmPoemHtml(lib.hcm) : ""}
+    <h3>🎋 Thơ văn Hồ Chí Minh</h3>
+    ${lib.hcmWorks.map(poemHtml).join("")}
+    <h3>🌸 Thơ viết về Bác <span class="muted">(xếp theo mức hiện diện trong SGK & phê bình — có tính chủ quan)</span></h3>
+    ${lib.aboutHcm.map(poemHtml).join("")}
     <h3>🇻🇳 Thơ yêu nước qua các thời đại</h3>
     ${lib.poems.map(poemHtml).join("")}
     <h3>🎓 Giai thoại Trạng nguyên – khoa bảng</h3>

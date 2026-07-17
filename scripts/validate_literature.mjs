@@ -33,12 +33,14 @@ const checkSources = (where, sources) => {
     );
 };
 
-// --- Thơ yêu nước
-const poemsPath = join(DIR, "tho-yeu-nuoc.json");
-if (existsSync(poemsPath)) {
+// --- Các tuyển tập dạng "poem" (chung schema)
+const POEM_FILES = ["tho-yeu-nuoc.json", "tac-pham-ho-chi-minh.json", "tho-ve-bac.json"];
+for (const file of POEM_FILES) {
+  const poemsPath = join(DIR, file);
+  if (!existsSync(poemsPath)) continue;
   const { items } = JSON.parse(readFileSync(poemsPath, "utf8"));
   for (const p of items) {
-    const w = `tho-yeu-nuoc/${p.id}`;
+    const w = `${file}/${p.id}`;
     if (!p.ten || !p.tac_gia) fail(w, "thiếu ten/tac_gia");
     if (!["public-domain", "cited-excerpt"].includes(p.ban_quyen))
       fail(w, "ban_quyen phải là public-domain|cited-excerpt");
@@ -49,7 +51,7 @@ if (existsSync(poemsPath)) {
     if (!Array.isArray(p.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
     checkSources(w, p.sources);
   }
-  console.log(`✅ tho-yeu-nuoc.json: ${items.length} bài`);
+  console.log(`✅ ${file}: ${items.length} bài`);
 }
 
 // --- Giai thoại khoa bảng
