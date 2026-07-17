@@ -28,6 +28,8 @@ jobs:
         run: node scripts/audit_sovereignty.mjs
       - name: Validate hồ sơ tỉnh (schema + sources bắt buộc)
         run: node scripts/validate_provinces.mjs
+      - name: Validate thư viện văn học (nguồn chính thống, bản quyền)
+        run: node scripts/validate_literature.mjs
       - run: npm run build
         env:
           BASE_PATH: /vietnam-spacetime-encyclopedia/

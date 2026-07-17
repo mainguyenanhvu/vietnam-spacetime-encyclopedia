@@ -341,13 +341,28 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   panel.hidden = false;
 
   if (!isIsland) {
-    void loadProfile(name).then((profile) => {
-      const slot = document.getElementById("profile-slot");
-      if (!slot) return;
-      slot.innerHTML = profile
-        ? profileHtml(profile)
-        : `<p class="muted coming-soon">Hồ sơ bách khoa đầy đủ của tỉnh này đang được biên soạn.</p>`;
-    });
+    const slug = slugify(name);
+    void Promise.all([loadProfile(name), loadLiterature()]).then(
+      ([profile, lib]) => {
+        const slot = document.getElementById("profile-slot");
+        if (!slot) return;
+        const poems = lib.poems.filter((p) => p.lien_quan_tinh.includes(slug));
+        const anecdotes = lib.anecdotes.filter((a) =>
+          a.lien_quan_tinh.includes(slug),
+        );
+        const related =
+          poems.length || anecdotes.length
+            ? `<details class="profile-section" open><summary>📖 Văn thơ & giai thoại gắn với vùng đất này</summary>
+                ${poems.map(poemHtml).join("")}${anecdotes.map(anecdoteHtml).join("")}
+               </details>`
+            : "";
+        slot.innerHTML =
+          (profile
+            ? profileHtml(profile)
+            : `<p class="muted coming-soon">Hồ sơ bách khoa đầy đủ của tỉnh này đang được biên soạn.</p>`) +
+          related;
+      },
+    );
   } else {
     const slot = document.getElementById("profile-slot");
     if (slot) slot.innerHTML = "";
@@ -356,5 +371,126 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
 
 document.getElementById("panel-close")?.addEventListener("click", () => {
   const panel = document.getElementById("province-panel");
+  if (panel) panel.hidden = true;
+});
+
+// ---------------------------------------------------------------------------
+// 📖 Thư viện văn thơ & giai thoại (public/data/literature/*.json)
+// ---------------------------------------------------------------------------
+interface Poem {
+  id: string;
+  ten: string;
+  tac_gia: string;
+  thoi_ky: string;
+  the_loai: string;
+  ban_quyen: "public-domain" | "cited-excerpt";
+  lien_quan_tinh: string[];
+  loi_binh?: string;
+  nguyen_van: string[];
+  ban_dich?: string[];
+  ghi_chu_dich?: string;
+  sources: string[];
+}
+
+interface Anecdote {
+  id: string;
+  nhan_vat: string;
+  danh_hieu: string;
+  que_quan: string;
+  lien_quan_tinh: string[];
+  giai_thoai: Array<{ ten: string; noi_dung: string }>;
+  y_nghia: string;
+  sources: string[];
+}
+
+interface HcmPoem {
+  ten: string;
+  tac_gia: string;
+  nam: string;
+  ban_quyen: string;
+  gioi_thieu: string;
+  cau_tho: string[];
+  nhung_nam_quan_trong?: string[];
+  sources: string[];
+}
+
+let literatureCache: { poems: Poem[]; anecdotes: Anecdote[]; hcm: HcmPoem | null } | null = null;
+
+async function fetchJson<T>(path: string): Promise<T | null> {
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}${path}`);
+    return res.ok ? ((await res.json()) as T) : null;
+  } catch {
+    return null;
+  }
+}
+
+async function loadLiterature() {
+  if (literatureCache) return literatureCache;
+  const [poems, anecdotes, hcm] = await Promise.all([
+    fetchJson<{ items: Poem[] }>("data/literature/tho-yeu-nuoc.json"),
+    fetchJson<{ items: Anecdote[] }>("data/literature/giai-thoai-khoa-bang.json"),
+    fetchJson<HcmPoem>("data/literature/lich-su-nuoc-ta.json"),
+  ]);
+  literatureCache = {
+    poems: poems?.items ?? [],
+    anecdotes: anecdotes?.items ?? [],
+    hcm,
+  };
+  return literatureCache;
+}
+
+function poemHtml(p: Poem): string {
+  return `<details class="profile-section"><summary>「${esc(p.ten)}」 — ${esc(p.tac_gia)}</summary>
+    <p class="muted">${esc(p.thoi_ky)} · ${esc(p.the_loai)}</p>
+    ${p.loi_binh ? `<p class="giai-nghia">💬 ${esc(p.loi_binh)}</p>` : ""}
+    <blockquote class="poem">${p.nguyen_van.map(esc).join("<br/>")}</blockquote>
+    ${p.ban_dich ? `<p class="muted">Dịch thơ:</p><blockquote class="poem">${p.ban_dich.map(esc).join("<br/>")}</blockquote>` : ""}
+    ${p.ghi_chu_dich ? `<p class="muted">${esc(p.ghi_chu_dich)}</p>` : ""}
+    ${p.ban_quyen === "cited-excerpt" ? `<p class="draft-badge">©️ Tác phẩm còn bảo hộ bản quyền — chỉ trích dẫn ngắn theo Điều 25 Luật SHTT.</p>` : ""}
+    <details class="sources"><summary>📚 Nguồn</summary>${list(p.sources)}</details>
+  </details>`;
+}
+
+function anecdoteHtml(a: Anecdote): string {
+  return `<details class="profile-section"><summary>🎓 ${esc(a.nhan_vat)}</summary>
+    <p class="muted">${esc(a.danh_hieu)} · Quê: ${esc(a.que_quan)}</p>
+    ${a.giai_thoai
+      .map((g) => `<p><b>${esc(g.ten)}.</b> ${esc(g.noi_dung)}</p>`)
+      .join("")}
+    <p class="giai-nghia">💡 ${esc(a.y_nghia)}</p>
+    <details class="sources"><summary>📚 Nguồn</summary>${list(a.sources)}</details>
+  </details>`;
+}
+
+function hcmPoemHtml(h: HcmPoem): string {
+  return `<details class="profile-section featured-poem" open>
+    <summary>⭐ «${esc(h.ten)}» — ${esc(h.tac_gia)} (${esc(h.nam)})</summary>
+    <p class="giai-nghia">${esc(h.gioi_thieu)}</p>
+    <blockquote class="poem hcm-poem">${h.cau_tho.map(esc).join("<br/>")}</blockquote>
+    ${h.nhung_nam_quan_trong?.length ? `<details class="profile-section"><summary>📅 Những năm quan trọng (phụ lục nguyên bản)</summary><blockquote class="poem">${h.nhung_nam_quan_trong.map(esc).join("<br/>")}</blockquote></details>` : ""}
+    <details class="sources"><summary>📚 Nguồn văn bản</summary>${list(h.sources)}</details>
+  </details>`;
+}
+
+async function openLibrary(): Promise<void> {
+  const panel = document.getElementById("library-panel");
+  const content = document.getElementById("library-content");
+  if (!panel || !content) return;
+  panel.hidden = false;
+  content.innerHTML = `<p class="muted">Đang tải thư viện…</p>`;
+  const lib = await loadLiterature();
+  content.innerHTML = `
+    <h2>📖 Thư viện</h2>
+    ${lib.hcm ? hcmPoemHtml(lib.hcm) : ""}
+    <h3>🇻🇳 Thơ yêu nước qua các thời đại</h3>
+    ${lib.poems.map(poemHtml).join("")}
+    <h3>🎓 Giai thoại Trạng nguyên – khoa bảng</h3>
+    ${lib.anecdotes.map(anecdoteHtml).join("")}`;
+}
+
+document.getElementById("library-btn")?.addEventListener("click", () => void openLibrary());
+document.getElementById("library-close")?.addEventListener("click", () => {
+  const panel = document.getElementById("library-panel");
   if (panel) panel.hidden = true;
 });
