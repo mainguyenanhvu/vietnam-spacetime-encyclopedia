@@ -42,7 +42,8 @@ body,
   font-size: 0.85rem;
 }
 
-#topbar-nav button:hover {
+#topbar-nav button:hover,
+#topbar-nav button.active {
   background: #fef3c7;
   color: #7f1d1d;
 }

@@ -1,5 +1,5 @@
 import maplibregl from "maplibre-gl";
-import type { MapGeoJSONFeature } from "maplibre-gl";
+import type { ExpressionSpecification, MapGeoJSONFeature } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import { initGame } from "./game";
@@ -45,12 +45,55 @@ const KY_COLORS: Record<string, string> = {
   "Nam Kỳ": "#059669",
 };
 
+/** Biểu thức màu dùng chung cho lớp phẳng và lớp khối 3D của một era. */
+function eraColorExpr(era: Era): ExpressionSpecification {
+  return era.id === "era-phapthuoc"
+    ? [
+        "match",
+        ["get", "loai"],
+        "quan-dao",
+        "#dc2626",
+        "dao",
+        "#ea580c",
+        [
+          "match",
+          ["get", "ky"],
+          "Bắc Kỳ",
+          KY_COLORS["Bắc Kỳ"],
+          "Trung Kỳ",
+          KY_COLORS["Trung Kỳ"],
+          "Nam Kỳ",
+          KY_COLORS["Nam Kỳ"],
+          "#f59e0b",
+        ],
+      ]
+    : [
+        "match",
+        ["get", "loai"],
+        "quan-dao",
+        "#dc2626",
+        "dao",
+        "#ea580c",
+        "#f59e0b",
+      ];
+}
+
+// Độ cao khối 3D (mét) — thuần minh hoạ để tạo hiệu ứng nổi khối,
+// không phản ánh độ cao địa hình thật. Đảo thấp hơn tỉnh nhưng vẫn
+// nổi rõ thành "tháp" đánh dấu chủ quyền biển đảo.
+const HEIGHT_3D: ExpressionSpecification = [
+  "case",
+  ["boolean", ["feature-state", "hover"], false],
+  ["match", ["get", "loai"], "quan-dao", 45000, "dao", 45000, 75000],
+  ["match", ["get", "loai"], "quan-dao", 25000, "dao", 25000, 40000],
+];
+
 const NGUON_DU_LIEU = [
   "Ranh giới 63/34 tỉnh: Lê Quang Tuệ — github.com/lqtue/LacaProvinceMap",
   "Quần đảo Hoàng Sa & Trường Sa: Free-GIS-Data — github.com/nguyenduy1133/Free-GIS-Data",
   "Danh sách sáp nhập: Nghị quyết 202/2025/QH15 — chinhphu.vn",
   "Phân chia Bắc–Trung–Nam Kỳ: Hiệp ước Patenôtre 1884; Hoàng Sa thuộc Thừa Thiên (Dụ số 10/1938); Trường Sa thuộc Bà Rịa (Nghị định 21/12/1933) — dhannd.bocongan.gov.vn",
-  "Nền bản đồ: © OpenStreetMap contributors",
+  "Nền bản đồ (không nhãn để bảo đảm chủ quyền): © OpenStreetMap contributors, © CARTO",
 ];
 
 // Khung nhìn bao trọn lãnh thổ Việt Nam, bao gồm hai quần đảo
@@ -66,14 +109,23 @@ const map = new maplibregl.Map({
     version: 8,
     glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
     sources: {
-      osm: {
+      // Nền KHÔNG NHÃN (CARTO light_nolabels). Bắt buộc: nền có nhãn của bên
+      // thứ ba (OSM mặc định...) hiển thị địa danh phi pháp do nước ngoài đặt
+      // trên Biển Đông (vd. «Tam Sa»), vi phạm chủ quyền Việt Nam và Luật Đo
+      // đạc và bản đồ 2018. Nhãn chủ quyền tiếng Việt do dự án tự render.
+      basemap: {
         type: "raster",
-        tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+        tiles: [
+          "https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+          "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+          "https://c.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+          "https://d.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+        ],
         tileSize: 256,
-        attribution: "© OpenStreetMap contributors",
+        attribution: "© OpenStreetMap contributors © CARTO",
       },
     },
-    layers: [{ id: "osm", type: "raster", source: "osm" }],
+    layers: [{ id: "basemap", type: "raster", source: "basemap" }],
   },
   bounds: VIETNAM_BOUNDS,
   fitBoundsOptions: { padding: 24 },
@@ -84,6 +136,7 @@ map.addControl(new maplibregl.ScaleControl(), "bottom-left");
 
 let currentEra = ERAS.length - 1; // mặc định: 34 tỉnh hiện hành
 let hoveredId: number | string | undefined;
+let is3D = false;
 
 map.on("load", () => {
   for (const era of ERAS) {
@@ -98,36 +151,7 @@ map.on("load", () => {
       source: era.id,
       layout: { visibility: "none" },
       paint: {
-        "fill-color":
-          era.id === "era-phapthuoc"
-            ? [
-                "match",
-                ["get", "loai"],
-                "quan-dao",
-                "#dc2626",
-                "dao",
-                "#ea580c",
-                [
-                  "match",
-                  ["get", "ky"],
-                  "Bắc Kỳ",
-                  KY_COLORS["Bắc Kỳ"],
-                  "Trung Kỳ",
-                  KY_COLORS["Trung Kỳ"],
-                  "Nam Kỳ",
-                  KY_COLORS["Nam Kỳ"],
-                  "#f59e0b",
-                ],
-              ]
-            : [
-                "match",
-                ["get", "loai"],
-                "quan-dao",
-                "#dc2626",
-                "dao",
-                "#ea580c",
-                "#f59e0b",
-              ],
+        "fill-color": eraColorExpr(era),
         "fill-opacity": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
@@ -143,32 +167,100 @@ map.on("load", () => {
       layout: { visibility: "none" },
       paint: { "line-color": "#92400e", "line-width": 1 },
     });
+    map.addLayer({
+      id: `${era.id}-3d`,
+      type: "fill-extrusion",
+      source: era.id,
+      layout: { visibility: "none" },
+      paint: {
+        "fill-extrusion-color": eraColorExpr(era),
+        "fill-extrusion-height": HEIGHT_3D,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.85,
+      },
+    });
 
-    map.on("mousemove", `${era.id}-fill`, (e) => {
-      map.getCanvas().style.cursor = "pointer";
-      const f = e.features?.[0];
-      if (!f) return;
-      if (hoveredId !== undefined)
-        map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
-      hoveredId = f.id;
-      map.setFeatureState({ source: era.id, id: hoveredId }, { hover: true });
-    });
-    map.on("mouseleave", `${era.id}-fill`, () => {
-      map.getCanvas().style.cursor = "";
-      if (hoveredId !== undefined)
-        map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
+    for (const layerId of [`${era.id}-fill`, `${era.id}-3d`]) {
+      map.on("mousemove", layerId, (e) => {
+        map.getCanvas().style.cursor = "pointer";
+        const f = e.features?.[0];
+        if (!f) return;
+        if (hoveredId !== undefined)
+          map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
+        hoveredId = f.id;
+        map.setFeatureState({ source: era.id, id: hoveredId }, { hover: true });
+      });
+      map.on("mouseleave", layerId, () => {
+        map.getCanvas().style.cursor = "";
+        if (hoveredId !== undefined)
+          map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
       hoveredId = undefined;
-    });
-    map.on("click", `${era.id}-fill`, (e) => {
-      const f = e.features?.[0];
-      if (f) showProvincePanel(f, era);
-    });
+      });
+      map.on("click", layerId, (e) => {
+        const f = e.features?.[0];
+        if (!f) return;
+        if (is3D) map.easeTo({ center: e.lngLat, duration: 800 });
+        showProvincePanel(f, era);
+      });
+    }
   }
+
+  // Nhãn chủ quyền tiếng Việt — vẽ SAU mọi lớp era để luôn nằm trên cùng,
+  // hiển thị ở mọi thời kỳ và cả hai chế độ 2D/3D.
+  map.addSource("chu-quyen", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: { ten: "Quần đảo Hoàng Sa\n(Việt Nam)" },
+          geometry: { type: "Point", coordinates: [112.0, 16.4] },
+        },
+        {
+          type: "Feature",
+          properties: { ten: "Quần đảo Trường Sa\n(Việt Nam)" },
+          geometry: { type: "Point", coordinates: [113.8, 9.6] },
+        },
+      ],
+    },
+  });
+  map.addLayer({
+    id: "chu-quyen-labels",
+    type: "symbol",
+    source: "chu-quyen",
+    layout: {
+      "text-field": ["get", "ten"],
+      "text-font": ["Open Sans Semibold"],
+      "text-size": 12.5,
+      "text-allow-overlap": true,
+    },
+    paint: {
+      "text-color": "#b91c1c",
+      "text-halo-color": "#ffffff",
+      "text-halo-width": 1.6,
+    },
+  });
 
   setEra(currentEra);
   buildTimeline();
   buildLayerControl();
+
+  document
+    .getElementById("threed-btn")
+    ?.addEventListener("click", () => setMode3D(!is3D));
 });
+
+/**
+ * Chế độ 3D: tỉnh thành nổi khối (fill-extrusion), camera nghiêng,
+ * hover nhô cao, click bay tới — lấy cảm hứng từ holetexvn/vietnam-3d-map.
+ */
+function setMode3D(on: boolean): void {
+  is3D = on;
+  setEra(currentEra);
+  map.easeTo({ pitch: on ? 55 : 0, bearing: on ? -12 : 0, duration: 1200 });
+  document.getElementById("threed-btn")?.classList.toggle("active", on);
+}
 
 initGame(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 initQuiz(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
@@ -177,9 +269,15 @@ initStory(`${import.meta.env.BASE_URL}data/story/chapters.json`);
 function setEra(index: number): void {
   currentEra = index;
   ERAS.forEach((era, i) => {
-    const vis = i === index ? "visible" : "none";
-    map.setLayoutProperty(`${era.id}-fill`, "visibility", vis);
-    map.setLayoutProperty(`${era.id}-line`, "visibility", vis);
+    const active = i === index;
+    const flat = active && !is3D ? "visible" : "none";
+    map.setLayoutProperty(`${era.id}-fill`, "visibility", flat);
+    map.setLayoutProperty(`${era.id}-line`, "visibility", flat);
+    map.setLayoutProperty(
+      `${era.id}-3d`,
+      "visibility",
+      active && is3D ? "visible" : "none",
+    );
   });
   const label = document.getElementById("period-label");
   if (label) label.textContent = ERAS[index].label;

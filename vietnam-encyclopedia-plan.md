@@ -110,6 +110,7 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 - **Cổng trẻ em** (phản biện #7): route thiếu nhi không thu thập PII, không tracker bên thứ ba (Luật Trẻ em 2016); tiến trình chỉ localStorage + nút xuất/nhập file.
 - **Cổng văn hoá dân tộc** (phản biện #3): trang phục/tập tục 54 dân tộc phải có người hiệu đính được chỉ định danh tính TRƯỚC khi sản xuất art; đối chiếu Bảo tàng Dân tộc học VN.
 - **Cổng license media** (phản biện #9): manifest license per-asset, check CI như pattern audit chủ quyền.
+- **Cổng nền bản đồ (basemap)** (sự cố 2026-07-18, Iron Man phát hiện): audit chủ quyền phải phủ CẢ nền bản đồ bên thứ ba, không chỉ dữ liệu GeoJSON của dự án. Tile OSM mặc định render nhãn địa danh phi pháp do nước ngoài đặt trên Biển Đông (vd. «Tam Sa») → vi phạm Luật Đo đạc và bản đồ 2018. Quy tắc bất biến: **chỉ dùng basemap KHÔNG NHÃN** (hiện tại: CARTO light_nolabels); nhãn chủ quyền «Quần đảo Hoàng Sa/Trường Sa (Việt Nam)» do dự án tự render, luôn hiển thị ở mọi thời kỳ và mọi chế độ 2D/3D. Khi đổi nhà cung cấp basemap phải kiểm tra bằng mắt khu vực Biển Đông trước khi ship.
 
 ## 10. 🔄 Tự phản biện liên tục (cập nhật mỗi sprint)
 
