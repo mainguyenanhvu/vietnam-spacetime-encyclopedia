@@ -94,6 +94,7 @@ const NGUON_DU_LIEU = [
   "Danh sách sáp nhập: Nghị quyết 202/2025/QH15 — chinhphu.vn",
   "Phân chia Bắc–Trung–Nam Kỳ: Hiệp ước Patenôtre 1884; Hoàng Sa thuộc Thừa Thiên (Dụ số 10/1938); Trường Sa thuộc Bà Rịa (Nghị định 21/12/1933) — dhannd.bocongan.gov.vn",
   "Nền bản đồ (không nhãn để bảo đảm chủ quyền): © OpenStreetMap contributors, © CARTO",
+  "Hiệu ứng biển động (chế độ 3D): shader nước của Lâm Ngọc Khương — github.com/lamngockhuong/vietnam-3d-map (MIT)",
 ];
 
 // Khung nhìn bao trọn lãnh thổ Việt Nam, bao gồm hai quần đảo
@@ -125,7 +126,12 @@ const map = new maplibregl.Map({
         attribution: "© OpenStreetMap contributors © CARTO",
       },
     },
-    layers: [{ id: "basemap", type: "raster", source: "basemap" }],
+    // Nền dưới cùng (màu biển sâu) — bị basemap che ở chế độ 2D; lộ ra làm
+    // phông biển/trời khi ẩn basemap ở chế độ 3D diorama.
+    layers: [
+      { id: "sky", type: "background", paint: { "background-color": "#0a3248" } },
+      { id: "basemap", type: "raster", source: "basemap" },
+    ],
   },
   bounds: VIETNAM_BOUNDS,
   fitBoundsOptions: { padding: 24 },
@@ -280,6 +286,9 @@ function setMode3D(on: boolean): void {
   setEra(currentEra);
   map.easeTo({ pitch: on ? 55 : 0, bearing: on ? -12 : 0, duration: 1200 });
   document.getElementById("threed-btn")?.classList.toggle("active", on);
+  // Chế độ 3D = diorama: ẩn basemap để Việt Nam nổi khối giữa biển động.
+  if (map.getLayer("basemap"))
+    map.setLayoutProperty("basemap", "visibility", on ? "none" : "visible");
   if (on) void ensureLandmarks3D();
   landmarks3d?.setVisible(on);
 }

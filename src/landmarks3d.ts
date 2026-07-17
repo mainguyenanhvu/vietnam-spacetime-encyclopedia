@@ -11,6 +11,7 @@
 import * as THREE from "three";
 import { MercatorCoordinate } from "maplibre-gl";
 import type { CustomLayerInterface, Map as MlMap } from "maplibre-gl";
+import { createOceanMesh } from "./ocean3d";
 
 export interface Landmarks3D {
   setVisible(v: boolean): void;
@@ -198,50 +199,88 @@ const LANDMARKS: LandmarkDef[] = [
   { ten: "Bến Nhà Rồng – TP. Hồ Chí Minh", lon: 106.706, lat: 10.768, build: () => dragonHouse(H) },
 ];
 
+// Tâm biển (giữa Biển Đông – Việt Nam) và tỉ lệ đơn vị-cục-bộ → Mercator.
+const OCEAN_CENTER: [number, number] = [108, 14];
+const OCEAN_UNIT = 0.0022;
+
 export function createLandmarks3D(map: MlMap): Landmarks3D {
+  const camera = new THREE.Camera();
+  let renderer: THREE.WebGLRenderer | null = null;
+  let visible = false;
+
+  const ensureRenderer = (gl: WebGLRenderingContext | WebGL2RenderingContext) => {
+    if (renderer) return;
+    renderer = new THREE.WebGLRenderer({
+      canvas: map.getCanvas(),
+      context: gl as WebGL2RenderingContext,
+      antialias: true,
+    });
+    renderer.autoClear = false;
+  };
+  const setCamera = (matrix: unknown) => {
+    camera.projectionMatrix = new THREE.Matrix4().fromArray(matrix as number[]);
+  };
+
+  // --- Lớp biển động (đặt DƯỚI các lớp tỉnh để đất phủ lên biển) ---
+  const oceanScene = new THREE.Scene();
+  const ocean = createOceanMesh();
+  {
+    const mc = MercatorCoordinate.fromLngLat(OCEAN_CENTER, 0);
+    ocean.mesh.scale.setScalar(OCEAN_UNIT);
+    ocean.mesh.position.set(mc.x, mc.y, 0);
+    oceanScene.add(ocean.mesh);
+  }
+  const oceanLayer: CustomLayerInterface = {
+    id: "ocean-3d",
+    type: "custom",
+    renderingMode: "3d",
+    onAdd(_map, gl) {
+      ensureRenderer(gl);
+    },
+    render(_gl, matrix) {
+      if (!visible || !renderer) return;
+      ocean.update((performance.now() / 1000) * 0.5);
+      setCamera(matrix);
+      renderer.resetState();
+      renderer.render(oceanScene, camera);
+      map.triggerRepaint(); // vòng lặp animate khi đang bật 3D
+    },
+  };
+
+  // --- Lớp landmark 3D (đặt TRÊN cùng) ---
   const scene = new THREE.Scene();
   scene.add(new THREE.AmbientLight(0xffffff, 1.05));
   const sun = new THREE.DirectionalLight(0xffffff, 1.1);
   sun.position.set(0.4, -0.7, 1).normalize();
   scene.add(sun);
-
-  // Đặt từng landmark theo toạ độ Mercator, quy đổi mét → đơn vị Mercator,
-  // xoay +Y (trục cao của model) thành +Z (trục cao của Mercator).
   for (const lm of LANDMARKS) {
     const mc = MercatorCoordinate.fromLngLat([lm.lon, lm.lat], 0);
     const s = mc.meterInMercatorCoordinateUnits();
     const g = lm.build();
-    g.rotation.x = Math.PI / 2;
+    g.rotation.x = Math.PI / 2; // +Y (cao của model) → +Z (cao của Mercator)
     g.scale.setScalar(s);
     g.position.set(mc.x, mc.y, mc.z);
     scene.add(g);
   }
-
-  const camera = new THREE.Camera();
-  let renderer: THREE.WebGLRenderer | null = null;
-  let visible = false;
-
-  const layer: CustomLayerInterface = {
+  const landmarkLayer: CustomLayerInterface = {
     id: "landmarks-3d",
     type: "custom",
     renderingMode: "3d",
     onAdd(_map, gl) {
-      renderer = new THREE.WebGLRenderer({
-        canvas: map.getCanvas(),
-        context: gl as WebGL2RenderingContext,
-        antialias: true,
-      });
-      renderer.autoClear = false;
+      ensureRenderer(gl);
     },
     render(_gl, matrix) {
       if (!visible || !renderer) return;
-      camera.projectionMatrix = new THREE.Matrix4().fromArray(matrix as number[]);
+      setCamera(matrix);
       renderer.resetState();
       renderer.render(scene, camera);
     },
   };
 
-  map.addLayer(layer);
+  // Ocean chèn ngay dưới lớp tỉnh đầu tiên; landmark thêm lên trên cùng.
+  const firstEra = map.getLayer("era-phapthuoc-fill") ? "era-phapthuoc-fill" : undefined;
+  map.addLayer(oceanLayer, firstEra);
+  map.addLayer(landmarkLayer);
 
   return {
     setVisible(v: boolean): void {
