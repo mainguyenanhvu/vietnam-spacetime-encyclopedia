@@ -95,11 +95,11 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 | 2c | **Thư viện văn học**: thơ yêu nước (PD toàn văn / còn bản quyền chỉ trích ≤8 dòng), giai thoại Trạng nguyên, «Lịch sử nước ta» (HCM 1942, PD — văn bản đối chiếu 2 nguồn), cross-link theo tỉnh, validator nguồn trong CI | M | ✅ 2026-07-17 (v0.5) |
 | 2b | Spike ranh giới tiền-1976 → **thành sản phẩm luôn**: lớp Pháp thuộc 1887–1945 (Bắc/Trung/Nam Kỳ 25/19/19, kiểm chứng đa nguồn; đảo gắn theo Dụ 10/1938 & NĐ 21/12/1933; assertion cứng trong script gen). Kết luận spike: ranh giới lịch sử theo phép xấp xỉ địa giới hiện đại KHẢ THI, có disclaimer; ranh giới chính xác từng thời kỳ cần số hoá bản đồ cổ (Phase 6) | S | ✅ 2026-07-17 (v0.8) |
 | 3 | Quiz engine (SM-2 localStorage) + game #1 Đoán Tỉnh Xưa + metric giáo dục (completion rate, không PII) | M | ✅ 2026-07-17 (v0.7–0.8: game + quiz SM-2; ngân hàng 89 thẻ tự sinh = 34 thủ phủ + 24 hợp thành + 31 sáp-nhập-ngược — QA xác nhận 0 thẻ trùng đáp án) |
-| 4 | Overlay «wow» đợt 1: bản đồ cổ Taberd 1838 (✅ viewer trong Thư viện — bản georeference chờ GCP chuẩn); pin Di tích QGĐB + Bảo vật quốc gia; ribbon niên hiệu | M | 🟡 |
-| 5 | 29 tỉnh còn lại (đo giờ/tỉnh từ pilot để lập lịch thực tế) + overlay đợt 2 (làng nghề, trận đánh, bão) | L | — |
-| 6 | Ranh giới lịch sử đầy đủ (tuỳ kết quả spike 2b) + animation morph + Nam tiến | L | — |
-| 7 | Media pipeline (Commons/R2/B2/HF) + PMTiles + Cloudflare Pages migration | M | — |
-| 8 | Chế độ thiếu nhi: cốt truyện Lạc & Âu (cần người hiệu đính văn hoá được chỉ định trước — gate §9) + games thiếu nhi + 54 dân tộc | XL | — |
+| 4 | Overlay «wow» đợt 1: Taberd 1838 viewer ✅; **lớp phủ UNESCO** (13 điểm: 9 di sản thế giới + 4 công viên địa chất) ✅ 2026-07-18; còn: pin Di tích QGĐB + Bảo vật (cần geocode 153+237 điểm), ribbon niên hiệu, georeference Taberd | M | 🟡 |
+| 5 | **34/34 hồ sơ tỉnh** ✅ 2026-07-18 (v1.0): 29 hồ sơ mới do 6 batch song song biên soạn, validator 34/34 pass, tất cả trạng thái draft chờ vòng người kiểm chứng; overlay đợt 2 (làng nghề, trận đánh, bão) còn lại | L | 🟡 nội dung ✅ / hiệu đính ⏳ |
+| 6 | Ranh giới lịch sử đầy đủ (số hoá bản đồ cổ) + animation morph + Nam tiến | L | — |
+| 7 | Media pipeline (Commons/R2/B2/HF) + PMTiles + Cloudflare Pages migration (**chờ tài khoản Cloudflare của Iron Man**) | M | ⏸ blocked |
+| 8 | Chế độ thiếu nhi: **khung + cốt truyện Lạc & Âu 5 chương** ✅ 2026-07-18 (chữ + theme, thử thách + ngọc Lạc Việt, no-PII); art trang phục 54 dân tộc **chưa sản xuất** — chờ chỉ định người hiệu đính văn hoá (gate §9) | XL | 🟡 |
 
 ## 9. Cổng kiểm chứng (verification gates)
 - CI: build + schema validation + link-check `sources[]`.
