@@ -302,18 +302,53 @@ function buildTimeline(): void {
 // ---------------------------------------------------------------------------
 // Lớp phủ (overlays) — bật/tắt độc lập với thời kỳ
 // ---------------------------------------------------------------------------
-interface UnescoItem {
+interface OverlayItem {
   ten: string;
-  loai: string;
-  hang_muc: string;
-  nam: string;
+  loai?: string;
+  hang_muc?: string;
+  nam?: string | number;
+  dot?: number;
   lon: number;
   lat: number;
-  tinh_34: string;
+  tinh_34?: string;
 }
 
-const OVERLAYS = [
-  { id: "unesco", label: "🏛️ Di sản thế giới & Công viên địa chất UNESCO", file: "data/overlays/unesco.json" },
+interface OverlayConf {
+  id: string;
+  label: string;
+  file: string;
+  circleColor: ExpressionSpecification | string;
+  nguon: string;
+  popup: (p: OverlayItem) => string;
+}
+
+const OVERLAYS: OverlayConf[] = [
+  {
+    id: "unesco",
+    label: "🏛️ Di sản thế giới & Công viên địa chất UNESCO",
+    file: "data/overlays/unesco.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "di-san-the-gioi",
+      "#7c3aed",
+      "cong-vien-dia-chat",
+      "#0d9488",
+      "#7c3aed",
+    ],
+    nguon: "UNESCO (whc.unesco.org) · Cục Di sản văn hóa",
+    popup: (p) =>
+      `<strong>${esc(p.ten)}</strong><br/>${esc(String(p.hang_muc ?? ""))} · Ghi danh ${esc(String(p.nam ?? ""))}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
+  },
+  {
+    id: "di-tich-qgdb",
+    label: "🏯 Di tích quốc gia đặc biệt",
+    file: "data/overlays/di-tich-qgdb.json",
+    circleColor: "#b45309",
+    nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Quyết định xếp hạng của Thủ tướng Chính phủ",
+    popup: (p) =>
+      `<strong>${esc(p.ten)}</strong><br/>${esc(String(p.loai ?? "di tích"))} · Xếp hạng ${esc(String(p.nam ?? ""))}${p.dot ? ` (đợt ${p.dot})` : ""}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
@@ -327,7 +362,7 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   if (!on) return;
   const conf = OVERLAYS.find((o) => o.id === id);
   if (!conf) return;
-  const data = await fetchJson<{ items: UnescoItem[]; sources: string[] }>(conf.file);
+  const data = await fetchJson<{ items: OverlayItem[] }>(conf.file);
   if (!data) return;
   map.addSource(layerId, {
     type: "geojson",
@@ -345,16 +380,8 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
     type: "circle",
     source: layerId,
     paint: {
-      "circle-radius": 7,
-      "circle-color": [
-        "match",
-        ["get", "loai"],
-        "di-san-the-gioi",
-        "#7c3aed",
-        "cong-vien-dia-chat",
-        "#0d9488",
-        "#7c3aed",
-      ],
+      "circle-radius": 6,
+      "circle-color": conf.circleColor,
       "circle-stroke-width": 2,
       "circle-stroke-color": "#ffffff",
     },
@@ -362,11 +389,11 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   map.on("click", layerId, (e) => {
     const f = e.features?.[0];
     if (!f) return;
-    const p = f.properties as unknown as UnescoItem;
+    const p = f.properties as unknown as OverlayItem;
     new maplibregl.Popup({ offset: 10 })
       .setLngLat(e.lngLat)
       .setHTML(
-        `<strong>${esc(p.ten)}</strong><br/>${esc(p.hang_muc)} · Ghi danh ${esc(p.nam)}<br/><span style="color:#78716c">${esc(p.tinh_34)}</span><br/><span style="color:#78716c;font-size:0.75rem">Nguồn: UNESCO (whc.unesco.org) · Cục Di sản văn hóa</span>`,
+        `${conf.popup(p)}<br/><span style="color:#78716c;font-size:0.75rem">Nguồn: ${conf.nguon}</span>`,
       )
       .addTo(map);
   });
@@ -743,6 +770,74 @@ function hcmPoemHtml(h: HcmPoem): string {
   </details>`;
 }
 
+// ---------------------------------------------------------------------------
+// 🏷️ Tra cứu niên hiệu (public/data/timeline/nien-hieu.json)
+// ---------------------------------------------------------------------------
+interface NienHieuItem {
+  trieu_dai: string;
+  vua?: string;
+  nien_hieu: string | null;
+  tu_nam: number;
+  den_nam: number;
+  ghi_chu?: string;
+}
+
+let nienHieuCache: { items: NienHieuItem[]; nguon?: string[] } | null | undefined;
+
+function nienHieuSectionHtml(): string {
+  return `
+    <h3>🏷️ Tra cứu niên hiệu theo năm</h3>
+    <div id="nh-box">
+      <p><label>Nhập năm dương lịch (tới 1945):
+        <input id="nh-year" type="number" min="1" max="1945" style="width:6rem"/></label>
+        <button id="nh-btn" type="button">Tra cứu</button></p>
+      <div id="nh-result" aria-live="polite"></div>
+    </div>`;
+}
+
+function wireNienHieuLookup(): void {
+  const btn = document.getElementById("nh-btn");
+  const result = document.getElementById("nh-result");
+  if (!btn || !result) return;
+  const lookup = async (): Promise<void> => {
+    const input = document.getElementById("nh-year") as HTMLInputElement | null;
+    const year = Number(input?.value);
+    if (!Number.isInteger(year) || year < 1 || year > 1945) {
+      result.innerHTML = `<p class="muted">Vui lòng nhập một năm từ 1 đến 1945.</p>`;
+      return;
+    }
+    if (nienHieuCache === undefined)
+      nienHieuCache = await fetchJson<{ items: NienHieuItem[]; nguon?: string[] }>(
+        "data/timeline/nien-hieu.json",
+      );
+    if (!nienHieuCache) {
+      result.innerHTML = `<p class="muted">⚠️ Chưa tải được dữ liệu niên hiệu — vui lòng thử lại sau.</p>`;
+      return;
+    }
+    const all = nienHieuCache.items.filter(
+      (i) => year >= i.tu_nam && year <= i.den_nam,
+    );
+    // Mục "thời kỳ" (không niên hiệu) chỉ hiện khi năm đó không có niên hiệu thật
+    const named = all.filter((i) => i.nien_hieu);
+    const hits = named.length ? named : all;
+    result.innerHTML = hits.length
+      ? `<table class="facts">${hits
+          .map(
+            (i) =>
+              `<tr><th>${esc(i.nien_hieu ?? "(không niên hiệu)")}</th><td>${esc(i.trieu_dai)}${
+                i.vua ? ` · ${esc(i.vua)}` : ""
+              } · ${i.tu_nam}–${i.den_nam}${i.ghi_chu ? `<br/><span class="muted">${esc(i.ghi_chu)}</span>` : ""}</td></tr>`,
+          )
+          .join("")}</table>
+        <p class="muted">Nguồn: ${(nienHieuCache.nguon ?? []).map(esc).join(" · ")}</p>`
+      : `<p class="muted">Không tìm thấy niên hiệu cho năm ${year}.</p>`;
+  };
+  btn.addEventListener("click", () => void lookup());
+  document.getElementById("nh-year")?.addEventListener("keydown", (e) => {
+    if ((e as KeyboardEvent).key === "Enter") void lookup();
+  });
+}
+
 async function openLibrary(): Promise<void> {
   const panel = document.getElementById("library-panel");
   const content = document.getElementById("library-content");
@@ -765,6 +860,7 @@ async function openLibrary(): Promise<void> {
     ${lib.poems.map(poemHtml).join("")}
     <h3>🎓 Giai thoại Trạng nguyên – khoa bảng</h3>
     ${lib.anecdotes.map(anecdoteHtml).join("")}
+    ${nienHieuSectionHtml()}
     <h3>🗺️ Bản đồ cổ</h3>
     <details class="profile-section">
       <summary>「An Nam Đại Quốc Họa Đồ」 — Giám mục Jean-Louis Taberd, 1838</summary>
@@ -782,6 +878,7 @@ async function openLibrary(): Promise<void> {
         <li>Trần Đức Anh Sơn (chủ biên), Tư liệu về chủ quyền của Việt Nam đối với quần đảo Hoàng Sa — NXB Văn hóa – Văn nghệ</li>
       </ul></details>
     </details>`;
+  wireNienHieuLookup();
 }
 
 document.getElementById("library-btn")?.addEventListener("click", () => void openLibrary());
