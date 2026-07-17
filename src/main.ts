@@ -363,7 +363,15 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   const conf = OVERLAYS.find((o) => o.id === id);
   if (!conf) return;
   const data = await fetchJson<{ items: OverlayItem[] }>(conf.file);
-  if (!data) return;
+  if (!data) {
+    // Tải thất bại: bỏ tick checkbox để tránh trạng thái "đang bật" giả
+    // trong khi lớp phủ chưa từng được thêm vào bản đồ.
+    const cb = document.querySelector<HTMLInputElement>(
+      `#layer-control input[name=overlay][value="${id}"]`,
+    );
+    if (cb) cb.checked = false;
+    return;
+  }
   map.addSource(layerId, {
     type: "geojson",
     data: {
@@ -788,8 +796,8 @@ function nienHieuSectionHtml(): string {
   return `
     <h3>🏷️ Tra cứu niên hiệu theo năm</h3>
     <div id="nh-box">
-      <p><label>Nhập năm dương lịch (tới 1945):
-        <input id="nh-year" type="number" min="1" max="1945" style="width:6rem"/></label>
+      <p><label>Nhập năm dương lịch (năm âm = trước Công nguyên, ví dụ −200; tới 1945):
+        <input id="nh-year" type="number" min="-2879" max="1945" style="width:6rem"/></label>
         <button id="nh-btn" type="button">Tra cứu</button></p>
       <div id="nh-result" aria-live="polite"></div>
     </div>`;
@@ -802,8 +810,8 @@ function wireNienHieuLookup(): void {
   const lookup = async (): Promise<void> => {
     const input = document.getElementById("nh-year") as HTMLInputElement | null;
     const year = Number(input?.value);
-    if (!Number.isInteger(year) || year < 1 || year > 1945) {
-      result.innerHTML = `<p class="muted">Vui lòng nhập một năm từ 1 đến 1945.</p>`;
+    if (!Number.isInteger(year) || year === 0 || year < -2879 || year > 1945) {
+      result.innerHTML = `<p class="muted">Vui lòng nhập một năm từ −2879 (2879 TCN) đến 1945 (không có năm 0).</p>`;
       return;
     }
     if (nienHieuCache === undefined)
@@ -820,17 +828,18 @@ function wireNienHieuLookup(): void {
     // Mục "thời kỳ" (không niên hiệu) chỉ hiện khi năm đó không có niên hiệu thật
     const named = all.filter((i) => i.nien_hieu);
     const hits = named.length ? named : all;
+    const fmtYear = (y: number) => (y < 0 ? `${-y} TCN` : String(y));
     result.innerHTML = hits.length
       ? `<table class="facts">${hits
           .map(
             (i) =>
               `<tr><th>${esc(i.nien_hieu ?? "(không niên hiệu)")}</th><td>${esc(i.trieu_dai)}${
                 i.vua ? ` · ${esc(i.vua)}` : ""
-              } · ${i.tu_nam}–${i.den_nam}${i.ghi_chu ? `<br/><span class="muted">${esc(i.ghi_chu)}</span>` : ""}</td></tr>`,
+              } · ${fmtYear(i.tu_nam)}–${fmtYear(i.den_nam)}${i.ghi_chu ? `<br/><span class="muted">${esc(i.ghi_chu)}</span>` : ""}</td></tr>`,
           )
           .join("")}</table>
         <p class="muted">Nguồn: ${(nienHieuCache.nguon ?? []).map(esc).join(" · ")}</p>`
-      : `<p class="muted">Không tìm thấy niên hiệu cho năm ${year}.</p>`;
+      : `<p class="muted">Không tìm thấy niên hiệu cho năm ${fmtYear(year)}.</p>`;
   };
   btn.addEventListener("click", () => void lookup());
   document.getElementById("nh-year")?.addEventListener("keydown", (e) => {
