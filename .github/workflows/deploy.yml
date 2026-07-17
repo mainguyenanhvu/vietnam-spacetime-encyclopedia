@@ -24,6 +24,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Kiểm toán chủ quyền biển đảo (bắt buộc)
+        run: node scripts/audit_sovereignty.mjs
       - run: npm run build
         env:
           BASE_PATH: /vietnam-spacetime-encyclopedia/

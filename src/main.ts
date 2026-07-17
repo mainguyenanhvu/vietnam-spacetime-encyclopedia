@@ -83,9 +83,12 @@ map.on("load", () => {
       layout: { visibility: "none" },
       paint: {
         "fill-color": [
-          "case",
-          ["==", ["get", "loai"], "quan-dao"],
+          "match",
+          ["get", "loai"],
+          "quan-dao",
           "#dc2626",
+          "dao",
+          "#ea580c",
           "#f59e0b",
         ],
         "fill-opacity": [
@@ -190,7 +193,7 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   const num = (v: string | number | undefined) =>
     v === undefined || v === "" ? "—" : Number(String(v).replace(",", ".")).toLocaleString("vi-VN");
 
-  const isIsland = p["loai"] === "quan-dao";
+  const isIsland = p["loai"] === "quan-dao" || p["loai"] === "dao";
   const name = isIsland ? String(p["ten"]) : String(p[era.nameKey]);
 
   const rows: Array<[string, string]> = isIsland

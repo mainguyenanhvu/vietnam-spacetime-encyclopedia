@@ -98,14 +98,15 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 
 ## 9. Cổng kiểm chứng (verification gates)
 - CI: build + schema validation + link-check `sources[]`.
-- **Test chủ quyền tự động**: mọi lớp ranh giới phải chứa feature Hoàng Sa & Trường Sa (fail CI nếu thiếu).
+- ✅ **Kiểm toán chủ quyền tự động trong CI** (`scripts/audit_sovereignty.mjs`, chạy trước build — thiếu là fail deploy): 12 đảo/quần đảo trọng yếu phải có polygon trong MỌI lớp ranh giới — Hoàng Sa, Trường Sa (2 cụm), Phú Quốc, Thổ Chu, Côn Đảo, Bạch Long Vĩ, Cát Bà, Cồn Cỏ, Lý Sơn, Phú Quý, Hòn Khoai. Đã bắt được và sửa 3 đảo thiếu (Thổ Chu, Bạch Long Vĩ, Phú Quý — `scripts/add_missing_islands.mjs`). Danh mục sẽ mở rộng dần (Cô Tô, Cù Lao Chàm, Nam Du, Hòn Mê…).
 - Reviewer agent cho mọi PR nội dung (đối chiếu nguồn); qa-testing agent trước release.
 - Nội dung thiếu nhi: thêm cổng "văn hoá chính xác" (trang phục dân tộc đúng — đối chiếu Bảo tàng Dân tộc học).
 
 ## 10. 🔄 Tự phản biện liên tục (cập nhật mỗi sprint)
 
 **Điểm yếu hiện tại (2026-07-17):**
-1. ⚠️ **License dữ liệu lqtue**: LacaProvinceMap không có LICENSE → đang dùng theo chỉ đạo "lấy + cite", nhưng cần xin phép chính thức (mở issue/email) — *chờ Iron Man duyệt vì là liên hệ đối ngoại*. Phương án B: tự dựng từ OSM (ODbL).
+1. 🔄 **License dữ liệu lqtue**: đã mở issue xin phép chính thức (github.com/lqtue/LacaProvinceMap/issues/1, được Iron Man duyệt) — chờ phản hồi. Phương án B nếu từ chối: tự dựng từ OSM (ODbL).
+1b. ⚠️ **Đường biên giới trên biển, thềm lục địa, vùng đặc quyền kinh tế (EEZ)**: CHƯA hiển thị — tuyệt đối không vẽ từ nguồn không chính thức (rủi ro pháp lý cao nhất). Cần research riêng: đường cơ sở 1982, đường cơ sở Vịnh Bắc Bộ công bố 02/2025, Hiệp định phân định Vịnh Bắc Bộ 2000, UNCLOS — chỉ render khi có toạ độ từ văn bản chính thức (Công báo/Bộ Ngoại giao). Biên giới đất liền hiện dùng theo dữ liệu ranh giới tỉnh (OSM-derived) — cần đối chiếu bản đồ biên giới chính thức khi có.
 2. ⚠️ **Số liệu GRDP/dân số 2024 trong popup chưa có nguồn gốc rõ** (lqtue không ghi provenance) → Phase 2 thay bằng số GSO/Niên giám 2025 có trích dẫn, giữ lqtue chỉ cho ranh giới.
 3. ⚠️ **Ranh giới lịch sử tiền-1976 chưa tồn tại dạng số** — rủi ro lớn nhất toàn dự án (phải số hoá từ atlas giấy, cần cố vấn sử học). Đã xếp Phase 6 riêng.
 4. ⚠️ Trường Sa 341 polygon làm file nặng (~1,1 MB/lớp) → cần lọc đảo quá nhỏ/simplify + chuyển PMTiles.
