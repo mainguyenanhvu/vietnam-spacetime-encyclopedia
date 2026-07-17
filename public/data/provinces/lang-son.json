@@ -4,14 +4,26 @@
   "trang_thai": "draft",
   "giai_nghia_ten": "«Lạng» kế thừa tên Lạng Châu thời Lý – Trần; «Sơn» (山) nghĩa là núi — đúng với «xứ Lạng» trập trùng núi đá vôi. Tên «Lạng Sơn» được định danh từ năm 1466 khi Lê Thánh Tông đặt thừa tuyên Lạng Sơn.",
   "ten_thoi_ky": [
-    { "ten": "Lạng Châu", "thoi_ky": "Thời Lý – Trần — vùng phên giậu phía bắc Đại Việt" },
-    { "ten": "Thừa tuyên (xứ) Lạng Sơn", "thoi_ky": "1466 — Lê Thánh Tông chia cả nước thành 12 thừa tuyên" },
-    { "ten": "Trấn Lạng Sơn", "thoi_ky": "Thời Lê trung hưng – đầu Nguyễn" },
-    { "ten": "Tỉnh Lạng Sơn", "thoi_ky": "1831 — cải cách hành chính Minh Mạng; giữ nguyên trong đợt 34 tỉnh thành 2025" }
+    {
+      "ten": "Lạng Châu",
+      "thoi_ky": "Thời Lý – Trần — vùng phên giậu phía bắc Đại Việt"
+    },
+    {
+      "ten": "Thừa tuyên (xứ) Lạng Sơn",
+      "thoi_ky": "1466 — Lê Thánh Tông chia cả nước thành 12 thừa tuyên"
+    },
+    {
+      "ten": "Trấn Lạng Sơn",
+      "thoi_ky": "Thời Lê trung hưng – đầu Nguyễn"
+    },
+    {
+      "ten": "Tỉnh Lạng Sơn",
+      "thoi_ky": "1831 — cải cách hành chính Minh Mạng; giữ nguyên trong đợt 34 tỉnh thành 2025"
+    }
   ],
   "tong_quan": "Tỉnh biên giới Đông Bắc, cửa ngõ giao thương Việt – Trung với ải Chi Lăng «bức tường thành» của Thăng Long xưa; quê hương văn hóa Tày – Nùng với chợ Kỳ Lừa, nàng Tô Thị, động Nhị Thanh. Giữ nguyên địa giới trong đợt sắp xếp 34 tỉnh thành 2025.",
   "lich_su": [
-    "Khoảng 470.000 năm trước: người vượn cổ sinh sống tại hang Thẩm Khuyên – Thẩm Hai (Bình Gia) — di tích người tối cổ vào loại sớm nhất Việt Nam.",
+    "Khoảng 400.000–500.000 năm trước: người vượn cổ sinh sống tại hang Thẩm Khuyên – Thẩm Hai (Bình Gia) — di tích người tối cổ vào loại sớm nhất Việt Nam (định tuổi ESR, Ciochon và cộng sự 1996).",
     "Khoảng 11.000–7.000 năm trước: văn hóa Bắc Sơn — một trong những nền văn hóa sơ kỳ đá mới tiêu biểu của Đông Nam Á, đặt theo tên vùng núi Bắc Sơn.",
     "10/10/1427: nghĩa quân Lam Sơn chém Liễu Thăng tại ải Chi Lăng — trận quyết định buộc quân Minh rút khỏi Đại Việt.",
     "1779: Đốc trấn Ngô Thì Sĩ tôn tạo động Nhị Thanh, khắc thơ văn lên vách đá — danh thắng «đệ nhất bát cảnh» xứ Lạng.",
@@ -21,33 +33,83 @@
     "02/1979: quân và dân Lạng Sơn chiến đấu bảo vệ biên giới phía Bắc; thị xã Lạng Sơn bị tàn phá nặng nề."
   ],
   "khao_co": [
-    { "ten": "Hang Thẩm Khuyên – Thẩm Hai", "mo_ta": "Nơi phát hiện răng người vượn Homo erectus niên đại khoảng 470.000 năm — bằng chứng người tối cổ sớm nhất trên đất Việt Nam." },
-    { "ten": "Các di chỉ văn hóa Bắc Sơn", "mo_ta": "Hệ thống hang động mái đá với rìu mài lưỡi «dấu Bắc Sơn» đặc trưng của sơ kỳ đá mới." },
-    { "ten": "Đoàn Thành Lạng Sơn", "mo_ta": "Thành cổ trấn giữ con đường sứ bộ và quân sự Thăng Long – Trung Hoa, di tích quốc gia." }
+    {
+      "ten": "Hang Thẩm Khuyên – Thẩm Hai",
+      "mo_ta": "Nơi phát hiện răng người vượn Homo erectus niên đại khoảng 400.000–500.000 năm (định tuổi ESR, công bố trên PNAS 1996) — bằng chứng người tối cổ sớm nhất trên đất Việt Nam."
+    },
+    {
+      "ten": "Các di chỉ văn hóa Bắc Sơn",
+      "mo_ta": "Hệ thống hang động mái đá với rìu mài lưỡi «dấu Bắc Sơn» đặc trưng của sơ kỳ đá mới."
+    },
+    {
+      "ten": "Đoàn Thành Lạng Sơn",
+      "mo_ta": "Thành cổ trấn giữ con đường sứ bộ và quân sự Thăng Long – Trung Hoa, di tích quốc gia."
+    }
   ],
   "van_hoa": {
-    "dac_san": ["Vịt quay lá mác mật", "Khâu nhục", "Phở chua Lạng Sơn", "Na Chi Lăng", "Đào Mẫu Sơn", "Rượu Mẫu Sơn"],
-    "le_hoi": ["Lễ hội đền Kỳ Cùng – Tả Phủ", "Lễ hội Lồng tồng (xuống đồng) của người Tày, Nùng", "Thực hành Then Tày – Nùng – Thái (UNESCO 2019)", "Chợ phiên Kỳ Lừa"],
-    "lang_nghe": ["Rượu men lá Mẫu Sơn", "Cao khô (mì gạo) Vạn Linh", "Dệt thổ cẩm và làm hương của đồng bào Tày, Nùng"],
-    "kien_truc": ["Đoàn Thành Lạng Sơn", "Chùa Tam Thanh và động Nhị Thanh", "Đền Kỳ Cùng", "Phố chợ Kỳ Lừa", "Nhà trình tường và ngói âm dương vùng biên"],
+    "dac_san": [
+      "Vịt quay lá mác mật",
+      "Khâu nhục",
+      "Phở chua Lạng Sơn",
+      "Na Chi Lăng",
+      "Đào Mẫu Sơn",
+      "Rượu Mẫu Sơn"
+    ],
+    "le_hoi": [
+      "Lễ hội đền Kỳ Cùng – Tả Phủ",
+      "Lễ hội Lồng tồng (xuống đồng) của người Tày, Nùng",
+      "Thực hành Then Tày – Nùng – Thái (UNESCO 2019)",
+      "Chợ phiên Kỳ Lừa"
+    ],
+    "lang_nghe": [
+      "Rượu men lá Mẫu Sơn",
+      "Cao khô (mì gạo) Vạn Linh",
+      "Dệt thổ cẩm và làm hương của đồng bào Tày, Nùng"
+    ],
+    "kien_truc": [
+      "Đoàn Thành Lạng Sơn",
+      "Chùa Tam Thanh và động Nhị Thanh",
+      "Đền Kỳ Cùng",
+      "Phố chợ Kỳ Lừa",
+      "Nhà trình tường và ngói âm dương vùng biên"
+    ],
     "phuong_ngu": "Người Tày, Nùng chiếm đa số, giữ tiếng nói và làn điệu then, sli, lượn; tiếng Việt vùng biên mượn nhiều từ Tày – Nùng."
   },
   "danh_nhan": [
-    { "ten": "Hoàng Văn Thụ (1909–1944)", "ghi_chu": "Nhà cách mạng tiền bối, người con dân tộc Tày quê Văn Uyên (nay là huyện Văn Lãng); hy sinh năm 1944." },
-    { "ten": "Lương Văn Tri (1910–1941)", "ghi_chu": "Chỉ huy đội du kích Bắc Sơn, quê Văn Quan." },
-    { "ten": "Ngô Thì Sĩ (1726–1780)", "ghi_chu": "Sử gia, Đốc trấn Lạng Sơn — người khai mở danh thắng Nhị Thanh; quê Thanh Trì (Hà Nội)." },
-    { "ten": "Hoàng Đình Kinh (?–1888)", "ghi_chu": "Thủ lĩnh chống Pháp vùng Hữu Lũng, dân gian gọi là Cai Kinh." }
+    {
+      "ten": "Hoàng Văn Thụ (1909–1944)",
+      "ghi_chu": "Nhà cách mạng tiền bối, người con dân tộc Tày quê Văn Uyên (nay là huyện Văn Lãng); hy sinh năm 1944."
+    },
+    {
+      "ten": "Lương Văn Tri (1910–1941)",
+      "ghi_chu": "Chỉ huy đội du kích Bắc Sơn, quê Văn Quan."
+    },
+    {
+      "ten": "Ngô Thì Sĩ (1726–1780)",
+      "ghi_chu": "Sử gia, Đốc trấn Lạng Sơn — người khai mở danh thắng Nhị Thanh; quê Thanh Trì (Hà Nội)."
+    },
+    {
+      "ten": "Hoàng Đình Kinh (?–1888)",
+      "ghi_chu": "Thủ lĩnh chống Pháp vùng Hữu Lũng, dân gian gọi là Cai Kinh."
+    }
   ],
   "truyen_thuyet": [
-    { "ten": "Nàng Tô Thị", "tom_tat": "Người vợ bồng con lên núi ngóng chồng đi lính, hóa đá thành tượng đá vọng phu — «Đồng Đăng có phố Kỳ Lừa, có nàng Tô Thị, có chùa Tam Thanh»." }
+    {
+      "ten": "Nàng Tô Thị",
+      "tom_tat": "Người vợ bồng con lên núi ngóng chồng đi lính, hóa đá thành tượng đá vọng phu — «Đồng Đăng có phố Kỳ Lừa, có nàng Tô Thị, có chùa Tam Thanh»."
+    }
   ],
-  "bien_so_xe": ["12"],
+  "bien_so_xe": [
+    "12"
+  ],
   "sap_nhap_2025": "Giữ nguyên (Nghị quyết 202/2025/QH15)",
   "sources": [
     "Cổng TTĐT tỉnh Lạng Sơn — langson.gov.vn",
     "Đại Việt sử ký toàn thư — trận Chi Lăng 1427, NXB Khoa học Xã hội",
     "Hồ sơ Thực hành Then của người Tày, Nùng, Thái — ich.unesco.org",
     "Viện Khảo cổ học — di tích Thẩm Khuyên, Thẩm Hai và văn hóa Bắc Sơn",
-    "Nghị quyết 202/2025/QH15 — chinhphu.vn"
+    "Nghị quyết 202/2025/QH15 — chinhphu.vn",
+    "Ciochon et al. (1996), PNAS 93(7):3016–3020 — định tuổi ESR di cốt Thẩm Khuyên",
+    "Công viên địa chất Lạng Sơn — giá trị khảo cổ (langsongeopark.com.vn)"
   ]
 }

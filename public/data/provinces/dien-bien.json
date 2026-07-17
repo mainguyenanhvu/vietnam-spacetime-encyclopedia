@@ -4,12 +4,30 @@
   "trang_thai": "draft",
   "giai_nghia_ten": "«Điện Biên» do vua Thiệu Trị đặt năm 1841 khi lập phủ Điện Biên: «Điện» nghĩa là vững chãi, «Biên» là biên cương — «vùng biên cương vững chắc». Tên cổ theo tiếng Thái là Mường Thanh (Mường Then — «Mường Trời»).",
   "ten_thoi_ky": [
-    { "ten": "Mường Thanh (Mường Then — «Mường Trời»)", "thoi_ky": "Tên gọi cổ theo tiếng Thái — vùng đất tổ trong ký ức người Thái Tây Bắc" },
-    { "ten": "Phủ Điện Biên", "thoi_ky": "1841 — vua Thiệu Trị đặt tên Điện Biên" },
-    { "ten": "Châu Điện Biên, Khu tự trị Thái – Mèo (Tây Bắc)", "thoi_ky": "1955–1962" },
-    { "ten": "Thuộc tỉnh Lai Châu", "thoi_ky": "1962–2003" },
-    { "ten": "Tỉnh Điện Biên", "thoi_ky": "2004 — thành lập trên cơ sở chia tách tỉnh Lai Châu" },
-    { "ten": "Điện Biên", "thoi_ky": "01/07/2025 — giữ nguyên địa giới (NQ 202/2025/QH15)" }
+    {
+      "ten": "Mường Thanh (Mường Then — «Mường Trời»)",
+      "thoi_ky": "Tên gọi cổ theo tiếng Thái — vùng đất tổ trong ký ức người Thái Tây Bắc"
+    },
+    {
+      "ten": "Phủ Điện Biên",
+      "thoi_ky": "1841 — vua Thiệu Trị đặt tên Điện Biên"
+    },
+    {
+      "ten": "Châu Điện Biên, Khu tự trị Thái – Mèo (Tây Bắc)",
+      "thoi_ky": "1955–1962"
+    },
+    {
+      "ten": "Thuộc tỉnh Lai Châu",
+      "thoi_ky": "1962–2003"
+    },
+    {
+      "ten": "Tỉnh Điện Biên",
+      "thoi_ky": "2004 — thành lập trên cơ sở chia tách tỉnh Lai Châu"
+    },
+    {
+      "ten": "Điện Biên",
+      "thoi_ky": "01/07/2025 — giữ nguyên địa giới (NQ 202/2025/QH15)"
+    }
   ],
   "tong_quan": "Tỉnh biên giới cực Tây của Tổ quốc, nơi có cánh đồng Mường Thanh — «nhất Thanh» của Tây Bắc — và chiến thắng Điện Biên Phủ 1954 «lừng lẫy năm châu, chấn động địa cầu». Giữ nguyên địa giới trong đợt sắp xếp 34 tỉnh thành 2025.",
   "lich_su": [
@@ -21,28 +39,66 @@
     "2004: tỉnh Điện Biên được thành lập trên cơ sở chia tách tỉnh Lai Châu."
   ],
   "van_hoa": {
-    "dac_san": ["Gạo tám Điện Biên (cánh đồng Mường Thanh)", "Xôi nếp nương", "Thịt trâu gác bếp", "Chẩm chéo"],
-    "le_hoi": ["Lễ hội Hoa Ban", "Lễ hội đền Hoàng Công Chất — thành Bản Phủ", "Tết té nước (Bun huột nặm) của người Lào ở Núa Ngam"],
-    "lang_nghe": ["Dệt thổ cẩm của người Thái", "Mây tre đan Nà Tấu"],
-    "kien_truc": ["Quần thể di tích Chiến trường Điện Biên Phủ (đồi A1, hầm Đờ Cát, Sở chỉ huy Mường Phăng) — di tích quốc gia đặc biệt", "Thành Bản Phủ", "Nhà sàn của người Thái đen", "Tượng đài Chiến thắng Điện Biên Phủ"],
+    "dac_san": [
+      "Gạo tám Điện Biên (cánh đồng Mường Thanh)",
+      "Xôi nếp nương",
+      "Thịt trâu gác bếp",
+      "Chẩm chéo"
+    ],
+    "le_hoi": [
+      "Lễ hội Hoa Ban",
+      "Lễ hội đền Hoàng Công Chất — thành Bản Phủ",
+      "Tết té nước (Bun huột nặm) của người Lào ở Núa Ngam"
+    ],
+    "lang_nghe": [
+      "Dệt thổ cẩm của người Thái",
+      "Mây tre đan Nà Tấu"
+    ],
+    "kien_truc": [
+      "Quần thể di tích Chiến trường Điện Biên Phủ (đồi A1, hầm Đờ Cát, Sở chỉ huy Mường Phăng) — di tích quốc gia đặc biệt",
+      "Thành Bản Phủ",
+      "Nhà sàn của người Thái đen",
+      "Tượng đài Chiến thắng Điện Biên Phủ"
+    ],
     "phuong_ngu": "Vùng đa dân tộc: tiếng Thái, Mông, Khơ Mú… song hành cùng tiếng Việt; địa danh gốc Thái («mường», «bản», «nậm») dày đặc."
   },
   "danh_nhan": [
-    { "ten": "Hoàng Công Chất (1706–1769)", "ghi_chu": "Lãnh tụ khởi nghĩa nông dân thế kỷ XVIII, có công giữ đất Mường Thanh; được thờ tại đền thành Bản Phủ." },
-    { "ten": "Đại tướng Võ Nguyên Giáp (1911–2013)", "ghi_chu": "Tổng Tư lệnh — Chỉ huy trưởng chiến dịch Điện Biên Phủ 1954 (quê Quảng Bình)." },
-    { "ten": "Tô Vĩnh Diện (1924–1954)", "ghi_chu": "Anh hùng lấy thân chèn pháo trong chiến dịch Điện Biên Phủ (quê Thanh Hoá)." },
-    { "ten": "Phan Đình Giót (1922–1954)", "ghi_chu": "Anh hùng lấp lỗ châu mai trong trận Him Lam mở màn chiến dịch (quê Hà Tĩnh)." },
-    { "ten": "Bế Văn Đàn (1931–1953)", "ghi_chu": "Anh hùng lấy thân làm giá súng, hy sinh tại Mường Pồn (quê Cao Bằng)." }
+    {
+      "ten": "Hoàng Công Chất (1706–1769)",
+      "ghi_chu": "Lãnh tụ khởi nghĩa nông dân thế kỷ XVIII, có công giữ đất Mường Thanh; được thờ tại đền thành Bản Phủ. Năm mất theo đa số nguồn là 1769; hồ sơ Cục Di sản văn hoá ghi 1767."
+    },
+    {
+      "ten": "Đại tướng Võ Nguyên Giáp (1911–2013)",
+      "ghi_chu": "Tổng Tư lệnh — Chỉ huy trưởng chiến dịch Điện Biên Phủ 1954 (quê Quảng Bình)."
+    },
+    {
+      "ten": "Tô Vĩnh Diện (1924–1954)",
+      "ghi_chu": "Anh hùng lấy thân chèn pháo trong chiến dịch Điện Biên Phủ (quê Thanh Hoá)."
+    },
+    {
+      "ten": "Phan Đình Giót (1922–1954)",
+      "ghi_chu": "Anh hùng lấp lỗ châu mai trong trận Him Lam mở màn chiến dịch (quê Hà Tĩnh)."
+    },
+    {
+      "ten": "Bế Văn Đàn (1931–1953)",
+      "ghi_chu": "Anh hùng lấy thân làm giá súng, hy sinh tại Mường Pồn (quê Cao Bằng)."
+    }
   ],
   "truyen_thuyet": [
-    { "ten": "Mường Then — Mường Trời", "tom_tat": "Người Thái Tây Bắc coi Mường Thanh là đất tổ, nơi khởi nguồn của con người theo truyền thuyết «quả bầu mẹ» sinh ra các dân tộc anh em." }
+    {
+      "ten": "Mường Then — Mường Trời",
+      "tom_tat": "Người Thái Tây Bắc coi Mường Thanh là đất tổ, nơi khởi nguồn của con người theo truyền thuyết «quả bầu mẹ» sinh ra các dân tộc anh em."
+    }
   ],
-  "bien_so_xe": ["27"],
+  "bien_so_xe": [
+    "27"
+  ],
   "sap_nhap_2025": "Giữ nguyên (Nghị quyết 202/2025/QH15)",
   "sources": [
     "Cổng TTĐT tỉnh Điện Biên — dienbien.gov.vn",
     "Bảo tàng Chiến thắng lịch sử Điện Biên Phủ",
     "Võ Nguyên Giáp, Điện Biên Phủ — điểm hẹn lịch sử, NXB Quân đội nhân dân",
-    "Nghị quyết 202/2025/QH15 — chinhphu.vn"
+    "Nghị quyết 202/2025/QH15 — chinhphu.vn",
+    "Cục Di sản văn hóa — Lễ hội đền Hoàng Công Chất (dsvh.gov.vn)"
   ]
 }

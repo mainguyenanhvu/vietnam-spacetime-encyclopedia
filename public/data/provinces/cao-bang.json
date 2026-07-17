@@ -4,11 +4,26 @@
   "trang_thai": "draft",
   "giai_nghia_ten": "«Cao Bằng» (高平) nghĩa là «vùng đất cao mà bằng phẳng» — chỉ những thung lũng, cánh đồng bằng phẳng nằm giữa núi non trùng điệp miền biên viễn Đông Bắc.",
   "ten_thoi_ky": [
-    { "ten": "Đất Nam Cương", "thoi_ky": "Truyền thuyết Tày về vương quốc của Thục Phán trước khi lập nước Âu Lạc" },
-    { "ten": "Châu Quảng Nguyên", "thoi_ky": "Thời Lý — vùng biên trọng yếu, nhà Tống trao trả sau cuộc chiến 1075–1077" },
-    { "ten": "Trấn Cao Bằng", "thoi_ky": "1499 — nhà Lê tách khỏi Thái Nguyên, đặt thành trấn riêng" },
-    { "ten": "Đất căn bản nhà Mạc", "thoi_ky": "1592–1677 — ba đời vua Mạc đóng giữ Cao Bằng sau khi rời Thăng Long" },
-    { "ten": "Tỉnh Cao Bằng", "thoi_ky": "1831 — Minh Mạng lập tỉnh; giữ nguyên trong đợt 34 tỉnh thành 2025" }
+    {
+      "ten": "Đất Nam Cương",
+      "thoi_ky": "Truyền thuyết Tày về vương quốc của Thục Phán trước khi lập nước Âu Lạc"
+    },
+    {
+      "ten": "Châu Quảng Nguyên",
+      "thoi_ky": "Thời Lý — vùng biên trọng yếu; sau cuộc chiến 1075–1077, Đại Việt đòi lại từ nhà Tống qua đàm phán 1078–1084 (Thái sư Lê Văn Thịnh)"
+    },
+    {
+      "ten": "Trấn Cao Bằng",
+      "thoi_ky": "1499 — nhà Lê tách khỏi Thái Nguyên, đặt thành trấn riêng"
+    },
+    {
+      "ten": "Đất căn bản nhà Mạc",
+      "thoi_ky": "1592–1677 — ba đời vua Mạc đóng giữ Cao Bằng sau khi rời Thăng Long"
+    },
+    {
+      "ten": "Tỉnh Cao Bằng",
+      "thoi_ky": "1831 — Minh Mạng lập tỉnh; giữ nguyên trong đợt 34 tỉnh thành 2025"
+    }
   ],
   "tong_quan": "Tỉnh biên giới Đông Bắc, «cội nguồn cách mạng» với hang Pác Bó và rừng Trần Hưng Đạo, quê hương người Tày – Nùng với hát Then – đàn tính; sở hữu Công viên địa chất toàn cầu UNESCO Non nước Cao Bằng và thác Bản Giốc.",
   "lich_su": [
@@ -21,29 +36,74 @@
     "2018: UNESCO công nhận Công viên địa chất toàn cầu Non nước Cao Bằng."
   ],
   "van_hoa": {
-    "dac_san": ["Hạt dẻ Trùng Khánh", "Bánh cuốn canh Cao Bằng", "Vịt quay bảy vị", "Phở chua", "Lạp sườn hun khói", "Bánh khảo", "Miến dong Phia Đén", "Thạch đen Thạch An"],
-    "le_hoi": ["Lễ hội Lồng tồng (xuống đồng) của người Tày – Nùng", "Lễ hội đền Kỳ Sầm (thờ Nùng Trí Cao)", "Lễ hội Nàng Hai (cầu Trăng) ở Tiên Thành", "Lễ hội thác Bản Giốc"],
-    "lang_nghe": ["Rèn dao Phúc Sen", "Làm hương Phia Thắp", "Dệt thổ cẩm của người Tày"],
-    "kien_truc": ["Khu di tích quốc gia đặc biệt Pác Bó", "Đền Kỳ Sầm", "Chùa Phật Tích Trúc Lâm Bản Giốc", "Nhà sàn đá của người Tày vùng Trùng Khánh"],
+    "dac_san": [
+      "Hạt dẻ Trùng Khánh",
+      "Bánh cuốn canh Cao Bằng",
+      "Vịt quay bảy vị",
+      "Phở chua",
+      "Lạp sườn hun khói",
+      "Bánh khảo",
+      "Miến dong Phia Đén",
+      "Thạch đen Thạch An"
+    ],
+    "le_hoi": [
+      "Lễ hội Lồng tồng (xuống đồng) của người Tày – Nùng",
+      "Lễ hội đền Kỳ Sầm (thờ Nùng Trí Cao)",
+      "Lễ hội Nàng Hai (cầu Trăng) ở Tiên Thành",
+      "Lễ hội thác Bản Giốc"
+    ],
+    "lang_nghe": [
+      "Rèn dao Phúc Sen",
+      "Làm hương Phia Thắp",
+      "Dệt thổ cẩm của người Tày"
+    ],
+    "kien_truc": [
+      "Khu di tích quốc gia đặc biệt Pác Bó",
+      "Đền Kỳ Sầm",
+      "Chùa Phật Tích Trúc Lâm Bản Giốc",
+      "Nhà sàn đá của người Tày vùng Trùng Khánh"
+    ],
     "phuong_ngu": "Tiếng Tày, Nùng được dùng rộng rãi bên cạnh tiếng Việt; thực hành Then của người Tày, Nùng, Thái được UNESCO ghi danh năm 2019."
   },
   "danh_nhan": [
-    { "ten": "Nùng Trí Cao (thế kỷ XI)", "ghi_chu": "Thủ lĩnh người Tày đất Quảng Nguyên, biểu tượng hào khí vùng biên, được thờ tại đền Kỳ Sầm." },
-    { "ten": "Hoàng Đình Giong (1904–1947)", "ghi_chu": "Nhà cách mạng tiền bối, người dân tộc Tày, quê Hòa An." },
-    { "ten": "Kim Đồng (1929–1943)", "ghi_chu": "Nông Văn Dền — đội trưởng đầu tiên của Đội Thiếu niên Tiền phong, hy sinh khi làm liên lạc, quê Hà Quảng." },
-    { "ten": "Bế Văn Đàn (1931–1953)", "ghi_chu": "Anh hùng lấy thân mình làm giá súng trong chiến dịch Đông Xuân 1953–1954, quê Phục Hòa." }
+    {
+      "ten": "Nùng Trí Cao (thế kỷ XI)",
+      "ghi_chu": "Thủ lĩnh người Tày đất Quảng Nguyên, biểu tượng hào khí vùng biên, được thờ tại đền Kỳ Sầm."
+    },
+    {
+      "ten": "Hoàng Đình Giong (1904–1947)",
+      "ghi_chu": "Nhà cách mạng tiền bối, người dân tộc Tày, quê xã Hạ Hoàng — nay là phường Đề Thám, thành phố Cao Bằng."
+    },
+    {
+      "ten": "Kim Đồng (1929–1943)",
+      "ghi_chu": "Nông Văn Dền — đội trưởng đầu tiên của Đội Thiếu niên Tiền phong, hy sinh khi làm liên lạc, quê Hà Quảng."
+    },
+    {
+      "ten": "Bế Văn Đàn (1931–1953)",
+      "ghi_chu": "Anh hùng lấy thân mình làm giá súng trong chiến dịch Đông Xuân 1953–1954, quê Phục Hòa."
+    }
   ],
   "truyen_thuyet": [
-    { "ten": "Cẩu chủa cheng vùa (Chín chúa tranh vua)", "tom_tat": "Truyền thuyết của người Tày về Thục Phán thắng chín chúa mường trong các cuộc đua tài, thống nhất đất Nam Cương trước khi lập nước Âu Lạc." },
-    { "ten": "Sự tích hồ Thang Hen", "tom_tat": "Chuyện chàng Sung tài giỏi lỡ hẹn, nhảy núi tạo thành ba mươi sáu hồ trên núi — lý giải chuỗi hồ Thang Hen kỳ lạ." }
+    {
+      "ten": "Cẩu chủa cheng vùa (Chín chúa tranh vua)",
+      "tom_tat": "Truyền thuyết của người Tày về Thục Phán thắng chín chúa mường trong các cuộc đua tài, thống nhất đất Nam Cương trước khi lập nước Âu Lạc."
+    },
+    {
+      "ten": "Sự tích hồ Thang Hen",
+      "tom_tat": "Chuyện chàng Sung tài giỏi lỡ hẹn, nhảy núi tạo thành ba mươi sáu hồ trên núi — lý giải chuỗi hồ Thang Hen kỳ lạ."
+    }
   ],
-  "bien_so_xe": ["11"],
+  "bien_so_xe": [
+    "11"
+  ],
   "sap_nhap_2025": "Giữ nguyên (Nghị quyết 202/2025/QH15)",
   "sources": [
     "Cổng TTĐT tỉnh Cao Bằng — caobang.gov.vn",
     "Hồ sơ Công viên địa chất toàn cầu Non nước Cao Bằng — unesco.org & caobanggeopark.com",
     "Đại Nam nhất thống chí — Quốc sử quán triều Nguyễn, bản dịch Viện Sử học",
     "Đào Duy Anh, Đất nước Việt Nam qua các đời",
-    "Nghị quyết 202/2025/QH15 — chinhphu.vn"
+    "Nghị quyết 202/2025/QH15 — chinhphu.vn",
+    "Cổng TTĐT tỉnh Cao Bằng — Hoàng Đình Giong (caobang.gov.vn)",
+    "Nghiên cứu quốc tế — Cuộc đấu tranh đòi đất trong bang giao Việt–Trung 1078–1084 (nghiencuuquocte.org)"
   ]
 }
