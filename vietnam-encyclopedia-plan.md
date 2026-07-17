@@ -61,8 +61,13 @@ người dùng kéo timeline → ranh giới hành chính thay đổi (khởi th
 - Bản đồ: test hiển thị Hoàng Sa – Trường Sa ở mọi zoom/thời kỳ.
 - qa-testing agent trước mỗi release.
 
-## 5. Open decisions
-- [ ] Hosting platform (chờ 0.1).
-- [ ] Nguồn GeoJSON 34 tỉnh (chờ 0.2).
-- [ ] Reuse code repo mẫu hay chỉ tham khảo (chờ 0.3).
-- [ ] Tên miền tùy chỉnh (hỏi Iron Man sau khi có prototype).
+## 5. Decisions (chốt 2026-07-17)
+- [x] **Hosting**: GitHub Pages (đang chạy) → nâng cấp Cloudflare Pages + R2 khi có tài khoản Cloudflare (docs/research/hosting-platforms.md).
+- [x] **GeoJSON**: nguyenduy1133/Free-GIS-Data (63 + 34 tỉnh, có Hoàng Sa/Trường Sa) + đối chiếu OSM & NQ 202/2025/QH15 (docs/research/data-sources.md).
+- [x] **Repo mẫu**: chỉ tham khảo — không có LICENSE, không fork (docs/research/sample-repo-analysis.md).
+- [ ] Tên miền tùy chỉnh (hỏi Iron Man sau).
+
+## 6. Trạng thái (2026-07-17)
+- ✅ Repo: https://github.com/mainguyenanhvu/vietnam-spacetime-encyclopedia
+- ✅ Live: https://mainguyenanhvu.github.io/vietnam-spacetime-encyclopedia/ (CI xanh, HTTP 200)
+- ⏭️ Tiếp theo: Phase 1 — nạp GeoJSON 34 tỉnh + click hiện tên tỉnh (subtask 0.5), sau đó schema hồ sơ tỉnh.
