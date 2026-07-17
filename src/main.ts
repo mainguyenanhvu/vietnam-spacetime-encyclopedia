@@ -4,6 +4,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
+import { initStory } from "./story";
 
 // ---------------------------------------------------------------------------
 // Cấu hình thời kỳ (era). Mỗi era = một lớp ranh giới GeoJSON.
@@ -171,6 +172,7 @@ map.on("load", () => {
 
 initGame(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 initQuiz(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
+initStory(`${import.meta.env.BASE_URL}data/story/chapters.json`);
 
 function setEra(index: number): void {
   currentEra = index;
@@ -199,6 +201,86 @@ function buildTimeline(): void {
   slider.addEventListener("input", () => setEra(Number(slider.value)));
 }
 
+// ---------------------------------------------------------------------------
+// Lớp phủ (overlays) — bật/tắt độc lập với thời kỳ
+// ---------------------------------------------------------------------------
+interface UnescoItem {
+  ten: string;
+  loai: string;
+  hang_muc: string;
+  nam: string;
+  lon: number;
+  lat: number;
+  tinh_34: string;
+}
+
+const OVERLAYS = [
+  { id: "unesco", label: "🏛️ Di sản thế giới & Công viên địa chất UNESCO", file: "data/overlays/unesco.json" },
+];
+
+const overlayLoaded = new Set<string>();
+
+async function toggleOverlay(id: string, on: boolean): Promise<void> {
+  const layerId = `overlay-${id}`;
+  if (overlayLoaded.has(id)) {
+    map.setLayoutProperty(layerId, "visibility", on ? "visible" : "none");
+    return;
+  }
+  if (!on) return;
+  const conf = OVERLAYS.find((o) => o.id === id);
+  if (!conf) return;
+  const data = await fetchJson<{ items: UnescoItem[]; sources: string[] }>(conf.file);
+  if (!data) return;
+  map.addSource(layerId, {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: data.items.map((it) => ({
+        type: "Feature",
+        properties: { ...it },
+        geometry: { type: "Point", coordinates: [it.lon, it.lat] },
+      })),
+    },
+  });
+  map.addLayer({
+    id: layerId,
+    type: "circle",
+    source: layerId,
+    paint: {
+      "circle-radius": 7,
+      "circle-color": [
+        "match",
+        ["get", "loai"],
+        "di-san-the-gioi",
+        "#7c3aed",
+        "cong-vien-dia-chat",
+        "#0d9488",
+        "#7c3aed",
+      ],
+      "circle-stroke-width": 2,
+      "circle-stroke-color": "#ffffff",
+    },
+  });
+  map.on("click", layerId, (e) => {
+    const f = e.features?.[0];
+    if (!f) return;
+    const p = f.properties as unknown as UnescoItem;
+    new maplibregl.Popup({ offset: 10 })
+      .setLngLat(e.lngLat)
+      .setHTML(
+        `<strong>${esc(p.ten)}</strong><br/>${esc(p.hang_muc)} · Ghi danh ${esc(p.nam)}<br/><span style="color:#78716c">${esc(p.tinh_34)}</span><br/><span style="color:#78716c;font-size:0.75rem">Nguồn: UNESCO (whc.unesco.org) · Cục Di sản văn hóa</span>`,
+      )
+      .addTo(map);
+  });
+  map.on("mouseenter", layerId, () => {
+    map.getCanvas().style.cursor = "pointer";
+  });
+  map.on("mouseleave", layerId, () => {
+    map.getCanvas().style.cursor = "";
+  });
+  overlayLoaded.add(id);
+}
+
 function buildLayerControl(): void {
   const el = document.createElement("div");
   el.id = "layer-control";
@@ -212,13 +294,16 @@ function buildLayerControl(): void {
         }/> ${era.label}</label>`,
       ).join("")}
     </div>
-    <div class="group muted">
-      Sắp ra mắt: di sản UNESCO · làng nghề · trận đánh lịch sử · lễ hội ·
-      ẩm thực · trang phục dân tộc · di chỉ khảo cổ
+    <strong>📌 Lớp phủ</strong>
+    <div class="group">
+      ${OVERLAYS.map(
+        (o) => `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>`,
+      ).join("")}
     </div>`;
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
     if (t.name === "era") setEra(Number(t.value));
+    if (t.name === "overlay") void toggleOverlay(t.value, t.checked);
   });
   document.getElementById("app")?.appendChild(el);
 }
@@ -564,7 +649,7 @@ async function openLibrary(): Promise<void> {
   const panel = document.getElementById("library-panel");
   const content = document.getElementById("library-content");
   if (!panel || !content) return;
-  for (const id of ["game-panel", "quiz-panel"]) {
+  for (const id of ["game-panel", "quiz-panel", "story-panel"]) {
     const other = document.getElementById(id);
     if (other) other.hidden = true;
   }

@@ -399,6 +399,121 @@ body,
   margin: 0.5rem 0;
 }
 
+#story-panel {
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(520px, 94vw);
+  max-height: calc(100% - 9rem);
+  overflow-y: auto;
+  background: linear-gradient(180deg, #fef9c3, #fde68a);
+  border: 3px solid #f59e0b;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.25);
+  padding: 1.1rem;
+  z-index: 20;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+#story-close {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body.kid-mode #topbar {
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+}
+
+.story-line {
+  margin: 0.5rem 0;
+}
+
+.story-lac {
+  background: #dbeafe;
+  border-radius: 10px;
+  padding: 0.4rem 0.6rem;
+}
+
+.story-au {
+  background: #fce7f3;
+  border-radius: 10px;
+  padding: 0.4rem 0.6rem;
+}
+
+.story-cast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: #fffbeb;
+  border-radius: 10px;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.story-gems {
+  font-size: 1.05rem;
+  margin: 0.6rem 0;
+}
+
+.story-chapters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.story-chapter,
+.story-option,
+#story-back,
+#story-continue {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid #f59e0b;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.story-chapter:hover,
+.story-option:hover {
+  background: #fef3c7;
+  transform: scale(1.01);
+}
+
+.story-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.story-quiz {
+  background: #fffbeb;
+  border-radius: 12px;
+  padding: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.story-win {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.story-retry {
+  color: #b45309;
+  font-weight: 600;
+}
+
+#story-back {
+  margin-bottom: 0.5rem;
+}
+
 .poem {
   margin: 0.4rem 0 0.4rem 0.5rem;
   padding-left: 0.75rem;

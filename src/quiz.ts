@@ -43,7 +43,7 @@ const esc = (s: string) =>
     .replace(/'/g, "&#39;");
 
 function hideOtherPanels(current: string): void {
-  for (const id of ["library-panel", "game-panel", "quiz-panel"]) {
+  for (const id of ["library-panel", "game-panel", "quiz-panel", "story-panel"]) {
     if (id === current) continue;
     const p = document.getElementById(id);
     if (p) p.hidden = true;
