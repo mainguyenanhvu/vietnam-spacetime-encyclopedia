@@ -1,0 +1,93 @@
+{
+  "ghi_chu": "Nhân vật lịch sử — mô hình 3D. NGUYÊN TẮC (Iron Man duyệt 2026-07-18): KHÔNG danh nhân Việt cổ nào còn chân dung xác thực → mô hình là HÌNH DUNG NGHỆ THUẬT dựng theo TƯỢNG ĐÀI đã công bố, chính xác về trang phục/binh khí/bối cảnh thời đại theo chính sử, khuôn mặt cách điệu (không phải chân dung thật). Mỗi mục BẮT BUỘC có nhan_hinh_dung (nhãn minh bạch) + tuong_dai_tham_chieu + nguon[] chính sử. Chỉ chọn anh hùng dân tộc được tôn vinh phổ quát; cong_trang viết trung tính theo SGK/chính sử. trang_thai=draft cho tới khi có người kiểm sử.",
+  "items": [
+    {
+      "id": "hung-vuong",
+      "ten": "Vua Hùng",
+      "thoi_dai": "Thời đại Hùng Vương — nước Văn Lang (trước thế kỷ III TCN)",
+      "cong_trang": "Các vua Hùng dựng nước Văn Lang — nhà nước đầu tiên của người Việt, đóng đô ở Phong Châu (Phú Thọ). Giỗ Tổ Hùng Vương mùng 10 tháng 3 âm lịch là quốc lễ.",
+      "tuong_dai_tham_chieu": "Tượng Vua Hùng tại Khu di tích lịch sử Đền Hùng, Phú Thọ",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly theo tượng đài Đền Hùng; KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["phu-tho"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư (ngoại kỷ)", "SGK Lịch sử 6 — NXB Giáo dục Việt Nam", "Khu di tích lịch sử Đền Hùng (denhung.org.vn)"]
+    },
+    {
+      "id": "hai-ba-trung",
+      "ten": "Hai Bà Trưng (Trưng Trắc – Trưng Nhị)",
+      "thoi_dai": "Khởi nghĩa năm 40–43",
+      "cong_trang": "Phất cờ khởi nghĩa năm 40 chống ách đô hộ nhà Đông Hán, giành 65 thành, xưng vương và đóng đô ở Mê Linh; kháng chiến thất bại trước Mã Viện năm 43.",
+      "tuong_dai_tham_chieu": "Tượng Hai Bà Trưng cưỡi voi (đền Hai Bà Trưng, Hà Nội; tượng đài tại TP.HCM)",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly theo tượng đài Hai Bà Trưng cưỡi voi; KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["ha-noi"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "ngo-quyen",
+      "ten": "Ngô Quyền",
+      "thoi_dai": "Chiến thắng Bạch Đằng năm 938",
+      "cong_trang": "Đánh tan quân Nam Hán trên sông Bạch Đằng năm 938 bằng trận địa cọc ngầm, chấm dứt hơn một nghìn năm Bắc thuộc, mở nền độc lập tự chủ; sau xưng vương.",
+      "tuong_dai_tham_chieu": "Tượng Ngô Quyền & bãi cọc Bạch Đằng (Hải Phòng); đền thờ Ngô Quyền ở Đường Lâm (Hà Nội)",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly (tướng giáp trụ bên trận địa cọc); KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["hai-phong", "ha-noi"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "dinh-bo-linh",
+      "ten": "Đinh Bộ Lĩnh (Đinh Tiên Hoàng)",
+      "thoi_dai": "Lập nước Đại Cồ Việt năm 968",
+      "cong_trang": "Dẹp loạn 12 sứ quân, thống nhất đất nước, lập nước Đại Cồ Việt năm 968, đóng đô ở Hoa Lư (Ninh Bình) và xưng Đinh Tiên Hoàng đế.",
+      "tuong_dai_tham_chieu": "Tượng Đinh Tiên Hoàng tại cố đô Hoa Lư, Ninh Bình",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly theo tượng đài Hoa Lư (kèm cờ lau); KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["ninh-binh"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "ly-thai-to",
+      "ten": "Lý Thái Tổ (Lý Công Uẩn)",
+      "thoi_dai": "Dời đô về Thăng Long năm 1010",
+      "cong_trang": "Lập nhà Lý năm 1009; năm 1010 ban Chiếu dời đô, dời đô từ Hoa Lư về thành Đại La, đổi tên là Thăng Long — nền móng của Hà Nội ngày nay.",
+      "tuong_dai_tham_chieu": "Tượng đài Lý Thái Tổ bên hồ Hoàn Kiếm, Hà Nội",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly theo tượng đài hồ Hoàn Kiếm (vua nâng Chiếu dời đô); KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["ha-noi"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "Chiếu dời đô (Thiên đô chiếu)", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "tran-hung-dao",
+      "ten": "Trần Hưng Đạo (Trần Quốc Tuấn)",
+      "thoi_dai": "Kháng chiến chống Nguyên – Mông (1258, 1285, 1288)",
+      "cong_trang": "Quốc công Tiết chế chỉ huy quân dân Đại Việt ba lần đánh bại quân Nguyên – Mông, đỉnh cao là chiến thắng Bạch Đằng năm 1288; tác giả «Hịch tướng sĩ».",
+      "tuong_dai_tham_chieu": "Tượng đài Trần Hưng Đạo (nhiều nơi); đền Trần, Nam Định (nay thuộc Ninh Bình)",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly theo tượng đài Trần Hưng Đạo (thế chỉ kiếm); KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["ninh-binh", "quang-ninh"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "Hịch tướng sĩ (Dụ chư tỳ tướng hịch văn)", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "le-loi",
+      "ten": "Lê Lợi (Lê Thái Tổ)",
+      "thoi_dai": "Khởi nghĩa Lam Sơn (1418–1427)",
+      "cong_trang": "Lãnh đạo khởi nghĩa Lam Sơn đánh đuổi quân Minh, giành lại độc lập và lập nhà Hậu Lê, lên ngôi Lê Thái Tổ; gắn với truyền thuyết trả gươm báu ở hồ Hoàn Kiếm.",
+      "tuong_dai_tham_chieu": "Tượng đài Lê Lợi (Thanh Hóa); tượng vua Lê Thái Tổ bên hồ Hoàn Kiếm, Hà Nội",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly (vua giơ gươm Thuận Thiên); KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["thanh-hoa", "ha-noi"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "Lam Sơn thực lục", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "quang-trung",
+      "ten": "Quang Trung (Nguyễn Huệ)",
+      "thoi_dai": "Đại phá quân Thanh — Tết Kỷ Dậu 1789",
+      "cong_trang": "Hoàng đế Quang Trung chỉ huy cuộc hành quân thần tốc, đại phá 29 vạn quân Thanh trong chiến dịch Ngọc Hồi – Đống Đa đầu xuân Kỷ Dậu 1789, giải phóng Thăng Long.",
+      "tuong_dai_tham_chieu": "Tượng đài Quang Trung tại Gò Đống Đa (Hà Nội) và Bảo tàng Quang Trung (Bình Định, nay thuộc Gia Lai)",
+      "nhan_hinh_dung": "Hình dung nghệ thuật low-poly theo tượng đài Quang Trung (hoàng đế cưỡi ngựa cầm kiếm); KHÔNG phải chân dung xác thực.",
+      "lien_quan_tinh": ["gia-lai", "ha-noi"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký tục biên", "Hoàng Lê nhất thống chí", "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"]
+    }
+  ]
+}

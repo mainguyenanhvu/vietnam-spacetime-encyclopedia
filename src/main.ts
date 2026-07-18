@@ -700,6 +700,7 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   // Dọn mô hình 3D của tỉnh trước đó (nếu có) trước khi dựng lại panel.
   activeModel3DDispose?.();
   activeModel3DDispose = null;
+  disposeFigures();
 
   const num = (v: string | number | undefined) =>
     v === undefined || v === "" ? "—" : Number(String(v).replace(",", ".")).toLocaleString("vi-VN");
@@ -803,14 +804,24 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
 
   if (!isIsland) {
     const slug = slugify(name);
-    void Promise.all([loadProfile(name), loadLiterature(), loadMedia()]).then(
-      ([profile, lib, media]) => {
+    void Promise.all([
+      loadProfile(name),
+      loadLiterature(),
+      loadMedia(),
+      loadFigures(),
+    ]).then(([profile, lib, media, figures]) => {
         const slot = document.getElementById("profile-slot");
         if (!slot) return;
         const imgs = media.filter((m) => m.slug === slug);
         const gallery = imgs.length
           ? `<details class="profile-section" open><summary>🖼️ Hình ảnh (${imgs.length})</summary>
               <div class="media-gallery">${imgs.map(mediaImgHtml).join("")}</div>
+             </details>`
+          : "";
+        const figs = figures.filter((f) => f.lien_quan_tinh.includes(slug));
+        const figuresSection = figs.length
+          ? `<details class="profile-section" open><summary>🗿 Nhân vật lịch sử — mô hình 3D (${figs.length})</summary>
+              ${figs.map(figureCardHtml).join("")}
              </details>`
           : "";
         const poems = [...lib.poems, ...lib.hcmWorks, ...lib.aboutHcm].filter(
@@ -834,7 +845,16 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
             ? profileHtml(profile)
             : `<p class="muted coming-soon">Hồ sơ bách khoa đầy đủ của tỉnh này đang được biên soạn.</p>`) +
           gallery +
+          figuresSection +
           related;
+        // Nạp lười mô hình 3D nhân vật khi người dùng mở từng thẻ.
+        slot.querySelectorAll<HTMLDetailsElement>("details.fig3d").forEach((d) => {
+          d.addEventListener("toggle", () => {
+            const host = d.querySelector<HTMLElement>(".fig3d-stage");
+            const id = d.dataset.figure;
+            if (d.open && host && id) void mountFigureInto(host, id);
+          });
+        });
       },
     );
   } else {
@@ -849,6 +869,7 @@ document.getElementById("panel-close")?.addEventListener("click", () => {
   if (focusMode) exitFocus();
   activeModel3DDispose?.();
   activeModel3DDispose = null;
+  disposeFigures();
 });
 
 // ---------------------------------------------------------------------------
@@ -1098,6 +1119,62 @@ function mediaImgHtml(m: MediaImage): string {
       m.mo_ta ? ` — ${esc(m.mo_ta)}` : ""
     }<br/><span class="muted">${credit}</span></figcaption>
   </figure>`;
+}
+
+// ---------------------------------------------------------------------------
+// 🗿 R5 — Nhân vật lịch sử (mô hình 3D low-poly theo tượng đài đã công bố).
+// KHÔNG chân dung xác thực — hình dung nghệ thuật, gắn nhãn minh bạch + nguồn
+// chính sử. figures3d.ts (Three.js) nạp lười khi người dùng mở từng mục.
+// ---------------------------------------------------------------------------
+interface HistFigure {
+  id: string;
+  ten: string;
+  thoi_dai: string;
+  cong_trang: string;
+  tuong_dai_tham_chieu: string;
+  nhan_hinh_dung: string;
+  lien_quan_tinh: string[];
+  trang_thai: string;
+  nguon: string[];
+}
+
+let figuresCache: HistFigure[] | null = null;
+const activeFigureDisposers: Array<() => void> = [];
+
+async function loadFigures(): Promise<HistFigure[]> {
+  if (figuresCache) return figuresCache;
+  const data = await fetchJson<{ items: HistFigure[] }>("data/figures/figures-3d.json");
+  figuresCache = data?.items ?? [];
+  return figuresCache;
+}
+
+function disposeFigures(): void {
+  while (activeFigureDisposers.length) activeFigureDisposers.pop()?.();
+}
+
+async function mountFigureInto(host: HTMLElement, id: string): Promise<void> {
+  if (host.dataset.ready === "1") return;
+  host.dataset.ready = "1";
+  try {
+    const { mountFigure3D } = await import("./figures3d");
+    const handle = mountFigure3D(host, id);
+    activeFigureDisposers.push(() => handle.dispose());
+  } catch {
+    host.innerHTML = `<p class="muted">Không tải được mô hình 3D.</p>`;
+  }
+}
+
+function figureCardHtml(f: HistFigure): string {
+  return `<details class="profile-section fig-card">
+    <summary>🗿 ${esc(f.ten)} <span class="muted">— ${esc(f.thoi_dai)}</span></summary>
+    <p>${esc(f.cong_trang)}</p>
+    <p class="fig-disclaimer">⚠️ ${esc(f.nhan_hinh_dung)} <br/>Tham chiếu: ${esc(f.tuong_dai_tham_chieu)}.</p>
+    <details class="fig3d" data-figure="${esc(f.id)}">
+      <summary>🧊 Xem mô hình 3D</summary>
+      <div class="fig3d-stage model3d-stage"><p class="muted">Đang tải mô hình…</p></div>
+    </details>
+    <details class="sources"><summary>📚 Nguồn</summary>${list(f.nguon)}</details>
+  </details>`;
 }
 
 // ---------------------------------------------------------------------------
