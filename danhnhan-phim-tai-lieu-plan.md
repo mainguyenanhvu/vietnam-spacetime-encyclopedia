@@ -40,19 +40,23 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 ## ĐỢT 2 — 6 hạng mục mới (Iron Man 2026-07-18)
 | # | Việc | Ghi chú pháp lý/khả thi | Trạng thái |
 |---|---|---|---|
-| 1 | Ảnh thật địa danh/nhân vật | ⚠️ «công cộng» ≠ hết bản quyền; CHỈ Commons license tự do + nhúng Maps/YouTube; KHÔNG tải ảnh báo/web | 🔄 Maps xong (04e6b55); quét Commons tiếp |
-| 2 | 3D đẹp + động tự nhiên | Iron Man chọn: NHÚNG model Sketchfab CC + nâng cấp Three.js | 🔄 4 model CC nhúng xong (5333252); còn nâng cấp Three.js 5 model + hoạt cảnh |
-| 3 | Mở rộng danh nhân 4000 năm + thêm phim; **phim state → reviewed** | | ✅ rule (4a49944); mở rộng thêm = đợt sau |
+| 1 | Ảnh thật địa danh/nhân vật | ⚠️ «công cộng» ≠ hết bản quyền; CHỈ Commons license tự do + nhúng Maps/YouTube; KHÔNG tải ảnh báo/web | ✅ Maps (04e6b55) + 29 ảnh Commons xác thực API (cf4c4ab); images.json 45→74 |
+| 2 | 3D đẹp + động tự nhiên | Iron Man chọn: NHÚNG model Sketchfab CC + nâng cấp Three.js | ✅ 4 model CC (5333252) + hoạt cảnh thủ tục 8 bộ phận (a527495): trâu/voi thở-phe phẩy, chim vỗ cánh bay, phở bốc khói, trái cây đung đưa. Test headless 8/8 PASS |
+| 3 | Mở rộng danh nhân 4000 năm + thêm phim; **phim state → reviewed** | | ✅ rule (4a49944) + 46 danh nhân mới (cf4c4ab); danh-nhan.json 255→301 (draft, cần soát nguồn) |
 | 4 | Dòng thời gian 4000 năm (2879 TCN → nay) | 106 mốc có nguồn nhà nước | ✅ commit bbafc04 |
-| 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | 🔄 tô màu + NHÃN TỈNH xong (d366d08); nhãn sông/núi cần geodata → chưa |
-| 6 | Tính năng backlog còn lại | | ☐ |
+| 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | ✅ tô màu + nhãn TỈNH (d366d08) + nhãn SÔNG/NÚI 22+18 (cf4c4ab, song-nui.json, chủ quyền trên cùng qua beforeId) |
+| 6 | Tính năng backlog còn lại | | ☐ chưa (cần quyết định/dữ liệu) |
+
+## Đã xong đợt 2 (2026-07-18, phiên song song)
+- 3 agent nền: ảnh Commons (31→29 xác thực qua Commons API imageinfo, loại 2 file bịa), danh nhân (46), geodata sông/núi (40).
+- Kiểm URL ảnh: CDN upload.wikimedia.org bị rate-limit 429 → xác thực qua **Commons API** (nguồn chuẩn, trả URL canonical + license thật).
+- Verify: validate_documentaries + validate_media xanh; tsc + vite build xanh; **test hoạt cảnh Three.js headless 8/8 PASS** (bundle esbuild → so sánh transform theo t).
+- ⚠️ Không kiểm được map trong sandbox: basemap CARTO bị chặn tải tiles → map.on('load') không chạy. Code song-nui đã xác minh qua tsc/build/validator + data load 200 JSON; render nhãn cần verify trên production (nơi user đã test đạt trước đó).
 
 ## Còn lại sau phiên (đợt tiếp)
-- #1: quét thêm ảnh Wikimedia Commons cho mục thiếu (pipeline validate_media sẵn).
-- #2: nâng cấp Three.js + hoạt cảnh cho 5 model chưa có bản CC (rồng/nón/vải/phở/chim).
-- #5: nhãn SÔNG/NÚI/địa danh cần dữ liệu GeoJSON điểm (chưa có) — hoặc dùng tab Địa danh (Maps) đã có.
-- #3: mở rộng thêm danh nhân (đợt lớn) — cân nhắc gánh nặng kiểm sử.
-- #6: rà tính năng backlog cũ (Bảo vật quốc gia pins, Nam tiến animation, overlay đợt 2, Taberd georef).
+- Soát nguồn 46+ danh nhân draft (gắn URL cổng tỉnh/bảo tàng khi WebSearch có quota lại); soát 2 điểm tin cậy thấp (quê Vũ Văn Dũng, Dã Tượng).
+- #6 backlog: Bảo vật quốc gia pins, Nam tiến animation, overlay đợt 2, Taberd georef (cần quyết định/dữ liệu — chưa "không bị chặn").
+- Mở rộng danh nhân đợt lớn hơn (hiện 301) + ảnh Commons cho tỉnh còn thiếu (11 tỉnh agent A chưa tìm được).
 
 ## Quy tắc mới (đã chốt)
 - Phim `kenh_loai=state` (VTV/QPVN/HTV/đài tỉnh/báo-thông tấn nhà nước) = KHÔNG cần người duyệt → `trang_thai=reviewed` (phim); tiểu sử vẫn có thể draft riêng.
