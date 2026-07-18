@@ -11,6 +11,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PHIM = join(ROOT, "public", "data", "documentaries", "phim-tai-lieu.json");
 const NHAC = join(ROOT, "public", "data", "media", "nhac-yeu-nuoc.json");
+const DANHNHAN = join(ROOT, "public", "data", "figures", "danh-nhan.json");
 const PROV = join(ROOT, "public", "data", "provinces");
 const FIG = join(ROOT, "public", "data", "figures", "figures-3d.json");
 
@@ -100,8 +101,33 @@ if (existsSync(NHAC)) {
   console.log("ℹ️ nhac-yeu-nuoc.json chưa có — bỏ qua.");
 }
 
+// --- danh-nhan.json ---
+if (existsSync(DANHNHAN)) {
+  const data = JSON.parse(readFileSync(DANHNHAN, "utf8"));
+  const items = data.items || [];
+  const idSeen = new Set();
+  let coPhim = 0;
+  for (const d of items) {
+    const w = `danh-nhan/${d.id ?? d.ten ?? "?"}`;
+    if (!d.id) fail(w, "thiếu id");
+    if (d.id && idSeen.has(d.id)) fail(w, "id trùng");
+    idSeen.add(d.id);
+    if (!d.ten) fail(w, "thiếu ten");
+    if (!slugs.has(d.tinh)) fail(w, `tinh "${d.tinh}" không khớp slug tỉnh`);
+    if (!d.nguon || !d.nguon.length) fail(w, "thiếu nguon[]");
+    if (d.trang_thai !== "draft" && d.trang_thai !== "reviewed")
+      fail(w, `trang_thai "${d.trang_thai}" phải là draft|reviewed`);
+    if (d.youtube_id) { checkYt(w, d.youtube_id); coPhim++; }
+    if (d.figure_id && figIds.size && !figIds.has(d.figure_id))
+      fail(w, `figure_id "${d.figure_id}" không khớp figures-3d.json`);
+  }
+  console.log(`✅ danh-nhan.json: ${items.length} danh nhân (${coPhim} có phim)`);
+} else {
+  console.log("ℹ️ danh-nhan.json chưa có — bỏ qua.");
+}
+
 if (errors) {
-  console.error(`\n❌ ${errors} lỗi phim tài liệu / nhạc yêu nước.`);
+  console.error(`\n❌ ${errors} lỗi phim tài liệu / nhạc yêu nước / danh nhân.`);
   process.exit(1);
 }
-console.log(`\n✅ Phim tài liệu + nhạc yêu nước hợp lệ.`);
+console.log(`\n✅ Phim tài liệu + nhạc yêu nước + danh nhân hợp lệ.`);

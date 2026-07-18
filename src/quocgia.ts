@@ -27,6 +27,20 @@ interface PhimData {
   quoc_gia?: PhimQuocGia[];
   danh_nhan: Phim[];
 }
+interface DanhNhan {
+  id: string;
+  tinh: string;
+  ten: string;
+  linh_vuc?: string;
+  que?: string;
+  gioi_thieu?: string;
+  youtube_id?: string;
+  kenh_loai?: string;
+  figure_id?: string;
+  trang_thai?: string;
+  nguon?: string[];
+}
+interface DanhNhanData { ghi_chu?: string; tong?: number; co_phim?: number; items: DanhNhan[] }
 interface NhacPhienBan { the_hien: string; youtube_id: string; kenh: string; kenh_loai: string }
 interface NhacItem {
   id: string;
@@ -43,6 +57,7 @@ interface NhacData { ghi_chu?: string; items: NhacItem[] }
 
 const PHIM_URL = `${import.meta.env.BASE_URL}data/documentaries/phim-tai-lieu.json`;
 const NHAC_URL = `${import.meta.env.BASE_URL}data/media/nhac-yeu-nuoc.json`;
+const DANHNHAN_URL = `${import.meta.env.BASE_URL}data/figures/danh-nhan.json`;
 
 // Tên hiển thị 34 tỉnh (chỉ để hiển thị — danh nhân gom theo slug).
 const TINH_TEN: Record<string, string> = {
@@ -84,15 +99,16 @@ function badge(kenh_loai: string, draft?: boolean): string {
 
 let phim: PhimData | null = null;
 let nhac: NhacData | null = null;
-let phimByTinh: Map<string, Phim[]> | null = null;
+let danhnhan: DanhNhanData | null = null;
+let dnByTinh: Map<string, DanhNhan[]> | null = null;
 
 function buildIndex(): void {
-  if (!phim) return;
-  phimByTinh = new Map();
-  for (const d of phim.danh_nhan) {
-    const arr = phimByTinh.get(d.tinh) ?? [];
+  if (!danhnhan) return;
+  dnByTinh = new Map();
+  for (const d of danhnhan.items) {
+    const arr = dnByTinh.get(d.tinh) ?? [];
     arr.push(d);
-    phimByTinh.set(d.tinh, arr);
+    dnByTinh.set(d.tinh, arr);
   }
 }
 
@@ -101,6 +117,24 @@ function phimCard(ten: string, vid: string, kenh_loai: string, draft: boolean): 
     <h4>${esc(ten)}</h4>
     ${badge(kenh_loai, draft)}
     ${embed(vid, ten)}
+  </article>`;
+}
+
+function sourcesHtml(nguon?: string[]): string {
+  if (!nguon || !nguon.length) return "";
+  return `<details class="qg-sources"><summary>📚 Nguồn</summary><ul>${nguon.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></details>`;
+}
+
+function danhNhanCard(d: DanhNhan): string {
+  const hasVid = !!d.youtube_id && YT.test(d.youtube_id);
+  const meta = [d.linh_vuc, d.que].filter(Boolean).map((x) => esc(x as string)).join(" · ");
+  return `<article class="qg-card">
+    <h4>${esc(d.ten)}</h4>
+    ${meta ? `<p class="qg-meta">${meta}</p>` : ""}
+    ${d.gioi_thieu ? `<p class="qg-bio">${esc(d.gioi_thieu)}</p>` : ""}
+    ${badge(d.kenh_loai ?? "khac", d.trang_thai === "draft")}
+    ${hasVid ? embed(d.youtube_id as string, d.ten) : `<p class="qg-nophim">🎬 Chưa có phim tài liệu — đang tìm bổ sung.</p>`}
+    ${sourcesHtml(d.nguon)}
   </article>`;
 }
 
@@ -114,34 +148,37 @@ function renderQuocGiaSection(): string {
 }
 
 function renderTinh(slug: string): string {
-  const list = phimByTinh?.get(slug) ?? [];
-  if (!list.length) return `<p class="muted">Chưa có phim tài liệu cho tỉnh này.</p>`;
-  const cards = list.map((d) => phimCard(d.ten, d.youtube_id, d.kenh_loai, d.trang_thai === "draft")).join("");
-  return `<div class="qg-grid">${cards}</div>`;
+  const list = dnByTinh?.get(slug) ?? [];
+  if (!list.length) return `<p class="muted">Chưa có danh nhân cho tỉnh này.</p>`;
+  const withPhim = list.filter((d) => d.youtube_id).length;
+  const cards = list.map(danhNhanCard).join("");
+  return `<p class="qg-tinh-stat">${list.length} danh nhân · ${withPhim} có phim tài liệu</p><div class="qg-grid">${cards}</div>`;
 }
 
 function renderPhimTab(host: HTMLElement): void {
   const provinces = Object.keys(TINH_TEN)
-    .filter((s) => (phimByTinh?.get(s)?.length ?? 0) > 0)
+    .filter((s) => (dnByTinh?.get(s)?.length ?? 0) > 0)
     .sort((a, b) => TINH_TEN[a].localeCompare(TINH_TEN[b], "vi"));
   const opts = provinces
-    .map((s) => `<option value="${s}">${esc(TINH_TEN[s])} (${phimByTinh?.get(s)?.length ?? 0})</option>`)
+    .map((s) => `<option value="${s}">${esc(TINH_TEN[s])} (${dnByTinh?.get(s)?.length ?? 0})</option>`)
     .join("");
+  const tong = danhnhan?.items.length ?? 0;
+  const coPhim = danhnhan?.items.filter((d) => d.youtube_id).length ?? 0;
   host.innerHTML = `
-    <p class="qg-note">Phim tài liệu do bên thứ ba sản xuất, nhúng từ YouTube. Bản nháp — chờ người duyệt xác thực. Chủ quyền Hoàng Sa & Trường Sa của Việt Nam.</p>
+    <p class="qg-note">${tong} danh nhân theo 34 tỉnh · ${coPhim} có phim tài liệu. Phim do bên thứ ba sản xuất, nhúng từ YouTube; bản nháp — chờ người duyệt. Chủ quyền Hoàng Sa & Trường Sa của Việt Nam.</p>
     ${renderQuocGiaSection()}
     <section class="qg-section">
       <h3>🎖️ Danh nhân theo tỉnh</h3>
       <label class="qg-select-label">Chọn tỉnh:
         <select id="qg-tinh-select"><option value="">— Chọn tỉnh —</option>${opts}</select>
       </label>
-      <div id="qg-tinh-content"><p class="muted">Chọn một tỉnh để xem phim tài liệu danh nhân.</p></div>
+      <div id="qg-tinh-content"><p class="muted">Chọn một tỉnh để xem danh nhân & phim tài liệu.</p></div>
     </section>`;
   const sel = host.querySelector<HTMLSelectElement>("#qg-tinh-select");
   const content = host.querySelector<HTMLElement>("#qg-tinh-content");
   sel?.addEventListener("change", () => {
     if (!content) return;
-    content.innerHTML = sel.value ? renderTinh(sel.value) : `<p class="muted">Chọn một tỉnh để xem phim tài liệu danh nhân.</p>`;
+    content.innerHTML = sel.value ? renderTinh(sel.value) : `<p class="muted">Chọn một tỉnh để xem danh nhân & phim tài liệu.</p>`;
   });
 }
 
@@ -194,9 +231,13 @@ async function loadAll(): Promise<void> {
   const body = document.getElementById("quocgia-body");
   if (body) body.innerHTML = `<p class="muted">Đang tải…</p>`;
   try {
+    if (!danhnhan) {
+      const r = await fetch(DANHNHAN_URL);
+      if (r.ok) { danhnhan = (await r.json()) as DanhNhanData; buildIndex(); }
+    }
     if (!phim) {
       const r = await fetch(PHIM_URL);
-      if (r.ok) { phim = (await r.json()) as PhimData; buildIndex(); }
+      if (r.ok) phim = (await r.json()) as PhimData;
     }
     if (!nhac) {
       const r = await fetch(NHAC_URL);
@@ -240,7 +281,7 @@ export function initQuocGia(): void {
     hideOtherPanels();
     const panel = document.getElementById("quocgia-panel");
     if (panel) panel.hidden = false;
-    if (!phim || !nhac) void loadAll();
+    if (!danhnhan || !phim || !nhac) void loadAll();
   });
   document.getElementById("quocgia-close")?.addEventListener("click", closePanel);
   document.getElementById("qg-tab-phim")?.addEventListener("click", () => switchTab("phim"));

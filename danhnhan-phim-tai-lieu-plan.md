@@ -19,11 +19,23 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 | Track | Việc | Ai làm | Trạng thái |
 |---|---|---|---|
 | A | 32 youtube_id nhạc quê hương | main | ✅ commit 0f35efb |
-| B | 19 bài nhạc yêu nước (playlist) → nhac-yeu-nuoc.json + UI | main | ⏳ |
-| C | Mở rộng danh nhân/tỉnh (có nguồn) | research agents ×5 (bg) | ⏳ |
-| D | YouTube doc search 137 danh nhân sẵn có | main (Chrome) | ⏳ |
-| E | phim-tai-lieu.json + validator + UI hub + cross-link tỉnh | main | ☐ |
-| F | 12 phim đã verify (8 nv cổ + HCM/VNG/Mẹ VNAH/AH LLVTND) | main | ✅ tìm xong, chờ tích hợp E |
+| B | 19 bài nhạc yêu nước (playlist) → nhac-yeu-nuoc.json + UI | main | ✅ commit eaa93e3 + cde9e55 |
+| C | Mở rộng danh nhân/tỉnh (có nguồn) | research agents ×5 (bg) | 🔄 4/5 xong (~101 mới); Nam Bộ đang chạy |
+| D | YouTube doc search 137 danh nhân sẵn có | main (Chrome) | ✅ 121/137 có phim (oEmbed 200) |
+| E | phim-tai-lieu.json + validator + UI hub «Việt Nam trong tôi» | main | ✅ commit eaa93e3 + cde9e55 |
+| F | 12 phim đã verify (8 nv cổ + HCM/VNG/Mẹ VNAH/AH LLVTND) | main | ✅ gộp vào quoc_gia[] |
+| G | Merge expansions → danh-nhan.json + search phim cho danh nhân mới | main | ☐ chờ agent Nam Bộ |
+
+## Việc còn (sau agent Nam Bộ)
+1. Gộp 137 danh nhân sẵn có + ~5 lô mở rộng → `danh-nhan.json` (đủ tiểu sử + nguồn, trang_thai draft).
+2. Cập nhật UI hub đọc danh-nhan.json: hiện MỌI danh nhân/tỉnh (tiểu sử) + nhúng phim nếu có.
+3. Search YouTube phim cho danh nhân mới (batched, kỹ thuật như track D).
+4. Validator cho danh-nhan.json + commit.
+5. ⚠️ Caveat từ agent: WebSearch hết quota giữa chừng → nhiều nguồn là tên cơ quan (không deep-link) + đối chiếu Wikipedia → GIỮ draft, cần người soát.
+
+## Việc người dùng còn chờ (khác YouTube)
+- «Dùng Claude Design sinh ảnh» — CHƯA bắt đầu.
+- «Hỏi từng câu để kiểm thử tính năng + tiêu chuẩn» — CHƯA bắt đầu (interactive).
 
 ## Ràng buộc (bắt buộc)
 - Chỉ nhúng youtube-nocookie, video đã kiểm oEmbed=200.
