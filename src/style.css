@@ -1168,3 +1168,35 @@ body.kid-mode #topbar {
 .model3d-attr { font-size: 0.74rem; color: #78716c; margin: 0.35rem 0 0; }
 .model3d-attr a { color: #0369a1; }
 /* === /Model 3D thật === */
+
+/* === Dòng thời gian 4000 năm (timeline.ts) === */
+#timeline-panel {
+  position: absolute; top: 3.5rem; left: 50%; transform: translateX(-50%);
+  width: min(720px, 96vw); max-height: calc(100% - 6rem); overflow-y: auto;
+  background: #fffbeb; border: 1px solid #d6d3d1; border-radius: 8px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.25); padding: 1rem 1.1rem 1.4rem; z-index: 20;
+}
+#timeline-close { float: right; border: none; background: none; font-size: 1.3rem; cursor: pointer; line-height: 1; }
+.tl-title { margin: 0.1rem 0 0.3rem; font-size: 1.15rem; }
+.tl-note { font-size: 0.8rem; color: #92400e; background: #fef3c7; border: 1px solid #fde68a; border-radius: 6px; padding: 0.4rem 0.6rem; margin: 0 0 0.7rem; }
+.tl-filters { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.9rem; }
+.tl-filter { border: 1px solid #b45309; background: #fff7ed; color: #b45309; border-radius: 999px; padding: 0.25rem 0.7rem; cursor: pointer; font-size: 0.82rem; font-weight: 600; }
+.tl-filter.active { background: #b45309; color: #fff; }
+.tl-list { list-style: none; margin: 0; padding: 0; border-left: 3px solid #fde68a; }
+.tl-item { position: relative; padding: 0 0 1rem 1.1rem; }
+.tl-item::before { content: ""; position: absolute; left: -0.5rem; top: 0.35rem; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: #b45309; border: 2px solid #fffbeb; }
+.tl-year { font-weight: 700; color: #b45309; font-size: 0.9rem; }
+.tl-card { background: #fff; border: 1px solid #e7e5e4; border-radius: 8px; padding: 0.5rem 0.7rem; margin-top: 0.2rem; }
+.tl-card h4 { margin: 0.25rem 0; font-size: 0.98rem; }
+.tl-card p { margin: 0.2rem 0; font-size: 0.86rem; color: #44403c; line-height: 1.45; }
+.tl-badge { font-size: 0.7rem; padding: 0.1rem 0.45rem; border-radius: 999px; background: #f5f5f4; color: #57534e; border: 1px solid #e7e5e4; }
+.tl-badge-dung-nuoc { background: #dcfce7; color: #166534; border-color: #bbf7d0; }
+.tl-badge-giu-nuoc { background: #fee2e2; color: #991b1b; border-color: #fecaca; }
+.tl-badge-trieu-dai { background: #fef3c7; color: #854d0e; border-color: #fde68a; }
+.tl-badge-van-hoa { background: #ede9fe; color: #5b21b6; border-color: #ddd6fe; }
+.tl-badge-ngoai-giao { background: #e0f2fe; color: #075985; border-color: #bae6fd; }
+.tl-badge-hien-dai { background: #f1f5f9; color: #334155; border-color: #e2e8f0; }
+.tl-sources { margin-top: 0.3rem; font-size: 0.74rem; }
+.tl-sources summary { cursor: pointer; color: #78716c; }
+.tl-sources ul { margin: 0.25rem 0 0; padding-left: 1.1rem; color: #57534e; }
+/* === /Dòng thời gian === */

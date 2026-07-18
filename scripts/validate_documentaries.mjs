@@ -13,6 +13,7 @@ const PHIM = join(ROOT, "public", "data", "documentaries", "phim-tai-lieu.json")
 const NHAC = join(ROOT, "public", "data", "media", "nhac-yeu-nuoc.json");
 const DANHNHAN = join(ROOT, "public", "data", "figures", "danh-nhan.json");
 const DIADANH = join(ROOT, "public", "data", "media", "dia-danh.json");
+const TIMELINE = join(ROOT, "public", "data", "timeline", "dong-thoi-gian.json");
 const PROV = join(ROOT, "public", "data", "provinces");
 const FIG = join(ROOT, "public", "data", "figures", "figures-3d.json");
 
@@ -142,8 +143,26 @@ if (existsSync(DIADANH)) {
   console.log("ℹ️ dia-danh.json chưa có — bỏ qua.");
 }
 
+// --- dong-thoi-gian.json ---
+if (existsSync(TIMELINE)) {
+  const data = JSON.parse(readFileSync(TIMELINE, "utf8"));
+  const items = data.items || [];
+  const LOAI = new Set(["dung-nuoc", "giu-nuoc", "trieu-dai", "van-hoa", "ngoai-giao", "hien-dai"]);
+  for (const e of items) {
+    const w = `timeline/${e.tieu_de ?? "?"}`;
+    if (typeof e.nam !== "number") fail(w, "nam phải là số");
+    if (!e.nam_hien_thi) fail(w, "thiếu nam_hien_thi");
+    if (!e.tieu_de) fail(w, "thiếu tieu_de");
+    if (!LOAI.has(e.loai)) fail(w, `loai "${e.loai}" không hợp lệ`);
+    if (!e.nguon || !e.nguon.length) fail(w, "thiếu nguon[]");
+  }
+  console.log(`✅ dong-thoi-gian.json: ${items.length} mốc`);
+} else {
+  console.log("ℹ️ dong-thoi-gian.json chưa có — bỏ qua.");
+}
+
 if (errors) {
-  console.error(`\n❌ ${errors} lỗi phim tài liệu / nhạc / danh nhân / địa danh.`);
+  console.error(`\n❌ ${errors} lỗi phim / nhạc / danh nhân / địa danh / dòng thời gian.`);
   process.exit(1);
 }
-console.log(`\n✅ Phim tài liệu + nhạc yêu nước + danh nhân + địa danh hợp lệ.`);
+console.log(`\n✅ Phim + nhạc + danh nhân + địa danh + dòng thời gian hợp lệ.`);

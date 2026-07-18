@@ -9,6 +9,7 @@ import { initOlympia } from "./olympia";
 import { initBattle } from "./battle";
 import { initJourney } from "./journey";
 import { initQuocGia } from "./quocgia";
+import { initTimeline } from "./timeline";
 
 // ---------------------------------------------------------------------------
 // Cấu hình thời kỳ (era). Mỗi era = một lớp ranh giới GeoJSON.
@@ -425,6 +426,7 @@ initOlympia();
 initBattle();
 initJourney();
 initQuocGia();
+initTimeline();
 
 function setEra(index: number): void {
   // Đổi thời kỳ khác → thoát focus (tỉnh được lọc có thể không tồn tại ở
