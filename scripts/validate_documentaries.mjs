@@ -14,6 +14,8 @@ const NHAC = join(ROOT, "public", "data", "media", "nhac-yeu-nuoc.json");
 const DANHNHAN = join(ROOT, "public", "data", "figures", "danh-nhan.json");
 const DIADANH = join(ROOT, "public", "data", "media", "dia-danh.json");
 const TIMELINE = join(ROOT, "public", "data", "timeline", "dong-thoi-gian.json");
+const SONGNUI = join(ROOT, "public", "data", "geo", "song-nui.json");
+const IMAGES = join(ROOT, "public", "data", "media", "images.json");
 const PROV = join(ROOT, "public", "data", "provinces");
 const FIG = join(ROOT, "public", "data", "figures", "figures-3d.json");
 
@@ -161,8 +163,54 @@ if (existsSync(TIMELINE)) {
   console.log("ℹ️ dong-thoi-gian.json chưa có — bỏ qua.");
 }
 
+// --- song-nui.json (GeoJSON nhãn sông/núi) ---
+if (existsSync(SONGNUI)) {
+  const geo = JSON.parse(readFileSync(SONGNUI, "utf8"));
+  const feats = geo.features || [];
+  if (geo.type !== "FeatureCollection") fail("song-nui", 'type phải là "FeatureCollection"');
+  for (const f of feats) {
+    const p = f.properties || {};
+    const w = `song-nui/${p.ten ?? "?"}`;
+    if (!p.ten) fail(w, "thiếu properties.ten");
+    if (p.loai !== "song" && p.loai !== "nui") fail(w, `loai "${p.loai}" phải là song|nui`);
+    const c = f.geometry?.coordinates;
+    if (!Array.isArray(c) || c.length !== 2) fail(w, "geometry.coordinates phải là [lon, lat]");
+    else {
+      const [lon, lat] = c;
+      if (lon < 102 || lon > 110) fail(w, `lon ${lon} ngoài lãnh thổ VN (102–110)`);
+      if (lat < 8 || lat > 24) fail(w, `lat ${lat} ngoài lãnh thổ VN (8–24)`);
+    }
+    if (!p.nguon || !p.nguon.length) fail(w, "thiếu properties.nguon[]");
+  }
+  console.log(`✅ song-nui.json: ${feats.length} nhãn địa hình`);
+} else {
+  console.log("ℹ️ song-nui.json chưa có — bỏ qua.");
+}
+
+// --- images.json (ảnh Wikimedia Commons license tự do) ---
+if (existsSync(IMAGES)) {
+  const data = JSON.parse(readFileSync(IMAGES, "utf8"));
+  const items = data.items || [];
+  const OK_LIC = new Set(["cc0", "cc-by", "cc-by-sa", "public-domain"]);
+  const idSeen = new Set();
+  for (const im of items) {
+    const w = `images/${im.id ?? im.ten ?? "?"}`;
+    if (!im.id) fail(w, "thiếu id");
+    if (im.id && idSeen.has(im.id)) fail(w, "id trùng");
+    idSeen.add(im.id);
+    if (!slugs.has(im.slug)) fail(w, `slug "${im.slug}" không khớp tỉnh`);
+    if (!im.ten) fail(w, "thiếu ten");
+    if (!/^https:\/\/upload\.wikimedia\.org\//.test(im.url || ""))
+      fail(w, "url phải trỏ upload.wikimedia.org");
+    if (!OK_LIC.has(im.giay_phep)) fail(w, `giay_phep "${im.giay_phep}" không thuộc license tự do`);
+  }
+  console.log(`✅ images.json: ${items.length} ảnh (license tự do)`);
+} else {
+  console.log("ℹ️ images.json chưa có — bỏ qua.");
+}
+
 if (errors) {
-  console.error(`\n❌ ${errors} lỗi phim / nhạc / danh nhân / địa danh / dòng thời gian.`);
+  console.error(`\n❌ ${errors} lỗi phim / nhạc / danh nhân / địa danh / dòng thời gian / địa hình / ảnh.`);
   process.exit(1);
 }
-console.log(`\n✅ Phim + nhạc + danh nhân + địa danh + dòng thời gian hợp lệ.`);
+console.log(`\n✅ Phim + nhạc + danh nhân + địa danh + dòng thời gian + địa hình + ảnh hợp lệ.`);

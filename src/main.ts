@@ -198,6 +198,67 @@ function applyLabels(on: boolean): void {
   });
 }
 
+// #5b — nhãn SÔNG & NÚI tự render từ GeoJSON của dự án (public/data/geo/song-nui.json).
+// Tự render để KHÔNG mở nhãn basemap (giữ chủ quyền — không lòi địa danh nước ngoài).
+// Nhãn chủ quyền Hoàng Sa/Trường Sa vẫn nằm trên cùng nhờ beforeId.
+let showSongNui = false;
+function applySongNui(on: boolean): void {
+  showSongNui = on;
+  const v = on ? "visible" : "none";
+  for (const id of ["song-labels", "nui-labels"]) {
+    if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", v);
+  }
+}
+function initSongNui(): void {
+  const url = `${import.meta.env.BASE_URL}data/geo/song-nui.json`;
+  void fetch(url)
+    .then((r) => (r.ok ? (r.json() as Promise<GeoJSON.FeatureCollection>) : null))
+    .then((geo) => {
+      if (!geo || !geo.features?.length || map.getSource("song-nui")) return;
+      map.addSource("song-nui", { type: "geojson", data: geo });
+      const before = map.getLayer("chu-quyen-labels") ? "chu-quyen-labels" : undefined;
+      const size = ["interpolate", ["linear"], ["zoom"], 4, 9, 8, 13] as unknown;
+      map.addLayer(
+        {
+          id: "song-labels",
+          type: "symbol",
+          source: "song-nui",
+          filter: ["==", ["get", "loai"], "song"],
+          layout: {
+            visibility: "none",
+            "text-field": ["concat", "〰 ", ["get", "ten"]],
+            "text-font": ["Open Sans Semibold"],
+            "text-size": size,
+            "text-max-width": 8,
+          },
+          paint: { "text-color": "#1d4ed8", "text-halo-color": "#ffffff", "text-halo-width": 1.5 },
+        } as never,
+        before,
+      );
+      map.addLayer(
+        {
+          id: "nui-labels",
+          type: "symbol",
+          source: "song-nui",
+          filter: ["==", ["get", "loai"], "nui"],
+          layout: {
+            visibility: "none",
+            "text-field": ["concat", "▲ ", ["get", "ten"]],
+            "text-font": ["Open Sans Semibold"],
+            "text-size": size,
+            "text-max-width": 8,
+          },
+          paint: { "text-color": "#7c2d12", "text-halo-color": "#ffffff", "text-halo-width": 1.5 },
+        } as never,
+        before,
+      );
+      if (showSongNui) applySongNui(true);
+    })
+    .catch(() => {
+      /* chưa có dữ liệu địa hình — bỏ qua, bản đồ vẫn chạy */
+    });
+}
+
 map.on("load", () => {
   for (const era of ERAS) {
     map.addSource(era.id, {
@@ -322,6 +383,7 @@ map.on("load", () => {
     },
   });
 
+  initSongNui();
   setEra(currentEra);
   buildTimeline();
   buildLayerControl();
@@ -678,6 +740,7 @@ function buildLayerControl(): void {
       <label><input type="radio" name="palette" value="ruc-ro"/> Tô màu phân biệt tỉnh</label>
       <label><input type="radio" name="palette" value="pastel"/> Tô màu pastel</label>
       <label><input type="checkbox" name="labels"/> Hiện tên tỉnh</label>
+      <label><input type="checkbox" name="songnui"/> Hiện sông &amp; núi</label>
     </div>`;
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
@@ -685,6 +748,7 @@ function buildLayerControl(): void {
     if (t.name === "overlay") void toggleOverlay(t.value, t.checked);
     if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
     if (t.name === "labels") applyLabels(t.checked);
+    if (t.name === "songnui") applySongNui(t.checked);
   });
   document.getElementById("app")?.appendChild(el);
 }
