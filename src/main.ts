@@ -367,16 +367,39 @@ async function buildModel3DPanel(host: HTMLElement): Promise<void> {
       <div class="model3d-gallery">${MODELS3D.map(
         (m) => `<button type="button" data-model="${m.id}">${esc(m.ten)}</button>`,
       ).join("")}</div>
-      <div class="model3d-stage"></div>`;
+      <div class="model3d-stage"></div>
+      <div class="model3d-real"></div>`;
     const stage = host.querySelector<HTMLElement>(".model3d-stage");
+    const realBox = host.querySelector<HTMLElement>(".model3d-real");
     if (!stage) return;
     let handle: { dispose(): void } | null = null;
+    const LIC_TEN: Record<string, string> = { by: "CC-BY", "by-nc": "CC-BY-NC", "by-sa": "CC-BY-SA", "by-nc-sa": "CC-BY-NC-SA", cc0: "CC0" };
     const show = (id: string): void => {
       handle?.dispose();
       handle = mountModel3D(stage, id);
+      stage.hidden = false;
       host
         .querySelectorAll<HTMLButtonElement>("button[data-model]")
         .forEach((b) => b.classList.toggle("active", b.dataset.model === id));
+      // Mô hình 3D thật (Sketchfab CC) nếu có
+      const def = MODELS3D.find((m) => m.id === id);
+      if (realBox) {
+        if (def?.sketchfab) {
+          const sf = def.sketchfab;
+          const url = `https://sketchfab.com/models/${sf.uid}`;
+          realBox.innerHTML = `<button type="button" class="model3d-real-btn">🧊 Xem mô hình thật (Sketchfab)</button>`;
+          realBox.querySelector<HTMLButtonElement>(".model3d-real-btn")?.addEventListener("click", () => {
+            handle?.dispose();
+            handle = null;
+            stage.hidden = true;
+            realBox.innerHTML = `
+              <div class="model3d-embed"><iframe title="${esc(def.ten)}" loading="lazy" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen src="https://sketchfab.com/models/${sf.uid}/embed?autospin=0.3&ui_theme=dark&ui_hint=0"></iframe></div>
+              <p class="model3d-attr">Mô hình «${esc(def.ten)}» của <a href="${url}" target="_blank" rel="noopener">${esc(sf.author)}</a> — giấy phép ${esc(LIC_TEN[sf.license] ?? sf.license)} (Sketchfab).</p>`;
+          });
+        } else {
+          realBox.innerHTML = "";
+        }
+      }
     };
     host
       .querySelectorAll<HTMLButtonElement>("button[data-model]")

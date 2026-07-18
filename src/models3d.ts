@@ -391,22 +391,30 @@ function nonLa(): THREE.Group {
 
 export type ModelGroup = "con-vat" | "trai-cay" | "am-thuc" | "bieu-tuong";
 
+export interface SketchfabCc {
+  uid: string;
+  license: string; // slug: by | by-nc | cc0 | by-sa …
+  author: string;
+}
+
 export interface Model3DDef {
   id: string;
   ten: string;
   nhom: ModelGroup;
   build(): THREE.Group;
+  /** Mô hình 3D thật (license tự do) nhúng qua Sketchfab iframe — có thì UI cho xem «mô hình thật». */
+  sketchfab?: SketchfabCc;
 }
 
 export const MODELS3D: Model3DDef[] = [
-  { id: "con-trau", ten: "Con trâu", nhom: "con-vat", build: conTrau },
-  { id: "con-voi", ten: "Con voi", nhom: "con-vat", build: conVoi },
+  { id: "con-trau", ten: "Con trâu", nhom: "con-vat", build: conTrau, sketchfab: { uid: "52704a4f28eb437694affaed27dec3cb", license: "by", author: "kenchoo" } },
+  { id: "con-voi", ten: "Con voi", nhom: "con-vat", build: conVoi, sketchfab: { uid: "2aeeb8958bc64240962b093705abffdf", license: "by-nc", author: "Jérémie Louvetz" } },
   { id: "chim-lac", ten: "Chim lạc", nhom: "con-vat", build: chimLac },
   { id: "qua-vai", ten: "Quả vải", nhom: "trai-cay", build: quaVai },
   { id: "thanh-long", ten: "Quả thanh long", nhom: "trai-cay", build: thanhLong },
   { id: "bat-pho", ten: "Bát phở", nhom: "am-thuc", build: batPho },
-  { id: "trong-dong", ten: "Trống đồng Đông Sơn", nhom: "bieu-tuong", build: trongDong },
-  { id: "hoa-sen", ten: "Hoa sen", nhom: "bieu-tuong", build: hoaSen },
+  { id: "trong-dong", ten: "Trống đồng Đông Sơn", nhom: "bieu-tuong", build: trongDong, sketchfab: { uid: "c91e55f6db8742f09ad2d5815ca6b749", license: "by", author: "Aaannnn" } },
+  { id: "hoa-sen", ten: "Hoa sen", nhom: "bieu-tuong", build: hoaSen, sketchfab: { uid: "771bfb8b865d47ba96b1ebb333029cfd", license: "by", author: "Alexander Ruletik" } },
   { id: "non-la", ten: "Nón lá", nhom: "bieu-tuong", build: nonLa },
 ];
 
