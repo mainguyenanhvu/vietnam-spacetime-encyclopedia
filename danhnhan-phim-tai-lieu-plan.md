@@ -24,7 +24,8 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 | D | YouTube doc search 137 danh nhân sẵn có | main (Chrome) | ✅ 121/137 có phim (oEmbed 200) |
 | E | phim-tai-lieu.json + validator + UI hub «Việt Nam trong tôi» | main | ✅ commit eaa93e3 + cde9e55 |
 | F | 12 phim đã verify (8 nv cổ + HCM/VNG/Mẹ VNAH/AH LLVTND) | main | ✅ gộp vào quoc_gia[] |
-| G | Merge expansions → danh-nhan.json + search phim cho danh nhân mới | main | ☐ chờ agent Nam Bộ |
+| G | Merge expansions → danh-nhan.json + search phim cho danh nhân mới | main | ✅ commit d101647 + d1340d6 (200/255 có phim) |
+| H | #2 ảnh: tab Địa danh nhúng Google Maps (150 địa danh) | main | ✅ commit 04e6b55 |
 
 ## Việc còn (sau agent Nam Bộ)
 1. Gộp 137 danh nhân sẵn có + ~5 lô mở rộng → `danh-nhan.json` (đủ tiểu sử + nguồn, trang_thai draft).
