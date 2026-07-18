@@ -170,8 +170,9 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 - ✅ **R3** (9bb67db): `src/olympia.ts` — game Olympia 4 vòng, ngân hàng 33 câu + 3 gói VCNV có nguồn, điểm cao localStorage.
 - ✅ **R9** (commit 532f194): `ca-dao-tuc-ngu.json` (35) + `bai-hat-que-huong.json` (32) — phủ 34/34 tỉnh; UI Thư viện + cross-link panel; nhúng youtube-nocookie. **CHỜ NGƯỜI**: điền youtube_id kênh chính chủ (32 bài đang null → chưa nhúng); đối chiếu 6 câu ca dao độ tin cậy trung bình + 3 bài chưa rõ năm.
 - ✅ **R2** (commit 993e1eb hạ tầng + 80fb364 data): Iron Man duyệt phương án sạch. `scripts/validate_media.mjs` = cổng license media trong CI (chỉ PD/CC0/CC-BY/CC-BY-SA hotlink hoặc ai-generated gắn nhãn; ép tac_gia cho CC-BY(-SA)); UI mục 🖼️ Hình ảnh trong panel tỉnh. **45 ảnh Wikimedia Commons phủ 34/34 tỉnh**, xác minh URL+giấy phép qua imageinfo API. ⚠️ Môi trường KHÔNG có tool sinh ảnh AI → mục thiếu ảnh tự do để placeholder chờ phiên có tool (schema đã có giay_phep='ai-generated').
-- Verified: `tsc && vite build` xanh; 4 validator CI (chủ quyền/tỉnh/văn học/ảnh) pass. **Chưa soi mắt render** (automation browser bị bóp rAF) — cần Iron Man eyeball.
-- ⏳ Còn treo chờ chốt chính sách: **R5** (nhân vật «100% chính xác» bất khả thi), **R6/R8** (animation chiến tranh — cần người kiểm sử).
+- ✅ **R5** (commit 6f7c77f): Iron Man duyệt Option A. `src/figures3d.ts` 8 anh hùng dân tộc low-poly theo tượng đài đã công bố (Vua Hùng, Hai Bà Trưng, Ngô Quyền, Đinh Bộ Lĩnh, Lý Thái Tổ, Trần Hưng Đạo, Lê Lợi, Quang Trung); mặt cách điệu (KHÔNG chân dung xác thực), chính xác trang phục/binh khí theo chính sử. `figures-3d.json` bio ĐVSKTT+SGK + nhãn hình dung + tượng đài tham chiếu (draft). `validate_figures.mjs` ép nhãn minh bạch + nguồn + id khớp builder. UI mục 🗿 Nhân vật lịch sử, viewer lazy per-thẻ. Chỉ anh hùng tôn vinh phổ quát (né §9).
+- Verified: `tsc && vite build` xanh; **5 validator CI** (chủ quyền/tỉnh/văn học/ảnh/nhân vật) pass. **Chưa soi mắt render** (automation browser bị bóp rAF) — cần Iron Man eyeball.
+- ⏳ Track cuối chờ chốt: **R6** (animation hoá thân qua sự kiện) + **R8** (bản đồ/sa đồ chiến dịch 2D+3D) — coupled, đều cần người kiểm sử (cổng §9).
 
 ## 11. Nguồn trích dẫn dữ liệu đang dùng (runtime hiển thị trong app)
 - Ranh giới 63/34 tỉnh: Lê Quang Tuệ — github.com/lqtue/LacaProvinceMap (chờ xác nhận license).
