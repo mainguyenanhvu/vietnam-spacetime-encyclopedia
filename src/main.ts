@@ -6,6 +6,8 @@ import { initGame } from "./game";
 import { initQuiz } from "./quiz";
 import { initStory } from "./story";
 import { initOlympia } from "./olympia";
+import { initBattle } from "./battle";
+import { initJourney } from "./journey";
 
 // ---------------------------------------------------------------------------
 // Cấu hình thời kỳ (era). Mỗi era = một lớp ranh giới GeoJSON.
@@ -396,6 +398,8 @@ initGame(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 initQuiz(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 initStory(`${import.meta.env.BASE_URL}data/story/chapters.json`);
 initOlympia();
+initBattle();
+initJourney();
 
 function setEra(index: number): void {
   // Đổi thời kỳ khác → thoát focus (tỉnh được lọc có thể không tồn tại ở

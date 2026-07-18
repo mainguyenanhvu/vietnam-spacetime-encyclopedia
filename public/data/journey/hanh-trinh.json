@@ -1,0 +1,72 @@
+{
+  "ghi_chu": "«Hành trình lịch sử» — người dùng hoá thân đi qua các mốc dựng nước & giữ nước. Lời dẫn ngôi thứ hai («Bạn là…») mang tính nhập vai giáo dục, dựa trên sự kiện có thật theo chính sử/SGK; mỗi chặng liên kết một nhân vật (figure_id khớp figures3d) và có thể mở sa đồ trận (battle_id). trang_thai=draft cho tới khi có người kiểm sử (cổng §9).",
+  "items": [
+    {
+      "id": "dung-nuoc",
+      "tieu_de": "Buổi bình minh dựng nước",
+      "nam": "Thời Hùng Vương",
+      "loi_dan": "Bạn là một người dân Lạc Việt bên dòng sông Hồng. Bạn trồng lúa nước, đúc trống đồng và tin mình là con cháu của Lạc Long Quân và Âu Cơ. Vua Hùng dựng nên nước Văn Lang — nhà nước đầu tiên của người Việt.",
+      "boi_canh": "Nước Văn Lang, kinh đô Phong Châu.",
+      "figure_id": "hung-vuong",
+      "lien_quan_tinh": ["phu-tho"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư (ngoại kỷ)", "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "bach-dang-938",
+      "tieu_de": "Cọc nhọn sông Bạch Đằng",
+      "nam": "938",
+      "loi_dan": "Bạn là một nghĩa quân dưới cờ Ngô Quyền. Đêm đêm bạn cùng đồng đội đóng những cọc gỗ bịt sắt xuống lòng sông, chờ con nước. Khi triều rút, đoàn thuyền giặc mắc cạn — và bạn xông lên trong trận đánh chấm dứt nghìn năm Bắc thuộc.",
+      "boi_canh": "Cửa sông Bạch Đằng, kháng chiến chống Nam Hán.",
+      "figure_id": "ngo-quyen",
+      "battle_id": "bach-dang-938",
+      "lien_quan_tinh": ["hai-phong", "quang-ninh"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư (ngoại kỷ, quyển V)", "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "doi-do-thang-long",
+      "tieu_de": "Chiếu dời đô về Thăng Long",
+      "nam": "1010",
+      "loi_dan": "Bạn theo hầu vua Lý Thái Tổ. Nhà vua ban Chiếu dời đô, rời Hoa Lư chật hẹp về thành Đại La — nơi «ở giữa khu vực trời đất, được thế rồng cuộn hổ ngồi». Kinh đô mới mang tên Thăng Long: rồng bay lên.",
+      "boi_canh": "Từ Hoa Lư (Ninh Bình) về Thăng Long (Hà Nội).",
+      "figure_id": "ly-thai-to",
+      "lien_quan_tinh": ["ha-noi", "ninh-binh"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "Chiếu dời đô (Thiên đô chiếu)", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "chong-nguyen-mong",
+      "tieu_de": "Ba lần đánh tan Nguyên – Mông",
+      "nam": "1258 – 1288",
+      "loi_dan": "Bạn là một binh sĩ nhà Trần, thích hai chữ «Sát Thát» lên cánh tay. Dưới sự chỉ huy của Hưng Đạo Đại Vương, ba lần bạn cùng quân dân Đại Việt đánh bại đội quân Mông Cổ từng làm cỏ nửa thế giới — đỉnh cao là trận Bạch Đằng năm 1288.",
+      "boi_canh": "Kháng chiến chống Nguyên – Mông đời Trần.",
+      "figure_id": "tran-hung-dao",
+      "lien_quan_tinh": ["ninh-binh", "quang-ninh"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "Hịch tướng sĩ", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "lam-son",
+      "tieu_de": "Mười năm nếm mật nằm gai",
+      "nam": "1418 – 1427",
+      "loi_dan": "Bạn theo Lê Lợi dấy nghĩa ở Lam Sơn. Mười năm gian khổ, từ núi rừng Thanh Hoá, nghĩa quân lớn dần rồi quét sạch quân Minh. Truyền thuyết kể vua trả lại gươm báu cho Rùa Vàng nơi hồ Hoàn Kiếm.",
+      "boi_canh": "Khởi nghĩa Lam Sơn, từ Thanh Hoá ra Đông Quan.",
+      "figure_id": "le-loi",
+      "lien_quan_tinh": ["thanh-hoa", "ha-noi"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký toàn thư", "Lam Sơn thực lục", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+    },
+    {
+      "id": "dong-da-1789",
+      "tieu_de": "Hành quân thần tốc, đại phá quân Thanh",
+      "nam": "1789",
+      "loi_dan": "Bạn là lính Tây Sơn trong đoàn quân của Hoàng đế Quang Trung. Vừa ăn Tết sớm, bạn hành quân thần tốc ra Bắc, và mờ sáng mùng 5 Tết Kỷ Dậu, cùng đại quân đại phá 29 vạn quân Thanh ở Ngọc Hồi – Đống Đa, giải phóng Thăng Long.",
+      "boi_canh": "Chiến dịch Ngọc Hồi – Đống Đa, xuân Kỷ Dậu 1789.",
+      "figure_id": "quang-trung",
+      "lien_quan_tinh": ["ha-noi", "gia-lai"],
+      "trang_thai": "draft",
+      "nguon": ["Đại Việt sử ký tục biên", "Hoàng Lê nhất thống chí", "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"]
+    }
+  ]
+}
