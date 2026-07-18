@@ -38,6 +38,8 @@ jobs:
         run: node scripts/validate_battles.mjs
       - name: Validate hành trình lịch sử (liên kết nhân vật/trận + nguồn)
         run: node scripts/validate_journey.mjs
+      - name: Validate phim tài liệu + nhạc yêu nước (youtube_id + kênh + slug)
+        run: node scripts/validate_documentaries.mjs
       - run: npm run build
         env:
           BASE_PATH: /vietnam-spacetime-encyclopedia/
