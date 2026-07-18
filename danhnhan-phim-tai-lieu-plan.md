@@ -40,11 +40,11 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 ## ĐỢT 2 — 6 hạng mục mới (Iron Man 2026-07-18)
 | # | Việc | Ghi chú pháp lý/khả thi | Trạng thái |
 |---|---|---|---|
-| 1 | Ảnh thật địa danh/nhân vật | ⚠️ «công cộng» ≠ hết bản quyền; CHỈ Commons license tự do + nhúng Maps/YouTube; KHÔNG tải ảnh báo/web | ☐ quét Commons tối đa |
-| 2 | 3D đẹp + động tự nhiên | ⚠️ Claude Design KHÔNG dựng 3D; không có text-to-3D. Iron Man chọn: NHÚNG model Sketchfab CC (iframe) + nâng cấp Three.js thủ công + hoạt cảnh thủ tục | ☐ |
-| 3 | Mở rộng danh nhân 4000 năm + thêm phim; **phim kenh_loai=state → tự động reviewed** | «đủ toàn bộ» là vô hạn → mở rộng theo đợt lớn có nguồn | 🔄 agent nền + rule |
-| 4 | Dòng thời gian 4000 năm (2879 TCN → nay) | gắn hệ era; cần dataset sự kiện quốc gia | 🔄 agent nền |
-| 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn phải TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | ☐ |
+| 1 | Ảnh thật địa danh/nhân vật | ⚠️ «công cộng» ≠ hết bản quyền; CHỈ Commons license tự do + nhúng Maps/YouTube; KHÔNG tải ảnh báo/web | 🔄 Maps xong (04e6b55); quét Commons tiếp |
+| 2 | 3D đẹp + động tự nhiên | Iron Man chọn: NHÚNG model Sketchfab CC + nâng cấp Three.js | 🔄 4 model CC nhúng xong (5333252); còn nâng cấp Three.js 5 model + hoạt cảnh |
+| 3 | Mở rộng danh nhân 4000 năm + thêm phim; **phim state → reviewed** | | ✅ rule (4a49944); mở rộng thêm = đợt sau |
+| 4 | Dòng thời gian 4000 năm (2879 TCN → nay) | 106 mốc có nguồn nhà nước | ✅ commit bbafc04 |
+| 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | ☐ CHƯA |
 | 6 | Tính năng backlog còn lại | | ☐ |
 
 ## Quy tắc mới (đã chốt)
