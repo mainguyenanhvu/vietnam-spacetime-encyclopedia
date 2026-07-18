@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "CHỈ metadata + giới thiệu ngắn, KHÔNG chép lời bài hát (Điều 25 Luật SHTT). Mọi youtube_id hiện để null và kenh_youtube = «chưa xác thực» vì tác nhân soạn dữ liệu KHÔNG có quyền truy cập YouTube Search — cần người kiểm tra kênh chính chủ (kênh nghệ sĩ/hãng đĩa/đài truyền hình xác thực) rồi điền youtube_id thật trước khi nhúng lên trang.",
+  "ghi_chu": "CHỈ metadata + giới thiệu ngắn, KHÔNG chép lời bài hát (Điều 25 Luật SHTT). youtube_id trỏ tới bản nhúng youtube-nocookie đã kiểm tra công khai + cho phép nhúng (oEmbed 200, 2026-07-18). kenh_chinh_chu=false = kênh không có dấu hiệu chính chủ (giữ theo chính sách «bản hay nhất hiện có», cần soát lại khi có bản chính chủ).",
   "items": [
     {
       "id": "nguoi-ha-noi",
@@ -8,12 +8,18 @@
       "tac_gia_loi": "Nguyễn Đình Thi",
       "nam": "1947",
       "the_loai": "Nhạc đỏ — hành khúc",
-      "lien_quan_tinh": ["ha-noi"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "youtube_id": "CJKPrNggMqQ",
+      "kenh_youtube": "HTV - Đài Hà Nội",
       "gioi_thieu": "Sáng tác giữa những ngày đầu toàn quốc kháng chiến, khắc họa hình ảnh Hà Nội hào hoa mà kiên cường. Một trong những ca khúc biểu tượng nhất về Thủ đô.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "tien-ve-ha-noi",
@@ -22,12 +28,18 @@
       "tac_gia_loi": "Văn Cao",
       "nam": "1949",
       "the_loai": "Nhạc đỏ — hành khúc",
-      "lien_quan_tinh": ["ha-noi"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "youtube_id": "069ZqjCX2ZU",
+      "kenh_youtube": "Nhạc Hay Việt Nam",
       "gioi_thieu": "Sáng tác năm 1949, năm năm trước ngày giải phóng Thủ đô (10/10/1954) — như một lời tiên đoán về đoàn quân trở về giữa cờ hoa. Nhạc sĩ Văn Cao còn là tác giả Quốc ca «Tiến quân ca».",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "beo-dat-may-troi",
@@ -35,12 +47,18 @@
       "tac_gia_nhac": "Dân ca (khuyết danh)",
       "tac_gia_loi": "Dân gian",
       "the_loai": "Dân ca quan họ Bắc Ninh",
-      "lien_quan_tinh": ["bac-ninh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "bac-ninh"
+      ],
+      "youtube_id": "ltCzUbjeXwk",
+      "kenh_youtube": "Dân Ca Quan Họ",
       "gioi_thieu": "Một trong những làn điệu quan họ Bắc Ninh được yêu thích nhất, thường hát đối đáp trong hội Lim — di sản văn hóa phi vật thể đại diện nhân loại được UNESCO công nhận (2009).",
       "ban_quyen": "public-domain",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "UNESCO — Hồ sơ Dân ca Quan họ Bắc Ninh (2009)"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "UNESCO — Hồ sơ Dân ca Quan họ Bắc Ninh (2009)"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "nguoi-oi-nguoi-o-dung-ve",
@@ -48,12 +66,18 @@
       "tac_gia_nhac": "Dân ca (khuyết danh)",
       "tac_gia_loi": "Dân gian",
       "the_loai": "Dân ca quan họ Bắc Ninh",
-      "lien_quan_tinh": ["bac-ninh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "bac-ninh"
+      ],
+      "youtube_id": "UJkLSMAw7z0",
+      "kenh_youtube": "Trần Quỳnh Trang Official",
       "gioi_thieu": "Làn điệu quan họ kinh điển, lời ca lưu luyến tiễn bạn ra về sau canh hát — biểu tượng của tình «bọn quan họ» kết nghĩa.",
       "ban_quyen": "public-domain",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "UNESCO — Hồ sơ Dân ca Quan họ Bắc Ninh (2009)"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "UNESCO — Hồ sơ Dân ca Quan họ Bắc Ninh (2009)"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "trong-com",
@@ -61,12 +85,18 @@
       "tac_gia_nhac": "Dân ca (khuyết danh)",
       "tac_gia_loi": "Dân gian",
       "the_loai": "Dân ca đồng bằng Bắc Bộ",
-      "lien_quan_tinh": ["ha-noi", "bac-ninh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "bac-ninh"
+      ],
+      "youtube_id": "XbzbMw8Kfpc",
+      "kenh_youtube": "Kênh Thiếu Nhi - BHMEDIA",
       "gioi_thieu": "Làn điệu dân ca Bắc Bộ gắn với chiếc trống cơm — nhạc cụ gõ bịt da, vỗ tay lên mặt trống tạo tiếng «tùng». Rất phổ biến trong sinh hoạt hát chèo, hát cửa đình vùng châu thổ sông Hồng.",
       "ban_quyen": "public-domain",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "quang-binh-que-ta-oi",
@@ -75,12 +105,18 @@
       "tac_gia_loi": "Hoàng Vân",
       "nam": "1964",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["quang-tri"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "quang-tri"
+      ],
+      "youtube_id": "qDWuNIkiFZY",
+      "kenh_youtube": "Ca Nhạc Dân Ca",
       "gioi_thieu": "Ra đời năm 1964 giữa những năm chiến tranh phá hoại miền Bắc, trở thành nhạc hiệu quen thuộc của đài phát thanh Quảng Bình (nay là vùng đất thuộc tỉnh Quảng Trị hợp nhất).",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "Viện Âm nhạc Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "Viện Âm nhạc Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "cau-ho-ben-bo-hien-luong",
@@ -89,12 +125,18 @@
       "tac_gia_loi": "Đằng Giao",
       "nam": "1957",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["quang-tri"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "quang-tri"
+      ],
+      "youtube_id": "qvtXmkUbiVQ",
+      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
       "gioi_thieu": "Ca khúc về nỗi nhớ thương đôi bờ sông Bến Hải — cầu Hiền Lương, giới tuyến quân sự tạm thời chia cắt đất nước 1954–1975, nay thuộc tỉnh Quảng Trị.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "hue-thuong",
@@ -102,12 +144,17 @@
       "tac_gia_nhac": "An Thuyên",
       "tac_gia_loi": "An Thuyên",
       "the_loai": "Trữ tình quê hương",
-      "lien_quan_tinh": ["hue"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "hue"
+      ],
+      "youtube_id": "QRHUlJn_95I",
+      "kenh_youtube": "Vafaco Official",
       "gioi_thieu": "Ca khúc trữ tình sâu lắng về xứ Huế mộng mơ, một trong những bài hát phổ biến nhất về vùng đất cố đô.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "ai-ra-xu-hue",
@@ -115,12 +162,17 @@
       "tac_gia_nhac": "Duy Khánh",
       "tac_gia_loi": "Duy Khánh",
       "the_loai": "Trữ tình quê hương",
-      "lien_quan_tinh": ["hue"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "hue"
+      ],
+      "youtube_id": "FoLTmhG_reQ",
+      "kenh_youtube": "Thúy Nga",
       "gioi_thieu": "Ca khúc mời gọi về thăm xứ Huế, được nhiều thế hệ ca sĩ thu âm lại; gắn liền tên tuổi nhạc sĩ — ca sĩ Duy Khánh, người con của Quảng Trị.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "chao-em-co-gai-lam-hong",
@@ -129,12 +181,18 @@
       "tac_gia_loi": "Ánh Dương",
       "nam": "1967",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["nghe-an", "ha-tinh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "nghe-an",
+        "ha-tinh"
+      ],
+      "youtube_id": "A74Z0F8DH5s",
+      "kenh_youtube": "Dương Đức Singer Official",
       "gioi_thieu": "Ca khúc ca ngợi cô gái vùng sông Lam (Nghệ An) – núi Hồng Lĩnh (Hà Tĩnh) kiên cường thời chống Mỹ, tên bài hát ghép từ hai địa danh «Lam» và «Hồng».",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "nguoi-con-gai-song-la",
@@ -142,12 +200,17 @@
       "tac_gia_nhac": "Doãn Nho",
       "tac_gia_loi": "Phương Thúy (thơ)",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["ha-tinh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ha-tinh"
+      ],
+      "youtube_id": "90o-KwNd3l8",
+      "kenh_youtube": "Nhạc Xứ Nghệ Để Đời",
       "gioi_thieu": "Ca khúc phổ thơ, ca ngợi hình ảnh người con gái bên dòng sông La — con sông biểu tượng của Hà Tĩnh.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "neo-dau-ben-que",
@@ -155,12 +218,17 @@
       "tac_gia_nhac": "An Thuyên",
       "tac_gia_loi": "An Thuyên",
       "the_loai": "Trữ tình quê hương",
-      "lien_quan_tinh": ["nghe-an"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "nghe-an"
+      ],
+      "youtube_id": "2PVNqmAnwn4",
+      "kenh_youtube": "Vũ Thắng Lợi Official",
       "gioi_thieu": "Ca khúc trữ tình về nỗi nhớ quê hương xứ Nghệ của nhạc sĩ An Thuyên (quê Quỳnh Lưu, Nghệ An), đậm chất dân ca ví giặm.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "giua-mac-tu-khoa-nghe-cau-ho-nghe-tinh",
@@ -168,12 +236,18 @@
       "tac_gia_nhac": "Trần Hoàn",
       "tac_gia_loi": "Trần Hoàn",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["nghe-an", "ha-tinh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "nghe-an",
+        "ha-tinh"
+      ],
+      "youtube_id": "b4pyIHqYL5A",
+      "kenh_youtube": "Nhạc Trữ Tình Chọn Lọc",
       "gioi_thieu": "Ca khúc nổi tiếng viết trong chuyến công tác tại Liên Xô, nỗi nhớ câu hò ví giặm quê nhà Nghệ Tĩnh giữa trời Âu xa xôi.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "nguoi-di-xay-ho-ke-go",
@@ -182,12 +256,17 @@
       "tac_gia_loi": "Nguyễn Văn Tý",
       "nam": "1976",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["ha-tinh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ha-tinh"
+      ],
+      "youtube_id": "8PInZHrt4XQ",
+      "kenh_youtube": "Truyền Hình Hà Tĩnh",
       "gioi_thieu": "Ca khúc ca ngợi công trình thủy lợi hồ Kẻ Gỗ (Cẩm Xuyên, Hà Tĩnh) và tinh thần lao động xây dựng đất nước sau chiến tranh.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "mot-khuc-tam-tinh-nguoi-ha-tinh",
@@ -195,12 +274,17 @@
       "tac_gia_nhac": "Nguyễn Văn Tý",
       "tac_gia_loi": "Nguyễn Văn Tý",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["ha-tinh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ha-tinh"
+      ],
+      "youtube_id": "BpWGzCSEXZA",
+      "kenh_youtube": "Nhạc Trữ Tình Chọn Lọc",
       "gioi_thieu": "Ca khúc quen thuộc ca ngợi con người và cảnh sắc Hà Tĩnh, một trong những bài hát «tỉnh ca» được yêu thích nhất miền Trung.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "dang-dung-ben-tre",
@@ -209,12 +293,17 @@
       "tac_gia_loi": "Nguyễn Văn Tý",
       "nam": "1975",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["vinh-long"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "vinh-long"
+      ],
+      "youtube_id": "szz1YdiqiEE",
+      "kenh_youtube": "Nụ Cười Vàng TV",
       "gioi_thieu": "Ca khúc ca ngợi «Đồng khởi» Bến Tre và hình ảnh người phụ nữ Nam Bộ kiên cường; Bến Tre nay thuộc tỉnh Vĩnh Long hợp nhất.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "ao-moi-ca-mau",
@@ -222,12 +311,17 @@
       "tac_gia_nhac": "Thanh Sơn",
       "tac_gia_loi": "Thanh Sơn",
       "the_loai": "Trữ tình quê hương",
-      "lien_quan_tinh": ["ca-mau"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ca-mau"
+      ],
+      "youtube_id": "1HqZMlExGos",
+      "kenh_youtube": "Phú Quí Official",
       "gioi_thieu": "Ca khúc trữ tình phổ biến về vùng đất cực Nam Tổ quốc, ca ngợi sự đổi thay trù phú của Cà Mau. (năm sáng tác chưa xác minh được — cần kiểm)",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "dem-ganh-hao-nghe-dieu-hoai-lang",
@@ -235,12 +329,17 @@
       "tac_gia_nhac": "Vũ Đức Sao Biển",
       "tac_gia_loi": "Vũ Đức Sao Biển",
       "the_loai": "Trữ tình quê hương",
-      "lien_quan_tinh": ["ca-mau"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ca-mau"
+      ],
+      "youtube_id": "2hvN4nRVqBM",
+      "kenh_youtube": "Cẩm Ly Official",
       "gioi_thieu": "Ca khúc lấy cảm hứng từ điệu «Dạ cổ hoài lang» và thị trấn Gành Hào (Đông Hải, Bạc Liêu cũ — nay thuộc Cà Mau), viết về nỗi hoài vọng của người phụ nữ chờ chồng.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "da-co-hoai-lang",
@@ -249,12 +348,18 @@
       "tac_gia_loi": "Cao Văn Lầu",
       "nam": "1919",
       "the_loai": "Nhạc tài tử Nam Bộ — tiền thân của vọng cổ cải lương",
-      "lien_quan_tinh": ["ca-mau"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "ca-mau"
+      ],
+      "youtube_id": "QQ9S_vZl0bg",
+      "kenh_youtube": "Thúy Nga",
       "gioi_thieu": "Bản gốc chỉ 20 câu nhịp đôi, ra đời tại Bạc Liêu (nay thuộc Cà Mau) năm 1919, về sau phát triển thành điệu «vọng cổ» — linh hồn của nghệ thuật cải lương Nam Bộ. Tác giả Cao Văn Lầu mất năm 1976 nên tác phẩm còn trong thời hạn bảo hộ theo Luật SHTT.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "Viện Âm nhạc Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "Viện Âm nhạc Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "tinh-ca-tay-bac",
@@ -262,12 +367,19 @@
       "tac_gia_nhac": "Bùi Đức Hạnh",
       "tac_gia_loi": "Cầm Giang (thơ)",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["son-la", "dien-bien", "lai-chau"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "son-la",
+        "dien-bien",
+        "lai-chau"
+      ],
+      "youtube_id": "NDrXzoRU8Ks",
+      "kenh_youtube": "Đặng Hồng Nhung Official",
       "gioi_thieu": "Ca khúc phổ thơ nổi tiếng về tình yêu vùng núi Tây Bắc, giai điệu mang âm hưởng dân ca Thái.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "inh-la-oi",
@@ -275,12 +387,19 @@
       "tac_gia_nhac": "Dân ca Thái (khuyết danh)",
       "tac_gia_loi": "Dân gian",
       "the_loai": "Dân ca Thái Tây Bắc",
-      "lien_quan_tinh": ["son-la", "dien-bien", "lai-chau"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "son-la",
+        "dien-bien",
+        "lai-chau"
+      ],
+      "youtube_id": "PpFaOlVd9W0",
+      "kenh_youtube": "Ngôi Sao Hướng Dương",
       "gioi_thieu": "Làn điệu dân ca Thái quen thuộc nhất với công chúng cả nước, thường biểu diễn trong các dịp lễ hội, gắn liền hình ảnh Tây Bắc.",
       "ban_quyen": "public-domain",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "chiec-khan-pieu",
@@ -288,12 +407,18 @@
       "tac_gia_nhac": "Doãn Nho (dựa trên dân ca Thái)",
       "tac_gia_loi": "Doãn Nho",
       "the_loai": "Nhạc đỏ mang âm hưởng dân ca Thái",
-      "lien_quan_tinh": ["son-la", "dien-bien"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "son-la",
+        "dien-bien"
+      ],
+      "youtube_id": "TjY1TZk71eo",
+      "kenh_youtube": "Tùng Dương Official",
       "gioi_thieu": "Ca khúc nổi tiếng lấy cảm hứng từ chiếc khăn piêu — vật dụng truyền thống của phụ nữ Thái vùng Tây Bắc.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "gui-em-o-cuoi-song-hong",
@@ -302,12 +427,17 @@
       "tac_gia_loi": "Dương Soái (thơ)",
       "nam": "1979",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["lao-cai"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "lao-cai"
+      ],
+      "youtube_id": "VTyrL1Wi3cI",
+      "kenh_youtube": "Nhạc Xứ Nghệ Để Đời",
       "gioi_thieu": "Ca khúc phổ thơ ra đời trong chiến tranh biên giới phía Bắc 1979, lời của người lính canh giữ biên cương nơi đầu nguồn sông Hồng (Lào Cai) gửi về người thương nơi cuối sông. (chi tiết cần kiểm thêm)",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "ai-len-xu-hoa-dao",
@@ -315,12 +445,17 @@
       "tac_gia_nhac": "Hoàng Nguyên",
       "tac_gia_loi": "Hoàng Nguyên",
       "the_loai": "Trữ tình quê hương",
-      "lien_quan_tinh": ["lam-dong"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "lam-dong"
+      ],
+      "youtube_id": "T0x3xykLlpE",
+      "kenh_youtube": "Cẩm Ly Official",
       "gioi_thieu": "Ca khúc kinh điển về thành phố Đà Lạt sương mù và hoa đào — một trong những bài hát gắn liền nhất với hình ảnh Đà Lạt (nay thuộc tỉnh Lâm Đồng hợp nhất).",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "thanh-pho-hoa-phuong-do",
@@ -328,12 +463,17 @@
       "tac_gia_nhac": "Lương Vĩnh",
       "tac_gia_loi": "Hải Như (thơ)",
       "the_loai": "Trữ tình quê hương",
-      "lien_quan_tinh": ["hai-phong"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "hai-phong"
+      ],
+      "youtube_id": "REvx8tkF3vE",
+      "kenh_youtube": "Tuan RC",
       "gioi_thieu": "Ca khúc biểu tượng của thành phố Hải Phòng — «thành phố hoa phượng đỏ», gắn liền hình ảnh hoa phượng nở đỏ rực mỗi mùa hè cảng biển.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": false
     },
     {
       "id": "truong-son-dong-truong-son-tay",
@@ -342,12 +482,17 @@
       "tac_gia_loi": "Phạm Tiến Duật (thơ)",
       "nam": "1971",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["quang-tri"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "quang-tri"
+      ],
+      "youtube_id": "7p3rPsrf550",
+      "kenh_youtube": "Từ Như Tài Official",
       "gioi_thieu": "Ca khúc phổ thơ Phạm Tiến Duật, ca ngợi những người lính, thanh niên xung phong mở đường Trường Sơn qua dải Quảng Trị – Quảng Bình thời chống Mỹ.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "tieng-chay-tren-soc-bom-bo",
@@ -356,12 +501,17 @@
       "tac_gia_loi": "Xuân Hồng",
       "nam": "1966",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["dong-nai"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "dong-nai"
+      ],
+      "youtube_id": "b-rdEImFqYE",
+      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
       "gioi_thieu": "Ca khúc lấy cảm hứng từ tục giã gạo nuôi quân ban đêm của đồng bào Xtiêng ở sóc Bom Bo (Phước Long, nay thuộc tỉnh Đồng Nai hợp nhất) thời kháng chiến chống Mỹ.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "tinh-dat-do-mien-dong",
@@ -369,12 +519,18 @@
       "tac_gia_nhac": "Trần Long Ẩn",
       "tac_gia_loi": "Trần Long Ẩn",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["tay-ninh", "dong-nai"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "tay-ninh",
+        "dong-nai"
+      ],
+      "youtube_id": "oKMGTxubvBs",
+      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
       "gioi_thieu": "Ca khúc ca ngợi vùng đất đỏ miền Đông Nam Bộ và tinh thần chiến đấu kiên cường của quân dân nơi đây.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "vam-co-dong",
@@ -383,12 +539,17 @@
       "tac_gia_loi": "Hoài Vũ (thơ)",
       "nam": "1966",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["tay-ninh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "tay-ninh"
+      ],
+      "youtube_id": "UHiLQdqMQvU",
+      "kenh_youtube": "Truong Quang Luc",
       "gioi_thieu": "Ca khúc phổ thơ Hoài Vũ, ca ngợi dòng sông Vàm Cỏ Đông chảy qua Tây Ninh – Long An (nay cùng thuộc tỉnh Tây Ninh hợp nhất), «không tên nhưng nghe đã thân thương». (năm chính xác cần kiểm thêm)",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": false
     },
     {
       "id": "co-gai-vot-chong",
@@ -396,12 +557,17 @@
       "tac_gia_nhac": "Hoàng Hiệp",
       "tac_gia_loi": "Phỏng theo thơ dân gian Tây Nguyên (Môlôyclavi)",
       "the_loai": "Nhạc đỏ mang âm hưởng Tây Nguyên",
-      "lien_quan_tinh": ["dak-lak"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "dak-lak"
+      ],
+      "youtube_id": "8aXsfPB44zc",
+      "kenh_youtube": "Tường Vi - Topic",
       "gioi_thieu": "Ca khúc nổi tiếng ca ngợi hình ảnh cô gái Tây Nguyên vót chông đánh giặc thời kháng chiến chống Mỹ.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "truong-ca-song-lo",
@@ -410,12 +576,19 @@
       "tac_gia_loi": "Văn Cao",
       "nam": "1947",
       "the_loai": "Nhạc đỏ — trường ca",
-      "lien_quan_tinh": ["phu-tho", "tuyen-quang"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "phu-tho",
+        "tuyen-quang"
+      ],
+      "youtube_id": "PtrG6v5XQ7A",
+      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
       "gioi_thieu": "Trường ca lớn của Văn Cao viết sau chiến thắng sông Lô năm 1947, khi ông đi dọc sông Lô qua vùng Đoan Hùng (Phú Thọ) lên chiến khu Việt Bắc.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam", "Viện Âm nhạc Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam",
+        "Viện Âm nhạc Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     },
     {
       "id": "dat-nuoc-tron-niem-vui",
@@ -424,12 +597,17 @@
       "tac_gia_loi": "Hoàng Hà",
       "nam": "1975",
       "the_loai": "Nhạc đỏ",
-      "lien_quan_tinh": ["thanh-pho-ho-chi-minh"],
-      "youtube_id": null,
-      "kenh_youtube": "chưa xác thực",
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "youtube_id": "6KXKVhqQ2l4",
+      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
       "gioi_thieu": "Ca khúc ra đời ngay sau ngày 30/4/1975, mừng ngày đất nước thống nhất, thành phố Sài Gòn được giải phóng.",
       "ban_quyen": "cited-excerpt",
-      "nguon": ["Hội Nhạc sĩ Việt Nam"]
+      "nguon": [
+        "Hội Nhạc sĩ Việt Nam"
+      ],
+      "kenh_chinh_chu": true
     }
   ]
 }
