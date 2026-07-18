@@ -164,6 +164,14 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 
 **Thứ tự đề xuất (theo leverage/rủi ro):** R7 → R3 → R9 → R4 → (chốt chính sách R2/R5) → R8 → R6. Lý do: R7/R3/R9 dựng ngay trên module đã có, không vướng cổng bản quyền/khả thi; R2·R5·R6·R8 cần bạn chốt chính sách hoặc có người kiểm sử trước khi tốn công.
 
+**Trạng thái (2026-07-18, làm song song — Iron Man chỉ đạo «làm song song đi»):**
+- ✅ **R7** (commit 9bb67db): focus 1 tỉnh (lọc lớp + fitBounds) ↔ bản đồ toàn quốc; đổi thời kỳ/đóng panel tự thoát focus.
+- ✅ **R4** (9bb67db): `src/models3d.ts` — 9 model low-poly GỐC nhúng panel tỉnh, Three.js lazy-load (chunk 7.75KB), dispose sạch.
+- ✅ **R3** (9bb67db): `src/olympia.ts` — game Olympia 4 vòng, ngân hàng 33 câu + 3 gói VCNV có nguồn, điểm cao localStorage.
+- ✅ **R9** (commit 532f194): `ca-dao-tuc-ngu.json` (35) + `bai-hat-que-huong.json` (32) — phủ 34/34 tỉnh; UI Thư viện + cross-link panel; nhúng youtube-nocookie. **CHỜ NGƯỜI**: điền youtube_id kênh chính chủ (32 bài đang null → chưa nhúng); đối chiếu 6 câu ca dao độ tin cậy trung bình + 3 bài chưa rõ năm.
+- Verified: `tsc && vite build` xanh; 3 validator CI (chủ quyền/tỉnh/văn học) pass; validator văn học đã mở rộng ép cổng bản quyền cho ca dao + bài hát. **Chưa soi mắt render** (automation browser bị bóp rAF) — cần Iron Man eyeball.
+- ⏳ Còn treo chờ chốt chính sách: **R2** (tái sinh ảnh tính phí = rủi ro SHTT), **R5** (nhân vật «100% chính xác» bất khả thi), **R6/R8** (animation chiến tranh — cần người kiểm sử).
+
 ## 11. Nguồn trích dẫn dữ liệu đang dùng (runtime hiển thị trong app)
 - Ranh giới 63/34 tỉnh: Lê Quang Tuệ — github.com/lqtue/LacaProvinceMap (chờ xác nhận license).
 - Quần đảo Hoàng Sa & Trường Sa: Free-GIS-Data — github.com/nguyenduy1133/Free-GIS-Data.
