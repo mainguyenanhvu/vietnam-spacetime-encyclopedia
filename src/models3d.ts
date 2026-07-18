@@ -53,11 +53,13 @@ function conTrau(): THREE.Group {
   const body = ball(0.62, BUFFALO);
   body.scale.set(1.5, 0.85, 0.85);
   body.position.y = 0.9;
+  body.name = "trau-body";
   g.add(body);
 
   const head = ball(0.42, BUFFALO);
   head.scale.set(1, 0.85, 1.1);
   head.position.set(1.05, 1.0, 0);
+  head.name = "trau-head";
   g.add(head);
 
   const snout = box(0.42, 0.3, 0.4, BUFFALO);
@@ -89,6 +91,7 @@ function conTrau(): THREE.Group {
   const tail = cyl(0.03, 0.06, 0.7, BUFFALO, 5);
   tail.position.set(-1.05, 0.75, 0);
   tail.rotation.z = 0.5;
+  tail.name = "trau-tail";
   g.add(tail);
   return g;
 }
@@ -99,6 +102,7 @@ function conVoi(): THREE.Group {
   const body = ball(0.85, ELEPHANT);
   body.scale.set(1.35, 1, 0.95);
   body.position.y = 1.35;
+  body.name = "voi-body";
   g.add(body);
 
   const head = ball(0.6, ELEPHANT);
@@ -114,6 +118,7 @@ function conVoi(): THREE.Group {
     const seg = cyl(r, r + 0.03, 0.34, ELEPHANT, 6);
     seg.position.set(tx, ty, 0);
     seg.rotation.z = -0.4 - i * 0.28;
+    seg.name = `voi-trunk-${i}`;
     g.add(seg);
     tx += 0.16;
     ty -= 0.28;
@@ -123,6 +128,7 @@ function conVoi(): THREE.Group {
     const ear = box(0.12, 0.7, 0.55, ELEPHANT);
     ear.position.set(0.95, 1.55, sz * 0.55);
     ear.rotation.x = sz * 0.3;
+    ear.name = `voi-ear-${sz < 0 ? "L" : "R"}`;
     g.add(ear);
 
     const tusk = cyl(0.02, 0.06, 0.5, IVORY, 5);
@@ -150,6 +156,7 @@ function chimLac(): THREE.Group {
   const body = ball(0.4, BRONZE);
   body.scale.set(1.6, 0.7, 0.7);
   body.position.y = 1.4;
+  body.name = "chim-body";
   g.add(body);
 
   // Cổ + đầu vươn về phía trước.
@@ -171,6 +178,7 @@ function chimLac(): THREE.Group {
   const tail = new THREE.Mesh(new THREE.ConeGeometry(0.28, 1.0, 4), mat(BRONZE));
   tail.position.set(-0.95, 1.42, 0);
   tail.rotation.z = Math.PI / 2 + 0.15;
+  tail.name = "chim-tail";
   g.add(tail);
 
   // Đôi cánh giương lên như đang bay.
@@ -179,6 +187,7 @@ function chimLac(): THREE.Group {
     wing.position.set(0.05, 1.75, sz * 0.35);
     wing.rotation.set(sz * 0.9, 0, 0.2);
     wing.scale.set(1, 1, 0.4);
+    wing.name = `chim-wing-${sz < 0 ? "L" : "R"}`;
     g.add(wing);
   }
 
@@ -293,6 +302,17 @@ function batPho(): THREE.Group {
     stick.rotation.set(0.3, 0.4, Math.PI / 2 - 0.35);
     g.add(stick);
   }
+
+  // Ba làn khói mờ bốc lên (animate bay lên + tan trong animBatPho).
+  for (let i = 0; i < 3; i++) {
+    const puff = new THREE.Mesh(
+      new THREE.SphereGeometry(0.12, 6, 6),
+      new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0 }),
+    );
+    puff.position.set((i - 1) * 0.18, 1.4, 0);
+    puff.name = `steam-${i}`;
+    g.add(puff);
+  }
   return g;
 }
 
@@ -387,6 +407,72 @@ function nonLa(): THREE.Group {
   return g;
 }
 
+// ── Hoạt cảnh thủ tục (procedural animation) ───────────────────────────────
+// Mỗi hàm nhận (model, t) với t = giây trôi qua, đọc trạng thái nghỉ đã chụp ở
+// obj.userData.rest (đặt lúc mount) để dao động quanh vị trí gốc. KHÔNG tạo/huỷ
+// object mỗi frame — chỉ chỉnh transform/opacity của bộ phận đã đặt tên.
+
+interface Rest { py: number; rx: number; rz: number; sy: number }
+
+function restOf(o: THREE.Object3D): Rest {
+  return (o.userData.rest as Rest) ?? { py: o.position.y, rx: o.rotation.x, rz: o.rotation.z, sy: o.scale.y };
+}
+
+// Con trâu: thân thở phồng nhẹ, đuôi phe phẩy, đầu gật khẽ.
+function animTrau(g: THREE.Group, t: number): void {
+  const body = g.getObjectByName("trau-body");
+  if (body) body.scale.y = restOf(body).sy * (1 + Math.sin(t * 1.6) * 0.03);
+  const tail = g.getObjectByName("trau-tail");
+  if (tail) tail.rotation.z = restOf(tail).rz + Math.sin(t * 3) * 0.35;
+  const head = g.getObjectByName("trau-head");
+  if (head) head.position.y = restOf(head).py + Math.sin(t * 1.6 + 1) * 0.03;
+}
+
+// Con voi: thân thở, hai tai phe phẩy, vòi đung đưa dạng sóng theo từng đốt.
+function animVoi(g: THREE.Group, t: number): void {
+  const body = g.getObjectByName("voi-body");
+  if (body) body.scale.y = restOf(body).sy * (1 + Math.sin(t * 1.3) * 0.025);
+  for (const s of [-1, 1]) {
+    const ear = g.getObjectByName(`voi-ear-${s < 0 ? "L" : "R"}`);
+    if (ear) ear.rotation.x = restOf(ear).rx + s * (Math.sin(t * 2.5) * 0.22 + 0.22);
+  }
+  for (let i = 0; i < 5; i++) {
+    const seg = g.getObjectByName(`voi-trunk-${i}`);
+    if (seg) seg.rotation.z = restOf(seg).rz + Math.sin(t * 2 + i * 0.6) * 0.05 * ((i + 1) / 5);
+  }
+}
+
+// Chim lạc: cả thân bồng bềnh như đang bay, hai cánh vỗ ngược chiều, đuôi vẫy.
+function animChim(g: THREE.Group, t: number): void {
+  g.position.y = restOf(g).py + Math.sin(t * 3) * 0.06;
+  const flap = Math.sin(t * 7);
+  for (const s of [-1, 1]) {
+    const w = g.getObjectByName(`chim-wing-${s < 0 ? "L" : "R"}`);
+    if (w) w.rotation.x = restOf(w).rx + s * flap * 0.55;
+  }
+  const tail = g.getObjectByName("chim-tail");
+  if (tail) tail.rotation.z = restOf(tail).rz + Math.sin(t * 7) * 0.08;
+}
+
+// Trái cây treo cành: đung đưa quanh trục z + nhún nhẹ lên xuống.
+function animSway(g: THREE.Group, t: number): void {
+  g.rotation.z = Math.sin(t * 1.2) * 0.05;
+  g.position.y = restOf(g).py + Math.sin(t * 1.6) * 0.03;
+}
+
+// Bát phở: ba làn khói bay lên rồi tan (opacity giảm), phóng to dần.
+function animPho(g: THREE.Group, t: number): void {
+  for (let i = 0; i < 3; i++) {
+    const s = g.getObjectByName(`steam-${i}`) as THREE.Mesh | undefined;
+    if (!s) continue;
+    const p = (t * 0.35 + i / 3) % 1;
+    s.position.y = restOf(s).py + p * 0.9;
+    s.scale.setScalar(0.6 + p * 0.9);
+    const m = s.material as THREE.MeshBasicMaterial;
+    m.opacity = 0.3 * (1 - p);
+  }
+}
+
 // ── Registry ─────────────────────────────────────────────────────────────
 
 export type ModelGroup = "con-vat" | "trai-cay" | "am-thuc" | "bieu-tuong";
@@ -402,17 +488,19 @@ export interface Model3DDef {
   ten: string;
   nhom: ModelGroup;
   build(): THREE.Group;
+  /** Hoạt cảnh thủ tục chạy mỗi frame: nhận (model, t giây) để cử động tự nhiên. */
+  animate?: (g: THREE.Group, t: number) => void;
   /** Mô hình 3D thật (license tự do) nhúng qua Sketchfab iframe — có thì UI cho xem «mô hình thật». */
   sketchfab?: SketchfabCc;
 }
 
 export const MODELS3D: Model3DDef[] = [
-  { id: "con-trau", ten: "Con trâu", nhom: "con-vat", build: conTrau, sketchfab: { uid: "52704a4f28eb437694affaed27dec3cb", license: "by", author: "kenchoo" } },
-  { id: "con-voi", ten: "Con voi", nhom: "con-vat", build: conVoi, sketchfab: { uid: "2aeeb8958bc64240962b093705abffdf", license: "by-nc", author: "Jérémie Louvetz" } },
-  { id: "chim-lac", ten: "Chim lạc", nhom: "con-vat", build: chimLac },
-  { id: "qua-vai", ten: "Quả vải", nhom: "trai-cay", build: quaVai },
-  { id: "thanh-long", ten: "Quả thanh long", nhom: "trai-cay", build: thanhLong },
-  { id: "bat-pho", ten: "Bát phở", nhom: "am-thuc", build: batPho },
+  { id: "con-trau", ten: "Con trâu", nhom: "con-vat", build: conTrau, animate: animTrau, sketchfab: { uid: "52704a4f28eb437694affaed27dec3cb", license: "by", author: "kenchoo" } },
+  { id: "con-voi", ten: "Con voi", nhom: "con-vat", build: conVoi, animate: animVoi, sketchfab: { uid: "2aeeb8958bc64240962b093705abffdf", license: "by-nc", author: "Jérémie Louvetz" } },
+  { id: "chim-lac", ten: "Chim lạc", nhom: "con-vat", build: chimLac, animate: animChim },
+  { id: "qua-vai", ten: "Quả vải", nhom: "trai-cay", build: quaVai, animate: animSway },
+  { id: "thanh-long", ten: "Quả thanh long", nhom: "trai-cay", build: thanhLong, animate: animSway },
+  { id: "bat-pho", ten: "Bát phở", nhom: "am-thuc", build: batPho, animate: animPho },
   { id: "trong-dong", ten: "Trống đồng Đông Sơn", nhom: "bieu-tuong", build: trongDong, sketchfab: { uid: "c91e55f6db8742f09ad2d5815ca6b749", license: "by", author: "Aaannnn" } },
   { id: "hoa-sen", ten: "Hoa sen", nhom: "bieu-tuong", build: hoaSen, sketchfab: { uid: "771bfb8b865d47ba96b1ebb333029cfd", license: "by", author: "Alexander Ruletik" } },
   { id: "non-la", ten: "Nón lá", nhom: "bieu-tuong", build: nonLa },
@@ -476,6 +564,12 @@ export function mountModel3D(container: HTMLElement, modelId: string): Model3DHa
   const center = bbox.getCenter(new THREE.Vector3());
   const size = bbox.getSize(new THREE.Vector3());
   model.position.sub(center); // tâm model → gốc pivot
+
+  // Chụp trạng thái nghỉ SAU khi căn giữa để hoạt cảnh dao động quanh vị trí gốc.
+  model.traverse((o) => {
+    o.userData.rest = { py: o.position.y, rx: o.rotation.x, rz: o.rotation.z, sy: o.scale.y };
+  });
+
   const maxDim = Math.max(size.x, size.y, size.z) || 1;
   const fitDist = (maxDim * 0.5) / Math.tan((camera.fov * Math.PI) / 360);
   const camDist = fitDist * 1.7;
@@ -537,6 +631,7 @@ export function mountModel3D(container: HTMLElement, modelId: string): Model3DHa
 
   // ── Vòng lặp render ──
   let raf = 0;
+  const t0 = performance.now();
   const tick = (): void => {
     if (!onScreen) {
       raf = 0;
@@ -545,6 +640,8 @@ export function mountModel3D(container: HTMLElement, modelId: string): Model3DHa
     if (!dragging) yaw += 0.006; // auto-rotate nhẹ
     pivot.rotation.y = yaw;
     pivot.rotation.x = pitch;
+    // Hoạt cảnh thủ tục (vỗ cánh, thở, khói…) chạy cả khi đang kéo chuột.
+    if (def.animate) def.animate(model, (performance.now() - t0) / 1000);
     renderer.render(scene, camera);
     raf = requestAnimationFrame(tick);
   };
