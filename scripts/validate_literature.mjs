@@ -83,6 +83,45 @@ if (existsSync(hcmPath)) {
   console.log("ℹ️ lich-su-nuoc-ta.json chưa có (đang chờ văn bản kiểm chứng).");
 }
 
+// --- Ca dao & tục ngữ (dân gian = public-domain)
+const cadaoPath = join(DIR, "ca-dao-tuc-ngu.json");
+if (existsSync(cadaoPath)) {
+  const { items } = JSON.parse(readFileSync(cadaoPath, "utf8"));
+  for (const c of items) {
+    const w = `ca-dao/${c.id}`;
+    if (!["ca-dao", "tuc-ngu"].includes(c.loai))
+      fail(w, "loai phải là ca-dao|tuc-ngu");
+    if (!Array.isArray(c.noi_dung) || c.noi_dung.length === 0)
+      fail(w, "thiếu noi_dung[]");
+    if (!Array.isArray(c.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
+    checkSources(w, c.nguon);
+  }
+  console.log(`✅ ca-dao-tuc-ngu.json: ${items.length} mục`);
+}
+
+// --- Bài hát quê hương: CHỈ nhúng YouTube chính chủ, KHÔNG chép lời
+const baihatPath = join(DIR, "bai-hat-que-huong.json");
+if (existsSync(baihatPath)) {
+  const { items } = JSON.parse(readFileSync(baihatPath, "utf8"));
+  for (const b of items) {
+    const w = `bai-hat/${b.id}`;
+    if (!b.ten) fail(w, "thiếu ten");
+    if (!Array.isArray(b.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
+    // youtube_id: để trống/"chưa xác thực" HOẶC đúng 11 ký tự hợp lệ
+    if (
+      b.youtube_id &&
+      b.youtube_id !== "chưa xác thực" &&
+      !/^[A-Za-z0-9_-]{11}$/.test(b.youtube_id)
+    )
+      fail(w, `youtube_id "${b.youtube_id}" không đúng dạng 11 ký tự hợp lệ`);
+    // Không được chép lời bài hát còn bản quyền — chỉ giới thiệu ngắn
+    if (typeof b.gioi_thieu === "string" && b.gioi_thieu.split("\n").length > 8)
+      fail(w, "gioi_thieu quá dài — không chép lời (≤8 dòng mô tả)");
+    checkSources(w, b.nguon);
+  }
+  console.log(`✅ bai-hat-que-huong.json: ${items.length} bài`);
+}
+
 if (errors) {
   console.error(`\n❌ ${errors} lỗi thư viện văn học.`);
   process.exit(1);

@@ -145,6 +145,25 @@ Thiếu nhi thêm: tô màu bản đồ tỉnh, xếp hình (jigsaw) lãnh thổ
 
 **Quyết định đã chốt:** stack Vite+TS+MapLibre · geodata lqtue (ranh giới) + Free-GIS-Data (đảo) · hosting GH Pages → Cloudflare · media combo Commons/R2/B2/HF · repo mẫu holetexvn chỉ tham khảo (no license) · MVP = người lớn + Đoán Tỉnh Xưa · spike tiền-1976 trước quiz.
 
+## 12. 🚀 Roadmap mở rộng — 10 hạng mục Iron Man (chỉ đạo 2026-07-18)
+
+> Nguyên tắc thực thi: **làm liên tục, chỉ dừng hỏi 1 câu/lần cho mỗi quyết định thật** (chỉ đạo #1). Mọi hạng mục vẫn tuân §1 (chủ quyền + trích dẫn + bản quyền) và các cổng §9.
+
+| # | Yêu cầu | Ánh xạ / nền móng sẵn có | Size | Rủi ro cần chốt trước |
+|---|---|---|---|---|
+| R1 | (meta) làm liên tục, hỏi từng câu quyết định | quy tắc quy trình | — | — |
+| R2 | Ảnh mỗi mục (đặc sản/kiến trúc/trang phục…): ưu tiên PD/CC-miễn-phí; nếu chỉ có ảnh tính phí → **tự sinh lại** | thư mục media chưa có; Cổng license §9 | L | ⚠️ **BẢN QUYỀN**: "tải ảnh tính phí rồi tự sinh lại" = sinh phái sinh từ tác phẩm có bảo hộ → rủi ro vi phạm. Cần chốt chính sách (xem 🤔 dưới) |
+| R3 | Game kiến thức **format Olympia** (4 vòng: Khởi động / VCNV / Tăng tốc / Về đích) | `quiz.ts` (SM-2, 89 thẻ) + `game.ts` sẵn có → tái dùng ngân hàng câu hỏi | M | thấp — buildable ngay |
+| R4 | Mọi mục có **tương tác 3D** (con vật, quả…) + chế độ "khám phá 1 tỉnh" | `landmarks3d.ts` (Three.js custom layer) + `ocean3d.ts` → mở rộng thành model viewer nhúng | L | trung bình — cần pipeline model 3D low-poly gốc |
+| R5 | Model 3D **nhân vật lịch sử** "chính xác 100%" | chưa có | XL | ⚠️ **KHẢ THI**: đa số danh nhân VN KHÔNG có chân dung xác thực → "100% chính xác" bất khả thi; chỉ làm được tượng đài/tranh thờ đã công bố + ghi rõ "hình dung nghệ thuật" |
+| R6 | Animation "hoá thân" nhân vật, đi qua sự kiện/chiến tranh/triều đại | story.ts (khung cốt truyện thiếu nhi) | XL | phụ thuộc R4/R5/R8; sử liệu phải reviewed (§9 cổng nhạy cảm) |
+| R7 | **2 chế độ xem khi chọn tỉnh**: (a) giữ bản đồ như hiện tại; (b) chỉ hiện tỉnh được chọn, đi sâu chi tiết | bản đồ MapLibre + fill-extrusion sẵn có → thêm "focus mode" (fitBounds + ẩn tỉnh khác + panel chi tiết) | M | **thấp — foundational, buildable ngay** (nền cho R4 "khám phá tỉnh") |
+| R8 | Bản đồ/sa đồ/hình hoạ 2D+3D **các cuộc chiến, hành quân, chiến dịch, cánh quân**, tương tác | Phase 6 (Nam tiến/animation) + overlay đợt 2 (trận đánh) | XL | sử liệu + toạ độ hành quân phải reviewed; bắt đầu bằng 1 chiến dịch pilot |
+| R9 | **Thơ / ca dao / tục ngữ / bài hát (nhúng YouTube)** về quê hương + UI/UX đồng bộ | `literature/` (tho-yeu-nuoc, tho-ve-bac…) sẵn có → mở rộng schema + trang trưng bày | M | ©️ nhạc còn bản quyền chỉ **nhúng** YouTube chính chủ, không tải/host |
+| R10 | Nghiên cứu & phát triển tính năng mới | §10 tự phản biện | ongoing | — |
+
+**Thứ tự đề xuất (theo leverage/rủi ro):** R7 → R3 → R9 → R4 → (chốt chính sách R2/R5) → R8 → R6. Lý do: R7/R3/R9 dựng ngay trên module đã có, không vướng cổng bản quyền/khả thi; R2·R5·R6·R8 cần bạn chốt chính sách hoặc có người kiểm sử trước khi tốn công.
+
 ## 11. Nguồn trích dẫn dữ liệu đang dùng (runtime hiển thị trong app)
 - Ranh giới 63/34 tỉnh: Lê Quang Tuệ — github.com/lqtue/LacaProvinceMap (chờ xác nhận license).
 - Quần đảo Hoàng Sa & Trường Sa: Free-GIS-Data — github.com/nguyenduy1133/Free-GIS-Data.

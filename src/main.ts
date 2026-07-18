@@ -5,6 +5,7 @@ import "./style.css";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
 import { initStory } from "./story";
+import { initOlympia } from "./olympia";
 
 // ---------------------------------------------------------------------------
 // Cấu hình thời kỳ (era). Mỗi era = một lớp ranh giới GeoJSON.
@@ -293,11 +294,113 @@ function setMode3D(on: boolean): void {
   landmarks3d?.setVisible(on);
 }
 
+// ---------------------------------------------------------------------------
+// R7 — Hai chế độ xem khi chọn tỉnh:
+//   (a) Giữ nguyên bản đồ toàn quốc (mặc định).
+//   (b) Focus: chỉ hiển thị tỉnh được chọn, zoom sâu để đi vào chi tiết.
+// Focus lọc lớp era theo tên tỉnh (mọi tỉnh khác ẩn) và fit khung nhìn vào
+// hình học của tỉnh đó. Đổi thời kỳ hoặc đóng panel sẽ tự thoát focus.
+// ---------------------------------------------------------------------------
+let focusMode = false;
+
+function focusLayerIds(era: Era): string[] {
+  return [`${era.id}-fill`, `${era.id}-line`, `${era.id}-3d`];
+}
+
+function clearFocusFilters(): void {
+  for (const era of ERAS) {
+    for (const id of focusLayerIds(era)) {
+      if (map.getLayer(id)) map.setFilter(id, null);
+    }
+  }
+  focusMode = false;
+}
+
+/** Gộp toạ độ lồng nhau (Polygon/MultiPolygon/…) vào một LngLatBounds. */
+function extendBounds(b: maplibregl.LngLatBounds, coords: unknown): void {
+  if (Array.isArray(coords) && typeof coords[0] === "number") {
+    b.extend(coords as [number, number]);
+    return;
+  }
+  if (Array.isArray(coords)) for (const c of coords) extendBounds(b, c);
+}
+
+function boundsOfFeature(f: MapGeoJSONFeature): maplibregl.LngLatBounds {
+  const b = new maplibregl.LngLatBounds();
+  const geom = f.geometry;
+  if ("coordinates" in geom) extendBounds(b, geom.coordinates);
+  return b;
+}
+
+function enterFocus(name: string, era: Era, f: MapGeoJSONFeature): void {
+  const filter: ExpressionSpecification = ["==", ["get", era.nameKey], name];
+  for (const id of focusLayerIds(era)) {
+    if (map.getLayer(id)) map.setFilter(id, filter);
+  }
+  focusMode = true;
+  const b = boundsOfFeature(f);
+  if (!b.isEmpty())
+    map.fitBounds(b, { padding: 80, duration: 1000, maxZoom: 9, pitch: is3D ? 55 : 0 });
+}
+
+function exitFocus(): void {
+  clearFocusFilters();
+  map.fitBounds(VIETNAM_BOUNDS, { padding: 24, duration: 1000 });
+}
+
+// ---------------------------------------------------------------------------
+// R4 — trình xem mô hình 3D nhúng trong hồ sơ tỉnh (con vật, trái cây, đặc
+// sản, biểu tượng). Three.js nạp lười khi người dùng mở mục để không phình
+// bundle chính. Chỉ một mô hình sống tại một thời điểm; dọn khi đổi tỉnh/đóng.
+// ---------------------------------------------------------------------------
+let activeModel3DDispose: (() => void) | null = null;
+
+async function buildModel3DPanel(host: HTMLElement): Promise<void> {
+  if (host.dataset.ready === "1") return;
+  host.dataset.ready = "1";
+  try {
+    const { mountModel3D, MODELS3D } = await import("./models3d");
+    host.innerHTML = `
+      <div class="model3d-gallery">${MODELS3D.map(
+        (m) => `<button type="button" data-model="${m.id}">${esc(m.ten)}</button>`,
+      ).join("")}</div>
+      <div class="model3d-stage"></div>`;
+    const stage = host.querySelector<HTMLElement>(".model3d-stage");
+    if (!stage) return;
+    let handle: { dispose(): void } | null = null;
+    const show = (id: string): void => {
+      handle?.dispose();
+      handle = mountModel3D(stage, id);
+      host
+        .querySelectorAll<HTMLButtonElement>("button[data-model]")
+        .forEach((b) => b.classList.toggle("active", b.dataset.model === id));
+    };
+    host
+      .querySelectorAll<HTMLButtonElement>("button[data-model]")
+      .forEach((b) =>
+        b.addEventListener("click", () => {
+          if (b.dataset.model) show(b.dataset.model);
+        }),
+      );
+    show(MODELS3D[0].id);
+    activeModel3DDispose = () => {
+      handle?.dispose();
+      handle = null;
+    };
+  } catch {
+    host.innerHTML = `<p class="muted">Không tải được trình xem 3D.</p>`;
+  }
+}
+
 initGame(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 initQuiz(`${import.meta.env.BASE_URL}${ERAS[ERAS.length - 1].file}`);
 initStory(`${import.meta.env.BASE_URL}data/story/chapters.json`);
+initOlympia();
 
 function setEra(index: number): void {
+  // Đổi thời kỳ khác → thoát focus (tỉnh được lọc có thể không tồn tại ở
+  // thời kỳ mới). Đổi chế độ 2D/3D (cùng thời kỳ) vẫn giữ focus.
+  if (index !== currentEra && focusMode) clearFocusFilters();
   currentEra = index;
   ERAS.forEach((era, i) => {
     const active = i === index;
@@ -594,6 +697,10 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   const content = document.getElementById("panel-content");
   if (!panel || !content) return;
 
+  // Dọn mô hình 3D của tỉnh trước đó (nếu có) trước khi dựng lại panel.
+  activeModel3DDispose?.();
+  activeModel3DDispose = null;
+
   const num = (v: string | number | undefined) =>
     v === undefined || v === "" ? "—" : Number(String(v).replace(",", ".")).toLocaleString("vi-VN");
 
@@ -642,6 +749,13 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
 
   content.innerHTML = `
     <h2>${esc(name)}</h2>
+    ${
+      isIsland
+        ? ""
+        : `<div class="panel-actions"><button id="focus-btn" type="button" class="${
+            focusMode ? "active" : ""
+          }">${focusMode ? "🗺️ Về bản đồ đầy đủ" : "🔍 Chỉ xem tỉnh này"}</button></div>`
+    }
     <table class="facts">${rows
       .map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`)
       .join("")}</table>
@@ -651,11 +765,41 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
         : ""
     }
     <div id="profile-slot"><p class="muted coming-soon">Đang tải hồ sơ bách khoa…</p></div>
+    ${
+      isIsland
+        ? ""
+        : `<details class="profile-section" id="model3d-section"><summary>🧊 Khám phá mô hình 3D</summary><div id="model3d-panel"><p class="muted">Mở mục này để tải trình xem 3D…</p></div></details>`
+    }
     <details class="sources">
       <summary>📚 Nguồn dữ liệu bản đồ</summary>
       <ul>${NGUON_DU_LIEU.map((s) => `<li>${s}</li>`).join("")}</ul>
     </details>`;
   panel.hidden = false;
+
+  // R7 — nút chuyển đổi giữa bản đồ toàn quốc và chế độ focus 1 tỉnh.
+  const focusBtn = document.getElementById("focus-btn");
+  if (focusBtn && !isIsland) {
+    focusBtn.addEventListener("click", () => {
+      if (focusMode) {
+        exitFocus();
+        focusBtn.textContent = "🔍 Chỉ xem tỉnh này";
+        focusBtn.classList.remove("active");
+      } else {
+        enterFocus(name, era, f);
+        focusBtn.textContent = "🗺️ Về bản đồ đầy đủ";
+        focusBtn.classList.add("active");
+      }
+    });
+  }
+
+  // R4 — nạp lười trình xem 3D khi người dùng mở mục.
+  const m3dSection = document.getElementById("model3d-section") as HTMLDetailsElement | null;
+  if (m3dSection) {
+    m3dSection.addEventListener("toggle", () => {
+      const host = document.getElementById("model3d-panel");
+      if (m3dSection.open && host) void buildModel3DPanel(host);
+    });
+  }
 
   if (!isIsland) {
     const slug = slugify(name);
@@ -669,10 +813,14 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
         const anecdotes = lib.anecdotes.filter((a) =>
           a.lien_quan_tinh.includes(slug),
         );
+        const caDao = lib.caDao.filter((c) => c.lien_quan_tinh.includes(slug));
+        const baiHat = lib.baiHat.filter((b) => b.lien_quan_tinh.includes(slug));
         const related =
-          poems.length || anecdotes.length
-            ? `<details class="profile-section" open><summary>📖 Văn thơ & giai thoại gắn với vùng đất này</summary>
-                ${poems.map(poemHtml).join("")}${anecdotes.map(anecdoteHtml).join("")}
+          poems.length || anecdotes.length || caDao.length || baiHat.length
+            ? `<details class="profile-section" open><summary>📖 Văn thơ, ca dao & bài hát gắn với vùng đất này</summary>
+                ${poems.map(poemHtml).join("")}${anecdotes.map(anecdoteHtml).join("")}${caDao
+                  .map(caDaoHtml)
+                  .join("")}${baiHat.map(baiHatHtml).join("")}
                </details>`
             : "";
         slot.innerHTML =
@@ -691,6 +839,9 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
 document.getElementById("panel-close")?.addEventListener("click", () => {
   const panel = document.getElementById("province-panel");
   if (panel) panel.hidden = true;
+  if (focusMode) exitFocus();
+  activeModel3DDispose?.();
+  activeModel3DDispose = null;
 });
 
 // ---------------------------------------------------------------------------
@@ -736,12 +887,40 @@ interface HcmPoem {
   sources: string[];
 }
 
+// R9 — ca dao/tục ngữ (dân gian, public-domain) + bài hát quê hương
+// (chỉ NHÚNG YouTube chính chủ, không chép lời — tuân Luật SHTT).
+interface CaDao {
+  id: string;
+  loai: "ca-dao" | "tuc-ngu";
+  noi_dung: string[];
+  lien_quan_tinh: string[];
+  y_nghia?: string;
+  nguon: string[];
+}
+
+interface BaiHat {
+  id: string;
+  ten: string;
+  tac_gia_nhac?: string;
+  tac_gia_loi?: string;
+  nam?: string | number;
+  the_loai?: string;
+  lien_quan_tinh: string[];
+  youtube_id: string;
+  kenh_youtube?: string;
+  gioi_thieu?: string;
+  ban_quyen?: string;
+  nguon: string[];
+}
+
 let literatureCache: {
   poems: Poem[];
   hcmWorks: Poem[];
   aboutHcm: Poem[];
   anecdotes: Anecdote[];
   hcm: HcmPoem | null;
+  caDao: CaDao[];
+  baiHat: BaiHat[];
 } | null = null;
 
 async function fetchJson<T>(path: string): Promise<T | null> {
@@ -755,12 +934,14 @@ async function fetchJson<T>(path: string): Promise<T | null> {
 
 async function loadLiterature() {
   if (literatureCache) return literatureCache;
-  const [poems, hcmWorks, aboutHcm, anecdotes, hcm] = await Promise.all([
+  const [poems, hcmWorks, aboutHcm, anecdotes, hcm, caDao, baiHat] = await Promise.all([
     fetchJson<{ items: Poem[] }>("data/literature/tho-yeu-nuoc.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tac-pham-ho-chi-minh.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tho-ve-bac.json"),
     fetchJson<{ items: Anecdote[] }>("data/literature/giai-thoai-khoa-bang.json"),
     fetchJson<HcmPoem>("data/literature/lich-su-nuoc-ta.json"),
+    fetchJson<{ items: CaDao[] }>("data/literature/ca-dao-tuc-ngu.json"),
+    fetchJson<{ items: BaiHat[] }>("data/literature/bai-hat-que-huong.json"),
   ]);
   literatureCache = {
     poems: poems?.items ?? [],
@@ -770,6 +951,8 @@ async function loadLiterature() {
     ),
     anecdotes: anecdotes?.items ?? [],
     hcm,
+    caDao: caDao?.items ?? [],
+    baiHat: baiHat?.items ?? [],
   };
   return literatureCache;
 }
@@ -806,6 +989,47 @@ function hcmPoemHtml(h: HcmPoem): string {
     <blockquote class="poem hcm-poem">${h.cau_tho.map(esc).join("<br/>")}</blockquote>
     ${h.nhung_nam_quan_trong?.length ? `<details class="profile-section"><summary>📅 Những năm quan trọng (phụ lục nguyên bản)</summary><blockquote class="poem">${h.nhung_nam_quan_trong.map(esc).join("<br/>")}</blockquote>${h.chu_thich ? `<p class="muted">${esc(h.chu_thich)}</p>` : ""}</details>` : ""}
     <details class="sources"><summary>📚 Nguồn văn bản</summary>${list(h.sources)}</details>
+  </details>`;
+}
+
+function caDaoHtml(c: CaDao): string {
+  const icon = c.loai === "tuc-ngu" ? "🧭" : "🎵";
+  const head = esc(c.noi_dung[0] ?? "") + (c.noi_dung.length > 1 ? "…" : "");
+  return `<details class="profile-section"><summary>${icon} ${head}</summary>
+    <blockquote class="poem">${c.noi_dung.map(esc).join("<br/>")}</blockquote>
+    ${c.y_nghia ? `<p class="giai-nghia">💡 ${esc(c.y_nghia)}</p>` : ""}
+    <details class="sources"><summary>📚 Nguồn</summary>${list(c.nguon)}</details>
+  </details>`;
+}
+
+function baiHatHtml(b: BaiHat): string {
+  const tacGia = [
+    b.tac_gia_nhac ? `Nhạc: ${b.tac_gia_nhac}` : "",
+    b.tac_gia_loi && b.tac_gia_loi !== b.tac_gia_nhac ? `Lời: ${b.tac_gia_loi}` : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  // Chỉ nhúng khi youtube_id đúng dạng 11 ký tự hợp lệ (chặn placeholder
+  // "chưa xác thực"). Dùng youtube-nocookie để bảo vệ quyền riêng tư.
+  const embeddable = /^[A-Za-z0-9_-]{11}$/.test(b.youtube_id);
+  return `<details class="profile-section"><summary>🎶 ${esc(b.ten)}${
+    b.the_loai ? ` — <span class="muted">${esc(b.the_loai)}</span>` : ""
+  }</summary>
+    <p class="muted">${esc(tacGia)}${b.nam ? ` · ${esc(String(b.nam))}` : ""}${
+      b.kenh_youtube ? ` · Kênh: ${esc(b.kenh_youtube)}` : ""
+    }</p>
+    ${b.gioi_thieu ? `<p class="giai-nghia">${esc(b.gioi_thieu)}</p>` : ""}
+    ${
+      embeddable
+        ? `<div class="yt-embed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(
+            b.youtube_id,
+          )}" title="${esc(
+            b.ten,
+          )}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`
+        : `<p class="muted">⚠️ Chưa xác thực video từ kênh chính chủ — chưa nhúng để tránh vi phạm bản quyền.</p>`
+    }
+    ${b.ban_quyen ? `<p class="draft-badge">©️ ${esc(b.ban_quyen)} — chỉ nhúng, không chép lời.</p>` : ""}
+    <details class="sources"><summary>📚 Nguồn</summary>${list(b.nguon)}</details>
   </details>`;
 }
 
@@ -900,6 +1124,10 @@ async function openLibrary(): Promise<void> {
     ${lib.poems.map(poemHtml).join("")}
     <h3>🎓 Giai thoại Trạng nguyên – khoa bảng</h3>
     ${lib.anecdotes.map(anecdoteHtml).join("")}
+    <h3>🎵 Ca dao & tục ngữ về quê hương, con người</h3>
+    ${lib.caDao.length ? lib.caDao.map(caDaoHtml).join("") : `<p class="muted">Đang biên soạn…</p>`}
+    <h3>🎶 Bài hát về quê hương đất nước <span class="muted">(nhúng từ kênh YouTube chính chủ)</span></h3>
+    ${lib.baiHat.length ? lib.baiHat.map(baiHatHtml).join("") : `<p class="muted">Đang biên soạn…</p>`}
     ${nienHieuSectionHtml()}
     <h3>🗺️ Bản đồ cổ</h3>
     <details class="profile-section">
