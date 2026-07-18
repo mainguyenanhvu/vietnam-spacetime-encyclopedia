@@ -12,6 +12,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PHIM = join(ROOT, "public", "data", "documentaries", "phim-tai-lieu.json");
 const NHAC = join(ROOT, "public", "data", "media", "nhac-yeu-nuoc.json");
 const DANHNHAN = join(ROOT, "public", "data", "figures", "danh-nhan.json");
+const DIADANH = join(ROOT, "public", "data", "media", "dia-danh.json");
 const PROV = join(ROOT, "public", "data", "provinces");
 const FIG = join(ROOT, "public", "data", "figures", "figures-3d.json");
 
@@ -126,8 +127,23 @@ if (existsSync(DANHNHAN)) {
   console.log("ℹ️ danh-nhan.json chưa có — bỏ qua.");
 }
 
+// --- dia-danh.json ---
+if (existsSync(DIADANH)) {
+  const data = JSON.parse(readFileSync(DIADANH, "utf8"));
+  const items = data.items || [];
+  for (const d of items) {
+    const w = `dia-danh/${d.ten ?? "?"}`;
+    if (!d.ten) fail(w, "thiếu ten");
+    if (!slugs.has(d.tinh)) fail(w, `tinh "${d.tinh}" không khớp slug tỉnh`);
+    if (!d.maps_query) fail(w, "thiếu maps_query");
+  }
+  console.log(`✅ dia-danh.json: ${items.length} địa danh`);
+} else {
+  console.log("ℹ️ dia-danh.json chưa có — bỏ qua.");
+}
+
 if (errors) {
-  console.error(`\n❌ ${errors} lỗi phim tài liệu / nhạc yêu nước / danh nhân.`);
+  console.error(`\n❌ ${errors} lỗi phim tài liệu / nhạc / danh nhân / địa danh.`);
   process.exit(1);
 }
-console.log(`\n✅ Phim tài liệu + nhạc yêu nước + danh nhân hợp lệ.`);
+console.log(`\n✅ Phim tài liệu + nhạc yêu nước + danh nhân + địa danh hợp lệ.`);

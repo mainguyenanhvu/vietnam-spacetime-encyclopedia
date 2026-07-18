@@ -41,6 +41,8 @@ interface DanhNhan {
   nguon?: string[];
 }
 interface DanhNhanData { ghi_chu?: string; tong?: number; co_phim?: number; items: DanhNhan[] }
+interface DiaDanh { tinh: string; tinh_ten: string; ten: string; maps_query: string }
+interface DiaDanhData { ghi_chu?: string; items: DiaDanh[] }
 interface NhacPhienBan { the_hien: string; youtube_id: string; kenh: string; kenh_loai: string }
 interface NhacItem {
   id: string;
@@ -58,6 +60,7 @@ interface NhacData { ghi_chu?: string; items: NhacItem[] }
 const PHIM_URL = `${import.meta.env.BASE_URL}data/documentaries/phim-tai-lieu.json`;
 const NHAC_URL = `${import.meta.env.BASE_URL}data/media/nhac-yeu-nuoc.json`;
 const DANHNHAN_URL = `${import.meta.env.BASE_URL}data/figures/danh-nhan.json`;
+const DIADANH_URL = `${import.meta.env.BASE_URL}data/media/dia-danh.json`;
 
 // Tên hiển thị 34 tỉnh (chỉ để hiển thị — danh nhân gom theo slug).
 const TINH_TEN: Record<string, string> = {
@@ -101,15 +104,31 @@ let phim: PhimData | null = null;
 let nhac: NhacData | null = null;
 let danhnhan: DanhNhanData | null = null;
 let dnByTinh: Map<string, DanhNhan[]> | null = null;
+let diadanh: DiaDanhData | null = null;
+let ddByTinh: Map<string, DiaDanh[]> | null = null;
 
 function buildIndex(): void {
-  if (!danhnhan) return;
-  dnByTinh = new Map();
-  for (const d of danhnhan.items) {
-    const arr = dnByTinh.get(d.tinh) ?? [];
-    arr.push(d);
-    dnByTinh.set(d.tinh, arr);
+  if (danhnhan) {
+    dnByTinh = new Map();
+    for (const d of danhnhan.items) {
+      const arr = dnByTinh.get(d.tinh) ?? [];
+      arr.push(d);
+      dnByTinh.set(d.tinh, arr);
+    }
   }
+  if (diadanh) {
+    ddByTinh = new Map();
+    for (const d of diadanh.items) {
+      const arr = ddByTinh.get(d.tinh) ?? [];
+      arr.push(d);
+      ddByTinh.set(d.tinh, arr);
+    }
+  }
+}
+
+function mapsEmbed(query: string, title: string): string {
+  const src = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
+  return `<div class="qg-map"><iframe loading="lazy" src="${src}" title="Bản đồ ${esc(title)}" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>`;
 }
 
 function phimCard(ten: string, vid: string, kenh_loai: string, draft: boolean): string {
@@ -206,6 +225,31 @@ function renderNhacTab(host: HTMLElement): void {
   host.innerHTML = `<p class="qg-note">Nguồn: playlist «Việt Nam trong tôi» (người dùng tuyển chọn). Chỉ nhúng, không chép lời (Điều 25 Luật SHTT).</p><div class="qg-grid">${cards}</div>`;
 }
 
+function renderDiaDanhTab(host: HTMLElement): void {
+  const provinces = Object.keys(TINH_TEN)
+    .filter((s) => (ddByTinh?.get(s)?.length ?? 0) > 0)
+    .sort((a, b) => TINH_TEN[a].localeCompare(TINH_TEN[b], "vi"));
+  const opts = provinces
+    .map((s) => `<option value="${s}">${esc(TINH_TEN[s])} (${ddByTinh?.get(s)?.length ?? 0})</option>`)
+    .join("");
+  host.innerHTML = `
+    <p class="qg-note">Địa danh/di tích hiển thị bằng NHÚNG Google Maps chính thức (không tải/rehost ảnh — tuân thủ bản quyền). Chủ quyền Hoàng Sa & Trường Sa của Việt Nam.</p>
+    <label class="qg-select-label">Chọn tỉnh:
+      <select id="qg-dd-select"><option value="">— Chọn tỉnh —</option>${opts}</select>
+    </label>
+    <div id="qg-dd-content"><p class="muted">Chọn một tỉnh để xem bản đồ địa danh.</p></div>`;
+  const sel = host.querySelector<HTMLSelectElement>("#qg-dd-select");
+  const content = host.querySelector<HTMLElement>("#qg-dd-content");
+  sel?.addEventListener("change", () => {
+    if (!content) return;
+    if (!sel.value) { content.innerHTML = `<p class="muted">Chọn một tỉnh để xem bản đồ địa danh.</p>`; return; }
+    const list = ddByTinh?.get(sel.value) ?? [];
+    content.innerHTML = `<div class="qg-grid">${list
+      .map((d) => `<article class="qg-card"><h4>${esc(d.ten)}</h4>${mapsEmbed(d.maps_query, d.ten)}</article>`)
+      .join("")}</div>`;
+  });
+}
+
 function closePanel(): void {
   const panel = document.getElementById("quocgia-panel");
   if (panel) panel.hidden = true;
@@ -217,14 +261,15 @@ function hideOtherPanels(): void {
   }
 }
 
-function switchTab(which: "phim" | "nhac"): void {
+function switchTab(which: "phim" | "nhac" | "diadanh"): void {
   const body = document.getElementById("quocgia-body");
   if (!body) return;
-  for (const t of ["phim", "nhac"]) {
+  for (const t of ["phim", "nhac", "diadanh"]) {
     document.getElementById(`qg-tab-${t}`)?.classList.toggle("active", t === which);
   }
   if (which === "phim") renderPhimTab(body);
-  else renderNhacTab(body);
+  else if (which === "nhac") renderNhacTab(body);
+  else renderDiaDanhTab(body);
 }
 
 async function loadAll(): Promise<void> {
@@ -242,6 +287,10 @@ async function loadAll(): Promise<void> {
     if (!nhac) {
       const r = await fetch(NHAC_URL);
       if (r.ok) nhac = (await r.json()) as NhacData;
+    }
+    if (!diadanh) {
+      const r = await fetch(DIADANH_URL);
+      if (r.ok) { diadanh = (await r.json()) as DiaDanhData; buildIndex(); }
     }
     switchTab("phim");
   } catch {
@@ -267,6 +316,7 @@ function buildDom(): { btn: HTMLButtonElement } {
     <div class="qg-tabs">
       <button type="button" id="qg-tab-phim" class="qg-tab active">🎖️ Danh nhân & Phim tài liệu</button>
       <button type="button" id="qg-tab-nhac" class="qg-tab">🎵 Nhạc yêu nước</button>
+      <button type="button" id="qg-tab-diadanh" class="qg-tab">🗺️ Địa danh</button>
     </div>
     <div id="quocgia-body"></div>`;
   const app = document.getElementById("app") ?? document.body;
@@ -281,9 +331,10 @@ export function initQuocGia(): void {
     hideOtherPanels();
     const panel = document.getElementById("quocgia-panel");
     if (panel) panel.hidden = false;
-    if (!danhnhan || !phim || !nhac) void loadAll();
+    if (!danhnhan || !phim || !nhac || !diadanh) void loadAll();
   });
   document.getElementById("quocgia-close")?.addEventListener("click", closePanel);
   document.getElementById("qg-tab-phim")?.addEventListener("click", () => switchTab("phim"));
   document.getElementById("qg-tab-nhac")?.addEventListener("click", () => switchTab("nhac"));
+  document.getElementById("qg-tab-diadanh")?.addEventListener("click", () => switchTab("diadanh"));
 }

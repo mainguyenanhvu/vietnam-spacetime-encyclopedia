@@ -1,0 +1,906 @@
+{
+  "ghi_chu": "Địa danh/di tích/kiến trúc theo tỉnh (trích từ van_hoa.kien_truc của hồ sơ tỉnh). Hiển thị bằng NHÚNG Google Maps iframe chính thức (không tải/rehost ảnh — tuân thủ điều khoản Google & bản quyền). maps_query dùng cho https://www.google.com/maps?q=...&output=embed.",
+  "ngay_cap_nhat": "2026-07-18",
+  "items": [
+    {
+      "tinh": "an-giang",
+      "tinh_ten": "An Giang",
+      "ten": "Miếu Bà Chúa Xứ núi Sam",
+      "maps_query": "Miếu Bà Chúa Xứ núi Sam, An Giang, Việt Nam"
+    },
+    {
+      "tinh": "an-giang",
+      "tinh_ten": "An Giang",
+      "ten": "Chùa Tây An",
+      "maps_query": "Chùa Tây An, An Giang, Việt Nam"
+    },
+    {
+      "tinh": "an-giang",
+      "tinh_ten": "An Giang",
+      "ten": "Lăng Thoại Ngọc Hầu",
+      "maps_query": "Lăng Thoại Ngọc Hầu, An Giang, Việt Nam"
+    },
+    {
+      "tinh": "an-giang",
+      "tinh_ten": "An Giang",
+      "ten": "Đình Nguyễn Trung Trực",
+      "maps_query": "Đình Nguyễn Trung Trực, An Giang, Việt Nam"
+    },
+    {
+      "tinh": "an-giang",
+      "tinh_ten": "An Giang",
+      "ten": "Thạch Động Hà Tiên",
+      "maps_query": "Thạch Động Hà Tiên, An Giang, Việt Nam"
+    },
+    {
+      "tinh": "bac-ninh",
+      "tinh_ten": "Bắc Ninh",
+      "ten": "Chùa Dâu",
+      "maps_query": "Chùa Dâu, Bắc Ninh, Việt Nam"
+    },
+    {
+      "tinh": "bac-ninh",
+      "tinh_ten": "Bắc Ninh",
+      "ten": "Chùa Bút Tháp",
+      "maps_query": "Chùa Bút Tháp, Bắc Ninh, Việt Nam"
+    },
+    {
+      "tinh": "bac-ninh",
+      "tinh_ten": "Bắc Ninh",
+      "ten": "Đền Đô",
+      "maps_query": "Đền Đô, Bắc Ninh, Việt Nam"
+    },
+    {
+      "tinh": "bac-ninh",
+      "tinh_ten": "Bắc Ninh",
+      "ten": "Chùa Vĩnh Nghiêm (lưu giữ mộc bản — Di sản tư liệu khu vực châu Á – Thái Bình Dương 2012)",
+      "maps_query": "Chùa Vĩnh Nghiêm, Bắc Ninh, Việt Nam"
+    },
+    {
+      "tinh": "bac-ninh",
+      "tinh_ten": "Bắc Ninh",
+      "ten": "Chùa Bổ Đà",
+      "maps_query": "Chùa Bổ Đà, Bắc Ninh, Việt Nam"
+    },
+    {
+      "tinh": "ca-mau",
+      "tinh_ten": "Cà Mau",
+      "ten": "Nhà công tử Bạc Liêu",
+      "maps_query": "Nhà công tử Bạc Liêu, Cà Mau, Việt Nam"
+    },
+    {
+      "tinh": "ca-mau",
+      "tinh_ten": "Cà Mau",
+      "ten": "Chùa Xiêm Cán (Khmer)",
+      "maps_query": "Chùa Xiêm Cán, Cà Mau, Việt Nam"
+    },
+    {
+      "tinh": "ca-mau",
+      "tinh_ten": "Cà Mau",
+      "ten": "Đình Tân Hưng",
+      "maps_query": "Đình Tân Hưng, Cà Mau, Việt Nam"
+    },
+    {
+      "tinh": "ca-mau",
+      "tinh_ten": "Cà Mau",
+      "ten": "Mốc toạ độ quốc gia GPS 0001 — Mũi Cà Mau",
+      "maps_query": "Mốc toạ độ quốc gia GPS 0001 — Mũi Cà Mau, Cà Mau, Việt Nam"
+    },
+    {
+      "tinh": "can-tho",
+      "tinh_ten": "Thành phố Cần Thơ",
+      "ten": "Nhà cổ Bình Thủy",
+      "maps_query": "Nhà cổ Bình Thủy, Thành phố Cần Thơ, Việt Nam"
+    },
+    {
+      "tinh": "can-tho",
+      "tinh_ten": "Thành phố Cần Thơ",
+      "ten": "Đình Bình Thủy",
+      "maps_query": "Đình Bình Thủy, Thành phố Cần Thơ, Việt Nam"
+    },
+    {
+      "tinh": "can-tho",
+      "tinh_ten": "Thành phố Cần Thơ",
+      "ten": "Chợ nổi Cái Răng",
+      "maps_query": "Chợ nổi Cái Răng, Thành phố Cần Thơ, Việt Nam"
+    },
+    {
+      "tinh": "can-tho",
+      "tinh_ten": "Thành phố Cần Thơ",
+      "ten": "Chùa Dơi (Mahatup)",
+      "maps_query": "Chùa Dơi, Thành phố Cần Thơ, Việt Nam"
+    },
+    {
+      "tinh": "can-tho",
+      "tinh_ten": "Thành phố Cần Thơ",
+      "ten": "Chùa Chén Kiểu",
+      "maps_query": "Chùa Chén Kiểu, Thành phố Cần Thơ, Việt Nam"
+    },
+    {
+      "tinh": "can-tho",
+      "tinh_ten": "Thành phố Cần Thơ",
+      "ten": "Chùa Đất Sét",
+      "maps_query": "Chùa Đất Sét, Thành phố Cần Thơ, Việt Nam"
+    },
+    {
+      "tinh": "cao-bang",
+      "tinh_ten": "Cao Bằng",
+      "ten": "Khu di tích quốc gia đặc biệt Pác Bó",
+      "maps_query": "Khu di tích quốc gia đặc biệt Pác Bó, Cao Bằng, Việt Nam"
+    },
+    {
+      "tinh": "cao-bang",
+      "tinh_ten": "Cao Bằng",
+      "ten": "Đền Kỳ Sầm",
+      "maps_query": "Đền Kỳ Sầm, Cao Bằng, Việt Nam"
+    },
+    {
+      "tinh": "cao-bang",
+      "tinh_ten": "Cao Bằng",
+      "ten": "Chùa Phật Tích Trúc Lâm Bản Giốc",
+      "maps_query": "Chùa Phật Tích Trúc Lâm Bản Giốc, Cao Bằng, Việt Nam"
+    },
+    {
+      "tinh": "cao-bang",
+      "tinh_ten": "Cao Bằng",
+      "ten": "Nhà sàn đá của người Tày vùng Trùng Khánh",
+      "maps_query": "Nhà sàn đá của người Tày vùng Trùng Khánh, Cao Bằng, Việt Nam"
+    },
+    {
+      "tinh": "da-nang",
+      "tinh_ten": "Thành phố Đà Nẵng",
+      "ten": "Phố cổ Hội An (UNESCO 1999)",
+      "maps_query": "Phố cổ Hội An, Thành phố Đà Nẵng, Việt Nam"
+    },
+    {
+      "tinh": "da-nang",
+      "tinh_ten": "Thành phố Đà Nẵng",
+      "ten": "Chùa Cầu",
+      "maps_query": "Chùa Cầu, Thành phố Đà Nẵng, Việt Nam"
+    },
+    {
+      "tinh": "da-nang",
+      "tinh_ten": "Thành phố Đà Nẵng",
+      "ten": "Thánh địa Mỹ Sơn",
+      "maps_query": "Thánh địa Mỹ Sơn, Thành phố Đà Nẵng, Việt Nam"
+    },
+    {
+      "tinh": "da-nang",
+      "tinh_ten": "Thành phố Đà Nẵng",
+      "ten": "Danh thắng Ngũ Hành Sơn",
+      "maps_query": "Danh thắng Ngũ Hành Sơn, Thành phố Đà Nẵng, Việt Nam"
+    },
+    {
+      "tinh": "da-nang",
+      "tinh_ten": "Thành phố Đà Nẵng",
+      "ten": "Cầu Rồng",
+      "maps_query": "Cầu Rồng, Thành phố Đà Nẵng, Việt Nam"
+    },
+    {
+      "tinh": "da-nang",
+      "tinh_ten": "Thành phố Đà Nẵng",
+      "ten": "Bảo tàng Điêu khắc Chăm",
+      "maps_query": "Bảo tàng Điêu khắc Chăm, Thành phố Đà Nẵng, Việt Nam"
+    },
+    {
+      "tinh": "dak-lak",
+      "tinh_ten": "Đắk Lắk",
+      "ten": "Nhà dài Ê Đê",
+      "maps_query": "Nhà dài Ê Đê, Đắk Lắk, Việt Nam"
+    },
+    {
+      "tinh": "dak-lak",
+      "tinh_ten": "Đắk Lắk",
+      "ten": "Nhà đày Buôn Ma Thuột",
+      "maps_query": "Nhà đày Buôn Ma Thuột, Đắk Lắk, Việt Nam"
+    },
+    {
+      "tinh": "dak-lak",
+      "tinh_ten": "Đắk Lắk",
+      "ten": "Chùa Sắc tứ Khải Đoan (Buôn Ma Thuột)",
+      "maps_query": "Chùa Sắc tứ Khải Đoan, Đắk Lắk, Việt Nam"
+    },
+    {
+      "tinh": "dak-lak",
+      "tinh_ten": "Đắk Lắk",
+      "ten": "Tháp Nhạn (Tuy Hòa) — tháp Champa, di tích quốc gia đặc biệt",
+      "maps_query": "Tháp Nhạn — tháp Champa, di tích quốc gia đặc biệt, Đắk Lắk, Việt Nam"
+    },
+    {
+      "tinh": "dien-bien",
+      "tinh_ten": "Điện Biên",
+      "ten": "Quần thể di tích Chiến trường Điện Biên Phủ (đồi A1, hầm Đờ Cát, Sở chỉ huy Mường Phăng) — di tích quốc gia đặc biệt",
+      "maps_query": "Quần thể di tích Chiến trường Điện Biên Phủ — di tích quốc gia đặc biệt, Điện Biên, Việt Nam"
+    },
+    {
+      "tinh": "dien-bien",
+      "tinh_ten": "Điện Biên",
+      "ten": "Thành Bản Phủ",
+      "maps_query": "Thành Bản Phủ, Điện Biên, Việt Nam"
+    },
+    {
+      "tinh": "dien-bien",
+      "tinh_ten": "Điện Biên",
+      "ten": "Nhà sàn của người Thái đen",
+      "maps_query": "Nhà sàn của người Thái đen, Điện Biên, Việt Nam"
+    },
+    {
+      "tinh": "dien-bien",
+      "tinh_ten": "Điện Biên",
+      "ten": "Tượng đài Chiến thắng Điện Biên Phủ",
+      "maps_query": "Tượng đài Chiến thắng Điện Biên Phủ, Điện Biên, Việt Nam"
+    },
+    {
+      "tinh": "dong-nai",
+      "tinh_ten": "Đồng Nai",
+      "ten": "Văn miếu Trấn Biên",
+      "maps_query": "Văn miếu Trấn Biên, Đồng Nai, Việt Nam"
+    },
+    {
+      "tinh": "dong-nai",
+      "tinh_ten": "Đồng Nai",
+      "ten": "Thất phủ cổ miếu (chùa Ông) Cù lao Phố",
+      "maps_query": "Thất phủ cổ miếu Cù lao Phố, Đồng Nai, Việt Nam"
+    },
+    {
+      "tinh": "dong-nai",
+      "tinh_ten": "Đồng Nai",
+      "ten": "Mộ cự thạch Hàng Gòn",
+      "maps_query": "Mộ cự thạch Hàng Gòn, Đồng Nai, Việt Nam"
+    },
+    {
+      "tinh": "dong-nai",
+      "tinh_ten": "Đồng Nai",
+      "ten": "Nhà dài của người S'tiêng",
+      "maps_query": "Nhà dài của người S'tiêng, Đồng Nai, Việt Nam"
+    },
+    {
+      "tinh": "dong-thap",
+      "tinh_ten": "Đồng Tháp",
+      "ten": "Nhà cổ Huỳnh Thủy Lê (Sa Đéc)",
+      "maps_query": "Nhà cổ Huỳnh Thủy Lê, Đồng Tháp, Việt Nam"
+    },
+    {
+      "tinh": "dong-thap",
+      "tinh_ten": "Đồng Tháp",
+      "ten": "Chùa Vĩnh Tràng (Mỹ Tho)",
+      "maps_query": "Chùa Vĩnh Tràng, Đồng Tháp, Việt Nam"
+    },
+    {
+      "tinh": "dong-thap",
+      "tinh_ten": "Đồng Tháp",
+      "ten": "Kiến An Cung (Sa Đéc)",
+      "maps_query": "Kiến An Cung, Đồng Tháp, Việt Nam"
+    },
+    {
+      "tinh": "dong-thap",
+      "tinh_ten": "Đồng Tháp",
+      "ten": "Lăng Trương Định (Gò Công)",
+      "maps_query": "Lăng Trương Định, Đồng Tháp, Việt Nam"
+    },
+    {
+      "tinh": "gia-lai",
+      "tinh_ten": "Gia Lai",
+      "ten": "Tháp Chăm Bình Định (tháp Đôi, tháp Bánh Ít, thành Đồ Bàn)",
+      "maps_query": "Tháp Chăm Bình Định, Gia Lai, Việt Nam"
+    },
+    {
+      "tinh": "gia-lai",
+      "tinh_ten": "Gia Lai",
+      "ten": "Nhà rông Ba Na",
+      "maps_query": "Nhà rông Ba Na, Gia Lai, Việt Nam"
+    },
+    {
+      "tinh": "gia-lai",
+      "tinh_ten": "Gia Lai",
+      "ten": "Bảo tàng Quang Trung — điện thờ Tây Sơn Tam kiệt",
+      "maps_query": "Bảo tàng Quang Trung — điện thờ Tây Sơn Tam kiệt, Gia Lai, Việt Nam"
+    },
+    {
+      "tinh": "gia-lai",
+      "tinh_ten": "Gia Lai",
+      "ten": "Chùa Minh Thành (Pleiku)",
+      "maps_query": "Chùa Minh Thành, Gia Lai, Việt Nam"
+    },
+    {
+      "tinh": "ha-noi",
+      "tinh_ten": "Hà Nội",
+      "ten": "Khu phố cổ 36 phố phường",
+      "maps_query": "Khu phố cổ 36 phố phường, Hà Nội, Việt Nam"
+    },
+    {
+      "tinh": "ha-noi",
+      "tinh_ten": "Hà Nội",
+      "ten": "Chùa Một Cột",
+      "maps_query": "Chùa Một Cột, Hà Nội, Việt Nam"
+    },
+    {
+      "tinh": "ha-noi",
+      "tinh_ten": "Hà Nội",
+      "ten": "Văn Miếu – Quốc Tử Giám",
+      "maps_query": "Văn Miếu – Quốc Tử Giám, Hà Nội, Việt Nam"
+    },
+    {
+      "tinh": "ha-noi",
+      "tinh_ten": "Hà Nội",
+      "ten": "Cầu Long Biên",
+      "maps_query": "Cầu Long Biên, Hà Nội, Việt Nam"
+    },
+    {
+      "tinh": "ha-tinh",
+      "tinh_ten": "Hà Tĩnh",
+      "ten": "Chùa Hương Tích trên núi Hồng Lĩnh",
+      "maps_query": "Chùa Hương Tích trên núi Hồng Lĩnh, Hà Tĩnh, Việt Nam"
+    },
+    {
+      "tinh": "ha-tinh",
+      "tinh_ten": "Hà Tĩnh",
+      "ten": "Khu di tích Đại thi hào Nguyễn Du (Tiên Điền)",
+      "maps_query": "Khu di tích Đại thi hào Nguyễn Du, Hà Tĩnh, Việt Nam"
+    },
+    {
+      "tinh": "ha-tinh",
+      "tinh_ten": "Hà Tĩnh",
+      "ten": "Ngã ba Đồng Lộc",
+      "maps_query": "Ngã ba Đồng Lộc, Hà Tĩnh, Việt Nam"
+    },
+    {
+      "tinh": "ha-tinh",
+      "tinh_ten": "Hà Tĩnh",
+      "ten": "Đền Củi (Nghi Xuân)",
+      "maps_query": "Đền Củi, Hà Tĩnh, Việt Nam"
+    },
+    {
+      "tinh": "hai-phong",
+      "tinh_ten": "Hải Phòng",
+      "ten": "Nhà hát lớn Hải Phòng",
+      "maps_query": "Nhà hát lớn Hải Phòng, Hải Phòng, Việt Nam"
+    },
+    {
+      "tinh": "hai-phong",
+      "tinh_ten": "Hải Phòng",
+      "ten": "Đình Hàng Kênh",
+      "maps_query": "Đình Hàng Kênh, Hải Phòng, Việt Nam"
+    },
+    {
+      "tinh": "hai-phong",
+      "tinh_ten": "Hải Phòng",
+      "ten": "Văn miếu Mao Điền",
+      "maps_query": "Văn miếu Mao Điền, Hải Phòng, Việt Nam"
+    },
+    {
+      "tinh": "hai-phong",
+      "tinh_ten": "Hải Phòng",
+      "ten": "Chùa Côn Sơn và đền Kiếp Bạc",
+      "maps_query": "Chùa Côn Sơn và đền Kiếp Bạc, Hải Phòng, Việt Nam"
+    },
+    {
+      "tinh": "hue",
+      "tinh_ten": "Thành phố Huế",
+      "ten": "Ngọ Môn",
+      "maps_query": "Ngọ Môn, Thành phố Huế, Việt Nam"
+    },
+    {
+      "tinh": "hue",
+      "tinh_ten": "Thành phố Huế",
+      "ten": "Điện Thái Hòa",
+      "maps_query": "Điện Thái Hòa, Thành phố Huế, Việt Nam"
+    },
+    {
+      "tinh": "hue",
+      "tinh_ten": "Thành phố Huế",
+      "ten": "Lăng Tự Đức",
+      "maps_query": "Lăng Tự Đức, Thành phố Huế, Việt Nam"
+    },
+    {
+      "tinh": "hue",
+      "tinh_ten": "Thành phố Huế",
+      "ten": "Lăng Khải Định",
+      "maps_query": "Lăng Khải Định, Thành phố Huế, Việt Nam"
+    },
+    {
+      "tinh": "hue",
+      "tinh_ten": "Thành phố Huế",
+      "ten": "Chùa Thiên Mụ",
+      "maps_query": "Chùa Thiên Mụ, Thành phố Huế, Việt Nam"
+    },
+    {
+      "tinh": "hung-yen",
+      "tinh_ten": "Hưng Yên",
+      "ten": "Chùa Keo với gác chuông gỗ (di tích quốc gia đặc biệt)",
+      "maps_query": "Chùa Keo với gác chuông gỗ, Hưng Yên, Việt Nam"
+    },
+    {
+      "tinh": "hung-yen",
+      "tinh_ten": "Hưng Yên",
+      "ten": "Văn miếu Xích Đằng",
+      "maps_query": "Văn miếu Xích Đằng, Hưng Yên, Việt Nam"
+    },
+    {
+      "tinh": "hung-yen",
+      "tinh_ten": "Hưng Yên",
+      "ten": "Đền Mẫu và chùa Chuông (Phố Hiến)",
+      "maps_query": "Đền Mẫu và chùa Chuông, Hưng Yên, Việt Nam"
+    },
+    {
+      "tinh": "hung-yen",
+      "tinh_ten": "Hưng Yên",
+      "ten": "Đền Đa Hòa",
+      "maps_query": "Đền Đa Hòa, Hưng Yên, Việt Nam"
+    },
+    {
+      "tinh": "khanh-hoa",
+      "tinh_ten": "Khánh Hòa",
+      "ten": "Tháp Bà Po Nagar",
+      "maps_query": "Tháp Bà Po Nagar, Khánh Hòa, Việt Nam"
+    },
+    {
+      "tinh": "khanh-hoa",
+      "tinh_ten": "Khánh Hòa",
+      "ten": "Tháp Po Klong Garai",
+      "maps_query": "Tháp Po Klong Garai, Khánh Hòa, Việt Nam"
+    },
+    {
+      "tinh": "khanh-hoa",
+      "tinh_ten": "Khánh Hòa",
+      "ten": "Viện Hải dương học Nha Trang",
+      "maps_query": "Viện Hải dương học Nha Trang, Khánh Hòa, Việt Nam"
+    },
+    {
+      "tinh": "khanh-hoa",
+      "tinh_ten": "Khánh Hòa",
+      "ten": "Nhà thờ Núi (Nha Trang)",
+      "maps_query": "Nhà thờ Núi, Khánh Hòa, Việt Nam"
+    },
+    {
+      "tinh": "lai-chau",
+      "tinh_ten": "Lai Châu",
+      "ten": "Đền thờ vua Lê Thái Tổ và bia Lê Lợi (Nậm Nhùn)",
+      "maps_query": "Đền thờ vua Lê Thái Tổ và bia Lê Lợi, Lai Châu, Việt Nam"
+    },
+    {
+      "tinh": "lai-chau",
+      "tinh_ten": "Lai Châu",
+      "ten": "Bản nhà sàn người Thái Vàng Pheo (Phong Thổ)",
+      "maps_query": "Bản nhà sàn người Thái Vàng Pheo, Lai Châu, Việt Nam"
+    },
+    {
+      "tinh": "lai-chau",
+      "tinh_ten": "Lai Châu",
+      "ten": "Bản du lịch cộng đồng Sin Suối Hồ của người Mông",
+      "maps_query": "Bản du lịch cộng đồng Sin Suối Hồ của người Mông, Lai Châu, Việt Nam"
+    },
+    {
+      "tinh": "lai-chau",
+      "tinh_ten": "Lai Châu",
+      "ten": "Chợ phiên San Thàng",
+      "maps_query": "Chợ phiên San Thàng, Lai Châu, Việt Nam"
+    },
+    {
+      "tinh": "lam-dong",
+      "tinh_ten": "Lâm Đồng",
+      "ten": "Ga Đà Lạt",
+      "maps_query": "Ga Đà Lạt, Lâm Đồng, Việt Nam"
+    },
+    {
+      "tinh": "lam-dong",
+      "tinh_ten": "Lâm Đồng",
+      "ten": "Trường Cao đẳng Sư phạm Đà Lạt",
+      "maps_query": "Trường Cao đẳng Sư phạm Đà Lạt, Lâm Đồng, Việt Nam"
+    },
+    {
+      "tinh": "lam-dong",
+      "tinh_ten": "Lâm Đồng",
+      "ten": "Dinh Bảo Đại (Dinh III)",
+      "maps_query": "Dinh Bảo Đại, Lâm Đồng, Việt Nam"
+    },
+    {
+      "tinh": "lam-dong",
+      "tinh_ten": "Lâm Đồng",
+      "ten": "Trường Dục Thanh (Phan Thiết)",
+      "maps_query": "Trường Dục Thanh, Lâm Đồng, Việt Nam"
+    },
+    {
+      "tinh": "lam-dong",
+      "tinh_ten": "Lâm Đồng",
+      "ten": "Tháp Po Sah Inư",
+      "maps_query": "Tháp Po Sah Inư, Lâm Đồng, Việt Nam"
+    },
+    {
+      "tinh": "lang-son",
+      "tinh_ten": "Lạng Sơn",
+      "ten": "Đoàn Thành Lạng Sơn",
+      "maps_query": "Đoàn Thành Lạng Sơn, Lạng Sơn, Việt Nam"
+    },
+    {
+      "tinh": "lang-son",
+      "tinh_ten": "Lạng Sơn",
+      "ten": "Chùa Tam Thanh và động Nhị Thanh",
+      "maps_query": "Chùa Tam Thanh và động Nhị Thanh, Lạng Sơn, Việt Nam"
+    },
+    {
+      "tinh": "lang-son",
+      "tinh_ten": "Lạng Sơn",
+      "ten": "Đền Kỳ Cùng",
+      "maps_query": "Đền Kỳ Cùng, Lạng Sơn, Việt Nam"
+    },
+    {
+      "tinh": "lang-son",
+      "tinh_ten": "Lạng Sơn",
+      "ten": "Phố chợ Kỳ Lừa",
+      "maps_query": "Phố chợ Kỳ Lừa, Lạng Sơn, Việt Nam"
+    },
+    {
+      "tinh": "lang-son",
+      "tinh_ten": "Lạng Sơn",
+      "ten": "Nhà trình tường và ngói âm dương vùng biên",
+      "maps_query": "Nhà trình tường và ngói âm dương vùng biên, Lạng Sơn, Việt Nam"
+    },
+    {
+      "tinh": "lao-cai",
+      "tinh_ten": "Lào Cai",
+      "ten": "Đền Thượng thờ Trần Hưng Đạo (Lào Cai)",
+      "maps_query": "Đền Thượng thờ Trần Hưng Đạo, Lào Cai, Việt Nam"
+    },
+    {
+      "tinh": "lao-cai",
+      "tinh_ten": "Lào Cai",
+      "ten": "Nhà thờ đá Sa Pa",
+      "maps_query": "Nhà thờ đá Sa Pa, Lào Cai, Việt Nam"
+    },
+    {
+      "tinh": "lao-cai",
+      "tinh_ten": "Lào Cai",
+      "ten": "Dinh Hoàng A Tưởng (Bắc Hà)",
+      "maps_query": "Dinh Hoàng A Tưởng, Lào Cai, Việt Nam"
+    },
+    {
+      "tinh": "lao-cai",
+      "tinh_ten": "Lào Cai",
+      "ten": "Nhà sàn người Thái vùng Mường Lò",
+      "maps_query": "Nhà sàn người Thái vùng Mường Lò, Lào Cai, Việt Nam"
+    },
+    {
+      "tinh": "nghe-an",
+      "tinh_ten": "Nghệ An",
+      "ten": "Khu di tích Kim Liên (quê nội – quê ngoại Bác Hồ)",
+      "maps_query": "Khu di tích Kim Liên, Nghệ An, Việt Nam"
+    },
+    {
+      "tinh": "nghe-an",
+      "tinh_ten": "Nghệ An",
+      "ten": "Đền Cuông thờ An Dương Vương",
+      "maps_query": "Đền Cuông thờ An Dương Vương, Nghệ An, Việt Nam"
+    },
+    {
+      "tinh": "nghe-an",
+      "tinh_ten": "Nghệ An",
+      "ten": "Thành cổ Vinh",
+      "maps_query": "Thành cổ Vinh, Nghệ An, Việt Nam"
+    },
+    {
+      "tinh": "nghe-an",
+      "tinh_ten": "Nghệ An",
+      "ten": "Đình Hoành Sơn (Nam Đàn)",
+      "maps_query": "Đình Hoành Sơn, Nghệ An, Việt Nam"
+    },
+    {
+      "tinh": "ninh-binh",
+      "tinh_ten": "Ninh Bình",
+      "ten": "Đền vua Đinh – vua Lê (Hoa Lư)",
+      "maps_query": "Đền vua Đinh – vua Lê, Ninh Bình, Việt Nam"
+    },
+    {
+      "tinh": "ninh-binh",
+      "tinh_ten": "Ninh Bình",
+      "ten": "Nhà thờ đá Phát Diệm",
+      "maps_query": "Nhà thờ đá Phát Diệm, Ninh Bình, Việt Nam"
+    },
+    {
+      "tinh": "ninh-binh",
+      "tinh_ten": "Ninh Bình",
+      "ten": "Tháp Phổ Minh và đền Trần (Nam Định)",
+      "maps_query": "Tháp Phổ Minh và đền Trần, Ninh Bình, Việt Nam"
+    },
+    {
+      "tinh": "ninh-binh",
+      "tinh_ten": "Ninh Bình",
+      "ten": "Chùa Tam Chúc (Hà Nam)",
+      "maps_query": "Chùa Tam Chúc, Ninh Bình, Việt Nam"
+    },
+    {
+      "tinh": "ninh-binh",
+      "tinh_ten": "Ninh Bình",
+      "ten": "Chùa Bái Đính",
+      "maps_query": "Chùa Bái Đính, Ninh Bình, Việt Nam"
+    },
+    {
+      "tinh": "ninh-binh",
+      "tinh_ten": "Ninh Bình",
+      "ten": "Chùa Bích Động",
+      "maps_query": "Chùa Bích Động, Ninh Bình, Việt Nam"
+    },
+    {
+      "tinh": "phu-tho",
+      "tinh_ten": "Phú Thọ",
+      "ten": "Khu di tích Đền Hùng (di tích quốc gia đặc biệt)",
+      "maps_query": "Khu di tích Đền Hùng, Phú Thọ, Việt Nam"
+    },
+    {
+      "tinh": "phu-tho",
+      "tinh_ten": "Phú Thọ",
+      "ten": "Đình cổ Hùng Lô",
+      "maps_query": "Đình cổ Hùng Lô, Phú Thọ, Việt Nam"
+    },
+    {
+      "tinh": "phu-tho",
+      "tinh_ten": "Phú Thọ",
+      "ten": "Nhà sàn Mường",
+      "maps_query": "Nhà sàn Mường, Phú Thọ, Việt Nam"
+    },
+    {
+      "tinh": "phu-tho",
+      "tinh_ten": "Phú Thọ",
+      "ten": "Tháp Bình Sơn (Vĩnh Phúc)",
+      "maps_query": "Tháp Bình Sơn, Phú Thọ, Việt Nam"
+    },
+    {
+      "tinh": "quang-ngai",
+      "tinh_ten": "Quảng Ngãi",
+      "ten": "Chùa Thiên Ấn — «Thiên Ấn niêm hà», đệ nhất thắng cảnh bên sông Trà",
+      "maps_query": "Chùa Thiên Ấn — «Thiên Ấn niêm hà», đệ nhất thắng cảnh bên sông Trà, Quảng Ngãi, Việt Nam"
+    },
+    {
+      "tinh": "quang-ngai",
+      "tinh_ten": "Quảng Ngãi",
+      "ten": "Nhà rông Kon Klor — nhà rông Ba Na tiêu biểu của Kon Tum",
+      "maps_query": "Nhà rông Kon Klor — nhà rông Ba Na tiêu biểu của Kon Tum, Quảng Ngãi, Việt Nam"
+    },
+    {
+      "tinh": "quang-ngai",
+      "tinh_ten": "Quảng Ngãi",
+      "ten": "Nhà thờ gỗ Kon Tum (1913)",
+      "maps_query": "Nhà thờ gỗ Kon Tum, Quảng Ngãi, Việt Nam"
+    },
+    {
+      "tinh": "quang-ngai",
+      "tinh_ten": "Quảng Ngãi",
+      "ten": "Âm linh tự và mộ gió lính Hoàng Sa trên đảo Lý Sơn",
+      "maps_query": "Âm linh tự và mộ gió lính Hoàng Sa trên đảo Lý Sơn, Quảng Ngãi, Việt Nam"
+    },
+    {
+      "tinh": "quang-ninh",
+      "tinh_ten": "Quảng Ninh",
+      "ten": "Chùa Đồng trên đỉnh Yên Tử",
+      "maps_query": "Chùa Đồng trên đỉnh Yên Tử, Quảng Ninh, Việt Nam"
+    },
+    {
+      "tinh": "quang-ninh",
+      "tinh_ten": "Quảng Ninh",
+      "ten": "Đền Cửa Ông",
+      "maps_query": "Đền Cửa Ông, Quảng Ninh, Việt Nam"
+    },
+    {
+      "tinh": "quang-ninh",
+      "tinh_ten": "Quảng Ninh",
+      "ten": "Đình Trà Cổ — «cột mốc văn hoá» nơi địa đầu Tổ quốc",
+      "maps_query": "Đình Trà Cổ — «cột mốc văn hoá» nơi địa đầu Tổ quốc, Quảng Ninh, Việt Nam"
+    },
+    {
+      "tinh": "quang-ninh",
+      "tinh_ten": "Quảng Ninh",
+      "ten": "Bảo tàng – Thư viện Quảng Ninh bên bờ Vịnh Hạ Long",
+      "maps_query": "Bảo tàng – Thư viện Quảng Ninh bên bờ Vịnh Hạ Long, Quảng Ninh, Việt Nam"
+    },
+    {
+      "tinh": "quang-tri",
+      "tinh_ten": "Quảng Trị",
+      "ten": "Thành cổ Quảng Trị",
+      "maps_query": "Thành cổ Quảng Trị, Quảng Trị, Việt Nam"
+    },
+    {
+      "tinh": "quang-tri",
+      "tinh_ten": "Quảng Trị",
+      "ten": "Cụm di tích đôi bờ Hiền Lương – Bến Hải",
+      "maps_query": "Cụm di tích đôi bờ Hiền Lương – Bến Hải, Quảng Trị, Việt Nam"
+    },
+    {
+      "tinh": "quang-tri",
+      "tinh_ten": "Quảng Trị",
+      "ten": "Địa đạo Vịnh Mốc",
+      "maps_query": "Địa đạo Vịnh Mốc, Quảng Trị, Việt Nam"
+    },
+    {
+      "tinh": "quang-tri",
+      "tinh_ten": "Quảng Trị",
+      "ten": "Vương cung thánh đường Đức Mẹ La Vang",
+      "maps_query": "Vương cung thánh đường Đức Mẹ La Vang, Quảng Trị, Việt Nam"
+    },
+    {
+      "tinh": "quang-tri",
+      "tinh_ten": "Quảng Trị",
+      "ten": "Quảng Bình Quan và Luỹ Thầy (Đồng Hới)",
+      "maps_query": "Quảng Bình Quan và Luỹ Thầy, Quảng Trị, Việt Nam"
+    },
+    {
+      "tinh": "son-la",
+      "tinh_ten": "Sơn La",
+      "ten": "Nhà sàn truyền thống của người Thái",
+      "maps_query": "Nhà sàn truyền thống của người Thái, Sơn La, Việt Nam"
+    },
+    {
+      "tinh": "son-la",
+      "tinh_ten": "Sơn La",
+      "ten": "Di tích quốc gia đặc biệt Nhà tù Sơn La",
+      "maps_query": "Di tích quốc gia đặc biệt Nhà tù Sơn La, Sơn La, Việt Nam"
+    },
+    {
+      "tinh": "son-la",
+      "tinh_ten": "Sơn La",
+      "ten": "Nhà máy thuỷ điện Sơn La",
+      "maps_query": "Nhà máy thuỷ điện Sơn La, Sơn La, Việt Nam"
+    },
+    {
+      "tinh": "son-la",
+      "tinh_ten": "Sơn La",
+      "ten": "Tháp Mường Và (Sốp Cộp)",
+      "maps_query": "Tháp Mường Và, Sơn La, Việt Nam"
+    },
+    {
+      "tinh": "tay-ninh",
+      "tinh_ten": "Tây Ninh",
+      "ten": "Toà thánh Cao Đài Tây Ninh — công trình kiến trúc tôn giáo độc đáo kết hợp Đông – Tây",
+      "maps_query": "Toà thánh Cao Đài Tây Ninh — công trình kiến trúc tôn giáo độc đáo kết hợp Đông – Tây, Tây Ninh, Việt Nam"
+    },
+    {
+      "tinh": "tay-ninh",
+      "tinh_ten": "Tây Ninh",
+      "ten": "Quần thể chùa núi Bà Đen",
+      "maps_query": "Quần thể chùa núi Bà Đen, Tây Ninh, Việt Nam"
+    },
+    {
+      "tinh": "tay-ninh",
+      "tinh_ten": "Tây Ninh",
+      "ten": "Nhà Trăm Cột (Cần Đước, Long An)",
+      "maps_query": "Nhà Trăm Cột, Tây Ninh, Việt Nam"
+    },
+    {
+      "tinh": "tay-ninh",
+      "tinh_ten": "Tây Ninh",
+      "ten": "Lăng Nguyễn Huỳnh Đức (Tân An)",
+      "maps_query": "Lăng Nguyễn Huỳnh Đức, Tây Ninh, Việt Nam"
+    },
+    {
+      "tinh": "thai-nguyen",
+      "tinh_ten": "Thái Nguyên",
+      "ten": "Khu di tích quốc gia đặc biệt ATK Định Hóa",
+      "maps_query": "Khu di tích quốc gia đặc biệt ATK Định Hóa, Thái Nguyên, Việt Nam"
+    },
+    {
+      "tinh": "thai-nguyen",
+      "tinh_ten": "Thái Nguyên",
+      "ten": "Đền Đuổm dưới chân núi Đuổm",
+      "maps_query": "Đền Đuổm dưới chân núi Đuổm, Thái Nguyên, Việt Nam"
+    },
+    {
+      "tinh": "thai-nguyen",
+      "tinh_ten": "Thái Nguyên",
+      "ten": "Bảo tàng Văn hoá các dân tộc Việt Nam",
+      "maps_query": "Bảo tàng Văn hoá các dân tộc Việt Nam, Thái Nguyên, Việt Nam"
+    },
+    {
+      "tinh": "thai-nguyen",
+      "tinh_ten": "Thái Nguyên",
+      "ten": "Nhà sàn Tày ven hồ Ba Bể",
+      "maps_query": "Nhà sàn Tày ven hồ Ba Bể, Thái Nguyên, Việt Nam"
+    },
+    {
+      "tinh": "thanh-hoa",
+      "tinh_ten": "Thanh Hoá",
+      "ten": "Thành nhà Hồ — di sản văn hoá thế giới UNESCO (2011)",
+      "maps_query": "Thành nhà Hồ — di sản văn hoá thế giới UNESCO, Thanh Hoá, Việt Nam"
+    },
+    {
+      "tinh": "thanh-hoa",
+      "tinh_ten": "Thanh Hoá",
+      "ten": "Khu di tích quốc gia đặc biệt Lam Kinh",
+      "maps_query": "Khu di tích quốc gia đặc biệt Lam Kinh, Thanh Hoá, Việt Nam"
+    },
+    {
+      "tinh": "thanh-hoa",
+      "tinh_ten": "Thanh Hoá",
+      "ten": "Đền Bà Triệu (Hậu Lộc)",
+      "maps_query": "Đền Bà Triệu, Thanh Hoá, Việt Nam"
+    },
+    {
+      "tinh": "thanh-hoa",
+      "tinh_ten": "Thanh Hoá",
+      "ten": "Cầu Hàm Rồng bắc qua sông Mã",
+      "maps_query": "Cầu Hàm Rồng bắc qua sông Mã, Thanh Hoá, Việt Nam"
+    },
+    {
+      "tinh": "thanh-pho-ho-chi-minh",
+      "tinh_ten": "Thành phố Hồ Chí Minh",
+      "ten": "Chợ Bến Thành",
+      "maps_query": "Chợ Bến Thành, Thành phố Hồ Chí Minh, Việt Nam"
+    },
+    {
+      "tinh": "thanh-pho-ho-chi-minh",
+      "tinh_ten": "Thành phố Hồ Chí Minh",
+      "ten": "Nhà thờ Đức Bà",
+      "maps_query": "Nhà thờ Đức Bà, Thành phố Hồ Chí Minh, Việt Nam"
+    },
+    {
+      "tinh": "thanh-pho-ho-chi-minh",
+      "tinh_ten": "Thành phố Hồ Chí Minh",
+      "ten": "Bưu điện Thành phố",
+      "maps_query": "Bưu điện Thành phố, Thành phố Hồ Chí Minh, Việt Nam"
+    },
+    {
+      "tinh": "thanh-pho-ho-chi-minh",
+      "tinh_ten": "Thành phố Hồ Chí Minh",
+      "ten": "Dinh Độc Lập",
+      "maps_query": "Dinh Độc Lập, Thành phố Hồ Chí Minh, Việt Nam"
+    },
+    {
+      "tinh": "thanh-pho-ho-chi-minh",
+      "tinh_ten": "Thành phố Hồ Chí Minh",
+      "ten": "Bạch Dinh (Vũng Tàu)",
+      "maps_query": "Bạch Dinh, Thành phố Hồ Chí Minh, Việt Nam"
+    },
+    {
+      "tinh": "tuyen-quang",
+      "tinh_ten": "Tuyên Quang",
+      "ten": "Khu di tích quốc gia đặc biệt Tân Trào (đình Tân Trào, lán Nà Nưa, cây đa Tân Trào)",
+      "maps_query": "Khu di tích quốc gia đặc biệt Tân Trào, Tuyên Quang, Việt Nam"
+    },
+    {
+      "tinh": "tuyen-quang",
+      "tinh_ten": "Tuyên Quang",
+      "ten": "Cột cờ Lũng Cú — điểm cực Bắc",
+      "maps_query": "Cột cờ Lũng Cú — điểm cực Bắc, Tuyên Quang, Việt Nam"
+    },
+    {
+      "tinh": "tuyen-quang",
+      "tinh_ten": "Tuyên Quang",
+      "ten": "Dinh thự họ Vương (Sà Phìn, Đồng Văn)",
+      "maps_query": "Dinh thự họ Vương, Tuyên Quang, Việt Nam"
+    },
+    {
+      "tinh": "tuyen-quang",
+      "tinh_ten": "Tuyên Quang",
+      "ten": "Phố cổ Đồng Văn",
+      "maps_query": "Phố cổ Đồng Văn, Tuyên Quang, Việt Nam"
+    },
+    {
+      "tinh": "tuyen-quang",
+      "tinh_ten": "Tuyên Quang",
+      "ten": "Thành nhà Mạc bên sông Lô",
+      "maps_query": "Thành nhà Mạc bên sông Lô, Tuyên Quang, Việt Nam"
+    },
+    {
+      "tinh": "vinh-long",
+      "tinh_ten": "Vĩnh Long",
+      "ten": "Văn Thánh Miếu Vĩnh Long — một trong ba Văn Thánh Miếu của Nam Bộ",
+      "maps_query": "Văn Thánh Miếu Vĩnh Long — một trong ba Văn Thánh Miếu của Nam Bộ, Vĩnh Long, Việt Nam"
+    },
+    {
+      "tinh": "vinh-long",
+      "tinh_ten": "Vĩnh Long",
+      "ten": "Chùa Âng và quần thể hơn 140 ngôi chùa Khmer Trà Vinh",
+      "maps_query": "Chùa Âng và quần thể hơn 140 ngôi chùa Khmer Trà Vinh, Vĩnh Long, Việt Nam"
+    },
+    {
+      "tinh": "vinh-long",
+      "tinh_ten": "Vĩnh Long",
+      "ten": "Ao Bà Om — thắng cảnh cấp quốc gia",
+      "maps_query": "Ao Bà Om — thắng cảnh cấp quốc gia, Vĩnh Long, Việt Nam"
+    },
+    {
+      "tinh": "vinh-long",
+      "tinh_ten": "Vĩnh Long",
+      "ten": "Chùa Hang (Kompông Chrây, Trà Vinh)",
+      "maps_query": "Chùa Hang, Vĩnh Long, Việt Nam"
+    }
+  ]
+}
