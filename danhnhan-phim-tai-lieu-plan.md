@@ -44,8 +44,15 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 | 2 | 3D đẹp + động tự nhiên | Iron Man chọn: NHÚNG model Sketchfab CC + nâng cấp Three.js | 🔄 4 model CC nhúng xong (5333252); còn nâng cấp Three.js 5 model + hoạt cảnh |
 | 3 | Mở rộng danh nhân 4000 năm + thêm phim; **phim state → reviewed** | | ✅ rule (4a49944); mở rộng thêm = đợt sau |
 | 4 | Dòng thời gian 4000 năm (2879 TCN → nay) | 106 mốc có nguồn nhà nước | ✅ commit bbafc04 |
-| 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | ☐ CHƯA |
+| 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | 🔄 tô màu + NHÃN TỈNH xong (d366d08); nhãn sông/núi cần geodata → chưa |
 | 6 | Tính năng backlog còn lại | | ☐ |
+
+## Còn lại sau phiên (đợt tiếp)
+- #1: quét thêm ảnh Wikimedia Commons cho mục thiếu (pipeline validate_media sẵn).
+- #2: nâng cấp Three.js + hoạt cảnh cho 5 model chưa có bản CC (rồng/nón/vải/phở/chim).
+- #5: nhãn SÔNG/NÚI/địa danh cần dữ liệu GeoJSON điểm (chưa có) — hoặc dùng tab Địa danh (Maps) đã có.
+- #3: mở rộng thêm danh nhân (đợt lớn) — cân nhắc gánh nặng kiểm sử.
+- #6: rà tính năng backlog cũ (Bảo vật quốc gia pins, Nam tiến animation, overlay đợt 2, Taberd georef).
 
 ## Quy tắc mới (đã chốt)
 - Phim `kenh_loai=state` (VTV/QPVN/HTV/đài tỉnh/báo-thông tấn nhà nước) = KHÔNG cần người duyệt → `trang_thai=reviewed` (phim); tiểu sử vẫn có thể draft riêng.
