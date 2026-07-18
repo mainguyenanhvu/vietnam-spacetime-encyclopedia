@@ -149,6 +149,55 @@ let currentEra = ERAS.length - 1; // mặc định: 34 tỉnh hiện hành
 let hoveredId: number | string | undefined;
 let is3D = false;
 
+// #5 — tô màu phân biệt tỉnh + nhãn tên tỉnh (tự render).
+let showLabels = false;
+let colorMode: "default" | "ruc-ro" | "pastel" = "default";
+const PALETTES: Record<string, string[]> = {
+  "ruc-ro": ["#ef4444", "#f59e0b", "#eab308", "#22c55e", "#14b8a6", "#3b82f6", "#8b5cf6", "#ec4899", "#f97316", "#10b981"],
+  pastel: ["#fca5a5", "#fdba74", "#fde68a", "#86efac", "#5eead4", "#93c5fd", "#c4b5fd", "#f9a8d4", "#fdcfb4", "#6ee7b7"],
+};
+// Đảo/quần đảo (chủ quyền) luôn giữ màu đỏ/cam nổi bật; đất liền tô phân biệt theo id.
+function colorExprFor(era: Era): ExpressionSpecification {
+  if (colorMode === "default") return eraColorExpr(era);
+  const pal = PALETTES[colorMode];
+  return [
+    "match",
+    ["get", "loai"],
+    "quan-dao",
+    "#dc2626",
+    "dao",
+    "#ea580c",
+    ["at", ["%", ["id"], pal.length], ["literal", pal]],
+  ] as ExpressionSpecification;
+}
+function applyColorMode(mode: "default" | "ruc-ro" | "pastel"): void {
+  colorMode = mode;
+  const base = mode === "default" ? 0.25 : 0.62;
+  for (const era of ERAS) {
+    if (map.getLayer(`${era.id}-fill`)) {
+      map.setPaintProperty(`${era.id}-fill`, "fill-color", colorExprFor(era));
+      map.setPaintProperty(`${era.id}-fill`, "fill-opacity", [
+        "case",
+        ["boolean", ["feature-state", "hover"], false],
+        0.82,
+        base,
+      ]);
+    }
+    if (map.getLayer(`${era.id}-3d`)) map.setPaintProperty(`${era.id}-3d`, "fill-extrusion-color", colorExprFor(era));
+  }
+}
+function applyLabels(on: boolean): void {
+  showLabels = on;
+  ERAS.forEach((era, i) => {
+    if (map.getLayer(`${era.id}-label`))
+      map.setLayoutProperty(
+        `${era.id}-label`,
+        "visibility",
+        i === currentEra && !is3D && showLabels ? "visible" : "none",
+      );
+  });
+}
+
 map.on("load", () => {
   for (const era of ERAS) {
     map.addSource(era.id, {
@@ -188,6 +237,26 @@ map.on("load", () => {
         "fill-extrusion-height": HEIGHT_3D,
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.85,
+      },
+    });
+    // Nhãn tên tỉnh — TỰ RENDER từ GeoJSON của dự án (không mở nhãn basemap để
+    // giữ chủ quyền). Ẩn mặc định, bật qua điều khiển bản đồ. Đặt DƯỚI nhãn
+    // chủ quyền (thêm trước lớp chu-quyen-labels bên dưới).
+    map.addLayer({
+      id: `${era.id}-label`,
+      type: "symbol",
+      source: era.id,
+      layout: {
+        visibility: "none",
+        "text-field": ["coalesce", ["get", era.nameKey], ["get", "ten"]],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 4, 9, 8, 13],
+        "text-max-width": 8,
+      },
+      paint: {
+        "text-color": "#44403c",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1.4,
       },
     });
 
@@ -443,6 +512,11 @@ function setEra(index: number): void {
       "visibility",
       active && is3D ? "visible" : "none",
     );
+    map.setLayoutProperty(
+      `${era.id}-label`,
+      "visibility",
+      active && !is3D && showLabels ? "visible" : "none",
+    );
   });
   const label = document.getElementById("period-label");
   if (label) label.textContent = ERAS[index].label;
@@ -597,11 +671,20 @@ function buildLayerControl(): void {
       ${OVERLAYS.map(
         (o) => `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>`,
       ).join("")}
+    </div>
+    <strong>🎨 Kiểu bản đồ</strong>
+    <div class="group">
+      <label><input type="radio" name="palette" value="default" checked/> Mặc định</label>
+      <label><input type="radio" name="palette" value="ruc-ro"/> Tô màu phân biệt tỉnh</label>
+      <label><input type="radio" name="palette" value="pastel"/> Tô màu pastel</label>
+      <label><input type="checkbox" name="labels"/> Hiện tên tỉnh</label>
     </div>`;
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
     if (t.name === "era") setEra(Number(t.value));
     if (t.name === "overlay") void toggleOverlay(t.value, t.checked);
+    if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
+    if (t.name === "labels") applyLabels(t.checked);
   });
   document.getElementById("app")?.appendChild(el);
 }
