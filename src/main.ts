@@ -803,10 +803,16 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
 
   if (!isIsland) {
     const slug = slugify(name);
-    void Promise.all([loadProfile(name), loadLiterature()]).then(
-      ([profile, lib]) => {
+    void Promise.all([loadProfile(name), loadLiterature(), loadMedia()]).then(
+      ([profile, lib, media]) => {
         const slot = document.getElementById("profile-slot");
         if (!slot) return;
+        const imgs = media.filter((m) => m.slug === slug);
+        const gallery = imgs.length
+          ? `<details class="profile-section" open><summary>🖼️ Hình ảnh (${imgs.length})</summary>
+              <div class="media-gallery">${imgs.map(mediaImgHtml).join("")}</div>
+             </details>`
+          : "";
         const poems = [...lib.poems, ...lib.hcmWorks, ...lib.aboutHcm].filter(
           (p) => p.lien_quan_tinh.includes(slug),
         );
@@ -827,6 +833,7 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
           (profile
             ? profileHtml(profile)
             : `<p class="muted coming-soon">Hồ sơ bách khoa đầy đủ của tỉnh này đang được biên soạn.</p>`) +
+          gallery +
           related;
       },
     );
@@ -1031,6 +1038,66 @@ function baiHatHtml(b: BaiHat): string {
     ${b.ban_quyen ? `<p class="draft-badge">©️ ${esc(b.ban_quyen)} — chỉ nhúng, không chép lời.</p>` : ""}
     <details class="sources"><summary>📚 Nguồn</summary>${list(b.nguon)}</details>
   </details>`;
+}
+
+// ---------------------------------------------------------------------------
+// 🖼️ R2 — Thư viện ảnh theo tỉnh (public/data/media/images.json).
+// Chỉ ảnh tự do (PD/CC0/CC-BY/CC-BY-SA hotlink) hoặc minh hoạ AI gắn nhãn;
+// cổng license media ép trong CI (scripts/validate_media.mjs).
+// ---------------------------------------------------------------------------
+interface MediaImage {
+  id: string;
+  slug: string;
+  muc: string;
+  ten: string;
+  mo_ta?: string;
+  url: string;
+  nguon?: string[];
+  tac_gia?: string;
+  giay_phep: string;
+  ghi_chu?: string;
+}
+
+const MUC_LABEL: Record<string, string> = {
+  "dac-san": "🍜 Đặc sản",
+  "kien-truc": "🏛️ Kiến trúc",
+  "trang-phuc": "👘 Trang phục",
+  "danh-thang": "🏞️ Danh thắng",
+  "le-hoi": "🎏 Lễ hội",
+  "san-vat": "🧺 Sản vật",
+};
+
+const LICENSE_LABEL: Record<string, string> = {
+  "public-domain": "Phạm vi công cộng",
+  cc0: "CC0",
+  "cc-by": "CC BY",
+  "cc-by-sa": "CC BY-SA",
+  "ai-generated": "Minh hoạ AI",
+};
+
+let mediaCache: MediaImage[] | null = null;
+
+async function loadMedia(): Promise<MediaImage[]> {
+  if (mediaCache) return mediaCache;
+  const data = await fetchJson<{ items: MediaImage[] }>("data/media/images.json");
+  mediaCache = data?.items ?? [];
+  return mediaCache;
+}
+
+function mediaImgHtml(m: MediaImage): string {
+  const lic = LICENSE_LABEL[m.giay_phep] ?? m.giay_phep;
+  const credit =
+    m.giay_phep === "ai-generated"
+      ? `Minh hoạ AI (không dựa trên tác phẩm có bản quyền cụ thể)`
+      : `${m.tac_gia ? `${esc(m.tac_gia)} · ` : ""}${lic}${
+          m.nguon?.length ? ` · ${m.nguon.map(esc).join(" · ")}` : ""
+        }`;
+  return `<figure class="media-fig">
+    <img loading="lazy" src="${esc(m.url)}" alt="${esc(m.ten)}" />
+    <figcaption>${MUC_LABEL[m.muc] ?? ""} <b>${esc(m.ten)}</b>${
+      m.mo_ta ? ` — ${esc(m.mo_ta)}` : ""
+    }<br/><span class="muted">${credit}</span></figcaption>
+  </figure>`;
 }
 
 // ---------------------------------------------------------------------------

@@ -841,3 +841,35 @@ body.kid-mode #topbar {
   border: 0;
 }
 /* === /R7 focus + R4 model 3D + R9 nhúng nhạc === */
+
+/* === R2 thư viện ảnh === */
+.media-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+.media-fig {
+  margin: 0;
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fafaf9;
+}
+.media-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: cover;
+}
+.media-fig figcaption {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+@media (min-width: 520px) {
+  .media-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* === /R2 thư viện ảnh === */

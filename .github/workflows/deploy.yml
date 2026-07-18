@@ -30,6 +30,8 @@ jobs:
         run: node scripts/validate_provinces.mjs
       - name: Validate thư viện văn học (nguồn chính thống, bản quyền)
         run: node scripts/validate_literature.mjs
+      - name: Validate manifest ảnh (cổng license media)
+        run: node scripts/validate_media.mjs
       - run: npm run build
         env:
           BASE_PATH: /vietnam-spacetime-encyclopedia/
