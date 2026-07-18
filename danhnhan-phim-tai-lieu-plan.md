@@ -35,8 +35,22 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 5. ⚠️ Caveat từ agent: WebSearch hết quota giữa chừng → nhiều nguồn là tên cơ quan (không deep-link) + đối chiếu Wikipedia → GIỮ draft, cần người soát.
 
 ## Việc người dùng còn chờ (khác YouTube)
-- «Dùng Claude Design sinh ảnh» — CHƯA bắt đầu.
-- «Hỏi từng câu để kiểm thử tính năng + tiêu chuẩn» — CHƯA bắt đầu (interactive).
+- ✅ Kiểm thử 4 test — Iron Man xác nhận ĐẠT hết (2026-07-18).
+
+## ĐỢT 2 — 6 hạng mục mới (Iron Man 2026-07-18)
+| # | Việc | Ghi chú pháp lý/khả thi | Trạng thái |
+|---|---|---|---|
+| 1 | Ảnh thật địa danh/nhân vật | ⚠️ «công cộng» ≠ hết bản quyền; CHỈ Commons license tự do + nhúng Maps/YouTube; KHÔNG tải ảnh báo/web | ☐ quét Commons tối đa |
+| 2 | 3D đẹp + động tự nhiên | ⚠️ Claude Design KHÔNG dựng 3D; không có text-to-3D. Iron Man chọn: NHÚNG model Sketchfab CC (iframe) + nâng cấp Three.js thủ công + hoạt cảnh thủ tục | ☐ |
+| 3 | Mở rộng danh nhân 4000 năm + thêm phim; **phim kenh_loai=state → tự động reviewed** | «đủ toàn bộ» là vô hạn → mở rộng theo đợt lớn có nguồn | 🔄 agent nền + rule |
+| 4 | Dòng thời gian 4000 năm (2879 TCN → nay) | gắn hệ era; cần dataset sự kiện quốc gia | 🔄 agent nền |
+| 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn phải TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | ☐ |
+| 6 | Tính năng backlog còn lại | | ☐ |
+
+## Quy tắc mới (đã chốt)
+- Phim `kenh_loai=state` (VTV/QPVN/HTV/đài tỉnh/báo-thông tấn nhà nước) = KHÔNG cần người duyệt → `trang_thai=reviewed` (phim); tiểu sử vẫn có thể draft riêng.
+- 3D: ưu tiên nhúng Sketchfab CC (license tự do), fallback Three.js thủ công + hoạt cảnh.
+- Ảnh: chỉ Commons/PD/CC + nhúng; tuyệt đối không rehost ảnh có bản quyền.
 
 ## Ràng buộc (bắt buộc)
 - Chỉ nhúng youtube-nocookie, video đã kiểm oEmbed=200.
