@@ -1011,3 +1011,132 @@ body.kid-mode #topbar {
   color: #fef3c7 !important;
 }
 /* === /R8 sa đồ chiến dịch + R6 hành trình lịch sử === */
+
+/* === Hub «Việt Nam trong tôi» — danh nhân/phim tài liệu + nhạc yêu nước === */
+#quocgia-panel {
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(940px, 96vw);
+  max-height: calc(100% - 6rem);
+  overflow-y: auto;
+  background: #fffbeb;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
+  padding: 1rem 1.1rem 1.4rem;
+  z-index: 20;
+}
+#quocgia-close {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.qg-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.2rem 0 0.8rem;
+  flex-wrap: wrap;
+}
+.qg-tab {
+  border: 1px solid #b45309;
+  background: #fff7ed;
+  color: #b45309;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.qg-tab.active {
+  background: #b45309;
+  color: #fff;
+}
+.qg-note {
+  font-size: 0.8rem;
+  color: #92400e;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: 6px;
+  padding: 0.45rem 0.65rem;
+  margin: 0 0 0.8rem;
+}
+.qg-section {
+  margin-bottom: 1.4rem;
+}
+.qg-section h3 {
+  font-size: 1.05rem;
+  border-bottom: 2px solid #fde68a;
+  padding-bottom: 0.3rem;
+  margin: 0.6rem 0;
+}
+.qg-select-label {
+  display: block;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  font-size: 0.92rem;
+}
+.qg-select-label select {
+  margin-left: 0.4rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d6d3d1;
+  font-size: 0.92rem;
+  max-width: 100%;
+}
+.qg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.9rem;
+}
+.qg-card {
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem 0.7rem;
+  background: #fff;
+}
+.qg-card h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.98rem;
+  line-height: 1.3;
+}
+.qg-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+}
+.qg-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.qg-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+.qg-badge {
+  font-size: 0.72rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background: #f5f5f4;
+  color: #57534e;
+  border: 1px solid #e7e5e4;
+}
+.qg-badge-state { background: #dcfce7; color: #166534; border-color: #bbf7d0; }
+.qg-badge-khac { background: #fef2f2; color: #991b1b; border-color: #fecaca; }
+.qg-draft { background: #fef9c3; color: #854d0e; border-color: #fde68a; }
+.qg-card-multi .qg-version { margin-top: 0.5rem; }
+.qg-version-by { font-size: 0.82rem; font-weight: 600; margin: 0.2rem 0; color: #78716c; }
+.qg-multi-note { font-size: 0.78rem; color: #b45309; margin: 0 0 0.3rem; }
+/* === /Hub «Việt Nam trong tôi» === */
