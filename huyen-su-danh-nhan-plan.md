@@ -32,8 +32,11 @@ Overlay mới `huyen-su-khai-quoc.json`. ~10 mục, neo vào nơi thờ:
 ### ✅ Đợt 2 — Anh hùng chống Bắc thuộc & mở nền tự chủ  ← XONG (commit sau 68d3b67)
 Overlay `khoi-nghia-bac-thuoc.json`, 8 mục neo nơi thờ: Hai Bà Trưng (Mê Linh), Bà Triệu (Hậu Lộc), Lý Nam Đế/Vạn Xuân (Phổ Yên), Triệu Việt Vương (Dạ Trạch), Mai Hắc Đế (Nam Đàn), Phùng Hưng + Ngô Quyền (Đường Lâm — «một ấp hai vua», tách toạ độ), Khúc Thừa Dụ (Ninh Giang). Nguồn ĐVSKTT + cổng nhà nước; 3 reviewed, 5 draft. Đã thêm vào STRICT_SOURCE.
 
-### ⏳ Đợt 3 — Trạng nguyên/tiến sĩ + thầy giáo + quan thanh liêm
-Chu Văn An, Mạc Đĩnh Chi, Nguyễn Trãi, Nguyễn Bỉnh Khiêm, Lê Quý Đôn, Nguyễn Khuyến; Văn Miếu – 82 bia tiến sĩ (Ký ức Thế giới UNESCO). Quan thanh liêm: Tô Hiến Thành, Nguyễn Công Trứ…
+### ✅ Đợt 3 — Khoa bảng + thầy giáo + quan thanh liêm  ← XONG
+Overlay `khoa-bang-danh-nhan.json`, 9 mục: Văn Miếu – Quốc Tử Giám (82 bia tiến sĩ, UNESCO), Chu Văn An («Vạn thế sư biểu»), Mạc Đĩnh Chi (Lưỡng quốc Trạng nguyên), Nguyễn Trãi (danh nhân văn hoá thế giới), Nguyễn Bỉnh Khiêm (Trạng Trình), Lê Quý Đôn, Lê Văn Hưu (sử gia đầu tiên), Nguyễn Khuyến (Tam Nguyên Yên Đổ), Nguyễn Công Trứ (quan thanh liêm/khai hoang). Nguồn ĐVSKTT/Đại Nam Thực Lục + cổng nhà nước; 3 reviewed, 6 draft. Sửa toạ độ Mạc Đĩnh Chi (agent lệch ~13km). Thêm STRICT_SOURCE.
+
+### ✅ Dọn Wikipedia (theo cảnh báo Iron Man 2026-07-19)
+Gỡ 25 link `vi.wikipedia.org` khỏi `di-tich-qgdb.json` (mỗi mục giữ nguồn Cục Di sản). Mọi overlay danh nhân mới KHÔNG dùng Wikipedia làm nguồn nội dung — chỉ chính sử + cổng nhà nước.
 
 ### ⏳ Đợt 4 — Thần linh, thành hoàng, phong tục/trang phục, folklore vùng
 Thành hoàng tiêu biểu; tín ngưỡng thờ Mẫu (DSVH nhân loại UNESCO); đổi thay trang phục (áo giao lĩnh→áo tứ thân→áo dài); ca dao/tục ngữ gắn địa danh.

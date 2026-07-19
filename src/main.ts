@@ -970,6 +970,39 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
     },
   },
+  {
+    id: "khoa-bang-danh-nhan",
+    label: "📜 Khoa bảng · thầy giáo · quan thanh liêm",
+    file: "data/overlays/khoa-bang-danh-nhan.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "khoa-bang",
+      "#2563eb",
+      "thay-giao",
+      "#0d9488",
+      "danh-nhan-van-hoa",
+      "#6366f1",
+      "quan-thanh-liem",
+      "#15803d",
+      "#2563eb",
+    ],
+    nguon:
+      "Đại Việt Sử Ký Toàn Thư · Đại Nam Thực Lục · Phủ Biên Tạp Lục · Cục Di sản Văn hoá (dsvh.gov.vn) · vanmieu.gov.vn",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        thoi_ky?: string;
+        noi_tho?: string;
+        cong_trang?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();
