@@ -1554,6 +1554,33 @@ const OVERLAYS: OverlayConf[] = [
       "Cục Di sản văn hóa · Sở VHTT các tỉnh · Cục Bản quyền tác giả · cổng tỉnh",
     popup: personOverlayPopup,
   },
+  {
+    id: "khoa-bang-bo-sung",
+    label: "📜 Khoa bảng · tiến sĩ · trạng nguyên (bổ sung)",
+    file: "data/overlays/khoa-bang-bo-sung.json",
+    circleColor: "#0d9488",
+    nguon:
+      "Cục Bản quyền tác giả · Viện Hán Nôm · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "anh-hung-liet-si-bo-sung",
+    label: "🎖️ Anh hùng · liệt sĩ · tình báo (bổ sung)",
+    file: "data/overlays/anh-hung-liet-si-bo-sung.json",
+    circleColor: "#dc2626",
+    nguon:
+      "Báo QĐND · Báo Công an Nhân dân · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "vua-chua-bo-sung",
+    label: "👑 Vua · chúa (bổ sung — Trần · Lê · Mạc · Trịnh–Nguyễn)",
+    file: "data/overlays/vua-chua-bo-sung.json",
+    circleColor: "#a16207",
+    nguon:
+      "Cục Di sản văn hóa · Khu di tích Lam Kinh · Trung tâm Bảo tồn Di tích Cố đô Huế · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
