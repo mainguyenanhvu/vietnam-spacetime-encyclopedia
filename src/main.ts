@@ -1581,6 +1581,33 @@ const OVERLAYS: OverlayConf[] = [
       "Cục Di sản văn hóa · Khu di tích Lam Kinh · Trung tâm Bảo tồn Di tích Cố đô Huế · cổng tỉnh",
     popup: personOverlayPopup,
   },
+  {
+    id: "hoang-toc-tieu-bieu",
+    label: "👸 Hoàng hậu · thái hậu · công chúa tiêu biểu",
+    file: "data/overlays/hoang-toc-tieu-bieu.json",
+    circleColor: "#c026d3",
+    nguon:
+      "Cục Di sản văn hóa · Trung tâm Bảo tồn Di tích Cố đô Huế · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "thanh-hoang-vung-mien",
+    label: "🏯 Thành hoàng · thánh mẫu · danh thần vùng miền",
+    file: "data/overlays/thanh-hoang-vung-mien.json",
+    circleColor: "#9333ea",
+    nguon:
+      "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "nha-giao-hoc-gia",
+    label: "📚 Nhà giáo · học giả · nhà khoa học (cận–hiện đại)",
+    file: "data/overlays/nha-giao-hoc-gia.json",
+    circleColor: "#0284c7",
+    nguon:
+      "Báo Nhân Dân · Báo Đại biểu Nhân dân · Giáo dục & Thời đại · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();

@@ -66,3 +66,25 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 - Tên đường/tên phố (đặt theo danh nhân) — cần chốt cách thể hiện.
 - Làm giàu «Cương vực Việt cổ» (georef bản đồ cổ) — track địa lý, khó, tách riêng.
 - Nhân vật văn hoá/khoa học còn thiếu; anh hùng lao động các ngành.
+
+## 📓 Nhật ký thực thi (state resumable — cập nhật mỗi sóng)
+
+> Ngân hàng tên đã có: `existing_entities.txt` (scratchpad). **WebSearch cạn phiên 2026-07-20**
+> → agent định tuyến discovery qua **skill `web-crawl` render `google.com/search`** (ổn định
+> nhất, gần như không CAPTCHA), fallback DDG-lite. Tail-discovery sâu nên để **phiên mới**
+> (WebSearch reset). Mọi mục mới = `draft`, chờ Iron Man kiểm sử (§9).
+
+| Sóng | Commit | Lớp phủ mới | +Mục | DB names |
+|---|---|---|---|---|
+| Backfill URL | `cf64291` | (nâng 31 draft→reviewed) | — | 476 |
+| 1 | `8cbf159` | anh-hung-llvt-cand · tuong-linh-hien-dai · tien-si-tieu-bieu · quan-thanh-liem · me-vnah-ahld · chien-dich-tran-danh-bo-sung | 91 | 567 |
+| 2 | `86d46e8` | vua-hoang-de · vo-tuong-trung-dai · van-nghe-si-khoa-hoc | 44 | 611 |
+| 3 | `ebbd812` | tran-danh-khoi-nghia-bo-sung-2 · chi-si-cach-mang · to-nghe-danh-than | 50 | 661 |
+| 4 | `2b36a50` | khoa-bang-bo-sung · anh-hung-liet-si-bo-sung · vua-chua-bo-sung | 46 | 707 |
+| 5 | (this) | hoang-toc-tieu-bieu · thanh-hoang-vung-mien · nha-giao-hoc-gia | 50 | 757 |
+
+**Việc cần người (Iron Man) khi có thời gian:**
+- Duyệt §9 & nâng `draft`→`reviewed` (đặc biệt nội dung chiến tranh, chủ đề nhạy cảm).
+- Soát toạ độ: nhiều mục sóng 2–4 ở cấp xã/huyện (`trung`/`thap`) — cần geocode chính xác đền/lăng/khu lưu niệm trước khi bỏ badge draft.
+- Backlog rẻ: thêm vua Trần/chúa Trịnh còn lại (cùng trang đền Đông Triều/Lam Kinh đã xác minh).
+- Quyết định: mô hình hiển thị **tên đường/phố**; ưu tiên **làm giàu bản đồ Xích Quỷ**?
