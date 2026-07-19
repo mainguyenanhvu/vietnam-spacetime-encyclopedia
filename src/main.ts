@@ -909,6 +909,38 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/>${esc(String(o.loai ?? ""))}${o.dot ? ` · công nhận đợt năm ${o.dot}` : ""}<br/>📍 ${esc(String(o.noi_luu_giu ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}`;
     },
   },
+  {
+    id: "huyen-su-khai-quoc",
+    label: "🐉 Huyền sử khai quốc · Tứ bất tử · Hải đội Hoàng Sa",
+    file: "data/overlays/huyen-su-khai-quoc.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "huyen-su-khai-quoc",
+      "#b91c1c",
+      "tu-bat-tu",
+      "#7c3aed",
+      "chu-quyen",
+      "#dc2626",
+      "#b91c1c",
+    ],
+    nguon:
+      "Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái · Việt Điện U Linh · Phủ Biên Tạp Lục · Cục Di sản Văn hoá (dsvh.gov.vn)",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        thoi_ky?: string;
+        noi_tho?: string;
+        cong_trang?: string;
+        do_tin_cay_toa_do?: string;
+        trang_thai?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();
