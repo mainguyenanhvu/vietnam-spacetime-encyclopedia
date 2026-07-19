@@ -3,8 +3,33 @@
      xuống 2 hàng khi cửa sổ hẹp → các panel nổi phải bám theo, không dùng số
      cứng (trước đây top:3.5rem che mất hàng nút khi topbar cao 83px). */
   --topbar-h: 3.5rem;
-  --panel-top: calc(var(--topbar-h) + 0.5rem);
+  --panel-top: calc(var(--topbar-h) + 0.75rem);
   --panel-maxh: calc(100% - var(--topbar-h) - 4.5rem);
+
+  /* ── Hệ thống thiết kế (2026-07-19) — bản sắc sơn mài đỏ · thếp vàng ── */
+  --c-lac-900: #4a0d0d;   /* sơn mài sẫm */
+  --c-lac-800: #6d1414;
+  --c-lac-700: #8b1a1a;
+  --c-lac-600: #a52222;
+  --c-gold-500: #d4a24e;  /* thếp vàng */
+  --c-gold-300: #f2d399;
+  --c-cream: #fffdf7;
+  --c-ink: #2b2320;       /* mực nâu đậm */
+  --c-ink-soft: #6b5f57;
+  --c-line: rgba(120, 90, 60, 0.18);
+
+  /* Nền panel kính mờ (glass) */
+  --glass-bg: rgba(255, 253, 247, 0.82);
+  --glass-border: rgba(255, 255, 255, 0.55);
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --radius-pill: 999px;
+  --shadow-1: 0 2px 8px rgba(43, 35, 32, 0.1);
+  --shadow-2: 0 10px 32px -6px rgba(43, 35, 32, 0.28);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --font: "Segoe UI Variable", "Segoe UI", Inter, system-ui, -apple-system, "Roboto",
+    "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -17,7 +42,10 @@ html,
 body,
 #app {
   height: 100%;
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: var(--c-ink);
 }
 
 #app {
@@ -31,43 +59,59 @@ body,
   justify-content: space-between;
   gap: 0.75rem;
   flex-wrap: wrap;
-  padding: 0.6rem 1rem;
-  background: #7f1d1d;
-  color: #fef3c7;
+  padding: 0.65rem 1.15rem;
+  background: linear-gradient(135deg, var(--c-lac-800) 0%, var(--c-lac-900) 100%);
+  color: var(--c-gold-300);
+  border-bottom: 1px solid rgba(212, 162, 78, 0.35);
   /* Luôn vẽ trên các panel nổi (z-index 10–20) để không bao giờ bị che. */
   position: relative;
   z-index: 30;
+  box-shadow: 0 2px 16px rgba(74, 13, 13, 0.35);
 }
 
 #topbar-nav {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.45rem;
+  flex-wrap: wrap;
 }
 
 #topbar-nav button {
-  border: 1px solid #fef3c7;
-  background: transparent;
-  color: #fef3c7;
-  border-radius: 6px;
-  padding: 0.25rem 0.6rem;
+  border: 1px solid rgba(242, 211, 153, 0.5);
+  background: rgba(255, 253, 247, 0.06);
+  color: var(--c-gold-300);
+  border-radius: var(--radius-pill);
+  padding: 0.32rem 0.8rem;
   cursor: pointer;
   font-size: 0.85rem;
+  font-weight: 500;
+  transition: transform 0.16s var(--ease), background 0.16s var(--ease),
+    color 0.16s var(--ease), box-shadow 0.16s var(--ease);
 }
 
-#topbar-nav button:hover,
+#topbar-nav button:hover {
+  background: rgba(242, 211, 153, 0.18);
+  transform: translateY(-1px);
+}
+
 #topbar-nav button.active {
-  background: #fef3c7;
-  color: #7f1d1d;
+  background: var(--c-gold-500);
+  color: var(--c-lac-900);
+  border-color: var(--c-gold-500);
+  box-shadow: 0 3px 12px rgba(212, 162, 78, 0.45);
 }
 
 #topbar h1 {
-  font-size: 1.1rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--c-cream);
 }
 
 #topbar .subtitle {
   font-weight: 400;
-  font-size: 0.85rem;
-  opacity: 0.85;
+  font-size: 0.82rem;
+  opacity: 0.82;
+  color: var(--c-gold-300);
 }
 
 #map {
@@ -1292,3 +1336,222 @@ body.kid-mode #topbar {
   font-size: 0.78rem !important;
 }
 /* === /#6 === */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   LỚP GIAO DIỆN HIỆN ĐẠI (2026-07-19) — đại tu #6.
+   Ghi đè phần "chrome" dùng chung (panel nổi, nút, control, popup) bằng
+   ngôn ngữ thiết kế token ở :root: kính mờ, bo tròn lớn, bóng mềm, chuyển
+   động nhẹ. KHÔNG đụng logic render bản đồ / chủ quyền.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* Panel nổi — kính mờ thống nhất */
+#province-panel,
+#layer-control,
+#library-panel,
+#game-panel,
+#quiz-panel,
+#story-panel,
+#olympia-panel,
+#namtien-panel {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(1.25);
+  backdrop-filter: blur(14px) saturate(1.25);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-2);
+  color: var(--c-ink);
+  animation: panel-in 0.28s var(--ease) both;
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.985);
+  }
+}
+/* Panel Nam tiến neo giữa dưới — giữ đúng gốc toạ độ khi xuất hiện */
+#namtien-panel {
+  animation: namtien-in 0.28s var(--ease) both;
+}
+@keyframes namtien-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Nút đóng — tròn, phản hồi hover */
+#panel-close,
+#library-close,
+#game-close,
+#quiz-close,
+#story-close,
+#olympia-close,
+#namtien-close {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-pill);
+  color: var(--c-ink-soft);
+  line-height: 1;
+  transition: background 0.16s var(--ease), color 0.16s var(--ease),
+    transform 0.16s var(--ease);
+}
+#panel-close:hover,
+#library-close:hover,
+#game-close:hover,
+#quiz-close:hover,
+#story-close:hover,
+#olympia-close:hover,
+#namtien-close:hover {
+  background: rgba(139, 26, 26, 0.1);
+  color: var(--c-lac-700);
+  transform: rotate(90deg);
+}
+
+/* Control lớp bản đồ — nhóm gọn, nhãn dễ bấm */
+#layer-control {
+  padding: 0.95rem 1rem;
+  font-size: 0.86rem;
+}
+#layer-control strong {
+  color: var(--c-lac-700);
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+}
+#layer-control .group {
+  gap: 0.42rem;
+  padding: 0.35rem 0 0.7rem;
+  border-bottom: 1px solid var(--c-line);
+  margin-bottom: 0.35rem;
+}
+#layer-control .group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#layer-control label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.24rem 0.42rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.14s var(--ease);
+}
+#layer-control label:hover {
+  background: rgba(139, 26, 26, 0.06);
+}
+
+/* Form control — tông sơn mài */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--c-lac-700);
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+input[type="range"] {
+  accent-color: var(--c-lac-700);
+  height: 4px;
+  cursor: pointer;
+}
+
+/* Vòng focus rõ ràng cho bàn phím (a11y) */
+:focus-visible {
+  outline: 2px solid var(--c-gold-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Thanh cuộn mảnh trong panel */
+#province-panel,
+#library-panel,
+#game-panel,
+#quiz-panel,
+#story-panel,
+#olympia-panel,
+#namtien-panel {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 26, 26, 0.35) transparent;
+}
+#province-panel::-webkit-scrollbar,
+#library-panel::-webkit-scrollbar,
+#game-panel::-webkit-scrollbar,
+#quiz-panel::-webkit-scrollbar,
+#story-panel::-webkit-scrollbar,
+#olympia-panel::-webkit-scrollbar,
+#namtien-panel::-webkit-scrollbar {
+  width: 8px;
+}
+#province-panel::-webkit-scrollbar-thumb,
+#library-panel::-webkit-scrollbar-thumb,
+#game-panel::-webkit-scrollbar-thumb,
+#quiz-panel::-webkit-scrollbar-thumb,
+#story-panel::-webkit-scrollbar-thumb,
+#olympia-panel::-webkit-scrollbar-thumb,
+#namtien-panel::-webkit-scrollbar-thumb {
+  background: rgba(139, 26, 26, 0.32);
+  border-radius: var(--radius-pill);
+}
+
+/* Thanh dòng thời gian — dải mực nâu hiện đại */
+#timeline-bar {
+  background: linear-gradient(180deg, #241d1a 0%, #1c1917 100%);
+  border-top: 1px solid rgba(212, 162, 78, 0.22);
+  padding: 0.6rem 1.15rem;
+}
+#period-label {
+  color: var(--c-gold-300);
+  font-weight: 500;
+}
+
+/* Popup MapLibre — bo tròn, bóng mềm, mũi nhọn ăn theo nền */
+.maplibregl-popup-content {
+  border-radius: var(--radius-sm) !important;
+  box-shadow: var(--shadow-2) !important;
+  padding: 0.7rem 0.85rem !important;
+  border: 1px solid var(--glass-border);
+  font-family: var(--font);
+}
+.maplibregl-popup-tip {
+  border-top-color: var(--c-cream) !important;
+  border-bottom-color: var(--c-cream) !important;
+}
+.maplibregl-popup-close-button {
+  font-size: 1.15rem;
+  color: var(--c-ink-soft);
+  padding: 0 0.35rem;
+}
+
+/* Panel Nam tiến — nhấn tiến trình bằng dải màu Bắc→Nam ở tiêu đề */
+#namtien-content h2 {
+  color: var(--c-lac-700);
+}
+.namtien-controls button {
+  border-radius: var(--radius-pill) !important;
+  transition: transform 0.16s var(--ease), background 0.16s var(--ease);
+}
+.namtien-controls button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+/* Tôn trọng người dùng tắt hiệu ứng chuyển động */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  #province-panel,
+  #layer-control,
+  #library-panel,
+  #game-panel,
+  #quiz-panel,
+  #story-panel,
+  #olympia-panel,
+  #namtien-panel {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+/* === /LỚP GIAO DIỆN HIỆN ĐẠI === */
