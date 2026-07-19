@@ -1301,6 +1301,91 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">Khoa ${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
     },
   },
+  {
+    id: "khoi-nghia-khang-chien",
+    label: "🔥 Khởi nghĩa & kháng chiến (chống Pháp–Mỹ · cận-hiện đại)",
+    file: "data/overlays/khoi-nghia-khang-chien.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "trung-dai", "#b45309",
+      "chong-phap", "#dc2626",
+      "cach-mang", "#b91c1c",
+      "chong-my", "#ca8a04",
+      "#dc2626",
+    ],
+    nguon:
+      "Báo QĐND (qdnd.vn) · Bảo tàng Lịch sử Quốc gia · Cục Di sản Văn hoá · Báo điện tử Đảng CSVN · Báo Nhân Dân",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        nam_hien_thi?: string;
+        ket_qua?: string;
+        chi_huy?: string;
+        dia_diem?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ địa điểm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}${o.chi_huy ? " · " + esc(o.chi_huy) : ""}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.ket_qua ? `<br/><span style="color:#57534e">${esc(o.ket_qua)}</span>` : ""}${tc}`;
+    },
+  },
+  {
+    id: "danh-nhan-van-hoa-can-hien-dai",
+    label: "📚 Danh nhân văn hoá · khoa học · chí sĩ (TK 19–20)",
+    file: "data/overlays/danh-nhan-van-hoa-can-hien-dai.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "chi-si", "#b91c1c",
+      "khoa-hoc-y", "#0d9488",
+      "van-nghe", "#7c3aed",
+      "hoc-gia", "#ca8a04",
+      "#b91c1c",
+    ],
+    nguon:
+      "Báo Nhân Dân · Cổng TTĐT Chính phủ · Cục Di sản Văn hoá · Bảo tàng Lịch sử Quốc gia · Sức khoẻ & Đời sống (Bộ Y tế)",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        nam_hien_thi?: string;
+        mo_ta?: string;
+        dia_diem?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ quê/khu lưu niệm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+    },
+  },
+  {
+    id: "thanh-hoang-danh-than",
+    label: "🏯 Thành hoàng & danh thần (đền · đình thờ)",
+    file: "data/overlays/thanh-hoang-danh-than.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "thanh-hoang", "#9333ea",
+      "#9333ea",
+    ],
+    nguon:
+      "Cục Du lịch Quốc gia · Cổng TTĐT tỉnh Quảng Ninh · Bảo tàng Lịch sử Quốc gia · Sở Du lịch Ninh Bình · Báo An Giang · Cổng du lịch Bắc Ninh",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        nam_hien_thi?: string;
+        mo_ta?: string;
+        dia_diem?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ đền/đình độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();
