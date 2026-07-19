@@ -25,7 +25,12 @@
 ## Tiến độ (2026-07-19)
 - ✅ **Sóng 1** — commit `39d3d89`: #1 to-color, #2 đường sông LineString (19 sông + 26 núi), #5 Nam tiến giảm opacity + viền mặt trận.
 - ✅ **Sóng 2** — commit `312e06b`: #6 đại tu UI (design token, topbar gradient, panel kính mờ, popup/timeline/scrollbar hiện đại).
-- 🔄 **Sóng 3** — #4 overlay `chien-dich-tran-danh.json` XONG (17 trận/khởi nghĩa 938–1975, agent soát toạ độ; 9 reviewed, 8 draft). #3 overlay `danh-nhan-cac-trieu.json` đang chờ agent soát toạ độ nơi thờ (12 danh nhân các triều/văn hoá/y học).
+- ✅ **Sóng 3** — commit `05bec73`: #4 `chien-dich-tran-danh.json` (17 trận/khởi nghĩa 938–1975; 9 reviewed, 8 draft) + #3 `danh-nhan-cac-trieu.json` (11 danh nhân các triều/văn hoá/y học; 4 reviewed, 7 draft). Toạ độ soát qua 2 research agent (OSM Nominatim). Cả 2 sạch Wikipedia, vào STRICT_SOURCE.
+
+## Còn lại / gated (nghiệm thu cuối)
+- **Render**: sandbox chặn WebGL → Iron Man kiểm mắt 6 điểm trên production (màu tỉnh, đường sông, Nam tiến, UI, 2 overlay mới).
+- **Toạ độ draft cần soát POI**: nhiều mục trung/thấp (Nguyễn Du, Lê Hữu Trác, Hồ Xuân Hương, Đào Duy Từ, Tân Sở, Rạch Gầm, Bãi Sậy, Hương Khê…) — chờ nâng cấp qua cổng Sở VHTTDL/Google Maps.
+- **Mở rộng tiếp #3/#4** nếu Iron Man muốn: còn nhiều danh nhân/trận đánh có thể bổ sung theo đợt.
 
 ## Tiêu chí done
 - `node scripts/validate_overlays.mjs` + 9 validator xanh; `npm run build` xanh.
