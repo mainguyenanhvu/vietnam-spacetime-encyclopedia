@@ -81,7 +81,8 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | 2 | `86d46e8` | vua-hoang-de · vo-tuong-trung-dai · van-nghe-si-khoa-hoc | 44 | 611 |
 | 3 | `ebbd812` | tran-danh-khoi-nghia-bo-sung-2 · chi-si-cach-mang · to-nghe-danh-than | 50 | 661 |
 | 4 | `2b36a50` | khoa-bang-bo-sung · anh-hung-liet-si-bo-sung · vua-chua-bo-sung | 46 | 707 |
-| 5 | (this) | hoang-toc-tieu-bieu · thanh-hoang-vung-mien · nha-giao-hoc-gia | 50 | 757 |
+| 5 | `59386f5` | hoang-toc-tieu-bieu · thanh-hoang-vung-mien · nha-giao-hoc-gia | 50 | 757 |
+| 6 | (this) | di-tich-cach-mang · nghe-nhan-di-san · danh-tuong-chong-phap | 48 | 805 |
 
 **Việc cần người (Iron Man) khi có thời gian:**
 - Duyệt §9 & nâng `draft`→`reviewed` (đặc biệt nội dung chiến tranh, chủ đề nhạy cảm).

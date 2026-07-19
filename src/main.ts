@@ -1608,6 +1608,33 @@ const OVERLAYS: OverlayConf[] = [
       "Báo Nhân Dân · Báo Đại biểu Nhân dân · Giáo dục & Thời đại · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
     popup: personOverlayPopup,
   },
+  {
+    id: "di-tich-cach-mang",
+    label: "🚩 Di tích cách mạng · kháng chiến",
+    file: "data/overlays/di-tich-cach-mang.json",
+    circleColor: "#dc2626",
+    nguon:
+      "Cục Di sản văn hóa · Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: eventOverlayPopup,
+  },
+  {
+    id: "nghe-nhan-di-san",
+    label: "🎭 Nghệ nhân · tổ nghệ thuật · di sản sống",
+    file: "data/overlays/nghe-nhan-di-san.json",
+    circleColor: "#7c3aed",
+    nguon:
+      "Cục Di sản văn hóa · Sở VHTT các tỉnh · Báo Nhân Dân · Cục Du lịch Quốc gia",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-tuong-chong-phap",
+    label: "🗡️ Danh tướng kháng Pháp (Cần Vương · nghĩa quân)",
+    file: "data/overlays/danh-tuong-chong-phap.json",
+    circleColor: "#9f1239",
+    nguon:
+      "Báo QĐND · Bảo tàng Lịch sử Quốc gia · Cục Di sản văn hóa · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
