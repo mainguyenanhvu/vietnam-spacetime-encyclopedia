@@ -185,7 +185,9 @@ function colorExprFor(era: Era): ExpressionSpecification {
     "#dc2626",
     "dao",
     "#ea580c",
-    ["at", ["%", ["id"], pal.length], ["literal", pal]],
+    // to-color BẮT BUỘC: nếu không, style-spec suy kiểu literal thành array<string>
+    // và từ chối cả biểu thức fill-color (màu tỉnh «tất cả 1 màu»).
+    ["to-color", ["at", ["%", ["id"], pal.length], ["literal", pal]]],
   ] as ExpressionSpecification;
 }
 function applyColorMode(mode: "default" | "ruc-ro" | "pastel"): void {
@@ -223,7 +225,7 @@ let showSongNui = false;
 function applySongNui(on: boolean): void {
   showSongNui = on;
   const v = on ? "visible" : "none";
-  for (const id of ["song-labels", "nui-labels"]) {
+  for (const id of ["song-lines", "song-labels", "nui-labels"]) {
     if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", v);
   }
 }
@@ -236,6 +238,22 @@ function initSongNui(): void {
       map.addSource("song-nui", { type: "geojson", data: geo });
       const before = map.getLayer("chu-quyen-labels") ? "chu-quyen-labels" : undefined;
       const size = ["interpolate", ["linear"], ["zoom"], 4, 9, 8, 13] as unknown;
+      // Đường sông (LineString) — vẽ nét xanh, dày dần theo zoom để «thấy» dòng chảy.
+      map.addLayer(
+        {
+          id: "song-lines",
+          type: "line",
+          source: "song-nui",
+          filter: ["==", ["get", "loai"], "song"],
+          layout: { visibility: "none", "line-cap": "round", "line-join": "round" },
+          paint: {
+            "line-color": "#2563eb",
+            "line-opacity": 0.85,
+            "line-width": ["interpolate", ["linear"], ["zoom"], 4, 1, 7, 2.4, 10, 4],
+          },
+        } as never,
+        before,
+      );
       map.addLayer(
         {
           id: "song-labels",
@@ -244,7 +262,8 @@ function initSongNui(): void {
           filter: ["==", ["get", "loai"], "song"],
           layout: {
             visibility: "none",
-            "text-field": ["concat", "〰 ", ["get", "ten"]],
+            "symbol-placement": "line",
+            "text-field": ["get", "ten"],
             "text-font": ["Open Sans Semibold"],
             "text-size": size,
             "text-max-width": 8,
@@ -380,7 +399,9 @@ function initNamTien(): void {
                 11,
                 "#fde047",
               ],
-              "fill-opacity": 0.72,
+              // Giảm mạnh opacity (0.72 → 0.4) để KHÔNG đè kín bản đồ nền; vùng đã
+              // mở cõi vẫn nhận ra qua sắc độ Bắc→Nam nhưng thấy xuyên địa hình.
+              "fill-opacity": 0.4,
             },
           } as never,
           beforeId,
@@ -392,7 +413,20 @@ function initNamTien(): void {
             source: "nam-tien",
             layout: { visibility: "none" },
             filter: ["<=", ["get", "nt_step"], -1],
-            paint: { "line-color": "#450a0a", "line-width": 0.6 },
+            paint: { "line-color": "#7c2d12", "line-width": 0.8, "line-opacity": 0.7 },
+          } as never,
+          beforeId,
+        );
+        // «Mặt trận» — viền sáng nổi bật CHỈ các tỉnh mở ở bước hiện tại, để mắt
+        // dõi theo hướng Nam tiến mà không cần tô đậm toàn bộ.
+        map.addLayer(
+          {
+            id: "nam-tien-front",
+            type: "line",
+            source: "nam-tien",
+            layout: { visibility: "none", "line-cap": "round", "line-join": "round" },
+            filter: ["==", ["get", "nt_step"], -1],
+            paint: { "line-color": "#fbbf24", "line-width": 3, "line-blur": 0.6 },
           } as never,
           beforeId,
         );
@@ -406,6 +440,9 @@ function setNamTienStep(step: number): void {
   const f = ["<=", ["get", "nt_step"], namTienStep];
   for (const id of ["nam-tien-fill", "nam-tien-line"])
     if (map.getLayer(id)) map.setFilter(id, f as never);
+  // Viền «mặt trận» chỉ khoanh các tỉnh mở đúng ở bước hiện tại.
+  if (map.getLayer("nam-tien-front"))
+    map.setFilter("nam-tien-front", ["==", ["get", "nt_step"], namTienStep] as never);
   renderNamTienPanel();
 }
 function namTienStop(): void {
@@ -432,7 +469,7 @@ function namTienPlay(): void {
 }
 function activateNamTien(on: boolean): void {
   const v = on ? "visible" : "none";
-  for (const id of ["nam-tien-fill", "nam-tien-line"])
+  for (const id of ["nam-tien-fill", "nam-tien-line", "nam-tien-front"])
     if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", v);
   if (on) {
     if (namTienStep < 0) namTienStep = 0;

@@ -173,13 +173,20 @@ if (existsSync(SONGNUI)) {
     const w = `song-nui/${p.ten ?? "?"}`;
     if (!p.ten) fail(w, "thiếu properties.ten");
     if (p.loai !== "song" && p.loai !== "nui") fail(w, `loai "${p.loai}" phải là song|nui`);
+    // Sông = LineString (mảng [lon,lat]); Núi = Point ([lon,lat]). Soát bbox từng đỉnh.
+    const gt = f.geometry?.type;
     const c = f.geometry?.coordinates;
-    if (!Array.isArray(c) || c.length !== 2) fail(w, "geometry.coordinates phải là [lon, lat]");
-    else {
-      const [lon, lat] = c;
+    const checkPos = (pos) => {
+      if (!Array.isArray(pos) || pos.length !== 2) return fail(w, "vị trí phải là [lon, lat]");
+      const [lon, lat] = pos;
       if (lon < 102 || lon > 110) fail(w, `lon ${lon} ngoài lãnh thổ VN (102–110)`);
       if (lat < 8 || lat > 24) fail(w, `lat ${lat} ngoài lãnh thổ VN (8–24)`);
-    }
+    };
+    if (gt === "Point") checkPos(c);
+    else if (gt === "LineString") {
+      if (!Array.isArray(c) || c.length < 2) fail(w, "LineString cần ≥2 đỉnh");
+      else c.forEach(checkPos);
+    } else fail(w, `geometry.type "${gt}" phải là Point|LineString`);
     if (!p.nguon || !p.nguon.length) fail(w, "thiếu properties.nguon[]");
   }
   console.log(`✅ song-nui.json: ${feats.length} nhãn địa hình`);

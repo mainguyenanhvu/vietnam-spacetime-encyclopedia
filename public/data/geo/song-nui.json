@@ -1,6 +1,7 @@
 {
   "type": "FeatureCollection",
-  "ghi_chu": "Nhãn sông & núi lớn Việt Nam. Toạ độ đặt nhãn (cấp thành phố/mốc tiêu biểu). Nguồn: Wikipedia vi/en, Wikidata, GeoNames. Chủ quyền: chỉ địa hình đất liền.",
+  "ghi_chu": "Địa hình: SÔNG dạng LineString (đường sông nhìn thấy), NÚI dạng Point (tam giác). Toạ độ SƠ ĐỒ HOÁ theo waypoint xấp xỉ (mốc địa lý đã biết) — dùng hiển thị, KHÔNG dùng cho ranh giới/chủ quyền. Nguồn toạ độ: GeoNames, OpenStreetMap, Wikidata (geodata trung tính). Chủ quyền: chỉ địa hình đất liền.",
+  "ngay_cap_nhat": "2026-07-19",
   "features": [
     {
       "type": "Feature",
@@ -8,16 +9,52 @@
         "ten": "Sông Hồng",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Hồng",
-          "GeoNames.org – Cầu Long Biên, Hà Nội"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          105.8589,
-          21.0433
+          [
+            103.95,
+            22.49
+          ],
+          [
+            104.45,
+            22.05
+          ],
+          [
+            104.9,
+            21.72
+          ],
+          [
+            105.24,
+            21.42
+          ],
+          [
+            105.42,
+            21.3
+          ],
+          [
+            105.86,
+            21.04
+          ],
+          [
+            106.06,
+            20.66
+          ],
+          [
+            106.34,
+            20.42
+          ],
+          [
+            106.56,
+            20.28
+          ]
         ]
       }
     },
@@ -27,16 +64,44 @@
         "ten": "Sông Đà",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Đà",
-          "GeoNames.org – TP Hòa Bình"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          105.3233,
-          20.8082
+          [
+            102.85,
+            22.38
+          ],
+          [
+            103.45,
+            21.98
+          ],
+          [
+            104.02,
+            21.42
+          ],
+          [
+            104.65,
+            21.05
+          ],
+          [
+            105.02,
+            20.86
+          ],
+          [
+            105.34,
+            20.82
+          ],
+          [
+            105.42,
+            21.3
+          ]
         ]
       }
     },
@@ -46,16 +111,36 @@
         "ten": "Sông Lô",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Lô",
-          "GeoNames.org – TP Tuyên Quang"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          105.2142,
-          21.8236
+          [
+            104.98,
+            22.82
+          ],
+          [
+            105.05,
+            22.35
+          ],
+          [
+            105.22,
+            21.82
+          ],
+          [
+            105.3,
+            21.55
+          ],
+          [
+            105.42,
+            21.3
+          ]
         ]
       }
     },
@@ -65,35 +150,36 @@
         "ten": "Sông Chảy",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Chảy",
-          "GeoNames.org – Lào Cai/Yên Bái"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          104.4533,
-          22.3036
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ten": "Sông Thái Bình",
-        "loai": "song",
-        "cao_do_m": null,
-        "nguon": [
-          "Wikipedia tiếng Việt – Sông Thái Bình",
-          "GeoNames.org – TP Hải Dương"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.333,
-          20.941
+          [
+            104.32,
+            22.55
+          ],
+          [
+            104.55,
+            22.15
+          ],
+          [
+            104.78,
+            21.85
+          ],
+          [
+            105.02,
+            21.55
+          ],
+          [
+            105.2,
+            21.38
+          ]
         ]
       }
     },
@@ -103,16 +189,40 @@
         "ten": "Sông Mã",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Mã",
-          "GeoNames.org – TP Thanh Hóa"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          105.7666,
-          19.8105
+          [
+            104.05,
+            20.72
+          ],
+          [
+            104.55,
+            20.35
+          ],
+          [
+            105.1,
+            20.05
+          ],
+          [
+            105.55,
+            19.85
+          ],
+          [
+            105.78,
+            19.8
+          ],
+          [
+            105.92,
+            19.76
+          ]
         ]
       }
     },
@@ -122,16 +232,36 @@
         "ten": "Sông Cả (Lam)",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Cả",
-          "Wikipedia tiếng Anh – Vinh, Nghệ An"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          105.667,
-          18.667
+          [
+            104.35,
+            19.45
+          ],
+          [
+            104.85,
+            19.1
+          ],
+          [
+            105.25,
+            18.85
+          ],
+          [
+            105.55,
+            18.72
+          ],
+          [
+            105.7,
+            18.79
+          ]
         ]
       }
     },
@@ -141,16 +271,32 @@
         "ten": "Sông Gianh",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Gianh",
-          "GeoNames.org – Ba Đồn"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          106.4194,
-          17.7569
+          [
+            105.75,
+            17.95
+          ],
+          [
+            106.05,
+            17.85
+          ],
+          [
+            106.28,
+            17.75
+          ],
+          [
+            106.47,
+            17.7
+          ]
         ]
       }
     },
@@ -160,16 +306,32 @@
         "ten": "Sông Thạch Hãn",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Thạch Hãn",
-          "GeoNames.org – TP Đông Hà, Quảng Trị"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          107.1003,
-          16.8162
+          [
+            106.85,
+            16.62
+          ],
+          [
+            107.05,
+            16.72
+          ],
+          [
+            107.19,
+            16.75
+          ],
+          [
+            107.3,
+            16.78
+          ]
         ]
       }
     },
@@ -179,16 +341,32 @@
         "ten": "Sông Hương",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Hương",
-          "GeoNames.org – TP Huế"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          107.5955,
-          16.4619
+          [
+            107.45,
+            16.22
+          ],
+          [
+            107.55,
+            16.38
+          ],
+          [
+            107.58,
+            16.47
+          ],
+          [
+            107.63,
+            16.57
+          ]
         ]
       }
     },
@@ -198,16 +376,36 @@
         "ten": "Sông Thu Bồn",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Thu Bồn",
-          "GeoNames.org – Hội An"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          108.3961,
-          15.8733
+          [
+            107.82,
+            15.52
+          ],
+          [
+            108.05,
+            15.7
+          ],
+          [
+            108.25,
+            15.82
+          ],
+          [
+            108.34,
+            15.88
+          ],
+          [
+            108.38,
+            15.89
+          ]
         ]
       }
     },
@@ -217,16 +415,32 @@
         "ten": "Sông Trà Khúc",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Trà Khúc",
-          "GeoNames.org – TP Quảng Ngãi"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          108.8964,
-          15.145
+          [
+            108.45,
+            15.02
+          ],
+          [
+            108.62,
+            15.08
+          ],
+          [
+            108.8,
+            15.12
+          ],
+          [
+            108.9,
+            15.23
+          ]
         ]
       }
     },
@@ -236,54 +450,36 @@
         "ten": "Sông Ba (Đà Rằng)",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Ba",
-          "GeoNames.org – TP Tuy Hòa"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          109.3281,
-          13.0875
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ten": "Sông Sê San",
-        "loai": "song",
-        "cao_do_m": null,
-        "nguon": [
-          "Wikipedia tiếng Anh – Sesan River",
-          "Wikidata Q3353153 – Tonlé San"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.8404,
-          14.6063
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ten": "Sông Srêpôk",
-        "loai": "song",
-        "cao_do_m": null,
-        "nguon": [
-          "Wikipedia tiếng Anh – Srepok River",
-          "GeoNames.org – Buôn Đôn, Đắk Lắk"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.8203,
-          12.8919
+          [
+            108.35,
+            13.55
+          ],
+          [
+            108.75,
+            13.25
+          ],
+          [
+            109.05,
+            13.12
+          ],
+          [
+            109.28,
+            13.09
+          ],
+          [
+            109.35,
+            13.09
+          ]
         ]
       }
     },
@@ -293,16 +489,40 @@
         "ten": "Sông Đồng Nai",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Đồng Nai",
-          "GeoNames.org – TP Biên Hòa"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          106.8243,
-          10.9447
+          [
+            107.85,
+            11.92
+          ],
+          [
+            107.45,
+            11.45
+          ],
+          [
+            107.05,
+            11.1
+          ],
+          [
+            106.82,
+            10.95
+          ],
+          [
+            106.78,
+            10.78
+          ],
+          [
+            106.75,
+            10.69
+          ]
         ]
       }
     },
@@ -312,16 +532,36 @@
         "ten": "Sông Sài Gòn",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "Wikipedia tiếng Việt – Sông Sài Gòn",
-          "GeoNames.org – TP Hồ Chí Minh"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          106.7591,
-          10.7439
+          [
+            106.45,
+            11.55
+          ],
+          [
+            106.55,
+            11.15
+          ],
+          [
+            106.62,
+            10.95
+          ],
+          [
+            106.7,
+            10.78
+          ],
+          [
+            106.75,
+            10.69
+          ]
         ]
       }
     },
@@ -331,16 +571,32 @@
         "ten": "Sông Vàm Cỏ",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "GeoNames.org – Sông Vàm Cỏ",
-          "Wikipedia tiếng Việt – Sông Vàm Cỏ"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          106.7275,
-          10.4906
+          [
+            106.15,
+            10.95
+          ],
+          [
+            106.35,
+            10.78
+          ],
+          [
+            106.55,
+            10.62
+          ],
+          [
+            106.7,
+            10.55
+          ]
         ]
       }
     },
@@ -350,16 +606,40 @@
         "ten": "Sông Tiền",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "GeoNames.org – TP Mỹ Tho, Tiền Giang",
-          "Wikipedia tiếng Việt – Sông Tiền"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          106.3597,
-          10.36
+          [
+            105.42,
+            10.72
+          ],
+          [
+            105.75,
+            10.55
+          ],
+          [
+            106.05,
+            10.42
+          ],
+          [
+            106.35,
+            10.35
+          ],
+          [
+            106.6,
+            10.3
+          ],
+          [
+            106.75,
+            10.28
+          ]
         ]
       }
     },
@@ -369,16 +649,40 @@
         "ten": "Sông Hậu",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "GeoNames.org – TP Cần Thơ",
-          "Wikipedia tiếng Việt – Sông Hậu"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          105.7882,
-          10.0371
+          [
+            105.12,
+            10.72
+          ],
+          [
+            105.35,
+            10.42
+          ],
+          [
+            105.62,
+            10.18
+          ],
+          [
+            105.78,
+            10.03
+          ],
+          [
+            106,
+            9.78
+          ],
+          [
+            106.2,
+            9.55
+          ]
         ]
       }
     },
@@ -388,16 +692,28 @@
         "ten": "Sông Cửu Long (đoạn VN)",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "GeoNames.org – TP Vĩnh Long",
-          "Wikipedia tiếng Việt – Sông Cửu Long"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          105.9722,
-          10.2537
+          [
+            105.02,
+            10.9
+          ],
+          [
+            105.22,
+            10.8
+          ],
+          [
+            105.42,
+            10.72
+          ]
         ]
       }
     },
@@ -407,16 +723,32 @@
         "ten": "Sông Kỳ Cùng",
         "loai": "song",
         "cao_do_m": null,
+        "so_do_hoa": true,
         "nguon": [
-          "GeoNames.org – TP Lạng Sơn",
-          "Wikipedia tiếng Việt – Sông Kỳ Cùng"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          106.761,
-          21.8526
+          [
+            106.55,
+            21.62
+          ],
+          [
+            106.62,
+            21.78
+          ],
+          [
+            106.68,
+            21.92
+          ],
+          [
+            106.72,
+            22.02
+          ]
         ]
       }
     },
@@ -427,14 +759,15 @@
         "loai": "nui",
         "cao_do_m": 3147,
         "nguon": [
-          "Wikipedia tiếng Việt – Fansipan",
-          "Wikipedia tiếng Anh – Fansipan"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.775,
+          103.7767,
           22.3033
         ]
       }
@@ -446,15 +779,16 @@
         "loai": "nui",
         "cao_do_m": 3049,
         "nguon": [
-          "Wikipedia tiếng Việt – Pu Ta Leng",
-          "Wikidata Q116009528 – Pu Ta Leng"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.6033,
-          22.4228
+          103.5083,
+          22.4183
         ]
       }
     },
@@ -465,15 +799,16 @@
         "loai": "nui",
         "cao_do_m": 3046,
         "nguon": [
-          "Wikipedia tiếng Việt – Bạch Mộc Lương Tử",
-          "Wikidata Q31631548 – Ky Quan San"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.5875,
-          22.5077
+          103.6767,
+          22.5217
         ]
       }
     },
@@ -482,17 +817,18 @@
       "properties": {
         "ten": "Tây Côn Lĩnh",
         "loai": "nui",
-        "cao_do_m": 2431,
+        "cao_do_m": 2428,
         "nguon": [
-          "Wikipedia tiếng Việt – Tây Côn Lĩnh",
-          "Wikidata Q10831041 – Tây Côn Lĩnh"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          104.8061,
-          22.8016
+          104.75,
+          22.7667
         ]
       }
     },
@@ -503,15 +839,16 @@
         "loai": "nui",
         "cao_do_m": 2711,
         "nguon": [
-          "Wikidata Q1766698 – Phu Xai Lai Leng",
-          "GeoNames.org – Phu Xai Lai Leng"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          104.1817,
-          19.1975
+          104.3167,
+          19.2167
         ]
       }
     },
@@ -522,15 +859,16 @@
         "loai": "nui",
         "cao_do_m": 2598,
         "nguon": [
-          "Wikipedia tiếng Anh – Ngoc Linh",
-          "Wikipedia tiếng Việt – Núi Ngọc Linh"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          107.975,
-          15.0692
+          107.9833,
+          15.0667
         ]
       }
     },
@@ -541,15 +879,16 @@
         "loai": "nui",
         "cao_do_m": 1450,
         "nguon": [
-          "Wikipedia tiếng Việt – Vườn quốc gia Bạch Mã",
-          "Wikipedia tiếng Anh – Bach Ma National Park"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           107.85,
-          16.1
+          16.1967
         ]
       }
     },
@@ -560,15 +899,16 @@
         "loai": "nui",
         "cao_do_m": 1487,
         "nguon": [
-          "Wikipedia tiếng Việt – Bà Nà",
-          "Wikipedia tiếng Anh – Ba Na Hills"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          107.9942,
-          15.9944
+          107.995,
+          16.01
         ]
       }
     },
@@ -577,16 +917,17 @@
       "properties": {
         "ten": "Đèo Hải Vân",
         "loai": "nui",
-        "cao_do_m": 496,
+        "cao_do_m": 500,
         "nguon": [
-          "Wikipedia tiếng Anh – Hai Van Pass",
-          "Wikipedia tiếng Việt – Đèo Hải Vân"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          108.133,
+          108.13,
           16.2
         ]
       }
@@ -596,17 +937,18 @@
       "properties": {
         "ten": "Tản Viên (Ba Vì)",
         "loai": "nui",
-        "cao_do_m": 1227,
+        "cao_do_m": 1281,
         "nguon": [
-          "Wikipedia tiếng Việt – Núi Ba Vì",
-          "Wikipedia tiếng Anh – Ba Vi National Park"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          105.3664,
-          21.0583
+          105.3667,
+          21.0667
         ]
       }
     },
@@ -617,15 +959,16 @@
         "loai": "nui",
         "cao_do_m": 1068,
         "nguon": [
-          "Wikipedia tiếng Việt – Yên Tử",
-          "Wikidata Q10802059 – Yên Tử"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.7151,
-          21.1605
+          106.7167,
+          21.1667
         ]
       }
     },
@@ -636,15 +979,16 @@
         "loai": "nui",
         "cao_do_m": 986,
         "nguon": [
-          "Wikipedia tiếng Việt – Núi Bà Đen",
-          "Wikidata Q4922113 – Black Virgin Mountain"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.1712,
-          11.3814
+          106.1717,
+          11.3767
         ]
       }
     },
@@ -655,15 +999,16 @@
         "loai": "nui",
         "cao_do_m": 2167,
         "nguon": [
-          "Wikipedia tiếng Việt – Lang Biang",
-          "GeoNames.org – Cao nguyên Lâm Viên"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          108.44,
-          12.0472
+          108.4433,
+          12.0483
         ]
       }
     },
@@ -674,15 +1019,16 @@
         "loai": "nui",
         "cao_do_m": 2442,
         "nguon": [
-          "Wikipedia tiếng Việt – Chư Yang Sin",
-          "Wikidata Q31615043 – Chư Yang Sin"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          108.4244,
-          12.4064
+          108.3667,
+          12.4
         ]
       }
     },
@@ -693,15 +1039,16 @@
         "loai": "nui",
         "cao_do_m": 284,
         "nguon": [
-          "GeoNames.org – Núi Sam, Châu Đốc",
-          "Wikipedia tiếng Việt – Núi Sam"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          105.0642,
-          10.6795
+          105.09,
+          10.68
         ]
       }
     },
@@ -710,17 +1057,18 @@
       "properties": {
         "ten": "Thất Sơn (Núi Cấm)",
         "loai": "nui",
-        "cao_do_m": 710,
+        "cao_do_m": 705,
         "nguon": [
-          "Wikipedia tiếng Anh – Thất Sơn",
-          "Wikipedia tiếng Việt – Bảy Núi"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          104.9833,
-          10.4833
+          105.01,
+          10.5
         ]
       }
     },
@@ -731,15 +1079,16 @@
         "loai": "nui",
         "cao_do_m": null,
         "nguon": [
-          "Wikipedia tiếng Việt – Hoàng Liên Sơn",
-          "Wikipedia tiếng Việt – Fansipan"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.7706,
-          22.3292
+          103.85,
+          22.25
         ]
       }
     },
@@ -750,15 +1099,176 @@
         "loai": "nui",
         "cao_do_m": null,
         "nguon": [
-          "Wikipedia tiếng Việt – Dãy Trường Sơn",
-          "Wikipedia tiếng Việt – Núi Ngọc Linh"
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.8,
-          18.5917
+          106.5,
+          17.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Ngũ Hành Sơn",
+        "loai": "nui",
+        "cao_do_m": 108,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.2633,
+          16.0044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Mẫu Sơn",
+        "loai": "nui",
+        "cao_do_m": 1541,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.0833,
+          21.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Đèo Cả",
+        "loai": "nui",
+        "cao_do_m": 333,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.35,
+          12.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Chứa Chan",
+        "loai": "nui",
+        "cao_do_m": 837,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.36,
+          10.94
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Cao nguyên đá Đồng Văn",
+        "loai": "nui",
+        "cao_do_m": 1600,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.36,
+          23.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Đèo Ngang (Hoành Sơn)",
+        "loai": "nui",
+        "cao_do_m": 256,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.2,
+          17.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Chư Mom Ray",
+        "loai": "nui",
+        "cao_do_m": 1773,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.6667,
+          14.4333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Voi",
+        "loai": "nui",
+        "cao_do_m": 197,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6167,
+          20.8333
         ]
       }
     }
