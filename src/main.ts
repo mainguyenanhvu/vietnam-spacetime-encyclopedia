@@ -145,6 +145,24 @@ const map = new maplibregl.Map({
 map.addControl(new maplibregl.NavigationControl(), "top-left");
 map.addControl(new maplibregl.ScaleControl(), "bottom-left");
 
+// Đồng bộ chiều cao thực của topbar vào biến CSS --topbar-h để mọi panel nổi
+// (điều khiển lớp, hồ sơ tỉnh, thư viện…) luôn bám ngay dưới topbar. Chiều cao
+// thay đổi vì (1) nhiều module thêm nút vào #topbar-nav khi chạy → topbar xuống
+// 2 hàng, và (2) cửa sổ hẹp làm nav cuộn dòng. MutationObserver bắt (1) tin cậy
+// (theo microtask, không phụ thuộc khung hình như ResizeObserver — vốn bị chặn
+// khi tab chạy nền); resize bắt (2). Giữ tham chiếu ở scope module để không bị GC.
+const topbarEl = document.getElementById("topbar");
+const topbarNavEl = document.getElementById("topbar-nav");
+const syncTopbarH = (): void => {
+  if (topbarEl)
+    document.documentElement.style.setProperty("--topbar-h", `${topbarEl.offsetHeight}px`);
+};
+const topbarNavObserver = topbarNavEl ? new MutationObserver(syncTopbarH) : null;
+if (topbarNavEl && topbarNavObserver)
+  topbarNavObserver.observe(topbarNavEl, { childList: true });
+window.addEventListener("resize", syncTopbarH);
+syncTopbarH();
+
 let currentEra = ERAS.length - 1; // mặc định: 34 tỉnh hiện hành
 let hoveredId: number | string | undefined;
 let is3D = false;

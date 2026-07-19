@@ -1,3 +1,12 @@
+:root {
+  /* Chiều cao thực của topbar, đồng bộ từ JS (ResizeObserver). Topbar có thể
+     xuống 2 hàng khi cửa sổ hẹp → các panel nổi phải bám theo, không dùng số
+     cứng (trước đây top:3.5rem che mất hàng nút khi topbar cao 83px). */
+  --topbar-h: 3.5rem;
+  --panel-top: calc(var(--topbar-h) + 0.5rem);
+  --panel-maxh: calc(100% - var(--topbar-h) - 4.5rem);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +34,9 @@ body,
   padding: 0.6rem 1rem;
   background: #7f1d1d;
   color: #fef3c7;
+  /* Luôn vẽ trên các panel nổi (z-index 10–20) để không bao giờ bị che. */
+  position: relative;
+  z-index: 30;
 }
 
 #topbar-nav {
@@ -79,10 +91,10 @@ body,
 
 #province-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   right: 0.75rem;
   width: min(360px, 90vw);
-  max-height: calc(100% - 9rem);
+  max-height: var(--panel-maxh);
   overflow-y: auto;
   background: #fffbeb;
   border: 1px solid #d6d3d1;
@@ -102,7 +114,7 @@ body,
 
 #layer-control {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 0.75rem;
   width: min(280px, 80vw);
   background: #fffbeb;
@@ -205,11 +217,11 @@ body,
 
 #library-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 50%;
   transform: translateX(-50%);
   width: min(520px, 94vw);
-  max-height: calc(100% - 9rem);
+  max-height: var(--panel-maxh);
   overflow-y: auto;
   background: #fffbeb;
   border: 1px solid #d6d3d1;
@@ -229,11 +241,11 @@ body,
 
 #game-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 50%;
   transform: translateX(-50%);
   width: min(420px, 94vw);
-  max-height: calc(100% - 9rem);
+  max-height: var(--panel-maxh);
   overflow-y: auto;
   background: #fffbeb;
   border: 1px solid #d6d3d1;
@@ -320,11 +332,11 @@ body,
 
 #quiz-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 50%;
   transform: translateX(-50%);
   width: min(440px, 94vw);
-  max-height: calc(100% - 9rem);
+  max-height: var(--panel-maxh);
   overflow-y: auto;
   background: #fffbeb;
   border: 1px solid #d6d3d1;
@@ -402,11 +414,11 @@ body,
 
 #story-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 50%;
   transform: translateX(-50%);
   width: min(520px, 94vw);
-  max-height: calc(100% - 9rem);
+  max-height: var(--panel-maxh);
   overflow-y: auto;
   background: linear-gradient(180deg, #fef9c3, #fde68a);
   border: 3px solid #f59e0b;
@@ -553,11 +565,11 @@ body.kid-mode #topbar {
 /* === Olympia === */
 #olympia-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 50%;
   transform: translateX(-50%);
   width: min(460px, 94vw);
-  max-height: calc(100% - 9rem);
+  max-height: var(--panel-maxh);
   overflow-y: auto;
   background: #fffbeb;
   border: 1px solid #d6d3d1;
@@ -896,10 +908,10 @@ body.kid-mode #topbar {
 #battle-panel,
 #journey-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 50%;
   transform: translateX(-50%);
-  max-height: calc(100% - 9rem);
+  max-height: var(--panel-maxh);
   overflow-y: auto;
   background: #fffbeb;
   border: 1px solid #d6d3d1;
@@ -1015,7 +1027,7 @@ body.kid-mode #topbar {
 /* === Hub «Việt Nam trong tôi» — danh nhân/phim tài liệu + nhạc yêu nước === */
 #quocgia-panel {
   position: absolute;
-  top: 3.5rem;
+  top: var(--panel-top);
   left: 50%;
   transform: translateX(-50%);
   width: min(940px, 96vw);
@@ -1171,7 +1183,7 @@ body.kid-mode #topbar {
 
 /* === Dòng thời gian 4000 năm (timeline.ts) === */
 #timeline-panel {
-  position: absolute; top: 3.5rem; left: 50%; transform: translateX(-50%);
+  position: absolute; top: var(--panel-top); left: 50%; transform: translateX(-50%);
   width: min(720px, 96vw); max-height: calc(100% - 6rem); overflow-y: auto;
   background: #fffbeb; border: 1px solid #d6d3d1; border-radius: 8px;
   box-shadow: 0 4px 16px rgb(0 0 0 / 0.25); padding: 1rem 1.1rem 1.4rem; z-index: 20;
