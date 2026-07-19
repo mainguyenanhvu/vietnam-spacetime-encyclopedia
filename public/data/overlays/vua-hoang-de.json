@@ -1,0 +1,132 @@
+{
+  "ghi_chu": "Vua/hoàng đế các triều đại (ngoài số đã có trong CSDL) — Lý, Hồ, Nguyễn. Toạ độ lăng/đền qua OpenStreetMap Nominatim đối chiếu địa danh trong nguồn; nội dung theo cổng thông tin di sản nhà nước (hueworldheritage.org.vn — Trung tâm Bảo tồn Di tích Cố đô Huế; thanhnhaho.vn — Trung tâm Bảo tồn Di sản Thành Nhà Hồ; mybacninh.vn — cổng du lịch Bắc Ninh). KHÔNG dùng Wikipedia. WebSearch không khả dụng trong phiên này nên chỉ thêm các vua tra cứu được qua WebFetch/crawl trực tiếp cổng nhà nước đã biết trước; các vua triều Trần, Lê sơ, Mạc, Lê trung hưng chưa tìm được trang cổng xác nhận trong phiên này nên tạm bỏ qua (xem báo cáo).",
+  "ngay_cap_nhat": "2026-07-20",
+  "sources": [
+    "Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn",
+    "Trung tâm Bảo tồn Di sản Thành Nhà Hồ — thanhnhaho.vn",
+    "Cổng du lịch Bắc Ninh (mybacninh.vn)",
+    "OpenStreetMap Nominatim (toạ độ)"
+  ],
+  "items": [
+    {
+      "id": "ly-thai-tong",
+      "ten": "Lý Thái Tông",
+      "lon": 105.9595, "lat": 21.1068,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1000–1054, trị vì 1028–1054",
+      "mo_ta": "Tên thật Lý Phật Mã, con trưởng vua Lý Thái Tổ. Ban hành bộ luật thành văn đầu tiên của Đại Việt — Hình thư (1042), củng cố quân đội và giữ vững biên cương. Là một trong 8 vị vua triều Lý được thờ tại Đền Đô.",
+      "dia_diem": "Đền Đô (nơi thờ 8 vị vua triều Lý), phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": ["Cổng du lịch Bắc Ninh — mybacninh.vn (Đền Đô) — http://mybacninh.vn/vi/dendo"]
+    },
+    {
+      "id": "ly-thanh-tong",
+      "ten": "Lý Thánh Tông",
+      "lon": 105.9600, "lat": 21.1072,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1023–1072, trị vì 1054–1072",
+      "mo_ta": "Tên thật Lý Nhật Tôn, con vua Lý Thái Tông. Đổi quốc hiệu nước ta thành Đại Việt (1054), phát triển Phật giáo và mở mang bờ cõi phía Nam. Là một trong 8 vị vua triều Lý được thờ tại Đền Đô.",
+      "dia_diem": "Đền Đô (nơi thờ 8 vị vua triều Lý), phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": ["Cổng du lịch Bắc Ninh — mybacninh.vn (Đền Đô) — http://mybacninh.vn/vi/dendo"]
+    },
+    {
+      "id": "ly-nhan-tong",
+      "ten": "Lý Nhân Tông",
+      "lon": 105.9601, "lat": 21.1074,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1066–1127, trị vì 1072–1127",
+      "mo_ta": "Tên thật Lý Càn Đức, vị vua trị vì lâu nhất trong lịch sử Việt Nam (55 năm). Cùng Thái úy Lý Thường Kiệt đánh bại quân Tống xâm lược (1075–1077), lập Quốc Tử Giám (1076) — trường đại học đầu tiên của Đại Việt. Là một trong 8 vị vua triều Lý được thờ tại Đền Đô.",
+      "dia_diem": "Đền Đô (nơi thờ 8 vị vua triều Lý), phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": ["Cổng du lịch Bắc Ninh — mybacninh.vn (Đền Đô) — http://mybacninh.vn/vi/dendo"]
+    },
+    {
+      "id": "ho-quy-ly",
+      "ten": "Hồ Quý Ly",
+      "lon": 105.6045, "lat": 20.0780,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "?–1407, làm vua 1400 (nhường ngôi cho con Hồ Hán Thương)",
+      "mo_ta": "Lập nên nhà Hồ sau khi thay ngôi nhà Trần, dời đô vào Thanh Hóa và cho xây thành Tây Đô (Thành Nhà Hồ). Thực hiện nhiều cải cách táo bạo về hành chính, quân sự, tiền tệ (tiền giấy), ruộng đất và thi cử. Bị quân Minh bắt năm 1407 khi lãnh đạo kháng chiến chống xâm lược, mất trong cảnh bị lưu đày ở Trung Quốc.",
+      "dia_diem": "Thành Nhà Hồ, xã Tây Đô (Vĩnh Lộc cũ), tỉnh Thanh Hóa — Di sản Văn hóa Thế giới",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": ["Trung tâm Bảo tồn Di sản Thành Nhà Hồ — thanhnhaho.vn (Hồ Quý Ly, ông là ai?) — https://thanhnhaho.vn/NewsDetail.aspx?Id=7682"]
+    },
+    {
+      "id": "gia-long",
+      "ten": "Gia Long",
+      "lon": 107.5965, "lat": 16.3632,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1762–1820, trị vì 1802–1820",
+      "mo_ta": "Tên thật Nguyễn Phúc Ánh, thống nhất đất nước sau nhiều năm nội chiến với Tây Sơn, lập nên triều Nguyễn — vương triều quân chủ cuối cùng của Việt Nam, đặt quốc hiệu Việt Nam (1804). An táng tại Thiên Thọ Lăng do đích thân ông thám sát và chỉ đạo xây dựng.",
+      "dia_diem": "Lăng Gia Long (Thiên Thọ Lăng), xã Hương Thọ, thành phố Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": ["Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn (Lăng Hoàng đế Gia Long — Thiên Thọ Lăng) — https://hueworldheritage.org.vn/tabid/48/language/vi-VN/Default.aspx/tid/LANG-HOANG-DE-GIA-LONG-Thien-Tho-Lang.html/pid/1530/cid/87"]
+    },
+    {
+      "id": "thieu-tri",
+      "ten": "Thiệu Trị",
+      "lon": 107.5720, "lat": 16.4165,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1807–1847, trị vì 1841–1847",
+      "mo_ta": "Tên thật Nguyễn Phúc Miên Tông, con trưởng vua Minh Mạng, trị vì 7 năm. Nổi tiếng thương dân, để lại di chiếu dặn xây lăng đơn giản, tiết kiệm sức dân. An táng tại Xương Lăng, làng Cư Chánh.",
+      "dia_diem": "Lăng Thiệu Trị (Xương Lăng), làng Cư Chánh, phường Thủy Xuân, thành phố Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": ["Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn (Lăng Hoàng đế Thiệu Trị — Xương Lăng) — https://hueworldheritage.org.vn/tabid/48/language/vi-VN/Default.aspx/tid/LANG-HOANG-DE-THIEU-TRI-Xuong-Lang.html/pid/2447/cid/87"]
+    },
+    {
+      "id": "tu-duc",
+      "ten": "Tự Đức",
+      "lon": 107.5647, "lat": 16.4331,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1829–1883, trị vì 1847–1883 (36 năm — lâu nhất triều Nguyễn)",
+      "mo_ta": "Tên thật Nguyễn Phúc Hồng Nhậm, vị vua hiếu học, giỏi văn thơ, được ca tụng là ông vua rất có hiếu. Triều đại ông trải qua nhiều biến động khi phải đối phó thế lực phương Tây, cuối cùng để chủ quyền đất nước rơi vào tay thực dân Pháp. An táng tại Khiêm Lăng.",
+      "dia_diem": "Lăng Tự Đức (Khiêm Lăng), phường Thủy Xuân, thành phố Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": ["Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn (Vua Tự Đức) — https://hueworldheritage.org.vn/tabid/48/language/vi-VN/Default.aspx/tid/Vua-Tu-Duc-%e5%97%a3%e5%be%b7%e5%b8%9d-%ec%82%ac%eb%8d%95%ec%a0%9c.html/pid/3793/cid/149"]
+    },
+    {
+      "id": "ham-nghi",
+      "ten": "Hàm Nghi",
+      "lon": 107.5783, "lat": 16.4691,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1871–1944, trị vì 1884–1885",
+      "mo_ta": "Tên thật Nguyễn Phúc Ưng Lịch, lên ngôi năm 13 tuổi. Sau khi cuộc tấn công quân Pháp tại kinh thành Huế thất bại (1885), xuất bôn và ban Chiếu Cần Vương kêu gọi cả nước kháng Pháp. Bị bắt năm 1888, bị đày sang Algérie và mất tại đó — không có lăng mộ tại Việt Nam.",
+      "dia_diem": "Hoàng thành Huế (Đại Nội) — nơi đăng quang; mất và an táng tại Alger, Algérie",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn (Vua Hàm Nghi) — https://hueworldheritage.org.vn/tabid/48/language/vi-VN/Default.aspx/tid/Vua-Ham-Nghi-%e5%92%b8%e5%ae%9c%e5%b8%9d-%ed%95%a8%ec%9d%98%ec%a0%9c.html/pid/3797/cid/149"]
+    },
+    {
+      "id": "duy-tan",
+      "ten": "Duy Tân",
+      "lon": 107.5933, "lat": 16.4524,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1900–1945, trị vì 1907–1916",
+      "mo_ta": "Tên thật Nguyễn Phúc Vĩnh San, lên ngôi khi còn thơ ấu sau khi vua cha Thành Thái bị Pháp lưu đày. Dần bộc lộ thái độ bất hợp tác với Pháp, năm 1916 bí mật liên lạc với Việt Nam Quang Phục Hội mưu khởi nghĩa nhưng thất bại, bị bắt và đày sang đảo Réunion cùng vua cha. Hài cốt được đưa về an táng tại An Lăng năm 1987.",
+      "dia_diem": "An Lăng, phường An Cựu, thành phố Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": ["Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn (Vua Duy Tân) — https://hueworldheritage.org.vn/tabid/48/language/vi-VN/Default.aspx/tid/Vua-Duy-Tan-%e7%b6%ad%e6%96%b0%e5%b8%9d-%ec%9c%a0%ec%8b%a0%ec%a0%9c.html/pid/3800/cid/149"]
+    },
+    {
+      "id": "thanh-thai",
+      "ten": "Thành Thái",
+      "lon": 107.5929, "lat": 16.4520,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1879–1955, trị vì 1889–1907",
+      "mo_ta": "Tên thật Nguyễn Phúc Bửu Lân, vua có tư tưởng cầu tiến, học tiếng Pháp và tiếp xúc văn minh phương Tây nhưng vẫn giữ tinh thần chống Pháp mạnh mẽ. Bị Pháp ép thoái vị năm 1907, đày sang đảo Réunion cùng con trai là vua Duy Tân. An táng tại An Lăng.",
+      "dia_diem": "An Lăng, phường An Cựu, thành phố Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": ["Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn (Vua Thành Thái) — https://hueworldheritage.org.vn/tabid/48/language/vi-VN/Default.aspx/tid/Vua-Thanh-Thai-%e6%88%90%e6%b3%b0%e5%b8%9d-%ec%84%b1%ed%83%9c%ec%a0%9c.html/pid/3799/cid/149"]
+    }
+  ]
+}

@@ -1476,6 +1476,41 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
     },
   },
+  {
+    id: "vua-hoang-de",
+    label: "👑 Vua · Hoàng đế các triều đại",
+    file: "data/overlays/vua-hoang-de.json",
+    circleColor: "#a16207",
+    nguon:
+      "Trung tâm Bảo tồn Di tích Cố đô Huế · Cục Di sản văn hóa · cổng tỉnh · Báo Nhân Dân",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "vo-tuong-trung-dai",
+    label: "🗡️ Võ tướng trung đại (Lý · Trần · Lê · Tây Sơn)",
+    file: "data/overlays/vo-tuong-trung-dai.json",
+    circleColor: "#9f1239",
+    nguon:
+      "Cục Di sản văn hóa · Bảo tàng Lịch sử Quốc gia · Báo QĐND · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "van-nghe-si-khoa-hoc",
+    label: "🎨 Văn nghệ sĩ · nhà khoa học (thế kỷ 20)",
+    file: "data/overlays/van-nghe-si-khoa-hoc.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "van-hoc", "#2563eb",
+      "hoi-hoa", "#7c3aed",
+      "am-nhac", "#db2777",
+      "khoa-hoc", "#0d9488",
+      "#2563eb",
+    ],
+    nguon:
+      "Báo Nhân Dân · Báo QĐND · Bảo tàng Văn học · Cục Bản quyền tác giả · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
