@@ -1035,6 +1035,22 @@ const personOverlayPopup = (p: OverlayItem): string => {
   return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
 };
 
+// Popup dùng chung cho lớp phủ "sự kiện/trận đánh" (ưu tiên nam_hien_thi rồi nam).
+const eventOverlayPopup = (p: OverlayItem): string => {
+  const o = p as OverlayItem & {
+    nam?: string | number;
+    nam_hien_thi?: string;
+    mo_ta?: string;
+    dia_diem?: string;
+    do_tin_cay_toa_do?: string;
+  };
+  const tc =
+    o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+      : "";
+  return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+};
+
 const OVERLAYS: OverlayConf[] = [
   {
     id: "unesco",
@@ -1509,6 +1525,33 @@ const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Báo Nhân Dân · Báo QĐND · Bảo tàng Văn học · Cục Bản quyền tác giả · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "tran-danh-khoi-nghia-bo-sung-2",
+    label: "⚔️ Trận đánh · khởi nghĩa (bổ sung — cổ · cận đại)",
+    file: "data/overlays/tran-danh-khoi-nghia-bo-sung-2.json",
+    circleColor: "#dc2626",
+    nguon:
+      "Báo QĐND (sknc/ct.qdnd.vn) · Báo Nhân Dân · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: eventOverlayPopup,
+  },
+  {
+    id: "chi-si-cach-mang",
+    label: "🔥 Chí sĩ yêu nước · nhà cách mạng tiền bối",
+    file: "data/overlays/chi-si-cach-mang.json",
+    circleColor: "#b91c1c",
+    nguon:
+      "Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · TTXVN · Báo Nhân Dân · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "to-nghe-danh-than",
+    label: "🛠️ Tổ nghề · thành hoàng · danh thần (bổ sung)",
+    file: "data/overlays/to-nghe-danh-than.json",
+    circleColor: "#0891b2",
+    nguon:
+      "Cục Di sản văn hóa · Sở VHTT các tỉnh · Cục Bản quyền tác giả · cổng tỉnh",
     popup: personOverlayPopup,
   },
 ];
