@@ -1478,6 +1478,21 @@ body.kid-mode #topbar {
   overflow-y: auto;
   padding-right: 0.2rem;
 }
+/* Nhãn nhỏ «huyền sử» + ghi chú cảnh báo cương vực cổ */
+#layer-control .lc-tag {
+  font-size: 0.66rem;
+  background: rgba(147, 51, 234, 0.14);
+  color: #7c3aed;
+  border-radius: var(--radius-pill);
+  padding: 0.02rem 0.42rem;
+  font-weight: 600;
+}
+#layer-control .lc-note {
+  font-size: 0.72rem;
+  color: #b45309;
+  line-height: 1.35;
+  margin: 0.35rem 0.2rem 0;
+}
 #layer-control label {
   display: flex;
   align-items: center;

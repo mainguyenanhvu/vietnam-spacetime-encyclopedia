@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "ghi_chu": "CƯƠNG VỰC XẤP XỈ / PHỎNG DỰNG các nhà nước Việt cổ (Xích Quỷ → Văn Lang → Âu Lạc → Vạn Xuân). Polygon là PHỎNG DỰNG HỌC THUẬT theo địa danh hiện đại, KHÔNG phải bản đồ chủ quyền, KHÔNG dùng cho bất kỳ tuyên bố lãnh thổ nào. Khảo cổ chỉ xác nhận SỰ TỒN TẠI của trung tâm chính trị (văn hoá Đông Sơn, thành Cổ Loa), không xác nhận đường biên cụ thể. Xích Quỷ là HUYỀN SỬ/BIỂU TƯỢNG gốc Bách Việt (mô tả trong ĐVSKTT có thể vay mượn địa giới nước Sở). Nguồn: Đào Duy Anh «Đất nước Việt Nam qua các đời», ĐVSKTT Ngoại kỷ, Bảo tàng Lịch sử Quốc gia. KHÔNG dùng Wikipedia.",
+  "ngay_cap_nhat": "2026-07-19",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "xich-quy",
+        "ten": "Xích Quỷ (Kinh Dương Vương)",
+        "nien_dai": "Huyền sử · ĐVSKTT gán ≈ 2879 TCN (suy đoán muộn của sử quan)",
+        "kinh_do": "Không xác định trong sử gốc; dân gian gán vùng Phong Châu",
+        "muc_do_tin_cay": "huyen-su",
+        "ghi_chu": "HUYỀN SỬ / BIỂU TƯỢNG. Mô tả «bắc giáp Động Đình, nam giáp Hồ Tôn, tây giáp Ba Thục, đông giáp Nam Hải» mang tính biểu tượng về gốc Bách Việt; có nghiên cứu cho rằng bốn mốc này trùng địa giới nước Sở thời Xuân Thu–Chiến Quốc. KHÔNG phải bản đồ chủ quyền.",
+        "nguon": ["Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Hồng Bàng thị", "Đào Duy Anh — Đất nước Việt Nam qua các đời"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[104.06, 30.67], [110.50, 29.50], [112.90, 29.30], [113.30, 22.20], [109.80, 16.50], [109.20, 13.80], [105.50, 15.00], [102.50, 22.50], [104.06, 30.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "van-lang",
+        "ten": "Văn Lang (Hùng Vương)",
+        "nien_dai": "≈ TK VII TCN – 258 TCN (khớp văn hoá Đông Sơn)",
+        "kinh_do": "Phong Châu (Việt Trì – Phú Thọ)",
+        "muc_do_tin_cay": "su-lieu",
+        "ghi_chu": "Châu thổ & trung du sông Hồng – Mã – Cả (Bắc Bộ + bắc Trung Bộ tới Hoành Sơn). Đường biên là PHỎNG DỰNG học thuật (Đào Duy Anh); khảo cổ Đông Sơn xác nhận có nhà nước sơ khai, không xác nhận biên giới chi tiết 15 bộ.",
+        "nguon": ["Đào Duy Anh — Đất nước Việt Nam qua các đời", "ĐVSKTT — Ngoại kỷ", "Việt sử lược"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[103.9, 22.8], [105.8, 23.3], [107.0, 21.5], [107.0, 20.2], [106.2, 17.9], [105.0, 18.5], [103.8, 20.5], [103.9, 22.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "au-lac",
+        "ten": "Âu Lạc (An Dương Vương)",
+        "nien_dai": "≈ 257 TCN – 179 TCN",
+        "kinh_do": "Cổ Loa (Đông Anh, Hà Nội) — Di tích Quốc gia đặc biệt",
+        "muc_do_tin_cay": "su-lieu",
+        "ghi_chu": "Văn Lang hợp nhất với vùng Âu Việt (Việt Bắc: Cao Bằng, Lạng Sơn), mở rộng về Bắc/Đông Bắc. Thành Cổ Loa (3 vòng thành, trống đồng, xưởng đúc mũi tên) là bằng chứng khảo cổ vững cho TRUNG TÂM; phần biên phía Âu Việt vẫn là suy luận sử liệu.",
+        "nguon": ["Bảo tàng Lịch sử Quốc gia — Cổ Loa, kinh đô Âu Lạc", "ĐVSKTT & Việt sử lược", "Đào Duy Anh — Đất nước Việt Nam qua các đời"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[103.8, 23.3], [106.0, 23.8], [107.5, 21.8], [107.2, 20.2], [106.2, 17.9], [105.0, 18.5], [103.8, 20.5], [103.8, 23.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "van-xuan",
+        "ten": "Vạn Xuân (Lý Nam Đế)",
+        "nien_dai": "544 – 602 SCN",
+        "kinh_do": "Vùng cửa sông Tô Lịch (nội thành Hà Nội)",
+        "muc_do_tin_cay": "su-lieu",
+        "ghi_chu": "Quốc hiệu chính sử (không phải huyền sử), được cả sử Việt (ĐVSKTT) và sử Trung Quốc (Lương thư) ghi nhận — độ tin cậy niên đại cao nhất trong 4 thời kỳ. Địa bàn ≈ Giao Châu cũ (đồng bằng sông Hồng + bắc Trung Bộ tới Hoành Sơn). Đường biên vẫn là xấp xỉ.",
+        "nguon": ["ĐVSKTT — Bản kỷ (Tiền Lý)", "Lương thư (đối chiếu sử Trung Quốc)"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[104.5, 22.5], [106.0, 21.5], [107.0, 20.5], [106.2, 17.9], [105.2, 18.6], [104.3, 20.3], [104.5, 22.5]]]
+      }
+    }
+  ]
+}

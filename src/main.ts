@@ -361,6 +361,87 @@ function setTaberdOpacity(v: number): void {
   if (map.getLayer("taberd")) map.setPaintProperty("taberd", "raster-opacity", v);
 }
 
+// --- Cương vực Việt cổ (PHỎNG DỰNG xấp xỉ): Xích Quỷ → Văn Lang → Âu Lạc → Vạn Xuân.
+// Đường biên nét ĐỨT + tô mờ để nhấn «phỏng dựng, không phải chủ quyền». Xích Quỷ
+// là huyền sử/biểu tượng — popup ghi rõ. Dữ liệu: co-truong-viet-co.json. ---
+function initCuongVuc(): void {
+  const url = `${import.meta.env.BASE_URL}data/geo/co-truong-viet-co.json`;
+  void fetch(url)
+    .then((r) => (r.ok ? (r.json() as Promise<GeoJSON.FeatureCollection>) : null))
+    .then((geo) => {
+      if (!geo || map.getSource("cuong-vuc")) return;
+      map.addSource("cuong-vuc", { type: "geojson", data: geo });
+      const color = [
+        "match",
+        ["get", "id"],
+        "xich-quy", "#9333ea",
+        "van-lang", "#dc2626",
+        "au-lac", "#ea580c",
+        "van-xuan", "#0d9488",
+        "#dc2626",
+      ] as unknown as ExpressionSpecification;
+      const before = map.getLayer("chu-quyen-labels") ? "chu-quyen-labels" : undefined;
+      map.addLayer(
+        {
+          id: "cuong-vuc-fill",
+          type: "fill",
+          source: "cuong-vuc",
+          filter: ["==", ["get", "id"], "__none__"],
+          layout: { visibility: "none" },
+          paint: { "fill-color": color, "fill-opacity": 0.16 },
+        } as never,
+        before,
+      );
+      map.addLayer(
+        {
+          id: "cuong-vuc-line",
+          type: "line",
+          source: "cuong-vuc",
+          filter: ["==", ["get", "id"], "__none__"],
+          layout: { visibility: "none", "line-join": "round" },
+          paint: { "line-color": color, "line-width": 2, "line-dasharray": [3, 2], "line-opacity": 0.9 },
+        } as never,
+        before,
+      );
+      map.on("click", "cuong-vuc-fill", (e) => {
+        const f = e.features?.[0];
+        if (!f) return;
+        const p = f.properties as Record<string, string>;
+        let nguon = p.nguon ?? "";
+        try {
+          const arr = JSON.parse(p.nguon);
+          if (Array.isArray(arr)) nguon = arr.join(" · ");
+        } catch {
+          /* giữ nguyên chuỗi */
+        }
+        new maplibregl.Popup({ offset: 10, maxWidth: "320px" })
+          .setLngLat(e.lngLat)
+          .setHTML(
+            `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Phỏng dựng xấp xỉ theo sử liệu — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+          )
+          .addTo(map);
+      });
+      map.on("mouseenter", "cuong-vuc-fill", () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "cuong-vuc-fill", () => {
+        map.getCanvas().style.cursor = "";
+      });
+    })
+    .catch(() => {});
+}
+function applyCuongVuc(eraId: string): void {
+  const on = eraId !== "off";
+  const v = on ? "visible" : "none";
+  const filt = ["==", ["get", "id"], on ? eraId : "__none__"];
+  for (const id of ["cuong-vuc-fill", "cuong-vuc-line"]) {
+    if (map.getLayer(id)) {
+      map.setFilter(id, filt as never);
+      map.setLayoutProperty(id, "visibility", v);
+    }
+  }
+}
+
 // --- Animation Nam tiến: lộ dần các tỉnh (bản đồ 34 tỉnh) theo mốc sáp nhập ---
 interface NamTienMoc {
   buoc: number;
@@ -698,6 +779,7 @@ map.on("load", () => {
   });
 
   initSongNui();
+  initCuongVuc();
   initNamTien();
   setEra(currentEra);
   buildTimeline();
@@ -1326,6 +1408,17 @@ function buildLayerControl(): void {
         <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
         <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
       </div>
+    </details>
+    <details class="lc-sec">
+      <summary>🐉 Cương vực Việt cổ</summary>
+      <div class="group">
+        <label><input type="radio" name="cuongvuc" value="off" checked/> Tắt</label>
+        <label><input type="radio" name="cuongvuc" value="xich-quy"/> Xích Quỷ <span class="lc-tag">huyền sử</span></label>
+        <label><input type="radio" name="cuongvuc" value="van-lang"/> Văn Lang (Hùng Vương)</label>
+        <label><input type="radio" name="cuongvuc" value="au-lac"/> Âu Lạc (Cổ Loa)</label>
+        <label><input type="radio" name="cuongvuc" value="van-xuan"/> Vạn Xuân (544–602)</label>
+        <p class="lc-note">⚠️ Phỏng dựng xấp xỉ theo sử liệu — bấm vùng để xem chú thích. KHÔNG phải bản đồ chủ quyền.</p>
+      </div>
     </details>`;
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
@@ -1335,6 +1428,7 @@ function buildLayerControl(): void {
     if (t.name === "labels") applyLabels(t.checked);
     if (t.name === "songnui") applySongNui(t.checked);
     if (t.name === "taberd") applyTaberd(t.checked);
+    if (t.name === "cuongvuc") applyCuongVuc(t.value);
   });
   el.addEventListener("input", (e) => {
     const t = e.target as HTMLInputElement;
