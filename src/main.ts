@@ -941,6 +941,35 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
     },
   },
+  {
+    id: "khoi-nghia-bac-thuoc",
+    label: "⚔️ Anh hùng chống Bắc thuộc & mở nền tự chủ",
+    file: "data/overlays/khoi-nghia-bac-thuoc.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "khoi-nghia",
+      "#ea580c",
+      "tu-chu",
+      "#15803d",
+      "#ea580c",
+    ],
+    nguon:
+      "Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái · Việt Điện U Linh · Cục Di sản Văn hoá (dsvh.gov.vn)",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        thoi_ky?: string;
+        noi_tho?: string;
+        cong_trang?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();

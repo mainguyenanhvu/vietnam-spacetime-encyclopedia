@@ -19,7 +19,11 @@ const isWiki = (s) => /wikipedia\.org|wikimedia\.org/i.test(String(s));
 
 // --- Overlays ---
 const OVERLAY_DIR = P("public/data/overlays");
-const STRICT_SOURCE = new Set(["bao-vat-quoc-gia.json", "huyen-su-khai-quoc.json"]); // yêu cầu nguồn ngoài Wiki mỗi mục
+const STRICT_SOURCE = new Set([
+  "bao-vat-quoc-gia.json",
+  "huyen-su-khai-quoc.json",
+  "khoi-nghia-bac-thuoc.json",
+]); // yêu cầu nguồn ngoài Wiki mỗi mục
 for (const file of readdirSync(OVERLAY_DIR).filter((f) => f.endsWith(".json"))) {
   const data = read(join(OVERLAY_DIR, file));
   if (!Array.isArray(data.items)) {

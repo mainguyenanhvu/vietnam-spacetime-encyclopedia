@@ -29,8 +29,8 @@ Overlay mới `huyen-su-khai-quoc.json`. ~10 mục, neo vào nơi thờ:
 9. Mẫu Liễu Hạnh — Quần thể Phủ Dày, Vụ Bản, Nam Định. [Tứ bất tử]
 10. Hải đội Hoàng Sa (kiêm quản Bắc Hải/Trường Sa) — Âm Linh Tự & Nhà trưng bày Hải đội Hoàng Sa, đảo Lý Sơn, Quảng Ngãi. Lễ Khao lề thế lính Hoàng Sa (DSVH phi vật thể QG). **[chủ quyền]**
 
-### ⏳ Đợt 2 — Anh hùng dựng/giữ nước & khởi nghĩa chống Bắc thuộc
-Hai Bà Trưng (Mê Linh), Bà Triệu (Hậu Lộc, Thanh Hoá), Lý Nam Đế (Vạn Xuân), Triệu Quang Phục, Mai Thúc Loan, Phùng Hưng, Ngô Quyền (Bạch Đằng 938) → overlay `khoi-nghia-bac-thuoc.json`.
+### ✅ Đợt 2 — Anh hùng chống Bắc thuộc & mở nền tự chủ  ← XONG (commit sau 68d3b67)
+Overlay `khoi-nghia-bac-thuoc.json`, 8 mục neo nơi thờ: Hai Bà Trưng (Mê Linh), Bà Triệu (Hậu Lộc), Lý Nam Đế/Vạn Xuân (Phổ Yên), Triệu Việt Vương (Dạ Trạch), Mai Hắc Đế (Nam Đàn), Phùng Hưng + Ngô Quyền (Đường Lâm — «một ấp hai vua», tách toạ độ), Khúc Thừa Dụ (Ninh Giang). Nguồn ĐVSKTT + cổng nhà nước; 3 reviewed, 5 draft. Đã thêm vào STRICT_SOURCE.
 
 ### ⏳ Đợt 3 — Trạng nguyên/tiến sĩ + thầy giáo + quan thanh liêm
 Chu Văn An, Mạc Đĩnh Chi, Nguyễn Trãi, Nguyễn Bỉnh Khiêm, Lê Quý Đôn, Nguyễn Khuyến; Văn Miếu – 82 bia tiến sĩ (Ký ức Thế giới UNESCO). Quan thanh liêm: Tô Hiến Thành, Nguyễn Công Trứ…
