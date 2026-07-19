@@ -1003,6 +1003,39 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
     },
   },
+  {
+    id: "danh-tuong-khang-chien",
+    label: "🛡️ Danh tướng & các cuộc kháng chiến giữ nước",
+    file: "data/overlays/danh-tuong-khang-chien.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "khang-tong-ly",
+      "#ca8a04",
+      "khang-nguyen-tran",
+      "#dc2626",
+      "lam-son-le",
+      "#16a34a",
+      "tay-son",
+      "#9333ea",
+      "#dc2626",
+    ],
+    nguon:
+      "Đại Việt Sử Ký Toàn Thư · Lam Sơn thực lục · Hoàng Lê nhất thống chí · Cục Di sản Văn hoá (dsvh.gov.vn)",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        thoi_ky?: string;
+        noi_tho?: string;
+        cong_trang?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();

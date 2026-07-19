@@ -38,11 +38,11 @@ Overlay `khoa-bang-danh-nhan.json`, 9 mục: Văn Miếu – Quốc Tử Giám (
 ### ✅ Dọn Wikipedia (theo cảnh báo Iron Man 2026-07-19)
 Gỡ 25 link `vi.wikipedia.org` khỏi `di-tich-qgdb.json` (mỗi mục giữ nguồn Cục Di sản). Mọi overlay danh nhân mới KHÔNG dùng Wikipedia làm nguồn nội dung — chỉ chính sử + cổng nhà nước.
 
-### ⏳ Đợt 4 — Thần linh, thành hoàng, phong tục/trang phục, folklore vùng
-Thành hoàng tiêu biểu; tín ngưỡng thờ Mẫu (DSVH nhân loại UNESCO); đổi thay trang phục (áo giao lĩnh→áo tứ thân→áo dài); ca dao/tục ngữ gắn địa danh.
+### ✅ Đợt 5 — Danh tướng & các cuộc kháng chiến giữ nước  ← XONG
+Overlay `danh-tuong-khang-chien.json`, 7 mục theo cuộc kháng chiến: Lý Thường Kiệt (kháng Tống), Trần Hưng Đạo + Phạm Ngũ Lão + Yết Kiêu (kháng Nguyên–Mông), Lê Lợi + Lê Lai (Lam Sơn), Quang Trung (Tây Sơn — mở rộng bản đồ xuống Bình Định 13.9°N). Nguồn ĐVSKTT/Lam Sơn thực lục/Hoàng Lê nhất thống chí + cổng nhà nước; 3 reviewed, 4 draft (Lý Thường Kiệt thấp — chỉ neo tên đường, cần soát). Thêm STRICT_SOURCE.
 
-### ⏳ Đợt 5 — Khởi nghĩa & kháng chiến lớn (lớp sự kiện)
-Lam Sơn, Tây Sơn, kháng Nguyên-Mông, kháng Pháp/Mỹ — tái dùng `battles/` + `journey/` hoặc overlay sự kiện.
+### ⏳ Đợt 4 — Thần linh, thành hoàng, phong tục/trang phục, folklore vùng  (TÁI ĐỊNH HƯỚNG)
+Nhóm này KHÓ neo điểm bản đồ (tiến hoá trang phục, ca dao/tục ngữ không phải toạ độ điểm) và MỘT PHẦN đã có trong dự án: `ca-dao-tuc-ngu.json` (35), `bai-hat-que-huong.json` (32), tín ngưỡng thờ Mẫu đã có ở Đợt 1 (Liễu Hạnh/Phủ Dầy). Đề xuất: đưa vào **Thư viện + timeline** thay vì overlay điểm — chờ Iron Man chốt hướng (overlay thành hoàng tiêu biểu vs. bổ sung Thư viện). CHƯA làm trong phiên này.
 
 ## Tiêu chí "done" mỗi đợt
 1. File JSON + OverlayConf (nếu overlay mới) + STRICT_SOURCE.
