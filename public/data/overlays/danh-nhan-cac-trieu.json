@@ -1,0 +1,198 @@
+{
+  "ghi_chu": "Danh nhân các triều đại · văn hoá · y học, neo vào NƠI THỜ / khu lưu niệm. Nội dung theo chính sử & trước tác gốc (Đại Việt Sử Ký Toàn Thư, Đại Nam Liệt Truyện, Truyện Kiều, Hải Thượng Y Tông Tâm Lĩnh, Nam Dược Thần Hiệu) + cổng di sản nhà nước. KHÔNG dùng Wikipedia làm nguồn nội dung. Toạ độ soát 2026-07-19 (OSM Nominatim + đối chiếu tỉnh): cao = khớp POI đền/khu di tích; trung/thấp = định vị theo xã/vùng, cần soát. Lê Thánh Tông tách khỏi toạ độ Lê Lợi (cùng quần thể Lam Kinh) về khu Chiêu Lăng để hai pin không chồng. Sáp nhập tỉnh 2025: toạ độ địa lý giữ nguyên. Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực. loai: vua, van-hoc, y-hoc, khai-pha.",
+  "ngay_cap_nhat": "2026-07-19",
+  "sources": [
+    "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên); Đại Nam Liệt Truyện",
+    "Truyện Kiều (Nguyễn Du); Hải Thượng Y Tông Tâm Lĩnh (Lê Hữu Trác); Nam Dược Thần Hiệu (Tuệ Tĩnh)",
+    "Cục Di sản Văn hoá — dsvh.gov.vn"
+  ],
+  "items": [
+    {
+      "id": "ly-thai-to",
+      "ten": "Lý Thái Tổ – Lý Công Uẩn",
+      "lon": 105.9588,
+      "lat": 21.1081,
+      "loai": "vua",
+      "thoi_ky": "Khai sáng nhà Lý (974–1028)",
+      "noi_tho": "Đền Đô (Đền Lý Bát Đế), Đình Bảng, Từ Sơn, Bắc Ninh",
+      "cong_trang": "Sáng lập nhà Lý, năm 1010 dời đô từ Hoa Lư ra Đại La, đổi tên Thăng Long — mở nền văn hiến Thăng Long ngàn năm qua «Chiếu dời đô».",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Lý; Chiếu dời đô (nguyên tác)",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Đền Đô, Đình Bảng"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "tran-nhan-tong",
+      "ten": "Phật hoàng Trần Nhân Tông",
+      "lon": 106.7182,
+      "lat": 21.1518,
+      "loai": "vua",
+      "thoi_ky": "Nhà Trần (1258–1308)",
+      "noi_tho": "Chùa Hoa Yên · Tháp Huệ Quang, Yên Tử, Quảng Ninh",
+      "cong_trang": "Vị vua hai lần lãnh đạo kháng chiến chống Nguyên–Mông thắng lợi, rồi nhường ngôi tu hành, sáng lập Thiền phái Trúc Lâm Yên Tử — dòng thiền thuần Việt.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Trần; Tam Tổ thực lục",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Quần thể Yên Tử (Di sản thế giới)"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "le-thanh-tong",
+      "ten": "Lê Thánh Tông",
+      "lon": 105.4062,
+      "lat": 19.9298,
+      "loai": "vua",
+      "thoi_ky": "Nhà Lê sơ (1442–1497)",
+      "noi_tho": "Chiêu Lăng, khu di tích Lam Kinh, Thọ Xuân, Thanh Hoá",
+      "cong_trang": "Vị minh quân thời Hồng Đức: ban Bộ luật Hồng Đức, lập hội Tao Đàn, sai Ngô Sĩ Liên soạn «Đại Việt Sử Ký Toàn Thư», mở mang bờ cõi — thời thịnh trị bậc nhất.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Lê; Quốc triều hình luật (luật Hồng Đức)",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Lam Kinh, DTQG đặc biệt (Chiêu Lăng)"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-du",
+      "ten": "Đại thi hào Nguyễn Du",
+      "lon": 105.7920,
+      "lat": 18.6680,
+      "loai": "van-hoc",
+      "thoi_ky": "Cuối Lê – đầu Nguyễn (1765–1820)",
+      "noi_tho": "Khu di tích Nguyễn Du, Tiên Điền, Nghi Xuân, Hà Tĩnh",
+      "cong_trang": "Tác giả «Truyện Kiều» (Đoạn trường tân thanh) — kiệt tác thơ Nôm; Danh nhân văn hoá được UNESCO vinh danh (1965). «Lời quê chắp nhặt dông dài…».",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Truyện Kiều (nguyên tác Nguyễn Du); Đại Nam Liệt Truyện",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Khu di tích Nguyễn Du, DTQG đặc biệt"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-dinh-chieu",
+      "ten": "Nguyễn Đình Chiểu (Đồ Chiểu)",
+      "lon": 106.5819,
+      "lat": 10.0372,
+      "loai": "van-hoc",
+      "thoi_ky": "Nhà Nguyễn (1822–1888)",
+      "noi_tho": "Khu lăng mộ & đền thờ Nguyễn Đình Chiểu, Ba Tri, Bến Tre",
+      "cong_trang": "Nhà thơ yêu nước mù loà, tác giả «Lục Vân Tiên» và «Văn tế nghĩa sĩ Cần Giuộc» — «Chở bao nhiêu đạo thuyền không khẳm». Danh nhân văn hoá UNESCO vinh danh (2022).",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Lục Vân Tiên; Văn tế nghĩa sĩ Cần Giuộc (nguyên tác)",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Mộ Nguyễn Đình Chiểu, DTQG đặc biệt"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "ho-xuan-huong",
+      "ten": "Bà chúa thơ Nôm Hồ Xuân Hương",
+      "lon": 105.6353,
+      "lat": 19.1432,
+      "loai": "van-hoc",
+      "thoi_ky": "Cuối Lê – đầu Nguyễn (khoảng 1772–1822)",
+      "noi_tho": "Làng Quỳnh Đôi, Quỳnh Lưu, Nghệ An (quê gốc)",
+      "cong_trang": "«Bà chúa thơ Nôm» với hồn thơ trào phúng, phá cách, bênh vực người phụ nữ. Danh nhân văn hoá được UNESCO vinh danh (2022).",
+      "nhan_hinh_dung": "Tượng/ảnh là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Thơ Nôm Hồ Xuân Hương (bản khảo đính)",
+        "Sở VHTTDL Nghệ An — làng Quỳnh Đôi (chờ soát toạ độ nơi thờ)"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "doan-thi-diem",
+      "ten": "Hồng Hà nữ sĩ Đoàn Thị Điểm",
+      "lon": 106.0318,
+      "lat": 20.9375,
+      "loai": "van-hoc",
+      "thoi_ky": "Lê trung hưng (1705–1748)",
+      "noi_tho": "Giai Phạm, Yên Mỹ, Hưng Yên (quê hương)",
+      "cong_trang": "Nữ sĩ tài danh, dịch giả bản «Chinh phụ ngâm» chữ Nôm được xem là tuyệt tác — «Thuở trời đất nổi cơn gió bụi».",
+      "nhan_hinh_dung": "Tượng/ảnh là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Chinh phụ ngâm (bản dịch Nôm); Truyền kỳ tân phả (Đoàn Thị Điểm)",
+        "Sở VHTTDL Hưng Yên — di tích Giai Phạm, Yên Mỹ"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "cao-ba-quat",
+      "ten": "Thánh Quát – Cao Bá Quát",
+      "lon": 105.9661,
+      "lat": 21.0175,
+      "loai": "van-hoc",
+      "thoi_ky": "Nhà Nguyễn (1809–1855)",
+      "noi_tho": "Làng Phú Thị, Gia Lâm, Hà Nội (quê hương)",
+      "cong_trang": "Nhà thơ tài hoa bậc nhất triều Nguyễn, khí phách ngang tàng — «Nhất sinh đê thủ bái mai hoa» (Suốt đời chỉ cúi đầu trước hoa mai).",
+      "nhan_hinh_dung": "Tượng/ảnh là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Thơ chữ Hán Cao Bá Quát (bản khảo đính); Đại Nam Liệt Truyện",
+        "Sở VHTTDL Hà Nội — di tích làng Phú Thị, Gia Lâm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "le-huu-trac",
+      "ten": "Hải Thượng Lãn Ông Lê Hữu Trác",
+      "lon": 105.4407,
+      "lat": 18.5181,
+      "loai": "y-hoc",
+      "thoi_ky": "Lê trung hưng (1724–1791)",
+      "noi_tho": "Khu di tích Hải Thượng Lãn Ông, Sơn Trung, Hương Sơn, Hà Tĩnh",
+      "cong_trang": "Đại danh y, soạn bộ «Hải Thượng Y Tông Tâm Lĩnh» (66 quyển) — pho bách khoa y học cổ truyền; nêu cao y đức. Danh nhân được UNESCO vinh danh (2023).",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Hải Thượng Y Tông Tâm Lĩnh (nguyên tác); Thượng Kinh ký sự",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Khu di tích Lê Hữu Trác, Hương Sơn"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tue-tinh",
+      "ten": "Đại y thiền sư Tuệ Tĩnh",
+      "lon": 106.2534,
+      "lat": 20.9780,
+      "loai": "y-hoc",
+      "thoi_ky": "Nhà Trần (thế kỷ 14)",
+      "noi_tho": "Đền Bia, Cẩm Giàng, Hải Dương",
+      "cong_trang": "Ông tổ thuốc Nam, nêu tư tưởng «Nam dược trị Nam nhân»; soạn «Nam Dược Thần Hiệu» và «Hồng Nghĩa Giác Tư Y Thư».",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Nam Dược Thần Hiệu; Hồng Nghĩa Giác Tư Y Thư (nguyên tác)",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Đền Bia (thờ Tuệ Tĩnh), Cẩm Giàng"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "dao-duy-tu",
+      "ten": "Đào Duy Từ",
+      "lon": 109.0137,
+      "lat": 14.4259,
+      "loai": "khai-pha",
+      "thoi_ky": "Đàng Trong – chúa Nguyễn (1572–1634)",
+      "noi_tho": "Đền thờ Đào Duy Từ, Hoài Nhơn, Bình Định (nay Gia Lai)",
+      "cong_trang": "Nhà chiến lược khai quốc Đàng Trong, thiết kế luỹ Thầy (Trường Dục – Nhật Lệ) giữ vững bờ cõi; tác giả «Ngoạ Long cương vãn», ông tổ nghệ thuật tuồng.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Đại Nam Liệt Truyện (Tiền biên); Ngoạ Long cương vãn",
+        "Sở VHTTDL — đền thờ Đào Duy Từ, Hoài Nhơn (chờ soát toạ độ)"
+      ],
+      "trang_thai": "draft"
+    }
+  ]
+}

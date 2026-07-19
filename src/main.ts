@@ -1073,6 +1073,64 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
     },
   },
+  {
+    id: "danh-nhan-cac-trieu",
+    label: "🏛️ Danh nhân các triều · văn hoá · y học",
+    file: "data/overlays/danh-nhan-cac-trieu.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "vua", "#b91c1c",
+      "van-hoc", "#7c3aed",
+      "y-hoc", "#0d9488",
+      "khai-pha", "#ca8a04",
+      "#7c3aed",
+    ],
+    nguon:
+      "Đại Việt Sử Ký Toàn Thư · Đại Nam Thực Lục · Đại Nam Liệt Truyện · Hải Thượng Y Tông Tâm Lĩnh · Cục Di sản Văn hoá (dsvh.gov.vn)",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        thoi_ky?: string;
+        noi_tho?: string;
+        cong_trang?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
+    },
+  },
+  {
+    id: "chien-dich-tran-danh",
+    label: "⚔️ Chiến dịch · trận đánh · khởi nghĩa (938–1975)",
+    file: "data/overlays/chien-dich-tran-danh.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "giu-nuoc", "#dc2626",
+      "can-dai", "#ca8a04",
+      "hien-dai", "#b91c1c",
+      "#dc2626",
+    ],
+    nguon:
+      "Đại Việt Sử Ký Toàn Thư · Hoàng Lê nhất thống chí · Lịch sử Việt Nam (Viện Sử học) · Cục Di sản Văn hoá (dsvh.gov.vn)",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        nam_hien_thi?: string;
+        ket_qua?: string;
+        chi_huy?: string;
+        dia_diem?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ địa điểm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}${o.chi_huy ? " · " + esc(o.chi_huy) : ""}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.ket_qua ? `<br/><span style="color:#57534e">${esc(o.ket_qua)}</span>` : ""}${tc}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();

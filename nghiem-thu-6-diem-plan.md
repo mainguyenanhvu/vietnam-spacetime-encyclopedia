@@ -22,6 +22,11 @@
 - **Sóng 2 — Đại tu UI #6 (tôi làm):** style.css design system + topbar/panel/popup/layer-control hiện đại.
 - **Sóng 3 — Mở rộng dữ liệu #3/#4 (delegate research agents, nền):** overlay danh nhân theo triều + overlay chiến dịch/trận đánh/khởi nghĩa. Agent trả toạ độ + facts nguồn chính thống; tôi ghi file + validator.
 
+## Tiến độ (2026-07-19)
+- ✅ **Sóng 1** — commit `39d3d89`: #1 to-color, #2 đường sông LineString (19 sông + 26 núi), #5 Nam tiến giảm opacity + viền mặt trận.
+- ✅ **Sóng 2** — commit `312e06b`: #6 đại tu UI (design token, topbar gradient, panel kính mờ, popup/timeline/scrollbar hiện đại).
+- 🔄 **Sóng 3** — #4 overlay `chien-dich-tran-danh.json` XONG (17 trận/khởi nghĩa 938–1975, agent soát toạ độ; 9 reviewed, 8 draft). #3 overlay `danh-nhan-cac-trieu.json` đang chờ agent soát toạ độ nơi thờ (12 danh nhân các triều/văn hoá/y học).
+
 ## Tiêu chí done
 - `node scripts/validate_overlays.mjs` + 9 validator xanh; `npm run build` xanh.
 - Mỗi mục dữ liệu mới: ≥1 nguồn ngoài Wikipedia; toạ độ trong bbox + soát tỉnh.
