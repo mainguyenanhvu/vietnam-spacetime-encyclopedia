@@ -1635,6 +1635,32 @@ const OVERLAYS: OverlayConf[] = [
       "Báo QĐND · Bảo tàng Lịch sử Quốc gia · Cục Di sản văn hóa · cổng tỉnh",
     popup: personOverlayPopup,
   },
+  {
+    id: "le-hoi-truyen-thong",
+    label: "🎏 Lễ hội truyền thống (di sản phi vật thể)",
+    file: "data/overlays/le-hoi-truyen-thong.json",
+    circleColor: "#ea580c",
+    nguon:
+      "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "lang-nghe-truyen-thong",
+    label: "🧵 Làng nghề truyền thống",
+    file: "data/overlays/lang-nghe-truyen-thong.json",
+    circleColor: "#ca8a04",
+    nguon:
+      "Cục Du lịch Quốc gia · Cục Di sản văn hóa · Sở VHTT các tỉnh · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-thang-di-san-thien-nhien",
+    label: "🏞️ Danh thắng · vườn quốc gia · di sản thiên nhiên",
+    file: "data/overlays/danh-thang-di-san-thien-nhien.json",
+    circleColor: "#16a34a",
+    nguon: "Cục Du lịch Quốc gia — vietnamtourism.vn · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
