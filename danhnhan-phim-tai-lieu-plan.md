@@ -59,10 +59,26 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 - ⚠️ Sandbox chặn WebGL → không render map trực tiếp được (styleLoaded=false ngay cả offline style). Kiểm chứng: enrich 34/34 tỉnh (browser thật), reveal đơn điệu 18→34 (node), tsc+build+8 validator+audit_sovereignty xanh. **Cần nghiệm thu production**: nhãn/pin/animation render + **tinh chỉnh 4 góc Taberd** (đối chiếu bờ biển). Toạ độ góc trong `TABERD_CORNERS` (main.ts) dễ sửa.
 - 8 điểm toạ độ bảo vật độ tin cậy thấp (Lam Kinh, Hoa Lư, BT Hoàng gia Nam Hồng… — xem NOTES agent) cần soát; Nam tiến: phần cao nguyên (Gia Lai/Đắk Lắk/Lâm Đồng) gán mốc lowland sớm — có caveat UI.
 
-## Còn lại sau phiên (đợt tiếp)
-- Soát nguồn 46+ danh nhân draft (gắn URL cổng tỉnh/bảo tàng khi WebSearch có quota lại); soát 2 điểm tin cậy thấp (quê Vũ Văn Dũng, Dã Tượng).
-- #6 backlog: Bảo vật quốc gia pins, Nam tiến animation, overlay đợt 2, Taberd georef (cần quyết định/dữ liệu — chưa "không bị chặn").
-- Mở rộng danh nhân đợt lớn hơn (hiện 301) + ảnh Commons cho tỉnh còn thiếu (11 tỉnh agent A chưa tìm được).
+## Phiên 2026-07-19 (tiếp) — nghiệm thu backlog + soát toạ độ bảo vật (ed686d2)
+- **User trao toàn quyền tự hoàn thành backlog; chỉ kiểm khi xong hết.** Rà lại thực tế → phần lớn "pending" đã xong:
+  - ✅ Ảnh 11 tỉnh thiếu → thực tế **34/34 tỉnh đều có ảnh** (đợt +29 Commons đã phủ), hết việc.
+  - ✅ Caveat Nam tiến cao nguyên → **đã có sẵn** (main.ts:506 "phần cao nguyên trên thực tế muộn hơn").
+  - ✅ Rule phim nhà nước → **45/45 `kenh_loai=state` đã `phim_trang_thai=reviewed`**; không còn auto-flip hợp lệ.
+- **Soát toạ độ 8 nơi lưu giữ bảo vật (research agent, WebFetch dsvh.gov.vn/bảo tàng + OSM Nominatim)** → sửa 5, giữ 3:
+  - Sửa: BT Đà Nẵng (108.474,15.573→108.2216,16.0763 — cũ trỏ nhầm Tam Kỳ), BT Lâm Đồng (108.102,10.933→108.4599,11.9406 — đúng Đà Lạt), BT Ninh Bình (106.168,20.438→105.9809,20.2582 — cũ lệch >20km), Lam Kinh (105.502,19.933→105.4112,19.9324, confidence medium), Óc Eo ×4 (105.163,10.233→105.1535,10.2558 centroid thị trấn).
+  - Giữ: Chùa Ngô Xá (KHÔNG xác minh được toạ độ — độ tin cậy thấp, chờ QĐ xếp hạng 2012/cổng Nam Định), Chùa Nhất Trụ/Hoa Lư & BT Hoàng gia Nam Hồng (lệch <1.4km, đủ chính xác).
+  - Provenance ghi trong `ghi_chu` file + commit. 9/9 validator + build xanh.
+- **Backlog sandbox-completable đã CẠN.** Còn lại đều gated ngoài sandbox (xem mục dưới).
+
+## Còn lại — GATED ngoài sandbox (không tự đóng được, nêu rõ lý do)
+- **Tinh chỉnh 4 góc Taberd 1838** (`TABERD_CORNERS` main.ts): cần WebGL render trên production để đối chiếu bờ biển — sandbox chặn WebGL hoàn toàn.
+- **Nghiệm thu render production**: pin bảo vật (36, đã sửa toạ độ), animation Nam tiến, overlay Taberd, nhãn sông/núi — cần mắt người trên site (sandbox không render map được).
+- **155 phim + 301 tiểu sử `draft`**: rule dự án bắt **người duyệt** vì kênh phim không phải nhà nước (`verified`/`khac`/`official-name`); auto-flip chỉ áp cho `state` (đã xong 45/45). Nâng nguồn draft = web research mở, quota-bound, kết quả vẫn draft → chờ user quyết mức độ đầu tư.
+- **Chùa Ngô Xá**: toạ độ chưa xác minh (độ tin cậy thấp) — cần QĐ xếp hạng di tích 2012 hoặc cổng Nam Định.
+- Lam Kinh: confidence medium (1 nguồn DMS) — nên đối chiếu Google Maps thực địa.
+
+## ĐÃ xong (không còn là "còn lại")
+- ✅ Ảnh: 34/34 tỉnh có ảnh Commons. ✅ Nam tiến caveat cao nguyên (main.ts:506). ✅ Toạ độ bảo vật soát xong (5 sửa, 1 giữ low, 2 đủ chính xác).
 
 ## Quy tắc mới (đã chốt)
 - Phim `kenh_loai=state` (VTV/QPVN/HTV/đài tỉnh/báo-thông tấn nhà nước) = KHÔNG cần người duyệt → `trang_thai=reviewed` (phim); tiểu sử vẫn có thể draft riêng.
