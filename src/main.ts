@@ -277,6 +277,235 @@ function initSongNui(): void {
     });
 }
 
+// ---------------------------------------------------------------------------
+// #6 — Bản đồ cổ Taberd 1838 (overlay georef) + Animation Nam tiến
+// ---------------------------------------------------------------------------
+
+// Bản «An Nam Đại Quốc Họa Đồ» (Taberd 1838, phạm vi công cộng) — ghi rõ
+// "Paracel seu Cát Vàng" → giá trị chủ quyền. Phủ ảnh lên bản đồ tương tác qua
+// image source căn 4 góc theo lưới kinh–vĩ đọc từ bản scan (kinh tuyến
+// Greenwich; mốc 104°Đ ở rìa tây gần Vân Nam). Toạ độ góc là mức XẤP XỈ — nên
+// tinh chỉnh trên production (đối chiếu bờ biển thực). Chèn raster DƯỚI lớp nhãn
+// đầu tiên nên mọi nhãn tự render (tỉnh, sông–núi, chủ quyền) vẫn nằm trên cùng.
+const TABERD_URL =
+  "https://upload.wikimedia.org/wikipedia/commons/d/dd/An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg";
+// [Tây-Bắc, Đông-Bắc, Đông-Nam, Tây-Nam], mỗi góc = [lon, lat].
+const TABERD_CORNERS: [
+  [number, number],
+  [number, number],
+  [number, number],
+  [number, number],
+] = [
+  [101.6, 23.6],
+  [111.4, 23.6],
+  [111.4, 7.6],
+  [101.6, 7.6],
+];
+let taberdOpacity = 0.6;
+function applyTaberd(on: boolean): void {
+  if (on && !map.getSource("taberd")) {
+    map.addSource("taberd", { type: "image", url: TABERD_URL, coordinates: TABERD_CORNERS });
+    const beforeId = map.getLayer(`${ERAS[0].id}-label`) ? `${ERAS[0].id}-label` : undefined;
+    map.addLayer(
+      { id: "taberd", type: "raster", source: "taberd", paint: { "raster-opacity": taberdOpacity } },
+      beforeId,
+    );
+  }
+  if (map.getLayer("taberd"))
+    map.setLayoutProperty("taberd", "visibility", on ? "visible" : "none");
+}
+function setTaberdOpacity(v: number): void {
+  taberdOpacity = v;
+  if (map.getLayer("taberd")) map.setPaintProperty("taberd", "raster-opacity", v);
+}
+
+// --- Animation Nam tiến: lộ dần các tỉnh (bản đồ 34 tỉnh) theo mốc sáp nhập ---
+interface NamTienMoc {
+  buoc: number;
+  nam: string;
+  ten: string;
+  mo_ta: string;
+  tinh_moi: string[];
+  nguon: string[];
+}
+let namTienMoc: NamTienMoc[] = [];
+let namTienStep = -1;
+let namTienTimer: number | null = null;
+const namTienMax = (): number => namTienMoc.length - 1;
+
+function initNamTien(): void {
+  void fetchJson<{ moc: NamTienMoc[] }>("data/journey/nam-tien.json").then((data) => {
+    if (!data?.moc?.length) return;
+    namTienMoc = data.moc.slice().sort((a, b) => a.buoc - b.buoc);
+    const slug2step = new Map<string, number>();
+    for (const m of namTienMoc) for (const s of m.tinh_moi) slug2step.set(s, m.buoc);
+    // Gắn nt_step vào từng tỉnh của geojson 34 tỉnh; tự tính slug (không commit
+    // file dẫn xuất). ERAS[2] = lớp "34 tỉnh 2025".
+    void fetch(`${import.meta.env.BASE_URL}${ERAS[2].file}`)
+      .then((r) => (r.ok ? (r.json() as Promise<GeoJSON.FeatureCollection>) : null))
+      .then((geo) => {
+        if (!geo || map.getSource("nam-tien")) return;
+        const feats = geo.features.flatMap((f) => {
+          const name = (f.properties?.["Tỉnh thành mới"] as string) ?? "";
+          const step = slug2step.get(slugify(name));
+          if (step === undefined) return [];
+          return [{ ...f, properties: { ...f.properties, nt_step: step, nt_ten: name } }];
+        });
+        map.addSource("nam-tien", {
+          type: "geojson",
+          data: { type: "FeatureCollection", features: feats } as GeoJSON.FeatureCollection,
+        });
+        const beforeId = map.getLayer(`${ERAS[0].id}-label`) ? `${ERAS[0].id}-label` : undefined;
+        map.addLayer(
+          {
+            id: "nam-tien-fill",
+            type: "fill",
+            source: "nam-tien",
+            layout: { visibility: "none" },
+            filter: ["<=", ["get", "nt_step"], -1],
+            paint: {
+              // Bắc → Nam: đỏ sẫm → vàng, để thấy hướng mở cõi.
+              "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "nt_step"],
+                0,
+                "#7f1d1d",
+                3,
+                "#dc2626",
+                6,
+                "#f97316",
+                9,
+                "#f59e0b",
+                11,
+                "#fde047",
+              ],
+              "fill-opacity": 0.72,
+            },
+          } as never,
+          beforeId,
+        );
+        map.addLayer(
+          {
+            id: "nam-tien-line",
+            type: "line",
+            source: "nam-tien",
+            layout: { visibility: "none" },
+            filter: ["<=", ["get", "nt_step"], -1],
+            paint: { "line-color": "#450a0a", "line-width": 0.6 },
+          } as never,
+          beforeId,
+        );
+      });
+    buildNamTienUI();
+  });
+}
+
+function setNamTienStep(step: number): void {
+  namTienStep = Math.max(0, Math.min(step, namTienMax()));
+  const f = ["<=", ["get", "nt_step"], namTienStep];
+  for (const id of ["nam-tien-fill", "nam-tien-line"])
+    if (map.getLayer(id)) map.setFilter(id, f as never);
+  renderNamTienPanel();
+}
+function namTienStop(): void {
+  if (namTienTimer !== null) {
+    clearInterval(namTienTimer);
+    namTienTimer = null;
+  }
+  renderNamTienPanel();
+}
+function namTienPlay(): void {
+  if (namTienTimer !== null) {
+    namTienStop();
+    return;
+  }
+  if (namTienStep >= namTienMax()) setNamTienStep(0);
+  namTienTimer = window.setInterval(() => {
+    if (namTienStep >= namTienMax()) {
+      namTienStop();
+      return;
+    }
+    setNamTienStep(namTienStep + 1);
+  }, 1600);
+  renderNamTienPanel();
+}
+function activateNamTien(on: boolean): void {
+  const v = on ? "visible" : "none";
+  for (const id of ["nam-tien-fill", "nam-tien-line"])
+    if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", v);
+  if (on) {
+    if (namTienStep < 0) namTienStep = 0;
+    map.fitBounds(VIETNAM_BOUNDS, { padding: 40, duration: 600 });
+    setNamTienStep(namTienStep);
+  } else {
+    namTienStop();
+  }
+}
+function buildNamTienUI(): void {
+  if (document.getElementById("namtien-btn")) return;
+  const nav = document.getElementById("topbar-nav");
+  const btn = document.createElement("button");
+  btn.id = "namtien-btn";
+  btn.type = "button";
+  btn.textContent = "🧭 Nam tiến";
+  (nav ?? document.body).appendChild(btn);
+  const panel = document.createElement("aside");
+  panel.id = "namtien-panel";
+  panel.hidden = true;
+  panel.innerHTML = `<button id="namtien-close" aria-label="Đóng">×</button><div id="namtien-content"></div>`;
+  document.getElementById("app")?.appendChild(panel);
+  btn.addEventListener("click", () => {
+    const opening = panel.hidden;
+    panel.hidden = !opening;
+    activateNamTien(opening);
+    btn.classList.toggle("active", opening);
+  });
+  panel.querySelector("#namtien-close")?.addEventListener("click", () => {
+    panel.hidden = true;
+    activateNamTien(false);
+    btn.classList.remove("active");
+  });
+  panel.addEventListener("click", (e) => {
+    const act = (e.target as HTMLElement).dataset.act;
+    if (act === "prev") {
+      namTienStop();
+      setNamTienStep(namTienStep - 1);
+    } else if (act === "next") {
+      namTienStop();
+      setNamTienStep(namTienStep + 1);
+    } else if (act === "play") {
+      namTienPlay();
+    }
+  });
+  panel.addEventListener("input", (e) => {
+    const t = e.target as HTMLInputElement;
+    if (t.name === "namtien-range") {
+      namTienStop();
+      setNamTienStep(Number(t.value));
+    }
+  });
+}
+function renderNamTienPanel(): void {
+  const c = document.getElementById("namtien-content");
+  if (!c || !namTienMoc.length) return;
+  const m = namTienMoc[Math.max(0, namTienStep)];
+  const playing = namTienTimer !== null;
+  c.innerHTML = `
+    <h2>🧭 Nam tiến — mở cõi về phương Nam</h2>
+    <p class="namtien-year">${esc(m.nam)} · <strong>${esc(m.ten)}</strong></p>
+    <p>${esc(m.mo_ta)}</p>
+    <div class="namtien-controls">
+      <button data-act="prev"${namTienStep <= 0 ? " disabled" : ""}>◀</button>
+      <button data-act="play">${playing ? "⏸ Dừng" : "▶ Tự chạy"}</button>
+      <button data-act="next"${namTienStep >= namTienMax() ? " disabled" : ""}>▶</button>
+      <span class="namtien-count">Mốc ${namTienStep + 1}/${namTienMoc.length}</span>
+    </div>
+    <input type="range" name="namtien-range" min="0" max="${namTienMax()}" value="${Math.max(0, namTienStep)}"/>
+    <p class="muted namtien-src">Nguồn: ${m.nguon.map((s) => esc(s)).join(" · ")}</p>
+    <p class="muted">⚠️ Sơ đồ hoá ở mức tỉnh; tỉnh ghép gán theo mốc sáp nhập sớm nhất (phần cao nguyên trên thực tế muộn hơn).</p>`;
+}
+
 map.on("load", () => {
   for (const era of ERAS) {
     map.addSource(era.id, {
@@ -402,6 +631,7 @@ map.on("load", () => {
   });
 
   initSongNui();
+  initNamTien();
   setEra(currentEra);
   buildTimeline();
   buildLayerControl();
@@ -668,6 +898,17 @@ const OVERLAYS: OverlayConf[] = [
     popup: (p) =>
       `<strong>${esc(p.ten)}</strong><br/>${esc(String(p.loai ?? "di tích"))} · Xếp hạng ${esc(String(p.nam ?? ""))}${p.dot ? ` (đợt ${p.dot})` : ""}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
   },
+  {
+    id: "bao-vat-quoc-gia",
+    label: "💎 Bảo vật quốc gia",
+    file: "data/overlays/bao-vat-quoc-gia.json",
+    circleColor: "#d4af37",
+    nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn)",
+    popup: (p) => {
+      const o = p as OverlayItem & { noi_luu_giu?: string; mo_ta?: string };
+      return `<strong>${esc(o.ten)}</strong><br/>${esc(String(o.loai ?? ""))}${o.dot ? ` · công nhận đợt năm ${o.dot}` : ""}<br/>📍 ${esc(String(o.noi_luu_giu ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();
@@ -759,6 +1000,11 @@ function buildLayerControl(): void {
       <label><input type="radio" name="palette" value="pastel"/> Tô màu pastel</label>
       <label><input type="checkbox" name="labels"/> Hiện tên tỉnh</label>
       <label><input type="checkbox" name="songnui"/> Hiện sông &amp; núi</label>
+    </div>
+    <strong>🗺️ Bản đồ cổ</strong>
+    <div class="group">
+      <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
+      <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
     </div>`;
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
@@ -767,6 +1013,11 @@ function buildLayerControl(): void {
     if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
     if (t.name === "labels") applyLabels(t.checked);
     if (t.name === "songnui") applySongNui(t.checked);
+    if (t.name === "taberd") applyTaberd(t.checked);
+  });
+  el.addEventListener("input", (e) => {
+    const t = e.target as HTMLInputElement;
+    if (t.name === "taberd-opacity") setTaberdOpacity(Number(t.value));
   });
   document.getElementById("app")?.appendChild(el);
 }
