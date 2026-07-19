@@ -57,10 +57,37 @@ qua claude-in-chrome** (không còn mù WebGL như trước).
 - ⏳ **#6 UI hiện đại**: đã đại tu ở v2.1; topbar/panel kính mờ nhìn hiện đại
   trên Chrome thật. Chưa đổi thêm — chờ Iron Man chỉ điểm cụ thể nếu còn cổ.
 
-**Chưa làm (đợt sau, theo mệnh lệnh «không dừng»)**: tên đường/phố; thành hoàng
-làng; thêm tiến sĩ/trạng nguyên (còn ~40 vị); soát toạ độ draft về mức xã/đền;
-tự tải & đọc PDF sử liệu để bổ sung. WebSearch quota cạn giữa phiên → cần đợt
-sau khi quota reset để gắn URL nguồn cụ thể cho 36 mục draft.
+### Sóng 3 — Mở rộng vô hạn danh nhân/sử liệu (2026-07-20, commit `1ad9576` + `3d243ed`)
+
+Theo mệnh lệnh «không dừng khi còn tìm được nhân vật/sử liệu». 3 research agent
+song song (WebFetch, KHÔNG tốn quota WebSearch), nguồn cổng nhà nước/bảo tàng
+(qdnd.vn, baotanglichsu.vn, dsvh.gov.vn, nhandan.vn, vietnamtourism.vn…),
+**sạch Wikipedia**. **+51 mục** trên 3 lớp phủ mới + 1 lớp mở rộng:
+
+- 🔥 `khoi-nghia-khang-chien.json` (**20**, reviewed 4 / draft 16): Hai Bà Trưng·Hát
+  Môn, thành Hà Nội 1873/1882, Cầu Giấy, Xô Viết Nghệ Tĩnh, Nam Kỳ khởi nghĩa,
+  Bắc Sơn, giành chính quyền HN 8/1945, Ấp Bắc, Vạn Tường, Mậu Thân Huế, Buôn Ma Thuột…
+- 📚 `danh-nhan-van-hoa-can-hien-dai.json` (**15**, reviewed 2 / draft 13): Phan Bội
+  Châu, Phan Châu Trinh, Huỳnh Thúc Kháng, Tôn Thất Tùng, Phạm Ngọc Thạch, Văn Cao,
+  Nam Cao, Xuân Diệu, Trương Vĩnh Ký, Đào Duy Anh, Nguyễn Văn Huyên…
+- 🏯 `thanh-hoang-danh-than.json` (**6**, reviewed 5 / draft 1): Lý Ông Trọng (Đức
+  Thánh Chèm), Tô Hiến Thành, Trần Quốc Tảng (Cửa Ông), Bà Chúa Kho, Cao Sơn–Quý Minh…
+- 🎓 `trang-nguyen-khoa-bang.json` **+10** (nay 22 mục, reviewed 2 / draft 20):
+  Nguyễn Trực, Trịnh Tuệ (TN cuối cùng), Lê Ích Mộc, Vũ Kiệt, Lương Như Hộc, Đặng
+  Công Chất…
+
+3 file mới vào `STRICT_SOURCE`. Sửa: lon/lat đảo ngược của Nguyễn Quán Quang;
+dedup Trương Định/Nguyễn Trung Trực/Hoàng Diệu (đã có ở lớp sự kiện); offset toạ
+độ trùng. Trước đó `3d243ed` đã xác minh 3 anh hùng qua Chrome→qdnd.vn
+(draft→reviewed). **9/9 validator + `npm run build` xanh.**
+
+**Chưa làm (đợt sau, theo mệnh lệnh «không dừng»)**: tên đường/phố; thêm tiến
+sĩ/trạng nguyên (còn nhiều vị); soát toạ độ draft về mức xã/đền; tự tải & đọc PDF
+sử liệu để bổ sung. Nhiều mục draft (sóng 1–3) **chờ gắn/soát URL nguồn cụ thể**
+để nâng draft→reviewed. WebSearch quota có thể cạn giữa phiên → ưu tiên nguồn
+WebFetch cổng nhà nước như sóng 3.
+
+_(Đã làm ở sóng 3, gỡ khỏi backlog vòng 2: thành hoàng làng ✅ lớp riêng; +10 trạng nguyên ✅.)_
 
 **Lỗi môi trường ghi nhận**: reload nhiều lần làm cạn WebGL context của Chrome
 → bản đồ trắng dù build xanh; khắc phục tạm bằng `window resize` repaint hoặc

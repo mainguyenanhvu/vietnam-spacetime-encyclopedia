@@ -1,6 +1,7 @@
 # 📘 KẾ HOẠCH TỔNG THỂ — Từ điển bách khoa Việt Nam theo không gian–thời gian trên bản đồ
 
-> **File plan duy nhất của dự án** (mọi cập nhật gộp về đây). v3 — 2026-07-17 (sau vòng phản biện độc lập, xem §10).
+> **File plan tổng thể** (mục tiêu, kiến trúc, cổng bất biến). v3 — 2026-07-17 (sau vòng phản biện độc lập, xem §10).
+> ⚠️ **Bảng lộ trình §8 dừng ở v1.0 (Phase 1–8).** Công việc v2.0→v2.2 (nghiệm thu 6 điểm, đại tu UI, «Cương vực Việt cổ», mở rộng danh nhân/sử liệu) được theo dõi ở **`nghiem-thu-6-diem-plan.md`** — đọc file đó cho trạng thái mới nhất.
 > Repo: https://github.com/mainguyenanhvu/vietnam-spacetime-encyclopedia
 > Live: https://mainguyenanhvu.github.io/vietnam-spacetime-encyclopedia/
 > Research chi tiết: `docs/research/*.md`
