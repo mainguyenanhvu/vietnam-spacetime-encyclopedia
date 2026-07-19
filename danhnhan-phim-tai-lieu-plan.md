@@ -45,13 +45,19 @@ Dựng danh sách danh nhân/anh hùng theo 34 tỉnh (hợp nhất 2025), tìm 
 | 3 | Mở rộng danh nhân 4000 năm + thêm phim; **phim state → reviewed** | | ✅ rule (4a49944) + 46 danh nhân mới (cf4c4ab); danh-nhan.json 255→301 (draft, cần soát nguồn) |
 | 4 | Dòng thời gian 4000 năm (2879 TCN → nay) | 106 mốc có nguồn nhà nước | ✅ commit bbafc04 |
 | 5 | Bản đồ: chọn bảng màu tô tỉnh + nhãn tên tỉnh/sông/núi | ⚠️ nhãn TỰ RENDER (không mở nhãn basemap → lòi địa danh TQ) | ✅ tô màu + nhãn TỈNH (d366d08) + nhãn SÔNG/NÚI 22+18 (cf4c4ab, song-nui.json, chủ quyền trên cùng qua beforeId) |
-| 6 | Tính năng backlog còn lại | | ☐ chưa (cần quyết định/dữ liệu) |
+| 6 | Tính năng backlog còn lại | | ✅ Bảo vật QG overlay (36, dsvh.gov.vn) + Nam tiến animation (12 mốc, phủ 34 tỉnh) + Taberd 1838 georef (image source, opacity) + validate_overlays vào CI (e84af6e). ⚠️ toạ độ góc Taberd XẤP XỈ — tinh chỉnh trên production |
 
 ## Đã xong đợt 2 (2026-07-18, phiên song song)
 - 3 agent nền: ảnh Commons (31→29 xác thực qua Commons API imageinfo, loại 2 file bịa), danh nhân (46), geodata sông/núi (40).
 - Kiểm URL ảnh: CDN upload.wikimedia.org bị rate-limit 429 → xác thực qua **Commons API** (nguồn chuẩn, trả URL canonical + license thật).
 - Verify: validate_documentaries + validate_media xanh; tsc + vite build xanh; **test hoạt cảnh Three.js headless 8/8 PASS** (bundle esbuild → so sánh transform theo t).
 - ⚠️ Không kiểm được map trong sandbox: basemap CARTO bị chặn tải tiles → map.on('load') không chạy. Code song-nui đã xác minh qua tsc/build/validator + data load 200 JSON; render nhãn cần verify trên production (nơi user đã test đạt trước đó).
+
+## Phiên 2026-07-19 — sửa hiển thị + backlog #6
+- **Lỗi legend che topbar (e69a789)**: 5 module chèn nút vào #topbar-nav lúc chạy → topbar 2 hàng (83px) nhưng panel ghim top:3.5rem (56px) → đè. Sửa: top panel = var(--topbar-h)+0.5rem, đồng bộ bằng **MutationObserver** (ResizeObserver bị chặn khi tab nền) + resize; topbar z-index:30. Kiểm chứng browser: panel 91px, hết đè.
+- **#6 (e84af6e)**: Bảo vật QG (overlay đợt 2, 36 mục) + Nam tiến (12 mốc, nt_step gắn runtime qua slugify, lộ dần bắc→nam) + Taberd 1838 (image source georef xấp xỉ + opacity slider, chèn dưới nhãn → chủ quyền trên cùng) + validate_overlays.mjs.
+- ⚠️ Sandbox chặn WebGL → không render map trực tiếp được (styleLoaded=false ngay cả offline style). Kiểm chứng: enrich 34/34 tỉnh (browser thật), reveal đơn điệu 18→34 (node), tsc+build+8 validator+audit_sovereignty xanh. **Cần nghiệm thu production**: nhãn/pin/animation render + **tinh chỉnh 4 góc Taberd** (đối chiếu bờ biển). Toạ độ góc trong `TABERD_CORNERS` (main.ts) dễ sửa.
+- 8 điểm toạ độ bảo vật độ tin cậy thấp (Lam Kinh, Hoa Lư, BT Hoàng gia Nam Hồng… — xem NOTES agent) cần soát; Nam tiến: phần cao nguyên (Gia Lai/Đắk Lắk/Lâm Đồng) gán mốc lowland sớm — có caveat UI.
 
 ## Còn lại sau phiên (đợt tiếp)
 - Soát nguồn 46+ danh nhân draft (gắn URL cổng tỉnh/bảo tàng khi WebSearch có quota lại); soát 2 điểm tin cậy thấp (quê Vũ Văn Dũng, Dã Tượng).
