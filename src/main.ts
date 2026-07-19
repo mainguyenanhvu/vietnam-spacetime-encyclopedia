@@ -1020,6 +1020,21 @@ interface OverlayConf {
   popup: (p: OverlayItem) => string;
 }
 
+// Popup dùng chung cho các lớp phủ "nhân vật" (tên · năm · quê/đền · mô tả · cảnh báo toạ độ).
+const personOverlayPopup = (p: OverlayItem): string => {
+  const o = p as OverlayItem & {
+    nam_hien_thi?: string;
+    mo_ta?: string;
+    dia_diem?: string;
+    do_tin_cay_toa_do?: string;
+  };
+  const tc =
+    o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+      : "";
+  return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+};
+
 const OVERLAYS: OverlayConf[] = [
   {
     id: "unesco",
@@ -1384,6 +1399,81 @@ const OVERLAYS: OverlayConf[] = [
           ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ đền/đình độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
           : "";
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+    },
+  },
+  {
+    id: "anh-hung-llvt-cand",
+    label: "🎖️ Anh hùng LLVT nhân dân · Công an nhân dân",
+    file: "data/overlays/anh-hung-llvt-cand.json",
+    circleColor: "#dc2626",
+    nguon:
+      "Báo Quân đội Nhân dân · Báo Công an Nhân dân · Bảo tàng Lịch sử Quốc gia · Báo Nhân Dân · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "tuong-linh-hien-dai",
+    label: "⭐ Tướng lĩnh Quân đội Nhân dân (hiện đại)",
+    file: "data/overlays/tuong-linh-hien-dai.json",
+    circleColor: "#b45309",
+    nguon:
+      "Báo Quân đội Nhân dân · Báo Nhân Dân · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "tien-si-tieu-bieu",
+    label: "🎓 Tiến sĩ · nhà bác học tiêu biểu",
+    file: "data/overlays/tien-si-tieu-bieu.json",
+    circleColor: "#0d9488",
+    nguon:
+      "Cục Bản quyền tác giả · các Sở/cổng tỉnh · Trung tâm Lưu trữ Quốc gia · Ngô Đức Thọ (Các nhà khoa bảng VN)",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "quan-thanh-liem",
+    label: "⚖️ Quan thanh liêm · danh thần có công",
+    file: "data/overlays/quan-thanh-liem.json",
+    circleColor: "#7c3aed",
+    nguon:
+      "Báo Công an Nhân dân · Báo Nhân Dân · Cục Di sản văn hóa · báo chí nhà nước · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "me-vnah-ahld",
+    label: "🏵️ Mẹ Việt Nam Anh hùng · Anh hùng Lao động",
+    file: "data/overlays/me-vnah-ahld.json",
+    circleColor: "#db2777",
+    nguon:
+      "Báo Chính phủ · Báo Nhân Dân · Báo Quân đội Nhân dân · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "chien-dich-tran-danh-bo-sung",
+    label: "⚔️ Chiến dịch · trận đánh (bổ sung, mọi thời đại)",
+    file: "data/overlays/chien-dich-tran-danh-bo-sung.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "giu-nuoc", "#15803d",
+      "khang-phap", "#b45309",
+      "khang-my", "#dc2626",
+      "bao-ve-bien-gioi", "#7c3aed",
+      "#dc2626",
+    ],
+    nguon:
+      "Báo Quân đội Nhân dân · Bảo tàng Lịch sử Quốc gia · Báo Nhân Dân · Báo Hải quân Việt Nam",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        nam?: string | number;
+        nam_hien_thi?: string;
+        mo_ta?: string;
+        dia_diem?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
     },
   },
 ];
