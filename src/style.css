@@ -1268,13 +1268,14 @@ body.kid-mode #topbar {
   flex: 1;
 }
 
+/* Neo bên TRÁI (đè lên Lào/biển, không che Việt Nam) để xem rõ vùng mở cõi
+   khi bấm qua các mốc Nam tiến (#5). Panel lớp bản đồ được ẩn khi mở. */
 #namtien-panel {
   position: absolute;
-  bottom: 3.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(560px, 94vw);
-  max-height: 46vh;
+  top: var(--panel-top);
+  left: 0.75rem;
+  width: min(340px, 88vw);
+  max-height: calc(100vh - var(--panel-top) - 4rem);
   overflow-y: auto;
   background: #fffbeb;
   border: 1px solid #d6d3d1;
@@ -1369,18 +1370,18 @@ body.kid-mode #topbar {
     transform: translateY(8px) scale(0.985);
   }
 }
-/* Panel Nam tiến neo giữa dưới — giữ đúng gốc toạ độ khi xuất hiện */
+/* Panel Nam tiến neo trái — trượt nhẹ khi xuất hiện */
 #namtien-panel {
   animation: namtien-in 0.28s var(--ease) both;
 }
 @keyframes namtien-in {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(10px);
+    transform: translateX(-10px);
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -1414,25 +1415,68 @@ body.kid-mode #topbar {
   transform: rotate(90deg);
 }
 
-/* Control lớp bản đồ — nhóm gọn, nhãn dễ bấm */
+/* Control lớp bản đồ — nhóm gập được, panel không tràn màn hình (#1) */
 #layer-control {
-  padding: 0.95rem 1rem;
+  padding: 0.8rem 0.9rem;
   font-size: 0.86rem;
+  max-height: calc(100vh - var(--panel-top) - 1.25rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+#layer-control .lc-head {
+  margin-bottom: 0.5rem;
 }
 #layer-control strong {
   color: var(--c-lac-700);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   letter-spacing: 0.2px;
 }
-#layer-control .group {
-  gap: 0.42rem;
-  padding: 0.35rem 0 0.7rem;
-  border-bottom: 1px solid var(--c-line);
-  margin-bottom: 0.35rem;
+/* Nhóm gập — tiêu đề bấm được, mũi tên xoay khi mở */
+#layer-control .lc-sec {
+  border-top: 1px solid var(--c-line);
+  padding: 0.15rem 0;
 }
-#layer-control .group:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
+#layer-control .lc-sec > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.15rem;
+  font-weight: 600;
+  color: var(--c-lac-700);
+  user-select: none;
+}
+#layer-control .lc-sec > summary::-webkit-details-marker {
+  display: none;
+}
+#layer-control .lc-sec > summary::before {
+  content: "▸";
+  font-size: 0.75rem;
+  color: var(--c-gold-500);
+  transition: transform 0.16s var(--ease);
+}
+#layer-control .lc-sec[open] > summary::before {
+  transform: rotate(90deg);
+}
+#layer-control .lc-badge {
+  margin-left: auto;
+  background: rgba(139, 26, 26, 0.1);
+  color: var(--c-lac-700);
+  border-radius: var(--radius-pill);
+  padding: 0.05rem 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+#layer-control .group {
+  gap: 0.32rem;
+  padding: 0.1rem 0 0.5rem;
+}
+/* Danh sách lớp phủ dài → cuộn riêng, giữ panel gọn */
+#layer-control .lc-overlays {
+  max-height: 34vh;
+  overflow-y: auto;
+  padding-right: 0.2rem;
 }
 #layer-control label {
   display: flex;

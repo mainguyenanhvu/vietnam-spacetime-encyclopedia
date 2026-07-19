@@ -755,6 +755,679 @@
     {
       "type": "Feature",
       "properties": {
+        "ten": "Sông Đáy",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.55,
+            21.05
+          ],
+          [
+            105.75,
+            20.72
+          ],
+          [
+            105.9,
+            20.4
+          ],
+          [
+            106.02,
+            20.1
+          ],
+          [
+            106.1,
+            19.95
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Đuống",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.95,
+            21.08
+          ],
+          [
+            106.1,
+            21.1
+          ],
+          [
+            106.25,
+            21.11
+          ],
+          [
+            106.4,
+            21.05
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Thái Bình",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.3,
+            21.12
+          ],
+          [
+            106.42,
+            20.92
+          ],
+          [
+            106.52,
+            20.75
+          ],
+          [
+            106.62,
+            20.64
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Cầu",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.8,
+            21.92
+          ],
+          [
+            105.86,
+            21.6
+          ],
+          [
+            105.96,
+            21.3
+          ],
+          [
+            106.06,
+            21.14
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Thương",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.35,
+            21.62
+          ],
+          [
+            106.22,
+            21.42
+          ],
+          [
+            106.18,
+            21.28
+          ],
+          [
+            106.12,
+            21.16
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Lục Nam",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.85,
+            21.52
+          ],
+          [
+            106.6,
+            21.36
+          ],
+          [
+            106.4,
+            21.25
+          ],
+          [
+            106.22,
+            21.18
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Gâm",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.35,
+            22.85
+          ],
+          [
+            105.28,
+            22.5
+          ],
+          [
+            105.12,
+            22.15
+          ],
+          [
+            105.05,
+            22
+          ],
+          [
+            105.02,
+            22.82
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Bằng Giang",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.1,
+            22.72
+          ],
+          [
+            106.25,
+            22.68
+          ],
+          [
+            106.45,
+            22.62
+          ],
+          [
+            106.62,
+            22.55
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Chu",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.15,
+            20.12
+          ],
+          [
+            105.45,
+            19.98
+          ],
+          [
+            105.68,
+            19.86
+          ],
+          [
+            105.85,
+            19.78
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông La",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.48,
+            18.48
+          ],
+          [
+            105.58,
+            18.56
+          ],
+          [
+            105.68,
+            18.66
+          ],
+          [
+            105.72,
+            18.72
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Nhật Lệ",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.35,
+            17.32
+          ],
+          [
+            106.5,
+            17.4
+          ],
+          [
+            106.58,
+            17.46
+          ],
+          [
+            106.62,
+            17.48
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Bến Hải",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.52,
+            17.06
+          ],
+          [
+            106.75,
+            17
+          ],
+          [
+            106.95,
+            17.01
+          ],
+          [
+            107.12,
+            17.03
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Hàn",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.19,
+            15.98
+          ],
+          [
+            108.21,
+            16.04
+          ],
+          [
+            108.23,
+            16.08
+          ],
+          [
+            108.23,
+            16.12
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Sê San",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.05,
+            14.38
+          ],
+          [
+            107.78,
+            14.18
+          ],
+          [
+            107.58,
+            14
+          ],
+          [
+            107.52,
+            13.78
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Srepok",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.35,
+            12.68
+          ],
+          [
+            108.02,
+            12.84
+          ],
+          [
+            107.72,
+            13
+          ],
+          [
+            107.5,
+            13.06
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Cái Nha Trang",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.9,
+            12.24
+          ],
+          [
+            109.02,
+            12.26
+          ],
+          [
+            109.12,
+            12.27
+          ],
+          [
+            109.19,
+            12.27
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Côn",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.68,
+            14.06
+          ],
+          [
+            108.92,
+            13.96
+          ],
+          [
+            109.08,
+            13.9
+          ],
+          [
+            109.2,
+            13.88
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Bé",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.95,
+            11.78
+          ],
+          [
+            106.82,
+            11.42
+          ],
+          [
+            106.76,
+            11.14
+          ],
+          [
+            106.8,
+            10.98
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Sông Dinh (Phan Rang)",
+        "loai": "song",
+        "cao_do_m": null,
+        "so_do_hoa": true,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.82,
+            11.72
+          ],
+          [
+            108.92,
+            11.63
+          ],
+          [
+            108.98,
+            11.58
+          ],
+          [
+            109.02,
+            11.56
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "ten": "Fansipan",
         "loai": "nui",
         "cao_do_m": 3147,
@@ -1269,6 +1942,326 @@
         "coordinates": [
           106.6167,
           20.8333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Phu Si Lung",
+        "loai": "nui",
+        "cao_do_m": 3083,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.65,
+          22.68
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Nhìu Cồ San",
+        "loai": "nui",
+        "cao_do_m": 2965,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.75,
+          22.42
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Lảo Thẩn",
+        "loai": "nui",
+        "cao_do_m": 2860,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.72,
+          22.55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Tà Xùa",
+        "loai": "nui",
+        "cao_do_m": 2865,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.5,
+          21.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Pha Luông",
+        "loai": "nui",
+        "cao_do_m": 1880,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.75,
+          20.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Bidoup",
+        "loai": "nui",
+        "cao_do_m": 2287,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.55,
+          12.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Chúa",
+        "loai": "nui",
+        "cao_do_m": 1039,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.15,
+          11.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Bà Rá",
+        "loai": "nui",
+        "cao_do_m": 723,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.98,
+          11.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Nghĩa Lĩnh (Đền Hùng)",
+        "loai": "nui",
+        "cao_do_m": 154,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.288,
+          21.382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Hàm Rồng (Thanh Hóa)",
+        "loai": "nui",
+        "cao_do_m": 100,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.78,
+          19.83
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Dục Thúy (Ninh Bình)",
+        "loai": "nui",
+        "cao_do_m": 70,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.975,
+          20.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Cô Tô (An Giang)",
+        "loai": "nui",
+        "cao_do_m": 614,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.03,
+          10.42
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Dài (An Giang)",
+        "loai": "nui",
+        "cao_do_m": 580,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105,
+          10.55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Đá Bia (Phú Yên)",
+        "loai": "nui",
+        "cao_do_m": 706,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.35,
+          12.88
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Lớn (Vũng Tàu)",
+        "loai": "nui",
+        "cao_do_m": 245,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.07,
+          10.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ten": "Núi Bà (Bình Định)",
+        "loai": "nui",
+        "cao_do_m": 900,
+        "nguon": [
+          "GeoNames.org",
+          "OpenStreetMap",
+          "Wikidata (geodata trung tính)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.1,
+          14.05
         ]
       }
     }

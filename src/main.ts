@@ -225,7 +225,7 @@ let showSongNui = false;
 function applySongNui(on: boolean): void {
   showSongNui = on;
   const v = on ? "visible" : "none";
-  for (const id of ["song-lines", "song-labels", "nui-labels"]) {
+  for (const id of ["song-lines", "song-labels", "nui-markers", "nui-labels"]) {
     if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", v);
   }
 }
@@ -272,6 +272,26 @@ function initSongNui(): void {
         } as never,
         before,
       );
+      // Điểm núi (▲) LUÔN hiện — allow-overlap để mọi đỉnh đều thấy dù zoom xa.
+      map.addLayer(
+        {
+          id: "nui-markers",
+          type: "symbol",
+          source: "song-nui",
+          filter: ["==", ["get", "loai"], "nui"],
+          layout: {
+            visibility: "none",
+            "text-field": "▲",
+            "text-font": ["Open Sans Bold"],
+            "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 8, 16, 12, 20],
+            "text-allow-overlap": true,
+            "text-ignore-placement": true,
+          },
+          paint: { "text-color": "#7c2d12", "text-halo-color": "#ffffff", "text-halo-width": 1.4 },
+        } as never,
+        before,
+      );
+      // Nhãn tên núi — đặt dưới ▲, va chạm thì ẩn tên (giữ marker).
       map.addLayer(
         {
           id: "nui-labels",
@@ -280,10 +300,13 @@ function initSongNui(): void {
           filter: ["==", ["get", "loai"], "nui"],
           layout: {
             visibility: "none",
-            "text-field": ["concat", "▲ ", ["get", "ten"]],
+            "text-field": ["get", "ten"],
             "text-font": ["Open Sans Semibold"],
             "text-size": size,
             "text-max-width": 8,
+            "text-offset": [0, 0.9],
+            "text-anchor": "top",
+            "text-optional": true,
           },
           paint: { "text-color": "#7c2d12", "text-halo-color": "#ffffff", "text-halo-width": 1.5 },
         } as never,
@@ -471,9 +494,16 @@ function activateNamTien(on: boolean): void {
   const v = on ? "visible" : "none";
   for (const id of ["nam-tien-fill", "nam-tien-line", "nam-tien-front"])
     if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", v);
+  // Ẩn panel lớp bản đồ khi Nam tiến mở (cả hai đều neo trái, tránh chồng nhau).
+  const lc = document.getElementById("layer-control");
+  if (lc) lc.style.display = on ? "none" : "";
   if (on) {
     if (namTienStep < 0) namTienStep = 0;
-    map.fitBounds(VIETNAM_BOUNDS, { padding: 40, duration: 600 });
+    // Chừa lề trái để bản đồ Việt Nam nằm gọn bên phải panel Nam tiến.
+    map.fitBounds(VIETNAM_BOUNDS, {
+      padding: { top: 40, right: 40, bottom: 40, left: 360 },
+      duration: 600,
+    });
     setNamTienStep(namTienStep);
   } else {
     namTienStop();
@@ -1131,6 +1161,64 @@ const OVERLAYS: OverlayConf[] = [
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}${o.chi_huy ? " · " + esc(o.chi_huy) : ""}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.ket_qua ? `<br/><span style="color:#57534e">${esc(o.ket_qua)}</span>` : ""}${tc}`;
     },
   },
+  {
+    id: "anh-hung-can-hien-dai",
+    label: "🎖️ Anh hùng cận–hiện đại (đại tướng · AHLLVT · Mẹ VNAH · AHLĐ)",
+    file: "data/overlays/anh-hung-can-hien-dai.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "dai-tuong", "#b91c1c",
+      "ah-llvt", "#dc2626",
+      "me-vnah", "#db2777",
+      "ah-lao-dong", "#0d9488",
+      "#dc2626",
+    ],
+    nguon:
+      "Báo Quân đội Nhân dân (qdnd.vn) · Báo Nhân Dân (nhandan.vn) · Bảo tàng Lịch sử Quân sự Việt Nam · Cổng TTĐT Chính phủ (baochinhphu.vn)",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        nam_hien_thi?: string;
+        mo_ta?: string;
+        dia_diem?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ quê/khu lưu niệm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+    },
+  },
+  {
+    id: "trang-nguyen-khoa-bang",
+    label: "🎓 Trạng nguyên & khoa bảng (1075–1919)",
+    file: "data/overlays/trang-nguyen-khoa-bang.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "trang-nguyen", "#7c3aed",
+      "tien-si", "#2563eb",
+      "bang-nhan-tham-hoa", "#0d9488",
+      "su-gia", "#ca8a04",
+      "#7c3aed",
+    ],
+    nguon:
+      "Đại Việt Sử Ký Toàn Thư · Lịch triều hiến chương loại chí · Đại Nam Liệt Truyện · Ngô Đức Thọ — Các nhà khoa bảng Việt Nam 1075–1919",
+    popup: (p) => {
+      const o = p as OverlayItem & {
+        nam_hien_thi?: string;
+        mo_ta?: string;
+        dia_diem?: string;
+        do_tin_cay_toa_do?: string;
+      };
+      const tc =
+        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ quê/đền thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+          : "";
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">Khoa ${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+    },
+  },
 ];
 
 const overlayLoaded = new Set<string>();
@@ -1199,35 +1287,46 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
 function buildLayerControl(): void {
   const el = document.createElement("div");
   el.id = "layer-control";
+  // Các nhóm gập được (details) để panel không tràn khỏi màn hình khi
+  // số lớp phủ tăng dần (#1). "Lớp phủ" mặc định mở, phần còn lại gập lại.
   el.innerHTML = `
-    <strong>🗺️ Lớp bản đồ</strong>
-    <div class="group">
-      ${ERAS.map(
-        (era, i) => `
-        <label><input type="radio" name="era" value="${i}" ${
-          i === currentEra ? "checked" : ""
-        }/> ${era.label}</label>`,
-      ).join("")}
-    </div>
-    <strong>📌 Lớp phủ</strong>
-    <div class="group">
-      ${OVERLAYS.map(
-        (o) => `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>`,
-      ).join("")}
-    </div>
-    <strong>🎨 Kiểu bản đồ</strong>
-    <div class="group">
-      <label><input type="radio" name="palette" value="default" checked/> Mặc định</label>
-      <label><input type="radio" name="palette" value="ruc-ro"/> Tô màu phân biệt tỉnh</label>
-      <label><input type="radio" name="palette" value="pastel"/> Tô màu pastel</label>
-      <label><input type="checkbox" name="labels"/> Hiện tên tỉnh</label>
-      <label><input type="checkbox" name="songnui"/> Hiện sông &amp; núi</label>
-    </div>
-    <strong>🗺️ Bản đồ cổ</strong>
-    <div class="group">
-      <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
-      <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
-    </div>`;
+    <div class="lc-head"><strong>🗺️ Lớp bản đồ</strong></div>
+    <details class="lc-sec" open>
+      <summary>🕰️ Thời kỳ</summary>
+      <div class="group">
+        ${ERAS.map(
+          (era, i) => `
+          <label><input type="radio" name="era" value="${i}" ${
+            i === currentEra ? "checked" : ""
+          }/> ${era.label}</label>`,
+        ).join("")}
+      </div>
+    </details>
+    <details class="lc-sec" open>
+      <summary>📌 Lớp phủ <span class="lc-badge">${OVERLAYS.length}</span></summary>
+      <div class="group lc-overlays">
+        ${OVERLAYS.map(
+          (o) => `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>`,
+        ).join("")}
+      </div>
+    </details>
+    <details class="lc-sec">
+      <summary>🎨 Kiểu bản đồ</summary>
+      <div class="group">
+        <label><input type="radio" name="palette" value="default" checked/> Mặc định</label>
+        <label><input type="radio" name="palette" value="ruc-ro"/> Tô màu phân biệt tỉnh</label>
+        <label><input type="radio" name="palette" value="pastel"/> Tô màu pastel</label>
+        <label><input type="checkbox" name="labels"/> Hiện tên tỉnh</label>
+        <label><input type="checkbox" name="songnui"/> Hiện sông &amp; núi</label>
+      </div>
+    </details>
+    <details class="lc-sec">
+      <summary>🗺️ Bản đồ cổ</summary>
+      <div class="group">
+        <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
+        <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
+      </div>
+    </details>`;
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
     if (t.name === "era") setEra(Number(t.value));

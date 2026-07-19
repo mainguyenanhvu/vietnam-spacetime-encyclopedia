@@ -27,6 +27,8 @@ const STRICT_SOURCE = new Set([
   "danh-tuong-khang-chien.json",
   "danh-nhan-cac-trieu.json",
   "chien-dich-tran-danh.json",
+  "anh-hung-can-hien-dai.json",
+  "trang-nguyen-khoa-bang.json",
 ]); // yêu cầu nguồn ngoài Wiki mỗi mục
 for (const file of readdirSync(OVERLAY_DIR).filter((f) => f.endsWith(".json"))) {
   const data = read(join(OVERLAY_DIR, file));
