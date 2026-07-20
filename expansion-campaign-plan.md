@@ -87,6 +87,7 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | 8 | `e8407df` | anh-hung-llvt-bo-sung · anh-hung-lao-dong-khoa-hoc | 37 | 906 |
 | 8b (enrich) | `99249c8` | làm giàu `di-tich-qgdb.json`: 152 mục thêm mo_ta + draft-flag | 0 | 906 |
 | 9 | `08bd6b0` | su-than-ngoai-giao · danh-y-luong-y · nu-danh-nhan-lich-su | 39 | 945 |
+| 10 | `a1dd16b` | doanh-nhan-yeu-nuoc · danh-nhan-dan-toc-thieu-so · thieu-nien-anh-hung | 51 | 996 |
 
 **⛔ Điểm dừng phiên 2026-07-20 (sau Sóng 7):** mọi công cụ tìm kiếm (WebSearch cạn;
 Google/Bing/DDG qua web-crawl đều CAPTCHA/429) → **discovery thực sự bị chặn** = «không
