@@ -83,7 +83,9 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | 4 | `2b36a50` | khoa-bang-bo-sung · anh-hung-liet-si-bo-sung · vua-chua-bo-sung | 46 | 707 |
 | 5 | `59386f5` | hoang-toc-tieu-bieu · thanh-hoang-vung-mien · nha-giao-hoc-gia | 50 | 757 |
 | 6 | `6b924f6` | di-tich-cach-mang · nghe-nhan-di-san · danh-tuong-chong-phap | 48 | 805 |
-| 7 | (this) | le-hoi-truyen-thong · lang-nghe-truyen-thong · danh-thang-di-san-thien-nhien | 64 | 869 |
+| 7 | `20e6bf8` | le-hoi-truyen-thong · lang-nghe-truyen-thong · danh-thang-di-san-thien-nhien | 64 | 869 |
+| 8 | `e8407df` | anh-hung-llvt-bo-sung · anh-hung-lao-dong-khoa-hoc | 37 | 906 |
+| 8b (enrich) | (chờ) | làm giàu `di-tich-qgdb.json`: 152 mục thêm mo_ta + draft-flag | 0 | 906 |
 
 **⛔ Điểm dừng phiên 2026-07-20 (sau Sóng 7):** mọi công cụ tìm kiếm (WebSearch cạn;
 Google/Bing/DDG qua web-crawl đều CAPTCHA/429) → **discovery thực sự bị chặn** = «không
