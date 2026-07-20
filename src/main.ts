@@ -1661,6 +1661,24 @@ const OVERLAYS: OverlayConf[] = [
     nguon: "Cục Du lịch Quốc gia — vietnamtourism.vn · cổng tỉnh",
     popup: personOverlayPopup,
   },
+  {
+    id: "anh-hung-llvt-bo-sung",
+    label: "🎖️ Anh hùng LLVTND · CAND (bổ sung)",
+    file: "data/overlays/anh-hung-llvt-bo-sung.json",
+    circleColor: "#e11d48",
+    nguon:
+      "Báo QĐND — qdnd.vn · Báo CAND · Báo Nhân Dân · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "anh-hung-lao-dong-khoa-hoc",
+    label: "🔬 Anh hùng Lao động · nhà khoa học · thầy thuốc",
+    file: "data/overlays/anh-hung-lao-dong-khoa-hoc.json",
+    circleColor: "#0891b2",
+    nguon:
+      "Báo Nhân Dân · Báo Chính phủ · Báo QĐND · VUSTA · cổng bộ ngành",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
