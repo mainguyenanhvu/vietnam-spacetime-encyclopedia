@@ -1679,6 +1679,33 @@ const OVERLAYS: OverlayConf[] = [
       "Báo Nhân Dân · Báo Chính phủ · Báo QĐND · VUSTA · cổng bộ ngành",
     popup: personOverlayPopup,
   },
+  {
+    id: "su-than-ngoai-giao",
+    label: "🕊️ Sứ thần · nhà ngoại giao lịch sử",
+    file: "data/overlays/su-than-ngoai-giao.json",
+    circleColor: "#4f46e5",
+    nguon:
+      "Bảo tàng Lịch sử Quốc gia · Giáo dục & Thời đại · Báo Nhân Dân · scov.gov.vn",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-y-luong-y",
+    label: "⚕️ Danh y · lương y (y học cổ truyền)",
+    file: "data/overlays/danh-y-luong-y.json",
+    circleColor: "#047857",
+    nguon:
+      "Sức khỏe & Đời sống · Viện Y dược học dân tộc · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "nu-danh-nhan-lich-su",
+    label: "👑 Nữ danh nhân lịch sử (nữ sĩ · nữ tướng · bà chúa)",
+    file: "data/overlays/nu-danh-nhan-lich-su.json",
+    circleColor: "#db2777",
+    nguon:
+      "Hội LHPN Việt Nam · Bảo tàng Lịch sử Quốc gia · Báo Nhân Dân · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
