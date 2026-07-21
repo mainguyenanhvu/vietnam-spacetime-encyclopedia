@@ -93,6 +93,7 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | 13 | `691366a` | kien-truc-su-ky-su (6 KTS + 6 kỹ sư) — **discovery qua Chrome→Google, KHÔNG CAPTCHA** | 12 | 1078 |
 | 14 | `df56c3b` | khoa-bang-bo-sung-3 · danh-nhan-quan-su-co-trung-dai · nha-the-thao-lich-su — agent WebFetch→DDG-lite (không WebSearch) | 33 | 1111 |
 | 15 | `550888b` | khoa-bang-bo-sung-4 · thu-linh-khoi-nghia-co-dai · dich-gia-ngon-ngu-hoc | 36 | 1147 |
+| 16 | `59b63e3` | khoa-bang-mien-trung · danh-nhan-nam-bo · danh-than-trieu-nguyen — DDG-lite bắt đầu CAPTCHA (html/ ổn hơn) | 36 | 1183 |
 
 **⛔ Điểm dừng phiên 2026-07-20 (sau Sóng 7):** mọi công cụ tìm kiếm (WebSearch cạn;
 Google/Bing/DDG qua web-crawl đều CAPTCHA/429) → **discovery thực sự bị chặn** = «không
