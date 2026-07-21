@@ -11,7 +11,7 @@
         "nien_dai": "Huyền sử · ĐVSKTT gán ≈ 2879 TCN (suy đoán muộn của sử quan)",
         "kinh_do": "Không xác định trong sử gốc; dân gian gán vùng Phong Châu",
         "muc_do_tin_cay": "huyen-su",
-        "ghi_chu": "HUYỀN SỬ / BIỂU TƯỢNG. Mô tả «bắc giáp Động Đình, nam giáp Hồ Tôn, tây giáp Ba Thục, đông giáp Nam Hải» mang tính biểu tượng về gốc Bách Việt; có nghiên cứu cho rằng bốn mốc này trùng địa giới nước Sở thời Xuân Thu–Chiến Quốc. KHÔNG phải bản đồ chủ quyền.",
+        "ghi_chu": "HUYỀN SỬ / BIỂU TƯỢNG. Mô tả «bắc giáp Động Đình, nam giáp Hồ Tôn, tây giáp Ba Thục, đông giáp Nam Hải» mang tính biểu tượng về gốc Bách Việt; có nghiên cứu cho rằng bốn mốc này trùng địa giới nước Sở thời Xuân Thu–Chiến Quốc. Tên «Xích Quỷ» KHÔNG xuất hiện trong sử liệu Việt trước năm 1479 — lần đầu do Ngô Sĩ Liên ghi vào ĐVSKTT; phả hệ Đế Minh–Kinh Dương Vương có gốc truyền thuyết dân gian Mường. KHÔNG phải bản đồ chủ quyền.",
         "nguon": ["Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Hồng Bàng thị", "Đào Duy Anh — Đất nước Việt Nam qua các đời"]
       },
       "geometry": {
@@ -49,6 +49,22 @@
       "geometry": {
         "type": "Polygon",
         "coordinates": [[[103.8, 23.3], [106.0, 23.8], [107.5, 21.8], [107.2, 20.2], [106.2, 17.9], [105.0, 18.5], [103.8, 20.5], [103.8, 23.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "au-lac-co-loa",
+        "ten": "Cổ Loa — lõi di tích khảo cổ Âu Lạc",
+        "nien_dai": "≈ TK III TCN (An Dương Vương); lại là kinh đô thời Ngô Quyền TK X SCN",
+        "kinh_do": "Cổ Loa (Đông Anh, Hà Nội) — Di tích Quốc gia đặc biệt",
+        "muc_do_tin_cay": "trung-binh",
+        "ghi_chu": "LÕI KHẢO CỔ có bằng chứng vững chắc cho TRUNG TÂM chính trị Âu Lạc — tương phản với đường biên toàn lãnh thổ (chỉ phỏng dựng). Thành Ngoại chu vi >8 km; thành Trung 6,58 km (5 cửa); thành Nội 1,65 km; khu lõi hành chính ≈2 km². Khuôn đúc mũi tên đồng trong tầng văn hoá Cổ Loa. Vùng bảo vệ 860,4 ha. ⚠️ Polygon là ƯỚC LƯỢNG THÔ theo số đo chu vi thành (KHÔNG phải khảo sát GIS) — cần đối chiếu bản đồ khoanh vùng bảo vệ di tích chính thức.",
+        "nguon": ["Bảo tàng Lịch sử Quốc gia — Thành Cổ Loa, kinh đô nước Âu Lạc", "Cục Di sản văn hoá (dsvh.gov.vn) — Di tích Cổ Loa", "Sở VHTT Hà Nội (sovhtt.hanoi.gov.vn)", "Cổng di tích Cổ Loa (thanhcoloa.vn)"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[105.8647, 21.1138], [105.8781, 21.1138], [105.8781, 21.1012], [105.8647, 21.1012], [105.8647, 21.1138]]]
       }
     },
     {

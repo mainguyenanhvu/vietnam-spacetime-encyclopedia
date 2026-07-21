@@ -377,6 +377,7 @@ function initCuongVuc(): void {
         "xich-quy", "#9333ea",
         "van-lang", "#dc2626",
         "au-lac", "#ea580c",
+        "au-lac-co-loa", "#eab308",
         "van-xuan", "#0d9488",
         "#dc2626",
       ] as unknown as ExpressionSpecification;
@@ -433,7 +434,9 @@ function initCuongVuc(): void {
 function applyCuongVuc(eraId: string): void {
   const on = eraId !== "off";
   const v = on ? "visible" : "none";
-  const filt = ["==", ["get", "id"], on ? eraId : "__none__"];
+  // Âu Lạc hiện kèm lõi khảo cổ Cổ Loa (feature phụ chồng lên polygon lãnh thổ).
+  const ids = eraId === "au-lac" ? ["au-lac", "au-lac-co-loa"] : [eraId];
+  const filt = ["in", ["get", "id"], ["literal", on ? ids : []]];
   for (const id of ["cuong-vuc-fill", "cuong-vuc-line"]) {
     if (map.getLayer(id)) {
       map.setFilter(id, filt as never);
