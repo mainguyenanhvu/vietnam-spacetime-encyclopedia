@@ -96,6 +96,8 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | 16 | `59b63e3` | khoa-bang-mien-trung · danh-nhan-nam-bo · danh-than-trieu-nguyen — DDG-lite bắt đầu CAPTCHA (html/ ổn hơn) | 36 | 1183 |
 | 17 | `44a1c35` | khoa-bang-thanh-hoa · nghia-si-can-vuong (−3 dup) · tri-thuc-khoa-hoc-tk20 — nhánh 1/4 «làm hết 4 mục» | 32 | 1215 |
 | §9 | `954fd9c` | nâng 754 mục an toàn draft→reviewed; giữ 181 nhạy cảm + 32 Sóng17 draft (nhánh 2/4) | 0 | 1215 |
+| Xích Quỷ | `74afcf3` | wire lõi Cổ Loa + siết ghi_chú Xích Quỷ «Cương vực Việt cổ» (nhánh 4/4) | 0 | 1215 |
+| 18 | `d4a8e64` | chua-nguyen-trinh · nghe-nhan-lang-nghe-bo-sung · khoa-bang-nam-trung-bo (DDG CAPTCHA hạn chế) | 30 | 1245 |
 
 **⛔ Điểm dừng phiên 2026-07-20 (sau Sóng 7):** mọi công cụ tìm kiếm (WebSearch cạn;
 Google/Bing/DDG qua web-crawl đều CAPTCHA/429) → **discovery thực sự bị chặn** = «không
