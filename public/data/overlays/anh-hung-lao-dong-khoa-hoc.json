@@ -1,12 +1,19 @@
 {
   "ghi_chu": "Anh hùng Lao động & nhà khoa học/thầy thuốc/nhà nông tiêu biểu — bổ sung (Sóng 8). Mọi mục draft, chờ kiểm sử §9.",
   "ngay_cap_nhat": "2026-07-20",
-  "sources": ["nhandan.vn", "qdnd.vn", "dangcongsan.vn", "baochinhphu.vn", "cổng *.gov.vn"],
+  "sources": [
+    "nhandan.vn",
+    "qdnd.vn",
+    "dangcongsan.vn",
+    "baochinhphu.vn",
+    "cổng *.gov.vn"
+  ],
   "items": [
     {
       "id": "dang-van-ngu",
       "ten": "Đặng Văn Ngữ",
-      "lon": 107.5992, "lat": 16.4498,
+      "lon": 107.5992,
+      "lat": 16.4498,
       "loai": "thay-thuoc",
       "nam_hien_thi": "1910–1967",
       "mo_ta": "Giáo sư, bác sĩ ký sinh trùng học, người đầu tiên nghiên cứu và sản xuất thành công thuốc kháng sinh Penicillin ở Việt Nam trong kháng chiến chống Pháp; hy sinh năm 1967 khi đang nghiên cứu vắc-xin phòng sốt rét trên chiến trường Trường Sơn. Được truy tặng danh hiệu Anh hùng Lao động và Giải thưởng Hồ Chí Minh.",
@@ -21,13 +28,14 @@
     {
       "id": "mai-kieu-lien",
       "ten": "Mai Kiều Liên",
-      "lon": 105.4833, "lat": 9.7833,
+      "lon": 105.4833,
+      "lat": 9.7833,
       "loai": "ahld",
       "nam_hien_thi": "1953– , đương đại",
       "mo_ta": "Chủ tịch HĐQT kiêm Tổng Giám đốc Công ty Sữa Việt Nam (Vinamilk), gắn bó gần nửa thế kỷ đưa doanh nghiệp trở thành thương hiệu sữa hàng đầu Việt Nam vươn ra thế giới. Được phong tặng danh hiệu Anh hùng Lao động thời kỳ đổi mới.",
       "dia_diem": "Quê gốc Vị Thanh, Hậu Giang; sự nghiệp gắn bó TP Hồ Chí Minh",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Báo Nhân Dân — Anh hùng Lao động Mai Kiều Liên - 'Nữ doanh nhân quyền lực của châu Á' — https://nhandan.vn/anh-hung-lao-dong-mai-kieu-lien---nu-doanh-nhan-quyen-luc-cua-chau-a-post233052.html",
         "Báo Quân đội nhân dân — Tổng Giám đốc Vinamilk Mai Kiều Liên: Sáng tạo là yếu tố sống còn — https://www.qdnd.vn/kinh-te/cac-van-de/tong-giam-doc-vinamilk-mai-kieu-lien-sang-tao-la-yeu-to-song-con-708567"
@@ -36,13 +44,14 @@
     {
       "id": "tran-manh-bao",
       "ten": "Trần Mạnh Báo",
-      "lon": 106.3369, "lat": 20.4463,
+      "lon": 106.3369,
+      "lat": 20.4463,
       "loai": "nha-nong",
       "nam_hien_thi": "1949– , đương đại",
       "mo_ta": "Thương binh, kỹ sư nông nghiệp, Chủ tịch HĐQT kiêm Tổng Giám đốc Tập đoàn ThaiBinh Seed, người tiên phong nghiên cứu và sản xuất giống lúa chất lượng cao cho nông dân đồng bằng Bắc Bộ. Được phong tặng danh hiệu Anh hùng Lao động thời kỳ đổi mới.",
       "dia_diem": "TP Thái Bình (quê gốc Thái Bình)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Báo Nhân Dân — Doanh nhân, Anh hùng lao động Trần Mạnh Báo: Làm Nông nghiệp xanh — https://special.nhandan.vn/Doanh-nhan-AHLD-TRAN-MANH-BAO/index.html",
         "Báo Quân đội nhân dân — Anh hùng của nhà nông — https://www.qdnd.vn/phong-su-dieu-tra/cuoc-thi-nhung-tam-guong-binh-di-ma-cao-quy-lan-thu-17/anh-hung-cua-nha-nong-bai-1-thuong-binh-tan-nhung-khong-phe-1019012"
@@ -51,13 +60,14 @@
     {
       "id": "nguyen-van-hieu",
       "ten": "Nguyễn Văn Hiệu",
-      "lon": 105.7786, "lat": 20.9718,
+      "lon": 105.7786,
+      "lat": 20.9718,
       "loai": "khoa-hoc",
       "nam_hien_thi": "1938–2022",
       "mo_ta": "Giáo sư, Viện sĩ vật lý lý thuyết, một trong những nhà khoa học tự nhiên hàng đầu Việt Nam, nguyên Viện trưởng Viện Vật lý và Viện Khoa học Việt Nam. Được trao Giải thưởng Hồ Chí Minh và Giải thưởng Lenin về khoa học.",
       "dia_diem": "Cầu Đơ (nay phường Hà Cầu), Hà Đông, Hà Nội",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Cục Văn thư và Lưu trữ Nhà nước — Một số tài liệu lưu trữ về Giáo sư, Viện sĩ Nguyễn Văn Hiệu — https://luutru.gov.vn/cong-bo-gioi-thieu-tai-lieu/mot-so-tai-lieu-luu-tru-ve-giao-su-vien-si-nguyen-van-hieu.htm",
         "Báo Quân đội nhân dân — Vĩnh biệt Viện sĩ Nguyễn Văn Hiệu — https://www.qdnd.vn/phong-su-dieu-tra/phong-su/vinh-biet-vien-si-nguyen-van-hieu-684406"
@@ -66,13 +76,14 @@
     {
       "id": "pham-thi-viet-nga",
       "ten": "Phạm Thị Việt Nga",
-      "lon": 105.7333, "lat": 9.8500,
+      "lon": 105.7333,
+      "lat": 9.85,
       "loai": "ahld",
       "nam_hien_thi": "1951– , đương đại",
       "mo_ta": "Nguyên Tổng Giám đốc, Chủ tịch HĐQT Công ty Cổ phần Dược Hậu Giang, người đưa doanh nghiệp từ một xưởng thuốc nhỏ trở thành thương hiệu dược phẩm hàng đầu Việt Nam. Được phong tặng danh hiệu Anh hùng Lao động thời kỳ đổi mới.",
       "dia_diem": "Châu Thành, Hậu Giang",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Báo Cần Thơ — Giao lưu với Anh hùng Lao động Phạm Thị Việt Nga - 'Một đời nhìn lại' — https://baocantho.com.vn/giao-luu-voi-anh-hung-lao-dong-pham-thi-viet-nga-mot-doi-nhin-lai-a167010.html"
       ]
@@ -80,13 +91,14 @@
     {
       "id": "nguyen-tai-thu",
       "ten": "Nguyễn Tài Thu",
-      "lon": 105.7333, "lat": 21.0167,
+      "lon": 105.7333,
+      "lat": 21.0167,
       "loai": "thay-thuoc",
       "nam_hien_thi": "1931–2021",
       "mo_ta": "Giáo sư, bác sĩ, người sáng lập ngành châm cứu hiện đại Việt Nam, nguyên Chủ tịch Hội Châm cứu Việt Nam và Hội Châm cứu Thế giới, chữa bệnh cho hàng vạn bệnh nhân trong và ngoài nước bằng phương pháp châm cứu. Được phong tặng danh hiệu Anh hùng Lao động và Thầy thuốc Nhân dân.",
       "dia_diem": "Thôn Kim Hoàng, xã Vân Canh, Hoài Đức, Hà Nội",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Báo Quân đội nhân dân — Một đời vì người bệnh — https://ct.qdnd.vn/ho-so-tu-lieu/mot-doi-vi-nguoi-benh-526544",
         "Viện Y dược học dân tộc TP.HCM — Kính cẩn cúi đầu vĩnh biệt bậc thầy châm cứu Việt Nam Nguyễn Tài Thu — https://www.vienydhdt.gov.vn/tin-tuc/kinh-can-cui-dau-vinh-biet-bac-thay-cham-cuu-viet-nam-nguyen-tai-thu.html"
@@ -95,13 +107,14 @@
     {
       "id": "huynh-van-thon",
       "ten": "Huỳnh Văn Thòn",
-      "lon": 105.2417, "lat": 10.8017,
+      "lon": 105.2417,
+      "lat": 10.8017,
       "loai": "nha-nong",
       "nam_hien_thi": "1958– , đương đại",
       "mo_ta": "Kỹ sư kinh tế nông nghiệp, Chủ tịch HĐQT Tập đoàn Lộc Trời, người xây dựng chuỗi giá trị lúa gạo bền vững gắn kết hàng vạn nông dân đồng bằng sông Cửu Long. Được phong tặng danh hiệu Anh hùng Lao động.",
       "dia_diem": "Xã Long Phú, Tân Châu, An Giang",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "CafeF — 'Đế chế nghìn tỷ' của Anh hùng Lao động Huỳnh Văn Thòn — https://cafef.vn/de-che-nghin-ty-cua-anh-hung-lao-dong-huynh-van-thon-tao-sieu-pham-quoc-gia-chinh-phuc-40-nuoc-toan-cau-188260401195517935.chn"
       ]
@@ -109,13 +122,14 @@
     {
       "id": "bui-huy-dap",
       "ten": "Bùi Huy Đáp",
-      "lon": 106.1333, "lat": 20.3167,
+      "lon": 106.1333,
+      "lat": 20.3167,
       "loai": "nha-nong",
       "nam_hien_thi": "1919–2004",
       "mo_ta": "Giáo sư nông học, Giám đốc đầu tiên của Học viện Nông nghiệp Việt Nam, người có công lớn trong nghiên cứu và phổ biến giống lúa, cây trồng vụ đông góp phần đảm bảo an ninh lương thực miền Bắc. Được trao Giải thưởng Hồ Chí Minh về khoa học kỹ thuật.",
       "dia_diem": "Xã Thành Lợi, Vụ Bản, Nam Định",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Học viện Nông nghiệp Việt Nam — Giáo sư Bùi Huy Đáp - Tấm gương nhà giáo, nhà khoa học sáng mãi — https://vnua.edu.vn/tin-tuc-su-kien/tin-hoat-dong-khac/giao-su-bui-huy-dap-tam-guong-nha-giao-nha-khoa-hoc-sang-mai-56281"
       ]
@@ -123,13 +137,14 @@
     {
       "id": "nguyen-thien-thanh",
       "ten": "Nguyễn Thiện Thành",
-      "lon": 106.2167, "lat": 9.9167,
+      "lon": 106.2167,
+      "lat": 9.9167,
       "loai": "thay-thuoc",
       "nam_hien_thi": "1919–2013",
       "mo_ta": "Giáo sư, bác sĩ, Đại tá quân y, người khai sinh ngành lão khoa Việt Nam và nghiên cứu phác đồ điều trị sốt rét Filatov trong kháng chiến. Được phong tặng danh hiệu Anh hùng Lao động và Thầy thuốc Nhân dân.",
       "dia_diem": "Xã Phương Thạnh, Càng Long, Trà Vinh",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Báo Quân đội nhân dân — Kỷ niệm 100 năm Ngày sinh của Giáo sư, Tiến sĩ, Anh hùng lao động, Thầy thuốc nhân dân Đại tá Nguyễn Thiện Thành — https://www.qdnd.vn/quoc-phong-an-ninh/tin-tuc/ky-niem-100-nam-ngay-sinh-cua-giao-su-tien-si-anh-hung-lao-dong-thay-thuoc-nhan-dan-dai-ta-nguyen-thien-thanh-592817"
       ]
@@ -137,7 +152,8 @@
     {
       "id": "nguyen-dinh-tu",
       "ten": "Nguyễn Đình Tứ",
-      "lon": 105.7667, "lat": 18.5667,
+      "lon": 105.7667,
+      "lat": 18.5667,
       "loai": "khoa-hoc",
       "nam_hien_thi": "1932–1996",
       "mo_ta": "Giáo sư, Tiến sĩ vật lý hạt nhân, người đặt nền móng cho ngành khoa học và kỹ thuật hạt nhân Việt Nam, nguyên Bộ trưởng Bộ Khoa học, Công nghệ và Môi trường. Có nhiều công trình nghiên cứu vật lý hạt cơ bản được quốc tế công nhận.",
@@ -152,7 +168,8 @@
     {
       "id": "vu-dinh-cu",
       "ten": "Vũ Đình Cự",
-      "lon": 106.3667, "lat": 20.5667,
+      "lon": 106.3667,
+      "lat": 20.5667,
       "loai": "khoa-hoc",
       "nam_hien_thi": "1936–2011",
       "mo_ta": "Giáo sư, Tiến sĩ vật lý, nguyên Phó Chủ tịch Quốc hội, nhà khoa học có nhiều đóng góp trong nghiên cứu vật lý bán dẫn và khoa học vật liệu, được giới khoa học Việt Nam mệnh danh 'nhà thông thái'.",
@@ -166,13 +183,14 @@
     {
       "id": "dao-the-tuan",
       "ten": "Đào Thế Tuấn",
-      "lon": 105.7833, "lat": 20.8667,
+      "lon": 105.7833,
+      "lat": 20.8667,
       "loai": "nha-nong",
       "nam_hien_thi": "1931–2011",
       "mo_ta": "Giáo sư, Viện sĩ nông học, nguyên Viện trưởng Viện Khoa học Kỹ thuật Nông nghiệp Việt Nam, có nhiều công trình nghiên cứu hệ thống canh tác và phát triển nông thôn, được giới chuyên môn gọi là 'nhà nông học kiệt xuất'. Con trai học giả Đào Duy Anh.",
       "dia_diem": "Quê gốc Cự Khê (Khúc Thủy), Thanh Oai, Hà Nội",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Đài Tiếng nói Việt Nam (VOV) — Nhà nông học kiệt xuất Đào Thế Tuấn — https://vov.vn/xa-hoi/nha-nong-hoc-kiet-xuat-dao-the-tuan-165451.vov",
         "Viện Khoa học Nông nghiệp Việt Nam — GS - VS Đào Thế Tuấn: Nhà tri thức lớn của nông nghiệp, nông thôn — https://vaas.vn/vi/tieu-diem-binh-luan/gs-vs-dao-the-tuan-nha-tri-thuc-lon-cua-nong-nghiep-nong-thon"
@@ -181,13 +199,14 @@
     {
       "id": "nguyen-canh-toan",
       "ten": "Nguyễn Cảnh Toàn",
-      "lon": 105.3167, "lat": 18.8833,
+      "lon": 105.3167,
+      "lat": 18.8833,
       "loai": "khoa-hoc",
       "nam_hien_thi": "1926–2017",
       "mo_ta": "Giáo sư, Nhà giáo Nhân dân, nhà toán học tự học thành tài, nguyên Thứ trưởng Bộ Giáo dục, người có nhiều đóng góp xây dựng ngành Toán học và giáo dục đại học Việt Nam. Được trao Giải thưởng Hồ Chí Minh về khoa học kỹ thuật.",
       "dia_diem": "Xã Đông Sơn, Đô Lương, Nghệ An",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Báo Nhân Dân — Giáo sư Nguyễn Cảnh Toàn, người dành cả cuộc đời cho sự nghiệp khoa học và giáo dục — https://nhandan.vn/giao-su-nguyen-canh-toan-nguoi-danh-ca-cuoc-doi-cho-su-nghiep-khoa-hoc-va-giao-duc-post285318.html",
         "Sở Khoa học và Công nghệ Nghệ An — Về Giáo sư Nguyễn Cảnh Toàn — https://ngheandost.gov.vn/khxhnvna/dat-va-nguoi-xu-nghe/ve-giao-su-nguyen-canh-toan-127.html"
@@ -196,13 +215,14 @@
     {
       "id": "dang-vu-minh",
       "ten": "Đặng Vũ Minh",
-      "lon": 106.3333, "lat": 20.1917,
+      "lon": 106.3333,
+      "lat": 20.1917,
       "loai": "khoa-hoc",
       "nam_hien_thi": "1946– , đương đại",
       "mo_ta": "Giáo sư, Viện sĩ hóa học, nguyên Chủ tịch Viện Khoa học và Công nghệ Việt Nam, nguyên Chủ tịch Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam (VUSTA), có nhiều công trình nghiên cứu hóa học các nguyên tố hiếm và phóng xạ.",
       "dia_diem": "Làng Hành Thiện, xã Xuân Hồng, Xuân Trường, Nam Định",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam — Chủ tịch Liên hiệp hội Việt Nam khóa VI: GS.VS.TSKH Đặng Vũ Minh — https://vusta.vn/chu-tich-lien-hiep-hoi-viet-nam-khoa-vi-gsvstskh-dang-vu-minh-p88621.html"
       ]
@@ -210,7 +230,8 @@
     {
       "id": "pham-song",
       "ten": "Phạm Song",
-      "lon": 105.4000, "lat": 18.5333,
+      "lon": 105.4,
+      "lat": 18.5333,
       "loai": "thay-thuoc",
       "nam_hien_thi": "1931– , đương đại",
       "mo_ta": "Giáo sư, Viện sĩ, Thầy thuốc Nhân dân, nguyên Bộ trưởng Bộ Y tế (1988–1992), có nhiều đóng góp xây dựng hệ thống y tế dự phòng và phòng chống dịch bệnh của Việt Nam. Được trao Giải thưởng Hồ Chí Minh.",
@@ -224,7 +245,8 @@
     {
       "id": "nguyen-trong-nhan",
       "ten": "Nguyễn Trọng Nhân",
-      "lon": 106.0333, "lat": 20.4500,
+      "lon": 106.0333,
+      "lat": 20.45,
       "loai": "thay-thuoc",
       "nam_hien_thi": "1930–2017",
       "mo_ta": "Giáo sư, Tiến sĩ, Thầy thuốc Nhân dân, nguyên Bộ trưởng Bộ Y tế (1992–1995), nguyên Viện trưởng Viện Mắt Trung ương, chuyên gia nhãn khoa hàng đầu Việt Nam. Được phong tặng danh hiệu Anh hùng Lao động.",
@@ -239,13 +261,14 @@
     {
       "id": "nguyen-thi-ngoc-phuong",
       "ten": "Nguyễn Thị Ngọc Phượng",
-      "lon": 106.6893, "lat": 10.7627,
+      "lon": 106.6893,
+      "lat": 10.7627,
       "loai": "thay-thuoc",
       "nam_hien_thi": "1944– , đương đại",
       "mo_ta": "Giáo sư, bác sĩ sản phụ khoa, nguyên Giám đốc Bệnh viện Từ Dũ, người tiên phong đưa kỹ thuật thụ tinh trong ống nghiệm (IVF) về Việt Nam, mở ra cơ hội làm cha mẹ cho hàng chục nghìn gia đình. Được phong tặng danh hiệu Anh hùng Lao động và Thầy thuốc Nhân dân.",
       "dia_diem": "Bệnh viện Từ Dũ, Quận 1 (nay phường Bến Thành), TP Hồ Chí Minh",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
+      "trang_thai": "reviewed",
       "nguon": [
         "Báo Sức khỏe & Đời sống (Bộ Y tế) — GS.BS Nguyễn Thị Ngọc Phượng - người khai sinh Cò đỏ thôn bản, nhận giải Nobel châu Á — https://suckhoedoisong.vn/gsbs-nguyen-thi-ngoc-phuong-nguoi-khai-sinh-co-do-thon-ban-nhan-giai-nobel-chau-a-169240901160758776.htm"
       ]
@@ -253,7 +276,8 @@
     {
       "id": "pham-gia-khanh",
       "ten": "Phạm Gia Khánh",
-      "lon": 105.7667, "lat": 21.0733,
+      "lon": 105.7667,
+      "lat": 21.0733,
       "loai": "thay-thuoc",
       "nam_hien_thi": "1943– , đương đại",
       "mo_ta": "Giáo sư, Trung tướng, Tiến sĩ, Nhà giáo Nhân dân, nguyên Giám đốc Học viện Quân y, người thực hiện thành công ca ghép gan đầu tiên ở Việt Nam (2004) và có nhiều đóng góp xây dựng chuyên ngành ghép tạng quân đội. Được phong tặng danh hiệu Anh hùng Lao động.",

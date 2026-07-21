@@ -1,235 +1,296 @@
 {
   "ghi_chu": "Anh hùng LLVT nhân dân & CAND tiêu biểu — bổ sung (Sóng 8). 19 người CHƯA có trong dữ liệu, ưu tiên anh hùng biên phòng/hải quân/phòng không/thời bình/CAND ít được lên bản đồ. Mọi mục draft, chờ kiểm sử §9. Toạ độ theo quê quán/đơn vị cấp xã-huyện (trung) hoặc tượng đài xác định (cao) — KHÔNG dùng Wikipedia.",
   "ngay_cap_nhat": "2026-07-20",
-  "sources": ["qdnd.vn", "bocongan.gov.vn", "sknc.qdnd.vn"],
+  "sources": [
+    "qdnd.vn",
+    "bocongan.gov.vn",
+    "sknc.qdnd.vn"
+  ],
   "items": [
     {
       "id": "phung-van-khau",
       "ten": "Phùng Văn Khầu",
-      "lon": 106.51, "lat": 22.83,
+      "lon": 106.51,
+      "lat": 22.83,
       "loai": "ahllvt",
       "nam_hien_thi": "1929–2021",
       "mo_ta": "Người dân tộc Nùng, mồ côi từ nhỏ, tham gia Việt Minh từ 1945. Trong Chiến dịch Điện Biên Phủ, ông một mình chỉ huy khẩu sơn pháo 75mm bắn hạ pháo địch, bám trụ 36 ngày đêm ở đồi E1; được phong Anh hùng LLVTND ngày 31/8/1955 khi mới 26 tuổi.",
       "dia_diem": "Xã Đức Hồng, huyện Trùng Khánh, tỉnh Cao Bằng (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Ngắm bắn trực tiếp qua nòng pháo-Kỳ tích người Anh hùng Điện Biên Phùng Văn Khầu — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/ngam-ban-truc-tiep-qua-nong-phao-ky-tich-nguoi-anh-hung-dien-bien-phung-van-khau-1025102"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Ngắm bắn trực tiếp qua nòng pháo-Kỳ tích người Anh hùng Điện Biên Phùng Văn Khầu — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/ngam-ban-truc-tiep-qua-nong-phao-ky-tich-nguoi-anh-hung-dien-bien-phung-van-khau-1025102"
+      ]
     },
     {
       "id": "do-si-hoa",
       "ten": "Đỗ Sĩ Họa",
-      "lon": 107.88, "lat": 21.65,
+      "lon": 107.88,
+      "lat": 21.65,
       "loai": "bien-phong",
       "nam_hien_thi": "1946–1979",
       "mo_ta": "Trung úy, Phó Đồn trưởng Đồn Biên phòng Pò Hèn (Quảng Ninh). Hy sinh ngày 17/2/1979 khi chỉ huy lực lượng chiến đấu chống quân xâm lược ở biên giới phía Bắc dù bị thương nặng; được truy tặng danh hiệu Anh hùng LLVTND.",
       "dia_diem": "Khu di tích lịch sử Pò Hèn, xã Hải Sơn, TP Móng Cái, tỉnh Quảng Ninh (nơi hy sinh)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Anh hùng Đỗ Sĩ Họa – Tượng đài bất tử nơi biên cương Pò Hèn — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-do-si-hoa-tuong-dai-bat-tu-noi-bien-cuong-po-hen-1031842"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Anh hùng Đỗ Sĩ Họa – Tượng đài bất tử nơi biên cương Pò Hèn — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-do-si-hoa-tuong-dai-bat-tu-noi-bien-cuong-po-hen-1031842"
+      ]
     },
     {
       "id": "ho-thi-bi",
       "ten": "Hồ Thị Bi",
-      "lon": 106.59, "lat": 10.884,
+      "lon": 106.59,
+      "lat": 10.884,
       "loai": "ahllvt",
       "nam_hien_thi": "1916–2021",
       "mo_ta": "Tên thật Hồ Thị Hoa, tham gia cách mạng từ 1936, được Chủ tịch Hồ Chí Minh đặt biệt danh «Nữ kiệt miền Đông» khi gặp bà tại Việt Bắc năm 1953. Là nữ quân nhân giữ cấp bậc cao nhất trong Quân đội nhân dân Việt Nam, nguyên đại biểu Quốc hội khóa II, III.",
       "dia_diem": "Xã Tân Hiệp, huyện Hóc Môn, TP Hồ Chí Minh (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — «Nữ kiệt miền Đông» - Anh hùng Hồ Thị Bi — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/nu-kiet-mien-dong-anh-hung-ho-thi-bi-1030804"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — «Nữ kiệt miền Đông» - Anh hùng Hồ Thị Bi — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/nu-kiet-mien-dong-anh-hung-ho-thi-bi-1030804"
+      ]
     },
     {
       "id": "nguyen-quoc-tri",
       "ten": "Nguyễn Quốc Trị",
-      "lon": 105.30, "lat": 18.90,
+      "lon": 105.3,
+      "lat": 18.9,
       "loai": "ahllvt",
       "nam_hien_thi": "1921–1967",
       "mo_ta": "Đại đội trưởng bộ binh Trung đoàn 102, Đại đoàn 308, biệt danh «người chiến sĩ nhanh như sóc, mạnh như hổ», đã đánh 95 trận trong kháng chiến chống Pháp. Được phong Anh hùng LLVTND ngày 19/5/1952 — một trong bốn anh hùng quân đội đầu tiên của Việt Nam.",
       "dia_diem": "Làng Phượng Kỷ, xã Đà Sơn, huyện Đô Lương, tỉnh Nghệ An (quê quán)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Anh hùng Nguyễn Quốc Trị - người chiến sĩ «nhanh như sóc, mạnh như hổ» — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-nguyen-quoc-tri-nguoi-chien-si-nhanh-nhu-soc-manh-nhu-ho-1029601"]
+      "nguon": [
+        "qdnd.vn — Anh hùng Nguyễn Quốc Trị - người chiến sĩ «nhanh như sóc, mạnh như hổ» — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-nguyen-quoc-tri-nguoi-chien-si-nhanh-nhu-soc-manh-nhu-ho-1029601"
+      ]
     },
     {
       "id": "to-van-duc",
       "ten": "Tô Văn Đực",
-      "lon": 106.53, "lat": 11.03,
+      "lon": 106.53,
+      "lat": 11.03,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1942",
       "mo_ta": "Từ 1962 phụ trách xưởng vũ khí dân quân xã tại vùng đất thép Củ Chi, tự mày mò chế tạo và sửa chữa vũ khí từ vật liệu tái sử dụng, sáng chế «mìn gạt» hiệu quả trong kháng chiến chống Mỹ. Được ví như «cỗ máy phá tăng», tuyên dương Anh hùng LLVTND.",
       "dia_diem": "Xã Nhuận Đức, huyện Củ Chi, TP Hồ Chí Minh (quê quán)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Tô Văn Đực - người anh hùng chế tạo vũ khí trong lòng đất thép Củ Chi — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/to-van-duc-nguoi-anh-hung-che-tao-vu-khi-trong-long-dat-thep-cu-chi-1045865"]
+      "nguon": [
+        "qdnd.vn — Tô Văn Đực - người anh hùng chế tạo vũ khí trong lòng đất thép Củ Chi — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/to-van-duc-nguoi-anh-hung-che-tao-vu-khi-trong-long-dat-thep-cu-chi-1045865"
+      ]
     },
     {
       "id": "nguyen-thi-van-biet-dong",
       "ten": "Nguyễn Thị Vân",
-      "lon": 105.78, "lat": 10.03,
+      "lon": 105.78,
+      "lat": 10.03,
       "loai": "ahllvt",
       "nam_hien_thi": "kháng chiến chống Mỹ",
       "mo_ta": "Làm nhiệm vụ giao liên từ năm 1964, sau là Trung đội trưởng Đội biệt động TP Cần Thơ, thương binh ¾. Được tuyên dương Thượng tá, Anh hùng LLVTND vì những chiến công trung kiên trong lực lượng biệt động thành.",
       "dia_diem": "TP Cần Thơ (địa bàn hoạt động — đội biệt động)",
       "do_tin_cay_toa_do": "thap",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Anh hùng Nguyễn Thị Vân - nữ chiến sĩ biệt động trung kiên — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-nguyen-thi-van-nu-chien-si-biet-dong-trung-kien-1031930"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Anh hùng Nguyễn Thị Vân - nữ chiến sĩ biệt động trung kiên — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-nguyen-thi-van-nu-chien-si-biet-dong-trung-kien-1031930"
+      ]
     },
     {
       "id": "tran-quang-khai-dac-cong-nuoc",
       "ten": "Trần Quang Khải (đặc công nước, Lữ đoàn 126)",
-      "lon": 105.83, "lat": 19.87,
+      "lon": 105.83,
+      "lat": 19.87,
       "loai": "hai-quan",
       "nam_hien_thi": "sinh 1952",
       "mo_ta": "Chiến sĩ đặc công nước Đoàn 126 Hải quân. Đêm 10/3/1967, dưới sự chỉ huy của Đội trưởng Mai Năng, cùng đồng đội bí mật áp mìn hẹn giờ đánh chìm tàu dầu 15.000 tấn của quân đội Mỹ tại biển Cửa Việt (Quảng Trị), gây chấn động quốc tế. Lưu ý: khác với tướng Trần Quang Khải đời Trần đã có trong CSDL.",
       "dia_diem": "Xã Hoằng Trinh, huyện Hoằng Hóa, tỉnh Thanh Hóa (quê quán)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Anh hùng LLVT nhân dân Trần Quang Khải - Ngọn lửa sáng mãi từ biển Cửa Việt — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-llvt-nhan-dan-tran-quang-khai-ngon-lua-sang-mai-tu-bien-cua-viet-1043082"]
+      "nguon": [
+        "qdnd.vn — Anh hùng LLVT nhân dân Trần Quang Khải - Ngọn lửa sáng mãi từ biển Cửa Việt — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-llvt-nhan-dan-tran-quang-khai-ngon-lua-sang-mai-tu-bien-cua-viet-1043082"
+      ]
     },
     {
       "id": "le-duy-ung",
       "ten": "Lê Duy Ứng",
-      "lon": 106.55, "lat": 17.35,
+      "lon": 106.55,
+      "lat": 17.35,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1947",
       "mo_ta": "Đại tá, họa sĩ, nhà điêu khắc; nhập ngũ năm 1971 khi đang là sinh viên năm 3 Đại học Mỹ thuật Hà Nội. Bị thương mù cả hai mắt trên chiến trường, ông vẽ chân dung Chủ tịch Hồ Chí Minh bằng máu mình; sau chiến tranh sáng tác hàng nghìn tranh, tượng và gần 50 triển lãm cá nhân.",
       "dia_diem": "Làng Cổ Hiền, xã Hiền Ninh, huyện Quảng Ninh, tỉnh Quảng Bình (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Đại tá, Anh hùng LLVT nhân dân, họa sĩ Lê Duy Ứng: Ánh sáng niềm tin không bao giờ tắt — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/dai-ta-anh-hung-llvt-nhan-dan-hoa-si-le-duy-ung-anh-sang-niem-tin-khong-bao-gio-tat-1027200"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Đại tá, Anh hùng LLVT nhân dân, họa sĩ Lê Duy Ứng: Ánh sáng niềm tin không bao giờ tắt — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/dai-ta-anh-hung-llvt-nhan-dan-hoa-si-le-duy-ung-anh-sang-niem-tin-khong-bao-gio-tat-1027200"
+      ]
     },
     {
       "id": "nguyen-xuan-liem",
       "ten": "Nguyễn Xuân Liêm",
-      "lon": 106.35, "lat": 20.52,
+      "lon": 106.35,
+      "lat": 20.52,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1946",
       "mo_ta": "Chiến sĩ tăng thiết giáp, nhập ngũ 1965; tháng 5/1972 chuyển sang Binh chủng Tăng thiết giáp, chỉ huy xe tăng số hiệu 363. Trực tiếp chỉ huy 3 xe tăng trong trận giải phóng thị xã Phước Long tháng 1/1975, để lại câu nói nổi tiếng «Còn người, còn xe, một xe cũng tấn công».",
       "dia_diem": "Thôn An Liêm, xã Thăng Long, huyện Đông Hưng, tỉnh Thái Bình (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Anh hùng Nguyễn Xuân Liêm và câu nói «Còn người, còn xe, một xe cũng tấn công» — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-nguyen-xuan-liem-va-cau-noi-con-nguoi-con-xe-mot-xe-cung-tan-cong-1032973"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Anh hùng Nguyễn Xuân Liêm và câu nói «Còn người, còn xe, một xe cũng tấn công» — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-nguyen-xuan-liem-va-cau-noi-con-nguoi-con-xe-mot-xe-cung-tan-cong-1032973"
+      ]
     },
     {
       "id": "ha-van-noa",
       "ten": "Hà Văn Nọa",
-      "lon": 106.37, "lat": 20.73,
+      "lon": 106.37,
+      "lat": 20.73,
       "loai": "ahllvt",
       "nam_hien_thi": "1928–1954",
       "mo_ta": "Đại đội trưởng Đại đội 243, Tiểu đoàn 11, Trung đoàn 141, Đại đoàn 312. Mất cánh tay phải trong Chiến dịch Biên giới 1950 nhưng tiếp tục chiến đấu, bước vào Chiến dịch Điện Biên Phủ với tư cách người «anh hùng một tay»; hy sinh tại Điện Biên Phủ năm 1954.",
       "dia_diem": "Thôn Ngọc Hòa, xã Vĩnh Hòa, huyện Ninh Giang, tỉnh Hải Dương (quê quán)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Hà Văn Nọa-Người Anh hùng «một tay» trung dũng, kiên cường-Bài 1 — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/ha-van-noa-nguoi-anh-hung-mot-tay-trung-dung-kien-cuong-bai-1-tu-lang-que-cach-mang-den-chien-truong-dien-bien-1025738"]
+      "nguon": [
+        "qdnd.vn — Hà Văn Nọa-Người Anh hùng «một tay» trung dũng, kiên cường-Bài 1 — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/ha-van-noa-nguoi-anh-hung-mot-tay-trung-dung-kien-cuong-bai-1-tu-lang-que-cach-mang-den-chien-truong-dien-bien-1025738"
+      ]
     },
     {
       "id": "le-thanh-dao",
       "ten": "Lê Thanh Đạo",
-      "lon": 105.778, "lat": 21.091,
+      "lon": 105.778,
+      "lat": 21.091,
       "loai": "phong-khong",
       "nam_hien_thi": "sinh 1944",
       "mo_ta": "Phi công tiêm kích MiG-21 thuộc Trung đoàn 921 và 927, nhập ngũ 1963, học lái máy bay tại Liên Xô. Là một trong 16 phi công Việt Nam đạt cấp Ace, bắn rơi 6 máy bay Mỹ; được phong Anh hùng LLVTND ngày 11/1/1973. Sau này là Đại tá, Viện trưởng VKSND Tối cao.",
       "dia_diem": "Xã Thụy Phương, huyện Từ Liêm (nay Bắc Từ Liêm), Hà Nội (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Trận đánh đi vào lịch sử của Anh hùng phi công Lê Thanh Đạo — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/tran-danh-di-vao-lich-su-cua-anh-hung-phi-cong-le-thanh-dao-1034009"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Trận đánh đi vào lịch sử của Anh hùng phi công Lê Thanh Đạo — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/tran-danh-di-vao-lich-su-cua-anh-hung-phi-cong-le-thanh-dao-1034009"
+      ]
     },
     {
       "id": "tran-huu-bao",
       "ten": "Trần Hữu Bào",
-      "lon": 105.32, "lat": 18.88,
+      "lon": 105.32,
+      "lat": 18.88,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1950",
       "mo_ta": "Chiến sĩ Tiểu đội 3 chốt giữ cao điểm 595 trong Chiến dịch Đường 9 - Khe Sanh (Quảng Trị, tháng 4/1968). Trong 2 ngày 6–7/4/1968, riêng ông tiêu diệt 78 lính thủy đánh bộ Mỹ, góp phần cùng đơn vị hạ 205 lính Mỹ, bảo vệ 45 ngày liên tục tuyến đường vào sân bay Tà Cơn.",
       "dia_diem": "Xã Hiến Sơn, huyện Đô Lương (nay xã Bạch Hà), tỉnh Nghệ An (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Anh hùng LLVT nhân dân Trần Hữu Bào - một mình tiêu diệt 78 lính thủy đánh bộ Mỹ — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-llvt-nhan-dan-tran-huu-bao-mot-minh-tieu-diet-78-linh-thuy-danh-bo-my-1036195"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Anh hùng LLVT nhân dân Trần Hữu Bào - một mình tiêu diệt 78 lính thủy đánh bộ Mỹ — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-llvt-nhan-dan-tran-huu-bao-mot-minh-tieu-diet-78-linh-thuy-danh-bo-my-1036195"
+      ]
     },
     {
       "id": "nguyen-dinh-thu",
       "ten": "Nguyễn Đình Thử",
-      "lon": 106.58, "lat": 20.40,
+      "lon": 106.58,
+      "lat": 20.4,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1933",
       "mo_ta": "Từ năm 1954 công tác ở Tây Bắc làm nhiệm vụ tiễu phỉ, trừ gian, gắn bó với vùng đầu nguồn sông Mã. Kiên cường giúp nhân dân hai bên biên giới Việt–Lào ổn định cuộc sống; được công nhận Anh hùng LLVTND.",
       "dia_diem": "Xã Nam Thắng, huyện Tiền Hải, tỉnh Thái Bình (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Nguyễn Đình Thử-Người Anh hùng tiễu phỉ nơi đầu nguồn sông Mã — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/nguyen-dinh-thu-nguoi-anh-hung-tieu-phi-noi-dau-nguon-song-ma-1026374"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Nguyễn Đình Thử-Người Anh hùng tiễu phỉ nơi đầu nguồn sông Mã — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/nguyen-dinh-thu-nguoi-anh-hung-tieu-phi-noi-dau-nguon-song-ma-1026374"
+      ]
     },
     {
       "id": "hoang-viet-nhac-si",
       "ten": "Hoàng Việt (nhạc sĩ, Anh hùng LLVTND)",
-      "lon": 105.99, "lat": 10.36,
+      "lon": 105.99,
+      "lat": 10.36,
       "loai": "ahllvt",
       "nam_hien_thi": "1928–1967",
       "mo_ta": "Nhạc sĩ tiên phong sáng tác và phát triển nhạc giao hưởng Việt Nam. Năm 1966 tình nguyện vào chiến trường miền Nam phục vụ phong trào, hy sinh năm 1967 tại Cái Bè, Tiền Giang; được truy tặng Anh hùng LLVTND năm 2011 và Giải thưởng Hồ Chí Minh về Văn học nghệ thuật (1996).",
       "dia_diem": "Quê mẹ tại Cái Bè, Tiền Giang — nơi hy sinh: Mỹ Thiện, Cái Bè, Tiền Giang",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Nhạc sĩ, Anh hùng LLVT nhân dân Hoàng Việt sống mãi với những thanh âm bất tử — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/nhac-si-anh-hung-llvt-nhan-dan-hoang-viet-song-mai-voi-nhung-thanh-am-bat-tu-1042076"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Nhạc sĩ, Anh hùng LLVT nhân dân Hoàng Việt sống mãi với những thanh âm bất tử — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/nhac-si-anh-hung-llvt-nhan-dan-hoang-viet-song-mai-voi-nhung-thanh-am-bat-tu-1042076"
+      ]
     },
     {
       "id": "tran-van-chuong",
       "ten": "Trần Văn Chuông",
-      "lon": 105.95, "lat": 20.48,
+      "lon": 105.95,
+      "lat": 20.48,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1929",
       "mo_ta": "Đại đội phó công binh tỉnh Hà Nam, tham gia hơn 200 trận đánh, bị địch bắt 7 lần và cả 7 lần đều mưu trí vượt ngục trở về đơn vị chiến đấu. Năm 1949 chỉ huy vượt hơn 7km đồng lầy bí mật tấn công thành phố Nam Định.",
       "dia_diem": "Xã Cát Lại, huyện Bình Lục, tỉnh Nam Hà (nay xã Bình Lục), tỉnh Ninh Bình (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Đồng chí Trần Văn Chuông–Bảy lần vượt ngục, hơn 200 trận đánh và bản lĩnh người anh hùng — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/dong-chi-tran-van-chuong-bay-lan-vuot-nguc-hon-200-tran-danh-va-ban-linh-nguoi-anh-hung-1036656"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "qdnd.vn — Đồng chí Trần Văn Chuông–Bảy lần vượt ngục, hơn 200 trận đánh và bản lĩnh người anh hùng — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/dong-chi-tran-van-chuong-bay-lan-vuot-nguc-hon-200-tran-danh-va-ban-linh-nguoi-anh-hung-1036656"
+      ]
     },
     {
       "id": "tran-thanh-lac",
       "ten": "Trần Thanh Lạc",
-      "lon": 104.97, "lat": 10.47,
+      "lon": 104.97,
+      "lat": 10.47,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1945",
       "mo_ta": "Huyện đội trưởng huyện đội Tri Tôn, nhập ngũ năm 1966. Nổi tiếng với chiến công bắn rơi máy bay F4 của Mỹ chỉ bằng súng trung liên trong kháng chiến chống Mỹ; được tuyên dương Anh hùng LLVTND.",
       "dia_diem": "Xã Lương Phi, huyện Tri Tôn, tỉnh An Giang (quê quán)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Trần Thanh Lạc - Anh hùng bắn rơi máy bay F4 bằng súng trung liên — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/tran-thanh-lac-anh-hung-ban-roi-may-bay-f4-bang-sung-trung-lien-1046583"]
+      "nguon": [
+        "qdnd.vn — Trần Thanh Lạc - Anh hùng bắn rơi máy bay F4 bằng súng trung liên — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/tran-thanh-lac-anh-hung-ban-roi-may-bay-f4-bang-sung-trung-lien-1046583"
+      ]
     },
     {
       "id": "nguyen-thi-loi",
       "ten": "Nguyễn Thị Lợi",
-      "lon": 105.90, "lat": 19.75,
+      "lon": 105.9,
+      "lat": 19.75,
       "loai": "cand",
       "nam_hien_thi": "1911–1950",
       "mo_ta": "Nữ điệp báo Công an nhân dân, quê An Giang. Đêm 26 rạng 27/9/1950, cải trang làm vợ một quan chức, bà mang khối thuốc nổ lên tàu chiến Pháp Amyot d'Inville ngoài khơi Sầm Sơn (Thanh Hóa) và kích nổ, đánh chìm tàu, tiêu diệt hơn 200 sĩ quan, binh lính Pháp; anh dũng hy sinh. Được phong Anh hùng LLVTND năm 1995.",
       "dia_diem": "Tượng đài/nơi hy sinh: vùng biển Sầm Sơn, tỉnh Thanh Hóa",
       "do_tin_cay_toa_do": "cao",
-      "trang_thai": "draft",
-      "nguon": ["bocongan.gov.vn — Dâng hương tưởng niệm nữ Anh hùng liệt sĩ Công an nhân dân Nguyễn Thị Lợi — https://bocongan.gov.vn/bai-viet/dang-huong-tuong-niem-nu-anh-hung-liet-si-cong-an-nhan-dan-nguyen-thi-loi-d2-t36464"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "bocongan.gov.vn — Dâng hương tưởng niệm nữ Anh hùng liệt sĩ Công an nhân dân Nguyễn Thị Lợi — https://bocongan.gov.vn/bai-viet/dang-huong-tuong-niem-nu-anh-hung-liet-si-cong-an-nhan-dan-nguyen-thi-loi-d2-t36464"
+      ]
     },
     {
       "id": "nguyen-cong-tuong",
       "ten": "Nguyễn Công Tường",
-      "lon": 105.62, "lat": 20.02,
+      "lon": 105.62,
+      "lat": 20.02,
       "loai": "phong-khong",
       "nam_hien_thi": "sinh 1944",
       "mo_ta": "Chiến sĩ lái xe Đại đội 13, Trung đoàn 280, Sư đoàn 367, Quân chủng Phòng không-Không quân. Lái xe kéo pháo 724 lần và 29 chuyến chở đạn dược trên đường Trường Sơn, chạy tổng cộng 10 vạn km phục vụ chiến đấu; được tuyên dương Anh hùng LLVTND.",
       "dia_diem": "Xã Thiệu Ngọc, huyện Thiệu Yên (nay huyện Yên Định), tỉnh Thanh Hóa (quê quán)",
       "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": ["sknc.qdnd.vn — Từ lái xe kéo pháo đến danh hiệu anh hùng — https://sknc.qdnd.vn/nhan-vat/tu-lai-xe-keo-phao-den-danh-hieu-anh-hung-504174"]
+      "trang_thai": "reviewed",
+      "nguon": [
+        "sknc.qdnd.vn — Từ lái xe kéo pháo đến danh hiệu anh hùng — https://sknc.qdnd.vn/nhan-vat/tu-lai-xe-keo-phao-den-danh-hieu-anh-hung-504174"
+      ]
     },
     {
       "id": "tran-ngoc-mat",
       "ten": "Trần Ngọc Mật",
-      "lon": 105.50, "lat": 19.90,
+      "lon": 105.5,
+      "lat": 19.9,
       "loai": "ahllvt",
       "nam_hien_thi": "sinh 1945",
       "mo_ta": "Chuẩn úy, nhập ngũ tháng 9/1965 tại Tiểu đoàn 27, Quân khu 4. Nhiều lần lặn sâu dưới dòng nước xiết làm nhiệm vụ vượt sông; một lần đồng đội tưởng ông đã hy sinh và phủ lá chuối, nhưng ông tỉnh lại và tiếp tục chiến đấu chỉ một tuần sau. Được phong Anh hùng LLVTND ngày 22/12/1969.",
       "dia_diem": "Xã Xuân Tín, huyện Thọ Xuân, tỉnh Thanh Hóa (quê quán)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["qdnd.vn — Anh hùng Trần Ngọc Mật: Đồng đội phủ lá chuối vì tưởng đã hy sinh — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-tran-ngoc-mat-dong-doi-phu-la-chuoi-vi-tuong-da-hy-sinh-1041833"]
+      "nguon": [
+        "qdnd.vn — Anh hùng Trần Ngọc Mật: Đồng đội phủ lá chuối vì tưởng đã hy sinh — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/anh-hung-tran-ngoc-mat-dong-doi-phu-la-chuoi-vi-tuong-da-hy-sinh-1041833"
+      ]
     }
   ]
 }
