@@ -1889,6 +1889,33 @@ const OVERLAYS: OverlayConf[] = [
       "Báo Nhân Dân · Viện Hàn lâm KHCN/KHXH VN · ĐHQG · MEDDOM · Tia Sáng",
     popup: personOverlayPopup,
   },
+  {
+    id: "chua-nguyen-trinh",
+    label: "👑 Chúa Nguyễn · chúa Trịnh · danh thần Lê–Trịnh",
+    file: "data/overlays/chua-nguyen-trinh.json",
+    circleColor: "#6d28d9",
+    nguon:
+      "TT Bảo tồn Di tích Cố đô Huế · dsvh.gov.vn · scov.gov.vn · cổng tỉnh · Báo Nhân Dân",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "nghe-nhan-lang-nghe-bo-sung",
+    label: "🪚 Tổ nghề · nghệ nhân làng nghề (bổ sung)",
+    file: "data/overlays/nghe-nhan-lang-nghe-bo-sung.json",
+    circleColor: "#78350f",
+    nguon:
+      "dsvh.gov.vn · cổng tỉnh · báo địa phương · hiệp hội làng nghề",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "khoa-bang-nam-trung-bo",
+    label: "🎓 Khoa bảng Nam Trung Bộ (Quảng Nam · Quảng Ngãi)",
+    file: "data/overlays/khoa-bang-nam-trung-bo.json",
+    circleColor: "#0e7490",
+    nguon:
+      "scov.gov.vn (Bộ VHTTDL) · Giáo dục & Thời đại · Báo Đà Nẵng · Quảng Nam · dsvh.gov.vn",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
