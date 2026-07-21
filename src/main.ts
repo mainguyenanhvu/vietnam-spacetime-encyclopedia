@@ -1769,6 +1769,15 @@ const OVERLAYS: OverlayConf[] = [
       "Giác Ngộ · Phật giáo VN · Tạp chí NC Phật học · Báo Nhân Dân · dsvh.gov.vn",
     popup: personOverlayPopup,
   },
+  {
+    id: "kien-truc-su-ky-su",
+    label: "📐 Kiến trúc sư · kỹ sư tiêu biểu",
+    file: "data/overlays/kien-truc-su-ky-su.json",
+    circleColor: "#a21caf",
+    nguon:
+      "Báo Nhân Dân · CAND · Tuổi Trẻ · Báo Pháp Luật VN · Đại Đoàn Kết · Bảo tàng Lịch sử · Tạp chí Kiến trúc",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
