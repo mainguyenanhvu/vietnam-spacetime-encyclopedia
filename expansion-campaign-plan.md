@@ -95,6 +95,7 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | 15 | `550888b` | khoa-bang-bo-sung-4 · thu-linh-khoi-nghia-co-dai · dich-gia-ngon-ngu-hoc | 36 | 1147 |
 | 16 | `59b63e3` | khoa-bang-mien-trung · danh-nhan-nam-bo · danh-than-trieu-nguyen — DDG-lite bắt đầu CAPTCHA (html/ ổn hơn) | 36 | 1183 |
 | 17 | `44a1c35` | khoa-bang-thanh-hoa · nghia-si-can-vuong (−3 dup) · tri-thuc-khoa-hoc-tk20 — nhánh 1/4 «làm hết 4 mục» | 32 | 1215 |
+| §9 | `954fd9c` | nâng 754 mục an toàn draft→reviewed; giữ 181 nhạy cảm + 32 Sóng17 draft (nhánh 2/4) | 0 | 1215 |
 
 **⛔ Điểm dừng phiên 2026-07-20 (sau Sóng 7):** mọi công cụ tìm kiếm (WebSearch cạn;
 Google/Bing/DDG qua web-crawl đều CAPTCHA/429) → **discovery thực sự bị chặn** = «không
