@@ -91,6 +91,7 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | 11 | `6d4c7d8` | nghe-si-san-khau-dien-anh · hoa-si-dieu-khac (agent nhà-báo chết giữa chừng — dời sóng sau) | 39 | 1035 |
 | 12 | `bc727dc` | nha-bao-xuat-ban · thien-su-cao-tang (agent kiến-trúc-sư chết giữa chừng — Chrome tiếp) | 31 | 1066 |
 | 13 | `691366a` | kien-truc-su-ky-su (6 KTS + 6 kỹ sư) — **discovery qua Chrome→Google, KHÔNG CAPTCHA** | 12 | 1078 |
+| 14 | `df56c3b` | khoa-bang-bo-sung-3 · danh-nhan-quan-su-co-trung-dai · nha-the-thao-lich-su — agent WebFetch→DDG-lite (không WebSearch) | 33 | 1111 |
 
 **⛔ Điểm dừng phiên 2026-07-20 (sau Sóng 7):** mọi công cụ tìm kiếm (WebSearch cạn;
 Google/Bing/DDG qua web-crawl đều CAPTCHA/429) → **discovery thực sự bị chặn** = «không
