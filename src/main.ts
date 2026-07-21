@@ -1751,6 +1751,24 @@ const OVERLAYS: OverlayConf[] = [
       "Cục Mỹ thuật–Nhiếp ảnh (Bộ VHTTDL) · TTXVN · Báo Nhân Dân · VOV · cổng tỉnh/thành",
     popup: personOverlayPopup,
   },
+  {
+    id: "nha-bao-xuat-ban",
+    label: "📰 Nhà báo · nhà xuất bản tiền phong",
+    file: "data/overlays/nha-bao-xuat-ban.json",
+    circleColor: "#1d4ed8",
+    nguon:
+      "Báo Nhân Dân · Hội Nhà báo VN · TTXVN · Bảo tàng Báo chí VN · cổng tỉnh/thành",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "thien-su-cao-tang",
+    label: "🪷 Thiền sư · cao tăng lịch sử",
+    file: "data/overlays/thien-su-cao-tang.json",
+    circleColor: "#ca8a04",
+    nguon:
+      "Giác Ngộ · Phật giáo VN · Tạp chí NC Phật học · Báo Nhân Dân · dsvh.gov.vn",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
