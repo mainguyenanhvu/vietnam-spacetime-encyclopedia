@@ -1,0 +1,3762 @@
+{
+  "_license": "© OpenStreetMap contributors (ODbL) — https://www.openstreetmap.org/copyright",
+  "ngay_build": "2026-07-21",
+  "nguon": "OpenStreetMap qua Overpass API (overpass.kumi.systems / overpass-api.de)",
+  "ghi_chu": "PILOT Phương án A: chỉ centroid đại diện + số đoạn, không lưu hình học đầy đủ. bbox là lõi đô thị trung tâm, chưa phủ hết ranh giới hành chính sau sáp nhập tỉnh 2025. Khớp tên: chuẩn hoá bỏ dấu/hoa-thường, đòi khớp đầy đủ chuỗi, loại ứng viên đụng độ giữa ≥2 danh nhân. Vẫn cần 1 vòng soát thủ công trước khi mở rộng toàn quốc (xem docs/street-names-model-proposal.md mục 4 bước 5).",
+  "thanh_pho": [
+    {
+      "ten_tp": "Hà Nội",
+      "bbox": [
+        20.92,
+        105.72,
+        21.16,
+        106.02
+      ],
+      "trang_thai": "loi",
+      "ghi_chu": "Overpass thất bại sau 2 lần thử × 2 mirror."
+    },
+    {
+      "ten_tp": "TP. Hồ Chí Minh",
+      "bbox": [
+        10.68,
+        106.55,
+        10.9,
+        106.85
+      ],
+      "trang_thai": "ok",
+      "tong_duong_co_ten_osm": 28527,
+      "so_duong_khop_danh_nhan": 235
+    },
+    {
+      "ten_tp": "Đà Nẵng",
+      "bbox": [
+        15.98,
+        108.15,
+        16.14,
+        108.28
+      ],
+      "trang_thai": "loi",
+      "ghi_chu": "Overpass thất bại sau 2 lần thử × 2 mirror."
+    }
+  ],
+  "lien_ket": [
+    {
+      "danh_nhan_id": "do-thua-luong-do-thua-tu",
+      "ten": "Đỗ Thừa Luông – Đỗ Thừa Tự",
+      "so_duong": 2,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đỗ Thừa Tự",
+          "so_doan": 1,
+          "centroid": [
+            106.61794,
+            10.79025
+          ]
+        },
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đỗ Thừa Luông",
+          "so_doan": 1,
+          "centroid": [
+            106.61742,
+            10.79244
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ha-dac-ha-chuong",
+      "ten": "Hà Đặc – Hà Chương",
+      "so_duong": 2,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hà Đặc",
+          "so_doan": 2,
+          "centroid": [
+            106.61314,
+            10.85878
+          ]
+        },
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hà Chương",
+          "so_doan": 2,
+          "centroid": [
+            106.61323,
+            10.86073
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-binh-nha-tho",
+      "ten": "Nguyễn Bính",
+      "so_duong": 2,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Bính",
+          "so_doan": 3,
+          "centroid": [
+            106.71049,
+            10.72612
+          ]
+        },
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Bình",
+          "so_doan": 10,
+          "centroid": [
+            106.69104,
+            10.68852
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-huy-ich",
+      "ten": "Phan Huy Ích",
+      "so_duong": 2,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Huy Ích",
+          "so_doan": 3,
+          "centroid": [
+            106.63348,
+            10.83114
+          ]
+        },
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Huy ích",
+          "so_doan": 11,
+          "centroid": [
+            106.62965,
+            10.82328
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-hung-dao",
+      "ten": "Hưng Đạo Đại Vương Trần Quốc Tuấn",
+      "so_duong": 2,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Quốc Tuấn",
+          "so_doan": 2,
+          "centroid": [
+            106.69271,
+            10.82112
+          ]
+        },
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Hưng Đạo",
+          "so_doan": 57,
+          "centroid": [
+            106.68925,
+            10.77526
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-tan-dang-nhu-mai",
+      "ten": "Trần Tấn – Đặng Như Mai",
+      "so_duong": 2,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đặng Như Mai",
+          "so_doan": 1,
+          "centroid": [
+            106.75669,
+            10.77373
+          ]
+        },
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Tấn",
+          "so_doan": 5,
+          "centroid": [
+            106.63541,
+            10.79664
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "an-duong-vuong",
+      "ten": "An Dương Vương (Thục Phán)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "An Dương Vương",
+          "so_doan": 17,
+          "centroid": [
+            106.64293,
+            10.74712
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "an-tu-cong-chua",
+      "ten": "An Tư công chúa",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "An Tư Công Chúa",
+          "so_doan": 4,
+          "centroid": [
+            106.73366,
+            10.78398
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ba-trieu",
+      "ten": "Bà Triệu (Triệu Thị Trinh)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Bà Triệu",
+          "so_doan": 7,
+          "centroid": [
+            106.59285,
+            10.8799
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "be-van-dan",
+      "ten": "Anh hùng LLVTND Bế Văn Đàn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Bế Văn Đàn",
+          "so_doan": 2,
+          "centroid": [
+            106.6959,
+            10.83026
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "bo-cai-dai-vuong",
+      "ten": "Bố Cái Đại Vương (Phùng Hưng)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phùng Hưng",
+          "so_doan": 1,
+          "centroid": [
+            106.7756,
+            10.84693
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "bui-cam-ho",
+      "ten": "Bùi Cầm Hổ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Bùi Cẩm Hổ",
+          "so_doan": 1,
+          "centroid": [
+            106.6338,
+            10.76646
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "bui-vien",
+      "ten": "Bùi Viện",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Bùi Viện",
+          "so_doan": 4,
+          "centroid": [
+            106.69318,
+            10.76701
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "bui-xuan-phai",
+      "ten": "Bùi Xuân Phái",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Bùi Xuân Phái",
+          "so_doan": 2,
+          "centroid": [
+            106.62846,
+            10.80813
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "cam-ba-thuoc",
+      "ten": "Cầm Bá Thước",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Cầm Bá Thước",
+          "so_doan": 5,
+          "centroid": [
+            106.68584,
+            10.80291
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "cao-thang",
+      "ten": "Cao Thắng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Cao Thắng",
+          "so_doan": 26,
+          "centroid": [
+            106.67993,
+            10.77335
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "che-lan-vien",
+      "ten": "Chế Lan Viên",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Chế Lan Viên",
+          "so_doan": 4,
+          "centroid": [
+            106.62801,
+            10.81162
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "chu-dong-tu",
+      "ten": "Chử Đồng Tử — Tứ bất tử",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Chử Đồng Tử",
+          "so_doan": 1,
+          "centroid": [
+            106.65714,
+            10.78733
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "chu-van-an",
+      "ten": "Chu Văn An — «Vạn thế sư biểu»",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Chu Văn An",
+          "so_doan": 24,
+          "centroid": [
+            106.7274,
+            10.82393
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "cu-chinh-lan",
+      "ten": "Anh hùng LLVTND Cù Chính Lan",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Cù Chính Lan",
+          "so_doan": 1,
+          "centroid": [
+            106.64569,
+            10.80579
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dam-than-huy",
+      "ten": "Đàm Thận Huy",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đàm Thận Huy",
+          "so_doan": 8,
+          "centroid": [
+            106.62506,
+            10.7895
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dang-dung",
+      "ten": "Đặng Dung",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đặng Dung",
+          "so_doan": 2,
+          "centroid": [
+            106.6897,
+            10.79255
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dang-thai-mai",
+      "ten": "Đặng Thai Mai",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đặng Thai Mai",
+          "so_doan": 1,
+          "centroid": [
+            106.68964,
+            10.80301
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dang-thuy-tram",
+      "ten": "Đặng Thùy Trâm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đặng Thùy Trâm",
+          "so_doan": 5,
+          "centroid": [
+            106.70237,
+            10.82791
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dang-van-ngu",
+      "ten": "Đặng Văn Ngữ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đặng Văn Ngữ",
+          "so_doan": 7,
+          "centroid": [
+            106.66937,
+            10.79517
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dao-duy-tu",
+      "ten": "Đào Duy Từ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đào Duy Từ",
+          "so_doan": 5,
+          "centroid": [
+            106.69675,
+            10.8013
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dao-su-tich",
+      "ten": "Đào Sư Tích",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đào Sư Tích",
+          "so_doan": 17,
+          "centroid": [
+            106.68767,
+            10.70061
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "diep-minh-chau",
+      "ten": "Diệp Minh Châu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Diệp Minh Châu",
+          "so_doan": 1,
+          "centroid": [
+            106.63244,
+            10.79632
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "dinh-liet",
+      "ten": "Đinh Liệt",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đinh Liệt",
+          "so_doan": 4,
+          "centroid": [
+            106.62438,
+            10.78282
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "do-cong-tuong",
+      "ten": "Đỗ Công Tường (Ông Chủ Chợ Cao Lãnh)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đỗ Công Tường",
+          "so_doan": 1,
+          "centroid": [
+            106.61824,
+            10.79728
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "do-duc-duc",
+      "ten": "Đỗ Đức Dục",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đỗ Đức Dục",
+          "so_doan": 1,
+          "centroid": [
+            106.62763,
+            10.78335
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "do-nhuan",
+      "ten": "Đỗ Nhuận",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đỗ Nhuận",
+          "so_doan": 1,
+          "centroid": [
+            106.62572,
+            10.80571
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "do-thuc-tinh",
+      "ten": "Đỗ Thúc Tịnh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đỗ Thúc Tịnh",
+          "so_doan": 1,
+          "centroid": [
+            106.64301,
+            10.84088
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "doan-thi-diem",
+      "ten": "Hồng Hà nữ sĩ Đoàn Thị Điểm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Đoàn Thị Điểm",
+          "so_doan": 2,
+          "centroid": [
+            106.75115,
+            10.87326
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "doan-tran-nghiep",
+      "ten": "Đoàn Trần Nghiệp — Ký Con",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ký Con",
+          "so_doan": 9,
+          "centroid": [
+            106.69876,
+            10.76683
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "duong-ba-trac",
+      "ten": "Dương Bá Trạc",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Dương Bá Trạc",
+          "so_doan": 22,
+          "centroid": [
+            106.68889,
+            10.74539
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "duong-dinh-nghe",
+      "ten": "Dương Đình Nghệ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Dương Đình Nghệ",
+          "so_doan": 2,
+          "centroid": [
+            106.7057,
+            10.81618
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "duong-quang-ham",
+      "ten": "Dương Quảng Hàm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Dương Quảng Hàm",
+          "so_doan": 16,
+          "centroid": [
+            106.68809,
+            10.83115
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "duy-tan",
+      "ten": "Duy Tân",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Duy Tân",
+          "so_doan": 3,
+          "centroid": [
+            106.66195,
+            10.78812
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "gia-long",
+      "ten": "Gia Long",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Gia Long",
+          "so_doan": 1,
+          "centroid": [
+            106.7023,
+            10.89679
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "giang-van-minh",
+      "ten": "Giang Văn Minh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Giang Văn Minh",
+          "so_doan": 1,
+          "centroid": [
+            106.74909,
+            10.80764
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ha-huy-tap",
+      "ten": "Hà Huy Tập",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hà Huy Tập",
+          "so_doan": 9,
+          "centroid": [
+            106.75364,
+            10.71631
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hai-ba-trung",
+      "ten": "Hai Bà Trưng (Trưng Trắc – Trưng Nhị)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hai Bà Trưng",
+          "so_doan": 43,
+          "centroid": [
+            106.70291,
+            10.79836
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hai-doi-hoang-sa",
+      "ten": "Hải đội Hoàng Sa (kiêm quản Bắc Hải – Trường Sa)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trường Sa",
+          "so_doan": 45,
+          "centroid": [
+            106.69056,
+            10.79242
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ham-nghi",
+      "ten": "Hàm Nghi",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hàm Nghi",
+          "so_doan": 29,
+          "centroid": [
+            106.70452,
+            10.77353
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "han-mac-tu",
+      "ten": "Nhà thơ Hàn Mặc Tử",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hàn Mặc Tử",
+          "so_doan": 1,
+          "centroid": [
+            106.63251,
+            10.79205
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ho-dac-di",
+      "ten": "Hồ Đắc Di",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hồ Đắc Di",
+          "so_doan": 4,
+          "centroid": [
+            106.63296,
+            10.80592
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ho-tung-mau",
+      "ten": "Hồ Tùng Mậu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hồ Tùng Mậu",
+          "so_doan": 8,
+          "centroid": [
+            106.71114,
+            10.78329
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ho-xuan-huong",
+      "ten": "Bà chúa thơ Nôm Hồ Xuân Hương",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hồ Xuân Hương",
+          "so_doan": 13,
+          "centroid": [
+            106.74626,
+            10.83782
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hoang-bat-dat",
+      "ten": "Hoàng Bật Đạt",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hoàng Bật Đạt",
+          "so_doan": 1,
+          "centroid": [
+            106.63503,
+            10.8247
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hoang-ke-viem",
+      "ten": "Hoàng Kế Viêm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hoàng Kế Viêm",
+          "so_doan": 3,
+          "centroid": [
+            106.65127,
+            10.7979
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hoang-ngan",
+      "ten": "Hoàng Ngân — Phạm Thị Vân",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hoàng Ngân",
+          "so_doan": 3,
+          "centroid": [
+            106.62477,
+            10.72485
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hoang-ngoc-phach",
+      "ten": "Hoàng Ngọc Phách",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hoàng Ngọc Phách",
+          "so_doan": 1,
+          "centroid": [
+            106.62543,
+            10.78501
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hoang-van-thai",
+      "ten": "Đại tướng Hoàng Văn Thái",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hoàng Văn Thái",
+          "so_doan": 13,
+          "centroid": [
+            106.7209,
+            10.72953
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hoang-viet-nhac-si",
+      "ten": "Hoàng Việt (nhạc sĩ, Anh hùng LLVTND)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hoàng Việt",
+          "so_doan": 6,
+          "centroid": [
+            106.65899,
+            10.79692
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "hung-vuong",
+      "ten": "Các Vua Hùng (Hùng Vương)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Hùng Vương",
+          "so_doan": 13,
+          "centroid": [
+            106.68285,
+            10.76796
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "huyen-tran-cong-chua",
+      "ten": "Huyền Trân Công chúa",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Huyền Trân Công Chúa",
+          "so_doan": 1,
+          "centroid": [
+            106.6946,
+            10.77615
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "huynh-man-dat",
+      "ten": "Huỳnh Mẫn Đạt (Tuần phủ Đạt)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Huỳnh Mẫn Đạt",
+          "so_doan": 2,
+          "centroid": [
+            106.70871,
+            10.79049
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "huynh-tan-phat",
+      "ten": "Huỳnh Tấn Phát",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Huỳnh Tấn Phát",
+          "so_doan": 50,
+          "centroid": [
+            106.7397,
+            10.73327
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "huynh-thuc-khang",
+      "ten": "Huỳnh Thúc Kháng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Huỳnh Thúc Kháng",
+          "so_doan": 5,
+          "centroid": [
+            106.7166,
+            10.78683
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "kim-dong",
+      "ten": "Anh hùng LLVTND Kim Đồng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Kim Đồng",
+          "so_doan": 1,
+          "centroid": [
+            106.64261,
+            10.6903
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "lac-long-quan",
+      "ten": "Lạc Long Quân (Sùng Lãm)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lạc Long Quân",
+          "so_doan": 21,
+          "centroid": [
+            106.64719,
+            10.77514
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-duc-anh",
+      "ten": "Đại tướng Lê Đức Anh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Đức Anh",
+          "so_doan": 163,
+          "centroid": [
+            106.59851,
+            10.78515
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-lai",
+      "ten": "Lê Lai — «Lê Lai cứu chúa»",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Lai",
+          "so_doan": 16,
+          "centroid": [
+            106.67503,
+            10.79092
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-loi",
+      "ten": "Lê Lợi — Lê Thái Tổ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Lợi",
+          "so_doan": 22,
+          "centroid": [
+            106.6919,
+            10.78241
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-phung-hieu",
+      "ten": "Lê Phụng Hiểu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Phụng Hiểu",
+          "so_doan": 10,
+          "centroid": [
+            106.78769,
+            10.76351
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-quang-dao",
+      "ten": "Trung tướng Lê Quang Đạo",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Quang Đạo",
+          "so_doan": 41,
+          "centroid": [
+            106.60479,
+            10.85819
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-quang-dinh",
+      "ten": "Lê Quang Định",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Quang Định",
+          "so_doan": 21,
+          "centroid": [
+            106.69289,
+            10.81254
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-quy-don",
+      "ten": "Lê Quý Đôn — nhà bác học",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Quý Đôn",
+          "so_doan": 17,
+          "centroid": [
+            106.77735,
+            10.86079
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-sat",
+      "ten": "Lê Sát — Đại tư đồ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Sát",
+          "so_doan": 1,
+          "centroid": [
+            106.61913,
+            10.79287
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-than-bang-nhan",
+      "ten": "Lê Thân",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Thận",
+          "so_doan": 1,
+          "centroid": [
+            106.62956,
+            10.77372
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-thi-hong-gam",
+      "ten": "Lê Thị Hồng Gấm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Thị Hồng Gấm",
+          "so_doan": 4,
+          "centroid": [
+            106.66976,
+            10.79923
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-thi-rieng",
+      "ten": "Lê Thị Riêng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Thị Riêng",
+          "so_doan": 19,
+          "centroid": [
+            106.65847,
+            10.85882
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-trong-tan",
+      "ten": "Đại tướng Lê Trọng Tấn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Trọng Tấn",
+          "so_doan": 31,
+          "centroid": [
+            106.62423,
+            10.81423
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-truc",
+      "ten": "Lê Trực — Đề đốc Lê Trực",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Trực",
+          "so_doan": 3,
+          "centroid": [
+            106.67747,
+            10.78862
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-trung-dinh",
+      "ten": "Lê Trung Đình",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Trung Đình",
+          "so_doan": 1,
+          "centroid": [
+            106.63083,
+            10.80336
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-van-duyet",
+      "ten": "Lê Văn Duyệt — Lăng Ông Bà Chiểu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Văn Duyệt",
+          "so_doan": 9,
+          "centroid": [
+            106.69631,
+            10.7986
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-van-huu",
+      "ten": "Lê Văn Hưu — sử gia đầu tiên",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Văn Hưu",
+          "so_doan": 2,
+          "centroid": [
+            106.70068,
+            10.78215
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-van-mien",
+      "ten": "Lê Văn Miến",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Văn Miến",
+          "so_doan": 2,
+          "centroid": [
+            106.7343,
+            10.80558
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-van-thiem",
+      "ten": "Lê Văn Thiêm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Văn Thiêm",
+          "so_doan": 2,
+          "centroid": [
+            106.709,
+            10.73106
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "le-van-thinh",
+      "ten": "Lê Văn Thịnh — người khai khoa",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lê Văn Thịnh",
+          "so_doan": 1,
+          "centroid": [
+            106.76763,
+            10.78254
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "luong-dinh-cua",
+      "ten": "Giáo sư, Anh hùng Lao động Lương Định Của",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lương Định Của",
+          "so_doan": 40,
+          "centroid": [
+            106.7452,
+            10.79906
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "luong-the-vinh",
+      "ten": "Lương Thế Vinh — Trạng Lường",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lương Thế Vinh",
+          "so_doan": 1,
+          "centroid": [
+            106.63055,
+            10.76269
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "luong-van-can",
+      "ten": "Lương Văn Can",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lương Văn Can",
+          "so_doan": 4,
+          "centroid": [
+            106.78078,
+            10.87214
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "luu-nhan-chu",
+      "ten": "Lưu Nhân Chú",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lưu Nhân Chú",
+          "so_doan": 1,
+          "centroid": [
+            106.66283,
+            10.79091
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "luu-van-lang",
+      "ten": "Lưu Văn Lang",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lưu Văn Lang",
+          "so_doan": 1,
+          "centroid": [
+            106.69898,
+            10.77325
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-chinh-thang",
+      "ten": "Lý Chính Thắng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Chính Thắng",
+          "so_doan": 8,
+          "centroid": [
+            106.68431,
+            10.78489
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-nam-de",
+      "ten": "Lý Nam Đế (Lý Bí)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Nam Đế",
+          "so_doan": 2,
+          "centroid": [
+            106.65978,
+            10.76034
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-phuc-man",
+      "ten": "Lý Phục Man",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Phục Man",
+          "so_doan": 2,
+          "centroid": [
+            106.72399,
+            10.74278
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-thai-to",
+      "ten": "Lý Thái Tổ – Lý Công Uẩn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Thái Tổ",
+          "so_doan": 34,
+          "centroid": [
+            106.74033,
+            10.75725
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-thai-tong",
+      "ten": "Lý Thái Tông",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Thái Tông",
+          "so_doan": 1,
+          "centroid": [
+            106.63103,
+            10.76988
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-thanh-tong",
+      "ten": "Lý Thánh Tông",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Thánh Tông",
+          "so_doan": 2,
+          "centroid": [
+            106.62875,
+            10.76703
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-thuong-kiet",
+      "ten": "Lý Thường Kiệt",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Thường Kiệt",
+          "so_doan": 32,
+          "centroid": [
+            106.65399,
+            10.79088
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-tu-trong",
+      "ten": "Anh hùng LLVTND Lý Tự Trọng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Tự Trọng",
+          "so_doan": 10,
+          "centroid": [
+            106.70002,
+            10.77707
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ly-van-phuc",
+      "ten": "Lý Văn Phức",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Lý Văn Phức",
+          "so_doan": 1,
+          "centroid": [
+            106.69391,
+            10.79112
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "mac-dinh-chi",
+      "ten": "Mạc Đĩnh Chi — «Lưỡng quốc Trạng nguyên»",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Mạc Đĩnh Chi",
+          "so_doan": 13,
+          "centroid": [
+            106.7376,
+            10.82979
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "mac-hien-tich",
+      "ten": "Mạc Hiển Tích",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Mạc Hiển Tích",
+          "so_doan": 1,
+          "centroid": [
+            106.84202,
+            10.86644
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "mai-xuan-thuong",
+      "ten": "Mai Xuân Thưởng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Mai Xuân Thưởng",
+          "so_doan": 2,
+          "centroid": [
+            106.67175,
+            10.77946
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "man-thien",
+      "ten": "Man Thiện (Trần Thị Đoan)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Man Thiện",
+          "so_doan": 3,
+          "centroid": [
+            106.78997,
+            10.85053
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nam-cao",
+      "ten": "Nhà văn Nam Cao",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nam Cao",
+          "so_doan": 12,
+          "centroid": [
+            106.8002,
+            10.85928
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ngo-duc-ke",
+      "ten": "Ngô Đức Kế",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ngô Đức Kế",
+          "so_doan": 2,
+          "centroid": [
+            106.69924,
+            10.80851
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ngo-nhan-tinh",
+      "ten": "Ngô Nhân Tịnh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ngô Nhân Tịnh",
+          "so_doan": 2,
+          "centroid": [
+            106.67622,
+            10.77427
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ngo-quyen",
+      "ten": "Ngô Quyền",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ngô Quyền",
+          "so_doan": 15,
+          "centroid": [
+            106.637,
+            10.84916
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ngo-tat-to",
+      "ten": "Nhà văn Ngô Tất Tố",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ngô Tất Tố",
+          "so_doan": 9,
+          "centroid": [
+            106.71494,
+            10.79047
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ngo-thi-nham",
+      "ten": "Ngô Thì Nhậm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ngô Thì Nhậm",
+          "so_doan": 1,
+          "centroid": [
+            106.76462,
+            10.89742
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ngo-van-so",
+      "ten": "Ngô Văn Sở",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ngô Văn Sở",
+          "so_doan": 1,
+          "centroid": [
+            106.71014,
+            10.76218
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguy-nhu-kon-tum",
+      "ten": "Ngụy Như Kon Tum",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Ngụy Như Kon Tum",
+          "so_doan": 1,
+          "centroid": [
+            106.63208,
+            10.77505
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-an-ninh",
+      "ten": "Nguyễn An Ninh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn An Ninh",
+          "so_doan": 1,
+          "centroid": [
+            106.697,
+            10.77185
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-ba-lan",
+      "ten": "Nguyễn Bá Lân",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Bá Lân",
+          "so_doan": 1,
+          "centroid": [
+            106.73637,
+            10.80259
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-binh-khiem",
+      "ten": "Nguyễn Bỉnh Khiêm — Trạng Trình",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Bỉnh Khiêm",
+          "so_doan": 24,
+          "centroid": [
+            106.75173,
+            10.83599
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-chanh-sat",
+      "ten": "Nguyễn Chánh Sắt",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Chánh Sắt",
+          "so_doan": 2,
+          "centroid": [
+            106.64623,
+            10.80585
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-chi-thanh",
+      "ten": "Đại tướng Nguyễn Chí Thanh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Chí Thanh",
+          "so_doan": 21,
+          "centroid": [
+            106.66316,
+            10.75882
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-chich",
+      "ten": "Nguyễn Chích",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Chích",
+          "so_doan": 1,
+          "centroid": [
+            106.62478,
+            10.78119
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-cong-tru",
+      "ten": "Nguyễn Công Trứ — quan khai hoang thanh liêm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Công Trứ",
+          "so_doan": 13,
+          "centroid": [
+            106.71954,
+            10.79436
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-cu-trinh",
+      "ten": "Nguyễn Cư Trinh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Cư Trinh",
+          "so_doan": 15,
+          "centroid": [
+            106.69022,
+            10.76395
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-dang-dao",
+      "ten": "Nguyễn Đăng Đạo",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Đăng Đạo",
+          "so_doan": 1,
+          "centroid": [
+            106.75194,
+            10.7815
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-dang-giai",
+      "ten": "Nguyễn Đăng Giai",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Đăng Giai",
+          "so_doan": 1,
+          "centroid": [
+            106.73662,
+            10.8022
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-dinh-chieu",
+      "ten": "Nguyễn Đình Chiểu (Đồ Chiểu)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Đình Chiểu",
+          "so_doan": 25,
+          "centroid": [
+            106.6936,
+            10.78105
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-dinh-thi",
+      "ten": "Nguyễn Đình Thi",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Đình Thi",
+          "so_doan": 1,
+          "centroid": [
+            106.77694,
+            10.81697
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-do-cung",
+      "ten": "Nguyễn Đỗ Cung",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Đỗ Cung",
+          "so_doan": 1,
+          "centroid": [
+            106.6293,
+            10.80757
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-duy-hieu",
+      "ten": "Nguyễn Duy Hiệu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Duy Hiệu",
+          "so_doan": 1,
+          "centroid": [
+            106.73592,
+            10.80276
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-gia-tri",
+      "ten": "Nguyễn Gia Trí",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Gia Trí",
+          "so_doan": 8,
+          "centroid": [
+            106.71616,
+            10.80601
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-hien",
+      "ten": "Nguyễn Hiền — Trạng nguyên trẻ nhất",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Hiền",
+          "so_doan": 1,
+          "centroid": [
+            106.8078,
+            10.87493
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-hien-le",
+      "ten": "Nguyễn Hiến Lê",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Hiến Lê",
+          "so_doan": 1,
+          "centroid": [
+            106.64624,
+            10.80677
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-hong",
+      "ten": "Nguyên Hồng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyên Hồng",
+          "so_doan": 3,
+          "centroid": [
+            106.69306,
+            10.81791
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-huu-dat",
+      "ten": "Nguyễn Hữu Dật",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Hữu Dật",
+          "so_doan": 1,
+          "centroid": [
+            106.63064,
+            10.8088
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-huu-tien-nam-ky",
+      "ten": "Nguyễn Hữu Tiến",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Hữu Tiến",
+          "so_doan": 3,
+          "centroid": [
+            106.62438,
+            10.81107
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-khac-nhu",
+      "ten": "Nguyễn Khắc Nhu — Xứ Nhu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Khắc Nhu",
+          "so_doan": 1,
+          "centroid": [
+            106.69323,
+            10.7634
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-khac-vien",
+      "ten": "Nguyễn Khắc Viện",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Khắc Viện",
+          "so_doan": 2,
+          "centroid": [
+            106.72052,
+            10.7283
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-khoai",
+      "ten": "Nguyễn Khoái",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Khoái",
+          "so_doan": 4,
+          "centroid": [
+            106.73453,
+            10.80149
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-khuyen",
+      "ten": "Nguyễn Khuyến — Tam Nguyên Yên Đổ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Khuyến",
+          "so_doan": 4,
+          "centroid": [
+            106.75311,
+            10.83761
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-lo-trach",
+      "ten": "Nguyễn Lộ Trạch",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Lộ Trạch",
+          "so_doan": 1,
+          "centroid": [
+            106.61943,
+            10.7937
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-luong-bang",
+      "ten": "Nguyễn Lương Bằng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Lương Bằng",
+          "so_doan": 65,
+          "centroid": [
+            106.72305,
+            10.72674
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-pham-tuan",
+      "ten": "Nguyễn Phạm Tuân — Thượng tướng Cần Vương",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Phạm Tuân",
+          "so_doan": 2,
+          "centroid": [
+            106.64175,
+            10.75328
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-phan-chanh",
+      "ten": "Nguyễn Phan Chánh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Phan Chánh",
+          "so_doan": 3,
+          "centroid": [
+            106.70328,
+            10.72688
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-phuc-nguyen",
+      "ten": "Nguyễn Phúc Nguyên — Chúa Sãi",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Phúc Nguyên",
+          "so_doan": 6,
+          "centroid": [
+            106.67901,
+            10.78102
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-quang-bich",
+      "ten": "Nguyễn Quang Bích",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Quang Bích",
+          "so_doan": 1,
+          "centroid": [
+            106.64606,
+            10.80472
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-quy-duc",
+      "ten": "Nguyễn Quý Đức — Tể tướng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Quý Đức",
+          "so_doan": 5,
+          "centroid": [
+            106.73872,
+            10.79793
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-son",
+      "ten": "Thiếu tướng Nguyễn Sơn — «Lưỡng quốc tướng quân»",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Sơn",
+          "so_doan": 8,
+          "centroid": [
+            106.62691,
+            10.78276
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-son-ha",
+      "ten": "Nguyễn Sơn Hà",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Sơn Hà",
+          "so_doan": 3,
+          "centroid": [
+            106.68492,
+            10.7702
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thai-hoc",
+      "ten": "Nguyễn Thái Học",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thái Học",
+          "so_doan": 32,
+          "centroid": [
+            106.69935,
+            10.7732
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thi-minh-khai",
+      "ten": "Nguyễn Thị Minh Khai",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thị Minh Khai",
+          "so_doan": 52,
+          "centroid": [
+            106.69317,
+            10.77761
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thi-muoi",
+      "ten": "Mẹ Việt Nam Anh hùng, Anh hùng LLVTND Nguyễn Thị Mười",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thị Mười",
+          "so_doan": 2,
+          "centroid": [
+            106.67647,
+            10.73666
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thi-thap",
+      "ten": "Nguyễn Thị Thập",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thị Thập",
+          "so_doan": 64,
+          "centroid": [
+            106.71371,
+            10.73891
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thi-thu",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Thứ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thị Thử",
+          "so_doan": 1,
+          "centroid": [
+            106.57969,
+            10.86821
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thien-thanh",
+      "ten": "Nguyễn Thiện Thành",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thiện Thành",
+          "so_doan": 8,
+          "centroid": [
+            106.71213,
+            10.77353
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thiep",
+      "ten": "Nguyễn Thiếp — La Sơn Phu Tử",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thiệp",
+          "so_doan": 1,
+          "centroid": [
+            106.70328,
+            10.77527
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-thuong-hien",
+      "ten": "Nguyễn Thượng Hiền",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Thượng Hiền",
+          "so_doan": 10,
+          "centroid": [
+            106.68557,
+            10.79577
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-trai",
+      "ten": "Nguyễn Trãi (Ức Trai)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Trãi",
+          "so_doan": 10,
+          "centroid": [
+            106.69707,
+            10.77424
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-trung-truc-dinh-than",
+      "ten": "Nguyễn Trung Trực — Đình thần Rạch Giá",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Trung Trực",
+          "so_doan": 4,
+          "centroid": [
+            106.69877,
+            10.7743
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-truong-to",
+      "ten": "Nguyễn Trường Tộ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Trường Tộ",
+          "so_doan": 10,
+          "centroid": [
+            106.69684,
+            10.80026
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-tu-gian",
+      "ten": "Nguyễn Tư Giản",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Tư Giản",
+          "so_doan": 1,
+          "centroid": [
+            106.63862,
+            10.8326
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-tu-nghiem",
+      "ten": "Nguyễn Tư Nghiêm",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Tư Nghiêm",
+          "so_doan": 1,
+          "centroid": [
+            106.76298,
+            10.7866
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-tuan",
+      "ten": "Nguyễn Tuân",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Tuân",
+          "so_doan": 1,
+          "centroid": [
+            106.68224,
+            10.81709
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-van-huong",
+      "ten": "Nguyễn Văn Hưởng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Văn Hưởng",
+          "so_doan": 22,
+          "centroid": [
+            106.73044,
+            10.80747
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-van-nguyen",
+      "ten": "Nguyễn Văn Nguyễn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Văn Nguyễn",
+          "so_doan": 4,
+          "centroid": [
+            106.6878,
+            10.79236
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-van-qua",
+      "ten": "Nguyễn Văn Quá",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Văn Quá",
+          "so_doan": 11,
+          "centroid": [
+            106.63088,
+            10.83776
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-van-to",
+      "ten": "Nguyễn Văn Tố",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Văn Tố",
+          "so_doan": 3,
+          "centroid": [
+            106.63302,
+            10.79203
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-van-troi",
+      "ten": "Anh hùng LLVTND Nguyễn Văn Trỗi",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Văn Trỗi",
+          "so_doan": 19,
+          "centroid": [
+            106.67654,
+            10.79499
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-van-vinh",
+      "ten": "Nguyễn Văn Vĩnh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Văn Vĩnh",
+          "so_doan": 1,
+          "centroid": [
+            106.66216,
+            10.80723
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-viet-xuan",
+      "ten": "Anh hùng LLVTND Nguyễn Viết Xuân",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Viết Xuân",
+          "so_doan": 1,
+          "centroid": [
+            106.7496,
+            10.86764
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-xien",
+      "ten": "Nguyễn Xiển",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Xiển",
+          "so_doan": 20,
+          "centroid": [
+            106.83167,
+            10.84806
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-xuan-khoat",
+      "ten": "Nguyễn Xuân Khoát",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Xuân Khoát",
+          "so_doan": 1,
+          "centroid": [
+            106.63403,
+            10.79162
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "nguyen-xuan-on",
+      "ten": "Nguyễn Xuân Ôn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Xuân Ôn",
+          "so_doan": 1,
+          "centroid": [
+            106.70005,
+            10.79863
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "pham-banh",
+      "ten": "Phạm Bành",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phạm Bành",
+          "so_doan": 1,
+          "centroid": [
+            106.61906,
+            10.74563
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "pham-cong-tru",
+      "ten": "Phạm Công Trứ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phạm Công Trứ",
+          "so_doan": 1,
+          "centroid": [
+            106.76773,
+            10.77016
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "pham-ngu-lao",
+      "ten": "Phạm Ngũ Lão",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phạm Ngũ Lão",
+          "so_doan": 18,
+          "centroid": [
+            106.68811,
+            10.79332
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "pham-phu-thu",
+      "ten": "Phạm Phú Thứ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phạm Phú Thứ",
+          "so_doan": 4,
+          "centroid": [
+            106.64709,
+            10.78967
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "pham-quy-thich",
+      "ten": "Phạm Quý Thích",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phạm Quý Thích",
+          "so_doan": 1,
+          "centroid": [
+            106.62114,
+            10.7893
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "pham-than-duat",
+      "ten": "Phạm Thận Duật",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phạm Thận Duật",
+          "so_doan": 1,
+          "centroid": [
+            106.76707,
+            10.76961
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-ba-phien",
+      "ten": "Phan Bá Phiến",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Bá Phiến",
+          "so_doan": 1,
+          "centroid": [
+            106.6511,
+            10.79956
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-boi-chau",
+      "ten": "Phan Bội Châu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Bội Châu",
+          "so_doan": 7,
+          "centroid": [
+            106.71003,
+            10.79585
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-cong-hon",
+      "ten": "Phan Công Hớn (Phan Văn Hớn)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Văn Hớn",
+          "so_doan": 55,
+          "centroid": [
+            106.5934,
+            10.8456
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-dang-luu",
+      "ten": "Phan Đăng Lưu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Đăng Lưu",
+          "so_doan": 26,
+          "centroid": [
+            106.69101,
+            10.80282
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-dinh-giot",
+      "ten": "Anh hùng LLVTND Phan Đình Giót",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Đình Giót",
+          "so_doan": 9,
+          "centroid": [
+            106.66585,
+            10.80229
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-dinh-phung-khoa-bang",
+      "ten": "Phan Đình Phùng — Đình nguyên Cần Vương",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Đình Phùng",
+          "so_doan": 15,
+          "centroid": [
+            106.67942,
+            10.79512
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-huy-chu",
+      "ten": "Phan Huy Chú",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Huy Chú",
+          "so_doan": 1,
+          "centroid": [
+            106.77251,
+            10.84911
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phan-van-truong",
+      "ten": "Phan Văn Trường",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phan Văn Trường",
+          "so_doan": 1,
+          "centroid": [
+            106.69725,
+            10.7662
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phung-chi-kien",
+      "ten": "Phùng Chí Kiên",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phùng Chí Kiên",
+          "so_doan": 2,
+          "centroid": [
+            106.62327,
+            10.79862
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "phung-khac-khoan",
+      "ten": "Phùng Khắc Khoan — Trạng Bùng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phùng Khắc Khoan",
+          "so_doan": 5,
+          "centroid": [
+            106.71504,
+            10.805
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "quang-trung",
+      "ten": "Hoàng đế Quang Trung – Nguyễn Huệ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Huệ",
+          "so_doan": 6,
+          "centroid": [
+            106.70311,
+            10.77462
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "suong-nguyet-anh",
+      "ten": "Sương Nguyệt Anh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Sương Nguyệt Anh",
+          "so_doan": 1,
+          "centroid": [
+            106.68905,
+            10.7719
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ta-quang-buu",
+      "ten": "Tạ Quang Bửu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Tạ Quang Bửu",
+          "so_doan": 43,
+          "centroid": [
+            106.69115,
+            10.76524
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tang-bat-ho",
+      "ten": "Tăng Bạt Hổ",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Tăng Bạt Hổ",
+          "so_doan": 1,
+          "centroid": [
+            106.69381,
+            10.81095
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "thai-phien",
+      "ten": "Thái Phiên",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Thái Phiên",
+          "so_doan": 2,
+          "centroid": [
+            106.64692,
+            10.76389
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "than-nhan-trung",
+      "ten": "Thân Nhân Trung",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Thân Nhân Trung",
+          "so_doan": 2,
+          "centroid": [
+            106.64274,
+            10.80591
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "thanh-giong",
+      "ten": "Phù Đổng Thiên Vương (Thánh Gióng) — Tứ bất tử",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Thánh Gióng",
+          "so_doan": 5,
+          "centroid": [
+            106.80875,
+            10.88278
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "thanh-thai",
+      "ten": "Thành Thái",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Thành Thái",
+          "so_doan": 12,
+          "centroid": [
+            106.67302,
+            10.7801
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "to-hien-thanh",
+      "ten": "Tô Hiến Thành",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Tô Hiến Thành",
+          "so_doan": 9,
+          "centroid": [
+            106.6646,
+            10.77698
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "to-nghe-det-chieu-pham-don-le",
+      "ten": "Phạm Đôn Lễ — Trạng Chiếu, Tổ nghề dệt chiếu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Phạm Đôn Lễ",
+          "so_doan": 1,
+          "centroid": [
+            106.76624,
+            10.76939
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "to-ngoc-van",
+      "ten": "Tô Ngọc Vân",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Tô Ngọc Vân",
+          "so_doan": 29,
+          "centroid": [
+            106.71988,
+            10.8625
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "to-vinh-dien",
+      "ten": "Anh hùng LLVTND Tô Vĩnh Diện",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Tô Vĩnh Diện",
+          "so_doan": 6,
+          "centroid": [
+            106.77278,
+            10.86275
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ton-that-thuyet",
+      "ten": "Tôn Thất Thuyết",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Tôn Thất Thuyết",
+          "so_doan": 17,
+          "centroid": [
+            106.70958,
+            10.75955
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-bach-dang",
+      "ten": "Trần Bạch Đằng (Trương Gia Triều)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Bạch Đằng",
+          "so_doan": 39,
+          "centroid": [
+            106.71754,
+            10.77783
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-binh-trong",
+      "ten": "Trần Bình Trọng — Bảo Nghĩa vương",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Bình Trọng",
+          "so_doan": 4,
+          "centroid": [
+            106.66539,
+            10.83194
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-dai-nghia",
+      "ten": "Thiếu tướng, Anh hùng Lao động Trần Đại Nghĩa",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Đại Nghĩa",
+          "so_doan": 32,
+          "centroid": [
+            106.64087,
+            10.77615
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-huy-lieu",
+      "ten": "Trần Huy Liệu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Huy Liệu",
+          "so_doan": 7,
+          "centroid": [
+            106.6778,
+            10.79534
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-khanh-du",
+      "ten": "Trần Khánh Dư",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Khánh Dư",
+          "so_doan": 4,
+          "centroid": [
+            106.68925,
+            10.79409
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-nguyen-dan",
+      "ten": "Trần Nguyên Đán",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Nguyên Đán",
+          "so_doan": 13,
+          "centroid": [
+            106.69319,
+            10.7945
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-nhat-duat",
+      "ten": "Trần Nhật Duật",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Nhật Duật",
+          "so_doan": 5,
+          "centroid": [
+            106.68952,
+            10.79363
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-quang-dieu",
+      "ten": "Trần Quang Diệu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Quang Diệu",
+          "so_doan": 5,
+          "centroid": [
+            106.67839,
+            10.7857
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-quoc-toan",
+      "ten": "Trần Quốc Toản — Hoài Văn hầu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Quốc Toản",
+          "so_doan": 10,
+          "centroid": [
+            106.69653,
+            10.79212
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-thai-tong",
+      "ten": "Trần Thái Tông",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Thái Tông",
+          "so_doan": 3,
+          "centroid": [
+            106.63269,
+            10.81887
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-thanh-tong",
+      "ten": "Trần Thánh Tông",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Thánh Tông",
+          "so_doan": 1,
+          "centroid": [
+            106.63948,
+            10.82871
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-van-can",
+      "ten": "Trần Văn Cẩn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Văn Cẩn",
+          "so_doan": 1,
+          "centroid": [
+            106.63093,
+            10.76242
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-van-du",
+      "ten": "Trần Văn Dư",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Văn Dư",
+          "so_doan": 4,
+          "centroid": [
+            106.64453,
+            10.80622
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-van-giau",
+      "ten": "Trần Văn Giàu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Văn Giàu",
+          "so_doan": 43,
+          "centroid": [
+            106.58294,
+            10.75682
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-van-khe",
+      "ten": "Trần Văn Khê",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Văn Khê",
+          "so_doan": 1,
+          "centroid": [
+            106.70621,
+            10.79418
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-van-on",
+      "ten": "Liệt sĩ Trần Văn Ơn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Văn Ơn",
+          "so_doan": 2,
+          "centroid": [
+            106.70371,
+            10.85055
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-van-thanh-hung-ky",
+      "ten": "Trần Văn Thành (Hưng Ký)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Văn Thành",
+          "so_doan": 1,
+          "centroid": [
+            106.68024,
+            10.75101
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "tran-xuan-soan",
+      "ten": "Trần Xuân Soạn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trần Xuân Soạn",
+          "so_doan": 13,
+          "centroid": [
+            106.71176,
+            10.75369
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "trinh-cong-son",
+      "ten": "Trịnh Công Sơn",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trịnh Công Sơn",
+          "so_doan": 2,
+          "centroid": [
+            106.78272,
+            10.81483
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "truong-dang-que",
+      "ten": "Trương Đăng Quế",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trương Đăng Quế",
+          "so_doan": 6,
+          "centroid": [
+            106.68263,
+            10.81395
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "truong-gia-mo",
+      "ten": "Trương Gia Mô",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trương Gia Mô",
+          "so_doan": 5,
+          "centroid": [
+            106.77036,
+            10.77043
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "truong-minh-ky",
+      "ten": "Trương Minh Ký",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trương Minh Ký",
+          "so_doan": 3,
+          "centroid": [
+            106.66431,
+            10.85189
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "truong-quoc-dung",
+      "ten": "Trương Quốc Dụng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trương Quốc Dung",
+          "so_doan": 3,
+          "centroid": [
+            106.67268,
+            10.79739
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "truong-quyen",
+      "ten": "Trương Quyền",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Trương Quyền",
+          "so_doan": 1,
+          "centroid": [
+            106.69243,
+            10.78678
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ut-tich",
+      "ten": "Út Tịch (Nguyễn Thị Út)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Út Tịch",
+          "so_doan": 21,
+          "centroid": [
+            106.65818,
+            10.79843
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "ut-tra-on",
+      "ten": "Út Trà Ôn (Nguyễn Thành Út)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Út Trà Ôn",
+          "so_doan": 1,
+          "centroid": [
+            106.77992,
+            10.81663
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "van-cao",
+      "ten": "Nhạc sĩ Văn Cao",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Văn Cao",
+          "so_doan": 7,
+          "centroid": [
+            106.64577,
+            10.80047
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "van-hanh",
+      "ten": "Thiền sư Vạn Hạnh",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Vạn Hạnh",
+          "so_doan": 3,
+          "centroid": [
+            106.62074,
+            10.84281
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "van-tien-dung",
+      "ten": "Đại tướng Văn Tiến Dũng",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Văn Tiến Dũng",
+          "so_doan": 1,
+          "centroid": [
+            106.65307,
+            10.69955
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "vo-nguyen-giap",
+      "ten": "Đại tướng Võ Nguyên Giáp",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Võ Nguyên Giáp",
+          "so_doan": 167,
+          "centroid": [
+            106.75575,
+            10.81763
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "vo-thi-sau",
+      "ten": "Anh hùng LLVTND Võ Thị Sáu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Võ Thị Sáu",
+          "so_doan": 20,
+          "centroid": [
+            106.71749,
+            10.80835
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "vo-truong-toan",
+      "ten": "Võ Trường Toản",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Võ Trường Toản",
+          "so_doan": 11,
+          "centroid": [
+            106.7695,
+            10.83899
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "vu-huu",
+      "ten": "Vũ Hữu — nhà toán học",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Vũ Hữu",
+          "so_doan": 1,
+          "centroid": [
+            106.62019,
+            10.74366
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "vu-tong-phan",
+      "ten": "Vũ Tông Phan",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Vũ Tông Phan",
+          "so_doan": 5,
+          "centroid": [
+            106.7412,
+            10.79648
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "xuan-dieu",
+      "ten": "Nhà thơ Xuân Diệu",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Xuân Diệu",
+          "so_doan": 3,
+          "centroid": [
+            106.65467,
+            10.79649
+          ]
+        }
+      ]
+    },
+    {
+      "danh_nhan_id": "xuan-thuy",
+      "ten": "Xuân Thủy (Nguyễn Trọng Nhâm)",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Xuân Thuỷ",
+          "so_doan": 4,
+          "centroid": [
+            106.73156,
+            10.8032
+          ]
+        }
+      ]
+    }
+  ]
+}
