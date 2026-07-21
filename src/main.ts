@@ -1805,6 +1805,33 @@ const OVERLAYS: OverlayConf[] = [
       "Báo Nhân Dân · Thể thao & Văn hoá · CAND · Lao Động · Thanh Niên · Vovinam",
     popup: personOverlayPopup,
   },
+  {
+    id: "khoa-bang-bo-sung-4",
+    label: "🎓 Khoa bảng Kinh Bắc · Hải Dương · Sơn Nam",
+    file: "data/overlays/khoa-bang-bo-sung-4.json",
+    circleColor: "#3730a3",
+    nguon:
+      "VOV · Giáo dục & Thời đại · Báo Bắc Ninh · VietNamNet · Báo Nhân Dân · cổng tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "dich-gia-ngon-ngu-hoc",
+    label: "📖 Dịch giả · nhà ngôn ngữ · từ điển học",
+    file: "data/overlays/dich-gia-ngon-ngu-hoc.json",
+    circleColor: "#155e75",
+    nguon:
+      "Báo Nhân Dân · Thanh Niên · Viện Ngôn ngữ học · ĐHQGHN–USSH · MEDDOM · CAND",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "thu-linh-khoi-nghia-co-dai",
+    label: "🗡️ Nữ tướng · thủ lĩnh thời Bắc thuộc",
+    file: "data/overlays/thu-linh-khoi-nghia-co-dai.json",
+    circleColor: "#86198f",
+    nguon:
+      "Hà Nội Mới · Dân Việt · Dân trí · Báo Thanh Hoá · TTXVN · cổng tỉnh · di tích",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
