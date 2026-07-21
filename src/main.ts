@@ -1859,6 +1859,33 @@ const OVERLAYS: OverlayConf[] = [
       "Bảo tàng Lịch sử · TT Bảo tồn Di tích Cố đô Huế · cổng tỉnh · Báo Nhân Dân",
     popup: personOverlayPopup,
   },
+  {
+    id: "khoa-bang-thanh-hoa",
+    label: "🎓 Khoa bảng Thanh Hoá",
+    file: "data/overlays/khoa-bang-thanh-hoa.json",
+    circleColor: "#1e3a8a",
+    nguon:
+      "Báo Thanh Hoá · cổng Thanh Hoá · dsvh.gov.vn · Ngô Đức Thọ — Các nhà khoa bảng VN",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "nghia-si-can-vuong",
+    label: "⚔️ Nghĩa sĩ Cần Vương · Văn Thân",
+    file: "data/overlays/nghia-si-can-vuong.json",
+    circleColor: "#881337",
+    nguon:
+      "Báo Nhân Dân · QĐND · cổng tỉnh · dsvh.gov.vn · bảo tàng · di tích",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "tri-thuc-khoa-hoc-tk20",
+    label: "🔬 Trí thức · nhà khoa học thế kỷ 20",
+    file: "data/overlays/tri-thuc-khoa-hoc-tk20.json",
+    circleColor: "#065f46",
+    nguon:
+      "Báo Nhân Dân · Viện Hàn lâm KHCN/KHXH VN · ĐHQG · MEDDOM · Tia Sáng",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();

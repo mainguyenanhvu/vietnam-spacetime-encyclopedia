@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "ghi_chu": "DRAFT — CHƯA REVIEW, CHƯA WIRE vào app. Đề xuất làm giàu lớp «Cương vực Việt cổ» hiện có (co-truong-viet-co.json). Xem docs/xichquy-map-enrichment-proposal.md để biết đầy đủ nguồn + rủi ro trước khi dùng. File này CHỈ có 1 feature minh hoạ (mục A trong đề xuất): lõi di tích khảo cổ Cổ Loa, để chồng lên polygon 'Âu Lạc' hiện có nhằm tương phản vùng có bằng chứng khảo cổ cụ thể với vùng lãnh thổ phỏng dựng rộng hơn.",
+  "ngay_tao": "2026-07-21",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "co-loa-loi-di-tich",
+        "ten": "Cổ Loa — lõi di tích khảo cổ (An Dương Vương)",
+        "nien_dai": "≈ TK III TCN (thời An Dương Vương); tiếp tục là kinh đô dưới Ngô Quyền TK X SCN",
+        "muc_do_tin_cay": "trung-binh",
+        "tinh_chat": "Vị trí là địa điểm hiện đại có thật, không tranh cãi (Đông Anh, Hà Nội) và được khảo cổ xác nhận vững chắc là trung tâm chính trị Âu Lạc. Polygon ở đây là ƯỚC LƯỢNG THÔ của người soạn thảo dựa trên số đo chu vi thành bằng chữ (không có toạ độ GIS chính thức trong 3 nguồn đã fetch) — KHÔNG dùng làm ranh giới chính xác, cần đối chiếu bản đồ khoanh vùng bảo vệ di tích chính thức trước khi wire.",
+        "so_lieu_khao_co": {
+          "thanh_ngoai": "chu vi >8 km, cao trung bình 3-4 m",
+          "thanh_trung": "chu vi 6,58 km, 5 cửa (Đông, Nam, Bắc, Tây Bắc, Tây Nam)",
+          "thanh_noi": "chu vi 1,65 km, hình chữ nhật, cao trung bình 5 m",
+          "khu_trung_tam_hanh_chinh": "≈2 km² (polygon minh hoạ dưới đây ước lượng theo diện tích này, KHÔNG phải 3 vòng thành đầy đủ)",
+          "bang_chung_duc_tai_cho": "khuôn đúc mũi tên đồng trong tầng văn hoá Cổ Loa (Đông Sơn giai đoạn sắt)",
+          "xep_hang_di_tich": "Di tích Quốc gia đặc biệt, vùng bảo vệ 860,4 ha (Đông Anh, Hà Nội)"
+        },
+        "nguon": [
+          "Bảo tàng Lịch sử Quốc gia — baotanglichsuquocgia.vn: Thành Cổ Loa - Kinh đô nước Âu Lạc",
+          "Cục Di sản văn hoá — dsvh.gov.vn: Di tích lịch sử kiến trúc nghệ thuật và khảo cổ Cổ Loa",
+          "Sở Văn hoá & Thể thao Hà Nội — sovhtt.hanoi.gov.vn: Di tích lịch sử kiến trúc nghệ thuật và khảo cổ Cổ Loa",
+          "Cổng thông tin di tích Cổ Loa — thanhcoloa.vn: Di tích Quốc gia đặc biệt Cổ Loa được công nhận điểm du lịch"
+        ],
+        "canh_bao": "Toạ độ trung tâm (105.8714, 21.1075) là ước lượng vị trí hiện đại của khu di tích Cổ Loa (Đông Anh, Hà Nội) do người soạn thảo xác định từ hiểu biết địa lý phổ thông, KHÔNG trích trực tiếp từ 4 nguồn trên (các nguồn chỉ mô tả bằng chữ, không kèm toạ độ GIS). Polygon là hình vuông ước lượng diện tích ≈2 km² khớp con số 'khu trung tâm hành chính lõi', KHÔNG phải ranh giới khảo sát 3 vòng thành thực tế. CẦN REVIEW trước khi hiển thị production."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[105.8647, 21.1138], [105.8781, 21.1138], [105.8781, 21.1012], [105.8647, 21.1012], [105.8647, 21.1138]]]
+      }
+    }
+  ]
+}

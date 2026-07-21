@@ -1,0 +1,166 @@
+{
+  "ghi_chu": "Khoa bảng Nho học (trạng nguyên/bảng nhãn/thám hoa/hoàng giáp/tiến sĩ) quê Thanh Hóa còn thiếu trong CSDL — làng Hoằng Lộc, Nguyệt Viên (Hoằng Hóa), Cổ Định (Triệu Sơn), Cổ Bôn/Phúc Triền (Đông Sơn), Hoàng Giang (Nông Cống), Tường Vân/Đắc Trí (Yên Định). Toạ độ: đền/di tích qua OSM Nominatim khi có địa chỉ cụ thể; nhiều mục chỉ đạt cấp huyện (do_tin_cay_toa_do: thap) vì địa danh làng xã cũ đã sáp nhập/đổi tên qua các đợt sắp xếp đơn vị hành chính, Nominatim không định vị được. Nguồn: baothanhhoa.vn/vhds.baothanhhoa.vn, daibieunhandan.vn (báo Quốc hội), vietlandmarks.com, cổng xã Định Hòa (dinhhoa.thanhhoa.gov.vn). KHÔNG dùng Wikipedia làm nguồn duy nhất.",
+  "ngay_cap_nhat": "2026-07-21",
+  "sources": [
+    "Báo Thanh Hóa / Chuyên trang Văn hóa - Đời sống — vhds.baothanhhoa.vn, baothanhhoa.vn",
+    "Báo Đại biểu Nhân dân (Quốc hội) — daibieunhandan.vn",
+    "Vietnam Landmarks — vietlandmarks.com",
+    "Cổng TTĐT xã Định Hòa, huyện Yên Định — dinhhoa.thanhhoa.gov.vn",
+    "OpenStreetMap Nominatim (toạ độ)"
+  ],
+  "items": [
+    {
+      "id": "nguyen-nhan-le",
+      "ten": "Nguyễn Nhân Lễ",
+      "lon": 105.8568903, "lat": 19.8639180,
+      "loai": "tien-si",
+      "nam_hien_thi": "1460–1522",
+      "mo_ta": "Người «khai khoa» của làng Hoằng Lộc (Bột Thượng), đỗ tiến sĩ khoa Tân Sửu, niên hiệu Hồng Đức thứ 12 (1481) lúc mới 21 tuổi, mở đầu 438 năm khoa cử của vùng đất học này (đến khoa thi cuối triều Khải Định 1919, Hoằng Lộc có 12 người đỗ đại khoa).",
+      "dia_diem": "Xã Hoằng Lộc (nay thuộc xã Hoằng Hóa), huyện Hoằng Hóa, Thanh Hóa — thờ tại Bảng Môn Đình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa — «Nguyễn Nhân Lễ: Tiến sĩ khai khoa trên vùng đất học Hoằng Lộc» — https://vhds.baothanhhoa.vn/nguyen-nhan-le-nbsp-tien-si-khai-khoa-tren-vung-dat-hoc-hoang-loc-28726.htm"]
+    },
+    {
+      "id": "nguyen-trat",
+      "ten": "Nguyễn Trật",
+      "lon": 105.8178664, "lat": 19.8230104,
+      "loai": "tien-si",
+      "nam_hien_thi": "sinh 1573",
+      "mo_ta": "Người làng Nguyệt Viên, huyện Hoằng Hóa, đỗ tiến sĩ khoa thi Điện tháng 4 năm Quý Hợi (1623) thời vua Lê Thần Tông — vị đầu tiên trong 18 tiến sĩ được thờ tại nghè Nguyệt Viên. Chính sử còn ghi giai thoại ông bí mật thuê người làm bài thi hộ trong khoa thi này.",
+      "dia_diem": "Làng Nguyệt Viên (nay phường Nguyệt Viên), Hoằng Hóa/TP Thanh Hóa — thờ tại Nghè Nguyệt Viên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": ["Báo Đại biểu Nhân dân — «Việt sử giai thoại: Nguyễn Trật dự khoa thi Điện» — https://daibieunhandan.vn/viet-su-giai-thoai-nguyen-trat-du-khoa-thi-dien-10071173.html"]
+    },
+    {
+      "id": "doan-dinh-ta",
+      "ten": "Doãn Đình Tá",
+      "lon": 105.5950609, "lat": 19.8021715,
+      "loai": "tien-si",
+      "nam_hien_thi": "khoa 1499",
+      "mo_ta": "Người làng Cổ Định (nay thị trấn Nưa, huyện Triệu Sơn), đỗ đệ tam giáp đồng tiến sĩ xuất thân khoa Kỷ Mùi, niên hiệu Cảnh Thống thứ 2 (1499) đời Lê Hiến Tông, làm quan Hiến sát sứ, hàm Thiếu bảo. Một trong 3 tiến sĩ Cổ Định được «Dư địa chí huyện Triệu Sơn» ghi tên khắc bia Văn Miếu Quốc Tử Giám.",
+      "dia_diem": "Làng Cổ Định, thị trấn Nưa, huyện Triệu Sơn, Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa (qua Báo Mới) — «Những người con vùng đất Cổ Định xưa» — https://baomoi.com/nhung-nguoi-con-vung-dat-co-dinh-xua-c52142581.epi"]
+    },
+    {
+      "id": "le-nhan-kiet",
+      "ten": "Lê Nhân Kiệt",
+      "lon": 105.5970609, "lat": 19.8041715,
+      "loai": "tien-si",
+      "nam_hien_thi": "khoa 1651",
+      "mo_ta": "Người làng Cổ Định (nay thị trấn Nưa, huyện Triệu Sơn), cùng dòng họ Lê với Hoàng giáp Lê Bật Tứ; đỗ đệ tam giáp đồng tiến sĩ xuất thân khoa Tân Sửu (1651), làm quan Hình khoa đô cấp sự trung. Một trong 3 tiến sĩ Cổ Định được «Dư địa chí huyện Triệu Sơn» ghi tên khắc bia Văn Miếu Quốc Tử Giám.",
+      "dia_diem": "Làng Cổ Định, thị trấn Nưa, huyện Triệu Sơn, Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa (qua Báo Mới) — «Những người con vùng đất Cổ Định xưa» — https://baomoi.com/nhung-nguoi-con-vung-dat-co-dinh-xua-c52142581.epi"]
+    },
+    {
+      "id": "luu-ngan-quang",
+      "ten": "Lưu Ngạn Quang",
+      "lon": 105.6693716, "lat": 19.8298237,
+      "loai": "hoang-giap",
+      "nam_hien_thi": "khoa 1481",
+      "mo_ta": "Người khai khoa của làng Cổ Bôn (Kẻ Bôn, nay xã Đông Thanh, huyện Đông Sơn), mồ côi cha từ nhỏ, phải làm thuê nuôi mẹ trước khi thành đạt; đỗ Đệ nhị giáp tiến sĩ (Hoàng giáp) khoa Tân Sửu, Hồng Đức thứ 12 (1481) đời Lê Thánh Tông, mở đầu truyền thống khoa bảng của làng (8 người đỗ đại khoa).",
+      "dia_diem": "Làng Cổ Định — Cổ Bôn, xã Đông Thanh, huyện Đông Sơn, Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa — «Hoàng giáp Tiến sĩ Lưu Ngạn Quang: Bảng vàng bia đá truyền mãi mãi» — vhds.baothanhhoa.vn"]
+    },
+    {
+      "id": "nguyen-van-nghi",
+      "ten": "Nguyễn Văn Nghi",
+      "lon": 105.6713716, "lat": 19.8318237,
+      "loai": "bang-nhan",
+      "nam_hien_thi": "1525–1595",
+      "mo_ta": "Người làng Cổ Bôn (nay xã Đông Thanh, huyện Đông Sơn), đỗ Đệ nhất giáp Chế khoa (Bảng nhãn) năm Giáp Dần (1554) đời Lê Trung Tông, làm quan tới Thái phó, từng dạy học cho hai đời vua triều Hậu Lê. Cụm di tích đền thờ — lăng mộ Phúc Khê tướng công Nguyễn Văn Nghi dựng năm 1617, xếp hạng di tích lịch sử cấp quốc gia.",
+      "dia_diem": "Cụm di tích đền thờ — lăng mộ Nguyễn Văn Nghi, xã Đông Thanh, huyện Đông Sơn, Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Vietnam Landmarks — «Cụm di tích lịch sử quốc gia đền thờ - lăng mộ Phúc Khê tướng công Nguyễn Văn Nghi» — http://vietlandmarks.com/module/groups/action/view/id/901",
+        "Báo Thanh Hóa (qua Báo Mới)"
+      ]
+    },
+    {
+      "id": "thieu-si-lam",
+      "ten": "Thiều Sĩ Lâm",
+      "lon": 105.6673716, "lat": 19.8278237,
+      "loai": "tham-hoa",
+      "nam_hien_thi": "khoa 1670",
+      "mo_ta": "Người làng Cổ Bôn (nay xã Đông Thanh, huyện Đông Sơn), thuộc dòng dõi Thượng tướng quân Thiều Thốn thời Trần; đỗ Thám hoa khoa thi Đình năm Canh Tuất (1670) đời Lê Huyền Tông, năm 1675 được bổ Lại khoa Đô cấp sự trung. Được thờ tại nhà thờ họ Thiều, làng Phúc Triền.",
+      "dia_diem": "Nhà thờ họ Thiều, làng Phúc Triền, xã Đông Thanh, huyện Đông Sơn, Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa — «Về Phúc Triền thăm đền thờ hai vị Tiến sĩ» — vhds.baothanhhoa.vn"]
+    },
+    {
+      "id": "le-nghia-trach",
+      "ten": "Lê Nghĩa Trạch",
+      "lon": 105.6499863, "lat": 19.6261950,
+      "loai": "tien-si",
+      "nam_hien_thi": "1536–1614",
+      "mo_ta": "Người xã Cổ Đôi, huyện Nông Cống (nay xã Hoàng Giang/Trung Chính), con ông Lê Chính Xác; năm 30 tuổi đỗ Nhị giáp Chế khoa Ất Sửu, niên hiệu Chính Trị thứ 8 (1565) đời Lê Anh Tông, mở đầu dòng họ khoa bảng ba đời được vua ban câu đối «Tiến sĩ ba đời lừng đất Việt».",
+      "dia_diem": "Xã Hoàng Giang (Cổ Đôi xưa), huyện Nông Cống, Thanh Hóa — đền thờ ba vị tiến sĩ họ Lê",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa — «Di tích đền thờ ba vị tiến sĩ họ Lê» — vhds.baothanhhoa.vn"]
+    },
+    {
+      "id": "le-sy-triet",
+      "ten": "Lê Sỹ Triệt",
+      "lon": 105.6519863, "lat": 19.6281950,
+      "loai": "tien-si",
+      "nam_hien_thi": "khoa 1640",
+      "mo_ta": "Cháu gọi Tiến sĩ Lê Nghĩa Trạch bằng bác, người xã Cổ Đôi, huyện Nông Cống (nay xã Hoàng Giang/Trung Chính); đỗ tiến sĩ khoa thi Hội năm Canh Thìn (1640), vào Hàn lâm viện, nối tiếp truyền thống khoa bảng ba đời của dòng họ Lê nơi đây.",
+      "dia_diem": "Xã Hoàng Giang (Cổ Đôi xưa), huyện Nông Cống, Thanh Hóa — đền thờ ba vị tiến sĩ họ Lê",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa — «Di tích đền thờ ba vị tiến sĩ họ Lê» — vhds.baothanhhoa.vn"]
+    },
+    {
+      "id": "le-sy-can",
+      "ten": "Lê Sỹ Cẩn",
+      "lon": 105.6479863, "lat": 19.6241950,
+      "loai": "tien-si",
+      "nam_hien_thi": "khoa 1685",
+      "mo_ta": "Người xã Cổ Đôi, huyện Nông Cống (nay xã Hoàng Giang/Trung Chính), thế hệ thứ ba của dòng họ khoa bảng khởi từ Lê Nghĩa Trạch; đỗ tiến sĩ khoa 1685. Năm 1714 cùng em là Lê Sỹ Tuyền lập gia phả khắc bia đá, ghi lại truyền thống «ba đời tiến sĩ» của gia tộc.",
+      "dia_diem": "Xã Hoàng Giang (Cổ Đôi xưa), huyện Nông Cống, Thanh Hóa — đền thờ ba vị tiến sĩ họ Lê",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": ["Báo Thanh Hóa — «Di tích đền thờ ba vị tiến sĩ họ Lê» — vhds.baothanhhoa.vn"]
+    },
+    {
+      "id": "trinh-thiet-truong",
+      "ten": "Trịnh Thiết Trường",
+      "lon": 105.5974873, "lat": 20.0077225,
+      "loai": "bang-nhan",
+      "nam_hien_thi": "khoa 1448",
+      "mo_ta": "Người thôn Đắc Trí (Đắc Chí), xã Định Hòa/Định Bình, huyện Yên Định; nổi tiếng thông minh từ nhỏ, hai lần dự thi Đình — lần đầu đỗ hạng 14/23 nhưng từ chối vì cho là chưa xứng tài, lần sau đỗ Bảng nhãn khoa Mậu Thìn (1448) đời Lê Nhân Tông. Làm quan trải các chức Trung thư xá nhân, An phủ sứ, Hàn lâm viện Thị giảng, từng đi sứ nhà Minh. Đền thờ ông dựng năm 2020 tại quê nhà, lễ dâng hương hằng năm vào rằm tháng Giêng.",
+      "dia_diem": "Đền thờ Trịnh Thiết Trường, thôn Đắc Trí, xã Định Hòa, huyện Yên Định, Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Hóa — «Bảng nhãn Trịnh Thiết Trường» — https://vhds.baothanhhoa.vn/bang-nhan-trinh-thiet-truong-43497.htm",
+        "Cổng TTĐT xã Định Hòa, huyện Yên Định — https://dinhhoa.thanhhoa.gov.vn/van-hoa-xa-hoi/le-dang-huong-thuong-nien-ram-thang-gieng-danh-nhan-bang-nhan-trinh-thiet-truong-va-hoi-lang-tho-662111"
+      ]
+    },
+    {
+      "id": "khuong-cong-phuc",
+      "ten": "Khương Công Phục",
+      "lon": 105.5994873, "lat": 20.0097225,
+      "loai": "tien-si",
+      "nam_hien_thi": "thời Đường, khoa Canh Tý (780)",
+      "mo_ta": "Em trai Khương Công Phụ, người làng Tường Vân (nay xã Định Thành, huyện Yên Định); hai anh em cùng đỗ đại khoa khoa thi tuyển hiền tài năm Canh Tý (780) dưới triều Đường Đức Tông, làm quan cho nhà Đường tới chức Lang trung bộ Lễ.",
+      "dia_diem": "Làng cổ Tường Vân, xã Định Thành, huyện Yên Định, Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Hóa — «Làng cổ Tường Vân» — https://baothanhhoa.vn/lang-co-tuong-van-224066.htm",
+        "Báo Thanh Hóa — «Về làng cổ Tường Vân» — https://baothanhhoa.vn/ve-lang-co-tuong-van-245246.htm"
+      ]
+    }
+  ]
+}
