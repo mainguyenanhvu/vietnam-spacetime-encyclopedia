@@ -1733,6 +1733,24 @@ const OVERLAYS: OverlayConf[] = [
       "Bảo tàng Lịch sử Quốc gia · Báo Thiếu niên Tiền phong · Báo Nhân Dân · cổng tỉnh",
     popup: personOverlayPopup,
   },
+  {
+    id: "nghe-si-san-khau-dien-anh",
+    label: "🎭 Nghệ sĩ sân khấu · điện ảnh · âm nhạc",
+    file: "data/overlays/nghe-si-san-khau-dien-anh.json",
+    circleColor: "#7c2d12",
+    nguon:
+      "Báo Nhân Dân · CAND · VOV · Hà Nội Mới · Cục Bản quyền tác giả (Bộ VHTTDL) · TTXVN",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "hoa-si-dieu-khac",
+    label: "🖼️ Hoạ sĩ · điêu khắc · kiến trúc sư",
+    file: "data/overlays/hoa-si-dieu-khac.json",
+    circleColor: "#5b21b6",
+    nguon:
+      "Cục Mỹ thuật–Nhiếp ảnh (Bộ VHTTDL) · TTXVN · Báo Nhân Dân · VOV · cổng tỉnh/thành",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
