@@ -1778,6 +1778,33 @@ const OVERLAYS: OverlayConf[] = [
       "Báo Nhân Dân · CAND · Tuổi Trẻ · Báo Pháp Luật VN · Đại Đoàn Kết · Bảo tàng Lịch sử · Tạp chí Kiến trúc",
     popup: personOverlayPopup,
   },
+  {
+    id: "khoa-bang-bo-sung-3",
+    label: "🎓 Khoa bảng Nho học (bổ sung)",
+    file: "data/overlays/khoa-bang-bo-sung-3.json",
+    circleColor: "#1e40af",
+    nguon:
+      "Cổng tỉnh (Ninh Bình · Hưng Yên · Hà Tĩnh · Thanh Hoá…) · dsvh.gov.vn · Ngô Đức Thọ — Các nhà khoa bảng VN",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-nhan-quan-su-co-trung-dai",
+    label: "⚔️ Danh nhân quân sự cổ–trung đại (bổ sung)",
+    file: "data/overlays/danh-nhan-quan-su-co-trung-dai.json",
+    circleColor: "#991b1b",
+    nguon:
+      "Bảo tàng Lịch sử Quốc gia · Khu di tích Lam Kinh · Báo Văn hoá · cổng tỉnh · Dân trí",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "nha-the-thao-lich-su",
+    label: "🏅 Nhà thể thao lịch sử (đã mất)",
+    file: "data/overlays/nha-the-thao-lich-su.json",
+    circleColor: "#166534",
+    nguon:
+      "Báo Nhân Dân · Thể thao & Văn hoá · CAND · Lao Động · Thanh Niên · Vovinam",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
