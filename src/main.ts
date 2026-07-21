@@ -1832,6 +1832,33 @@ const OVERLAYS: OverlayConf[] = [
       "Hà Nội Mới · Dân Việt · Dân trí · Báo Thanh Hoá · TTXVN · cổng tỉnh · di tích",
     popup: personOverlayPopup,
   },
+  {
+    id: "khoa-bang-mien-trung",
+    label: "🎓 Khoa bảng miền Trung (Nghệ–Tĩnh · Quảng · Huế)",
+    file: "data/overlays/khoa-bang-mien-trung.json",
+    circleColor: "#0369a1",
+    nguon:
+      "Cổng tỉnh (Nghệ An · Hà Tĩnh · Quảng Nam · Quảng Bình) · dsvh.gov.vn · Ngô Đức Thọ",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-nhan-nam-bo",
+    label: "🌾 Danh nhân khai hoang · chí sĩ Nam Bộ",
+    file: "data/overlays/danh-nhan-nam-bo.json",
+    circleColor: "#4d7c0f",
+    nguon:
+      "Cổng tỉnh Nam Bộ · dsvh.gov.vn · Báo Cần Thơ · An Giang · Đồng Tháp · Nhân Dân",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-than-trieu-nguyen",
+    label: "🏛️ Danh thần · nhà cải cách triều Nguyễn",
+    file: "data/overlays/danh-than-trieu-nguyen.json",
+    circleColor: "#9a3412",
+    nguon:
+      "Bảo tàng Lịch sử · TT Bảo tồn Di tích Cố đô Huế · cổng tỉnh · Báo Nhân Dân",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
