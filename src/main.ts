@@ -1,5 +1,9 @@
 import maplibregl from "maplibre-gl";
-import type { ExpressionSpecification, MapGeoJSONFeature } from "maplibre-gl";
+import type {
+  ExpressionSpecification,
+  MapGeoJSONFeature,
+  MapLayerMouseEvent,
+} from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import { initGame } from "./game";
@@ -658,6 +662,9 @@ function renderNamTienPanel(): void {
 }
 
 map.on("load", () => {
+  // Đăng ký icon emoji cho các lớp phủ ngay khi bản đồ sẵn sàng, độc lập với
+  // việc bật/tắt lớp phủ nào (lazy-load dữ liệu vẫn xảy ra riêng trong toggleOverlay).
+  registerOverlayIcons();
   for (const era of ERAS) {
     map.addSource(era.id, {
       type: "geojson",
@@ -1017,6 +1024,9 @@ interface OverlayItem {
 interface OverlayConf {
   id: string;
   label: string;
+  // Emoji dùng làm icon-image trên bản đồ (đăng ký 1 lần qua registerOverlayIcons(),
+  // dùng chung giữa các lớp phủ cùng emoji để đỡ tốn ảnh sprite).
+  icon: string;
   file: string;
   circleColor: ExpressionSpecification | string;
   nguon: string;
@@ -1058,6 +1068,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "unesco",
     label: "🏛️ Di sản thế giới & Công viên địa chất UNESCO",
+    icon: "🏛️",
     file: "data/overlays/unesco.json",
     circleColor: [
       "match",
@@ -1075,6 +1086,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "di-tich-qgdb",
     label: "🏯 Di tích quốc gia đặc biệt",
+    icon: "🏯",
     file: "data/overlays/di-tich-qgdb.json",
     circleColor: "#b45309",
     nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Quyết định xếp hạng của Thủ tướng Chính phủ",
@@ -1084,6 +1096,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "bao-vat-quoc-gia",
     label: "💎 Bảo vật quốc gia",
+    icon: "💎",
     file: "data/overlays/bao-vat-quoc-gia.json",
     circleColor: "#d4af37",
     nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn)",
@@ -1095,6 +1108,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "huyen-su-khai-quoc",
     label: "🐉 Huyền sử khai quốc · Tứ bất tử · Hải đội Hoàng Sa",
+    icon: "🐉",
     file: "data/overlays/huyen-su-khai-quoc.json",
     circleColor: [
       "match",
@@ -1127,6 +1141,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoi-nghia-bac-thuoc",
     label: "⚔️ Anh hùng chống Bắc thuộc & mở nền tự chủ",
+    icon: "⚔️",
     file: "data/overlays/khoi-nghia-bac-thuoc.json",
     circleColor: [
       "match",
@@ -1156,6 +1171,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoa-bang-danh-nhan",
     label: "📜 Khoa bảng · thầy giáo · quan thanh liêm",
+    icon: "📜",
     file: "data/overlays/khoa-bang-danh-nhan.json",
     circleColor: [
       "match",
@@ -1189,6 +1205,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-tuong-khang-chien",
     label: "🛡️ Danh tướng & các cuộc kháng chiến giữ nước",
+    icon: "🛡️",
     file: "data/overlays/danh-tuong-khang-chien.json",
     circleColor: [
       "match",
@@ -1222,6 +1239,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-nhan-cac-trieu",
     label: "🏛️ Danh nhân các triều · văn hoá · y học",
+    icon: "🏛️",
     file: "data/overlays/danh-nhan-cac-trieu.json",
     circleColor: [
       "match",
@@ -1251,6 +1269,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "chien-dich-tran-danh",
     label: "⚔️ Chiến dịch · trận đánh · khởi nghĩa (938–1975)",
+    icon: "⚔️",
     file: "data/overlays/chien-dich-tran-danh.json",
     circleColor: [
       "match",
@@ -1280,6 +1299,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "anh-hung-can-hien-dai",
     label: "🎖️ Anh hùng cận–hiện đại (đại tướng · AHLLVT · Mẹ VNAH · AHLĐ)",
+    icon: "🎖️",
     file: "data/overlays/anh-hung-can-hien-dai.json",
     circleColor: [
       "match",
@@ -1309,6 +1329,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "trang-nguyen-khoa-bang",
     label: "🎓 Trạng nguyên & khoa bảng (1075–1919)",
+    icon: "🎓",
     file: "data/overlays/trang-nguyen-khoa-bang.json",
     circleColor: [
       "match",
@@ -1338,6 +1359,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoi-nghia-khang-chien",
     label: "🔥 Khởi nghĩa & kháng chiến (chống Pháp–Mỹ · cận-hiện đại)",
+    icon: "🔥",
     file: "data/overlays/khoi-nghia-khang-chien.json",
     circleColor: [
       "match",
@@ -1368,6 +1390,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-nhan-van-hoa-can-hien-dai",
     label: "📚 Danh nhân văn hoá · khoa học · chí sĩ (TK 19–20)",
+    icon: "📚",
     file: "data/overlays/danh-nhan-van-hoa-can-hien-dai.json",
     circleColor: [
       "match",
@@ -1397,6 +1420,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "thanh-hoang-danh-than",
     label: "🏯 Thành hoàng & danh thần (đền · đình thờ)",
+    icon: "🏯",
     file: "data/overlays/thanh-hoang-danh-than.json",
     circleColor: [
       "match",
@@ -1423,6 +1447,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "anh-hung-llvt-cand",
     label: "🎖️ Anh hùng LLVT nhân dân · Công an nhân dân",
+    icon: "🎖️",
     file: "data/overlays/anh-hung-llvt-cand.json",
     circleColor: "#dc2626",
     nguon:
@@ -1432,6 +1457,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "tuong-linh-hien-dai",
     label: "⭐ Tướng lĩnh Quân đội Nhân dân (hiện đại)",
+    icon: "⭐",
     file: "data/overlays/tuong-linh-hien-dai.json",
     circleColor: "#b45309",
     nguon:
@@ -1441,6 +1467,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "tien-si-tieu-bieu",
     label: "🎓 Tiến sĩ · nhà bác học tiêu biểu",
+    icon: "🎓",
     file: "data/overlays/tien-si-tieu-bieu.json",
     circleColor: "#0d9488",
     nguon:
@@ -1450,6 +1477,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "quan-thanh-liem",
     label: "⚖️ Quan thanh liêm · danh thần có công",
+    icon: "⚖️",
     file: "data/overlays/quan-thanh-liem.json",
     circleColor: "#7c3aed",
     nguon:
@@ -1459,6 +1487,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "me-vnah-ahld",
     label: "🏵️ Mẹ Việt Nam Anh hùng · Anh hùng Lao động",
+    icon: "🏵️",
     file: "data/overlays/me-vnah-ahld.json",
     circleColor: "#db2777",
     nguon:
@@ -1468,6 +1497,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "chien-dich-tran-danh-bo-sung",
     label: "⚔️ Chiến dịch · trận đánh (bổ sung, mọi thời đại)",
+    icon: "⚔️",
     file: "data/overlays/chien-dich-tran-danh-bo-sung.json",
     circleColor: [
       "match",
@@ -1498,6 +1528,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "vua-hoang-de",
     label: "👑 Vua · Hoàng đế các triều đại",
+    icon: "👑",
     file: "data/overlays/vua-hoang-de.json",
     circleColor: "#a16207",
     nguon:
@@ -1507,6 +1538,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "vo-tuong-trung-dai",
     label: "🗡️ Võ tướng trung đại (Lý · Trần · Lê · Tây Sơn)",
+    icon: "🗡️",
     file: "data/overlays/vo-tuong-trung-dai.json",
     circleColor: "#9f1239",
     nguon:
@@ -1516,6 +1548,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "van-nghe-si-khoa-hoc",
     label: "🎨 Văn nghệ sĩ · nhà khoa học (thế kỷ 20)",
+    icon: "🎨",
     file: "data/overlays/van-nghe-si-khoa-hoc.json",
     circleColor: [
       "match",
@@ -1533,6 +1566,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "tran-danh-khoi-nghia-bo-sung-2",
     label: "⚔️ Trận đánh · khởi nghĩa (bổ sung — cổ · cận đại)",
+    icon: "⚔️",
     file: "data/overlays/tran-danh-khoi-nghia-bo-sung-2.json",
     circleColor: "#dc2626",
     nguon:
@@ -1542,6 +1576,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "chi-si-cach-mang",
     label: "🔥 Chí sĩ yêu nước · nhà cách mạng tiền bối",
+    icon: "🔥",
     file: "data/overlays/chi-si-cach-mang.json",
     circleColor: "#b91c1c",
     nguon:
@@ -1551,6 +1586,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "to-nghe-danh-than",
     label: "🛠️ Tổ nghề · thành hoàng · danh thần (bổ sung)",
+    icon: "🛠️",
     file: "data/overlays/to-nghe-danh-than.json",
     circleColor: "#0891b2",
     nguon:
@@ -1560,6 +1596,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoa-bang-bo-sung",
     label: "📜 Khoa bảng · tiến sĩ · trạng nguyên (bổ sung)",
+    icon: "📜",
     file: "data/overlays/khoa-bang-bo-sung.json",
     circleColor: "#0d9488",
     nguon:
@@ -1569,6 +1606,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "anh-hung-liet-si-bo-sung",
     label: "🎖️ Anh hùng · liệt sĩ · tình báo (bổ sung)",
+    icon: "🎖️",
     file: "data/overlays/anh-hung-liet-si-bo-sung.json",
     circleColor: "#dc2626",
     nguon:
@@ -1578,6 +1616,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "vua-chua-bo-sung",
     label: "👑 Vua · chúa (bổ sung — Trần · Lê · Mạc · Trịnh–Nguyễn)",
+    icon: "👑",
     file: "data/overlays/vua-chua-bo-sung.json",
     circleColor: "#a16207",
     nguon:
@@ -1587,6 +1626,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "hoang-toc-tieu-bieu",
     label: "👸 Hoàng hậu · thái hậu · công chúa tiêu biểu",
+    icon: "👸",
     file: "data/overlays/hoang-toc-tieu-bieu.json",
     circleColor: "#c026d3",
     nguon:
@@ -1596,6 +1636,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "thanh-hoang-vung-mien",
     label: "🏯 Thành hoàng · thánh mẫu · danh thần vùng miền",
+    icon: "🏯",
     file: "data/overlays/thanh-hoang-vung-mien.json",
     circleColor: "#9333ea",
     nguon:
@@ -1605,6 +1646,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nha-giao-hoc-gia",
     label: "📚 Nhà giáo · học giả · nhà khoa học (cận–hiện đại)",
+    icon: "📚",
     file: "data/overlays/nha-giao-hoc-gia.json",
     circleColor: "#0284c7",
     nguon:
@@ -1614,6 +1656,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "di-tich-cach-mang",
     label: "🚩 Di tích cách mạng · kháng chiến",
+    icon: "🚩",
     file: "data/overlays/di-tich-cach-mang.json",
     circleColor: "#dc2626",
     nguon:
@@ -1623,6 +1666,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nghe-nhan-di-san",
     label: "🎭 Nghệ nhân · tổ nghệ thuật · di sản sống",
+    icon: "🎭",
     file: "data/overlays/nghe-nhan-di-san.json",
     circleColor: "#7c3aed",
     nguon:
@@ -1632,6 +1676,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-tuong-chong-phap",
     label: "🗡️ Danh tướng kháng Pháp (Cần Vương · nghĩa quân)",
+    icon: "🗡️",
     file: "data/overlays/danh-tuong-chong-phap.json",
     circleColor: "#9f1239",
     nguon:
@@ -1641,6 +1686,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "le-hoi-truyen-thong",
     label: "🎏 Lễ hội truyền thống (di sản phi vật thể)",
+    icon: "🎏",
     file: "data/overlays/le-hoi-truyen-thong.json",
     circleColor: "#ea580c",
     nguon:
@@ -1650,6 +1696,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "lang-nghe-truyen-thong",
     label: "🧵 Làng nghề truyền thống",
+    icon: "🧵",
     file: "data/overlays/lang-nghe-truyen-thong.json",
     circleColor: "#ca8a04",
     nguon:
@@ -1659,6 +1706,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-thang-di-san-thien-nhien",
     label: "🏞️ Danh thắng · vườn quốc gia · di sản thiên nhiên",
+    icon: "🏞️",
     file: "data/overlays/danh-thang-di-san-thien-nhien.json",
     circleColor: "#16a34a",
     nguon: "Cục Du lịch Quốc gia — vietnamtourism.vn · cổng tỉnh",
@@ -1667,6 +1715,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "anh-hung-llvt-bo-sung",
     label: "🎖️ Anh hùng LLVTND · CAND (bổ sung)",
+    icon: "🎖️",
     file: "data/overlays/anh-hung-llvt-bo-sung.json",
     circleColor: "#e11d48",
     nguon:
@@ -1676,6 +1725,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "anh-hung-lao-dong-khoa-hoc",
     label: "🔬 Anh hùng Lao động · nhà khoa học · thầy thuốc",
+    icon: "🔬",
     file: "data/overlays/anh-hung-lao-dong-khoa-hoc.json",
     circleColor: "#0891b2",
     nguon:
@@ -1685,6 +1735,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "su-than-ngoai-giao",
     label: "🕊️ Sứ thần · nhà ngoại giao lịch sử",
+    icon: "🕊️",
     file: "data/overlays/su-than-ngoai-giao.json",
     circleColor: "#4f46e5",
     nguon:
@@ -1694,6 +1745,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-y-luong-y",
     label: "⚕️ Danh y · lương y (y học cổ truyền)",
+    icon: "⚕️",
     file: "data/overlays/danh-y-luong-y.json",
     circleColor: "#047857",
     nguon:
@@ -1703,6 +1755,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nu-danh-nhan-lich-su",
     label: "👑 Nữ danh nhân lịch sử (nữ sĩ · nữ tướng · bà chúa)",
+    icon: "👑",
     file: "data/overlays/nu-danh-nhan-lich-su.json",
     circleColor: "#db2777",
     nguon:
@@ -1712,6 +1765,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "doanh-nhan-yeu-nuoc",
     label: "💰 Doanh nhân · tư sản dân tộc yêu nước",
+    icon: "💰",
     file: "data/overlays/doanh-nhan-yeu-nuoc.json",
     circleColor: "#b45309",
     nguon:
@@ -1721,6 +1775,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-nhan-dan-toc-thieu-so",
     label: "🪶 Danh nhân · anh hùng các dân tộc thiểu số",
+    icon: "🪶",
     file: "data/overlays/danh-nhan-dan-toc-thieu-so.json",
     circleColor: "#0f766e",
     nguon:
@@ -1730,6 +1785,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "thieu-nien-anh-hung",
     label: "🎗️ Thiếu niên anh hùng",
+    icon: "🎗️",
     file: "data/overlays/thieu-nien-anh-hung.json",
     circleColor: "#be123c",
     nguon:
@@ -1739,6 +1795,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nghe-si-san-khau-dien-anh",
     label: "🎭 Nghệ sĩ sân khấu · điện ảnh · âm nhạc",
+    icon: "🎭",
     file: "data/overlays/nghe-si-san-khau-dien-anh.json",
     circleColor: "#7c2d12",
     nguon:
@@ -1748,6 +1805,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "hoa-si-dieu-khac",
     label: "🖼️ Hoạ sĩ · điêu khắc · kiến trúc sư",
+    icon: "🖼️",
     file: "data/overlays/hoa-si-dieu-khac.json",
     circleColor: "#5b21b6",
     nguon:
@@ -1757,6 +1815,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nha-bao-xuat-ban",
     label: "📰 Nhà báo · nhà xuất bản tiền phong",
+    icon: "📰",
     file: "data/overlays/nha-bao-xuat-ban.json",
     circleColor: "#1d4ed8",
     nguon:
@@ -1766,6 +1825,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "thien-su-cao-tang",
     label: "🪷 Thiền sư · cao tăng lịch sử",
+    icon: "🪷",
     file: "data/overlays/thien-su-cao-tang.json",
     circleColor: "#ca8a04",
     nguon:
@@ -1775,6 +1835,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "kien-truc-su-ky-su",
     label: "📐 Kiến trúc sư · kỹ sư tiêu biểu",
+    icon: "📐",
     file: "data/overlays/kien-truc-su-ky-su.json",
     circleColor: "#a21caf",
     nguon:
@@ -1784,6 +1845,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoa-bang-bo-sung-3",
     label: "🎓 Khoa bảng Nho học (bổ sung)",
+    icon: "🎓",
     file: "data/overlays/khoa-bang-bo-sung-3.json",
     circleColor: "#1e40af",
     nguon:
@@ -1793,6 +1855,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-nhan-quan-su-co-trung-dai",
     label: "⚔️ Danh nhân quân sự cổ–trung đại (bổ sung)",
+    icon: "⚔️",
     file: "data/overlays/danh-nhan-quan-su-co-trung-dai.json",
     circleColor: "#991b1b",
     nguon:
@@ -1802,6 +1865,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nha-the-thao-lich-su",
     label: "🏅 Nhà thể thao lịch sử (đã mất)",
+    icon: "🏅",
     file: "data/overlays/nha-the-thao-lich-su.json",
     circleColor: "#166534",
     nguon:
@@ -1811,6 +1875,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoa-bang-bo-sung-4",
     label: "🎓 Khoa bảng Kinh Bắc · Hải Dương · Sơn Nam",
+    icon: "🎓",
     file: "data/overlays/khoa-bang-bo-sung-4.json",
     circleColor: "#3730a3",
     nguon:
@@ -1820,6 +1885,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "dich-gia-ngon-ngu-hoc",
     label: "📖 Dịch giả · nhà ngôn ngữ · từ điển học",
+    icon: "📖",
     file: "data/overlays/dich-gia-ngon-ngu-hoc.json",
     circleColor: "#155e75",
     nguon:
@@ -1829,6 +1895,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "thu-linh-khoi-nghia-co-dai",
     label: "🗡️ Nữ tướng · thủ lĩnh thời Bắc thuộc",
+    icon: "🗡️",
     file: "data/overlays/thu-linh-khoi-nghia-co-dai.json",
     circleColor: "#86198f",
     nguon:
@@ -1838,6 +1905,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoa-bang-mien-trung",
     label: "🎓 Khoa bảng miền Trung (Nghệ–Tĩnh · Quảng · Huế)",
+    icon: "🎓",
     file: "data/overlays/khoa-bang-mien-trung.json",
     circleColor: "#0369a1",
     nguon:
@@ -1847,6 +1915,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-nhan-nam-bo",
     label: "🌾 Danh nhân khai hoang · chí sĩ Nam Bộ",
+    icon: "🌾",
     file: "data/overlays/danh-nhan-nam-bo.json",
     circleColor: "#4d7c0f",
     nguon:
@@ -1856,6 +1925,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-than-trieu-nguyen",
     label: "🏛️ Danh thần · nhà cải cách triều Nguyễn",
+    icon: "🏛️",
     file: "data/overlays/danh-than-trieu-nguyen.json",
     circleColor: "#9a3412",
     nguon:
@@ -1865,6 +1935,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoa-bang-thanh-hoa",
     label: "🎓 Khoa bảng Thanh Hoá",
+    icon: "🎓",
     file: "data/overlays/khoa-bang-thanh-hoa.json",
     circleColor: "#1e3a8a",
     nguon:
@@ -1874,6 +1945,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nghia-si-can-vuong",
     label: "⚔️ Nghĩa sĩ Cần Vương · Văn Thân",
+    icon: "⚔️",
     file: "data/overlays/nghia-si-can-vuong.json",
     circleColor: "#881337",
     nguon:
@@ -1883,6 +1955,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "tri-thuc-khoa-hoc-tk20",
     label: "🔬 Trí thức · nhà khoa học thế kỷ 20",
+    icon: "🔬",
     file: "data/overlays/tri-thuc-khoa-hoc-tk20.json",
     circleColor: "#065f46",
     nguon:
@@ -1892,6 +1965,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "chua-nguyen-trinh",
     label: "👑 Chúa Nguyễn · chúa Trịnh · danh thần Lê–Trịnh",
+    icon: "👑",
     file: "data/overlays/chua-nguyen-trinh.json",
     circleColor: "#6d28d9",
     nguon:
@@ -1901,6 +1975,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nghe-nhan-lang-nghe-bo-sung",
     label: "🪚 Tổ nghề · nghệ nhân làng nghề (bổ sung)",
+    icon: "🪚",
     file: "data/overlays/nghe-nhan-lang-nghe-bo-sung.json",
     circleColor: "#78350f",
     nguon:
@@ -1910,6 +1985,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "khoa-bang-nam-trung-bo",
     label: "🎓 Khoa bảng Nam Trung Bộ (Quảng Nam · Quảng Ngãi)",
+    icon: "🎓",
     file: "data/overlays/khoa-bang-nam-trung-bo.json",
     circleColor: "#0e7490",
     nguon:
@@ -1919,6 +1995,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-nhan-thua-thien-hue",
     label: "🎓 Danh nhân Thừa Thiên Huế",
+    icon: "🎓",
     file: "data/overlays/danh-nhan-thua-thien-hue.json",
     circleColor: "#c2410c",
     nguon:
@@ -1928,6 +2005,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "nu-danh-nhan-bo-sung",
     label: "👩 Nữ danh nhân (bổ sung)",
+    icon: "👩",
     file: "data/overlays/nu-danh-nhan-bo-sung.json",
     circleColor: "#be185d",
     nguon:
@@ -1937,6 +2015,7 @@ const OVERLAYS: OverlayConf[] = [
   {
     id: "danh-nhan-mien-nui-phia-bac",
     label: "🏔️ Danh nhân miền núi phía Bắc & dân tộc thiểu số",
+    icon: "🏔️",
     file: "data/overlays/danh-nhan-mien-nui-phia-bac.json",
     circleColor: "#4338ca",
     nguon:
@@ -1945,12 +2024,65 @@ const OVERLAYS: OverlayConf[] = [
   },
 ];
 
+// Vẽ 1 emoji ra canvas offscreen rồi trả về ImageData — dùng để đăng ký
+// icon-image cho MapLibre mà không cần sprite sheet/asset ngoài (self-contained).
+function emojiToImageData(emoji: string, sizePx = 64): ImageData {
+  const canvas = document.createElement("canvas");
+  canvas.width = sizePx;
+  canvas.height = sizePx;
+  const ctx = canvas.getContext("2d")!;
+  ctx.clearRect(0, 0, sizePx, sizePx);
+  ctx.font = `${Math.round(sizePx * 0.78)}px "Noto Color Emoji", "Segoe UI Emoji", sans-serif`;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(emoji, sizePx / 2, sizePx / 2 + sizePx * 0.04);
+  return ctx.getImageData(0, 0, sizePx, sizePx);
+}
+
+// Đăng ký ảnh icon cho từng emoji dùng trong OVERLAYS (1 lần duy nhất — nhiều
+// lớp phủ cùng chủ đề dùng chung 1 emoji nên số ảnh thực tế < 69). Gọi ngay khi
+// bản đồ "load", độc lập với việc lớp phủ nào được bật/tắt sau đó.
+function registerOverlayIcons(): void {
+  const emojis = new Set(OVERLAYS.map((o) => o.icon));
+  emojis.add(DUONG_DANH_NHAN_ICON);
+  for (const emoji of emojis) {
+    if (map.hasImage(emoji)) continue;
+    map.addImage(emoji, emojiToImageData(emoji), { pixelRatio: 2 });
+  }
+}
+
 const overlayLoaded = new Set<string>();
+
+// Gắn cùng 1 bộ handler click/hover cho cả lớp circle (halo) lẫn lớp icon của
+// 1 lớp phủ — để bấm trúng emoji hay trúng vòng tròn màu đều mở popup như nhau.
+function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
+  map.on("click", layerId, (e) => {
+    const f = e.features?.[0];
+    if (!f) return;
+    const p = f.properties as unknown as OverlayItem;
+    new maplibregl.Popup({ offset: 10 })
+      .setLngLat(e.lngLat)
+      .setHTML(
+        `${conf.popup(p)}<br/><span style="color:#78716c;font-size:0.75rem">Nguồn: ${conf.nguon}</span>`,
+      )
+      .addTo(map);
+  });
+  map.on("mouseenter", layerId, () => {
+    map.getCanvas().style.cursor = "pointer";
+  });
+  map.on("mouseleave", layerId, () => {
+    map.getCanvas().style.cursor = "";
+  });
+}
 
 async function toggleOverlay(id: string, on: boolean): Promise<void> {
   const layerId = `overlay-${id}`;
+  const iconLayerId = `${layerId}-icon`;
   if (overlayLoaded.has(id)) {
-    map.setLayoutProperty(layerId, "visibility", on ? "visible" : "none");
+    // Bật/tắt đồng bộ cả 2 lớp (halo màu + icon) — chúng luôn đi cùng nhau.
+    const visibility = on ? "visible" : "none";
+    map.setLayoutProperty(layerId, "visibility", visibility);
+    map.setLayoutProperty(iconLayerId, "visibility", visibility);
     return;
   }
   if (!on) return;
@@ -1982,29 +2114,28 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
     type: "circle",
     source: layerId,
     paint: {
-      "circle-radius": 6,
+      // Bán kính co lại một chút & giảm nhẹ opacity vì icon phủ lên trên —
+      // vòng tròn giờ chỉ còn vai trò halo màu theo chủ đề + giữ vùng bấm.
+      "circle-radius": 5,
       "circle-color": conf.circleColor,
+      "circle-opacity": 0.85,
       "circle-stroke-width": 2,
       "circle-stroke-color": "#ffffff",
     },
   });
-  map.on("click", layerId, (e) => {
-    const f = e.features?.[0];
-    if (!f) return;
-    const p = f.properties as unknown as OverlayItem;
-    new maplibregl.Popup({ offset: 10 })
-      .setLngLat(e.lngLat)
-      .setHTML(
-        `${conf.popup(p)}<br/><span style="color:#78716c;font-size:0.75rem">Nguồn: ${conf.nguon}</span>`,
-      )
-      .addTo(map);
+  map.addLayer({
+    id: iconLayerId,
+    type: "symbol",
+    source: layerId,
+    layout: {
+      "icon-image": conf.icon,
+      "icon-size": 0.5,
+      "icon-allow-overlap": true,
+      "icon-ignore-placement": true,
+    },
   });
-  map.on("mouseenter", layerId, () => {
-    map.getCanvas().style.cursor = "pointer";
-  });
-  map.on("mouseleave", layerId, () => {
-    map.getCanvas().style.cursor = "";
-  });
+  bindOverlayInteractions(layerId, conf);
+  bindOverlayInteractions(iconLayerId, conf);
   overlayLoaded.add(id);
 }
 
@@ -2023,11 +2154,18 @@ interface StreetLink {
     osm_sai_dau?: boolean;
   }>;
 }
+// Icon riêng cho lớp thí điểm này — registerOverlayIcons() cũng đăng ký icon
+// này (an toàn dù const nằm sau vì hàm đó chỉ thực thi lúc map "load", sau khi
+// toàn bộ module đã chạy xong phần khai báo cấp module).
+const DUONG_DANH_NHAN_ICON = "🛣️";
 let streetsLoaded = false;
 async function applyStreets(on: boolean): Promise<void> {
   const layerId = "duong-danh-nhan";
+  const iconLayerId = `${layerId}-icon`;
   if (streetsLoaded) {
-    map.setLayoutProperty(layerId, "visibility", on ? "visible" : "none");
+    const visibility = on ? "visible" : "none";
+    map.setLayoutProperty(layerId, "visibility", visibility);
+    map.setLayoutProperty(iconLayerId, "visibility", visibility);
     return;
   }
   if (!on) return;
@@ -2067,13 +2205,25 @@ async function applyStreets(on: boolean): Promise<void> {
     type: "circle",
     source: layerId,
     paint: {
-      "circle-radius": 4,
+      "circle-radius": 3.5,
       "circle-color": "#7e22ce",
+      "circle-opacity": 0.85,
       "circle-stroke-width": 1.5,
       "circle-stroke-color": "#ffffff",
     },
   });
-  map.on("click", layerId, (e) => {
+  map.addLayer({
+    id: iconLayerId,
+    type: "symbol",
+    source: layerId,
+    layout: {
+      "icon-image": DUONG_DANH_NHAN_ICON,
+      "icon-size": 0.4,
+      "icon-allow-overlap": true,
+      "icon-ignore-placement": true,
+    },
+  });
+  const onStreetClick = (e: MapLayerMouseEvent) => {
     const f = e.features?.[0];
     if (!f) return;
     const p = f.properties as Record<string, unknown>;
@@ -2090,13 +2240,16 @@ async function applyStreets(on: boolean): Promise<void> {
           `<span style="color:#78716c;font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
       )
       .addTo(map);
-  });
-  map.on("mouseenter", layerId, () => {
-    map.getCanvas().style.cursor = "pointer";
-  });
-  map.on("mouseleave", layerId, () => {
-    map.getCanvas().style.cursor = "";
-  });
+  };
+  for (const lid of [layerId, iconLayerId]) {
+    map.on("click", lid, onStreetClick);
+    map.on("mouseenter", lid, () => {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseleave", lid, () => {
+      map.getCanvas().style.cursor = "";
+    });
+  }
   streetsLoaded = true;
 }
 
