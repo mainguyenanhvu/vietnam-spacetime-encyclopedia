@@ -23,8 +23,19 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 
 const OVERLAYS_DIR = "public/data/overlays";
+const FIGURES_DIR = "public/data/figures";
+const FIGURES_FILES = ["danh-nhan.json"]; // danh nhân theo tỉnh (255) — chỉ file người
 const OUT_DIR = "public/data/streets";
 const OUT_FILE = path.join(OUT_DIR, "danh-nhan-duong-pilot.json");
+
+// Bảng ALIAS: tên đường OSM gõ SAI DẤU → id danh nhân đã XÁC MINH nguồn (2026-07-22, xem
+// _soat_tay). Chỉ nối những trường hợp đã tra nguồn nhà nước xác nhận đường vinh danh chính
+// danh nhân đó. KHÔNG nới lỏng matchKey (giữ phân biệt Bình≠Bính), chỉ override thủ công.
+const OSM_ALIAS = {
+  "Bùi Cẩm Hổ": "bui-cam-ho", // đúng: Bùi Cầm Hổ (laodong/baohatinh/honglinh.gov)
+  "Nguyễn Thị Thử": "nguyen-thi-thu", // đúng: Nguyễn Thị Thứ (Mẹ VNAH)
+  "Trương Quốc Dung": "truong-quoc-dung", // đúng: Trương Quốc Dụng (dantri/vietnam.vn)
+};
 
 // File overlay KHÔNG phải danh nhân (địa danh/di tích/sự kiện/lễ hội/làng nghề/hiện vật)
 // — loại khỏi danh mục khớp tên đường để tránh dương tính giả kiểu "đường trùng tên
@@ -87,8 +98,11 @@ const CITIES = [
 ];
 
 const MIRRORS = [
-  "https://overpass.kumi.systems/api/interpreter",
   "https://overpass-api.de/api/interpreter",
+  "https://overpass.private.coffee/api/interpreter",
+  "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "https://overpass.kumi.systems/api/interpreter",
+  "https://overpass.osm.jp/api/interpreter",
 ];
 
 const MAX_RETRY_PER_CITY = 2;
@@ -197,32 +211,50 @@ export function candidateNamesFromTen(ten) {
   return out;
 }
 
-// Đọc toàn bộ overlay, trả về Map<matchKey, {danh_nhan_id, ten} | "AMBIGUOUS">.
-// Ứng viên đụng độ giữa ≥2 danh nhân khác nhau bị đánh dấu AMBIGUOUS và loại khỏi khớp.
-function buildCatalog() {
-  const files = fs.readdirSync(OVERLAYS_DIR).filter((f) => f.endsWith(".json"));
-  const catalog = new Map();
-  let personCount = 0;
-  for (const f of files) {
-    if (EXCLUDE_FILES.has(f)) continue;
-    const j = JSON.parse(fs.readFileSync(path.join(OVERLAYS_DIR, f), "utf8"));
-    const items = j.items || (Array.isArray(j) ? j : []);
-    for (const it of items) {
-      if (!it.id || !it.ten) continue;
-      personCount++;
-      for (const cand of candidateNamesFromTen(it.ten)) {
-        const key = matchKey(cand);
-        if (!key) continue;
-        const existing = catalog.get(key);
-        if (existing === undefined) {
-          catalog.set(key, { danh_nhan_id: it.id, ten: it.ten, candidate: cand });
-        } else if (existing !== "AMBIGUOUS" && existing.danh_nhan_id !== it.id) {
-          catalog.set(key, "AMBIGUOUS");
-        }
-      }
+// Nạp 1 tập item vào catalog. `src` = "overlay" | "figures". Overlay ưu tiên hơn figures:
+// nếu key đã có từ overlay thì item figures cùng key bị BỎ QUA (không đánh AMBIGUOUS) → không
+// làm mất match sẵn có. Đụng độ ≥2 người khác nhau CÙNG nguồn (hoặc figures-figures) → AMBIGUOUS.
+function ingestItems(items, catalog, byId, src) {
+  let n = 0;
+  for (const it of items) {
+    if (!it.id || !it.ten) continue;
+    n++;
+    if (!byId.has(it.id)) byId.set(it.id, it.ten);
+    for (const cand of candidateNamesFromTen(it.ten)) {
+      const key = matchKey(cand);
+      if (!key) continue;
+      const ex = catalog.get(key);
+      if (ex === undefined) catalog.set(key, { danh_nhan_id: it.id, ten: it.ten, src });
+      else if (ex === "AMBIGUOUS") continue;
+      else if (ex.danh_nhan_id === it.id) continue; // cùng người
+      else if (src === "figures" && ex.src === "overlay") continue; // overlay thắng
+      else catalog.set(key, "AMBIGUOUS");
     }
   }
-  return { catalog, personCount, fileCount: files.length - EXCLUDE_FILES.size };
+  return n;
+}
+
+// Đọc overlay + figures, trả về { catalog: Map<matchKey, {danh_nhan_id,ten,src} | "AMBIGUOUS">,
+// byId: Map<id, ten> }. figures/ được nạp SAU để overlay giữ ưu tiên.
+export function buildCatalog() {
+  const catalog = new Map();
+  const byId = new Map();
+  const oFiles = fs
+    .readdirSync(OVERLAYS_DIR)
+    .filter((f) => f.endsWith(".json") && !EXCLUDE_FILES.has(f));
+  let personCount = 0;
+  for (const f of oFiles) {
+    const j = JSON.parse(fs.readFileSync(path.join(OVERLAYS_DIR, f), "utf8"));
+    personCount += ingestItems(j.items || (Array.isArray(j) ? j : []), catalog, byId, "overlay");
+  }
+  let figCount = 0;
+  for (const f of FIGURES_FILES) {
+    const p = path.join(FIGURES_DIR, f);
+    if (!fs.existsSync(p)) continue;
+    const j = JSON.parse(fs.readFileSync(p, "utf8"));
+    figCount += ingestItems(j.items || [], catalog, byId, "figures");
+  }
+  return { catalog, byId, personCount, figCount, fileCount: oFiles.length };
 }
 
 async function fetchOverpass(query, cityLabel) {
@@ -231,12 +263,19 @@ async function fetchOverpass(query, cityLabel) {
       try {
         const res = await fetch(mirror, {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            // Overpass đòi User-Agent định danh; thiếu → một số mirror trả 406/403.
+            "User-Agent": "vietnam-spacetime-encyclopedia/1.0 (build_street_names.mjs)",
+            Accept: "application/json",
+          },
           body: "data=" + encodeURIComponent(query),
           signal: AbortSignal.timeout(120000),
         });
         if (!res.ok) {
           console.error(`[${cityLabel}] ${mirror} → HTTP ${res.status} (lần ${attempt})`);
+          // 429 = rate-limit: nghỉ dài hơn trước khi thử mirror/lần kế.
+          if (res.status === 429) await sleep(5000);
           continue;
         }
         const json = await res.json();
@@ -270,16 +309,24 @@ function groupWaysByName(elements) {
 }
 
 async function main() {
-  const { catalog, personCount, fileCount } = buildCatalog();
+  const { catalog, byId, personCount, figCount, fileCount } = buildCatalog();
   const candidateCount = [...catalog.values()].filter((v) => v !== "AMBIGUOUS").length;
   const ambiguousCount = [...catalog.values()].filter((v) => v === "AMBIGUOUS").length;
   console.error(
-    `Danh mục: ${fileCount} file danh nhân, ${personCount} người, ${candidateCount} ứng viên tên (loại ${ambiguousCount} đụng độ).`
+    `Danh mục: ${fileCount} file overlay (${personCount} người) + figures (${figCount} người), ` +
+      `${candidateCount} ứng viên tên (loại ${ambiguousCount} đụng độ).`
+  );
+
+  // Bảo vệ dữ liệu: nhớ thành phố TỪNG fetch OK ở pilot cũ để không ghi đè bằng bản thiếu.
+  const prev = fs.existsSync(OUT_FILE) ? JSON.parse(fs.readFileSync(OUT_FILE, "utf8")) : null;
+  const prevOkCities = new Set(
+    (prev?.thanh_pho || []).filter((c) => c.trang_thai === "ok").map((c) => c.ten_tp)
   );
 
   const thanhPhoReport = [];
   // danh_nhan_id -> { ten, thanh_pho: [...] }
   const lienKet = new Map();
+  const aliasApplied = []; // {duong_osm, danh_nhan_id, ten_tp}
 
   for (const city of CITIES) {
     const [south, west, north, east] = city.bbox;
@@ -299,8 +346,19 @@ async function main() {
     const groups = groupWaysByName(json.elements);
     let matched = 0;
     for (const [osmName, g] of groups) {
-      const key = matchKey(osmName);
-      const entry = catalog.get(key);
+      // OSM (nhất là Hà Nội) hay gắn tiền tố loại đường: «Phố Trần Hưng Đạo», «Đường Lê
+      // Lợi», «Đại lộ …» — bỏ tiền tố khi KHỚP (giữ tên gốc để hiển thị). Không tên người
+      // Việt nào bắt đầu bằng các từ này nên strip an toàn.
+      const cleanName = osmName.replace(/^(phố|đường|đại lộ|quốc lộ|tỉnh lộ|ngõ|ngách|hẻm)\s+/i, "");
+      const key = matchKey(cleanName);
+      let entry = catalog.get(key);
+      let viaAlias = false;
+      // Fallback ALIAS thủ công cho tên OSM gõ sai dấu đã xác minh nguồn.
+      if ((!entry || entry === "AMBIGUOUS") && OSM_ALIAS[osmName] && byId.has(OSM_ALIAS[osmName])) {
+        const aid = OSM_ALIAS[osmName];
+        entry = { danh_nhan_id: aid, ten: byId.get(aid) };
+        viaAlias = true;
+      }
       if (!entry || entry === "AMBIGUOUS") continue;
       matched++;
       const centroid = [
@@ -310,12 +368,12 @@ async function main() {
       if (!lienKet.has(entry.danh_nhan_id)) {
         lienKet.set(entry.danh_nhan_id, { ten: entry.ten, thanh_pho: [] });
       }
-      lienKet.get(entry.danh_nhan_id).thanh_pho.push({
-        ten_tp: city.ten_tp,
-        ten_duong_osm: osmName,
-        so_doan: g.so_doan,
-        centroid,
-      });
+      const tp = { ten_tp: city.ten_tp, ten_duong_osm: osmName, so_doan: g.so_doan, centroid };
+      if (viaAlias) {
+        tp.osm_sai_dau = true; // OSM gõ sai dấu, nối theo alias đã xác minh
+        aliasApplied.push({ duong_osm: osmName, danh_nhan_id: entry.danh_nhan_id, ten_tp: city.ten_tp });
+      }
+      lienKet.get(entry.danh_nhan_id).thanh_pho.push(tp);
     }
 
     thanhPhoReport.push({
@@ -345,20 +403,40 @@ async function main() {
     ghi_chu:
       "PILOT Phương án A: chỉ centroid đại diện + số đoạn, không lưu hình học đầy đủ. " +
       "bbox là lõi đô thị trung tâm, chưa phủ hết ranh giới hành chính sau sáp nhập tỉnh 2025. " +
-      "Khớp tên: chuẩn hoá NFC + hạ chữ thường, GIỮ dấu thanh tiếng Việt (Bình≠Bính), đòi " +
-      "khớp đầy đủ chuỗi, loại ứng viên đụng độ giữa ≥2 danh nhân. Vẫn cần 1 vòng soát thủ " +
-      "công trước khi mở rộng toàn quốc (xem " +
-      "docs/street-names-model-proposal.md mục 4 bước 5).",
+      "Danh mục khớp = overlays/ + figures/danh-nhan.json (overlay ưu tiên). Khớp tên: hạ chữ " +
+      "thường + khoá theo âm tiết, TÁCH thanh điệu khỏi vị trí đặt dấu (Thủy≡Thuỷ) nhưng phân " +
+      "biệt khác thanh (Bình≠Bính), đòi khớp đầy đủ chuỗi, loại ứng viên đụng độ ≥2 danh nhân. " +
+      "Tên đường OSM gõ sai dấu (đã xác minh nguồn) nối qua bảng OSM_ALIAS, gắn cờ osm_sai_dau.",
+    _ghi_chu_lech_thanh:
+      "Một số đường CỐ Ý không khớp vì là NGƯỜI KHÁC (không phải OSM sai): «Lê Thận» (TP.HCM, " +
+      "truyền thuyết gươm thần TK15) ≠ Bảng nhãn Lê Thân (Cổ Định 1275) trong dữ liệu; «Nguyễn " +
+      "Thiệp» chưa xác minh có vinh danh La Sơn Phu Tử Nguyễn Thiếp hay không. Xem git d23daa0.",
+    _alias_ap_dung: aliasApplied,
     thanh_pho: thanhPhoReport,
     lien_ket: lienKetArr,
   };
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
-  fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2), "utf8");
 
+  // Guard: nếu thành phố TỪNG ok nay lỗi → KHÔNG ghi đè (tránh mất dữ liệu tốt vì mạng chập).
+  const okNow = new Set(thanhPhoReport.filter((c) => c.trang_thai === "ok").map((c) => c.ten_tp));
+  const regressed = [...prevOkCities].filter((c) => !okNow.has(c));
+  if (regressed.length) {
+    const failFile = OUT_FILE + ".regen-failed.json";
+    fs.writeFileSync(failFile, JSON.stringify(output, null, 2), "utf8");
+    console.error(
+      `\n⛔ Thành phố từng OK nay fetch lỗi: ${regressed.join(", ")}. KHÔNG ghi đè pilot cũ. ` +
+        `Kết quả run này ghi tạm ${failFile} để soi.`
+    );
+    process.exitCode = 2;
+    return;
+  }
+
+  fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2), "utf8");
   console.error(
     `\nGhi ${OUT_FILE}: ${lienKetArr.length} danh nhân có ≥1 đường khớp, ` +
-      `tổng ${lienKetArr.reduce((s, x) => s + x.so_duong, 0)} liên kết thành-phố.`
+      `tổng ${lienKetArr.reduce((s, x) => s + x.so_duong, 0)} liên kết thành-phố ` +
+      `(alias áp dụng: ${aliasApplied.length}).`
   );
 }
 

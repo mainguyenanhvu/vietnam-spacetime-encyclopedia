@@ -1981,6 +1981,98 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   overlayLoaded.add(id);
 }
 
+// --- Lớp «Tên đường theo danh nhân» (thí điểm HN·HCM·ĐN) ---------------------
+// Dữ liệu: public/data/streets/danh-nhan-duong-pilot.json (Phương án A) —
+// mỗi đường đặt theo danh nhân → 1 điểm centroid. Nguồn tên đường: OSM/Overpass
+// (ODbL). Lazy-load lần bật đầu tiên; các lần sau chỉ đổi visibility.
+interface StreetLink {
+  danh_nhan_id: string;
+  ten: string;
+  thanh_pho: Array<{
+    ten_tp: string;
+    ten_duong_osm: string;
+    so_doan: number;
+    centroid: [number, number];
+    osm_sai_dau?: boolean;
+  }>;
+}
+let streetsLoaded = false;
+async function applyStreets(on: boolean): Promise<void> {
+  const layerId = "duong-danh-nhan";
+  if (streetsLoaded) {
+    map.setLayoutProperty(layerId, "visibility", on ? "visible" : "none");
+    return;
+  }
+  if (!on) return;
+  const data = await fetchJson<{ lien_ket: StreetLink[] }>(
+    "data/streets/danh-nhan-duong-pilot.json",
+  );
+  const cb = document.querySelector<HTMLInputElement>(
+    "#layer-control input[name=duong]",
+  );
+  if (!data?.lien_ket?.length) {
+    if (cb) cb.checked = false;
+    return;
+  }
+  const features: GeoJSON.Feature[] = [];
+  for (const lk of data.lien_ket) {
+    for (const tp of lk.thanh_pho) {
+      if (!Array.isArray(tp.centroid) || tp.centroid.length !== 2) continue;
+      features.push({
+        type: "Feature",
+        properties: {
+          ten_duong: tp.ten_duong_osm,
+          danh_nhan: lk.ten,
+          ten_tp: tp.ten_tp,
+          so_doan: tp.so_doan,
+          osm_sai_dau: tp.osm_sai_dau ? 1 : 0,
+        },
+        geometry: { type: "Point", coordinates: tp.centroid },
+      });
+    }
+  }
+  map.addSource(layerId, {
+    type: "geojson",
+    data: { type: "FeatureCollection", features },
+  });
+  map.addLayer({
+    id: layerId,
+    type: "circle",
+    source: layerId,
+    paint: {
+      "circle-radius": 4,
+      "circle-color": "#7e22ce",
+      "circle-stroke-width": 1.5,
+      "circle-stroke-color": "#ffffff",
+    },
+  });
+  map.on("click", layerId, (e) => {
+    const f = e.features?.[0];
+    if (!f) return;
+    const p = f.properties as Record<string, unknown>;
+    const sai =
+      Number(p.osm_sai_dau) === 1
+        ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠ OSM gõ sai dấu — đã nối theo nguồn đã xác minh</span>`
+        : "";
+    new maplibregl.Popup({ offset: 10, maxWidth: "300px" })
+      .setLngLat(e.lngLat)
+      .setHTML(
+        `<strong>Đường ${esc(String(p.ten_duong))}</strong><br/>` +
+          `Đặt theo danh nhân: <b>${esc(String(p.danh_nhan))}</b><br/>` +
+          `<span style="color:#57534e;font-size:0.8rem">${esc(String(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
+          `<span style="color:#78716c;font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
+      )
+      .addTo(map);
+  });
+  map.on("mouseenter", layerId, () => {
+    map.getCanvas().style.cursor = "pointer";
+  });
+  map.on("mouseleave", layerId, () => {
+    map.getCanvas().style.cursor = "";
+  });
+  streetsLoaded = true;
+}
+
 function buildLayerControl(): void {
   const el = document.createElement("div");
   el.id = "layer-control";
@@ -2015,6 +2107,7 @@ function buildLayerControl(): void {
         <label><input type="radio" name="palette" value="pastel"/> Tô màu pastel</label>
         <label><input type="checkbox" name="labels"/> Hiện tên tỉnh</label>
         <label><input type="checkbox" name="songnui"/> Hiện sông &amp; núi</label>
+        <label><input type="checkbox" name="duong"/> Tên đường theo danh nhân <span class="lc-tag">HN·HCM·ĐN</span></label>
       </div>
     </details>
     <details class="lc-sec">
@@ -2042,6 +2135,7 @@ function buildLayerControl(): void {
     if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
     if (t.name === "labels") applyLabels(t.checked);
     if (t.name === "songnui") applySongNui(t.checked);
+    if (t.name === "duong") void applyStreets(t.checked);
     if (t.name === "taberd") applyTaberd(t.checked);
     if (t.name === "cuongvuc") applyCuongVuc(t.value);
   });
