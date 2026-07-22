@@ -88,6 +88,7 @@ const STRICT_SOURCE = new Set([
   "nu-danh-nhan-bo-sung.json",
   "danh-nhan-mien-nui-phia-bac.json",
 ]); // yêu cầu nguồn ngoài Wiki mỗi mục
+const globalIds = new Map(); // id -> "file[i] (ten)" — chống trùng id XUYÊN 69 file
 for (const file of readdirSync(OVERLAY_DIR).filter((f) => f.endsWith(".json"))) {
   const data = read(join(OVERLAY_DIR, file));
   if (!Array.isArray(data.items)) {
@@ -105,6 +106,8 @@ for (const file of readdirSync(OVERLAY_DIR).filter((f) => f.endsWith(".json"))) 
     if (it.id) {
       if (ids.has(it.id)) err(`${at}: id trùng '${it.id}'`);
       ids.add(it.id);
+      if (globalIds.has(it.id)) err(`${at}: id '${it.id}' trùng XUYÊN file với ${globalIds.get(it.id)}`);
+      else globalIds.set(it.id, at);
     }
     const itemSource = Array.isArray(it.nguon) && it.nguon.length ? it.nguon : null;
     if (!itemSource && !topSource) err(`${at}: không có nguồn (item hoặc file)`);
