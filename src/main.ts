@@ -1916,6 +1916,33 @@ const OVERLAYS: OverlayConf[] = [
       "scov.gov.vn (Bộ VHTTDL) · Giáo dục & Thời đại · Báo Đà Nẵng · Quảng Nam · dsvh.gov.vn",
     popup: personOverlayPopup,
   },
+  {
+    id: "danh-nhan-thua-thien-hue",
+    label: "🎓 Danh nhân Thừa Thiên Huế",
+    file: "data/overlays/danh-nhan-thua-thien-hue.json",
+    circleColor: "#c2410c",
+    nguon:
+      "baotanglichsu.vn · vanvn.vn · daidoanket.vn · archives.org.vn (Lưu trữ QG) · vusta.vn",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "nu-danh-nhan-bo-sung",
+    label: "👩 Nữ danh nhân (bổ sung)",
+    file: "data/overlays/nu-danh-nhan-bo-sung.json",
+    circleColor: "#be185d",
+    nguon:
+      "Bảo tàng Phụ nữ VN · baotanglichsu.vn · hannom.vass.gov.vn · hoilhpn.org.vn · vusta.vn",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-nhan-mien-nui-phia-bac",
+    label: "🏔️ Danh nhân miền núi phía Bắc & dân tộc thiểu số",
+    file: "data/overlays/danh-nhan-mien-nui-phia-bac.json",
+    circleColor: "#4338ca",
+    nguon:
+      "baocaobang.vn · nhandan.vn · cand.vn · vov.vn · qdnd.vn · baothainguyen.vn · vanvn.vn",
+    popup: personOverlayPopup,
+  },
 ];
 
 const overlayLoaded = new Set<string>();
