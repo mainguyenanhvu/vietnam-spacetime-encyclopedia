@@ -1485,13 +1485,13 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "me-vnah-ahld",
-    label: "🏵️ Mẹ Việt Nam Anh hùng · Anh hùng Lao động",
+    id: "me-vnah",
+    label: "🏵️ Mẹ Việt Nam Anh hùng",
     icon: "🏵️",
-    file: "data/overlays/me-vnah-ahld.json",
+    file: "data/overlays/me-vnah.json",
     circleColor: "#db2777",
     nguon:
-      "Báo Chính phủ · Báo Nhân Dân · Báo Quân đội Nhân dân · cổng tỉnh",
+      "Báo Chính phủ · Báo QĐND · Bảo tàng Phụ nữ Nam Bộ · cổng tỉnh",
     popup: personOverlayPopup,
   },
   {
@@ -1724,7 +1724,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "anh-hung-lao-dong-khoa-hoc",
-    label: "🔬 Anh hùng Lao động · nhà khoa học · thầy thuốc",
+    label: "🔬 Anh hùng Lao động (khoa học · sản xuất · kinh tế)",
     icon: "🔬",
     file: "data/overlays/anh-hung-lao-dong-khoa-hoc.json",
     circleColor: "#0891b2",

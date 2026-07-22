@@ -36,7 +36,7 @@ const STRICT_SOURCE = new Set([
   "tuong-linh-hien-dai.json",
   "tien-si-tieu-bieu.json",
   "quan-thanh-liem.json",
-  "me-vnah-ahld.json",
+  "me-vnah.json",
   "chien-dich-tran-danh-bo-sung.json",
   "vua-hoang-de.json",
   "vo-tuong-trung-dai.json",
