@@ -20,6 +20,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 
 const OVERLAYS_DIR = "public/data/overlays";
 const OUT_DIR = "public/data/streets";
@@ -97,23 +98,39 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function stripDiacritics(s) {
-  return s
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/đ/g, "d")
-    .replace(/Đ/g, "D");
+// Dấu THANH ĐIỆU tiếng Việt (combining, NFD) — tách riêng khỏi dấu CHẤT NGUYÊN ÂM.
+const TONE_MARKS = {
+  "̀": "1", // huyền (grave)
+  "́": "2", // sắc (acute)
+  "̃": "3", // ngã (tilde)
+  "̉": "4", // hỏi (hook above)
+  "̣": "5", // nặng (dot below)
+};
+
+// Khoá 1 âm tiết: giữ chất nguyên âm (â/ê/ô/ơ/ư/ă) + đ, nhưng TÁCH thanh điệu ra một mã
+// đứng sau — nên khoá độc lập với VỊ TRÍ đặt dấu thanh («Thủy»≡«Thuỷ», cùng thanh hỏi trên
+// cụm uy) nhưng vẫn PHÂN BIỆT khác thanh («Bình»huyền≠«Bính»sắc → 2 người khác nhau).
+function syllableKey(tok) {
+  let tone = "0";
+  let base = "";
+  for (const ch of tok.normalize("NFD")) {
+    if (TONE_MARKS[ch]) tone = TONE_MARKS[ch]; // rút thanh ra, bỏ khỏi vị trí gốc
+    else base += ch; // giữ chữ cái + dấu chất nguyên âm (circumflex/horn/breve) + đ
+  }
+  return base.normalize("NFC") + tone;
 }
 
-// Khoá so khớp: bỏ dấu + hạ chữ thường + gộp khoảng trắng — để chịu được khác biệt
-// Unicode-normalization/hoa-thường giữa dữ liệu overlay và tên đường OSM, nhưng vẫn đòi
-// khớp ĐẦY ĐỦ chuỗi (không phải substring) để tránh dương tính giả.
-function matchKey(s) {
-  return stripDiacritics(s)
+// Khoá so khớp đầy đủ chuỗi: hạ chữ thường + bỏ dấu câu + khoá từng âm tiết theo syllableKey.
+// Tiếng Việt đơn âm tiết → mỗi token cách bằng khoảng trắng là 1 âm tiết.
+export function matchKey(s) {
+  return s
     .toLowerCase()
-    .replace(/[^a-z0-9\s]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+    .replace(/[^\p{L}\p{N}\s]+/gu, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .map(syllableKey)
+    .join(" ");
 }
 
 // Trích các ứng viên "tên có thể dùng làm tên đường" từ trường `ten` của 1 mục overlay.
@@ -121,7 +138,7 @@ function matchKey(s) {
 //     "Đại tướng Võ Nguyên Giáp" → ["Võ Nguyên Giáp"]
 //     "Bố Cái Đại Vương (Phùng Hưng)" → ["Bố Cái Đại Vương", "Phùng Hưng"]
 //     "Hưng Đạo Đại Vương Trần Quốc Tuấn" → [..., "Trần Quốc Tuấn"] (qua VN_SURNAMES)
-function candidateNamesFromTen(ten) {
+export function candidateNamesFromTen(ten) {
   // Nội dung trong ngoặc (VD tên gọi khác) cũng là ứng viên riêng — không chỉ bỏ đi.
   const parenContents = [...ten.matchAll(/\(([^)]*)\)/g)].map((m) => m[1]);
   const noParen = ten.replace(/\(.*?\)/g, " ");
@@ -328,8 +345,9 @@ async function main() {
     ghi_chu:
       "PILOT Phương án A: chỉ centroid đại diện + số đoạn, không lưu hình học đầy đủ. " +
       "bbox là lõi đô thị trung tâm, chưa phủ hết ranh giới hành chính sau sáp nhập tỉnh 2025. " +
-      "Khớp tên: chuẩn hoá bỏ dấu/hoa-thường, đòi khớp đầy đủ chuỗi, loại ứng viên đụng độ " +
-      "giữa ≥2 danh nhân. Vẫn cần 1 vòng soát thủ công trước khi mở rộng toàn quốc (xem " +
+      "Khớp tên: chuẩn hoá NFC + hạ chữ thường, GIỮ dấu thanh tiếng Việt (Bình≠Bính), đòi " +
+      "khớp đầy đủ chuỗi, loại ứng viên đụng độ giữa ≥2 danh nhân. Vẫn cần 1 vòng soát thủ " +
+      "công trước khi mở rộng toàn quốc (xem " +
       "docs/street-names-model-proposal.md mục 4 bước 5).",
     thanh_pho: thanhPhoReport,
     lien_ket: lienKetArr,
@@ -344,7 +362,11 @@ async function main() {
   );
 }
 
-main().catch((e) => {
-  console.error("Lỗi build:", e);
-  process.exitCode = 1;
-});
+// Chỉ chạy build (gọi Overpass) khi thực thi trực tiếp; cho phép import helper để dùng lại
+// (VD script dọn pilot) mà không kích hoạt fetch mạng.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((e) => {
+    console.error("Lỗi build:", e);
+    process.exitCode = 1;
+  });
+}

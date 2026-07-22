@@ -2,7 +2,7 @@
   "_license": "© OpenStreetMap contributors (ODbL) — https://www.openstreetmap.org/copyright",
   "ngay_build": "2026-07-21",
   "nguon": "OpenStreetMap qua Overpass API (overpass.kumi.systems / overpass-api.de)",
-  "ghi_chu": "PILOT Phương án A: chỉ centroid đại diện + số đoạn, không lưu hình học đầy đủ. bbox là lõi đô thị trung tâm, chưa phủ hết ranh giới hành chính sau sáp nhập tỉnh 2025. Khớp tên: chuẩn hoá bỏ dấu/hoa-thường, đòi khớp đầy đủ chuỗi, loại ứng viên đụng độ giữa ≥2 danh nhân. Vẫn cần 1 vòng soát thủ công trước khi mở rộng toàn quốc (xem docs/street-names-model-proposal.md mục 4 bước 5).",
+  "ghi_chu": "PILOT Phương án A: chỉ centroid đại diện + số đoạn, không lưu hình học đầy đủ. bbox là lõi đô thị trung tâm, chưa phủ hết ranh giới hành chính sau sáp nhập tỉnh 2025. Khớp tên: hạ chữ thường + khoá theo âm tiết, TÁCH thanh điệu khỏi vị trí đặt dấu (Thủy≡Thuỷ) nhưng phân biệt khác thanh (Bình≠Bính), đòi khớp đầy đủ chuỗi, loại ứng viên đụng độ giữa ≥2 danh nhân. Vẫn cần 1 vòng soát thủ công trước khi mở rộng toàn quốc (xem docs/street-names-model-proposal.md mục 4 bước 5).",
   "thanh_pho": [
     {
       "ten_tp": "Hà Nội",
@@ -25,7 +25,7 @@
       ],
       "trang_thai": "ok",
       "tong_duong_co_ten_osm": 28527,
-      "so_duong_khop_danh_nhan": 235
+      "so_duong_khop_danh_nhan": 229
     },
     {
       "ten_tp": "Đà Nẵng",
@@ -86,31 +86,6 @@
           "centroid": [
             106.61323,
             10.86073
-          ]
-        }
-      ]
-    },
-    {
-      "danh_nhan_id": "nguyen-binh-nha-tho",
-      "ten": "Nguyễn Bính",
-      "so_duong": 2,
-      "thanh_pho": [
-        {
-          "ten_tp": "TP. Hồ Chí Minh",
-          "ten_duong_osm": "Nguyễn Bính",
-          "so_doan": 3,
-          "centroid": [
-            106.71049,
-            10.72612
-          ]
-        },
-        {
-          "ten_tp": "TP. Hồ Chí Minh",
-          "ten_duong_osm": "Nguyễn Bình",
-          "so_doan": 10,
-          "centroid": [
-            106.69104,
-            10.68852
           ]
         }
       ]
@@ -266,22 +241,6 @@
           "centroid": [
             106.7756,
             10.84693
-          ]
-        }
-      ]
-    },
-    {
-      "danh_nhan_id": "bui-cam-ho",
-      "ten": "Bùi Cầm Hổ",
-      "so_duong": 1,
-      "thanh_pho": [
-        {
-          "ten_tp": "TP. Hồ Chí Minh",
-          "ten_duong_osm": "Bùi Cẩm Hổ",
-          "so_doan": 1,
-          "centroid": [
-            106.6338,
-            10.76646
           ]
         }
       ]
@@ -1215,22 +1174,6 @@
       ]
     },
     {
-      "danh_nhan_id": "le-than-bang-nhan",
-      "ten": "Lê Thân",
-      "so_duong": 1,
-      "thanh_pho": [
-        {
-          "ten_tp": "TP. Hồ Chí Minh",
-          "ten_duong_osm": "Lê Thận",
-          "so_doan": 1,
-          "centroid": [
-            106.62956,
-            10.77372
-          ]
-        }
-      ]
-    },
-    {
       "danh_nhan_id": "le-thi-hong-gam",
       "ten": "Lê Thị Hồng Gấm",
       "so_duong": 1,
@@ -1855,6 +1798,22 @@
       ]
     },
     {
+      "danh_nhan_id": "nguyen-binh-nha-tho",
+      "ten": "Nguyễn Bính",
+      "so_duong": 1,
+      "thanh_pho": [
+        {
+          "ten_tp": "TP. Hồ Chí Minh",
+          "ten_duong_osm": "Nguyễn Bính",
+          "so_doan": 3,
+          "centroid": [
+            106.71049,
+            10.72612
+          ]
+        }
+      ]
+    },
+    {
       "danh_nhan_id": "nguyen-chanh-sat",
       "ten": "Nguyễn Chánh Sắt",
       "so_duong": 1,
@@ -2399,22 +2358,6 @@
       ]
     },
     {
-      "danh_nhan_id": "nguyen-thi-thu",
-      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Thứ",
-      "so_duong": 1,
-      "thanh_pho": [
-        {
-          "ten_tp": "TP. Hồ Chí Minh",
-          "ten_duong_osm": "Nguyễn Thị Thử",
-          "so_doan": 1,
-          "centroid": [
-            106.57969,
-            10.86821
-          ]
-        }
-      ]
-    },
-    {
       "danh_nhan_id": "nguyen-thien-thanh",
       "ten": "Nguyễn Thiện Thành",
       "so_duong": 1,
@@ -2426,22 +2369,6 @@
           "centroid": [
             106.71213,
             10.77353
-          ]
-        }
-      ]
-    },
-    {
-      "danh_nhan_id": "nguyen-thiep",
-      "ten": "Nguyễn Thiếp — La Sơn Phu Tử",
-      "so_duong": 1,
-      "thanh_pho": [
-        {
-          "ten_tp": "TP. Hồ Chí Minh",
-          "ten_duong_osm": "Nguyễn Thiệp",
-          "so_doan": 1,
-          "centroid": [
-            106.70328,
-            10.77527
           ]
         }
       ]
@@ -3535,22 +3462,6 @@
       ]
     },
     {
-      "danh_nhan_id": "truong-quoc-dung",
-      "ten": "Trương Quốc Dụng",
-      "so_duong": 1,
-      "thanh_pho": [
-        {
-          "ten_tp": "TP. Hồ Chí Minh",
-          "ten_duong_osm": "Trương Quốc Dung",
-          "so_doan": 3,
-          "centroid": [
-            106.67268,
-            10.79739
-          ]
-        }
-      ]
-    },
-    {
       "danh_nhan_id": "truong-quyen",
       "ten": "Trương Quyền",
       "so_duong": 1,
@@ -3757,6 +3668,45 @@
           ]
         }
       ]
+    }
+  ],
+  "_soat_tay_lech_thanh": "Các đường có tên LỆCH THANH ĐIỆU so với danh nhân — đã gỡ khỏi liên kết (không khẳng định khớp), cần đối chiếu nguồn để xác định OSM gõ sai hay tên danh nhân trong dữ liệu sai:",
+  "_soat_tay": [
+    {
+      "danh_nhan": "Nguyễn Bính",
+      "duong_osm": "Nguyễn Bình",
+      "thanh_pho": "TP. Hồ Chí Minh",
+      "so_doan": 10
+    },
+    {
+      "danh_nhan": "Bùi Cầm Hổ",
+      "duong_osm": "Bùi Cẩm Hổ",
+      "thanh_pho": "TP. Hồ Chí Minh",
+      "so_doan": 1
+    },
+    {
+      "danh_nhan": "Lê Thân",
+      "duong_osm": "Lê Thận",
+      "thanh_pho": "TP. Hồ Chí Minh",
+      "so_doan": 1
+    },
+    {
+      "danh_nhan": "Mẹ Việt Nam Anh hùng Nguyễn Thị Thứ",
+      "duong_osm": "Nguyễn Thị Thử",
+      "thanh_pho": "TP. Hồ Chí Minh",
+      "so_doan": 1
+    },
+    {
+      "danh_nhan": "Nguyễn Thiếp — La Sơn Phu Tử",
+      "duong_osm": "Nguyễn Thiệp",
+      "thanh_pho": "TP. Hồ Chí Minh",
+      "so_doan": 1
+    },
+    {
+      "danh_nhan": "Trương Quốc Dụng",
+      "duong_osm": "Trương Quốc Dung",
+      "thanh_pho": "TP. Hồ Chí Minh",
+      "so_doan": 3
     }
   ]
 }
