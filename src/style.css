@@ -1419,7 +1419,9 @@ body.kid-mode #topbar {
 #layer-control {
   padding: 0.8rem 0.9rem;
   font-size: 0.86rem;
-  max-height: calc(100vh - var(--panel-top) - 1.25rem);
+  /* Trừ thêm ~4.75rem cho chiều cao #timeline-bar để panel không tràn xuống che
+     dòng thời gian (#2). */
+  max-height: calc(100vh - var(--panel-top) - 4.75rem);
   overflow-y: auto;
   overscroll-behavior: contain;
 }
@@ -1559,6 +1561,10 @@ input[type="range"] {
 
 /* Thanh dòng thời gian — dải mực nâu hiện đại */
 #timeline-bar {
+  /* Footer luôn nổi TRÊN các panel thả nổi (#layer-control z-index:10) để không
+     bị che khi panel lớp phủ kéo dài (#2 — Iron Man 2026-07-22). */
+  position: relative;
+  z-index: 30;
   background: linear-gradient(180deg, #241d1a 0%, #1c1917 100%);
   border-top: 1px solid rgba(212, 162, 78, 0.22);
   padding: 0.6rem 1.15rem;
