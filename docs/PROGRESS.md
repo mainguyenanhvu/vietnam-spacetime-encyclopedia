@@ -9,7 +9,8 @@ Kế hoạch chi tiết: [`mega-refresh-expansion-plan.md`](../mega-refresh-expa
 | 1 | UI: z-index timeline (✅) + icon lớp phủ (✅) | ✅ xong | build+validate xanh; emoji→canvas verified; render đầy đủ chờ Iron Man test local (sandbox chặn basemap) |
 | 2a | Gom 1 selector thời kỳ + tên nước (dùng data sẵn có) | ⬜ | — |
 | 2b | Vẽ ĐƯỜNG BIÊN CHÍNH XÁC CÓ NGUỒN từng thời kỳ (tra atlas trước) | ⬜ research-gated | — |
-| 3 | Dedup & gom 69→~25 lớp; tách Mẹ VNAH | ⬜ | — |
+| Q1 | Tách Mẹ VNAH + kiểm toán chính xác 62 lớp (6 agent) + sửa 2 factual | ✅ xong | validator+build xanh; `docs/audit-findings.md` |
+| 3 | Dedup & gom 69→~25 lớp; tách Mẹ VNAH (đã tách) | 🟡 một phần | Mẹ VNAH xong; còn gom cụm + nhom |
 | 4 | Ảnh nhân vật (chờ quyết nguồn) | ⬜ blocked | — |
 | 5 | Mở rộng vô hạn (sóng agent) | ⬜ | — |
 
