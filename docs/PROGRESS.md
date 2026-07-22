@@ -7,8 +7,9 @@ Kế hoạch chi tiết: [`mega-refresh-expansion-plan.md`](../mega-refresh-expa
 |---|---|---|---|
 | 0 | Guardrail validator xuyên-file + snapshot count | ✅ xong | validator+audit+build xanh |
 | 1 | UI: z-index timeline (✅) + icon lớp phủ (✅) | ✅ xong | build+validate xanh; emoji→canvas verified; render đầy đủ chờ Iron Man test local (sandbox chặn basemap) |
-| 2a | Gom 1 selector thời kỳ + tên nước (dùng data sẵn có) | ⬜ | — |
-| 2b | Vẽ ĐƯỜNG BIÊN CHÍNH XÁC CÓ NGUỒN từng thời kỳ (tra atlas trước) | ⬜ research-gated | — |
+| 2a | Gom 1 selector thời kỳ (13 thời kỳ) + tên nước | ✅ xong | tsc+vite+validator xanh (46979d3) |
+| 2b | Đường biên chính xác có nguồn | 🔴 chờ quyết | Research: KHÔNG có dataset sẵn; chỉ georef được 2 bản đồ gốc (Đại Việt 1490, Đại Nam 1838); era sớm không có nguồn biên |
+| 5 | Mở rộng — tìm thêm đối tượng mỗi lớp (LOOP, không dừng) | 🔄 đang chạy | Wave 1: 2 agent soạn ứng viên (danh-y, thể thao, dịch giả, khoa bảng NTB, Cần Vương, thành hoàng) |
 | Q1 | Tách Mẹ VNAH + kiểm toán chính xác 62 lớp (6 agent) + sửa 2 factual | ✅ xong | validator+build xanh; `docs/audit-findings.md` |
 | 3 | Dedup & gom 69→~25 lớp; tách Mẹ VNAH (đã tách) | 🟡 một phần | Mẹ VNAH xong; còn gom cụm + nhom |
 | 4 | Ảnh nhân vật (chờ quyết nguồn) | ⬜ blocked | — |
