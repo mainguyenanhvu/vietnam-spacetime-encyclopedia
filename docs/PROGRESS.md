@@ -7,7 +7,8 @@ Kế hoạch chi tiết: [`mega-refresh-expansion-plan.md`](../mega-refresh-expa
 |---|---|---|---|
 | 0 | Guardrail validator xuyên-file + snapshot count | ✅ xong | validator+audit+build xanh |
 | 1 | UI: z-index timeline (✅) + icon lớp phủ (✅) | ✅ xong | build+validate xanh; emoji→canvas verified; render đầy đủ chờ Iron Man test local (sandbox chặn basemap) |
-| 2 | Gom cương vực + thời kỳ + tên nước 4000 năm | ⬜ | — |
+| 2a | Gom 1 selector thời kỳ + tên nước (dùng data sẵn có) | ⬜ | — |
+| 2b | Vẽ ĐƯỜNG BIÊN CHÍNH XÁC CÓ NGUỒN từng thời kỳ (tra atlas trước) | ⬜ research-gated | — |
 | 3 | Dedup & gom 69→~25 lớp; tách Mẹ VNAH | ⬜ | — |
 | 4 | Ảnh nhân vật (chờ quyết nguồn) | ⬜ blocked | — |
 | 5 | Mở rộng vô hạn (sóng agent) | ⬜ | — |
