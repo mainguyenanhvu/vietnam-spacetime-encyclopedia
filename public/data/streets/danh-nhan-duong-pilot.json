@@ -3670,43 +3670,61 @@
       ]
     }
   ],
-  "_soat_tay_lech_thanh": "Các đường có tên LỆCH THANH ĐIỆU so với danh nhân — đã gỡ khỏi liên kết (không khẳng định khớp), cần đối chiếu nguồn để xác định OSM gõ sai hay tên danh nhân trong dữ liệu sai:",
+  "_soat_tay_lech_thanh": "Các đường có tên LỆCH THANH ĐIỆU so với danh nhân — đã gỡ khỏi liên kết. Đã tra chéo nguồn nhà nước (2026-07-22): dữ liệu overlay của dự án ĐÚNG ở cả 6 mục. phan_loai: 'khac-nguoi' = đường vinh danh người KHÁC (giữ tách, đúng); 'osm-sai-chinh-ta' = OSM gõ sai dấu, đường thực sự vinh danh danh nhân này (có thể nối lại qua bảng alias khi rollout); 'chua-xac-minh' = lệch thanh, chưa rõ đường vinh danh ai.",
   "_soat_tay": [
     {
-      "danh_nhan": "Nguyễn Bính",
+      "danh_nhan": "Nguyễn Bính (nhà thơ)",
       "duong_osm": "Nguyễn Bình",
       "thanh_pho": "TP. Hồ Chí Minh",
-      "so_doan": 10
+      "so_doan": 10,
+      "phan_loai": "khac-nguoi",
+      "ket_luan": "Đường vinh danh Trung tướng Nguyễn Bình (1908–1951), KHÁC nhà thơ Nguyễn Bính. Giữ tách. (Tướng Nguyễn Bình nằm ở figures/danh-nhan.json, ngoài phạm vi builder overlay.)",
+      "nguon": ["public/data/figures/danh-nhan.json — Nguyễn Bình (1908–1951), tướng"]
     },
     {
       "danh_nhan": "Bùi Cầm Hổ",
       "duong_osm": "Bùi Cẩm Hổ",
       "thanh_pho": "TP. Hồ Chí Minh",
-      "so_doan": 1
+      "so_doan": 1,
+      "phan_loai": "osm-sai-chinh-ta",
+      "ket_luan": "Tên đúng «Bùi Cầm Hổ» (huyền). OSM gõ «Cẩm» sai. Đường vinh danh chính ông.",
+      "nguon": ["laodong.vn", "baohatinh.vn", "soha.vn", "honglinh.hatinh.gov.vn", "ditichlichsuvanhoa.com"]
     },
     {
-      "danh_nhan": "Lê Thân",
+      "danh_nhan": "Lê Thân (Bảng nhãn Cổ Định, 1275)",
       "duong_osm": "Lê Thận",
       "thanh_pho": "TP. Hồ Chí Minh",
-      "so_doan": 1
+      "so_doan": 1,
+      "phan_loai": "khac-nguoi",
+      "ket_luan": "Overlay của ta ĐÚNG «Lê Thân» — Bảng nhãn làng Cổ Định đỗ khoa 1275 đời Trần Thánh Tông (nguồn dẫn nguyên văn «Lê Thân 22 tuổi… đỗ Bảng nhãn»). Đường «Lê Thận» ở TP.HCM vinh danh Lê Thận trong truyền thuyết gươm thần Lê Lợi (TK15) — NGƯỜI KHÁC. Giữ tách.",
+      "nguon": ["giaoducthoidai.vn — 9 nhà đại khoa ở đất thiêng Cổ Định — https://giaoducthoidai.vn/9-nha-dai-khoa-o-dat-thieng-co-dinh-post670938.html"]
     },
     {
-      "danh_nhan": "Mẹ Việt Nam Anh hùng Nguyễn Thị Thứ",
+      "danh_nhan": "Nguyễn Thị Thứ (Mẹ VNAH)",
       "duong_osm": "Nguyễn Thị Thử",
       "thanh_pho": "TP. Hồ Chí Minh",
-      "so_doan": 1
+      "so_doan": 1,
+      "phan_loai": "osm-sai-chinh-ta",
+      "ket_luan": "Tên đúng «Nguyễn Thị Thứ» (sắc) — Mẹ VNAH tiêu biểu, nguyên mẫu Tượng đài Mẹ VNAH Tam Kỳ. OSM gõ «Thử» sai. Đường vinh danh chính bà.",
+      "nguon": ["me-vnah-ahld.json (overlay dự án)", "Iron Man xác nhận 2026-07-22"]
     },
     {
-      "danh_nhan": "Nguyễn Thiếp — La Sơn Phu Tử",
+      "danh_nhan": "Nguyễn Thiếp (La Sơn Phu Tử)",
       "duong_osm": "Nguyễn Thiệp",
       "thanh_pho": "TP. Hồ Chí Minh",
-      "so_doan": 1
+      "so_doan": 1,
+      "phan_loai": "chua-xac-minh",
+      "ket_luan": "Tên danh nhân đúng «Nguyễn Thiếp» (sắc). Đường «Nguyễn Thiệp» (nặng, Q1 TP.HCM) lệch thanh — CHƯA xác minh đường này có vinh danh La Sơn Phu Tử hay một người khác. Giữ tách chờ soát.",
+      "nguon": ["hatinh.gov.vn — Thâm nghiêm đền thờ La Sơn phu tử Nguyễn Thiếp", "Iron Man xác nhận tên 2026-07-22"]
     },
     {
       "danh_nhan": "Trương Quốc Dụng",
       "duong_osm": "Trương Quốc Dung",
       "thanh_pho": "TP. Hồ Chí Minh",
-      "so_doan": 3
+      "so_doan": 3,
+      "phan_loai": "osm-sai-chinh-ta",
+      "ket_luan": "Tên đúng «Trương Quốc Dụng» (nặng) — Đông các Đại học sĩ triều Nguyễn. OSM rớt dấu nặng thành «Dung». Đường vinh danh chính ông.",
+      "nguon": ["dantri.com.vn", "vietnam.vn", "truongtoc.com.vn", "baotang.hatinh.gov.vn"]
     }
   ]
 }
