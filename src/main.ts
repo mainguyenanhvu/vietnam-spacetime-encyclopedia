@@ -48,6 +48,33 @@ const ERAS: Era[] = [
   },
 ];
 
+// --- Dòng thời gian HỢP NHẤT (Xích Quỷ → nay): gom «Cương vực Việt cổ» + các mốc
+// hành chính vào MỘT model thời kỳ, hiện TÊN NƯỚC theo từng thời kỳ (Iron Man #5 + #1).
+//   kind "cuongvuc" = polygon phỏng dựng có sẵn (ref = feature id trong co-truong-viet-co.json)
+//   kind "admin"    = ranh giới hành chính có sẵn   (ref = chỉ số trong ERAS)
+//   kind "ten"      = chỉ hiện TÊN NƯỚC + năm (đường biên chính xác đang tra nguồn — Phase 2b)
+interface Period {
+  ten_nuoc: string;
+  nhan: string;
+  kind: "cuongvuc" | "admin" | "ten";
+  ref?: string | number;
+}
+const PERIODS: Period[] = [
+  { ten_nuoc: "Xích Quỷ", nhan: "Xích Quỷ · huyền sử (~2879 TCN)", kind: "cuongvuc", ref: "xich-quy" },
+  { ten_nuoc: "Văn Lang", nhan: "Văn Lang · Hùng Vương (~700–258 TCN)", kind: "cuongvuc", ref: "van-lang" },
+  { ten_nuoc: "Âu Lạc", nhan: "Âu Lạc · An Dương Vương (257–179 TCN)", kind: "cuongvuc", ref: "au-lac" },
+  { ten_nuoc: "Nam Việt", nhan: "Nam Việt · nhà Triệu (204–111 TCN)", kind: "ten" },
+  { ten_nuoc: "Giao Chỉ – Giao Châu", nhan: "Bắc thuộc I–II · Giao Chỉ (111 TCN–544)", kind: "ten" },
+  { ten_nuoc: "Vạn Xuân", nhan: "Vạn Xuân · Lý Nam Đế (544–602)", kind: "cuongvuc", ref: "van-xuan" },
+  { ten_nuoc: "Tĩnh Hải quân", nhan: "Bắc thuộc III → Tự chủ (602–938)", kind: "ten" },
+  { ten_nuoc: "Đại Cồ Việt", nhan: "Đại Cồ Việt · Đinh–Tiền Lê–Lý (968–1054)", kind: "ten" },
+  { ten_nuoc: "Đại Việt", nhan: "Đại Việt · Lý–Trần–Lê–Tây Sơn (1054–1804)", kind: "ten" },
+  { ten_nuoc: "Đại Nam", nhan: "Đại Nam · nhà Nguyễn (1804–1887)", kind: "ten" },
+  { ten_nuoc: "Việt Nam thời Pháp thuộc", nhan: "Pháp thuộc · Bắc–Trung–Nam Kỳ (1887–1945)", kind: "admin", ref: 0 },
+  { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 63 tỉnh (1976–30/6/2025)", kind: "admin", ref: 1 },
+  { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 34 tỉnh (từ 1/7/2025)", kind: "admin", ref: 2 },
+];
+
 const KY_COLORS: Record<string, string> = {
   "Bắc Kỳ": "#2563eb",
   "Trung Kỳ": "#ca8a04",
@@ -167,7 +194,8 @@ if (topbarNavEl && topbarNavObserver)
 window.addEventListener("resize", syncTopbarH);
 syncTopbarH();
 
-let currentEra = ERAS.length - 1; // mặc định: 34 tỉnh hiện hành
+let currentEra = ERAS.length - 1; // era hành chính đang hiện (hoặc -1 = ẩn hết)
+let currentPeriod = PERIODS.length - 1; // thời kỳ đang chọn trong dòng thời gian (mặc định: 34 tỉnh)
 let hoveredId: number | string | undefined;
 let is3D = false;
 
@@ -791,7 +819,7 @@ map.on("load", () => {
   initSongNui();
   initCuongVuc();
   initNamTien();
-  setEra(currentEra);
+  setPeriod(currentPeriod);
   buildTimeline();
   buildLayerControl();
 
@@ -826,7 +854,7 @@ async function ensureLandmarks3D(): Promise<void> {
  */
 function setMode3D(on: boolean): void {
   is3D = on;
-  setEra(currentEra);
+  setPeriod(currentPeriod);
   map.easeTo({ pitch: on ? 55 : 0, bearing: on ? -12 : 0, duration: 1200 });
   document.getElementById("threed-btn")?.classList.toggle("active", on);
   // Chế độ 3D = diorama: ẩn basemap để Việt Nam nổi khối giữa biển động.
@@ -966,45 +994,46 @@ initJourney();
 initQuocGia();
 initTimeline();
 
+// Hiện ranh giới hành chính của 1 era (index = chỉ số ERAS) hoặc ẨN HẾT (index = -1).
+// KHÔNG tự đặt nhãn/thanh trượt — điều phối bởi setPeriod().
 function setEra(index: number): void {
-  // Đổi thời kỳ khác → thoát focus (tỉnh được lọc có thể không tồn tại ở
-  // thời kỳ mới). Đổi chế độ 2D/3D (cùng thời kỳ) vẫn giữ focus.
-  if (index !== currentEra && focusMode) clearFocusFilters();
   currentEra = index;
   ERAS.forEach((era, i) => {
     const active = i === index;
-    const flat = active && !is3D ? "visible" : "none";
-    map.setLayoutProperty(`${era.id}-fill`, "visibility", flat);
-    map.setLayoutProperty(`${era.id}-line`, "visibility", flat);
-    map.setLayoutProperty(
-      `${era.id}-3d`,
-      "visibility",
-      active && is3D ? "visible" : "none",
-    );
-    map.setLayoutProperty(
-      `${era.id}-label`,
-      "visibility",
-      active && !is3D && showLabels ? "visible" : "none",
-    );
+    map.setLayoutProperty(`${era.id}-fill`, "visibility", active && !is3D ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-line`, "visibility", active && !is3D ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-3d`, "visibility", active && is3D ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-label`, "visibility", active && !is3D && showLabels ? "visible" : "none");
   });
+}
+
+// Chọn 1 thời kỳ trong DÒNG THỜI GIAN HỢP NHẤT: hiện đúng lớp địa lý (cương vực
+// phỏng dựng / ranh giới hành chính / hoặc chỉ TÊN NƯỚC) + cập nhật nhãn + đồng bộ
+// thanh trượt & radio. Gom «Cương vực Việt cổ» + mốc hành chính về 1 điều khiển.
+function setPeriod(i: number): void {
+  if (i !== currentPeriod && focusMode) clearFocusFilters();
+  currentPeriod = i;
+  const p = PERIODS[i];
+  setEra(p.kind === "admin" ? (p.ref as number) : -1);
+  applyCuongVuc(p.kind === "cuongvuc" ? (p.ref as string) : "off");
   const label = document.getElementById("period-label");
-  if (label) label.textContent = ERAS[index].label;
+  if (label) label.textContent = p.nhan;
   const slider = document.getElementById("timeline") as HTMLInputElement | null;
-  if (slider) slider.value = String(index);
+  if (slider) slider.value = String(i);
   document
-    .querySelectorAll<HTMLInputElement>("#layer-control input[name=era]")
-    .forEach((r) => (r.checked = Number(r.value) === index));
+    .querySelectorAll<HTMLInputElement>("#layer-control input[name=period]")
+    .forEach((r) => (r.checked = Number(r.value) === i));
 }
 
 function buildTimeline(): void {
   const slider = document.getElementById("timeline") as HTMLInputElement | null;
   if (!slider) return;
   slider.min = "0";
-  slider.max = String(ERAS.length - 1);
+  slider.max = String(PERIODS.length - 1);
   slider.step = "1";
   slider.disabled = false;
-  slider.value = String(currentEra);
-  slider.addEventListener("input", () => setEra(Number(slider.value)));
+  slider.value = String(currentPeriod);
+  slider.addEventListener("input", () => setPeriod(Number(slider.value)));
 }
 
 // ---------------------------------------------------------------------------
@@ -2261,14 +2290,15 @@ function buildLayerControl(): void {
   el.innerHTML = `
     <div class="lc-head"><strong>🗺️ Lớp bản đồ</strong></div>
     <details class="lc-sec" open>
-      <summary>🕰️ Thời kỳ</summary>
-      <div class="group">
-        ${ERAS.map(
-          (era, i) => `
-          <label><input type="radio" name="era" value="${i}" ${
-            i === currentEra ? "checked" : ""
-          }/> ${era.label}</label>`,
+      <summary>🕰️ Thời kỳ <span class="lc-tag">Xích Quỷ → nay</span></summary>
+      <div class="group lc-periods">
+        ${PERIODS.map(
+          (p, i) => `
+          <label><input type="radio" name="period" value="${i}" ${
+            i === currentPeriod ? "checked" : ""
+          }/> ${p.nhan}</label>`,
         ).join("")}
+        <p class="lc-note">⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).</p>
       </div>
     </details>
     <details class="lc-sec" open>
@@ -2296,28 +2326,16 @@ function buildLayerControl(): void {
         <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
         <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
       </div>
-    </details>
-    <details class="lc-sec">
-      <summary>🐉 Cương vực Việt cổ</summary>
-      <div class="group">
-        <label><input type="radio" name="cuongvuc" value="off" checked/> Tắt</label>
-        <label><input type="radio" name="cuongvuc" value="xich-quy"/> Xích Quỷ <span class="lc-tag">huyền sử</span></label>
-        <label><input type="radio" name="cuongvuc" value="van-lang"/> Văn Lang (Hùng Vương)</label>
-        <label><input type="radio" name="cuongvuc" value="au-lac"/> Âu Lạc (Cổ Loa)</label>
-        <label><input type="radio" name="cuongvuc" value="van-xuan"/> Vạn Xuân (544–602)</label>
-        <p class="lc-note">⚠️ Phỏng dựng xấp xỉ theo sử liệu — bấm vùng để xem chú thích. KHÔNG phải bản đồ chủ quyền.</p>
-      </div>
     </details>`;
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
-    if (t.name === "era") setEra(Number(t.value));
+    if (t.name === "period") setPeriod(Number(t.value));
     if (t.name === "overlay") void toggleOverlay(t.value, t.checked);
     if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
     if (t.name === "labels") applyLabels(t.checked);
     if (t.name === "songnui") applySongNui(t.checked);
     if (t.name === "duong") void applyStreets(t.checked);
     if (t.name === "taberd") applyTaberd(t.checked);
-    if (t.name === "cuongvuc") applyCuongVuc(t.value);
   });
   el.addEventListener("input", (e) => {
     const t = e.target as HTMLInputElement;
