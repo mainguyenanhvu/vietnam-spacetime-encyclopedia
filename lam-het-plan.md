@@ -28,3 +28,11 @@ Mục tiêu: dứt điểm 3 nhánh treo còn lại của tên đường + tiế
 
 ## Cổng CI mỗi commit
 `node scripts/validate_overlays.mjs` ✅ · `node scripts/audit_sovereignty.mjs` ✅ · `npm run build` ✅
+
+## ✅ TRẠNG THÁI HOÀN TẤT (2026-07-22)
+- Nhánh A (builder figures/+alias+guard) · A' (fetch 3 TP nhờ header+mirror) · B (wire bản đồ):
+  commit `4d8132f` — pilot 224→**1137 liên kết / 459 danh nhân** (HN 331 · HCM 421 · ĐN 385).
+- Nhánh C (Sóng 19): commit `4cfba92` — +37 danh nhân (Huế 12 · nữ 12 · miền núi 13), 3 lớp mới.
+- Fix thanh điệu tên đường: `c7d00e2` `d23daa0`. Tất cả 3 cổng CI xanh mỗi commit.
+- CÒN LẠI (việc người): duyệt §9; xác minh đường "Nguyễn Thiệp" (Q1) vinh danh ai; retry rollout
+  tên đường ra tỉnh khác khi cần.

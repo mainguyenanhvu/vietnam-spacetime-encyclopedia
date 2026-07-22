@@ -98,6 +98,11 @@ Quy tắc toạ độ: lấy toạ độ **tượng đài / đền thờ / khu l
 | §9 | `954fd9c` | nâng 754 mục an toàn draft→reviewed; giữ 181 nhạy cảm + 32 Sóng17 draft (nhánh 2/4) | 0 | 1215 |
 | Xích Quỷ | `74afcf3` | wire lõi Cổ Loa + siết ghi_chú Xích Quỷ «Cương vực Việt cổ» (nhánh 4/4) | 0 | 1215 |
 | 18 | `d4a8e64` | chua-nguyen-trinh · nghe-nhan-lang-nghe-bo-sung · khoa-bang-nam-trung-bo (DDG CAPTCHA hạn chế) | 30 | 1245 |
+| Tên đường (fix) | `c7d00e2` `d23daa0` | matchKey phân biệt thanh điệu (Bình≠Bính, Thủy≡Thuỷ) + tra nguồn 6 cặp lệch thanh | 0 | 1245 |
+| Tên đường (wire) | `4d8132f` | builder quét figures/ + alias OSM-sai-dấu + header/mirror fetch 3 TP + bỏ tiền tố «Phố/Đường» → pilot **1137 liên kết / 459 danh nhân** (HN·HCM·ĐN); lớp bản đồ toggle | 0 | 1245 |
+| 19 | `4cfba92` | danh-nhan-thua-thien-hue · nu-danh-nhan-bo-sung · danh-nhan-mien-nui-phia-bac — 3 agent WebFetch-only, không CAPTCHA | 37 | 1443* |
+
+> *DB 1443 = ngân hàng dedup mới (1156 overlay + 301 figures + 137 tỉnh, unique). Overpass fix header User-Agent (dẹp 406) + 5 mirror khiến fetch cả 3 TP ổn định trở lại.
 
 **⛔ Điểm dừng phiên 2026-07-20 (sau Sóng 7):** mọi công cụ tìm kiếm (WebSearch cạn;
 Google/Bing/DDG qua web-crawl đều CAPTCHA/429) → **discovery thực sự bị chặn** = «không
