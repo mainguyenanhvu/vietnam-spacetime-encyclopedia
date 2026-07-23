@@ -24,8 +24,29 @@
 2. [✅] 2b-i+ii: 2 polygon 1490+1838 wire lên selector (commit e38b458).
 3. [✅] 3b lô 0: gỡ 5 trùng chéo-tên do sóng mở rộng gây (commit b4451d4).
 4. [✅] 3b lô 1: 4 nhóm 2-file → 65 lớp (commit ee1bc25).
-5. [ĐANG LÀM TIẾP] 3b lô 2+: các nhóm còn lại (xem dưới).
-6. Vét niche (số 3) — sau cùng.
+5. [✅] 3b lô 2: 4 nhóm nhân vật cùng schema → 50 lớp (ce4bd2d).
+6. [✅] 3b lô 3: nhóm sự kiện → **47 lớp** (938195b).
+7. [ĐANG LÀM TIẾP] 3b lô 4+: nhóm LỆCH SCHEMA (xem dưới).
+8. Vét niche (số 3) — sau cùng.
+
+## ⚠️ VẤN ĐỀ SCHEMA (quan trọng cho các lô còn lại)
+Lớp dùng 2 schema khác nhau — KHÔNG gộp lẫn dưới 1 popup nếu lệch:
+- **Schema nhân vật**: `nam_hien_thi` · `dia_diem` · `mo_ta` (personOverlayPopup).
+- **Schema thờ tự**: `thoi_ky` · `noi_tho` · `cong_trang` (popup tùy biến — khoi-nghia-bac-thuoc, khoa-bang-danh-nhan, danh-tuong-khang-chien).
+- **Schema sự kiện**: `nam` · `ket_qua` · `chi_huy` · `dia_diem`.
+→ GIẢI PHÁP cho nhóm lệch: thêm hàm `universalPersonPopup` fallback `nam_hien_thi ?? thoi_ky ?? nam` · `dia_diem ?? noi_tho` · `mo_ta ?? cong_trang`, gán cho primary nhóm lệch RỒI mới gộp. (Đã kiểm chứng: lô 1-3 chỉ gộp nhóm CÙNG schema nên an toàn.)
+
+## NHÓM CÒN LẠI (đều LỆCH schema → cần universalPersonPopup trước khi gộp):
+- **khoa-bang-quan-lai** (11→1): primary **khoa-bang-danh-nhan** (thờ-schema) ← khoa-bang-bo-sung, -3, -4, mien-trung, nam-trung-bo, thanh-hoa, trang-nguyen-khoa-bang, tien-si-tieu-bieu, quan-thanh-liem, danh-than-trieu-nguyen (đa số person-schema). ⚠️ dedup kỹ + universalPopup.
+- **danh-tuong-quan-su** (5→1): primary **danh-nhan-quan-su-co-trung-dai** (person) ← danh-tuong-khang-chien (thờ), vo-tuong-trung-dai (person), thu-linh-khoi-nghia-co-dai (person), khoi-nghia-bac-thuoc (thờ). → universalPopup.
+- **thanh-hoang-tin-nguong** (3→1): primary **thanh-hoang-danh-than** ← thanh-hoang-vung-mien, huyen-su-khai-quoc (custom).
+- **to-nghe-lang-nghe** (3→1): primary **to-nghe-danh-than** ← nghe-nhan-lang-nghe-bo-sung, lang-nghe-truyen-thong (địa điểm).
+- **danh-nhan-vung-mien** (2→1): primary **danh-nhan-nam-bo** ← danh-nhan-thua-thien-hue (person — có thể gộp ngay như lô 2).
+- **di-san-di-tich-bao-vat** (5→1): di-tich-qgdb ← di-tich-cach-mang, bao-vat-quoc-gia, danh-thang-di-san-thien-nhien, unesco. ⚠️ MỖI file popup TÙY BIẾN riêng (hang_muc/noi_luu_giu...) — KHÓ nhất; cân nhắc GIỮ RIÊNG bao-vat + unesco, chỉ gộp di-tich + danh-thang; hoặc chuẩn hoá.
+- Giữ NGUYÊN: me-vnah, thieu-nien-anh-hung, su-than-ngoai-giao, thien-su-cao-tang, danh-y-luong-y, nghe-nhan-di-san, le-hoi-truyen-thong, nha-the-thao-lich-su.
+- **TÁCH per-item CUỐI**: danh-nhan-cac-trieu → phân về nhóm theo loai (dedup chéo tên).
+
+## SAU HỢP NHẤT: thêm `nhom[]` cho 9 người (cand-nhom-multi.json) + logic render; dọn STRICT_SOURCE.
 
 ## Quyết định Iron Man: "GỘP MẠNH HƠN" (24 nhóm + tách file hỗn hợp per-item + nhom[])
 
