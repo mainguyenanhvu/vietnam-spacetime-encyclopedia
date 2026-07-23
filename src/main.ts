@@ -1606,7 +1606,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "chi-si-cach-mang",
-    label: "🔥 Chí sĩ yêu nước · nhà cách mạng tiền bối",
+    label: "🔥 Chí sĩ cách mạng · Doanh nhân yêu nước",
     icon: "🔥",
     file: "data/overlays/chi-si-cach-mang.json",
     circleColor: "#b91c1c",
@@ -1705,16 +1705,6 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "danh-tuong-chong-phap",
-    label: "🗡️ Danh tướng kháng Pháp (Cần Vương · nghĩa quân)",
-    icon: "🗡️",
-    file: "data/overlays/danh-tuong-chong-phap.json",
-    circleColor: "#9f1239",
-    nguon:
-      "Báo QĐND · Bảo tàng Lịch sử Quốc gia · Cục Di sản văn hóa · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
     id: "le-hoi-truyen-thong",
     label: "🎏 Lễ hội truyền thống (di sản phi vật thể)",
     icon: "🎏",
@@ -1794,18 +1784,8 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "doanh-nhan-yeu-nuoc",
-    label: "💰 Doanh nhân · tư sản dân tộc yêu nước",
-    icon: "💰",
-    file: "data/overlays/doanh-nhan-yeu-nuoc.json",
-    circleColor: "#b45309",
-    nguon:
-      "Báo Nhân Dân · Báo Chính phủ · Bảo tàng Lịch sử Quốc gia · VCCI · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
     id: "danh-nhan-dan-toc-thieu-so",
-    label: "🪶 Danh nhân · anh hùng các dân tộc thiểu số",
+    label: "🪶 Danh nhân dân tộc thiểu số · Miền núi phía Bắc",
     icon: "🪶",
     file: "data/overlays/danh-nhan-dan-toc-thieu-so.json",
     circleColor: "#0f766e",
@@ -1975,7 +1955,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "nghia-si-can-vuong",
-    label: "⚔️ Nghĩa sĩ Cần Vương · Văn Thân",
+    label: "⚔️ Cần Vương · Kháng Pháp thế kỷ 19",
     icon: "⚔️",
     file: "data/overlays/nghia-si-can-vuong.json",
     circleColor: "#881337",
@@ -2031,26 +2011,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#c2410c",
     nguon:
       "baotanglichsu.vn · vanvn.vn · daidoanket.vn · archives.org.vn (Lưu trữ QG) · vusta.vn",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "nu-danh-nhan-bo-sung",
-    label: "👩 Nữ danh nhân (bổ sung)",
-    icon: "👩",
-    file: "data/overlays/nu-danh-nhan-bo-sung.json",
-    circleColor: "#be185d",
-    nguon:
-      "Bảo tàng Phụ nữ VN · baotanglichsu.vn · hannom.vass.gov.vn · hoilhpn.org.vn · vusta.vn",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-nhan-mien-nui-phia-bac",
-    label: "🏔️ Danh nhân miền núi phía Bắc & dân tộc thiểu số",
-    icon: "🏔️",
-    file: "data/overlays/danh-nhan-mien-nui-phia-bac.json",
-    circleColor: "#4338ca",
-    nguon:
-      "baocaobang.vn · nhandan.vn · cand.vn · vov.vn · qdnd.vn · baothainguyen.vn · vanvn.vn",
     popup: personOverlayPopup,
   },
 ];
