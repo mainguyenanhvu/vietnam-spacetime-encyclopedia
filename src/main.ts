@@ -1079,6 +1079,29 @@ const personOverlayPopup = (p: OverlayItem): string => {
   return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
 };
 
+// Popup HỢP NHẤT cho lớp gộp nhiều schema (nhân vật + thờ tự + sự kiện) — dùng fallback
+// nam_hien_thi ?? thoi_ky ?? nam · dia_diem ?? noi_tho · mo_ta ?? cong_trang. Không để trống dòng.
+const universalPersonPopup = (p: OverlayItem): string => {
+  const o = p as OverlayItem & {
+    nam_hien_thi?: string;
+    nam?: string | number;
+    thoi_ky?: string;
+    dia_diem?: string;
+    noi_tho?: string;
+    mo_ta?: string;
+    cong_trang?: string;
+    do_tin_cay_toa_do?: string;
+  };
+  const nam = o.nam_hien_thi ?? o.thoi_ky ?? (o.nam != null ? String(o.nam) : "");
+  const noi = o.dia_diem ?? o.noi_tho ?? "";
+  const ta = o.mo_ta ?? o.cong_trang ?? "";
+  const tc =
+    o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
+      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
+      : "";
+  return `<strong>${esc(o.ten)}</strong>${nam ? `<br/><span style="color:#78716c">${esc(String(nam))}</span>` : ""}${noi ? `<br/>📍 ${esc(String(noi))}` : ""}${ta ? `<br/><span style="color:#57534e">${esc(ta)}</span>` : ""}${tc}`;
+};
+
 // Popup dùng chung cho lớp phủ "sự kiện/trận đánh" (ưu tiên nam_hien_thi rồi nam).
 const eventOverlayPopup = (p: OverlayItem): string => {
   const o = p as OverlayItem & {
@@ -1170,38 +1193,8 @@ const OVERLAYS: OverlayConf[] = [
     },
   },
   {
-    id: "khoi-nghia-bac-thuoc",
-    label: "⚔️ Anh hùng chống Bắc thuộc & mở nền tự chủ",
-    icon: "⚔️",
-    file: "data/overlays/khoi-nghia-bac-thuoc.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "khoi-nghia",
-      "#ea580c",
-      "tu-chu",
-      "#15803d",
-      "#ea580c",
-    ],
-    nguon:
-      "Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái · Việt Điện U Linh · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        thoi_ky?: string;
-        noi_tho?: string;
-        cong_trang?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
-    },
-  },
-  {
     id: "khoa-bang-danh-nhan",
-    label: "📜 Khoa bảng · thầy giáo · quan thanh liêm",
+    label: "📜 Khoa bảng · Trạng nguyên · Tiến sĩ · Quan lại",
     icon: "📜",
     file: "data/overlays/khoa-bang-danh-nhan.json",
     circleColor: [
@@ -1219,53 +1212,7 @@ const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Đại Việt Sử Ký Toàn Thư · Đại Nam Thực Lục · Phủ Biên Tạp Lục · Cục Di sản Văn hoá (dsvh.gov.vn) · vanmieu.gov.vn",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        thoi_ky?: string;
-        noi_tho?: string;
-        cong_trang?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "danh-tuong-khang-chien",
-    label: "🛡️ Danh tướng & các cuộc kháng chiến giữ nước",
-    icon: "🛡️",
-    file: "data/overlays/danh-tuong-khang-chien.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "khang-tong-ly",
-      "#ca8a04",
-      "khang-nguyen-tran",
-      "#dc2626",
-      "lam-son-le",
-      "#16a34a",
-      "tay-son",
-      "#9333ea",
-      "#dc2626",
-    ],
-    nguon:
-      "Đại Việt Sử Ký Toàn Thư · Lam Sơn thực lục · Hoàng Lê nhất thống chí · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        thoi_ky?: string;
-        noi_tho?: string;
-        cong_trang?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
-    },
+    popup: universalPersonPopup,
   },
   {
     id: "danh-nhan-cac-trieu",
@@ -1358,36 +1305,6 @@ const OVERLAYS: OverlayConf[] = [
     },
   },
   {
-    id: "trang-nguyen-khoa-bang",
-    label: "🎓 Trạng nguyên & khoa bảng (1075–1919)",
-    icon: "🎓",
-    file: "data/overlays/trang-nguyen-khoa-bang.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "trang-nguyen", "#7c3aed",
-      "tien-si", "#2563eb",
-      "bang-nhan-tham-hoa", "#0d9488",
-      "su-gia", "#ca8a04",
-      "#7c3aed",
-    ],
-    nguon:
-      "Đại Việt Sử Ký Toàn Thư · Lịch triều hiến chương loại chí · Đại Nam Liệt Truyện · Ngô Đức Thọ — Các nhà khoa bảng Việt Nam 1075–1919",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        nam_hien_thi?: string;
-        mo_ta?: string;
-        dia_diem?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ quê/đền thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">Khoa ${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
-    },
-  },
-  {
     id: "danh-nhan-van-hoa-can-hien-dai",
     label: "📚 Văn nghệ sĩ · Báo chí · Danh nhân văn hoá",
     icon: "📚",
@@ -1419,7 +1336,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "thanh-hoang-danh-than",
-    label: "🏯 Thành hoàng & danh thần (đền · đình thờ)",
+    label: "🏯 Thành hoàng · Danh thần · Tín ngưỡng vùng miền",
     icon: "🏯",
     file: "data/overlays/thanh-hoang-danh-than.json",
     circleColor: [
@@ -1445,26 +1362,6 @@ const OVERLAYS: OverlayConf[] = [
     },
   },
   {
-    id: "tien-si-tieu-bieu",
-    label: "🎓 Tiến sĩ · nhà bác học tiêu biểu",
-    icon: "🎓",
-    file: "data/overlays/tien-si-tieu-bieu.json",
-    circleColor: "#0d9488",
-    nguon:
-      "Cục Bản quyền tác giả · các Sở/cổng tỉnh · Trung tâm Lưu trữ Quốc gia · Ngô Đức Thọ (Các nhà khoa bảng VN)",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "quan-thanh-liem",
-    label: "⚖️ Quan thanh liêm · danh thần có công",
-    icon: "⚖️",
-    file: "data/overlays/quan-thanh-liem.json",
-    circleColor: "#7c3aed",
-    nguon:
-      "Báo Công an Nhân dân · Báo Nhân Dân · Cục Di sản văn hóa · báo chí nhà nước · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
     id: "me-vnah",
     label: "🏵️ Mẹ Việt Nam Anh hùng",
     icon: "🏵️",
@@ -1485,16 +1382,6 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "vo-tuong-trung-dai",
-    label: "🗡️ Võ tướng trung đại (Lý · Trần · Lê · Tây Sơn)",
-    icon: "🗡️",
-    file: "data/overlays/vo-tuong-trung-dai.json",
-    circleColor: "#9f1239",
-    nguon:
-      "Cục Di sản văn hóa · Bảo tàng Lịch sử Quốc gia · Báo QĐND · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
     id: "chi-si-cach-mang",
     label: "🔥 Chí sĩ cách mạng · Doanh nhân yêu nước",
     icon: "🔥",
@@ -1506,32 +1393,12 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "to-nghe-danh-than",
-    label: "🛠️ Tổ nghề · thành hoàng · danh thần (bổ sung)",
+    label: "🛠️ Tổ nghề · Nghệ nhân · Làng nghề truyền thống",
     icon: "🛠️",
     file: "data/overlays/to-nghe-danh-than.json",
     circleColor: "#0891b2",
     nguon:
       "Cục Di sản văn hóa · Sở VHTT các tỉnh · Cục Bản quyền tác giả · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "khoa-bang-bo-sung",
-    label: "📜 Khoa bảng · tiến sĩ · trạng nguyên (bổ sung)",
-    icon: "📜",
-    file: "data/overlays/khoa-bang-bo-sung.json",
-    circleColor: "#0d9488",
-    nguon:
-      "Cục Bản quyền tác giả · Viện Hán Nôm · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "thanh-hoang-vung-mien",
-    label: "🏯 Thành hoàng · thánh mẫu · danh thần vùng miền",
-    icon: "🏯",
-    file: "data/overlays/thanh-hoang-vung-mien.json",
-    circleColor: "#9333ea",
-    nguon:
-      "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
     popup: personOverlayPopup,
   },
   {
@@ -1562,16 +1429,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#ea580c",
     nguon:
       "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "lang-nghe-truyen-thong",
-    label: "🧵 Làng nghề truyền thống",
-    icon: "🧵",
-    file: "data/overlays/lang-nghe-truyen-thong.json",
-    circleColor: "#ca8a04",
-    nguon:
-      "Cục Du lịch Quốc gia · Cục Di sản văn hóa · Sở VHTT các tỉnh · cổng tỉnh",
     popup: personOverlayPopup,
   },
   {
@@ -1644,24 +1501,14 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "khoa-bang-bo-sung-3",
-    label: "🎓 Khoa bảng Nho học (bổ sung)",
-    icon: "🎓",
-    file: "data/overlays/khoa-bang-bo-sung-3.json",
-    circleColor: "#1e40af",
-    nguon:
-      "Cổng tỉnh (Ninh Bình · Hưng Yên · Hà Tĩnh · Thanh Hoá…) · dsvh.gov.vn · Ngô Đức Thọ — Các nhà khoa bảng VN",
-    popup: personOverlayPopup,
-  },
-  {
     id: "danh-nhan-quan-su-co-trung-dai",
-    label: "⚔️ Danh nhân quân sự cổ–trung đại (bổ sung)",
+    label: "⚔️ Danh tướng · Võ tướng · Thủ lĩnh khởi nghĩa (cổ–trung đại)",
     icon: "⚔️",
     file: "data/overlays/danh-nhan-quan-su-co-trung-dai.json",
     circleColor: "#991b1b",
     nguon:
-      "Bảo tàng Lịch sử Quốc gia · Khu di tích Lam Kinh · Báo Văn hoá · cổng tỉnh · Dân trí",
-    popup: personOverlayPopup,
+      "Bảo tàng Lịch sử Quốc gia · Khu di tích Lam Kinh · Báo Văn hoá · cổng tỉnh · Dân trí · Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái",
+    popup: universalPersonPopup,
   },
   {
     id: "nha-the-thao-lich-su",
@@ -1674,63 +1521,13 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "khoa-bang-bo-sung-4",
-    label: "🎓 Khoa bảng Kinh Bắc · Hải Dương · Sơn Nam",
-    icon: "🎓",
-    file: "data/overlays/khoa-bang-bo-sung-4.json",
-    circleColor: "#3730a3",
-    nguon:
-      "VOV · Giáo dục & Thời đại · Báo Bắc Ninh · VietNamNet · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "thu-linh-khoi-nghia-co-dai",
-    label: "🗡️ Nữ tướng · thủ lĩnh thời Bắc thuộc",
-    icon: "🗡️",
-    file: "data/overlays/thu-linh-khoi-nghia-co-dai.json",
-    circleColor: "#86198f",
-    nguon:
-      "Hà Nội Mới · Dân Việt · Dân trí · Báo Thanh Hoá · TTXVN · cổng tỉnh · di tích",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "khoa-bang-mien-trung",
-    label: "🎓 Khoa bảng miền Trung (Nghệ–Tĩnh · Quảng · Huế)",
-    icon: "🎓",
-    file: "data/overlays/khoa-bang-mien-trung.json",
-    circleColor: "#0369a1",
-    nguon:
-      "Cổng tỉnh (Nghệ An · Hà Tĩnh · Quảng Nam · Quảng Bình) · dsvh.gov.vn · Ngô Đức Thọ",
-    popup: personOverlayPopup,
-  },
-  {
     id: "danh-nhan-nam-bo",
-    label: "🌾 Danh nhân khai hoang · chí sĩ Nam Bộ",
+    label: "🌾 Danh nhân vùng miền (Nam Bộ · Thừa Thiên Huế)",
     icon: "🌾",
     file: "data/overlays/danh-nhan-nam-bo.json",
     circleColor: "#4d7c0f",
     nguon:
       "Cổng tỉnh Nam Bộ · dsvh.gov.vn · Báo Cần Thơ · An Giang · Đồng Tháp · Nhân Dân",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-than-trieu-nguyen",
-    label: "🏛️ Danh thần · nhà cải cách triều Nguyễn",
-    icon: "🏛️",
-    file: "data/overlays/danh-than-trieu-nguyen.json",
-    circleColor: "#9a3412",
-    nguon:
-      "Bảo tàng Lịch sử · TT Bảo tồn Di tích Cố đô Huế · cổng tỉnh · Báo Nhân Dân",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "khoa-bang-thanh-hoa",
-    label: "🎓 Khoa bảng Thanh Hoá",
-    icon: "🎓",
-    file: "data/overlays/khoa-bang-thanh-hoa.json",
-    circleColor: "#1e3a8a",
-    nguon:
-      "Báo Thanh Hoá · cổng Thanh Hoá · dsvh.gov.vn · Ngô Đức Thọ — Các nhà khoa bảng VN",
     popup: personOverlayPopup,
   },
   {
@@ -1753,37 +1550,7 @@ const OVERLAYS: OverlayConf[] = [
       "Báo Nhân Dân · Viện Hàn lâm KHCN/KHXH VN · ĐHQG · MEDDOM · Tia Sáng",
     popup: personOverlayPopup,
   },
-  {
-    id: "nghe-nhan-lang-nghe-bo-sung",
-    label: "🪚 Tổ nghề · nghệ nhân làng nghề (bổ sung)",
-    icon: "🪚",
-    file: "data/overlays/nghe-nhan-lang-nghe-bo-sung.json",
-    circleColor: "#78350f",
-    nguon:
-      "dsvh.gov.vn · cổng tỉnh · báo địa phương · hiệp hội làng nghề",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "khoa-bang-nam-trung-bo",
-    label: "🎓 Khoa bảng Nam Trung Bộ (Quảng Nam · Quảng Ngãi)",
-    icon: "🎓",
-    file: "data/overlays/khoa-bang-nam-trung-bo.json",
-    circleColor: "#0e7490",
-    nguon:
-      "scov.gov.vn (Bộ VHTTDL) · Giáo dục & Thời đại · Báo Đà Nẵng · Quảng Nam · dsvh.gov.vn",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-nhan-thua-thien-hue",
-    label: "🎓 Danh nhân Thừa Thiên Huế",
-    icon: "🎓",
-    file: "data/overlays/danh-nhan-thua-thien-hue.json",
-    circleColor: "#c2410c",
-    nguon:
-      "baotanglichsu.vn · vanvn.vn · daidoanket.vn · archives.org.vn (Lưu trữ QG) · vusta.vn",
-    popup: personOverlayPopup,
-  },
-];
+  ];
 
 // Vẽ 1 emoji ra canvas offscreen rồi trả về ImageData — dùng để đăng ký
 // icon-image cho MapLibre mà không cần sprite sheet/asset ngoài (self-contained).

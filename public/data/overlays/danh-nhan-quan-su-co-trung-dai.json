@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Danh nhân quân sự cổ–trung đại tiêu biểu (bổ sung) — tướng lĩnh/thổ tù có đền thờ/lăng/di tích, chưa có trong CSDL. Không dùng Wikipedia; nguồn từ cổng nhà nước, khu di tích chính thức, báo chí và hội đồng dòng họ (đã fetch thực tế).",
+  "ghi_chu": "Danh nhân quân sự cổ–trung đại tiêu biểu (bổ sung) — tướng lĩnh/thổ tù có đền thờ/lăng/di tích, chưa có trong CSDL. Không dùng Wikipedia; nguồn từ cổng nhà nước, khu di tích chính thức, báo chí và hội đồng dòng họ (đã fetch thực tế). [Phase 3 lô4: hợp nhất 4 lớp → nhóm «Danh tướng · Võ tướng · Thủ lĩnh khởi nghĩa (cổ–trung đại)» (dedup core).]",
   "ngay_cap_nhat": "2026-07-21",
   "sources": [
     "Cổng TTĐT Sở VHTT Ninh Bình — vhtt.ninhbinh.gov.vn",
@@ -12,7 +12,28 @@
     "Cổng TTĐT xã Quảng Bị, TP Hà Nội — quangbi.hanoi.gov.vn",
     "Họ Hà Việt Nam — hohavietnam.vn",
     "Họ Phạm Việt Nam — hophamvietnam.org",
-    "Họ Lê Việt Nam — holevietnam.vn"
+    "Họ Lê Việt Nam — holevietnam.vn",
+    "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên)",
+    "Lam Sơn thực lục (Nguyễn Trãi); Hoàng Lê nhất thống chí; Đại Nam liệt truyện",
+    "Cục Di sản Văn hoá — dsvh.gov.vn",
+    "Báo Hải Phòng — baohaiphong.vn",
+    "Cổng TTĐT tỉnh Quảng Ninh / Báo Quảng Ninh — baoquangninh.vn",
+    "Báo Thái Nguyên — baothainguyen.vn",
+    "Báo Hà Tĩnh — baohatinh.vn",
+    "Báo Thanh Niên — thanhnien.vn",
+    "TTXVN/VietnamPlus — vietnamplus.vn",
+    "Cổng TTĐT tỉnh Thanh Hoá (nganhang.thanhhoa.gov.vn, vhds.baothanhhoa.vn)",
+    "Báo Dân Việt — danviet.vn",
+    "Báo Thanh Hóa (Văn hóa & Đời sống) — vhds.baothanhhoa.vn",
+    "Báo Tin Tức (TTXVN) — baotintuc.vn",
+    "Nhịp sống Hà Nội (Hànộimới) — nhipsonghanoi.hanoimoi.vn",
+    "Tạp chí Văn hóa Nghệ thuật — vanhoanghethuat.vn",
+    "Họ Dương Thanh Hóa — hoduongthanhhoa.vn",
+    "Di tích lịch sử văn hóa Việt Nam — ditichlichsuvanhoa.com",
+    "Báo Mới — baomoi.com",
+    "Người Kể Sử — nguoikesu.com",
+    "OpenStreetMap Nominatim (toạ độ)",
+    "Lĩnh Nam Chích Quái; Việt Điện U Linh"
   ],
   "items": [
     {
@@ -210,6 +231,825 @@
       "nguon": [
         "Cổng TTĐT xã Quảng Bị, TP Hà Nội — Danh tướng Đặng Tiến Đông – tấm gương trung quân ái quốc — https://quangbi.hanoi.gov.vn/van-hoa-xa-hoi/danh-tuong-dang-tien-dong-tam-guong-trung-quan-ai-quoc-268425122617335383.htm"
       ]
+    },
+    {
+      "id": "ly-thuong-kiet",
+      "ten": "Lý Thường Kiệt",
+      "lon": 105.84341,
+      "lat": 19.98086,
+      "loai": "khang-tong-ly",
+      "thoi_ky": "Kháng Tống — nhà Lý (1019–1105)",
+      "noi_tho": "Đền thờ Lý Thường Kiệt, khu vực Hà Trung, Thanh Hoá (nơi ông trấn nhậm 19 năm)",
+      "cong_trang": "Danh tướng nhà Lý, chủ trương «tiên phát chế nhân» tập kích Ung – Khâm – Liêm châu (1075), rồi lập phòng tuyến sông Như Nguyệt đánh tan quân Tống (1077). Gắn với bài «Nam quốc sơn hà» — bản tuyên ngôn độc lập đầu tiên.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Lý; Việt sử lược",
+        "Sở VHTTDL Thanh Hoá / Cục Di sản Văn hoá (dsvh.gov.vn) — đền thờ Lý Thường Kiệt, Hà Trung (chờ soát toạ độ POI)"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "tran-hung-dao",
+      "ten": "Hưng Đạo Đại Vương Trần Quốc Tuấn",
+      "lon": 106.32759,
+      "lat": 21.15105,
+      "loai": "khang-nguyen-tran",
+      "thoi_ky": "Kháng Nguyên–Mông — nhà Trần (1228–1300)",
+      "noi_tho": "Đền Kiếp Bạc, Chí Linh, Hải Dương (nay Hải Phòng) — quần thể DTQG đặc biệt & Di sản thế giới",
+      "cong_trang": "Tổng chỉ huy ba lần đánh thắng quân Nguyên–Mông (1258, 1285, 1288), đỉnh cao là trận Bạch Đằng 1288 với bãi cọc diệt đạo quân Ô Mã Nhi. Tác giả «Hịch tướng sĩ» và «Binh thư yếu lược»; được nhân dân tôn là Đức Thánh Trần.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Trần; Hịch tướng sĩ (nguyên tác)",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Côn Sơn – Kiếp Bạc, DTQG đặc biệt; quần thể Yên Tử – Vĩnh Nghiêm – Côn Sơn, Kiếp Bạc (Di sản thế giới UNESCO)"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "pham-ngu-lao",
+      "ten": "Phạm Ngũ Lão",
+      "lon": 106.11035,
+      "lat": 20.86903,
+      "loai": "khang-nguyen-tran",
+      "thoi_ky": "Kháng Nguyên–Mông — nhà Trần (1255–1320)",
+      "noi_tho": "Đền Phù Ủng, xã Phù Ủng (nay xã Phạm Ngũ Lão), Ân Thi, Hưng Yên",
+      "cong_trang": "Danh tướng nhà Trần, môn khách và con rể Trần Hưng Đạo; lập công lớn trong kháng chiến chống Nguyên–Mông và dẹp giặc phía nam. Tác giả bài thơ «Thuật hoài» (Tỏ lòng) — «Hoành sóc giang sơn kháp kỷ thu».",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Trần",
+        "Sở VHTTDL Hưng Yên / Cục Di sản Văn hoá (dsvh.gov.vn) — Đền Phù Ủng, di tích quốc gia"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "yet-kieu",
+      "ten": "Yết Kiêu",
+      "lon": 106.26003,
+      "lat": 20.87165,
+      "loai": "khang-nguyen-tran",
+      "thoi_ky": "Kháng Nguyên–Mông — nhà Trần (thế kỷ 13)",
+      "noi_tho": "Đền Quát, xã Yết Kiêu, Gia Lộc, Hải Dương (nay Hải Phòng)",
+      "cong_trang": "Gia tướng thuỷ quân của Trần Hưng Đạo, tài bơi lặn phi thường, lặn đục đắm nhiều thuyền chiến quân Nguyên — biểu tượng thuỷ binh Đại Việt. Được thờ ở Đền Quát (quê Hạ Bì, Gia Lộc).",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Trần; thần tích Đền Quát",
+        "Cổng TTĐT TP Hải Phòng (haiphong.gov.vn) — xã Yết Kiêu, Gia Lộc"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "le-loi",
+      "ten": "Lê Lợi — Lê Thái Tổ",
+      "lon": 105.40351,
+      "lat": 19.92756,
+      "loai": "lam-son-le",
+      "thoi_ky": "Khởi nghĩa Lam Sơn 1418–1427",
+      "noi_tho": "Khu di tích lịch sử Lam Kinh, xã Xuân Lam, Thọ Xuân, Thanh Hoá (DTQG đặc biệt)",
+      "cong_trang": "Thủ lĩnh khởi nghĩa Lam Sơn, mười năm nếm mật nằm gai đánh đuổi quân Minh, lập nhà Hậu Lê (1428), khôi phục nền độc lập. Gắn truyền thuyết trả gươm hồ Hoàn Kiếm.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Lê; Lam Sơn thực lục (Nguyễn Trãi)",
+        "Ban Quản lý Di tích lịch sử Lam Kinh / Cục Di sản Văn hoá (dsvh.gov.vn) — Lam Kinh, DTQG đặc biệt"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "le-lai",
+      "ten": "Lê Lai — «Lê Lai cứu chúa»",
+      "lon": 105.3981,
+      "lat": 19.9665,
+      "loai": "lam-son-le",
+      "thoi_ky": "Khởi nghĩa Lam Sơn (mất 1418)",
+      "noi_tho": "Đền thờ Lê Lai (Đền Tép), xã Kiên Thọ, Ngọc Lặc, Thanh Hoá",
+      "cong_trang": "Tướng Lam Sơn, liều mình đóng giả Lê Lợi phá vòng vây quân Minh ở Chí Linh để cứu chủ tướng — «Lê Lai cứu chúa». Biểu tượng lòng trung nghĩa hi sinh; dân gian truyền «21 Lê Lai, 22 Lê Lợi» (giỗ trước một ngày).",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Lê; Lam Sơn thực lục",
+        "Sở VHTTDL Thanh Hoá / Cục Di sản Văn hoá (dsvh.gov.vn) — Đền Tép (Lê Lai), Ngọc Lặc"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "quang-trung",
+      "ten": "Hoàng đế Quang Trung – Nguyễn Huệ",
+      "lon": 108.92089,
+      "lat": 13.92392,
+      "loai": "tay-son",
+      "thoi_ky": "Tây Sơn (1753–1792)",
+      "noi_tho": "Bảo tàng Quang Trung & Đền thờ Tây Sơn Tam Kiệt, thị trấn Phú Phong, Tây Sơn, Bình Định (nay Gia Lai)",
+      "cong_trang": "Thiên tài quân sự Tây Sơn: phá tan 5 vạn quân Xiêm ở Rạch Gầm – Xoài Mút (1785), thần tốc đại phá 29 vạn quân Thanh trong 5 ngày Tết Kỷ Dậu (Ngọc Hồi – Đống Đa 1789). Cải cách hành chính, đề cao chữ Nôm.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Hoàng Lê nhất thống chí; Đại Nam chính biên liệt truyện",
+        "Bảo tàng Quang Trung / Sở VHTTDL (di tích quốc gia đặc biệt Tây Sơn, Bình Định – nay Gia Lai)"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nguyen-xi",
+      "ten": "Nguyễn Xí",
+      "lon": 105.6318,
+      "lat": 18.7823,
+      "loai": "danh-tuong",
+      "nam_hien_thi": "1397–1465, khai quốc công thần, phò 4 đời vua Lê",
+      "mo_ta": "Danh tướng khởi nghĩa Lam Sơn, chỉ huy đội quân thiết đột tinh nhuệ. Sau chiến thắng, là đại thần trụ cột phò tá bốn đời vua Lê; năm 1460 cầm đầu việc dẹp loạn Lê Nghi Dân, lập vua Lê Thánh Tông — mở ra thời thịnh trị Hồng Đức.",
+      "dia_diem": "Đền thờ Nguyễn Xí, xã Nghi Hợp, huyện Nghi Lộc, Nghệ An (di tích quốc gia)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ (Nguyễn Xí dẹp loạn Nghi Dân, lập Lê Thánh Tông 1460)"
+      ]
+    },
+    {
+      "id": "le-khoi",
+      "ten": "Lê Khôi",
+      "lon": 105.9223,
+      "lat": 18.3805,
+      "loai": "danh-tuong",
+      "nam_hien_thi": "?–1446, Chiêu Trưng Đại Vương",
+      "mo_ta": "Cháu gọi Lê Lợi bằng chú, khai quốc công thần khởi nghĩa Lam Sơn, văn võ song toàn. Làm Tổng trấn Hoan Châu (Nghệ – Tĩnh), nổi tiếng thanh liêm, thương dân; mất khi đi đánh Chiêm Thành trở về, được dân lập đền thờ ở núi Nam Giới.",
+      "dia_diem": "Đền Chiêu Trưng, cửa Sót, huyện Thạch Hà, Hà Tĩnh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư; Đại Nam nhất thống chí (Lê Khôi, đền Chiêu Trưng)"
+      ]
+    },
+    {
+      "id": "bui-thi-xuan",
+      "ten": "Bùi Thị Xuân",
+      "lon": 108.9333,
+      "lat": 13.9523,
+      "loai": "danh-tuong",
+      "nam_hien_thi": "?–1802, nữ tướng Tây Sơn",
+      "mo_ta": "Nữ tướng lừng danh nhà Tây Sơn, vợ Thái phó Trần Quang Diệu, giỏi luyện voi chiến và chỉ huy tượng binh. Tham gia nhiều trận đánh lớn; khi Tây Sơn suy vong vẫn dẫn quân quyết chiến ở Trấn Ninh (1802). Bị bắt và hy sinh, nêu gương khí tiết bất khuất.",
+      "dia_diem": "Bảo tàng Quang Trung, huyện Tây Sơn, Bình Định",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Nam liệt truyện — Ngụy Tây (Bùi Thị Xuân, trận Trấn Ninh 1802)"
+      ]
+    },
+    {
+      "id": "da-tuong",
+      "ten": "Dã Tượng",
+      "lon": 106.3312,
+      "lat": 20.9401,
+      "loai": "danh-tuong",
+      "nam_hien_thi": "thế kỷ 13, gia tướng Hưng Đạo Vương",
+      "mo_ta": "Gia tướng thân tín của Hưng Đạo Đại Vương Trần Quốc Tuấn, cùng Yết Kiêu lập nhiều công lớn trong hai cuộc kháng chiến chống Nguyên–Mông. Nổi tiếng trung nghĩa, được sử sách ngợi ca là tấm gương tôi trung của tướng lĩnh nhà Trần.",
+      "dia_diem": "Đền thờ vùng Hải Dương (gắn với Yết Kiêu – Dã Tượng)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ (Yết Kiêu, Dã Tượng — gia tướng Hưng Đạo Vương)"
+      ]
+    },
+    {
+      "id": "tran-quang-khai",
+      "ten": "Trần Quang Khải",
+      "lon": 106.15,
+      "lat": 20.95,
+      "loai": "khang-nguyen-tran",
+      "nam_hien_thi": "1241–1294",
+      "mo_ta": "Thái sư Thượng tướng quân, con thứ ba vua Trần Thái Tông. Chỉ huy trận Chương Dương (1285) đại thắng quân Nguyên, mở đường thu phục Thăng Long. Cũng là nhà thơ, tác giả tập «Lạc Đạo».",
+      "dia_diem": "Đình Trần Xá, thôn Trần Xá, xã Nam Hưng, huyện Nam Sách, TP Hải Phòng (trước sáp nhập: Hải Dương) — di tích cấp tỉnh (2007)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hải Phòng — «Nơi thờ danh tướng Trần Quang Khải ở Trần Xá trang xưa» — https://baohaiphong.vn/di-tich/noi-tho-danh-tuong-tran-quang-khai-o-tran-xa-trang-xua-199071"
+      ]
+    },
+    {
+      "id": "tran-nhat-duat",
+      "ten": "Trần Nhật Duật",
+      "lon": 105.72,
+      "lat": 19.7,
+      "loai": "khang-nguyen-tran",
+      "nam_hien_thi": "1255–1330",
+      "mo_ta": "Chiêu Văn Vương, hoàng tử thứ sáu vua Trần Thái Tông, giỏi ngoại giao và nhiều thứ tiếng. Lập phòng tuyến núi Văn Trinh chặn quân Toa Đô trong kháng chiến chống Nguyên lần hai (1285), sau làm Tri phủ Thanh Hoá.",
+      "dia_diem": "Đền thờ Chiêu Văn Vương Trần Nhật Duật, núi Văn Trinh, xã Quảng Hợp, huyện Quảng Xương, tỉnh Thanh Hoá",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cổng TTĐT tỉnh Thanh Hoá — «Về thăm đền thờ Chiêu Văn Vương Trần Nhật Duật, nghe hát nhà trò Văn Trinh» — https://nganhang.thanhhoa.gov.vn/portal/Pages/2020-12-1/Ve-tham-den-tho-Chieu-Van-Vuong-Tran-Nhat-Duat-nghom5k9d.aspx"
+      ]
+    },
+    {
+      "id": "tran-khanh-du",
+      "ten": "Trần Khánh Dư",
+      "lon": 107.65,
+      "lat": 20.95,
+      "loai": "khang-nguyen-tran",
+      "nam_hien_thi": "?–1339",
+      "mo_ta": "Nhân Huệ Vương, tướng nhà Trần. Lập công lớn trong trận Vân Đồn (1288), đánh chìm đoàn thuyền lương của Trương Văn Hổ, góp phần quyết định cho đại thắng Bạch Đằng sau đó.",
+      "dia_diem": "Nghè thờ Trần Khánh Dư, thôn Thái Hoà, xã Quan Lạn, huyện Vân Đồn, tỉnh Quảng Ninh — trong cụm di tích quốc gia (1990)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Quảng Ninh — «Nghè thờ Trần Khánh Dư trên đảo Quan Lạn» — https://baoquangninh.vn/nghe-tho-tran-khanh-du-tren-dao-quan-lan-3243721.html"
+      ]
+    },
+    {
+      "id": "do-khac-chung",
+      "ten": "Đỗ Khắc Chung",
+      "lon": 105.44,
+      "lat": 21.43,
+      "loai": "khang-nguyen-tran",
+      "nam_hien_thi": "?–1330",
+      "mo_ta": "Danh thần nhà Trần (sau đổi tên Đỗ Vĩ), nổi tiếng tài ngoại giao khi vào trại giặc thương thuyết với Ô Mã Nhi trong kháng chiến chống Nguyên lần hai (1285), khiến địch phải nể phục. Từng mở trường dạy học tại quê trước khi làm quan tới chức Đại Hành khiển, Thiếu Bảo.",
+      "dia_diem": "Đền thờ Đỗ Khắc Chung, làng Quan Tử, xã Sơn Đông (trước sáp nhập: huyện Lập Thạch, tỉnh Vĩnh Phúc; nay tỉnh Phú Thọ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "TTXVN/VietnamPlus — «Bảo tồn và phát huy giá trị di sản văn hoá về danh nhân Đỗ Khắc Chung» — https://www.vietnamplus.vn/bao-ton-va-phat-huy-gia-tri-di-san-van-hoa-ve-danh-nhan-do-khac-chung-post1074537.vnp"
+      ]
+    },
+    {
+      "id": "nguyen-chich",
+      "ten": "Nguyễn Chích",
+      "lon": 105.75,
+      "lat": 19.75,
+      "loai": "lam-son-le",
+      "nam_hien_thi": "1382–1448",
+      "mo_ta": "Tướng khởi nghĩa Lam Sơn, đề xuất chiến lược tiến quân vào Nghệ An (1424) làm bàn đạp — bước ngoặt xoay chuyển cục diện cuộc kháng chiến chống Minh, được Nguyễn Trãi và sử sách đánh giá là kế sách then chốt dẫn tới thắng lợi 1427.",
+      "dia_diem": "Đền thờ – bia mộ Nguyễn Chích, tỉnh Thanh Hoá (địa chỉ xã/huyện cụ thể chưa xác minh được qua nguồn đã fetch)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cổng Di sản văn hoá Thanh Hoá — «Đền thờ – bia mộ Nguyễn Chích» — https://disanvanhoath.vn/Den-tho-bia-mo-Nguyen-Chich-ds",
+        "Bộ VHTTDL — «Bộ VHTTDL cho ý kiến về dự án tu bổ, phục hồi di tích đền thờ, bia mộ Nguyễn Chích, tỉnh Thanh Hoá» — https://bvhttdl.gov.vn/Pages/chi-tiet.aspx?url=/bo-vhttdl-cho-y-kien-ve-du-an-tu-bo-phuc-hoi-di-tich-den-tho-bia-mo-nguyen-chich-tinh-thanh-hoa-20210531101336553.htm"
+      ]
+    },
+    {
+      "id": "luu-nhan-chu",
+      "ten": "Lưu Nhân Chú",
+      "lon": 105.58,
+      "lat": 21.7,
+      "loai": "lam-son-le",
+      "nam_hien_thi": "?–1433",
+      "mo_ta": "Tướng khởi nghĩa Lam Sơn quê Thái Nguyên, có công lớn trong nhiều trận đánh góp phần vào thắng lợi chống Minh (1418–1427). Khu di tích núi Văn – núi Võ nơi thờ ông được công nhận Di tích lịch sử cấp Quốc gia năm 1981.",
+      "dia_diem": "Đền thờ Tướng quân Lưu Nhân Chú, chân núi Văn – núi Võ, xã Văn Yên, huyện Đại Từ, tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thái Nguyên — «Trên 400 triệu đồng tu sửa Đền thờ Tướng quân Lưu Nhân Chú» — https://baothainguyen.vn/van-hoa/202301/tren-400-trieu-dong-tu-sua-den-tho-tuong-quan-luu-nhan-chu-1f53ed6/"
+      ]
+    },
+    {
+      "id": "dinh-le",
+      "ten": "Đinh Lễ",
+      "lon": 105.41,
+      "lat": 19.99,
+      "loai": "lam-son-le",
+      "nam_hien_thi": "?–1427",
+      "mo_ta": "Cháu ruột Lê Lợi, tham gia khởi nghĩa Lam Sơn từ những ngày đầu. Lập nhiều chiến công: đánh Đa Căng (1424), cướp 300 thuyền lương quân Minh ở Diễn Châu (1425), phá giặc ở Tốt Động – Chúc Động (1426). Xếp thứ 2/136 khai quốc công thần, phong Đình Thượng Hầu.",
+      "dia_diem": "Quê gốc vùng Mỹ Lâm (nay xã Minh Tiến), huyện Ngọc Lặc, tỉnh Thanh Hoá — hiện có một số nơi lập đền thờ tại Thanh Hoá",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thanh Hoá — «Tam quốc công Đinh Lễ, Đinh Bồ, Đinh Liệt — những người con ưu tú của xứ Thanh» — https://vhds.baothanhhoa.vn/tam-quoc-cong-dinh-le-dinh-bo-dinh-liet-nhung-nguoi-con-uu-tu-cua-xu-thanh-20896.htm"
+      ]
+    },
+    {
+      "id": "dinh-liet",
+      "ten": "Đinh Liệt",
+      "lon": 105.42,
+      "lat": 19.98,
+      "loai": "lam-son-le",
+      "nam_hien_thi": "?–1471",
+      "mo_ta": "Em Đinh Lễ, khai quốc công thần Lam Sơn, tiếp tục phò tá các đời vua Lê sau khi giành độc lập, giữ nhiều trọng trách tới thời Lê Thánh Tông. Cùng anh trai được xem là hai trong «Tam quốc công» họ Đinh xứ Thanh.",
+      "dia_diem": "Quê gốc vùng Mỹ Lâm (nay xã Minh Tiến), huyện Ngọc Lặc, tỉnh Thanh Hoá — hiện có một số nơi lập đền thờ tại Thanh Hoá",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thanh Hoá — «Tam quốc công Đinh Lễ, Đinh Bồ, Đinh Liệt — những người con ưu tú của xứ Thanh» — https://vhds.baothanhhoa.vn/tam-quoc-cong-dinh-le-dinh-bo-dinh-liet-nhung-nguoi-con-uu-tu-cua-xu-thanh-20896.htm"
+      ]
+    },
+    {
+      "id": "dang-tat",
+      "ten": "Đặng Tất",
+      "lon": 105.76,
+      "lat": 18.53,
+      "loai": "hau-tran-khang-minh",
+      "nam_hien_thi": "?–1409",
+      "mo_ta": "Danh tướng nhà Hậu Trần, dấy binh cùng con trai Đặng Dung chống quân Minh xâm lược đầu thế kỷ 15. Được vua Lê Thái Tổ truy tặng đại tự ghi nhận công lao chống ngoại xâm.",
+      "dia_diem": "Đền thờ Đặng Tất – Đặng Dung, xã Tùng Lộc, huyện Can Lộc, tỉnh Hà Tĩnh — di tích quốc gia",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Hà Tĩnh — «Chủ tịch UBND tỉnh cắt băng khánh thành trùng tu Đền thờ Đặng Tất, Đặng Dung» — https://baohatinh.vn/chu-tich-ubnd-tinh-cat-bang-khanh-thanh-trung-tu-den-tho-dang-tat-dang-dung-post149630.html"
+      ]
+    },
+    {
+      "id": "dang-dung",
+      "ten": "Đặng Dung",
+      "lon": 105.77,
+      "lat": 18.54,
+      "loai": "hau-tran-khang-minh",
+      "nam_hien_thi": "?–1414",
+      "mo_ta": "Con trai Đặng Tất, được vua Trùng Quang phong Bình Chương quốc sư, trải hàng chục trận đánh quân Minh (1409–1413). Khi sa vào tay giặc năm 1414, ông nhảy xuống sông tuẫn tiết. Tác giả bài thơ nổi tiếng «Cảm hoài».",
+      "dia_diem": "Đền thờ Đặng Tất – Đặng Dung, xã Tùng Lộc, huyện Can Lộc, tỉnh Hà Tĩnh — di tích quốc gia",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Hà Tĩnh — «Chủ tịch UBND tỉnh cắt băng khánh thành trùng tu Đền thờ Đặng Tất, Đặng Dung» — https://baohatinh.vn/chu-tich-ubnd-tinh-cat-bang-khanh-thanh-trung-tu-den-tho-dang-tat-dang-dung-post149630.html"
+      ]
+    },
+    {
+      "id": "tran-quang-dieu",
+      "ten": "Trần Quang Diệu",
+      "lon": 108.935,
+      "lat": 13.928,
+      "loai": "tay-son",
+      "nam_hien_thi": "?–1802",
+      "mo_ta": "Thái phó, một trong những danh tướng trụ cột của nhà Tây Sơn, được sử sách ghi nhận vừa tài thao lược vừa nhân đức. Chồng nữ tướng Bùi Thị Xuân, tham gia nhiều chiến dịch quan trọng của phong trào Tây Sơn.",
+      "dia_diem": "Bảo tàng Quang Trung / Đền thờ Tây Sơn Tam Kiệt, khối 1A, thị trấn Phú Phong, huyện Tây Sơn, tỉnh Bình Định (nay Gia Lai) — nơi tưởng niệm, không phải quê quán xác định (còn tranh cãi trong sử liệu)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — «Thái phó Trần Quang Diệu — danh tướng nhân đức của triều Tây Sơn» — https://baotanglichsu.vn/vi/Articles/3098/14973/thai-pho-tran-quang-dieu-danh-tuong-nhan-djuc-cua-trieu-tay-son.html"
+      ]
+    },
+    {
+      "id": "ngo-van-so",
+      "ten": "Ngô Văn Sở",
+      "lon": 108.938,
+      "lat": 13.925,
+      "loai": "tay-son",
+      "nam_hien_thi": "?–1795",
+      "mo_ta": "Đại Tư mã nhà Tây Sơn, một trong «tứ trụ» dưới thời Quang Trung, đảm trách phòng thủ Bắc Hà, có công trong việc chuẩn bị và phối hợp chiến dịch đại phá quân Thanh Tết Kỷ Dậu (1789).",
+      "dia_diem": "Di tích Đền thờ Tây Sơn Tam Kiệt, thị trấn Phú Phong, huyện Tây Sơn, tỉnh Bình Định (nay Gia Lai)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Di sản Văn hoá — Di tích Đền thờ Tây Sơn Tam Kiệt, thị trấn Phú Phong, huyện Tây Sơn, tỉnh Bình Định — https://dsvh.gov.vn",
+        "Báo Quân đội nhân dân — «Danh tướng quân sự, ngoại giao tài ba của nhà Tây Sơn» — https://sknc.qdnd.vn"
+      ]
+    },
+    {
+      "id": "vu-van-dung",
+      "ten": "Vũ Văn Dũng",
+      "lon": 108.9,
+      "lat": 13.87,
+      "loai": "tay-son",
+      "nam_hien_thi": "?–1802",
+      "mo_ta": "Đại Tư đồ nhà Tây Sơn, tham gia từ buổi đầu khởi nghĩa (1771), góp công đánh tan hơn 5 vạn liên quân Xiêm–Nguyễn ở Rạch Gầm – Xoài Mút (1785) và chiến dịch Ngọc Hồi – Đống Đa (1789); sau đó đảm nhiệm vai trò ngoại giao và tiếp tục chỉ huy quân Tây Sơn tới 1801.",
+      "dia_diem": "Đền thờ Đại tư đồ Võ Văn Dũng, thôn Phú Lâm, xã Tây Phú, huyện Tây Sơn, tỉnh Bình Định (nay Gia Lai) — khánh thành 2023",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thanh Niên — «Bình Định: Khánh thành đền thờ Đại tư đồ Võ Văn Dũng» — https://thanhnien.vn/binh-dinh-khanh-thanh-den-tho-dai-tu-do-vo-van-dung-1851542651.htm"
+      ]
+    },
+    {
+      "id": "man-thien",
+      "ten": "Man Thiện (Trần Thị Đoan)",
+      "lon": 105.4526,
+      "lat": 21.1608,
+      "loai": "thu-linh",
+      "nam_hien_thi": "?–40 (trước khởi nghĩa)",
+      "mo_ta": "Mẹ của Hai Bà Trưng, theo thần tích là người nuôi dạy và khích lệ hai con dấy binh chống nhà Hán năm 40; nhân dân tôn làm Quốc Mẫu, lập miếu thờ tại quê nhà. Di tích Miếu Mèn – mả Dạ được xếp hạng di tích lịch sử – văn hóa cấp quốc gia năm 1990.",
+      "dia_diem": "Miếu Mèn, thôn Nam An, xã Cam Thượng, huyện Ba Vì, Hà Nội — DT lịch sử-văn hóa quốc gia (1990)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Nhịp sống Hà Nội (Hànộimới) — Miếu Mèn, mả Dạ — https://nhipsonghanoi.hanoimoi.vn/mieu-men-ma-da-628614.html"
+      ]
+    },
+    {
+      "id": "thieu-hoa-cong-chua",
+      "ten": "Thiều Hoa công chúa",
+      "lon": 105.2362,
+      "lat": 21.363,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "?–41 (thế kỷ I)",
+      "mo_ta": "Nữ tướng tiên phong của Hai Bà Trưng, quê động Lăng Sương (Thanh Thủy, Phú Thọ), giữ chức Tiên phong hữu tướng rồi được phong Đông cung Công chúa sau khởi nghĩa năm 40. Nhân dân Hiền Quan lập đền, lăng thờ, tôn là Đức thánh mẫu Đệ nhất Đại Vương; hội làng mở ngày 12–13 tháng Giêng âm lịch.",
+      "dia_diem": "Đền/lăng Thiều Hoa, xã Hiền Quan, huyện Tam Nông, tỉnh Phú Thọ",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Kể chuyện làng: Đền thờ nữ tướng Thiều Hoa vang tiếng vọng ngàn xưa — https://danviet.vn/ke-chuyen-lang-den-tho-nu-tuong-thieu-hoa-vang-tieng-vong-ngan-xua-20220517231309133-d1019789.html"
+      ]
+    },
+    {
+      "id": "xuan-nuong-cong-chua",
+      "ten": "Xuân Nương công chúa",
+      "lon": 105.2459,
+      "lat": 21.3668,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "?–42/43 (thế kỷ I)",
+      "mo_ta": "Con gái thủ lĩnh Hùng Sát vùng Đại Man, tập hợp hơn 1.000 quân ở Tuế Phong (nay Tam Nông, Phú Thọ) theo Hai Bà Trưng đánh đuổi Tô Định; được phong Đông cung công chúa, giữ chức Thị nội tham tán quân cơ. Miếu Bà tại Hương Nha thờ bà, lễ hội mở từ mùng 2 đến 11 tháng Giêng âm lịch.",
+      "dia_diem": "Miếu Bà (miếu Hạ), thôn Hạ, xã Hương Nha, huyện Tam Nông, tỉnh Phú Thọ",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Tạp chí Văn hóa Nghệ thuật — Tín ngưỡng thờ Xuân Nương ở Hương Nha, Phú Thọ — https://vanhoanghethuat.vn/tin-nguong-tho-xuan-nuong-o-huong-nha-phu-tho-77749338.html",
+        "Báo Thái Nguyên — Đôi nét về những nữ tướng thời Trưng Vương (bài 3/3) — https://baothainguyen.vn/van-hoa/202106/doi-net-ve-nhung-nu-tuong-thoi-trung-vuong-bai-3-3679A6A/"
+      ]
+    },
+    {
+      "id": "ly-phuc-man",
+      "ten": "Lý Phục Man",
+      "lon": 105.7035,
+      "lat": 21.0229,
+      "loai": "bo-tuong",
+      "nam_hien_thi": "?–khoảng 547–548 (thế kỷ VI)",
+      "mo_ta": "Tướng trấn giữ biên ải phía nam dưới thời Lý Nam Đế, có công đánh lui quân Lâm Ấp; hy sinh vì nước, được vua gả công chúa và các làng vùng Đáy giang lập đền thờ. Đình Quán Giá tương truyền khởi dựng từ thế kỷ V–VI, hội lệ tổ chức ngày 10 tháng 3 âm lịch hằng năm.",
+      "dia_diem": "Đình Quán Giá, xã Yên Sở, huyện Hoài Đức, Hà Nội (toạ độ tâm huyện, chưa geocode được vị trí đình chính xác)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân trí — Chiêm ngưỡng ngôi đình nghìn năm tuổi ở Hà Nội — https://dantri.com.vn/thoi-su/chiem-nguong-ngoi-dinh-nghin-nam-tuoi-o-ha-noi-20201120230022180.htm"
+      ]
+    },
+    {
+      "id": "khuc-hao",
+      "ten": "Khúc Hạo",
+      "lon": 106.35,
+      "lat": 20.73,
+      "loai": "thu-linh",
+      "nam_hien_thi": "?–917",
+      "mo_ta": "Con Khúc Thừa Dụ, nối nghiệp cha giữ chức Tiết độ sứ tự chủ (907–917); đặt nền móng bộ máy hành chính độc lập đầu tiên (chia lộ/phủ/châu/giáp/xã, định lại thuế khóa), mở đường cho nền tự chủ dân tộc đầu thế kỷ X. Thờ chung cha con họ Khúc tại đền Cúc Bồ, di tích lịch sử cấp quốc gia (2015).",
+      "dia_diem": "Đền thờ họ Khúc, thôn Cúc Bồ (nay xã Khúc Thừa Dụ), huyện Ninh Giang, tỉnh Hải Dương — toạ độ ước lượng khu vực Ninh Giang, chưa geocode chính xác",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tin Tức (TTXVN) — Đền thờ Khúc Thừa Dụ – địa chỉ tham quan giáo dục truyền thống yêu nước — https://baotintuc.vn/van-hoa/den-tho-khuc-thua-du-dia-chi-tham-quan-giao-duc-truyen-thong-yeu-nuoc-20240212153236375.htm"
+      ]
+    },
+    {
+      "id": "khuc-thua-my",
+      "ten": "Khúc Thừa Mỹ",
+      "lon": 106.352,
+      "lat": 20.728,
+      "loai": "thu-linh",
+      "nam_hien_thi": "?–930",
+      "mo_ta": "Con Khúc Hạo, nối chức Tiết độ sứ năm 917 tiếp tục giữ nền tự chủ họ Khúc; năm 930 bị quân Nam Hán đánh bại, bắt về Quảng Châu, chấm dứt gần một thập kỷ tự chủ trước khi Dương Đình Nghệ khôi phục năm 931. Thờ chung ba đời họ Khúc tại đền Cúc Bồ, di tích lịch sử cấp quốc gia (2015).",
+      "dia_diem": "Đền thờ họ Khúc, thôn Cúc Bồ (nay xã Khúc Thừa Dụ), huyện Ninh Giang, tỉnh Hải Dương — toạ độ ước lượng khu vực Ninh Giang, chưa geocode chính xác",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tin Tức (TTXVN) — Đền thờ Khúc Thừa Dụ – địa chỉ tham quan giáo dục truyền thống yêu nước — https://baotintuc.vn/van-hoa/den-tho-khuc-thua-du-dia-chi-tham-quan-giao-duc-truyen-thong-yeu-nuoc-20240212153236375.htm"
+      ]
+    },
+    {
+      "id": "duong-dinh-nghe",
+      "ten": "Dương Đình Nghệ",
+      "lon": 105.7861,
+      "lat": 19.8389,
+      "loai": "thu-linh",
+      "nam_hien_thi": "874–937",
+      "mo_ta": "Hào trưởng Ái Châu (Thanh Hóa), năm 931 đem quân đánh đuổi quân Nam Hán chiếm lại thành Đại La, tự xưng Tiết độ sứ khôi phục nền tự chủ sau khi họ Khúc sụp đổ; bị nuôi là Kiều Công Tiễn sát hại năm 937, dẫn tới việc con rể Ngô Quyền dấy binh báo thù. Đền thờ ông xếp hạng di tích lịch sử – văn hóa cấp quốc gia năm 1996.",
+      "dia_diem": "Đền thờ Dương Đình Nghệ, làng Giàng, phường Hàm Rồng, TP Thanh Hóa, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Họ Dương Thanh Hóa — Thông báo thay đổi địa chỉ đền thờ Anh hùng dân tộc Dương Đình Nghệ — https://hoduongthanhhoa.vn/thong-bao-thay-doi-dia-chi-den-tho-anh-hung-dan-toc-duong-dinh-nghe-binh-vuong-duong-tam-kha/"
+      ]
+    },
+    {
+      "id": "le-thi-hoa",
+      "ten": "Lê Thị Hoa",
+      "lon": 105.9822,
+      "lat": 20.0042,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "?–43 (thế kỷ I)",
+      "mo_ta": "Nữ tướng hưởng ứng khởi nghĩa Hai Bà Trưng, có công khai khẩn lập nên vùng đất nay là xã Nga Thiện, huyện Nga Sơn, Thanh Hóa; theo địa phương, sau khi Hai Bà tuẫn tiết bà tiếp tục cầm quân chống quân Mã Viện. Đền thờ bà tại quê nhà được nhân dân gìn giữ qua nhiều thế hệ.",
+      "dia_diem": "Đền thờ Lê Thị Hoa, xã Nga Thiện, huyện Nga Sơn, tỉnh Thanh Hóa — toạ độ tâm huyện, chưa geocode chính xác vị trí đền",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Hóa (Văn hóa & Đời sống) — Thăm ngôi đền thờ nữ tướng giàu lòng yêu nước, thương dân — https://vhds.baothanhhoa.vn/tham-ngoi-den-tho-nu-tuong-giau-long-yeu-nuoc-thuong-dan-20316.htm"
+      ]
+    },
+    {
+      "id": "vinh-hoa-cong-chua",
+      "ten": "Vĩnh Hoa công chúa (Tống Vĩnh Huy)",
+      "lon": 105.62,
+      "lat": 21.28,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "thế kỷ I",
+      "mo_ta": "Quê Tiên Nha (Phú Thọ), dấy binh hưởng ứng Hai Bà Trưng, được phong Vĩnh Hoa công chúa giữ chức Nội thị tướng quân, từng tham gia đánh quân Ngô Hán. Được thờ tại đình Nghênh Tiên, theo thần tích địa phương.",
+      "dia_diem": "Đình Nghênh Tiên, xã Nguyệt Đức, huyện Yên Lạc, tỉnh Vĩnh Phúc — toạ độ ước lượng khu vực xã, chưa geocode chính xác",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên — Đôi nét về những nữ tướng thời Trưng Vương (bài 3/3) — https://baothainguyen.vn/van-hoa/202106/doi-net-ve-nhung-nu-tuong-thoi-trung-vuong-bai-3-3679A6A/"
+      ]
+    },
+    {
+      "id": "le-ngoc-trinh",
+      "ten": "Ngọc Trinh công chúa (Lê Ngọc Trinh)",
+      "lon": 105.55,
+      "lat": 21.3,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "thế kỷ I",
+      "mo_ta": "Dựng cờ khởi nghĩa ở xã Đàm Luân (nay Lũng Hòa, Vĩnh Tường, Vĩnh Phúc), được suy tôn chủ soái rồi theo Hai Bà Trưng giữ chức Tả tướng quân, phong Ngọc Phượng công chúa, kiên cường chống quân Mã Viện. Cụm di tích Miếu Ngòi cùng ba đình Đông – Trung – Nam tại quê nhà thờ bà, đã xếp hạng di tích lịch sử – văn hóa cấp quốc gia.",
+      "dia_diem": "Miếu Ngòi, xã Lũng Hòa, huyện Vĩnh Tường, tỉnh Vĩnh Phúc — toạ độ ước lượng khu vực xã, chưa geocode chính xác",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên — Đôi nét về những nữ tướng thời Trưng Vương (bài 3/3) — https://baothainguyen.vn/van-hoa/202106/doi-net-ve-nhung-nu-tuong-thoi-trung-vuong-bai-3-3679A6A/"
+      ]
+    },
+    {
+      "id": "ho-de",
+      "ten": "Hồ Đề",
+      "lon": 105.741,
+      "lat": 21.1491,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "thế kỷ I",
+      "mo_ta": "Nữ tướng quê động Lão Mai, Thiên Sớ (Thái Nguyên), cùng nhân dân phất cờ khởi nghĩa hưởng ứng Hai Bà Trưng, được phong Trấn Viễn đại tướng quân, giữ vai trò Phó nguyên soái. Lễ hội đền Hồ Đề tổ chức mùng 1 tháng 2 âm lịch hằng năm tại quê hương thờ bà.",
+      "dia_diem": "Đền Hồ Đề, thôn Đông Cao, xã Tráng Việt, huyện Mê Linh, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên — Đôi nét về những nữ tướng thời Trưng Vương (bài 3/3) — https://baothainguyen.vn/van-hoa/202106/doi-net-ve-nhung-nu-tuong-thoi-trung-vuong-bai-3-3679A6A/",
+        "Báo Mới — Lễ hội đền Hồ Đề tưởng nhớ nữ tướng kiệt xuất thời Hai Bà Trưng — https://baomoi.com/le-hoi-den-ho-de-tuong-nho-nu-tuong-kiet-xuat-thoi-hai-ba-trung-c51597906.epi"
+      ]
+    },
+    {
+      "id": "quy-lan-cong-chua",
+      "ten": "Quý Lan công chúa",
+      "lon": 105.42,
+      "lat": 21.42,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "thế kỷ I",
+      "mo_ta": "Dấy binh khởi nghĩa ở Lũng Động, Chí Linh (Hải Dương), được Trưng Vương phong An Bình công chúa, giữ chức Nội thị tướng quân bên cạnh Hai Bà. Đền thờ bà hiện ở Liễu Sơn, huyện Lập Thạch, tỉnh Vĩnh Phúc, được nhân dân gìn giữ qua nhiều thế hệ.",
+      "dia_diem": "Đền Quý Lan, xã Liễu Sơn, huyện Lập Thạch, tỉnh Vĩnh Phúc — toạ độ ước lượng khu vực xã, chưa geocode chính xác",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Người Kể Sử — Các nữ tướng thời Hai Bà Trưng — https://nguoikesu.com/dong-lich-su/trung-nu-vuong/hai-ba-trung"
+      ]
+    },
+    {
+      "id": "tam-nuong-quat-luu",
+      "ten": "Ba chị em Đạm Nương – Hồng Nương – Thanh Nương",
+      "lon": 105.58,
+      "lat": 21.32,
+      "loai": "nu-tuong",
+      "nam_hien_thi": "thế kỷ I",
+      "mo_ta": "Ba chị em quê Quất Lưu (Bình Xuyên, Vĩnh Phúc) dấy binh hưởng ứng Hai Bà Trưng, chỉ huy đội kỵ binh Lĩnh Nam; Trưng Vương phong Đạm Nương làm Tả đạo tướng quân, Hồng Nương và Thanh Nương làm phó tướng. Đình Quất Lưu (dựng thời Hậu Lê, thế kỷ XVII) thờ Tam Nương, xếp hạng di tích lịch sử – văn hóa cấp quốc gia năm 1996.",
+      "dia_diem": "Đình Quất Lưu, xã Quất Lưu, huyện Bình Xuyên, tỉnh Vĩnh Phúc — toạ độ ước lượng khu vực xã, chưa geocode chính xác",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Di tích lịch sử văn hóa Việt Nam — Đình Quất Lưu — https://ditichlichsuvanhoa.com/dttc/DINH-QUAT-LUU-a1064.html"
+      ]
+    },
+    {
+      "id": "hai-ba-trung",
+      "ten": "Hai Bà Trưng (Trưng Trắc – Trưng Nhị)",
+      "lon": 105.7333,
+      "lat": 21.1561,
+      "loai": "khoi-nghia",
+      "thoi_ky": "Khởi nghĩa 40–43 — chống Đông Hán",
+      "noi_tho": "Đền Hai Bà Trưng, thôn Hạ Lôi, xã Mê Linh, Hà Nội (DTQG đặc biệt)",
+      "cong_trang": "Phất cờ khởi nghĩa năm 40 ở Mê Linh chống ách đô hộ nhà Đông Hán (Thái thú Tô Định), giành 65 thành, Trưng Trắc xưng vương đóng đô Mê Linh — chính quyền độc lập đầu tiên sau khi mất nước. Thất bại trước Mã Viện năm 43, hai Bà gieo mình xuống sông Hát.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ Trưng Nữ Vương",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Di tích Quốc gia đặc biệt Đền Hai Bà Trưng, Mê Linh",
+        "Sở Văn hoá & Thể thao Hà Nội (sovhtt.hanoi.gov.vn)"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "ba-trieu",
+      "ten": "Bà Triệu (Triệu Thị Trinh)",
+      "lon": 105.8188,
+      "lat": 19.9308,
+      "loai": "khoi-nghia",
+      "thoi_ky": "Khởi nghĩa năm 248 — chống Đông Ngô",
+      "noi_tho": "Đền Bà Triệu, làng Phú Điền, xã Triệu Lộc, Hậu Lộc, Thanh Hoá (DTQG đặc biệt)",
+      "cong_trang": "Lãnh đạo khởi nghĩa ở Cửu Chân (Thanh Hoá) năm 248 chống quân Đông Ngô, cưỡi voi ra trận. Danh ngôn: «Tôi muốn cưỡi cơn gió mạnh, đạp luồng sóng dữ, chém cá kình ở Biển Đông… đâu chịu khom lưng làm tì thiếp người ta».",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ thuộc Ngô; Đại Nam Nhất Thống Chí (Thanh Hoá)",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Khu di tích Bà Triệu, DTQG đặc biệt (QĐ 2408/QĐ-TTg ngày 31/12/2014)"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "ly-nam-de",
+      "ten": "Lý Nam Đế (Lý Bí)",
+      "lon": 105.7569,
+      "lat": 21.4518,
+      "loai": "khoi-nghia",
+      "thoi_ky": "Khởi nghĩa 542 — lập nước Vạn Xuân 544",
+      "noi_tho": "Đền thờ Lý Nam Đế (Đền Mục), phường Tiên Phong, TP Phổ Yên, Thái Nguyên",
+      "cong_trang": "Đánh đuổi thứ sử Tiêu Tư nhà Lương (542), lập nước Vạn Xuân năm 544 — nhà nước độc lập có QUỐC HIỆU và NIÊN HIỆU riêng (Thiên Đức), xưng Lý Nam Đế, dựng chùa Khai Quốc và điện Vạn Thọ.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Tiền Lý",
+        "Cổng TTĐT TP Phổ Yên (phoyen.thainguyen.gov.vn) — Đền thờ Lý Nam Đế (Đền Mục), phường Tiên Phong",
+        "Bộ Văn hoá, Thể thao và Du lịch (bvhttdl.gov.vn)"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "trieu-viet-vuong",
+      "ten": "Triệu Việt Vương (Triệu Quang Phục)",
+      "lon": 105.978,
+      "lat": 20.8623,
+      "loai": "khoi-nghia",
+      "thoi_ky": "~548–571 — kháng quân Lương",
+      "noi_tho": "Đền thờ Triệu Việt Vương, xã Triệu Việt Vương (khu vực Dạ Trạch cũ), Hưng Yên",
+      "cong_trang": "Kế tục Lý Nam Đế, lui về đầm Dạ Trạch dùng chiến thuật du kích («Dạ Trạch Vương») đánh bại quân Lương, giành lại nền độc lập cho Vạn Xuân khoảng năm 550.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Tiền Lý",
+        "Lĩnh Nam Chích Quái — Truyện Đầm Nhất Dạ (Dạ Trạch)",
+        "Cổng TTĐT xã Triệu Việt Vương, tỉnh Hưng Yên (trieuvietvuong.hungyen.gov.vn)"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "mai-hac-de",
+      "ten": "Mai Hắc Đế (Mai Thúc Loan)",
+      "lon": 105.4596,
+      "lat": 18.7197,
+      "loai": "khoi-nghia",
+      "thoi_ky": "Khởi nghĩa 713–722 — chống nhà Đường",
+      "noi_tho": "Đền thờ & lăng Vua Mai, chân núi Đụn, Nam Đàn, Nghệ An (DTQG đặc biệt)",
+      "cong_trang": "Lãnh đạo khởi nghĩa ở Hoan Châu (Nghệ An) chống ách nhà Đường, xưng đế (Mai Hắc Đế — «Vua Đen»), xây thành Vạn An, liên kết Chăm-pa và Chân Lạp. Biểu tượng phản kháng của xứ Nghệ.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ thuộc Đường; Việt Điện U Linh",
+        "Ban Quản lý di tích tỉnh Nghệ An (banquanlyditichnghean.gov.vn) — DTQG đặc biệt Đền thờ Vua Mai Hắc Đế"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bo-cai-dai-vuong",
+      "ten": "Bố Cái Đại Vương (Phùng Hưng)",
+      "lon": 105.4747,
+      "lat": 21.1542,
+      "loai": "khoi-nghia",
+      "thoi_ky": "Khởi nghĩa ~776–791 — chống nhà Đường",
+      "noi_tho": "Đền Phùng Hưng, thôn Cam Lâm, xã Đường Lâm, thị xã Sơn Tây, Hà Nội",
+      "cong_trang": "Người Đường Lâm, dấy binh chiếm phủ thành Tống Bình, đuổi đô hộ nhà Đường. Sau khi mất được dân tôn «Bố Cái Đại Vương» (cha mẹ của dân) — biểu tượng lòng dân với thủ lĩnh nghĩa.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ thuộc Đường",
+        "Việt Điện U Linh — mục Bố Cái Đại Vương",
+        "Người Hà Nội (nguoihanoi.vn) — Đền Phùng Hưng, Đường Lâm, xếp hạng di tích 1964"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngo-quyen",
+      "ten": "Ngô Quyền",
+      "lon": 105.4712,
+      "lat": 21.1503,
+      "loai": "tu-chu",
+      "thoi_ky": "Chiến thắng Bạch Đằng 938 — xưng vương 939",
+      "noi_tho": "Đền & lăng Ngô Quyền, đồi Cấm, thôn Cam Lâm, xã Đường Lâm, thị xã Sơn Tây, Hà Nội",
+      "cong_trang": "Đại thắng Bạch Đằng năm 938 (cọc ngầm, thuỷ triều) diệt quân Nam Hán, giết Hoằng Tháo — CHẤM DỨT hơn 1000 năm Bắc thuộc; xưng vương 939, đóng đô Cổ Loa, mở kỷ nguyên độc lập tự chủ. Phan Bội Châu tôn là «vua của các vua». Quê Đường Lâm.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ Ngô (Tiền Ngô Vương)",
+        "Người Hà Nội (nguoihanoi.vn) — Đền và lăng Ngô Quyền, Đường Lâm",
+        "Xem thêm sa đồ trận Bạch Đằng 938 trong dự án (bach-dang-938.json)"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khuc-thua-du",
+      "ten": "Khúc Thừa Dụ",
+      "lon": 106.32998,
+      "lat": 20.71144,
+      "loai": "tu-chu",
+      "thoi_ky": "905 — khởi đầu tự chủ họ Khúc",
+      "noi_tho": "Đền thờ Khúc Thừa Dụ, thôn Cúc Bồ, xã Kiến Quốc (Ninh Giang cũ, nay Hải Phòng)",
+      "cong_trang": "Nhân nhà Đường suy, chiếm phủ thành Tống Bình năm 905, tự xưng Tiết độ sứ được nhà Đường công nhận — MỞ ĐẦU thời kỳ tự chủ họ Khúc, đặt nền móng cho nền độc lập của Ngô Quyền sau này.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đại Việt Sử Ký Toàn Thư — Kỷ thuộc Đường (họ Khúc); An Nam Chí Lược",
+        "Cục Di sản Văn hoá (dsvh.gov.vn) — Đền thờ Khúc Thừa Dụ, Di tích Quốc gia (QĐ 2103/QĐ-BVHTTDL ngày 08/7/2014)"
+      ],
+      "trang_thai": "reviewed"
+    },
+    {
+      "ten": "Phạm Tu",
+      "lon": 105.82,
+      "lat": 20.94,
+      "loai": "anh-hung",
+      "nam_hien_thi": "the ky 6",
+      "mo_ta": "Danh tướng theo Lý Bí khởi nghĩa chống nhà Lương, lập nước Vạn Xuân năm 544; hy sinh khi chống quân Lương xâm lược trở lại. Đình thờ tại làng Thanh Liệt, huyện Thanh Trì, Hà Nội — quê hương ông.",
+      "dia_diem": "Đình Ngoại Thanh Liệt, huyện Thanh Trì, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư"
+      ],
+      "id": "pham-tu"
+    },
+    {
+      "ten": "Lê Chân",
+      "lon": 106.68,
+      "lat": 20.84,
+      "loai": "anh-hung",
+      "nam_hien_thi": "the ky 1",
+      "mo_ta": "Nữ tướng theo Hai Bà Trưng khởi nghĩa năm 40, có công khai khẩn lập ra vùng đất nay là thành phố Hải Phòng. Đền Nghè (Hải Phòng) thờ bà, tên bà được đặt cho một quận của thành phố.",
+      "dia_diem": "Đền Nghè, quận Lê Chân, thành phố Hải Phòng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư"
+      ],
+      "id": "le-chan"
+    },
+    {
+      "ten": "Phùng Thị Chính",
+      "lon": 105.75,
+      "lat": 21.15,
+      "loai": "anh-hung",
+      "nam_hien_thi": "the ky 1",
+      "mo_ta": "Nữ tướng theo Hai Bà Trưng khởi nghĩa năm 40, tương truyền vừa sinh con vừa xông pha trận mạc. Được thờ tại một số đình đền vùng Mê Linh, Hà Nội — trung tâm cuộc khởi nghĩa.",
+      "dia_diem": "Đền thờ vùng Mê Linh, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư"
+      ],
+      "id": "phung-thi-chinh"
+    },
+    {
+      "ten": "Đô Dương",
+      "lon": 105.78,
+      "lat": 19.8,
+      "loai": "anh-hung",
+      "nam_hien_thi": "the ky 1",
+      "mo_ta": "Tướng lĩnh vùng Cửu Chân, tiếp tục cầm quân chống quân Hán do Mã Viện chỉ huy sau khi Hai Bà Trưng thất thủ ở Mê Linh (43 SCN), là cứ điểm kháng cự cuối cùng của cuộc khởi nghĩa.",
+      "dia_diem": "Vùng Cửu Chân xưa, nay thuộc tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư"
+      ],
+      "id": "do-duong"
+    },
+    {
+      "ten": "Đỗ Cảnh Thạc",
+      "lon": 105.77,
+      "lat": 20.83,
+      "loai": "anh-hung",
+      "nam_hien_thi": "the ky 10",
+      "mo_ta": "Tướng thời Ngô Quyền, sau là một sứ quân thời loạn 12 sứ quân, cát cứ vùng Đỗ Động Giang. Đền thờ tại vùng huyện Thanh Oai, Hà Nội — nơi ông trấn giữ.",
+      "dia_diem": "Đền thờ Đỗ Cảnh Thạc, huyện Thanh Oai, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư"
+      ],
+      "id": "do-canh-thac"
+    },
+    {
+      "ten": "Triệu Túc",
+      "lon": 105.67,
+      "lat": 21.1,
+      "loai": "anh-hung",
+      "nam_hien_thi": "the ky 6",
+      "mo_ta": "Hào trưởng Chu Diên, cùng con trai Triệu Quang Phục theo Lý Bí khởi nghĩa chống nhà Lương, góp công lớn dựng nước Vạn Xuân năm 544.",
+      "dia_diem": "Vùng Chu Diên xưa, nay thuộc huyện Đan Phượng, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư"
+      ],
+      "id": "trieu-tuc"
+    },
+    {
+      "ten": "Lữ Gia",
+      "lon": 105.9,
+      "lat": 20.9,
+      "loai": "anh-hung",
+      "nam_hien_thi": "111 TCN",
+      "mo_ta": "Thừa tướng nước Nam Việt trải ba đời vua, lãnh đạo kháng cự quân Hán xâm lược năm 111 TCN trước khi nước ta bước vào thời Bắc thuộc. Được thờ tại nhiều đình làng vùng đồng bằng Bắc Bộ.",
+      "dia_diem": "Đình thờ Lữ Gia, vùng Khoái Châu, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư"
+      ],
+      "id": "lu-gia"
     }
   ]
 }
