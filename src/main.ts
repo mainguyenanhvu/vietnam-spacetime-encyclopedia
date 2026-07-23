@@ -1299,7 +1299,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "chien-dich-tran-danh",
-    label: "⚔️ Chiến dịch · trận đánh · khởi nghĩa (938–1975)",
+    label: "⚔️ Chiến dịch · Trận đánh · Khởi nghĩa (938–1988)",
     icon: "⚔️",
     file: "data/overlays/chien-dich-tran-danh.json",
     circleColor: [
@@ -1385,37 +1385,6 @@ const OVERLAYS: OverlayConf[] = [
           ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ quê/đền thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
           : "";
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">Khoa ${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "khoi-nghia-khang-chien",
-    label: "🔥 Khởi nghĩa & kháng chiến (chống Pháp–Mỹ · cận-hiện đại)",
-    icon: "🔥",
-    file: "data/overlays/khoi-nghia-khang-chien.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "trung-dai", "#b45309",
-      "chong-phap", "#dc2626",
-      "cach-mang", "#b91c1c",
-      "chong-my", "#ca8a04",
-      "#dc2626",
-    ],
-    nguon:
-      "Báo QĐND (qdnd.vn) · Bảo tàng Lịch sử Quốc gia · Cục Di sản Văn hoá · Báo điện tử Đảng CSVN · Báo Nhân Dân",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        nam_hien_thi?: string;
-        ket_qua?: string;
-        chi_huy?: string;
-        dia_diem?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ địa điểm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}${o.chi_huy ? " · " + esc(o.chi_huy) : ""}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.ket_qua ? `<br/><span style="color:#57534e">${esc(o.ket_qua)}</span>` : ""}${tc}`;
     },
   },
   {
@@ -1506,37 +1475,6 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "chien-dich-tran-danh-bo-sung",
-    label: "⚔️ Chiến dịch · trận đánh (bổ sung, mọi thời đại)",
-    icon: "⚔️",
-    file: "data/overlays/chien-dich-tran-danh-bo-sung.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "giu-nuoc", "#15803d",
-      "khang-phap", "#b45309",
-      "khang-my", "#dc2626",
-      "bao-ve-bien-gioi", "#7c3aed",
-      "#dc2626",
-    ],
-    nguon:
-      "Báo Quân đội Nhân dân · Bảo tàng Lịch sử Quốc gia · Báo Nhân Dân · Báo Hải quân Việt Nam",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        nam?: string | number;
-        nam_hien_thi?: string;
-        mo_ta?: string;
-        dia_diem?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
-    },
-  },
-  {
     id: "vua-hoang-de",
     label: "👑 Vua · Chúa · Hoàng tộc",
     icon: "👑",
@@ -1555,16 +1493,6 @@ const OVERLAYS: OverlayConf[] = [
     nguon:
       "Cục Di sản văn hóa · Bảo tàng Lịch sử Quốc gia · Báo QĐND · cổng tỉnh",
     popup: personOverlayPopup,
-  },
-  {
-    id: "tran-danh-khoi-nghia-bo-sung-2",
-    label: "⚔️ Trận đánh · khởi nghĩa (bổ sung — cổ · cận đại)",
-    icon: "⚔️",
-    file: "data/overlays/tran-danh-khoi-nghia-bo-sung-2.json",
-    circleColor: "#dc2626",
-    nguon:
-      "Báo QĐND (sknc/ct.qdnd.vn) · Báo Nhân Dân · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
-    popup: eventOverlayPopup,
   },
   {
     id: "chi-si-cach-mang",
