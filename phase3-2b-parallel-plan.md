@@ -26,8 +26,17 @@
 4. [✅] 3b lô 1: 4 nhóm 2-file → 65 lớp (commit ee1bc25).
 5. [✅] 3b lô 2: 4 nhóm nhân vật cùng schema → 50 lớp (ce4bd2d).
 6. [✅] 3b lô 3: nhóm sự kiện → **47 lớp** (938195b).
-7. [ĐANG LÀM TIẾP] 3b lô 4+: nhóm LỆCH SCHEMA (xem dưới).
-8. Vét niche (số 3) — sau cùng.
+7. [✅] 3b lô 4: 5 nhóm (2 lệch-schema dùng universalPersonPopup + 3 cùng-schema) → **29 lớp** (commit 5d8a128). Dedup coreName, 0 trùng.
+8. [✅] Dọn STRICT_SOURCE: 67→27 tên (commit 2fb6b89).
+9. [CHỜ IRON MAN] Cụm di sản nhà nước (di-tich-qgdb/bao-vat/unesco/di-tich-cach-mang/danh-thang) + huyen-su-khai-quoc + danh-nhan-cac-trieu: TÔI ĐỀ XUẤT GIỮ RIÊNG (xem "DEVIATION" dưới). Nếu gộp thì -6 lớp → ~23.
+10. nhom[] cho 9 người đa danh mục — HOÃN (DB đã dedup toàn cục, không có mục nhân bản để gộp; cần render logic cross-layer = feature riêng).
+11. Vét niche (số 3) — sau cùng.
+
+## DEVIATION khỏi "gộp mạnh 24 nhóm" — 3 cụm tôi đề xuất GIỮ RIÊNG (lý do data-quality):
+- **Cụm di sản** (UNESCO · bảo vật QG · di tích QGĐB · di tích cách mạng · danh thắng thiên nhiên): 5 **sổ đăng ký di sản nhà nước** riêng biệt, mỗi lớp popup riêng (xếp hạng/đợt/nơi lưu giữ/hạng mục). Gộp dưới universalPopup làm MẤT dữ liệu đăng ký chuẩn. → giữ 5 lớp.
+- **huyen-su-khai-quoc** (🐉): chứa **Hải đội Hoàng Sa = nội dung chủ quyền** + Tứ bất tử. Gộp vào "thành hoàng" chôn nội dung chủ quyền. → giữ riêng.
+- **danh-nhan-cac-trieu** (11 mục thờ-schema): bộ danh nhân BIỂU TƯỢNG có chủ đích (Nguyễn Du, Trần Nhân Tông, Lê Hữu Trác...), giàu noi_tho. Tách per-item = trùng chéo tên cao (nhóm dễ trùng nhất) + lệch schema. → giữ nguyên.
+Nếu Iron Man muốn ép gộp: cụm di sản có thể gộp 2 lớp person-schema (di-tich-cach-mang + danh-thang) an toàn, giữ 3 sổ chính thức riêng.
 
 ## ⚠️ VẤN ĐỀ SCHEMA (quan trọng cho các lô còn lại)
 Lớp dùng 2 schema khác nhau — KHÔNG gộp lẫn dưới 1 popup nếu lệch:
