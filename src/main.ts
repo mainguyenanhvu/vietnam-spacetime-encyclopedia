@@ -1403,12 +1403,20 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "di-tich-cach-mang",
-    label: "🚩 Di tích cách mạng · kháng chiến",
+    label: "🚩 Di tích cách mạng · Danh thắng · Di sản thiên nhiên",
     icon: "🚩",
     file: "data/overlays/di-tich-cach-mang.json",
-    circleColor: "#dc2626",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "danh-thang",
+      "#16a34a",
+      "vuon-quoc-gia",
+      "#16a34a",
+      "#dc2626",
+    ],
     nguon:
-      "Cục Di sản văn hóa · Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
+      "Cục Di sản văn hóa · Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · Cục Du lịch Quốc gia (vietnamtourism.vn) · cổng tỉnh",
     popup: eventOverlayPopup,
   },
   {
@@ -1429,15 +1437,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#ea580c",
     nguon:
       "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-thang-di-san-thien-nhien",
-    label: "🏞️ Danh thắng · vườn quốc gia · di sản thiên nhiên",
-    icon: "🏞️",
-    file: "data/overlays/danh-thang-di-san-thien-nhien.json",
-    circleColor: "#16a34a",
-    nguon: "Cục Du lịch Quốc gia — vietnamtourism.vn · cổng tỉnh",
     popup: personOverlayPopup,
   },
   {
