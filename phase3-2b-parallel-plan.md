@@ -28,7 +28,7 @@
 6. [✅] 3b lô 3: nhóm sự kiện → **47 lớp** (938195b).
 7. [✅] 3b lô 4: 5 nhóm (2 lệch-schema dùng universalPersonPopup + 3 cùng-schema) → **29 lớp** (commit 5d8a128). Dedup coreName, 0 trùng.
 8. [✅] Dọn STRICT_SOURCE: 67→27 tên (commit 2fb6b89).
-9. [CHỜ IRON MAN] Cụm di sản nhà nước (di-tich-qgdb/bao-vat/unesco/di-tich-cach-mang/danh-thang) + huyen-su-khai-quoc + danh-nhan-cac-trieu: TÔI ĐỀ XUẤT GIỮ RIÊNG (xem "DEVIATION" dưới). Nếu gộp thì -6 lớp → ~23.
+9. [✅] Cụm di sản: Iron Man chốt "gộp 2 lớp person-schema" — di-tich-cach-mang ← danh-thang (→38 mục, commit 6ca0418), GIỮ RIÊNG 3 sổ nhà nước (UNESCO/bảo vật/QGĐB) + huyen-su-khai-quoc + danh-nhan-cac-trieu. **PHASE 3 XONG: 69→28 lớp · 1.279 mục.**
 10. nhom[] cho 9 người đa danh mục — HOÃN (DB đã dedup toàn cục, không có mục nhân bản để gộp; cần render logic cross-layer = feature riêng).
 11. Vét niche (số 3) — sau cùng.
 
