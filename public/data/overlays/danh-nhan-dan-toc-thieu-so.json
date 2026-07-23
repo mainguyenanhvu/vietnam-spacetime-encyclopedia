@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh nhân & anh hùng các dân tộc thiểu số Việt Nam — Sóng 10. Mọi mục draft, chờ kiểm sử §9. Toạ độ ở mức trung tâm huyện/xã (qua OpenStreetMap Nominatim) do phần lớn nguồn chỉ ghi rõ đến cấp xã/huyện — do_tin_cay_toa_do ghi rõ theo từng mục. [Phase 3: hợp nhất danh-nhan-mien-nui-phia-bac.json → nhóm «Danh nhân dân tộc thiểu số · Miền núi phía Bắc».]",
-  "ngay_cap_nhat": "2026-07-20",
+  "ngay_cap_nhat": "2026-07-23",
   "sources": [
     "Báo Quân đội nhân dân — qdnd.vn",
     "Báo Nhân Dân — nhandan.vn",
@@ -802,6 +802,66 @@
       "do_tin_cay_toa_do": "trung-binh",
       "nguon": [
         "Infonet/VietnamNet — «Chuyện về 'Thủ lĩnh dân tộc Thái - Mèo' Lò Văn Hặc»"
+      ]
+    },
+    {
+      "id": "thi-gion",
+      "ten": "Thị Giôn — người sáng lập tổ dệt thổ cẩm S'tiêng",
+      "lon": 106.85,
+      "lat": 11.35,
+      "loai": "danh-nhan-dtts",
+      "nam_hien_thi": "1964–",
+      "mo_ta": "Bà Thị Giôn, dân tộc S'tiêng, thành lập đội văn nghệ dân gian, đội cồng chiêng và tổ dệt thổ cẩm tại địa phương; xây dựng cơ sở dệt thổ cẩm mang tên mình để khôi phục nghề dệt truyền thống S'tiêng. Được Bộ Văn hóa, Thể thao và Du lịch trao Bằng khen năm 2026 vì thành tích tiêu biểu trong bảo tồn văn hóa dân tộc thiểu số.",
+      "dia_diem": "Ấp Trà Thanh - Lồ Ô, xã Tân Hưng, huyện Đồng Phú, tỉnh Bình Phước",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai điện tử — Khi phụ nữ là chủ thể của bảo tồn văn hóa dân tộc thiểu số — https://baodongnai.com.vn/dong-nai-cuoi-tuan/202604/khi-phu-nu-la-chu-the-cua-bao-ton-van-hoa-dan-toc-thieu-so-db61d71/"
+      ]
+    },
+    {
+      "id": "thi-thanh",
+      "ten": "Thị Thành — người phục dựng Lễ hội Sayangva của người Chơro",
+      "lon": 107.24,
+      "lat": 10.95,
+      "loai": "danh-nhan-dtts",
+      "nam_hien_thi": "1954–",
+      "mo_ta": "Bà Thị Thành, dân tộc Chơro, có công truyền dạy cồng chiêng, nhạc cụ dân tộc, nghề dệt và đan lát; là người phục dựng Lễ hội Sayangva (lễ mừng lúa mới của người Chơro), sau được ghi danh Di sản văn hóa phi vật thể quốc gia năm 2025. Được Bộ Văn hóa, Thể thao và Du lịch trao Bằng khen năm 2026.",
+      "dia_diem": "Khu phố Lác Chiếu, phường Bảo Vinh, TP Long Khánh, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai điện tử — Khi phụ nữ là chủ thể của bảo tồn văn hóa dân tộc thiểu số — https://baodongnai.com.vn/dong-nai-cuoi-tuan/202604/khi-phu-nu-la-chu-the-cua-bao-ton-van-hoa-dan-toc-thieu-so-db61d71/"
+      ]
+    },
+    {
+      "id": "ka-thi-ngoc-huong",
+      "ten": "Ká Thị Ngọc Hương — người quảng bá văn hóa Mạ ra quốc tế",
+      "lon": 107.35,
+      "lat": 11.31,
+      "loai": "danh-nhan-dtts",
+      "nam_hien_thi": "1991–",
+      "mo_ta": "Chị Ká Thị Ngọc Hương, dân tộc Mạ, truyền dạy dân ca, tìm đầu ra cho sản phẩm thổ cẩm truyền thống và dạy tiếng Anh miễn phí cho trẻ em trong cộng đồng. Đại diện phụ nữ dân tộc thiểu số Việt Nam tham dự Đại hội Bảo tồn đa dạng sinh học thế giới tại Abu Dhabi năm 2025; được Bộ Văn hóa, Thể thao và Du lịch trao Bằng khen năm 2026.",
+      "dia_diem": "Xã Tà Lài, huyện Tân Phú, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai điện tử — Khi phụ nữ là chủ thể của bảo tồn văn hóa dân tộc thiểu số — https://baodongnai.com.vn/dong-nai-cuoi-tuan/202604/khi-phu-nu-la-chu-the-cua-bao-ton-van-hoa-dan-toc-thieu-so-db61d71/"
+      ]
+    },
+    {
+      "id": "ka-so-lieng",
+      "ten": "Ka Sô Liễng — Nghệ nhân Ưu tú, người sáng tạo chữ viết Chăm Hroi",
+      "lon": 108.85,
+      "lat": 13.1,
+      "loai": "danh-nhan-dtts",
+      "nam_hien_thi": "1936–2023",
+      "mo_ta": "Nghệ nhân Ưu tú dân tộc Chăm Hroi, nguyên Phó Giám đốc Sở Văn hóa - Thông tin Phú Yên. Ông dành cả đời sưu tầm, dịch thuật sử thi Tây Nguyên (Hbia Ta Lúi - Ka Li Pu, Tiếng cồng ông bà Hbia Lơ Đă…) và là người sáng tạo bộ chữ viết cho dân tộc Chăm Hroi (hoàn thiện khoảng năm 2010, được Viện Ngôn ngữ học thẩm định), trực tiếp dạy chữ này cho cộng đồng.",
+      "dia_diem": "Thôn Kiến Thiết, xã Ea Chà Rang, huyện Sơn Hòa, tỉnh Phú Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đắk Lắk điện tử (báo Đảng tỉnh) — Nhớ Ka Sô Liễng - ngọn lửa Chăm Hroi giữa đại ngàn — https://baodaklak.vn/van-hoa-du-lich-van-hoc-nghe-thuat/202409/nho-ka-so-lieng-ngon-lua-cham-hroi-giua-dai-ngan-b531639/"
       ]
     }
   ]
