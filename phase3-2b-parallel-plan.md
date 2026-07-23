@@ -20,7 +20,37 @@
 - Rủi ro: merge sai người → mất dữ liệu. Mọi merge phải có bằng chứng; giữ backup git mỗi bước.
 
 ## Thứ tự thực thi
-1. [ĐANG] 3a agent phân tích (bg) ∥ 2b-i tôi dựng GeoJSON.
-2. 2b-ii wire main.ts + verify + commit.
-3. 3b execute hợp nhất (dựa map 3a) + verify + commit — theo lô nhỏ, mỗi lô 1 commit.
-4. Vét niche (số 3) — sau cùng.
+1. [✅] 3a agent phân tích → cand-merge-map.json (24 nhóm) + cand-crossname-dups.json (5) + cand-nhom-multi.json (9).
+2. [✅] 2b-i+ii: 2 polygon 1490+1838 wire lên selector (commit e38b458).
+3. [✅] 3b lô 0: gỡ 5 trùng chéo-tên do sóng mở rộng gây (commit b4451d4).
+4. [✅] 3b lô 1: 4 nhóm 2-file → 65 lớp (commit ee1bc25).
+5. [ĐANG LÀM TIẾP] 3b lô 2+: các nhóm còn lại (xem dưới).
+6. Vét niche (số 3) — sau cùng.
+
+## Quyết định Iron Man: "GỘP MẠNH HƠN" (24 nhóm + tách file hỗn hợp per-item + nhom[])
+
+## RECIPE mỗi lô (đã kiểm chứng ở lô 1) — an toàn, atomic:
+1. Script: gộp items file phụ → **file CHÍNH có sẵn** (giữ tên+entry OVERLAYS), dedup id + tên chính xác; append sources vào file chính; `unlinkSync` file phụ.
+2. main.ts: **gỡ entry OVERLAYS của các file phụ** + đổi `label` file chính = nhãn nhóm. (Tất cả lớp nhân vật dùng `popup: personOverlayPopup`; lớp sự kiện dùng `eventOverlayPopup`; đừng trộn 2 loại popup — nhóm chien-dich-tran-danh dùng event.)
+3. verify: `npm run build` (bắt lỗi cú pháp mảng) + `node scripts/validate_overlays.mjs` + `node scripts/audit_sovereignty.mjs` → phải xanh.
+4. commit 1 lô. Scripts mẫu: scratchpad/merge_batch1.mjs, fix_crossdups.mjs.
+
+## CÁC NHÓM CÒN LẠI (file CHÍNH in đậm = giữ tên):
+- **khoa-bang-quan-lai** (11→1): **khoa-bang-danh-nhan** ← bo-sung, bo-sung-3, bo-sung-4, mien-trung, nam-trung-bo, thanh-hoa, trang-nguyen-khoa-bang, tien-si-tieu-bieu, quan-thanh-liem, danh-than-trieu-nguyen. ⚠️ RỦI RO TRÙNG TÊN CAO — dedup kỹ.
+- **danh-tuong-quan-su** (5→1): **danh-nhan-quan-su-co-trung-dai** ← danh-tuong-khang-chien, vo-tuong-trung-dai, thu-linh-khoi-nghia-co-dai, khoi-nghia-bac-thuoc.
+- **anh-hung-llvt-hien-dai** (5→1): **anh-hung-can-hien-dai** ← anh-hung-llvt-cand, anh-hung-llvt-bo-sung, anh-hung-liet-si-bo-sung, tuong-linh-hien-dai.
+- **tri-thuc-khoa-hoc** (5→1): **tri-thuc-khoa-hoc-tk20** ← nha-giao-hoc-gia, anh-hung-lao-dong-khoa-hoc, dich-gia-ngon-ngu-hoc, kien-truc-su-ky-su.
+- **van-nghe-si** (5→1): **danh-nhan-van-hoa-can-hien-dai** ← van-nghe-si-khoa-hoc, hoa-si-dieu-khac, nghe-si-san-khau-dien-anh, nha-bao-xuat-ban.
+- **di-san-di-tich-bao-vat** (5→1): **di-tich-qgdb** ← di-tich-cach-mang, bao-vat-quoc-gia, danh-thang-di-san-thien-nhien, unesco. ⚠️ popup TÙY BIẾN (unesco/bao-vat/di-tich khác nhau) — cân nhắc giữ riêng bao-vat/unesco nếu popup khó gộp; hoặc chuẩn hoá popup.
+- **chien-dich-tran-danh** (4→1): **chien-dich-tran-danh** ← chien-dich-tran-danh-bo-sung, khoi-nghia-khang-chien, tran-danh-khoi-nghia-bo-sung-2. Dùng `eventOverlayPopup`.
+- **vua-chua-hoang-toc** (4→1): **vua-hoang-de** ← vua-chua-bo-sung, chua-nguyen-trinh, hoang-toc-tieu-bieu.
+- **thanh-hoang-tin-nguong** (3→1): **thanh-hoang-danh-than** ← thanh-hoang-vung-mien, huyen-su-khai-quoc.
+- **to-nghe-lang-nghe** (3→1): **to-nghe-danh-than** ← nghe-nhan-lang-nghe-bo-sung, lang-nghe-truyen-thong.
+- **danh-nhan-vung-mien** (2→1): **danh-nhan-nam-bo** ← danh-nhan-thua-thien-hue.
+- Giữ NGUYÊN (1 file): me-vnah, thieu-nien-anh-hung, su-than-ngoai-giao, thien-su-cao-tang, danh-y-luong-y, nghe-nhan-di-san, le-hoi-truyen-thong, nha-the-thao-lich-su.
+- **can-xem-lai / TÁCH per-item**: danh-nhan-cac-trieu (hỗn hợp vua/văn/y/thần) → phân từng mục về đúng nhóm theo `loai`, dedup chéo tên (Lý Thái Tổ, Trần Nhân Tông, Lê Thánh Tông... đã có ở nhóm khác). LÀM CUỐI.
+
+## SAU HỢP NHẤT:
+- Thêm `nhom[]` cho 9 người đa danh mục (cand-nhom-multi.json): Quang Trung, Lê Lợi (vua+tướng); Phan Đình Phùng (khoa bảng+Cần Vương); Nguyễn Trung Trực; Bùi Thị Xuân; Hoàng Văn Thụ; Ngô Đức Kế; Trịnh Hoài Đức; Phạm Tu. → cần render logic cho nhom[] (1 mục hiện ở nhiều lớp khi lọc).
+- Dọn STRICT_SOURCE trong validate_overlays.mjs (bỏ tên file đã xoá).
+- Iron Man test `npm run dev` (sandbox chặn basemap).
