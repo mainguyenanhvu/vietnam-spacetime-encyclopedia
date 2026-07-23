@@ -1329,7 +1329,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "anh-hung-can-hien-dai",
-    label: "🎖️ Anh hùng cận–hiện đại (đại tướng · AHLLVT · Mẹ VNAH · AHLĐ)",
+    label: "🎖️ Anh hùng LLVT · Liệt sĩ · Tướng lĩnh hiện đại",
     icon: "🎖️",
     file: "data/overlays/anh-hung-can-hien-dai.json",
     circleColor: [
@@ -1420,7 +1420,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "danh-nhan-van-hoa-can-hien-dai",
-    label: "📚 Danh nhân văn hoá · khoa học · chí sĩ (TK 19–20)",
+    label: "📚 Văn nghệ sĩ · Báo chí · Danh nhân văn hoá",
     icon: "📚",
     file: "data/overlays/danh-nhan-van-hoa-can-hien-dai.json",
     circleColor: [
@@ -1474,26 +1474,6 @@ const OVERLAYS: OverlayConf[] = [
           : "";
       return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
     },
-  },
-  {
-    id: "anh-hung-llvt-cand",
-    label: "🎖️ Anh hùng LLVT nhân dân · Công an nhân dân",
-    icon: "🎖️",
-    file: "data/overlays/anh-hung-llvt-cand.json",
-    circleColor: "#dc2626",
-    nguon:
-      "Báo Quân đội Nhân dân · Báo Công an Nhân dân · Bảo tàng Lịch sử Quốc gia · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "tuong-linh-hien-dai",
-    label: "⭐ Tướng lĩnh Quân đội Nhân dân (hiện đại)",
-    icon: "⭐",
-    file: "data/overlays/tuong-linh-hien-dai.json",
-    circleColor: "#b45309",
-    nguon:
-      "Báo Quân đội Nhân dân · Báo Nhân Dân · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
-    popup: personOverlayPopup,
   },
   {
     id: "tien-si-tieu-bieu",
@@ -1558,7 +1538,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "vua-hoang-de",
-    label: "👑 Vua · Hoàng đế các triều đại",
+    label: "👑 Vua · Chúa · Hoàng tộc",
     icon: "👑",
     file: "data/overlays/vua-hoang-de.json",
     circleColor: "#a16207",
@@ -1574,24 +1554,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#9f1239",
     nguon:
       "Cục Di sản văn hóa · Bảo tàng Lịch sử Quốc gia · Báo QĐND · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "van-nghe-si-khoa-hoc",
-    label: "🎨 Văn nghệ sĩ · nhà khoa học (thế kỷ 20)",
-    icon: "🎨",
-    file: "data/overlays/van-nghe-si-khoa-hoc.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "van-hoc", "#2563eb",
-      "hoi-hoa", "#7c3aed",
-      "am-nhac", "#db2777",
-      "khoa-hoc", "#0d9488",
-      "#2563eb",
-    ],
-    nguon:
-      "Báo Nhân Dân · Báo QĐND · Bảo tàng Văn học · Cục Bản quyền tác giả · cổng tỉnh",
     popup: personOverlayPopup,
   },
   {
@@ -1635,36 +1597,6 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "anh-hung-liet-si-bo-sung",
-    label: "🎖️ Anh hùng · liệt sĩ · tình báo (bổ sung)",
-    icon: "🎖️",
-    file: "data/overlays/anh-hung-liet-si-bo-sung.json",
-    circleColor: "#dc2626",
-    nguon:
-      "Báo QĐND · Báo Công an Nhân dân · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "vua-chua-bo-sung",
-    label: "👑 Vua · chúa (bổ sung — Trần · Lê · Mạc · Trịnh–Nguyễn)",
-    icon: "👑",
-    file: "data/overlays/vua-chua-bo-sung.json",
-    circleColor: "#a16207",
-    nguon:
-      "Cục Di sản văn hóa · Khu di tích Lam Kinh · Trung tâm Bảo tồn Di tích Cố đô Huế · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "hoang-toc-tieu-bieu",
-    label: "👸 Hoàng hậu · thái hậu · công chúa tiêu biểu",
-    icon: "👸",
-    file: "data/overlays/hoang-toc-tieu-bieu.json",
-    circleColor: "#c026d3",
-    nguon:
-      "Cục Di sản văn hóa · Trung tâm Bảo tồn Di tích Cố đô Huế · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
     id: "thanh-hoang-vung-mien",
     label: "🏯 Thành hoàng · thánh mẫu · danh thần vùng miền",
     icon: "🏯",
@@ -1672,16 +1604,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#9333ea",
     nguon:
       "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "nha-giao-hoc-gia",
-    label: "📚 Nhà giáo · học giả · nhà khoa học (cận–hiện đại)",
-    icon: "📚",
-    file: "data/overlays/nha-giao-hoc-gia.json",
-    circleColor: "#0284c7",
-    nguon:
-      "Báo Nhân Dân · Báo Đại biểu Nhân dân · Giáo dục & Thời đại · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
     popup: personOverlayPopup,
   },
   {
@@ -1731,26 +1653,6 @@ const OVERLAYS: OverlayConf[] = [
     file: "data/overlays/danh-thang-di-san-thien-nhien.json",
     circleColor: "#16a34a",
     nguon: "Cục Du lịch Quốc gia — vietnamtourism.vn · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "anh-hung-llvt-bo-sung",
-    label: "🎖️ Anh hùng LLVTND · CAND (bổ sung)",
-    icon: "🎖️",
-    file: "data/overlays/anh-hung-llvt-bo-sung.json",
-    circleColor: "#e11d48",
-    nguon:
-      "Báo QĐND — qdnd.vn · Báo CAND · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "anh-hung-lao-dong-khoa-hoc",
-    label: "🔬 Anh hùng Lao động (khoa học · sản xuất · kinh tế)",
-    icon: "🔬",
-    file: "data/overlays/anh-hung-lao-dong-khoa-hoc.json",
-    circleColor: "#0891b2",
-    nguon:
-      "Báo Nhân Dân · Báo Chính phủ · Báo QĐND · VUSTA · cổng bộ ngành",
     popup: personOverlayPopup,
   },
   {
@@ -1804,36 +1706,6 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
-    id: "nghe-si-san-khau-dien-anh",
-    label: "🎭 Nghệ sĩ sân khấu · điện ảnh · âm nhạc",
-    icon: "🎭",
-    file: "data/overlays/nghe-si-san-khau-dien-anh.json",
-    circleColor: "#7c2d12",
-    nguon:
-      "Báo Nhân Dân · CAND · VOV · Hà Nội Mới · Cục Bản quyền tác giả (Bộ VHTTDL) · TTXVN",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "hoa-si-dieu-khac",
-    label: "🖼️ Hoạ sĩ · điêu khắc · kiến trúc sư",
-    icon: "🖼️",
-    file: "data/overlays/hoa-si-dieu-khac.json",
-    circleColor: "#5b21b6",
-    nguon:
-      "Cục Mỹ thuật–Nhiếp ảnh (Bộ VHTTDL) · TTXVN · Báo Nhân Dân · VOV · cổng tỉnh/thành",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "nha-bao-xuat-ban",
-    label: "📰 Nhà báo · nhà xuất bản tiền phong",
-    icon: "📰",
-    file: "data/overlays/nha-bao-xuat-ban.json",
-    circleColor: "#1d4ed8",
-    nguon:
-      "Báo Nhân Dân · Hội Nhà báo VN · TTXVN · Bảo tàng Báo chí VN · cổng tỉnh/thành",
-    popup: personOverlayPopup,
-  },
-  {
     id: "thien-su-cao-tang",
     label: "🪷 Thiền sư · cao tăng lịch sử",
     icon: "🪷",
@@ -1841,16 +1713,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#ca8a04",
     nguon:
       "Giác Ngộ · Phật giáo VN · Tạp chí NC Phật học · Báo Nhân Dân · dsvh.gov.vn",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "kien-truc-su-ky-su",
-    label: "📐 Kiến trúc sư · kỹ sư tiêu biểu",
-    icon: "📐",
-    file: "data/overlays/kien-truc-su-ky-su.json",
-    circleColor: "#a21caf",
-    nguon:
-      "Báo Nhân Dân · CAND · Tuổi Trẻ · Báo Pháp Luật VN · Đại Đoàn Kết · Bảo tàng Lịch sử · Tạp chí Kiến trúc",
     popup: personOverlayPopup,
   },
   {
@@ -1891,16 +1753,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#3730a3",
     nguon:
       "VOV · Giáo dục & Thời đại · Báo Bắc Ninh · VietNamNet · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "dich-gia-ngon-ngu-hoc",
-    label: "📖 Dịch giả · nhà ngôn ngữ · từ điển học",
-    icon: "📖",
-    file: "data/overlays/dich-gia-ngon-ngu-hoc.json",
-    circleColor: "#155e75",
-    nguon:
-      "Báo Nhân Dân · Thanh Niên · Viện Ngôn ngữ học · ĐHQGHN–USSH · MEDDOM · CAND",
     popup: personOverlayPopup,
   },
   {
@@ -1965,22 +1817,12 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "tri-thuc-khoa-hoc-tk20",
-    label: "🔬 Trí thức · nhà khoa học thế kỷ 20",
+    label: "🔬 Trí thức · Nhà khoa học · Giáo dục cận–hiện đại",
     icon: "🔬",
     file: "data/overlays/tri-thuc-khoa-hoc-tk20.json",
     circleColor: "#065f46",
     nguon:
       "Báo Nhân Dân · Viện Hàn lâm KHCN/KHXH VN · ĐHQG · MEDDOM · Tia Sáng",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "chua-nguyen-trinh",
-    label: "👑 Chúa Nguyễn · chúa Trịnh · danh thần Lê–Trịnh",
-    icon: "👑",
-    file: "data/overlays/chua-nguyen-trinh.json",
-    circleColor: "#6d28d9",
-    nguon:
-      "TT Bảo tồn Di tích Cố đô Huế · dsvh.gov.vn · scov.gov.vn · cổng tỉnh · Báo Nhân Dân",
     popup: personOverlayPopup,
   },
   {

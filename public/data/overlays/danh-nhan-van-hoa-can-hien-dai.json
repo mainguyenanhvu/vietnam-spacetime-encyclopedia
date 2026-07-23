@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Danh nhân văn hoá – khoa học – chí sĩ yêu nước cận–hiện đại (TK 19–20). Toạ độ quê quán/khu lưu niệm qua OSM Nominatim; nội dung đối chiếu cổng chính thống (nhandan.vn, baochinhphu.vn, dsvh.gov.vn, baotanglichsu.vn, suckhoedoisong.vn…). KHÔNG dùng Wikipedia. (Trương Định, Nguyễn Trung Trực, Hoàng Diệu đã có ở lớp «Khởi nghĩa & kháng chiến» qua sự kiện tiêu biểu nên không lặp ở đây.)",
+  "ghi_chu": "Danh nhân văn hoá – khoa học – chí sĩ yêu nước cận–hiện đại (TK 19–20). Toạ độ quê quán/khu lưu niệm qua OSM Nominatim; nội dung đối chiếu cổng chính thống (nhandan.vn, baochinhphu.vn, dsvh.gov.vn, baotanglichsu.vn, suckhoedoisong.vn…). KHÔNG dùng Wikipedia. (Trương Định, Nguyễn Trung Trực, Hoàng Diệu đã có ở lớp «Khởi nghĩa & kháng chiến» qua sự kiện tiêu biểu nên không lặp ở đây.) [Phase 3: hợp nhất 4 lớp → nhóm «Văn nghệ sĩ · Báo chí · Danh nhân văn hoá».]",
   "ngay_cap_nhat": "2026-07-20",
   "sources": [
     "Báo Nhân Dân — nhandan.vn",
@@ -8,7 +8,42 @@
     "Cục Di sản Văn hoá — dsvh.gov.vn",
     "Bảo tàng Lịch sử Quốc gia — baotanglichsu.vn",
     "Sức khoẻ & Đời sống (Bộ Y tế) — suckhoedoisong.vn",
-    "OpenStreetMap Nominatim (toạ độ)"
+    "OpenStreetMap Nominatim (toạ độ)",
+    "Bảo tàng Văn học Việt Nam — baotangvanhoc.vn",
+    "Báo Nhân Dân điện tử — nhandan.vn / special.nhandan.vn",
+    "Báo Quân đội nhân dân — qdnd.vn",
+    "Báo Chính phủ — baochinhphu.vn",
+    "Ủy ban Nhà nước về người Việt Nam ở nước ngoài — scov.gov.vn",
+    "Báo Hà Tĩnh — baohatinh.vn",
+    "Ủy ban Nhà nước về người Việt Nam ở nước ngoài (Bộ Ngoại giao) — scov.gov.vn",
+    "Thông tấn xã Việt Nam — vnanet.vn",
+    "Đài Tiếng nói Việt Nam — vov.vn",
+    "Cục Mỹ thuật, Nhiếp ảnh và Triển lãm (Bộ VHTTDL) — ape.gov.vn",
+    "Cổng Thông tin điện tử TP Hải Phòng — haiphong.gov.vn",
+    "Báo Công an Nhân dân — cand.vn",
+    "Đại học Huế — hueuni.edu.vn",
+    "Viện Kiến trúc Quốc gia (Bộ Xây dựng) — vienkientruc.vn",
+    "Cổng Thông tin điện tử Chính phủ — baochinhphu.vn",
+    "Tạp chí Kiến trúc (Hội Kiến trúc sư Việt Nam) — tapchikientruc.com.vn",
+    "Tạp chí Mỹ thuật (Hội Mỹ thuật Việt Nam) — tapchimythuat.vn",
+    "Thời báo Văn học nghệ thuật (Liên hiệp các Hội VHNT Việt Nam) — arttimes.vn",
+    "Thư viện tỉnh Đồng Nai — thuviendongnai.gov.vn",
+    "nhandan.vn",
+    "cand.vn",
+    "vov.vn",
+    "hanoimoi.vn",
+    "scov.gov.vn (Cục Bản quyền tác giả — Bộ VHTTDL)",
+    "vnanet.vn (TTXVN)",
+    "Hội Nhà báo Việt Nam — hoinhabao.vn",
+    "Cổng Thông tin Chính phủ — baochinhphu.vn / bcp.cdnchinhphu.vn",
+    "Báo Quân đội Nhân dân — qdnd.vn (ct.qdnd.vn)",
+    "Báo Sài Gòn Giải Phóng — sggp.org.vn",
+    "Cổng TTĐT tỉnh Đồng Tháp — dongthap.gov.vn",
+    "Báo An Giang — baoangiang.com.vn",
+    "Báo Đà Nẵng — baodanang.vn",
+    "Báo Thanh Niên — thanhnien.vn",
+    "VOV — vov.vn",
+    "nguoikesu.com (tư liệu lịch sử)"
   ],
   "items": [
     {
@@ -227,6 +262,1156 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo Nhân Dân — nhandan.vn (sinh 16/11/1905 tại Lai Xá, Kim Chung, Hoài Đức)"
+      ]
+    },
+    {
+      "id": "nguyen-dinh-thi",
+      "ten": "Nguyễn Đình Thi",
+      "lon": 105.8549,
+      "lat": 21.0251,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1924–2003",
+      "mo_ta": "Nhà văn, nhà thơ, nhạc sĩ đa tài, thành viên sáng lập Hội Nhà văn Việt Nam; có nhiều đóng góp cho văn học kháng chiến qua tiểu thuyết, kịch, thơ và lý luận — vở kịch «Rừng trúc» đoạt Huy chương Vàng liên hoan sân khấu chuyên nghiệp 1999. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (1996).",
+      "dia_diem": "Làng Vũ Thạch (nay phố Bà Triệu, phường Tràng Tiền), quận Hoàn Kiếm, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà văn Nguyễn Đình Thi (1924-2003) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-1/nha-van-nguyen-dinh-thi-1924-2003/"
+      ]
+    },
+    {
+      "id": "nguyen-hong",
+      "ten": "Nguyên Hồng",
+      "lon": 106.1476,
+      "lat": 20.4378,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1918–1982",
+      "mo_ta": "Nhà văn hiện thực, thành viên sáng lập Hội Nhà văn Việt Nam (1957), nổi bật với các truyện ngắn, tiểu thuyết khắc hoạ số phận người lao động nghèo và tinh thần đấu tranh giành độc lập dân tộc. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật đợt 1 (1996).",
+      "dia_diem": "Phố Hàng Cau, phường Trần Hưng Đạo, thành phố Nam Định",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà văn Nguyên Hồng (1918-1982) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-1/nha-van-nguyen-hong-1918-1982/"
+      ]
+    },
+    {
+      "id": "to-hoai",
+      "ten": "Tô Hoài",
+      "lon": 105.7682,
+      "lat": 20.8537,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1920–2014",
+      "mo_ta": "Nhà văn viết nhiều thể loại, nổi tiếng nhất với truyện thiếu nhi «Dế Mèn phiêu lưu ký» (1941) được dịch ra nhiều thứ tiếng; để lại khối lượng lớn truyện ngắn, tiểu thuyết, hồi ký về đời sống Việt Nam. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (1996).",
+      "dia_diem": "Thôn Cát Động, thị trấn Kim Bài, huyện Thanh Oai, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà văn Tô Hoài (1920-2014) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-1/nha-van-to-hoai-1920-2014/"
+      ]
+    },
+    {
+      "id": "nguyen-tuan",
+      "ten": "Nguyễn Tuân",
+      "lon": 105.8114,
+      "lat": 21.0028,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1910–1987",
+      "mo_ta": "Nhà văn bậc thầy về tuỳ bút, ký, truyện ngắn, thành viên sáng lập Hội Nhà văn Việt Nam; nổi danh từ 1938-1939 với «Một chuyến đi», để lại nhiều tác phẩm ghi lại đời sống và cuộc kháng chiến của dân tộc. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (1996).",
+      "dia_diem": "Thôn Thượng Đình (làng Mọc), nay phường Nhân Chính, quận Thanh Xuân, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà văn Nguyễn Tuân (1910-1987) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-1/nha-van-nguyen-tuan-1910-1987/"
+      ]
+    },
+    {
+      "id": "te-hanh",
+      "ten": "Tế Hanh",
+      "lon": 108.7688,
+      "lat": 15.3376,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1921–2009",
+      "mo_ta": "Nhà thơ, dịch giả, thành viên sáng lập Hội Nhà văn Việt Nam (1957), tham gia Cách mạng Tháng Tám 1945; để lại hơn 30 tập thơ và nhiều bản dịch thơ nước ngoài. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (1996).",
+      "dia_diem": "Xã Bình Dương, huyện Bình Sơn, tỉnh Quảng Ngãi",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà thơ Tế Hanh (1921-2009) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-1/nha-tho-te-hanh-1921-2009-2/"
+      ]
+    },
+    {
+      "id": "nguyen-huy-tuong",
+      "ten": "Nguyễn Huy Tưởng",
+      "lon": 105.8768,
+      "lat": 21.1117,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1912–1960",
+      "mo_ta": "Nhà văn, nhà viết kịch, thành viên sáng lập Hội Nhà văn Việt Nam (1957); tích cực tham gia phong trào văn hoá kháng chiến sau Cách mạng Tháng Tám, làm chủ bút các báo «Cờ giải phóng», «Tiên phong». Để lại nhiều kịch, tiểu thuyết, truyện thiếu nhi, hồi ký; được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (1996).",
+      "dia_diem": "Làng Dục Tú, nay xã Dục Tú, huyện Đông Anh, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà văn Nguyễn Huy Tưởng (1912-1960) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-1/nha-van-nguyen-huy-tuong-1912-1960/"
+      ]
+    },
+    {
+      "id": "luu-quang-vu",
+      "ten": "Lưu Quang Vũ",
+      "lon": 104.9985,
+      "lat": 21.5876,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1948–1988",
+      "mo_ta": "Nhà thơ, nhà viết kịch tài năng với hàng loạt vở kịch nổi tiếng như «Hồn Trương Ba da hàng thịt», «Người tốt nhà số 5»; đoạt nhiều giải thưởng sân khấu toàn quốc. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (2000).",
+      "dia_diem": "Xã Thiệu Cơ, huyện Hạ Hòa, tỉnh Phú Thọ (quê gốc Đà Nẵng)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà thơ Lưu Quang Vũ (1948-1988) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-2/nha-tho-luu-quang-vu-1948-1988/"
+      ]
+    },
+    {
+      "id": "nguyen-binh-nha-tho",
+      "ten": "Nguyễn Bính",
+      "lon": 106.0999,
+      "lat": 20.3829,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1918–1966",
+      "mo_ta": "Nhà thơ «chân quê» tiêu biểu của phong trào Thơ mới, làm thơ từ năm 13 tuổi, đoạt giải thưởng của Tự lực văn đoàn năm 1937; tham gia kháng chiến ở Nam Bộ rồi tập kết ra Bắc năm 1954, tiếp tục sáng tác đến cuối đời. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật.",
+      "dia_diem": "Làng Thiện Vịnh, nay xã Cộng Hòa, huyện Vụ Bản, tỉnh Ninh Bình (trước thuộc Nam Định)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — Nhà thơ Nguyễn Bính (1918-1966) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-2/nha-tho-nguyen-binh-1918-1966/"
+      ]
+    },
+    {
+      "id": "che-lan-vien",
+      "ten": "Chế Lan Viên",
+      "lon": 106.9443,
+      "lat": 16.7847,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1920–1989",
+      "mo_ta": "Tên thật Phan Ngọc Hoan, nhà thơ lớn của phong trào Thơ mới rồi thơ cách mạng, giữ vai trò trọng yếu trong văn nghệ kháng chiến vùng Bình-Trị-Thiên; nhiều khoá đại biểu Quốc hội. Được truy tặng Huân chương Độc lập hạng Nhì và Giải thưởng Hồ Chí Minh về văn học nghệ thuật đợt 1 (1996).",
+      "dia_diem": "Xã Cam An, huyện Cam Lộ, tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Kỷ niệm 100 năm Ngày sinh nhà thơ Chế Lan Viên — https://nhandan.vn/ky-niem-100-nam-ngay-sinh-nha-tho-che-lan-vien-post625968.html",
+        "Bảo tàng Văn học Việt Nam — Nhà thơ Chế Lan Viên (1920-1989) — https://baotangvanhoc.vn/giai-thuong-ho-chi-minh/dot-1/nha-tho-che-lan-vien-1920-1989/"
+      ]
+    },
+    {
+      "id": "to-ngoc-van",
+      "ten": "Tô Ngọc Vân",
+      "lon": 105.854,
+      "lat": 21.0283,
+      "loai": "hoi-hoa",
+      "nam_hien_thi": "1906–1954",
+      "mo_ta": "Họa sĩ bậc thầy của mỹ thuật Việt Nam hiện đại, đứng trong «bộ tứ» hội hoạ Đông Dương (nhất Trí, nhì Vân, tam Lân, tứ Cẩn). Trong kháng chiến chống Pháp ông lên Việt Bắc vẽ ký hoạ về bộ đội, Tây Bắc, đời sống nhân dân; hy sinh năm 1954 khi bị máy bay ném bom trên đường đi công tác tại đèo Lũng Lô.",
+      "dia_diem": "Sinh, lớn lên tại Hà Nội; hy sinh tại đèo Lũng Lô, tỉnh Yên Bái (1954)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Kiệt tác của danh họa Tô Ngọc Vân — https://www.qdnd.vn/van-hoa/doi-song/kiet-tac-cua-danh-hoa-to-ngoc-van-778656"
+      ]
+    },
+    {
+      "id": "nguyen-sang",
+      "ten": "Nguyễn Sáng",
+      "lon": 106.3606,
+      "lat": 10.3581,
+      "loai": "hoi-hoa",
+      "nam_hien_thi": "1923–1988",
+      "mo_ta": "Một trong những họa sĩ hàng đầu của mỹ thuật hiện đại Việt Nam, kết hợp sơn mài truyền thống với bút pháp hiện đại phương Tây; tác phẩm «Kết nạp Đảng ở Điện Biên Phủ» được công nhận Bảo vật quốc gia. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (1996).",
+      "dia_diem": "Thành phố Mỹ Tho (nay thuộc tỉnh Đồng Tháp)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Danh họa Nguyễn Sáng và Bảo vật quốc gia «Kết nạp Đảng ở Điện Biên Phủ» — https://special.nhandan.vn/danh-hoa-nguyen-sang-va-bao-vat-quoc-gia-ket-nap-dang-o-dien-bien-phu/"
+      ]
+    },
+    {
+      "id": "bui-xuan-phai",
+      "ten": "Bùi Xuân Phái",
+      "lon": 105.7035,
+      "lat": 21.0229,
+      "loai": "hoi-hoa",
+      "nam_hien_thi": "1920–1988",
+      "mo_ta": "Họa sĩ nổi tiếng với dòng tranh «Phố Phái» khắc hoạ phố cổ Hà Nội, còn vẽ chân dung, sân khấu, phong cảnh biển. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật; Giải thưởng «Bùi Xuân Phái — Vì tình yêu Hà Nội» được lập để vinh danh ông.",
+      "dia_diem": "Làng Kim Hoàng, xã Vân Canh, nay huyện Hoài Đức, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Kỷ niệm 90 năm ngày sinh của cố họa sĩ Bùi Xuân Phái — https://nhandan.vn/ky-niem-90-nam-ngay-sinh-cua-co-hoa-si-bui-xuan-phai-post503571.html",
+        "Báo Nhân Dân điện tử — Mong có một con đường mang tên Bùi Xuân Phái — https://nhandan.vn/mong-co-mot-con-duong-mang-ten-bui-xuan-phai-post496395.html"
+      ]
+    },
+    {
+      "id": "nguyen-phan-chanh",
+      "ten": "Nguyễn Phan Chánh",
+      "lon": 105.8211,
+      "lat": 18.3583,
+      "loai": "hoi-hoa",
+      "nam_hien_thi": "1892–1984",
+      "mo_ta": "Người khai sáng nền tranh lụa hiện đại Việt Nam, đưa tranh lụa Việt ra thế giới với khoảng 170 bức lụa và 52 bức ký hoạ mực khắc hoạ đời sống nông thôn, phụ nữ và trẻ em. Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật (1996).",
+      "dia_diem": "Thôn Tiền Bạt, xã Trung Tiết, huyện Thạch Hà, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Kỷ niệm 120 năm Ngày sinh họa sĩ Nguyễn Phan Chánh — https://nhandan.vn/ky-niem-120-nam-ngay-sinh-hoa-si-nguyen-phan-chanh-1892-2012-post393759.html"
+      ]
+    },
+    {
+      "id": "do-nhuan",
+      "ten": "Đỗ Nhuận",
+      "lon": 106.1875,
+      "lat": 20.8783,
+      "loai": "am-nhac",
+      "nam_hien_thi": "1922–1991",
+      "mo_ta": "Nhạc sĩ tiên phong của nền âm nhạc cách mạng Việt Nam, Tổng thư ký đầu tiên của Hội Nhạc sĩ Việt Nam, người đặt nền móng cho opera Việt Nam; từng theo học hệ thống tại Nhạc viện Tchaikovsky (Liên Xô). Được truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật.",
+      "dia_diem": "Thôn Hoạch Trạch, xã Thái Học, huyện Bình Giang, tỉnh Hải Dương",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Hải Phòng tổ chức Chương trình nghệ thuật tri ân nhạc sĩ Đỗ Nhuận — https://nhandan.vn/hai-phong-to-chuc-chuong-trinh-nghe-thuat-tri-an-nhac-si-do-nhuan-post928540.html"
+      ]
+    },
+    {
+      "id": "nguyen-van-ty-nhac-si",
+      "ten": "Nguyễn Văn Tý",
+      "lon": 105.0607,
+      "lat": 19.1976,
+      "loai": "am-nhac",
+      "nam_hien_thi": "1925–2019",
+      "mo_ta": "Nhạc sĩ, thành viên sáng lập Hội Nhạc sĩ Việt Nam (1957), sáng tác nhiều ca khúc về quê hương, gia đình và các ngành nghề (nông nghiệp, thuỷ điện...) được công chúng yêu thích. Đoạt Giải thưởng Hồ Chí Minh về văn học nghệ thuật (2000).",
+      "dia_diem": "Tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Chính phủ — Nhạc sĩ Nguyễn Văn Tý — Cây đại thụ của nền âm nhạc Việt Nam — https://baochinhphu.vn/nhac-si-nguyen-van-ty-cay-dai-thu-cua-nen-am-nhac-viet-nam-102266213.htm"
+      ]
+    },
+    {
+      "id": "phan-huynh-dieu",
+      "ten": "Phan Huỳnh Điểu",
+      "lon": 108.2184,
+      "lat": 15.9017,
+      "loai": "am-nhac",
+      "nam_hien_thi": "1924–2015",
+      "mo_ta": "Nhạc sĩ với khoảng 100 ca khúc kết hợp chất hùng tráng cách mạng và trữ tình lãng mạn, trong đó có nhiều bài phổ thơ Xuân Quỳnh. Được Nhà nước truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật.",
+      "dia_diem": "Sinh tại Đà Nẵng, quê gốc thị xã Điện Bàn, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Nhạc sĩ Phan Huỳnh Điểu qua đời — https://nhandan.vn/nhac-si-phan-huynh-dieu-qua-doi-post236233.html"
+      ]
+    },
+    {
+      "id": "ta-quang-buu",
+      "ten": "Tạ Quang Bửu",
+      "lon": 105.5225,
+      "lat": 18.6728,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1910–1986",
+      "mo_ta": "Nhà khoa học bách khoa, Hiệu trưởng đầu tiên Trường Đại học Bách khoa Hà Nội (1956-1961), Bộ trưởng Bộ Đại học và Trung học chuyên nghiệp (1965-1976), người đặt nền móng cho giáo dục đại học hiện đại Việt Nam. Trong kháng chiến, ông trực tiếp chỉ đạo nghiên cứu phá thuỷ lôi, bom từ trường của Mỹ trên tuyến chi viện miền Bắc.",
+      "dia_diem": "Thôn Hoành Sơn, huyện Nam Đàn, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Giáo sư Tạ Quang Bửu — một trí tuệ bách khoa mẫu mực — https://special.nhandan.vn/giao-su-t-quang-buu-mot-tri-tue-bach-khoa-mau-muc/index.html"
+      ]
+    },
+    {
+      "id": "hoang-tuy",
+      "ten": "Hoàng Tụy",
+      "lon": 108.1093,
+      "lat": 15.5588,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1927–2019",
+      "mo_ta": "Nhà toán học tiên phong sáng lập ngành Tối ưu hoá toàn cục (Global Optimization) trên thế giới với phương pháp «lát cắt Tụy» (Tuy's cut) nổi tiếng quốc tế; tác giả công trình nền tảng «Convex Analysis and Global Optimization».",
+      "dia_diem": "Tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Giáo sư, Tiến sĩ Hoàng Tụy: «Cuộc trường chinh» với Toán học — https://nhandan.vn/special/c-c-gi-o-s-copy/index.html"
+      ]
+    },
+    {
+      "id": "le-van-thiem",
+      "ten": "Lê Văn Thiêm",
+      "lon": 105.6054,
+      "lat": 18.4889,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1918–1991",
+      "mo_ta": "Người Việt Nam đầu tiên nhận bằng tiến sĩ toán học (Đại học Göttingen, Đức) và tiến sĩ quốc gia của Pháp; đặt nền móng xây dựng các viện nghiên cứu toán học Việt Nam, có đóng góp thực tiễn về đạn đạo, thuỷ điện và đào tạo nhiều thế hệ nhà toán học.",
+      "dia_diem": "Làng Trung Lễ, nay xã Trung Lễ, huyện Đức Thọ, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Ủy ban Nhà nước về người Việt Nam ở nước ngoài — Lê Văn Thiêm - Nhà Toán học tài ba — https://scov.gov.vn/dong-bao-vnon/guong-mat/le-van-thiem-nha-toan-hoc-tai-ba.html",
+        "Báo Hà Tĩnh — Lê Văn Thiêm (1918-1991) — https://baohatinh.vn/le-van-thiem-1918-1991-post47602.html"
+      ]
+    },
+    {
+      "id": "tran-huu-tuoc",
+      "ten": "Trần Hữu Tước",
+      "lon": 105.8451,
+      "lat": 21.0009,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1913–1983",
+      "mo_ta": "Bác sĩ đặt nền móng chuyên ngành Tai Mũi Họng Việt Nam ngay trong kháng chiến chống Pháp, xây dựng khoa Tai Mũi Họng đầu tiên tại chiến khu, đào tạo gần 200 cán bộ y tế đến năm 1966. Được phong Anh hùng Lao động (1966) và truy tặng Giải thưởng Hồ Chí Minh (1996).",
+      "dia_diem": "Làng Bạch Mai, xã Hoàn Long (nay quận Hai Bà Trưng), Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Giáo sư Trần Hữu Tước — https://special.nhandan.vn/GS-Tran-Huu-Tuoc/index.html",
+        "Báo Nhân Dân điện tử — Cố GS Trần Hữu Tước một bác sĩ tài năng, tấm gương sáng về y đức — https://nhandan.vn/co-gs-tran-huu-tuoc-mot-bac-si-tai-nang-tam-guong-sang-ve-y-duc-post186204.html"
+      ]
+    },
+    {
+      "id": "ho-dac-di",
+      "ten": "Hồ Đắc Di",
+      "lon": 107.5863,
+      "lat": 16.4639,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1900–1984",
+      "mo_ta": "Bác sĩ phẫu thuật người Việt đầu tiên được chính quyền thuộc địa Pháp cho phép trực tiếp phẫu thuật; sáng lập và làm Hiệu trưởng Trường Đại học Y khoa đầu tiên của Việt Nam trong kháng chiến, đào tạo nhiều thế hệ cán bộ y tế phục vụ kháng chiến.",
+      "dia_diem": "Thành phố Huế",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Giáo sư Hồ Đắc Di — Hiệu trưởng người Việt đầu tiên của Trường Y — https://special.nhandan.vn/giaosuhodacdi/index.html"
+      ]
+    },
+    {
+      "id": "nguyen-gia-tri",
+      "ten": "Nguyễn Gia Trí",
+      "lon": 105.7,
+      "lat": 20.92,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1908–1993",
+      "mo_ta": "Người tiên phong đưa sơn mài từ nghề thủ công trang trí thành chất liệu hội hoạ độc lập của Việt Nam, được xếp «nhất Trí» trong bộ tứ danh hoạ Đông Dương. Tác phẩm tiêu biểu «Vườn xuân Trung Nam Bắc» (Bảo vật quốc gia); nhận Giải thưởng Hồ Chí Minh về Văn học – Nghệ thuật (2012).",
+      "dia_diem": "Làng An Trạch, huyện Chương Mỹ (nay thuộc Hà Nội)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Ủy ban Nhà nước về người Việt Nam ở nước ngoài (Bộ Ngoại giao) — Nguyễn Gia Trí, người cách tân nghệ thuật sơn mài Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/nguyen-gia-tri-nguoi-cach-tan-nghe-thuat-son-mai-viet-nam.html"
+      ]
+    },
+    {
+      "id": "nguyen-tuong-lan",
+      "ten": "Nguyễn Tường Lân",
+      "lon": 106.68,
+      "lat": 20.86,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1906–1946",
+      "mo_ta": "Tốt nghiệp khoá 4 Trường Cao đẳng Mỹ thuật Đông Dương, thành viên bộ tứ «nhất Trí, nhì Vân, tam Lân, tứ Cẩn». Nổi tiếng với biệt tài dùng màu nguyên chất trên tranh lụa và sơn dầu; phần lớn tác phẩm thất lạc qua chiến tranh, mất năm 1946 khi mới 40 tuổi.",
+      "dia_diem": "Hải Phòng (chỉ xác định tới cấp tỉnh)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Tạp chí Mỹ thuật (Hội Mỹ thuật Việt Nam) — Nguyễn Tường Lân (1906-1946) — https://tapchimythuat.vn/tac-gia/nguyen-tuong-lan-1906-1946/"
+      ]
+    },
+    {
+      "id": "tran-van-can",
+      "ten": "Trần Văn Cẩn",
+      "lon": 106.6222,
+      "lat": 20.8079,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1910–1994",
+      "mo_ta": "Tốt nghiệp Trường Cao đẳng Mỹ thuật Đông Dương, hoạ sĩ đa chất liệu (sơn mài, sơn dầu, lụa), tác giả phác thảo Quốc huy Việt Nam. Hiệu trưởng Trường Mỹ thuật Hà Nội 15 năm sau 1954, có tác phẩm trưng bày quốc tế tại Moskva, Cuba, Ấn Độ.",
+      "dia_diem": "Sinh tại Kiến An, Hải Phòng; nguyên quán làng Tiên Phong, Từ Sơn, Bắc Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cổng Thông tin điện tử TP Hải Phòng — Trần Văn Cẩn (1910-1994) — https://haiphong.gov.vn/danh-nhan/tran-van-can-1910-1994-622058"
+      ]
+    },
+    {
+      "id": "nguyen-tu-nghiem",
+      "ten": "Nguyễn Tư Nghiêm",
+      "lon": 105.488,
+      "lat": 18.7053,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1922–2016",
+      "mo_ta": "Đỗ vào Cao đẳng Mỹ thuật Đông Dương năm 1941, thuộc bộ tứ «Nghiêm–Liên–Sáng–Phái». Gần 70 năm sáng tác sơn mài truyền thống với đề tài dân gian, múa cổ; nhận Giải thưởng Hồ Chí Minh về Văn học Nghệ thuật (1996).",
+      "dia_diem": "Xã Trung Phúc Cường (trước là Nam Trung), huyện Nam Đàn, Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Mỹ thuật, Nhiếp ảnh và Triển lãm (Bộ VHTTDL) — Tiểu sử hoạ sỹ Nguyễn Tư Nghiêm — https://ape.gov.vn/tieu-su-hoa-sy-nguyen-tu-nghiem-d942.th"
+      ]
+    },
+    {
+      "id": "duong-bich-lien",
+      "ten": "Dương Bích Liên",
+      "lon": 106.0512,
+      "lat": 20.6464,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1924–1988",
+      "mo_ta": "Học Trường Cao đẳng Mỹ thuật Đông Dương, một trong những hoạ sĩ tham gia kháng chiến chống Pháp sớm nhất. Tác phẩm sơn mài khổ lớn «Bác Hồ ở chiến khu Việt Bắc» được công nhận Bảo vật quốc gia (2017); truy tặng Giải thưởng Hồ Chí Minh (2000).",
+      "dia_diem": "Hưng Yên (chỉ xác định tới cấp tỉnh)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Thông tấn xã Việt Nam — Dương Bích Liên — https://nvsk.vnanet.vn/duong-bich-lien-6926.vna"
+      ]
+    },
+    {
+      "id": "nam-son-hoa-si",
+      "ten": "Nam Sơn (Nguyễn Vạn Thọ)",
+      "lon": 105.8364,
+      "lat": 21.0263,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1890–1973",
+      "mo_ta": "Đồng sáng lập Trường Cao đẳng Mỹ thuật Đông Dương cùng Victor Tardieu, được coi là người đặt nền móng cho mỹ thuật hiện đại Việt Nam, thầy dạy của Tô Ngọc Vân, Nguyễn Gia Trí. Tác phẩm «Chợ gạo bên sông Hồng» (1930) từng đoạt giải tại Paris.",
+      "dia_diem": "Hà Nội (nguyên quán cụ thể chưa xác định rõ trong nguồn; địa chỉ 68 phố Nguyễn Du là nơi ông sống/qua đời)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Ủy ban Nhà nước về người Việt Nam ở nước ngoài (Bộ Ngoại giao) — Hoạ sư Nam Sơn — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/hoa-su-nam-son.html"
+      ]
+    },
+    {
+      "id": "nguyen-do-cung",
+      "ten": "Nguyễn Đỗ Cung",
+      "lon": 105.75,
+      "lat": 21.0667,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1912–1977",
+      "mo_ta": "Hoạ sĩ theo khuynh hướng hiện thực, tác giả «Chân dung Hồ Chủ tịch» (1946), «Dân quân tập bắn» (1948). Là nhà nghiên cứu hàng đầu về mỹ thuật cổ Việt Nam, sáng lập và làm Giám đốc đầu tiên của Bảo tàng Mỹ thuật Việt Nam.",
+      "dia_diem": "Huyện Từ Liêm (nay Bắc Từ Liêm), Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thông tấn xã Việt Nam — Nguyễn Đỗ Cung (1912-1977) — https://nvsk.vnanet.vn/print/nguyen-do-cung-1912-1977-162019.vna"
+      ]
+    },
+    {
+      "id": "diep-minh-chau",
+      "ten": "Diệp Minh Châu",
+      "lon": 106.4833,
+      "lat": 10.2167,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1919–2002",
+      "mo_ta": "Hoạ sĩ kiêm điêu khắc gia, thủ khoa Trường Cao đẳng Mỹ thuật Đông Dương (1940). Nổi tiếng nhất với bức «Bác Hồ với thiếu nhi ba miền Bắc–Trung–Nam» vẽ bằng máu (1947) và tượng đài Hồ Chí Minh tại công viên 23/9, TP.HCM; truy tặng Giải thưởng Hồ Chí Minh.",
+      "dia_diem": "Làng Nhơn Thạnh, huyện Giồng Trôm, Bến Tre",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thư viện tỉnh Đồng Nai — Kỷ niệm 100 năm ngày sinh hoạ sĩ, nhà điêu khắc Diệp Minh Châu — https://www.thuviendongnai.gov.vn/baiviet2015/lichsu/Lists/Posts/Post.aspx?ID=114"
+      ]
+    },
+    {
+      "id": "luong-xuan-nhi",
+      "ten": "Lương Xuân Nhị",
+      "lon": 106.0667,
+      "lat": 20.9333,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1914–2006",
+      "mo_ta": "Nhà giáo Nhân dân, tốt nghiệp xuất sắc Trường Cao đẳng Mỹ thuật Đông Dương (1937), nổi bật với kỹ thuật vẽ trau chuốt trong tranh sơn dầu về thiếu nữ Hà Nội và phong cảnh làng quê. Thành viên sáng lập Hội Mỹ thuật Việt Nam; nhận Giải thưởng Nhà nước về Văn học Nghệ thuật (2001).",
+      "dia_diem": "Sinh tại Hà Nội; nguyên quán huyện Mỹ Hào, Hưng Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thời báo Văn học nghệ thuật (Liên hiệp các Hội VHNT Việt Nam) — Kỷ niệm 110 năm ngày sinh hoạ sĩ Lương Xuân Nhị — https://arttimes.vn/my-thuat/ky-niem-110-nam-ngay-sinh-hoa-si-luong-xuan-nhi-10-4-1914-10-4-2024-c15a44947.html"
+      ]
+    },
+    {
+      "id": "diem-phung-thi",
+      "ten": "Điềm Phùng Thị",
+      "lon": 107.55,
+      "lat": 16.37,
+      "loai": "dieu-khac",
+      "nam_hien_thi": "1920–2002",
+      "mo_ta": "Nữ điêu khắc gia, nguyên là nha sĩ tại Pháp trước khi chuyển hẳn sang điêu khắc từ 1959, phát triển ngôn ngữ tạo hình riêng dựa trên 7 mô-đun hình học. Được đưa vào Từ điển Larousse (1991); năm 1994 hiến tặng toàn bộ tác phẩm cho TP Huế, hình thành Trung tâm Nghệ thuật Điềm Phùng Thị.",
+      "dia_diem": "Làng Châu Ê, xã Thủy Bằng, TP Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam — Một không gian văn hóa bên dòng sông Hương — https://vov.vn/van-hoa-giai-tri/mot-khong-gian-van-hoa-ben-dong-song-huong-972880.vov"
+      ]
+    },
+    {
+      "id": "nguyen-cao-luyen",
+      "ten": "Nguyễn Cao Luyện",
+      "lon": 106.1621,
+      "lat": 20.4341,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1907–1987",
+      "mo_ta": "Kiến trúc sư tiên phong của kiến trúc hiện đại Việt Nam, tu nghiệp tại Paris rồi mở văn phòng kiến trúc đầu tiên của người Việt tại Hà Nội (1933) cùng nhóm Hoàng Như Tiếp – Nguyễn Gia Đức. Nổi tiếng với thiết kế nhà ở giá rẻ dùng cột tre, mái tranh; công trình cuối sự nghiệp là Bảo tàng Cổ vật tại Nam Định (1972).",
+      "dia_diem": "Tỉnh Nam Định (chỉ xác định tới cấp tỉnh)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Tạp chí Kiến trúc (Hội Kiến trúc sư Việt Nam) — Nguyễn Cao Luyện: Người cha đẻ của nền kiến trúc hiện đại Việt Nam (1907-1987) — https://www.tapchikientruc.com.vn/dien-dan/nguyen-cao-luyen-nguoi-cha-de-cua-nen-kien-truc-hien-dai-viet-nam-1907-1987.html"
+      ]
+    },
+    {
+      "id": "huynh-tan-phat",
+      "ten": "Huỳnh Tấn Phát",
+      "lon": 106.6944,
+      "lat": 10.2019,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1913–1989",
+      "mo_ta": "Thủ khoa khoa Kiến trúc, Trường Cao đẳng Mỹ thuật Đông Dương; mở văn phòng thiết kế riêng tại Sài Gòn (1940) theo phong cách hiện đại kết hợp bản sắc Á Đông. Sau 1975 làm Kiến trúc sư trưởng quy hoạch Thủ đô Hà Nội, Chủ tịch Hội Kiến trúc sư Việt Nam (1983); nhận Giải thưởng Hồ Chí Minh (2000).",
+      "dia_diem": "Xã Châu Hưng, huyện Bình Đại, Bến Tre",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Viện Kiến trúc Quốc gia (Bộ Xây dựng) — Kiến trúc sư Huỳnh Tấn Phát — https://vienkientruc.vn/kien-truc-su-huynh-tan-phat/",
+        "Cổng Thông tin điện tử Chính phủ — Kiến trúc sư Huỳnh Tấn Phát: Người xây «ngôi nhà» đại đoàn kết trên mặt trận báo chí cách mạng — https://baochinhphu.vn/kien-truc-su-huynh-tan-phat-nguoi-xay-ngoi-nha-dai-doan-ket-tren-mat-tran-bao-chi-cach-mang-102260619172617645.htm"
+      ]
+    },
+    {
+      "id": "ngo-viet-thu",
+      "ten": "Ngô Viết Thụ",
+      "lon": 107.5833,
+      "lat": 16.4333,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1926–2000",
+      "mo_ta": "Kiến trúc sư nổi tiếng nhất Việt Nam thế kỷ 20, năm 1955 đoạt giải Khôi nguyên La Mã — người châu Á đầu tiên đoạt giải này. Tác giả thiết kế Dinh Độc Lập (1961–1966), Viện Đại học Huế, chợ Đà Lạt và nhiều công trình tôn giáo lớn.",
+      "dia_diem": "Làng Lang Xá, xã Thủy Thanh, thị xã Hương Thủy, Thừa Thiên Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Ủy ban Đoàn kết Công giáo Việt Nam — Kiến trúc sư Ngô Viết Thụ, một phật tử có nhiều công trình cho Công giáo — https://ubdkcgvn.org.vn/vi/tin-tuc-hoat-dong/kien-truc-su-ngo-viet-thu-mot-phat-tu-co-nhieu-cong-trinh-cho-cong-giao-o81E011E3.html"
+      ]
+    },
+    {
+      "id": "le-van-de",
+      "ten": "Lê Văn Đệ",
+      "lon": 106.3667,
+      "lat": 10.2333,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1906–1966",
+      "mo_ta": "Một trong 8 sinh viên khoá đầu tiên (1925) của Trường Cao đẳng Mỹ thuật Đông Dương, tốt nghiệp thủ khoa rồi du học Paris. Người Việt đầu tiên có tranh được Bảo tàng Luxembourg (Pháp) sưu tập; tham gia trang trí lễ đài Quảng trường Ba Đình ngày 2/9/1945, sau làm Giám đốc đầu tiên Trường Quốc gia Cao đẳng Mỹ thuật Sài Gòn.",
+      "dia_diem": "Mỏ Cày, Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Công an Nhân dân — Họa sĩ của những cái «nhất» và những cái «đầu tiên» — https://cand.vn/hoa-si-cua-nhung-cai-nhat-va-nhung-cai-dau-tien-post329869.html"
+      ]
+    },
+    {
+      "id": "le-pho",
+      "ten": "Lê Phổ",
+      "lon": 105.75,
+      "lat": 21.0333,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1907–2001",
+      "mo_ta": "Học khoá đầu Trường Mỹ thuật Đông Dương, sang Pháp định cư từ 1937, nổi tiếng với tranh lụa và sơn dầu vẽ thiếu nữ, trẻ em trong khung cảnh vườn hoa. Tác phẩm nhiều lần đạt giá cao tại các phiên đấu giá quốc tế Sotheby's, Christie's.",
+      "dia_diem": "Huyện Từ Liêm, tỉnh Hà Đông (nay thuộc Hà Nội)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Tranh của họa sĩ Lê Phổ và Vũ Cao Đàm lên sàn đấu giá tại Pháp — https://nhandan.vn/tranh-cua-hoa-si-le-pho-va-vu-cao-dam-len-san-dau-gia-tai-phap-post777272.html"
+      ]
+    },
+    {
+      "id": "mai-trung-thu",
+      "ten": "Mai Trung Thứ",
+      "lon": 106.6167,
+      "lat": 20.8667,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1906–1980",
+      "mo_ta": "Sinh viên khoá đầu Trường Mỹ thuật Đông Dương, sang Pháp từ 1937, nổi tiếng với tranh lụa vẽ thiếu nữ Việt Nam. Đồng thời là nhà làm phim tài liệu, đã ghi lại nhiều thước phim quý về chuyến thăm Pháp năm 1946 của Chủ tịch Hồ Chí Minh.",
+      "dia_diem": "Xã Tân Tiến, huyện An Dương, TP Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Một tấm lòng với quê hương Việt Nam — https://nhandan.vn/mot-tam-long-voi-que-huong-viet-nam-post673275.html"
+      ]
+    },
+    {
+      "id": "vu-cao-dam",
+      "ten": "Vũ Cao Đàm",
+      "lon": 106.1167,
+      "lat": 20.3333,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1908–2000",
+      "mo_ta": "Hoạ sĩ kiêm điêu khắc gia, học khoá đầu Trường Mỹ thuật Đông Dương, sang Pháp định cư đầu thập niên 1930. Sáng tác cả tranh sơn dầu, sơn mài lẫn điêu khắc, mang đậm tinh thần văn hoá Việt hoà quyện phong cách hiện đại phương Tây.",
+      "dia_diem": "Sinh tại Hà Nội; nguyên quán làng Trình Xuyên, huyện Vụ Bản, Nam Định",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Tranh của họa sĩ Lê Phổ và Vũ Cao Đàm lên sàn đấu giá tại Pháp — https://nhandan.vn/tranh-cua-hoa-si-le-pho-va-vu-cao-dam-len-san-dau-gia-tai-phap-post777272.html"
+      ]
+    },
+    {
+      "id": "ton-that-dao",
+      "ten": "Tôn Thất Đào",
+      "lon": 107.58,
+      "lat": 16.47,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1910–1979",
+      "mo_ta": "Tốt nghiệp Trường Cao đẳng Mỹ thuật Đông Dương ngành hội hoạ – trang trí, từng dạy vẽ cho hoàng tử Bảo Long thời vua Bảo Đại. Giám đốc sáng lập đầu tiên của Trường Quốc gia Cao đẳng Mỹ thuật Huế, có công đào tạo nhiều thế hệ hoạ sĩ xứ Huế.",
+      "dia_diem": "Huế, dòng dõi hoàng tộc nhà Nguyễn",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Đại học Huế — Họa sĩ Tôn Thất Đào đối với nền Mỹ thuật Huế — https://hueuni.edu.vn/portal/vi/index.php/News/hoa-si-ton-that-dao-doi-voi-nen-my-thuat-hue.html"
+      ]
+    },
+    {
+      "id": "nguyen-van-ty",
+      "ten": "Nguyễn Văn Tỵ",
+      "lon": 105.832,
+      "lat": 21.0263,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1917–1992",
+      "mo_ta": "Tốt nghiệp loại ưu Trường Cao đẳng Mỹ thuật Đông Dương, Tổng thư ký đầu tiên của Hội Mỹ thuật Việt Nam, có đóng góp cải tiến sơn mài bằng cách đưa xanh lam, sắc trắng vỏ trứng vào tranh. Tác phẩm «Nhà tranh gốc mít», «Bắc Nam xum họp» được truy tặng Giải thưởng Hồ Chí Minh (2000).",
+      "dia_diem": "Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Hội Liên hiệp Văn học Nghệ thuật Hà Tĩnh — Những tác phẩm sơn mài của họa sĩ Nguyễn Văn Tỵ — http://vanhocnghethuathatinh.org.vn/nhung-tac-pham-son-mai-cua-hoa-si-nguyen-van-ty-1584492373.html"
+      ]
+    },
+    {
+      "id": "phan-ke-an",
+      "ten": "Phan Kế An",
+      "lon": 105.5,
+      "lat": 21.1333,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1923–2018",
+      "mo_ta": "Cầm cọ hơn 70 năm, nổi tiếng với hơn 20 bức ký hoạ về Chủ tịch Hồ Chí Minh (như «Bác Hồ làm việc ở lán Nà Lừa») và tranh biếm hoạ dưới bút danh «Phan Kích». Tranh sơn mài tiêu biểu «Nhớ một chiều Tây Bắc» (1955); nhận Giải thưởng Nhà nước về Văn học nghệ thuật (2001).",
+      "dia_diem": "Thôn Mông Phụ, xã Đường Lâm, thị xã Sơn Tây, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam — Phan Kế An - Người họa sỹ cách mạng — https://vov.vn/van-hoa/phan-ke-an-nguoi-hoa-sy-cach-mang-post1095541.vov"
+      ]
+    },
+    {
+      "id": "ta-ty",
+      "ten": "Tạ Tỵ",
+      "lon": 105.8372,
+      "lat": 21.0278,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1921–2004",
+      "mo_ta": "Tốt nghiệp ngành sơn mài Trường Cao đẳng Mỹ thuật Đông Dương, người đi đầu trong phong cách hội hoạ lập thể ở Việt Nam từ thập niên 1940 đến 1960, chịu ảnh hưởng Picasso, Braque. Từ thập niên 1970 chuyển sang trừu tượng, tranh trưng bày tại Tokyo, San Francisco, New York, Paris.",
+      "dia_diem": "Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam — Tạ Tỵ - họa sĩ tiên phong về tranh lập thể tại Việt Nam — https://vov.vn/van-hoa-giai-tri/ta-ty-hoa-si-tien-phong-ve-tranh-lap-the-tai-viet-nam-532149.vov"
+      ]
+    },
+    {
+      "id": "nguyen-khang-hoa-si",
+      "ten": "Nguyễn Khang",
+      "lon": 105.8167,
+      "lat": 21.05,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1911–1989",
+      "mo_ta": "Một trong những bậc thầy sáng lập trường phái sơn mài hiện đại Việt Nam, phát triển kỹ thuật tán vàng bạc thành cám rồi rắc tạo hiệu ứng sáng bóng. Tác phẩm «Đánh cá đêm trăng» (1942–1943) lưu tại Bảo tàng Mỹ thuật Việt Nam; truy tặng Giải thưởng Hồ Chí Minh (2000).",
+      "dia_diem": "Làng Yên Thái, nay thuộc phường Bưởi, quận Tây Hồ, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thời báo Văn học nghệ thuật (Liên hiệp các Hội VHNT Việt Nam) — Họa sĩ Nguyễn Khang: Bậc thầy sơn mài — https://arttimes.vn/my-thuat/hoa-si-nguyen-khang-bac-thay-son-mai-c15a32113.html"
+      ]
+    },
+    {
+      "id": "hoang-tich-chu-hoa-si",
+      "ten": "Hoàng Tích Chù",
+      "lon": 105.95,
+      "lat": 21.1333,
+      "loai": "hoa-si",
+      "nam_hien_thi": "1912–2003",
+      "mo_ta": "Một trong bốn hoạ sĩ mở xưởng sơn mài đầu tiên ở Hà Nội, Viện trưởng Viện Mỹ nghệ Hà Nội, được xem là bậc thầy hội hoạ sơn mài nhờ cải tiến kỹ thuật thêm màu xanh vào bảng màu truyền thống. Tác phẩm tiêu biểu «Tổ đổi công» (1958), «Gánh lúa» (1961).",
+      "dia_diem": "Làng Phú Lưu, huyện Từ Sơn, Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thời báo Văn học nghệ thuật (Liên hiệp các Hội VHNT Việt Nam) — Hoạ sĩ Hoàng Tích Chù - Bậc thầy sơn mài — https://arttimes.vn/my-thuat-dong-duong/hoa-si-hoang-tich-chu-bac-thay-son-mai-c71a28735.html"
+      ]
+    },
+    {
+      "id": "trinh-cong-son",
+      "ten": "Trịnh Công Sơn",
+      "lon": 107.5909,
+      "lat": 16.4637,
+      "loai": "nhac-si",
+      "nam_hien_thi": "1939–2001",
+      "mo_ta": "Nhạc sĩ lớn của tân nhạc Việt Nam, sáng tác hàng trăm ca khúc về tình yêu, thân phận con người và khát vọng hòa bình (Diễm xưa, Nối vòng tay lớn). Gắn bó sâu sắc với Huế, nơi gia đình đang xây dựng không gian lưu niệm ông.",
+      "dia_diem": "Huế (gắn bó từ thời niên thiếu — chưa xác định địa chỉ cụ thể qua nguồn)",
+      "do_tin_cay_toa_do": "thấp",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "nhandan.vn — Có một cách khác để gặp lại Trịnh Công Sơn ở Huế — https://nhandan.vn/co-mot-cach-khac-de-gap-lai-trinh-cong-son-o-hue-post951795.html"
+      ]
+    },
+    {
+      "id": "doan-chuan",
+      "ten": "Đoàn Chuẩn",
+      "lon": 106.6881,
+      "lat": 20.8449,
+      "loai": "nhac-si",
+      "nam_hien_thi": "1924–2001",
+      "mo_ta": "«Ông hoàng nhạc tình», nhạc sĩ của mùa thu Hà Nội, sáng tác dưới bút danh chung «Đoàn Chuẩn – Từ Linh»: Thu quyến rũ, Gửi gió cho mây ngàn bay, Lá đổ muôn chiều. Xuất thân từ gia đình chủ hãng nước mắm Vạn Vân, Hải Phòng.",
+      "dia_diem": "TP Hải Phòng (chưa rõ phường/quận cụ thể qua nguồn)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "scov.gov.vn (Cục Bản quyền tác giả — Bộ VHTTDL) — Đoàn Chuẩn và những giai thoại — https://scov.gov.vn/van-hoc-nghe-thuat/giai-thoai-viet-nam/doan-chuan-va-nhung-giai-thoai.html",
+        "vnanet.vn (TTXVN) — Đoàn Chuẩn — https://nvsk.vnanet.vn/doan-chuan-6767.vna"
+      ]
+    },
+    {
+      "id": "la-hoi",
+      "ten": "La Hối",
+      "lon": 108.338,
+      "lat": 15.8801,
+      "loai": "nhac-si",
+      "nam_hien_thi": "1920–1945",
+      "mo_ta": "Nhạc sĩ liệt sĩ, lập «Hội yêu nhạc» tại Hội An năm 1939, sáng tác ca khúc bất hủ «Xuân và tuổi trẻ» (Thế Lữ đặt lời Việt). Bị quân Nhật bắt, tra tấn và xử bắn cùng 10 đồng chí chống phát-xít tháng 5/1945 khi mới 25 tuổi.",
+      "dia_diem": "Hội An, Quảng Nam — nơi ông dạy nhạc và hoạt động",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "nhandan.vn — Nhạc sĩ La Hối với ca khúc Xuân và tuổi trẻ — https://nhandan.vn/nhac-si-la-hoi-voi-ca-khuc-xuan-va-tuoi-tre-post437397.html"
+      ]
+    },
+    {
+      "id": "le-thuong",
+      "ten": "Lê Thương",
+      "lon": 105.8508,
+      "lat": 21.0216,
+      "loai": "nhac-si",
+      "nam_hien_thi": "1914–1996",
+      "mo_ta": "Tên thật Ngô Đình Hộ, một trong những tác giả tiên phong của nền tân nhạc Việt Nam. Nổi tiếng với trường ca ba bài «Hòn Vọng Phu» (1943–1947) và «Bản đàn xuân» (1938).",
+      "dia_diem": "Phố Hàm Long, Hà Nội (nơi sinh)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "cand.vn — Cố nhạc sĩ Lê Thương: Hòn vọng phu còn đó... — https://cand.vn/Tu-lieu-van-hoa/Co-nhac-si-Le-Thuong-Hon-vong-phu-con-do-i330587/"
+      ]
+    },
+    {
+      "id": "ut-tra-on",
+      "ten": "Út Trà Ôn (Nguyễn Thành Út)",
+      "lon": 105.9296,
+      "lat": 9.9394,
+      "loai": "cai-luong",
+      "nam_hien_thi": "1919–2001",
+      "mo_ta": "NSND, được tôn là «đệ nhất danh ca vọng cổ» miền Nam qua 70 năm ca diễn cải lương. Vai diễn/bài ca để đời «Tình anh bán chiếu», «Tuyệt tình ca»; sau này làm giám khảo và dìu dắt nhiều thế hệ nghệ sĩ.",
+      "dia_diem": "Huyện Trà Ôn (nay thuộc tỉnh Vĩnh Long)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "scov.gov.vn (Cục Bản quyền tác giả — Bộ VHTTDL) — NSND Út Trà Ôn - Anh nông dân thành đệ nhất danh ca — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/nsnd-ut-tra-on-anh-nong-dan-thanh-de-nhat-danh-ca.html"
+      ]
+    },
+    {
+      "id": "dam-lien",
+      "ten": "NSND Đàm Liên",
+      "lon": 109.033,
+      "lat": 13.15,
+      "loai": "tuong",
+      "nam_hien_thi": "1943–2020",
+      "mo_ta": "«Nữ hoàng sân khấu Tuồng», học tuồng từ năm 14 tuổi, năm 1970 ra Hà Nội gia nhập Nhà hát Tuồng Trung ương. Vai diễn để đời «Ông già cõng vợ đi xem hội» (diễn khoảng 2000 đêm), Đào Tam Xuân, Trưng Trắc; phong NSND năm 1993.",
+      "dia_diem": "Xã Xuân Long, huyện Đồng Xuân, tỉnh Phú Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "cand.vn — NSND Đàm Liên – người «làm giàu» cho nghệ thuật sân khấu Tuồng — https://cand.vn/nsnd-dam-lien-nguoi-lam-giau-cho-nghe-thuat-san-khau-tuong-post563564.html"
+      ]
+    },
+    {
+      "id": "vien-chau",
+      "ten": "Viễn Châu (Huỳnh Trí Bá)",
+      "lon": 106.28,
+      "lat": 9.57,
+      "loai": "soan-gia",
+      "nam_hien_thi": "1924–2016",
+      "mo_ta": "NSND, soạn giả cải lương được tôn là «vua vọng cổ», người khai sinh thể loại «tân cổ giao duyên» và «vọng cổ hài». Soạn hơn 50 vở cải lương và khoảng 2.000 bài vọng cổ, trong đó «Tình anh bán chiếu» (Út Trà Ôn ca) trở thành kinh điển.",
+      "dia_diem": "Xã Đôn Châu, huyện Trà Cú, tỉnh Trà Vinh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "nhandan.vn — Đêm tôn vinh «ông vua vọng cổ» Viễn Châu — https://nhandan.vn/dem-ton-vinh-ong-vua-vong-co-vien-chau-post843074.html"
+      ]
+    },
+    {
+      "id": "the-anh",
+      "ten": "NSND Thế Anh",
+      "lon": 105.8342,
+      "lat": 21.0278,
+      "loai": "dien-anh",
+      "nam_hien_thi": "1938–2019",
+      "mo_ta": "Diễn viên tiên phong của điện ảnh cách mạng Việt Nam, khoảng 60 phim điện ảnh/truyền hình. Vai Trung úy Phương trong «Nổi gió» (1965, phim đầu tay) và Ba Duy trong «Mối tình đầu» (1977, Nam diễn viên chính xuất sắc LHP Việt Nam 1980).",
+      "dia_diem": "Hà Nội (nơi sinh)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "hanoimoi.vn — NSND Thế Anh: Lãng tử tài hoa của điện ảnh Việt Nam — https://hanoimoi.vn/nsnd-the-anh-lang-tu-tai-hoa-cua-dien-anh-viet-nam-532331.html"
+      ]
+    },
+    {
+      "id": "thanh-nga",
+      "ten": "Thanh Nga",
+      "lon": 106.6297,
+      "lat": 10.8231,
+      "loai": "cai-luong",
+      "nam_hien_thi": "?–1978",
+      "mo_ta": "«Nữ hoàng sân khấu» cải lương, ca hát từ năm 10 tuổi, nổi danh năm 16 tuổi qua các vở «Tiếng trống Mê Linh», «Nửa đời hương phấn», «Thái hậu Dương Vân Nga». Bị bắn chết cùng chồng trước cổng nhà tại Sài Gòn đêm 26/11/1978 khi che chắn cho con trai.",
+      "dia_diem": "TP Hồ Chí Minh (nơi hoạt động nghệ thuật và bị ám sát 1978) — chưa xác định quê quán qua nguồn hợp lệ",
+      "do_tin_cay_toa_do": "thấp",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "vov.vn — Nữ hoàng cải lương Thanh Nga và vụ ám sát chấn động dư luận — https://vov.vn/giai-tri/nghe-si/nu-hoang-cai-luong-thanh-nga-va-vu-am-sat-chan-dong-du-luan-880306.vov"
+      ]
+    },
+    {
+      "id": "sy-tien",
+      "ten": "NSND Sỹ Tiến",
+      "lon": 105.8517,
+      "lat": 21.0349,
+      "loai": "cai-luong",
+      "nam_hien_thi": "1916–1982",
+      "mo_ta": "Người có công đưa cải lương từ Nam ra Bắc cuối thập niên 1930 và nâng tầm nghệ thuật cải lương miền Bắc. Vở «Kiều» do ông chuyển thể đoạt huy chương vàng năm 1962, từng sang biểu diễn tại Geneva (Thụy Sĩ) năm 1955.",
+      "dia_diem": "Phố Đào Duy Từ, Hoàn Kiếm, Hà Nội (nơi sinh)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "cand.vn — NSND Sỹ Tiến: Đại đa vẫn tỏa bóng — https://cand.vn/nsnd-sy-tien-dai-da-van-toa-bong-post477695.html"
+      ]
+    },
+    {
+      "id": "tao-mat",
+      "ten": "NSND Tào Mạt",
+      "lon": 105.5833,
+      "lat": 21.0333,
+      "loai": "cheo",
+      "nam_hien_thi": "1930–1993",
+      "mo_ta": "Nhà viết kịch chèo, tác giả bộ ba «Bài ca giữ nước» (Lý Thánh Tông tuyển hiền, Ỷ Lan nhiếp chính, Lý Nhân Tông học làm vua) — tác phẩm kinh điển của sân khấu chèo cách mạng, được Giải thưởng Hồ Chí Minh.",
+      "dia_diem": "Xã Hữu Bằng, huyện Thạch Thất, tỉnh Hà Tây (nay thuộc TP Hà Nội)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "hanoimoi.vn — Về quê NSND Tào Mạt — https://hanoimoi.vn/ve-que-nsnd-tao-mat-167218.html"
+      ]
+    },
+    {
+      "id": "nguyen-dinh-phuc",
+      "ten": "Nguyễn Đình Phúc",
+      "lon": 105.7667,
+      "lat": 20.9167,
+      "loai": "nhac-si",
+      "nam_hien_thi": "1919–2001",
+      "mo_ta": "Nhạc sĩ kiêm họa sĩ, thành viên sáng lập Hội Nhạc sĩ Việt Nam, tác giả ca khúc «Cô lái đò» (phổ thơ Nguyễn Bính) và «Tiếng đàn bầu». Người đầu tiên ghi âm nhạc dân tộc (quan họ) bằng ký âm 5 dòng kẻ phương Tây (nghiên cứu 1938–1962).",
+      "dia_diem": "Xã Cự Khê, huyện Thanh Oai, tỉnh Hà Tây (nay thuộc TP Hà Nội)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "cand.vn — Nhạc sỹ - họa sỹ Nguyễn Đình Phúc: Trọn một vòng nhân thế — https://cand.vn/nhac-sy-hoa-sy-nguyen-dinh-phuc-tron-mot-vong-nhan-the-post540939.html"
+      ]
+    },
+    {
+      "id": "hoang-van",
+      "ten": "Hoàng Vân (Lê Văn Ngọ)",
+      "lon": 105.8544,
+      "lat": 21.035,
+      "loai": "nhac-si",
+      "nam_hien_thi": "1930–2018",
+      "mo_ta": "Nhạc sĩ sáng tác «Hò kéo pháo» (1954), «Quảng Bình quê ta ơi» và hàng loạt ca khúc, hợp xướng, nhạc phim/kịch/chèo/cải lương. Giải thưởng Hồ Chí Minh về VHNT năm 2000; năm 2025 UNESCO ghi danh bộ sưu tập tư liệu của ông vào Di sản Tư liệu Thế giới.",
+      "dia_diem": "Phố Hàng Thùng, Hà Nội (nơi sinh)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "nhandan.vn — Nhạc sĩ Hoàng Vân qua đời — https://nhandan.vn/nhac-si-hoang-van-qua-doi-post315900.html"
+      ]
+    },
+    {
+      "id": "trinh-thinh",
+      "ten": "NSND Trịnh Thịnh",
+      "lon": 105.8364,
+      "lat": 21.0293,
+      "loai": "dien-anh",
+      "nam_hien_thi": "1927–2014",
+      "mo_ta": "Diễn viên thuộc thế hệ đầu điện ảnh cách mạng Việt Nam, nổi tiếng với các vai «ông già nhà quê» hóm hỉnh. Vai diễn để đời trong «Chung một dòng sông» (1956), «Vợ chồng A Phủ», «Thị trấn yên tĩnh» (Nam diễn viên chính xuất sắc LHP 1988).",
+      "dia_diem": "Hà Nội (nơi sinh)",
+      "do_tin_cay_toa_do": "thấp",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "nhandan.vn — NSND Trịnh Thịnh - người tận tâm cống hiến trong từng vai diễn — https://nhandan.vn/nsnd-trinh-thinh-nguoi-tan-tam-cong-hien-trong-tung-vai-dien-post200183.html"
+      ]
+    },
+    {
+      "id": "dao-mong-long",
+      "ten": "NSND Đào Mộng Long",
+      "lon": 105.7,
+      "lat": 18.6667,
+      "loai": "nsnd",
+      "nam_hien_thi": "1915–2006",
+      "mo_ta": "Khởi nghiệp cải lương rồi chuyển sang kịch nói, thành trụ cột diễn viên vai phụ tại Nhà hát Kịch Việt Nam (thành lập 1954) với phong cách tạo cá tính riêng cho từng nhân vật phụ. Tham gia khởi nghĩa 1940–1941 và sáng tác ca khúc cách mạng; phong NSND năm 1984.",
+      "dia_diem": "Huyện Nghi Xuân, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "cand.vn — NSND Đào Mộng Long: Nỗi sầu muộn mênh mông... — https://cand.vn/nsnd-dao-mong-long-noi-sau-muon-menh-mong-post597604.html"
+      ]
+    },
+    {
+      "id": "nguyen-xuan-khoat",
+      "ten": "Nguyễn Xuân Khoát",
+      "lon": 105.832,
+      "lat": 21.0293,
+      "loai": "nhac-si",
+      "nam_hien_thi": "1910–1994",
+      "mo_ta": "Chủ tịch đầu tiên của Hội Nhạc sĩ Việt Nam, được coi là «con chim đầu đàn» của tân nhạc Việt Nam với công lao lớn về âm nhạc cổ truyền. Tác giả các ca khúc «Thằng Bờm», «Con voi», «Tiếng chuông nhà thờ».",
+      "dia_diem": "Hà Nội (hoạt động và sinh sống) — chưa xác định địa chỉ cụ thể qua nguồn",
+      "do_tin_cay_toa_do": "thấp",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "cand.vn — Một lần đến thăm nhạc sĩ Nguyễn Xuân Khoát — https://cand.vn/mot-lan-den-tham-nhac-si-nguyen-xuan-khoat-post327310.html"
+      ]
+    },
+    {
+      "id": "nguyen-van-vinh",
+      "ten": "Nguyễn Văn Vĩnh",
+      "lon": 105.9333,
+      "lat": 20.7167,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1882–1936",
+      "mo_ta": "Nhà báo, dịch giả, người sáng lập và chủ bút nhiều tờ báo Quốc ngữ đầu tiên như Đăng Cổ Tùng Báo, Đông Dương Tạp Chí, Trung Bắc Tân Văn. Có công quảng bá chữ Quốc ngữ và dịch Truyện Kiều sang tiếng Pháp.",
+      "dia_diem": "Làng Phượng Dực, huyện Phú Xuyên, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Hội Nhà báo Việt Nam — Nhà báo Nguyễn Văn Vĩnh - một ngòi bút đa sắc — https://hoinhabao.vn/Nha-bao-Nguyen-Van-Vinh--mot-ngoi-but-da-sac_bv-63145"
+      ]
+    },
+    {
+      "id": "hoang-tung",
+      "ten": "Hoàng Tùng",
+      "lon": 106.13,
+      "lat": 20.58,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1920–2010",
+      "mo_ta": "Nguyên Tổng Biên tập Báo Nhân Dân trong nhiều thập kỷ, nhà lý luận báo chí cách mạng có công định hình phong cách xã luận của báo Đảng. Từng bị thực dân Pháp giam ở nhà tù Sơn La (1940–1945) trước khi tham gia Cách mạng Tháng Tám.",
+      "dia_diem": "Xã Nhân Hòa, huyện Lý Nhân, tỉnh Hà Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Nhà báo Hoàng Tùng: Cây đại thụ của làng báo cách mạng — https://nhandan.vn/nha-bao-hoang-tung-cay-dai-thu-cua-lang-bao-cach-mang-post947559.html",
+        "Cổng TTĐT Chính phủ — Tiểu sử đồng chí Hoàng Tùng — https://bcp.cdnchinhphu.vn/Uploaded_VGP/nguyenductuan/20100701/Tieu%20su%20DC%20Hoang%20Tung.htm"
+      ]
+    },
+    {
+      "id": "tran-lam",
+      "ten": "Trần Lâm (Trần Quảng Vận)",
+      "lon": 106.3333,
+      "lat": 20.7667,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1922–2011",
+      "mo_ta": "Một trong những người sáng lập và là Tổng Giám đốc đầu tiên của Đài Tiếng nói Việt Nam, giữ cương vị này liên tục 43 năm (1945–1988). Có công đặt nền móng cho ngành phát thanh, truyền hình Việt Nam qua các thời kỳ chiến tranh.",
+      "dia_diem": "Xã Đoàn Tùng, huyện Thanh Miện, tỉnh Hải Dương",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "VOV — Vĩnh biệt nhà báo Trần Lâm — https://vov.vn/xa-hoi/vinh-biet-nha-bao-tran-lam-167662.vov",
+        "VOV — Nhà báo Trần Lâm: Quá khứ luôn ở trước mặt — https://vov.vn/xa-hoi/nha-bao-tran-lam-qua-khu-luon-o-truoc-mat-213828.vov"
+      ]
+    },
+    {
+      "id": "xuan-thuy",
+      "ten": "Xuân Thủy (Nguyễn Trọng Nhâm)",
+      "lon": 105.7469,
+      "lat": 21.0245,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1912–1985",
+      "mo_ta": "Nhà báo cách mạng, chủ bút báo Cứu Quốc thời kỳ 1944–1947, từng phụ trách báo Suối Reo khi bị giam ở nhà tù Sơn La. Sau này là nhà ngoại giao, Bộ trưởng, Trưởng đoàn đàm phán của Việt Nam tại Hội nghị Paris.",
+      "dia_diem": "Xã Phương Canh xưa, nay phường Xuân Phương, quận Nam Từ Liêm, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Đồng chí Xuân Thủy với báo Suối Reo và báo Cứu Quốc — https://baotanglichsu.vn/vi/Articles/3097/70854/djong-chi-xuan-thuy-voi-bao-suoi-reo-va-bao-cuu-quoc.html"
+      ]
+    },
+    {
+      "id": "tran-huy-lieu",
+      "ten": "Trần Huy Liệu",
+      "lon": 106.05,
+      "lat": 20.32,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1901–1969",
+      "mo_ta": "Nhà báo, nhà sử học, chủ bút nhiều tờ báo yêu nước như Đông Pháp Thời Báo, Tin Tức; khi bị đày ở Côn Đảo vẫn duy trì các tờ báo bí mật Hòn Cau, Tiếng Sóng Bể. Sau Cách mạng Tháng Tám là Viện trưởng đầu tiên của Viện Sử học.",
+      "dia_diem": "Làng Vân Cát, xã Kim Thái, huyện Vụ Bản, tỉnh Nam Định",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trần Huy Liệu - Nhà sử học, Nhà báo (1901-1969) — https://baotanglichsu.vn/vi/Articles/3098/16904/tran-huy-lieu-nha-su-hoc-nha-bao-1901-1969.html"
+      ]
+    },
+    {
+      "id": "hoang-tich-chu",
+      "ten": "Hoàng Tích Chu",
+      "lon": 105.9494,
+      "lat": 21.0989,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1897–1933",
+      "mo_ta": "Nhà báo được xem là người đầu tiên cách tân báo chí Việt Nam theo lối viết ngắn gọn, hiện đại. Sáng lập tờ Đông Tây (1929) — một trong những tờ báo bán chạy nhất Bắc Kỳ đương thời, từng làm chủ bút Khai Hóa, Hà Thành Ngọ Báo.",
+      "dia_diem": "Làng Phù Lưu, huyện Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Công an Nhân dân — Nhà báo Hoàng Tích Chu: Như ánh sao băng — https://cand.vn/nha-bao-hoang-tich-chu-nhu-anh-sao-bang-post9177.html"
+      ]
+    },
+    {
+      "id": "tran-bach-dang",
+      "ten": "Trần Bạch Đằng (Trương Gia Triều)",
+      "lon": 106.7009,
+      "lat": 10.7769,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1926–2007",
+      "mo_ta": "Nhà báo, nhà văn, nhà lãnh đạo cách mạng ở Nam Bộ; tham gia lãnh đạo Tổng khởi nghĩa Sài Gòn năm 1945 và giữ vị trí chỉ huy tại nội thành trong Tổng tiến công Mậu Thân 1968. Để lại hàng trăm bài chính luận sắc sảo trên báo chí cách mạng.",
+      "dia_diem": "Hoạt động báo chí, cách mạng chủ yếu tại Sài Gòn – Gia Định (nay TP. Hồ Chí Minh); quê quán cụ thể chưa xác định rõ trong tư liệu công khai đã kiểm tra",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Sài Gòn Giải Phóng — Kỷ niệm 100 năm ngày sinh đồng chí Trần Bạch Đằng — https://www.sggp.org.vn/ky-niem-100-nam-ngay-sinh-dong-chi-tran-bach-dang-15-7-1926-15-7-2026-nha-lanh-dao-tai-nang-cay-but-sac-sao-post862308.html",
+        "Bảo tàng Lịch sử Quốc gia — Trần Bạch Đằng với sự nghiệp báo chí — https://baotanglichsu.vn/vi/Articles/3098/72353/tran-bach-djang-voi-su-nghiep-bao-chi.html"
+      ]
+    },
+    {
+      "id": "diep-van-ky",
+      "ten": "Diệp Văn Kỳ",
+      "lon": 107.5909,
+      "lat": 16.4637,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1895–1945",
+      "mo_ta": "Nhà báo Nam Kỳ, cộng tác Đông Pháp Thời Báo rồi sáng lập nhật báo Thần Chung (1929) — tờ báo có tiếng nói phản biện, từng bị chính quyền thực dân đình bản năm 1939. Sinh tại Huế, hoạt động báo chí chính tại Sài Gòn và Cao Lãnh.",
+      "dia_diem": "Sinh tại Huế; hoạt động chính tại Sài Gòn và Cao Lãnh (Đồng Tháp)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Tháp — Diệp Văn Kỳ — https://dongthap.gov.vn/chi-tiet-bai-viet-nvls?id=6454607"
+      ]
+    },
+    {
+      "id": "luu-quy-ky",
+      "ten": "Lưu Quý Kỳ",
+      "lon": 108.1333,
+      "lat": 15.8667,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1919–1982",
+      "mo_ta": "Nhà báo cách mạng gắn bó gần 50 năm với nghề, tham gia tổ chức hơn mười tờ báo qua hai cuộc kháng chiến. Nguyên Tổng Thư ký Hội Nhà báo Việt Nam, Phó Chủ tịch Tổ chức Quốc tế các Nhà báo (1981).",
+      "dia_diem": "Làng Hóa Đông, huyện Đại Lộc, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đà Nẵng — Lưu Quý Kỳ - Nhà báo của Đảng — https://baodanang.vn/luu-quy-ky-nha-bao-cua-dang-3110648.html"
+      ]
+    },
+    {
+      "id": "truong-minh-ky",
+      "ten": "Trương Minh Ký",
+      "lon": 106.6969,
+      "lat": 10.8033,
+      "loai": "dich-gia",
+      "nam_hien_thi": "1855–1900",
+      "mo_ta": "Nhà báo, dịch giả tiên phong của báo chí và văn học chữ Quốc ngữ Nam Kỳ, đồng sáng lập Gia Định Báo — tờ báo Quốc ngữ đầu tiên của Việt Nam. Có công dịch thuật, sáng tác tuồng và sưu tầm văn học dân gian Nam Bộ.",
+      "dia_diem": "Gia Định xưa (nay khu vực Bình Thạnh – Gò Vấp, TP. Hồ Chí Minh)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Trung học Chợ Lách — Trương Minh Ký - Nhà văn viết bằng Quốc ngữ — https://trunghoccholach.com/2023/03/17592/"
+      ]
+    },
+    {
+      "id": "nguyen-van-nguyen",
+      "ten": "Nguyễn Văn Nguyễn",
+      "lon": 106.36,
+      "lat": 10.36,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1910–1953",
+      "mo_ta": "Nhà báo, nhà văn hóa Nam Bộ, cây bút chính luận sắc sảo trên các báo La Lutte, Cứu Quốc, Nhân Dân Miền Nam; phóng sự của ông về Côn Đảo vạch trần chế độ lao tù thực dân. Giám đốc đầu tiên của Đài Phát thanh Tiếng nói Nam Bộ (1946).",
+      "dia_diem": "Làng Điều Hòa, nay TP. Mỹ Tho, tỉnh Tiền Giang",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo An Giang — Nhà báo, nhà văn hóa Nguyễn Văn Nguyễn — https://baoangiang.com.vn/nha-bao-nha-van-hoa-nguyen-van-nguyen-a415512.html"
+      ]
+    },
+    {
+      "id": "quang-dam",
+      "ten": "Quang Đạm",
+      "lon": 105.499,
+      "lat": 18.698,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1913–1999",
+      "mo_ta": "Nhà báo lý luận kỳ cựu của Báo Nhân Dân từ những ngày đầu thành lập (1951), được đồng nghiệp ví như một cuốn từ điển sống nhờ vốn hiểu biết uyên thâm về Nho học và văn hóa Việt Nam. Từng thiết kế hệ thống mật mã đầu tiên sau Cách mạng Tháng Tám.",
+      "dia_diem": "Xã Hoành Sơn, huyện Nam Đàn, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Quân đội Nhân dân — Ngọn bút vinh quang, cuộc đời thanh đạm — https://ct.qdnd.vn/ho-so-tu-lieu/ngon-but-vinh-quang-cuoc-doi-thanh-dam-523161"
+      ]
+    },
+    {
+      "id": "luong-khac-ninh",
+      "ten": "Lương Khắc Ninh",
+      "lon": 106.3756,
+      "lat": 10.2433,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1862–1943",
+      "mo_ta": "Chủ bút Nông Cổ Mín Đàm (1901) — tờ báo kinh tế bằng chữ Quốc ngữ đầu tiên của Việt Nam. Qua chuyên mục Thương Cổ Luận, ông cổ vũ tư tưởng chấn hưng thương nghiệp và phát triển kinh tế dân tộc.",
+      "dia_diem": "Làng An Hội, nay phường An Hội, TP. Bến Tre, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đà Nẵng — Lương Khắc Ninh, người uống trà bàn chuyện... đất nước — https://baodanang.vn/luong-khac-ninh-nguoi-uong-tra-ban-chuyen-dat-nuoc-3287570.html"
+      ]
+    },
+    {
+      "id": "do-duc-duc",
+      "ten": "Đỗ Đức Dục",
+      "lon": 105.7667,
+      "lat": 21.07,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1915–1993",
+      "mo_ta": "Nhà báo, học giả, chủ bút tạp chí Thanh Nghị và báo Độc Lập (từ 1944) — cơ quan ngôn luận của Đảng Dân chủ Việt Nam. Nhà nghiên cứu văn học Việt Nam và Pháp, từng giữ chức Phó Bí thư Đảng Dân chủ Việt Nam, Thứ trưởng Bộ Văn hóa.",
+      "dia_diem": "Xóm Trung, làng Xuân Tảo, nay phường Xuân Đỉnh, quận Bắc Từ Liêm, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Đỗ Đức Dục - Nhà trí thức Cách mạng dấn thân — https://baotanglichsu.vn/vi/Articles/3090/18464/djo-djuc-duc-nha-tri-thuc-cach-mang-dan-than.html",
+        "nguoikesu.com — Đỗ Đức Dục — https://nguoikesu.com/nhan-vat/do-duc-duc"
+      ]
+    },
+    {
+      "id": "nguyen-chanh-sat",
+      "ten": "Nguyễn Chánh Sắt",
+      "lon": 105.2333,
+      "lat": 10.8,
+      "loai": "dich-gia",
+      "nam_hien_thi": "1869–1947",
+      "mo_ta": "Nhà văn, nhà báo, dịch giả Nam Kỳ; giữ chức chủ bút, quản lý tờ Nông Cổ Mín Đàm khoảng sáu năm. Nổi tiếng với các bản dịch tiểu thuyết cổ Trung Hoa như Tam Quốc Diễn Nghĩa, Thủy Hử sang chữ Quốc ngữ.",
+      "dia_diem": "Làng Long Phú, thị xã Tân Châu, tỉnh An Giang",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thanh Niên — Nhân vật nổi tiếng Nam kỳ lục tỉnh: Nguyễn Chánh Sắt - nhà văn, nhà báo đa tài — https://thanhnien.vn/nhan-vat-noi-tieng-nam-ky-luc-tinh-nguyen-chanh-sat-nha-van-nha-bao-da-tai-185250624214107891.htm"
+      ]
+    },
+    {
+      "id": "nguyen-thanh-le",
+      "ten": "Nguyễn Thành Lê",
+      "lon": 105.9139,
+      "lat": 20.5406,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1920–2006",
+      "mo_ta": "Nhà báo Báo Nhân Dân, Tổng Thư ký Hội Nhà báo Việt Nam (1950–1962), người phát ngôn của đoàn đàm phán Việt Nam tại Hội nghị Paris (1968–1973) với hàng trăm cuộc họp báo. Tác giả sách Cuộc đàm phán Paris về Việt Nam.",
+      "dia_diem": "Xã Tiên Tân xưa, nay TP. Phủ Lý, tỉnh Hà Nam",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Công an Nhân dân — Kỷ niệm 100 năm ngày sinh nhà báo Nguyễn Thành Lê — https://cand.vn/ky-niem-100-nam-ngay-sinh-nha-bao-nguyen-thanh-le-nguoi-phat-ngon-cua-mot-thoi-post571368.html"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Nhà khoa học & trí thức Việt Nam thế kỷ 20 (đã mất) — các chuyên ngành toán, lý, hoá, sinh, y, nông, sử, địa chất chưa có trong CSDL. Toạ độ ước theo quê quán/làng sinh (khi biết cụ thể) hoặc trung tâm huyện/tỉnh khi chỉ biết cấp tỉnh. Nội dung theo Báo Nhân Dân, VUSTA, ĐHQGHN, Tia Sáng, TTXVN, Báo Nghệ An — KHÔNG dùng Wikipedia làm nguồn.",
+  "ghi_chu": "Nhà khoa học & trí thức Việt Nam thế kỷ 20 (đã mất) — các chuyên ngành toán, lý, hoá, sinh, y, nông, sử, địa chất chưa có trong CSDL. Toạ độ ước theo quê quán/làng sinh (khi biết cụ thể) hoặc trung tâm huyện/tỉnh khi chỉ biết cấp tỉnh. Nội dung theo Báo Nhân Dân, VUSTA, ĐHQGHN, Tia Sáng, TTXVN, Báo Nghệ An — KHÔNG dùng Wikipedia làm nguồn. [Phase 3: hợp nhất 4 lớp → nhóm «Trí thức · Nhà khoa học · Giáo dục cận–hiện đại».]",
   "ngay_cap_nhat": "2026-07-21",
   "sources": [
     "Báo Nhân Dân — nhandan.vn",
@@ -9,140 +9,1364 @@
     "Thông tấn xã Việt Nam (TTXVN) — nvsk.vnanet.vn",
     "Tư liệu lịch sử — tulieulichsu.com",
     "Văn nghệ (Hội Nhà văn VN) — vanvn.vn",
-    "Báo Nghệ An — baonghean.vn"
+    "Báo Nghệ An — baonghean.vn",
+    "Báo Nhân Dân điện tử — nhandan.vn",
+    "Báo Đại biểu Nhân dân — daibieunhandan.vn",
+    "Báo Giáo dục và Thời đại — giaoducthoidai.vn",
+    "Báo Thanh Niên — thanhnien.vn",
+    "Bảo tàng Lịch sử Quốc gia — baotanglichsu.vn",
+    "Cổng TTĐT tỉnh Nghệ An — nghean.gov.vn",
+    "nhandan.vn",
+    "qdnd.vn",
+    "dangcongsan.vn",
+    "baochinhphu.vn",
+    "cổng *.gov.vn",
+    "Báo Tuổi Trẻ — tuoitre.vn",
+    "Báo Công an nhân dân — cand.vn",
+    "Viện Ngôn ngữ học (VASS) — vienngonnguhoc.vass.gov.vn",
+    "Trung tâm Di sản các nhà khoa học Việt Nam — meddom.org",
+    "ĐHQG Hà Nội — vnu.edu.vn, ussh.vnu.edu.vn",
+    "nguoidothi.net.vn",
+    "Bảo tàng Lịch sử Quân sự Việt Nam — btllang.mod.gov.vn",
+    "Thông tấn xã Việt Nam — nvsk.vnanet.vn",
+    "kienviet.net",
+    "Báo Đại Đoàn Kết — daidoanket.vn",
+    "Tạp chí Kiến trúc — tapchikientruc.com.vn",
+    "Hội Kiến trúc sư Việt Nam — via.gov.vn",
+    "Báo Pháp luật Việt Nam — baophapluat.vn",
+    "Báo Công an Nhân dân — cand.vn",
+    "nongnghiepmoitruong.vn"
   ],
   "items": [
     {
       "id": "nguyen-thuc-hao",
       "ten": "Nguyễn Thúc Hào",
-      "lon": 105.5406, "lat": 18.6975,
+      "lon": 105.5406,
+      "lat": 18.6975,
       "loai": "toan",
       "nam_hien_thi": "1912–2009",
       "mo_ta": "Giáo sư toán học đầu tiên của Việt Nam (cùng đợt phong với Lê Văn Thiêm), du học Pháp tại Marseille và Aix-en-Provence. Làm Giám đốc Đại học Khoa học Hà Nội sau Cách mạng tháng Tám, rồi Hiệu trưởng Đại học Sư phạm Vinh suốt 15 năm (1959–1974), góp phần đặt nền móng giáo dục đại học miền Trung.",
       "dia_diem": "Quê xã Nam Đàn (nay thị trấn Nam Đàn), huyện Nam Đàn, tỉnh Nghệ An",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["Báo Nhân Dân — «Nguyễn Thúc Hào — GS Toán học đầu tiên của Việt Nam» — https://nhandan.vn/nguyen-thuc-hao-gs-toan-hoc-dau-tien-cua-viet-nam-post589883.html"]
+      "nguon": [
+        "Báo Nhân Dân — «Nguyễn Thúc Hào — GS Toán học đầu tiên của Việt Nam» — https://nhandan.vn/nguyen-thuc-hao-gs-toan-hoc-dau-tien-cua-viet-nam-post589883.html"
+      ]
     },
     {
       "id": "dao-van-tien",
       "ten": "Đào Văn Tiến",
-      "lon": 106.1683, "lat": 20.4341,
+      "lon": 106.1683,
+      "lat": 20.4341,
       "loai": "sinh",
       "nam_hien_thi": "1920–1995",
       "mo_ta": "Nhà vạn vật học, người đặt nền móng ngành sinh học hiện đại Việt Nam; khảo sát tài nguyên động vật rừng miền Bắc và Trung, phát hiện nhiều loài mới, biên soạn các khoá định loại lưỡng cư – bò sát – thú đầu tiên bằng tiếng Việt. Được phong Nhà giáo Nhân dân (1989) và Giải thưởng Hồ Chí Minh (1996).",
       "dia_diem": "Sinh tại thành phố Nam Định, tỉnh Nam Định",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["Đại học Quốc gia Hà Nội — «Giáo sư Đào Văn Tiến: Người đặt nền móng cho ngành sinh học Việt Nam» — https://vnu.edu.vn/giao-su-dao-van-tien-nguoi-dat-nen-mong-cho-nganh-sinh-hoc-viet-nam-post12156.html"]
+      "nguon": [
+        "Đại học Quốc gia Hà Nội — «Giáo sư Đào Văn Tiến: Người đặt nền móng cho ngành sinh học Việt Nam» — https://vnu.edu.vn/giao-su-dao-van-tien-nguoi-dat-nen-mong-cho-nganh-sinh-hoc-viet-nam-post12156.html"
+      ]
     },
     {
       "id": "nguyen-van-chien",
       "ten": "Nguyễn Văn Chiển",
-      "lon": 106.0397, "lat": 21.0322,
+      "lon": 106.0397,
+      "lat": 21.0322,
       "loai": "dia-chat",
       "nam_hien_thi": "1919–2009",
       "mo_ta": "Nhà địa chất được coi là người sáng lập ngành địa chất học Việt Nam; sáng lập Khoa Địa chất Đại học Tổng hợp Hà Nội, xây dựng hệ thuật ngữ địa chất tiếng Việt, chủ trì chương trình điều tra Tây Nguyên (1976–1980) và Atlas quốc gia Việt Nam (1981–1985). Nguyên Phó Chủ tịch Viện Khoa học Việt Nam, sáng lập Hội Địa chất Việt Nam.",
       "dia_diem": "Quê làng Ngọc Nội, xã Trạm Lộ, huyện Thuận Thành, tỉnh Bắc Ninh",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["Khoa Địa chất, Trường ĐH Khoa học Tự nhiên (ĐHQGHN) — «Người anh cả đáng kính của ngành địa chất Việt Nam» — https://geology.hus.vnu.edu.vn/nguoi-anh-ca-dang-kinh-cua-nganh-dia-chat/", "Tư liệu lịch sử — tulieulichsu.com/nhan-vat-lich-su/nguyen-van-chien-784.html"]
+      "nguon": [
+        "Khoa Địa chất, Trường ĐH Khoa học Tự nhiên (ĐHQGHN) — «Người anh cả đáng kính của ngành địa chất Việt Nam» — https://geology.hus.vnu.edu.vn/nguoi-anh-ca-dang-kinh-cua-nganh-dia-chat/",
+        "Tư liệu lịch sử — tulieulichsu.com/nhan-vat-lich-su/nguyen-van-chien-784.html"
+      ]
     },
     {
       "id": "dang-vu-hy",
       "ten": "Đặng Vũ Hỷ",
-      "lon": 106.3242, "lat": 20.2667,
+      "lon": 106.3242,
+      "lat": 20.2667,
       "loai": "y",
       "nam_hien_thi": "1910–1972",
       "mo_ta": "Một trong 12 giáo sư y khoa đầu tiên của Việt Nam (1955), chuyên khoa da liễu; tiên phong xây dựng mạng lưới điều trị bệnh phong ở miền Bắc, điều trị hơn 4.150 bệnh nhân, sáng lập khoa Da liễu Đại học Y Hà Nội. Công bố 48 công trình khoa học và 5 sách chuyên khảo về phong, bệnh lây qua đường tình dục và da liễu.",
       "dia_diem": "Làng Hành Thiện, xã Xuân Hồng, huyện Xuân Trường, tỉnh Nam Định",
       "do_tin_cay_toa_do": "cao",
       "trang_thai": "draft",
-      "nguon": ["VUSTA — «GS Đặng Vũ Hỷ — một nhân cách toàn diện và tiêu biểu trong ngành y học Việt Nam» — https://vusta.vn/gs-dang-vu-hy-mot-nhan-cach-toan-dien-va-tieu-bieu-trong-nganh-y-hoc-viet-nam-p88172.html"]
+      "nguon": [
+        "VUSTA — «GS Đặng Vũ Hỷ — một nhân cách toàn diện và tiêu biểu trong ngành y học Việt Nam» — https://vusta.vn/gs-dang-vu-hy-mot-nhan-cach-toan-dien-va-tieu-bieu-trong-nganh-y-hoc-viet-nam-p88172.html"
+      ]
     },
     {
       "id": "ton-that-bach",
       "ten": "Tôn Thất Bách",
-      "lon": 105.8284, "lat": 21.0058,
+      "lon": 105.8284,
+      "lat": 21.0058,
       "loai": "y",
       "nam_hien_thi": "1946–2004",
       "mo_ta": "Phó Giáo sư, Viện sĩ, chuyên gia đầu ngành phẫu thuật tim mạch và gan mật; Hiệu trưởng Đại học Y Hà Nội 10 năm, Giám đốc Bệnh viện Việt Đức. Được bầu vào Viện Hàn lâm Phẫu thuật Paris, mất khi đang đi khám chữa bệnh tình nguyện tại Lào Cai năm 2004.",
       "dia_diem": "Trường Đại học Y Hà Nội (nơi công tác/giảng dạy chính) — chưa xác định rõ quê quán trong nguồn đã fetch",
       "do_tin_cay_toa_do": "thap",
       "trang_thai": "draft",
-      "nguon": ["Báo Nhân Dân — «Phó Giáo sư, Viện sĩ Tôn Thất Bách, một nhà phẫu thuật tài năng, một thầy thuốc nhân hậu» — https://nhandan.vn/pho-giao-su-vien-si-ton-that-bach-mot-nha-phau-thuat-tai-nang-mot-thay-thuoc-nhan-hau-post465023.html"]
+      "nguon": [
+        "Báo Nhân Dân — «Phó Giáo sư, Viện sĩ Tôn Thất Bách, một nhà phẫu thuật tài năng, một thầy thuốc nhân hậu» — https://nhandan.vn/pho-giao-su-vien-si-ton-that-bach-mot-nha-phau-thuat-tai-nang-mot-thay-thuoc-nhan-hau-post465023.html"
+      ]
     },
     {
       "id": "nguyen-cong-tieu",
       "ten": "Nguyễn Công Tiễu",
-      "lon": 106.0511, "lat": 20.6464,
+      "lon": 106.0511,
+      "lat": 20.6464,
       "loai": "nong",
       "nam_hien_thi": "1892–1976",
       "mo_ta": "Nhà nông học tiên phong nghiên cứu động thực vật đồng bằng sông Hồng (bèo tây, me nước, côn trùng thuỷ sinh, tằm); công trình 1928 về côn trùng ăn được ở Bắc Kỳ vẫn được trích dẫn 75 năm sau. Sáng lập và chủ bút hai tạp chí «Khoa học tạp chí» và «Vệ nông báo», tác giả sách mô tả 171 loài thực vật Việt Nam.",
       "dia_diem": "Quê tỉnh Hưng Yên",
       "do_tin_cay_toa_do": "thap",
       "trang_thai": "draft",
-      "nguon": ["Tạp chí Tia Sáng — «Xuất bản các bài báo du ký của nhà khoa học Việt Nam thế hệ đầu Nguyễn Công Tiễu» — https://tiasang.com.vn/xuat-ban-cac-bai-bao-du-ky-cua-nha-khoa-hoc-viet-nam-the-he-dau-nguyen-cong-tieu-4975406.html"]
+      "nguon": [
+        "Tạp chí Tia Sáng — «Xuất bản các bài báo du ký của nhà khoa học Việt Nam thế hệ đầu Nguyễn Công Tiễu» — https://tiasang.com.vn/xuat-ban-cac-bai-bao-du-ky-cua-nha-khoa-hoc-viet-nam-the-he-dau-nguyen-cong-tieu-4975406.html"
+      ]
     },
     {
       "id": "nguy-nhu-kon-tum",
       "ten": "Ngụy Như Kon Tum",
-      "lon": 107.4667, "lat": 16.4500,
+      "lon": 107.4667,
+      "lat": 16.45,
       "loai": "ly",
       "nam_hien_thi": "1913–1991",
       "mo_ta": "Nhà vật lý học tại Sorbonne (Paris), từng nghiên cứu vật lý hạt nhân dưới hướng dẫn Frédéric Joliot-Curie; Hiệu trưởng đầu tiên của Trường Đại học Tổng hợp Hà Nội (tiền thân ĐHQGHN) đến năm 1982. Cùng GS Nguyễn Xiển xây dựng ngành địa vật lý Việt Nam, dẫn đầu đoàn Việt Nam dự Hội nghị Địa vật lý Quốc tế tại Moskva (1957).",
       "dia_diem": "Quê huyện Hương Trà, tỉnh Thừa Thiên (nay Thừa Thiên Huế)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["Tư liệu lịch sử — «Tiểu sử của Ngụy Như Kontum (1913–1991)» — https://tulieulichsu.com/nhan-vat-lich-su/nguy-nhu-kontum-795.html"]
+      "nguon": [
+        "Tư liệu lịch sử — «Tiểu sử của Ngụy Như Kontum (1913–1991)» — https://tulieulichsu.com/nhan-vat-lich-su/nguy-nhu-kontum-795.html"
+      ]
     },
     {
       "id": "nguyen-xien",
       "ten": "Nguyễn Xiển",
-      "lon": 105.6900, "lat": 18.6750,
+      "lon": 105.69,
+      "lat": 18.675,
       "loai": "khac",
       "nam_hien_thi": "1907–1997",
       "mo_ta": "Nhà khí tượng học, người đặt nền móng ngành khí tượng Việt Nam độc lập khỏi sự kiểm soát của Pháp; Giám đốc Sở Khí tượng sau Cách mạng tháng Tám. Xác định miền Bắc Việt Nam có khí hậu nhiệt đới gió mùa (sửa quan niệm cận nhiệt đới trước đó), đồng tác giả hai giáo trình đại học tiếng Việt đầu tiên (1947).",
       "dia_diem": "Quê thôn Trung Mỹ, xã Yên Trường, huyện Hưng Nguyên (nay phường Hồng Sơn, TP Vinh), tỉnh Nghệ An",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["Văn nghệ (Hội Nhà văn Việt Nam) — «Giáo sư Nguyễn Xiển — 'nhà khí tượng của nhân dân'» — https://vanvn.vn/giao-su-nguyen-xien-nha-khi-tuong-cua-nhan-dan/"]
+      "nguon": [
+        "Văn nghệ (Hội Nhà văn Việt Nam) — «Giáo sư Nguyễn Xiển — 'nhà khí tượng của nhân dân'» — https://vanvn.vn/giao-su-nguyen-xien-nha-khi-tuong-cua-nhan-dan/"
+      ]
     },
     {
       "id": "nguyen-khanh-toan",
       "ten": "Nguyễn Khánh Toàn",
-      "lon": 107.5200, "lat": 16.5300,
+      "lon": 107.52,
+      "lat": 16.53,
       "loai": "su",
       "nam_hien_thi": "1905–1993",
       "mo_ta": "Giáo sư, Viện sĩ, nhà sử học và nhà tổ chức khoa học xã hội; chủ trì hai cuộc cải cách giáo dục (1950, 1960) góp phần xoá mù chữ đồng bằng Bắc Bộ. Sáng lập và xây dựng hệ thống viện nghiên cứu khoa học xã hội Việt Nam (Sử học, Văn học, Kinh tế học, Hán Nôm, Đông Nam Á học), tác giả hơn 100 công trình nghiên cứu.",
       "dia_diem": "Sinh tại TP Vinh, Nghệ An; quê gốc làng Thanh Lương, xã Hương Xuân, huyện Hương Trà, tỉnh Thừa Thiên Huế",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["TTXVN — «Giáo sư, Viện sĩ Nguyễn Khánh Toàn: Trọn đời vì nền Giáo dục và Khoa học xã hội Việt Nam» — https://nvsk.vnanet.vn/giao-su-vien-si-nguyen-khanh-toan-tron-doi-vi-nen-giao-duc-va-khoa-hoc-xa-hoi-viet-nam-1-174017.vna"]
+      "nguon": [
+        "TTXVN — «Giáo sư, Viện sĩ Nguyễn Khánh Toàn: Trọn đời vì nền Giáo dục và Khoa học xã hội Việt Nam» — https://nvsk.vnanet.vn/giao-su-vien-si-nguyen-khanh-toan-tron-doi-vi-nen-giao-duc-va-khoa-hoc-xa-hoi-viet-nam-1-174017.vna"
+      ]
     },
     {
       "id": "do-tat-loi",
       "ten": "Đỗ Tất Lợi",
-      "lon": 105.8333, "lat": 21.2667,
+      "lon": 105.8333,
+      "lat": 21.2667,
       "loai": "y",
       "nam_hien_thi": "1919–2008",
       "mo_ta": "Giáo sư dược học, tác giả bộ sách «Những cây thuốc và vị thuốc Việt Nam» (430 loài thực vật, 51 vị thuốc động vật, 19 vị khoáng vật) — được giới khoa học Liên Xô đánh giá là công trình đặt nền tảng khoa học dược liệu, không chỉ là ghi chép dân tộc dược học. Chuyển toàn bộ danh pháp dược liệu từ tiếng Pháp/Latin sang tiếng Việt/Latin; nhận Giải thưởng Hồ Chí Minh (1996).",
       "dia_diem": "Quê làng Phù Xá, huyện Kim Anh, tỉnh Phúc Yên (nay xã Phú Minh, huyện Sóc Sơn, Hà Nội)",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["Báo Nhân Dân (chuyên đề) — «Giáo sư Đỗ Tất Lợi và hành trình làm rạng danh nền dược học Việt» — https://special.nhandan.vn/giaosudotatloi/index.html", "Báo Tuổi Trẻ — «GS.TS Đỗ Tất Lợi qua đời» — https://tuoitre.vn/gsts-do-tat-loi-qua-doi-242127.htm"]
+      "nguon": [
+        "Báo Nhân Dân (chuyên đề) — «Giáo sư Đỗ Tất Lợi và hành trình làm rạng danh nền dược học Việt» — https://special.nhandan.vn/giaosudotatloi/index.html",
+        "Báo Tuổi Trẻ — «GS.TS Đỗ Tất Lợi qua đời» — https://tuoitre.vn/gsts-do-tat-loi-qua-doi-242127.htm"
+      ]
     },
     {
       "id": "hoang-dinh-cau",
       "ten": "Hoàng Đình Cầu",
-      "lon": 105.3167, "lat": 18.7667,
+      "lon": 105.3167,
+      "lat": 18.7667,
       "loai": "y",
       "nam_hien_thi": "1917–2005",
       "mo_ta": "Giáo sư, người mở đường cho ngành phẫu thuật lồng ngực Việt Nam, phẫu thuật thành công khoảng 2.000 ca bệnh phổi nặng (1960–1990); đầu tiên áp dụng châm tê trong phẫu thuật phổi ở Việt Nam. Đồng tác giả Từ điển Y học Pháp–Việt đầu tiên, chủ trì điều tra hậu quả chất độc da cam/dioxin (1985–1999).",
       "dia_diem": "Quê xã Võ Liệt, huyện Thanh Chương, tỉnh Nghệ An",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
-      "nguon": ["Báo Nhân Dân — «Giáo sư Hoàng Đình Cầu, thầy thuốc của nhân dân» — https://nhandan.vn/giao-su-hoang-dinh-cau-thay-thuoc-cua-nhan-dan-post289043.html", "Báo Nghệ An — «Hoàng Đình Cầu — người con ưu tú của quê hương xứ Nghệ» — https://baonghean.vn/hoang-dinh-cau-nguoi-con-uu-tu-cua-que-huong-xu-nghe-10052802.html"]
+      "nguon": [
+        "Báo Nhân Dân — «Giáo sư Hoàng Đình Cầu, thầy thuốc của nhân dân» — https://nhandan.vn/giao-su-hoang-dinh-cau-thay-thuoc-cua-nhan-dan-post289043.html",
+        "Báo Nghệ An — «Hoàng Đình Cầu — người con ưu tú của quê hương xứ Nghệ» — https://baonghean.vn/hoang-dinh-cau-nguoi-con-uu-tu-cua-que-huong-xu-nghe-10052802.html"
+      ]
+    },
+    {
+      "id": "vo-truong-toan",
+      "ten": "Võ Trường Toản",
+      "lon": 106.58,
+      "lat": 10.05,
+      "loai": "nha-giao",
+      "nam_hien_thi": "?–1792",
+      "mo_ta": "Nhà giáo có kiến thức uyên thâm, uy tín khắp miền Nam cuối thế kỷ 18, cống hiến cả đời cho giáo dục Nam Bộ. Nhà thờ ông tại Bến Tre được công nhận di tích cấp quốc gia năm 1993.",
+      "dia_diem": "Nhà thờ cụ Võ Trường Toản, xã Bảo Thạnh, huyện Ba Tri, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Khánh thành nhà thờ Cụ Võ Trường Toản — https://nhandan.vn/khanh-thanh-nha-tho-cu-vo-truong-toan-post566793.html"
+      ]
+    },
+    {
+      "id": "nguyen-truong-to",
+      "ten": "Nguyễn Trường Tộ",
+      "lon": 105.62,
+      "lat": 18.65,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1828–1871",
+      "mo_ta": "Nhà canh tân yêu nước, uyên bác Hán học, nổi tiếng với các bản điều trần đề xuất canh tân đất nước cuối thế kỷ 19. Hằng năm địa phương tổ chức dâng hương kỷ niệm ngày sinh của ông.",
+      "dia_diem": "Làng Bùi Chu, xã Hưng Trung, huyện Hưng Nguyên, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Tưởng niệm nhà canh tân yêu nước Nguyễn Trường Tộ — https://nhandan.vn/tuong-niem-nha-canh-tan-yeu-nuoc-nguyen-truong-to-post248454.html"
+      ]
+    },
+    {
+      "id": "dang-thai-mai",
+      "ten": "Đặng Thai Mai",
+      "lon": 105.3,
+      "lat": 18.6667,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1902–1984",
+      "mo_ta": "Giáo sư, nhà văn hóa, nhà sư phạm mẫu mực, đặt nền móng cho mỹ học và lý luận phê bình văn học Việt Nam. Từng là Bộ trưởng Bộ Giáo dục, Chủ nhiệm khoa Ngữ văn Đại học Tổng hợp Hà Nội, Hiệu trưởng Đại học Sư phạm Hà Nội.",
+      "dia_diem": "Huyện Thanh Chương, tỉnh Nghệ An (quê hương)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đại biểu Nhân dân — Đặng Thai Mai - Người đặt nền móng cho lý luận phê bình văn học Việt Nam — https://daibieunhandan.vn/dang-thai-mai-nguoi-dat-nen-mong-cho-ly-luan-phe-binh-van-hoc-viet-nam-10162130.html"
+      ]
+    },
+    {
+      "id": "cao-xuan-huy",
+      "ten": "Cao Xuân Huy",
+      "lon": 105.6,
+      "lat": 18.95,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1900–1983",
+      "mo_ta": "Nhà nghiên cứu triết học/văn học cổ, gắn bó với nghề dạy học tại Diễn Châu (Nghệ An) trong kháng chiến chống Pháp; nhiều học giả sau này tìm đến thụ giáo. Về sau phụ trách chuyên môn tại Viện Văn học.",
+      "dia_diem": "Diễn Châu, tỉnh Nghệ An (nơi dạy học)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Một học giả 'bất yếm, bất quyện' — https://nhandan.vn/mot-hoc-gia-bat-yem-bat-quyen-post594233.html"
+      ]
+    },
+    {
+      "id": "tran-van-giau",
+      "ten": "Trần Văn Giàu",
+      "lon": 106.4,
+      "lat": 10.6,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1911–2010",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, Anh hùng Lao động; nguyên Bí thư Xứ ủy Nam Kỳ, Chủ tịch Ủy ban kháng chiến Nam Bộ (1945), sau xây dựng ngành dự bị đại học và sư phạm cao cấp. Nhà sử học, nhà giáo lớn của Nam Bộ.",
+      "dia_diem": "Nhà lưu niệm GS Trần Văn Giàu, xã An Lục Long, huyện Châu Thành, tỉnh Long An",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Tiểu sử đồng chí Trần Văn Giàu — https://nhandan.vn/tieu-su-dong-chi-tran-van-giau-post515408.html"
+      ]
+    },
+    {
+      "id": "nguyen-lan",
+      "ten": "Nguyễn Lân",
+      "lon": 106.0667,
+      "lat": 20.9333,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1906–2003",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, nhà biên soạn từ điển nổi tiếng. Được Nhà nước trao Giải thưởng Nhà nước về khoa học công nghệ cho cụm công trình giáo dục học và từ điển tiếng Việt.",
+      "dia_diem": "Làng Ngọc Lập, huyện Mỹ Hào, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Giáo sư - Nhà giáo Nhân dân Nguyễn Lân, vinh quang nghề thầy — https://baotanglichsu.vn/vi/Articles/3098/14846/giao-su-nha-giao-nhan-dan-nguyen-lan-vinh-quang-nghe-thay.html"
+      ]
+    },
+    {
+      "id": "hoang-xuan-han",
+      "ten": "Hoàng Xuân Hãn",
+      "lon": 105.58,
+      "lat": 18.6,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1908–1996",
+      "mo_ta": "Học giả uyên bác trên nhiều lĩnh vực (sử học, ngôn ngữ học, toán học), tác giả bộ «Danh từ khoa học» và giáo trình phổ thông 1945. Từng là Bộ trưởng Giáo dục và Mỹ thuật (1945); truy tặng Giải thưởng Hồ Chí Minh năm 2000.",
+      "dia_diem": "Xã Bùi La Nhân (xã Nhân Thọ cũ), huyện Đức Thọ, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Giáo sư Hoàng Xuân Hãn: Một sự nghiệp, một người con đất Việt — https://special.nhandan.vn/giao-su-hoang-xuan-han-mot-su-nghiep-mot-nguoi-con-dat-viet/index.html"
+      ]
+    },
+    {
+      "id": "nguyen-khac-vien",
+      "ten": "Nguyễn Khắc Viện",
+      "lon": 105.4167,
+      "lat": 18.4667,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1913–1997",
+      "mo_ta": "Bác sĩ Nhi khoa tốt nghiệp Bác sĩ Nội trú tại Pháp, con trai cả của Hoàng giáp Nguyễn Khắc Niêm. Sau 1963 sáng lập, chủ biên tạp chí «Nghiên cứu Việt Nam» (tiếng Pháp/Anh), Giám đốc Nhà xuất bản Ngoại văn, có công lớn cho thông tin đối ngoại và giáo dục.",
+      "dia_diem": "Xã Sơn Hòa, huyện Hương Sơn, tỉnh Hà Tĩnh (quê gia tộc Nguyễn Khắc)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đại biểu Nhân dân — Lòng yêu nước của một vị đại khoa — https://daibieunhandan.vn/long-yeu-nuoc-cua-mot-vi-dai-khoa-10345367.html"
+      ]
+    },
+    {
+      "id": "nguyen-manh-tuong",
+      "ten": "Nguyễn Mạnh Tường",
+      "lon": 105.8237,
+      "lat": 21.0389,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1909–1997",
+      "mo_ta": "Giáo sư, tiến sĩ luật; được mời tham gia Đoàn đại biểu Việt Nam Dân chủ Cộng hòa tại Hội nghị Đà Lạt (1946); giảng dạy tại Trường Bưởi (nay THPT Chu Văn An) cùng các trí thức Nguyễn Xiển, Nguyễn Văn Huyên, Hoàng Xuân Hãn.",
+      "dia_diem": "Trường Bưởi (nay THPT Chu Văn An), Thụy Khuê, Tây Hồ, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đại biểu Nhân dân — Ra mắt sách về luật sư Nguyễn Mạnh Tường — https://daibieunhandan.vn/ra-mat-sach-ve-luat-su-nguyen-manh-tuong-10288662.html"
+      ]
+    },
+    {
+      "id": "tran-duc-thao",
+      "ten": "Trần Đức Thảo",
+      "lon": 105.95,
+      "lat": 21.1,
+      "loai": "triet-gia",
+      "nam_hien_thi": "1917–1993",
+      "mo_ta": "Nhà triết học Việt Nam duy nhất được «Từ điển triết gia thế giới» dành gần hai trang; năm 1943 đỗ thủ khoa (đồng hạng) kỳ thi thạc sĩ triết học tại Pháp. Học tập và trưởng thành ở Hà Nội.",
+      "dia_diem": "Làng Song Tháp, xã Châu Khê, thị xã Từ Sơn, tỉnh Bắc Ninh (quê gốc)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Trần Đức Thảo - Nhà triết học tài danh yêu nước — https://nhandan.vn/tran-duc-thao-nha-triet-hoc-tai-danh-yeu-nuoc-post175450.html"
+      ]
+    },
+    {
+      "id": "cao-xuan-duc",
+      "ten": "Cao Xuân Dục",
+      "lon": 105.6,
+      "lat": 18.9,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1843–1923",
+      "mo_ta": "Đông các Đại học sĩ, Tổng tài Quốc sử quán triều Nguyễn; đỗ Cử nhân khoa Bính Tý (1876), hơn 37 năm làm quan. Học giả có công sưu tầm, bảo tồn thư tịch cổ, chủ biên các bộ sách sử địa như «Đại Nam dư địa chí ước biên».",
+      "dia_diem": "Làng Thịnh Mỹ xưa, nay xã An Châu, tỉnh Nghệ An (Di tích Mộ và Nhà thờ Cao Xuân Dục)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cổng TTĐT tỉnh Nghệ An — Xã An Châu đón bằng xếp hạng di tích Mộ và Nhà thờ Cao Xuân Dục — https://nghean.gov.vn/tin-noi-bat/xa-an-chau-don-bang-xep-hang-di-tich-mo-va-nha-tho-cao-xuan-duc-1023212"
+      ]
+    },
+    {
+      "id": "dang-xuan-bang",
+      "ten": "Đặng Xuân Bảng",
+      "lon": 106.333,
+      "lat": 20.233,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "thế kỷ XIX",
+      "mo_ta": "Tiến sĩ triều Nguyễn, tác giả «Việt sử cương mục tiết yếu» — được giới sử học trích dẫn khi khảo cứu quốc hiệu Đại Việt và các sự kiện triều Lý–Trần–Lê. Ông nội của Tổng Bí thư Trường Chinh.",
+      "dia_diem": "Làng Hành Thiện, xã Xuân Hồng, huyện Xuân Trường, tỉnh Nam Định",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khu nhà lưu niệm cố Tổng Bí thư Trường Chinh, nơi gìn giữ ngọn lửa tinh thần cách mạng — https://baotanglichsu.vn/vi/Articles/3096/76470/khu-nha-luu-niem-co-tong-bi-thu-truong-chinh-noi-gin-giu-ngon-lua-tinh-than-cach-mang.html"
+      ]
+    },
+    {
+      "id": "le-van-mien",
+      "ten": "Lê Văn Miến",
+      "lon": 105.75,
+      "lat": 18.7167,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1874–1943",
+      "mo_ta": "Họa sĩ và nhà giáo, một trong những người Việt đầu tiên du học Pháp, học tại Trường Mỹ thuật Quốc gia Paris (1891–1894). Về nước dạy tại Quốc học Huế rồi làm Hiệu trưởng Quốc Tử Giám Huế; tác giả hai bức sơn dầu cổ nhất Việt Nam «Bình văn» và «Chân dung cụ Tú Mền».",
+      "dia_diem": "Xã Nghi Long, huyện Nghi Lộc, tỉnh Nghệ An (quê)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Lần đầu tiên đưa tranh ra nước ngoài phục chế — https://nhandan.vn/lan-dau-tien-dua-tranh-ra-nuoc-ngoai-phuc-che-post422448.html"
+      ]
+    },
+    {
+      "id": "duong-quang-ham",
+      "ten": "Dương Quảng Hàm",
+      "lon": 105.93,
+      "lat": 20.9,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1898–1946",
+      "mo_ta": "Nhà giáo, nhà nghiên cứu văn học, tác giả bộ «Việt Nam văn học sử yếu» (1943) — văn học sử phổ thông bằng chữ Quốc ngữ đầu tiên của Việt Nam. Dạy và làm Hiệu trưởng Trường Bưởi (nay Chu Văn An, Hà Nội); hy sinh những ngày đầu toàn quốc kháng chiến 1946.",
+      "dia_diem": "Xã Mễ Sở, huyện Văn Giang, tỉnh Hưng Yên (làng Phú Thị cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Giáo dục và Thời đại — Dương Quảng Hàm - gương mặt trí thức tiêu biểu đầu thế kỷ XX — https://giaoducthoidai.vn/duong-quang-ham-guong-mat-tri-thuc-tieu-bieu-dau-the-ky-xx-post314624.html"
+      ]
+    },
+    {
+      "id": "hoang-ngoc-phach",
+      "ten": "Hoàng Ngọc Phách",
+      "lon": 105.5833,
+      "lat": 18.5833,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1896–1973",
+      "mo_ta": "Nhà văn, nhà giáo, tác giả tiểu thuyết «Tố Tâm» (1925) — mở đầu khuynh hướng tiểu thuyết lãng mạn hiện đại Việt Nam. Sau 1945 giữ các chức vụ giáo dục quan trọng (Giám đốc Học khu Bắc Ninh, Giám đốc Trường Cao đẳng Sư phạm Trung ương), sau đó nghiên cứu tại Viện Văn học.",
+      "dia_diem": "Xã Tùng Ảnh, huyện Đức Thọ, tỉnh Hà Tĩnh (quê)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Giáo dục và Thời đại — Người tiên phong trong lĩnh vực tiểu thuyết hiện đại — https://giaoducthoidai.vn/nguoi-tien-phong-trong-linh-vuc-tieu-thuyet-hien-dai-post661632.html"
+      ]
+    },
+    {
+      "id": "tran-van-khe",
+      "ten": "Trần Văn Khê",
+      "lon": 106.34,
+      "lat": 10.35,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1921–2015",
+      "mo_ta": "Nhà nghiên cứu âm nhạc dân tộc, tiến sĩ âm nhạc học người Việt đầu tiên tại Pháp (Sorbonne, 1958). Hơn 50 năm nghiên cứu, quảng bá âm nhạc dân tộc ra thế giới, góp phần để UNESCO công nhận Nhã nhạc cung đình Huế, Cồng chiêng Tây Nguyên, Ca trù, Đờn ca tài tử.",
+      "dia_diem": "Làng Đông Hòa, huyện Châu Thành, tỉnh Tiền Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Giáo sư Trần Văn Khê từ trần — https://nhandan.vn/giao-su-tran-van-khe-tu-tran-post235817.html"
+      ]
+    },
+    {
+      "id": "nguyen-tu-chi",
+      "ten": "Nguyễn Từ Chi",
+      "lon": 105.75,
+      "lat": 18.42,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1925–1995",
+      "mo_ta": "Nhà dân tộc học, tác giả các công trình kinh điển «Cơ cấu tổ chức của làng Việt cổ truyền ở Bắc Bộ», «Hoa văn Mường», «Người Mường ở Hòa Bình» — được truy tặng Giải thưởng Hồ Chí Minh. Nổi tiếng với các nghiên cứu điền dã chuyên sâu về văn hóa Mường và Tây Nguyên.",
+      "dia_diem": "Xã Ích Hậu, huyện Can Lộc, tỉnh Hà Tĩnh (quê gốc; lớn lên ở Huế)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Chân dung nhà dân tộc học qua một cuộc trưng bày — https://nhandan.vn/chan-dung-nha-dan-toc-hoc-qua-mot-cuoc-trung-bay-post420899.html"
+      ]
+    },
+    {
+      "id": "nguyen-hien-le",
+      "ten": "Nguyễn Hiến Lê",
+      "lon": 105.43,
+      "lat": 21.13,
+      "loai": "hoc-gia",
+      "nam_hien_thi": "1912–1984",
+      "mo_ta": "Học giả, nhà văn, dịch giả, nhà giáo dục với hơn 100 tác phẩm, gồm bộ «Bách gia tranh minh» nghiên cứu triết học cổ đại Trung Quốc và các bản dịch như «Đắc nhân tâm», «Quẳng gánh lo đi và vui sống». Gắn bó gần nửa thế kỷ với miền Tây Nam Bộ.",
+      "dia_diem": "Làng Phương Khê, huyện Ba Vì, thành phố Hà Nội (nơi sinh)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thanh Niên — Nhiều điều ít biết về học giả Nguyễn Hiến Lê — https://thanhnien.vn/nhieu-dieu-it-biet-ve-hoc-gia-nguyen-hien-le-185781443.htm"
+      ]
+    },
+    {
+      "id": "ngo-bao-chau",
+      "ten": "Ngô Bảo Châu",
+      "lon": 105.8412,
+      "lat": 21.0245,
+      "loai": "nha-khoa-hoc",
+      "nam_hien_thi": "sinh 1972",
+      "mo_ta": "Giáo sư toán học, sinh năm 1972 tại Hà Nội, học sinh khối chuyên toán Đại học Khoa học Tự nhiên Hà Nội. Ngày 19/8/2010 tại Đại hội Toán học Thế giới (Ấn Độ), nhận Huy chương Fields cho chứng minh «Bổ đề cơ bản» — nhà toán học Việt Nam đầu tiên đoạt giải thưởng này.",
+      "dia_diem": "Hà Nội (nơi sinh, học khối chuyên toán ĐH KHTN Hà Nội)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Giáo sư Ngô Bảo Châu đoạt giải toán học Fields — https://nhandan.vn/giao-su-ngo-bao-chau-doat-giai-toan-hoc-fields-post501448.html"
+      ]
+    },
+    {
+      "id": "dinh-xuan-lam",
+      "ten": "Đinh Xuân Lâm",
+      "lon": 105.38,
+      "lat": 18.5,
+      "loai": "su-gia",
+      "nam_hien_thi": "1925–2017",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, một trong «tứ trụ sử học» Việt Nam (Lâm–Lê–Tấn–Vượng), giảng dạy tại Khoa Lịch sử Trường Đại học Tổng hợp Hà Nội từ 1956. Công bố hơn 560 công trình, hơn 80 đầu sách; chuyên sâu phong trào vũ trang chống Pháp cuối thế kỷ 19 – đầu 20.",
+      "dia_diem": "Huyện Hương Sơn, tỉnh Hà Tĩnh (quê quán)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Bản lĩnh sử học Đinh Xuân Lâm — https://nhandan.vn/ban-linh-su-hoc-dinh-xuan-lam-post860817.html"
+      ]
+    },
+    {
+      "id": "phan-huy-le",
+      "ten": "Phan Huy Lê",
+      "lon": 105.75,
+      "lat": 18.5,
+      "loai": "su-gia",
+      "nam_hien_thi": "1934–2018",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, một trong «tứ trụ sử học» Việt Nam, Chủ tịch Hội Khoa học Lịch sử Việt Nam, người khai mở ngành Đông Phương học tại Việt Nam. Nhận Giải thưởng Hồ Chí Minh, Huân chương Độc lập hạng Nhì, Giải thưởng Văn hóa châu Á Fukuoka (Nhật Bản).",
+      "dia_diem": "Xã Thạch Châu, huyện Lộc Hà, tỉnh Hà Tĩnh (quê)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Tổ chức trọng thể Lễ tang Giáo sư, Nhà giáo Nhân dân Phan Huy Lê — https://nhandan.vn/to-chuc-trong-the-le-tang-giao-su-nha-giao-nhan-dan-phan-huy-le-post328109.html"
+      ]
+    },
+    {
+      "id": "ha-van-tan",
+      "ten": "Hà Văn Tấn",
+      "lon": 105.7667,
+      "lat": 18.6833,
+      "loai": "su-gia",
+      "nam_hien_thi": "1937–2019",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, một trong «tứ trụ sử học» Việt Nam; Viện trưởng Viện Khảo cổ học từ 1988. Học giả uyên bác về khảo cổ học, lịch sử Việt Nam cổ-trung đại, lý luận sử học, Phật học, văn hóa học; hướng dẫn 25 nghiên cứu sinh, công bố 298 công trình.",
+      "dia_diem": "Xã Tiên Điền, huyện Nghi Xuân, tỉnh Hà Tĩnh (quê)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — GS Hà Văn Tấn từ trần — https://nhandan.vn/gs-ha-van-tan-tu-tran-post378290.html"
+      ]
+    },
+    {
+      "id": "tran-quoc-vuong",
+      "ten": "Trần Quốc Vượng",
+      "lon": 106.3145,
+      "lat": 20.9373,
+      "loai": "su-gia",
+      "nam_hien_thi": "1934–2005",
+      "mo_ta": "Giáo sư sử học, khảo cổ học, văn hóa học, một trong «tứ trụ sử học» Việt Nam; phong hàm giáo sư năm 1980; Chủ nhiệm bộ môn Khảo cổ học, Trưởng môn Văn hóa học ĐHQG Hà Nội; người khai mở ngành Hà Nội học.",
+      "dia_diem": "Thành phố Hải Dương, tỉnh Hải Dương (nơi sinh)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — GS Trần Quốc Vượng - Cây đại thụ sử học đã ra đi — https://nhandan.vn/gs-tran-quoc-vuong-cay-dai-thu-su-hoc-da-ra-di-post409212.html"
+      ]
+    },
+    {
+      "id": "nguyen-ngoc-ky",
+      "ten": "Nguyễn Ngọc Ký",
+      "lon": 106.3,
+      "lat": 20.1333,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1947–2022",
+      "mo_ta": "Nhà văn, Nhà giáo Ưu tú — thầy giáo viết chữ bằng chân, biểu tượng nghị lực Việt Nam. Năm 4 tuổi bị liệt cả hai tay, kiên trì rèn luyện viết bằng chân, trở thành nhà giáo và nhà văn Việt Nam đầu tiên viết bằng chân.",
+      "dia_diem": "Huyện Hải Hậu, tỉnh Nam Định (quê quán)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Thầy giáo Nguyễn Ngọc Ký, người viết chữ bằng chân, qua đời — https://nhandan.vn/thay-giao-nguyen-ngoc-ky-nguoi-viet-chu-bang-chan-qua-doi-post717241.html"
+      ]
+    },
+    {
+      "id": "van-nhu-cuong",
+      "ten": "Văn Như Cương",
+      "lon": 105.6833,
+      "lat": 19.1667,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1937–2017",
+      "mo_ta": "Phó giáo sư Toán học, nhà giáo, người sáng lập Trường THPT Lương Thế Vinh (Hà Nội, 1989) — trường phổ thông dân lập đầu tiên của Việt Nam thời kỳ đổi mới. Bảo vệ luận án phó tiến sĩ Toán tại Viện Hàn lâm Khoa học Liên Xô (1971).",
+      "dia_diem": "Làng Quỳnh Đôi, huyện Quỳnh Lưu, tỉnh Nghệ An (quê)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân điện tử — PGS Văn Như Cương qua đời ở tuổi 80 — https://nhandan.vn/pgs-van-nhu-cuong-qua-doi-o-tuoi-80-post305986.html"
+      ]
+    },
+    {
+      "id": "dang-van-ngu",
+      "ten": "Đặng Văn Ngữ",
+      "lon": 107.5992,
+      "lat": 16.4498,
+      "loai": "thay-thuoc",
+      "nam_hien_thi": "1910–1967",
+      "mo_ta": "Giáo sư, bác sĩ ký sinh trùng học, người đầu tiên nghiên cứu và sản xuất thành công thuốc kháng sinh Penicillin ở Việt Nam trong kháng chiến chống Pháp; hy sinh năm 1967 khi đang nghiên cứu vắc-xin phòng sốt rét trên chiến trường Trường Sơn. Được truy tặng danh hiệu Anh hùng Lao động và Giải thưởng Hồ Chí Minh.",
+      "dia_diem": "An Cựu, Hương Thủy (nay phường An Cựu), TP Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Giáo sư Penicillin Đặng Văn Ngữ: Người trí thức dấn thân — https://special.nhandan.vn/GiaosuDangVanNgu/index.html",
+        "Cục Văn thư và Lưu trữ Nhà nước — Giáo sư - bác sĩ Đặng Văn Ngữ — https://luutru.gov.vn/giao-su-bac-si-dang-van-ngu.htm"
+      ]
+    },
+    {
+      "id": "mai-kieu-lien",
+      "ten": "Mai Kiều Liên",
+      "lon": 105.4833,
+      "lat": 9.7833,
+      "loai": "ahld",
+      "nam_hien_thi": "1953– , đương đại",
+      "mo_ta": "Chủ tịch HĐQT kiêm Tổng Giám đốc Công ty Sữa Việt Nam (Vinamilk), gắn bó gần nửa thế kỷ đưa doanh nghiệp trở thành thương hiệu sữa hàng đầu Việt Nam vươn ra thế giới. Được phong tặng danh hiệu Anh hùng Lao động thời kỳ đổi mới.",
+      "dia_diem": "Quê gốc Vị Thanh, Hậu Giang; sự nghiệp gắn bó TP Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Anh hùng Lao động Mai Kiều Liên - 'Nữ doanh nhân quyền lực của châu Á' — https://nhandan.vn/anh-hung-lao-dong-mai-kieu-lien---nu-doanh-nhan-quyen-luc-cua-chau-a-post233052.html",
+        "Báo Quân đội nhân dân — Tổng Giám đốc Vinamilk Mai Kiều Liên: Sáng tạo là yếu tố sống còn — https://www.qdnd.vn/kinh-te/cac-van-de/tong-giam-doc-vinamilk-mai-kieu-lien-sang-tao-la-yeu-to-song-con-708567"
+      ]
+    },
+    {
+      "id": "tran-manh-bao",
+      "ten": "Trần Mạnh Báo",
+      "lon": 106.3369,
+      "lat": 20.4463,
+      "loai": "nha-nong",
+      "nam_hien_thi": "1949– , đương đại",
+      "mo_ta": "Thương binh, kỹ sư nông nghiệp, Chủ tịch HĐQT kiêm Tổng Giám đốc Tập đoàn ThaiBinh Seed, người tiên phong nghiên cứu và sản xuất giống lúa chất lượng cao cho nông dân đồng bằng Bắc Bộ. Được phong tặng danh hiệu Anh hùng Lao động thời kỳ đổi mới.",
+      "dia_diem": "TP Thái Bình (quê gốc Thái Bình)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Doanh nhân, Anh hùng lao động Trần Mạnh Báo: Làm Nông nghiệp xanh — https://special.nhandan.vn/Doanh-nhan-AHLD-TRAN-MANH-BAO/index.html",
+        "Báo Quân đội nhân dân — Anh hùng của nhà nông — https://www.qdnd.vn/phong-su-dieu-tra/cuoc-thi-nhung-tam-guong-binh-di-ma-cao-quy-lan-thu-17/anh-hung-cua-nha-nong-bai-1-thuong-binh-tan-nhung-khong-phe-1019012"
+      ]
+    },
+    {
+      "id": "nguyen-van-hieu",
+      "ten": "Nguyễn Văn Hiệu",
+      "lon": 105.7786,
+      "lat": 20.9718,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1938–2022",
+      "mo_ta": "Giáo sư, Viện sĩ vật lý lý thuyết, một trong những nhà khoa học tự nhiên hàng đầu Việt Nam, nguyên Viện trưởng Viện Vật lý và Viện Khoa học Việt Nam. Được trao Giải thưởng Hồ Chí Minh và Giải thưởng Lenin về khoa học.",
+      "dia_diem": "Cầu Đơ (nay phường Hà Cầu), Hà Đông, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Văn thư và Lưu trữ Nhà nước — Một số tài liệu lưu trữ về Giáo sư, Viện sĩ Nguyễn Văn Hiệu — https://luutru.gov.vn/cong-bo-gioi-thieu-tai-lieu/mot-so-tai-lieu-luu-tru-ve-giao-su-vien-si-nguyen-van-hieu.htm",
+        "Báo Quân đội nhân dân — Vĩnh biệt Viện sĩ Nguyễn Văn Hiệu — https://www.qdnd.vn/phong-su-dieu-tra/phong-su/vinh-biet-vien-si-nguyen-van-hieu-684406"
+      ]
+    },
+    {
+      "id": "pham-thi-viet-nga",
+      "ten": "Phạm Thị Việt Nga",
+      "lon": 105.7333,
+      "lat": 9.85,
+      "loai": "ahld",
+      "nam_hien_thi": "1951– , đương đại",
+      "mo_ta": "Nguyên Tổng Giám đốc, Chủ tịch HĐQT Công ty Cổ phần Dược Hậu Giang, người đưa doanh nghiệp từ một xưởng thuốc nhỏ trở thành thương hiệu dược phẩm hàng đầu Việt Nam. Được phong tặng danh hiệu Anh hùng Lao động thời kỳ đổi mới.",
+      "dia_diem": "Châu Thành, Hậu Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Cần Thơ — Giao lưu với Anh hùng Lao động Phạm Thị Việt Nga - 'Một đời nhìn lại' — https://baocantho.com.vn/giao-luu-voi-anh-hung-lao-dong-pham-thi-viet-nga-mot-doi-nhin-lai-a167010.html"
+      ]
+    },
+    {
+      "id": "nguyen-tai-thu",
+      "ten": "Nguyễn Tài Thu",
+      "lon": 105.7333,
+      "lat": 21.0167,
+      "loai": "thay-thuoc",
+      "nam_hien_thi": "1931–2021",
+      "mo_ta": "Giáo sư, bác sĩ, người sáng lập ngành châm cứu hiện đại Việt Nam, nguyên Chủ tịch Hội Châm cứu Việt Nam và Hội Châm cứu Thế giới, chữa bệnh cho hàng vạn bệnh nhân trong và ngoài nước bằng phương pháp châm cứu. Được phong tặng danh hiệu Anh hùng Lao động và Thầy thuốc Nhân dân.",
+      "dia_diem": "Thôn Kim Hoàng, xã Vân Canh, Hoài Đức, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Quân đội nhân dân — Một đời vì người bệnh — https://ct.qdnd.vn/ho-so-tu-lieu/mot-doi-vi-nguoi-benh-526544",
+        "Viện Y dược học dân tộc TP.HCM — Kính cẩn cúi đầu vĩnh biệt bậc thầy châm cứu Việt Nam Nguyễn Tài Thu — https://www.vienydhdt.gov.vn/tin-tuc/kinh-can-cui-dau-vinh-biet-bac-thay-cham-cuu-viet-nam-nguyen-tai-thu.html"
+      ]
+    },
+    {
+      "id": "huynh-van-thon",
+      "ten": "Huỳnh Văn Thòn",
+      "lon": 105.2417,
+      "lat": 10.8017,
+      "loai": "nha-nong",
+      "nam_hien_thi": "1958– , đương đại",
+      "mo_ta": "Kỹ sư kinh tế nông nghiệp, Chủ tịch HĐQT Tập đoàn Lộc Trời, người xây dựng chuỗi giá trị lúa gạo bền vững gắn kết hàng vạn nông dân đồng bằng sông Cửu Long. Được phong tặng danh hiệu Anh hùng Lao động.",
+      "dia_diem": "Xã Long Phú, Tân Châu, An Giang",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "CafeF — 'Đế chế nghìn tỷ' của Anh hùng Lao động Huỳnh Văn Thòn — https://cafef.vn/de-che-nghin-ty-cua-anh-hung-lao-dong-huynh-van-thon-tao-sieu-pham-quoc-gia-chinh-phuc-40-nuoc-toan-cau-188260401195517935.chn"
+      ]
+    },
+    {
+      "id": "bui-huy-dap",
+      "ten": "Bùi Huy Đáp",
+      "lon": 106.1333,
+      "lat": 20.3167,
+      "loai": "nha-nong",
+      "nam_hien_thi": "1919–2004",
+      "mo_ta": "Giáo sư nông học, Giám đốc đầu tiên của Học viện Nông nghiệp Việt Nam, người có công lớn trong nghiên cứu và phổ biến giống lúa, cây trồng vụ đông góp phần đảm bảo an ninh lương thực miền Bắc. Được trao Giải thưởng Hồ Chí Minh về khoa học kỹ thuật.",
+      "dia_diem": "Xã Thành Lợi, Vụ Bản, Nam Định",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Học viện Nông nghiệp Việt Nam — Giáo sư Bùi Huy Đáp - Tấm gương nhà giáo, nhà khoa học sáng mãi — https://vnua.edu.vn/tin-tuc-su-kien/tin-hoat-dong-khac/giao-su-bui-huy-dap-tam-guong-nha-giao-nha-khoa-hoc-sang-mai-56281"
+      ]
+    },
+    {
+      "id": "nguyen-thien-thanh",
+      "ten": "Nguyễn Thiện Thành",
+      "lon": 106.2167,
+      "lat": 9.9167,
+      "loai": "thay-thuoc",
+      "nam_hien_thi": "1919–2013",
+      "mo_ta": "Giáo sư, bác sĩ, Đại tá quân y, người khai sinh ngành lão khoa Việt Nam và nghiên cứu phác đồ điều trị sốt rét Filatov trong kháng chiến. Được phong tặng danh hiệu Anh hùng Lao động và Thầy thuốc Nhân dân.",
+      "dia_diem": "Xã Phương Thạnh, Càng Long, Trà Vinh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Quân đội nhân dân — Kỷ niệm 100 năm Ngày sinh của Giáo sư, Tiến sĩ, Anh hùng lao động, Thầy thuốc nhân dân Đại tá Nguyễn Thiện Thành — https://www.qdnd.vn/quoc-phong-an-ninh/tin-tuc/ky-niem-100-nam-ngay-sinh-cua-giao-su-tien-si-anh-hung-lao-dong-thay-thuoc-nhan-dan-dai-ta-nguyen-thien-thanh-592817"
+      ]
+    },
+    {
+      "id": "nguyen-dinh-tu",
+      "ten": "Nguyễn Đình Tứ",
+      "lon": 105.7667,
+      "lat": 18.5667,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1932–1996",
+      "mo_ta": "Giáo sư, Tiến sĩ vật lý hạt nhân, người đặt nền móng cho ngành khoa học và kỹ thuật hạt nhân Việt Nam, nguyên Bộ trưởng Bộ Khoa học, Công nghệ và Môi trường. Có nhiều công trình nghiên cứu vật lý hạt cơ bản được quốc tế công nhận.",
+      "dia_diem": "Xã Song Lộc, Can Lộc, Hà Tĩnh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Giáo sư, Tiến sĩ Nguyễn Đình Tứ: Từ công trình 'tìm hạt' đến người phát triển ngành năng lượng nguyên tử Việt Nam — https://nhandan.vn/special/gi-o-s-ti-n-s-nguy-n-nh-t-t-c-ng-tr-nh-t-m-h-t-n-ng-i-ph-t-tri-n-ng-nh-n-ng-l-ng-nguy-n-t-vi-t-nam/index.html",
+        "Đại học Quốc gia Hà Nội — GS.TS Nguyễn Đình Tứ - nhà khoa học đặt nền móng cho ngành khoa học, kỹ thuật hạt nhân — https://vnu.edu.vn/gsts-nguyen-dinh-tu-nha-khoa-hoc-dat-nen-mong-cho-nganh-khoa-hoc-ky-thuat-hat-nhan-cua-viet-nam-post39880.html"
+      ]
+    },
+    {
+      "id": "vu-dinh-cu",
+      "ten": "Vũ Đình Cự",
+      "lon": 106.3667,
+      "lat": 20.5667,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1936–2011",
+      "mo_ta": "Giáo sư, Tiến sĩ vật lý, nguyên Phó Chủ tịch Quốc hội, nhà khoa học có nhiều đóng góp trong nghiên cứu vật lý bán dẫn và khoa học vật liệu, được giới khoa học Việt Nam mệnh danh 'nhà thông thái'.",
+      "dia_diem": "Xã Đông Xuân, Đông Hưng, Thái Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân trí — Giáo sư Vũ Đình Cự - 'Nhà thông thái' của giới khoa học Việt Nam — https://dantri.com.vn/giao-duc/giao-su-vu-dinh-cu-nha-thong-thai-cua-gioi-khoa-hoc-viet-nam-20160911182644344.htm"
+      ]
+    },
+    {
+      "id": "dao-the-tuan",
+      "ten": "Đào Thế Tuấn",
+      "lon": 105.7833,
+      "lat": 20.8667,
+      "loai": "nha-nong",
+      "nam_hien_thi": "1931–2011",
+      "mo_ta": "Giáo sư, Viện sĩ nông học, nguyên Viện trưởng Viện Khoa học Kỹ thuật Nông nghiệp Việt Nam, có nhiều công trình nghiên cứu hệ thống canh tác và phát triển nông thôn, được giới chuyên môn gọi là 'nhà nông học kiệt xuất'. Con trai học giả Đào Duy Anh.",
+      "dia_diem": "Quê gốc Cự Khê (Khúc Thủy), Thanh Oai, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam (VOV) — Nhà nông học kiệt xuất Đào Thế Tuấn — https://vov.vn/xa-hoi/nha-nong-hoc-kiet-xuat-dao-the-tuan-165451.vov",
+        "Viện Khoa học Nông nghiệp Việt Nam — GS - VS Đào Thế Tuấn: Nhà tri thức lớn của nông nghiệp, nông thôn — https://vaas.vn/vi/tieu-diem-binh-luan/gs-vs-dao-the-tuan-nha-tri-thuc-lon-cua-nong-nghiep-nong-thon"
+      ]
+    },
+    {
+      "id": "nguyen-canh-toan",
+      "ten": "Nguyễn Cảnh Toàn",
+      "lon": 105.3167,
+      "lat": 18.8833,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1926–2017",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, nhà toán học tự học thành tài, nguyên Thứ trưởng Bộ Giáo dục, người có nhiều đóng góp xây dựng ngành Toán học và giáo dục đại học Việt Nam. Được trao Giải thưởng Hồ Chí Minh về khoa học kỹ thuật.",
+      "dia_diem": "Xã Đông Sơn, Đô Lương, Nghệ An",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Giáo sư Nguyễn Cảnh Toàn, người dành cả cuộc đời cho sự nghiệp khoa học và giáo dục — https://nhandan.vn/giao-su-nguyen-canh-toan-nguoi-danh-ca-cuoc-doi-cho-su-nghiep-khoa-hoc-va-giao-duc-post285318.html",
+        "Sở Khoa học và Công nghệ Nghệ An — Về Giáo sư Nguyễn Cảnh Toàn — https://ngheandost.gov.vn/khxhnvna/dat-va-nguoi-xu-nghe/ve-giao-su-nguyen-canh-toan-127.html"
+      ]
+    },
+    {
+      "id": "dang-vu-minh",
+      "ten": "Đặng Vũ Minh",
+      "lon": 106.3333,
+      "lat": 20.1917,
+      "loai": "khoa-hoc",
+      "nam_hien_thi": "1946– , đương đại",
+      "mo_ta": "Giáo sư, Viện sĩ hóa học, nguyên Chủ tịch Viện Khoa học và Công nghệ Việt Nam, nguyên Chủ tịch Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam (VUSTA), có nhiều công trình nghiên cứu hóa học các nguyên tố hiếm và phóng xạ.",
+      "dia_diem": "Làng Hành Thiện, xã Xuân Hồng, Xuân Trường, Nam Định",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam — Chủ tịch Liên hiệp hội Việt Nam khóa VI: GS.VS.TSKH Đặng Vũ Minh — https://vusta.vn/chu-tich-lien-hiep-hoi-viet-nam-khoa-vi-gsvstskh-dang-vu-minh-p88621.html"
+      ]
+    },
+    {
+      "id": "pham-song",
+      "ten": "Phạm Song",
+      "lon": 105.4,
+      "lat": 18.5333,
+      "loai": "thay-thuoc",
+      "nam_hien_thi": "1931– , đương đại",
+      "mo_ta": "Giáo sư, Viện sĩ, Thầy thuốc Nhân dân, nguyên Bộ trưởng Bộ Y tế (1988–1992), có nhiều đóng góp xây dựng hệ thống y tế dự phòng và phòng chống dịch bệnh của Việt Nam. Được trao Giải thưởng Hồ Chí Minh.",
+      "dia_diem": "Xã Sơn Long, Hương Sơn, Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Nội mới — Cống hiến trọn đời cho y học — https://hanoimoi.vn/cong-hien-tron-doi-cho-y-hoc-291011.html"
+      ]
+    },
+    {
+      "id": "nguyen-trong-nhan",
+      "ten": "Nguyễn Trọng Nhân",
+      "lon": 106.0333,
+      "lat": 20.45,
+      "loai": "thay-thuoc",
+      "nam_hien_thi": "1930–2017",
+      "mo_ta": "Giáo sư, Tiến sĩ, Thầy thuốc Nhân dân, nguyên Bộ trưởng Bộ Y tế (1992–1995), nguyên Viện trưởng Viện Mắt Trung ương, chuyên gia nhãn khoa hàng đầu Việt Nam. Được phong tặng danh hiệu Anh hùng Lao động.",
+      "dia_diem": "Huyện Bình Lục, Hà Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — GS.TS Nguyễn Trọng Nhân - Cây đại thụ ngành nhãn khoa Việt Nam — https://nhandan.vn/gs-ts-nguyen-trong-nhan-cay-dai-thu-nganh-nhan-khoa-viet-nam-post297866.html",
+        "Cổng Thông tin điện tử Chính phủ — GS.TS Nguyễn Trọng Nhân, nguyên Bộ trưởng Bộ Y tế từ trần — https://baochinhphu.vn/gsts-nguyen-trong-nhan-nguyen-bo-truong-bo-y-te-tu-tran-102223856.htm"
+      ]
+    },
+    {
+      "id": "nguyen-thi-ngoc-phuong",
+      "ten": "Nguyễn Thị Ngọc Phượng",
+      "lon": 106.6893,
+      "lat": 10.7627,
+      "loai": "thay-thuoc",
+      "nam_hien_thi": "1944– , đương đại",
+      "mo_ta": "Giáo sư, bác sĩ sản phụ khoa, nguyên Giám đốc Bệnh viện Từ Dũ, người tiên phong đưa kỹ thuật thụ tinh trong ống nghiệm (IVF) về Việt Nam, mở ra cơ hội làm cha mẹ cho hàng chục nghìn gia đình. Được phong tặng danh hiệu Anh hùng Lao động và Thầy thuốc Nhân dân.",
+      "dia_diem": "Bệnh viện Từ Dũ, Quận 1 (nay phường Bến Thành), TP Hồ Chí Minh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Sức khỏe & Đời sống (Bộ Y tế) — GS.BS Nguyễn Thị Ngọc Phượng - người khai sinh Cò đỏ thôn bản, nhận giải Nobel châu Á — https://suckhoedoisong.vn/gsbs-nguyen-thi-ngoc-phuong-nguoi-khai-sinh-co-do-thon-ban-nhan-giai-nobel-chau-a-169240901160758776.htm"
+      ]
+    },
+    {
+      "id": "pham-gia-khanh",
+      "ten": "Phạm Gia Khánh",
+      "lon": 105.7667,
+      "lat": 21.0733,
+      "loai": "thay-thuoc",
+      "nam_hien_thi": "1943– , đương đại",
+      "mo_ta": "Giáo sư, Trung tướng, Tiến sĩ, Nhà giáo Nhân dân, nguyên Giám đốc Học viện Quân y, người thực hiện thành công ca ghép gan đầu tiên ở Việt Nam (2004) và có nhiều đóng góp xây dựng chuyên ngành ghép tạng quân đội. Được phong tặng danh hiệu Anh hùng Lao động.",
+      "dia_diem": "Phường Đông Ngạc, Bắc Từ Liêm, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân (Sức khỏe) — Thầy Khánh và ca ghép gan đầu tiên — https://sknc.qdnd.vn/nhan-vat/thay-khanh-va-ca-ghep-gan-dau-tien-501356"
+      ]
+    },
+    {
+      "id": "vu-tuyen-hoang",
+      "ten": "GS.VS, Anh hùng Lao động Vũ Tuyên Hoàng",
+      "lon": 105.828,
+      "lat": 21.0167,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "1938–2008",
+      "mo_ta": "Nhà nông học, viện sĩ hàng đầu Việt Nam và châu Á–Thái Bình Dương về di truyền chọn giống; lai tạo hàng trăm giống lúa mới năng suất cao, chống chịu sâu bệnh, góp phần đưa Việt Nam thành nước xuất khẩu gạo lớn. Nhận Giải thưởng Hồ Chí Minh về KHCN (2000); truy tặng Anh hùng Lao động thời kỳ đổi mới (2021).",
+      "dia_diem": "Phường Thái Hà (Đống Đa), Hà Nội — quê quán",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "TTXVN/VietnamPlus — Giáo sư, Viện sỹ Vũ Tuyên Hoàng - Anh hùng Lao động thời kỳ đổi mới — https://www.vietnamplus.vn/giao-su-vien-sy-vu-tuyen-hoang-anh-hung-lao-dong-thoi-ky-doi-moi-post707322.vnp",
+        "Dân Việt — GS.TSKH, Anh hùng Lao động Vũ Tuyên Hoàng, nhà khoa học lai tạo vô số giống lúa mới — https://danviet.vn/co-gstskh-anh-hung-lao-dong-vu-tuyen-hoang-nha-khoa-hoc-lai-tao-vo-so-giong-lua-moi-cho-nganh-nong-nghiep-viet-nam-d1382075.html"
+      ]
+    },
+    {
+      "id": "ngo-gia-kham",
+      "ten": "Anh hùng Lao động Ngô Gia Khảm",
+      "lon": 105.95,
+      "lat": 21.15,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "1912–1990",
+      "mo_ta": "Người sáng lập xưởng quân giới đầu tiên của Quân đội nhân dân Việt Nam tại Việt Bắc; chế tạo lựu đạn, kíp nổ, tăng năng suất từ 600 lên 14.000 sản phẩm/ngày nhờ sáng kiến kỹ thuật. Một trong 3 Anh hùng Lao động đầu tiên (cùng Trần Đại Nghĩa, Hoàng Hanh), được phong tặng năm 1952.",
+      "dia_diem": "Xã Tam Sơn, Từ Sơn, tỉnh Bắc Ninh — quê quán",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Gia Khảm với quá trình đấu tranh cách mạng và xây dựng công xưởng đầu tiên của QĐND Việt Nam — http://baotanglichsu.vn/vi/Articles/3096/9796/ngo-gia-kham-voi-qua-trinh-djau-tranh-cach-mang-va-xay-dung-cong-xuong-djau-tien-cua-quan-djoi-nhan-dan-viet-nam.html"
+      ]
+    },
+    {
+      "id": "nguyen-thi-tram",
+      "ten": "PGS.TS, Anh hùng Lao động Nguyễn Thị Trâm",
+      "lon": 105.92,
+      "lat": 20.57,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "sinh 1944",
+      "mo_ta": "Người tiên phong chọn tạo giống lúa lai hai dòng của Việt Nam; nổi bật với giống lúa lai TH3-3 năng suất 6–8 tấn/ha, được nhân rộng tới 60% diện tích lúa lai cả nước. Năm 2008 chuyển nhượng bản quyền giống với giá 10 tỷ đồng, một dấu mốc của khoa học nông nghiệp Việt Nam.",
+      "dia_diem": "Thôn Đan Tiến, xã Tiên Tân, huyện Duy Tiên, tỉnh Hà Nam — quê quán",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Học viện Nông nghiệp Việt Nam — PGS.TS.AHLĐ Nguyễn Thị Trâm: Cống hiến tâm lực cho sự nghiệp giáo dục, nghiên cứu khoa học — https://vnua.edu.vn/tin-tuc-su-kien/tin-hoat-dong-khac/pgs.ts.ahld.-nguyen-thi-tram-cong-hien-tam-luc-cho-su-nghiep-giao-duc-nghien-cuu-khoa-hoc-51890"
+      ]
+    },
+    {
+      "id": "pham-dinh-duan",
+      "ten": "Anh hùng Lao động Phạm Đình Duẩn",
+      "lon": 106.75,
+      "lat": 21.12,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "sinh 1986",
+      "mo_ta": "Thợ lò, tổ trưởng sản xuất tại Công ty CP Than Vàng Danh (Vinacomin), làm việc tại mỏ từ năm 2005; đội của anh liên tục vượt 10–15% chỉ tiêu sản lượng mỗi năm và dẫn đầu công ty nhiều năm liền. Được Chủ tịch nước phong tặng Anh hùng Lao động thời kỳ đổi mới năm 2025 — Anh hùng Lao động trẻ nhất ngành than.",
+      "dia_diem": "Công ty CP Than Vàng Danh, phường Vàng Danh, TP. Uông Bí, tỉnh Quảng Ninh — nơi công tác",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Người Lao Động (qua Tuổi Trẻ) — Một thợ lò được phong tặng danh hiệu Anh hùng Lao động — https://tuoitre.vn/nld/mot-tho-lo-duoc-phong-tang-danh-hieu-anh-hung-lao-dong-196250608130554382.htm"
+      ]
+    },
+    {
+      "id": "dinh-nhu-gia",
+      "ten": "Anh hùng Lao động Đinh Như Gia",
+      "lon": 107.0167,
+      "lat": 17.05,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "sinh khoảng 1935",
+      "mo_ta": "Du kích rồi đại đội trưởng dân quân, Ủy viên Ủy ban Hành chính khu vực Vĩnh Linh; có sáng kiến quản lý trâu bò và hệ thống ròng rọc đưa nôi trẻ em vào hầm trú ẩn giúp dân vừa sản xuất vừa tránh bom đạn. Được phong Anh hùng Lao động năm 1967 vì thành tích đặc biệt xuất sắc trong sản xuất và chiến đấu tại đặc khu Vĩnh Linh; được gặp Bác Hồ 5 lần.",
+      "dia_diem": "Xã Vĩnh Nam xưa (nay Trung Nam), huyện Vĩnh Linh, tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân (chuyên trang) — Phỏng vấn Anh hùng Lao động Đinh Như Gia — https://special.nhandan.vn/phong-van-Anh-hung-Lao-dong-Dinh-Nhu-Gia/index.html"
+      ]
+    },
+    {
+      "id": "nguyen-thi-phuong-thao",
+      "ten": "Anh hùng Lao động Nguyễn Thị Phương Thảo",
+      "lon": 105.8542,
+      "lat": 21.0285,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "sinh 1970",
+      "mo_ta": "Chủ tịch HĐQT Vietjet Air, Phó Chủ tịch thường trực HDBank; người Việt Nam thứ hai (sau Phạm Nhật Vượng) và là nữ tỷ phú USD đầu tiên của Việt Nam. Được phong tặng danh hiệu Anh hùng Lao động thời kỳ đổi mới vì đóng góp phát triển ngành hàng không và tài chính.",
+      "dia_diem": "Hà Nội — quê quán",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Znews (Tri Thức) — Chân dung các doanh nhân được phong danh hiệu Anh hùng Lao động — https://znews.vn/chan-dung-cac-doanh-nhan-duoc-phong-danh-hieu-anh-hung-lao-dong-post1614539.html"
+      ]
+    },
+    {
+      "id": "nguyen-viet-cuong",
+      "ten": "Anh hùng Lao động Nguyễn Việt Cường",
+      "lon": 105.15,
+      "lat": 9.5,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "đương đại",
+      "mo_ta": "Chủ tịch HĐQT Tập đoàn Phú Cường và Công ty CP Đầu tư Phú Cường Kiên Giang; biến một xí nghiệp thủy sản suy tàn thành tập đoàn đa ngành 20 công ty thành viên, tạo việc làm hơn 10.000 lao động. Phát triển dự án lấn biển Rạch Giá 350ha và dành hàng trăm tỷ đồng cho an sinh xã hội.",
+      "dia_diem": "Vĩnh Thuận, tỉnh An Giang (Kiên Giang cũ) — quê quán",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Công an nhân dân — Anh hùng Lao động Nguyễn Việt Cường – Hành trình của ý chí và khát vọng phụng sự — https://cand.vn/doanh-nghiep/anh-hung-lao-dong-nguyen-viet-cuong--hanh-trinh-cua-y-chi-va-khat-vong-phung-su-i792447/"
+      ]
+    },
+    {
+      "id": "vu-huu-le",
+      "ten": "Anh hùng Lao động Vũ Hữu Lê",
+      "lon": 103.97,
+      "lat": 22.4833,
+      "loai": "anh-hung-lao-dong",
+      "nam_hien_thi": "sinh khoảng 1934–1935",
+      "mo_ta": "Giám đốc Công ty TNHH Cơ khí và Xây lắp Hồng Hà (Lào Cai); xuất thân nông dân, được cử sang Liên Xô học cơ khí (tốt nghiệp xuất sắc 1971). Mệnh danh 'nhà sáng chế của nông dân' với hơn 1.000 máy nông nghiệp (11 chủng loại) đã thương mại hoá, trong đó máy vò chè đa năng 2022 tăng năng suất gấp 3,5 lần; là Anh hùng Lao động cao tuổi nhất trong đợt phong tặng.",
+      "dia_diem": "TP. Lào Cai, tỉnh Lào Cai — nơi công tác",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thương gia Online — Chân dung 5 doanh nhân được phong danh hiệu Anh hùng Lao động — https://thuonggiaonline.vn/chan-dung-5-doanh-nhan-duoc-phong-danh-hieu-anh-hung-lao-dong-post566007.html"
+      ]
+    },
+    {
+      "id": "hoang-phe",
+      "ten": "Hoàng Phê",
+      "lon": 108.2512,
+      "lat": 15.8912,
+      "loai": "tu-dien-hoc",
+      "nam_hien_thi": "1919–2005",
+      "mo_ta": "Giáo sư, chủ biên bộ «Từ điển tiếng Việt» (1988) — công trình từ điển giải thích tiếng Việt có ảnh hưởng nhất, liên tục tái bản, chỉnh lý; người đặt nền móng lý thuyết từ điển học và xây dựng ngân hàng từ vựng tiếng Việt trên máy tính tại Viện Ngôn ngữ học.",
+      "dia_diem": "Làng Bảo An (nay xã Điện Quang), thị xã Điện Bàn, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Vĩnh biệt Giáo sư Hoàng Phê — https://nhandan.vn/vinh-biet-giao-su-hoang-phe-post601452.html",
+        "Báo Quân đội nhân dân điện tử — Giáo sư Hoàng Phê: Chuẩn hóa tiếng Việt trước hết phải chuẩn chính tả — https://ct.qdnd.vn/van-hoa-xa-hoi/giao-su-hoang-phe-chuan-hoa-tieng-viet-truoc-het-phai-chuan-chinh-ta-528332"
+      ]
+    },
+    {
+      "id": "cao-xuan-hao",
+      "ten": "Cao Xuân Hạo",
+      "lon": 105.5804,
+      "lat": 19.024,
+      "loai": "ngon-ngu-hoc",
+      "nam_hien_thi": "1930–2007",
+      "mo_ta": "Nhà ngôn ngữ học và dịch giả xuất chúng, người định hình phương pháp phân tích cấu trúc câu tiếng Việt hiện đại qua các công trình «Tiếng Việt — Sơ thảo ngữ pháp chức năng», «Tiếng Việt — Mấy vấn đề ngữ âm, ngữ pháp, ngữ nghĩa»; đồng thời dịch hơn 20.000 trang văn học Nga, Đức, Pháp (Chiến tranh và hoà bình, Tội ác và trừng phạt…).",
+      "dia_diem": "Làng Thịnh Mỹ (nay xã Diễn Thịnh), huyện Diễn Châu, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thanh Niên — Vĩnh biệt nhà ngôn ngữ học Cao Xuân Hạo — https://thanhnien.vn/vinh-biet-nha-ngon-ngu-hoc-cao-xuan-hao-185127754.htm",
+        "Báo Nhân Dân điện tử — Thương tiếc Giáo sư Cao Xuân Hạo — https://nhandan.vn/thuong-tiec-giao-su-cao-xuan-hao-post444747.html"
+      ]
+    },
+    {
+      "id": "nguyen-tai-can",
+      "ten": "Nguyễn Tài Cẩn",
+      "lon": 105.2264,
+      "lat": 18.7327,
+      "loai": "ngon-ngu-hoc",
+      "nam_hien_thi": "1926–2011",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, người bảo vệ luận án tiến sĩ ngôn ngữ học Việt Nam đầu tiên tại Liên Xô (1960); tác giả «Ngữ pháp tiếng Việt», «Giáo trình lịch sử ngữ âm tiếng Việt», «Nguồn gốc và quá trình hình thành cách đọc Hán Việt» — được trao Giải thưởng Hồ Chí Minh năm 2000.",
+      "dia_diem": "Làng Thượng Thọ (nay xã Thanh Văn), huyện Thanh Chương, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Dân trí — Nhà ngôn ngữ học Nguyễn Tài Cẩn từ trần — https://dantri.com.vn/giao-duc/nha-ngon-ngu-hoc-nguyen-tai-can-tu-tran-1299039445.htm",
+        "Báo Nghệ An — Nhà ngôn ngữ học, GS-NGND Nguyễn Tài Cẩn từ trần — https://baonghean.vn/nha-ngon-ngu-hoc-gs-ngnd-nguyen-tai-can-tu-tran-10028228.html"
+      ]
+    },
+    {
+      "id": "nguyen-kim-than",
+      "ten": "Nguyễn Kim Thản",
+      "lon": 105.8202,
+      "lat": 21.0087,
+      "loai": "ngon-ngu-hoc",
+      "nam_hien_thi": "1927–1995",
+      "mo_ta": "Phó Giáo sư, người đặt nền móng nghiên cứu ngữ pháp tiếng Việt hiện đại với bộ «Nghiên cứu về ngữ pháp tiếng Việt» (1963, 2 tập), «Động từ trong tiếng Việt» (1977), «Ngữ pháp tiếng Việt» (1983); nhiều năm công tác tại Viện Ngôn ngữ học.",
+      "dia_diem": "Khương Thượng, Đống Đa, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Viện Ngôn ngữ học (VASS) — PGS Nguyễn Kim Thản — http://vienngonnguhoc.vass.gov.vn/chan-dung-nha-khoa-hoc/pgs-nguyen-kim-than-494653",
+        "ĐHQG Hà Nội — Pgs. Nguyễn Kim Thản ~ Người kiến tạo nền móng ngữ pháp tiếng Việt — https://science.vnu.edu.vn/en/2025/03/26/pgs-nguyen-kim-than-nguoi-kien-tao-nen-mong-ngu-phap-tieng-viet/"
+      ]
+    },
+    {
+      "id": "bui-phung",
+      "ten": "Bùi Phụng",
+      "lon": 105.9414,
+      "lat": 20.4231,
+      "loai": "tu-dien-hoc",
+      "nam_hien_thi": "1936–2007",
+      "mo_ta": "Phó Giáo sư, nhà từ điển học, tác giả bộ «Từ điển Việt–Anh» qua 30 lần tái bản (từ 15.000 lên hơn 350.000 mục từ, 2.301 trang), được trao Giải thưởng Nhà nước về Khoa học và Công nghệ năm 2000; đồng thời dịch Macbeth, Hamlet của Shakespeare sang tiếng Việt.",
+      "dia_diem": "Làng Châu Cầu (nay xã Thanh Liêm), huyện Thanh Liêm, tỉnh Hà Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "ĐHQG Hà Nội — Trường ĐH KHXH&NV — PGS. Bùi Phụng, nhà giáo tài ba, nhà từ điển học nổi tiếng — https://ussh.vnu.edu.vn/vi/news/chan-dung-nha-giao-nha-khoa-hoc/pgs-bui-phung-nha-giao-tai-ba-nha-tu-dien-hoc-noi-tieng-12173.html",
+        "ĐHQG Hà Nội — PGS Bùi Phụng với công trình «Từ điển Việt – Anh» — https://vnu.edu.vn/pgs-bui-phung-voi-cong-trinh-tu-dien-viet--anh-post2678.html"
+      ]
+    },
+    {
+      "id": "thanh-nghi",
+      "ten": "Thanh Nghị (Hoàng Trọng Quy)",
+      "lon": 107.5843,
+      "lat": 16.4658,
+      "loai": "tu-dien-hoc",
+      "nam_hien_thi": "1917–1988",
+      "mo_ta": "Nhà văn, nhà báo, nhà từ điển học; biên soạn «Việt Nam Tân Tự Điển», «Pháp – Việt tân tự điển minh họa», «Anh – Việt tự điển» — những bộ từ điển phổ dụng bậc nhất giữa thế kỷ 20; sau 1975 tham gia Uỷ ban Trung ương Mặt trận Tổ quốc Việt Nam và chỉ đạo công tác thư viện khoa học kỹ thuật trung ương, góp phần biên soạn từ điển bách khoa Việt Nam.",
+      "dia_diem": "Thành phố Huế",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đại đoàn kết — Thanh Nghị, nhà văn, nhà báo yêu nước tài năng và đức độ — https://daidoanket.vn/thanh-nghi-nha-van-nha-bao-yeu-nuoc-tai-nang-va-duc-do-10116566.html"
+      ]
+    },
+    {
+      "id": "nguyen-van-to",
+      "ten": "Nguyễn Văn Tố",
+      "lon": 105.8477,
+      "lat": 21.0347,
+      "loai": "ngon-ngu-hoc",
+      "nam_hien_thi": "1889–1947",
+      "mo_ta": "Học giả Hán Nôm và sử học, Hội trưởng Hội Truyền bá Quốc ngữ (từ 1938) — tổ chức có công lớn xoá nạn mù chữ, phổ biến chữ Quốc ngữ trước Cách mạng tháng Tám; tác giả «Đại Nam dật sử», «Sử ta so với sử Tàu» cùng nhiều khảo cứu lịch sử, ngôn ngữ trên báo chí tiếng Việt và tiếng Pháp.",
+      "dia_diem": "Làng Đông Thành (nay phố Bát Sứ), phường Hoàn Kiếm, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Nhân Dân — Trưởng Ban Thường trực Quốc hội Nguyễn Văn Tố (1889–1947) — https://special.nhandan.vn/Truong-Ban-ThuongtrucQH-NguyenVanTo/index.html",
+        "Bảo tàng Lịch sử Quốc gia — Tài năng và nhân cách lớn của nhà chí sĩ yêu nước Nguyễn Văn Tố — https://baotanglichsu.vn/vi/Articles/3098/74712/tai-nang-va-nhan-cach-lon-cua-nha-chi-si-yeu-nuoc-nguyen-van-to.html"
+      ]
+    },
+    {
+      "id": "bui-ky",
+      "ten": "Bùi Kỷ",
+      "lon": 105.9317,
+      "lat": 20.5427,
+      "loai": "dich-gia",
+      "nam_hien_thi": "1888–1960",
+      "mo_ta": "Học giả Hán Nôm, dịch giả; cùng Trần Trọng Kim chú giải «Truyện Kiều», dịch «Bình Ngô đại cáo» của Nguyễn Trãi được xem là bản dịch mẫu mực; khảo cứu các truyện Nôm khuyết danh (Trê Cóc, Lục súc tranh công) và biên soạn «Quốc văn cụ thể».",
+      "dia_diem": "Làng Châu Cầu, phủ Lý Nhân (nay thành phố Phủ Lý), tỉnh Hà Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Chốn Thiêng — Bùi Kỷ (1888–1960) — https://chonthieng.com/nhan-vat/bui-ky-1888-1960"
+      ]
+    },
+    {
+      "id": "le-kha-ke",
+      "ten": "Lê Khả Kế",
+      "lon": 105.2504,
+      "lat": 18.4477,
+      "loai": "tu-dien-hoc",
+      "nam_hien_thi": "1918–2000",
+      "mo_ta": "Giáo sư, một trong những nhà từ điển học hàng đầu Việt Nam; đồng chủ biên bộ «Từ điển Anh – Việt» đầu tiên hoàn thành năm 1975 (65.000 mục từ) cùng nhóm biên soạn tại Uỷ ban Khoa học Xã hội, và bộ «Từ điển Việt – Pháp».",
+      "dia_diem": "Làng Hữu Bằng (nay xã Hương Sơn), huyện Hương Sơn, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Trung tâm Di sản các nhà khoa học Việt Nam (MEDDOM) — Lê Khả Kế — https://meddom.org/nha-khoa-hoc-5036/",
+        "Báo Công an nhân dân — Còn đó một bóng rợp từ điển — https://cand.vn/con-do-mot-bong-rop-tu-dien-post311417.html"
+      ]
+    },
+    {
+      "id": "thuy-toan",
+      "ten": "Thúy Toàn (Hoàng Thúy Toàn)",
+      "lon": 105.976,
+      "lat": 21.133,
+      "loai": "dich-gia",
+      "nam_hien_thi": "sinh 1938",
+      "mo_ta": "Dịch giả văn học Nga hàng đầu Việt Nam, tốt nghiệp Đại học Sư phạm Lenin (Moskva), dịch hàng nghìn bài thơ Nga (trong đó có «Tôi yêu em» của Pushkin) và hơn 60 đầu sách trong hơn 50 năm; Chủ tịch Hội đồng Văn học dịch (Hội Nhà văn Việt Nam), Giám đốc Trung tâm Văn hóa Ngôn ngữ Đông Tây. Năm 2010 được Tổng thống Nga D. Medvedev trao Huân chương Hữu nghị tại điện Kremlin.",
+      "dia_diem": "Làng Phù Lưu, Đông Ngàn, TP Từ Sơn, Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Công an nhân dân — Dịch giả Thúy Toàn: Một đời với tình yêu nước Nga — https://cand.vn/dich-gia-thuy-toan-mot-doi-voi-tinh-yeu-nuoc-nga-post453657.html",
+        "Cổng TTĐT Bộ VHTTDL — Dịch giả Thúy Toàn — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/dich-gia-thuy-toan.html"
+      ]
+    },
+    {
+      "id": "duong-tuong",
+      "ten": "Dương Tường (Trần Dương Tường)",
+      "lon": 106.1683,
+      "lat": 20.4388,
+      "loai": "dich-gia",
+      "nam_hien_thi": "1932–2024",
+      "mo_ta": "Nhà thơ, dịch giả, tên thật Trần Dương Tường, bắt đầu dịch thuật từ năm 1960 và để lại hơn 50 tác phẩm dịch từ tiếng Anh, Pháp, Nga, Đức; nổi tiếng với các bản dịch «Cuốn theo chiều gió» (Gone with the Wind) và «Phía Tây không có gì lạ» (All Quiet on the Western Front).",
+      "dia_diem": "Quê Nam Định",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Nhà thơ, dịch giả Dương Tường qua đời — https://nhandan.vn/nha-tho-dich-gia-duong-tuong-qua-doi-post740356.html",
+        "VOV — Nhà thơ, dịch giả Dương Tường - người dành một đời cho văn chương — https://vov.vn/van-hoa/nha-tho-dich-gia-duong-tuong-nguoi-danh-mot-doi-cho-van-chuong-post1004045.vov"
+      ]
+    },
+    {
+      "id": "nhi-ca",
+      "ten": "Nhị Ca (Chử Đức Kính)",
+      "lon": 105.845,
+      "lat": 20.94,
+      "loai": "dich-gia",
+      "nam_hien_thi": "1926–1984",
+      "mo_ta": "Tên thật Chử Đức Kính, nhà lý luận phê bình văn học và dịch giả; từng là phóng viên chiến trường thời kháng chiến chống Pháp, sau chuyển sang công tác văn hóa quân đội. Dịch hai kiệt tác «Anna Karenina» (Lev Tolstoy) và «Nhà thờ Đức Bà Paris» (Victor Hugo); là người sớm phát hiện, cổ vũ các cây bút Nguyễn Thi, Thu Bồn, Nguyễn Minh Châu. Được truy tặng Giải thưởng Nhà nước về Văn học Nghệ thuật (2007).",
+      "dia_diem": "Làng Cổ Điển, xã Tứ Hiệp, huyện Thanh Trì, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Vanvn.vn (Hội Nhà văn Việt Nam) — Nhị Ca: Từ phóng viên chiến trường đến dịch giả hàn lâm — https://vanvn.vn/nhi-ca-tu-phong-vien-chien-truong-den-dich-gia-han-lam/",
+        "Bảo tàng Văn học Việt Nam — Nhà lý luận phê bình văn học Nhị Ca (1926–1984) — https://baotangvanhoc.vn/giai-thuong-nha-nuoc/"
+      ]
+    },
+    {
+      "id": "phan-ngoc",
+      "ten": "Phan Ngọc",
+      "lon": 105.35,
+      "lat": 18.95,
+      "loai": "ngon-ngu-hoc",
+      "nam_hien_thi": "1925–2020",
+      "mo_ta": "Giáo sư, dịch giả, nhà ngôn ngữ học và nghiên cứu văn hóa Việt Nam; dịch nhiều tác phẩm kinh điển triết học và văn học phương Tây (Hàn Phi Tử, Spinoza, Shakespeare...), tác giả «Bản sắc văn hóa Việt Nam», «Phong cách Nguyễn Du trong Truyện Kiều». Qua đời ở tuổi 96, được ca ngợi là học giả có nhân cách và tài năng lớn.",
+      "dia_diem": "Xã Nhân Thành, huyện Yên Thành, Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Phan Ngọc, học giả với nhân cách và tài năng lớn — https://nhandan.vn/phan-ngoc-hoc-gia-voi-nhan-cach-va-tai-nang-lon-post615140.html",
+        "VOV — Giáo sư, dịch giả Phan Ngọc qua đời ở tuổi 96 — https://vov.vn/van-hoa-giai-tri/giao-su-dich-gia-phan-ngoc-qua-doi-o-tuoi-96"
+      ]
+    },
+    {
+      "id": "nguyen-huu-thien-kts",
+      "ten": "Nguyễn Hữu Thiện",
+      "lon": 106.6957,
+      "lat": 10.7772,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1917–1981",
+      "mo_ta": "Kiến trúc sư thuộc thế hệ đầu tiên của Việt Nam, tốt nghiệp Trường Cao đẳng Mỹ thuật Đông Dương năm 1939, nguyên Phó Giám đốc Sở Xây dựng và Viện trưởng Viện Quy hoạch đô thị đầu tiên của Sài Gòn. Công trình tiêu biểu là Thư viện Quốc gia (nay là Thư viện Khoa học Tổng hợp TP.HCM), theo trường phái kết hợp kỹ thuật phương Tây với hồn cốt kiến trúc Việt.",
+      "dia_diem": "Thư viện Khoa học Tổng hợp TP.HCM (nguyên Thư viện Quốc gia), 69 Lý Tự Trọng, Quận 1, TP.HCM",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "nguoidothi.net.vn — KTS Nguyễn Hữu Thiện: Đưa nét cổ kim vào công trình — https://nguoidothi.net.vn/kts-nguyen-huu-thien-dua-net-co-kim-vao-cong-trinh-8406.html"
+      ]
+    },
+    {
+      "id": "ngo-huy-quynh",
+      "ten": "Ngô Huy Quỳnh",
+      "lon": 105.8342,
+      "lat": 21.0369,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1920–2003",
+      "mo_ta": "Kiến trúc sư tốt nghiệp Trường Cao đẳng Mỹ thuật Đông Dương, người trực tiếp thiết kế và chỉ đạo dựng Lễ đài Độc lập tại Quảng trường Ba Đình chỉ trong một đêm để kịp lễ Tuyên ngôn Độc lập 2/9/1945. Ông còn là nhà lý luận kiến trúc, được truy tặng Giải thưởng Nhà nước về Văn học Nghệ thuật.",
+      "dia_diem": "Lễ đài Độc lập, Quảng trường Ba Đình, Ba Đình, Hà Nội — quê thôn Ngọc Lập, xã Phùng Chí Kiên, huyện Mỹ Hào, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quân sự Việt Nam — Người thiết kế Lễ đài Độc lập trên Quảng trường Ba Đình — https://btllang.mod.gov.vn/tin-tuc/tin-tong-hop/4126-nguoi-thiet-ke-le-dai-doc-lap-tren-quang-truong-ba-dinh",
+        "Bảo tàng Lịch sử Quốc gia — KTS Ngô Huy Quỳnh: Người thiết kế Lễ đài Độc lập — https://baotanglichsu.vn/vi/Articles/3096/71705/kts-ngo-huy-quynh-nguoi-thiet-ke-le-djai-djoc-lap.html"
+      ]
+    },
+    {
+      "id": "nguyen-van-ninh-kts",
+      "ten": "Nguyễn Văn Ninh",
+      "lon": 105.8339,
+      "lat": 21.0387,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1908–1975",
+      "mo_ta": "Kiến trúc sư thiết kế Nhà sàn Bác Hồ trong Khu di tích Phủ Chủ tịch — công trình gắn liền với đời sống giản dị của Chủ tịch Hồ Chí Minh những năm cuối đời. Ông mất ngày 15/4/1975 tại Hà Nội sau một cơn sốt ác tính.",
+      "dia_diem": "Nhà sàn Bác Hồ, Khu di tích Phủ Chủ tịch, Ba Đình, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "kienviet.net — Gương mặt KTS Việt Nam - KTS Nguyễn Văn Ninh — https://kienviet.net/2021/8/4/guong-mat-kts-viet-nam-kts-nguyen-van-ninh"
+      ]
+    },
+    {
+      "id": "nguyen-truc-luyen",
+      "ten": "Nguyễn Trực Luyện",
+      "lon": 105.8324,
+      "lat": 21.0378,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1935–2021",
+      "mo_ta": "Kiến trúc sư, nguyên Chủ tịch Hội Kiến trúc sư Việt Nam nhiều nhiệm kỳ, góp phần vào các công trình lớn như Bảo tàng Hồ Chí Minh và Nghĩa trang liệt sĩ đồi A1 (Điện Biên Phủ). Ông qua đời ở tuổi 86, được giới chuyên môn xem là một tên tuổi lớn của làng kiến trúc Việt Nam.",
+      "dia_diem": "Bảo tàng Hồ Chí Minh, 19 Ngọc Hà, Ba Đình, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tuổi Trẻ — Vĩnh biệt kiến trúc sư Nguyễn Trực Luyện - tên tuổi lớn của làng kiến trúc Việt Nam — https://tuoitre.vn/vinh-biet-kien-truc-su-nguyen-truc-luyen-ten-tuoi-lon-cua-lang-kien-truc-viet-nam-20210522152816747.htm"
+      ]
+    },
+    {
+      "id": "hoang-nhu-tiep",
+      "ten": "Hoàng Như Tiếp",
+      "lon": 103.9188,
+      "lat": 21.3256,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1910–1982",
+      "mo_ta": "Kiến trúc sư, đồng sáng lập Hội Kiến trúc sư Việt Nam năm 1948, nguyên Viện trưởng Viện Quy hoạch đô thị và nông thôn đầu tiên của Việt Nam (1962–1971). Ông chủ trì quy hoạch nhiều thành phố lớn (Hà Nội, Hải Phòng, Vinh) và thiết kế Bảo tàng Tây Bắc, được Hội Kiến trúc sư Liên Xô trao danh hiệu hội viên danh dự.",
+      "dia_diem": "Bảo tàng Văn hóa các dân tộc vùng Tây Bắc, TP. Sơn La, tỉnh Sơn La",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đại Đoàn Kết — Kiến trúc sư Hoàng Như Tiếp: Đời người đời nghề — https://daidoanket.vn/kien-truc-su-hoang-nhu-tiep-doi-nguoi-doi-nghe-10033371.html"
+      ]
+    },
+    {
+      "id": "ta-my-duat",
+      "ten": "Tạ Mỹ Duật",
+      "lon": 105.402,
+      "lat": 21.3227,
+      "loai": "kien-truc-su",
+      "nam_hien_thi": "1910–1989",
+      "mo_ta": "Kiến trúc sư tốt nghiệp Trường Cao đẳng Mỹ thuật Đông Dương, đồng sáng lập Hội Kiến trúc sư Việt Nam (1948), người thiết kế Khu Ngoại giao đoàn Trung ương tại Thái Nguyên thời kháng chiến và Bảo tàng Hùng Vương (Phú Thọ). Ông theo đuổi kiến trúc 'hiện đại mà dân tộc', được tặng Huân chương Kháng chiến hạng Nhì.",
+      "dia_diem": "Bảo tàng Hùng Vương, TP. Việt Trì, tỉnh Phú Thọ — quê xã Đồng Tiến, huyện Khoái Châu, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Tạp chí Kiến trúc — 100 năm ngày sinh KTS Tạ Mỹ Duật (1910-2010) — https://tapchikientruc.com.vn/tin-tuc/tin-hoi-kts-viet-nam/100-nam-ngay-sinh-kts-ta-my-duat-1910-2010.html"
+      ]
+    },
+    {
+      "id": "vo-quy-huan",
+      "ten": "Võ Quý Huân",
+      "lon": 105.2833,
+      "lat": 18.7667,
+      "loai": "ky-su",
+      "nam_hien_thi": "1912–1967",
+      "mo_ta": "Kỹ sư luyện kim tốt nghiệp Pháp, một trong bốn trí thức Việt kiều được Chủ tịch Hồ Chí Minh mời về nước năm 1946 để phụng sự kháng chiến. Ông trực tiếp chỉ đạo xây lò cao đầu tiên của Việt Nam tại Cầu Đất (Nghệ An), cho ra mẻ gang thép lịch sử ngày 15/11/1948, đặt nền móng ngành đúc – luyện kim nước nhà.",
+      "dia_diem": "Quê huyện Thanh Chương, tỉnh Nghệ An — nơi dựng lò cao luyện gang thép đầu tiên tại Cầu Đất, Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Hội Kiến trúc sư Việt Nam — Người kỹ sư theo Bác Hồ về nước đặt nền móng ngành đúc - luyện kim — https://via.gov.vn/tin-tuc/t12969"
+      ]
+    },
+    {
+      "id": "luu-van-lang",
+      "ten": "Lưu Văn Lang",
+      "lon": 105.7625,
+      "lat": 10.2903,
+      "loai": "ky-su",
+      "nam_hien_thi": "1880–1969",
+      "mo_ta": "Kỹ sư người Việt đầu tiên của Đông Dương, tốt nghiệp thứ 8/250 tại Trường Bách khoa Trung ương Paris (École Centrale) năm 1904. Ông tham gia thiết kế tuyến đường sắt Hải Phòng – Côn Minh, giám sát nhiều công trình cầu đường ở Nam Kỳ, nổi tiếng với tài chẩn đoán khuyết tật công trình chỉ bằng cách gõ búa.",
+      "dia_diem": "Quê TP. Sa Đéc, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — Giai thoại ly kì về kỹ sư đầu tiên của Đông Dương khiến người Pháp kính nể — https://baophapluat.vn/giai-thoai-ly-ki-ve-ky-su-dau-tien-cua-dong-duong-khien-nguoi-phap-kinh-ne-post406131.html"
+      ]
+    },
+    {
+      "id": "le-tam-ky-su",
+      "ten": "Lê Tâm",
+      "lon": 107.5909,
+      "lat": 16.4637,
+      "loai": "ky-su",
+      "nam_hien_thi": "1920–2019",
+      "mo_ta": "Kỹ sư cầu đường tốt nghiệp Pháp, được tướng Nguyễn Bình giao phụ trách ngành quân giới Nam Bộ, sáng chế súng SS bắn đạn lõm — vũ khí kháng chiến hiệu quả chống xe tăng, tàu chiến Pháp trên chiến trường Nam Bộ. Ông được phong quân hàm Đại tá năm 1949 và nhận Giải thưởng Hồ Chí Minh về Khoa học Công nghệ năm 1996.",
+      "dia_diem": "Quê gốc Thừa Thiên Huế (TP. Huế)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Công an Nhân dân — Kỹ sư quân giới Lê Tâm: Trăm năm dừng bước nhân gian — https://cand.vn/ky-su-quan-gioi-le-tam-tram-nam-dung-buoc-nhan-gian-post541445.html"
+      ]
+    },
+    {
+      "id": "nguyen-ngoc-bich-ky-su",
+      "ten": "Nguyễn Ngọc Bích",
+      "lon": 105.7833,
+      "lat": 10.0167,
+      "loai": "ky-su",
+      "nam_hien_thi": "1911–1966",
+      "mo_ta": "Kỹ sư, nguyên Khu bộ phó Khu 9, nổi tiếng với biệt danh «kỹ sư phá cầu» vì đánh sập các cầu Cái Răng, Tân Hương nhằm ngăn bước tiến quân Pháp thời kháng chiến chống Pháp ở Nam Bộ. Ông từng bị bắt và trục xuất sang Pháp vì các hoạt động này.",
+      "dia_diem": "Khu vực cầu Cái Răng, quận Cái Răng, TP. Cần Thơ — nơi hoạt động phá cầu kháng chiến",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bác Hồ với trí thức Nam Bộ — https://nhandan.vn/bac-ho-voi-tri-thuc-nam-bo-post507055.html"
+      ]
+    },
+    {
+      "id": "bui-danh-luu",
+      "ten": "Bùi Danh Lưu",
+      "lon": 105.8611,
+      "lat": 21.0359,
+      "loai": "ky-su",
+      "nam_hien_thi": "1935–2010",
+      "mo_ta": "Giáo sư, Tiến sĩ kỹ sư cầu đường, người trực tiếp chỉ đạo xây dựng cầu Chương Dương (Hà Nội, hoàn thành 1985) — cây cầu lớn đầu tiên do Việt Nam tự thiết kế, thi công mà không cần chuyên gia nước ngoài. Ông sáng lập và làm Chủ tịch Hội Khoa học kỹ thuật Cầu đường Việt Nam (1987–2010).",
+      "dia_diem": "Cầu Chương Dương, Hà Nội — quê xã Đào Xá, huyện Thanh Thủy, tỉnh Phú Thọ",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đại Đoàn Kết — GS.TS Bùi Danh Lưu: Một trí thức tận tâm — https://daidoanket.vn/gs-ts-bui-danh-luu-mot-tri-thuc-tan-tam-10178616.html"
+      ]
+    },
+    {
+      "id": "nguyen-an-nien",
+      "ten": "Nguyễn Ân Niên",
+      "lon": 106.6297,
+      "lat": 10.8231,
+      "loai": "ky-su",
+      "nam_hien_thi": "1936–2026",
+      "mo_ta": "Giáo sư, Tiến sĩ khoa học, Anh hùng Lao động ngành thủy lợi, nguyên Viện trưởng Viện Khoa học Thủy lợi Miền Nam. Ông xây dựng mô hình toán thủy lực đầu tiên của Việt Nam (KOD-01) và lý thuyết thành phần nước, đóng góp lớn cho công tác phòng chống lũ lụt Đồng bằng sông Cửu Long sau trận lũ lịch sử 1994.",
+      "dia_diem": "Viện Khoa học Thủy lợi Miền Nam, Quận 5, TP.HCM",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "nongnghiepmoitruong.vn — Vĩnh biệt một trí tuệ lớn của ngành thủy lợi Việt Nam: GS.TSKH Nguyễn Ân Niên — https://nongnghiepmoitruong.vn/tri-thuc-nong-dan/vinh-biet-mot-tri-tue-lon-cua-nganh-thuy-loi-viet-nam-gstskh-nguyen-an-nien-d805512.html"
+      ]
     }
   ]
 }
