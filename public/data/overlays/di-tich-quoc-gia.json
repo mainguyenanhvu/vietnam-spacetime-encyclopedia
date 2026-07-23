@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Di tích cấp quốc gia (& đặc biệt) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23. Nguồn cổng nhà nước (dsvh.gov.vn, báo Đảng tỉnh). 3 mục gắn cách mạng (ATK Chợ Đồn + Chương Thiện là QG đặc biệt, Đền thờ Bác Hồ) — có thể tách sang di-tich-qgdb/di-tich-cach-mang khi duyệt.",
+  "ghi_chu": "Di tích cấp quốc gia (đền/chùa/thành/hang/khảo cổ) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23. Nguồn cổng nhà nước (dsvh.gov.vn, báo Đảng tỉnh). Đã gỡ ATK Chợ Đồn + Chiến thắng Chương Thiện (trùng di-tich-qgdb). Đền thờ Bác Hồ Lương Tâm gắn cách mạng — có thể tách sang di-tich-cach-mang khi duyệt.",
   "ngay_cap_nhat": "2026-07-23",
   "sources": [
     "Cục Di sản văn hóa (dsvh.gov.vn)",
@@ -35,21 +35,6 @@
       "trang_thai": "draft",
       "nguon": [
         "Báo Cao Bằng điện tử — Đền Kỳ Sầm - nơi thờ danh tướng Nùng Trí Cao — https://baocaobang.vn/den-ky-sam-noi-tho-nhan-vat-lich-su-danh-tuong-nung-tri-cao-1025-1053-3182714.html"
-      ]
-    },
-    {
-      "id": "an-toan-khu-atk-cho-don",
-      "ten": "An toàn khu (ATK) Chợ Đồn",
-      "lon": 105.5,
-      "lat": 22.2,
-      "loai": "cach-mang",
-      "nam_hien_thi": "Di tích QG đặc biệt 2016",
-      "mo_ta": "Quần thể 25 điểm di tích — nơi Chủ tịch Hồ Chí Minh, Trường Chinh, Phạm Văn Đồng cùng cơ quan Trung ương Đảng đặt trụ sở trong kháng chiến chống Pháp (1947–1952). Xếp hạng Di tích quốc gia đặc biệt theo Quyết định 2499/QĐ-TTg ngày 22/12/2016.",
-      "dia_diem": "Các xã Bình Trung, Nghĩa Tá, Lương Bằng, huyện Chợ Đồn, tỉnh Bắc Kạn",
-      "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": [
-        "Cục Di sản văn hóa — Di tích lịch sử An toàn khu (ATK) Chợ Đồn — https://dsvh.gov.vn/di-tich-tich-lich-su-an-toan-khu-atk-cho-don-3000"
       ]
     },
     {
@@ -95,21 +80,6 @@
       "trang_thai": "draft",
       "nguon": [
         "Cổng TTĐT UBND tỉnh Lai Châu — Pu Sam Cáp - Tây Bắc đệ nhất động — https://laichau.gov.vn/tin-tuc-su-kien/chuyen-de/xuc-tien-dau-tu-va-quang-ba-du-lich-lai-chau/pu-sam-cap-tay-bac-de-nhat-dong-.html"
-      ]
-    },
-    {
-      "id": "di-tich-lich-su-chien-thang-chuong-thien",
-      "ten": "Di tích lịch sử Chiến thắng Chương Thiện",
-      "lon": 105.463,
-      "lat": 9.783,
-      "loai": "cach-mang",
-      "nam_hien_thi": "Di tích QG đặc biệt 2013",
-      "mo_ta": "Di tích ghi dấu chiến thắng đánh bại 75 lượt tiểu đoàn địch sau Hiệp định Paris 1973, tạo tiền đề cho Tổng tiến công mùa Xuân 1975. Xếp hạng Di tích quốc gia đặc biệt theo Quyết định 2383/QĐ-TTg ngày 9/12/2013.",
-      "dia_diem": "Phường 5, TP Vị Thanh và xã Vĩnh Viễn, huyện Long Mỹ, tỉnh Hậu Giang",
-      "do_tin_cay_toa_do": "trung",
-      "trang_thai": "draft",
-      "nguon": [
-        "Cục Di sản văn hóa — Di tích lịch sử Chiến thắng Chương Thiện — https://dsvh.gov.vn/di-tich-lich-su-chien-thang-chuong-thien-thanh-pho-vi-thanh-va-huyen-long-my-tinh-hau-giang-2976"
       ]
     },
     {
