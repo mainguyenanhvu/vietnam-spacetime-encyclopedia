@@ -1479,6 +1479,26 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
+    id: "di-tich-quoc-gia",
+    label: "🏛️ Di tích quốc gia (đền · chùa · thành · hang · khảo cổ)",
+    icon: "🏛️",
+    file: "data/overlays/di-tich-quoc-gia.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "danh-thang",
+      "#16a34a",
+      "khao-co",
+      "#a16207",
+      "cach-mang",
+      "#dc2626",
+      "#0e7490",
+    ],
+    nguon:
+      "Cục Di sản văn hóa (dsvh.gov.vn) · Báo Đảng các tỉnh · Cổng TTĐT tỉnh",
+    popup: eventOverlayPopup,
+  },
+  {
     id: "le-hoi-truyen-thong",
     label: "🎏 Lễ hội truyền thống (di sản phi vật thể)",
     icon: "🎏",
