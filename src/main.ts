@@ -68,8 +68,8 @@ const PERIODS: Period[] = [
   { ten_nuoc: "Vạn Xuân", nhan: "Vạn Xuân · Lý Nam Đế (544–602)", kind: "cuongvuc", ref: "van-xuan" },
   { ten_nuoc: "Tĩnh Hải quân", nhan: "Bắc thuộc III → Tự chủ (602–938)", kind: "ten" },
   { ten_nuoc: "Đại Cồ Việt", nhan: "Đại Cồ Việt · Đinh–Tiền Lê–Lý (968–1054)", kind: "ten" },
-  { ten_nuoc: "Đại Việt", nhan: "Đại Việt · Lý–Trần–Lê–Tây Sơn (1054–1804)", kind: "ten" },
-  { ten_nuoc: "Đại Nam", nhan: "Đại Nam · nhà Nguyễn (1804–1887)", kind: "ten" },
+  { ten_nuoc: "Đại Việt", nhan: "Đại Việt · Lê sơ — cương vực ~1490 (Hồng Đức)", kind: "cuongvuc", ref: "dai-viet-1490" },
+  { ten_nuoc: "Đại Nam", nhan: "Đại Nam · nhà Nguyễn — cương vực ~1838", kind: "cuongvuc", ref: "dai-nam-1838" },
   { ten_nuoc: "Việt Nam thời Pháp thuộc", nhan: "Pháp thuộc · Bắc–Trung–Nam Kỳ (1887–1945)", kind: "admin", ref: 0 },
   { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 63 tỉnh (1976–30/6/2025)", kind: "admin", ref: 1 },
   { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 34 tỉnh (từ 1/7/2025)", kind: "admin", ref: 2 },
@@ -411,6 +411,8 @@ function initCuongVuc(): void {
         "au-lac", "#ea580c",
         "au-lac-co-loa", "#eab308",
         "van-xuan", "#0d9488",
+        "dai-viet-1490", "#16a34a",
+        "dai-nam-1838", "#2563eb",
         "#dc2626",
       ] as unknown as ExpressionSpecification;
       const before = map.getLayer("chu-quyen-labels") ? "chu-quyen-labels" : undefined;
