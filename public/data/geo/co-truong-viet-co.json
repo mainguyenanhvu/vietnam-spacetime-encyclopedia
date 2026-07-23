@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
-  "ghi_chu": "CƯƠNG VỰC XẤP XỈ / PHỎNG DỰNG các nhà nước Việt cổ (Xích Quỷ → Văn Lang → Âu Lạc → Vạn Xuân). Polygon là PHỎNG DỰNG HỌC THUẬT theo địa danh hiện đại, KHÔNG phải bản đồ chủ quyền, KHÔNG dùng cho bất kỳ tuyên bố lãnh thổ nào. Khảo cổ chỉ xác nhận SỰ TỒN TẠI của trung tâm chính trị (văn hoá Đông Sơn, thành Cổ Loa), không xác nhận đường biên cụ thể. Xích Quỷ là HUYỀN SỬ/BIỂU TƯỢNG gốc Bách Việt (mô tả trong ĐVSKTT có thể vay mượn địa giới nước Sở). Nguồn: Đào Duy Anh «Đất nước Việt Nam qua các đời», ĐVSKTT Ngoại kỷ, Bảo tàng Lịch sử Quốc gia. KHÔNG dùng Wikipedia.",
-  "ngay_cap_nhat": "2026-07-19",
+  "ghi_chu": "CƯƠNG VỰC các nhà nước Việt cổ. 3 nước Văn Lang/Âu Lạc/Vạn Xuân hiển thị bằng POLYGON PHỎNG DỰNG HỌC THUẬT (phạm vi văn hóa Đông Sơn + «15 bộ», Bắc Bộ → Đèo Ngang) — KHÔNG có bản đồ đương thời (bản đồ VN cổ nhất là Hồng Đức 1490), đường biên là ước lượng học thuật có nguồn, KHÔNG phải bản đồ chủ quyền. Xích Quỷ là HUYỀN SỬ → chỉ đánh dấu ĐIỂM nơi thờ (lăng Kinh Dương Vương), không có lãnh thổ. Đại Việt 1490 + Đại Nam 1838 trace từ atlas gốc (Hồng Đức / bản đồ 1838). Nguồn: Đào Duy Anh «Đất nước Việt Nam qua các đời», Viện Hàn lâm KHXH VN, Sở VHTTDL Phú Thọ, Viện Khảo cổ học VN, ĐVSKTT. KHÔNG dùng Wikipedia.",
+  "ngay_cap_nhat": "2026-07-23",
   "features": [
     {
       "type": "Feature",
@@ -9,55 +9,19 @@
         "id": "xich-quy",
         "ten": "Xích Quỷ (Kinh Dương Vương)",
         "nien_dai": "Huyền sử · ĐVSKTT gán ≈ 2879 TCN (suy đoán muộn của sử quan)",
-        "kinh_do": "Không xác định trong sử gốc; dân gian gán vùng Phong Châu",
+        "kinh_do": "Không xác định (huyền sử); nơi thờ: lăng Kinh Dương Vương, Thuận Thành, Bắc Ninh",
         "muc_do_tin_cay": "huyen-su",
-        "ghi_chu": "HUYỀN SỬ / BIỂU TƯỢNG. Mô tả «bắc giáp Động Đình, nam giáp Hồ Tôn, tây giáp Ba Thục, đông giáp Nam Hải» mang tính biểu tượng về gốc Bách Việt; có nghiên cứu cho rằng bốn mốc này trùng địa giới nước Sở thời Xuân Thu–Chiến Quốc. Tên «Xích Quỷ» KHÔNG xuất hiện trong sử liệu Việt trước năm 1479 — lần đầu do Ngô Sĩ Liên ghi vào ĐVSKTT; phả hệ Đế Minh–Kinh Dương Vương có gốc truyền thuyết dân gian Mường. KHÔNG phải bản đồ chủ quyền.",
+        "ghi_chu": "HUYỀN SỬ / BIỂU TƯỢNG gốc Bách Việt. KHÔNG có kinh đô khảo cổ hay bản đồ đương thời; điểm này chỉ đánh dấu nơi THỜ Kinh Dương Vương (lăng ở Thuận Thành, Bắc Ninh) mang tính tưởng niệm, KHÔNG phải kinh đô. Tên «Xích Quỷ» lần đầu do Ngô Sĩ Liên chép vào ĐVSKTT năm 1479. KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền.",
         "nguon": [
           "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Hồng Bàng thị",
           "Đào Duy Anh — Đất nước Việt Nam qua các đời"
         ]
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              104.06,
-              30.67
-            ],
-            [
-              110.5,
-              29.5
-            ],
-            [
-              112.9,
-              29.3
-            ],
-            [
-              113.3,
-              22.2
-            ],
-            [
-              109.8,
-              16.5
-            ],
-            [
-              109.2,
-              13.8
-            ],
-            [
-              105.5,
-              15
-            ],
-            [
-              102.5,
-              22.5
-            ],
-            [
-              104.06,
-              30.67
-            ]
-          ]
+          106.07,
+          21.05
         ]
       }
     },
@@ -68,12 +32,12 @@
         "ten": "Văn Lang (Hùng Vương)",
         "nien_dai": "≈ TK VII TCN – 258 TCN (khớp văn hoá Đông Sơn)",
         "kinh_do": "Phong Châu (Việt Trì – Phú Thọ)",
-        "muc_do_tin_cay": "su-lieu",
-        "ghi_chu": "Châu thổ & trung du sông Hồng – Mã – Cả (Bắc Bộ + bắc Trung Bộ tới Hoành Sơn). Đường biên là PHỎNG DỰNG học thuật (Đào Duy Anh); khảo cổ Đông Sơn xác nhận có nhà nước sơ khai, không xác nhận biên giới chi tiết 15 bộ.",
+        "muc_do_tin_cay": "xap-xi-co-nguon",
+        "ghi_chu": "Cương vực PHỎNG DỰNG HỌC THUẬT theo phạm vi văn hóa Đông Sơn + «15 bộ» (Bắc Bộ → Đèo Ngang, Quảng Bình). KHÔNG có bản đồ đương thời; đường biên là ước lượng học thuật có nguồn, KHÔNG phải bản đồ chủ quyền. Trung tâm chính trị Phong Châu (Việt Trì) có cơ sở khảo cổ văn hóa Phùng Nguyên.",
         "nguon": [
-          "Đào Duy Anh — Đất nước Việt Nam qua các đời",
-          "ĐVSKTT — Ngoại kỷ",
-          "Việt sử lược"
+          "Sở VHTTDL Phú Thọ (svhttdl.phutho.gov.vn) — «Dấu tích Kinh đô Văn Lang thời đại Hùng Vương trên địa bàn thành phố Việt Trì»",
+          "Tạp chí Khoa học Xã hội Việt Nam (Viện Hàn lâm KHXH VN) — «Văn hóa Đông Sơn 10 thế kỷ đầu Công nguyên» (phạm vi phân bố khảo cổ)",
+          "Đào Duy Anh — «Đất nước Việt Nam qua các đời»"
         ]
       },
       "geometry": {
@@ -81,36 +45,76 @@
         "coordinates": [
           [
             [
-              103.9,
-              22.8
+              107.97,
+              21.53
             ],
             [
-              105.8,
-              23.3
+              106.8,
+              20.72
             ],
             [
-              107,
-              21.5
+              106.55,
+              20.28
             ],
             [
-              107,
-              20.2
+              105.9,
+              19.2
+            ],
+            [
+              105.78,
+              18.66
             ],
             [
               106.2,
+              18
+            ],
+            [
+              106.45,
               17.9
             ],
             [
-              105,
-              18.5
+              105.3,
+              18.4
             ],
             [
-              103.8,
-              20.5
+              104.6,
+              19.3
             ],
             [
-              103.9,
+              104.5,
+              20.3
+            ],
+            [
+              103.2,
+              20.9
+            ],
+            [
+              102.85,
+              21.3
+            ],
+            [
+              103.3,
               22.8
+            ],
+            [
+              104.5,
+              22.9
+            ],
+            [
+              105.32,
+              23.35
+            ],
+            [
+              106.7,
+              22.8
+            ],
+            [
+              107.35,
+              22.3
+            ],
+            [
+              107.97,
+              21.53
             ]
           ]
         ]
@@ -122,13 +126,13 @@
         "id": "au-lac",
         "ten": "Âu Lạc (An Dương Vương)",
         "nien_dai": "≈ 257 TCN – 179 TCN",
-        "kinh_do": "Cổ Loa (Đông Anh, Hà Nội) — Di tích Quốc gia đặc biệt",
-        "muc_do_tin_cay": "su-lieu",
-        "ghi_chu": "Văn Lang hợp nhất với vùng Âu Việt (Việt Bắc: Cao Bằng, Lạng Sơn), mở rộng về Bắc/Đông Bắc. Thành Cổ Loa (3 vòng thành, trống đồng, xưởng đúc mũi tên) là bằng chứng khảo cổ vững cho TRUNG TÂM; phần biên phía Âu Việt vẫn là suy luận sử liệu.",
+        "kinh_do": "Cổ Loa (Đông Anh, Hà Nội)",
+        "muc_do_tin_cay": "xap-xi-co-nguon",
+        "ghi_chu": "Cương vực PHỎNG DỰNG HỌC THUẬT (Đông Sơn muộn, kế tục Văn Lang; Bắc Bộ → Đèo Ngang). Kinh đô Cổ Loa được định tuổi carbon phóng xạ TK III–II TCN (Viện Khảo cổ học VN phối hợp ĐH Wisconsin-Madison) — trùng thời An Dương Vương. Đường biên là ước lượng học thuật, KHÔNG phải bản đồ chủ quyền.",
         "nguon": [
-          "Bảo tàng Lịch sử Quốc gia — Cổ Loa, kinh đô Âu Lạc",
-          "ĐVSKTT & Việt sử lược",
-          "Đào Duy Anh — Đất nước Việt Nam qua các đời"
+          "Viện Khảo cổ học Việt Nam — định tuổi carbon phóng xạ vòng thành Cổ Loa (TK III–II TCN, hợp tác ĐH Wisconsin-Madison 2005–2008)",
+          "Tạp chí Khoa học Xã hội Việt Nam (Viện Hàn lâm KHXH VN) — «Văn hóa Đông Sơn»",
+          "Đào Duy Anh — «Đất nước Việt Nam qua các đời»"
         ]
       },
       "geometry": {
@@ -136,36 +140,76 @@
         "coordinates": [
           [
             [
-              103.8,
-              23.3
+              107.97,
+              21.53
             ],
             [
-              106,
-              23.8
+              106.8,
+              20.72
             ],
             [
-              107.5,
-              21.8
+              106.55,
+              20.28
             ],
             [
-              107.2,
-              20.2
+              105.9,
+              19.2
+            ],
+            [
+              105.78,
+              18.66
             ],
             [
               106.2,
+              18
+            ],
+            [
+              106.45,
               17.9
             ],
             [
-              105,
-              18.5
+              105.3,
+              18.4
             ],
             [
-              103.8,
-              20.5
+              104.6,
+              19.3
             ],
             [
-              103.8,
-              23.3
+              104.5,
+              20.3
+            ],
+            [
+              103.2,
+              20.9
+            ],
+            [
+              102.85,
+              21.3
+            ],
+            [
+              103.3,
+              22.8
+            ],
+            [
+              104.5,
+              22.9
+            ],
+            [
+              105.32,
+              23.35
+            ],
+            [
+              106.7,
+              22.8
+            ],
+            [
+              107.35,
+              22.3
+            ],
+            [
+              107.97,
+              21.53
             ]
           ]
         ]
@@ -221,12 +265,12 @@
         "id": "van-xuan",
         "ten": "Vạn Xuân (Lý Nam Đế)",
         "nien_dai": "544 – 602 SCN",
-        "kinh_do": "Vùng cửa sông Tô Lịch (nội thành Hà Nội)",
-        "muc_do_tin_cay": "su-lieu",
-        "ghi_chu": "Quốc hiệu chính sử (không phải huyền sử), được cả sử Việt (ĐVSKTT) và sử Trung Quốc (Lương thư) ghi nhận — độ tin cậy niên đại cao nhất trong 4 thời kỳ. Địa bàn ≈ Giao Châu cũ (đồng bằng sông Hồng + bắc Trung Bộ tới Hoành Sơn). Đường biên vẫn là xấp xỉ.",
+        "kinh_do": "Long Biên / Ô Diên (nay vùng Hà Nội – Bắc Ninh; vị trí còn tranh cãi)",
+        "muc_do_tin_cay": "xap-xi-co-nguon",
+        "ghi_chu": "Cương vực PHỎNG DỰNG HỌC THUẬT theo phạm vi Giao Châu thời Lý Nam Đế (Bắc Bộ → Đèo Ngang). KHÔNG có bản đồ đương thời; vị trí kinh đô (Long Biên hay Ô Diên/Hạ Mỗ, Đan Phượng) còn tranh cãi trong giới sử học. Đường biên là ước lượng học thuật, KHÔNG phải bản đồ chủ quyền.",
         "nguon": [
-          "ĐVSKTT — Bản kỷ (Tiền Lý)",
-          "Lương thư (đối chiếu sử Trung Quốc)"
+          "Trung tâm Bảo tồn Di sản Thăng Long – Hà Nội (hoangthanhthanglong.vn) — «Lý Nam Đế đặt tên nước là Vạn Xuân»",
+          "Đào Duy Anh — «Đất nước Việt Nam qua các đời»"
         ]
       },
       "geometry": {
@@ -234,32 +278,76 @@
         "coordinates": [
           [
             [
-              104.5,
-              22.5
+              107.97,
+              21.53
             ],
             [
-              106,
-              21.5
+              106.8,
+              20.72
             ],
             [
-              107,
-              20.5
+              106.55,
+              20.28
+            ],
+            [
+              105.9,
+              19.2
+            ],
+            [
+              105.78,
+              18.66
             ],
             [
               106.2,
+              18
+            ],
+            [
+              106.45,
               17.9
             ],
             [
-              105.2,
-              18.6
+              105.3,
+              18.4
             ],
             [
-              104.3,
-              20.3
+              104.6,
+              19.3
             ],
             [
               104.5,
-              22.5
+              20.3
+            ],
+            [
+              103.2,
+              20.9
+            ],
+            [
+              102.85,
+              21.3
+            ],
+            [
+              103.3,
+              22.8
+            ],
+            [
+              104.5,
+              22.9
+            ],
+            [
+              105.32,
+              23.35
+            ],
+            [
+              106.7,
+              22.8
+            ],
+            [
+              107.35,
+              22.3
+            ],
+            [
+              107.97,
+              21.53
             ]
           ]
         ]

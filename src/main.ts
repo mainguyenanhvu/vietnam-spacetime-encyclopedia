@@ -393,9 +393,10 @@ function setTaberdOpacity(v: number): void {
   if (map.getLayer("taberd")) map.setPaintProperty("taberd", "raster-opacity", v);
 }
 
-// --- Cương vực Việt cổ (PHỎNG DỰNG xấp xỉ): Xích Quỷ → Văn Lang → Âu Lạc → Vạn Xuân.
-// Đường biên nét ĐỨT + tô mờ để nhấn «phỏng dựng, không phải chủ quyền». Xích Quỷ
-// là huyền sử/biểu tượng — popup ghi rõ. Dữ liệu: co-truong-viet-co.json. ---
+// --- Cương vực Việt cổ. Văn Lang / Âu Lạc / Vạn Xuân = POLYGON phỏng dựng học thuật
+// (phạm vi Đông Sơn + «15 bộ», Bắc Bộ → Đèo Ngang) — nét ĐỨT + tô mờ, nhấn «phỏng
+// dựng có nguồn, không phải chủ quyền». Xích Quỷ = huyền sử → ĐIỂM (layer circle) nơi
+// thờ Kinh Dương Vương, không có lãnh thổ. Dữ liệu: co-truong-viet-co.json. ---
 function initCuongVuc(): void {
   const url = `${import.meta.env.BASE_URL}data/geo/co-truong-viet-co.json`;
   void fetch(url)
@@ -438,6 +439,25 @@ function initCuongVuc(): void {
         } as never,
         before,
       );
+      // Điểm huyền sử (Xích Quỷ): feature dạng Point — fill/line không vẽ được nên
+      // dùng layer circle riêng, cùng cơ chế lọc theo thời kỳ như polygon.
+      map.addLayer(
+        {
+          id: "cuong-vuc-diem",
+          type: "circle",
+          source: "cuong-vuc",
+          filter: ["==", ["get", "id"], "__none__"],
+          layout: { visibility: "none" },
+          paint: {
+            "circle-radius": 7,
+            "circle-color": color,
+            "circle-opacity": 0.85,
+            "circle-stroke-width": 2,
+            "circle-stroke-color": "#ffffff",
+          },
+        } as never,
+        before,
+      );
       map.on("click", "cuong-vuc-fill", (e) => {
         const f = e.features?.[0];
         if (!f) return;
@@ -452,16 +472,37 @@ function initCuongVuc(): void {
         new maplibregl.Popup({ offset: 10, maxWidth: "320px" })
           .setLngLat(e.lngLat)
           .setHTML(
-            `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Phỏng dựng xấp xỉ theo sử liệu — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+            `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Phỏng dựng học thuật có nguồn — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
           )
           .addTo(map);
       });
-      map.on("mouseenter", "cuong-vuc-fill", () => {
-        map.getCanvas().style.cursor = "pointer";
+      // Popup cho điểm huyền sử (Xích Quỷ) — nhấn rõ KHÔNG phải sử thật.
+      map.on("click", "cuong-vuc-diem", (e) => {
+        const f = e.features?.[0];
+        if (!f) return;
+        const p = f.properties as Record<string, string>;
+        let nguon = p.nguon ?? "";
+        try {
+          const arr = JSON.parse(p.nguon);
+          if (Array.isArray(arr)) nguon = arr.join(" · ");
+        } catch {
+          /* giữ nguyên chuỗi */
+        }
+        new maplibregl.Popup({ offset: 10, maxWidth: "320px" })
+          .setLngLat(e.lngLat)
+          .setHTML(
+            `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Huyền sử / biểu tượng — KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+          )
+          .addTo(map);
       });
-      map.on("mouseleave", "cuong-vuc-fill", () => {
-        map.getCanvas().style.cursor = "";
-      });
+      for (const lyr of ["cuong-vuc-fill", "cuong-vuc-diem"]) {
+        map.on("mouseenter", lyr, () => {
+          map.getCanvas().style.cursor = "pointer";
+        });
+        map.on("mouseleave", lyr, () => {
+          map.getCanvas().style.cursor = "";
+        });
+      }
     })
     .catch(() => {});
 }
@@ -470,12 +511,20 @@ function applyCuongVuc(eraId: string): void {
   const v = on ? "visible" : "none";
   // Âu Lạc hiện kèm lõi khảo cổ Cổ Loa (feature phụ chồng lên polygon lãnh thổ).
   const ids = eraId === "au-lac" ? ["au-lac", "au-lac-co-loa"] : [eraId];
-  const filt = ["in", ["get", "id"], ["literal", on ? ids : []]];
+  // Xích Quỷ là feature dạng Point (huyền sử) → dùng layer circle; các nước còn
+  // lại là polygon. Lọc riêng để không vẽ nhầm chấm lên đỉnh polygon.
+  const isPoint = eraId === "xich-quy";
+  const polyFilt = ["in", ["get", "id"], ["literal", on && !isPoint ? ids : []]];
+  const pointFilt = ["in", ["get", "id"], ["literal", on && isPoint ? ids : []]];
   for (const id of ["cuong-vuc-fill", "cuong-vuc-line"]) {
     if (map.getLayer(id)) {
-      map.setFilter(id, filt as never);
+      map.setFilter(id, polyFilt as never);
       map.setLayoutProperty(id, "visibility", v);
     }
+  }
+  if (map.getLayer("cuong-vuc-diem")) {
+    map.setFilter("cuong-vuc-diem", pointFilt as never);
+    map.setLayoutProperty("cuong-vuc-diem", "visibility", v);
   }
 }
 
