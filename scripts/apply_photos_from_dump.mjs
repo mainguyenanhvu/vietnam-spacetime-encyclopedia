@@ -5,10 +5,15 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const [dumpPath, rejectPath] = process.argv.slice(2);
+// Args: <dump.json> [rejectOrAccept.json]. A file named accept*.json is an
+// ALLOWLIST (apply only these ten); otherwise it is a reject list.
+const [dumpPath, listPath] = process.argv.slice(2);
 const OV = path.resolve("public/data/overlays");
 const dump = JSON.parse(fs.readFileSync(dumpPath, "utf8"));
-const reject = new Set(rejectPath ? JSON.parse(fs.readFileSync(rejectPath, "utf8")).map(String) : []);
+const isAccept = listPath && /accept/i.test(path.basename(listPath));
+const listSet = new Set(listPath ? JSON.parse(fs.readFileSync(listPath, "utf8")).map(String) : []);
+const reject = isAccept ? new Set() : listSet;
+const accept = isAccept ? listSet : null;
 
 // anh_nguon in the dump is "Wikimedia Commons — <artist…> · <url>"; the artist
 // segment is occasionally a giant credit dump — keep first line, cap length.
@@ -24,6 +29,7 @@ function cleanNguon(s) {
 
 const byFile = {};
 for (const m of dump) {
+  if (accept && !(accept.has(m.ten) || accept.has(String(m.id)))) continue;
   if (reject.has(m.id) || reject.has(m.ten)) continue;
   (byFile[m.file] = byFile[m.file] || []).push(m);
 }
