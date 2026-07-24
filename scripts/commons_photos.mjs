@@ -17,6 +17,18 @@ const OVERLAYS_DIR = path.resolve("public/data/overlays");
 const USER_AGENT = "vn-encyclopedia-photos/1.0 (mnav.tkonline@gmail.com)";
 const SLEEP_MS = 500;
 
+// Layers of modern people -> a matched image is a portrait (anh_muc=chan-dung).
+// Everything else is a place/artifact -> tu-lieu.
+const CHANDUNG_FILES = new Set([
+  "tri-thuc-khoa-hoc-tk20.json",
+  "nha-the-thao-lich-su.json",
+  "anh-hung-can-hien-dai.json",
+  "danh-nhan-van-hoa-can-hien-dai.json",
+  "chi-si-cach-mang.json",
+  "danh-nhan-nam-bo.json",
+  "me-vnah.json",
+]);
+
 const FREE_LICENSE_RE =
   /\b(cc[\s-]?by(?:[\s-]?sa)?|cc0|public domain|pd[\s-]?(us|old|art)?)\b/i;
 const REJECT_LICENSE_RE = /\b(fair use|non-free|all rights reserved)\b/i;
@@ -197,6 +209,7 @@ async function processFile(fileName, opts) {
     const { result, reason } = pickBest(item.ten, candidates);
     if (result) {
       const fields = buildAnhFields(item.ten, result);
+      fields.anh_muc = CHANDUNG_FILES.has(fileName) ? "chan-dung" : "tu-lieu";
       const rejected = opts.rejectSet.has(String(item.id)) || opts.rejectSet.has(item.ten);
       // HIGH = the entry's full name (minus parenthetical) appears as a
       // contiguous substring of the file title -> safe to auto-accept.
