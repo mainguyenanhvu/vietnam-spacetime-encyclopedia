@@ -6,18 +6,138 @@
     "Cục Di sản văn hóa — dsvh.gov.vn"
   ],
   "items": [
-    { "ten": "Vịnh Hạ Long – Quần đảo Cát Bà", "loai": "di-san-the-gioi", "hang_muc": "Thiên nhiên", "nam": "1994 · 2000 · 2023", "lon": 107.05, "lat": 20.9, "tinh_34": "Quảng Ninh, Hải Phòng" },
-    { "ten": "Vườn quốc gia Phong Nha – Kẻ Bàng", "loai": "di-san-the-gioi", "hang_muc": "Thiên nhiên", "nam": "2003 · 2015", "lon": 106.283, "lat": 17.53, "tinh_34": "Quảng Trị" },
-    { "ten": "Hoàng thành Thăng Long", "loai": "di-san-the-gioi", "hang_muc": "Văn hoá", "nam": "2010", "lon": 105.8412, "lat": 21.0355, "tinh_34": "Hà Nội" },
-    { "ten": "Thành nhà Hồ", "loai": "di-san-the-gioi", "hang_muc": "Văn hoá", "nam": "2011", "lon": 105.6049, "lat": 20.0772, "tinh_34": "Thanh Hoá" },
-    { "ten": "Quần thể danh thắng Tràng An", "loai": "di-san-the-gioi", "hang_muc": "Hỗn hợp", "nam": "2014", "lon": 105.89, "lat": 20.24, "tinh_34": "Ninh Bình" },
-    { "ten": "Quần thể di tích Cố đô Huế", "loai": "di-san-the-gioi", "hang_muc": "Văn hoá", "nam": "1993", "lon": 107.578, "lat": 16.4698, "tinh_34": "Huế" },
-    { "ten": "Phố cổ Hội An", "loai": "di-san-the-gioi", "hang_muc": "Văn hoá", "nam": "1999", "lon": 108.328, "lat": 15.877, "tinh_34": "Đà Nẵng" },
-    { "ten": "Thánh địa Mỹ Sơn", "loai": "di-san-the-gioi", "hang_muc": "Văn hoá", "nam": "1999", "lon": 108.124, "lat": 15.764, "tinh_34": "Đà Nẵng" },
-    { "ten": "Quần thể Yên Tử – Vĩnh Nghiêm – Côn Sơn, Kiếp Bạc", "loai": "di-san-the-gioi", "hang_muc": "Văn hoá", "nam": "2025", "lon": 106.717, "lat": 21.088, "tinh_34": "Quảng Ninh, Bắc Ninh, Hải Phòng" },
-    { "ten": "Công viên địa chất toàn cầu Cao nguyên đá Đồng Văn", "loai": "cong-vien-dia-chat", "hang_muc": "Địa chất", "nam": "2010", "lon": 105.36, "lat": 23.28, "tinh_34": "Tuyên Quang" },
-    { "ten": "Công viên địa chất toàn cầu Non nước Cao Bằng", "loai": "cong-vien-dia-chat", "hang_muc": "Địa chất", "nam": "2018", "lon": 106.25, "lat": 22.66, "tinh_34": "Cao Bằng" },
-    { "ten": "Công viên địa chất toàn cầu Đắk Nông", "loai": "cong-vien-dia-chat", "hang_muc": "Địa chất", "nam": "2020", "lon": 107.68, "lat": 12.0, "tinh_34": "Lâm Đồng" },
-    { "ten": "Công viên địa chất toàn cầu Lạng Sơn", "loai": "cong-vien-dia-chat", "hang_muc": "Địa chất", "nam": "2024", "lon": 106.76, "lat": 21.85, "tinh_34": "Lạng Sơn" }
+    {
+      "ten": "Vịnh Hạ Long – Quần đảo Cát Bà",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Thiên nhiên",
+      "nam": "1994 · 2000 · 2023",
+      "lon": 107.05,
+      "lat": 20.9,
+      "tinh_34": "Quảng Ninh, Hải Phòng"
+    },
+    {
+      "ten": "Vườn quốc gia Phong Nha – Kẻ Bàng",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Thiên nhiên",
+      "nam": "2003 · 2015",
+      "lon": 106.283,
+      "lat": 17.53,
+      "tinh_34": "Quảng Trị"
+    },
+    {
+      "ten": "Hoàng thành Thăng Long",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Văn hoá",
+      "nam": "2010",
+      "lon": 105.8412,
+      "lat": 21.0355,
+      "tinh_34": "Hà Nội",
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/C%E1%BB%95ng_B%E1%BA%AFc_ho%C3%A0ng_th%C3%A0nh_Th%C4%83ng_Long.JPG/330px-C%E1%BB%95ng_B%E1%BA%AFc_ho%C3%A0ng_th%C3%A0nh_Th%C4%83ng_Long.JPG",
+      "anh_nguon": "Wikimedia Commons — Nguyễn Thanh Quang · https://commons.wikimedia.org/wiki/File:C%E1%BB%95ng_B%E1%BA%AFc_ho%C3%A0ng_th%C3%A0nh_Th%C4%83ng_Long.JPG",
+      "anh_giay_phep": "CC BY-SA 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "ten": "Thành nhà Hồ",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Văn hoá",
+      "nam": "2011",
+      "lon": 105.6049,
+      "lat": 20.0772,
+      "tinh_34": "Thanh Hoá"
+    },
+    {
+      "ten": "Quần thể danh thắng Tràng An",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Hỗn hợp",
+      "nam": "2014",
+      "lon": 105.89,
+      "lat": 20.24,
+      "tinh_34": "Ninh Bình",
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Trang_An_Scenic_Landscape_Complex%2C_northern_Vietnam_%28354%29_%2838540830421%29.jpg/330px-Trang_An_Scenic_Landscape_Complex%2C_northern_Vietnam_%28354%29_%2838540830421%29.jpg",
+      "anh_nguon": "Wikimedia Commons — Richard Mortel from Riyadh, Saudi Arabia · https://commons.wikimedia.org/wiki/File:Trang_An_Scenic_Landscape_Complex,_northern_Vietnam_(354)_(38540830421).jpg",
+      "anh_giay_phep": "CC BY 2.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "ten": "Quần thể di tích Cố đô Huế",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Văn hoá",
+      "nam": "1993",
+      "lon": 107.578,
+      "lat": 16.4698,
+      "tinh_34": "Huế"
+    },
+    {
+      "ten": "Phố cổ Hội An",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Văn hoá",
+      "nam": "1999",
+      "lon": 108.328,
+      "lat": 15.877,
+      "tinh_34": "Đà Nẵng",
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Ph%E1%BB%91_c%E1%BB%95_H%E1%BB%99i_An.jpg/330px-Ph%E1%BB%91_c%E1%BB%95_H%E1%BB%99i_An.jpg",
+      "anh_nguon": "Wikimedia Commons — Hcxtd · https://commons.wikimedia.org/wiki/File:Ph%E1%BB%91_c%E1%BB%95_H%E1%BB%99i_An.jpg",
+      "anh_giay_phep": "CC BY-SA 4.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "ten": "Thánh địa Mỹ Sơn",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Văn hoá",
+      "nam": "1999",
+      "lon": 108.124,
+      "lat": 15.764,
+      "tinh_34": "Đà Nẵng",
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Th%C3%A1nh_%C4%91%E1%BB%8Ba_M%E1%BB%B9_S%C6%A1n%2C_khu_C-B-D.JPG/330px-Th%C3%A1nh_%C4%91%E1%BB%8Ba_M%E1%BB%B9_S%C6%A1n%2C_khu_C-B-D.JPG",
+      "anh_nguon": "Wikimedia Commons — Nguyễn Đông Sơn at Vietnamese Wikipedia · https://commons.wikimedia.org/wiki/File:Th%C3%A1nh_%C4%91%E1%BB%8Ba_M%E1%BB%B9_S%C6%A1n,_khu_C-B-D.JPG",
+      "anh_giay_phep": "CC BY-SA 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "ten": "Quần thể Yên Tử – Vĩnh Nghiêm – Côn Sơn, Kiếp Bạc",
+      "loai": "di-san-the-gioi",
+      "hang_muc": "Văn hoá",
+      "nam": "2025",
+      "lon": 106.717,
+      "lat": 21.088,
+      "tinh_34": "Quảng Ninh, Bắc Ninh, Hải Phòng"
+    },
+    {
+      "ten": "Công viên địa chất toàn cầu Cao nguyên đá Đồng Văn",
+      "loai": "cong-vien-dia-chat",
+      "hang_muc": "Địa chất",
+      "nam": "2010",
+      "lon": 105.36,
+      "lat": 23.28,
+      "tinh_34": "Tuyên Quang"
+    },
+    {
+      "ten": "Công viên địa chất toàn cầu Non nước Cao Bằng",
+      "loai": "cong-vien-dia-chat",
+      "hang_muc": "Địa chất",
+      "nam": "2018",
+      "lon": 106.25,
+      "lat": 22.66,
+      "tinh_34": "Cao Bằng"
+    },
+    {
+      "ten": "Công viên địa chất toàn cầu Đắk Nông",
+      "loai": "cong-vien-dia-chat",
+      "hang_muc": "Địa chất",
+      "nam": "2020",
+      "lon": 107.68,
+      "lat": 12,
+      "tinh_34": "Lâm Đồng"
+    },
+    {
+      "ten": "Công viên địa chất toàn cầu Lạng Sơn",
+      "loai": "cong-vien-dia-chat",
+      "hang_muc": "Địa chất",
+      "nam": "2024",
+      "lon": 106.76,
+      "lat": 21.85,
+      "tinh_34": "Lạng Sơn"
+    }
   ]
 }

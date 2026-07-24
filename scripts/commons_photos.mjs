@@ -198,12 +198,19 @@ async function processFile(fileName, opts) {
     if (result) {
       const fields = buildAnhFields(item.ten, result);
       const rejected = opts.rejectSet.has(String(item.id)) || opts.rejectSet.has(item.ten);
+      // HIGH = the entry's full name (minus parenthetical) appears as a
+      // contiguous substring of the file title -> safe to auto-accept.
+      // REVIEW = only partial/token overlap -> a human should eyeball it.
+      const fullTen = normalize(item.ten.replace(/\(.*?\)/g, ""));
+      const titleNorm = normalize(result.candidate.title.replace(/^file:/i, "").replace(/\.[a-z0-9]+$/i, ""));
+      const conf = fullTen.length >= 4 && titleNorm.includes(fullTen) ? "HIGH" : "REVIEW";
       matched.push({
         id: item.id,
         ten: item.ten,
         title: result.candidate.title,
         license: result.license,
         thumburl: fields.anh,
+        conf,
         rejected,
         fields,
       });

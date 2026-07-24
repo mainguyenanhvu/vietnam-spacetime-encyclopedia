@@ -35,10 +35,11 @@ for (const [file, list] of Object.entries(byFile)) {
   const data = JSON.parse(raw);
   const items = Array.isArray(data) ? data : data.items;
   const rtOk = JSON.stringify(data, null, 2) + "\n" === raw;
-  const byId = new Map(list.map((m) => [m.id, m]));
+  // Join by `ten` (always present + unique per file); some layers lack `id`.
+  const byTen = new Map(list.map((m) => [m.ten, m]));
   let n = 0;
   for (const it of items) {
-    const m = byId.get(it.id);
+    const m = byTen.get(it.ten);
     if (!m || it.anh) continue;
     it.anh = m.fields.anh;
     it.anh_nguon = cleanNguon(m.fields.anh_nguon);
