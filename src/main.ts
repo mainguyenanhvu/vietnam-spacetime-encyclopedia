@@ -1099,6 +1099,10 @@ interface OverlayItem {
   lon: number;
   lat: number;
   tinh_34?: string;
+  anh?: string;
+  anh_nguon?: string;
+  anh_giay_phep?: string;
+  anh_muc?: "chan-dung" | "tu-lieu" | "vi-tri";
 }
 
 interface OverlayConf {
@@ -1113,6 +1117,17 @@ interface OverlayConf {
   popup: (p: OverlayItem) => string;
 }
 
+// Ảnh minh hoạ (chân dung/tư liệu) hiện trong popup nếu có URL hợp lệ — chỉ chấp nhận
+// https:// (chặn javascript:/http: không mã hoá) để tránh chèn script qua dữ liệu.
+const photoImgBlock = (o: OverlayItem): string =>
+  o.anh && o.anh.startsWith("https://")
+    ? `<img src="${esc(o.anh)}" alt="${esc(o.ten)}" loading="lazy" style="max-width:120px;max-height:120px;border-radius:6px;display:block;margin:0 0 4px" referrerpolicy="no-referrer"/>`
+    : "";
+const photoAttrBlock = (o: OverlayItem): string =>
+  o.anh && o.anh.startsWith("https://") && o.anh_nguon
+    ? `<br/><span style="color:#a8a29e;font-size:0.66rem">🖼️ ${esc(o.anh_nguon)}${o.anh_giay_phep ? " · " + esc(o.anh_giay_phep) : ""}</span>`
+    : "";
+
 // Popup dùng chung cho các lớp phủ "nhân vật" (tên · năm · quê/đền · mô tả · cảnh báo toạ độ).
 const personOverlayPopup = (p: OverlayItem): string => {
   const o = p as OverlayItem & {
@@ -1125,7 +1140,7 @@ const personOverlayPopup = (p: OverlayItem): string => {
     o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
       ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
       : "";
-  return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
 };
 
 // Popup HỢP NHẤT cho lớp gộp nhiều schema (nhân vật + thờ tự + sự kiện) — dùng fallback
@@ -1148,7 +1163,7 @@ const universalPersonPopup = (p: OverlayItem): string => {
     o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
       ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
       : "";
-  return `<strong>${esc(o.ten)}</strong>${nam ? `<br/><span style="color:#78716c">${esc(String(nam))}</span>` : ""}${noi ? `<br/>📍 ${esc(String(noi))}` : ""}${ta ? `<br/><span style="color:#57534e">${esc(ta)}</span>` : ""}${tc}`;
+  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong>${nam ? `<br/><span style="color:#78716c">${esc(String(nam))}</span>` : ""}${noi ? `<br/>📍 ${esc(String(noi))}` : ""}${ta ? `<br/><span style="color:#57534e">${esc(ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
 };
 
 // Popup dùng chung cho lớp phủ "sự kiện/trận đánh" (ưu tiên nam_hien_thi rồi nam).
@@ -1164,7 +1179,7 @@ const eventOverlayPopup = (p: OverlayItem): string => {
     o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
       ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
       : "";
-  return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
 };
 
 const OVERLAYS: OverlayConf[] = [
@@ -1874,6 +1889,14 @@ function buildLayerControl(): void {
         ${OVERLAYS.map(
           (o) => `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>`,
         ).join("")}
+      </div>
+    </details>
+    <details class="lc-sec">
+      <summary>🖼️ Mức tư liệu ảnh</summary>
+      <div class="group">
+        <div>📷 Có ảnh chân dung</div>
+        <div>📄 Có tư liệu/hồ sơ</div>
+        <div>📍 Vị trí theo nơi cư trú</div>
       </div>
     </details>
     <details class="lc-sec">
