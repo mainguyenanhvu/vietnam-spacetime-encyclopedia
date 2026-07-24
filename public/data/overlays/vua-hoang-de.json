@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Vua/hoàng đế các triều đại (ngoài số đã có trong CSDL) — Lý, Hồ, Nguyễn. Toạ độ lăng/đền qua OpenStreetMap Nominatim đối chiếu địa danh trong nguồn; nội dung theo cổng thông tin di sản nhà nước (hueworldheritage.org.vn — Trung tâm Bảo tồn Di tích Cố đô Huế; thanhnhaho.vn — Trung tâm Bảo tồn Di sản Thành Nhà Hồ; mybacninh.vn — cổng du lịch Bắc Ninh). KHÔNG dùng Wikipedia. WebSearch không khả dụng trong phiên này nên chỉ thêm các vua tra cứu được qua WebFetch/crawl trực tiếp cổng nhà nước đã biết trước; các vua triều Trần, Lê sơ, Mạc, Lê trung hưng chưa tìm được trang cổng xác nhận trong phiên này nên tạm bỏ qua (xem báo cáo). [Phase 3: hợp nhất 3 lớp → nhóm «Vua · Chúa · Hoàng tộc».]",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-07-24",
   "sources": [
     "Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn",
     "Trung tâm Bảo tồn Di sản Thành Nhà Hồ — thanhnhaho.vn",
@@ -818,6 +818,38 @@
       "trang_thai": "draft",
       "nguon": [
         "Sở Du lịch Ninh Bình — Đền thờ vua Lê Đại Hành, xã Trường Yên, huyện Hoa Lư — https://sodulich.ninhbinh.gov.vn/vi/tai-nguyen-du-lich-van-hoa/den-tho-vua-le-dai-hanh-xa-truong-yen-huyen-hoa-lu-121.html"
+      ]
+    },
+    {
+      "id": "duong-tam-kha",
+      "ten": "Dương Tam Kha (Dương Bình Vương)",
+      "lon": 105.6800613,
+      "lat": 19.8862853,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "944–950",
+      "mo_ta": "Sau khi Ngô Quyền mất, tự lập làm vua xưng Bình Vương (944–950) trước khi bị các con Ngô Quyền lật đổ; hậu duệ họ Dương lập lăng miếu thờ tại Thanh Hóa, được công nhận di tích lịch sử cấp tỉnh năm 2012.",
+      "dia_diem": "Lăng miếu Bình Vương Dương Tam Kha, thôn Thành Đạt, xã Thiệu Long, huyện Thiệu Hóa, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Hóa (vhds.baothanhhoa.vn) — https://vhds.baothanhhoa.vn/lang-mieu-binh-vuong-duong-tam-kha-19889.htm",
+        "Cổng Du lịch Việt Nam (vietnamtourism.gov.vn) — https://vietnamtourism.gov.vn/post/21415"
+      ]
+    },
+    {
+      "id": "ngo-xuong-van-nam-tan-vuong",
+      "ten": "Ngô Xương Văn (Nam Tấn Vương)",
+      "lon": 105.8719903,
+      "lat": 21.1026389,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "950–965",
+      "mo_ta": "Con Ngô Quyền, lật đổ Dương Tam Kha năm 950 khôi phục cơ nghiệp cha, xưng Nam Tấn Vương, đóng đô tại Cổ Loa; tử trận năm 965 khi dẹp loạn ở Thái Bình.",
+      "dia_diem": "Khu di tích quốc gia đặc biệt Cổ Loa, huyện Đông Anh, thành phố Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Trung tâm Bảo tồn Di sản Thăng Long - Hà Nội (hoangthanhthanglong.vn) — https://hoangthanhthanglong.vn/ngo-xuong-van-nam-tan-vuong/",
+        "Cục Di sản văn hóa (dsvh.gov.vn) — https://dsvh.gov.vn/di-tich-lich-su-kien-truc-nghe-thuat-va-khao-co-co-loa-2958"
       ]
     }
   ]
