@@ -1864,9 +1864,33 @@ async function applyStreets(on: boolean): Promise<void> {
   streetsLoaded = true;
 }
 
+// Gom 29 lớp phủ thành cụm chủ đề (accordion) để panel gọn (Phase 3 P3.4).
+// Chỉ nhóm HIỂN THỊ — không đổi thứ tự/định nghĩa OVERLAYS. Lớp thiếu nhóm
+// rơi vào "Khác" (guard chống sót khi thêm lớp mới).
+const OVERLAY_GROUPS: { nhan: string; icon: string; ids: string[] }[] = [
+  { nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
+  { nhan: "Sự kiện & Quân sự", icon: "⚔️", ids: ["chien-dich-tran-danh", "danh-nhan-quan-su-co-trung-dai", "nghia-si-can-vuong"] },
+  { nhan: "Vua chúa · Khoa bảng · Ngoại giao", icon: "👑", ids: ["vua-hoang-de", "khoa-bang-danh-nhan", "su-than-ngoai-giao", "danh-nhan-cac-trieu"] },
+  { nhan: "Nữ danh nhân · Dân tộc · Vùng miền", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so", "danh-nhan-nam-bo"] },
+  { nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
+  { nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
+  { nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung"] },
+  { nhan: "Huyền sử", icon: "🐉", ids: ["huyen-su-khai-quoc"] },
+];
+
 function buildLayerControl(): void {
   const el = document.createElement("div");
   el.id = "layer-control";
+  // Cụm hiển thị + lớp chưa gán nhóm dồn về "Khác" (không để lớp nào biến mất).
+  const groupedIds = new Set(OVERLAY_GROUPS.flatMap((g) => g.ids));
+  const leftover = OVERLAYS.filter((o) => !groupedIds.has(o.id));
+  const groups = leftover.length
+    ? [...OVERLAY_GROUPS, { nhan: "Khác", icon: "📦", ids: leftover.map((o) => o.id) }]
+    : OVERLAY_GROUPS;
+  const overlayLabel = (id: string) => {
+    const o = OVERLAYS.find((ov) => ov.id === id);
+    return o ? `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>` : "";
+  };
   // Các nhóm gập được (details) để panel không tràn khỏi màn hình khi
   // số lớp phủ tăng dần (#1). "Lớp phủ" mặc định mở, phần còn lại gập lại.
   el.innerHTML = `
@@ -1885,10 +1909,17 @@ function buildLayerControl(): void {
     </details>
     <details class="lc-sec" open>
       <summary>📌 Lớp phủ <span class="lc-badge">${OVERLAYS.length}</span></summary>
-      <div class="group lc-overlays">
-        ${OVERLAYS.map(
-          (o) => `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>`,
-        ).join("")}
+      <div class="lc-overlays">
+        ${groups
+          .map((g, gi) => {
+            const items = g.ids.filter((id) => OVERLAYS.some((o) => o.id === id));
+            if (!items.length) return "";
+            return `<details class="lc-sec lc-group"${gi === 0 ? " open" : ""}>
+              <summary>${g.icon} ${g.nhan} <span class="lc-badge">${items.length}</span></summary>
+              <div class="group">${items.map(overlayLabel).join("")}</div>
+            </details>`;
+          })
+          .join("")}
       </div>
     </details>
     <details class="lc-sec">

@@ -1476,9 +1476,24 @@ body.kid-mode #topbar {
 }
 /* Danh sách lớp phủ dài → cuộn riêng, giữ panel gọn */
 #layer-control .lc-overlays {
-  max-height: 34vh;
+  max-height: 46vh;
   overflow-y: auto;
   padding-right: 0.2rem;
+}
+/* Cụm chủ đề (accordion lồng) trong «Lớp phủ» — Phase 3 P3.4 */
+#layer-control .lc-group {
+  border-top: 1px dashed var(--c-line);
+  padding-left: 0.3rem;
+}
+#layer-control .lc-group > summary {
+  font-size: 0.82rem;
+  padding: 0.32rem 0.15rem;
+}
+#layer-control .lc-group > summary::before {
+  font-size: 0.68rem;
+}
+#layer-control .lc-group .group {
+  padding: 0.05rem 0 0.35rem 0.3rem;
 }
 /* Nhãn nhỏ «huyền sử» + ghi chú cảnh báo cương vực cổ */
 #layer-control .lc-tag {
