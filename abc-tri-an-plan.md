@@ -45,3 +45,14 @@ Nguồn cảm hứng: https://bandotrian.thanhdoandongnai.com/ — bản đồ t
 
 ## Cần quyết
 - Phase 4 phạm vi ảnh: **pilot 30–50** (khuyến nghị) vs **chiến dịch phủ ảnh toàn bộ**.
+
+---
+
+## TRẠNG THÁI THỰC THI (2026-07-24)
+- **Pass B** ✅ commit `f2af31f` — 61/157 thap nâng cấp.
+- **Pass A** ✅ commit `6435976` — +102 reviewed (draft 254→152). Còn 152 draft chờ Iron Man soát tay (134 TIER-SENS + 8 chiến dịch + 10 tên chính trị); digest `docs/section9-care-tiers-2026-07-25.md`.
+- **Pass C-infra** ✅ commit `7d9a782` — popup ảnh + legend 3 mức.
+- **Pass C-photos** 🔄 4 batch, commit `6877b47`·`429a0df`·`af4a0a0`·`5456ad7` — **155 ảnh đã soi mắt trên 13 lớp**: di-tich-quoc-gia 34 · di-tich-qgdb 48 · unesco 4 · bao-vat 6 · le-hoi 4 · di-tich-cach-mang 14 · thanh-hoang 5 · to-nghe 5 · thien-su 1 · +34 chân dung người TK20 (tri-thuc 15·the-thao 3·van-hoa 14·nam-bo 2). Pipeline: `commons_photos.mjs` (gate ảnh-thật+all-token+license, cờ conf HIGH/REVIEW, anh_muc theo lớp) → dump `--json` → soi (REVIEW + spot-check HIGH + xem ảnh khi mơ hồ) → `apply_photos_from_dump.mjs` (`--reject`/`--accept`, join `ten`).
+- **Còn lại Pass C-photos** (chưa làm — value thấp/cần care): lớp §9-nhạy-cảm (anh-hung-can-hien-dai/chi-si-cach-mang/me-vnah/thieu-nien — chân dung liệt sĩ/VNAH cần nguồn cẩn thận) + lớp người CỔ (khoa-bang/vua-hoang-de/quan-su/su-than/nu-danh-nhan/huyen-su/dan-toc/cac-trieu/figures — gần như 0 chân dung thật, chỉ tượng). Lớp `nghe-nhan-di-san` đã thử → BỎ (nghệ nhân sống tên phổ thông, Commons khớp bừa hoàn toàn).
+- **Pass C-Phase3** ⬜ nhom/vung_mien — chưa làm.
+- ⚠️ Còn: soát tay 152 draft §9 + 16 mục geocode flagged.
