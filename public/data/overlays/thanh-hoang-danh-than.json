@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Thành hoàng & danh thần có đền/đình thờ lớn (không trùng Tứ bất tử đã có ở lớp «Huyền sử khai quốc»). Toạ độ đền/đình thờ qua OSM Nominatim; nội dung theo cổng nhà nước/di sản (vietnamtourism.vn, quangninh.gov.vn, baotanglichsu.vn, sodulich.ninhbinh.gov.vn, baoangiang.com.vn, mybacninh.vn). KHÔNG dùng Wikipedia. [Phase 3 lô4: hợp nhất 1 lớp → nhóm «Thành hoàng · Danh thần · Tín ngưỡng vùng miền» (dedup exact).]",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-07-24",
   "sources": [
     "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
     "Cổng TTĐT tỉnh Quảng Ninh — quangninh.gov.vn",
@@ -491,6 +491,36 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo Hà Tĩnh — Lễ giỗ Đức thánh quan Hoàng Mười tại đền Chợ Củi — https://baohatinh.vn/le-gio-duc-thanh-quan-hoang-muoi-tai-den-cho-cui-post257663.html"
+      ]
+    },
+    {
+      "id": "thanh-tam-giang-den-xa",
+      "ten": "Thánh Tam Giang (Trương Hống – Trương Hát) — Đền Xà",
+      "lon": 105.9528043,
+      "lat": 21.2272946,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "thế kỷ 6 (thời Triệu Quang Phục)",
+      "mo_ta": "Hai anh em tướng quân giúp Triệu Quang Phục đánh giặc thế kỷ 6, hoá thần sông Cầu được dân ven sông tôn thờ là Thánh Tam Giang; đền Xà còn lưu 15 đạo sắc phong (1670–1909) và gắn với truyền thuyết phát tích bài thơ thần «Nam quốc sơn hà».",
+      "dia_diem": "Đền Xà, thôn Xà Đoài, xã Tam Giang, huyện Yên Phong, tỉnh Bắc Ninh — di tích lịch sử cấp quốc gia (1988)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Pháp luật Việt Nam (Bộ Tư pháp) — https://baophapluat.vn/ngoi-den-thieng-1500-tuoi-noi-phat-tich-bai-tho-than-nam-quoc-son-ha-post385319.html"
+      ]
+    },
+    {
+      "id": "pham-cu-lang-dinh-doai",
+      "ten": "Phạm Cự Lạng — Đình Đoài",
+      "lon": 105.9552444,
+      "lat": 21.4740626,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "thế kỷ 10 (thời Đinh – Tiền Lê)",
+      "mo_ta": "Tướng quân tham gia cùng Đinh Bộ Lĩnh dẹp loạn 12 sứ quân, sau được phong Thái uý dưới thời Lê Hoàn, chỉ huy chống quân Tống (979–981); nhân dân vùng Phú Bình – Phổ Yên lập đình thờ, trong đó Đình Đoài là một trong ba di tích được ghi nhận.",
+      "dia_diem": "Đình Đoài, xóm Ngói, xã Hà Châu, huyện Phú Bình, tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên — https://baothainguyen.vn/xa-hoi/200712/thai-nguyen-phat-hien-di-tich-tho-tuong-quan-pham-cu-lang-o-huyen-phu-binh-va-pho-yen-367B8C3/"
       ]
     }
   ]
