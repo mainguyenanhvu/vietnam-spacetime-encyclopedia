@@ -1524,6 +1524,16 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
+    id: "bao-tang",
+    label: "🏺 Bảo tàng lịch sử – văn hoá",
+    icon: "🏺",
+    file: "data/overlays/bao-tang.json",
+    circleColor: "#0891b2",
+    nguon:
+      "Website chính thức các bảo tàng công lập · Cục Di sản văn hóa (dsvh.gov.vn)",
+    popup: personOverlayPopup,
+  },
+  {
     id: "di-san-phi-vat-the",
     label: "🎶 Di sản văn hoá phi vật thể (UNESCO · quốc gia)",
     icon: "🎶",
