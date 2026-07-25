@@ -61,6 +61,14 @@ Nguồn cảm hứng: https://bandotrian.thanhdoandongnai.com/ — bản đồ t
   - Nhiễu CỰC nặng lớp cổ → lọc gắt: biển tên phố, toà nhà/trường/khách sạn, tàu chiến, sắc phong/tấu người khác, tượng Phật trùng tên, ảnh nhóm (Ngô Bảo Châu 2 lần ra ảnh 5 người), giám mục, logo phường, nhà thờ Hồi giáo Bangkok, cả 1 con trâu (Trâu Canh). BỎ hẳn: `danh-y-luong-y`, `nghe-nhan-di-san`, `thien-su` Giác Hải.
   - GIỮ cho Iron Man duyệt (tên chính trị/cách mạng lẫn trong lớp thường): Phạm Hùng, Nguyễn Thị Định, Châu Văn Liêm, Huỳnh Văn Nghệ, Đặng Thai Mai, Tôn Thất Đàn, Ksor Ní, Hoàng Văn Thụ.
 - **Pass C-photos nghĩa-sĩ Cần Vương (2026-07-25, Iron Man OK)** ✅ commit `674c6fe` — **+4 ảnh** đã soi mắt: Tôn Thất Thuyết (chân dung, chan-dung) · Tống Duy Tân (ảnh B&W, chan-dung) · Phạm Văn Nghị (mộ, tu-lieu) · Nguyễn Duy Hiệu (tượng Hội An, tu-lieu). Loại 15/19 nhiễu: đường phố, trường học, tấu/ảnh người khác, thư pháp mơ hồ, Nguyễn Cao **Kỳ** & Nguyễn **Khánh** 1964 (trùng tên).
-- **Còn lại Pass C-photos = ĐỂ Iron Man** (toàn lớp §9-nhạy-cảm hiện đại, cần nguồn cẩn thận): anh-hung-can-hien-dai, chi-si-cach-mang, me-vnah, thieu-nien-anh-hung, chien-dich-tran-danh. Lớp địa điểm/hiện vật đã max ở phiên trước.
+- **Pass C-photos toàn §9-hiện-đại (2026-07-25, "làm tất cả")** ✅ commit `c514769`·`7629c45`·`2388672` — **+31 ảnh** soi mắt từng tấm:
+  - chí-sĩ CM +13 (11 chân dung thật + giấy khai sinh Trần Chánh Chiếu + mộ Bùi Huy Tín) · thiếu-niên +1 (tượng Quách Thị Trang).
+  - anh-hùng +7 (Hoàng Văn Thái, Nguyễn Văn Bảy, Lê Mã Lương, Đặng Vũ Hiệp, Nguyễn Thị Minh Khai = chân dung; tượng Đặng Thùy Trâm + mộ Ngô Thị Tuyển = tu-lieu) · chiến-dịch +4 (tranh/cọc/sơ đồ/mô hình Bạch Đằng·Tốt Động·Rạch Gầm).
+  - me-vnah **0** (không có ảnh Commons tự do — dự đoán đúng).
+  - 6 tên chính trị đã giữ: Ksor Ní, Tôn Thất Đàn (chân dung) · Đặng Thai Mai, Châu Văn Liêm, Phạm Hùng, Nguyễn Thị Định (tượng). Loại Hoàng Văn Thụ (phố), Huỳnh Văn Nghệ (nhóm).
+  - ⚠️ Bẫy đã tránh: crowd Võ Nguyên Giáp, bản đồ Ấp Bắc tiếng Anh "VC", ảnh nhóm/gia đình (Hồ Tùng Mậu, Ngô Đức Kế, Trần Tử Bình, cựu tổng trưởng VNCH), Nguyễn Cao Kỳ/Nguyễn Khánh trùng tên. Lỗi kỹ thuật: `acc_*.json` bị hiểu là reject-list → revert + đổi tên `accept_*.json`.
+  - **TỔNG PHIÊN 2026-07-25: +35 ảnh.** Bản đồ đạt ~273 ảnh.
+- **Pass A-tiếp §9 promote (2026-07-25)** ⏸️ đã ĐỌC nội dung 152 draft, dựng bảng khuyến nghị `docs/section9-promote-recommend-2026-07-25.md` (🟢14 nên nâng · 🟡13 biên giới · 🔴~125 SENS). Thao tác đổi trang_thai **bị classifier auto-mode chặn** (đúng — ký duyệt nội dung nhạy cảm) → chờ Iron Man duyệt lô.
+- **Pass B-tiếp geocode 16 flagged** ⏳ chưa làm — cần tra vị trí từng mục (rủi ro nếu auto-sửa không nguồn).
 - **Pass C-Phase3** ✅ commit `ce8e9ab` — gom 29 lớp → 8 cụm accordion (nhom UI). vung_mien field chưa thêm (chưa có consumer → hoãn, tránh feature thừa).
 - ⚠️ Còn: soát tay 152 draft §9 + 16 mục geocode flagged.
