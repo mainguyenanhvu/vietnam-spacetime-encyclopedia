@@ -137,3 +137,9 @@ bảng, thêm trận đánh) chờ **phiên mới reset search**. Ưu tiên ngư
 - DB dedup 1972→**2009**. 5 cờ TRÙNG phân xử: Ga Đà Lạt⊂«Con Gà Đà Lạt» (chuỗi con kernel!), Văn Miếu-QTG cắt «-» còn core "van mieu", 2 site-vs-person, Bến Nhà Rồng=chi nhánh riêng. 1 lỗi agent sửa tay: do_tin_cay «trung bình»→«trung».
 - Hoãn: cầu Hàm Rồng (quần thể?), Quốc Học Huế, nhà cổ Hội An (quần thể), 11 hang (Kính Chủ/Am Tiên/Tiên Sơn PN… đều bẫy quần thể đúng), bảo tàng tỉnh nhỏ + tư nhân (Áo Dài).
 - 3 gate xanh. Vỉa sau: cầu-chợ-thương cảng cổ, đảo/cửa biển lịch sử, vườn quốc gia-khu bảo tồn?, trường học lịch sử (Quốc Học Huế, Bưởi–Chu Văn An…), công trình thuỷ lợi cổ (kênh Vĩnh Tế…).
+
+**Sóng «Trường học–Thuỷ lợi–Biển đảo» (2026-07-25, tiếp mạch «tự tìm keywords»):**
+- di-tich-quoc-gia 173→195 (+22). Trường học (6): Quốc Học Huế, Dục Thanh, Bưởi–Chu Văn An, **Trường dạy làm báo Huỳnh Thúc Kháng** (DT QG 2019), CĐ Sư phạm Đà Lạt (Lycée Yersin), Trường Nguyễn Ái Quốc Tuyên Quang. Thuỷ lợi/kênh (7): kênh Vĩnh Tế, Thoại Hà, đập Đồng Cam, **kênh Nhà Lê** (từ 983, Lê Hoàn), Chợ Gạo, Xáng Xà No, cầu ngói Chợ Thượng. Biển đảo (9): **bộ 3 chủ quyền Lý Sơn — Âm Linh Tự + mộ lính Hoàng Sa, đình An Vĩnh, đình An Hải**; Hòn Đá Bạc, Hòn Khoai, vạn An Thạnh + đền công chúa Bàn Tranh (Phú Quý), hải đăng Ba Làng An, Mũi Cà Mau.
+- DB dedup 2009→**2031**. Chỉ 2 cờ TRÙNG (site-vs-person Huỳnh Thúc Kháng; noise «an vinh»⊂«nguyen vAN VINH»). Geo-check: cảnh báo Lý Sơn/Phú Quý là đảo ngoài dải đất liền — đúng thật.
+- Hoãn: Đông Kinh Nghĩa Thục (không hồ sơ di tích riêng), Collège Mỹ Tho/Cần Thơ/Pétrus Ký, Quốc Tử Giám Huế + cầu Trường Tiền (quần thể Cố đô), bãi cọc Bạch Đằng (nghi QGĐB), Kê Gà, Cù Lao Chàm, đập Nha Trinh Chăm, Vũng Rô + Vàm Lũng (tàu Không số — vỉa riêng?), Thắng Tam Vũng Tàu.
+- 3 gate xanh. 4 sóng trong ngày: +53 +64 +37 +22 = **176 mục mới**, 2 lớp mới, DB dedup 1856→2031.
