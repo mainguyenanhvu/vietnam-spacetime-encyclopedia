@@ -143,3 +143,9 @@ bảng, thêm trận đánh) chờ **phiên mới reset search**. Ưu tiên ngư
 - DB dedup 2009→**2031**. Chỉ 2 cờ TRÙNG (site-vs-person Huỳnh Thúc Kháng; noise «an vinh»⊂«nguyen vAN VINH»). Geo-check: cảnh báo Lý Sơn/Phú Quý là đảo ngoài dải đất liền — đúng thật.
 - Hoãn: Đông Kinh Nghĩa Thục (không hồ sơ di tích riêng), Collège Mỹ Tho/Cần Thơ/Pétrus Ký, Quốc Tử Giám Huế + cầu Trường Tiền (quần thể Cố đô), bãi cọc Bạch Đằng (nghi QGĐB), Kê Gà, Cù Lao Chàm, đập Nha Trinh Chăm, Vũng Rô + Vàm Lũng (tàu Không số — vỉa riêng?), Thắng Tam Vũng Tàu.
 - 3 gate xanh. 4 sóng trong ngày: +53 +64 +37 +22 = **176 mục mới**, 2 lớp mới, DB dedup 1856→2031.
+
+**Sóng «Khảo cổ–Dinh thự» (2026-07-25):**
+- di-tich-quoc-gia 195→216 (+21). Khảo cổ (12): **Gò Mun** (lấp mắt xích chuỗi Phùng Nguyên→Đồng Đậu→Gò Mun→Đông Sơn), Làng Cả, Sơn Vi, Quỳnh Văn, Bàu Tró, An Sơn, Dốc Chùa, Giồng Cá Vồ, Cái Bèo, Tràng Kênh, hang Dơi Bắc Sơn, hang Ngườm Sâu. Dinh thự (9): Bạch Dinh, Dinh I + II Đà Lạt, biệt điện Bảo Đại BMT, **dinh Hoàng A Tưởng Bắc Hà**, biệt thự Bảo Đại Đồ Sơn, Lầu Ông Hoàng, Dinh Thầy Thím + Dinh Cô (site-vs-event với lễ hội đã có).
+- DB dedup 2031→**2052**. 2 cờ TRÙNG đều site-vs-event thiết kế sẵn. Hoãn: Hoa Lộc/Đa Bút/Mái đá Điều/Cồn Ràng (nguồn), Toà Khâm sứ (quần thể Huế), Dinh Tỉnh trưởng ĐL, biệt điện hồ Lắk.
+- **Vỉa §9-nhạy-cảm ĐỂ DÀNH cho Iron Man quyết**: nghĩa trang Trường Sơn/Đường 9, sân bay Tà Cơn, Dốc Miếu–Cồn Tiên, K9 Đá Chông, bến Vũng Rô (tàu Không số). 3 gate xanh.
+- NGÀY 25/7 tổng: 5 sóng, **+197 mục draft**, 2 lớp mới, di-tich-quoc-gia 94→216, DB dedup 1856→2052.
