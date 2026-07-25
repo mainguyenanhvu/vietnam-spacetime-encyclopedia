@@ -73,7 +73,10 @@ Nguồn cảm hứng: https://bandotrian.thanhdoandongnai.com/ — bản đồ t
   - ⚠️ **Gate CHƯA chạy được** — classifier chặn cả `node validate_overlays`/`audit_sovereignty`/`npm run build` + `git commit`. Cần Iron Man chạy tay (xem báo cáo). Edit chỉ swap value "draft"→"reviewed" (rủi ro vỡ JSON thấp) nhưng CHƯA có bằng chứng gate xanh.
   - ✅ **Iron Man chọn A → NÂNG LÔ nốt 122 mục 🔴 SENS** (2026-07-25): chi-si-cach-mang 16 · anh-hung-can-hien-dai 29 · danh-nhan-nam-bo 17 · chien-dich-tran-danh 16 · di-tich-cach-mang 14 · danh-nhan-dan-toc-thieu-so 13 · me-vnah 10 · thieu-nien-anh-hung 4 · nghia-si-can-vuong 3. Qua Edit replace_all. ⚠️ Ông đã được cảnh báo rủi ro "bỏ qua soát tay từng mục" và vẫn chọn A (quyết định §9 là của chủ dữ liệu).
   - ✅ **Kết quả: 0 draft trên TOÀN BỘ overlay** (verify Grep). Toàn bộ 152 draft §9 → reviewed.
-  - ⚠️ **Gate + commit VẪN chờ Iron Man chạy tay** (classifier chặn node/git). 4 lệnh: validate_overlays · audit_sovereignty · npm run build · git commit.
+  - ⚠️ Gate + commit ban đầu Iron Man chạy tay (`46e3a8c`), sau đó **mở quyền node/git cho phiên** → tự chạy tiếp được.
+- **Pass B-tiếp geocode 16 flagged (2026-07-25, Iron Man "làm luôn")** ✅ commit `832a6bd`:
+  - Dry-run `regeocode.mjs` cho 16 id flagged (toạ độ `thap` cách điểm cùng-tên Nominatim >0.3°). Phân tích: **13/16 = FALSE-POSITIVE** — toạ độ đã đúng vùng đền/quê/tỉnh khớp `dia_diem`, Nominatim khớp nhầm phố/người trùng tên xa. Giữ nguyên `thap` (trung thực vì chỉ biết cấp tỉnh/đền).
+  - **3 di tích vật lý sửa** (research agent tra nguồn): Nhà thờ Con Gà Đà Lạt → `(108.4376882,11.9362368)` cao (OSM way+GeoHack) · Thành Hồ Phú Yên `(109.2125,13.0160)` trung (đang rơi **sân bay Tuy Hòa**, suy hình học QL25+Đà Rằng, khớp tường thành 846m) · Thành Bản Phủ Điện Biên `(103.0009,21.3052)` trung (đang rơi **Mường Phăng** sai site, suy từ Nậm Rốm nam ĐBP). Cả 3 qua gate xanh.
 - **Pass B-tiếp geocode 16 flagged** ⏳ chưa làm — cần tra vị trí từng mục (rủi ro nếu auto-sửa không nguồn).
 - **Pass C-Phase3** ✅ commit `ce8e9ab` — gom 29 lớp → 8 cụm accordion (nhom UI). vung_mien field chưa thêm (chưa có consumer → hoãn, tránh feature thừa).
 - ⚠️ Còn: soát tay 152 draft §9 + 16 mục geocode flagged.
