@@ -53,6 +53,13 @@ Nguồn cảm hứng: https://bandotrian.thanhdoandongnai.com/ — bản đồ t
 - **Pass A** ✅ commit `6435976` — +102 reviewed (draft 254→152). Còn 152 draft chờ Iron Man soát tay (134 TIER-SENS + 8 chiến dịch + 10 tên chính trị); digest `docs/section9-care-tiers-2026-07-25.md`.
 - **Pass C-infra** ✅ commit `7d9a782` — popup ảnh + legend 3 mức.
 - **Pass C-photos** 🔄 4 batch, commit `6877b47`·`429a0df`·`af4a0a0`·`5456ad7` — **155 ảnh đã soi mắt trên 13 lớp**: di-tich-quoc-gia 34 · di-tich-qgdb 48 · unesco 4 · bao-vat 6 · le-hoi 4 · di-tich-cach-mang 14 · thanh-hoang 5 · to-nghe 5 · thien-su 1 · +34 chân dung người TK20 (tri-thuc 15·the-thao 3·van-hoa 14·nam-bo 2). Pipeline: `commons_photos.mjs` (gate ảnh-thật+all-token+license, cờ conf HIGH/REVIEW, anh_muc theo lớp) → dump `--json` → soi (REVIEW + spot-check HIGH + xem ảnh khi mơ hồ) → `apply_photos_from_dump.mjs` (`--reject`/`--accept`, join `ten`).
-- **Còn lại Pass C-photos** (chưa làm — value thấp/cần care): lớp §9-nhạy-cảm (anh-hung-can-hien-dai/chi-si-cach-mang/me-vnah/thieu-nien — chân dung liệt sĩ/VNAH cần nguồn cẩn thận) + lớp người CỔ (khoa-bang/vua-hoang-de/quan-su/su-than/nu-danh-nhan/huyen-su/dan-toc/cac-trieu/figures — gần như 0 chân dung thật, chỉ tượng). Lớp `nghe-nhan-di-san` đã thử → BỎ (nghệ nhân sống tên phổ thông, Commons khớp bừa hoàn toàn).
-- **Pass C-Phase3** ⬜ nhom/vung_mien — chưa làm.
+- **Pass C-photos người CỔ + cận-hiện đại (2026-07-25)** ✅ **+83 ảnh/14 lớp** đã soi mắt TỪNG tấm:
+  - `0fb9053` vua +19 · `b596711` quân-sự +9/sứ-thần +9/nữ +2/các-triều +5/huyền-sử +1 (+26).
+  - `07a6de6` văn-hoá +2/Nam-Bộ +5/trí-thức +2/thể-thao +2 (+11).
+  - `1d357d0` khoa-bảng +26/dân-tộc +1 (+27).
+  - Chủ yếu tượng thờ/đền/lăng/mộ/chân dung tranh + vài ảnh thật (phái bộ 1863: Phan Thanh Giản/Phạm Phú Thứ/Ngụy Khắc Đản). anh_muc=tu-lieu (trừ lớp CHANDUNG=chan-dung).
+  - Nhiễu CỰC nặng lớp cổ → lọc gắt: biển tên phố, toà nhà/trường/khách sạn, tàu chiến, sắc phong/tấu người khác, tượng Phật trùng tên, ảnh nhóm (Ngô Bảo Châu 2 lần ra ảnh 5 người), giám mục, logo phường, nhà thờ Hồi giáo Bangkok, cả 1 con trâu (Trâu Canh). BỎ hẳn: `danh-y-luong-y`, `nghe-nhan-di-san`, `thien-su` Giác Hải.
+  - GIỮ cho Iron Man duyệt (tên chính trị/cách mạng lẫn trong lớp thường): Phạm Hùng, Nguyễn Thị Định, Châu Văn Liêm, Huỳnh Văn Nghệ, Đặng Thai Mai, Tôn Thất Đàn, Ksor Ní, Hoàng Văn Thụ.
+- **Còn lại Pass C-photos = ĐỂ Iron Man** (toàn lớp §9-nhạy-cảm, cần nguồn cẩn thận): anh-hung-can-hien-dai, chi-si-cach-mang, me-vnah, thieu-nien-anh-hung, nghia-si-can-vuong (Cần Vương — rủi ro THẤP, sẵn sàng chạy nếu Iron Man OK), chien-dich-tran-danh. Lớp địa điểm/hiện vật đã max ở phiên trước.
+- **Pass C-Phase3** ✅ commit `ce8e9ab` — gom 29 lớp → 8 cụm accordion (nhom UI). vung_mien field chưa thêm (chưa có consumer → hoãn, tránh feature thừa).
 - ⚠️ Còn: soát tay 152 draft §9 + 16 mục geocode flagged.
