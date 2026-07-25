@@ -1,0 +1,22 @@
+{
+  "name": "Bách khoa Việt Nam — Không gian & Thời gian",
+  "short_name": "Bách khoa VN",
+  "description": "Từ điển bách khoa Việt Nam theo không gian–thời gian: lịch sử, văn hoá, địa lý các tỉnh thành qua các thời kỳ trên bản đồ tương tác. Hoàng Sa & Trường Sa thuộc Việt Nam.",
+  "lang": "vi",
+  "dir": "ltr",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a3248",
+  "theme_color": "#6d1414",
+  "categories": ["education", "reference", "maps"],
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

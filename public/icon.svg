@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Bách khoa Việt Nam">
+  <!-- Full-bleed background for maskable safe zone -->
+  <rect width="512" height="512" fill="#6d1414"/>
+  <rect x="40" y="40" width="432" height="432" rx="72" fill="#da251d"/>
+  <!-- Gold five-point star (cờ đỏ sao vàng), kept within ~70% safe zone -->
+  <path fill="#ffcd00" d="M256 128 L293.6 243.6 L415.2 243.6 L316.8 315 L354.4 430.6 L256 359.2 L157.6 430.6 L195.2 315 L96.8 243.6 L218.4 243.6 Z"/>
+</svg>

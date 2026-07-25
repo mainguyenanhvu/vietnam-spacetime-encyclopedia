@@ -1524,6 +1524,22 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
+    id: "di-san-phi-vat-the",
+    label: "🎶 Di sản văn hoá phi vật thể (UNESCO · quốc gia)",
+    icon: "🎶",
+    file: "data/overlays/di-san-phi-vat-the.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "unesco-phi-vat-the",
+      "#7c3aed",
+      "#db2777",
+    ],
+    nguon:
+      "UNESCO (ich.unesco.org) · Cục Di sản văn hóa (dsvh.gov.vn) · báo Đảng các tỉnh",
+    popup: personOverlayPopup,
+  },
+  {
     id: "su-than-ngoai-giao",
     label: "🕊️ Sứ thần · nhà ngoại giao lịch sử",
     icon: "🕊️",
