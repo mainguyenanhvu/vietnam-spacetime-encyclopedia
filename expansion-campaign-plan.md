@@ -114,3 +114,10 @@ bảng, thêm trận đánh) chờ **phiên mới reset search**. Ưu tiên ngư
 - Soát toạ độ: nhiều mục sóng 2–4 ở cấp xã/huyện (`trung`/`thap`) — cần geocode chính xác đền/lăng/khu lưu niệm trước khi bỏ badge draft.
 - Backlog rẻ: thêm vua Trần/chúa Trịnh còn lại (cùng trang đền Đông Triều/Lam Kinh đã xác minh).
 - Quyết định: mô hình hiển thị **tên đường/phố**; ưu tiên **làm giàu bản đồ Xích Quỷ**?
+
+**Sóng «Đình–Đền–Miếu–Lễ hội–Thành hoàng» (2026-07-25, lệnh «resume và thêm lễ hội, đền thờ, thành hoàng, đình đền miếu mạo»):**
+- 4 agent song song → 53 ứng viên, nạp **53/53** (14 lễ hội · 12 thành hoàng/danh thần · 13 đình · 14 đền/miếu). le-hoi 42→56 · thanh-hoang 33→45 · di-tich-quoc-gia 94→121. DB dedup 1856→**1909**.
+- Mọi mục `draft`, nguồn cổng nhà nước/báo nhà nước, không Wikipedia. 3 gate xanh.
+- Phân xử 15 cờ TRÙNG: noise token (Đình Kiền Bái≠Đinh Kiến, Phan Đà≠Phan Đăng Lưu) + cặp site-vs-event/deity hợp lệ theo tiền lệ (Đền Bảo Hà + lễ hội; Đền Và + Tản Viên; Đền Mẫu Âu Cơ + Quốc Mẫu Âu Cơ).
+- Agent tự loại đúng các bẫy quần thể: Đền Bà Triệu/An Phụ/Độc Cước/Võ Miếu/Tân Trào/Cổ Loa/Ngọc Canh (đều trong hồ sơ qgdb đã có).
+- HOÃN chờ sóng sau (nguồn chưa đạt/chưa tra): Đình Thụy Phiêu (đình cổ nhất VN, chờ nguồn xác nhận QĐ 52/2001), Lễ hội Đền Đô, chọi trâu Hải Lựu, Kỳ Yên Gia Lộc, Xên Mường, Kin Pang Then, Đống Đa Tây Sơn, Chúa Nguyệt Hồ/Bà Năm Phương/Ông Hoàng Bơ (chỉ nguồn hầu đồng), Đền Sinh–Đền Hóa, Đền Đại Cại, đình Diềm/Đồng Kỵ/Thanh Hà/Lâu Thượng. **Gap mới phát hiện: làng cổ Đường Lâm CHƯA có trong DB.**
