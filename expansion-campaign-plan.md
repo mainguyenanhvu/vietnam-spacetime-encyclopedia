@@ -178,3 +178,17 @@ nghĩa trang LSQG Trường Sơn + Đường 9, sân bay Tà Cơn, căn cứ Là
 **Phân xử**: 2 allow (hồ Xuân Hương ≠ nữ sĩ; cáp treo ≠ núi Fansipan). Geo-check 2 false alarm (Lũng Lô ranh Yên Bái–Sơn La; Hòn Thơm ngoài dải đất liền Kiên Giang). Agent tự bắt 2 trùng ngoài trap (hồ Núi Cốc, vịnh Vĩnh Hy) + hoãn chuẩn Lang Biang/Tà Xùa/Núi Đôi Quản Bạ (quần thể/nguồn), Prenn/Cam Ly/Gia Long/Thác Bạc/đèo Ngoạn Mục (nguồn), thuỷ điện Lai Châu (không giữ kỷ lục riêng).
 
 **Lưu ý nguồn**: cell-kyluc dùng lẫn Tuổi Trẻ/Thanh Niên/Dân Việt/VnExpress — báo chính thống trong nước nhưng ngoài danh mục «cổng nhà nước + báo Đảng» gốc; mỗi mục đều có ≥1 nguồn nhà nước đi kèm. Cần Iron Man xác nhận ở §9 có chấp nhận nhóm báo này không.
+
+## Sóng 9 — Kiến trúc Pháp đô thị + Làng nghề truyền thống (2026-07-26)
+
+**Kết quả**: +26 draft — `di-tich-quoc-gia.json` 241→252 (12 kiến trúc Pháp) + `to-nghe-danh-than.json` 48→62 (14 làng nghề).
+
+**Kiến trúc Pháp (12)**: Bưu điện Trung tâm SG, Nhà hát TP.HCM, Toà án ND TP.HCM, Dinh Gia Long (nay Bảo tàng TP.HCM), ga Hà Nội (Hàng Cỏ), Bắc Bộ phủ (19/8/1945), tháp nước Hàng Đậu, toà ĐH Đông Dương, trụ sở Bộ Ngoại giao (Sở Tài chính Đông Dương), nhà thờ Cửa Bắc, Nhà hát TP Hải Phòng, cầu Trường Tiền (Huế).
+- Hoãn: UBND TP.HCM + Trường Bưởi (agent tự bắt — ĐÃ có trong DB, scan chính sót); Continental/Metropole (tư nhân, chưa thấy xếp hạng); 2 toà Ngân hàng Đông Dương (thiếu nguồn).
+- Allow: dinh-gia-long ≠ vua Gia Long (site-vs-person, kernel bỏ tiền tố «dinh»).
+
+**Làng nghề (14)**: Ngũ Xã, nón Chuông, quạt-mộc Chàng Sơn, gốm Thanh Hà, thổ cẩm Mỹ Nghiệp, tranh làng Sình, chạm bạc Đồng Xâm, thêu ren Văn Lâm, chiếu cói Nga Sơn, mộc La Xuyên, đá Ninh Vân, tăm hương Quảng Phú Cầu, gốm Hương Canh, mộc Kim Bồng.
+- Allow coexistence LÀNG vs bản ghi NGƯỜI tiền hiền/tổ nghề: Thanh Hà, Kim Bồng (tiền lệ Nguyễn Xí).
+- Hoãn: Phước Kiều (cần soát chồng bản ghi tiền hiền), muối Sa Huỳnh/Bạc Liêu (chưa tra), lưu ý 2 mục Mỹ Nghiệp/Đồng Xâm KHÔNG khẳng định danh hiệu DSPVT quốc gia vì chưa xác minh được văn bản.
+
+**Geo-check**: thêm nhu cầu nhận diện «Sài Gòn – Gia Định» — 4 mục SG matcher không nhận tỉnh, đã soát tay (chụm Quận 1 đúng).
