@@ -9,19 +9,23 @@
     "Cục Di sản Văn hoá — https://dsvh.gov.vn",
     "Cổng thông tin điện tử các tỉnh, thành phố (.gov.vn)",
     "Báo Quân khu 2, Quân khu 7 — baoquankhu2.com.vn, baoquankhu7.vn",
-    "Báo địa phương (Báo Quảng Trị, Báo Quảng Ngãi, Báo Bình Định, Báo An Giang, Báo Tây Ninh, Báo Đồng Nai, Báo Bình Phước, Báo Vĩnh Long...)"
+    "Báo địa phương (Báo Quảng Trị, Báo Quảng Ngãi, Báo Bình Định, Báo An Giang, Báo Tây Ninh, Báo Đồng Nai, Báo Bình Phước, Báo Vĩnh Long...)",
+    "Cổng thông tin điện tử các tỉnh/thành (.gov.vn)",
+    "Bộ Văn hoá, Thể thao và Du lịch — https://bvhttdl.gov.vn",
+    "Bộ Quốc phòng — https://mod.gov.vn",
+    "Báo địa phương (Báo Cà Mau, Báo Sóc Trăng, Báo Bạc Liêu, Báo Phú Yên, Báo Đồng Tháp, Báo Sơn La...)"
   ],
   "items": [
     {
       "id": "ntls-duong-9",
       "ten": "Nghĩa trang liệt sĩ quốc gia Đường 9",
-      "lon": 107.09,
-      "lat": 16.82,
+      "lon": 107.0533,
+      "lat": 16.8081,
       "loai": "nghia-trang-quoc-gia",
       "dia_diem": "Phường Đông Hà, tỉnh Quảng Trị (bên quốc lộ 9)",
       "quy_mo": "Diện tích 13 ha; hơn 10.700 mộ liệt sĩ, khoảng một phần ba chưa xác định được danh tính (số liệu các nguồn dao động 9.500-10.900 mộ)",
       "mo_ta": "Nghĩa trang quy tập hài cốt các chiến sĩ hy sinh trên mặt trận Đường 9 - Nam Lào và các chiến dịch tại Quảng Trị trong kháng chiến chống Mỹ. Trên diện tích 13 ha có hơn 10.700 mộ liệt sĩ, khoảng một phần ba chưa xác định được danh tính. Cùng với Trường Sơn, đây là một trong hai nghĩa trang liệt sĩ quy mô lớn nhất cả nước.",
-      "do_tin_cay_toa_do": "trung",
+      "do_tin_cay_toa_do": "cao",
       "nguon": [
         "Báo Nhân Dân — https://nhandan.vn/toan-canh-nghia-trang-quoc-gia-duong-9-post707562.html",
         "Báo Hưng Yên — https://baohungyen.vn/vieng-nghia-trang-liet-si-quoc-gia-duong-9-3180858.html"
@@ -199,8 +203,8 @@
     {
       "id": "ntls-phu-quoc",
       "ten": "Nghĩa trang liệt sĩ Nhà tù Phú Quốc",
-      "lon": 104,
-      "lat": 10,
+      "lon": 103.99,
+      "lat": 10.01,
       "loai": "nghia-trang-tinh",
       "dia_diem": "Khu đồi 100, gần phân khu B2, thị trấn An Thới, thành phố Phú Quốc, tỉnh Kiên Giang",
       "quy_mo": "Diện tích hơn 20.427 m²; mộ tập thể của hơn 500 chiến sĩ cách mạng",
@@ -578,8 +582,8 @@
     {
       "id": "dtn-po-hen",
       "ten": "Khu di tích lịch sử Pò Hèn",
-      "lon": 108.05,
-      "lat": 21.55,
+      "lon": 107.95,
+      "lat": 21.6,
       "loai": "dai-tuong-niem",
       "nam_hien_thi": "1979 (sự kiện); công nhận di tích quốc gia 2022",
       "dia_diem": "Xã Hải Sơn, thành phố Móng Cái, tỉnh Quảng Ninh",
@@ -742,8 +746,8 @@
     {
       "id": "dtn-chien-thang-van-tuong",
       "ten": "Di tích Chiến thắng Vạn Tường",
-      "lon": 108.9,
-      "lat": 15.35,
+      "lon": 108.88,
+      "lat": 15.37,
       "loai": "tuong-dai-chien-thang",
       "nam_hien_thi": "1965 (sự kiện 18/8); công nhận di tích quốc gia 1982",
       "dia_diem": "Xã Bình Hải và Bình Hòa, huyện Bình Sơn, tỉnh Quảng Ngãi",
@@ -859,8 +863,8 @@
     {
       "id": "khu-tuong-niem-son-my",
       "ten": "Khu chứng tích Sơn Mỹ",
-      "lon": 108.8667,
-      "lat": 15.1667,
+      "lon": 108.8794,
+      "lat": 15.1806,
       "loai": "khu-tuong-niem-nan-nhan",
       "nam": 1968,
       "dia_diem": "Xã Tịnh Khê (thôn Tư Cung, Mỹ Hội), tỉnh Quảng Ngãi",
@@ -876,8 +880,8 @@
     {
       "id": "khu-tuong-niem-binh-an",
       "ten": "Di tích lịch sử Gò Dài (thảm sát Bình An)",
-      "lon": 109.05,
-      "lat": 13.85,
+      "lon": 108.95,
+      "lat": 14,
       "loai": "khu-tuong-niem-nan-nhan",
       "nam": 1966,
       "dia_diem": "Xã Tây Vinh, huyện Tây Sơn, tỉnh Bình Định",
@@ -925,8 +929,8 @@
     {
       "id": "khu-tuong-niem-ha-my",
       "ten": "Bia tưởng niệm thảm sát Hà My",
-      "lon": 108.3167,
-      "lat": 15.9167,
+      "lon": 108.3,
+      "lat": 15.9,
       "loai": "khu-tuong-niem-nan-nhan",
       "nam_hien_thi": "1968 (sự kiện 21/2); nhà bia xây năm 2000",
       "dia_diem": "Xóm Tây, làng Hà My, phường Điện Bàn Đông, thành phố Đà Nẵng (trước sáp nhập thuộc thị xã Điện Bàn, tỉnh Quảng Nam)",
@@ -942,7 +946,7 @@
     {
       "id": "dtls-tham-sat-binh-hoa",
       "ten": "Di tích vụ thảm sát Bình Hòa",
-      "lon": 108.9,
+      "lon": 108.83,
       "lat": 15.35,
       "loai": "khu-tuong-niem-nan-nhan",
       "nam_hien_thi": "1966 (sự kiện 3–6/12); công nhận di tích 5/1991",
@@ -974,7 +978,7 @@
     {
       "id": "dtls-my-thuy",
       "ten": "Di tích địa điểm vụ thảm sát Mỹ Thủy",
-      "lon": 107.35,
+      "lon": 107.33,
       "lat": 16.75,
       "loai": "khu-tuong-niem-nan-nhan",
       "nam": 1948,
@@ -990,8 +994,8 @@
     {
       "id": "dtls-tham-sat-thanh-phong",
       "ten": "Bia tưởng niệm nạn nhân thảm sát Thạnh Phong",
-      "lon": 106.6,
-      "lat": 9.95,
+      "lon": 106.52,
+      "lat": 9.92,
       "loai": "khu-tuong-niem-nan-nhan",
       "nam": 1969,
       "dia_diem": "Thôn Thạnh Hòa, xã Thạnh Phong, huyện Thạnh Phú, tỉnh Bến Tre",
@@ -1000,6 +1004,226 @@
       "do_tin_cay_toa_do": "thap",
       "nguon": [
         "Báo Công lý — https://congly.vn/toi-ac-kinh-hoang-cua-tay-lai-va-vu-tham-sat-286-nguoi-ky-cuoi-ky-uc-cua-nan-nhan-song-sot-sau-vu-tham-sat-o-ben-tre-151235.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-truong-son",
+      "ten": "Nghĩa trang liệt sĩ quốc gia Trường Sơn",
+      "lon": 106.9169,
+      "lat": 16.8219,
+      "loai": "nghia-trang-quoc-gia",
+      "nam_hien_thi": "1975–1977",
+      "dia_diem": "Khu vực Bến Tắt, xã Vĩnh Trường, huyện Gio Linh, tỉnh Quảng Trị",
+      "quy_mo": "Diện tích 140.000 m² trên 3 quả đồi; 10.263–10.333 phần mộ (số liệu các nguồn dao động theo thời điểm cập nhật)",
+      "mo_ta": "Đây là nghĩa trang liệt sĩ có quy mô lớn nhất Việt Nam, được xây dựng từ ngày 24/10/1975 và hoàn thành ngày 10/4/1977. Trên diện tích 140.000 m² trải rộng 3 quả đồi, nghĩa trang quy tập hơn 10.000 phần mộ liệt sĩ hy sinh trên tuyến đường Trường Sơn - đường Hồ Chí Minh trong kháng chiến chống Mỹ, chia thành 10 khu theo địa phương. Đài tưởng niệm trung tâm bằng đá trắng cùng tháp chuông cao 5,59m (gợi nhớ Đoàn 559 - Bộ đội Trường Sơn) là điểm nhấn của khu di tích.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đặc san Nghĩa trang liệt sĩ Trường Sơn — Báo Nhân Dân — https://special.nhandan.vn/nghiatrang_truongson/index.html",
+        "VietnamPlus — https://www.vietnamplus.vn/doi-ben-tat-noi-to-quoc-don-nhung-nguoi-linh-tro-ve-post1126033.vnp"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-lang-son-tp",
+      "ten": "Nghĩa trang liệt sĩ thành phố Lạng Sơn",
+      "lon": 106.7614,
+      "lat": 21.8537,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Thành phố Lạng Sơn, tỉnh Lạng Sơn",
+      "quy_mo": "488 mộ liệt sĩ (81 đầy đủ thông tin, 245 thông tin một phần, còn lại chưa xác định); toàn tỉnh Lạng Sơn quản lý 12 nghĩa trang liệt sĩ với 2.983 mộ",
+      "mo_ta": "Nghĩa trang liệt sĩ thành phố Lạng Sơn hiện có 488 mộ liệt sĩ. Toàn tỉnh Lạng Sơn quản lý 12 nghĩa trang liệt sĩ với tổng 2.983 mộ, trong đó có nhiều liệt sĩ hy sinh trong cuộc chiến đấu bảo vệ biên giới phía Bắc năm 1979.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Chính phủ — https://baochinhphu.vn/thu-tuong-dang-huong-tuong-niem-cac-anh-hung-liet-si-va-tang-qua-nguoi-co-cong-tai-lang-son-102260715084238376.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-dong-thap",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Đồng Tháp",
+      "lon": 105.6333,
+      "lat": 10.46,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Mỹ Trà/Trung An, thành phố Cao Lãnh, tỉnh Đồng Tháp",
+      "quy_mo": "Hơn 3.000 anh hùng, liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ tỉnh Đồng Tháp là nơi an táng hơn 3.000 anh hùng, liệt sĩ đã hy sinh trong hai cuộc kháng chiến chống Pháp, chống Mỹ và chiến tranh bảo vệ biên giới Tây Nam. Đây là nơi lãnh đạo tỉnh thường xuyên đến dâng hương nhân dịp 27/7 và các ngày lễ lớn; nghĩa trang cũng đã triển khai công trình số hóa dữ liệu mộ liệt sĩ.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Tháp — https://dongthap.gov.vn/tin-tuc/chi-tiet?id=8382685",
+        "Báo Đồng Tháp — https://baodongthap.vn/lanh-dao-tinh-dong-thap-vieng-nghia-trang-liet-si-tinh-a240214.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-cai-nuoc-ca-mau",
+      "ten": "Nghĩa trang liệt sĩ huyện Cái Nước",
+      "lon": 105.0167,
+      "lat": 9.2333,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện Cái Nước, tỉnh Cà Mau",
+      "quy_mo": "1.975 mộ liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ huyện Cái Nước có 1.975 ngôi mộ liệt sĩ được xếp theo hình tròn ôm lấy tượng đài cách điệu hình ba nén hương - biểu tượng cho ngọn lửa tưởng nhớ luôn rực cháy trên mộ các anh hùng liệt sĩ.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Cà Mau — https://baocamau.vn/nhung-tuong-dai-bat-tu--a20498.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tran-van-thoi-ca-mau",
+      "ten": "Nghĩa trang liệt sĩ huyện Trần Văn Thời",
+      "lon": 104.9833,
+      "lat": 9.1667,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện Trần Văn Thời, tỉnh Cà Mau",
+      "quy_mo": "2.519 mộ liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ huyện Trần Văn Thời là nơi an táng 2.519 liệt sĩ. Đây là một trong các nghĩa trang tại Cà Mau đang được triển khai khai quật, lấy mẫu sinh phẩm các phần mộ chưa xác định danh tính trong chiến dịch 500 ngày đêm của tỉnh nhằm xác định danh tính hơn 3.300 liệt sĩ còn khuyết thông tin.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — https://baophapluat.vn/ca-mau-khai-quat-263-mo-liet-si-tren-hanh-trinh-tim-lai-ten-cho-cac-anh.html",
+        "VOV — http://vov.vn/xa-hoi/ca-mau-chay-dua-voi-thoi-gian-de-tim-danh-tinh-cho-hon-3300-liet-si-post1316928.vov"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-bac-lieu",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Bạc Liêu",
+      "lon": 105.4667,
+      "lat": 9.2833,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Thị trấn Hòa Bình, huyện Hòa Bình, tỉnh Bạc Liêu",
+      "mo_ta": "Nghĩa trang liệt sĩ tỉnh Bạc Liêu là nơi an táng các liệt sĩ đã hy sinh vì độc lập, tự do của Tổ quốc, trong đó có nhiều liệt sĩ quê miền Bắc hy sinh trong cuộc kháng chiến chống Mỹ. Lãnh đạo tỉnh Bạc Liêu thường xuyên đến dâng hương nhân Ngày Thương binh - Liệt sĩ (27/7).",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Bạc Liêu — https://www.baobaclieu.vn/hoat-dong-lanh-dao/tinh-uy-hdnd-ubnd-uy-ban-mttq-viet-nam-tinh-vieng-nghia-trang-liet-si-tinh-nhan-ky-niem-76-nam-ngay-thuong-binh-liet-si-86814.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-ke-sach-soc-trang",
+      "ten": "Nghĩa trang liệt sĩ huyện Kế Sách",
+      "lon": 105.9667,
+      "lat": 9.7667,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện Kế Sách, tỉnh Sóc Trăng",
+      "quy_mo": "Hơn 2.500 liệt sĩ toàn huyện qua hai cuộc kháng chiến",
+      "mo_ta": "Trong hai cuộc kháng chiến chống Pháp và chống Mỹ, huyện Kế Sách có hơn 2.500 liệt sĩ đã anh dũng hy sinh và hơn 1.000 thương binh, bệnh binh. Nghĩa trang liệt sĩ huyện là nơi lãnh đạo huyện thường xuyên đến dâng hương, tưởng niệm nhân các ngày lễ lớn.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Sóc Trăng — https://baosoctrang.org.vn/tin-moi/202501/lanh-ao-huyen-ke-sach-vieng-nghia-trang-liet-si-huyen-dac09c1/"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-kon-tum",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Kon Tum",
+      "lon": 108,
+      "lat": 14.35,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Đường Trường Chinh, phường Duy Tân, thành phố Kon Tum, tỉnh Kon Tum",
+      "mo_ta": "Nghĩa trang liệt sĩ tỉnh Kon Tum nằm cạnh đường Trường Chinh, phường Duy Tân, là nơi yên nghỉ của hàng nghìn liệt sĩ đã hy sinh trên chiến trường Kon Tum qua hai cuộc kháng chiến. Đây là một trong các địa chỉ đỏ mà lãnh đạo tỉnh thường đến viếng cùng Nhà bia ghi danh liệt sĩ Sư đoàn 10 và Di tích lịch sử Ngục Kon Tum nhân Ngày Thương binh - Liệt sĩ.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Kon Tum — https://kontumcity.kontum.gov.vn/pages/detail/10096/Thanh-pho-Kon-Tum-vieng-Nghia-trang-liet-si-tinh-Nguc-Kon-Tum-va-Nha-bia-tuong-niem-cac-anh-hung-liet-si.html",
+        "Cổng TTĐT tỉnh Kon Tum — https://www.kontum.gov.vn/pages/detail/38503/Lanh-dao-tinh-vieng-Nghia-trang-liet-si-tinh-Nha-bia-ghi-danh-liet-si-Su-doan-10-Di-tich-Lich-su-Quoc-gia-Nguc-Kon-Tum-va-Nha-bia-tuong-niem-81-liet-si.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-ninh-thuan",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Ninh Thuận",
+      "lon": 108.9833,
+      "lat": 11.5667,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Thành phố Phan Rang - Tháp Chàm, tỉnh Ninh Thuận",
+      "quy_mo": "Tỉnh quản lý 4.432 hồ sơ liệt sĩ, đã tìm kiếm quy tập được 2.627 hài cốt",
+      "mo_ta": "Tỉnh Ninh Thuận hiện quản lý 4.432 hồ sơ liệt sĩ nhưng chỉ mới tìm kiếm, quy tập được 2.627 hài cốt, đưa về an táng tại Nghĩa trang liệt sĩ tỉnh Ninh Thuận, Nghĩa trang liệt sĩ tỉnh Bình Thuận và một số được giao cho gia đình quản lý.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Bộ Quốc phòng — https://mod.gov.vn/vn/noi-dung/sa-cdcs/sa-cdcs-tt/d2ddcad5-75ed-4346-be0d-c81162fbddad"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtls-den-tho-liet-si-phu-yen",
+      "ten": "Đền thờ liệt sĩ tỉnh Phú Yên",
+      "lon": 109.3167,
+      "lat": 13.0833,
+      "loai": "den-tho-liet-si",
+      "nam_hien_thi": "2021–2022",
+      "dia_diem": "Phường 9, thành phố Tuy Hòa, tỉnh Phú Yên",
+      "quy_mo": "Diện tích hơn 5.000 m²",
+      "mo_ta": "Đền thờ liệt sĩ tỉnh Phú Yên được xây dựng từ năm 2021 và hoàn thành năm 2022 trên khu đất hơn 5.000 m² tại phường 9, thành phố Tuy Hòa. Đây là công trình do Nhà nước xây dựng sau ngày đất nước thống nhất, phục vụ việc tri ân tiền nhân và các anh hùng liệt sĩ của tỉnh.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Phú Yên — https://baophuyen.vn/94/298207/noi-tri-an-tien-nhan-va-cac-anh-hung-liet-si.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-nha-bia-su-doan-10-kontum",
+      "ten": "Nhà bia tưởng niệm 81 liệt sĩ Sư đoàn 10",
+      "lon": 108,
+      "lat": 14.35,
+      "loai": "dai-tuong-niem",
+      "nam_hien_thi": "1968 (sự kiện Tết Mậu Thân)",
+      "dia_diem": "Đường Trương Quang Trọng, phường Quyết Thắng, thành phố Kon Tum, tỉnh Kon Tum",
+      "quy_mo": "Ghi danh 81 liệt sĩ",
+      "mo_ta": "Nhà bia tưởng niệm ghi danh 81 liệt sĩ đã hy sinh trong cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 trên chiến trường Kon Tum. Đây là một trong các địa chỉ đỏ mà lãnh đạo tỉnh Kon Tum thường đến dâng hoa, dâng hương cùng với Nghĩa trang liệt sĩ tỉnh và Nhà bia ghi danh các liệt sĩ Sư đoàn 10 - đơn vị có hơn 10.000 người hy sinh qua Tết Mậu Thân 1968 và Chiến dịch Xuân - Hè 1972 tại chiến trường Kon Tum.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Cổng TTĐT tỉnh Kon Tum — https://www.kontum.gov.vn/pages/detail/38503/Lanh-dao-tinh-vieng-Nghia-trang-liet-si-tinh-Nha-bia-ghi-danh-liet-si-Su-doan-10-Di-tich-Lich-su-Quoc-gia-Nguc-Kon-Tum-va-Nha-bia-tuong-niem-81-liet-si.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-tuong-dai-mung-cong-muong-phang",
+      "ten": "Tượng đài mừng công (Công viên chiến thắng Mường Phăng)",
+      "lon": 103.11,
+      "lat": 21.48,
+      "loai": "tuong-dai-chien-thang",
+      "nam_hien_thi": "Khởi công 5/1/2008, khánh thành 3/2009",
+      "dia_diem": "Xã Mường Phăng, thành phố Điện Biên Phủ, tỉnh Điện Biên",
+      "quy_mo": "Nặng 700 tấn, cao 9,8 m, rộng 6 m, dài 15,58 m; 25 nhân vật; ghép từ 102 phiến đá xanh Thanh Hóa",
+      "mo_ta": "Tượng đài đặt cách Sở Chỉ huy Chiến dịch Điện Biên Phủ khoảng 300 m về phía đông bắc - nơi quân và dân ta tổ chức lễ diễu binh mừng chiến thắng ngày 13/5/1954. Công trình ghép từ 102 phiến đá xanh Thanh Hóa, nặng 700 tấn, cao 9,8 m, khắc họa 25 nhân vật đại diện các lực lượng tham gia chiến dịch: pháo binh, bộ binh, công binh, thông tin, quân y, phòng không, dân công hỏa tuyến và thanh niên xung phong, cùng 6 lá cờ trong đó 5 lá đại diện 5 đại đoàn 312, 316, 308, 304, 351 và 1 lá cờ trung tâm mang chữ 'Quyết chiến quyết thắng'.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Sơn La — https://baosonla.vn/ky-niem-70-nam-chien-thang-dien-bien-phu-7-5-1954-7-5-2024-/tuong-dai-mung-cong-khang-dinh-chien-thang-cua-quan-va-dan-ta-Tu9zn9fIg.html",
+        "Đài PT-TH Điện Biên — https://dienbientv.vn/goc-anh/201907/so-chi-huy-chien-dich-dien-bien-phu-tai-xa-muong-phang-huyen-dien-bien-5642069/"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-tnxp-c283-quang-binh",
+      "ten": "Khu tưởng niệm Đại đội Thanh niên xung phong C283",
+      "lon": 106.6,
+      "lat": 17.47,
+      "loai": "dai-tuong-niem",
+      "nam": 2019,
+      "dia_diem": "Tỉnh Quảng Bình (vị trí công trình cụ thể chưa xác định rõ trong nguồn)",
+      "quy_mo": "Diện tích 9.942 m², tổng vốn đầu tư 27 tỷ đồng; tưởng niệm 35 liệt sĩ",
+      "mo_ta": "Khu tưởng niệm được xây dựng năm 2019 với tổng vốn đầu tư 27 tỷ đồng trên diện tích 9.942 m², gồm đền thờ, tượng đài, hồ nước, cổng chính, sân lễ và cảnh quan, để tưởng niệm 35 thanh niên xung phong Đại đội C283 (quê tỉnh Hải Hưng cũ) đã anh dũng hy sinh khi làm nhiệm vụ bảo đảm giao thông trên tuyến đường Trường Sơn tại Quảng Bình.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Chính phủ — https://baochinhphu.vn/khanh-thanh-khu-tuong-niem-dai-doi-thanh-nien-xung-phong-c283-tai-quang-binh-102305894.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtls-bia-ba-trinh-soc-trang",
+      "ten": "Bia liệt sĩ và tượng đài Anh hùng Thiều Văn Chỏi",
+      "lon": 105.95,
+      "lat": 9.75,
+      "loai": "dai-tuong-niem",
+      "nam_hien_thi": "Khởi công 19/5/2000, khánh thành 22/12/2001; xếp hạng di tích cấp tỉnh 2006",
+      "dia_diem": "Ấp Bảy, xã Ba Trinh, huyện Kế Sách, tỉnh Sóc Trăng",
+      "quy_mo": "Bia đá cao 4,5 m khắc tên 573 anh hùng, liệt sĩ; tổng vốn hơn 600 triệu đồng",
+      "mo_ta": "Công trình gồm nhà bia với tấm bia đá cao 4,5 m ghi tên, địa chỉ 573 anh hùng, liệt sĩ của xã Ba Trinh - vùng căn cứ cách mạng qua hai cuộc kháng chiến - và tượng đài tưởng niệm Anh hùng Lực lượng vũ trang nhân dân Thiều Văn Chỏi (1937-1972), Huyện đội phó Kế Sách, người đã tham gia 152 trận đánh lớn nhỏ trước khi hy sinh năm 1972 và được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân ngày 29/1/1996. Công trình khởi công ngày 19/5/2000, khánh thành ngày 22/12/2001, được UBND tỉnh Sóc Trăng xếp hạng di tích lịch sử cấp tỉnh năm 2006.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Bộ Văn hoá, Thể thao và Du lịch — https://bvhttdl.gov.vn/soc-trang-bao-ton-phat-huy-gia-tri-di-tich-gan-voi-phat-trien-du-lich-20230111083400437.htm",
+        "Cổng thông tin du lịch Sóc Trăng — https://soctrangtourism.vn/vi/detailnews/?t=danh-muc-di-tich-quyet-dinh-xep-hang-cap-tinh&id=heritage_21"
       ],
       "trang_thai": "draft"
     }
