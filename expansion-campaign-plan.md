@@ -166,3 +166,15 @@ nghĩa trang LSQG Trường Sơn + Đường 9, sân bay Tà Cơn, căn cứ Là
 - Hoãn chuẩn: Hương Tích/Bích Động (quần thể), 3 làng Cót–La–Canh (thiếu nguồn), Thành Đông, tứ đại đỉnh đèo (danh hiệu hiện đại — để lô sau).
 
 **Bài học kernel mới**: biến thể chính tả «Quýt/Quít» lọt strip-accent («quyt»≠«quit») — validator cross-file id bắt được, đã gỡ tay. Cân nhắc thêm bảng biến thể y/i vào kernel nếu tái diễn.
+
+## Sóng 7+8 — Danh thắng thiên nhiên + Điểm cực & Công trình kỷ lục (2026-07-26)
+
+**2 LỚP MỚI**: `danh-thang-thien-nhien.json` (🏞 #059669, 40 mục) + `cong-trinh-ky-luc.json` (🌉 #d97706, 14 mục). Đăng ký main.ts + validator STRICT_SOURCE. Vỉa do Iron Man gợi ý: ngã ba Đông Dương, điểm cực, 9 cửa Cửu Long, cầu/cáp treo kỷ lục.
+
+**Danh thắng (40)**: tứ đại đỉnh đèo đủ 4 (Ô Quy Hồ, Khau Phạ, Pha Đin, Mã Pí Lèng — xếp hạng độc lập trong vùng CVĐC Đồng Văn) + đèo Lũng Lô (tiếp vận ĐBP) + đèo Cả; 6 thác (Dray Nur, Đray Sáp, Pongour, Datanla, Voi, Dải Yếm); 4 núi (Ngọc Linh, Cấm, Chứa Chan, Mẫu Sơn); 4 hồ (Lắk, Thác Bà, Biển Hồ T'Nưng, Xuân Hương); 3 vịnh (Xuân Đài, Lăng Cô, Vân Phong); mũi Đôi–Hòn Đầu (cực Đông), đảo Cồn Cỏ, cù lao Thới Sơn; 5 điểm cực/mốc (cột cờ Lũng Cú, A Pa Chải mốc 0, ngã ba Đông Dương Bờ Y, mũi Sa Vĩ, Lũng Pô mốc 92 — mo_ta khẳng định chủ quyền); **9 cửa Cửu Long** đủ bộ, gồm cửa Ba Thắc đã bồi lấp (bản ghi lịch sử) + cống Ba Lai 2002.
+
+**Kỷ lục (14)**: cầu Mỹ Thuận/Cần Thơ (kể cả sự cố 2007, 55 người hy sinh)/Nhật Tân/Bãi Cháy/Rồng; hầm Hải Vân/Thủ Thiêm/Đèo Cả; cáp treo Fansipan (coexistence với núi, mở đầu phân biệt) + Hòn Thơm; thuỷ điện Hoà Bình/Sơn La; đường dây 500kV mạch 1; Cầu Vàng. Quy ước: kỷ lục PHẢI kèm mốc thời gian.
+
+**Phân xử**: 2 allow (hồ Xuân Hương ≠ nữ sĩ; cáp treo ≠ núi Fansipan). Geo-check 2 false alarm (Lũng Lô ranh Yên Bái–Sơn La; Hòn Thơm ngoài dải đất liền Kiên Giang). Agent tự bắt 2 trùng ngoài trap (hồ Núi Cốc, vịnh Vĩnh Hy) + hoãn chuẩn Lang Biang/Tà Xùa/Núi Đôi Quản Bạ (quần thể/nguồn), Prenn/Cam Ly/Gia Long/Thác Bạc/đèo Ngoạn Mục (nguồn), thuỷ điện Lai Châu (không giữ kỷ lục riêng).
+
+**Lưu ý nguồn**: cell-kyluc dùng lẫn Tuổi Trẻ/Thanh Niên/Dân Việt/VnExpress — báo chính thống trong nước nhưng ngoài danh mục «cổng nhà nước + báo Đảng» gốc; mỗi mục đều có ≥1 nguồn nhà nước đi kèm. Cần Iron Man xác nhận ở §9 có chấp nhận nhóm báo này không.

@@ -1524,6 +1524,26 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
+    id: "cong-trinh-ky-luc",
+    label: "🌉 Công trình kỷ lục (cầu · hầm · cáp treo · thuỷ điện)",
+    icon: "🌉",
+    file: "data/overlays/cong-trinh-ky-luc.json",
+    circleColor: "#d97706",
+    nguon:
+      "Cổng Chính phủ (chinhphu.vn) · TTXVN · Nhân Dân · báo Đảng các tỉnh · cổng bộ ngành",
+    popup: personOverlayPopup,
+  },
+  {
+    id: "danh-thang-thien-nhien",
+    label: "🏞 Danh thắng thiên nhiên (đèo · thác · núi · hồ · vịnh)",
+    icon: "🏞",
+    file: "data/overlays/danh-thang-thien-nhien.json",
+    circleColor: "#059669",
+    nguon:
+      "Cục Du lịch Quốc gia (vietnamtourism.gov.vn) · Cục Di sản văn hóa (dsvh.gov.vn) · cổng TTĐT các tỉnh · báo Đảng",
+    popup: personOverlayPopup,
+  },
+  {
     id: "bao-tang",
     label: "🏺 Bảo tàng lịch sử – văn hoá",
     icon: "🏺",
