@@ -21,7 +21,10 @@
     "Đài Phát thanh - Truyền hình các tỉnh (Hải Dương, Bắc Ninh)",
     "Đài Tiếng nói Nhân dân TP.HCM (VOH)",
     "Báo Cần Thơ, Báo Hà Tĩnh, Báo Nhân Dân, Tuổi Trẻ",
-    "Bộ Khoa học và Công nghệ — https://mst.gov.vn"
+    "Bộ Khoa học và Công nghệ — https://mst.gov.vn",
+    "Báo Nhân Dân, Báo Dân trí, Báo Công an nhân dân, Tuổi Trẻ",
+    "Bệnh viện Bạch Mai — https://bachmai.gov.vn",
+    "Cổng TTĐT huyện Cam Lộ — https://camlo.quangtri.gov.vn"
   ],
   "items": [
     {
@@ -1508,6 +1511,119 @@
       "do_tin_cay_toa_do": "thap",
       "nguon": [
         "Báo Cần Thơ — https://baocantho.com.vn/doan-cong-tac-trung-uong-va-lanh-dao-tp-can-tho-vieng-nghia-trang-liet-si-hau-giang-a210697.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-ham-rong-thanh-hoa",
+      "ten": "Nghĩa trang liệt sĩ Hàm Rồng",
+      "lon": 105.7833,
+      "lat": 19.8333,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Khu vực Hàm Rồng, thành phố Thanh Hóa, tỉnh Thanh Hóa",
+      "quy_mo": "Hơn 2.000 liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ Hàm Rồng là nơi an nghỉ của hơn 2.000 liệt sĩ - những người con ưu tú của tỉnh Thanh Hóa đã hy sinh qua các cuộc kháng chiến. Đây là một trong các nghĩa trang lớn của tỉnh, cùng với các nghĩa trang liệt sĩ Thọ Xuân, Vĩnh Lộc, Quảng Xương, nơi lãnh đạo tỉnh và các đoàn thể đến dâng hương, đặt vòng hoa nhân Ngày Thương binh - Liệt sĩ 27/7.",
+      "do_tin_cay_toa_do": "thap",
+      "ghi_chu_bien_tap": "Toạ độ chỉ là ước lượng trung tâm khu vực Hàm Rồng/thành phố Thanh Hóa, KHÔNG tra được địa chỉ phường/xã cụ thể của nghĩa trang do công cụ tìm kiếm tạm gián đoạn giữa phiên (lỗi 'temporarily unavailable') — chưa kịp chạy lại câu xác minh địa chỉ chính xác hơn. Cần soát lại độ chính xác toạ độ ở vòng sau.",
+      "nguon": [
+        "Báo Văn hoá (qua Baomoi) — https://baomoi.com/lanh-dao-tinh-thanh-hoa-tri-an-nguoi-co-cong-dip-27-7-c55662661.epi",
+        "Báo Thanh tra — https://thanhtra.com.vn/an-sinh-AFA9C5670/thanh-hoa-lanh-dao-tinh-dang-huong-tri-an-liet-si-tham-hoi-gia-dinh-chinh-sach-ab6de24d6.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-cu-chi-huyen",
+      "ten": "Nghĩa trang liệt sĩ huyện Củ Chi",
+      "lon": 106.5,
+      "lat": 11.1,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Xã An Nhơn Tây, huyện Củ Chi, Thành phố Hồ Chí Minh",
+      "mo_ta": "Nghĩa trang liệt sĩ huyện Củ Chi tại xã An Nhơn Tây là nơi tiếp nhận, di dời và an táng hài cốt liệt sĩ được quy tập trên địa bàn huyện. Đây là nghĩa trang liệt sĩ cấp huyện, khác với Nghĩa trang liệt sĩ Thành phố Hồ Chí Minh tại Long Bình (Thủ Đức) đã có trong lớp.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Quân khu 7 — https://baoquankhu7.vn/huyen-cu-chi-di-doi-hai-cot-liet-si-ve-an-tang-tai-nghia-trang-liet-si-huyen--1091244954-0040174s34710gs"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-cam-lo-quang-tri",
+      "ten": "Nghĩa trang liệt sĩ huyện Cam Lộ",
+      "lon": 107.0167,
+      "lat": 16.7667,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện Cam Lộ, tỉnh Quảng Trị",
+      "quy_mo": "Có danh sách liệt sĩ theo từng khu (riêng khu 01 ghi nhận ít nhất 167 mộ)",
+      "mo_ta": "Nghĩa trang liệt sĩ huyện Cam Lộ lưu giữ danh sách tên các liệt sĩ và sơ đồ mộ theo từng khu, phục vụ thân nhân tra cứu. Cổng thông tin điện tử huyện công khai danh sách chi tiết theo từng xã trong huyện, trong đó riêng khu 01 đã ghi nhận ít nhất 167 phần mộ.",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Số 167 mộ chỉ là số liệu của MỘT khu (khu 01) do cổng huyện công bố, KHÔNG phải tổng số mộ toàn nghĩa trang — chưa tìm được con số tổng vì các khu khác chưa được liệt kê trong bài đã đọc.",
+      "nguon": [
+        "Cổng TTĐT huyện Cam Lộ — https://camlo.quangtri.gov.vn/chi-tiet-ldtbxh/-/view-article/1/1650947046993/1651464890721"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-bach-mai",
+      "ten": "Tượng đài tưởng niệm nạn nhân vụ ném bom Bệnh viện Bạch Mai",
+      "lon": 105.8411,
+      "lat": 20.9975,
+      "loai": "khu-tuong-niem-nan-nhan",
+      "nam": 1972,
+      "dia_diem": "Trong khuôn viên Bệnh viện Bạch Mai, đường Giải Phóng, Hà Nội",
+      "quy_mo": "28 người chết, 22 người bị thương",
+      "mo_ta": "Đêm 21 rạng sáng 22/12/1972, trong Chiến dịch Linebacker II, máy bay B-52 của Mỹ đã trút hơn 100 quả bom xuống Bệnh viện Bạch Mai khi hàng trăm bệnh nhân và y bác sĩ vẫn đang làm việc vì không thể sơ tán, làm 28 người chết và 22 người bị thương. Tượng đài tưởng niệm được dựng ngay trong khuôn viên bệnh viện; hằng năm vào ngày 22/12, cán bộ, nhân viên bệnh viện tụ họp trước tượng đài để thắp hương tưởng niệm những người đã hy sinh.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Bệnh viện Bạch Mai — https://bachmai.gov.vn/tin-chi-tiet/-/bai-viet/benh-vien-bach-mai-to-chuc-dang-huong-tuong-nho-cac-dong-nghiep-tien-boi-da-hy-sinh-trong-tran-chien-dien-bien-phu-tren-khong-154.html",
+        "Báo Nhân Dân — https://special.nhandan.vn/kyucbachmai/index.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khu-tuong-niem-cam-due-ha-tinh",
+      "ten": "Nhà bia tưởng niệm 34 nạn nhân bị bom Mỹ sát hại",
+      "lon": 105.9333,
+      "lat": 18.2333,
+      "loai": "khu-tuong-niem-nan-nhan",
+      "nam_hien_thi": "Sự kiện 23/11/1967; nhà bia xây năm 2019",
+      "dia_diem": "Xã Cẩm Duệ, huyện Cẩm Xuyên, tỉnh Hà Tĩnh",
+      "quy_mo": "34 nạn nhân",
+      "mo_ta": "Ngày 23/11/1967, máy bay Mỹ ném bom xuống khu vực người dân đang lao động tại xã Cẩm Duệ, huyện Cẩm Xuyên, làm 34 người thiệt mạng. Nhà bia tưởng niệm chứng tích chiến tranh được xây dựng từ tháng 3 đến tháng 7 năm 2019 để ghi nhớ sự kiện và tưởng niệm các nạn nhân.",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Toạ độ ước theo trung tâm huyện Cẩm Xuyên, KHÔNG tra được vị trí chính xác của nhà bia trong xã Cẩm Duệ do công cụ tìm kiếm tạm gián đoạn giữa phiên (không kịp WebFetch bài gốc để đọc chi tiết địa chỉ thôn/xóm).",
+      "nguon": [
+        "Báo Dân trí (Dân Sinh) — https://dansinh.dantri.com.vn/nguoi-co-cong/ha-tinh-xay-dung-nha-bia-tuong-niem-chung-tich-chien-tranh-34-nan-nhan-bi-bom-my-sat-hai-20190720221701000.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-kho-xang-duc-giang",
+      "ten": "Bia di tích lịch sử cách mạng Kho xăng dầu Đức Giang",
+      "lon": 105.8833,
+      "lat": 21.05,
+      "loai": "dai-tuong-niem",
+      "nam_hien_thi": "Sự kiện 29/6/1966 và 16/4/1972",
+      "dia_diem": "Trong khuôn viên Tổng kho Xăng dầu Đức Giang, quận Long Biên, Hà Nội",
+      "mo_ta": "Kho xăng dầu Đức Giang hai lần bị không quân Mỹ đánh phá ác liệt vào ngày 29/6/1966 và 16/4/1972 (cùng đợt oanh tạc phá hủy kho hóa chất Đức Giang gần đó). Trong trận cứu kho ngày 16/4/1972, Trưởng ban bảo vệ Trương Xuân Lợi, Phó ban Lê Xuân Ba cùng nhiều công nhân đã anh dũng hy sinh khi dập lửa cứu xăng. Bia di tích lịch sử cách mạng được đặt trong khuôn viên kho để ghi nhớ sự kiện.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Công an Nhân dân — https://cand.com.vn/Tu-lieu-antg/Cuoc-chien-cuu-kho-xang-Duc-Giang-i297715/",
+        "Petrolimex Hà Nội — https://hanoi.petrolimex.com.vn/nd/hoatdong-vhxh/tong-kho-xang-dau-duc-giang-y-chi-kien-cuong-va-khat-vong-phat-trien.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-chien-thang-cat-bi",
+      "ten": "Tượng đài Chiến thắng Cát Bi",
+      "lon": 106.7167,
+      "lat": 20.8167,
+      "loai": "tuong-dai-chien-thang",
+      "nam": 1954,
+      "dia_diem": "Khu vực sân bay Cát Bi, thành phố Hải Phòng",
+      "mo_ta": "Ngày 7/3/1954, quân và dân Kiến An (nay thuộc Hải Phòng) tập kích sân bay Cát Bi khi đó do quân Pháp chiếm giữ, phá hủy gần 60 máy bay cùng nhiều vũ khí, phương tiện — một chiến công phối hợp với chiến trường Điện Biên Phủ đang diễn ra cùng thời điểm. Tượng đài Chiến thắng Cát Bi được dựng để ghi nhớ chiến công này; thành phố Hải Phòng đang xây dựng thêm Công viên Chiến thắng Cát Bi để tôn vinh sự kiện.",
+      "do_tin_cay_toa_do": "thap",
+      "ghi_chu_bien_tap": "Chưa xác minh được năm khánh thành tượng đài và vị trí chính xác trong khu vực sân bay Cát Bi do công cụ tìm kiếm tạm gián đoạn giữa phiên — toạ độ chỉ ước theo vị trí sân bay Cát Bi nói chung. Đây là chiến thắng thời chống Pháp (1954), không phải sự kiện 'sân bay bị Mỹ đánh phá' như gợi ý ban đầu của team-lead, nhưng vẫn thuộc phạm vi lớp (tượng đài chiến thắng gắn với một sân bay quân sự).",
+      "nguon": [
+        "Báo Hải Phòng — https://baohaiphong.vn/tuong-dai-chien-thang-cat-bi-bieu-tuong-tinh-than-cua-nguoi-dan-dat-cang-519407.html"
       ],
       "trang_thai": "draft"
     }
