@@ -2470,7 +2470,9 @@ interface HcmPoem {
 // (chỉ NHÚNG YouTube chính chủ, không chép lời — tuân Luật SHTT).
 interface CaDao {
   id: string;
-  loai: "ca-dao" | "tuc-ngu";
+  // vè (kể chuyện có vần) và sấm (lời tiên tri lưu truyền) là hai thể loại
+  // truyền miệng riêng, không gộp được vào ca dao hay tục ngữ.
+  loai: "ca-dao" | "tuc-ngu" | "ve" | "sam";
   noi_dung: string[];
   lien_quan_tinh: string[];
   y_nghia?: string;
@@ -2630,7 +2632,8 @@ function hcmPoemHtml(h: HcmPoem): string {
 }
 
 function caDaoHtml(c: CaDao): string {
-  const icon = c.loai === "tuc-ngu" ? "🧭" : "🎵";
+  const ICON: Record<CaDao["loai"], string> = { "ca-dao": "🎵", "tuc-ngu": "🧭", ve: "📢", sam: "🔮" };
+  const icon = ICON[c.loai] ?? "🎵";
   const head = esc(c.noi_dung[0] ?? "") + (c.noi_dung.length > 1 ? "…" : "");
   return `<details class="profile-section"><summary>${icon} ${head}</summary>
     <blockquote class="poem">${c.noi_dung.map(esc).join("<br/>")}</blockquote>

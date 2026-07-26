@@ -115,8 +115,11 @@ if (existsSync(cadaoPath)) {
   const { items } = JSON.parse(readFileSync(cadaoPath, "utf8"));
   for (const c of items) {
     const w = `ca-dao/${c.id}`;
-    if (!["ca-dao", "tuc-ngu"].includes(c.loai))
-      fail(w, "loai phải là ca-dao|tuc-ngu");
+    // «vè» và «sấm» là hai thể loại truyền miệng riêng, không phải ca dao hay
+    // tục ngữ: vè kể chuyện có vần theo lối tự sự, sấm là lời tiên tri lưu
+    // truyền. Cả hai đều dân gian nên vẫn public-domain như ca dao.
+    if (!["ca-dao", "tuc-ngu", "ve", "sam"].includes(c.loai))
+      fail(w, "loai phải là ca-dao|tuc-ngu|ve|sam");
     if (!Array.isArray(c.noi_dung) || c.noi_dung.length === 0)
       fail(w, "thiếu noi_dung[]");
     if (!Array.isArray(c.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
