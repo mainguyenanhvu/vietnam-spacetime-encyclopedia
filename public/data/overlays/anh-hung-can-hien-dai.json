@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Anh hùng cận–hiện đại Việt Nam (thế kỷ 20–21): đại tướng QĐND, Anh hùng LLVTND, Mẹ Việt Nam Anh hùng, Anh hùng Lao động. Toạ độ nơi sinh/khu lưu niệm lấy qua OSM Nominatim (dữ liệu địa lý trung tính). Nội dung tiểu sử theo chính sử phổ thông + cổng nhà nước; trạng thái 'draft' cho tới khi soát URL nguồn cụ thể. KHÔNG dùng Wikipedia làm nguồn nội dung. [Phase 3: hợp nhất 4 lớp → nhóm «Anh hùng LLVT · Liệt sĩ · Tướng lĩnh hiện đại».]",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-07-26",
   "sources": [
     "Báo Quân đội Nhân dân — qdnd.vn",
     "Báo Nhân Dân — nhandan.vn",
@@ -1558,6 +1558,713 @@
       "anh_nguon": "Wikimedia Commons — Hoàng Văn Thái · https://commons.wikimedia.org/wiki/File:M%E1%BB%99_B%E1%BA%BF_V%C4%83n_%C4%90%C3%A0n.JPG",
       "anh_giay_phep": "CC BY 3.0",
       "anh_muc": "chan-dung"
+    },
+    {
+      "id": "nguyen-van-coc",
+      "ten": "Trung tướng Nguyễn Văn Cốc",
+      "lon": 106.12,
+      "lat": 21.29,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1942,
+      "nam_hien_thi": "Sinh 1942",
+      "dia_diem": "Quê: xã Bích Sơn, huyện Việt Yên, tỉnh Bắc Giang",
+      "chien_cong": "Phi công MiG-21 bắn rơi 9 máy bay Mỹ trong hai năm 1967-1968, kỷ lục chưa ai vượt qua trong Không quân nhân dân Việt Nam.",
+      "mo_ta": "Sinh năm 1942, quê xã Bích Sơn, huyện Việt Yên, tỉnh Bắc Giang. Đại úy phi công MiG-21 thuộc Trung đoàn 921, trong hai năm 1967-1968 bắn rơi 9 máy bay Mỹ, trở thành phi công Việt Nam bắn hạ nhiều máy bay nhất trong chiến tranh. Ông được tặng 9 Huy hiệu Bác Hồ và phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân. Sau này giữ chức Tư lệnh Quân chủng Phòng không - Không quân, Phó Tổng Tham mưu trưởng Quân đội nhân dân Việt Nam.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Trung tướng-anh hùng phi công Nguyễn Văn Cốc: Huyền thoại từ bầu trời! — https://www.qdnd.vn/phong-su-dieu-tra/ky-su/trung-tuong-anh-hung-phi-cong-nguyen-van-coc-huyen-thoai-tu-bau-troi-478308"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-luc",
+      "ten": "Anh hùng LLVTND Nguyễn Văn Lục",
+      "lon": 105.6,
+      "lat": 21.35,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1947,
+      "nam_hien_thi": "Sinh 1947",
+      "dia_diem": "Quê: tỉnh Vĩnh Phúc",
+      "chien_cong": "Phi đội trưởng Phi đội Quyết Thắng, lái máy bay A-37 ném bom sân bay Tân Sơn Nhất chiều 28-4-1975.",
+      "mo_ta": "Sinh ngày 1-5-1947, quê Vĩnh Phúc. Là phi công MiG của Trung đoàn không quân 923 giai đoạn 1968-1975, bắn rơi 3 máy bay Mỹ. Ngày 28-4-1975, với vai trò phi đội trưởng Phi đội Quyết Thắng, ông lái máy bay A-37 số 3 trong biên đội 5 chiếc xuất kích từ Phan Rang ném bom sân bay Tân Sơn Nhất, phá hủy 24 máy bay của không quân Sài Gòn. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Anh hùng LLVTND Nguyễn Văn Lục: Chúng tôi chỉ có vài giờ bay chuyển loại để thực hiện trận đánh lịch sử — https://nhandan.vn/anh-hung-llvtnd-nguyen-van-luc-chung-toi-chi-co-vai-gio-bay-chuyen-loai-de-thuc-hien-tran-danh-lich-su-post872177.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-duc-soat",
+      "ten": "Trung tướng Nguyễn Đức Soát",
+      "lon": 105.9,
+      "lat": 20.73,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1946,
+      "nam_hien_thi": "Sinh 1946",
+      "dia_diem": "Quê: xã Nam Phong, huyện Phú Xuyên, Hà Tây (nay thuộc Hà Nội)",
+      "chien_cong": "Phi công MiG-21, MiG-21bis bắn rơi 6 máy bay Mỹ trong kháng chiến chống Mỹ.",
+      "mo_ta": "Sinh ngày 24-6-1946 tại Nam Phong, Phú Xuyên, Hà Tây (nay thuộc Hà Nội). Nhập ngũ ngày 4-7-1965, là phi công MiG-21, Su-22, Su-27, bắn rơi 6 máy bay Mỹ trong chiến tranh chống Mỹ. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân. Sau này giữ chức Tư lệnh Quân chủng Phòng không - Không quân, Phó Tổng Tham mưu trưởng Quân đội nhân dân Việt Nam.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Vị tướng 'phi công huyền thoại' với khát vọng hòa bình — https://media.qdnd.vn/long-form/vi-tuong-phi-cong-huyen-thoai-voi-khat-vong-hoa-binh-55969"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "doan-minh-nguyet",
+      "ten": "Anh hùng LLVTND Đoàn Minh Nguyệt",
+      "lon": 105.72,
+      "lat": 18.75,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1932,
+      "nam_hien_thi": "Sinh 1932",
+      "dia_diem": "Quê: xóm 22, xã Nghi Phong, huyện Nghi Lộc, tỉnh Nghệ An",
+      "chien_cong": "Lái xe vận tải trên đường Trường Sơn, chỉ huy đoàn 37 xe của Trung đoàn 10, Đoàn 559.",
+      "mo_ta": "Sinh năm 1932 tại xóm 22, xã Nghi Phong, huyện Nghi Lộc, tỉnh Nghệ An. Từ một chiến sĩ lái xe, cuối năm 1974 được đề bạt đại đội trưởng chỉ huy 37 đầu xe của Trung đoàn 10 thuộc Đoàn 559 vận chuyển hàng chi viện chiến trường trên đường Trường Sơn. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Anh hùng lái xe Đoàn Minh Nguyệt — https://baonghean.vn/anh-hung-lai-xe-doan-minh-nguyet-10006781.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-van-phuong",
+      "ten": "Thiếu úy Trần Văn Phương",
+      "lon": 106.42,
+      "lat": 17.75,
+      "loai": "hai-quan",
+      "nam_sinh": 1965,
+      "nam_mat": 1988,
+      "nam_hien_thi": "1965–1988",
+      "dia_diem": "Quê: xã Quảng Phúc, huyện Quảng Trạch, tỉnh Quảng Bình (nay thuộc Quảng Trị)",
+      "chien_cong": "Phó chỉ huy đảo Gạc Ma, chỉ huy chiến sĩ giữ cờ Tổ quốc, hy sinh trong hải chiến Gạc Ma ngày 14-3-1988.",
+      "mo_ta": "Sinh năm 1965 tại xã Quảng Phúc, huyện Quảng Trạch, tỉnh Quảng Bình (nay thuộc Quảng Trị). Thiếu úy, Phó chỉ huy đảo Gạc Ma thuộc quần đảo Trường Sa. Ngày 14-3-1988, khi Hải quân Trung Quốc tấn công chiếm đảo, ông chỉ huy chiến sĩ giữ vững lá cờ Tổ quốc và hy sinh tại chỗ. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "38 năm anh hùng chống giặc xâm lược tại Gạc Ma — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html",
+        "Đặt tên đường phố liệt sĩ Trần Văn Phương hy sinh khi bảo vệ Gạc Ma — https://cand.com.vn/su-kien-binh-luan-thoi-su/dat-ten-duong-pho-liet-si-tran-van-phuong-hy-sinh-khi-bao-ve-gac-ma--i725303/"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-lanh",
+      "ten": "Anh hùng LLVTND Nguyễn Văn Lanh",
+      "lon": 106.6,
+      "lat": 17.5,
+      "loai": "hai-quan",
+      "nam_sinh": 1966,
+      "nam_hien_thi": "Sinh 1966",
+      "dia_diem": "Quê: tỉnh Quảng Bình (nay thuộc Quảng Trị)",
+      "chien_cong": "Chiến sĩ công binh, giữ cờ Tổ quốc sau khi Thiếu úy Trần Văn Phương ngã xuống, bị lê đâm và bắn trọng thương trong hải chiến Gạc Ma 1988.",
+      "mo_ta": "Sinh năm 1966, quê Quảng Bình (nay thuộc Quảng Trị). Chiến sĩ công binh thuộc Trung đoàn E83. Ngày 14-3-1988 tại đảo Gạc Ma, sau khi Thiếu úy Trần Văn Phương hy sinh, Hạ sĩ Nguyễn Văn Lanh tiếp tục giữ cờ, bị lê đâm xuyên vai và trúng đạn vào ngực nhưng vẫn giữ chặt lá cờ đỏ. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Chuyện về người chiến sĩ Gạc Ma: Anh hùng LLVT Nhân dân Nguyễn Văn Lanh — https://baoquankhu7.vn/chuyen-ve-nguoi-chien-si-gac-ma-anh-hung-llvt-nhan-dan-nguyen-van-lanh--1847857354-0032352s38810gs"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vu-phi-tru",
+      "ten": "Đại úy Vũ Phi Trừ",
+      "lon": 105.77,
+      "lat": 19.68,
+      "loai": "hai-quan",
+      "nam_sinh": 1957,
+      "nam_mat": 1988,
+      "nam_hien_thi": "1957–1988",
+      "dia_diem": "Quê: xã Quảng Khê, huyện Quảng Xương, tỉnh Thanh Hóa",
+      "chien_cong": "Thuyền trưởng tàu HQ-604, chỉ huy chiến đấu bảo vệ đảo Gạc Ma và hy sinh cùng tàu ngày 14-3-1988.",
+      "mo_ta": "Sinh năm 1957 tại xã Quảng Khê, huyện Quảng Xương, tỉnh Thanh Hóa. Đại úy, thuyền trưởng tàu HQ-604 thuộc Lữ đoàn 125 Hải quân. Ngày 11-3-1988 nhận lệnh chở cán bộ, vật liệu ra xây dựng đảo Gạc Ma; ngày 14-3-1988 chỉ huy chiến đấu chống lực lượng Hải quân Trung Quốc và hy sinh cùng tàu. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Lễ tưởng niệm các anh hùng liệt sĩ đã hi sinh tại quần đảo Trường Sa — https://mst.gov.vn/le-tuong-niem-cac-anh-hung-liet-si-da-hi-sinh-tai-quan-dao-truong-sa-197108592.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-duc-thong",
+      "ten": "Trung tá Trần Đức Thông",
+      "lon": 106.34,
+      "lat": 20.45,
+      "loai": "hai-quan",
+      "nam_sinh": 1944,
+      "nam_mat": 1988,
+      "nam_hien_thi": "1944–1988",
+      "dia_diem": "Quê: tỉnh Thái Bình",
+      "chien_cong": "Phó Lữ đoàn trưởng Lữ đoàn 146 Hải quân, trực tiếp chỉ huy cụm chiến đấu Gạc Ma - Cô Lin - Len Đao ngày 14-3-1988.",
+      "mo_ta": "Sinh năm 1944, quê Thái Bình. Trung tá, Phó Lữ đoàn trưởng Lữ đoàn 146 Hải quân. Trực tiếp ra lệnh cho tổ chiến đấu do Thiếu úy Trần Văn Phương chỉ huy giữ cờ tại Gạc Ma; hy sinh trong trận hải chiến ngày 14-3-1988 khi Hải quân Trung Quốc tấn công cụm đảo Gạc Ma - Cô Lin - Len Đao. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "'Phải để cho máu mình tô thắm lá cờ Tổ quốc' — https://dantri.com.vn/thoi-su/phai-de-cho-mau-minh-to-tham-la-co-to-quoc-1432606560.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vu-huy-le",
+      "ten": "Thiếu tá Vũ Huy Lễ",
+      "lon": 106.34,
+      "lat": 20.45,
+      "loai": "hai-quan",
+      "nam_sinh": 1946,
+      "nam_hien_thi": "Sinh 1946",
+      "dia_diem": "Quê: tỉnh Thái Bình",
+      "chien_cong": "Thuyền trưởng tàu HQ-505, chủ động lao tàu lên bãi Cô Lin làm cột mốc chủ quyền trong hải chiến Gạc Ma 1988.",
+      "mo_ta": "Sinh năm 1946, quê Thái Bình. Thiếu tá, thuyền trưởng tàu HQ-505 thuộc Lữ đoàn 125 Hải quân. Ngày 14-3-1988, khi bị tàu Trung Quốc bắn cháy, ông bình tĩnh cho tàu lao thẳng lên bãi Cô Lin, biến con tàu thành pháo đài và cột mốc khẳng định chủ quyền. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "'Phải để cho máu mình tô thắm lá cờ Tổ quốc' — https://dantri.com.vn/thoi-su/phai-de-cho-mau-minh-to-tham-la-co-to-quoc-1432606560.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ho-thi-cuc",
+      "ten": "Tiểu đội phó Hồ Thị Cúc",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1944,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1944–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Tiểu đội phó Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968.",
+      "mo_ta": "Sinh năm 1944, quê Can Lộc, Hà Tĩnh. Tiểu đội phó Tiểu đội 4 thanh niên xung phong. Hy sinh trong trận bom chiều 24-7-1968 tại Ngã ba Đồng Lộc; thi thể được tìm thấy sau 3 ngày trên đồi Trọ Voi trong tư thế ngồi, mười đầu ngón tay bấm đất tìm đường ra. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Cảm xúc về hình ảnh 10 nữ TNXP và liệt sỹ Hồ Thị Cúc hy sinh tại Ngã ba Đồng Lộc — https://hatinh.gov.vn/cam-xuc-ve-hinh-anh-10-nu-tnxp-va-liet-sy-ho-thi-cuc-hy-sinh-tai-nga-ba-dong-loc"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-nho",
+      "ten": "Nguyễn Thị Nhỏ",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1944,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1944–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968.",
+      "mo_ta": "Sinh năm 1944, quê Can Lộc, Hà Tĩnh, 24 tuổi khi hy sinh. Chiến sĩ Tiểu đội 4 thanh niên xung phong làm nhiệm vụ thông đường tại Ngã ba Đồng Lộc, hy sinh trong trận bom chiều 24-7-1968 cùng 9 đồng đội. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "duong-thi-xuan",
+      "ten": "Dương Thị Xuân",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1947,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1947–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968, 21 tuổi.",
+      "mo_ta": "Quê Can Lộc, Hà Tĩnh, 21 tuổi khi hy sinh năm 1968. Chiến sĩ Tiểu đội 4 thanh niên xung phong san lấp hố bom, giữ mạch giao thông chi viện chiến trường miền Nam qua Ngã ba Đồng Lộc. Hy sinh cùng 9 đồng đội trong trận bom chiều 24-7-1968. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vo-thi-hoi",
+      "ten": "Võ Thị Hợi",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1948,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1948–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968, 20 tuổi.",
+      "mo_ta": "Quê Can Lộc, Hà Tĩnh, 20 tuổi khi hy sinh năm 1968. Chiến sĩ Tiểu đội 4 thanh niên xung phong làm nhiệm vụ thông đường tại Ngã ba Đồng Lộc, hy sinh cùng 9 đồng đội trong trận bom chiều 24-7-1968. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-xuan",
+      "ten": "Nguyễn Thị Xuân",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1948,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1948–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968, 20 tuổi.",
+      "mo_ta": "Quê Can Lộc, Hà Tĩnh, 20 tuổi khi hy sinh năm 1968. Chiến sĩ Tiểu đội 4 thanh niên xung phong san lấp hố bom tại Ngã ba Đồng Lộc, hy sinh cùng 9 đồng đội trong trận bom chiều 24-7-1968. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ha-thi-xanh",
+      "ten": "Hà Thị Xanh",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1948,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1948–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968, 20 tuổi.",
+      "mo_ta": "Quê Can Lộc, Hà Tĩnh, 20 tuổi khi hy sinh năm 1968. Chiến sĩ Tiểu đội 4 thanh niên xung phong giữ mạch giao thông tại Ngã ba Đồng Lộc, hy sinh cùng 9 đồng đội trong trận bom chiều 24-7-1968. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-huong",
+      "ten": "Trần Thị Hường",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1949,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1949–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968, 19 tuổi.",
+      "mo_ta": "Quê Can Lộc, Hà Tĩnh, 19 tuổi khi hy sinh năm 1968. Chiến sĩ Tiểu đội 4 thanh niên xung phong tại Ngã ba Đồng Lộc, hy sinh cùng 9 đồng đội trong trận bom chiều 24-7-1968. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-rang",
+      "ten": "Trần Thị Rạng",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1950,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1950–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968, 18 tuổi.",
+      "mo_ta": "Quê Can Lộc, Hà Tĩnh, 18 tuổi khi hy sinh năm 1968. Chiến sĩ Tiểu đội 4 thanh niên xung phong tại Ngã ba Đồng Lộc, hy sinh cùng 9 đồng đội trong trận bom chiều 24-7-1968. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vo-thi-ha",
+      "ten": "Võ Thị Hà",
+      "lon": 105.77,
+      "lat": 18.4,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1951,
+      "nam_mat": 1968,
+      "nam_hien_thi": "1951–1968",
+      "dia_diem": "Quê: huyện Can Lộc, tỉnh Hà Tĩnh",
+      "chien_cong": "Chiến sĩ trẻ nhất Tiểu đội 4 thanh niên xung phong, hy sinh tại Ngã ba Đồng Lộc ngày 24-7-1968, 17 tuổi.",
+      "mo_ta": "Quê Can Lộc, Hà Tĩnh, 17 tuổi khi hy sinh năm 1968, là người trẻ nhất trong 10 cô gái Đồng Lộc. Chiến sĩ Tiểu đội 4 thanh niên xung phong, hy sinh cùng 9 đồng đội trong trận bom chiều 24-7-1968. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 1972.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Huyền thoại 10 cô gái Ngã ba Đồng Lộc — https://trungluong.hatinh.gov.vn/trungluong/pages/2023-07-11/Huyen-thoai-10-co-gai-Nga-ba-Dong-Loc-469193.aspx"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vu-dang-toan",
+      "ten": "Anh hùng LLVTND Vũ Đăng Toàn",
+      "lon": 106.28,
+      "lat": 20.85,
+      "loai": "anh-hung-llvt",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: xã Yết Kiêu, huyện Gia Lộc, tỉnh Hải Dương",
+      "chien_cong": "Chính trị viên, chỉ huy xe tăng 390 húc đổ cổng chính Dinh Độc Lập trưa 30-4-1975.",
+      "mo_ta": "Quê xã Yết Kiêu, huyện Gia Lộc, tỉnh Hải Dương. Nhập ngũ năm 1965, thuộc Binh chủng Tăng thiết giáp, từng tham gia kháng chiến chống Mỹ, chiến tranh bảo vệ biên giới Tây Nam và biên giới phía Bắc. Trưa 30-4-1975, với vai trò chính trị viên chỉ huy xe tăng 390 (Lữ đoàn 203, Quân đoàn 2), ông chỉ huy xe húc đổ cổng chính Dinh Độc Lập, góp phần vào thắng lợi của Chiến dịch Hồ Chí Minh. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Ông Vũ Đăng Toàn - người chỉ huy xe tăng 390 húc đổ cổng Dinh Độc Lập — https://baocaobang.vn/ong-vu-dang-toan-nguoi-chi-huy-xe-tang-390-huc-do-cong-dinh-doc-lap-3176641.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-kim-hue",
+      "ten": "Anh hùng Lao động Nguyễn Thị Kim Huế",
+      "lon": 106.3,
+      "lat": 17.83,
+      "loai": "ah-lao-dong",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: xã Cảnh Hóa, huyện Quảng Trạch, tỉnh Quảng Bình (nay thuộc Quảng Trị)",
+      "chien_cong": "Tiểu đội trưởng Tiểu đội 6, Đơn vị 759, thanh niên xung phong mở đường, vận chuyển hàng trên tuyến lửa Trường Sơn.",
+      "mo_ta": "Quê xã Cảnh Hóa, huyện Quảng Trạch, tỉnh Quảng Bình (nay thuộc Quảng Trị). Mồ côi từ nhỏ, năm 17 tuổi xung phong vào lực lượng thanh niên xung phong. Là Tiểu đội trưởng Tiểu đội 6, Đội 75, Khu vực 12, trực tiếp mở đường và vận chuyển hàng chi viện bộ đội trên tuyến đường Trường Sơn. Được phong tặng danh hiệu Anh hùng Lao động.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Những nữ Anh hùng trở về từ Trường Sơn huyền thoại — https://cand.vn/nhung-nu-anh-hung-tro-ve-tu-truong-son-huyen-thoai-post563784.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-tau-tu-cang",
+      "ten": "Đại tá Nguyễn Văn Tàu (Tư Cang)",
+      "lon": 107.17,
+      "lat": 10.5,
+      "loai": "anh-hung-llvt",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: xã Long Phước, TP Bà Rịa, tỉnh Bà Rịa - Vũng Tàu (nay thuộc TP Hồ Chí Minh)",
+      "chien_cong": "Cụm trưởng Tình báo quân sự H63, sau là Chính ủy Lữ đoàn 316 đặc công biệt động tham gia giải phóng Sài Gòn 1975.",
+      "mo_ta": "Sinh ra và lớn lên tại xã Long Phước, Bà Rịa (nay thuộc TP Hồ Chí Minh), bí danh Tư Cang. Là Cụm trưởng Cụm tình báo quân sự H63 hoạt động trong lòng địch nhiều năm tại Sài Gòn, cung cấp nhiều tin tức chiến lược cho cách mạng. Sau đó giữ chức Chính ủy Lữ đoàn 316 đặc công biệt động, trực tiếp tham gia Chiến dịch Hồ Chí Minh giải phóng Sài Gòn năm 1975. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Nhà tình báo Tư Cang và những lần 'vô-ra' Sài Gòn — https://www.qdnd.vn/phong-su-dieu-tra/ky-su/nha-tinh-bao-tu-cang-va-nhung-lan-vo-ra-sai-gon-826103"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "le-thi-dung-ham-rong",
+      "ten": "Anh hùng LLVTND Lê Thị Dung",
+      "lon": 105.78,
+      "lat": 19.82,
+      "loai": "anh-hung-llvt",
+      "nam_mat": 1965,
+      "nam_hien_thi": "Hy sinh 1965",
+      "dia_diem": "Nơi hy sinh: khu vực cầu Hàm Rồng, phường Nam Ngạn, TP Thanh Hóa",
+      "chien_cong": "Tiểu đội trưởng dân quân Nam Ngạn, phối hợp bảo vệ cầu Hàm Rồng, góp phần bắn rơi máy bay Mỹ trong hai ngày 3 và 4-4-1965.",
+      "mo_ta": "Tiểu đội trưởng dân quân Nam Ngạn, TP Thanh Hóa. Trong hai ngày 3 và 4-4-1965 và ngày 26-5-1965, khi không quân Mỹ tập trung đánh phá cầu Hàm Rồng, bà cùng Tiểu đội dân quân Nam Ngạn phối hợp với tàu Hải quân HQ-136 và các đơn vị chủ lực chiến đấu bảo vệ cầu, góp phần vào chiến công bắn rơi 49 máy bay Mỹ trên vùng trời Thanh Hóa. Bà hy sinh trong trận chiến đấu ác liệt đó, được Đảng và Nhà nước truy tặng danh hiệu cao quý.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Thành phố Thanh Hóa: Truy tặng danh hiệu 'Anh hùng Lực lượng vũ trang nhân dân' — http://baoquankhu4.com.vn/hau-phuong-quan-doi/thanh-pho-thanh-hoa-tinh-thanh-hoa-truy-tang-danh-hieu-anh-h.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngo-tho-sau",
+      "ten": "Dân quân Ngô Thọ Sáu",
+      "lon": 105.78,
+      "lat": 19.82,
+      "loai": "anh-hung-llvt",
+      "nam_mat": 1965,
+      "nam_hien_thi": "Hy sinh 1965",
+      "dia_diem": "Nơi hy sinh: khu vực cầu Hàm Rồng, phường Nam Ngạn, TP Thanh Hóa",
+      "chien_cong": "Dân quân Trung đội Nam Ngạn, phối hợp bảo vệ cầu Hàm Rồng, góp phần bắn rơi máy bay Mỹ trong hai ngày 3 và 4-4-1965.",
+      "mo_ta": "Chiến sĩ Trung đội dân quân Nam Ngạn, TP Thanh Hóa. Cùng đồng đội Lê Thị Dung chiến đấu bảo vệ cầu Hàm Rồng trong các trận đánh ngày 3, 4-4-1965 và 26-5-1965, phối hợp với tàu Hải quân HQ-136 và bộ đội chủ lực bắn rơi 49 máy bay Mỹ. Hy sinh trong trận chiến đấu bảo vệ cầu, được Đảng và Nhà nước truy tặng danh hiệu cao quý.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Thành phố Thanh Hóa: Truy tặng danh hiệu 'Anh hùng Lực lượng vũ trang nhân dân' — http://baoquankhu4.com.vn/hau-phuong-quan-doi/thanh-pho-thanh-hoa-tinh-thanh-hoa-truy-tang-danh-hieu-anh-h.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-phiet",
+      "ten": "Trung tướng Nguyễn Văn Phiệt",
+      "lon": 106.05,
+      "lat": 20.8,
+      "loai": "phong-khong",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: xã Tân Phúc, huyện Ân Thi, tỉnh Hưng Yên",
+      "chien_cong": "Tiểu đoàn trưởng Tiểu đoàn tên lửa 57, bắn rơi 2 máy bay B-52 chỉ trong 10 phút bằng chiến thuật 'đánh mổ cò' đêm 27-12-1972.",
+      "mo_ta": "Sinh ra và lớn lên tại Tân Phúc, Ân Thi, Hưng Yên. Tiểu đoàn trưởng Tiểu đoàn tên lửa 57. Trong 12 ngày đêm chiến dịch 'Điện Biên Phủ trên không' tháng 12-1972, đơn vị ông đánh 19 trận, bắn rơi 4 máy bay B-52 (2 chiếc rơi tại chỗ). Đêm 27-12-1972, chỉ trong 10 phút (từ 5h09 đến 5h19) tại trận địa Đại Đồng (Đông Anh, Hà Nội), ông chỉ huy bắn rơi liên tiếp 2 máy bay B-52 bằng chiến thuật bắn từng quả 'mổ cò'. Năm 1973 được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Những vị tướng trực tiếp đối đầu B-52 - Bài 1: Trung tướng Nguyễn Văn Phiệt — https://media.qdnd.vn/long-form/nhung-vi-tuong-truc-tiep-doi-dau-b-52-bai-1-trung-tuong-nguyen-van-phiet-vi-tuong-pha-man-nhieu-ha-hai-b-52-trong-10-phut-56066"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoang-van-lien",
+      "ten": "Anh hùng LLVTND Hoàng Văn Liên",
+      "lon": 106.53,
+      "lat": 21.9,
+      "loai": "cand",
+      "nam_sinh": 1959,
+      "nam_hien_thi": "Sinh 1959",
+      "dia_diem": "Quê: xã Thiên Long, huyện Bình Gia, tỉnh Lạng Sơn",
+      "chien_cong": "Chiến sĩ cảnh sát cơ động, một trong hai người sống sót tại Pháo đài Đồng Đăng trong chiến tranh bảo vệ biên giới phía Bắc tháng 2-1979.",
+      "mo_ta": "Sinh năm 1959, dân tộc Nùng, quê xã Thiên Long, huyện Bình Gia, tỉnh Lạng Sơn. Nhập ngũ năm 1978, sau khi tốt nghiệp Trường Cảnh sát Cao Lạng tháng 1-1979 được biên chế vào Đại đội 1, Tiểu đoàn Cảnh sát cơ động Công an tỉnh Lạng Sơn. Trong trận chiến đấu bảo vệ Pháo đài Đồng Đăng tháng 2-1979, ông là một trong hai người sống sót, từng quay lại dưới hỏa lực để đưa đồng đội bị thương ra ngoài an toàn. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Tìm lại những anh hùng: Những chiến sĩ Công an Lạng Sơn — https://baogialai.com.vn/tim-lai-nhung-anh-hung-nhung-chien-si-cong-an-lang-son-post266401.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-duc-tau-khong-so",
+      "ten": "Đại tá Nguyễn Văn Đức (Sáu Đức)",
+      "lon": 106.38,
+      "lat": 10.24,
+      "loai": "hai-quan",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: tỉnh Bến Tre (nay thuộc Vĩnh Long)",
+      "chien_cong": "Thuyền trưởng tàu 674 Đoàn tàu không số, trực tiếp tham gia giải phóng quần đảo Trường Sa tháng 4-1975.",
+      "mo_ta": "Quê Bến Tre (nay thuộc Vĩnh Long), tên thường gọi Sáu Đức. Ngày 1-6-1961, tình nguyện làm thủy thủ trên tàu Phương Đông 4 xuất phát từ Bến Tre vượt biển ra Bắc xin vũ khí, mở đầu con đường vận tải biển chi viện miền Nam. Sau này là thuyền trưởng tàu 674 thuộc Đoàn tàu không số, trực tiếp tham gia giải phóng các đảo thuộc quần đảo Trường Sa tháng 4-1975. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân năm 2015.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Anh hùng LLVTND Nguyễn Văn Đức, thuyền trưởng tàu không số huyền thoại — https://vtv.vn/truyen-hinh/anh-hung-llvtnd-nguyen-van-duc-thuyen-truong-tau-khong-so-huyen-thoai-khi-noi-dau-gia-dinh-hoa-cung-moi-thu-dan-toc-20220827111424569.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "pham-thi-bay",
+      "ten": "Anh hùng LLVTND Phạm Thị Bay (Ba Bay)",
+      "lon": 105.02,
+      "lat": 9.13,
+      "loai": "anh-hung-llvt",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: huyện Cái Nước, tỉnh Cà Mau",
+      "chien_cong": "Bí thư xã ủy, chỉ huy và tham gia 150 trận đánh đồn bốt, bẻ gãy nhiều cuộc càn quét của địch tại Cái Nước, Cà Mau.",
+      "mo_ta": "Quê huyện Cái Nước, tỉnh Cà Mau, tên thường gọi Ba Bay. Trong kháng chiến chống Mỹ, với vai trò Bí thư xã ủy, bà chỉ huy và tham gia 150 trận đánh vào các đồn bốt địch, bẻ gãy nhiều trận càn quét, góp phần vào thắng lợi chung của huyện Cái Nước và tỉnh Cà Mau mùa xuân 1975. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân, Huân chương Kháng chiến hạng Nhất, Huân chương Độc lập hạng Ba.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Anh hùng lực lượng vũ trang nhân dân Phạm Thị Bay — https://www.camau.gov.vn/wps/portal/trangchitiet/!ut/p/z0/fY1ND4IwEER_DeeuIX5wVGOMEol6MNALWXUtK7AVbI38exsTrx7nvcmM0ipXWvDFBh1bwSbkQk_K8T7drBdLyCABgMMuPo2yeQqrI6it0v8LYYHvXafnSl-sOHo7lV-wRd_wucd-iOCb7O3JjiIwbNlVTD7wyg8k1wDrQZhaqbwYMTg01Fj50TEIthG4yopxLE9fMwXZsunRURkklUk8m5bfG_WodfEB18VL4Q!!/p0/IZ7_5PKIGBC0N09000QM3V1NAK0E74=CZ6_5PKIGBC0N09000QM3V1NAK0ER0=MEns_Z7_5PKIGBC0N09000QFBM3V1NAK0E74_WCM_PreviousPageSize.5fced124-746b-41e2-9bea-7cc818aabf4f!10=ns_Z7_5PKIGBC0N09000QFBM3V1NAK0E74_WCM_Page.5fced124-746b-41e2-9bea-7cc818aabf4f!3=CTX!QCPcamaulibraryQCPCaMauofSiteQCPgioithieuQCPchuyendeQCPKyniemnhungngaylelonQCPkyniem50namQCPThongtinsukienQCPmigrate_name_9387_camau=WCM_PI!1==/"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vo-dong-trach",
+      "ten": "Liệt sĩ Võ Đông Trạch",
+      "lon": 105.08,
+      "lat": 10.01,
+      "loai": "liet-si-tieu-bieu",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: TP Rạch Giá, tỉnh Kiên Giang (nay thuộc An Giang)",
+      "chien_cong": "Có thành tích đặc biệt xuất sắc trong kháng chiến chống Mỹ, cứu nước tại địa bàn Rạch Giá.",
+      "mo_ta": "Quê TP Rạch Giá, tỉnh Kiên Giang (nay thuộc An Giang). Là một trong ba cá nhân của lực lượng vũ trang Rạch Giá được Chủ tịch nước truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân vào ngày 19-12-2025 vì có thành tích đặc biệt xuất sắc trong cuộc kháng chiến chống Mỹ, cứu nước.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân cho 3 cá nhân tại An Giang — https://baoangiang.com.vn/truy-tang-danh-hieu-anh-hung-luc-luong-vu-trang-nhan-dan-cho-3-ca-nhan-tai-an-giang-a470817.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thanh-kinh",
+      "ten": "Liệt sĩ Nguyễn Thành Kính",
+      "lon": 105.08,
+      "lat": 10.01,
+      "loai": "liet-si-tieu-bieu",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: TP Rạch Giá, tỉnh Kiên Giang (nay thuộc An Giang)",
+      "chien_cong": "Có thành tích đặc biệt xuất sắc trong kháng chiến chống Mỹ, cứu nước tại địa bàn Rạch Giá.",
+      "mo_ta": "Quê TP Rạch Giá, tỉnh Kiên Giang (nay thuộc An Giang). Là một trong ba cá nhân của lực lượng vũ trang Rạch Giá được Chủ tịch nước truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân vào ngày 19-12-2025 vì có thành tích đặc biệt xuất sắc trong cuộc kháng chiến chống Mỹ, cứu nước.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân cho 3 cá nhân tại An Giang — https://baoangiang.com.vn/truy-tang-danh-hieu-anh-hung-luc-luong-vu-trang-nhan-dan-cho-3-ca-nhan-tai-an-giang-a470817.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-van-tuy",
+      "ten": "Liệt sĩ Trần Văn Tủy",
+      "lon": 105.08,
+      "lat": 10.01,
+      "loai": "liet-si-tieu-bieu",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: TP Rạch Giá, tỉnh Kiên Giang (nay thuộc An Giang)",
+      "chien_cong": "Có thành tích đặc biệt xuất sắc trong kháng chiến chống Mỹ, cứu nước tại địa bàn Rạch Giá.",
+      "mo_ta": "Quê TP Rạch Giá, tỉnh Kiên Giang (nay thuộc An Giang). Là một trong ba cá nhân của lực lượng vũ trang Rạch Giá được Chủ tịch nước truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân vào ngày 19-12-2025 vì có thành tích đặc biệt xuất sắc trong cuộc kháng chiến chống Mỹ, cứu nước.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân cho 3 cá nhân tại An Giang — https://baoangiang.com.vn/truy-tang-danh-hieu-anh-hung-luc-luong-vu-trang-nhan-dan-cho-3-ca-nhan-tai-an-giang-a470817.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vu-van-binh",
+      "ten": "Thượng sĩ Vũ Văn Bình",
+      "lon": 105.87,
+      "lat": 20.58,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 2005,
+      "nam_mat": 2025,
+      "nam_hien_thi": "2005–2025",
+      "dia_diem": "Quê: xã Hoàng Tây, huyện Kim Bảng, tỉnh Hà Nam cũ (nay thuộc tỉnh Ninh Bình)",
+      "chien_cong": "Chiến sĩ công binh Lữ đoàn 513, hy sinh khi lao vào đẩy chỉ huy thoát khỏi vị trí sạt lở khi thi công công trình quốc phòng tại Quảng Ninh.",
+      "mo_ta": "Sinh ngày 25-9-2005, quê xã Hoàng Tây, huyện Kim Bảng, tỉnh Hà Nam cũ (nay thuộc tỉnh Ninh Bình). Chiến sĩ công binh công trình, Tiểu đội 3, Trung đội 5, Đại đội 2, Tiểu đoàn 1, Lữ đoàn 513 (Quân khu 3). Chiều 5-11-2025, khi đang thi công công trình quốc phòng tại tỉnh Quảng Ninh, phát hiện nguy cơ sạt lở đất đá tại vị trí trung đội trưởng đang chỉ huy, anh dũng lao vào đẩy chỉ huy ra khỏi khu vực nguy hiểm và bị đất đá vùi lấp, hy sinh. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Thượng sĩ Vũ Văn Bình hy sinh trong thực hiện nhiệm vụ xây dựng công trình quốc phòng — https://nhandan.vn/thuong-si-vu-van-binh-hy-sinh-trong-thuc-hien-nhiem-vu-xay-dung-cong-trinh-quoc-phong-post921019.html",
+        "Lữ đoàn 513 truy tặng danh hiệu Anh hùng lực lượng vũ trang nhân dân cho đồng chí Thượng sĩ Vũ Văn Bình — https://baoninhbinh.org.vn/lu-doan-513-truy-tang-danh-hieu-anh-hung-luc-luong-vu-trang-nhan-dan-cho-dong-c-260109134341168.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-duc-hung-tu-chu",
+      "ten": "Đại tá Nguyễn Đức Hùng (Tư Chu)",
+      "lon": 105.85,
+      "lat": 18.55,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1928,
+      "nam_mat": 2012,
+      "nam_hien_thi": "1928–2012",
+      "dia_diem": "Quê: xóm Thống Nhất, xã Ích Hậu, huyện Lộc Hà, tỉnh Hà Tĩnh",
+      "chien_cong": "Chỉ huy trưởng lực lượng Biệt động Sài Gòn - Gia Định, chỉ đạo trận đánh 7 mục tiêu trọng yếu trong Tổng tiến công Tết Mậu Thân 1968.",
+      "mo_ta": "Sinh năm 1928 tại xóm Thống Nhất, xã Ích Hậu, huyện Lộc Hà, tỉnh Hà Tĩnh, bí danh Tư Chu. Là Phó Tư lệnh, Tham mưu trưởng Quân khu Sài Gòn - Gia Định, trực tiếp chỉ huy lực lượng Biệt động Sài Gòn - Gia Định. Năm 1968, với vai trò chỉ huy trưởng biệt động, ông tổ chức chuẩn bị và chỉ đạo các trận tấn công 7 mục tiêu trọng yếu trong nội đô Sài Gòn (gồm Dinh Độc Lập, Bộ Tổng tham mưu, Đài phát thanh Sài Gòn, sân bay Tân Sơn Nhất, Đại sứ quán Mỹ...) trong Tổng tiến công Tết Mậu Thân. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân ngày 3-1-2012. Mất ngày 16-5-2012 tại TP Hồ Chí Minh.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Chuyện chưa kể về vị Chỉ huy trưởng 'Biệt động Sài Gòn' quê Hà Tĩnh — https://baohatinh.vn/chuyen-chua-ke-ve-vi-chi-huy-truong-biet-dong-sai-gon-que-ha-tinh-post191293.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-viet-ninh",
+      "ten": "Tiểu đội trưởng Nguyễn Viết Ninh",
+      "lon": 105.05,
+      "lat": 21.28,
+      "loai": "anh-hung-llvt",
+      "nam_mat": 1985,
+      "nam_hien_thi": "Hy sinh 1985",
+      "dia_diem": "Quê: xã Minh Hòa, huyện Yên Lập, tỉnh Phú Thọ; hy sinh tại cao điểm 685, Vị Xuyên, Hà Giang",
+      "chien_cong": "Tiểu đội trưởng Sư đoàn 356, khắc lời thề 'Sống bám đá đánh giặc, chết hóa đá bất tử' lên báng súng, hy sinh khi giữ cao điểm 685 tháng 1-1985.",
+      "mo_ta": "Quê xã Minh Hòa, huyện Yên Lập, tỉnh Phú Thọ. Tiểu đội trưởng thuộc Sư đoàn 356, chiến đấu bảo vệ biên giới tại mặt trận Vị Xuyên, Hà Giang. Ông khắc lên báng súng lời thề 'Sống bám đá đánh giặc, chết hóa đá bất tử', trở thành phương châm chiến đấu của bộ đội Vị Xuyên. Bị thương ba lần, mất nhiều máu, ông hy sinh tháng 1-1985 trong trận giữ cao điểm 685. Được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân; hài cốt được đưa về an táng tại quê nhà Yên Lập, Phú Thọ.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Về nơi lưu giữ 'lời thề bất tử' — http://qptd.vn/quoc-phong-an-ninh/hau-phuong-quan-doi2/ve-noi-luu-giu-loi-the-bat-tu-.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "do-ngoc-huyen",
+      "ten": "Anh hùng LLVTND Đỗ Ngọc Huyền",
+      "lon": 107.48,
+      "lat": 16.55,
+      "loai": "anh-hung-cand",
+      "nam_sinh": 1937,
+      "nam_mat": 1970,
+      "nam_hien_thi": "1937–1970",
+      "dia_diem": "Quê: xã Quảng Phước, huyện Quảng Điền, tỉnh Thừa Thiên Huế (nay là xã Quảng Điền, TP Huế)",
+      "chien_cong": "Phó trưởng Ban An ninh huyện Quảng Điền, hoạt động liên lạc cách mạng từ năm 15 tuổi, hy sinh trong kháng chiến chống Mỹ.",
+      "mo_ta": "Sinh năm 1937, quê xã Quảng Phước, huyện Quảng Điền, tỉnh Thừa Thiên Huế (nay là xã Quảng Điền, TP Huế). Tham gia công tác liên lạc cách mạng từ năm 15 tuổi; năm 1952 được tuyển vào Ty Công an Nghệ An làm công tác trị an tại TP Vinh. Sau đó về hoạt động tại quê nhà, giữ chức Phó trưởng Ban An ninh huyện Quảng Điền, hy sinh năm 1970 trong kháng chiến chống Mỹ. Được Chủ tịch nước truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Chuyện về người cán bộ an ninh được truy tặng danh hiệu Anh hùng — https://cand.com.vn/guong-sang/chuyen-ve-nguoi-can-bo-an-ninh-duoc-truy-tang-danh-hieu-anh-hung-i803992/"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "pham-kieu-da",
+      "ten": "Anh hùng LLVTND Phạm Kiều Đa",
+      "lon": 108.22,
+      "lat": 16.07,
+      "loai": "anh-hung-llvt",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Nơi lập công: Đà Nẵng",
+      "chien_cong": "Phó Quận trưởng Quận 1, Chỉ huy trưởng lực lượng tự vệ biệt động khu Đông, chỉ huy đánh chiếm Tòa thị chính Đà Nẵng ngày 29-3-1975.",
+      "mo_ta": "Năm 16 tuổi tham gia hoạt động biệt động bí mật trong lòng địch tại Đà Nẵng. Trong Chiến dịch giải phóng Huế - Đà Nẵng tháng 3-1975, với vai trò Phó Quận trưởng Quận 1 và Chỉ huy trưởng lực lượng tự vệ biệt động khu Đông, ông trực tiếp chỉ huy lực lượng đột nhập, đánh chiếm các cơ quan đầu não của Mỹ - Sài Gòn, trong đó có Tòa thị chính, góp phần mở đường giải phóng hoàn toàn Đà Nẵng ngày 29-3-1975. Sau chiến tranh, ông tiếp tục chỉ huy lực lượng tháo gỡ hàng vạn quả mìn trả lại đất canh tác cho dân. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Ngày giải phóng Đà Nẵng qua ký ức của các chiến sĩ biệt động thành — https://nhandan.vn/special/biet-dong-thanh-Da-Nang/index.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoang-van-thuong",
+      "ten": "Anh hùng LLVTND Hoàng Văn Thượng",
+      "lon": 106.51,
+      "lat": 22.83,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1948,
+      "nam_hien_thi": "Sinh 24-7-1948",
+      "dia_diem": "Quê: Bản Giằn, xã Lăng Hiếu, huyện Trùng Khánh, tỉnh Cao Bằng",
+      "chien_cong": "Chiến sĩ đặc công, nhập ngũ kháng chiến chống Mỹ năm 1968, lập nhiều chiến công tại địa bàn Cao Bằng và biên giới.",
+      "mo_ta": "Sinh ngày 24-7-1948 tại Bản Giằn, xã Lăng Hiếu, huyện Trùng Khánh, tỉnh Cao Bằng. Nhập ngũ ngày 16-4-1968 tham gia kháng chiến chống Mỹ, cứu nước. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân; các hiện vật kỷ niệm của ông đã được hiến tặng cho Bảo tàng tỉnh Cao Bằng.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Những hiện vật của Anh hùng Lực lượng vũ trang nhân dân Hoàng Văn Thượng hiến tặng cho Bảo tàng tỉnh Cao Bằng — https://tuyengiaocaobang.vn/index.php/tin-trong-tinh/nhung-hien-vat-cua-anh-hung-luc-luong-vu-trang-nhan-dan-hoang-van-thuong-hien-tang-cho-bao-tang-tinh-cao-bang-1684.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "pham-phi-hung",
+      "ten": "Thiếu tướng Phạm Phi Hùng (Phạm Văn Cừ)",
+      "lon": 105.95,
+      "lat": 9.91,
+      "loai": "tuong-linh-hien-dai",
+      "nam_sinh": 1932,
+      "nam_hien_thi": "Sinh 15-10-1932",
+      "dia_diem": "Quê: ấp Trà Ốt, xã Thông Hòa, huyện Cầu Kè, tỉnh Trà Vinh",
+      "chien_cong": "Nguyên Chỉ huy trưởng Bộ Chỉ huy Quân sự tỉnh Vĩnh Long, trưởng thành từ chiến sĩ qua hai cuộc kháng chiến.",
+      "mo_ta": "Tên khai sinh Phạm Văn Cừ, sinh ngày 15-10-1932 tại ấp Trà Ốt, xã Thông Hòa, huyện Cầu Kè, tỉnh Trà Vinh. Trưởng thành từ chiến sĩ qua thực tiễn chiến đấu hai cuộc kháng chiến chống Pháp và chống Mỹ, từng là Ủy viên Thường vụ Tỉnh ủy, Chỉ huy trưởng Bộ Chỉ huy Quân sự tỉnh Vĩnh Long. Được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Anh hùng lực lượng vũ trang nhân dân — https://baochinhphu.vn/anh-hung-luc-luong-vu-trang-nhan-dan.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phan-thanh-quyet",
+      "ten": "Anh hùng LLVTND Phan Thanh Quyết",
+      "lon": 106.33,
+      "lat": 22.67,
+      "loai": "anh-hung-llvt",
+      "nam_hien_thi": "Không rõ năm sinh",
+      "dia_diem": "Quê: xã Hồng Định, huyện Quảng Uyên, tỉnh Cao Bằng",
+      "chien_cong": "Chiến sĩ đặc công Sư đoàn 305, được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân ngày 2-9-1973.",
+      "mo_ta": "Sinh trong một gia đình nông dân nghèo tại xã Hồng Định, huyện Quảng Uyên, tỉnh Cao Bằng. Sau ba lần xin nhập ngũ không thành vì lý do sức khỏe, tháng 8-1970 ông chính thức được tuyển quân, biên chế vào Đơn vị 91, Tiểu đoàn 35, Sư đoàn 305 đặc công. Ngày 2-9-1973, được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân vì thành tích chiến đấu xuất sắc. Sau đó ông theo học trường sĩ quan và tiếp tục phục vụ trong quân đội, từng là Trưởng ban Tác chiến Ban Chỉ huy quân sự huyện Quảng Hòa, Cao Bằng.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Anh hùng Lực lượng vũ trang nhân dân trên quê hương Cao Bằng (kỳ cuối) — https://baocaobang.vn/anh-hung-luc-luong-vu-trang-nhan-dan-tren-que-huong-cao-bang-ky-cuoi-3176839.html",
+        "Niềm tin của người anh hùng — https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/niem-tin-cua-nguoi-anh-hung-1034218"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-tien-thu",
+      "ten": "Anh hùng LLVTND Nguyễn Tiến Thụ",
+      "lon": 105.98,
+      "lat": 21.1,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1934,
+      "nam_hien_thi": "Sinh 1934",
+      "dia_diem": "Quê: thôn Đình Cả, xã Nội Duệ, huyện Tiên Du, tỉnh Bắc Ninh",
+      "chien_cong": "Tham gia Đội Thanh niên xung kích Trung ương trong Chiến dịch Hoàng Hoa Thám, Tây Bắc và Thượng Lào thời kỳ kháng chiến chống Pháp.",
+      "mo_ta": "Sinh năm 1934, quê thôn Đình Cả, xã Nội Duệ, huyện Tiên Du, tỉnh Bắc Ninh. Trong kháng chiến chống Pháp, khi công tác tại Huyện ủy Việt Minh Tiên Du, ông xung phong vào Đội Thanh niên xung kích Trung ương, tham gia các chiến dịch Hoàng Hoa Thám, Tây Bắc và Thượng Lào. Ngày 23-7-2014, Chủ tịch nước ký Quyết định số 1666 phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân cho ông. Sau này ông giữ chức Bí thư Tỉnh đoàn Quảng Ninh nhiệm kỳ II (1972-1977).",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Người Anh hùng từng làm Bí thư Tỉnh Đoàn Quảng Ninh — https://baoquangninh.vn/nguoi-anh-hung-tung-lam-bi-thu-tinh-doan-quang-ninh-2332428.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-ngoc-bao",
+      "ten": "Anh hùng LLVTND Nguyễn Ngọc Bảo",
+      "lon": 105.97,
+      "lat": 20.25,
+      "loai": "anh-hung-llvt",
+      "nam_sinh": 1927,
+      "nam_mat": 1954,
+      "nam_hien_thi": "1927–1954",
+      "dia_diem": "Quê: tỉnh Ninh Bình",
+      "chien_cong": "Trợ lý tiểu đoàn chỉ huy Đại đội trinh sát 62, lấy được bản đồ toàn khu vực Điện Biên Phủ của tướng De Castries; hy sinh khi trinh sát địa hình.",
+      "mo_ta": "Sinh năm 1927, quê Ninh Bình. Nhập ngũ năm 1945, trưởng thành từ chiến sĩ lên trợ lý tiểu đoàn. Trong Chiến dịch Điện Biên Phủ, ông trực tiếp chỉ huy Đại đội trinh sát 62 luồn sâu vào trận địa địch lấy được tấm bản đồ tỷ lệ 1:25.000 toàn khu vực Điện Biên Phủ mà máy bay Pháp thả tiếp tế cho tướng De Castries; dẫn đầu tổ trinh sát xác định chính xác vị trí hầm ngầm để công binh và bộ binh xây dựng phương án tiêu diệt địch. Ông hy sinh khi bị địch bắn trả trong một lần làm nhiệm vụ. Ngày 30-8-1995 được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Chiến sĩ trinh sát - Anh hùng Lực lượng vũ trang Nguyễn Ngọc Bảo — https://www.qdnd.vn/quoc-phong-an-ninh/chien-thang-dien-bien-phu-moc-son-lich-su/anh-hung/chien-si-trinh-sat-anh-hung-luc-luong-vu-trang-nhan-dan-nguyen-ngoc-bao-775214",
+        "Nguyễn Ngọc Bảo: Người anh hùng trong chiến dịch Điện Biên Phủ — https://baoninhbinh.org.vn/nguyen-ngoc-bao-nguoi-anh-hung-trong-chien-dich-dien-bien-phu/d2023050509022653.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khuat-duy-tien",
+      "ten": "Trung tướng Khuất Duy Tiến",
+      "lon": 105.55,
+      "lat": 21.05,
+      "loai": "tuong-linh-hien-dai",
+      "nam_sinh": 1931,
+      "nam_mat": 2024,
+      "nam_hien_thi": "1931–2024",
+      "dia_diem": "Quê: xã Đại Đồng, huyện Thạch Thất, Sơn Tây (nay thuộc TP Hà Nội)",
+      "chien_cong": "Hơn 50 năm quân ngũ qua kháng chiến chống Pháp, chống Mỹ và các cuộc chiến bảo vệ biên giới; nguyên Tư lệnh Quân đoàn 3.",
+      "mo_ta": "Sinh ngày 27-2-1931 trong một gia đình nông dân tại xã Đại Đồng, huyện Thạch Thất, tỉnh Sơn Tây (nay thuộc TP Hà Nội). Tham gia quân ngũ hơn 50 năm, trải qua kháng chiến chống Pháp, kháng chiến chống Mỹ và các cuộc chiến đấu bảo vệ biên giới của Tổ quốc. Nguyên Tư lệnh Quân đoàn 3, nguyên Hiệu trưởng Trường Sĩ quan Lục quân 1. Ngày 30-10-2013 được phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân vì thành tích chỉ huy chiến đấu xuất sắc. Mất ngày 23-11-2024, thọ 94 tuổi.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Anh hùng lực lượng vũ trang Nhân dân, Trung tướng Khuất Duy Tiến — https://www.vietnamplus.vn/anh-hung-luc-luong-vu-trang-nhan-dan-trung-tuong-khuat-duy-tien-post995324.vnp"
+      ],
+      "trang_thai": "draft"
     }
   ]
 }

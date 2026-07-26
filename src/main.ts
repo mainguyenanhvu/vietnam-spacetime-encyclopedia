@@ -1554,6 +1554,31 @@ const OVERLAYS: OverlayConf[] = [
     popup: eventOverlayPopup,
   },
   {
+    id: "nghia-trang-liet-si",
+    label: "🕯️ Nghĩa trang liệt sĩ · Đài tưởng niệm · Đền thờ liệt sĩ",
+    icon: "🕯️",
+    file: "data/overlays/nghia-trang-liet-si.json",
+    // Nghĩa trang tách khỏi tượng đài/chứng tích để đọc được mật độ ngay trên
+    // bản đồ: đỏ sẫm = nơi an nghỉ, cam = tượng đài chiến thắng, xám = nơi
+    // tưởng niệm nạn nhân thảm sát.
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "nghia-trang-quoc-gia",
+      "#7f1d1d",
+      "nghia-trang-tinh",
+      "#b91c1c",
+      "tuong-dai-chien-thang",
+      "#ea580c",
+      "khu-tuong-niem-nan-nhan",
+      "#57534e",
+      "#a16207",
+    ],
+    nguon:
+      "Cục Người có công (Bộ Nội vụ) · Báo Quân đội nhân dân · Báo Nhân Dân · Báo điện tử Đảng Cộng sản · cổng TTĐT tỉnh/huyện",
+    popup: eventOverlayPopup,
+  },
+  {
     id: "nghe-nhan-di-san",
     label: "🎭 Nghệ nhân · tổ nghệ thuật · di sản sống",
     icon: "🎭",
@@ -1990,7 +2015,7 @@ const OVERLAY_GROUPS: { nhan: string; icon: string; ids: string[] }[] = [
   { nhan: "Nữ danh nhân · Dân tộc thiểu số", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so"] },
   { nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
   { nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
-  { nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung"] },
+  { nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung", "nghia-trang-liet-si"] },
   { nhan: "Huyền sử & Truyền thuyết", icon: "🐉", ids: ["huyen-su-khai-quoc", "truyen-thuyet-dan-gian"] },
 ];
 
@@ -2455,6 +2480,7 @@ let literatureCache: {
   hcm: HcmPoem | null;
   caDao: CaDao[];
   baiHat: BaiHat[];
+  tuLieu: Poem[];
 } | null = null;
 
 async function fetchJson<T>(path: string): Promise<T | null> {
@@ -2468,7 +2494,7 @@ async function fetchJson<T>(path: string): Promise<T | null> {
 
 async function loadLiterature() {
   if (literatureCache) return literatureCache;
-  const [poems, hcmWorks, aboutHcm, anecdotes, hcm, caDao, baiHat] = await Promise.all([
+  const [poems, hcmWorks, aboutHcm, anecdotes, hcm, caDao, baiHat, tuLieu] = await Promise.all([
     fetchJson<{ items: Poem[] }>("data/literature/tho-yeu-nuoc.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tac-pham-ho-chi-minh.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tho-ve-bac.json"),
@@ -2476,6 +2502,7 @@ async function loadLiterature() {
     fetchJson<HcmPoem>("data/literature/lich-su-nuoc-ta.json"),
     fetchJson<{ items: CaDao[] }>("data/literature/ca-dao-tuc-ngu.json"),
     fetchJson<{ items: BaiHat[] }>("data/literature/bai-hat-que-huong.json"),
+    fetchJson<{ items: Poem[] }>("data/literature/nhat-ky-thu-chien-tranh.json"),
   ]);
   literatureCache = {
     poems: poems?.items ?? [],
@@ -2487,6 +2514,7 @@ async function loadLiterature() {
     hcm,
     caDao: caDao?.items ?? [],
     baiHat: baiHat?.items ?? [],
+    tuLieu: tuLieu?.items ?? [],
   };
   return literatureCache;
 }
@@ -2502,6 +2530,26 @@ function poemHtml(p: Poem): string {
     ${p.ghi_chu_dich ? `<p class="muted">${esc(p.ghi_chu_dich)}</p>` : ""}
     ${p.ban_quyen === "cited-excerpt" ? `<p class="draft-badge">©️ Tác phẩm còn bảo hộ bản quyền — chỉ trích dẫn ngắn theo Điều 25 Luật SHTT.</p>` : ""}
     <details class="sources"><summary>📚 Nguồn</summary>${list(p.sources)}</details>
+  </details>`;
+}
+
+// Nhật ký · thư · hồi ký dùng chung schema Poem nhưng KHÁC ở chỗ nguyen_van có
+// thể rỗng: nhiều hồi ký chỉ tra được nội dung, không tra được nguyên văn trên
+// nguồn nhà nước. Trường hợp đó nói thẳng ra thay vì hiện khối trích rỗng —
+// người đọc cần biết đây là giới thiệu tác phẩm, không phải lời của tác giả.
+function tuLieuHtml(t: Poem): string {
+  const icon = /thư/i.test(t.the_loai) ? "✉️" : /hồi ký/i.test(t.the_loai) ? "📗" : /lời kể|chuyện/i.test(t.the_loai) ? "🗣️" : "📓";
+  return `<details class="profile-section"><summary>${icon} ${esc(t.ten)}</summary>
+    <p class="muted">${esc(t.tac_gia)}</p>
+    <p class="muted">${esc(t.thoi_ky)} · ${esc(t.the_loai)}</p>
+    ${t.loi_binh ? `<p class="giai-nghia">💬 ${esc(t.loi_binh)}</p>` : ""}
+    ${
+      t.nguyen_van.length
+        ? `<blockquote class="poem">${t.nguyen_van.map(esc).join("<br/>")}</blockquote>`
+        : `<p class="muted">📄 Chưa tra được nguyên văn trên nguồn chính thống — mục này giới thiệu tác phẩm, không trích lời tác giả.</p>`
+    }
+    ${t.ban_quyen === "cited-excerpt" ? `<p class="draft-badge">©️ Tác phẩm còn bảo hộ bản quyền — chỉ trích dẫn ngắn theo Điều 25 Luật SHTT.</p>` : ""}
+    <details class="sources"><summary>📚 Nguồn</summary>${list(t.sources)}</details>
   </details>`;
 }
 
@@ -2770,6 +2818,8 @@ async function openLibrary(): Promise<void> {
     ${lib.aboutHcm.map(poemHtml).join("")}
     <h3>🇻🇳 Thơ yêu nước qua các thời đại</h3>
     ${lib.poems.map(poemHtml).join("")}
+    <h3>✉️ Nhật ký · Thư · Hồi ký chiến trường <span class="muted">(trang viết của người trong cuộc)</span></h3>
+    ${lib.tuLieu.length ? lib.tuLieu.map(tuLieuHtml).join("") : `<p class="muted">Đang biên soạn…</p>`}
     <h3>🎓 Giai thoại Trạng nguyên – khoa bảng</h3>
     ${lib.anecdotes.map(anecdoteHtml).join("")}
     <h3>🎵 Ca dao & tục ngữ về quê hương, con người</h3>

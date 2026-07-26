@@ -54,6 +54,32 @@ for (const file of POEM_FILES) {
   console.log(`✅ ${file}: ${items.length} bài`);
 }
 
+// --- Nhật ký · thư · hồi ký chiến trường
+// Cùng schema poem nhưng KHÁC ở một điểm: nguyen_van được phép rỗng. Một hồi ký
+// dày vài trăm trang có thể chỉ vào được bằng lời bình khi không tra ra nguyên
+// văn đáng tin — thà thiếu trích còn hơn bịa chữ của người đã khuất. Đổi lại,
+// mục rỗng nguyen_van BẮT BUỘC có loi_binh, không được là mục trống.
+const tuLieuPath = join(DIR, "nhat-ky-thu-chien-tranh.json");
+if (existsSync(tuLieuPath)) {
+  const { items } = JSON.parse(readFileSync(tuLieuPath, "utf8"));
+  for (const t of items) {
+    const w = `nhat-ky-thu/${t.id}`;
+    if (!t.ten || !t.tac_gia) fail(w, "thiếu ten/tac_gia");
+    if (!["public-domain", "cited-excerpt"].includes(t.ban_quyen))
+      fail(w, "ban_quyen phải là public-domain|cited-excerpt");
+    if (!Array.isArray(t.nguyen_van)) fail(w, "nguyen_van phải là mảng");
+    else {
+      if (t.ban_quyen === "cited-excerpt" && t.nguyen_van.length > 8)
+        fail(w, `trích ${t.nguyen_van.length} dòng — tác phẩm còn bản quyền chỉ được trích ngắn (≤8 dòng)`);
+      if (t.nguyen_van.length === 0 && !t.loi_binh)
+        fail(w, "không có nguyên văn LẪN lời bình — mục trống");
+    }
+    if (!Array.isArray(t.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
+    checkSources(w, t.sources);
+  }
+  console.log(`✅ nhat-ky-thu-chien-tranh.json: ${items.length} tư liệu`);
+}
+
 // --- Giai thoại khoa bảng
 const anecPath = join(DIR, "giai-thoai-khoa-bang.json");
 if (existsSync(anecPath)) {
