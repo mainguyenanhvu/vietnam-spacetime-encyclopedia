@@ -222,3 +222,37 @@ nghĩa trang LSQG Trường Sơn + Đường 9, sân bay Tà Cơn, căn cứ Là
 **Chờ Iron Man ở cổng §9**: 12 mục chợ chưa xếp hạng (mở lớp mới?) · 2 mục cấp tỉnh/thành nằm trong lớp `di-tich-quoc-gia` (Lê Hồng Phong QĐ 3089/QĐ-UBND cấp TP, Nguyễn Đình Chiểu cấp tỉnh Tiền Giang) · nhóm nhạy cảm A3 (Chín Hầm/Phú Lợi/Tân Hiệp nêu đích danh VNCH + Ngô Đình Cẩn; Trại Davis dùng thuật ngữ «Chính phủ Cách mạng lâm thời») · câu hỏi nguồn báo chính thống ngoài báo Đảng cho lớp `cong-trinh-ky-luc` (sóng 7, vẫn treo).
 
 **3 gate xanh** sau khi nạp: validator ✅ (đã gồm 2 lớp mới vào STRICT_SOURCE) · audit chủ quyền ✅ · build ✅ 4.24s.
+
+---
+
+## Sóng 11 + chiến dịch tổng lực — 2026-07-26
+
+Khác mọi sóng trước: chạy **11 agent song song** trên hai tuyến (kỹ thuật + dữ liệu), main phân vùng file cứng để tránh xung đột ghi. Kế hoạch: [`chien-dich-tong-luc-2026-07-26-plan.md`](chien-dich-tong-luc-2026-07-26-plan.md).
+
+**Dữ liệu**: DB 1921 → **2005 mục**, 33 → 32 → **33 lớp**. Thư viện văn học +67 mục. Ảnh 156 → **541** (351 nhân vật + 190 địa điểm).
+
+### Vỉa mở được
+- **`truyen-thuyet-dan-gian`** — lớp mới, 28 mục (sự tích địa danh 11, truyền thuyết 5, ca dao 3, tục ngữ 2, cổ tích 1, thần thoại 1).
+- **Địa danh 34 tỉnh** +56 mục, định tuyến theo `loai` chứ không đổ chung một lớp.
+- **Thư viện** +67: Nhật ký trong tù 31 bài · thơ yêu nước 31 (đóng vỉa) · giai thoại khoa bảng 21 · thơ về Bác 5.
+- **Ảnh địa điểm** — vỉa giàu nhất, phát hiện muộn: 76 mục trong MỘT vòng, so với 1 mục ở hai vòng cuối của vỉa nhân vật.
+
+### Vỉa đã đóng — có bằng chứng, xem `docs/PROGRESS.md`
+Ảnh từ cổng nhà nước + báo chí VN («All Rights Reserved» toàn trang) · 82 bia tiến sĩ trên Commons · bảo tàng LSQG/Mỹ thuật trên Commons · tra ảnh theo `dia_diem` (sai 75%) · `di-tich-quoc-gia` làm nguồn folklore · thơ yêu nước vỉa C · `chien-dich-tran-danh` và `le-hoi-truyen-thong` cho ảnh (3%).
+
+### Bài học của sóng — khác hẳn các sóng trước
+1. **Bốn lần một PHÉP ĐO nói sai**, ba trong số đó là cổng kiểm tra của main. Chi tiết ở `docs/PROGRESS.md` mục «Bài học về cổng kiểm tra». Kết luận: cổng nào cũng phải tự chứng minh bằng một ca **dương tính biết trước**; một cổng xanh chưa kiểm chứng không đáng tin hơn việc không có cổng.
+2. **Phân biệt «vỉa cạn» với «công cụ hỏng»**. Bốn category Commons trả 0 file trông như vỉa rỗng, thực ra là sai quy ước tên (`Category:Dong Thap` — không dấu, không chữ «Province»). Sửa truy vấn rồi mới đóng vỉa mới là đóng đúng.
+3. **Bản quyền DỊCH GIẢ tách khỏi bản quyền tác giả.** Tác phẩm public-domain vẫn có thể mang bản dịch còn bảo hộ. Với thơ chữ Hán, lối thoát là dùng **dịch nghĩa văn xuôi** thay dịch thơ.
+4. **Xác minh LẬP TRƯỜNG tác giả trước khi xếp lớp «yêu nước».** Chùm hoạ đáp Tôn Thọ Tường – Phan Văn Trị – Bùi Hữu Nghĩa cùng thể, cùng vần, cùng thời nhưng hai phe đối lập; suýt gán bài biện minh cho việc theo Pháp vào lớp thơ yêu nước.
+5. **Dò trùng phải so CỤM DANH TỪ RIÊNG**, không so tên mục. «Sự tích núi Tô Thị» = «Nàng Tô Thị».
+6. **Xoá/đổi tên file dữ liệu phải quét tham chiếu TOÀN REPO**, không chỉ `src/` — `scripts/commons_photos.mjs` từng giữ tham chiếu mồ côi.
+
+### Kỹ thuật (không phải dữ liệu)
+Lớp sông núi hiển thị lần đầu (fontstack 404 giết cả source) · glyph tự host, gỡ phụ thuộc máy chủ demo cho **nhãn chủ quyền** · 7 sink XSS + CSP đã kiểm chứng · 12 lỗi logic (rò WebGL, silhouette Khánh Hoà giãn 5,37×, SM-2 vô hiệu, Olympia kẹt vòng 2) · ô tìm kiếm toàn cục không dấu · Nam tiến nạp lười, bỏ 1,16 MB khỏi lượt tải đầu · `scripts/smoke.mjs` 10 kịch bản qua CDP, 9/10 xanh.
+
+### Ranh giới lịch sử — phán quyết
+Xem [`docs/ranh-gioi-1887-1895-phan-quyet.md`](docs/ranh-gioi-1887-1895-phan-quyet.md). Tóm tắt: **không số hoá được** đường biên 1887/1895 ở độ chính xác bản đồ, theo chính đánh giá của Uỷ ban Biên giới quốc gia («toàn bộ mốc giới không được xác định bằng lưới toạ độ»). Săn bản đồ gốc Gallica là theo đuổi một độ chính xác không tồn tại.
+
+### Chờ Iron Man
+Sách Đào Duy Anh · site deploy ở đâu (quyết định CSP có tác dụng không) · nâng Vite 6 · email cá nhân trong 2 script · mở lớp «chợ truyền thống» (17 mục treo từ sóng 10+11) · **442 draft** chờ cổng §9.
