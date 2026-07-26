@@ -2883,23 +2883,11 @@ async function openLibrary(): Promise<void> {
     ${lib.baiHat.length ? lib.baiHat.map(baiHatHtml).join("") : `<p class="muted">Đang biên soạn…</p>`}
     ${nienHieuSectionHtml()}
     <h3>🗺️ Bản đồ cổ <span class="muted">(tư liệu chủ quyền)</span></h3>
-    ${banDoCoSectionHtml(lib.banDoCo)}
-    <details class="profile-section">
-      <summary>「An Nam Đại Quốc Họa Đồ」 — Giám mục Jean-Louis Taberd, 1838</summary>
-      <p class="giai-nghia">Bản đồ Việt Nam khắc in năm 1838, ghi chú song ngữ Hán – Quốc ngữ – Latinh.
-      Trên Biển Đông, bản đồ ghi rõ <b>«Paracel seu Cát Vàng»</b> (Paracel tức Cát Vàng — Hoàng Sa),
-      một tư liệu phương Tây quan trọng khẳng định chủ quyền lâu đời của Việt Nam đối với quần đảo Hoàng Sa.</p>
-      <img class="old-map" loading="lazy" alt="An Nam Đại Quốc Họa Đồ (Taberd, 1838)"
-        src="https://upload.wikimedia.org/wikipedia/commons/d/dd/An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg" />
-      <p class="muted">Tác phẩm thuộc phạm vi công cộng ·
-        <a href="https://commons.wikimedia.org/wiki/File:An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg"
-           target="_blank" rel="noopener noreferrer">Xem bản độ phân giải đầy đủ trên Wikimedia Commons</a></p>
-      <details class="sources"><summary>📚 Nguồn</summary><ul>
-        <li>Jean-Louis Taberd, Dictionarium Latino-Anamiticum (phụ bản bản đồ), 1838</li>
-        <li>Wikimedia Commons — tệp scan gốc 3500×6111</li>
-        <li>Trần Đức Anh Sơn (chủ biên), Tư liệu về chủ quyền của Việt Nam đối với quần đảo Hoàng Sa — NXB Văn hóa – Văn nghệ</li>
-      </ul></details>
-    </details>`;
+    ${
+      lib.banDoCo.length
+        ? banDoCoSectionHtml(lib.banDoCo)
+        : `<p class="muted">Đang biên soạn…</p>`
+    }`;
   wireNienHieuLookup();
 }
 

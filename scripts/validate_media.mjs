@@ -68,6 +68,37 @@ for (const it of items) {
     fail(w, "thiếu nguon[] (trừ ảnh ai-generated)");
 }
 
+// --- Bản đồ cổ chứng minh chủ quyền (public/data/media/ban-do-co.json)
+// Đây là nội dung chủ quyền, sẽ bị soi kỹ nhất trong dự án — cổng chặt hơn:
+// mỗi mục phải có nguồn NGOÀI wiki, và ảnh (nếu có) phải nằm trên
+// upload.wikimedia.org vì CSP của trang chặn mọi host ảnh khác. Mục không có
+// ảnh vẫn hợp lệ nhưng phải nói rõ bản gốc đang ở đâu, để không ai tưởng là
+// quên mà đi tìm lại từ đầu.
+const BAN_DO = join(ROOT, "public", "data", "media", "ban-do-co.json");
+if (existsSync(BAN_DO)) {
+  const NHOM = new Set(["viet-nam", "phuong-tay", "trung-quoc"]);
+  const isWiki = (s) => /wikipedia\.org|wikimedia\.org/i.test(String(s));
+  const bd = JSON.parse(readFileSync(BAN_DO, "utf8")).items ?? [];
+  const idSeen = new Set();
+  for (const b of bd) {
+    const w = `ban-do-co/${b.id ?? "?"}`;
+    if (!b.id) fail(w, "thiếu id");
+    else if (idSeen.has(b.id)) fail(w, "id trùng");
+    else idSeen.add(b.id);
+    if (!b.ten || !b.tac_gia) fail(w, "thiếu ten/tac_gia");
+    if (!b.mo_ta) fail(w, "thiếu mo_ta");
+    if (!NHOM.has(b.nhom)) fail(w, `nhom "${b.nhom}" không thuộc {${[...NHOM].join("|")}}`);
+    if (b.anh && !/^https:\/\/upload\.wikimedia\.org\//.test(b.anh))
+      fail(w, "ảnh phải nằm trên upload.wikimedia.org (CSP chặn host khác)");
+    if (!b.anh && !b.anh_ghi_chu)
+      fail(w, "không có ảnh thì phải ghi anh_ghi_chu nói rõ bản gốc ở đâu");
+    if (!Array.isArray(b.nguon) || !b.nguon.length) fail(w, "thiếu nguon[]");
+    else if (!b.nguon.some((s) => !isWiki(s)))
+      fail(w, "cần ít nhất 1 nguồn NGOÀI Wikipedia");
+  }
+  console.log(`✅ ban-do-co.json: ${bd.length} bản đồ (${bd.filter((b) => b.anh).length} có ảnh)`);
+}
+
 if (errors) {
   console.error(`\n❌ ${errors} lỗi manifest ảnh.`);
   process.exit(1);
