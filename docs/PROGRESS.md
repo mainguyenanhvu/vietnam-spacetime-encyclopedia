@@ -38,6 +38,20 @@ Cập nhật 2026-07-26 sau chiến dịch tổng lực (11 agent song song).
 - ⛔ Cấm dùng con số «750 km² / 3/4 châu Tụ Long» — chỉ có ở mirror Wikipedia và blog.
 - Hai PDF đã tải về scratchpad nhưng **đều là bản quét, không có lớp chữ**: `DeClercq_Tome17_1886-1887.pdf` (659 trang, CCITTFax) và `BienGioi_VN-TQ_UBBGQG.pdf` (48 trang, JPEG — ảnh JPEG thì rút ra đọc bằng mắt được, chưa làm).
 
+## Vỉa đã đóng — có bằng chứng, ĐỪNG cử agent vào lại
+- **Ảnh từ cổng thông tin nhà nước và báo chí Việt Nam**: không khai thác được dưới chuẩn giấy phép hiện tại. Đây là rào cản HỆ THỐNG, không phải tìm chưa kỹ — khác Commons (mỗi file một giấy phép), web chính quyền và báo chí VN gần như đồng loạt tuyên bố «All Rights Reserved» toàn trang. Đã kiểm: cổng tỉnh Lạng Sơn (đền Chu Văn An) ghi rõ bản quyền toàn trang · VietnamPlus/TTXVN «cấm sao chép dưới mọi hình thức nếu không có chấp thuận bằng văn bản» · báo Lâm Đồng link 404. Muốn dùng nguồn này phải chuyển sang **xin phép trực tiếp từng Sở / toà soạn** — việc khác hẳn, không phải việc của agent tìm ảnh.
+- **82 bia tiến sĩ Văn Miếu trên Commons**: category «Steles in Vietnam» chủ yếu là bia Chăm Mỹ Sơn và bia chùa lẻ, KHÔNG phải bia theo khoa thi. Cần catalogue đã xuất bản.
+- **Bảo tàng Lịch sử quốc gia / Mỹ thuật Việt Nam trên Commons**: 0 khớp, chưa số hoá hiện vật gắn tên nhân vật.
+- **Tra ảnh theo trường `dia_diem`**: sai ~75%. Địa điểm ngắn/chung chung khớp rời rạc từng từ — «Phủ Trịnh» ăn nhầm sang phường «Phú Trinh» Phan Thiết. Chỉ dùng khi tên đủ dài và riêng.
+- **`di-tich-quoc-gia.json` làm nguồn folklore**: thử 17 đền/hang, 17/17 đã có sẵn trong DB.
+- ⚠️ Ghi nhận rời: cổng Sở VHTTDL Phú Thọ trả **lỗi chứng chỉ SSL, domain trỏ sang site lạ**. Không cố vượt qua. Có thể là cấu hình sai hoặc dấu hiệu rủi ro — chỉ ghi lại.
+
+## Bài học về CỔNG KIỂM TRA — ba lần nói sai trong một đợt
+Một cổng xanh mà chưa tự kiểm chứng thì không đáng tin hơn việc không có cổng. Mỗi cổng phải chứng minh bằng một ca **dương tính biết trước**.
+1. **S7 xanh giả** — đo byte GeoJSON lúc khởi động, báo 0,07 MB. Thực tế MapLibre nạp GeoJSON trong **web worker**, miền `Network` của CDP gắn vào page target không thấy. Đã đổi tên kịch bản thành đúng điều nó chứng minh được và ghi giới hạn trong mã.
+2. **S1 mù** — lọc chuỗi `/font/` để bắt 404 glyph, nhưng sau khi tự host đường dẫn thành `/fonts/`. Cổng mất tác dụng đúng lúc cần nhất. Đã đổi thành `/fonts?/`.
+3. **S2 đỏ giả** — phân biệt nhả-tự-nguyện bằng cờ `__tuNguyen` mà không gì trong ứng dụng gán cờ đó; three.js gọi `loseContext()` ngầm qua extension. Mọi lần nhả ĐÚNG CÁCH bị đếm thành rò. Đã bọc `getExtension`. Sau khi sửa: 20 tạo / 20 tự nguyện nhả / **0 bị thu hồi** — bản vá vốn đã đúng từ đầu.
+
 ## Quyết định đã chốt
 - **Không Wikipedia** làm nguồn thông tin, kể cả nguồn phụ. Commons chỉ làm kho **ảnh**.
 - **Không sinh ảnh chân dung người có thật.** Sinh ảnh chỉ cho bối cảnh, huyền sử, icon, phục dựng — luôn gắn nhãn «hình dung nghệ thuật».
