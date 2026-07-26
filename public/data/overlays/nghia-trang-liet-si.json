@@ -16,7 +16,12 @@
     "Báo địa phương (Báo Cà Mau, Báo Sóc Trăng, Báo Bạc Liêu, Báo Phú Yên, Báo Đồng Tháp, Báo Sơn La...)",
     "Cổng thông tin điện tử các tỉnh/thành, xã/phường (.gov.vn)",
     "Báo địa phương (Báo Lào Cai, Báo Lai Châu, Báo Sơn La, Báo Văn hoá, Báo Tin Tức TTXVN)",
-    "Đại biểu Nhân dân — https://daibieunhandan.vn"
+    "Đại biểu Nhân dân — https://daibieunhandan.vn",
+    "Cổng thông tin điện tử các tỉnh/thành, huyện/xã (.gov.vn)",
+    "Đài Phát thanh - Truyền hình các tỉnh (Hải Dương, Bắc Ninh)",
+    "Đài Tiếng nói Nhân dân TP.HCM (VOH)",
+    "Báo Cần Thơ, Báo Hà Tĩnh, Báo Nhân Dân, Tuổi Trẻ",
+    "Bộ Khoa học và Công nghệ — https://mst.gov.vn"
   ],
   "items": [
     {
@@ -1378,6 +1383,130 @@
       "do_tin_cay_toa_do": "thap",
       "nguon": [
         "Báo Chính phủ — https://baochinhphu.vn/khanh-thanh-nha-tuong-niem-liet-si-hy-sinh-khi-cuu-ho-tai-rao-trang-102230725164446478.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tu-minh-hai-duong",
+      "ten": "Nghĩa trang liệt sĩ phường Tứ Minh",
+      "lon": 106.3,
+      "lat": 20.9333,
+      "loai": "nghia-trang-tinh",
+      "nam": 1978,
+      "dia_diem": "Phường Tứ Minh, thành phố Hải Dương, tỉnh Hải Dương",
+      "quy_mo": "142 liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ phường Tứ Minh được xây dựng từ năm 1978, là nơi an táng 142 liệt sĩ. Công trình đã được tôn tạo, nâng cấp để phục vụ công tác chăm sóc mộ phần và giáo dục truyền thống cách mạng cho địa phương.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đài Phát thanh và Truyền hình Hải Dương — https://www.haiduongtv.com.vn/hoan-thanh-cong-trinh-ton-tao-nghia-trang-liet-sy-phuong-tu-minh-1158083.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-vu-ninh-bac-ninh",
+      "ten": "Nghĩa trang liệt sĩ phường Vũ Ninh",
+      "lon": 106.0667,
+      "lat": 21.1833,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Vũ Ninh, thành phố Bắc Ninh, tỉnh Bắc Ninh",
+      "quy_mo": "254 phần mộ liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ tại phường Vũ Ninh có 254 phần mộ liệt sĩ. Đây là nơi Tỉnh đoàn, Bộ Chỉ huy Quân sự tỉnh Bắc Ninh và các địa phương phối hợp tổ chức lễ thắp nến tri ân vào tối 26/7 hằng năm nhân Ngày Thương binh - Liệt sĩ.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo và Đài PT-TH Bắc Ninh — https://baobacninhtv.vn/cac-don-vi-dia-phuong-to-chuc-le-thap-nen-tri-an-anh-hung-liet-si-postid422779.bbg"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-con-co-quang-tri",
+      "ten": "Đài tưởng niệm các Anh hùng liệt sĩ huyện đảo Cồn Cỏ",
+      "lon": 107.3333,
+      "lat": 17.1667,
+      "loai": "dai-tuong-niem",
+      "nam_hien_thi": "Sự kiện bảo vệ đảo 1964–1968",
+      "dia_diem": "Đồi 37, đảo Cồn Cỏ, tỉnh Quảng Trị",
+      "quy_mo": "Tưởng niệm hơn 100 liệt sĩ",
+      "mo_ta": "Trong 1.440 ngày đêm giai đoạn 1964-1968, đảo Cồn Cỏ hứng chịu hơn 13.000 quả bom cùng hàng vạn rốc-két, đạn pháo của Mỹ, nhưng quân dân trên đảo đã bắn rơi 48 máy bay và bắn cháy 17 tàu chiến. Đài tưởng niệm trên Đồi 37 tưởng nhớ hơn 100 liệt sĩ đã hy sinh trong quá trình bảo vệ đảo, với hai bức phù điêu tái hiện cuộc chiến đấu.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Cổng TTĐT huyện đảo Cồn Cỏ — https://conco.quangtri.gov.vn/chi-tiet-tin/-/view-article/1/1647828279242/1658731863053"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khu-tuong-niem-hang-keo-con-dao",
+      "ten": "Nghĩa trang Hàng Keo",
+      "lon": 106.625,
+      "lat": 8.695,
+      "loai": "khu-tuong-niem-nan-nhan",
+      "nam": 1979,
+      "dia_diem": "Đường Nguyễn Chí Thanh, Côn Đảo, Thành phố Hồ Chí Minh (cách trung tâm thị trấn Côn Sơn khoảng 2 km về hướng Đông Bắc)",
+      "quy_mo": "Diện tích 97.698 m²; khoảng 10.000 tù nhân bị chôn",
+      "mo_ta": "Nghĩa trang Hàng Keo là một trong hai nghĩa trang đầu tiên được thực dân Pháp xây dựng từ đầu thế kỷ XX, gắn với giai đoạn hình thành và vận hành khắc nghiệt của hệ thống nhà tù Côn Đảo — khác với Nghĩa trang Hàng Dương (thời kỳ sau, gắn với chống Mỹ). Trên diện tích 97.698 m², đây là nơi vùi chôn khoảng 10.000 tù nhân bị thực dân Pháp giết hại từ đầu thế kỷ XX đến giai đoạn khủng bố trắng 1940-1941. Tên gọi 'Hàng Keo' xuất phát từ hàng cây keo được trồng quanh khu vực. Nghĩa trang được Bộ Văn hóa - Thông tin đặc cách công nhận là khu di tích đặc biệt quan trọng cấp quốc gia theo Quyết định số 54-VHQĐ ngày 29/4/1979.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Đài Tiếng nói Nhân dân TP.HCM (VOH) — https://voh.com.vn/chinh-tri/nghia-trang-hang-keo-noi-lang-le-cat-giu-10000-hai-cot-vo-danh-661158.html",
+        "Cổng TTĐT du lịch Côn Đảo — https://condao.com.vn/vi/store/dia-diem-du-lich/Di-tich-Nghia-trang-Hang-Keo.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tam-nong-dong-thap",
+      "ten": "Nghĩa trang liệt sĩ Tam Nông (nghĩa trang liệt sĩ biên giới Tây Nam)",
+      "lon": 105.55,
+      "lat": 10.75,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Ấp Thống Nhất, xã Phú Thọ, huyện Tam Nông, tỉnh Đồng Tháp",
+      "mo_ta": "Nghĩa trang liệt sĩ Tam Nông, còn gọi là nghĩa trang liệt sĩ biên giới Tây Nam, là nơi an táng các liệt sĩ đã hy sinh trong cuộc chiến tranh bảo vệ biên giới Tây Nam và làm nhiệm vụ quốc tế tại Campuchia. Đây là một địa chỉ đỏ mà tỉnh Đồng Tháp tổ chức lễ thắp nến, dâng hương tri ân nhân các ngày lễ lớn.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Tuổi Trẻ — https://tuoitre.vn/tro-ve-dat-me-ky-1-nghia-trang-liet-si-noi-bien-gioi-tay-nam-20190724214150143.htm",
+        "Báo Nhân Dân — https://nhandan.vn/dong-thap-thap-nen-dang-huong-tri-an-tai-nghia-trang-liet-si-bien-gioi-post851578.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-buu-dien-r-tay-ninh",
+      "ten": "Nghĩa trang liệt sĩ ngành Bưu điện - Giao bưu Thông tin \"R\"",
+      "lon": 106.1,
+      "lat": 11.8,
+      "loai": "nghia-trang-tinh",
+      "nam": 1985,
+      "dia_diem": "Xã Tân Biên, tỉnh Tây Ninh (trước là xã Thạnh Tây, huyện Tân Biên) — khác Nghĩa trang liệt sĩ Đồi 82 cùng khu vực",
+      "quy_mo": "250 liệt sĩ ngành Bưu điện - Giao bưu Thông tin",
+      "mo_ta": "Nghĩa trang được ngành Bưu điện xây dựng từ năm 1985, là nơi an táng 250 liệt sĩ ngành Giao bưu - Thông tin 'R' (mật danh của Trung ương Cục miền Nam) đã hy sinh trong kháng chiến chống Mỹ. Đây trở thành địa chỉ đỏ mà nhiều thế hệ cán bộ, công nhân viên ngành bưu điện - viễn thông cùng người dân cả nước đến tưởng niệm, tri ân.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Bộ Khoa học và Công nghệ — https://mst.gov.vn/bo-khcn-dang-huong-tuong-niem-anh-hung-liet-si-nganh-buu-dien-va-khanh-thanh-khu-nha-truyen-thong-giao-buu-thong-tin-tai-tay-ninh-197250823133230485.htm",
+        "Hà Nội Mới — https://hanoimoi.vn/bo-khoa-hoc-va-cong-nghe-dang-huong-tuong-niem-liet-si-nganh-buu-dien-tai-tay-ninh-713727.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-bach-long-vi-hai-phong",
+      "ten": "Nghĩa trang liệt sĩ huyện đảo Bạch Long Vĩ",
+      "lon": 107.7167,
+      "lat": 20.1333,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện đảo Bạch Long Vĩ, thành phố Hải Phòng",
+      "mo_ta": "Nghĩa trang liệt sĩ huyện đảo Bạch Long Vĩ là nơi các đoàn công tác, đại biểu đến dâng hương, đặt vòng hoa tưởng nhớ công ơn của các liệt sĩ đã anh dũng chiến đấu, hy sinh vì sự nghiệp giải phóng dân tộc và bảo vệ Tổ quốc. Bạch Long Vĩ là một trong hai huyện đảo tiền tiêu có vị trí chiến lược về quốc phòng, an ninh trên vịnh Bắc Bộ.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Hà Tĩnh — https://baohatinh.vn/dang-huong-tri-an-cac-anh-hung-liet-si-tai-dac-khu-bach-long-vi-post310361.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-hau-giang",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Hậu Giang",
+      "lon": 105.4667,
+      "lat": 9.7833,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Tỉnh Hậu Giang (khu vực thành phố Vị Thanh)",
+      "mo_ta": "Nghĩa trang liệt sĩ Hậu Giang là nơi các đoàn công tác Trung ương và lãnh đạo địa phương đến viếng, dâng hương tưởng niệm các Anh hùng liệt sĩ nhân Ngày Thương binh - Liệt sĩ 27/7 hằng năm.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Cần Thơ — https://baocantho.com.vn/doan-cong-tac-trung-uong-va-lanh-dao-tp-can-tho-vieng-nghia-trang-liet-si-hau-giang-a210697.html"
       ],
       "trang_thai": "draft"
     }
