@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Chí sĩ yêu nước & nhà cách mạng tiền bối (cuối thế kỷ 19 – trước 1945): phong trào Duy Tân/Đông Du, Đông Kinh Nghĩa Thục, chí sĩ Nam Kỳ, Việt Nam Quốc dân Đảng, và các nhà cách mạng tiền bối của Đảng Cộng sản Đông Dương. Toạ độ ở mức xã/huyện (chưa có toạ độ đền/nhà lưu niệm chính xác trong nguồn đã fetch) — do_tin_cay_toa_do:'trung'. Nội dung theo khung sử chính thống (dangcongsan.vn/tuyengiao.vn/baotanglichsu.vn); mọi mục trang_thai:'draft' chờ kiểm sử. KHÔNG dùng Wikipedia. [Phase 3: hợp nhất doanh-nhan-yeu-nuoc.json → nhóm «Chí sĩ cách mạng · Doanh nhân yêu nước».]",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-07-26",
   "sources": [
     "Bảo tàng Lịch sử Quốc gia — baotanglichsu.vn",
     "Tư liệu văn kiện Đảng — tulieuvankien.dangcongsan.vn",
@@ -23,7 +23,24 @@
     "dantri.com.vn",
     "vietnamnet.vn",
     "hanoimoi.vn",
-    "qdnd.vn"
+    "qdnd.vn",
+    "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
+    "Cổng TTĐT tỉnh An Giang — angiang.gov.vn",
+    "Báo An Giang — baoangiang.com.vn",
+    "Cục Di sản văn hóa — dsvh.gov.vn",
+    "Báo Người Lao Động — nld.com.vn",
+    "vanhoatinnguong.vn",
+    "SkyDoor — skydoor.net",
+    "Hội Nhà văn Việt Nam — vanvn.vn",
+    "Tư liệu lịch sử — tulieulichsu.com",
+    "Báo Đại Đoàn Kết — daidoanket.vn",
+    "Trung tâm Lưu trữ Quốc gia Việt Nam — archives.org.vn",
+    "Viện Nghiên cứu KT-XH Hà Nội — vienktxh.hanoi.gov.vn",
+    "Liên hiệp các Hội KH&KT Việt Nam — vusta.vn",
+    "Thời Mới — thoimoi.vn",
+    "Tủ sách Thanh Niên — tusachthanhnien.vn",
+    "nghethuatvietnam.vn",
+    "OpenStreetMap Nominatim (toạ độ)"
   ],
   "items": [
     {
@@ -790,6 +807,164 @@
       "do_tin_cay_toa_do": "trung-binh",
       "nguon": [
         "Báo Nhân Dân (nhandan.vn) — «Nhà cách mạng Dương Quang Đông»"
+      ]
+    },
+    {
+      "id": "nguyen-quang-dieu",
+      "ten": "Nguyễn Quang Diêu",
+      "lon": 105.6,
+      "lat": 10.475,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1880–1936",
+      "mo_ta": "Nhà thơ và chí sĩ Cao Lãnh, bút hiệu Tử Ngọc; năm 1907 tham gia phong trào Đông Du của Phan Bội Châu, cùng Nguyễn Thần Hiến, Dương Bá Trạc vận động thanh niên xuất dương và truyền bá thơ văn yêu nước. Năm 1989 phần mộ ông được cải táng về quê nhà Tân Thuận Tây, hằng năm có lễ tưởng niệm.",
+      "dia_diem": "Mộ Nguyễn Quang Diêu, xã Tân Thuận Tây, TP Cao Lãnh, Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Tháp — dongthap.gov.vn",
+        "Báo Nhân Dân — nhandan.vn (Nguyễn Quang Diêu, nhà thơ yêu nước)"
+      ]
+    },
+    {
+      "id": "truong-gia-mo",
+      "ten": "Trương Gia Mô",
+      "lon": 108.58,
+      "lat": 11.087,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1866–1929",
+      "mo_ta": "Sĩ phu, nhà thơ Bến Tre, bút hiệu Cúc Nông; từng làm quan triều Nguyễn rồi dấn thân phong trào Duy Tân – Đông Du, kết giao Phan Bội Châu, Nguyễn Sinh Sắc, Trần Chánh Chiếu. Cuối đời sống ẩn dật tại Bình Thuận; bàn thờ ông được lập tại chùa Từ Quang, nhiều sĩ phu như Phan Bội Châu, Huỳnh Thúc Kháng làm thơ điếu.",
+      "dia_diem": "Chùa Từ Quang, xã Chí Công, huyện Tuy Phong, Bình Thuận",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Công an Nhân dân — cand.vn (Sự nghiệp cụ nghè Trương Gia Mô còn lưu mãi)",
+        "Báo Lâm Đồng — baolamdong.vn (Câu chuyện về cụ Nghè Trương Gia Mô với Nguyễn Tất Thành)"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tr%C6%B0%C6%A1ng_Gia_M%C3%B4.jpg/330px-Tr%C6%B0%C6%A1ng_Gia_M%C3%B4.jpg",
+      "anh_nguon": "Wikimedia Commons — Bùi Thụy Đào Nguyên · https://commons.wikimedia.org/wiki/File:Tr%C6%B0%C6%A1ng_Gia_M%C3%B4.jpg",
+      "anh_giay_phep": "Public domain",
+      "anh_muc": "chan-dung"
+    },
+    {
+      "id": "chau-van-liem",
+      "ten": "Châu Văn Liêm",
+      "lon": 105.62,
+      "lat": 10.02,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1902–1930",
+      "mo_ta": "Nhà cách mạng Nam Bộ, một trong những người sáng lập An Nam Cộng sản Đảng (1929) — tiền thân góp phần hợp nhất thành Đảng Cộng sản Việt Nam; hy sinh năm 1930 khi lãnh đạo cuộc biểu tình của nông dân Đức Hoà (Long An). Đền thờ ông tại quê nhà, lễ kỷ niệm ngày sinh được tổ chức trọng thể hằng năm.",
+      "dia_diem": "Đền thờ đồng chí Châu Văn Liêm, xã Thới Thạnh, huyện Thới Lai, TP. Cần Thơ",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Ban Tuyên giáo và Dân vận TP Cần Thơ — Long trọng tổ chức Lễ kỷ niệm 122 năm Ngày sinh đồng chí Châu Văn Liêm — https://btgdv.cantho.gov.vn/vi/news/vung-dat-va-con-nguoi-can-tho/long-trong-to-chuc-le-ky-niem-122-nam-ngay-sinh-dong-chi-chau-van-liem-2081.html",
+        "Báo Cần Thơ — baocantho.com.vn (cùng bài)"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/T%C6%B0%E1%BB%A3ng_Ch%C3%A2u_V%C4%83n_Li%C3%AAm.jpg/330px-T%C6%B0%E1%BB%A3ng_Ch%C3%A2u_V%C4%83n_Li%C3%AAm.jpg",
+      "anh_nguon": "Wikimedia Commons — Bùi Thụy Đào Nguyên · https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_Ch%C3%A2u_V%C4%83n_Li%C3%AAm.jpg",
+      "anh_giay_phep": "CC BY-SA 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "pham-hung",
+      "ten": "Phạm Hùng",
+      "lon": 105.98,
+      "lat": 10.13,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1912–1988",
+      "mo_ta": "Nhà cách mạng quê Vĩnh Long, từng bị kết án tử hình năm 19 tuổi và chịu 14 năm tù Côn Đảo; sau này giữ các chức vụ Bí thư Trung ương Cục miền Nam (1967–1975), Bộ trưởng Nội vụ, Chủ tịch Hội đồng Bộ trưởng (1987–1988). Khu lưu niệm rộng 3,2ha khánh thành năm 2004 đúng ngày sinh của ông, được công nhận di tích lịch sử quốc gia năm 2012.",
+      "dia_diem": "Khu lưu niệm Phạm Hùng, ấp Long Thuận A, xã Long Phước, huyện Long Hồ, tỉnh Vĩnh Long — di tích cấp quốc gia",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Sở VHTTDL tỉnh Vĩnh Long — svhttdl.vinhlong.gov.vn (Khu lưu niệm đồng chí Phạm Hùng) — https://svhttdl.vinhlong.gov.vn/xem-chi-tiet-tin-tuc/id/208241"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/T%C6%B0%E1%BB%A3ng_b%C3%A1n_th%C3%A2n_Ph%E1%BA%A1m_H%C3%B9ng.jpg/330px-T%C6%B0%E1%BB%A3ng_b%C3%A1n_th%C3%A2n_Ph%E1%BA%A1m_H%C3%B9ng.jpg",
+      "anh_nguon": "Wikimedia Commons — Bùi Thụy Đào Nguyên · https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_b%C3%A1n_th%C3%A2n_Ph%E1%BA%A1m_H%C3%B9ng.jpg",
+      "anh_giay_phep": "CC BY-SA 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "nguyen-thi-dinh",
+      "ten": "Nguyễn Thị Định",
+      "lon": 106.48,
+      "lat": 10.28,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1920–1996",
+      "mo_ta": "Nữ tướng đầu tiên của Quân đội nhân dân Việt Nam (phong Thiếu tướng 1974); tham gia cách mạng từ năm 16 tuổi, năm 1946 là nữ giao liên duy nhất vượt biển ra Bắc nhận 12 tấn vũ khí — tiền đề của đường Hồ Chí Minh trên biển; lãnh đạo phong trào Đồng khởi Bến Tre (1960) và chỉ huy «Đội quân tóc dài». Khu lưu niệm nữ tướng rộng 15.000m² khánh thành năm 2003.",
+      "dia_diem": "Khu lưu niệm Nguyễn Thị Định, xã Lương Hoà, huyện Giồng Trôm, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "VietnamPlus (TTXVN) — Khu lưu niệm nữ tướng Nguyễn Thị Định — địa chỉ đỏ giáo dục lòng yêu nước — https://www.vietnamplus.vn/khu-luu-niem-nu-tuong-nguyen-thi-dinh-dia-chi-do-giao-duc-long-yeu-nuoc-post1020308.vnp"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/T%C6%B0%E1%BB%A3ng_%C4%91%E1%BB%93ng_Nguy%E1%BB%85n_Th%E1%BB%8B_%C4%90%E1%BB%8Bnh.jpg/330px-T%C6%B0%E1%BB%A3ng_%C4%91%E1%BB%93ng_Nguy%E1%BB%85n_Th%E1%BB%8B_%C4%90%E1%BB%8Bnh.jpg",
+      "anh_nguon": "Wikimedia Commons — Bùi Thụy Đào Nguyên · https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_%C4%91%E1%BB%93ng_Nguy%E1%BB%85n_Th%E1%BB%8B_%C4%90%E1%BB%8Bnh.jpg",
+      "anh_giay_phep": "Public domain",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "nguyen-thai-binh-sinh-vien",
+      "ten": "Nguyễn Thái Bình",
+      "lon": 106.65,
+      "lat": 10.55,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1948–1972",
+      "mo_ta": "Sinh viên du học Mỹ, biểu tượng phong trào sinh viên miền Nam phản đối chiến tranh trước 1975; ngày 10/2/1972 cùng 9 sinh viên chiếm Lãnh sự quán Sài Gòn tại New York để rải truyền đơn phản chiến. Bị sát hại ngay trên chuyến bay đưa về nước, hạ cánh xuống Tân Sơn Nhất ngày 2/7/1972; được công nhận liệt sĩ năm 1977 và truy tặng danh hiệu Anh hùng LLVTND năm 2010. Nhiều đường phố, trường học tại TP.HCM mang tên ông.",
+      "dia_diem": "Quê xã Trường Bình, huyện Cần Giuộc, tỉnh Long An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Sở VHTTDL TP.HCM — scov.gov.vn (Nguyễn Thái Bình - biểu tượng phong trào sinh viên miền Nam phản đối chiến tranh trước 1975) — https://scov.gov.vn/dong-bao-vnon/guong-mat/nguyen-thai-binh-bieu-tuong-phong-trao-sinh-vien-mien-nam-phan-doi-chien-tranh-truoc-1975.html"
+      ]
+    },
+    {
+      "id": "huynh-van-nghe",
+      "ten": "Huỳnh Văn Nghệ (Thi tướng)",
+      "lon": 106.78,
+      "lat": 11.05,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1914–1977",
+      "mo_ta": "Chỉ huy quân sự kiêm nhà thơ vùng Đông Nam Bộ, được suy tôn là «Thi tướng rừng xanh»; được Nhà nước truy tặng danh hiệu Anh hùng LLVTND và Giải thưởng Nhà nước về Văn học Nghệ thuật. Nhà lưu niệm 2 tầng cùng phần mộ ông đặt tại quê nhà, tổ chức lễ kỷ niệm 100 năm ngày sinh năm 2014.",
+      "dia_diem": "Nhà lưu niệm Huỳnh Văn Nghệ, xã Thường Tân (nguyên Mỹ Lộc), huyện Tân Uyên, tỉnh Bình Dương",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thư viện tỉnh Đồng Nai — thuviendongnai.gov.vn (Huỳnh Văn Nghệ) — https://www.thuviendongnai.gov.vn/huynhvannghe/default.aspx"
+      ]
+    },
+    {
+      "id": "ung-van-khiem",
+      "ten": "Ung Văn Khiêm",
+      "lon": 105.42,
+      "lat": 10.55,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1910–1991",
+      "mo_ta": "Nhà cách mạng Nam Bộ, thành viên sáng lập Đông Dương Cộng sản Đảng; từng giữ chức Bộ trưởng Ngoại giao (1961–1963) và Bộ trưởng Nội vụ. Mộ phần đặt tại quê nhà, được lãnh đạo Bộ Ngoại giao đến viếng, tri ân hằng năm.",
+      "dia_diem": "Mộ phần Ung Văn Khiêm, xã Tân Mỹ, huyện Chợ Mới, tỉnh An Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bộ Ngoại giao Việt Nam — mofa.gov.vn (Bộ trưởng Ung Văn Khiêm, từ 02/1961 đến 04/1963)"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ung-van-khiem-CMYK2.gif/330px-Ung-van-khiem-CMYK2.gif",
+      "anh_nguon": "Wikimedia Commons — Hoakylan · https://commons.wikimedia.org/wiki/File:Ung-van-khiem-CMYK2.gif",
+      "anh_giay_phep": "CC BY-SA 4.0",
+      "anh_muc": "chan-dung"
+    },
+    {
+      "id": "ngo-kha",
+      "ten": "Ngô Kha",
+      "lon": 107.5859,
+      "lat": 16.4861,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1935–1973",
+      "mo_ta": "Nhà thơ, nhà giáo dạy văn tại các trường Quốc Học, Hàm Nghi, Nguyễn Du, Hưng Đạo (Huế); gương mặt trí thức tiêu biểu trong phong trào học sinh — sinh viên đô thị miền Nam chống Mỹ thập niên 1960–1970. Bị bắt và thủ tiêu năm 1973, truy nhận liệt sĩ năm 1981; một con đường ở Huế mang tên ông.",
+      "dia_diem": "Làng Thế Lại Thượng, nay phường Phú Hiệp, TP Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Đại Đoàn Kết — daidoanket.vn — Nhà thơ - liệt sỹ Ngô Kha: Và nay gió cũng tang bồng — https://daidoanket.vn/nha-tho-liet-sy-ngo-kha-va-nay-gio-cung-tang-bong-10096617.html"
       ]
     }
   ]

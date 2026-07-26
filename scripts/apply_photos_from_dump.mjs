@@ -36,7 +36,10 @@ for (const m of dump) {
 
 let grand = 0;
 for (const [file, list] of Object.entries(byFile)) {
-  const full = path.join(OV, file);
+  // `file` đến từ dump JSON (do agent sinh) — chốt về tên file trần rồi kiểm
+  // lại prefix, để một dump độc ("../../src/main.ts") không ghi ra ngoài OV.
+  const full = path.join(OV, path.basename(file));
+  if (!full.startsWith(OV + path.sep)) throw new Error(`đường dẫn ngoài overlays: ${file}`);
   const raw = fs.readFileSync(full, "utf8");
   const data = JSON.parse(raw);
   const items = Array.isArray(data) ? data : data.items;

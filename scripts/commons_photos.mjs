@@ -25,7 +25,6 @@ const CHANDUNG_FILES = new Set([
   "anh-hung-can-hien-dai.json",
   "danh-nhan-van-hoa-can-hien-dai.json",
   "chi-si-cach-mang.json",
-  "danh-nhan-nam-bo.json",
   "me-vnah.json",
 ]);
 

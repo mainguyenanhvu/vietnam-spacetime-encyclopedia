@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Nhà khoa học & trí thức Việt Nam thế kỷ 20 (đã mất) — các chuyên ngành toán, lý, hoá, sinh, y, nông, sử, địa chất chưa có trong CSDL. Toạ độ ước theo quê quán/làng sinh (khi biết cụ thể) hoặc trung tâm huyện/tỉnh khi chỉ biết cấp tỉnh. Nội dung theo Báo Nhân Dân, VUSTA, ĐHQGHN, Tia Sáng, TTXVN, Báo Nghệ An — KHÔNG dùng Wikipedia làm nguồn. [Phase 3: hợp nhất 4 lớp → nhóm «Trí thức · Nhà khoa học · Giáo dục cận–hiện đại».]",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-07-26",
   "sources": [
     "Báo Nhân Dân — nhandan.vn",
     "Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam (VUSTA) — vusta.vn",
@@ -35,7 +35,22 @@
     "Hội Kiến trúc sư Việt Nam — via.gov.vn",
     "Báo Pháp luật Việt Nam — baophapluat.vn",
     "Báo Công an Nhân dân — cand.vn",
-    "nongnghiepmoitruong.vn"
+    "nongnghiepmoitruong.vn",
+    "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
+    "Cổng TTĐT tỉnh An Giang — angiang.gov.vn",
+    "Báo An Giang — baoangiang.com.vn",
+    "Cục Di sản văn hóa — dsvh.gov.vn",
+    "Báo Người Lao Động — nld.com.vn",
+    "vanhoatinnguong.vn",
+    "SkyDoor — skydoor.net",
+    "Hội Nhà văn Việt Nam — vanvn.vn",
+    "Trung tâm Lưu trữ Quốc gia Việt Nam — archives.org.vn",
+    "Viện Nghiên cứu KT-XH Hà Nội — vienktxh.hanoi.gov.vn",
+    "Liên hiệp các Hội KH&KT Việt Nam — vusta.vn",
+    "Thời Mới — thoimoi.vn",
+    "Tủ sách Thanh Niên — tusachthanhnien.vn",
+    "nghethuatvietnam.vn",
+    "OpenStreetMap Nominatim (toạ độ)"
   ],
   "items": [
     {
@@ -1438,6 +1453,21 @@
       "trang_thai": "reviewed",
       "nguon": [
         "nongnghiepmoitruong.vn — Vĩnh biệt một trí tuệ lớn của ngành thủy lợi Việt Nam: GS.TSKH Nguyễn Ân Niên — https://nongnghiepmoitruong.vn/tri-thuc-nong-dan/vinh-biet-mot-tri-tue-lon-cua-nganh-thuy-loi-viet-nam-gstskh-nguyen-an-nien-d805512.html"
+      ]
+    },
+    {
+      "id": "ho-dac-diem",
+      "ten": "Hồ Đắc Điềm",
+      "lon": 107.7760076,
+      "lat": 16.4138566,
+      "loai": "nha-giao",
+      "nam_hien_thi": "1899–1986",
+      "mo_ta": "Tiến sĩ Luật khoa tại Paris, giáo sư người Việt duy nhất của Đại học Đông Dương trước 1945. Sau Cách mạng tháng Tám, từ bỏ vinh hoa để tham gia kháng chiến: Chánh án Tòa án Liên khu IV, sau là Phó Chủ tịch Ủy ban Hành chính Hà Nội, phụ trách bình dân học vụ và bổ túc văn hóa Thủ đô.",
+      "dia_diem": "Làng An Truyền, huyện Phú Vang, Thừa Thiên (nay TP Huế)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "VUSTA — vusta.vn — Tiến sĩ Luật khoa Hồ Đắc Điềm - một tấm lòng với cách mạng — https://vusta.vn/tien-si-luat-khoa-ho-dac-diem-mot-tam-long-voi-cach-mang-p70422.html"
       ]
     }
   ]

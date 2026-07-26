@@ -47,13 +47,11 @@ const STRICT_SOURCE = new Set([
   "thien-su-cao-tang.json",
   "danh-nhan-quan-su-co-trung-dai.json",
   "nha-the-thao-lich-su.json",
-  "danh-nhan-nam-bo.json",
   "nghia-si-can-vuong.json",
   "tri-thuc-khoa-hoc-tk20.json",
   "di-tich-quoc-gia.json",
   "di-tich-qgdb.json",
-  // TODO: unesco.json chưa vào được — 13 mục dùng schema cũ, không có nguon[] riêng.
-  // Cần backfill nguồn từng mục rồi mới bật gate cho file này.
+  "unesco.json",
 ]); // yêu cầu nguồn ngoài Wiki mỗi mục
 const globalIds = new Map(); // id -> "file[i] (ten)" — chống trùng id XUYÊN 69 file
 for (const file of readdirSync(OVERLAY_DIR).filter((f) => f.endsWith(".json"))) {

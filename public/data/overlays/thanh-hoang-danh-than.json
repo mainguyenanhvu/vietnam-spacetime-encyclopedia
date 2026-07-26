@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Thành hoàng & danh thần có đền/đình thờ lớn (không trùng Tứ bất tử đã có ở lớp «Huyền sử khai quốc»). Toạ độ đền/đình thờ qua OSM Nominatim; nội dung theo cổng nhà nước/di sản (vietnamtourism.vn, quangninh.gov.vn, baotanglichsu.vn, sodulich.ninhbinh.gov.vn, baoangiang.com.vn, mybacninh.vn). KHÔNG dùng Wikipedia. [Phase 3 lô4: hợp nhất 1 lớp → nhóm «Thành hoàng · Danh thần · Tín ngưỡng vùng miền» (dedup exact).]",
-  "ngay_cap_nhat": "2026-07-24",
+  "ngay_cap_nhat": "2026-07-26",
   "sources": [
     "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
     "Cổng TTĐT tỉnh Quảng Ninh — quangninh.gov.vn",
@@ -21,7 +21,22 @@
     "Sở Văn hoá và Thể thao TP.HCM — scov.gov.vn",
     "Tạp chí Người Hà Nội — nguoihanoi.vn",
     "Cổng TTĐT UBND thành phố Hải Phòng — thanhphohaiphong.gov.vn / lichsudangbo.haiphong.gov.vn / trannhantong.haiphong.gov.vn",
-    "Ban Tôn giáo Chính phủ — btgcp.gov.vn"
+    "Ban Tôn giáo Chính phủ — btgcp.gov.vn",
+    "Cổng TTĐT tỉnh An Giang — angiang.gov.vn",
+    "Cục Di sản văn hóa — dsvh.gov.vn",
+    "Báo Thanh Niên — thanhnien.vn",
+    "Báo Người Lao Động — nld.com.vn",
+    "vanhoatinnguong.vn",
+    "SkyDoor — skydoor.net",
+    "Hội Nhà văn Việt Nam — vanvn.vn",
+    "Tư liệu lịch sử — tulieulichsu.com",
+    "Báo Đại Đoàn Kết — daidoanket.vn",
+    "Trung tâm Lưu trữ Quốc gia Việt Nam — archives.org.vn",
+    "Viện Nghiên cứu KT-XH Hà Nội — vienktxh.hanoi.gov.vn",
+    "Liên hiệp các Hội KH&KT Việt Nam — vusta.vn",
+    "Thời Mới — thoimoi.vn",
+    "Tủ sách Thanh Niên — tusachthanhnien.vn",
+    "nghethuatvietnam.vn"
   ],
   "items": [
     {
@@ -626,7 +641,7 @@
       "loai": "thanh-hoang",
       "nam_hien_thi": "Đầu thế kỷ XV (thời Lê sơ)",
       "mo_ta": "Đinh Thị Vân, người Mường vùng Hào Tráng, cùng một bà người Dao ở Vầy Nưa đã vận động dân địa phương góp lương thực và thuyền bè giúp vua Lê Lợi vượt thác Bờ tiến quân lên Mường Lễ dẹp loạn Đèo Cát Hãn. Sau khi bà mất, vua Lê Lợi ban sắc phong Nữ chúa và cho dân lập đền thờ bên thác Bờ. Đền gồm hai khu: đền bà Chúa ở tả ngạn trên đồi Hang Thần (Vầy Nưa) và đền Thác Bờ ở hữu ngạn (Thung Nai).",
-      "dia_diem": "Đền Chúa Thác Bờ, xã Vầy Nưa (huyện Đà Bắc) và xã Thung Nai (huyện Cao Phong), tỉnh Hoà Bình (nay Phú Thọ) — động Thác Bờ là di tích danh lam thắng cảnh cấp quốc gia (2009)",
+      "dia_diem": "Đền Chúa Thác Bờ, xã Vầy Nưa (huyện Đà Bắc) và xã Thung Nai (huyện Cao Phong), tỉnh Hòa Bình (nay Phú Thọ) — động Thác Bờ là di tích danh lam thắng cảnh cấp quốc gia (2009)",
       "do_tin_cay_toa_do": "thap",
       "trang_thai": "draft",
       "nguon": [
@@ -723,6 +738,21 @@
       "trang_thai": "draft",
       "nguon": [
         "Báo Thanh Hoá (Văn hoá – Đời sống) — Thái sư Á vương Đào Cam Mộc: Bậc khai quốc công thần nhà Lý — https://vhds.baothanhhoa.vn/thai-su-a-vuong-dao-cam-moc-bac-khai-quoc-cong-than-nha-ly-27892.htm"
+      ]
+    },
+    {
+      "id": "do-cong-tuong",
+      "ten": "Đỗ Công Tường (Ông Chủ Chợ Cao Lãnh)",
+      "lon": 105.632,
+      "lat": 10.4593,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "?–1820",
+      "mo_ta": "Cùng vợ đến khai khẩn đất Mỹ Trà (nay Cao Lãnh) từ năm 1817, lập vườn quýt rộng lớn thành nơi họp chợ — gốc tích chợ Cao Lãnh ngày nay; được cử làm Câu đương xử việc làng vì tính chính trực. Mùa dịch tả năm 1820, hai ông bà nguyện chết thay cho dân, dịch bệnh liền dứt; vua Tự Đức sắc phong, dân lập đền thờ, xếp hạng di tích quốc gia năm 2019.",
+      "dia_diem": "Đền thờ ông bà Đỗ Công Tường, đường Lê Lợi, Phường 2, TP Cao Lãnh, Đồng Tháp",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "vanhoatinnguong.vn (Đền thờ ông bà Đỗ Công Tường — Cao Lãnh — Đồng Tháp)"
       ]
     }
   ]

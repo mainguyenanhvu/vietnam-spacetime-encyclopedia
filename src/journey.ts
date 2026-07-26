@@ -27,15 +27,10 @@ interface JourneyData {
 // Handle tối thiểu khớp figures3d.mountFigure3D (tránh import tĩnh Three.js).
 type Figure3DHandle = { dispose(): void };
 
-const DATA_URL = `${import.meta.env.BASE_URL}data/journey/hanh-trinh.json`;
+import { esc, sourcesHtml } from "./util/html";
+import { registerPanel, showOnly, hidePanel } from "./panels";
 
-const esc = (s: string): string =>
-  s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
+const DATA_URL = `${import.meta.env.BASE_URL}data/journey/hanh-trinh.json`;
 
 let scenes: Scene[] | null = null;
 let current = 0;
@@ -75,13 +70,6 @@ async function mountFigure(figureId: string): Promise<void> {
   } catch {
     if (gen === mountGen) stage.innerHTML = `<p class="muted">Không tải được mô hình 3D.</p>`;
   }
-}
-
-function sourcesHtml(nguon: string[]): string {
-  if (!nguon.length) return "";
-  return `<details class="sources"><summary>📚 Nguồn</summary><ul>${nguon
-    .map((n) => `<li>${esc(n)}</li>`)
-    .join("")}</ul></details>`;
 }
 
 function renderScene(): void {
@@ -138,27 +126,13 @@ function renderScene(): void {
   void mountFigure(scene.figure_id);
 }
 
+// Chỉ cần ẩn panel: `registerPanel` đã gắn observer nên disposeFigure() chạy
+// dù panel bị ẩn từ đây hay từ module khác.
 function closePanel(): void {
-  disposeFigure();
-  const panel = document.getElementById("journey-panel");
-  if (panel) panel.hidden = true;
+  hidePanel("journey-panel");
 }
 
-function hideOtherPanels(): void {
-  for (const id of [
-    "game-panel",
-    "quiz-panel",
-    "story-panel",
-    "library-panel",
-    "olympia-panel",
-    "battle-panel",
-  ]) {
-    const p = document.getElementById(id);
-    if (p) p.hidden = true;
-  }
-}
-
-function buildDom(): { btn: HTMLButtonElement; panel: HTMLElement } {
+function buildDom(): { btn: HTMLButtonElement } {
   const btn = document.createElement("button");
   btn.id = "journey-btn";
   btn.type = "button";
@@ -174,16 +148,20 @@ function buildDom(): { btn: HTMLButtonElement; panel: HTMLElement } {
   panel.innerHTML = `<button id="journey-close" aria-label="Đóng">×</button><div id="journey-content"></div>`;
   const app = document.getElementById("app") ?? document.body;
   app.appendChild(panel);
-  return { btn, panel };
+  return { btn };
 }
 
 export function initJourney(): void {
   if (document.getElementById("journey-panel")) return; // tránh khởi tạo hai lần
-  const { btn, panel } = buildDom();
+  const { btn } = buildDom();
+
+  // Dọn mô hình 3D mỗi khi panel bị ẩn — BẤT KỂ module nào ẩn nó. Trước đây chỉ
+  // nút × của chính màn này mới dispose, nên chuyển sang Sa đồ/Việt Nam trong
+  // tôi/Dòng thời gian là bỏ lại một WebGL context sống.
+  registerPanel("journey-panel", disposeFigure);
 
   btn.addEventListener("click", () => {
-    hideOtherPanels();
-    panel.hidden = false;
+    showOnly("journey-panel");
     const c = content();
     if (c && !scenes) c.innerHTML = `<p class="muted">Đang mở hành trình…</p>`;
     if (scenes) {

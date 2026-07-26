@@ -12,6 +12,9 @@ interface TLEvent {
 }
 interface TLData { ghi_chu?: string; items: TLEvent[] }
 
+import { esc, sourcesHtml } from "./util/html";
+import { registerPanel, showOnly, hidePanel } from "./panels";
+
 const DATA_URL = `${import.meta.env.BASE_URL}data/timeline/dong-thoi-gian.json`;
 
 const LOAI_TEN: Record<string, string> = {
@@ -23,16 +26,8 @@ const LOAI_TEN: Record<string, string> = {
   "hien-dai": "Hiện đại",
 };
 
-const esc = (s: string): string =>
-  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-
 let events: TLEvent[] | null = null;
 let filter = "all";
-
-function sourcesHtml(nguon: string[]): string {
-  if (!nguon || !nguon.length) return "";
-  return `<details class="tl-sources"><summary>📚 Nguồn</summary><ul>${nguon.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></details>`;
-}
 
 function render(): void {
   const body = document.getElementById("timeline-body");
@@ -46,7 +41,7 @@ function render(): void {
           <span class="tl-badge tl-badge-${esc(e.loai)}">${esc(LOAI_TEN[e.loai] ?? e.loai)}</span>
           <h4>${esc(e.tieu_de)}</h4>
           <p>${esc(e.mo_ta)}</p>
-          ${sourcesHtml(e.nguon)}
+          ${sourcesHtml(e.nguon, "tl-sources")}
         </div>
       </li>`,
     )
@@ -71,14 +66,7 @@ function renderFilters(host: HTMLElement): void {
 }
 
 function closePanel(): void {
-  const p = document.getElementById("timeline-panel");
-  if (p) p.hidden = true;
-}
-function hideOtherPanels(): void {
-  for (const id of ["game-panel", "quiz-panel", "story-panel", "library-panel", "olympia-panel", "battle-panel", "journey-panel", "quocgia-panel"]) {
-    const p = document.getElementById(id);
-    if (p) p.hidden = true;
-  }
+  hidePanel("timeline-panel");
 }
 
 export function initTimeline(): void {
@@ -103,10 +91,10 @@ export function initTimeline(): void {
     <div id="timeline-body"><p class="muted">Đang tải…</p></div>`;
   const app = document.getElementById("app") ?? document.body;
   app.appendChild(panel);
+  registerPanel("timeline-panel");
 
   btn.addEventListener("click", () => {
-    hideOtherPanels();
-    panel.hidden = false;
+    showOnly("timeline-panel");
     if (events) { render(); return; }
     void fetch(DATA_URL)
       .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() as Promise<TLData>; })

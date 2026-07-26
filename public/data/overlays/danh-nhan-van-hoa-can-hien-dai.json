@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh nhân văn hoá – khoa học – chí sĩ yêu nước cận–hiện đại (TK 19–20). Toạ độ quê quán/khu lưu niệm qua OSM Nominatim; nội dung đối chiếu cổng chính thống (nhandan.vn, baochinhphu.vn, dsvh.gov.vn, baotanglichsu.vn, suckhoedoisong.vn…). KHÔNG dùng Wikipedia. (Trương Định, Nguyễn Trung Trực, Hoàng Diệu đã có ở lớp «Khởi nghĩa & kháng chiến» qua sự kiện tiêu biểu nên không lặp ở đây.) [Phase 3: hợp nhất 4 lớp → nhóm «Văn nghệ sĩ · Báo chí · Danh nhân văn hoá».]",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-07-26",
   "sources": [
     "Báo Nhân Dân — nhandan.vn",
     "Cổng TTĐT Chính phủ — baochinhphu.vn",
@@ -43,7 +43,22 @@
     "Báo Đà Nẵng — baodanang.vn",
     "Báo Thanh Niên — thanhnien.vn",
     "VOV — vov.vn",
-    "nguoikesu.com (tư liệu lịch sử)"
+    "nguoikesu.com (tư liệu lịch sử)",
+    "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
+    "Cổng TTĐT tỉnh An Giang — angiang.gov.vn",
+    "Cục Di sản văn hóa — dsvh.gov.vn",
+    "Báo Người Lao Động — nld.com.vn",
+    "vanhoatinnguong.vn",
+    "SkyDoor — skydoor.net",
+    "Hội Nhà văn Việt Nam — vanvn.vn",
+    "Tư liệu lịch sử — tulieulichsu.com",
+    "Báo Đại Đoàn Kết — daidoanket.vn",
+    "Trung tâm Lưu trữ Quốc gia Việt Nam — archives.org.vn",
+    "Viện Nghiên cứu KT-XH Hà Nội — vienktxh.hanoi.gov.vn",
+    "Liên hiệp các Hội KH&KT Việt Nam — vusta.vn",
+    "Thời Mới — thoimoi.vn",
+    "Tủ sách Thanh Niên — tusachthanhnien.vn",
+    "nghethuatvietnam.vn"
   ],
   "items": [
     {
@@ -1476,6 +1491,171 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo Công an Nhân dân — Kỷ niệm 100 năm ngày sinh nhà báo Nguyễn Thành Lê — https://cand.vn/ky-niem-100-nam-ngay-sinh-nha-bao-nguyen-thanh-le-nguoi-phat-ngon-cua-mot-thoi-post571368.html"
+      ]
+    },
+    {
+      "id": "thanh-tinh",
+      "ten": "Thanh Tịnh (Trần Văn Ninh)",
+      "lon": 107.6002,
+      "lat": 16.4907,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1911–1988",
+      "mo_ta": "Nhà thơ, nhà văn tiền chiến, quê xóm Gia Lạc bên sông Hương; đoạt giải nhất thơ của Hà Nội báo năm 1936, được Hoài Thanh — Hoài Chân đưa vào «Thi nhân Việt Nam». Tác phẩm gắn liền tuổi học trò nhiều thế hệ qua truyện ngắn «Tôi đi học».",
+      "dia_diem": "Xóm Gia Lạc, nay phường Phú Thượng, TP Huế (trước thuộc Phú Vang, Thừa Thiên)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Hội Nhà văn Việt Nam — vanvn.vn — Thi sĩ Thanh Tịnh: văn thơ vẹn toàn — https://vanvn.vn/thi-si-thanh-tinh-van-tho-ven-toan/"
+      ]
+    },
+    {
+      "id": "buu-dinh",
+      "ten": "Bửu Đình (Nguyễn Phúc Bửu Đình)",
+      "lon": 107.5605244,
+      "lat": 16.4681054,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1898–1931",
+      "mo_ta": "Nhà tiểu thuyết dòng dõi hoàng tộc Nguyễn (chắt nội hoàng tử Tĩnh Gia, con vua Minh Mạng) nhưng từ bỏ thân phận hoàng thân để làm báo chống thực dân. Tiểu thuyết «Mảnh trăng thu» viết trong tù, từng đứng thứ 6 bảng độc giả yêu thích chỉ sau Truyện Kiều; bị đày Lao Bảo, Côn Đảo rồi mất tích trên biển năm 1931.",
+      "dia_diem": "Huế — dòng dõi hoàng tộc Nguyễn, chi Tĩnh Gia Vương",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Hội Nhà văn Việt Nam — vanvn.vn — Bửu Đình - nhà tiểu thuyết Nam Bộ — https://vanvn.vn/buu-dinh-nha-tieu-thuyet-nam-bo/"
+      ]
+    },
+    {
+      "id": "hai-trieu",
+      "ten": "Hải Triều (Nguyễn Khoa Văn)",
+      "lon": 107.5975,
+      "lat": 16.4535,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1908–1954",
+      "mo_ta": "Nhà báo, nhà lý luận phê bình mácxít, hậu duệ Nội tán Nguyễn Khoa Đăng; Tổng biên tập tờ báo cách mạng đầu tiên tại Huế. Nổi tiếng qua cuộc tranh luận «nghệ thuật vị nghệ thuật hay nghệ thuật vị nhân sinh» thập niên 1930; truy tặng Giải thưởng Hồ Chí Minh về Văn học Nghệ thuật năm 1996.",
+      "dia_diem": "Làng An Cựu, nay phường An Cựu, TP Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Tư liệu lịch sử — tulieulichsu.com — Hải Triều (Nguyễn Khoa Văn) — https://www.tulieulichsu.com/nhan-vat-lich-su/hai-trieu-294.html"
+      ]
+    },
+    {
+      "id": "nguyen-khoa-toan",
+      "ten": "Nguyễn Khoa Toàn",
+      "lon": 107.5989,
+      "lat": 16.4797,
+      "loai": "hoi-hoa",
+      "nam_hien_thi": "1898–1965",
+      "mo_ta": "Họa sĩ, nhà ngoại giao; du học hội họa tại Pháp (École de Fontainebleau), đoạt giải Mỹ thuật trang trí Paris năm 1933. Từng làm Đại sứ Việt Nam tại Thái Lan (1951–1955); nổi tiếng với tranh chân dung thiếu nữ Huế và cảnh đồng quê, được giới phê bình gọi là «họa sĩ của ánh sáng».",
+      "dia_diem": "Làng Vĩ Dạ, nay phường Vỹ Dạ, TP Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "nghethuatvietnam.vn — Nguyễn Khoa Toàn: tĩnh lặng như một câu hò Vĩ Dạ — https://nghethuatvietnam.vn/nguyen-khoa-toan-tinh-lang-nhu-mot-cau-ho-vi-da-449.html"
+      ]
+    },
+    {
+      "id": "tran-thanh-mai",
+      "ten": "Trần Thanh Mại",
+      "lon": 107.7760076,
+      "lat": 16.4138566,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1911–1965",
+      "mo_ta": "Nhà văn, nhà báo, một trong những nhà nghiên cứu phê bình văn học tiên phong đầu thế kỷ XX; cộng tác đắc lực với báo «Phụ nữ tân văn». Hội viên sáng lập Hội Nhà văn Việt Nam (1957), góp phần xây dựng Viện Văn học tại Hà Nội.",
+      "dia_diem": "Làng Tiên Nộn (Tân Nội), tổng Mậu Tài, huyện Phú Vang, Thừa Thiên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Tủ sách Thanh Niên — tusachthanhnien.vn — Trần Thanh Mại (tác giả) — https://tusachthanhnien.vn/tac-gia/tran-thanh-mai-3594"
+      ]
+    },
+    {
+      "id": "nguyen-khoa-diem",
+      "ten": "Nguyễn Khoa Điềm",
+      "lon": 107.3,
+      "lat": 16.67,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1943 –",
+      "mo_ta": "Nhà thơ, nguyên Ủy viên Bộ Chính trị, Bộ trưởng Bộ Văn hóa - Thông tin; con trai nhà lý luận Hải Triều (Nguyễn Khoa Văn). Tác giả trường ca «Mặt đường khát vọng» (1974) với chương «Đất Nước» được đưa vào sách giáo khoa phổ thông nhiều thế hệ; nhận Giải thưởng Nhà nước về Văn học Nghệ thuật.",
+      "dia_diem": "Làng Ưu Điềm, xã Phong Hòa, huyện Phong Điền, Thừa Thiên Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Văn học Việt Nam — baotangvanhoc.vn — Nhà thơ Nguyễn Khoa Điềm - Gương mặt cựu sinh viên Văn Khoa — https://baotangvanhoc.vn/cau-chuyen-nha-van/nha-tho-nguyen-khoa-diem-guong-mat-cuu-sinh-vien-van-khoa-truong-dhsp-ha-noi/"
+      ]
+    },
+    {
+      "id": "pham-dang-tri",
+      "ten": "Phạm Đăng Trí",
+      "lon": 107.585,
+      "lat": 16.463,
+      "loai": "hoi-hoa",
+      "nam_hien_thi": "1921–1987",
+      "mo_ta": "Họa sĩ, nhà giáo dạy vẽ tại Cao đẳng Mỹ thuật Huế, chuyên tranh lụa và giấy dó; khắt khe với chính mình, cả đời chỉ hoàn thành khoảng 100 bức và huỷ bỏ những tác phẩm không ưng ý. Tác phẩm «Trận sông Hát» (1975) từng được một nhà sưu tập Nhật Bản trả giá 70 cây vàng nhưng ông từ chối bán.",
+      "dia_diem": "Sinh tại Huế; giảng dạy nhiều năm tại Cao đẳng Mỹ thuật Huế",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Thể thao & Văn hóa (TTXVN) — thethaovanhoa.vn — Phạm Đăng Trí & bức họa 70 cây vàng! — https://thethaovanhoa.vn/pham-dang-tri-buc-hoa-70-cay-vang-20090604095415190.htm"
+      ]
+    },
+    {
+      "id": "hoang-phu-ngoc-tuong",
+      "ten": "Hoàng Phủ Ngọc Tường",
+      "lon": 107.1894104,
+      "lat": 16.7774868,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1937–2023",
+      "mo_ta": "Nhà văn, sinh tại Huế, dạy văn ở trường Quốc Học những năm 1960; nguyên Tổng Thư ký Hội Văn nghệ Bình Trị Thiên, Tổng Biên tập tạp chí Sông Hương. Tác giả bút ký nổi tiếng «Ai đã đặt tên cho dòng sông» (1981) viết về sông Hương, được đưa vào sách giáo khoa Ngữ văn phổ thông; nhận Giải thưởng Nhà nước về Văn học Nghệ thuật (2007).",
+      "dia_diem": "Sinh tại Huế; nguyên quán làng Bích Khê, xã Triệu Long, huyện Triệu Phong, Quảng Trị",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam — vov.gov.vn — Nhà văn Hoàng Phủ Ngọc Tường qua đời — https://vov.gov.vn/nha-van-hoang-phu-ngoc-tuong-qua-doi-dtnew-482628"
+      ]
+    },
+    {
+      "id": "phan-van-dat",
+      "ten": "Phan Văn Dật",
+      "lon": 107.595,
+      "lat": 16.462,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1907–1987",
+      "mo_ta": "Nhà thơ tiền chiến, nhà giáo; sinh tại làng Phú Xuân, huyện Hương Trà (nay phường Vĩnh Ninh, TP Huế), gọi hai nhà văn Trần Thanh Mại và Trần Thanh Địch là chú. Tiểu thuyết «Diễm Dương trang» đoạt giải thưởng Tự Lực văn đoàn năm 1935; dạy học tại Quốc Học Huế và Viện Đại học Huế trước khi nghỉ hưu.",
+      "dia_diem": "Làng Phú Xuân, huyện Hương Trà xưa, nay phường Vĩnh Ninh, TP Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Giáo dục & Thời đại (Bộ GD&ĐT) — giaoducthoidai.vn — Nhân 90 năm phong trào Thơ mới: Thi sĩ Phan Văn Dật - nét bút hoài cổ giữa đời — https://giaoducthoidai.vn/nhan-90-nam-phong-trao-tho-moi-1932-2022-thi-si-phan-van-dat-net-but-hoai-co-giua-doi-post559332.html"
+      ]
+    },
+    {
+      "id": "nguyen-khoa-vy",
+      "ten": "Nguyễn Khoa Vy",
+      "lon": 107.598,
+      "lat": 16.452,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1881–1968",
+      "mo_ta": "Nhà thơ hiệu Thảo Am, quê làng An Cựu; làm việc ngành đường sắt rồi bưu điện từ 1906, đồng sáng lập và giữ chức Phó soái Hương Bình thi xã. Tham gia khởi nghĩa Tháng Tám 1945 tại Huế, sáng tác nhiều thơ cổ động kháng chiến; nổi tiếng với lối thơ trào phúng, nói lái dí dỏm mà thâm thúy.",
+      "dia_diem": "Làng An Cựu, nay phường An Cựu, TP Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Huế ngày nay — huengaynay.vn — Giải tỏa niềm «tự ái» — https://huengaynay.vn/van-hoa-nghe-thuat/thong-tin-van-hoa/giai-toa-niem-tu-ai-86531.html"
+      ]
+    },
+    {
+      "id": "tran-thanh-dich",
+      "ten": "Trần Thanh Địch",
+      "lon": 107.6,
+      "lat": 16.46,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1912–2007",
+      "mo_ta": "Nhà văn viết cho thiếu nhi, sinh tại Huế, em ruột nhà văn Trần Thanh Mại; tham gia Cách mạng tháng Tám rồi làm biên tập tại Nhà xuất bản Kim Đồng (1957–1974). Tập truyện ngắn «Một cần câu» đoạt Giải A Văn học Thiếu nhi Hội Nhà văn Việt Nam năm 1993.",
+      "dia_diem": "Sinh tại Huế (em ruột nhà văn Trần Thanh Mại)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Hội Nhà văn Việt Nam — vanvn.vn — Trần Thanh Địch, nhà văn xứ Huế viết cho thiếu nhi — https://vanvn.vn/tran-thanh-dich-nha-van-xu-hue-viet-cho-thieu-nhi/"
       ]
     }
   ]

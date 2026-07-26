@@ -13,6 +13,10 @@
   --c-lac-600: #a52222;
   --c-gold-500: #d4a24e;  /* thếp vàng */
   --c-gold-300: #f2d399;
+  /* gold-500 đậm hơn, dành riêng cho vòng focus bàn phím — gold-500 gốc chỉ
+     đạt ~2.3:1 trên nền sáng (fail 3:1 của WCAG 1.4.11), đã tính lại bằng
+     script contrast (xem ux-bangiao-maints.md để biết công cụ đo). */
+  --c-focus: #b3791f;
   --c-cream: #fffdf7;
   --c-ink: #2b2320;       /* mực nâu đậm */
   --c-ink-soft: #6b5f57;
@@ -558,12 +562,16 @@ body.kid-mode #topbar {
 }
 
 .story-win {
-  color: #15803d;
+  /* #15803d gốc chỉ đạt 4.03:1 trên nền gradient story-panel (#fde68a) — dưới
+     ngưỡng 4.5:1. Đậm thêm 1 nấc để đạt 4.52:1, vẫn cùng tông xanh lá. */
+  color: #147739;
   font-weight: 700;
 }
 
 .story-retry {
-  color: #b45309;
+  /* #b45309 gốc chỉ đạt 4.03:1 trên nền gradient story-panel (#fde68a) — dưới
+     ngưỡng 4.5:1. Đậm thêm 1 nấc để đạt 4.52:1, vẫn cùng tông cam-nâu. */
+  color: #a84d08;
   font-weight: 600;
 }
 
@@ -598,7 +606,9 @@ body.kid-mode #topbar {
 
 .rank-badge {
   display: inline-block;
-  background: #d97706;
+  /* #d97706 gốc chỉ đạt 3.07:1 với chữ #fffbeb — dưới ngưỡng 4.5:1. Đổi sang
+     #b45309 (đã dùng sẵn trong bảng màu ở nơi khác) để đạt 4.84:1. */
+  background: #b45309;
   color: #fffbeb;
   border-radius: 10px;
   padding: 0 0.4rem;
@@ -1536,9 +1546,13 @@ input[type="range"] {
   cursor: pointer;
 }
 
-/* Vòng focus rõ ràng cho bàn phím (a11y) */
+/* Vòng focus rõ ràng cho bàn phím (a11y).
+   Dùng --c-focus (không phải --c-gold-500 gốc) vì gold-500 chỉ đạt ~2.3:1 so
+   với nền sáng (panel/trắng) — dưới ngưỡng 3:1 của WCAG 1.4.11 cho thành phần
+   giao diện không phải chữ. --c-focus đã tính lại đạt 3.45–3.70:1 trên mọi
+   nền sáng dùng trong app (trắng/kem panel/gradient story). */
 :focus-visible {
-  outline: 2px solid var(--c-gold-500);
+  outline: 2px solid var(--c-focus);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -1635,3 +1649,216 @@ input[type="range"] {
   }
 }
 /* === /LỚP GIAO DIỆN HIỆN ĐẠI === */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   VÙNG CHẠM TỐI THIỂU 44×44px (2026-07-26) — theo yêu cầu ux-audit-plan.md.
+   Chỉ thêm min-height/min-width + căn giữa nội dung cho các phần tử bấm được
+   đã khai báo ở trên; KHÔNG đổi màu/border/font/bo góc/padding gốc của chúng.
+   min-width/min-height thắng width/height cố định khai báo trước đó (CSS
+   luôn ưu tiên min-*), nên không cần sửa lại rule gốc của #panel-close v.v.
+   ═══════════════════════════════════════════════════════════════════════ */
+#topbar-nav button,
+#dtx-form button,
+.dtx-end button,
+.dtx-tools button,
+.dtx-import-label,
+#quiz-feedback button,
+#quiz-start,
+.quiz-option,
+.story-chapter,
+.story-option,
+#story-back,
+#story-continue,
+#olympia-content button,
+.panel-actions button,
+.model3d-gallery button,
+.model3d-real-btn,
+.qg-tab,
+.tl-filter,
+.namtien-controls button,
+.battle-controls button,
+.journey-controls button {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#panel-close,
+#library-close,
+#game-close,
+#quiz-close,
+#story-close,
+#olympia-close,
+#namtien-close,
+#battle-close,
+#journey-close,
+#quocgia-close,
+#timeline-close {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+}
+
+#dtx-select {
+  min-height: 2.75rem;
+}
+
+/* Nhãn tick/chọn lớp phủ · thời kỳ · kiểu bản đồ — vùng bấm thật là cả
+   <label>, không phải riêng ô vuông 1rem của input. Đây là control người
+   dùng chạm nhiều nhất trên di động (33 lớp phủ + 13 thời kỳ + 3 kiểu bản
+   đồ trong #layer-control). */
+#layer-control label {
+  min-height: 2.75rem;
+}
+
+/* Nút đóng popup do MapLibre tự sinh (maplibre-gl.css) — style.css đã ghi đè
+   font-size/màu/padding của nó ở trên, giờ thêm vùng chạm tối thiểu. */
+.maplibregl-popup-close-button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+}
+/* === /VÙNG CHẠM TỐI THIỂU === */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   TOPBAR DI ĐỘNG (2026-07-26) — 11 nút trong #topbar-nav (5 nút tĩnh trong
+   index.html + 6 nút được main.ts/olympia.ts/battle.ts/journey.ts/
+   quocgia.ts/timeline.ts tự chèn lúc chạy) không có breakpoint riêng trước
+   đây → ở màn hẹp sẽ wrap thành nhiều hàng, đẩy bản đồ xuống rất thấp.
+   Giải pháp CSS thuần: giữ 1 hàng, cho cuộn ngang thay vì wrap — KHÔNG co
+   chữ (giữ nguyên font-size để dấu tiếng Việt không bị vỡ/mất), KHÔNG đổi
+   cấu trúc DOM (nút do JS sinh nằm ngoài phạm vi CSS-only của đợt sửa này).
+   ═══════════════════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  #topbar-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    /* Chừa chỗ cho thanh cuộn mảnh + tránh cắt sát viền dưới của nút cuối */
+    padding-bottom: 0.2rem;
+  }
+  #topbar-nav button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+/* === /TOPBAR DI ĐỘNG === */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Ô TÌM KIẾM TOÀN CỤC (2026-07-26) — dựng bởi src/search.ts, tự gắn vào
+   #topbar (giữa <h1> và #topbar-nav, xem giải thích trong search.ts).
+   Input tông tối khớp topbar; dropdown kết quả dùng lại ngôn ngữ "panel kính
+   mờ" chung của cả app (--glass-bg/--shadow-2/--radius) để dễ đọc trên nền
+   sáng bất kể vị trí neo. Vùng chạm mỗi dòng kết quả ≥44px theo chuẩn đã đặt
+   ở khối "VÙNG CHẠM TỐI THIỂU" phía trên.
+   ═══════════════════════════════════════════════════════════════════════ */
+#vn-search {
+  position: relative;
+  flex: 1 1 200px;
+  min-width: 160px;
+  max-width: 340px;
+}
+#vn-search-input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(242, 211, 153, 0.5);
+  background: rgba(255, 253, 247, 0.08);
+  color: var(--c-gold-300);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  transition: background 0.16s var(--ease), color 0.16s var(--ease);
+}
+#vn-search-input::placeholder {
+  color: rgba(242, 211, 153, 0.68);
+}
+#vn-search-input:focus {
+  background: var(--c-cream);
+  color: var(--c-ink);
+  outline: none; /* :focus-visible bên dưới vẫn vẽ vòng focus riêng khi điều hướng bàn phím */
+}
+#vn-search-listbox {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  right: 0;
+  z-index: 5;
+  list-style: none;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(1.25);
+  backdrop-filter: blur(14px) saturate(1.25);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-2);
+}
+.vn-search-opt {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  color: var(--c-ink);
+  border-bottom: 1px solid var(--c-line);
+}
+.vn-search-opt:last-child {
+  border-bottom: none;
+}
+.vn-search-opt:hover,
+.vn-search-opt.active {
+  background: rgba(139, 26, 26, 0.08);
+}
+.vn-search-icon {
+  flex: 0 0 auto;
+  font-size: 1.05rem;
+}
+.vn-search-name {
+  flex: 1 1 auto;
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.vn-search-loc {
+  flex: 0 1 auto;
+  font-size: 0.76rem;
+  color: var(--c-ink-soft);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 40%;
+}
+.vn-search-empty {
+  padding: 0.7rem 0.8rem;
+  color: var(--c-ink-soft);
+  font-size: 0.85rem;
+}
+/* Chỉ dành cho aria-live báo số kết quả — ẩn khỏi mắt, vẫn đọc được bằng
+   screen reader (kỹ thuật "sr-only" chuẩn). */
+.vn-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  #vn-search {
+    flex: 1 1 100%;
+    max-width: 100%;
+    order: 2;
+  }
+}
+/* === /Ô TÌM KIẾM TOÀN CỤC === */

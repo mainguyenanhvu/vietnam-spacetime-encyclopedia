@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh nhân quân sự cổ–trung đại tiêu biểu (bổ sung) — tướng lĩnh/thổ tù có đền thờ/lăng/di tích, chưa có trong CSDL. Không dùng Wikipedia; nguồn từ cổng nhà nước, khu di tích chính thức, báo chí và hội đồng dòng họ (đã fetch thực tế). [Phase 3 lô4: hợp nhất 4 lớp → nhóm «Danh tướng · Võ tướng · Thủ lĩnh khởi nghĩa (cổ–trung đại)» (dedup core).]",
-  "ngay_cap_nhat": "2026-07-24",
+  "ngay_cap_nhat": "2026-07-26",
   "sources": [
     "Cổng TTĐT Sở VHTT Ninh Bình — vhtt.ninhbinh.gov.vn",
     "Báo Văn hóa — baovanhoa.vn",
@@ -33,7 +33,23 @@
     "Báo Mới — baomoi.com",
     "Người Kể Sử — nguoikesu.com",
     "OpenStreetMap Nominatim (toạ độ)",
-    "Lĩnh Nam Chích Quái; Việt Điện U Linh"
+    "Lĩnh Nam Chích Quái; Việt Điện U Linh",
+    "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
+    "Cổng TTĐT tỉnh An Giang — angiang.gov.vn",
+    "Báo An Giang — baoangiang.com.vn",
+    "Cục Di sản văn hóa — dsvh.gov.vn",
+    "Báo Người Lao Động — nld.com.vn",
+    "vanhoatinnguong.vn",
+    "SkyDoor — skydoor.net",
+    "Hội Nhà văn Việt Nam — vanvn.vn",
+    "Tư liệu lịch sử — tulieulichsu.com",
+    "Báo Đại Đoàn Kết — daidoanket.vn",
+    "Trung tâm Lưu trữ Quốc gia Việt Nam — archives.org.vn",
+    "Viện Nghiên cứu KT-XH Hà Nội — vienktxh.hanoi.gov.vn",
+    "Liên hiệp các Hội KH&KT Việt Nam — vusta.vn",
+    "Thời Mới — thoimoi.vn",
+    "Tủ sách Thanh Niên — tusachthanhnien.vn",
+    "nghethuatvietnam.vn"
   ],
   "items": [
     {
@@ -1342,6 +1358,38 @@
         "Cục Di sản văn hóa — https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-khu-di-tich-ba-trieu-2990",
         "Báo Thanh Hóa — https://baothanhhoa.vn/e-magazine-quan-the-di-tich-lich-su-van-hoa-va-kien-truc-nghe-thuat-den-ba-trieu-cong-trinh-kien-truc-doc-dao-va-giau-gia-tri-180711.htm",
         "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/1508/52352/khu-di-tich-ba-trieu-djon-nhan-bang-di-tich-quoc-gia-djac-biet.html"
+      ]
+    },
+    {
+      "id": "nguyen-van-ton-dieu-bat",
+      "ten": "Nguyễn Văn Tồn (Thống chế Điều Bát)",
+      "lon": 105.955,
+      "lat": 9.905,
+      "loai": "khai-pha",
+      "nam_hien_thi": "1763–1820",
+      "mo_ta": "Người gốc Khmer tên Thạch Duồng, theo giúp chúa Nguyễn, được ban họ Nguyễn và phong chức Điều Bát; có công lớn khai khẩn vùng Trà Ôn, Cầu Kè, gắn kết cộng đồng Kinh – Hoa – Khmer và phụ giúp Thoại Ngọc Hầu đào kênh Vĩnh Tế. Sau khi mất được truy phong Tiền quân Thống chế Điều Bát, dân lập Lăng Ông thờ, lễ hội hằng năm vẫn duy trì.",
+      "dia_diem": "Lăng Ông Thống chế Điều Bát, ấp Giồng Thanh Bạch, xã Thiện Mỹ, huyện Trà Ôn, Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Thanh Niên — thanhnien.vn (Độc đáo đình chùa miếu miền Tây: Tín ngưỡng Lăng Ông Thống chế Điều Bát)",
+        "Cục Di sản văn hóa — dsvh.gov.vn (Lễ hội Lăng Ông Trà Ôn)"
+      ]
+    },
+    {
+      "id": "chau-thi-te",
+      "ten": "Châu Thị Tế (Nhàn Chánh phu nhân)",
+      "lon": 105.1173,
+      "lat": 10.6975,
+      "loai": "khai-pha",
+      "nam_hien_thi": "?–1826",
+      "mo_ta": "Phu nhân Thoại Ngọc Hầu, cùng chồng góp công lớn trong việc đào kênh Vĩnh Tế (1819–1824) nối Châu Đốc – Hà Tiên, công trình khai mở vùng biên viễn Tây Nam. An Giang hằng năm tổ chức lễ tưởng niệm ngày mất của bà cùng dịp kỷ niệm hoàn thành kênh Vĩnh Tế; bà an táng trong khu Sơn Lăng Thoại Ngọc Hầu.",
+      "dia_diem": "Sơn Lăng Thoại Ngọc Hầu, núi Sam, phường Núi Sam, Châu Đốc, An Giang",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo An Giang — baoangiang.com.vn (An Giang long trọng tổ chức lễ kỷ niệm 200 năm hoàn thành kênh Vĩnh Tế và tưởng niệm 198 năm ngày mất của bà Châu Thị Tế)",
+        "Cổng TTĐT tỉnh An Giang — angiang.gov.vn"
       ]
     }
   ]

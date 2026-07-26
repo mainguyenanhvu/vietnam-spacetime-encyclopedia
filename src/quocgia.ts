@@ -57,6 +57,9 @@ interface NhacItem {
 }
 interface NhacData { ghi_chu?: string; items: NhacItem[] }
 
+import { esc, sourcesHtml } from "./util/html";
+import { registerPanel, showOnly, hidePanel } from "./panels";
+
 const PHIM_URL = `${import.meta.env.BASE_URL}data/documentaries/phim-tai-lieu.json`;
 const NHAC_URL = `${import.meta.env.BASE_URL}data/media/nhac-yeu-nuoc.json`;
 const DANHNHAN_URL = `${import.meta.env.BASE_URL}data/figures/danh-nhan.json`;
@@ -85,12 +88,9 @@ const KENH_BADGE: Record<string, string> = {
 
 const YT = /^[A-Za-z0-9_-]{11}$/;
 
-const esc = (s: string): string =>
-  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-
 function embed(vid: string, title: string): string {
   if (!YT.test(vid)) return `<p class="muted">⚠️ Video không hợp lệ.</p>`;
-  return `<div class="qg-embed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${vid}" title="${esc(title)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
+  return `<div class="qg-embed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${vid}" title="${esc(title)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
 }
 
 function badge(kenh_loai: string, draft?: boolean): string {
@@ -139,11 +139,6 @@ function phimCard(ten: string, vid: string, kenh_loai: string, draft: boolean): 
   </article>`;
 }
 
-function sourcesHtml(nguon?: string[]): string {
-  if (!nguon || !nguon.length) return "";
-  return `<details class="qg-sources"><summary>📚 Nguồn</summary><ul>${nguon.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></details>`;
-}
-
 function danhNhanCard(d: DanhNhan): string {
   const hasVid = !!d.youtube_id && YT.test(d.youtube_id);
   const meta = [d.linh_vuc, d.que].filter(Boolean).map((x) => esc(x as string)).join(" · ");
@@ -153,7 +148,7 @@ function danhNhanCard(d: DanhNhan): string {
     ${d.gioi_thieu ? `<p class="qg-bio">${esc(d.gioi_thieu)}</p>` : ""}
     ${badge(d.kenh_loai ?? "khac", d.trang_thai === "draft")}
     ${hasVid ? embed(d.youtube_id as string, d.ten) : `<p class="qg-nophim">🎬 Chưa có phim tài liệu — đang tìm bổ sung.</p>`}
-    ${sourcesHtml(d.nguon)}
+    ${sourcesHtml(d.nguon, "qg-sources")}
   </article>`;
 }
 
@@ -251,14 +246,7 @@ function renderDiaDanhTab(host: HTMLElement): void {
 }
 
 function closePanel(): void {
-  const panel = document.getElementById("quocgia-panel");
-  if (panel) panel.hidden = true;
-}
-function hideOtherPanels(): void {
-  for (const id of ["game-panel", "quiz-panel", "story-panel", "library-panel", "olympia-panel", "battle-panel", "journey-panel"]) {
-    const p = document.getElementById(id);
-    if (p) p.hidden = true;
-  }
+  hidePanel("quocgia-panel");
 }
 
 function switchTab(which: "phim" | "nhac" | "diadanh"): void {
@@ -327,10 +315,9 @@ function buildDom(): { btn: HTMLButtonElement } {
 export function initQuocGia(): void {
   if (document.getElementById("quocgia-panel")) return;
   const { btn } = buildDom();
+  registerPanel("quocgia-panel");
   btn.addEventListener("click", () => {
-    hideOtherPanels();
-    const panel = document.getElementById("quocgia-panel");
-    if (panel) panel.hidden = false;
+    showOnly("quocgia-panel");
     if (!danhnhan || !phim || !nhac || !diadanh) void loadAll();
   });
   document.getElementById("quocgia-close")?.addEventListener("click", closePanel);

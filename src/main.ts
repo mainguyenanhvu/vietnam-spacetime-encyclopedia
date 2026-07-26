@@ -173,8 +173,18 @@ const map = new maplibregl.Map({
   fitBoundsOptions: { padding: 24 },
 });
 
-map.addControl(new maplibregl.NavigationControl(), "top-left");
+// Nút zoom/la bàn ở góc PHẢI-DƯỚI — góc duy nhất không panel nào chiếm.
+// Trái-trên: #layer-control luôn mở, rộng 280px, top = topbar-h + 12px, trong khi
+// ctrl MapLibre neo ở map-top + 10px ⇒ lệch 2px, panel đè kín nút.
+// Phải-trên: #province-panel. Trái-dưới: ScaleControl. Phải-dưới chỉ có attribution,
+// mà MapLibre xếp chồng dọc trong cùng một góc nên không che nhau.
+map.addControl(new maplibregl.NavigationControl(), "bottom-right");
 map.addControl(new maplibregl.ScaleControl(), "bottom-left");
+
+// Chỉ ở chế độ dev: mở `map` ra ngoài để smoke test (scripts/smoke.mjs) đọc được
+// map.getStyle()/queryRenderedFeatures qua CDP — tức kiểm được lớp có VẼ RA THẬT
+// không, thay vì chỉ kiểm code biên dịch được. Vite loại bỏ nhánh này khi build.
+if (import.meta.env.DEV) (window as unknown as { __map: maplibregl.Map }).__map = map;
 
 // Đồng bộ chiều cao thực của topbar vào biến CSS --topbar-h để mọi panel nổi
 // (điều khiển lớp, hồ sơ tỉnh, thư viện…) luôn bám ngay dưới topbar. Chiều cao
@@ -292,9 +302,13 @@ function initSongNui(): void {
           type: "symbol",
           source: "song-nui",
           filter: ["==", ["get", "loai"], "song"],
+          // Đặt nhãn theo ĐIỂM, không theo "line": các LineString sông ở đây là
+          // waypoint sơ đồ hoá (ít đỉnh, gấp khúc mạnh) và bị cắt theo ô tile, nên
+          // ở zoom toàn quốc (mặc định ~4.6) MapLibre không tìm đủ đoạn thẳng để
+          // đặt chữ — đo được 0/38 nhãn, kể cả khi nới symbol-spacing 80 và
+          // text-max-angle 90. Point placement đặt nhãn ở giữa sông và luôn hiện.
           layout: {
             visibility: "none",
-            "symbol-placement": "line",
             "text-field": ["get", "ten"],
             "text-font": ["Open Sans Semibold"],
             "text-size": size,
@@ -305,6 +319,12 @@ function initSongNui(): void {
         before,
       );
       // Điểm núi (▲) LUÔN hiện — allow-overlap để mọi đỉnh đều thấy dù zoom xa.
+      // Fontstack BẮT BUỘC là "Noto Sans Regular": endpoint glyphs demotiles chỉ
+      // phục vụ "Open Sans Semibold" + "Noto Sans Regular", và trong hai stack đó
+      // chỉ Noto có ▲ (U+25B2). Chọn sai stack → glyph range 404 → MapLibre gom
+      // mọi fontstack của CÙNG một source vào một lượt getGlyphs, một 404 làm
+      // Promise.all trong worker_tile vỡ ⇒ TOÀN BỘ tile của source "song-nui"
+      // hỏng, mất luôn cả đường sông (line) lẫn nhãn.
       map.addLayer(
         {
           id: "nui-markers",
@@ -314,7 +334,7 @@ function initSongNui(): void {
           layout: {
             visibility: "none",
             "text-field": "▲",
-            "text-font": ["Open Sans Bold"],
+            "text-font": ["Noto Sans Regular"],
             "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 8, 16, 12, 20],
             "text-allow-overlap": true,
             "text-ignore-placement": true,
@@ -1012,7 +1032,7 @@ async function buildModel3DPanel(host: HTMLElement): Promise<void> {
             stage.hidden = true;
             realBox.innerHTML = `
               <div class="model3d-embed"><iframe title="${esc(def.ten)}" loading="lazy" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen src="https://sketchfab.com/models/${sf.uid}/embed?autospin=0.3&ui_theme=dark&ui_hint=0"></iframe></div>
-              <p class="model3d-attr">Mô hình «${esc(def.ten)}» của <a href="${url}" target="_blank" rel="noopener">${esc(sf.author)}</a> — giấy phép ${esc(LIC_TEN[sf.license] ?? sf.license)} (Sketchfab).</p>`;
+              <p class="model3d-attr">Mô hình «${esc(def.ten)}» của <a href="${url}" target="_blank" rel="noopener noreferrer">${esc(sf.author)}</a> — giấy phép ${esc(LIC_TEN[sf.license] ?? sf.license)} (Sketchfab).</p>`;
           });
         } else {
           realBox.innerHTML = "";
@@ -1209,7 +1229,7 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#b45309",
     nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Quyết định xếp hạng của Thủ tướng Chính phủ",
     popup: (p) =>
-      `<strong>${esc(p.ten)}</strong><br/>${esc(String(p.loai ?? "di tích"))} · Xếp hạng ${esc(String(p.nam ?? ""))}${p.dot ? ` (đợt ${p.dot})` : ""}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
+      `<strong>${esc(p.ten)}</strong><br/>${esc(String(p.loai ?? "di tích"))} · Xếp hạng ${esc(String(p.nam ?? ""))}${p.dot ? ` (đợt ${esc(String(p.dot))})` : ""}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
   },
   {
     id: "bao-vat-quoc-gia",
@@ -1220,7 +1240,7 @@ const OVERLAYS: OverlayConf[] = [
     nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn)",
     popup: (p) => {
       const o = p as OverlayItem & { noi_luu_giu?: string; mo_ta?: string };
-      return `<strong>${esc(o.ten)}</strong><br/>${esc(String(o.loai ?? ""))}${o.dot ? ` · công nhận đợt năm ${o.dot}` : ""}<br/>📍 ${esc(String(o.noi_luu_giu ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}`;
+      return `<strong>${esc(o.ten)}</strong><br/>${esc(String(o.loai ?? ""))}${o.dot ? ` · công nhận đợt năm ${esc(String(o.dot))}` : ""}<br/>📍 ${esc(String(o.noi_luu_giu ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}`;
     },
   },
   {
@@ -1467,7 +1487,7 @@ const OVERLAYS: OverlayConf[] = [
   },
   {
     id: "di-tich-cach-mang",
-    label: "🚩 Di tích cách mạng · Danh thắng · Di sản thiên nhiên",
+    label: "🚩 Di tích cách mạng · Nhà tù · Căn cứ kháng chiến",
     icon: "🚩",
     file: "data/overlays/di-tich-cach-mang.json",
     circleColor: [
@@ -1647,16 +1667,6 @@ const OVERLAYS: OverlayConf[] = [
     circleColor: "#166534",
     nguon:
       "Báo Nhân Dân · Thể thao & Văn hoá · CAND · Lao Động · Thanh Niên · Vovinam",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-nhan-nam-bo",
-    label: "🌾 Danh nhân vùng miền (Nam Bộ · Thừa Thiên Huế)",
-    icon: "🌾",
-    file: "data/overlays/danh-nhan-nam-bo.json",
-    circleColor: "#4d7c0f",
-    nguon:
-      "Cổng tỉnh Nam Bộ · dsvh.gov.vn · Báo Cần Thơ · An Giang · Đồng Tháp · Nhân Dân",
     popup: personOverlayPopup,
   },
   {
@@ -1917,7 +1927,7 @@ const OVERLAY_GROUPS: { nhan: string; icon: string; ids: string[] }[] = [
   { nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
   { nhan: "Sự kiện & Quân sự", icon: "⚔️", ids: ["chien-dich-tran-danh", "danh-nhan-quan-su-co-trung-dai", "nghia-si-can-vuong"] },
   { nhan: "Vua chúa · Khoa bảng · Ngoại giao", icon: "👑", ids: ["vua-hoang-de", "khoa-bang-danh-nhan", "su-than-ngoai-giao", "danh-nhan-cac-trieu"] },
-  { nhan: "Nữ danh nhân · Dân tộc · Vùng miền", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so", "danh-nhan-nam-bo"] },
+  { nhan: "Nữ danh nhân · Dân tộc thiểu số", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so"] },
   { nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
   { nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
   { nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung"] },
@@ -2422,7 +2432,7 @@ async function loadLiterature() {
 }
 
 function poemHtml(p: Poem): string {
-  const rank = p.xep_hang ? `<span class="rank-badge">#${p.xep_hang}</span> ` : "";
+  const rank = p.xep_hang ? `<span class="rank-badge">#${esc(String(p.xep_hang))}</span> ` : "";
   return `<details class="profile-section"><summary>${rank}「${esc(p.ten)}」 — ${esc(p.tac_gia)}</summary>
     <p class="muted">${esc(p.thoi_ky)} · ${esc(p.the_loai)}</p>
     ${p.loi_binh ? `<p class="giai-nghia">💬 ${esc(p.loi_binh)}</p>` : ""}
@@ -2542,7 +2552,7 @@ async function loadMedia(): Promise<MediaImage[]> {
 }
 
 function mediaImgHtml(m: MediaImage): string {
-  const lic = LICENSE_LABEL[m.giay_phep] ?? m.giay_phep;
+  const lic = esc(LICENSE_LABEL[m.giay_phep] ?? String(m.giay_phep ?? ""));
   const credit =
     m.giay_phep === "ai-generated"
       ? `Minh hoạ AI (không dựa trên tác phẩm có bản quyền cụ thể)`
@@ -2719,7 +2729,7 @@ async function openLibrary(): Promise<void> {
         src="https://upload.wikimedia.org/wikipedia/commons/d/dd/An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg" />
       <p class="muted">Tác phẩm thuộc phạm vi công cộng ·
         <a href="https://commons.wikimedia.org/wiki/File:An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg"
-           target="_blank" rel="noopener">Xem bản độ phân giải đầy đủ trên Wikimedia Commons</a></p>
+           target="_blank" rel="noopener noreferrer">Xem bản độ phân giải đầy đủ trên Wikimedia Commons</a></p>
       <details class="sources"><summary>📚 Nguồn</summary><ul>
         <li>Jean-Louis Taberd, Dictionarium Latino-Anamiticum (phụ bản bản đồ), 1838</li>
         <li>Wikimedia Commons — tệp scan gốc 3500×6111</li>

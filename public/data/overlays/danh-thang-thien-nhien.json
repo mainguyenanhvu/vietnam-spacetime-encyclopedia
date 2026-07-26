@@ -989,7 +989,7 @@
       "lat": 20.7833,
       "loai": "vuon-quoc-gia",
       "nam_hien_thi": "1986 (Quyết định số 79-CT ngày 31/3/1986)",
-      "mo_ta": "Vườn quốc gia — khác tư cách với «Quần Đảo Cát Bà» (đã có bản ghi riêng trong DB với tư cách di tích quốc gia đặc biệt, danh lam thắng cảnh, xếp hạng đợt 4 năm 2013) — thành lập theo Quyết định số 79-CT ngày 31/3/1986 của Hội đồng Bộ trưởng, diện tích quản lý 15.200 ha, là một trong những vườn quốc gia đầu tiên của Việt Nam. Ngày 06/4/2004, vườn được chuyển giao cho UBND thành phố Hải Phòng quản lý theo Quyết định 333/QĐ-TTg. Vườn bảo tồn rừng mưa nhiệt đới trên núi đá vôi, rừng ngập mặn và rạn san hô trên đảo Cát Bà — đảo lớn nhất quần đảo, đỉnh cao nhất là Cao Vọng 331 m — đồng thời là vùng lõi của Khu dự trữ sinh quyển thế giới quần đảo Cát Bà (UNESCO công nhận 2004, xem mục riêng nếu được nạp) và một phần của Di sản thiên nhiên thế giới Vịnh Hạ Long – Quần đảo Cát Bà (UNESCO công nhận 2023).",
+      "mo_ta": "Vườn quốc gia — khác tư cách với «Quần đảo Cát Bà» (đã có bản ghi riêng trong DB với tư cách di tích quốc gia đặc biệt, danh lam thắng cảnh, xếp hạng đợt 4 năm 2013) — thành lập theo Quyết định số 79-CT ngày 31/3/1986 của Hội đồng Bộ trưởng, diện tích quản lý 15.200 ha, là một trong những vườn quốc gia đầu tiên của Việt Nam. Ngày 06/4/2004, vườn được chuyển giao cho UBND thành phố Hải Phòng quản lý theo Quyết định 333/QĐ-TTg. Vườn bảo tồn rừng mưa nhiệt đới trên núi đá vôi, rừng ngập mặn và rạn san hô trên đảo Cát Bà — đảo lớn nhất quần đảo, đỉnh cao nhất là Cao Vọng 331 m — đồng thời là vùng lõi của Khu dự trữ sinh quyển thế giới quần đảo Cát Bà (UNESCO công nhận 2004, xem mục riêng) và một phần của Di sản thiên nhiên thế giới Vịnh Hạ Long – Quần đảo Cát Bà (UNESCO công nhận 2023).",
       "dia_diem": "Đảo Cát Bà, huyện Cát Hải, thành phố Hải Phòng",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "draft",
@@ -1244,10 +1244,9 @@
     {
       "id": "thung-lung-tinh-yeu-da-lat",
       "ten": "Thung Lũng Tình Yêu",
-      "loai": "thang-canh",
+      "loai": "danh-thang",
       "lon": 108.4445,
       "lat": 11.9647,
-      
       "nam_hien_thi": "Xếp hạng danh thắng cấp quốc gia 15/10/1998 (QĐ số 04/1998-QĐBVHTT)",
       "mo_ta": "Thắng cảnh cách trung tâm thành phố Đà Lạt khoảng 5km về phía Bắc, diện tích khoanh vùng bảo vệ 342 ha (gồm 3 khu vực bảo vệ). Được Bộ Văn hóa - Thông tin xếp hạng danh lam thắng cảnh cấp quốc gia theo Quyết định số 04/1998-QĐBVHTT ngày 15/10/1998 (cùng đợt với Thác Cam Ly, Thác Đatanla, Thác Prenn).",
       "dia_diem": "Số 5-7 đường Mai Anh Đào, phường Lâm Viên (trước: phường 8), thành phố Đà Lạt, tỉnh Lâm Đồng",
@@ -1256,6 +1255,352 @@
       "xep_hang": "Danh thắng cấp quốc gia — QĐ số 04/1998-QĐBVHTT ngày 15/10/1998 (Bộ Văn hóa - Thông tin)",
       "nguon": [
         "Sở Văn hóa, Thể thao và Du lịch tỉnh Lâm Đồng (lamdong.gov.vn) — Danh mục di tích lịch sử - văn hóa, danh lam thắng cảnh tỉnh Lâm Đồng (mục 6, danh mục danh lam thắng cảnh cấp quốc gia) — https://lamdong.gov.vn/sites/svhttdl/hoatdongdulich/Shared%20Documents/145%20di%20t%C3%ADch%20L%C3%A2m%20%C4%90%E1%BB%93ng.pdf"
+      ]
+    },
+    {
+      "id": "vqg-cuc-phuong",
+      "ten": "Vườn quốc gia Cúc Phương",
+      "lon": 105.6042,
+      "lat": 20.2489,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "thành lập 1962 — vườn quốc gia đầu tiên của Việt Nam",
+      "mo_ta": "Rộng hơn 22.000ha trên ranh giới Ninh Bình – Hòa Bình – Thanh Hóa, là khu bảo tồn thiên nhiên đầu tiên và trung tâm cứu hộ linh trưởng hàng đầu cả nước. Nổi tiếng với mùa bướm tháng 4–5 và hệ động thực vật nguyên sinh phong phú.",
+      "dia_diem": "Nho Quan, Ninh Bình (giáp Hòa Bình, Thanh Hóa)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn Quốc gia Cúc Phương — https://vietnamtourism.vn/index.php/tourism/items/1204"
+      ]
+    },
+    {
+      "id": "vqg-ba-vi",
+      "ten": "Vườn quốc gia Ba Vì",
+      "lon": 105.3667,
+      "lat": 21.0833,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "khu du lịch sinh thái — dãy núi Ba Vì",
+      "mo_ta": "Dãy núi ba đỉnh (Đỉnh Vua 1.296m, Tản Viên 1.227m, Ngọc Hoa 1.131m) cách Hà Nội khoảng 60km, gắn với truyền thuyết Sơn Tinh – Tản Viên Sơn Thánh. Có đền thờ Bác Hồ trên đỉnh, rừng thông và mùa hoa dã quỳ tháng 11 thu hút đông du khách.",
+      "dia_diem": "Huyện Ba Vì, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Khu du lịch và Vườn Quốc gia Ba Vì — https://vietnamtourism.vn/index.php/tourism/items/1201/19"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vuon_QG_Ba_Vi.JPG/330px-Vuon_QG_Ba_Vi.JPG",
+      "anh_nguon": "Wikimedia Commons — Viethavvh at vi.wikipedia · https://commons.wikimedia.org/wiki/File:Vuon_QG_Ba_Vi.JPG",
+      "anh_giay_phep": "Public domain",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "vqg-bach-ma",
+      "ten": "Vườn quốc gia Bạch Mã",
+      "lon": 107.8506,
+      "lat": 16.1975,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "\"nóc nhà\" dải Bắc Trung Bộ",
+      "mo_ta": "Nằm ở độ cao 1.450m thuộc huyện Phú Lộc, thành phố Huế, khí hậu mát mẻ quanh năm với hơn 2.100 loài thực vật và gần 1.500 loài động vật. Là điểm trekking, ngắm thác và khám phá đa dạng sinh học nổi tiếng miền Trung.",
+      "dia_diem": "Phú Lộc, thành phố Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn quốc gia Bạch Mã — https://vietnamtourism.vn/index.php/tourism/items/472"
+      ]
+    },
+    {
+      "id": "vqg-pu-mat",
+      "ten": "Vườn quốc gia Pù Mát",
+      "lon": 104.8969,
+      "lat": 19.0575,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "vùng lõi Khu dự trữ sinh quyển miền tây Nghệ An",
+      "mo_ta": "Diện tích hơn 91.000ha trải trên ba huyện Anh Sơn, Con Cuông, Tương Dương (Nghệ An), là khu rừng đặc dụng lớn dọc biên giới Việt – Lào. Nổi bật với đỉnh Pù Mát 1.841m, sông Giăng và thác Khe Kèm.",
+      "dia_diem": "Con Cuông, Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn quốc gia Pù Mát — https://vietnamtourism.vn/index.php/tourism/items/1701"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/V%C6%B0%E1%BB%9Dn_Qu%E1%BB%91c_Gia_P%C3%B9_M%C3%A1t%E2%91%A1_Con_Cu%C3%B4ng%2C_Ngh%E1%BB%87_An.jpg/330px-V%C6%B0%E1%BB%9Dn_Qu%E1%BB%91c_Gia_P%C3%B9_M%C3%A1t%E2%91%A1_Con_Cu%C3%B4ng%2C_Ngh%E1%BB%87_An.jpg",
+      "anh_nguon": "Wikimedia Commons — KoheiU · https://commons.wikimedia.org/wiki/File:V%C6%B0%E1%BB%9Dn_Qu%E1%BB%91c_Gia_P%C3%B9_M%C3%A1t%E2%91%A1_Con_Cu%C3%B4ng,_Ngh%E1%BB%87_An.jpg",
+      "anh_giay_phep": "CC0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "vqg-u-minh-thuong",
+      "ten": "Vườn quốc gia U Minh Thượng",
+      "lon": 105.1333,
+      "lat": 9.6333,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "khu Ramsar vùng đất ngập nước",
+      "mo_ta": "Thuộc huyện U Minh Thượng, tỉnh Kiên Giang, cách Rạch Giá khoảng 50km, bảo tồn hệ sinh thái rừng tràm ngập nước đặc trưng Đồng bằng sông Cửu Long. Du khách đi vỏ lãi xuyên rừng, ngắm sân chim và tham quan di tích chùa Xẻo Cạn.",
+      "dia_diem": "U Minh Thượng, Kiên Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn Quốc gia U Minh Thượng — https://vietnamtourism.vn/index.php/tourism/items/2700"
+      ]
+    },
+    {
+      "id": "vqg-xuan-thuy",
+      "ten": "Vườn quốc gia Xuân Thủy",
+      "lon": 106.4833,
+      "lat": 20.2333,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "khu Ramsar đầu tiên của Đông Nam Á (1989)",
+      "mo_ta": "Nằm tại huyện Giao Thủy, tỉnh Nam Định, rộng khoảng 7.100ha, là vùng lõi Khu dự trữ sinh quyển thế giới ven biển. Rừng ngập mặn trù phú là điểm dừng chân của hàng ngàn loài chim di trú mỗi năm.",
+      "dia_diem": "Giao Thủy, Nam Định",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Nam Định: Xây dựng hồ sơ đề cử Vườn quốc gia Xuân Thủy — https://vietnamtourism.gov.vn/post/52400"
+      ]
+    },
+    {
+      "id": "vqg-tram-chim",
+      "ten": "Vườn quốc gia Tràm Chim",
+      "lon": 105.5167,
+      "lat": 10.7167,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "khu Ramsar Đồng Tháp Mười",
+      "mo_ta": "Thuộc huyện Tam Nông, tỉnh Đồng Tháp, là mẫu chuẩn hệ sinh thái đất ngập nước Đồng Tháp Mười còn sót lại. Nơi cư trú của sếu đầu đỏ quý hiếm cùng nhiều loài chim nước đặc hữu vùng đồng bằng.",
+      "dia_diem": "Tam Nông, Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn Quốc gia Tràm Chim — https://vietnamtourism.vn/index.php/tourism/items/1221"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Vuon_quoc_gia_Tr%C3%A0m_Chim%2Cxa_Ph%C3%BA_%C4%90%E1%BB%A9c%2C_huyen_Tam_N%C3%B4ng_%2Ctinh_%C4%90%E1%BB%93ng_th%C3%A1p%2CVietnam%2C06-10-13-Dyt_-_panoramio.jpg/330px-Vuon_quoc_gia_Tr%C3%A0m_Chim%2Cxa_Ph%C3%BA_%C4%90%E1%BB%A9c%2C_huyen_Tam_N%C3%B4ng_%2Ctinh_%C4%90%E1%BB%93ng_th%C3%A1p%2CVietnam%2C06-10-13-Dyt_-_panoramio.jpg",
+      "anh_nguon": "Wikimedia Commons — trungydang · https://commons.wikimedia.org/wiki/File:Vuon_quoc_gia_Tr%C3%A0m_Chim,xa_Ph%C3%BA_%C4%90%E1%BB%A9c,_huyen_Tam_N%C3%B4ng_,tinh_%C4%90%E1%BB%93ng_th%C3%A1p,Vietnam,06-10-13-Dyt_-_panoramio.jpg",
+      "anh_giay_phep": "CC BY 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "vqg-yok-don",
+      "ten": "Vườn quốc gia Yok Đôn",
+      "lon": 107.7833,
+      "lat": 12.9333,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "vườn quốc gia lớn nhất Việt Nam về diện tích rừng khộp",
+      "mo_ta": "Thuộc huyện Buôn Đôn và Ea Súp, tỉnh Đắk Lắk, cách Buôn Ma Thuột 40km về phía tây bắc. Là nơi bảo tồn hệ sinh thái rừng khộp đặc trưng Tây Nguyên và các đàn voi hoang dã hiếm hoi còn lại của Việt Nam.",
+      "dia_diem": "Buôn Đôn, Đắk Lắk",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn quốc gia Yok Đôn — https://vietnamtourism.vn/index.php/tourism/items/1559"
+      ]
+    },
+    {
+      "id": "vqg-con-dao",
+      "ten": "Vườn quốc gia Côn Đảo",
+      "lon": 106.6,
+      "lat": 8.6833,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "một trong hai VQG bảo tồn cả rừng và biển của Việt Nam",
+      "mo_ta": "Bao gồm 14 hòn đảo lớn nhỏ thuộc quần đảo Côn Sơn, tỉnh Bà Rịa – Vũng Tàu, bảo tồn cả hệ sinh thái rừng nguyên sinh và rạn san hô, thảm cỏ biển. Là nơi rùa biển đẻ trứng lớn nhất Việt Nam.",
+      "dia_diem": "Côn Đảo, Bà Rịa – Vũng Tàu",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn quốc gia Côn Đảo — https://vietnamtourism.vn/index.php/tourism/items/2626/3"
+      ]
+    },
+    {
+      "id": "vqg-phu-quoc",
+      "ten": "Vườn quốc gia Phú Quốc",
+      "lon": 104,
+      "lat": 10.35,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "khu bảo tồn rừng nguyên sinh đảo lớn nhất Việt Nam",
+      "mo_ta": "Diện tích 31.422ha ở phía bắc đảo Phú Quốc, tỉnh Kiên Giang, trong đó gần 12.800ha là rừng nguyên sinh. Hệ sinh thái rừng nhiệt đới hải đảo đa dạng, gắn với cảnh quan biển đảo nổi tiếng.",
+      "dia_diem": "Phú Quốc, Kiên Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Huyện Phú Quốc — https://vietnamtourism.vn/index.php/tourism/items/2565"
+      ]
+    },
+    {
+      "id": "vqg-bidoup-nui-ba",
+      "ten": "Vườn quốc gia Bidoup – Núi Bà",
+      "lon": 108.5667,
+      "lat": 12.1,
+      "loai": "vuon-quoc-gia",
+      "nam_hien_thi": "thành lập 2004",
+      "mo_ta": "Thuộc huyện Lạc Dương và Đam Rông, tỉnh Lâm Đồng, cách Đà Lạt khoảng 40km, mang tên hai đỉnh núi cao nhất Lâm Đồng: Bidoup 2.287m và Núi Bà 2.167m. Là một trong 5 vườn quốc gia lớn nhất nước với độ che phủ rừng cao, được Quỹ Bảo vệ thiên nhiên quốc tế công nhận là trung tâm đa dạng sinh học.",
+      "dia_diem": "Lạc Dương, Lâm Đồng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vườn Quốc gia Bidoup - Núi Bà, điểm du lịch sinh thái — https://vietnamtourism.gov.vn/post/66931"
+      ]
+    },
+    {
+      "id": "nui-ba-den-tay-ninh",
+      "ten": "Núi Bà Đen",
+      "lon": 106.1667,
+      "lat": 11.3667,
+      "loai": "danh-thang",
+      "nam_hien_thi": "986m — \"nóc nhà Nam Bộ\"",
+      "mo_ta": "Ngọn núi cao nhất Nam Bộ, nằm ở thành phố Tây Ninh, cách trung tâm 11km, là điểm du lịch quốc gia với quần thể tâm linh gồm chùa cổ hơn 300 năm thờ Linh Sơn Thánh Mẫu Bồ Tát. Cáp treo lên đỉnh và tượng Phật Bà Tây Bổ Đà Sơn thu hút đông đảo du khách hành hương.",
+      "dia_diem": "Thành phố Tây Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Du lịch núi Bà Đen (Tây Ninh) - Chinh phục nóc nhà Nam Bộ — https://vietnamtourism.gov.vn/post/37589"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_D%C5%A9ng_s%C4%A9_N%C3%BAi_B%C3%A0_%C4%90en%2C_KDL_N%C3%BAi_B%C3%A0_%C4%90en.JPG/330px-T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_D%C5%A9ng_s%C4%A9_N%C3%BAi_B%C3%A0_%C4%90en%2C_KDL_N%C3%BAi_B%C3%A0_%C4%90en.JPG",
+      "anh_nguon": "Wikimedia Commons — Prenn · https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_D%C5%A9ng_s%C4%A9_N%C3%BAi_B%C3%A0_%C4%90en,_KDL_N%C3%BAi_B%C3%A0_%C4%90en.JPG",
+      "anh_giay_phep": "CC BY-SA 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "fansipan-lao-cai",
+      "ten": "Fansipan",
+      "lon": 103.775,
+      "lat": 22.3033,
+      "loai": "danh-thang",
+      "nam_hien_thi": "3.143m — \"nóc nhà Đông Dương\"",
+      "mo_ta": "Đỉnh núi cao nhất Việt Nam và Đông Dương, nằm ở trung tâm dãy Hoàng Liên Sơn, tỉnh Lào Cai. Tuyến cáp treo 3 dây Fansipan là tuyến dài nhất thế giới, đưa du khách chinh phục đỉnh núi để săn mây và ngắm toàn cảnh Sa Pa.",
+      "dia_diem": "Sa Pa, Lào Cai",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Fansipan - nóc nhà của Đông Dương — https://vietnamtourism.gov.vn/post/29280"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Fansipan_Summit.jpg/330px-Fansipan_Summit.jpg",
+      "anh_nguon": "Wikimedia Commons — Isderion (talk) · https://commons.wikimedia.org/wiki/File:Fansipan_Summit.jpg",
+      "anh_giay_phep": "CC BY-SA 3.0 de",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "ho-nui-coc-thai-nguyen",
+      "ten": "Hồ Núi Cốc",
+      "lon": 105.6667,
+      "lat": 21.6167,
+      "loai": "danh-thang",
+      "nam_hien_thi": "hồ nhân tạo — huyền thoại nàng Công, chàng Cốc",
+      "mo_ta": "Hồ nhân tạo tại huyện Đại Từ, tỉnh Thái Nguyên, hình thành từ việc đắp đập ngăn dòng sông Công. Gắn với truyền thuyết tình yêu nàng Công – chàng Cốc, nay là trung tâm du lịch sinh thái trọng điểm của tỉnh.",
+      "dia_diem": "Đại Từ, Thái Nguyên",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Hồ Núi Cốc, từ huyền thoại đến trung tâm du lịch sinh thái — https://vietnamtourism.gov.vn/post/22496"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/H%E1%BB%93_N%C3%BAi_C%E1%BB%91c.JPG/330px-H%E1%BB%93_N%C3%BAi_C%E1%BB%91c.JPG",
+      "anh_nguon": "Wikimedia Commons — Nguyễn Thanh Quang · https://commons.wikimedia.org/wiki/File:H%E1%BB%93_N%C3%BAi_C%E1%BB%91c.JPG",
+      "anh_giay_phep": "CC BY-SA 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "thac-ban-gioc-cao-bang",
+      "ten": "Thác Bản Giốc",
+      "lon": 106.7281,
+      "lat": 22.8494,
+      "loai": "danh-thang",
+      "nam_hien_thi": "thác nước tự nhiên lớn nhất Đông Nam Á trên biên giới",
+      "mo_ta": "Nằm tại xã Đàm Thủy, huyện Trùng Khánh, tỉnh Cao Bằng, trên dòng sông Quây Sơn ở biên giới Việt – Trung. Được mệnh danh là một trong những thác nước đẹp nhất Việt Nam, thuộc nhóm thác biên giới tự nhiên lớn nhất khu vực.",
+      "dia_diem": "Trùng Khánh, Cao Bằng",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Thác Bản Giốc - vẻ đẹp kỳ vĩ giữa non nước Cao Bằng — https://vietnamtourism.gov.vn/post/36540"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Th%C3%A1c_B%E1%BA%A3n_Gi%E1%BB%91c_-_%C4%90%C3%B4ng_B%E1%BA%AFc_2012_%281%29.JPG/330px-Th%C3%A1c_B%E1%BA%A3n_Gi%E1%BB%91c_-_%C4%90%C3%B4ng_B%E1%BA%AFc_2012_%281%29.JPG",
+      "anh_nguon": "Wikimedia Commons — Phương Huy (thảo luận) · https://commons.wikimedia.org/wiki/File:Th%C3%A1c_B%E1%BA%A3n_Gi%E1%BB%91c_-_%C4%90%C3%B4ng_B%E1%BA%AFc_2012_(1).JPG",
+      "anh_giay_phep": "Public domain",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "dao-ly-son-quang-ngai",
+      "ten": "Đảo Lý Sơn",
+      "lon": 109.1167,
+      "lat": 15.3833,
+      "loai": "danh-thang",
+      "nam_hien_thi": "huyện đảo núi lửa",
+      "mo_ta": "Huyện đảo thuộc tỉnh Quảng Ngãi, cách đất liền khoảng 27km, nổi bật với tầng địa chất núi lửa đặc biệt và cảnh quan biển đảo hoang sơ. Là quê hương đội hùng binh Hoàng Sa xưa, gắn với chủ quyền biển đảo Việt Nam.",
+      "dia_diem": "Huyện Lý Sơn, Quảng Ngãi",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Huyện Lý Sơn — https://vietnamtourism.vn/index.php/tourism/items/2831"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/M%E1%BB%99t_g%C3%B3c_%C4%91%E1%BA%A3o_b%C3%A9_l%C3%BD_s%C6%A1n.jpg/330px-M%E1%BB%99t_g%C3%B3c_%C4%91%E1%BA%A3o_b%C3%A9_l%C3%BD_s%C6%A1n.jpg",
+      "anh_nguon": "Wikimedia Commons — Đôi Ta Đi · https://commons.wikimedia.org/wiki/File:M%E1%BB%99t_g%C3%B3c_%C4%91%E1%BA%A3o_b%C3%A9_l%C3%BD_s%C6%A1n.jpg",
+      "anh_giay_phep": "CC BY-SA 4.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "bien-mui-ne-binh-thuan",
+      "ten": "Biển Mũi Né",
+      "lon": 108.2833,
+      "lat": 10.9333,
+      "loai": "danh-thang",
+      "nam_hien_thi": "trung tâm du lịch biển – đồi cát Bình Thuận",
+      "mo_ta": "Cách trung tâm thành phố Phan Thiết 22km về hướng đông bắc, là điểm du lịch sinh thái biển nổi tiếng với bãi cát thoải, nước trong xanh nắng ấm quanh năm. Nổi bật với các đồi cát bay và làng chài truyền thống.",
+      "dia_diem": "Phường Mũi Né, Phan Thiết, Bình Thuận",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Mũi Né – Thiên đường du lịch hấp dẫn — https://vietnamtourism.gov.vn/post/17558"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/M%C5%A9i_N%C3%A9_th7n2023%2C_Khu_ND_%28bi%E1%BB%83n_Phan_Thi%E1%BA%BFt_M%C5%A9i_N%C3%A9%2C_b%C3%A3i_bi%E1%BB%83n_l%C3%BAc_bi%E1%BB%83n_%C4%91%E1%BB%99ng%29_%2825%29.jpg/330px-M%C5%A9i_N%C3%A9_th7n2023%2C_Khu_ND_%28bi%E1%BB%83n_Phan_Thi%E1%BA%BFt_M%C5%A9i_N%C3%A9%2C_b%C3%A3i_bi%E1%BB%83n_l%C3%BAc_bi%E1%BB%83n_%C4%91%E1%BB%99ng%29_%2825%29.jpg",
+      "anh_nguon": "Wikimedia Commons — Phương Huy · https://commons.wikimedia.org/wiki/File:M%C5%A9i_N%C3%A9_th7n2023,_Khu_ND_(bi%E1%BB%83n_Phan_Thi%E1%BA%BFt_M%C5%A9i_N%C3%A9,_b%C3%A3i_bi%E1%BB%83n_l%C3%BAc_bi%E1%BB%83n_%C4%91%E1%BB%99ng)_(25).jpg",
+      "anh_giay_phep": "CC0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "vinh-vinh-hy-ninh-thuan",
+      "ten": "Vịnh Vĩnh Hy",
+      "lon": 109.2,
+      "lat": 11.6333,
+      "loai": "danh-thang",
+      "nam_hien_thi": "một trong những vịnh biển đẹp nhất Ninh Thuận",
+      "mo_ta": "Thuộc xã Vĩnh Hải, huyện Ninh Hải, tỉnh Ninh Thuận, cách thành phố Phan Rang – Tháp Chàm khoảng 40km. Vịnh có núi bao quanh và hang động đẹp, du khách có thể khám phá bằng thuyền đáy kính ngắm san hô.",
+      "dia_diem": "Ninh Hải, Ninh Thuận",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Vịnh Vĩnh Hy – Nơi biển đảo yên bình — https://vietnamtourism.gov.vn/post/14067"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Vinh_hy_bay.jpg/330px-Vinh_hy_bay.jpg",
+      "anh_nguon": "Wikimedia Commons — Karel Bilek · https://commons.wikimedia.org/wiki/File:Vinh_hy_bay.jpg",
+      "anh_giay_phep": "CC BY-SA 4.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "cu-lao-cham-quang-nam",
+      "ten": "Cù Lao Chàm",
+      "lon": 108.5083,
+      "lat": 15.95,
+      "loai": "danh-thang",
+      "nam_hien_thi": "Khu dự trữ sinh quyển thế giới (UNESCO công nhận)",
+      "mo_ta": "Cụm đảo gồm 8 hòn đảo thuộc xã đảo Tân Hiệp, thành phố Hội An, tỉnh Quảng Nam, cách Cửa Đại khoảng 15km. Là khu bảo tồn biển với rạn san hô phong phú, được UNESCO công nhận Khu dự trữ sinh quyển thế giới. Danh hiệu được trao ngày 26/5/2009, phạm vi 33.146 ha, gồm cả vùng cửa sông ven biển Hội An.",
+      "dia_diem": "Xã đảo Tân Hiệp, Hội An, Quảng Nam",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Khám phá vẻ đẹp đảo xanh Cù Lao Chàm — https://vietnamtourism.gov.vn/post/34413",
+        "Cục Bảo tồn thiên nhiên và Đa dạng sinh học (nbca.gov.vn) — Khu dự trữ sinh quyển thế giới Cù Lao Chàm – Hội An, tỉnh Quảng Nam — https://nbca.gov.vn/khu-du-tru-sinh-quyen-cu-lao-cham-hoi-an-tinh-quang-nam-khu-dtst-cu-lao-cham-hoi-an/",
+        "Cổng TTĐT thành phố Đà Nẵng (danang.gov.vn) — Dấu ấn 17 năm Khu sinh quyển thế giới Cù Lao Chàm – Hội An — https://danang.gov.vn/vi/web/dng/w/dau-an-17-nam-khu-sinh-quyen-the-gioi-cu-lao-cham-hoi-an"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cu_Lao_Cham.JPG/330px-Cu_Lao_Cham.JPG",
+      "anh_nguon": "Wikimedia Commons — Original uploaded by Lê Thy (Transfered by Phó Nháy) · https://commons.wikimedia.org/wiki/File:Cu_Lao_Cham.JPG",
+      "anh_giay_phep": "Public domain",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "dam-van-long-ninh-binh",
+      "ten": "Đầm Vân Long",
+      "lon": 105.9167,
+      "lat": 20.3333,
+      "loai": "danh-thang",
+      "nam_hien_thi": "khu bảo tồn thiên nhiên đất ngập nước lớn nhất đồng bằng Bắc Bộ",
+      "mo_ta": "Diện tích hơn 3.000ha trải trên 7 xã thuộc huyện Gia Viễn, tỉnh Ninh Bình, cách thành phố Ninh Bình khoảng 17km về phía Bắc. Cảnh quan núi đá vôi soi bóng mặt nước tĩnh lặng, là nơi cư trú của voọc mông trắng quý hiếm.",
+      "dia_diem": "Gia Viễn, Ninh Bình",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cục Du lịch Quốc gia Việt Nam — Ngao du đầm Vân Long (Ninh Bình) — https://vietnamtourism.gov.vn/post/47659"
       ]
     }
   ],

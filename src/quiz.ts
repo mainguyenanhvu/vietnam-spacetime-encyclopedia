@@ -24,6 +24,10 @@ interface QuizMetric {
   correct: number;
 }
 
+import { esc } from "./util/html";
+import { todayStr, addDays } from "./util/date";
+import { showOnly } from "./panels";
+
 const LS_REVIEWS = "quiz_reviews";
 const LS_METRIC = "quiz_metric";
 const SESSION_SIZE = 10;
@@ -33,33 +37,6 @@ let session: Card[] = [];
 let sessionIndex = 0;
 let sessionCorrect = 0;
 let dataUrl = "";
-
-const esc = (s: string) =>
-  s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-
-function hideOtherPanels(current: string): void {
-  for (const id of ["library-panel", "game-panel", "quiz-panel", "story-panel"]) {
-    if (id === current) continue;
-    const p = document.getElementById(id);
-    if (p) p.hidden = true;
-  }
-}
-
-function todayStr(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-}
-
-function addDays(days: number): string {
-  const d = new Date();
-  d.setDate(d.getDate() + days);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-}
 
 function loadReviews(): Record<string, Review> {
   try {
@@ -172,7 +149,11 @@ function pickSession(): Card[] {
   const today = todayStr();
   const due = cards.filter((c) => reviews[c.id] && reviews[c.id].due <= today);
   const unseen = cards.filter((c) => !reviews[c.id]);
-  return shuffle([...due, ...shuffle(unseen)]).slice(0, SESSION_SIZE);
+  // Trộn TRONG từng nhóm rồi mới nối — không trộn sau khi nối. Bọc shuffle() ra
+  // ngoài sẽ hoà thẻ đến hạn lẫn vào thẻ chưa học, xoá sạch thứ tự ưu tiên: với
+  // 89 thẻ và 3 thẻ đến hạn, mỗi thẻ đến hạn chỉ còn ~11% cơ hội lọt vào phiên
+  // 10 câu, tức lặp lại ngắt quãng gần như không hoạt động.
+  return [...shuffle(due), ...shuffle(unseen)].slice(0, SESSION_SIZE);
 }
 
 function renderQuestion(): void {
@@ -261,8 +242,7 @@ export function initQuiz(geojsonUrl: string): void {
   document.getElementById("quiz-btn")?.addEventListener("click", () => {
     const panel = document.getElementById("quiz-panel");
     if (!panel) return;
-    hideOtherPanels("quiz-panel");
-    panel.hidden = false;
+    showOnly("quiz-panel");
     const content = document.getElementById("quiz-content");
     if (content && !cards.length)
       content.innerHTML = `<p class="muted">Đang chuẩn bị câu hỏi…</p>`;

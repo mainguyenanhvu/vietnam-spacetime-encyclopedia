@@ -2,10 +2,17 @@
 // đoán tỉnh/thành qua hình bóng (silhouette); phản hồi khoảng cách + hướng;
 // chuỗi ngày chơi (streak) lưu localStorage; chia sẻ lưới emoji không spoiler.
 
+import { esc } from "./util/html";
+import { todayStr, addDays } from "./util/date";
+import { showOnly } from "./panels";
+
 interface GameFeature {
   name: string;
   mergedFrom: string;
+  /** MỌI vòng polygon của tỉnh — vẫn vẽ đủ, kể cả đảo xa. */
   rings: number[][][];
+  /** Vòng polygon lớn nhất (phần đất liền chính) — dùng để căn khung & tâm. */
+  mainRing: number[][];
   centroid: [number, number];
 }
 
@@ -30,27 +37,6 @@ const LS_STATS = "dtx_stats";
 
 let features: GameFeature[] = [];
 let boundariesUrl = "";
-
-const esc = (s: string) =>
-  s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-
-function hideOtherPanels(current: string): void {
-  for (const id of ["library-panel", "game-panel", "quiz-panel", "story-panel"]) {
-    if (id === current) continue;
-    const p = document.getElementById(id);
-    if (p) p.hidden = true;
-  }
-}
-
-function todayStr(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-}
 
 // FNV-1a — chọn tỉnh của ngày một cách tất định
 function hashDate(s: string): number {
@@ -111,6 +97,7 @@ async function loadFeatures(): Promise<GameFeature[]> {
         name: f.properties["Tỉnh thành mới"],
         mergedFrom: f.properties["Tỉnh thành cũ"],
         rings: polys,
+        mainRing: main,
         centroid: [sx / main.length, sy / main.length] as [number, number],
       };
     });
@@ -118,17 +105,29 @@ async function loadFeatures(): Promise<GameFeature[]> {
 }
 
 function silhouetteSvg(f: GameFeature): string {
+  // Căn khung theo VÒNG POLYGON LỚN NHẤT, không phải theo toàn bộ các vòng.
+  //
+  // ⚠️ ĐÂY CHỈ LÀ KHUNG NHÌN ĐỂ VẼ HÌNH CÂU ĐỐ — TUYỆT ĐỐI KHÔNG PHẢI VIỆC
+  // LOẠI QUẦN ĐẢO KHỎI TỈNH. Toàn bộ f.rings vẫn được vẽ đầy đủ ở dưới; các
+  // đảo nằm ngoài khung chỉ bị viewBox cắt khỏi tầm nhìn, KHÔNG bị xoá khỏi dữ
+  // liệu. Chủ quyền Hoàng Sa & Trường Sa của Việt Nam là bất biến của dự án —
+  // đừng lấy chỗ này làm tiền lệ để bỏ đảo ở bất kỳ lớp nào khác.
+  //
+  // Lý do phải làm: Khánh Hoà có 342 polygon, đất liền trải 108,55–109,44° lon
+  // nhưng cả tỉnh (kèm Trường Sa) trải tới 116,94° — gấp 5,37 lần. Căn khung
+  // theo toàn bộ thì hình đất liền teo còn ~19% bề ngang, lẫn giữa hàng trăm
+  // chấm li ti, câu đố ngày đó gần như không đoán được. Đà Nẵng (Hoàng Sa) lệch
+  // 3,62 lần, TP HCM (Côn Đảo) 2,29 lần. 31 tỉnh còn lại không đổi gì.
   let minX = Infinity;
   let minY = Infinity;
   let maxX = -Infinity;
   let maxY = -Infinity;
-  for (const ring of f.rings)
-    for (const [x, y] of ring) {
-      if (x < minX) minX = x;
-      if (y < minY) minY = y;
-      if (x > maxX) maxX = x;
-      if (y > maxY) maxY = y;
-    }
+  for (const [x, y] of f.mainRing) {
+    if (x < minX) minX = x;
+    if (y < minY) minY = y;
+    if (x > maxX) maxX = x;
+    if (y > maxY) maxY = y;
+  }
   const w = maxX - minX || 1;
   const h = maxY - minY || 1;
   const size = 220;
@@ -182,9 +181,7 @@ function recordResult(win: boolean): Stats {
   const stats = loadStats();
   stats.played++;
   if (win) {
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
-    const yStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, "0")}-${String(yesterday.getDate()).padStart(2, "0")}`;
+    const yStr = addDays(-1);
     stats.wins++;
     stats.streak = stats.lastDate === yStr ? stats.streak + 1 : 1;
     stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
@@ -333,8 +330,7 @@ export function initGame(geojsonUrl: string): void {
   document.getElementById("game-btn")?.addEventListener("click", () => {
     const panel = document.getElementById("game-panel");
     if (!panel) return;
-    hideOtherPanels("game-panel");
-    panel.hidden = false;
+    showOnly("game-panel");
     const content = document.getElementById("game-content");
     if (content && !features.length)
       content.innerHTML = `<p class="muted">Đang tải trò chơi…</p>`;

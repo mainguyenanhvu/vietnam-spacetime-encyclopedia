@@ -339,7 +339,7 @@ function renderTangToc(): void {
   const q = ttList[ttIndex];
   const options = shuffle(q.cac_lua_chon);
   c.innerHTML = `
-    <h2>⚡ Vòng 3 · Tăng tốc <span class="muted">câu ${ttIndex + 1}/${ttList.length} · độ khó ${q.do_kho ?? ttIndex + 1}</span></h2>
+    <h2>⚡ Vòng 3 · Tăng tốc <span class="muted">câu ${ttIndex + 1}/${ttList.length} · độ khó ${esc(String(q.do_kho ?? ttIndex + 1))}</span></h2>
     ${scoreBar()}
     <div class="ol-timer"><div id="ol-timer-fill" class="ol-timer-fill"></div><span id="ol-timer-text">${TANG_TOC_SECONDS}s</span></div>
     <p class="muted">Trả lời càng nhanh, điểm càng cao (tối đa ${10 + TANG_TOC_SECONDS} điểm).</p>

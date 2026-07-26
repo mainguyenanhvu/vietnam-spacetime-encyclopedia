@@ -1,0 +1,26 @@
+# Security headers cho Cloudflare Pages (file này KHÔNG có tác dụng trên GitHub
+# Pages — GH Pages không cho đặt header; bản GH Pages dựa vào việc mọi dữ liệu
+# đều đã escape ở tầng render).
+#
+# Danh sách host dưới đây được QUÉT từ mã nguồn, không liệt kê theo trí nhớ:
+#   demotiles.maplibre.org      main.ts glyphs  → nhãn tự render, GỒM CẢ nhãn
+#                               chủ quyền "Quần đảo Hoàng Sa/Trường Sa (Việt Nam)".
+#                               Chặn host này = MẤT NHÃN CHỦ QUYỀN.
+#   *.basemaps.cartocdn.com     main.ts tile nền light_nolabels (a/b/c/d.)
+#   upload.wikimedia.org        ảnh chân dung/tư liệu + bản đồ cổ Taberd 1838.
+#                               Là host DUY NHẤT trong 347 trường anh/url của
+#                               public/data/** (đã quét toàn bộ 95 file).
+#   youtube-nocookie / sketchfab / google.com   iframe nhúng (frame-src).
+# Các tên miền báo chí & cổng nhà nước trong dữ liệu chỉ là TEXT trích nguồn
+# (render trong <li>, không thành <a href>/<img>) nên không cần cấp quyền.
+#
+# 'unsafe-inline' ở style-src là BẮT BUỘC: popup bản đồ dùng thuộc tính
+# style="..." dày đặc và maplibre-gl gán element.style liên tục.
+# worker-src blob: BẮT BUỘC cho web worker của maplibre-gl.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://upload.wikimedia.org https://*.basemaps.cartocdn.com; connect-src 'self' https://demotiles.maplibre.org https://*.basemaps.cartocdn.com https://upload.wikimedia.org; frame-src https://www.youtube-nocookie.com https://sketchfab.com https://www.google.com; worker-src blob:; child-src blob:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), usb=(), payment=()
+  Cross-Origin-Opener-Policy: same-origin

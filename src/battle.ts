@@ -213,7 +213,7 @@ function applyStep(content: HTMLElement): void {
     if (el) el.innerHTML = html;
   };
   set("battle-step-count", `Bước ${stepIdx + 1}/${n}`);
-  set("battle-step-title", `${step.id}. ${esc(step.tieu_de)}`);
+  set("battle-step-title", `${esc(String(step.id))}. ${esc(step.tieu_de)}`);
   set("battle-step-desc", esc(step.mo_ta));
   set(
     "battle-tide",
@@ -251,7 +251,7 @@ function renderPanel(content: HTMLElement): void {
       <span><b>Chỉ huy:</b> ${esc(b.chi_huy)}</span>
       <span><b>Đối thủ:</b> ${esc(b.doi_thu)}</span>
       <span><b>Địa điểm:</b> ${esc(b.dia_diem)}</span>
-      <span><b>Năm:</b> ${b.nam}</span>
+      <span><b>Năm:</b> ${esc(String(b.nam))}</span>
     </div>
     ${buildSvg()}
     <div class="battle-controls">
