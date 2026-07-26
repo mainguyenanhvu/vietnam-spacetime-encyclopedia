@@ -6,6 +6,7 @@ import type {
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
+import { initSearch } from "./search";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
 import { initStory } from "./story";
@@ -893,6 +894,9 @@ map.on("load", () => {
   setPeriod(currentPeriod);
   buildTimeline();
   buildLayerControl();
+  // Ô tìm kiếm toàn cục: 2005 mục trải 33 lớp thì duyệt tay không nổi. Chỉ mục
+  // nạp LƯỜI (lần đầu chạm ô tìm) để không cộng thêm vào lượt tải đầu trang.
+  initSearch(map, OVERLAYS, (id) => void toggleOverlay(id, true));
 
   document
     .getElementById("threed-btn")

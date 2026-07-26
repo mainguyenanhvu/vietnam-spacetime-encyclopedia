@@ -881,6 +881,13 @@ export function mountFigure3D(container: HTMLElement, figureId: string): FigureH
         else if (mtl) mtl.dispose();
       });
       renderer.dispose();
+      // dispose() giải phóng tài nguyên three.js nhưng KHÔNG trả WebGL context
+      // về cho trình duyệt. Đo thật: tạo 24 context rồi chỉ bỏ tham chiếu →
+      // Chrome tự thu hồi 9 cái ngoài ý muốn; có forceContextLoss() → 0 cái.
+      // Chrome giới hạn ~16 context, vượt là mất bản đồ.
+      // KHÔNG áp cách này cho landmarks3d.ts — renderer ở đó dùng chung canvas
+      // với MapLibre, huỷ context là giết luôn bản đồ.
+      renderer.forceContextLoss();
       if (canvas.parentNode === container) container.removeChild(canvas);
     },
   };

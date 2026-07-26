@@ -669,6 +669,9 @@ export function mountModel3D(container: HTMLElement, modelId: string): Model3DHa
         else if (mtl) mtl.dispose();
       });
       renderer.dispose();
+      // Xem giải thích ở figures3d.ts: dispose() không trả WebGL context về
+      // trình duyệt, phải gọi thêm forceContextLoss() mới hết rò.
+      renderer.forceContextLoss();
       if (canvas.parentNode === container) container.removeChild(canvas);
     },
   };
