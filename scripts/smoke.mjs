@@ -88,6 +88,26 @@ const GL_PROBE = `(() => {
     const ctx = orig.call(this, type, ...rest);
     if (ctx && /webgl/i.test(String(type))) {
       window.__gl.created++;
+      // Bọc getExtension để bắt cả lần loseContext() do THƯ VIỆN gọi ngầm.
+      // three.js dispose bằng renderer.forceContextLoss(), bên trong nó lấy
+      // extension WEBGL_lose_context rồi gọi loseContext() — không đi qua code
+      // của dự án nên không thể đặt cờ thủ công. Không bọc chỗ này thì mọi lần
+      // nhả context ĐÚNG CÁCH đều bị đếm nhầm thành "Chrome thu hồi", tức S2
+      // báo rò trong khi thực tế đã hết rò.
+      if (!this.__extWrapped) {
+        this.__extWrapped = true;
+        const canvas = this;
+        const origGetExt = ctx.getExtension.bind(ctx);
+        ctx.getExtension = function (name) {
+          const ext = origGetExt(name);
+          if (ext && name === "WEBGL_lose_context" && !ext.__wrapped) {
+            ext.__wrapped = true;
+            const origLose = ext.loseContext.bind(ext);
+            ext.loseContext = function () { canvas.__tuNguyen = true; return origLose(); };
+          }
+          return ext;
+        };
+      }
       if (!this.__glWatched) {
         this.__glWatched = true;
         this.addEventListener("webglcontextlost", () => {
@@ -260,8 +280,10 @@ async function s2(cdp, cycles = 20) {
   // Phải tách như chính S2b đã tách: chỉ mất context NGOÀI Ý MUỐN mới là lỗi.
   const truoc = JSON.parse(before);
   const tuNguyen = after.lostTuNguyen - truoc.lostTuNguyen;
-  const biThuHoi = after.lost - truoc.lost - tuNguyen;
-  const ok = biThuHoi <= 0 && tooMany.length === 0;
+  // Probe đã tách sẵn hai bộ đếm: `lostTuNguyen` và `lost`. Đừng trừ thêm lần
+  // nữa, nếu không số «bị thu hồi» ra âm — vô nghĩa và che mất rò rỉ thật.
+  const biThuHoi = after.lost - truoc.lost;
+  const ok = biThuHoi === 0 && tooMany.length === 0;
   record(
     "S2",
     `Rò WebGL context sau ${cycles} lượt Hành trình↔Sa đồ`,
