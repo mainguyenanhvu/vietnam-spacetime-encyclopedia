@@ -6,7 +6,7 @@ import type {
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
-import { registerPanel, showOnly, hidePanel } from "./panels";
+import { registerPanel, showOnly, hidePanel, hideAllPanels } from "./panels";
 import { initSearch } from "./search";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
@@ -934,6 +934,15 @@ map.on("load", () => {
   // Ô tìm kiếm toàn cục: 2005 mục trải 33 lớp thì duyệt tay không nổi. Chỉ mục
   // nạp LƯỜI (lần đầu chạm ô tìm) để không cộng thêm vào lượt tải đầu trang.
   initSearch(map, OVERLAYS, (id) => void toggleOverlay(id, true));
+
+  // Escape đóng mọi panel đang mở. Đi qua sổ đăng ký nên hàm dọn của từng panel
+  // vẫn chạy: gỡ `kid-mode`, dừng đồng hồ Olympia, dispose mô hình 3D, tắt hoạt
+  // ảnh Nam tiến. Trước đây mỗi panel chỉ đóng được bằng nút × của chính nó.
+  // search.ts đã stopPropagation cho Escape của riêng nó, nên ô tìm kiếm đang mở
+  // sẽ đóng dropdown trước, không kéo theo cả panel.
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") hideAllPanels();
+  });
 
   document
     .getElementById("threed-btn")
