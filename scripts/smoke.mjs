@@ -82,7 +82,7 @@ function quizBank() {
 // Đếm WebGL context được tạo + bắt sự kiện mất context. Đây là cách đo rò
 // context mà không cần API nội bộ của trình duyệt.
 const GL_PROBE = `(() => {
-  window.__gl = { created: 0, lost: 0, restored: 0 };
+  window.__gl = { created: 0, lost: 0, lostTuNguyen: 0, restored: 0 };
   const orig = HTMLCanvasElement.prototype.getContext;
   HTMLCanvasElement.prototype.getContext = function (type, ...rest) {
     const ctx = orig.call(this, type, ...rest);
@@ -90,7 +90,12 @@ const GL_PROBE = `(() => {
       window.__gl.created++;
       if (!this.__glWatched) {
         this.__glWatched = true;
-        this.addEventListener("webglcontextlost", () => { window.__gl.lost++; });
+        this.addEventListener("webglcontextlost", () => {
+          // Phân biệt mất context DO TA CHỦ ĐỘNG gọi loseContext() với mất do
+          // Chrome tự thu hồi khi chạm trần — chỉ loại sau mới là rò rỉ.
+          if (this.__tuNguyen) window.__gl.lostTuNguyen++;
+          else window.__gl.lost++;
+        });
         this.addEventListener("webglcontextrestored", () => { window.__gl.restored++; });
       }
     }
@@ -247,6 +252,50 @@ async function s2(cdp, cycles = 20) {
     ].join("\n"),
   );
   return after;
+}
+
+/**
+ * S2b — thí nghiệm cơ chế: BỎ THAM CHIẾU một WebGL context có đủ để trình duyệt
+ * thu hồi nó không? Trả lời câu hỏi «dispose-on-hide đã đủ chưa», tách khỏi mọi
+ * chi tiết của three.js.
+ *
+ * @param tuNguyen true = gọi WEBGL_lose_context.loseContext() sau khi tạo
+ *                 (đúng việc mà renderer.forceContextLoss() làm bên trong).
+ */
+async function s2b(cdp, tuNguyen) {
+  const out = await cdp.evaluate(`(async () => {
+    const truoc = { ...window.__gl };
+    for (let i = 0; i < 24; i++) {
+      const c = document.createElement("canvas");
+      c.width = c.height = 32;
+      const gl = c.getContext("webgl2") || c.getContext("webgl");
+      if (${tuNguyen} && gl) { c.__tuNguyen = true; gl.getExtension("WEBGL_lose_context")?.loseContext(); }
+      // không giữ tham chiếu nào tới c/gl — mô phỏng đúng renderer.dispose()
+    }
+    await new Promise(r => setTimeout(r, 1500));
+    const sau = { ...window.__gl };
+    const canvas = document.createElement("canvas");
+    const probe = canvas.getContext("webgl2") || canvas.getContext("webgl");
+    return { truoc, sau, contextMoiHopLe: !!probe && !probe.isContextLost() };
+  })()`);
+  await cdp.send("HeapProfiler.collectGarbage");
+  const batBuoc = out.sau.lost - out.truoc.lost;
+  const ok = batBuoc === 0;
+  record(
+    tuNguyen ? "S2b-2" : "S2b-1",
+    tuNguyen
+      ? "Cơ chế: tạo 24 context CÓ gọi loseContext()"
+      : "Cơ chế: tạo 24 context rồi chỉ BỎ THAM CHIẾU",
+    ok,
+    [
+      `context bị Chrome thu hồi ngoài ý muốn: ${batBuoc}`,
+      `context tự nguyện nhả: ${out.sau.lostTuNguyen - out.truoc.lostTuNguyen}`,
+      `xin context mới sau đó: ${out.contextMoiHopLe ? "hợp lệ" : "HỎNG"}`,
+      tuNguyen
+        ? "→ nhả tường minh thì không ai bị thu hồi oan"
+        : "→ nếu số này > 0: bỏ tham chiếu KHÔNG đủ, phải nhả context tường minh",
+    ].join("\n"),
+  );
 }
 
 /** S3 — mở lần lượt mọi panel: luôn chỉ đúng 1 panel hiện. */
@@ -513,6 +562,18 @@ async function main() {
       identifier: dateScript.result.identifier,
     });
     void glScript;
+
+    // ── Lượt C & D: thí nghiệm cơ chế thu hồi WebGL context, mỗi phép đo một
+    // trang sạch để hai phép không nhiễu nhau.
+    console.log("\n──────── LƯỢT C/D (thí nghiệm cơ chế WebGL context) ────────");
+    for (const tuNguyen of [false, true]) {
+      cdp.reset();
+      await cdp.send("Page.navigate", { url: "about:blank" });
+      await sleep(400);
+      await cdp.send("Page.navigate", { url: ORIGIN });
+      await sleep(5000);
+      await s2b(cdp, tuNguyen);
+    }
 
     const shot = await cdp.send("Page.captureScreenshot", { format: "png" });
     if (shot.result?.data) {

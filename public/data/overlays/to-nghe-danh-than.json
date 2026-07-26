@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Ông tổ nghề (craft founders) và thành hoàng/danh thần bổ sung (chưa có trong CSDL). Toạ độ làng nghề/đền thờ ước lượng theo địa danh xã/huyện (mức 'trung'-'cao'). Nguồn: cổng nhà nước cấp xã/tỉnh (hanoi.gov.vn, sovhtt.hanoi.gov.vn, ninhbinh.gov.vn, bacninh.gov.vn, thanhhoa.gov.vn, hungyen.gov.vn, baochinhphu.vn, baonamdinh.vn), Cục Di sản văn hóa (dsvh.gov.vn), Uỷ ban Nhà nước về người Việt Nam ở nước ngoài (scov.gov.vn). KHÔNG dùng Wikipedia. [Phase 3 lô4: hợp nhất 2 lớp → nhóm «Tổ nghề · Nghệ nhân · Làng nghề truyền thống» (dedup exact).]",
-  "ngay_cap_nhat": "2026-07-24",
+  "ngay_cap_nhat": "2026-07-26",
   "sources": [
     "Sở Văn hóa và Thể thao Hà Nội — sovhtt.hanoi.gov.vn",
     "UBND Thành phố Hà Nội và các xã/phường trực thuộc — hanoi.gov.vn",
@@ -1003,6 +1003,102 @@
         "Báo Nhân Dân — Rộn ràng Ngày hội làng nghề truyền thống mộc Kim Bồng — https://nhandan.vn/ron-rang-ngay-hoi-lang-nghe-truyen-thong-moc-kim-bong-post859719.html",
         "Báo Quảng Nam — Rộn ràng giỗ tổ nghề mộc Kim Bồng — https://baoquangnam.vn/ron-rang-gio-to-nghe-moc-kim-bong-3026720.html"
       ]
+    },
+    {
+      "id": "lang-diem-quan-ho",
+      "ten": "Làng Diềm (thôn Viêm Xá)",
+      "lon": 106.08,
+      "lat": 21.2,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "chưa xác minh được",
+      "mo_ta": "Làng cổ ven sông Cầu, thuộc phường Hòa Long, tỉnh Bắc Ninh, được xem là cái nôi của dân ca Quan họ — di sản văn hóa phi vật thể đại diện của nhân loại được UNESCO ghi danh. Làng còn giữ đền thờ Vua Bà (thủy tổ Quan họ), Đền Cùng — Giếng Ngọc cùng không gian làng quê Bắc Bộ nguyên vẹn với cây đa, giếng nước, sân đình.",
+      "dia_diem": "Phường Hòa Long, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VinWonders (Vingroup) — Làng Diềm Bắc Ninh: Nét đẹp cổ kính giữa lòng Kinh Bắc — https://vinwonders.com/vi/wonderpedia/news/lang-diem-bac-ninh/"
+      ],
+      "xep_hang": "chưa xác minh được"
+    },
+    {
+      "id": "lang-nghe-duc-dong-quang-bo",
+      "ten": "Làng nghề đúc đồng Quảng Bố",
+      "lon": 106.2,
+      "lat": 21.02,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "chưa xác minh được",
+      "mo_ta": "Làng nghề đúc đồng truyền thống thuộc xã Quảng Phú, huyện Lương Tài, tỉnh Bắc Ninh, dân gian quen gọi là làng Vó. Nghề gắn với truyền tích ông Nguyễn Công Nghệ thời Lý — người quê làng Vó, đỗ đạt làm quan rồi trở về truyền dạy dân nghề đúc đồng để thoát nghèo. Hiện làng có hàng trăm hộ và doanh nghiệp làm nghề đúc đồng và cơ khí chính xác song song với làng đúc đồng Đại Bái cùng huyện.",
+      "dia_diem": "Xã Quảng Phú, huyện Lương Tài, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng thông tin điện tử tỉnh Bắc Ninh — Làng nghề đúc đồng Quảng Bố — https://bacninh.gov.vn/news/-/details/20182/lang-nghe-uc-ong-quang-bo"
+      ],
+      "xep_hang": "chưa xác minh được"
+    },
+    {
+      "id": "lang-hoa-sa-dec",
+      "ten": "Làng hoa Sa Đéc",
+      "lon": 105.75,
+      "lat": 10.29,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "chưa xác minh được",
+      "mo_ta": "Làng nghề trồng hoa kiểng truyền thống hơn trăm năm tuổi, thuộc thành phố Sa Đéc, tỉnh Đồng Tháp, một trong những vùng hoa kiểng lớn nhất Đồng bằng sông Cửu Long. Làng cung cấp hoa Tết cho khắp Nam Bộ, đồng thời là điểm tham quan gắn với các di tích lân cận như nhà cổ Huỳnh Thủy Lê, Kiến An Cung đã được ghi nhận trong hồ sơ di tích quốc gia của tỉnh.",
+      "dia_diem": "Thành phố Sa Đéc, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Gody.vn (chuyên trang du lịch, dẫn số liệu Sở VHTTDL Đồng Tháp) — Làng hoa Sa Đéc Đồng Tháp — https://gody.vn/chau-a/viet-nam/dong-thap/lang-hoa-kieng-sa-dec"
+      ],
+      "xep_hang": "chưa xác minh được"
+    },
+    {
+      "id": "lang-ngoi-quynh-son",
+      "ten": "Làng nghề ngói âm dương Quỳnh Sơn",
+      "lon": 106.33,
+      "lat": 21.9,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "chưa xác minh được",
+      "mo_ta": "Làng nghề làm ngói âm dương truyền thống của người Tày, Nùng, thuộc xã Bắc Sơn, tỉnh Lạng Sơn, có tuổi đời hơn một trăm năm. Nghề được du nhập cuối thế kỷ 19 qua ông Lý Khoát, người đưa thợ từ Cao Bằng về tìm đất sét và mở lò nung. Từ năm 2010, cộng đồng làng đã cùng xây dựng mô hình du lịch cộng đồng gắn với nghề truyền thống.",
+      "dia_diem": "Xã Bắc Sơn, tỉnh Lạng Sơn",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Thời báo Kinh tế Sài Gòn (thesaigontimes.vn) — Lửa nghề trăm năm trong làng làm ngói âm dương — https://bnews.vn/lua-nghe-tram-nam-trong-lang-lam-ngoi-am-duong/396963.html"
+      ],
+      "xep_hang": "chưa xác minh được"
+    },
+    {
+      "id": "lang-gach-gom-mang-thit",
+      "ten": "Làng nghề gạch gốm Mang Thít",
+      "lon": 106.05,
+      "lat": 10.13,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "chưa xác minh được",
+      "mo_ta": "Làng nghề gạch, gốm hình thành hơn 100 năm trước dọc sông Cổ Chiên, huyện Mang Thít, tỉnh Vĩnh Long, từng được mệnh danh «Vương quốc đỏ» với hơn 3.000 lò gạch nung hoạt động thời kỳ đỉnh cao, trải dài khoảng 30 km. Hiện còn khoảng 800 lò, và tỉnh đang quy hoạch khu vực thành điểm du lịch di sản làng nghề trọng điểm.",
+      "dia_diem": "Huyện Mang Thít, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietNamNet — Làng nghề lò gạch, gốm trăm tuổi ở Vĩnh Long thành khu du lịch trọng điểm — https://vietnamnet.vn/lang-nghe-lo-gach-gom-tram-tuoi-o-vinh-long-thanh-khu-du-lich-trong-diem-2346433.html"
+      ],
+      "xep_hang": "chưa xác minh được"
+    },
+    {
+      "id": "lang-nghe-tau-hu-ky-my-hoa",
+      "ten": "Làng nghề tàu hũ ky Mỹ Hòa",
+      "lon": 105.85,
+      "lat": 10.05,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "Di sản PVT QG 2022",
+      "mo_ta": "Làng nghề làm tàu hũ ky (váng đậu) truyền thống ven sông Cái Vồn, thuộc xã Mỹ Hòa, thị xã Bình Minh, tỉnh Vĩnh Long, hình thành từ năm 1912 bởi ông Châu Xường cùng gia đình. Hiện có khoảng 30 hộ theo nghề, sản lượng khoảng 4 tấn sản phẩm mỗi ngày. Ngày 4/8/2022, Bộ Văn hóa, Thể thao và Du lịch đưa nghề làm tàu hũ ky Mỹ Hòa vào Danh mục di sản văn hóa phi vật thể quốc gia.",
+      "dia_diem": "Xã Mỹ Hòa, thị xã Bình Minh, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Vĩnh Long: Nghề làm tàu hũ ky xã Mỹ Hòa được công nhận Di sản văn hóa quốc gia — https://nhandan.vn/vinh-long-nghe-lam-tau-hu-ky-xa-my-hoa-duoc-cong-nhan-di-san-van-hoa-quoc-gia-post746069.html"
+      ],
+      "xep_hang": "Di sản văn hóa phi vật thể quốc gia — đưa vào danh mục ngày 4/8/2022 (Bộ VHTTDL); số quyết định chưa xác minh được"
     }
   ]
 }

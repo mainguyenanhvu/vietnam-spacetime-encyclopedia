@@ -52,6 +52,7 @@ const STRICT_SOURCE = new Set([
   "di-tich-quoc-gia.json",
   "di-tich-qgdb.json",
   "unesco.json",
+  "truyen-thuyet-dan-gian.json",
 ]); // yêu cầu nguồn ngoài Wiki mỗi mục
 const globalIds = new Map(); // id -> "file[i] (ten)" — chống trùng id XUYÊN 69 file
 for (const file of readdirSync(OVERLAY_DIR).filter((f) => f.endsWith(".json"))) {

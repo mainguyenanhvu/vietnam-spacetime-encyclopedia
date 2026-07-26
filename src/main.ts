@@ -1554,8 +1554,18 @@ const OVERLAYS: OverlayConf[] = [
     popup: personOverlayPopup,
   },
   {
+    id: "truyen-thuyet-dan-gian",
+    label: "🐉 Truyền thuyết · Sự tích địa danh · Ca dao vùng đất",
+    icon: "🐉",
+    file: "data/overlays/truyen-thuyet-dan-gian.json",
+    circleColor: "#7c3aed",
+    nguon:
+      "Cổng TTĐT tỉnh/huyện · báo Đảng bộ tỉnh · Cục Di sản văn hoá · Sở VHTTDL · TTXVN",
+    popup: eventOverlayPopup,
+  },
+  {
     id: "danh-thang-thien-nhien",
-    label: "🏞 Danh thắng thiên nhiên (đèo · thác · núi · hồ · vịnh)",
+    label: "🏞 Danh thắng thiên nhiên (đèo · thác · núi · hồ · biển đảo)",
     icon: "🏞",
     file: "data/overlays/danh-thang-thien-nhien.json",
     circleColor: "#059669",
@@ -1931,7 +1941,7 @@ const OVERLAY_GROUPS: { nhan: string; icon: string; ids: string[] }[] = [
   { nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
   { nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
   { nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung"] },
-  { nhan: "Huyền sử", icon: "🐉", ids: ["huyen-su-khai-quoc"] },
+  { nhan: "Huyền sử & Truyền thuyết", icon: "🐉", ids: ["huyen-su-khai-quoc", "truyen-thuyet-dan-gian"] },
 ];
 
 function buildLayerControl(): void {
