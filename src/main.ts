@@ -146,7 +146,18 @@ const map = new maplibregl.Map({
   container: "map",
   style: {
     version: 8,
-    glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+    // Glyph TỰ HOST. Trước đây trỏ demotiles.maplibre.org — máy chủ DEMO của
+    // MapLibre, không cam kết dịch vụ. Nó chết là mất MỌI nhãn tự render, kể cả
+    // nhãn chủ quyền «Quần đảo Hoàng Sa (Việt Nam)»: rủi ro chủ quyền, không
+    // chỉ rủi ro kỹ thuật. Cũng bỏ được một request bên thứ ba mỗi lượt xem.
+    //
+    // public/fonts/ giữ 9 dải Unicode mà nhãn bản đồ thật sự dùng (879 KB), quét
+    // từ `ten` của mọi mục overlay + tên tỉnh trong geojson + "▲". KHÔNG gồm chữ
+    // Hán của thư viện văn học — chúng render bằng HTML, không qua glyph.
+    // ⚠️ Thêm nhãn có ký tự ngoài 9 dải này sẽ 404, và một range 404 làm hỏng
+    // TOÀN BỘ tile của source đó (xem bug lớp sông núi). Smoke S1 gác chỗ này:
+    // nó đỏ nếu có bất kỳ request /font/ nào trả ≥400.
+    glyphs: `${import.meta.env.BASE_URL}fonts/{fontstack}/{range}.pbf`,
     sources: {
       // Nền KHÔNG NHÃN (CARTO light_nolabels). Bắt buộc: nền có nhãn của bên
       // thứ ba (OSM mặc định...) hiển thị địa danh phi pháp do nước ngoài đặt

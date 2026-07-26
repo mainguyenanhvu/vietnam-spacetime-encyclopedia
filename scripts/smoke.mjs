@@ -217,7 +217,10 @@ async function s1(cdp) {
   const NHIEU = /favicon\.ico/;
   const netFail = cdp.netFail.filter((s) => !NHIEU.test(s));
   const consoleMsgs = cdp.consoleMsgs.filter((s) => !NHIEU.test(s) && !/status of 404/.test(s));
-  const fontFails = netFail.filter((s) => /\/font\//.test(s));
+  // `/fonts/` (số nhiều) là đường dẫn glyph TỰ HOST sau khi bỏ demotiles;
+  // `/font/` là đường cũ. Bắt cả hai, nếu không cổng này mù ngay sau khi
+  // chuyển sang self-host — đúng lúc nó cần thiết nhất.
+  const fontFails = netFail.filter((s) => /\/fonts?\//.test(s));
   const ok = hasCanvas && consoleMsgs.length === 0 && netFail.length === 0;
   cdp.consoleMsgs = consoleMsgs;
   cdp.netFail = netFail;
