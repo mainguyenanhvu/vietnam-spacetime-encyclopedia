@@ -149,3 +149,20 @@ bảng, thêm trận đánh) chờ **phiên mới reset search**. Ưu tiên ngư
 - DB dedup 2031→**2052**. 2 cờ TRÙNG đều site-vs-event thiết kế sẵn. Hoãn: Hoa Lộc/Đa Bút/Mái đá Điều/Cồn Ràng (nguồn), Toà Khâm sứ (quần thể Huế), Dinh Tỉnh trưởng ĐL, biệt điện hồ Lắk.
 - **Vỉa §9-nhạy-cảm ĐỂ DÀNH cho Iron Man quyết**: nghĩa trang Trường Sơn/Đường 9, sân bay Tà Cơn, Dốc Miếu–Cồn Tiên, K9 Đá Chông, bến Vũng Rô (tàu Không số). 3 gate xanh.
 - NGÀY 25/7 tổng: 5 sóng, **+197 mục draft**, 2 lớp mới, di-tich-quoc-gia 94→216, DB dedup 1856→2052.
+
+## Sóng 6 — Chiến tranh (A+B theo lệnh Iron Man) + Danh hiệu cổ (2026-07-26)
+
+**Kết quả**: +25 draft → `di-tich-quoc-gia.json` 216→241. Commit sau 3 gate xanh.
+
+**Lô chiến tranh (15)** — vỉa §9-nhạy-cảm được Iron Man duyệt mở («Làm A và B»):
+nghĩa trang LSQG Trường Sơn + Đường 9, sân bay Tà Cơn, căn cứ Làng Vây, Dốc Miếu–Cồn Tiên (hàng rào McNamara), K9 Đá Chông, bến Vũng Rô, cầu Hàm Rồng, phà Long Đại, Sơn Mỹ, Xẻo Quýt (→ GỠ: trùng «Xẻo Quít» trong di-tich-cach-mang.json), Cò Nòi, địa đạo Kỳ Anh, địa đạo Long Phước, Nước Oa.
+- Loại 1 trùng thật tại dry-run: Tà Thiết = «Căn cứ Bộ Chỉ huy QGP miền Nam» (di-tich-qgdb).
+- Hoãn 4: A Bia (thiếu nguồn nhà nước), Khe Gát (nghi điểm thành phần Đường Trường Sơn), Núi Bà Đen (không tách bạch), TW Cục (đã có).
+
+**Lô danh hiệu cổ (11→11)**:
+- An Nam tứ đại khí đủ 4/4: tháp Báo Thiên, chuông Quy Điền, vạc Phổ Minh (coexistence với Đền Trần–Chùa Phổ Minh, mo_ta mở đầu phân biệt bảo khí), tượng Phật Quỳnh Lâm.
+- Thăng Long tứ trấn hoàn tất: + đền Kim Liên (Cao Sơn Đại Vương, trấn Nam) — false positive «Kim Liên» vs khu lưu niệm HCM Nghệ An → allowlist.
+- Nam thiên đệ tam động Địch Lộng; Hoa Lư tứ trấn: chùa động Thiên Tôn; làng khoa bảng Mộ Trạch + Hành Thiện + Tam Sơn; danh hương Đại Mỗ.
+- Hoãn chuẩn: Hương Tích/Bích Động (quần thể), 3 làng Cót–La–Canh (thiếu nguồn), Thành Đông, tứ đại đỉnh đèo (danh hiệu hiện đại — để lô sau).
+
+**Bài học kernel mới**: biến thể chính tả «Quýt/Quít» lọt strip-accent («quyt»≠«quit») — validator cross-file id bắt được, đã gỡ tay. Cân nhắc thêm bảng biến thể y/i vào kernel nếu tái diễn.
