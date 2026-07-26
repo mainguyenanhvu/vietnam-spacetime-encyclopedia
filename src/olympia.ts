@@ -3,6 +3,8 @@
 // Module tự chứa: initOlympia() tự tạo nút mở + panel bằng JS (không sửa index.html),
 // tự tải ngân hàng câu hỏi JSON, lưu điểm cao nhất vào localStorage (không PII).
 
+import { registerPanel, showOnly, hidePanel } from "./panels";
+
 interface MCQuestion {
   id: string;
   vong: "khoi_dong" | "tang_toc" | "ve_dich";
@@ -98,19 +100,6 @@ function saveHighScore(score: number): number {
   return best;
 }
 
-// Đóng các panel khác của trang khi mở Olympia (và ngược lại).
-function hideOtherPanels(): void {
-  for (const id of [
-    "province-panel",
-    "library-panel",
-    "game-panel",
-    "quiz-panel",
-    "story-panel",
-  ]) {
-    const p = document.getElementById(id);
-    if (p) p.hidden = true;
-  }
-}
 
 function scoreBar(extra = ""): string {
   return `<div class="ol-scorebar">🏆 Tổng điểm: <b>${totalScore}</b><span class="muted"> · Kỷ lục: ${loadHighScore()}</span>${extra}</div>`;
@@ -519,19 +508,18 @@ function buildDom(): { btn: HTMLButtonElement; panel: HTMLElement } {
 
 export function initOlympia(): void {
   if (document.getElementById("olympia-panel")) return; // tránh khởi tạo hai lần
-  const { btn, panel } = buildDom();
+  // `panel` không còn dùng trực tiếp: mọi thao tác ẩn/hiện đi qua sổ đăng ký
+  // panels.ts theo id, để hàm dọn (clearTimer) chạy dù ai ẩn.
+  const { btn } = buildDom();
 
-  // Khi mở các panel khác của trang → ẩn Olympia để không chồng lấp.
-  for (const id of ["threed-btn", "story-btn", "game-btn", "quiz-btn", "library-btn"]) {
-    document.getElementById(id)?.addEventListener("click", () => {
-      panel.hidden = true;
-      clearTimer();
-    });
-  }
+  // Đồng hồ phải dừng khi panel bị ẩn — BẤT KỂ ai ẩn nó. Cách cũ chỉ nghe 5 nút
+  // có sẵn trong index.html, bỏ sót battle/journey/timeline/quocgia/namtien (do
+  // JS tạo sau), nên đang giữa câu mà bấm ⚔️ Sa đồ thì đồng hồ vẫn chạy ngầm và
+  // câu hỏi bị tự chấm hết giờ trên một DOM đang ẩn.
+  registerPanel("olympia-panel", clearTimer);
 
   btn.addEventListener("click", () => {
-    hideOtherPanels();
-    panel.hidden = false;
+    showOnly("olympia-panel");
     const c = content();
     if (c && !bank) c.innerHTML = `<p class="muted">Đang tải câu hỏi…</p>`;
     void loadBank()
@@ -544,7 +532,6 @@ export function initOlympia(): void {
   });
 
   document.getElementById("olympia-close")?.addEventListener("click", () => {
-    panel.hidden = true;
-    clearTimer();
+    hidePanel("olympia-panel"); // clearTimer chạy qua observer
   });
 }

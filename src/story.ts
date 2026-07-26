@@ -2,6 +2,8 @@
 // Hai nhân vật Lạc & Âu du hành qua các tỉnh, mỗi chương một thử thách nhỏ;
 // hoàn thành được nhận một hạt ngọc Lạc Việt (lưu localStorage, không PII).
 
+import { registerPanel, showOnly, hidePanel } from "./panels";
+
 interface Chapter {
   slug: string;
   tinh: string;
@@ -124,12 +126,11 @@ export function initStory(url: string): void {
   document.getElementById("story-btn")?.addEventListener("click", () => {
     const panel = document.getElementById("story-panel");
     if (!panel) return;
-    for (const id of ["library-panel", "game-panel", "quiz-panel"]) {
-      const p = document.getElementById(id);
-      if (p) p.hidden = true;
-    }
+    // Trước đây chỉ ẩn 3 panel hard-code nên mở «Thiếu nhi» khi đang mở
+    // Nam tiến/Sa đồ là hai panel chồng nhau. showOnly() ẩn cả 11.
+    registerPanel("story-panel", () => document.body.classList.remove("kid-mode"));
+    showOnly("story-panel");
     document.body.classList.add("kid-mode");
-    panel.hidden = false;
     const content = document.getElementById("story-content");
     if (content && !story) content.innerHTML = `<p>Đang mở cổng thời gian…</p>`;
     void fetch(dataUrl)
@@ -148,8 +149,9 @@ export function initStory(url: string): void {
       });
   });
   document.getElementById("story-close")?.addEventListener("click", () => {
-    const panel = document.getElementById("story-panel");
-    if (panel) panel.hidden = true;
-    document.body.classList.remove("kid-mode");
+    // `kid-mode` do observer trong panels.ts gỡ — nhờ vậy nó cũng được gỡ khi
+    // module KHÁC ẩn panel này. Trước đây chỉ nút × mới gỡ, nên bấm 🐉 rồi bấm
+    // 🎮 là topbar kẹt gradient trẻ em suốt phiên.
+    hidePanel("story-panel");
   });
 }

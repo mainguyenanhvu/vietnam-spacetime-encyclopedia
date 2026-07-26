@@ -252,7 +252,13 @@ async function s2(cdp, cycles = 20) {
   await sleep(600);
   const after = JSON.parse(await cdp.evaluate(`JSON.stringify(window.__gl)`));
   const tooMany = cdp.consoleMsgs.filter((s) => /too many active webgl/i.test(s));
-  const ok = after.lost === 0 && tooMany.length === 0;
+  // Tiêu chí cũ `after.lost === 0` SAI kể từ khi vá bằng forceContextLoss():
+  // nhả context là hành vi ĐÚNG, nên nó làm `lost` tăng và kịch bản báo đỏ giả.
+  // Phải tách như chính S2b đã tách: chỉ mất context NGOÀI Ý MUỐN mới là lỗi.
+  const truoc = JSON.parse(before);
+  const tuNguyen = after.lostTuNguyen - truoc.lostTuNguyen;
+  const biThuHoi = after.lost - truoc.lost - tuNguyen;
+  const ok = biThuHoi <= 0 && tooMany.length === 0;
   record(
     "S2",
     `Rò WebGL context sau ${cycles} lượt Hành trình↔Sa đồ`,
@@ -260,9 +266,10 @@ async function s2(cdp, cycles = 20) {
     [
       `trước: ${before}`,
       `sau  : created=${after.created} lost=${after.lost} restored=${after.restored}`,
+      `context TỰ NGUYỆN nhả: ${tuNguyen} (forceContextLoss — càng nhiều càng tốt)`,
+      `context bị Chrome THU HỒI ngoài ý muốn: ${biThuHoi} (đây mới là rò)`,
       `cảnh báo "Too many active WebGL contexts": ${tooMany.length}`,
-      `→ created tăng ${after.created - JSON.parse(before).created} sau ${cycles} lượt`,
-      `   (lost > 0 hoặc có cảnh báo = đã chạm trần context của Chrome)`,
+      `→ created tăng ${after.created - truoc.created} sau ${cycles} lượt`,
     ].join("\n"),
   );
   return after;

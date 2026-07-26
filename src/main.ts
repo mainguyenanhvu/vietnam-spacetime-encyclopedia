@@ -6,6 +6,7 @@ import type {
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
+import { registerPanel, showOnly, hidePanel } from "./panels";
 import { initSearch } from "./search";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
@@ -728,9 +729,16 @@ function buildNamTienUI(): void {
   panel.hidden = true;
   panel.innerHTML = `<button id="namtien-close" aria-label="Đóng">×</button><div id="namtien-content"></div>`;
   document.getElementById("app")?.appendChild(panel);
+  // Nam tiến trước đây chỉ bật/tắt chính nó, không ẩn panel nào khác — mở nó
+  // khi đang mở Dòng thời gian là hai panel chồng nhau (smoke S3a bắt được).
+  registerPanel("namtien-panel", () => {
+    activateNamTien(false);
+    btn.classList.remove("active");
+  });
   btn.addEventListener("click", () => {
     const opening = panel.hidden;
-    panel.hidden = !opening;
+    if (opening) showOnly("namtien-panel");
+    else hidePanel("namtien-panel");
     activateNamTien(opening);
     btn.classList.toggle("active", opening);
   });
@@ -2728,11 +2736,9 @@ async function openLibrary(): Promise<void> {
   const panel = document.getElementById("library-panel");
   const content = document.getElementById("library-content");
   if (!panel || !content) return;
-  for (const id of ["game-panel", "quiz-panel", "story-panel"]) {
-    const other = document.getElementById(id);
-    if (other) other.hidden = true;
-  }
-  panel.hidden = false;
+  // Trước đây chỉ ẩn 3 panel hard-code — mở Thư viện khi đang mở Nam tiến hay
+  // Sa đồ là hai panel chồng nhau. showOnly() ẩn cả 11 panel đã đăng ký.
+  showOnly("library-panel");
   content.innerHTML = `<p class="muted">Đang tải thư viện…</p>`;
   const lib = await loadLiterature();
   content.innerHTML = `

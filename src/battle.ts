@@ -3,6 +3,8 @@
 // phần tử SVG theo mảng `hien`, chỉ điều khiển bằng CSS display.
 // Tự chứa: initBattle() tạo nút mở + panel, không đụng vào main.ts.
 
+import { registerPanel, showOnly, hidePanel } from "./panels";
+
 type TideDir = "len" | "xuong";
 
 // Các key nhóm phần tử SVG có thể bật/tắt theo từng bước.
@@ -54,21 +56,6 @@ const esc = (s: string) =>
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
-
-function hideOtherPanels(): void {
-  for (const id of [
-    "province-panel",
-    "game-panel",
-    "quiz-panel",
-    "story-panel",
-    "library-panel",
-    "olympia-panel",
-    "journey-panel",
-  ]) {
-    const p = document.getElementById(id);
-    if (p) p.hidden = true;
-  }
-}
 
 // ── Trình dựng SVG ─────────────────────────────────────────────────────────
 
@@ -290,8 +277,7 @@ async function openBattle(): Promise<void> {
   const panel = document.getElementById("battle-panel");
   const content = document.getElementById("battle-content");
   if (!panel || !content) return;
-  hideOtherPanels();
-  panel.hidden = false;
+  showOnly("battle-panel");
   if (battle) {
     renderPanel(content);
     return;
@@ -323,10 +309,10 @@ export function initBattle(): void {
   aside.hidden = true;
   aside.innerHTML = `<button id="battle-close" aria-label="Đóng">×</button><div id="battle-content"></div>`;
   app.appendChild(aside);
+  registerPanel("battle-panel");
 
   btn.addEventListener("click", () => void openBattle());
   document.getElementById("battle-close")?.addEventListener("click", () => {
-    const panel = document.getElementById("battle-panel");
-    if (panel) panel.hidden = true;
+    hidePanel("battle-panel");
   });
 }
