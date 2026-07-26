@@ -560,6 +560,7 @@ interface NamTienMoc {
 }
 let namTienMoc: NamTienMoc[] = [];
 let namTienStep = -1;
+let namTienGeoReady = false;
 let namTienTimer: number | null = null;
 const namTienMax = (): number => namTienMoc.length - 1;
 
@@ -567,6 +568,20 @@ function initNamTien(): void {
   void fetchJson<{ moc: NamTienMoc[] }>("data/journey/nam-tien.json").then((data) => {
     if (!data?.moc?.length) return;
     namTienMoc = data.moc.slice().sort((a, b) => a.buoc - b.buoc);
+    buildNamTienUI();
+  });
+}
+
+/**
+ * Nạp LƯỜI polygon 34 tỉnh (1,16 MB) cho lớp Nam tiến — chỉ chạy ở lần đầu
+ * người dùng mở panel. Trước đây fetch vô điều kiện ngay lúc bản đồ load, tức
+ * MỌI người dùng đều tải 1,16 MB cho một tính năng nằm sau nút bấm, và đó là
+ * bản sao thứ hai của cùng file mà lớp era đã nạp.
+ */
+function ensureNamTienGeo(): void {
+  if (namTienGeoReady || !namTienMoc.length || map.getSource("nam-tien")) return;
+  namTienGeoReady = true;
+  {
     const slug2step = new Map<string, number>();
     for (const m of namTienMoc) for (const s of m.tinh_moi) slug2step.set(s, m.buoc);
     // Gắn nt_step vào từng tỉnh của geojson 34 tỉnh; tự tính slug (không commit
@@ -641,9 +656,11 @@ function initNamTien(): void {
           } as never,
           beforeId,
         );
+        // Source về SAU khi panel đã mở → phải áp lại bước hiện tại, nếu không
+        // người dùng mở panel ra mà bản đồ không đổi gì.
+        setNamTienStep(Math.max(0, namTienStep));
       });
-    buildNamTienUI();
-  });
+  }
 }
 
 function setNamTienStep(step: number): void {
@@ -679,6 +696,7 @@ function namTienPlay(): void {
   renderNamTienPanel();
 }
 function activateNamTien(on: boolean): void {
+  if (on) ensureNamTienGeo();
   const v = on ? "visible" : "none";
   for (const id of ["nam-tien-fill", "nam-tien-line", "nam-tien-front"])
     if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", v);

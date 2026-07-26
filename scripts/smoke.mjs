@@ -122,6 +122,8 @@ class Cdp {
     this.pending = new Map();
     this.consoleMsgs = [];
     this.netFail = [];
+    this.netBytes = [];
+    this.reqUrl = new Map();
     ws.onmessage = (ev) => {
       const m = JSON.parse(ev.data);
       if (m.id && this.pending.has(m.id)) {
@@ -141,6 +143,16 @@ class Cdp {
         this.netFail.push(`${m.params.response.status} ${m.params.response.url}`);
       if (m.method === "Network.loadingFailed")
         this.netFail.push(`FAILED ${m.params.errorText} ${m.params.requestId}`);
+      // Gom byte theo URL để đo lượng dữ liệu tải lúc khởi động (S7).
+      // responseReceived cho URL, loadingFinished mới cho số byte thật —
+      // phải ghép hai sự kiện qua requestId.
+      if (m.method === "Network.responseReceived")
+        this.reqUrl.set(m.params.requestId, m.params.response.url);
+      if (m.method === "Network.loadingFinished")
+        this.netBytes.push({
+          url: this.reqUrl.get(m.params.requestId) ?? "?",
+          bytes: m.params.encodedDataLength ?? 0,
+        });
     };
   }
   send(method, params = {}) {
@@ -162,6 +174,8 @@ class Cdp {
   reset() {
     this.consoleMsgs = [];
     this.netFail = [];
+    // KHÔNG xoá netBytes/reqUrl — S7 đo lượt tải ĐẦU TIÊN, chạy sau các lượt
+    // reset khác nên phải giữ tích luỹ từ lúc mở trang.
   }
 }
 
@@ -441,6 +455,45 @@ async function s5(cdp, tinh, mongDoi) {
   );
 }
 
+/**
+ * S7 — byte dữ liệu `/data/` tải ở lượt mở trang đầu, ĐO TRÊN LUỒNG CHÍNH.
+ *
+ * ⚠️ GIỚI HẠN PHẢI BIẾT: MapLibre nạp GeoJSON của `addSource` bên trong WEB
+ * WORKER, mà miền `Network` của CDP gắn vào page target KHÔNG bắt request của
+ * worker. Nên con số này KHÔNG bao gồm 3 file ranh giới tỉnh. Muốn đo cả worker
+ * phải `Target.setAutoAttach({flatten:true})` rồi bật Network trên từng session
+ * con — chưa làm.
+ *
+ * Vì vậy S7 chỉ chứng minh được ĐÚNG MỘT điều, và đó là điều nó được dựng ra để
+ * chứng minh: `initNamTien()` trước đây gọi `fetch()` THẲNG trên luồng chính để
+ * lấy bản sao thứ hai của `vn-34-tinh-2025.geojson` (1,16 MB) cho một tính năng
+ * nằm sau nút bấm. Nếu file đó còn xuất hiện trong danh sách dưới đây thì việc
+ * nạp lười đã hỏng.
+ */
+async function s7(cdp) {
+  // Source GeoJSON của MapLibre về SAU sự kiện map "load" — chờ trang lắng,
+  // nếu không sẽ đo hụt và báo xanh giả.
+  await new Promise((r) => setTimeout(r, 3000));
+  const geo = cdp.netBytes.filter((r) => /\/data\/.*\.(geojson|json)(\?|$)/.test(r.url));
+  const tong = geo.reduce((s, r) => s + r.bytes, 0);
+  const NGUONG = 1_400_000;
+  record(
+    "S7",
+    "Nam tiến KHÔNG fetch lại 1,16 MB ranh giới lúc khởi động",
+    tong > 0 && tong < NGUONG && !geo.some((r) => /vn-34-tinh-2025\.geojson/.test(r.url)),
+    [
+      `luồng chính tải ${(tong / 1e6).toFixed(2)} MB qua ${geo.length} request · ngưỡng ${(NGUONG / 1e6).toFixed(2)} MB`,
+      `KHÔNG đo được 3 file ranh giới (MapLibre nạp trong web worker, CDP page target không thấy)`,
+      ...geo.map((r) => `  ${(r.bytes / 1024).toFixed(0)} KB  ${r.url.replace(/^https?:\/\/[^/]+/, "")}`),
+      tong === 0
+        ? `  ⚠️ không thấy .geojson — tổng bắt được ${cdp.netBytes.length} request; 5 URL đầu: ${cdp.netBytes.slice(0, 5).map((r) => r.url.slice(-60)).join(" | ")}`
+        : "",
+    ]
+      .filter(Boolean)
+      .join("\n"),
+  );
+}
+
 /** S6 — hook window.__map (main.ts thêm, chỉ bật ở DEV). Thiếu thì BÁO ĐỎ. */
 async function s6(cdp) {
   const has = await cdp.evaluate(`typeof window.__map === "object" && window.__map !== null`);
@@ -542,6 +595,7 @@ async function main() {
 
     console.log("\n──────── LƯỢT A (ngày thật) ────────");
     await s1(cdp);
+    await s7(cdp);
     await s6(cdp);
     await s3(cdp);
     await s3b(cdp);
