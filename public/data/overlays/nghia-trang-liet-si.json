@@ -24,7 +24,12 @@
     "Bộ Khoa học và Công nghệ — https://mst.gov.vn",
     "Báo Nhân Dân, Báo Dân trí, Báo Công an nhân dân, Tuổi Trẻ",
     "Bệnh viện Bạch Mai — https://bachmai.gov.vn",
-    "Cổng TTĐT huyện Cam Lộ — https://camlo.quangtri.gov.vn"
+    "Cổng TTĐT huyện Cam Lộ — https://camlo.quangtri.gov.vn",
+    "Báo Hưng Yên — https://baohungyen.vn",
+    "Cổng thông tin điện tử xã Long Hưng, tỉnh Hưng Yên",
+    "Báo Thanh Hóa — https://baothanhhoa.vn",
+    "Báo Hải Phòng, ANHP — https://baohaiphong.vn, https://anhp.vn",
+    "Báo Hà Tĩnh — https://baohatinh.vn"
   ],
   "items": [
     {
@@ -1518,13 +1523,12 @@
       "id": "ntls-ham-rong-thanh-hoa",
       "ten": "Nghĩa trang liệt sĩ Hàm Rồng",
       "lon": 105.7833,
-      "lat": 19.8333,
+      "lat": 19.8167,
       "loai": "nghia-trang-tinh",
-      "dia_diem": "Khu vực Hàm Rồng, thành phố Thanh Hóa, tỉnh Thanh Hóa",
+      "dia_diem": "Phường Nam Ngạn, thành phố Thanh Hóa, tỉnh Thanh Hóa (bên bờ Nam sông Mã, cạnh cầu Hàm Rồng)",
       "quy_mo": "Hơn 2.000 liệt sĩ",
       "mo_ta": "Nghĩa trang liệt sĩ Hàm Rồng là nơi an nghỉ của hơn 2.000 liệt sĩ - những người con ưu tú của tỉnh Thanh Hóa đã hy sinh qua các cuộc kháng chiến. Đây là một trong các nghĩa trang lớn của tỉnh, cùng với các nghĩa trang liệt sĩ Thọ Xuân, Vĩnh Lộc, Quảng Xương, nơi lãnh đạo tỉnh và các đoàn thể đến dâng hương, đặt vòng hoa nhân Ngày Thương binh - Liệt sĩ 27/7.",
-      "do_tin_cay_toa_do": "thap",
-      "ghi_chu_bien_tap": "Toạ độ chỉ là ước lượng trung tâm khu vực Hàm Rồng/thành phố Thanh Hóa, KHÔNG tra được địa chỉ phường/xã cụ thể của nghĩa trang do công cụ tìm kiếm tạm gián đoạn giữa phiên (lỗi 'temporarily unavailable') — chưa kịp chạy lại câu xác minh địa chỉ chính xác hơn. Cần soát lại độ chính xác toạ độ ở vòng sau.",
+      "do_tin_cay_toa_do": "trung",
       "nguon": [
         "Báo Văn hoá (qua Baomoi) — https://baomoi.com/lanh-dao-tinh-thanh-hoa-tri-an-nguoi-co-cong-dip-27-7-c55662661.epi",
         "Báo Thanh tra — https://thanhtra.com.vn/an-sinh-AFA9C5670/thanh-hoa-lanh-dao-tinh-dang-huong-tri-an-liet-si-tham-hoi-gia-dinh-chinh-sach-ab6de24d6.html"
@@ -1585,11 +1589,11 @@
       "lat": 18.2333,
       "loai": "khu-tuong-niem-nan-nhan",
       "nam_hien_thi": "Sự kiện 23/11/1967; nhà bia xây năm 2019",
-      "dia_diem": "Xã Cẩm Duệ, huyện Cẩm Xuyên, tỉnh Hà Tĩnh",
+      "dia_diem": "Thôn Trần Phú, xã Cẩm Duệ, huyện Cẩm Xuyên, tỉnh Hà Tĩnh (địa chỉ trụ sở UBND xã, dùng làm điểm đại diện)",
       "quy_mo": "34 nạn nhân",
       "mo_ta": "Ngày 23/11/1967, máy bay Mỹ ném bom xuống khu vực người dân đang lao động tại xã Cẩm Duệ, huyện Cẩm Xuyên, làm 34 người thiệt mạng. Nhà bia tưởng niệm chứng tích chiến tranh được xây dựng từ tháng 3 đến tháng 7 năm 2019 để ghi nhớ sự kiện và tưởng niệm các nạn nhân.",
       "do_tin_cay_toa_do": "trung",
-      "ghi_chu_bien_tap": "Toạ độ ước theo trung tâm huyện Cẩm Xuyên, KHÔNG tra được vị trí chính xác của nhà bia trong xã Cẩm Duệ do công cụ tìm kiếm tạm gián đoạn giữa phiên (không kịp WebFetch bài gốc để đọc chi tiết địa chỉ thôn/xóm).",
+      "ghi_chu_bien_tap": "Toạ độ đại diện theo trụ sở UBND xã Cẩm Duệ (thôn Trần Phú) — vẫn KHÔNG xác định được vị trí chính xác của nhà bia 34 nạn nhân trong phạm vi xã. Lưu ý: tìm thấy MỘT nhà bia KHÁC tại thị trấn Cẩm Xuyên (khánh thành 27/7/2024, 250 m², 3,9 tỷ đồng) tưởng niệm đồng chí Nguyễn Đình Liễn, Mẹ Việt Nam Anh hùng và liệt sĩ nói chung — đây KHÔNG PHẢI cùng một công trình với nhà bia 34 nạn nhân bom Mỹ 1967 tại xã Cẩm Duệ, hai xã/thị trấn khác nhau trong cùng huyện Cẩm Xuyên, không được nhầm lẫn.",
       "nguon": [
         "Báo Dân trí (Dân Sinh) — https://dansinh.dantri.com.vn/nguoi-co-cong/ha-tinh-xay-dung-nha-bia-tuong-niem-chung-tich-chien-tranh-34-nan-nhan-bi-bom-my-sat-hai-20190720221701000.htm"
       ],
@@ -1614,16 +1618,78 @@
     {
       "id": "dtn-chien-thang-cat-bi",
       "ten": "Tượng đài Chiến thắng Cát Bi",
-      "lon": 106.7167,
-      "lat": 20.8167,
+      "lon": 106.7247,
+      "lat": 20.8194,
       "loai": "tuong-dai-chien-thang",
       "nam": 1954,
-      "dia_diem": "Khu vực sân bay Cát Bi, thành phố Hải Phòng",
+      "dia_diem": "Cảng Hàng không quốc tế Cát Bi, phường Hải An, thành phố Hải Phòng",
       "mo_ta": "Ngày 7/3/1954, quân và dân Kiến An (nay thuộc Hải Phòng) tập kích sân bay Cát Bi khi đó do quân Pháp chiếm giữ, phá hủy gần 60 máy bay cùng nhiều vũ khí, phương tiện — một chiến công phối hợp với chiến trường Điện Biên Phủ đang diễn ra cùng thời điểm. Tượng đài Chiến thắng Cát Bi được dựng để ghi nhớ chiến công này; thành phố Hải Phòng đang xây dựng thêm Công viên Chiến thắng Cát Bi để tôn vinh sự kiện.",
-      "do_tin_cay_toa_do": "thap",
-      "ghi_chu_bien_tap": "Chưa xác minh được năm khánh thành tượng đài và vị trí chính xác trong khu vực sân bay Cát Bi do công cụ tìm kiếm tạm gián đoạn giữa phiên — toạ độ chỉ ước theo vị trí sân bay Cát Bi nói chung. Đây là chiến thắng thời chống Pháp (1954), không phải sự kiện 'sân bay bị Mỹ đánh phá' như gợi ý ban đầu của team-lead, nhưng vẫn thuộc phạm vi lớp (tượng đài chiến thắng gắn với một sân bay quân sự).",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Công trình đang trong quá trình xây dựng (khởi công 14/5/2026), dự kiến hoàn thành năm 2027 tại thời điểm ghi nhận (2026-07-27) — đây là tình trạng thi công thực tế, không phải cảnh báo về chất lượng dữ liệu.",
       "nguon": [
         "Báo Hải Phòng — https://baohaiphong.vn/tuong-dai-chien-thang-cat-bi-bieu-tuong-tinh-than-cua-nguoi-dan-dat-cang-519407.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-hung-yen",
+      "ten": "Cụm nghĩa trang liệt sĩ Liên Hiệp (Nghĩa trang liệt sĩ Tiến Đức)",
+      "lon": 106.0512,
+      "lat": 20.6464,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Xã Long Hưng, tỉnh Hưng Yên",
+      "quy_mo": "Diện tích gần 2.000 m²; tổng vốn đầu tư hơn 13,6 tỷ đồng; nâng cấp hơn 200 phần mộ liệt sĩ",
+      "mo_ta": "Cụm nghĩa trang liệt sĩ Liên Hiệp tại xã Long Hưng được đầu tư tôn tạo trên diện tích gần 2.000 m² với tổng vốn hơn 13,6 tỷ đồng, gồm sân hành lễ, nhà bia, tôn tạo hơn 200 phần mộ liệt sĩ, tường rào, cổng, nhà quản trang và hệ thống chiếu sáng. Đây cũng là nơi có Nghĩa trang liệt sĩ Tiến Đức, từng tổ chức lấy mẫu hài cốt liệt sĩ chưa xác định thông tin trong chương trình xác định danh tính toàn quốc. Toàn tỉnh Hưng Yên hiện có 398 công trình ghi công liệt sĩ và nghĩa trang liệt sĩ với hơn 32.000 phần mộ.",
+      "do_tin_cay_toa_do": "thap",
+      "ghi_chu_bien_tap": "Toạ độ chỉ là trung tâm tỉnh Hưng Yên (thành phố Hưng Yên), KHÔNG phải vị trí xã Long Hưng cụ thể — chưa xác định được xã Long Hưng này thuộc khu vực nào của tỉnh Hưng Yên sau sáp nhập 2025 (Hưng Yên cũ hay Thái Bình cũ) do hết thời gian tra cứu trong vòng này. Cần soát lại toạ độ ở vòng sau nếu có.",
+      "nguon": [
+        "Cổng TTĐT xã Long Hưng, tỉnh Hưng Yên — https://longhung.hungyen.gov.vn/xa-long-hung-to-chuc-lay-mau-hai-cot-liet-si-chua-xac-dinh-duoc-thong-tin-tai-nghia-trang-liet-si-tien-duc/",
+        "Báo Hưng Yên — https://baohungyen.vn/chung-tay-cham-soc-ton-tao-nghia-trang-liet-si-3197390.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-ben-cat-binh-duong",
+      "ten": "Nghĩa trang liệt sĩ thị xã Bến Cát",
+      "lon": 106.61,
+      "lat": 11.14,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Thị xã Bến Cát, tỉnh Bình Dương",
+      "mo_ta": "Nghĩa trang liệt sĩ thị xã Bến Cát là nơi tổ chức lễ truy điệu, an táng hài cốt liệt sĩ được quy tập trên địa bàn, trong đó có hơn 62 hài cốt bộ đội Sư đoàn 9 hy sinh tại thôn Dòng Sỏi và ấp An Thành, xã An Tây trong kháng chiến chống Mỹ. Nghĩa trang còn một số phần mộ liệt sĩ chưa đầy đủ thông tin đang được thân nhân và cơ quan chức năng tiếp tục xác minh.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Quân khu 7 — https://baoquankhu7.vn/thi-xa-ben-cat-tinh-binh-duong-truy-dieu-an-tang-hai-cot-liet-si-1357724766-006829s36410gs"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-mo-duc-quang-ngai",
+      "ten": "Nghĩa trang liệt sĩ huyện Mộ Đức",
+      "lon": 108.9,
+      "lat": 14.95,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện Mộ Đức, tỉnh Quảng Ngãi",
+      "quy_mo": "Huyện có 7 nghĩa trang liệt sĩ, trong đó có các nghĩa trang xã Đức Hòa, Đức Phú",
+      "mo_ta": "Huyện Mộ Đức hiện có 7 nghĩa trang liệt sĩ trên địa bàn các xã, trong đó có Nghĩa trang liệt sĩ Đức Hòa và Đức Phú. Địa phương thường tổ chức lễ thắp nến tri ân, dâng hương, dâng hoa các anh hùng liệt sĩ nhân Ngày Thương binh - Liệt sĩ 27/7.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Cổng TTĐT xã Mộ Đức, tỉnh Quảng Ngãi — https://moduc.quangngai.gov.vn/tin-tuc-su-kien/tin-kinh-te-xa-hoi/xa-mo-duc-to-chuc-thap-nen-tri-an-va-dang-huong-dang-hoa-cac-anh-hung-liet-si-tai-nghia-trang-liet-si-duc-ho-a-nghia-tra.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-duy-xuyen-quang-nam",
+      "ten": "Cụm nghĩa trang liệt sĩ huyện Duy Xuyên",
+      "lon": 108.2,
+      "lat": 15.78,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Các xã Duy Hòa, Duy Tân, Duy Trung, Duy Phước, Duy Thành, huyện Duy Xuyên, thành phố Đà Nẵng (trước sáp nhập thuộc tỉnh Quảng Nam)",
+      "quy_mo": "Nâng cấp, cải tạo 5 nghĩa trang liệt sĩ với tổng vốn đầu tư gần 23 tỷ đồng",
+      "mo_ta": "Tỉnh Quảng Nam (nay thuộc Đà Nẵng) đã đầu tư nâng cấp, cải tạo 5 nghĩa trang liệt sĩ tại các xã Duy Hòa, Duy Tân, Duy Trung, Duy Phước và Duy Thành thuộc huyện Duy Xuyên với tổng vốn đầu tư gần 23 tỷ đồng. Lãnh đạo tỉnh đã trực tiếp kiểm tra tiến độ thi công các công trình này.",
+      "do_tin_cay_toa_do": "thap",
+      "ghi_chu_bien_tap": "Đây là CỤM 5 nghĩa trang liệt sĩ cấp xã riêng biệt trong cùng huyện, không phải một nghĩa trang liệt sĩ duy nhất — toạ độ chỉ là điểm đại diện trung tâm huyện Duy Xuyên, không ứng với một công trình cụ thể nào trong 5 công trình.",
+      "nguon": [
+        "Cổng TTĐT tỉnh Quảng Nam — https://quangnam.gov.vn/pho-chu-tich-ubnd-tinh-tran-anh-tuan-kiem-tra-thuc-te-tien-do-thi-cong-cai-tao-nghia-trang-liet-si-tai-huyen-duy-xuyen-61074.html"
       ],
       "trang_thai": "draft"
     }
