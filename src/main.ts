@@ -2423,6 +2423,26 @@ interface Poem {
   sources: string[];
 }
 
+// Bản đồ cổ chứng minh chủ quyền. Ba nhóm: do người Việt vẽ, do phương Tây vẽ,
+// và bản đồ Trung Quốc cổ cho thấy cực nam lãnh thổ họ dừng ở đảo Hải Nam —
+// nhóm cuối có sức nặng riêng vì là bằng chứng từ chính phía đối phương.
+// `anh` bắt buộc host upload.wikimedia.org: CSP của trang chặn mọi host ảnh khác.
+interface BanDoCo {
+  id: string;
+  ten: string;
+  tac_gia: string;
+  nam_hien_thi: string;
+  nhom: "viet-nam" | "phuong-tay" | "trung-quoc";
+  mo_ta: string;
+  y_nghia_chu_quyen?: string;
+  noi_luu_giu?: string;
+  anh?: string;
+  anh_nguon?: string;
+  anh_giay_phep?: string;
+  anh_ghi_chu?: string;
+  nguon: string[];
+}
+
 interface Anecdote {
   id: string;
   nhan_vat: string;
@@ -2481,6 +2501,7 @@ let literatureCache: {
   caDao: CaDao[];
   baiHat: BaiHat[];
   tuLieu: Poem[];
+  banDoCo: BanDoCo[];
 } | null = null;
 
 async function fetchJson<T>(path: string): Promise<T | null> {
@@ -2494,7 +2515,7 @@ async function fetchJson<T>(path: string): Promise<T | null> {
 
 async function loadLiterature() {
   if (literatureCache) return literatureCache;
-  const [poems, hcmWorks, aboutHcm, anecdotes, hcm, caDao, baiHat, tuLieu] = await Promise.all([
+  const [poems, hcmWorks, aboutHcm, anecdotes, hcm, caDao, baiHat, tuLieu, banDoCo] = await Promise.all([
     fetchJson<{ items: Poem[] }>("data/literature/tho-yeu-nuoc.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tac-pham-ho-chi-minh.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tho-ve-bac.json"),
@@ -2503,6 +2524,7 @@ async function loadLiterature() {
     fetchJson<{ items: CaDao[] }>("data/literature/ca-dao-tuc-ngu.json"),
     fetchJson<{ items: BaiHat[] }>("data/literature/bai-hat-que-huong.json"),
     fetchJson<{ items: Poem[] }>("data/literature/nhat-ky-thu-chien-tranh.json"),
+    fetchJson<{ items: BanDoCo[] }>("data/media/ban-do-co.json"),
   ]);
   literatureCache = {
     poems: poems?.items ?? [],
@@ -2515,6 +2537,7 @@ async function loadLiterature() {
     caDao: caDao?.items ?? [],
     baiHat: baiHat?.items ?? [],
     tuLieu: tuLieu?.items ?? [],
+    banDoCo: banDoCo?.items ?? [],
   };
   return literatureCache;
 }
@@ -2551,6 +2574,38 @@ function tuLieuHtml(t: Poem): string {
     ${t.ban_quyen === "cited-excerpt" ? `<p class="draft-badge">©️ Tác phẩm còn bảo hộ bản quyền — chỉ trích dẫn ngắn theo Điều 25 Luật SHTT.</p>` : ""}
     <details class="sources"><summary>📚 Nguồn</summary>${list(t.sources)}</details>
   </details>`;
+}
+
+const NHOM_BAN_DO: Record<BanDoCo["nhom"], string> = {
+  "viet-nam": "🇻🇳 Do người Việt vẽ",
+  "phuong-tay": "🌍 Do phương Tây vẽ",
+  "trung-quoc": "📜 Bản đồ Trung Quốc cổ — cực nam dừng ở đảo Hải Nam",
+};
+
+function banDoCoHtml(b: BanDoCo): string {
+  return `<details class="profile-section"><summary>「${esc(b.ten)}」 — ${esc(b.tac_gia)}, ${esc(b.nam_hien_thi)}</summary>
+    <p class="giai-nghia">${esc(b.mo_ta)}</p>
+    ${b.y_nghia_chu_quyen ? `<p class="giai-nghia">⚖️ <b>Ý nghĩa chủ quyền:</b> ${esc(b.y_nghia_chu_quyen)}</p>` : ""}
+    ${
+      b.anh
+        ? `<img class="old-map" loading="lazy" alt="${esc(b.ten)}" src="${esc(b.anh)}" />
+           <p class="muted">${esc(b.anh_giay_phep ?? "")}${b.anh_nguon ? ` · ${esc(b.anh_nguon)}` : ""}</p>`
+        : `<p class="muted">🖼️ Chưa có bản scan dùng được.${b.anh_ghi_chu ? ` ${esc(b.anh_ghi_chu)}` : ""}</p>`
+    }
+    ${b.noi_luu_giu ? `<p class="muted">📍 Lưu giữ tại: ${esc(b.noi_luu_giu)}</p>` : ""}
+    <details class="sources"><summary>📚 Nguồn</summary>${list(b.nguon)}</details>
+  </details>`;
+}
+
+function banDoCoSectionHtml(ds: BanDoCo[]): string {
+  if (!ds.length) return "";
+  // Gom theo nhóm để người đọc thấy ngay ba tuyến chứng cứ độc lập nhau.
+  return (Object.keys(NHOM_BAN_DO) as BanDoCo["nhom"][])
+    .map((k) => {
+      const nhom = ds.filter((b) => b.nhom === k);
+      return nhom.length ? `<h4>${esc(NHOM_BAN_DO[k])}</h4>${nhom.map(banDoCoHtml).join("")}` : "";
+    })
+    .join("");
 }
 
 function anecdoteHtml(a: Anecdote): string {
@@ -2827,7 +2882,8 @@ async function openLibrary(): Promise<void> {
     <h3>🎶 Bài hát về quê hương đất nước <span class="muted">(nhúng từ kênh YouTube chính chủ)</span></h3>
     ${lib.baiHat.length ? lib.baiHat.map(baiHatHtml).join("") : `<p class="muted">Đang biên soạn…</p>`}
     ${nienHieuSectionHtml()}
-    <h3>🗺️ Bản đồ cổ</h3>
+    <h3>🗺️ Bản đồ cổ <span class="muted">(tư liệu chủ quyền)</span></h3>
+    ${banDoCoSectionHtml(lib.banDoCo)}
     <details class="profile-section">
       <summary>「An Nam Đại Quốc Họa Đồ」 — Giám mục Jean-Louis Taberd, 1838</summary>
       <p class="giai-nghia">Bản đồ Việt Nam khắc in năm 1838, ghi chú song ngữ Hán – Quốc ngữ – Latinh.
