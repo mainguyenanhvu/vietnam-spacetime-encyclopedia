@@ -13,7 +13,10 @@
     "Cổng thông tin điện tử các tỉnh/thành (.gov.vn)",
     "Bộ Văn hoá, Thể thao và Du lịch — https://bvhttdl.gov.vn",
     "Bộ Quốc phòng — https://mod.gov.vn",
-    "Báo địa phương (Báo Cà Mau, Báo Sóc Trăng, Báo Bạc Liêu, Báo Phú Yên, Báo Đồng Tháp, Báo Sơn La...)"
+    "Báo địa phương (Báo Cà Mau, Báo Sóc Trăng, Báo Bạc Liêu, Báo Phú Yên, Báo Đồng Tháp, Báo Sơn La...)",
+    "Cổng thông tin điện tử các tỉnh/thành, xã/phường (.gov.vn)",
+    "Báo địa phương (Báo Lào Cai, Báo Lai Châu, Báo Sơn La, Báo Văn hoá, Báo Tin Tức TTXVN)",
+    "Đại biểu Nhân dân — https://daibieunhandan.vn"
   ],
   "items": [
     {
@@ -1224,6 +1227,157 @@
       "nguon": [
         "Bộ Văn hoá, Thể thao và Du lịch — https://bvhttdl.gov.vn/soc-trang-bao-ton-phat-huy-gia-tri-di-tich-gan-voi-phat-trien-du-lich-20230111083400437.htm",
         "Cổng thông tin du lịch Sóc Trăng — https://soctrangtourism.vn/vi/detailnews/?t=danh-muc-di-tich-quyet-dinh-xep-hang-cap-tinh&id=heritage_21"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-thanh-son-cao-bang",
+      "ten": "Nghĩa trang Thanh Sơn (nghĩa trang liệt sĩ tỉnh Cao Bằng)",
+      "lon": 106.25,
+      "lat": 22.6667,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Thục Phán, thành phố Cao Bằng, tỉnh Cao Bằng",
+      "mo_ta": "Nghĩa trang Thanh Sơn là nơi an táng các liệt sĩ của tỉnh Cao Bằng, trong đó có nhiều hài cốt được quy tập, cải táng từ các nghĩa trang liệt sĩ cấp xã trong tỉnh. Tháng 7/2026, hài cốt liệt sĩ Lý Văn Coóng được cất bốc từ Nghĩa trang liệt sĩ xã Tĩnh Túc và an táng tại đây trong một lễ truy điệu trang trọng.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Văn hoá — https://baovanhoa.vn/doi-song/xuc-dong-le-vieng-truy-dieu-va-an-tang-hai-cot-liet-si-ly-van-coong-246541.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-au-lau-lao-cai",
+      "ten": "Nghĩa trang liệt sĩ phường Âu Lâu",
+      "lon": 104.87,
+      "lat": 21.68,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Âu Lâu, tỉnh Lào Cai (trước sáp nhập hành chính 2025 thuộc thành phố Yên Bái, tỉnh Yên Bái)",
+      "quy_mo": "Phường Âu Lâu hiện có 228 liệt sĩ",
+      "mo_ta": "Phường Âu Lâu (trước là một phường của thành phố Yên Bái, nay thuộc tỉnh Lào Cai sau sáp nhập hành chính năm 2025) hiện có 228 liệt sĩ được ghi nhận. Nghĩa trang liệt sĩ và các công trình tưởng niệm tại đây là nơi chính quyền địa phương tổ chức dâng hương nhân Ngày Thương binh - Liệt sĩ 27/7.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Lào Cai — https://baolaocai.vn/cac-dia-phuong-to-chuc-dang-huong-tri-an-cac-anh-hung-liet-si-post904585.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-dai-tuong-niem-phu-tho",
+      "ten": "Đài tưởng niệm các Anh hùng liệt sĩ tỉnh Phú Thọ (đồi Cá Chuối)",
+      "lon": 105.4,
+      "lat": 21.3,
+      "loai": "dai-tuong-niem",
+      "dia_diem": "Đồi Cá Chuối, tỉnh Phú Thọ",
+      "quy_mo": "Toàn tỉnh Phú Thọ có 292 nghĩa trang liệt sĩ và 2 đài tưởng niệm với tổng 28.809 mộ",
+      "mo_ta": "Đài tưởng niệm các Anh hùng liệt sĩ tỉnh Phú Thọ tại đồi Cá Chuối là nơi các cơ quan, đoàn thể trong tỉnh thường đến dâng hoa, dâng hương nhân Ngày Thương binh - Liệt sĩ 27/7. Toàn tỉnh Phú Thọ hiện có 292 nghĩa trang liệt sĩ và 2 đài tưởng niệm, quản lý tổng cộng 28.809 mộ liệt sĩ.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — https://baophapluat.vn/thi-hanh-an-dan-su-tinh-phu-tho-dang-huong-tuong-niem-cac-anh-hung-liet-si-tri-an-de-tiep-noi-trach-nhiem.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-lai-chau-tinh",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Lai Châu",
+      "lon": 103.4587,
+      "lat": 22.3964,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Số 68 đường Võ Nguyên Giáp, tổ dân phố Quyết Tiến 7, phường Đoàn Kết, thành phố Lai Châu, tỉnh Lai Châu",
+      "mo_ta": "Nghĩa trang liệt sĩ tỉnh Lai Châu là nơi lãnh đạo tỉnh và các cơ quan, đoàn thể thường đến dâng hương, đặt hoa nhân Ngày Thương binh - Liệt sĩ 27/7. Tỉnh Lai Châu đang hưởng ứng chiến dịch '500 ngày đêm' hoàn thành mục tiêu xác định danh tính hài cốt liệt sĩ còn thiếu thông tin.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Lai Châu — https://baolaichau.vn/chinh-tri/bao-va-phat-thanh-truyen-hinh-lai-chau-vieng-nghia-trang-liet-si-tinh-1117096",
+        "Cổng TTĐT Ban liên lạc Lai Châu — https://doanket.laichau.gov.vn/gioi-thieu/di-tich-lich-su/le-vieng-nghia-trang-liet-si-tinh-huong-ung-chien-dich-500-ngay-dem-hoan-thanh-muc-tieu-xac-dinh-danh-tinh-hai-cot-liet-.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-than-uyen-lai-chau",
+      "ten": "Nghĩa trang liệt sĩ xã Than Uyên",
+      "lon": 103.8833,
+      "lat": 21.9167,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Xã Than Uyên, tỉnh Lai Châu",
+      "quy_mo": "150 mộ liệt sĩ, trong đó 90 mộ chưa xác định được danh tính",
+      "mo_ta": "Nghĩa trang liệt sĩ xã Than Uyên có 150 phần mộ liệt sĩ, trong đó 90 mộ chưa xác định được danh tính. Đây là một trong các nghĩa trang tại Lai Châu được lấy mẫu, số hóa thông tin hài cốt liệt sĩ trong chiến dịch xác định danh tính toàn quốc.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Văn hoá — https://baovanhoa.vn/doi-song/lai-chau-lay-mau-so-hoa-thong-tin-hai-cot-liet-si-tai-nghia-trang-liet-si-xa-than-uyen-234957.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-nha-tu-son-la",
+      "ten": "Nghĩa trang liệt sĩ Nhà tù Sơn La (Nghĩa địa Gốc Ổi)",
+      "lon": 103.9188,
+      "lat": 21.3256,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Tổ 2, phường Tô Hiệu, thành phố Sơn La, tỉnh Sơn La (cách Di tích lịch sử Nhà tù Sơn La khoảng 400 m)",
+      "quy_mo": "Diện tích 42.860 m²; hơn 60 liệt sĩ, nhà bia ghi danh 61 liệt sĩ cao 3,6 m",
+      "mo_ta": "Nghĩa trang còn được gọi là Nghĩa địa Gốc Ổi, cách Di tích lịch sử Nhà tù Sơn La khoảng 400 m, là nơi yên nghỉ của hơn 60 chiến sĩ cách mạng bị giam giữ, tra tấn và hy sinh tại nhà tù thực dân Pháp. Nhà bia cao 3,6 m ghi danh sách 61 liệt sĩ; mộ đồng chí Tô Hiệu - Bí thư Chi bộ nhà tù, người trồng cây đào nổi tiếng 'Đào Tô Hiệu' - đặt tại vị trí trung tâm nghĩa trang rộng 42.860 m².",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Cục Di sản Văn hoá — https://dsvh.gov.vn/di-tich-lich-su-nha-tu-son-la-2987"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-gia-vien-ninh-binh",
+      "ten": "Nghĩa trang liệt sĩ Gia Viễn",
+      "lon": 105.9333,
+      "lat": 20.3,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện Gia Viễn, tỉnh Ninh Bình",
+      "mo_ta": "Nghĩa trang liệt sĩ Gia Viễn là nơi các đoàn công tác, đại biểu địa phương đến dâng hương tưởng niệm các Anh hùng liệt sĩ và thực hiện lấy mẫu sinh phẩm ADN đối với các phần mộ chưa xác định danh tính trong chương trình tìm kiếm, quy tập toàn quốc.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Cổng TTĐT xã Đại Hoàng, tỉnh Ninh Bình — https://daihoang.ninhbinh.gov.vn/tin-tuc-su-kien/le-dang-huong-tuong-niem-cac-anh-hung-liet-si-tai-nghia-trang-liet-si-gia-vien-415.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-vinh-hung-tan-hung-tay-ninh",
+      "ten": "Nghĩa trang liệt sĩ liên huyện Vĩnh Hưng - Tân Hưng",
+      "lon": 105.7333,
+      "lat": 10.8333,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Huyện Vĩnh Hưng, tỉnh Tây Ninh (trước sáp nhập hành chính 2025 thuộc huyện Vĩnh Hưng, tỉnh Long An), giáp biên giới Campuchia",
+      "quy_mo": "Đã tiếp nhận, an táng 173 hài cốt liệt sĩ hy sinh tại Campuchia trong một lễ truy điệu gần đây",
+      "mo_ta": "Nghĩa trang liệt sĩ liên huyện Vĩnh Hưng - Tân Hưng là nơi tổ chức lễ truy điệu, an táng hài cốt quân tình nguyện và chuyên gia Việt Nam hy sinh trên chiến trường Campuchia. Nghĩa trang đã tiếp nhận và an táng 173 hài cốt liệt sĩ do các đội quy tập K70, K71, K73 tìm kiếm được tại Campuchia, khác với Nghĩa trang liệt sĩ Đồi 82 ở huyện Tân Biên (cùng tỉnh Tây Ninh) vốn cũng tiếp nhận hài cốt từ Campuchia.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Tin Tức TTXVN — https://baotintuc.vn/xa-hoi/tri-an-tuong-nho-cac-anh-hung-liet-si-tai-nghia-trang-liet-si-vinh-hung-tan-hung-20251221215243843.htm",
+        "Đại biểu Nhân dân — https://daibieunhandan.vn/tay-ninh-truy-dieu-an-tang-173-hai-cot-liet-si-hy-sinh-tai-campuchia-10422733.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-dak-lak",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Đắk Lắk",
+      "lon": 108.03,
+      "lat": 12.63,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Km5, đường Võ Thị Sáu, phường Tân Lập, thành phố Buôn Ma Thuột, tỉnh Đắk Lắk",
+      "quy_mo": "Diện tích hơn 92.000 m²; hơn 2.300 liệt sĩ; gồm khu đền thờ liệt sĩ, công viên cây xanh, đài tưởng niệm và khu phần mộ",
+      "mo_ta": "Nghĩa trang liệt sĩ tỉnh Đắk Lắk tại Km5, đường Võ Thị Sáu, có diện tích hơn 92.000 m², là nơi an nghỉ của hơn 2.300 liệt sĩ, bao gồm khu đền thờ liệt sĩ, công viên cây xanh, đài tưởng niệm và khu phần mộ. Đây cũng là nơi tiếp nhận hài cốt quân tình nguyện Việt Nam hy sinh tại Campuchia do các đội quy tập như K51 tìm kiếm đưa về.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Công an tỉnh Đắk Lắk — https://congan.daklak.gov.vn/-/phong-canh-sat-co-ong-dang-huong-tuong-niem-tai-nghia-trang-liet-si",
+        "Sở Công Thương tỉnh Đắk Lắk — https://socongthuong.daklak.gov.vn/vi/news/hoat-dong-cong-doan-nganh-cong-thuong/ubnd-tinh-phat-dong-dang-huong-dang-hoa-vieng-nghia-trang-liet-si-nhan-ngay-thuong-binh-liet-sy-3370.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtn-rao-trang-hue",
+      "ten": "Nhà tưởng niệm liệt sĩ hy sinh khi cứu hộ tại Rào Trăng",
+      "lon": 107.2,
+      "lat": 16.45,
+      "loai": "dai-tuong-niem",
+      "nam": 2023,
+      "dia_diem": "Tiểu khu 67, xã Phong Xuân, huyện Phong Điền, tỉnh Thừa Thiên Huế (nay thuộc thành phố Huế)",
+      "quy_mo": "Diện tích hơn 1,8 ha; tổng vốn đầu tư 6,5 tỷ đồng từ ngân sách nhà nước cộng 600 triệu đồng từ địa phương; tưởng niệm 13 liệt sĩ",
+      "mo_ta": "Vào lúc 0h05 ngày 13/10/2020, một vụ sạt lở đất nghiêm trọng xảy ra tại tiểu khu 67 trong lúc đoàn cán bộ, chiến sĩ đang thực hiện nhiệm vụ cứu nạn công nhân bị mắc kẹt tại công trình thủy điện Rào Trăng 3, làm 13 người hy sinh. Nhà tưởng niệm được xây dựng trên diện tích hơn 1,8 ha với tổng vốn đầu tư 6,5 tỷ đồng từ ngân sách nhà nước cộng 600 triệu đồng từ nguồn địa phương, khánh thành ngày 25/7/2023.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Báo Chính phủ — https://baochinhphu.vn/khanh-thanh-nha-tuong-niem-liet-si-hy-sinh-khi-cuu-ho-tai-rao-trang-102230725164446478.htm"
       ],
       "trang_thai": "draft"
     }
