@@ -192,3 +192,33 @@ nghĩa trang LSQG Trường Sơn + Đường 9, sân bay Tà Cơn, căn cứ Là
 - Hoãn: Phước Kiều (cần soát chồng bản ghi tiền hiền), muối Sa Huỳnh/Bạc Liêu (chưa tra), lưu ý 2 mục Mỹ Nghiệp/Đồng Xâm KHÔNG khẳng định danh hiệu DSPVT quốc gia vì chưa xác minh được văn bản.
 
 **Geo-check**: thêm nhu cầu nhận diện «Sài Gòn – Gia Định» — 4 mục SG matcher không nhận tỉnh, đã soát tay (chụm Quận 1 đúng).
+
+## Sóng 10 — Thương cảng/chợ/cầu · Vườn quốc gia & sinh quyển · Đường HCM trên biển · Vét hoãn (2026-07-26)
+
+**Kết quả**: +56 mục draft. `danh-thang-thien-nhien` 40→77 · `di-tich-cach-mang` 38→50 · `di-tich-quoc-gia` 253→258 · `di-san-phi-vat-the` 25→27. DB overlays 1865→**1921** (draft 302→358). Không lớp mới.
+
+**A2 — đóng sổ 2 vỉa trọn vẹn**: đủ **36/36 vườn quốc gia** (số 34 là lỗi thời: Xuân Liên nâng hạng 05/02/2025 là thứ 35, Bát Xát QĐ 780/QĐ-UBND 24/3/2026 là thứ 36) và **11/11 khu dự trữ sinh quyển thế giới** (vét nốt Kon Hà Nừng 2021 + châu thổ sông Hồng 2004). 10 VQG mới: Cát Bà, Mũi Cà Mau, Bái Tử Long, Phia Oắc–Phia Đén, Du Già, Sông Thanh, Chư Mom Ray, Tà Đùng, Xuân Liên, Bát Xát. Hai vỉa này **không cần mở lại ở sóng sau**.
+
+**A3 — Đường HCM trên biển (12)**: 6 bến tàu Không số (Lộc An, Hòn Hèo–tàu C235, Thạnh Phong, Cồn Tàu, Lộ Diêu, An Thổ C41) + 6 di tích kháng chiến (đồi A Bia, Chín Hầm, nhà tù Phú Lợi, nhà lao Tân Hiệp, căn cứ Bời Lời, Trại Davis). Đích đổi sang `di-tich-cach-mang.json` vì lớp đó đã có sẵn `loai: duong-ho-chi-minh-tren-bien` (K15 Đồ Sơn, Vàm Lũng). Umbrella «Đường Hồ Chí Minh trên biển» (DTQGĐB đợt 16/2024) đã có ở `di-tich-qgdb.json` — 12 mục này là điểm bến thành phần có hồ sơ riêng.
+
+**A4 — vét hoãn (12) + đóng sổ 14 mục**: Thắng Tam, Núi Đôi Quản Bạ, Lê Hồng Phong (Petrus Ký), Nguyễn Đình Chiểu (Collège de Mytho), muối Sa Huỳnh + Bạc Liêu, 5 thác Lâm Đồng/Lào Cai/Đắk Lắk (Cam Ly, Prenn, Thung Lũng Tình Yêu, Thác Bạc, Cát Cát, Dray Sáp Thượng). Đóng sổ dứt điểm: chùa Chuông ⊂ Khu di tích Phố Hiến · Phước Kiều đã có bản ghi tiền hiền · Cót–La–Canh ⊂ «tứ danh hương Mỗ–La–Canh–Cót» · Đông Kinh Nghĩa Thục không có hồ sơ vật thể · Thành Đông chỉ là tên gọi cũ · Continental/Metropole tư nhân · ví phường vải ⊂ Ví Giặm · Kê Gà trùng hải đăng đã có.
+
+**A1 — vỉa thương cảng/chợ/cầu CẠN**: mọi mục đầu bảng (Phố Hiến, Vân Đồn, Nước Mặn, Bao Vinh–Thanh Hà, chợ Bến Thành/Đồng Xuân/Bình Tây, cầu Long Biên, cầu ngói Thanh Toàn/Phát Diệm) đều đã có trong DB. Chỉ còn 2 mục xếp hạng: cầu ngói Bình Vọng, cầu đá cổ Hà Tràng. **12 mục chợ chưa xếp hạng** (chợ Rồng, Đà Lạt, Cồn, Hàn, Viềng, Đông Ba, Đầm, 3 chợ nổi, Thành Thị Nại, cầu Bình Lợi) giữ ở `scratchpad/song10_A1_chua_xep_hang.json` — chờ Iron Man quyết có mở lớp «chợ truyền thống» không.
+
+**Phương án B (Iron Man chốt)** cho 4 mục trùng tư cách: không tách bản ghi mới, chèn dữ kiện vào `mo_ta` bản ghi sẵn có — Cù Lao Chàm (di-tich-cach-mang), Quần Đảo Cát Bà + Vườn Quốc gia Cát Tiên (di-tich-qgdb), Mũi Cà Mau (đã đủ, bỏ qua). Ranh giới rút ra: **tách** khi bản ghi cũ là thực thể khác (VQG Núi Chúa ≠ khu DTSQ Núi Chúa); **gộp mo_ta** khi là cùng thực thể đã mang danh hiệu.
+
+**Bài học kỹ thuật của sóng**
+1. **`loai` lệch tập theo lớp** — mỗi lớp có tập `loai` riêng, agent tự đặt giá trị mới sẽ lệch popup. Đã chuẩn hoá; mở rộng có ý thức 3 giá trị cho `danh-thang-thien-nhien`: `vuon-quoc-gia`, `khu-du-tru-sinh-quyen`, và `thang-canh` (thắng cảnh tổng hợp không thuộc dạng địa hình nào — Thung Lũng Tình Yêu; agent ban đầu ép vào `ho` vì trong khu có hồ Đa Thiện, main sửa lại cho đúng bản chất).
+2. **Dedup của agent không đủ** — script gộp đối chiếu chéo cả 33 file bắt được 2 lỗi mà 4 vòng tự kiểm của agent đều lọt: «Vườn quốc gia Cát Tiên» trùng thật ở `di-tich-qgdb.json` (trượt vì khác hoa/thường), Lang Biang trùng khít toạ độ với nghệ nhân Krã Jãn Ha Liêng. → **Luôn chạy `scratchpad/merge_song10.mjs` dry-run trước khi nạp.**
+3. **STRICT_SOURCE thiếu 3 file** — `di-tich-quoc-gia` (lớp nhận nhiều nhất 6 sóng gần đây), `di-tich-qgdb`, `unesco` chưa hề bị gate nguồn. Đã thêm 2 file đầu. ⚠️ `unesco.json` **chưa bật được**: 13 mục dùng schema cũ không có `nguon[]` riêng — cần backfill nguồn từng mục, đã ghi TODO trong validator.
+4. **Số liệu tra được phải trích từ nguồn đã fetch** — A2 suy đoán ngày QĐ Bát Xát (13/4 thay vì 24/3), chỉ lộ ra khi main WebFetch lại Báo Lào Cai.
+
+**🔖 Công cụ tra cứu mới (dùng lại cho mọi sóng sau)** — 2 văn bản kiểm kê có số QĐ từng mục:
+- TP.HCM, 321 di tích: `hochiminhcity.gov.vn` — «Danh mục cơ quan, đơn vị quản lý di tích LSVH-DLTC trên địa bàn TP.HCM»
+- Lâm Đồng, 145 di tích: `lamdong.gov.vn/sites/svhttdl/hoatdongdulich/Shared Documents/145 di tích Lâm Đồng.pdf`
+
+**Chuẩn mới áp từ sóng 10**: mỗi mục có field `xep_hang` ghi rõ cấp + số QĐ + ngày; không tra được thì ghi «chưa xác minh được», tuyệt đối không bịa số.
+
+**Chờ Iron Man ở cổng §9**: 12 mục chợ chưa xếp hạng (mở lớp mới?) · 2 mục cấp tỉnh/thành nằm trong lớp `di-tich-quoc-gia` (Lê Hồng Phong QĐ 3089/QĐ-UBND cấp TP, Nguyễn Đình Chiểu cấp tỉnh Tiền Giang) · nhóm nhạy cảm A3 (Chín Hầm/Phú Lợi/Tân Hiệp nêu đích danh VNCH + Ngô Đình Cẩn; Trại Davis dùng thuật ngữ «Chính phủ Cách mạng lâm thời») · câu hỏi nguồn báo chính thống ngoài báo Đảng cho lớp `cong-trinh-ky-luc` (sóng 7, vẫn treo).
+
+**3 gate xanh** sau khi nạp: validator ✅ (đã gồm 2 lớp mới vào STRICT_SOURCE) · audit chủ quyền ✅ · build ✅ 4.24s.
