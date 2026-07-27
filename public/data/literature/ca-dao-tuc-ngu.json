@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Ca dao & tục ngữ là sáng tác dân gian khuyết danh → public-domain, đăng toàn văn. Một số câu là mô-típ công thức được dân gian nhiều vùng dùng chung (vd. «gạo trắng nước trong») — đã ghi chú khi gặp. Nguồn tham chiếu chính: Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam (NXB Văn học); Nguyễn Xuân Kính (chủ biên) — Kho tàng ca dao người Việt (NXB Văn hóa Thông tin, 2001). Các câu dưới đây dựa trên tri thức văn học phổ thông đã được kiểm chứng nhiều lần qua SGK/tuyển tập — cần đối chiếu lại nếu dùng cho mục đích học thuật nghiêm ngặt.",
+  "ghi_chu": "Ca dao & tục ngữ là sáng tác dân gian khuyết danh → public-domain, đăng toàn văn. Một số câu là mô-típ công thức được dân gian nhiều vùng dùng chung (vd. «gạo trắng nước trong») — đã ghi chú khi gặp. Nguồn tham chiếu chính: Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam (NXB Văn học); Nguyễn Xuân Kính (chủ biên) — Kho tàng ca dao người Việt (NXB Văn hóa Thông tin, 2001). Các câu dưới đây dựa trên tri thức văn học phổ thông đã được kiểm chứng nhiều lần qua SGK/tuyển tập — cần đối chiếu lại nếu dùng cho mục đích học thuật nghiêm ngặt. — Về SẤM: dự án hiện KHÔNG có mục sấm nào đạt chuẩn nguồn. Câu «Lê tồn Trịnh tại, Lê bại Trịnh vong» đã bị gỡ ngày 2026-07-27 sau khi tra Viện Nghiên cứu Hán Nôm, haiphong.gov.vn, dsvh.gov.vn, VnExpress, Dân Việt và tìm theo site:gov.vn đều không thấy: câu này chỉ lưu trong các kho sấm ký dân gian và blog, đều thuộc diện nguồn bị bác. Lưu ý dễ nhầm: giai thoại Nguyễn Bỉnh Khiêm khuyên Trịnh Kiểm «giữ chùa thờ Phật thì ăn oản» (có trong Đại Việt sử ký toàn thư) là MỘT CHUYỆN KHÁC, không phải dị bản của câu sấm trên.",
   "items": [
     {
       "id": "dong-dang-co-pho-ky-lua",
@@ -674,20 +674,6 @@
       ]
     },
     {
-      "id": "sam-trang-trinh-le-ton-trinh-tai",
-      "loai": "sam",
-      "noi_dung": [
-        "Lê tồn Trịnh tại,",
-        "Lê bại Trịnh vong."
-      ],
-      "lien_quan_tinh": [],
-      "y_nghia": "Câu sấm được cho là của Trạng Trình Nguyễn Bỉnh Khiêm (1491-1585), tiên đoán về mối quan hệ cộng sinh giữa nhà Lê và chúa Trịnh trong thời kỳ Lê trung hưng: nhà Lê còn thì họ Trịnh còn nắm quyền nhiếp chính, nhà Lê mất thì họ Trịnh cũng suy vong theo — phản ánh cục diện \"vua Lê chúa Trịnh\" đặc thù của lịch sử Việt Nam thế kỷ 16-18.",
-      "ghi_chu_bien_tap": "Sấm Trạng Trình lưu truyền qua nhiều dị bản chép tay chữ Nôm, khó xác định bản gốc và có nhiều câu bị đời sau thêm thắt, gán ghép cho sự kiện xảy ra sau khi Nguyễn Bỉnh Khiêm mất. Câu trích ở đây là câu được nhiều nguồn nghiên cứu/sưu tầm dẫn lại thống nhất, tương đối ít tranh cãi so với các câu sấm khác.",
-      "nguon": [
-        "Thi Viện (kho thơ văn cổ điển) — https://www.thivien.net/Nguy%E1%BB%85n-B%E1%BB%89nh-Khi%C3%AAm/S%E1%BA%A5m-k%C3%BD/group-_erc54e8yEHiPT6zVMaJ2w"
-      ]
-    },
-    {
       "id": "tuc-ngu-binh-dinh-phu-yen-khanh-hoa",
       "loai": "tuc-ngu",
       "noi_dung": [
@@ -1094,12 +1080,285 @@
       "nguon": [
         "Đài Tiếng nói Nhân dân TP.HCM (VOH) — https://voh.com.vn/song-dep/tho-ve-binh-dinh-493243.html"
       ]
+    },
+    {
+      "id": "ve-that-thu-kinh-do-hue-1885",
+      "loai": "ve",
+      "noi_dung": [
+        "Đánh cho thiên hạ bại tan,",
+        "Lâu đài xiêu méo chẳng an bề gì.",
+        "Đánh cho thiên hạ bại suy,",
+        "Người thời chết mẹ, kẻ thì chết cha.",
+        "Người thời cháy cửa cháy nhà,",
+        "Chết con chết vợ khổ mà sanh sơ.",
+        "Ông bà không chốn phụng thờ,",
+        "Vô phương sanh lý trời ơi hỡi trời."
+      ],
+      "lien_quan_tinh": [
+        "hue"
+      ],
+      "y_nghia": "Trích đoạn vè dài hơn 1.700 câu kể lại thảm cảnh kinh đô Huế thất thủ đêm 22 rạng 23/5/1885, khi phái chủ chiến phản công quân Pháp thất bại, vua Hàm Nghi phải xuất bôn ra Tân Sở — mở đầu phong trào Cần Vương.",
+      "ghi_chu_bien_tap": "Trích đoạn 8 trong hơn 1.700 câu của vè khuyết danh «Thất thủ Kinh đô», do nhiều tác giả dân gian thuộc nhiều tầng lớp sáng tác, truyền miệng rồi được nhà nghiên cứu Hoàng Trọng Thước ghi lại bằng chữ Nôm và Quốc ngữ. Bài nguồn còn 3 đoạn khác (cảnh phòng thủ, cảnh tưởng niệm) chưa đưa vào đây.",
+      "nguon": [
+        "Viện Nghiên cứu Kinh tế – Xã hội Hà Nội (Cổng TTĐT UBND TP Hà Nội) — https://vienktxh.hanoi.gov.vn/thong-tin-kinh-te-xa-hoi-thu-do/that-thu-kinh-do-hue-qua-nhung-dieu-ve-58809.html"
+      ]
+    },
+    {
+      "id": "ve-muoi-chuc-noc-nan",
+      "loai": "ve",
+      "noi_dung": [
+        "Nghe vẻ nghe ve,",
+        "Nghe vè Mười Chức,",
+        "Không chịu áp bức,",
+        "Quyết chống Tây tà...",
+        "Ngó lên trời trời cao không có thấu,",
+        "Mà ngó xuống đất thấy đất rộng thinh thinh.",
+        "Tai bay mà vạ gió thình lình,",
+        "Cả nhà mà Mười Chức tan tành tại ai.",
+        "Ác nhân là lũ cướp ngày..."
+      ],
+      "lien_quan_tinh": [
+        "ca-mau"
+      ],
+      "y_nghia": "Kể lại vụ án Đồng Nọc Nạn (1928) ở Giá Rai, Bạc Liêu — gia đình nông dân Mười Chức (Biện Toại) đổ máu chống địa chủ và lính Pháp cướp lúa, cướp đất. Vụ án gây chấn động dư luận Nam Kỳ, trở thành biểu tượng phong trào nông dân chống áp bức.",
+      "ghi_chu_bien_tap": "Trích ghép 2 đoạn (mở đầu và đoạn than) trong bài «Vè Mười Chức», bản do nhóm sinh viên Đại học Cần Thơ sưu tầm năm 1981 từ trí nhớ cụ Trần Văn Sớm (Giá Rai). Có dị bản dài hơn nhiều, nhan đề «Thơ Mười Chức», do nhà nghiên cứu Huỳnh Ngọc Trảng công bố năm 2007 từ bản chép tay của hậu duệ ông Mười Chức — phần đầu tương tự, phần sau dài hơn hẳn. Bạc Liêu sáp nhập vào tỉnh Cà Mau năm 2025.",
+      "nguon": [
+        "Báo Cần Thơ — https://baocantho.com.vn/ve-bac-lieu-nghe-chuyen-xua-noc-nang-a152460.html"
+      ]
+    },
+    {
+      "id": "ve-quan-hon-18-thon-vuon-trau",
+      "loai": "ve",
+      "noi_dung": [
+        "Mười tám thôn ruột đau như chỉ thắt,",
+        "Dân Hóc Môn tợ muối xát lòng.",
+        "Xe song mã sướng đà quá sướng,",
+        "Dân bần tiện lòng kia chẳng tưởng,",
+        "Ép lấy dầu, nạp thiểu thâu đa.",
+        "Gậy tầm vông, võ ống vai mang,",
+        "Qua giờ dậu đoạt nơi yểm lộ."
+      ],
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "y_nghia": "«Vè Quản Hớn» kể lại cuộc khởi nghĩa 18 Thôn Vườn Trầu (Hóc Môn – Đức Hòa) đêm 30 rạng mồng 1 Tết Ất Dậu 1885, do Phan Công Hớn (Quản Hớn) và Nguyễn Văn Quá lãnh đạo, giết chết Đốc phủ Trần Tử Ca — tay sai đắc lực của Pháp.",
+      "ghi_chu_bien_tap": "Trích ghép 3 đoạn ngắn (7 câu) rải trong cùng một bài nghiên cứu. Còn dị bản «Vè ông Hớn, ông Quá giết đốc phủ Ca» do Lê Doãn Hài (nhân chứng, 1830–1914) soạn, dài 69 câu lục bát — chưa kiểm được nguyên văn đầy đủ nên không đưa vào noi_dung.",
+      "nguon": [
+        "Cổng thông tin điện tử Chính phủ — Trang TP.HCM — https://tphcm.chinhphu.vn/cuoc-dau-tranh-cua-nhan-dan-sai-gon-truoc-khi-dang-ra-doi-1014556.htm"
+      ]
+    },
+    {
+      "id": "ca-dao-ba-diem-ngua-dua",
+      "loai": "ca-dao",
+      "noi_dung": [
+        "Trải xem Thập Bát Phù Viên,",
+        "Một nơi Bà Điểm khuôn viên mỹ miều.",
+        "Ngựa hay mua sắm quá nhiều,",
+        "Mỗi kỳ đua ngựa thảy đều có ăn.",
+        "Hai mươi hai hạt xa gần,",
+        "Tiếng ngựa Bà Điểm ai bằng đặng đâu."
+      ],
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "y_nghia": "Ca ngợi vùng Bà Điểm — trung tâm 18 Thôn Vườn Trầu (Hóc Môn) — nổi tiếng nghề nuôi ngựa đua từ thời Minh Mạng (1820–1840); ngựa Bà Điểm được xem là nhất trong «hai mươi hai hạt» Nam Kỳ.",
+      "nguon": [
+        "Cổng thông tin điện tử Chính phủ — Trang TP.HCM — https://tphcm.chinhphu.vn/cuoc-dau-tranh-cua-nhan-dan-sai-gon-truoc-khi-dang-ra-doi-1014556.htm"
+      ]
+    },
+    {
+      "id": "ve-truong-dinh",
+      "loai": "ve",
+      "noi_dung": [
+        "Nam Kỳ là đất Lạp Man,",
+        "Công người khai phá, mở mang lâu ngày.",
+        "Kể từ Tây tới đến nay,",
+        "Giang sơn gần thuộc về tay người ngoài.",
+        "Trương Công hùng lược thao tài,",
+        "Quyết đem binh mã thử vài trận chơi."
+      ],
+      "lien_quan_tinh": [
+        "dong-thap"
+      ],
+      "y_nghia": "«Vè Trương Định» kể cuộc khởi nghĩa chống Pháp (1859–1864) của Trương Định — Bình Tây đại nguyên soái — tại Gò Công, Tân An, một trong những cuộc kháng chiến vũ trang chống Pháp sớm nhất ở Nam Kỳ.",
+      "ghi_chu_bien_tap": "Trích 6 câu mở đầu của bài vè dài hơn. Tiền Giang sáp nhập vào tỉnh Đồng Tháp năm 2025 (giữ tên Đồng Tháp) nên lien_quan_tinh ghi dong-thap.",
+      "nguon": [
+        "Đài Tiếng nói Nhân dân TP.HCM (VOH) — https://voh.com.vn/song-dep/bai-ve-dan-gian-562509.html"
+      ]
+    },
+    {
+      "id": "ve-tran-danh-son-tra",
+      "loai": "ve",
+      "noi_dung": [
+        "Thần công nó bắn,",
+        "Đạn nổ đùng đùng,",
+        "Nó bắn lung tung,",
+        "Vào thành Đà trấn,",
+        "Cho quân xâm lấn,",
+        "Đổ bộ Sơn Trà.",
+        "Lệnh ông đại tá,",
+        "Đánh giáp lá cà."
+      ],
+      "lien_quan_tinh": [
+        "da-nang"
+      ],
+      "y_nghia": "Kể lại trận liên quân Pháp – Tây Ban Nha nổ súng tấn công bán đảo Sơn Trà, cửa biển Đà Nẵng ngày 1/9/1858 — phát súng đầu tiên mở đầu cuộc xâm lược của thực dân Pháp vào Việt Nam.",
+      "ghi_chu_bien_tap": "Câu thứ hai có dị bản chép «Đạn nổi đùng đùng» ngay trên trang nguồn; ở đây lấy «nổ» theo cách đọc thông dụng. Chưa đối chiếu được bản in để chốt.",
+      "nguon": [
+        "Đài Tiếng nói Nhân dân TP.HCM (VOH) — https://voh.com.vn/song-dep/bai-ve-dan-gian-562509.html"
+      ]
+    },
+    {
+      "id": "ve-nghia-quan-bang-ninh-ha-tinh",
+      "loai": "ve",
+      "noi_dung": [
+        "Cầu Ngu, Trung Lễ xưa nay,",
+        "Thay trời đổi nước, có anh tài nổi lên.",
+        "Chộ Mường về Cẩm Xuyên,",
+        "Ba tháng rày ngơ ngẩn.",
+        "Dân ta cầu khẩn,",
+        "Được năm bảy mùa liền."
+      ],
+      "lien_quan_tinh": [
+        "ha-tinh"
+      ],
+      "y_nghia": "Kể chuyện nghĩa quân Cần Vương do Lê Ninh (Bang Ninh, quê Trung Lễ, Đức Thọ) chỉ huy hạ thành Hà Tĩnh, hưởng ứng chiếu Cần Vương chống Pháp cuối thế kỷ XIX.",
+      "ghi_chu_bien_tap": "«Chộ» là phương ngữ Hà Tĩnh, nghĩa là «thấy». Trích đoạn ngắn, chưa rõ tổng số câu toàn bài.",
+      "nguon": [
+        "Đài Tiếng nói Nhân dân TP.HCM (VOH) — https://voh.com.vn/song-dep/bai-ve-dan-gian-562509.html"
+      ]
+    },
+    {
+      "id": "ve-sai-dao-quang-nam",
+      "loai": "ve",
+      "noi_dung": [
+        "Lẳng lặng mà nghe:",
+        "Cái vè «sai đạo»,",
+        "Danh vi trấp bảo,",
+        "Vụ dĩ an dân,",
+        "Khâm sai đại thần,",
+        "Kéo vô Đà Nẵng."
+      ],
+      "lien_quan_tinh": [
+        "da-nang"
+      ],
+      "y_nghia": "Vè châm biếm sự kiện năm 1886: khâm sai Nguyễn Thân được triều đình cử vào Quảng Nam – Đà Nẵng phối hợp quân Pháp đàn áp phong trào Cần Vương, núp danh nghĩa «an dân».",
+      "ghi_chu_bien_tap": "Câu «danh vi trấp bảo, vụ dĩ an dân» dùng Hán Việt cổ (nghĩa đen: danh là gìn giữ, việc là yên dân) — ý mỉa mai. Chưa đối chiếu được chính tả gốc chữ Nôm nên phiên âm có thể sai biệt nhỏ. Quảng Nam sáp nhập vào TP Đà Nẵng năm 2025.",
+      "nguon": [
+        "Đài Tiếng nói Nhân dân TP.HCM (VOH) — https://voh.com.vn/song-dep/bai-ve-dan-gian-562509.html"
+      ]
+    },
+    {
+      "id": "ve-cac-lai-hai-do-ha-tien",
+      "loai": "ve",
+      "noi_dung": [
+        "Ghe bầu các lái đi buôn,",
+        "Đêm khuya ngồi buồn, kể chuyện ngâm nga.",
+        "Rạch Giá cửa ấy là nhà,",
+        "Dầu ai buôn bán cũng vào nghỉ ngơi.",
+        "Hòn Tre, hòn Yến có duyên,",
+        "Hòn Heo, hòn Hộ, cửa quyền song song.",
+        "Hà Tiên có chốn Đại Đồng,",
+        "Có sông Rạch Vượt, có vùng Tô Châu.",
+        "Bên ngoài Phú Quốc dặm trường,",
+        "Ấy hòn Phú Quốc là đường tới lui."
+      ],
+      "lien_quan_tinh": [
+        "an-giang"
+      ],
+      "y_nghia": "«Vè các lái» là hải đồ truyền miệng của giới lái buôn ghe bầu và ngư dân đi biển thế kỷ XVIII–XIX, liệt kê tuần tự các cửa biển, hòn đảo dọc bờ biển để chỉ đường đi biển — đoạn trích thuộc vùng Rạch Giá – Hà Tiên – Phú Quốc.",
+      "ghi_chu_bien_tap": "KHÔNG PHẢI một đoạn liền mạch: 10 câu này được ghép từ nhiều chỗ rời nhau trong bài, trên trang nguồn giữa chúng có các đoạn khác xen vào (ví dụ «Theo đòi Ông Đốc mà lên» đứng trước cụm Rạch Giá). Toàn bài dài nhiều chục câu, còn liệt kê Sân Chim, Mũi Nai, Kê Gà… chưa đưa vào đây. Kiên Giang sáp nhập vào tỉnh An Giang năm 2025.",
+      "nguon": [
+        "Báo Cần Thơ — https://baocantho.com.vn/ve-cac-lai-hai-do-truyen-mieng-cua-nguoi-di-bien-a115774.html"
+      ]
+    },
+    {
+      "id": "ve-chang-lia-truong-may",
+      "loai": "ve",
+      "noi_dung": [
+        "Chiều chiều én liệng Truông Mây,",
+        "Tiếc thương Chàng Lía bị vây trong thành."
+      ],
+      "lien_quan_tinh": [
+        "gia-lai"
+      ],
+      "y_nghia": "Câu vè dân gian tiếc thương Chàng Lía — thủ lĩnh khởi nghĩa nông dân thế kỷ XVIII, căn cứ Truông Mây — bị quan quân vây bắt. Nhân vật gắn với mô-típ «lấy của nhà giàu chia cho người nghèo» lưu truyền ở Bình Định.",
+      "ghi_chu_bien_tap": "Chỉ 1 câu lục bát trích trong toàn bộ vè chàng Lía; bản đầy đủ dài tới 1.438 câu theo tuồng «Văn Doan diễn ca», chưa lấy được nguyên văn phần dài từ nguồn đạt chuẩn. Bình Định sáp nhập vào tỉnh Gia Lai năm 2025.",
+      "nguon": [
+        "Báo An Giang — https://baoangiang.com.vn/chang-lia-va-chuyen-lay-cua-nha-giau-chia-cho-nguoi-ngheo--a480391.html"
+      ]
+    },
+    {
+      "id": "ve-thay-thong-chanh",
+      "loai": "ve",
+      "noi_dung": [
+        "Nhựt trình Vĩnh Ký đặt ra,",
+        "Chép làm một bổn để mà xem chơi.",
+        "Trà Vinh nhiều kẻ kỳ đời,",
+        "Có thầy Thông Chánh thiệt người lớn gan.",
+        "Trúng nhằm ông Chánh Vĩnh Long,",
+        "Trúng ngay bắp vế điệu về nhà thương.",
+        "Các quan, thiên hạ chạy tuôn,",
+        "Đua nhau mà chạy ra đường ngẩn ngơ.",
+        "Trúng nhằm ông Đốc Cần Thơ,",
+        "Bây giờ lại trúng Chánh Tòa Bạc Liêu.",
+        "Khá khen cây súng dị kỳ,",
+        "An Nam không trúng, trúng nhằm người Tây."
+      ],
+      "lien_quan_tinh": [
+        "vinh-long"
+      ],
+      "y_nghia": "Truyện thơ kể vụ Thầy Thông Chánh (Nguyễn Văn Chánh) nổ súng bắn chết biện lý Pháp Jaboin ngay tại toà án Trà Vinh năm 1893 để trả thù việc vợ mình bị cưỡng bức — hành động phản kháng cường quyền thực dân gây chấn động dư luận Nam Kỳ, được soạn giả dân gian dựa theo tin Gia Định báo chép thành truyện truyền miệng.",
+      "ghi_chu_bien_tap": "Trích ghép 3 đoạn rời (mở đầu, cảnh hỗn loạn sau phát súng, lời bình kết) — không phải một đoạn liền mạch. Lưu truyền 6 dị bản dài 198–262 câu. Thể loại nằm giữa ranh giới «vè» và «nói thơ» Nam Bộ; xếp loai=ve. Trà Vinh sáp nhập vào tỉnh Vĩnh Long năm 2025.",
+      "nguon": [
+        "Báo Cần Thơ — https://baocantho.com.vn/noi-tho-loai-hinh-dien-xuong-dan-gian-doc-dao-cua-nam-bo-a21090.html"
+      ]
+    },
+    {
+      "id": "ve-sau-trong",
+      "loai": "ve",
+      "noi_dung": [
+        "Anh hùng sống ở thác về,",
+        "Nên hư cũng tiếng theo lề lối xưa.",
+        "Người than, kẻ khóc như mưa,",
+        "Phút đâu giờ tới chiêng đưa mấy hồi."
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Trích đoạn kết truyện thơ «Sáu Trọng» — một trong những truyện thơ Quốc ngữ Nam Kỳ có số bản in nhiều nhất cuối thế kỷ XIX, kể chuyện một nhân vật giang hồ chống lại quan chức Pháp; đoạn trích tả cảnh đưa đám tang.",
+      "ghi_chu_bien_tap": "Chỉ trích được 4 câu kết qua nguồn đạt chuẩn. Chưa đủ dữ kiện xác định quê quán nhân vật nên để lien_quan_tinh rỗng — tài liệu chỉ ghi chung «Nam Kỳ».",
+      "nguon": [
+        "Báo Cần Thơ — https://baocantho.com.vn/noi-tho-loai-hinh-dien-xuong-dan-gian-doc-dao-cua-nam-bo-a21090.html"
+      ]
+    },
+    {
+      "id": "ve-hai-mieng",
+      "loai": "ve",
+      "noi_dung": [
+        "Cậu Hai là bực anh hùng,",
+        "Ăn chơi đúng bực vô cùng liệt oanh.",
+        "Nam kỳ lục tỉnh nổi danh,",
+        "Thật là một bực hùng anh trên đời.",
+        "Thương người thất thế lỡ đường,",
+        "Thương người trung chánh, ghét phường tà gian.",
+        "Cậu Hai tuy thật dọc ngang,",
+        "Nhưng mà chánh trực vẹn toàn không sai."
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Truyện thơ «Hai Miêng» — nhân vật có thật Huỳnh Công Miên — ca ngợi kiểu «anh hùng hảo hán» Nam Kỳ lục tỉnh cuối thế kỷ XIX: ngang tàng nhưng trọng nghĩa khinh tài, bênh vực kẻ yếu.",
+      "ghi_chu_bien_tap": "Chưa xác định được quê quán cụ thể của Huỳnh Công Miên (tài liệu chỉ ghi chung «Nam Kỳ») nên để lien_quan_tinh rỗng.",
+      "nguon": [
+        "Báo Cần Thơ — https://baocantho.com.vn/noi-tho-loai-hinh-dien-xuong-dan-gian-doc-dao-cua-nam-bo-a21090.html"
+      ]
     }
   ],
   "sources": [
     "Đài Tiếng nói Nhân dân TP.HCM (VOH) — https://voh.com.vn",
     "Báo Phú Yên — https://baophuyen.vn",
-    "Văn VN (Hội Nhà văn Việt Nam) — https://vanvn.net"
+    "Văn VN (Hội Nhà văn Việt Nam) — https://vanvn.net",
+    "Cổng thông tin điện tử Chính phủ — Trang TP.HCM — https://tphcm.chinhphu.vn",
+    "Viện Nghiên cứu Kinh tế – Xã hội Hà Nội (Cổng TTĐT UBND TP Hà Nội) — https://vienktxh.hanoi.gov.vn",
+    "Báo Cần Thơ — https://baocantho.com.vn",
+    "Báo An Giang — https://baoangiang.com.vn"
   ],
-  "ngay_cap_nhat": "2026-07-26"
+  "ngay_cap_nhat": "2026-07-27"
 }
