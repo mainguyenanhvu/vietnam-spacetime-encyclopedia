@@ -1,8 +1,14 @@
 {
   "gioi_thieu": "Hai anh em song sinh Lạc và Âu chạm tay vào chiếc trống đồng Đông Sơn trong viện bảo tàng. Bỗng «tùng… tùng…» — chim Lạc trên mặt trống vỗ cánh bay ra, mở những cánh cổng thời gian đưa hai bạn nhỏ đi khắp đất nước Việt Nam!",
   "nhan_vat": [
-    { "ten": "Lạc", "mo_ta": "Anh trai, tinh nghịch, thích khám phá, luôn mang theo cuốn sổ vẽ." },
-    { "ten": "Âu", "mo_ta": "Em gái, thông minh, hay đặt câu hỏi, sưu tầm những hạt ngọc Lạc Việt." }
+    {
+      "ten": "Lạc",
+      "mo_ta": "Anh trai, tinh nghịch, thích khám phá, luôn mang theo cuốn sổ vẽ."
+    },
+    {
+      "ten": "Âu",
+      "mo_ta": "Em gái, thông minh, hay đặt câu hỏi, sưu tầm những hạt ngọc Lạc Việt."
+    }
   ],
   "chapters": [
     {
@@ -18,7 +24,12 @@
       ],
       "thu_thach": {
         "cau_hoi": "Bánh chưng vuông tượng trưng cho điều gì?",
-        "dap_an": ["Đất", "Trời", "Biển", "Núi"],
+        "dap_an": [
+          "Đất",
+          "Trời",
+          "Biển",
+          "Núi"
+        ],
         "dung": "Đất"
       },
       "ngoc": "Ngọc Đất Tổ 🟤"
@@ -36,7 +47,12 @@
       ],
       "thu_thach": {
         "cau_hoi": "Tên «Thăng Long» có nghĩa là gì?",
-        "dap_an": ["Rồng bay lên", "Thành phố trong sông", "Hồ trả gươm", "Chợ lớn nhất"],
+        "dap_an": [
+          "Rồng bay lên",
+          "Thành phố trong sông",
+          "Hồ trả gươm",
+          "Chợ lớn nhất"
+        ],
         "dung": "Rồng bay lên"
       },
       "ngoc": "Ngọc Thăng Long 🟡"
@@ -54,7 +70,12 @@
       ],
       "thu_thach": {
         "cau_hoi": "Dòng sông chảy qua thành phố Huế tên là gì?",
-        "dap_an": ["Sông Hương", "Sông Hồng", "Sông Cửu Long", "Sông Lam"],
+        "dap_an": [
+          "Sông Hương",
+          "Sông Hồng",
+          "Sông Cửu Long",
+          "Sông Lam"
+        ],
         "dung": "Sông Hương"
       },
       "ngoc": "Ngọc Sông Hương 🟣"
@@ -72,7 +93,12 @@
       ],
       "thu_thach": {
         "cau_hoi": "Bác Hồ ra đi tìm đường cứu nước từ bến cảng nào?",
-        "dap_an": ["Bến Nhà Rồng", "Bến Bạch Đằng", "Cảng Hải Phòng", "Bến Ninh Kiều"],
+        "dap_an": [
+          "Bến Nhà Rồng",
+          "Bến Bạch Đằng",
+          "Cảng Hải Phòng",
+          "Bến Ninh Kiều"
+        ],
         "dung": "Bến Nhà Rồng"
       },
       "ngoc": "Ngọc Phương Nam 🔴"
@@ -90,7 +116,12 @@
       ],
       "thu_thach": {
         "cau_hoi": "Điểm cực Nam trên đất liền của Tổ quốc là nơi nào?",
-        "dap_an": ["Mũi Cà Mau", "Mũi Né", "Mũi Đại Lãnh", "Mũi Sa Vĩ"],
+        "dap_an": [
+          "Mũi Cà Mau",
+          "Mũi Né",
+          "Mũi Đại Lãnh",
+          "Mũi Sa Vĩ"
+        ],
         "dung": "Mũi Cà Mau"
       },
       "ngoc": "Ngọc Đất Mũi 🟢"
