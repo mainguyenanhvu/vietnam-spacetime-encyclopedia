@@ -62,17 +62,42 @@ const CANH_BAO = [
 // phần chữ của Wikipedia. Miễn trừ trước khi đối chiếu danh sách bác.
 const MIEN_TRU = /(?:upload|commons)\.wikimedia\.org/i;
 
+// Miễn trừ CÓ HỒ SƠ. Bốn bản ghi này đã qua một vòng tra thật (mỗi mục ≥4
+// biến thể câu tìm, qua cổng nhà nước, ghi lại nơi đã tra trong
+// `ghi_chu_bien_tap` của chính bản ghi) mà vẫn không có nguồn đạt chuẩn nào
+// thay thế. Giữ dữ kiện còn hơn xoá, nhưng KHÔNG để cổng đỏ vĩnh viễn — cổng
+// đỏ mãi thì lần thứ ba trở đi không ai đọc nữa, và vi phạm MỚI sẽ lẫn vào.
+//
+// Thêm mục vào đây là một quyết định biên tập, không phải cách làm cho cổng
+// im. Điều kiện: đã tra và ghi lại nơi tra trong bản ghi. Khi nào tra được
+// nguồn tốt thì xoá dòng tương ứng — cổng tự báo dòng thừa.
+const MIEN_TRU_CO_HO_SO = [
+  ["figures/danh-nhan.json", "can-tho-mai-van-bo", "Mai Văn Bộ — không có bài tiểu sử nào trên cổng/báo nhà nước (2026-07-27)"],
+  ["overlays/danh-nhan-quan-su-co-trung-dai.json", "quy-lan-cong-chua", "Quý Lan công chúa — nhân vật hệ thần tích, không cơ quan nhà nước nào lưu/công bố (2026-07-27)"],
+  ["overlays/su-than-ngoai-giao.json", "vu-huy-tan", "Vũ Huy Tấn — chỉ có tên trong đoàn sứ 1790, không bài tiểu sử nhà nước (2026-07-27)"],
+  ["overlays/tri-thuc-khoa-hoc-tk20.json", "bui-ky", "Bùi Kỷ — không có bài tiểu sử nào trên cổng/báo nhà nước (2026-07-27)"],
+];
+// Đường dẫn lúc quét là repo-relative ("public/data/..."), còn danh sách trên
+// viết gọn cho dễ đọc — cắt tiền tố để hai bên khớp.
+const khoaMienTru = (file, id) => `${String(file).replace(/^public\/data\//, "")} :: ${id}`;
+const conLai = new Set(MIEN_TRU_CO_HO_SO.map(([f, id]) => khoaMienTru(f, id)));
+const lyDoMienTru = new Map(MIEN_TRU_CO_HO_SO.map(([f, id, ly]) => [khoaMienTru(f, id), ly]));
+
 const TRUONG_NGUON = new Set(["nguon", "sources"]);
 
 const loi = [];
 const canh = [];
+const thaHoSo = [];
 
-function soi(nut, duong, file) {
+// `id` là id của bản ghi gần nhất bao quanh nút đang xét — cần nó để đối chiếu
+// danh sách miễn trừ, vì miễn trừ gắn với BẢN GHI chứ không gắn với tên miền.
+function soi(nut, duong, file, id) {
   if (Array.isArray(nut)) {
-    nut.forEach((v, i) => soi(v, `${duong}[${i}]`, file));
+    nut.forEach((v, i) => soi(v, `${duong}[${i}]`, file, id));
     return;
   }
   if (nut === null || typeof nut !== "object") return;
+  const idHienTai = typeof nut.id === "string" ? nut.id : id;
   for (const [khoa, val] of Object.entries(nut)) {
     const duongCon = duong ? `${duong}.${khoa}` : khoa;
     if (TRUONG_NGUON.has(khoa)) {
@@ -81,7 +106,13 @@ function soi(nut, duong, file) {
         if (MIEN_TRU.test(s)) continue;
         const hit = BAC.find(([re]) => re.test(s));
         if (hit) {
-          loi.push({ file, duong: duongCon, nguon: s, ly_do: hit[1] });
+          const khoaMT = khoaMienTru(file, idHienTai);
+          if (lyDoMienTru.has(khoaMT)) {
+            conLai.delete(khoaMT);
+            thaHoSo.push({ file, id: idHienTai, ly_do: lyDoMienTru.get(khoaMT) });
+          } else {
+            loi.push({ file, duong: duongCon, nguon: s, ly_do: hit[1] });
+          }
           continue;
         }
         const nhac = CANH_BAO.find(([re]) => re.test(s));
@@ -89,7 +120,7 @@ function soi(nut, duong, file) {
       }
       continue; // nguồn là lá, không đi sâu thêm
     }
-    soi(val, duongCon, file);
+    soi(val, duongCon, file, idHienTai);
   }
 }
 
@@ -106,12 +137,29 @@ function duyet(thuMuc) {
         loi.push({ file: rel, duong: "(gốc)", nguon: "", ly_do: `JSON hỏng: ${e.message}` });
         continue;
       }
-      soi(j, "", rel);
+      soi(j, "", rel, null);
     }
   }
 }
 
 duyet(DATA);
+
+// Miễn trừ có hồ sơ: in ra mỗi lần chạy, để nó không lặng lẽ thành vĩnh viễn.
+if (thaHoSo.length) {
+  const gom = new Map();
+  for (const t of thaHoSo) gom.set(`${t.file} → ${t.id}`, t.ly_do);
+  console.log(`🗂️  ${gom.size} bản ghi miễn trừ CÓ HỒ SƠ (đã tra, chưa có nguồn thay thế):`);
+  for (const [k, ly] of gom) console.log(`      ${k}\n         ${ly}`);
+  console.log("      Tra được nguồn tốt thì xoá dòng tương ứng trong MIEN_TRU_CO_HO_SO.\n");
+}
+
+// Dòng miễn trừ không còn khớp bản ghi nào = đã sửa xong hoặc gõ sai id.
+// Báo để danh sách miễn trừ không phình ra rồi che mất vi phạm thật.
+if (conLai.size) {
+  console.log(`🧹 ${conLai.size} dòng MIEN_TRU_CO_HO_SO đã thừa (bản ghi không còn nguồn bị bác, hoặc sai id):`);
+  for (const k of conLai) console.log(`      ${k}`);
+  console.log("      Xoá khỏi danh sách trong scripts/validate_nguon_cam.mjs.\n");
+}
 
 // Cảnh báo in trước lỗi để nó không bị trôi mất khi danh sách lỗi dài.
 if (canh.length) {
