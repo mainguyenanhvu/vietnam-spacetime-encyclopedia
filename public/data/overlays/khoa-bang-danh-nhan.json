@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Khoa bảng – thầy giáo – quan thanh liêm (thế kỷ 11–19). Mỗi danh nhân neo vào NƠI THỜ (đền/từ đường/khu di tích/Văn Miếu). Nguồn nội dung: chính sử & kinh điển (Đại Việt Sử Ký Toàn Thư, Đại Nam Thực Lục, Phủ Biên Tạp Lục, Quốc triều hương khoa lục…) + cổng nhà nước (dsvh.gov.vn, vanmieu.gov.vn, cổng tỉnh/thành). KHÔNG mục nào lấy Wikipedia làm nguồn (theo cảnh báo dùng nguồn chính thống). Toạ độ soát 2026-07-19 (OSM Nominatim + đối chiếu tỉnh): 3 reviewed (cao), 6 draft (trung/thấp). ĐÃ SỬA: Mạc Đĩnh Chi (agent trả 20.986 lệch ~13km nam → sửa về khu Nam Tân/Long Động, Nam Sách; vẫn thấp, cần soát POI). Lưu ý sáp nhập 2025: Hải Dương→Hải Phòng, Thái Bình→Hưng Yên, Hà Nam→Ninh Bình (địa chỉ hành chính đổi, toạ độ giữ). Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực. [Phase 3 lô4: hợp nhất 10 lớp → nhóm «Khoa bảng · Trạng nguyên · Tiến sĩ · Quan lại» (dedup core).]",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-07-27",
   "sources": [
     "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên)",
     "Đại Nam Thực Lục; Đại Nam Liệt Truyện (Quốc sử quán triều Nguyễn)",
@@ -20,9 +20,9 @@
     "Báo Nghệ An — baonghean.vn",
     "Bảo tàng tỉnh Hà Tĩnh — baotang.hatinh.gov.vn",
     "Cổng TTĐT phường Hà Huy Tập, Hà Tĩnh — hahuytap.hatinh.gov.vn",
-    "Trang họ Trương — truongtoc.com.vn",
-    "Trang họ Dương Việt Nam — hoduongvietnam.com.vn",
-    "Trang họ Tô Việt Nam — hotovietnam.org",
+    "Trang họ Trương — truongtoc.com.vn (gia phả tự công bố — không phải nguồn nhà nước)",
+    "Trang họ Dương Việt Nam — hoduongvietnam.com.vn (gia phả tự công bố — không phải nguồn nhà nước)",
+    "Trang họ Tô Việt Nam — hotovietnam.org (gia phả tự công bố — không phải nguồn nhà nước)",
     "Giáo dục & Thời đại — giaoducthoidai.vn",
     "Dân Việt — danviet.vn",
     "VOV — Trạng nguyên Trần Văn Bảo, danh nhân khoa bảng thời nhà Mạc",
@@ -35,7 +35,7 @@
     "Cổng TTĐT TP Đà Nẵng — danang.gov.vn",
     "Soha — Giai thoại «Ngũ phụng tề phi» và những bậc đại khoa Quảng Nam",
     "Tiền Phong — tienphong.vn",
-    "hotakhuvucmiennam.vn — Di tích Nhà thờ họ Tạ làng La Hà",
+    "hotakhuvucmiennam.vn — Di tích Nhà thờ họ Tạ làng La Hà (gia phả tự công bố — không phải nguồn nhà nước)",
     "Ngô Đức Thọ — Các nhà khoa bảng Việt Nam",
     "Uỷ ban Nhà nước về người Việt Nam ở nước ngoài — scov.gov.vn (Năm vị tiến sĩ nho học người Quảng Ngãi)",
     "Báo Giáo dục & Thời đại — giaoducthoidai.vn",
@@ -676,8 +676,9 @@
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "reviewed",
       "nguon": [
-        "Trang họ Dương Việt Nam — hoduongvietnam.com.vn — Đền thờ Dương Trí Trạch — https://hoduongvietnam.com.vn/den-tho-duong-tri-trach-p23981"
-      ]
+        "Trang họ Dương Việt Nam — hoduongvietnam.com.vn — Đền thờ Dương Trí Trạch — https://hoduongvietnam.com.vn/den-tho-duong-tri-trach-p23981 (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "nguyen-duc-huy",
@@ -740,8 +741,9 @@
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "reviewed",
       "nguon": [
-        "Trang họ Trương — truongtoc.com.vn — Tiến sĩ Trương Quang Trạch (1640–1677): danh thơm còn mãi — https://truongtoc.com.vn/tien-si-truong-quang-trach-1640-1677-danh-thom-con-mai"
-      ]
+        "Trang họ Trương — truongtoc.com.vn — Tiến sĩ Trương Quang Trạch (1640–1677): danh thơm còn mãi — https://truongtoc.com.vn/tien-si-truong-quang-trach-1640-1677-danh-thom-con-mai (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "to-the-huy",
@@ -755,8 +757,9 @@
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "reviewed",
       "nguon": [
-        "Trang họ Tô Việt Nam — hotovietnam.org — Tô Thế Huy, người khơi dòng mạch khoa bảng ở Bình Trù"
-      ]
+        "Trang họ Tô Việt Nam — hotovietnam.org — Tô Thế Huy, người khơi dòng mạch khoa bảng ở Bình Trù (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "tran-van-bao",
@@ -771,8 +774,9 @@
       "trang_thai": "reviewed",
       "nguon": [
         "VOV — Trạng nguyên Trần Văn Bảo, danh nhân khoa bảng thời nhà Mạc — https://vov.vn/van-hoa/trang-nguyen-tran-van-bao-danh-nhan-khoa-bang-thoi-nha-mac-post1316948.vov",
-        "Đồng hương Nam Định — Đền thờ Trạng nguyên Trần Văn Bảo: Uy linh và thanh tịnh — https://donghuongnamdinh.com.vn/den-tho-trang-nguyen-tran-van-bao-uy-linh-va-thanh-tinh/"
-      ]
+        "Đồng hương Nam Định — Đền thờ Trạng nguyên Trần Văn Bảo: Uy linh và thanh tịnh — https://donghuongnamdinh.com.vn/den-tho-trang-nguyen-tran-van-bao-uy-linh-va-thanh-tinh/ (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "ngo-mien-thieu",
@@ -1164,8 +1168,9 @@
       "do_tin_cay_toa_do": "cao",
       "trang_thai": "reviewed",
       "nguon": [
-        "hotakhuvucmiennam.vn — Di tích Nhà thờ họ Tạ làng La Hà, xã Quảng Văn, thị xã Ba Đồn, tỉnh Quảng Bình — https://hotakhuvucmiennam.vn/di-tich-nha-tho-ho-ta-lang-la-ha-xa-quang-van-thi-xa-ba-don-tinh-quang-binh/"
-      ]
+        "hotakhuvucmiennam.vn — Di tích Nhà thờ họ Tạ làng La Hà, xã Quảng Văn, thị xã Ba Đồn, tỉnh Quảng Bình — https://hotakhuvucmiennam.vn/di-tich-nha-tho-ho-ta-lang-la-ha-xa-quang-van-thi-xa-ba-don-tinh-quang-binh/ (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "ta-ham",
@@ -1179,8 +1184,9 @@
       "do_tin_cay_toa_do": "cao",
       "trang_thai": "reviewed",
       "nguon": [
-        "hotakhuvucmiennam.vn — Di tích Nhà thờ họ Tạ làng La Hà, xã Quảng Văn, thị xã Ba Đồn, tỉnh Quảng Bình — https://hotakhuvucmiennam.vn/di-tich-nha-tho-ho-ta-lang-la-ha-xa-quang-van-thi-xa-ba-don-tinh-quang-binh/"
-      ]
+        "hotakhuvucmiennam.vn — Di tích Nhà thờ họ Tạ làng La Hà, xã Quảng Văn, thị xã Ba Đồn, tỉnh Quảng Bình — https://hotakhuvucmiennam.vn/di-tich-nha-tho-ho-ta-lang-la-ha-xa-quang-van-thi-xa-ba-don-tinh-quang-binh/ (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "ten": "Bùi Dương Lịch",
@@ -1976,9 +1982,9 @@
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "reviewed",
       "nguon": [
-        "Họ Đỗ (Đậu) Việt Nam — hodovietnam.net (Trạng nguyên Đỗ Lý Khiêm)"
+        "Họ Đỗ (Đậu) Việt Nam — hodovietnam.net (Trạng nguyên Đỗ Lý Khiêm) (gia phả tự công bố — không phải nguồn nhà nước)"
       ],
-      "ghi_chu_bien_tap": "CHƯA XÁC MINH: chi tiết «mất năm 1512 trên đường đi sứ về, được truy phong Thái bảo» không tra được qua nguồn mở. Phần đỗ Trạng nguyên khoa Kỷ Mùi 1499, quê Ngoại Lãng thì khớp (soát 2026-07-27)."
+      "ghi_chu_bien_tap": "CHƯA XÁC MINH: chi tiết «mất năm 1512 trên đường đi sứ về, được truy phong Thái bảo» không tra được qua nguồn mở. Phần đỗ Trạng nguyên khoa Kỷ Mùi 1499, quê Ngoại Lãng thì khớp (soát 2026-07-27). NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "ngo-si-lien",

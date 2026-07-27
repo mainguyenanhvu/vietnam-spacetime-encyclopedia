@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Vua/hoàng đế các triều đại (ngoài số đã có trong CSDL) — Lý, Hồ, Nguyễn. Toạ độ lăng/đền qua OpenStreetMap Nominatim đối chiếu địa danh trong nguồn; nội dung theo cổng thông tin di sản nhà nước (hueworldheritage.org.vn — Trung tâm Bảo tồn Di tích Cố đô Huế; thanhnhaho.vn — Trung tâm Bảo tồn Di sản Thành Nhà Hồ; mybacninh.vn — cổng du lịch Bắc Ninh). KHÔNG dùng Wikipedia. WebSearch không khả dụng trong phiên này nên chỉ thêm các vua tra cứu được qua WebFetch/crawl trực tiếp cổng nhà nước đã biết trước; các vua triều Trần, Lê sơ, Mạc, Lê trung hưng chưa tìm được trang cổng xác nhận trong phiên này nên tạm bỏ qua (xem báo cáo). [Phase 3: hợp nhất 3 lớp → nhóm «Vua · Chúa · Hoàng tộc».]",
-  "ngay_cap_nhat": "2026-07-24",
+  "ngay_cap_nhat": "2026-07-27",
   "sources": [
     "Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn",
     "Trung tâm Bảo tồn Di sản Thành Nhà Hồ — thanhnhaho.vn",
@@ -12,7 +12,7 @@
     "Tỉnh uỷ Thừa Thiên Huế — thanhuyhue.vn",
     "Sở Văn hoá, Thể thao và Du lịch Thừa Thiên Huế — scov.gov.vn",
     "Báo VnExpress — vnexpress.net (9 chúa nhà Nguyễn cùng an giấc nghìn thu ở một xã) — https://vnexpress.net/9-chua-nha-nguyen-cung-an-giac-nghin-thu-o-mot-xa-3484250.html",
-    "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html",
+    "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html (gia phả tự công bố — không phải nguồn nhà nước)",
     "Tỉnh uỷ Thừa Thiên Huế — thanhuyhue.vn (4 lăng mộ của vua, chúa Nguyễn được xếp hạng di tích lịch sử cấp tỉnh) — https://thanhuyhue.vn/tin-tuc-trong-tinh/van-hoa-du-lich/4-lang-mo-cua-vuachua-nguyen-duoc-xep-hang-di-tich-lich-su-cap-tinh.html",
     "Sở Văn hoá, Thể thao và Du lịch Thừa Thiên Huế — scov.gov.vn (Thời kỳ Trịnh - Nguyễn phân tranh) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html",
     "Cục Di sản văn hoá — dsvh.gov.vn (Mùa xuân nghĩ về di sản văn hóa xứ Thanh — Phủ Trịnh - Nghè Vẹt, Vĩnh Lộc) — http://dsvh.gov.vn/Upload/files/Tap%20chi%20DSVH/So%2034/3417_Mua%20Xuan%20nghi%20ve%20Di%20san%20van%20hoa%20xu%20Thanh.pdf",
@@ -489,8 +489,9 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo VnExpress — vnexpress.net (9 chúa nhà Nguyễn cùng an giấc nghìn thu ở một xã) — https://vnexpress.net/9-chua-nha-nguyen-cung-an-giac-nghin-thu-o-mot-xa-3484250.html",
-        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html"
-      ]
+        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "nguyen-phuc-thai",
@@ -505,8 +506,9 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo VnExpress — vnexpress.net (9 chúa nhà Nguyễn cùng an giấc nghìn thu ở một xã) — https://vnexpress.net/9-chua-nha-nguyen-cung-an-giac-nghin-thu-o-mot-xa-3484250.html",
-        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html"
-      ]
+        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "nguyen-phuc-chu-ninh-vuong",
@@ -521,8 +523,9 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo VnExpress — vnexpress.net (9 chúa nhà Nguyễn cùng an giấc nghìn thu ở một xã) — https://vnexpress.net/9-chua-nha-nguyen-cung-an-giac-nghin-thu-o-mot-xa-3484250.html",
-        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html"
-      ]
+        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "nguyen-phuc-khoat",
@@ -537,12 +540,13 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo VnExpress — vnexpress.net (9 chúa nhà Nguyễn cùng an giấc nghìn thu ở một xã) — https://vnexpress.net/9-chua-nha-nguyen-cung-an-giac-nghin-thu-o-mot-xa-3484250.html",
-        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html"
+        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html (gia phả tự công bố — không phải nguồn nhà nước)"
       ],
       "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vovuongnguyenphuckhoat.jpg/330px-Vovuongnguyenphuckhoat.jpg",
       "anh_nguon": "Wikimedia Commons — Longlong789 · https://commons.wikimedia.org/wiki/File:Vovuongnguyenphuckhoat.jpg",
       "anh_giay_phep": "CC0",
-      "anh_muc": "tu-lieu"
+      "anh_muc": "tu-lieu",
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "nguyen-phuc-thuan",
@@ -557,12 +561,13 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Báo VnExpress — vnexpress.net (9 chúa nhà Nguyễn cùng an giấc nghìn thu ở một xã) — https://vnexpress.net/9-chua-nha-nguyen-cung-an-giac-nghin-thu-o-mot-xa-3484250.html",
-        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html"
+        "Họ Nguyễn Việt Nam — honguyenvietnam.org (Lăng các chúa Nguyễn) — http://honguyenvietnam.org/vi/di-tich-den-tho/lang-cac-chua-nguyen-330.html (gia phả tự công bố — không phải nguồn nhà nước)"
       ],
       "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Nguyen_Phuc_Thuan.jpg/500px-Nguyen_Phuc_Thuan.jpg",
       "anh_nguon": "Wikimedia Commons — không rõ · https://commons.wikimedia.org/wiki/File:Nguyen_Phuc_Thuan.jpg",
       "anh_giay_phep": "CC0",
-      "anh_muc": "tu-lieu"
+      "anh_muc": "tu-lieu",
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "trinh-trang",

@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh nhân quân sự cổ–trung đại tiêu biểu (bổ sung) — tướng lĩnh/thổ tù có đền thờ/lăng/di tích, chưa có trong CSDL. Không dùng Wikipedia; nguồn từ cổng nhà nước, khu di tích chính thức, báo chí và hội đồng dòng họ (đã fetch thực tế). [Phase 3 lô4: hợp nhất 4 lớp → nhóm «Danh tướng · Võ tướng · Thủ lĩnh khởi nghĩa (cổ–trung đại)» (dedup core).]",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-07-27",
   "sources": [
     "Cổng TTĐT Sở VHTT Ninh Bình — vhtt.ninhbinh.gov.vn",
     "Báo Văn hóa — baovanhoa.vn",
@@ -10,9 +10,9 @@
     "Đền Cửa Ông — dencuaong.vn",
     "Khu di tích Lam Kinh — ditichlamkinh.vn",
     "Cổng TTĐT xã Quảng Bị, TP Hà Nội — quangbi.hanoi.gov.vn",
-    "Họ Hà Việt Nam — hohavietnam.vn",
-    "Họ Phạm Việt Nam — hophamvietnam.org",
-    "Họ Lê Việt Nam — holevietnam.vn",
+    "Họ Hà Việt Nam — hohavietnam.vn (gia phả tự công bố — không phải nguồn nhà nước)",
+    "Họ Phạm Việt Nam — hophamvietnam.org (gia phả tự công bố — không phải nguồn nhà nước)",
+    "Họ Lê Việt Nam — holevietnam.vn (gia phả tự công bố — không phải nguồn nhà nước)",
     "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên)",
     "Lam Sơn thực lục (Nguyễn Trãi); Hoàng Lê nhất thống chí; Đại Nam liệt truyện",
     "Cục Di sản Văn hoá — dsvh.gov.vn",
@@ -28,7 +28,7 @@
     "Báo Tin Tức (TTXVN) — baotintuc.vn",
     "Nhịp sống Hà Nội (Hànộimới) — nhipsonghanoi.hanoimoi.vn",
     "Tạp chí Văn hóa Nghệ thuật — vanhoanghethuat.vn",
-    "Họ Dương Thanh Hóa — hoduongthanhhoa.vn",
+    "Họ Dương Thanh Hóa — hoduongthanhhoa.vn (gia phả tự công bố — không phải nguồn nhà nước)",
     "OpenStreetMap Nominatim (toạ độ)",
     "Lĩnh Nam Chích Quái; Việt Điện U Linh",
     "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
@@ -123,8 +123,9 @@
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "reviewed",
       "nguon": [
-        "Họ Phạm Việt Nam — Tin Ninh Bình: Lễ húy kỵ Thái úy Phạm Cự Lượng — https://hophamvietnam.org/tin-ninh-binh-le-huy-ky-thai-uy-pham-cu-luong/"
-      ]
+        "Họ Phạm Việt Nam — Tin Ninh Bình: Lễ húy kỵ Thái úy Phạm Cự Lượng — https://hophamvietnam.org/tin-ninh-binh-le-huy-ky-thai-uy-pham-cu-luong/ (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "tran-khat-chan",
@@ -198,9 +199,10 @@
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "reviewed",
       "nguon": [
-        "Họ Hà Việt Nam — Hà Đặc – Hà Chương — https://hohavietnam.vn/nhan-vat-lich-su/ha-dac-ha-chuong.html",
+        "Họ Hà Việt Nam — Hà Đặc – Hà Chương — https://hohavietnam.vn/nhan-vat-lich-su/ha-dac-ha-chuong.html (gia phả tự công bố — không phải nguồn nhà nước)",
         "Đền Cửa Ông — Tù trưởng Hà Đặc — https://dencuaong.vn/tu-truong-ha-dac/"
-      ]
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "trinh-kha",
@@ -229,8 +231,9 @@
       "do_tin_cay_toa_do": "cao",
       "trang_thai": "reviewed",
       "nguon": [
-        "Họ Lê Việt Nam — 35 vị khai quốc công thần trong cuộc khởi nghĩa Lam Sơn 1418–1428 — https://holevietnam.vn/35-vi-khai-quoc-cong-than-trong-cuoc-khoi-nghia-lam-son-1418-1428/"
-      ]
+        "Họ Lê Việt Nam — 35 vị khai quốc công thần trong cuộc khởi nghĩa Lam Sơn 1418–1428 — https://holevietnam.vn/35-vi-khai-quoc-cong-than-trong-cuoc-khoi-nghia-lam-son-1418-1428/ (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "dang-tien-dong",
@@ -782,8 +785,9 @@
       "do_tin_cay_toa_do": "cao",
       "trang_thai": "reviewed",
       "nguon": [
-        "Họ Dương Thanh Hóa — Thông báo thay đổi địa chỉ đền thờ Anh hùng dân tộc Dương Đình Nghệ — https://hoduongthanhhoa.vn/thong-bao-thay-doi-dia-chi-den-tho-anh-hung-dan-toc-duong-dinh-nghe-binh-vuong-duong-tam-kha/"
-      ]
+        "Họ Dương Thanh Hóa — Thông báo thay đổi địa chỉ đền thờ Anh hùng dân tộc Dương Đình Nghệ — https://hoduongthanhhoa.vn/thong-bao-thay-doi-dia-chi-den-tho-anh-hung-dan-toc-duong-dinh-nghe-binh-vuong-duong-tam-kha/ (gia phả tự công bố — không phải nguồn nhà nước)"
+      ],
+      "ghi_chu_bien_tap": "NGUỒN GIA PHẢ TỰ CÔNG BỐ: bản ghi này dựa một phần vào trang dòng họ / trang đồng hương do tư nhân lập, không phải cơ quan nhà nước. Giữ lại vì với nhân vật này đó là ghi chép còn lại đọc được, nhưng dữ kiện chưa được đối chiếu với thần phả, văn bia hay hồ sơ xếp hạng di tích. Tra được nguồn nhà nước thì thay và gỡ dòng nhãn này (dán nhãn 2026-07-27)."
     },
     {
       "id": "le-thi-hoa",
