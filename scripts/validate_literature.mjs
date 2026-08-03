@@ -80,6 +80,24 @@ if (existsSync(tuLieuPath)) {
   console.log(`✅ nhat-ky-thu-chien-tranh.json: ${items.length} tư liệu`);
 }
 
+// --- Văn xuôi viết về Bác: mục GIỚI THIỆU SÁCH, không chép nội dung.
+// Vì thế KHÔNG có nguyen_van và không cần ban_quyen: chỗ nào cũng chỉ là tóm
+// tắt do dự án viết. Đổi lại, tom_tat bắt buộc phải có — một mục chỉ có tên
+// sách thì không đưa được người đọc đi đâu cả.
+const vanXuoiPath = join(DIR, "van-xuoi-ve-bac.json");
+if (existsSync(vanXuoiPath)) {
+  const { items } = JSON.parse(readFileSync(vanXuoiPath, "utf8"));
+  for (const v of items) {
+    const w = `van-xuoi-ve-bac/${v.id}`;
+    if (!v.ten || !v.tac_gia) fail(w, "thiếu ten/tac_gia");
+    if (!v.tom_tat) fail(w, "thiếu tom_tat — mục giới thiệu sách không được để trống");
+    if (v.nguyen_van) fail(w, "có nguyen_van — tệp này CỐ Ý không chép nội dung tác phẩm");
+    if (!Array.isArray(v.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
+    checkSources(w, v.sources);
+  }
+  console.log(`✅ van-xuoi-ve-bac.json: ${items.length} tác phẩm`);
+}
+
 // --- Giai thoại khoa bảng
 const anecPath = join(DIR, "giai-thoai-khoa-bang.json");
 if (existsSync(anecPath)) {

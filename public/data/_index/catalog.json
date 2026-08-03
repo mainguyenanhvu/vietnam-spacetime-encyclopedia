@@ -1,8 +1,8 @@
 {
   "tong": {
-    "so_file": 98,
-    "so_muc": 4531,
-    "so_byte": 8250613,
+    "so_file": 99,
+    "so_muc": 4545,
+    "so_byte": 8267976,
     "ngay_sinh": "2026-08-03"
   },
   "files": [
@@ -440,8 +440,8 @@
     {
       "file": "literature/tho-ve-bac.json",
       "mien": "literature",
-      "so_muc": 10,
-      "byte": 11744,
+      "so_muc": 22,
+      "byte": 26882,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -459,7 +459,7 @@
         "nguyen_van",
         "sources"
       ],
-      "sha256": "6256ffe4ddd73a3e020a3d2a1930613a89d2eda875b6a684fc2e2c7caee2d1ff",
+      "sha256": "7e94bb9375852a819a6ec569ece2b2fc8e2d16f740d81a05e158363b5efad8cb",
       "mo_ta": "Thơ viết về Chủ tịch Hồ Chí Minh — các tác giả đều mất sau 1976 hoặc còn sống nên tác phẩm CÒN BẢO HỘ BẢN QUYỀN: chỉ trích dẫn ngắn (≤8 dòng) theo Điều 25 Luật SHTT, kèm nguồn để bạn đọc tìm toàn văn."
     },
     {
@@ -485,6 +485,28 @@
       ],
       "sha256": "b24d026c4a6f72f122764d9ae21501a39777caf1233558307c2db2cdc91fbe59",
       "mo_ta": "Dữ liệu miền «literature» — tệp tho-yeu-nuoc."
+    },
+    {
+      "file": "literature/van-xuoi-ve-bac.json",
+      "mien": "literature",
+      "so_muc": 2,
+      "byte": 2225,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": "sources",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ten",
+        "tac_gia",
+        "nam",
+        "the_loai",
+        "tom_tat",
+        "lien_quan_tinh",
+        "sources"
+      ],
+      "sha256": "7ea5af264c7b3a615da67c94b2c3ca64c0bd190a800cb417381c27128ff7a18d",
+      "mo_ta": "Tác phẩm VĂN XUÔI viết về Chủ tịch Hồ Chí Minh — tiểu thuyết, hồi ký, bút ký, truyện ký."
     },
     {
       "file": "media/ban-do-co.json",

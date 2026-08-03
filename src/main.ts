@@ -2731,6 +2731,21 @@ interface BanDoCo {
   nguon: string[];
 }
 
+// Văn xuôi viết VỀ Bác — mục giới thiệu sách, cố ý KHÔNG có nguyen_van: các
+// tác phẩm này còn bảo hộ bản quyền và một cuốn tiểu thuyết thì không trích
+// tám dòng cho ra nghĩa được. Tóm tắt là của dự án, nguồn để bạn đọc tự tìm bản
+// đầy đủ. validate_literature.mjs báo lỗi nếu có mục nào kèm nguyen_van.
+interface VanXuoi {
+  id: string;
+  ten: string;
+  tac_gia: string;
+  nam: string;
+  the_loai: string;
+  tom_tat: string;
+  lien_quan_tinh: string[];
+  sources: string[];
+}
+
 interface Anecdote {
   id: string;
   nhan_vat: string;
@@ -2786,6 +2801,7 @@ let literatureCache: {
   poems: Poem[];
   hcmWorks: Poem[];
   aboutHcm: Poem[];
+  vanXuoiHcm: VanXuoi[];
   anecdotes: Anecdote[];
   hcm: HcmPoem | null;
   caDao: CaDao[];
@@ -2805,10 +2821,11 @@ async function fetchJson<T>(path: string): Promise<T | null> {
 
 async function loadLiterature() {
   if (literatureCache) return literatureCache;
-  const [poems, hcmWorks, aboutHcm, anecdotes, hcm, caDao, baiHat, tuLieu, banDoCo] = await Promise.all([
+  const [poems, hcmWorks, aboutHcm, vanXuoiHcm, anecdotes, hcm, caDao, baiHat, tuLieu, banDoCo] = await Promise.all([
     fetchJson<{ items: Poem[] }>("data/literature/tho-yeu-nuoc.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tac-pham-ho-chi-minh.json"),
     fetchJson<{ items: Poem[] }>("data/literature/tho-ve-bac.json"),
+    fetchJson<{ items: VanXuoi[] }>("data/literature/van-xuoi-ve-bac.json"),
     fetchJson<{ items: Anecdote[] }>("data/literature/giai-thoai-khoa-bang.json"),
     fetchJson<HcmPoem>("data/literature/lich-su-nuoc-ta.json"),
     fetchJson<{ items: CaDao[] }>("data/literature/ca-dao-tuc-ngu.json"),
@@ -2822,6 +2839,7 @@ async function loadLiterature() {
     aboutHcm: (aboutHcm?.items ?? []).sort(
       (a, b) => (a.xep_hang ?? 99) - (b.xep_hang ?? 99),
     ),
+    vanXuoiHcm: vanXuoiHcm?.items ?? [],
     anecdotes: anecdotes?.items ?? [],
     hcm,
     caDao: caDao?.items ?? [],
@@ -2843,6 +2861,20 @@ function poemHtml(p: Poem): string {
     ${p.ghi_chu_dich ? `<p class="muted">${esc(p.ghi_chu_dich)}</p>` : ""}
     ${p.ban_quyen === "cited-excerpt" ? `<p class="draft-badge">©️ Tác phẩm còn bảo hộ bản quyền — chỉ trích dẫn ngắn theo Điều 25 Luật SHTT.</p>` : ""}
     <details class="sources"><summary>📚 Nguồn</summary>${list(p.sources)}</details>
+  </details>`;
+}
+
+function vanXuoiHtml(v: VanXuoi): string {
+  const icon = /tiểu thuyết/i.test(v.the_loai)
+    ? "📘"
+    : /hồi ký/i.test(v.the_loai)
+      ? "📗"
+      : "📕";
+  return `<details class="profile-section"><summary>${icon} 「${esc(v.ten)}」 — ${esc(v.tac_gia)}</summary>
+    <p class="muted">${esc(v.nam)} · ${esc(v.the_loai)}</p>
+    <p>${esc(v.tom_tat)}</p>
+    <p class="draft-badge">©️ Tác phẩm còn bảo hộ bản quyền — mục này chỉ giới thiệu, không chép nội dung. Tìm bản đầy đủ theo nguồn dưới đây.</p>
+    <details class="sources"><summary>📚 Nguồn</summary>${list(v.sources)}</details>
   </details>`;
 }
 
@@ -3160,8 +3192,10 @@ async function openLibrary(): Promise<void> {
     ${lib.hcm ? hcmPoemHtml(lib.hcm) : ""}
     <h3>🎋 Thơ văn Hồ Chí Minh</h3>
     ${lib.hcmWorks.map(poemHtml).join("")}
-    <h3>🌸 Thơ viết về Bác <span class="muted">(xếp theo mức hiện diện trong SGK & phê bình — có tính chủ quan)</span></h3>
+    <h3>🌸 Thơ viết về Bác <span class="muted">(${lib.aboutHcm.length} bài — xếp theo mức hiện diện trong SGK & phê bình, có tính chủ quan)</span></h3>
     ${lib.aboutHcm.map(poemHtml).join("")}
+    <h3>📕 Văn xuôi viết về Bác <span class="muted">(giới thiệu sách — không chép nội dung)</span></h3>
+    ${lib.vanXuoiHcm.map(vanXuoiHtml).join("")}
     <h3>🇻🇳 Thơ yêu nước qua các thời đại</h3>
     ${lib.poems.map(poemHtml).join("")}
     <h3>✉️ Nhật ký · Thư · Hồi ký chiến trường <span class="muted">(trang viết của người trong cuộc)</span></h3>
