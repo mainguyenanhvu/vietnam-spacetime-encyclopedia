@@ -71,14 +71,12 @@ function closePanel(): void {
 
 export function initTimeline(): void {
   if (document.getElementById("timeline-panel")) return;
-  const btn = document.createElement("button");
-  btn.id = "timeline-btn";
-  btn.type = "button";
-  btn.textContent = "🕰️ Dòng thời gian";
-  btn.title = "Việt Nam từ ~2879 TCN đến nay";
-  const nav = document.getElementById("topbar-nav");
-  if (nav) nav.appendChild(btn);
-  else document.body.appendChild(btn);
+  // Lối vào là NHÃN THỜI KỲ trên thanh dòng thời gian, không phải một nút riêng
+  // trong menu «Khám phá». Nút cũ mang đúng cái tên của thanh dưới đáy nên trang
+  // có hai thứ khác nhau cùng gọi là «Dòng thời gian». Giờ chỉ còn một: kéo
+  // thanh để đổi thời kỳ, bấm nhãn để xem niên biểu chi tiết của 4000 năm.
+  const btn = document.getElementById("period-label");
+  if (!btn) return;
 
   const panel = document.createElement("aside");
   panel.id = "timeline-panel";

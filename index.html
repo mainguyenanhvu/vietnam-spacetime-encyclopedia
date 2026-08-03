@@ -40,7 +40,11 @@
       <footer id="timeline-bar">
         <label for="timeline">Dòng thời gian:</label>
         <input id="timeline" type="range" min="0" max="0" value="0" disabled />
-        <span id="period-label" aria-live="polite">Đang tải dữ liệu…</span>
+        <!-- Nhãn thời kỳ cũng LÀ lối vào niên biểu 4000 năm. Trước đây niên
+             biểu nằm trong menu «Khám phá» dưới cái tên «Dòng thời gian» —
+             trùng hệt tên thanh này, hai chỗ khác nhau cùng một tên. -->
+        <button id="period-label" type="button" aria-live="polite"
+                title="Bấm để mở niên biểu 4000 năm">Đang tải dữ liệu…</button>
       </footer>
       <aside id="province-panel" hidden>
         <button id="panel-close" aria-label="Đóng">×</button>

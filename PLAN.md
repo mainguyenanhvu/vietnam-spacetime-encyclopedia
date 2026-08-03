@@ -222,8 +222,8 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 
 ⚠️ Bản đầu của cổng này **đỏ giả 10/13** vì đòi đủ 5 đảo ở mọi thời kỳ. Ba đảo Thổ Chu / Bạch Long Vĩ / Phú Quý sống trong file ranh giới tỉnh, mà thời kỳ cổ không có lớp ranh giới nào — chúng chưa bao giờ được **vẽ** ở đó. Lý do đã ghi trong đầu file script để không ai sửa ngược.
 
-- [ ] `S2b-1` trong `smoke.mjs:311-345` vẫn bị chấm `ok = batBuoc === 0` như mọi kịch bản khác → luôn đỏ, luôn cộng vào tổng hỏng. Phải đánh dấu BỎ QUA (`ok: null`), **không phải sửa** — nó là thí nghiệm đối chứng hành vi Chrome. **S**
-- [ ] **`scripts/smoke.mjs` đỏ 4/9.** Không bật gác cổng CI trước khi áp DIFF-1 + DIFF-6. Kịch bản `S2b-1` **kỳ vọng đỏ vĩnh viễn** — nó là thí nghiệm đối chứng hành vi Chrome, phải đánh dấu BỎ QUA, không phải sửa. **S/M**
+- [x] ~~`S2b-1` bị chấm như một cổng gác nên luôn đỏ~~ — 2026-08-03: đổi sang `ok = null` (BỎ QUA). Vẫn in ra con số context bị thu hồi, không cộng vào tổng hỏng.
+- [x] ~~**`scripts/smoke.mjs` đỏ 4/9**~~ — 2026-08-03: **9 đạt · 0 hỏng · 1 bỏ qua / 10 kịch bản**. Ba kịch bản còn lại xanh nhờ DIFF-1a + sổ đăng ký panel đã áp trước đó; `S2b-1` là ca bỏ qua có chủ ý. Giờ đã đủ điều kiện cân nhắc gắn `smoke` + `verify:chuquyen` vào cổng CI.
 - [ ] **Toạ độ**: 34% CSDL nằm trong cụm dưới 500 m (208 cụm / 656 mục). Chỉ 13 mục là placeholder sửa được bằng máy; phần lớn cần **clustering/jitter khi render**. **Không được bịa toạ độ chính xác hơn nguồn.** **L**
 - [ ] **CSP vô hiệu**: deploy là GitHub Pages, `public/_headers` chỉ có tác dụng trên Cloudflare. Chuyển sang `<meta http-equiv="Content-Security-Policy">` hoặc đổi hosting. **S**
 - [ ] Email cá nhân hardcode trong User-Agent: `scripts/regeocode.mjs:17`, `scripts/commons_photos.mjs:17`. Repo công khai. **S**

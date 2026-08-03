@@ -1577,9 +1577,27 @@ input[type="range"] {
   border-top: 1px solid var(--vien-nhan-nhe);
   padding: 0.6rem 1.15rem;
 }
+/* Nhãn thời kỳ là một <button>: nó vừa hiển thị thời kỳ đang xem, vừa là lối
+   vào niên biểu 4000 năm (xem ghi chú trong index.html). Gỡ hết dáng nút mặc
+   định của trình duyệt, chỉ giữ lại tín hiệu bấm được. */
 #period-label {
   color: var(--nhan-mo);
   font-weight: 500;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: var(--bo-vien-tron);
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: right;
+}
+#period-label::after {
+  content: " 🕰️";
+  font-size: 0.9em;
+}
+#period-label:hover {
+  border-color: var(--vien-nhan);
+  background: var(--nen-mat-mo);
 }
 
 /* Popup MapLibre — bo tròn, bóng mềm, mũi nhọn ăn theo nền */

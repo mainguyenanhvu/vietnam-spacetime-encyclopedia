@@ -326,7 +326,12 @@ async function s2b(cdp, tuNguyen) {
   })()`);
   await cdp.send("HeapProfiler.collectGarbage");
   const batBuoc = out.sau.lost - out.truoc.lost;
-  const ok = batBuoc === 0;
+  // S2b-1 KHÔNG phải một cổng gác — nó là thí nghiệm đối chứng, và kết quả
+  // "đúng" của nó chính là batBuoc > 0 (Chrome thu hồi context bị bỏ rơi).
+  // Chấm nó bằng `batBuoc === 0` như mọi kịch bản khác thì nó đỏ vĩnh viễn và
+  // kéo cả bộ smoke sang exit 1, che mất kịch bản nào hỏng thật. `ok = null`
+  // in ra "⚠️ BỎ QUA": vẫn thấy con số, không cộng vào tổng hỏng.
+  const ok = tuNguyen ? batBuoc === 0 : null;
   record(
     tuNguyen ? "S2b-2" : "S2b-1",
     tuNguyen
@@ -350,7 +355,7 @@ async function s3(cdp) {
     const PANELS = ["province-panel","library-panel","game-panel","quiz-panel","story-panel",
       "namtien-panel","olympia-panel","battle-panel","journey-panel","quocgia-panel","timeline-panel"];
     const BTNS = ["library-btn","game-btn","quiz-btn","story-btn","olympia-btn","battle-btn",
-      "journey-btn","quocgia-btn","timeline-btn","namtien-btn"];
+      "journey-btn","quocgia-btn","period-label","namtien-btn"];
     const visible = () => PANELS.filter(id => { const e = document.getElementById(id); return e && !e.hidden; });
     const rows = [];
     for (const b of BTNS) {
@@ -382,7 +387,7 @@ async function s3(cdp) {
 async function s3b(cdp) {
   const out = await cdp.evaluate(`(async () => {
     const BTNS = ["library-btn","game-btn","quiz-btn","story-btn","olympia-btn","battle-btn",
-      "journey-btn","quocgia-btn","timeline-btn"];
+      "journey-btn","quocgia-btn","period-label"];
     const nt = document.getElementById("namtien-btn");
     const rows = [];
     for (const b of BTNS) {
