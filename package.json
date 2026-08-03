@@ -11,7 +11,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "validate": "node scripts/run_validators.mjs"
+    "build:index": "node scripts/build_catalog.mjs && node scripts/build_entries_index.mjs",
+    "validate": "node scripts/run_validators.mjs",
+    "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^4.7.1",
