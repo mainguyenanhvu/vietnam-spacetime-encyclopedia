@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run validate)",
+      "Bash(npm run build)",
+      "Bash(npm ls:*)",
+      "Bash(npx tsc --noEmit:*)",
+      "PowerShell(npm run validate)",
+      "PowerShell(npm run build)",
+      "PowerShell(npm ls:*)",
+      "PowerShell(npx tsc --noEmit:*)"
+    ],
+    "deny": [
+      "Bash(npm install -g:*)",
+      "Bash(npm i -g:*)",
+      "PowerShell(npm install -g:*)",
+      "PowerShell(npm i -g:*)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  }
+}
