@@ -11,6 +11,9 @@ import type { CheDo } from "./chedo";
 import { gomNutTopbar } from "./topbar";
 import { registerPanel, showOnly, hidePanel, hideAllPanels } from "./panels";
 import { moPopup, dongPopup } from "./popup";
+// Chỉ nhập hàm phân loại (không kéo Three.js) — xem ghi chú trong mohinh-diem.ts.
+import { kieuTheoTen } from "./mohinh-diem";
+import type { DiemMoHinh } from "./mohinh-diem";
 import { initSearch } from "./search";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
@@ -127,11 +130,54 @@ function eraColorExpr(era: Era): ExpressionSpecification {
 // Độ cao khối 3D (mét) — thuần minh hoạ để tạo hiệu ứng nổi khối,
 // không phản ánh độ cao địa hình thật. Đảo thấp hơn tỉnh nhưng vẫn
 // nổi rõ thành "tháp" đánh dấu chủ quyền biển đảo.
-const HEIGHT_3D: ExpressionSpecification = [
+//
+// ⚠️ PHẢI CO THEO ZOOM. Bản đầu ghim cứng 25–40 km ở MỌI mức phóng, và ở mức
+// nhìn cả nước thì trông đúng — nhưng độ cao tính bằng MÉT còn màn hình tính
+// bằng PIXEL, mà số mét trên mỗi pixel giảm một nửa sau mỗi nấc zoom. Ở zoom
+// 12 (~37 m/px) khối 40 km cao 1.090px trên khung 700px: máy ảnh chui vào
+// trong tường, cả màn hình thành một mảng nâu đặc, không thấy landmark, không
+// thấy điểm di tích, không thấy gì. Đó chính là "bản đồ 3D bị lỗi".
+//
+// Mốc dưới đây giữ chiều cao BIỂU KIẾN gần như cố định (~10–15px): mỗi 2 nấc
+// zoom thì chia 4, đúng nhịp mét-trên-pixel. Biểu thức ["zoom"] BẮT BUỘC nằm
+// ngoài cùng, nên phải lặp lại nhánh case/match ở từng mốc thay vì nhân hệ số.
+const khoi = (heSo: number): ExpressionSpecification => [
   "case",
   ["boolean", ["feature-state", "hover"], false],
-  ["match", ["get", "loai"], "quan-dao", 45000, "dao", 45000, 75000],
-  ["match", ["get", "loai"], "quan-dao", 25000, "dao", 25000, 40000],
+  [
+    "match",
+    ["get", "loai"],
+    "quan-dao",
+    45000 * heSo,
+    "dao",
+    45000 * heSo,
+    75000 * heSo,
+  ],
+  [
+    "match",
+    ["get", "loai"],
+    "quan-dao",
+    25000 * heSo,
+    "dao",
+    25000 * heSo,
+    40000 * heSo,
+  ],
+];
+
+const HEIGHT_3D: ExpressionSpecification = [
+  "interpolate",
+  ["linear"],
+  ["zoom"],
+  4,
+  khoi(1),
+  6,
+  khoi(0.25),
+  8,
+  khoi(0.0625),
+  10,
+  khoi(0.0156),
+  13,
+  khoi(0.002),
 ];
 
 const NGUON_DU_LIEU = [
@@ -992,11 +1038,15 @@ map.on("load", () => {
   document
     .getElementById("threed-btn")
     ?.addEventListener("click", () => setMode3D(!is3D));
+
+  // Nền bản đồ phải theo kịp mức phóng, không chỉ theo lúc bấm nút 3D.
+  // moveend gồm cả zoom lẫn kéo — mô hình điểm phải dựng lại cho vùng mới.
+  map.on("moveend", capNhatNenBanDo);
 });
 
 // Lớp landmark 3D (Three.js) nạp lười ở lần bật 3D đầu tiên để không phình
 // bundle chính cho người dùng không mở chế độ 3D.
-let landmarks3d: { setVisible(v: boolean): void } | null = null;
+let landmarks3d: import("./landmarks3d").Landmarks3D | null = null;
 let landmarks3dLoading = false;
 
 async function ensureLandmarks3D(): Promise<void> {
@@ -1006,6 +1056,9 @@ async function ensureLandmarks3D(): Promise<void> {
     const { createLandmarks3D } = await import("./landmarks3d");
     landmarks3d = createLandmarks3D(map);
     landmarks3d.setVisible(is3D);
+    // Mặt biển mặc định bật; nếu người dùng bấm 3D khi đang phóng sâu thì phải
+    // tắt ngay, không đợi tới lần zoom kế tiếp.
+    capNhatNenBanDo();
   } catch {
     /* Không tải được Three.js — bản đồ khối 2.5D vẫn hoạt động bình thường. */
   } finally {
@@ -1023,11 +1076,93 @@ function setMode3D(on: boolean): void {
   setPeriod(currentPeriod);
   map.easeTo({ pitch: on ? 55 : 0, bearing: on ? -12 : 0, duration: 1200 });
   document.getElementById("threed-btn")?.classList.toggle("active", on);
-  // Chế độ 3D = diorama: ẩn basemap để Việt Nam nổi khối giữa biển động.
-  if (map.getLayer("basemap"))
-    map.setLayoutProperty("basemap", "visibility", on ? "none" : "visible");
+  capNhatNenBanDo();
   if (on) void ensureLandmarks3D();
   landmarks3d?.setVisible(on);
+}
+
+/** Trên mức này, chế độ 3D trả nền bản đồ về để còn thấy mặt đất. */
+const ZOOM_TRA_NEN_3D = 7.5;
+
+/**
+ * Đang ở cảnh "diorama" hay không: 3D bật VÀ còn đang nhìn ở tầm cả nước.
+ * Dưới ngưỡng này 3D là mô hình sa bàn (khối tỉnh nổi giữa biển động); trên
+ * ngưỡng, 3D chỉ nên là góc nghiêng trên bản đồ thật + landmark.
+ */
+function dangDiorama(): boolean {
+  return is3D && map.getZoom() < ZOOM_TRA_NEN_3D;
+}
+
+let dioramaTruoc = false;
+
+/**
+ * Chế độ 3D = diorama nên ẩn nền bản đồ, cho Việt Nam nổi khối giữa biển động.
+ * Nhưng khi phóng sâu thì diorama hết ý nghĩa: không còn nhìn thấy hình chữ S,
+ * chỉ còn một mảng màu phẳng không có đường sá, sông ngòi hay bờ biển nào để
+ * định vị. Trả nền lại từ zoom 7,5 — vẫn giữ được cảnh diorama ở mức toàn quốc.
+ */
+function capNhatNenBanDo(): void {
+  const dio = dangDiorama();
+  if (map.getLayer("basemap")) {
+    const dang = map.getLayoutProperty("basemap", "visibility") ?? "visible";
+    const moi = dio ? "none" : "visible";
+    if (dang !== moi) map.setLayoutProperty("basemap", "visibility", moi);
+  }
+  // Mặt biển đi CÙNG cảnh diorama: bật đúng lúc nền bản đồ tắt. Để nó sống khi
+  // đã phóng sâu thì mặt phẳng nước phủ kín cả khung nhìn (xem setBienHien).
+  landmarks3d?.setBienHien(dio);
+  // Vượt ngưỡng thì đổi cả bộ lớp era (khối ↔ tô phẳng + nhãn tỉnh).
+  if (dio !== dioramaTruoc) {
+    dioramaTruoc = dio;
+    setEra(currentEra);
+  }
+  capNhatMoHinhDiem();
+}
+
+/** Trần số mô hình dựng cùng lúc — mỗi mô hình là một Group vài chục mặt. */
+const TRAN_MO_HINH_DIEM = 120;
+
+/**
+ * Dựng mô hình 3D cho các điểm di tích ĐANG HIỆN trong khung nhìn.
+ *
+ * Chỉ chạy khi 3D bật và đã qua mức diorama: ở tầm nhìn cả nước, một mô hình
+ * cao 46px tương đương hơn 200 km ngoài đời — nó sẽ che kín chính đất nước.
+ * Ở tầm đó các chấm phẳng vẫn là cách đọc đúng, và 8 landmark cố định đã lo
+ * phần khối nổi.
+ */
+function capNhatMoHinhDiem(): void {
+  if (!landmarks3d) return;
+  if (!is3D || dangDiorama()) {
+    landmarks3d.capNhatDiem([]);
+    return;
+  }
+  const lop = map
+    .getStyle()
+    .layers.map((l) => l.id)
+    .filter(
+      (id) =>
+        /^overlay-.+-icon$/.test(id) &&
+        map.getLayer(id) &&
+        map.getLayoutProperty(id, "visibility") !== "none",
+    );
+  if (!lop.length) {
+    landmarks3d.capNhatDiem([]);
+    return;
+  }
+  const ds: DiemMoHinh[] = [];
+  const daCo = new Set<string>();
+  for (const f of map.queryRenderedFeatures({ layers: lop })) {
+    if (ds.length >= TRAN_MO_HINH_DIEM) break;
+    if (f.geometry.type !== "Point") continue;
+    const [lon, lat] = f.geometry.coordinates as [number, number];
+    // Nhiều lớp phủ chồng nhau tại cùng một di tích (vd. vừa QGĐB vừa UNESCO)
+    // — dựng hai mô hình chồng khít chỉ tốn tam giác, không thêm thông tin.
+    const khoa = `${lon.toFixed(5)},${lat.toFixed(5)}`;
+    if (daCo.has(khoa)) continue;
+    daCo.add(khoa);
+    ds.push({ lon, lat, kieu: kieuTheoTen(String(f.properties?.ten ?? "")) });
+  }
+  landmarks3d.capNhatDiem(ds);
 }
 
 // ---------------------------------------------------------------------------
@@ -1175,10 +1310,14 @@ function setEra(index: number): void {
     // Era chưa nạp thì chưa có lớp nào để ẩn/hiện — bỏ qua, không phải lỗi.
     if (!eraDaNap.has(era.id)) return;
     const active = i === index;
-    map.setLayoutProperty(`${era.id}-fill`, "visibility", active && !is3D ? "visible" : "none");
-    map.setLayoutProperty(`${era.id}-line`, "visibility", active && !is3D ? "visible" : "none");
-    map.setLayoutProperty(`${era.id}-3d`, "visibility", active && is3D ? "visible" : "none");
-    map.setLayoutProperty(`${era.id}-label`, "visibility", active && !is3D && showLabels ? "visible" : "none");
+    // Khối 3D chỉ dùng ở mức DIORAMA. Phóng sâu mà vẫn để khối thì mặt trên
+    // của khối là một tấm phẳng đục kín cả tỉnh, che hết đường sá bên dưới —
+    // 3D lúc đó chỉ còn là góc nghiêng, không thêm thông tin nào.
+    const khoi = dangDiorama();
+    map.setLayoutProperty(`${era.id}-fill`, "visibility", active && !khoi ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-line`, "visibility", active && !khoi ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-3d`, "visibility", active && khoi ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-label`, "visibility", active && !khoi && showLabels ? "visible" : "none");
   });
 }
 
@@ -1893,6 +2032,7 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
     const visibility = on ? "visible" : "none";
     map.setLayoutProperty(layerId, "visibility", visibility);
     map.setLayoutProperty(iconLayerId, "visibility", visibility);
+    capNhatMoHinhDiem();
     return;
   }
   if (!on) return;
@@ -1947,6 +2087,9 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   bindOverlayInteractions(layerId, conf);
   bindOverlayInteractions(iconLayerId, conf);
   overlayLoaded.add(id);
+  // Lớp mới bật thì mô hình 3D của nó phải dựng ngay, không đợi tới lần người
+  // dùng dời bản đồ (moveend là chỗ gọi còn lại).
+  capNhatMoHinhDiem();
 }
 
 // --- Lớp «Tên đường theo danh nhân» (thí điểm HN·HCM·ĐN) ---------------------

@@ -61,7 +61,8 @@
 
   /* Viền và ánh sáng tông điểm nhấn trên nền tối của topbar */
   --vien-nhan-nhe: color-mix(in srgb, var(--nhan-sang) 22%, transparent);
-  --vien-nhan: color-mix(in srgb, var(--nhan-sang) 38%, transparent);
+  /* Chỉ vàng dưới chân topbar. 38% quá nhoè để thấy là một đường viền cố ý. */
+  --vien-nhan: color-mix(in srgb, var(--nhan-sang) 52%, transparent);
   --vien-nhan-ro: color-mix(in srgb, var(--nhan-mo) 55%, transparent);
   --glow-nhan: color-mix(in srgb, var(--nhan-sang) 45%, transparent);
   --nen-mat-mo: color-mix(in srgb, var(--mat) 8%, transparent);
@@ -102,7 +103,12 @@
   --mat-chim: #f5f5f4;
   --mat-kinh: rgba(255, 253, 247, 0.82);
   --vien-kinh: rgba(255, 255, 255, 0.55);
-  --mat-nghich: linear-gradient(135deg, #6d1414 0%, #4a0d0d 100%);
+  /* Kéo sáng một bậc so với bản đầu (#6d1414 → #4a0d0d). Sơn mài thật là đỏ
+     ấm có chiều sâu, không phải nâu sẫm — bản cũ tối đến mức đọc ra như vệt
+     đục vắt ngang đỉnh màn hình. Đo lại tương phản trên nền #8b1a1a: tiêu đề
+     --mat 9,1:1 · chữ --chu-tren-nghich 6,4:1 · chữ trên nút topbar 5,5:1,
+     đều còn trên ngưỡng 4,5:1. */
+  --mat-nghich: linear-gradient(135deg, #8b1a1a 0%, #6d1414 100%);
 
   /* Chữ */
   --chu: #2b2320;

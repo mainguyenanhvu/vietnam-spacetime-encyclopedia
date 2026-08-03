@@ -12,9 +12,25 @@ import * as THREE from "three";
 import { MercatorCoordinate } from "maplibre-gl";
 import type { CustomLayerInterface, Map as MlMap } from "maplibre-gl";
 import { createOceanMesh } from "./ocean3d";
+import type { DiemMoHinh, KieuMoHinh } from "./mohinh-diem";
 
 export interface Landmarks3D {
   setVisible(v: boolean): void;
+  /**
+   * Bật/tắt riêng mặt biển động.
+   *
+   * Mặt biển là một mặt phẳng lớn ở cao độ 0, đúng cao độ của lớp tô tỉnh. Ở
+   * mức nhìn cả nước nó nằm gọn ngoài bờ và cảnh diorama đẹp. Nhưng phóng sâu
+   * thì mặt phẳng đó trải kín khung nhìn và ĐÈ LÊN cả nền bản đồ lẫn lớp tô
+   * tỉnh — zoom 13 đo được: toàn màn hình một màu nước, không còn đường sá,
+   * không còn bờ biển. Đây chính là "bản đồ 3D bị lỗi".
+   */
+  setBienHien(v: boolean): void;
+  /**
+   * Thay toàn bộ mô hình 3D của các điểm di tích đang hiện trong khung nhìn.
+   * Gọi lại mỗi lần người dùng dời/phóng bản đồ hoặc bật tắt lớp phủ.
+   */
+  capNhatDiem(ds: DiemMoHinh[]): void;
 }
 
 interface LandmarkDef {
@@ -199,14 +215,95 @@ const LANDMARKS: LandmarkDef[] = [
   { ten: "Bến Nhà Rồng – TP. Hồ Chí Minh", lon: 106.706, lat: 10.768, build: () => dragonHouse(H) },
 ];
 
+// ---------------------------------------------------------------------------
+// Mô hình cho ĐIỂM DI TÍCH trên lớp phủ — "biểu tượng ở bản đồ 3D cũng phải
+// dựng 3D theo".
+//
+// 8 landmark ở trên là mô hình chọn tay cho 8 địa danh cố định. Còn hàng nghìn
+// điểm di tích thì không thể dựng tay từng cái: chọn hình theo LOẠI công trình
+// đọc từ tên mục (chùa/tháp/thành/bia/núi), dựng sẵn mỗi loại một mẫu rồi
+// clone — clone dùng chung geometry và material nên 120 mô hình vẫn rẻ.
+//
+// Mẫu dựng ở chiều cao ĐƠN VỊ (H = 1) vì mọi hàm dựng trên đây đều tuyến tính
+// theo H. Kích thước thật đặt mỗi khung hình theo mức phóng (xem CAO_PX), nếu
+// không thì cùng một con số mét sẽ bé như hạt bụi ở tầm tỉnh và cao bằng dãy
+// núi ở tầm phố.
+// ---------------------------------------------------------------------------
+
+/** Chiều cao biểu kiến mong muốn của mô hình điểm, tính bằng pixel màn hình. */
+const CAO_PX = 46;
+/** Landmark là mốc chủ đạo nên cao hơn điểm thường một chút. */
+const CAO_PX_MOC = 58;
+
+// Thành/hoàng thành: tường vuông có 4 vọng lâu góc và một cổng nhô.
+function thanhLuy(h: number): THREE.Group {
+  const g = new THREE.Group();
+  const w = h * 0.85;
+  const tuong = box(w, h * 0.34, w, CREAM);
+  tuong.position.y = h * 0.17;
+  g.add(tuong);
+  for (const [sx, sz] of [
+    [-1, -1],
+    [1, -1],
+    [-1, 1],
+    [1, 1],
+  ]) {
+    const lau = box(h * 0.16, h * 0.2, h * 0.16, BRICK);
+    lau.position.set(sx * w * 0.42, h * 0.44, sz * w * 0.42);
+    g.add(lau);
+  }
+  const cong = box(h * 0.26, h * 0.28, h * 0.12, BRICK);
+  cong.position.set(0, h * 0.34, w * 0.5);
+  g.add(cong);
+  const mai = pyramid(h * 0.24, h * 0.16, TERRACOTTA);
+  mai.position.set(0, h * 0.53, w * 0.5);
+  g.add(mai);
+  return g;
+}
+
+// Bia/đài tưởng niệm: bệ vuông + trụ thuôn + chóp.
+function biaDai(h: number): THREE.Group {
+  const g = new THREE.Group();
+  const be = box(h * 0.34, h * 0.1, h * 0.34, CREAM);
+  be.position.y = h * 0.05;
+  g.add(be);
+  const tru = new THREE.Mesh(
+    new THREE.CylinderGeometry(h * 0.07, h * 0.1, h * 0.68, 4),
+    mat(CREAM),
+  );
+  tru.rotation.y = Math.PI / 4;
+  tru.position.y = h * 0.44;
+  g.add(tru);
+  const chop = pyramid(h * 0.1, h * 0.16, GOLD);
+  chop.position.y = h * 0.86;
+  g.add(chop);
+  return g;
+}
+
+/** Mẫu dựng sẵn ở H = 1, mỗi loại một cái. Điểm trên bản đồ chỉ clone lại. */
+const MAU_MO_HINH: Record<KieuMoHinh, THREE.Group> = {
+  chua: tieredPagoda(1, 3, TERRACOTTA),
+  thap: chamTower(1),
+  thanh: thanhLuy(1),
+  bia: biaDai(1),
+  nui: karstCluster(1),
+};
+
+
 // Tâm biển (giữa Biển Đông – Việt Nam) và tỉ lệ đơn vị-cục-bộ → Mercator.
 const OCEAN_CENTER: [number, number] = [108, 14];
-const OCEAN_UNIT = 0.0022;
+// 0,0022 phủ chừng 47° kinh độ — chưa đủ. Ở mức nhìn cả nước với góc nghiêng
+// 55°, tầm nhìn vượt ra ngoài mép mặt phẳng nước và để lộ một ĐƯỜNG CHÉO SẮC
+// cắt ngang đỉnh màn hình, chỗ nền trời gặp mép lưới. Nới rộng để mép rơi ra
+// ngoài khung nhìn; lưới vẫn 200×200 nên sóng thưa hơn, không đáng kể ở mức
+// nhìn này.
+const OCEAN_UNIT = 0.006;
 
 export function createLandmarks3D(map: MlMap): Landmarks3D {
   const camera = new THREE.Camera();
   let renderer: THREE.WebGLRenderer | null = null;
   let visible = false;
+  let bienHien = true;
 
   const ensureRenderer = (gl: WebGLRenderingContext | WebGL2RenderingContext) => {
     if (renderer) return;
@@ -238,7 +335,7 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
       ensureRenderer(gl);
     },
     render(_gl, matrix) {
-      if (!visible || !renderer) return;
+      if (!visible || !bienHien || !renderer) return;
       ocean.update((performance.now() / 1000) * 0.5);
       setCamera(matrix);
       renderer.resetState();
@@ -253,15 +350,31 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
   const sun = new THREE.DirectionalLight(0xffffff, 1.1);
   sun.position.set(0.4, -0.7, 1).normalize();
   scene.add(sun);
+  // 8 landmark cố định cũng phải co theo mức phóng, y như mô hình điểm. Trước
+  // đây chúng ghim cứng H = 110 km: ở tầm cả nước thì vừa mắt (~55px), nhưng
+  // phóng tới tầm tỉnh thì một ngôi chùa cao 110 km che kín nửa màn hình và đè
+  // lên mọi thứ khác. Giữ tỉ lệ Mercator gốc, chỉ nhân thêm hệ số theo zoom.
+  const moc: Array<{ g: THREE.Group; metTrenDonVi: number }> = [];
   for (const lm of LANDMARKS) {
     const mc = MercatorCoordinate.fromLngLat([lm.lon, lm.lat], 0);
-    const s = mc.meterInMercatorCoordinateUnits();
     const g = lm.build();
     g.rotation.x = Math.PI / 2; // +Y (cao của model) → +Z (cao của Mercator)
-    g.scale.setScalar(s);
     g.position.set(mc.x, mc.y, mc.z);
     scene.add(g);
+    // Mẫu dựng ở H mét, nên chia H để quy về chiều cao đơn vị như mô hình điểm.
+    moc.push({ g, metTrenDonVi: mc.meterInMercatorCoordinateUnits() / H });
   }
+  // Mô hình các điểm di tích — nhóm riêng để thay cả cụm mà không đụng vào 8
+  // landmark cố định ở trên.
+  const nhomDiem = new THREE.Group();
+  scene.add(nhomDiem);
+  let diem: Array<{ g: THREE.Group; metTrenDonVi: number }> = [];
+
+  /** Số mét ứng với 1 pixel màn hình ở mức phóng và vĩ độ hiện tại. */
+  const metMoiPixel = (): number =>
+    (40075016.686 * Math.cos((map.getCenter().lat * Math.PI) / 180)) /
+    (512 * Math.pow(2, map.getZoom()));
+
   const landmarkLayer: CustomLayerInterface = {
     id: "landmarks-3d",
     type: "custom",
@@ -271,6 +384,15 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
     },
     render(_gl, matrix) {
       if (!visible || !renderer) return;
+      // Giữ chiều cao BIỂU KIẾN cố định: mô hình dựng ở H = 1 nên tỉ lệ cần
+      // đặt là (đơn vị Mercator mỗi mét) × (số mét muốn cao).
+      const mpp = metMoiPixel();
+      const caoMoc = CAO_PX_MOC * mpp;
+      for (const d of moc) d.g.scale.setScalar(d.metTrenDonVi * caoMoc);
+      if (diem.length) {
+        const cao = CAO_PX * mpp;
+        for (const d of diem) d.g.scale.setScalar(d.metTrenDonVi * cao);
+      }
       setCamera(matrix);
       renderer.resetState();
       renderer.render(scene, camera);
@@ -292,6 +414,24 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
   return {
     setVisible(v: boolean): void {
       visible = v;
+      map.triggerRepaint();
+    },
+    setBienHien(v: boolean): void {
+      if (bienHien === v) return;
+      bienHien = v;
+      map.triggerRepaint();
+    },
+    capNhatDiem(ds: DiemMoHinh[]): void {
+      nhomDiem.clear();
+      diem = [];
+      for (const d of ds) {
+        const mc = MercatorCoordinate.fromLngLat([d.lon, d.lat], 0);
+        const g = MAU_MO_HINH[d.kieu].clone();
+        g.rotation.x = Math.PI / 2; // +Y (cao của model) → +Z (cao của Mercator)
+        g.position.set(mc.x, mc.y, mc.z);
+        nhomDiem.add(g);
+        diem.push({ g, metTrenDonVi: mc.meterInMercatorCoordinateUnits() });
+      }
       map.triggerRepaint();
     },
   };
