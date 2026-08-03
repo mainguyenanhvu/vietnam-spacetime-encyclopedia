@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Đặc tả sinh ảnh AI — Bách khoa Việt Nam (Không gian & Thời gian)
+  Định dạng XML để Claude đọc và thi hành trực tiếp. Thay thế docs/image-generation-spec.md.
+  Ngôn ngữ: mô tả và kiểm duyệt bằng tiếng Việt; prompt gửi mô hình sinh ảnh bằng tiếng Anh.
+-->
+<dac_ta_sinh_anh version="2.0" cap_nhat="2026-08-03" thay_the="docs/image-generation-spec.md">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       1. GIỚI HẠN CỨNG — Claude PHẢI đọc khối này trước mọi hành động
+       ═══════════════════════════════════════════════════════════════ -->
+  <gioi_han_cung uu_tien="tuyet_doi">
+    <cam id="C1" muc="chan">
+      <noi_dung>KHÔNG sinh ảnh chân dung "giả như thật" cho bất kỳ NGƯỜI CÓ THẬT nào trong lịch sử.</noi_dung>
+      <ap_dung_cho>vua chúa · danh nhân khoa bảng · chí sĩ cách mạng · tướng lĩnh · nhà khoa học · nghệ sĩ · mọi nhân vật cận–hiện đại</ap_dung_cho>
+      <cam_tuyet_doi>lãnh tụ · Chủ tịch Hồ Chí Minh · Mẹ Việt Nam anh hùng · liệt sĩ</cam_tuyet_doi>
+      <ly_do>Sinh chân dung người thật bằng AI là làm giả tư liệu lịch sử. Nó phá hỏng giá trị của một bộ bách khoa toàn thư.</ly_do>
+      <giai_phap_dung>
+        <phuong_an>Tìm ảnh đền thờ / tượng thờ / bia ký THẬT.</phuong_an>
+        <phuong_an>Để trống và ghi vào danh sách «cần khảo sát thực địa».</phuong_an>
+      </giai_phap_dung>
+      <cam_thay_the>KHÔNG BAO GIỜ sinh ảnh thay thế cho một chân dung không tìm được.</cam_thay_the>
+    </cam>
+
+    <cam id="C2" muc="chan">
+      <noi_dung>KHÔNG sinh ảnh nào ngoài 4 loại hợp lệ khai báo ở &lt;loai_hop_le&gt;.</noi_dung>
+    </cam>
+
+    <cam id="C3" muc="chan">
+      <noi_dung>KHÔNG tự động xuất bản. Mọi ảnh phải qua &lt;quy_trinh_kiem_duyet&gt; với người duyệt là người thật.</noi_dung>
+    </cam>
+
+    <bat_buoc id="B1">
+      <noi_dung>Mỗi ảnh sinh ra BẮT BUỘC mang nhãn hiển thị cùng ảnh trên giao diện.</noi_dung>
+      <nhan_chinh_xac>⚠️ Hình dung nghệ thuật do AI dựng lại — KHÔNG PHẢI ảnh chụp/chân dung xác thực</nhan_chinh_xac>
+      <co_metadata>
+        <truong ten="anh_giay_phep" gia_tri="ai-generated" />
+        <truong ten="ai_generated" gia_tri="true" kieu="boolean" />
+        <truong ten="nhan_canh_bao" gia_tri="Hình dung nghệ thuật do AI dựng lại — KHÔNG PHẢI ảnh chụp/chân dung xác thực" />
+      </co_metadata>
+    </bat_buoc>
+  </gioi_han_cung>
+
+  <loai_hop_le>
+    <loai ma="boi-canh">Cảnh trí / bối cảnh lịch sử đã mất — kiến trúc, sa đồ trận đánh dạng minh hoạ. KHÔNG có nhân vật cụ thể được nêu tên.</loai>
+    <loai ma="huyen-su">Minh hoạ truyền thuyết / huyền sử — nhân vật huyền thoại, vốn không phải người có thật. CSDL dự án đã ghi chú «hình dung nghệ thuật, KHÔNG phải chân dung xác thực».</loai>
+    <loai ma="icon">Icon / biểu tượng cho lớp bản đồ, hoa văn trang trí.</loai>
+    <loai ma="phuc-dung-trang-phuc">Phục dựng trang phục / vật dụng theo mô tả khảo cổ — trên hình nộm hoặc dáng người chung chung, KHÔNG gán khuôn mặt cho cá nhân có thật.</loai>
+  </loai_hop_le>
+
+  <pham_vi dot="11" tong_so_anh="16">
+    <muc_tieu>Bổ khuyết hình ảnh cho các mục KHÔNG CÓ và KHÔNG THỂ CÓ tư liệu ảnh thật (huyền sử, hoặc cảnh/vật thể đã mất không còn hiện vật), để giao diện không bị khoảng trắng mà không vi phạm tính xác thực bách khoa.</muc_tieu>
+    <phan_bo>
+      <nhom loai="huyen-su, boi-canh" so_luong="8" ma="G01–G08" />
+      <nhom loai="icon" so_luong="6" ma="I01–I06" />
+      <nhom loai="phuc-dung-trang-phuc" so_luong="2" ma="C01–C02" />
+    </phan_bo>
+  </pham_vi>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       2. DANH SÁCH ẢNH
+       ═══════════════════════════════════════════════════════════════ -->
+  <danh_sach_anh>
+
+    <anh ma="G01" loai="huyen-su">
+      <tieu_de>Kinh Dương Vương nhận ngôi vua nước Xích Quỷ</tieu_de>
+      <gan_voi file="public/data/overlays/huyen-su-khai-quoc.json" id="kinh-duong-vuong" ghi_chu="không có ảnh thật" />
+      <can_cu_tu_lieu>
+        <nguon>Đại Việt Sử Ký Toàn Thư — Ngoại kỷ, Kỷ Hồng Bàng thị</nguon>
+        <nguon>Lĩnh Nam Chích Quái — Truyện Hồng Bàng thị</nguon>
+        <han_che>Thư tịch KHÔNG mô tả ngoại hình cụ thể. Cảnh dựng theo mô-típ nghi lễ lên ngôi thời thượng cổ Đông Nam Á, không sao chép trang phục của bất kỳ triều đại có thật nào.</han_che>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Mythical Vietnamese Bronze Age coronation scene, legendary ruler figure seated on a raised platform of woven bamboo and stone under a thatched pavilion, surrounded by tribal elders in simple hemp and bark-cloth wraps, bronze drum (Dong Son style) in foreground, misty mountain forest background, dawn light, illustrative folklore art style, no modern elements, faces stylized and non-specific (not a real historical portrait), digital painting]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[photorealistic portrait, real person, specific facial identity, modern clothing, text, watermark, Chinese imperial dragon robe, western clothing, low quality, blurry]]></negative_prompt>
+      <khung_hinh ti_le="16:9" rong="1920" cao="1080" />
+      <phong_cach_tham_chieu>Tranh minh hoạ dân gian Đông Sơn / Ngọc Lũ (hoa văn trống đồng). KHÔNG theo phong cách tranh cung đình Trung Hoa.</phong_cach_tham_chieu>
+    </anh>
+
+    <anh ma="G02" loai="boi-canh">
+      <tieu_de>Đoàn thuyền Hải đội Hoàng Sa ra khơi (thế kỷ 18)</tieu_de>
+      <gan_voi file="public/data/overlays/huyen-su-khai-quoc.json" id="hai-doi-hoang-sa" ghi_chu="không có ảnh thật" />
+      <can_cu_tu_lieu>
+        <nguon>Phủ Biên Tạp Lục — Lê Quý Đôn, 1776 — mục đội Hoàng Sa</nguon>
+        <nguon>Đại Nam Thực Lục — mục tỉnh Quảng Ngãi</nguon>
+        <ghi_chu>Ghe bầu (thuyền buồm gỗ miền Trung) là loại thuyền lịch sử CÓ THẬT, được mô tả trong thư tịch.</ghi_chu>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[18th-century Vietnamese wooden sailing junks (ghe bầu type, single mast, woven bamboo sail) departing from a Central Vietnam coastal village at dawn, generic unnamed sailors in traditional nón lá hats and brown ao ba ba clothing loading bamboo baskets and stone markers, Ly Son island coastline in background, historical illustration style, no specific named individual depicted, digital painting]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[modern ships, steel hull, real named person portrait, modern navy uniform, text, watermark, fantasy elements, low quality]]></negative_prompt>
+      <khung_hinh ti_le="21:9" rong="2560" cao="1080" />
+      <phong_cach_tham_chieu>Tranh minh hoạ lịch sử hàng hải Đông Nam Á thế kỷ 18.</phong_cach_tham_chieu>
+      <luu_y_chu_quyen>Ảnh này chạm chủ đề chủ quyền Hoàng Sa. Đường bờ, cờ hiệu, mốc chủ quyền phải đúng niên đại; không được thêm bất kỳ ký hiệu quốc gia nào không có trong thư tịch.</luu_y_chu_quyen>
+    </anh>
+
+    <anh ma="G03" loai="huyen-su">
+      <tieu_de>Trận lụt huyền thoại Sơn Tinh – Thuỷ Tinh</tieu_de>
+      <gan_voi file="public/data/overlays/huyen-su-khai-quoc.json" id="tan-vien-son-thanh" ghi_chu="ĐÃ CÓ ảnh đền thật — ảnh này BỔ SUNG minh hoạ truyền thuyết, KHÔNG thay thế" />
+      <can_cu_tu_lieu>
+        <nguon>Lĩnh Nam Chích Quái — Truyện Tản Viên Sơn thần</nguon>
+        <ghi_chu>Truyền thuyết thuần tuý, không phải nhân vật lịch sử có thật.</ghi_chu>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Legendary Vietnamese myth scene, mountain deity figure atop a misty green mountain summoning earth and rock to raise the land, opposing water deity figure rising from stormy river floodwaters below, dramatic clouds and rain, folklore illustration style, stylized non-realistic figures (mythical deities, not real people), digital painting]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[photorealistic human portrait, real historical figure, modern clothing, text, watermark, low quality]]></negative_prompt>
+      <khung_hinh ti_le="16:9" rong="1920" cao="1080" />
+      <phong_cach_tham_chieu>Tranh dân gian Đông Hồ cách điệu.</phong_cach_tham_chieu>
+    </anh>
+
+    <anh ma="G04" loai="boi-canh">
+      <tieu_de>Cảnh sinh hoạt làng Văn Lang thời Hùng Vương (cấy lúa, dệt vải, trống đồng)</tieu_de>
+      <gan_voi file="public/data/overlays/huyen-su-khai-quoc.json" id="hung-vuong" ghi_chu="cảnh sinh hoạt chung, không có nhân vật cụ thể" />
+      <can_cu_tu_lieu>
+        <nguon>Hoa văn trống đồng Đông Sơn — cảnh giã gạo, đua thuyền, nhà sàn mái cong</nguon>
+        <nguon>Công bố khảo cổ học văn hoá Đông Sơn — Bảo tàng Lịch sử Quốc gia</nguon>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Bronze Age Dong Son village life scene, stilt houses with curved roofs, villagers pounding rice, weaving cloth, bronze drum casting scene, no specific named individuals, generic tribal figures, lush river delta landscape, illustrative historical reconstruction style, digital painting]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[modern buildings, real named historical figure portrait, text, watermark, low quality]]></negative_prompt>
+      <khung_hinh ti_le="16:9" rong="1920" cao="1080" />
+    </anh>
+
+    <anh ma="G05" loai="boi-canh">
+      <tieu_de>Hoàng thành Thăng Long thời Lý – Trần, phục dựng phối cảnh</tieu_de>
+      <gan_voi lop="kien-truc" ghi_chu="bổ trợ cho các mục vua triều Lý–Trần" />
+      <can_cu_tu_lieu>
+        <nguon>Kết quả khai quật khảo cổ khu di tích Hoàng thành Thăng Long (18 Hoàng Diệu) — Viện Khảo cổ học</nguon>
+        <nguon>Hồ sơ UNESCO Di sản Thế giới Hoàng thành Thăng Long</nguon>
+        <ghi_chu>CHỈ phục dựng KIẾN TRÚC. Không có nhân vật.</ghi_chu>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Aerial architectural reconstruction of an 11th-13th century Vietnamese royal citadel, wooden pillared palace halls with terracotta dragon-phoenix roof tiles, red lacquered columns, courtyards with stone pathways, based on Thang Long Imperial Citadel archaeological excavation findings, no people, golden late-afternoon light, architectural visualization style, digital painting]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[modern buildings, people, real person, Chinese Forbidden City copy, text, watermark, low quality]]></negative_prompt>
+      <khung_hinh ti_le="16:9" rong="2560" cao="1440" />
+    </anh>
+
+    <anh ma="G06" loai="boi-canh">
+      <tieu_de>Thành Cổ Loa 3 vòng thành ốc, phối cảnh thời An Dương Vương</tieu_de>
+      <gan_voi file="public/data/overlays/huyen-su-khai-quoc.json" id="an-duong-vuong" ghi_chu="bổ trợ, bên cạnh ảnh di tích thật hiện có" />
+      <can_cu_tu_lieu>
+        <nguon>Cục Di sản Văn hoá (dsvh.gov.vn) — hồ sơ Khu di tích Cổ Loa</nguon>
+        <nguon>Khảo cổ học về cấu trúc 3 vòng thành đất hình xoắn ốc</nguon>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Aerial view architectural reconstruction of an ancient Vietnamese spiral earthwork citadel with three concentric moated walls, wooden watchtowers, thatched-roof structures inside, surrounded by rice paddies, no people, dawn mist, archaeological visualization style, digital painting]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[modern buildings, people, real person portrait, text, watermark, low quality]]></negative_prompt>
+      <khung_hinh ti_le="16:9" rong="2560" cao="1440" />
+    </anh>
+
+    <anh ma="G07" loai="boi-canh" dang="sa-do">
+      <tieu_de>Sa đồ trận Bạch Đằng 938 (thế trận cọc ngầm)</tieu_de>
+      <gan_voi file="public/data/battles/bach-dang-938.json" ghi_chu="minh hoạ chiến dịch, KHÔNG khắc hoạ khuôn mặt Ngô Quyền" />
+      <can_cu_tu_lieu>
+        <nguon>Đại Việt Sử Ký Toàn Thư — trận Bạch Đằng năm 938, Ngô Quyền phá quân Nam Hán</nguon>
+        <nguon>Công bố khảo cổ bãi cọc Bạch Đằng (Quảng Yên) — cọc gỗ đầu bịt sắt cắm dưới lòng sông</nguon>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Historical battle map illustration (diagram style, bird's-eye view) of the 938 Bach Dang River naval battle, wooden stakes with iron tips hidden underwater at low tide, Vietnamese river boats and Chinese fleet positions marked with symbolic icons (not human figures), annotated arrows showing tidal ambush strategy, aged parchment map illustration style, no faces or portraits]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[human portrait, real person, modern map, text in wrong language, watermark, low quality]]></negative_prompt>
+      <khung_hinh ti_le="4:3" rong="1600" cao="1200" />
+      <luu_y>Đây là SA ĐỒ dạng biểu đồ minh hoạ, KHÔNG phải cảnh chiến trận có nhân vật.</luu_y>
+    </anh>
+
+    <anh ma="G08" loai="boi-canh" dang="sa-do" ke_thua_tu="G07">
+      <tieu_de>Sa đồ trận Bạch Đằng 1288</tieu_de>
+      <can_cu_tu_lieu>
+        <nguon>Đại Việt Sử Ký Toàn Thư — trận Bạch Đằng năm 1288, Trần Hưng Đạo phá quân Nguyên Mông</nguon>
+      </can_cu_tu_lieu>
+      <thay_doi_so_voi_ke_thua>
+        <doi truong="nien_dai" tu="938" thanh="1288" />
+        <doi truong="phe_dich" tu="Nam Hán" thanh="Nguyên Mông" />
+      </thay_doi_so_voi_ke_thua>
+      <luu_y>Prompt, negative prompt và khung hình lấy nguyên từ G07, chỉ đổi chú thích niên đại và tên phe địch. KHÔNG khắc hoạ khuôn mặt Trần Hưng Đạo.</luu_y>
+    </anh>
+
+    <nhom_icon ma="I01–I06" loai="icon">
+      <prompt_mau ngon_ngu="en" bien="{{SUBJECT}}"><![CDATA[Minimalist flat-design map pin icon, {{SUBJECT}} symbolic motif, single accent color on transparent background, clean vector-illustration style, no text, no human face, no real portrait]]></prompt_mau>
+      <negative_prompt ngon_ngu="en"><![CDATA[photorealistic, human face, real person, text, watermark, 3D render, gradient background]]></negative_prompt>
+      <khung_hinh ti_le="1:1" rong="512" cao="512" ghi_chu="SVG hoá lại sau nếu cần" />
+      <icon ma="I01" lop="vua-hoang-de" nhan="Vua · Chúa · Hoàng tộc" subject="royal crown and dragon motif" />
+      <icon ma="I02" lop="khoa-bang-danh-nhan" nhan="Khoa bảng · Trạng nguyên" subject="scroll and writing brush motif" />
+      <icon ma="I03" lop="danh-y-luong-y" nhan="Danh y · Lương y" subject="mortar-and-pestle with herbal leaf motif" />
+      <icon ma="I04" lop="thien-su-cao-tang" nhan="Thiền sư · Cao tăng" subject="lotus and monk's alms bowl motif" />
+      <icon ma="I05" lop="nghe-nhan-di-san" nhan="Nghệ nhân di sản" subject="traditional weaving loom and hand-craft tool motif" />
+      <icon ma="I06" lop="chi-si-cach-mang, anh-hung-can-hien-dai" nhan="Anh hùng · Chí sĩ cách mạng" subject="red star and rifle-silhouette motif">
+        <luu_y>Dùng biểu tượng trừu tượng. TUYỆT ĐỐI KHÔNG có hình người.</luu_y>
+      </icon>
+    </nhom_icon>
+
+    <anh ma="C01" loai="phuc-dung-trang-phuc">
+      <tieu_de>Phục dựng trang phục thời Hùng Vương (văn hoá Đông Sơn)</tieu_de>
+      <gan_voi ghi_chu="bổ trợ hiểu biết văn hoá, KHÔNG gán cho cá nhân cụ thể" />
+      <can_cu_tu_lieu>
+        <nguon>Hoa văn trang phục trên trống đồng Đông Sơn / Ngọc Lũ — người mặc khố, áo chẽn, đội mũ lông chim</nguon>
+        <nguon>Công bố khảo cổ học văn hoá Đông Sơn</nguon>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Historical costume reconstruction display, Dong Son Bronze Age Vietnamese attire on a faceless mannequin/generic figure (no identifiable face), feathered headdress, woven bark-cloth wrap skirt, bronze bracelets, based on Dong Son bronze drum figural engravings, museum-display lighting, illustrative style]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[real person face, specific identity, modern clothing, text, watermark, low quality]]></negative_prompt>
+      <khung_hinh ti_le="3:4" rong="1200" cao="1600" />
+    </anh>
+
+    <anh ma="C02" loai="phuc-dung-trang-phuc">
+      <tieu_de>Phục dựng triều phục thời Lý</tieu_de>
+      <gan_voi ghi_chu="bổ trợ hiểu biết văn hoá triều Lý" />
+      <can_cu_tu_lieu>
+        <nguon>Hoa văn trang phục trên tượng Phật A Di Đà chùa Phật Tích (thế kỷ 11)</nguon>
+        <nguon>Bia đá thời Lý còn lưu — công bố của Bảo tàng Lịch sử Quốc gia</nguon>
+      </can_cu_tu_lieu>
+      <prompt ngon_ngu="en"><![CDATA[Historical Ly Dynasty (11th century Vietnam) court costume reconstruction on a faceless mannequin/generic figure, silk robe with lotus and cloud motifs based on Phat Tich pagoda stone Buddha statue carving patterns, layered court dress, museum-display lighting, illustrative style]]></prompt>
+      <negative_prompt ngon_ngu="en"><![CDATA[real person face, specific identity, Chinese Ming/Qing dynasty style, text, watermark, low quality]]></negative_prompt>
+      <khung_hinh ti_le="3:4" rong="1200" cao="1600" />
+    </anh>
+
+  </danh_sach_anh>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       3. MÔ HÌNH VÀ THAM SỐ
+       ═══════════════════════════════════════════════════════════════ -->
+  <mo_hinh>
+    <ung_vien ten="Stable Diffusion XL 1.0 + ControlNet" tu_host="true">
+      <uu_diem>Chạy trên máy riêng, kiểm soát seed và tham số đầy đủ, cộng đồng LoRA phong phú cho phong cách tranh dân gian Á Đông, chi phí biên bằng 0 sau khi có GPU.</uu_diem>
+      <nhuoc_diem>Cần GPU ≥ 12 GB VRAM. Cần tinh chỉnh prompt kỹ hơn model thương mại.</nhuoc_diem>
+    </ung_vien>
+    <ung_vien ten="Flux.1 [dev]" tu_host="true" qua="ComfyUI">
+      <uu_diem>Chất lượng kiến trúc và phối cảnh vượt SDXL. Tuân theo prompt dài chính xác hơn.</uu_diem>
+      <nhuoc_diem>Nặng hơn — cần ≥ 24 GB VRAM hoặc quantize. Giấy phép bản dev là non-commercial, phải xem lại nếu dự án có mục đích thương mại.</nhuoc_diem>
+    </ung_vien>
+    <ung_vien ten="Midjourney v6" tu_host="false">
+      <uu_diem>Thẩm mỹ cao nhất cho cảnh minh hoạ, ít công tinh chỉnh.</uu_diem>
+      <nhuoc_diem>Không tự host. Seed không cố định đáng tin cậy nên KHÔNG tái lập được. Chi phí theo subscription. Khó tích hợp pipeline tự động.</nhuoc_diem>
+      <ket_luan>LOẠI cho đợt này — không tái lập seed được, khó kiểm duyệt tự động.</ket_luan>
+    </ung_vien>
+    <khuyen_nghi>
+      <phan_cong nhom="I01–I06" mo_hinh="SDXL 1.0 tự host" ly_do="cần tái lập chính xác, chi phí thấp" />
+      <phan_cong nhom="G01–G08" mo_hinh="Flux.1 [dev]" ly_do="cần chất lượng phối cảnh cao" />
+    </khuyen_nghi>
+  </mo_hinh>
+
+  <tham_so_chay cong_cu="ComfyUI hoặc Automatic1111">
+    <tham_so ten="seed" gia_tri="20260726">Cố định theo ngày lập đặc tả. TÁI SỬ DỤNG cho mọi ảnh để dễ truy vết. Đổi seed+1 mỗi lần thử lại nếu ảnh đầu không đạt.</tham_so>
+    <tham_so ten="steps" gia_tri="30" />
+    <tham_so ten="cfg_scale" gia_tri="6.5">Thấp hơn mặc định 7–8 để tránh cứng nhắc, cho phong cách minh hoạ tự nhiên hơn.</tham_so>
+    <tham_so ten="sampler" gia_tri="DPM++ 2M Karras" />
+    <tham_so ten="width x height" gia_tri="theo &lt;khung_hinh&gt; của từng ảnh" />
+    <tham_so ten="denoise" gia_tri="1.0">txt2img gốc. Nếu dùng img2img tinh chỉnh bố cục: 0.55–0.65.</tham_so>
+    <ghi_log>Ghi lại seed nào cho ra ảnh cuối được duyệt.</ghi_log>
+  </tham_so_chay>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       4. ĐẦU RA — tên file, thư mục, schema metadata
+       ═══════════════════════════════════════════════════════════════ -->
+  <dau_ra>
+    <thu_muc_anh>public/data/media/ai-generated/</thu_muc_anh>
+    <file_metadata>public/data/media/ai-generated.json</file_metadata>
+    <tach_bach>KHÔNG gộp vào images.json — file đó là ảnh thật/tự do. Tách bạch để kiểm toán được.</tach_bach>
+    <quy_uoc_ten_file mau="&lt;ma-anh&gt;_&lt;slug-ten-khong-dau&gt;.png">
+      <vi_du>g01_kinh-duong-vuong-len-ngoi.png</vi_du>
+      <vi_du>i03_icon-danh-y-luong-y.png</vi_du>
+    </quy_uoc_ten_file>
+
+    <schema_metadata>
+      <ban_ghi_mau><![CDATA[
+{
+  "items": [
+    {
+      "id": "g01-kinh-duong-vuong-len-ngoi",
+      "ma": "G01",
+      "gan_voi": { "file": "huyen-su-khai-quoc.json", "id": "kinh-duong-vuong" },
+      "loai": "huyen-su",
+      "ten": "Kinh Dương Vương nhận ngôi vua nước Xích Quỷ",
+      "url": "/data/media/ai-generated/g01_kinh-duong-vuong-len-ngoi.png",
+      "mo_hinh": "Flux.1 [dev]",
+      "seed": 20260726,
+      "prompt": "<toàn văn prompt đã dùng>",
+      "ngay_sinh": "2026-07-26",
+      "nguoi_duyet": "<tên người duyệt>",
+      "ngay_duyet": "<ngày duyệt>",
+      "giay_phep": "ai-generated",
+      "ai_generated": true,
+      "nhan_canh_bao": "Hình dung nghệ thuật do AI dựng lại — KHÔNG PHẢI ảnh chụp/chân dung xác thực"
+    }
+  ]
+}
+      ]]></ban_ghi_mau>
+      <truong_bat_buoc>ai_generated</truong_bat_buoc>
+      <truong_bat_buoc>nhan_canh_bao</truong_bat_buoc>
+      <cong_gac script="scripts/validate_media.mjs">Validator PHẢI chặn nếu thiếu một trong hai trường bắt buộc.</cong_gac>
+    </schema_metadata>
+
+    <gan_vao_overlay>
+      <buoc>Đặt <code>anh_giay_phep: "ai-generated"</code> — giá trị này đã có trong enum của validate_media.mjs.</buoc>
+      <buoc>Bổ sung <code>ai_generated: true</code>.</buoc>
+      <cam>KHÔNG được để trống trường giấy phép — sẽ lẫn với ảnh thật.</cam>
+    </gan_vao_overlay>
+  </dau_ra>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       5. QUY TRÌNH KIỂM DUYỆT
+       ═══════════════════════════════════════════════════════════════ -->
+  <quy_trinh_kiem_duyet>
+    <nguoi_duyet>Chủ dự án, hoặc người được chủ dự án chỉ định. KHÔNG tự động publish thẳng từ mô hình sinh ảnh.</nguoi_duyet>
+
+    <checklist bat_buoc="true" ghi_chu="mọi mục phải ĐẠT thì ảnh mới được dùng">
+      <muc id="K1">Trang phục và vật dụng có đúng thời kỳ ghi trong &lt;can_cu_tu_lieu&gt; không? Đối chiếu lại nguồn khảo cổ / thư tịch đã trích.</muc>
+      <muc id="K2">Có VÔ TÌNH tạo ra khuôn mặt giống một người có thật (kể cả lãnh tụ, người nổi tiếng) không? Nếu AI trả khuôn mặt quá «thật» → loại, sinh lại với seed khác hoặc thêm negative prompt <code>photorealistic face</code>.</muc>
+      <muc id="K3">Có yếu tố sai lệch văn hoá không? Ví dụ lẫn trang phục hoặc kiến trúc Trung Hoa / triều đại khác vào cảnh Việt Nam, cờ hoặc phù hiệu sai niên đại.</muc>
+      <muc id="K4">Ảnh có lỗi giải phẫu, hoặc chữ viết vô nghĩa do AI sinh ra không?</muc>
+      <muc id="K5">Nhãn cảnh báo «hình dung nghệ thuật» đã gắn kèm khi hiển thị trên giao diện chưa?</muc>
+    </checklist>
+
+    <sau_khi_duyet>
+      <buoc>Cập nhật <code>nguoi_duyet</code> và <code>ngay_duyet</code> trong metadata.</buoc>
+      <buoc>Merge vào <code>ai-generated.json</code>.</buoc>
+      <buoc>Tham chiếu trong overlay tương ứng.</buoc>
+    </sau_khi_duyet>
+
+    <anh_bi_tu_choi>
+      <luu_o>scratchpad/rejected-ai-images-log.md</luu_o>
+      <khong_dua_vao_repo>true</khong_dua_vao_repo>
+      <muc_dich>Tránh lặp lại lỗi khi sinh lại.</muc_dich>
+    </anh_bi_tu_choi>
+  </quy_trinh_kiem_duyet>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       6. HƯỚNG DẪN CHO CLAUDE
+       ═══════════════════════════════════════════════════════════════ -->
+  <huong_dan_cho_claude>
+    <buoc thu_tu="1">Đọc &lt;gioi_han_cung&gt; trước. Nếu yêu cầu của người dùng va vào bất kỳ &lt;cam&gt; nào ở mức <code>chan</code> — dừng, nói rõ điều cấm nào bị va, đề xuất &lt;giai_phap_dung&gt;.</buoc>
+    <buoc thu_tu="2">Xác định ảnh cần sinh bằng thuộc tính <code>ma</code>. Nếu người dùng mô tả bằng lời, khớp về mã trước rồi mới làm.</buoc>
+    <buoc thu_tu="3">Ảnh không có trong &lt;danh_sach_anh&gt; thì phải phân loại được vào một &lt;loai&gt; trong &lt;loai_hop_le&gt;. Không phân loại được → từ chối.</buoc>
+    <buoc thu_tu="4">Trước khi soạn prompt mới, phải có &lt;can_cu_tu_lieu&gt; với nguồn cụ thể. Không có nguồn thì không soạn prompt — đây là bất biến của dự án, không phải hình thức.</buoc>
+    <buoc thu_tu="5">Sinh xong: ghi metadata theo &lt;schema_metadata&gt; với <code>nguoi_duyet</code> và <code>ngay_duyet</code> để TRỐNG. Chỉ người thật mới điền hai trường đó.</buoc>
+    <buoc thu_tu="6">Không bao giờ tự đánh dấu một ảnh là đã duyệt.</buoc>
+  </huong_dan_cho_claude>
+
+</dac_ta_sinh_anh>
