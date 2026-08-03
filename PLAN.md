@@ -202,7 +202,7 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 
 | Bản vá | Việc | Phán quyết |
 |---|---|---|
-| **1a** era nạp lười | `map.on("load")` `addSource` cả 3 era vô điều kiện | ⬜ **CHƯA ÁP** — giá trị cao nhất còn lại, −2,37 MB |
+| **1a** era nạp lười | `map.on("load")` `addSource` cả 3 era vô điều kiện | ✅ **ĐÃ ÁP** — cùng bản vá `landmarks3d.ts` và cổng gác `verify_chu_quyen.mjs` |
 | 1b Nam tiến nạp lười | | ✅ **ĐÃ ÁP** — `ensureNamTienGeo()` đã có |
 | 2 `forceContextLoss` | | ✅ **ĐÃ ÁP** — `figures3d.ts`, `models3d.ts` |
 | **3** fontstack union type | 5 literal `"text-font"` rải rác `main.ts` | ⬜ **CHƯA ÁP** — chặn tái diễn lỗi fontstack |
@@ -212,10 +212,15 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 | **6b** `esc()` dedup | 4 file còn giữ bản `esc` cục bộ | ⬜ **CHƯA ÁP** — cơ học, rủi ro thấp |
 | **7** `npm run smoke` | | ⬜ **CHƯA ÁP** phần `package.json` (+1 dòng). Phần gác cổng CI phải viết lại — `smoke.mjs` nay đã 9 kịch bản, tự dựng server cổng 5188 |
 
-🔴 **Bẫy `landmarks3d.ts:281` đang NGỦ, sẽ thức dậy đúng lúc áp 1a.** Hiện `era-phapthuoc-fill` luôn tồn tại (vì 1a chưa áp) nên `beforeId` luôn hợp lệ. Áp 1a mà quên chỗ này → lớp biển chèn lên trên cùng, che hết đất liền ở mọi thời kỳ trừ Pháp thuộc. Sửa **cùng một commit**:
-```ts
-const firstEra = ["era-phapthuoc-fill", "era-63-fill", "era-34-fill"].find((id) => map.getLayer(id));
-```
+✅ **Bẫy `landmarks3d.ts:281` đã vá cùng commit** — đổi từ ghim `era-phapthuoc-fill` sang dò lớp era đang có theo thứ tự vẽ thật. Cùng lúc phát hiện **nửa thứ hai của cùng cái bẫy**: `ensureEra` phải truyền `beforeId = "chu-quyen-labels"`, nếu không lớp era sinh ra sau sẽ chèn lên trên và **phủ mất nhãn Hoàng Sa / Trường Sa** — không lỗi console, không cổng dữ liệu nào bắt được.
+
+### Cổng gác mới — `npm run verify:chuquyen`
+
+Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa sổ nào. Quét cả 13 thời kỳ, kiểm 3 điều: nhãn chủ quyền render được · mọi lớp era nằm dưới `chu-quyen-labels` · era nạp lười 1/3 nguồn. **13/13 xanh**, và đã tự chứng minh biết đỏ bằng ca dương tính (bỏ `beforeId` → V2 đỏ đúng chỗ).
+
+⚠️ **Chưa gắn vào `npm run validate`** — cần Chrome, và không bật gác CI trước khi `smoke.mjs` hết đỏ 4/9.
+
+⚠️ Bản đầu của cổng này **đỏ giả 10/13** vì đòi đủ 5 đảo ở mọi thời kỳ. Ba đảo Thổ Chu / Bạch Long Vĩ / Phú Quý sống trong file ranh giới tỉnh, mà thời kỳ cổ không có lớp ranh giới nào — chúng chưa bao giờ được **vẽ** ở đó. Lý do đã ghi trong đầu file script để không ai sửa ngược.
 
 - [ ] `S2b-1` trong `smoke.mjs:311-345` vẫn bị chấm `ok = batBuoc === 0` như mọi kịch bản khác → luôn đỏ, luôn cộng vào tổng hỏng. Phải đánh dấu BỎ QUA (`ok: null`), **không phải sửa** — nó là thí nghiệm đối chứng hành vi Chrome. **S**
 - [ ] **`scripts/smoke.mjs` đỏ 4/9.** Không bật gác cổng CI trước khi áp DIFF-1 + DIFF-6. Kịch bản `S2b-1` **kỳ vọng đỏ vĩnh viễn** — nó là thí nghiệm đối chứng hành vi Chrome, phải đánh dấu BỎ QUA, không phải sửa. **S/M**

@@ -17,7 +17,8 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 | Dung lượng dữ liệu | **8.134.365 byte** (7,76 MB) | như trên |
 | Lớp phủ bản đồ | **34 file / 2.347 mục** (52% toàn bộ) | như trên |
 | Lỗi parse JSON · BOM | **0 · 0** | như trên |
-| Cổng dữ liệu | **11/11 xanh** | `node scripts/run_validators.mjs` |
+| Cổng dữ liệu | **12/12 xanh** | `npm run validate` |
+| Bất biến chủ quyền, mức hiển thị | **13/13 thời kỳ xanh** | `npm run verify:chuquyen` — Chrome headless |
 | Type check | **exit 0** | `npx tsc --noEmit` |
 | Mục thiếu nguồn cấp mục | 898 (19,8%) — trong đó 622 có nguồn cấp file | kiểm kê schema |
 
@@ -134,6 +135,12 @@ Ba file `boundaries/*.geojson` đều có đủ 5 feature chủ quyền: **Hoàn
 
 - `style.css` tokenise xong: **236 → 4 mã hex sống** (4 mã còn lại là màu ngữ nghĩa một lần dùng, đã ghi lý do). 63 lượt dùng tên biến cũ → 0. `git diff --stat`: +397 −443.
 - **Bất biến #1 xác nhận trên trình duyệt thật, cả hai chế độ**: `querySourceFeatures` trả đủ **Hoàng Sa, Trường Sa, Thổ Chu, Bạch Long Vĩ, Phú Quý** ở nguồn `era-34`, cộng Hoàng Sa + Trường Sa ở nguồn `chu-quyen` riêng. Canvas 1920×718, style đã tải xong — không phải ảnh chụp, mà là truy vấn feature đã render.
+
+### Nạp lười ranh giới era + cổng gác chủ quyền
+
+- `map.on("load")` trước đây nạp cả 3 era vô điều kiện — **4,70 MB GeoJSON lúc mở trang khi chỉ cần 1,17 MB**. Tách thành `ensureEra()` gọi từ `setEra()`. Đo được: **1/3 nguồn era** tồn tại lúc mở trang.
+- 🔴 Vá **hai nửa của cùng một bẫy thứ tự lớp**. `landmarks3d.ts:281` ghim `era-phapthuoc-fill` làm `beforeId` — đúng một cách tình cờ vì trước đây cả 3 era luôn tồn tại. Và `ensureEra` phải truyền `beforeId = "chu-quyen-labels"`, nếu không lớp era sinh sau sẽ **phủ mất nhãn Hoàng Sa / Trường Sa**. Cả hai đều im lặng: không lỗi console, không cổng dữ liệu nào bắt được.
+- **`scripts/verify_chu_quyen.mjs`** — Chrome headless riêng (swiftshader, WebGL thật), quét 13 thời kỳ. Thay cho việc "mở trình duyệt nhìn bằng mắt" vốn không chạy lại được và trong phiên này còn không làm được (tab chạy nền bị hãm `requestAnimationFrame`). **13/13 xanh**, đã chứng minh biết đỏ bằng ca dương tính.
 
 ### Ba lỗi bắt được nhờ tự đo, không phải nhờ build xanh
 
