@@ -14,6 +14,7 @@ import { moPopup, dongPopup } from "./popup";
 // Chỉ nhập hàm phân loại (không kéo Three.js) — xem ghi chú trong mohinh-diem.ts.
 import { kieuTheoTen } from "./mohinh-diem";
 import type { DiemMoHinh } from "./mohinh-diem";
+import { CUM_TRE_EM, LOP_TRE_EM, NHAN_TRE_EM } from "./tu-vung-tre-em";
 import { initSearch } from "./search";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
@@ -2209,15 +2210,17 @@ async function applyStreets(on: boolean): Promise<void> {
 // Gom 29 lớp phủ thành cụm chủ đề (accordion) để panel gọn (Phase 3 P3.4).
 // Chỉ nhóm HIỂN THỊ — không đổi thứ tự/định nghĩa OVERLAYS. Lớp thiếu nhóm
 // rơi vào "Khác" (guard chống sót khi thêm lớp mới).
-const OVERLAY_GROUPS: { nhan: string; icon: string; ids: string[] }[] = [
-  { nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
-  { nhan: "Sự kiện & Quân sự", icon: "⚔️", ids: ["chien-dich-tran-danh", "danh-nhan-quan-su-co-trung-dai", "nghia-si-can-vuong"] },
-  { nhan: "Vua chúa · Khoa bảng · Ngoại giao", icon: "👑", ids: ["vua-hoang-de", "khoa-bang-danh-nhan", "su-than-ngoai-giao", "danh-nhan-cac-trieu"] },
-  { nhan: "Nữ danh nhân · Dân tộc thiểu số", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so"] },
-  { nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
-  { nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
-  { nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung", "nghia-trang-liet-si"] },
-  { nhan: "Huyền sử & Truyền thuyết", icon: "🐉", ids: ["huyen-su-khai-quoc", "truyen-thuyet-dan-gian"] },
+// `id` dùng để tra tên gọi phiên bản trẻ em (tu-vung-tre-em.ts) — nhãn người
+// lớn không làm khoá được vì nó chính là thứ bị thay.
+const OVERLAY_GROUPS: { id: string; nhan: string; icon: string; ids: string[] }[] = [
+  { id: "di-san", nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
+  { id: "quan-su", nhan: "Sự kiện & Quân sự", icon: "⚔️", ids: ["chien-dich-tran-danh", "danh-nhan-quan-su-co-trung-dai", "nghia-si-can-vuong"] },
+  { id: "vua-khoa-bang", nhan: "Vua chúa · Khoa bảng · Ngoại giao", icon: "👑", ids: ["vua-hoang-de", "khoa-bang-danh-nhan", "su-than-ngoai-giao", "danh-nhan-cac-trieu"] },
+  { id: "nu-dan-toc", nhan: "Nữ danh nhân · Dân tộc thiểu số", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so"] },
+  { id: "tin-nguong", nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
+  { id: "van-hoa-khoa-hoc", nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
+  { id: "cach-mang", nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung", "nghia-trang-liet-si"] },
+  { id: "huyen-su", nhan: "Huyền sử & Truyền thuyết", icon: "🐉", ids: ["huyen-su-khai-quoc", "truyen-thuyet-dan-gian"] },
 ];
 
 function buildLayerControl(): void {
@@ -2227,23 +2230,30 @@ function buildLayerControl(): void {
   const groupedIds = new Set(OVERLAY_GROUPS.flatMap((g) => g.ids));
   const leftover = OVERLAYS.filter((o) => !groupedIds.has(o.id));
   const groups = leftover.length
-    ? [...OVERLAY_GROUPS, { nhan: "Khác", icon: "📦", ids: leftover.map((o) => o.id) }]
+    ? [...OVERLAY_GROUPS, { id: "khac", nhan: "Khác", icon: "📦", ids: leftover.map((o) => o.id) }]
     : OVERLAY_GROUPS;
+  // Chữ nào đổi theo chế độ thì bọc trong .lc-ten kèm khoá tra cứu — đổi chế độ
+  // chỉ cần ghi lại textContent, không dựng lại cả bảng (dựng lại sẽ gập hết
+  // các cụm người dùng đang mở và xoá trạng thái tick).
+  const ten = (khoa: string, chu: string) =>
+    `<span class="lc-ten" data-tu="${khoa}">${chu}</span>`;
   const overlayLabel = (id: string) => {
     const o = OVERLAYS.find((ov) => ov.id === id);
-    return o ? `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${o.label}</label>` : "";
+    return o
+      ? `<label><input type="checkbox" name="overlay" value="${o.id}"/> ${ten(`lop:${o.id}`, o.label)}</label>`
+      : "";
   };
   // Các nhóm gập được (details) để panel không tràn khỏi màn hình khi
   // số lớp phủ tăng dần (#1). "Lớp phủ" mặc định mở, phần còn lại gập lại.
   el.innerHTML = `
     <div class="lc-head">
-      <strong>Lớp bản đồ</strong>
+      <strong>${ten("nhan:lc-tieu-de", "Lớp bản đồ")}</strong>
       <button id="lc-thu-gon" type="button" aria-expanded="true" aria-controls="lc-than"
               title="Thu gọn bảng lớp bản đồ">‹</button>
     </div>
     <div id="lc-than">
     <div class="lc-sec lc-thoi-ky">
-      <label class="lc-nhan-chon" for="lc-period">Thời kỳ</label>
+      <label class="lc-nhan-chon" for="lc-period">${ten("nhan:lc-nhan-thoi-ky", "Thời kỳ")}</label>
       <select id="lc-period" name="period">
         ${PERIODS.map(
           (p, i) => `<option value="${i}"${i === currentPeriod ? " selected" : ""}>${p.nhan}</option>`,
@@ -2252,14 +2262,14 @@ function buildLayerControl(): void {
       <p class="lc-note" id="lc-ghi-chu"></p>
     </div>
     <details class="lc-sec" open>
-      <summary>📌 Lớp phủ <span class="lc-badge">${OVERLAYS.length}</span></summary>
+      <summary>📌 ${ten("nhan:lc-lop-phu", "Lớp phủ")} <span class="lc-badge">${OVERLAYS.length}</span></summary>
       <div class="lc-overlays">
         ${groups
           .map((g, gi) => {
             const items = g.ids.filter((id) => OVERLAYS.some((o) => o.id === id));
             if (!items.length) return "";
             return `<details class="lc-sec lc-group"${gi === 0 ? " open" : ""}>
-              <summary>${g.icon} ${g.nhan} <span class="lc-badge">${items.length}</span></summary>
+              <summary>${g.icon} ${ten(`cum:${g.id}`, g.nhan)} <span class="lc-badge">${items.length}</span></summary>
               <div class="group">${items.map(overlayLabel).join("")}</div>
             </details>`;
           })
@@ -2267,7 +2277,7 @@ function buildLayerControl(): void {
       </div>
     </details>
     <details class="lc-sec">
-      <summary>🖼️ Mức tư liệu ảnh</summary>
+      <summary>🖼️ ${ten("nhan:lc-muc-anh", "Mức tư liệu ảnh")}</summary>
       <div class="group">
         <div>📷 Có ảnh chân dung</div>
         <div>📄 Có tư liệu/hồ sơ</div>
@@ -2275,7 +2285,7 @@ function buildLayerControl(): void {
       </div>
     </details>
     <details class="lc-sec">
-      <summary>🎨 Kiểu bản đồ</summary>
+      <summary>🎨 ${ten("nhan:lc-kieu-ban-do", "Kiểu bản đồ")}</summary>
       <div class="group">
         <label><input type="radio" name="palette" value="default" checked/> Mặc định</label>
         <label><input type="radio" name="palette" value="ruc-ro"/> Tô màu phân biệt tỉnh</label>
@@ -2286,7 +2296,7 @@ function buildLayerControl(): void {
       </div>
     </details>
     <details class="lc-sec">
-      <summary>🗺️ Bản đồ cổ</summary>
+      <summary>🗺️ ${ten("nhan:lc-ban-do-co", "Bản đồ cổ")}</summary>
       <div class="group">
         <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
         <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
@@ -2317,8 +2327,35 @@ function buildLayerControl(): void {
     if (t.name === "taberd-opacity") setTaberdOpacity(Number(t.value));
   });
   document.getElementById("app")?.appendChild(el);
+  apTuVungTheoCheDo();
+  document.addEventListener(SU_KIEN_DOI_CHE_DO, apTuVungTheoCheDo);
+}
+
+/**
+ * Đổi cách gọi các nhãn trong bảng lớp bản đồ theo chế độ xem.
+ *
+ * Nhãn người lớn được giữ nguyên trong `data-goc` ngay lần chạy đầu, nên chuyển
+ * qua chuyển lại giữa hai chế độ không làm mất bản gốc. Khoá nào chưa có bản
+ * trẻ em thì giữ nguyên bản người lớn — thiếu bản dịch còn hơn dịch sai.
+ */
+function apTuVungTheoCheDo(): void {
   capNhatGhiChuCuongVuc();
-  document.addEventListener(SU_KIEN_DOI_CHE_DO, capNhatGhiChuCuongVuc);
+  const treEm = cheDoHienTai() === "tre-em";
+  for (const el of document.querySelectorAll<HTMLElement>("#layer-control .lc-ten")) {
+    if (el.dataset.goc === undefined) el.dataset.goc = el.textContent ?? "";
+    const khoa = el.dataset.tu ?? "";
+    const [loai, id] = [khoa.slice(0, khoa.indexOf(":")), khoa.slice(khoa.indexOf(":") + 1)];
+    const bang =
+      loai === "lop" ? LOP_TRE_EM : loai === "cum" ? CUM_TRE_EM : NHAN_TRE_EM;
+    let chu = treEm ? bang[id] : undefined;
+    // Nhãn người lớn của lớp phủ đã nhúng sẵn emoji trong chuỗi label, còn bản
+    // trẻ em thì không — thay thẳng sẽ làm cả cột mất hết biểu tượng.
+    if (chu && loai === "lop") {
+      const icon = OVERLAYS.find((o) => o.id === id)?.icon;
+      if (icon) chu = `${icon} ${chu}`;
+    }
+    el.textContent = chu ?? el.dataset.goc;
+  }
 }
 
 // Ghi chú pháp lý về cương vực cổ. Bản cho người lớn dùng đúng ngôn ngữ hồ sơ
