@@ -2,7 +2,7 @@
  * ============================================================================
  * TÌM KIẾM TOÀN CỤC — src/search.ts
  * ============================================================================
- * Giải quyết khoảng trống lớn nhất tìm thấy ở ux-audit-plan.md (§3): 1921
+ * Giải quyết khoảng trống lớn nhất tìm thấy ở docs/lich-su/ux-audit-plan.md (§3): 1921
  * điểm / 32 lớp phủ không có cách nào gõ tên để nhảy thẳng tới. Module này
  * tự chứa — không phụ thuộc bất kỳ hàm nội bộ nào của main.ts.
  *
@@ -24,7 +24,7 @@
  * (chèn giữa <h1> và <nav id="topbar-nav">) thay vì body, vì lý do cụ thể:
  * bất kỳ phần tử position:fixed/absolute nào gắn thẳng vào body đều có nguy
  * cơ đè lên `#layer-control` — panel này LUÔN mở sẵn (không có nút ẩn/hiện)
- * và ở màn 360-390px chiếm tới ~80vw chiều ngang (xem ux-audit-plan.md, phát
+ * và ở màn 360-390px chiếm tới ~80vw chiều ngang (xem docs/lich-su/ux-audit-plan.md, phát
  * hiện 🔴#2: NavigationControl của MapLibre từng bị đúng lỗi này vì đặt sai
  * góc). Gắn vào `#topbar` loại bỏ hoàn toàn nguy cơ đó vì `#topbar` luôn vẽ
  * TRÊN mọi panel (z-index:30, xem style.css) và luôn nằm phía trên toạ độ

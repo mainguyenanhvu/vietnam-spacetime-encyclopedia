@@ -1,0 +1,377 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   HỆ THIẾT KẾ — hai chế độ xem
+   ═══════════════════════════════════════════════════════════════════════
+
+   Chế độ đặt trên <html data-che-do="nguoi-lon" | "tre-em">, mặc định
+   "nguoi-lon". main.ts đọc localStorage rồi gán trước khi vẽ khung đầu tiên.
+
+   Vì sao biến CSS chứ không phải hai file: 11 panel + control đã tham chiếu
+   var(--*). Tách hai file sẽ nhân đôi 1.864 dòng và mọi bugfix layout phải sửa
+   hai lần. body.kid-mode (story.ts) đã chứng minh cơ chế này chạy được.
+
+   MỌI giá trị thẩm mỹ phải đi qua đây. Viết hex thẳng trong style.css là làm
+   hỏng chế độ thứ hai — nó sẽ không đổi theo.
+
+   Học từ Material 3: bậc surface theo sắc độ thay vì trắng-tinh-cộng-đổ-bóng ·
+   một điểm nhấn dùng dè · thang chữ có vai trò rõ · lớp trạng thái phủ lên nút
+   thay vì đổi hẳn màu nền · bo góc là một chiều thiết kế, không phải trang trí.
+   Giữ nguyên bản sắc sơn mài đỏ – thếp vàng: đó là thứ Google không có.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Bất biến giữa hai chế độ ──────────────────────────────────────── */
+
+  /* Chiều cao thật của topbar, JS ghi qua ResizeObserver (main.ts). Topbar
+     xuống 2 hàng khi cửa sổ hẹp → panel nổi phải bám theo, không dùng số cứng. */
+  --topbar-h: 3.5rem;
+  --panel-top: calc(var(--topbar-h) + 0.75rem);
+  --panel-maxh: calc(100% - var(--topbar-h) - 4.5rem);
+
+  /* Thang khoảng cách — bội số 4px. Trước đây spacing viết tay 0,2→1,1rem
+     không theo quy luật nào. */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+
+  /* Chuyển động. --ease-nhan là đường cong "emphasized" của Material 3:
+     bật nhanh, dừng mềm — hợp panel trượt vào. */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-nhan: cubic-bezier(0.2, 0, 0, 1);
+  --dur-nhanh: 0.16s;
+  --dur-vua: 0.28s;
+  --dur-cham: 0.42s;
+
+  /* Lớp trạng thái Material 3 — phủ lên nút thay vì đổi hẳn màu nền, nên
+     dùng được trên mọi màu nút mà không cần khai biến thể hover riêng. */
+  --lop-hover: rgba(0, 0, 0, 0.06);
+  --lop-nhan: rgba(0, 0, 0, 0.11);
+
+  /* Sắc nhuộm theo thương hiệu. Khai một lần ở đây nhưng `var(--brand)` bên
+     trong `color-mix` được thay thế TẠI NƠI DÙNG, nên chúng tự đổi theo chế độ
+     — không cần khai lại trong từng khối `[data-che-do]`.
+     Trước đây các chỗ này viết `rgba(139, 26, 26, 0.08)` cứng, nghĩa là topbar
+     và ô tìm kiếm vẫn ám đỏ sơn mài ngay cả ở chế độ trẻ em. */
+  --lop-brand-nhe: color-mix(in srgb, var(--brand) 8%, transparent);
+  --lop-brand-vua: color-mix(in srgb, var(--brand) 12%, transparent);
+  --lop-brand-dam: color-mix(in srgb, var(--brand) 34%, transparent);
+
+  /* Viền và ánh sáng tông điểm nhấn trên nền tối của topbar */
+  --vien-nhan-nhe: color-mix(in srgb, var(--nhan-sang) 22%, transparent);
+  --vien-nhan: color-mix(in srgb, var(--nhan-sang) 38%, transparent);
+  --vien-nhan-ro: color-mix(in srgb, var(--nhan-mo) 55%, transparent);
+  --glow-nhan: color-mix(in srgb, var(--nhan-sang) 45%, transparent);
+  --nen-mat-mo: color-mix(in srgb, var(--mat) 8%, transparent);
+  --bong-topbar: color-mix(in srgb, var(--brand-sau) 35%, transparent);
+
+  /* Nền khung video/iframe. CỐ Ý cố định xuyên chế độ: letterbox tối là quy ước
+     của trình phát video, đổi nó theo theme sẽ trông như lỗi render. */
+  --nen-khung-video: #000;
+  --nen-khung-3d: #111;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   CHẾ ĐỘ NGƯỜI LỚN — sơn mài đỏ · thếp vàng
+   Sang trọng, tinh tế, tối giản. Một điểm nhấn, nhiều khoảng thở, tương phản
+   đến từ sắc độ chứ không từ số lượng màu.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root,
+:root[data-che-do="nguoi-lon"] {
+  --che-do: "nguoi-lon";
+
+  /* Thương hiệu — sơn mài */
+  --brand-sau: #4a0d0d;
+  --brand-dam: #6d1414;
+  --brand: #8b1a1a;
+  --brand-nhat: #a52222;
+
+  /* Điểm nhấn — thếp vàng */
+  --nhan: #b3791f;
+  --nhan-sang: #d4a24e;
+  --nhan-mo: #f2d399;
+
+  /* Bậc mặt phẳng — sắc độ tăng dần theo độ "nổi", không phải trắng + bóng */
+  --nen-app: #f7f4ee;
+  --mat: #fffdf7;
+  --mat-2: #fef9ec;
+  --mat-3: #fef3c7;
+  --mat-chim: #f5f5f4;
+  --mat-kinh: rgba(255, 253, 247, 0.82);
+  --vien-kinh: rgba(255, 255, 255, 0.55);
+  --mat-nghich: linear-gradient(135deg, #6d1414 0%, #4a0d0d 100%);
+
+  /* Chữ */
+  --chu: #2b2320;
+  --chu-mem: #6b5f57;
+  --chu-nhat: #8a7d73;
+  --chu-tren-nghich: #f2d399;
+
+  /* Đường viền */
+  --vien: rgba(120, 90, 60, 0.18);
+  --vien-ro: #d6d3d1;
+
+  /* Trạng thái. Ba cặp này đã được đo tương phản thủ công ở đợt trước —
+     đừng đổi giá trị mà không đo lại. */
+  --dung-nen: #dcfce7;
+  --dung-chu: #147739;
+  --dung-vien: #bbf7d0;
+  --sai-nen: #fee2e2;
+  --sai-chu: #b91c1c;
+  --sai-vien: #fecaca;
+  --tin-nen: #e0f2fe;
+  --tin-chu: #075985;
+  --luu-nen: #fef3c7;
+  --luu-chu: #92400e;
+
+  /* Vòng focus bàn phím. Không dùng --nhan-sang: nó chỉ đạt ~2,3:1 trên nền
+     sáng, trượt ngưỡng 3:1 của WCAG 1.4.11. Giá trị này đo được 3,45–3,70:1. */
+  --focus: #b3791f;
+
+  /* Hình khối */
+  --bo-lon: 14px;
+  --bo-vua: 10px;
+  --bo-nho: 7px;
+  --bo-vien-tron: 999px;
+
+  /* Đổ bóng — dùng dè, chỉ để tách lớp, không để trang trí */
+  --bong-1: 0 1px 2px rgba(43, 35, 32, 0.06), 0 2px 8px rgba(43, 35, 32, 0.08);
+  --bong-2: 0 4px 12px -2px rgba(43, 35, 32, 0.12), 0 12px 32px -8px rgba(43, 35, 32, 0.24);
+
+  /* Chữ */
+  --font: "Segoe UI Variable", "Segoe UI", Inter, system-ui, -apple-system,
+    "Roboto", "Helvetica Neue", sans-serif;
+  --font-tieu-de: var(--font);
+
+  --co-2xs: 0.72rem;
+  --co-xs: 0.78rem;
+  --co-sm: 0.85rem;
+  --co-md: 0.94rem;
+  --co-lg: 1.05rem;
+  --co-xl: 1.2rem;
+  --co-2xl: 1.4rem;
+  --co-3xl: 1.7rem;
+
+  --dam-thuong: 400;
+  --dam-vua: 500;
+  --dam-manh: 650;
+  --cao-dong: 1.55;
+  --gian-chu-tieu-de: -0.01em;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   CHẾ ĐỘ TRẺ EM — vui nhộn, hoạt hình, nhiều màu
+   Chữ to hơn, bo tròn hơn, viền dày thấy rõ, mặt phẳng sáng và ấm.
+   Không hạ chuẩn tương phản: mọi cặp chữ/nền dưới đây vẫn phải đạt 4,5:1.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root[data-che-do="tre-em"] {
+  --che-do: "tre-em";
+
+  /* Thương hiệu chuyển sang cam–đỏ ấm, giữ mạch đỏ nhưng tươi hơn hẳn */
+  --brand-sau: #9a3412;
+  --brand-dam: #c2410c;
+  --brand: #ea580c;
+  --brand-nhat: #f97316;
+
+  --nhan: #7c3aed;
+  --nhan-sang: #a855f7;
+  --nhan-mo: #ddd6fe;
+
+  --nen-app: #fffbf2;
+  --mat: #ffffff;
+  --mat-2: #fff7ed;
+  --mat-3: #ffedd5;
+  --mat-chim: #fef9c3;
+  --mat-kinh: rgba(255, 255, 255, 0.9);
+  --vien-kinh: rgba(255, 237, 213, 0.9);
+  /* Ba màu cam → đỏ → tím, nhưng ở sắc độ SÂU. Bản đầu dùng #f59e0b → #ef4444
+     → #d946ef trông vui hơn nhưng chữ trắng trên đó chỉ đạt 2,15:1 — hỏng nặng
+     ngưỡng 4,5:1. Đo lại bộ này: 5,07 · 6,00 · 6,71:1. Vui nhộn không được đổi
+     bằng chữ khó đọc, nhất là với giao diện dành cho trẻ em. */
+  --mat-nghich: linear-gradient(100deg, #c2410c 0%, #b91c1c 50%, #a21caf 100%);
+
+  --chu: #1c1917;
+  --chu-mem: #57534e;
+  --chu-nhat: #78716c;
+  --chu-tren-nghich: #ffffff;
+
+  --vien: rgba(234, 88, 12, 0.28);
+  --vien-ro: #fdba74;
+
+  --dung-nen: #dcfce7;
+  --dung-chu: #15803d;
+  --dung-vien: #86efac;
+  --sai-nen: #fee2e2;
+  --sai-chu: #b91c1c;
+  --sai-vien: #fca5a5;
+  --tin-nen: #dbeafe;
+  --tin-chu: #1d4ed8;
+  --luu-nen: #fef9c3;
+  --luu-chu: #a16207;
+
+  /* Tím đậm trên nền sáng — đo được trên 4,5:1, không dùng tím nhạt */
+  --focus: #6d28d9;
+
+  /* Bo tròn hẳn: đây là tín hiệu "đồ chơi" mạnh nhất mà không tốn màu */
+  --bo-lon: 26px;
+  --bo-vua: 20px;
+  --bo-nho: 14px;
+  --bo-vien-tron: 999px;
+
+  /* Bóng ấm, nảy hơn */
+  --bong-1: 0 2px 0 rgba(234, 88, 12, 0.18), 0 4px 12px rgba(234, 88, 12, 0.14);
+  --bong-2: 0 6px 0 rgba(234, 88, 12, 0.16), 0 16px 36px -8px rgba(217, 70, 239, 0.28);
+
+  --font: "Segoe UI Variable", "Segoe UI", "Comic Neue", Inter, system-ui,
+    -apple-system, "Roboto", sans-serif;
+  --font-tieu-de: var(--font);
+
+  /* Nhích toàn thang lên một bậc — trẻ đọc chữ nhỏ khó hơn người lớn */
+  --co-2xs: 0.82rem;
+  --co-xs: 0.9rem;
+  --co-sm: 1rem;
+  --co-md: 1.08rem;
+  --co-lg: 1.2rem;
+  --co-xl: 1.38rem;
+  --co-2xl: 1.62rem;
+  --co-3xl: 2rem;
+
+  --dam-thuong: 500;
+  --dam-vua: 600;
+  --dam-manh: 800;
+  --cao-dong: 1.68;
+  --gian-chu-tieu-de: 0;
+
+  --lop-hover: rgba(234, 88, 12, 0.1);
+  --lop-nhan: rgba(234, 88, 12, 0.18);
+}
+
+/* Nút trên topbar chế độ trẻ em: viên thuốc TRẮNG ĐẶC, chữ nâu cam đậm.
+   Nền mờ 8% dùng chung với chế độ người lớn chỉ đạt 4,60:1 trên gradient sáng —
+   vừa đủ qua ngưỡng 4,5:1 nhưng biên mỏng tới mức một lần chỉnh sắc độ gradient
+   là trượt. Bộ này đo được 8,5:1, và viên thuốc trắng đặc cũng đọc rõ hơn hẳn
+   với trẻ nhỏ. */
+:root[data-che-do="tre-em"] #topbar-nav button {
+  background: var(--mat);
+  color: var(--brand-sau);
+  border-color: var(--mat);
+  font-weight: var(--dam-vua);
+}
+
+:root[data-che-do="tre-em"] #topbar-nav button:hover {
+  background: var(--nhan-mo);
+}
+
+:root[data-che-do="tre-em"] #topbar-nav button.active {
+  background: var(--nhan);
+  color: var(--mat);
+  border-color: var(--nhan);
+}
+
+/* ── Bảng màu vui cho badge/thẻ, CHỈ chế độ trẻ em dùng nhiều màu ────────
+   Chế độ người lớn map cả 6 về sắc độ của một điểm nhấn: tối giản nghĩa là
+   không dùng sáu màu để nói sáu thứ cùng loại. */
+:root,
+:root[data-che-do="nguoi-lon"] {
+  --the-1: #6d1414;
+  --the-2: #8b1a1a;
+  --the-3: #a52222;
+  --the-4: #92400e;
+  --the-5: #b3791f;
+  --the-6: #6b5f57;
+  --the-chu: #fffdf7;
+}
+
+:root[data-che-do="tre-em"] {
+  --the-1: #dc2626;
+  --the-2: #ea580c;
+  --the-3: #ca8a04;
+  --the-4: #16a34a;
+  --the-5: #0284c7;
+  --the-6: #9333ea;
+  --the-chu: #ffffff;
+}
+
+/* ── Nền tảng dùng chung ────────────────────────────────────────────── */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  font-family: var(--font);
+  font-size: var(--co-md);
+  font-weight: var(--dam-thuong);
+  line-height: var(--cao-dong);
+  color: var(--chu);
+  background: var(--nen-app);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Đổi chế độ không được nháy trắng cả trang. Chỉ chuyển màu — KHÔNG chuyển
+   layout, vì thang chữ đổi theo chế độ sẽ làm cả trang co giật. */
+body,
+#app {
+  transition: background-color var(--dur-vua) var(--ease);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-tieu-de);
+  font-weight: var(--dam-manh);
+  letter-spacing: var(--gian-chu-tieu-de);
+  line-height: 1.25;
+}
+
+/* ── Nút chuyển chế độ ──────────────────────────────────────────────── */
+
+#che-do-btn .che-do-nhan::before {
+  content: "🎩 Người lớn";
+}
+
+:root[data-che-do="tre-em"] #che-do-btn .che-do-nhan::before {
+  content: "🧸 Trẻ em";
+}
+
+/* ── Tắt transition trong lúc đổi chế độ ────────────────────────────────
+   Đổi chế độ làm hàng loạt thuộc tính đổi cùng lúc. Nếu để chúng chạy
+   transition, Chrome bỏ dở phép nội suy ở những cặp giá trị không nội suy được
+   — ví dụ nền mờ `oklab(... / 0.08)` sang `rgb(255,255,255)` đục — và phần tử
+   giữ nguyên giá trị CŨ. Đo được: bấm nút chuyển một lần thì màu nút topbar trễ
+   đúng một nhịp, trong khi cỡ chữ (không nằm trong danh sách transition) đổi
+   ngay. Tắt transition đúng một khung hình rồi bật lại là hết. */
+:root[data-dang-doi-che-do] *,
+:root[data-dang-doi-che-do] *::before,
+:root[data-dang-doi-che-do] *::after {
+  transition: none !important;
+}
+
+/* ── Tôn trọng người dùng tắt hiệu ứng ──────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

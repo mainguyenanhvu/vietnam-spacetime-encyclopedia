@@ -6,6 +6,7 @@ import type {
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
+import { apCheDoDaLuu, initCheDo } from "./chedo";
 import { registerPanel, showOnly, hidePanel, hideAllPanels } from "./panels";
 import { initSearch } from "./search";
 import { initGame } from "./game";
@@ -16,6 +17,10 @@ import { initBattle } from "./battle";
 import { initJourney } from "./journey";
 import { initQuocGia } from "./quocgia";
 import { initTimeline } from "./timeline";
+
+// Đặt chế độ xem đã lưu trước mọi thứ khác, nếu không trang sẽ nháy sang chế độ
+// mặc định rồi mới đổi.
+apCheDoDaLuu();
 
 // ---------------------------------------------------------------------------
 // Cấu hình thời kỳ (era). Mỗi era = một lớp ranh giới GeoJSON.
@@ -1114,6 +1119,9 @@ initBattle();
 initJourney();
 initQuocGia();
 initTimeline();
+// Chèn CUỐI cùng nhưng nút nằm ĐẦU #topbar-nav (insertBefore) — chuyển chế độ
+// xem là hành động khung, không cùng hạng với các nút mở panel nội dung.
+initCheDo();
 
 // Hiện ranh giới hành chính của 1 era (index = chỉ số ERAS) hoặc ẨN HẾT (index = -1).
 // KHÔNG tự đặt nhãn/thanh trượt — điều phối bởi setPeriod().
@@ -2229,9 +2237,7 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   if (!panel || !content) return;
 
   // Dọn mô hình 3D của tỉnh trước đó (nếu có) trước khi dựng lại panel.
-  activeModel3DDispose?.();
-  activeModel3DDispose = null;
-  disposeFigures();
+  disposeProvince3D();
 
   const num = (v: string | number | undefined) =>
     v === undefined || v === "" ? "—" : Number(String(v).replace(",", ".")).toLocaleString("vi-VN");
@@ -2394,13 +2400,26 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   }
 }
 
+// Trả WebGL context của mô hình 3D và nhân vật 3D trong hồ sơ tỉnh.
+function disposeProvince3D(): void {
+  activeModel3DDispose?.();
+  activeModel3DDispose = null;
+  disposeFigures();
+}
+
+// `province-panel` nằm trong PANEL_IDS nhưng chưa bao giờ được registerPanel,
+// nên observer của panels.ts không chạy cho nó. Hệ quả: khi một module KHÁC ẩn
+// panel này qua showOnly(), không chỗ nào dọn — mô hình Three.js giữ nguyên
+// context cho tới khi trình duyệt thu hồi. Hai chỗ dọn viết tay bên dưới chỉ
+// phủ đường đóng bằng nút × và đường đổi tỉnh. Đây là nửa còn lại của lỗi rò
+// context đã vá cho journey/battle/olympia.
+registerPanel("province-panel", disposeProvince3D);
+
 document.getElementById("panel-close")?.addEventListener("click", () => {
   const panel = document.getElementById("province-panel");
   if (panel) panel.hidden = true;
   if (focusMode) exitFocus();
-  activeModel3DDispose?.();
-  activeModel3DDispose = null;
-  disposeFigures();
+  disposeProvince3D();
 });
 
 // ---------------------------------------------------------------------------

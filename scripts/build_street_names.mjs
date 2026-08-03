@@ -1,5 +1,5 @@
 // Build PILOT cho "tên đường/phố đặt theo danh nhân" — Phương án A (bảng liên kết +
-// centroid đại diện, xem docs/street-names-model-proposal.md). Chạy OFFLINE, không gọi
+// centroid đại diện, xem docs/lich-su/street-names-model-proposal.md). Chạy OFFLINE, không gọi
 // Overpass ở runtime app. Idempotent: chạy lại sẽ fetch lại Overpass và ghi đè file kết quả.
 //
 // Cách chạy: node scripts/build_street_names.mjs
