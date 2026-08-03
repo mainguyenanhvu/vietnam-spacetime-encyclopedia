@@ -375,3 +375,125 @@ h4 {
     scroll-behavior: auto !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   BỐ CỤC — sửa ba chỗ xấu nhất sau khi nhìn ảnh chụp thật
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Menu «Khám phá» gom 9 nút nội dung ────────────────────────────── */
+.nav-menu { position: relative; }
+
+.nav-menu > summary {
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid var(--vien-nhan-ro);
+  background: var(--nen-mat-mo);
+  color: var(--chu-tren-nghich);
+  border-radius: var(--bo-vien-tron);
+  padding: 0.32rem 0.9rem;
+  font-size: var(--co-sm);
+  font-weight: var(--dam-vua);
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.nav-menu > summary::-webkit-details-marker { display: none; }
+.nav-menu > summary::after { content: "▾"; font-size: 0.75em; opacity: 0.8; }
+.nav-menu[open] > summary::after { content: "▴"; }
+
+:root[data-che-do="tre-em"] .nav-menu > summary {
+  background: var(--mat);
+  color: var(--brand-sau);
+  border-color: var(--mat);
+}
+
+/* Khay thả xuống — KHÔNG đẩy topbar cao thêm, đó là cả mục đích của việc gom. */
+.nav-menu-khay {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 40;
+  display: grid;
+  gap: 0.3rem;
+  min-width: 15rem;
+  padding: 0.5rem;
+  background: var(--mat);
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-vua);
+  box-shadow: var(--bong-2);
+}
+.nav-menu-khay button {
+  justify-content: flex-start;
+  width: 100%;
+  border-color: var(--vien-ro) !important;
+  background: transparent !important;
+  color: var(--chu) !important;
+}
+.nav-menu-khay button:hover { background: var(--lop-brand-nhe) !important; }
+
+/* ── Bảng lớp bản đồ: thu gọn được, hẹp hơn ────────────────────────── */
+#layer-control .lc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+#lc-thu-gon {
+  border: 1px solid var(--vien-ro);
+  background: transparent;
+  color: var(--chu-mem);
+  border-radius: var(--bo-nho);
+  cursor: pointer;
+  line-height: 1;
+  min-width: 2rem;
+  min-height: 2rem;
+  font-size: var(--co-lg);
+}
+#lc-thu-gon:hover { background: var(--lop-brand-nhe); }
+
+#layer-control.lc-gon #lc-than { display: none; }
+#layer-control.lc-gon { width: auto; min-width: 0; }
+
+/* Thời kỳ: 13 dòng radio xuống dòng lộn xộn và bị cắt cụt ở đáy panel →
+   một ô chọn. Tiết kiệm khoảng 400px chiều dọc. */
+.lc-thoi-ky { display: grid; gap: 0.4rem; }
+.lc-nhan-chon {
+  font-weight: var(--dam-manh);
+  font-size: var(--co-sm);
+  color: var(--chu-mem);
+}
+#lc-period {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-nho);
+  background: var(--mat);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+}
+
+/* ── Thanh thời gian: tương tác chữ ký của cả sản phẩm, trước đây mỏng
+   như một đường kẻ ngăn cách ───────────────────────────────────────── */
+#timeline-bar {
+  padding: 0.55rem 1.15rem;
+  gap: 0.9rem;
+  background: var(--mat-nghich);
+  color: var(--chu-tren-nghich);
+  border-top: 1px solid var(--vien-nhan);
+}
+#timeline-bar label { font-weight: var(--dam-manh); font-size: var(--co-sm); }
+#period-label {
+  font-weight: var(--dam-manh);
+  font-size: var(--co-md);
+  white-space: nowrap;
+}
+#timeline {
+  flex: 1;
+  min-width: 8rem;
+  height: 1.6rem;
+  accent-color: var(--nhan-sang);
+  cursor: pointer;
+}

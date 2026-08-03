@@ -111,12 +111,27 @@ class Cdp {
   }
 }
 
-/** Đợi MapLibre tải xong style. Headless có rAF thật nên việc này về đích được. */
+/**
+ * Đợi ứng dụng SẴN SÀNG THẬT, không chỉ đợi MapLibre.
+ *
+ * ⚠️ Bản đầu chỉ đợi `isStyleLoaded()`. Đó là điều kiện SAI: cờ đó bật ngay khi
+ * style NỀN tải xong, tức là TRƯỚC khi `map.on("load")` kịp thêm nguồn era và
+ * lớp `chu-quyen-labels`. Cổng chạy đúng mấy lượt đầu chỉ nhờ may — đến khi
+ * `map.on("load")` nặng thêm một chút là nó đọc phải style rỗng rồi báo đỏ giả
+ * "THIẾU Hoàng Sa, Trường Sa" với iCQ = -1.
+ *
+ * Điều kiện đúng là thứ mà `map.on("load")` tạo ra sau cùng: lớp chủ quyền có
+ * mặt VÀ thanh thời gian đã dựng xong (buildTimeline chạy sau nữa).
+ */
 async function doiMap(cdp, timeoutMs = 60000) {
   const deadline = Date.now() + timeoutMs;
   while (Date.now() < deadline) {
     const ok = await cdp.evaluate(
-      `(() => { try { return !!(window.__map && window.__map.isStyleLoaded() && window.__map.getStyle()); } catch { return false; } })()`,
+      `(() => { try {
+        const m = window.__map, t = document.getElementById("timeline");
+        return !!(m && m.isStyleLoaded() && m.getStyle()
+          && m.getLayer("chu-quyen-labels") && t && Number(t.max) > 0);
+      } catch { return false; } })()`,
     );
     if (ok) return true;
     await sleep(500);

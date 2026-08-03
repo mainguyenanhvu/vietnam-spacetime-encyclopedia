@@ -7,6 +7,7 @@ import type {
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import { apCheDoDaLuu, initCheDo } from "./chedo";
+import { gomNutTopbar } from "./topbar";
 import { registerPanel, showOnly, hidePanel, hideAllPanels } from "./panels";
 import { initSearch } from "./search";
 import { initGame } from "./game";
@@ -957,6 +958,8 @@ map.on("load", () => {
   initSongNui();
   initCuongVuc();
   initNamTien();
+  // Nam tiến thêm nút BÊN TRONG map.on("load") — gọi lại để hút nốt vào «Khám phá».
+  gomNutTopbar();
   setPeriod(currentPeriod);
   buildTimeline();
   buildLayerControl();
@@ -1146,6 +1149,8 @@ initTimeline();
 // Chèn CUỐI cùng nhưng nút nằm ĐẦU #topbar-nav (insertBefore) — chuyển chế độ
 // xem là hành động khung, không cùng hạng với các nút mở panel nội dung.
 initCheDo();
+// Phải chạy SAU mọi init* — nó gom những nút đã có mặt.
+gomNutTopbar();
 
 // Hiện ranh giới hành chính của 1 era (index = chỉ số ERAS) hoặc ẨN HẾT (index = -1).
 // KHÔNG tự đặt nhãn/thanh trượt — điều phối bởi setPeriod().
@@ -2071,19 +2076,21 @@ function buildLayerControl(): void {
   // Các nhóm gập được (details) để panel không tràn khỏi màn hình khi
   // số lớp phủ tăng dần (#1). "Lớp phủ" mặc định mở, phần còn lại gập lại.
   el.innerHTML = `
-    <div class="lc-head"><strong>🗺️ Lớp bản đồ</strong></div>
-    <details class="lc-sec" open>
-      <summary>🕰️ Thời kỳ <span class="lc-tag">Xích Quỷ → nay</span></summary>
-      <div class="group lc-periods">
+    <div class="lc-head">
+      <strong>Lớp bản đồ</strong>
+      <button id="lc-thu-gon" type="button" aria-expanded="true" aria-controls="lc-than"
+              title="Thu gọn bảng lớp bản đồ">‹</button>
+    </div>
+    <div id="lc-than">
+    <div class="lc-sec lc-thoi-ky">
+      <label class="lc-nhan-chon" for="lc-period">Thời kỳ</label>
+      <select id="lc-period" name="period">
         ${PERIODS.map(
-          (p, i) => `
-          <label><input type="radio" name="period" value="${i}" ${
-            i === currentPeriod ? "checked" : ""
-          }/> ${p.nhan}</label>`,
+          (p, i) => `<option value="${i}"${i === currentPeriod ? " selected" : ""}>${p.nhan}</option>`,
         ).join("")}
-        <p class="lc-note">⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).</p>
-      </div>
-    </details>
+      </select>
+      <p class="lc-note">⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).</p>
+    </div>
     <details class="lc-sec" open>
       <summary>📌 Lớp phủ <span class="lc-badge">${OVERLAYS.length}</span></summary>
       <div class="lc-overlays">
@@ -2124,7 +2131,17 @@ function buildLayerControl(): void {
         <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
         <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
       </div>
-    </details>`;
+    </details>
+    </div>`;
+  // Thu gọn bảng lớp — bảng này chiếm 1/5 bản đồ và trước đây không tắt được.
+  el.addEventListener("click", (e) => {
+    const b = (e.target as HTMLElement).closest("#lc-thu-gon");
+    if (!b) return;
+    const mo = el.classList.toggle("lc-gon") === false;
+    b.setAttribute("aria-expanded", String(mo));
+    b.textContent = mo ? "‹" : "›";
+    b.setAttribute("title", mo ? "Thu gọn bảng lớp bản đồ" : "Mở bảng lớp bản đồ");
+  });
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
     if (t.name === "period") setPeriod(Number(t.value));
@@ -2369,59 +2386,65 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
 
   if (!isIsland) {
     const slug = slugify(name);
-    void Promise.all([
-      loadProfile(name),
-      loadLiterature(),
-      loadMedia(),
-      loadFigures(),
-    ]).then(([profile, lib, media, figures]) => {
-        const slot = document.getElementById("profile-slot");
-        if (!slot) return;
-        const imgs = media.filter((m) => m.slug === slug);
-        const gallery = imgs.length
-          ? `<details class="profile-section" open><summary>🖼️ Hình ảnh (${imgs.length})</summary>
-              <div class="media-gallery">${imgs.map(mediaImgHtml).join("")}</div>
+    // HAI PHA. Trước đây một Promise.all gộp cả 4 nguồn, nên nội dung chính của
+    // trang tỉnh phải ĐỢI 8 file văn thơ (~540 KB) tải xong mới hiện — đúng chỗ
+    // người dùng thấy lag khi mở mục. Giờ hồ sơ + ảnh lên màn ngay; văn thơ và
+    // nhân vật 3D nối vào sau, cùng chạy song song nên tổng thời gian không tăng.
+    const pha1 = Promise.all([loadProfile(name), loadMedia()]);
+    const pha2 = Promise.all([loadLiterature(), loadFigures()]);
+
+    void pha1.then(([profile, media]) => {
+      const slot = document.getElementById("profile-slot");
+      if (!slot) return;
+      const imgs = media.filter((m) => m.slug === slug);
+      const gallery = imgs.length
+        ? `<details class="profile-section" open><summary>🖼️ Hình ảnh (${imgs.length})</summary>
+            <div class="media-gallery">${imgs.map(mediaImgHtml).join("")}</div>
+           </details>`
+        : "";
+      slot.innerHTML =
+        (profile
+          ? profileHtml(profile)
+          : `<p class="muted coming-soon">Hồ sơ bách khoa đầy đủ của tỉnh này đang được biên soạn.</p>`) +
+        gallery +
+        `<div id="profile-them" class="profile-them" aria-live="polite"></div>`;
+    });
+
+    // Chờ CẢ pha 1 để chắc chắn #profile-them đã có trong DOM — pha 2 về trước
+    // pha 1 là chuyện hoàn toàn có thể xảy ra khi văn thơ đã nằm trong cache.
+    void Promise.all([pha1, pha2]).then(([, [lib, figures]]) => {
+      const them = document.getElementById("profile-them");
+      if (!them) return;
+      const figs = figures.filter((f) => f.lien_quan_tinh.includes(slug));
+      const figuresSection = figs.length
+        ? `<details class="profile-section" open><summary>🗿 Nhân vật lịch sử — mô hình 3D (${figs.length})</summary>
+            ${figs.map(figureCardHtml).join("")}
+           </details>`
+        : "";
+      const poems = [...lib.poems, ...lib.hcmWorks, ...lib.aboutHcm].filter((p) =>
+        p.lien_quan_tinh.includes(slug),
+      );
+      const anecdotes = lib.anecdotes.filter((a) => a.lien_quan_tinh.includes(slug));
+      const caDao = lib.caDao.filter((c) => c.lien_quan_tinh.includes(slug));
+      const baiHat = lib.baiHat.filter((b) => b.lien_quan_tinh.includes(slug));
+      const related =
+        poems.length || anecdotes.length || caDao.length || baiHat.length
+          ? `<details class="profile-section" open><summary>📖 Văn thơ, ca dao & bài hát gắn với vùng đất này</summary>
+              ${poems.map(poemHtml).join("")}${anecdotes.map(anecdoteHtml).join("")}${caDao
+                .map(caDaoHtml)
+                .join("")}${baiHat.map(baiHatHtml).join("")}
              </details>`
           : "";
-        const figs = figures.filter((f) => f.lien_quan_tinh.includes(slug));
-        const figuresSection = figs.length
-          ? `<details class="profile-section" open><summary>🗿 Nhân vật lịch sử — mô hình 3D (${figs.length})</summary>
-              ${figs.map(figureCardHtml).join("")}
-             </details>`
-          : "";
-        const poems = [...lib.poems, ...lib.hcmWorks, ...lib.aboutHcm].filter(
-          (p) => p.lien_quan_tinh.includes(slug),
-        );
-        const anecdotes = lib.anecdotes.filter((a) =>
-          a.lien_quan_tinh.includes(slug),
-        );
-        const caDao = lib.caDao.filter((c) => c.lien_quan_tinh.includes(slug));
-        const baiHat = lib.baiHat.filter((b) => b.lien_quan_tinh.includes(slug));
-        const related =
-          poems.length || anecdotes.length || caDao.length || baiHat.length
-            ? `<details class="profile-section" open><summary>📖 Văn thơ, ca dao & bài hát gắn với vùng đất này</summary>
-                ${poems.map(poemHtml).join("")}${anecdotes.map(anecdoteHtml).join("")}${caDao
-                  .map(caDaoHtml)
-                  .join("")}${baiHat.map(baiHatHtml).join("")}
-               </details>`
-            : "";
-        slot.innerHTML =
-          (profile
-            ? profileHtml(profile)
-            : `<p class="muted coming-soon">Hồ sơ bách khoa đầy đủ của tỉnh này đang được biên soạn.</p>`) +
-          gallery +
-          figuresSection +
-          related;
-        // Nạp lười mô hình 3D nhân vật khi người dùng mở từng thẻ.
-        slot.querySelectorAll<HTMLDetailsElement>("details.fig3d").forEach((d) => {
-          d.addEventListener("toggle", () => {
-            const host = d.querySelector<HTMLElement>(".fig3d-stage");
-            const id = d.dataset.figure;
-            if (d.open && host && id) void mountFigureInto(host, id);
-          });
+      them.innerHTML = figuresSection + related;
+      // Nạp lười mô hình 3D nhân vật khi người dùng mở từng thẻ.
+      them.querySelectorAll<HTMLDetailsElement>("details.fig3d").forEach((d) => {
+        d.addEventListener("toggle", () => {
+          const host = d.querySelector<HTMLElement>(".fig3d-stage");
+          const id = d.dataset.figure;
+          if (d.open && host && id) void mountFigureInto(host, id);
         });
-      },
-    );
+      });
+    });
   } else {
     const slot = document.getElementById("profile-slot");
     if (slot) slot.innerHTML = "";
