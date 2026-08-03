@@ -1384,13 +1384,29 @@ body.kid-mode #topbar {
 
 /* Control lớp bản đồ — nhóm gập được, panel không tràn màn hình (#1) */
 #layer-control {
-  padding: 0.8rem 0.9rem;
+  padding: 0.8rem 0.9rem 0;
   font-size: var(--co-sm);
   /* Trừ thêm ~4.75rem cho chiều cao #timeline-bar để panel không tràn xuống che
      dòng thời gian (#2). */
   max-height: calc(100vh - var(--panel-top) - 4.75rem);
+  /* Hết lag khi kéo danh sách lớp (2026-08-03). Hai nguyên nhân cộng lại:
+     1. Hai vùng cuộn LỒNG NHAU (#layer-control và .lc-overlays) — con lăn phải
+        chọn vùng nào ăn, chạm mép vùng trong lại nhảy sang vùng ngoài.
+     2. Chính phần tử cuộn mang backdrop-filter: blur(14px). Mỗi khung hình
+        cuộn buộc trình duyệt lấy mẫu và làm mờ lại toàn bộ nền bản đồ sau
+        panel — chi phí theo diện tích panel, mỗi frame.
+     Giữ blur ở KHUNG (đứng yên, ảnh mờ dùng lại được), cho THÂN cuộn. */
+  overflow: hidden;
+}
+#lc-than {
+  max-height: calc(100vh - var(--panel-top) - 8.5rem);
   overflow-y: auto;
   overscroll-behavior: contain;
+  /* Cắt chuỗi ảnh hưởng layout/paint ra ngoài — cuộn 34 lớp không bắt trình
+     duyệt tính lại phần còn lại của trang. */
+  contain: content;
+  padding-bottom: 0.7rem;
+  padding-right: 0.15rem;
 }
 #layer-control .lc-head {
   margin-bottom: 0.5rem;
@@ -1441,10 +1457,9 @@ body.kid-mode #topbar {
   gap: 0.32rem;
   padding: 0.1rem 0 0.5rem;
 }
-/* Danh sách lớp phủ dài → cuộn riêng, giữ panel gọn */
+/* Danh sách lớp phủ dài → để #lc-than cuộn, KHÔNG mở vùng cuộn thứ hai ở đây
+   (xem ghi chú lag ở #layer-control). */
 #layer-control .lc-overlays {
-  max-height: 46vh;
-  overflow-y: auto;
   padding-right: 0.2rem;
 }
 /* Cụm chủ đề (accordion lồng) trong «Lớp phủ» — Phase 3 P3.4 */
@@ -1479,11 +1494,18 @@ body.kid-mode #topbar {
 }
 #layer-control label {
   display: flex;
-  align-items: center;
+  /* Neo lên ĐẦU, không phải giữa: tên lớp dài xuống 2–3 dòng (rõ nhất ở chế
+     độ trẻ em, chữ to hơn) thì căn giữa đẩy ô tick xuống ngang dòng thứ hai,
+     nhìn như nó thuộc về dòng đó. */
+  align-items: flex-start;
   gap: 0.5rem;
   padding: 0.24rem 0.42rem;
   border-radius: var(--bo-nho);
   /* Không chuyển tiếp background — xem ghi chú ở #topbar-nav button. */
+}
+#layer-control label input {
+  flex: 0 0 auto; /* ô tick không được co lại khi chữ dài */
+  margin-top: 0.2rem;
 }
 #layer-control label:hover {
   background: var(--lop-brand-nhe);
@@ -1567,6 +1589,13 @@ input[type="range"] {
   padding: 0.7rem 0.85rem !important;
   border: 1px solid var(--vien-kinh);
   font-family: var(--font);
+  /* Không tràn xuống dưới màn hình nữa (2026-08-03). Popup di tích có ảnh +
+     mô tả + nguồn đo được 692px trong khung 730px — phần cuối rơi khỏi màn
+     hình và không có cách nào cuộn tới. MapLibre tự chọn mỏ neo trên/dưới
+     nhưng KHÔNG giới hạn chiều cao nội dung. */
+  max-height: min(52vh, 420px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 .maplibregl-popup-tip {
   border-top-color: var(--mat) !important;
@@ -1731,10 +1760,19 @@ input[type="range"] {
 #vn-search-input::placeholder {
   color: var(--vien-nhan-ro);
 }
+/* Bấm vào ô tìm không loé trắng nữa (2026-08-03). Bản cũ đổi hẳn sang nền
+   --mat (gần trắng) + chữ --chu: trên topbar tối đó là một mảng trắng nháy
+   lên giữa thanh, chói mắt. Giữ nền tối, chỉ nâng tương phản viền và thêm
+   quầng sáng — vẫn thấy rõ ô nào đang nhập mà không đổi độ sáng cả vùng. */
 #vn-search-input:focus {
-  background: var(--mat);
-  color: var(--chu);
+  background: color-mix(in srgb, var(--mat) 16%, transparent);
+  color: var(--chu-tren-nghich);
+  border-color: var(--nhan-sang);
+  box-shadow: 0 0 0 3px var(--glow-nhan);
   outline: none; /* :focus-visible bên dưới vẫn vẽ vòng focus riêng khi điều hướng bàn phím */
+}
+#vn-search-input:focus::placeholder {
+  color: color-mix(in srgb, var(--chu-tren-nghich) 65%, transparent);
 }
 #vn-search-listbox {
   position: absolute;

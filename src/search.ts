@@ -42,7 +42,7 @@
  * trong file này vì cần chạy trong trình duyệt thật.
  * ============================================================================
  */
-import maplibregl from "maplibre-gl";
+import { moPopup } from "./popup";
 import type { Map as MlMap } from "maplibre-gl";
 
 /** Cấu hình tối thiểu 1 lớp phủ mà module này cần — main truyền OVERLAYS
@@ -257,13 +257,13 @@ export function initSearch(
     // (OverlayConf.popup) vì chỉ mục tìm kiếm cố tình bỏ mo_ta/anh/nguon để
     // nhẹ bộ nhớ (yêu cầu bắt buộc), nên không còn đủ dữ liệu để dựng lại
     // popup gốc. Người dùng cần xem đầy đủ thì bấm thẳng vào điểm trên bản đồ.
-    new maplibregl.Popup({ offset: 10, maxWidth: "280px" })
-      .setLngLat([item.lon, item.lat])
-      .setHTML(
-        `<strong>${escHtml(item.overlayIcon)} ${escHtml(item.ten)}</strong><br/>` +
-          `<span style="font-size:0.82em;color:#57534e">${escHtml(item.diaDiem)}</span>`,
-      )
-      .addTo(map);
+    moPopup(
+      map,
+      [item.lon, item.lat],
+      `<strong>${escHtml(item.overlayIcon)} ${escHtml(item.ten)}</strong><br/>` +
+        `<span style="font-size:0.82em;color:#57534e">${escHtml(item.diaDiem)}</span>`,
+      { maxWidth: "280px" },
+    );
   }
 
   async function ensureIndex(): Promise<void> {

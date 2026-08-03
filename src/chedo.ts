@@ -7,6 +7,13 @@
 
 const KHOA = "bkvn.che-do";
 
+/**
+ * Phát ra mỗi lần đổi chế độ, `detail` là chế độ MỚI. Cần vì có chữ KHÔNG đổi
+ * được bằng CSS: ghi chú pháp lý về cương vực viết cho người lớn thì trẻ em
+ * không hiểu, phải thay hẳn câu chứ không phải đổi cỡ chữ hay màu.
+ */
+export const SU_KIEN_DOI_CHE_DO = "bkvn:doi-che-do";
+
 export type CheDo = "nguoi-lon" | "tre-em";
 
 const HOP_LE: readonly CheDo[] = ["nguoi-lon", "tre-em"] as const;
@@ -46,6 +53,7 @@ function ap(che: CheDo, dangChay: boolean): void {
   goc.dataset.cheDo = che;
   const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
   if (meta) meta.content = MAU_THANH[che];
+  document.dispatchEvent(new CustomEvent(SU_KIEN_DOI_CHE_DO, { detail: che }));
   if (!dangChay) return;
   // Hai khung hình để chắc chắn kiểu dáng mới đã được tính xong. setTimeout là
   // lưới an toàn: tab chạy nền bị hãm rAF, không có nó thì cờ kẹt lại vĩnh viễn

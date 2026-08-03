@@ -6,9 +6,11 @@ import type {
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
-import { apCheDoDaLuu, initCheDo } from "./chedo";
+import { apCheDoDaLuu, initCheDo, cheDoHienTai, SU_KIEN_DOI_CHE_DO } from "./chedo";
+import type { CheDo } from "./chedo";
 import { gomNutTopbar } from "./topbar";
 import { registerPanel, showOnly, hidePanel, hideAllPanels } from "./panels";
+import { moPopup, dongPopup } from "./popup";
 import { initSearch } from "./search";
 import { initGame } from "./game";
 import { initQuiz } from "./quiz";
@@ -190,6 +192,11 @@ const map = new maplibregl.Map({
   },
   bounds: VIETNAM_BOUNDS,
   fitBoundsOptions: { padding: 24 },
+  // Ghi công thu gọn: mặc định MapLibre trải nguyên câu «© OpenStreetMap
+  // contributors © CARTO» dọc mép dưới, luôn nằm đó suốt phiên. Dạng compact
+  // rút về một nút ⓘ, bấm ra vẫn đủ chữ — đây là dạng ODbL/CARTO chấp nhận,
+  // KHÔNG được bỏ hẳn ghi công.
+  attributionControl: { compact: true },
 });
 
 // Nút zoom/la bàn ở góc PHẢI-DƯỚI — góc duy nhất không panel nào chiếm.
@@ -508,12 +515,11 @@ function initCuongVuc(): void {
         } catch {
           /* giữ nguyên chuỗi */
         }
-        new maplibregl.Popup({ offset: 10, maxWidth: "320px" })
-          .setLngLat(e.lngLat)
-          .setHTML(
-            `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Phỏng dựng học thuật có nguồn — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
-          )
-          .addTo(map);
+        moPopup(
+          map,
+          e.lngLat,
+          `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Phỏng dựng học thuật có nguồn — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+        );
       });
       // Popup cho điểm huyền sử (Xích Quỷ) — nhấn rõ KHÔNG phải sử thật.
       map.on("click", "cuong-vuc-diem", (e) => {
@@ -527,12 +533,11 @@ function initCuongVuc(): void {
         } catch {
           /* giữ nguyên chuỗi */
         }
-        new maplibregl.Popup({ offset: 10, maxWidth: "320px" })
-          .setLngLat(e.lngLat)
-          .setHTML(
-            `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Huyền sử / biểu tượng — KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
-          )
-          .addTo(map);
+        moPopup(
+          map,
+          e.lngLat,
+          `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Huyền sử / biểu tượng — KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+        );
       });
       for (const lyr of ["cuong-vuc-fill", "cuong-vuc-diem"]) {
         map.on("mouseenter", lyr, () => {
@@ -955,6 +960,14 @@ map.on("load", () => {
     },
   });
 
+  // MapLibre mở sẵn ghi công ở dạng compact rồi mới thu lại khi người dùng chạm
+  // vào bản đồ lần đầu. Nghĩa là câu «© OpenStreetMap contributors © CARTO» vẫn
+  // nằm chình ình suốt lúc xem — thu ngay để chỉ còn nút ⓘ. Ghi công KHÔNG mất:
+  // bấm ⓘ ra đủ chữ, và NGUON_DU_LIEU trong hồ sơ tỉnh cũng liệt kê lại nguồn nền.
+  document
+    .querySelector(".maplibregl-ctrl-attrib")
+    ?.classList.remove("maplibregl-compact-show");
+
   initSongNui();
   initCuongVuc();
   initNamTien();
@@ -1185,6 +1198,11 @@ function setPeriod(i: number): void {
   document
     .querySelectorAll<HTMLInputElement>("#layer-control input[name=period]")
     .forEach((r) => (r.checked = Number(r.value) === i));
+  // Ô chọn thời kỳ là <select>, KHÔNG khớp bộ chọn `input[name=period]` ở trên.
+  // Vì thế kéo thanh trượt dưới đáy đổi bản đồ nhưng ô chọn vẫn đứng nguyên ở
+  // thời kỳ cũ — hai bộ điều khiển cùng một thứ mà chỉ đồng bộ một chiều.
+  const oChon = document.getElementById("lc-period") as HTMLSelectElement | null;
+  if (oChon && Number(oChon.value) !== i) oChon.value = String(i);
 }
 
 function buildTimeline(): void {
@@ -1853,12 +1871,11 @@ function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
     const f = e.features?.[0];
     if (!f) return;
     const p = f.properties as unknown as OverlayItem;
-    new maplibregl.Popup({ offset: 10 })
-      .setLngLat(e.lngLat)
-      .setHTML(
-        `${conf.popup(p)}<br/><span style="color:#78716c;font-size:0.75rem">Nguồn: ${conf.nguon}</span>`,
-      )
-      .addTo(map);
+    moPopup(
+      map,
+      e.lngLat,
+      `${conf.popup(p)}<br/><span style="color:#78716c;font-size:0.75rem">Nguồn: ${conf.nguon}</span>`,
+    );
   });
   map.on("mouseenter", layerId, () => {
     map.getCanvas().style.cursor = "pointer";
@@ -2024,15 +2041,15 @@ async function applyStreets(on: boolean): Promise<void> {
       Number(p.osm_sai_dau) === 1
         ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠ OSM gõ sai dấu — đã nối theo nguồn đã xác minh</span>`
         : "";
-    new maplibregl.Popup({ offset: 10, maxWidth: "300px" })
-      .setLngLat(e.lngLat)
-      .setHTML(
-        `<strong>Đường ${esc(String(p.ten_duong))}</strong><br/>` +
-          `Đặt theo danh nhân: <b>${esc(String(p.danh_nhan))}</b><br/>` +
-          `<span style="color:#57534e;font-size:0.8rem">${esc(String(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
-          `<span style="color:#78716c;font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
-      )
-      .addTo(map);
+    moPopup(
+      map,
+      e.lngLat,
+      `<strong>Đường ${esc(String(p.ten_duong))}</strong><br/>` +
+        `Đặt theo danh nhân: <b>${esc(String(p.danh_nhan))}</b><br/>` +
+        `<span style="color:#57534e;font-size:0.8rem">${esc(String(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
+        `<span style="color:#78716c;font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
+      { maxWidth: "300px" },
+    );
   };
   for (const lid of [layerId, iconLayerId]) {
     map.on("click", lid, onStreetClick);
@@ -2089,7 +2106,7 @@ function buildLayerControl(): void {
           (p, i) => `<option value="${i}"${i === currentPeriod ? " selected" : ""}>${p.nhan}</option>`,
         ).join("")}
       </select>
-      <p class="lc-note">⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).</p>
+      <p class="lc-note" id="lc-ghi-chu"></p>
     </div>
     <details class="lc-sec" open>
       <summary>📌 Lớp phủ <span class="lc-badge">${OVERLAYS.length}</span></summary>
@@ -2157,6 +2174,24 @@ function buildLayerControl(): void {
     if (t.name === "taberd-opacity") setTaberdOpacity(Number(t.value));
   });
   document.getElementById("app")?.appendChild(el);
+  capNhatGhiChuCuongVuc();
+  document.addEventListener(SU_KIEN_DOI_CHE_DO, capNhatGhiChuCuongVuc);
+}
+
+// Ghi chú pháp lý về cương vực cổ. Bản cho người lớn dùng đúng ngôn ngữ hồ sơ
+// ("phỏng dựng xấp xỉ", "bản đồ chủ quyền") — trẻ em đọc không ra nghĩa gì, mà
+// đây lại là câu KHÔNG được phép hiểu sai. Nên viết hẳn hai bản, giữ nguyên hai
+// điều bắt buộc: đây là phỏng dựng, và nó KHÔNG phải bản đồ chủ quyền.
+const GHI_CHU_CUONG_VUC: Record<CheDo, string> = {
+  "nguoi-lon":
+    "⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).",
+  "tre-em":
+    "⚠️ Hình nước ta thời xưa chỉ là bản vẽ phỏng đoán cho dễ hình dung, KHÔNG phải bản đồ biên giới chính thức. Từ Nam Việt đến Đại Nam mới có tên nước thôi — đường biên giới thật thế nào thì các nhà sử học vẫn đang tra cứu.",
+};
+
+function capNhatGhiChuCuongVuc(): void {
+  const p = document.getElementById("lc-ghi-chu");
+  if (p) p.textContent = GHI_CHU_CUONG_VUC[cheDoHienTai()];
 }
 
 // ---------------------------------------------------------------------------
@@ -2357,6 +2392,9 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
       <summary>📚 Nguồn dữ liệu bản đồ</summary>
       <ul>${NGUON_DU_LIEU.map((s) => `<li>${s}</li>`).join("")}</ul>
     </details>`;
+  // Bấm vào tỉnh mở hồ sơ, nhưng cú bấm đó rơi vào lớp era chứ không phải lớp
+  // phủ nên popup của điểm vừa xem vẫn treo trên bản đồ, đè lên chính tỉnh đó.
+  dongPopup();
   panel.hidden = false;
 
   // R7 — nút chuyển đổi giữa bản đồ toàn quốc và chế độ focus 1 tỉnh.

@@ -497,3 +497,57 @@ h4 {
   accent-color: var(--nhan-sang);
   cursor: pointer;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ĐỢT KHẢO SÁT 2026-08-03 — chủ dự án chỉ tận nơi từng chỗ chướng mắt
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Logo thay emoji cờ ─────────────────────────────────────────────── */
+#topbar h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+}
+#logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  line-height: 0;
+  /* Bóng nhẹ để khối đỏ của logo tách khỏi nền topbar cùng tông đỏ. */
+  filter: drop-shadow(0 1px 2px var(--bong-topbar));
+}
+#topbar .subtitle {
+  /* Phụ đề là thứ đầu tiên nên biến mất khi hết chỗ, không phải tên sản phẩm. */
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Người lớn: sơn mài đỏ, sao thếp vàng — đúng lá cờ, đúng bảng màu chủ đạo. */
+#logo .logo-nen {
+  fill: var(--brand);
+  stroke: var(--nhan-sang);
+}
+#logo .logo-sao {
+  fill: var(--nhan-sang);
+}
+/* Trẻ em: đảo lại thành nền trắng, sao cam. Giữ nguyên như người lớn thì khối
+   cam của logo chìm nghỉm vào chính dải cam–đỏ–tím của topbar. */
+:root[data-che-do="tre-em"] #logo .logo-nen {
+  fill: var(--mat);
+  stroke: var(--mat);
+}
+:root[data-che-do="tre-em"] #logo .logo-sao {
+  fill: var(--brand);
+}
+
+/* Tên thời kỳ dài hơn bề ngang panel — cắt bằng "…" thay vì đè lên mũi tên. */
+#lc-period {
+  text-overflow: ellipsis;
+}
+
+/* Phần còn lại của đợt khảo sát (ô tìm kiếm, popup, vùng cuộn bảng lớp) nằm
+   trong style.css cạnh quy tắc gốc của chúng: style.css @import file này ở
+   dòng 1, nên quy tắc cùng độ đặc hiệu viết ở đây LUÔN THUA. Sửa tại chỗ vẫn
+   giữ đúng giao kèo "giá trị thẩm mỹ đi qua biến" — chúng dùng var(), không
+   phải hex. */

@@ -15,7 +15,19 @@
   <body>
     <div id="app">
       <header id="topbar">
-        <h1>🇻🇳 Bách khoa Việt Nam <span class="subtitle">không gian – thời gian</span></h1>
+        <h1>
+          <!-- Trước đây là emoji cờ 🇻🇳. Windows không có glyph cờ nên nó rơi về
+               hai chữ "VN" bé xíu — trông như lỗi font, không như logo. SVG nội
+               tuyến dùng var(--brand)/var(--nhan-sang) nên tự đổi theo chế độ. -->
+          <span id="logo" aria-hidden="true"
+            ><svg viewBox="0 0 40 40" width="30" height="30" focusable="false">
+              <rect class="logo-nen" x="1.6" y="1.6" width="36.8" height="36.8" rx="10.5"
+                stroke-width="1.7" />
+              <polygon class="logo-sao"
+                points="20,8 22.59,15.44 30.46,15.6 24.19,20.36 26.47,27.9 20,23.4 13.54,27.9 15.82,20.36 9.54,15.6 17.41,15.44" /></svg
+          ></span>
+          Bách khoa Việt Nam <span class="subtitle">không gian – thời gian</span>
+        </h1>
         <nav id="topbar-nav">
           <button id="threed-btn" type="button" title="Bật/tắt chế độ bản đồ 3D">⛰️ 3D</button>
           <button id="story-btn" type="button">🐉 Thiếu nhi</button>

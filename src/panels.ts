@@ -16,6 +16,8 @@
 // `el.hidden = true` gõ tay trong DevTools. Khi các module kia di trú xong,
 // cơ chế này vẫn đúng, không phải gỡ bỏ.
 
+import { dongPopup } from "./popup";
+
 /**
  * Danh sách CHÍNH THỨC mọi panel nổi. Kiểu union bên dưới khiến gõ sai id bị
  * `tsc` bắt ngay lúc biên dịch thay vì âm thầm không ẩn được panel nào.
@@ -68,8 +70,14 @@ export function hidePanel(id: PanelId): void {
   if (node && !node.hidden) node.hidden = true;
 }
 
-/** Ẩn TẤT CẢ panel rồi hiện đúng một panel. */
+/**
+ * Ẩn TẤT CẢ panel rồi hiện đúng một panel.
+ *
+ * Đóng luôn popup bản đồ: `closeOnClick` của MapLibre chỉ bắt cú bấm rơi vào
+ * canvas, nên mở panel bằng nút topbar sẽ để popup cũ nằm lại đè lên bản đồ.
+ */
 export function showOnly(id: PanelId): void {
+  dongPopup();
   for (const other of PANEL_IDS) if (other !== id) hidePanel(other);
   const node = el(id);
   if (node) node.hidden = false;
@@ -77,5 +85,6 @@ export function showOnly(id: PanelId): void {
 
 /** Ẩn tất cả panel — dùng khi mở một màn không có panel riêng. */
 export function hideAllPanels(): void {
+  dongPopup();
   for (const id of PANEL_IDS) hidePanel(id);
 }
