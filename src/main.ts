@@ -803,95 +803,119 @@ function renderNamTienPanel(): void {
     <p class="muted">⚠️ Sơ đồ hoá ở mức tỉnh; tỉnh ghép gán theo mốc sáp nhập sớm nhất (phần cao nguyên trên thực tế muộn hơn).</p>`;
 }
 
+
+// ---------------------------------------------------------------------------
+// Nạp LƯỜI ranh giới một era. Trước đây map.on("load") addSource cho cả 3 era
+// vô điều kiện — 4,70 MB GeoJSON tải ngay lúc mở trang khi chỉ cần 1,17 MB.
+//
+// 🔴 beforeId là chuyện chủ quyền, không phải thứ tự vẽ cho đẹp: lớp era phải
+// nằm DƯỚI "chu-quyen-labels". Bản cũ tạo mọi era TRƯỚC nhãn chủ quyền nên
+// đúng thứ tự một cách tình cờ. Nạp lười thì era sinh ra SAU, và nếu thêm
+// không có beforeId thì MapLibre chèn lên trên cùng — nhãn Hoàng Sa và Trường
+// Sa bị lớp tỉnh phủ mất.
+// ---------------------------------------------------------------------------
+const eraDaNap = new Set<string>();
+
+function ensureEra(era: Era): void {
+  if (eraDaNap.has(era.id)) return;
+  eraDaNap.add(era.id);
+
+  map.addSource(era.id, {
+    type: "geojson",
+    data: `${import.meta.env.BASE_URL}${era.file}`,
+    generateId: true,
+  });
+
+  const duoiNhanChuQuyen = map.getLayer("chu-quyen-labels") ? "chu-quyen-labels" : undefined;
+  const themLop = (spec: maplibregl.LayerSpecification): void => {
+    map.addLayer(spec, duoiNhanChuQuyen);
+  };
+
+  themLop({
+    id: `${era.id}-fill`,
+    type: "fill",
+    source: era.id,
+    layout: { visibility: "none" },
+    paint: {
+      "fill-color": eraColorExpr(era),
+      "fill-opacity": [
+        "case",
+        ["boolean", ["feature-state", "hover"], false],
+        0.55,
+        0.25,
+      ],
+    },
+  });
+  themLop({
+    id: `${era.id}-line`,
+    type: "line",
+    source: era.id,
+    layout: { visibility: "none" },
+    paint: { "line-color": "#92400e", "line-width": 1 },
+  });
+  themLop({
+    id: `${era.id}-3d`,
+    type: "fill-extrusion",
+    source: era.id,
+    layout: { visibility: "none" },
+    paint: {
+      "fill-extrusion-color": eraColorExpr(era),
+      "fill-extrusion-height": HEIGHT_3D,
+      "fill-extrusion-base": 0,
+      "fill-extrusion-opacity": 0.85,
+    },
+  });
+  // Nhãn tên tỉnh — TỰ RENDER từ GeoJSON của dự án (không mở nhãn basemap để
+  // giữ chủ quyền). Ẩn mặc định, bật qua điều khiển bản đồ. Đặt DƯỚI nhãn
+  // chủ quyền (thêm trước lớp chu-quyen-labels bên dưới).
+  themLop({
+    id: `${era.id}-label`,
+    type: "symbol",
+    source: era.id,
+    layout: {
+      visibility: "none",
+      "text-field": ["coalesce", ["get", era.nameKey], ["get", "ten"]],
+      "text-font": ["Open Sans Semibold"],
+      "text-size": ["interpolate", ["linear"], ["zoom"], 4, 9, 8, 13],
+      "text-max-width": 8,
+    },
+    paint: {
+      "text-color": "#44403c",
+      "text-halo-color": "#ffffff",
+      "text-halo-width": 1.4,
+    },
+  });
+
+  for (const layerId of [`${era.id}-fill`, `${era.id}-3d`]) {
+    map.on("mousemove", layerId, (e) => {
+      map.getCanvas().style.cursor = "pointer";
+      const f = e.features?.[0];
+      if (!f) return;
+      if (hoveredId !== undefined)
+        map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
+      hoveredId = f.id;
+      map.setFeatureState({ source: era.id, id: hoveredId }, { hover: true });
+    });
+    map.on("mouseleave", layerId, () => {
+      map.getCanvas().style.cursor = "";
+      if (hoveredId !== undefined)
+        map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
+    hoveredId = undefined;
+    });
+    map.on("click", layerId, (e) => {
+      const f = e.features?.[0];
+      if (!f) return;
+      if (is3D) map.easeTo({ center: e.lngLat, duration: 800 });
+      showProvincePanel(f, era);
+    });
+  }
+}
+
 map.on("load", () => {
   // Đăng ký icon emoji cho các lớp phủ ngay khi bản đồ sẵn sàng, độc lập với
   // việc bật/tắt lớp phủ nào (lazy-load dữ liệu vẫn xảy ra riêng trong toggleOverlay).
   registerOverlayIcons();
-  for (const era of ERAS) {
-    map.addSource(era.id, {
-      type: "geojson",
-      data: `${import.meta.env.BASE_URL}${era.file}`,
-      generateId: true,
-    });
-    map.addLayer({
-      id: `${era.id}-fill`,
-      type: "fill",
-      source: era.id,
-      layout: { visibility: "none" },
-      paint: {
-        "fill-color": eraColorExpr(era),
-        "fill-opacity": [
-          "case",
-          ["boolean", ["feature-state", "hover"], false],
-          0.55,
-          0.25,
-        ],
-      },
-    });
-    map.addLayer({
-      id: `${era.id}-line`,
-      type: "line",
-      source: era.id,
-      layout: { visibility: "none" },
-      paint: { "line-color": "#92400e", "line-width": 1 },
-    });
-    map.addLayer({
-      id: `${era.id}-3d`,
-      type: "fill-extrusion",
-      source: era.id,
-      layout: { visibility: "none" },
-      paint: {
-        "fill-extrusion-color": eraColorExpr(era),
-        "fill-extrusion-height": HEIGHT_3D,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.85,
-      },
-    });
-    // Nhãn tên tỉnh — TỰ RENDER từ GeoJSON của dự án (không mở nhãn basemap để
-    // giữ chủ quyền). Ẩn mặc định, bật qua điều khiển bản đồ. Đặt DƯỚI nhãn
-    // chủ quyền (thêm trước lớp chu-quyen-labels bên dưới).
-    map.addLayer({
-      id: `${era.id}-label`,
-      type: "symbol",
-      source: era.id,
-      layout: {
-        visibility: "none",
-        "text-field": ["coalesce", ["get", era.nameKey], ["get", "ten"]],
-        "text-font": ["Open Sans Semibold"],
-        "text-size": ["interpolate", ["linear"], ["zoom"], 4, 9, 8, 13],
-        "text-max-width": 8,
-      },
-      paint: {
-        "text-color": "#44403c",
-        "text-halo-color": "#ffffff",
-        "text-halo-width": 1.4,
-      },
-    });
 
-    for (const layerId of [`${era.id}-fill`, `${era.id}-3d`]) {
-      map.on("mousemove", layerId, (e) => {
-        map.getCanvas().style.cursor = "pointer";
-        const f = e.features?.[0];
-        if (!f) return;
-        if (hoveredId !== undefined)
-          map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
-        hoveredId = f.id;
-        map.setFeatureState({ source: era.id, id: hoveredId }, { hover: true });
-      });
-      map.on("mouseleave", layerId, () => {
-        map.getCanvas().style.cursor = "";
-        if (hoveredId !== undefined)
-          map.setFeatureState({ source: era.id, id: hoveredId }, { hover: false });
-      hoveredId = undefined;
-      });
-      map.on("click", layerId, (e) => {
-        const f = e.features?.[0];
-        if (!f) return;
-        if (is3D) map.easeTo({ center: e.lngLat, duration: 800 });
-        showProvincePanel(f, era);
-      });
-    }
-  }
 
   // Nhãn chủ quyền tiếng Việt — vẽ SAU mọi lớp era để luôn nằm trên cùng,
   // hiển thị ở mọi thời kỳ và cả hai chế độ 2D/3D.
@@ -1127,7 +1151,11 @@ initCheDo();
 // KHÔNG tự đặt nhãn/thanh trượt — điều phối bởi setPeriod().
 function setEra(index: number): void {
   currentEra = index;
+  // Nạp era đang bật (nếu chưa). index = -1 nghĩa là ẩn hết, không nạp gì.
+  if (index >= 0 && ERAS[index]) ensureEra(ERAS[index]);
   ERAS.forEach((era, i) => {
+    // Era chưa nạp thì chưa có lớp nào để ẩn/hiện — bỏ qua, không phải lỗi.
+    if (!eraDaNap.has(era.id)) return;
     const active = i === index;
     map.setLayoutProperty(`${era.id}-fill`, "visibility", active && !is3D ? "visible" : "none");
     map.setLayoutProperty(`${era.id}-line`, "visibility", active && !is3D ? "visible" : "none");

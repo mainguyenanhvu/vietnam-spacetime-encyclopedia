@@ -278,7 +278,14 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
   };
 
   // Ocean chèn ngay dưới lớp tỉnh đầu tiên; landmark thêm lên trên cùng.
-  const firstEra = map.getLayer("era-phapthuoc-fill") ? "era-phapthuoc-fill" : undefined;
+  // Dò lớp era ĐANG CÓ theo đúng thứ tự vẽ thật, không hard-code một era.
+  // Trước đây ghim "era-phapthuoc-fill": đúng một cách tình cờ vì map.on("load")
+  // tạo cả 3 era ngay lúc mở trang. Từ khi era nạp lười, lớp đó thường CHƯA tồn
+  // tại → beforeId thành undefined → MapLibre chèn lớp biển lên TRÊN CÙNG, phủ
+  // kín đất liền ở mọi thời kỳ trừ Pháp thuộc.
+  const firstEra = map
+    .getStyle()
+    .layers.find((l) => /^era-.+-fill$/.test(l.id))?.id;
   map.addLayer(oceanLayer, firstEra);
   map.addLayer(landmarkLayer);
 
