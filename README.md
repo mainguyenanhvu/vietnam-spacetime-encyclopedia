@@ -36,7 +36,7 @@ npm run build    # xuất ra dist/
 
 ## Đóng góp
 
-Mọi đóng góp nội dung phải kèm nguồn kiểm chứng được. Xem `vietnam-encyclopedia-plan.md` để biết lộ trình.
+Mọi đóng góp nội dung phải kèm nguồn kiểm chứng được. Xem `PLAN.md` để biết lộ trình.
 
 ## Giấy phép
 
