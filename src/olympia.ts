@@ -247,7 +247,21 @@ function startVcnv(): void {
         <input id="ol-kw" type="text" placeholder="Nhập từ khoá…" autocomplete="off" />
         <button type="submit">Đoán từ khoá</button>
       </form>
-      <div id="ol-feedback" aria-live="polite"></div>`;
+      <div id="ol-feedback" aria-live="polite"></div>
+      <button id="ol-vcnv-skip" class="ol-skip" type="button">Bỏ qua (0 điểm) →</button>`;
+
+    // Nút "Bỏ qua" phải nằm TRONG render(): mỗi lần mở thêm hàng ngang, render()
+    // gán lại c.innerHTML và xoá sạch con của c. Trước đây nút được appendChild
+    // một lần sau render() đầu tiên nên biến mất ngay lần mở gợi ý thứ nhất —
+    // người chơi kẹt lại vòng 2 nếu không đoán ra từ khoá.
+    document.getElementById("ol-vcnv-skip")?.addEventListener("click", () => {
+      if (solved) return;
+      solved = true;
+      const fb = document.getElementById("ol-feedback");
+      if (fb)
+        fb.innerHTML = `<p class="ol-verdict">Từ khoá là: <b>${esc(puzzle.tu_khoa)}</b></p>${sourceNote(puzzle.giai_thich, puzzle.nguon)}`;
+      startTangToc();
+    });
 
     document.getElementById("ol-open")?.addEventListener("click", () => {
       if (opened < puzzle.hang_ngang.length) opened += 1;
@@ -276,24 +290,6 @@ function startVcnv(): void {
     });
   };
   render();
-
-  // Cho phép "bỏ qua" sau khi mở hết mà vẫn chưa đoán được: nút xuất hiện khi hết hàng.
-  // (Từ khoá vẫn hiển thị trong phần giải thích khi sang vòng — nhưng để đơn giản,
-  //  người chơi luôn có thể tiếp tục bằng nút dưới đây.)
-  const skip = document.createElement("button");
-  skip.type = "button";
-  skip.id = "ol-vcnv-skip";
-  skip.className = "ol-skip";
-  skip.textContent = "Bỏ qua (0 điểm) →";
-  skip.addEventListener("click", () => {
-    if (solved) return;
-    const fb = document.getElementById("ol-feedback");
-    if (fb)
-      fb.innerHTML = `<p class="ol-verdict">Từ khoá là: <b>${esc(puzzle.tu_khoa)}</b></p>${sourceNote(puzzle.giai_thich, puzzle.nguon)}`;
-    solved = true;
-    startTangToc();
-  });
-  c.appendChild(skip);
 }
 
 // So khớp từ khoá không phân biệt hoa/thường và khoảng trắng thừa.
