@@ -113,6 +113,22 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 ### Lớp còn mỏng
 `khoa-bang-nam-trung-bo` (6) · `nghia-si-can-vuong` (9) · `me-vnah` (5) · `thanh-hoang-danh-than` (6) · `nha-the-thao-lich-su` (8, thiếu VĐV huy chương Olympic) · `danh-y-luong-y` (8, thiếu Tuệ Tĩnh và Hải Thượng Lãn Ông riêng) · `dich-gia-ngon-ngu-hoc` (9). Một phần có thể đã bù gián tiếp qua sóng sau — **đếm lại số hiện tại trước khi cử agent**. **M**
 
+### Thơ văn Hồ Chí Minh — bốn mục CỐ Ý không nạp, đã truy hai lượt (2026-08-04)
+
+Ghi ở đây để đừng ai đi tra lượt thứ ba rồi nạp bù. Hai lý do khác hẳn nhau:
+
+**Không xác nhận được TÁC GIẢ — đây mới là chỗ nghiêm trọng.**
+- `Dân cày` và `Công nhân` (báo Việt Nam Độc Lập, 1941). **Có nguyên văn** trên báo Cao Bằng (nguồn chính thống), nhưng trang đó ghi tác giả **«Khuyết danh»**. Đã dò chéo toàn bộ **88 bút danh** của Bác trên `tulieuvankien.dangcongsan.vn` — không bút danh nào gắn với hai bài này.
+- Giai đoạn đầu báo Việt Nam Độc Lập gần như một mình Bác viết, nên **rất có thể** là của Bác. Nhưng "rất có thể" không phải nguồn. Có văn bản mà không có quy thuộc thì vẫn là bịa quy thuộc — đúng bất biến §3 của dự án.
+- Muốn nạp thì phải có nguồn chính thống **nói thẳng** hai bài đó là của Hồ Chí Minh / một bút danh của Người. Đừng suy từ việc "báo ấy hầu như chỉ Bác viết".
+- Đối chiếu: `Phụ nữ` và `Trẻ con` ĐÃ nạp được, vì `tulieuvankien` xác nhận đích danh bút danh «Kim Oanh» (số 104, 1/9/1941) và «Bé Con» (số 106, 21/9/1941) ký dưới đúng hai bài đó.
+
+**Không tìm được nguyên văn trên nguồn chính thống.**
+- `Trẻ chăn trâu` (21/11/1942). Lượt đầu tưởng do công cụ chặn; lượt hai crawl thô vượt được lỗi redirect của `qdnd.vn` và thấy trang **thật sự chỉ có một câu giới thiệu podcast**, không có bài thơ. Đây là thiếu thật, không phải lỗi công cụ.
+- `Tầm hữu vị ngộ`. Chỉ có trên thivien.net và blog cá nhân — nguồn bị cấm.
+
+---
+
 ### Cần xác minh trạng thái, chưa rõ xong hay chưa
 - [ ] `docs/lich-su/expansion-thoigian-plan.md` 6 cell A–G (nữ tướng Hai Bà Trưng, Ngô–Đinh–Tiền Lê, Tây Sơn, thiền sư Lý–Trần, sứ thần, danh y cổ trung đại) — **file duy nhất không có bằng chứng trạng thái**. Đếm nội dung thật trong `danh-nhan-quan-su-co-trung-dai.json`, `thien-su-cao-tang.json`, `su-than-ngoai-giao.json`, `danh-y-luong-y.json`. **M**
 - [ ] `abc-tri-an-plan.md` mục "16 geocode flagged" **tự mâu thuẫn nội bộ**: dòng cuối ghi "chưa làm" nhưng nội dung trên cho thấy 13/16 là false-positive đã kết luận + 3/16 đã sửa = 16/16 xong. Xác nhận lại trước khi coi là việc còn treo. **S hoặc 0**
