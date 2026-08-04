@@ -202,15 +202,16 @@ Lần đầu kiểm link "bỏ qua" báo **hỏng**: link không vào khung hìn
 
 Chủ dự án: *"những bài thơ Bác viết vẫn chưa đủ, hãy sưu tập đầy đủ đi"*, và sau đó xác nhận lại nguyên tắc quyết định mọi thứ ở đây: **tác phẩm của Bác được dùng rộng rãi, không có bản quyền đối với toàn dân** (mất 1969, hết hạn bảo hộ tại Việt Nam từ 2020).
 
-**31 → 82 tác phẩm**, chia năm mục trong thư viện:
+**31 → 123 tác phẩm**, chia sáu mục trong thư viện:
 
 | Mục | Số bài | Ghi chú |
 |---|---|---|
-| 📓 Ngục trung nhật ký | 16 | tập có 133 bài — còn thiếu nhiều nhất |
-| 🖋️ Thơ khác | 27 | gồm 3 bài báo Việt Nam Độc Lập 1941 |
+| 📓 Ngục trung nhật ký | 55 | tập có 133 bài — vẫn là mảng thiếu nhiều nhất |
+| 🖋️ Thơ khác | 27 | gồm 2 bài báo Việt Nam Độc Lập 1941 đã xác minh bút danh |
 | 🎊 Thơ chúc Tết & mừng xuân | 24 | **liền mạch 1942 → 1969** |
 | 🏮 Thư & thơ Trung thu gửi thiếu nhi | 7 | mảng hợp chế độ trẻ em nhất |
 | 📜 Văn chính luận · thư · lời kêu gọi | 8 | 5 mục đã lên toàn văn |
+| ❓ Tồn nghi — chưa xác định tác giả | 2 | tách hẳn, có cảnh báo cấp nhóm |
 
 ### Năm văn kiện từ bản trích lên toàn văn
 
@@ -226,7 +227,7 @@ Tuyên ngôn Độc lập nằm trong thư viện với **đúng 4 dòng** — v
 
 **Bảy mục giữ nguyên bản trích, không chắp vá.** Đáng ghi nhất: *Bài nói tại Đền Hùng* được xác nhận là **nói chuyện ứng khẩu, không có văn bản viết** — mọi nguồn chỉ lưu đúng một câu. Đó là bản chất tư liệu chứ không phải thiếu sót của dự án.
 
-### Ranh giới xử lý chữ nghi sai — áp nhất quán cho cả 82 mục
+### Ranh giới xử lý chữ nghi sai — áp nhất quán cho cả bộ sưu tập
 
 | Tình huống | Xử lý | Ca thật gặp trong phiên |
 |---|---|---|
@@ -247,13 +248,22 @@ Quốc hiệu bị đảo là ca nghiêm trọng nhất: đây là tên nước 
 
 Mỗi chỗ đều ghi **điều kiện cụ thể để về sau phân xử được**, không chỉ dán nhãn "chưa rõ".
 
-- **Niên đại bài chúc Tết Quý Mùi 1943.** `hochiminh.vn` xếp vào tuyển tập thơ chúc Tết của Bác; «Hồ Chí Minh — Biên niên tiểu sử» Tập 2 chép Người bị giam ở Quảng Tây 27/8/1942 → 10/9/1943, đúng Tết Quý Mùi đang bị áp giải sang nhà giam Liễu Châu, và 3.252 dòng biên niên **không nhắc bài này** dù có nhắc bài 1942 và 1944. Lô tra đề nghị gỡ hẳn — **không theo**: biên niên **im lặng** không phải biên niên **phủ nhận**, và xoá mục chính là chọn bản gọn hơn, trái bất biến §1.4. Giữ lại, đổi tên thành «niên đại đang tranh luận», gỡ mọi khẳng định khỏi `thoi_ky`/`loi_binh`, nêu cả hai phía trong ghi chú hiện ra cho người đọc.
+- **Niên đại bài chúc Tết Quý Mùi 1943.** `hochiminh.vn` xếp vào tuyển tập thơ chúc Tết của Bác; «Hồ Chí Minh — Biên niên tiểu sử» Tập 2 chép Người bị giam ở Quảng Tây 27/8/1942 → 10/9/1943, đúng Tết Quý Mùi đang bị áp giải sang nhà giam Liễu Châu, và 3.252 dòng biên niên **không nhắc bài này** dù có nhắc bài 1942 và 1944. Lô tra đề nghị gỡ hẳn — **không theo**: biên niên **im lặng** không phải biên niên **phủ nhận**, và xoá mục chính là chọn bản gọn hơn, trái bất biến §1.4. Giữ lại, đổi tên thành «niên đại đang tranh luận», gỡ mọi khẳng định khỏi `thoi_ky`/`loi_binh`, nêu cả hai phía trong ghi chú hiện ra cho người đọc. Chủ dự án chốt **giữ** ngày 2026-08-04.
 - Cặp dòng lặp trong bài 1943 · «binh quyền» bài 1945 · nơi đăng bài 1945.
 
-### Bốn mục cố ý KHÔNG nạp sau hai lượt truy
+### Nhóm «tồn nghi» — cách giữ tư liệu mà không nhận nhầm tác giả
 
-- «Dân cày» và «Công nhân» — **có** nguyên văn trên báo Cao Bằng nhưng nguồn ghi «Khuyết danh», và dò chéo toàn bộ **88 bút danh** của Bác trên `tulieuvankien.dangcongsan.vn` không khớp cái nào. Có văn bản mà thiếu quy thuộc thì nạp vào là **bịa quy thuộc**. Đối chiếu: «Phụ nữ» và «Trẻ con» nạp được vì `tulieuvankien` xác nhận đích danh bút danh «Kim Oanh» (số 104, 1/9/1941) và «Bé Con» (số 106, 21/9/1941).
-- «Trẻ chăn trâu» và «Tầm hữu vị ngộ» — không có nguyên văn trên nguồn được phép.
+«Dân cày» và «Công nhân» **có** nguyên văn trên báo Cao Bằng nhưng nguồn ghi «Khuyết danh», và dò chéo danh sách bút danh chính thức trên `tulieuvankien.dangcongsan.vn` không mục nào khớp. Ban đầu để ngoài dự án: có văn bản mà thiếu quy thuộc thì nạp vào là **bịa quy thuộc**.
+
+Chủ dự án quyết **«giữ hết»** — nên hai bài vào một nhóm thứ sáu `nhom: "ton-nghi"` thay vì trộn với thơ đã xác minh. Ba lớp cảnh báo, chồng lên nhau vì người đọc có thể dừng ở bất kỳ lớp nào:
+
+1. tiêu đề nhóm — «❓ Tồn nghi — thơ trên báo Việt Nam Độc Lập, chưa xác định tác giả»;
+2. một đoạn cảnh báo cấp nhóm nói rõ vì sao chúng ở đây (đăng trên tờ báo của Bác) và vì sao **không** đủ để nhận là của Bác;
+3. trong từng mục: `ten` gắn «chưa xác định tác giả», `tac_gia` để đúng chữ «Khuyết danh», `ghi_chu_dich` đối chiếu thẳng với «Trẻ con»/«Phụ nữ» — hai bài đó vào nhóm thường **vì** `tulieuvankien` xác nhận đích danh bút danh «Kim Oanh» (số 104, 1/9/1941) và «Bé Con» (số 106, 21/9/1941).
+
+Điều kiện chuyển sang nhóm thường ghi thẳng trong `ghi_chu_bien_tap`, không để người sau phải đoán.
+
+Còn hai mục vẫn không nạp được: «Trẻ chăn trâu» và «Tầm hữu vị ngộ» — không có nguyên văn trên nguồn được phép. Đây là thiếu **văn bản**, khác hẳn thiếu **quy thuộc**, nên không có nhóm nào chứa được.
 
 ### Bẫy công cụ — ghi lại vì tốn của phiên này ba lượt tra lặp
 

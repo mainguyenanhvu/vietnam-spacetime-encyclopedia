@@ -2086,3 +2086,15 @@ input[type="range"] {
   border-bottom: 1px dashed var(--vien);
   padding-bottom: 0.25rem;
 }
+
+/* Cảnh báo cấp nhóm — phải đọc được trước khi mở mục nào ra, nên không dùng
+   .muted mà tô nền cho nó tách khỏi danh sách. */
+.hcm-canh-bao {
+  margin: 0 0 0.6rem;
+  padding: 0.55rem 0.7rem;
+  font-size: var(--co-sm);
+  line-height: 1.55;
+  background: var(--vien-nhan-nhe);
+  border-left: 3px solid var(--nhan-sang);
+  border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
+}

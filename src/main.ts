@@ -2807,7 +2807,7 @@ interface Poem {
    */
   ghi_chu_bien_tap?: string;
   /** Chỉ tac-pham-ho-chi-minh.json dùng — chia mục trong thư viện. */
-  nhom?: "nktt" | "chuc-tet" | "trung-thu" | "tho" | "van";
+  nhom?: "nktt" | "chuc-tet" | "trung-thu" | "tho" | "van" | "ton-nghi";
   sources: string[];
 }
 
@@ -2957,7 +2957,7 @@ async function loadLiterature() {
  * với thơ chúc Tết lẫn với văn chính luận, và người muốn đọc riêng một mảng
  * phải cuộn qua cả ba. Mục nào trống thì không in tiêu đề.
  */
-const NHOM_HCM: Array<[NonNullable<Poem["nhom"]>, string]> = [
+const NHOM_HCM: Array<[NonNullable<Poem["nhom"]>, string, string?]> = [
   ["nktt", "📓 Ngục trung nhật ký (Nhật ký trong tù)"],
   ["tho", "🖋️ Thơ khác"],
   ["chuc-tet", "🎊 Thơ chúc Tết & mừng xuân"],
@@ -2965,15 +2965,27 @@ const NHOM_HCM: Array<[NonNullable<Poem["nhom"]>, string]> = [
   // Không gắn "(trích)" vào tiêu đề nhóm nữa: từ 2026-08-04 phần lớn mục trong
   // nhóm đã là toàn văn. Mục nào còn là trích thì tự nói trong tên của nó.
   ["van", "📜 Văn chính luận · thư · lời kêu gọi"],
+  // Nhóm cuối và tách hẳn: thơ đăng trên tờ báo của Bác nhưng nguồn ký khuyết
+  // danh. Cảnh báo đặt ở cấp nhóm chứ không chỉ trong từng mục — người lướt
+  // qua tiêu đề mà không mở mục ra vẫn phải thấy chữ "chưa xác định tác giả".
+  [
+    "ton-nghi",
+    "❓ Tồn nghi — thơ trên báo Việt Nam Độc Lập, chưa xác định tác giả",
+    "Những bài dưới đây đăng trên báo Việt Nam Độc Lập — tờ báo do Nguyễn Ái Quốc " +
+      "sáng lập và trực tiếp phụ trách — nhưng nguồn ký «Khuyết danh» và danh sách " +
+      "bút danh chính thức của Người không có mục nào gắn với chúng. Xếp riêng ở đây " +
+      "để giữ lại tư liệu mà không nhận nhầm là tác phẩm của Bác.",
+  ],
 ];
 
 function hcmWorksHtml(ds: Poem[]): string {
   // Mục cũ chưa có `nhom` thì vẫn phải hiện — dồn vào "Thơ khác".
   const nhomCua = (p: Poem): NonNullable<Poem["nhom"]> => p.nhom ?? "tho";
-  return NHOM_HCM.map(([k, nhan]) => {
+  return NHOM_HCM.map(([k, nhan, canhBao]) => {
     const nhom = ds.filter((p) => nhomCua(p) === k);
     if (!nhom.length) return "";
     return `<h4 class="hcm-nhom">${nhan} <span class="muted">(${nhom.length})</span></h4>
+      ${canhBao ? `<p class="hcm-canh-bao">⚠️ ${esc(canhBao)}</p>` : ""}
       ${nhom.map(poemHtml).join("")}`;
   }).join("");
 }

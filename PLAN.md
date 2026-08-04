@@ -113,15 +113,15 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 ### Lớp còn mỏng
 `khoa-bang-nam-trung-bo` (6) · `nghia-si-can-vuong` (9) · `me-vnah` (5) · `thanh-hoang-danh-than` (6) · `nha-the-thao-lich-su` (8, thiếu VĐV huy chương Olympic) · `danh-y-luong-y` (8, thiếu Tuệ Tĩnh và Hải Thượng Lãn Ông riêng) · `dich-gia-ngon-ngu-hoc` (9). Một phần có thể đã bù gián tiếp qua sóng sau — **đếm lại số hiện tại trước khi cử agent**. **M**
 
-### Thơ văn Hồ Chí Minh — bốn mục CỐ Ý không nạp, đã truy hai lượt (2026-08-04)
+### Thơ văn Hồ Chí Minh — hai mục CỐ Ý không nạp, đã truy hai lượt (2026-08-04)
 
-Ghi ở đây để đừng ai đi tra lượt thứ ba rồi nạp bù. Hai lý do khác hẳn nhau:
+Ghi ở đây để đừng ai đi tra lượt thứ ba rồi nạp bù.
 
-**Không xác nhận được TÁC GIẢ — đây mới là chỗ nghiêm trọng.**
-- `Dân cày` và `Công nhân` (báo Việt Nam Độc Lập, 1941). **Có nguyên văn** trên báo Cao Bằng (nguồn chính thống), nhưng trang đó ghi tác giả **«Khuyết danh»**. Đã dò chéo toàn bộ **88 bút danh** của Bác trên `tulieuvankien.dangcongsan.vn` — không bút danh nào gắn với hai bài này.
-- Giai đoạn đầu báo Việt Nam Độc Lập gần như một mình Bác viết, nên **rất có thể** là của Bác. Nhưng "rất có thể" không phải nguồn. Có văn bản mà không có quy thuộc thì vẫn là bịa quy thuộc — đúng bất biến §3 của dự án.
-- Muốn nạp thì phải có nguồn chính thống **nói thẳng** hai bài đó là của Hồ Chí Minh / một bút danh của Người. Đừng suy từ việc "báo ấy hầu như chỉ Bác viết".
-- Đối chiếu: `Phụ nữ` và `Trẻ con` ĐÃ nạp được, vì `tulieuvankien` xác nhận đích danh bút danh «Kim Oanh» (số 104, 1/9/1941) và «Bé Con» (số 106, 21/9/1941) ký dưới đúng hai bài đó.
+**Quy thuộc tồn nghi — ĐÃ XỬ, đừng mở lại (chủ dự án quyết 2026-08-04: «giữ hết»).**
+- `Dân cày` và `Công nhân` (báo Việt Nam Độc Lập, 1941) trước bị để ngoài vì báo Cao Bằng ký **«Khuyết danh»** và không mục nào trong danh sách bút danh chính thức gắn với hai bài. Nay **đã nạp** vào nhóm riêng `nhom: "ton-nghi"` — có cảnh báo cấp nhóm trong thư viện và cảnh báo trong từng mục, `tac_gia` để đúng chữ "Khuyết danh", không nhận là tác phẩm của Bác.
+- **Điều kiện chuyển sang nhóm thường**: một mục trong danh sách bút danh chính thức ghi đích danh bài, hoặc một nguồn chính thống khác khẳng định tác giả. Chưa có thì để nguyên nhóm `ton-nghi`. Đừng suy từ việc "báo ấy hầu như chỉ Bác viết".
+- Đối chiếu: `Phụ nữ` và `Trẻ con` nằm ở nhóm thường vì `tulieuvankien` xác nhận đích danh bút danh «Kim Oanh» (số 104, 1/9/1941) và «Bé Con» (số 106, 21/9/1941) ký dưới đúng hai bài đó.
+- Bài chúc Tết **1943** (niên đại tranh luận): chủ dự án quyết **giữ**, kèm nguyên cảnh báo hai nguồn vênh nhau. Không còn là câu hỏi bỏ ngỏ.
 
 **Không tìm được nguyên văn trên nguồn chính thống.**
 - `Trẻ chăn trâu` (21/11/1942). Lượt đầu tưởng do công cụ chặn; lượt hai crawl thô vượt được lỗi redirect của `qdnd.vn` và thấy trang **thật sự chỉ có một câu giới thiệu podcast**, không có bài thơ. Đây là thiếu thật, không phải lỗi công cụ.
