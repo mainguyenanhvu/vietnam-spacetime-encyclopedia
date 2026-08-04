@@ -2807,7 +2807,7 @@ interface Poem {
    */
   ghi_chu_bien_tap?: string;
   /** Chỉ tac-pham-ho-chi-minh.json dùng — chia mục trong thư viện. */
-  nhom?: "nktt" | "chuc-tet" | "tho" | "van";
+  nhom?: "nktt" | "chuc-tet" | "trung-thu" | "tho" | "van";
   sources: string[];
 }
 
@@ -2961,6 +2961,7 @@ const NHOM_HCM: Array<[NonNullable<Poem["nhom"]>, string]> = [
   ["nktt", "📓 Ngục trung nhật ký (Nhật ký trong tù)"],
   ["tho", "🖋️ Thơ khác"],
   ["chuc-tet", "🎊 Thơ chúc Tết & mừng xuân"],
+  ["trung-thu", "🏮 Thư & thơ Trung thu gửi thiếu nhi"],
   // Không gắn "(trích)" vào tiêu đề nhóm nữa: từ 2026-08-04 phần lớn mục trong
   // nhóm đã là toàn văn. Mục nào còn là trích thì tự nói trong tên của nó.
   ["van", "📜 Văn chính luận · thư · lời kêu gọi"],
