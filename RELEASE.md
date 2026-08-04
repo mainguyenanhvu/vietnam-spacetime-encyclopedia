@@ -202,11 +202,11 @@ Lần đầu kiểm link "bỏ qua" báo **hỏng**: link không vào khung hìn
 
 Chủ dự án: *"những bài thơ Bác viết vẫn chưa đủ, hãy sưu tập đầy đủ đi"*, và sau đó xác nhận lại nguyên tắc quyết định mọi thứ ở đây: **tác phẩm của Bác được dùng rộng rãi, không có bản quyền đối với toàn dân** (mất 1969, hết hạn bảo hộ tại Việt Nam từ 2020).
 
-**31 → 123 tác phẩm**, chia sáu mục trong thư viện:
+**31 → 185 tác phẩm**, chia sáu mục trong thư viện:
 
 | Mục | Số bài | Ghi chú |
 |---|---|---|
-| 📓 Ngục trung nhật ký | 55 | tập có 133 bài — vẫn là mảng thiếu nhiều nhất |
+| 📓 Ngục trung nhật ký | 117 | **phủ kín 133 số bài của tập** — xem mục dưới |
 | 🖋️ Thơ khác | 27 | gồm 2 bài báo Việt Nam Độc Lập 1941 đã xác minh bút danh |
 | 🎊 Thơ chúc Tết & mừng xuân | 24 | **liền mạch 1942 → 1969** |
 | 🏮 Thư & thơ Trung thu gửi thiếu nhi | 7 | mảng hợp chế độ trẻ em nhất |
@@ -250,6 +250,28 @@ Mỗi chỗ đều ghi **điều kiện cụ thể để về sau phân xử đ�
 
 - **Niên đại bài chúc Tết Quý Mùi 1943.** `hochiminh.vn` xếp vào tuyển tập thơ chúc Tết của Bác; «Hồ Chí Minh — Biên niên tiểu sử» Tập 2 chép Người bị giam ở Quảng Tây 27/8/1942 → 10/9/1943, đúng Tết Quý Mùi đang bị áp giải sang nhà giam Liễu Châu, và 3.252 dòng biên niên **không nhắc bài này** dù có nhắc bài 1942 và 1944. Lô tra đề nghị gỡ hẳn — **không theo**: biên niên **im lặng** không phải biên niên **phủ nhận**, và xoá mục chính là chọn bản gọn hơn, trái bất biến §1.4. Giữ lại, đổi tên thành «niên đại đang tranh luận», gỡ mọi khẳng định khỏi `thoi_ky`/`loi_binh`, nêu cả hai phía trong ghi chú hiện ra cho người đọc. Chủ dự án chốt **giữ** ngày 2026-08-04.
 - Cặp dòng lặp trong bài 1943 · «binh quyền» bài 1945 · nơi đăng bài 1945.
+
+### Ngục trung nhật ký: 55 → 117 bài, phủ kín cả tập
+
+Ngõ web bế tắc thật, không phải tra hời hợt: một lô tra ~25 lượt trên đúng danh sách nguồn được phép rồi báo **0 bài**. Toàn văn tập thơ trên mạng chỉ có hai dạng — nguồn bị cấm (thivien, wikisource, blog), hoặc PDF ảnh quét trên cổng .gov.vn mà máy không có OCR để đọc.
+
+Lô đó đề nghị nới chính sách: dẫn nguồn dù chưa mở đọc được. **Từ chối** — dẫn một URL mình chưa đọc chính là bịa nguồn, đúng thứ bất biến §3 cấm.
+
+Đường vòng: nguồn mà 39 bài nạp trước đang dẫn hoá ra là **PDF có lớp chữ thật** — «Nhật ký trong tù» (tái bản), NXB Chính trị quốc gia Sự thật 2015, 212 trang, đăng trong Không gian văn hoá Hồ Chí Minh của một trường thuộc Sở GD-ĐT TP.HCM. Mọi cách bóc thô đều ra ký tự rác vì PDF dùng **font CID**: chuỗi trong file là mã glyph, phải đi qua bảng `/ToUnicode` mới ra chữ. Viết bằng `zlib` có sẵn trong Node, không cài thêm gì vào máy.
+
+**Ba lỗi bóc bắt được trước khi nạp** — cổng dữ liệu không bắt nổi loại lỗi này, chỉ đối chiếu mới thấy:
+
+| Lỗi | Hậu quả nếu bỏ qua | Cách sửa |
+|---|---|---|
+| Xuống dòng theo mọi lệnh định vị chữ | Chữ trong ngoặc kép in khác font → câu thơ vỡ làm đôi | Chỉ ngắt dòng khi toạ độ Y đổi; `T*` ép ngắt |
+| Số chú thích chân trang in giữa câu | «Thảm đạm kinh doanh» / «1» / «trúc lộ phu;» thành hai dòng | Nối lại khi mảnh trước không kết thúc bằng dấu câu |
+| Ngày tháng sách in dưới đầu đề | «18-11» thành một câu thơ | Tách sang `thoi_ky` |
+
+Kiểm chứng bằng **55 bài đã có** (lấy từ SGK và bản Viện Văn học, nguồn độc lập): 46 bài khớp từng câu. Phần còn lại là 1 bài không thuộc 133 bài của tập, và **ba chỗ dị bản thật** giữa hai bản in nhà nước — «đông hàn/đông tàn» và «cách kiện cường/cánh khẩn trương» (Tự miễn) · «ngận/hẩn thống khổ» · «thuỵ thời/thụy thì». Nêu cả hai bản trong ghi chú, không sửa chữ đã nạp.
+
+Bản quyền bản dịch lần này biết chắc thay vì đoán, vì sách in tên dịch giả từng bài: **24 bài Nam Trân đơn danh** (mất 1967, hết bảo hộ) chép nguyên bản dịch thơ; **38 bài** dịch giả còn bảo hộ (Huệ Chi, Đỗ Văn Hỷ, Băng Thanh, Nguyễn Sĩ Lâm, Hoàng Trung Thông, Trần Đắc Thọ, Văn Trực - Văn Phụng) thì không chép, thay bằng bản dịch nghĩa văn xuôi dự án tự viết từ phiên âm Hán-Việt và nói rõ trong ghi chú. Bản dịch nghĩa của chính cuốn sách cũng không chép — đó là dịch phẩm của người biên soạn.
+
+Ba bài không nạp: **bài 1** và **bài 108** dự án đã có (khớp hụt vì hai bài đó không có đầu đề); **bài 101 «Liễu Châu ngục»** thì chú thích của chính cuốn sách ghi *nguyên bản chỉ có đầu đề, không có thơ* — không có nguyên văn thì không nạp, kể cả khi biết chắc bài đó tồn tại.
 
 ### Nhóm «tồn nghi» — cách giữ tư liệu mà không nhận nhầm tác giả
 
