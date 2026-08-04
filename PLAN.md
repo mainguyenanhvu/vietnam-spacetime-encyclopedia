@@ -45,7 +45,8 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 - [ ] **Audit tương phản phần còn lại.** Mới đo topbar và nút. Chưa đo: 11 panel nổi, badge, popup MapLibre, khung quiz/olympia ở chế độ trẻ em. **M**
 - [ ] **4 mã hex chưa lên token**, đều là màu ngữ nghĩa dùng một lần: `#fce7f3` (nền nhân vật Âu Lạc trong truyện), `#a84d08` (biến thể đã chỉnh tương phản của `.story-retry`, chưa đo lại xem `--luu-chu` có đủ không), `#fef2f2` (`.qg-badge-khac`, sát `--sai-nen` nhưng không trùng — cố ý không gộp hai giá trị khác nhau), `#7c3aed` (nhãn «huyền sử» ở `.lc-tag`). **S**
 - [ ] **`body.kid-mode` của `story.ts` giờ chồng lấn với `data-che-do`.** Hai cơ chế cùng nói về "trẻ em" — quyết định giữ cả hai (một là chế độ toàn cục, một là panel truyện) hay hợp nhất. **S**
-- [ ] Icon riêng cho mỗi lớp phủ thay chấm tròn `circle`. 6 icon đã đặc tả ở `docs/image-generation-spec.xml` (I01–I06). **M**
+- [ ] Icon riêng cho mỗi lớp phủ thay chấm tròn `circle`. 6 icon đã đặc tả ở `docs/image-generation-spec.xml` (I01–I06). **M** — ⚠️ phạm vi thu hẹp từ 2026-08-04: ở chế độ 3D icon phẳng đã được thay bằng mô hình khối, việc này giờ chỉ còn cho chế độ 2D.
+- [x] ~~Thanh trượt dòng thời gian, cụm control MapLibre, đầu bảng lớp còn dáng mặc định.~~ Xong 2026-08-04 — xem khối "ĐẠI TU HÌNH THỨC" cuối `style.css`.
 - [ ] **Chế độ tối** — hệ token đã sẵn sàng, thêm `:root[data-che-do="toi"]` là chạy. Chưa làm vì chưa có yêu cầu. **M**
 
 ### Không đụng vào khi redesign
@@ -63,11 +64,11 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 | `.muted` | `quiz.ts:188` query theo class chung | Utility class dùng lại nhiều nơi, phạm vi ảnh hưởng khó lường |
 
 ### Khả năng tiếp cận còn thiếu
-- [ ] 11 `<aside>` panel thiếu `role="dialog"`, `aria-modal`, focus trap, không trả focus về nút khi đóng. **M**
-- [ ] `#province-panel` swap `innerHTML` toàn bộ (`main.ts:2282-2308`) mà không có `aria-live` bao ngoài. **S**
-- [ ] `<input id="timeline">` thiếu `aria-valuetext` — screen reader đọc số thô thay vì tên thời kỳ. **S**
-- [ ] Chưa có link "bỏ qua tới bản đồ" đầu trang. **S**
-- [ ] Nối `public/icon.svg` + `public/manifest.webmanifest` vào `<head>` — đã tạo nhưng quên gắn `<link>`. **S**
+- [x] ~~11 `<aside>` panel thiếu `role="dialog"`, `aria-modal`, không trả focus khi đóng.~~ Xong 2026-08-04 trong `panels.ts`: `role=dialog` + `aria-label` (ưu tiên `data-nhan`, vì 4 panel nạp nội dung không đồng bộ nên lúc mở còn rỗng) + đưa tiêu điểm vào panel khi mở + trả tiêu điểm ở `hideAllPanels()`. Đăng ký nốt library/game/quiz panel. **CỐ Ý KHÔNG làm focus trap**: các panel này không modal, bản đồ sau lưng vẫn kéo/bấm được — nhốt tiêu điểm trong hộp thoại không modal là bẫy người dùng bàn phím vào chỗ chuột thì đi ra được. Đừng "sửa" lại.
+- [ ] `#province-panel` swap `innerHTML` toàn bộ mà không có `aria-live` bao ngoài. **S**
+- [x] ~~`<input id="timeline">` thiếu `aria-valuetext`.~~ Xong 2026-08-04 — đặt trong `setPeriod()`, đọc lên tên thời kỳ.
+- [x] ~~Chưa có link "bỏ qua tới bản đồ" đầu trang.~~ Xong 2026-08-04. Lưu ý khi kiểm bằng harness headless: cửa sổ không có tiêu điểm thì `:focus` KHÔNG khớp dù `document.activeElement` đã đúng — phải bật `Emulation.setFocusEmulationEnabled`.
+- [x] ~~Nối `public/icon.svg` + `public/manifest.webmanifest` vào `<head>`.~~ Kiểm lại 2026-08-04: **đã có sẵn** ở `index.html` dòng 11–12, mục này ghi thừa.
 
 ---
 
@@ -117,7 +118,7 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 - [ ] `abc-tri-an-plan.md` mục "16 geocode flagged" **tự mâu thuẫn nội bộ**: dòng cuối ghi "chưa làm" nhưng nội dung trên cho thấy 13/16 là false-positive đã kết luận + 3/16 đã sửa = 16/16 xong. Xác nhận lại trước khi coi là việc còn treo. **S hoặc 0**
 
 ### Chưa nối dây — có dữ liệu thật nhưng UI không đọc
-- [ ] `public/data/timeline/events.json` (34 mục, nguồn NQ 202/2025/QH15) — đồ thị kế thừa tỉnh (tỉnh nào hợp nhất từ tỉnh nào, 2025-07-01). Không module TS nào đọc. Dùng để hiện "tỉnh X sáp nhập từ Y, Z" khi kéo timeline qua mốc 2025. **S**
+- [x] ~~`public/data/timeline/events.json` (34 mục, nguồn NQ 202/2025/QH15) — không module TS nào đọc.~~ Nối dây 2026-08-04: panel tỉnh (thời kỳ 34 tỉnh) hiện dải «Hợp nhất A + B — Nghị quyết 202/2025/QH15, hiệu lực 1/7/2025» kèm link cổng Chính phủ. Nạp lười một lần, tra theo trường `to`.
 - [ ] `docs/di-tich-quoc-gia-candidates.json` — 11 di tích cấp quốc gia đủ nguồn dsvh.gov.vn, chờ chọn: (a) tạo lớp mới `di-tich-quoc-gia.json` + wire `main.ts`, hay (b) tách vào lớp có sẵn. **S**
 
 ### Nguồn ngoài đang xem xét

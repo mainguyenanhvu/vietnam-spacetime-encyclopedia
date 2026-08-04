@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Tác phẩm của Chủ tịch Hồ Chí Minh (1890–1969) — đã hết thời hạn bảo hộ bản quyền tại Việt Nam, đăng toàn văn. Bản dịch của Nam Trân (mất 1967) cũng đã thuộc public domain; bản dịch của dịch giả mất sau 1976 vẫn còn bảo hộ và chỉ được dẫn nguồn.",
+  "ghi_chu": "Tác phẩm của Chủ tịch Hồ Chí Minh (1890–1969) — đã hết thời hạn bảo hộ bản quyền tại Việt Nam, đăng toàn văn. Bản dịch của Nam Trân (mất 1967) cũng đã thuộc public domain; bản dịch của dịch giả mất sau 1976 vẫn còn bảo hộ và chỉ được dẫn nguồn. Trường `nhom` chia mục cho thư viện: nktt = Ngục trung nhật ký · chuc-tet = thơ chúc Tết · tho = thơ khác · van = văn chính luận trích.",
   "items": [
     {
       "id": "canh-khuya",
@@ -22,7 +22,8 @@
       "sources": [
         "Hồ Chí Minh — Thơ, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "nguyen-tieu",
@@ -52,7 +53,8 @@
       "sources": [
         "Hồ Chí Minh — Thơ, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "tuc-canh-pac-bo",
@@ -75,7 +77,8 @@
         "Hồ Chí Minh — Thơ, NXB Văn học",
         "Khu di tích quốc gia đặc biệt Pác Bó — Cao Bằng",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "ngam-trang",
@@ -102,7 +105,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "di-duong",
@@ -129,7 +133,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "tuyen-ngon-doc-lap-trich",
@@ -151,7 +156,8 @@
       "sources": [
         "Hồ Chí Minh Toàn tập — NXB Chính trị quốc gia Sự thật",
         "tulieuvankien.dangcongsan.vn"
-      ]
+      ],
+      "nhom": "van"
     },
     {
       "id": "loi-keu-goi-toan-quoc-khang-chien-trich",
@@ -173,7 +179,8 @@
       "sources": [
         "Hồ Chí Minh Toàn tập — NXB Chính trị quốc gia Sự thật",
         "tulieuvankien.dangcongsan.vn"
-      ]
+      ],
+      "nhom": "van"
     },
     {
       "id": "chieu-toi",
@@ -200,7 +207,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "tao-giai",
@@ -237,7 +245,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "lai-tan",
@@ -264,7 +273,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "van-thung-me-thanh",
@@ -291,7 +301,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "tan-xuat-nguc-hoc-dang-son",
@@ -318,7 +329,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "de-tu-nktt",
@@ -345,7 +357,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "Đảng bộ tỉnh Quảng Trị — tinhuyquangtri.vn, 'Nhật ký trong tù (Ngục trung nhật ký) — Bảo vật quốc gia'"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "tu-khuyen-minh",
@@ -372,7 +385,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "nua-dem-da-ban",
@@ -399,7 +413,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "khong-ngu-duoc-thuy-bat-truoc",
@@ -426,7 +441,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "nan-huu-xuy-dich",
@@ -453,7 +469,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "lac-lieu-nhat-chich-nha",
@@ -480,7 +497,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "tu-ca-nguyet-lieu",
@@ -515,7 +533,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "hoang-hon-nktt",
@@ -542,7 +561,8 @@
       "sources": [
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học",
         "SGK Ngữ văn — NXB Giáo dục Việt Nam"
-      ]
+      ],
+      "nhom": "nktt"
     },
     {
       "id": "canh-rung-viet-bac",
@@ -569,7 +589,8 @@
       "sources": [
         "SGK Ngữ văn 12 — NXB Giáo dục Việt Nam",
         "Không gian văn hóa Hồ Chí Minh — Trung tâm Y tế Tân Bình (trungtamytetanbinh.vn), 'Cảnh rừng Việt Bắc'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "sau-muoi-tuoi",
@@ -588,7 +609,8 @@
       ],
       "sources": [
         "Trường THPT Trần Nguyên Hãn, Hải Phòng (thpttrannguyenhan.haiphong.edu.vn) — '25 bài thơ của Bác'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "ca-binh-linh",
@@ -628,7 +650,8 @@
       "sources": [
         "Trường THPT Trần Nguyên Hãn, Hải Phòng (thpttrannguyenhan.haiphong.edu.vn) — '25 bài thơ của Bác'",
         "Báo Việt Nam Độc lập — cơ quan tuyên truyền của Việt Minh, 1941–1945 (nguồn đăng gốc, theo ghi chú của trang đăng lại)"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "ca-soi-chi",
@@ -664,7 +687,8 @@
       "sources": [
         "Báo Hà Nội mới điện tử — hanoimoi.com.vn, '«Bài ca sợi chỉ» — bài ca đoàn kết'",
         "Trường THPT Trần Nguyên Hãn, Hải Phòng (thpttrannguyenhan.haiphong.edu.vn) — '25 bài thơ của Bác'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "con-cao-va-to-ong",
@@ -696,7 +720,8 @@
       "sources": [
         "Báo Tuổi Trẻ điện tử — tuoitre.vn, 'Con cáo và tổ ong'",
         "Báo Công an Nhân dân điện tử — cand.com.vn, 'Phiếm luận về vẻ đẹp của ong'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "bai-ca-du-kich",
@@ -723,7 +748,8 @@
       ],
       "sources": [
         "Trường THPT Trần Nguyên Hãn, Hải Phòng (thpttrannguyenhan.haiphong.edu.vn) — '25 bài thơ của Bác'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "canh-rung-pac-bo",
@@ -751,7 +777,8 @@
       "sources": [
         "Trường THPT Trần Nguyên Hãn, Hải Phòng (thpttrannguyenhan.haiphong.edu.vn) — '25 bài thơ của Bác'",
         "Báo Cao Bằng điện tử — baocaobang.vn, 'Ba bài thơ Bác Hồ làm ở Pác Bó'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "nhom-lua",
@@ -778,7 +805,8 @@
       "sources": [
         "Báo Tuổi Trẻ điện tử — tuoitre.vn, 'Nhóm lửa'",
         "Thông tấn xã Việt Nam — nvsk.vnanet.vn, 'Chủ tịch Hồ Chí Minh - dấu ấn sự kiện ngày 1/8/1942'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "ai-sang-niu-yooc-ma-coi",
@@ -797,7 +825,8 @@
       ],
       "sources": [
         "Trường THPT Trần Nguyên Hãn, Hải Phòng (thpttrannguyenhan.haiphong.edu.vn) — '25 bài thơ của Bác'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "kieu-bao-yeu-nuoc",
@@ -825,7 +854,8 @@
       "sources": [
         "Trang thông tin đặc biệt về Chủ tịch Hồ Chí Minh — Báo Nhân Dân (hochiminh.nhandan.vn), 'Kiều bào yêu nước'",
         "Báo Nhân Dân điện tử — nhandan.vn, 'Bác Hồ với kiều bào'"
-      ]
+      ],
+      "nhom": "tho"
     },
     {
       "id": "cam-tuong-doc-thien-gia-thi",
@@ -852,7 +882,959 @@
       "sources": [
         "Báo Đồng Nai điện tử — baodongnai.com.vn, '3 chữ 'thiên' trong bài thơ Cảm tưởng đọc Thiên gia thi của Hồ Chí Minh'",
         "Ngục trung nhật ký — bản dịch Viện Văn học, NXB Văn học"
-      ]
+      ],
+      "nhom": "nktt"
+    },
+    {
+      "id": "thu-da",
+      "ten": "Thu dạ (Đêm thu)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "1948 — chiến khu Việt Bắc, kháng chiến chống Pháp",
+      "the_loai": "Thất ngôn tứ tuyệt chữ Hán",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thai-nguyen",
+        "tuyen-quang"
+      ],
+      "loi_binh": "Đêm thu bận việc quân chưa xong, bỗng nghe tiếng còi báo quân du kích thắng trận trở về thôn — niềm vui chiến thắng len vào giữa gió mưa thu.",
+      "nguyen_van": [
+        "Trù hoạch canh thâm tiệm đắc nhàn,",
+        "Thu phong thu vũ báo thu hàn.",
+        "Hốt văn thu địch sơn tiền hưởng,",
+        "Du kích quy lai tửu vị tàn."
+      ],
+      "ban_dich": [
+        "(Dịch nghĩa) Tính toán việc quân đến khuya mới tạm được rảnh rỗi;",
+        "gió thu, mưa thu báo hiệu cái lạnh của mùa thu.",
+        "Chợt nghe tiếng còi thu vang lên trước núi,",
+        "ấy là lúc quân du kích trở về thôn, rượu vẫn còn chưa cạn."
+      ],
+      "ghi_chu_dich": "Nguồn không ghi tên dịch giả cho bản dịch thơ tiếng Việt — để thận trọng bản quyền, trên đây là dịch nghĩa văn xuôi tự dịch từ nguyên văn chữ Hán, không dùng bản dịch thơ có sẵn.",
+      "sources": [
+        "Chủ tịch Hồ Chí Minh viết bốn bài thơ chữ Hán: Thu dạ, Báo tiệp, Tặng Bùi Công, Tặng Võ Công — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-viet-bon-bai-tho-chu-han-thu-da-bao-tiep-tang-bui-cong-tang-vo-cong.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "bao-tiep",
+      "ten": "Báo tiệp (Tin thắng trận)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "1948 — chiến khu Việt Bắc, kháng chiến chống Pháp",
+      "the_loai": "Thất ngôn tứ tuyệt chữ Hán",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thai-nguyen",
+        "tuyen-quang"
+      ],
+      "loi_binh": "Trăng giục làm thơ nhưng việc quân chưa xong; đúng lúc chuông lầu điểm canh thì tin thắng trận báo về — thi sĩ nhường chỗ cho chiến sĩ rồi lại hoà làm một.",
+      "nguyen_van": [
+        "Nguyệt thôi song vấn: - Thi thành vị?",
+        "- Quân vụ nhưng mang vị tố thi.",
+        "Sơn lâu chung hưởng kinh thu mộng,",
+        "Chính thị Liên khu báo tiệp thì."
+      ],
+      "ban_dich": [
+        "(Dịch nghĩa) Trăng đẩy cửa sổ hỏi: - Thơ làm xong chưa?",
+        "- Việc quân còn bận, chưa làm thơ được.",
+        "Tiếng chuông trên lầu núi làm kinh động giấc mộng thu,",
+        "chính là lúc tin thắng trận của Liên khu báo về."
+      ],
+      "ghi_chu_dich": "Nguồn không ghi tên dịch giả cho bản dịch thơ tiếng Việt — để thận trọng bản quyền, trên đây là dịch nghĩa văn xuôi tự dịch từ nguyên văn chữ Hán, không dùng bản dịch thơ có sẵn.",
+      "sources": [
+        "Chủ tịch Hồ Chí Minh viết bốn bài thơ chữ Hán: Thu dạ, Báo tiệp, Tặng Bùi Công, Tặng Võ Công — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-viet-bon-bai-tho-chu-han-thu-da-bao-tiep-tang-bui-cong-tang-vo-cong.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "tang-bui-cong",
+      "ten": "Tặng Bùi công (tặng cụ Bùi Bằng Đoàn)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "1948 — chiến khu Việt Bắc, kháng chiến chống Pháp",
+      "the_loai": "Thất ngôn tứ tuyệt chữ Hán",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thai-nguyen",
+        "tuyen-quang"
+      ],
+      "loi_binh": "Bài thơ tặng cụ Bùi Bằng Đoàn, Trưởng ban Thường trực Quốc hội — chuyện đời thường xen giữa nhịp việc quân dồn dập, rồi khép lại bằng tình bạn vong niên.",
+      "nguyen_van": [
+        "Khán thư sơn điểu thê song hãn,",
+        "Phê trát xuân hoa chiếu nghiễn trì.",
+        "Tiệp báo tần lai lao dịch mã,",
+        "Tư công tức cảnh tặng tân thi."
+      ],
+      "ban_dich": [
+        "(Dịch nghĩa) Xem sách, chim núi đậu bên khung cửa sổ;",
+        "phê duyệt công văn, hoa xuân soi bóng xuống nghiên mực.",
+        "Tin thắng trận dồn dập đưa về làm nhọc cả ngựa trạm;",
+        "nhớ đến cụ, nhân cảnh mà tặng một bài thơ mới."
+      ],
+      "ghi_chu_dich": "Nguồn không ghi tên dịch giả cho bản dịch thơ tiếng Việt — để thận trọng bản quyền, trên đây là dịch nghĩa văn xuôi tự dịch từ nguyên văn chữ Hán, không dùng bản dịch thơ có sẵn.",
+      "sources": [
+        "Chủ tịch Hồ Chí Minh viết bốn bài thơ chữ Hán: Thu dạ, Báo tiệp, Tặng Bùi Công, Tặng Võ Công — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-viet-bon-bai-tho-chu-han-thu-da-bao-tiep-tang-bui-cong-tang-vo-cong.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "tang-vo-cong",
+      "ten": "Tặng Võ công (tặng cụ Võ Liêm Sơn)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "1948 — chiến khu Việt Bắc, kháng chiến chống Pháp",
+      "the_loai": "Ngũ ngôn bát cú chữ Hán",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thai-nguyen",
+        "tuyen-quang"
+      ],
+      "loi_binh": "Lời thơ tặng cụ Võ Liêm Sơn — một trí thức yêu nước vượt đường xa lên chiến khu — khép lại bằng một câu duy nhất gửi trọn niềm tin: kháng chiến ắt thành công.",
+      "nguyen_van": [
+        "Thiên lý công tầm ngã,",
+        "Bách cảm nhất ngôn trung!",
+        "Sự dân nguyện tận hiếu,",
+        "Sự quốc nguyện tận trung.",
+        "Công lai ngã hân hỉ,",
+        "Công khứ ngã tư công.",
+        "Tặng công chỉ nhất cú:",
+        "'Kháng chiến tất thành công'."
+      ],
+      "ban_dich": [
+        "(Dịch nghĩa) Cụ vượt nghìn dặm tìm đến tôi;",
+        "trăm mối cảm động dồn trong một lời nói thật lòng.",
+        "Thờ dân xin trọn đạo hiếu; thờ nước xin trọn lòng trung.",
+        "Cụ đến, tôi vui mừng; cụ đi, tôi lại nhớ cụ.",
+        "Tặng cụ chỉ một câu: 'Kháng chiến ắt sẽ thành công'."
+      ],
+      "ghi_chu_dich": "Nguồn không ghi tên dịch giả cho bản dịch thơ tiếng Việt — để thận trọng bản quyền, trên đây là dịch nghĩa văn xuôi tự dịch từ nguyên văn chữ Hán, không dùng bản dịch thơ có sẵn.",
+      "sources": [
+        "Chủ tịch Hồ Chí Minh viết bốn bài thơ chữ Hán: Thu dạ, Báo tiệp, Tặng Bùi Công, Tặng Võ Công — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-viet-bon-bai-tho-chu-han-thu-da-bao-tiep-tang-bui-cong-tang-vo-cong.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "vo-de-1950",
+      "ten": "Vô đề (1950)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "1950 — chiến khu Việt Bắc, kháng chiến chống Pháp",
+      "the_loai": "Thất ngôn tứ tuyệt chữ Hán",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bàn xong việc quân việc nước, Bác lại xách bương ra vườn tưới rau — hình ảnh vị lãnh tụ giản dị giữa đời thường kháng chiến.",
+      "nguyen_van": [
+        "Sơn kính khách lai, hoa mãn địa,",
+        "Tùng lâm quân đáo, điểu xung thiên.",
+        "Quân cơ, quốc kế thương đàm liễu,",
+        "Huề dũng giai đồng quán thái viên."
+      ],
+      "ban_dich": [
+        "(Dịch nghĩa) Khách đến theo đường núi, hoa rụng đầy mặt đất;",
+        "quân kéo đến rừng thông, chim giật mình bay vút lên trời.",
+        "Việc quân, việc nước đã bàn xong cả rồi;",
+        "xách bương nước cùng nhau ra tưới vườn rau."
+      ],
+      "ghi_chu_dich": "Bản dịch thơ lục bát quen thuộc của Xuân Thủy (1912–1985) còn thời hạn bảo hộ — trên đây là dịch nghĩa văn xuôi tự dịch, không dùng bản dịch của Xuân Thủy.",
+      "sources": [
+        "Chủ tịch Hồ Chí Minh viết bài thơ chữ Hán: Vô đề — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-viet-bai-tho-chu-han-vo-de.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "tu-chien-si",
+      "ten": "Tư chiến sĩ (Nhớ chiến sĩ)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "1950 — chiến khu Việt Bắc, kháng chiến chống Pháp",
+      "the_loai": "Thất ngôn tứ tuyệt chữ Hán",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Giữa đêm sương lạnh, Bác nghĩ ngay đến manh áo ấm cho chiến sĩ ngoài mặt trận — nỗi lo rất nhỏ mà rất thật của một vị Chủ tịch nước.",
+      "nguyen_van": [
+        "Canh thâm lộ cấp như thu vũ,",
+        "Thần tảo sương nùng tự hải vân.",
+        "Khoái tống hàn sam cấp chiến sĩ,",
+        "Dương quang hòa noãn báo tân xuân."
+      ],
+      "ban_dich": [
+        "(Dịch nghĩa) Đêm khuya, móc rơi nhanh như mưa thu;",
+        "sáng sớm, sương dày đặc như mây biển.",
+        "Hãy mau gửi áo ấm đến cho chiến sĩ;",
+        "nắng ấm đã báo hiệu mùa xuân mới về."
+      ],
+      "ghi_chu_dich": "Nguồn không ghi tên dịch giả bản dịch thơ tiếng Việt — để thận trọng bản quyền, trên đây là dịch nghĩa văn xuôi tự dịch, không dùng bản dịch thơ có sẵn.",
+      "sources": [
+        "Chủ tịch Hồ Chí Minh viết bài thơ chữ Hán: Tư chiến sĩ — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-viet-bai-tho-chu-han-tu-chien-si.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "di-thuyen-tren-song-day",
+      "ten": "Đi thuyền trên sông Đáy",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "18/09/1949 — trên sông Đáy, về huyện lỵ Sơn Dương thăm lớp học cán bộ kháng chiến",
+      "the_loai": "Lục bát (tiếng Việt)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "tuyen-quang"
+      ],
+      "loi_binh": "Cảnh sông đêm tĩnh lặng mà lòng người không lặng — giữa sao, trăng, tiếng chèo khua, Bác vẫn đau đáu nỗi lo khôi phục giang san.",
+      "nguyen_van": [
+        "Dòng sông lặng ngắt như tờ,",
+        "Sao đưa thuyền chạy, thuyền chờ trăng theo.",
+        "Bốn bề phong cảnh vắng teo,",
+        "Chỉ nghe cót két tiếng chèo thuyền nan.",
+        "Lòng riêng riêng những bàn hoàn,",
+        "Lo sao khôi phục giang san Tiên Rồng.",
+        "Thuyền về, trời đã rạng đông,",
+        "Bao la nhuốm một màu hồng đẹp tươi."
+      ],
+      "sources": [
+        "Chủ tịch Hồ Chí Minh đi thuyền xuôi theo sông Đáy về huyện lỵ Sơn Dương... và Người làm bài thơ Đi thuyền trên sông Đáy — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-di-thuyen-xuoi-theo-song-day-ve-huyen-ly-son-duong-de-tham-lop-hoc-cua-can-bo-khang-chien-va-nguoi-lam-bai-tho-di-thuyen-tren-song-day.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "hon-da-trich",
+      "ten": "Hòn đá (trích)",
+      "tac_gia": "Nguyễn Ái Quốc (Hồ Chí Minh)",
+      "thoi_ky": "21/04/1942 — đăng báo Việt Nam độc lập, số 123",
+      "the_loai": "Thơ ba chữ (tiếng Việt, trích đoạn)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "cao-bang"
+      ],
+      "loi_binh": "Mượn hình ảnh hòn đá bền gan để nhắc: muốn đánh đuổi Nhật, Pháp giành tự do thì cả dân phải đồng lòng.",
+      "nguyen_van": [
+        "Đánh Nhật, Pháp.",
+        "Giành tự do,",
+        "Là việc khó,",
+        "Là việc to.",
+        "Nếu chúng ta",
+        "Biết đồng lòng",
+        "Thì việc đó",
+        "Quyết thành công."
+      ],
+      "ghi_chu_dich": "Nguồn chỉ trích đoạn tiêu biểu của bài thơ (thể thơ ba chữ, đăng nhiều kỳ), không nêu toàn văn — trên đây là đúng phần đã xác minh được, không phải cả bài.",
+      "sources": [
+        "Bài thơ Hòn đá của Nguyễn Ái Quốc, đăng trên báo Việt Nam độc lập — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/bai-tho-hon-da-cua-nguyen-ai-quoc-dang-tren-bao-viet-nam-doc-lap.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "khong-co-viec-gi-kho",
+      "ten": "Không có việc gì khó (tặng thanh niên xung phong)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "28/03/1951 — Nà Tu, Bạch Thông (nay thuộc tỉnh Thái Nguyên)",
+      "the_loai": "Thơ bốn chữ (tiếng Việt)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thai-nguyen"
+      ],
+      "loi_binh": "Bốn câu ngắn mà thành khẩu hiệu của bao thế hệ thanh niên Việt Nam: khó đến mấy, có quyết chí thì cũng làm nên.",
+      "nguyen_van": [
+        "Không có việc gì khó,",
+        "Chỉ sợ lòng không bền.",
+        "Đào núi và lấp biển,",
+        "Quyết chí ắt làm nên."
+      ],
+      "sources": [
+        "Bài thơ Bác Hồ tặng thanh niên xung phong — Báo Nhân Dân — https://nhandan.vn/bai-tho-bac-ho-tang-thanh-nien-xung-phong-post476758.html"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "pac-bo-hung-vi",
+      "ten": "Pác Bó hùng vĩ",
+      "tac_gia": "Nguyễn Ái Quốc (Hồ Chí Minh)",
+      "thoi_ky": "02/1941 — sau ngày 08/02/1941, hang Pác Bó, Cao Bằng",
+      "the_loai": "Thất ngôn tứ tuyệt (tiếng Việt)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "cao-bang"
+      ],
+      "loi_binh": "Không cần cảnh rộng lớn mới gọi là hùng vĩ — suối mang tên Lênin, núi mang tên Mác, và đôi tay người cách mạng đang dựng xây cả một non sông.",
+      "nguyen_van": [
+        "Non xa xa, nước xa xa,",
+        "Nào phải thênh thang mới gọi là.",
+        "Đây suối Lênin, kia núi Mác,",
+        "Hai tay xây dựng một sơn hà."
+      ],
+      "sources": [
+        "Nguyễn Ái Quốc sáng tác bài thơ Pác Bó hùng vĩ — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/nguyen-ai-quoc-sang-tac-bai-tho-pac-bo-hung-vi.htm"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "cam-on-nguoi-tang-cam",
+      "ten": "Cảm ơn người tặng cam",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "01/1946 — Hà Nội, đăng báo Tiếng gọi phụ nữ số 11 (08/01/1946)",
+      "the_loai": "Lục bát (tiếng Việt)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Nhận món quà cam biếu của một người không để lại địa chỉ, Bác đăng báo cảm ơn bằng bốn câu lục bát, gửi kèm đạo lý «ăn quả nhớ kẻ trồng cây».",
+      "nguyen_van": [
+        "Cảm ơn bà biếu gói cam,",
+        "Nhận thì không đúng, từ làm sao đây!",
+        "Ăn quả nhớ kẻ trồng cây,",
+        "Phải chăng khổ tận đến ngày cam lai?"
+      ],
+      "sources": [
+        "Về bài thơ Cảm ơn người tặng cam — Thành đoàn Hải Phòng — https://thanhdoanhaiphong.gov.vn/ve-bai-tho-cam-on-nguoi-tang-cam-nd16788.html"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "di-chuc-trich",
+      "ten": "Di chúc (trích)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "10/05/1965 – 19/05/1969 — Hà Nội; công bố sau 02/09/1969",
+      "the_loai": "Văn chính luận (trích)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Bản Di chúc là lời dặn cuối cùng của Bác: tin vào thắng lợi cuối cùng, giữ đoàn kết trong Đảng như giữ con ngươi của mắt mình, và trọn đời chỉ mong phục vụ Tổ quốc, phục vụ nhân dân.",
+      "nguyen_van": [
+        "«Cuộc chống Mỹ, cứu nước của nhân dân ta dù phải kinh qua gian khổ, hy sinh nhiều hơn nữa, song nhất định thắng lợi hoàn toàn.»",
+        "«Các đồng chí từ Trung ương đến các chi bộ cần phải giữ gìn sự đoàn kết nhất trí của Đảng như giữ gìn con ngươi của mắt mình.»",
+        "«Suốt đời tôi hết lòng hết sức phục vụ Tổ quốc, phục vụ cách mạng, phục vụ nhân dân.»",
+        "«Cuối cùng, tôi để lại muôn vàn tình thân yêu cho toàn dân, toàn Đảng, cho toàn thể bộ đội...»"
+      ],
+      "sources": [
+        "Di chúc Bác Hồ — Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/di-chuc-bac-ho-7769"
+      ],
+      "nhom": "van"
+    },
+    {
+      "id": "thu-gui-hoc-sinh-khai-truong-trich",
+      "ten": "Thư gửi các học sinh nhân ngày khai trường đầu tiên (trích)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "05/09/1945 — Hà Nội, khai giảng năm học đầu tiên của nước Việt Nam Dân chủ Cộng hòa",
+      "the_loai": "Văn chính luận (trích)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Ba ngày sau Tuyên ngôn Độc lập, Bác gửi thư cho học sinh cả nước, đặt niềm tin về một nước Việt Nam «sánh vai với các cường quốc năm châu» vào chính công học tập của các em.",
+      "nguyen_van": [
+        "«Các em hết thảy đều vui vẻ vì sau mấy tháng giời nghỉ học, sau bao nhiêu cuộc chuyển biến khác thường, các em lại được gặp thầy gặp bạn.»",
+        "«Nhưng sung sướng hơn nữa, từ giờ phút này giở đi các em bắt đầu được nhận một nền giáo dục hoàn toàn Việt Nam.»",
+        "«Non sông Việt Nam có trở nên tươi đẹp hay không, dân tộc Việt Nam có bước tới đài vinh quang để sánh vai với các cường quốc năm châu được hay không, chính là nhờ một phần lớn ở công học tập của các em.»"
+      ],
+      "sources": [
+        "Thư Bác Hồ gửi các học sinh năm 1945 — Báo Nhân Dân — https://nhandan.vn/thu-bac-ho-gui-cac-hoc-sinh-nam-1945-post413315.html",
+        "Chủ tịch Hồ Chí Minh gửi thư cho học sinh cả nước nhân ngày khai trường đầu tiên — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-gui-thu-cho-hoc-sinh-ca-nuoc-nhan-ngay-khai-truong-dau-tien-cua-nuoc-viet-nam-dan-chu-cong-hoa.htm"
+      ],
+      "nhom": "van"
+    },
+    {
+      "id": "loi-keu-goi-thi-dua-ai-quoc-trich",
+      "ten": "Lời kêu gọi thi đua ái quốc (trích)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "11/06/1948 — chiến khu Việt Bắc, kháng chiến chống Pháp",
+      "the_loai": "Văn chính luận (trích)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thai-nguyen",
+        "tuyen-quang"
+      ],
+      "loi_binh": "Lời kêu gọi ngắn gọn mở đầu phong trào thi đua ái quốc: diệt giặc đói, diệt giặc dốt, diệt giặc ngoại xâm — dựa vào sức dân, vì hạnh phúc của dân.",
+      "nguyen_van": [
+        "«Diệt giặc đói,",
+        "Diệt giặc dốt,",
+        "Diệt giặc ngoại xâm.",
+        "Cách làm là: dựa vào:",
+        "Lực lượng của dân,",
+        "Tinh thần của dân, để gây:",
+        "Hạnh phúc cho dân.»"
+      ],
+      "sources": [
+        "Lời kêu gọi thi đua ái quốc của Chủ tịch Hồ Chí Minh — Báo Công an nhân dân — https://cand.vn/Su-kien-Binh-luan-thoi-su/Loi-keu-goi-thi-dua-ai-quoc-cua-Chu-tich-Ho-Chi-Minh-i478900/"
+      ],
+      "nhom": "van"
+    },
+    {
+      "id": "loi-keu-goi-khong-co-gi-quy-hon-doc-lap-tu-do-trich",
+      "ten": "Lời kêu gọi chống Mỹ, cứu nước — «Không có gì quý hơn độc lập, tự do» (trích)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "17/07/1966 — Hà Nội, đăng báo Nhân Dân số 4484",
+      "the_loai": "Văn chính luận (trích)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Giữa lúc Mỹ leo thang đánh phá miền Bắc, Bác khẳng định một chân lý bất biến của dân tộc: không có gì quý hơn độc lập, tự do.",
+      "nguyen_van": [
+        "«Chiến tranh có thể kéo dài 5 năm, 10 năm, 20 năm hoặc lâu hơn nữa.",
+        "Hà Nội, Hải Phòng và một số thành phố, xí nghiệp có thể bị tàn phá,",
+        "song nhân dân Việt Nam quyết không sợ!",
+        "Không có gì quý hơn độc lập, tự do.»"
+      ],
+      "sources": [
+        "Khẳng định chân lý «Không có gì quý hơn độc lập, tự do» — Báo Nhân Dân — https://special.nhandan.vn/khang_chien_chong_my_cuu_nuoc_thang_loi_vi_dai_cua_Viet_Nam/index.html",
+        "Chủ tịch Hồ Chí Minh ra Lời kêu gọi đồng bào và chiến sĩ cả nước — Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/chu-tich-ho-chi-minh-ra-loi-keu-goi-dong-bao-va-chien-si-ca-nuoc.htm"
+      ],
+      "nhom": "van"
+    },
+    {
+      "id": "thu-gui-dong-bao-nam-bo-trich",
+      "ten": "Thư gửi đồng bào Nam Bộ (trích)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "01/06/1946 — Hà Nội, trước khi sang Pháp đàm phán; đăng báo Cứu quốc số 255",
+      "the_loai": "Văn chính luận (trích)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Trước ngày lên đường sang Pháp đàm phán, Bác gửi lời khẳng định với đồng bào Nam Bộ: dù sông có cạn, núi có mòn, Nam Bộ vẫn mãi là dân nước Việt Nam.",
+      "nguyen_van": [
+        "«Đồng bào Nam Bộ là dân nước Việt Nam.",
+        "Sông có thể cạn, núi có thể mòn, song chân lý đó không bao giờ thay đổi.»"
+      ],
+      "sources": [
+        "«Đồng bào Nam Bộ là dân nước Việt Nam. Sông có thể cạn, núi có thể mòn...» — Báo Quân khu 4 — https://baoquankhu4.com.vn/loi-bac-ho-day/-dong-bao-nam-bo-la-dan-nuoc-viet-nam.-song-co-the-can-nui-c.html"
+      ],
+      "nhom": "van"
+    },
+    {
+      "id": "bai-noi-tai-den-hung-trich",
+      "ten": "Bài nói chuyện với bộ đội tại Đền Hùng (trích)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "19/09/1954 — Đền Hùng, Phú Thọ, trước khi bộ đội về tiếp quản Thủ đô",
+      "the_loai": "Văn chính luận (trích)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "phu-tho"
+      ],
+      "loi_binh": "Trước ngày đại đoàn về tiếp quản Hà Nội, đứng trước đền thờ các Vua Hùng, Bác nhắc bộ đội: người xưa dựng nước, người nay phải cùng nhau giữ nước.",
+      "nguyen_van": [
+        "«Bác cháu ta gặp nhau ở đây trong tình cờ nhưng lại rất có ý nghĩa.",
+        "Ngày xưa các Vua Hùng đã có công dựng nước, ngày nay Bác cháu ta phải cùng nhau giữ lấy nước...",
+        "Trải qua bao thời đại đấu tranh, ông cha ta mới giữ được Thủ đô,",
+        "tám chín năm nay, do quân ta kiên quyết kháng chiến nên mới có thắng lợi trở về Hà Nội.»"
+      ],
+      "sources": [
+        "70 năm Bác Hồ về thăm Đền Hùng: «Ngày xưa các vua Hùng đã có công dựng nước...» — Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/70-nam-bac-ho-ve-tham-den-hung-ngay-xua-cac-vua-hung-da-co-cong-dung-nuoc-ngay-nay-bac-chau-ta-phai-cung-nhau-giu-lay-nuoc-1-152259.vna"
+      ],
+      "nhom": "van"
+    },
+    {
+      "id": "thu-trung-thu-1952-trich",
+      "ten": "Thư Trung thu năm 1952 gửi các cháu nhi đồng (trích)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "1952 — gửi các cháu nhi đồng vùng tự do, vùng du kích, vùng tạm bị chiếm và ở nước ngoài",
+      "the_loai": "Văn chính luận / vè (trích)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Từ câu hỏi «Ai yêu các nhi đồng bằng Bác Hồ Chí Minh?», Bác gửi vào đó cả tình thương và lời dặn các cháu thi đua học hành, làm việc nhỏ tuỳ sức mình.",
+      "nguyen_van": [
+        "Ai yêu các nhi đồng",
+        "Bằng Bác Hồ Chí Minh?",
+        "Tính các cháu ngoan ngoãn,",
+        "Mặt các cháu xinh xinh,",
+        "Mong các cháu cố gắng",
+        "Thi đua học và hành.",
+        "Tuổi nhỏ làm việc nhỏ,",
+        "Tuỳ theo sức của mình:",
+        "Các cháu hãy xứng đáng:",
+        "Cháu Bác Hồ Chí Minh!"
+      ],
+      "sources": [
+        "«Ai yêu nhi đồng bằng Bác Hồ Chí Minh...» — Báo Đồng Tháp — https://baodongthap.vn/ai-yeu-nhi-dong-bang-bac-ho-chi-minh-a63229.html"
+      ],
+      "nhom": "van"
+    },
+    {
+      "id": "tho-chuc-tet-1942",
+      "ten": "Thơ chúc Tết Xuân Nhâm Ngọ 1942",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Nhâm Ngọ 1942 — mới trở về nước hoạt động cách mạng",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bài thơ chúc Tết đầu tiên của Bác, viết không lâu sau khi Người trở về nước lãnh đạo cách mạng, giữa lúc Nhật chiếm đóng Đông Dương và Thế chiến II chưa ngã ngũ.",
+      "nguyen_van": [
+        "Tháng ngày thấm thoát chóng như thoi,",
+        "Năm cũ qua rồi, chúc năm mới:",
+        "Chúc phe xâm lược sẽ diệt vong!",
+        "Chúc phe dân chủ sẽ thắng lợi!",
+        "Chúc đồng bào ta đoàn kết mau!",
+        "Chúc Việt-minh ta càng tấn tới,",
+        "Chúc toàn quốc ta trong năm này",
+        "Cờ đỏ ngôi sao bay phất phới!",
+        "Năm này là năm Tết vẻ vang,",
+        "Cách mệnh thành công khắp thế giới."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1946",
+      "ten": "Thơ chúc Tết Xuân Bính Tuất 1946 — gửi các chiến sĩ",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Bính Tuất 1946 — Tết độc lập đầu tiên, Nam Bộ đã bước vào kháng chiến",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Cái Tết đầu tiên của nước Việt Nam Dân chủ Cộng hòa vừa độc lập, khi Nam Bộ đã nổ súng kháng chiến chống Pháp trở lại — Bác gửi riêng bài thơ này động viên các chiến sĩ đang ăn Tết xa nhà.",
+      "nguyen_van": [
+        "Bao giờ kháng chiến thành công,",
+        "Chúng ta cùng uống một chung rượu đào.",
+        "Tết này ta tạm xa nhau,",
+        "Chắc rằng ta sẽ Tết sau sum vầy."
+      ],
+      "ghi_chu_dich": "hochiminh.vn đăng bài này trong lời chào 'Hỡi các chiến sĩ yêu quí,' rồi có dấu '...' trước 4 câu trên (phần lời chào văn xuôi bị lược, không phải câu thơ). Bài phân tích của Vũ Quần Phương trên nhandan.vn (04/02/2016) xác nhận đây là bài thơ lục bát trọn vẹn 'cả bài có 28 từ' — đúng khớp 6+8+6+8 = 28 âm tiết của 4 câu trên, và trích dẫn đúng nguyên văn 2 câu cuối. Cùng dịp Tết này Bác còn có bài 'Chúc đồng bào' (thể ngũ ngôn, gửi dân) nhưng bản trên hochiminh.vn chỉ còn 4/5 câu (thiếu 1 câu, có dấu '...'), nên KHÔNG đưa vào đây vì không đủ nguyên văn.",
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376",
+        "Báo Nhân Dân điện tử (bài phân tích của Vũ Quần Phương, xác nhận 2 câu cuối và cấu trúc lục bát 28 từ) — https://nhandan.vn/tho-chu-tich-ho-chi-minh-chuc-tet-nam-thu-nhat-viet-nam-dan-chu-cong-hoa-post254788.html"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1947",
+      "ten": "Thơ chúc Tết Xuân Đinh Hợi 1947",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Đinh Hợi 1947 — sau Toàn quốc kháng chiến (19/12/1946)",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bài thơ chúc Tết đầu tiên sau ngày Toàn quốc kháng chiến bùng nổ, khi cả dân tộc chính thức bước vào cuộc trường kỳ kháng chiến chống thực dân Pháp.",
+      "nguyen_van": [
+        "Cờ đỏ sao vàng tung bay trước gió,",
+        "Tiếng kèn kháng chiến vang dậy non sông.",
+        "Toàn dân kháng chiến, toàn diện kháng chiến,",
+        "Chí ta đã quyết, lòng ta đã đồng.",
+        "Tiến lên chiến sĩ! Tiến lên đồng bào!",
+        "Sức ta đã mạnh, người ta đã đông.",
+        "Trường kỳ kháng chiến, nhất định thắng lợi!",
+        "Thống nhất độc lập, nhất định thành công!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1948",
+      "ten": "Thơ chúc Tết Xuân Mậu Tý 1948",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Mậu Tý 1948 — kháng chiến chống Pháp, chính phủ đã lên chiến khu Việt Bắc",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết giữa những năm đầu kháng chiến chống Pháp, sau khi cơ quan kháng chiến đã rút lên căn cứ địa Việt Bắc.",
+      "nguyen_van": [
+        "Năm Hợi đã đi qua,",
+        "Năm Tý vừa bước tới.",
+        "Gửi lời chúc đồng bào,",
+        "Kháng chiến được thắng lợi;",
+        "Toàn dân đại đoàn kết,",
+        "Cả nước dốc một lòng,",
+        "Thống nhất chắc chắn được,",
+        "Độc lập quyết thành công."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1949",
+      "ten": "Thơ chúc Tết Xuân Kỷ Sửu 1949",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Kỷ Sửu 1949 — cao trào thi đua ái quốc",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Ra đời giữa phong trào thi đua ái quốc mà Bác phát động cuối 1948, cổ vũ tinh thần thi đua tăng gia sản xuất và chiến đấu trong kháng chiến.",
+      "nguyen_van": [
+        "Kháng chiến lại thêm một năm mới,",
+        "Thi đua ái quốc thêm tiến tới.",
+        "Động viên lực lượng và tinh thần,",
+        "Kháng chiến càng thêm mau thắng lợi.",
+        "Người người thi đua.",
+        "Ngành ngành thi đua.",
+        "Ngày ngày thi đua.",
+        "Ta nhất định thắng.",
+        "Địch nhất định thua."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1950",
+      "ten": "Thơ chúc Tết Xuân Canh Dần 1950",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Canh Dần 1950 — trước thềm chiến dịch Biên giới",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết khi kháng chiến chuẩn bị chuyển sang giai đoạn tổng phản công, ngay trước chiến dịch Biên giới Thu Đông 1950.",
+      "nguyen_van": [
+        "Kính chúc đồng bào năm mới,",
+        "Mọi người càng thêm phấm khởi,",
+        "Toàn dân xung phong thi đua,",
+        "Đẩy mạnh cuộc chuẩn bị tới,",
+        "Chuyển mau sang tổng phản công,",
+        "Kháng chiến nhất định thắng lợi."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1951",
+      "ten": "Thơ chúc Tết Xuân Tân Mão 1951",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Tân Mão 1951 — tròn 5 năm kháng chiến toàn quốc",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Đánh dấu tròn 5 mùa xuân kháng chiến toàn quốc, cùng năm Đại hội Đảng lần thứ II họp tại Việt Bắc.",
+      "nguyen_van": [
+        "Xuân này kháng chiến đã năm Xuân,",
+        "Nhiều Xuân thắng lợi càng gần thành công.",
+        "Toàn dân hăng hái một lòng",
+        "Thi đua chuẩn bị, tổng phản công kịp thời."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1952",
+      "ten": "Thơ chúc Tết Xuân Nhâm Thìn 1952",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Nhâm Thìn 1952 — năm thứ sáu kháng chiến",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết năm thứ sáu kháng chiến trường kỳ, giữa lúc cả nước đẩy mạnh phong trào thi đua giết giặc lập công.",
+      "nguyen_van": [
+        "Xuân này, Xuân năm Thìn",
+        "Kháng chiến vừa sáu năm",
+        "Trường kỳ và gian khổ",
+        "Chắc thắng trăm phần trăm.",
+        "Chiến sĩ thi giết giặc",
+        "Đồng bào thi tăng gia",
+        "Năm mới thi đua mới",
+        "Thắng lợi ắt về ta.",
+        "Mấy câu thành thật nôm na,",
+        "Vừa là kêu gọi, vừa là mừng Xuân."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1953",
+      "ten": "Thơ chúc Tết Xuân Quý Tỵ 1953",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Quý Tỵ 1953 — phát động giảm tô, chuẩn bị cải cách ruộng đất",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết trong năm phát động giảm tô ở vùng tự do, bước chuẩn bị cho cải cách ruộng đất, song song với kháng chiến chống Pháp.",
+      "nguyen_van": [
+        "Mừng năm Thìn vừa qua,",
+        "Mừng Xuân Tỵ đã tới.",
+        "Mừng phát động nông dân,",
+        "Mừng hậu phương phấn khởi.",
+        "Mừng tiền tuyến toàn quân",
+        "Thi đua chiến thắng mới.",
+        "Mừng toàn dân kết đoàn,",
+        "Mừng kháng chiến thắng lợi.",
+        "Mừng năm mới, nhiệm vụ mới,",
+        "Mừng toàn thể chiến sĩ và đồng bào,",
+        "Mừng phe dân chủ hoà bình thế giới."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1954",
+      "ten": "Thơ chúc Tết Xuân Giáp Ngọ 1954",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Giáp Ngọ 1954 — trước chiến dịch Điện Biên Phủ",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết ngay trước chiến dịch Điện Biên Phủ, khi kháng chiến chống Pháp bước vào giai đoạn quyết định, song song với nhiệm vụ cải cách ruộng đất.",
+      "nguyen_van": [
+        "Năm mới, quân dân ta có hai nhiệm vụ rành rành:",
+        "- Đẩy mạnh kháng chiến để giành độc lập tự do",
+        "- Cải cách ruộng đất là công việc rất to",
+        "Dần dần làm cho người cày có ruộng khỏi lo nghèo nàn.",
+        "Quân và dân ta nhất trí kết đoàn,",
+        "Kháng chiến, kiến quốc nhất định hoàn toàn thành công.",
+        "Hoà bình dân chủ thế giới khắp Nam, Bắc, Tây, Đông.",
+        "Năm mới, thắng lợi càng mới, thành công càng nhiều."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1956",
+      "ten": "Thơ chúc Tết Xuân Bính Thân 1956",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Bính Thân 1956 — miền Bắc đã giải phóng, đất nước tạm chia hai miền",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết sau khi miền Bắc hoàn toàn giải phóng (1954) và đất nước tạm thời chia làm hai miền theo Hiệp định Genève, khi nhiệm vụ xây dựng miền Bắc và giữ vững miền Nam song hành.",
+      "nguyen_van": [
+        "Thân ái mấy lời chúc Tết:",
+        "Toàn dân đoàn kết một lòng,",
+        "Miền Bắc thi đua xây dựng,",
+        "Miền Nam giữ vững thành đồng,",
+        "Quyết chí, bền gan phấn đấu,",
+        "Hoà bình, thống nhất thành công."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1960",
+      "ten": "Thơ chúc Tết Xuân Canh Tý 1960",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Canh Tý 1960 — 15 năm nước Việt Nam Dân chủ Cộng hòa, 30 năm thành lập Đảng",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Mừng cùng lúc hai mốc lớn — 15 năm nước Việt Nam Dân chủ Cộng hòa và 30 năm thành lập Đảng — khi miền Bắc bắt đầu bước vào công cuộc xây dựng chủ nghĩa xã hội.",
+      "nguyen_van": [
+        "Mừng Nhà nước ta 15 Xuân xanh!",
+        "Mừng Đảng chúng ta 30 tuổi trẻ!",
+        "Chúc đồng bào ta đoàn kết thi đua,",
+        "Xây dựng miền Bắc xã hội chủ nghĩa.",
+        "Chúc đồng bào ta bền bỉ đấu tranh,",
+        "Thành đồng miền Nam vững bền mạnh mẽ.",
+        "Cả nước một lòng, hăng hái tiến lên,",
+        "Thống nhất nước nhà, Bắc Nam vui vẻ!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1961",
+      "ten": "Thơ chúc Tết Xuân Tân Sửu 1961",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Tân Sửu 1961 — mở đầu Kế hoạch 5 năm lần thứ nhất",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết vào năm mở đầu Kế hoạch 5 năm lần thứ nhất (1961-1965) xây dựng miền Bắc, trong khi đấu tranh ở miền Nam tiếp tục được cổ vũ.",
+      "nguyen_van": [
+        "Mừng năm mới, mừng Xuân mới,",
+        "Mừng Việt Nam, mừng thế giới!",
+        "Đường lên hạnh phúc rộng thênh thênh,",
+        "Kế hoạch 5 năm thêm phấn khởi.",
+        "Chúc miền Bắc hăng hái thi đua;",
+        "Chúc miền Nam đoàn kết tiến tới!",
+        "Chúc hoà bình thống nhất thành công!",
+        "Chúc chủ nghĩa xã hội thắng lợi!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1962",
+      "ten": "Thơ chúc Tết Xuân Nhâm Dần 1962",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Nhâm Dần 1962 — phong trào thi đua Duyên Hải, Đại Phong ở miền Bắc",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết giữa phong trào thi đua sản xuất mang tên các lá cờ đầu Duyên Hải, Đại Phong ở miền Bắc, khi cuộc đấu tranh ở miền Nam ngày càng quyết liệt.",
+      "nguyen_van": [
+        "Năm Dần, mừng Xuân thế giới,",
+        "Cả năm châu phấp phới cờ hồng.",
+        "Chúc miền Bắc thi đua phấn khởi,",
+        "Bốn mùa hoa Duyên-hải, Đại-phong.",
+        "Chúc miền Nam đấu tranh tiến tới,",
+        "Sức triệu người hơn sóng biển Đông.",
+        "Chủ nghĩa xã hội càng thắng lợi,",
+        "Hoà bình thống nhất quyết thành công."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1963",
+      "ten": "Thơ chúc Tết Xuân Quý Mão 1963",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Quý Mão 1963",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bài thơ chúc Tết ngắn gọn nhất trong toàn bộ chùm thơ của Bác, chỉ vẻn vẹn bốn câu ngắn như một lời hô vang.",
+      "nguyen_van": [
+        "Mừng năm mới,",
+        "Cố gắng mới,",
+        "Tiến bộ mới,",
+        "Chúc Quý Mão là năm nhiều thắng lợi!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1964",
+      "ten": "Thơ chúc Tết Xuân Giáp Thìn 1964",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Giáp Thìn 1964 — đất nước còn chia cắt hai miền",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết giữa lúc thống nhất đất nước là khát vọng cháy bỏng của cả hai miền Nam Bắc, khi Mỹ ngày càng can thiệp sâu vào miền Nam.",
+      "nguyen_van": [
+        "Bắc Nam như cội với cành,",
+        "Anh em ruột thịt, đấu tranh một lòng.",
+        "Rồi đây thống nhất thành công,",
+        "Bắc Nam ta lại vui chung một nhà.",
+        "Mấy lời thân ái nôm na,",
+        "Vừa là kêu gọi, vừa là mừng Xuân."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1965",
+      "ten": "Thơ chúc Tết Xuân Ất Tỵ 1965",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Ất Tỵ 1965 — 20 năm nước Việt Nam Dân chủ Cộng hòa, Mỹ bắt đầu ném bom miền Bắc",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Mừng tròn 20 năm nước Việt Nam Dân chủ Cộng hòa, đúng năm Mỹ đưa quân viễn chinh vào miền Nam và mở rộng chiến tranh phá hoại ra miền Bắc.",
+      "nguyen_van": [
+        "Chào mừng Ất Tỵ Xuân năm mới,",
+        "Nhà nước ta vừa tuổi hai mươi,",
+        "Miền Bắc xây dựng đời sống mới vui tươi,",
+        "Miền Nam kháng chiến ngày càng tiến tới,",
+        "Đồng bào hai miền thi đua sôi nổi,",
+        "Đấu tranh anh dũng, cả nước một lòng,",
+        "Chủ nghĩa xã hội ngày càng thắng lợi!",
+        "Hoà bình thống nhất ắt hẳn thành công!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1966",
+      "ten": "Thơ chúc Tết Xuân Bính Ngọ 1966",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Bính Ngọ 1966 — miền Nam liên tiếp thắng lớn trước chiến lược \"chiến tranh cục bộ\" của Mỹ",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết giữa lúc quân dân miền Nam liên tiếp thắng lớn ở Dầu Tiếng, Bầu Bàng, Plei Me, Đà Nẵng, bẻ gãy những đợt đầu của chiến lược \"chiến tranh cục bộ\" mà Mỹ vừa phát động.",
+      "nguyen_van": [
+        "Mừng miền Nam rực rỡ chiến công,",
+        "Nhiều Dầu Tiếng, Bầu Bàng, Plei Me, Đà Nẵng.",
+        "Mừng miền Bắc chiến đấu anh hùng,",
+        "Giặc Mỹ leo thang ngày càng thua nặng.",
+        "Đồng bào cả nước đoàn kết một lòng,",
+        "Tiền tuyến hậu phương, toàn dân cố gắng.",
+        "Thi đua sản xuất chiến đấu xung phong,",
+        "Chống Mỹ, cứu nước, ta nhất định thắng."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376",
+        "Tư liệu Văn kiện Đảng Cộng sản Việt Nam — https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/chu-tich-ho-chi-minh-voi-nhung-bai-tho-chuc-tet-truoc-luc-nguoi-di-xa-2106"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1967",
+      "ten": "Thơ chúc Tết Xuân Đinh Mùi 1967",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Đinh Mùi 1967 — kháng chiến chống Mỹ ở cả hai miền giành nhiều thắng lợi",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bài thơ ngắn viết khi cuộc kháng chiến chống Mỹ, cứu nước ở cả hai miền liên tiếp báo tin thắng trận.",
+      "nguyen_van": [
+        "Xuân về xin có một bài ca,",
+        "Gửi chúc đồng bào cả nước ta:",
+        "Chống Mỹ hai miền đều đánh giỏi,",
+        "Tin mừng thắng trận nở như hoa!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376",
+        "Tư liệu Văn kiện Đảng Cộng sản Việt Nam — https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/chu-tich-ho-chi-minh-voi-nhung-bai-tho-chuc-tet-truoc-luc-nguoi-di-xa-2106"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1968",
+      "ten": "Thơ chúc Tết Mậu Thân 1968",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Mậu Thân 1968 — hiệu lệnh mở màn cuộc Tổng tiến công và nổi dậy",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bài thơ được phát trên Đài Tiếng nói Việt Nam đêm Giao thừa 1/1/1968 (dương lịch); đúng một tháng sau, đêm 30 rạng 31/1/1968, quân dân miền Nam mở cuộc Tổng tiến công và nổi dậy Tết Mậu Thân — nhiều người coi bài thơ là hiệu lệnh báo trước sự kiện này.",
+      "nguyen_van": [
+        "Xuân này hơn hẳn mấy Xuân qua,",
+        "Thắng trận tin vui khắp nước nhà,",
+        "Nam Bắc thi đua đánh giặc Mỹ.",
+        "Tiến lên!",
+        "Toàn thắng ắt về ta!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376",
+        "Báo Quân khu 7 — https://baoquankhu7.vn/tho-chuc-tet-mau-than-1968-cua-bac-ho-1733848900-0021590s35910gs",
+        "Tư liệu Văn kiện Đảng Cộng sản Việt Nam — https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/chu-tich-ho-chi-minh-voi-nhung-bai-tho-chuc-tet-truoc-luc-nguoi-di-xa-2106"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1969",
+      "ten": "Thơ chúc Tết Kỷ Dậu 1969",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Kỷ Dậu 1969 — bài thơ chúc Tết cuối cùng của Bác",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bài thơ chúc Tết cuối cùng Bác đọc trên Đài Tiếng nói Việt Nam đêm Giao thừa — tám tháng sau, Người qua đời (2/9/1969), để lại cùng với Di chúc.",
+      "nguyen_van": [
+        "Năm qua thắng lợi vẻ vang,",
+        "Năm nay tiền tuyến chắc càng thắng to.",
+        "Vì độc lập, vì tự do,",
+        "Đánh cho Mỹ cút, đánh cho ngụy nhào.",
+        "Tiến lên! Chiến sĩ, đồng bào,",
+        "Bắc - Nam sum họp Xuân nào vui hơn."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376",
+        "Tư liệu Văn kiện Đảng Cộng sản Việt Nam — https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/chu-tich-ho-chi-minh-voi-nhung-bai-tho-chuc-tet-truoc-luc-nguoi-di-xa-2106"
+      ],
+      "nhom": "chuc-tet"
     }
   ]
 }

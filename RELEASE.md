@@ -147,3 +147,51 @@ Ba file `boundaries/*.geojson` đều có đủ 5 feature chủ quyền: **Hoàn
 1. **Gradient topbar trẻ em bản đầu chỉ đạt 2,15:1** với chữ trắng — hỏng nặng ngưỡng 4,5:1. Đẩy sắc độ sâu hơn, giữ đủ ba màu cam → đỏ → tím, đo lại 5,07 · 6,00 · 6,71:1.
 2. **Nút topbar chế độ trẻ em đạt 4,60:1** với nền mờ 8% — qua ngưỡng nhưng biên mỏng tới mức một lần chỉnh gradient là trượt. Đổi sang viên thuốc trắng đặc, chữ nâu cam đậm: 7,31:1.
 3. 🔴 **Chrome không làm mới kiểu dáng của phần tử có `transition` trên `color`/`background` khi đổi chế độ.** Đo được: biến đã đúng, rule đã hết khớp, nhưng giá trị tính ra vẫn là của chế độ cũ — trễ đúng một nhịp, trong khi `font-size` (không nằm trong danh sách transition) đổi ngay. Đã bỏ `color`/`background` khỏi cả 5 khai báo `transition` trong `style.css`; phản hồi di chuột giữ lại qua `transform` + `box-shadow`. Kiểm chứng: bấm chuyển 4 lần liên tiếp, cả hai chiều đều đúng.
+
+---
+
+## Phiên 2026-08-04
+
+Bốn việc chủ dự án giao sau khi khảo sát lại trang. Commit `3591342` (3D + hình thức + a11y).
+
+### Biểu tượng lớp phủ ở chế độ 3D — dựng thành mô hình khối
+
+Chủ dự án: *"ở 3D, các biểu tượng vẫn chưa được chuyển dạng, vẫn ở 2D"*.
+
+Đo trước khi sửa, bằng Chrome headless có WebGL thật:
+
+| Mức phóng | Chấm phẳng vẽ ra | Mô hình 3D dựng ra |
+|---|---|---|
+| 4,69 (mặc định khi bấm 3D) | **152** | **0** |
+| 9,50 | 7 | 7 |
+| 12,0 | 2 | 2 |
+
+Gốc lỗi: `capNhatMoHinhDiem()` thoát sớm khi `dangDiorama()` — mà cảnh diorama chính là cảnh hiện ra ngay khi bấm nút 3D. Mô hình chỉ sống từ zoom 7,5 trở lên, gần như không ai xuống tới đó.
+
+- Bỏ nhánh thoát sớm — 3D bật là dựng mô hình ở **mọi** mức phóng.
+- Chiều cao biểu kiến co theo zoom: **20 px** ở tầm cả nước → **46 px** ở tầm phố. Bản sửa đầu giữ nguyên 46 px và **hỏng theo cách khác**: 152 mô hình cao 46 px dựng lên một dải đất rộng 350 px thì che kín chính đất nước, thấy rõ trên ảnh chụp. Đây là lý do phải chụp lại sau mỗi lần sửa chứ không tin vào lập luận.
+- Icon phẳng nhường chỗ khi 3D bật; vòng tròn ở lại và thu từ `r5` xuống `r3` — nó tụt xuống vai trò chân đế và **vùng bấm**, vì mô hình Three.js không nhận sự kiện bấm của MapLibre. Điểm vượt trần vẫn còn vòng tròn nên không mục nào biến mất khỏi bản đồ.
+- Đổi `clone()` sang **`InstancedMesh`**: một ngôi chùa 8 mảnh × 400 điểm là 3.200 lệnh vẽ mỗi khung hình, gom lại còn 8. Nhờ đó nâng trần **120 → 400** mô hình. Ma trận chỉ nạp lại khi mức phóng đổi hoặc tập điểm đổi, không phải mỗi khung hình.
+- `map.moveLayer("landmarks-3d")` sau mỗi lần thêm lớp phủ — lớp thêm sau vẽ sau, không đẩy lên thì vòng tròn phẳng đè lên chân mô hình.
+
+### Hình thức
+
+- **Thanh trượt dòng thời gian** — control chạm nhiều nhất mà thô nhất trang: một vạch 4 px với nút mặc định của hệ điều hành. Dựng lại rãnh 7 px bo tròn, phần đã đi qua sáng lên theo `--tien-do` do `setPeriod()` đặt, nút 19 px viền nâu có quầng sáng khi di chuột/bàn phím.
+- **Cụm control MapLibre** — hộp trắng vuông mặc định đứng cạnh panel kính mờ bo 14 px. Cho về cùng ngôn ngữ: kính mờ, bo 10 px, hover nhuộm màu brand.
+- **Thước tỉ lệ chuyển trái-dưới → phải-dưới.** Bảng lớp cao gần hết cột trái nên thước nằm lọt phía sau, đo trên ảnh chỉ thò ra vài pixel mép dưới.
+- **Ghi chú pháp lý cương vực** từ bốn dòng chữ cam trôi nổi thành callout có khung — cùng lượng chữ nhưng đọc ra ngay là lời chú chứ không phải lỗi.
+- Đầu bảng lớp có gạch chân; nhãn «THỜI KỲ» và ô chọn thời kỳ dựng lại.
+
+### Hoàn thiện tính năng
+
+- **Nối dây `timeline/events.json`** (34 sự kiện, NQ 202/2025/QH15). File có đủ số nghị quyết, ngày hiệu lực và link cổng Chính phủ nhưng **không module TS nào đọc tới** — panel tỉnh nói "hợp thành từ A và B" mà không nói theo văn bản nào, trái bất biến mọi mục phải dẫn về nguồn chính thống. Nay hiện: «Hợp nhất An Giang + Kiên Giang — Nghị quyết 202/2025/QH15, hiệu lực 1/7/2025» kèm link. Kiểm bằng cú bấm thật trên canvas headless.
+- **11 panel nổi thành hộp thoại thật** — `role=dialog`, `aria-label`, đưa tiêu điểm vào panel khi mở, trả tiêu điểm ở `hideAllPanels()` (đích của phím Esc). Đăng ký nốt `library`/`game`/`quiz` panel, trước nay không module nào đăng ký chúng.
+  - `aria-label` đọc `data-nhan` **trước** `h2`: bốn panel trong `index.html` nạp nội dung không đồng bộ, lúc mở còn rỗng nên đọc `h2` ra chuỗi rỗng rồi rơi về id — đo được trình đọc màn hình sẽ đọc lên "library-panel".
+  - **Cố ý không làm focus trap**, `aria-modal=false`: các panel này không modal, bản đồ sau lưng vẫn kéo/bấm được. Nhốt tiêu điểm trong hộp thoại không modal là bẫy người dùng bàn phím vào chỗ mà chuột thì đi ra được.
+- **Link "bỏ qua tới bản đồ"** — trước phải Tab qua logo, ô tìm kiếm và 4 nút mới chạm được bản đồ.
+- **`aria-valuetext` cho thanh trượt** — đọc tên thời kỳ thay vì "3 trên 12".
+- Thư viện chia mục thơ văn của Bác theo trường `nhom`.
+
+### Một phép đo sai, ghi lại để lần sau khỏi mất công
+
+Lần đầu kiểm link "bỏ qua" báo **hỏng**: link không vào khung hình khi nhận tiêu điểm. Probe kỹ thì `document.activeElement` **đúng là** link, nhưng `a.matches(':focus')` trả `false`. Nguyên nhân: cửa sổ Chrome headless không có tiêu điểm hệ điều hành nên `:focus` không khớp. Bật `Emulation.setFocusEmulationEnabled` thì `matchFocus: true` và link nằm ở `top: 7,5 px` — đúng như thiết kế. **Lỗi ở phép đo, không ở trang.**
