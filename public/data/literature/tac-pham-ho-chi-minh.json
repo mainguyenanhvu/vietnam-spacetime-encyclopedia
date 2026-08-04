@@ -1482,7 +1482,9 @@
       "sources": [
         "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
       ],
-      "nhom": "chuc-tet"
+      "nhom": "chuc-tet",
+      "ghi_chu_dich": "Câu «Ấy là cơ - hội tốt cho ta!» lặp lại hai lần liền — chép đúng theo nguồn. Có thể là lối thơ liên hoàn (câu cuối khổ trên làm câu đầu khổ dưới), cũng có thể là lỗi khi số hoá; dự án chưa tìm được nguồn thứ hai để phân định.",
+      "ghi_chu_bien_tap": "ĐỪNG xoá một trong hai dòng lặp. Đã kiểm 2026-08-04 bằng cách tải THẲNG mã HTML gốc của hochiminh.vn (không qua trình render), loại trừ được khả năng công cụ crawl tự nhân đôi: hai câu cách nhau đúng 7 khoảng trắng thường, y hệt mọi cặp dòng khác, và KHÔNG có ký tự ngắt khổ (\\xa0 chỉ xuất hiện ở ranh giới giữa hai bài). Tức dòng lặp nằm trong chính nguồn. Muốn xoá thì phải có nguồn thứ hai in 15 dòng. CÒN MỘT NGHI VẤN NẶNG HƠN đang tra: Bác bị giam ở Quảng Tây 29/8/1942–10/9/1943, tức Tết Quý Mùi 1943 rơi vào thời gian bị giam — niên đại của cả bài này đang phải xác minh lại, không riêng dòng lặp."
     },
     {
       "id": "tho-chuc-tet-1944",
@@ -1540,7 +1542,9 @@
       "sources": [
         "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
       ],
-      "nhom": "chuc-tet"
+      "nhom": "chuc-tet",
+      "ghi_chu_dich": "Câu «Trên thế giới được hưởng binh quyền» chép đúng theo nguồn. Nhiều khả năng là lỗi in của «bình quyền», nhưng dự án chưa tìm được nguồn chính thống thứ hai có toàn văn bài này để đối chiếu nên giữ nguyên chữ của nguồn.",
+      "ghi_chu_bien_tap": "ĐỪNG tự sửa thành «bình quyền». Đã kiểm 2026-08-04 bằng mã HTML gốc: hochiminh.vn đúng là in «binh», không phải lỗi hiển thị. Đã tìm nguồn thứ hai theo nhiều hướng (tên bài gốc, cụm từ lân cận, các cổng .gov.vn, tulieuvankien) — không ra. Khác với ca «phấm khởi» ở bài 1950: ca đó CÓ nguồn thứ hai nên đã sửa. Không có nguồn thì không sửa. Bài cũng KHÔNG bị cắt: sau câu cuối là đúng ký tự ngăn cách dùng ở mọi ranh giới năm khác."
     },
     {
       "id": "tho-chuc-tet-1946",
@@ -1729,13 +1733,18 @@
         "Mừng toàn dân kết đoàn,",
         "Mừng kháng chiến thắng lợi.",
         "Mừng năm mới, nhiệm vụ mới,",
+        "Lực lượng mới, thành công mới.",
         "Mừng toàn thể chiến sĩ và đồng bào,",
         "Mừng phe dân chủ hoà bình thế giới."
       ],
       "sources": [
-        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+        "Chuyên trang Bài viết của Bác Hồ trên Báo Nhân Dân (hochiminh.nhandan.vn), dẫn nguồn Báo Nhân Dân số 95, 11-15/2/1953, tr.1 — https://hochiminh.nhandan.vn/tho-chuc-tet-xuan-quy-ty-1334.html",
+        "Báo Nhân Dân điện tử, 'Ngày xuân đọc thơ chúc Tết của Bác Hồ' (Bảo Thư, 14/02/2015) — https://nhandan.vn/ngay-xuan-doc-tho-chuc-tet-cua-bac-ho-post225484.html",
+        "Trang tin điện tử Hồ Chí Minh (bản 11 dòng, thiếu 1 câu) — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
       ],
-      "nhom": "chuc-tet"
+      "nhom": "chuc-tet",
+      "ghi_chu_dich": "Chép theo chuyên trang «Bài viết của Bác Hồ trên Báo Nhân Dân», dẫn thẳng Báo Nhân Dân số 95, 11–15/2/1953, tr.1. Bản trên cổng hochiminh.vn thiếu câu «Lực lượng mới, thành công mới.».",
+      "ghi_chu_bien_tap": "Đã phân xử 2026-08-04 bằng ba nguồn: hochiminh.vn in 11 dòng; Nhân Dân 14/02/2015 và chuyên trang hochiminh.nhandan.vn (dẫn số báo gốc) đều in 12 dòng. Lấy bản 12 dòng. Giữ «kết đoàn» chứ KHÔNG đổi thành «đoàn kết»: nguồn dẫn số báo gốc và hochiminh.vn đều ghi «kết đoàn», chỉ bài Bảo Thư ghi khác. Chỉ thêm đúng một câu, không đổi chữ nào."
     },
     {
       "id": "tho-chuc-tet-1954",
