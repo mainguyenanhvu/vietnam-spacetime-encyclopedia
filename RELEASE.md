@@ -269,6 +269,10 @@ Lô đó đề nghị nới chính sách: dẫn nguồn dù chưa mở đọc đ
 
 Kiểm chứng bằng **55 bài đã có** (lấy từ SGK và bản Viện Văn học, nguồn độc lập): 46 bài khớp từng câu. Phần còn lại là 1 bài không thuộc 133 bài của tập, và **ba chỗ dị bản thật** giữa hai bản in nhà nước — «đông hàn/đông tàn» và «cách kiện cường/cánh khẩn trương» (Tự miễn) · «ngận/hẩn thống khổ» · «thuỵ thời/thụy thì». Nêu cả hai bản trong ghi chú, không sửa chữ đã nạp.
 
+**Kiểm chéo bằng nguồn thứ hai.** Lô tra web tuy chỉ ra được 2 bài nhưng 2 bài đó thành phép thử độc lập cho cả đường ống bóc PDF: «Dạ bán văn khốc phu» khớp **4/4 câu** với bản đọc thẳng trên `hanoimoi.vn`; «Dương Đào bệnh trọng» khớp 4/4, chỉ khác ở chỗ sách đóng ngoặc kép thành ngữ «Thành hỏa trì ngư». Lô đó cũng cảnh báo có thể lẫn «Dạ bán» với «Dạ bán văn khốc phu» — đối chiếu bản sách cho thấy **hai bài khác nhau thật**, bài 100 và bài 65, đã nạp riêng.
+
+Bốn bài liên quan tới sĩ quan Quốc dân Đảng Trung Hoa (Tưởng Giới Thạch · Lương Hoa Thịnh · Hầu Chí Minh · khoa viên họ Trần) đều mang sẵn chú thích của chính cuốn sách nói rõ nhân vật là ai. Chỗ dễ nhầm nhất — **Hầu Chí Minh là chủ nhiệm Cục chính trị Chiến khu IV, không phải Hồ Chí Minh** — được nói thẳng trong ghi chú của bài 128, nơi tên hai người đứng gần nhau nhất.
+
 Bản quyền bản dịch lần này biết chắc thay vì đoán, vì sách in tên dịch giả từng bài: **24 bài Nam Trân đơn danh** (mất 1967, hết bảo hộ) chép nguyên bản dịch thơ; **38 bài** dịch giả còn bảo hộ (Huệ Chi, Đỗ Văn Hỷ, Băng Thanh, Nguyễn Sĩ Lâm, Hoàng Trung Thông, Trần Đắc Thọ, Văn Trực - Văn Phụng) thì không chép, thay bằng bản dịch nghĩa văn xuôi dự án tự viết từ phiên âm Hán-Việt và nói rõ trong ghi chú. Bản dịch nghĩa của chính cuốn sách cũng không chép — đó là dịch phẩm của người biên soạn.
 
 Ba bài không nạp: **bài 1** và **bài 108** dự án đã có (khớp hụt vì hai bài đó không có đầu đề); **bài 101 «Liễu Châu ngục»** thì chú thích của chính cuốn sách ghi *nguyên bản chỉ có đầu đề, không có thơ* — không có nguyên văn thì không nạp, kể cả khi biết chắc bài đó tồn tại.
