@@ -1203,7 +1203,9 @@
       "sources": [
         "Di chúc Bác Hồ — Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/di-chuc-bac-ho-7769"
       ],
-      "nhom": "van"
+      "nhom": "van",
+      "ghi_chu_dich": "Bốn câu trích lấy từ bốn đoạn khác nhau của bản Di chúc, không liền mạch — vì thế mỗi câu đứng riêng trong ngoặc kép.",
+      "ghi_chu_bien_tap": "ĐỪNG gộp bốn câu thành một đoạn văn liền mạch: làm vậy là dựng ra một đoạn Bác không viết. Muốn thêm thì thêm câu trích mới, vẫn để riêng từng câu."
     },
     {
       "id": "thu-gui-hoc-sinh-khai-truong-trich",
@@ -1294,7 +1296,9 @@
       "sources": [
         "«Đồng bào Nam Bộ là dân nước Việt Nam. Sông có thể cạn, núi có thể mòn...» — Báo Quân khu 4 — https://baoquankhu4.com.vn/loi-bac-ho-day/-dong-bao-nam-bo-la-dan-nuoc-viet-nam.-song-co-the-can-nui-c.html"
       ],
-      "nhom": "van"
+      "nhom": "van",
+      "ghi_chu_dich": "Hai câu này là đoạn được dẫn lại nhiều nhất của bức thư, không phải toàn văn. Thư gốc dài hơn nhiều — xin xem tại nguồn dẫn.",
+      "ghi_chu_bien_tap": "Ngắn hơn mức 4–8 dòng thường đặt cho mục văn chính luận. Cố ý: chỉ tra được đúng đoạn này trên nguồn chính thống, không kéo dài bằng cách đoán phần còn lại."
     },
     {
       "id": "bai-noi-tai-den-hung-trich",
@@ -1345,6 +1349,84 @@
       "nhom": "van"
     },
     {
+      "id": "viet-nam-doc-lap-tho-co-dong",
+      "ten": "Việt Nam độc lập (thơ trong tranh cổ động)",
+      "tac_gia": "Nguyễn Ái Quốc (Hồ Chí Minh)",
+      "thoi_ky": "1941 — đăng kèm tranh cổ động tự vẽ trên báo Việt Nam Độc Lập, Pác Bó, Cao Bằng",
+      "the_loai": "Thất ngôn tứ tuyệt (tiếng Việt, thơ trong tranh cổ động)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "cao-bang"
+      ],
+      "loi_binh": "Nguyễn Ái Quốc tự vẽ tranh cổ động ghép từ chính bốn chữ «Việt Nam độc lập» thành hình người thổi kèn, rồi đề bên dưới bốn câu thơ kêu gọi già trẻ đoàn kết cứu nước.",
+      "nguyen_van": [
+        "Việt Nam độc lập thổi kèn loa.",
+        "Kêu gọi nhân dân trẻ lẫn già.",
+        "Đoàn kết vững bền như khối sắt.",
+        "Để cùng nhau cứu nước Nam ta!"
+      ],
+      "sources": [
+        "Minh họa tuyên truyền cổ động độc đáo của báo Việt Nam Độc Lập — Cục Mỹ thuật, Nhiếp ảnh và Triển lãm (Bộ Văn hóa, Thể thao và Du lịch) — https://ape.gov.vn/minh-hoa-tuyen-truyen-co-dong-doc-dao-cua-bao-viet-nam-doc-lap-d758.th"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "phu-nu-1941-trich",
+      "ten": "Phụ nữ (trích)",
+      "tac_gia": "Nguyễn Ái Quốc (Hồ Chí Minh), bút danh Kim Oanh",
+      "thoi_ky": "01/09/1941 — báo Việt Nam Độc Lập số 104",
+      "the_loai": "Lục bát (tiếng Việt, trích đoạn)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "cao-bang"
+      ],
+      "loi_binh": "Ký tên Kim Oanh, Bác nhắc lại chiến công Hai Bà Trưng, Bà Triệu để khơi dậy niềm tự hào và kêu gọi phụ nữ mọi lứa tuổi cùng đoàn kết đấu tranh.",
+      "nguyen_van": [
+        "Ngàn thu vang tiếng bà Trưng,",
+        "Ra tay cứu quốc, cứu dân đến cùng.",
+        "Bà Triệu Ẩu thật anh hùng,",
+        "Cưỡi voi đánh giặc vẫy vùng bốn phương.",
+        "[...]",
+        "Chị em từ trẻ đến già,",
+        "Cùng nhau đoàn kết đặng mà đấu tranh."
+      ],
+      "ghi_chu_dich": "Nguồn chỉ trích hai đoạn tiêu biểu của bài thơ (đánh dấu [...] ở chỗ nguồn bỏ qua), không phải toàn văn.",
+      "sources": [
+        "Thơ trên Báo Việt Nam độc lập — cách vận dụng linh hoạt đề cương văn hóa năm 1943 — Báo Cao Bằng điện tử — https://baocaobang.vn/-45499.html",
+        "Sưu tầm tên gọi, bí danh và bút danh của Chủ tịch Hồ Chí Minh qua các thời kỳ (mục 85: Kim Oanh, 1941) — Tư liệu Văn kiện Đảng Cộng sản Việt Nam — https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/suu-tam-ten-goi-bi-danh-va-but-danh-cua-chu-tich-ho-chi-minh-qua-cac-thoi-ky-2554"
+      ],
+      "nhom": "tho"
+    },
+    {
+      "id": "tre-con-1941-trich",
+      "ten": "Trẻ con (trích)",
+      "tac_gia": "Nguyễn Ái Quốc (Hồ Chí Minh), bút danh Bé Con",
+      "thoi_ky": "21/09/1941 — báo Việt Nam Độc Lập số 106",
+      "the_loai": "Lục bát (tiếng Việt, trích đoạn)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "cao-bang"
+      ],
+      "loi_binh": "Từ câu ví «trẻ em là búp trên cành», Bác nhắc các em: nước mất thì trẻ con cũng khổ theo, nên cũng phải góp một vai vào cuộc đấu tranh giành lại nước.",
+      "nguyen_van": [
+        "Trẻ em là búp trên cành,",
+        "Biết ăn ngủ biết học hành là ngoan.",
+        "[...]",
+        "Vậy nên con trẻ nước ta,",
+        "Phải đoàn kết lại để mà đấu tranh.",
+        "Người lớn cứu quốc đã đành,",
+        "Trẻ em cũng phải ra dành một vai.",
+        "Bao giờ đánh đuổi Nhật, Tây,",
+        "Trẻ em ta sẽ là bầy con cưng."
+      ],
+      "ghi_chu_dich": "Nguồn chỉ trích các đoạn tiêu biểu (đánh dấu [...] ở chỗ nguồn bỏ qua), không phải toàn văn. LƯU Ý: đây KHÔNG phải bài «Trẻ chăn trâu» (21/11/1942) mà nhiệm vụ ban đầu yêu cầu — đây là một bài khác, cùng chủ đề thiếu nhi, cùng báo, cùng năm 1941. Bài «Trẻ chăn trâu» tra hai lượt vẫn không tìm ra nguyên văn trên nguồn chính thống nào.",
+      "sources": [
+        "Thơ trên Báo Việt Nam độc lập — cách vận dụng linh hoạt đề cương văn hóa năm 1943 — Báo Cao Bằng điện tử — https://baocaobang.vn/-45499.html",
+        "Sưu tầm tên gọi, bí danh và bút danh của Chủ tịch Hồ Chí Minh qua các thời kỳ (mục 86: Bé Con, 1941) — Tư liệu Văn kiện Đảng Cộng sản Việt Nam — https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/suu-tam-ten-goi-bi-danh-va-but-danh-cua-chu-tich-ho-chi-minh-qua-cac-thoi-ky-2554"
+      ],
+      "nhom": "tho"
+    },
+    {
       "id": "tho-chuc-tet-1942",
       "ten": "Thơ chúc Tết Xuân Nhâm Ngọ 1942",
       "tac_gia": "Hồ Chí Minh",
@@ -1371,6 +1453,96 @@
       "nhom": "chuc-tet"
     },
     {
+      "id": "tho-chuc-tet-1943",
+      "ten": "Thơ chúc Tết Xuân Quý Mùi 1943",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Quý Mùi 1943 — giữa Thế chiến II, trước khi Nhật đảo chính Pháp và trước Cách mạng Tháng Tám",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết giữa Thế chiến II, khi cục diện còn chưa ngã ngũ, Bác đã dự đoán phe Trục sẽ thua và kêu gọi toàn dân chuẩn bị chớp thời cơ khởi nghĩa — hai năm trước khi Cách mạng Tháng Tám nổ ra.",
+      "nguyen_van": [
+        "Một nghìn chín trăm bốn mươi ba,",
+        "Năm mới tình hình hẳn mới a!",
+        "Đông Á chắc rồi Tàu thắng Nhật.",
+        "Tây Âu nhất định Đức thua Nga.",
+        "Nhân dân các nước đều bùng dậy",
+        "Cách - mệnh nhiều nơi sẽ nổ ra.",
+        "Đức, Nhật chết, rồi Tây cũng chết,",
+        "Ấy là cơ - hội tốt cho ta!",
+        "Ấy là cơ - hội tốt cho ta!",
+        "Cơ - hội này ta chớ bỏ qua,",
+        "Phấn đấu, hy sinh đừng quản ngại,",
+        "Tuyên truyền, tổ chức phải xông pha",
+        "Đồng tâm, một triệu người như một,",
+        "Khởi nghĩa, ba kỳ giậy cả ba.",
+        "Năm mới quyết làm cho nước mới,",
+        "Non sông Hồng - Lạc gấm thêm hoa!"
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1944",
+      "ten": "Chào Xuân Giáp Thân 1944 (trích đoạn văn vần)",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Giáp Thân 1944 — một năm trước Cách mạng Tháng Tám",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Đoạn thơ nằm trong bài viết \"Chào Xuân\" đăng trên báo Đồng Minh đầu năm 1944, khi Bác còn hoạt động bí mật, một năm trước khi Cách mạng Tháng Tám bùng nổ.",
+      "nguyen_van": [
+        "Xuân ơi, Xuân hỡi, hỡi Xuân,",
+        "Từ xa tới gần, Xuân khắp mọi nơi",
+        "Rót cốc rượu Xuân, mừng cách mạng.",
+        "Viết bài chào Tết, chúc thành công!"
+      ],
+      "ghi_chu_dich": "CẢNH BÁO: đây KHÔNG phải một bài thơ độc lập mà là đoạn văn vần trích trong bài viết văn xuôi \"Chào Xuân\" (báo Đồng Minh, đầu 1944). Trên hochiminh.vn, đoạn này được đặt trong ngoặc kép và có dấu '…' ở đầu câu đầu tiên ('…Xuân ơi, Xuân hỡi, hỡi Xuân,'), cho thấy phần văn xuôi dẫn trước đã bị lược — 4 dòng vần trích ở đây có vẻ trọn vẹn (kết bằng dấu chấm than và đóng ngoặc kép), nhưng KHÔNG phải toàn văn bài 'Chào Xuân'. Tôi không tìm được bản toàn văn bài báo gốc từ nguồn chính thống nào khác.",
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
+      "id": "tho-chuc-tet-1945",
+      "ten": "Thơ chúc Tết năm Ất Dậu 1945",
+      "tac_gia": "Hồ Chí Minh",
+      "thoi_ky": "Xuân Ất Dậu 1945 — trước Nhật đảo chính Pháp (9/3/1945) và Cách mạng Tháng Tám",
+      "the_loai": "Thơ chúc Tết",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Viết đầu năm 1945, trước cả khi Nhật đảo chính Pháp (9/3/1945) và trước Cách mạng Tháng Tám — bài thơ dự đoán phe Đồng Minh sẽ thắng phát-xít và đã nhắc thẳng đến \"Việt Nam độc lập\" từ nhiều tháng trước khi điều đó thành sự thật.",
+      "nguyen_van": [
+        "Tết năm mới nhà báo xin chúc",
+        "Chúc Đồng - Minh đánh \"Trục\" tan thây.",
+        "Bốn phương nam bắc đông tây,",
+        "Trên nền máu lửa chóng xây hòa bình.",
+        "Chúc Liên Xô hùng binh mãnh tướng",
+        "Nhắm Bá Linh thuận hướng đến mau.",
+        "Chúc Anh - Mỹ tại Tây Âu,",
+        "Nhanh chân nhẹ bước tiến sâu thêm vào.",
+        "Chúc Trung Hoa anh hào kháng chiến",
+        "Chóng đến ngày toàn diện phản công.",
+        "Chúc Anh - Mỹ tại Viễn - Đông",
+        "Chiếm xong Ma - ní, đoạt vùng Đa - lây",
+        "Chúc xong thế giới đó đây,",
+        "Việt - Nam độc lập, chúc ngay đồng bào.",
+        "Chúc năm nay không nao khủng bố",
+        "Sự đoàn kết củng cố hơn xưa.",
+        "Vũ trang đón lấy thời cơ",
+        "Đứng lên giết giặc trao cờ tự do",
+        "Rồi trăm họ ấm no sung sướng,",
+        "Trên thế giới được hưởng binh quyền",
+        "Nghìn thu danh vọng Rồng - Tiên."
+      ],
+      "sources": [
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+      ],
+      "nhom": "chuc-tet"
+    },
+    {
       "id": "tho-chuc-tet-1946",
       "ten": "Thơ chúc Tết Xuân Bính Tuất 1946 — gửi các chiến sĩ",
       "tac_gia": "Hồ Chí Minh",
@@ -1385,12 +1557,14 @@
         "Tết này ta tạm xa nhau,",
         "Chắc rằng ta sẽ Tết sau sum vầy."
       ],
-      "ghi_chu_dich": "hochiminh.vn đăng bài này trong lời chào 'Hỡi các chiến sĩ yêu quí,' rồi có dấu '...' trước 4 câu trên (phần lời chào văn xuôi bị lược, không phải câu thơ). Bài phân tích của Vũ Quần Phương trên nhandan.vn (04/02/2016) xác nhận đây là bài thơ lục bát trọn vẹn 'cả bài có 28 từ' — đúng khớp 6+8+6+8 = 28 âm tiết của 4 câu trên, và trích dẫn đúng nguyên văn 2 câu cuối. Cùng dịp Tết này Bác còn có bài 'Chúc đồng bào' (thể ngũ ngôn, gửi dân) nhưng bản trên hochiminh.vn chỉ còn 4/5 câu (thiếu 1 câu, có dấu '...'), nên KHÔNG đưa vào đây vì không đủ nguyên văn.",
+      "ghi_chu_dich": "Câu cuối có hai dị bản: «Chắc rằng ta SẼ Tết sau sum vầy» (bản đang dùng, theo hochiminh.vn và một nguồn nữa) và «Chắc rằng ta ĐỂ Tết sau sum vầy» (Báo Nhân Dân 14/02/2015). Giữ bản «sẽ» vì hai trên ba nguồn ghi vậy.",
       "sources": [
         "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376",
-        "Báo Nhân Dân điện tử (bài phân tích của Vũ Quần Phương, xác nhận 2 câu cuối và cấu trúc lục bát 28 từ) — https://nhandan.vn/tho-chu-tich-ho-chi-minh-chuc-tet-nam-thu-nhat-viet-nam-dan-chu-cong-hoa-post254788.html"
+        "Báo Nhân Dân điện tử (bài phân tích của Vũ Quần Phương, xác nhận 2 câu cuối và cấu trúc lục bát 28 từ) — https://nhandan.vn/tho-chu-tich-ho-chi-minh-chuc-tet-nam-thu-nhat-viet-nam-dan-chu-cong-hoa-post254788.html",
+        "Ngày xuân đọc thơ chúc Tết của Bác Hồ (Bảo Thư, 14/02/2015) — Báo Nhân Dân — https://nhandan.vn/ngay-xuan-doc-tho-chuc-tet-cua-bac-ho-post225484.html"
       ],
-      "nhom": "chuc-tet"
+      "nhom": "chuc-tet",
+      "ghi_chu_bien_tap": "ĐỪNG đổi sang «để» chỉ vì bắt gặp bản Nhân Dân. Đã đối chiếu 3 nguồn ngày 2026-08-04: 2/3 ghi «sẽ». Muốn đổi thì phải có thêm bằng chứng từ bản đăng gốc."
     },
     {
       "id": "tho-chuc-tet-1947",
@@ -1476,16 +1650,19 @@
       "loi_binh": "Viết khi kháng chiến chuẩn bị chuyển sang giai đoạn tổng phản công, ngay trước chiến dịch Biên giới Thu Đông 1950.",
       "nguyen_van": [
         "Kính chúc đồng bào năm mới,",
-        "Mọi người càng thêm phấm khởi,",
+        "Mọi người càng thêm phấn khởi,",
         "Toàn dân xung phong thi đua,",
         "Đẩy mạnh cuộc chuẩn bị tới,",
         "Chuyển mau sang tổng phản công,",
         "Kháng chiến nhất định thắng lợi."
       ],
       "sources": [
-        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376"
+        "Trang tin điện tử Hồ Chí Minh — https://hochiminh.vn/book/tac-pham-ve-ho-chi-minh/tac-pham-trong-nuoc/nhung-bai-tho-chuc-tet-cua-chu-tich-ho-chi-minh-376",
+        "Ngày xuân đọc thơ chúc Tết của Bác Hồ (Bảo Thư, 14/02/2015) — Báo Nhân Dân — https://nhandan.vn/ngay-xuan-doc-tho-chuc-tet-cua-bac-ho-post225484.html"
       ],
-      "nhom": "chuc-tet"
+      "nhom": "chuc-tet",
+      "ghi_chu_dich": "Câu thứ hai chép theo Báo Nhân Dân: «phấn khởi». Cổng hochiminh.vn in «phấm khởi» — «phấm khởi» không phải từ tiếng Việt nên đây là lỗi in của trang đó, không phải dị bản.",
+      "ghi_chu_bien_tap": "Đã phân xử ngày 2026-08-04 bằng hai nguồn: hochiminh.vn in «phấm khởi» (tự mở trang kiểm, không phải lỗi chép của dự án), Nhân Dân 14/02/2015 in «phấn khởi». Lấy theo Nhân Dân. Nếu về sau ai mở hochiminh.vn thấy khác bản này thì ĐỪNG sửa ngược — đọc ghi chú này trước."
     },
     {
       "id": "tho-chuc-tet-1951",

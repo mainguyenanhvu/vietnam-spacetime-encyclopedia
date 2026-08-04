@@ -2800,6 +2800,12 @@ interface Poem {
   nguyen_van: string[];
   ban_dich?: string[];
   ghi_chu_dich?: string;
+  /**
+   * Dặn dò cho người/agent sửa dữ liệu về sau. CỐ Ý KHÔNG render: đây là chữ
+   * nội bộ ("đừng tự sửa thành…"), đổ lên mặt trang là nói với nhầm người.
+   * Khai ở đây để ai đọc kiểu cũng biết trường này tồn tại và tại sao nó câm.
+   */
+  ghi_chu_bien_tap?: string;
   /** Chỉ tac-pham-ho-chi-minh.json dùng — chia mục trong thư viện. */
   nhom?: "nktt" | "chuc-tet" | "tho" | "van";
   sources: string[];
