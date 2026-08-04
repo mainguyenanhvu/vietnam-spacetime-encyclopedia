@@ -9,7 +9,7 @@ import "./style.css";
 import { apCheDoDaLuu, initCheDo, cheDoHienTai, SU_KIEN_DOI_CHE_DO } from "./chedo";
 import type { CheDo } from "./chedo";
 import { gomNutTopbar } from "./topbar";
-import { registerPanel, showOnly, hidePanel, hideAllPanels } from "./panels";
+import { registerPanel, showOnly, hidePanel, hideAllPanels, datNhanPanel } from "./panels";
 import { moPopup, dongPopup } from "./popup";
 // Chỉ nhập hàm phân loại (không kéo Three.js) — xem ghi chú trong mohinh-diem.ts.
 import { kieuTheoTen } from "./mohinh-diem";
@@ -252,7 +252,11 @@ const map = new maplibregl.Map({
 // Phải-trên: #province-panel. Trái-dưới: ScaleControl. Phải-dưới chỉ có attribution,
 // mà MapLibre xếp chồng dọc trong cùng một góc nên không che nhau.
 map.addControl(new maplibregl.NavigationControl(), "bottom-right");
-map.addControl(new maplibregl.ScaleControl(), "bottom-left");
+// Thước tỉ lệ chuyển từ trái-dưới sang phải-dưới (2026-08-04). Bảng lớp bản đồ
+// cao gần hết cột trái nên thước nằm lọt phía sau nó, đo được trên ảnh chụp:
+// chỉ thò ra vài pixel mép dưới. Phải-dưới MapLibre xếp chồng dọc nên thước
+// nằm ngay dưới cụm zoom, không đè lên gì.
+map.addControl(new maplibregl.ScaleControl(), "bottom-right");
 
 // Chỉ ở chế độ dev: mở `map` ra ngoài để smoke test (scripts/smoke.mjs) đọc được
 // map.getStyle()/queryRenderedFeatures qua CDP — tức kiểm được lớp có VẼ RA THẬT
@@ -1120,39 +1124,58 @@ function capNhatNenBanDo(): void {
   capNhatMoHinhDiem();
 }
 
-/** Trần số mô hình dựng cùng lúc — mỗi mô hình là một Group vài chục mặt. */
-const TRAN_MO_HINH_DIEM = 120;
+/**
+ * Trần số mô hình dựng cùng lúc. Vẽ bằng InstancedMesh nên chi phí gần như chỉ
+ * phụ thuộc số LOẠI hình (5), không phụ thuộc số điểm — trần này chỉ để chặn
+ * trường hợp bật cùng lúc mấy chục lớp ở mức nhìn cả nước.
+ */
+const TRAN_MO_HINH_DIEM = 400;
+
+/** Các lớp phủ đang bật — đọc từ lớp vòng tròn, thứ luôn theo đúng trạng thái. */
+function lopPhuDangBat(): string[] {
+  return [...overlayLoaded].filter(
+    (id) =>
+      map.getLayer(`overlay-${id}`) &&
+      (map.getLayoutProperty(`overlay-${id}`, "visibility") ?? "visible") !==
+        "none",
+  );
+}
 
 /**
- * Dựng mô hình 3D cho các điểm di tích ĐANG HIỆN trong khung nhìn.
+ * Dựng mô hình 3D cho các điểm di tích ĐANG HIỆN trong khung nhìn, và giấu
+ * icon phẳng của chính những lớp đó khi 3D bật.
  *
- * Chỉ chạy khi 3D bật và đã qua mức diorama: ở tầm nhìn cả nước, một mô hình
- * cao 46px tương đương hơn 200 km ngoài đời — nó sẽ che kín chính đất nước.
- * Ở tầm đó các chấm phẳng vẫn là cách đọc đúng, và 8 landmark cố định đã lo
- * phần khối nổi.
+ * Hai việc phải đi cùng nhau, vì đây là chỗ chủ dự án chỉ ra: bật 3D mà biểu
+ * tượng vẫn là chấm bẹt dán trên mặt đất. Lớp vòng tròn ở lại — nó vừa là chân
+ * đế của mô hình, vừa là vùng bấm (mô hình Three.js không nhận sự kiện bấm của
+ * MapLibre). Điểm vượt quá trần vẫn còn vòng tròn nên không mục nào biến mất.
  */
 function capNhatMoHinhDiem(): void {
-  if (!landmarks3d) return;
-  if (!is3D || dangDiorama()) {
-    landmarks3d.capNhatDiem([]);
-    return;
+  const bat = lopPhuDangBat();
+  for (const id of overlayLoaded) {
+    const icon = `overlay-${id}-icon`;
+    if (!map.getLayer(icon)) continue;
+    const hien = !is3D && bat.includes(id) ? "visible" : "none";
+    if ((map.getLayoutProperty(icon, "visibility") ?? "visible") !== hien)
+      map.setLayoutProperty(icon, "visibility", hien);
+    // Ở 3D, vòng tròn tụt xuống vai trò chân đế + vùng bấm nên phải nhỏ lại:
+    // giữ nguyên cỡ 2D thì cái vòng trắng to hơn cả mô hình nó đánh dấu.
+    const ban = is3D ? 3 : 5;
+    if (map.getPaintProperty(`overlay-${id}`, "circle-radius") !== ban) {
+      map.setPaintProperty(`overlay-${id}`, "circle-radius", ban);
+      map.setPaintProperty(`overlay-${id}`, "circle-stroke-width", is3D ? 1 : 2);
+    }
   }
-  const lop = map
-    .getStyle()
-    .layers.map((l) => l.id)
-    .filter(
-      (id) =>
-        /^overlay-.+-icon$/.test(id) &&
-        map.getLayer(id) &&
-        map.getLayoutProperty(id, "visibility") !== "none",
-    );
-  if (!lop.length) {
+  if (!landmarks3d) return;
+  if (!is3D || !bat.length) {
     landmarks3d.capNhatDiem([]);
     return;
   }
   const ds: DiemMoHinh[] = [];
   const daCo = new Set<string>();
-  for (const f of map.queryRenderedFeatures({ layers: lop })) {
+  for (const f of map.queryRenderedFeatures({
+    layers: bat.map((id) => `overlay-${id}`),
+  })) {
     if (ds.length >= TRAN_MO_HINH_DIEM) break;
     if (f.geometry.type !== "Point") continue;
     const [lon, lat] = f.geometry.coordinates as [number, number];
@@ -1295,6 +1318,11 @@ initBattle();
 initJourney();
 initQuocGia();
 initTimeline();
+// Ba panel này khai trong index.html và không có tài nguyên phải dọn nên chưa
+// module nào đăng ký. Vẫn phải đăng ký: sổ đăng ký giờ còn gắn ngữ nghĩa hộp
+// thoại và phím Esc, không riêng việc dọn tài nguyên nữa.
+for (const id of ["library-panel", "game-panel", "quiz-panel"] as const)
+  registerPanel(id);
 // Chèn CUỐI cùng nhưng nút nằm ĐẦU #topbar-nav (insertBefore) — chuyển chế độ
 // xem là hành động khung, không cùng hạng với các nút mở panel nội dung.
 initCheDo();
@@ -1334,7 +1362,15 @@ function setPeriod(i: number): void {
   const label = document.getElementById("period-label");
   if (label) label.textContent = p.nhan;
   const slider = document.getElementById("timeline") as HTMLInputElement | null;
-  if (slider) slider.value = String(i);
+  if (slider) {
+    slider.value = String(i);
+    // Trình đọc màn hình đọc thanh trượt là "3 trên 12" — một con số không nói
+    // lên điều gì. aria-valuetext thay số bằng chính tên thời kỳ.
+    slider.setAttribute("aria-valuetext", p.nhan);
+    // Phần rãnh ĐÃ ĐI QUA tô sáng (xem #timeline::-webkit-slider-runnable-track).
+    const het = PERIODS.length - 1;
+    slider.style.setProperty("--tien-do", `${het ? (i / het) * 100 : 0}%`);
+  }
   document
     .querySelectorAll<HTMLInputElement>("#layer-control input[name=period]")
     .forEach((r) => (r.checked = Number(r.value) === i));
@@ -2029,10 +2065,9 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   const layerId = `overlay-${id}`;
   const iconLayerId = `${layerId}-icon`;
   if (overlayLoaded.has(id)) {
-    // Bật/tắt đồng bộ cả 2 lớp (halo màu + icon) — chúng luôn đi cùng nhau.
-    const visibility = on ? "visible" : "none";
-    map.setLayoutProperty(layerId, "visibility", visibility);
-    map.setLayoutProperty(iconLayerId, "visibility", visibility);
+    // Chỉ đặt lớp vòng tròn ở đây. Lớp icon do capNhatMoHinhDiem() quyết định,
+    // vì ở chế độ 3D icon phẳng phải nhường chỗ cho mô hình khối.
+    map.setLayoutProperty(layerId, "visibility", on ? "visible" : "none");
     capNhatMoHinhDiem();
     return;
   }
@@ -2088,6 +2123,9 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   bindOverlayInteractions(layerId, conf);
   bindOverlayInteractions(iconLayerId, conf);
   overlayLoaded.add(id);
+  // Lớp phủ vừa thêm nằm TRÊN lớp landmark 3D (thêm sau thì vẽ sau), nên vòng
+  // tròn phẳng sẽ đè lên chân mô hình. Đẩy lớp 3D lên trên cùng lần nữa.
+  if (map.getLayer("landmarks-3d")) map.moveLayer("landmarks-3d");
   // Lớp mới bật thì mô hình 3D của nó phải dựng ngay, không đợi tới lần người
   // dùng dời bản đồ (moveend là chỗ gọi còn lại).
   capNhatMoHinhDiem();
@@ -2490,6 +2528,53 @@ function profileHtml(p: ProvinceProfile): string {
     <details class="sources"><summary>📚 Nguồn hồ sơ</summary>${list(p.sources)}</details>`;
 }
 
+// --- Căn cứ pháp lý của lần hợp nhất tỉnh 2025 ------------------------------
+// public/data/timeline/events.json có đủ 34 sự kiện kèm số nghị quyết, ngày
+// hiệu lực và đường dẫn cổng Chính phủ — nhưng trước nay KHÔNG module nào đọc
+// tới. Panel tỉnh chỉ liệt kê tên các tỉnh cũ lấy từ thuộc tính GeoJSON, tức là
+// nói "hợp thành từ A và B" mà không nói theo văn bản nào, trong khi bất biến
+// của dự án là mọi mục đều dẫn được về nguồn chính thống.
+interface SuKienHanhChinh {
+  date: string;
+  type: string;
+  to: string;
+  from: string[];
+  phap_ly?: string;
+  nguon?: string;
+}
+let sapNhapCache: SuKienHanhChinh[] | null = null;
+
+/** "2025-07-01" → "1/7/2025". Dữ liệu ISO, hiển thị theo lối Việt. */
+function ngayVi(iso: string): string {
+  const [n, t, g] = iso.split("-");
+  return g && t && n ? `${Number(g)}/${Number(t)}/${n}` : iso;
+}
+
+async function napCanCuSapNhap(tenTinh: string): Promise<void> {
+  if (!sapNhapCache) {
+    const d = await fetchJson<{ events: SuKienHanhChinh[] }>(
+      "data/timeline/events.json",
+    );
+    sapNhapCache = d?.events ?? [];
+  }
+  const sk = sapNhapCache.find((e) => e.to === tenTinh);
+  const slot = document.getElementById("sapnhap-slot");
+  // Panel có thể đã đóng hoặc chuyển sang tỉnh khác trong lúc chờ fetch.
+  if (!sk || !slot || document.getElementById("province-panel")?.hidden) return;
+  // Tỉnh giữ nguyên tên và không nhập với ai thì không có gì để kể.
+  const cu = sk.from.filter((x) => x !== sk.to);
+  if (!cu.length) return;
+  slot.innerHTML = `<p class="can-cu-sapnhap">📜 Hợp nhất <strong>${esc(
+    sk.from.join(" + "),
+  )}</strong> — ${esc(sk.phap_ly ?? "chưa rõ văn bản")}, hiệu lực ${esc(
+    ngayVi(sk.date),
+  )}.${
+    sk.nguon
+      ? ` <a href="${esc(sk.nguon)}" target="_blank" rel="noopener">Nguồn</a>`
+      : ""
+  }</p>`;
+}
+
 function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   const p = f.properties as Record<string, string | number>;
   const panel = document.getElementById("province-panel");
@@ -2562,6 +2647,7 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
         ? `<p class="muted">Ranh giới ba Kỳ thể hiện xấp xỉ theo địa giới tỉnh hiện đại; Liên bang Đông Dương thành lập theo sắc lệnh 17/10/1887.</p>`
         : ""
     }
+    <div id="sapnhap-slot"></div>
     <div id="profile-slot"><p class="muted coming-soon">Đang tải hồ sơ bách khoa…</p></div>
     ${
       isIsland
@@ -2576,6 +2662,12 @@ function showProvincePanel(f: MapGeoJSONFeature, era: Era): void {
   // phủ nên popup của điểm vừa xem vẫn treo trên bản đồ, đè lên chính tỉnh đó.
   dongPopup();
   panel.hidden = false;
+
+  // Bấm sang tỉnh khác khi panel ĐANG mở thì `hidden` không đổi ⇒ observer của
+  // panels.ts không chạy ⇒ nhãn hộp thoại vẫn là tên tỉnh trước. Đặt lại tay.
+  datNhanPanel("province-panel", name);
+
+  if (!isIsland && era.nameKey === "Tỉnh thành mới") void napCanCuSapNhap(name);
 
   // R7 — nút chuyển đổi giữa bản đồ toàn quốc và chế độ focus 1 tỉnh.
   const focusBtn = document.getElementById("focus-btn");
@@ -2708,6 +2800,8 @@ interface Poem {
   nguyen_van: string[];
   ban_dich?: string[];
   ghi_chu_dich?: string;
+  /** Chỉ tac-pham-ho-chi-minh.json dùng — chia mục trong thư viện. */
+  nhom?: "nktt" | "chuc-tet" | "tho" | "van";
   sources: string[];
 }
 
@@ -2848,6 +2942,31 @@ async function loadLiterature() {
     banDoCo: banDoCo?.items ?? [],
   };
   return literatureCache;
+}
+
+/**
+ * Thơ văn của Bác chia bốn mục thay vì một danh sách phẳng.
+ *
+ * Bộ sưu tập đã lên ~90 tác phẩm. Đổ liền một mạch thì «Nhật ký trong tù» lẫn
+ * với thơ chúc Tết lẫn với văn chính luận, và người muốn đọc riêng một mảng
+ * phải cuộn qua cả ba. Mục nào trống thì không in tiêu đề.
+ */
+const NHOM_HCM: Array<[NonNullable<Poem["nhom"]>, string]> = [
+  ["nktt", "📓 Ngục trung nhật ký (Nhật ký trong tù)"],
+  ["tho", "🖋️ Thơ khác"],
+  ["chuc-tet", "🎊 Thơ chúc Tết & mừng xuân"],
+  ["van", "📜 Văn chính luận (trích)"],
+];
+
+function hcmWorksHtml(ds: Poem[]): string {
+  // Mục cũ chưa có `nhom` thì vẫn phải hiện — dồn vào "Thơ khác".
+  const nhomCua = (p: Poem): NonNullable<Poem["nhom"]> => p.nhom ?? "tho";
+  return NHOM_HCM.map(([k, nhan]) => {
+    const nhom = ds.filter((p) => nhomCua(p) === k);
+    if (!nhom.length) return "";
+    return `<h4 class="hcm-nhom">${nhan} <span class="muted">(${nhom.length})</span></h4>
+      ${nhom.map(poemHtml).join("")}`;
+  }).join("");
 }
 
 function poemHtml(p: Poem): string {
@@ -3190,8 +3309,8 @@ async function openLibrary(): Promise<void> {
   content.innerHTML = `
     <h2>📖 Thư viện</h2>
     ${lib.hcm ? hcmPoemHtml(lib.hcm) : ""}
-    <h3>🎋 Thơ văn Hồ Chí Minh</h3>
-    ${lib.hcmWorks.map(poemHtml).join("")}
+    <h3>🎋 Thơ văn Hồ Chí Minh <span class="muted">(${lib.hcmWorks.length} tác phẩm)</span></h3>
+    ${hcmWorksHtml(lib.hcmWorks)}
     <h3>🌸 Thơ viết về Bác <span class="muted">(${lib.aboutHcm.length} bài — xếp theo mức hiện diện trong SGK & phê bình, có tính chủ quan)</span></h3>
     ${lib.aboutHcm.map(poemHtml).join("")}
     <h3>📕 Văn xuôi viết về Bác <span class="muted">(giới thiệu sách — không chép nội dung)</span></h3>

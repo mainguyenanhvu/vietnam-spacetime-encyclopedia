@@ -1486,11 +1486,18 @@ body.kid-mode #topbar {
   padding: 0.02rem 0.42rem;
   font-weight: 600;
 }
+/* Ghi chú pháp lý về cương vực. Trước đây là bốn dòng chữ cam trôi nổi ngay
+   dưới ô chọn thời kỳ, đọc như một lỗi hơn là một lời chú. Đóng khung lại
+   thành callout: cùng lượng chữ nhưng mắt biết ngay đây là chú thích. */
 #layer-control .lc-note {
   font-size: var(--co-2xs);
   color: var(--nhan);
-  line-height: 1.35;
-  margin: 0.35rem 0.2rem 0;
+  line-height: 1.45;
+  margin: 0.5rem 0 0.15rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--lop-brand-nhe);
+  border-left: 3px solid var(--brand-nhat);
+  border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
 }
 #layer-control label {
   display: flex;
@@ -1875,3 +1882,207 @@ input[type="range"] {
   }
 }
 /* === /Ô TÌM KIẾM TOÀN CỤC === */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ĐẠI TU HÌNH THỨC (2026-08-04) — chủ dự án: «thiết kế lại UI đẹp hơn».
+   Ba mảng còn dùng dáng mặc định của trình duyệt / MapLibre trong khi cả
+   phần còn lại đã sang ngôn ngữ kính mờ + bo lớn: thanh trượt dòng thời
+   gian, cụm control bản đồ, và tiêu đề bảng lớp. KHÔNG đụng logic render.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* --- Thanh trượt dòng thời gian ------------------------------------------
+   Đây là control người dùng chạm nhiều nhất mà lại là thứ thô nhất trên
+   trang: một vạch mảnh 4px với nút tròn mặc định của hệ điều hành. Dựng lại
+   cả rãnh lẫn nút, và cho phần ĐÃ ĐI QUA sáng lên để nhìn là biết đang đứng
+   ở đâu trong 4000 năm. Phần trăm do timeline.ts đặt vào --tien-do. */
+#timeline {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.6rem;
+  background: transparent;
+  accent-color: auto; /* huỷ accent-color chung — rãnh vẽ tay bên dưới */
+}
+#timeline::-webkit-slider-runnable-track {
+  height: 7px;
+  border-radius: var(--bo-vien-tron);
+  background: linear-gradient(
+    90deg,
+    var(--nhan-mo) 0%,
+    var(--nhan-sang) var(--tien-do, 0%),
+    var(--vien-nhan-nhe) var(--tien-do, 0%),
+    var(--vien-nhan-nhe) 100%
+  );
+  box-shadow: inset 0 1px 2px var(--bong-topbar);
+}
+#timeline::-moz-range-track {
+  height: 7px;
+  border-radius: var(--bo-vien-tron);
+  background: linear-gradient(
+    90deg,
+    var(--nhan-mo) 0%,
+    var(--nhan-sang) var(--tien-do, 0%),
+    var(--vien-nhan-nhe) var(--tien-do, 0%),
+    var(--vien-nhan-nhe) 100%
+  );
+}
+#timeline::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 19px;
+  height: 19px;
+  margin-top: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff8e6, var(--nhan-mo) 70%);
+  border: 2px solid var(--brand-dam);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  cursor: grab;
+  transition: box-shadow var(--dur-nhanh) var(--ease);
+}
+#timeline::-moz-range-thumb {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff8e6, var(--nhan-mo) 70%);
+  border: 2px solid var(--brand-dam);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  cursor: grab;
+}
+#timeline:hover::-webkit-slider-thumb,
+#timeline:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 5px var(--glow-nhan), 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+#timeline:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+#timeline:disabled::-webkit-slider-thumb {
+  background: var(--vien-nhan-ro);
+  cursor: default;
+}
+#timeline-bar label[for="timeline"] {
+  font-size: var(--co-sm);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+/* --- Cụm control của MapLibre --------------------------------------------
+   Nút +/− và la bàn vẫn là hộp trắng vuông mặc định, nằm cạnh những panel
+   kính mờ bo 14px — lệch hẳn khỏi phần còn lại. Cần !important vì MapLibre
+   nạp stylesheet của nó sau file này. */
+.maplibregl-ctrl-group {
+  background: var(--mat-kinh) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  backdrop-filter: blur(12px) saturate(1.2);
+  border: 1px solid var(--vien-kinh) !important;
+  border-radius: var(--bo-vua) !important;
+  box-shadow: var(--bong-1) !important;
+  overflow: hidden;
+}
+.maplibregl-ctrl-group button {
+  background: transparent !important;
+  transition: background var(--dur-nhanh) var(--ease);
+}
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--vien) !important;
+}
+.maplibregl-ctrl-group button:hover {
+  background: var(--lop-brand-vua) !important;
+}
+.maplibregl-ctrl-scale {
+  background: var(--mat-kinh) !important;
+  border-color: var(--vien-ro) !important;
+  border-radius: var(--bo-nho);
+  color: var(--chu) !important;
+  font-family: var(--font);
+  font-size: var(--co-2xs) !important;
+  padding: 1px 7px !important;
+}
+.maplibregl-ctrl-attrib.maplibregl-compact {
+  border-radius: var(--bo-vien-tron) !important;
+  box-shadow: var(--bong-1);
+}
+
+/* --- Tiêu đề bảng lớp -----------------------------------------------------
+   «Lớp bản đồ» là chữ đậm đứng trơ trên nền panel, không tách khỏi phần thân
+   cuộn bên dưới. Cho nó một gạch chân vàng để thành đầu bảng thật sự. */
+#layer-control .lc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--lop-brand-vua);
+}
+#layer-control .lc-nhan-chon {
+  display: block;
+  font-size: var(--co-2xs);
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--chu-mem);
+  margin-bottom: 0.3rem;
+}
+#layer-control #lc-period {
+  width: 100%;
+  padding: 0.42rem 0.6rem;
+  border-radius: var(--bo-nho);
+  border: 1px solid var(--vien-ro);
+  background: var(--mat);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+  cursor: pointer;
+}
+#layer-control #lc-period:hover {
+  border-color: var(--brand-nhat);
+}
+
+/* Căn cứ pháp lý hợp nhất tỉnh 2025 — dải nhấn dưới bảng số liệu tỉnh. */
+.can-cu-sapnhap {
+  margin: 0.6rem 0 0;
+  padding: 0.5rem 0.65rem;
+  font-size: var(--co-xs);
+  line-height: 1.5;
+  color: var(--chu-mem);
+  background: var(--lop-brand-nhe);
+  border-left: 3px solid var(--brand);
+  border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
+}
+.can-cu-sapnhap strong {
+  color: var(--chu);
+}
+
+/* Link "bỏ qua tới bản đồ" — ẩn khỏi mắt nhưng KHÔNG ẩn khỏi thứ tự Tab
+   (display:none hay visibility:hidden sẽ loại nó khỏi luồng bàn phím, đúng cái
+   nó sinh ra để phục vụ). Nhảy vào khung hình khi nhận tiêu điểm. */
+.bo-qua-toi-ban-do {
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translate(-50%, -160%);
+  z-index: 100;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--bo-vien-tron);
+  background: var(--nhan-mo);
+  color: var(--brand-sau);
+  font-weight: 600;
+  font-size: var(--co-sm);
+  text-decoration: none;
+  box-shadow: var(--bong-2);
+  transition: transform var(--dur-nhanh) var(--ease);
+}
+.bo-qua-toi-ban-do:focus {
+  transform: translate(-50%, 0);
+}
+#map:focus {
+  outline: none; /* :focus-visible vẫn vẽ vòng khi tới bằng bàn phím */
+}
+
+/* Tiêu đề nhóm nhỏ trong mục «Thơ văn Hồ Chí Minh» — cấp dưới h3 của thư viện. */
+.hcm-nhom {
+  margin: 1rem 0 0.4rem;
+  font-size: var(--co-md);
+  color: var(--brand);
+  border-bottom: 1px dashed var(--vien);
+  padding-bottom: 0.25rem;
+}

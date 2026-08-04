@@ -13,6 +13,10 @@
     <title>Bách khoa Việt Nam — Không gian &amp; Thời gian</title>
   </head>
   <body>
+    <!-- Lối tắt bàn phím: topbar có logo, ô tìm kiếm và 4 nút, người dùng bàn
+         phím phải Tab hết chừng đó mới chạm được bản đồ. Link này ẩn cho tới
+         khi nhận tiêu điểm — xem .bo-qua-toi-ban-do trong style.css. -->
+    <a class="bo-qua-toi-ban-do" href="#map">Bỏ qua tới bản đồ</a>
     <div id="app">
       <header id="topbar">
         <h1>
@@ -36,7 +40,9 @@
           <button id="library-btn" type="button">📖 Thư viện</button>
         </nav>
       </header>
-      <div id="map"></div>
+      <!-- tabindex=-1: đích của link "bỏ qua" phải nhận được tiêu điểm, nếu
+           không thì trình duyệt chỉ cuộn tới mà tiêu điểm vẫn kẹt trên topbar. -->
+      <div id="map" tabindex="-1"></div>
       <footer id="timeline-bar">
         <label for="timeline">Dòng thời gian:</label>
         <input id="timeline" type="range" min="0" max="0" value="0" disabled />
@@ -46,23 +52,23 @@
         <button id="period-label" type="button" aria-live="polite"
                 title="Bấm để mở niên biểu 4000 năm">Đang tải dữ liệu…</button>
       </footer>
-      <aside id="province-panel" hidden>
+      <aside id="province-panel" data-nhan="Hồ sơ tỉnh thành" hidden>
         <button id="panel-close" aria-label="Đóng">×</button>
         <div id="panel-content"></div>
       </aside>
-      <aside id="library-panel" hidden>
+      <aside id="library-panel" data-nhan="Thư viện" hidden>
         <button id="library-close" aria-label="Đóng">×</button>
         <div id="library-content"></div>
       </aside>
-      <aside id="game-panel" hidden>
+      <aside id="game-panel" data-nhan="Trò chơi" hidden>
         <button id="game-close" aria-label="Đóng">×</button>
         <div id="game-content"></div>
       </aside>
-      <aside id="quiz-panel" hidden>
+      <aside id="quiz-panel" data-nhan="Đố vui" hidden>
         <button id="quiz-close" aria-label="Đóng">×</button>
         <div id="quiz-content"></div>
       </aside>
-      <aside id="story-panel" hidden>
+      <aside id="story-panel" data-nhan="Truyện lịch sử" hidden>
         <button id="story-close" aria-label="Đóng">×</button>
         <div id="story-content"></div>
       </aside>

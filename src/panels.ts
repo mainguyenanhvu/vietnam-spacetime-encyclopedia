@@ -44,6 +44,42 @@ const observed = new Set<PanelId>();
 
 const el = (id: PanelId): HTMLElement | null => document.getElementById(id);
 
+// --- Ngữ nghĩa hộp thoại + tiêu điểm bàn phím -------------------------------
+// 11 panel này trước nay chỉ là <aside hidden>. Trình đọc màn hình không có gì
+// để báo rằng vừa có một lớp nội dung mở ra, và người dùng bàn phím phải Tab
+// qua toàn bộ topbar mới tới được nội dung vừa mở.
+//
+// CỐ Ý KHÔNG bẫy tiêu điểm (focus trap) và aria-modal = false: các panel này
+// KHÔNG modal — bản đồ phía sau vẫn kéo, vẫn bấm được, và mở panel tỉnh xong
+// vẫn phải bấm tiếp sang tỉnh khác được. Nhốt tiêu điểm trong một hộp thoại
+// không modal là bẫy người dùng bàn phím vào chỗ mà chuột thì đi ra được.
+
+/** Phần tử đã đưa tiêu điểm tới panel — Esc sẽ trả tiêu điểm về đây. */
+let tieuDiemTruoc: HTMLElement | null = null;
+
+const trongPanel = (n: Element | null): boolean =>
+  !!n && PANEL_IDS.some((p) => el(p)?.contains(n));
+
+function moPanel(id: PanelId, node: HTMLElement): void {
+  node.setAttribute("role", "dialog");
+  node.setAttribute("aria-modal", "false");
+  // data-nhan đứng TRƯỚC h2: bốn panel trong index.html nạp nội dung không đồng
+  // bộ, lúc mở ra chúng còn rỗng nên đọc h2 chỉ ra chuỗi rỗng rồi rơi về id —
+  // trình đọc màn hình đọc lên "library-panel".
+  const ten = node.dataset.nhan || node.querySelector("h2, h3")?.textContent?.trim();
+  node.setAttribute("aria-label", ten || id);
+  node.tabIndex = -1;
+  const dang = document.activeElement as HTMLElement | null;
+  if (dang && dang !== document.body && !trongPanel(dang)) tieuDiemTruoc = dang;
+  // preventScroll: bấm một tỉnh trên bản đồ không được kéo giật cả trang.
+  node.focus({ preventScroll: true });
+}
+
+/** Cập nhật nhãn hộp thoại khi nội dung panel đổi mà panel không đóng lại. */
+export function datNhanPanel(id: PanelId, nhan: string): void {
+  el(id)?.setAttribute("aria-label", nhan);
+}
+
 /**
  * Khai báo một panel và (tuỳ chọn) hàm dọn tài nguyên của nó.
  *
@@ -61,6 +97,7 @@ export function registerPanel(id: PanelId, onHide?: () => void): void {
   observed.add(id);
   new MutationObserver(() => {
     if (node.hidden) cleanups.get(id)?.();
+    else moPanel(id, node);
   }).observe(node, { attributes: true, attributeFilter: ["hidden"] });
 }
 
@@ -83,8 +120,15 @@ export function showOnly(id: PanelId): void {
   if (node) node.hidden = false;
 }
 
-/** Ẩn tất cả panel — dùng khi mở một màn không có panel riêng. */
+/**
+ * Ẩn tất cả panel — dùng khi mở một màn không có panel riêng, và là đích của
+ * phím Esc (main.ts). Trả tiêu điểm về chỗ đã mở panel: đây là đường đóng CHỦ Ý
+ * duy nhất, nên cũng là đường duy nhất biết chắc không có panel nào mở lên
+ * thay thế — trả tiêu điểm ở các đường khác sẽ giật tiêu điểm khỏi panel vừa mở.
+ */
 export function hideAllPanels(): void {
   dongPopup();
   for (const id of PANEL_IDS) hidePanel(id);
+  tieuDiemTruoc?.focus({ preventScroll: true });
+  tieuDiemTruoc = null;
 }
