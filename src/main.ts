@@ -2961,7 +2961,9 @@ const NHOM_HCM: Array<[NonNullable<Poem["nhom"]>, string]> = [
   ["nktt", "📓 Ngục trung nhật ký (Nhật ký trong tù)"],
   ["tho", "🖋️ Thơ khác"],
   ["chuc-tet", "🎊 Thơ chúc Tết & mừng xuân"],
-  ["van", "📜 Văn chính luận (trích)"],
+  // Không gắn "(trích)" vào tiêu đề nhóm nữa: từ 2026-08-04 phần lớn mục trong
+  // nhóm đã là toàn văn. Mục nào còn là trích thì tự nói trong tên của nó.
+  ["van", "📜 Văn chính luận · thư · lời kêu gọi"],
 ];
 
 function hcmWorksHtml(ds: Poem[]): string {
