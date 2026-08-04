@@ -123,7 +123,7 @@ Ghi ở đây để đừng ai đi tra lượt thứ ba rồi nạp bù.
 - Đối chiếu: `Phụ nữ` và `Trẻ con` nằm ở nhóm thường vì `tulieuvankien` xác nhận đích danh bút danh «Kim Oanh» (số 104, 1/9/1941) và «Bé Con» (số 106, 21/9/1941) ký dưới đúng hai bài đó.
 - Bài chúc Tết **1943** (niên đại tranh luận): chủ dự án quyết **giữ**, kèm nguyên cảnh báo hai nguồn vênh nhau. Không còn là câu hỏi bỏ ngỏ.
 
-**Ngục trung nhật ký — ĐÃ XONG 2026-08-04, đừng cử lô tra mới.** 117 mục phủ kín 133 số bài của tập, lấy từ bản PDF NXB Chính trị quốc gia Sự thật 2015 (font CID, phải qua bảng `/ToUnicode`; script bóc nằm trong scratchpad phiên này, chép lại vào `scripts/` nếu cần dùng lại). Ba bài không nạp: bài 1 và 108 đã có sẵn dưới tên khác, bài 101 «Liễu Châu ngục» nguyên bản chỉ có đầu đề không có thơ. **Đừng đi tra web cho tập này** — đã chứng minh ngõ đó chỉ dẫn tới nguồn bị cấm hoặc PDF ảnh quét.
+**Ngục trung nhật ký — ĐÃ XONG 2026-08-04, đừng cử lô tra mới.** 117 mục phủ kín 133 số bài của tập, lấy từ bản PDF NXB Chính trị quốc gia Sự thật 2015 (font CID, phải qua bảng `/ToUnicode` — công cụ bóc ở `scripts/boc_pdf_tounicode.mjs`, chạy lại ra đúng từng byte). Ba bài không nạp: bài 1 và 108 đã có sẵn dưới tên khác, bài 101 «Liễu Châu ngục» nguyên bản chỉ có đầu đề không có thơ. **Đừng đi tra web cho tập này** — đã chứng minh ngõ đó chỉ dẫn tới nguồn bị cấm hoặc PDF ảnh quét.
 
 **Không tìm được nguyên văn trên nguồn chính thống.**
 - `Trẻ chăn trâu` (21/11/1942). Lượt đầu tưởng do công cụ chặn; lượt hai crawl thô vượt được lỗi redirect của `qdnd.vn` và thấy trang **thật sự chỉ có một câu giới thiệu podcast**, không có bài thơ. Đây là thiếu thật, không phải lỗi công cụ.
