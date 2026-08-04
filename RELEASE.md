@@ -195,3 +195,76 @@ Gốc lỗi: `capNhatMoHinhDiem()` thoát sớm khi `dangDiorama()` — mà cả
 ### Một phép đo sai, ghi lại để lần sau khỏi mất công
 
 Lần đầu kiểm link "bỏ qua" báo **hỏng**: link không vào khung hình khi nhận tiêu điểm. Probe kỹ thì `document.activeElement` **đúng là** link, nhưng `a.matches(':focus')` trả `false`. Nguyên nhân: cửa sổ Chrome headless không có tiêu điểm hệ điều hành nên `:focus` không khớp. Bật `Emulation.setFocusEmulationEnabled` thì `matchFocus: true` và link nằm ở `top: 7,5 px` — đúng như thiết kế. **Lỗi ở phép đo, không ở trang.**
+
+---
+
+## Thư viện thơ văn Hồ Chí Minh — 2026-08-04
+
+Chủ dự án: *"những bài thơ Bác viết vẫn chưa đủ, hãy sưu tập đầy đủ đi"*, và sau đó xác nhận lại nguyên tắc quyết định mọi thứ ở đây: **tác phẩm của Bác được dùng rộng rãi, không có bản quyền đối với toàn dân** (mất 1969, hết hạn bảo hộ tại Việt Nam từ 2020).
+
+**31 → 82 tác phẩm**, chia năm mục trong thư viện:
+
+| Mục | Số bài | Ghi chú |
+|---|---|---|
+| 📓 Ngục trung nhật ký | 16 | tập có 133 bài — còn thiếu nhiều nhất |
+| 🖋️ Thơ khác | 27 | gồm 3 bài báo Việt Nam Độc Lập 1941 |
+| 🎊 Thơ chúc Tết & mừng xuân | 24 | **liền mạch 1942 → 1969** |
+| 🏮 Thư & thơ Trung thu gửi thiếu nhi | 7 | mảng hợp chế độ trẻ em nhất |
+| 📜 Văn chính luận · thư · lời kêu gọi | 8 | 5 mục đã lên toàn văn |
+
+### Năm văn kiện từ bản trích lên toàn văn
+
+Tuyên ngôn Độc lập nằm trong thư viện với **đúng 4 dòng** — văn kiện quan trọng nhất cả bộ sưu tập. Lý do ghi hồi trước là "mục dẫn đọc", không phải bản quyền, nhưng kết quả vẫn là cắt cụt tác phẩm không cần cắt.
+
+| Mục | Trước | Sau | Nguồn |
+|---|---|---|---|
+| Tuyên ngôn Độc lập | 4 | **30 đoạn** | Nhân Dân — tư liệu Ban Tuyên giáo TW / HCM Toàn tập T.4 |
+| Di chúc | 4 | **30 đoạn** | hochiminh.vn — bản công bố 1969 |
+| Lời kêu gọi thi đua ái quốc | 7 | **42 dòng** | CAND — đăng lại Cứu quốc số 968, 24/6/1948 |
+| Lời kêu gọi toàn quốc kháng chiến | 4 | **9 dòng** | QĐND |
+| Thư gửi các học sinh 1945 | 3 | **9 đoạn** | Nhân Dân |
+
+**Bảy mục giữ nguyên bản trích, không chắp vá.** Đáng ghi nhất: *Bài nói tại Đền Hùng* được xác nhận là **nói chuyện ứng khẩu, không có văn bản viết** — mọi nguồn chỉ lưu đúng một câu. Đó là bản chất tư liệu chứ không phải thiếu sót của dự án.
+
+### Ranh giới xử lý chữ nghi sai — áp nhất quán cho cả 82 mục
+
+| Tình huống | Xử lý | Ca thật gặp trong phiên |
+|---|---|---|
+| Nguồn in ra thứ **không tồn tại** | sửa + ghi lại cả hai bản | «Việt Nam Cộng hòa Dân chủ» → «Việt Nam Dân chủ Cộng hòa» (Tuyên ngôn ĐL) · «phấm khởi» → «phấn khởi» (chúc Tết 1950) · «hằng hái» → «hăng hái» (Di chúc) |
+| Hai dạng **đều lưu hành** | giữ nguyên + ghi cả hai | «Sự thực/Sự thật» · «tính mạng/tính mệnh» · «sẽ/để» (chúc Tết 1946) |
+| Một nguồn, nghi mà không đối chiếu được | **giữ nguyên** | «binh quyền» (chúc Tết 1945) |
+
+Quốc hiệu bị đảo là ca nghiêm trọng nhất: đây là tên nước trong chính văn kiện khai sinh ra nó, mà «Việt Nam Cộng hòa» lại là quốc hiệu của một thực thể khác. Ba căn cứ để kết luận lỗi in chứ không phải dị bản: chưa từng tồn tại thực thể tên đó · đoạn kết **cùng bài trên chính trang ấy** ghi đúng · tra chéo cổng nhà nước đều ra dạng chuẩn.
+
+«Hằng hái» ban đầu **giữ nguyên** vì chỉ có một ca; sửa sau khi lô Trung thu bắt được đúng lỗi đó lần thứ hai trên cùng hệ thống báo. Hai ca độc lập cùng dạng mới đủ.
+
+### Lỗi dữ liệu bắt được nhờ đối chiếu chéo, không cổng nào bắt được
+
+- **Chúc Tết 1953 thiếu một câu.** `hochiminh.vn` in 11 dòng; hai nguồn Nhân Dân in 12, trong đó một nguồn dẫn thẳng *Báo Nhân Dân số 95, 11–15/2/1953, tr.1*. Lấy bản 12 dòng, giữ «kết đoàn» vì hai trong ba nguồn ghi vậy.
+- **Lời bình bài 1944 sai bối cảnh** — ghi Bác «còn hoạt động bí mật», thực ra Tết Giáp Thân Người đã ra tù và giữ chức Phó chủ tịch Việt Nam cách mạng đồng minh hội.
+
+### Bốn chỗ vênh nêu ra thay vì giấu
+
+Mỗi chỗ đều ghi **điều kiện cụ thể để về sau phân xử được**, không chỉ dán nhãn "chưa rõ".
+
+- **Niên đại bài chúc Tết Quý Mùi 1943.** `hochiminh.vn` xếp vào tuyển tập thơ chúc Tết của Bác; «Hồ Chí Minh — Biên niên tiểu sử» Tập 2 chép Người bị giam ở Quảng Tây 27/8/1942 → 10/9/1943, đúng Tết Quý Mùi đang bị áp giải sang nhà giam Liễu Châu, và 3.252 dòng biên niên **không nhắc bài này** dù có nhắc bài 1942 và 1944. Lô tra đề nghị gỡ hẳn — **không theo**: biên niên **im lặng** không phải biên niên **phủ nhận**, và xoá mục chính là chọn bản gọn hơn, trái bất biến §1.4. Giữ lại, đổi tên thành «niên đại đang tranh luận», gỡ mọi khẳng định khỏi `thoi_ky`/`loi_binh`, nêu cả hai phía trong ghi chú hiện ra cho người đọc.
+- Cặp dòng lặp trong bài 1943 · «binh quyền» bài 1945 · nơi đăng bài 1945.
+
+### Bốn mục cố ý KHÔNG nạp sau hai lượt truy
+
+- «Dân cày» và «Công nhân» — **có** nguyên văn trên báo Cao Bằng nhưng nguồn ghi «Khuyết danh», và dò chéo toàn bộ **88 bút danh** của Bác trên `tulieuvankien.dangcongsan.vn` không khớp cái nào. Có văn bản mà thiếu quy thuộc thì nạp vào là **bịa quy thuộc**. Đối chiếu: «Phụ nữ» và «Trẻ con» nạp được vì `tulieuvankien` xác nhận đích danh bút danh «Kim Oanh» (số 104, 1/9/1941) và «Bé Con» (số 106, 21/9/1941).
+- «Trẻ chăn trâu» và «Tầm hữu vị ngộ» — không có nguyên văn trên nguồn được phép.
+
+### Bẫy công cụ — ghi lại vì tốn của phiên này ba lượt tra lặp
+
+`WebFetch` chạy prompt qua một model tóm tắt, và model đó **tự từ chối trả nguyên văn dài** viện bản quyền — kể cả với cổng nhà nước công khai và tác phẩm đã hết hạn bảo hộ. Nặng nhất: gọi vào trang Di chúc của `hochiminh.vn` thì nó trả về **bản dịch tiếng Anh tóm tắt** thay vì nguyên văn tiếng Việt.
+
+Đo được trên cùng một trang `hochiminh.vn`: một agent dùng WebFetch kết luận "không lấy được"; một agent lấy văn bản thô lấy đủ **21 bài**.
+
+Nhưng **không phải ca nào cũng là lỗi công cụ**: «Trẻ chăn trâu» crawl thô vượt được lỗi redirect của `qdnd.vn` rồi thấy trang **thật sự chỉ có một câu giới thiệu podcast**. Phải kiểm chứ đừng mặc định.
+
+Tải thẳng mã HTML gốc (không qua trình render) còn dùng để tách bạch **«nguồn in sai»** khỏi **«công cụ crawl làm hỏng»** — cách này xác định được `hochiminh.vn` đúng là in «phấm khởi» và «binh quyền», và xác định cặp dòng lặp bài 1943 nằm trong chính nguồn.
+
+### Hai trường ghi chú tách bạch
+
+`ghi_chu_dich` **render ra trang** cho người đọc; `ghi_chu_bien_tap` chỉ nằm trong JSON, dặn người/agent sửa dữ liệu về sau. Khai cả hai trong `interface Poem`, trong đó `ghi_chu_bien_tap` có chú thích nói rõ nó **cố ý không render** — nhét câu «ĐỪNG SỬA» vào `ghi_chu_dich` là nói với nhầm người.
