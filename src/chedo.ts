@@ -20,7 +20,7 @@ const HOP_LE: readonly CheDo[] = ["nguoi-lon", "tre-em"] as const;
 
 /** Màu thanh trình duyệt trên di động — phải khớp topbar của từng chế độ. */
 const MAU_THANH: Record<CheDo, string> = {
-  "nguoi-lon": "#8b1a1a", // khớp điểm đầu của --mat-nghich
+  "nguoi-lon": "#b02020", // khớp điểm đầu của --mat-nghich
   "tre-em": "#ea580c",
 };
 

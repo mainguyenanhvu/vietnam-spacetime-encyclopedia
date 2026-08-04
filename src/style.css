@@ -1792,7 +1792,10 @@ input[type="range"] {
 #vn-search-input:focus {
   background: color-mix(in srgb, var(--mat) 16%, transparent);
   color: var(--chu-tren-nghich);
-  border-color: var(--nhan-sang);
+  /* --nhan-mo, không phải --nhan-sang — cùng lý do với ngôi sao trên logo:
+     nền topbar đã sáng lên #b02020 nên tông vàng đậm không còn tách ra khỏi
+     nó. Đây là viền báo "ô đang nhập", mất tương phản là mất chính tín hiệu. */
+  border-color: var(--nhan-mo);
   box-shadow: 0 0 0 3px var(--glow-nhan);
   outline: none; /* :focus-visible bên dưới vẫn vẽ vòng focus riêng khi điều hướng bàn phím */
 }

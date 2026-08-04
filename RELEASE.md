@@ -213,6 +213,37 @@ Chủ dự án: *"những bài thơ Bác viết vẫn chưa đủ, hãy sưu t�
 | 📜 Văn chính luận · thư · lời kêu gọi | 8 | 5 mục đã lên toàn văn |
 | ❓ Tồn nghi — chưa xác định tác giả | 2 | tách hẳn, có cảnh báo cấp nhóm |
 
+---
+
+## Phiên 2026-08-05
+
+### Phiếu UI-A đóng — tông đỏ topbar
+
+Phiếu gồm ba mục. Mở lại thì **mục 1 (logo) và mục 3 (ô tìm kiếm) đã làm xong từ commit `21238b0`** ngày 03-08 — chính thân commit đó ghi là tách riêng tông đỏ để làm sau, nhưng phiếu không ai đóng. Đã nghiệm thu lại bằng ảnh chụp chứ không bằng việc đọc CSS: logo SVG đảo màu đúng ở cả hai chế độ, ô tìm kiếm khi focus giữ nền tối 16% + viền vàng + quầng sáng, không loé trắng.
+
+Mục 2 dựng thử **bốn tông thẳng trên trang thật** (ghi đè `--mat-nghich` qua CDP rồi chụp), chủ dự án chọn **A — đỏ quốc kỳ `#b02020 → #8a1616`**.
+
+Nền sáng lên thì mọi lớp chữ sáng nằm trên nó đều tụt tương phản. Số đo lấy từ màu đã tính trong trang, không phải từ hằng số trong file:
+
+| Lớp | Trên `#8b1a1a` (cũ) | Trên `#b02020` (mới) | Ngưỡng |
+|---|---|---|---|
+| Tiêu đề `--mat` | 9,13:1 | **6,72:1** | 4,5:1 |
+| Chữ nút `--chu-tren-nghich` | 6,44:1 | **4,74:1** | 4,5:1 |
+| Sao logo + viền ô tìm, nếu giữ `--nhan-sang` | 4,02:1 | **2,95:1** ❌ | 3:1 |
+| …sau khi đổi sang `--nhan-mo` | — | **4,74:1** ✅ | 3:1 |
+
+Vàng thếp `--nhan-sang` (`#d4a24e`) rơi xuống dưới ngưỡng 3:1 của WCAG 1.4.11 cho hình khối phi văn bản — ngôi sao trên logo và viền báo "ô đang nhập" đều mờ đi. **Không nâng sáng thẳng `--nhan-sang`**: nó còn dùng ở 14 chỗ khác, phần lớn trên nền sáng nơi nó vốn đã chỉ ~2,3:1, nên nâng toàn cục là chữa topbar rồi làm hỏng thanh thời gian và panel. Thay bằng `--nhan-mo` (`#f2d399`) ở đúng ba quy tắc nằm trên dải đỏ — đây đã sẵn là bậc "vàng trên nền tối" của bảng màu, chính là giá trị của `--chu-tren-nghich`.
+
+Kèm theo, **một lỗi có sẵn được sửa nhờ đi qua đây**: ở chế độ trẻ em, viền ô tìm kiếm khi focus lấy `--nhan-sang` = `#a855f7` (tím) đặt trên dải cam–đỏ–tím, đo được **1,31:1** — gần như vô hình. Đổi sang `--nhan-mo` (`#ddd6fe`) lên **3,73:1**.
+
+Sửa đúng 4 file: `theme.css` (gradient + 2 quy tắc logo), `style.css` (viền focus), `chedo.ts` (`MAU_THANH` — nguồn thật của màu thanh trình duyệt theo chế độ), `index.html` (`meta[theme-color]`).
+
+⚠️ **Bẫy đo đạc, ghi lại để lần sau đừng mắc lại.** Chrome headless không có cửa sổ hoạt động nên `:focus` **không khớp** — lượt chụp đầu tiên trả về đúng trạng thái nghỉ (nền 8%, `box-shadow: none`) trong khi tôi tưởng đã nghiệm thu được trạng thái đang nhập. Phải bật `Emulation.setFocusEmulationEnabled` trước khi điều hướng. Không có bước này thì mọi ảnh chụp trạng thái focus từ trước tới nay đều là ảnh giả.
+
+❌ **Còn lệch, cố ý không đụng tới trong phiếu này**: `public/manifest.webmanifest` khai `theme_color: #6d1414` và `public/icon.svg` tô nền `#6d1414` — cả hai lấy chặng TỐI của gradient cũ, đã lệch với `index.html` từ trước phiên này. Đây là màu của biểu tượng ứng dụng khi cài PWA, không phải topbar; gộp vào đây là mở rộng phạm vi phiếu.
+
+Nghiệm thu: `npm run build` exit 0 (chạy `tsc`) · `npm run validate` **12/12 cổng xanh** · Chrome headless chụp lại hai chế độ, console sạch.
+
 ### Năm văn kiện từ bản trích lên toàn văn
 
 Tuyên ngôn Độc lập nằm trong thư viện với **đúng 4 dòng** — văn kiện quan trọng nhất cả bộ sưu tập. Lý do ghi hồi trước là "mục dẫn đọc", không phải bản quyền, nhưng kết quả vẫn là cắt cụt tác phẩm không cần cắt.

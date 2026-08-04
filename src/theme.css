@@ -103,12 +103,15 @@
   --mat-chim: #f5f5f4;
   --mat-kinh: rgba(255, 253, 247, 0.82);
   --vien-kinh: rgba(255, 255, 255, 0.55);
-  /* Kéo sáng một bậc so với bản đầu (#6d1414 → #4a0d0d). Sơn mài thật là đỏ
-     ấm có chiều sâu, không phải nâu sẫm — bản cũ tối đến mức đọc ra như vệt
-     đục vắt ngang đỉnh màn hình. Đo lại tương phản trên nền #8b1a1a: tiêu đề
-     --mat 9,1:1 · chữ --chu-tren-nghich 6,4:1 · chữ trên nút topbar 5,5:1,
-     đều còn trên ngưỡng 4,5:1. */
-  --mat-nghich: linear-gradient(135deg, #8b1a1a 0%, #6d1414 100%);
+  /* Kéo sáng lần hai (#4a0d0d → #6d1414 → #b02020), chủ dự án chọn ngày
+     2026-08-05 sau khi xem bốn tông dựng thẳng trên trang. Đây là đỏ quốc kỳ,
+     không còn ám nâu như hai bản trước.
+     Đo trên nền #b02020: tiêu đề --mat 6,72:1 · chữ --chu-tren-nghich
+     4,74:1 — đều còn trên ngưỡng 4,5:1, nhưng BIÊN ĐÃ MỎNG (bản #8b1a1a cũ
+     là 9,13 và 6,44). Kéo sáng thêm một bậc nữa là trượt: đừng đổi mà không
+     đo lại cả hai lớp chữ này. Cái giá của nền sáng hơn nằm ở lớp vàng thếp
+     — xem ghi chú ở #logo .logo-sao. */
+  --mat-nghich: linear-gradient(135deg, #b02020 0%, #8a1616 100%);
 
   /* Chữ */
   --chu: #2b2320;
@@ -529,13 +532,19 @@ h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* Người lớn: sơn mài đỏ, sao thếp vàng — đúng lá cờ, đúng bảng màu chủ đạo. */
+/* Người lớn: sơn mài đỏ, sao thếp vàng — đúng lá cờ, đúng bảng màu chủ đạo.
+   Dùng --nhan-mo chứ KHÔNG phải --nhan-sang: từ khi topbar sáng lên #b02020,
+   --nhan-sang (#d4a24e) chỉ còn 2,95:1 trên nền đó — dưới ngưỡng 3:1 của
+   WCAG 1.4.11 cho hình khối phi văn bản, ngôi sao mờ đi thấy rõ. --nhan-mo
+   (#f2d399) đạt 4,74:1. Không nâng thẳng --nhan-sang lên vì nó còn dùng ở 14
+   chỗ khác, phần lớn nằm trên NỀN SÁNG, nơi nó vốn đã chỉ ~2,3:1 — nâng sáng
+   toàn cục là chữa topbar rồi làm hỏng thanh thời gian và panel. */
 #logo .logo-nen {
   fill: var(--brand);
-  stroke: var(--nhan-sang);
+  stroke: var(--nhan-mo);
 }
 #logo .logo-sao {
-  fill: var(--nhan-sang);
+  fill: var(--nhan-mo);
 }
 /* Trẻ em: đảo lại thành nền trắng, sao cam. Giữ nguyên như người lớn thì khối
    cam của logo chìm nghỉm vào chính dải cam–đỏ–tím của topbar. */
