@@ -1,0 +1,128 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Duy Tân 1916 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "duy-tan-1916",
+  "ten": "Khởi nghĩa Duy Tân 1916",
+  "nam": 1916,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Thái Phiên, Trần Cao Vân, vua Duy Tân",
+  "doi_thu": "Pháp",
+  "dia_diem": "Huế và các tỉnh Trung Kỳ",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          400
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          800,
+          360
+        ]
+      ],
+      "nhan": "Huế và các tỉnh Trung Kỳ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-chuan-bi-1916",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 250,
+      "y": 450,
+      "nhan": "Thái Phiên, Trần Cao Vân, vua Duy Tân chuẩn bị"
+    },
+    {
+      "id": "quan-ta-binh-linh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 400,
+      "nhan": "Dự định huy động binh lính người Việt"
+    },
+    {
+      "id": "quan-dich-bai-lo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 300,
+      "nhan": "Kế hoạch bị bại lộ"
+    },
+    {
+      "id": "vua-duy-tan-bi-bat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 550,
+      "y": 250,
+      "nhan": "Vua Duy Tân bị bắt, đày Réunion"
+    },
+    {
+      "id": "co-xu-chem-1916",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 450,
+      "y": 200,
+      "nhan": "Thái Phiên, Trần Cao Vân bị xử chém"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Thái Phiên, Trần Cao Vân bí mật chuẩn bị cùng vua Duy Tân",
+      "mo_ta": "Thái Phiên và Trần Cao Vân cùng vua Duy Tân bí mật chuẩn bị cuộc khởi nghĩa vũ trang chống Pháp.",
+      "hien": [
+        "co-ta-chuan-bi-1916"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Dự định huy động binh lính người Việt nổi dậy",
+      "mo_ta": "Kế hoạch dự định huy động binh lính người Việt trong quân đội Pháp nổi dậy tại Huế và các tỉnh Trung Kỳ.",
+      "hien": [
+        "co-ta-chuan-bi-1916",
+        "quan-ta-binh-linh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Kế hoạch bị bại lộ",
+      "mo_ta": "Kế hoạch khởi nghĩa bị bại lộ trước khi thực hiện.",
+      "hien": [
+        "quan-ta-binh-linh",
+        "quan-dich-bai-lo"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Vua Duy Tân bị bắt, đày sang Réunion",
+      "mo_ta": "Vua Duy Tân bị bắt và đày sang đảo Réunion.",
+      "hien": [
+        "vua-duy-tan-bi-bat"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Thái Phiên, Trần Cao Vân bị xử chém (17/5/1916)",
+      "mo_ta": "Thái Phiên, Trần Cao Vân cùng hai cận thần bị thực dân Pháp xử chém, hiện được thờ chung tại một ngôi mộ ở Thuỷ Xuân, Huế.",
+      "hien": [
+        "co-xu-chem-1916"
+      ]
+    }
+  ],
+  "ket_qua": "Kế hoạch bị bại lộ, vua Duy Tân bị bắt và đày sang đảo Réunion; Thái Phiên, Trần Cao Vân cùng hai cận thần bị thực dân Pháp xử chém ngày 17/5/1916.",
+  "y_nghia": "Cuộc khởi nghĩa hiếm hoi có sự tham gia trực tiếp của một vị vua triều Nguyễn, thể hiện tinh thần yêu nước vượt qua ràng buộc cung đình.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT thành phố Đà Nẵng (danang.gov.vn) — Trần Cao Vân, Thái Phiên và vụ mưu khởi nghĩa ở Huế",
+    "Báo Nhân Dân điện tử — 100 năm phong trào Duy Tân và khởi nghĩa Trung Kỳ",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

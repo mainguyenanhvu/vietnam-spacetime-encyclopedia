@@ -1,0 +1,118 @@
+{
+  "ghi_chu": "Sa đồ trận Núi Thành 1965 — Mục T2 theo docs/section9-sensitive.json. MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nui-thanh-1965",
+  "ten": "Trận Núi Thành 1965",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ đội địa phương Quảng Nam",
+  "doi_thu": "Lính thủy đánh bộ Mỹ",
+  "dia_diem": "Đồi Núi Thành, nay thành phố Đà Nẵng",
+  "lien_quan_tinh": [
+    "da-nang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          400
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          800,
+          360
+        ]
+      ],
+      "nhan": "Đồi Núi Thành (đồi Phủ Huề)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-my-nui-thanh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 350,
+      "nhan": "Đại đội lính thuỷ đánh bộ Mỹ"
+    },
+    {
+      "id": "quan-ta-tap-kich-nt",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Bộ đội địa phương Quảng Nam"
+    },
+    {
+      "id": "mui-tap-kich-nt",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        400
+      ],
+      "den": [
+        480,
+        360
+      ],
+      "nhan": "Bí mật tập kích trong đêm"
+    },
+    {
+      "id": "co-thang-nui-thanh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 280,
+      "nhan": "Tiêu diệt gọn đại đội Mỹ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lính thuỷ đánh bộ Mỹ đóng tại Núi Thành",
+      "mo_ta": "Một đại đội lính thuỷ đánh bộ Mỹ đóng quân tại đồi Núi Thành (đồi Phủ Huề).",
+      "hien": [
+        "quan-dich-my-nui-thanh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bộ đội địa phương Quảng Nam bí mật tập kích",
+      "mo_ta": "Đêm 25 rạng 26/5/1965, bộ đội địa phương Quảng Nam bí mật tập kích.",
+      "hien": [
+        "quan-ta-tap-kich-nt",
+        "quan-dich-my-nui-thanh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiêu diệt gọn một đại đội lính Mỹ",
+      "mo_ta": "Nghĩa quân tiêu diệt gọn toàn bộ đại đội lính thuỷ đánh bộ Mỹ.",
+      "hien": [
+        "quan-ta-tap-kich-nt",
+        "mui-tap-kich-nt",
+        "co-thang-nui-thanh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mở đầu phong trào 'tìm Mỹ mà đánh'",
+      "mo_ta": "Đây là trận đánh trực tiếp đầu tiên của Quân Giải phóng thắng quân Mỹ, mở đầu phong trào thi đua 'tìm Mỹ mà đánh'.",
+      "hien": [
+        "co-thang-nui-thanh"
+      ]
+    }
+  ],
+  "ket_qua": "Bộ đội địa phương Quảng Nam tập kích và tiêu diệt gọn một đại đội lính thuỷ đánh bộ Mỹ đóng tại Núi Thành.",
+  "y_nghia": "Trận đánh trực tiếp đầu tiên của Quân Giải phóng miền Nam thắng quân Mỹ, mở đầu phong trào thi đua 'tìm Mỹ mà đánh'.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Trận Núi Thành - trận đầu thắng Mỹ",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

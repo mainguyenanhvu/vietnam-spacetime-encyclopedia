@@ -1,0 +1,132 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Thượng Lào 1953 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Toàn bộ địa bàn tác chiến trên đất Lào — không gắn tỉnh Việt Nam cụ thể để tránh suy diễn. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-thuong-lao-1953",
+  "ten": "Chiến dịch Thượng Lào 1953",
+  "nam": 1953,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đại tướng Võ Nguyên Giáp (phối hợp Pathet Lào)",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Sầm Nưa – Xiêng Khoảng (Thượng Lào)",
+  "lien_quan_tinh": [],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          80
+        ],
+        [
+          500,
+          50
+        ],
+        [
+          900,
+          100
+        ]
+      ],
+      "nhan": "Sầm Nưa – Xiêng Khoảng (Thượng Lào)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cu-diem-sam-nua",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 400,
+      "y": 300,
+      "nhan": "Cứ điểm Sầm Nưa kiểu Nà Sản"
+    },
+    {
+      "id": "quan-ta-viet-lao",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 400,
+      "nhan": "Liên quân Việt – Lào tiến công"
+    },
+    {
+      "id": "co-thang-sam-nua",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 230,
+      "nhan": "Giải phóng tỉnh Sầm Nưa"
+    },
+    {
+      "id": "mui-mo-rong-xieng-khoang",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        260
+      ],
+      "den": [
+        700,
+        200
+      ],
+      "nhan": "Mở rộng sang Xiêng Khoảng"
+    },
+    {
+      "id": "co-thang-thuong-lao",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 750,
+      "y": 150,
+      "nhan": "Buộc Pháp phân tán lực lượng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Pháp xây dựng Sầm Nưa thành cứ điểm mạnh",
+      "mo_ta": "Đầu 1953, tướng Pháp R. Salan xây dựng Sầm Nưa thành cứ điểm mạnh kiểu Nà Sản.",
+      "hien": [
+        "cu-diem-sam-nua"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Liên quân Việt-Lào mở chiến dịch tiến công",
+      "mo_ta": "Từ 13/4/1953, bộ đội chủ lực Việt Nam phối hợp lực lượng Pathet Lào mở chiến dịch tiến công.",
+      "hien": [
+        "cu-diem-sam-nua",
+        "quan-ta-viet-lao"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Giải phóng tỉnh Sầm Nưa",
+      "mo_ta": "Liên quân tiến công tiêu diệt một bộ phận quân Pháp, giải phóng toàn bộ tỉnh Sầm Nưa.",
+      "hien": [
+        "quan-ta-viet-lao",
+        "co-thang-sam-nua"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mở rộng vùng giải phóng sang Xiêng Khoảng",
+      "mo_ta": "Liên quân tiếp tục mở rộng vùng giải phóng sang một phần Xiêng Khoảng.",
+      "hien": [
+        "co-thang-sam-nua",
+        "mui-mo-rong-xieng-khoang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Buộc Pháp phân tán lực lượng trước Điện Biên Phủ",
+      "mo_ta": "Chiến dịch buộc Pháp phải điều lực lượng đối phó nhiều hướng, tạo bàn đạp cho các chiến dịch phối hợp Đông Xuân 1953-1954.",
+      "hien": [
+        "co-thang-thuong-lao"
+      ]
+    }
+  ],
+  "ket_qua": "Liên quân Việt–Lào giải phóng toàn bộ tỉnh Sầm Nưa và một phần Xiêng Khoảng, buộc Pháp phải phân tán lực lượng đối phó nhiều hướng trước Điện Biên Phủ.",
+  "y_nghia": "Biểu tượng của liên minh chiến đấu đặc biệt Việt–Lào, tạo bàn đạp cho các chiến dịch phối hợp tiếp theo trong Đông Xuân 1953–1954.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Quân đội nhân dân — Chiến dịch Thượng Lào - Một biểu tượng của liên minh chiến đấu Việt – Lào",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

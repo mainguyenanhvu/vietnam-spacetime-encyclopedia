@@ -1,0 +1,128 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Đồng Xoài 1965 — Mục T2 theo docs/section9-sensitive.json. MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "dong-xoai-1965",
+  "ten": "Chiến dịch Đồng Xoài",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân Giải phóng miền Nam",
+  "doi_thu": "Quân đội Sài Gòn",
+  "dia_diem": "Đồng Xoài – Phước Long – Bình Long, nay tỉnh Đồng Nai",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          400
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          800,
+          360
+        ]
+      ],
+      "nhan": "Đồng Xoài – Phước Long – Bình Long"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-danh-diem-diet-vien",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 450,
+      "nhan": "Chiến thuật 'đánh điểm, diệt viện'"
+    },
+    {
+      "id": "chi-khu-dong-xoai",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 450,
+      "y": 380,
+      "nhan": "Chi khu quân sự Bình Phước, Đồng Xoài"
+    },
+    {
+      "id": "vien-binh-thuan-loi",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 320,
+      "nhan": "Viện binh tại Thuận Lợi, Phú Riềng"
+    },
+    {
+      "id": "vien-binh-bau-bang",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 260,
+      "nhan": "Viện binh tại Bàu Bàng, Bù Đốp"
+    },
+    {
+      "id": "co-thang-dong-xoai",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 200,
+      "nhan": "Góp phần phá sản 'Chiến tranh đặc biệt'"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở chiến dịch 'đánh điểm, diệt viện'",
+      "mo_ta": "Từ 10/5/1965, quân ta mở chiến dịch 'đánh điểm, diệt viện' tại miền Đông Nam Bộ.",
+      "hien": [
+        "quan-ta-danh-diem-diet-vien"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tiêu diệt chi khu quân sự Đồng Xoài",
+      "mo_ta": "Quân ta tiêu diệt chi khu quân sự Bình Phước, Đồng Xoài.",
+      "hien": [
+        "quan-ta-danh-diem-diet-vien",
+        "chi-khu-dong-xoai"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh tan quân cứu viện tại Thuận Lợi, Phú Riềng",
+      "mo_ta": "Quân ta đánh tan nhiều tiểu đoàn quân cứu viện ở Thuận Lợi, Phú Riềng.",
+      "hien": [
+        "chi-khu-dong-xoai",
+        "vien-binh-thuan-loi"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiếp tục đánh tan viện binh tại Bàu Bàng, Bù Đốp",
+      "mo_ta": "Chiến dịch tiếp tục đánh tan quân cứu viện tại Bàu Bàng, Bù Đốp.",
+      "hien": [
+        "vien-binh-thuan-loi",
+        "vien-binh-bau-bang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Góp phần phá sản 'Chiến tranh đặc biệt'",
+      "mo_ta": "Cùng với Bình Giã, chiến thắng Đồng Xoài góp phần làm phá sản chiến lược 'Chiến tranh đặc biệt' của Mỹ.",
+      "hien": [
+        "co-thang-dong-xoai"
+      ]
+    }
+  ],
+  "ket_qua": "Quân ta tiêu diệt chi khu quân sự Bình Phước, Đồng Xoài và đánh tan nhiều tiểu đoàn quân cứu viện ở Thuận Lợi, Phú Riềng, Bàu Bàng, Bù Đốp; cùng với Bình Giã, góp phần làm phá sản 'Chiến tranh đặc biệt' của Mỹ.",
+  "y_nghia": "Vận dụng thành công chiến thuật 'đánh điểm, diệt viện', tiêu hao lớn sinh lực quân đội Sài Gòn trong hơn hai tháng chiến dịch.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến dịch Đồng Xoài và nghệ thuật «đánh điểm, diệt viện»",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

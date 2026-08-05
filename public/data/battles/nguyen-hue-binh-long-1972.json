@@ -1,0 +1,144 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch tiến công Nguyễn Huệ 1972 — Mục T2 theo docs/section9-sensitive.json. MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-hue-binh-long-1972",
+  "ten": "Chiến dịch tiến công Nguyễn Huệ 1972",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Miền (B2)",
+  "doi_thu": "Mỹ và quân đội Sài Gòn",
+  "dia_diem": "Thị xã Bình Long (An Lộc), Lộc Ninh, nay tỉnh Đồng Nai",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          300,
+          50
+        ],
+        [
+          400,
+          300
+        ],
+        [
+          500,
+          550
+        ]
+      ],
+      "nhan": "Đường 13"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-mo-man-nh-1972",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 480,
+      "nhan": "Lực lượng Miền mở Chiến dịch Nguyễn Huệ"
+    },
+    {
+      "id": "loc-ninh",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 400,
+      "nhan": "Lộc Ninh giải phóng"
+    },
+    {
+      "id": "thi-xa-an-loc",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 450,
+      "y": 320,
+      "nhan": "An Lộc bị bao vây"
+    },
+    {
+      "id": "tau-o-chot-chan",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 500,
+      "y": 250,
+      "nhan": "Chốt chặn Tàu Ô trên Đường 13"
+    },
+    {
+      "id": "quan-dich-giai-toa",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 200,
+      "nhan": "Quân đội Sài Gòn hành quân giải toả bị đánh bại"
+    },
+    {
+      "id": "co-thang-nh-binh-long",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 650,
+      "y": 150,
+      "nhan": "Buộc Mỹ, Sài Gòn đàm phán Paris"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lực lượng Miền mở Chiến dịch Nguyễn Huệ (1/4/1972)",
+      "mo_ta": "Từ 1/4/1972, lực lượng Miền mở Chiến dịch tiến công Nguyễn Huệ trên địa bàn Bình Long, Phước Long, Tây Ninh, Bình Dương.",
+      "hien": [
+        "co-mo-man-nh-1972"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Giải phóng Lộc Ninh",
+      "mo_ta": "Chiến dịch giải phóng hoàn toàn Lộc Ninh.",
+      "hien": [
+        "co-mo-man-nh-1972",
+        "loc-ninh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bao vây An Lộc",
+      "mo_ta": "Quân ta tiếp tục bao vây thị xã An Lộc (Bình Long).",
+      "hien": [
+        "loc-ninh",
+        "thi-xa-an-loc"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chốt chặn Tàu Ô trên Đường 13",
+      "mo_ta": "Quân ta tổ chức chốt chặn tại Tàu Ô, đánh bại các cuộc hành quân giải toả của địch dọc Đường 13.",
+      "hien": [
+        "thi-xa-an-loc",
+        "tau-o-chot-chan"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Kéo dài đến đầu 1973",
+      "mo_ta": "Chiến dịch kéo dài đến 19/1/1973, gây tổn thất nặng cho quân đội Sài Gòn trong suốt gần một năm.",
+      "hien": [
+        "tau-o-chot-chan",
+        "quan-dich-giai-toa"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Buộc Mỹ, Sài Gòn chấp nhận đàm phán Paris",
+      "mo_ta": "Chiến dịch buộc Mỹ và chính quyền Sài Gòn phải chấp nhận đàm phán tại Hội nghị Paris.",
+      "hien": [
+        "co-thang-nh-binh-long"
+      ]
+    }
+  ],
+  "ket_qua": "Chiến dịch giải phóng Lộc Ninh, bao vây An Lộc, đánh bại các cuộc hành quân giải toả dọc Đường 13 (nổi bật trận chốt chặn Tàu Ô), buộc Mỹ và chính quyền Sài Gòn phải chấp nhận đàm phán tại Hội nghị Paris.",
+  "y_nghia": "Một phần cuộc tiến công chiến lược năm 1972, góp phần quan trọng thúc đẩy tiến trình đàm phán chấm dứt chiến tranh.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND Cuối tuần (ct.qdnd.vn) — Chiến dịch Nguyễn Huệ",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

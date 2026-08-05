@@ -1,0 +1,143 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Đường 14 – Phước Long 1974-1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-duong-14-phuoc-long-1974-1975",
+  "ten": "Chiến dịch Đường 14 – Phước Long",
+  "nam": 1974,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Miền (B2)",
+  "doi_thu": "Quân đội Sài Gòn",
+  "dia_diem": "Đường 14, Bù Đăng – Bù Đốp – Đồng Xoài – Phước Long, nay tỉnh Đồng Nai",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          500
+        ],
+        [
+          400,
+          350
+        ],
+        [
+          700,
+          200
+        ]
+      ],
+      "nhan": "Đường 14: Bù Đăng – Bù Đốp – Đồng Xoài – Phước Long"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "km19-bu-dang",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 450,
+      "nhan": "Km19, Bù Đăng (giai đoạn 1)"
+    },
+    {
+      "id": "bu-dop-dong-xoai",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 350,
+      "nhan": "Bù Đốp, Đồng Xoài (giai đoạn 2)"
+    },
+    {
+      "id": "cao-diem-ba-ra",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 550,
+      "y": 270,
+      "nhan": "Phước Bình, cao điểm Bà Rá (giai đoạn 3)"
+    },
+    {
+      "id": "thi-xa-phuoc-long",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 200,
+      "nhan": "Thị xã Phước Long"
+    },
+    {
+      "id": "co-thang-phuoc-long",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 580,
+      "y": 150,
+      "nhan": "Kiểm soát hoàn toàn (6/1/1975)"
+    },
+    {
+      "id": "co-don-trinh-sat",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 750,
+      "y": 100,
+      "nhan": "'Đòn trinh sát chiến lược'"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Giai đoạn 1: đánh chốt km19, chiếm Bù Đăng (13-17/12/1974)",
+      "mo_ta": "Giai đoạn 1 đánh chốt km19, chiếm Bù Đăng.",
+      "hien": [
+        "km19-bu-dang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Giai đoạn 2: chiếm Bù Đốp, Đồng Xoài (23-28/12/1974)",
+      "mo_ta": "Giai đoạn 2 chiếm Bù Đốp, Đồng Xoài, giải phóng hoàn toàn Đường 14.",
+      "hien": [
+        "km19-bu-dang",
+        "bu-dop-dong-xoai"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Giai đoạn 3: đánh chiếm Phước Bình, cao điểm Bà Rá (31/12-6/1)",
+      "mo_ta": "Giai đoạn 3 đánh chiếm Phước Bình, cao điểm Bà Rá.",
+      "hien": [
+        "bu-dop-dong-xoai",
+        "cao-diem-ba-ra"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiến vào thị xã Phước Long",
+      "mo_ta": "Quân ta tiến vào thị xã Phước Long.",
+      "hien": [
+        "cao-diem-ba-ra",
+        "thi-xa-phuoc-long"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Kiểm soát hoàn toàn Phước Long (6/1/1975)",
+      "mo_ta": "Chiều 6/1/1975 ta hoàn toàn kiểm soát thị xã Phước Long — lần đầu tiên một tỉnh miền Nam được giải phóng hoàn toàn.",
+      "hien": [
+        "thi-xa-phuoc-long",
+        "co-thang-phuoc-long"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "'Đòn trinh sát chiến lược' — Mỹ không can thiệp trở lại",
+      "mo_ta": "Đây là 'đòn trinh sát chiến lược' cho thấy khả năng đối phó hạn chế của Mỹ, là cơ sở để Bộ Chính trị hạ quyết tâm giải phóng hoàn toàn miền Nam.",
+      "hien": [
+        "co-don-trinh-sat"
+      ]
+    }
+  ],
+  "ket_qua": "Chiều 6/1/1975 ta hoàn toàn kiểm soát thị xã Phước Long — lần đầu tiên một tỉnh ở miền Nam được giải phóng hoàn toàn.",
+  "y_nghia": "'Đòn trinh sát chiến lược' cho thấy khả năng đối phó hạn chế của Mỹ, là cơ sở để Bộ Chính trị hạ quyết tâm giải phóng hoàn toàn miền Nam.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến dịch Đường 14 – Phước Long, đòn trinh sát chiến lược cho thấy khả năng đối phó hạn chế của Mỹ",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

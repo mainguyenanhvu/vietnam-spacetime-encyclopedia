@@ -1,0 +1,136 @@
+{
+  "ghi_chu": "Sa đồ trận đồi A Bia 1969 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Overlay tự ghi số liệu thương vong (cả hai phía) CHƯA được nguồn nhà nước trực tiếp xác nhận rõ ràng — KHÔNG đưa bất kỳ con số thương vong nào vào nội dung sa đồ. trang_thai=draft chờ soát §9.",
+  "id": "tran-doi-a-bia-1969",
+  "ten": "Trận đồi A Bia (Đồi Thịt Băm)",
+  "nam": 1969,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Mã Vịnh Lan (Trung đoàn trưởng Trung đoàn 3), Kiều Tâm Nguyên (Chính uỷ)",
+  "doi_thu": "Mỹ (Sư đoàn Không vận 101)",
+  "dia_diem": "Đồi A Bia, thung lũng A Sầu, nay TP Huế",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          80
+        ],
+        [
+          500,
+          50
+        ],
+        [
+          900,
+          100
+        ]
+      ],
+      "nhan": "Đồi A Bia, thung lũng A Sầu"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "dia-danh-a-bia",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 350,
+      "nhan": "Đồi A Bia (937m)"
+    },
+    {
+      "id": "quan-dich-td3-187",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 280,
+      "nhan": "Tiểu đoàn 3/187, Sư đoàn Không vận 101 Mỹ"
+    },
+    {
+      "id": "trung-doan-3-ta",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Trung đoàn 3 quân Giải phóng phòng ngự"
+    },
+    {
+      "id": "cong-su-a-bia",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 470,
+      "y": 430,
+      "nhan": "Công sự kiên cố"
+    },
+    {
+      "id": "co-dich-chiem-dinh",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 600,
+      "y": 200,
+      "nhan": "Mỹ chiếm đỉnh đồi (18/5)"
+    },
+    {
+      "id": "co-dich-rut-bo",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Mỹ rút bỏ hoàn toàn (5/6)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đồi A Bia khống chế thung lũng A Sầu",
+      "mo_ta": "Đồi A Bia cao 937m có vị trí chiến lược khống chế thung lũng A Sầu, kiểm soát biên giới Việt-Lào.",
+      "hien": [
+        "dia-danh-a-bia"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Mỹ liên tục đổ bộ, tiến công lên đồi",
+      "mo_ta": "Từ 10/5/1969, Tiểu đoàn 3/187 (Sư đoàn Không vận 101 Mỹ) liên tục đổ bộ, tiến công lên đồi.",
+      "hien": [
+        "dia-danh-a-bia",
+        "quan-dich-td3-187"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trung đoàn 3 kháng cự quyết liệt trên công sự kiên cố",
+      "mo_ta": "Trung đoàn 3 quân Giải phóng phòng ngự, kháng cự quyết liệt trên các công sự kiên cố.",
+      "hien": [
+        "trung-doan-3-ta",
+        "cong-su-a-bia",
+        "quan-dich-td3-187"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mỹ chiếm đỉnh đồi sau nhiều đợt xung phong (18/5)",
+      "mo_ta": "Sau 10 ngày giao tranh ác liệt, tối 18/5/1969 quân Mỹ mới chiếm được đỉnh đồi.",
+      "hien": [
+        "co-dich-chiem-dinh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mỹ rút bỏ hoàn toàn chỉ hai tuần sau (5/6)",
+      "mo_ta": "Mỹ rút bỏ hoàn toàn vị trí này vì không có giá trị chiến lược lâu dài, gây chấn động chính trường Mỹ.",
+      "hien": [
+        "co-dich-rut-bo"
+      ]
+    }
+  ],
+  "ket_qua": "Trung đoàn 3 đẩy lui đợt đổ bộ đầu tiên của Mỹ; qua 10 ngày giao tranh ác liệt, quân Mỹ mới chiếm được đỉnh đồi, nhưng chỉ hai tuần sau đã rút bỏ hoàn toàn vị trí này vì không có giá trị chiến lược lâu dài.",
+  "y_nghia": "Một 'chiến thắng kiểu Pyrros' gây chấn động chính trường Mỹ, góp phần thúc đẩy chủ trương 'Việt Nam hoá chiến tranh' và rút quân Mỹ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Viện Nghiên cứu Kinh tế - Xã hội Hà Nội (vienktxh.hanoi.gov.vn) — Trận chiến 'Đồi thịt băm' 50 năm nhìn lại",
+    "Cục Di sản văn hoá (dsvh.gov.vn) — Địa điểm chiến thắng đồi A Bia",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Plei Me – Ia Đrăng 1965 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-plei-me-ia-drang-1965",
+  "ten": "Chiến dịch Plei Me – Ia Đrăng",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Chí Thanh (chỉ đạo chung)",
+  "doi_thu": "Mỹ (Lữ đoàn kỵ binh không vận số 1)",
+  "dia_diem": "Plei Me và thung lũng Ia Đrăng, Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          400
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          800,
+          360
+        ]
+      ],
+      "nhan": "Plei Me – Đức Cơ – Ia Đrăng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cu-diem-plei-me",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 420,
+      "y": 400,
+      "nhan": "Cứ điểm Plei Me"
+    },
+    {
+      "id": "mui-tien-cong-plei-me",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        280,
+        430
+      ],
+      "den": [
+        330,
+        410
+      ],
+      "nhan": "Mở đầu tiến công (19/10)"
+    },
+    {
+      "id": "quan-dich-truc-thang-van",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 350,
+      "nhan": "Mỹ phản kích bằng trực thăng, pháo binh"
+    },
+    {
+      "id": "quan-ta-phuc-kich-vd",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 300,
+      "nhan": "Quân ta vận động phục kích"
+    },
+    {
+      "id": "thung-lung-ia-drang",
+      "kieu": "dia-danh",
+      "x": 650,
+      "y": 250,
+      "nhan": "Thung lũng Ia Đrăng (14-19/11)"
+    },
+    {
+      "id": "lu-doan-ky-binh-my",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 200,
+      "nhan": "Lữ đoàn kỵ binh không vận số 1 Mỹ tổn thất nặng"
+    },
+    {
+      "id": "co-thang-plei-me",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 150,
+      "nhan": "Phá sản bước đầu 'trực thăng vận – thiết xa vận'"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở đầu tiến công cứ điểm Plei Me (19/10/1965)",
+      "mo_ta": "Quân ta mở đầu chiến dịch bằng tiến công cứ điểm Plei Me của Mỹ - Sài Gòn.",
+      "hien": [
+        "cu-diem-plei-me",
+        "mui-tien-cong-plei-me"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Mỹ phản kích bằng trực thăng và pháo binh",
+      "mo_ta": "Mỹ tổ chức nhiều đợt phản kích giải vây bằng trực thăng vận và pháo binh.",
+      "hien": [
+        "cu-diem-plei-me",
+        "quan-dich-truc-thang-van"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân ta vận động phục kích bẻ gãy phản kích",
+      "mo_ta": "Quân ta dùng chiến thuật vận động phục kích bẻ gãy nhiều đợt phản kích của Mỹ.",
+      "hien": [
+        "quan-ta-phuc-kich-vd",
+        "quan-dich-truc-thang-van"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Cao điểm trận Ia Đrăng (14-19/11/1965)",
+      "mo_ta": "Cao điểm chiến dịch là trận Ia Đrăng, lần đầu quân chủ lực ta trực tiếp giao chiến với lực lượng không vận cơ động Mỹ.",
+      "hien": [
+        "thung-lung-ia-drang",
+        "quan-ta-phuc-kich-vd"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Lữ đoàn kỵ binh không vận số 1 Mỹ chịu tổn thất nặng",
+      "mo_ta": "Lữ đoàn kỵ binh không vận số 1 Mỹ chịu tổn thất nặng nề trong trận Ia Đrăng.",
+      "hien": [
+        "thung-lung-ia-drang",
+        "lu-doan-ky-binh-my"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Làm phá sản bước đầu 'trực thăng vận – thiết xa vận'",
+      "mo_ta": "Chiến dịch làm phá sản bước đầu chiến thuật 'trực thăng vận – thiết xa vận' của Mỹ.",
+      "hien": [
+        "co-thang-plei-me"
+      ]
+    }
+  ],
+  "ket_qua": "Chiến dịch là trận cấp chiến dịch đầu tiên quân ta đánh thắng quân Mỹ trên chiến trường miền Nam; trận đánh cao điểm ở Ia Đrăng buộc Lữ đoàn kỵ binh không vận số 1 Mỹ chịu tổn thất nặng.",
+  "y_nghia": "Làm phá sản bước đầu chiến thuật 'trực thăng vận – thiết xa vận', chứng minh khả năng đối đầu trực diện với lực lượng không vận cơ động hiện đại nhất của Mỹ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Tiến công Plây Me - Chiến dịch đầu tiên đánh quân Mỹ trên chiến trường miền Nam",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

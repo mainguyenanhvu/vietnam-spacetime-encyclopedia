@@ -1,0 +1,145 @@
+{
+  "ghi_chu": "Sa đồ phong trào chống thuế Trung Kỳ 1908 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Không có tên lãnh đạo cụ thể trong nguồn — chi_huy để mức phong trào chung, không suy diễn tên. trang_thai=draft chờ soát §9.",
+  "id": "chong-thue-trung-ky-1908",
+  "ten": "Phong trào chống thuế Trung Kỳ 1908",
+  "nam": 1908,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nông dân và sĩ phu phong trào Duy Tân",
+  "doi_thu": "Pháp",
+  "dia_diem": "Lan rộng từ Quảng Nam tới Toà Khâm sứ Pháp tại Huế",
+  "lien_quan_tinh": [
+    "da-nang",
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          400
+        ],
+        [
+          400,
+          380
+        ],
+        [
+          700,
+          350
+        ]
+      ],
+      "nhan": "Từ Quảng Nam tới Huế"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-suu-thue",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 480,
+      "nhan": "Sưu cao thuế nặng"
+    },
+    {
+      "id": "co-ta-bung-phat-qn",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Bùng phát từ Quảng Nam"
+    },
+    {
+      "id": "quan-ta-lan-rong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 380,
+      "nhan": "Lan rộng khắp Trung Kỳ"
+    },
+    {
+      "id": "toa-kham-su-hue-1908",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 300,
+      "nhan": "Toà Khâm sứ Pháp tại Huế"
+    },
+    {
+      "id": "mui-bao-vay-1908",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        550,
+        360
+      ],
+      "den": [
+        670,
+        310
+      ],
+      "nhan": "Bao vây Toà Khâm sứ (12/4/1908)"
+    },
+    {
+      "id": "quan-dich-dan-ap-1908",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 220,
+      "nhan": "Pháp đàn áp"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sưu cao thuế nặng, đời sống nông dân khốn khổ",
+      "mo_ta": "Đầu năm 1908, sưu cao thuế nặng khiến đời sống nông dân Trung Kỳ vô cùng khốn khổ.",
+      "hien": [
+        "boi-canh-suu-thue"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Phong trào chống thuế bùng phát từ Quảng Nam",
+      "mo_ta": "Phong trào chống sưu thuế bùng phát từ Quảng Nam.",
+      "hien": [
+        "boi-canh-suu-thue",
+        "co-ta-bung-phat-qn"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Lan rộng khắp các tỉnh Trung Kỳ",
+      "mo_ta": "Phong trào nhanh chóng lan rộng khắp các tỉnh Trung Kỳ.",
+      "hien": [
+        "co-ta-bung-phat-qn",
+        "quan-ta-lan-rong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hàng nghìn nông dân bao vây Toà Khâm sứ tại Huế (12/4/1908)",
+      "mo_ta": "Ngày 12/4/1908, hàng nghìn nông dân kéo về bao vây Toà Khâm sứ Pháp tại Huế đòi giảm sưu thuế.",
+      "hien": [
+        "quan-ta-lan-rong",
+        "toa-kham-su-hue-1908",
+        "mui-bao-vay-1908"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Pháp đàn áp, nhiều sĩ phu Duy Tân bị bắt, xử tử, lưu đày",
+      "mo_ta": "Thực dân Pháp thẳng tay đàn áp, nhiều sĩ phu phong trào Duy Tân bị bắt, xử tử hoặc lưu đày.",
+      "hien": [
+        "toa-kham-su-hue-1908",
+        "quan-dich-dan-ap-1908"
+      ]
+    }
+  ],
+  "ket_qua": "Hàng nghìn nông dân kéo về bao vây Toà Khâm sứ Pháp tại Huế đòi giảm sưu thuế; thực dân Pháp thẳng tay đàn áp, nhiều sĩ phu phong trào Duy Tân bị bắt, xử tử hoặc lưu đày.",
+  "y_nghia": "Cho thấy sức mạnh đấu tranh của quần chúng nhân dân đầu thế kỷ 20, tiền đề cho các phong trào yêu nước tiếp theo.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Phong trào chống thuế tại Huế năm 1908 qua báo cáo của người Pháp",
+    "Báo Quân đội nhân dân — Ngày này năm xưa",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

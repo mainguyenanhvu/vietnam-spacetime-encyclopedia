@@ -1,0 +1,128 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Bình Giã 1964 — Mục T2 theo docs/section9-sensitive.json. MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "binh-gia-1964",
+  "ten": "Chiến dịch Bình Giã",
+  "nam": 1964,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân Giải phóng miền Nam",
+  "doi_thu": "Quân đội Sài Gòn",
+  "dia_diem": "Bình Giã, nay tỉnh Đồng Nai",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          400
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          800,
+          360
+        ]
+      ],
+      "nhan": "Khu vực Bình Giã, miền Đông Nam Bộ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-chu-luc-1964",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 450,
+      "nhan": "Quân Giải phóng mở chiến dịch chủ lực đầu tiên"
+    },
+    {
+      "id": "td-33-bdq",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 450,
+      "y": 380,
+      "nhan": "Tiểu đoàn biệt động quân 33"
+    },
+    {
+      "id": "td-4-tqlc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 330,
+      "nhan": "Tiểu đoàn thuỷ quân lục chiến 4"
+    },
+    {
+      "id": "ap-chien-luoc",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 750,
+      "y": 270,
+      "nhan": "Ấp chiến lược bị phá vỡ"
+    },
+    {
+      "id": "co-thang-binh-gia",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 200,
+      "nhan": "Góp phần phá sản 'Chiến tranh đặc biệt'"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Giải phóng mở chiến dịch tiến công đầu tiên bằng chủ lực",
+      "mo_ta": "Từ 2/12/1964, Quân Giải phóng miền Nam mở chiến dịch tiến công đầu tiên bằng lực lượng chủ lực trên chiến trường miền Đông Nam Bộ.",
+      "hien": [
+        "quan-ta-chu-luc-1964"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Diệt gọn Tiểu đoàn biệt động quân 33",
+      "mo_ta": "Quân ta diệt gọn Tiểu đoàn biệt động quân 33 của quân đội Sài Gòn.",
+      "hien": [
+        "quan-ta-chu-luc-1964",
+        "td-33-bdq"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Diệt gọn Tiểu đoàn thuỷ quân lục chiến 4",
+      "mo_ta": "Quân ta tiếp tục diệt gọn Tiểu đoàn thuỷ quân lục chiến 4.",
+      "hien": [
+        "td-33-bdq",
+        "td-4-tqlc"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Phá vỡ nhiều ấp chiến lược",
+      "mo_ta": "Chiến dịch phá vỡ nhiều ấp chiến lược trong vùng.",
+      "hien": [
+        "td-4-tqlc",
+        "ap-chien-luoc"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Góp phần phá sản 'Chiến tranh đặc biệt'",
+      "mo_ta": "Chiến thắng loại khỏi vòng chiến hơn 1.700 địch, góp phần làm phá sản chiến lược 'Chiến tranh đặc biệt' của Mỹ.",
+      "hien": [
+        "co-thang-binh-gia"
+      ]
+    }
+  ],
+  "ket_qua": "Loại khỏi vòng chiến hơn 1.700 địch, diệt gọn Tiểu đoàn biệt động quân 33 và Tiểu đoàn thuỷ quân lục chiến 4, phá vỡ nhiều ấp chiến lược, góp phần làm phá sản chiến lược 'Chiến tranh đặc biệt' của Mỹ.",
+  "y_nghia": "Chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền Nam, chứng minh khả năng đánh tiêu diệt gọn từng đơn vị quân đội Sài Gòn.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến dịch Bình Giã - Chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền Nam",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}
