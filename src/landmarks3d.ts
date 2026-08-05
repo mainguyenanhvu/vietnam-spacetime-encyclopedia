@@ -12,6 +12,7 @@ import * as THREE from "three";
 import { MercatorCoordinate } from "maplibre-gl";
 import type { CustomLayerInterface, Map as MlMap } from "maplibre-gl";
 import { createOceanMesh } from "./ocean3d";
+import { mauCua, VAT_LIEU_DIEM } from "./mohinh-lop-phu";
 import type { DiemMoHinh, KieuMoHinh } from "./mohinh-diem";
 
 export interface Landmarks3D {
@@ -216,16 +217,16 @@ const LANDMARKS: LandmarkDef[] = [
 ];
 
 // ---------------------------------------------------------------------------
-// Mô hình cho ĐIỂM DI TÍCH trên lớp phủ — "biểu tượng ở bản đồ 3D cũng phải
-// dựng 3D theo".
+// Mô hình cho ĐIỂM lớp phủ — "biểu tượng ở bản đồ 3D cũng phải dựng 3D theo".
 //
 // 8 landmark ở trên là mô hình chọn tay cho 8 địa danh cố định. Còn hàng nghìn
-// điểm di tích thì không thể dựng tay từng cái: chọn hình theo LOẠI công trình
-// đọc từ tên mục (chùa/tháp/thành/bia/núi), dựng sẵn mỗi loại một mẫu rồi
-// clone — clone dùng chung geometry và material nên 120 mô hình vẫn rẻ.
+// điểm lớp phủ thì không thể dựng tay từng cái: chọn một trong 12 NGUYÊN MẪU
+// theo loại đối tượng (xem mohinh-diem.ts), mỗi nguyên mẫu là đúng một
+// BufferGeometry đã nướng màu vào đỉnh (xem mohinh-lop-phu.ts) nên cả một cụm
+// cùng loại chỉ tốn ĐÚNG MỘT lệnh vẽ.
 //
-// Mẫu dựng ở chiều cao ĐƠN VỊ (H = 1) vì mọi hàm dựng trên đây đều tuyến tính
-// theo H. Kích thước thật đặt mỗi khung hình theo mức phóng (xem CAO_PX), nếu
+// Mẫu được chuẩn hoá về chiều cao 1. Kích thước thật đặt mỗi khung hình theo
+// mức phóng (xem caoDiemTheoZoom) nhân với hệ số cỡ riêng của từng điểm, nếu
 // không thì cùng một con số mét sẽ bé như hạt bụi ở tầm tỉnh và cao bằng dãy
 // núi ở tầm phố.
 // ---------------------------------------------------------------------------
@@ -238,111 +239,25 @@ const LANDMARKS: LandmarkDef[] = [
  * riêng lớp di tích quốc gia đặc biệt đã có 152 điểm — 152 mô hình cao 46px
  * dựng chi chít lên một dải đất 350px thì không còn nhìn thấy đất nước nữa,
  * đo được bằng ảnh chụp. Ở mức đó mô hình phải lùi về vai trò cái chấm có khối.
+ *
+ * Trên zoom 13 (tầm phường/phố) lại thu bớt: ở mức đó bản đồ nền đã có đường
+ * sá và số nhà, mô hình cao 46px xếp liền nhau sẽ che mất chính thứ người dùng
+ * phóng vào để xem.
  */
 const caoDiemTheoZoom = (z: number): number => {
   if (z <= 5) return 20;
-  if (z >= 9) return 46;
-  return 20 + ((46 - 20) * (z - 5)) / 4;
+  if (z <= 9) return 20 + ((46 - 20) * (z - 5)) / 4;
+  if (z <= 13) return 46;
+  if (z >= 15) return 36;
+  return 46 - ((46 - 36) * (z - 13)) / 2;
 };
 /** Landmark là mốc chủ đạo nên giữ nguyên cỡ ở mọi mức — chỉ có 8 cái. */
 const CAO_PX_MOC = 58;
 
-// Thành/hoàng thành: tường vuông có 4 vọng lâu góc và một cổng nhô.
-function thanhLuy(h: number): THREE.Group {
-  const g = new THREE.Group();
-  const w = h * 0.85;
-  const tuong = box(w, h * 0.34, w, CREAM);
-  tuong.position.y = h * 0.17;
-  g.add(tuong);
-  for (const [sx, sz] of [
-    [-1, -1],
-    [1, -1],
-    [-1, 1],
-    [1, 1],
-  ]) {
-    const lau = box(h * 0.16, h * 0.2, h * 0.16, BRICK);
-    lau.position.set(sx * w * 0.42, h * 0.44, sz * w * 0.42);
-    g.add(lau);
-  }
-  const cong = box(h * 0.26, h * 0.28, h * 0.12, BRICK);
-  cong.position.set(0, h * 0.34, w * 0.5);
-  g.add(cong);
-  const mai = pyramid(h * 0.24, h * 0.16, TERRACOTTA);
-  mai.position.set(0, h * 0.53, w * 0.5);
-  g.add(mai);
-  return g;
-}
-
-// Bia/đài tưởng niệm: bệ vuông + trụ thuôn + chóp.
-function biaDai(h: number): THREE.Group {
-  const g = new THREE.Group();
-  const be = box(h * 0.34, h * 0.1, h * 0.34, CREAM);
-  be.position.y = h * 0.05;
-  g.add(be);
-  const tru = new THREE.Mesh(
-    new THREE.CylinderGeometry(h * 0.07, h * 0.1, h * 0.68, 4),
-    mat(CREAM),
-  );
-  tru.rotation.y = Math.PI / 4;
-  tru.position.y = h * 0.44;
-  g.add(tru);
-  const chop = pyramid(h * 0.1, h * 0.16, GOLD);
-  chop.position.y = h * 0.86;
-  g.add(chop);
-  return g;
-}
-
-/** Mẫu dựng sẵn ở H = 1, mỗi loại một cái. */
-const MAU_MO_HINH: Record<KieuMoHinh, THREE.Group> = {
-  chua: tieredPagoda(1, 3, TERRACOTTA),
-  thap: chamTower(1),
-  thanh: thanhLuy(1),
-  bia: biaDai(1),
-  nui: karstCluster(1),
-};
-
-/** Một mảnh lưới đã rã khỏi mẫu: hình + vật liệu + vị trí cục bộ trong mẫu. */
-interface ManhMau {
-  geo: THREE.BufferGeometry;
-  vatLieu: THREE.Material;
-  cucBo: THREE.Matrix4;
-}
-
-/**
- * Rã một mẫu Group thành danh sách mảnh phẳng để dựng bằng InstancedMesh.
- *
- * Bản đầu clone() nguyên Group cho từng điểm. Clone dùng chung hình và vật liệu
- * nên tốn ít bộ nhớ, nhưng KHÔNG gộp lệnh vẽ: một ngôi chùa 8 mảnh × 400 điểm
- * là 3.200 lệnh vẽ mỗi khung hình. Rã sẵn rồi gom theo mảnh thì cả 400 điểm
- * cùng loại chỉ tốn đúng số lệnh vẽ bằng số mảnh của MỘT mẫu — 8 thay vì 3.200.
- */
-function raManh(g: THREE.Group): ManhMau[] {
-  g.updateMatrixWorld(true);
-  const ds: ManhMau[] = [];
-  g.traverse((o) => {
-    if (!(o instanceof THREE.Mesh)) return;
-    ds.push({
-      geo: o.geometry as THREE.BufferGeometry,
-      vatLieu: o.material as THREE.Material,
-      cucBo: o.matrixWorld.clone(),
-    });
-  });
-  return ds;
-}
-
-const MANH_MAU: Record<KieuMoHinh, ManhMau[]> = {
-  chua: raManh(MAU_MO_HINH.chua),
-  thap: raManh(MAU_MO_HINH.thap),
-  thanh: raManh(MAU_MO_HINH.thanh),
-  bia: raManh(MAU_MO_HINH.bia),
-  nui: raManh(MAU_MO_HINH.nui),
-};
-
-/** Một cụm điểm cùng loại hình — mỗi mảnh của mẫu là một InstancedMesh. */
+/** Một cụm điểm cùng loại hình — cả cụm là ĐÚNG MỘT InstancedMesh, 1 lệnh vẽ. */
 interface CumDiem {
-  kieu: KieuMoHinh;
-  diem: Array<{ x: number; y: number; z: number; metTrenDonVi: number }>;
-  luoi: THREE.InstancedMesh[];
+  diem: Array<{ x: number; y: number; z: number; metTrenDonVi: number; co: number }>;
+  luoi: THREE.InstancedMesh;
 }
 
 // +Y (cao của model) → +Z (cao của Mercator).
@@ -436,7 +351,6 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
   const vTri = new THREE.Vector3();
   const vTiLe = new THREE.Vector3();
   const mGoc = new THREE.Matrix4();
-  const mManh = new THREE.Matrix4();
 
   /**
    * Đặt lại ma trận cho mọi thực thể. Chỉ chạy khi mức phóng đổi hoặc tập điểm
@@ -444,19 +358,18 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
    */
   const datMaTran = (cao: number): void => {
     for (const c of cumDiem) {
-      const manh = MANH_MAU[c.kieu];
       for (let i = 0; i < c.diem.length; i++) {
         const d = c.diem[i];
-        const s = d.metTrenDonVi * cao;
+        // `co` là hệ số cỡ riêng của điểm: loại đối tượng × tầm quan trọng của
+        // lớp phủ. Nhờ mẫu đã chuẩn hoá cao đúng 1, đây là phép nhân thẳng lên
+        // chiều cao biểu kiến tính bằng pixel.
+        const s = d.metTrenDonVi * cao * d.co;
         vTri.set(d.x, d.y, d.z);
         vTiLe.set(s, s, s);
         mGoc.compose(vTri, QUAY_DUNG, vTiLe);
-        for (let k = 0; k < manh.length; k++) {
-          mManh.multiplyMatrices(mGoc, manh[k].cucBo);
-          c.luoi[k].setMatrixAt(i, mManh);
-        }
+        c.luoi.setMatrixAt(i, mGoc);
       }
-      for (const l of c.luoi) l.instanceMatrix.needsUpdate = true;
+      c.luoi.instanceMatrix.needsUpdate = true;
     }
   };
 
@@ -513,11 +426,10 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
       map.triggerRepaint();
     },
     capNhatDiem(ds: DiemMoHinh[]): void {
-      for (const c of cumDiem)
-        for (const l of c.luoi) {
-          nhomDiem.remove(l);
-          l.dispose(); // chỉ bỏ bộ đệm thực thể — hình và vật liệu dùng chung
-        }
+      for (const c of cumDiem) {
+        nhomDiem.remove(c.luoi);
+        c.luoi.dispose(); // chỉ bỏ bộ đệm thực thể — hình và vật liệu dùng chung
+      }
       cumDiem = [];
       const theoKieu = new Map<KieuMoHinh, DiemMoHinh[]>();
       for (const d of ds) {
@@ -526,16 +438,12 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
         else theoKieu.set(d.kieu, [d]);
       }
       for (const [kieu, nhom] of theoKieu) {
-        const luoi = MANH_MAU[kieu].map((p) => {
-          const im = new THREE.InstancedMesh(p.geo, p.vatLieu, nhom.length);
-          // Bao hình của InstancedMesh tính một lần lúc tạo, mà tỉ lệ mô hình
-          // đổi theo từng mức phóng — để mặc định thì cả cụm bị cắt oan.
-          im.frustumCulled = false;
-          nhomDiem.add(im);
-          return im;
-        });
+        const luoi = new THREE.InstancedMesh(mauCua(kieu), VAT_LIEU_DIEM, nhom.length);
+        // Bao hình của InstancedMesh tính một lần lúc tạo, mà tỉ lệ mô hình
+        // đổi theo từng mức phóng — để mặc định thì cả cụm bị cắt oan.
+        luoi.frustumCulled = false;
+        nhomDiem.add(luoi);
         cumDiem.push({
-          kieu,
           diem: nhom.map((d) => {
             const mc = MercatorCoordinate.fromLngLat([d.lon, d.lat], 0);
             return {
@@ -543,6 +451,7 @@ export function createLandmarks3D(map: MlMap): Landmarks3D {
               y: mc.y,
               z: mc.z,
               metTrenDonVi: mc.meterInMercatorCoordinateUnits(),
+              co: d.co,
             };
           }),
           luoi,
