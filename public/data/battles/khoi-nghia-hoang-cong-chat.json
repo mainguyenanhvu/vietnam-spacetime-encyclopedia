@@ -1,0 +1,162 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Hoàng Công Chất 1739–1769 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-hoang-cong-chat",
+  "ten": "Khởi nghĩa Hoàng Công Chất (1739–1769)",
+  "nam": 1739,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hoàng Công Chất",
+  "doi_thu": "Giặc Phẻ",
+  "dia_diem": "Thành Bản Phủ, Điện Biên",
+  "lien_quan_tinh": [
+    "dien-bien"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          500
+        ],
+        [
+          400,
+          350
+        ],
+        [
+          700,
+          200
+        ]
+      ],
+      "nhan": "Đường từ Sơn Nam lên Tây Bắc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          500,
+          80
+        ],
+        [
+          750,
+          50
+        ],
+        [
+          950,
+          100
+        ]
+      ],
+      "nhan": "Vùng Mường Thanh, Điện Biên"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-day-binh-hcc",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 520,
+      "nhan": "Hoàng Công Chất dấy binh tại Sơn Nam"
+    },
+    {
+      "id": "quan-ta-tien-len-tb",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 380,
+      "nhan": "Nghĩa quân tiến lên Tây Bắc"
+    },
+    {
+      "id": "tuong-ngai-khanh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 600,
+      "y": 250,
+      "nhan": "Tướng Ngải, tướng Khanh phối hợp"
+    },
+    {
+      "id": "quan-dich-giac-phe",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Giặc Phẻ quấy nhiễu Mường Thanh"
+    },
+    {
+      "id": "mui-danh-giac-phe",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        620,
+        220
+      ],
+      "den": [
+        730,
+        170
+      ],
+      "nhan": "Đánh bại giặc Phẻ"
+    },
+    {
+      "id": "thanh-ban-phu",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 800,
+      "y": 100,
+      "nhan": "Thành Bản Phủ (căn cứ 1758-1762)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Khởi nghĩa từ Sơn Nam",
+      "mo_ta": "Hoàng Công Chất dấy binh khởi nghĩa từ vùng Sơn Nam.",
+      "hien": [
+        "co-ta-day-binh-hcc"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tiến lên Tây Bắc",
+      "mo_ta": "Nghĩa quân tiến lên vùng Tây Bắc, phối hợp cùng các thủ lĩnh địa phương.",
+      "hien": [
+        "co-ta-day-binh-hcc",
+        "quan-ta-tien-len-tb"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phối hợp tướng Ngải, tướng Khanh đánh giặc Phẻ",
+      "mo_ta": "Nghĩa quân phối hợp cùng tướng Ngải, tướng Khanh đánh bại giặc Phẻ đang quấy nhiễu vùng Mường Thanh.",
+      "hien": [
+        "quan-ta-tien-len-tb",
+        "tuong-ngai-khanh",
+        "quan-dich-giac-phe",
+        "mui-danh-giac-phe"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Giải phóng Mường Thanh",
+      "mo_ta": "Nghĩa quân giải phóng hoàn toàn vùng Mường Thanh.",
+      "hien": [
+        "mui-danh-giac-phe",
+        "quan-dich-giac-phe"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Xây thành Bản Phủ làm căn cứ (1758-1762)",
+      "mo_ta": "Hoàng Công Chất cho xây thành Bản Phủ làm căn cứ lâu dài, cai quản vùng Tây Bắc.",
+      "hien": [
+        "thanh-ban-phu"
+      ]
+    }
+  ],
+  "ket_qua": "Nghĩa quân từ Sơn Nam tiến lên Tây Bắc, phối hợp cùng tướng Ngải, tướng Khanh đánh bại giặc Phẻ, giải phóng Mường Thanh, xây thành Bản Phủ làm căn cứ (1758–1762).",
+  "y_nghia": "Cuộc khởi nghĩa nông dân kéo dài 30 năm, bảo vệ vùng biên cương Tây Bắc, để lại di tích thành Bản Phủ được thờ phụng đến ngày nay.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Sở VHTTDL tỉnh Điện Biên (svhttdl.dienbien.gov.vn)",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

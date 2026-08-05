@@ -1,0 +1,120 @@
+{
+  "ghi_chu": "Sa đồ trận Bồ Đằng 1424 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-bo-dang-1424",
+  "ten": "Trận Bồ Đằng",
+  "nam": 1424,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Lợi, Nguyễn Chích",
+  "doi_thu": "Nhà Minh",
+  "dia_diem": "Bồ Đằng, Quỳ Châu, Nghệ An",
+  "lien_quan_tinh": [
+    "nghe-an"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          350
+        ],
+        [
+          700,
+          300
+        ]
+      ],
+      "nhan": "Đường chuyển hướng vào Nghệ An"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-lam-son-kho-khan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 480,
+      "nhan": "Nghĩa quân Lam Sơn gặp khó khăn"
+    },
+    {
+      "id": "quan-ta-nguyen-chich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Nguyễn Chích hiến kế"
+    },
+    {
+      "id": "bo-dang",
+      "kieu": "dia-danh",
+      "x": 600,
+      "y": 320,
+      "nhan": "Bồ Đằng, Quỳ Châu"
+    },
+    {
+      "id": "quan-dich-bo-dang",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 280,
+      "nhan": "Quân Minh tại Bồ Đằng"
+    },
+    {
+      "id": "co-thang-bo-dang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 220,
+      "nhan": "Thắng lớn, mở đường Nghệ An"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nghĩa quân Lam Sơn gặp khó khăn ở Thanh Hóa",
+      "mo_ta": "Sau nhiều năm cầm cự gian khổ tại vùng núi Thanh Hóa, nghĩa quân Lam Sơn cần một hướng đi mới.",
+      "hien": [
+        "quan-ta-lam-son-kho-khan"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Chích hiến kế chuyển hướng vào Nghệ An",
+      "mo_ta": "Nguyễn Chích hiến kế chuyển hướng nghĩa quân vào Nghệ An, vùng đất rộng, hiểm yếu, nhiều lương thực.",
+      "hien": [
+        "quan-ta-lam-son-kho-khan",
+        "quan-ta-nguyen-chich"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiến quân, giao chiến tại Bồ Đằng",
+      "mo_ta": "Nghĩa quân theo kế mới tiến vào Nghệ An, giao chiến với quân Minh tại Bồ Đằng.",
+      "hien": [
+        "quan-ta-nguyen-chich",
+        "bo-dang",
+        "quan-dich-bo-dang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Thắng lớn, mở đường giải phóng Nghệ An",
+      "mo_ta": "Nghĩa quân thắng lớn, xoay chuyển cục diện, mở đường giải phóng Nghệ An – Tân Bình – Thuận Hóa.",
+      "hien": [
+        "co-thang-bo-dang"
+      ]
+    }
+  ],
+  "ket_qua": "Thắng lớn tại Bồ Đằng, xoay chuyển cục diện khởi nghĩa Lam Sơn, mở đường giải phóng Nghệ An – Tân Bình – Thuận Hóa.",
+  "y_nghia": "Bước ngoặt chiến lược đưa khởi nghĩa Lam Sơn thoát khỏi thế bị vây khốn ở Thanh Hóa, mở rộng địa bàn hoạt động.",
+  "trang_thai": "draft",
+  "nguon": [
+    "baonghean.vn — Những chiến binh trong trận Bồ Đằng",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — khởi nghĩa Lam Sơn"
+  ]
+}

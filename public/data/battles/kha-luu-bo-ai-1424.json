@@ -1,0 +1,136 @@
+{
+  "ghi_chu": "Sa đồ trận Khả Lưu – Bồ Ải 1424 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Tiếp nối trực tiếp trận Bồ Đằng cùng năm (không lặp lại diễn biến, chỉ nối tiếp). trang_thai=draft chờ soát §9.",
+  "id": "kha-luu-bo-ai-1424",
+  "ten": "Trận Khả Lưu – Bồ Ải 1424",
+  "nam": 1424,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Lợi",
+  "doi_thu": "Nhà Minh (đô ty Chu Kiệt)",
+  "dia_diem": "Sông Lam, khu vực Đỗ Gia – Khả Lưu, Anh Sơn, Nghệ An",
+  "lien_quan_tinh": [
+    "nghe-an"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Lam"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-tien-sau",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 400,
+      "nhan": "Nghĩa quân tiến sâu vào Nghệ An"
+    },
+    {
+      "id": "kha-luu",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 320,
+      "nhan": "Khả Lưu"
+    },
+    {
+      "id": "quan-dich-kha-luu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 280,
+      "nhan": "Quân Minh tại Khả Lưu"
+    },
+    {
+      "id": "do-ty-chu-kiet",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 240,
+      "nhan": "Đô ty Chu Kiệt bị bắt sống"
+    },
+    {
+      "id": "bo-ai",
+      "kieu": "dia-danh",
+      "x": 750,
+      "y": 230,
+      "nhan": "Bồ Ải"
+    },
+    {
+      "id": "co-thang-kha-luu",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 170,
+      "nhan": "Mở đường giải phóng Nghệ An"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tiếp nối thắng lợi Bồ Đằng, tiến sâu vào Nghệ An",
+      "mo_ta": "Sau thắng lợi Bồ Đằng, nghĩa quân Lam Sơn tiếp tục tiến sâu vào Nghệ An.",
+      "hien": [
+        "quan-ta-tien-sau"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Giao chiến trên sông Lam tại Khả Lưu",
+      "mo_ta": "Nghĩa quân do Lê Lợi chỉ huy giao chiến với quân Minh trên sông Lam, khu vực Khả Lưu.",
+      "hien": [
+        "quan-ta-tien-sau",
+        "kha-luu",
+        "quan-dich-kha-luu"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bắt sống đô ty Chu Kiệt",
+      "mo_ta": "Nghĩa quân bắt sống đô ty nhà Minh Chu Kiệt.",
+      "hien": [
+        "kha-luu",
+        "do-ty-chu-kiet"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chém tướng tiên phong Hoàng Thành, thắng tại Bồ Ải",
+      "mo_ta": "Nghĩa quân chém tướng tiên phong Hoàng Thành, tiếp tục thắng lợi tại Bồ Ải.",
+      "hien": [
+        "bo-ai",
+        "do-ty-chu-kiet"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở đường giải phóng cả vùng Nghệ An",
+      "mo_ta": "Chiến thắng Khả Lưu – Bồ Ải mở đường giải phóng cả vùng Nghệ An, đưa khởi nghĩa từ thế phòng ngự sang phản công.",
+      "hien": [
+        "co-thang-kha-luu"
+      ]
+    }
+  ],
+  "ket_qua": "Bắt sống đô ty nhà Minh Chu Kiệt, chém tướng tiên phong Hoàng Thành, mở đường giải phóng cả vùng Nghệ An.",
+  "y_nghia": "Bước ngoặt chiến lược đưa khởi nghĩa Lam Sơn từ thế phòng ngự sang phản công, cùng với Bồ Đằng tạo bàn đạp vững chắc ở Nghệ An.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng Thông tin điện tử Bộ VHTTDL (scov.gov.vn) — Trận Bồ Ải",
+    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Người đứng đầu 10 danh tướng đời Lê",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "ghi_chu": "Sa đồ trận Phú Xuân 1786 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-phu-xuan-1786",
+  "ten": "Trận Phú Xuân (1786)",
+  "nam": 1786,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Huệ",
+  "doi_thu": "Chúa Trịnh (Phạm Ngô Cầu trấn thủ)",
+  "dia_diem": "Kinh thành Phú Xuân, Huế",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          350
+        ],
+        [
+          650,
+          280
+        ]
+      ],
+      "nhan": "Đèo Hải Vân"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-nguyen-hue-quyet-dinh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 500,
+      "nhan": "Tây Sơn quyết định đánh Phú Xuân"
+    },
+    {
+      "id": "quan-ta-vuot-hai-van",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Nguyễn Huệ vượt đèo Hải Vân"
+    },
+    {
+      "id": "thanh-phu-xuan-1786",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 280,
+      "nhan": "Thành Phú Xuân"
+    },
+    {
+      "id": "mui-ap-sat-dem",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        380
+      ],
+      "den": [
+        600,
+        300
+      ],
+      "nhan": "Bất ngờ áp sát trong đêm"
+    },
+    {
+      "id": "quan-dich-pham-ngo-cau",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 230,
+      "nhan": "Phạm Ngô Cầu đầu hàng"
+    },
+    {
+      "id": "co-thang-px-1786",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 180,
+      "nhan": "Làm chủ toàn bộ Đàng Trong"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tây Sơn quyết định đánh chiếm Phú Xuân",
+      "mo_ta": "Sau khi làm chủ Quy Nhơn và các vùng lân cận, Tây Sơn quyết định tiến đánh Phú Xuân, thành lũy cuối cùng của quân Trịnh ở Đàng Trong.",
+      "hien": [
+        "quan-ta-nguyen-hue-quyet-dinh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Huệ vượt đèo Hải Vân",
+      "mo_ta": "Nguyễn Huệ đích thân chỉ huy đại quân vượt đèo Hải Vân tiến ra Phú Xuân.",
+      "hien": [
+        "quan-ta-vuot-hai-van"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bất ngờ áp sát thành trong đêm (15/6/1786)",
+      "mo_ta": "Quân Tây Sơn bất ngờ áp sát và tiến công thành Phú Xuân trong đêm.",
+      "hien": [
+        "quan-ta-vuot-hai-van",
+        "thanh-phu-xuan-1786",
+        "mui-ap-sat-dem"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Trấn thủ Phạm Ngô Cầu đầu hàng",
+      "mo_ta": "Trấn thủ Phạm Ngô Cầu không chống nổi, phải đầu hàng.",
+      "hien": [
+        "thanh-phu-xuan-1786",
+        "quan-dich-pham-ngo-cau"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tây Sơn làm chủ toàn bộ Đàng Trong",
+      "mo_ta": "Tây Sơn làm chủ Phú Xuân và toàn bộ Đàng Trong.",
+      "hien": [
+        "co-thang-px-1786"
+      ]
+    }
+  ],
+  "ket_qua": "Đêm 15/6/1786, quân Tây Sơn vượt đèo Hải Vân đánh thành Phú Xuân; trấn thủ Phạm Ngô Cầu đầu hàng, Tây Sơn làm chủ Phú Xuân và toàn bộ Đàng Trong.",
+  "y_nghia": "Chiến thắng dứt điểm cuộc chiến với quân Trịnh tại Đàng Trong, tạo bàn đạp cho Nguyễn Huệ tiếp tục ra Bắc diệt họ Trịnh cùng năm.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn)",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

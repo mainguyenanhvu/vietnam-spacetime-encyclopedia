@@ -1,0 +1,162 @@
+{
+  "ghi_chu": "Sa đồ trận Đồ Bàn 1377 — vua Trần Duệ Tông tử trận — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-do-ban-1377",
+  "ten": "Trận Đồ Bàn (1377) — vua Trần Duệ Tông tử trận",
+  "nam": 1377,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Duệ Tông",
+  "doi_thu": "Chiêm Thành (Chế Bồng Nga)",
+  "dia_diem": "Thành Đồ Bàn (Trà Bàn), nay tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          350
+        ],
+        [
+          650,
+          300
+        ]
+      ],
+      "nhan": "Đường tiến quân vào Đồ Bàn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-tran-due-tong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 480,
+      "nhan": "Vua Trần Duệ Tông thân chinh"
+    },
+    {
+      "id": "don-thach-kieu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 400,
+      "y": 400,
+      "nhan": "Đồn Thạch Kiều, động Kỳ Mang"
+    },
+    {
+      "id": "thanh-do-ban",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 280,
+      "nhan": "Kinh đô Đồ Bàn"
+    },
+    {
+      "id": "su-gia-tra-hang",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 635,
+      "y": 391,
+      "nhan": "Sứ giả trá hàng"
+    },
+    {
+      "id": "mui-tien-vao-thanh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        380
+      ],
+      "den": [
+        620,
+        290
+      ],
+      "nhan": "Vua tin thật, tiến vào thành"
+    },
+    {
+      "id": "quan-dich-phuc-kich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 230,
+      "nhan": "Ổ phục kích quân Chiêm"
+    },
+    {
+      "id": "co-vua-tu-tran",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 650,
+      "y": 200,
+      "nhan": "Vua Trần Duệ Tông tử trận"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Vua Trần Duệ Tông thân chinh 12 vạn quân",
+      "mo_ta": "Vua Trần Duệ Tông thân chinh đại quân đánh Chiêm Thành.",
+      "hien": [
+        "quan-ta-tran-due-tong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hạ đồn Thạch Kiều, động Kỳ Mang",
+      "mo_ta": "Quân Đại Việt hạ đồn Thạch Kiều, động Kỳ Mang, tiến sát kinh đô.",
+      "hien": [
+        "quan-ta-tran-due-tong",
+        "don-thach-kieu"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vây kinh đô Đồ Bàn",
+      "mo_ta": "Đại quân vây kinh đô Đồ Bàn (Trà Bàn) của Chiêm Thành.",
+      "hien": [
+        "don-thach-kieu",
+        "thanh-do-ban"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chế Bồng Nga trá hàng",
+      "mo_ta": "Chế Bồng Nga cho người trá hàng, báo tin đã bỏ thành chạy trốn.",
+      "hien": [
+        "thanh-do-ban",
+        "su-gia-tra-hang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Vua tin thật, tiến vào thành lọt ổ phục kích",
+      "mo_ta": "Vua Trần Duệ Tông tin là thật, thúc quân tiến vào thành thì lọt vào ổ phục kích của quân Chiêm.",
+      "hien": [
+        "thanh-do-ban",
+        "mui-tien-vao-thanh",
+        "quan-dich-phuc-kich"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Vua tử trận, đại quân tan vỡ",
+      "mo_ta": "Đại quân tan vỡ, vua tử trận cùng phần lớn tướng sĩ; Lê Quý Ly không ứng cứu kịp phải rút chạy.",
+      "hien": [
+        "quan-dich-phuc-kich",
+        "co-vua-tu-tran"
+      ]
+    }
+  ],
+  "ket_qua": "Trần Duệ Tông trúng kế trá hàng của Chế Bồng Nga, dẫn quân vào thành thì bị phục kích; vua tử trận cùng phần lớn tướng sĩ.",
+  "y_nghia": "Vị hoàng đế Việt Nam duy nhất tử trận ngoài mặt trận, bài học đắt giá về sự chủ quan trước mưu kế của địch.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Trần",
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Việt Nam sử lược, Nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

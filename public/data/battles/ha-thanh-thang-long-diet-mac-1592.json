@@ -1,0 +1,151 @@
+{
+  "ghi_chu": "Sa đồ hạ thành Thăng Long, diệt nhà Mạc 1592 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "ha-thanh-thang-long-diet-mac-1592",
+  "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)",
+  "nam": 1592,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trịnh Tùng (Lê trung hưng)",
+  "doi_thu": "Nhà Mạc (Mạc Mậu Hợp)",
+  "dia_diem": "Thành Thăng Long và các huyện Kim Thành, Thanh Hà, Nam Sách, Kinh Môn",
+  "lien_quan_tinh": [
+    "ha-noi",
+    "hai-phong"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          400,
+          300
+        ],
+        [
+          700,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Hồng — cửa ngõ phía đông Thăng Long"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thang-long-mac",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 300,
+      "y": 250,
+      "nhan": "Thăng Long (nhà Mạc đóng đô)"
+    },
+    {
+      "id": "ham-doi-trinh-tung",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 750,
+      "y": 200,
+      "nhan": "300 chiến thuyền Trịnh Tùng"
+    },
+    {
+      "id": "huyen-cua-ngo",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 600,
+      "y": 280,
+      "nhan": "Kim Thành, Thanh Hà, Nam Sách, Kinh Môn"
+    },
+    {
+      "id": "mui-danh-tan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        700,
+        230
+      ],
+      "den": [
+        620,
+        270
+      ],
+      "nhan": "Đánh tan quân Mạc phòng thủ"
+    },
+    {
+      "id": "mui-tien-chiem-tl",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        600,
+        260
+      ],
+      "den": [
+        350,
+        260
+      ],
+      "nhan": "Thừa thắng tiến chiếm Thăng Long"
+    },
+    {
+      "id": "mac-mau-hop-bi-bat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 200,
+      "nhan": "Mạc Mậu Hợp bị bắt, xử tử"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nội chiến Nam-Bắc triều kéo dài 60 năm",
+      "mo_ta": "Nhà Mạc đóng ở Thăng Long, Lê trung hưng đóng ở Thanh Hoá, hai bên nội chiến 60 năm.",
+      "hien": [
+        "thang-long-mac"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trịnh Tùng đem 300 chiến thuyền đánh cửa ngõ đông Thăng Long",
+      "mo_ta": "Ngày 25/11/1592, thủy quân Lê-Trịnh gồm 300 chiến thuyền do Trịnh Tùng chỉ huy đánh vào các huyện Kim Thành, Thanh Hà, Nam Sách, Kinh Môn.",
+      "hien": [
+        "thang-long-mac",
+        "ham-doi-trinh-tung",
+        "huyen-cua-ngo"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh tan quân Mạc phòng thủ",
+      "mo_ta": "Quân Lê-Trịnh đánh tan quân Mạc trấn giữ cửa ngõ phía đông.",
+      "hien": [
+        "huyen-cua-ngo",
+        "mui-danh-tan"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Thừa thắng tiến chiếm Thăng Long",
+      "mo_ta": "Quân Lê-Trịnh thừa thắng tiến chiếm kinh thành Thăng Long.",
+      "hien": [
+        "thang-long-mac",
+        "mui-tien-chiem-tl"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Bắt và xử tử Mạc Mậu Hợp, chấm dứt nhà Mạc",
+      "mo_ta": "Mạc Mậu Hợp bị bắt và xử tử, chấm dứt 65 năm nhà Mạc ở Thăng Long.",
+      "hien": [
+        "mac-mau-hop-bi-bat"
+      ]
+    }
+  ],
+  "ket_qua": "Thủy quân Lê-Trịnh đánh tan quân Mạc, tiến chiếm Thăng Long; Mạc Mậu Hợp bị bắt và xử tử, chấm dứt 65 năm nhà Mạc ở Thăng Long.",
+  "y_nghia": "Kết thúc vai trò triều đình trung ương nhà Mạc sau 60 năm nội chiến Nam-Bắc triều, dù dư đảng còn cố thủ Cao Bằng thêm 85 năm.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — XIX. Nhà Mạc 65 năm (1527–1592)",
+    "Đại Việt Sử Ký Toàn Thư — Bản kỷ tục biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

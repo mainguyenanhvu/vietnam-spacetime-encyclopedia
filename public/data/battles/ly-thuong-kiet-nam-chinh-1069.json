@@ -1,0 +1,152 @@
+{
+  "ghi_chu": "Sa đồ Lý Thường Kiệt Nam chinh Chiêm Thành 1069 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "ly-thuong-kiet-nam-chinh-1069",
+  "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành (1069)",
+  "nam": 1069,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lý Thánh Tông, Lý Thường Kiệt",
+  "doi_thu": "Chiêm Thành (Chế Củ — Rudravarman III)",
+  "dia_diem": "Kinh đô Chiêm Thành (Phật Thệ/Vijaya) và ba châu Bố Chính, Địa Lý, Ma Linh",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          750,
+          300
+        ],
+        [
+          800,
+          550
+        ]
+      ],
+      "nhan": "Biển Đông — hành trình nam chinh"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-che-cu-quay-pha",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 150,
+      "nhan": "Chế Củ quấy phá biên giới"
+    },
+    {
+      "id": "ham-doi-ta-200-thuyen",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 400,
+      "y": 250,
+      "nhan": "200 chiến thuyền, vua Lý Thánh Tông thân chinh"
+    },
+    {
+      "id": "quan-ta-ly-thuong-kiet",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 350,
+      "nhan": "Lý Thường Kiệt — Đại tướng tiên phong"
+    },
+    {
+      "id": "kinh-do-champa",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 550,
+      "y": 450,
+      "nhan": "Kinh đô Chiêm Thành (Phật Thệ)"
+    },
+    {
+      "id": "mui-tien-vao-kinh-do",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        470,
+        380
+      ],
+      "den": [
+        540,
+        440
+      ],
+      "nhan": "Tiến vào kinh đô"
+    },
+    {
+      "id": "quan-dich-che-cu-bi-bat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 670,
+      "y": 500,
+      "nhan": "Chế Củ bị bắt sống"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 350,
+      "y": 500,
+      "nhan": "Chế Củ dâng ba châu chuộc mạng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chiêm Thành quấy phá biên giới phía nam",
+      "mo_ta": "Vua Chiêm Chế Củ nhiều lần quấy phá vùng biên giới phía nam Đại Việt.",
+      "hien": [
+        "quan-dich-che-cu-quay-pha"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Vua Lý Thánh Tông thân chinh, Lý Thường Kiệt tiên phong",
+      "mo_ta": "Tháng 2/1069, vua Lý Thánh Tông thân chinh khoảng 200 chiến thuyền đánh Chiêm Thành, cử Lý Thường Kiệt làm Đại tướng tiên phong.",
+      "hien": [
+        "ham-doi-ta-200-thuyen",
+        "quan-ta-ly-thuong-kiet"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh tan quân Chiêm, tiến vào kinh đô",
+      "mo_ta": "Quân Đại Việt đánh tan quân Chiêm Thành, tiến vào kinh đô Chiêm Thành (Phật Thệ/Vijaya).",
+      "hien": [
+        "quan-ta-ly-thuong-kiet",
+        "kinh-do-champa",
+        "mui-tien-vao-kinh-do"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bắt sống vua Chế Củ",
+      "mo_ta": "Lý Thường Kiệt bắt được vua Chế Củ đang bỏ chạy.",
+      "hien": [
+        "kinh-do-champa",
+        "quan-dich-che-cu-bi-bat"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chế Củ dâng ba châu chuộc mạng",
+      "mo_ta": "Để được thả về nước, Chế Củ dâng nộp ba châu Bố Chính, Địa Lý, Ma Linh — Đại Việt mở rộng cương vực về phía nam.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Lý Thường Kiệt làm tiên phong thủy quân, đánh bại quân Chiêm, bắt sống vua Chế Củ; Chế Củ phải dâng ba châu Bố Chính, Địa Lý, Ma Linh để chuộc mạng.",
+  "y_nghia": "Đại Việt mở rộng cương vực về phía nam lần đầu tiên kể từ khi giành độc lập, đặt nền móng cho các đợt Nam tiến sau này.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Kỷ nhà Lý",
+    "Việt sử lược",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "ghi_chu": "Sa đồ trận Lũy Trường Dục — sông Gianh 1648 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Overlay có nhắc con số '3.000 quân Trịnh bị bắt, 3 tướng' từ nguồn du lịch tỉnh, CHƯA đối chiếu chính sử — KHÔNG đưa số liệu này vào nội dung, chỉ giữ diễn biến đã xác nhận qua Đại Nam Thực Lục. trang_thai=draft chờ soát §9.",
+  "id": "luy-truong-duc-song-gianh-1648",
+  "ten": "Trận Lũy Trường Dục — sông Gianh (1648)",
+  "nam": 1648,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Phúc Tần",
+  "doi_thu": "Chúa Trịnh (Trịnh Tráng)",
+  "dia_diem": "Lũy Trường Dục và sông Gianh, Quảng Ninh, Quảng Bình (nay tỉnh Quảng Trị)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Gianh"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-trinh-nam-chinh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 150,
+      "nhan": "Chúa Trịnh nam chinh hai đường thủy bộ"
+    },
+    {
+      "id": "luy-truong-duc",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 350,
+      "nhan": "Lũy Trường Dục"
+    },
+    {
+      "id": "quan-ta-nguyen-phuc-tan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 400,
+      "nhan": "Nguyễn Phúc Tần chỉ huy phòng ngự"
+    },
+    {
+      "id": "mui-cong-thanh-dich",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        650,
+        200
+      ],
+      "den": [
+        480,
+        330
+      ],
+      "nhan": "Quân Trịnh công thành"
+    },
+    {
+      "id": "mui-phan-cong-ta",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        420,
+        380
+      ],
+      "den": [
+        650,
+        250
+      ],
+      "nhan": "Phản công đánh bật"
+    },
+    {
+      "id": "co-thang-truong-duc",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 180,
+      "nhan": "Quân Trịnh rút qua sông Gianh"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chúa Trịnh mở nam chinh quy mô lớn",
+      "mo_ta": "Đầu 1648, chúa Trịnh mở nam chinh quy mô lớn theo hai đường thủy bộ hòng hạ hệ thống lũy phòng thủ Đàng Trong.",
+      "hien": [
+        "quan-dich-trinh-nam-chinh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Phúc Tần trực tiếp chỉ huy phòng ngự",
+      "mo_ta": "Nguyễn Phúc Tần trực tiếp chỉ huy phòng ngự tại Lũy Trường Dục.",
+      "hien": [
+        "luy-truong-duc",
+        "quan-ta-nguyen-phuc-tan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân Trịnh công thành không hạ được",
+      "mo_ta": "Quân Trịnh tổ chức công thành nhưng không hạ được Lũy Trường Dục.",
+      "hien": [
+        "luy-truong-duc",
+        "mui-cong-thanh-dich",
+        "quan-dich-trinh-nam-chinh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Nguyễn Phúc Tần phản công",
+      "mo_ta": "Nguyễn Phúc Tần tổ chức phản công đánh bật quân Trịnh.",
+      "hien": [
+        "quan-ta-nguyen-phuc-tan",
+        "mui-phan-cong-ta"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân Trịnh rút qua sông Gianh",
+      "mo_ta": "Quân Trịnh bị đánh bật, buộc phải rút lui qua bờ bắc sông Gianh.",
+      "hien": [
+        "co-thang-truong-duc"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Trịnh tiến hai đường thủy bộ đánh Lũy Trường Dục nhưng không hạ được, bị Nguyễn Phúc Tần phản công đánh bật về bờ bắc sông Gianh.",
+  "y_nghia": "Một trong bảy lần giao chiến lớn của chiến tranh Trịnh-Nguyễn (1627–1672), khẳng định vai trò phòng thủ then chốt của hệ thống lũy Đàng Trong.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 1)",
+    "Đại Nam Thực Lục — Tiền biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

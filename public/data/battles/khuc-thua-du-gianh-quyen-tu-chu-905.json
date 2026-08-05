@@ -1,0 +1,126 @@
+{
+  "ghi_chu": "Sa đồ Khúc Thừa Dụ giành quyền tự chủ 905 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Nguồn overlay chỉ có ket_qua ngắn gọn (không có mo_ta chi tiết) — 4 bước dựng đúng trình tự sự kiện đã nêu, không thêm tình tiết quân sự không có trong nguồn. trang_thai=draft chờ soát §9.",
+  "id": "khuc-thua-du-gianh-quyen-tu-chu-905",
+  "ten": "Khúc Thừa Dụ giành quyền tự chủ 905",
+  "nam": 905,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Khúc Thừa Dụ",
+  "doi_thu": "Nhà Đường (chính quyền đô hộ suy yếu)",
+  "dia_diem": "Phủ Tống Bình - Đại La",
+  "lien_quan_tinh": [
+    "hai-phong"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          400,
+          300
+        ],
+        [
+          700,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-duong-suy-yeu",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 150,
+      "nhan": "Nhà Đường suy yếu"
+    },
+    {
+      "id": "co-ta-day-binh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 450,
+      "nhan": "Khúc Thừa Dụ dấy binh tại Hồng Châu"
+    },
+    {
+      "id": "mui-tien-chiem",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        280,
+        420
+      ],
+      "den": [
+        600,
+        320
+      ],
+      "nhan": "Tiến chiếm Tống Bình - Đại La"
+    },
+    {
+      "id": "thanh-tong-binh-905",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 280,
+      "nhan": "Phủ thành Tống Bình - Đại La"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 650,
+      "y": 220,
+      "nhan": "Xưng Tiết độ sứ, mở nền tự chủ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nhà Đường suy yếu, mất quyền kiểm soát",
+      "mo_ta": "Cuối thế kỷ 9, nhà Đường suy yếu, loạn lạc khắp nơi, quyền kiểm soát Giao Châu lỏng lẻo.",
+      "hien": [
+        "boi-canh-duong-suy-yeu"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Khúc Thừa Dụ chớp thời cơ dấy binh",
+      "mo_ta": "Hào trưởng Khúc Thừa Dụ (Hồng Châu, Hải Dương) chớp thời cơ, tập hợp lực lượng dấy binh.",
+      "hien": [
+        "co-ta-day-binh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiếm phủ Tống Bình - Đại La",
+      "mo_ta": "Nghĩa quân tiến chiếm phủ thành Tống Bình - Đại La, trung tâm chính quyền đô hộ.",
+      "hien": [
+        "co-ta-day-binh",
+        "mui-tien-chiem",
+        "thanh-tong-binh-905"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Xưng Tiết độ sứ, mở nền tự chủ",
+      "mo_ta": "Khúc Thừa Dụ tự xưng Tiết độ sứ, được nhà Đường buộc phải công nhận trên danh nghĩa, mở đầu nền tự chủ sau gần một nghìn năm Bắc thuộc.",
+      "hien": [
+        "thanh-tong-binh-905",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Khúc Thừa Dụ chớp thời cơ dấy binh, chiếm phủ Tống Bình - Đại La, xưng Tiết độ sứ, mở nền tự chủ sau gần một nghìn năm Bắc thuộc.",
+  "y_nghia": "Mốc mở đầu nền tự chủ của người Việt sau gần một nghìn năm Bắc thuộc, tiền đề trực tiếp cho các đời họ Khúc, Dương Đình Nghệ, Ngô Quyền giành độc lập hoàn toàn.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ",
+    "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+    "Cục Di sản văn hóa — Đền thờ Khúc Thừa Dụ (dsvh.gov.vn)"
+  ]
+}

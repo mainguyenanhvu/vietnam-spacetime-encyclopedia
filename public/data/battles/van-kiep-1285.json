@@ -1,0 +1,152 @@
+{
+  "ghi_chu": "Sa đồ trận Vạn Kiếp 1285 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "van-kiep-1285",
+  "ten": "Trận Vạn Kiếp 1285",
+  "nam": 1285,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hưng Đạo Đại Vương Trần Quốc Tuấn",
+  "doi_thu": "Quân Nguyên (Thoát Hoan, Lý Hằng)",
+  "dia_diem": "Vạn Kiếp, Chí Linh (nay tỉnh Hải Phòng), hợp lưu Lục Đầu Giang",
+  "lien_quan_tinh": [
+    "hai-phong"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Lục Đầu Giang"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-co-cum",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 700,
+      "y": 250,
+      "nhan": "Thoát Hoan, Lý Hằng co cụm về Vạn Kiếp"
+    },
+    {
+      "id": "quan-ta-tran-quoc-tuan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 350,
+      "nhan": "Trần Quốc Tuấn dẫn đại quân"
+    },
+    {
+      "id": "mui-vay-danh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        420,
+        330
+      ],
+      "den": [
+        650,
+        270
+      ],
+      "nhan": "Vây đánh Vạn Kiếp"
+    },
+    {
+      "id": "thuyen-dich-chim",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 750,
+      "y": 200,
+      "nhan": "Hàng trăm chiến thuyền bị đánh chìm"
+    },
+    {
+      "id": "quan-dich-ly-hang-tu-tran",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 150,
+      "nhan": "Lý Hằng tử trận"
+    },
+    {
+      "id": "co-thoat-hoan-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 120,
+      "nhan": "Thoát Hoan chui ống đồng trốn thoát"
+    },
+    {
+      "id": "dan-binh-dia-phuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 430,
+      "nhan": "Dân binh sông nước địa phương hỗ trợ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Thoát Hoan, Lý Hằng co cụm thủy binh về Vạn Kiếp",
+      "mo_ta": "Sau các thất bại liên tiếp, cánh thủy binh của Thoát Hoan và Lý Hằng co cụm rút về Vạn Kiếp.",
+      "hien": [
+        "quan-dich-co-cum"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trần Quốc Tuấn dẫn đại quân vây đánh",
+      "mo_ta": "Hưng Đạo Đại vương Trần Quốc Tuấn dẫn đại quân vây đánh cánh thủy binh tại Vạn Kiếp.",
+      "hien": [
+        "quan-ta-tran-quoc-tuan",
+        "quan-dich-co-cum"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh chìm hàng trăm chiến thuyền",
+      "mo_ta": "Hàng trăm chiến thuyền giặc bị đánh chìm trên sông Lục Đầu Giang.",
+      "hien": [
+        "quan-ta-tran-quoc-tuan",
+        "mui-vay-danh",
+        "thuyen-dich-chim"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chém tướng Lý Hằng",
+      "mo_ta": "Tướng Lý Hằng tử trận trong trận đánh.",
+      "hien": [
+        "quan-dich-ly-hang-tu-tran"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Thoát Hoan chui ống đồng trốn thoát",
+      "mo_ta": "Thoát Hoan phải chui vào ống đồng trốn thoát, với sự tham gia hỗ trợ của dân binh sông nước địa phương.",
+      "hien": [
+        "co-thoat-hoan-chay",
+        "dan-binh-dia-phuong"
+      ]
+    }
+  ],
+  "ket_qua": "Hàng trăm chiến thuyền giặc bị đánh chìm, tướng Lý Hằng tử trận, Thoát Hoan phải chui vào ống đồng trốn thoát.",
+  "y_nghia": "Chiến thắng có sự tham gia trực tiếp của các đội dân binh sông nước địa phương, thể hiện sức mạnh chiến tranh nhân dân trong kháng chiến chống Nguyên Mông.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Danh tướng ngự đền Cổ Phao"
+  ]
+}

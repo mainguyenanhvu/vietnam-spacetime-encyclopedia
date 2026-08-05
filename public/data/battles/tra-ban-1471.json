@@ -1,0 +1,152 @@
+{
+  "ghi_chu": "Sa đồ chiến thắng Trà Bàn 1471 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tra-ban-1471",
+  "ten": "Chiến thắng Trà Bàn 1471",
+  "nam": 1471,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Thánh Tông",
+  "doi_thu": "Chiêm Thành (Trà Toàn)",
+  "dia_diem": "Thành Đồ Bàn (Trà Bàn), nay tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          350
+        ],
+        [
+          650,
+          300
+        ]
+      ],
+      "nhan": "Đường nam chinh của Lê Thánh Tông"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-tra-toan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 500,
+      "nhan": "Trà Toàn đánh úp Hóa Châu"
+    },
+    {
+      "id": "quan-ta-le-thanh-tong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 400,
+      "nhan": "Lê Thánh Tông thân chinh"
+    },
+    {
+      "id": "thanh-do-ban-1471",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 280,
+      "nhan": "Thành Đồ Bàn (Trà Bàn)"
+    },
+    {
+      "id": "mui-tan-cong-do-ban",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        380
+      ],
+      "den": [
+        600,
+        300
+      ],
+      "nhan": "Tiến đánh hạ thành"
+    },
+    {
+      "id": "quan-dich-tra-toan-bi-bat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 741,
+      "y": 265,
+      "nhan": "Trà Toàn bị bắt sống"
+    },
+    {
+      "id": "deo-cu-mong",
+      "kieu": "dia-danh",
+      "x": 800,
+      "y": 400,
+      "nhan": "Đèo Cù Mông"
+    },
+    {
+      "id": "co-thang-1471",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 750,
+      "y": 180,
+      "nhan": "Mở rộng cương vực tới đèo Cù Mông"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trà Toàn đánh úp Hóa Châu",
+      "mo_ta": "Năm 1471, vua Chiêm Trà Toàn đem quân đánh úp Hóa Châu.",
+      "hien": [
+        "quan-dich-tra-toan"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lê Thánh Tông thân chinh nam chinh",
+      "mo_ta": "Vua Lê Thánh Tông thân chinh cầm đại quân nam chinh đáp trả.",
+      "hien": [
+        "quan-ta-le-thanh-tong",
+        "quan-dich-tra-toan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Hạ thành Đồ Bàn (Trà Bàn)",
+      "mo_ta": "Đại quân tiến đánh, hạ thành Đồ Bàn — kinh đô Chiêm Thành.",
+      "hien": [
+        "quan-ta-le-thanh-tong",
+        "thanh-do-ban-1471",
+        "mui-tan-cong-do-ban"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bắt sống Trà Toàn",
+      "mo_ta": "Quân ta bắt sống vua Chiêm Trà Toàn.",
+      "hien": [
+        "thanh-do-ban-1471",
+        "quan-dich-tra-toan-bi-bat"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở rộng cương vực tới đèo Cù Mông",
+      "mo_ta": "Chiến thắng chấm dứt vai trò cường quốc khu vực của Chiêm Thành, mở rộng cương vực Đại Việt tới đèo Cù Mông.",
+      "hien": [
+        "deo-cu-mong",
+        "co-thang-1471"
+      ]
+    }
+  ],
+  "ket_qua": "Vua Lê Thánh Tông thân chinh hạ thành Đồ Bàn, bắt sống Trà Toàn, chấm dứt vai trò cường quốc khu vực của Chiêm Thành.",
+  "y_nghia": "Mở rộng cương vực Đại Việt tới đèo Cù Mông, đánh dấu đỉnh cao mở mang lãnh thổ về phía nam thời Lê sơ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT thành phố Đà Nẵng (danang.gov.vn) — Chiến thắng Trà Bàn của vua Lê Thánh Tông (1471)",
+    "Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn) — Xứ Quảng Nam xưa - sự kiện lớn năm 1471",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

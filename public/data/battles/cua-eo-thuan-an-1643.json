@@ -1,0 +1,131 @@
+{
+  "ghi_chu": "Sa đồ thuỷ chiến cửa Eo 1643 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "cua-eo-thuan-an-1643",
+  "ten": "Trận thuỷ chiến cửa Eo (Thuận An) 1643 — đánh bại hạm đội Hà Lan",
+  "nam": 1643,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Phúc Lan (Chúa Thượng)",
+  "doi_thu": "Hà Lan (mượn tay chúa Trịnh)",
+  "dia_diem": "Cửa Eo (cửa Thuận An), Thừa Thiên Huế",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          1000,
+          50
+        ],
+        [
+          1000,
+          300
+        ],
+        [
+          750,
+          250
+        ]
+      ],
+      "nhan": "Cửa Eo (Thuận An)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "lien-minh-trinh-ha-lan",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 450,
+      "nhan": "Liên minh chúa Trịnh — Hà Lan"
+    },
+    {
+      "id": "tau-dich-ha-lan",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 800,
+      "y": 150,
+      "nhan": "3 chiến thuyền trọng pháo Hà Lan"
+    },
+    {
+      "id": "quan-ta-nguyen-phuc-lan",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Chúa Thượng Nguyễn Phúc Lan"
+    },
+    {
+      "id": "mui-nghenh-chien",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        320
+      ],
+      "den": [
+        700,
+        200
+      ],
+      "nhan": "Đích thân nghênh chiến"
+    },
+    {
+      "id": "co-thang-cua-eo",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 750,
+      "y": 120,
+      "nhan": "Đánh bại hạm đội Hà Lan"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chúa Trịnh liên minh với Hà Lan",
+      "mo_ta": "Chúa Trịnh liên minh với Hà Lan nhằm hỗ trợ tấn công Đàng Trong.",
+      "hien": [
+        "lien-minh-trinh-ha-lan"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hà Lan cử 3 chiến thuyền trọng pháo tiến vào cửa Eo",
+      "mo_ta": "Theo yêu cầu liên minh, Hà Lan cử 3 tàu đồng trang bị trọng pháo tiến vào cửa Eo (Thuận An).",
+      "hien": [
+        "lien-minh-trinh-ha-lan",
+        "tau-dich-ha-lan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chúa Thượng Nguyễn Phúc Lan đích thân nghênh chiến",
+      "mo_ta": "Chúa Thượng Nguyễn Phúc Lan đích thân chỉ huy thủy quân nghênh chiến.",
+      "hien": [
+        "tau-dich-ha-lan",
+        "quan-ta-nguyen-phuc-lan"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh bại hạm đội Hà Lan",
+      "mo_ta": "Thủy quân chúa Nguyễn đánh bại hoàn toàn 3 chiến thuyền Hà Lan.",
+      "hien": [
+        "quan-ta-nguyen-phuc-lan",
+        "mui-nghenh-chien",
+        "co-thang-cua-eo"
+      ]
+    }
+  ],
+  "ket_qua": "Thủy quân chúa Nguyễn đánh bại 3 chiến thuyền đồng trang bị trọng pháo của Hà Lan — lần đầu tiên một nước châu Á đánh thắng hải quân một cường quốc châu Âu trên biển.",
+  "y_nghia": "Chiến thắng thủy chiến mang tính bước ngoặt, khẳng định sức mạnh hải quân Đàng Trong trước công nghệ quân sự phương Tây.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 2)",
+    "Đại Nam Thực Lục — Tiền biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

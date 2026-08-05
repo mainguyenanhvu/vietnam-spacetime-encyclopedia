@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ Chúa Nguyễn Bắc tiến, chiếm 7 huyện Nghệ An 1655–1660 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chua-nguyen-bac-tien-nghe-an-1655-1660",
+  "ten": "Chúa Nguyễn Bắc tiến, chiếm 7 huyện Nghệ An (1655–1660)",
+  "nam": 1655,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Phúc Tần",
+  "doi_thu": "Chúa Trịnh (Trịnh Tráng, Trịnh Tạc)",
+  "dia_diem": "7 huyện phía nam trấn Nghệ An (nay Nghệ An, Hà Tĩnh)",
+  "lien_quan_tinh": [
+    "nghe-an",
+    "ha-tinh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          500
+        ],
+        [
+          300,
+          480
+        ],
+        [
+          600,
+          460
+        ]
+      ],
+      "nhan": "Sông Gianh"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          450
+        ],
+        [
+          400,
+          300
+        ],
+        [
+          600,
+          150
+        ]
+      ],
+      "nhan": "Đường Bắc tiến vào Nghệ An"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-nguyen-phuc-tan-bt",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 420,
+      "nhan": "Nguyễn Phúc Tần vượt sông Gianh"
+    },
+    {
+      "id": "mui-bac-tien",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        400
+      ],
+      "den": [
+        500,
+        220
+      ],
+      "nhan": "Bắc tiến chiếm 7 huyện"
+    },
+    {
+      "id": "7-huyen-nghe-an",
+      "kieu": "dia-danh",
+      "x": 550,
+      "y": 180,
+      "nhan": "7 huyện phía nam Nghệ An"
+    },
+    {
+      "id": "quan-dich-trinh-phan-cong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 120,
+      "nhan": "Quân Trịnh phản công"
+    },
+    {
+      "id": "co-rut-1660",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 350,
+      "y": 460,
+      "nhan": "Rút về nam sông Gianh (1660)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Phúc Tần chủ động vượt sông Gianh Bắc tiến",
+      "mo_ta": "Khác thế phòng thủ thường thấy, Nguyễn Phúc Tần chủ động đem quân vượt sông Gianh đánh ra Đàng Ngoài.",
+      "hien": [
+        "quan-ta-nguyen-phuc-tan-bt"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiếm 7 huyện phía nam Nghệ An",
+      "mo_ta": "Quân chúa Nguyễn chiếm được 7 huyện phía nam trấn Nghệ An.",
+      "hien": [
+        "quan-ta-nguyen-phuc-tan-bt",
+        "mui-bac-tien",
+        "7-huyen-nghe-an"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Kiểm soát vùng đất xa nhất phía bắc",
+      "mo_ta": "Đây là vùng xa nhất Đàng Trong từng kiểm soát ở phía bắc, duy trì khoảng 5 năm.",
+      "hien": [
+        "7-huyen-nghe-an"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân Trịnh tổ chức phản công",
+      "mo_ta": "Quân Trịnh (Trịnh Tráng, Trịnh Tạc) tổ chức phản công nhằm giành lại vùng đất đã mất.",
+      "hien": [
+        "7-huyen-nghe-an",
+        "quan-dich-trinh-phan-cong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Rút về nam sông Gianh (1660)",
+      "mo_ta": "Trước sức phản công của quân Trịnh, quân Nguyễn buộc phải rút về nam sông Gianh năm 1660.",
+      "hien": [
+        "co-rut-1660"
+      ]
+    }
+  ],
+  "ket_qua": "Sau hai năm liên tiếp tấn công ra Đàng Ngoài, quân chúa Nguyễn chiếm được 7 huyện của Nghệ An trước khi bị quân Trịnh phản công đẩy lùi về nam sông Gianh năm 1660.",
+  "y_nghia": "Lần hiếm hoi Đàng Trong chủ động Bắc tiến trong chiến tranh Trịnh-Nguyễn, cho thấy cán cân quân sự không hoàn toàn nghiêng về Đàng Ngoài.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 1)",
+    "Đại Nam Thực Lục — Tiền biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

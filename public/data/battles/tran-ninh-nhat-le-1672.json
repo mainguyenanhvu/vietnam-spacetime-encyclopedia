@@ -1,0 +1,160 @@
+{
+  "ghi_chu": "Sa đồ trận Trấn Ninh — Nhật Lệ 1672 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-ninh-nhat-le-1672",
+  "ten": "Trận Trấn Ninh — Nhật Lệ (1672), kết thúc chiến tranh Trịnh-Nguyễn",
+  "nam": 1672,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Phúc Tần",
+  "doi_thu": "Chúa Trịnh (Trịnh Tạc)",
+  "dia_diem": "Luỹ Trấn Ninh và cửa Nhật Lệ, Đồng Hới, Quảng Bình (nay tỉnh Quảng Trị)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Gianh"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-vua-le-than-chinh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Trịnh Tạc ép vua Lê thân chinh"
+    },
+    {
+      "id": "luy-tran-ninh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 250,
+      "nhan": "Lũy Trấn Ninh bị chiếm"
+    },
+    {
+      "id": "quan-dich-3van",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 200,
+      "nhan": "3 vạn quân vượt sông Gianh"
+    },
+    {
+      "id": "luy-nhat-le",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Lũy Nhật Lệ (Lũy Thầy)"
+    },
+    {
+      "id": "quan-ta-day-lui",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Quân Nguyễn đẩy lùi 6 đợt công phá"
+    },
+    {
+      "id": "mui-cong-pha",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        600,
+        230
+      ],
+      "den": [
+        420,
+        340
+      ],
+      "nhan": "6 đợt công phá liên tiếp"
+    },
+    {
+      "id": "co-giang-hoa",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 430,
+      "nhan": "Giảng hòa, lấy sông Gianh làm giới tuyến"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trịnh Tạc ép vua Lê thân chinh",
+      "mo_ta": "Trịnh Tạc ép vua Lê đem đại quân đánh một trận lớn ở châu Bố Chính.",
+      "hien": [
+        "quan-dich-vua-le-than-chinh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiếm lũy Trấn Ninh",
+      "mo_ta": "Quân Trịnh chiếm được lũy Trấn Ninh.",
+      "hien": [
+        "luy-tran-ninh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vây lũy Nhật Lệ với 3 vạn quân",
+      "mo_ta": "Trịnh Tạc điều khoảng 3 vạn quân vượt sông Gianh vây lũy Nhật Lệ (hệ thống Lũy Thầy).",
+      "hien": [
+        "luy-tran-ninh",
+        "quan-dich-3van"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân Nguyễn đẩy lùi 6 đợt công phá",
+      "mo_ta": "Quân Nguyễn phòng thủ vững chắc, đẩy lùi liên tiếp 6 đợt tấn công của quân Trịnh.",
+      "hien": [
+        "luy-nhat-le",
+        "quan-ta-day-lui",
+        "mui-cong-pha"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân Trịnh rút lui trong bế tắc",
+      "mo_ta": "Quân Trịnh rút lui trong bế tắc sau nhiều tháng vây hãm không thành.",
+      "hien": [
+        "quan-dich-3van",
+        "luy-nhat-le"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Giảng hòa, lấy sông Gianh làm giới tuyến",
+      "mo_ta": "Hai họ giảng hòa, lấy sông Gianh làm giới tuyến, kết thúc chiến tranh 45 năm qua 7 lần giao tranh lớn.",
+      "hien": [
+        "co-giang-hoa"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Trịnh chiếm lũy Trấn Ninh nhưng 6 đợt công phá lũy Nhật Lệ liên tiếp đều thất bại; cuối 1672 quân Trịnh rút lui, hai bên tạm hòa lấy sông Gianh làm ranh giới.",
+  "y_nghia": "Kết thúc chiến tranh Trịnh-Nguyễn 45 năm qua 7 lần giao tranh lớn, mở đầu hơn 100 năm Đàng Trong - Đàng Ngoài phân chia trước khi Tây Sơn thống nhất.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 1)",
+    "Đại Nam Thực Lục — Tiền biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

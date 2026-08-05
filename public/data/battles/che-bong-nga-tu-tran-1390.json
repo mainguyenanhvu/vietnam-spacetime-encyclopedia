@@ -1,0 +1,143 @@
+{
+  "ghi_chu": "Sa đồ Chế Bồng Nga tử trận trên sông Hải Triều 1390 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "che-bong-nga-tu-tran-1390",
+  "ten": "Chế Bồng Nga tử trận trên sông Hải Triều (1390)",
+  "nam": 1390,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Khát Chân",
+  "doi_thu": "Chiêm Thành (Chế Bồng Nga)",
+  "dia_diem": "Sông Hải Triều (nay đoạn sông Luộc, nay tỉnh Hưng Yên)",
+  "lien_quan_tinh": [
+    "hung-yen"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Hải Triều (nay sông Luộc)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-danh-pha",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 150,
+      "nhan": "Chế Bồng Nga liên tục đánh phá Thăng Long"
+    },
+    {
+      "id": "thuyen-dich-che-bong-nga",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 600,
+      "y": 280,
+      "nhan": "Chế Bồng Nga đi thuyền quan sát"
+    },
+    {
+      "id": "quan-ta-tran-khat-chan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 350,
+      "nhan": "Trần Khát Chân chỉ huy quân Trần"
+    },
+    {
+      "id": "gia-than-phan-boi",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 320,
+      "nhan": "Gia thần phản bội chỉ điểm"
+    },
+    {
+      "id": "mui-ban-vao-thuyen",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        370
+      ],
+      "den": [
+        580,
+        290
+      ],
+      "nhan": "Tập trung hoả lực bắn vào thuyền"
+    },
+    {
+      "id": "co-thang-1390",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 220,
+      "nhan": "Chế Bồng Nga trúng đạn chết"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chế Bồng Nga liên tục đánh phá Thăng Long",
+      "mo_ta": "Suốt hơn hai thập kỷ, Chế Bồng Nga liên tục đem quân đánh phá Thăng Long.",
+      "hien": [
+        "quan-dich-danh-pha"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chế Bồng Nga đích thân đi thuyền quan sát trận địa",
+      "mo_ta": "Trên sông Hải Triều, Chế Bồng Nga cho thuyền tiến sát doanh trại quân Trần để quan sát.",
+      "hien": [
+        "thuyen-dich-che-bong-nga",
+        "quan-ta-tran-khat-chan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Gia thần phản bội chỉ điểm",
+      "mo_ta": "Một gia thần của vua Chiêm phản bội, chỉ đúng thuyền vua cho tướng Trần Khát Chân.",
+      "hien": [
+        "thuyen-dich-che-bong-nga",
+        "gia-than-phan-boi"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân Trần tập trung hỏa lực bắn vào thuyền",
+      "mo_ta": "Trần Khát Chân chỉ huy quân Trần tập trung hỏa lực bắn vào đúng thuyền vua Chiêm.",
+      "hien": [
+        "quan-ta-tran-khat-chan",
+        "mui-ban-vao-thuyen",
+        "thuyen-dich-che-bong-nga"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chế Bồng Nga trúng đạn chết, quân Chiêm tan vỡ",
+      "mo_ta": "Chế Bồng Nga trúng đạn chết tại chỗ; quân Chiêm tan vỡ bỏ chạy, chấm dứt hơn hai thập kỷ Chiêm Thành tấn công Thăng Long.",
+      "hien": [
+        "co-thang-1390"
+      ]
+    }
+  ],
+  "ket_qua": "Chế Bồng Nga trúng đạn chết khi đích thân đi thuyền quan sát trận địa; quân Chiêm tan vỡ bỏ chạy, chấm dứt hơn hai thập kỷ Chiêm Thành liên tục tấn công Thăng Long.",
+  "y_nghia": "Loại bỏ vị vua kiệt hiệt nhất của Chiêm Thành, chấm dứt mối đe dọa thường trực với Thăng Long suốt hai thập kỷ cuối thời Trần.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Trần",
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Việt Nam sử lược, Nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "ghi_chu": "Sa đồ Trịnh Sâm chiếm Phú Xuân 1774 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "trinh-sam-chiem-phu-xuan-1774",
+  "ten": "Trịnh Sâm chiếm Phú Xuân (1774)",
+  "nam": 1774,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trịnh Sâm, Hoàng Ngũ Phúc",
+  "doi_thu": "Chúa Nguyễn (Nguyễn Phúc Thuần)",
+  "dia_diem": "Kinh thành Phú Xuân, Huế",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          200
+        ],
+        [
+          400,
+          250
+        ],
+        [
+          650,
+          300
+        ]
+      ],
+      "nhan": "Đường tiến quân Trịnh vào Thuận Hóa"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "tay-son-bung-no",
+      "kieu": "dia-danh",
+      "x": 800,
+      "y": 450,
+      "nhan": "Khởi nghĩa Tây Sơn bùng nổ ở Quy Nhơn"
+    },
+    {
+      "id": "quan-dich-hoang-ngu-phuc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 200,
+      "y": 230,
+      "nhan": "Hoàng Ngũ Phúc dẫn quân Trịnh"
+    },
+    {
+      "id": "kinh-thanh-phu-xuan-1774",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 600,
+      "y": 300,
+      "nhan": "Kinh thành Phú Xuân"
+    },
+    {
+      "id": "mui-tien-chiem-px",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        300,
+        250
+      ],
+      "den": [
+        560,
+        290
+      ],
+      "nhan": "Tiến chiếm Phú Xuân"
+    },
+    {
+      "id": "chua-nguyen-bo-chay",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 650,
+      "y": 400,
+      "nhan": "Chúa Nguyễn Phúc Thuần bỏ chạy"
+    },
+    {
+      "id": "co-thang-px",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 600,
+      "y": 230,
+      "nhan": "Đàng Ngoài kiểm soát lại kinh đô"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đàng Trong suy yếu vì khởi nghĩa Tây Sơn",
+      "mo_ta": "Đàng Trong suy yếu vì khởi nghĩa Tây Sơn bùng nổ ở Quy Nhơn (1771).",
+      "hien": [
+        "tay-son-bung-no"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trịnh Sâm lợi dụng thời cơ đem quân",
+      "mo_ta": "Chúa Trịnh Sâm lợi dụng thời cơ, đem quân do danh tướng Hoàng Ngũ Phúc chỉ huy tiến chiếm Thuận Hóa.",
+      "hien": [
+        "quan-dich-hoang-ngu-phuc"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiến chiếm kinh thành Phú Xuân",
+      "mo_ta": "Quân Trịnh tiến chiếm kinh thành Phú Xuân.",
+      "hien": [
+        "quan-dich-hoang-ngu-phuc",
+        "kinh-thanh-phu-xuan-1774",
+        "mui-tien-chiem-px"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chúa Nguyễn Phúc Thuần bỏ chạy",
+      "mo_ta": "Chúa Nguyễn Phúc Thuần bỏ kinh đô chạy vào Quảng Nam rồi Gia Định.",
+      "hien": [
+        "kinh-thanh-phu-xuan-1774",
+        "chua-nguyen-bo-chay"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân Đàng Ngoài lần đầu kiểm soát lại kinh đô Đàng Trong",
+      "mo_ta": "Lần đầu sau hơn 100 năm chia cắt, quân Đàng Ngoài kiểm soát trở lại kinh đô Đàng Trong.",
+      "hien": [
+        "co-thang-px"
+      ]
+    }
+  ],
+  "ket_qua": "Trịnh Sâm đưa đại quân chiếm đất Thuận Hoá, buộc chúa Nguyễn Phúc Thuần bỏ chạy vào Quảng Nam rồi Gia Định; lần đầu sau hơn 100 năm chia cắt, quân Đàng Ngoài kiểm soát trở lại kinh đô Đàng Trong.",
+  "y_nghia": "Phá vỡ thế cân bằng Trịnh-Nguyễn từ 1672, mở màn giai đoạn quân Trịnh và Tây Sơn cùng ép chúa Nguyễn từ hai phía.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 2)",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

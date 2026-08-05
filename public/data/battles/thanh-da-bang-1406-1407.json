@@ -1,0 +1,154 @@
+{
+  "ghi_chu": "Sa đồ trận thành Đa Bang 1406–1407 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "thanh-da-bang-1406-1407",
+  "ten": "Trận thành Đa Bang (1406–1407)",
+  "nam": 1406,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hồ Quý Ly, Hồ Nguyên Trừng",
+  "doi_thu": "Nhà Minh (Trương Phụ, Mộc Thạnh)",
+  "dia_diem": "Thành Đa Bang, Ba Vì, Hà Nội",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          1000,
+          370
+        ]
+      ],
+      "nhan": "Sông Nhị (sông Hồng)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-truong-phu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Trương Phụ, Mộc Thạnh đem đại quân"
+    },
+    {
+      "id": "tuyen-phong-thu-coc-go",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 300,
+      "nhan": "Tuyến phòng thủ cọc gỗ, xích sắt"
+    },
+    {
+      "id": "thanh-da-bang",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Thành Đa Bang"
+    },
+    {
+      "id": "quan-ta-ho-quy-ly",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Hồ Quý Ly, Hồ Nguyên Trừng"
+    },
+    {
+      "id": "mui-vay-danh-2-canh",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        700,
+        200
+      ],
+      "den": [
+        450,
+        320
+      ],
+      "nhan": "Chia hai cánh vây đánh"
+    },
+    {
+      "id": "co-that-thu",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 400,
+      "y": 280,
+      "nhan": "Thành thất thủ (22/1/1407)"
+    },
+    {
+      "id": "dong-do",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 280,
+      "nhan": "Đông Đô (Thăng Long) bị chiếm"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nhà Minh lấy cớ 'phù Trần diệt Hồ' xâm lược",
+      "mo_ta": "Tháng 5/1406, nhà Minh cử đại quân do Trương Phụ, Mộc Thạnh chỉ huy lấy cớ 'phù Trần diệt Hồ' đánh Đại Ngu.",
+      "hien": [
+        "quan-dich-truong-phu"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hồ Quý Ly bố trí tuyến phòng thủ sông Nhị",
+      "mo_ta": "Hồ Quý Ly bố trí tuyến phòng thủ dọc sông (cọc gỗ, xích sắt, thành lũy), lấy Đa Bang làm cứ điểm trọng yếu nhất.",
+      "hien": [
+        "tuyen-phong-thu-coc-go",
+        "thanh-da-bang",
+        "quan-ta-ho-quy-ly"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân Minh chia hai cánh vây đánh (20/1/1407)",
+      "mo_ta": "Quân Minh chia hai cánh vây đánh thành Đa Bang.",
+      "hien": [
+        "quan-dich-truong-phu",
+        "mui-vay-danh-2-canh",
+        "thanh-da-bang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Thành Đa Bang thất thủ (22/1/1407)",
+      "mo_ta": "Sau hai ngày công phá, thành vỡ, quân Hồ tan rã.",
+      "hien": [
+        "thanh-da-bang",
+        "co-that-thu"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân Minh chiếm Đông Đô, đặt ách đô hộ",
+      "mo_ta": "Quân Minh thừa thắng tiến chiếm Đông Đô (Thăng Long), đặt ách đô hộ lần thứ tư.",
+      "hien": [
+        "dong-do",
+        "co-that-thu"
+      ]
+    }
+  ],
+  "ket_qua": "Tuyến phòng thủ sông Nhị bị công phá; thành Đa Bang thất thủ, mở đường cho quân Minh chiếm Đông Đô, đặt ách đô hộ lần thứ tư.",
+  "y_nghia": "Thất bại quyết định của nhà Hồ, mở đầu 20 năm Bắc thuộc lần thứ tư trước khi khởi nghĩa Lam Sơn giành lại độc lập.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt Sử Ký Toàn Thư — Kỷ nhà Hồ",
+    "Khâm Định Việt Sử Thông Giám Cương Mục — Chính biên",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

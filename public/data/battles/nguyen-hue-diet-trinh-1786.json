@@ -1,0 +1,161 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long 1786 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-hue-diet-trinh-1786",
+  "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)",
+  "nam": 1786,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Huệ",
+  "doi_thu": "Chúa Trịnh (Trịnh Khải)",
+  "dia_diem": "Thành Sơn Nam, sông Vị Hoàng, kinh thành Thăng Long",
+  "lien_quan_tinh": [
+    "ha-noi",
+    "hung-yen"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          400
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          1000,
+          420
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-phu-le-diet-trinh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 500,
+      "nhan": "'Phù Lê diệt Trịnh' — quân Tây Sơn ra Bắc"
+    },
+    {
+      "id": "thanh-son-nam",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 350,
+      "y": 450,
+      "nhan": "Thành Sơn Nam"
+    },
+    {
+      "id": "tuyen-phong-thu-trinh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 600,
+      "y": 450,
+      "nhan": "Tuyến phòng thủ Kim Động, Phù Sa, cửa Luộc"
+    },
+    {
+      "id": "mui-tien-thang-long-2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        420
+      ],
+      "den": [
+        650,
+        300
+      ],
+      "nhan": "Tiến vào Thăng Long"
+    },
+    {
+      "id": "thang-long-1786",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 270,
+      "nhan": "Kinh thành Thăng Long"
+    },
+    {
+      "id": "trinh-khai-bo-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 200,
+      "nhan": "Trịnh Khải bỏ chạy, bị bắt, tự vẫn"
+    },
+    {
+      "id": "co-thang-1786",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 220,
+      "nhan": "Nguyễn Huệ yết kiến vua Lê"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lấy danh nghĩa 'phù Lê diệt Trịnh'",
+      "mo_ta": "Sau khi hạ thành Phú Xuân, lấy danh nghĩa 'phù Lê diệt Trịnh', Nguyễn Huệ đưa quân Tây Sơn ra Bắc.",
+      "hien": [
+        "quan-ta-phu-le-diet-trinh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hạ thành Sơn Nam",
+      "mo_ta": "Quân Tây Sơn lần lượt hạ thành Sơn Nam.",
+      "hien": [
+        "quan-ta-phu-le-diet-trinh",
+        "thanh-son-nam"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phá các tuyến phòng thủ quân Trịnh",
+      "mo_ta": "Quân Tây Sơn phá các tuyến phòng thủ quân Trịnh ở Kim Động, Phù Sa, cửa Luộc.",
+      "hien": [
+        "thanh-son-nam",
+        "tuyen-phong-thu-trinh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiến vào Thăng Long",
+      "mo_ta": "Quân Tây Sơn áp sát rồi tiến vào kinh thành Thăng Long.",
+      "hien": [
+        "tuyen-phong-thu-trinh",
+        "thang-long-1786",
+        "mui-tien-thang-long-2"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trịnh Khải bỏ chạy, bị bắt và tự vẫn",
+      "mo_ta": "Chúa Trịnh Khải bỏ kinh thành chạy trốn nhưng bị dân binh bắt tại làng Hạ Lôi và tự vẫn.",
+      "hien": [
+        "thang-long-1786",
+        "trinh-khai-bo-chay"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Nguyễn Huệ yết kiến vua Lê, chấm dứt chúa Trịnh",
+      "mo_ta": "Nguyễn Huệ vào thành yết kiến vua Lê Hiển Tông, chấm dứt hơn 200 năm cầm quyền họ Trịnh.",
+      "hien": [
+        "co-thang-1786"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Tây Sơn hạ thành Sơn Nam, phá các tuyến phòng thủ quân Trịnh, tiến vào Thăng Long; chúa Trịnh Khải bỏ chạy, bị bắt và tự vẫn — chấm dứt hơn 200 năm cầm quyền họ Trịnh.",
+  "y_nghia": "Kết thúc vai trò lịch sử của chúa Trịnh sau hơn hai thế kỷ, thể hiện tốc độ hành quân thần tốc đặc trưng của Nguyễn Huệ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Việt Nam sử lược, Nhà Hậu Lê, Chương IX",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}
