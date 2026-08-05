@@ -1,0 +1,671 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   THƯ VIỆN — danh sách theo chủ đề + khung đọc (src/thuvien.ts)
+   ═══════════════════════════════════════════════════════════════════════
+
+   Kéo vào bằng đúng một dòng @import trong style.css, theo tiền lệ của
+   sado.css / hanhtrinh.css / moc-lich-su.css.
+
+   🔴 KHÔNG có @keyframes trong file này, và đó là chủ ý. Luật giảm-chuyển-động
+   toàn cục (theme.css:377) ép `animation-duration: 0.01ms !important`; Chrome
+   khi đó KHÔNG áp `fill-mode` nên bất kỳ hiệu ứng nào bắt đầu từ `opacity: 0`
+   sẽ kẹt vô hình — màn Hành trình đã trả giá một lần. Khung đọc và hiệu ứng
+   lật trang ở đây chuyển cảnh bằng cuộn thật, không bằng animation.
+
+   🔴 KHÔNG có backdrop-filter trong file này. `#library-panel` đã có sẵn một
+   lớp kính ở style.css và đó là KHUNG NGOÀI TĨNH; đặt thêm blur lên vùng đang
+   cuộn (.lib-ds, .lib-doc-khung) là đúng cái lag dự án đã đo được.
+
+   Mọi màu chữ/nền dưới đây đã đo bằng công thức tương phản WCAG 2.1
+   (tỉ lệ ghi ngay cạnh giá trị). Đừng đổi mà không đo lại. */
+
+/* ── Bảng màu nền đọc ────────────────────────────────────────────────────
+   CỐ Ý cố định xuyên hai chế độ xem: nền «ngà» và «tối» là lựa chọn ĐỌC của
+   người dùng, không phải da giao diện. Nếu chúng đổi theo chế độ người
+   lớn/trẻ em thì người bật nền tối để đỡ mỏi mắt sẽ thấy nó tự sáng lên. */
+:root {
+  /* Ngà (sepia) */
+  --doc-nga-nen: #f4ecd8;
+  --doc-nga-chu: #3a2f1c;        /* 11,12:1 trên nền ngà */
+  --doc-nga-mo: #6b5836;         /*  5,80:1 */
+  --doc-nga-vien: #8f7847;       /*  3,61:1 trên nền · 3,06:1 trên nền nút */
+  --doc-nga-nut: #e6dabd;        /* chữ chính trên đây: 9,44:1 */
+  --doc-nga-chon-nen: #5a4a2a;
+  --doc-nga-chon-chu: #f4ecd8;   /*  7,29:1 */
+  --doc-nga-tat: #7a6a4a;        /*  3,79:1 trên nền nút (nút vô hiệu) */
+  --doc-nga-focus: #7a5a12;      /*  5,41:1 */
+
+  /* Tối */
+  --doc-toi-nen: #1c1a17;
+  --doc-toi-chu: #ece6da;        /* 13,97:1 trên nền tối */
+  --doc-toi-mo: #b3aa98;         /*  7,54:1 */
+  /* #6f6758 của bản nháp chỉ đạt 2,59:1 trên nền nút #2c2925 — TRƯỢT ngưỡng
+     3:1 của WCAG 1.4.11. #8a8378 đo được 4,63:1 trên nền và 3,86:1 trên nút. */
+  --doc-toi-vien: #8a8378;
+  --doc-toi-nut: #2c2925;        /* chữ chính trên đây: 11,65:1 */
+  --doc-toi-chon-nen: #d9c79a;
+  --doc-toi-chon-chu: #1c1a17;   /* 10,41:1 */
+  --doc-toi-tat: #8a8378;        /*  3,86:1 trên nền nút */
+  --doc-toi-focus: #d9c79a;      /* 10,41:1 */
+
+  --doc-serif: Georgia, "Noto Serif", "Times New Roman", serif;
+
+  /* Nấc cỡ chữ — nhân lên cỡ gốc RIÊNG của khung đọc, không đụng --co-md
+     toàn cục (đổi --co-md là đổi cả nút bấm và bảng số liệu của cả trang). */
+  --doc-co-b1: 0.85;
+  --doc-co-b2: 1;
+  --doc-co-b3: 1.15;
+  --doc-co-b4: 1.3;
+  --doc-co-b5: 1.5;
+
+  --doc-dong-gon: 1.35;
+  --doc-dong-vua: 1.6;
+  --doc-dong-rong: 1.9;
+  --doc-dong-rat-rong: 2.2;
+
+  /* Đơn vị `ch` khớp WCAG 1.4.10 Reflow; khoảng đọc dễ là 45–75 ký tự/dòng. */
+  --doc-cot-hep: 52ch;
+  --doc-cot-vua: 68ch;
+  --doc-cot-rong: 86ch;
+  --doc-cot-khe: 2.5rem;
+
+  --doc-cuaso-chuan: min(560px, 94vw);
+  --doc-cuaso-rong: min(860px, 96vw);
+  --doc-cuaso-toan: min(1100px, 97vw);
+
+  /* Vùng chạm tối thiểu.
+     ⚠️ KHÔNG dùng `2.75rem` như khối «VÙNG CHẠM TỐI THIỂU 44×44px» ở
+     style.css: theme.css đặt `html { font-size: var(--co-md) }`, mà --co-md
+     của chế độ người lớn là 0.94rem — nên 1rem chỉ còn 15,04px và 2.75rem ra
+     41,4px. Đo trên Chrome: mọi nút trong danh sách đó hiện cao 41px, thiếu
+     3px so với chuẩn nó tự đặt (lỗi có sẵn, ngoài phạm vi đợt này).
+     `max()` giữ cả hai chiều: chế độ trẻ em (--co-md 1.08rem → 47,5px) vẫn to
+     hơn theo thang chữ của nó, còn người lớn không bao giờ tụt dưới 44px. */
+  --lib-cham: max(2.75rem, 44px);
+}
+
+/* Viền điều khiển của thư viện. --vien-ro (#d6d3d1 / #fdba74) chỉ đạt
+   1,46:1 và 1,69:1 — dưới ngưỡng 3:1 cho ranh giới điều khiển. Hai giá trị
+   dưới đây đo được 3,92:1 (người lớn) và 4,80:1 (trẻ em). */
+:root,
+:root[data-che-do="nguoi-lon"] {
+  --lib-vien: #8a7d73;
+  --lib-tab-chon-nen: var(--brand); /* chữ --mat trên #8b1a1a: 9,13:1 */
+  --lib-badge-nen: #92400e;         /* chữ --mat trên đây: 6,97:1 */
+}
+
+/* --brand của chế độ trẻ em (#ea580c) chỉ cho 3,56:1 với chữ trắng — TRƯỢT.
+   --brand-dam (#c2410c) đo được 5,18:1. */
+:root[data-che-do="tre-em"] {
+  --lib-vien: #78716c;
+  --lib-tab-chon-nen: var(--brand-dam);
+  --lib-badge-nen: var(--brand-dam);
+}
+
+/* ── Kích cỡ cửa sổ ──────────────────────────────────────────────────────
+   Bộ chọn thuộc tính thắng rule gốc `#library-panel { width: min(520px,94vw) }`
+   ở style.css mà không phải sửa rule đó.
+
+   ⚠️ CỐ Ý không phủ kín 100vw/100vh kể cả ở mức «toàn màn hình»: panels.ts ghi
+   rõ các panel này KHÔNG modal — bản đồ phía sau vẫn phải kéo và bấm được. */
+#library-panel[data-co-cua-so="chuan"] { width: var(--doc-cuaso-chuan); }
+#library-panel[data-co-cua-so="rong"] { width: var(--doc-cuaso-rong); }
+#library-panel[data-co-cua-so="toan"] { width: var(--doc-cuaso-toan); }
+
+/* ═══ Danh sách theo chủ đề ═══════════════════════════════════════════════ */
+
+.lib-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  /* Theo mẫu đã áp cho #lc-than: cô lập bố cục/vẽ của một danh sách vài trăm
+     hàng để trình duyệt không phải tính lại cả panel mỗi lần cuộn. */
+  contain: content;
+}
+
+.lib-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s-3);
+  flex-wrap: wrap;
+  /* Chừa chỗ cho nút × đang float ở góc phải panel. */
+  padding-right: 2.5rem;
+}
+
+.lib-head h2 {
+  margin: 0;
+  font-size: var(--co-2xl);
+}
+
+.lib-sap-xep {
+  display: grid;
+  gap: var(--s-1);
+  font-size: var(--co-sm);
+  font-weight: var(--dam-manh);
+  color: var(--chu-mem);
+}
+
+.lib-sap-xep select {
+  min-height: var(--lib-cham);
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-nho);
+  background: var(--mat);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+}
+
+.lib-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  padding-bottom: var(--s-2);
+  border-bottom: 1px solid var(--lib-vien);
+}
+
+.lib-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  /* Vùng chạm 44px — luật chung của dự án. */
+  min-height: var(--lib-cham);
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-vien-tron);
+  background: var(--mat);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+  font-weight: var(--dam-vua);
+  cursor: pointer;
+  text-align: left;
+}
+
+.lib-tab:hover { background: var(--lop-brand-nhe); }
+
+.lib-tab-chon {
+  background: var(--lib-tab-chon-nen);
+  border-color: var(--lib-tab-chon-nen);
+  color: var(--mat);
+  font-weight: var(--dam-manh);
+}
+
+.lib-tab-so {
+  font-size: var(--co-2xs);
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+
+.lib-chu-de-mo-ta {
+  margin: 0;
+  font-size: var(--co-sm);
+  color: var(--chu-mem);
+}
+
+.lib-ds {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  margin: 0;
+  padding: 0;
+}
+
+.lib-hang {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 0.15rem 0;
+  border-bottom: 1px solid var(--vien);
+}
+
+.lib-hang-mo {
+  flex: 1 1 18rem;
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  min-height: var(--lib-cham);
+  padding: 0.4rem 0.5rem;
+  border: none;
+  border-radius: var(--bo-nho);
+  background: none;
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-md);
+  text-align: left;
+  cursor: pointer;
+}
+
+.lib-hang-mo:hover { background: var(--lop-brand-nhe); }
+
+.lib-hang-so {
+  flex: 0 0 auto;
+  min-width: 2ch;
+  font-size: var(--co-2xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--chu-mem);
+}
+
+.lib-hang-chinh {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.lib-hang-ten { font-weight: var(--dam-vua); }
+
+/* Thay `#3` của .rank-badge cũ. Không dùng lại class đó: cặp màu của nó
+   (chữ --mat trên --nhan #b3791f) hiện chỉ còn 3,64:1 sau lần đổi token
+   --nhan, dưới ngưỡng 4,5:1. --lib-badge-nen đo được 6,97:1 / 5,18:1. */
+.lib-hang-hang {
+  display: inline-block;
+  padding: 0 0.4rem;
+  border-radius: var(--bo-vua);
+  background: var(--lib-badge-nen);
+  color: var(--mat);
+  font-size: var(--co-2xs);
+  font-weight: var(--dam-manh);
+}
+
+.lib-hang-phu {
+  font-size: var(--co-xs);
+  color: var(--chu-mem);
+}
+
+.lib-hang-thieu {
+  margin-left: 0.4rem;
+  padding: 0 0.35rem;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-vua);
+  font-size: var(--co-2xs);
+}
+
+.lib-hang-tinh {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--co-xs);
+}
+
+.lib-hang-tinh-nhan { color: var(--chu-mem); }
+
+.lib-tp-tinh {
+  min-height: var(--lib-cham);
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-vien-tron);
+  background: var(--mat);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-xs);
+  font-weight: var(--dam-vua);
+  cursor: pointer;
+}
+
+.lib-tp-tinh:hover {
+  background: var(--lib-tab-chon-nen);
+  border-color: var(--lib-tab-chon-nen);
+  color: var(--mat);
+}
+
+/* ═══ Khung đọc ═══════════════════════════════════════════════════════════ */
+
+.lib-doc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-2);
+  border-radius: var(--bo-vua);
+  /* Nền mặc định = nền panel; hai nền còn lại đặt ở khối [data-nen] bên dưới. */
+  background: transparent;
+  color: var(--chu);
+  contain: content;
+}
+
+.lib-doc:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.lib-doc-dau {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+  padding-right: 2.5rem;
+}
+
+.lib-doc-ve,
+.lib-mode-btn,
+.lib-tc > summary,
+.lib-tc-btn,
+.lib-trang-truoc,
+.lib-trang-sau,
+.lib-nh-hang button {
+  min-height: var(--lib-cham);
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-nho);
+  background: var(--mat);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+  font-weight: var(--dam-vua);
+  cursor: pointer;
+}
+
+.lib-doc-ve:hover,
+.lib-mode-btn:hover,
+.lib-tc > summary:hover,
+.lib-tc-btn:hover,
+.lib-trang-truoc:hover:not(:disabled),
+.lib-trang-sau:hover:not(:disabled),
+.lib-nh-hang button:hover { background: var(--lop-brand-nhe); }
+
+.lib-doc-mode { display: inline-flex; gap: 0.35rem; }
+
+.lib-mode-chon,
+.lib-tc-chon {
+  background: var(--lib-tab-chon-nen);
+  border-color: var(--lib-tab-chon-nen);
+  color: var(--mat);
+  font-weight: var(--dam-manh);
+}
+
+.lib-tc { margin-left: auto; }
+.lib-tc > summary { list-style: none; display: inline-flex; align-items: center; }
+.lib-tc > summary::-webkit-details-marker { display: none; }
+.lib-tc > summary::after { content: "▾"; margin-left: 0.35rem; font-size: 0.75em; }
+.lib-tc[open] > summary::after { content: "▴"; }
+
+.lib-tc-than {
+  display: grid;
+  gap: var(--s-3);
+  margin-top: var(--s-2);
+  padding: var(--s-3);
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-vua);
+}
+
+.lib-tc-nhom { border: none; }
+.lib-tc-nhom legend {
+  padding: 0 0 0.25rem;
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  color: var(--chu-mem);
+}
+.lib-tc-nut { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.lib-tc-btn { font-size: var(--co-xs); }
+
+.lib-doc-than { display: grid; gap: var(--s-2); }
+.lib-doc-ten { margin: 0; font-size: var(--co-xl); }
+.lib-doc-meta { margin: 0; font-size: var(--co-sm); color: var(--chu-mem); }
+
+/* Bề rộng cột do người dùng chọn — dùng chung cho cả hai chế độ đọc. */
+.lib-doc[data-cot="hep"] { --doc-cot: var(--doc-cot-hep); }
+.lib-doc[data-cot="vua"] { --doc-cot: var(--doc-cot-vua); }
+.lib-doc[data-cot="rong"] { --doc-cot: var(--doc-cot-rong); }
+
+.lib-doc[data-co-chu="b1"] { --doc-co: var(--doc-co-b1); }
+.lib-doc[data-co-chu="b2"] { --doc-co: var(--doc-co-b2); }
+.lib-doc[data-co-chu="b3"] { --doc-co: var(--doc-co-b3); }
+.lib-doc[data-co-chu="b4"] { --doc-co: var(--doc-co-b4); }
+.lib-doc[data-co-chu="b5"] { --doc-co: var(--doc-co-b5); }
+
+.lib-doc[data-giai-dong="gon"] { --doc-dong: var(--doc-dong-gon); }
+.lib-doc[data-giai-dong="vua"] { --doc-dong: var(--doc-dong-vua); }
+.lib-doc[data-giai-dong="rong"] { --doc-dong: var(--doc-dong-rong); }
+.lib-doc[data-giai-dong="rat-rong"] { --doc-dong: var(--doc-dong-rat-rong); }
+
+.lib-doc[data-phong="co-chan"] .lib-doc-chu { font-family: var(--doc-serif); }
+
+.lib-doc-chu {
+  max-width: var(--doc-cot);
+  font-size: calc(var(--co-md) * var(--doc-co));
+  line-height: var(--doc-dong);
+}
+
+.lib-doc-chu > * + * { margin-top: 0.85em; }
+.lib-doc-chu h4 { font-size: 1em; }
+
+.lib-tho {
+  margin: 0;
+  padding-left: 0.9em;
+  border-left: 3px solid var(--lib-vien);
+  white-space: normal;
+}
+
+.lib-loi-binh { font-style: italic; }
+.lib-phu { font-size: 0.88em; color: var(--chu-mem); }
+
+.lib-canh-bao,
+.lib-ban-quyen {
+  padding: 0.5em 0.7em;
+  border: 1px solid var(--luu-chu);
+  border-left-width: 4px;
+  border-radius: var(--bo-nho);
+  background: var(--luu-nen);
+  color: var(--luu-chu);
+  font-size: 0.9em;
+}
+
+.lib-nguon { font-size: 0.85em; }
+.lib-nguon h4 { margin-bottom: 0.3em; }
+.lib-nguon ul { padding-left: 1.2em; }
+.lib-nguon li { word-break: break-word; }
+
+.lib-ban-do-anh {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-nho);
+}
+
+.lib-yt {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--nen-khung-video);
+  border-radius: var(--bo-nho);
+  overflow: hidden;
+}
+.lib-yt iframe { width: 100%; height: 100%; border: 0; }
+
+.lib-doc-tinh {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9em;
+}
+
+/* ── Chế độ LẬT TRANG ────────────────────────────────────────────────────
+   🔴 `column-fill: auto` là bắt buộc. Mặc định là `balance`: trình duyệt cân
+   đều độ dài văn bản qua mọi cột, cho ra một dải thấp thay vì những trang
+   đầy — không còn là «trang» nữa. `auto` chỉ có tác dụng khi khung có CHIỀU
+   CAO CỐ ĐỊNH, nên hai thứ phải đi cùng nhau.
+
+   Nội dung KHÔNG được chia sẵn thành các <div> trang: cột CSS chạy trên một
+   khối liên tục, chia bằng DOM là vỡ thứ tự đọc của trình đọc màn hình. */
+.lib-doc[data-che-do-doc="lat"] .lib-doc-khung {
+  height: clamp(18rem, 55vh, 44rem);
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* Cuộn ngang native = vuốt cảm ứng và trackpad chạy sẵn, không cần mã. */
+  overscroll-behavior-x: contain;
+}
+
+.lib-doc[data-che-do-doc="lat"] .lib-doc-chu {
+  height: 100%;
+  max-width: none;
+  column-width: var(--doc-cot);
+  /* Khai bằng px-tương-đương cố định (không `normal`) để thuvien.ts đọc được
+     khe cột qua getComputedStyle và tính bước cuộn chính xác. */
+  column-gap: var(--doc-cot-khe);
+  column-fill: auto;
+}
+
+/* Ảnh và khung nhúng không được vắt qua ranh giới cột. */
+.lib-doc[data-che-do-doc="lat"] .lib-doc-chu img,
+.lib-doc[data-che-do-doc="lat"] .lib-doc-chu .lib-yt,
+.lib-doc[data-che-do-doc="lat"] .lib-doc-chu blockquote {
+  break-inside: avoid;
+}
+
+.lib-doc-trang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+}
+
+.lib-trang-truoc,
+.lib-trang-sau {
+  min-width: var(--lib-cham);
+  font-size: var(--co-lg);
+  line-height: 1;
+}
+
+.lib-trang-truoc:disabled,
+.lib-trang-sau:disabled { opacity: 1; color: var(--chu-nhat); cursor: default; }
+
+.lib-trang-so {
+  font-size: var(--co-sm);
+  font-variant-numeric: tabular-nums;
+  color: var(--chu-mem);
+}
+
+/* ── Nền đọc «ngà» ───────────────────────────────────────────────────────
+   data-nen đặt ở cấp .lib-doc (CẢ khung, kể cả nút) — nếu chỉ nhuộm khối chữ
+   thì các nút quanh nó giữ nền sáng và tạo một vành chói quanh trang tối. */
+.lib-doc[data-nen="nga"] {
+  background: var(--doc-nga-nen);
+  color: var(--doc-nga-chu);
+}
+.lib-doc[data-nen="nga"] .lib-doc-meta,
+.lib-doc[data-nen="nga"] .lib-phu,
+.lib-doc[data-nen="nga"] .lib-hang-tinh-nhan,
+.lib-doc[data-nen="nga"] .lib-trang-so,
+.lib-doc[data-nen="nga"] .lib-tc-nhom legend { color: var(--doc-nga-mo); }
+.lib-doc[data-nen="nga"] .lib-tho { border-left-color: var(--doc-nga-vien); }
+.lib-doc[data-nen="nga"] .lib-tc-than,
+.lib-doc[data-nen="nga"] .lib-ban-do-anh { border-color: var(--doc-nga-vien); }
+.lib-doc[data-nen="nga"] .lib-doc-ve,
+.lib-doc[data-nen="nga"] .lib-mode-btn,
+.lib-doc[data-nen="nga"] .lib-tc > summary,
+.lib-doc[data-nen="nga"] .lib-tc-btn,
+.lib-doc[data-nen="nga"] .lib-tp-tinh,
+.lib-doc[data-nen="nga"] .lib-trang-truoc,
+.lib-doc[data-nen="nga"] .lib-trang-sau {
+  background: var(--doc-nga-nut);
+  border-color: var(--doc-nga-vien);
+  color: var(--doc-nga-chu);
+}
+.lib-doc[data-nen="nga"] .lib-doc-ve:hover,
+.lib-doc[data-nen="nga"] .lib-mode-btn:hover,
+.lib-doc[data-nen="nga"] .lib-tc > summary:hover,
+.lib-doc[data-nen="nga"] .lib-tc-btn:hover,
+.lib-doc[data-nen="nga"] .lib-tp-tinh:hover,
+.lib-doc[data-nen="nga"] .lib-trang-truoc:hover:not(:disabled),
+.lib-doc[data-nen="nga"] .lib-trang-sau:hover:not(:disabled) {
+  background: var(--doc-nga-chon-nen);
+  color: var(--doc-nga-chon-chu);
+}
+.lib-doc[data-nen="nga"] .lib-mode-chon,
+.lib-doc[data-nen="nga"] .lib-tc-chon {
+  background: var(--doc-nga-chon-nen);
+  border-color: var(--doc-nga-chon-nen);
+  color: var(--doc-nga-chon-chu);
+}
+.lib-doc[data-nen="nga"] .lib-trang-truoc:disabled,
+.lib-doc[data-nen="nga"] .lib-trang-sau:disabled { color: var(--doc-nga-tat); }
+.lib-doc[data-nen="nga"] :focus-visible { outline-color: var(--doc-nga-focus); }
+
+/* ── Nền đọc «tối» — cục bộ trong khung đọc, KHÔNG phải dark-mode toàn site ── */
+.lib-doc[data-nen="toi"] {
+  background: var(--doc-toi-nen);
+  color: var(--doc-toi-chu);
+}
+.lib-doc[data-nen="toi"] .lib-doc-meta,
+.lib-doc[data-nen="toi"] .lib-phu,
+.lib-doc[data-nen="toi"] .lib-hang-tinh-nhan,
+.lib-doc[data-nen="toi"] .lib-trang-so,
+.lib-doc[data-nen="toi"] .lib-tc-nhom legend { color: var(--doc-toi-mo); }
+.lib-doc[data-nen="toi"] .lib-tho { border-left-color: var(--doc-toi-vien); }
+.lib-doc[data-nen="toi"] .lib-tc-than,
+.lib-doc[data-nen="toi"] .lib-ban-do-anh { border-color: var(--doc-toi-vien); }
+.lib-doc[data-nen="toi"] .lib-doc-ve,
+.lib-doc[data-nen="toi"] .lib-mode-btn,
+.lib-doc[data-nen="toi"] .lib-tc > summary,
+.lib-doc[data-nen="toi"] .lib-tc-btn,
+.lib-doc[data-nen="toi"] .lib-tp-tinh,
+.lib-doc[data-nen="toi"] .lib-trang-truoc,
+.lib-doc[data-nen="toi"] .lib-trang-sau {
+  background: var(--doc-toi-nut);
+  border-color: var(--doc-toi-vien);
+  color: var(--doc-toi-chu);
+}
+.lib-doc[data-nen="toi"] .lib-doc-ve:hover,
+.lib-doc[data-nen="toi"] .lib-mode-btn:hover,
+.lib-doc[data-nen="toi"] .lib-tc > summary:hover,
+.lib-doc[data-nen="toi"] .lib-tc-btn:hover,
+.lib-doc[data-nen="toi"] .lib-tp-tinh:hover,
+.lib-doc[data-nen="toi"] .lib-trang-truoc:hover:not(:disabled),
+.lib-doc[data-nen="toi"] .lib-trang-sau:hover:not(:disabled) {
+  background: var(--doc-toi-chon-nen);
+  color: var(--doc-toi-chon-chu);
+}
+.lib-doc[data-nen="toi"] .lib-mode-chon,
+.lib-doc[data-nen="toi"] .lib-tc-chon {
+  background: var(--doc-toi-chon-nen);
+  border-color: var(--doc-toi-chon-nen);
+  color: var(--doc-toi-chon-chu);
+}
+.lib-doc[data-nen="toi"] .lib-trang-truoc:disabled,
+.lib-doc[data-nen="toi"] .lib-trang-sau:disabled { color: var(--doc-toi-tat); }
+.lib-doc[data-nen="toi"] :focus-visible { outline-color: var(--doc-toi-focus); }
+/* Cảnh báo bản quyền/tồn nghi trên nền tối: cặp --luu-nen/--luu-chu là màu
+   cho nền SÁNG, đặt nguyên lên nền tối sẽ thành một mảng vàng chói. */
+.lib-doc[data-nen="toi"] .lib-canh-bao,
+.lib-doc[data-nen="toi"] .lib-ban-quyen {
+  background: var(--doc-toi-nut);
+  border-color: var(--doc-toi-chon-nen);
+  color: var(--doc-toi-chu); /* 11,65:1 trên #2c2925 */
+}
+
+/* ═══ Công cụ tra cứu niên hiệu ═══════════════════════════════════════════ */
+
+.lib-cong-cu h3 { margin: 0 0 var(--s-1); font-size: var(--co-lg); }
+.lib-nh-box { display: grid; gap: var(--s-2); margin-top: var(--s-2); }
+.lib-nh-box label { font-size: var(--co-sm); color: var(--chu-mem); }
+.lib-nh-hang { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+
+.lib-nh-hang input {
+  min-height: var(--lib-cham);
+  width: 9rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-nho);
+  background: var(--mat);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-md);
+}
+
+.lib-bang { width: 100%; border-collapse: collapse; font-size: var(--co-sm); }
+.lib-bang th,
+.lib-bang td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--vien);
+  text-align: left;
+  vertical-align: top;
+}
+.lib-bang th { white-space: nowrap; color: var(--chu-mem); }
+
+/* ═══ Khối văn thơ trong TRANG TỈNH ═══════════════════════════════════════ */
+
+.lib-tinh-ds { display: grid; gap: var(--s-4); }
+.lib-tinh-muc { padding-bottom: var(--s-3); border-bottom: 1px solid var(--vien); }
+.lib-tinh-muc:last-child { border-bottom: none; }
+.lib-tinh-muc h4 { margin-bottom: 0.2rem; font-size: var(--co-md); }
+.lib-tinh-muc > * + * { margin-top: 0.6rem; }
