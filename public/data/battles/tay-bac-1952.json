@@ -1,0 +1,143 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Tây Bắc 1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json — bám sát mo_ta đã duyệt. trang_thai=draft chờ soát §9.",
+  "id": "tay-bac-1952",
+  "ten": "Chiến dịch Tây Bắc 1952",
+  "nam": 1952,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đại đoàn 308 (Bộ Tổng chỉ huy)",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Nghĩa Lộ (nay Lào Cai) và vùng Tây Bắc (Sơn La, Lai Châu)",
+  "lien_quan_tinh": [
+    "lao-cai",
+    "son-la"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          50,
+          50
+        ],
+        [
+          500,
+          20
+        ],
+        [
+          950,
+          60
+        ]
+      ],
+      "nhan": "Vùng núi Tây Bắc"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-mo-man-tb",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 500,
+      "nhan": "Mở chiến dịch tiến công Tây Bắc"
+    },
+    {
+      "id": "cu-diem-nghia-lo",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 400,
+      "y": 350,
+      "nhan": "Cứ điểm Nghĩa Lộ"
+    },
+    {
+      "id": "quan-ta-dai-doan-308",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Đại đoàn 308 tiến công"
+    },
+    {
+      "id": "mui-truy-kich-tb",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        460,
+        300
+      ],
+      "den": [
+        650,
+        250
+      ],
+      "nhan": "Truy kích, mở rộng vùng giải phóng"
+    },
+    {
+      "id": "dia-danh-son-la",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 200,
+      "nhan": "Sơn La, Lai Châu"
+    },
+    {
+      "id": "co-thang-tb",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 750,
+      "y": 150,
+      "nhan": "Giải phóng phần lớn Tây Bắc"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở chiến dịch tiến công Tây Bắc (14/10/1952)",
+      "mo_ta": "Quân đội ta mở chiến dịch tiến công nhằm giải phóng vùng Tây Bắc còn bị Pháp chiếm đóng.",
+      "hien": [
+        "co-ta-mo-man-tb"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đợt 1: tiêu diệt cứ điểm Nghĩa Lộ",
+      "mo_ta": "Đại đoàn 308 tiến công tiêu diệt cứ điểm Nghĩa Lộ, mở toang tuyến phòng thủ của Pháp.",
+      "hien": [
+        "cu-diem-nghia-lo",
+        "quan-ta-dai-doan-308"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Truy kích, mở rộng vùng giải phóng",
+      "mo_ta": "Quân ta truy kích quân Pháp rút chạy, tiếp tục mở rộng vùng giải phóng qua các đợt tiếp theo.",
+      "hien": [
+        "cu-diem-nghia-lo",
+        "mui-truy-kich-tb"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Giải phóng phần lớn khu Tây Bắc",
+      "mo_ta": "Sau 3 đợt tiến công, quân ta giải phóng phần lớn khu Tây Bắc (Sơn La, Lai Châu).",
+      "hien": [
+        "dia-danh-son-la",
+        "mui-truy-kich-tb"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Bước trưởng thành về nghệ thuật chiến dịch",
+      "mo_ta": "Chiến dịch Tây Bắc đánh dấu bước trưởng thành vượt bậc về nghệ thuật chiến dịch của quân đội ta, chuẩn bị cho các chiến dịch lớn hơn.",
+      "hien": [
+        "co-thang-tb"
+      ]
+    }
+  ],
+  "ket_qua": "Sau 3 đợt tiến công, quân ta giải phóng phần lớn khu Tây Bắc, đánh dấu bước trưởng thành vượt bậc về nghệ thuật chiến dịch.",
+  "y_nghia": "Mở rộng vùng giải phóng, tạo bàn đạp chiến lược quan trọng hướng tới chiến dịch Điện Biên Phủ hai năm sau.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến thắng Tây Bắc năm 1952",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

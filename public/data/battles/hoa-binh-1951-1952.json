@@ -1,0 +1,182 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Hòa Bình 1951–1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json — bám sát mo_ta đã duyệt. trang_thai=draft chờ soát §9.",
+  "id": "hoa-binh-1951-1952",
+  "ten": "Chiến dịch Hòa Bình 1951–1952",
+  "nam": 1951,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tổng chỉ huy (Võ Nguyên Giáp)",
+  "doi_thu": "Quân đội Pháp (Kế hoạch Đờ Lát đờ Tátxinhi)",
+  "dia_diem": "Thị xã Hòa Bình và vùng sông Đà (nay tỉnh Phú Thọ)",
+  "lien_quan_tinh": [
+    "phu-tho"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Đà"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          500,
+          400
+        ],
+        [
+          900,
+          380
+        ]
+      ],
+      "nhan": "Đường số 6"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-chiem-dong-hb",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 250,
+      "nhan": "Pháp chiếm đóng Hòa Bình"
+    },
+    {
+      "id": "quan-ta-phan-cong-hb",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 350,
+      "nhan": "Quân ta mở chiến dịch phản công"
+    },
+    {
+      "id": "cu-diem-tu-vu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 600,
+      "y": 300,
+      "nhan": "Cứ điểm Tu Vũ"
+    },
+    {
+      "id": "mui-cong-tu-vu",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        340
+      ],
+      "den": [
+        570,
+        310
+      ],
+      "nhan": "Đợt 1: tiến công Tu Vũ"
+    },
+    {
+      "id": "mui-phuc-kich-duong6",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        420
+      ],
+      "den": [
+        600,
+        400
+      ],
+      "nhan": "Đợt 2: phục kích đường số 6"
+    },
+    {
+      "id": "co-tong-phan-cong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 200,
+      "nhan": "Đợt 3: tổng phản công"
+    },
+    {
+      "id": "co-thang-hb",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 150,
+      "nhan": "Pháp rút khỏi Hòa Bình"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Pháp chiếm đóng Hòa Bình",
+      "mo_ta": "Cuối 1951, Pháp đưa quân chiếm đóng thị xã Hòa Bình và vùng sông Đà, nhằm cắt đường liên lạc Việt Bắc – Liên khu 3, 4.",
+      "hien": [
+        "quan-dich-chiem-dong-hb"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Ta mở chiến dịch phản công (10/12/1951)",
+      "mo_ta": "Quân ta mở chiến dịch phản công nhằm phá kế hoạch chiếm đóng, buộc Pháp phân tán lực lượng.",
+      "hien": [
+        "quan-dich-chiem-dong-hb",
+        "quan-ta-phan-cong-hb"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đợt 1: tiến công Tu Vũ",
+      "mo_ta": "Quân ta tiến công cụm cứ điểm Tu Vũ, mở màn chiến dịch.",
+      "hien": [
+        "cu-diem-tu-vu",
+        "mui-cong-tu-vu"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đợt 2: đánh trên đường 6",
+      "mo_ta": "Quân ta tổ chức phục kích, cắt đứt và gây thiệt hại nặng cho các đoàn tiếp viện trên đường 6.",
+      "hien": [
+        "mui-phuc-kich-duong6"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đợt 3: tổng phản công",
+      "mo_ta": "Quân ta tổng phản công trên toàn mặt trận, loại khỏi vòng chiến khoảng 22.000 quân địch.",
+      "hien": [
+        "co-tong-phan-cong"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Pháp buộc rút khỏi Hòa Bình (23/2/1952)",
+      "mo_ta": "Pháp buộc phải rút khỏi Hòa Bình, đánh dấu thất bại của Kế hoạch Đờ Lát đờ Tátxinhi.",
+      "hien": [
+        "co-thang-hb"
+      ]
+    }
+  ],
+  "ket_qua": "Loại khỏi vòng chiến khoảng 22.000 quân địch qua 3 đợt tiến công, buộc Pháp rút khỏi Hòa Bình ngày 23/2/1952.",
+  "y_nghia": "Đánh dấu thất bại của Kế hoạch Đờ Lát đờ Tátxinhi, giữ vững tuyến liên lạc giữa Việt Bắc và các liên khu.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn) — Chiến dịch Hòa Bình",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

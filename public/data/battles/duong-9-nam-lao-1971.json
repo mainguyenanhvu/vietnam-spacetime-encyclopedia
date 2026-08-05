@@ -1,0 +1,151 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch phản công Đường 9 – Nam Lào 1971 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "id": "duong-9-nam-lao-1971",
+  "ten": "Chiến dịch phản công Đường 9 – Nam Lào 1971",
+  "nam": 1971,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Chiến dịch",
+  "doi_thu": "Quân đội Sài Gòn (được Mỹ yểm trợ hỏa lực, không quân)",
+  "dia_diem": "Khu vực Đường 9, Hướng Hóa, Quảng Trị (giáp biên giới Lào)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          500,
+          320
+        ],
+        [
+          900,
+          300
+        ]
+      ],
+      "nhan": "Đường 9"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-lam-son-719",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 250,
+      "nhan": "Quân Sài Gòn mở hành quân Lam Sơn 719"
+    },
+    {
+      "id": "duong-mon-hcm",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 250,
+      "nhan": "Đường mòn Hồ Chí Minh"
+    },
+    {
+      "id": "quan-ta-chan-danh-d9",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 400,
+      "nhan": "Quân ta chặn đánh"
+    },
+    {
+      "id": "mui-be-gay-canh-quan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        530,
+        360
+      ],
+      "den": [
+        350,
+        300
+      ],
+      "nhan": "Bẻ gãy các cánh quân"
+    },
+    {
+      "id": "quan-dich-bo-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 250,
+      "y": 200,
+      "nhan": "Địch bỏ xe pháo tháo chạy"
+    },
+    {
+      "id": "co-thang-d9",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 450,
+      "nhan": "Đánh bại hoàn toàn Lam Sơn 719"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mỹ - quân Sài Gòn mở hành quân Lam Sơn 719 (30/1/1971)",
+      "mo_ta": "Được Mỹ yểm trợ hỏa lực và không quân, quân đội Sài Gòn mở cuộc hành quân Lam Sơn 719 đánh ra Đường 9 – Nam Lào.",
+      "hien": [
+        "quan-dich-lam-son-719"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Mục tiêu cắt đường mòn Hồ Chí Minh",
+      "mo_ta": "Mục tiêu của cuộc hành quân là cắt đứt tuyến chi viện chiến lược đường mòn Hồ Chí Minh.",
+      "hien": [
+        "quan-dich-lam-son-719",
+        "duong-mon-hcm"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đợt 1: quân ta chặn đánh các mũi tiến",
+      "mo_ta": "Quân ta tổ chức chặn đánh quyết liệt các mũi tiến công ngay từ đầu chiến dịch.",
+      "hien": [
+        "quan-ta-chan-danh-d9",
+        "quan-dich-lam-son-719"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đợt 2: bẻ gãy các cánh quân",
+      "mo_ta": "Quân ta tiếp tục phản công, bẻ gãy các cánh quân của đối phương.",
+      "hien": [
+        "quan-ta-chan-danh-d9",
+        "mui-be-gay-canh-quan"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đợt 3: tổng phản công, địch bỏ chạy",
+      "mo_ta": "Quân ta tổng phản công, buộc địch phải bỏ lại xe pháo tháo chạy.",
+      "hien": [
+        "quan-dich-bo-chay",
+        "mui-be-gay-canh-quan"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đánh bại hoàn toàn cuộc hành quân",
+      "mo_ta": "Chiến dịch đánh bại hoàn toàn cuộc hành quân Lam Sơn 719, làm phá sản một bước cơ bản chiến lược 'Việt Nam hoá chiến tranh'.",
+      "hien": [
+        "co-thang-d9"
+      ]
+    }
+  ],
+  "ket_qua": "Bẻ gãy các cánh quân, buộc địch bỏ xe pháo tháo chạy — đánh bại hoàn toàn cuộc hành quân Lam Sơn 719.",
+  "y_nghia": "Làm phá sản một bước cơ bản chiến lược 'Việt Nam hoá chiến tranh' của Mỹ, bảo vệ vững chắc tuyến chi viện chiến lược đường mòn Hồ Chí Minh.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến thắng Đường 9 - Nam Lào 1971",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

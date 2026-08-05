@@ -1,0 +1,159 @@
+{
+  "ghi_chu": "Sa đồ trận Ấp Bắc 1963 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-ap-bac-1963",
+  "ten": "Trận Ấp Bắc",
+  "nam": 1963,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ đội địa phương Mỹ Tho",
+  "doi_thu": "Quân đội Sài Gòn (có cố vấn Mỹ, trực thăng, xe M113)",
+  "dia_diem": "Ấp Bắc, Tân Phú, Cai Lậy (nay tỉnh Đồng Tháp)",
+  "lien_quan_tinh": [
+    "dong-thap"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          1000,
+          370
+        ]
+      ],
+      "nhan": "Vùng kênh rạch Ấp Bắc"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-can-quet-ab",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Quân đội Sài Gòn mở cuộc càn"
+    },
+    {
+      "id": "truc-thang-dich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 150,
+      "nhan": "Trực thăng đổ quân"
+    },
+    {
+      "id": "quan-ta-tran-dia-ab",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 380,
+      "nhan": "Trận địa LLVT địa phương Mỹ Tho"
+    },
+    {
+      "id": "mui-ban-ha-truc-thang",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        460,
+        320
+      ],
+      "den": [
+        580,
+        180
+      ],
+      "nhan": "Bắn hạ trực thăng"
+    },
+    {
+      "id": "xe-m113",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 350,
+      "nhan": "Xe thiết giáp M113"
+    },
+    {
+      "id": "mui-danh-bat-m113",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        480,
+        420
+      ],
+      "den": [
+        700,
+        360
+      ],
+      "nhan": "Đánh bật xe M113"
+    },
+    {
+      "id": "co-thang-ab",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 450,
+      "nhan": "Đánh bại 'trực thăng vận, thiết xa vận'"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân đội Sài Gòn mở cuộc càn có Mỹ yểm trợ",
+      "mo_ta": "Ngày 2/1/1963, quân đội Sài Gòn mở cuộc càn quét vào Ấp Bắc, có trực thăng, xe thiết giáp M113 và cố vấn Mỹ yểm trợ.",
+      "hien": [
+        "quan-dich-can-quet-ab",
+        "truc-thang-dich"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "LLVT địa phương bố trí trận địa đón đánh",
+      "mo_ta": "Lực lượng vũ trang địa phương Mỹ Tho cùng nhân dân đã bố trí công sự, trận địa đón đánh từ trước.",
+      "hien": [
+        "quan-ta-tran-dia-ab"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bắn hạ trực thăng đổ quân",
+      "mo_ta": "Quân ta tập trung hỏa lực bắn hạ nhiều trực thăng khi đối phương đổ quân.",
+      "hien": [
+        "quan-ta-tran-dia-ab",
+        "truc-thang-dich",
+        "mui-ban-ha-truc-thang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh bật xe thiết giáp M113",
+      "mo_ta": "Quân ta đánh bật các đợt tiến công của xe thiết giáp M113, gây thiệt hại nặng cho đối phương.",
+      "hien": [
+        "quan-ta-tran-dia-ab",
+        "xe-m113",
+        "mui-danh-bat-m113"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đánh bại chiến thuật 'trực thăng vận, thiết xa vận'",
+      "mo_ta": "Chiến thắng Ấp Bắc đánh bại hai chiến thuật chủ lực của Mỹ, mở đầu phá sản chiến lược 'chiến tranh đặc biệt'.",
+      "hien": [
+        "co-thang-ab"
+      ]
+    }
+  ],
+  "ket_qua": "Đánh bại chiến thuật 'trực thăng vận, thiết xa vận', mở đầu phá sản chiến lược 'chiến tranh đặc biệt' của Mỹ.",
+  "y_nghia": "Chiến thắng đầu tiên của lực lượng vũ trang cách mạng trước vũ khí, phương tiện hiện đại do Mỹ trang bị, cổ vũ phong trào 'thi đua Ấp Bắc, giết giặc lập công'.",
+  "trang_thai": "draft",
+  "nguon": [
+    "qdnd.vn — Chiến thắng Ấp Bắc",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "baotanglichsu.vn — Chiến thắng Ấp Bắc 2-1-1963"
+  ]
+}

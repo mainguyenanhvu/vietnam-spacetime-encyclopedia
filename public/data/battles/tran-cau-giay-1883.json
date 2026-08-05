@@ -1,0 +1,145 @@
+{
+  "ghi_chu": "Sa đồ trận Cầu Giấy lần 2 (1883) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-cau-giay-1883",
+  "ten": "Trận Cầu Giấy (lần 2)",
+  "nam": 1883,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lưu Vĩnh Phúc (Cờ Đen)",
+  "doi_thu": "Pháp (Henri Rivière)",
+  "dia_diem": "Cầu Giấy, Hà Nội",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          650,
+          250
+        ],
+        [
+          450,
+          320
+        ],
+        [
+          300,
+          380
+        ]
+      ],
+      "nhan": "Đường Rivière ra Cầu Giấy"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-ha-noi-2",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 230,
+      "nhan": "Thành Hà Nội (Rivière chiếm giữ)"
+    },
+    {
+      "id": "quan-ta-co-den-2",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 420,
+      "nhan": "Lưu Vĩnh Phúc — quân Cờ Đen"
+    },
+    {
+      "id": "dia-diem-cau-giay-2",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 400,
+      "nhan": "Cầu Giấy"
+    },
+    {
+      "id": "quan-dich-riviere",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 300,
+      "nhan": "Rivière đem quân ứng cứu"
+    },
+    {
+      "id": "mui-phuc-kich-2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        450
+      ],
+      "den": [
+        540,
+        310
+      ],
+      "nhan": "Đánh úp bất ngờ"
+    },
+    {
+      "id": "co-thang-2",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 460,
+      "nhan": "Rivière tử trận"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Rivière đánh chiếm thành Hà Nội lần 2",
+      "mo_ta": "Đầu 1882-1883, Henri Rivière đem quân Pháp tái chiếm thành Hà Nội, mở rộng đánh chiếm Bắc Kỳ lần thứ hai.",
+      "hien": [
+        "thanh-ha-noi-2"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân Cờ Đen phối hợp phục kích",
+      "mo_ta": "Lưu Vĩnh Phúc chỉ huy quân Cờ Đen phối hợp quan quân triều đình bố trí trận địa phục kích tại khu vực Cầu Giấy.",
+      "hien": [
+        "thanh-ha-noi-2",
+        "quan-ta-co-den-2"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Rivière đem quân ra ứng cứu đồn",
+      "mo_ta": "Ngày 19/5/1883, trước tin đồn bị vây, Rivière đem quân ra khỏi thành ứng cứu, lọt vào ổ phục kích.",
+      "hien": [
+        "dia-diem-cau-giay-2",
+        "quan-dich-riviere",
+        "thanh-ha-noi-2"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân Cờ Đen đánh úp",
+      "mo_ta": "Quân Cờ Đen bất ngờ đánh úp, giao chiến ác liệt tại Cầu Giấy.",
+      "hien": [
+        "dia-diem-cau-giay-2",
+        "quan-dich-riviere",
+        "mui-phuc-kich-2"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Rivière tử trận",
+      "mo_ta": "Rivière bị giết tại trận; Pháp lấy cớ đẩy mạnh xâm lược, buộc triều đình ký Hòa ước Harmand 1883.",
+      "hien": [
+        "dia-diem-cau-giay-2",
+        "co-thang-2"
+      ]
+    }
+  ],
+  "ket_qua": "Rivière tử trận; Pháp lấy cớ đẩy mạnh xâm lược, buộc triều đình ký Hòa ước Harmand 1883.",
+  "y_nghia": "Lặp lại chiến công Cầu Giấy 1873, tiếp tục chứng minh sức mạnh của quân Cờ Đen phối hợp triều đình, dù không ngăn được Pháp tiến tới áp đặt bảo hộ toàn Bắc Kỳ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "baotanglichsu.vn — Phát hiện bia mộ một sĩ quan Pháp chết năm 1883"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "ghi_chu": "Sa đồ sự kiện Gạc Ma 14/3/1988 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nội dung bám sát NGUYÊN VĂN mo_ta đã duyệt trong chien-dich-tran-danh.json, không suy diễn thêm diễn biến chiến thuật ngoài nguồn (không có tên chỉ huy cụ thể, không có mô tả đội hình tàu Trung Quốc). Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "id": "gac-ma-1988",
+  "ten": "Sự kiện Gạc Ma ngày 14/3/1988",
+  "nam": 1988,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ đội Hải quân nhân dân Việt Nam",
+  "doi_thu": "Hải quân Trung Quốc",
+  "dia_diem": "Đá Gạc Ma, Cô Lin, Len Đao — quần đảo Trường Sa, tỉnh Khánh Hòa",
+  "lien_quan_tinh": [
+    "khanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Vùng biển đá Gạc Ma – Cô Lin – Len Đao"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-xay-dung-gm",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Bộ đội Hải quân làm nhiệm vụ xây dựng, bảo vệ chủ quyền"
+    },
+    {
+      "id": "tau-hq604",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Tàu HQ-604"
+    },
+    {
+      "id": "tau-dich-tq",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Tàu chiến Trung Quốc"
+    },
+    {
+      "id": "mui-dich-tien-cong-gm",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        630,
+        250
+      ],
+      "den": [
+        420,
+        330
+      ],
+      "nhan": "Bất ngờ tiến công"
+    },
+    {
+      "id": "co-quyet-tu",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 300,
+      "nhan": "Kiên cường bảo vệ lá cờ Tổ quốc"
+    },
+    {
+      "id": "tau-hq604-chim",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 350,
+      "y": 450,
+      "nhan": "Tàu HQ-604 bị bắn chìm"
+    },
+    {
+      "id": "co-tuong-niem-gm",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 450,
+      "nhan": "Biểu tượng ý chí quyết tử bảo vệ chủ quyền"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bộ đội Hải quân làm nhiệm vụ xây dựng, bảo vệ chủ quyền",
+      "mo_ta": "Bộ đội Hải quân nhân dân Việt Nam đang làm nhiệm vụ xây dựng, bảo vệ chủ quyền tại khu vực đá Gạc Ma – Cô Lin – Len Đao.",
+      "hien": [
+        "quan-ta-xay-dung-gm",
+        "tau-hq604"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tàu chiến Trung Quốc bất ngờ tiến công (14/3/1988)",
+      "mo_ta": "Tàu chiến Trung Quốc bất ngờ tiến công lực lượng ta đang làm nhiệm vụ trên đá Gạc Ma.",
+      "hien": [
+        "tau-dich-tq",
+        "mui-dich-tien-cong-gm",
+        "quan-ta-xay-dung-gm"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiến sĩ chỉ có cuốc, xẻng và vũ khí thô sơ vẫn kiên cường bảo vệ cờ Tổ quốc",
+      "mo_ta": "Trước hỏa lực áp đảo, các chiến sĩ ta chỉ có cuốc, xẻng và vũ khí thô sơ nhưng vẫn kiên cường đứng vững bảo vệ lá cờ Tổ quốc trên đảo.",
+      "hien": [
+        "quan-ta-xay-dung-gm",
+        "co-quyet-tu"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tàu HQ-604 bị bắn chìm, 64 cán bộ chiến sĩ hy sinh",
+      "mo_ta": "Tàu HQ-604 bị bắn chìm; 64 cán bộ, chiến sĩ đã anh dũng hy sinh trong trận chiến không cân sức.",
+      "hien": [
+        "tau-hq604-chim",
+        "co-quyet-tu"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Biểu tượng ý chí quyết tử bảo vệ chủ quyền biển đảo",
+      "mo_ta": "Sự kiện Gạc Ma được ghi nhớ như biểu tượng ý chí quyết tử bảo vệ chủ quyền biển đảo của Tổ quốc.",
+      "hien": [
+        "co-tuong-niem-gm"
+      ]
+    }
+  ],
+  "ket_qua": "Tàu HQ-604 bị bắn chìm, 64 cán bộ, chiến sĩ hy sinh; các chiến sĩ chỉ có cuốc, xẻng và vũ khí thô sơ nhưng vẫn kiên cường bảo vệ lá cờ Tổ quốc.",
+  "y_nghia": "Biểu tượng ý chí quyết tử bảo vệ chủ quyền biển đảo của Tổ quốc, khắc sâu trong ký ức dân tộc về sự hy sinh của những người lính giữ đảo.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Hải quân Việt Nam (baohaiquanvietnam.vn) — 38 năm vang vọng lời thề giữ đảo",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

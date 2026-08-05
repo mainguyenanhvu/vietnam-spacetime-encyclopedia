@@ -1,0 +1,161 @@
+{
+  "ghi_chu": "Sa đồ Tổng tiến công Mậu Thân tại Huế 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "mau-than-hue-1968",
+  "ten": "Tổng tiến công Mậu Thân tại Huế",
+  "nam": 1968,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Mặt trận Trị Thiên–Huế",
+  "doi_thu": "Quân đội Sài Gòn và Mỹ",
+  "dia_diem": "Thành phố Huế",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          200,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          800,
+          370
+        ]
+      ],
+      "nhan": "Sông Hương"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-tong-tien-cong-hue",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Quân giải phóng tổng tiến công"
+    },
+    {
+      "id": "kinh-thanh-hue-mt",
+      "kieu": "thanh",
+      "x": 500,
+      "y": 300,
+      "nhan": "Kinh thành Huế"
+    },
+    {
+      "id": "ky-dai-ngo-mon",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 260,
+      "nhan": "Cờ giải phóng trên Kỳ đài Ngọ Môn"
+    },
+    {
+      "id": "quan-ta-lam-chu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 420,
+      "y": 350,
+      "nhan": "Làm chủ phần lớn thành phố"
+    },
+    {
+      "id": "quan-dich-phan-cong-hue",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 200,
+      "nhan": "Mỹ – quân Sài Gòn phản công"
+    },
+    {
+      "id": "mui-dich-tai-chiem",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        700,
+        270
+      ],
+      "den": [
+        560,
+        280
+      ],
+      "nhan": "Phản công tái chiếm"
+    },
+    {
+      "id": "co-chan-dong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 250,
+      "nhan": "Chấn động chính trị tại Mỹ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tổng tiến công đồng loạt đêm Giao thừa (30/1/1968)",
+      "mo_ta": "Đêm 30/1/1968 (đêm Giao thừa Tết Mậu Thân), quân giải phóng đồng loạt tiến công vào thành phố Huế.",
+      "hien": [
+        "quan-ta-tong-tien-cong-hue",
+        "kinh-thanh-hue-mt"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đánh chiếm các mục tiêu trọng yếu",
+      "mo_ta": "Quân ta nhanh chóng đánh chiếm các mục tiêu trọng yếu trong thành phố.",
+      "hien": [
+        "quan-ta-tong-tien-cong-hue",
+        "kinh-thanh-hue-mt"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Cắm cờ trên Kỳ đài Ngọ Môn",
+      "mo_ta": "Quân giải phóng cắm cờ trên Kỳ đài Ngọ Môn, làm chủ phần lớn thành phố Huế.",
+      "hien": [
+        "kinh-thanh-hue-mt",
+        "ky-dai-ngo-mon"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Làm chủ thành phố 25 ngày đêm",
+      "mo_ta": "Quân ta kiên cường giữ vững và làm chủ phần lớn Huế suốt 25 ngày đêm liên tục.",
+      "hien": [
+        "quan-ta-lam-chu",
+        "kinh-thanh-hue-mt"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mỹ - quân Sài Gòn phản công tái chiếm",
+      "mo_ta": "Mỹ và quân đội Sài Gòn dồn lực lượng phản công quyết liệt hòng tái chiếm thành phố.",
+      "hien": [
+        "quan-dich-phan-cong-hue",
+        "mui-dich-tai-chiem",
+        "kinh-thanh-hue-mt"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Gây chấn động chính trị tại Mỹ",
+      "mo_ta": "Trận đánh gây chấn động chính trị tại Mỹ, góp phần quan trọng buộc Mỹ xuống thang chiến tranh, ngồi vào bàn đàm phán Paris.",
+      "hien": [
+        "co-chan-dong"
+      ]
+    }
+  ],
+  "ket_qua": "Quân giải phóng làm chủ phần lớn Huế 25 ngày đêm, gây chấn động chính trị tại Mỹ, góp phần buộc Mỹ xuống thang chiến tranh.",
+  "y_nghia": "Một trong những trận đánh biểu tượng của Tổng tiến công và nổi dậy Xuân Mậu Thân 1968, tác động sâu sắc tới dư luận và chính trường Mỹ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "qdnd.vn — Đòn tiến công chiến lược Xuân Mậu Thân 1968 ở Huế",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

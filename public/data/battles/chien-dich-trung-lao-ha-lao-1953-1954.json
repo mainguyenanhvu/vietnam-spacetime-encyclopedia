@@ -1,0 +1,185 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Trung Lào – Hạ Lào (Đông Xuân 1953–1954) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Toàn bộ địa bàn tác chiến nằm trên đất Lào (Khăm Muộn, Attapư) — không gắn tỉnh Việt Nam cụ thể để tránh suy diễn điểm xuất phát. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-trung-lao-ha-lao-1953-1954",
+  "ten": "Chiến dịch Trung Lào – Hạ Lào (Đông Xuân 1953 – 1954)",
+  "nam": 1953,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Liên khu 4 (liên quân Việt – Lào)",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Khăm Muộn – Thà Khẹt (Trung Lào) và Attapư (Hạ Lào)",
+  "lien_quan_tinh": [],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          750,
+          300
+        ],
+        [
+          800,
+          550
+        ]
+      ],
+      "nhan": "Sông Mê Kông"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          400,
+          320
+        ],
+        [
+          650,
+          300
+        ]
+      ],
+      "nhan": "Đường tiến quân liên quân Việt – Lào"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "don-kham-he",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 350,
+      "y": 280,
+      "nhan": "Đồn Khăm Hè"
+    },
+    {
+      "id": "quan-ta-tieu-doan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 350,
+      "nhan": "Tiểu đoàn 274, 328"
+    },
+    {
+      "id": "vi-tri-mu-giat",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 250,
+      "nhan": "Mụ Giạ, Ba Na Phào"
+    },
+    {
+      "id": "quan-ta-trung-doan-66",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 400,
+      "nhan": "Trung đoàn 66"
+    },
+    {
+      "id": "mui-truy-kich-lao",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        470,
+        360
+      ],
+      "den": [
+        600,
+        290
+      ],
+      "nhan": "Truy kích tiêu diệt tiểu đoàn cơ giới"
+    },
+    {
+      "id": "tha-khet",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 300,
+      "nhan": "Thị xã Thà Khẹt"
+    },
+    {
+      "id": "co-thang-lao",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 230,
+      "nhan": "Giải phóng Thà Khẹt"
+    },
+    {
+      "id": "huong-ha-lao",
+      "kieu": "dia-danh",
+      "x": 850,
+      "y": 400,
+      "nhan": "Hạ Lào – Đông Bắc Campuchia"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở màn tiến công đồn Khăm Hè (21/12/1953)",
+      "mo_ta": "Tiểu đoàn 274, 328 bất ngờ tiến công đồn Khăm Hè, diệt gọn 1 tiểu đoàn Âu – Phi.",
+      "hien": [
+        "don-kham-he",
+        "quan-ta-tieu-doan"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tiến công Mụ Giạ, Ba Na Phào",
+      "mo_ta": "Trung đoàn 66 tiến công các vị trí Mụ Giạ, Ba Na Phào, truy kích tiêu diệt 1 tiểu đoàn cơ giới đang rút chạy.",
+      "hien": [
+        "vi-tri-mu-giat",
+        "quan-ta-trung-doan-66",
+        "mui-truy-kich-lao"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Diệt 3 tiểu đoàn Âu-Phi và 1 tiểu đoàn pháo",
+      "mo_ta": "Trong 3 ngày, liên quân Việt – Lào diệt 3 tiểu đoàn cơ động và 1 tiểu đoàn pháo, khoảng 2.200 quân.",
+      "hien": [
+        "don-kham-he",
+        "vi-tri-mu-giat"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Giải phóng thị xã Thà Khẹt (25/12/1953)",
+      "mo_ta": "Liên quân tiến ra sông Mê Kông, giải phóng hoàn toàn thị xã Thà Khẹt, kiểm soát toàn tỉnh Khăm Muộn.",
+      "hien": [
+        "tha-khet",
+        "co-thang-lao"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở rộng chiến dịch Hạ Lào (1-4/1954)",
+      "mo_ta": "Chiến dịch tiếp tục mở rộng sang Hạ Lào – Đông Bắc Campuchia, mở rộng vùng giải phóng.",
+      "hien": [
+        "huong-ha-lao",
+        "tha-khet"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Phân tán binh lực địch, chia lửa Điện Biên Phủ",
+      "mo_ta": "Chiến dịch buộc Pháp phải điều lực lượng đối phó nhiều hướng, góp phần phân tán binh lực trước chiến dịch Điện Biên Phủ.",
+      "hien": [
+        "co-thang-lao"
+      ]
+    }
+  ],
+  "ket_qua": "Giải phóng thị xã Thà Khẹt và toàn tỉnh Khăm Muộn, mở rộng vùng giải phóng sang Hạ Lào – Đông Bắc Campuchia.",
+  "y_nghia": "Một trong năm mũi tiến công chiến lược của Đông Xuân 1953-1954, góp phần phân tán binh lực Pháp, chia lửa trực tiếp cho chiến dịch Điện Biên Phủ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Hà Tĩnh — Khu 4 - Trung Lào chia lửa với Điện Biên",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Báo Quân đội nhân dân — Các mũi tiến công chiến lược trong chiến cuộc Đông-Xuân 1953-1954"
+  ]
+}

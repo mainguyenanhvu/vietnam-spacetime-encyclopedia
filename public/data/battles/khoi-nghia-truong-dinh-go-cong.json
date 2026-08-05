@@ -1,0 +1,151 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Trương Định 1862–1864 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-truong-dinh-go-cong",
+  "ten": "Khởi nghĩa Trương Định",
+  "nam": 1862,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trương Định",
+  "doi_thu": "Pháp",
+  "dia_diem": "Gò Công (nay tỉnh Đồng Tháp)",
+  "lien_quan_tinh": [
+    "dong-thap"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          1000,
+          370
+        ]
+      ],
+      "nhan": "Vùng sông rạch Gò Công"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "lenh-bai-binh",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 200,
+      "nhan": "Lệnh bãi binh của triều đình"
+    },
+    {
+      "id": "co-ta-khong-tuan-lenh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 350,
+      "y": 250,
+      "nhan": "Trương Định không tuân lệnh"
+    },
+    {
+      "id": "can-cu-go-cong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 400,
+      "nhan": "Căn cứ Gò Công"
+    },
+    {
+      "id": "quan-ta-truong-dinh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 450,
+      "nhan": "Bình Tây Đại nguyên soái Trương Định"
+    },
+    {
+      "id": "don-phap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 700,
+      "y": 350,
+      "nhan": "Đồn Pháp bị tập kích"
+    },
+    {
+      "id": "mui-tap-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        520,
+        440
+      ],
+      "den": [
+        670,
+        360
+      ],
+      "nhan": "Đánh nhiều đồn Pháp"
+    },
+    {
+      "id": "co-tuan-tiet",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 500,
+      "nhan": "Trương Định tuẫn tiết"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Triều đình ký hoà ước, ra lệnh bãi binh",
+      "mo_ta": "Sau Hoà ước Nhâm Tuất 1862, triều đình Huế ra lệnh Trương Định bãi binh, rút quân.",
+      "hien": [
+        "lenh-bai-binh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trương Định không tuân lệnh, ở lại kháng chiến",
+      "mo_ta": "Trước sự thúc giục của nhân dân, Trương Định không tuân lệnh triều đình, quyết ở lại cùng nghĩa quân kháng chiến.",
+      "hien": [
+        "lenh-bai-binh",
+        "co-ta-khong-tuan-lenh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Xây căn cứ Gò Công",
+      "mo_ta": "Nghĩa quân xây dựng căn cứ kháng chiến tại Gò Công, được nhân dân suy tôn Bình Tây Đại nguyên soái.",
+      "hien": [
+        "can-cu-go-cong",
+        "quan-ta-truong-dinh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh nhiều đồn Pháp",
+      "mo_ta": "Nghĩa quân liên tục tập kích, đánh nhiều đồn bốt của quân Pháp trong vùng.",
+      "hien": [
+        "can-cu-go-cong",
+        "don-phap",
+        "mui-tap-kich"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trương Định tuẫn tiết (1864)",
+      "mo_ta": "Bị chỉ điểm, căn cứ bị bao vây; Trương Định tuẫn tiết để giữ khí tiết, kết thúc cuộc kháng chiến kéo dài hơn hai năm.",
+      "hien": [
+        "co-tuan-tiet"
+      ]
+    }
+  ],
+  "ket_qua": "Kháng chiến đến năm 1864, Trương Định tuẫn tiết sau khi bị chỉ điểm, kết thúc cuộc kháng chiến kéo dài hơn hai năm ở Gò Công.",
+  "y_nghia": "Biểu tượng của tinh thần 'phất cờ trung nghĩa, không tuân lệnh triều đình đầu hàng', được nhân dân Nam Kỳ suy tôn Bình Tây Đại nguyên soái.",
+  "trang_thai": "draft",
+  "nguon": [
+    "sknc.qdnd.vn — Bình Tây Đại nguyên soái Trương Định",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "dsvh.gov.vn — Di tích khởi nghĩa Trương Định"
+  ]
+}

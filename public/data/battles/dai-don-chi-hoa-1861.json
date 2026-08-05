@@ -1,0 +1,170 @@
+{
+  "ghi_chu": "Sa đồ trận Đại đồn Chí Hoà 1861 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "dai-don-chi-hoa-1861",
+  "ten": "Trận Đại đồn Chí Hoà (Kỳ Hoà) 1861",
+  "nam": 1861,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Tri Phương, Phạm Thế Hiển",
+  "doi_thu": "Pháp (Léonard Charner)",
+  "dia_diem": "Đại đồn Chí Hoà, nay thuộc Thành phố Hồ Chí Minh",
+  "lien_quan_tinh": [
+    "thanh-pho-ho-chi-minh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          750,
+          300
+        ],
+        [
+          800,
+          550
+        ]
+      ],
+      "nhan": "Sông Sài Gòn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "don-chi-hoa",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 300,
+      "nhan": "Đại đồn Chí Hoà"
+    },
+    {
+      "id": "quan-ta-nguyen-tri-phuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 350,
+      "nhan": "Nguyễn Tri Phương, Phạm Thế Hiển"
+    },
+    {
+      "id": "ham-doi-phap",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Hạm đội Charner (70 tàu)"
+    },
+    {
+      "id": "quan-dich-bo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 620,
+      "y": 200,
+      "nhan": "3.500 quân bộ Pháp"
+    },
+    {
+      "id": "mui-tien-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        560,
+        260
+      ],
+      "den": [
+        430,
+        290
+      ],
+      "nhan": "Tiến công Đại đồn"
+    },
+    {
+      "id": "quan-ta-bi-thuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Nguyễn Tri Phương bị thương, rút về Biên Hoà"
+    },
+    {
+      "id": "mui-mo-rong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        600,
+        300
+      ],
+      "den": [
+        200,
+        480
+      ],
+      "nhan": "Pháp mở rộng chiếm Nam Kỳ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Xây dựng Đại đồn Chí Hoà (1860)",
+      "mo_ta": "Nguyễn Tri Phương và Phạm Thế Hiển xây dựng Đại đồn Chí Hoà nhằm cầm chân quân Pháp tại Gia Định.",
+      "hien": [
+        "don-chi-hoa",
+        "quan-ta-nguyen-tri-phuong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Charner đưa đại quân tới Gia Định",
+      "mo_ta": "Đầu 1861, Trung tướng Charner đưa 70 chiến thuyền và 3.500 quân bộ tới Gia Định, chuẩn bị tiến đánh đồn.",
+      "hien": [
+        "don-chi-hoa",
+        "ham-doi-phap",
+        "quan-dich-bo"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vây đánh Đại đồn sau 20 ngày chuẩn bị",
+      "mo_ta": "Sau 20 ngày áp sát, quân Pháp tổ chức tiến công đồn Kỳ Hoà.",
+      "hien": [
+        "don-chi-hoa",
+        "quan-dich-bo",
+        "mui-tien-cong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hai ngày giao chiến ác liệt (24-25/2/1861)",
+      "mo_ta": "Hai bên giao chiến ác liệt suốt hai ngày; Pháp thiệt hại hơn 300 quân nhưng hoả lực vượt trội áp đảo phòng tuyến.",
+      "hien": [
+        "don-chi-hoa",
+        "quan-ta-nguyen-tri-phuong",
+        "mui-tien-cong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đại đồn thất thủ, Nguyễn Tri Phương bị thương",
+      "mo_ta": "Quân ta bỏ đồn rút về Biên Hoà; Nguyễn Tri Phương bị thương nặng, em trai ông Nguyễn Duy tử trận.",
+      "hien": [
+        "quan-ta-bi-thuong",
+        "don-chi-hoa"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Pháp thừa thắng mở rộng chiếm Nam Kỳ",
+      "mo_ta": "Pháp thừa thắng chiếm Thủ Dầu Một, Tây Ninh, Mỹ Tho, mở đường tới Hoà ước Nhâm Tuất 1862.",
+      "hien": [
+        "mui-mo-rong"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Pháp hạ được Đại đồn Chí Hoà sau hai ngày giao chiến ác liệt; Nguyễn Tri Phương bị thương nặng, Pháp thừa thắng mở rộng chiếm Nam Kỳ.",
+  "y_nghia": "Thất thủ Đại đồn Chí Hoà mở đường cho Pháp mở rộng chiếm Nam Kỳ, dẫn tới Hoà ước Nhâm Tuất 1862 — cột mốc đầu tiên Việt Nam mất đất vào tay thực dân Pháp.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam Thực Lục — Đệ tứ kỷ",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Việt Nam sử lược, Nhà Nguyễn, Chương VII"
+  ]
+}

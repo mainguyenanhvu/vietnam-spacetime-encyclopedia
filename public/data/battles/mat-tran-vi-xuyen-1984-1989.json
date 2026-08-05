@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ Mặt trận Vị Xuyên 1984–1989 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nguồn hiện có (mo_ta trong chien-dich-tran-danh.json) chỉ mô tả TỔNG QUÁT 5 năm mặt trận, KHÔNG có ngày tháng/đơn vị/diễn biến từng trận cụ thể — sa đồ giữ đúng mức độ tổng quát này, KHÔNG suy diễn thêm ngày tháng hay diễn biến chi tiết từng cao điểm. Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "id": "mat-tran-vi-xuyen-1984-1989",
+  "ten": "Mặt trận Vị Xuyên 1984–1989",
+  "nam": 1984,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân đội nhân dân Việt Nam",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Vị Xuyên, Hà Giang (nay tỉnh Tuyên Quang)",
+  "lien_quan_tinh": [
+    "tuyen-quang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          50,
+          50
+        ],
+        [
+          500,
+          20
+        ],
+        [
+          950,
+          60
+        ]
+      ],
+      "nhan": "Dãy núi biên giới Vị Xuyên, Hà Giang"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          150
+        ],
+        [
+          500,
+          120
+        ],
+        [
+          900,
+          160
+        ]
+      ],
+      "nhan": "Đường biên giới Việt – Trung"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-lan-chiem-vx",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 100,
+      "nhan": "Trung Quốc lấn chiếm các cao điểm"
+    },
+    {
+      "id": "quan-ta-phong-ngu-vx",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Bộ đội ta phòng ngự"
+    },
+    {
+      "id": "cac-cao-diem",
+      "kieu": "dia-danh",
+      "x": 550,
+      "y": 250,
+      "nhan": "Các cao điểm 685, 1509, 772"
+    },
+    {
+      "id": "co-hy-sinh-vx",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 350,
+      "y": 450,
+      "nhan": "Hơn 4.000 cán bộ, chiến sĩ hy sinh"
+    },
+    {
+      "id": "nghia-trang-vi-xuyen",
+      "kieu": "dia-danh",
+      "x": 600,
+      "y": 480,
+      "nhan": "Nghĩa trang liệt sĩ quốc gia Vị Xuyên"
+    },
+    {
+      "id": "dai-huong-468",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 680,
+      "y": 430,
+      "nhan": "Đài hương 468"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trung Quốc liên tục lấn chiếm biên giới Hà Giang (từ 1984)",
+      "mo_ta": "Từ năm 1984, Trung Quốc liên tục tiến công lấn chiếm các cao điểm biên giới khu vực Vị Xuyên, Hà Giang.",
+      "hien": [
+        "quan-dich-lan-chiem-vx"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bộ đội ta kiên cường phòng ngự các cao điểm",
+      "mo_ta": "Quân và dân ta kiên cường tổ chức phòng ngự, giành giật quyết liệt từng cao điểm suốt nhiều năm.",
+      "hien": [
+        "quan-dich-lan-chiem-vx",
+        "quan-ta-phong-ngu-vx",
+        "cac-cao-diem"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiến trường ác liệt nhất biên giới phía Bắc",
+      "mo_ta": "Mặt trận Vị Xuyên trở thành chiến trường ác liệt nhất trong toàn bộ cuộc chiến đấu bảo vệ biên giới phía Bắc.",
+      "hien": [
+        "cac-cao-diem",
+        "quan-ta-phong-ngu-vx"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hơn 4.000 cán bộ, chiến sĩ hy sinh",
+      "mo_ta": "Trong 5 năm chiến đấu (1984–1989), hơn 4.000 cán bộ, chiến sĩ đã anh dũng hy sinh để bảo vệ biên cương.",
+      "hien": [
+        "co-hy-sinh-vx"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Nghĩa trang Vị Xuyên và Đài hương 468 tôn vinh liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ quốc gia Vị Xuyên hiện an táng 1.863 liệt sĩ; Đài hương 468 trên cao điểm 468 tôn vinh những người đã ngã xuống.",
+      "hien": [
+        "nghia-trang-vi-xuyen",
+        "dai-huong-468"
+      ]
+    }
+  ],
+  "ket_qua": "Hơn 4.000 cán bộ, chiến sĩ hy sinh trong 5 năm chiến đấu (1984–1989) để bảo vệ vững chắc biên cương tại Vị Xuyên, Hà Giang.",
+  "y_nghia": "Chiến trường ác liệt nhất trong cuộc chiến đấu bảo vệ biên giới phía Bắc, biểu tượng cho ý chí kiên cường bảo vệ biên cương Tổ quốc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Nhân Dân (nhandan.vn) — Trở lại Vị Xuyên",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

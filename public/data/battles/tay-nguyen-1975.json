@@ -1,0 +1,160 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Tây Nguyên 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "id": "tay-nguyen-1975",
+  "ten": "Chiến dịch Tây Nguyên 1975",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Chiến dịch Tây Nguyên (Văn Tiến Dũng)",
+  "doi_thu": "Quân lực Việt Nam Cộng hòa",
+  "dia_diem": "Đắk Lắk, Gia Lai, Kon Tum, Phú Yên (Tây Nguyên)",
+  "lien_quan_tinh": [
+    "dak-lak",
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          600,
+          100
+        ],
+        [
+          500,
+          300
+        ],
+        [
+          400,
+          500
+        ]
+      ],
+      "nhan": "Đường số 7 (Cheo Reo – Phú Bổn)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "buon-ma-thuot",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 300,
+      "y": 250,
+      "nhan": "Thị xã Buôn Ma Thuột"
+    },
+    {
+      "id": "mui-danh-chiem-bmt",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        150,
+        280
+      ],
+      "den": [
+        280,
+        260
+      ],
+      "nhan": "Đòn đột phá then chốt"
+    },
+    {
+      "id": "quan-dich-rung-chuyen",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 200,
+      "nhan": "Tuyến phòng thủ rung chuyển"
+    },
+    {
+      "id": "quan-dich-rut-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 350,
+      "nhan": "Địch rút chạy trên đường số 7"
+    },
+    {
+      "id": "quan-ta-truy-kich-tn",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 400,
+      "nhan": "Quân ta truy kích"
+    },
+    {
+      "id": "dia-danh-5-tinh",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 150,
+      "nhan": "5 tỉnh Tây Nguyên"
+    },
+    {
+      "id": "co-thang-tn",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 100,
+      "nhan": "Bước ngoặt quyết định"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở màn: đánh chiếm thị xã Buôn Ma Thuột (10-11/3/1975)",
+      "mo_ta": "Chiến dịch Tây Nguyên (mật danh A275) mở màn bằng đòn đột phá then chốt đánh chiếm thị xã Buôn Ma Thuột.",
+      "hien": [
+        "buon-ma-thuot",
+        "mui-danh-chiem-bmt"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân đội Sài Gòn bất ngờ, không kịp ứng cứu",
+      "mo_ta": "Đòn đánh bất ngờ khiến quân đội Sài Gòn không kịp điều quân ứng cứu, tuyến phòng thủ Tây Nguyên rung chuyển.",
+      "hien": [
+        "buon-ma-thuot",
+        "quan-dich-rung-chuyen"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Địch rút chạy trên đường số 7",
+      "mo_ta": "Trước nguy cơ bị chia cắt, quân đội Sài Gòn quyết định rút bỏ Tây Nguyên theo đường số 7 (Cheo Reo – Phú Bổn).",
+      "hien": [
+        "quan-dich-rut-chay"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân ta truy kích tiêu diệt đoàn rút chạy",
+      "mo_ta": "Quân ta tổ chức truy kích quyết liệt trên đường số 7, gây thiệt hại nặng cho đoàn quân rút chạy.",
+      "hien": [
+        "quan-dich-rut-chay",
+        "quan-ta-truy-kich-tn"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Giải phóng 5 tỉnh Tây Nguyên",
+      "mo_ta": "Quân ta tiếp tục tiến công, giải phóng hoàn toàn 5 tỉnh Tây Nguyên và một phần duyên hải Nam Trung Bộ.",
+      "hien": [
+        "dia-danh-5-tinh",
+        "buon-ma-thuot"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tạo bước ngoặt quyết định cho cục diện chiến tranh",
+      "mo_ta": "Chiến dịch loại khỏi vòng chiến hơn 28.000 địch, tạo bước ngoặt quyết định, mở đầu Tổng tiến công và nổi dậy mùa Xuân 1975.",
+      "hien": [
+        "co-thang-tn"
+      ]
+    }
+  ],
+  "ket_qua": "Loại khỏi vòng chiến hơn 28.000 địch, giải phóng 5 tỉnh Tây Nguyên và một phần duyên hải Nam Trung Bộ, tạo bước ngoặt quyết định cho cục diện chiến tranh.",
+  "y_nghia": "Đòn mở đầu Tổng tiến công và nổi dậy mùa Xuân 1975, thể hiện nghệ thuật nghi binh và đột phá chiến lược chính xác.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến dịch Tây Nguyên: Thắng lợi mở đầu cuộc Tổng tiến công và nổi dậy Xuân 1975",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

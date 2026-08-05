@@ -1,0 +1,176 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Trị Thiên – Huế và Đà Nẵng 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "id": "hue-da-nang-1975",
+  "ten": "Chiến dịch Trị Thiên – Huế và Đà Nẵng 1975",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Chiến dịch",
+  "doi_thu": "Quân đoàn 1 – Quân khu 1 (Quân lực Việt Nam Cộng hòa)",
+  "dia_diem": "Thừa Thiên Huế và thành phố Đà Nẵng",
+  "lien_quan_tinh": [
+    "hue",
+    "da-nang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          1000,
+          50
+        ],
+        [
+          1000,
+          300
+        ],
+        [
+          750,
+          250
+        ]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          100
+        ],
+        [
+          400,
+          200
+        ],
+        [
+          650,
+          250
+        ]
+      ],
+      "nhan": "Đường tiến quân từ Huế vào Đà Nẵng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "tri-thien-hue-giai-phong",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 150,
+      "nhan": "Trị Thiên – Huế giải phóng"
+    },
+    {
+      "id": "quan-dich-co-cum",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 300,
+      "nhan": "Quân đoàn 1 co cụm tại Quảng Đà"
+    },
+    {
+      "id": "quan-ta-nhieu-huong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 250,
+      "nhan": "Quân ta tiến công nhiều hướng"
+    },
+    {
+      "id": "mui-bao-vay-dn",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        480,
+        210
+      ],
+      "den": [
+        580,
+        290
+      ],
+      "nhan": "Chia cắt, bao vây"
+    },
+    {
+      "id": "thanh-da-nang",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 350,
+      "nhan": "Thành phố Đà Nẵng"
+    },
+    {
+      "id": "co-thang-dn",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 720,
+      "y": 420,
+      "nhan": "Giải phóng hoàn toàn Đà Nẵng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Thắng lợi chiến dịch Trị Thiên – Huế",
+      "mo_ta": "Tiếp theo chiến thắng Tây Nguyên, quân ta giải phóng Trị Thiên – Huế, tạo đà cho chiến dịch tiếp theo.",
+      "hien": [
+        "tri-thien-hue-giai-phong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Mở Chiến dịch Đà Nẵng (26/3/1975)",
+      "mo_ta": "Quân ta mở Chiến dịch Đà Nẵng, tiến công tiêu diệt Quân đoàn 1 – Quân khu 1 quân đội Sài Gòn đang co cụm tại Quảng Đà.",
+      "hien": [
+        "quan-dich-co-cum",
+        "thanh-da-nang"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân đội Sài Gòn co cụm phòng thủ",
+      "mo_ta": "Khoảng 75.000 quân đối phương co cụm tại Quảng Đà, tổ chức phòng thủ hòng cố thủ thành phố.",
+      "hien": [
+        "quan-dich-co-cum",
+        "thanh-da-nang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân ta tiến công từ nhiều hướng",
+      "mo_ta": "Quân ta đồng loạt tiến công từ nhiều hướng, chia cắt và bao vây lực lượng đối phương.",
+      "hien": [
+        "quan-ta-nhieu-huong",
+        "mui-bao-vay-dn",
+        "quan-dich-co-cum"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tiêu diệt toàn bộ lực lượng phòng thủ",
+      "mo_ta": "Trong hơn 3 ngày, quân ta loại khỏi vòng chiến 90.000 địch, tiêu diệt và làm tan rã toàn bộ Quân đoàn 1.",
+      "hien": [
+        "quan-dich-co-cum",
+        "thanh-da-nang"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Giải phóng hoàn toàn Đà Nẵng (29/3/1975)",
+      "mo_ta": "Quân ta giải phóng hoàn toàn Đà Nẵng, mở ra thời cơ cho chiến dịch giải phóng Sài Gòn và quần đảo Trường Sa.",
+      "hien": [
+        "thanh-da-nang",
+        "co-thang-dn"
+      ]
+    }
+  ],
+  "ket_qua": "Trong hơn 3 ngày, ta loại khỏi vòng chiến 90.000 địch, giải phóng hoàn toàn Đà Nẵng ngày 29/3/1975, mở ra thời cơ cho chiến dịch giải phóng Sài Gòn và quần đảo Trường Sa.",
+  "y_nghia": "Tiêu diệt toàn bộ một quân đoàn chủ lực đối phương chỉ trong vài ngày, đẩy nhanh tốc độ sụp đổ của chính quyền Sài Gòn.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến dịch giải phóng Đà Nẵng Xuân 1975",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "ghi_chu": "Sa đồ trận Tây Kết 1285 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Chỉ huy cụ thể trận này chưa được nguồn hiện có nêu tên tướng riêng (khác Hàm Tử – Chương Dương đã có tên Trần Nhật Duật, Trần Quang Khải) — để 'Quân Trần' chung, không suy diễn thêm tên. trang_thai=draft chờ soát §9.",
+  "id": "tay-ket-1285",
+  "ten": "Trận Tây Kết 1285",
+  "nam": 1285,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân Trần (phối hợp các cánh Hàm Tử – Chương Dương)",
+  "doi_thu": "Quân Nguyên (Toa Đô)",
+  "dia_diem": "Tây Kết, Khoái Châu, Hưng Yên",
+  "lien_quan_tinh": [
+    "hung-yen"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          400
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          1000,
+          420
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-toa-do-rut",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 180,
+      "nhan": "Toa Đô rút chạy về phía bắc"
+    },
+    {
+      "id": "quan-ta-truy-kich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 620,
+      "y": 250,
+      "nhan": "Quân Trần truy kích"
+    },
+    {
+      "id": "mui-truy-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        650,
+        220
+      ],
+      "den": [
+        420,
+        420
+      ],
+      "nhan": "Truy kích đường rút"
+    },
+    {
+      "id": "tay-ket",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 420,
+      "nhan": "Tây Kết"
+    },
+    {
+      "id": "quan-ta-chan-danh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 420,
+      "y": 470,
+      "nhan": "Quân Trần chặn đường"
+    },
+    {
+      "id": "quan-dich-tan-vo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 280,
+      "y": 500,
+      "nhan": "Toa Đô tử trận"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 150,
+      "nhan": "Góp phần giải phóng Thăng Long"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Nguyên rút chạy sau đại bại Hàm Tử – Chương Dương",
+      "mo_ta": "Cùng thời điểm chiến thắng Hàm Tử – Chương Dương, cánh quân Toa Đô từ phía nam rút chạy nhằm hội quân với Thoát Hoan.",
+      "hien": [
+        "quan-dich-toa-do-rut"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân Trần truy kích trên đường rút",
+      "mo_ta": "Các cánh quân Trần phối hợp truy kích ráo riết đường rút lui của Toa Đô.",
+      "hien": [
+        "quan-dich-toa-do-rut",
+        "quan-ta-truy-kich",
+        "mui-truy-kich"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chặn đường tại Tây Kết",
+      "mo_ta": "Quân Trần chặn đánh cánh quân Toa Đô tại Tây Kết (Khoái Châu, Hưng Yên).",
+      "hien": [
+        "tay-ket",
+        "quan-ta-chan-danh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Toa Đô tử trận",
+      "mo_ta": "Sau giao chiến ác liệt, quân Nguyên tan vỡ, chủ tướng Toa Đô tử trận.",
+      "hien": [
+        "tay-ket",
+        "quan-ta-chan-danh",
+        "quan-dich-tan-vo"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Góp phần giải phóng Thăng Long",
+      "mo_ta": "Chiến thắng Tây Kết cùng Hàm Tử – Chương Dương tạo đà giải phóng hoàn toàn kinh thành, kết thúc thắng lợi kháng chiến chống Nguyên lần II.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Trần truy kích và đánh tan cánh quân Toa Đô tại Tây Kết, Toa Đô tử trận, góp phần then chốt giải phóng kinh thành Thăng Long.",
+  "y_nghia": "Cùng với Hàm Tử – Chương Dương, chiến thắng Tây Kết kết thúc thắng lợi trọn vẹn cuộc kháng chiến chống Nguyên Mông lần thứ hai.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Báo Quân đội nhân dân — Di sản nghệ thuật quân sự của tổ tiên"
+  ]
+}

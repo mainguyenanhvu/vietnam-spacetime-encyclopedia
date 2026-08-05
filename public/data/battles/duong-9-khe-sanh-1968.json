@@ -1,0 +1,154 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Đường 9 – Khe Sanh 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "id": "duong-9-khe-sanh-1968",
+  "ten": "Chiến dịch Đường 9 – Khe Sanh 1968",
+  "nam": 1968,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Mặt trận Đường 9",
+  "doi_thu": "Quân đội Mỹ",
+  "dia_diem": "Cụm cứ điểm Tà Cơn – Khe Sanh, Hướng Hóa, Quảng Trị",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          80
+        ],
+        [
+          500,
+          40
+        ],
+        [
+          900,
+          100
+        ]
+      ],
+      "nhan": "Vùng núi Hướng Hóa"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cu-diem-khe-sanh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 300,
+      "nhan": "Cụm cứ điểm Tà Cơn – Khe Sanh"
+    },
+    {
+      "id": "quan-ta-vay-ham-ks",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 380,
+      "nhan": "Quân ta vây hãm"
+    },
+    {
+      "id": "mui-cat-tiep-te",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        360
+      ],
+      "den": [
+        460,
+        320
+      ],
+      "nhan": "Cắt đường tiếp tế"
+    },
+    {
+      "id": "may-bay-tiep-te-my",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 180,
+      "nhan": "Mỹ tiếp tế bằng đường không"
+    },
+    {
+      "id": "quan-dich-tang-vien",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 280,
+      "nhan": "Mỹ tăng viện, phản công"
+    },
+    {
+      "id": "co-thang-ks",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 450,
+      "nhan": "Giải phóng Hướng Hóa"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở màn vây hãm Khe Sanh (20/1/1968)",
+      "mo_ta": "Đêm 20/1/1968, quân ta mở chiến dịch vây hãm cụm cứ điểm Tà Cơn – Khe Sanh.",
+      "hien": [
+        "cu-diem-khe-sanh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nghi binh chiến lược, giam chân quân Mỹ",
+      "mo_ta": "Mục tiêu chiến dịch là thu hút, giam chân lực lượng cơ động Mỹ, phối hợp cho Tổng tiến công Mậu Thân.",
+      "hien": [
+        "cu-diem-khe-sanh",
+        "quan-ta-vay-ham-ks"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vây ép, cắt tiếp tế cứ điểm",
+      "mo_ta": "Quân ta siết chặt vòng vây, cắt đường tiếp tế đường bộ, buộc Mỹ phải tiếp tế hoàn toàn bằng đường không.",
+      "hien": [
+        "cu-diem-khe-sanh",
+        "quan-ta-vay-ham-ks",
+        "mui-cat-tiep-te"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mỹ tăng viện, tổ chức phản công",
+      "mo_ta": "Mỹ tăng cường lực lượng, dùng hỏa lực không quân, pháo binh mạnh mẽ hòng giải vây.",
+      "hien": [
+        "cu-diem-khe-sanh",
+        "may-bay-tiep-te-my",
+        "quan-dich-tang-vien"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Vây hãm hơn 170 ngày đêm",
+      "mo_ta": "Chiến dịch kéo dài hơn 170 ngày đêm, quân ta loại khỏi vòng chiến gần 12.000 địch.",
+      "hien": [
+        "quan-ta-vay-ham-ks",
+        "cu-diem-khe-sanh"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Giải phóng Hướng Hóa, đập tan 'Điện Biên Phủ đảo ngược'",
+      "mo_ta": "Quân ta giải phóng huyện Hướng Hóa, đập tan mưu đồ dựng 'Điện Biên Phủ đảo ngược' của Mỹ.",
+      "hien": [
+        "co-thang-ks"
+      ]
+    }
+  ],
+  "ket_qua": "Loại khỏi vòng chiến gần 12.000 địch sau hơn 170 ngày đêm, giải phóng huyện Hướng Hóa, đập tan mưu đồ dựng 'Điện Biên Phủ đảo ngược' của Mỹ.",
+  "y_nghia": "Đòn nghi binh chiến lược quy mô lớn, giam chân lực lượng cơ động Mỹ, phối hợp trực tiếp cho thắng lợi của Tổng tiến công Xuân Mậu Thân 1968.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Chiến dịch Đường 9 - Khe Sanh: Đòn nghi binh chiến lược",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}
