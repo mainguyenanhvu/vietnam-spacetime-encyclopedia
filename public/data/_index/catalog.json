@@ -1,8 +1,8 @@
 {
   "tong": {
-    "so_file": 120,
-    "so_muc": 4974,
-    "so_byte": 8915722,
+    "so_file": 119,
+    "so_muc": 4969,
+    "so_byte": 8910110,
     "ngay_sinh": "2026-08-05"
   },
   "files": [
@@ -1152,8 +1152,8 @@
     {
       "file": "overlays/anh-hung-can-hien-dai.json",
       "mien": "overlays",
-      "so_muc": 169,
-      "byte": 207875,
+      "so_muc": 177,
+      "byte": 215982,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1171,7 +1171,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "35d06efaf14e84389807faef5010c98b157714bfeb0d8c07e1efc4066c004e4c",
+      "sha256": "1976b36511d7a40ab417318ee07aeb5138498c24054f3002588ea05569eda994",
       "mo_ta": "Anh hùng cận–hiện đại Việt Nam (thế kỷ 20–21): đại tướng QĐND, Anh hùng LLVTND, Mẹ Việt Nam Anh hùng, Anh hùng Lao động."
     },
     {
@@ -1232,8 +1232,8 @@
     {
       "file": "overlays/chi-si-cach-mang.json",
       "mien": "overlays",
-      "so_muc": 56,
-      "byte": 69253,
+      "so_muc": 60,
+      "byte": 73800,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1255,7 +1255,7 @@
         "anh_giay_phep",
         "anh_muc"
       ],
-      "sha256": "a42350edc5cfd2088ed889771cdad7f2dbcf6e460610b9489a1222cb45b41d59",
+      "sha256": "c44a6767554491647056a1d902933953d87264284d431d1861275c4f9e7cadd2",
       "mo_ta": "Chí sĩ yêu nước & nhà cách mạng tiền bối (cuối thế kỷ 19 – trước 1945): phong trào Duy Tân/Đông Du, Đông Kinh Nghĩa Thục, chí sĩ Nam Kỳ, Việt Nam Quốc dân Đảng, và các nhà cách mạng tiền bối của Đảng Cộng sản Đông Dương."
     },
     {
@@ -1314,8 +1314,8 @@
     {
       "file": "overlays/danh-nhan-cac-trieu.json",
       "mien": "overlays",
-      "so_muc": 11,
-      "byte": 14733,
+      "so_muc": 13,
+      "byte": 16714,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1326,18 +1326,18 @@
         "lon",
         "lat",
         "loai",
+        "do_tin_cay_toa_do",
+        "nguon",
+        "trang_thai",
         "thoi_ky",
         "noi_tho",
         "cong_trang",
         "nhan_hinh_dung",
-        "do_tin_cay_toa_do",
-        "nguon",
-        "trang_thai",
         "anh",
         "anh_nguon",
         "anh_giay_phep"
       ],
-      "sha256": "612fb7b4c6347c812f538520c63f22f318d173d1f350b559d9f366f3e58a6ecd",
+      "sha256": "b55294b1a156fc39a7c9ce4359a9f1274f20a00fddb56bc7ca8976b600456d73",
       "mo_ta": "Danh nhân các triều đại · văn hoá · y học, neo vào NƠI THỜ / khu lưu niệm."
     },
     {
@@ -1368,8 +1368,8 @@
     {
       "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
       "mien": "overlays",
-      "so_muc": 84,
-      "byte": 101488,
+      "so_muc": 92,
+      "byte": 109037,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1387,14 +1387,14 @@
         "mo_ta",
         "dia_diem"
       ],
-      "sha256": "28cd65940fbfffd32a978bd30ab5a8171c9f335aca1dee99e9d9609a14b14fe8",
+      "sha256": "1283db6db0e193583418f34bb56fe6114f900b4b825bf7f2206172f983c4486a",
       "mo_ta": "Danh nhân quân sự cổ–trung đại tiêu biểu (bổ sung) — tướng lĩnh/thổ tù có đền thờ/lăng/di tích, chưa có trong CSDL."
     },
     {
       "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
       "mien": "overlays",
-      "so_muc": 101,
-      "byte": 114446,
+      "so_muc": 106,
+      "byte": 120246,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1412,7 +1412,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "c54875e081d9f8504e12ec88601ae649d7d41f2679d945abd1afcaa310a191fc",
+      "sha256": "b23e175f6c233eb0a34adde9668d867596679f0c619fcd1a6a76e55c3ea73d07",
       "mo_ta": "Danh nhân văn hoá – khoa học – chí sĩ yêu nước cận–hiện đại (TK 19–20)."
     },
     {
@@ -1673,8 +1673,8 @@
     {
       "file": "overlays/nghe-nhan-di-san.json",
       "mien": "overlays",
-      "so_muc": 104,
-      "byte": 94144,
+      "so_muc": 105,
+      "byte": 95007,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1692,7 +1692,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "6dc234fcc610dad2163c7bd5f2d9a0d7453f7ee45667ebf858d96aeab0c36925",
+      "sha256": "9dd6ee5d9947b6be4c7b14ef57e2f24324727e47da3445d984f66cdcd4f9cd27",
       "mo_ta": "Ông tổ/danh nhân nghệ thuật truyền thống (chèo, tuồng, cải lương, ca trù, quan họ, xẩm, rối nước) và nghệ sĩ tiên phong có công khai sáng/gìn giữ di sản, chưa có trong CSDL."
     },
     {
@@ -1771,31 +1771,6 @@
       "mo_ta": "Nhà thể thao lịch sử Việt Nam ( Gồm cả VĐV đương đại tiêu biểu (huy chương Olympic/ASIAD/thế giới)."
     },
     {
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "so_muc": 38,
-      "byte": 39972,
-      "kieu_boc_ngoai": "items[]",
-      "truong_nguon_cap_muc": "nguon",
-      "truong_nguon_cap_file": "sources",
-      "phu_nguon_cap_muc_pct": 100,
-      "truong_pho_bien": [
-        "id",
-        "ten",
-        "lon",
-        "lat",
-        "loai",
-        "nam_hien_thi",
-        "mo_ta",
-        "dia_diem",
-        "do_tin_cay_toa_do",
-        "trang_thai",
-        "nguon"
-      ],
-      "sha256": "381f5ca0d99f6b0a1ce6afedd91fd75429e07dd8c9bb94f8c3c1aa2412573470",
-      "mo_ta": "Nữ danh nhân lịch sử Việt Nam (nữ sĩ · nữ tướng · bà chúa · nữ chí sĩ · nữ anh hùng) — Sóng 9."
-    },
-    {
       "file": "overlays/su-than-ngoai-giao.json",
       "mien": "overlays",
       "so_muc": 25,
@@ -1852,8 +1827,8 @@
     {
       "file": "overlays/thien-su-cao-tang.json",
       "mien": "overlays",
-      "so_muc": 25,
-      "byte": 28185,
+      "so_muc": 26,
+      "byte": 29228,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1871,7 +1846,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "cb2226481b5538d43a4868901d8857d21f5b8086db686b2e5cb560ff514ac000",
+      "sha256": "cb79f1c314519bd96dfed62bb0fc4442dcd939cf093409539979dff5a067f603",
       "mo_ta": "Thiền sư · cao tăng · danh tăng Việt Nam qua các thời đại (đã viên tịch), có công với dân tộc/văn hoá/Phật giáo — từ các tổ Trúc Lâm, tổ sư khai sáng tông phái, đến chư tôn đức cận – hiện đại."
     },
     {
@@ -1927,8 +1902,8 @@
     {
       "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
       "mien": "overlays",
-      "so_muc": 88,
-      "byte": 105033,
+      "so_muc": 92,
+      "byte": 109503,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -1946,7 +1921,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "ae768b272a920befbbaab8d10db82985d231ee3dd9a802accc90151db4de3895",
+      "sha256": "a3f529c280b06f8fc104a4d09f60d6ead147ce85eef4201493027c03d96d07cd",
       "mo_ta": "Nhà khoa học & trí thức Việt Nam thế kỷ 20 (đã mất) — các chuyên ngành toán, lý, hoá, sinh, y, nông, sử, địa chất chưa có trong CSDL."
     },
     {

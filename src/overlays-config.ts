@@ -530,16 +530,10 @@ export const OVERLAYS: OverlayConf[] = [
       "Sức khỏe & Đời sống · Viện Y dược học dân tộc · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
     popup: personOverlayPopup,
   },
-  {
-    id: "nu-danh-nhan-lich-su",
-    label: "👑 Nữ danh nhân lịch sử (nữ sĩ · nữ tướng · bà chúa)",
-    icon: "👑",
-    file: "data/overlays/nu-danh-nhan-lich-su.json",
-    circleColor: "#db2777",
-    nguon:
-      "Hội LHPN Việt Nam · Bảo tàng Lịch sử Quốc gia · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
+  // Lớp `nu-danh-nhan-lich-su` đã GIẢI THỂ 2026-08-05 (chỉ thị #10: chia theo
+  // lĩnh vực / chủ đề / giai đoạn, KHÔNG theo giới tính). 38 mục về 8 lớp lĩnh
+  // vực. Đừng dựng lại lớp này. Thông tin ai là phụ nữ vẫn đọc được từ tên và
+  // `mo_ta` — thứ bị bỏ là cách CHIA, không phải thông tin.
   {
     id: "danh-nhan-dan-toc-thieu-so",
     label: "🪶 Danh nhân dân tộc thiểu số · Miền núi phía Bắc",
@@ -621,7 +615,7 @@ export const OVERLAY_GROUPS: { id: string; nhan: string; icon: string; ids: stri
   { id: "di-san", nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
   { id: "quan-su", nhan: "Sự kiện & Quân sự", icon: "⚔️", ids: ["chien-dich-tran-danh", "danh-nhan-quan-su-co-trung-dai", "nghia-si-can-vuong"] },
   { id: "vua-khoa-bang", nhan: "Vua chúa · Khoa bảng · Ngoại giao", icon: "👑", ids: ["vua-hoang-de", "khoa-bang-danh-nhan", "su-than-ngoai-giao", "danh-nhan-cac-trieu"] },
-  { id: "nu-dan-toc", nhan: "Nữ danh nhân · Dân tộc thiểu số", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so"] },
+  { id: "cong-dong-dan-toc", nhan: "Cộng đồng các dân tộc", icon: "🪶", ids: ["danh-nhan-dan-toc-thieu-so"] },
   { id: "tin-nguong", nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
   { id: "van-hoa-khoa-hoc", nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
   { id: "cach-mang", nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung", "nghia-trang-liet-si"] },

@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 4974,
-    "tong_co_toa_do": 2536,
+    "tong_muc": 4969,
+    "tong_co_toa_do": 2531,
     "so_nhom_trung_ten": 624,
-    "so_cap_trung_toa_do": 667,
+    "so_cap_trung_toa_do": 664,
     "ngay_sinh": "2026-08-05"
   },
   "entries": [
@@ -23538,6 +23538,110 @@
       "trang_thai": "draft"
     },
     {
+      "id": "dinh-thi-van",
+      "slug": null,
+      "ten": "Đinh Thị Vân",
+      "ten_chuan": "dinh thi van",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 20.23,
+      "lon": 106.305,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "ta-thi-kieu",
+      "slug": null,
+      "ten": "Tạ Thị Kiều",
+      "ten_chuan": "ta thi kieu",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 10.12,
+      "lon": 106.22,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "la-thi-tam",
+      "slug": null,
+      "ten": "La Thị Tám",
+      "ten_chuan": "la thi tam",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 18.4015,
+      "lon": 105.7575,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nguyen-thi-kim-lai",
+      "slug": null,
+      "ten": "Nguyễn Thị Kim Lai",
+      "ten_chuan": "nguyen thi kim lai",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "bieu-tuong-khang-chien",
+      "lat": 18.17,
+      "lon": 105.7,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "vo-thi-tan",
+      "slug": null,
+      "ten": "Võ Thị Tần",
+      "ten_chuan": "vo thi tan",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 18.399,
+      "lon": 105.7551,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "vu-minh-nghia",
+      "slug": null,
+      "ten": "Vũ Minh Nghĩa (Chín Nghĩa) — nữ biệt động Sài Gòn",
+      "ten_chuan": "vu minh nghia chin nghia nu biet dong sai gon",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "bieu-tuong-khang-chien",
+      "lat": 10.9958,
+      "lon": 106.493,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nu-nguyen-viet-hong",
+      "slug": null,
+      "ten": "Nguyễn Việt Hồng",
+      "ten_chuan": "nguyen viet hong",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 9.67,
+      "lon": 105.53,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nu-huynh-thi-chau",
+      "slug": null,
+      "ten": "Huỳnh Thị Chấu",
+      "ten_chuan": "huynh thi chau",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 11.06,
+      "lon": 106.78,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
       "id": "bao-tang-lich-su-quoc-gia",
       "slug": null,
       "ten": "Bảo tàng Lịch sử Quốc gia",
@@ -25471,6 +25575,58 @@
       "loai": "nha-cach-mang-tien-boi",
       "lat": 16.4861,
       "lon": 107.5859,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nguyen-thi-thap",
+      "slug": null,
+      "ten": "Nguyễn Thị Thập",
+      "ten_chuan": "nguyen thi thap",
+      "file": "overlays/chi-si-cach-mang.json",
+      "mien": "overlays",
+      "loai": "nha-cach-mang-tien-boi",
+      "lat": 10.37,
+      "lon": 106.37,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "hoang-ngan",
+      "slug": null,
+      "ten": "Hoàng Ngân — Phạm Thị Vân",
+      "ten_chuan": "hoang ngan pham thi van",
+      "file": "overlays/chi-si-cach-mang.json",
+      "mien": "overlays",
+      "loai": "nha-cach-mang-tien-boi",
+      "lat": 20.8449,
+      "lon": 106.6881,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "co-giang",
+      "slug": null,
+      "ten": "Cô Giang (Nguyễn Thị Giang)",
+      "ten_chuan": "co giang nguyen thi giang",
+      "file": "overlays/chi-si-cach-mang.json",
+      "mien": "overlays",
+      "loai": "viet-nam-quoc-dan-dang",
+      "lat": 21.3089,
+      "lon": 105.6049,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "co-bac",
+      "slug": null,
+      "ten": "Cô Bắc (Nguyễn Thị Bắc)",
+      "ten_chuan": "co bac nguyen thi bac",
+      "file": "overlays/chi-si-cach-mang.json",
+      "mien": "overlays",
+      "loai": "viet-nam-quoc-dan-dang",
+      "lat": 21.7229,
+      "lon": 104.8752,
       "so_nguon": 1,
       "trang_thai": "reviewed"
     },
@@ -28257,6 +28413,32 @@
       "trang_thai": "reviewed"
     },
     {
+      "id": "cong-chua-ngoc-van",
+      "slug": null,
+      "ten": "Công chúa Ngọc Vạn",
+      "ten_chuan": "cong chua ngoc van",
+      "file": "overlays/danh-nhan-cac-trieu.json",
+      "mien": "overlays",
+      "loai": "khai-pha",
+      "lat": 10.95,
+      "lon": 106.823,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "ngo-chi-lan",
+      "slug": null,
+      "ten": "Ngô Chi Lan",
+      "ten_chuan": "ngo chi lan",
+      "file": "overlays/danh-nhan-cac-trieu.json",
+      "mien": "overlays",
+      "loai": "van-hoc",
+      "lat": 21.201,
+      "lon": 105.846,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
       "id": "pi-nang-tac",
       "slug": null,
       "ten": "Pi Năng Tắc (Pinăng Tắc)",
@@ -30077,6 +30259,110 @@
       "trang_thai": "reviewed"
     },
     {
+      "id": "bat-nan-cong-chua",
+      "slug": null,
+      "ten": "Bát Nàn công chúa — Vũ Thị Thục",
+      "ten_chuan": "bat nan cong chua vu thi thuc",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "nu-tuong",
+      "lat": 21.352,
+      "lon": 105.45,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "thanh-thien-cong-chua",
+      "slug": null,
+      "ten": "Thánh Thiên công chúa",
+      "ten_chuan": "thanh thien cong chua",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "nu-tuong",
+      "lat": 21.21,
+      "lon": 106.24,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "an-tu-cong-chua",
+      "slug": null,
+      "ten": "An Tư công chúa",
+      "ten_chuan": "an tu cong chua",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "khang-nguyen-tran",
+      "lat": 21.0285,
+      "lon": 105.8342,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nang-noi-bach-hac",
+      "slug": null,
+      "ten": "Nàng Nội (Bạch Hạc Thủy công chúa) — nữ tướng Hai Bà Trưng",
+      "ten_chuan": "nang noi bach hac thuy cong chua nu tuong hai ba trung",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "nu-tuong",
+      "lat": 21.3217131,
+      "lon": 105.3746173,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "quach-a-nuong",
+      "slug": null,
+      "ten": "Quách A Nương (Khâu Ni) — nữ tướng Hai Bà Trưng",
+      "ten_chuan": "quach a nuong khau ni nu tuong hai ba trung",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "nu-tuong",
+      "lat": 21.2943588,
+      "lon": 105.4450247,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nang-tia-truong-tu-nuong",
+      "slug": null,
+      "ten": "Nàng Tía (Trương Tử Nương) — nữ tướng Hai Bà Trưng",
+      "ten_chuan": "nang tia truong tu nuong nu tuong hai ba trung",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "nu-tuong",
+      "lat": 20.9359739,
+      "lon": 105.8430165,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nguyet-dien-cong-chua",
+      "slug": null,
+      "ten": "Nàng Trăng (Nguyệt Điện công chúa) — nữ tướng Hai Bà Trưng",
+      "ten_chuan": "nang trang nguyet dien cong chua nu tuong hai ba trung",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "nu-tuong",
+      "lat": 21.631922,
+      "lon": 105.1305348,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "lu-nuong-a-lu",
+      "slug": null,
+      "ten": "Lự Nương (Ả Lự) — nữ tướng Hai Bà Trưng",
+      "ten_chuan": "lu nuong a lu nu tuong hai ba trung",
+      "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+      "mien": "overlays",
+      "loai": "nu-tuong",
+      "lat": 21.1417549,
+      "lon": 105.7446374,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
       "id": "phan-boi-chau",
       "slug": null,
       "ten": "Phan Bội Châu",
@@ -31386,6 +31672,71 @@
       "loai": "van-hoc",
       "lat": 16.46,
       "lon": 107.6,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "suong-nguyet-anh",
+      "slug": null,
+      "ten": "Sương Nguyệt Anh",
+      "ten_chuan": "suong nguyet anh",
+      "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "nha-bao",
+      "lat": 10.039,
+      "lon": 106.62,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "dam-phuong-nu-su",
+      "slug": null,
+      "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)",
+      "ten_chuan": "dam phuong nu su cong nu dong canh",
+      "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "nha-bao",
+      "lat": 16.4637,
+      "lon": 107.5909,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nu-si-tuong-pho",
+      "slug": null,
+      "ten": "Nữ sĩ Tương Phố (Đỗ Thị Đàm)",
+      "ten_chuan": "nu si tuong pho do thi dam",
+      "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "van-nghe",
+      "lat": 20.8508,
+      "lon": 105.9295,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nu-si-mong-tuyet",
+      "slug": null,
+      "ten": "Nữ sĩ Mộng Tuyết (Thái Thị Úc)",
+      "ten_chuan": "nu si mong tuyet thai thi uc",
+      "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "van-nghe",
+      "lat": 10.3799,
+      "lon": 104.4838,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nguyen-thi-kiem-manh-manh",
+      "slug": null,
+      "ten": "Nguyễn Thị Kiêm — Manh Manh nữ sĩ",
+      "ten_chuan": "nguyen thi kiem manh manh nu si",
+      "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "van-nghe",
+      "lat": 10.3576,
+      "lon": 106.6683,
       "so_nguon": 1,
       "trang_thai": "reviewed"
     },
@@ -44234,6 +44585,19 @@
       "trang_thai": "reviewed"
     },
     {
+      "id": "nghe-nhan-ha-thi-thuy",
+      "slug": null,
+      "ten": "Nghệ nhân Hà Thị Thủy — dệt thổ cẩm Mường",
+      "ten_chuan": "nghe nhan ha thi thuy det tho cam muong",
+      "file": "overlays/nghe-nhan-di-san.json",
+      "mien": "overlays",
+      "loai": "nghe-nhan",
+      "lat": 21.1667,
+      "lon": 104.9833,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
       "id": "nguyen-quang-bich",
       "slug": null,
       "ten": "Nguyễn Quang Bích",
@@ -46431,500 +46795,6 @@
       "trang_thai": "reviewed"
     },
     {
-      "id": "suong-nguyet-anh",
-      "slug": null,
-      "ten": "Sương Nguyệt Anh",
-      "ten_chuan": "suong nguyet anh",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-chi-si",
-      "lat": 10.039,
-      "lon": 106.62,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "bat-nan-cong-chua",
-      "slug": null,
-      "ten": "Bát Nàn công chúa — Vũ Thị Thục",
-      "ten_chuan": "bat nan cong chua vu thi thuc",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.352,
-      "lon": 105.45,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "thanh-thien-cong-chua",
-      "slug": null,
-      "ten": "Thánh Thiên công chúa",
-      "ten_chuan": "thanh thien cong chua",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.21,
-      "lon": 106.24,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "dieu-nhan-ni-su",
-      "slug": null,
-      "ten": "Ni sư Diệu Nhân — công chúa Lý Ngọc Kiều",
-      "ten_chuan": "ni su dieu nhan cong chua ly ngoc kieu",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-si",
-      "lat": 21.0339,
-      "lon": 105.953,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "cong-chua-ngoc-van",
-      "slug": null,
-      "ten": "Công chúa Ngọc Vạn",
-      "ten_chuan": "cong chua ngoc van",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "ba-chua",
-      "lat": 10.95,
-      "lon": 106.823,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "an-tu-cong-chua",
-      "slug": null,
-      "ten": "An Tư công chúa",
-      "ten_chuan": "an tu cong chua",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "ba-chua",
-      "lat": 21.0285,
-      "lon": 105.8342,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nguyen-thi-thap",
-      "slug": null,
-      "ten": "Nguyễn Thị Thập",
-      "ten_chuan": "nguyen thi thap",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-chi-si",
-      "lat": 10.37,
-      "lon": 106.37,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "hoang-ngan",
-      "slug": null,
-      "ten": "Hoàng Ngân — Phạm Thị Vân",
-      "ten_chuan": "hoang ngan pham thi van",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-chi-si",
-      "lat": 20.8449,
-      "lon": 106.6881,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "dinh-thi-van",
-      "slug": null,
-      "ten": "Đinh Thị Vân",
-      "ten_chuan": "dinh thi van",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 20.23,
-      "lon": 106.305,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "ta-thi-kieu",
-      "slug": null,
-      "ten": "Tạ Thị Kiều",
-      "ten_chuan": "ta thi kieu",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 10.12,
-      "lon": 106.22,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "la-thi-tam",
-      "slug": null,
-      "ten": "La Thị Tám",
-      "ten_chuan": "la thi tam",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 18.4015,
-      "lon": 105.7575,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nguyen-thi-kim-lai",
-      "slug": null,
-      "ten": "Nguyễn Thị Kim Lai",
-      "ten_chuan": "nguyen thi kim lai",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 18.17,
-      "lon": 105.7,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "vo-thi-tan",
-      "slug": null,
-      "ten": "Võ Thị Tần",
-      "ten_chuan": "vo thi tan",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 18.399,
-      "lon": 105.7551,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "muoi-nu-liet-si-dong-loc",
-      "slug": null,
-      "ten": "Mười nữ liệt sĩ thanh niên xung phong Ngã ba Đồng Lộc",
-      "ten_chuan": "muoi nu liet si thanh nien xung phong nga ba dong loc",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 18.3978,
-      "lon": 105.7535,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "ngo-chi-lan",
-      "slug": null,
-      "ten": "Ngô Chi Lan",
-      "ten_chuan": "ngo chi lan",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-si",
-      "lat": 21.201,
-      "lon": 105.846,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "dam-phuong-nu-su",
-      "slug": null,
-      "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)",
-      "ten_chuan": "dam phuong nu su cong nu dong canh",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-si",
-      "lat": 16.4637,
-      "lon": 107.5909,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "ton-nu-ngoc-toan",
-      "slug": null,
-      "ten": "GS.BS Đại tá Tôn Nữ Ngọc Toản",
-      "ten_chuan": "gs bs dai ta ton nu ngoc toan",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-khoa-hoc-gia",
-      "lat": 16.4639321,
-      "lon": 107.5863388,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "hoang-thi-nga",
-      "slug": null,
-      "ten": "GS Hoàng Thị Nga",
-      "ten_chuan": "gs hoang thi nga",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-khoa-hoc-gia",
-      "lat": 21.0765,
-      "lon": 105.7642,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nu-si-tuong-pho",
-      "slug": null,
-      "ten": "Nữ sĩ Tương Phố (Đỗ Thị Đàm)",
-      "ten_chuan": "nu si tuong pho do thi dam",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-si",
-      "lat": 20.8508,
-      "lon": 105.9295,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "co-giang",
-      "slug": null,
-      "ten": "Cô Giang (Nguyễn Thị Giang)",
-      "ten_chuan": "co giang nguyen thi giang",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-chi-si-cach-mang",
-      "lat": 21.3089,
-      "lon": 105.6049,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "co-bac",
-      "slug": null,
-      "ten": "Cô Bắc (Nguyễn Thị Bắc)",
-      "ten_chuan": "co bac nguyen thi bac",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-chi-si-cach-mang",
-      "lat": 21.7229,
-      "lon": 104.8752,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nghe-nhan-ha-thi-thuy",
-      "slug": null,
-      "ten": "Nghệ nhân Hà Thị Thủy — dệt thổ cẩm Mường",
-      "ten_chuan": "nghe nhan ha thi thuy det tho cam muong",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nghe-nhan-nu",
-      "lat": 21.1667,
-      "lon": 104.9833,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nu-si-mong-tuyet",
-      "slug": null,
-      "ten": "Nữ sĩ Mộng Tuyết (Thái Thị Úc)",
-      "ten_chuan": "nu si mong tuyet thai thi uc",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-si",
-      "lat": 10.3799,
-      "lon": 104.4838,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "pham-thi-tran-chau",
-      "slug": null,
-      "ten": "GS.TSKH Phạm Thị Trân Châu",
-      "ten_chuan": "gs tskh pham thi tran chau",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-khoa-hoc-gia",
-      "lat": 15.5736,
-      "lon": 108.4746,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nguyen-thi-kiem-manh-manh",
-      "slug": null,
-      "ten": "Nguyễn Thị Kiêm — Manh Manh nữ sĩ",
-      "ten_chuan": "nguyen thi kiem manh manh nu si",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-si",
-      "lat": 10.3576,
-      "lon": 106.6683,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "cao-ngoc-anh",
-      "slug": null,
-      "ten": "Nữ sĩ Cao Ngọc Anh",
-      "ten_chuan": "nu si cao ngoc anh",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-si",
-      "lat": 18.9975,
-      "lon": 105.6067,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "vu-minh-nghia",
-      "slug": null,
-      "ten": "Vũ Minh Nghĩa (Chín Nghĩa) — nữ biệt động Sài Gòn",
-      "ten_chuan": "vu minh nghia chin nghia nu biet dong sai gon",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-chi-si-cach-mang",
-      "lat": 10.9958,
-      "lon": 106.493,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "xuan-nuong",
-      "slug": null,
-      "ten": "Xuân Nương (nữ tướng thời Hai Bà Trưng)",
-      "ten_chuan": "xuan nuong nu tuong thoi hai ba trung",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.3,
-      "lon": 105.2,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "hoang-thieu-hoa",
-      "slug": null,
-      "ten": "Hoàng Thiều Hoa (nữ tướng thời Hai Bà Trưng)",
-      "ten_chuan": "hoang thieu hoa nu tuong thoi hai ba trung",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.27,
-      "lon": 105.22,
-      "so_nguon": 2,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nu-vo-thi-sau",
-      "slug": null,
-      "ten": "Võ Thị Sáu",
-      "ten_chuan": "vo thi sau",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 10.5,
-      "lon": 107.24,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nu-nguyen-viet-hong",
-      "slug": null,
-      "ten": "Nguyễn Việt Hồng",
-      "ten_chuan": "nguyen viet hong",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 9.67,
-      "lon": 105.53,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nu-huynh-thi-chau",
-      "slug": null,
-      "ten": "Huỳnh Thị Chấu",
-      "ten_chuan": "huynh thi chau",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 11.06,
-      "lon": 106.78,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nu-nguyen-thi-ut-tich",
-      "slug": null,
-      "ten": "Nguyễn Thị Út (Út Tịch)",
-      "ten_chuan": "nguyen thi ut ut tich",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-anh-hung",
-      "lat": 9.92,
-      "lon": 105.95,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nang-noi-bach-hac",
-      "slug": null,
-      "ten": "Nàng Nội (Bạch Hạc Thủy công chúa) — nữ tướng Hai Bà Trưng",
-      "ten_chuan": "nang noi bach hac thuy cong chua nu tuong hai ba trung",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.3217131,
-      "lon": 105.3746173,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "quach-a-nuong",
-      "slug": null,
-      "ten": "Quách A Nương (Khâu Ni) — nữ tướng Hai Bà Trưng",
-      "ten_chuan": "quach a nuong khau ni nu tuong hai ba trung",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.2943588,
-      "lon": 105.4450247,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nang-tia-truong-tu-nuong",
-      "slug": null,
-      "ten": "Nàng Tía (Trương Tử Nương) — nữ tướng Hai Bà Trưng",
-      "ten_chuan": "nang tia truong tu nuong nu tuong hai ba trung",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 20.9359739,
-      "lon": 105.8430165,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "nguyet-dien-cong-chua",
-      "slug": null,
-      "ten": "Nàng Trăng (Nguyệt Điện công chúa) — nữ tướng Hai Bà Trưng",
-      "ten_chuan": "nang trang nguyet dien cong chua nu tuong hai ba trung",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.631922,
-      "lon": 105.1305348,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "lu-nuong-a-lu",
-      "slug": null,
-      "ten": "Lự Nương (Ả Lự) — nữ tướng Hai Bà Trưng",
-      "ten_chuan": "lu nuong a lu nu tuong hai ba trung",
-      "file": "overlays/nu-danh-nhan-lich-su.json",
-      "mien": "overlays",
-      "loai": "nu-tuong",
-      "lat": 21.1417549,
-      "lon": 105.7446374,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
       "id": "giang-van-minh",
       "slug": null,
       "ten": "Giang Văn Minh",
@@ -48170,6 +48040,19 @@
       "lat": 21.259402,
       "lon": 105.8512307,
       "so_nguon": 2,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "dieu-nhan-ni-su",
+      "slug": null,
+      "ten": "Ni sư Diệu Nhân — công chúa Lý Ngọc Kiều",
+      "ten_chuan": "ni su dieu nhan cong chua ly ngoc kieu",
+      "file": "overlays/thien-su-cao-tang.json",
+      "mien": "overlays",
+      "loai": "thien-su",
+      "lat": 21.0339,
+      "lon": 105.953,
+      "so_nguon": 1,
       "trang_thai": "reviewed"
     },
     {
@@ -50483,6 +50366,58 @@
       "loai": "nha-giao",
       "lat": 16.4138566,
       "lon": 107.7760076,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "ton-nu-ngoc-toan",
+      "slug": null,
+      "ten": "GS.BS Đại tá Tôn Nữ Ngọc Toản",
+      "ten_chuan": "gs bs dai ta ton nu ngoc toan",
+      "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+      "mien": "overlays",
+      "loai": "y",
+      "lat": 16.4639321,
+      "lon": 107.5863388,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "hoang-thi-nga",
+      "slug": null,
+      "ten": "GS Hoàng Thị Nga",
+      "ten_chuan": "gs hoang thi nga",
+      "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+      "mien": "overlays",
+      "loai": "ly",
+      "lat": 21.0765,
+      "lon": 105.7642,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "pham-thi-tran-chau",
+      "slug": null,
+      "ten": "GS.TSKH Phạm Thị Trân Châu",
+      "ten_chuan": "gs tskh pham thi tran chau",
+      "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+      "mien": "overlays",
+      "loai": "sinh",
+      "lat": 15.5736,
+      "lon": 108.4746,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "cao-ngoc-anh",
+      "slug": null,
+      "ten": "Nữ sĩ Cao Ngọc Anh",
+      "ten_chuan": "nu si cao ngoc anh",
+      "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+      "mien": "overlays",
+      "loai": "hoc-gia",
+      "lat": 18.9975,
+      "lon": 105.6067,
       "so_nguon": 1,
       "trang_thai": "reviewed"
     },
@@ -66661,12 +66596,12 @@
       "ten_chuan": "an tu cong chua",
       "so_file": 2,
       "files": [
-        "overlays/nu-danh-nhan-lich-su.json",
+        "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "streets/danh-nhan-duong-pilot.json"
       ],
       "muc": [
         {
-          "file": "overlays/nu-danh-nhan-lich-su.json",
+          "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
           "id": "an-tu-cong-chua",
           "ten": "An Tư công chúa"
         },
@@ -67041,12 +66976,12 @@
       "ten_chuan": "bat nan cong chua vu thi thuc",
       "so_file": 2,
       "files": [
-        "overlays/nu-danh-nhan-lich-su.json",
+        "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "streets/danh-nhan-duong-pilot.json"
       ],
       "muc": [
         {
-          "file": "overlays/nu-danh-nhan-lich-su.json",
+          "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
           "id": "bat-nan-cong-chua",
           "ten": "Bát Nàn công chúa — Vũ Thị Thục"
         },
@@ -68591,12 +68526,12 @@
       "ten_chuan": "dinh thi van",
       "so_file": 2,
       "files": [
-        "overlays/nu-danh-nhan-lich-su.json",
+        "overlays/anh-hung-can-hien-dai.json",
         "streets/danh-nhan-duong-pilot.json"
       ],
       "muc": [
         {
-          "file": "overlays/nu-danh-nhan-lich-su.json",
+          "file": "overlays/anh-hung-can-hien-dai.json",
           "id": "dinh-thi-van",
           "ten": "Đinh Thị Vân"
         },
@@ -69816,12 +69751,12 @@
       "ten_chuan": "hoang ngan pham thi van",
       "so_file": 2,
       "files": [
-        "overlays/nu-danh-nhan-lich-su.json",
+        "overlays/chi-si-cach-mang.json",
         "streets/danh-nhan-duong-pilot.json"
       ],
       "muc": [
         {
-          "file": "overlays/nu-danh-nhan-lich-su.json",
+          "file": "overlays/chi-si-cach-mang.json",
           "id": "hoang-ngan",
           "ten": "Hoàng Ngân — Phạm Thị Vân"
         },
@@ -71841,12 +71776,12 @@
       "ten_chuan": "ngo chi lan",
       "so_file": 2,
       "files": [
-        "overlays/nu-danh-nhan-lich-su.json",
+        "overlays/danh-nhan-cac-trieu.json",
         "streets/danh-nhan-duong-pilot.json"
       ],
       "muc": [
         {
-          "file": "overlays/nu-danh-nhan-lich-su.json",
+          "file": "overlays/danh-nhan-cac-trieu.json",
           "id": "ngo-chi-lan",
           "ten": "Ngô Chi Lan"
         },
@@ -73701,12 +73636,12 @@
       "ten_chuan": "nguyen thi thap",
       "so_file": 2,
       "files": [
-        "overlays/nu-danh-nhan-lich-su.json",
+        "overlays/chi-si-cach-mang.json",
         "streets/danh-nhan-duong-pilot.json"
       ],
       "muc": [
         {
-          "file": "overlays/nu-danh-nhan-lich-su.json",
+          "file": "overlays/chi-si-cach-mang.json",
           "id": "nguyen-thi-thap",
           "ten": "Nguyễn Thị Thập"
         },
@@ -75396,12 +75331,12 @@
       "ten_chuan": "suong nguyet anh",
       "so_file": 2,
       "files": [
-        "overlays/nu-danh-nhan-lich-su.json",
+        "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "streets/danh-nhan-duong-pilot.json"
       ],
       "muc": [
         {
-          "file": "overlays/nu-danh-nhan-lich-su.json",
+          "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
           "id": "suong-nguyet-anh",
           "ten": "Sương Nguyệt Anh"
         },
@@ -78793,19 +78728,6 @@
     {
       "a": {
         "file": "overlays/chi-si-cach-mang.json",
-        "id": "nguyen-son-ha",
-        "ten": "Nguyễn Sơn Hà"
-      },
-      "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "hoang-ngan",
-        "ten": "Hoàng Ngân — Phạm Thị Vân"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chi-si-cach-mang.json",
         "id": "bui-huy-tin",
         "ten": "Bùi Huy Tín"
       },
@@ -78849,7 +78771,7 @@
         "ten": "Bùi Huy Tín"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "dam-phuong-nu-su",
         "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
       },
@@ -78891,6 +78813,19 @@
         "file": "overlays/nghe-nhan-di-san.json",
         "id": "nghe-nhan-vo-an-toan-tam-toan",
         "ten": "Võ An Toàn (Tám Toàn)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chi-si-cach-mang.json",
+        "id": "hoang-ngan",
+        "ten": "Hoàng Ngân — Phạm Thị Vân"
+      },
+      "b": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "doan-chuan",
+        "ten": "Đoàn Chuẩn"
       },
       "khoang_cach_m": 0
     },
@@ -79993,7 +79928,7 @@
         "ten": "Phong trào chống thuế Trung Kỳ 1908"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "dam-phuong-nu-su",
         "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
       },
@@ -80175,7 +80110,7 @@
         "ten": "Tổng tiến công Mậu Thân tại Huế"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "ton-nu-ngoc-toan",
         "ten": "GS.BS Đại tá Tôn Nữ Ngọc Toản"
       },
@@ -80643,7 +80578,7 @@
         "ten": "GS Tôn Thất Tùng"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "ton-nu-ngoc-toan",
         "ten": "GS.BS Đại tá Tôn Nữ Ngọc Toản"
       },
@@ -80786,19 +80721,6 @@
         "ten": "Trịnh Công Sơn"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "dam-phuong-nu-su",
-        "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
-        "id": "trinh-cong-son",
-        "ten": "Trịnh Công Sơn"
-      },
-      "b": {
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "le-tam-ky-su",
         "ten": "Lê Tâm"
@@ -80815,19 +80737,6 @@
         "file": "timeline/moc-lich-su.json",
         "id": "su-kien-chong-thue-trung-ky-1908",
         "ten": "Phong trào chống thuế Trung Kỳ"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
-        "id": "doan-chuan",
-        "ten": "Đoàn Chuẩn"
-      },
-      "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "hoang-ngan",
-        "ten": "Hoàng Ngân — Phạm Thị Vân"
       },
       "khoang_cach_m": 0
     },
@@ -80955,19 +80864,6 @@
         "ten": "Diệp Văn Kỳ"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "dam-phuong-nu-su",
-        "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
-        "id": "diep-van-ky",
-        "ten": "Diệp Văn Kỳ"
-      },
-      "b": {
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "le-tam-ky-su",
         "ten": "Lê Tâm"
@@ -80997,6 +80893,32 @@
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "ho-dac-diem",
         "ten": "Hồ Đắc Điềm"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "dam-phuong-nu-su",
+        "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
+      },
+      "b": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "le-tam-ky-su",
+        "ten": "Lê Tâm"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "dam-phuong-nu-su",
+        "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
       },
       "khoang_cach_m": 0
     },
@@ -81777,32 +81699,6 @@
         "file": "timeline/moc-lich-su.json",
         "id": "khoi-nghia-thai-nguyen-1917",
         "ten": "Khởi nghĩa Thái Nguyên"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "dam-phuong-nu-su",
-        "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
-      },
-      "b": {
-        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
-        "id": "le-tam-ky-su",
-        "ten": "Lê Tâm"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "dam-phuong-nu-su",
-        "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "su-kien-chong-thue-trung-ky-1908",
-        "ten": "Phong trào chống thuế Trung Kỳ"
       },
       "khoang_cach_m": 0
     },
@@ -83394,14 +83290,14 @@
     },
     {
       "a": {
+        "file": "overlays/chi-si-cach-mang.json",
+        "id": "co-giang",
+        "ten": "Cô Giang (Nguyễn Thị Giang)"
+      },
+      "b": {
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "chien-dich-tran-hung-dao-trung-du-1950",
         "ten": "Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du)"
-      },
-      "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "co-giang",
-        "ten": "Cô Giang (Nguyễn Thị Giang)"
       },
       "khoang_cach_m": 31
     },
@@ -83503,7 +83399,7 @@
         "ten": "Khởi nghĩa giành chính quyền tại Huế (23/8/1945)"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "dam-phuong-nu-su",
         "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
       },
@@ -84023,7 +83919,7 @@
         "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84036,7 +83932,7 @@
         "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84049,7 +83945,7 @@
         "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84057,20 +83953,20 @@
     },
     {
       "a": {
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "the-anh",
         "ten": "NSND Thế Anh"
       },
-      "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "an-tu-cong-chua",
-        "ten": "An Tư công chúa"
-      },
       "khoang_cach_m": 78
     },
     {
       "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84083,7 +83979,7 @@
     },
     {
       "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84096,7 +83992,7 @@
     },
     {
       "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84109,7 +84005,7 @@
     },
     {
       "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84122,7 +84018,7 @@
     },
     {
       "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84135,7 +84031,7 @@
     },
     {
       "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },
@@ -84447,14 +84343,14 @@
     },
     {
       "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "nguyen-thi-kiem-manh-manh",
+        "ten": "Nguyễn Thị Kiêm — Manh Manh nữ sĩ"
+      },
+      "b": {
         "file": "overlays/nha-the-thao-lich-su.json",
         "id": "pham-huynh-tam-lang",
         "ten": "Phạm Huỳnh Tam Lang"
-      },
-      "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "nguyen-thi-kiem-manh-manh",
-        "ten": "Nguyễn Thị Kiêm — Manh Manh nữ sĩ"
       },
       "khoang_cach_m": 89
     },
@@ -86675,7 +86571,7 @@
         "ten": "Phạm Đăng Trí"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "ton-nu-ngoc-toan",
         "ten": "GS.BS Đại tá Tôn Nữ Ngọc Toản"
       },
@@ -86748,9 +86644,9 @@
     },
     {
       "a": {
-        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
-        "id": "ta-ty",
-        "ten": "Tạ Tỵ"
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
@@ -86761,9 +86657,9 @@
     },
     {
       "a": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "an-tu-cong-chua",
-        "ten": "An Tư công chúa"
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "ta-ty",
+        "ten": "Tạ Tỵ"
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
@@ -86800,6 +86696,19 @@
     },
     {
       "a": {
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Văn Miếu - Quốc Tử Giám"
+      },
+      "khoang_cach_m": 185
+    },
+    {
+      "a": {
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "nguyen-phan-chanh",
         "ten": "Nguyễn Phan Chánh"
@@ -86808,19 +86717,6 @@
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "truong-quoc-dung",
         "ten": "Trương Quốc Dụng"
-      },
-      "khoang_cach_m": 185
-    },
-    {
-      "a": {
-        "file": "overlays/di-tich-qgdb.json",
-        "id": null,
-        "ten": "Văn Miếu - Quốc Tử Giám"
-      },
-      "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "an-tu-cong-chua",
-        "ten": "An Tư công chúa"
       },
       "khoang_cach_m": 185
     },
@@ -87008,14 +86904,14 @@
     },
     {
       "a": {
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "van-mieu-quoc-tu-giam",
         "ten": "Văn Miếu – Quốc Tử Giám"
-      },
-      "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
-        "id": "an-tu-cong-chua",
-        "ten": "An Tư công chúa"
       },
       "khoang_cach_m": 190
     },
@@ -87078,7 +86974,7 @@
         "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
       },
       "b": {
-        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "an-tu-cong-chua",
         "ten": "An Tư công chúa"
       },

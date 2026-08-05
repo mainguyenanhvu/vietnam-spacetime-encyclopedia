@@ -40,7 +40,6 @@ export const LOP_TRE_EM: Record<string, string> = {
   "khoa-bang-danh-nhan": "Ông trạng, ông nghè",
   "su-than-ngoai-giao": "Người đi sứ nước ngoài",
   "danh-nhan-cac-trieu": "Người tài các đời vua",
-  "nu-danh-nhan-lich-su": "Những người phụ nữ tài giỏi",
   "danh-nhan-dan-toc-thieu-so": "Người tài của các dân tộc",
   "thanh-hoang-danh-than": "Thần giữ làng",
   "thien-su-cao-tang": "Các nhà sư nổi tiếng",

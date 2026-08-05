@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh nhân văn hoá – khoa học – chí sĩ yêu nước cận–hiện đại (TK 19–20). Toạ độ quê quán/khu lưu niệm qua OSM Nominatim; nội dung đối chiếu cổng chính thống (nhandan.vn, baochinhphu.vn, dsvh.gov.vn, baotanglichsu.vn, suckhoedoisong.vn…). KHÔNG dùng Wikipedia. (Trương Định, Nguyễn Trung Trực, Hoàng Diệu đã có ở lớp «Khởi nghĩa & kháng chiến» qua sự kiện tiêu biểu nên không lặp ở đây.) [Phase 3: hợp nhất 4 lớp → nhóm «Văn nghệ sĩ · Báo chí · Danh nhân văn hoá».]",
-  "ngay_cap_nhat": "2026-07-27",
+  "ngay_cap_nhat": "2026-08-05",
   "sources": [
     "Báo Nhân Dân — nhandan.vn",
     "Cổng TTĐT Chính phủ — baochinhphu.vn",
@@ -1785,6 +1785,93 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Hội Nhà văn Việt Nam — vanvn.vn — Trần Thanh Địch, nhà văn xứ Huế viết cho thiếu nhi — https://vanvn.vn/tran-thanh-dich-nha-van-xu-hue-viet-cho-thieu-nhi/"
+      ]
+    },
+    {
+      "id": "suong-nguyet-anh",
+      "ten": "Sương Nguyệt Anh",
+      "lon": 106.62,
+      "lat": 10.039,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1864–1921",
+      "mo_ta": "Tên thật Nguyễn Xuân Khuê, con gái nhà thơ yêu nước Nguyễn Đình Chiểu. Năm 1918 làm chủ bút báo Nữ Giới Chung — nữ chủ bút đầu tiên trong lịch sử báo chí Việt Nam, đấu tranh cho quyền phụ nữ; từng bán đất giúp phong trào Đông Du.",
+      "dia_diem": "Khu lưu niệm Nguyễn Đình Chiểu, xã An Đức (An Bình Đông cũ), huyện Ba Tri, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — baotanglichsu.vn (Sương Nguyệt Anh - nữ chủ bút báo đầu tiên của Việt Nam) — https://baotanglichsu.vn/vi/Articles/3098/15257/suong-nguyet-anh-nu-chu-but-bao-djau-tien-cua-viet-nam.html"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Suong_Nguyet_Anh_tomb.jpg/330px-Suong_Nguyet_Anh_tomb.jpg",
+      "anh_nguon": "Wikimedia Commons — Vinhtantran · https://commons.wikimedia.org/wiki/File:Suong_Nguyet_Anh_tomb.jpg",
+      "anh_giay_phep": "CC BY-SA 3.0",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "dam-phuong-nu-su",
+      "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)",
+      "lon": 107.5909,
+      "lat": 16.4637,
+      "loai": "nha-bao",
+      "nam_hien_thi": "1881–1947",
+      "mo_ta": "Con gái Nguyễn Phúc Miên Triện (hoàng tộc triều Nguyễn), nhà báo và nhà văn hóa tiên phong đầu thế kỷ XX. Năm 1926 sáng lập và làm Hội trưởng Nữ Công Học Hội tại Huế — tổ chức đầu tiên do phụ nữ sáng lập và điều hành, mở rộng chi nhánh khắp Trung–Nam–Bắc.",
+      "dia_diem": "Huế, Thừa Thiên Huế — nơi thành lập Nữ Công Học Hội (1926)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — baotanglichsu.vn — https://baotanglichsu.vn/vi/Articles/3129/14237/djam-phuong-nu-su-chan-dung-nha-van-hoa-djau-the-ky-xx.html"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Portrait_of_%C4%90%E1%BA%A1m_Ph%C6%B0%C6%A1ng_n%E1%BB%AF_s%E1%BB%AD.jpg/500px-Portrait_of_%C4%90%E1%BA%A1m_Ph%C6%B0%C6%A1ng_n%E1%BB%AF_s%E1%BB%AD.jpg",
+      "anh_nguon": "Wikimedia Commons — không rõ · https://commons.wikimedia.org/wiki/File:Portrait_of_%C4%90%E1%BA%A1m_Ph%C6%B0%C6%A1ng_n%E1%BB%AF_s%E1%BB%AD.jpg",
+      "anh_giay_phep": "Public domain",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "nu-si-tuong-pho",
+      "ten": "Nữ sĩ Tương Phố (Đỗ Thị Đàm)",
+      "lon": 105.9295,
+      "lat": 20.8508,
+      "loai": "van-nghe",
+      "nam_hien_thi": "1896–1973",
+      "mo_ta": "Quê gốc huyện Khoái Châu, Hưng Yên. Nữ sĩ tiền chiến nổi tiếng với thiên tình sử «Giọt lệ thu» hoàn thành 1923, đăng tạp chí Nam Phong 1928, gây xúc động lớn và được dịch sang tiếng Pháp; còn có «Tái tiếu sầu ngâm», «Khúc thu hận», «Mưa gió sông Tương».",
+      "dia_diem": "Huyện Khoái Châu, Hưng Yên (nguyên quán)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Khánh Hòa điện tử — baokhanhhoa.vn — https://baokhanhhoa.vn/van-hoa/201410/nu-si-tuong-pho-gui-le-vao-thien-thu-2345665/"
+      ],
+      "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Portrait_of_T%C6%B0%C6%A1ng_Ph%E1%BB%91_Phu_Nh%C3%A2n_and_Song_Kh%C3%AA_N%E1%BB%AF_S%C4%A9.jpg/500px-Portrait_of_T%C6%B0%C6%A1ng_Ph%E1%BB%91_Phu_Nh%C3%A2n_and_Song_Kh%C3%AA_N%E1%BB%AF_S%C4%A9.jpg",
+      "anh_nguon": "Wikimedia Commons — Thiếu Sơn · https://commons.wikimedia.org/wiki/File:Portrait_of_T%C6%B0%C6%A1ng_Ph%E1%BB%91_Phu_Nh%C3%A2n_and_Song_Kh%C3%AA_N%E1%BB%AF_S%C4%A9.jpg",
+      "anh_giay_phep": "Public domain",
+      "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "nu-si-mong-tuyet",
+      "ten": "Nữ sĩ Mộng Tuyết (Thái Thị Úc)",
+      "lon": 104.4838,
+      "lat": 10.3799,
+      "loai": "van-nghe",
+      "nam_hien_thi": "1914–2007",
+      "mo_ta": "Quê làng Mỹ Đức, Hà Tiên (nay Kiên Giang). Thành viên nhóm «Hà Tiên tứ tuyệt» cùng Đông Hồ, Lư Khê, Trúc Hà; tác giả các tập thơ «Lời hoa» (1934), «Phấn hương rừng» (1939), «Hương xuân» (1943), được Hoài Thanh – Hoài Chân giới thiệu trong phong trào Thơ mới.",
+      "dia_diem": "Làng Mỹ Đức, Hà Tiên, Kiên Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Báo Giáo dục & Thời đại — giaoducthoidai.vn — https://giaoducthoidai.vn/nhan-90-nam-phong-trao-tho-moi-mong-tuyet-thon-thuc-tieng-tho-tu-mien-cuc-nam-post608589.html"
+      ]
+    },
+    {
+      "id": "nguyen-thi-kiem-manh-manh",
+      "ten": "Nguyễn Thị Kiêm — Manh Manh nữ sĩ",
+      "lon": 106.6683,
+      "lat": 10.3576,
+      "loai": "van-nghe",
+      "nam_hien_thi": "1914–2005",
+      "mo_ta": "Sinh tại Gò Công. Nhà thơ, nhà báo tiên phong phong trào Thơ mới, nổi bật với các buổi diễn thuyết cổ vũ cải cách thơ ca và nữ quyền khắp các thành phố lớn; cộng tác với «Phụ nữ Tân văn», «Nữ lưu».",
+      "dia_diem": "Gò Công, Tiền Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Bảo tàng Phụ nữ Việt Nam — baotangphunu.com — https://baotangphunu.com/nho-ve-ba-nguyen-thi-kiem-manh-manh-nu-si/"
       ]
     }
   ]

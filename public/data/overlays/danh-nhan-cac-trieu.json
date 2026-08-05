@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh nhân các triều đại · văn hoá · y học, neo vào NƠI THỜ / khu lưu niệm. Nội dung theo chính sử & trước tác gốc (Đại Việt Sử Ký Toàn Thư, Đại Nam Liệt Truyện, Truyện Kiều, Hải Thượng Y Tông Tâm Lĩnh, Nam Dược Thần Hiệu) + cổng di sản nhà nước. KHÔNG dùng Wikipedia làm nguồn nội dung. Toạ độ soát 2026-07-19 (OSM Nominatim + đối chiếu tỉnh): cao = khớp POI đền/khu di tích; trung/thấp = định vị theo xã/vùng, cần soát. Lê Thánh Tông tách khỏi toạ độ Lê Lợi (cùng quần thể Lam Kinh) về khu Chiêu Lăng để hai pin không chồng. Sáp nhập tỉnh 2025: toạ độ địa lý giữ nguyên. Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực. loai: vua, van-hoc, y-hoc, khai-pha.",
-  "ngay_cap_nhat": "2026-07-19",
+  "ngay_cap_nhat": "2026-08-05",
   "sources": [
     "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên); Đại Nam Liệt Truyện",
     "Truyện Kiều (Nguyễn Du); Hải Thượng Y Tông Tâm Lĩnh (Lê Hữu Trác); Nam Dược Thần Hiệu (Tuệ Tĩnh)",
@@ -229,6 +229,36 @@
       "anh_nguon": "Wikimedia Commons — Daoduyan09 · https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_th%E1%BB%9D_%C4%90%C3%A0o_Duy_T%E1%BB%AB_.jpg",
       "anh_giay_phep": "CC BY-SA 4.0",
       "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "cong-chua-ngoc-van",
+      "ten": "Công chúa Ngọc Vạn",
+      "lon": 106.823,
+      "lat": 10.95,
+      "loai": "khai-pha",
+      "nam_hien_thi": "đầu thế kỷ 17",
+      "mo_ta": "Con gái chúa Sãi Nguyễn Phúc Nguyên, kết hôn với vua Chân Lạp Chey Chettha II (1620), góp phần mở đường cho lưu dân người Việt vào khai khẩn vùng Đồng Nai – Gia Định một cách hoà bình, được xem là một trong những người có công lớn trong công cuộc mở cõi phương Nam.",
+      "dia_diem": "Về sau tương truyền lui về tu hành tại vùng Đồng Nai (địa điểm cụ thể chưa xác định)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Hội Nhà văn Việt Nam — vanvn.vn (Công chúa Ngọc Vạn và vùng đất Nam Bộ) — https://vanvn.vn/cong-chua-ngoc-van-va-vung-dat-nam-bo/"
+      ]
+    },
+    {
+      "id": "ngo-chi-lan",
+      "ten": "Ngô Chi Lan",
+      "lon": 105.846,
+      "lat": 21.201,
+      "loai": "van-hoc",
+      "nam_hien_thi": "thế kỷ 15 (thời Lê Thánh Tông)",
+      "mo_ta": "Bút hiệu Quỳnh Hương, quê làng Phù Lỗ. Được vua Lê Thánh Tông ban hiệu Kim Hoa nữ học sĩ, Phù Gia nữ học sĩ, tham gia các buổi xướng hoạ thơ trong cung đình và dạy văn thơ, lễ nghi cho các phi tần. Là một trong những nữ thi sĩ có đóng góp sớm cho văn học chữ Nôm và chữ Hán Việt Nam.",
+      "dia_diem": "Làng Phù Lỗ, huyện Kim Hoa xưa, nay thuộc huyện Sóc Sơn, thành phố Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "reviewed",
+      "nguon": [
+        "Cổng TTĐT Ủy ban Nhà nước về người Việt Nam ở nước ngoài — scov.gov.vn (Phù Gia nữ học sĩ Ngô Chi Lan) — https://scov.gov.vn/van-hoc-nghe-thuat/giai-thoai-viet-nam/phu-gia-nu-hoc-si-ngo-chi-lan.html"
+      ]
     }
   ]
 }
