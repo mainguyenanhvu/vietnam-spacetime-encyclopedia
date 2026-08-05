@@ -292,6 +292,7 @@ export interface ThuVienData {
   gioiThieu: VanXuoi[];
   suKy: VanXuoi[];
   vanXuoiVungMien: VanXuoi[];
+  thoMoi: VanXuoi[];
   anecdotes: Anecdote[];
   hcm: HcmPoem | null;
   caDao: CaDao[];
@@ -315,7 +316,7 @@ export async function loadLiterature(): Promise<ThuVienData> {
   if (literatureCache) return literatureCache;
   const [
     chuDe, poems, hcmWorks, aboutHcm, vanXuoiHcm, anecdotes, hcm,
-    caDao, baiHat, tuLieu, banDoCo, gioiThieu, suKy, vanXuoiVungMien,
+    caDao, baiHat, tuLieu, banDoCo, gioiThieu, suKy, vanXuoiVungMien, thoMoi,
   ] = await Promise.all([
     fetchJson("data/literature/_chu-de.json", itemsOf(parseChuDe)),
     fetchJson("data/literature/tho-yeu-nuoc.json", itemsOf(parsePoem)),
@@ -331,6 +332,9 @@ export async function loadLiterature(): Promise<ThuVienData> {
     fetchJson("data/literature/gioi-thieu-tac-pham.json", itemsOf(parseVanXuoi)),
     fetchJson("data/literature/su-ky-dia-chi.json", itemsOf(parseVanXuoi)),
     fetchJson("data/literature/van-xuoi-hien-thuc-vung-mien.json", itemsOf(parseVanXuoi)),
+    // Thêm sau khi nhánh này tách ra: 11 tác phẩm Thơ mới, chủ đề `tho-moi`.
+    // Thiếu dòng này thì tab «Thơ mới» không bao giờ hiện dù dữ liệu đã có.
+    fetchJson("data/literature/tho-moi-lang-man.json", itemsOf(parseVanXuoi)),
   ]);
   literatureCache = {
     chuDe: chuDe?.items ?? [],
@@ -341,6 +345,7 @@ export async function loadLiterature(): Promise<ThuVienData> {
     gioiThieu: gioiThieu?.items ?? [],
     suKy: suKy?.items ?? [],
     vanXuoiVungMien: vanXuoiVungMien?.items ?? [],
+    thoMoi: thoMoi?.items ?? [],
     anecdotes: anecdotes?.items ?? [],
     hcm,
     caDao: caDao?.items ?? [],
@@ -733,6 +738,7 @@ function gomMuc(lib: ThuVienData): Muc[] {
     ...lib.gioiThieu.map(mucTuVanXuoi),
     ...lib.suKy.map(mucTuVanXuoi),
     ...lib.vanXuoiVungMien.map(mucTuVanXuoi),
+    ...lib.thoMoi.map(mucTuVanXuoi),
     ...lib.anecdotes.map(mucTuAnecdote),
     ...lib.caDao.map(mucTuCaDao),
     ...lib.baiHat.map(mucTuBaiHat),

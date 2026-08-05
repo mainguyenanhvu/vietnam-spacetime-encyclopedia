@@ -1715,8 +1715,12 @@ input[type="range"] {
 .namtien-controls button,
 .battle-controls button,
 .journey-controls button {
-  min-height: 2.75rem;
-  min-width: 2.75rem;
+  /* max(…, 44px) chứ không phải 2.75rem trần: theme.css đặt
+     html { font-size: 0.94rem } nên 1rem = 15,04px và 2.75rem chỉ ra 41,4px —
+     đo trên Chrome được 41px. Cả khối này mang tên «vùng chạm tối thiểu 44px»
+     mà suốt thời gian qua chưa bao giờ đạt 44px. */
+  min-height: max(2.75rem, 44px);
+  min-width: max(2.75rem, 44px);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1733,12 +1737,12 @@ input[type="range"] {
 #journey-close,
 #quocgia-close,
 #timeline-close {
-  min-width: 2.75rem;
-  min-height: 2.75rem;
+  min-width: max(2.75rem, 44px);
+  min-height: max(2.75rem, 44px);
 }
 
 #dtx-select {
-  min-height: 2.75rem;
+  min-height: max(2.75rem, 44px);
 }
 
 /* Nhãn tick/chọn lớp phủ · thời kỳ · kiểu bản đồ — vùng bấm thật là cả
@@ -1746,14 +1750,14 @@ input[type="range"] {
    dùng chạm nhiều nhất trên di động (33 lớp phủ + 13 thời kỳ + 3 kiểu bản
    đồ trong #layer-control). */
 #layer-control label {
-  min-height: 2.75rem;
+  min-height: max(2.75rem, 44px);
 }
 
 /* Nút đóng popup do MapLibre tự sinh (maplibre-gl.css) — style.css đã ghi đè
    font-size/màu/padding của nó ở trên, giờ thêm vùng chạm tối thiểu. */
 .maplibregl-popup-close-button {
-  min-width: 2.75rem;
-  min-height: 2.75rem;
+  min-width: max(2.75rem, 44px);
+  min-height: max(2.75rem, 44px);
 }
 /* === /VÙNG CHẠM TỐI THIỂU === */
 
@@ -1798,7 +1802,7 @@ input[type="range"] {
 }
 #vn-search-input {
   width: 100%;
-  min-height: 2.75rem;
+  min-height: max(2.75rem, 44px);
   padding: 0 0.9rem;
   border-radius: var(--bo-vien-tron);
   border: 1px solid var(--vien-nhan-ro);
@@ -1848,7 +1852,7 @@ input[type="range"] {
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  min-height: 2.75rem;
+  min-height: max(2.75rem, 44px);
   padding: 0.4rem 0.8rem;
   cursor: pointer;
   color: var(--chu);
