@@ -1,0 +1,180 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Hương Khê 1885–1896 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "huong-khe-1885",
+  "ten": "Khởi nghĩa Hương Khê 1885–1896",
+  "nam": 1885,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phan Đình Phùng, Cao Thắng",
+  "doi_thu": "Pháp",
+  "dia_diem": "Căn cứ Ngàn Trươi – Vũ Quang, Hương Khê, Hà Tĩnh",
+  "lien_quan_tinh": [
+    "ha-tinh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          80
+        ],
+        [
+          500,
+          40
+        ],
+        [
+          900,
+          90
+        ]
+      ],
+      "nhan": "Vùng núi Ngàn Trươi – Vũ Quang"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          300,
+          450
+        ],
+        [
+          500,
+          350
+        ],
+        [
+          750,
+          300
+        ]
+      ],
+      "nhan": "Các tuyến tập kích đồn Pháp"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-can-vuong-ha-tinh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 500,
+      "nhan": "Hưởng ứng chiếu Cần Vương"
+    },
+    {
+      "id": "can-cu-ngan-truoi",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 200,
+      "nhan": "Căn cứ Ngàn Trươi – Vũ Quang"
+    },
+    {
+      "id": "xuong-che-sung",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 350,
+      "y": 260,
+      "nhan": "Xưởng chế tạo súng trường (Cao Thắng)"
+    },
+    {
+      "id": "quan-ta-nghia-quan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 620,
+      "y": 380,
+      "nhan": "Nghĩa quân tổ chức chính quy"
+    },
+    {
+      "id": "don-phap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 800,
+      "y": 280,
+      "nhan": "Đồn Pháp bị tập kích"
+    },
+    {
+      "id": "mui-tap-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        550,
+        360
+      ],
+      "den": [
+        770,
+        290
+      ],
+      "nhan": "Tập kích, phục kích"
+    },
+    {
+      "id": "co-hy-sinh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 450,
+      "nhan": "Cao Thắng, Phan Đình Phùng hy sinh"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Hưởng ứng chiếu Cần Vương",
+      "mo_ta": "Phan Đình Phùng, nguyên quan Ngự sử, đứng ra lãnh đạo phong trào kháng chiến tại Hà Tĩnh, hưởng ứng chiếu Cần Vương của vua Hàm Nghi.",
+      "hien": [
+        "co-can-vuong-ha-tinh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Xây dựng căn cứ Ngàn Trươi – Vũ Quang",
+      "mo_ta": "Nghĩa quân xây dựng hệ thống căn cứ liên hoàn tại vùng rừng núi Ngàn Trươi – Vũ Quang (Hương Khê, Hà Tĩnh).",
+      "hien": [
+        "co-can-vuong-ha-tinh",
+        "can-cu-ngan-truoi"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Cao Thắng chế tạo súng trường kiểu Pháp",
+      "mo_ta": "Cao Thắng nghiên cứu, chế tạo thành công súng trường mô phỏng kiểu Pháp, trang bị cho nghĩa quân — thành tựu kỹ thuật quân sự hiếm có của phong trào Cần Vương.",
+      "hien": [
+        "can-cu-ngan-truoi",
+        "xuong-che-sung"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tổ chức quân đội chính quy, đánh nhiều trận lớn",
+      "mo_ta": "Nghĩa quân được tổ chức thành nhiều thứ quân theo lối chính quy, liên tục tập kích, phục kích gây tổn thất cho quân Pháp.",
+      "hien": [
+        "can-cu-ngan-truoi",
+        "quan-ta-nghia-quan",
+        "don-phap",
+        "mui-tap-kich"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cầm cự suốt 10 năm",
+      "mo_ta": "Cuộc khởi nghĩa kéo dài từ 1885 đến 1896, trở thành cuộc khởi nghĩa quy mô và bền bỉ nhất phong trào Cần Vương.",
+      "hien": [
+        "quan-ta-nghia-quan",
+        "don-phap"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Phan Đình Phùng, Cao Thắng lần lượt hy sinh",
+      "mo_ta": "Cao Thắng hy sinh năm 1893, Phan Đình Phùng mất năm 1895; nghĩa quân tan rã không lâu sau đó nhưng để lại tấm gương bất khuất.",
+      "hien": [
+        "co-hy-sinh"
+      ]
+    }
+  ],
+  "ket_qua": "Cuộc khởi nghĩa quy mô và bền bỉ nhất phong trào Cần Vương, cầm cự suốt 10 năm với vũ khí tự chế.",
+  "y_nghia": "Đỉnh cao về tổ chức quân sự và kỹ thuật chế tạo vũ khí của phong trào Cần Vương, để lại tấm gương kiên trung của Phan Đình Phùng, Cao Thắng.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học) — khởi nghĩa Hương Khê",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "Sở VHTTDL Hà Tĩnh — di tích Vũ Quang – Hương Khê"
+  ]
+}

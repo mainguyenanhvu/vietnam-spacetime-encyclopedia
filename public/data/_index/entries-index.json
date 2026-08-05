@@ -1,8 +1,8 @@
 {
   "sinh_luc": {
-    "tong_muc": 4979,
+    "tong_muc": 5088,
     "tong_co_toa_do": 2531,
-    "so_nhom_trung_ten": 634,
+    "so_nhom_trung_ten": 644,
     "so_cap_trung_toa_do": 664,
     "ngay_sinh": "2026-08-05"
   },
@@ -57,6 +57,32 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bien-gioi-phia-bac-1979",
+      "slug": null,
+      "ten": "Chiến tranh bảo vệ biên giới phía Bắc 1979",
+      "ten_chuan": "chien tranh bao ve bien gioi phia bac 1979",
+      "file": "battles/bien-gioi-phia-bac-1979.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bien-gioi-tay-nam-1978-1979",
+      "slug": null,
+      "ten": "Chiến tranh bảo vệ biên giới Tây Nam 1978–1979",
+      "ten_chuan": "chien tranh bao ve bien gioi tay nam 1978 1979",
+      "file": "battles/bien-gioi-tay-nam-1978-1979.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 4,
       "trang_thai": "draft"
     },
     {
@@ -125,6 +151,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "chien-dich-xuan-loc-1975",
+      "slug": null,
+      "ten": "Chiến dịch Xuân Lộc",
+      "ten_chuan": "chien dich xuan loc",
+      "file": "battles/chien-dich-xuan-loc-1975.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "dien-bien-phu-1954",
       "slug": null,
       "ten": "Chiến dịch Điện Biên Phủ 1954",
@@ -164,11 +203,37 @@
       "trang_thai": "draft"
     },
     {
+      "id": "ha-noi-dien-bien-phu-tren-khong-1972",
+      "slug": null,
+      "ten": "«Điện Biên Phủ trên không» 1972",
+      "ten_chuan": "dien bien phu tren khong 1972",
+      "file": "battles/ha-noi-dien-bien-phu-tren-khong-1972.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "ham-tu-chuong-duong-1285",
       "slug": null,
       "ten": "Hàm Tử – Chương Dương 1285",
       "ten_chuan": "ham tu chuong duong 1285",
       "file": "battles/ham-tu-chuong-duong-1285.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "huong-khe-1885",
+      "slug": null,
+      "ten": "Khởi nghĩa Hương Khê 1885–1896",
+      "ten_chuan": "khoi nghia huong khe 1885 1896",
+      "file": "battles/huong-khe-1885.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -208,6 +273,19 @@
       "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu) 713–722",
       "ten_chuan": "khoi nghia mai thuc loan hoan chau 713 722",
       "file": "battles/khoi-nghia-mai-thuc-loan-713.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "kinh-thanh-hue-that-thu-1885",
+      "slug": null,
+      "ten": "Kinh thành Huế thất thủ (1885)",
+      "ten_chuan": "kinh thanh hue that thu 1885",
+      "file": "battles/kinh-thanh-hue-that-thu-1885.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -294,11 +372,37 @@
       "trang_thai": "draft"
     },
     {
+      "id": "tran-cau-giay-1873",
+      "slug": null,
+      "ten": "Trận Cầu Giấy (lần 1)",
+      "ten_chuan": "tran cau giay lan 1",
+      "file": "battles/tran-cau-giay-1873.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "tran-da-nang-1858",
       "slug": null,
       "ten": "Trận Đà Nẵng (mở đầu chống Pháp)",
       "ten_chuan": "tran da nang mo dau chong phap",
       "file": "battles/tran-da-nang-1858.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-van-tuong-1965",
+      "slug": null,
+      "ten": "Trận Vạn Tường",
+      "ten_chuan": "tran van tuong",
+      "file": "battles/tran-van-tuong-1965.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -356,6 +460,32 @@
       "lat": null,
       "lon": null,
       "so_nguon": 4,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "viet-bac-thu-dong-1947",
+      "slug": null,
+      "ten": "Chiến dịch Việt Bắc Thu Đông 1947",
+      "ten_chuan": "chien dich viet bac thu dong 1947",
+      "file": "battles/viet-bac-thu-dong-1947.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "yen-the-1884",
+      "slug": null,
+      "ten": "Khởi nghĩa Yên Thế 1884–1913",
+      "ten_chuan": "khoi nghia yen the 1884 1913",
+      "file": "battles/yen-the-1884.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
       "trang_thai": "draft"
     },
     {
@@ -12787,6 +12917,786 @@
       "trang_thai": "draft"
     },
     {
+      "id": "dac-thu-lam-tuyen-thanh-dao-ca",
+      "slug": null,
+      "ten": "Đắc thú lâm tuyền thành đạo ca",
+      "ten_chuan": "dac thu lam tuyen thanh dao ca",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tue-trung-thuong-si-ngu-luc",
+      "slug": null,
+      "ten": "Tuệ Trung Thượng Sĩ ngữ lục",
+      "ten_chuan": "tue trung thuong si ngu luc",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tieu-an-thi-tap",
+      "slug": null,
+      "ten": "Tiều ẩn thi tập",
+      "ten_chuan": "tieu an thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "that-tram-so",
+      "slug": null,
+      "ten": "Thất trảm sớ",
+      "ten_chuan": "that tram so",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngoc-tinh-lien-phu",
+      "slug": null,
+      "ten": "Ngọc tỉnh liên phú",
+      "ten_chuan": "ngoc tinh lien phu",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "gioi-hien-thi-tap",
+      "slug": null,
+      "ten": "Giới Hiên thi tập",
+      "ten_chuan": "gioi hien thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bach-van-am-thi-tap",
+      "slug": null,
+      "ten": "Bạch Vân am thi tập",
+      "ten_chuan": "bach van am thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bach-van-quoc-ngu-thi-tap",
+      "slug": null,
+      "ten": "Bạch Vân quốc ngữ thi tập",
+      "ten_chuan": "bach van quoc ngu thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tay-ho-thi-tap",
+      "slug": null,
+      "ten": "Tây hồ thi tập",
+      "ten_chuan": "tay ho thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "truyen-ky-tan-pha",
+      "slug": null,
+      "ten": "Truyền kỳ tân phả",
+      "ten_chuan": "truyen ky tan pha",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoa-tien",
+      "slug": null,
+      "ten": "Hoa Tiên",
+      "ten_chuan": "hoa tien",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "so-kinh-tan-trang",
+      "slug": null,
+      "ten": "Sơ kính tân trang",
+      "ten_chuan": "so kinh tan trang",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dam-san",
+      "slug": null,
+      "ten": "Đăm Săn (Bài ca Đam San)",
+      "ten_chuan": "dam san bai ca dam san",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "xinh-nha",
+      "slug": null,
+      "ten": "Xinh Nhã",
+      "ten_chuan": "xinh nha",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "xinh-chion",
+      "slug": null,
+      "ten": "Xinh Chiôn",
+      "ten_chuan": "xinh chion",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "de-dat-de-nuoc",
+      "slug": null,
+      "ten": "Đẻ đất đẻ nước",
+      "ten_chuan": "de dat de nuoc",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nam-kim-thi-dan",
+      "slug": null,
+      "ten": "Nam Kim - Thị Đan",
+      "ten_chuan": "nam kim thi dan",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "luu-dai-han-xuan",
+      "slug": null,
+      "ten": "Lưu Đài - Hán Xuân",
+      "ten_chuan": "luu dai han xuan",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "xong-chu-xon-xao",
+      "slug": null,
+      "ten": "Xống chụ xon xao (Tiễn dặn người yêu)",
+      "ten_chuan": "xong chu xon xao tien dan nguoi yeu",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tum-tieu-soc-trang",
+      "slug": null,
+      "ten": "Tum Tiêu (dị bản Sóc Trăng)",
+      "ten_chuan": "tum tieu di ban soc trang",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nhi-do-mai",
+      "slug": null,
+      "ten": "Nhị độ mai",
+      "ten_chuan": "nhi do mai",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tai-tu-da-cung-phu",
+      "slug": null,
+      "ten": "Tài tử đa cùng phú",
+      "ten_chuan": "tai tu da cung phu",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguc-trung-thi",
+      "slug": null,
+      "ten": "Ngục trung thi",
+      "ten_chuan": "nguc trung thi",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bai-ca-ngat-nguong",
+      "slug": null,
+      "ten": "Bài ca ngất ngưởng",
+      "ten_chuan": "bai ca ngat nguong",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chum-tho-thu-nguyen-khuyen",
+      "slug": null,
+      "ten": "Chùm thơ Thu (Thu điếu – Thu vịnh – Thu ẩm)",
+      "ten_chuan": "chum tho thu thu dieu thu vinh thu am",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bac-hanh-tap-luc",
+      "slug": null,
+      "ten": "Bắc hành tạp lục",
+      "ten_chuan": "bac hanh tap luc",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nam-trung-tap-ngam",
+      "slug": null,
+      "ten": "Nam trung tạp ngâm",
+      "ten_chuan": "nam trung tap ngam",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "long-thanh-cam-gia-ca",
+      "slug": null,
+      "ten": "Long Thành cầm giả ca",
+      "ten_chuan": "long thanh cam gia ca",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngu-phong-thi-tap",
+      "slug": null,
+      "ten": "Ngư Phong thi tập",
+      "ten_chuan": "ngu phong thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguc-trung-thu",
+      "slug": null,
+      "ten": "Ngục trung thư",
+      "ten_chuan": "nguc trung thu",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "trung-quang-tam-su",
+      "slug": null,
+      "ten": "Trùng Quang tâm sử",
+      "ten_chuan": "trung quang tam su",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thi-tu-tung-thoai",
+      "slug": null,
+      "ten": "Thi tù tùng thoại",
+      "ten_chuan": "thi tu tung thoai",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nam-chi-tap",
+      "slug": null,
+      "ten": "Nam Chi tập",
+      "ten_chuan": "nam chi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nu-gioi-chung",
+      "slug": null,
+      "ten": "Nữ giới chung",
+      "ten_chuan": "nu gioi chung",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "du-am-thi-van-tap",
+      "slug": null,
+      "ten": "Dụ Am thi văn tập",
+      "ten_chuan": "du am thi van tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nhi-thap-tu-hieu-dien-ca",
+      "slug": null,
+      "ten": "Nhị thập tứ hiếu diễn ca",
+      "ten_chuan": "nhi thap tu hieu dien ca",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "quan-am-thi-kinh-truyen-tho",
+      "slug": null,
+      "ten": "Quan Âm Thị Kính (truyện thơ)",
+      "ten_chuan": "quan am thi kinh truyen tho",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "trinh-thu",
+      "slug": null,
+      "ten": "Trinh Thử",
+      "ten_chuan": "trinh thu",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "luc-suc-tranh-cong",
+      "slug": null,
+      "ten": "Lục súc tranh công",
+      "ten_chuan": "luc suc tranh cong",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tong-tran-cuc-hoa",
+      "slug": null,
+      "ten": "Tống Trân - Cúc Hoa",
+      "ten_chuan": "tong tran cuc hoa",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "pham-tai-ngoc-hoa",
+      "slug": null,
+      "ten": "Phạm Tải - Ngọc Hoa",
+      "ten_chuan": "pham tai ngoc hoa",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "kim-thach-ky-duyen",
+      "slug": null,
+      "ten": "Kim Thạch kỳ duyên",
+      "ten_chuan": "kim thach ky duyen",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "son-hau-tuong",
+      "slug": null,
+      "ten": "Sơn Hậu",
+      "ten_chuan": "son hau",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thanh-hien-thi-tap",
+      "slug": null,
+      "ten": "Thanh Hiên thi tập",
+      "ten_chuan": "thanh hien thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chuyen-doi-xua",
+      "slug": null,
+      "ten": "Chuyện đời xưa",
+      "ten_chuan": "chuyen doi xua",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "duong-tu-ha-mau",
+      "slug": null,
+      "ten": "Dương Từ - Hà Mậu",
+      "ten_chuan": "duong tu ha mau",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngu-tieu-y-thuat-van-dap",
+      "slug": null,
+      "ten": "Ngư Tiều y thuật vấn đáp",
+      "ten_chuan": "ngu tieu y thuat van dap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dai-nam-quac-am-tu-vi",
+      "slug": null,
+      "ten": "Đại Nam quấc âm tự vị",
+      "ten_chuan": "dai nam quac am tu vi",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chuyen-giai-buon",
+      "slug": null,
+      "ten": "Chuyện giải buồn",
+      "ten_chuan": "chuyen giai buon",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "rung-xa-nu",
+      "slug": null,
+      "ten": "Rừng xà nu",
+      "ten_chuan": "rung xa nu",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "mua-lac",
+      "slug": null,
+      "ten": "Mùa lạc",
+      "ten_chuan": "mua lac",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hon-dat",
+      "slug": null,
+      "ten": "Hòn Đất",
+      "ten_chuan": "hon dat",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "truong-vien-cheo",
+      "slug": null,
+      "ten": "Trương Viên",
+      "ten_chuan": "truong vien",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chu-mai-than-cheo",
+      "slug": null,
+      "ten": "Chu Mãi Thần",
+      "ten_chuan": "chu mai than",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "kim-nham-cheo",
+      "slug": null,
+      "ten": "Kim Nham",
+      "ten_chuan": "kim nham",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "luu-binh-duong-le-cheo",
+      "slug": null,
+      "ten": "Lưu Bình - Dương Lễ",
+      "ten_chuan": "luu binh duong le",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "trinh-nguyen-cheo",
+      "slug": null,
+      "ten": "Trinh Nguyên",
+      "ten_chuan": "trinh nguyen",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tu-thuc-cheo",
+      "slug": null,
+      "ten": "Từ Thức",
+      "ten_chuan": "tu thuc",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thuong-son-thi-tap",
+      "slug": null,
+      "ten": "Thương Sơn thi tập",
+      "ten_chuan": "thuong son thi tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngoa-du-sao-thi-van-tap",
+      "slug": null,
+      "ten": "Ngọa Du Sào thi văn tập",
+      "ten_chuan": "ngoa du sao thi van tap",
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": null,
       "slug": null,
       "ten": "Lịch sử nước ta",
@@ -14013,6 +14923,136 @@
       "slug": null,
       "ten": "Hoàng Lê nhất thống chí",
       "ten_chuan": "hoang le nhat thong chi",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khoa-hu-luc",
+      "slug": null,
+      "ten": "Khóa hư lục",
+      "ten_chuan": "khoa hu luc",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thien-uyen-tap-anh",
+      "slug": null,
+      "ten": "Thiền uyển tập anh",
+      "ten_chuan": "thien uyen tap anh",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tang-thuong-ngau-luc",
+      "slug": null,
+      "ten": "Tang thương ngẫu lục",
+      "ten_chuan": "tang thuong ngau luc",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nam-ong-mong-luc",
+      "slug": null,
+      "ten": "Nam Ông mộng lục",
+      "ten_chuan": "nam ong mong luc",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "viet-su-tieu-an",
+      "slug": null,
+      "ten": "Việt sử tiêu án",
+      "ten_chuan": "viet su tieu an",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dai-viet-su-ky-tien-bien",
+      "slug": null,
+      "ten": "Đại Việt sử ký tiền biên",
+      "ten_chuan": "dai viet su ky tien bien",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "truc-lam-tong-chi-nguyen-thanh",
+      "slug": null,
+      "ten": "Trúc Lâm tông chỉ nguyên thanh",
+      "ten_chuan": "truc lam tong chi nguyen thanh",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "toan-viet-thi-luc",
+      "slug": null,
+      "ten": "Toàn Việt thi lục",
+      "ten_chuan": "toan viet thi luc",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoang-viet-thi-tuyen",
+      "slug": null,
+      "ten": "Hoàng Việt thi tuyển",
+      "ten_chuan": "hoang viet thi tuyen",
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "sai-gon-nam-xua",
+      "slug": null,
+      "ten": "Sài Gòn năm xưa",
+      "ten_chuan": "sai gon nam xua",
       "file": "literature/su-ky-dia-chi.json",
       "mien": "literature",
       "loai": null,
@@ -16427,6 +17467,149 @@
       "trang_thai": null
     },
     {
+      "id": "giot-le-thu",
+      "slug": null,
+      "ten": "Giọt lệ thu",
+      "ten_chuan": "giot le thu",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nho-rung",
+      "slug": null,
+      "ten": "Nhớ rừng",
+      "ten_chuan": "nho rung",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ong-do",
+      "slug": null,
+      "ten": "Ông đồ",
+      "ten_chuan": "ong do",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "the-non-nuoc",
+      "slug": null,
+      "ten": "Thề non nước",
+      "ten_chuan": "the non nuoc",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "day-thon-vi-da",
+      "slug": null,
+      "ten": "Đây thôn Vĩ Dạ",
+      "ten_chuan": "day thon vi da",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "trang-giang",
+      "slug": null,
+      "ten": "Tràng giang",
+      "ten_chuan": "trang giang",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dieu-tan",
+      "slug": null,
+      "ten": "Điêu tàn",
+      "ten_chuan": "dieu tan",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "linh-phuong-ky",
+      "slug": null,
+      "ten": "Linh Phượng ký",
+      "ten_chuan": "linh phuong ky",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "buc-tranh-que",
+      "slug": null,
+      "ten": "Bức tranh quê",
+      "ten_chuan": "buc tranh que",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "trua-he-bang-ba-lan",
+      "slug": null,
+      "ten": "Trưa hè",
+      "ten_chuan": "trua he",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-huong-nguyen-nhuoc-phap",
+      "slug": null,
+      "ten": "Chùa Hương",
+      "ten_chuan": "chua huong",
+      "file": "literature/tho-moi-lang-man.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "bac-oi",
       "slug": null,
       "ten": "Bác ơi!",
@@ -18075,6 +19258,240 @@
       "lat": null,
       "lon": null,
       "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vang-bong-mot-thoi",
+      "slug": null,
+      "ten": "Vang bóng một thời",
+      "ten_chuan": "vang bong mot thoi",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ha-noi-bam-sau-pho-phuong",
+      "slug": null,
+      "ten": "Hà Nội băm sáu phố phường",
+      "ten_chuan": "ha noi bam sau pho phuong",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thuong-nho-muoi-hai",
+      "slug": null,
+      "ten": "Thương nhớ mười hai",
+      "ten_chuan": "thuong nho muoi hai",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hon-buom-mo-tien",
+      "slug": null,
+      "ten": "Hồn bướm mơ tiên",
+      "ten_chuan": "hon buom mo tien",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngon-co-gio-dua",
+      "slug": null,
+      "ten": "Ngọn cỏ gió đùa",
+      "ten_chuan": "ngon co gio dua",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "cha-con-nghia-nang",
+      "slug": null,
+      "ten": "Cha con nghĩa nặng",
+      "ten_chuan": "cha con nghia nang",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bi-vo",
+      "slug": null,
+      "ten": "Bỉ vỏ",
+      "ten_chuan": "bi vo",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "leu-chong",
+      "slug": null,
+      "ten": "Lều chõng",
+      "ten_chuan": "leu chong",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "giong-to",
+      "slug": null,
+      "ten": "Giông tố",
+      "ten_chuan": "giong to",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ky-nghe-lay-tay",
+      "slug": null,
+      "ten": "Kỹ nghệ lấy Tây",
+      "ten_chuan": "ky nghe lay tay",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "doi-thua",
+      "slug": null,
+      "ten": "Đời thừa",
+      "ten_chuan": "doi thua",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "song-mon",
+      "slug": null,
+      "ten": "Sống mòn",
+      "ten_chuan": "song mon",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vo-nhat",
+      "slug": null,
+      "ten": "Vợ nhặt",
+      "ten_chuan": "vo nhat",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vu-nhu-to",
+      "slug": null,
+      "ten": "Vũ Như Tô",
+      "ten_chuan": "vu nhu to",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "de-men-phieu-luu-ky",
+      "slug": null,
+      "ten": "Dế Mèn phiêu lưu ký",
+      "ten_chuan": "de men phieu luu ky",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "do-doc",
+      "slug": null,
+      "ten": "Đò dọc",
+      "ten_chuan": "do doc",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "rung-mam",
+      "slug": null,
+      "ten": "Rừng mắm",
+      "ten_chuan": "rung mam",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "van-minh-miet-vuon",
+      "slug": null,
+      "ten": "Văn minh miệt vườn",
+      "ten_chuan": "van minh miet vuon",
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -67593,6 +69010,46 @@
       ]
     },
     {
+      "ten_chuan": "chien dich viet bac thu dong 1947",
+      "so_file": 2,
+      "files": [
+        "battles/viet-bac-thu-dong-1947.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/viet-bac-thu-dong-1947.json",
+          "id": "viet-bac-thu-dong-1947",
+          "ten": "Chiến dịch Việt Bắc Thu Đông 1947"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "viet-bac-thu-dong-1947",
+          "ten": "Chiến dịch Việt Bắc Thu Đông 1947"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich xuan loc",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dich-xuan-loc-1975.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-xuan-loc-1975.json",
+          "id": "chien-dich-xuan-loc-1975",
+          "ten": "Chiến dịch Xuân Lộc"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-xuan-loc-1975",
+          "ten": "Chiến dịch Xuân Lộc"
+        }
+      ]
+    },
+    {
       "ten_chuan": "chien thang dien bien phu tren khong",
       "so_file": 2,
       "files": [
@@ -67609,6 +69066,46 @@
           "file": "timeline/moc-lich-su.json",
           "id": "dien-bien-phu-tren-khong-1972",
           "ten": "Chiến thắng «Điện Biên Phủ trên không»"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien tranh bao ve bien gioi phia bac 1979",
+      "so_file": 2,
+      "files": [
+        "battles/bien-gioi-phia-bac-1979.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/bien-gioi-phia-bac-1979.json",
+          "id": "bien-gioi-phia-bac-1979",
+          "ten": "Chiến tranh bảo vệ biên giới phía Bắc 1979"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bien-gioi-phia-bac-1979",
+          "ten": "Chiến tranh bảo vệ biên giới phía Bắc 1979"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien tranh bao ve bien gioi tay nam 1978 1979",
+      "so_file": 2,
+      "files": [
+        "battles/bien-gioi-tay-nam-1978-1979.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/bien-gioi-tay-nam-1978-1979.json",
+          "id": "bien-gioi-tay-nam-1978-1979",
+          "ten": "Chiến tranh bảo vệ biên giới Tây Nam 1978–1979"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bien-gioi-tay-nam-1978-1979",
+          "ten": "Chiến tranh bảo vệ biên giới Tây Nam 1978–1979"
         }
       ]
     },
@@ -68509,6 +70006,26 @@
           "file": "media/images.json",
           "id": "quang-tri-dia-dao-vinh-moc",
           "ten": "Địa đạo Vịnh Mốc"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "dien bien phu tren khong 1972",
+      "so_file": 2,
+      "files": [
+        "battles/ha-noi-dien-bien-phu-tren-khong-1972.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/ha-noi-dien-bien-phu-tren-khong-1972.json",
+          "id": "ha-noi-dien-bien-phu-tren-khong-1972",
+          "ten": "«Điện Biên Phủ trên không» 1972"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "ha-noi-dien-bien-phu-tren-khong-1972",
+          "ten": "«Điện Biên Phủ trên không» 1972"
         }
       ]
     },
@@ -70343,6 +71860,26 @@
       ]
     },
     {
+      "ten_chuan": "khoi nghia huong khe 1885 1896",
+      "so_file": 2,
+      "files": [
+        "battles/huong-khe-1885.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/huong-khe-1885.json",
+          "id": "huong-khe-1885",
+          "ten": "Khởi nghĩa Hương Khê 1885–1896"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "huong-khe-1885",
+          "ten": "Khởi nghĩa Hương Khê 1885–1896"
+        }
+      ]
+    },
+    {
       "ten_chuan": "khoi nghia ly bi 542 544",
       "so_file": 2,
       "files": [
@@ -70463,6 +72000,26 @@
       ]
     },
     {
+      "ten_chuan": "khoi nghia yen the 1884 1913",
+      "so_file": 2,
+      "files": [
+        "battles/yen-the-1884.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/yen-the-1884.json",
+          "id": "yen-the-1884",
+          "ten": "Khởi nghĩa Yên Thế 1884–1913"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "yen-the-1884",
+          "ten": "Khởi nghĩa Yên Thế 1884–1913"
+        }
+      ]
+    },
+    {
       "ten_chuan": "khong gian van hoa cong chieng tay nguyen",
       "so_file": 2,
       "files": [
@@ -70579,6 +72136,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Kinh Dương Vương (Lộc Tục)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "kinh thanh hue that thu 1885",
+      "so_file": 2,
+      "files": [
+        "battles/kinh-thanh-hue-that-thu-1885.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/kinh-thanh-hue-that-thu-1885.json",
+          "id": "kinh-thanh-hue-that-thu-1885",
+          "ten": "Kinh thành Huế thất thủ (1885)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "kinh-thanh-hue-that-thu-1885",
+          "ten": "Kinh thành Huế thất thủ (1885)"
         }
       ]
     },
@@ -76498,6 +78075,26 @@
       ]
     },
     {
+      "ten_chuan": "tran cau giay lan 1",
+      "so_file": 2,
+      "files": [
+        "battles/tran-cau-giay-1873.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-cau-giay-1873.json",
+          "id": "tran-cau-giay-1873",
+          "ten": "Trận Cầu Giấy (lần 1)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-cau-giay-1873",
+          "ten": "Trận Cầu Giấy (lần 1)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran chanh chieu",
       "so_file": 2,
       "files": [
@@ -77184,6 +78781,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trần Văn Thành (Hưng Ký)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran van tuong",
+      "so_file": 2,
+      "files": [
+        "battles/tran-van-tuong-1965.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-van-tuong-1965.json",
+          "id": "tran-van-tuong-1965",
+          "ten": "Trận Vạn Tường"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-van-tuong-1965",
+          "ten": "Trận Vạn Tường"
         }
       ]
     },

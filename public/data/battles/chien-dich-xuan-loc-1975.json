@@ -1,0 +1,181 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Xuân Lộc 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-xuan-loc-1975",
+  "ten": "Chiến dịch Xuân Lộc",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hoàng Cầm (Tư lệnh Quân đoàn 4)",
+  "doi_thu": "Quân lực Việt Nam Cộng hòa (Sư đoàn 18)",
+  "dia_diem": "Xuân Lộc, tỉnh Long Khánh (nay Đồng Nai)",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          500,
+          320
+        ],
+        [
+          900,
+          300
+        ]
+      ],
+      "nhan": "Quốc lộ 1 — Xuân Lộc – Sài Gòn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thi-xa-xuan-loc",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 430,
+      "y": 300,
+      "nhan": "Thị xã Xuân Lộc (Sư đoàn 18 tử thủ)"
+    },
+    {
+      "id": "quan-ta-quan-doan-4",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 820,
+      "y": 250,
+      "nhan": "Quân đoàn 4 (Hoàng Cầm)"
+    },
+    {
+      "id": "mui-tien-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        720,
+        270
+      ],
+      "den": [
+        540,
+        300
+      ],
+      "nhan": "Mở màn tiến công"
+    },
+    {
+      "id": "mui-dich-phan-kich",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        500,
+        320
+      ],
+      "den": [
+        650,
+        280
+      ],
+      "nhan": "Địch phản kích quyết liệt"
+    },
+    {
+      "id": "mui-danh-vong-ngoai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        750,
+        220
+      ],
+      "den": [
+        400,
+        200
+      ],
+      "nhan": "Chuyển hướng đánh vòng ngoài"
+    },
+    {
+      "id": "duong-tiep-vien-cat",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 250,
+      "nhan": "Đường tiếp viện bị cắt"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 570,
+      "y": 240,
+      "nhan": "Giải phóng Xuân Lộc — mở cánh cửa thép"
+    },
+    {
+      "id": "huong-sai-gon",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 330,
+      "nhan": "Hướng Sài Gòn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Xuân Lộc — \"cánh cửa thép\" bảo vệ Sài Gòn",
+      "mo_ta": "Quân đội Sài Gòn coi Xuân Lộc là tuyến phòng ngự then chốt phía đông, bố trí Sư đoàn 18 cùng lực lượng tinh nhuệ tử thủ.",
+      "hien": [
+        "thi-xa-xuan-loc"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân đoàn 4 mở màn tiến công (9/4/1975)",
+      "mo_ta": "Quân đoàn 4 do Hoàng Cầm chỉ huy mở màn tiến công vào thị xã Xuân Lộc.",
+      "hien": [
+        "thi-xa-xuan-loc",
+        "quan-ta-quan-doan-4",
+        "mui-tien-cong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Địch phản kích quyết liệt",
+      "mo_ta": "Quân Sài Gòn dồn lực lượng tinh nhuệ phản kích dữ dội, chiến sự giằng co ác liệt hơn dự kiến trong nhiều ngày.",
+      "hien": [
+        "thi-xa-xuan-loc",
+        "mui-dich-phan-kich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Ta chuyển hướng đánh vòng ngoài",
+      "mo_ta": "Nhận thấy đánh trực diện tổn thất lớn, quân ta vận dụng mưu kế, chuyển hướng đánh các mục tiêu vòng ngoài để cô lập Xuân Lộc.",
+      "hien": [
+        "quan-ta-quan-doan-4",
+        "mui-danh-vong-ngoai"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cô lập, cắt đường tiếp viện",
+      "mo_ta": "Quân ta cắt đứt các tuyến đường tiếp viện, cô lập hoàn toàn tuyến phòng ngự Xuân Lộc.",
+      "hien": [
+        "duong-tiep-vien-cat",
+        "mui-danh-vong-ngoai"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Giải phóng Xuân Lộc, mở \"cánh cửa thép\" (21/4/1975)",
+      "mo_ta": "Địch buộc phải bỏ Xuân Lộc rút chạy; thị xã Xuân Lộc và toàn tỉnh Long Khánh được giải phóng, mở đường tiến vào Sài Gòn từ hướng đông.",
+      "hien": [
+        "thi-xa-xuan-loc",
+        "co-thang",
+        "huong-sai-gon"
+      ]
+    }
+  ],
+  "ket_qua": "Ngày 21/4/1975 thị xã Xuân Lộc và toàn tỉnh Long Khánh được giải phóng, mở 'cánh cửa thép' phía đông trên đường tiến vào Sài Gòn.",
+  "y_nghia": "Trận đánh then chốt cuối cùng trước Chiến dịch Hồ Chí Minh, thể hiện nghệ thuật dùng mưu kế chuyển hướng tiến công khi gặp phòng ngự kiên cố.",
+  "trang_thai": "draft",
+  "nguon": [
+    "qdnd.vn — Chiến dịch Xuân Lộc, điển hình về nghệ thuật dùng mưu kế đánh địch",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

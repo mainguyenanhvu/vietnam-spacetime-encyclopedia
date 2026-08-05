@@ -1,0 +1,150 @@
+{
+  "ghi_chu": "Sa đồ trận Vạn Tường 1965 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-van-tuong-1965",
+  "ten": "Trận Vạn Tường",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân khu 5",
+  "doi_thu": "Lính thủy đánh bộ Mỹ",
+  "dia_diem": "Vạn Tường, Bình Sơn, Quảng Ngãi",
+  "lien_quan_tinh": [
+    "quang-ngai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          1000,
+          50
+        ],
+        [
+          1000,
+          300
+        ],
+        [
+          750,
+          250
+        ]
+      ],
+      "nhan": "Biển Đông"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-do-bo",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 850,
+      "y": 150,
+      "nhan": "Lính thủy đánh bộ Mỹ đổ bộ"
+    },
+    {
+      "id": "quan-dich-truc-thang",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 120,
+      "nhan": "Đổ quân bằng trực thăng"
+    },
+    {
+      "id": "quan-ta-tran-dia",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 470,
+      "y": 350,
+      "nhan": "Trận địa quân dân ta"
+    },
+    {
+      "id": "quan-ta-chu-luc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 420,
+      "nhan": "Bộ đội chủ lực Quân khu 5"
+    },
+    {
+      "id": "mui-danh-bat",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        380
+      ],
+      "den": [
+        600,
+        200
+      ],
+      "nhan": "Đánh bật các mũi đổ bộ"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 280,
+      "nhan": "Bẻ gãy cuộc hành quân"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mỹ đổ bộ, mở cuộc hành quân \"tìm diệt\"",
+      "mo_ta": "Ngày 18/8/1965, lính thủy đánh bộ Mỹ đổ bộ đường biển kết hợp trực thăng vận, mở cuộc hành quân càn quét quy mô lớn vào thôn Vạn Tường.",
+      "hien": [
+        "quan-dich-do-bo",
+        "quan-dich-truc-thang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân dân ta bố trí trận địa đón đánh",
+      "mo_ta": "Bộ đội chủ lực Quân khu 5 cùng dân quân du kích địa phương đã bố trí công sự, trận địa đón đánh từ trước.",
+      "hien": [
+        "quan-ta-tran-dia",
+        "quan-ta-chu-luc"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh bật các mũi đổ bộ",
+      "mo_ta": "Quân ta đánh trả quyết liệt các mũi đổ bộ đường biển và đổ quân bằng trực thăng của địch.",
+      "hien": [
+        "quan-ta-tran-dia",
+        "quan-dich-do-bo",
+        "quan-dich-truc-thang",
+        "mui-danh-bat"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bẻ gãy cuộc hành quân càn quét",
+      "mo_ta": "Sau một ngày chiến đấu ác liệt, quân ta bẻ gãy cuộc hành quân, gây thiệt hại nặng cho quân Mỹ.",
+      "hien": [
+        "quan-ta-tran-dia",
+        "co-thang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở phong trào \"tìm Mỹ mà đánh\"",
+      "mo_ta": "Chiến thắng Vạn Tường chứng minh khả năng đánh thắng quân viễn chinh Mỹ ngay từ trận đầu, mở ra phong trào thi đua \"tìm Mỹ mà đánh, tìm ngụy mà diệt\" trên khắp miền Nam.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Chứng minh khả năng đánh thắng quân Mỹ, mở phong trào 'tìm Mỹ mà đánh'.",
+  "y_nghia": "Trận đánh lớn đầu tiên trực diện quân viễn chinh Mỹ, đặt nền tảng tinh thần và chiến thuật cho giai đoạn đánh Mỹ trên chiến trường miền Nam.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học)",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "qdnd.vn — Chiến thắng Vạn Tường, đòn phủ đầu quân viễn chinh Mỹ"
+  ]
+}

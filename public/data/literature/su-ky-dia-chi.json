@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "",
+  "ghi_chu": "Tác phẩm được GIỚI THIỆU, không in nguyên văn. Xem _chu-de.json cho trục chủ đề.",
   "items": [
     {
       "id": "dai-viet-su-ky-toan-thu-gt",
@@ -62,7 +62,7 @@
       "the_loai": "Địa chí chữ Hán và chữ Nôm, 6 phần (Tinh dã chí, Sơn xuyên chí, Cương vực chí, Phong tục chí, Vật sản chí, Thành trì chí)",
       "ban_quyen": "public-domain",
       "lien_quan_tinh": [
-        "tp-hcm",
+        "thanh-pho-ho-chi-minh",
         "dong-nai"
       ],
       "gioi_thieu": "Ghi chép công phu về núi sông, khí hậu, hành chính, thành trì, phong tục và sinh hoạt cư dân vùng đất Gia Định từ khi Nguyễn Hữu Cảnh kinh lược (1698) đến đầu thế kỷ XIX — sử liệu Nam Bộ quan trọng nhất còn lại từ thời Nguyễn sơ.",
@@ -175,6 +175,181 @@
       ],
       "chu_de": "su-ky-dia-chi",
       "trang_thai": "draft"
+    },
+    {
+      "id": "khoa-hu-luc",
+      "ten": "Khóa hư lục",
+      "tac_gia": "Trần Thái Tông",
+      "the_ky": "XIII",
+      "the_loai": "Luận thuyết Phật học (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Tác phẩm Phật học lớn của Trần Thái Tông khi làm Thái thượng hoàng, dân gian tôn là \"Khóa hư kinh\". Gồm phần thuyết pháp, phần bàn phép tu và phần văn tế lễ, cốt lõi tư tưởng là \"kiến tính thành Phật\".",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Tạp chí Giác Ngộ (Giáo hội Phật giáo VN) — https://giacngo.vn/hinh-anh-con-nguoi-giac-ngo-giai-thoat-trong-tac-pham-khoa-hu-luc-cua-tran-thai-tong-post73787.html"
+      ],
+      "can_tra_them": "Nguồn Phật giáo chính thống (Giáo hội PGVN) được team-lead duyệt có điều kiện — cần tìm thêm cổng nhà nước thay thế khi có thể."
+    },
+    {
+      "id": "thien-uyen-tap-anh",
+      "ten": "Thiền uyển tập anh",
+      "tac_gia": "Khuyết danh (khắc in lại 1715, bản gốc TK XIV)",
+      "the_ky": "XIV",
+      "the_loai": "Biên niên sử Phật giáo (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Sách ghi chép hành trạng các thiền sư nổi tiếng Việt Nam từ cuối Bắc thuộc qua Đinh, Lê, Lý, khắc gỗ năm Đinh Sửu (1337), bản in lại đời Lê Vĩnh Thịnh (1715) tại chùa Tiên Sơn (Từ Sơn). Vừa có giá trị sử Phật giáo vừa có giá trị văn học, triết học, văn hoá dân gian.",
+      "lien_quan_tinh": [
+        "bac-ninh"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Sở VHTTDL Bắc Giang — https://svhttdl.bacgiang.gov.vn/chi-tiet-tin-tuc/-/asset_publisher/xqtf4Gcdcef5/content/gioi-thieu-tai-lieu-ia-chi-thien-uyen-tap-anh-ngu-luc"
+      ]
+    },
+    {
+      "id": "tang-thuong-ngau-luc",
+      "ten": "Tang thương ngẫu lục",
+      "tac_gia": "Phạm Đình Hổ & Nguyễn Án",
+      "the_ky": "Cuối XVIII – đầu XIX",
+      "the_loai": "Tạp bút (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "90 truyện (40+50, chia 2 quyển) ghi việc \"mắt thấy tai nghe\" quanh triều đình và dân gian cuối Lê đầu Nguyễn — phản ánh một xã hội biến động, không phải chính sử mà là ghi chép đời thường giàu ý nghĩa.",
+      "lien_quan_tinh": [
+        "hai-phong",
+        "ha-noi"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Viện Khảo cổ học (khaocohoc.gov.vn) — http://khaocohoc.gov.vn/tang-thuong-ngau-luc"
+      ]
+    },
+    {
+      "id": "nam-ong-mong-luc",
+      "ten": "Nam Ông mộng lục",
+      "tac_gia": "Hồ Nguyên Trừng",
+      "the_ky": "XV",
+      "the_loai": "Hồi ký (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Tập hồi ký chữ Hán đầu tiên của văn học Việt Nam, viết khi tác giả làm quan lưu vong tại nhà Minh, mở đầu xu hướng viết \"người thật việc thật\" trong văn xuôi tự sự Việt Nam. Còn 28/31 thiên.",
+      "lien_quan_tinh": [
+        "thanh-hoa"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Thư viện Hà Nội — https://tracuu.thuvien.hanoi.gov.vn/tai-lieu-chi-tiet/nam-ong-mong-luc--ho-nguyen-trung-nguoi-dich-au-dam-la-son-26558.html"
+      ]
+    },
+    {
+      "id": "viet-su-tieu-an",
+      "ten": "Việt sử tiêu án",
+      "tac_gia": "Ngô Thì Sĩ",
+      "nam": "1775",
+      "the_loai": "Sử ký (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Bộ sử từ thời Hồng Bàng đến thuộc Minh, biên soạn nhằm đính chính sai lầm trong các bộ sử cũ. Nhiều nhận định của Ngô Thì Sĩ được các sử gia đời sau, trong đó có Phan Huy Chú, trích dẫn.",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Cục Bản quyền tác giả (scov.gov.vn) — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/ngo-thi-si-mot-tai-nang-va-nhan-cach-cao-dep.html"
+      ]
+    },
+    {
+      "id": "dai-viet-su-ky-tien-bien",
+      "ten": "Đại Việt sử ký tiền biên",
+      "tac_gia": "Ngô Thì Sĩ (Ngô Thì Nhậm hiệu đính, khắc in 1800)",
+      "the_ky": "XVIII",
+      "the_loai": "Sử ký (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Một trong các công trình sử học lớn của Ngô Thì Sĩ, được con trai Ngô Thì Nhậm hiệu đính và cho khắc in — bổ sung, đính chính nhiều điểm so với Đại Việt sử ký toàn thư.",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Cục Bản quyền tác giả (scov.gov.vn) — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/ngo-thi-si-mot-tai-nang-va-nhan-cach-cao-dep.html"
+      ],
+      "can_tra_them": "Cần đối chiếu thêm với Lịch triều hiến chương loại chí — Văn tịch chí để xác nhận chi tiết quá trình biên soạn/khắc in."
+    },
+    {
+      "id": "truc-lam-tong-chi-nguyen-thanh",
+      "ten": "Trúc Lâm tông chỉ nguyên thanh",
+      "tac_gia": "Ngô Thì Nhậm (cùng Vũ Trinh, Nguyễn Đăng Sở)",
+      "nam": "1796",
+      "the_loai": "Luận thuyết Phật học (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Tác phẩm triết học Thiền tông cuối đời Ngô Thì Nhậm, kết hợp văn chương và triết lý theo lối công án — viết để chấn hưng tinh thần nhập thế của Thiền phái Trúc Lâm do ông sáng lập lại tại chùa Bích Câu, Thăng Long.",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Tạp chí Giác Ngộ — https://giacngo.vn/kinh-vien-giac-truc-lam-tong-chi-nguyen-thanh-post24330.html"
+      ],
+      "can_tra_them": "Nguồn Phật giáo chính thống (Giáo hội PGVN) được team-lead duyệt có điều kiện."
+    },
+    {
+      "id": "toan-viet-thi-luc",
+      "ten": "Toàn Việt thi lục",
+      "tac_gia": "Lê Quý Đôn (chủ biên)",
+      "nam": "1768",
+      "the_loai": "Hợp tuyển thơ (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Tuyển tập 2.391 bài thơ của 175 tác giả từ đời Lý đến đầu Lê (đến 1527), dâng vua Lê Hiển Tông — được xem là hợp tuyển thơ ca quy mô và khoa học nhất trước thế kỷ XIX.",
+      "lien_quan_tinh": [
+        "hung-yen"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Cục Bản quyền tác giả (scov.gov.vn) — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/nha-bac-hoc-le-quy-don.html"
+      ]
+    },
+    {
+      "id": "hoang-viet-thi-tuyen",
+      "ten": "Hoàng Việt thi tuyển",
+      "tac_gia": "Bùi Huy Bích (tuyển soạn)",
+      "nam": "1788 (soạn xong), 1825 (khắc in)",
+      "the_loai": "Hợp tuyển thơ (chữ Hán)",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Tuyển tập thơ chữ Hán các tác giả Việt Nam từ đời Lý đến Lê, 6 quyển sắp theo thời gian — cùng với \"Hoàng Việt văn tuyển\", là công trình sưu tầm biên soạn văn học trung đại quy mô cuối cùng thời phong kiến.",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft",
+      "sources": [
+        "Hội Nhà Văn Việt Nam — https://vanvn.vn/bui-huy-bich-vi-hoang-giap-3-lan-tu-choi-lam-quan/",
+        "ĐH Sư phạm Hà Nội — https://nguvan.hnue.edu.vn/DesktopModules/News.Display/Print.aspx?bai-viet=he-thong-the-loai-trong-tac-pham-hoang-viet-van-tuyen-cua-bui-huy-bich-899"
+      ]
+    },
+    {
+      "id": "sai-gon-nam-xua",
+      "ten": "Sài Gòn năm xưa",
+      "tac_gia": "Vương Hồng Sển",
+      "the_ky": "XX",
+      "the_loai": "Khảo cứu địa chí",
+      "chu_de": "su-ky-dia-chi",
+      "tom_tat": "Công trình khảo cứu công phu về lịch sử hình thành Sài Gòn - Chợ Lớn, từ vùng đất Prey Nokor của Cao Miên đến Bến Nghé, Đề Ngạn rồi thành Sài Gòn - Chợ Lớn ngày nay, nằm trong bộ khảo cứu về Lục tỉnh Nam Kỳ của tác giả.",
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "ban_quyen": "cited-excerpt",
+      "trang_thai": "draft",
+      "sources": [
+        "NXB Trẻ — https://www.nxbtre.com.vn/sach/sai-gon-nam-xua-158452.html"
+      ]
     }
   ],
   "ngay_cap_nhat": "2026-08-05"

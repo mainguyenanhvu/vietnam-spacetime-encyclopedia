@@ -1,0 +1,156 @@
+{
+  "ghi_chu": "Sa đồ trận Cầu Giấy lần 1 (1873) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-cau-giay-1873",
+  "ten": "Trận Cầu Giấy (lần 1)",
+  "nam": 1873,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lưu Vĩnh Phúc (Cờ Đen), Hoàng Tá Viêm",
+  "doi_thu": "Pháp (Francis Garnier)",
+  "dia_diem": "Cầu Giấy, Hà Nội",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          650,
+          250
+        ],
+        [
+          450,
+          320
+        ],
+        [
+          300,
+          380
+        ]
+      ],
+      "nhan": "Đường Garnier ra Cầu Giấy"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-ha-noi",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 230,
+      "nhan": "Thành Hà Nội (Garnier chiếm giữ)"
+    },
+    {
+      "id": "quan-ta-co-den",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 420,
+      "nhan": "Lưu Vĩnh Phúc — quân Cờ Đen"
+    },
+    {
+      "id": "quan-ta-trieu-dinh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 480,
+      "nhan": "Hoàng Tá Viêm — quan quân triều đình"
+    },
+    {
+      "id": "dia-diem-cau-giay",
+      "kieu": "dia-danh",
+      "x": 411,
+      "y": 435,
+      "nhan": "Cầu Giấy"
+    },
+    {
+      "id": "quan-dich-garnier",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 300,
+      "nhan": "Garnier dẫn quân nhỏ ra ứng chiến"
+    },
+    {
+      "id": "mui-phuc-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        410
+      ],
+      "den": [
+        520,
+        320
+      ],
+      "nhan": "Đánh úp bất ngờ"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Garnier tử trận"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Garnier đánh chiếm thành Hà Nội",
+      "mo_ta": "Tháng 11/1873, Francis Garnier đem quân Pháp đánh chiếm thành Hà Nội, mở rộng đánh chiếm các tỉnh lân cận.",
+      "hien": [
+        "thanh-ha-noi"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân Cờ Đen phối hợp quan quân triều đình",
+      "mo_ta": "Lưu Vĩnh Phúc chỉ huy quân Cờ Đen phối hợp với quan quân triều đình (Hoàng Tá Viêm) tổ chức phục kích.",
+      "hien": [
+        "thanh-ha-noi",
+        "quan-ta-co-den",
+        "quan-ta-trieu-dinh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bố trí trận địa phục kích tại Cầu Giấy",
+      "mo_ta": "Quân ta bí mật bố trí lực lượng mai phục tại khu vực Cầu Giấy, ngoại thành Hà Nội.",
+      "hien": [
+        "quan-ta-co-den",
+        "quan-ta-trieu-dinh",
+        "dia-diem-cau-giay"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Garnier khinh địch, dẫn quân nhỏ ra ứng chiến",
+      "mo_ta": "Ngày 21/12/1873, Garnier chủ quan dẫn một toán quân nhỏ ra khỏi thành ứng chiến, lọt vào ổ phục kích.",
+      "hien": [
+        "dia-diem-cau-giay",
+        "quan-dich-garnier",
+        "thanh-ha-noi"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Garnier tử trận",
+      "mo_ta": "Quân Cờ Đen bất ngờ đánh úp, Francis Garnier bị giết tại trận; cái chết của y góp phần buộc Pháp ký Hòa ước Giáp Tuất 1874.",
+      "hien": [
+        "dia-diem-cau-giay",
+        "quan-dich-garnier",
+        "mui-phuc-kich",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Garnier tử trận, góp phần buộc Pháp ký Hòa ước Giáp Tuất 1874.",
+  "y_nghia": "Chứng minh khả năng đánh bại chỉ huy quân xâm lược Pháp ngay tại Bắc Kỳ, cổ vũ tinh thần kháng chiến trong giai đoạn đầu chống Pháp.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "sknc.qdnd.vn — Tổng đốc chỉ huy bảo vệ thành Hà Nội / Danh tướng Nguyễn Tri Phương"
+  ]
+}

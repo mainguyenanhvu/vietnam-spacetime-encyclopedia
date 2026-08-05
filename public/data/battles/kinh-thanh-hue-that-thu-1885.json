@@ -1,0 +1,210 @@
+{
+  "ghi_chu": "Sa đồ Kinh thành Huế thất thủ 1885 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Nội dung bám sát mo_ta đã duyệt trong chien-dich-tran-danh.json, không suy diễn thêm. trang_thai=draft chờ soát §9.",
+  "id": "kinh-thanh-hue-that-thu-1885",
+  "ten": "Kinh thành Huế thất thủ (1885)",
+  "nam": 1885,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Tôn Thất Thuyết, Tôn Thất Lệ",
+  "doi_thu": "Pháp (Roussel de Courcy)",
+  "dia_diem": "Kinh thành Huế — đồn Mang Cá và Toà Khâm sứ Pháp",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          200,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          800,
+          370
+        ]
+      ],
+      "nhan": "Sông Hương"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          500,
+          250
+        ],
+        [
+          650,
+          150
+        ],
+        [
+          850,
+          80
+        ]
+      ],
+      "nhan": "Đường ra sơn phòng Tân Sở"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-de-courcy",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 670,
+      "y": 400,
+      "nhan": "De Courcy đòi vào chầu có vũ trang"
+    },
+    {
+      "id": "quan-ta-ton-that-thuyet",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Tôn Thất Thuyết quyết định ra tay trước"
+    },
+    {
+      "id": "don-mang-ca",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 250,
+      "y": 460,
+      "nhan": "Đồn Mang Cá"
+    },
+    {
+      "id": "toa-kham-su",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 550,
+      "y": 460,
+      "nhan": "Toà Khâm sứ Pháp"
+    },
+    {
+      "id": "mui-tap-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        420
+      ],
+      "den": [
+        500,
+        450
+      ],
+      "nhan": "Tập kích hai mũi"
+    },
+    {
+      "id": "mui-dich-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        600,
+        420
+      ],
+      "den": [
+        400,
+        380
+      ],
+      "nhan": "Pháp phản công"
+    },
+    {
+      "id": "kinh-thanh-hue",
+      "kieu": "thanh",
+      "x": 450,
+      "y": 330,
+      "nhan": "Kinh thành Huế"
+    },
+    {
+      "id": "vua-ham-nghi",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 650,
+      "y": 180,
+      "nhan": "Vua Hàm Nghi ra Tân Sở"
+    },
+    {
+      "id": "dia-diem-tan-so",
+      "kieu": "dia-danh",
+      "x": 850,
+      "y": 100,
+      "nhan": "Sơn phòng Tân Sở"
+    },
+    {
+      "id": "co-can-vuong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 910,
+      "y": 150,
+      "nhan": "Chiếu Cần Vương"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Pháp ép triều đình, De Courcy đòi vào chầu có vũ trang",
+      "mo_ta": "Tháng 7/1885, tướng Pháp Roussel de Courcy gây sức ép, đòi vào điện làm lễ trình quốc thư với đội quân vũ trang hộ tống, khiến triều đình lo ngại âm mưu khống chế.",
+      "hien": [
+        "kinh-thanh-hue",
+        "quan-dich-de-courcy"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tôn Thất Thuyết quyết định ra tay trước",
+      "mo_ta": "Nhận thấy nguy cơ, Thượng thư Tôn Thất Thuyết quyết định chủ động tấn công trước, chia quân triều đình làm hai mũi.",
+      "hien": [
+        "kinh-thanh-hue",
+        "quan-ta-ton-that-thuyet"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tập kích đồn Mang Cá và Toà Khâm sứ (đêm 22 rạng 23/5 Ất Dậu)",
+      "mo_ta": "Một mũi đánh đồn Mang Cá, mũi kia do Tôn Thất Lệ vượt sông Hương đánh Toà Khâm sứ Pháp, gây thiệt hại nặng ban đầu.",
+      "hien": [
+        "don-mang-ca",
+        "toa-kham-su",
+        "mui-tap-kich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Pháp phản công, kinh thành thất thủ",
+      "mo_ta": "Khoảng 4 giờ sáng quân Pháp phản công; đến 9 giờ sáng 5/7/1885 kinh thành thất thủ, quân Pháp tràn vào Đại Nội.",
+      "hien": [
+        "kinh-thanh-hue",
+        "mui-dich-phan-cong",
+        "quan-dich-de-courcy"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tôn Thất Thuyết đưa vua Hàm Nghi ra sơn phòng Tân Sở",
+      "mo_ta": "Tôn Thất Thuyết hộ giá vua Hàm Nghi rời kinh thành, ra sơn phòng Tân Sở (Quảng Trị) lánh nạn.",
+      "hien": [
+        "vua-ham-nghi",
+        "dia-diem-tan-so"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Chiếu Cần Vương",
+      "mo_ta": "8 ngày sau, vua Hàm Nghi ban chiếu Cần Vương tại Tân Sở, mở đầu phong trào kháng Pháp có tổ chức khắp Trung – Bắc Kỳ.",
+      "hien": [
+        "dia-diem-tan-so",
+        "co-can-vuong"
+      ]
+    }
+  ],
+  "ket_qua": "Tập kích ban đầu gây thiệt hại cho Pháp nhưng kinh thành thất thủ; vua Hàm Nghi ra Tân Sở ban chiếu Cần Vương.",
+  "y_nghia": "Mở đầu phong trào Cần Vương — giai đoạn kháng chiến có tổ chức rộng khắp Trung – Bắc Kỳ, dù thất bại về quân sự trước mắt.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam Thực Lục — Chính biên Đệ lục kỷ phụ biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "Cổng TTĐT tỉnh Thừa Thiên Huế — Thừa Thiên Huế đấu tranh chống thực dân Pháp (1885-1916)"
+  ]
+}

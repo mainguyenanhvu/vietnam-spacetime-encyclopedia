@@ -1,0 +1,158 @@
+{
+  "ghi_chu": "Sa đồ Chiến tranh bảo vệ biên giới Tây Nam 1978–1979 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nội dung bám sát các mục đã duyệt trong chien-dich-tran-danh.json (bien-gioi-tay-nam-1978-1979 + tham-sat-ba-chuc-1978), không suy diễn thêm diễn biến quân sự ngoài nguồn. trang_thai=draft.",
+  "id": "bien-gioi-tay-nam-1978-1979",
+  "ten": "Chiến tranh bảo vệ biên giới Tây Nam 1978–1979",
+  "nam": 1978,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân đội nhân dân Việt Nam (phối hợp lực lượng cách mạng Campuchia)",
+  "doi_thu": "Khmer Đỏ (Pol Pot)",
+  "dia_diem": "Thị trấn Ba Chúc, huyện Tri Tôn, tỉnh An Giang; toàn tuyến biên giới Tây Nam",
+  "lien_quan_tinh": [
+    "an-giang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          600,
+          50
+        ],
+        [
+          500,
+          300
+        ],
+        [
+          400,
+          550
+        ]
+      ],
+      "nhan": "Biên giới Việt Nam – Campuchia"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-khmer-do",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 450,
+      "y": 150,
+      "nhan": "Quân Khmer Đỏ xâm phạm biên giới"
+    },
+    {
+      "id": "ba-chuc",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 400,
+      "nhan": "Xã Ba Chúc, Tri Tôn, An Giang"
+    },
+    {
+      "id": "co-tuong-niem",
+      "kieu": "co",
+      "x": 420,
+      "y": 460,
+      "nhan": "Thảm sát hơn 3.000 thường dân"
+    },
+    {
+      "id": "quan-ta-phan-cong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 550,
+      "y": 350,
+      "nhan": "Quân đội Việt Nam phản công (23/12/1978)"
+    },
+    {
+      "id": "mui-tien-sau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        300
+      ],
+      "den": [
+        250,
+        150
+      ],
+      "nhan": "Tiến sâu, phối hợp lực lượng cách mạng Campuchia"
+    },
+    {
+      "id": "phnom-penh",
+      "kieu": "thanh",
+      "x": 150,
+      "y": 100,
+      "nhan": "Phnom Penh"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 220,
+      "y": 150,
+      "nhan": "Giải phóng Phnom Penh (7/1/1979)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Khmer Đỏ liên tục xâm phạm biên giới (1975–1978)",
+      "mo_ta": "Từ sau 30/4/1975, quân Khmer Đỏ nhiều lần vượt biên giới Tây Nam tiến công, tàn sát dân thường tại nhiều địa phương.",
+      "hien": [
+        "quan-dich-khmer-do"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Thảm sát Ba Chúc (tháng 4/1978)",
+      "mo_ta": "Quân Khmer Đỏ tràn vào xã Ba Chúc (Tri Tôn, An Giang), chiếm đóng 12 ngày, thảm sát hơn 3.000 thường dân, chỉ còn 3 người sống sót.",
+      "hien": [
+        "ba-chuc",
+        "co-tuong-niem"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Việt Nam mở phản công quy mô lớn (23/12/1978)",
+      "mo_ta": "Trước hành động xâm lược và tội ác diệt chủng, Việt Nam mở cuộc phản công quy mô lớn trên toàn tuyến biên giới Tây Nam.",
+      "hien": [
+        "quan-ta-phan-cong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Phối hợp lực lượng cách mạng Campuchia",
+      "mo_ta": "Quân đội Việt Nam phối hợp với lực lượng cách mạng Campuchia tiến sâu vào lãnh thổ, đánh đổ chính quyền Khmer Đỏ.",
+      "hien": [
+        "quan-ta-phan-cong",
+        "mui-tien-sau"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Giải phóng Phnom Penh (7/1/1979)",
+      "mo_ta": "Liên quân tiến vào giải phóng thủ đô Phnom Penh, chấm dứt chế độ diệt chủng Pol Pot.",
+      "hien": [
+        "phnom-penh",
+        "mui-tien-sau"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Bảo vệ vững chắc biên giới Tây Nam",
+      "mo_ta": "Chiến thắng bảo vệ vững chắc biên giới Tây Nam của Tổ quốc, đồng thời giúp nhân dân Campuchia thoát khỏi thảm hoạ diệt chủng.",
+      "hien": [
+        "phnom-penh",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Việt Nam phối hợp lực lượng cách mạng Campuchia giải phóng Phnom Penh (7/1/1979), chấm dứt chế độ diệt chủng Pol Pot, bảo vệ vững chắc biên giới Tây Nam.",
+  "y_nghia": "Vừa bảo vệ chủ quyền lãnh thổ trước hành động xâm lược, vừa giúp nhân dân Campuchia thoát khỏi thảm hoạ diệt chủng Khmer Đỏ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Bảo tàng Lịch sử Quốc gia — Cuộc chiến đấu bảo vệ Tổ quốc trên biên giới Tây Nam (baotanglichsu.vn)",
+    "Báo Nhân Dân — Chiến thắng chiến tranh bảo vệ Tổ quốc ở biên giới Tây Nam (nhandan.vn)",
+    "Báo An Giang — Lễ tưởng niệm những nạn nhân bị sát hại trong chiến tranh biên giới Tây Nam (baoangiang.com.vn)",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Việt Bắc Thu Đông 1947 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 nhạy cảm theo docs/section9-sensitive.json — bám sát mo_ta đã duyệt trong chien-dich-tran-danh.json. trang_thai=draft chờ soát §9.",
+  "id": "viet-bac-thu-dong-1947",
+  "ten": "Chiến dịch Việt Bắc Thu Đông 1947",
+  "nam": 1947,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tổng chỉ huy (Võ Nguyên Giáp)",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Căn cứ địa Việt Bắc (Bắc Kạn, Cao Bằng, Lạng Sơn, Thái Nguyên, Tuyên Quang)",
+  "lien_quan_tinh": [
+    "thai-nguyen",
+    "tuyen-quang",
+    "lang-son"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          50,
+          50
+        ],
+        [
+          500,
+          20
+        ],
+        [
+          950,
+          60
+        ]
+      ],
+      "nhan": "Căn cứ địa Việt Bắc"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          600,
+          550
+        ],
+        [
+          550,
+          300
+        ],
+        [
+          500,
+          100
+        ]
+      ],
+      "nhan": "Sông Lô"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          850,
+          500
+        ],
+        [
+          700,
+          300
+        ],
+        [
+          550,
+          150
+        ]
+      ],
+      "nhan": "Đường số 4 từ Lạng Sơn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-nhay-du",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 480,
+      "y": 150,
+      "nhan": "Quân Pháp nhảy dù xuống Bắc Kạn"
+    },
+    {
+      "id": "co-quan-dau-nao",
+      "kieu": "dia-danh",
+      "x": 420,
+      "y": 200,
+      "nhan": "Cơ quan đầu não kháng chiến (đã sơ tán)"
+    },
+    {
+      "id": "quan-dich-duong-bo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 450,
+      "nhan": "Cánh đường bộ từ Lạng Sơn"
+    },
+    {
+      "id": "dia-diem-bong-lau",
+      "kieu": "dia-danh",
+      "x": 680,
+      "y": 350,
+      "nhan": "Đèo Bông Lau"
+    },
+    {
+      "id": "mui-phuc-kich-bong-lau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        600,
+        380
+      ],
+      "den": [
+        700,
+        400
+      ],
+      "nhan": "Phục kích Bông Lau"
+    },
+    {
+      "id": "quan-dich-duong-thuy",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 550,
+      "y": 500,
+      "nhan": "Cánh đường thủy trên sông Lô"
+    },
+    {
+      "id": "mui-danh-chim-tau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        400
+      ],
+      "den": [
+        540,
+        480
+      ],
+      "nhan": "Đánh chìm tàu, ca nô"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 420,
+      "y": 280,
+      "nhan": "Pháp buộc phải rút quân"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Pháp mở gọng kìm tiến công Việt Bắc (7/10/1947)",
+      "mo_ta": "Quân Pháp huy động khoảng 12.000 quân, nhảy dù xuống Bắc Kạn kết hợp hai cánh đường bộ và đường thủy, hòng bao vây tiêu diệt cơ quan đầu não kháng chiến.",
+      "hien": [
+        "quan-dich-nhay-du",
+        "quan-dich-duong-bo",
+        "quan-dich-duong-thuy"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nhảy dù xuống Bắc Kạn",
+      "mo_ta": "Một cánh quân Pháp nhảy dù xuống thị xã Bắc Kạn, Chợ Mới, Chợ Đồn hòng đánh úp cơ quan lãnh đạo kháng chiến, nhưng cơ quan đầu não đã kịp sơ tán an toàn.",
+      "hien": [
+        "quan-dich-nhay-du",
+        "co-quan-dau-nao"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chặn đánh cánh đường bộ từ Lạng Sơn",
+      "mo_ta": "Quân ta phục kích, chặn đánh quyết liệt cánh quân bộ tiến từ Lạng Sơn, tiêu biểu là trận phục kích Bông Lau trên đường số 4.",
+      "hien": [
+        "quan-dich-duong-bo",
+        "dia-diem-bong-lau",
+        "mui-phuc-kich-bong-lau"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh chặn cánh đường thủy trên sông Lô",
+      "mo_ta": "Quân ta tổ chức phục kích, pháo kích đánh chìm nhiều tàu chiến, ca nô của cánh quân thủy tiến theo sông Hồng, sông Lô.",
+      "hien": [
+        "quan-dich-duong-thuy",
+        "mui-danh-chim-tau"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Phản công trên khắp các mặt trận",
+      "mo_ta": "Quân và dân ta phản công đều khắp, loại khỏi vòng chiến hơn 7.200 địch, bắn rơi 18 máy bay, đánh chìm 54 tàu xuồng.",
+      "hien": [
+        "dia-diem-bong-lau",
+        "quan-dich-duong-thuy",
+        "co-thang"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Pháp buộc phải rút quân",
+      "mo_ta": "Sau hơn hai tháng, Pháp thất bại trong mục tiêu tiêu diệt cơ quan đầu não và bộ đội chủ lực, buộc phải rút quân khỏi Việt Bắc — chiến dịch phản công đầu tiên và thắng lợi hoàn toàn của Quân đội nhân dân Việt Nam.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Loại khỏi vòng chiến hơn 7.200 địch, bắn rơi 18 máy bay, đánh chìm 54 tàu xuồng, buộc Pháp phải rút quân khỏi Việt Bắc.",
+  "y_nghia": "Chiến dịch phản công đầu tiên và thắng lợi hoàn toàn của Quân đội nhân dân Việt Nam, bảo vệ vững chắc căn cứ địa kháng chiến.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Nhân Dân (special.nhandan.vn) — Chiến dịch Việt Bắc Thu Đông",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

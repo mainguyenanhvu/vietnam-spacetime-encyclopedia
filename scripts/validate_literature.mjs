@@ -179,6 +179,7 @@ const GIOI_THIEU_FILES = [
   "gioi-thieu-tac-pham.json",
   "su-ky-dia-chi.json",
   "van-xuoi-hien-thuc-vung-mien.json",
+  "tho-moi-lang-man.json",
 ];
 for (const file of GIOI_THIEU_FILES) {
   const p = join(DIR, file);

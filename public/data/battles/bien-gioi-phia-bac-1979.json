@@ -1,0 +1,138 @@
+{
+  "ghi_chu": "Sa đồ Chiến tranh bảo vệ biên giới phía Bắc 1979 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nội dung bám sát NGUYÊN VĂN mo_ta đã duyệt trong chien-dich-tran-danh.json (nguồn: Cổng TTĐT TP Móng Cái), KHÔNG bổ sung suy diễn về diễn biến quân sự chi tiết trên các hướng khác (Lạng Sơn, Cao Bằng, Lào Cai...) vì nguồn hiện có chỉ chi tiết hoá trận Pò Hèn. Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "id": "bien-gioi-phia-bac-1979",
+  "ten": "Chiến tranh bảo vệ biên giới phía Bắc 1979",
+  "nam": 1979,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân và dân các tỉnh biên giới phía Bắc",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Đài tưởng niệm Pò Hèn, xã Hải Sơn, TP Móng Cái, Quảng Ninh; toàn tuyến biên giới phía Bắc",
+  "lien_quan_tinh": [
+    "quang-ninh",
+    "lang-son",
+    "cao-bang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          0,
+          150
+        ],
+        [
+          500,
+          120
+        ],
+        [
+          1000,
+          160
+        ]
+      ],
+      "nhan": "Đường biên giới Việt – Trung"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-trung-quoc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 100,
+      "nhan": "Quân đội Trung Quốc tiến công toàn tuyến"
+    },
+    {
+      "id": "don-po-hen",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 650,
+      "y": 280,
+      "nhan": "Đồn biên phòng Pò Hèn"
+    },
+    {
+      "id": "quan-ta-po-hen",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 600,
+      "y": 340,
+      "nhan": "45 cán bộ, chiến sĩ và dân quân"
+    },
+    {
+      "id": "co-hy-sinh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 340,
+      "nhan": "Hoàng Thị Hồng Chiêm và đồng đội hy sinh"
+    },
+    {
+      "id": "quan-ta-toan-tuyen",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 350,
+      "nhan": "Quân và dân các tỉnh biên giới kiên cường chiến đấu"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 400,
+      "nhan": "Đối phương rút quân (18/3/1979)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trung Quốc tiến công trên toàn tuyến biên giới (17/2/1979)",
+      "mo_ta": "Rạng sáng 17/2/1979, Trung Quốc huy động lực lượng lớn đồng loạt tiến công trên toàn tuyến biên giới phía Bắc, từ Lai Châu đến Quảng Ninh.",
+      "hien": [
+        "quan-dich-trung-quoc"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đồn biên phòng Pò Hèn chiến đấu ngay ngày đầu",
+      "mo_ta": "Tại đồn biên phòng Pò Hèn (Quảng Ninh), 45 cán bộ, chiến sĩ cùng dân quân chiến đấu quyết liệt ngay trong ngày đầu cuộc chiến.",
+      "hien": [
+        "don-po-hen",
+        "quan-ta-po-hen"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nữ liệt sĩ Hoàng Thị Hồng Chiêm và đồng đội anh dũng hy sinh",
+      "mo_ta": "Trong trận chiến đấu bảo vệ đồn, nữ liệt sĩ Hoàng Thị Hồng Chiêm cùng nhiều cán bộ, chiến sĩ đã anh dũng hy sinh.",
+      "hien": [
+        "quan-ta-po-hen",
+        "co-hy-sinh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân và dân ta kiên cường chiến đấu trên toàn tuyến",
+      "mo_ta": "Trên khắp các tỉnh biên giới, quân và dân ta kiên cường chiến đấu bảo vệ từng tấc đất biên cương.",
+      "hien": [
+        "quan-ta-toan-tuyen",
+        "don-po-hen"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đối phương rút quân (18/3/1979)",
+      "mo_ta": "Sau gần một tháng chiến đấu, đối phương buộc phải tuyên bố rút quân từ ngày 18/3/1979.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Quân và dân ta kiên cường chiến đấu bảo vệ biên cương, buộc đối phương rút quân từ 18/3/1979.",
+  "y_nghia": "Khẳng định quyết tâm bảo vệ chủ quyền, toàn vẹn lãnh thổ; sự hy sinh của các cán bộ, chiến sĩ như tại đồn Pò Hèn là tấm gương bảo vệ biên cương Tổ quốc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT thành phố Móng Cái — Đài tưởng niệm Pò Hèn (mongcai.gov.vn)",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

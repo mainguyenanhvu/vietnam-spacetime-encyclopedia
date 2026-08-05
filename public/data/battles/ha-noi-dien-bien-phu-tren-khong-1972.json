@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ «Điện Biên Phủ trên không» 1972 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Số liệu máy bay/B-52 bị bắn rơi có dị bản nhỏ giữa các nguồn — mo_ta không đưa con số cụ thể, chỉ nêu định tính. trang_thai=draft chờ soát §9.",
+  "id": "ha-noi-dien-bien-phu-tren-khong-1972",
+  "ten": "«Điện Biên Phủ trên không» 1972",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân chủng Phòng không – Không quân",
+  "doi_thu": "Không quân Mỹ (B-52)",
+  "dia_diem": "Bầu trời Hà Nội (hồ Hữu Tiệp, Ngọc Hà)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          450
+        ],
+        [
+          500,
+          430
+        ],
+        [
+          1000,
+          470
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "may-bay-b52",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 120,
+      "nhan": "B-52 ném bom rải thảm"
+    },
+    {
+      "id": "tran-dia-ten-lua",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 535,
+      "y": 411,
+      "nhan": "Trận địa tên lửa, pháo cao xạ"
+    },
+    {
+      "id": "quan-ta-danh-tra",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 620,
+      "y": 300,
+      "nhan": "Bộ đội Phòng không – Không quân đánh trả"
+    },
+    {
+      "id": "mui-ban-ha",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        520,
+        330
+      ],
+      "den": [
+        350,
+        180
+      ],
+      "nhan": "Bắn rơi B-52"
+    },
+    {
+      "id": "ho-huu-tiep",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 420,
+      "nhan": "Hồ Hữu Tiệp (Ngọc Hà) — xác B-52"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 200,
+      "nhan": "Buộc Mỹ ký Hiệp định Paris"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mỹ mở chiến dịch Linebacker II",
+      "mo_ta": "Cuối 12/1972, đàm phán Paris bế tắc, Tổng thống Nixon ra lệnh dùng máy bay B-52 ném bom rải thảm Hà Nội, Hải Phòng nhằm gây sức ép trên bàn đàm phán.",
+      "hien": [
+        "may-bay-b52"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân dân ta đã chuẩn bị từ trước",
+      "mo_ta": "Quân chủng Phòng không – Không quân cùng quân dân Thủ đô đã có sự chuẩn bị chiến lược từ trước, bố trí trận địa tên lửa, pháo cao xạ quanh Hà Nội.",
+      "hien": [
+        "tran-dia-ten-lua",
+        "quan-ta-danh-tra"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "B-52 ồ ạt ném bom rải thảm",
+      "mo_ta": "Đêm 18/12/1972, hàng loạt tốp B-52 ồ ạt ném bom rải thảm xuống Hà Nội, Hải Phòng, mở đầu 12 ngày đêm ác liệt.",
+      "hien": [
+        "may-bay-b52",
+        "tran-dia-ten-lua"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tên lửa, pháo cao xạ đánh trả quyết liệt",
+      "mo_ta": "Bộ đội tên lửa, pháo cao xạ, không quân ta đánh trả quyết liệt suốt 12 ngày đêm, liên tục bắn rơi máy bay địch.",
+      "hien": [
+        "tran-dia-ten-lua",
+        "quan-ta-danh-tra",
+        "mui-ban-ha",
+        "may-bay-b52"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Bắn rơi B-52 ngay trên bầu trời Hà Nội",
+      "mo_ta": "Nhiều \"pháo đài bay\" B-52 bị bắn rơi tại chỗ, trong đó có xác máy bay rơi xuống hồ Hữu Tiệp (Ngọc Hà) còn lưu giữ đến nay.",
+      "hien": [
+        "ho-huu-tiep",
+        "mui-ban-ha"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Buộc Mỹ ký Hiệp định Paris",
+      "mo_ta": "Sau 12 ngày đêm, Mỹ buộc phải ngừng ném bom, nối lại đàm phán và ký Hiệp định Paris ngày 27/1/1973.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "12 ngày đêm bắn rơi hàng loạt 'pháo đài bay' B-52 của Mỹ, buộc đối phương ký Hiệp định Paris 1973.",
+  "y_nghia": "Chiến thắng phòng không quy mô lớn hiếm có trong lịch sử chiến tranh hiện đại, mang tính quyết định buộc Mỹ chấm dứt ném bom miền Bắc và ký Hiệp định Paris.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học) — chiến dịch phòng không 1972",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Bảo tàng Chiến thắng B-52, Hà Nội"
+  ]
+}
