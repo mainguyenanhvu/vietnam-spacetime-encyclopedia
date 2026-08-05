@@ -22,6 +22,11 @@ const DATA = join(GOC, "public", "data");
 // / ngoài luồng nhà nước, trang bán hàng, blog cá nhân, kho do cộng đồng chép.
 const BAC = [
   [/\bwikipedia\.org/i, "Wikipedia — dự án cấm tuyệt đối, kể cả làm nguồn phụ"],
+  // Cổng chỉ chặn wikipedia.org nên ba trang dưới đây lọt qua suốt, dù chính
+  // sách nguồn của dự án cấm cả bốn từ đầu. Bịt lại 2026-08-05.
+  [/\bwikisource\.org/i, "Wikisource — văn bản do cộng đồng chép, không ban biên tập chịu trách nhiệm"],
+  [/\bwikiwand\.com/i, "wikiwand.com — chỉ là lớp giao diện đọc lại Wikipedia"],
+  [/\bthica\.net/i, "thica.net — kho thơ cộng đồng đóng góp"],
   [/\bthivien\.net/i, "thivien.net — kho thơ cộng đồng đóng góp, không có ban biên tập chịu trách nhiệm"],
   [/\bnguoikesu\.com/i, "nguoikesu.com — trang tư nhân, không thuộc danh sách nguồn cho phép"],
   [/\bkyluc\.vn/i, "kyluc.vn — Hội Kỷ lục gia, tổ chức tư nhân"],

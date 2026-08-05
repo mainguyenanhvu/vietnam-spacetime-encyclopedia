@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Tập «Nhật ký · Thư · Hồi ký chiến trường» — văn xuôi tư liệu của người trong cuộc, gồm 4 nhánh: nhật ký chiến trường (nk-), thư từ mặt trận và thư của lãnh tụ (thu-), hồi ký tướng lĩnh và cán bộ cách mạng (hk-), lời kể nhân chứng (ck-). Phạm vi thời gian: 1945–1975, thêm một mục về chiến trường Tây Nam sau 1975. CHÍNH SÁCH BẢN QUYỀN ĐÃ ÁP DỤNG: theo Luật Sở hữu trí tuệ Việt Nam, quyền tài sản được bảo hộ suốt đời tác giả và 50 năm sau khi tác giả mất. Mọi tư liệu thế kỷ 20 của tác giả mất sau 1976, cũng như mọi bản in hiện hành có quyền biên soạn/chú giải riêng của nhà xuất bản và gia đình (nhật ký Đặng Thùy Trâm, Nguyễn Văn Thạc, Chu Cẩm Phong…), đều đặt ban_quyen = \"cited-excerpt\" và trích tối đa 8 dòng. Chỉ 3 văn kiện của Chủ tịch Hồ Chí Minh (mất 1969, đã hết hạn quyền tài sản năm 2019, toàn văn công bố trên cổng nhà nước) đặt \"public-domain\" — nhưng vẫn chỉ trích đoạn ngắn. Mọi trích dẫn đều nguyên văn, sao chép đúng dấu câu từ nguồn nhà nước; nơi nào không tìm được nguyên văn đáng tin thì để nguyen_van rỗng và chỉ viết lời bình (xem nhat_ky_tim_kiem.khong_tim_duoc_nguyen_van). Toàn bộ 74 phần tử sources[] đều là báo Đảng/Nhà nước, cổng *.gov.vn, bảo tàng hoặc hội nghề nghiệp nhà nước; không mục nào dùng nguồn bách khoa mở.",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-08-05",
   "sources": [
     "Báo Nhân Dân — https://nhandan.vn",
     "Báo Quân đội nhân dân — https://www.qdnd.vn",
@@ -45,7 +45,8 @@
       "sources": [
         "Báo Hà Tĩnh — https://baohatinh.vn/quiz-la-thu-gui-me-truoc-ngay-hy-sinh-tai-nga-ba-dong-loc-la-cua-nu-tnxp-nao-post313549.html",
         "Cổng Thông tin điện tử tỉnh Hà Tĩnh — https://hatinh.gov.vn/ky-niem-55-nam-chien-thang-dong-loc-va-tuong-niem-10-nu-liet-sy-thanh-nien-xung-phong-24-7-1968-24-7-2023-nga-ba-dong-loc-ban-hung-ca-bat-tu"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-le-van-huynh",
@@ -67,7 +68,8 @@
         "Bộ Văn hoá, Thể thao và Du lịch — https://bvhttdl.gov.vn/linh-thieng-buc-thu-nguoi-chien-si-gui-tu-long-dat-20190430081840724.htm",
         "Báo Giáo dục và Thời đại — https://giaoducthoidai.vn/tiep-lua-vinh-quang-bai-2-buc-thu-thieng-cua-liet-si-thanh-co-post712975.html",
         "Báo Đại biểu Nhân dân — https://daibieunhandan.vn/hieu-va-tinh-trong-la-thu-tu-thanh-co-quang-tri-10290278.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-nguyen-van-troi",
@@ -87,7 +89,8 @@
       "sources": [
         "Tạp chí điện tử Văn hoá và Phát triển — https://vanhoavaphattrien.vn/ba-la-thu-cua-anh-hung-liet-si-nguyen-van-troi-a5169.html",
         "Báo Thái Nguyên — https://baothainguyen.vn/xa-hoi/202410/nhan-60-nam-ngay-hy-sinh-cua-anh-hung-luc-luong-vu-trang-nguyen-van-troi-15101964-15102024-co-cai-chet-hoa-thanh-bat-tu-a86233c/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-bac-ho-gui-hoc-sinh-1945",
@@ -109,7 +112,8 @@
         "Bảo tàng Hồ Chí Minh — https://baotanghochiminh.vn/doc-va-suy-ngam-thu-gui-cho-hoc-sinh-cua-bac-ho.htm",
         "Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/15-9-1945-bac-ho-gui-thu-cho-hoc-sinh-nhan-ngay-khai-truong-dau-tien-671165",
         "Ban Tuyên giáo Tỉnh uỷ Bình Phước — https://tuyengiaobinhphuoc.org.vn/tin-tuc/nho-lai-thu-bac-ho-gui-hoc-sinh-trong-ngay-khai-giang-9-1945-2016.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-bac-ho-khen-dien-bien-phu",
@@ -132,7 +136,8 @@
         "Uỷ ban Dân tộc — http://www.cema.gov.vn/thu-khen-ngoi-bo-doi-dan-cong-thanh-nien-xung-phong-va-dong-bao-tay-bac-da-chien-thang-ve-vang-o-dien-bien-phu.htm",
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/Chu-tich-Ho-Chi-Minh-voi-Chien-dich-Dien-Bien-Phu/index.html",
         "Báo Thanh Niên — https://thanhnien.vn/thu-bac-ho-gui-dien-bien-phu-185240427122312186.htm"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-di-chuc-ho-chi-minh",
@@ -152,7 +157,8 @@
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/toan-van-di-chuc-cua-chu-tich-ho-chi-minh-102169104.htm",
         "Trang tin điện tử Hồ Chí Minh (Ban Tuyên giáo Trung ương) — https://hochiminh.vn/hoc-va-lam-theo-bac/di-chuc/toan-van-di-chuc-cua-chu-tich-ho-chi-minh-cong-bo-nam-1969-109",
         "Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/cac-ban-thao-di-chuc-cua-chu-tich-ho-chi-minh-1965-1969-1-118208.vna"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-dang-thuy-tram",
@@ -176,7 +182,8 @@
         "Báo Phụ nữ Việt Nam — https://phunuvietnam.vn/bac-si-dang-thuy-tram-cuoc-doi-hien-dang-cho-ly-tuong-cao-dep-23713.htm",
         "Báo Nhân Dân — https://nhandan.vn/nhat-ky-dang-thuy-tram-mot-tac-pham-van-hoc-gia-tri-post407689.html",
         "Báo Nhân Dân — https://nhandan.vn/nhung-cau-chuyen-chua-ke-chung-quanh-cuon-nhat-ky-thu-ba-cua-liet-si-dang-thuy-tram-post896845.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-nguyen-van-thac",
@@ -197,7 +204,8 @@
         "Báo Công an nhân dân — https://cand.vn/chuyen-doi-bi-trang-cua-chang-trai-gioi-van-nhat-mien-bac-mot-thoi-post6750.html",
         "Nhà xuất bản Kim Đồng — https://nxbkimdong.com.vn/nhat-ky-mai-mai-tuoi-hai-muoi-ruc-sang-tinh-than-yeu-nuoc",
         "Cổng Thông tin điện tử tỉnh Bình Phước — https://binhphuoc.gov.vn/vi/news/hoat-dong-doan-the-421/Mai-mai-tuoi-hai-muoi-Song-mot-ngay-cung-phai-song-cho-dang-hoang-4233.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-chu-cam-phong",
@@ -219,7 +227,8 @@
         "Báo Nhân Dân — https://nhandan.vn/nhat-ky-chien-tranh-mot-tac-pham-van-hoc-ky-la-post539375.html",
         "Báo Nhân Dân — https://nhandan.vn/di-tim-nguoi-cat-giu-nhat-ky-chien-tranh-cua-chu-cam-phong-post415993.html",
         "Báo Thanh Niên — https://thanhnien.vn/chu-cam-phong-nhat-ky-chien-tranh-viet-that-song-that-185250824220955034.htm"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-vu-xuan",
@@ -240,7 +249,8 @@
         "Báo Nhân Dân — https://nhandan.vn/nhat-ky-vu-xuan-nhung-cuoc-hanh-quan-ky-vi-post432125.html",
         "Báo Thái Nguyên — https://baothainguyen.vn/xa-hoi/202509/ban-goc-nhat-ky-vu-xuan-duoc-hien-tang-trung-tam-luu-tru-quoc-gia-iii-8b635a0/",
         "Báo Đại biểu Nhân dân — https://daibieunhandan.vn/chut-trai-long-khi-doc-nhat-ky-vu-xuan-10046976.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-hoang-thuong-lan",
@@ -258,7 +268,8 @@
       "sources": [
         "Báo Văn hoá (Bộ Văn hoá, Thể thao và Du lịch) — https://baovanhoa.vn/van-hoc/bo-sach-dac-biet-nhat-ky-thoi-chien-viet-nam-nuoc-mat-tren-nhung-net-chu-nhoe-mo-28917.html",
         "Báo Quảng Bình — https://www.baoquangbinh.vn/van-hoa/202007/nhat-ky-thoi-chien-di-san-quy-cac-anh-hung-de-lai-cho-the-he-sau-2179517/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-gui-lai-mai-sau",
@@ -276,7 +287,8 @@
       "sources": [
         "Báo Công an nhân dân — https://cand.com.vn/So-tay/cuon-nhat-ky-dac-biet-cua-mot-liet-si-cand-i740247/",
         "Báo Biên phòng — https://www.bienphong.com.vn/sang-mai-tinh-than-lac-quan-cach-mang-post300599.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-duong-thi-xuan-quy",
@@ -296,7 +308,8 @@
         "Báo Phụ nữ Việt Nam — https://phunuvietnam.vn/liet-si-duong-thi-xuan-quy-mot-phong-vien-chien-truong-qua-cam-30388.htm",
         "Báo Đà Nẵng — https://baodanang.vn/channel/5414/201507/duong-thi-xuan-quy-van-va-nguoi-2430896/",
         "Báo và Đài Phát thanh Truyền hình Lạng Sơn — https://baolangson.vn/nha-van-liet-si-duong-thi-xuan-quy-mot-ly-tuong-song-cao-dep-5045905.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-bui-kim-dinh",
@@ -312,7 +325,8 @@
       "nguyen_van": [],
       "sources": [
         "Hội Nhà văn Việt Nam — https://vanvn.vn/nua-the-ky-nhung-dong-nhat-ky-chien-truong-cua-bui-kim-dinh/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-thoi-chien-viet-nam-bo-4-tap",
@@ -328,7 +342,8 @@
         "Báo Văn hoá (Bộ Văn hoá, Thể thao và Du lịch) — https://baovanhoa.vn/van-hoc/bo-sach-dac-biet-nhat-ky-thoi-chien-viet-nam-nuoc-mat-tren-nhung-net-chu-nhoe-mo-28917.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/to-chuc-ky-luc-viet-nam-ton-vinh-bo-sach-nhat-ky-thoi-chien-viet-nam-post682635.vnp",
         "Báo Phụ nữ Việt Nam — https://phunuvietnam.vn/nhat-ky-thoi-chien-di-san-quy-cho-the-he-sau-20200814130752834.htm"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-dien-bien-phu-diem-hen-lich-su",
@@ -348,7 +363,8 @@
         "Báo Nhân Dân — https://nhandan.vn/sach-moi-tong-tap-hoi-ky-cua-dai-tuong-vo-nguyen-giap-post478753.html",
         "Báo Hà Tĩnh — https://baohatinh.vn/dai-tuong-vo-nguyen-giap-va-quyet-dinh-kho-khan-nhat-o-dien-bien-phu-post266045.html",
         "Tỉnh uỷ Hà Tĩnh — https://hatinh.dcs.vn/thong-tin-tu-tuong-so-27-thang-52015/news/dai-tuong-vo-nguyen-giap-voi-quyet-dinh-lich-su.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-nhung-nam-thang-khong-the-nao-quen",
@@ -365,7 +381,8 @@
       "sources": [
         "Ban Quản lý Lăng Chủ tịch Hồ Chí Minh — https://bqllang.gov.vn/tin-tuc/tin-tong-hop/1607-nh-ng-nam-thang-khong-th-nao-quen-vo-nguyen-giap.html",
         "Trung tâm Văn hoá và Thư viện Hà Nội — https://ttvanhoavathuvien.hanoi.gov.vn/thu-muc-sach-chi-tiet/gioi-thieu-cuon-sach-%E2%80%9Cnhung-nam-thang-khong-the-nao-quen%E2%80%9D-760f897f6a664319bfa2a988077a2e1d.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-chien-dau-trong-vong-vay",
@@ -385,7 +402,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/sach-moi-tong-tap-hoi-ky-cua-dai-tuong-vo-nguyen-giap-post478753.html",
         "Báo Hải Phòng — https://baohaiphong.vn/bai-hoc-quy-tu-chien-dau-trong-vong-vay-400766.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-dai-thang-mua-xuan",
@@ -405,7 +423,8 @@
       "sources": [
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/ra-mat-cuon-sach-dai-thang-mua-xuan-1975-ban-hung-ca-chien-thang-thoi-dai-ho-chi-minh-102250411231508632.htm",
         "Học viện Lục quân — https://hvlq.vn/tin-tuc/tin-trong-nuoc/dai-tuong-van-tien-dung-tu-mot-tho-may-den-vi-tuong-cua-su-than-toc.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-khong-con-con-duong-nao-khac",
@@ -423,7 +442,8 @@
         "Báo Đồng Khởi (Bến Tre) — https://baodongkhoi.vn/nhung-dieu-chua-biet-ve-cuoc-dong-khoi-o-ben-tre-va-ba-nguyen-thi-dinh-11012010-a18538.html",
         "Cổng Thông tin điện tử tỉnh Bắc Giang — https://bacgiang.gov.vn/chi-tiet-bien-dao-vn/-/asset_publisher/YiOFlAxwJhRr/content/phong-trao-ong-khoi-60-nam-nhin-lai",
         "Báo Nhà báo và Công luận — https://congluan.vn/co-ba-dinh-chuyen-ve-nguoi-phu-nu-viet-nam-huyen-thoai-post314937.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-duong-xuyen-truong-son",
@@ -442,7 +462,8 @@
       "sources": [
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/trung-tuong-dong-sy-nguyen-khi-phach-ban-linh-tam-nhin-danh-dich-ma-di-mo-duong-ma-tien-102230222165116673.htm",
         "Báo Công an Nghệ An — https://congan.nghean.gov.vn/van-hoa-giao-duc/201904/trung-tuong-dong-sy-nguyen-tron-mot-con-duong-848610/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-cuu-tu-chinh-tri-con-dao",
@@ -461,7 +482,8 @@
         "Báo Nhân Dân — https://nhandan.vn/ho-chi-minh-qua-hoi-uc-cua-nhung-cuu-tu-chinh-tri-con-dao-post879365.html",
         "Báo Nhân Dân — https://nhandan.vn/ky-uc-nhung-ngay-o-dia-nguc-tran-gian-post807239.html",
         "Báo Quân đội nhân dân — https://www.qdnd.vn/phong-su-dieu-tra/phong-su/ky-uc-cua-nhung-tu-binh-tai-trai-giam-phu-quoc-722630"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-xe-tang-390-dinh-doc-lap",
@@ -483,7 +505,8 @@
         "Báo Nhân Dân (chuyên trang Thống nhất đất nước) — https://thongnhatdatnuoc.nhandan.vn/chuyen-ve-kip-xe-tang-390-va-duong-cua-dep-nhat-cuoc-doi-441.html",
         "Báo Tiền Phong — https://tienphong.vn/kip-xe-tang-390-ke-lai-khoanh-khac-huc-do-cong-dinh-doc-lap-post1734262.tpo",
         "Báo Tuổi Trẻ — https://tuoitre.vn/nhung-huyen-thoai-xe-tang-390-huc-do-cong-dinh-doc-lap-ke-khoanh-khac-lich-su-voi-hoc-sinh-20250428202659293.htm"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-bui-quang-than-cam-co",
@@ -500,7 +523,8 @@
       "sources": [
         "Báo Nhân Dân (chuyên trang Thống nhất đất nước) — https://thongnhatdatnuoc.nhandan.vn/chuyen-ve-kip-xe-tang-390-va-duong-cua-dep-nhat-cuoc-doi-441.html",
         "Báo Lào Cai — https://baolaocai.vn/chiec-xe-tang-huc-do-cong-dinh-doc-lap-dau-son-cua-nguoi-linh-xe-tang-post400341.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-pham-tuan-ban-roi-b52",
@@ -521,7 +545,8 @@
         "Báo Quân đội nhân dân — https://media.qdnd.vn/long-form/nhung-vi-tuong-truc-tiep-doi-dau-b-52-bai-2-trung-tuong-pham-tuan-va-ky-niem-sau-sac-ha-do-van-phao-dai-bay-b-52-56050",
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/ky-tich-ban-roi-b52-bao-ve-binh-yen-bau-troi-ha-noi-102221212110615781.htm",
         "Đài Tiếng nói Việt Nam — https://vov.gov.vn/anh-hung-pham-tuan-dung-bao-gio-quen-12-ngay-dem-lich-su-dtnew-138043"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-nguyen-van-bay",
@@ -540,7 +565,8 @@
         "Báo Nhân Dân — https://nhandan.vn/nguyen-van-bay-nguoi-phi-cong-nong-dan-nam-bo-post898977.html",
         "Báo Quân đội nhân dân — https://ct.qdnd.vn/chan-dung-nguoi-linh/anh-hung-phi-cong-nguyen-van-bay-va-7-net-dac-sac-514965",
         "Báo điện tử Đảng Cộng sản Việt Nam — https://dangcongsan.vn/thoi-su/vinh-biet-anh-hung-phi-cong-ban-roi-7-may-bay-my-536088.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-muoi-co-gai-nga-ba-dong-loc",
@@ -558,7 +584,8 @@
         "Cổng Thông tin điện tử tỉnh Hà Tĩnh — https://hatinh.gov.vn/ky-niem-55-nam-chien-thang-dong-loc-va-tuong-niem-10-nu-liet-sy-thanh-nien-xung-phong-24-7-1968-24-7-2023-nga-ba-dong-loc-ban-hung-ca-bat-tu",
         "Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-24-7-1968-10-nu-thanh-nien-xung-phong-hy-sinh-o-nga-ba-dong-loc-699576",
         "Báo Hà Tĩnh — https://baohatinh.vn/tieu-doi-4-c552-va-mua-he-xanh-1968-o-ha-tinh-post176241.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-doi-quan-toc-dai-ben-tre",
@@ -576,7 +603,8 @@
         "Cổng Thông tin điện tử tỉnh Bắc Giang — https://bacgiang.gov.vn/chi-tiet-bien-dao-vn/-/asset_publisher/YiOFlAxwJhRr/content/phong-trao-ong-khoi-60-nam-nhin-lai",
         "Báo Đồng Khởi (Bến Tre) — https://baodongkhoi.vn/nhung-dieu-chua-biet-ve-cuoc-dong-khoi-o-ben-tre-va-ba-nguyen-thi-dinh-11012010-a18538.html",
         "Báo Bình Phước — https://baobinhphuoc.com.vn/news/19/94855/dong-khoi-o-ben-tre---in-dam-trang-su-vang-dan-toc"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-hoang-kim-giao",
@@ -595,7 +623,8 @@
         "Báo Nhân Dân — https://nhandan.vn/buc-thu-cuoi-cung-cua-liet-si-hoang-kim-giao-post412114.html",
         "Báo Nhân Dân — https://nhandan.vn/song-de-yeu-thuong-va-dang-hien-tinh-su-bang-thu-cua-liet-si-hoang-kim-giao-post411470.html",
         "Báo Nghệ An — https://baonghean.vn/nhung-la-thu-cua-liet-si-hoang-kim-giao-ve-voi-khu-di-tich-lich-su-quoc-gia-truong-bon-10240427.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-le-anh-xuan",
@@ -617,7 +646,8 @@
         "Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/nha-tho-le-anh-xuan-va-dang-dung-viet-nam-1-171239.vna",
         "Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG Hà Nội — https://ussh.vnu.edu.vn/vi/news/sinh-vien/le-anh-xuan-mot-nha-tho-mot-nha-giao-mot-nguoi-chien-si-tieu-bieu-cua-the-he-sinh-vien-nhan-van-ha-noi-gac-but-nghien-ra-tran-21740.html",
         "Báo Vĩnh Long — https://baovinhlong.com.vn/van-hoa-giai-tri/202502/nha-tho-anh-hung-liet-si-le-anh-xuan-cung-dang-dung-viet-nam-1196fb4/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-tran-duy-chien",
@@ -635,7 +665,8 @@
         "Báo Quảng Nam — https://baoquangnam.vn/thang-7-doc-lai-nhat-ky-tay-tien-vien-chinh-3033734.html",
         "Tạp chí Sông Hương — http://tapchisonghuong.com.vn/tap-chi/c130/n1235/Nhat-ky-Tay-tien-vien-chinh-cua-Tran-Duy-Chien.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/nhat-ky-thoi-chien-di-san-quy-cac-anh-hung-de-lai-cho-the-he-sau-post653600.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-nguyen-ngoc-tan",
@@ -653,7 +684,8 @@
       "sources": [
         "Báo Văn hoá (Bộ Văn hoá, Thể thao và Du lịch) — https://baovanhoa.vn/van-hoc/bo-sach-dac-biet-nhat-ky-thoi-chien-viet-nam-nuoc-mat-tren-nhung-net-chu-nhoe-mo-28917.html",
         "Tạp chí điện tử Văn hoá và Phát triển — https://vanhoavaphattrien.vn/nha-van-liet-si-nguyen-thi-a9465.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-nguyen-duc-soat",
@@ -671,7 +703,8 @@
         "Báo Nhân Dân — https://nhandan.vn/trai-tim-phi-cong-nhat-ky-cua-nguoi-anh-hung-post628890.html",
         "Nhà xuất bản Trẻ — https://www.nxbtre.com.vn/en/news/nhat-ky-cua-phi-cong-anh-hung-ban-roi-6-may-bay-my-64355.html",
         "Đài Tiếng nói Việt Nam — https://vov.gov.vn/trung-tuong-nguyen-duc-soat-phi-cong-huyen-thoai-cua-khong-quan-viet-nam-dtnew-455329"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-do-sam-gui-vo",
@@ -692,7 +725,8 @@
       "sources": [
         "Vietnam+ (Thông tấn xã Việt Nam) — https://special.vietnamplus.vn/2020/04/22/thu_nhatky_thoichien/",
         "Báo Nhân Dân — https://nhandan.vn/xuc-dong-nhung-la-thu-trang-nhat-ky-thoi-chien-post322537.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-pham-thi-hien-gui-chong",
@@ -711,7 +745,8 @@
       "sources": [
         "Vietnam+ (Thông tấn xã Việt Nam) — https://special.vietnamplus.vn/2020/04/22/thu_nhatky_thoichien/",
         "Báo Nhân Dân — https://nhandan.vn/nhung-buc-thu-thoi-chien-ky-uc-khong-phai-mo-post851975.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-tham-duc-hoa",
@@ -725,7 +760,8 @@
       "nguyen_van": [],
       "sources": [
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/xuc-dong-nhung-la-thu-tinh-thoi-chien-cua-nha-bao-liet-sy-tham-duc-hoa-post806567.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-nhung-la-thu-thoi-chien-viet-nam",
@@ -741,7 +777,8 @@
         "Báo Nhân Dân — https://nhandan.vn/nhung-la-thu-thoi-chien-viet-nam-cuon-nhat-ky-ve-mot-thoi-lua-dan-post752003.html",
         "Báo Nhân Dân — https://nhandan.vn/se-co-10-tap-sach-in-cac-la-thu-thoi-chien-post594185.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/nhung-la-thu-khong-tem-chat-chua-noi-niem-tien-tuyen-hau-phuong-thoi-chien-post1106864.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-tu-nhan-dan-ma-ra",
@@ -759,7 +796,8 @@
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/doi-VN-tuyen-truyen-giai-phong-quan-voi-loi-the-vi-dan-vi-nuoc/index.html",
         "Ban Tuyên giáo Tỉnh uỷ Cao Bằng — https://tuyengiaocaobang.vn/index.php/lich-su-truyen-thong/dai-tuong-vo-nguyen-giap-voi-viec-thanh-lap-doi-viet-nam-tuyen-truyen-giai-phong-quan-430.html",
         "Báo Nhân Dân — https://nhandan.vn/sach-moi-tong-tap-hoi-ky-cua-dai-tuong-vo-nguyen-giap-post478753.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-duong-toi-dien-bien-phu",
@@ -779,7 +817,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/sach-moi-tong-tap-hoi-ky-cua-dai-tuong-vo-nguyen-giap-post478753.html",
         "Báo Sài Gòn Giải Phóng — https://www.sggp.org.vn/tong-tap-hoi-ky-cua-dai-tuong-vo-nguyen-giap-post21961.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-tong-hanh-dinh-mua-xuan-toan-thang",
@@ -798,7 +837,8 @@
       "sources": [
         "Nhà xuất bản Chính trị quốc gia Sự thật — https://www.nxbctqg.org.vn/tong-hanh-dinh-trong-mua-xuan-toan-thang-nhin-ve-qua-khu-de-thay-ro-tuong-lai.html",
         "Thư viện tỉnh Hà Tĩnh — http://www.thuvienhatinh.org/index.php/gioi-thieu-sach-moi/757-tong-hanh-dinh-trong-mua-xuan-toan-thang"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-voi-ca-cuoc-doi",
@@ -816,7 +856,8 @@
       "sources": [
         "Báo Công an Nghệ An — https://congan.nghean.gov.vn/van-hoa-giao-duc/201904/trung-tuong-dong-sy-nguyen-tron-mot-con-duong-848610/",
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/trung-tuong-dong-sy-nguyen-khi-phach-ban-linh-tam-nhin-danh-dich-ma-di-mo-duong-ma-tien-102230222165116673.htm"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-tron-mot-con-duong",
@@ -833,7 +874,8 @@
       "sources": [
         "Báo Công an Nghệ An — https://congan.nghean.gov.vn/van-hoa-giao-duc/201904/trung-tuong-dong-sy-nguyen-tron-mot-con-duong-848610/",
         "Báo Quảng Bình — https://www.baoquangbinh.vn/phong-su/202405/ky-niem-65-nam-ngay-mo-duong-ho-chi-minh-ngay-truyen-thongbo-doi-truong-son-1951959-1952024-ngay-ay-va-hom-nay-2218133/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-nam-thang-khong-bao-gio-quen",
@@ -851,7 +893,8 @@
         "Di tích Nhà tù Hoả Lò — https://hoalo.vn/Articles/35/hoi-ky",
         "Sở Văn hoá và Thể thao Hà Nội — https://sovhtt.hanoi.gov.vn/dau-an-80-nam-cuoc-vuot-nguc-lich-su-tai-nha-tu-hoa-lo/",
         "Di tích Nhà tù Hoả Lò — https://hoalo.vn/Articles/12/3384/Nho-ve-cuoc-vuot-nguc-than-ky-thang-31945-phan-2.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-tu-phu-rieng-do-den-mua-thu-ha-noi",
@@ -869,7 +912,8 @@
       "sources": [
         "Di tích Nhà tù Hoả Lò — https://hoalo.vn/Articles/35/hoi-ky",
         "Di tích Nhà tù Hoả Lò — https://hoalo.vn/Articles/12/14456/Nguoi-tu-chinh-tri-nam-xua-phan-1.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-chi-bo-nha-tu-son-la",
@@ -887,7 +931,8 @@
         "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-nha-tu-son-la-2987",
         "Báo Sơn La — https://baosonla.vn/nhan-vat-su-kien/nha-tu-son-la-bieu-tuong-sang-ngoi-ve-y-chi-cach-mang-d0gHFjZNg.html",
         "Báo Sơn La — https://baosonla.vn/vi/bai-viet/di-tich-quoc-gia-dac-biet-nha-tu-son-la--bieu-tuong-cua-y-chi-cach-mang-kien-cuong--ky-1-dia-nguc-tran-gian-46147"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-cuu-tu-binh-phu-quoc",
@@ -905,7 +950,8 @@
         "Báo Quân đội nhân dân — https://www.qdnd.vn/phong-su-dieu-tra/phong-su/ky-uc-cua-nhung-tu-binh-tai-trai-giam-phu-quoc-722630",
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/ngay-hoa-binh-nho-chuyen-nam-xua-10224042712390407.htm",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/gap-cuu-tu-binh-tung-dao-ham-o-nha-lao-phu-quoc-post154190.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-quan-y-dien-bien-phu",
@@ -923,7 +969,8 @@
         "Báo Quân đội nhân dân — https://www.qdnd.vn/quoc-phong-an-ninh/chien-thang-dien-bien-phu-moc-son-lich-su/ky-vat-va-ky-uc/hoi-ky-cua-nguoi-linh-quan-y-trong-chien-dich-dien-bien-phu-773618",
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/GS-Nguyen-Tu/index.html",
         "Báo Sức khoẻ và Đời sống — https://suckhoedoisong.vn/nhung-dau-an-mang-tinh-lich-su-cua-nganh-y-te-trong-khang-chien-chong-my-169250227103255507.htm"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-truong-bon",
@@ -941,7 +988,8 @@
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/huyen-thoai-truong-bon-102133321.htm",
         "Báo Nhân Dân — https://nhandan.vn/linh-thieng-toa-do-lua-truong-bon-post706972.html",
         "Báo Nghệ An — https://baonghean.vn/thanh-kinh-le-tuong-niem-cac-anh-hung-liet-si-hy-sinh-tai-truong-bon-10282256.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-nguyen-thi-mai-biet-dong",
@@ -961,7 +1009,8 @@
         "Báo Quân khu 7 — https://baoquankhu7.vn/nhung-cau-chuyen-ky-dieu-ve-nu-biet-dong-sai-gon-143256304-007330s35910gs",
         "Báo Công an nhân dân — https://cand.vn/huyen-thoai-nu-biet-dong-mang-danh-con-thoi-sat-post729685.html",
         "Thông tấn xã Việt Nam — https://vietnam.vnanet.vn/vietnamese/tin-tuc/nu-biet-dong-sai-gon-ke-ve-thoi-ky-gian-kho-nhung-thanh-xuan-170079.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-pham-xuan-an",
@@ -979,7 +1028,8 @@
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/nha-tinh-bao-pham-xuan-an-bieu-tuong-cua-hoa-binh-va-hoa-hop-102250429173804993.htm",
         "Báo Nhân Dân — https://nhandan.vn/vinh-biet-nha-tinh-bao-vi-dai-pham-xuan-an-post505202.html",
         "Báo Nhân Dân — https://nhandan.vn/ra-mat-an-ban-ky-niem-cua-tac-pham-pham-xuan-an-ten-nguoi-nhu-cuoc-doi-post920811.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-vu-ngoc-nha",
@@ -998,7 +1048,8 @@
         "Di tích lịch sử Dinh Độc Lập — https://dinhdoclap.gov.vn/nghien-cuu-suu-tam/nha-hoat-dong-tinh-bao-vu-ngoc-nha/",
         "Sở Văn hoá, Thể thao và Du lịch Thái Bình — https://sovhttdl.thaibinh.gov.vn/tin-tuc/trao-doi-nghiep-vu/-tu-ho-thai-binh-trong-lang-tinh-bao-chong-my.html",
         "Báo Công an nhân dân — https://cand.com.vn/Phong-su-tu-lieu/Ong-co-van-trong-Phu-Tong-thong-i259100/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-dang-tran-duc",
@@ -1017,7 +1068,8 @@
         "Báo Nhân Dân — https://nhandan.vn/thieu-tuong-tinh-bao-dang-tran-duc-tuc-ba-quoc-qua-doi-post464897.html",
         "Báo Đại biểu Nhân dân — https://daibieunhandan.vn/van-hoa/chuyen-ve-hy-sinh-tham-lang-cua-nha-tinh-bao-dang-tran-duc-i324549/",
         "Báo Đồng Nai — https://baodongnai.com.vn/dong-nai-cuoi-tuan/202303/nguoi-thay-sach-ve-anh-hung-tinh-bao-dang-tran-duc-3160533/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-son-my",
@@ -1035,7 +1087,8 @@
         "Báo Tuổi Trẻ — https://tuoitre.vn/anh-che-dan-cho-em-o-my-lai-buc-anh-tro-ve-voi-su-that-20190424100514892.htm",
         "Báo Pháp luật Việt Nam — https://baophapluat.vn/hanh-trinh-tra-lai-ten-cho-buc-anh-gay-tranh-cai-trong-vu-tham-sat-my-lai-post469441.html",
         "Báo Công an nhân dân — https://cand.com.vn/Su-kien-Binh-luan-thoi-su/Tuong-niem-cac-nan-nhan-vu-tham-sat-Son-My-i468451/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-kham-thien",
@@ -1053,7 +1106,8 @@
         "Báo Nhân Dân — https://nhandan.vn/kham-thien-vuot-qua-noi-dau-chien-tranh-post731252.html",
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/50namkyuckhamthien/index.html",
         "Báo Vĩnh Long — https://baovinhlong.com.vn/chinh-tri/201212/kham-thien-khac-bang-mau-ngay-26121972-2557371/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-ba-chuc",
@@ -1071,7 +1125,8 @@
         "Báo Quân đội nhân dân — https://www.qdnd.vn/xa-hoi/cac-van-de/nha-mo-ba-chuc-chung-tich-toi-ac-khmer-do-1020369",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/40-nam-chien-thang-che-do-pol-pot-chung-tich-dau-thuong-post545289.vnp",
         "Báo Nhân Dân — https://nhandan.vn/quan-va-dan-an-giang-trong-chien-tranh-bao-ve-bien-gioi-tay-nam-post790961.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-bien-gioi-phia-bac-1979",
@@ -1094,7 +1149,8 @@
         "Báo Nhân Dân (chuyên đề) — https://nhandan.vn/chu-de/40-nam-cuoc-chien-dau-bao-ve-bien-gioi-phia-bac-to-quoc-460528.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/chien-tranh-bien-gioi-1979-ven-nguyen-hoi-uc-cua-chuyen-gia-lien-xo-post553125.vnp",
         "Vietnam+ (chuyên trang) — https://special.vietnamplus.vn/2019/02/14/biengioi1979/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-vi-xuyen",
@@ -1112,7 +1168,8 @@
         "Báo Nhân Dân — https://nhandan.vn/loi-the-cua-nguoi-linh-vi-xuyen-post800319.html",
         "Báo Nhân Dân — https://nhandan.vn/tim-dong-doi-duoi-lo-voi-the-ky-post975950.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/gio-tran-vi-xuyen-khuc-tri-an-noi-bien-cuong-post1123727.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-gac-ma-1988",
@@ -1131,7 +1188,8 @@
         "Báo Nhân Dân — https://nhandan.vn/34-nam-su-kien-gac-ma-tri-an-nhung-nguoi-nam-lai-phia-chan-troi-post689045.html",
         "Vietnam+ (chuyên trang) — https://mega.vietnamplus.vn/36-nam-su-kien-gac-ma-tuong-dai-bat-tu-ve-tinh-yeu-to-quoc-5577.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/37-nam-su-kien-gac-ma-tinh-than-quyet-tu-de-bao-ve-chu-quyen-to-quoc-post1020496.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-vuot-nguc-hoa-lo-1945",
@@ -1149,7 +1207,8 @@
         "Di tích Nhà tù Hoả Lò — https://hoalo.vn/Articles/12/15452/Vuot-nguc-Hoa-Lo-thang-31945-phan-1.html",
         "Di tích Nhà tù Hoả Lò — https://hoalo.vn/Articles/12/20467/Vuot-nguc-Hoa-Lo-thang-31945-Phan-2-Cuoc-dai-vuot-nguc-bang-cach-don-tho.html",
         "Sở Văn hoá và Thể thao Hà Nội — https://sovhtt.hanoi.gov.vn/dau-an-80-nam-cuoc-vuot-nguc-lich-su-tai-nha-tu-hoa-lo/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-hoang-ngoc-bich-diem-cao-21",
@@ -1171,7 +1230,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/ky-2-nhung-doi-chan-khong-moi-post977345.html",
         "Báo Nhân Dân — https://nhandan.vn/hanh-trinh-dua-cac-liet-si-tro-ve-post977881.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-dao-thien-sinh",
@@ -1191,7 +1251,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/ky-2-nhung-doi-chan-khong-moi-post977345.html",
         "Báo Nhân Dân (chuyên trang) — https://nhandan.vn/special/dao-ly-va-tri-an/index.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-dao-van-quan",
@@ -1207,7 +1268,8 @@
       ],
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/ky-2-nhung-doi-chan-khong-moi-post977345.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-pham-van-nam",
@@ -1228,7 +1290,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/ky-2-nhung-doi-chan-khong-moi-post977345.html",
         "Báo Nhân Dân — https://nhandan.vn/hanh-trinh-dua-cac-liet-si-tro-ve-post977881.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-chien-dich-500-ngay-dem",
@@ -1246,7 +1309,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/hanh-trinh-dua-cac-liet-si-tro-ve-post977881.html",
         "Báo Nhân Dân — https://nhandan.vn/noi-dai-ky-uc-mo-nhung-hanh-trinh-ve-nguon-post976086.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-nguyen-van-hoi-cao-diem-689",
@@ -1263,7 +1327,8 @@
       "nguyen_van": [],
       "sources": [
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/ky-uc-khe-sanh-va-tam-nguyen-tim-lai-ten-cho-24-liet-si-cao-diem-689-post1126023.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-hang-da-sap",
@@ -1279,7 +1344,8 @@
       "nguyen_van": [],
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/da-nang-tim-kiem-quy-tap-hai-cot-liet-si-tai-hang-da-sap-post973084.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-duong-van-hoan-nha-gian-dk1",
@@ -1303,7 +1369,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/nhung-nguoi-linh-nha-gian-post837962.html",
         "Báo Nhân Dân — https://nhandan.vn/nha-gian-dk1-bieu-tuong-tinh-than-thep-tiep-theo-va-het-post949705.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "thu-gui-truong-sa",
@@ -1322,7 +1389,8 @@
       ],
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/nhung-la-thu-xuc-dong-gui-truong-sa-post876220.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-dinh-the-van",
@@ -1342,7 +1410,8 @@
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/xuc-dong-tu-hao-ve-hoi-ky-dien-bien-phu-tren-khong-ban-anh-hung-ca-duoi-troi-ruc-lua-post921294.html",
         "Báo Nhân Dân (chuyên trang) — https://nhandan.vn/special/hanoi-1972-nhung-ky-uc-khong-the-nao-quen/index.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-ha-my",
@@ -1363,7 +1432,8 @@
         "Báo Thanh Niên — https://thanhnien.vn/50-nam-vu-tham-sat-ha-my-cui-dau-xin-loi-185739754.htm",
         "Báo Tuổi Trẻ — https://tuoitre.vn/37-nguoi-han-quoc-cui-dau-xin-loi-tai-le-tuong-niem-vu-tham-sat-ha-my-20230214114920325.htm",
         "Báo Bảo vệ pháp luật — https://baovephapluat.vn/thoi-su/vu-tham-sat-tai-lang-ha-my-nam-1968-biet-lam-sao-de-duoc-thu-tha-51007.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-binh-an-tay-vinh",
@@ -1380,7 +1450,8 @@
       "sources": [
         "Báo Tiền Phong — https://tienphong.vn/ngan-nhung-vu-tham-sat-nhu-ha-my-phong-nhat-phong-nhi-post1738026.tpo",
         "Báo Tuổi Trẻ — https://tuoitre.vn/37-nguoi-han-quoc-cui-dau-xin-loi-tai-le-tuong-niem-vu-tham-sat-ha-my-20230214114920325.htm"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-dan-cong-hoa-tuyen-dien-bien-phu",
@@ -1404,7 +1475,8 @@
         "Báo Nhân Dân — https://nhandan.vn/tu-hao-ky-uc-nguoi-dan-cong-hoa-tuyen-post808349.html",
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/thanh-nien-xung-phong-dan-cong-hoa-tuyen-xung-danh-anh-hung-trong-chien-dich-dien-bien-phu-102291708.htm",
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/o_mat_tran_dien_bien_phu_dan_cong_hoa_tuyen_/index.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-ma-van-thang-xe-dap-tho",
@@ -1423,7 +1495,8 @@
         "Báo Nhân Dân — https://nhandan.vn/ky-tich-tu-doi-quan-xe-dap-tho-va-chiec-xe-cut-kit-cho-luong-tu-ban-tho-post807933.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/70-nam-chien-thang-dien-bien-phu-tran-chien-tren-xe-tho-tiep-te-cho-tien-tuyen-post945096.vnp",
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/van-tai-tho-so-net-doc-dao-trong-chien-dich-DBP/index.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-trinh-dinh-bam-xe-cut-kit",
@@ -1440,7 +1513,8 @@
       "nguyen_van": [],
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/ky-tich-tu-doi-quan-xe-dap-tho-va-chiec-xe-cut-kit-cho-luong-tu-ban-tho-post807933.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-me-nguyen-thi-thu",
@@ -1460,7 +1534,8 @@
         "Báo Phụ nữ Việt Nam — https://phunuvietnam.vn/me-nguyen-thi-thu-huyen-thoai-bat-tu-18135.htm",
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/ky-niem-120-nam-ngay-sinh-me-viet-nam-anh-hung-nguyen-thi-thu-102240727212121574.htm",
         "Báo Nhân Dân — https://nhandan.vn/ky-niem-120-nam-ngay-sinh-ba-me-viet-nam-anh-hung-nguyen-thi-thu-post821458.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-la-thi-tam",
@@ -1478,7 +1553,8 @@
         "Cổng Thông tin điện tử Chính phủ — https://baochinhphu.vn/pho-thu-tuong-vu-duc-dam-tham-nu-anh-hung-dem-bom-o-dong-loc-10222072308215158.htm",
         "Báo Hà Tĩnh — https://baohatinh.vn/cung-anh-hung-la-thi-tam-hat-lai-bai-ca-xanh-tren-vung-dat-lua-post251487.html",
         "Báo Nhân Dân — https://nhandan.vn/nga-ba-bat-tu-trong-ky-uc-nhung-nguoi-anh-hung-post209009.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "nk-ho-so-di-b",
@@ -1494,7 +1570,8 @@
       "nguyen_van": [],
       "sources": [
         "Báo Nhân Dân — https://nhandan.vn/anh-thanh-xuan-gui-lai-trong-ho-so-ky-vat-cua-nhung-can-bo-di-b-post974876.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-hoc-sinh-mien-nam-tren-dat-bac",
@@ -1516,7 +1593,8 @@
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/70-nam-tap-ket-ra-bac-xuc-dong-dong-hoi-uc-cua-mot-hoc-sinh-mien-nam-post987344.vnp",
         "Vietnam+ (chuyên trang) — https://mega.vietnamplus.vn/bai-1-cuoc-dich-chuyen-lich-su-cua-32-000-hoc-sinh-mien-nam-tren-dat-bac-6611.html",
         "Báo Nhân Dân — https://nhandan.vn/le-ky-niem-70-nam-truong-hoc-sinh-mien-nam-tren-dat-bac-post838793.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-truong-cap-3-vinh-linh",
@@ -1533,7 +1611,8 @@
       "sources": [
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/Cap-3-Vinh-Linh-ngoi-truong-anh-hung/index.html",
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/chien-dich-so-tan-tre-em-co-mot-khong-hai-trong-lich-su/index.html"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-quan-tinh-nguyen-viet-nam-tai-lao",
@@ -1554,7 +1633,8 @@
       "sources": [
         "Báo Quân đội nhân dân — https://www.qdnd.vn/chinh-tri/cac-van-de/moc-son-lich-su-trong-quan-he-doan-ket-dac-biet-viet-nam-lao-lao-viet-nam-800721",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/cuu-chien-binh-lao-luu-giu-nhung-ky-uc-khong-the-nao-quen-post806080.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-quan-tinh-nguyen-viet-nam-tai-campuchia",
@@ -1574,7 +1654,8 @@
         "Báo Nhân Dân (chuyên trang) — https://special.nhandan.vn/vang-danh-doi-quan-nha-Phat-/index.html",
         "Báo Nhân Dân — https://nhandan.vn/campuchia-luon-ghi-nho-cong-lao-cua-quan-tinh-nguyen-viet-nam-post681462.html",
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/ngay-chien-thang-che-do-diet-chung-tai-campuchia-bieu-tuong-cua-huu-nghi-cao-ca-post1087007.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-nha-tu-lao-bao",
@@ -1590,7 +1671,8 @@
       "nguyen_van": [],
       "sources": [
         "Báo Công an nhân dân — https://cand.com.vn/Tu-lieu-van-hoa/di-tich-nha-tu-lao-bao-noi-duoc-dat-biet-danh-dia-nguc-tran-gian-i772217/"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "hk-nha-day-buon-ma-thuot",
@@ -1607,7 +1689,8 @@
       "sources": [
         "Chuyên trang Dân sinh (Báo Dân trí) — https://dansinh.dantri.com.vn/nguoi-co-cong/nha-day-buon-ma-thuot-noi-thanh-lap-chi-bo-dang-dau-tien-tai-dak-lak-20240503180041429.htm",
         "Đài Tiếng nói Việt Nam — https://vov4.vov.vn/du-lich-vung-cao/tham-nha-day-buon-ma-thuot-di-tich-quoc-gia-dac-biet-453936.vov4"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     },
     {
       "id": "ck-cuu-chien-binh-lao-ke-ve-quan-tinh-nguyen",
@@ -1621,7 +1704,8 @@
       "nguyen_van": [],
       "sources": [
         "Vietnam+ (Thông tấn xã Việt Nam) — https://www.vietnamplus.vn/cuu-chien-binh-lao-luu-giu-nhung-ky-uc-khong-the-nao-quen-post806080.vnp"
-      ]
+      ],
+      "chu_de": "nhat-ky-thu-hoi-ky"
     }
   ]
 }

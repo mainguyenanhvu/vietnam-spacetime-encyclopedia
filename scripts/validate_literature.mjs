@@ -169,6 +169,37 @@ if (existsSync(baihatPath)) {
   console.log(`✅ bai-hat-que-huong.json: ${items.length} bài`);
 }
 
+// --- Tác phẩm GIỚI THIỆU (không in nguyên văn)
+// Ba file cùng một dạng: sách/tác phẩm chỉ được giới thiệu, không chép nguyên
+// văn — hoặc vì còn bảo hộ, hoặc vì chưa tra được văn bản đáng tin ngoài các
+// nguồn bị bác. Khác POEM_FILES đúng một điểm: `nguyen_van` không bắt buộc.
+// Đổi lại BẮT BUỘC có lời văn giới thiệu, để mục rỗng không lọt qua thành
+// một cái tên trơ trọi (cùng lý lẽ với nhat-ky-thu-chien-tranh.json).
+const GIOI_THIEU_FILES = [
+  "gioi-thieu-tac-pham.json",
+  "su-ky-dia-chi.json",
+  "van-xuoi-hien-thuc-vung-mien.json",
+];
+for (const file of GIOI_THIEU_FILES) {
+  const p = join(DIR, file);
+  if (!existsSync(p)) continue;
+  const { items } = JSON.parse(readFileSync(p, "utf8"));
+  for (const a of items) {
+    const w = `${file}/${a.id}`;
+    if (!a.ten || !a.tac_gia) fail(w, "thiếu ten/tac_gia");
+    if (!["public-domain", "cited-excerpt"].includes(a.ban_quyen))
+      fail(w, "ban_quyen phải là public-domain|cited-excerpt");
+    if (!a.gioi_thieu && !a.tom_tat && !a.loi_binh)
+      fail(w, "không có nguyên văn thì phải có gioi_thieu/tom_tat/loi_binh");
+    if (!Array.isArray(a.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
+    // Tác phẩm còn bảo hộ mà lại chép nguyên văn là rủi ro bản quyền thật.
+    if (a.ban_quyen === "cited-excerpt" && Array.isArray(a.nguyen_van) && a.nguyen_van.length > 8)
+      fail(w, `trích ${a.nguyen_van.length} dòng — tác phẩm còn bản quyền chỉ được trích ngắn (≤8 dòng)`);
+    checkSources(w, a.sources);
+  }
+  console.log(`✅ ${file}: ${items.length} tác phẩm`);
+}
+
 if (errors) {
   console.error(`\n❌ ${errors} lỗi thư viện văn học.`);
   process.exit(1);

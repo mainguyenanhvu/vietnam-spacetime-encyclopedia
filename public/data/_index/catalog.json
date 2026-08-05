@@ -1,8 +1,8 @@
 {
   "tong": {
-    "so_file": 100,
-    "so_muc": 4782,
-    "so_byte": 8662259,
+    "so_file": 104,
+    "so_muc": 4838,
+    "so_byte": 8743517,
     "ngay_sinh": "2026-08-05"
   },
   "files": [
@@ -296,10 +296,27 @@
       "mo_ta": "Các mốc Nam tiến (mở rộng lãnh thổ về phương Nam) 938–1757, chiếu lên bản đồ 34 tỉnh hiện nay ở mức TỈNH (sơ đồ hoá, không phải đường biên lịch sử chính xác)."
     },
     {
+      "file": "literature/_chu-de.json",
+      "mien": "literature",
+      "so_muc": 12,
+      "byte": 2708,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": null,
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 0,
+      "truong_pho_bien": [
+        "id",
+        "ten",
+        "mo_ta"
+      ],
+      "sha256": "1f08157ca7b4083056a2c62cc742935f08fd32e0aad51d90f5e44652be94c65c",
+      "mo_ta": "Bộ chủ đề của thư viện."
+    },
+    {
       "file": "literature/bai-hat-que-huong.json",
       "mien": "literature",
       "so_muc": 32,
-      "byte": 23677,
+      "byte": 24894,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -316,16 +333,17 @@
         "gioi_thieu",
         "ban_quyen",
         "nguon",
-        "kenh_chinh_chu"
+        "kenh_chinh_chu",
+        "chu_de"
       ],
-      "sha256": "501a26749ae44dfd1b475ba4b4fdc632d97adaa803963471011a2e50fd0fe99f",
+      "sha256": "76e37c036c53a028201cbb562e520230d4ac6b4d1d117bacc8fc61af6f7a61f1",
       "mo_ta": "CHỈ metadata + giới thiệu ngắn, KHÔNG chép lời bài hát (Điều 25 Luật SHTT)."
     },
     {
       "file": "literature/ca-dao-tuc-ngu.json",
       "mien": "literature",
-      "so_muc": 125,
-      "byte": 96281,
+      "so_muc": 127,
+      "byte": 102224,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -336,16 +354,17 @@
         "noi_dung",
         "lien_quan_tinh",
         "y_nghia",
-        "nguon"
+        "nguon",
+        "chu_de"
       ],
-      "sha256": "00cab9451c516b0dec446303d490004a22d65c92bd1e0bde46bf4ae7230d015e",
+      "sha256": "964863b0c6e2ac852b96867b40cfc14e86cc4d012275ee11c18ea81cc14f6954",
       "mo_ta": "Ca dao & tục ngữ là sáng tác dân gian khuyết danh → public-domain, đăng toàn văn."
     },
     {
       "file": "literature/giai-thoai-khoa-bang.json",
       "mien": "literature",
-      "so_muc": 21,
-      "byte": 35443,
+      "so_muc": 30,
+      "byte": 51401,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -358,16 +377,41 @@
         "lien_quan_tinh",
         "giai_thoai",
         "y_nghia",
-        "sources"
+        "sources",
+        "chu_de"
       ],
-      "sha256": "d55d0567590e37973deddd9d16a8a28c1e3759bb20388cc400f750112d34c287",
+      "sha256": "1b4d7c8884ad194eb732e3368a55c7f0c573e97c77da23e0d90c9ace14c3307a",
       "mo_ta": "Dữ liệu miền «literature» — tệp giai-thoai-khoa-bang."
+    },
+    {
+      "file": "literature/gioi-thieu-tac-pham.json",
+      "mien": "literature",
+      "so_muc": 7,
+      "byte": 8676,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": "sources",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ten",
+        "tac_gia",
+        "thoi_ky",
+        "the_loai",
+        "ban_quyen",
+        "lien_quan_tinh",
+        "sources",
+        "chu_de",
+        "trang_thai"
+      ],
+      "sha256": "fad4760729389dc65f26fb0e54bb85787d6d10188ba2fb6e4e0894c968605876",
+      "mo_ta": "Tác phẩm được GIỚI THIỆU chứ không in nguyên văn."
     },
     {
       "file": "literature/lich-su-nuoc-ta.json",
       "mien": "literature",
       "so_muc": 1,
-      "byte": 13531,
+      "byte": 13403,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -384,14 +428,14 @@
         "ghi_chu_bien_tap_noi_bo",
         "sources"
       ],
-      "sha256": "cf166be453fee1c3b55d9dd694f70292208c06a7a7db1faf1bae4313c2938687",
+      "sha256": "297e73d5d1e3728af13371cc3d8e1c762e7e9bcecb8f41212565c6c4d94469dc",
       "mo_ta": "Dữ liệu miền «literature» — tệp lich-su-nuoc-ta."
     },
     {
       "file": "literature/nhat-ky-thu-chien-tranh.json",
       "mien": "literature",
       "so_muc": 84,
-      "byte": 164841,
+      "byte": 168033,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": "sources",
@@ -406,16 +450,42 @@
         "lien_quan_tinh",
         "loi_binh",
         "nguyen_van",
-        "sources"
+        "sources",
+        "chu_de"
       ],
-      "sha256": "28b806ed4eb3a73d6a3012d90eb68b40dc2b3167f1e2ab55ecdb24c6f143529c",
+      "sha256": "77c9432647ba489ba93589b3d838fa2af94afa3d01c0a90e1b16048e9117aeb0",
       "mo_ta": "Tập «Nhật ký · Thư · Hồi ký chiến trường» — văn xuôi tư liệu của người trong cuộc, gồm 4 nhánh: nhật ký chiến trường (nk-), thư từ mặt trận và thư của lãnh tụ (thu-), hồi ký tướng lĩnh và cán bộ cách mạng (hk-), lời kể nhân chứng (ck-)."
+    },
+    {
+      "file": "literature/su-ky-dia-chi.json",
+      "mien": "literature",
+      "so_muc": 10,
+      "byte": 11709,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": "sources",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ten",
+        "tac_gia",
+        "nam",
+        "the_loai",
+        "ban_quyen",
+        "lien_quan_tinh",
+        "gioi_thieu",
+        "sources",
+        "chu_de",
+        "trang_thai"
+      ],
+      "sha256": "3a6e571429ce4c07d076a9b47e80e2c7da84e0b2e73b4b09595edb7ae32f2e97",
+      "mo_ta": "Dữ liệu miền «literature» — tệp su-ky-dia-chi."
     },
     {
       "file": "literature/tac-pham-ho-chi-minh.json",
       "mien": "literature",
       "so_muc": 185,
-      "byte": 359808,
+      "byte": 367241,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -432,18 +502,19 @@
         "nguyen_van",
         "sources",
         "nhom",
+        "chu_de",
         "ghi_chu_dich",
         "ban_dich",
         "so_bai"
       ],
-      "sha256": "15fb38c7b7b229b98dc2b2525662d4fdd2eeffcd4748a41c395877f635d244ac",
+      "sha256": "c0855277294b8a1545a621699a724d778aed1972523e10505ed38524966dbe1c",
       "mo_ta": "Tác phẩm của Chủ tịch Hồ Chí Minh (1890–1969) — đã hết thời hạn bảo hộ bản quyền tại Việt Nam, đăng toàn văn."
     },
     {
       "file": "literature/tho-ve-bac.json",
       "mien": "literature",
       "so_muc": 22,
-      "byte": 26882,
+      "byte": 27663,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -459,16 +530,17 @@
         "lien_quan_tinh",
         "vi_sao_hay",
         "nguyen_van",
-        "sources"
+        "sources",
+        "chu_de"
       ],
-      "sha256": "7e94bb9375852a819a6ec569ece2b2fc8e2d16f740d81a05e158363b5efad8cb",
+      "sha256": "27b580ace02a4a5a8ac11fedeb56609a11da042e4febc73b795c342f8fc97742",
       "mo_ta": "Thơ viết về Chủ tịch Hồ Chí Minh — các tác giả đều mất sau 1976 hoặc còn sống nên tác phẩm CÒN BẢO HỘ BẢN QUYỀN: chỉ trích dẫn ngắn (≤8 dòng) theo Điều 25 Luật SHTT, kèm nguồn để bạn đọc tìm toàn văn."
     },
     {
       "file": "literature/tho-yeu-nuoc.json",
       "mien": "literature",
-      "so_muc": 89,
-      "byte": 150508,
+      "so_muc": 97,
+      "byte": 164958,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -483,16 +555,43 @@
         "lien_quan_tinh",
         "loi_binh",
         "nguyen_van",
-        "sources"
+        "sources",
+        "chu_de"
       ],
-      "sha256": "b24d026c4a6f72f122764d9ae21501a39777caf1233558307c2db2cdc91fbe59",
+      "sha256": "bb11911f91120d82e59e2372c1a00603bc1402007b1a104979154ab9cfbc1662",
       "mo_ta": "Dữ liệu miền «literature» — tệp tho-yeu-nuoc."
+    },
+    {
+      "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
+      "mien": "literature",
+      "so_muc": 8,
+      "byte": 9170,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": "sources",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ten",
+        "tac_gia",
+        "nam",
+        "the_loai",
+        "ban_quyen",
+        "lien_quan_tinh",
+        "tom_tat",
+        "sources",
+        "chu_de",
+        "trang_thai",
+        "ghi_chu"
+      ],
+      "sha256": "785dfdbef7ae0b0a9edbbbc4b3aab3b9b97055334fb65d41ef46ca4b7020e976",
+      "mo_ta": "Dữ liệu miền «literature» — tệp van-xuoi-hien-thuc-vung-mien."
     },
     {
       "file": "literature/van-xuoi-ve-bac.json",
       "mien": "literature",
       "so_muc": 2,
-      "byte": 2225,
+      "byte": 2374,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -505,9 +604,10 @@
         "the_loai",
         "tom_tat",
         "lien_quan_tinh",
-        "sources"
+        "sources",
+        "chu_de"
       ],
-      "sha256": "7ea5af264c7b3a615da67c94b2c3ca64c0bd190a800cb417381c27128ff7a18d",
+      "sha256": "37b05580d0e4154295dd8eed9bab94f80c613d604f5888bdaf13562d73037c6d",
       "mo_ta": "Tác phẩm VĂN XUÔI viết về Chủ tịch Hồ Chí Minh — tiểu thuyết, hồi ký, bút ký, truyện ký."
     },
     {

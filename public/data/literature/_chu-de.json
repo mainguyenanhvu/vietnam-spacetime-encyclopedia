@@ -1,0 +1,66 @@
+{
+  "ghi_chu": "Bộ chủ đề của thư viện. Mọi mục trong literature/*.json mang một `chu_de` trỏ về `id` ở đây. Soạn 2026-08-05.",
+  "ngay_cap_nhat": "2026-08-05",
+  "items": [
+    {
+      "id": "van-hoc-dan-gian",
+      "ten": "Văn học dân gian",
+      "mo_ta": "Ca dao, tục ngữ, vè — sáng tác khuyết danh, truyền miệng."
+    },
+    {
+      "id": "giai-thoai-khoa-bang",
+      "ten": "Giai thoại khoa bảng",
+      "mo_ta": "Giai thoại về Trạng nguyên, Tiến sĩ, Nho học và khoa cử thời phong kiến."
+    },
+    {
+      "id": "tho-van-trung-dai",
+      "ten": "Thơ văn trung đại",
+      "mo_ta": "Thơ văn chữ Hán/Nôm thế kỷ XI–XIX, trước khi Pháp xâm lược 1858."
+    },
+    {
+      "id": "can-dai-khang-phap",
+      "ten": "Thơ văn yêu nước cận đại — phong trào chống Pháp",
+      "mo_ta": "1858–1945: phong trào Cần Vương, Đông Du, Đông Kinh Nghĩa Thục, Duy Tân, các chí sĩ tiền bối cách mạng."
+    },
+    {
+      "id": "khang-chien-chong-phap",
+      "ten": "Thơ văn kháng chiến chống Pháp",
+      "mo_ta": "1945–1954."
+    },
+    {
+      "id": "khang-chien-chong-my-hau-chien",
+      "ten": "Thơ văn kháng chiến chống Mỹ & hậu chiến",
+      "mo_ta": "1954 đến nay: kháng chiến chống Mỹ, chiến tranh biên giới, thơ tưởng niệm hậu chiến."
+    },
+    {
+      "id": "nhat-ky-thu-hoi-ky",
+      "ten": "Nhật ký – thư – hồi ký chiến trường",
+      "mo_ta": "Văn xuôi tư liệu của người trong cuộc: nhật ký, thư từ mặt trận, hồi ký, lời kể nhân chứng."
+    },
+    {
+      "id": "tac-pham-ho-chi-minh",
+      "ten": "Tác phẩm của Chủ tịch Hồ Chí Minh",
+      "mo_ta": "Thơ văn do chính Hồ Chí Minh sáng tác."
+    },
+    {
+      "id": "ve-ho-chi-minh",
+      "ten": "Thơ và văn xuôi viết về Chủ tịch Hồ Chí Minh",
+      "mo_ta": "Tác phẩm của tác giả khác viết về Hồ Chí Minh."
+    },
+    {
+      "id": "ca-khuc-que-huong",
+      "ten": "Ca khúc quê hương – đất nước",
+      "mo_ta": "Âm nhạc — chỉ metadata và giới thiệu, không chép lời."
+    },
+    {
+      "id": "su-ky-dia-chi",
+      "ten": "Sử ký – địa chí",
+      "mo_ta": "Biên niên sử, địa chí, bút ký trung đại."
+    },
+    {
+      "id": "van-xuoi-hien-thuc-vung-mien",
+      "ten": "Văn xuôi hiện thực & tác phẩm kinh điển vùng miền",
+      "mo_ta": "Văn xuôi hiện thực đầu TK20 và tiểu thuyết/bút ký kinh điển khắc họa một vùng đất cụ thể (cận–hiện đại)."
+    }
+  ]
+}
