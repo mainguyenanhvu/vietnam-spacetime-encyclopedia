@@ -46,6 +46,11 @@ const CHROME =
     "C:/Program Files/Google/Chrome/Application/chrome.exe",
     "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
     `${os.homedir()}/AppData/Local/Google/Chrome/Application/chrome.exe`,
+    // Runner ubuntu-latest của GitHub Actions — xem ghi chú cùng chỗ ở smoke.mjs.
+    "/usr/bin/google-chrome",
+    "/usr/bin/google-chrome-stable",
+    "/usr/bin/chromium-browser",
+    "/usr/bin/chromium",
   ].find((p) => existsSync(p));
 
 // Bất biến #1 của dự án nêu đích danh HAI quần đảo này. Chúng đến từ nguồn
@@ -192,6 +197,10 @@ async function main() {
         `--user-data-dir=${profile}`,
         "--no-first-run",
         "--no-default-browser-check",
+        // Chỉ trên CI: runner chạy trong container nên sandbox của Chrome hay
+        // dựng không lên. Ở máy thật KHÔNG bỏ sandbox — profile là thư mục tạm
+        // nhưng trang được nạp vẫn là mã thật, không có lý do nới quyền.
+        ...(process.env.CI ? ["--no-sandbox", "--disable-dev-shm-usage"] : []),
         "--enable-unsafe-swiftshader",
         "--use-gl=angle",
         "--use-angle=swiftshader",

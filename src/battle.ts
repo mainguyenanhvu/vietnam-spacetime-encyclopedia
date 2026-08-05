@@ -4,6 +4,7 @@
 // Tự chứa: initBattle() tạo nút mở + panel, không đụng vào main.ts.
 
 import { registerPanel, showOnly, hidePanel } from "./panels";
+import { esc } from "./util/html";
 
 type TideDir = "len" | "xuong";
 
@@ -49,13 +50,6 @@ const DATA_URL = `${import.meta.env.BASE_URL}data/battles/bach-dang-938.json`;
 let battle: Battle | null = null;
 let stepIdx = 0;
 
-const esc = (s: string) =>
-  s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 
 // ── Trình dựng SVG ─────────────────────────────────────────────────────────
 

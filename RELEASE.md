@@ -335,3 +335,66 @@ Tải thẳng mã HTML gốc (không qua trình render) còn dùng để tách b
 ### Hai trường ghi chú tách bạch
 
 `ghi_chu_dich` **render ra trang** cho người đọc; `ghi_chu_bien_tap` chỉ nằm trong JSON, dặn người/agent sửa dữ liệu về sau. Khai cả hai trong `interface Poem`, trong đó `ghi_chu_bien_tap` có chú thích nói rõ nó **cố ý không render** — nhét câu «ĐỪNG SỬA» vào `ghi_chu_dich` là nói với nhầm người.
+
+### Đóng nốt phiếu «7 DIFF cứu từ phiên 26-07» — năm bản vá còn lại
+
+Bốn bản vá đã áp từ trước (1a, 1b, 2, 6a). Phiên này áp nốt **3, 4, 5, 6b, 7**.
+
+#### DIFF-3 · chốt fontstack bằng kiểu
+
+Năm chuỗi `"text-font"` rời rạc trong `main.ts` gom về `src/map-fonts.ts`. Điểm đáng ghi: **hằng số trần không đủ**. Ba trong năm lời gọi `map.addLayer` ép cả object literal bằng `as never`, mà `as never` nuốt sạch kiểm tra kiểu bên trong — gõ `["Open Sans Bold"]` ở đó vẫn biên dịch xanh. Đối số của một lời gọi **hàm** thì vẫn được kiểm bình thường, nên fontstack đi qua `textFont(FONT_LABEL)` rồi spread vào `layout`.
+
+Vì sao spread chứ không bọc cả object: bọc qua một generic làm mất suy luận tuple của biểu thức MapLibre — `["get", "ten"]` tụt xuống `string[]` và style-spec từ chối. Hai chỗ không có `as never` đỏ ngay lượt đầu, đó là cách phát hiện.
+
+Bước phủ định đã chạy: đổi tạm một chỗ **bên trong `as never`** thành `["Open Sans Bold"]` → `tsc` đỏ đúng chỗ, `TS2820` ở dòng 412.
+
+#### DIFF-4 · ranh giới kiểu cho JSON
+
+`fetchJson<T>(path)` cũ trả `(await res.json()) as T` — một lời khai không ai kiểm. Nay `fetchJson(path, parse)` có tham số parse **bắt buộc**: quên là lỗi biên dịch, không phải lỗi runtime. Thêm `src/types/parse.ts` (`str` `num` `strs` `arr` `oneOf` `rec` `itemsOf`) và `src/util/fetch.ts`. Chuyển cả 16 nơi gọi, gồm `fetchJsonSafe` — bản sao thứ hai của cùng lỗi, nằm trong `search.ts`.
+
+**Đo trên dữ liệu thật trước khi viết, và số đo đổi cách làm.** Lời khai kiểu trong `main.ts` sai với chính dữ liệu của dự án:
+
+| Trường | Khai trong `main.ts` | Thật trong JSON |
+|---|---|---|
+| `nam` | `string \| number` | 513 số · 35 chuỗi («Thời Hùng Vương») |
+| `xep_hang` | `number` | 22 số · **82 chuỗi**, có mục là cả một câu văn |
+| `dot` | `number` | 188 số |
+
+Đây chính là chuỗi nhân quả đẻ ra 7 sink XSS: khai `number` → `tsc` tin → người viết thấy "số thì escape làm gì" → bỏ `esc()`. Nay mọi trường **sẽ đi vào HTML** đều khai `string` và ép ở hàm parse, kể cả trường vốn là số. Nhờ đó `esc(o.nam)` biên dịch được tự nhiên và 31 chỗ `esc(String(...))` rút còn `esc(...)` — `tsc` giữ lại đúng 5 chỗ thật sự là số.
+
+Kèm theo, 10 chỗ `as OverlayItem & { … }` biến mất. Mỗi chỗ khai một tập trường khác nhau, không chỗ nào là nguồn sự thật; nay `interface OverlayItem` có đủ 22 trường. Và `f.properties as unknown as OverlayItem` ở trình xử lý click đổi thành `parseOverlayItem(f.properties)` — cast chỉ là lời khai, parse mới là ép kiểu thật.
+
+**Hai bước phủ định đã chạy:**
+
+1. Bỏ tham số `parse` ở một nơi gọi → `tsc` đỏ (`TS2554`).
+2. Ca dương tính đầu-cuối: gieo `3"><script>window.__BIDOT=1</script>` vào trường `dot` của **mọi** mục `bao-vat-quoc-gia.json`, chạy Chrome headless, bấm marker thật. Kết quả: `properties.dot` kiểu `string` · 0 thẻ `<script>` trong popup · `window.__BIDOT` vẫn `undefined` · popup chứa chuỗi `&lt;script&gt;`. Dữ liệu được khôi phục trong `finally`.
+
+   ⚠️ Lượt đầu của phép thử này **vô nghĩa mà trông như có ý nghĩa**: gieo payload vào đúng một mục thì cú bấm rơi trúng marker khác (mục chồng nhau ở zoom xa) và popup trả về là của mục sạch. Gieo vào mọi mục thì bấm trúng ai cũng là ca thử hợp lệ.
+
+#### DIFF-5 · tách `overlays-config.ts`
+
+629 dòng khai báo 34 lớp phủ + ba hàm dựng popup rời khỏi `main.ts` (**3.363 → 2.943 dòng**). Thuần di chuyển; thay đổi thật duy nhất là gom 9 bản sao dải cảnh báo toạ độ về `canhBaoToaDo(muc, doiTuong)` — tham số `doiTuong` giữ nguyên chữ hiển thị của từng lớp («Toạ độ nơi thờ», «Toạ độ quê/khu lưu niệm», «Toạ độ đền/đình»), vì đó là thông tin thật chứ không phải dị bản ngẫu nhiên.
+
+Chứng minh là *chuyển* chứ không phải *viết lại*: bóc bảng `OVERLAYS` ở `HEAD` và ở file mới rồi so `id`/`label`/`icon`/`file`/`nguon`/`popup` của từng lớp — **34/34 lớp khớp từng ký tự**.
+
+Nghiệm thu chạy: bật cả 34 lớp trong Chrome headless → 34/34 dựng được nguồn + lớp; bấm marker 5 lớp → popup dựng đủ nội dung; console sạch. `tsc` không bắt được lỗi ở đây (bảng lớp phủ là dữ liệu thuần — gõ sai đường dẫn file vẫn biên dịch xanh), nên bước này không bỏ được.
+
+⚠️ Bẫy trong chính phép nghiệm thu: `querySourceFeatures` **chỉ trả feature trong khung nhìn**. Lượt đầu, sau khi nhảy tới lớp trước thì ba lớp sau trả 0 feature và bị chấm là hỏng. Đọc `getSource(id)._data` mới độc lập với viewport.
+
+#### DIFF-6b · gom `esc()`
+
+9 bản sao y hệt về 1. Bản thứ 9 là `escHtml` trong `search.ts` — **cùng thân hàm, khác tên**, nên mọi lượt dò trùng trước đều bỏ sót.
+
+#### DIFF-7 · smoke + chủ quyền thành cổng chặn của CI
+
+`deploy.yml` nay chạy `npm run verify:chuquyen` rồi `npm run smoke` sau bước build, cả hai đều **chặn deploy**. Điều kiện bật đã đủ: smoke 9 đạt/0 hỏng, chủ quyền 13/13 thời kỳ.
+
+Trước khi gắn có tra thật chứ không đoán: bảng `actions/runner-images` cho thấy `ubuntu-24.04` (= `ubuntu-latest`) có sẵn **Google Chrome 150**. Hai script nới danh sách dò đường dẫn sang `/usr/bin/google-chrome` và tự thêm `--no-sandbox --disable-dev-shm-usage` **khi thấy biến `CI`** — ở máy thật không bỏ sandbox, vì profile là thư mục tạm nhưng trang được nạp vẫn là mã thật.
+
+Vẫn cố ý **không** gắn vào `npm run validate`: cổng đó phải chạy được ở máy không có Chrome và xong trong vài giây.
+
+### 91 ảnh nhân vật — hoá ra đã nạp xong từ trước
+
+Mục này trong `PLAN.md` ghi «91 ảnh, chưa có script gộp, phủ ảnh 142 → 226/1.040». Dry-run đối chiếu chéo cho thấy cả ba con số đều lỗi thời: file cứu về có **195** bản ghi, và **195/195 đã nằm trong dữ liệu với URL khớp từng ký tự**. Độ phủ thật hiện là **558/2.347 mục lớp phủ (23,8%)**. 0 mục thiếu `anh_nguon`, 0 thiếu `anh_giay_phep`, 0 ảnh nằm ngoài `upload.wikimedia.org` (CSP của trang chỉ cho host này).
+
+⚠️ **Chưa kiểm được 558 URL ảnh còn sống hay không, và phép đo đầu tiên là phép đo hỏng.** Quét bằng 8 luồng song song → Wikimedia trả **429** cho 543/558. Đó là tự mình bị chặn tốc độ, không phải ảnh chết — báo cáo "543 ảnh chết" mà tin là sẽ dẫn tới đi sửa 543 mục lành. Lấy mẫu lại 30 URL tuần tự, nghỉ 400 ms: **24 sống · 6 vẫn 429 · 0 mục 404**. Muốn con số thật thì phải quét chậm (≥1 s/URL) với User-Agent có địa chỉ liên hệ theo đúng chính sách của Wikimedia.

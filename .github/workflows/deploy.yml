@@ -35,6 +35,18 @@ jobs:
       - run: npm run build
         env:
           BASE_PATH: /vietnam-spacetime-encyclopedia/
+      # Hai cổng dưới đây dựng Chrome headless thật (swiftshader, có WebGL) trên
+      # vite dev server tự spawn — không đọc dist/, nên thứ tự với bước build chỉ
+      # để `tsc` đỏ sớm trước khi tốn công mở trình duyệt.
+      #
+      # Runner ubuntu-latest có sẵn Google Chrome ở /usr/bin/google-chrome (đã
+      # tra bảng runner-images 2026-08-05: Chrome 150 trên ubuntu-24.04). Nếu ảnh
+      # runner bỏ Chrome, script exit 2 kèm thông báo rõ — đặt CHROME_PATH để chỉ
+      # đường, ĐỪNG hạ hai bước này xuống continue-on-error.
+      - name: Cổng chủ quyền mức hiển thị (13 thời kỳ, Chrome headless)
+        run: npm run verify:chuquyen
+      - name: Smoke test (CDP, Chrome headless)
+        run: npm run smoke
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

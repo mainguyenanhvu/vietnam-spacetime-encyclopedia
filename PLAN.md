@@ -2,7 +2,7 @@
 
 > **Đây là file kế hoạch DUY NHẤT.** Không tạo thêm file `*-plan.md` nữa. Việc đã xong chuyển sang [`RELEASE.md`](RELEASE.md). Kế hoạch cũ nằm ở `docs/lich-su/` — đọc để hiểu lịch sử quyết định, **không đối chiếu số liệu** vì chúng đã lỗi thời.
 
-Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-26. Cập nhật **2026-08-03**.
+Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-26. Cập nhật **2026-08-05**.
 
 ---
 
@@ -17,9 +17,9 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ---
 
-## Trạng thái hiện tại — 2026-08-03
+## Trạng thái hiện tại — 2026-08-05
 
-98 file dữ liệu · **4.531 mục** · 7,76 MB · 34 lớp phủ (2.347 mục, 52%) · 11/11 cổng xanh · `tsc` exit 0.
+98 file dữ liệu · **4.531 mục** · 7,76 MB · 34 lớp phủ (2.347 mục, 52%) · 12/12 cổng dữ liệu xanh · smoke 9 đạt/0 hỏng · chủ quyền 13/13 thời kỳ · `tsc` exit 0.
 
 | Chiến dịch đang mở | Trạng thái |
 |---|---|
@@ -224,12 +224,14 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 | **1a** era nạp lười | `map.on("load")` `addSource` cả 3 era vô điều kiện | ✅ **ĐÃ ÁP** — cùng bản vá `landmarks3d.ts` và cổng gác `verify_chu_quyen.mjs` |
 | 1b Nam tiến nạp lười | | ✅ **ĐÃ ÁP** — `ensureNamTienGeo()` đã có |
 | 2 `forceContextLoss` | | ✅ **ĐÃ ÁP** — `figures3d.ts`, `models3d.ts` |
-| **3** fontstack union type | 5 literal `"text-font"` rải rác `main.ts` | ⬜ **CHƯA ÁP** — chặn tái diễn lỗi fontstack |
-| **4** `fetchJson` bỏ `as T` | Gốc của 7+ sink XSS | ⬜ **CHƯA ÁP** — 2 sink đã vá điểm, gốc chưa. Thêm `search.ts:99` có bản sao `fetchJsonSafe` |
-| **5** tách `overlays-config.ts` | Khối nay ~750 dòng, lớn hơn lúc viết bản vá | ⬜ **CHƯA ÁP** — làm SAU khi gộp lớp, không thì sửa 2 lần cùng một khối |
+| **3** fontstack union type | 5 literal `"text-font"` rải rác `main.ts` | ✅ **ĐÃ ÁP** 2026-08-05 — `src/map-fonts.ts` |
+| **4** `fetchJson` bỏ `as T` | Gốc của 7+ sink XSS | ✅ **ĐÃ ÁP** 2026-08-05 — `types/parse.ts` + `util/fetch.ts`, gộp luôn `fetchJsonSafe` của `search.ts` |
+| **5** tách `overlays-config.ts` | Khối nay ~750 dòng, lớn hơn lúc viết bản vá | ✅ **ĐÃ ÁP** 2026-08-05 — `src/overlays-config.ts` 629 dòng, `main.ts` 3.363 → 2.943 |
 | 6a panel registry | | ✅ **ĐÃ ÁP** cho battle/olympia/story/namtien |
-| **6b** `esc()` dedup | 4 file còn giữ bản `esc` cục bộ | ⬜ **CHƯA ÁP** — cơ học, rủi ro thấp |
-| **7** `npm run smoke` | | ⬜ **CHƯA ÁP** phần `package.json` (+1 dòng). Phần gác cổng CI phải viết lại — `smoke.mjs` nay đã 9 kịch bản, tự dựng server cổng 5188 |
+| **6b** `esc()` dedup | 4 file còn giữ bản `esc` cục bộ | ✅ **ĐÃ ÁP** 2026-08-05 — 9 bản sao (kể cả `escHtml` khác tên của `search.ts`) về 1 |
+| **7** `npm run smoke` | | ✅ **ĐÃ ÁP** 2026-08-05 — `smoke` + `verify:chuquyen` đã là bước chặn trong `deploy.yml` |
+
+🔴 **Bẫy kiểu đã bắt được nhờ DIFF-4** (đo trên dữ liệu thật, không phải suy đoán): `nam` khai `string | number` nhưng thật ra 513 số + 35 chuỗi; `xep_hang` khai `number` nhưng 82/104 giá trị là **chuỗi**, có mục là cả một câu văn dài. Lời khai kiểu trong `main.ts` sai với chính dữ liệu của dự án — đó là lý do `esc()` bị bỏ qua ở những trường "vốn là số". Nay mọi trường hiển thị đều ép về `string` ở hàm parse.
 
 ✅ **Bẫy `landmarks3d.ts:281` đã vá cùng commit** — đổi từ ghim `era-phapthuoc-fill` sang dò lớp era đang có theo thứ tự vẽ thật. Cùng lúc phát hiện **nửa thứ hai của cùng cái bẫy**: `ensureEra` phải truyền `beforeId = "chu-quyen-labels"`, nếu không lớp era sinh ra sau sẽ chèn lên trên và **phủ mất nhãn Hoàng Sa / Trường Sa** — không lỗi console, không cổng dữ liệu nào bắt được.
 
@@ -237,7 +239,9 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 
 Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa sổ nào. Quét cả 13 thời kỳ, kiểm 3 điều: nhãn chủ quyền render được · mọi lớp era nằm dưới `chu-quyen-labels` · era nạp lười 1/3 nguồn. **13/13 xanh**, và đã tự chứng minh biết đỏ bằng ca dương tính (bỏ `beforeId` → V2 đỏ đúng chỗ).
 
-⚠️ **Chưa gắn vào `npm run validate`** — cần Chrome, và không bật gác CI trước khi `smoke.mjs` hết đỏ 4/9.
+✅ **Đã gắn vào CI 2026-08-05** — `deploy.yml` chạy `verify:chuquyen` rồi `smoke` sau bước build, đều là bước CHẶN. Tra bảng runner-images cùng ngày: `ubuntu-24.04` (= `ubuntu-latest`) có sẵn Google Chrome 150 ở `/usr/bin/google-chrome`; hai script đã nới danh sách dò đường dẫn và tự thêm `--no-sandbox` khi thấy biến `CI`.
+
+⚠️ Vẫn **cố ý không** gắn vào `npm run validate`: cổng đó phải chạy được ở máy không có Chrome và trong vài giây, còn hai cổng này mất ~1–2 phút mỗi lượt.
 
 ⚠️ Bản đầu của cổng này **đỏ giả 10/13** vì đòi đủ 5 đảo ở mọi thời kỳ. Ba đảo Thổ Chu / Bạch Long Vĩ / Phú Quý sống trong file ranh giới tỉnh, mà thời kỳ cổ không có lớp ranh giới nào — chúng chưa bao giờ được **vẽ** ở đó. Lý do đã ghi trong đầu file script để không ai sửa ngược.
 
@@ -248,7 +252,8 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 - [ ] Email cá nhân hardcode trong User-Agent: `scripts/regeocode.mjs:17`, `scripts/commons_photos.mjs:17`. Repo công khai. **S**
 - [ ] Nâng Vite 5.4.21 → 6.4.3 — GHSA-fx2h-pf6j-xcff (CVSS 7,5) + rò hash NTLMv2. Cả hai đặc thù Windows, chỉ ảnh hưởng khi chạy dev server (`npm audit --omit=dev` = 0). **S**
 - [ ] `unesco.json` 13 mục dùng schema cũ, thiếu `nguon[]` riêng, chưa vào STRICT_SOURCE. **S**
-- [ ] Gộp **91 ảnh nhân vật** đã soạn (phủ ảnh 142 → 226/1.040). Schema `anh`/`anh_nguon`/`anh_giay_phep`/`anh_muc` + `nhan_vat_id`. Chưa có script gộp. **M**
+- [x] ~~Gộp **91 ảnh nhân vật** đã soạn (phủ ảnh 142 → 226/1.040). Chưa có script gộp.~~ **Mục này đã lỗi thời — kiểm lại 2026-08-05**: file cứu về có **195** bản ghi (không phải 91), và cả 195 **đã nằm trong dữ liệu**, URL khớp bản đã soạn từng ký tự. Độ phủ thật hiện là **558/2.347 mục lớp phủ (23,8%)**, không phải 226/1.040. 0 mục thiếu `anh_nguon`, 0 thiếu `anh_giay_phep`, 0 ảnh nằm ngoài `upload.wikimedia.org` (CSP chỉ cho host này).
+- [ ] **Chưa kiểm được 558 URL ảnh còn sống hay không.** Lượt quét đầu dùng 8 luồng song song → Wikimedia trả **429** cho 543/558; đó là lỗi phép đo, không phải ảnh chết. Lượt hai lấy mẫu 30 URL tuần tự (nghỉ 400 ms) được 24 sống · 6 vẫn 429 · **0 mục 404**. Muốn có con số thật thì phải quét chậm (≥1 s/URL, User-Agent có địa chỉ liên hệ theo đúng chính sách của Wikimedia) và chạy nền. **S**
 
 ---
 
@@ -310,10 +315,12 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 ## 9. Cổng nghiệm thu
 
 ```bash
-npm run validate      # 11 cổng dữ liệu — run_validators.mjs tự phát hiện mọi validate_*.mjs
-npx tsc --noEmit      # type check
-npm run build         # tsc + vite build
-node scripts/audit_sovereignty.mjs   # chủ quyền — CI chạy riêng, bắt buộc
+npm run validate         # 12 cổng dữ liệu — run_validators.mjs tự phát hiện mọi validate_*.mjs
+npx tsc --noEmit         # type check
+npm run build            # tsc + vite build
+node scripts/audit_sovereignty.mjs   # chủ quyền mức DỮ LIỆU — CI chạy riêng, bắt buộc
+npm run verify:chuquyen  # chủ quyền mức HIỂN THỊ, 13 thời kỳ (cần Chrome) — CI chặn
+npm run smoke            # 10 kịch bản qua CDP (cần Chrome) — CI chặn
 ```
 
 **Một build xanh KHÔNG chứng minh bản đồ đúng.** Đụng bản đồ hay ranh giới thì phải **mở trình duyệt, nhìn bằng mắt, xác nhận Hoàng Sa + Trường Sa còn hiện**. Đụng cảnh 3D thì render, xem console sạch và khung hình không tụt trên laptop tầm trung.

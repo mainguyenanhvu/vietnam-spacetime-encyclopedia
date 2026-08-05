@@ -3,6 +3,7 @@
 // hoàn thành được nhận một hạt ngọc Lạc Việt (lưu localStorage, không PII).
 
 import { registerPanel, showOnly, hidePanel } from "./panels";
+import { esc } from "./util/html";
 
 interface Chapter {
   slug: string;
@@ -24,13 +25,6 @@ const LS_GEMS = "story_gems";
 let story: StoryData | null = null;
 let dataUrl = "";
 
-const esc = (s: string) =>
-  s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 
 function gems(): string[] {
   try {

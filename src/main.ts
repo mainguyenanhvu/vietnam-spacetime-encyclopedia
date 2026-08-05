@@ -11,6 +11,7 @@ import type { CheDo } from "./chedo";
 import { gomNutTopbar } from "./topbar";
 import { registerPanel, showOnly, hidePanel, hideAllPanels, datNhanPanel } from "./panels";
 import { moPopup, dongPopup } from "./popup";
+import { FONT_LABEL, FONT_SYMBOL, textFont } from "./map-fonts";
 // Chỉ nhập hàm phân loại (không kéo Three.js) — xem ghi chú trong mohinh-diem.ts.
 import { kieuTheoTen } from "./mohinh-diem";
 import type { DiemMoHinh } from "./mohinh-diem";
@@ -24,6 +25,15 @@ import { initBattle } from "./battle";
 import { initJourney } from "./journey";
 import { initQuocGia } from "./quocgia";
 import { initTimeline } from "./timeline";
+import { esc } from "./util/html";
+import { fetchJson } from "./util/fetch";
+import { str, num, strs, oneOf, rec, arr, itemsOf } from "./types/parse";
+import {
+  OVERLAYS,
+  OVERLAY_GROUPS,
+  parseOverlayItem,
+  type OverlayConf,
+} from "./overlays-config";
 
 // Đặt chế độ xem đã lưu trước mọi thứ khác, nếu không trang sẽ nháy sang chế độ
 // mặc định rồi mới đổi.
@@ -385,9 +395,9 @@ function initSongNui(): void {
           // đặt chữ — đo được 0/38 nhãn, kể cả khi nới symbol-spacing 80 và
           // text-max-angle 90. Point placement đặt nhãn ở giữa sông và luôn hiện.
           layout: {
+            ...textFont(FONT_LABEL),
             visibility: "none",
             "text-field": ["get", "ten"],
-            "text-font": ["Open Sans Semibold"],
             "text-size": size,
             "text-max-width": 8,
           },
@@ -396,12 +406,11 @@ function initSongNui(): void {
         before,
       );
       // Điểm núi (▲) LUÔN hiện — allow-overlap để mọi đỉnh đều thấy dù zoom xa.
-      // Fontstack BẮT BUỘC là "Noto Sans Regular": endpoint glyphs demotiles chỉ
-      // phục vụ "Open Sans Semibold" + "Noto Sans Regular", và trong hai stack đó
-      // chỉ Noto có ▲ (U+25B2). Chọn sai stack → glyph range 404 → MapLibre gom
+      // Fontstack BẮT BUỘC là FONT_SYMBOL: trong hai stack tự host chỉ Noto Sans
+      // Regular có ▲ (U+25B2). Chọn sai stack → glyph range 404 → MapLibre gom
       // mọi fontstack của CÙNG một source vào một lượt getGlyphs, một 404 làm
       // Promise.all trong worker_tile vỡ ⇒ TOÀN BỘ tile của source "song-nui"
-      // hỏng, mất luôn cả đường sông (line) lẫn nhãn.
+      // hỏng, mất luôn cả đường sông (line) lẫn nhãn. Xem `map-fonts.ts`.
       map.addLayer(
         {
           id: "nui-markers",
@@ -409,9 +418,9 @@ function initSongNui(): void {
           source: "song-nui",
           filter: ["==", ["get", "loai"], "nui"],
           layout: {
+            ...textFont(FONT_SYMBOL),
             visibility: "none",
             "text-field": "▲",
-            "text-font": ["Noto Sans Regular"],
             "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 8, 16, 12, 20],
             "text-allow-overlap": true,
             "text-ignore-placement": true,
@@ -428,9 +437,9 @@ function initSongNui(): void {
           source: "song-nui",
           filter: ["==", ["get", "loai"], "nui"],
           layout: {
+            ...textFont(FONT_LABEL),
             visibility: "none",
             "text-field": ["get", "ten"],
-            "text-font": ["Open Sans Semibold"],
             "text-size": size,
             "text-max-width": 8,
             "text-offset": [0, 0.9],
@@ -632,6 +641,19 @@ interface NamTienMoc {
   tinh_moi: string[];
   nguon: string[];
 }
+
+/** `buoc` giữ kiểu SỐ: nó là khoá sắp xếp và khoá của slug2step, không hiển thị. */
+const parseNamTienMoc = (raw: unknown): NamTienMoc => {
+  const r = rec(raw);
+  return {
+    buoc: num(r.buoc) ?? 0,
+    nam: str(r.nam),
+    ten: str(r.ten),
+    mo_ta: str(r.mo_ta),
+    tinh_moi: strs(r.tinh_moi),
+    nguon: strs(r.nguon),
+  };
+};
 let namTienMoc: NamTienMoc[] = [];
 let namTienStep = -1;
 let namTienGeoReady = false;
@@ -639,7 +661,9 @@ let namTienTimer: number | null = null;
 const namTienMax = (): number => namTienMoc.length - 1;
 
 function initNamTien(): void {
-  void fetchJson<{ moc: NamTienMoc[] }>("data/journey/nam-tien.json").then((data) => {
+  void fetchJson("data/journey/nam-tien.json", (raw) => ({
+    moc: arr(rec(raw).moc, parseNamTienMoc),
+  })).then((data) => {
     if (!data?.moc?.length) return;
     namTienMoc = data.moc.slice().sort((a, b) => a.buoc - b.buoc);
     buildNamTienUI();
@@ -930,9 +954,9 @@ function ensureEra(era: Era): void {
     type: "symbol",
     source: era.id,
     layout: {
+      ...textFont(FONT_LABEL),
       visibility: "none",
       "text-field": ["coalesce", ["get", era.nameKey], ["get", "ten"]],
-      "text-font": ["Open Sans Semibold"],
       "text-size": ["interpolate", ["linear"], ["zoom"], 4, 9, 8, 13],
       "text-max-width": 8,
     },
@@ -999,8 +1023,8 @@ map.on("load", () => {
     type: "symbol",
     source: "chu-quyen",
     layout: {
+      ...textFont(FONT_LABEL),
       "text-field": ["get", "ten"],
-      "text-font": ["Open Sans Semibold"],
       "text-size": 12.5,
       "text-allow-overlap": true,
     },
@@ -1395,621 +1419,6 @@ function buildTimeline(): void {
 // ---------------------------------------------------------------------------
 // Lớp phủ (overlays) — bật/tắt độc lập với thời kỳ
 // ---------------------------------------------------------------------------
-interface OverlayItem {
-  ten: string;
-  loai?: string;
-  hang_muc?: string;
-  nam?: string | number;
-  dot?: number;
-  lon: number;
-  lat: number;
-  tinh_34?: string;
-  anh?: string;
-  anh_nguon?: string;
-  anh_giay_phep?: string;
-  anh_muc?: "chan-dung" | "tu-lieu" | "vi-tri";
-}
-
-interface OverlayConf {
-  id: string;
-  label: string;
-  // Emoji dùng làm icon-image trên bản đồ (đăng ký 1 lần qua registerOverlayIcons(),
-  // dùng chung giữa các lớp phủ cùng emoji để đỡ tốn ảnh sprite).
-  icon: string;
-  file: string;
-  circleColor: ExpressionSpecification | string;
-  nguon: string;
-  popup: (p: OverlayItem) => string;
-}
-
-// Ảnh minh hoạ (chân dung/tư liệu) hiện trong popup nếu có URL hợp lệ — chỉ chấp nhận
-// https:// (chặn javascript:/http: không mã hoá) để tránh chèn script qua dữ liệu.
-const photoImgBlock = (o: OverlayItem): string =>
-  o.anh && o.anh.startsWith("https://")
-    ? `<img src="${esc(o.anh)}" alt="${esc(o.ten)}" loading="lazy" style="max-width:120px;max-height:120px;border-radius:6px;display:block;margin:0 0 4px" referrerpolicy="no-referrer"/>`
-    : "";
-const photoAttrBlock = (o: OverlayItem): string =>
-  o.anh && o.anh.startsWith("https://") && o.anh_nguon
-    ? `<br/><span style="color:#a8a29e;font-size:0.66rem">🖼️ ${esc(o.anh_nguon)}${o.anh_giay_phep ? " · " + esc(o.anh_giay_phep) : ""}</span>`
-    : "";
-
-// Popup dùng chung cho các lớp phủ "nhân vật" (tên · năm · quê/đền · mô tả · cảnh báo toạ độ).
-const personOverlayPopup = (p: OverlayItem): string => {
-  const o = p as OverlayItem & {
-    nam_hien_thi?: string;
-    mo_ta?: string;
-    dia_diem?: string;
-    do_tin_cay_toa_do?: string;
-  };
-  const tc =
-    o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-      : "";
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
-};
-
-// Popup HỢP NHẤT cho lớp gộp nhiều schema (nhân vật + thờ tự + sự kiện) — dùng fallback
-// nam_hien_thi ?? thoi_ky ?? nam · dia_diem ?? noi_tho · mo_ta ?? cong_trang. Không để trống dòng.
-const universalPersonPopup = (p: OverlayItem): string => {
-  const o = p as OverlayItem & {
-    nam_hien_thi?: string;
-    nam?: string | number;
-    thoi_ky?: string;
-    dia_diem?: string;
-    noi_tho?: string;
-    mo_ta?: string;
-    cong_trang?: string;
-    do_tin_cay_toa_do?: string;
-  };
-  const nam = o.nam_hien_thi ?? o.thoi_ky ?? (o.nam != null ? String(o.nam) : "");
-  const noi = o.dia_diem ?? o.noi_tho ?? "";
-  const ta = o.mo_ta ?? o.cong_trang ?? "";
-  const tc =
-    o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-      : "";
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong>${nam ? `<br/><span style="color:#78716c">${esc(String(nam))}</span>` : ""}${noi ? `<br/>📍 ${esc(String(noi))}` : ""}${ta ? `<br/><span style="color:#57534e">${esc(ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
-};
-
-// Popup dùng chung cho lớp phủ "sự kiện/trận đánh" (ưu tiên nam_hien_thi rồi nam).
-const eventOverlayPopup = (p: OverlayItem): string => {
-  const o = p as OverlayItem & {
-    nam?: string | number;
-    nam_hien_thi?: string;
-    mo_ta?: string;
-    dia_diem?: string;
-    do_tin_cay_toa_do?: string;
-  };
-  const tc =
-    o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-      : "";
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
-};
-
-const OVERLAYS: OverlayConf[] = [
-  {
-    id: "unesco",
-    label: "🏛️ Di sản thế giới & Công viên địa chất UNESCO",
-    icon: "🏛️",
-    file: "data/overlays/unesco.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "di-san-the-gioi",
-      "#7c3aed",
-      "cong-vien-dia-chat",
-      "#0d9488",
-      "#7c3aed",
-    ],
-    nguon: "UNESCO (whc.unesco.org) · Cục Di sản văn hóa",
-    popup: (p) =>
-      `<strong>${esc(p.ten)}</strong><br/>${esc(String(p.hang_muc ?? ""))} · Ghi danh ${esc(String(p.nam ?? ""))}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
-  },
-  {
-    id: "di-tich-qgdb",
-    label: "🏯 Di tích quốc gia đặc biệt",
-    icon: "🏯",
-    file: "data/overlays/di-tich-qgdb.json",
-    circleColor: "#b45309",
-    nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Quyết định xếp hạng của Thủ tướng Chính phủ",
-    popup: (p) =>
-      `<strong>${esc(p.ten)}</strong><br/>${esc(String(p.loai ?? "di tích"))} · Xếp hạng ${esc(String(p.nam ?? ""))}${p.dot ? ` (đợt ${esc(String(p.dot))})` : ""}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
-  },
-  {
-    id: "bao-vat-quoc-gia",
-    label: "💎 Bảo vật quốc gia",
-    icon: "💎",
-    file: "data/overlays/bao-vat-quoc-gia.json",
-    circleColor: "#d4af37",
-    nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn)",
-    popup: (p) => {
-      const o = p as OverlayItem & { noi_luu_giu?: string; mo_ta?: string };
-      return `<strong>${esc(o.ten)}</strong><br/>${esc(String(o.loai ?? ""))}${o.dot ? ` · công nhận đợt năm ${esc(String(o.dot))}` : ""}<br/>📍 ${esc(String(o.noi_luu_giu ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}`;
-    },
-  },
-  {
-    id: "huyen-su-khai-quoc",
-    label: "🐉 Huyền sử khai quốc · Tứ bất tử · Hải đội Hoàng Sa",
-    icon: "🐉",
-    file: "data/overlays/huyen-su-khai-quoc.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "huyen-su-khai-quoc",
-      "#b91c1c",
-      "tu-bat-tu",
-      "#7c3aed",
-      "chu-quyen",
-      "#dc2626",
-      "#b91c1c",
-    ],
-    nguon:
-      "Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái · Việt Điện U Linh · Phủ Biên Tạp Lục · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        thoi_ky?: string;
-        noi_tho?: string;
-        cong_trang?: string;
-        do_tin_cay_toa_do?: string;
-        trang_thai?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "khoa-bang-danh-nhan",
-    label: "📜 Khoa bảng · Trạng nguyên · Tiến sĩ · Quan lại",
-    icon: "📜",
-    file: "data/overlays/khoa-bang-danh-nhan.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "khoa-bang",
-      "#2563eb",
-      "thay-giao",
-      "#0d9488",
-      "danh-nhan-van-hoa",
-      "#6366f1",
-      "quan-thanh-liem",
-      "#15803d",
-      "#2563eb",
-    ],
-    nguon:
-      "Đại Việt Sử Ký Toàn Thư · Đại Nam Thực Lục · Phủ Biên Tạp Lục · Cục Di sản Văn hoá (dsvh.gov.vn) · vanmieu.gov.vn",
-    popup: universalPersonPopup,
-  },
-  {
-    id: "danh-nhan-cac-trieu",
-    label: "🏛️ Danh nhân các triều · văn hoá · y học",
-    icon: "🏛️",
-    file: "data/overlays/danh-nhan-cac-trieu.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "vua", "#b91c1c",
-      "van-hoc", "#7c3aed",
-      "y-hoc", "#0d9488",
-      "khai-pha", "#ca8a04",
-      "#7c3aed",
-    ],
-    nguon:
-      "Đại Việt Sử Ký Toàn Thư · Đại Nam Thực Lục · Đại Nam Liệt Truyện · Hải Thượng Y Tông Tâm Lĩnh · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        thoi_ky?: string;
-        noi_tho?: string;
-        cong_trang?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ nơi thờ độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.thoi_ky ?? ""))}</span><br/>📍 ${esc(String(o.noi_tho ?? ""))}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "chien-dich-tran-danh",
-    label: "⚔️ Chiến dịch · Trận đánh · Khởi nghĩa (938–1988)",
-    icon: "⚔️",
-    file: "data/overlays/chien-dich-tran-danh.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "giu-nuoc", "#dc2626",
-      "can-dai", "#ca8a04",
-      "hien-dai", "#b91c1c",
-      "#dc2626",
-    ],
-    nguon:
-      "Đại Việt Sử Ký Toàn Thư · Hoàng Lê nhất thống chí · Lịch sử Việt Nam (Viện Sử học) · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        nam_hien_thi?: string;
-        ket_qua?: string;
-        chi_huy?: string;
-        dia_diem?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ địa điểm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? o.nam ?? ""))}${o.chi_huy ? " · " + esc(o.chi_huy) : ""}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.ket_qua ? `<br/><span style="color:#57534e">${esc(o.ket_qua)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "anh-hung-can-hien-dai",
-    label: "🎖️ Anh hùng LLVT · Liệt sĩ · Tướng lĩnh hiện đại",
-    icon: "🎖️",
-    file: "data/overlays/anh-hung-can-hien-dai.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "dai-tuong", "#b91c1c",
-      "ah-llvt", "#dc2626",
-      "me-vnah", "#db2777",
-      "ah-lao-dong", "#0d9488",
-      "#dc2626",
-    ],
-    nguon:
-      "Báo Quân đội Nhân dân (qdnd.vn) · Báo Nhân Dân (nhandan.vn) · Bảo tàng Lịch sử Quân sự Việt Nam · Cổng TTĐT Chính phủ (baochinhphu.vn)",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        nam_hien_thi?: string;
-        mo_ta?: string;
-        dia_diem?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ quê/khu lưu niệm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "danh-nhan-van-hoa-can-hien-dai",
-    label: "📚 Văn nghệ sĩ · Báo chí · Danh nhân văn hoá",
-    icon: "📚",
-    file: "data/overlays/danh-nhan-van-hoa-can-hien-dai.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "chi-si", "#b91c1c",
-      "khoa-hoc-y", "#0d9488",
-      "van-nghe", "#7c3aed",
-      "hoc-gia", "#ca8a04",
-      "#b91c1c",
-    ],
-    nguon:
-      "Báo Nhân Dân · Cổng TTĐT Chính phủ · Cục Di sản Văn hoá · Bảo tàng Lịch sử Quốc gia · Sức khoẻ & Đời sống (Bộ Y tế)",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        nam_hien_thi?: string;
-        mo_ta?: string;
-        dia_diem?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ quê/khu lưu niệm độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "thanh-hoang-danh-than",
-    label: "🏯 Thành hoàng · Danh thần · Tín ngưỡng vùng miền",
-    icon: "🏯",
-    file: "data/overlays/thanh-hoang-danh-than.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "thanh-hoang", "#9333ea",
-      "#9333ea",
-    ],
-    nguon:
-      "Cục Du lịch Quốc gia · Cổng TTĐT tỉnh Quảng Ninh · Bảo tàng Lịch sử Quốc gia · Sở Du lịch Ninh Bình · Báo An Giang · Cổng du lịch Bắc Ninh",
-    popup: (p) => {
-      const o = p as OverlayItem & {
-        nam_hien_thi?: string;
-        mo_ta?: string;
-        dia_diem?: string;
-        do_tin_cay_toa_do?: string;
-      };
-      const tc =
-        o.do_tin_cay_toa_do && o.do_tin_cay_toa_do !== "cao"
-          ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Toạ độ đền/đình độ tin cậy ${esc(o.do_tin_cay_toa_do)} — đang soát</span>`
-          : "";
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(String(o.nam_hien_thi ?? ""))}</span><br/>📍 ${esc(String(o.dia_diem ?? ""))}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
-    },
-  },
-  {
-    id: "me-vnah",
-    label: "🏵️ Mẹ Việt Nam Anh hùng",
-    icon: "🏵️",
-    file: "data/overlays/me-vnah.json",
-    circleColor: "#db2777",
-    nguon:
-      "Báo Chính phủ · Báo QĐND · Bảo tàng Phụ nữ Nam Bộ · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "vua-hoang-de",
-    label: "👑 Vua · Chúa · Hoàng tộc",
-    icon: "👑",
-    file: "data/overlays/vua-hoang-de.json",
-    circleColor: "#a16207",
-    nguon:
-      "Trung tâm Bảo tồn Di tích Cố đô Huế · Cục Di sản văn hóa · cổng tỉnh · Báo Nhân Dân",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "chi-si-cach-mang",
-    label: "🔥 Chí sĩ cách mạng · Doanh nhân yêu nước",
-    icon: "🔥",
-    file: "data/overlays/chi-si-cach-mang.json",
-    circleColor: "#b91c1c",
-    nguon:
-      "Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · TTXVN · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "to-nghe-danh-than",
-    label: "🛠️ Tổ nghề · Nghệ nhân · Làng nghề truyền thống",
-    icon: "🛠️",
-    file: "data/overlays/to-nghe-danh-than.json",
-    circleColor: "#0891b2",
-    nguon:
-      "Cục Di sản văn hóa · Sở VHTT các tỉnh · Cục Bản quyền tác giả · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "di-tich-cach-mang",
-    label: "🚩 Di tích cách mạng · Nhà tù · Căn cứ kháng chiến",
-    icon: "🚩",
-    file: "data/overlays/di-tich-cach-mang.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "danh-thang",
-      "#16a34a",
-      "vuon-quoc-gia",
-      "#16a34a",
-      "#dc2626",
-    ],
-    nguon:
-      "Cục Di sản văn hóa · Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · Cục Du lịch Quốc gia (vietnamtourism.vn) · cổng tỉnh",
-    popup: eventOverlayPopup,
-  },
-  {
-    id: "nghia-trang-liet-si",
-    label: "🕯️ Nghĩa trang liệt sĩ · Đài tưởng niệm · Đền thờ liệt sĩ",
-    icon: "🕯️",
-    file: "data/overlays/nghia-trang-liet-si.json",
-    // Nghĩa trang tách khỏi tượng đài/chứng tích để đọc được mật độ ngay trên
-    // bản đồ: đỏ sẫm = nơi an nghỉ, cam = tượng đài chiến thắng, xám = nơi
-    // tưởng niệm nạn nhân thảm sát.
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "nghia-trang-quoc-gia",
-      "#7f1d1d",
-      "nghia-trang-tinh",
-      "#b91c1c",
-      "tuong-dai-chien-thang",
-      "#ea580c",
-      "khu-tuong-niem-nan-nhan",
-      "#57534e",
-      "#a16207",
-    ],
-    nguon:
-      "Cục Người có công (Bộ Nội vụ) · Báo Quân đội nhân dân · Báo Nhân Dân · Báo điện tử Đảng Cộng sản · cổng TTĐT tỉnh/huyện",
-    popup: eventOverlayPopup,
-  },
-  {
-    id: "nghe-nhan-di-san",
-    label: "🎭 Nghệ nhân · tổ nghệ thuật · di sản sống",
-    icon: "🎭",
-    file: "data/overlays/nghe-nhan-di-san.json",
-    circleColor: "#7c3aed",
-    nguon:
-      "Cục Di sản văn hóa · Sở VHTT các tỉnh · Báo Nhân Dân · Cục Du lịch Quốc gia",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "di-tich-quoc-gia",
-    label: "🏛️ Di tích quốc gia (đền · chùa · thành · hang · khảo cổ)",
-    icon: "🏛️",
-    file: "data/overlays/di-tich-quoc-gia.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "danh-thang",
-      "#16a34a",
-      "khao-co",
-      "#a16207",
-      "cach-mang",
-      "#dc2626",
-      "#0e7490",
-    ],
-    nguon:
-      "Cục Di sản văn hóa (dsvh.gov.vn) · Báo Đảng các tỉnh · Cổng TTĐT tỉnh",
-    popup: eventOverlayPopup,
-  },
-  {
-    id: "le-hoi-truyen-thong",
-    label: "🎏 Lễ hội truyền thống (di sản phi vật thể)",
-    icon: "🎏",
-    file: "data/overlays/le-hoi-truyen-thong.json",
-    circleColor: "#ea580c",
-    nguon:
-      "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "cong-trinh-ky-luc",
-    label: "🌉 Công trình kỷ lục (cầu · hầm · cáp treo · thuỷ điện)",
-    icon: "🌉",
-    file: "data/overlays/cong-trinh-ky-luc.json",
-    circleColor: "#d97706",
-    nguon:
-      "Cổng Chính phủ (chinhphu.vn) · TTXVN · Nhân Dân · báo Đảng các tỉnh · cổng bộ ngành",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "truyen-thuyet-dan-gian",
-    label: "🐉 Truyền thuyết · Sự tích địa danh · Ca dao vùng đất",
-    icon: "🐉",
-    file: "data/overlays/truyen-thuyet-dan-gian.json",
-    circleColor: "#7c3aed",
-    nguon:
-      "Cổng TTĐT tỉnh/huyện · báo Đảng bộ tỉnh · Cục Di sản văn hoá · Sở VHTTDL · TTXVN",
-    popup: eventOverlayPopup,
-  },
-  {
-    id: "danh-thang-thien-nhien",
-    label: "🏞 Danh thắng thiên nhiên (đèo · thác · núi · hồ · biển đảo)",
-    icon: "🏞",
-    file: "data/overlays/danh-thang-thien-nhien.json",
-    circleColor: "#059669",
-    nguon:
-      "Cục Du lịch Quốc gia (vietnamtourism.gov.vn) · Cục Di sản văn hóa (dsvh.gov.vn) · cổng TTĐT các tỉnh · báo Đảng",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "bao-tang",
-    label: "🏺 Bảo tàng lịch sử – văn hoá",
-    icon: "🏺",
-    file: "data/overlays/bao-tang.json",
-    circleColor: "#0891b2",
-    nguon:
-      "Website chính thức các bảo tàng công lập · Cục Di sản văn hóa (dsvh.gov.vn)",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "di-san-phi-vat-the",
-    label: "🎶 Di sản văn hoá phi vật thể (UNESCO · quốc gia)",
-    icon: "🎶",
-    file: "data/overlays/di-san-phi-vat-the.json",
-    circleColor: [
-      "match",
-      ["get", "loai"],
-      "unesco-phi-vat-the",
-      "#7c3aed",
-      "#db2777",
-    ],
-    nguon:
-      "UNESCO (ich.unesco.org) · Cục Di sản văn hóa (dsvh.gov.vn) · báo Đảng các tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "su-than-ngoai-giao",
-    label: "🕊️ Sứ thần · nhà ngoại giao lịch sử",
-    icon: "🕊️",
-    file: "data/overlays/su-than-ngoai-giao.json",
-    circleColor: "#4f46e5",
-    nguon:
-      "Bảo tàng Lịch sử Quốc gia · Giáo dục & Thời đại · Báo Nhân Dân · scov.gov.vn",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-y-luong-y",
-    label: "⚕️ Danh y · lương y (y học cổ truyền)",
-    icon: "⚕️",
-    file: "data/overlays/danh-y-luong-y.json",
-    circleColor: "#047857",
-    nguon:
-      "Sức khỏe & Đời sống · Viện Y dược học dân tộc · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "nu-danh-nhan-lich-su",
-    label: "👑 Nữ danh nhân lịch sử (nữ sĩ · nữ tướng · bà chúa)",
-    icon: "👑",
-    file: "data/overlays/nu-danh-nhan-lich-su.json",
-    circleColor: "#db2777",
-    nguon:
-      "Hội LHPN Việt Nam · Bảo tàng Lịch sử Quốc gia · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-nhan-dan-toc-thieu-so",
-    label: "🪶 Danh nhân dân tộc thiểu số · Miền núi phía Bắc",
-    icon: "🪶",
-    file: "data/overlays/danh-nhan-dan-toc-thieu-so.json",
-    circleColor: "#0f766e",
-    nguon:
-      "Báo Dân tộc & Phát triển · Ủy ban Dân tộc · Báo QĐND · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "thieu-nien-anh-hung",
-    label: "🎗️ Thiếu niên anh hùng",
-    icon: "🎗️",
-    file: "data/overlays/thieu-nien-anh-hung.json",
-    circleColor: "#be123c",
-    nguon:
-      "Bảo tàng Lịch sử Quốc gia · Báo Thiếu niên Tiền phong · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "thien-su-cao-tang",
-    label: "🪷 Thiền sư · cao tăng lịch sử",
-    icon: "🪷",
-    file: "data/overlays/thien-su-cao-tang.json",
-    circleColor: "#ca8a04",
-    nguon:
-      "Giác Ngộ · Phật giáo VN · Tạp chí NC Phật học · Báo Nhân Dân · dsvh.gov.vn",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "danh-nhan-quan-su-co-trung-dai",
-    label: "⚔️ Danh tướng · Võ tướng · Thủ lĩnh khởi nghĩa (cổ–trung đại)",
-    icon: "⚔️",
-    file: "data/overlays/danh-nhan-quan-su-co-trung-dai.json",
-    circleColor: "#991b1b",
-    nguon:
-      "Bảo tàng Lịch sử Quốc gia · Khu di tích Lam Kinh · Báo Văn hoá · cổng tỉnh · Dân trí · Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái",
-    popup: universalPersonPopup,
-  },
-  {
-    id: "nha-the-thao-lich-su",
-    label: "🏅 Nhà thể thao lịch sử (đã mất)",
-    icon: "🏅",
-    file: "data/overlays/nha-the-thao-lich-su.json",
-    circleColor: "#166534",
-    nguon:
-      "Báo Nhân Dân · Thể thao & Văn hoá · CAND · Lao Động · Thanh Niên · Vovinam",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "nghia-si-can-vuong",
-    label: "⚔️ Cần Vương · Kháng Pháp thế kỷ 19",
-    icon: "⚔️",
-    file: "data/overlays/nghia-si-can-vuong.json",
-    circleColor: "#881337",
-    nguon:
-      "Báo Nhân Dân · QĐND · cổng tỉnh · dsvh.gov.vn · bảo tàng · di tích",
-    popup: personOverlayPopup,
-  },
-  {
-    id: "tri-thuc-khoa-hoc-tk20",
-    label: "🔬 Trí thức · Nhà khoa học · Giáo dục cận–hiện đại",
-    icon: "🔬",
-    file: "data/overlays/tri-thuc-khoa-hoc-tk20.json",
-    circleColor: "#065f46",
-    nguon:
-      "Báo Nhân Dân · Viện Hàn lâm KHCN/KHXH VN · ĐHQG · MEDDOM · Tia Sáng",
-    popup: personOverlayPopup,
-  },
-  ];
 
 // Vẽ 1 emoji ra canvas offscreen rồi trả về ImageData — dùng để đăng ký
 // icon-image cho MapLibre mà không cần sprite sheet/asset ngoài (self-contained).
@@ -2046,7 +1455,9 @@ function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
   map.on("click", layerId, (e) => {
     const f = e.features?.[0];
     if (!f) return;
-    const p = f.properties as unknown as OverlayItem;
+    // Parse LẠI ở đây chứ không cast: properties do MapLibre trả về đã đi qua
+    // một vòng serialize, và cast chỉ là lời khai. parse thì có ép kiểu thật.
+    const p = parseOverlayItem(f.properties);
     moPopup(
       map,
       e.lngLat,
@@ -2074,7 +1485,7 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   if (!on) return;
   const conf = OVERLAYS.find((o) => o.id === id);
   if (!conf) return;
-  const data = await fetchJson<{ items: OverlayItem[] }>(conf.file);
+  const data = await fetchJson(conf.file, itemsOf(parseOverlayItem));
   if (!data) {
     // Tải thất bại: bỏ tick checkbox để tránh trạng thái "đang bật" giả
     // trong khi lớp phủ chưa từng được thêm vào bản đồ.
@@ -2146,6 +1557,30 @@ interface StreetLink {
     osm_sai_dau?: boolean;
   }>;
 }
+
+const parseStreetLink = (raw: unknown): StreetLink => {
+  const r = rec(raw);
+  return {
+    danh_nhan_id: str(r.danh_nhan_id),
+    ten: str(r.ten),
+    thanh_pho: arr(r.thanh_pho, (x) => {
+      const t = rec(x);
+      // centroid phải là CẶP SỐ thật — nó đi thẳng vào hình học GeoJSON, không
+      // vào HTML. Sai kiểu ở đây là marker nhảy ra giữa Thái Bình Dương chứ
+      // không phải chữ hiển thị xấu, nên trả [0,0] rồi để nơi gọi lọc bỏ.
+      const c = Array.isArray(t.centroid) ? t.centroid : [];
+      const lon = num(c[0]);
+      const lat = num(c[1]);
+      return {
+        ten_tp: str(t.ten_tp),
+        ten_duong_osm: str(t.ten_duong_osm),
+        so_doan: num(t.so_doan) ?? 0,
+        centroid: (lon != null && lat != null ? [lon, lat] : [0, 0]) as [number, number],
+        osm_sai_dau: t.osm_sai_dau === true,
+      };
+    }),
+  };
+};
 // Icon riêng cho lớp thí điểm này — registerOverlayIcons() cũng đăng ký icon
 // này (an toàn dù const nằm sau vì hàm đó chỉ thực thi lúc map "load", sau khi
 // toàn bộ module đã chạy xong phần khai báo cấp module).
@@ -2161,9 +1596,9 @@ async function applyStreets(on: boolean): Promise<void> {
     return;
   }
   if (!on) return;
-  const data = await fetchJson<{ lien_ket: StreetLink[] }>(
-    "data/streets/danh-nhan-duong-pilot.json",
-  );
+  const data = await fetchJson("data/streets/danh-nhan-duong-pilot.json", (raw) => ({
+    lien_ket: arr(rec(raw).lien_ket, parseStreetLink),
+  }));
   const cb = document.querySelector<HTMLInputElement>(
     "#layer-control input[name=duong]",
   );
@@ -2226,9 +1661,9 @@ async function applyStreets(on: boolean): Promise<void> {
     moPopup(
       map,
       e.lngLat,
-      `<strong>Đường ${esc(String(p.ten_duong))}</strong><br/>` +
-        `Đặt theo danh nhân: <b>${esc(String(p.danh_nhan))}</b><br/>` +
-        `<span style="color:#57534e;font-size:0.8rem">${esc(String(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
+      `<strong>Đường ${esc(str(p.ten_duong))}</strong><br/>` +
+        `Đặt theo danh nhân: <b>${esc(str(p.danh_nhan))}</b><br/>` +
+        `<span style="color:#57534e;font-size:0.8rem">${esc(str(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
         `<span style="color:#78716c;font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
       { maxWidth: "300px" },
     );
@@ -2245,21 +1680,6 @@ async function applyStreets(on: boolean): Promise<void> {
   streetsLoaded = true;
 }
 
-// Gom 29 lớp phủ thành cụm chủ đề (accordion) để panel gọn (Phase 3 P3.4).
-// Chỉ nhóm HIỂN THỊ — không đổi thứ tự/định nghĩa OVERLAYS. Lớp thiếu nhóm
-// rơi vào "Khác" (guard chống sót khi thêm lớp mới).
-// `id` dùng để tra tên gọi phiên bản trẻ em (tu-vung-tre-em.ts) — nhãn người
-// lớn không làm khoá được vì nó chính là thứ bị thay.
-const OVERLAY_GROUPS: { id: string; nhan: string; icon: string; ids: string[] }[] = [
-  { id: "di-san", nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
-  { id: "quan-su", nhan: "Sự kiện & Quân sự", icon: "⚔️", ids: ["chien-dich-tran-danh", "danh-nhan-quan-su-co-trung-dai", "nghia-si-can-vuong"] },
-  { id: "vua-khoa-bang", nhan: "Vua chúa · Khoa bảng · Ngoại giao", icon: "👑", ids: ["vua-hoang-de", "khoa-bang-danh-nhan", "su-than-ngoai-giao", "danh-nhan-cac-trieu"] },
-  { id: "nu-dan-toc", nhan: "Nữ danh nhân · Dân tộc thiểu số", icon: "👩", ids: ["nu-danh-nhan-lich-su", "danh-nhan-dan-toc-thieu-so"] },
-  { id: "tin-nguong", nhan: "Tín ngưỡng · Tôn giáo · Nghề", icon: "🙏", ids: ["thanh-hoang-danh-than", "thien-su-cao-tang", "to-nghe-danh-than", "le-hoi-truyen-thong", "danh-y-luong-y"] },
-  { id: "van-hoa-khoa-hoc", nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
-  { id: "cach-mang", nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung", "nghia-trang-liet-si"] },
-  { id: "huyen-su", nhan: "Huyền sử & Truyền thuyết", icon: "🐉", ids: ["huyen-su-khai-quoc", "truyen-thuyet-dan-gian"] },
-];
 
 function buildLayerControl(): void {
   const el = document.createElement("div");
@@ -2473,13 +1893,6 @@ async function loadProfile(name: string): Promise<ProvinceProfile | null> {
   }
 }
 
-const esc = (s: string) =>
-  s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 const list = (items: string[] | undefined) =>
   items?.length ? `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>` : "";
 
@@ -2542,6 +1955,18 @@ interface SuKienHanhChinh {
   phap_ly?: string;
   nguon?: string;
 }
+
+const parseSuKienHanhChinh = (raw: unknown): SuKienHanhChinh => {
+  const r = rec(raw);
+  return {
+    date: str(r.date),
+    type: str(r.type),
+    to: str(r.to),
+    from: strs(r.from),
+    phap_ly: str(r.phap_ly),
+    nguon: str(r.nguon),
+  };
+};
 let sapNhapCache: SuKienHanhChinh[] | null = null;
 
 /** "2025-07-01" → "1/7/2025". Dữ liệu ISO, hiển thị theo lối Việt. */
@@ -2552,9 +1977,9 @@ function ngayVi(iso: string): string {
 
 async function napCanCuSapNhap(tenTinh: string): Promise<void> {
   if (!sapNhapCache) {
-    const d = await fetchJson<{ events: SuKienHanhChinh[] }>(
-      "data/timeline/events.json",
-    );
+    const d = await fetchJson("data/timeline/events.json", (raw) => ({
+      events: arr(rec(raw).events, parseSuKienHanhChinh),
+    }));
     sapNhapCache = d?.events ?? [];
   }
   const sk = sapNhapCache.find((e) => e.to === tenTinh);
@@ -2811,6 +2236,30 @@ interface Poem {
   sources: string[];
 }
 
+/** `xep_hang` giữ SỐ vì là khoá sắp xếp; `num()` biến giá trị chuỗi lạc thành
+ *  null (→ hạng 99) thay vì NaN, nên một mục sai kiểu không phá cả thứ tự. */
+const parsePoem = (raw: unknown): Poem => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    ten: str(r.ten),
+    tac_gia: str(r.tac_gia),
+    thoi_ky: str(r.thoi_ky),
+    the_loai: str(r.the_loai),
+    ban_quyen: oneOf(r.ban_quyen, ["public-domain", "cited-excerpt"] as const, "cited-excerpt"),
+    lien_quan_tinh: strs(r.lien_quan_tinh),
+    loi_binh: str(r.loi_binh),
+    vi_sao_hay: str(r.vi_sao_hay),
+    xep_hang: num(r.xep_hang) ?? undefined,
+    nguyen_van: strs(r.nguyen_van),
+    ban_dich: strs(r.ban_dich),
+    ghi_chu_dich: str(r.ghi_chu_dich),
+    ghi_chu_bien_tap: str(r.ghi_chu_bien_tap),
+    nhom: oneOf(r.nhom, ["nktt", "chuc-tet", "trung-thu", "tho", "van", "ton-nghi"] as const, "tho"),
+    sources: strs(r.sources),
+  };
+};
+
 // Bản đồ cổ chứng minh chủ quyền. Ba nhóm: do người Việt vẽ, do phương Tây vẽ,
 // và bản đồ Trung Quốc cổ cho thấy cực nam lãnh thổ họ dừng ở đảo Hải Nam —
 // nhóm cuối có sức nặng riêng vì là bằng chứng từ chính phía đối phương.
@@ -2831,6 +2280,25 @@ interface BanDoCo {
   nguon: string[];
 }
 
+const parseBanDoCo = (raw: unknown): BanDoCo => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    ten: str(r.ten),
+    tac_gia: str(r.tac_gia),
+    nam_hien_thi: str(r.nam_hien_thi),
+    nhom: oneOf(r.nhom, ["viet-nam", "phuong-tay", "trung-quoc"] as const, "viet-nam"),
+    mo_ta: str(r.mo_ta),
+    y_nghia_chu_quyen: str(r.y_nghia_chu_quyen),
+    noi_luu_giu: str(r.noi_luu_giu),
+    anh: str(r.anh),
+    anh_nguon: str(r.anh_nguon),
+    anh_giay_phep: str(r.anh_giay_phep),
+    anh_ghi_chu: str(r.anh_ghi_chu),
+    nguon: strs(r.nguon),
+  };
+};
+
 // Văn xuôi viết VỀ Bác — mục giới thiệu sách, cố ý KHÔNG có nguyen_van: các
 // tác phẩm này còn bảo hộ bản quyền và một cuốn tiểu thuyết thì không trích
 // tám dòng cho ra nghĩa được. Tóm tắt là của dự án, nguồn để bạn đọc tự tìm bản
@@ -2846,6 +2314,20 @@ interface VanXuoi {
   sources: string[];
 }
 
+const parseVanXuoi = (raw: unknown): VanXuoi => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    ten: str(r.ten),
+    tac_gia: str(r.tac_gia),
+    nam: str(r.nam),
+    the_loai: str(r.the_loai),
+    tom_tat: str(r.tom_tat),
+    lien_quan_tinh: strs(r.lien_quan_tinh),
+    sources: strs(r.sources),
+  };
+};
+
 interface Anecdote {
   id: string;
   nhan_vat: string;
@@ -2856,6 +2338,23 @@ interface Anecdote {
   y_nghia: string;
   sources: string[];
 }
+
+const parseAnecdote = (raw: unknown): Anecdote => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    nhan_vat: str(r.nhan_vat),
+    danh_hieu: str(r.danh_hieu),
+    que_quan: str(r.que_quan),
+    lien_quan_tinh: strs(r.lien_quan_tinh),
+    giai_thoai: arr(r.giai_thoai, (x) => {
+      const g = rec(x);
+      return { ten: str(g.ten), noi_dung: str(g.noi_dung) };
+    }),
+    y_nghia: str(r.y_nghia),
+    sources: strs(r.sources),
+  };
+};
 
 interface HcmPoem {
   ten: string;
@@ -2868,6 +2367,21 @@ interface HcmPoem {
   chu_thich?: string;
   sources: string[];
 }
+
+const parseHcmPoem = (raw: unknown): HcmPoem => {
+  const r = rec(raw);
+  return {
+    ten: str(r.ten),
+    tac_gia: str(r.tac_gia),
+    nam: str(r.nam),
+    ban_quyen: str(r.ban_quyen),
+    gioi_thieu: str(r.gioi_thieu),
+    cau_tho: strs(r.cau_tho),
+    nhung_nam_quan_trong: strs(r.nhung_nam_quan_trong),
+    chu_thich: str(r.chu_thich),
+    sources: strs(r.sources),
+  };
+};
 
 // R9 — ca dao/tục ngữ (dân gian, public-domain) + bài hát quê hương
 // (chỉ NHÚNG YouTube chính chủ, không chép lời — tuân Luật SHTT).
@@ -2882,12 +2396,24 @@ interface CaDao {
   nguon: string[];
 }
 
+const parseCaDao = (raw: unknown): CaDao => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    loai: oneOf(r.loai, ["ca-dao", "tuc-ngu", "ve", "sam"] as const, "ca-dao"),
+    noi_dung: strs(r.noi_dung),
+    lien_quan_tinh: strs(r.lien_quan_tinh),
+    y_nghia: str(r.y_nghia),
+    nguon: strs(r.nguon),
+  };
+};
+
 interface BaiHat {
   id: string;
   ten: string;
   tac_gia_nhac?: string;
   tac_gia_loi?: string;
-  nam?: string | number;
+  nam?: string;
   the_loai?: string;
   lien_quan_tinh: string[];
   youtube_id: string;
@@ -2896,6 +2422,24 @@ interface BaiHat {
   ban_quyen?: string;
   nguon: string[];
 }
+
+const parseBaiHat = (raw: unknown): BaiHat => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    ten: str(r.ten),
+    tac_gia_nhac: str(r.tac_gia_nhac),
+    tac_gia_loi: str(r.tac_gia_loi),
+    nam: str(r.nam),
+    the_loai: str(r.the_loai),
+    lien_quan_tinh: strs(r.lien_quan_tinh),
+    youtube_id: str(r.youtube_id),
+    kenh_youtube: str(r.kenh_youtube),
+    gioi_thieu: str(r.gioi_thieu),
+    ban_quyen: str(r.ban_quyen),
+    nguon: strs(r.nguon),
+  };
+};
 
 let literatureCache: {
   poems: Poem[];
@@ -2910,28 +2454,19 @@ let literatureCache: {
   banDoCo: BanDoCo[];
 } | null = null;
 
-async function fetchJson<T>(path: string): Promise<T | null> {
-  try {
-    const res = await fetch(`${import.meta.env.BASE_URL}${path}`);
-    return res.ok ? ((await res.json()) as T) : null;
-  } catch {
-    return null;
-  }
-}
-
 async function loadLiterature() {
   if (literatureCache) return literatureCache;
   const [poems, hcmWorks, aboutHcm, vanXuoiHcm, anecdotes, hcm, caDao, baiHat, tuLieu, banDoCo] = await Promise.all([
-    fetchJson<{ items: Poem[] }>("data/literature/tho-yeu-nuoc.json"),
-    fetchJson<{ items: Poem[] }>("data/literature/tac-pham-ho-chi-minh.json"),
-    fetchJson<{ items: Poem[] }>("data/literature/tho-ve-bac.json"),
-    fetchJson<{ items: VanXuoi[] }>("data/literature/van-xuoi-ve-bac.json"),
-    fetchJson<{ items: Anecdote[] }>("data/literature/giai-thoai-khoa-bang.json"),
-    fetchJson<HcmPoem>("data/literature/lich-su-nuoc-ta.json"),
-    fetchJson<{ items: CaDao[] }>("data/literature/ca-dao-tuc-ngu.json"),
-    fetchJson<{ items: BaiHat[] }>("data/literature/bai-hat-que-huong.json"),
-    fetchJson<{ items: Poem[] }>("data/literature/nhat-ky-thu-chien-tranh.json"),
-    fetchJson<{ items: BanDoCo[] }>("data/media/ban-do-co.json"),
+    fetchJson("data/literature/tho-yeu-nuoc.json", itemsOf(parsePoem)),
+    fetchJson("data/literature/tac-pham-ho-chi-minh.json", itemsOf(parsePoem)),
+    fetchJson("data/literature/tho-ve-bac.json", itemsOf(parsePoem)),
+    fetchJson("data/literature/van-xuoi-ve-bac.json", itemsOf(parseVanXuoi)),
+    fetchJson("data/literature/giai-thoai-khoa-bang.json", itemsOf(parseAnecdote)),
+    fetchJson("data/literature/lich-su-nuoc-ta.json", parseHcmPoem),
+    fetchJson("data/literature/ca-dao-tuc-ngu.json", itemsOf(parseCaDao)),
+    fetchJson("data/literature/bai-hat-que-huong.json", itemsOf(parseBaiHat)),
+    fetchJson("data/literature/nhat-ky-thu-chien-tranh.json", itemsOf(parsePoem)),
+    fetchJson("data/media/ban-do-co.json", itemsOf(parseBanDoCo)),
   ]);
   literatureCache = {
     poems: poems?.items ?? [],
@@ -3115,7 +2650,7 @@ function baiHatHtml(b: BaiHat): string {
   return `<details class="profile-section"><summary>🎶 ${esc(b.ten)}${
     b.the_loai ? ` — <span class="muted">${esc(b.the_loai)}</span>` : ""
   }</summary>
-    <p class="muted">${esc(tacGia)}${b.nam ? ` · ${esc(String(b.nam))}` : ""}${
+    <p class="muted">${esc(tacGia)}${b.nam ? ` · ${esc(b.nam)}` : ""}${
       b.kenh_youtube ? ` · Kênh: ${esc(b.kenh_youtube)}` : ""
     }</p>
     ${b.gioi_thieu ? `<p class="giai-nghia">${esc(b.gioi_thieu)}</p>` : ""}
@@ -3151,6 +2686,22 @@ interface MediaImage {
   ghi_chu?: string;
 }
 
+const parseMediaImage = (raw: unknown): MediaImage => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    slug: str(r.slug),
+    muc: str(r.muc),
+    ten: str(r.ten),
+    mo_ta: str(r.mo_ta),
+    url: str(r.url),
+    nguon: strs(r.nguon),
+    tac_gia: str(r.tac_gia),
+    giay_phep: str(r.giay_phep),
+    ghi_chu: str(r.ghi_chu),
+  };
+};
+
 const MUC_LABEL: Record<string, string> = {
   "dac-san": "🍜 Đặc sản",
   "kien-truc": "🏛️ Kiến trúc",
@@ -3172,7 +2723,7 @@ let mediaCache: MediaImage[] | null = null;
 
 async function loadMedia(): Promise<MediaImage[]> {
   if (mediaCache) return mediaCache;
-  const data = await fetchJson<{ items: MediaImage[] }>("data/media/images.json");
+  const data = await fetchJson("data/media/images.json", itemsOf(parseMediaImage));
   mediaCache = data?.items ?? [];
   return mediaCache;
 }
@@ -3210,12 +2761,27 @@ interface HistFigure {
   nguon: string[];
 }
 
+const parseHistFigure = (raw: unknown): HistFigure => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    ten: str(r.ten),
+    thoi_dai: str(r.thoi_dai),
+    cong_trang: str(r.cong_trang),
+    tuong_dai_tham_chieu: str(r.tuong_dai_tham_chieu),
+    nhan_hinh_dung: str(r.nhan_hinh_dung),
+    lien_quan_tinh: strs(r.lien_quan_tinh),
+    trang_thai: str(r.trang_thai),
+    nguon: strs(r.nguon),
+  };
+};
+
 let figuresCache: HistFigure[] | null = null;
 const activeFigureDisposers: Array<() => void> = [];
 
 async function loadFigures(): Promise<HistFigure[]> {
   if (figuresCache) return figuresCache;
-  const data = await fetchJson<{ items: HistFigure[] }>("data/figures/figures-3d.json");
+  const data = await fetchJson("data/figures/figures-3d.json", itemsOf(parseHistFigure));
   figuresCache = data?.items ?? [];
   return figuresCache;
 }
@@ -3261,6 +2827,19 @@ interface NienHieuItem {
   ghi_chu?: string;
 }
 
+/** `tu_nam`/`den_nam` giữ SỐ: dùng để so khoảng năm, không hiển thị thô. */
+const parseNienHieuItem = (raw: unknown): NienHieuItem => {
+  const r = rec(raw);
+  return {
+    trieu_dai: str(r.trieu_dai),
+    vua: str(r.vua),
+    nien_hieu: typeof r.nien_hieu === "string" ? r.nien_hieu : null,
+    tu_nam: num(r.tu_nam) ?? 0,
+    den_nam: num(r.den_nam) ?? 0,
+    ghi_chu: str(r.ghi_chu),
+  };
+};
+
 let nienHieuCache: { items: NienHieuItem[]; nguon?: string[] } | null | undefined;
 
 function nienHieuSectionHtml(): string {
@@ -3286,9 +2865,10 @@ function wireNienHieuLookup(): void {
       return;
     }
     if (nienHieuCache === undefined)
-      nienHieuCache = await fetchJson<{ items: NienHieuItem[]; nguon?: string[] }>(
-        "data/timeline/nien-hieu.json",
-      );
+      nienHieuCache = await fetchJson("data/timeline/nien-hieu.json", (raw) => ({
+        items: arr(rec(raw).items, parseNienHieuItem),
+        nguon: strs(rec(raw).nguon),
+      }));
     if (!nienHieuCache) {
       result.innerHTML = `<p class="muted">⚠️ Chưa tải được dữ liệu niên hiệu — vui lòng thử lại sau.</p>`;
       return;

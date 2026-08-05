@@ -4,10 +4,8 @@
 // MapLibre; Playwright kéo về ~300 MB browser. CDP dùng Chrome có sẵn trên máy +
 // WebSocket built-in của Node, chi phí 0.
 //
-// Chạy:  node --experimental-websocket scripts/smoke.mjs
+// Chạy:  npm run smoke
 //        node --experimental-websocket scripts/smoke.mjs --keep   (không tắt Chrome)
-// (chưa thêm vào package.json vì file đó ngoài phạm vi đợt sửa này — xem
-//  scratchpad/package-json-smoke-script.diff để gắn `npm run smoke`.)
 //
 // Node 20 BẮT BUỘC cờ --experimental-websocket (repo đang ghim Node 20 ở .nvmrc);
 // Node >= 22 có WebSocket ổn định nên bỏ được cờ.
@@ -15,7 +13,7 @@
 // Script tự dựng vite dev server ở cổng riêng 5188 rồi tự tắt. Dùng DEV server
 // (không phải `vite preview`) vì hook `window.__map` chỉ bật khi import.meta.env.DEV.
 import { spawn } from "node:child_process";
-import { readFileSync, writeFileSync, mkdtempSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdtempSync, existsSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -25,19 +23,20 @@ const PORT = 5188; // cổng riêng: 5173 là vite mặc định, 5199 do agent 
 const ORIGIN = `http://127.0.0.1:${PORT}/`;
 const CDP_PORT = 9333;
 const KEEP = process.argv.includes("--keep");
+// Kèm cả đường dẫn Linux: runner `ubuntu-latest` của GitHub Actions có sẵn
+// Chrome ở /usr/bin/google-chrome. Không có nó thì cổng smoke chỉ chạy được
+// trên máy Windows của người viết, tức là không chạy ở chỗ cần nhất.
 const CHROME =
   process.env.CHROME_PATH ??
   [
     "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-  ].find((p) => {
-    try {
-      readFileSync(p, { flag: "r" });
-      return true;
-    } catch {
-      return false;
-    }
-  });
+    `${os.homedir()}\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe`,
+    "/usr/bin/google-chrome",
+    "/usr/bin/google-chrome-stable",
+    "/usr/bin/chromium-browser",
+    "/usr/bin/chromium",
+  ].find((p) => existsSync(p));
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const results = [];
@@ -601,6 +600,10 @@ async function main() {
         `--user-data-dir=${profile}`,
         "--no-first-run",
         "--no-default-browser-check",
+        // Chỉ trên CI: runner chạy trong container nên sandbox của Chrome hay
+        // dựng không lên. Ở máy thật KHÔNG bỏ sandbox — profile là thư mục tạm
+        // nhưng trang được nạp vẫn là mã thật, không có lý do nới quyền.
+        ...(process.env.CI ? ["--no-sandbox", "--disable-dev-shm-usage"] : []),
         "--enable-unsafe-swiftshader",
         "--use-gl=angle",
         "--use-angle=swiftshader",

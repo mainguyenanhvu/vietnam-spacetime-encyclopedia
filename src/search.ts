@@ -44,6 +44,9 @@
  */
 import { moPopup } from "./popup";
 import type { Map as MlMap } from "maplibre-gl";
+import { esc } from "./util/html";
+import { fetchJson } from "./util/fetch";
+import { str, num, rec, itemsOf } from "./types/parse";
 
 /** Cấu hình tối thiểu 1 lớp phủ mà module này cần — main truyền OVERLAYS
  * (kiểu rộng hơn, có thêm circleColor/nguon/popup) vào đây vẫn khớp vì
@@ -55,13 +58,27 @@ export interface SearchOverlayConf {
   file: string;
 }
 
+/** Mục lớp phủ ở dạng THÔ — chỉ 5 trường mà chỉ mục tìm kiếm cần. `lon`/`lat`
+ *  để `number | null` vì mục thiếu toạ độ là chuyện bình thường trong dữ liệu
+ *  (nhân vật chỉ biết cấp tỉnh), và null lọc được, còn NaN thì không. */
 interface RawOverlayItem {
-  id?: string;
-  ten?: string;
-  lon?: number;
-  lat?: number;
-  dia_diem?: string;
+  id: string;
+  ten: string;
+  lon: number | null;
+  lat: number | null;
+  dia_diem: string;
 }
+
+const parseRawOverlayItem = (raw: unknown): RawOverlayItem => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    ten: str(r.ten),
+    lon: num(r.lon),
+    lat: num(r.lat),
+    dia_diem: str(r.dia_diem),
+  };
+};
 
 interface SearchIndexItem {
   key: string;
@@ -87,24 +104,6 @@ export function normalizeVi(s: string): string {
     .trim();
 }
 
-function escHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-async function fetchJsonSafe<T>(url: string): Promise<T | null> {
-  try {
-    const res = await fetch(url);
-    if (!res.ok) return null;
-    return (await res.json()) as T;
-  } catch {
-    return null;
-  }
-}
 
 let indexPromise: Promise<SearchIndexItem[]> | null = null;
 
@@ -114,19 +113,19 @@ function buildIndex(overlays: SearchOverlayConf[]): Promise<SearchIndexItem[]> {
   if (indexPromise) return indexPromise;
   indexPromise = Promise.all(
     overlays.map(async (conf) => {
-      const data = await fetchJsonSafe<{ items: RawOverlayItem[] }>(conf.file);
-      if (!data?.items) return [];
+      const data = await fetchJson(conf.file, itemsOf(parseRawOverlayItem));
+      if (!data) return [];
       const out: SearchIndexItem[] = [];
       data.items.forEach((it, i) => {
-        if (!it.ten || typeof it.lon !== "number" || typeof it.lat !== "number") return;
+        if (!it.ten || it.lon == null || it.lat == null) return;
         const ten = it.ten;
         out.push({
-          key: it.id ?? `${conf.id}#${i}`,
+          key: it.id || `${conf.id}#${i}`,
           ten,
           norm: normalizeVi(ten),
           lon: it.lon,
           lat: it.lat,
-          diaDiem: it.dia_diem ?? conf.label,
+          diaDiem: it.dia_diem || conf.label,
           overlayId: conf.id,
           overlayLabel: conf.label,
           overlayIcon: conf.icon,
@@ -225,9 +224,9 @@ export function initSearch(
       .map(
         (r, i) => `
         <li id="vn-search-opt-${i}" role="option" class="vn-search-opt${i === activeIdx ? " active" : ""}" aria-selected="${i === activeIdx}">
-          <span class="vn-search-icon">${escHtml(r.overlayIcon)}</span>
-          <span class="vn-search-name">${escHtml(r.ten)}</span>
-          <span class="vn-search-loc">${escHtml(r.diaDiem)}</span>
+          <span class="vn-search-icon">${esc(r.overlayIcon)}</span>
+          <span class="vn-search-name">${esc(r.ten)}</span>
+          <span class="vn-search-loc">${esc(r.diaDiem)}</span>
         </li>`,
       )
       .join("");
@@ -260,8 +259,8 @@ export function initSearch(
     moPopup(
       map,
       [item.lon, item.lat],
-      `<strong>${escHtml(item.overlayIcon)} ${escHtml(item.ten)}</strong><br/>` +
-        `<span style="font-size:0.82em;color:#57534e">${escHtml(item.diaDiem)}</span>`,
+      `<strong>${esc(item.overlayIcon)} ${esc(item.ten)}</strong><br/>` +
+        `<span style="font-size:0.82em;color:#57534e">${esc(item.diaDiem)}</span>`,
       { maxWidth: "280px" },
     );
   }

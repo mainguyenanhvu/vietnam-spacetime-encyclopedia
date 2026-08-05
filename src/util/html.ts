@@ -1,9 +1,9 @@
 // Tiện ích dựng HTML dùng chung.
 //
-// Gom 9 bản sao `esc()` y hệt nhau rải khắp src/. Đợt này mới nối được 5 file
-// (journey, quocgia, timeline, game, quiz); main.ts / battle.ts / olympia.ts /
-// story.ts vẫn giữ bản cục bộ vì đang có agent khác sửa — xem
-// scratchpad/esc-gom-ve-util.diff để nối nốt.
+// Gom 9 bản sao `esc()` y hệt nhau rải khắp src/. Nối xong cả 9 ngày 2026-08-05
+// (5 file đợt đầu: journey, quocgia, timeline, game, quiz — 4 file còn lại:
+// main, battle, olympia, story — cộng `escHtml` của search.ts, cùng thân hàm
+// nhưng khác tên nên các lượt dò trùng trước đều bỏ sót).
 //
 // CHỮ KÝ HẸP LÀ CỐ Ý: `esc(s: string)` từ chối `number`. Nhờ vậy khi lớp
 // parse dữ liệu ra đời (B13b), trường nào khai nhầm kiểu số sẽ bị `tsc` chặn

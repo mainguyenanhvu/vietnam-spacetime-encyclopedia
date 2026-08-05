@@ -4,6 +4,7 @@
 // tự tải ngân hàng câu hỏi JSON, lưu điểm cao nhất vào localStorage (không PII).
 
 import { registerPanel, showOnly, hidePanel } from "./panels";
+import { esc } from "./util/html";
 
 interface MCQuestion {
   id: string;
@@ -57,13 +58,6 @@ let vdList: MCQuestion[] = [];
 let vdIndex = 0;
 let vdStake = 0;
 
-const esc = (s: string): string =>
-  s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
