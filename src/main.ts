@@ -13,7 +13,7 @@ import { registerPanel, showOnly, hidePanel, hideAllPanels, datNhanPanel } from 
 import { moPopup, dongPopup } from "./popup";
 import { FONT_LABEL, FONT_SYMBOL, textFont } from "./map-fonts";
 // Chỉ nhập hàm phân loại (không kéo Three.js) — xem ghi chú trong mohinh-diem.ts.
-import { kieuTheoTen } from "./mohinh-diem";
+import { phanLoaiDiem } from "./mohinh-diem";
 import type { DiemMoHinh } from "./mohinh-diem";
 import { CUM_TRE_EM, LOP_TRE_EM, NHAN_TRE_EM } from "./tu-vung-tre-em";
 import { initSearch } from "./search";
@@ -1221,6 +1221,11 @@ function lopPhuDangBat(): string[] {
  */
 let vetKhungNhin = "";
 
+/** Tâm + mức phóng của lượt quét gần nhất — dùng để nhận ra một "cú nhảy xa". */
+let tamQuetTruoc: [number, number, number] | null = null;
+/** Hẹn giờ quét bù sau cú nhảy xa — xem ghi chú ở chỗ đặt nó. */
+let henQuetLai = 0;
+
 function capNhatMoHinhDiem(): void {
   const bat = lopPhuDangBat();
   for (const id of overlayLoaded) {
@@ -1274,9 +1279,44 @@ function capNhatMoHinhDiem(): void {
     const khoa = `${lon.toFixed(5)},${lat.toFixed(5)}`;
     if (daCo.has(khoa)) continue;
     daCo.add(khoa);
-    ds.push({ lon, lat, kieu: kieuTheoTen(String(f.properties?.ten ?? "")) });
+    // Lớp phủ là căn cứ chính để chọn mô hình — tên mục chỉ đủ dùng ở các lớp
+    // di tích, còn lớp nhân vật thì `ten` là tên người. Xem mohinh-diem.ts.
+    const lop = f.layer.id.replace(/^overlay-/, "");
+    ds.push({
+      lon,
+      lat,
+      ...phanLoaiDiem(
+        lop,
+        String(f.properties?.ten ?? ""),
+        String(f.properties?.loai ?? ""),
+      ),
+    });
   }
   landmarks3d.capNhatDiem(ds);
+
+  // `queryRenderedFeatures` chỉ thấy thứ ĐÃ VẼ. Sau một cú nhảy xa (bấm kết quả
+  // tìm kiếm, chọn tỉnh, đổi mức phóng), `moveend` nổ khi khung nhìn mới còn
+  // trống, nên lượt quét trên trả về gần như rỗng và cả vùng đó không có mô
+  // hình nào — đo bằng ảnh chụp lúc nhảy Hà Nội → Huế: 38 điểm có vòng tròn, 0
+  // mô hình; nhích bản đồ 3 px là đủ hiện hết.
+  //
+  // `map.areTilesLoaded()` KHÔNG dùng được để bắt ca này: ngay sau `jumpTo` nó
+  // vẫn trả về true vì các ô ĐANG GIỮ (của vùng cũ) đều đã tải xong.
+  //
+  // Chỉ quét bù sau cú nhảy xa, không sau mỗi lần nhích — kéo chuột liên tục mà
+  // quét hai lượt mỗi khung nhìn thì đúng là thứ gây giật đang phải chữa.
+  const z = map.getZoom();
+  const nhayXa =
+    !tamQuetTruoc ||
+    Math.abs(z - tamQuetTruoc[2]) >= 0.75 ||
+    Math.hypot(c.lng - tamQuetTruoc[0], c.lat - tamQuetTruoc[1]) > 0.25;
+  tamQuetTruoc = [c.lng, c.lat, z];
+  if (nhayXa && !henQuetLai)
+    henQuetLai = window.setTimeout(() => {
+      henQuetLai = 0;
+      vetKhungNhin = ""; // buộc quét lại đúng một lượt, khi ô đã về
+      capNhatMoHinhDiem();
+    }, 600);
 }
 
 // ---------------------------------------------------------------------------
