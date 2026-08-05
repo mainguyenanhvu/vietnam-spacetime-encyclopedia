@@ -28,7 +28,9 @@ const slugs = new Set(
   readdirSync(PROV).filter((f) => f.endsWith(".json")).map((f) => f.replace(".json", "")),
 );
 const moduleSrc = existsSync(MODULE) ? readFileSync(MODULE, "utf8") : null;
-const files = readdirSync(DIR).filter((f) => f.endsWith(".json"));
+// `_index.json` (sinh bởi build_sado_index.mjs) là hạ tầng, không phải hồ sơ
+// trận — soi nó bằng luật hồ sơ trận thì cổng đỏ vĩnh viễn.
+const files = readdirSync(DIR).filter((f) => f.endsWith(".json") && !f.startsWith("_"));
 
 for (const file of files) {
   const b = JSON.parse(readFileSync(join(DIR, file), "utf8"));

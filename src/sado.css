@@ -21,6 +21,15 @@
   --sd-nen-bo: var(--mat-3);
   --sd-nen-song: var(--tin-nen);
   --sd-nen-song-sau: color-mix(in srgb, var(--tin-chu) 25%, var(--tin-nen));
+  /* Địa hình của sa đồ tổng quát dùng MỘT token trung tính, không bao giờ mượn
+     màu phe — nếu không, ở chế độ nội chiến ngọn núi sẽ mang đúng màu quân
+     xanh. Đo được 5,55:1 (người lớn) / 6,66:1 (trẻ em) trên nền đất, thừa
+     ngưỡng 3:1 của WCAG 1.4.11 cho hình khối phi văn bản. */
+  --sd-net-dia-hinh: var(--chu-mem);
+  /* Phần tô của núi/rừng. Cố ý NHẠT: quân đứng đè lên nó vẫn phải giữ 3:1 —
+     đo được ta 3,96:1 / địch 4,55:1 (người lớn), 3,36:1 / 4,33:1 (trẻ em).
+     Bản 45% từng thử trước đó dìm quân ta xuống 2,62:1, hỏng ngưỡng. */
+  --sd-nen-cao: color-mix(in srgb, var(--chu-mem) 18%, var(--mat-3));
 }
 
 /* Nội chiến: KHÔNG dùng cặp "đúng/sai" — đọc như phán xét đạo đức một bên.
@@ -223,6 +232,124 @@
   to {
     stroke-dashoffset: 0;
   }
+}
+
+/* ── Sa đồ TỔNG QUÁT (sa_do_kieu: "tong-quat") ─────────────────────────────
+   Không class nào dưới đây trùng tên với class của sa đồ Bạch Đằng vẽ tay
+   (.sd-bank/.sd-water/.sd-wave/.sd-hull/.sd-sail/.sd-caption/.sd-note…) —
+   cố ý, để một luật CSS mới không lặng lẽ đè lên thuộc tính trình bày inline
+   của sa đồ cũ (attribute trình bày thua MỌI luật CSS). */
+
+.sd-svg-tq {
+  background: var(--sd-nen-bo);
+}
+.sd-nen-dat {
+  fill: var(--sd-nen-bo);
+}
+.sd-note-tq {
+  fill: var(--chu-mem);
+  font-size: 16px;
+}
+
+/* Nhãn chữ. Màu LUÔN là --chu, không bao giờ theo phe: đo được --nhan (phe ta
+   khi nội chiến) trên --mat chỉ 3,64:1 ở chế độ người lớn — trượt ngưỡng
+   4,5:1. --chu trên --mat đạt 15,14:1 / 17,49:1. Quầng --mat quanh glyph là
+   kỹ thuật bản đồ chuẩn cho chữ đè lên nền đổi màu theo chế độ. */
+.sd-nhan {
+  fill: var(--chu);
+  font-size: 20px;
+  font-weight: 600;
+  paint-order: stroke fill;
+  stroke: var(--mat);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.sd-nhan-phu {
+  fill: var(--chu-mem);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Địa hình — đường NÉT mang ngưỡng tương phản, phần tô chỉ là trang trí. */
+.sd-song-mep,
+.sd-song-long,
+.sd-nui-song,
+.sd-duong-net {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.sd-song-mep {
+  stroke: var(--sd-net-dia-hinh);
+  stroke-width: 30;
+}
+.sd-song-long {
+  stroke: var(--sd-nen-song);
+  stroke-width: 24;
+}
+.sd-bien-nuoc {
+  fill: var(--sd-nen-song);
+  stroke: var(--sd-net-dia-hinh);
+  stroke-width: 2.5;
+}
+.sd-nui-song {
+  stroke: var(--sd-net-dia-hinh);
+  stroke-width: 2.5;
+  stroke-dasharray: 2 8;
+}
+.sd-nui-dinh,
+.sd-rung-cay {
+  fill: var(--sd-nen-cao);
+  stroke: var(--sd-net-dia-hinh);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+.sd-rung-vung {
+  fill: var(--sd-nen-cao);
+  stroke: var(--sd-net-dia-hinh);
+  stroke-width: 2;
+  stroke-dasharray: 11 7;
+}
+.sd-duong-net {
+  stroke: var(--sd-net-dia-hinh);
+  stroke-width: 4.5;
+  stroke-dasharray: 18 11;
+}
+
+/* Phần tử. `.sd-hinh` là lớp tô (nền + hoạ tiết), `.sd-net` là lớp viền —
+   viền vẽ SAU cùng nên hoạ tiết không bao giờ ăn mất đường bao. */
+.sd-hinh {
+  stroke: none;
+}
+.sd-net {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+.sd-net-manh {
+  stroke-width: 2;
+  stroke-dasharray: 9 6;
+}
+.sd-net-day {
+  stroke-width: 4.5;
+}
+/* Công sự trung tính (bãi cọc, luỹ, chiến hào) — --luu-chu đo 6,37:1 (người
+   lớn) / 4,30:1 (trẻ em) trên nền đất. */
+.sd-cong-su {
+  fill: var(--luu-chu);
+  stroke: var(--luu-chu);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.sd-dia-danh-pin {
+  fill: var(--mat);
+  stroke: var(--sd-net-dia-hinh);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+.sd-dia-danh-tam {
+  fill: var(--sd-net-dia-hinh);
 }
 
 .sd-step-rail {
