@@ -1,6 +1,52 @@
 {
-  "ghi_chu": "Mốc lịch sử để đính lên dòng thời gian: khi kéo thanh trượt, mốc gần nhất hiện ra dưới dạng note nhỏ phía trên thanh. Soạn 2026-08-05. PHẠM VI CÓ CHỦ Ý: nhóm khoi-nghia/khang-chien/tran-danh ở đây RẤT THƯA vì overlays/chien-dich-tran-danh.json đã có 168 mục phủ sâu tới cấp tiểu đoàn — file này chỉ bù phần còn trống. Ngược lại nhóm tac-pham (34 mục) trước đó CSDL chưa có mục nào, và nhóm trieu-dai bù năm KẾT THÚC vì dong-thoi-gian.json trước chỉ có năm bắt đầu. Mục có `ghi_chu` là chỗ hai nguồn chính thống vênh nhau — trình bày cả hai, ĐỪNG lặng lẽ chọn bản gọn hơn. Mục có `can_tra_them` là thứ chưa tra được, để trống chứ không bịa.",
+  "ghi_chu": "Mốc lịch sử đính lên thanh thời gian: kéo thanh trượt thì mốc của thời kỳ đó hiện ra dưới dạng note nhỏ phía trên thanh (src/moc-lich-su.ts). PHẠM VI ĐÃ MỞ 2026-08-05 theo chỉ thị chủ dự án: nay CÓ nhóm khởi nghĩa/kháng chiến/trận đánh, khác với ghi chú cũ nói ba nhóm này cố ý để thưa. Trùng TÊN với overlays/chien-dich-tran-danh.json (189 mục) ở 9 mốc là CỐ Ý — hai bề mặt khác nhau: overlay là điểm trên bản đồ, file này là mốc trên thanh thời gian; người kéo thanh thời gian phải thấy được Bạch Đằng 938. Mục có `ghi_chu` là chỗ hai nguồn vênh nhau hoặc sử liệu chép số ước lệ — trình bày cả hai, ĐỪNG lặng lẽ chọn bản gọn hơn. Mục có `can_tra_them` là thứ chưa tra được, để trống chứ không bịa.",
   "items": [
+    {
+      "id": "khoi-nghia-hai-ba-trung-40",
+      "nam": 40,
+      "nam_hien_thi": "40",
+      "ten": "Khởi nghĩa Hai Bà Trưng",
+      "loai": "khoi-nghia",
+      "mo_ta": "Trưng Trắc cùng em Trưng Nhị dựng cờ khởi nghĩa tại Hát Môn, đánh đuổi Thái thú Tô Định, thu lại 65 thành, Trưng Trắc xưng vương (40–43) trước khi bị Mã Viện đàn áp.",
+      "lon": 105.6181623,
+      "lat": 21.125906,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Cục Di sản văn hoá — Di tích Đền Hát Môn — https://dsvh.gov.vn/di-tich-lich-su-den-hat-mon-2971",
+        "scov.gov.vn — V. Trưng Nữ Vương (40–43)"
+      ]
+    },
+    {
+      "id": "khoi-nghia-ba-trieu-248",
+      "nam": 248,
+      "nam_hien_thi": "248",
+      "ten": "Khởi nghĩa Bà Triệu",
+      "loai": "khoi-nghia",
+      "mo_ta": "Triệu Thị Trinh cùng anh Triệu Quốc Đạt tụ nghĩa chống ách đô hộ nhà Ngô, lan khắp Cửu Chân – Giao Chỉ – Nhật Nam; bà tuẫn tiết trên núi Tùng sau khi khởi nghĩa thất bại.",
+      "lon": 105.884504,
+      "lat": 19.9146386,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "Cục Di sản văn hoá — Khu di tích Bà Triệu — https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-khu-di-tich-ba-trieu-2990"
+      ]
+    },
+    {
+      "id": "khoi-nghia-ly-bi-542",
+      "nam": 542,
+      "nam_hien_thi": "542–544",
+      "ten": "Khởi nghĩa Lý Bí, lập nước Vạn Xuân",
+      "loai": "khoi-nghia",
+      "mo_ta": "Lý Bí phất cờ khởi nghĩa chống nhà Lương, chưa đầy 3 tháng đã chiếm châu thành Long Biên; đầu 544 lên ngôi Lý Nam Đế, đặt quốc hiệu Vạn Xuân — nhà nước có quốc hiệu đầu tiên sau hơn 500 năm Bắc thuộc.",
+      "lon": 106.0780904,
+      "lat": 21.0385395,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Bắc Ninh",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
+      ]
+    },
     {
       "id": "van-xuan-ket-thuc-602",
       "nam": 602,
@@ -18,6 +64,128 @@
       "ghi_chu": "Chương VIII của nguồn trên đóng khung Bắc thuộc lần 3 là '603–939' (lệch 1 năm so với mốc 602 thường dùng trong SGK cho việc Lý Phật Tử hàng); giữ 602, nêu chênh lệch."
     },
     {
+      "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
+      "nam": 687,
+      "nam_hien_thi": "687",
+      "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến",
+      "loai": "khoi-nghia",
+      "mo_ta": "Lý Tự Tiên khởi binh chống sưu thuế nhà Đường; sau khi ông bị giết, Đinh Kiến tiếp tục vây chiếm phủ thành Tống Bình trước khi bị viện binh Đường đàn áp.",
+      "lon": 105.85,
+      "lat": 21.03,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam, ch. VIII — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/viii.-thoi-ky-chong-phong-kien-phuong-bac-do-ho-lan-thu-ba-336-nam-603-939-.html"
+      ]
+    },
+    {
+      "id": "khoi-nghia-mai-thuc-loan-713",
+      "nam": 713,
+      "nam_hien_thi": "713–722",
+      "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)",
+      "loai": "khoi-nghia",
+      "mo_ta": "Mai Thúc Loan dấy binh chống nhà Đường ở Hoan Châu, lập nước Vạn An, xưng Mai Hắc Đế — cuộc khởi nghĩa lớn của cả xứ Hoan Châu.",
+      "lon": 105.5225448,
+      "lat": 18.6727977,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Nghệ An",
+      "nguon": [
+        "Báo Nghệ An — Đền thờ Vua Mai Hắc Đế, di tích lịch sử quốc gia đặc biệt — https://baonghean.vn/den-tho-vua-mai-hac-de-di-tich-lich-su-quoc-gia-dac-biet-10250104.html"
+      ]
+    },
+    {
+      "id": "khoi-nghia-phung-hung-766",
+      "nam": 766,
+      "nam_hien_thi": "766–791",
+      "ten": "Khởi nghĩa Phùng Hưng",
+      "loai": "khoi-nghia",
+      "mo_ta": "Phùng Hưng dấy binh từ quê nhà Đường Lâm, sau nhiều năm vây hãm đã hạ phủ thành Tống Bình năm 791, tự tổ chức chính quyền cai quản; mất được suy tôn Bố Cái Đại Vương.",
+      "lon": 105.508,
+      "lat": 21.128,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "ghi_chu": "dong-thoi-gian.json ghi năm 791 — lấy mốc Phùng Hưng hạ được thành Tống Bình; ở đây lấy 766 làm năm khởi binh. Nêu cả hai cách tính, không lặng lẽ chọn một.",
+      "nguon": [
+        "Báo Quân đội nhân dân — Bảo tồn và phát huy giá trị di sản về Bố Cái Đại Vương Phùng Hưng — https://www.qdnd.vn/van-hoa/doi-song/bao-ton-va-phat-huy-gia-tri-di-san-ve-bo-cai-dai-vuong-phung-hung-573622"
+      ]
+    },
+    {
+      "id": "khoi-nghia-duong-thanh-819",
+      "nam": 819,
+      "nam_hien_thi": "819–820",
+      "ten": "Khởi nghĩa Dương Thanh",
+      "loai": "khoi-nghia",
+      "mo_ta": "Dương Thanh, thứ sử Hoan Châu, tập kích giết đô hộ sứ nhà Đường Lý Tượng Cổ, chiếm phủ thành; bị viện binh Đường tái chiếm và giết năm sau.",
+      "lon": 105.85,
+      "lat": 21.03,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam, ch. VIII — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/viii.-thoi-ky-chong-phong-kien-phuong-bac-do-ho-lan-thu-ba-336-nam-603-939-.html"
+      ]
+    },
+    {
+      "id": "khuc-thua-du-tu-chu-905",
+      "nam": 905,
+      "nam_hien_thi": "905",
+      "ten": "Khúc Thừa Dụ giành quyền tự chủ",
+      "loai": "khoi-nghia",
+      "mo_ta": "Khúc Thừa Dụ chớp thời cơ nhà Đường suy yếu, chiếm phủ Tống Bình – Đại La, xưng Tiết độ sứ, mở nền tự chủ sau gần một nghìn năm Bắc thuộc dù danh nghĩa vẫn thuộc nhà Đường.",
+      "lon": 106.4026274,
+      "lat": 20.7307484,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hải Phòng",
+      "nguon": [
+        "Cục Di sản văn hoá — Đền thờ Khúc Thừa Dụ — https://dsvh.gov.vn/den-tho-khuc-thua-du-22340"
+      ]
+    },
+    {
+      "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+      "nam": 931,
+      "nam_hien_thi": "931",
+      "ten": "Dương Đình Nghệ đánh bại Nam Hán, khôi phục tự chủ",
+      "loai": "khoi-nghia",
+      "mo_ta": "Dương Đình Nghệ kéo quân ra Bắc, công phá thành Đại La, đánh bại quân Nam Hán vừa chiếm đóng, tạo tiền đề trực tiếp cho chiến thắng Bạch Đằng 938 của con rể Ngô Quyền.",
+      "lon": 105.771151,
+      "lat": 19.8676558,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "Cổng TTĐT TP Thanh Hoá — Kỷ niệm ngày mất Dương Đình Nghệ — https://tpthanhhoa.thanhhoa.gov.vn/web/gioi-thieu-chung/ky-niem-1086-nam-ngay-mat-cua-anh-hung-dan-toc-duong-dinh-nghe.html"
+      ]
+    },
+    {
+      "id": "tran-bach-dang-938",
+      "nam": 938,
+      "nam_hien_thi": "938",
+      "ten": "Trận Bạch Đằng 938",
+      "loai": "tran-danh",
+      "mo_ta": "Ngô Quyền đóng cọc nhọn dưới lòng sông, lợi dụng thuỷ triều tiêu diệt đạo binh thuyền Nam Hán, giết chủ tướng Lưu Hoằng Tháo — chấm dứt hơn nghìn năm Bắc thuộc.",
+      "lon": 106.7897,
+      "lat": 20.9215,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hải Phòng",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Kỷ Ngô Quyền",
+        "Cục Di sản văn hoá — Khu di tích Bạch Đằng Giang, Tràng Kênh"
+      ]
+    },
+    {
+      "id": "nha-ngo-bat-dau-939",
+      "nam": 939,
+      "nam_hien_thi": "939",
+      "ten": "Ngô Quyền xưng vương, lập nhà Ngô",
+      "loai": "trieu-dai",
+      "mo_ta": "Sau đại thắng Bạch Đằng, Ngô Quyền xưng vương, đóng đô ở Cổ Loa, chính thức chấm dứt hơn nghìn năm Bắc thuộc và mở triều đại độc lập đầu tiên.",
+      "lon": 105.8534,
+      "lat": 21.0997,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — X. Nhà Ngô 26 năm (939–965), kinh đô Cổ Loa — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/x.-nha-ngo-26-nam-939-965-kinh-do-co-loa-dong-anh-ha-noi-.html"
+      ]
+    },
+    {
       "id": "nha-ngo-ket-thuc-965",
       "nam": 965,
       "nam_hien_thi": "965",
@@ -30,6 +198,33 @@
       "tinh_34": "Hà Nội",
       "nguon": [
         "Hà Văn Thư, Trần Hồng Đức — Tóm tắt niên biểu lịch sử Việt Nam, Cổng TTĐT Uỷ ban Nhà nước về người Việt Nam ở nước ngoài — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "su-kien-loan-12-su-quan-965",
+      "nam": 965,
+      "nam_hien_thi": "965–968",
+      "ten": "Loạn 12 sứ quân",
+      "loai": "su-kien",
+      "mo_ta": "Sau khi Ngô Xương Văn tử trận, đất nước không còn người kế vị đủ uy tín, rơi vào cảnh cát cứ của 12 sứ quân cho tới khi Đinh Bộ Lĩnh dẹp yên năm 968.",
+      "tinh_34": "Ninh Bình",
+      "nguon": [
+        "scov.gov.vn — X. Nhà Ngô 26 năm (939–965)"
+      ]
+    },
+    {
+      "id": "nha-dinh-bat-dau-968",
+      "nam": 968,
+      "nam_hien_thi": "968",
+      "ten": "Đinh Bộ Lĩnh dẹp loạn 12 sứ quân, lập nước Đại Cồ Việt",
+      "loai": "trieu-dai",
+      "mo_ta": "Đinh Bộ Lĩnh thống nhất đất nước sau loạn 12 sứ quân, lên ngôi Hoàng đế (Đinh Tiên Hoàng), đặt quốc hiệu Đại Cồ Việt, đóng đô Hoa Lư — nhà nước quân chủ tập quyền đầu tiên.",
+      "lon": 105.9012,
+      "lat": 20.2668,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Ninh Bình",
+      "nguon": [
+        "scov.gov.vn — XI. Nhà Đinh 12 năm (968–980), kinh đô Hoa Lư — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xi.-nha-dinh-12-nam-968-980-quoc-hieu-dai-co-viet-kinh-do-hoa-lu-huyen-gia-vien-tinh-ninh-binh-.html"
       ]
     },
     {
@@ -64,6 +259,52 @@
       ]
     },
     {
+      "id": "khang-chien-chong-tong-lan-1-981",
+      "nam": 981,
+      "nam_hien_thi": "981",
+      "ten": "Kháng chiến chống Tống lần thứ nhất",
+      "loai": "khang-chien",
+      "mo_ta": "Vua Lê Đại Hành (Lê Hoàn) vận dụng kế đóng cọc của Ngô Quyền, tổ chức trận quyết chiến trên sông Bạch Đằng, đánh tan quân Tống, buộc nhà Tống thừa nhận Đại Cồ Việt.",
+      "lon": 106.785,
+      "lat": 20.935,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hải Phòng",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Đinh – Tiền Lê",
+        "Bộ CHQS TP Hải Phòng — Lê Đại Hành và chiến thắng Bạch Đằng năm 981"
+      ]
+    },
+    {
+      "id": "tran-bach-dang-981",
+      "nam": 981,
+      "nam_hien_thi": "28/4/981",
+      "ten": "Trận Bạch Đằng 981",
+      "loai": "tran-danh",
+      "mo_ta": "Lê Đại Hành tái dùng kế đóng cọc của Ngô Quyền, giết chủ tướng Tống Hầu Nhân Bảo trên sông Bạch Đằng, đánh tan quân Tống.",
+      "lon": 106.785,
+      "lat": 20.935,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hải Phòng",
+      "nguon": [
+        "Bộ CHQS TP Hải Phòng — Lê Đại Hành và chiến thắng Bạch Đằng năm 981"
+      ]
+    },
+    {
+      "id": "nha-ly-bat-dau-1009",
+      "nam": 1009,
+      "nam_hien_thi": "1009",
+      "ten": "Lý Công Uẩn lên ngôi, lập nhà Lý",
+      "loai": "trieu-dai",
+      "mo_ta": "Lê Ngọa Triều mất, triều thần suy tôn Điện tiền chỉ huy sứ Lý Công Uẩn lên ngôi (niên hiệu Thuận Thiên), mở đầu nhà Lý; năm sau (1010) ông ban Chiếu dời đô về Thăng Long.",
+      "lon": 105.9012,
+      "lat": 20.2668,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Ninh Bình",
+      "nguon": [
+        "scov.gov.vn — XIII. Nhà Lý (1010–1225) 215 năm — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xiii.-nha-ly-1010-1225-215-nam-quoc-hieu-dai-co-viet-kinh-do-hoa-lu.-nam-1010-doi-do-ve-thang-long.-tu-1054-doi-quoc-hie2.html"
+      ]
+    },
+    {
       "id": "nha-tien-le-ket-thuc-1009",
       "nam": 1009,
       "nam_hien_thi": "1009",
@@ -76,6 +317,99 @@
       "tinh_34": "Ninh Bình",
       "nguon": [
         "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "su-kien-chieu-doi-do-1010",
+      "nam": 1010,
+      "nam_hien_thi": "7/1010",
+      "ten": "Chiếu dời đô, lập kinh đô Thăng Long",
+      "loai": "su-kien",
+      "mo_ta": "Vua Lý Thái Tổ ban Chiếu dời đô, chuyển kinh đô từ Hoa Lư về Đại La, đổi tên Thăng Long — mở đầu vai trò trung tâm chính trị hơn nghìn năm của Hà Nội.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
+        "Cục Di sản văn hoá — dsvh.gov.vn"
+      ]
+    },
+    {
+      "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+      "nam": 1069,
+      "nam_hien_thi": "1069",
+      "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành",
+      "loai": "tran-danh",
+      "mo_ta": "Vua Lý Thánh Tông thân chinh, Lý Thường Kiệt làm tiên phong, đánh bại quân Chiêm, bắt vua Chế Củ; Chế Củ dâng ba châu Bố Chính, Địa Lý, Ma Linh để chuộc mạng, mở rộng cương vực Đại Việt lần đầu kể từ độc lập.",
+      "lon": 106.6,
+      "lat": 17.47,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Quảng Trị",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
+        "Việt sử lược"
+      ]
+    },
+    {
+      "id": "khang-chien-chong-tong-lan-2-1075",
+      "nam": 1075,
+      "nam_hien_thi": "1075–1077",
+      "ten": "Kháng chiến chống Tống lần thứ hai",
+      "loai": "khang-chien",
+      "mo_ta": "Lý Thường Kiệt chủ động «tiên phát chế nhân» đánh phá các căn cứ hậu cần Ung – Khâm – Liêm Châu (1075–1076), rồi lập phòng tuyến sông Như Nguyệt đánh bại đại quân Tống (1077).",
+      "lon": 105.9812,
+      "lat": 21.1744,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Bắc Ninh",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
+        "Báo Quân đội nhân dân — Chiến lược độc đáo bảo vệ Thăng Long thời Lý — https://www.qdnd.vn/van-hoa/doi-song/chien-luoc-doc-dao-bao-ve-thang-long-thoi-ly-404883"
+      ]
+    },
+    {
+      "id": "su-kien-lap-quoc-tu-giam-1076",
+      "nam": 1076,
+      "nam_hien_thi": "1076",
+      "ten": "Lập Quốc Tử Giám",
+      "loai": "su-kien",
+      "mo_ta": "Nhà Lý thành lập Quốc Tử Giám bên cạnh Văn Miếu, trường đại học đầu tiên của Việt Nam.",
+      "lon": 105.8355,
+      "lat": 21.0274,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Cục Di sản văn hoá — dsvh.gov.vn"
+      ]
+    },
+    {
+      "id": "tac-pham-nam-quoc-son-ha",
+      "nam": 1077,
+      "nam_hien_thi": "gắn với trận Như Nguyệt 1077 (niên đại và tác giả còn tranh luận)",
+      "ten": "Nam quốc sơn hà («Thơ Thần»)",
+      "loai": "tac-pham",
+      "mo_ta": "Bài thơ chữ Hán vang lên trong đền thần sông Như Nguyệt năm 1077 khích lệ quân Đại Việt đánh Tống, tương truyền gắn với Lý Thường Kiệt, được xem là bản tuyên ngôn độc lập đầu tiên của dân tộc.",
+      "tinh_34": "Bắc Ninh",
+      "ghi_chu": "Giới sử học còn tranh luận về tác giả đích thực và thời điểm chính xác — một số dị bản chép sử gắn bài thơ với cả trận Bạch Đằng 981. KHÔNG khẳng định Lý Thường Kiệt là tác giả duy nhất.",
+      "can_tra_them": "tác giả đích thực chưa xác định",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
+        "Báo Dân trí — «Nam quốc sơn hà», tác phẩm quen thuộc nhưng nhiều tranh luận — https://dantri.com.vn/giao-duc/nam-quoc-son-ha-tac-pham-quen-thuoc-nhung-nhieu-tranh-luan-20260110064409804.htm"
+      ]
+    },
+    {
+      "id": "tran-nhu-nguyet-1077",
+      "nam": 1077,
+      "nam_hien_thi": "1077",
+      "ten": "Phòng tuyến Như Nguyệt",
+      "loai": "tran-danh",
+      "mo_ta": "Lý Thường Kiệt lập phòng tuyến sông Như Nguyệt chặn đứng đại quân Tống; bài thơ «Nam quốc sơn hà» vang lên khích lệ ba quân, đánh bại rồi giảng hoà, giữ vững độc lập.",
+      "lon": 105.9812,
+      "lat": 21.1744,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Bắc Ninh",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý"
       ]
     },
     {
@@ -94,287 +428,204 @@
       ]
     },
     {
-      "id": "nha-tran-ket-thuc-1400",
-      "nam": 1400,
-      "nam_hien_thi": "1400",
-      "ten": "Nhà Trần kết thúc",
+      "id": "nha-tran-bat-dau-1225",
+      "nam": 1225,
+      "nam_hien_thi": "1225",
+      "ten": "Trần Cảnh lên ngôi, lập nhà Trần",
       "loai": "trieu-dai",
-      "mo_ta": "Hồ Quý Ly ép Trần Thiếu Đế nhường ngôi, lập nhà Hồ, đổi quốc hiệu Đại Ngu.",
+      "mo_ta": "Lý Chiêu Hoàng nhường ngôi cho chồng là Trần Cảnh (Trần Thái Tông), mở đầu nhà Trần — triều đại ba lần đánh bại quân Nguyên Mông.",
       "lon": 105.8402,
       "lat": 21.0358,
       "do_tin_cay_toa_do": "cao",
       "tinh_34": "Hà Nội",
       "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+        "scov.gov.vn — XIII. Nhà Lý — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xiii.-nha-ly-1010-1225-215-nam-quoc-hieu-dai-co-viet-kinh-do-hoa-lu.-nam-1010-doi-do-ve-thang-long.-tu-1054-doi-quoc-hie2.html"
       ]
     },
     {
-      "id": "nha-ho-ket-thuc-1407",
-      "nam": 1407,
-      "nam_hien_thi": "1407",
-      "ten": "Nhà Hồ kết thúc",
-      "loai": "trieu-dai",
-      "mo_ta": "Quân Minh bắt cha con Hồ Quý Ly, nhà Hồ sụp đổ sau 7 năm, mở đầu 20 năm thuộc Minh.",
-      "lon": 105.6113,
-      "lat": 19.9974,
+      "id": "khang-chien-chong-nguyen-mong-lan-1-1258",
+      "nam": 1258,
+      "nam_hien_thi": "1258",
+      "ten": "Kháng chiến chống quân Nguyên Mông lần thứ nhất",
+      "loai": "khang-chien",
+      "mo_ta": "Sau khi rút lui bảo toàn lực lượng ở Bình Lệ Nguyên, vua Trần Thái Tông cùng Trần Thủ Độ phản công quét sạch quân Mông Cổ khỏi Thăng Long tại Đông Bộ Đầu, chỉ trong chưa đầy một tháng.",
+      "lon": 105.8487,
+      "lat": 21.0456,
       "do_tin_cay_toa_do": "trung",
-      "tinh_34": "Thanh Hoá",
-      "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
-      ]
-    },
-    {
-      "id": "nha-le-so-ket-thuc-1527",
-      "nam": 1527,
-      "nam_hien_thi": "1527",
-      "ten": "Nhà Lê sơ kết thúc",
-      "loai": "trieu-dai",
-      "mo_ta": "Mạc Đăng Dung ép Lê Cung Hoàng nhường ngôi, lập nhà Mạc, mở đầu thời kỳ Nam – Bắc triều.",
-      "lon": 105.8402,
-      "lat": 21.0358,
-      "do_tin_cay_toa_do": "cao",
       "tinh_34": "Hà Nội",
       "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+        "Lịch sử Việt Nam — Viện Sử học, kháng chiến chống Mông – Nguyên lần I"
       ]
     },
     {
-      "id": "nha-mac-mat-thang-long-1592",
-      "nam": 1592,
-      "nam_hien_thi": "1592",
-      "ten": "Nhà Mạc mất Thăng Long",
-      "loai": "trieu-dai",
-      "mo_ta": "Quân Lê–Trịnh chiếm lại Thăng Long, Mạc Mậu Hợp bị bắt giết; dư đảng nhà Mạc rút lên cát cứ Cao Bằng.",
-      "lon": 105.8402,
-      "lat": 21.0358,
-      "do_tin_cay_toa_do": "cao",
+      "id": "tran-dong-bo-dau-1258",
+      "nam": 1258,
+      "nam_hien_thi": "1258",
+      "ten": "Trận Đông Bộ Đầu",
+      "loai": "tran-danh",
+      "mo_ta": "Trần Thái Tông và Trần Thủ Độ phản công quét sạch đạo quân Mông Cổ lần thứ nhất khỏi Thăng Long tại bến Đông Bộ Đầu.",
+      "lon": 105.8487,
+      "lat": 21.0456,
+      "do_tin_cay_toa_do": "trung",
       "tinh_34": "Hà Nội",
       "nguon": [
-        "Bảo tàng Lịch sử Quốc gia — Mạc Đăng Dung và vương triều Mạc trong lịch sử quân chủ Việt Nam — http://baotanglichsu.vn/vi/Articles/3096/4851/mac-djang-dung-va-vuong-trieu-mac-trong-lich-su-quan-chu-viet-nam.html"
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần"
       ]
     },
     {
-      "id": "nha-mac-diet-cao-bang-1677",
-      "nam": 1677,
-      "nam_hien_thi": "1677",
-      "ten": "Dư đảng nhà Mạc ở Cao Bằng bị diệt hẳn",
-      "loai": "trieu-dai",
-      "mo_ta": "Chúa Trịnh đánh diệt Mạc Kính Vũ, chấm dứt hoàn toàn thế lực cát cứ cuối cùng của họ Mạc sau 150 năm.",
-      "lon": 106.25,
-      "lat": 22.6667,
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Cao Bằng",
+      "id": "tac-pham-dai-viet-su-ky-1272",
+      "nam": 1272,
+      "nam_hien_thi": "1272",
+      "ten": "Đại Việt sử ký (Lê Văn Hưu)",
+      "loai": "tac-pham",
+      "mo_ta": "Lê Văn Hưu hoàn thành bộ quốc sử thành văn đầu tiên của Việt Nam, chép từ Triệu Vũ Đế đến hết nhà Lý, theo lệnh vua Trần Thánh Tông; bộ sách gốc nay đã thất truyền, chỉ còn lời tựa và các đoạn trích trong Đại Việt sử ký toàn thư.",
       "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/",
-        "Bảo tàng Lịch sử Quốc gia — Mạc Đăng Dung và vương triều Mạc — http://baotanglichsu.vn/vi/Articles/3096/4851/mac-djang-dung-va-vuong-trieu-mac-trong-lich-su-quan-chu-viet-nam.html"
+        "Đại Việt sử ký toàn thư — lời tựa",
+        "Cục Di sản văn hoá — dsvh.gov.vn"
       ]
     },
     {
-      "id": "chua-trinh-bat-dau-1545",
-      "nam": 1545,
-      "nam_hien_thi": "1545",
-      "ten": "Trịnh Kiểm — chúa Trịnh đầu tiên nắm quyền Đàng Ngoài",
-      "loai": "trieu-dai",
-      "mo_ta": "Trịnh Kiểm nắm binh quyền phù Lê, mở đầu hơn 200 năm các chúa Trịnh thực quyền cai trị Đàng Ngoài.",
-      "lon": 105.648,
-      "lat": 20.0399,
-      "do_tin_cay_toa_do": "cao",
-      "tinh_34": "Thanh Hoá",
+      "id": "su-kien-hoi-nghi-dien-hong-1284",
+      "nam": 1284,
+      "nam_hien_thi": "1284",
+      "ten": "Hội nghị Diên Hồng",
+      "loai": "su-kien",
+      "mo_ta": "Vua Trần Nhân Tông triệu tập các bô lão cả nước tại điện Diên Hồng hỏi ý kiến nên hoà hay đánh trước hoạ xâm lược Nguyên Mông lần hai; các bô lão đồng thanh hô «Đánh!» — biểu tượng ý chí toàn dân.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
       "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần"
       ]
     },
     {
-      "id": "chua-nguyen-ket-thuc-1777",
-      "nam": 1777,
-      "nam_hien_thi": "1777",
-      "ten": "Chúa Nguyễn Đàng Trong kết thúc",
-      "loai": "trieu-dai",
-      "mo_ta": "Nguyễn Phúc Thuần, chúa Nguyễn cuối cùng, bị quân Tây Sơn giết, chấm dứt 9 đời chúa Nguyễn ở Đàng Trong (1558–1777).",
+      "id": "tac-pham-hich-tuong-si-1284",
+      "nam": 1284,
+      "nam_hien_thi": "~1284",
+      "ten": "Hịch tướng sĩ (Trần Hưng Đạo)",
+      "loai": "tac-pham",
+      "mo_ta": "Trần Hưng Đạo viết Hịch tướng sĩ khích lệ tướng sĩ trước cuộc kháng chiến chống Nguyên Mông lần thứ hai.",
       "do_tin_cay_toa_do": "thap",
       "tinh_34": "",
       "nguon": [
-        "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — Bộ ván khắc sử học Đại Nam thực lục — https://mocban.vn/bo-van-khac-su-hoc-dai-nam-thuc-luc-nhung-dau-an-con-mai/"
-      ],
-      "can_tra_them": "Không xác định được toạ độ nơi Nguyễn Phúc Thuần bị bắt/giết (vùng Long Xuyên/Cà Mau cũ) đủ chính xác nên để trống."
+        "SGK Ngữ văn 8 - Bộ GD&ĐT"
+      ]
     },
     {
-      "id": "nha-tay-son-bat-dau-1778",
-      "nam": 1778,
-      "nam_hien_thi": "1778",
-      "ten": "Nguyễn Nhạc xưng đế, lập nhà Tây Sơn",
-      "loai": "trieu-dai",
-      "mo_ta": "Nguyễn Nhạc xưng Trung ương Hoàng đế, niên hiệu Thái Đức, đóng đô ở thành Đồ Bàn (Quy Nhơn), chính thức lập nhà Tây Sơn.",
-      "lon": 109.1067,
-      "lat": 13.9218,
+      "id": "tac-pham-thuat-hoai",
+      "nam": 1284,
+      "nam_hien_thi": "cuối thế kỷ XIII",
+      "ten": "Thuật hoài / Tỏ lòng (Phạm Ngũ Lão)",
+      "loai": "tac-pham",
+      "mo_ta": "Bài thơ Đường luật chữ Hán thể hiện khí phách trang nam nhi thời Trần trong bối cảnh chuẩn bị kháng chiến chống Nguyên Mông.",
+      "can_tra_them": "Năm sáng tác chính xác chưa tra được nguồn chính thống. Mốc 1284 chỉ để xếp vị trí.",
+      "nguon": [
+        "SGK Ngữ văn 10 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "khang-chien-chong-nguyen-mong-lan-2-1285",
+      "nam": 1285,
+      "nam_hien_thi": "1285",
+      "ten": "Kháng chiến chống quân Nguyên Mông lần thứ hai",
+      "loai": "khang-chien",
+      "mo_ta": "Sau Hội nghị Diên Hồng thể hiện ý chí quyết chiến toàn dân, Trần Hưng Đạo chỉ huy quân dân đánh bại cuộc xâm lược quy mô lớn của Thoát Hoan, đại thắng ở Hàm Tử – Chương Dương, Tây Kết, giải phóng Thăng Long.",
+      "lon": 105.9422,
+      "lat": 20.8508,
       "do_tin_cay_toa_do": "trung",
-      "tinh_34": "Gia Lai",
-      "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
-      ]
-    },
-    {
-      "id": "nha-le-trung-hung-ket-thuc-1788",
-      "nam": 1788,
-      "nam_hien_thi": "1788 (có nguồn ghi 1789)",
-      "ten": "Nhà Lê Trung Hưng kết thúc",
-      "loai": "trieu-dai",
-      "mo_ta": "Lê Chiêu Thống chạy sang nhà Thanh cầu viện rồi lưu vong, nhà Lê chấm dứt trên thực tế sau hơn 250 năm.",
-      "lon": 105.8402,
-      "lat": 21.0358,
-      "do_tin_cay_toa_do": "cao",
-      "tinh_34": "Hà Nội",
-      "nguon": [
-        "Hà Văn Thư, Trần Hồng Đức — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
-      ],
-      "ghi_chu": "nien-hieu.json trong dự án ghi niên hiệu Chiêu Thống den_nam=1788; trận Ngọc Hồi–Đống Đa (Quang Trung đại phá quân Thanh, Lê Chiêu Thống chạy hẳn sang Trung Quốc) lại được dong-thoi-gian.json ghi năm 1789 — lệch do Tết Kỷ Dậu rơi vào đầu năm dương lịch 1789 nhưng còn thuộc năm âm Mậu Thân/Kỷ Dậu giáp ranh. Nêu cả hai, KHÔNG tự chọn một bản."
-    },
-    {
-      "id": "nha-tay-son-ket-thuc-1802",
-      "nam": 1802,
-      "nam_hien_thi": "1802",
-      "ten": "Nhà Tây Sơn kết thúc",
-      "loai": "trieu-dai",
-      "mo_ta": "Nguyễn Ánh đánh chiếm Phú Xuân rồi Thăng Long, vua Cảnh Thịnh (Nguyễn Quang Toản) bị bắt, nhà Tây Sơn sụp đổ.",
-      "lon": 107.5772,
-      "lat": 16.4698,
-      "do_tin_cay_toa_do": "cao",
-      "tinh_34": "Huế",
-      "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
-      ]
-    },
-    {
-      "id": "nha-nguyen-ket-thuc-1945",
-      "nam": 1945,
-      "nam_hien_thi": "25/8/1945",
-      "ten": "Vua Bảo Đại thoái vị, nhà Nguyễn kết thúc",
-      "loai": "trieu-dai",
-      "mo_ta": "Bảo Đại tuyên bố thoái vị tại Huế, chấm dứt chế độ quân chủ hơn 1.000 năm ở Việt Nam, trao ấn kiếm cho chính quyền Cách mạng.",
-      "lon": 107.5772,
-      "lat": 16.4698,
-      "do_tin_cay_toa_do": "cao",
-      "tinh_34": "Huế",
-      "nguon": [
-        "Báo Thanh Hóa điện tử — Ngày này năm xưa 8/1: Bảo Đại lên ngôi — https://vhds.baothanhhoa.vn/ngay-nay-nam-xua-8-1-bao-dai-len-ngoi-tro-thanh-vi-vua-cuoi-cung-cua-nha-nguyen-41224.htm",
-        "Cổng TTĐT Chính phủ - chinhphu.vn"
-      ]
-    },
-    {
-      "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
-      "nam": 687,
-      "nam_hien_thi": "687",
-      "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến",
-      "loai": "khoi-nghia",
-      "mo_ta": "Lý Tự Tiên khởi binh chống sưu thuế nhà Đường; sau khi ông bị giết, Đinh Kiến tiếp tục vây chiếm phủ thành Tống Bình trước khi bị viện binh Đường đàn áp.",
-      "lon": 105.85,
-      "lat": 21.03,
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Hà Nội",
-      "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam, ch. VIII — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/viii.-thoi-ky-chong-phong-kien-phuong-bac-do-ho-lan-thu-ba-336-nam-603-939-.html"
-      ]
-    },
-    {
-      "id": "khoi-nghia-duong-thanh-819",
-      "nam": 819,
-      "nam_hien_thi": "819–820",
-      "ten": "Khởi nghĩa Dương Thanh",
-      "loai": "khoi-nghia",
-      "mo_ta": "Dương Thanh, thứ sử Hoan Châu, tập kích giết đô hộ sứ nhà Đường Lý Tượng Cổ, chiếm phủ thành; bị viện binh Đường tái chiếm và giết năm sau.",
-      "lon": 105.85,
-      "lat": 21.03,
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Hà Nội",
-      "nguon": [
-        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam, ch. VIII — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/viii.-thoi-ky-chong-phong-kien-phuong-bac-do-ho-lan-thu-ba-336-nam-603-939-.html"
-      ]
-    },
-    {
-      "id": "khoi-nghia-le-duy-mat-1738",
-      "nam": 1738,
-      "nam_hien_thi": "1738–1770",
-      "ten": "Khởi nghĩa Lê Duy Mật",
-      "loai": "khoi-nghia",
-      "mo_ta": "Hoàng thân Lê Duy Mật dựng cờ 'phù Lê diệt Trịnh' ở vùng Thanh Hoá – Nghệ An, kéo dài hơn 30 năm, lâu nhất trong các cuộc nổi dậy Đàng Ngoài thế kỷ 18.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Thanh Hoá",
-      "nguon": [
-        "SGK Lịch sử 7 - Bộ GD&ĐT"
-      ],
-      "can_tra_them": "Không xác định được toạ độ căn cứ chính xác."
-    },
-    {
-      "id": "khoi-nghia-nguyen-danh-phuong-1740",
-      "nam": 1740,
-      "nam_hien_thi": "1740–1751",
-      "ten": "Khởi nghĩa Nguyễn Danh Phương",
-      "loai": "khoi-nghia",
-      "mo_ta": "Nguyễn Danh Phương dựng căn cứ ở Tam Đảo, mở đầu làn sóng khởi nghĩa nông dân Đàng Ngoài giữa thế kỷ 18.",
-      "lon": 105.6425,
-      "lat": 21.4589,
-      "do_tin_cay_toa_do": "trung",
-      "tinh_34": "Phú Thọ",
-      "nguon": [
-        "SGK Lịch sử 7 - Bộ GD&ĐT"
-      ]
-    },
-    {
-      "id": "khoi-nghia-nguyen-huu-cau-1741",
-      "nam": 1741,
-      "nam_hien_thi": "1741–1751",
-      "ten": "Khởi nghĩa Nguyễn Hữu Cầu (quận He)",
-      "loai": "khoi-nghia",
-      "mo_ta": "Khởi phát từ Đồ Sơn, nghĩa quân Nguyễn Hữu Cầu tiến đánh Kinh Bắc, uy hiếp Thăng Long, với khẩu hiệu lấy của nhà giàu chia cho dân nghèo.",
-      "lon": 106.7931,
-      "lat": 20.7298,
-      "do_tin_cay_toa_do": "trung",
-      "tinh_34": "Hải Phòng",
-      "nguon": [
-        "SGK Lịch sử 7 - Bộ GD&ĐT"
-      ]
-    },
-    {
-      "id": "khoi-nghia-phan-ba-vanh-1821",
-      "nam": 1821,
-      "nam_hien_thi": "1821–1827",
-      "ten": "Khởi nghĩa Phan Bá Vành",
-      "loai": "khoi-nghia",
-      "mo_ta": "Phan Bá Vành tập hợp nông dân nổi dậy vùng Thái Bình, lập căn cứ Trà Lũ, là một trong các cuộc khởi nghĩa lớn nhất đầu triều Nguyễn.",
-      "do_tin_cay_toa_do": "thap",
       "tinh_34": "Hưng Yên",
       "nguon": [
-        "SGK Lịch sử 8 - Bộ GD&ĐT"
-      ],
-      "can_tra_them": "Không xác định được toạ độ căn cứ Trà Lũ đủ chính xác."
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần"
+      ]
     },
     {
-      "id": "khoi-nghia-nong-van-van-1833",
-      "nam": 1833,
-      "nam_hien_thi": "1833–1835",
-      "ten": "Khởi nghĩa Nông Văn Vân",
-      "loai": "khoi-nghia",
-      "mo_ta": "Nông Văn Vân lãnh đạo các dân tộc miền núi phía Bắc nổi dậy chống triều Nguyễn, lan khắp vùng Việt Bắc trước khi bị dẹp.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Cao Bằng",
+      "id": "tran-ham-tu-chuong-duong-1285",
+      "nam": 1285,
+      "nam_hien_thi": "1285",
+      "ten": "Trận Hàm Tử – Chương Dương",
+      "loai": "tran-danh",
+      "mo_ta": "Trần Nhật Duật và Trần Quang Khải đại thắng ở cửa Hàm Tử và bến Chương Dương, giải phóng Thăng Long trong kháng chiến chống Nguyên lần II.",
+      "lon": 105.9422,
+      "lat": 20.8508,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hưng Yên",
       "nguon": [
-        "SGK Lịch sử 8 - Bộ GD&ĐT"
-      ],
-      "can_tra_them": "Không xác định được toạ độ trung tâm khởi nghĩa đủ chính xác."
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần"
+      ]
     },
     {
-      "id": "khoi-nghia-le-van-khoi-1833",
-      "nam": 1833,
-      "nam_hien_thi": "1833–1835",
-      "ten": "Khởi nghĩa Lê Văn Khôi",
-      "loai": "khoi-nghia",
-      "mo_ta": "Lê Văn Khôi chiếm thành Phiên An (Gia Định), cả sáu tỉnh Nam Kỳ hưởng ứng; thành cố thủ hơn 2 năm trước khi bị triều đình dẹp.",
-      "lon": 106.6602,
-      "lat": 10.7626,
+      "id": "khang-chien-chong-nguyen-mong-lan-3-1288",
+      "nam": 1287,
+      "nam_hien_thi": "1287–1288",
+      "ten": "Kháng chiến chống quân Nguyên Mông lần thứ ba",
+      "loai": "khang-chien",
+      "mo_ta": "Trần Khánh Dư chặn đánh đoàn thuyền lương tại Vân Đồn, cắt nguồn tiếp tế quân Nguyên; Trần Hưng Đạo tái dựng thế trận cọc ngầm, tiêu diệt đạo thuỷ binh Ô Mã Nhi trên sông Bạch Đằng, kết thúc thắng lợi.",
+      "lon": 106.7922,
+      "lat": 20.9411,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Quảng Ninh",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+        "Cục Di sản văn hoá — Bãi cọc Yên Giang, di tích quốc gia đặc biệt Bạch Đằng"
+      ]
+    },
+    {
+      "id": "tran-bach-dang-1288",
+      "nam": 1288,
+      "nam_hien_thi": "1288",
+      "ten": "Trận Bạch Đằng 1288",
+      "loai": "tran-danh",
+      "mo_ta": "Trần Hưng Đạo tái dựng thế trận cọc ngầm, tiêu diệt đạo thuỷ binh Ô Mã Nhi, kết thúc thắng lợi kháng chiến chống Nguyên lần III.",
+      "lon": 106.7922,
+      "lat": 20.9411,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Quảng Ninh",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+        "Cục Di sản văn hoá — Bãi cọc Yên Giang, di tích quốc gia đặc biệt Bạch Đằng"
+      ]
+    },
+    {
+      "id": "tran-van-don-1288",
+      "nam": 1288,
+      "nam_hien_thi": "1/1288",
+      "ten": "Trận Vân Đồn",
+      "loai": "tran-danh",
+      "mo_ta": "Trần Khánh Dư chỉ huy quân dân Vân Đồn phục kích đoàn thuyền lương do Trương Văn Hổ hộ tống, cắt đứt nguồn tiếp tế quân Nguyên, góp phần quyết định vào đại thắng Bạch Đằng cùng năm.",
+      "lon": 107.715,
+      "lat": 20.93,
       "do_tin_cay_toa_do": "trung",
-      "tinh_34": "TP HCM",
+      "tinh_34": "Quảng Ninh",
       "nguon": [
-        "SGK Lịch sử 8 - Bộ GD&ĐT"
+        "Cục Di sản văn hoá — Quần thể Thương cảng Vân Đồn"
+      ]
+    },
+    {
+      "id": "tac-pham-viet-dien-u-linh-1329",
+      "nam": 1329,
+      "nam_hien_thi": "1329",
+      "ten": "Việt điện u linh tập",
+      "loai": "tac-pham",
+      "mo_ta": "Lý Tế Xuyên biên soạn Việt điện u linh tập, ghi chép các vị thần/danh nhân được thờ phụng, một trong những tác phẩm sử-văn cổ nhất còn lại.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "",
+      "nguon": [
+        "Thư viện Quốc gia Việt Nam — mục lục 'Việt điện U linh' — https://opac.nlv.gov.vn/chi-tiet-tai-lieu/viet-dien-u-linh-20251677930518142931"
+      ]
+    },
+    {
+      "id": "tac-pham-bach-dang-giang-phu",
+      "nam": 1345,
+      "nam_hien_thi": "khoảng giữa thế kỷ XIV",
+      "ten": "Bạch Đằng giang phú (Trương Hán Siêu)",
+      "loai": "tac-pham",
+      "mo_ta": "Bài phú chữ Hán Trương Hán Siêu viết khi dạo chơi sông Bạch Đằng, hoài niệm các chiến thắng lịch sử trên dòng sông này.",
+      "tinh_34": "Quảng Ninh",
+      "can_tra_them": "Năm sáng tác chính xác chưa tra được nguồn chính thống; tác giả mất năm 1354 nên bài phú ra đời trước mốc đó. Mốc 1345 chỉ để xếp vị trí.",
+      "nguon": [
+        "SGK Ngữ văn 10 — NXB Giáo dục Việt Nam"
       ]
     },
     {
@@ -423,43 +674,95 @@
       ]
     },
     {
-      "id": "tac-pham-viet-dien-u-linh-1329",
-      "nam": 1329,
-      "nam_hien_thi": "1329",
-      "ten": "Việt điện u linh tập",
-      "loai": "tac-pham",
-      "mo_ta": "Lý Tế Xuyên biên soạn Việt điện u linh tập, ghi chép các vị thần/danh nhân được thờ phụng, một trong những tác phẩm sử-văn cổ nhất còn lại.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "",
+      "id": "nha-ho-bat-dau-1400",
+      "nam": 1400,
+      "nam_hien_thi": "tháng 2 năm Canh Thìn (1400)",
+      "ten": "Hồ Quý Ly lên ngôi, lập nhà Hồ, đổi quốc hiệu Đại Ngu",
+      "loai": "trieu-dai",
+      "mo_ta": "Hồ Quý Ly phế truất vua Trần, lên ngôi, đổi quốc hiệu thành Đại Ngu, dời đô vào thành Tây Đô (Thanh Hoá).",
+      "lon": 105.6113,
+      "lat": 19.9974,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thanh Hoá",
       "nguon": [
-        "Thư viện Quốc gia Việt Nam — mục lục 'Việt điện U linh' — https://opac.nlv.gov.vn/chi-tiet-tai-lieu/viet-dien-u-linh-20251677930518142931"
+        "scov.gov.vn — Hồ Quý Ly và thành nhà Hồ — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/ho-quy-ly-va-thanh-nha-ho.html"
       ]
     },
     {
-      "id": "tac-pham-truyen-ky-man-luc",
-      "nam": 1763,
-      "nam_hien_thi": "bản khắc in 1763 (soạn gốc ước giữa thế kỷ XVI)",
-      "ten": "Truyền kỳ mạn lục",
-      "loai": "tac-pham",
-      "mo_ta": "Nguyễn Dữ soạn tập truyện chữ Hán mang màu sắc kỳ ảo; bản 'Tân biên truyền kỳ mạn lục' hiện lưu có niên đại khắc in 1763.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "",
-      "nguon": [
-        "Thư viện Quốc gia Việt Nam, Kho tàng thư tịch cổ Hán Nôm — Tân biên truyền kỳ mạn lục 1763 — http://hannom.nlv.gov.vn/hannom/cgi-bin/hannom?a=d&d=BNTwEHieafWlZ1763"
-      ],
-      "ghi_chu": "Năm soạn gốc của Nguyễn Dữ không có mốc chính xác trong nguồn tra được (tác giả sống ước 1491–1585); chỉ chắc chắn năm khắc in lại 1763. Dùng năm khắc in làm mốc, KHÔNG suy đoán năm soạn gốc."
-    },
-    {
-      "id": "tac-pham-du-dia-chi-1435",
-      "nam": 1435,
-      "nam_hien_thi": "1435",
-      "ten": "Dư địa chí (Nguyễn Trãi)",
-      "loai": "tac-pham",
-      "mo_ta": "Nguyễn Trãi soạn Dư địa chí trong 10 ngày theo lệnh vua Lê Thái Tông, mô tả cương vực – địa lý hành chính Đại Việt, được vua khen và cho khắc in.",
-      "do_tin_cay_toa_do": "thap",
+      "id": "nha-tran-ket-thuc-1400",
+      "nam": 1400,
+      "nam_hien_thi": "1400",
+      "ten": "Nhà Trần kết thúc",
+      "loai": "trieu-dai",
+      "mo_ta": "Hồ Quý Ly ép Trần Thiếu Đế nhường ngôi, lập nhà Hồ, đổi quốc hiệu Đại Ngu.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "cao",
       "tinh_34": "Hà Nội",
       "nguon": [
-        "Báo Giáo dục và Thời đại (Bộ GD&ĐT) — Vì sao Dư địa chí của Nguyễn Trãi còn gọi là An Nam vũ cống — https://giaoducthoidai.vn/vi-sao-du-dia-chi-cua-nguyen-trai-con-goi-la-an-nam-vu-cong-post564696.html"
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "nha-ho-ket-thuc-1407",
+      "nam": 1407,
+      "nam_hien_thi": "1407",
+      "ten": "Nhà Hồ kết thúc",
+      "loai": "trieu-dai",
+      "mo_ta": "Quân Minh bắt cha con Hồ Quý Ly, nhà Hồ sụp đổ sau 7 năm, mở đầu 20 năm thuộc Minh.",
+      "lon": 105.6113,
+      "lat": 19.9974,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "tran-bo-co-1408",
+      "nam": 1408,
+      "nam_hien_thi": "12/1408",
+      "ten": "Trận Bô Cô",
+      "loai": "tran-danh",
+      "mo_ta": "Trong khởi nghĩa nhà Hậu Trần, Đặng Tất chỉ huy nghĩa quân đánh tan quân Minh do Mộc Thạnh chỉ huy tại bến Bô Cô — trận thắng lớn nhất của phong trào Hậu Trần.",
+      "lon": 105.9970417,
+      "lat": 20.3289271,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Ninh Bình",
+      "nguon": [
+        "Báo Quân đội nhân dân — Tướng Đặng Tất"
+      ]
+    },
+    {
+      "id": "khoi-nghia-lam-son-1418",
+      "nam": 1418,
+      "nam_hien_thi": "7/2/1418 (mồng 2 tháng Giêng Mậu Tuất)",
+      "ten": "Lê Lợi dựng cờ khởi nghĩa Lam Sơn",
+      "loai": "khoi-nghia",
+      "mo_ta": "Lê Lợi phất cờ khởi nghĩa tại hương Lam Sơn (Thọ Xuân, Thanh Hoá), phát động cuộc kháng chiến 10 năm chống ách đô hộ nhà Minh, kết thúc thắng lợi năm 1427–1428.",
+      "lon": 105.5288451,
+      "lat": 19.9344622,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "scov.gov.vn — XVII. Thời kỳ đấu tranh chống nhà Minh đô hộ (1414–1427) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xvii.-thoi-ky-dau-tranh-chong-nha-minh-do-ho-1414-1427-.html",
+        "Cục Di sản văn hoá — Khu di tích Lam Kinh — https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-lam-kinh-2961"
+      ]
+    },
+    {
+      "id": "tran-tot-dong-chuc-dong-1426",
+      "nam": 1426,
+      "nam_hien_thi": "1426",
+      "ten": "Trận Tốt Động – Chúc Động",
+      "loai": "tran-danh",
+      "mo_ta": "Nghĩa quân Lam Sơn do Lê Lợi, Nguyễn Trãi chỉ huy mai phục đại phá quân Minh của Vương Thông — «Ninh Kiều máu chảy thành sông, Tốt Động thây phơi đầy nội».",
+      "lon": 105.6706,
+      "lat": 20.8837,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Lam Sơn thực lục",
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lê"
       ]
     },
     {
@@ -473,6 +776,63 @@
       "tinh_34": "",
       "nguon": [
         "SGK Ngữ văn 10 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "tran-chi-lang-xuong-giang-1427",
+      "nam": 1427,
+      "nam_hien_thi": "1427",
+      "ten": "Trận Chi Lăng – Xương Giang",
+      "loai": "tran-danh",
+      "mo_ta": "Lê Sát, Trần Nguyên Hãn chém Liễu Thăng ở núi Mã Yên, tiêu diệt viện binh Minh, buộc Vương Thông đầu hàng, kết thúc thắng lợi khởi nghĩa Lam Sơn.",
+      "lon": 106.5026,
+      "lat": 21.5736,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Lạng Sơn",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lê",
+        "Lam Sơn thực lục"
+      ]
+    },
+    {
+      "id": "nha-le-so-bat-dau-1428",
+      "nam": 1428,
+      "nam_hien_thi": "15/4/1428",
+      "ten": "Lê Lợi lên ngôi, lập nhà Hậu Lê",
+      "loai": "trieu-dai",
+      "mo_ta": "Sau khi quân Minh rút hết (đầu 1428), Lê Lợi lên ngôi Hoàng đế tại điện Kính Thiên, đặt quốc hiệu Đại Việt, cùng ngày Nguyễn Trãi soạn Bình Ngô đại cáo tuyên bố nền độc lập.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — XVIII. Triều Lê sơ 99 năm (1428–1527) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xviii.-trieu-le-so-99-nam-1428-1527-quoc-hieu-dai-viet-kinh-do-dong-do-ha-noi-.html"
+      ]
+    },
+    {
+      "id": "tac-pham-binh-ngo-dai-cao-1428",
+      "nam": 1428,
+      "nam_hien_thi": "15/4/1428",
+      "ten": "Bình Ngô đại cáo (Nguyễn Trãi)",
+      "loai": "tac-pham",
+      "mo_ta": "Nguyễn Trãi thay lời Lê Lợi soạn bài cáo tuyên bố nền độc lập ngay trong ngày Lê Lợi lên ngôi, được xem là bản tuyên ngôn độc lập thứ hai của dân tộc sau Nam quốc sơn hà.",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — XVIII. Triều Lê sơ 99 năm (1428–1527)",
+        "SGK Ngữ văn 10 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "tac-pham-du-dia-chi-1435",
+      "nam": 1435,
+      "nam_hien_thi": "1435",
+      "ten": "Dư địa chí (Nguyễn Trãi)",
+      "loai": "tac-pham",
+      "mo_ta": "Nguyễn Trãi soạn Dư địa chí trong 10 ngày theo lệnh vua Lê Thái Tông, mô tả cương vực – địa lý hành chính Đại Việt, được vua khen và cho khắc in.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Báo Giáo dục và Thời đại (Bộ GD&ĐT) — Vì sao Dư địa chí của Nguyễn Trãi còn gọi là An Nam vũ cống — https://giaoducthoidai.vn/vi-sao-du-dia-chi-cua-nguyen-trai-con-goi-la-an-nam-vu-cong-post564696.html"
       ]
     },
     {
@@ -491,19 +851,6 @@
       "ghi_chu": "Năm soạn chính xác không rõ, chỉ biết khoảng cuối đời (mất 1442). Dùng 1440 làm mốc sắp xếp ước lượng, hiển thị rõ là khoảng năm."
     },
     {
-      "id": "tac-pham-hich-tuong-si-1284",
-      "nam": 1284,
-      "nam_hien_thi": "~1284",
-      "ten": "Hịch tướng sĩ (Trần Hưng Đạo)",
-      "loai": "tac-pham",
-      "mo_ta": "Trần Hưng Đạo viết Hịch tướng sĩ khích lệ tướng sĩ trước cuộc kháng chiến chống Nguyên Mông lần thứ hai.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "",
-      "nguon": [
-        "SGK Ngữ văn 8 - Bộ GD&ĐT"
-      ]
-    },
-    {
       "id": "tac-pham-dai-viet-su-ky-toan-thu-1479",
       "nam": 1479,
       "nam_hien_thi": "1479",
@@ -514,6 +861,326 @@
       "tinh_34": "",
       "nguon": [
         "Trung tâm Lưu trữ Quốc gia IV (Mộc bản triều Nguyễn) — Bộ ván sách Đại Việt sử ký toàn thư và vấn đề phân loại — https://mocban.vn/bo-van-sach-dai-viet-su-ky-toan-thu-va-van-de-phan-loai-tai-trung-tam-luu-tru-quoc-gia-iv/"
+      ]
+    },
+    {
+      "id": "su-kien-luat-hong-duc-1483",
+      "nam": 1483,
+      "nam_hien_thi": "1483",
+      "ten": "Ban hành Quốc triều hình luật (Luật Hồng Đức)",
+      "loai": "su-kien",
+      "mo_ta": "Nhà Lê sơ dưới thời Lê Thánh Tông ban hành Quốc triều hình luật, bộ luật thành văn tiến bộ bậc nhất thời phong kiến Việt Nam.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+        "Cục Di sản văn hoá — dsvh.gov.vn"
+      ]
+    },
+    {
+      "id": "nha-le-so-ket-thuc-1527",
+      "nam": 1527,
+      "nam_hien_thi": "1527",
+      "ten": "Nhà Lê sơ kết thúc",
+      "loai": "trieu-dai",
+      "mo_ta": "Mạc Đăng Dung ép Lê Cung Hoàng nhường ngôi, lập nhà Mạc, mở đầu thời kỳ Nam – Bắc triều.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "nha-mac-bat-dau-1527",
+      "nam": 1527,
+      "nam_hien_thi": "6/1527",
+      "ten": "Mạc Đăng Dung lên ngôi, lập nhà Mạc",
+      "loai": "trieu-dai",
+      "mo_ta": "Mạc Đăng Dung đem quân từ Cổ Trai về kinh đô ép vua Lê Cung Hoàng nhường ngôi, lập nhà Mạc, mở đầu thời kỳ Nam – Bắc triều.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — XIX. Nhà Mạc 65 năm (1527–1592) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xix.-nha-mac-65-nam-1527-1592-kinh-do-dong-do-ha-noi-.html"
+      ]
+    },
+    {
+      "id": "nha-le-trung-hung-bat-dau-1533",
+      "nam": 1533,
+      "nam_hien_thi": "1/1533",
+      "ten": "Nguyễn Kim tôn Lê Trang Tông, mở nhà Lê Trung Hưng",
+      "loai": "trieu-dai",
+      "mo_ta": "Cựu thần nhà Lê là Nguyễn Kim tôn Lê Duy Ninh (Lê Trang Tông, 19 tuổi) lên ngôi tại Ai Lao/Thanh Hoá, đối đầu nhà Mạc — mở đầu 255 năm Lê Trung Hưng và cục diện Nam – Bắc triều.",
+      "lon": 105.648,
+      "lat": 20.0399,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "scov.gov.vn — XX. Nhà Lê Trung Hưng: 255 năm (1533–1788) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html"
+      ]
+    },
+    {
+      "id": "chua-trinh-bat-dau-1545",
+      "nam": 1545,
+      "nam_hien_thi": "1545",
+      "ten": "Trịnh Kiểm — chúa Trịnh đầu tiên nắm quyền Đàng Ngoài",
+      "loai": "trieu-dai",
+      "mo_ta": "Trịnh Kiểm nắm binh quyền phù Lê, mở đầu hơn 200 năm các chúa Trịnh thực quyền cai trị Đàng Ngoài.",
+      "lon": 105.648,
+      "lat": 20.0399,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "tac-pham-o-chau-can-luc-1553",
+      "nam": 1553,
+      "nam_hien_thi": "soạn 1553, tu chỉnh in 1555",
+      "ten": "Ô châu cận lục (Dương Văn An)",
+      "loai": "tac-pham",
+      "mo_ta": "Địa phương chí cổ nhất còn lại của Việt Nam, ghi chép núi sông, thành trì, phong tục, nhân vật vùng Thuận – Quảng (nay Quảng Bình đến Quảng Nam) thời Mạc.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Quảng Trị",
+      "nguon": [
+        "Ban Nội chính Tỉnh uỷ Quảng Bình (nay thuộc Quảng Trị) — https://noichinh.quangbinh.gov.vn/3cms/Ban-in-507.htm?art=1739844925087"
+      ]
+    },
+    {
+      "id": "chua-nguyen-bat-dau-1558",
+      "nam": 1558,
+      "nam_hien_thi": "1558",
+      "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn",
+      "loai": "trieu-dai",
+      "mo_ta": "Nguyễn Hoàng xin vào trấn thủ Thuận Hoá để tránh anh rể Trịnh Kiểm, đặt nền móng cơ nghiệp 9 đời chúa Nguyễn ở Đàng Trong.",
+      "lon": 107.5772,
+      "lat": 16.4698,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Huế",
+      "nguon": [
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+        "Trung tâm Bảo tồn Di tích Cố đô Huế"
+      ]
+    },
+    {
+      "id": "nha-mac-mat-thang-long-1592",
+      "nam": 1592,
+      "nam_hien_thi": "1592",
+      "ten": "Nhà Mạc mất Thăng Long",
+      "loai": "trieu-dai",
+      "mo_ta": "Quân Lê–Trịnh chiếm lại Thăng Long, Mạc Mậu Hợp bị bắt giết; dư đảng nhà Mạc rút lên cát cứ Cao Bằng.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Mạc Đăng Dung và vương triều Mạc trong lịch sử quân chủ Việt Nam — http://baotanglichsu.vn/vi/Articles/3096/4851/mac-djang-dung-va-vuong-trieu-mac-trong-lich-su-quan-chu-viet-nam.html"
+      ]
+    },
+    {
+      "id": "su-kien-le-the-tong-tro-ve-dong-do-1593",
+      "nam": 1593,
+      "nam_hien_thi": "1593",
+      "ten": "Vua Lê Thế Tông trở về Đông Đô",
+      "loai": "su-kien",
+      "mo_ta": "Một năm sau khi Lê – Trịnh hạ thành Thăng Long diệt nhà Mạc (1592), vua Lê Thế Tông từ Thanh Hoá trở về đóng đô tại Đông Đô, chính thức thống nhất Bắc Bộ dưới quyền nhà Lê Trung Hưng.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "scov.gov.vn — XX. Nhà Lê Trung Hưng: 255 năm (1533–1788)"
+      ]
+    },
+    {
+      "id": "su-kien-trinh-nguyen-phan-tranh-1627",
+      "nam": 1627,
+      "nam_hien_thi": "1627",
+      "ten": "Chiến tranh Trịnh – Nguyễn bùng nổ",
+      "loai": "su-kien",
+      "mo_ta": "Xung đột Trịnh – Nguyễn lấy sông Gianh làm ranh giới, chia cắt đất nước gần hai thế kỷ thành Đàng Trong – Đàng Ngoài.",
+      "lon": 106.35,
+      "lat": 17.6,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Quảng Trị",
+      "nguon": [
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "nha-mac-diet-cao-bang-1677",
+      "nam": 1677,
+      "nam_hien_thi": "1677",
+      "ten": "Dư đảng nhà Mạc ở Cao Bằng bị diệt hẳn",
+      "loai": "trieu-dai",
+      "mo_ta": "Chúa Trịnh đánh diệt Mạc Kính Vũ, chấm dứt hoàn toàn thế lực cát cứ cuối cùng của họ Mạc sau 150 năm.",
+      "lon": 106.25,
+      "lat": 22.6667,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Cao Bằng",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/",
+        "Bảo tàng Lịch sử Quốc gia — Mạc Đăng Dung và vương triều Mạc — http://baotanglichsu.vn/vi/Articles/3096/4851/mac-djang-dung-va-vuong-trieu-mac-trong-lich-su-quan-chu-viet-nam.html"
+      ]
+    },
+    {
+      "id": "su-kien-nguyen-huu-canh-lap-gia-dinh-1698",
+      "nam": 1698,
+      "nam_hien_thi": "1698",
+      "ten": "Nguyễn Hữu Cảnh lập phủ Gia Định",
+      "loai": "su-kien",
+      "mo_ta": "Chúa Nguyễn cử Nguyễn Hữu Cảnh kinh lý vùng đất phương Nam, lập phủ Gia Định, chính thức xác lập chủ quyền và bộ máy hành chính Việt Nam trên vùng đất Nam Bộ.",
+      "lon": 106.6602,
+      "lat": 10.7626,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "TP HCM",
+      "nguon": [
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "khoi-nghia-le-duy-mat-1738",
+      "nam": 1738,
+      "nam_hien_thi": "1738–1770",
+      "ten": "Khởi nghĩa Lê Duy Mật",
+      "loai": "khoi-nghia",
+      "mo_ta": "Hoàng thân Lê Duy Mật dựng cờ 'phù Lê diệt Trịnh' ở vùng Thanh Hoá – Nghệ An, kéo dài hơn 30 năm, lâu nhất trong các cuộc nổi dậy Đàng Ngoài thế kỷ 18.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "SGK Lịch sử 7 - Bộ GD&ĐT"
+      ],
+      "can_tra_them": "Không xác định được toạ độ căn cứ chính xác."
+    },
+    {
+      "id": "khoi-nghia-nguyen-danh-phuong-1740",
+      "nam": 1740,
+      "nam_hien_thi": "1740–1751",
+      "ten": "Khởi nghĩa Nguyễn Danh Phương",
+      "loai": "khoi-nghia",
+      "mo_ta": "Nguyễn Danh Phương dựng căn cứ ở Tam Đảo, mở đầu làn sóng khởi nghĩa nông dân Đàng Ngoài giữa thế kỷ 18.",
+      "lon": 105.6425,
+      "lat": 21.4589,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Phú Thọ",
+      "nguon": [
+        "SGK Lịch sử 7 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "khoi-nghia-nguyen-huu-cau-1741",
+      "nam": 1741,
+      "nam_hien_thi": "1741–1751",
+      "ten": "Khởi nghĩa Nguyễn Hữu Cầu (quận He)",
+      "loai": "khoi-nghia",
+      "mo_ta": "Khởi phát từ Đồ Sơn, nghĩa quân Nguyễn Hữu Cầu tiến đánh Kinh Bắc, uy hiếp Thăng Long, với khẩu hiệu lấy của nhà giàu chia cho dân nghèo.",
+      "lon": 106.7931,
+      "lat": 20.7298,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hải Phòng",
+      "nguon": [
+        "SGK Lịch sử 7 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "tac-pham-chinh-phu-ngam-1741",
+      "nam": 1741,
+      "nam_hien_thi": "~1741",
+      "ten": "Chinh phụ ngâm khúc (Đặng Trần Côn)",
+      "loai": "tac-pham",
+      "mo_ta": "Đặng Trần Côn viết khúc ngâm chữ Hán về nỗi lòng người vợ có chồng ra trận, sau được Đoàn Thị Điểm diễn Nôm nổi tiếng.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "SGK Ngữ văn 9 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "tac-pham-dai-viet-thong-su-1749",
+      "nam": 1749,
+      "nam_hien_thi": "1749–1753",
+      "ten": "Đại Việt thông sử (Lê Quý Đôn)",
+      "loai": "tac-pham",
+      "mo_ta": "Lê Quý Đôn soạn bộ thông sử 30 quyển theo lối kỷ truyện, chép sử từ thời Lê Thái Tổ, một trong các bộ sử tư nhân giá trị nhất thời phong kiến.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "",
+      "nguon": [
+        "Thư viện Quốc gia Việt Nam — mục lục Đại Việt thông sử — https://opac.nlv.gov.vn/chi-tiet-tai-lieu/dai-viet-thong-su-20255930170518142931"
+      ]
+    },
+    {
+      "id": "tac-pham-truyen-ky-man-luc",
+      "nam": 1763,
+      "nam_hien_thi": "bản khắc in 1763 (soạn gốc ước giữa thế kỷ XVI)",
+      "ten": "Truyền kỳ mạn lục",
+      "loai": "tac-pham",
+      "mo_ta": "Nguyễn Dữ soạn tập truyện chữ Hán mang màu sắc kỳ ảo; bản 'Tân biên truyền kỳ mạn lục' hiện lưu có niên đại khắc in 1763.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "",
+      "nguon": [
+        "Thư viện Quốc gia Việt Nam, Kho tàng thư tịch cổ Hán Nôm — Tân biên truyền kỳ mạn lục 1763 — http://hannom.nlv.gov.vn/hannom/cgi-bin/hannom?a=d&d=BNTwEHieafWlZ1763"
+      ],
+      "ghi_chu": "Năm soạn gốc của Nguyễn Dữ không có mốc chính xác trong nguồn tra được (tác giả sống ước 1491–1585); chỉ chắc chắn năm khắc in lại 1763. Dùng năm khắc in làm mốc, KHÔNG suy đoán năm soạn gốc."
+    },
+    {
+      "id": "tac-pham-cung-oan-ngam-khuc",
+      "nam": 1770,
+      "nam_hien_thi": "khoảng giữa thế kỷ XVIII",
+      "ten": "Cung oán ngâm khúc (Nguyễn Gia Thiều)",
+      "loai": "tac-pham",
+      "mo_ta": "Khúc ngâm chữ Nôm song thất lục bát, lời một cung nữ bị ruồng bỏ, phản ánh chế độ cung đình thời Trịnh.",
+      "can_tra_them": "Năm sáng tác chính xác chưa tra được nguồn chính thống; tác giả (1741–1798) làm quan dưới thời Trịnh Sâm. Mốc 1770 chỉ để xếp vị trí.",
+      "nguon": [
+        "SGK Ngữ văn 9 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "tac-pham-hai-thuong-y-tong-tam-linh-1770",
+      "nam": 1770,
+      "nam_hien_thi": "1770 (tập đầu)",
+      "ten": "Hải Thượng y tông tâm lĩnh (Lê Hữu Trác)",
+      "loai": "tac-pham",
+      "mo_ta": "Hải Thượng Lãn Ông Lê Hữu Trác khởi soạn bộ y văn 28 tập/66 quyển, được coi là bộ 'bách khoa y học' đầu tiên của Việt Nam.",
+      "lon": 105.7,
+      "lat": 18.35,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Tĩnh",
+      "nguon": [
+        "Sở Y tế Hà Tĩnh — Lê Hữu Trác và Hải Thượng y tông tâm lĩnh từ điểm nhìn thế kỷ XXI — http://soyte.hatinh.gov.vn/tin-tuc-su-kien/le-huu-trac-va-hai-thuong-y-tong-tam-linh-tu-diem-nhin-the-k.html"
+      ]
+    },
+    {
+      "id": "khoi-nghia-tay-son-1771",
+      "nam": 1771,
+      "nam_hien_thi": "1771",
+      "ten": "Khởi nghĩa Tây Sơn bùng nổ",
+      "loai": "khoi-nghia",
+      "mo_ta": "Ba anh em Nguyễn Nhạc, Nguyễn Lữ, Nguyễn Huệ dựng cờ khởi nghĩa ở ấp Tây Sơn chống quyền thần Trương Phúc Loan — phong trào nông dân lớn nhất thời phong kiến, dẫn tới lập nhà Tây Sơn năm 1778.",
+      "lon": 108.955,
+      "lat": 13.933,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Gia Lai",
+      "nguon": [
+        "scov.gov.vn — XXI. Nhà Tây Sơn 24 năm (1778–1802) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xxi.-nha-tay-son-24-nam-1778-1802-kinh-do-phu-xuan-hue-.html"
+      ]
+    },
+    {
+      "id": "tac-pham-van-dai-loai-ngu-1773",
+      "nam": 1773,
+      "nam_hien_thi": "1773",
+      "ten": "Vân đài loại ngữ (Lê Quý Đôn)",
+      "loai": "tac-pham",
+      "mo_ta": "Bộ bách khoa thư 4 quyển, 9 mục của Lê Quý Đôn, tổng hợp kiến thức triết học, khoa học, văn học đương thời.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "",
+      "nguon": [
+        "SGK Lịch sử 10 - Bộ GD&ĐT"
       ]
     },
     {
@@ -528,6 +1195,275 @@
       "nguon": [
         "SGK Lịch sử 10 - Bộ GD&ĐT"
       ]
+    },
+    {
+      "id": "chua-nguyen-ket-thuc-1777",
+      "nam": 1777,
+      "nam_hien_thi": "1777",
+      "ten": "Chúa Nguyễn Đàng Trong kết thúc",
+      "loai": "trieu-dai",
+      "mo_ta": "Nguyễn Phúc Thuần, chúa Nguyễn cuối cùng, bị quân Tây Sơn giết, chấm dứt 9 đời chúa Nguyễn ở Đàng Trong (1558–1777).",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "",
+      "nguon": [
+        "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — Bộ ván khắc sử học Đại Nam thực lục — https://mocban.vn/bo-van-khac-su-hoc-dai-nam-thuc-luc-nhung-dau-an-con-mai/"
+      ],
+      "can_tra_them": "Không xác định được toạ độ nơi Nguyễn Phúc Thuần bị bắt/giết (vùng Long Xuyên/Cà Mau cũ) đủ chính xác nên để trống."
+    },
+    {
+      "id": "tac-pham-kien-van-tieu-luc-1777",
+      "nam": 1777,
+      "nam_hien_thi": "1777",
+      "ten": "Kiến văn tiểu lục (Lê Quý Đôn)",
+      "loai": "tac-pham",
+      "mo_ta": "Lê Quý Đôn ghi chép kiến thức nhiều lĩnh vực (chính trị, giáo dục, pháp luật, khoa cử, thơ văn) từ thời Trần đến Lê, soạn khi ông coi việc dạy học ở Quốc Tử Giám.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "",
+      "nguon": [
+        "SGK Lịch sử 10 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "nha-tay-son-bat-dau-1778",
+      "nam": 1778,
+      "nam_hien_thi": "1778",
+      "ten": "Nguyễn Nhạc xưng đế, lập nhà Tây Sơn",
+      "loai": "trieu-dai",
+      "mo_ta": "Nguyễn Nhạc xưng Trung ương Hoàng đế, niên hiệu Thái Đức, đóng đô ở thành Đồ Bàn (Quy Nhơn), chính thức lập nhà Tây Sơn.",
+      "lon": 109.1067,
+      "lat": 13.9218,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Gia Lai",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "tac-pham-thuong-kinh-ky-su-1783",
+      "nam": 1783,
+      "nam_hien_thi": "tháng 11/1783",
+      "ten": "Thượng kinh ký sự (Lê Hữu Trác)",
+      "loai": "tac-pham",
+      "mo_ta": "Quyển cuối bộ Hải Thượng y tông tâm lĩnh, ghi lại hành trình Lê Hữu Trác từ Hương Sơn ra Thăng Long chữa bệnh cho chúa Trịnh, được xem là ký sự văn học đặc sắc.",
+      "lon": 105.7,
+      "lat": 18.35,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Tĩnh",
+      "nguon": [
+        "Sở Y tế Hà Tĩnh — Dấu ấn cố hương trong Thượng Kinh ký sự — http://soyte.hatinh.gov.vn/tin-tuc/ky-niem-300-nam-ngay-sinh-dai-danh-y-hai-thuong-lan-ong-le-h/dau-an-co-huong-trong-thuong-kinh-ky-su-.html"
+      ]
+    },
+    {
+      "id": "khang-chien-chong-xiem-1784",
+      "nam": 1784,
+      "nam_hien_thi": "1784–1785",
+      "ten": "Kháng chiến chống quân Xiêm xâm lược",
+      "loai": "khang-chien",
+      "mo_ta": "Quân Xiêm gần 5 vạn theo lời cầu viện của Nguyễn Ánh tiến vào Nam Bộ; Nguyễn Huệ tổ chức mai phục, nhấn chìm gần như toàn bộ đạo quân này trong một đêm tại Rạch Gầm – Xoài Mút.",
+      "lon": 106.267,
+      "lat": 10.347,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Đồng Tháp",
+      "nguon": [
+        "Đại Nam chính biên liệt truyện — Quốc sử quán triều Nguyễn",
+        "Hoàng Lê nhất thống chí — Ngô gia văn phái"
+      ]
+    },
+    {
+      "id": "tran-rach-gam-xoai-mut-1785",
+      "nam": 1785,
+      "nam_hien_thi": "1785",
+      "ten": "Trận Rạch Gầm – Xoài Mút",
+      "loai": "tran-danh",
+      "mo_ta": "Nguyễn Huệ mai phục thuỷ chiến, nhấn chìm gần 5 vạn quân Xiêm trong một đêm — một trong những trận thuỷ chiến lớn nhất lịch sử, bảo vệ vẹn toàn Nam Bộ.",
+      "lon": 106.267,
+      "lat": 10.347,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Đồng Tháp",
+      "nguon": [
+        "Đại Nam chính biên liệt truyện — Quốc sử quán triều Nguyễn",
+        "Hoàng Lê nhất thống chí — Ngô gia văn phái"
+      ]
+    },
+    {
+      "id": "chua-trinh-ket-thuc-1786",
+      "nam": 1786,
+      "nam_hien_thi": "7/1786 (Trịnh Bồng còn danh nghĩa tới 1787)",
+      "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh",
+      "loai": "trieu-dai",
+      "mo_ta": "Nguyễn Huệ đưa quân Tây Sơn ra Bắc lấy danh nghĩa «phù Lê diệt Trịnh», hạ Thăng Long; chúa Trịnh Khải bỏ chạy, bị bắt và tự vẫn tại làng Hạ Lôi, chấm dứt hơn 200 năm cầm quyền họ Trịnh.",
+      "lon": 105.8342,
+      "lat": 21.0278,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "ghi_chu": "Sau cái chết của Trịnh Khải (7/1786), Nguyễn Hữu Chỉnh còn dựng Trịnh Bồng lên làm chúa bù nhìn một thời gian ngắn (1786–1787) trước khi ông này bỏ chạy hẳn; nêu cả hai mốc, dùng 1786 làm năm chính vì đó là khi quyền lực thực tế của dòng chúa Trịnh chấm dứt.",
+      "nguon": [
+        "scov.gov.vn — Việt Nam sử lược, Nhà Hậu Lê, Chương IX. Họ Trịnh mất nghiệp chúa — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html"
+      ]
+    },
+    {
+      "id": "su-kien-tay-son-chia-3-vung-1787",
+      "nam": 1787,
+      "nam_hien_thi": "1787",
+      "ten": "Nội bộ Tây Sơn chia ba vùng cai trị",
+      "loai": "su-kien",
+      "mo_ta": "Sau khi mất Bắc Hà vào tay Nguyễn Huệ, Nguyễn Nhạc chia lãnh thổ Tây Sơn thành ba vùng: Trung ương Hoàng đế (Nguyễn Nhạc, Quy Nhơn), Bắc Bình Vương (Nguyễn Huệ, Phú Xuân) và Đông Định Vương (Nguyễn Lữ, Gia Định) — mầm mống chia rẽ nội bộ Tây Sơn.",
+      "lon": 109.1067,
+      "lat": 13.9218,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Gia Lai",
+      "nguon": [
+        "scov.gov.vn — XXI. Nhà Tây Sơn 24 năm (1778–1802)"
+      ]
+    },
+    {
+      "id": "khang-chien-chong-thanh-1788",
+      "nam": 1788,
+      "nam_hien_thi": "1788–1789",
+      "ten": "Kháng chiến chống quân Thanh xâm lược",
+      "loai": "khang-chien",
+      "mo_ta": "Vua Quang Trung hành quân thần tốc từ Phú Xuân ra Bắc, đại phá quân Thanh trong 5 ngày Tết Kỷ Dậu, đỉnh điểm là trận Ngọc Hồi – Đống Đa, buộc Tôn Sĩ Nghị tháo chạy.",
+      "lon": 105.8245,
+      "lat": 21.0121,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "ghi_chu": "Quân số quân Thanh «29 vạn» là con số chép trong Hoàng Lê nhất thống chí và lưu truyền phổ biến; giới nghiên cứu hiện nay còn tranh luận về con số thực. Trình bày là con số theo sử liệu chép, không phải số liệu xác định.",
+      "nguon": [
+        "Hoàng Lê nhất thống chí — Ngô gia văn phái",
+        "Đại Nam chính biên liệt truyện — Quốc sử quán triều Nguyễn"
+      ]
+    },
+    {
+      "id": "nha-le-trung-hung-ket-thuc-1788",
+      "nam": 1788,
+      "nam_hien_thi": "1788 (có nguồn ghi 1789)",
+      "ten": "Nhà Lê Trung Hưng kết thúc",
+      "loai": "trieu-dai",
+      "mo_ta": "Lê Chiêu Thống chạy sang nhà Thanh cầu viện rồi lưu vong, nhà Lê chấm dứt trên thực tế sau hơn 250 năm.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Hà Văn Thư, Trần Hồng Đức — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ],
+      "ghi_chu": "nien-hieu.json trong dự án ghi niên hiệu Chiêu Thống den_nam=1788; trận Ngọc Hồi–Đống Đa (Quang Trung đại phá quân Thanh, Lê Chiêu Thống chạy hẳn sang Trung Quốc) lại được dong-thoi-gian.json ghi năm 1789 — lệch do Tết Kỷ Dậu rơi vào đầu năm dương lịch 1789 nhưng còn thuộc năm âm Mậu Thân/Kỷ Dậu giáp ranh. Nêu cả hai, KHÔNG tự chọn một bản."
+    },
+    {
+      "id": "quang-trung-len-ngoi-1788",
+      "nam": 1788,
+      "nam_hien_thi": "25/11/1788 (Mậu Thân)",
+      "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung",
+      "loai": "trieu-dai",
+      "mo_ta": "Trước tin quân Thanh sang xâm lược, Nguyễn Huệ lên ngôi Hoàng đế tại Phú Xuân lấy niên hiệu Quang Trung, ngay sau đó thân chinh ra Bắc đại phá quân Thanh.",
+      "lon": 107.5772,
+      "lat": 16.4698,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Huế",
+      "nguon": [
+        "scov.gov.vn — XXI. Nhà Tây Sơn 24 năm (1778–1802) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xxi.-nha-tay-son-24-nam-1778-1802-kinh-do-phu-xuan-hue-.html"
+      ]
+    },
+    {
+      "id": "tran-ngoc-hoi-dong-da-1789",
+      "nam": 1789,
+      "nam_hien_thi": "Tết Kỷ Dậu 1789",
+      "ten": "Trận Ngọc Hồi – Đống Đa",
+      "loai": "tran-danh",
+      "mo_ta": "Hoàng đế Quang Trung hành quân thần tốc, đại phá quân Thanh trong 5 ngày Tết; Tôn Sĩ Nghị bỏ chạy, Sầm Nghi Đống thắt cổ tự vẫn.",
+      "lon": 105.8245,
+      "lat": 21.0121,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Hoàng Lê nhất thống chí — Ngô gia văn phái",
+        "Cục Di sản văn hoá — Gò Đống Đa, di tích quốc gia đặc biệt"
+      ]
+    },
+    {
+      "id": "tac-pham-hoang-le-nhat-thong-chi",
+      "nam": 1800,
+      "nam_hien_thi": "cuối thế kỷ XVIII – đầu thế kỷ XIX",
+      "ten": "Hoàng Lê nhất thống chí (Ngô gia văn phái)",
+      "loai": "tac-pham",
+      "mo_ta": "Tiểu thuyết chương hồi chữ Hán 17 hồi do dòng họ Ngô Thì soạn nối tiếp, ghi lại giai đoạn Tây Sơn diệt Trịnh, đại phá quân Thanh và đầu triều Nguyễn.",
+      "tinh_34": "Hà Nội",
+      "can_tra_them": "Năm hoàn thành trọn bộ 17 hồi chưa xác định chính xác (biên soạn nối tiếp qua nhiều thế hệ); mốc 1800 chỉ là ước lượng để xếp vị trí trên thanh thời gian.",
+      "nguon": [
+        "SGK Ngữ văn 9 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "nha-nguyen-bat-dau-1802",
+      "nam": 1802,
+      "nam_hien_thi": "1802",
+      "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn",
+      "loai": "trieu-dai",
+      "mo_ta": "Nguyễn Ánh đánh bại Tây Sơn, lên ngôi lấy niên hiệu Gia Long, thống nhất đất nước từ Lạng Sơn tới Cà Mau, đóng đô Phú Xuân — triều đại quân chủ cuối cùng.",
+      "lon": 107.5772,
+      "lat": 16.4698,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Huế",
+      "nguon": [
+        "scov.gov.vn — XXII. Nhà Nguyễn 143 năm (1802–1945) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xxii.-nha-nguyen-143-nam-1802-1945-quoc-hieu-viet-nam-tu-minh-mang-la-dai-nam-kinh-do-hue-thua-thien-phan-1-.html"
+      ]
+    },
+    {
+      "id": "nha-tay-son-ket-thuc-1802",
+      "nam": 1802,
+      "nam_hien_thi": "1802",
+      "ten": "Nhà Tây Sơn kết thúc",
+      "loai": "trieu-dai",
+      "mo_ta": "Nguyễn Ánh đánh chiếm Phú Xuân rồi Thăng Long, vua Cảnh Thịnh (Nguyễn Quang Toản) bị bắt, nhà Tây Sơn sụp đổ.",
+      "lon": 107.5772,
+      "lat": 16.4698,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Huế",
+      "nguon": [
+        "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/"
+      ]
+    },
+    {
+      "id": "tac-pham-hoang-viet-luat-le-1813",
+      "nam": 1813,
+      "nam_hien_thi": "bản khắc 1813 (có nguồn phổ biến ghi ban hành 1815)",
+      "ten": "Hoàng Việt luật lệ (Luật Gia Long)",
+      "loai": "tac-pham",
+      "mo_ta": "Bộ luật chính thức đầu triều Nguyễn, phỏng theo luật nhà Thanh có chỉnh sửa cho phù hợp phong tục Việt Nam.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Huế",
+      "nguon": [
+        "Thư viện Quốc gia Việt Nam, Kho tàng thư tịch cổ Hán Nôm — Hoàng Việt luật lệ (q.03) 1813 — http://hannom.nlv.gov.vn/hannom/cgi-bin/hannom?a=d&d=CdjlbdgGlMBfuUse1813"
+      ],
+      "ghi_chu": "Nguồn Hán Nôm tra được ghi bản khắc năm 1813; nhiều tài liệu phổ thông khác ghi năm ban hành 1815 — chưa tìm được nguồn chính thống xác nhận 1815, nêu cả hai."
+    },
+    {
+      "id": "su-kien-doi-hoang-sa-1815",
+      "nam": 1815,
+      "nam_hien_thi": "1815",
+      "ten": "Đội Hoàng Sa thực thi chủ quyền",
+      "loai": "su-kien",
+      "mo_ta": "Nhà Nguyễn cử đội Hoàng Sa ra khảo sát, đo đạc quần đảo Hoàng Sa, tiếp nối truyền thống xác lập chủ quyền từ thời chúa Nguyễn thế kỷ XVII đã ghi trong Phủ biên tạp lục của Lê Quý Đôn.",
+      "tinh_34": "Đà Nẵng",
+      "nguon": [
+        "Uỷ ban Biên giới quốc gia — boundary.gov.vn",
+        "Phủ biên tạp lục — Lê Quý Đôn"
+      ]
+    },
+    {
+      "id": "tac-pham-truyen-kieu",
+      "nam": 1815,
+      "nam_hien_thi": "sau 1813, trước 1820",
+      "ten": "Truyện Kiều (Nguyễn Du)",
+      "loai": "tac-pham",
+      "mo_ta": "Nguyễn Du sáng tác Đoạn trường tân thanh (Truyện Kiều) dựa theo Kim Vân Kiều truyện của Thanh Tâm Tài Nhân, đỉnh cao của văn học chữ Nôm.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Tĩnh",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Những hiện vật liên quan đến Truyện Kiều của Nguyễn Du — https://baotanglichsu.vn/vi/Articles/3099/18905/nhung-hien-vat-lien-quan-djen-truyen-kieu-cua-nguyen-du-djang-luu-giu-tai-btlsqg.html",
+        "SGK Ngữ văn 9 - Bộ GD&ĐT"
+      ],
+      "ghi_chu": "Không tìm được nguồn chính thống ghi năm sáng tác chính xác; giới nghiên cứu ước đoán 1813 (sau chuyến đi sứ) đến trước 1820 (năm mất). Dùng 1815 làm mốc sắp xếp giữa khoảng, hiển thị rõ là khoảng năm."
     },
     {
       "id": "tac-pham-lich-trieu-hien-chuong-loai-chi-1819",
@@ -557,18 +1493,18 @@
       "ghi_chu": "Giới nghiên cứu còn tranh cãi năm hoàn thành chính xác (1820 theo lúc dâng vua Minh Mạng, có ý kiến khác cho là 1820–1822 hoặc muộn hơn); dùng mốc dâng vua 1820 phổ biến nhất."
     },
     {
-      "id": "tac-pham-hoang-viet-luat-le-1813",
-      "nam": 1813,
-      "nam_hien_thi": "bản khắc 1813 (có nguồn phổ biến ghi ban hành 1815)",
-      "ten": "Hoàng Việt luật lệ (Luật Gia Long)",
-      "loai": "tac-pham",
-      "mo_ta": "Bộ luật chính thức đầu triều Nguyễn, phỏng theo luật nhà Thanh có chỉnh sửa cho phù hợp phong tục Việt Nam.",
+      "id": "khoi-nghia-phan-ba-vanh-1821",
+      "nam": 1821,
+      "nam_hien_thi": "1821–1827",
+      "ten": "Khởi nghĩa Phan Bá Vành",
+      "loai": "khoi-nghia",
+      "mo_ta": "Phan Bá Vành tập hợp nông dân nổi dậy vùng Thái Bình, lập căn cứ Trà Lũ, là một trong các cuộc khởi nghĩa lớn nhất đầu triều Nguyễn.",
       "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Huế",
+      "tinh_34": "Hưng Yên",
       "nguon": [
-        "Thư viện Quốc gia Việt Nam, Kho tàng thư tịch cổ Hán Nôm — Hoàng Việt luật lệ (q.03) 1813 — http://hannom.nlv.gov.vn/hannom/cgi-bin/hannom?a=d&d=CdjlbdgGlMBfuUse1813"
+        "SGK Lịch sử 8 - Bộ GD&ĐT"
       ],
-      "ghi_chu": "Nguồn Hán Nôm tra được ghi bản khắc năm 1813; nhiều tài liệu phổ thông khác ghi năm ban hành 1815 — chưa tìm được nguồn chính thống xác nhận 1815, nêu cả hai."
+      "can_tra_them": "Không xác định được toạ độ căn cứ Trà Lũ đủ chính xác."
     },
     {
       "id": "tac-pham-dai-nam-thuc-luc-1821",
@@ -584,75 +1520,46 @@
       ]
     },
     {
-      "id": "tac-pham-kham-dinh-viet-su-cuong-muc-1856",
-      "nam": 1856,
-      "nam_hien_thi": "khởi soạn 1856, khắc in 1884",
-      "ten": "Khâm định Việt sử thông giám cương mục",
-      "loai": "tac-pham",
-      "mo_ta": "Vua Tự Đức sai Phan Thanh Giản chủ biên bộ quốc sử 53 quyển theo lối cương mục, có lời phê của vua, hoàn thành khắc in năm 1884.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Huế",
+      "id": "khoi-nghia-le-van-khoi-1833",
+      "nam": 1833,
+      "nam_hien_thi": "1833–1835",
+      "ten": "Khởi nghĩa Lê Văn Khôi",
+      "loai": "khoi-nghia",
+      "mo_ta": "Lê Văn Khôi chiếm thành Phiên An (Gia Định), cả sáu tỉnh Nam Kỳ hưởng ứng; thành cố thủ hơn 2 năm trước khi bị triều đình dẹp.",
+      "lon": 106.6602,
+      "lat": 10.7626,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "TP HCM",
       "nguon": [
-        "Thư viện Quốc gia Việt Nam, Kho tàng thư tịch cổ Hán Nôm — Khâm định Việt sử thông giám cương mục 1884 — http://hannom.nlv.gov.vn/hannom?a=d&d=CdjlbdgGlMBgCeHg1884"
+        "SGK Lịch sử 8 - Bộ GD&ĐT"
       ]
     },
     {
-      "id": "tac-pham-hai-thuong-y-tong-tam-linh-1770",
-      "nam": 1770,
-      "nam_hien_thi": "1770 (tập đầu)",
-      "ten": "Hải Thượng y tông tâm lĩnh (Lê Hữu Trác)",
-      "loai": "tac-pham",
-      "mo_ta": "Hải Thượng Lãn Ông Lê Hữu Trác khởi soạn bộ y văn 28 tập/66 quyển, được coi là bộ 'bách khoa y học' đầu tiên của Việt Nam.",
-      "lon": 105.7,
-      "lat": 18.35,
+      "id": "khoi-nghia-nong-van-van-1833",
+      "nam": 1833,
+      "nam_hien_thi": "1833–1835",
+      "ten": "Khởi nghĩa Nông Văn Vân",
+      "loai": "khoi-nghia",
+      "mo_ta": "Nông Văn Vân lãnh đạo các dân tộc miền núi phía Bắc nổi dậy chống triều Nguyễn, lan khắp vùng Việt Bắc trước khi bị dẹp.",
       "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Hà Tĩnh",
+      "tinh_34": "Cao Bằng",
       "nguon": [
-        "Sở Y tế Hà Tĩnh — Lê Hữu Trác và Hải Thượng y tông tâm lĩnh từ điểm nhìn thế kỷ XXI — http://soyte.hatinh.gov.vn/tin-tuc-su-kien/le-huu-trac-va-hai-thuong-y-tong-tam-linh-tu-diem-nhin-the-k.html"
-      ]
-    },
-    {
-      "id": "tac-pham-thuong-kinh-ky-su-1783",
-      "nam": 1783,
-      "nam_hien_thi": "tháng 11/1783",
-      "ten": "Thượng kinh ký sự (Lê Hữu Trác)",
-      "loai": "tac-pham",
-      "mo_ta": "Quyển cuối bộ Hải Thượng y tông tâm lĩnh, ghi lại hành trình Lê Hữu Trác từ Hương Sơn ra Thăng Long chữa bệnh cho chúa Trịnh, được xem là ký sự văn học đặc sắc.",
-      "lon": 105.7,
-      "lat": 18.35,
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Hà Tĩnh",
-      "nguon": [
-        "Sở Y tế Hà Tĩnh — Dấu ấn cố hương trong Thượng Kinh ký sự — http://soyte.hatinh.gov.vn/tin-tuc/ky-niem-300-nam-ngay-sinh-dai-danh-y-hai-thuong-lan-ong-le-h/dau-an-co-huong-trong-thuong-kinh-ky-su-.html"
-      ]
-    },
-    {
-      "id": "tac-pham-chinh-phu-ngam-1741",
-      "nam": 1741,
-      "nam_hien_thi": "~1741",
-      "ten": "Chinh phụ ngâm khúc (Đặng Trần Côn)",
-      "loai": "tac-pham",
-      "mo_ta": "Đặng Trần Côn viết khúc ngâm chữ Hán về nỗi lòng người vợ có chồng ra trận, sau được Đoàn Thị Điểm diễn Nôm nổi tiếng.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Hà Nội",
-      "nguon": [
-        "SGK Ngữ văn 9 - Bộ GD&ĐT"
-      ]
-    },
-    {
-      "id": "tac-pham-truyen-kieu",
-      "nam": 1815,
-      "nam_hien_thi": "sau 1813, trước 1820",
-      "ten": "Truyện Kiều (Nguyễn Du)",
-      "loai": "tac-pham",
-      "mo_ta": "Nguyễn Du sáng tác Đoạn trường tân thanh (Truyện Kiều) dựa theo Kim Vân Kiều truyện của Thanh Tâm Tài Nhân, đỉnh cao của văn học chữ Nôm.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Hà Tĩnh",
-      "nguon": [
-        "Bảo tàng Lịch sử Quốc gia — Những hiện vật liên quan đến Truyện Kiều của Nguyễn Du — https://baotanglichsu.vn/vi/Articles/3099/18905/nhung-hien-vat-lien-quan-djen-truyen-kieu-cua-nguyen-du-djang-luu-giu-tai-btlsqg.html",
-        "SGK Ngữ văn 9 - Bộ GD&ĐT"
+        "SGK Lịch sử 8 - Bộ GD&ĐT"
       ],
-      "ghi_chu": "Không tìm được nguồn chính thống ghi năm sáng tác chính xác; giới nghiên cứu ước đoán 1813 (sau chuyến đi sứ) đến trước 1820 (năm mất). Dùng 1815 làm mốc sắp xếp giữa khoảng, hiển thị rõ là khoảng năm."
+      "can_tra_them": "Không xác định được toạ độ trung tâm khởi nghĩa đủ chính xác."
+    },
+    {
+      "id": "su-kien-minh-mang-khang-dinh-hoang-sa-1836",
+      "nam": 1836,
+      "nam_hien_thi": "1836",
+      "ten": "Vua Minh Mạng khẳng định chủ quyền Hoàng Sa",
+      "loai": "su-kien",
+      "mo_ta": "Vua Minh Mạng cho vẽ bản đồ, dựng bia, cử thuỷ quân đo đạc, cắm mốc chủ quyền tại quần đảo Hoàng Sa.",
+      "tinh_34": "Đà Nẵng",
+      "nguon": [
+        "Uỷ ban Biên giới quốc gia — boundary.gov.vn",
+        "Đại Nam thực lục — Quốc sử quán triều Nguyễn"
+      ]
     },
     {
       "id": "tac-pham-luc-van-tien",
@@ -669,6 +1576,66 @@
       "can_tra_them": "Năm sáng tác chính xác chưa tra được nguồn chính thống; ước đoán đầu thập niên 1850."
     },
     {
+      "id": "tac-pham-kham-dinh-viet-su-cuong-muc-1856",
+      "nam": 1856,
+      "nam_hien_thi": "khởi soạn 1856, khắc in 1884",
+      "ten": "Khâm định Việt sử thông giám cương mục",
+      "loai": "tac-pham",
+      "mo_ta": "Vua Tự Đức sai Phan Thanh Giản chủ biên bộ quốc sử 53 quyển theo lối cương mục, có lời phê của vua, hoàn thành khắc in năm 1884.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Huế",
+      "nguon": [
+        "Thư viện Quốc gia Việt Nam, Kho tàng thư tịch cổ Hán Nôm — Khâm định Việt sử thông giám cương mục 1884 — http://hannom.nlv.gov.vn/hannom?a=d&d=CdjlbdgGlMBgCeHg1884"
+      ]
+    },
+    {
+      "id": "khang-chien-chong-phap-1858-1884",
+      "nam": 1858,
+      "nam_hien_thi": "1858–1884",
+      "ten": "Kháng chiến chống thực dân Pháp xâm lược (giai đoạn đầu)",
+      "loai": "khang-chien",
+      "mo_ta": "Từ cuộc nổ súng ở Đà Nẵng (1858) tới các hoà ước Harmand – Patenôtre (1883–1884), triều Nguyễn và nhân dân từng bước kháng cự nhưng lần lượt mất Nam Kỳ, Bắc Kỳ, Trung Kỳ vào tay Pháp.",
+      "lon": 108.2647075,
+      "lat": 16.12049,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Đà Nẵng",
+      "nguon": [
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+        "Báo Nhân Dân — nhandan.vn"
+      ]
+    },
+    {
+      "id": "tran-da-nang-1858",
+      "nam": 1858,
+      "nam_hien_thi": "1/9/1858",
+      "ten": "Trận Đà Nẵng — mở đầu chống Pháp",
+      "loai": "tran-danh",
+      "mo_ta": "Liên quân Pháp – Tây Ban Nha nổ súng vào cửa biển Đà Nẵng, mở đầu chiến tranh xâm lược, nhưng bị Nguyễn Tri Phương cầm chân gần 5 tháng, buộc phải chuyển hướng đánh Gia Định.",
+      "lon": 108.2647075,
+      "lat": 16.12049,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Đà Nẵng",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngày 1/9/1858",
+        "Báo Quân đội nhân dân — Vì sao là Đà Nẵng"
+      ]
+    },
+    {
+      "id": "khoi-nghia-nguyen-trung-truc-1861",
+      "nam": 1861,
+      "nam_hien_thi": "1861–1868",
+      "ten": "Khởi nghĩa Nguyễn Trung Trực",
+      "loai": "khoi-nghia",
+      "mo_ta": "Nguyễn Trung Trực đốt tàu Espérance của Pháp trên vàm Nhật Tảo (1861), sau đó tiếp tục kháng chiến vùng Rạch Giá – Hà Tiên, đánh úp đồn Kiên Giang (1868) trước khi bị bắt và xử tử.",
+      "lon": 105.0809,
+      "lat": 10.0125,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "An Giang",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Nguyễn Trung Trực (1861–1868) — https://baotanglichsu.vn/vi/Articles/3097/15075/khoi-nghia-nguyen-trung-truc-1861-1868-bao-gio-nuoc-nam-het-co-thi-moi-het-nguoi-nam-djanh-tay.html"
+      ]
+    },
+    {
       "id": "tac-pham-van-te-nghia-si-can-giuoc-1861",
       "nam": 1861,
       "nam_hien_thi": "1861",
@@ -681,6 +1648,37 @@
       "tinh_34": "TP HCM",
       "nguon": [
         "SGK Ngữ văn 11 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "tran-dai-don-chi-hoa-1861",
+      "nam": 1861,
+      "nam_hien_thi": "24–25/2/1861",
+      "ten": "Trận Đại đồn Chí Hoà",
+      "loai": "tran-danh",
+      "mo_ta": "Sau hai ngày giao chiến ác liệt, quân Pháp hạ được Đại đồn Chí Hoà do Nguyễn Tri Phương xây dựng; Nguyễn Tri Phương bị thương nặng — mở đường Pháp mở rộng chiếm Nam Kỳ.",
+      "lon": 106.6544,
+      "lat": 10.7867,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "TP HCM",
+      "nguon": [
+        "scov.gov.vn — Việt Nam sử lược, Nhà Nguyễn, Chương VII — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/can-kim-thoi-dai-nha-nguyen.-chuong-vii.-nuoc-phap-lay-dat-nam-ky-phan-2-.html"
+      ]
+    },
+    {
+      "id": "khoi-nghia-truong-dinh-1862",
+      "nam": 1862,
+      "nam_hien_thi": "1862–1864",
+      "ten": "Khởi nghĩa Trương Định",
+      "loai": "khoi-nghia",
+      "mo_ta": "Trương Định không tuân lệnh triều đình bãi binh sau Hoà ước Nhâm Tuất, xây căn cứ Gò Công tiếp tục đánh Pháp, được nhân dân suy tôn Bình Tây Đại nguyên soái; tuẫn tiết năm 1864 sau khi bị chỉ điểm.",
+      "lon": 106.6748826,
+      "lat": 10.3650266,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Đồng Tháp",
+      "nguon": [
+        "Cục Di sản văn hoá — Di tích khởi nghĩa Trương Định",
+        "Báo Quân đội nhân dân — Bình Tây Đại nguyên soái Trương Định — http://sknc.qdnd.vn/chuyen-xua-nay/binh-tay-dai-nguyen-soai-truong-dinh-502948"
       ]
     },
     {
@@ -699,6 +1697,126 @@
       ]
     },
     {
+      "id": "tran-cau-giay-lan-1-1873",
+      "nam": 1873,
+      "nam_hien_thi": "21/12/1873",
+      "ten": "Trận Cầu Giấy lần thứ nhất",
+      "loai": "tran-danh",
+      "mo_ta": "Quân Cờ Đen của Lưu Vĩnh Phúc phối hợp quân triều đình phục kích quân Pháp tại Cầu Giấy, giết chỉ huy Francis Garnier, góp phần buộc Pháp ký Hoà ước Giáp Tuất 1874.",
+      "lon": 105.8033629,
+      "lat": 21.0292159,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Báo Quân đội nhân dân — kháng Pháp nửa cuối thế kỷ XIX"
+      ]
+    },
+    {
+      "id": "khoi-nghia-bai-say-1883",
+      "nam": 1883,
+      "nam_hien_thi": "1883–1892",
+      "ten": "Khởi nghĩa Bãi Sậy",
+      "loai": "khoi-nghia",
+      "mo_ta": "Nguyễn Thiện Thuật lãnh đạo khởi nghĩa Cần Vương vùng đồng bằng, dùng lối đánh du kích trong đầm lau sậy Khoái Châu – Ân Thi, cầm chân quân Pháp gần mười năm.",
+      "lon": 106.1207,
+      "lat": 20.8501,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hưng Yên",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học, phong trào Cần Vương"
+      ]
+    },
+    {
+      "id": "tran-cau-giay-lan-2-1883",
+      "nam": 1883,
+      "nam_hien_thi": "19/5/1883",
+      "ten": "Trận Cầu Giấy lần thứ hai",
+      "loai": "tran-danh",
+      "mo_ta": "Quân Cờ Đen phục kích, giết chỉ huy Pháp Henri Rivière tại Cầu Giấy; Pháp lấy cớ đẩy mạnh xâm lược, buộc triều Nguyễn ký Hoà ước Harmand 1883.",
+      "lon": 105.8045629,
+      "lat": 21.0301159,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Báo Quân đội nhân dân — kháng Pháp nửa cuối thế kỷ XIX"
+      ]
+    },
+    {
+      "id": "khoi-nghia-yen-the-1884",
+      "nam": 1884,
+      "nam_hien_thi": "1884–1913",
+      "ten": "Khởi nghĩa Yên Thế",
+      "loai": "khoi-nghia",
+      "mo_ta": "Hoàng Hoa Thám (Đề Thám) lãnh đạo cuộc khởi nghĩa nông dân dai dẳng gần 30 năm ở Yên Thế — cuộc kháng chiến tự phát dài nhất chống thực dân Pháp.",
+      "lon": 106.1268,
+      "lat": 21.4789,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Bắc Ninh",
+      "nguon": [
+        "Cục Di sản văn hoá — Những địa điểm khởi nghĩa Yên Thế, di tích quốc gia đặc biệt"
+      ]
+    },
+    {
+      "id": "khoi-nghia-hung-linh-1885",
+      "nam": 1885,
+      "nam_hien_thi": "1885–1892",
+      "ten": "Khởi nghĩa Hùng Lĩnh",
+      "loai": "khoi-nghia",
+      "mo_ta": "Hưởng ứng Chiếu Cần Vương, Cầm Bá Thước cùng Tống Duy Tân dựng căn cứ Trịnh Vạn (Thường Xuân, Thanh Hoá), nhiều lần phục kích tiêu diệt lính Pháp đi càn.",
+      "lon": 105.3465072,
+      "lat": 19.903584,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "Báo Quân đội nhân dân — Thủ lĩnh nghĩa quân Hùng Lĩnh — http://sknc.qdnd.vn/chuyen-xua-nay/thu-linh-nghia-quan-hung-linh-503006"
+      ]
+    },
+    {
+      "id": "khoi-nghia-huong-khe-1885",
+      "nam": 1885,
+      "nam_hien_thi": "1885–1896",
+      "ten": "Khởi nghĩa Hương Khê",
+      "loai": "khoi-nghia",
+      "mo_ta": "Phan Đình Phùng cùng Cao Thắng lập căn cứ Ngàn Trươi – Vũ Quang, tổ chức khởi nghĩa Cần Vương quy mô và bền bỉ nhất, tự chế được súng trường kiểu Pháp, cầm cự suốt 10 năm.",
+      "lon": 105.6793,
+      "lat": 18.1927,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Tĩnh",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học, khởi nghĩa Hương Khê"
+      ]
+    },
+    {
+      "id": "tran-kinh-thanh-hue-that-thu-1885",
+      "nam": 1885,
+      "nam_hien_thi": "4–5/7/1885",
+      "ten": "Kinh thành Huế thất thủ",
+      "loai": "tran-danh",
+      "mo_ta": "Tôn Thất Thuyết tập kích Toà Khâm sứ Pháp nhưng thất bại; Tôn Thất Thuyết đưa vua Hàm Nghi ra sơn phòng Tân Sở, 8 ngày sau ban Chiếu Cần Vương, mở đầu phong trào kháng Pháp có tổ chức.",
+      "lon": 107.5778,
+      "lat": 16.4698,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Huế",
+      "nguon": [
+        "Cổng TTĐT tỉnh Thừa Thiên Huế — Thừa Thiên Huế đấu tranh chống thực dân Pháp (1885–1916)"
+      ]
+    },
+    {
+      "id": "khoi-nghia-ba-dinh-1886",
+      "nam": 1886,
+      "nam_hien_thi": "1886–1887",
+      "ten": "Khởi nghĩa Ba Đình",
+      "loai": "khoi-nghia",
+      "mo_ta": "Đinh Công Tráng và Phạm Bành xây căn cứ phòng thủ kiên cố giữa ba làng tại Nga Sơn (Thanh Hoá), kháng cự quyết liệt các đợt tấn công của Pháp — biểu tượng tiêu biểu của phong trào Cần Vương.",
+      "lon": 105.9657,
+      "lat": 20.0089,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thanh Hoá",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học, khởi nghĩa Ba Đình"
+      ]
+    },
+    {
       "id": "tac-pham-truyen-thay-lazaro-phien-1887",
       "nam": 1887,
       "nam_hien_thi": "1887",
@@ -714,6 +1832,17 @@
       ]
     },
     {
+      "id": "su-kien-dong-du-1904",
+      "nam": 1904,
+      "nam_hien_thi": "1904–1909",
+      "ten": "Phong trào Đông Du",
+      "loai": "su-kien",
+      "mo_ta": "Phan Bội Châu khởi xướng phong trào Đông Du, đưa thanh niên yêu nước sang Nhật Bản du học nhằm chuẩn bị lực lượng chống Pháp.",
+      "nguon": [
+        "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
       "id": "tac-pham-viet-nam-vong-quoc-su-1905",
       "nam": 1905,
       "nam_hien_thi": "1905",
@@ -724,6 +1853,21 @@
       "tinh_34": "",
       "nguon": [
         "Báo Nhân Dân — Phan Bội Châu - nhà yêu nước lớn đầu thế kỷ 20 — https://nhandan.vn/phan-boi-chau---nha-yeu-nuoc-lon-dau-the-ky-20-post594182.html"
+      ]
+    },
+    {
+      "id": "su-kien-dong-kinh-nghia-thuc-1907",
+      "nam": 1907,
+      "nam_hien_thi": "1907",
+      "ten": "Thành lập Đông Kinh Nghĩa Thục",
+      "loai": "su-kien",
+      "mo_ta": "Các sĩ phu duy tân lập trường Đông Kinh Nghĩa Thục tại Hà Nội, dạy chữ Quốc ngữ và tân học, truyền bá tư tưởng duy tân, dù chỉ tồn tại chưa đầy một năm trước khi bị Pháp đóng cửa.",
+      "lon": 105.8497,
+      "lat": 21.0333,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
       ]
     },
     {
@@ -742,6 +1886,102 @@
       ]
     },
     {
+      "id": "su-kien-chong-thue-trung-ky-1908",
+      "nam": 1908,
+      "nam_hien_thi": "3–4/1908",
+      "ten": "Phong trào chống thuế Trung Kỳ",
+      "loai": "su-kien",
+      "mo_ta": "Phong trào chống sưu cao thuế nặng bùng phát từ Quảng Nam rồi lan khắp Trung Kỳ; hàng nghìn nông dân kéo về bao vây Toà Khâm sứ Pháp tại Huế, bị đàn áp mạnh tay.",
+      "lon": 107.5909,
+      "lat": 16.4637,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Huế",
+      "nguon": [
+        "Trung tâm Lưu trữ Quốc gia IV — Phong trào chống thuế tại Huế năm 1908"
+      ]
+    },
+    {
+      "id": "su-kien-viet-nam-quang-phuc-hoi-1912",
+      "nam": 1912,
+      "nam_hien_thi": "1912",
+      "ten": "Thành lập Việt Nam Quang phục Hội",
+      "loai": "su-kien",
+      "mo_ta": "Phan Bội Châu cải tổ Duy Tân Hội thành Việt Nam Quang phục Hội tại Quảng Châu, chủ trương dùng bạo động vũ trang đánh đuổi Pháp.",
+      "nguon": [
+        "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "khoi-nghia-duy-tan-1916",
+      "nam": 1916,
+      "nam_hien_thi": "1916",
+      "ten": "Khởi nghĩa Duy Tân",
+      "loai": "khoi-nghia",
+      "mo_ta": "Vua Duy Tân cùng Trần Cao Vân, Thái Phiên bí mật tổ chức khởi nghĩa vũ trang chống Pháp trên toàn Trung Kỳ; kế hoạch bại lộ, vua bị đày sang đảo Réunion.",
+      "lon": 108.2208,
+      "lat": 16.0544,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Đà Nẵng",
+      "nguon": [
+        "scov.gov.vn — chuỗi Tóm tắt biên niên sử Việt Nam, giai đoạn nhà Nguyễn"
+      ]
+    },
+    {
+      "id": "khoi-nghia-thai-nguyen-1917",
+      "nam": 1917,
+      "nam_hien_thi": "1917",
+      "ten": "Khởi nghĩa Thái Nguyên",
+      "loai": "khoi-nghia",
+      "mo_ta": "Trịnh Văn Cấn (Đội Cấn) cùng Lương Ngọc Quyến lãnh đạo binh lính khố xanh nổi dậy chiếm tỉnh lỵ Thái Nguyên, tuyên bố độc lập trong thời gian ngắn trước khi bị Pháp dập tắt.",
+      "lon": 105.8252,
+      "lat": 21.5928,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thái Nguyên",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học, khởi nghĩa Thái Nguyên 1917"
+      ]
+    },
+    {
+      "id": "tac-pham-nam-phong-tap-chi-1917",
+      "nam": 1917,
+      "nam_hien_thi": "1917",
+      "ten": "Nam Phong tạp chí ra đời",
+      "loai": "tac-pham",
+      "mo_ta": "Tạp chí do Phạm Quỳnh làm chủ bút, xuất bản 1917–1934, có vai trò lớn trong truyền bá chữ Quốc ngữ và tư tưởng học thuật Đông – Tây.",
+      "lon": 105.8497,
+      "lat": 21.0333,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "SGK Lịch sử 8 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "tac-pham-viet-nam-su-luoc-1919",
+      "nam": 1919,
+      "nam_hien_thi": "viết 1919, in lần đầu 1921",
+      "ten": "Việt Nam sử lược (Trần Trọng Kim)",
+      "loai": "tac-pham",
+      "mo_ta": "Bộ sử đầu tiên viết bằng chữ Quốc ngữ theo lối hành văn mới, chép từ họ Hồng Bàng tới thời Pháp thuộc, từng là sách sử phổ thông chuẩn nhiều thập niên.",
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "",
+      "nguon": [
+        "scov.gov.vn — Lời tựa 'Việt Nam sử lược' — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/loi-tua-viet-nam-su-luoc-.html"
+      ],
+      "ghi_chu": "Một số tài liệu phổ biến ghi năm xuất bản 1920; scov.gov.vn (nguồn đã dùng cho nien-hieu.json trong dự án) ghi rõ 'viết năm 1919, in lần đầu năm 1921' — dùng theo scov.gov.vn, nêu chênh lệch."
+    },
+    {
+      "id": "tac-pham-ban-an-che-do-thuc-dan-phap-1925",
+      "nam": 1925,
+      "nam_hien_thi": "1925",
+      "ten": "Bản án chế độ thực dân Pháp (Nguyễn Ái Quốc)",
+      "loai": "tac-pham",
+      "mo_ta": "Nguyễn Ái Quốc viết bằng tiếng Pháp, xuất bản tại Paris, tố cáo hệ thống bóc lột thuộc địa của thực dân Pháp trên toàn Đông Dương.",
+      "nguon": [
+        "Bảo tàng Hồ Chí Minh — baotanghochiminh.vn"
+      ]
+    },
+    {
       "id": "tac-pham-to-tam-1925",
       "nam": 1925,
       "nam_hien_thi": "1925 (viết xong 1922)",
@@ -752,6 +1992,32 @@
       "tinh_34": "",
       "nguon": [
         "SGK Ngữ văn 11 - Bộ GD&ĐT"
+      ]
+    },
+    {
+      "id": "tac-pham-duong-kach-menh-1927",
+      "nam": 1927,
+      "nam_hien_thi": "1927",
+      "ten": "Đường Kách mệnh (Nguyễn Ái Quốc)",
+      "loai": "tac-pham",
+      "mo_ta": "Tập hợp các bài giảng của Nguyễn Ái Quốc tại các lớp huấn luyện chính trị ở Quảng Châu, xuất bản thành sách, đặt nền tảng lý luận cho cách mạng Việt Nam.",
+      "nguon": [
+        "Bảo tàng Hồ Chí Minh — baotanghochiminh.vn"
+      ]
+    },
+    {
+      "id": "khoi-nghia-yen-bai-1930",
+      "nam": 1930,
+      "nam_hien_thi": "9–10/2/1930",
+      "ten": "Khởi nghĩa Yên Bái",
+      "loai": "khoi-nghia",
+      "mo_ta": "Việt Nam Quốc dân Đảng do Nguyễn Thái Học lãnh đạo đánh đồn binh Pháp tại Yên Bái; thất bại, Nguyễn Thái Học cùng 12 đồng chí bị xử chém.",
+      "lon": 104.8935896,
+      "lat": 21.721899,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Lào Cai",
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
       ]
     },
     {
@@ -781,6 +2047,51 @@
       ]
     },
     {
+      "id": "khoi-nghia-bac-son-1940",
+      "nam": 1940,
+      "nam_hien_thi": "27/9/1940",
+      "ten": "Khởi nghĩa Bắc Sơn",
+      "loai": "khoi-nghia",
+      "mo_ta": "Nhân dân Bắc Sơn (Lạng Sơn) nổi dậy khi quân Pháp thua chạy trước phát xít Nhật, lập chính quyền cách mạng và đội du kích Bắc Sơn — tiền thân lực lượng vũ trang cách mạng.",
+      "lon": 106.3167,
+      "lat": 21.8333,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Lạng Sơn",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học, khởi nghĩa Bắc Sơn"
+      ]
+    },
+    {
+      "id": "khoi-nghia-nam-ky-1940",
+      "nam": 1940,
+      "nam_hien_thi": "23/11/1940",
+      "ten": "Nam Kỳ khởi nghĩa",
+      "loai": "khoi-nghia",
+      "mo_ta": "Xứ uỷ Nam Kỳ phát động khởi nghĩa vũ trang trên diện rộng chống Pháp – Nhật; lá cờ đỏ sao vàng xuất hiện lần đầu trong khởi nghĩa này.",
+      "lon": 106.6297,
+      "lat": 10.8231,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "TP HCM",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học, Nam Kỳ khởi nghĩa 1940"
+      ]
+    },
+    {
+      "id": "binh-bien-do-luong-1941",
+      "nam": 1941,
+      "nam_hien_thi": "13/1/1941",
+      "ten": "Binh biến Đô Lương",
+      "loai": "khoi-nghia",
+      "mo_ta": "Đội Cung (Nguyễn Văn Cung) chỉ huy binh lính đồn Chợ Rạng – Đô Lương nổi dậy chống Pháp, hưởng ứng làn sóng khởi nghĩa Bắc Sơn – Nam Kỳ.",
+      "lon": 105.3,
+      "lat": 18.9,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Nghệ An",
+      "nguon": [
+        "Báo Quân đội nhân dân — Binh biến Đô Lương"
+      ]
+    },
+    {
       "id": "tac-pham-chi-pheo-1941",
       "nam": 1941,
       "nam_hien_thi": "1941",
@@ -794,84 +2105,27 @@
       ]
     },
     {
-      "id": "tac-pham-dai-viet-thong-su-1749",
-      "nam": 1749,
-      "nam_hien_thi": "1749–1753",
-      "ten": "Đại Việt thông sử (Lê Quý Đôn)",
+      "id": "tac-pham-lich-su-nuoc-ta-1942",
+      "nam": 1942,
+      "nam_hien_thi": "1942",
+      "ten": "Lịch sử nước ta (Hồ Chí Minh)",
       "loai": "tac-pham",
-      "mo_ta": "Lê Quý Đôn soạn bộ thông sử 30 quyển theo lối kỷ truyện, chép sử từ thời Lê Thái Tổ, một trong các bộ sử tư nhân giá trị nhất thời phong kiến.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "",
+      "mo_ta": "Diễn ca lịch sử bằng thơ lục bát do Nguyễn Ái Quốc soạn để tuyên truyền, giáo dục cán bộ Việt Minh về lịch sử dân tộc.",
+      "tinh_34": "Cao Bằng",
+      "can_tra_them": "Chưa xác định được nguồn cổng nhà nước ghi rõ tháng xuất bản.",
       "nguon": [
-        "Thư viện Quốc gia Việt Nam — mục lục Đại Việt thông sử — https://opac.nlv.gov.vn/chi-tiet-tai-lieu/dai-viet-thong-su-20255930170518142931"
+        "Bảo tàng Hồ Chí Minh — baotanghochiminh.vn"
       ]
     },
     {
-      "id": "tac-pham-kien-van-tieu-luc-1777",
-      "nam": 1777,
-      "nam_hien_thi": "1777",
-      "ten": "Kiến văn tiểu lục (Lê Quý Đôn)",
+      "id": "tac-pham-nhat-ky-trong-tu-1942",
+      "nam": 1942,
+      "nam_hien_thi": "29/8/1942–10/9/1943",
+      "ten": "Nhật ký trong tù (Hồ Chí Minh)",
       "loai": "tac-pham",
-      "mo_ta": "Lê Quý Đôn ghi chép kiến thức nhiều lĩnh vực (chính trị, giáo dục, pháp luật, khoa cử, thơ văn) từ thời Trần đến Lê, soạn khi ông coi việc dạy học ở Quốc Tử Giám.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "",
+      "mo_ta": "Tập thơ chữ Hán Hồ Chí Minh viết trong thời gian bị chính quyền Tưởng Giới Thạch giam giữ ở Quảng Tây, Trung Quốc; hiện là Bảo vật quốc gia lưu tại Bảo tàng Lịch sử Quốc gia.",
       "nguon": [
-        "SGK Lịch sử 10 - Bộ GD&ĐT"
-      ]
-    },
-    {
-      "id": "tac-pham-van-dai-loai-ngu-1773",
-      "nam": 1773,
-      "nam_hien_thi": "1773",
-      "ten": "Vân đài loại ngữ (Lê Quý Đôn)",
-      "loai": "tac-pham",
-      "mo_ta": "Bộ bách khoa thư 4 quyển, 9 mục của Lê Quý Đôn, tổng hợp kiến thức triết học, khoa học, văn học đương thời.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "",
-      "nguon": [
-        "SGK Lịch sử 10 - Bộ GD&ĐT"
-      ]
-    },
-    {
-      "id": "tac-pham-viet-nam-su-luoc-1919",
-      "nam": 1919,
-      "nam_hien_thi": "viết 1919, in lần đầu 1921",
-      "ten": "Việt Nam sử lược (Trần Trọng Kim)",
-      "loai": "tac-pham",
-      "mo_ta": "Bộ sử đầu tiên viết bằng chữ Quốc ngữ theo lối hành văn mới, chép từ họ Hồng Bàng tới thời Pháp thuộc, từng là sách sử phổ thông chuẩn nhiều thập niên.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "",
-      "nguon": [
-        "scov.gov.vn — Lời tựa 'Việt Nam sử lược' — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/loi-tua-viet-nam-su-luoc-.html"
-      ],
-      "ghi_chu": "Một số tài liệu phổ biến ghi năm xuất bản 1920; scov.gov.vn (nguồn đã dùng cho nien-hieu.json trong dự án) ghi rõ 'viết năm 1919, in lần đầu năm 1921' — dùng theo scov.gov.vn, nêu chênh lệch."
-    },
-    {
-      "id": "tac-pham-o-chau-can-luc-1553",
-      "nam": 1553,
-      "nam_hien_thi": "soạn 1553, tu chỉnh in 1555",
-      "ten": "Ô châu cận lục (Dương Văn An)",
-      "loai": "tac-pham",
-      "mo_ta": "Địa phương chí cổ nhất còn lại của Việt Nam, ghi chép núi sông, thành trì, phong tục, nhân vật vùng Thuận – Quảng (nay Quảng Bình đến Quảng Nam) thời Mạc.",
-      "do_tin_cay_toa_do": "thap",
-      "tinh_34": "Quảng Trị",
-      "nguon": [
-        "Ban Nội chính Tỉnh uỷ Quảng Bình (nay thuộc Quảng Trị) — https://noichinh.quangbinh.gov.vn/3cms/Ban-in-507.htm?art=1739844925087"
-      ]
-    },
-    {
-      "id": "tac-pham-nam-phong-tap-chi-1917",
-      "nam": 1917,
-      "nam_hien_thi": "1917",
-      "ten": "Nam Phong tạp chí ra đời",
-      "loai": "tac-pham",
-      "mo_ta": "Tạp chí do Phạm Quỳnh làm chủ bút, xuất bản 1917–1934, có vai trò lớn trong truyền bá chữ Quốc ngữ và tư tưởng học thuật Đông – Tây.",
-      "lon": 105.8497,
-      "lat": 21.0333,
-      "do_tin_cay_toa_do": "trung",
-      "tinh_34": "Hà Nội",
-      "nguon": [
-        "SGK Lịch sử 8 - Bộ GD&ĐT"
+        "Sở Nội vụ TP HCM — Nhật ký trong tù — https://sonoivu.hochiminhcity.gov.vn/documents/20197/109501/Nhat+Ky+Trong+Tu.pdf/fdc56a56-16d4-4e9b-b05a-253d28a1f255"
       ]
     },
     {
@@ -886,6 +2140,237 @@
       "nguon": [
         "SGK Ngữ văn 11 - Bộ GD&ĐT"
       ]
+    },
+    {
+      "id": "nha-nguyen-ket-thuc-1945",
+      "nam": 1945,
+      "nam_hien_thi": "25/8/1945",
+      "ten": "Vua Bảo Đại thoái vị, nhà Nguyễn kết thúc",
+      "loai": "trieu-dai",
+      "mo_ta": "Bảo Đại tuyên bố thoái vị tại Huế, chấm dứt chế độ quân chủ hơn 1.000 năm ở Việt Nam, trao ấn kiếm cho chính quyền Cách mạng.",
+      "lon": 107.5772,
+      "lat": 16.4698,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Huế",
+      "nguon": [
+        "Báo Thanh Hóa điện tử — Ngày này năm xưa 8/1: Bảo Đại lên ngôi — https://vhds.baothanhhoa.vn/ngay-nay-nam-xua-8-1-bao-dai-len-ngoi-tro-thanh-vi-vua-cuoi-cung-cua-nha-nguyen-41224.htm",
+        "Cổng TTĐT Chính phủ - chinhphu.vn"
+      ]
+    },
+    {
+      "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+      "nam": 1945,
+      "nam_hien_thi": "2/9/1945",
+      "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)",
+      "loai": "tac-pham",
+      "mo_ta": "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, khai sinh nước Việt Nam Dân chủ Cộng hoà.",
+      "lon": 105.8342,
+      "lat": 21.0278,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Bảo tàng Hồ Chí Minh — baotanghochiminh.vn",
+        "Cổng TTĐT Chính phủ — chinhphu.vn"
+      ]
+    },
+    {
+      "id": "khang-chien-chong-phap-toan-quoc-1946",
+      "nam": 1946,
+      "nam_hien_thi": "19/12/1946–1954",
+      "ten": "Toàn quốc kháng chiến chống thực dân Pháp",
+      "loai": "khang-chien",
+      "mo_ta": "Chủ tịch Hồ Chí Minh ra Lời kêu gọi toàn quốc kháng chiến, mở đầu 9 năm kháng chiến trường kỳ, kết thúc bằng chiến thắng Điện Biên Phủ và Hiệp định Genève 1954.",
+      "lon": 105.8342,
+      "lat": 21.0278,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Báo Nhân Dân — nhandan.vn",
+        "Cổng TTĐT Chính phủ — chinhphu.vn"
+      ]
+    },
+    {
+      "id": "chien-dich-bien-gioi-thu-dong-1950",
+      "nam": 1950,
+      "nam_hien_thi": "1950",
+      "ten": "Chiến dịch Biên giới Thu Đông 1950",
+      "loai": "tran-danh",
+      "mo_ta": "Quân đội nhân dân Việt Nam khai thông biên giới Việt – Trung, phá thế bao vây cô lập của thực dân Pháp — chiến dịch quy mô lớn đầu tiên do ta chủ động tiến công.",
+      "lon": 106.2522,
+      "lat": 22.6657,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Cao Bằng",
+      "nguon": [
+        "Báo Quân đội nhân dân — qdnd.vn",
+        "Cổng TTĐT Chính phủ — chinhphu.vn"
+      ]
+    },
+    {
+      "id": "chien-dich-dien-bien-phu-1954",
+      "nam": 1954,
+      "nam_hien_thi": "1954",
+      "ten": "Chiến dịch Điện Biên Phủ",
+      "loai": "tran-danh",
+      "mo_ta": "Đại tướng Võ Nguyên Giáp chỉ huy tiêu diệt tập đoàn cứ điểm Điện Biên Phủ — «lừng lẫy năm châu, chấn động địa cầu» — kết thúc kháng chiến chống Pháp, dẫn tới Hiệp định Genève.",
+      "lon": 103.0176,
+      "lat": 21.3831,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Điện Biên",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học",
+        "Cục Di sản văn hoá — Chiến trường Điện Biên Phủ, di tích quốc gia đặc biệt"
+      ]
+    },
+    {
+      "id": "khang-chien-chong-my-1954-1975",
+      "nam": 1954,
+      "nam_hien_thi": "1954–1975",
+      "ten": "Kháng chiến chống Mỹ, cứu nước",
+      "loai": "khang-chien",
+      "mo_ta": "21 năm kháng chiến từ sau Hiệp định Genève tới Chiến dịch Hồ Chí Minh toàn thắng (30/4/1975), giải phóng hoàn toàn miền Nam, thống nhất đất nước.",
+      "lon": 106.6955,
+      "lat": 10.777,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "TP HCM",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học",
+        "Cổng TTĐT Chính phủ — chinhphu.vn"
+      ]
+    },
+    {
+      "id": "su-kien-hiep-dinh-geneve-1954",
+      "nam": 1954,
+      "nam_hien_thi": "20/7/1954",
+      "ten": "Hiệp định Genève",
+      "loai": "su-kien",
+      "mo_ta": "Hiệp định Genève được ký, công nhận độc lập, chủ quyền Việt Nam; đất nước tạm chia hai miền ở vĩ tuyến 17 chờ tổng tuyển cử thống nhất, kết thúc kháng chiến chống Pháp.",
+      "nguon": [
+        "Bộ Ngoại giao Việt Nam — mofa.gov.vn"
+      ]
+    },
+    {
+      "id": "dien-bien-phu-tren-khong-1972",
+      "nam": 1972,
+      "nam_hien_thi": "12 ngày đêm cuối 1972",
+      "ten": "Chiến thắng «Điện Biên Phủ trên không»",
+      "loai": "tran-danh",
+      "mo_ta": "12 ngày đêm quân dân Hà Nội bắn rơi hàng loạt «pháo đài bay» B-52 của Mỹ, buộc Mỹ ký Hiệp định Paris 1973.",
+      "lon": 105.827,
+      "lat": 21.038,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học",
+        "Bảo tàng Chiến thắng B-52, Hà Nội"
+      ]
+    },
+    {
+      "id": "su-kien-hiep-dinh-paris-1973",
+      "nam": 1973,
+      "nam_hien_thi": "27/1/1973",
+      "ten": "Hiệp định Paris",
+      "loai": "su-kien",
+      "mo_ta": "Hiệp định Paris về chấm dứt chiến tranh, lập lại hoà bình ở Việt Nam được ký kết, Hoa Kỳ cam kết rút hết quân khỏi miền Nam.",
+      "nguon": [
+        "Bộ Ngoại giao Việt Nam — mofa.gov.vn"
+      ]
+    },
+    {
+      "id": "hai-chien-hoang-sa-1974",
+      "nam": 1974,
+      "nam_hien_thi": "19/1/1974",
+      "ten": "Hải chiến Hoàng Sa",
+      "loai": "tran-danh",
+      "mo_ta": "Trung Quốc dùng vũ lực đánh chiếm trái phép quần đảo Hoàng Sa. Việt Nam có đầy đủ cơ sở pháp lý và bằng chứng lịch sử khẳng định chủ quyền của mình đối với quần đảo Hoàng Sa; việc chiếm đóng bằng vũ lực không tạo ra chủ quyền theo luật pháp quốc tế.",
+      "lon": 112,
+      "lat": 16.5,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Đà Nẵng",
+      "ghi_chu": "MỤC NHẠY CẢM — cần soát §9 trước khi chuyển khỏi trạng thái draft. Bám sát cách trình bày của Uỷ ban Biên giới quốc gia và Bộ Ngoại giao.",
+      "nguon": [
+        "Uỷ ban Biên giới quốc gia — boundary.gov.vn",
+        "Báo Nhân Dân — nhandan.vn"
+      ]
+    },
+    {
+      "id": "chien-dich-buon-ma-thuot-1975",
+      "nam": 1975,
+      "nam_hien_thi": "3/1975",
+      "ten": "Chiến dịch Buôn Ma Thuột",
+      "loai": "tran-danh",
+      "mo_ta": "Đòn «điểm huyệt» bất ngờ mở màn Tổng tiến công và nổi dậy mùa Xuân 1975, làm sụp đổ toàn bộ tuyến phòng thủ Tây Nguyên của quân đội Sài Gòn.",
+      "lon": 108.0446684,
+      "lat": 12.6797024,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Đắk Lắk",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học, Tổng tiến công và nổi dậy mùa Xuân 1975"
+      ]
+    },
+    {
+      "id": "chien-dich-giai-phong-truong-sa-1975",
+      "nam": 1975,
+      "nam_hien_thi": "4/1975",
+      "ten": "Chiến dịch giải phóng quần đảo Trường Sa",
+      "loai": "tran-danh",
+      "mo_ta": "Quân chủng Hải quân phối hợp giải phóng các đảo thuộc quần đảo Trường Sa, hoàn thành trước 30/4/1975 — góp phần khẳng định chủ quyền liên tục của Việt Nam.",
+      "lon": 114.35,
+      "lat": 10.38,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Khánh Hòa",
+      "nguon": [
+        "Báo Hải quân Việt Nam — baohaiquanvietnam.vn"
+      ]
+    },
+    {
+      "id": "chien-dich-ho-chi-minh-1975",
+      "nam": 1975,
+      "nam_hien_thi": "30/4/1975",
+      "ten": "Chiến dịch Hồ Chí Minh",
+      "loai": "tran-danh",
+      "mo_ta": "Xe tăng tiến vào Dinh Độc Lập trưa 30/4/1975, kết thúc thắng lợi cuộc kháng chiến chống Mỹ, thống nhất đất nước.",
+      "lon": 106.6955,
+      "lat": 10.777,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "TP HCM",
+      "nguon": [
+        "Lịch sử Việt Nam — Viện Sử học",
+        "Cục Di sản văn hoá — Dinh Độc Lập, di tích quốc gia đặc biệt"
+      ]
+    },
+    {
+      "id": "khang-chien-bien-gioi-phia-bac-1979",
+      "nam": 1979,
+      "nam_hien_thi": "2–3/1979",
+      "ten": "Chiến tranh bảo vệ biên giới phía Bắc",
+      "loai": "khang-chien",
+      "mo_ta": "Quân và dân các tỉnh biên giới phía Bắc chiến đấu bảo vệ chủ quyền lãnh thổ trên toàn tuyến biên giới trước cuộc tấn công quy mô lớn.",
+      "lon": 106.7167,
+      "lat": 21.85,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Lạng Sơn",
+      "nguon": [
+        "Báo Quân đội nhân dân — qdnd.vn",
+        "Báo Nhân Dân — nhandan.vn"
+      ]
+    },
+    {
+      "id": "su-kien-gac-ma-1988",
+      "nam": 1988,
+      "nam_hien_thi": "14/3/1988",
+      "ten": "Sự kiện Gạc Ma",
+      "loai": "tran-danh",
+      "mo_ta": "Trung Quốc dùng vũ lực đánh chiếm một số bãi đá thuộc quần đảo Trường Sa của Việt Nam; 64 chiến sĩ Hải quân nhân dân Việt Nam hy sinh khi bảo vệ chủ quyền.",
+      "lon": 114.2833,
+      "lat": 9.7147,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Khánh Hòa",
+      "ghi_chu": "MỤC NHẠY CẢM — cần soát §9 trước khi chuyển khỏi trạng thái draft.",
+      "nguon": [
+        "Báo Quân đội nhân dân — qdnd.vn",
+        "Uỷ ban Biên giới quốc gia — boundary.gov.vn"
+      ]
     }
-  ]
+  ],
+  "ngay_cap_nhat": "2026-08-05"
 }

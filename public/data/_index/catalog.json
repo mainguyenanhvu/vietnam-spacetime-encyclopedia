@@ -1,8 +1,8 @@
 {
   "tong": {
     "so_file": 104,
-    "so_muc": 4838,
-    "so_byte": 8743517,
+    "so_muc": 4938,
+    "so_byte": 8813402,
     "ngay_sinh": "2026-08-05"
   },
   "files": [
@@ -2602,8 +2602,8 @@
     {
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "so_muc": 62,
-      "byte": 42742,
+      "so_muc": 162,
+      "byte": 112627,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2615,14 +2615,14 @@
         "ten",
         "loai",
         "mo_ta",
-        "do_tin_cay_toa_do",
-        "tinh_34",
         "nguon",
+        "tinh_34",
+        "do_tin_cay_toa_do",
         "lon",
         "lat"
       ],
-      "sha256": "f99d01a377296ee0d94cc8108f17b77d40af818eef08a6a8e7f71ca6131f277a",
-      "mo_ta": "Mốc lịch sử để đính lên dòng thời gian: khi kéo thanh trượt, mốc gần nhất hiện ra dưới dạng note nhỏ phía trên thanh."
+      "sha256": "68f2134dbe50e54cdc01a429e9a082a4ce711d18a5ef34a44c38946ab9593eb2",
+      "mo_ta": "Mốc lịch sử đính lên thanh thời gian: kéo thanh trượt thì mốc của thời kỳ đó hiện ra dưới dạng note nhỏ phía trên thanh (src/moc-lich-su.ts)."
     },
     {
       "file": "timeline/nien-hieu.json",

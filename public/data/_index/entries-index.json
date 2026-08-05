@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 4838,
-    "tong_co_toa_do": 2442,
-    "so_nhom_trung_ten": 588,
-    "so_cap_trung_toa_do": 486,
+    "tong_muc": 4938,
+    "tong_co_toa_do": 2524,
+    "so_nhom_trung_ten": 609,
+    "so_cap_trung_toa_do": 647,
     "ngay_sinh": "2026-08-05"
   },
   "entries": [
@@ -60198,6 +60198,45 @@
       "trang_thai": null
     },
     {
+      "id": "khoi-nghia-hai-ba-trung-40",
+      "slug": null,
+      "ten": "Khởi nghĩa Hai Bà Trưng",
+      "ten_chuan": "khoi nghia hai ba trung",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.125906,
+      "lon": 105.6181623,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-ba-trieu-248",
+      "slug": null,
+      "ten": "Khởi nghĩa Bà Triệu",
+      "ten_chuan": "khoi nghia ba trieu",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 19.9146386,
+      "lon": 105.884504,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-ly-bi-542",
+      "slug": null,
+      "ten": "Khởi nghĩa Lý Bí, lập nước Vạn Xuân",
+      "ten_chuan": "khoi nghia ly bi lap nuoc van xuan",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.0385395,
+      "lon": 106.0780904,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
       "id": "van-xuan-ket-thuc-602",
       "slug": null,
       "ten": "Nhà Tùy diệt nước Vạn Xuân, Lý Phật Tử hàng",
@@ -60211,6 +60250,110 @@
       "trang_thai": null
     },
     {
+      "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
+      "slug": null,
+      "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến",
+      "ten_chuan": "khoi nghia ly tu tien dinh kien",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.03,
+      "lon": 105.85,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-mai-thuc-loan-713",
+      "slug": null,
+      "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)",
+      "ten_chuan": "khoi nghia mai thuc loan hoan chau",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 18.6727977,
+      "lon": 105.5225448,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-phung-hung-766",
+      "slug": null,
+      "ten": "Khởi nghĩa Phùng Hưng",
+      "ten_chuan": "khoi nghia phung hung",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.128,
+      "lon": 105.508,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-duong-thanh-819",
+      "slug": null,
+      "ten": "Khởi nghĩa Dương Thanh",
+      "ten_chuan": "khoi nghia duong thanh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.03,
+      "lon": 105.85,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khuc-thua-du-tu-chu-905",
+      "slug": null,
+      "ten": "Khúc Thừa Dụ giành quyền tự chủ",
+      "ten_chuan": "khuc thua du gianh quyen tu chu",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 20.7307484,
+      "lon": 106.4026274,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+      "slug": null,
+      "ten": "Dương Đình Nghệ đánh bại Nam Hán, khôi phục tự chủ",
+      "ten_chuan": "duong dinh nghe danh bai nam han khoi phuc tu chu",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 19.8676558,
+      "lon": 105.771151,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-bach-dang-938",
+      "slug": null,
+      "ten": "Trận Bạch Đằng 938",
+      "ten_chuan": "tran bach dang 938",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 20.9215,
+      "lon": 106.7897,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-ngo-bat-dau-939",
+      "slug": null,
+      "ten": "Ngô Quyền xưng vương, lập nhà Ngô",
+      "ten_chuan": "ngo quyen xung vuong lap nha ngo",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0997,
+      "lon": 105.8534,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
       "id": "nha-ngo-ket-thuc-965",
       "slug": null,
       "ten": "Nhà Ngô kết thúc, mở đầu Loạn 12 sứ quân",
@@ -60220,6 +60363,32 @@
       "loai": "trieu-dai",
       "lat": 21.103,
       "lon": 105.8715,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-loan-12-su-quan-965",
+      "slug": null,
+      "ten": "Loạn 12 sứ quân",
+      "ten_chuan": "loan 12 su quan",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-dinh-bat-dau-968",
+      "slug": null,
+      "ten": "Đinh Bộ Lĩnh dẹp loạn 12 sứ quân, lập nước Đại Cồ Việt",
+      "ten_chuan": "dinh bo linh dep loan 12 su quan lap nuoc dai co viet",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 20.2668,
+      "lon": 105.9012,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -60250,6 +60419,45 @@
       "trang_thai": null
     },
     {
+      "id": "khang-chien-chong-tong-lan-1-981",
+      "slug": null,
+      "ten": "Kháng chiến chống Tống lần thứ nhất",
+      "ten_chuan": "khang chien chong tong lan thu nhat",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 20.935,
+      "lon": 106.785,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-bach-dang-981",
+      "slug": null,
+      "ten": "Trận Bạch Đằng 981",
+      "ten_chuan": "tran bach dang 981",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 20.935,
+      "lon": 106.785,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-ly-bat-dau-1009",
+      "slug": null,
+      "ten": "Lý Công Uẩn lên ngôi, lập nhà Lý",
+      "ten_chuan": "ly cong uan len ngoi lap nha ly",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 20.2668,
+      "lon": 105.9012,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
       "id": "nha-tien-le-ket-thuc-1009",
       "slug": null,
       "ten": "Nhà Tiền Lê kết thúc",
@@ -60259,6 +60467,84 @@
       "loai": "trieu-dai",
       "lat": 20.2668,
       "lon": 105.9012,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-chieu-doi-do-1010",
+      "slug": null,
+      "ten": "Chiếu dời đô, lập kinh đô Thăng Long",
+      "ten_chuan": "chieu doi do lap kinh do thang long",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+      "slug": null,
+      "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành",
+      "ten_chuan": "ly thuong kiet nam chinh chiem thanh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 17.47,
+      "lon": 106.6,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-tong-lan-2-1075",
+      "slug": null,
+      "ten": "Kháng chiến chống Tống lần thứ hai",
+      "ten_chuan": "khang chien chong tong lan thu hai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 21.1744,
+      "lon": 105.9812,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-lap-quoc-tu-giam-1076",
+      "slug": null,
+      "ten": "Lập Quốc Tử Giám",
+      "ten_chuan": "lap quoc tu giam",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.0274,
+      "lon": 105.8355,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-nam-quoc-son-ha",
+      "slug": null,
+      "ten": "Nam quốc sơn hà («Thơ Thần»)",
+      "ten_chuan": "nam quoc son ha tho than",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-nhu-nguyet-1077",
+      "slug": null,
+      "ten": "Phòng tuyến Như Nguyệt",
+      "ten_chuan": "phong tuyen nhu nguyet",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 21.1744,
+      "lon": 105.9812,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -60276,10 +60562,10 @@
       "trang_thai": null
     },
     {
-      "id": "nha-tran-ket-thuc-1400",
+      "id": "nha-tran-bat-dau-1225",
       "slug": null,
-      "ten": "Nhà Trần kết thúc",
-      "ten_chuan": "nha tran ket thuc",
+      "ten": "Trần Cảnh lên ngôi, lập nhà Trần",
+      "ten_chuan": "tran canh len ngoi lap nha tran",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "trieu-dai",
@@ -60289,236 +60575,171 @@
       "trang_thai": null
     },
     {
-      "id": "nha-ho-ket-thuc-1407",
+      "id": "khang-chien-chong-nguyen-mong-lan-1-1258",
       "slug": null,
-      "ten": "Nhà Hồ kết thúc",
-      "ten_chuan": "nha ho ket thuc",
+      "ten": "Kháng chiến chống quân Nguyên Mông lần thứ nhất",
+      "ten_chuan": "khang chien chong quan nguyen mong lan thu nhat",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 19.9974,
-      "lon": 105.6113,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "nha-le-so-ket-thuc-1527",
-      "slug": null,
-      "ten": "Nhà Lê sơ kết thúc",
-      "ten_chuan": "nha le so ket thuc",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 21.0358,
-      "lon": 105.8402,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "nha-mac-mat-thang-long-1592",
-      "slug": null,
-      "ten": "Nhà Mạc mất Thăng Long",
-      "ten_chuan": "nha mac mat thang long",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 21.0358,
-      "lon": 105.8402,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "nha-mac-diet-cao-bang-1677",
-      "slug": null,
-      "ten": "Dư đảng nhà Mạc ở Cao Bằng bị diệt hẳn",
-      "ten_chuan": "du dang nha mac o cao bang bi diet han",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 22.6667,
-      "lon": 106.25,
+      "loai": "khang-chien",
+      "lat": 21.0456,
+      "lon": 105.8487,
       "so_nguon": 2,
       "trang_thai": null
     },
     {
-      "id": "chua-trinh-bat-dau-1545",
+      "id": "tran-dong-bo-dau-1258",
       "slug": null,
-      "ten": "Trịnh Kiểm — chúa Trịnh đầu tiên nắm quyền Đàng Ngoài",
-      "ten_chuan": "trinh kiem chua trinh dau tien nam quyen dang ngoai",
+      "ten": "Trận Đông Bộ Đầu",
+      "ten_chuan": "tran dong bo dau",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 20.0399,
-      "lon": 105.648,
+      "loai": "tran-danh",
+      "lat": 21.0456,
+      "lon": 105.8487,
       "so_nguon": 1,
       "trang_thai": null
     },
     {
-      "id": "chua-nguyen-ket-thuc-1777",
+      "id": "tac-pham-dai-viet-su-ky-1272",
       "slug": null,
-      "ten": "Chúa Nguyễn Đàng Trong kết thúc",
-      "ten_chuan": "chua nguyen dang trong ket thuc",
+      "ten": "Đại Việt sử ký (Lê Văn Hưu)",
+      "ten_chuan": "dai viet su ky le van huu",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "trieu-dai",
+      "loai": "tac-pham",
       "lat": null,
       "lon": null,
-      "so_nguon": 1,
+      "so_nguon": 2,
       "trang_thai": null
     },
     {
-      "id": "nha-tay-son-bat-dau-1778",
+      "id": "su-kien-hoi-nghi-dien-hong-1284",
       "slug": null,
-      "ten": "Nguyễn Nhạc xưng đế, lập nhà Tây Sơn",
-      "ten_chuan": "nguyen nhac xung de lap nha tay son",
+      "ten": "Hội nghị Diên Hồng",
+      "ten_chuan": "hoi nghi dien hong",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 13.9218,
-      "lon": 109.1067,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "nha-le-trung-hung-ket-thuc-1788",
-      "slug": null,
-      "ten": "Nhà Lê Trung Hưng kết thúc",
-      "ten_chuan": "nha le trung hung ket thuc",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "trieu-dai",
+      "loai": "su-kien",
       "lat": 21.0358,
       "lon": 105.8402,
       "so_nguon": 1,
       "trang_thai": null
     },
     {
-      "id": "nha-tay-son-ket-thuc-1802",
+      "id": "tac-pham-hich-tuong-si-1284",
       "slug": null,
-      "ten": "Nhà Tây Sơn kết thúc",
-      "ten_chuan": "nha tay son ket thuc",
+      "ten": "Hịch tướng sĩ (Trần Hưng Đạo)",
+      "ten_chuan": "hich tuong si tran hung dao",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 16.4698,
-      "lon": 107.5772,
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
       "so_nguon": 1,
       "trang_thai": null
     },
     {
-      "id": "nha-nguyen-ket-thuc-1945",
+      "id": "tac-pham-thuat-hoai",
       "slug": null,
-      "ten": "Vua Bảo Đại thoái vị, nhà Nguyễn kết thúc",
-      "ten_chuan": "vua bao dai thoai vi nha nguyen ket thuc",
+      "ten": "Thuật hoài / Tỏ lòng (Phạm Ngũ Lão)",
+      "ten_chuan": "thuat hoai to long pham ngu lao",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "trieu-dai",
-      "lat": 16.4698,
-      "lon": 107.5772,
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-nguyen-mong-lan-2-1285",
+      "slug": null,
+      "ten": "Kháng chiến chống quân Nguyên Mông lần thứ hai",
+      "ten_chuan": "khang chien chong quan nguyen mong lan thu hai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 20.8508,
+      "lon": 105.9422,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-ham-tu-chuong-duong-1285",
+      "slug": null,
+      "ten": "Trận Hàm Tử – Chương Dương",
+      "ten_chuan": "tran ham tu chuong duong",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 20.8508,
+      "lon": 105.9422,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-nguyen-mong-lan-3-1288",
+      "slug": null,
+      "ten": "Kháng chiến chống quân Nguyên Mông lần thứ ba",
+      "ten_chuan": "khang chien chong quan nguyen mong lan thu ba",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 20.9411,
+      "lon": 106.7922,
       "so_nguon": 2,
       "trang_thai": null
     },
     {
-      "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
+      "id": "tran-bach-dang-1288",
       "slug": null,
-      "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến",
-      "ten_chuan": "khoi nghia ly tu tien dinh kien",
+      "ten": "Trận Bạch Đằng 1288",
+      "ten_chuan": "tran bach dang 1288",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "khoi-nghia",
-      "lat": 21.03,
-      "lon": 105.85,
+      "loai": "tran-danh",
+      "lat": 20.9411,
+      "lon": 106.7922,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-van-don-1288",
+      "slug": null,
+      "ten": "Trận Vân Đồn",
+      "ten_chuan": "tran van don",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 20.93,
+      "lon": 107.715,
       "so_nguon": 1,
       "trang_thai": null
     },
     {
-      "id": "khoi-nghia-duong-thanh-819",
+      "id": "tac-pham-viet-dien-u-linh-1329",
       "slug": null,
-      "ten": "Khởi nghĩa Dương Thanh",
-      "ten_chuan": "khoi nghia duong thanh",
+      "ten": "Việt điện u linh tập",
+      "ten_chuan": "viet dien u linh tap",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "khoi-nghia",
-      "lat": 21.03,
-      "lon": 105.85,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "khoi-nghia-le-duy-mat-1738",
-      "slug": null,
-      "ten": "Khởi nghĩa Lê Duy Mật",
-      "ten_chuan": "khoi nghia le duy mat",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "khoi-nghia",
+      "loai": "tac-pham",
       "lat": null,
       "lon": null,
       "so_nguon": 1,
       "trang_thai": null
     },
     {
-      "id": "khoi-nghia-nguyen-danh-phuong-1740",
+      "id": "tac-pham-bach-dang-giang-phu",
       "slug": null,
-      "ten": "Khởi nghĩa Nguyễn Danh Phương",
-      "ten_chuan": "khoi nghia nguyen danh phuong",
+      "ten": "Bạch Đằng giang phú (Trương Hán Siêu)",
+      "ten_chuan": "bach dang giang phu truong han sieu",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "khoi-nghia",
-      "lat": 21.4589,
-      "lon": 105.6425,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "khoi-nghia-nguyen-huu-cau-1741",
-      "slug": null,
-      "ten": "Khởi nghĩa Nguyễn Hữu Cầu (quận He)",
-      "ten_chuan": "khoi nghia nguyen huu cau quan he",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "khoi-nghia",
-      "lat": 20.7298,
-      "lon": 106.7931,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "khoi-nghia-phan-ba-vanh-1821",
-      "slug": null,
-      "ten": "Khởi nghĩa Phan Bá Vành",
-      "ten_chuan": "khoi nghia phan ba vanh",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "khoi-nghia",
+      "loai": "tac-pham",
       "lat": null,
       "lon": null,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "khoi-nghia-nong-van-van-1833",
-      "slug": null,
-      "ten": "Khởi nghĩa Nông Văn Vân",
-      "ten_chuan": "khoi nghia nong van van",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "khoi-nghia",
-      "lat": null,
-      "lon": null,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "khoi-nghia-le-van-khoi-1833",
-      "slug": null,
-      "ten": "Khởi nghĩa Lê Văn Khôi",
-      "ten_chuan": "khoi nghia le van khoi",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "khoi-nghia",
-      "lat": 10.7626,
-      "lon": 106.6602,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -60562,42 +60783,81 @@
       "trang_thai": null
     },
     {
-      "id": "tac-pham-viet-dien-u-linh-1329",
+      "id": "nha-ho-bat-dau-1400",
       "slug": null,
-      "ten": "Việt điện u linh tập",
-      "ten_chuan": "viet dien u linh tap",
+      "ten": "Hồ Quý Ly lên ngôi, lập nhà Hồ, đổi quốc hiệu Đại Ngu",
+      "ten_chuan": "ho quy ly len ngoi lap nha ho doi quoc hieu dai ngu",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
+      "loai": "trieu-dai",
+      "lat": 19.9974,
+      "lon": 105.6113,
       "so_nguon": 1,
       "trang_thai": null
     },
     {
-      "id": "tac-pham-truyen-ky-man-luc",
+      "id": "nha-tran-ket-thuc-1400",
       "slug": null,
-      "ten": "Truyền kỳ mạn lục",
-      "ten_chuan": "truyen ky man luc",
+      "ten": "Nhà Trần kết thúc",
+      "ten_chuan": "nha tran ket thuc",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
+      "loai": "trieu-dai",
+      "lat": 21.0358,
+      "lon": 105.8402,
       "so_nguon": 1,
       "trang_thai": null
     },
     {
-      "id": "tac-pham-du-dia-chi-1435",
+      "id": "nha-ho-ket-thuc-1407",
       "slug": null,
-      "ten": "Dư địa chí (Nguyễn Trãi)",
-      "ten_chuan": "du dia chi nguyen trai",
+      "ten": "Nhà Hồ kết thúc",
+      "ten_chuan": "nha ho ket thuc",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
+      "loai": "trieu-dai",
+      "lat": 19.9974,
+      "lon": 105.6113,
       "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-bo-co-1408",
+      "slug": null,
+      "ten": "Trận Bô Cô",
+      "ten_chuan": "tran bo co",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 20.3289271,
+      "lon": 105.9970417,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-lam-son-1418",
+      "slug": null,
+      "ten": "Lê Lợi dựng cờ khởi nghĩa Lam Sơn",
+      "ten_chuan": "le loi dung co khoi nghia lam son",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 19.9344622,
+      "lon": 105.5288451,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-tot-dong-chuc-dong-1426",
+      "slug": null,
+      "ten": "Trận Tốt Động – Chúc Động",
+      "ten_chuan": "tran tot dong chuc dong",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 20.8837,
+      "lon": 105.6706,
+      "so_nguon": 2,
       "trang_thai": null
     },
     {
@@ -60605,6 +60865,58 @@
       "slug": null,
       "ten": "Quân trung từ mệnh tập (Nguyễn Trãi)",
       "ten_chuan": "quan trung tu menh tap nguyen trai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-chi-lang-xuong-giang-1427",
+      "slug": null,
+      "ten": "Trận Chi Lăng – Xương Giang",
+      "ten_chuan": "tran chi lang xuong giang",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 21.5736,
+      "lon": 106.5026,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-le-so-bat-dau-1428",
+      "slug": null,
+      "ten": "Lê Lợi lên ngôi, lập nhà Hậu Lê",
+      "ten_chuan": "le loi len ngoi lap nha hau le",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-binh-ngo-dai-cao-1428",
+      "slug": null,
+      "ten": "Bình Ngô đại cáo (Nguyễn Trãi)",
+      "ten_chuan": "binh ngo dai cao nguyen trai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-du-dia-chi-1435",
+      "slug": null,
+      "ten": "Dư địa chí (Nguyễn Trãi)",
+      "ten_chuan": "du dia chi nguyen trai",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "tac-pham",
@@ -60627,10 +60939,10 @@
       "trang_thai": null
     },
     {
-      "id": "tac-pham-hich-tuong-si-1284",
+      "id": "tac-pham-dai-viet-su-ky-toan-thu-1479",
       "slug": null,
-      "ten": "Hịch tướng sĩ (Trần Hưng Đạo)",
-      "ten_chuan": "hich tuong si tran hung dao",
+      "ten": "Đại Việt sử ký toàn thư (Ngô Sĩ Liên)",
+      "ten_chuan": "dai viet su ky toan thu ngo si lien",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "tac-pham",
@@ -60640,10 +60952,283 @@
       "trang_thai": null
     },
     {
-      "id": "tac-pham-dai-viet-su-ky-toan-thu-1479",
+      "id": "su-kien-luat-hong-duc-1483",
       "slug": null,
-      "ten": "Đại Việt sử ký toàn thư (Ngô Sĩ Liên)",
-      "ten_chuan": "dai viet su ky toan thu ngo si lien",
+      "ten": "Ban hành Quốc triều hình luật (Luật Hồng Đức)",
+      "ten_chuan": "ban hanh quoc trieu hinh luat luat hong duc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-le-so-ket-thuc-1527",
+      "slug": null,
+      "ten": "Nhà Lê sơ kết thúc",
+      "ten_chuan": "nha le so ket thuc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-mac-bat-dau-1527",
+      "slug": null,
+      "ten": "Mạc Đăng Dung lên ngôi, lập nhà Mạc",
+      "ten_chuan": "mac dang dung len ngoi lap nha mac",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-le-trung-hung-bat-dau-1533",
+      "slug": null,
+      "ten": "Nguyễn Kim tôn Lê Trang Tông, mở nhà Lê Trung Hưng",
+      "ten_chuan": "nguyen kim ton le trang tong mo nha le trung hung",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 20.0399,
+      "lon": 105.648,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "chua-trinh-bat-dau-1545",
+      "slug": null,
+      "ten": "Trịnh Kiểm — chúa Trịnh đầu tiên nắm quyền Đàng Ngoài",
+      "ten_chuan": "trinh kiem chua trinh dau tien nam quyen dang ngoai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 20.0399,
+      "lon": 105.648,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-o-chau-can-luc-1553",
+      "slug": null,
+      "ten": "Ô châu cận lục (Dương Văn An)",
+      "ten_chuan": "o chau can luc duong van an",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "chua-nguyen-bat-dau-1558",
+      "slug": null,
+      "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn",
+      "ten_chuan": "nguyen hoang vao tran thu thuan hoa mo nghiep chua nguyen",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 16.4698,
+      "lon": 107.5772,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-mac-mat-thang-long-1592",
+      "slug": null,
+      "ten": "Nhà Mạc mất Thăng Long",
+      "ten_chuan": "nha mac mat thang long",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-le-the-tong-tro-ve-dong-do-1593",
+      "slug": null,
+      "ten": "Vua Lê Thế Tông trở về Đông Đô",
+      "ten_chuan": "vua le the tong tro ve dong do",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-trinh-nguyen-phan-tranh-1627",
+      "slug": null,
+      "ten": "Chiến tranh Trịnh – Nguyễn bùng nổ",
+      "ten_chuan": "chien tranh trinh nguyen bung no",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 17.6,
+      "lon": 106.35,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-mac-diet-cao-bang-1677",
+      "slug": null,
+      "ten": "Dư đảng nhà Mạc ở Cao Bằng bị diệt hẳn",
+      "ten_chuan": "du dang nha mac o cao bang bi diet han",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 22.6667,
+      "lon": 106.25,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-nguyen-huu-canh-lap-gia-dinh-1698",
+      "slug": null,
+      "ten": "Nguyễn Hữu Cảnh lập phủ Gia Định",
+      "ten_chuan": "nguyen huu canh lap phu gia dinh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 10.7626,
+      "lon": 106.6602,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-le-duy-mat-1738",
+      "slug": null,
+      "ten": "Khởi nghĩa Lê Duy Mật",
+      "ten_chuan": "khoi nghia le duy mat",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-nguyen-danh-phuong-1740",
+      "slug": null,
+      "ten": "Khởi nghĩa Nguyễn Danh Phương",
+      "ten_chuan": "khoi nghia nguyen danh phuong",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.4589,
+      "lon": 105.6425,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-nguyen-huu-cau-1741",
+      "slug": null,
+      "ten": "Khởi nghĩa Nguyễn Hữu Cầu (quận He)",
+      "ten_chuan": "khoi nghia nguyen huu cau quan he",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 20.7298,
+      "lon": 106.7931,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-chinh-phu-ngam-1741",
+      "slug": null,
+      "ten": "Chinh phụ ngâm khúc (Đặng Trần Côn)",
+      "ten_chuan": "chinh phu ngam khuc dang tran con",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-dai-viet-thong-su-1749",
+      "slug": null,
+      "ten": "Đại Việt thông sử (Lê Quý Đôn)",
+      "ten_chuan": "dai viet thong su le quy don",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-truyen-ky-man-luc",
+      "slug": null,
+      "ten": "Truyền kỳ mạn lục",
+      "ten_chuan": "truyen ky man luc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-cung-oan-ngam-khuc",
+      "slug": null,
+      "ten": "Cung oán ngâm khúc (Nguyễn Gia Thiều)",
+      "ten_chuan": "cung oan ngam khuc nguyen gia thieu",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-hai-thuong-y-tong-tam-linh-1770",
+      "slug": null,
+      "ten": "Hải Thượng y tông tâm lĩnh (Lê Hữu Trác)",
+      "ten_chuan": "hai thuong y tong tam linh le huu trac",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": 18.35,
+      "lon": 105.7,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-tay-son-1771",
+      "slug": null,
+      "ten": "Khởi nghĩa Tây Sơn bùng nổ",
+      "ten_chuan": "khoi nghia tay son bung no",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 13.933,
+      "lon": 108.955,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-van-dai-loai-ngu-1773",
+      "slug": null,
+      "ten": "Vân đài loại ngữ (Lê Quý Đôn)",
+      "ten_chuan": "van dai loai ngu le quy don",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "tac-pham",
@@ -60663,6 +61248,240 @@
       "lat": null,
       "lon": null,
       "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "chua-nguyen-ket-thuc-1777",
+      "slug": null,
+      "ten": "Chúa Nguyễn Đàng Trong kết thúc",
+      "ten_chuan": "chua nguyen dang trong ket thuc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-kien-van-tieu-luc-1777",
+      "slug": null,
+      "ten": "Kiến văn tiểu lục (Lê Quý Đôn)",
+      "ten_chuan": "kien van tieu luc le quy don",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-tay-son-bat-dau-1778",
+      "slug": null,
+      "ten": "Nguyễn Nhạc xưng đế, lập nhà Tây Sơn",
+      "ten_chuan": "nguyen nhac xung de lap nha tay son",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 13.9218,
+      "lon": 109.1067,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-thuong-kinh-ky-su-1783",
+      "slug": null,
+      "ten": "Thượng kinh ký sự (Lê Hữu Trác)",
+      "ten_chuan": "thuong kinh ky su le huu trac",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": 18.35,
+      "lon": 105.7,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-xiem-1784",
+      "slug": null,
+      "ten": "Kháng chiến chống quân Xiêm xâm lược",
+      "ten_chuan": "khang chien chong quan xiem xam luoc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 10.347,
+      "lon": 106.267,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-rach-gam-xoai-mut-1785",
+      "slug": null,
+      "ten": "Trận Rạch Gầm – Xoài Mút",
+      "ten_chuan": "tran rach gam xoai mut",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 10.347,
+      "lon": 106.267,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "chua-trinh-ket-thuc-1786",
+      "slug": null,
+      "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh",
+      "ten_chuan": "chua trinh cham dut nguyen hue diet ho trinh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-tay-son-chia-3-vung-1787",
+      "slug": null,
+      "ten": "Nội bộ Tây Sơn chia ba vùng cai trị",
+      "ten_chuan": "noi bo tay son chia ba vung cai tri",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 13.9218,
+      "lon": 109.1067,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-thanh-1788",
+      "slug": null,
+      "ten": "Kháng chiến chống quân Thanh xâm lược",
+      "ten_chuan": "khang chien chong quan thanh xam luoc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 21.0121,
+      "lon": 105.8245,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-le-trung-hung-ket-thuc-1788",
+      "slug": null,
+      "ten": "Nhà Lê Trung Hưng kết thúc",
+      "ten_chuan": "nha le trung hung ket thuc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "quang-trung-len-ngoi-1788",
+      "slug": null,
+      "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung",
+      "ten_chuan": "nguyen hue len ngoi hoang de hieu quang trung",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 16.4698,
+      "lon": 107.5772,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-ngoc-hoi-dong-da-1789",
+      "slug": null,
+      "ten": "Trận Ngọc Hồi – Đống Đa",
+      "ten_chuan": "tran ngoc hoi dong da",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 21.0121,
+      "lon": 105.8245,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-hoang-le-nhat-thong-chi",
+      "slug": null,
+      "ten": "Hoàng Lê nhất thống chí (Ngô gia văn phái)",
+      "ten_chuan": "hoang le nhat thong chi ngo gia van phai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-nguyen-bat-dau-1802",
+      "slug": null,
+      "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn",
+      "ten_chuan": "nguyen anh len ngoi lap nha nguyen",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 16.4698,
+      "lon": 107.5772,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-tay-son-ket-thuc-1802",
+      "slug": null,
+      "ten": "Nhà Tây Sơn kết thúc",
+      "ten_chuan": "nha tay son ket thuc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 16.4698,
+      "lon": 107.5772,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-hoang-viet-luat-le-1813",
+      "slug": null,
+      "ten": "Hoàng Việt luật lệ (Luật Gia Long)",
+      "ten_chuan": "hoang viet luat le luat gia long",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-doi-hoang-sa-1815",
+      "slug": null,
+      "ten": "Đội Hoàng Sa thực thi chủ quyền",
+      "ten_chuan": "doi hoang sa thuc thi chu quyen",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-truyen-kieu",
+      "slug": null,
+      "ten": "Truyện Kiều (Nguyễn Du)",
+      "ten_chuan": "truyen kieu nguyen du",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
       "trang_thai": null
     },
     {
@@ -60692,13 +61511,13 @@
       "trang_thai": null
     },
     {
-      "id": "tac-pham-hoang-viet-luat-le-1813",
+      "id": "khoi-nghia-phan-ba-vanh-1821",
       "slug": null,
-      "ten": "Hoàng Việt luật lệ (Luật Gia Long)",
-      "ten_chuan": "hoang viet luat le luat gia long",
+      "ten": "Khởi nghĩa Phan Bá Vành",
+      "ten_chuan": "khoi nghia phan ba vanh",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "tac-pham",
+      "loai": "khoi-nghia",
       "lat": null,
       "lon": null,
       "so_nguon": 1,
@@ -60709,6 +61528,58 @@
       "slug": null,
       "ten": "Đại Nam thực lục (Quốc sử quán triều Nguyễn)",
       "ten_chuan": "dai nam thuc luc quoc su quan trieu nguyen",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-le-van-khoi-1833",
+      "slug": null,
+      "ten": "Khởi nghĩa Lê Văn Khôi",
+      "ten_chuan": "khoi nghia le van khoi",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 10.7626,
+      "lon": 106.6602,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-nong-van-van-1833",
+      "slug": null,
+      "ten": "Khởi nghĩa Nông Văn Vân",
+      "ten_chuan": "khoi nghia nong van van",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-minh-mang-khang-dinh-hoang-sa-1836",
+      "slug": null,
+      "ten": "Vua Minh Mạng khẳng định chủ quyền Hoàng Sa",
+      "ten_chuan": "vua minh mang khang dinh chu quyen hoang sa",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-luc-van-tien",
+      "slug": null,
+      "ten": "Lục Vân Tiên (Nguyễn Đình Chiểu)",
+      "ten_chuan": "luc van tien nguyen dinh chieu",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "tac-pham",
@@ -60731,67 +61602,41 @@
       "trang_thai": null
     },
     {
-      "id": "tac-pham-hai-thuong-y-tong-tam-linh-1770",
+      "id": "khang-chien-chong-phap-1858-1884",
       "slug": null,
-      "ten": "Hải Thượng y tông tâm lĩnh (Lê Hữu Trác)",
-      "ten_chuan": "hai thuong y tong tam linh le huu trac",
+      "ten": "Kháng chiến chống thực dân Pháp xâm lược (giai đoạn đầu)",
+      "ten_chuan": "khang chien chong thuc dan phap xam luoc giai doan dau",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": 18.35,
-      "lon": 105.7,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "tac-pham-thuong-kinh-ky-su-1783",
-      "slug": null,
-      "ten": "Thượng kinh ký sự (Lê Hữu Trác)",
-      "ten_chuan": "thuong kinh ky su le huu trac",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": 18.35,
-      "lon": 105.7,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "tac-pham-chinh-phu-ngam-1741",
-      "slug": null,
-      "ten": "Chinh phụ ngâm khúc (Đặng Trần Côn)",
-      "ten_chuan": "chinh phu ngam khuc dang tran con",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "tac-pham-truyen-kieu",
-      "slug": null,
-      "ten": "Truyện Kiều (Nguyễn Du)",
-      "ten_chuan": "truyen kieu nguyen du",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
+      "loai": "khang-chien",
+      "lat": 16.12049,
+      "lon": 108.2647075,
       "so_nguon": 2,
       "trang_thai": null
     },
     {
-      "id": "tac-pham-luc-van-tien",
+      "id": "tran-da-nang-1858",
       "slug": null,
-      "ten": "Lục Vân Tiên (Nguyễn Đình Chiểu)",
-      "ten_chuan": "luc van tien nguyen dinh chieu",
+      "ten": "Trận Đà Nẵng — mở đầu chống Pháp",
+      "ten_chuan": "tran da nang mo dau chong phap",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
+      "loai": "tran-danh",
+      "lat": 16.12049,
+      "lon": 108.2647075,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-nguyen-trung-truc-1861",
+      "slug": null,
+      "ten": "Khởi nghĩa Nguyễn Trung Trực",
+      "ten_chuan": "khoi nghia nguyen trung truc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 10.0125,
+      "lon": 105.0809,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -60809,6 +61654,32 @@
       "trang_thai": null
     },
     {
+      "id": "tran-dai-don-chi-hoa-1861",
+      "slug": null,
+      "ten": "Trận Đại đồn Chí Hoà",
+      "ten_chuan": "tran dai don chi hoa",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 10.7867,
+      "lon": 106.6544,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-truong-dinh-1862",
+      "slug": null,
+      "ten": "Khởi nghĩa Trương Định",
+      "ten_chuan": "khoi nghia truong dinh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 10.3650266,
+      "lon": 106.6748826,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
       "id": "tac-pham-gia-dinh-bao-1865",
       "slug": null,
       "ten": "Gia Định báo — tờ báo chữ Quốc ngữ đầu tiên",
@@ -60818,6 +61689,110 @@
       "loai": "tac-pham",
       "lat": 10.7626,
       "lon": 106.6602,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-cau-giay-lan-1-1873",
+      "slug": null,
+      "ten": "Trận Cầu Giấy lần thứ nhất",
+      "ten_chuan": "tran cau giay lan thu nhat",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 21.0292159,
+      "lon": 105.8033629,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-bai-say-1883",
+      "slug": null,
+      "ten": "Khởi nghĩa Bãi Sậy",
+      "ten_chuan": "khoi nghia bai say",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 20.8501,
+      "lon": 106.1207,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-cau-giay-lan-2-1883",
+      "slug": null,
+      "ten": "Trận Cầu Giấy lần thứ hai",
+      "ten_chuan": "tran cau giay lan thu hai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 21.0301159,
+      "lon": 105.8045629,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-yen-the-1884",
+      "slug": null,
+      "ten": "Khởi nghĩa Yên Thế",
+      "ten_chuan": "khoi nghia yen the",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.4789,
+      "lon": 106.1268,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-hung-linh-1885",
+      "slug": null,
+      "ten": "Khởi nghĩa Hùng Lĩnh",
+      "ten_chuan": "khoi nghia hung linh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 19.903584,
+      "lon": 105.3465072,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-huong-khe-1885",
+      "slug": null,
+      "ten": "Khởi nghĩa Hương Khê",
+      "ten_chuan": "khoi nghia huong khe",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 18.1927,
+      "lon": 105.6793,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tran-kinh-thanh-hue-that-thu-1885",
+      "slug": null,
+      "ten": "Kinh thành Huế thất thủ",
+      "ten_chuan": "kinh thanh hue that thu",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 16.4698,
+      "lon": 107.5778,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-ba-dinh-1886",
+      "slug": null,
+      "ten": "Khởi nghĩa Ba Đình",
+      "ten_chuan": "khoi nghia ba dinh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 20.0089,
+      "lon": 105.9657,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -60835,6 +61810,19 @@
       "trang_thai": null
     },
     {
+      "id": "su-kien-dong-du-1904",
+      "slug": null,
+      "ten": "Phong trào Đông Du",
+      "ten_chuan": "phong trao dong du",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
       "id": "tac-pham-viet-nam-vong-quoc-su-1905",
       "slug": null,
       "ten": "Việt Nam vong quốc sử (Phan Bội Châu)",
@@ -60844,6 +61832,19 @@
       "loai": "tac-pham",
       "lat": null,
       "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-dong-kinh-nghia-thuc-1907",
+      "slug": null,
+      "ten": "Thành lập Đông Kinh Nghĩa Thục",
+      "ten_chuan": "thanh lap dong kinh nghia thuc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.0333,
+      "lon": 105.8497,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -60861,6 +61862,97 @@
       "trang_thai": null
     },
     {
+      "id": "su-kien-chong-thue-trung-ky-1908",
+      "slug": null,
+      "ten": "Phong trào chống thuế Trung Kỳ",
+      "ten_chuan": "phong trao chong thue trung ky",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 16.4637,
+      "lon": 107.5909,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-viet-nam-quang-phuc-hoi-1912",
+      "slug": null,
+      "ten": "Thành lập Việt Nam Quang phục Hội",
+      "ten_chuan": "thanh lap viet nam quang phuc hoi",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-duy-tan-1916",
+      "slug": null,
+      "ten": "Khởi nghĩa Duy Tân",
+      "ten_chuan": "khoi nghia duy tan",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 16.0544,
+      "lon": 108.2208,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-thai-nguyen-1917",
+      "slug": null,
+      "ten": "Khởi nghĩa Thái Nguyên",
+      "ten_chuan": "khoi nghia thai nguyen",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.5928,
+      "lon": 105.8252,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-nam-phong-tap-chi-1917",
+      "slug": null,
+      "ten": "Nam Phong tạp chí ra đời",
+      "ten_chuan": "nam phong tap chi ra doi",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": 21.0333,
+      "lon": 105.8497,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-viet-nam-su-luoc-1919",
+      "slug": null,
+      "ten": "Việt Nam sử lược (Trần Trọng Kim)",
+      "ten_chuan": "viet nam su luoc tran trong kim",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-ban-an-che-do-thuc-dan-phap-1925",
+      "slug": null,
+      "ten": "Bản án chế độ thực dân Pháp (Nguyễn Ái Quốc)",
+      "ten_chuan": "ban an che do thuc dan phap nguyen ai quoc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
       "id": "tac-pham-to-tam-1925",
       "slug": null,
       "ten": "Tố Tâm (Hoàng Ngọc Phách)",
@@ -60870,6 +61962,32 @@
       "loai": "tac-pham",
       "lat": null,
       "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-duong-kach-menh-1927",
+      "slug": null,
+      "ten": "Đường Kách mệnh (Nguyễn Ái Quốc)",
+      "ten_chuan": "duong kach menh nguyen ai quoc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-yen-bai-1930",
+      "slug": null,
+      "ten": "Khởi nghĩa Yên Bái",
+      "ten_chuan": "khoi nghia yen bai",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.721899,
+      "lon": 104.8935896,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -60900,6 +62018,45 @@
       "trang_thai": null
     },
     {
+      "id": "khoi-nghia-bac-son-1940",
+      "slug": null,
+      "ten": "Khởi nghĩa Bắc Sơn",
+      "ten_chuan": "khoi nghia bac son",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 21.8333,
+      "lon": 106.3167,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khoi-nghia-nam-ky-1940",
+      "slug": null,
+      "ten": "Nam Kỳ khởi nghĩa",
+      "ten_chuan": "nam ky khoi nghia",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 10.8231,
+      "lon": 106.6297,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "binh-bien-do-luong-1941",
+      "slug": null,
+      "ten": "Binh biến Đô Lương",
+      "ten_chuan": "binh bien do luong",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khoi-nghia",
+      "lat": 18.9,
+      "lon": 105.3,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
       "id": "tac-pham-chi-pheo-1941",
       "slug": null,
       "ten": "Chí Phèo (Nam Cao)",
@@ -60913,10 +62070,10 @@
       "trang_thai": null
     },
     {
-      "id": "tac-pham-dai-viet-thong-su-1749",
+      "id": "tac-pham-lich-su-nuoc-ta-1942",
       "slug": null,
-      "ten": "Đại Việt thông sử (Lê Quý Đôn)",
-      "ten_chuan": "dai viet thong su le quy don",
+      "ten": "Lịch sử nước ta (Hồ Chí Minh)",
+      "ten_chuan": "lich su nuoc ta ho chi minh",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "tac-pham",
@@ -60926,67 +62083,15 @@
       "trang_thai": null
     },
     {
-      "id": "tac-pham-kien-van-tieu-luc-1777",
+      "id": "tac-pham-nhat-ky-trong-tu-1942",
       "slug": null,
-      "ten": "Kiến văn tiểu lục (Lê Quý Đôn)",
-      "ten_chuan": "kien van tieu luc le quy don",
+      "ten": "Nhật ký trong tù (Hồ Chí Minh)",
+      "ten_chuan": "nhat ky trong tu ho chi minh",
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "tac-pham",
       "lat": null,
       "lon": null,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "tac-pham-van-dai-loai-ngu-1773",
-      "slug": null,
-      "ten": "Vân đài loại ngữ (Lê Quý Đôn)",
-      "ten_chuan": "van dai loai ngu le quy don",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "tac-pham-viet-nam-su-luoc-1919",
-      "slug": null,
-      "ten": "Việt Nam sử lược (Trần Trọng Kim)",
-      "ten_chuan": "viet nam su luoc tran trong kim",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "tac-pham-o-chau-can-luc-1553",
-      "slug": null,
-      "ten": "Ô châu cận lục (Dương Văn An)",
-      "ten_chuan": "o chau can luc duong van an",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": null,
-      "lon": null,
-      "so_nguon": 1,
-      "trang_thai": null
-    },
-    {
-      "id": "tac-pham-nam-phong-tap-chi-1917",
-      "slug": null,
-      "ten": "Nam Phong tạp chí ra đời",
-      "ten_chuan": "nam phong tap chi ra doi",
-      "file": "timeline/moc-lich-su.json",
-      "mien": "timeline",
-      "loai": "tac-pham",
-      "lat": 21.0333,
-      "lon": 105.8497,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -61001,6 +62106,201 @@
       "lat": null,
       "lon": null,
       "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "nha-nguyen-ket-thuc-1945",
+      "slug": null,
+      "ten": "Vua Bảo Đại thoái vị, nhà Nguyễn kết thúc",
+      "ten_chuan": "vua bao dai thoai vi nha nguyen ket thuc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 16.4698,
+      "lon": 107.5772,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+      "slug": null,
+      "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)",
+      "ten_chuan": "tuyen ngon doc lap ho chi minh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-phap-toan-quoc-1946",
+      "slug": null,
+      "ten": "Toàn quốc kháng chiến chống thực dân Pháp",
+      "ten_chuan": "toan quoc khang chien chong thuc dan phap",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "chien-dich-bien-gioi-thu-dong-1950",
+      "slug": null,
+      "ten": "Chiến dịch Biên giới Thu Đông 1950",
+      "ten_chuan": "chien dich bien gioi thu dong 1950",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 22.6657,
+      "lon": 106.2522,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "chien-dich-dien-bien-phu-1954",
+      "slug": null,
+      "ten": "Chiến dịch Điện Biên Phủ",
+      "ten_chuan": "chien dich dien bien phu",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 21.3831,
+      "lon": 103.0176,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-my-1954-1975",
+      "slug": null,
+      "ten": "Kháng chiến chống Mỹ, cứu nước",
+      "ten_chuan": "khang chien chong my cuu nuoc",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 10.777,
+      "lon": 106.6955,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-hiep-dinh-geneve-1954",
+      "slug": null,
+      "ten": "Hiệp định Genève",
+      "ten_chuan": "hiep dinh geneve",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "dien-bien-phu-tren-khong-1972",
+      "slug": null,
+      "ten": "Chiến thắng «Điện Biên Phủ trên không»",
+      "ten_chuan": "chien thang dien bien phu tren khong",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 21.038,
+      "lon": 105.827,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-hiep-dinh-paris-1973",
+      "slug": null,
+      "ten": "Hiệp định Paris",
+      "ten_chuan": "hiep dinh paris",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "hai-chien-hoang-sa-1974",
+      "slug": null,
+      "ten": "Hải chiến Hoàng Sa",
+      "ten_chuan": "hai chien hoang sa",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 16.5,
+      "lon": 112,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "chien-dich-buon-ma-thuot-1975",
+      "slug": null,
+      "ten": "Chiến dịch Buôn Ma Thuột",
+      "ten_chuan": "chien dich buon ma thuot",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 12.6797024,
+      "lon": 108.0446684,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "chien-dich-giai-phong-truong-sa-1975",
+      "slug": null,
+      "ten": "Chiến dịch giải phóng quần đảo Trường Sa",
+      "ten_chuan": "chien dich giai phong quan dao truong sa",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 10.38,
+      "lon": 114.35,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "chien-dich-ho-chi-minh-1975",
+      "slug": null,
+      "ten": "Chiến dịch Hồ Chí Minh",
+      "ten_chuan": "chien dich ho chi minh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 10.777,
+      "lon": 106.6955,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-bien-gioi-phia-bac-1979",
+      "slug": null,
+      "ten": "Chiến tranh bảo vệ biên giới phía Bắc",
+      "ten_chuan": "chien tranh bao ve bien gioi phia bac",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 21.85,
+      "lon": 106.7167,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-gac-ma-1988",
+      "slug": null,
+      "ten": "Sự kiện Gạc Ma",
+      "ten_chuan": "su kien gac ma",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": 9.7147,
+      "lon": 114.2833,
+      "so_nguon": 2,
       "trang_thai": null
     },
     {
@@ -63520,6 +64820,58 @@
       ]
     },
     {
+      "ten_chuan": "khoi nghia bac son",
+      "so_file": 3,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "overlays/di-tich-qgdb.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "khoi-nghia-bac-son-1940",
+          "ten": "Khởi nghĩa Bắc Sơn"
+        },
+        {
+          "file": "overlays/di-tich-qgdb.json",
+          "id": null,
+          "ten": "Khởi nghĩa Bắc Sơn"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-bac-son-1940",
+          "ten": "Khởi nghĩa Bắc Sơn"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia truong dinh",
+      "so_file": 3,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "overlays/di-tich-qgdb.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "khoi-nghia-truong-dinh-go-cong",
+          "ten": "Khởi nghĩa Trương Định"
+        },
+        {
+          "file": "overlays/di-tich-qgdb.json",
+          "id": null,
+          "ten": "Khởi nghĩa Trương Định"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-truong-dinh-1862",
+          "ten": "Khởi nghĩa Trương Định"
+        }
+      ]
+    },
+    {
       "ten_chuan": "le duan 1907 1986",
       "so_file": 3,
       "files": [
@@ -65054,6 +66406,26 @@
       ]
     },
     {
+      "ten_chuan": "ban hanh quoc trieu hinh luat luat hong duc",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Ban hành Quốc triều hình luật (Luật Hồng Đức)"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-luat-hong-duc-1483",
+          "ten": "Ban hành Quốc triều hình luật (Luật Hồng Đức)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "bao tang van hoa cac dan toc viet nam",
       "so_file": 2,
       "files": [
@@ -65480,6 +66852,66 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Chế Lan Viên"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich bien gioi thu dong 1950",
+      "so_file": 2,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-bien-gioi-thu-dong-1950",
+          "ten": "Chiến dịch Biên giới Thu Đông 1950"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "chien-dich-bien-gioi-thu-dong-1950",
+          "ten": "Chiến dịch Biên giới Thu Đông 1950"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich buon ma thuot",
+      "so_file": 2,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-buon-ma-thuot-1975",
+          "ten": "Chiến dịch Buôn Ma Thuột"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "chien-dich-buon-ma-thuot-1975",
+          "ten": "Chiến dịch Buôn Ma Thuột"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien thang dien bien phu tren khong",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Chiến thắng «Điện Biên Phủ trên không»"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "dien-bien-phu-tren-khong-1972",
+          "ten": "Chiến thắng «Điện Biên Phủ trên không»"
         }
       ]
     },
@@ -66744,6 +68176,26 @@
       ]
     },
     {
+      "ten_chuan": "doi hoang sa thuc thi chu quyen",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Đội Hoàng Sa thực thi chủ quyền"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-doi-hoang-sa-1815",
+          "ten": "Đội Hoàng Sa thực thi chủ quyền"
+        }
+      ]
+    },
+    {
       "ten_chuan": "dong ho 1906 1969",
       "so_file": 2,
       "files": [
@@ -67854,6 +69306,26 @@
       ]
     },
     {
+      "ten_chuan": "hoi nghi dien hong",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Hội nghị Diên Hồng"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-hoi-nghi-dien-hong-1284",
+          "ten": "Hội nghị Diên Hồng"
+        }
+      ]
+    },
+    {
       "ten_chuan": "hong ha nu si doan thi diem",
       "so_file": 2,
       "files": [
@@ -68014,42 +69486,102 @@
       ]
     },
     {
-      "ten_chuan": "khoi nghia bac son",
+      "ten_chuan": "khoi nghia ba trieu",
       "so_file": 2,
       "files": [
-        "overlays/chien-dich-tran-danh.json",
-        "overlays/di-tich-qgdb.json"
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
       ],
       "muc": [
         {
-          "file": "overlays/chien-dich-tran-danh.json",
-          "id": "khoi-nghia-bac-son-1940",
-          "ten": "Khởi nghĩa Bắc Sơn"
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Khởi nghĩa Bà Triệu"
         },
         {
-          "file": "overlays/di-tich-qgdb.json",
-          "id": null,
-          "ten": "Khởi nghĩa Bắc Sơn"
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-ba-trieu-248",
+          "ten": "Khởi nghĩa Bà Triệu"
         }
       ]
     },
     {
-      "ten_chuan": "khoi nghia truong dinh",
+      "ten_chuan": "khoi nghia hai ba trung",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Khởi nghĩa Hai Bà Trưng"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-hai-ba-trung-40",
+          "ten": "Khởi nghĩa Hai Bà Trưng"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia phung hung",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Khởi nghĩa Phùng Hưng"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-phung-hung-766",
+          "ten": "Khởi nghĩa Phùng Hưng"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia tay son bung no",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Khởi nghĩa Tây Sơn bùng nổ"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-tay-son-1771",
+          "ten": "Khởi nghĩa Tây Sơn bùng nổ"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia yen bai",
       "so_file": 2,
       "files": [
         "overlays/chien-dich-tran-danh.json",
-        "overlays/di-tich-qgdb.json"
+        "timeline/moc-lich-su.json"
       ],
       "muc": [
         {
           "file": "overlays/chien-dich-tran-danh.json",
-          "id": "khoi-nghia-truong-dinh-go-cong",
-          "ten": "Khởi nghĩa Trương Định"
+          "id": "khoi-nghia-yen-bai-1930",
+          "ten": "Khởi nghĩa Yên Bái"
         },
         {
-          "file": "overlays/di-tich-qgdb.json",
-          "id": null,
-          "ten": "Khởi nghĩa Trương Định"
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-yen-bai-1930",
+          "ten": "Khởi nghĩa Yên Bái"
         }
       ]
     },
@@ -68210,6 +69742,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Lạc Long Quân (Sùng Lãm)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "lap quoc tu giam",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Lập Quốc Tử Giám"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-lap-quoc-tu-giam-1076",
+          "ten": "Lập Quốc Tử Giám"
         }
       ]
     },
@@ -68750,6 +70302,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Liệt sĩ Trần Văn Ơn"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "loan 12 su quan",
+      "so_file": 2,
+      "files": [
+        "timeline/moc-lich-su.json",
+        "timeline/nien-hieu.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-loan-12-su-quan-965",
+          "ten": "Loạn 12 sứ quân"
+        },
+        {
+          "file": "timeline/nien-hieu.json",
+          "id": null,
+          "ten": "Loạn 12 sứ quân"
         }
       ]
     },
@@ -69494,6 +71066,26 @@
       ]
     },
     {
+      "ten_chuan": "nam ky khoi nghia",
+      "so_file": 2,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "nam-ky-khoi-nghia-1940",
+          "ten": "Nam Kỳ khởi nghĩa"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-nam-ky-1940",
+          "ten": "Nam Kỳ khởi nghĩa"
+        }
+      ]
+    },
+    {
       "ten_chuan": "nam son nguyen van tho",
       "so_file": 2,
       "files": [
@@ -69630,6 +71222,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Ngô Nhân Tịnh"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "ngo quyen xung vuong lap nha ngo",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Ngô Quyền xưng vương, lập nhà Ngô"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "nha-ngo-bat-dau-939",
+          "ten": "Ngô Quyền xưng vương, lập nhà Ngô"
         }
       ]
     },
@@ -70585,6 +72197,26 @@
           "file": "figures/danh-nhan.json",
           "id": "quang-tri-nguyen-huu-canh",
           "ten": "Nguyễn Hữu Cảnh (1650–1700)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "nguyen huu canh lap phu gia dinh",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Nguyễn Hữu Cảnh lập phủ Gia Định"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-nguyen-huu-canh-lap-gia-dinh-1698",
+          "ten": "Nguyễn Hữu Cảnh lập phủ Gia Định"
         }
       ]
     },
@@ -72889,6 +74521,26 @@
       ]
     },
     {
+      "ten_chuan": "phong trao dong du",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Phong trào Đông Du"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-dong-du-1904",
+          "ten": "Phong trào Đông Du"
+        }
+      ]
+    },
+    {
       "ten_chuan": "phu dong thien vuong thanh giong tu bat tu",
       "so_file": 2,
       "files": [
@@ -73769,6 +75421,46 @@
       ]
     },
     {
+      "ten_chuan": "tran bach dang 1288",
+      "so_file": 2,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bach-dang-1288",
+          "ten": "Trận Bạch Đằng 1288"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "tran-bach-dang-1288",
+          "ten": "Trận Bạch Đằng 1288"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran bach dang 938",
+      "so_file": 2,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bach-dang-938",
+          "ten": "Trận Bạch Đằng 938"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "tran-bach-dang-938",
+          "ten": "Trận Bạch Đằng 938"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran bach dang truong gia trieu",
       "so_file": 2,
       "files": [
@@ -73865,6 +75557,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trần Cừ"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran da nang mo dau chong phap",
+      "so_file": 2,
+      "files": [
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-da-nang-1858",
+          "ten": "Trận Đà Nẵng (mở đầu chống Pháp)"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "tran-da-nang-1858",
+          "ten": "Trận Đà Nẵng — mở đầu chống Pháp"
         }
       ]
     },
@@ -75819,6 +77531,26 @@
       ]
     },
     {
+      "ten_chuan": "vua minh mang khang dinh chu quyen hoang sa",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Vua Minh Mạng khẳng định chủ quyền Hoàng Sa"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-minh-mang-khang-dinh-hoang-sa-1836",
+          "ten": "Vua Minh Mạng khẳng định chủ quyền Hoàng Sa"
+        }
+      ]
+    },
+    {
       "ten_chuan": "vuon quoc gia phong nha ke bang",
       "so_file": 2,
       "files": [
@@ -76068,6 +77800,19 @@
         "file": "overlays/danh-nhan-dan-toc-thieu-so.json",
         "id": "y-phuong",
         "ten": "Y Phương (Hứa Vĩnh Sước)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "nguyen-quoc-tri",
+        "ten": "Nguyễn Quốc Trị"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "binh-bien-do-luong-1941",
+        "ten": "Binh biến Đô Lương"
       },
       "khoang_cach_m": 0
     },
@@ -76334,6 +78079,19 @@
     {
       "a": {
         "file": "overlays/chi-si-cach-mang.json",
+        "id": "bui-huy-tin",
+        "ten": "Bùi Huy Tín"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chi-si-cach-mang.json",
         "id": "nguyen-thai-binh-sinh-vien",
         "ten": "Nguyễn Thái Bình"
       },
@@ -76341,6 +78099,58 @@
         "file": "overlays/nghe-nhan-di-san.json",
         "id": "nghe-nhan-vo-an-toan-tam-toan",
         "ten": "Võ An Toàn (Tám Toàn)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-hai-ba-trung-hat-mon-40",
+        "ten": "Khởi nghĩa Hai Bà Trưng — Hát Môn"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-hai-ba-trung-40",
+        "ten": "Khởi nghĩa Hai Bà Trưng"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-hai-ba-trung-40",
+        "ten": "Khởi nghĩa Hai Bà Trưng 40–43"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-hai-ba-trung-40",
+        "ten": "Khởi nghĩa Hai Bà Trưng"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-ba-trieu-248",
+        "ten": "Khởi nghĩa Bà Triệu 248"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ba-trieu-248",
+        "ten": "Khởi nghĩa Bà Triệu"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-bi-542",
+        "ten": "Khởi nghĩa Lý Bí 542–544"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ly-bi-542",
+        "ten": "Khởi nghĩa Lý Bí, lập nước Vạn Xuân"
       },
       "khoang_cach_m": 0
     },
@@ -76425,6 +78235,97 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu) 713–722"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "phung-hung-766",
+        "ten": "Khởi nghĩa Phùng Hưng 766–791"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-phung-hung-766",
+        "ten": "Khởi nghĩa Phùng Hưng"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khuc-thua-du-gianh-quyen-tu-chu-905",
+        "ten": "Khúc Thừa Dụ giành quyền tự chủ 905"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khuc-thua-du-tu-chu-905",
+        "ten": "Khúc Thừa Dụ giành quyền tự chủ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+        "ten": "Dương Đình Nghệ khôi phục tự chủ, đánh Nam Hán 931"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+        "ten": "Dương Đình Nghệ đánh bại Nam Hán, khôi phục tự chủ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "bach-dang-938",
+        "ten": "Trận Bạch Đằng 938"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-bach-dang-938",
+        "ten": "Trận Bạch Đằng 938"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "bach-dang-981",
+        "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-tong-lan-1-981",
+        "ten": "Kháng chiến chống Tống lần thứ nhất"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "bach-dang-981",
+        "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-bach-dang-981",
+        "ten": "Trận Bạch Đằng 981"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "ly-thuong-kiet-nam-chinh-1069",
         "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành (1069)"
       },
@@ -76432,6 +78333,110 @@
         "file": "overlays/nghia-trang-liet-si.json",
         "id": "dtn-tnxp-c283-quang-binh",
         "ten": "Khu tưởng niệm Đại đội Thanh niên xung phong C283"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành (1069)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ung-chau-1075",
+        "ten": "Chiến dịch tiến công Ung – Khâm – Liêm Châu 1075–1076"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-bien-gioi-phia-bac-1979",
+        "ten": "Chiến tranh bảo vệ biên giới phía Bắc"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nhu-nguyet-1077",
+        "ten": "Phòng tuyến Như Nguyệt 1077"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-tong-lan-2-1075",
+        "ten": "Kháng chiến chống Tống lần thứ hai"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nhu-nguyet-1077",
+        "ten": "Phòng tuyến Như Nguyệt 1077"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-nhu-nguyet-1077",
+        "ten": "Phòng tuyến Như Nguyệt"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "dong-bo-dau-1258",
+        "ten": "Trận Đông Bộ Đầu 1258"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-nguyen-mong-lan-1-1258",
+        "ten": "Kháng chiến chống quân Nguyên Mông lần thứ nhất"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "dong-bo-dau-1258",
+        "ten": "Trận Đông Bộ Đầu 1258"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-dong-bo-dau-1258",
+        "ten": "Trận Đông Bộ Đầu"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ham-tu-chuong-duong-1285",
+        "ten": "Hàm Tử – Chương Dương 1285"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-nguyen-mong-lan-2-1285",
+        "ten": "Kháng chiến chống quân Nguyên Mông lần thứ hai"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ham-tu-chuong-duong-1285",
+        "ten": "Hàm Tử – Chương Dương 1285"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ham-tu-chuong-duong-1285",
+        "ten": "Trận Hàm Tử – Chương Dương"
       },
       "khoang_cach_m": 0
     },
@@ -76451,6 +78456,45 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "bach-dang-1288",
+        "ten": "Trận Bạch Đằng 1288"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-nguyen-mong-lan-3-1288",
+        "ten": "Kháng chiến chống quân Nguyên Mông lần thứ ba"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "bach-dang-1288",
+        "ten": "Trận Bạch Đằng 1288"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-bach-dang-1288",
+        "ten": "Trận Bạch Đằng 1288"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "van-don-1288",
+        "ten": "Trận Vân Đồn 1288"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-van-don-1288",
+        "ten": "Trận Vân Đồn"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "che-bong-nga-tu-tran-1390",
         "ten": "Chế Bồng Nga tử trận trên sông Hải Triều (1390)"
       },
@@ -76458,6 +78502,58 @@
         "file": "timeline/moc-lich-su.json",
         "id": "tran-hai-trieu-1390",
         "ten": "Trận Hải Triều — Trần Khát Chân giết Chế Bồng Nga"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "bo-co-1408",
+        "ten": "Trận Bô Cô 1408"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-bo-co-1408",
+        "ten": "Trận Bô Cô"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "hoi-the-lung-nhai-1416",
+        "ten": "Hội thề Lũng Nhai"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-hung-linh-1885",
+        "ten": "Khởi nghĩa Hùng Lĩnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-lam-son-dung-co-1418",
+        "ten": "Khởi nghĩa Lam Sơn dựng cờ 1418"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-lam-son-1418",
+        "ten": "Lê Lợi dựng cờ khởi nghĩa Lam Sơn"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tot-dong-chuc-dong-1426",
+        "ten": "Tốt Động – Chúc Động 1426"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-tot-dong-chuc-dong-1426",
+        "ten": "Trận Tốt Động – Chúc Động"
       },
       "khoang_cach_m": 0
     },
@@ -76484,6 +78580,19 @@
         "file": "overlays/thien-su-cao-tang.json",
         "id": "cam-thanh",
         "ten": "Cảm Thành (Lập Đức)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "chi-lang-1427",
+        "ten": "Chi Lăng – Xương Giang 1427"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-chi-lang-xuong-giang-1427",
+        "ten": "Trận Chi Lăng – Xương Giang"
       },
       "khoang_cach_m": 0
     },
@@ -76503,6 +78612,45 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "le-trinh-bac-phat-1559",
+        "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-trinh-ket-thuc-1786",
+        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "le-trinh-bac-phat-1559",
+        "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "le-trinh-bac-phat-1559",
+        "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-phap-toan-quoc-1946",
+        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "ha-thanh-thang-long-diet-mac-1592",
         "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
       },
@@ -76510,6 +78658,45 @@
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "the-anh",
         "ten": "NSND Thế Anh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-trinh-ket-thuc-1786",
+        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-phap-toan-quoc-1946",
+        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
       },
       "khoang_cach_m": 0
     },
@@ -76529,6 +78716,32 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "rach-gam-xoai-mut-1785",
+        "ten": "Rạch Gầm – Xoài Mút 1785"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-xiem-1784",
+        "ten": "Kháng chiến chống quân Xiêm xâm lược"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "rach-gam-xoai-mut-1785",
+        "ten": "Rạch Gầm – Xoài Mút 1785"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-rach-gam-xoai-mut-1785",
+        "ten": "Trận Rạch Gầm – Xoài Mút"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "nguyen-hue-diet-trinh-1786",
         "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
       },
@@ -76542,6 +78755,110 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-hue-diet-trinh-1786",
+        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-trinh-ket-thuc-1786",
+        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-hue-diet-trinh-1786",
+        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-hue-diet-trinh-1786",
+        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-phap-toan-quoc-1946",
+        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ngoc-hoi-dong-da-1789",
+        "ten": "Ngọc Hồi – Đống Đa 1789"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-thanh-1788",
+        "ten": "Kháng chiến chống quân Thanh xâm lược"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ngoc-hoi-dong-da-1789",
+        "ten": "Ngọc Hồi – Đống Đa 1789"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ngoc-hoi-dong-da-1789",
+        "ten": "Trận Ngọc Hồi – Đống Đa"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-da-nang-1858",
+        "ten": "Trận Đà Nẵng (mở đầu chống Pháp)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-phap-1858-1884",
+        "ten": "Kháng chiến chống thực dân Pháp xâm lược (giai đoạn đầu)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-da-nang-1858",
+        "ten": "Trận Đà Nẵng (mở đầu chống Pháp)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-da-nang-1858",
+        "ten": "Trận Đà Nẵng — mở đầu chống Pháp"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "dai-don-chi-hoa-1861",
+        "ten": "Trận Đại đồn Chí Hoà (Kỳ Hoà) 1861"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-dai-don-chi-hoa-1861",
+        "ten": "Trận Đại đồn Chí Hoà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "khoi-nghia-truong-dinh-go-cong",
         "ten": "Khởi nghĩa Trương Định"
       },
@@ -76549,6 +78866,32 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "lang-hoang-gia-go-cong",
         "ten": "Lăng Hoàng Gia (họ Phạm Đăng)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-truong-dinh-go-cong",
+        "ten": "Khởi nghĩa Trương Định"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-truong-dinh-1862",
+        "ten": "Khởi nghĩa Trương Định"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-trung-truc-danh-don-kien-giang-1868",
+        "ten": "Nguyễn Trung Trực đánh đồn Kiên Giang (1868)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-nguyen-trung-truc-1861",
+        "ten": "Khởi nghĩa Nguyễn Trung Trực"
       },
       "khoang_cach_m": 0
     },
@@ -76581,6 +78924,45 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-cau-giay-1873",
+        "ten": "Trận Cầu Giấy (lần 1)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-cau-giay-lan-1-1873",
+        "ten": "Trận Cầu Giấy lần thứ nhất"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "bai-say-1883",
+        "ten": "Khởi nghĩa Bãi Sậy 1883–1892"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-bai-say-1883",
+        "ten": "Khởi nghĩa Bãi Sậy"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-cau-giay-1883",
+        "ten": "Trận Cầu Giấy (lần 2)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-cau-giay-lan-2-1883",
+        "ten": "Trận Cầu Giấy lần thứ hai"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "yen-the-1884",
         "ten": "Khởi nghĩa Yên Thế 1884–1913"
       },
@@ -76588,6 +78970,71 @@
         "file": "overlays/le-hoi-truyen-thong.json",
         "id": "le-hoi-yen-the",
         "ten": "Lễ hội Yên Thế"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "yen-the-1884",
+        "ten": "Khởi nghĩa Yên Thế 1884–1913"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-yen-the-1884",
+        "ten": "Khởi nghĩa Yên Thế"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "huong-khe-1885",
+        "ten": "Khởi nghĩa Hương Khê 1885–1896"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-huong-khe-1885",
+        "ten": "Khởi nghĩa Hương Khê"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "hung-linh-1885",
+        "ten": "Khởi nghĩa Hùng Lĩnh 1885–1892"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-hung-linh-1885",
+        "ten": "Khởi nghĩa Hùng Lĩnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ (1885)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ba-dinh-1886",
+        "ten": "Khởi nghĩa Ba Đình 1886–1887"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ba-dinh-1886",
+        "ten": "Khởi nghĩa Ba Đình"
       },
       "khoang_cach_m": 0
     },
@@ -76646,6 +79093,32 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ 1908"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-yen-bai-1930",
+        "ten": "Khởi nghĩa Yên Bái"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-yen-bai-1930",
+        "ten": "Khởi nghĩa Yên Bái"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "khoi-nghia-bac-son-1940",
         "ten": "Khởi nghĩa Bắc Sơn"
       },
@@ -76666,6 +79139,19 @@
         "file": "overlays/di-tich-qgdb.json",
         "id": null,
         "ten": "Địa điểm về Cuộc khởi nghĩa Ba Tơ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "60-ngay-dem-ha-noi-1946-1947",
+        "ten": "60 ngày đêm khói lửa Hà Nội"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-dong-kinh-nghia-thuc-1907",
+        "ten": "Thành lập Đông Kinh Nghĩa Thục"
       },
       "khoang_cach_m": 0
     },
@@ -76705,6 +79191,19 @@
         "file": "overlays/danh-nhan-dan-toc-thieu-so.json",
         "id": "dtts-nong-van-lac",
         "ten": "Nông Văn Lạc"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "dien-bien-phu-1954",
+        "ten": "Chiến dịch Điện Biên Phủ 1954"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-dien-bien-phu-1954",
+        "ten": "Chiến dịch Điện Biên Phủ"
       },
       "khoang_cach_m": 0
     },
@@ -76776,6 +79275,19 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-noi-dien-bien-phu-tren-khong-1972",
+        "ten": "«Điện Biên Phủ trên không» 1972"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "dien-bien-phu-tren-khong-1972",
+        "ten": "Chiến thắng «Điện Biên Phủ trên không»"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "chien-thang-chuong-thien-1973",
         "ten": "Chiến thắng Chương Thiện (75 lượt tiểu đoàn địch)"
       },
@@ -76783,6 +79295,45 @@
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "mai-kieu-lien",
         "ten": "Mai Kiều Liên"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "chien-dich-hcm-1975",
+        "ten": "Chiến dịch Hồ Chí Minh 1975"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-my-1954-1975",
+        "ten": "Kháng chiến chống Mỹ, cứu nước"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "chien-dich-hcm-1975",
+        "ten": "Chiến dịch Hồ Chí Minh 1975"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-ho-chi-minh-1975",
+        "ten": "Chiến dịch Hồ Chí Minh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "chien-dich-buon-ma-thuot-1975",
+        "ten": "Chiến dịch Buôn Ma Thuột"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-buon-ma-thuot-1975",
+        "ten": "Chiến dịch Buôn Ma Thuột"
       },
       "khoang_cach_m": 0
     },
@@ -77062,6 +79613,19 @@
     {
       "a": {
         "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+        "id": "mai-thieu-de",
+        "ten": "Mai Thiếu Đế (con Vua Mai Hắc Đế)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
         "id": "kieu-cong-han",
         "ten": "Kiều Công Hãn"
       },
@@ -77134,6 +79698,19 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "dinh-trung-can",
         "ten": "Đình Trung Cần"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "phan-boi-chau",
+        "ten": "Phan Bội Châu"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
       },
       "khoang_cach_m": 0
     },
@@ -77309,6 +79886,19 @@
     {
       "a": {
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "trinh-cong-son",
+        "ten": "Trịnh Công Sơn"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "doan-chuan",
         "ten": "Đoàn Chuẩn"
       },
@@ -77316,6 +79906,45 @@
         "file": "overlays/nu-danh-nhan-lich-su.json",
         "id": "hoang-ngan",
         "ten": "Hoàng Ngân — Phạm Thị Vân"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "the-anh",
+        "ten": "NSND Thế Anh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-trinh-ket-thuc-1786",
+        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "the-anh",
+        "ten": "NSND Thế Anh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "the-anh",
+        "ten": "NSND Thế Anh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-phap-toan-quoc-1946",
+        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
       },
       "khoang_cach_m": 0
     },
@@ -77348,6 +79977,19 @@
     {
       "a": {
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "thanh-nga",
+        "ten": "Thanh Nga"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-nam-ky-1940",
+        "ten": "Nam Kỳ khởi nghĩa"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "diep-van-ky",
         "ten": "Diệp Văn Kỳ"
       },
@@ -77368,6 +80010,19 @@
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "le-tam-ky-su",
         "ten": "Lê Tâm"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "diep-van-ky",
+        "ten": "Diệp Văn Kỳ"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
       },
       "khoang_cach_m": 0
     },
@@ -77570,6 +80225,19 @@
       "a": {
         "file": "overlays/di-tich-qgdb.json",
         "id": null,
+        "ten": "Khu Lưu niệm Phan Bội Châu tại Nam Đàn"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
         "ten": "Mộ và Khu lưu niệm Nguyễn Đình Chiểu"
       },
       "b": {
@@ -77589,6 +80257,19 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "dinh-trung-can",
         "ten": "Đình Trung Cần"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Đình Hoành Sơn"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
       },
       "khoang_cach_m": 0
     },
@@ -77628,6 +80309,19 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "dinh-trung-can",
         "ten": "Đình Trung Cần"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Đền thờ Vua Mai Hắc Đế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
       },
       "khoang_cach_m": 0
     },
@@ -77673,6 +80367,19 @@
     {
       "a": {
         "file": "overlays/di-tich-quoc-gia.json",
+        "id": "lang-hoang-gia-go-cong",
+        "ten": "Lăng Hoàng Gia (họ Phạm Đăng)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-truong-dinh-1862",
+        "ten": "Khởi nghĩa Trương Định"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-quoc-gia.json",
         "id": "thuong-cang-nuoc-man",
         "ten": "Thương cảng cổ Nước Mặn"
       },
@@ -77680,6 +80387,19 @@
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "dao-phan-duan",
         "ten": "Đào Phan Duân"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-trung-can",
+        "ten": "Đình Trung Cần"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
       },
       "khoang_cach_m": 0
     },
@@ -77880,6 +80600,19 @@
     },
     {
       "a": {
+        "file": "overlays/le-hoi-truyen-thong.json",
+        "id": "le-hoi-yen-the",
+        "ten": "Lễ hội Yên Thế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-yen-the-1884",
+        "ten": "Khởi nghĩa Yên Thế"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
         "file": "overlays/nghe-nhan-di-san.json",
         "id": "nghe-nhan-vu-linh-tam",
         "ten": "Vũ Linh Tâm"
@@ -78011,6 +80744,19 @@
     {
       "a": {
         "file": "overlays/nghia-trang-liet-si.json",
+        "id": "dtn-tnxp-c283-quang-binh",
+        "ten": "Khu tưởng niệm Đại đội Thanh niên xung phong C283"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/nghia-trang-liet-si.json",
         "id": "ntls-thanh-son-cao-bang",
         "ten": "Nghĩa trang Thanh Sơn (nghĩa trang liệt sĩ tỉnh Cao Bằng)"
       },
@@ -78049,6 +80795,32 @@
     },
     {
       "a": {
+        "file": "overlays/nha-the-thao-lich-su.json",
+        "id": "le-quang-liem",
+        "ten": "Lê Quang Liêm"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-nam-ky-1940",
+        "ten": "Nam Kỳ khởi nghĩa"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/nha-the-thao-lich-su.json",
+        "id": "vu-thi-huong",
+        "ten": "Vũ Thị Hương"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-thai-nguyen-1917",
+        "ten": "Khởi nghĩa Thái Nguyên"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
         "file": "overlays/nu-danh-nhan-lich-su.json",
         "id": "dam-phuong-nu-su",
         "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
@@ -78062,6 +80834,19 @@
     },
     {
       "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "dam-phuong-nu-su",
+        "ten": "Đạm Phương nữ sử (Công Nữ Đồng Canh)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
         "file": "overlays/su-than-ngoai-giao.json",
         "id": "nguyen-tu-gian",
         "ten": "Nguyễn Tư Giản"
@@ -78070,6 +80855,45 @@
         "file": "overlays/vua-hoang-de.json",
         "id": "ly-chieu-hoang",
         "ten": "Lý Chiêu Hoàng — nữ hoàng đế duy nhất"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "le-tam-ky-su",
+        "ten": "Lê Tâm"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "nguyen-an-nien",
+        "ten": "Nguyễn Ân Niên"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-nam-ky-1940",
+        "ten": "Nam Kỳ khởi nghĩa"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/vua-hoang-de.json",
+        "id": "trinh-kiem",
+        "ten": "Trịnh Kiểm"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-le-trung-hung-bat-dau-1533",
+        "ten": "Nguyễn Kim tôn Lê Trang Tông, mở nhà Lê Trung Hưng"
       },
       "khoang_cach_m": 0
     },
@@ -78323,6 +81147,19 @@
     {
       "a": {
         "file": "overlays/danh-nhan-dan-toc-thieu-so.json",
+        "id": "y-blok-eban",
+        "ten": "Y Blốk Êban"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-buon-ma-thuot-1975",
+        "ten": "Chiến dịch Buôn Ma Thuột"
+      },
+      "khoang_cach_m": 3
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-dan-toc-thieu-so.json",
         "id": "vi-hong",
         "ten": "Vi Hồng (Vi Văn Hồng)"
       },
@@ -78473,6 +81310,32 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "chua-ba-danh",
         "ten": "Chùa Bà Đanh (Bảo Sơn tự)"
+      },
+      "khoang_cach_m": 4
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Dinh Độc Lập"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-my-1954-1975",
+        "ten": "Kháng chiến chống Mỹ, cứu nước"
+      },
+      "khoang_cach_m": 4
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Dinh Độc Lập"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-ho-chi-minh-1975",
+        "ten": "Chiến dịch Hồ Chí Minh"
       },
       "khoang_cach_m": 4
     },
@@ -78707,6 +81570,19 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "dinh-trung-can",
         "ten": "Đình Trung Cần"
+      },
+      "khoang_cach_m": 5
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "ta-quang-buu",
+        "ten": "Tạ Quang Bửu"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-mai-thuc-loan-713",
+        "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu)"
       },
       "khoang_cach_m": 5
     },
@@ -78959,6 +81835,19 @@
     },
     {
       "a": {
+        "file": "overlays/chi-si-cach-mang.json",
+        "id": "tran-chanh-chieu",
+        "ten": "Trần Chánh Chiếu"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-nguyen-trung-truc-1861",
+        "ten": "Khởi nghĩa Nguyễn Trung Trực"
+      },
+      "khoang_cach_m": 11
+    },
+    {
+      "a": {
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "dang-cong-chat",
         "ten": "Đặng Công Chất"
@@ -79089,6 +81978,32 @@
     },
     {
       "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Gò Đống Đa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-thanh-1788",
+        "ten": "Kháng chiến chống quân Thanh xâm lược"
+      },
+      "khoang_cach_m": 19
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Gò Đống Đa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ngoc-hoi-dong-da-1789",
+        "ten": "Trận Ngọc Hồi – Đống Đa"
+      },
+      "khoang_cach_m": 19
+    },
+    {
+      "a": {
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "kinh-thanh-hue-that-thu-1885",
         "ten": "Kinh thành Huế thất thủ (1885)"
@@ -79097,6 +82012,19 @@
         "file": "overlays/unesco.json",
         "id": null,
         "ten": "Quần thể di tích Cố đô Huế"
+      },
+      "khoang_cach_m": 21
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Quần thể di tích Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ"
       },
       "khoang_cach_m": 21
     },
@@ -79303,6 +82231,45 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "chua-nguyen-bat-dau-1558",
+        "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-vi-than-cong",
+        "ten": "Bộ Cửu vị thần công"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "quang-trung-len-ngoi-1788",
+        "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-vi-than-cong",
+        "ten": "Bộ Cửu vị thần công"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-nguyen-bat-dau-1802",
+        "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-vi-than-cong",
+        "ten": "Bộ Cửu vị thần công"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "nha-tay-son-ket-thuc-1802",
         "ten": "Nhà Tây Sơn kết thúc"
       },
@@ -79318,6 +82285,45 @@
         "file": "timeline/moc-lich-su.json",
         "id": "nha-nguyen-ket-thuc-1945",
         "ten": "Vua Bảo Đại thoái vị, nhà Nguyễn kết thúc"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-dinh",
+        "ten": "Bộ Cửu đỉnh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-nguyen-bat-dau-1558",
+        "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-dinh",
+        "ten": "Bộ Cửu đỉnh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "quang-trung-len-ngoi-1788",
+        "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-dinh",
+        "ten": "Bộ Cửu đỉnh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-nguyen-bat-dau-1802",
+        "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn"
       },
       "khoang_cach_m": 31
     },
@@ -79357,6 +82363,45 @@
         "file": "overlays/di-tich-qgdb.json",
         "id": null,
         "ten": "Thành Điện Hải"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "chuong-ngo-mon-thoi-minh-mang",
+        "ten": "Chuông Ngọ Môn thời Minh Mạng"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-nguyen-bat-dau-1558",
+        "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "chuong-ngo-mon-thoi-minh-mang",
+        "ten": "Chuông Ngọ Môn thời Minh Mạng"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "quang-trung-len-ngoi-1788",
+        "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "chuong-ngo-mon-thoi-minh-mang",
+        "ten": "Chuông Ngọ Môn thời Minh Mạng"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-nguyen-bat-dau-1802",
+        "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn"
       },
       "khoang_cach_m": 31
     },
@@ -79422,6 +82467,32 @@
         "file": "overlays/le-hoi-truyen-thong.json",
         "id": "le-hoi-den-dong-cuong",
         "ten": "Lễ hội Đền Đông Cuông"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "nguyen-huu-thien-kts",
+        "ten": "Nguyễn Hữu Thiện"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-my-1954-1975",
+        "ten": "Kháng chiến chống Mỹ, cứu nước"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "nguyen-huu-thien-kts",
+        "ten": "Nguyễn Hữu Thiện"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-ho-chi-minh-1975",
+        "ten": "Chiến dịch Hồ Chí Minh"
       },
       "khoang_cach_m": 31
     },
@@ -79493,6 +82564,19 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "gianh-chinh-quyen-hue-23-8-1945",
+        "ten": "Khởi nghĩa giành chính quyền tại Huế (23/8/1945)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chong-thue-trung-ky-1908",
+        "ten": "Phong trào chống thuế Trung Kỳ"
+      },
+      "khoang_cach_m": 32
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "tong-tien-cong-mau-than-1968-sai-gon",
         "ten": "Tổng tiến công và nổi dậy Mậu Thân 1968 tại Sài Gòn – Gia Định"
       },
@@ -79500,6 +82584,32 @@
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "nguyen-huu-thien-kts",
         "ten": "Nguyễn Hữu Thiện"
+      },
+      "khoang_cach_m": 35
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tong-tien-cong-mau-than-1968-sai-gon",
+        "ten": "Tổng tiến công và nổi dậy Mậu Thân 1968 tại Sài Gòn – Gia Định"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-my-1954-1975",
+        "ten": "Kháng chiến chống Mỹ, cứu nước"
+      },
+      "khoang_cach_m": 35
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tong-tien-cong-mau-than-1968-sai-gon",
+        "ten": "Tổng tiến công và nổi dậy Mậu Thân 1968 tại Sài Gòn – Gia Định"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-ho-chi-minh-1975",
+        "ten": "Chiến dịch Hồ Chí Minh"
       },
       "khoang_cach_m": 35
     },
@@ -79591,6 +82701,19 @@
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "vu-kiet",
         "ten": "Vũ Kiệt — Trạng Vít"
+      },
+      "khoang_cach_m": 48
+    },
+    {
+      "a": {
+        "file": "overlays/khoa-bang-danh-nhan.json",
+        "id": "vu-kiet",
+        "ten": "Vũ Kiệt — Trạng Vít"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ly-bi-542",
+        "ten": "Khởi nghĩa Lý Bí, lập nước Vạn Xuân"
       },
       "khoang_cach_m": 48
     },
@@ -79708,6 +82831,45 @@
         "file": "overlays/danh-thang-thien-nhien.json",
         "id": "nui-ngoc-linh",
         "ten": "Núi Ngọc Linh"
+      },
+      "khoang_cach_m": 64
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ (1885)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-nguyen-bat-dau-1558",
+        "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn"
+      },
+      "khoang_cach_m": 64
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ (1885)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "quang-trung-len-ngoi-1788",
+        "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung"
+      },
+      "khoang_cach_m": 64
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ (1885)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-nguyen-bat-dau-1802",
+        "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn"
       },
       "khoang_cach_m": 64
     },
@@ -79947,6 +83109,45 @@
     },
     {
       "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-trinh-ket-thuc-1786",
+        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
+      },
+      "khoang_cach_m": 78
+    },
+    {
+      "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
+      },
+      "khoang_cach_m": 78
+    },
+    {
+      "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-phap-toan-quoc-1946",
+        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 78
+    },
+    {
+      "a": {
         "file": "overlays/bao-tang.json",
         "id": "bao-tang-phu-nu-viet-nam",
         "ten": "Bảo tàng Phụ nữ Việt Nam"
@@ -79968,6 +83169,19 @@
         "file": "overlays/nghia-trang-liet-si.json",
         "id": "dtn-dien-bien-phu-d1",
         "ten": "Tượng đài Chiến thắng Điện Biên Phủ (đồi D1)"
+      },
+      "khoang_cach_m": 79
+    },
+    {
+      "a": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "dtn-dien-bien-phu-d1",
+        "ten": "Tượng đài Chiến thắng Điện Biên Phủ (đồi D1)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-dien-bien-phu-1954",
+        "ten": "Chiến dịch Điện Biên Phủ"
       },
       "khoang_cach_m": 79
     },
@@ -79999,6 +83213,58 @@
     },
     {
       "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
+        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 85
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Quần thể di tích Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-nguyen-bat-dau-1558",
+        "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn"
+      },
+      "khoang_cach_m": 85
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Quần thể di tích Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "quang-trung-len-ngoi-1788",
+        "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung"
+      },
+      "khoang_cach_m": 85
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Quần thể di tích Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-nguyen-bat-dau-1802",
+        "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn"
+      },
+      "khoang_cach_m": 85
+    },
+    {
+      "a": {
         "file": "overlays/unesco.json",
         "id": null,
         "ten": "Quần thể di tích Cố đô Huế"
@@ -80020,6 +83286,19 @@
         "file": "timeline/moc-lich-su.json",
         "id": "nha-nguyen-ket-thuc-1945",
         "ten": "Vua Bảo Đại thoái vị, nhà Nguyễn kết thúc"
+      },
+      "khoang_cach_m": 85
+    },
+    {
+      "a": {
+        "file": "overlays/vua-hoang-de.json",
+        "id": "trinh-trang",
+        "ten": "Trịnh Tráng — Thanh Đô Vương"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-le-trung-hung-bat-dau-1533",
+        "ten": "Nguyễn Kim tôn Lê Trang Tông, mở nhà Lê Trung Hưng"
       },
       "khoang_cach_m": 85
     },
@@ -80065,6 +83344,19 @@
     {
       "a": {
         "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-vi-than-cong",
+        "ten": "Bộ Cửu vị thần công"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ"
+      },
+      "khoang_cach_m": 88
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
         "id": "bo-cuu-dinh",
         "ten": "Bộ Cửu đỉnh"
       },
@@ -80072,6 +83364,19 @@
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "kinh-thanh-hue-that-thu-1885",
         "ten": "Kinh thành Huế thất thủ (1885)"
+      },
+      "khoang_cach_m": 88
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-cuu-dinh",
+        "ten": "Bộ Cửu đỉnh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ"
       },
       "khoang_cach_m": 88
     },
@@ -80098,6 +83403,19 @@
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "kinh-thanh-hue-that-thu-1885",
         "ten": "Kinh thành Huế thất thủ (1885)"
+      },
+      "khoang_cach_m": 88
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "chuong-ngo-mon-thoi-minh-mang",
+        "ten": "Chuông Ngọ Môn thời Minh Mạng"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ"
       },
       "khoang_cach_m": 88
     },
@@ -80207,6 +83525,19 @@
     },
     {
       "a": {
+        "file": "overlays/di-san-phi-vat-the.json",
+        "id": "nha-nhac-cung-dinh-hue",
+        "ten": "Nhã nhạc – Âm nhạc cung đình Việt Nam"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ"
+      },
+      "khoang_cach_m": 95
+    },
+    {
+      "a": {
         "file": "overlays/di-tich-qgdb.json",
         "id": null,
         "ten": "Thành Nhà Hồ"
@@ -80228,6 +83559,19 @@
         "file": "overlays/di-tich-qgdb.json",
         "id": null,
         "ten": "Quần thể kiến trúc Cố đô Huế"
+      },
+      "khoang_cach_m": 98
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Quần thể kiến trúc Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-kinh-thanh-hue-that-thu-1885",
+        "ten": "Kinh thành Huế thất thủ"
       },
       "khoang_cach_m": 98
     },
@@ -80525,6 +83869,19 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-dong-kinh-nghia-thuc-1907",
+        "ten": "Thành lập Đông Kinh Nghĩa Thục"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/chi-si-cach-mang.json",
+        "id": "hoang-thi-minh-ho",
+        "ten": "Hoàng Thị Minh Hồ"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "tac-pham-van-minh-tan-hoc-sach-1907",
         "ten": "Văn minh tân học sách (Đông Kinh Nghĩa Thục)"
       },
@@ -80551,8 +83908,60 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chieu-doi-do-1010",
+        "ten": "Chiếu dời đô, lập kinh đô Thăng Long"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "nha-ly-ket-thuc-1225",
         "ten": "Nhà Lý kết thúc"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-tran-bat-dau-1225",
+        "ten": "Trần Cảnh lên ngôi, lập nhà Trần"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-hoi-nghi-dien-hong-1284",
+        "ten": "Hội nghị Diên Hồng"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-chiem-thanh-1371-1390",
+        "ten": "Kháng chiến chống quân Chiêm Thành xâm phạm Thăng Long"
       },
       "khoang_cach_m": 109
     },
@@ -80577,8 +83986,47 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "nha-le-so-bat-dau-1428",
+        "ten": "Lê Lợi lên ngôi, lập nhà Hậu Lê"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-luat-hong-duc-1483",
+        "ten": "Ban hành Quốc triều hình luật (Luật Hồng Đức)"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "nha-le-so-ket-thuc-1527",
         "ten": "Nhà Lê sơ kết thúc"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-mac-bat-dau-1527",
+        "ten": "Mạc Đăng Dung lên ngôi, lập nhà Mạc"
       },
       "khoang_cach_m": 109
     },
@@ -80603,8 +84051,8 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
-        "id": "nha-le-trung-hung-ket-thuc-1788",
-        "ten": "Nhà Lê Trung Hưng kết thúc"
+        "id": "su-kien-le-the-tong-tro-ve-dong-do-1593",
+        "ten": "Vua Lê Thế Tông trở về Đông Đô"
       },
       "khoang_cach_m": 109
     },
@@ -80616,8 +84064,8 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
-        "id": "khang-chien-chong-chiem-thanh-1371-1390",
-        "ten": "Kháng chiến chống quân Chiêm Thành xâm phạm Thăng Long"
+        "id": "nha-le-trung-hung-ket-thuc-1788",
+        "ten": "Nhà Lê Trung Hưng kết thúc"
       },
       "khoang_cach_m": 109
     },
@@ -80646,6 +84094,19 @@
         "ten": "Máy chém"
       },
       "khoang_cach_m": 110
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "chien-dau-bao-ve-bien-gioi-cao-bang-1979",
+        "ten": "Chiến đấu bảo vệ biên giới Cao Bằng"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-bien-gioi-thu-dong-1950",
+        "ten": "Chiến dịch Biên giới Thu Đông 1950"
+      },
+      "khoang_cach_m": 111
     },
     {
       "a": {
@@ -80792,6 +84253,19 @@
     },
     {
       "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "han-mac-tu",
+        "ten": "Nhà thơ Hàn Mặc Tử"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành"
+      },
+      "khoang_cach_m": 115
+    },
+    {
+      "a": {
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "den-kim-lien-tran-nam",
         "ten": "Đền Kim Liên — trấn Nam Thăng Long tứ trấn"
@@ -80852,6 +84326,19 @@
         "file": "overlays/nghia-trang-liet-si.json",
         "id": "dtn-tnxp-c283-quang-binh",
         "ten": "Khu tưởng niệm Đại đội Thanh niên xung phong C283"
+      },
+      "khoang_cach_m": 122
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-ninh-nhat-le-1672",
+        "ten": "Trận Trấn Ninh — Nhật Lệ (1672), kết thúc chiến tranh Trịnh-Nguyễn"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành"
       },
       "khoang_cach_m": 122
     },
@@ -80967,6 +84454,45 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "chua-nguyen-bat-dau-1558",
+        "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn"
+      },
+      "khoang_cach_m": 131
+    },
+    {
+      "a": {
+        "file": "overlays/di-san-phi-vat-the.json",
+        "id": "nha-nhac-cung-dinh-hue",
+        "ten": "Nhã nhạc – Âm nhạc cung đình Việt Nam"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "quang-trung-len-ngoi-1788",
+        "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung"
+      },
+      "khoang_cach_m": 131
+    },
+    {
+      "a": {
+        "file": "overlays/di-san-phi-vat-the.json",
+        "id": "nha-nhac-cung-dinh-hue",
+        "ten": "Nhã nhạc – Âm nhạc cung đình Việt Nam"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-nguyen-bat-dau-1802",
+        "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn"
+      },
+      "khoang_cach_m": 131
+    },
+    {
+      "a": {
+        "file": "overlays/di-san-phi-vat-the.json",
+        "id": "nha-nhac-cung-dinh-hue",
+        "ten": "Nhã nhạc – Âm nhạc cung đình Việt Nam"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "nha-tay-son-ket-thuc-1802",
         "ten": "Nhà Tây Sơn kết thúc"
       },
@@ -81019,6 +84545,45 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "chua-nguyen-bat-dau-1558",
+        "ten": "Nguyễn Hoàng vào trấn thủ Thuận Hoá, mở nghiệp chúa Nguyễn"
+      },
+      "khoang_cach_m": 135
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Quần thể kiến trúc Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "quang-trung-len-ngoi-1788",
+        "ten": "Nguyễn Huệ lên ngôi Hoàng đế, hiệu Quang Trung"
+      },
+      "khoang_cach_m": 135
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Quần thể kiến trúc Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-nguyen-bat-dau-1802",
+        "ten": "Nguyễn Ánh lên ngôi, lập nhà Nguyễn"
+      },
+      "khoang_cach_m": 135
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Quần thể kiến trúc Cố đô Huế"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "nha-tay-son-ket-thuc-1802",
         "ten": "Nhà Tây Sơn kết thúc"
       },
@@ -81062,6 +84627,58 @@
         "ten": "Trần Văn Kỷ (Trung thư lệnh Tây Sơn)"
       },
       "khoang_cach_m": 140
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "le-trinh-bac-phat-1559",
+        "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 142
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 142
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-hue-diet-trinh-1786",
+        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 142
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "the-anh",
+        "ten": "NSND Thế Anh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 142
     },
     {
       "a": {
@@ -81351,6 +84968,32 @@
     },
     {
       "a": {
+        "file": "overlays/vua-hoang-de.json",
+        "id": "le-thai-tong",
+        "ten": "Lê Thái Tông"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-lam-son-1418",
+        "ten": "Lê Lợi dựng cờ khởi nghĩa Lam Sơn"
+      },
+      "khoang_cach_m": 153
+    },
+    {
+      "a": {
+        "file": "overlays/vua-hoang-de.json",
+        "id": "le-nhan-tong",
+        "ten": "Lê Nhân Tông"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-lam-son-1418",
+        "ten": "Lê Lợi dựng cờ khởi nghĩa Lam Sơn"
+      },
+      "khoang_cach_m": 153
+    },
+    {
+      "a": {
         "file": "overlays/chi-si-cach-mang.json",
         "id": "vuong-thi-lai",
         "ten": "Vương Thị Lai"
@@ -81372,6 +85015,19 @@
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "vu-tuyen-hoang",
         "ten": "GS.VS, Anh hùng Lao động Vũ Tuyên Hoàng"
+      },
+      "khoang_cach_m": 154
+    },
+    {
+      "a": {
+        "file": "overlays/vua-hoang-de.json",
+        "id": "trinh-tac",
+        "ten": "Trịnh Tạc — Tây Định Vương"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-le-trung-hung-bat-dau-1533",
+        "ten": "Nguyễn Kim tôn Lê Trang Tông, mở nhà Lê Trung Hưng"
       },
       "khoang_cach_m": 154
     },
@@ -81494,6 +85150,32 @@
     },
     {
       "a": {
+        "file": "overlays/le-hoi-truyen-thong.json",
+        "id": "le-hoi-dinh-than-nguyen-trung-truc",
+        "ten": "Lễ hội Đình thần Nguyễn Trung Trực"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-nguyen-trung-truc-1861",
+        "ten": "Khởi nghĩa Nguyễn Trung Trực"
+      },
+      "khoang_cach_m": 157
+    },
+    {
+      "a": {
+        "file": "overlays/thanh-hoang-danh-than.json",
+        "id": "nguyen-trung-truc-dinh-than",
+        "ten": "Nguyễn Trung Trực — Đình thần Rạch Giá"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-nguyen-trung-truc-1861",
+        "ten": "Khởi nghĩa Nguyễn Trung Trực"
+      },
+      "khoang_cach_m": 157
+    },
+    {
+      "a": {
         "file": "overlays/anh-hung-can-hien-dai.json",
         "id": "le-thi-dung-ham-rong",
         "ten": "Anh hùng LLVTND Lê Thị Dung"
@@ -81554,6 +85236,32 @@
         "file": "overlays/danh-nhan-dan-toc-thieu-so.json",
         "id": "dtts-lo-van-hac",
         "ten": "Lò Văn Hặc"
+      },
+      "khoang_cach_m": 160
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-cau-giay-1873",
+        "ten": "Trận Cầu Giấy (lần 1)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-cau-giay-lan-2-1883",
+        "ten": "Trận Cầu Giấy lần thứ hai"
+      },
+      "khoang_cach_m": 160
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-cau-giay-1883",
+        "ten": "Trận Cầu Giấy (lần 2)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-cau-giay-lan-1-1873",
+        "ten": "Trận Cầu Giấy lần thứ nhất"
       },
       "khoang_cach_m": 160
     },
@@ -81663,6 +85371,19 @@
     },
     {
       "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Văn Miếu - Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 162
+    },
+    {
+      "a": {
         "file": "overlays/nghia-trang-liet-si.json",
         "id": "ntls-dong-thap",
         "ten": "Nghĩa trang liệt sĩ tỉnh Đồng Tháp"
@@ -81673,6 +85394,19 @@
         "ten": "Đỗ Công Tường (Ông Chủ Chợ Cao Lãnh)"
       },
       "khoang_cach_m": 162
+    },
+    {
+      "a": {
+        "file": "overlays/khoa-bang-danh-nhan.json",
+        "id": "van-mieu-quoc-tu-giam",
+        "ten": "Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 164
     },
     {
       "a": {
@@ -81949,6 +85683,19 @@
     },
     {
       "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "thai-nguyen-1917",
+        "ten": "Khởi nghĩa Thái Nguyên 1917"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-thai-nguyen-1917",
+        "ten": "Khởi nghĩa Thái Nguyên"
+      },
+      "khoang_cach_m": 178
+    },
+    {
+      "a": {
         "file": "overlays/bao-vat-quoc-gia.json",
         "id": "dai-tho-my-son-a10",
         "ten": "Đài thờ Mỹ Sơn A10"
@@ -81988,6 +85735,32 @@
     },
     {
       "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "ta-ty",
+        "ten": "Tạ Tỵ"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 182
+    },
+    {
+      "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-lap-quoc-tu-giam-1076",
+        "ten": "Lập Quốc Tử Giám"
+      },
+      "khoang_cach_m": 182
+    },
+    {
+      "a": {
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "khoi-nghia-ba-trieu-248",
         "ten": "Khởi nghĩa Bà Triệu 248"
@@ -81996,6 +85769,19 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "chua-sung-nghiem-dien-thanh",
         "ten": "Chùa Sùng Nghiêm Diên Thánh (chùa Duy Tinh)"
+      },
+      "khoang_cach_m": 184
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "chua-sung-nghiem-dien-thanh",
+        "ten": "Chùa Sùng Nghiêm Diên Thánh (chùa Duy Tinh)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ba-trieu-248",
+        "ten": "Khởi nghĩa Bà Triệu"
       },
       "khoang_cach_m": 184
     },
@@ -82100,6 +85886,45 @@
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "the-anh",
         "ten": "NSND Thế Anh"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
+        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chua-trinh-ket-thuc-1786",
+        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
+        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
+        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
+        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-phap-toan-quoc-1946",
+        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
       },
       "khoang_cach_m": 188
     },
