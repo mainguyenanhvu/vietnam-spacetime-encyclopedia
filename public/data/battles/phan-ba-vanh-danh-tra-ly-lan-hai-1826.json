@@ -1,0 +1,113 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Phan Bá Vành, giai đoạn cao trào 1826 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "phan-ba-vanh-danh-tra-ly-lan-hai-1826",
+  "ten": "Nghĩa quân Phan Bá Vành đánh phá phủ Trà Lý và Lân Hải (1826)",
+  "nam": 1826,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phan Bá Vành, Võ Đức Cát, Nguyễn Hạnh",
+  "doi_thu": "Triều Nguyễn",
+  "dia_diem": "Phủ Trà Lý, phủ Lân Hải (Quảng Yên)",
+  "lien_quan_tinh": [
+    "hung-yen"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          380
+        ],
+        [
+          700,
+          300
+        ]
+      ],
+      "nhan": "Vùng ven biển phía Bắc"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "lien-ket-vo-duc-cat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 450,
+      "nhan": "Liên kết Võ Đức Cát, Nguyễn Hạnh"
+    },
+    {
+      "id": "phu-tra-ly",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 450,
+      "y": 380,
+      "nhan": "Phủ Trà Lý"
+    },
+    {
+      "id": "phu-lan-hai",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 300,
+      "nhan": "Phủ Lân Hải (Quảng Yên)"
+    },
+    {
+      "id": "co-mo-rong-kiem-soat",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 650,
+      "y": 230,
+      "nhan": "Mở rộng vùng kiểm soát ven biển"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Liên kết với nghĩa binh Võ Đức Cát, Nguyễn Hạnh",
+      "mo_ta": "Phan Bá Vành liên kết với nghĩa binh Võ Đức Cát và Nguyễn Hạnh.",
+      "hien": [
+        "lien-ket-vo-duc-cat"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đánh phá phủ Trà Lý",
+      "mo_ta": "Nghĩa quân đánh phá phủ Trà Lý.",
+      "hien": [
+        "lien-ket-vo-duc-cat",
+        "phu-tra-ly"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh phá phủ Lân Hải (Quảng Yên)",
+      "mo_ta": "Nghĩa quân tiếp tục đánh phá phủ Lân Hải.",
+      "hien": [
+        "phu-tra-ly",
+        "phu-lan-hai"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mở rộng vùng kiểm soát ven biển phía Bắc",
+      "mo_ta": "Chiến thắng mở rộng vùng kiểm soát của nghĩa quân ra vùng ven biển phía Bắc.",
+      "hien": [
+        "phu-lan-hai",
+        "co-mo-rong-kiem-soat"
+      ]
+    }
+  ],
+  "ket_qua": "Phan Bá Vành liên kết với nghĩa binh Võ Đức Cát và Nguyễn Hạnh, đánh phá hai phủ Trà Lý và Lân Hải, mở rộng vùng kiểm soát của nghĩa quân ra vùng ven biển phía Bắc.",
+  "y_nghia": "Giai đoạn đỉnh cao của khởi nghĩa Phan Bá Vành, thể hiện khả năng liên kết các lực lượng nghĩa quân địa phương.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
+    "Lịch sử Việt Nam (Viện Sử học)",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Phan Bá Vành, kết thúc 1827 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tra-lu-that-thu-phan-ba-vanh-bi-bat-1827",
+  "ten": "Trà Lũ thất thủ, Phan Bá Vành bị bắt, kết thúc khởi nghĩa (1827)",
+  "nam": 1827,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phan Bá Vành (nghĩa quân); Nguyễn Công Trứ, Phạm Văn Lý (triều đình)",
+  "doi_thu": "Triều Nguyễn",
+  "dia_diem": "Phủ Xuân Trường – Kiến Xương, Chợ Quán, căn cứ Trà Lũ",
+  "lien_quan_tinh": [
+    "ninh-binh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          380
+        ],
+        [
+          700,
+          300
+        ]
+      ],
+      "nhan": "Vùng Nam Định – Thái Bình"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "phu-xuan-truong-kien-xuong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Chiếm phủ Xuân Trường – Kiến Xương"
+    },
+    {
+      "id": "cho-quan",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 380,
+      "nhan": "Vây quân triều đình ở Chợ Quán"
+    },
+    {
+      "id": "quan-dich-nguyen-cong-tru",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 620,
+      "y": 320,
+      "nhan": "Nguyễn Công Trứ, Phạm Văn Lý phản công"
+    },
+    {
+      "id": "can-cu-tra-lu-2",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 350,
+      "y": 280,
+      "nhan": "Lui về cố thủ Trà Lũ"
+    },
+    {
+      "id": "co-phan-ba-vanh-bi-bat",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 400,
+      "y": 200,
+      "nhan": "Trà Lũ thất thủ, Phan Bá Vành bị bắt, tự sát"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chiếm hai phủ Xuân Trường - Kiến Xương",
+      "mo_ta": "Nghĩa quân chiếm hai phủ Xuân Trường – Kiến Xương.",
+      "hien": [
+        "phu-xuan-truong-kien-xuong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Vây quân triều đình ở Chợ Quán",
+      "mo_ta": "Nghĩa quân vây quân triều đình ở Chợ Quán.",
+      "hien": [
+        "phu-xuan-truong-kien-xuong",
+        "cho-quan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bị phản công dồn dập",
+      "mo_ta": "Nghĩa quân bị quân triều đình dưới quyền Nguyễn Công Trứ, Phạm Văn Lý phản công dồn dập.",
+      "hien": [
+        "cho-quan",
+        "quan-dich-nguyen-cong-tru"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Lui về cố thủ Trà Lũ",
+      "mo_ta": "Nghĩa quân phải lui về cố thủ tại căn cứ Trà Lũ.",
+      "hien": [
+        "quan-dich-nguyen-cong-tru",
+        "can-cu-tra-lu-2"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trà Lũ thất thủ, Phan Bá Vành bị bắt, tự sát",
+      "mo_ta": "Quân triều đình vây và hạ được căn cứ, Phan Bá Vành bị bắt và tự sát, kết thúc cuộc khởi nghĩa gần 6 năm.",
+      "hien": [
+        "co-phan-ba-vanh-bi-bat"
+      ]
+    }
+  ],
+  "ket_qua": "Sau khi chiếm hai phủ Xuân Trường – Kiến Xương và vây quân triều đình ở Chợ Quán, nghĩa quân bị phản công dồn dập, phải lui về cố thủ Trà Lũ; quân triều đình vây và hạ được căn cứ, Phan Bá Vành bị bắt và tự sát, kết thúc cuộc khởi nghĩa gần 6 năm.",
+  "y_nghia": "Kết thúc một trong những cuộc khởi nghĩa nông dân lớn nhất đầu triều Nguyễn, phản ánh mâu thuẫn xã hội sâu sắc giữa nông dân và chính quyền đầu thế kỷ 19.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
+    "Lịch sử Việt Nam (Viện Sử học)",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

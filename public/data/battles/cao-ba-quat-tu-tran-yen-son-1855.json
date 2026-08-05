@@ -1,0 +1,111 @@
+{
+  "ghi_chu": "Sa đồ Cao Bá Quát tử trận, kết thúc khởi nghĩa Mỹ Lương 1855 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Overlay ghi năm mất của Cao Bá Quát có tài liệu chép khác nhau (cuối 1854 hoặc 1855) — giữ theo năm overlay đã chọn (1855), KHÔNG tự chọn lại. trang_thai=draft chờ soát §9.",
+  "id": "cao-ba-quat-tu-tran-yen-son-1855",
+  "ten": "Cao Bá Quát tử trận tại Yên Sơn, kết thúc khởi nghĩa Mỹ Lương (1855)",
+  "nam": 1855,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Cao Bá Quát",
+  "doi_thu": "Triều Nguyễn (Tự Đức)",
+  "dia_diem": "Huyện Yên Sơn, nay Hà Nội",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          150
+        ],
+        [
+          450,
+          110
+        ],
+        [
+          800,
+          160
+        ]
+      ],
+      "nhan": "Vùng huyện Yên Sơn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-cao-ba-quat-danh-yen-son",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Cao Bá Quát cầm quân đánh Yên Sơn"
+    },
+    {
+      "id": "huyen-yen-son",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 330,
+      "nhan": "Huyện Yên Sơn"
+    },
+    {
+      "id": "co-tu-tran-1855",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 450,
+      "y": 260,
+      "nhan": "Cao Bá Quát tử trận (1855)"
+    },
+    {
+      "id": "co-tan-quan-1856",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 620,
+      "y": 190,
+      "nhan": "Tàn quân bị dẹp hẳn cuối 1856"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Cao Bá Quát trực tiếp cầm quân đánh Yên Sơn",
+      "mo_ta": "Cao Bá Quát trực tiếp cầm quân đánh huyện Yên Sơn.",
+      "hien": [
+        "quan-ta-cao-ba-quat-danh-yen-son",
+        "huyen-yen-son"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tử trận tại Yên Sơn (1855)",
+      "mo_ta": "Cao Bá Quát tử trận tại đây trong năm 1855.",
+      "hien": [
+        "huyen-yen-son",
+        "co-tu-tran-1855"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nghĩa quân dần tan rã",
+      "mo_ta": "Sau khi mất chủ tướng, nghĩa quân dần tan rã.",
+      "hien": [
+        "co-tu-tran-1855"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tàn quân cầm cự đến cuối 1856",
+      "mo_ta": "Tàn quân cầm cự đến cuối 1856 mới bị dẹp hẳn; Tự Đức hạ lệnh tru di dòng họ Cao Bá Quát.",
+      "hien": [
+        "co-tan-quan-1856"
+      ]
+    }
+  ],
+  "ket_qua": "Cao Bá Quát trực tiếp cầm quân đánh huyện Yên Sơn và tử trận tại đây trong năm 1855; nghĩa quân dần tan rã, tàn quân cầm cự đến cuối 1856 mới bị dẹp hẳn, Tự Đức hạ lệnh tru di dòng họ Cao Bá Quát.",
+  "y_nghia": "Kết thúc bi kịch của một trong những danh sĩ tài hoa nhất thế kỷ 19, khép lại cuộc khởi nghĩa Mỹ Lương.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Tự Đức",
+    "Lịch sử Việt Nam (Viện Sử học)",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

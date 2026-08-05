@@ -1,0 +1,112 @@
+{
+  "ghi_chu": "Sa đồ Chế Bồng Nga đánh Thăng Long lần 3 (1378) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "che-bong-nga-danh-thang-long-1378",
+  "ten": "Chế Bồng Nga đánh phá kinh thành Thăng Long lần thứ ba (1378)",
+  "nam": 1378,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chế Bồng Nga",
+  "doi_thu": "Đại Việt",
+  "dia_diem": "Kinh thành Thăng Long, qua sông Đại Hoàng",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          400,
+          330
+        ],
+        [
+          800,
+          310
+        ]
+      ],
+      "nhan": "Sông Đại Hoàng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thuyen-dich-song-dai-hoang",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 250,
+      "y": 400,
+      "nhan": "Chế Bồng Nga theo sông Đại Hoàng"
+    },
+    {
+      "id": "thang-long-lan-3",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 500,
+      "y": 320,
+      "nhan": "Thăng Long bị cướp phá lần thứ ba"
+    },
+    {
+      "id": "co-bat-luc-phong-thu",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 650,
+      "y": 250,
+      "nhan": "Nhà Trần bất lực phòng thủ"
+    },
+    {
+      "id": "co-de-doa-thuong-truc",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 700,
+      "y": 180,
+      "nhan": "Mối đe dọa thường trực tiếp diễn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tiếp tục đưa quân theo sông Đại Hoàng",
+      "mo_ta": "Năm 1378, Chế Bồng Nga tiếp tục đưa quân theo sông Đại Hoàng.",
+      "hien": [
+        "thuyen-dich-song-dai-hoang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tiến ra cướp phá Thăng Long lần thứ ba",
+      "mo_ta": "Quân Chiêm tiến ra cướp phá Thăng Long lần thứ ba trong vòng 7 năm.",
+      "hien": [
+        "thuyen-dich-song-dai-hoang",
+        "thang-long-lan-3"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nhà Trần bất lực phòng thủ",
+      "mo_ta": "Sự việc cho thấy nhà Trần gần như bất lực trong việc phòng thủ kinh thành trước các đợt tấn công đường thủy.",
+      "hien": [
+        "thang-long-lan-3",
+        "co-bat-luc-phong-thu"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiếp diễn mối đe dọa thường trực",
+      "mo_ta": "Mối đe dọa từ Chiêm Thành tiếp tục đè nặng lên triều đình nhà Trần.",
+      "hien": [
+        "co-de-doa-thuong-truc"
+      ]
+    }
+  ],
+  "ket_qua": "Chế Bồng Nga tiếp tục đưa quân theo sông Đại Hoàng tiến ra cướp phá Thăng Long lần thứ ba trong vòng 7 năm, cho thấy nhà Trần gần như bất lực trong việc phòng thủ kinh thành.",
+  "y_nghia": "Một trong chuỗi 4 lần Chế Bồng Nga hạ Thăng Long, cho thấy mức độ suy yếu nghiêm trọng của khả năng phòng thủ nhà Trần cuối thế kỷ 14.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt Sử Ký Toàn Thư — Bản kỷ, Kỷ nhà Trần",
+    "Khâm định Việt sử thông giám cương mục",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

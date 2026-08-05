@@ -1,0 +1,131 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Ánh hạ thành Phú Xuân 1801 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-anh-ha-thanh-phu-xuan-1801",
+  "ten": "Nguyễn Ánh hạ thành Phú Xuân (1801)",
+  "nam": 1801,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Ánh",
+  "doi_thu": "Tây Sơn (Nguyễn Quang Toản)",
+  "dia_diem": "Kinh thành Phú Xuân, nay tỉnh Huế",
+  "lien_quan_tinh": [
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          1000,
+          50
+        ],
+        [
+          1000,
+          300
+        ],
+        [
+          750,
+          250
+        ]
+      ],
+      "nhan": "Biển Đông"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-thua-thang-thi-nai",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 480,
+      "nhan": "Thừa thắng sau Thị Nại"
+    },
+    {
+      "id": "da-nang-1801",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 420,
+      "nhan": "Đà Nẵng bị chiếm"
+    },
+    {
+      "id": "cua-tu-dung-cua-eo",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 360,
+      "nhan": "Cửa Tư Dung, cửa Eo"
+    },
+    {
+      "id": "quan-dich-quang-toan-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 620,
+      "y": 290,
+      "nhan": "Quang Toản thua chạy ra Bắc"
+    },
+    {
+      "id": "kinh-thanh-phu-xuan-1801-2",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 550,
+      "y": 220,
+      "nhan": "Kinh thành Phú Xuân bị chiếm (3/5/1801)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Thừa thắng sau chiến thắng Thị Nại",
+      "mo_ta": "Sau chiến thắng Thị Nại (2/1801), Nguyễn Ánh thừa thắng đưa quân ra Bắc.",
+      "hien": [
+        "co-thua-thang-thi-nai"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đánh chiếm Đà Nẵng",
+      "mo_ta": "Quân Nguyễn Ánh đánh chiếm Đà Nẵng.",
+      "hien": [
+        "co-thua-thang-thi-nai",
+        "da-nang-1801"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Giao chiến ở cửa Tư Dung và cửa Eo",
+      "mo_ta": "Quân Nguyễn giao chiến với quân Tây Sơn ở cửa Tư Dung và cửa Eo.",
+      "hien": [
+        "da-nang-1801",
+        "cua-tu-dung-cua-eo"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quang Toản thua trận bỏ chạy ra Bắc",
+      "mo_ta": "Nguyễn Quang Toản thua trận phải bỏ chạy ra Bắc.",
+      "hien": [
+        "cua-tu-dung-cua-eo",
+        "quan-dich-quang-toan-chay"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chiếm kinh thành Phú Xuân (3/5/1801)",
+      "mo_ta": "Nguyễn Ánh vào chiếm kinh thành Phú Xuân, nơi Tây Sơn đóng đô 24 năm, đảo ngược căn bản cục diện chiến tranh.",
+      "hien": [
+        "kinh-thanh-phu-xuan-1801-2"
+      ]
+    }
+  ],
+  "ket_qua": "Ngày 3/5/1801 (âm lịch), Nguyễn Ánh vào chiếm kinh thành Phú Xuân, nơi Tây Sơn đóng đô 24 năm kể từ 1778, đảo ngược căn bản cục diện chiến tranh Nguyễn – Tây Sơn.",
+  "y_nghia": "Bước ngoặt quyết định trong cuộc chiến Nguyễn – Tây Sơn, đặt Nguyễn Ánh vào thế thắng không thể đảo ngược.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Thế Tổ)",
+    "Đại Nam chính biên liệt truyện",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

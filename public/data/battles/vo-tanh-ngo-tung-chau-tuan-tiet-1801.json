@@ -1,0 +1,136 @@
+{
+  "ghi_chu": "Sa đồ Võ Tánh, Ngô Tùng Châu tuẫn tiết 1801 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Overlay tự ghi số liệu quân Tây Sơn là ước lệ — KHÔNG đưa con số vào nội dung. trang_thai=draft chờ soát §9.",
+  "id": "vo-tanh-ngo-tung-chau-tuan-tiet-1801",
+  "ten": "Võ Tánh, Ngô Tùng Châu tuẫn tiết, thành Bình Định thất thủ (1801)",
+  "nam": 1801,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Võ Tánh, Ngô Tùng Châu",
+  "doi_thu": "Tây Sơn (Trần Quang Diệu, Võ Văn Dũng)",
+  "dia_diem": "Thành Bình Định, nay tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          700,
+          350
+        ]
+      ],
+      "nhan": "Vùng thành Bình Định"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-vay-thanh-bd",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 280,
+      "nhan": "Trần Quang Diệu, Võ Văn Dũng vây thành"
+    },
+    {
+      "id": "thanh-binh-dinh-1801",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Thành Bình Định bị vây"
+    },
+    {
+      "id": "co-cam-cu-1-nam",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 490,
+      "nhan": "Cầm cự hơn một năm"
+    },
+    {
+      "id": "ngo-tung-chau-tu-tan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 470,
+      "nhan": "Ngô Tùng Châu tự tận (5/7)"
+    },
+    {
+      "id": "vo-tanh-tu-thieu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 480,
+      "y": 470,
+      "nhan": "Võ Tánh tự thiêu tại lầu Bát Giác"
+    },
+    {
+      "id": "co-an-tang-trong-the",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 600,
+      "y": 200,
+      "nhan": "Trần Quang Diệu an táng trọng thể, tha tướng sĩ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tây Sơn đem đại quân vây thành Bình Định",
+      "mo_ta": "Đầu năm 1800, vua Tây Sơn Cảnh Thịnh sai Trần Quang Diệu và Võ Văn Dũng đem đại quân bộ, thủy vây thành Bình Định.",
+      "hien": [
+        "quan-dich-vay-thanh-bd",
+        "thanh-binh-dinh-1801"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Cầm cự hơn một năm",
+      "mo_ta": "Quân Nguyễn trong thành cầm cự hơn một năm dưới vòng vây.",
+      "hien": [
+        "thanh-binh-dinh-1801",
+        "co-cam-cu-1-nam"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Thành lâm nguy, Ngô Tùng Châu tự tận",
+      "mo_ta": "Khi thành lâm nguy, Ngô Tùng Châu uống thuốc độc tự tận ngày 5/7/1801.",
+      "hien": [
+        "ngo-tung-chau-tu-tan"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Võ Tánh tự thiêu tại lầu Bát Giác",
+      "mo_ta": "Hai ngày sau, Võ Tánh tự thiêu tại lầu Bát Giác.",
+      "hien": [
+        "vo-tanh-tu-thieu"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trần Quang Diệu an táng trọng thể, tha tướng sĩ",
+      "mo_ta": "Trần Quang Diệu vào thành thương xót, an táng trọng thể và tha chết cho tướng sĩ trong thành.",
+      "hien": [
+        "co-an-tang-trong-the"
+      ]
+    }
+  ],
+  "ket_qua": "Cầm cự hơn một năm, đến khi thành lâm nguy, Ngô Tùng Châu uống thuốc độc tự tận; hai ngày sau, Võ Tánh tự thiêu tại lầu Bát Giác. Trần Quang Diệu vào thành thương xót, an táng trọng thể và tha chết cho tướng sĩ trong thành.",
+  "y_nghia": "Tấm gương trung liệt của Võ Tánh, Ngô Tùng Châu; đồng thời thể hiện sự khoan hòa hiếm có của Trần Quang Diệu giữa thời loạn lạc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Thế Tổ)",
+    "Đại Nam chính biên liệt truyện",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

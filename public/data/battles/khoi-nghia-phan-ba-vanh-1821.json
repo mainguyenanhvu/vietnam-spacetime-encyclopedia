@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Phan Bá Vành, giai đoạn khởi phát 1821-1825 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Overlay ghi can_tra_them về số quyển Đại Nam thực lục — KHÔNG tự thêm số quyển. Trình bày trung tính theo SGK/Viện Sử học, nêu nguyên nhân xã hội (đói kém, tô thuế), không bình luận chính trị. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-phan-ba-vanh-1821",
+  "ten": "Khởi nghĩa nông dân Phan Bá Vành — giai đoạn khởi phát (1821–1825)",
+  "nam": 1821,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phan Bá Vành",
+  "doi_thu": "Triều Nguyễn (Minh Mạng)",
+  "dia_diem": "Trà Lũ (thôn Phú Nhai), nay tỉnh Ninh Bình",
+  "lien_quan_tinh": [
+    "ninh-binh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          700,
+          350
+        ]
+      ],
+      "nhan": "Vùng ven biển Nam Định – Thái Bình – Quảng Yên"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-doi-to-thue",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 480,
+      "nhan": "Nạn đói, tô thuế nặng nề"
+    },
+    {
+      "id": "can-cu-tra-lu",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Căn cứ Trà Lũ (thôn Phú Nhai)"
+    },
+    {
+      "id": "co-quy-tu-5000",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 330,
+      "nhan": "Ban đầu khoảng 5.000 người"
+    },
+    {
+      "id": "co-len-hang-van-1824",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 270,
+      "nhan": "Các năm đói 1824-1825: hàng vạn người"
+    },
+    {
+      "id": "mui-hoat-dong-khap",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        550,
+        250
+      ],
+      "den": [
+        780,
+        190
+      ],
+      "nhan": "Hoạt động khắp Nam Định, Thái Bình, Quảng Yên"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nạn đói, tô thuế nặng nề đầu thời Minh Mạng",
+      "mo_ta": "Nhân nạn đói và tô thuế nặng nề đầu thời Minh Mạng.",
+      "hien": [
+        "boi-canh-doi-to-thue"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Phan Bá Vành phất cờ khởi nghĩa tại Trà Lũ (1821)",
+      "mo_ta": "Tháng Giêng năm Minh Mạng thứ 2, Phan Bá Vành tập hợp nghĩa binh, lập căn cứ tại thôn Phú Nhai, làng Trà Lũ.",
+      "hien": [
+        "boi-canh-doi-to-thue",
+        "can-cu-tra-lu"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Ban đầu quy tụ khoảng 5.000 người",
+      "mo_ta": "Nghĩa quân ban đầu quy tụ khoảng 5.000 người theo chính sử chép.",
+      "hien": [
+        "can-cu-tra-lu",
+        "co-quy-tu-5000"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Các năm đói 1824-1825, lên tới hàng vạn người",
+      "mo_ta": "Đến các năm đói 1824–1825, nghĩa quân lên tới hàng vạn người.",
+      "hien": [
+        "co-quy-tu-5000",
+        "co-len-hang-van-1824"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Hoạt động khắp Nam Định, Thái Bình, Quảng Yên",
+      "mo_ta": "Nghĩa quân hoạt động khắp Nam Định, Thái Bình, Quảng Yên, có lúc vào tới Hòa Bình, Thanh Hóa.",
+      "hien": [
+        "co-len-hang-van-1824",
+        "mui-hoat-dong-khap"
+      ]
+    }
+  ],
+  "ket_qua": "Phan Bá Vành tập hợp nghĩa binh, lập căn cứ tại Trà Lũ, mở đầu cuộc khởi nghĩa nông dân kéo dài gần 6 năm khắp vùng ven biển Nam Định – Thái Bình – Quảng Yên.",
+  "y_nghia": "Một trong những cuộc khởi nghĩa nông dân quy mô lớn đầu triều Nguyễn, phản ánh mâu thuẫn xã hội gay gắt do nạn đói và tô thuế nặng nề.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
+    "Lịch sử Việt Nam (Viện Sử học)",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

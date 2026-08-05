@@ -1,0 +1,127 @@
+{
+  "ghi_chu": "Sa đồ Chế Bồng Nga đánh Thăng Long lần 4 (1383) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "che-bong-nga-danh-thang-long-1383",
+  "ten": "Chế Bồng Nga đánh phá kinh thành Thăng Long lần thứ tư (1383)",
+  "nam": 1383,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chế Bồng Nga, La Ngai",
+  "doi_thu": "Đại Việt (Trần Nghệ Tông)",
+  "dia_diem": "Kinh thành Thăng Long, qua đường núi Quốc Oai",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          420
+        ],
+        [
+          350,
+          380
+        ],
+        [
+          600,
+          360
+        ]
+      ],
+      "nhan": "Đường núi Quốc Oai"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-quoc-oai",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 250,
+      "y": 400,
+      "nhan": "Chế Bồng Nga, La Ngai theo đường núi Quốc Oai"
+    },
+    {
+      "id": "thang-long-lan-4",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 500,
+      "y": 320,
+      "nhan": "Thăng Long bị cướp phá lần thứ tư"
+    },
+    {
+      "id": "vua-tran-chay-song-hong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 650,
+      "y": 270,
+      "nhan": "Trần Nghệ Tông chạy sang bên kia sông Hồng"
+    },
+    {
+      "id": "co-4-lan-ha-thang-long",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 420,
+      "y": 230,
+      "nhan": "Chuỗi 4 lần hạ Thăng Long (1371-1383)"
+    },
+    {
+      "id": "dia-danh-song-hai-trieu-1390",
+      "kieu": "dia-danh",
+      "x": 750,
+      "y": 180,
+      "nhan": "Kết thúc khi Chế Bồng Nga tử trận (1390)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chế Bồng Nga cùng La Ngai theo đường núi",
+      "mo_ta": "Năm 1383, Chế Bồng Nga cùng tướng La Ngai theo đường núi tiến đến Quốc Oai.",
+      "hien": [
+        "quan-dich-quoc-oai"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tiến vào cướp phá Thăng Long lần thứ tư",
+      "mo_ta": "Quân Chiêm vào cướp phá Thăng Long lần thứ tư.",
+      "hien": [
+        "quan-dich-quoc-oai",
+        "thang-long-lan-4"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vua Trần Nghệ Tông chạy sang bên kia sông Hồng",
+      "mo_ta": "Vua Trần Nghệ Tông một lần nữa phải chạy sang bên kia sông Hồng lánh nạn.",
+      "hien": [
+        "thang-long-lan-4",
+        "vua-tran-chay-song-hong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chuỗi 4 lần hạ Thăng Long (1371-1383)",
+      "mo_ta": "Chuỗi 4 lần hạ Thăng Long khiến Chiêm Thành trở thành mối uy hiếp lớn nhất với Đại Việt cuối thời Trần.",
+      "hien": [
+        "co-4-lan-ha-thang-long"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Kết thúc khi Chế Bồng Nga tử trận (1390)",
+      "mo_ta": "Mối uy hiếp kéo dài cho tới khi Chế Bồng Nga tử trận trên sông Hải Triều năm 1390.",
+      "hien": [
+        "dia-danh-song-hai-trieu-1390"
+      ]
+    }
+  ],
+  "ket_qua": "Chế Bồng Nga cùng tướng La Ngai theo đường núi tiến đến Quốc Oai rồi vào cướp phá Thăng Long lần thứ tư; vua Trần Nghệ Tông một lần nữa phải chạy sang bên kia sông Hồng lánh nạn.",
+  "y_nghia": "Chuỗi 4 lần hạ Thăng Long (1371, 1377, 1378, 1383) khiến Chiêm Thành trở thành mối uy hiếp lớn nhất với Đại Việt cuối thời Trần, cho tới khi Chế Bồng Nga tử trận năm 1390.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt Sử Ký Toàn Thư — Bản kỷ, Kỷ nhà Trần",
+    "Khâm định Việt sử thông giám cương mục",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Ánh Bắc tiến, hạ Thăng Long, lập triều Nguyễn 1802 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-anh-bac-tien-ha-thang-long-1802",
+  "ten": "Nguyễn Ánh Bắc tiến, hạ thành Thăng Long, chấm dứt Tây Sơn (1802)",
+  "nam": 1802,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Ánh",
+  "doi_thu": "Tây Sơn (Nguyễn Quang Toản, Nguyễn Quang Duy, Nguyễn Quang Thiệu)",
+  "dia_diem": "Từ Phú Xuân ra Thăng Long, qua Nghệ An, Thanh Hóa",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          480
+        ],
+        [
+          300,
+          420
+        ],
+        [
+          450,
+          370
+        ],
+        [
+          600,
+          300
+        ]
+      ],
+      "nhan": "Đường Bắc tiến từ Phú Xuân"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-bac-tien-1802",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 480,
+      "nhan": "Nguyễn Ánh Bắc tiến từ Phú Xuân"
+    },
+    {
+      "id": "hoanh-son-nghe-an",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 420,
+      "nhan": "Hoành Sơn, Nghệ An"
+    },
+    {
+      "id": "thanh-hoa-1802",
+      "kieu": "dia-danh",
+      "x": 420,
+      "y": 370,
+      "nhan": "Thanh Hóa"
+    },
+    {
+      "id": "thang-long-1802-2",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 600,
+      "y": 300,
+      "nhan": "Kinh thành Thăng Long"
+    },
+    {
+      "id": "quan-dich-quang-toan-bi-bat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 780,
+      "y": 230,
+      "nhan": "Nguyễn Quang Toản chạy lên Kinh Bắc, bị bắt"
+    },
+    {
+      "id": "co-gia-long",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 200,
+      "nhan": "Nguyễn Ánh lên ngôi, niên hiệu Gia Long"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Ánh Bắc tiến từ Phú Xuân",
+      "mo_ta": "Từ tháng 5/1802, quân Nguyễn Ánh Bắc tiến từ Phú Xuân.",
+      "hien": [
+        "quan-ta-bac-tien-1802"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đánh chiếm Hoành Sơn, Nghệ An",
+      "mo_ta": "Quân Nguyễn lần lượt đánh chiếm Hoành Sơn, Nghệ An.",
+      "hien": [
+        "quan-ta-bac-tien-1802",
+        "hoanh-son-nghe-an"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh chiếm Thanh Hóa",
+      "mo_ta": "Quân Nguyễn tiếp tục đánh chiếm Thanh Hóa.",
+      "hien": [
+        "hoanh-son-nghe-an",
+        "thanh-hoa-1802"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiến ra Thăng Long",
+      "mo_ta": "Quân Nguyễn tiến ra kinh thành Thăng Long.",
+      "hien": [
+        "thanh-hoa-1802",
+        "thang-long-1802-2"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Nguyễn Quang Toản bỏ thành chạy, bị bắt",
+      "mo_ta": "Nguyễn Quang Toản cùng các em bỏ thành chạy lên Kinh Bắc nhưng đều bị bắt, chấm dứt vương triều Tây Sơn.",
+      "hien": [
+        "thang-long-1802-2",
+        "quan-dich-quang-toan-bi-bat"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Nguyễn Ánh lên ngôi, niên hiệu Gia Long",
+      "mo_ta": "Nguyễn Ánh lên ngôi hoàng đế, niên hiệu Gia Long, lập nên vương triều Nguyễn, đóng đô tại Phú Xuân.",
+      "hien": [
+        "co-gia-long"
+      ]
+    }
+  ],
+  "ket_qua": "Nguyễn Quang Toản cùng các em bỏ thành chạy lên Kinh Bắc nhưng đều bị bắt, chính thức chấm dứt vương triều Tây Sơn (1778–1802). Nguyễn Ánh lên ngôi hoàng đế, niên hiệu Gia Long, lập nên vương triều Nguyễn.",
+  "y_nghia": "Kết thúc gần 30 năm nội chiến, thống nhất đất nước dưới một vương triều duy nhất lần đầu tiên sau nhiều thế kỷ chia cắt (Trịnh-Nguyễn, Tây Sơn).",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Thế Tổ)",
+    "Hoàng Lê nhất thống chí",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

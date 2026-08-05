@@ -1,0 +1,132 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Ánh đánh Thị Nại lần 1 (1792) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Overlay ghi can_tra_them về số quyển Đại Nam thực lục — KHÔNG tự thêm số quyển. trang_thai=draft chờ soát §9.",
+  "id": "tran-thi-nai-1792",
+  "ten": "Nguyễn Ánh đánh phá thủy quân Tây Sơn tại Thị Nại lần thứ nhất (1792)",
+  "nam": 1792,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Ánh",
+  "doi_thu": "Tây Sơn",
+  "dia_diem": "Đầm Thị Nại, Quy Nhơn, nay tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Đầm Thị Nại"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thuyen-ta-kieu-phuong-tay",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Tàu chiến kiểu phương Tây của Nguyễn Ánh"
+    },
+    {
+      "id": "thuyen-dich-tay-son-1792",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 600,
+      "y": 300,
+      "nhan": "Thủy quân Tây Sơn đồn trú tại Thị Nại"
+    },
+    {
+      "id": "mui-danh-bat-ngo",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        370
+      ],
+      "den": [
+        550,
+        320
+      ],
+      "nhan": "Bất ngờ đánh vào cửa Thị Nại"
+    },
+    {
+      "id": "thuyen-dich-chay-1792",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 650,
+      "y": 250,
+      "nhan": "Một bộ phận thủy quân Tây Sơn bị đốt phá"
+    },
+    {
+      "id": "mui-rut-lui-1792",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        550,
+        320
+      ],
+      "den": [
+        350,
+        420
+      ],
+      "nhan": "Rút lui sau khi đốt phá"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Ánh chuẩn bị tàu chiến kiểu phương Tây",
+      "mo_ta": "Nguyễn Ánh phối hợp một số tàu chiến kiểu phương Tây, chuẩn bị đánh vào căn cứ hải quân chính của Tây Sơn.",
+      "hien": [
+        "thuyen-ta-kieu-phuong-tay"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nhân mùa gió thuận, bất ngờ đánh vào cửa Thị Nại",
+      "mo_ta": "Năm 1792, nhân mùa gió thuận cho thủy quân từ Nam ra, Nguyễn Ánh bất ngờ đánh vào cửa Thị Nại.",
+      "hien": [
+        "thuyen-ta-kieu-phuong-tay",
+        "thuyen-dich-tay-son-1792",
+        "mui-danh-bat-ngo"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đốt phá một bộ phận thủy quân Tây Sơn",
+      "mo_ta": "Quân Nguyễn Ánh đốt phá một bộ phận thủy quân Tây Sơn đồn trú tại đây.",
+      "hien": [
+        "thuyen-dich-chay-1792"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Rút lui, mở đầu chuỗi tấn công vào Thị Nại",
+      "mo_ta": "Quân Nguyễn Ánh rút lui, mở đầu chuỗi các đợt tấn công vào căn cứ hải quân Tây Sơn trước khi có trận quyết định năm 1801.",
+      "hien": [
+        "mui-rut-lui-1792"
+      ]
+    }
+  ],
+  "ket_qua": "Nguyễn Ánh bất ngờ đánh vào cửa Thị Nại, đốt phá một bộ phận thủy quân Tây Sơn đồn trú tại đây rồi rút lui, mở đầu chuỗi các đợt tấn công vào căn cứ hải quân chính của Tây Sơn trước khi có trận quyết định năm 1801.",
+  "y_nghia": "Trận mở đầu trong chuỗi các đợt tấn công của Nguyễn Ánh vào căn cứ hải quân Tây Sơn tại Thị Nại, đặt nền móng cho chiến thắng quyết định 1801.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Thế Tổ)",
+    "Đại Nam chính biên liệt truyện",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

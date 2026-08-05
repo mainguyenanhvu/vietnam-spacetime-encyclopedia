@@ -1,0 +1,129 @@
+{
+  "ghi_chu": "Sa đồ Chế Bồng Nga đánh Thăng Long lần 1 (1371) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "che-bong-nga-danh-thang-long-1371",
+  "ten": "Chế Bồng Nga đánh phá kinh thành Thăng Long lần thứ nhất (1371)",
+  "nam": 1371,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chế Bồng Nga",
+  "doi_thu": "Đại Việt (Trần Nghệ Tông)",
+  "dia_diem": "Kinh thành Thăng Long, qua cửa Đại An",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          400,
+          330
+        ],
+        [
+          800,
+          310
+        ]
+      ],
+      "nhan": "Đường thủy qua cửa Đại An"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thuyen-dich-cua-dai-an",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 250,
+      "y": 400,
+      "nhan": "Chế Bồng Nga theo cửa Đại An"
+    },
+    {
+      "id": "thang-long-khong-phong-1371",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 500,
+      "y": 330,
+      "nhan": "Thăng Long không có quân phòng giữ"
+    },
+    {
+      "id": "vua-tran-bo-chay-1371",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 650,
+      "y": 260,
+      "nhan": "Trần Nghệ Tông bỏ chạy"
+    },
+    {
+      "id": "quan-dich-cuop-pha-1371",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 420,
+      "y": 250,
+      "nhan": "Quân Chiêm cướp phá, đốt cung điện"
+    },
+    {
+      "id": "co-mo-dau-bac-phat",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 650,
+      "y": 180,
+      "nhan": "Mở đầu chuỗi Bắc phạt gần 20 năm"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chế Bồng Nga đem chiến thuyền theo cửa Đại An",
+      "mo_ta": "Tháng 3/1371, Chế Bồng Nga đem chiến thuyền theo cửa Đại An tiến thẳng vào Thăng Long.",
+      "hien": [
+        "thuyen-dich-cua-dai-an"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Kinh thành không có quân phòng giữ",
+      "mo_ta": "Kinh thành Thăng Long không có quân phòng giữ.",
+      "hien": [
+        "thuyen-dich-cua-dai-an",
+        "thang-long-khong-phong-1371"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vua Trần Nghệ Tông bỏ chạy",
+      "mo_ta": "Vua Trần Nghệ Tông phải bỏ chạy khỏi kinh thành.",
+      "hien": [
+        "thang-long-khong-phong-1371",
+        "vua-tran-bo-chay-1371"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân Chiêm cướp phá, đốt cung điện",
+      "mo_ta": "Quân Chiêm cướp sạch vàng bạc châu báu, bắt phụ nữ trẻ em rồi đốt cung điện, kho tàng, sổ sách.",
+      "hien": [
+        "thang-long-khong-phong-1371",
+        "quan-dich-cuop-pha-1371"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở đầu chuỗi Bắc phạt gần 20 năm",
+      "mo_ta": "Trận đánh mở đầu chuỗi các cuộc Bắc phạt của Chế Bồng Nga kéo dài gần 20 năm.",
+      "hien": [
+        "co-mo-dau-bac-phat"
+      ]
+    }
+  ],
+  "ket_qua": "Chế Bồng Nga đem chiến thuyền tiến thẳng vào Thăng Long khi kinh thành không có quân phòng giữ; vua Trần Nghệ Tông phải bỏ chạy. Quân Chiêm cướp phá rồi đốt cung điện, kho tàng trước khi rút về.",
+  "y_nghia": "Mở đầu chuỗi các cuộc Bắc phạt của Chế Bồng Nga kéo dài gần 20 năm, cho thấy sự suy yếu nghiêm trọng trong phòng thủ của nhà Trần cuối thế kỷ 14.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt Sử Ký Toàn Thư — Bản kỷ, Kỷ nhà Trần",
+    "Khâm định Việt sử thông giám cương mục",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

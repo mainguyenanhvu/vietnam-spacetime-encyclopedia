@@ -1,0 +1,149 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Ánh chiếm thành Bình Định 1799 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-anh-vay-thanh-binh-dinh-1799",
+  "ten": "Nguyễn Ánh vây và chiếm thành Bình Định – Quy Nhơn (1799)",
+  "nam": 1799,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Ánh, Võ Tánh, Ngô Tùng Châu",
+  "doi_thu": "Tây Sơn",
+  "dia_diem": "Thành Bình Định (thành Hoàng Đế / Đồ Bàn cũ), nay tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          700,
+          350
+        ]
+      ],
+      "nhan": "Đường tiến quân từ Gia Định"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-nguyen-anh-1799",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Nguyễn Ánh đem đại quân"
+    },
+    {
+      "id": "thanh-quy-nhon",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 550,
+      "y": 320,
+      "nhan": "Thành Quy Nhơn (căn cứ Tây Sơn)"
+    },
+    {
+      "id": "mui-chiem-quy-nhon",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        380
+      ],
+      "den": [
+        520,
+        330
+      ],
+      "nhan": "Đánh chiếm thành"
+    },
+    {
+      "id": "co-doi-ten-binh-dinh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 260,
+      "nhan": "Đổi tên thành Bình Định"
+    },
+    {
+      "id": "quan-ta-vo-tanh-ntc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 200,
+      "nhan": "Võ Tánh trấn thủ, Ngô Tùng Châu hiệp trợ"
+    },
+    {
+      "id": "mui-rut-ve-gia-dinh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        380
+      ],
+      "den": [
+        150,
+        450
+      ],
+      "nhan": "Rút đại quân về Gia Định"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Ánh đem đại quân đánh Quy Nhơn",
+      "mo_ta": "Năm 1799, Nguyễn Ánh đem đại quân đánh chiếm thành Quy Nhơn — căn cứ trọng yếu của Tây Sơn ở Trung Bộ.",
+      "hien": [
+        "quan-ta-nguyen-anh-1799"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiếm thành, đổi tên Bình Định",
+      "mo_ta": "Quân Nguyễn chiếm được thành, đổi tên thành Bình Định.",
+      "hien": [
+        "quan-ta-nguyen-anh-1799",
+        "thanh-quy-nhon",
+        "mui-chiem-quy-nhon"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Giao Võ Tánh trấn thủ, Ngô Tùng Châu hiệp trợ",
+      "mo_ta": "Nguyễn Ánh giao Võ Tánh trấn thủ cùng Ngô Tùng Châu hiệp trợ.",
+      "hien": [
+        "co-doi-ten-binh-dinh",
+        "quan-ta-vo-tanh-ntc"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Rút đại quân về Gia Định",
+      "mo_ta": "Nguyễn Ánh rút đại quân chủ lực về Gia Định.",
+      "hien": [
+        "mui-rut-ve-gia-dinh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở đầu giai đoạn Tây Sơn vây đánh trở lại",
+      "mo_ta": "Quyết định này mở đầu giai đoạn Tây Sơn dồn toàn lực vây đánh trở lại thành này suốt hai năm sau.",
+      "hien": [
+        "quan-ta-vo-tanh-ntc"
+      ]
+    }
+  ],
+  "ket_qua": "Năm 1799, Nguyễn Ánh đem đại quân đánh chiếm được thành Quy Nhơn, đổi tên thành Bình Định, giao Võ Tánh trấn thủ cùng Ngô Tùng Châu hiệp trợ, rồi rút đại quân về Gia Định.",
+  "y_nghia": "Mở đầu giai đoạn Tây Sơn dồn toàn lực vây đánh trở lại thành Bình Định suốt hai năm sau, dẫn tới sự hy sinh của Võ Tánh, Ngô Tùng Châu năm 1801.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Thế Tổ)",
+    "Đại Nam chính biên liệt truyện",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

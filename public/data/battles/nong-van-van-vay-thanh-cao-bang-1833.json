@@ -1,0 +1,112 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Nông Văn Vân, cao trào vây thành Cao Bằng 1833 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nong-van-van-vay-thanh-cao-bang-1833",
+  "ten": "Nghĩa quân Nông Văn Vân vây thành tỉnh Cao Bằng (1833)",
+  "nam": 1833,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nông Văn Vân",
+  "doi_thu": "Triều Nguyễn",
+  "dia_diem": "Thành tỉnh Cao Bằng",
+  "lien_quan_tinh": [
+    "cao-bang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          80
+        ],
+        [
+          500,
+          50
+        ],
+        [
+          900,
+          100
+        ]
+      ],
+      "nhan": "Vùng biên giới phía Bắc"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-vay-cao-bang",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Nghĩa quân Nông Văn Vân vây thành"
+    },
+    {
+      "id": "thanh-cao-bang-1833",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 500,
+      "y": 330,
+      "nhan": "Thành tỉnh Cao Bằng"
+    },
+    {
+      "id": "co-vay-hon-1-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 260,
+      "nhan": "Vây hãm hơn một tháng"
+    },
+    {
+      "id": "quan-dich-ung-cuu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 220,
+      "nhan": "Triều đình điều quân ứng cứu"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nghĩa quân tiến vây thành tỉnh Cao Bằng",
+      "mo_ta": "Cuối tháng 8/1833, nghĩa quân Nông Văn Vân tiến vây thành tỉnh Cao Bằng.",
+      "hien": [
+        "quan-ta-vay-cao-bang",
+        "thanh-cao-bang-1833"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Vây hãm hơn một tháng",
+      "mo_ta": "Nghĩa quân vây thành hơn một tháng.",
+      "hien": [
+        "thanh-cao-bang-1833",
+        "co-vay-hon-1-thang"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Uy hiếp mạnh chính quyền vùng biên giới",
+      "mo_ta": "Cuộc vây hãm uy hiếp mạnh chính quyền nhà Nguyễn ở vùng biên giới phía Bắc.",
+      "hien": [
+        "co-vay-hon-1-thang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Triều đình điều thêm quân ứng cứu",
+      "mo_ta": "Tình hình buộc triều đình phải điều thêm quân lên ứng cứu.",
+      "hien": [
+        "quan-dich-ung-cuu"
+      ]
+    }
+  ],
+  "ket_qua": "Cuối tháng 8 đầu tháng 9/1833, nghĩa quân Nông Văn Vân vây thành tỉnh Cao Bằng hơn một tháng, uy hiếp mạnh chính quyền nhà Nguyễn ở vùng biên giới phía Bắc, buộc triều đình phải điều thêm quân lên ứng cứu.",
+  "y_nghia": "Giai đoạn đỉnh cao của cuộc nổi dậy Nông Văn Vân, cho thấy khả năng huy động lực lượng lớn của các thủ lĩnh miền núi.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
+    "Lịch sử Việt Nam (Viện Sử học)",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

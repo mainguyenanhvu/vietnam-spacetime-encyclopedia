@@ -1,0 +1,136 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Ánh giữ thành Diên Khánh 1793-1794 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-anh-giu-thanh-dien-khanh-1794",
+  "ten": "Nguyễn Ánh xây và giữ vững thành Diên Khánh trước Tây Sơn (1793–1794)",
+  "nam": 1793,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Ánh, Võ Tánh",
+  "doi_thu": "Tây Sơn (Trần Quang Diệu)",
+  "dia_diem": "Thành Diên Khánh, tỉnh Khánh Hòa",
+  "lien_quan_tinh": [
+    "khanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          80
+        ],
+        [
+          500,
+          50
+        ],
+        [
+          900,
+          100
+        ]
+      ],
+      "nhan": "Vùng Diên Khánh, Khánh Hòa"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-dien-khanh",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Thành Diên Khánh (kiểu Vauban)"
+    },
+    {
+      "id": "quan-ta-vo-tanh-dk",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Võ Tánh trấn giữ"
+    },
+    {
+      "id": "quan-dich-tran-quang-dieu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 280,
+      "nhan": "Trần Quang Diệu vây đánh"
+    },
+    {
+      "id": "mui-vay-danh-dk",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        550,
+        260
+      ],
+      "den": [
+        430,
+        340
+      ],
+      "nhan": "Quân Tây Sơn vây đánh"
+    },
+    {
+      "id": "co-thang-dien-khanh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 250,
+      "nhan": "Giữ vững thành, đẩy lùi tấn công"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Ánh xây thành Diên Khánh theo kiểu Vauban",
+      "mo_ta": "Năm 1793, Nguyễn Ánh cho xây thành Diên Khánh theo kiểu Vauban làm tiền đồn án ngữ phía Bắc Gia Định.",
+      "hien": [
+        "thanh-dien-khanh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trần Quang Diệu đem quân Tây Sơn vây đánh",
+      "mo_ta": "Năm 1794, quân Tây Sơn dưới quyền Trần Quang Diệu vây đánh thành.",
+      "hien": [
+        "thanh-dien-khanh",
+        "quan-ta-vo-tanh-dk"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân Nguyễn giữ vững thành",
+      "mo_ta": "Quân Nguyễn dưới sự trấn giữ của Võ Tánh giữ vững thành, không để mất.",
+      "hien": [
+        "thanh-dien-khanh",
+        "quan-dich-tran-quang-dieu",
+        "mui-vay-danh-dk"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đẩy lùi cuộc tấn công",
+      "mo_ta": "Quân Nguyễn đẩy lùi cuộc tấn công của Tây Sơn.",
+      "hien": [
+        "quan-ta-vo-tanh-dk",
+        "co-thang-dien-khanh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Củng cố thế đứng chân ở Nam Trung Bộ",
+      "mo_ta": "Chiến thắng củng cố thế đứng chân lâu dài của Nguyễn Ánh ở Nam Trung Bộ.",
+      "hien": [
+        "co-thang-dien-khanh"
+      ]
+    }
+  ],
+  "ket_qua": "Năm 1794, quân Tây Sơn dưới quyền Trần Quang Diệu vây đánh thành Diên Khánh nhưng không hạ được; quân Nguyễn giữ vững, đẩy lùi cuộc tấn công, củng cố thế đứng chân lâu dài ở Nam Trung Bộ.",
+  "y_nghia": "Thành Diên Khánh trở thành tiền đồn vững chắc bảo vệ Gia Định, mẫu hình phòng thủ kiểu phương Tây đầu tiên do Nguyễn Ánh xây dựng.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Thế Tổ)",
+    "Đại Nam chính biên liệt truyện",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}
