@@ -89,6 +89,7 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 - [ ] **Khoá GeoJSON có dấu cách.** `boundaries/*.geojson` nhóm tỉnh dùng `"Tỉnh thành mới"`, `"GRDP 2024 (tỷ VND)"`, `"Diện tích (km2)"` — không dùng trực tiếp làm tên thuộc tính JS/SQL được. Map lại tên. **M**
 - [ ] `di-tich-qgdb` / `unesco` / `bao-vat-quoc-gia` thiếu trường `id`. `unesco.json` lệch nặng nhất — thiếu 6 trường lõi. **S**
 - [ ] `to-nghe-danh-than.json` trộn kiểu `nam_hien_thi`: 54 mục chuỗi, **14 mục số**. **S**
+- [ ] 🔴 **`chien-dich-tran-danh.json` có 11 giá trị `loai`, trong đó hai CẶP ĐỒNG NGHĨA** — đo 2026-08-05: `chong-phap` 8 ⟷ `khang-phap` 21 · `chong-my` 4 ⟷ `khang-my` 62. Cùng một khái niệm mang hai tên, nên bất kỳ bộ lọc nào theo `loai` cũng đang bỏ sót âm thầm. Đây đúng là bẫy #12. Chốt một tên rồi di trú, **đừng** để agent sau tự chọn. Bảy giá trị còn lại: `giu-nuoc` 29 · `bao-ve-bien-gioi` 18 · `can-dai` 9 · `trung-dai` 5 · `cach-mang` 5 · `khoi-nghia` 4 · `hien-dai` 3. **S/M**
 - [ ] `bao-vat-quoc-gia.json` + `di-tich-qgdb.json` có **cả `cap_nhat` lẫn `ngay_cap_nhat`** — kiểm hai giá trị có lệch không. **S**
 
 **Không phải lỗi, đừng "sửa"**: 26 id + 34 slug trùng chéo file là **có chủ ý** — chúng đang hoạt động như khoá ngoại giữa các miền (`bach-dang-938` nối 3 miền; `slug="hue"` nối media/provinces/story). Việc cần làm là **chính thức hoá** chúng, không phải khử trùng.
