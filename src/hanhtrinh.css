@@ -1,0 +1,326 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   HÀNH TRÌNH LỊCH SỬ — redesign theo scratchpad/dacta_hanhtrinh_sado.md §3+§5.1
+   Sở hữu: journey.ts + file này. KHÔNG chỉnh style.css/theme.css từ đây —
+   mọi biến dùng bên dưới chỉ là ALIAS trỏ token đã có, không hex mới.
+
+   `.journey-stage` (ID #journey-stage) GIỮ NGUYÊN, không đụng: figures3d.ts
+   đọc kích thước container qua class đó, CSS của nó đã có sẵn ở style.css.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --jn-progress-fill: var(--nhan);
+  /* Spec đề xuất --vien-ro cho track, nhưng đo thật nhan-vs-vien-ro chỉ
+     2,49:1 (chế độ người lớn) — dưới ngưỡng 3:1 phi văn bản. Đổi track sang
+     --mat-chim: đo lại 3,39:1 (người lớn) / 5,31:1 (trẻ em). Xem báo cáo. */
+  --jn-progress-track: var(--mat-chim);
+  /* Spec đề xuất --nhan cho nền chấm "đã qua", nhưng dấu ✓ màu --chu trên
+     nền --nhan chỉ đạt 4,16:1 (người lớn) / 3,07:1 (trẻ em) — dưới 4,5:1 chữ
+     nhỏ. Đổi sang --nhan-mo (nền nhạt) + chữ --chu: đo lại 10,67:1 / 12,60:1. */
+  --jn-step-done: var(--nhan-mo);
+  /* Spec đề xuất --nhan-mo cho viền chấm "đang ở", nhưng đây là VIỀN (phi
+     văn bản, cần 3:1) không phải nền chữ — nhan-mo quá nhạt để tách khỏi
+     nền --mat (1,3:1). Đổi sang --nhan (đậm hơn): đo lại 3,64:1 / 5,70:1. */
+  --jn-step-current-ring: var(--nhan);
+  --jn-step-upcoming-bg: var(--mat-chim);
+}
+
+/* ── Bí danh màu thời kỳ — DECORATIVE ONLY ─────────────────────────────
+   the-N/the-chu (nền đặc + chữ sáng) là cặp CÓ SẴN dùng cho .tl-badge-*,
+   nhưng đo thật: the-5/the-chu chỉ 3,64:1 (người lớn); the-2/3/4/5 kid mode
+   2,94–4,10:1 — dưới 4,5:1 chữ. Nếu dùng the-N làm CHỮ/NỀN chữ ở
+   .jn-era-title/.jn-scene-era sẽ vỡ tương phản. Ở đây the-N CHỈ dùng làm
+   viền trang trí mỏng (không mang thông tin DUY NHẤT — tên thời kỳ vẫn hiện
+   đầy đủ bằng chữ --chu/--chu-mem, luôn ≥4,5:1 cả hai chế độ), nên không vi
+   phạm WCAG 1.4.11 dù có vài tổ hợp cạnh 3:1 (the-3 chế độ trẻ em ~2,7-2,9:1
+   — điểm yếu của TOKEN có sẵn, không phải lỗi mới, xem báo cáo). */
+.the-1 { --jn-era-accent: var(--the-1); }
+.the-2 { --jn-era-accent: var(--the-2); }
+.the-3 { --jn-era-accent: var(--the-3); }
+.the-4 { --jn-era-accent: var(--the-4); }
+.the-5 { --jn-era-accent: var(--the-5); }
+.the-6 { --jn-era-accent: var(--the-6); }
+
+/* ── Khay «Toàn bộ lộ trình» — gập/mở, chịu được vài chục chặng ────────── */
+.jn-map {
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-vua);
+  background: var(--mat-2);
+  margin-bottom: var(--s-3);
+  overflow: hidden;
+}
+
+.jn-map-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  border: none;
+  background: transparent;
+  color: var(--chu);
+  font-weight: var(--dam-manh);
+  font-size: var(--co-sm);
+  padding: var(--s-2) var(--s-3);
+  cursor: pointer;
+  text-align: left;
+}
+.jn-map-toggle:hover {
+  background: var(--lop-hover);
+}
+.jn-map-toggle::after {
+  content: "▾";
+  margin-left: auto;
+  opacity: 0.75;
+  font-size: 0.8em;
+}
+.jn-map-toggle[aria-expanded="true"]::after {
+  content: "▴";
+}
+.jn-map-count {
+  color: var(--chu-mem);
+  font-weight: var(--dam-thuong);
+  font-size: var(--co-xs);
+}
+
+/* Cuộn nội bộ — đây là chỗ UI "chịu được vài chục chặng": panel không cao
+   vô hạn theo số chặng, khay tự cuộn thay vì đẩy tràn màn hình. */
+.jn-map-body {
+  max-height: 42vh;
+  overflow-y: auto;
+  padding: 0 var(--s-3) var(--s-3);
+  border-top: 1px solid var(--vien-ro);
+}
+
+.jn-era + .jn-era {
+  margin-top: var(--s-3);
+}
+.jn-era-title {
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  color: var(--chu);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-left: 4px solid var(--jn-era-accent, var(--vien-ro));
+  padding: var(--s-1) 0 var(--s-1) var(--s-2);
+  margin: var(--s-2) 0 var(--s-1);
+}
+.jn-era-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-1);
+}
+
+.jn-step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: var(--bo-nho);
+  padding: var(--s-1) var(--s-2);
+  cursor: pointer;
+  text-align: left;
+  color: var(--chu);
+  font-size: var(--co-sm);
+}
+.jn-step:hover {
+  background: var(--lop-hover);
+}
+.jn-step-current {
+  background: var(--mat);
+  border-color: var(--jn-step-current-ring);
+  border-width: 2px;
+  font-weight: var(--dam-vua);
+}
+.jn-step-dot {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: var(--bo-vien-tron);
+  font-size: var(--co-2xs);
+  font-weight: 700;
+  color: var(--chu);
+  background: var(--jn-step-upcoming-bg);
+  border: 1px solid var(--vien-ro);
+}
+.jn-step-done .jn-step-dot {
+  background: var(--jn-step-done);
+  border-color: var(--jn-step-done);
+}
+.jn-step-current .jn-step-dot {
+  background: var(--mat);
+  border: 2px solid var(--jn-step-current-ring);
+}
+.jn-step-label {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.jn-step-label em {
+  color: var(--chu-mem);
+  font-style: normal;
+  font-size: var(--co-xs);
+}
+
+/* ── Thanh tiến độ — thay .journey-counter chữ suông ───────────────────── */
+.jn-nav-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin: var(--s-2) 0 var(--s-1);
+}
+.jn-nav {
+  flex: 0 0 auto;
+  border: 1px solid var(--vien-ro);
+  background: var(--mat);
+  color: var(--chu);
+  border-radius: var(--bo-vien-tron);
+  cursor: pointer;
+  font-size: var(--co-md);
+  line-height: 1;
+}
+.jn-nav:hover:not(:disabled) {
+  background: var(--lop-brand-nhe);
+}
+.jn-nav:disabled {
+  background: var(--mat-chim);
+  color: var(--chu-nhat);
+  border-color: var(--vien-ro);
+  cursor: default;
+}
+.jn-progress {
+  flex: 1;
+  min-width: 0;
+}
+.jn-progress-track {
+  height: 0.5rem;
+  border-radius: var(--bo-vien-tron);
+  background: var(--jn-progress-track);
+  border: 1px solid var(--vien-ro);
+  overflow: hidden;
+}
+.jn-progress-fill {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--bo-vien-tron);
+  background: var(--jn-progress-fill);
+  transform: scaleX(var(--pct, 0));
+  transform-origin: left;
+  transition: transform var(--dur-vua) var(--ease);
+}
+.jn-progress-text {
+  text-align: center;
+  color: var(--chu-mem);
+  font-size: var(--co-xs);
+  font-weight: var(--dam-vua);
+  margin-bottom: var(--s-3);
+}
+
+/* ── Cảnh hiện tại ──────────────────────────────────────────────────── */
+.jn-scene-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  margin-bottom: var(--s-2);
+}
+.jn-scene-era {
+  align-self: flex-start;
+  font-size: var(--co-2xs);
+  font-weight: var(--dam-vua);
+  color: var(--chu-mem);
+  background: var(--mat-chim);
+  border-left: 3px solid var(--jn-era-accent, var(--vien-ro));
+  border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
+  padding: 0.15rem 0.55rem;
+}
+.jn-scene-title {
+  margin: 0;
+}
+.jn-scene-year {
+  color: var(--chu-mem);
+  font-weight: var(--dam-thuong);
+  font-size: var(--co-md);
+}
+
+.jn-narration {
+  border-left: 4px solid var(--nhan);
+  background: var(--mat-2);
+  padding: var(--s-3);
+  margin: var(--s-2) 0;
+  font-size: var(--co-lg);
+  line-height: var(--cao-dong);
+  font-style: italic;
+}
+.jn-context {
+  color: var(--chu-mem);
+  font-size: var(--co-sm);
+  margin: 0 0 var(--s-2);
+}
+
+.jn-cta-battle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--brand-dam);
+  background: var(--brand-dam);
+  color: var(--mat-3);
+  border-radius: var(--bo-nho);
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  font-size: var(--co-md);
+  font-weight: var(--dam-vua);
+  margin-top: var(--s-2);
+}
+.jn-cta-battle:hover {
+  filter: brightness(1.08);
+}
+
+/* ── Chuyển cảnh — CSS @keyframes thuần, KHÔNG requestAnimationFrame.
+   .jn-scene mặc định opacity:1 KHÔNG animation — đây là trạng thái nghỉ luôn
+   đúng, không phụ thuộc animation engine. Đã kiểm THẬT trên Chrome: ép
+   animation-duration còn 0.01ms (giả lập prefers-reduced-motion) khiến
+   animationend KHÔNG bắn và fill-mode forwards/both KHÔNG áp dụng — phần tử
+   kẹt ở opacity:0 vĩnh viễn nếu tin vào fill-mode. Vì vậy .jn-scene-in chỉ
+   là lớp animation TẠM THỜI; journey.ts tự gỡ nó sau animationend (hoặc hẹn
+   giờ dự phòng nếu sự kiện không bắn) để phần tử rơi về rule mặc định ở
+   trên — đúng bất kể animation có chạy được hay không. */
+@keyframes jn-fade-out {
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+@keyframes jn-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.jn-scene {
+  opacity: 1;
+}
+.jn-scene-out {
+  animation: jn-fade-out var(--dur-nhanh) var(--ease) forwards;
+}
+.jn-scene-in {
+  animation: jn-fade-in var(--dur-vua) var(--ease-nhan) both;
+}
+
+/* ── Vùng chạm tối thiểu — style.css:1707-1716 gom khối chung nhưng file đó
+   thuộc quyền sở hữu module khác trong nhiệm vụ này; khai lại riêng ở đây
+   cho đúng luật 2,75rem (44px) đã áp toàn dự án, vượt xa 24×24px WCAG 2.5.8. */
+.jn-map-toggle,
+.jn-step,
+.jn-nav,
+.jn-cta-battle {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+}
