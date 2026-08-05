@@ -308,7 +308,11 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 15. **Sandbox agent chặn WebGL hoàn toàn** + chặn tải tile CARTO → không nghiệm thu map trong agent được. Phải nghiệm thu ở Chrome thật.
 16. **Bản quyền dịch giả tách khỏi bản quyền tác giả.** Thơ chữ Hán public-domain vẫn có thể có bản dịch thơ còn bảo hộ → dùng dịch nghĩa văn xuôi khi không chắc.
 17. Danh mục Commons trả 0 file trông như vỉa rỗng thực ra có thể là **sai quy ước tên category** (`Category:Dong Thap` không dấu, không chữ "Province"). Sửa truy vấn trước khi kết luận.
-18. **Google Sheets**: `/export?format=csv` trả **401**; `/gviz/tq?tqx=out:csv` **mở**. Lấy tab khác bằng `&sheet=<tên URL-encoded>`.
+18. 🔴 **Harness đo bản đồ tự nói sai — ba ca mới, cùng họ với bẫy #10.**
+    (a) `querySourceFeatures` **chỉ trả feature trong khung nhìn**. Kịch bản duyệt nhiều lớp, nhảy tới lớp trước rồi hỏi lớp sau, sẽ nhận 0 feature và chấm là hỏng. Đọc `getSource(id)._data` mới độc lập với viewport.
+    (b) Gieo payload thử vào **đúng một mục** rồi bấm marker: cú bấm rơi trúng mục khác (điểm chồng nhau ở zoom xa), popup trả về là của mục sạch, và phép thử «đạt» mà chẳng chứng minh gì. Gieo vào **mọi** mục thì bấm trúng ai cũng là ca hợp lệ.
+    (c) Quét URL ảnh bằng nhiều luồng song song vào Wikimedia → **429 hàng loạt**, trông y hệt «ảnh chết». Báo cáo đó mà tin là đi sửa hàng trăm mục lành. Quét chậm, tuần tự, và phân biệt 429 với 404.
+19. **Google Sheets**: `/export?format=csv` trả **401**; `/gviz/tq?tqx=out:csv` **mở**. Lấy tab khác bằng `&sheet=<tên URL-encoded>`.
 
 ---
 
