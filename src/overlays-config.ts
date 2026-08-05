@@ -277,7 +277,11 @@ export const OVERLAYS: OverlayConf[] = [
       "match",
       ["get", "loai"],
       "dai-tuong", "#b91c1c",
-      "ah-llvt", "#dc2626",
+      // Ba biến thể `ah-llvt` / `ahllvt` / `anh-hung-llvt` đã gộp về một
+      // (2026-08-05) — cùng nghĩa «Anh hùng LLVTND», khác chuỗi nên bộ lọc
+      // theo loai đếm thiếu. Màu không đổi: cả ba vốn đã rơi vào cùng giá trị
+      // vì nhánh này trùng đúng màu mặc định ở cuối.
+      "anh-hung-llvt", "#dc2626",
       "me-vnah", "#db2777",
       "ah-lao-dong", "#0d9488",
       "#dc2626",
