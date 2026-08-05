@@ -570,6 +570,25 @@ body.kid-mode #topbar {
   font-weight: 700;
 }
 
+/* Số bài Ngục trung nhật ký. Cố ý NHẠT hơn .rank-badge: đây là nhãn định vị
+   trong tập (bài 1/134), không phải huy hiệu xếp hạng — hai thứ đứng cạnh nhau
+   trong cùng một dòng tiêu đề nên phải phân biệt được ngay bằng sắc độ.
+   Chữ dùng --chu-mem chứ KHÔNG phải --nhan: đo ngày 2026-08-05 thì --nhan
+   (#b3791f) trên --mat-3 chỉ đạt 3,33:1 ở chế độ người lớn — dưới ngưỡng 4,5:1
+   của WCAG 1.4.3 cho chữ thường. --chu-mem đạt 5,55:1 (người lớn) và 5,39:1
+   (trẻ em). Không thêm mã hex mới, cả hai đều là token sẵn có. */
+.so-bai {
+  display: inline-block;
+  background: var(--mat-3);
+  color: var(--chu-mem);
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vua);
+  padding: 0 0.4rem;
+  font-size: var(--co-xs);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
 /* === Olympia === */
 #olympia-panel {
   position: absolute;

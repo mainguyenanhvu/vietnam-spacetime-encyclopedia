@@ -943,7 +943,25 @@ function ensureEra(era: Era): void {
       "fill-extrusion-color": eraColorExpr(era),
       "fill-extrusion-height": HEIGHT_3D,
       "fill-extrusion-base": 0,
-      "fill-extrusion-opacity": 0.85,
+      // Đặc ở tầm cả nước (cảnh diorama, không có nền bản đồ nên không che gì),
+      // trong dần khi phóng sâu. Trước đây cố định 0,85 và lớp khối bị TẮT HẲN
+      // từ zoom 7,5 — bật 3D rồi phóng vào thì bản đồ lặng lẽ thành 2D. Nguyên
+      // do có thật: mặt trên của khối là tấm phẳng đục kín cả tỉnh, che hết
+      // đường sá bên dưới. Nhưng cách chữa đúng là cho nhìn xuyên qua, không
+      // phải bỏ hẳn 3D.
+      "fill-extrusion-opacity": [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        6,
+        0.85,
+        7.5,
+        0.7,
+        9,
+        0.4,
+        11,
+        0.28,
+      ] as ExpressionSpecification,
     },
   });
   // Nhãn tên tỉnh — TỰ RENDER từ GeoJSON của dự án (không mở nhãn basemap để
@@ -1174,6 +1192,14 @@ function lopPhuDangBat(): string[] {
  * đế của mô hình, vừa là vùng bấm (mô hình Three.js không nhận sự kiện bấm của
  * MapLibre). Điểm vượt quá trần vẫn còn vòng tròn nên không mục nào biến mất.
  */
+/**
+ * Chữ ký khung nhìn — dùng để bỏ qua lượt dựng lại mô hình khi người dùng chỉ
+ * nhích bản đồ vài pixel. `capNhatMoHinhDiem()` quét `queryRenderedFeatures`
+ * qua MỌI lớp phủ đang bật (có thể là 34 lớp) rồi dựng tới 400 mô hình; chạy
+ * lại nguyên bộ đó sau từng cú kéo chuột là nguồn giật rõ nhất trong tay ta.
+ */
+let vetKhungNhin = "";
+
 function capNhatMoHinhDiem(): void {
   const bat = lopPhuDangBat();
   for (const id of overlayLoaded) {
@@ -1182,19 +1208,38 @@ function capNhatMoHinhDiem(): void {
     const hien = !is3D && bat.includes(id) ? "visible" : "none";
     if ((map.getLayoutProperty(icon, "visibility") ?? "visible") !== hien)
       map.setLayoutProperty(icon, "visibility", hien);
-    // Ở 3D, vòng tròn tụt xuống vai trò chân đế + vùng bấm nên phải nhỏ lại:
-    // giữ nguyên cỡ 2D thì cái vòng trắng to hơn cả mô hình nó đánh dấu.
-    const ban = is3D ? 3 : 5;
+    // Ở 3D vòng tròn tụt xuống vai trò chân đế + VÙNG BẤM. Bản trước đặt bán
+    // kính 3 (đường kính 6 px) cho khỏi to hơn mô hình — và thế là không bấm
+    // trúng được nữa: người dùng nhắm vào khối 3D, còn vùng bấm là cái chấm
+    // 6 px dưới chân nó. Đo ngày 2026-08-05: bấm đúng tâm thì popup vẫn mở,
+    // tức cơ chế không hỏng, chỉ là đích quá nhỏ.
+    //
+    // WCAG 2.5.8 đòi đích thao tác tối thiểu 24×24 px ⇒ bán kính ≥ 12. Giữ
+    // được cả hai yêu cầu bằng cách tách vai trò: phần TÔ trong suốt gần hết
+    // (chỉ còn là bóng đổ dưới chân mô hình), phần VIỀN mảnh vẽ đúng chân đế.
+    // Vùng bấm của MapLibre tính theo bán kính, không theo độ trong — nên đích
+    // vẫn là 24 px dù mắt chỉ thấy một vòng nhạt.
+    const ban = is3D ? 12 : 5;
     if (map.getPaintProperty(`overlay-${id}`, "circle-radius") !== ban) {
       map.setPaintProperty(`overlay-${id}`, "circle-radius", ban);
-      map.setPaintProperty(`overlay-${id}`, "circle-stroke-width", is3D ? 1 : 2);
+      map.setPaintProperty(`overlay-${id}`, "circle-stroke-width", is3D ? 1.5 : 2);
+      map.setPaintProperty(`overlay-${id}`, "circle-opacity", is3D ? 0.18 : 1);
+      map.setPaintProperty(`overlay-${id}`, "circle-stroke-opacity", is3D ? 0.55 : 1);
     }
   }
   if (!landmarks3d) return;
   if (!is3D || !bat.length) {
     landmarks3d.capNhatDiem([]);
+    vetKhungNhin = "";
     return;
   }
+  // Làm tròn tâm về ~0,01° và zoom về 0,25 bậc: nhích nhẹ thì chữ ký không đổi
+  // và cả lượt quét được bỏ qua. Đổi thời kỳ hay bật/tắt lớp vẫn dựng lại vì
+  // danh sách lớp nằm trong chữ ký.
+  const c = map.getCenter();
+  const vet = `${c.lng.toFixed(2)},${c.lat.toFixed(2)},${(Math.round(map.getZoom() * 4) / 4).toFixed(2)},${bat.join()}`;
+  if (vet === vetKhungNhin) return;
+  vetKhungNhin = vet;
   const ds: DiemMoHinh[] = [];
   const daCo = new Set<string>();
   for (const f of map.queryRenderedFeatures({
@@ -1363,14 +1408,19 @@ function setEra(index: number): void {
     // Era chưa nạp thì chưa có lớp nào để ẩn/hiện — bỏ qua, không phải lỗi.
     if (!eraDaNap.has(era.id)) return;
     const active = i === index;
-    // Khối 3D chỉ dùng ở mức DIORAMA. Phóng sâu mà vẫn để khối thì mặt trên
-    // của khối là một tấm phẳng đục kín cả tỉnh, che hết đường sá bên dưới —
-    // 3D lúc đó chỉ còn là góc nghiêng, không thêm thông tin nào.
-    const khoi = dangDiorama();
-    map.setLayoutProperty(`${era.id}-fill`, "visibility", active && !khoi ? "visible" : "none");
-    map.setLayoutProperty(`${era.id}-line`, "visibility", active && !khoi ? "visible" : "none");
-    map.setLayoutProperty(`${era.id}-3d`, "visibility", active && khoi ? "visible" : "none");
-    map.setLayoutProperty(`${era.id}-label`, "visibility", active && !khoi && showLabels ? "visible" : "none");
+    // Bật 3D thì khối SỐNG Ở MỌI MỨC ZOOM. Bản cũ tắt khối từ zoom 7,5 nên
+    // phóng vào là bản đồ tự trở về 2D — đúng thứ chủ dự án báo lỗi ngày
+    // 2026-08-05. Vấn đề thật (mặt khối che mặt đất) chữa bằng độ trong theo
+    // zoom ở `fill-extrusion-opacity`, không phải bằng cách bỏ 3D.
+    //
+    // Ba lớp phẳng thì ngược lại: ở tầm diorama chúng thừa (không có nền bản
+    // đồ, khối đã kể hết), phóng sâu mới cần — đường biên và tên tỉnh là thứ
+    // giúp định vị khi khối đã trong suốt.
+    const dio = dangDiorama();
+    map.setLayoutProperty(`${era.id}-fill`, "visibility", active && !is3D ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-line`, "visibility", active && !dio ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-3d`, "visibility", active && is3D ? "visible" : "none");
+    map.setLayoutProperty(`${era.id}-label`, "visibility", active && !dio && showLabels ? "visible" : "none");
   });
 }
 
@@ -2222,6 +2272,14 @@ interface Poem {
   loi_binh?: string;
   vi_sao_hay?: string;
   xep_hang?: number;
+  /**
+   * Số bài trong Ngục trung nhật ký theo bản NXB Chính trị quốc gia Sự thật
+   * (dãy 1–134). Đây là thứ tự của chính tập thơ, tức thứ tự thời gian Bác
+   * viết trong tù — KHÔNG phải thứ tự do dự án đặt.
+   * Chỉ nhóm `nktt` có. «Tân xuất ngục, học đăng sơn» cố ý để trống vì bài đó
+   * nằm ngoài dãy đánh số; xem `ghi_chu_bien_tap` của mục đó.
+   */
+  so_bai?: number;
   nguyen_van: string[];
   ban_dich?: string[];
   ghi_chu_dich?: string;
@@ -2251,6 +2309,7 @@ const parsePoem = (raw: unknown): Poem => {
     loi_binh: str(r.loi_binh),
     vi_sao_hay: str(r.vi_sao_hay),
     xep_hang: num(r.xep_hang) ?? undefined,
+    so_bai: num(r.so_bai) ?? undefined,
     nguyen_van: strs(r.nguyen_van),
     ban_dich: strs(r.ban_dich),
     ghi_chu_dich: str(r.ghi_chu_dich),
@@ -2519,6 +2578,12 @@ function hcmWorksHtml(ds: Poem[]): string {
   return NHOM_HCM.map(([k, nhan, canhBao]) => {
     const nhom = ds.filter((p) => nhomCua(p) === k);
     if (!nhom.length) return "";
+    // Ngục trung nhật ký đọc theo ĐÚNG thứ tự của tập, tức thứ tự Bác viết
+    // trong tù. Sắp ở đây chứ không chỉ dựa vào thứ tự trong file: một lượt
+    // sửa dữ liệu chèn mục vào giữa sẽ lặng lẽ phá thứ tự mà không ai thấy.
+    // Bài không có số (nằm ngoài dãy 1–134) xếp cuối nhóm.
+    if (k === "nktt")
+      nhom.sort((a, b) => (a.so_bai ?? Infinity) - (b.so_bai ?? Infinity));
     return `<h4 class="hcm-nhom">${nhan} <span class="muted">(${nhom.length})</span></h4>
       ${canhBao ? `<p class="hcm-canh-bao">⚠️ ${esc(canhBao)}</p>` : ""}
       ${nhom.map(poemHtml).join("")}`;
@@ -2527,7 +2592,11 @@ function hcmWorksHtml(ds: Poem[]): string {
 
 function poemHtml(p: Poem): string {
   const rank = p.xep_hang ? `<span class="rank-badge">#${esc(String(p.xep_hang))}</span> ` : "";
-  return `<details class="profile-section"><summary>${rank}「${esc(p.ten)}」 — ${esc(p.tac_gia)}</summary>
+  // Số bài của Ngục trung nhật ký hiện ra để người đọc biết mình đang ở đâu
+  // trong tập 134 bài, và để thứ tự sắp xếp là thứ nhìn thấy được chứ không
+  // phải thứ ngầm hiểu.
+  const soBai = p.so_bai ? `<span class="so-bai">Bài ${esc(String(p.so_bai))}</span> ` : "";
+  return `<details class="profile-section"><summary>${soBai}${rank}「${esc(p.ten)}」 — ${esc(p.tac_gia)}</summary>
     <p class="muted">${esc(p.thoi_ky)} · ${esc(p.the_loai)}</p>
     ${p.loi_binh ? `<p class="giai-nghia">💬 ${esc(p.loi_binh)}</p>` : ""}
     ${p.vi_sao_hay ? `<p class="giai-nghia">🏅 <b>Vì sao được xếp hạng cao:</b> ${esc(p.vi_sao_hay)}</p>` : ""}

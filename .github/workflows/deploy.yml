@@ -3,6 +3,14 @@ name: Build & Deploy (GitHub Pages)
 on:
   push:
     branches: [main]
+    # Dự án chạy GitHub Actions gói miễn phí. Push chỉ đụng tài liệu thì không
+    # có gì trong dist/ đổi cả — chạy đủ build + hai cổng Chrome headless cho
+    # một lượt sửa PLAN.md là đốt phút không đổi lấy gì. Sửa mã hay dữ liệu vẫn
+    # chạy đủ như cũ.
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+      - ".gitignore"
   workflow_dispatch:
 
 permissions:

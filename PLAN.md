@@ -331,7 +331,33 @@ npm run smoke            # 10 kịch bản qua CDP (cần Chrome) — CI chặn
 
 ---
 
-## 10. Chờ chủ dự án quyết
+## 10. Chỉ thị chủ dự án 2026-08-05 — chương trình đang chạy
+
+Chủ dự án giao 13 hạng mục. Tiến độ ở đây, chi tiết kỹ thuật ở `RELEASE.md`.
+
+| # | Việc | Trạng thái |
+|---|---|---|
+| 1 | Bỏ qua GitHub Actions khi hết quota — gói miễn phí, không nâng cấp | ✅ `deploy.yml` thêm `paths-ignore` cho `**/*.md` + `docs/**`: push chỉ sửa tài liệu không còn đốt phút nào. **Quy ước: không đuổi theo lỗi CI do hết quota.** |
+| 2 | Màu sắc | ✅ chốt, không đụng nữa |
+| 3 | Zoom sâu thì 3D tự thành 2D | ✅ Xong. Nguyên nhân: `setEra` tắt hẳn lớp khối từ zoom 7,5. Nay khối sống ở **mọi** mức zoom; cái lo thật (mặt khối che mặt đất) chữa bằng `fill-extrusion-opacity` giảm dần 0,85 → 0,28. |
+| 4 | Icon trên bản đồ 3D phải là 3D, đúng cỡ, bấm được | 🔄 Vùng bấm xong: bán kính 3 → **12** (đích 24×24 px, WCAG 2.5.8), đo xác nhận popup mở. **Còn lại**: mô hình khối mới có 5 kiểu dùng chung cho mọi lớp — cần bộ mô hình riêng theo loại đối tượng. |
+| 5 | Học cách dựng mô hình 3D cho đối tượng lớp phủ | ⬜ chưa bắt đầu |
+| 6 | Mốc dòng thời gian: gắn vị trí, hiện note khi kéo; đủ 4000 năm | 🔄 sóng nghiên cứu đang chạy (triều đại · khởi nghĩa/kháng chiến · trận đánh · tác phẩm kinh điển) |
+| 7 | Ngục trung nhật ký xếp theo thứ tự bài | ✅ Xong |
+| 8 | Thư viện: chế độ đọc kiểu Kindle, chế độ lật, mở rộng cửa sổ, tuỳ chỉnh, bỏ biểu tượng thừa, sắp theo chủ đề + thời gian/tác giả, link trang tỉnh, bổ sung tác phẩm | 🔄 hai sóng đang chạy: đặc tả UI · mở rộng nội dung + gán chủ đề + liên kết tỉnh |
+| 9 | Hành trình lịch sử: thiếu mốc, UI lỗi thời | 🔄 sóng đặc tả UI đang chạy |
+| 10 | Sa đồ chiến dịch: thiếu chiến dịch/trận đánh, UI lỗi thời. Đích: học **toàn bộ** trận đánh 4000 năm qua sa đồ | 🔄 hai sóng đang chạy: đặc tả UI · mở rộng dữ liệu |
+| 11 | Lớp phủ chia theo lĩnh vực/chủ đề/giai đoạn, **không chia theo giới tính** | ⬜ chưa bắt đầu. Lớp `nu-danh-nhan-lich-su` phải giải thể, phân bổ lại theo lĩnh vực. |
+| 12 | UI lag khi di chuyển | 🔄 Đã bỏ lượt dựng lại mô hình khi khung nhìn không đổi đáng kể. **Chưa chứng minh được đây là nguyên nhân chính** — xem cảnh báo dưới. |
+| 13 | Nâng cấp bản đồ 3D | ⬜ chưa bắt đầu |
+
+⚠️ **Chưa đo được lag thật.** Harness headless chạy trên swiftshader (GPU phần mềm) nên **mọi** cấu hình đều tụt xuống 3–6 fps, kể cả 2D không lớp phủ — sàn đó nuốt mất thứ cần đo. Chỉ so tương đối được: lớp phủ tốn ~21%, chế độ 3D tốn ~23%, cộng gần như tuyến tính, **không điểm nghẽn bất thường nào lộ ra**. Muốn tìm nguyên nhân thật phải đo trên máy có GPU thật (Chrome Performance panel), việc harness này không làm được.
+
+Chi phí cấu trúc đã biết, chưa tối ưu: bật hết lớp phủ là **34 nguồn GeoJSON + 34 lớp vòng tròn + 34 lớp icon**, mỗi lớp một lượt vẽ.
+
+---
+
+## 11. Chờ chủ dự án quyết
 
 | # | Câu hỏi | Chặn việc gì |
 |---|---|---|

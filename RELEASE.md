@@ -398,3 +398,23 @@ Vẫn cố ý **không** gắn vào `npm run validate`: cổng đó phải chạ
 Mục này trong `PLAN.md` ghi «91 ảnh, chưa có script gộp, phủ ảnh 142 → 226/1.040». Dry-run đối chiếu chéo cho thấy cả ba con số đều lỗi thời: file cứu về có **195** bản ghi, và **195/195 đã nằm trong dữ liệu với URL khớp từng ký tự**. Độ phủ thật hiện là **558/2.347 mục lớp phủ (23,8%)**. 0 mục thiếu `anh_nguon`, 0 thiếu `anh_giay_phep`, 0 ảnh nằm ngoài `upload.wikimedia.org` (CSP của trang chỉ cho host này).
 
 ⚠️ **Chưa kiểm được 558 URL ảnh còn sống hay không, và phép đo đầu tiên là phép đo hỏng.** Quét bằng 8 luồng song song → Wikimedia trả **429** cho 543/558. Đó là tự mình bị chặn tốc độ, không phải ảnh chết — báo cáo "543 ảnh chết" mà tin là sẽ dẫn tới đi sửa 543 mục lành. Lấy mẫu lại 30 URL tuần tự, nghỉ 400 ms: **24 sống · 6 vẫn 429 · 0 mục 404**. Muốn con số thật thì phải quét chậm (≥1 s/URL) với User-Agent có địa chỉ liên hệ theo đúng chính sách của Wikimedia.
+
+### Ngục trung nhật ký xếp lại theo đúng thứ tự của tập
+
+117 mục trước đây nằm theo thứ tự biên soạn, **không có trường thứ tự nào**. Số bài chuẩn lấy từ bản bóc PDF NXB Chính trị quốc gia Sự thật 2015 (phiên 04-08), dãy 1–134.
+
+Khớp bằng **nội dung Hán–Việt** chứ không bằng tên: một bài có tới ba kiểu tên (chữ Hán, phiên âm, tên bản dịch), khớp tên là mời lỗi vào nhà. Điều kiện: ít nhất **hai** câu Hán–Việt của mục cùng nằm trong thân bài chuẩn — một câu chưa đủ vì các bài trong tập dùng lại nhiều cụm giống nhau. Kết quả **116/117**, không bài chuẩn nào bị gán cho hai mục.
+
+Mục thứ 117 — «Tân xuất ngục, học đăng sơn» — **cố ý không có số bài**. Dò cả năm từ khoá trong bản chuẩn đều không thấy: tập kết thúc ở bài 134 «Kết luận», còn bài này làm sau khi ra tù và thường in kèm như phụ lục. Gán cho nó một con số là bịa ra thứ tự mà nguồn không có. Lý do ghi vào `ghi_chu_bien_tap`, một câu cho người đọc vào `ghi_chu_dich`; mục xếp cuối nhóm.
+
+Sắp xếp làm ở **cả hai chỗ**: thứ tự mảng trong file, và một lượt `sort` theo `so_bai` trong `hcmWorksHtml`. Chỉ dựa vào thứ tự file thì một lượt sửa dữ liệu chèn mục vào giữa sẽ lặng lẽ phá thứ tự mà không ai thấy.
+
+Số bài hiện ra trên giao diện để thứ tự là thứ **nhìn thấy được**. Chữ dùng `--chu-mem`: đo được `--nhan` trên `--mat-3` chỉ đạt **3,33:1** ở chế độ người lớn, dưới ngưỡng 4,5:1 của WCAG 1.4.3. `--chu-mem` đạt 5,55:1 (người lớn) · 5,39:1 (trẻ em). Không thêm mã hex mới.
+
+### Bản đồ 3D — hai lỗi được báo, chẩn đoán bằng số đo
+
+**Zoom sâu thì 3D tự thành 2D.** `setEra` tắt hẳn lớp khối từ `ZOOM_TRA_NEN_3D = 7.5` và bật lớp tô phẳng thay thế. Lo ngại ban đầu có thật — mặt trên khối là tấm phẳng đục kín cả tỉnh, che hết đường sá — nhưng cách chữa sai: bỏ 3D thay vì cho nhìn xuyên qua. Nay khối sống ở **mọi** mức zoom với độ trong nội suy theo zoom (0,85 ở zoom 6 → 0,28 ở zoom 11); nền bản đồ và tên tỉnh bật lại khi phóng sâu để còn định vị.
+
+**Không bấm được icon ở 3D.** Đo TRƯỚC khi sửa: bấm đúng tâm marker thì popup **vẫn mở** — cơ chế không hỏng. Hỏng ở kích thước: vòng bấm bán kính **3** (đường kính 6 px), mà lớp icon phẳng bị ẩn ở 3D nên người dùng nhắm vào khối Three.js, còn đích thật là cái chấm 6 px dưới chân nó. WCAG 2.5.8 đòi đích tối thiểu 24×24 ⇒ bán kính ≥ 12. Tách vai trò để giữ cả hai yêu cầu: phần tô để độ trong 0,18 (chỉ còn là bóng dưới chân mô hình), viền mảnh vẽ chân đế — vùng bấm của MapLibre tính theo **bán kính**, không theo độ trong, nên đích vẫn đủ 24 px dù mắt chỉ thấy một vòng nhạt. Đo lại sau khi sửa: bán kính 12, popup mở.
+
+⚠️ **Lag thì KHÔNG đo được, và điều đó phải nói thẳng.** Harness chạy Chrome headless trên swiftshader (GPU phần mềm) nên sàn hiệu năng nuốt hết thứ cần đo: 2D không lớp phủ 5,6 fps · 3D không lớp phủ 4,3 · 3D bật hết 34 lớp 3,0 · 2D bật hết 4,4. Chỉ kết luận được phần tương đối — lớp phủ tốn ~21%, 3D tốn ~23%, gần như cộng tuyến tính, **không điểm nghẽn bất thường nào lộ ra**. Đã bỏ một lượt phí chắc chắn (dựng lại tới 400 mô hình sau mỗi `moveend` dù khung nhìn gần như không đổi), nhưng **không tuyên bố đó là nguyên nhân chính**. Muốn biết thật phải đo trên máy có GPU thật.
