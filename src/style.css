@@ -1,6 +1,7 @@
 @import "./theme.css";
 @import "./sado.css";
 @import "./hanhtrinh.css";
+@import "./moc-lich-su.css";
 
 /* Hệ token và nền tảng nằm ở theme.css. File này chỉ còn phần trình bày.
    Đừng viết hex thẳng ở đây — chế độ thứ hai sẽ không đổi theo. */
@@ -85,8 +86,11 @@
   font-size: var(--co-md);
 }
 
+/* Thanh trượt nay nằm trong #timeline-wrap (cùng dải vạch mốc), nên phần
+   co giãn theo bề ngang do wrapper giữ; thanh chỉ cần lấp đầy wrapper.
+   Để `flex: 1` ở đây là bảo nó giãn theo CHIỀU DỌC của wrapper. */
 #timeline {
-  flex: 1;
+  width: 100%;
 }
 
 #province-panel {

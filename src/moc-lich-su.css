@@ -1,0 +1,184 @@
+/* === Mốc lịch sử đính trên thanh thời gian (moc-lich-su.ts) ===============
+   Vạch mốc nằm ngay TRÊN rãnh thanh trượt và phải khớp với nút trượt. Nút
+   trượt rộng 19px nên quãng chạy thật của nó là (100% − 19px) và tâm nút ở
+   vị trí p là 9.5px + p·(100% − 19px). Vạch dùng đúng công thức đó, nếu
+   không thì kéo tới năm 1288 mà vạch 1288 lại lệch sang bên. */
+
+#timeline-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+#moc-ticks {
+  position: relative;
+  height: 11px;
+}
+
+.moc-tick {
+  position: absolute;
+  bottom: 0;
+  left: calc(9.5px + var(--x, 0) * (100% - 19px));
+  transform: translateX(-50%);
+  width: 3px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--moc-mau, var(--vien-nhan));
+  cursor: pointer;
+  /* Vạch chỉ rộng 3px nên vùng bấm thật phải nới ra bằng lớp phủ trong suốt.
+     Vạch sát nhau sẽ chồng vùng bấm — vạch nằm sau trong DOM (năm muộn hơn)
+     ăn cú bấm. Chấp nhận được vì hai nút ◂ ▸ trong note (44px) đi tới được
+     mọi mốc của thời kỳ, tức có đường tương đương đạt chuẩn. */
+}
+.moc-tick::before {
+  content: "";
+  position: absolute;
+  inset: -9px -11px;
+}
+.moc-tick:hover,
+.moc-tick.dang-chon {
+  height: 11px;
+  width: 4px;
+  box-shadow: 0 0 0 2px var(--glow-nhan);
+}
+
+/* Màu theo loại mốc. Màu KHÔNG phải phương tiện duy nhất mang thông tin —
+   loại mốc luôn được ghi bằng CHỮ trong note và trong `title` của vạch
+   (WCAG 1.4.1). Đo trên nền thanh (--chu): thấp nhất 8,11:1, cao nhất
+   12,12:1 ở cả hai chế độ — xem scratchpad/do_tuong_phan_moc.mjs. */
+.moc-tick[data-loai="trieu-dai"],
+.moc-chip[data-loai="trieu-dai"] { --moc-mau: #f2d399; }
+.moc-tick[data-loai="khoi-nghia"],
+.moc-chip[data-loai="khoi-nghia"] { --moc-mau: #fca5a5; }
+.moc-tick[data-loai="khang-chien"],
+.moc-chip[data-loai="khang-chien"] { --moc-mau: #fdba74; }
+.moc-tick[data-loai="tran-danh"],
+.moc-chip[data-loai="tran-danh"] { --moc-mau: #f0abfc; }
+.moc-tick[data-loai="tac-pham"],
+.moc-chip[data-loai="tac-pham"] { --moc-mau: #93c5fd; }
+.moc-tick[data-loai="su-kien"],
+.moc-chip[data-loai="su-kien"] { --moc-mau: #d6d3d1; }
+
+/* --- Note giới thiệu mốc, nổi ngay phía trên thanh --------------------- */
+#moc-note {
+  position: absolute;
+  left: 1.15rem;
+  right: 1.15rem;
+  bottom: calc(100% + 6px);
+  max-width: 46rem;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-lon, 12px);
+  background: var(--mat-2);
+  color: var(--chu);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+  font-size: var(--co-sm);
+  line-height: 1.45;
+}
+#moc-note[hidden] {
+  display: none;
+}
+
+.moc-dau {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.moc-chip {
+  background: var(--moc-mau, var(--mat-3));
+  color: #2b2320; /* đo 8,11–10,67:1 trên mọi màu chip */
+  border-radius: var(--bo-vua, 8px);
+  padding: 0.05rem 0.45rem;
+  font-size: var(--co-xs);
+  font-weight: 700;
+}
+
+.moc-nam {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.moc-dieu-huong {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-left: auto;
+}
+
+.moc-dem {
+  font-size: var(--co-xs);
+  color: var(--chu-mem);
+  font-variant-numeric: tabular-nums;
+  min-width: 2.6rem;
+  text-align: center;
+}
+
+.moc-nut,
+.moc-dong {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vua, 8px);
+  background: var(--mat-3);
+  color: var(--chu);
+  font-size: var(--co-md);
+  line-height: 1;
+  cursor: pointer;
+}
+.moc-dong {
+  margin-left: 0.15rem;
+}
+.moc-nut:hover,
+.moc-dong:hover {
+  background: var(--nhan-mo);
+}
+.moc-nut:focus-visible,
+.moc-dong:focus-visible {
+  outline: 3px solid var(--nhan);
+  outline-offset: 2px;
+}
+
+.moc-ten {
+  margin: 0;
+  font-weight: 600;
+}
+.moc-mo-ta {
+  margin: 0.2rem 0 0;
+  color: var(--chu-mem); /* 5,88:1 trên --mat-2 */
+}
+.moc-venh {
+  margin: 0.35rem 0 0;
+  padding: 0.3rem 0.5rem;
+  border-left: 3px solid var(--brand);
+  background: var(--mat-3);
+  color: var(--chu);
+  font-size: var(--co-xs);
+}
+.moc-nguon {
+  margin: 0.3rem 0 0;
+  color: var(--chu-mem);
+  font-size: var(--co-xs);
+  overflow-wrap: anywhere;
+}
+
+/* Màn hẹp: note chiếm gần hết bề ngang và cắt bớt mô tả cho khỏi cao quá,
+   che mất bản đồ phía sau. */
+@media (max-width: 640px) {
+  #moc-note {
+    left: 0.5rem;
+    right: 0.5rem;
+    max-height: 40vh;
+    overflow-y: auto;
+  }
+  #moc-ticks {
+    height: 9px;
+  }
+}

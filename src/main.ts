@@ -25,6 +25,7 @@ import { initBattle } from "./battle";
 import { initJourney } from "./journey";
 import { initQuocGia } from "./quocgia";
 import { initTimeline } from "./timeline";
+import { initMocLichSu, capNhatMoc } from "./moc-lich-su";
 import { esc } from "./util/html";
 import { fetchJson } from "./util/fetch";
 import { str, num, strs, oneOf, rec, arr, itemsOf } from "./types/parse";
@@ -98,6 +99,26 @@ const PERIODS: Period[] = [
   { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 63 tỉnh (1976–30/6/2025)", kind: "admin", ref: 1 },
   { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 34 tỉnh (từ 1/7/2025)", kind: "admin", ref: 2 },
 ];
+
+// Năm mở đầu ĐOẠN RÃNH của từng thời kỳ, dùng để đặt mốc lịch sử vào đúng chỗ
+// trên thanh trượt (xem moc-lich-su.ts).
+//
+// 🔴 Đây KHÔNG phải niên đại của từng nhà nước — niên đại thật nằm ở
+// PERIODS[i].nhan. Niên đại thật có chỗ chồng lấn (Âu Lạc mất năm 179 TCN
+// nhưng Nam Việt lập từ 204 TCN) và có chỗ đứt quãng (938→968, 1490→1802,
+// 1945→1976). Thanh trượt thì không được có khoảng trống, nếu không mốc năm
+// 1288 hay 1789 sẽ rơi vào chỗ không thuộc thời kỳ nào và không đặt được.
+// Vì vậy bảng này lấy RANH GIỚI CHUYỂN TIẾP làm mốc chia đoạn, phủ liền mạch
+// 4000 năm. Sửa PERIODS thì phải sửa bảng này cho khớp số phần tử.
+const NAM_MOC_KY: number[] = [
+  -2879, -700, -257, -204, -111, 544, 602, 968, 1054, 1802, 1887, 1945, 2025,
+];
+const NAM_KET_MOC = 2026;
+
+// Khai TRƯỚC setPeriod: setPeriod được gọi từ vài chỗ chạy sớm trong lúc bản
+// đồ nạp, để `let` xuống dưới là dính vùng chết (TDZ).
+/** Người dùng đã tự đổi thời kỳ chưa — quyết định note mốc có bung ra không. */
+let daDoiThoiKy = false;
 
 const KY_COLORS: Record<string, string> = {
   "Bắc Kỳ": "#2563eb",
@@ -1453,6 +1474,9 @@ function setPeriod(i: number): void {
   // thời kỳ cũ — hai bộ điều khiển cùng một thứ mà chỉ đồng bộ một chiều.
   const oChon = document.getElementById("lc-period") as HTMLSelectElement | null;
   if (oChon && Number(oChon.value) !== i) oChon.value = String(i);
+  // Note mốc chỉ bung ra khi NGƯỜI DÙNG đổi thời kỳ. Lúc khởi động setPeriod
+  // cũng chạy, mà một hộp tự hiện lên che bản đồ ngay khi mở trang thì phiền.
+  capNhatMoc(i, daDoiThoiKy);
 }
 
 function buildTimeline(): void {
@@ -1463,7 +1487,18 @@ function buildTimeline(): void {
   slider.step = "1";
   slider.disabled = false;
   slider.value = String(currentPeriod);
-  slider.addEventListener("input", () => setPeriod(Number(slider.value)));
+  slider.addEventListener("input", () => {
+    daDoiThoiKy = true;
+    setPeriod(Number(slider.value));
+  });
+  void initMocLichSu({
+    namKy: NAM_MOC_KY,
+    namKet: NAM_KET_MOC,
+    datPeriod: (i) => {
+      daDoiThoiKy = true;
+      setPeriod(i);
+    },
+  });
 }
 
 // ---------------------------------------------------------------------------
@@ -1822,7 +1857,10 @@ function buildLayerControl(): void {
   });
   el.addEventListener("change", (e) => {
     const t = e.target as HTMLInputElement;
-    if (t.name === "period") setPeriod(Number(t.value));
+    if (t.name === "period") {
+      daDoiThoiKy = true;
+      setPeriod(Number(t.value));
+    }
     if (t.name === "overlay") void toggleOverlay(t.value, t.checked);
     if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
     if (t.name === "labels") applyLabels(t.checked);

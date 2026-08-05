@@ -45,7 +45,15 @@
       <div id="map" tabindex="-1"></div>
       <footer id="timeline-bar">
         <label for="timeline">Dòng thời gian:</label>
-        <input id="timeline" type="range" min="0" max="0" value="0" disabled />
+        <!-- Note giới thiệu mốc — nổi phía TRÊN thanh, ăn theo
+             position:relative của #timeline-bar. -->
+        <div id="moc-note" role="status" hidden></div>
+        <!-- Dải vạch mốc phải rộng đúng bằng thanh trượt thì vạch mới khớp
+             với nút trượt; vì thế hai thứ nằm chung một wrapper. -->
+        <div id="timeline-wrap">
+          <div id="moc-ticks"></div>
+          <input id="timeline" type="range" min="0" max="0" value="0" disabled />
+        </div>
         <!-- Nhãn thời kỳ cũng LÀ lối vào niên biểu 4000 năm. Trước đây niên
              biểu nằm trong menu «Khám phá» dưới cái tên «Dòng thời gian» —
              trùng hệt tên thanh này, hai chỗ khác nhau cùng một tên. -->
