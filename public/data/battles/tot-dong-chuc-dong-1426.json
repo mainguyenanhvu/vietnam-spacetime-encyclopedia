@@ -1,0 +1,189 @@
+{
+  "ghi_chu": "Sa đồ trận Tốt Động – Chúc Động 1426 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tot-dong-chuc-dong-1426",
+  "ten": "Tốt Động – Chúc Động 1426",
+  "nam": 1426,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Lợi, Nguyễn Trãi",
+  "doi_thu": "Nhà Minh (Vương Thông)",
+  "dia_diem": "Tốt Động – Chúc Động, Chương Mỹ (Hà Nội)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          750,
+          150
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          300,
+          380
+        ]
+      ],
+      "nhan": "Đường tiến quân Vương Thông"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          450,
+          470
+        ],
+        [
+          800,
+          440
+        ]
+      ],
+      "nhan": "Vùng lầy Tốt Động – Chúc Động (ven sông Đáy)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-dong-quan",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 850,
+      "y": 120,
+      "nhan": "Thành Đông Quan"
+    },
+    {
+      "id": "quan-dich-vuong-thong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 220,
+      "nhan": "Viện binh Vương Thông"
+    },
+    {
+      "id": "quan-ta-mai-phuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Nguyễn Trãi, Lý Triện, Đinh Lễ mai phục"
+    },
+    {
+      "id": "mui-nhu-dich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        400
+      ],
+      "den": [
+        600,
+        260
+      ],
+      "nhan": "Nhử địch vào vùng lầy"
+    },
+    {
+      "id": "vung-lay",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 500,
+      "nhan": "Tốt Động – Chúc Động"
+    },
+    {
+      "id": "mui-phuc-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        440
+      ],
+      "den": [
+        500,
+        320
+      ],
+      "nhan": "Phục binh đổ ra đánh úp"
+    },
+    {
+      "id": "quan-dich-tan-vo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 340,
+      "nhan": "Quân Minh rối loạn, Trần Hiệp tử trận"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 250,
+      "nhan": "Đại phá quân Minh"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Vương Thông đem viện binh cứu Đông Quan",
+      "mo_ta": "Cuối 1426, nhà Minh sai Vương Thông đưa viện binh hợp cùng quân đồn trú, tổ chức phản công hòng giải vây và đẩy lùi nghĩa quân Lam Sơn.",
+      "hien": [
+        "thanh-dong-quan",
+        "quan-dich-vuong-thong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Trãi cùng các tướng bày trận mai phục",
+      "mo_ta": "Lợi dụng địa hình đầm lầy Tốt Động, Chúc Động, các tướng Lý Triện, Đinh Lễ, Nguyễn Xí bố trí quân mai phục đón đường tiến quân Minh.",
+      "hien": [
+        "quan-ta-mai-phuc",
+        "vung-lay"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nhử địch vào vùng lầy",
+      "mo_ta": "Nghĩa quân nhử quân Vương Thông hành quân qua khu vực lầy lội, khó triển khai đội hình.",
+      "hien": [
+        "quan-ta-mai-phuc",
+        "vung-lay",
+        "mui-nhu-dich",
+        "quan-dich-vuong-thong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Phục binh đổ ra đánh úp",
+      "mo_ta": "Quân mai phục bất ngờ đánh ập từ nhiều phía; quân Minh rối loạn trong vùng đầm lầy không kịp trở tay.",
+      "hien": [
+        "vung-lay",
+        "mui-phuc-kich",
+        "quan-dich-tan-vo"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đại phá quân Minh, Vương Thông tháo chạy",
+      "mo_ta": "Thượng thư Trần Hiệp, tướng Lý Lượng tử trận, quân Minh thiệt hại nặng; Vương Thông bị thương phải rút chạy về cố thủ trong thành Đông Quan.",
+      "hien": [
+        "quan-dich-tan-vo",
+        "co-thang",
+        "thanh-dong-quan"
+      ]
+    }
+  ],
+  "ket_qua": "Tiêu diệt và làm tan rã phần lớn viện binh Vương Thông, giết Thượng thư Trần Hiệp, chuyển thế cuộc khởi nghĩa Lam Sơn sang phản công chiến lược.",
+  "y_nghia": "Đánh bại viện binh lớn của nhà Minh, chuyển thế cuộc khởi nghĩa Lam Sơn từ phòng ngự sang phản công chiến lược, mở đường vây hãm Đông Quan.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lê",
+    "Lam Sơn thực lục",
+    "Bình Ngô đại cáo (nguyên tác)",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

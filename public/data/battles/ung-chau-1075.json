@@ -1,0 +1,212 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch Ung – Khâm – Liêm Châu 1075–1076 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "ung-chau-1075",
+  "ten": "Chiến dịch tiến công Ung – Khâm – Liêm Châu 1075–1076",
+  "nam": 1075,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lý Thường Kiệt, Tông Đản",
+  "doi_thu": "Nhà Tống (Tô Giám — tri châu Ung Châu)",
+  "dia_diem": "Xuất phát từ biên giới Lạng Sơn, đánh sang các châu Ung, Khâm, Liêm (nay thuộc Quảng Tây, Trung Quốc)",
+  "lien_quan_tinh": [
+    "lang-son"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác. Toàn bộ diễn biến xảy ra trên đất Tống (nay Quảng Tây, Trung Quốc).",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          450,
+          520
+        ],
+        [
+          280,
+          300
+        ],
+        [
+          180,
+          140
+        ]
+      ],
+      "nhan": "Đường bộ Tông Đản tiến đánh Ung Châu"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          500,
+          520
+        ],
+        [
+          750,
+          300
+        ],
+        [
+          850,
+          120
+        ]
+      ],
+      "nhan": "Đường biển Lý Thường Kiệt"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          480
+        ],
+        [
+          500,
+          540
+        ],
+        [
+          900,
+          470
+        ]
+      ],
+      "nhan": "Dãy núi biên giới Việt – Trung"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "xuat-phat-lang-son",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 540,
+      "nhan": "Xuất phát từ biên giới Lạng Sơn"
+    },
+    {
+      "id": "quan-ta-tong-dan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 380,
+      "nhan": "Tông Đản — đường bộ"
+    },
+    {
+      "id": "quan-ta-ly-thuong-kiet",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 650,
+      "y": 380,
+      "nhan": "Lý Thường Kiệt — đường thủy"
+    },
+    {
+      "id": "thanh-ung-chau",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 160,
+      "y": 100,
+      "nhan": "Thành Ung Châu (Tô Giám cố thủ)"
+    },
+    {
+      "id": "thanh-kham-lien",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 830,
+      "y": 90,
+      "nhan": "Khâm Châu – Liêm Châu"
+    },
+    {
+      "id": "mui-cong-ung-chau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        360
+      ],
+      "den": [
+        190,
+        130
+      ],
+      "nhan": "Vây đánh Ung Châu"
+    },
+    {
+      "id": "mui-cong-kham-lien",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        650,
+        360
+      ],
+      "den": [
+        810,
+        110
+      ],
+      "nhan": "Hạ Khâm Châu, Liêm Châu"
+    },
+    {
+      "id": "thanh-ung-chau-sup-do",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 160,
+      "y": 100,
+      "nhan": "Ung Châu thất thủ, Tô Giám tự thiêu"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 250,
+      "nhan": "Phá xong kho lương, chủ động rút quân"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chủ trương \"tiên phát chế nhân\"",
+      "mo_ta": "Trước nguy cơ nhà Tống ráo riết chuẩn bị xâm lược, Lý Thường Kiệt chủ trương chủ động đem quân đánh trước để phá thế chuẩn bị của địch.",
+      "hien": [
+        "xuat-phat-lang-son"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tông Đản vây đánh Ung Châu",
+      "mo_ta": "Cánh quân bộ do Tông Đản chỉ huy vượt biên giới, tiến đánh châu Ung; tri châu Tô Giám cố thủ trong thành.",
+      "hien": [
+        "xuat-phat-lang-son",
+        "quan-ta-tong-dan",
+        "mui-cong-ung-chau",
+        "thanh-ung-chau"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Lý Thường Kiệt hạ Khâm Châu, Liêm Châu",
+      "mo_ta": "Cánh thủy quân do Lý Thường Kiệt chỉ huy nhanh chóng đánh chiếm hai châu ven biển, phá kho lương, cắt hậu cần chuẩn bị xâm lược của địch.",
+      "hien": [
+        "xuat-phat-lang-son",
+        "quan-ta-ly-thuong-kiet",
+        "mui-cong-kham-lien",
+        "thanh-kham-lien"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hạ thành Ung Châu sau 42 ngày vây hãm",
+      "mo_ta": "Quân ta công phá thành sau 42 ngày vây hãm; Tô Giám cùng đường phải tự thiêu.",
+      "hien": [
+        "thanh-ung-chau-sup-do",
+        "mui-cong-ung-chau"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chủ động rút quân về nước",
+      "mo_ta": "Đầu năm 1076, sau khi đạt mục tiêu làm chậm và suy yếu bước tiến của Tống, quân ta rút về nước, chuẩn bị phòng tuyến sông Như Nguyệt.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Phá hủy các kho lương, căn cứ chuẩn bị xâm lược của nhà Tống tại Ung, Khâm, Liêm Châu rồi chủ động rút quân, làm chậm và suy yếu bước tiến của địch.",
+  "y_nghia": "Chiến lược 'tiên phát chế nhân' độc đáo, chủ động phá thế chuẩn bị xâm lược của địch, tạo thời gian và thế trận cho chiến thắng Như Nguyệt năm sau.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Quân đội Đại Việt với chiến dịch tấn công vào đất Tống 1075–1077"
+  ]
+}

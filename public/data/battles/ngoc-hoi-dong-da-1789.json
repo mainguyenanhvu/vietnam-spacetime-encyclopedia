@@ -1,0 +1,216 @@
+{
+  "ghi_chu": "Sa đồ Ngọc Hồi – Đống Đa 1789 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Con số '29 vạn quân Thanh' theo cách chép truyền thống (Hoàng Lê nhất thống chí), mang tính ước lệ — cần tra thêm nếu muốn đối chiếu số liệu hiện đại. trang_thai=draft chờ soát §9.",
+  "id": "ngoc-hoi-dong-da-1789",
+  "ten": "Ngọc Hồi – Đống Đa 1789",
+  "nam": 1789,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hoàng đế Quang Trung – Nguyễn Huệ",
+  "doi_thu": "Nhà Thanh (Tôn Sĩ Nghị)",
+  "dia_diem": "Ngọc Hồi – gò Đống Đa (Hà Nội)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          80,
+          550
+        ],
+        [
+          300,
+          420
+        ],
+        [
+          500,
+          300
+        ]
+      ],
+      "nhan": "Đường hành quân thần tốc từ Phú Xuân"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          500,
+          60
+        ],
+        [
+          750,
+          90
+        ],
+        [
+          1000,
+          140
+        ]
+      ],
+      "nhan": "Sông Nhị Hà"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "xuat-phat-phu-xuan",
+      "kieu": "dia-danh",
+      "x": 100,
+      "y": 560,
+      "nhan": "Xuất phát từ Phú Xuân"
+    },
+    {
+      "id": "quan-ta-hanh-quan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 460,
+      "nhan": "Đại quân Quang Trung hành quân thần tốc"
+    },
+    {
+      "id": "don-ngoc-hoi",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 560,
+      "y": 280,
+      "nhan": "Đồn Ngọc Hồi"
+    },
+    {
+      "id": "don-dong-da",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 420,
+      "y": 230,
+      "nhan": "Đồn Khương Thượng – Đống Đa"
+    },
+    {
+      "id": "mui-cong-ngoc-hoi",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        410
+      ],
+      "den": [
+        545,
+        290
+      ],
+      "nhan": "Công phá đồn Ngọc Hồi"
+    },
+    {
+      "id": "mui-cong-dong-da",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        400
+      ],
+      "den": [
+        420,
+        250
+      ],
+      "nhan": "Đánh úp đồn Đống Đa"
+    },
+    {
+      "id": "tuong-dich-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 720,
+      "y": 150,
+      "nhan": "Tôn Sĩ Nghị tháo chạy"
+    },
+    {
+      "id": "mui-dich-chay",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        720,
+        150
+      ],
+      "den": [
+        900,
+        90
+      ],
+      "nhan": "Chạy qua sông Nhị Hà, cầu phao đứt"
+    },
+    {
+      "id": "thanh-thang-long",
+      "kieu": "thanh",
+      "x": 560,
+      "y": 160,
+      "nhan": "Thăng Long"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 630,
+      "y": 200,
+      "nhan": "Giải phóng Thăng Long"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quang Trung lên ngôi, hành quân thần tốc ra Bắc",
+      "mo_ta": "Cuối 1788, trước việc quân Thanh chiếm Thăng Long theo lời cầu viện của Lê Chiêu Thống, Nguyễn Huệ lên ngôi hoàng đế lấy hiệu Quang Trung, lập tức đưa đại quân hành quân thần tốc từ Phú Xuân ra Bắc.",
+      "hien": [
+        "xuat-phat-phu-xuan",
+        "quan-ta-hanh-quan"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bí mật áp sát, nghi binh đêm Giao thừa",
+      "mo_ta": "Quân Tây Sơn hành quân cấp tốc, giữ bí mật để quân Thanh không kịp đề phòng, chuẩn bị tổng công kích ngay dịp Tết.",
+      "hien": [
+        "quan-ta-hanh-quan",
+        "don-ngoc-hoi",
+        "don-dong-da"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Công phá đồn Ngọc Hồi",
+      "mo_ta": "Mùng 5 Tết Kỷ Dậu, quân Tây Sơn dùng ván gỗ ghép thành mộc bài tẩm rơm ướt chắn đạn, kết hợp tượng binh xông thẳng vào đồn Ngọc Hồi kiên cố nhất của quân Thanh.",
+      "hien": [
+        "don-ngoc-hoi",
+        "mui-cong-ngoc-hoi"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh úp đồn Đống Đa",
+      "mo_ta": "Cùng lúc, một cánh quân Tây Sơn đánh úp đồn Khương Thượng – gò Đống Đa; tướng Sầm Nghi Đống thế cùng phải thắt cổ tự vẫn.",
+      "hien": [
+        "don-dong-da",
+        "mui-cong-dong-da"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tôn Sĩ Nghị tháo chạy hỗn loạn",
+      "mo_ta": "Chủ tướng Tôn Sĩ Nghị hoảng loạn bỏ chạy không kịp mặc giáp; cầu phao qua sông Nhị Hà bị đứt khiến rất nhiều quân Thanh chết đuối.",
+      "hien": [
+        "tuong-dich-chay",
+        "mui-dich-chay"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Giải phóng Thăng Long",
+      "mo_ta": "Chỉ trong 5 ngày Tết, quân Tây Sơn đại phá toàn bộ quân Thanh, giải phóng kinh thành, kết thúc thắng lợi cuộc kháng chiến.",
+      "hien": [
+        "thanh-thang-long",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Đại phá 29 vạn quân Thanh trong 5 ngày Tết Kỷ Dậu, giải phóng Thăng Long, Tôn Sĩ Nghị và Lê Chiêu Thống bỏ chạy sang Trung Quốc.",
+  "y_nghia": "Chiến công quân sự thần tốc bậc nhất lịch sử, đánh bại đại quân xâm lược nhà Thanh chỉ trong 5 ngày Tết, giữ vững nền độc lập dân tộc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Hoàng Lê nhất thống chí",
+    "Đại Nam chính biên liệt truyện",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "Cục Di sản Văn hoá (dsvh.gov.vn) — Gò Đống Đa, DTQG đặc biệt"
+  ]
+}

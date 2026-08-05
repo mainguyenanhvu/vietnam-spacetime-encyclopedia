@@ -1,0 +1,186 @@
+{
+  "ghi_chu": "Sa đồ trận Đà Nẵng 1858 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-da-nang-1858",
+  "ten": "Trận Đà Nẵng (mở đầu chống Pháp)",
+  "nam": 1858,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Tri Phương",
+  "doi_thu": "Liên quân Pháp – Tây Ban Nha (Rigault de Genouilly)",
+  "dia_diem": "Cửa biển Đà Nẵng — bán đảo Sơn Trà",
+  "lien_quan_tinh": [
+    "da-nang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          1000,
+          50
+        ],
+        [
+          1000,
+          300
+        ],
+        [
+          750,
+          250
+        ]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          500,
+          200
+        ],
+        [
+          650,
+          280
+        ],
+        [
+          750,
+          350
+        ]
+      ],
+      "nhan": "Sông Hàn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "ham-doi-phap",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 870,
+      "y": 150,
+      "nhan": "Hạm đội Rigault de Genouilly"
+    },
+    {
+      "id": "ban-dao-son-tra",
+      "kieu": "dia-danh",
+      "x": 780,
+      "y": 280,
+      "nhan": "Bán đảo Sơn Trà"
+    },
+    {
+      "id": "don-an-hai",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 350,
+      "nhan": "Đồn An Hải"
+    },
+    {
+      "id": "don-dien-hai",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 480,
+      "y": 400,
+      "nhan": "Đồn Điện Hải"
+    },
+    {
+      "id": "luy-nguyen-tri-phuong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 280,
+      "y": 430,
+      "nhan": "Phòng tuyến Nguyễn Tri Phương"
+    },
+    {
+      "id": "quan-ta-vay-ham",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 220,
+      "y": 490,
+      "nhan": "Quân triều đình bao vây, cầm chân"
+    },
+    {
+      "id": "mui-dich-chuyen-huong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        870,
+        180
+      ],
+      "den": [
+        400,
+        550
+      ],
+      "nhan": "Chuyển hướng vào Gia Định (đầu 1859)"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 280,
+      "y": 370,
+      "nhan": "Cầm chân địch gần 5 tháng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Liên quân Pháp – Tây Ban Nha nổ súng, đổ bộ Sơn Trà",
+      "mo_ta": "Ngày 1/9/1858, hạm đội do Rigault de Genouilly chỉ huy bắn phá rồi đổ bộ chiếm bán đảo Sơn Trà, mở đầu cuộc xâm lược.",
+      "hien": [
+        "ham-doi-phap",
+        "ban-dao-son-tra"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hạ đồn An Hải, Điện Hải",
+      "mo_ta": "Trong những ngày đầu, quân Pháp – Tây Ban Nha nhanh chóng chiếm các đồn phòng thủ ven biển của triều đình.",
+      "hien": [
+        "ham-doi-phap",
+        "don-an-hai",
+        "don-dien-hai"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nguyễn Tri Phương lập phòng tuyến bao vây",
+      "mo_ta": "Được cử làm Tổng thống quân vụ, Nguyễn Tri Phương chủ trương không quyết chiến trực diện mà đắp lũy dài bao vây, kìm chân địch, cắt đường tiếp tế vào sâu nội địa.",
+      "hien": [
+        "don-an-hai",
+        "don-dien-hai",
+        "luy-nguyen-tri-phuong",
+        "quan-ta-vay-ham"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Cầm chân địch gần 5 tháng",
+      "mo_ta": "Chiến thuật phòng thủ kiên trì khiến liên quân xâm lược không thể mở rộng vùng chiếm đóng, hao mòn lực lượng vì bệnh dịch và thiếu tiếp tế.",
+      "hien": [
+        "luy-nguyen-tri-phuong",
+        "quan-ta-vay-ham",
+        "co-thang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Pháp – Tây Ban Nha bỏ dở kế hoạch, chuyển hướng vào Gia Định",
+      "mo_ta": "Đầu 1859, không đạt được mục tiêu tại Đà Nẵng, liên quân rút phần lớn lực lượng, chuyển hướng tấn công thành Gia Định.",
+      "hien": [
+        "ham-doi-phap",
+        "mui-dich-chuyen-huong"
+      ]
+    }
+  ],
+  "ket_qua": "Pháp không chiếm được Đà Nẵng sau gần 5 tháng bao vây, buộc phải chuyển hướng đưa quân vào đánh chiếm thành Gia Định.",
+  "y_nghia": "Trận đánh mở đầu công cuộc chống Pháp xâm lược, làm phá sản kế hoạch 'đánh nhanh thắng nhanh' ban đầu của thực dân Pháp.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "sknc.qdnd.vn — Vì sao là Đà Nẵng"
+  ]
+}

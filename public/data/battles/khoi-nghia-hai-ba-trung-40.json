@@ -1,0 +1,185 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Hai Bà Trưng — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-hai-ba-trung-40",
+  "ten": "Khởi nghĩa Hai Bà Trưng",
+  "nam": 40,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trưng Trắc, Trưng Nhị",
+  "doi_thu": "Nhà Đông Hán (Thái thú Tô Định)",
+  "dia_diem": "Hát Môn (Phúc Thọ, Hà Nội) — Luy Lâu (trị sở đô hộ)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          80,
+          120
+        ],
+        [
+          400,
+          300
+        ],
+        [
+          950,
+          480
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          120,
+          520
+        ],
+        [
+          430,
+          430
+        ],
+        [
+          820,
+          220
+        ]
+      ],
+      "nhan": "Đường tiến quân nghĩa quân"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-hat-mon",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 120,
+      "y": 540,
+      "nhan": "Cờ khởi nghĩa tại Hát Môn"
+    },
+    {
+      "id": "quan-ta-tap-hop",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 470,
+      "nhan": "Hào kiệt bốn quận tụ nghĩa"
+    },
+    {
+      "id": "dia-danh-me-linh",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 380,
+      "nhan": "Mê Linh"
+    },
+    {
+      "id": "mui-tien-cong-luy-lau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        330,
+        450
+      ],
+      "den": [
+        760,
+        240
+      ],
+      "nhan": "Tiến đánh Luy Lâu"
+    },
+    {
+      "id": "thanh-luy-lau",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 830,
+      "y": 180,
+      "nhan": "Trị sở Luy Lâu (Tô Định)"
+    },
+    {
+      "id": "quan-dich-tan-vo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 760,
+      "y": 260,
+      "nhan": "Quân Tô Định tan vỡ"
+    },
+    {
+      "id": "mui-dich-chay",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        830,
+        180
+      ],
+      "den": [
+        940,
+        80
+      ],
+      "nhan": "Tô Định trốn về Nam Hải"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 300,
+      "nhan": "Trưng Trắc xưng vương"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Dựng cờ khởi nghĩa ở Hát Môn",
+      "mo_ta": "Mùa xuân năm 40, Trưng Trắc cùng em là Trưng Nhị tế cờ khởi nghĩa tại Hát Môn, kêu gọi hào kiệt khắp nơi đứng lên chống ách đô hộ.",
+      "hien": [
+        "co-ta-hat-mon"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hào kiệt các quận hưởng ứng",
+      "mo_ta": "Nghĩa quân được hào kiệt các quận Giao Chỉ, Cửu Chân, Nhật Nam, Hợp Phố hưởng ứng, kéo về tụ nghĩa ngày một đông.",
+      "hien": [
+        "co-ta-hat-mon",
+        "quan-ta-tap-hop"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh chiếm Luy Lâu",
+      "mo_ta": "Nghĩa quân tiến đánh Luy Lâu — trị sở chính quyền đô hộ; quân Tô Định không chống nổi.",
+      "hien": [
+        "quan-ta-tap-hop",
+        "mui-tien-cong-luy-lau",
+        "thanh-luy-lau"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tô Định bỏ chạy",
+      "mo_ta": "Thái thú Tô Định phải cải trang, cắt tóc cạo râu trốn về quận Nam Hải (Trung Quốc).",
+      "hien": [
+        "thanh-luy-lau",
+        "quan-dich-tan-vo",
+        "mui-dich-chay"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trưng Trắc xưng vương",
+      "mo_ta": "Nghĩa quân thu phục 65 thành, Trưng Trắc xưng vương, đóng đô ở Mê Linh, giữ nền độc lập trong 3 năm (40–43) trước khi Mã Viện đem quân sang đàn áp.",
+      "hien": [
+        "dia-danh-me-linh",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Trưng Trắc, Trưng Nhị đánh đuổi Thái thú Tô Định, thu phục 65 thành, Trưng Trắc xưng vương, giữ nền độc lập trong 3 năm (40–43) trước khi bị Mã Viện đàn áp.",
+  "y_nghia": "Cuộc khởi nghĩa vũ trang quy mô lớn đầu tiên do phụ nữ lãnh đạo chống ách đô hộ phương Bắc, mở đầu truyền thống 'giặc đến nhà đàn bà cũng đánh'.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Trưng Nữ Vương",
+    "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+    "Cục Di sản văn hóa — Di tích Đền Hát Môn (dsvh.gov.vn)"
+  ]
+}

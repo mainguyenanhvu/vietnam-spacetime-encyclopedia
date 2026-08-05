@@ -1,0 +1,191 @@
+{
+  "ghi_chu": "Sa đồ trận Rạch Gầm – Xoài Mút 1785 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Con số 'gần 5 vạn quân Xiêm' theo cách chép truyền thống (Đại Nam chính biên liệt truyện / Hoàng Lê nhất thống chí), mang tính ước lệ — cần tra thêm nếu muốn đối chiếu số liệu hiện đại. trang_thai=draft chờ soát §9.",
+  "id": "rach-gam-xoai-mut-1785",
+  "ten": "Rạch Gầm – Xoài Mút 1785",
+  "nam": 1785,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Huệ",
+  "doi_thu": "Quân Xiêm (theo Nguyễn Ánh)",
+  "dia_diem": "Khúc sông Tiền Rạch Gầm – Xoài Mút, Tiền Giang (nay tỉnh Đồng Tháp)",
+  "lien_quan_tinh": [
+    "dong-thap"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Tiền"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-xiem",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 150,
+      "y": 280,
+      "nhan": "Thuỷ quân Xiêm (theo Nguyễn Ánh)"
+    },
+    {
+      "id": "cu-lao",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 270,
+      "nhan": "Cù lao giữa sông"
+    },
+    {
+      "id": "quan-ta-phuc-kich-bac",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 150,
+      "nhan": "Đại bác, quân Tây Sơn mai phục bờ bắc"
+    },
+    {
+      "id": "quan-ta-phuc-kich-nam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 430,
+      "nhan": "Quân Tây Sơn mai phục bờ nam"
+    },
+    {
+      "id": "mui-nhu-dich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        290
+      ],
+      "den": [
+        500,
+        280
+      ],
+      "nhan": "Nhử quân Xiêm vào giữa trận địa"
+    },
+    {
+      "id": "mui-hoa-cong-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        170
+      ],
+      "den": [
+        550,
+        270
+      ],
+      "nhan": "Hỏa công, đại bác từ bờ bắc"
+    },
+    {
+      "id": "mui-hoa-cong-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        410
+      ],
+      "den": [
+        550,
+        300
+      ],
+      "nhan": "Hỏa công, đại bác từ bờ nam"
+    },
+    {
+      "id": "thuyen-dich-chim",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 650,
+      "y": 290,
+      "nhan": "Thuyền Xiêm bị nhấn chìm"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 800,
+      "y": 230,
+      "nhan": "Quân Xiêm gần như bị tiêu diệt trong một đêm"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Xiêm theo Nguyễn Ánh vào Nam Bộ",
+      "mo_ta": "Cuối 1784, được Nguyễn Ánh cầu viện, quân Xiêm tiến vào chiếm đóng nhiều vùng ở Nam Bộ, cướp phá gây oán ghét trong dân.",
+      "hien": [
+        "quan-dich-xiem"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Huệ chọn khúc sông làm trận địa",
+      "mo_ta": "Nhận thấy địa hình có cù lao, lòng sông hẹp thuận lợi mai phục, Nguyễn Huệ bí mật bố trí đại bác, thuyền chiến ở hai bên bờ và trên các cù lao.",
+      "hien": [
+        "quan-dich-xiem",
+        "cu-lao",
+        "quan-ta-phuc-kich-bac",
+        "quan-ta-phuc-kich-nam"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nhử quân Xiêm vào trận địa mai phục",
+      "mo_ta": "Quân Tây Sơn cho thuyền nhỏ khiêu chiến rồi giả thua, dẫn dụ đoàn thuyền Xiêm tiến vào giữa khúc sông đã bố trí sẵn.",
+      "hien": [
+        "quan-dich-xiem",
+        "cu-lao",
+        "mui-nhu-dich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bất ngờ dùng hỏa công, đại bác đánh úp",
+      "mo_ta": "Đêm 19 rạng 20/1/1785, quân Tây Sơn đồng loạt nã đại bác và phóng hỏa từ hai bờ, chặn cả đầu lẫn cuối đoàn thuyền địch.",
+      "hien": [
+        "cu-lao",
+        "mui-hoa-cong-bac",
+        "mui-hoa-cong-nam"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân Xiêm gần như bị tiêu diệt trong một đêm",
+      "mo_ta": "Phần lớn chiến thuyền và quân Xiêm bị nhấn chìm; số ít sống sót phải chạy bộ về nước.",
+      "hien": [
+        "thuyen-dich-chim",
+        "co-thang"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Nguyễn Ánh chạy sang Xiêm lánh nạn",
+      "mo_ta": "Trận đại thắng bảo vệ vẹn toàn Nam Bộ, đánh tan mưu đồ dựa ngoại bang của Nguyễn Ánh trong giai đoạn này.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Nhấn chìm gần như toàn bộ đoàn thuyền quân Xiêm chỉ trong một đêm, Nguyễn Ánh phải chạy sang Xiêm lánh nạn, bảo vệ vẹn toàn Nam Bộ.",
+  "y_nghia": "Một trong những trận thủy chiến lớn nhất lịch sử Việt Nam, đập tan âm mưu dựa vào ngoại bang của Nguyễn Ánh, bảo vệ vẹn toàn Nam Bộ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam chính biên liệt truyện",
+    "Hoàng Lê nhất thống chí",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

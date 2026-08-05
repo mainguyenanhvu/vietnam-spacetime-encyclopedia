@@ -1,0 +1,180 @@
+{
+  "ghi_chu": "Sa đồ phòng tuyến Như Nguyệt 1077 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nhu-nguyet-1077",
+  "ten": "Phòng tuyến Như Nguyệt 1077",
+  "nam": 1077,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lý Thường Kiệt",
+  "doi_thu": "Nhà Tống (Quách Quỳ, Triệu Tiết)",
+  "dia_diem": "Sông Cầu (Như Nguyệt), Yên Phong, Bắc Ninh",
+  "lien_quan_tinh": [
+    "bac-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Như Nguyệt (sông Cầu)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          850,
+          60
+        ],
+        [
+          600,
+          180
+        ],
+        [
+          500,
+          270
+        ]
+      ],
+      "nhan": "Đường tiến quân Tống từ biên giới"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "luy-ta-bo-nam",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 420,
+      "nhan": "Phòng tuyến luỹ đất bờ nam"
+    },
+    {
+      "id": "quan-ta-phong-thu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 470,
+      "nhan": "Quân Lý Thường Kiệt phòng thủ"
+    },
+    {
+      "id": "quan-dich-bo-bac",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 160,
+      "nhan": "Đại quân Quách Quỳ, Triệu Tiết"
+    },
+    {
+      "id": "mui-dich-vuot-song",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        550,
+        190
+      ],
+      "den": [
+        480,
+        290
+      ],
+      "nhan": "Nhiều lần vượt sông không thành"
+    },
+    {
+      "id": "den-truong-hong-hat",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 350,
+      "nhan": "Đền thờ Trương Hống – Trương Hát"
+    },
+    {
+      "id": "mui-ta-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        420,
+        410
+      ],
+      "den": [
+        560,
+        220
+      ],
+      "nhan": "Bất ngờ vượt sông phản công"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 150,
+      "nhan": "Giảng hoà, quân Tống rút"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lập phòng tuyến bờ nam sông Như Nguyệt",
+      "mo_ta": "Lý Thường Kiệt cho đắp luỹ đất dọc bờ nam sông Cầu, chặn con đường bộ duy nhất từ biên giới về Thăng Long.",
+      "hien": [
+        "luy-ta-bo-nam",
+        "quan-ta-phong-thu"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân Tống nhiều lần vượt sông không thành",
+      "mo_ta": "Quách Quỳ, Triệu Tiết đưa đại quân đến bờ bắc, nhiều lần bắc cầu phao, đóng bè vượt sông đều bị đánh lui.",
+      "hien": [
+        "luy-ta-bo-nam",
+        "quan-ta-phong-thu",
+        "quan-dich-bo-bac",
+        "mui-dich-vuot-song"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đọc thơ thần \"Nam quốc sơn hà\"",
+      "mo_ta": "Đêm khuya, quân ta cho người vào đền bên sông ngâm vang bài thơ khẳng định chủ quyền, khích lệ tướng sĩ, làm quân Tống hoang mang.",
+      "hien": [
+        "luy-ta-bo-nam",
+        "quan-ta-phong-thu",
+        "den-truong-hong-hat"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Phản công bất ngờ vượt sông",
+      "mo_ta": "Lý Thường Kiệt bất ngờ cho quân vượt sông đánh thẳng vào doanh trại Tống, gây tổn thất nặng cho địch.",
+      "hien": [
+        "luy-ta-bo-nam",
+        "quan-dich-bo-bac",
+        "mui-ta-phan-cong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chủ động giảng hòa",
+      "mo_ta": "Dù đang ở thế thắng, Lý Thường Kiệt đề nghị giảng hòa để tránh hao binh tổn tướng lâu dài; quân Tống rút về nước, giữ vững nền độc lập nhà Lý.",
+      "hien": [
+        "quan-dich-bo-bac",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Chặn đứng đại quân Tống trên phòng tuyến sông Như Nguyệt; Lý Thường Kiệt chủ động giảng hòa trên thế thắng, quân Tống rút về nước, giữ vững độc lập nhà Lý.",
+  "y_nghia": "Đánh bại cuộc xâm lược quy mô lớn của nhà Tống, giữ vững nền độc lập Đại Việt thời Lý; khẳng định chủ quyền dân tộc qua bài thơ 'Nam quốc sơn hà'.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
+    "Việt sử lược",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

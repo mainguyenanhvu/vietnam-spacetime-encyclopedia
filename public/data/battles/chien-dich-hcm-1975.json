@@ -1,0 +1,178 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Hồ Chí Minh 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Nội dung bám sát cách trình bày của SGK và cổng nhà nước theo yêu cầu chủ dự án về nội dung nhạy cảm 1945–1975. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-hcm-1975",
+  "ten": "Chiến dịch Hồ Chí Minh 1975",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Chỉ huy Chiến dịch Hồ Chí Minh",
+  "doi_thu": "Quân lực Việt Nam Cộng hòa",
+  "dia_diem": "Dinh Độc Lập, Sài Gòn (TP. Hồ Chí Minh)",
+  "lien_quan_tinh": [
+    "thanh-pho-ho-chi-minh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          100
+        ],
+        [
+          500,
+          300
+        ],
+        [
+          900,
+          120
+        ]
+      ],
+      "nhan": "Các hướng tiến quân hội tụ về Sài Gòn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "canh-quan-bac",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 120,
+      "nhan": "Hướng Bắc – Tây Bắc"
+    },
+    {
+      "id": "canh-quan-dong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 750,
+      "y": 150,
+      "nhan": "Hướng Đông – Đông Nam"
+    },
+    {
+      "id": "canh-quan-tay-nam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 480,
+      "nhan": "Hướng Tây Nam"
+    },
+    {
+      "id": "san-bay-tan-son-nhat",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 480,
+      "y": 280,
+      "nhan": "Sân bay Tân Sơn Nhất"
+    },
+    {
+      "id": "mui-tien-vao-noi-do",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        200
+      ],
+      "den": [
+        520,
+        340
+      ],
+      "nhan": "Tiến vào nội đô"
+    },
+    {
+      "id": "dinh-doc-lap",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 550,
+      "y": 420,
+      "nhan": "Dinh Độc Lập"
+    },
+    {
+      "id": "mui-xe-tang",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        360
+      ],
+      "den": [
+        545,
+        415
+      ],
+      "nhan": "Xe tăng húc đổ cổng Dinh Độc Lập"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 650,
+      "y": 400,
+      "nhan": "Toàn thắng — thống nhất đất nước"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bộ Chính trị quyết định mở Chiến dịch Hồ Chí Minh",
+      "mo_ta": "Sau các thắng lợi liên tiếp ở Tây Nguyên và Huế – Đà Nẵng, ngày 14/4/1975 Bộ Chính trị chuẩn y kế hoạch giải phóng Sài Gòn – Gia Định, lấy tên Chiến dịch Hồ Chí Minh.",
+      "hien": [
+        "dinh-doc-lap"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Năm cánh quân bao vây Sài Gòn (26/4/1975)",
+      "mo_ta": "Quân ta đồng loạt tiến công từ nhiều hướng, phá vỡ tuyến phòng thủ vòng ngoài của quân đội Sài Gòn.",
+      "hien": [
+        "canh-quan-bac",
+        "canh-quan-dong",
+        "canh-quan-tay-nam",
+        "dinh-doc-lap"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh chiếm các mục tiêu then chốt vòng ngoài",
+      "mo_ta": "Các cánh quân lần lượt đánh chiếm các căn cứ và tuyến phòng thủ vòng ngoài, áp sát nội đô từ nhiều phía.",
+      "hien": [
+        "canh-quan-bac",
+        "canh-quan-dong",
+        "canh-quan-tay-nam"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiến vào nội đô, chiếm sân bay Tân Sơn Nhất (29/4/1975)",
+      "mo_ta": "Quân ta đánh chiếm sân bay Tân Sơn Nhất, Bộ Tổng tham mưu quân đội Sài Gòn, siết chặt vòng vây trung tâm thành phố.",
+      "hien": [
+        "san-bay-tan-son-nhat",
+        "mui-tien-vao-noi-do"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Xe tăng húc đổ cổng Dinh Độc Lập (30/4/1975)",
+      "mo_ta": "Xe tăng Quân Giải phóng tiến thẳng vào Dinh Độc Lập, bắt giữ Tổng thống Dương Văn Minh cùng nội các chính quyền Sài Gòn.",
+      "hien": [
+        "dinh-doc-lap",
+        "mui-xe-tang"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Toàn thắng, thống nhất đất nước",
+      "mo_ta": "Trưa 30/4/1975, cờ giải phóng tung bay trên nóc Dinh Độc Lập; Dương Văn Minh tuyên bố đầu hàng vô điều kiện, kết thúc chiến tranh, miền Nam hoàn toàn giải phóng.",
+      "hien": [
+        "dinh-doc-lap",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Xe tăng tiến vào Dinh Độc Lập trưa 30/4/1975, Tổng thống Dương Văn Minh tuyên bố đầu hàng vô điều kiện, miền Nam hoàn toàn giải phóng, thống nhất đất nước.",
+  "y_nghia": "Chiến dịch quyết chiến chiến lược kết thúc cuộc kháng chiến chống Mỹ, giải phóng hoàn toàn miền Nam, thống nhất đất nước.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học) — Tổng tiến công và nổi dậy mùa Xuân 1975",
+    "Cục Di sản Văn hoá (dsvh.gov.vn) — Dinh Độc Lập, DTQG đặc biệt",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

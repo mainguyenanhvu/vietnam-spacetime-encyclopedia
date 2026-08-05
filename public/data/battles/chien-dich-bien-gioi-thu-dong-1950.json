@@ -1,0 +1,178 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Biên giới Thu Đông 1950 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-bien-gioi-thu-dong-1950",
+  "ten": "Chiến dịch Biên giới Thu Đông 1950",
+  "nam": 1950,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đại tướng Võ Nguyên Giáp",
+  "doi_thu": "Quân đội Pháp (tuyến Đường số 4)",
+  "dia_diem": "Đông Khê – Thất Khê – Cao Bằng – Lạng Sơn",
+  "lien_quan_tinh": [
+    "cao-bang",
+    "lang-son"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          500,
+          60
+        ],
+        [
+          480,
+          250
+        ],
+        [
+          460,
+          420
+        ],
+        [
+          440,
+          560
+        ]
+      ],
+      "nhan": "Đường số 4 (Cao Bằng – Lạng Sơn)"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          50
+        ],
+        [
+          500,
+          30
+        ],
+        [
+          900,
+          60
+        ]
+      ],
+      "nhan": "Vùng rừng núi biên giới Việt – Trung"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cao-bang",
+      "kieu": "dia-danh",
+      "x": 460,
+      "y": 100,
+      "nhan": "Cao Bằng"
+    },
+    {
+      "id": "cu-diem-dong-khe",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 460,
+      "y": 250,
+      "nhan": "Cụm cứ điểm Đông Khê"
+    },
+    {
+      "id": "quan-ta-cong-kich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 260,
+      "nhan": "Trung đoàn 174, 209 tiến công"
+    },
+    {
+      "id": "that-khe",
+      "kieu": "dia-danh",
+      "x": 440,
+      "y": 400,
+      "nhan": "Thất Khê"
+    },
+    {
+      "id": "quan-dich-tiep-vien",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 620,
+      "y": 340,
+      "nhan": "Binh đoàn Pháp ứng cứu"
+    },
+    {
+      "id": "quan-ta-phuc-kich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 370,
+      "nhan": "Quân ta phục kích trên Đường số 4"
+    },
+    {
+      "id": "lang-son",
+      "kieu": "dia-danh",
+      "x": 420,
+      "y": 540,
+      "nhan": "Lạng Sơn"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 200,
+      "nhan": "Khai thông biên giới Việt – Trung"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở màn tiến công Đông Khê (16/9/1950)",
+      "mo_ta": "Trung đoàn 174 và 209 nổ súng tiến công cụm cứ điểm Đông Khê, cắt đôi tuyến phòng ngự Đường số 4 của Pháp.",
+      "hien": [
+        "cao-bang",
+        "cu-diem-dong-khe",
+        "quan-ta-cong-kich"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiếm Đông Khê sau 54 giờ chiến đấu",
+      "mo_ta": "Sáng 18/9/1950, quân ta làm chủ hoàn toàn Đông Khê, cô lập Cao Bằng khỏi Thất Khê, Lạng Sơn.",
+      "hien": [
+        "cu-diem-dong-khe",
+        "quan-ta-cong-kich"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Pháp điều binh ứng cứu, rơi vào phục kích",
+      "mo_ta": "Pháp cho binh đoàn từ Thất Khê lên đón cánh quân rút từ Cao Bằng và một cánh nhảy dù xuống Thất Khê hòng giải cứu; cả hai bị quân ta phục kích, đánh tan trên Đường số 4.",
+      "hien": [
+        "that-khe",
+        "quan-dich-tiep-vien",
+        "quan-ta-phuc-kich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Truy kích, giải phóng Thất Khê",
+      "mo_ta": "Quân ta truy kích các cánh quân Pháp tháo chạy, tiếp tục giải phóng Thất Khê và mở rộng vùng kiểm soát dọc biên giới.",
+      "hien": [
+        "that-khe",
+        "quan-ta-phuc-kich",
+        "quan-dich-tiep-vien"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Khai thông biên giới Việt – Trung",
+      "mo_ta": "Sau gần một tháng chiến đấu (16/9–14/10/1950), quân ta loại khỏi vòng chiến hơn 8.000 quân Pháp, chấm dứt thế cô lập của căn cứ địa Việt Bắc, giành quyền chủ động chiến lược trên chiến trường chính Bắc Bộ.",
+      "hien": [
+        "lang-son",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Loại khỏi vòng chiến hơn 8.000 quân Pháp, thu 3.000 tấn vũ khí, khai thông biên giới Việt – Trung, chấm dứt thế bị cô lập của căn cứ địa Việt Bắc.",
+  "y_nghia": "Chiến dịch phản công lớn đầu tiên của quân đội ta, giành quyền chủ động chiến lược, khai thông biên giới với các nước xã hội chủ nghĩa.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học)",
+    "tulieuvankien.dangcongsan.vn — Chiến dịch Biên giới 1950 (16/9–17/10/1950)",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

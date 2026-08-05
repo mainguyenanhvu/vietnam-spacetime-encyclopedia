@@ -1,0 +1,209 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Điện Biên Phủ 1954 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "dien-bien-phu-1954",
+  "ten": "Chiến dịch Điện Biên Phủ 1954",
+  "nam": 1954,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đại tướng Võ Nguyên Giáp",
+  "doi_thu": "Quân đội Pháp (Tướng De Castries)",
+  "dia_diem": "Lòng chảo Điện Biên (đồi A1), Điện Biên",
+  "lien_quan_tinh": [
+    "dien-bien"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          0,
+          50
+        ],
+        [
+          500,
+          20
+        ],
+        [
+          1000,
+          60
+        ]
+      ],
+      "nhan": "Dãy núi bao quanh lòng chảo Điện Biên"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          500,
+          80
+        ],
+        [
+          520,
+          300
+        ],
+        [
+          540,
+          550
+        ]
+      ],
+      "nhan": "Sông Nậm Rốm"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "phan-khu-bac",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 420,
+      "y": 180,
+      "nhan": "Phân khu Bắc (Him Lam, Độc Lập, Bản Kéo)"
+    },
+    {
+      "id": "quan-ta-dot1",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 280,
+      "y": 150,
+      "nhan": "Quân ta tiến công đợt 1"
+    },
+    {
+      "id": "doi-a1",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 620,
+      "y": 320,
+      "nhan": "Đồi A1, C1, D1, E1"
+    },
+    {
+      "id": "quan-ta-dao-hao",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 430,
+      "y": 350,
+      "nhan": "Đào hào siết vòng vây (đợt 2)"
+    },
+    {
+      "id": "san-bay-muong-thanh",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 400,
+      "nhan": "Sân bay Mường Thanh"
+    },
+    {
+      "id": "ham-de-castries",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 560,
+      "y": 460,
+      "nhan": "Hầm chỉ huy De Castries"
+    },
+    {
+      "id": "mui-tong-cong-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        430,
+        370
+      ],
+      "den": [
+        550,
+        450
+      ],
+      "nhan": "Tổng công kích đợt 3"
+    },
+    {
+      "id": "phan-khu-nam",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 540,
+      "nhan": "Phân khu Nam (Hồng Cúm)"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 780,
+      "y": 460,
+      "nhan": "Bắt sống De Castries — toàn thắng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Pháp xây dựng \"tập đoàn cứ điểm bất khả xâm phạm\"",
+      "mo_ta": "Cuối 1953, thực dân Pháp cho xây dựng ở Điện Biên Phủ hệ thống nhiều cứ điểm chia thành 3 phân khu, coi đây là \"pháo đài không thể công phá\" trong kế hoạch Nava.",
+      "hien": [
+        "phan-khu-bac",
+        "doi-a1",
+        "phan-khu-nam",
+        "ham-de-castries"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Ta chuyển phương châm \"đánh chắc, tiến chắc\"",
+      "mo_ta": "Đại tướng Võ Nguyên Giáp quyết định hoãn kế hoạch \"đánh nhanh thắng nhanh\", kéo pháo ra, chuẩn bị lại theo phương châm đánh chắc thắng.",
+      "hien": [
+        "phan-khu-bac",
+        "doi-a1",
+        "phan-khu-nam"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đợt 1: tiêu diệt phân khu Bắc (13–17/3/1954)",
+      "mo_ta": "Quân ta tiến công tiêu diệt các cứ điểm Him Lam, Độc Lập, Bản Kéo, phá vỡ cửa ngõ phía bắc tập đoàn cứ điểm.",
+      "hien": [
+        "phan-khu-bac",
+        "quan-ta-dot1"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đợt 2: chiếm dãy đồi phía đông, siết vòng vây (30/3–30/4/1954)",
+      "mo_ta": "Quân ta đánh chiếm các cao điểm then chốt như đồi A1, C1, D1, E1, đào hào áp sát, cắt đường tiếp tế qua sân bay Mường Thanh.",
+      "hien": [
+        "doi-a1",
+        "quan-ta-dao-hao",
+        "san-bay-muong-thanh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đợt 3: tổng công kích khu trung tâm (1–7/5/1954)",
+      "mo_ta": "Quân ta đồng loạt tiến công các cứ điểm còn lại, đánh chiếm đồi A1 sau nhiều ngày giằng co ác liệt.",
+      "hien": [
+        "doi-a1",
+        "mui-tong-cong-kich",
+        "ham-de-castries"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Bắt sống tướng De Castries",
+      "mo_ta": "Chiều 7/5/1954, quân ta đánh chiếm hầm chỉ huy của tập đoàn cứ điểm, bắt sống tướng chỉ huy De Castries cùng toàn bộ Bộ Tham mưu.",
+      "hien": [
+        "ham-de-castries",
+        "co-thang"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Toàn thắng — \"lừng lẫy năm châu, chấn động địa cầu\"",
+      "mo_ta": "Toàn bộ tập đoàn cứ điểm Điện Biên Phủ đầu hàng, kết thúc thắng lợi cuộc kháng chiến chống Pháp, dẫn tới Hiệp định Genève 1954.",
+      "hien": [
+        "co-thang",
+        "phan-khu-nam"
+      ]
+    }
+  ],
+  "ket_qua": "Tiêu diệt hoàn toàn tập đoàn cứ điểm, bắt sống tướng De Castries cùng toàn bộ Bộ Tham mưu, kết thúc kháng chiến chống Pháp, dẫn tới Hiệp định Genève 1954.",
+  "y_nghia": "Chiến thắng quyết định kết thúc chín năm kháng chiến chống Pháp, dẫn tới Hiệp định Genève, mở đầu thời kỳ sụp đổ hệ thống thuộc địa trên thế giới.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học) — chiến dịch Điện Biên Phủ",
+    "Cục Di sản Văn hoá (dsvh.gov.vn) — Chiến trường Điện Biên Phủ, DTQG đặc biệt",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

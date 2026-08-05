@@ -1,0 +1,172 @@
+{
+  "ghi_chu": "Sa đồ trận Đông Bộ Đầu 1258 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "dong-bo-dau-1258",
+  "ten": "Trận Đông Bộ Đầu 1258",
+  "nam": 1258,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Thái Tông, Trần Thủ Độ",
+  "doi_thu": "Quân Mông Cổ (Ngột Lương Hợp Thai)",
+  "dia_diem": "Bến Đông Bộ Đầu, ven sông Hồng, Thăng Long (Hà Nội)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          380
+        ],
+        [
+          500,
+          350
+        ],
+        [
+          1000,
+          400
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          500,
+          150
+        ],
+        [
+          750,
+          80
+        ],
+        [
+          950,
+          40
+        ]
+      ],
+      "nhan": "Đường rút chạy về Vân Nam"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "kinh-thanh-bo-trong",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 480,
+      "y": 460,
+      "nhan": "Thăng Long — vườn không nhà trống"
+    },
+    {
+      "id": "quan-dich-chiem-dong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 480,
+      "y": 380,
+      "nhan": "Quân Mông Cổ chiếm đóng, thiếu lương"
+    },
+    {
+      "id": "quan-ta-tran-thu-do",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 520,
+      "nhan": "Trần Thủ Độ giữ vững ý chí kháng chiến"
+    },
+    {
+      "id": "ben-dong-bo-dau",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 320,
+      "nhan": "Bến Đông Bộ Đầu"
+    },
+    {
+      "id": "mui-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        490
+      ],
+      "den": [
+        520,
+        340
+      ],
+      "nhan": "Ngược sông phản công"
+    },
+    {
+      "id": "quan-dich-thao-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 780,
+      "y": 140,
+      "nhan": "Quân Mông Cổ tháo chạy"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 480,
+      "y": 260,
+      "nhan": "Quét sạch quân Mông Cổ khỏi Thăng Long"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Vua Trần rút khỏi Thăng Long, \"vườn không nhà trống\"",
+      "mo_ta": "Sau trận Bình Lệ Nguyên, triều đình cho dân sơ tán, bỏ trống kinh thành; quân Mông Cổ tiến vào không thu được lương thực.",
+      "hien": [
+        "kinh-thanh-bo-trong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trần Thủ Độ giữ vững ý chí kháng chiến",
+      "mo_ta": "Trước ý định cầu hòa, Trần Thủ Độ tâu: \"Đầu thần chưa rơi xuống đất, xin bệ hạ đừng lo\", củng cố quyết tâm chống giặc của triều đình.",
+      "hien": [
+        "kinh-thanh-bo-trong",
+        "quan-ta-tran-thu-do"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân Mông Cổ suy yếu vì thiếu lương",
+      "mo_ta": "Đóng quân giữa kinh thành trống rỗng, không quen thủy thổ, quân Mông Cổ dần kiệt sức, tinh thần sa sút.",
+      "hien": [
+        "kinh-thanh-bo-trong",
+        "quan-dich-chiem-dong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Phản công tại bến Đông Bộ Đầu (29/1/1258)",
+      "mo_ta": "Vua Trần Thái Tông đích thân chỉ huy đại quân ngược sông Hồng, bất ngờ đánh úp doanh trại địch.",
+      "hien": [
+        "kinh-thanh-bo-trong",
+        "quan-dich-chiem-dong",
+        "ben-dong-bo-dau",
+        "mui-phan-cong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quét sạch quân Mông Cổ khỏi Thăng Long",
+      "mo_ta": "Quân Mông Cổ tan vỡ, tháo chạy về Vân Nam; trên đường rút còn bị quân dân Quy Hóa tập kích thêm, kết thúc kháng chiến lần thứ nhất.",
+      "hien": [
+        "ben-dong-bo-dau",
+        "quan-dich-thao-chay",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Quét sạch quân Mông Cổ khỏi Thăng Long, kết thúc thắng lợi cuộc kháng chiến chống Mông Cổ lần thứ nhất (1258).",
+  "y_nghia": "Chiến thắng đầu tiên của Đại Việt trước đế quốc Mông Cổ đang bách chiến bách thắng, mở đầu truyền thống ba lần đánh thắng quân Nguyên Mông thời Trần.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "Lịch sử Việt Nam (Viện Sử học) — kháng chiến chống Mông – Nguyên lần I",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

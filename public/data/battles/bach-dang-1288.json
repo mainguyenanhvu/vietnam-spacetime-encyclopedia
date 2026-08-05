@@ -1,0 +1,212 @@
+{
+  "ghi_chu": "Sa đồ trận Bạch Đằng 1288 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "bach-dang-1288",
+  "ten": "Trận Bạch Đằng 1288",
+  "nam": 1288,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hưng Đạo Đại Vương Trần Quốc Tuấn",
+  "doi_thu": "Quân Nguyên (Ô Mã Nhi, Thoát Hoan)",
+  "dia_diem": "Bãi cọc Bạch Đằng (Yên Giang, Quảng Yên, Quảng Ninh)",
+  "lien_quan_tinh": [
+    "quang-ninh",
+    "hai-phong"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          420
+        ],
+        [
+          500,
+          400
+        ],
+        [
+          1000,
+          440
+        ]
+      ],
+      "nhan": "Sông Bạch Đằng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          60
+        ],
+        [
+          350,
+          150
+        ],
+        [
+          550,
+          260
+        ]
+      ],
+      "nhan": "Đường rút bộ binh Thoát Hoan"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "coc-yen-giang",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 520,
+      "y": 440,
+      "nhan": "Bãi cọc Yên Giang"
+    },
+    {
+      "id": "quan-ta-mai-phuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 380,
+      "y": 500,
+      "nhan": "Quân Trần Quốc Tuấn mai phục"
+    },
+    {
+      "id": "thuyen-dich-om-nhi",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 880,
+      "y": 380,
+      "nhan": "Thuỷ binh Ô Mã Nhi"
+    },
+    {
+      "id": "mui-nhu-dich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        520,
+        460
+      ],
+      "den": [
+        800,
+        390
+      ],
+      "nhan": "Nhử địch vào bãi cọc lúc triều lên"
+    },
+    {
+      "id": "thuyen-dich-mac-can",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 630,
+      "y": 450,
+      "nhan": "Thuyền địch mắc cọc, vỡ"
+    },
+    {
+      "id": "mui-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        490
+      ],
+      "den": [
+        620,
+        445
+      ],
+      "nhan": "Tổng phản công"
+    },
+    {
+      "id": "om-nhi-bi-bat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 500,
+      "nhan": "Ô Mã Nhi bị bắt sống"
+    },
+    {
+      "id": "quan-dich-bo-rut",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 250,
+      "y": 130,
+      "nhan": "Thoát Hoan rút bộ binh qua Lạng Sơn"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 330,
+      "nhan": "Toàn thắng, kết thúc kháng chiến lần III"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Dự đoán đường rút, đóng lại bãi cọc",
+      "mo_ta": "Trần Quốc Tuấn tiên liệu quân Nguyên sẽ rút qua sông Bạch Đằng, cho đóng cọc gỗ đầu bịt sắt xuống lòng sông khu vực Yên Giang.",
+      "thuy_trieu": "len",
+      "hien": [
+        "coc-yen-giang",
+        "quan-dich-bo-rut"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bố trí phục binh hai bên bờ",
+      "mo_ta": "Quân Trần mai phục ở các nhánh sông, chờ đoàn thuyền của Ô Mã Nhi lọt vào trận địa.",
+      "thuy_trieu": "len",
+      "hien": [
+        "coc-yen-giang",
+        "quan-ta-mai-phuc"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nhử địch vào bãi cọc lúc triều lên",
+      "mo_ta": "Thuyền nhẹ ra khiêu chiến rồi giả thua, dẫn dụ đoàn thuyền chiến của Ô Mã Nhi tiến sâu qua khu vực cắm cọc.",
+      "thuy_trieu": "len",
+      "hien": [
+        "coc-yen-giang",
+        "quan-ta-mai-phuc",
+        "thuyen-dich-om-nhi",
+        "mui-nhu-dich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Triều rút, cọc lộ, thuyền địch mắc kẹt",
+      "mo_ta": "Nước rút nhanh, bãi cọc nhô lên đâm thủng, làm vỡ và mắc cạn hàng loạt thuyền chiến quân Nguyên.",
+      "thuy_trieu": "xuong",
+      "hien": [
+        "coc-yen-giang",
+        "thuyen-dich-mac-can"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tổng phản công, bắt sống Ô Mã Nhi",
+      "mo_ta": "Quân Trần từ hai bờ và thượng nguồn đánh ập xuống, tiêu diệt phần lớn đạo thủy binh, bắt sống chủ tướng Ô Mã Nhi.",
+      "thuy_trieu": "xuong",
+      "hien": [
+        "thuyen-dich-mac-can",
+        "mui-phan-cong",
+        "om-nhi-bi-bat"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Toàn thắng, kết thúc kháng chiến lần III",
+      "mo_ta": "Chiến thắng Bạch Đằng buộc Thoát Hoan phải rút toàn bộ quân Nguyên về nước, chấm dứt âm mưu xâm lược Đại Việt lần thứ ba.",
+      "thuy_trieu": "xuong",
+      "hien": [
+        "co-thang",
+        "quan-dich-bo-rut"
+      ]
+    }
+  ],
+  "ket_qua": "Tiêu diệt đạo thuỷ binh của Ô Mã Nhi, bắt sống chủ tướng, buộc Thoát Hoan rút toàn bộ quân về nước, kết thúc thắng lợi kháng chiến chống Nguyên lần III.",
+  "y_nghia": "Kết thúc thắng lợi trọn vẹn ba lần kháng chiến chống Nguyên Mông, khẳng định bản lĩnh quân sự Đại Việt trước đế quốc hùng mạnh nhất thời đại.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Cục Di sản Văn hoá (dsvh.gov.vn) — Bãi cọc Yên Giang, DTQG đặc biệt Bạch Đằng"
+  ]
+}

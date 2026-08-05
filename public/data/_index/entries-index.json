@@ -1,18 +1,226 @@
 {
   "sinh_luc": {
-    "tong_muc": 4938,
+    "tong_muc": 4954,
     "tong_co_toa_do": 2524,
-    "so_nhom_trung_ten": 609,
+    "so_nhom_trung_ten": 619,
     "so_cap_trung_toa_do": 647,
     "ngay_sinh": "2026-08-05"
   },
   "entries": [
+    {
+      "id": null,
+      "slug": null,
+      "ten": null,
+      "ten_chuan": null,
+      "file": "battles/_index.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": "bach-dang-1288",
+      "slug": null,
+      "ten": "Trận Bạch Đằng 1288",
+      "ten_chuan": "tran bach dang 1288",
+      "file": "battles/bach-dang-1288.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
     {
       "id": "bach-dang-938",
       "slug": null,
       "ten": "Trận Bạch Đằng năm 938",
       "ten_chuan": "tran bach dang nam 938",
       "file": "battles/bach-dang-938.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bach-dang-981",
+      "slug": null,
+      "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981",
+      "ten_chuan": "khang chien chong tong lan i chien thang bach dang 981",
+      "file": "battles/bach-dang-981.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chi-lang-1427",
+      "slug": null,
+      "ten": "Trận Chi Lăng – Xương Giang năm 1427",
+      "ten_chuan": "tran chi lang xuong giang nam 1427",
+      "file": "battles/chi-lang-1427.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 4,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dich-bien-gioi-thu-dong-1950",
+      "slug": null,
+      "ten": "Chiến dịch Biên giới Thu Đông 1950",
+      "ten_chuan": "chien dich bien gioi thu dong 1950",
+      "file": "battles/chien-dich-bien-gioi-thu-dong-1950.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dich-hcm-1975",
+      "slug": null,
+      "ten": "Chiến dịch Hồ Chí Minh 1975",
+      "ten_chuan": "chien dich ho chi minh 1975",
+      "file": "battles/chien-dich-hcm-1975.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dien-bien-phu-1954",
+      "slug": null,
+      "ten": "Chiến dịch Điện Biên Phủ 1954",
+      "ten_chuan": "chien dich dien bien phu 1954",
+      "file": "battles/dien-bien-phu-1954.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dong-bo-dau-1258",
+      "slug": null,
+      "ten": "Trận Đông Bộ Đầu 1258",
+      "ten_chuan": "tran dong bo dau 1258",
+      "file": "battles/dong-bo-dau-1258.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ham-tu-chuong-duong-1285",
+      "slug": null,
+      "ten": "Hàm Tử – Chương Dương 1285",
+      "ten_chuan": "ham tu chuong duong 1285",
+      "file": "battles/ham-tu-chuong-duong-1285.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khoi-nghia-hai-ba-trung-40",
+      "slug": null,
+      "ten": "Khởi nghĩa Hai Bà Trưng",
+      "ten_chuan": "khoi nghia hai ba trung",
+      "file": "battles/khoi-nghia-hai-ba-trung-40.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngoc-hoi-dong-da-1789",
+      "slug": null,
+      "ten": "Ngọc Hồi – Đống Đa 1789",
+      "ten_chuan": "ngoc hoi dong da 1789",
+      "file": "battles/ngoc-hoi-dong-da-1789.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 4,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nhu-nguyet-1077",
+      "slug": null,
+      "ten": "Phòng tuyến Như Nguyệt 1077",
+      "ten_chuan": "phong tuyen nhu nguyet 1077",
+      "file": "battles/nhu-nguyet-1077.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "rach-gam-xoai-mut-1785",
+      "slug": null,
+      "ten": "Rạch Gầm – Xoài Mút 1785",
+      "ten_chuan": "rach gam xoai mut 1785",
+      "file": "battles/rach-gam-xoai-mut-1785.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tot-dong-chuc-dong-1426",
+      "slug": null,
+      "ten": "Tốt Động – Chúc Động 1426",
+      "ten_chuan": "tot dong chuc dong 1426",
+      "file": "battles/tot-dong-chuc-dong-1426.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 4,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-da-nang-1858",
+      "slug": null,
+      "ten": "Trận Đà Nẵng (mở đầu chống Pháp)",
+      "ten_chuan": "tran da nang mo dau chong phap",
+      "file": "battles/tran-da-nang-1858.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ung-chau-1075",
+      "slug": null,
+      "ten": "Chiến dịch tiến công Ung – Khâm – Liêm Châu 1075–1076",
+      "ten_chuan": "chien dich tien cong ung kham liem chau 1075 1076",
+      "file": "battles/ung-chau-1075.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -64404,6 +64612,32 @@
       ]
     },
     {
+      "ten_chuan": "chien dich bien gioi thu dong 1950",
+      "so_file": 3,
+      "files": [
+        "battles/chien-dich-bien-gioi-thu-dong-1950.json",
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-bien-gioi-thu-dong-1950.json",
+          "id": "chien-dich-bien-gioi-thu-dong-1950",
+          "ten": "Chiến dịch Biên giới Thu Đông 1950"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-bien-gioi-thu-dong-1950",
+          "ten": "Chiến dịch Biên giới Thu Đông 1950"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "chien-dich-bien-gioi-thu-dong-1950",
+          "ten": "Chiến dịch Biên giới Thu Đông 1950"
+        }
+      ]
+    },
+    {
       "ten_chuan": "chua but thap",
       "so_file": 3,
       "files": [
@@ -64842,6 +65076,32 @@
           "file": "timeline/moc-lich-su.json",
           "id": "khoi-nghia-bac-son-1940",
           "ten": "Khởi nghĩa Bắc Sơn"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia hai ba trung",
+      "so_file": 3,
+      "files": [
+        "battles/khoi-nghia-hai-ba-trung-40.json",
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/khoi-nghia-hai-ba-trung-40.json",
+          "id": "khoi-nghia-hai-ba-trung-40",
+          "ten": "Khởi nghĩa Hai Bà Trưng"
+        },
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Khởi nghĩa Hai Bà Trưng"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-hai-ba-trung-40",
+          "ten": "Khởi nghĩa Hai Bà Trưng"
         }
       ]
     },
@@ -65700,6 +65960,58 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Tôn Đức Thắng (1888–1980)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran bach dang 1288",
+      "so_file": 3,
+      "files": [
+        "battles/bach-dang-1288.json",
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/bach-dang-1288.json",
+          "id": "bach-dang-1288",
+          "ten": "Trận Bạch Đằng 1288"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bach-dang-1288",
+          "ten": "Trận Bạch Đằng 1288"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "tran-bach-dang-1288",
+          "ten": "Trận Bạch Đằng 1288"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran da nang mo dau chong phap",
+      "so_file": 3,
+      "files": [
+        "battles/tran-da-nang-1858.json",
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-da-nang-1858.json",
+          "id": "tran-da-nang-1858",
+          "ten": "Trận Đà Nẵng (mở đầu chống Pháp)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-da-nang-1858",
+          "ten": "Trận Đà Nẵng (mở đầu chống Pháp)"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "tran-da-nang-1858",
+          "ten": "Trận Đà Nẵng — mở đầu chống Pháp"
         }
       ]
     },
@@ -66856,26 +67168,6 @@
       ]
     },
     {
-      "ten_chuan": "chien dich bien gioi thu dong 1950",
-      "so_file": 2,
-      "files": [
-        "overlays/chien-dich-tran-danh.json",
-        "timeline/moc-lich-su.json"
-      ],
-      "muc": [
-        {
-          "file": "overlays/chien-dich-tran-danh.json",
-          "id": "chien-dich-bien-gioi-thu-dong-1950",
-          "ten": "Chiến dịch Biên giới Thu Đông 1950"
-        },
-        {
-          "file": "timeline/moc-lich-su.json",
-          "id": "chien-dich-bien-gioi-thu-dong-1950",
-          "ten": "Chiến dịch Biên giới Thu Đông 1950"
-        }
-      ]
-    },
-    {
       "ten_chuan": "chien dich buon ma thuot",
       "so_file": 2,
       "files": [
@@ -66892,6 +67184,66 @@
           "file": "timeline/moc-lich-su.json",
           "id": "chien-dich-buon-ma-thuot-1975",
           "ten": "Chiến dịch Buôn Ma Thuột"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich dien bien phu 1954",
+      "so_file": 2,
+      "files": [
+        "battles/dien-bien-phu-1954.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/dien-bien-phu-1954.json",
+          "id": "dien-bien-phu-1954",
+          "ten": "Chiến dịch Điện Biên Phủ 1954"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "dien-bien-phu-1954",
+          "ten": "Chiến dịch Điện Biên Phủ 1954"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich ho chi minh 1975",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dich-hcm-1975.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-hcm-1975.json",
+          "id": "chien-dich-hcm-1975",
+          "ten": "Chiến dịch Hồ Chí Minh 1975"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-hcm-1975",
+          "ten": "Chiến dịch Hồ Chí Minh 1975"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich tien cong ung kham liem chau 1075 1076",
+      "so_file": 2,
+      "files": [
+        "battles/ung-chau-1075.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/ung-chau-1075.json",
+          "id": "ung-chau-1075",
+          "ten": "Chiến dịch tiến công Ung – Khâm – Liêm Châu 1075–1076"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "ung-chau-1075",
+          "ten": "Chiến dịch tiến công Ung – Khâm – Liêm Châu 1075–1076"
         }
       ]
     },
@@ -68791,6 +69143,26 @@
       ]
     },
     {
+      "ten_chuan": "ham tu chuong duong 1285",
+      "so_file": 2,
+      "files": [
+        "battles/ham-tu-chuong-duong-1285.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/ham-tu-chuong-duong-1285.json",
+          "id": "ham-tu-chuong-duong-1285",
+          "ten": "Hàm Tử – Chương Dương 1285"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "ham-tu-chuong-duong-1285",
+          "ten": "Hàm Tử – Chương Dương 1285"
+        }
+      ]
+    },
+    {
       "ten_chuan": "han mac tu 1912 1940",
       "so_file": 2,
       "files": [
@@ -69486,6 +69858,26 @@
       ]
     },
     {
+      "ten_chuan": "khang chien chong tong lan i chien thang bach dang 981",
+      "so_file": 2,
+      "files": [
+        "battles/bach-dang-981.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/bach-dang-981.json",
+          "id": "bach-dang-981",
+          "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bach-dang-981",
+          "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981"
+        }
+      ]
+    },
+    {
       "ten_chuan": "khoi nghia ba trieu",
       "so_file": 2,
       "files": [
@@ -69502,26 +69894,6 @@
           "file": "timeline/moc-lich-su.json",
           "id": "khoi-nghia-ba-trieu-248",
           "ten": "Khởi nghĩa Bà Triệu"
-        }
-      ]
-    },
-    {
-      "ten_chuan": "khoi nghia hai ba trung",
-      "so_file": 2,
-      "files": [
-        "timeline/dong-thoi-gian.json",
-        "timeline/moc-lich-su.json"
-      ],
-      "muc": [
-        {
-          "file": "timeline/dong-thoi-gian.json",
-          "id": null,
-          "ten": "Khởi nghĩa Hai Bà Trưng"
-        },
-        {
-          "file": "timeline/moc-lich-su.json",
-          "id": "khoi-nghia-hai-ba-trung-40",
-          "ten": "Khởi nghĩa Hai Bà Trưng"
         }
       ]
     },
@@ -71402,6 +71774,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Ngô Viết Thụ"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "ngoc hoi dong da 1789",
+      "so_file": 2,
+      "files": [
+        "battles/ngoc-hoi-dong-da-1789.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/ngoc-hoi-dong-da-1789.json",
+          "id": "ngoc-hoi-dong-da-1789",
+          "ten": "Ngọc Hồi – Đống Đa 1789"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "ngoc-hoi-dong-da-1789",
+          "ten": "Ngọc Hồi – Đống Đa 1789"
         }
       ]
     },
@@ -74541,6 +74933,26 @@
       ]
     },
     {
+      "ten_chuan": "phong tuyen nhu nguyet 1077",
+      "so_file": 2,
+      "files": [
+        "battles/nhu-nguyet-1077.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/nhu-nguyet-1077.json",
+          "id": "nhu-nguyet-1077",
+          "ten": "Phòng tuyến Như Nguyệt 1077"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "nhu-nguyet-1077",
+          "ten": "Phòng tuyến Như Nguyệt 1077"
+        }
+      ]
+    },
+    {
       "ten_chuan": "phu dong thien vuong thanh giong tu bat tu",
       "so_file": 2,
       "files": [
@@ -74637,6 +75049,26 @@
           "file": "overlays/unesco.json",
           "id": null,
           "ten": "Quần thể danh thắng Tràng An"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "rach gam xoai mut 1785",
+      "so_file": 2,
+      "files": [
+        "battles/rach-gam-xoai-mut-1785.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/rach-gam-xoai-mut-1785.json",
+          "id": "rach-gam-xoai-mut-1785",
+          "ten": "Rạch Gầm – Xoài Mút 1785"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "rach-gam-xoai-mut-1785",
+          "ten": "Rạch Gầm – Xoài Mút 1785"
         }
       ]
     },
@@ -75401,6 +75833,26 @@
       ]
     },
     {
+      "ten_chuan": "tot dong chuc dong 1426",
+      "so_file": 2,
+      "files": [
+        "battles/tot-dong-chuc-dong-1426.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tot-dong-chuc-dong-1426.json",
+          "id": "tot-dong-chuc-dong-1426",
+          "ten": "Tốt Động – Chúc Động 1426"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tot-dong-chuc-dong-1426",
+          "ten": "Tốt Động – Chúc Động 1426"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran anh tong",
       "so_file": 2,
       "files": [
@@ -75417,26 +75869,6 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trần Anh Tông"
-        }
-      ]
-    },
-    {
-      "ten_chuan": "tran bach dang 1288",
-      "so_file": 2,
-      "files": [
-        "overlays/chien-dich-tran-danh.json",
-        "timeline/moc-lich-su.json"
-      ],
-      "muc": [
-        {
-          "file": "overlays/chien-dich-tran-danh.json",
-          "id": "bach-dang-1288",
-          "ten": "Trận Bạch Đằng 1288"
-        },
-        {
-          "file": "timeline/moc-lich-su.json",
-          "id": "tran-bach-dang-1288",
-          "ten": "Trận Bạch Đằng 1288"
         }
       ]
     },
@@ -75561,26 +75993,6 @@
       ]
     },
     {
-      "ten_chuan": "tran da nang mo dau chong phap",
-      "so_file": 2,
-      "files": [
-        "overlays/chien-dich-tran-danh.json",
-        "timeline/moc-lich-su.json"
-      ],
-      "muc": [
-        {
-          "file": "overlays/chien-dich-tran-danh.json",
-          "id": "tran-da-nang-1858",
-          "ten": "Trận Đà Nẵng (mở đầu chống Pháp)"
-        },
-        {
-          "file": "timeline/moc-lich-su.json",
-          "id": "tran-da-nang-1858",
-          "ten": "Trận Đà Nẵng — mở đầu chống Pháp"
-        }
-      ]
-    },
-    {
       "ten_chuan": "tran dai nghia pham quang le 1913 1997",
       "so_file": 2,
       "files": [
@@ -75597,6 +76009,26 @@
           "file": "figures/danh-nhan.json",
           "id": "vinh-long-tran-dai-nghia",
           "ten": "Trần Đại Nghĩa (Phạm Quang Lễ, 1913–1997)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran dong bo dau 1258",
+      "so_file": 2,
+      "files": [
+        "battles/dong-bo-dau-1258.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/dong-bo-dau-1258.json",
+          "id": "dong-bo-dau-1258",
+          "ten": "Trận Đông Bộ Đầu 1258"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "dong-bo-dau-1258",
+          "ten": "Trận Đông Bộ Đầu 1258"
         }
       ]
     },

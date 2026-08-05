@@ -1,0 +1,191 @@
+{
+  "ghi_chu": "Sa đồ Kháng chiến chống Tống lần I — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "bach-dang-981",
+  "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981",
+  "nam": 981,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Hoàn (Lê Đại Hành)",
+  "doi_thu": "Nhà Tống (Hầu Nhân Bảo, Tôn Toàn Hưng)",
+  "dia_diem": "Sông Bạch Đằng, Thủy Nguyên, Hải Phòng",
+  "lien_quan_tinh": [
+    "hai-phong",
+    "quang-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          420
+        ],
+        [
+          500,
+          400
+        ],
+        [
+          1000,
+          440
+        ]
+      ],
+      "nhan": "Sông Bạch Đằng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          80,
+          60
+        ],
+        [
+          400,
+          150
+        ],
+        [
+          600,
+          280
+        ]
+      ],
+      "nhan": "Đường bộ quân Tống (Tôn Toàn Hưng)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "coc-bach-dang",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 500,
+      "y": 430,
+      "nhan": "Bãi cọc ngầm sông Bạch Đằng"
+    },
+    {
+      "id": "quan-ta-mai-phuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 500,
+      "nhan": "Quân Lê Hoàn mai phục"
+    },
+    {
+      "id": "thuyen-dich-tien",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 880,
+      "y": 400,
+      "nhan": "Thuỷ quân Hầu Nhân Bảo"
+    },
+    {
+      "id": "quan-dich-bo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 280,
+      "y": 180,
+      "nhan": "Bộ binh Tôn Toàn Hưng (đường Lạng Sơn)"
+    },
+    {
+      "id": "mui-nhu-dich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        520,
+        470
+      ],
+      "den": [
+        800,
+        405
+      ],
+      "nhan": "Trá hàng, nhử địch vào bãi cọc"
+    },
+    {
+      "id": "thuyen-dich-mac-can",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 620,
+      "y": 450,
+      "nhan": "Thuyền Tống vướng cọc, mắc cạn"
+    },
+    {
+      "id": "mui-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        490
+      ],
+      "den": [
+        610,
+        455
+      ],
+      "nhan": "Tổng phản công"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 330,
+      "nhan": "Hầu Nhân Bảo tử trận, quân Tống rút"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Tống chia hai đường bộ – thủy tiến đánh",
+      "mo_ta": "Đầu năm 981, quân Tống chia hai đường: Hầu Nhân Bảo chỉ huy thủy quân theo sông Bạch Đằng, Tôn Toàn Hưng dẫn bộ quân qua ngả Lạng Sơn.",
+      "hien": [
+        "quan-dich-bo",
+        "coc-bach-dang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lê Hoàn đóng cọc trên sông Bạch Đằng",
+      "mo_ta": "Lê Hoàn vận dụng lại kế đóng cọc của Ngô Quyền năm 938, bố trí quân mai phục hai bên bờ sông.",
+      "thuy_trieu": "len",
+      "hien": [
+        "coc-bach-dang",
+        "quan-ta-mai-phuc"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trá hàng, nhử địch vào trận địa",
+      "mo_ta": "Lê Hoàn cho sứ giả trá xin hàng để hoãn binh, dụ thủy quân Tống tiến sâu vào khu vực đã cắm cọc.",
+      "thuy_trieu": "len",
+      "hien": [
+        "coc-bach-dang",
+        "thuyen-dich-tien",
+        "mui-nhu-dich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quyết chiến ngày 28/4/981",
+      "mo_ta": "Quân ta đánh mạnh, thủy quân Tống vướng cọc rối loạn; chủ tướng Hầu Nhân Bảo tử trận ngay trên sông.",
+      "thuy_trieu": "xuong",
+      "hien": [
+        "thuyen-dich-mac-can",
+        "mui-phan-cong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Toàn thắng, quân Tống rút",
+      "mo_ta": "Cánh bộ binh của Tôn Toàn Hưng nghe tin thủy quân thua cũng phải rút chạy; nhà Tống buộc phải công nhận Lê Hoàn cai trị Đại Cồ Việt.",
+      "thuy_trieu": "xuong",
+      "hien": [
+        "thuyen-dich-mac-can",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Tống đại bại, chủ tướng Hầu Nhân Bảo tử trận; nhà Tống phải rút quân và công nhận Lê Hoàn cai trị Đại Cồ Việt.",
+  "y_nghia": "Đánh bại âm mưu xâm lược đầu tiên của nhà Tống, khẳng định nền độc lập non trẻ vừa giành lại sau hơn một nghìn năm Bắc thuộc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ nhà Lê (Tiền Lê)",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Bộ CHQS thành phố Hải Phòng — Lê Đại Hành và chiến thắng Bạch Đằng năm 981 (quansu.haiphong.gov.vn)"
+  ]
+}

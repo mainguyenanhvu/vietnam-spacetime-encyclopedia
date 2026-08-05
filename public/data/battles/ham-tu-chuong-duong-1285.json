@@ -1,0 +1,171 @@
+{
+  "ghi_chu": "Sa đồ chiến thắng Hàm Tử – Chương Dương 1285 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "ham-tu-chuong-duong-1285",
+  "ten": "Hàm Tử – Chương Dương 1285",
+  "nam": 1285,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Nhật Duật, Trần Quang Khải",
+  "doi_thu": "Quân Nguyên (Toa Đô, Ô Mã Nhi, Thoát Hoan)",
+  "dia_diem": "Cửa Hàm Tử (Khoái Châu, Hưng Yên) – bến Chương Dương",
+  "lien_quan_tinh": [
+    "hung-yen",
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          500
+        ],
+        [
+          500,
+          420
+        ],
+        [
+          1000,
+          380
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-rut-lui",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 460,
+      "nhan": "Quân Trần rút lui bảo toàn lực lượng"
+    },
+    {
+      "id": "cua-ham-tu",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 540,
+      "nhan": "Cửa Hàm Tử"
+    },
+    {
+      "id": "quan-ta-tran-nhat-duat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 220,
+      "y": 480,
+      "nhan": "Trần Nhật Duật đại phá giặc"
+    },
+    {
+      "id": "quan-dich-toa-do",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 150,
+      "y": 560,
+      "nhan": "Toa Đô – Ô Mã Nhi"
+    },
+    {
+      "id": "ben-chuong-duong",
+      "kieu": "dia-danh",
+      "x": 550,
+      "y": 460,
+      "nhan": "Bến Chương Dương"
+    },
+    {
+      "id": "quan-ta-tran-quang-khai",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 620,
+      "y": 520,
+      "nhan": "Trần Quang Khải cướp giáo giặc"
+    },
+    {
+      "id": "thanh-thang-long",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 800,
+      "y": 260,
+      "nhan": "Thăng Long (quân Nguyên chiếm giữ)"
+    },
+    {
+      "id": "mui-tien-thang-long",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        550,
+        440
+      ],
+      "den": [
+        780,
+        280
+      ],
+      "nhan": "Tiến công giải phóng Thăng Long"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 870,
+      "y": 210,
+      "nhan": "Giải phóng Thăng Long"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Trần rút lui bảo toàn lực lượng",
+      "mo_ta": "Trước thế mạnh ban đầu của Thoát Hoan, triều Trần chủ động rút khỏi Thăng Long, chờ thời cơ phản công.",
+      "hien": [
+        "quan-ta-rut-lui",
+        "thanh-thang-long"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trần Nhật Duật đánh tan giặc ở Hàm Tử",
+      "mo_ta": "Dùng mưu kế phối hợp với tướng Tống lưu vong Triệu Trung, quân Trần đại phá cánh quân Toa Đô – Ô Mã Nhi tại cửa Hàm Tử.",
+      "hien": [
+        "cua-ham-tu",
+        "quan-ta-tran-nhat-duat",
+        "quan-dich-toa-do"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trần Quang Khải cướp giáo giặc ở Chương Dương",
+      "mo_ta": "Cùng thời điểm, quân Trần đánh chiếm bến Chương Dương, mở đường tiến về Thăng Long — \"Chương Dương cướp giáo giặc, Hàm Tử bắt quân thù\".",
+      "hien": [
+        "ben-chuong-duong",
+        "quan-ta-tran-quang-khai"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiến công giải phóng Thăng Long",
+      "mo_ta": "Thừa thắng, quân Trần từ hai hướng Hàm Tử và Chương Dương hội quân, đánh chiếm lại kinh thành.",
+      "hien": [
+        "cua-ham-tu",
+        "ben-chuong-duong",
+        "mui-tien-thang-long",
+        "thanh-thang-long"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân Nguyên tháo chạy",
+      "mo_ta": "Thoát Hoan phải bỏ Thăng Long rút quân, kết thúc thắng lợi giai đoạn phản công then chốt của kháng chiến chống Nguyên lần II.",
+      "hien": [
+        "thanh-thang-long",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Giải phóng kinh thành Thăng Long, đánh bật quân Nguyên khỏi Đại Việt, tạo đà cho chiến thắng Tây Kết, Vạn Kiếp cùng năm.",
+  "y_nghia": "Bước ngoặt của cuộc kháng chiến chống Nguyên lần II, chứng minh chiến lược 'lấy đoản binh chế trường trận' của Trần Quốc Tuấn.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Sở VHTTDL Hưng Yên — di tích bến Hàm Tử, Khoái Châu"
+  ]
+}
