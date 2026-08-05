@@ -1,0 +1,108 @@
+{
+  "ghi_chu": "Sa đồ Chi Lăng – Xương Giang 1427 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Đây là sa đồ đầu tiên dùng trình dựng tổng quát (sa_do_kieu=tong-quat): toạ độ trong dia_hinh/phan_tu là toạ độ khung vẽ 1000×600, không phải kinh/vĩ độ. Nội dung theo Đại Việt sử ký toàn thư (Bản kỷ, Kỷ nhà Lê) + SGK Lịch sử; trang_thai=draft cho tới khi có người kiểm sử (cổng §9).",
+  "id": "chi-lang-1427",
+  "ten": "Trận Chi Lăng – Xương Giang năm 1427",
+  "nam": 1427,
+  "chi_huy": "Lê Lợi, Nguyễn Trãi · Lê Sát, Trần Lựu, Lưu Nhân Chú · Trần Nguyên Hãn",
+  "doi_thu": "Viện binh nhà Minh (Liễu Thăng, Lương Minh, Thôi Tụ, Hoàng Phúc)",
+  "dia_diem": "Ải Chi Lăng (Lạng Sơn) — Cần Trạm, Phố Cát, thành Xương Giang (nay thuộc Bắc Ninh)",
+  "lien_quan_tinh": ["lang-son", "bac-ninh"],
+  "figure_id": "le-loi",
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_kieu": "tong-quat",
+  "dia_hinh": [
+    {
+      "kieu": "rung",
+      "diem": [[600, 320], [730, 290], [770, 375], [630, 405]],
+      "nhan": "Rừng núi hiểm trở"
+    },
+    {
+      "kieu": "song",
+      "diem": [[800, 500], [560, 520], [320, 515], [60, 535]],
+      "nhan": "Sông Thương"
+    },
+    {
+      "kieu": "nui",
+      "diem": [[450, 140], [560, 105], [670, 120], [780, 90]],
+      "nhan": "Dãy Cai Kinh"
+    },
+    {
+      "kieu": "nui",
+      "diem": [[680, 455], [800, 415], [900, 380]],
+      "nhan": "Dãy Bảo Đài"
+    },
+    {
+      "kieu": "duong",
+      "diem": [[950, 70], [790, 150], [620, 240], [430, 340], [240, 420], [70, 470]],
+      "nhan": "Đường thiên lý"
+    }
+  ],
+  "phan_tu": [
+    { "id": "ai-pha-luy", "kieu": "dia-danh", "x": 935, "y": 62, "nhan": "Ải Pha Lũy" },
+    { "id": "vien-binh-minh", "kieu": "quan", "ben": "dich", "x": 855, "y": 108, "nhan": "Viện binh Minh" },
+    { "id": "ai-chi-lang", "kieu": "dia-danh", "x": 600, "y": 247, "nhan": "Ải Chi Lăng" },
+    { "id": "quan-tran-luu", "kieu": "quan", "ben": "ta", "x": 712, "y": 308, "nhan": "Trần Lựu chặn ải" },
+    { "id": "mai-phuc-cai-kinh", "kieu": "quan", "ben": "ta", "x": 430, "y": 168, "nhan": "Mai phục Lê Sát" },
+    { "id": "mai-phuc-bao-dai", "kieu": "quan", "ben": "ta", "x": 720, "y": 420, "nhan": "Phục binh chặn hậu" },
+    { "id": "mui-nhu-dich", "kieu": "mui-ten", "ben": "ta", "tu": [690, 320], "den": [530, 365], "nhan": "Giả thua, nhử địch" },
+    { "id": "mui-minh-duoi", "kieu": "mui-ten", "ben": "dich", "tu": [845, 160], "den": [645, 262], "nhan": "Minh đuổi theo" },
+    { "id": "mui-danh-ma-yen", "kieu": "mui-ten", "ben": "ta", "tu": [560, 160], "den": [612, 232], "nhan": "Chém Liễu Thăng" },
+    { "id": "mui-chan-hau", "kieu": "mui-ten", "ben": "ta", "tu": [715, 395], "den": [645, 280], "nhan": "Khép hậu" },
+    { "id": "can-tram", "kieu": "dia-danh", "x": 455, "y": 327, "nhan": "Cần Trạm" },
+    { "id": "pho-cat", "kieu": "dia-danh", "x": 350, "y": 374, "nhan": "Phố Cát" },
+    { "id": "mui-truy-kich", "kieu": "mui-ten", "ben": "ta", "tu": [570, 290], "den": [390, 395], "nhan": "Truy kích" },
+    { "id": "thanh-xuong-giang", "kieu": "thanh", "ben": "dich", "x": 185, "y": 395, "nhan": "Xương Giang (quân Minh)" },
+    { "id": "thanh-xuong-giang-ta", "kieu": "thanh", "ben": "ta", "x": 185, "y": 395, "nhan": "Xương Giang (ta chiếm)" },
+    { "id": "vay-xuong-giang", "kieu": "cong-su", "x": 185, "y": 458, "nhan": "Vòng vây, địa đạo" },
+    { "id": "tan-quan-minh", "kieu": "quan", "ben": "dich", "x": 390, "y": 440, "nhan": "Thôi Tụ – Hoàng Phúc" },
+    { "id": "mui-vay-diet", "kieu": "mui-ten", "ben": "ta", "tu": [215, 400], "den": [345, 440], "nhan": "Vây diệt giữa đồng" },
+    { "id": "co-dai-thang", "kieu": "co", "ben": "ta", "x": 320, "y": 235, "nhan": "Đại thắng" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Vây thành, diệt viện",
+      "mo_ta": "Tháng 9 âm lịch năm Đinh Mùi (1427), nhà Minh sai Liễu Thăng đem quân từ Quảng Tây và Mộc Thạnh từ Vân Nam sang cứu Vương Thông đang bị vây ở Đông Quan. Bộ chỉ huy Lam Sơn chọn kế «vây thành, diệt viện»: giữ chặt vòng vây quanh các thành, dồn lực đánh tan viện binh trước. Thành Xương Giang trên đường tiến quân đã bị nghĩa quân vây hãm nhiều tháng.",
+      "hien": ["ai-pha-luy", "vien-binh-minh", "ai-chi-lang", "thanh-xuong-giang", "vay-xuong-giang"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trần Lựu giả thua, nhử địch vào ải",
+      "mo_ta": "Trần Lựu giữ ải Pha Lũy được lệnh vờ thua, rút dần về Ải Lưu rồi về Chi Lăng. Liễu Thăng cậy quân đông, khinh địch, bỏ đại quân phía sau mà dẫn kỵ binh đuổi gấp. Trong khi đó Lê Sát, Lưu Nhân Chú đã bố trí mai phục sẵn hai bên dãy Cai Kinh và dãy Bảo Đài, khoá kín cửa ải.",
+      "hien": ["ai-chi-lang", "vien-binh-minh", "quan-tran-luu", "mui-nhu-dich", "mui-minh-duoi", "mai-phuc-cai-kinh", "mai-phuc-bao-dai"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chém Liễu Thăng ở núi Mã Yên",
+      "mo_ta": "Ngày 10/10/1427 (20 tháng 9 âm lịch), khi kỵ binh Liễu Thăng lọt hẳn vào trận địa, phục binh hai bên đổ ra đánh. Liễu Thăng bị chém tại núi Mã Yên; hơn một vạn quân Minh bị tiêu diệt ngay trong trận đầu.",
+      "hien": ["ai-chi-lang", "vien-binh-minh", "mai-phuc-cai-kinh", "mai-phuc-bao-dai", "mui-danh-ma-yen", "mui-chan-hau"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Cần Trạm – Phố Cát: chủ tướng lần lượt tử trận",
+      "mo_ta": "Lương Minh lên thay Liễu Thăng, thúc quân tiến tiếp thì bị nghĩa quân chặn đánh ở Cần Trạm và tử trận. Ít ngày sau, thượng thư Lý Khánh cùng đường, tự tử ở Phố Cát. Tàn quân do Thôi Tụ và Hoàng Phúc chỉ huy tiếp tục dồn về hướng Xương Giang.",
+      "hien": ["ai-chi-lang", "can-tram", "pho-cat", "mui-truy-kich", "tan-quan-minh"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Xương Giang đã mất — viện binh phơi giữa đồng",
+      "mo_ta": "Thôi Tụ và Hoàng Phúc kéo tới nơi mới hay thành Xương Giang đã bị nghĩa quân hạ từ trước, không còn chỗ dựa, đành đắp luỹ giữa cánh đồng trống. Ngày 3/11/1427 (15 tháng 10 âm lịch), quân Lam Sơn tổng công kích từ bốn mặt: gần năm vạn quân Minh bị tiêu diệt, Thôi Tụ và Hoàng Phúc bị bắt sống.",
+      "hien": ["thanh-xuong-giang-ta", "vay-xuong-giang", "tan-quan-minh", "mui-vay-diet"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Toàn thắng — Vương Thông xin hoà",
+      "mo_ta": "Mộc Thạnh nghe tin đạo quân Liễu Thăng tan vỡ liền rút chạy, bị truy kích ở Lãnh Câu, Đan Xá. Mất hết hy vọng cứu viện, Vương Thông ở Đông Quan phải xin hoà. Hội thề Đông Quan ngày 10/12/1427 khép lại cuộc chiến; đầu năm 1428 quân Minh rút hết về nước.",
+      "hien": ["thanh-xuong-giang-ta", "co-dai-thang", "ai-chi-lang"]
+    }
+  ],
+  "ket_qua": "Toàn bộ hai đạo viện binh Minh bị đánh tan: Liễu Thăng, Lương Minh tử trận, Lý Khánh tự tử, Thôi Tụ và Hoàng Phúc bị bắt sống; Mộc Thạnh bỏ chạy.",
+  "y_nghia": "Đòn quyết định của khởi nghĩa Lam Sơn: mất viện binh, Vương Thông buộc phải giảng hoà và rút quân, chấm dứt 20 năm đô hộ của nhà Minh, mở ra triều Lê sơ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lê (bản dịch Viện Sử học, NXB Khoa học xã hội)",
+    "Lam Sơn thực lục — Nguyễn Trãi",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Cục Di sản Văn hoá (dsvh.gov.vn) — Khu di tích lịch sử Chi Lăng, Lạng Sơn"
+  ]
+}
