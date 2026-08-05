@@ -1111,6 +1111,7 @@ map.on("load", () => {
   // Nền bản đồ phải theo kịp mức phóng, không chỉ theo lúc bấm nút 3D.
   // moveend gồm cả zoom lẫn kéo — mô hình điểm phải dựng lại cho vùng mới.
   map.on("moveend", capNhatNenBanDo);
+  troChuotTrenLopPhu();
 });
 
 // Lớp landmark 3D (Three.js) nạp lười ở lần bật 3D đầu tiên để không phình
@@ -1590,11 +1591,35 @@ function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
       `${conf.popup(p)}<br/><span style="color:#78716c;font-size:0.75rem">Nguồn: ${conf.nguon}</span>`,
     );
   });
-  map.on("mouseenter", layerId, () => {
-    map.getCanvas().style.cursor = "pointer";
-  });
-  map.on("mouseleave", layerId, () => {
-    map.getCanvas().style.cursor = "";
+  // CỐ Ý KHÔNG gắn mouseenter/mouseleave theo từng lớp ở đây — xem
+  // `troChuotTrenLopPhu` bên dưới.
+}
+
+// 🔴 Vì sao con trỏ dùng MỘT handler chung thay vì mouseenter/mouseleave theo
+// từng lớp: MapLibre phải dò trúng đích RIÊNG cho mỗi lượt đăng ký, trên MỌI
+// sự kiện `mousemove`. Đo ngày 2026-08-05 (đếm lời gọi queryRenderedFeatures,
+// 30 lần rê chuột):
+//     không lớp phủ  →  240 lời gọi  (8 mỗi lần rê)
+//     bật 33 lớp phủ → 4.200 lời gọi (140 mỗi lần rê)
+// mà `mousemove` bắn khoảng 60 lần mỗi giây khi người dùng chỉ di con trỏ.
+// Kéo bản đồ thì 0 lời gọi — chốt chữ ký khung nhìn đã chặn tốt. Nghĩa là chỗ
+// giật nằm ở RÊ CHUỘT, không phải ở kéo bản đồ.
+// Một handler + một lượt dò cho toàn bộ lớp phủ đưa 140 về 1.
+// `click` giữ nguyên theo từng lớp: nó chỉ dò khi có cú bấm, không tốn gì khi
+// rê chuột, và nó cần `conf` riêng của lớp để dựng popup.
+function troChuotTrenLopPhu(): void {
+  map.on("mousemove", (e) => {
+    const lop: string[] = [];
+    for (const id of overlayLoaded) {
+      for (const l of [`overlay-${id}`, `overlay-${id}-icon`])
+        if (map.getLayer(l) && map.getLayoutProperty(l, "visibility") !== "none") lop.push(l);
+    }
+    if (!lop.length) return;
+    const co = map.queryRenderedFeatures(e.point, { layers: lop }).length > 0;
+    const canvas = map.getCanvas();
+    // Chỉ ghi khi ĐỔI: gán style mỗi khung hình cũng là một lượt việc thừa.
+    const muon = co ? "pointer" : "";
+    if (canvas.style.cursor !== muon) canvas.style.cursor = muon;
   });
 }
 
