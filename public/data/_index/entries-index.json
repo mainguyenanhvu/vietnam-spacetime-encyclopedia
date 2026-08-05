@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 4954,
-    "tong_co_toa_do": 2524,
-    "so_nhom_trung_ten": 619,
-    "so_cap_trung_toa_do": 647,
+    "tong_muc": 4974,
+    "tong_co_toa_do": 2536,
+    "so_nhom_trung_ten": 624,
+    "so_cap_trung_toa_do": 667,
     "ngay_sinh": "2026-08-05"
   },
   "entries": [
@@ -10087,6 +10087,19 @@
       "slug": null,
       "ten": "Văn xuôi hiện thực & tác phẩm kinh điển vùng miền",
       "ten_chuan": "van xuoi hien thuc tac pham kinh dien vung mien",
+      "file": "literature/_chu-de.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": "tho-moi",
+      "slug": null,
+      "ten": "Thơ mới và văn học lãng mạn 1932–1945",
+      "ten_chuan": "tho moi va van hoc lang man 1932 1945",
       "file": "literature/_chu-de.json",
       "mien": "literature",
       "loai": null,
@@ -60406,6 +60419,136 @@
       "trang_thai": null
     },
     {
+      "id": "trieu-dai-hung-vuong-van-lang",
+      "slug": null,
+      "ten": "Hùng Vương dựng nước Văn Lang",
+      "ten_chuan": "hung vuong dung nuoc van lang",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.3833,
+      "lon": 105.1667,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-banh-chung-banh-giay",
+      "slug": null,
+      "ten": "Sự tích bánh chưng, bánh giầy",
+      "ten_chuan": "su tich banh chung banh giay",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-thanh-giong",
+      "slug": null,
+      "ten": "Truyền thuyết Thánh Gióng đánh giặc Ân",
+      "ten_chuan": "truyen thuyet thanh giong danh giac an",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": 21.25,
+      "lon": 105.75,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-van-hoa-dong-son",
+      "slug": null,
+      "ten": "Văn hoá Đông Sơn, trống đồng Đông Sơn",
+      "ten_chuan": "van hoa dong son trong dong dong son",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 19.8388,
+      "lon": 105.7908,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tac-pham-son-tinh-thuy-tinh",
+      "slug": null,
+      "ten": "Truyền thuyết Sơn Tinh – Thuỷ Tinh",
+      "ten_chuan": "truyen thuyet son tinh thuy tinh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tac-pham",
+      "lat": 21.0667,
+      "lon": 105.4167,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "trieu-dai-an-duong-vuong-au-lac-257tcn",
+      "slug": null,
+      "ten": "An Dương Vương lập nước Âu Lạc",
+      "ten_chuan": "an duong vuong lap nuoc au lac",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.1002,
+      "lon": 105.8712,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-thanh-co-loa-no-than",
+      "slug": null,
+      "ten": "Xây thành Cổ Loa, truyền thuyết nỏ thần",
+      "ten_chuan": "xay thanh co loa truyen thuyet no than",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.1002,
+      "lon": 105.8712,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "trieu-dai-trieu-da-nam-viet-204tcn",
+      "slug": null,
+      "ten": "Triệu Đà lập nước Nam Việt",
+      "ten_chuan": "trieu da lap nuoc nam viet",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "trieu-dai-au-lac-mat-nuoc-179tcn",
+      "slug": null,
+      "ten": "Triệu Đà thôn tính Âu Lạc — Mỵ Châu, Trọng Thuỷ",
+      "ten_chuan": "trieu da thon tinh au lac my chau trong thuy",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.1002,
+      "lon": 105.8712,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-han-diet-nam-viet-111tcn",
+      "slug": null,
+      "ten": "Nhà Hán diệt Nam Việt, mở đầu Bắc thuộc lần thứ nhất",
+      "ten_chuan": "nha han diet nam viet mo dau bac thuoc lan thu nhat",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
       "id": "khoi-nghia-hai-ba-trung-40",
       "slug": null,
       "ten": "Khởi nghĩa Hai Bà Trưng",
@@ -60415,6 +60558,19 @@
       "loai": "khoi-nghia",
       "lat": 21.125906,
       "lon": 105.6181623,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-bac-thuoc-lan-2-43",
+      "slug": null,
+      "ten": "Bắc thuộc lần thứ hai bắt đầu",
+      "ten_chuan": "bac thuoc lan thu hai bat dau",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
       "so_nguon": 2,
       "trang_thai": null
     },
@@ -60442,6 +60598,32 @@
       "lat": 21.0385395,
       "lon": 106.0780904,
       "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "trieu-dai-ly-nam-de-van-xuan-544",
+      "slug": null,
+      "ten": "Lý Bí lên ngôi Lý Nam Đế, đặt quốc hiệu Vạn Xuân",
+      "ten_chuan": "ly bi len ngoi ly nam de dat quoc hieu van xuan",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0358,
+      "lon": 105.8402,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-trieu-quang-phuc-546",
+      "slug": null,
+      "ten": "Triệu Quang Phục kháng chiến, khôi phục Vạn Xuân",
+      "ten_chuan": "trieu quang phuc khang chien khoi phuc van xuan",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "khang-chien",
+      "lat": 20.83,
+      "lon": 105.97,
+      "so_nguon": 2,
       "trang_thai": null
     },
     {
@@ -62343,6 +62525,19 @@
       "trang_thai": null
     },
     {
+      "id": "trieu-dai-khai-sinh-vndcch-1945",
+      "slug": null,
+      "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà",
+      "ten_chuan": "khai sinh nuoc viet nam dan chu cong hoa",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
       "id": "khang-chien-chong-phap-toan-quoc-1946",
       "slug": null,
       "ten": "Toàn quốc kháng chiến chống thực dân Pháp",
@@ -62486,6 +62681,19 @@
       "trang_thai": null
     },
     {
+      "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+      "slug": null,
+      "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam",
+      "ten_chuan": "thong nhat dat nuoc doi ten nuoc chxhcn viet nam",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
       "id": "khang-chien-bien-gioi-phia-bac-1979",
       "slug": null,
       "ten": "Chiến tranh bảo vệ biên giới phía Bắc",
@@ -62499,6 +62707,19 @@
       "trang_thai": null
     },
     {
+      "id": "su-kien-doi-moi-1986",
+      "slug": null,
+      "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới",
+      "ten_chuan": "dai hoi dang vi khoi xuong doi moi",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
       "id": "su-kien-gac-ma-1988",
       "slug": null,
       "ten": "Sự kiện Gạc Ma",
@@ -62508,6 +62729,45 @@
       "loai": "tran-danh",
       "lat": 9.7147,
       "lon": 114.2833,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-gia-nhap-asean-1995",
+      "slug": null,
+      "ten": "Việt Nam gia nhập ASEAN",
+      "ten_chuan": "viet nam gia nhap asean",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-gia-nhap-wto-2007",
+      "slug": null,
+      "ten": "Việt Nam gia nhập WTO",
+      "ten_chuan": "viet nam gia nhap wto",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-sap-nhap-34-tinh-2025",
+      "slug": null,
+      "ten": "Sáp nhập đơn vị hành chính, cả nước còn 34 tỉnh, thành phố",
+      "ten_chuan": "sap nhap don vi hanh chinh ca nuoc con 34 tinh thanh pho",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": null,
+      "lon": null,
       "so_nguon": 2,
       "trang_thai": null
     },
@@ -66358,6 +66618,26 @@
       ]
     },
     {
+      "ten_chuan": "an duong vuong lap nuoc au lac",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "An Dương Vương lập nước Âu Lạc"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "trieu-dai-an-duong-vuong-au-lac-257tcn",
+          "ten": "An Dương Vương lập nước Âu Lạc"
+        }
+      ]
+    },
+    {
       "ten_chuan": "an duong vuong thuc phan",
       "so_file": 2,
       "files": [
@@ -67484,6 +67764,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Dã Tượng (thế kỷ XIII)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "dai hoi dang vi khoi xuong doi moi",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-doi-moi-1986",
+          "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
         }
       ]
     },
@@ -69734,6 +70034,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Hưng Đạo Đại Vương Trần Quốc Tuấn"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "hung vuong dung nuoc van lang",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Hùng Vương dựng nước Văn Lang"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "trieu-dai-hung-vuong-van-lang",
+          "ten": "Hùng Vương dựng nước Văn Lang"
         }
       ]
     },
@@ -77723,6 +78043,46 @@
       ]
     },
     {
+      "ten_chuan": "viet nam gia nhap asean",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Việt Nam gia nhập ASEAN"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-gia-nhap-asean-1995",
+          "ten": "Việt Nam gia nhập ASEAN"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "viet nam gia nhap wto",
+      "so_file": 2,
+      "files": [
+        "timeline/dong-thoi-gian.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "timeline/dong-thoi-gian.json",
+          "id": null,
+          "ten": "Việt Nam gia nhập WTO"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "su-kien-gia-nhap-wto-2007",
+          "ten": "Việt Nam gia nhập WTO"
+        }
+      ]
+    },
+    {
       "ten_chuan": "vinh ha long",
       "so_file": 2,
       "files": [
@@ -78589,6 +78949,19 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
+        "id": "trieu-quang-phuc-da-trach-546",
+        "ten": "Kháng chiến Triệu Quang Phục chống Lương – Đầm Dạ Trạch 546–550"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-trieu-quang-phuc-546",
+        "ten": "Triệu Quang Phục kháng chiến, khôi phục Vạn Xuân"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
         "id": "khoi-nghia-mai-thuc-loan-713",
         "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu) 713–722"
       },
@@ -79075,8 +79448,47 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-khai-sinh-vndcch-1945",
+        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "le-trinh-bac-phat-1559",
+        "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "khang-chien-chong-phap-toan-quoc-1946",
         "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "le-trinh-bac-phat-1559",
+        "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "le-trinh-bac-phat-1559",
+        "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-doi-moi-1986",
+        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
       },
       "khoang_cach_m": 0
     },
@@ -79127,8 +79539,47 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-khai-sinh-vndcch-1945",
+        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "khang-chien-chong-phap-toan-quoc-1946",
         "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-doi-moi-1986",
+        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
       },
       "khoang_cach_m": 0
     },
@@ -79218,8 +79669,47 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-khai-sinh-vndcch-1945",
+        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-hue-diet-trinh-1786",
+        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "khang-chien-chong-phap-toan-quoc-1946",
         "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-hue-diet-trinh-1786",
+        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nguyen-hue-diet-trinh-1786",
+        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-doi-moi-1986",
+        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
       },
       "khoang_cach_m": 0
     },
@@ -80375,8 +80865,47 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-khai-sinh-vndcch-1945",
+        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "the-anh",
+        "ten": "NSND Thế Anh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "khang-chien-chong-phap-toan-quoc-1946",
         "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "the-anh",
+        "ten": "NSND Thế Anh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "the-anh",
+        "ten": "NSND Thế Anh"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-doi-moi-1986",
+        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
       },
       "khoang_cach_m": 0
     },
@@ -83573,8 +84102,47 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-khai-sinh-vndcch-1945",
+        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
+      },
+      "khoang_cach_m": 78
+    },
+    {
+      "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "khang-chien-chong-phap-toan-quoc-1946",
         "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 78
+    },
+    {
+      "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
+      },
+      "khoang_cach_m": 78
+    },
+    {
+      "a": {
+        "file": "overlays/nu-danh-nhan-lich-su.json",
+        "id": "an-tu-cong-chua",
+        "ten": "An Tư công chúa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-doi-moi-1986",
+        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
       },
       "khoang_cach_m": 78
     },
@@ -84329,6 +84897,19 @@
         "file": "timeline/moc-lich-su.json",
         "id": "tac-pham-nam-phong-tap-chi-1917",
         "ten": "Nam Phong tạp chí ra đời"
+      },
+      "khoang_cach_m": 109
+    },
+    {
+      "a": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-ly-nam-de-van-xuan-544",
+        "ten": "Lý Bí lên ngôi Lý Nam Đế, đặt quốc hiệu Vạn Xuân"
       },
       "khoang_cach_m": 109
     },
@@ -86355,8 +86936,47 @@
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-khai-sinh-vndcch-1945",
+        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
+        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
         "id": "khang-chien-chong-phap-toan-quoc-1946",
         "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
+        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
+        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-doi-moi-1986",
+        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
       },
       "khoang_cach_m": 188
     },

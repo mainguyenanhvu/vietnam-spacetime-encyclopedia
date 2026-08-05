@@ -2,6 +2,164 @@
   "ghi_chu": "Mốc lịch sử đính lên thanh thời gian: kéo thanh trượt thì mốc của thời kỳ đó hiện ra dưới dạng note nhỏ phía trên thanh (src/moc-lich-su.ts). PHẠM VI ĐÃ MỞ 2026-08-05 theo chỉ thị chủ dự án: nay CÓ nhóm khởi nghĩa/kháng chiến/trận đánh, khác với ghi chú cũ nói ba nhóm này cố ý để thưa. Trùng TÊN với overlays/chien-dich-tran-danh.json (189 mục) ở 9 mốc là CỐ Ý — hai bề mặt khác nhau: overlay là điểm trên bản đồ, file này là mốc trên thanh thời gian; người kéo thanh thời gian phải thấy được Bạch Đằng 938. Mục có `ghi_chu` là chỗ hai nguồn vênh nhau hoặc sử liệu chép số ước lệ — trình bày cả hai, ĐỪNG lặng lẽ chọn bản gọn hơn. Mục có `can_tra_them` là thứ chưa tra được, để trống chứ không bịa.",
   "items": [
     {
+      "id": "trieu-dai-hung-vuong-van-lang",
+      "nam": -2879,
+      "nam_hien_thi": "~2879 TCN (theo truyền thuyết)",
+      "ten": "Hùng Vương dựng nước Văn Lang",
+      "loai": "trieu-dai",
+      "mo_ta": "TRUYỀN THUYẾT, không phải niên đại xác định: theo Đại Việt sử ký toàn thư (Kỷ Hồng Bàng thị) và truyền thuyết dân gian, Hùng Vương dựng nước Văn Lang, nhà nước đầu tiên của người Việt, đóng đô Phong Châu, truyền 18 đời.",
+      "lon": 105.1667,
+      "lat": 21.3833,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Phú Thọ",
+      "ghi_chu": "Niên đại 2879 TCN là con số suy ngược từ đời sau, KHÔNG có ghi chép đương thời. scov.gov.vn diễn đạt mơ hồ hơn: Kinh Dương Vương «vào khoảng năm Nhâm Tuất, hơn 2000 năm trước Công nguyên»; chính trang đó ghi 18 đời Hùng Vương kéo dài «…làm nhiều người hoài nghi» — số 18 mang tính biểu trưng hơn là đếm chính xác. Nêu cả hai cách tính, KHÔNG khẳng định 2879 TCN là chính xác tuyệt đối.",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Hồng Bàng thị",
+        "scov.gov.vn — I. Truyền thuyết Kinh Dương Vương họ Hồng Bàng - Lạc Long Quân — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/i.-truyen-thuyet-kinh-duong-vuong-ho-hong-bang-lac-long-quan.html",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "tac-pham-banh-chung-banh-giay",
+      "nam": -2500,
+      "nam_hien_thi": "truyền thuyết đời Hùng Vương thứ 6 (không có năm xác định)",
+      "ten": "Sự tích bánh chưng, bánh giầy",
+      "loai": "tac-pham",
+      "mo_ta": "TRUYỀN THUYẾT dân gian: hoàng tử Lang Liêu làm bánh chưng (hình vuông, tượng đất) và bánh giầy (hình tròn, tượng trời) dâng vua cha nhân dịp chọn người nối ngôi, được vua Hùng thứ 6 truyền ngôi vì lòng hiếu thảo và ý nghĩa sâu sắc của lễ vật.",
+      "tinh_34": "Phú Thọ",
+      "can_tra_them": "Truyền thuyết không có năm xác định. `nam` đặt −2500 CHỈ để sắp xếp trong khoảng 18 đời Hùng Vương, KHÔNG phải niên đại thật.",
+      "nguon": [
+        "SGK Ngữ văn 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "tac-pham-thanh-giong",
+      "nam": -1700,
+      "nam_hien_thi": "truyền thuyết đời Hùng Vương thứ 6 (không có năm xác định)",
+      "ten": "Truyền thuyết Thánh Gióng đánh giặc Ân",
+      "loai": "tac-pham",
+      "mo_ta": "TRUYỀN THUYẾT dân gian: cậu bé làng Gióng lớn nhanh như thổi, cưỡi ngựa sắt, cầm roi sắt đánh tan giặc Ân xâm lược, sau đó bay về trời tại núi Sóc — biểu tượng tinh thần chống ngoại xâm của dân tộc.",
+      "lon": 105.75,
+      "lat": 21.25,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Hà Nội",
+      "can_tra_them": "Truyền thuyết không có năm xác định. `nam` đặt −1700 CHỈ để sắp xếp, KHÔNG phải niên đại thật.",
+      "nguon": [
+        "SGK Ngữ văn 6 — NXB Giáo dục Việt Nam",
+        "Khu di tích Đền Sóc, Sóc Sơn, Hà Nội"
+      ]
+    },
+    {
+      "id": "su-kien-van-hoa-dong-son",
+      "nam": -500,
+      "nam_hien_thi": "khoảng thế kỷ VII–I TCN",
+      "ten": "Văn hoá Đông Sơn, trống đồng Đông Sơn",
+      "loai": "su-kien",
+      "mo_ta": "Văn hoá Đông Sơn phát triển rực rỡ ở lưu vực sông Hồng – sông Mã – sông Cả, tiêu biểu là kỹ thuật đúc trống đồng. Đây là mốc có NIÊN ĐẠI KHẢO CỔ THỰC, khác hẳn các mục truyền thuyết cùng đoạn.",
+      "lon": 105.7908,
+      "lat": 19.8388,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Thanh Hoá",
+      "ghi_chu": "Niên đại có biên độ giữa các nguồn: dsvh.gov.vn (trống đồng Đền Hùng) ghi «cách ngày nay khoảng 2500–2300 năm»; khung rộng hơn cho toàn bộ văn hoá Đông Sơn thường nêu thế kỷ VII TCN – thế kỷ VI CN. Nêu cả hai. Toạ độ đặt tại làng Đông Sơn, Thanh Hoá — nơi phát hiện di chỉ đặt tên cho nền văn hoá này năm 1924.",
+      "nguon": [
+        "Cục Di sản văn hoá — Trống đồng Đền Hùng — https://dsvh.gov.vn/trong-dong-den-hung-3049",
+        "Bảo tàng Lịch sử Quốc gia — Văn hoá Đông Sơn"
+      ]
+    },
+    {
+      "id": "tac-pham-son-tinh-thuy-tinh",
+      "nam": -300,
+      "nam_hien_thi": "truyền thuyết đời Hùng Vương thứ 18 (không có năm xác định)",
+      "ten": "Truyền thuyết Sơn Tinh – Thuỷ Tinh",
+      "loai": "tac-pham",
+      "mo_ta": "TRUYỀN THUYẾT dân gian: Sơn Tinh và Thuỷ Tinh cùng cầu hôn công chúa Mỵ Nương con vua Hùng thứ 18; Sơn Tinh thắng cuộc, Thuỷ Tinh dâng nước đánh trả hằng năm — lý giải hiện tượng lũ lụt và tinh thần trị thuỷ của người Việt cổ.",
+      "lon": 105.4167,
+      "lat": 21.0667,
+      "do_tin_cay_toa_do": "thap",
+      "tinh_34": "Phú Thọ",
+      "can_tra_them": "Truyền thuyết không có năm xác định. `nam` đặt −300 CHỈ để sắp xếp gần cuối thời đại Hùng Vương, KHÔNG phải niên đại thật.",
+      "nguon": [
+        "SGK Ngữ văn 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "trieu-dai-an-duong-vuong-au-lac-257tcn",
+      "nam": -257,
+      "nam_hien_thi": "257 TCN",
+      "ten": "An Dương Vương lập nước Âu Lạc",
+      "loai": "trieu-dai",
+      "mo_ta": "Thục Phán hợp nhất Âu Việt và Lạc Việt thành nước Âu Lạc, xưng An Dương Vương, đóng đô Cổ Loa — nhà nước có nền tảng khảo cổ xác thực hơn thời Hùng Vương.",
+      "lon": 105.8712,
+      "lat": 21.1002,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Ngoại kỷ",
+        "Bảo tàng Lịch sử Quốc gia — Thành Cổ Loa, kinh đô nước Âu Lạc — https://baotanglichsu.vn/vi/Articles/3096/62046/thanh-co-loa-kinh-djo-nuoc-au-lac.html",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "su-kien-thanh-co-loa-no-than",
+      "nam": -240,
+      "nam_hien_thi": "sau 257 TCN (năm hoàn thành chưa rõ)",
+      "ten": "Xây thành Cổ Loa, truyền thuyết nỏ thần",
+      "loai": "su-kien",
+      "mo_ta": "An Dương Vương cho xây thành Cổ Loa gồm 3 vòng thành đất khép kín, tổng chiều dài khoảng 15.820 m — công trình quân sự và đô thị cổ quy mô lớn nhất Đông Nam Á thời bấy giờ. Truyền thuyết dân gian gắn với chiếc nỏ thần do thần Kim Quy giúp chế tạo.",
+      "lon": 105.8712,
+      "lat": 21.1002,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "can_tra_them": "Năm hoàn thành thành chưa có nguồn xác định. `nam` đặt −240 CHỈ để xếp sau năm lập nước, KHÔNG phải niên đại xác thực.",
+      "nguon": [
+        "Cục Di sản văn hoá — Di tích lịch sử, kiến trúc nghệ thuật và khảo cổ Cổ Loa — https://dsvh.gov.vn/di-tich-lich-su-kien-truc-nghe-thuat-va-khao-co-co-loa-2958",
+        "Bảo tàng Lịch sử Quốc gia — Thành Cổ Loa, kinh đô nước Âu Lạc"
+      ]
+    },
+    {
+      "id": "trieu-dai-trieu-da-nam-viet-204tcn",
+      "nam": -204,
+      "nam_hien_thi": "~204 TCN (có thuyết ghi 203 hoặc 207 TCN)",
+      "ten": "Triệu Đà lập nước Nam Việt",
+      "loai": "trieu-dai",
+      "mo_ta": "Triệu Đà, quan nhà Tần cai quản Nam Hải, nhân lúc Tần sụp đổ đã cát cứ và lập nước Nam Việt, đóng đô Phiên Ngung.",
+      "do_tin_cay_toa_do": "thap",
+      "ghi_chu": "KHÔNG có ghi chép đương thời về năm lập nước; chỉ suy luận từ Sử ký Tư Mã Thiên. Ba thuyết: 203 TCN, 204 TCN, và Đại Việt sử ký toàn thư ghi 207 TCN. TRANH CÃI LỚN HƠN: chính sử phong kiến xếp Triệu Đà vào «Kỷ nhà Triệu» như một triều đại chính thống của Việt Nam; SGK Lịch sử hiện đại coi Nam Việt là ngoại bang từng thôn tính Âu Lạc, KHÔNG tính vào chuỗi triều đại Việt Nam. Nêu cả hai quan điểm, KHÔNG tự chọn một bên.",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Kỷ nhà Triệu",
+        "scov.gov.vn — Việt sử giai thoại: Triệu Đà là người như thế nào? — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/viet-su-giai-thoai-trieu-da-la-nguoi-nhu-the-nao-.html"
+      ]
+    },
+    {
+      "id": "trieu-dai-au-lac-mat-nuoc-179tcn",
+      "nam": -179,
+      "nam_hien_thi": "179 TCN",
+      "ten": "Triệu Đà thôn tính Âu Lạc — Mỵ Châu, Trọng Thuỷ",
+      "loai": "trieu-dai",
+      "mo_ta": "Triệu Đà dùng mưu kế cầu hôn, gả con trai Trọng Thuỷ cho công chúa Mỵ Châu để dò biết bí mật nỏ thần, rồi cất quân đánh chiếm Âu Lạc; An Dương Vương thất bại, tự vẫn — mở đầu các thời kỳ Bắc thuộc.",
+      "lon": 105.8712,
+      "lat": 21.1002,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Ngoại kỷ",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "su-kien-han-diet-nam-viet-111tcn",
+      "nam": -111,
+      "nam_hien_thi": "111 TCN – 40",
+      "ten": "Nhà Hán diệt Nam Việt, mở đầu Bắc thuộc lần thứ nhất",
+      "loai": "su-kien",
+      "mo_ta": "Nhà Hán đem quân diệt nước Nam Việt của họ Triệu, chia đất cũ (gồm cả phần Âu Lạc trước đây) thành các quận Giao Chỉ, Cửu Chân, Nhật Nam, đặt ách cai trị trực tiếp — mở đầu Bắc thuộc lần thứ nhất, kéo dài tới khởi nghĩa Hai Bà Trưng năm 40.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+        "Bảo tàng Lịch sử Quốc gia"
+      ]
+    },
+    {
       "id": "khoi-nghia-hai-ba-trung-40",
       "nam": 40,
       "nam_hien_thi": "40",
@@ -15,6 +173,19 @@
       "nguon": [
         "Cục Di sản văn hoá — Di tích Đền Hát Môn — https://dsvh.gov.vn/di-tich-lich-su-den-hat-mon-2971",
         "scov.gov.vn — V. Trưng Nữ Vương (40–43)"
+      ]
+    },
+    {
+      "id": "su-kien-bac-thuoc-lan-2-43",
+      "nam": 43,
+      "nam_hien_thi": "43–542",
+      "ten": "Bắc thuộc lần thứ hai bắt đầu",
+      "loai": "su-kien",
+      "mo_ta": "Mã Viện đàn áp khởi nghĩa Hai Bà Trưng, tái lập ách cai trị của nhà Đông Hán; các triều đại phương Bắc nối nhau đô hộ gần 500 năm cho tới khởi nghĩa Lý Bí năm 542.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+        "Bảo tàng Lịch sử Quốc gia"
       ]
     },
     {
@@ -45,6 +216,37 @@
       "tinh_34": "Bắc Ninh",
       "nguon": [
         "Báo Nhân Dân điện tử — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
+      ]
+    },
+    {
+      "id": "trieu-dai-ly-nam-de-van-xuan-544",
+      "nam": 544,
+      "nam_hien_thi": "544",
+      "ten": "Lý Bí lên ngôi Lý Nam Đế, đặt quốc hiệu Vạn Xuân",
+      "loai": "trieu-dai",
+      "mo_ta": "Sau khi đánh đuổi quân Lương, Lý Bí lên ngôi hoàng đế, đặt quốc hiệu Vạn Xuân, đóng đô vùng cửa sông Tô Lịch — nhà nước có quốc hiệu đầu tiên của người Việt sau hơn 500 năm Bắc thuộc.",
+      "lon": 105.8402,
+      "lat": 21.0358,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
+      ]
+    },
+    {
+      "id": "khang-chien-trieu-quang-phuc-546",
+      "nam": 546,
+      "nam_hien_thi": "546–550",
+      "ten": "Triệu Quang Phục kháng chiến, khôi phục Vạn Xuân",
+      "loai": "khang-chien",
+      "mo_ta": "Sau khi Lý Nam Đế thất trận trước quân Lương ở hồ Điển Triệt, Triệu Quang Phục lui về đầm Dạ Trạch dùng «kế trì cửu chiến» — ngày ẩn đêm đánh; sau gần 4 năm phản công đánh tan quân Lương, khôi phục nền tự chủ, được suy tôn Triệu Việt Vương.",
+      "lon": 105.97,
+      "lat": 20.83,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hưng Yên",
+      "nguon": [
+        "Báo Quân đội nhân dân — Triệu Việt Vương và «kế trì cửu chiến» ở đầm Dạ Trạch — http://sknc.qdnd.vn/chuyen-xua-nay/trieu-viet-vuong-va-ke-tri-cuu-chien-o-dam-da-trach-501608",
+        "Báo Nhân Dân điện tử — Việt Vương Triệu Quang Phục — https://nhandan.vn/viet-vuong-trieu-quang-phuc-post465664.html"
       ]
     },
     {
@@ -2174,6 +2376,22 @@
       ]
     },
     {
+      "id": "trieu-dai-khai-sinh-vndcch-1945",
+      "nam": 1945,
+      "nam_hien_thi": "2/9/1945",
+      "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà",
+      "loai": "trieu-dai",
+      "mo_ta": "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, khai sinh nước Việt Nam Dân chủ Cộng hoà — nhà nước dân chủ nhân dân đầu tiên ở Đông Nam Á.",
+      "lon": 105.8342,
+      "lat": 21.0278,
+      "do_tin_cay_toa_do": "cao",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Bảo tàng Hồ Chí Minh — baotanghochiminh.vn",
+        "Cổng TTĐT Chính phủ — chinhphu.vn"
+      ]
+    },
+    {
       "id": "khang-chien-chong-phap-toan-quoc-1946",
       "nam": 1946,
       "nam_hien_thi": "19/12/1946–1954",
@@ -2339,6 +2557,22 @@
       ]
     },
     {
+      "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
+      "nam": 1976,
+      "nam_hien_thi": "2/7/1976",
+      "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam",
+      "loai": "su-kien",
+      "mo_ta": "Quốc hội khoá VI họp kỳ đầu tiên, quyết định đổi tên nước thành Cộng hoà Xã hội chủ nghĩa Việt Nam, hoàn tất thống nhất về mặt nhà nước sau khi đất nước thống nhất lãnh thổ ngày 30/4/1975.",
+      "lon": 105.8342,
+      "lat": 21.0278,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Cổng TTĐT Chính phủ — chinhphu.vn",
+        "Báo Nhân Dân — nhandan.vn"
+      ]
+    },
+    {
       "id": "khang-chien-bien-gioi-phia-bac-1979",
       "nam": 1979,
       "nam_hien_thi": "2–3/1979",
@@ -2351,6 +2585,22 @@
       "tinh_34": "Lạng Sơn",
       "nguon": [
         "Báo Quân đội nhân dân — qdnd.vn",
+        "Báo Nhân Dân — nhandan.vn"
+      ]
+    },
+    {
+      "id": "su-kien-doi-moi-1986",
+      "nam": 1986,
+      "nam_hien_thi": "12/1986",
+      "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới",
+      "loai": "su-kien",
+      "mo_ta": "Đại hội đại biểu toàn quốc lần thứ VI của Đảng đề ra đường lối Đổi Mới toàn diện, chuyển sang kinh tế thị trường định hướng xã hội chủ nghĩa — bước ngoặt đưa đất nước ra khỏi khủng hoảng kinh tế – xã hội.",
+      "lon": 105.8342,
+      "lat": 21.0278,
+      "do_tin_cay_toa_do": "trung",
+      "tinh_34": "Hà Nội",
+      "nguon": [
+        "Cổng TTĐT Chính phủ — chinhphu.vn",
         "Báo Nhân Dân — nhandan.vn"
       ]
     },
@@ -2369,6 +2619,45 @@
       "nguon": [
         "Báo Quân đội nhân dân — qdnd.vn",
         "Uỷ ban Biên giới quốc gia — boundary.gov.vn"
+      ]
+    },
+    {
+      "id": "su-kien-gia-nhap-asean-1995",
+      "nam": 1995,
+      "nam_hien_thi": "28/7/1995",
+      "ten": "Việt Nam gia nhập ASEAN",
+      "loai": "su-kien",
+      "mo_ta": "Việt Nam chính thức trở thành thành viên thứ 7 của Hiệp hội các quốc gia Đông Nam Á, đánh dấu bước hội nhập khu vực đầu tiên sau thời kỳ bị bao vây cấm vận.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Bộ Ngoại giao Việt Nam — mofa.gov.vn",
+        "Cổng TTĐT Chính phủ — chinhphu.vn"
+      ]
+    },
+    {
+      "id": "su-kien-gia-nhap-wto-2007",
+      "nam": 2007,
+      "nam_hien_thi": "11/1/2007",
+      "ten": "Việt Nam gia nhập WTO",
+      "loai": "su-kien",
+      "mo_ta": "Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới, hoàn tất tiến trình đàm phán 11 năm, mở ra giai đoạn hội nhập kinh tế toàn cầu sâu rộng.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Cổng TTĐT Chính phủ — chinhphu.vn",
+        "Bộ Công Thương — moit.gov.vn"
+      ]
+    },
+    {
+      "id": "su-kien-sap-nhap-34-tinh-2025",
+      "nam": 2025,
+      "nam_hien_thi": "1/7/2025",
+      "ten": "Sáp nhập đơn vị hành chính, cả nước còn 34 tỉnh, thành phố",
+      "loai": "su-kien",
+      "mo_ta": "Việt Nam sáp nhập từ 63 xuống còn 34 tỉnh, thành phố trực thuộc Trung ương và bỏ cấp huyện, hiệu lực từ 1/7/2025 — cuộc cải cách hành chính lớn nhất kể từ năm 1976.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Nghị quyết 202/2025/QH15 — Quốc hội (số hiệu lấy nguyên văn từ timeline/events.json)",
+        "Cổng TTĐT Chính phủ — Chi tiết 34 đơn vị hành chính cấp tỉnh — https://xaydungchinhsach.chinhphu.vn/chi-tiet-34-don-vi-hanh-chinh-cap-tinh-tu-12-6-2025-119250612141845533.htm"
       ]
     }
   ],

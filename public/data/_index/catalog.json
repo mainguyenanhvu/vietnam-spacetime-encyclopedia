@@ -1,8 +1,8 @@
 {
   "tong": {
     "so_file": 120,
-    "so_muc": 4954,
-    "so_byte": 8898240,
+    "so_muc": 4974,
+    "so_byte": 8915722,
     "ngay_sinh": "2026-08-05"
   },
   "files": [
@@ -750,8 +750,8 @@
     {
       "file": "literature/_chu-de.json",
       "mien": "literature",
-      "so_muc": 12,
-      "byte": 2708,
+      "so_muc": 13,
+      "byte": 3093,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": null,
@@ -761,7 +761,7 @@
         "ten",
         "mo_ta"
       ],
-      "sha256": "1f08157ca7b4083056a2c62cc742935f08fd32e0aad51d90f5e44652be94c65c",
+      "sha256": "c1ce6c432a2d6bdb6f7539820c91212aed453fd51dbd161910ae8a1888a70fb9",
       "mo_ta": "Bộ chủ đề của thư viện."
     },
     {
@@ -3054,8 +3054,8 @@
     {
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
-      "so_muc": 162,
-      "byte": 112627,
+      "so_muc": 181,
+      "byte": 129724,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -3073,7 +3073,7 @@
         "lon",
         "lat"
       ],
-      "sha256": "68f2134dbe50e54cdc01a429e9a082a4ce711d18a5ef34a44c38946ab9593eb2",
+      "sha256": "f020626f8083faf09456618e8725b8879cee38452b6fe93d6b3d3b83f57bf64f",
       "mo_ta": "Mốc lịch sử đính lên thanh thời gian: kéo thanh trượt thì mốc của thời kỳ đó hiện ra dưới dạng note nhỏ phía trên thanh (src/moc-lich-su.ts)."
     },
     {
