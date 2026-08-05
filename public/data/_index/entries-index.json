@@ -3,7 +3,7 @@
     "tong_muc": 5221,
     "tong_co_toa_do": 2583,
     "so_nhom_trung_ten": 718,
-    "so_cap_trung_toa_do": 688,
+    "so_cap_trung_toa_do": 678,
     "ngay_sinh": "2026-08-05"
   },
   "entries": [
@@ -28758,8 +28758,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "giu-nuoc",
-      "lat": 21.0383903,
-      "lon": 105.8406237,
+      "lat": 21.03,
+      "lon": 105.855,
       "so_nguon": 2,
       "trang_thai": "reviewed"
     },
@@ -28836,8 +28836,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "trung-dai",
-      "lat": 21.0278,
-      "lon": 105.8342,
+      "lat": 21.0355,
+      "lon": 105.8405,
       "so_nguon": 2,
       "trang_thai": "draft"
     },
@@ -28940,8 +28940,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "trung-dai",
-      "lat": 16.4767988,
-      "lon": 107.5722125,
+      "lat": 16.485,
+      "lon": 107.568,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -28966,8 +28966,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "trung-dai",
-      "lat": 21.0278,
-      "lon": 105.8342,
+      "lat": 21.031,
+      "lon": 105.843,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -28979,8 +28979,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "trung-dai",
-      "lat": 16.4767988,
-      "lon": 107.5722125,
+      "lat": 16.46,
+      "lon": 107.58,
       "so_nguon": 1,
       "trang_thai": "reviewed"
     },
@@ -29538,8 +29538,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "khang-phap",
-      "lat": 21.0383903,
-      "lon": 105.8406237,
+      "lat": 21.0385,
+      "lon": 105.8395,
       "so_nguon": 2,
       "trang_thai": "reviewed"
     },
@@ -29629,8 +29629,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "can-dai",
-      "lat": 19.903584,
-      "lon": 105.3465072,
+      "lat": 19.75,
+      "lon": 105.2,
       "so_nguon": 2,
       "trang_thai": "reviewed"
     },
@@ -30565,8 +30565,8 @@
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "loai": "khang-my",
-      "lat": 14.6503,
-      "lon": 107.8494,
+      "lat": 14.645,
+      "lon": 107.835,
       "so_nguon": 2,
       "trang_thai": "draft"
     },
@@ -84518,32 +84518,6 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
-        "id": "vay-thanh-dong-quan-1427",
-        "ten": "Vây thành Đông Quan (1426–1427)"
-      },
-      "b": {
-        "file": "overlays/di-tich-qgdb.json",
-        "id": null,
-        "ten": "Khu Trung tâm Hoàng thành Thăng Long - Hà Nội"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "vay-thanh-dong-quan-1427",
-        "ten": "Vây thành Đông Quan (1426–1427)"
-      },
-      "b": {
-        "file": "overlays/thien-su-cao-tang.json",
-        "id": "cam-thanh",
-        "ten": "Cảm Thành (Lập Đức)"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
         "id": "chi-lang-1427",
         "ten": "Chi Lăng – Xương Giang 1427"
       },
@@ -84648,97 +84622,6 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
-        "id": "the-anh",
-        "ten": "NSND Thế Anh"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "chua-trinh-ket-thuc-1786",
-        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
-        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "trieu-dai-khai-sinh-vndcch-1945",
-        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "khang-chien-chong-phap-toan-quoc-1946",
-        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
-        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "su-kien-doi-moi-1986",
-        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
         "id": "chua-nguyen-bac-tien-nghe-an-1655-1660",
         "ten": "Chúa Nguyễn Bắc tiến, chiếm 7 huyện Nghệ An (1655–1660)"
       },
@@ -84772,97 +84655,6 @@
         "file": "timeline/moc-lich-su.json",
         "id": "tran-rach-gam-xoai-mut-1785",
         "ten": "Trận Rạch Gầm – Xoài Mút"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
-      },
-      "b": {
-        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
-        "id": "the-anh",
-        "ten": "NSND Thế Anh"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "chua-trinh-ket-thuc-1786",
-        "ten": "Chúa Trịnh chấm dứt — Nguyễn Huệ diệt họ Trịnh"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "tac-pham-tuyen-ngon-doc-lap-1945",
-        "ten": "Tuyên ngôn Độc lập (Hồ Chí Minh)"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "trieu-dai-khai-sinh-vndcch-1945",
-        "ten": "Khai sinh nước Việt Nam Dân chủ Cộng hoà"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "khang-chien-chong-phap-toan-quoc-1946",
-        "ten": "Toàn quốc kháng chiến chống thực dân Pháp"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "su-kien-thong-nhat-doi-quoc-hieu-1976",
-        "ten": "Thống nhất đất nước, đổi tên nước CHXHCN Việt Nam"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "su-kien-doi-moi-1986",
-        "ten": "Đại hội Đảng VI, khởi xướng Đổi Mới"
       },
       "khoang_cach_m": 0
     },
@@ -85038,32 +84830,6 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
-        "id": "tran-thanh-ha-noi-1873",
-        "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)"
-      },
-      "b": {
-        "file": "overlays/di-tich-qgdb.json",
-        "id": null,
-        "ten": "Khu Trung tâm Hoàng thành Thăng Long - Hà Nội"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "tran-thanh-ha-noi-1873",
-        "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)"
-      },
-      "b": {
-        "file": "overlays/thien-su-cao-tang.json",
-        "id": "cam-thanh",
-        "ten": "Cảm Thành (Lập Đức)"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
         "id": "bai-say-1883",
         "ten": "Khởi nghĩa Bãi Sậy 1883–1892"
       },
@@ -85110,19 +84876,6 @@
         "file": "timeline/moc-lich-su.json",
         "id": "khoi-nghia-yen-the-1884",
         "ten": "Khởi nghĩa Yên Thế"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "hung-linh-1885",
-        "ten": "Khởi nghĩa Hùng Lĩnh 1885–1892"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "khoi-nghia-hung-linh-1885",
-        "ten": "Khởi nghĩa Hùng Lĩnh"
       },
       "khoang_cach_m": 0
     },
@@ -88781,6 +88534,188 @@
     },
     {
       "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "trieu-dai-ly-nam-de-van-xuan-544",
+        "ten": "Lý Bí lên ngôi Lý Nam Đế, đặt quốc hiệu Vạn Xuân"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-chieu-doi-do-1010",
+        "ten": "Chiếu dời đô, lập kinh đô Thăng Long"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-ly-ket-thuc-1225",
+        "ten": "Nhà Lý kết thúc"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-tran-bat-dau-1225",
+        "ten": "Trần Cảnh lên ngôi, lập nhà Trần"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-hoi-nghi-dien-hong-1284",
+        "ten": "Hội nghị Diên Hồng"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-chiem-thanh-1371-1390",
+        "ten": "Kháng chiến chống quân Chiêm Thành xâm phạm Thăng Long"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-tran-ket-thuc-1400",
+        "ten": "Nhà Trần kết thúc"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-le-so-bat-dau-1428",
+        "ten": "Lê Lợi lên ngôi, lập nhà Hậu Lê"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-luat-hong-duc-1483",
+        "ten": "Ban hành Quốc triều hình luật (Luật Hồng Đức)"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-le-so-ket-thuc-1527",
+        "ten": "Nhà Lê sơ kết thúc"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-mac-bat-dau-1527",
+        "ten": "Mạc Đăng Dung lên ngôi, lập nhà Mạc"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-mac-mat-thang-long-1592",
+        "ten": "Nhà Mạc mất Thăng Long"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-le-the-tong-tro-ve-dong-do-1593",
+        "ten": "Vua Lê Thế Tông trở về Đông Đô"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "nha-le-trung-hung-ket-thuc-1788",
+        "ten": "Nhà Lê Trung Hưng kết thúc"
+      },
+      "khoang_cach_m": 46
+    },
+    {
+      "a": {
         "file": "overlays/le-hoi-truyen-thong.json",
         "id": "choi-trau-do-son",
         "ten": "Lễ hội Chọi trâu Đồ Sơn"
@@ -89107,13 +89042,13 @@
     {
       "a": {
         "file": "overlays/chien-dich-tran-danh.json",
-        "id": "chien-dich-dak-to-1967",
-        "ten": "Chiến dịch Đắk Tô I (1967)"
+        "id": "ha-thanh-thang-long-diet-mac-1592",
+        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
       },
       "b": {
-        "file": "overlays/nghia-trang-liet-si.json",
-        "id": "dtn-chien-thang-dak-to-tan-canh",
-        "ten": "Di tích Chiến thắng Đắk Tô – Tân Cảnh"
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Hoàng thành Thăng Long"
       },
       "khoang_cach_m": 73
     },
@@ -89187,32 +89122,6 @@
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "le-trinh-bac-phat-1559",
         "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
-      },
-      "b": {
-        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
-        "id": "an-tu-cong-chua",
-        "ten": "An Tư công chúa"
-      },
-      "khoang_cach_m": 78
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
-        "id": "an-tu-cong-chua",
-        "ten": "An Tư công chúa"
-      },
-      "khoang_cach_m": 78
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
       },
       "b": {
         "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
@@ -90640,6 +90549,32 @@
     },
     {
       "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-thanh-ha-noi-1873",
+        "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)"
+      },
+      "b": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Khu Trung tâm Hoàng thành Thăng Long - Hà Nội"
+      },
+      "khoang_cach_m": 117
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-thanh-ha-noi-1873",
+        "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)"
+      },
+      "b": {
+        "file": "overlays/thien-su-cao-tang.json",
+        "id": "cam-thanh",
+        "ten": "Cảm Thành (Lập Đức)"
+      },
+      "khoang_cach_m": 117
+    },
+    {
+      "a": {
         "file": "geo/song-nui.json",
         "id": null,
         "ten": "Ngũ Hành Sơn"
@@ -91007,32 +90942,6 @@
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "le-trinh-bac-phat-1559",
         "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "su-kien-lap-quoc-tu-giam-1076",
-        "ten": "Lập Quốc Tử Giám"
-      },
-      "khoang_cach_m": 142
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "b": {
-        "file": "timeline/moc-lich-su.json",
-        "id": "su-kien-lap-quoc-tu-giam-1076",
-        "ten": "Lập Quốc Tử Giám"
-      },
-      "khoang_cach_m": 142
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
       },
       "b": {
         "file": "timeline/moc-lich-su.json",
@@ -91459,6 +91368,19 @@
     },
     {
       "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-thanh-ha-noi-1873",
+        "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "nha-tho-cua-bac-ha-noi",
+        "ten": "Nhà thờ Cửa Bắc"
+      },
+      "khoang_cach_m": 156
+    },
+    {
+      "a": {
         "file": "overlays/danh-nhan-cac-trieu.json",
         "id": "ly-thai-to",
         "ten": "Lý Thái Tổ – Lý Công Uẩn"
@@ -91701,32 +91623,6 @@
         "file": "overlays/di-san-phi-vat-the.json",
         "id": "nha-nhac-cung-dinh-hue",
         "ten": "Nhã nhạc – Âm nhạc cung đình Việt Nam"
-      },
-      "khoang_cach_m": 162
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "trinh-sam-chiem-phu-xuan-1774",
-        "ten": "Trịnh Sâm chiếm Phú Xuân (1774)"
-      },
-      "b": {
-        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
-        "id": "tran-van-ky",
-        "ten": "Trần Văn Kỷ (Trung thư lệnh Tây Sơn)"
-      },
-      "khoang_cach_m": 162
-    },
-    {
-      "a": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "tran-phu-xuan-1786",
-        "ten": "Trận Phú Xuân (1786)"
-      },
-      "b": {
-        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
-        "id": "tran-van-ky",
-        "ten": "Trần Văn Kỷ (Trung thư lệnh Tây Sơn)"
       },
       "khoang_cach_m": 162
     },
@@ -92247,32 +92143,6 @@
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "le-trinh-bac-phat-1559",
         "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)"
-      },
-      "khoang_cach_m": 188
-    },
-    {
-      "a": {
-        "file": "overlays/bao-vat-quoc-gia.json",
-        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
-        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
-      },
-      "b": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "ha-thanh-thang-long-diet-mac-1592",
-        "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)"
-      },
-      "khoang_cach_m": 188
-    },
-    {
-      "a": {
-        "file": "overlays/bao-vat-quoc-gia.json",
-        "id": "82-bia-tien-si-van-mieu-quoc-tu-giam",
-        "ten": "82 bia Tiến sĩ Văn Miếu – Quốc Tử Giám"
-      },
-      "b": {
-        "file": "overlays/chien-dich-tran-danh.json",
-        "id": "nguyen-hue-diet-trinh-1786",
-        "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)"
       },
       "khoang_cach_m": 188
     },
