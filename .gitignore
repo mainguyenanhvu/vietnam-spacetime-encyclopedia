@@ -4,3 +4,6 @@ dist/
 *.local
 .env
 .env.*
+
+# Worktree tạm của agent — không bao giờ commit
+.claude/worktrees/
