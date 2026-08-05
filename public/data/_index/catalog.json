@@ -1,8 +1,8 @@
 {
   "tong": {
-    "so_file": 99,
-    "so_muc": 4699,
-    "so_byte": 8581479,
+    "so_file": 100,
+    "so_muc": 4761,
+    "so_byte": 8624221,
     "ngay_sinh": "2026-08-05"
   },
   "files": [
@@ -2497,6 +2497,31 @@
       ],
       "sha256": "20b023d593728354244d6130df6298c75ba4b1631f19640d573f79415a5d2f2c",
       "mo_ta": "Dữ liệu miền «timeline» — tệp events."
+    },
+    {
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "so_muc": 62,
+      "byte": 42742,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "nam",
+        "nam_hien_thi",
+        "ten",
+        "loai",
+        "mo_ta",
+        "do_tin_cay_toa_do",
+        "tinh_34",
+        "nguon",
+        "lon",
+        "lat"
+      ],
+      "sha256": "f99d01a377296ee0d94cc8108f17b77d40af818eef08a6a8e7f71ca6131f277a",
+      "mo_ta": "Mốc lịch sử để đính lên dòng thời gian: khi kéo thanh trượt, mốc gần nhất hiện ra dưới dạng note nhỏ phía trên thanh."
     },
     {
       "file": "timeline/nien-hieu.json",

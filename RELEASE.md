@@ -418,3 +418,15 @@ Số bài hiện ra trên giao diện để thứ tự là thứ **nhìn thấy 
 **Không bấm được icon ở 3D.** Đo TRƯỚC khi sửa: bấm đúng tâm marker thì popup **vẫn mở** — cơ chế không hỏng. Hỏng ở kích thước: vòng bấm bán kính **3** (đường kính 6 px), mà lớp icon phẳng bị ẩn ở 3D nên người dùng nhắm vào khối Three.js, còn đích thật là cái chấm 6 px dưới chân nó. WCAG 2.5.8 đòi đích tối thiểu 24×24 ⇒ bán kính ≥ 12. Tách vai trò để giữ cả hai yêu cầu: phần tô để độ trong 0,18 (chỉ còn là bóng dưới chân mô hình), viền mảnh vẽ chân đế — vùng bấm của MapLibre tính theo **bán kính**, không theo độ trong, nên đích vẫn đủ 24 px dù mắt chỉ thấy một vòng nhạt. Đo lại sau khi sửa: bán kính 12, popup mở.
 
 ⚠️ **Lag thì KHÔNG đo được, và điều đó phải nói thẳng.** Harness chạy Chrome headless trên swiftshader (GPU phần mềm) nên sàn hiệu năng nuốt hết thứ cần đo: 2D không lớp phủ 5,6 fps · 3D không lớp phủ 4,3 · 3D bật hết 34 lớp 3,0 · 2D bật hết 4,4. Chỉ kết luận được phần tương đối — lớp phủ tốn ~21%, 3D tốn ~23%, gần như cộng tuyến tính, **không điểm nghẽn bất thường nào lộ ra**. Đã bỏ một lượt phí chắc chắn (dựng lại tới 400 mô hình sau mỗi `moveend` dù khung nhìn gần như không đổi), nhưng **không tuyên bố đó là nguyên nhân chính**. Muốn biết thật phải đo trên máy có GPU thật.
+
+### 62 mốc lịch sử — và vì sao không phải 150–250 như đặt hàng
+
+Sóng nghiên cứu được giao nhắm 150–250 mốc, trả về **62**. Lý do đưa ra kiểm được và đúng: `overlays/chien-dich-tran-danh.json` **đã có 168 mục** phủ sâu tới cấp tiểu đoàn cho khởi nghĩa/kháng chiến/trận đánh, nên khoảng trống thật của ba nhóm đó rất hẹp — kết quả là 8 + 1 + 2 mục. Phần lớn công dồn vào hai chỗ thật sự trống: **tác phẩm kinh điển 34 mục** (CSDL trước đó **không có mục nào**) và **triều đại 17 mục** bù năm KẾT THÚC, vì `dong-thoi-gian.json` trước chỉ có năm bắt đầu.
+
+Dừng ở 62 là chọn «không bịa năm» thay vì chọn đủ số. Bốn tác phẩm bị bỏ hẳn vì chỉ tra được trên nguồn bị cấm: Cung oán ngâm khúc · Hoàng Lê nhất thống chí · Lĩnh Nam chích quái · Nam dược thần hiệu (chỉ có bản khắc in 1922, không rõ năm soạn gốc thế kỷ 14).
+
+**Dry-run trước khi nạp** — bẫy #11 nói rõ dedup tự thân của agent không đủ: 0 mục thiếu nguồn · 0 nguồn bị bác · 0 trùng id · 0 thiếu năm · 0 toạ độ ngoài bbox Việt Nam. Bộ dò trùng của tôi báo 8 «nghi trùng», soát tay thì cả 8 là **dương tính giả** do khớp cụm con — «Nhà **Đinh** kết **thúc**» ăn nhầm sang «**Đinh** Văn **Thức**». Ghi lại để lần sau siết điều kiện khớp thay vì tin con số thô.
+
+**8 chỗ hai nguồn chính thống vênh nhau, đã ghi vào `ghi_chu` chứ không chọn bản gọn hơn**: Vạn Xuân kết thúc 602 hay 603 · Lê Trung Hưng kết thúc 1788 (niên hiệu Chiêu Thống) hay 1789 (Ngọc Hồi–Đống Đa, lệch do giáp Tết âm lịch) · Hoàng Việt luật lệ bản khắc 1813 hay ban hành 1815 · Việt Nam sử lược viết 1919 in 1921 hay 1920 · Gia Định thành thông chí chưa thống nhất năm hoàn thành.
+
+⚠️ **Dữ liệu đã nạp nhưng CHƯA NỐI DÂY** — chưa module TS nào đọc `moc-lich-su.json`. Phần UI (note nhỏ hiện phía trên thanh thời gian khi kéo, đính mốc vào vị trí tương ứng) là việc còn lại của hạng mục #6.

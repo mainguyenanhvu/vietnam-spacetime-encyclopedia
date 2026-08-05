@@ -342,7 +342,7 @@ Chủ dự án giao 13 hạng mục. Tiến độ ở đây, chi tiết kỹ thu
 | 3 | Zoom sâu thì 3D tự thành 2D | ✅ Xong. Nguyên nhân: `setEra` tắt hẳn lớp khối từ zoom 7,5. Nay khối sống ở **mọi** mức zoom; cái lo thật (mặt khối che mặt đất) chữa bằng `fill-extrusion-opacity` giảm dần 0,85 → 0,28. |
 | 4 | Icon trên bản đồ 3D phải là 3D, đúng cỡ, bấm được | 🔄 Vùng bấm xong: bán kính 3 → **12** (đích 24×24 px, WCAG 2.5.8), đo xác nhận popup mở. **Còn lại**: mô hình khối mới có 5 kiểu dùng chung cho mọi lớp — cần bộ mô hình riêng theo loại đối tượng. |
 | 5 | Học cách dựng mô hình 3D cho đối tượng lớp phủ | ⬜ chưa bắt đầu |
-| 6 | Mốc dòng thời gian: gắn vị trí, hiện note khi kéo; đủ 4000 năm | 🔄 sóng nghiên cứu đang chạy (triều đại · khởi nghĩa/kháng chiến · trận đánh · tác phẩm kinh điển) |
+| 6 | Mốc dòng thời gian: gắn vị trí, hiện note khi kéo; đủ 4000 năm | 🔄 **Dữ liệu xong, CHƯA NỐI DÂY.** `timeline/moc-lich-su.json` 62 mốc đã nạp (triều đại 17 · khởi nghĩa 8 · kháng chiến 1 · trận đánh 2 · tác phẩm 34), 31/62 có toạ độ. **Chưa module TS nào đọc file này** — còn phải dựng note nhỏ trên thanh thời gian + đính vị trí. |
 | 7 | Ngục trung nhật ký xếp theo thứ tự bài | ✅ Xong |
 | 8 | Thư viện: chế độ đọc kiểu Kindle, chế độ lật, mở rộng cửa sổ, tuỳ chỉnh, bỏ biểu tượng thừa, sắp theo chủ đề + thời gian/tác giả, link trang tỉnh, bổ sung tác phẩm | 🔄 hai sóng đang chạy: đặc tả UI · mở rộng nội dung + gán chủ đề + liên kết tỉnh |
 | 9 | Hành trình lịch sử: thiếu mốc, UI lỗi thời | 🔄 sóng đặc tả UI đang chạy |
