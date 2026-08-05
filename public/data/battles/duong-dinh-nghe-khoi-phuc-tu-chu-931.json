@@ -1,0 +1,179 @@
+{
+  "ghi_chu": "Sa đồ Dương Đình Nghệ khôi phục tự chủ 931 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+  "ten": "Dương Đình Nghệ khôi phục tự chủ, đánh Nam Hán 931",
+  "nam": 931,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Dương Đình Nghệ",
+  "doi_thu": "Nhà Nam Hán",
+  "dia_diem": "Ái Châu (Thanh Hóa) — thành Đại La (Hà Nội)",
+  "lien_quan_tinh": [
+    "thanh-hoa",
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          150,
+          520
+        ],
+        [
+          400,
+          380
+        ],
+        [
+          700,
+          220
+        ]
+      ],
+      "nhan": "Đường tiến quân ra Đại La"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          550,
+          150
+        ],
+        [
+          800,
+          180
+        ],
+        [
+          1000,
+          220
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-ai-chau",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 540,
+      "nhan": "Nuôi quân, dấy binh tại Ái Châu"
+    },
+    {
+      "id": "quan-ta-duong-dinh-nghe",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Dương Đình Nghệ chỉ huy nghĩa quân"
+    },
+    {
+      "id": "thanh-dai-la",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 180,
+      "nhan": "Thành Đại La"
+    },
+    {
+      "id": "mui-vay-danh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        380
+      ],
+      "den": [
+        650,
+        200
+      ],
+      "nhan": "Vây đánh thành Đại La"
+    },
+    {
+      "id": "quan-dich-vien-binh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 850,
+      "y": 100,
+      "nhan": "Viện binh Nam Hán"
+    },
+    {
+      "id": "mui-danh-vien-binh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        650,
+        200
+      ],
+      "den": [
+        820,
+        120
+      ],
+      "nhan": "Đánh tan viện binh"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 770,
+      "y": 240,
+      "nhan": "Khôi phục tự chủ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nam Hán chiếm đóng, đặt lại ách đô hộ (930)",
+      "mo_ta": "Quân Nam Hán đánh chiếm, bắt Tiết độ sứ họ Khúc, đặt lại ách đô hộ sau gần 25 năm tự chủ.",
+      "hien": [
+        "co-ta-ai-chau"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Dương Đình Nghệ nuôi quân, dấy binh từ Ái Châu",
+      "mo_ta": "Dương Đình Nghệ nuôi 3.000 nghĩa tử, dấy binh từ quê nhà Ái Châu (Thanh Hóa), kéo quân ra Bắc.",
+      "hien": [
+        "co-ta-ai-chau",
+        "quan-ta-duong-dinh-nghe"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vây đánh thành Đại La",
+      "mo_ta": "Nghĩa quân tiến ra bao vây, công phá thành Đại La, trị sở chính quyền đô hộ.",
+      "hien": [
+        "quan-ta-duong-dinh-nghe",
+        "thanh-dai-la",
+        "mui-vay-danh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh tan viện binh Nam Hán",
+      "mo_ta": "Quân Nam Hán cử viện binh sang cứu nhưng bị nghĩa quân đánh tan trên đường tới.",
+      "hien": [
+        "thanh-dai-la",
+        "quan-dich-vien-binh",
+        "mui-danh-vien-binh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chiếm lại thành Đại La, khôi phục tự chủ",
+      "mo_ta": "Dương Đình Nghệ làm chủ thành, tự xưng Tiết độ sứ, khôi phục nền tự chủ, tạo tiền đề cho thời kỳ phục hưng dân tộc.",
+      "hien": [
+        "thanh-dai-la",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Dương Đình Nghệ đánh bại quân Nam Hán, chiếm lại thành Đại La, tự xưng Tiết độ sứ, khôi phục nền tự chủ.",
+  "y_nghia": "Tạo tiền đề trực tiếp cho thời kỳ phục hưng dân tộc, mở đường cho chiến thắng Bạch Đằng 938 của con rể ông là Ngô Quyền.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ",
+    "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+    "Cổng TTĐT TP Thanh Hóa — kỷ niệm ngày mất Dương Đình Nghệ"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "ghi_chu": "Sa đồ trận Vân Đồn 1288 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "van-don-1288",
+  "ten": "Trận Vân Đồn 1288",
+  "nam": 1288,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Khánh Dư",
+  "doi_thu": "Quân Nguyên (đoàn thuyền lương Trương Văn Hổ)",
+  "dia_diem": "Vùng biển Vân Đồn (nay xã Quan Lạn, huyện Vân Đồn, tỉnh Quảng Ninh)",
+  "lien_quan_tinh": [
+    "quang-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Vùng biển Vân Đồn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-ho-tong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 250,
+      "y": 250,
+      "nhan": "Đoàn chiến thuyền hộ tống đi trước"
+    },
+    {
+      "id": "quan-ta-mai-phuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 380,
+      "nhan": "Trần Khánh Dư mai phục"
+    },
+    {
+      "id": "thuyen-dich-luong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 700,
+      "y": 270,
+      "nhan": "Đoàn thuyền lương Trương Văn Hổ"
+    },
+    {
+      "id": "mui-danh-up",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        360
+      ],
+      "den": [
+        680,
+        290
+      ],
+      "nhan": "Bất ngờ đánh úp"
+    },
+    {
+      "id": "thuyen-dich-chim",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 800,
+      "y": 200,
+      "nhan": "Thuyền lương bị đánh chìm, bắt sống"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 150,
+      "nhan": "Cắt đứt tiếp tế quân Nguyên"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Nguyên cần lương thực tiếp tế",
+      "mo_ta": "Đầu 1288, quân Nguyên do Thoát Hoan chỉ huy lâm vào thế thiếu lương, trông chờ đoàn thuyền lương do Trương Văn Hổ hộ tống từ Quỳnh Châu (Hải Nam) sang.",
+      "hien": [
+        "quan-dich-ho-tong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trần Khánh Dư mai phục tại Vân Đồn",
+      "mo_ta": "Phó đô tướng quân Trần Khánh Dư bố trí quân dân mai phục dọc vùng biển đảo Vân Đồn, đón đường đoàn thuyền lương.",
+      "hien": [
+        "quan-dich-ho-tong",
+        "quan-ta-mai-phuc"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đợi đoàn thuyền lương lọt qua tuyến ngoài",
+      "mo_ta": "Quân ta để mặc đoàn chiến thuyền hộ tống của địch đi qua trước, chờ đúng thời điểm đoàn thuyền lương nặng nề đến sau.",
+      "hien": [
+        "quan-dich-ho-tong",
+        "quan-ta-mai-phuc",
+        "thuyen-dich-luong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh úp đoàn thuyền lương",
+      "mo_ta": "Quân ta bất ngờ đánh úp đoàn thuyền lương 70 chiếc, tiêu diệt và bắt sống phần lớn, Trương Văn Hổ phải đổ lương thực xuống biển bỏ chạy.",
+      "hien": [
+        "quan-ta-mai-phuc",
+        "thuyen-dich-luong",
+        "mui-danh-up",
+        "thuyen-dich-chim"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cắt đứt nguồn tiếp tế của quân Nguyên",
+      "mo_ta": "Chiến thắng Vân Đồn cắt đứt nguồn tiếp tế, góp phần quyết định vào đại thắng Bạch Đằng cùng năm.",
+      "hien": [
+        "thuyen-dich-chim",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Tiêu diệt và bắt sống phần lớn đoàn thuyền lương 70 chiếc của Trương Văn Hổ, cắt đứt nguồn tiếp tế của quân Nguyên.",
+  "y_nghia": "Góp phần quyết định vào đại thắng Bạch Đằng cùng năm, thể hiện vai trò then chốt của hậu cần trong chiến tranh.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Cục Di sản văn hoá (dsvh.gov.vn) — Quần thể Thương cảng Vân Đồn"
+  ]
+}

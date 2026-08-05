@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Phùng Hưng 766–791 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "phung-hung-766",
+  "ten": "Khởi nghĩa Phùng Hưng 766–791",
+  "nam": 766,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phùng Hưng, Phùng Hải",
+  "doi_thu": "Nhà Đường (Đô hộ Cao Chính Bình)",
+  "dia_diem": "Đường Lâm, Sơn Tây (Hà Nội) — phủ thành Tống Bình",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          400,
+          300
+        ],
+        [
+          700,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-duong-lam",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 450,
+      "nhan": "Dấy binh tại Đường Lâm"
+    },
+    {
+      "id": "quan-ta-phung-hung",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 280,
+      "y": 400,
+      "nhan": "Phùng Hưng, Phùng Hải chỉ huy"
+    },
+    {
+      "id": "thanh-tong-binh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 230,
+      "nhan": "Phủ thành Tống Bình"
+    },
+    {
+      "id": "mui-vay-ham",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        380
+      ],
+      "den": [
+        600,
+        240
+      ],
+      "nhan": "Vây hãm thành"
+    },
+    {
+      "id": "quan-dich-cao-chinh-binh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 170,
+      "nhan": "Cao Chính Bình lo sợ, lâm bệnh"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 710,
+      "y": 280,
+      "nhan": "Hạ thành, làm chủ đất nước"
+    },
+    {
+      "id": "dia-danh-suy-ton",
+      "kieu": "dia-danh",
+      "x": 650,
+      "y": 330,
+      "nhan": "Nhân dân suy tôn Bố Cái Đại Vương"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Dấy binh khởi nghĩa tại Đường Lâm",
+      "mo_ta": "Phùng Hưng cùng em Phùng Hải dấy binh khởi nghĩa từ quê nhà, được nhân dân khắp vùng hưởng ứng.",
+      "hien": [
+        "co-ta-duong-lam"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Vây hãm phủ thành Tống Bình",
+      "mo_ta": "Nghĩa quân tiến về vây hãm phủ thành Tống Bình, trị sở của chính quyền đô hộ nhà Đường.",
+      "hien": [
+        "co-ta-duong-lam",
+        "quan-ta-phung-hung"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đô hộ Cao Chính Bình lo sợ",
+      "mo_ta": "Cuộc vây hãm kéo dài khiến Đô hộ Cao Chính Bình khiếp sợ, lâm bệnh.",
+      "hien": [
+        "quan-ta-phung-hung",
+        "thanh-tong-binh",
+        "mui-vay-ham",
+        "quan-dich-cao-chinh-binh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hạ thành, làm chủ đất nước",
+      "mo_ta": "Nghĩa quân hạ thành, Phùng Hưng vào thành tổ chức chính quyền, cai quản đất nước trong vài năm với chính sách khoan hòa.",
+      "hien": [
+        "thanh-tong-binh",
+        "co-thang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Nhân dân suy tôn Bố Cái Đại Vương",
+      "mo_ta": "Sau khi ông mất, nhân dân suy tôn ông là Bố Cái Đại Vương để ghi nhớ công lao.",
+      "hien": [
+        "co-thang",
+        "dia-danh-suy-ton"
+      ]
+    }
+  ],
+  "ket_qua": "Nghĩa quân hạ phủ thành Tống Bình, Phùng Hưng tổ chức chính quyền cai quản đất nước trong vài năm với chính sách khoan hòa.",
+  "y_nghia": "Được nhân dân suy tôn Bố Cái Đại Vương, biểu tượng của người lãnh đạo gần dân, tiếp nối truyền thống đấu tranh giành quyền tự chủ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ",
+    "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+    "Báo Quân đội nhân dân — Bảo tồn và phát huy giá trị di sản về Bố Cái Đại Vương Phùng Hưng"
+  ]
+}

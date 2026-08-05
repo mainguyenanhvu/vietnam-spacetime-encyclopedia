@@ -1,0 +1,180 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Lý Bí 542–544 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "ly-bi-542",
+  "ten": "Khởi nghĩa Lý Bí 542–544",
+  "nam": 542,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lý Bí (Lý Nam Đế)",
+  "doi_thu": "Nhà Lương (Thứ sử Tiêu Tư)",
+  "dia_diem": "Thành Long Biên (vùng Thuận Thành, Bắc Ninh ngày nay)",
+  "lien_quan_tinh": [
+    "bac-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          500,
+          320
+        ],
+        [
+          1000,
+          380
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          900,
+          60
+        ],
+        [
+          650,
+          180
+        ],
+        [
+          500,
+          300
+        ]
+      ],
+      "nhan": "Đường quân Lương đàn áp"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-khoi-nghia",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 480,
+      "nhan": "Lý Bí phất cờ khởi nghĩa"
+    },
+    {
+      "id": "quan-ta-tien-cong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 430,
+      "nhan": "Nghĩa quân tiến đánh Long Biên"
+    },
+    {
+      "id": "thanh-long-bien",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 550,
+      "y": 280,
+      "nhan": "Thành Long Biên"
+    },
+    {
+      "id": "quan-dich-tieu-tu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 230,
+      "nhan": "Tiêu Tư bỏ chạy"
+    },
+    {
+      "id": "quan-dich-luong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Quân Lương sang đàn áp"
+    },
+    {
+      "id": "mui-danh-bai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        410
+      ],
+      "den": [
+        600,
+        220
+      ],
+      "nhan": "Đánh bại quân Lương"
+    },
+    {
+      "id": "co-vua",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 620,
+      "y": 330,
+      "nhan": "Lý Bí lên ngôi Lý Nam Đế"
+    },
+    {
+      "id": "dia-danh-van-xuan",
+      "kieu": "dia-danh",
+      "x": 550,
+      "y": 380,
+      "nhan": "Quốc hiệu Vạn Xuân"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Phất cờ khởi nghĩa (đầu 542)",
+      "mo_ta": "Lý Bí dấy binh chống ách đô hộ tàn bạo của nhà Lương, được hào kiệt khắp nơi hưởng ứng.",
+      "hien": [
+        "co-ta-khoi-nghia"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đánh chiếm thành Long Biên",
+      "mo_ta": "Chưa đầy 3 tháng, nghĩa quân quét sạch chính quyền đô hộ, thứ sử Tiêu Tư phải bỏ chạy về Quảng Châu.",
+      "hien": [
+        "co-ta-khoi-nghia",
+        "quan-ta-tien-cong",
+        "thanh-long-bien",
+        "quan-dich-tieu-tu"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh bại hai lần quân Lương sang đàn áp",
+      "mo_ta": "Đầu năm 543, quân Lương hai lần đưa quân sang đàn áp đều bị nghĩa quân đánh bại.",
+      "hien": [
+        "thanh-long-bien",
+        "quan-dich-luong",
+        "mui-danh-bai"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Lý Bí lên ngôi hoàng đế",
+      "mo_ta": "Đầu năm 544, Lý Bí lên ngôi, xưng là Lý Nam Đế.",
+      "hien": [
+        "thanh-long-bien",
+        "co-vua"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đặt quốc hiệu Vạn Xuân",
+      "mo_ta": "Lập nhà nước độc lập có quốc hiệu đầu tiên của người Việt sau hơn 500 năm Bắc thuộc.",
+      "hien": [
+        "co-vua",
+        "dia-danh-van-xuan"
+      ]
+    }
+  ],
+  "ket_qua": "Đánh đuổi chính quyền đô hộ nhà Lương, đánh bại hai lần quân Lương sang đàn áp; Lý Bí lên ngôi Lý Nam Đế, đặt quốc hiệu Vạn Xuân.",
+  "y_nghia": "Lập nhà nước độc lập có quốc hiệu đầu tiên của người Việt sau hơn 500 năm Bắc thuộc, khẳng định ý chí tự chủ dân tộc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ nhà Tiền Lý",
+    "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+    "Báo Nhân Dân điện tử — Lý Bí và Nhà nước Vạn Xuân"
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Bà Triệu 248 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-ba-trieu-248",
+  "ten": "Khởi nghĩa Bà Triệu 248",
+  "nam": 248,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Triệu Thị Trinh (Bà Triệu), Triệu Quốc Đạt",
+  "doi_thu": "Nhà Ngô (tướng Lục Dận)",
+  "dia_diem": "Núi Nưa – núi Tùng, Triệu Sơn – Hậu Lộc, Thanh Hóa",
+  "lien_quan_tinh": [
+    "thanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          450
+        ],
+        [
+          400,
+          500
+        ],
+        [
+          700,
+          460
+        ]
+      ],
+      "nhan": "Vùng núi Nưa – núi Tùng (Thanh Hóa)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          850,
+          60
+        ],
+        [
+          600,
+          200
+        ],
+        [
+          450,
+          350
+        ]
+      ],
+      "nhan": "Đường tiến quân đàn áp của Lục Dận"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-nui-nua",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 420,
+      "nhan": "Cờ khởi nghĩa núi Nưa"
+    },
+    {
+      "id": "quan-ta-ba-trieu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 220,
+      "y": 480,
+      "nhan": "Bà Triệu, Triệu Quốc Đạt chỉ huy nghĩa quân"
+    },
+    {
+      "id": "mui-lan-rong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        250,
+        460
+      ],
+      "den": [
+        550,
+        430
+      ],
+      "nhan": "Uy thế lan khắp Cửu Chân – Giao Chỉ – Nhật Nam"
+    },
+    {
+      "id": "quan-dich-luc-dan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Đại quân Lục Dận (nhà Ngô)"
+    },
+    {
+      "id": "mui-dich-tien",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        700,
+        220
+      ],
+      "den": [
+        500,
+        380
+      ],
+      "nhan": "Tiến đánh đàn áp"
+    },
+    {
+      "id": "quan-ta-cuoi-voi",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 420,
+      "y": 400,
+      "nhan": "Bà Triệu cưỡi voi chiến đấu"
+    },
+    {
+      "id": "nui-tung",
+      "kieu": "dia-danh",
+      "x": 550,
+      "y": 500,
+      "nhan": "Núi Tùng"
+    },
+    {
+      "id": "co-tuan-tiet",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 620,
+      "y": 460,
+      "nhan": "Bà Triệu tuẫn tiết"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Dấy binh khởi nghĩa ở núi Nưa",
+      "mo_ta": "Năm 248, Bà Triệu cùng anh Triệu Quốc Đạt tập hợp nghĩa quân, dựng cờ khởi nghĩa chống ách đô hộ nhà Ngô.",
+      "hien": [
+        "co-ta-nui-nua",
+        "quan-ta-ba-trieu"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Làm chủ vùng Cửu Chân",
+      "mo_ta": "Nghĩa quân nhanh chóng đánh chiếm nhiều thành ấp, làm chủ cả vùng Cửu Chân (Thanh Hóa ngày nay).",
+      "hien": [
+        "co-ta-nui-nua",
+        "quan-ta-ba-trieu",
+        "mui-lan-rong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Uy thế lan rộng, nhà Ngô cử đại quân đàn áp",
+      "mo_ta": "Cuộc khởi nghĩa lan rộng, khiến quan lại đô hộ khiếp sợ; nhà Ngô phải cử tướng Lục Dận đem đại quân sang đàn áp.",
+      "hien": [
+        "mui-lan-rong",
+        "quan-dich-luc-dan",
+        "mui-dich-tien"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bà Triệu cưỡi voi chiến đấu",
+      "mo_ta": "Bà Triệu đích thân cưỡi voi ra trận, chỉ huy nghĩa quân chiến đấu ngoan cường trước thế giặc mạnh.",
+      "hien": [
+        "quan-ta-cuoi-voi",
+        "quan-dich-luc-dan",
+        "mui-dich-tien"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tuẫn tiết trên núi Tùng",
+      "mo_ta": "Trước thế giặc quá mạnh, nghĩa quân tan vỡ; Bà Triệu tuẫn tiết trên núi Tùng để giữ khí tiết, trở thành biểu tượng bất khuất của dân tộc.",
+      "hien": [
+        "nui-tung",
+        "co-tuan-tiet"
+      ]
+    }
+  ],
+  "ket_qua": "Nghĩa quân làm chủ một vùng rộng lớn Cửu Chân, uy hiếp cả Giao Chỉ, Nhật Nam trước khi bị nhà Ngô đàn áp; Bà Triệu tuẫn tiết trên núi Tùng để giữ khí tiết.",
+  "y_nghia": "Biểu tượng bất khuất của tinh thần chống áp bức, đặc biệt là ý chí quật cường của phụ nữ Việt Nam trong thời kỳ Bắc thuộc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ",
+    "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+    "Cục Di sản văn hóa — Khu di tích Bà Triệu (dsvh.gov.vn)"
+  ]
+}

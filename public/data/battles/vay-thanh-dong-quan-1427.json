@@ -1,0 +1,188 @@
+{
+  "ghi_chu": "Sa đồ vây thành Đông Quan 1426–1427 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Mục này khác 'chi-lang-1427.json' đã có sẵn — tập trung vào giai đoạn vây hãm và Hội thề Đông Quan, không lặp lại diễn biến trận Chi Lăng. trang_thai=draft chờ soát §9.",
+  "id": "vay-thanh-dong-quan-1427",
+  "ten": "Vây thành Đông Quan (1426–1427)",
+  "nam": 1426,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Lợi, Nguyễn Trãi",
+  "doi_thu": "Nhà Minh (Vương Thông)",
+  "dia_diem": "Thành Đông Quan (nay khu vực Hoàng thành Thăng Long, Hà Nội)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          600,
+          50
+        ],
+        [
+          750,
+          300
+        ],
+        [
+          900,
+          550
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          850,
+          60
+        ],
+        [
+          750,
+          150
+        ],
+        [
+          680,
+          250
+        ]
+      ],
+      "nhan": "Đường viện binh từ Chi Lăng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-dong-quan",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 450,
+      "y": 300,
+      "nhan": "Thành Đông Quan"
+    },
+    {
+      "id": "quan-ta-vay-thanh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 350,
+      "nhan": "Nghĩa quân Lam Sơn vây thành"
+    },
+    {
+      "id": "thu-du-hang",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 280,
+      "nhan": "Thư dụ hàng của Nguyễn Trãi"
+    },
+    {
+      "id": "quan-dich-suy-kiet",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 520,
+      "y": 255,
+      "nhan": "Quân Minh suy kiệt trong thành"
+    },
+    {
+      "id": "quan-dich-vien-binh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Viện binh Liễu Thăng, Mộc Thạnh"
+    },
+    {
+      "id": "mui-vien-binh-bai",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        750,
+        180
+      ],
+      "den": [
+        550,
+        280
+      ],
+      "nhan": "Viện binh bị đánh tan (Chi Lăng – Xương Giang)"
+    },
+    {
+      "id": "dia-diem-hoi-the",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 400,
+      "nhan": "Nơi lập Hội thề Đông Quan (phía nam thành)"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 470,
+      "y": 450,
+      "nhan": "Hội thề Đông Quan — quân Minh rút về nước"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Xiết chặt vòng vây thành Đông Quan (cuối 1426)",
+      "mo_ta": "Sau chiến thắng Tốt Động – Chúc Động, nghĩa quân Lam Sơn xiết chặt vòng vây quanh thành Đông Quan, cắt đứt đường tiếp tế của quân Minh.",
+      "hien": [
+        "thanh-dong-quan",
+        "quan-ta-vay-thanh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Trãi dùng \"tâm công\"",
+      "mo_ta": "Nguyễn Trãi viết nhiều thư dụ hàng, phân hoá tinh thần quân Minh trong thành, kết hợp vây ép quân sự với đấu tranh binh vận.",
+      "hien": [
+        "thanh-dong-quan",
+        "quan-ta-vay-thanh",
+        "thu-du-hang"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vây hãm kéo dài, quân Minh suy kiệt",
+      "mo_ta": "Vòng vây kéo dài hơn một năm khiến lương thực trong thành cạn kiệt, tinh thần quân Minh ngày càng sa sút.",
+      "hien": [
+        "thanh-dong-quan",
+        "quan-dich-suy-kiet"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh tan viện binh tại Chi Lăng – Xương Giang",
+      "mo_ta": "Trong khi vây thành, nghĩa quân đồng thời đánh tan hai đạo viện binh Liễu Thăng, Mộc Thạnh, dập tắt hy vọng cứu viện của Vương Thông.",
+      "hien": [
+        "quan-dich-vien-binh",
+        "mui-vien-binh-bai"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Vương Thông xin hoà",
+      "mo_ta": "Mất hết viện binh, lương thực cạn kiệt, Vương Thông buộc phải xin giảng hoà với Lê Lợi.",
+      "hien": [
+        "thanh-dong-quan",
+        "quan-dich-suy-kiet"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Hội thề Đông Quan (10/12/1427)",
+      "mo_ta": "Hai bên lập hội thề tại phía nam thành Đông Quan, cam kết chấm dứt chiến tranh; đầu năm 1428 quân Minh rút hết về nước, kết thúc 20 năm đô hộ.",
+      "hien": [
+        "dia-diem-hoi-the",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Vây hãm hơn một năm cùng thắng lợi Chi Lăng – Xương Giang buộc Vương Thông đầu hàng qua Hội thề Đông Quan, quân Minh rút hết về nước.",
+  "y_nghia": "Kết hợp giữa vây ép quân sự và đấu tranh binh vận ('tâm công'), kết thúc trọn vẹn 20 năm đô hộ nhà Minh, mở đầu triều Hậu Lê.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lê",
+    "Quân trung từ mệnh tập (Nguyễn Trãi)",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Báo Quân đội nhân dân — Giải phóng thành Đông Quan"
+  ]
+}

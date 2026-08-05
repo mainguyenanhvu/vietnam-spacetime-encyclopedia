@@ -1,0 +1,196 @@
+{
+  "ghi_chu": "Sa đồ kháng chiến Triệu Quang Phục 546–550 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "trieu-quang-phuc-da-trach-546",
+  "ten": "Kháng chiến Triệu Quang Phục chống Lương – Đầm Dạ Trạch 546–550",
+  "nam": 546,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Triệu Quang Phục (Triệu Việt Vương)",
+  "doi_thu": "Nhà Lương (Trần Bá Tiên, Dương Sàn)",
+  "dia_diem": "Đầm Dạ Trạch, Khoái Châu, Hưng Yên",
+  "lien_quan_tinh": [
+    "hung-yen"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          900,
+          320
+        ]
+      ],
+      "nhan": "Đầm Dạ Trạch và các lạch nước"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          300,
+          200
+        ],
+        [
+          500,
+          180
+        ],
+        [
+          700,
+          220
+        ]
+      ],
+      "nhan": "Vùng lau sậy rậm rạp"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-tran-ba-tien",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Trần Bá Tiên vây đầm"
+    },
+    {
+      "id": "can-cu-da-trach",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 300,
+      "nhan": "Căn cứ đầm Dạ Trạch"
+    },
+    {
+      "id": "quan-ta-trieu-quang-phuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Triệu Quang Phục chỉ huy nghĩa quân"
+    },
+    {
+      "id": "mui-danh-uy",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        320
+      ],
+      "den": [
+        650,
+        250
+      ],
+      "nhan": "Đêm ra đánh úp, cướp lương"
+    },
+    {
+      "id": "quan-dich-vay-ham",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 230,
+      "nhan": "Quân Lương vây hãm nhiều năm"
+    },
+    {
+      "id": "mui-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        300
+      ],
+      "den": [
+        700,
+        180
+      ],
+      "nhan": "Thừa cơ phản công"
+    },
+    {
+      "id": "thanh-long-bien",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 800,
+      "y": 120,
+      "nhan": "Thành Long Biên"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 170,
+      "nhan": "Triệu Việt Vương khôi phục tự chủ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lý Nam Đế thất trận, giao binh quyền cho Triệu Quang Phục",
+      "mo_ta": "Sau thất bại ở hồ Điển Triệt (545), Lý Nam Đế uỷ thác binh quyền cho Triệu Quang Phục tiếp tục kháng chiến.",
+      "hien": [
+        "can-cu-da-trach"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lui về đầm Dạ Trạch lập căn cứ",
+      "mo_ta": "Nhận thấy địa thế đầm lầy hiểm trở, Triệu Quang Phục chọn Dạ Trạch làm căn cứ kháng chiến lâu dài.",
+      "hien": [
+        "can-cu-da-trach",
+        "quan-ta-trieu-quang-phuc"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Kế \"trì cửu chiến\" — ngày ẩn đêm đánh",
+      "mo_ta": "Nghĩa quân dùng thuyền độc mộc len lỏi trong lau sậy, ban ngày ẩn náu, ban đêm ra đánh úp cướp lương thực, quấy rối quân Lương.",
+      "hien": [
+        "can-cu-da-trach",
+        "quan-ta-trieu-quang-phuc",
+        "mui-danh-uy"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân Lương vây hãm nhiều năm không hạ được",
+      "mo_ta": "Quân Lương do Trần Bá Tiên chỉ huy vây đầm nhiều năm nhưng không thể tiến sâu vào căn cứ.",
+      "hien": [
+        "can-cu-da-trach",
+        "quan-dich-tran-ba-tien",
+        "quan-dich-vay-ham"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Thừa cơ phản công khi nhà Lương có loạn",
+      "mo_ta": "Năm 550, nhân nhà Lương có loạn Hầu Cảnh phải rút bớt quân, Triệu Quang Phục thừa cơ phản công, đánh tan quân Lương do Dương Sàn chỉ huy.",
+      "hien": [
+        "can-cu-da-trach",
+        "quan-dich-vay-ham",
+        "mui-phan-cong"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Khôi phục tự chủ, xưng Triệu Việt Vương",
+      "mo_ta": "Nghĩa quân chiếm lại thành Long Biên, khôi phục nền tự chủ Vạn Xuân; Triệu Quang Phục được suy tôn là Triệu Việt Vương.",
+      "hien": [
+        "thanh-long-bien",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Sau gần 4 năm cầm cự bằng kế 'trì cửu chiến', Triệu Quang Phục phản công đánh tan quân Lương, chiếm lại thành Long Biên, khôi phục nền tự chủ Vạn Xuân.",
+  "y_nghia": "Minh chứng cho nghệ thuật đánh lâu dài, lấy yếu chống mạnh dựa vào địa thế hiểm trở, tiếp nối sự nghiệp giữ nước của Lý Nam Đế.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ nhà Tiền Lý",
+    "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
+    "Báo Nhân Dân điện tử — Việt Vương Triệu Quang Phục"
+  ]
+}

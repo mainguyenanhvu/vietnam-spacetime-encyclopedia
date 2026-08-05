@@ -1,0 +1,169 @@
+{
+  "ghi_chu": "Sa đồ trận Bình Lệ Nguyên 1258 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "binh-le-nguyen-1258",
+  "ten": "Trận Bình Lệ Nguyên (1258)",
+  "nam": 1258,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Thái Tông",
+  "doi_thu": "Quân Mông Cổ (Ngột Lương Hợp Thai)",
+  "dia_diem": "Cánh đồng Bình Lệ Nguyên, bên sông Cà Lồ (Bình Xuyên, nay tỉnh Phú Thọ)",
+  "lien_quan_tinh": [
+    "phu-tho"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          1000,
+          370
+        ]
+      ],
+      "nhan": "Sông Cà Lồ"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          400,
+          400
+        ],
+        [
+          650,
+          450
+        ],
+        [
+          900,
+          470
+        ]
+      ],
+      "nhan": "Đường rút về Phù Lỗ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-mong-co",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 180,
+      "nhan": "Kỵ binh Ngột Lương Hợp Thai"
+    },
+    {
+      "id": "quan-ta-tran-thai-tong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 420,
+      "nhan": "Trần Thái Tông dàn quân voi – kỵ – bộ"
+    },
+    {
+      "id": "mui-dich-tien-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        300,
+        220
+      ],
+      "den": [
+        420,
+        400
+      ],
+      "nhan": "Kỵ binh Mông Cổ tiến công mãnh liệt"
+    },
+    {
+      "id": "thuyen-ta-yem-tro",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 750,
+      "y": 400,
+      "nhan": "Thuỷ quân yểm trợ đường rút"
+    },
+    {
+      "id": "mui-rut-lui",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        420,
+        430
+      ],
+      "den": [
+        750,
+        460
+      ],
+      "nhan": "Chủ động rút về Phù Lỗ"
+    },
+    {
+      "id": "dia-danh-phu-lo",
+      "kieu": "dia-danh",
+      "x": 900,
+      "y": 480,
+      "nhan": "Phù Lỗ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Mông Cổ tiến vào biên giới Đại Việt",
+      "mo_ta": "Cuối 1257, đội quân viễn chinh của Ngột Lương Hợp Thai từ Vân Nam tiến đánh Đại Việt, mở đầu ba lần kháng chiến chống Mông – Nguyên.",
+      "hien": [
+        "quan-dich-mong-co"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Vua Trần Thái Tông thân chinh đốc chiến",
+      "mo_ta": "Vua Trần dàn quân voi – kỵ – bộ dọc bờ sông Cà Lồ tại Bình Lệ Nguyên, đích thân chỉ huy nghênh chiến.",
+      "hien": [
+        "quan-dich-mong-co",
+        "quan-ta-tran-thai-tong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Kỵ binh Mông Cổ đánh bật thế trận",
+      "mo_ta": "Trước sức tiến công mãnh liệt của kỵ binh thảo nguyên, thế trận ban đầu của quân Trần bị đánh bật.",
+      "hien": [
+        "quan-dich-mong-co",
+        "quan-ta-tran-thai-tong",
+        "mui-dich-tien-cong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chủ động rút lui, bảo toàn lực lượng",
+      "mo_ta": "Thay vì tử chiến, vua Trần quyết định rút quân về Phù Lỗ nhờ thuỷ quân yểm trợ, tránh tổn thất lớn.",
+      "hien": [
+        "quan-ta-tran-thai-tong",
+        "thuyen-ta-yem-tro",
+        "mui-rut-lui"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở đường cho đại thắng Đông Bộ Đầu",
+      "mo_ta": "Quyết định rút lui bảo toàn lực lượng tạo tiền đề cho cuộc phản công thắng lợi tại Đông Bộ Đầu 12 ngày sau.",
+      "hien": [
+        "dia-danh-phu-lo",
+        "mui-rut-lui"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Mông Cổ đánh bật thế trận đầu của vua Trần Thái Tông thân chinh; vua chủ động rút lui bảo toàn lực lượng.",
+  "y_nghia": "Quyết định rút lui chiến lược then chốt, tránh đối đầu trực diện với kỵ binh Mông Cổ đang mạnh, mở đường cho đại thắng Đông Bộ Đầu 12 ngày sau.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Trần Thái Tông mở nghiệp nhà Trần"
+  ]
+}

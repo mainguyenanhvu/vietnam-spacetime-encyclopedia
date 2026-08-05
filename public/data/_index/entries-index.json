@@ -1,8 +1,8 @@
 {
   "sinh_luc": {
-    "tong_muc": 4969,
+    "tong_muc": 4979,
     "tong_co_toa_do": 2531,
-    "so_nhom_trung_ten": 624,
+    "so_nhom_trung_ten": 634,
     "so_cap_trung_toa_do": 664,
     "ngay_sinh": "2026-08-05"
   },
@@ -52,6 +52,32 @@
       "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981",
       "ten_chuan": "khang chien chong tong lan i chien thang bach dang 981",
       "file": "battles/bach-dang-981.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "binh-le-nguyen-1258",
+      "slug": null,
+      "ten": "Trận Bình Lệ Nguyên (1258)",
+      "ten_chuan": "tran binh le nguyen 1258",
+      "file": "battles/binh-le-nguyen-1258.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bo-co-1408",
+      "slug": null,
+      "ten": "Trận Bô Cô 1408",
+      "ten_chuan": "tran bo co 1408",
+      "file": "battles/bo-co-1408.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -125,6 +151,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+      "slug": null,
+      "ten": "Dương Đình Nghệ khôi phục tự chủ, đánh Nam Hán 931",
+      "ten_chuan": "duong dinh nghe khoi phuc tu chu danh nam han 931",
+      "file": "battles/duong-dinh-nghe-khoi-phuc-tu-chu-931.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "ham-tu-chuong-duong-1285",
       "slug": null,
       "ten": "Hàm Tử – Chương Dương 1285",
@@ -138,11 +177,50 @@
       "trang_thai": "draft"
     },
     {
+      "id": "khoi-nghia-ba-trieu-248",
+      "slug": null,
+      "ten": "Khởi nghĩa Bà Triệu 248",
+      "ten_chuan": "khoi nghia ba trieu 248",
+      "file": "battles/khoi-nghia-ba-trieu-248.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "khoi-nghia-hai-ba-trung-40",
       "slug": null,
       "ten": "Khởi nghĩa Hai Bà Trưng",
       "ten_chuan": "khoi nghia hai ba trung",
       "file": "battles/khoi-nghia-hai-ba-trung-40.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khoi-nghia-mai-thuc-loan-713",
+      "slug": null,
+      "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu) 713–722",
+      "ten_chuan": "khoi nghia mai thuc loan hoan chau 713 722",
+      "file": "battles/khoi-nghia-mai-thuc-loan-713.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ly-bi-542",
+      "slug": null,
+      "ten": "Khởi nghĩa Lý Bí 542–544",
+      "ten_chuan": "khoi nghia ly bi 542 544",
+      "file": "battles/ly-bi-542.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -169,6 +247,19 @@
       "ten": "Phòng tuyến Như Nguyệt 1077",
       "ten_chuan": "phong tuyen nhu nguyet 1077",
       "file": "battles/nhu-nguyet-1077.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phung-hung-766",
+      "slug": null,
+      "ten": "Khởi nghĩa Phùng Hưng 766–791",
+      "ten_chuan": "khoi nghia phung hung 766 791",
+      "file": "battles/phung-hung-766.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -216,6 +307,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "trieu-quang-phuc-da-trach-546",
+      "slug": null,
+      "ten": "Kháng chiến Triệu Quang Phục chống Lương – Đầm Dạ Trạch 546–550",
+      "ten_chuan": "khang chien trieu quang phuc chong luong dam da trach 546 550",
+      "file": "battles/trieu-quang-phuc-da-trach-546.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "ung-chau-1075",
       "slug": null,
       "ten": "Chiến dịch tiến công Ung – Khâm – Liêm Châu 1075–1076",
@@ -226,6 +330,32 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "van-don-1288",
+      "slug": null,
+      "ten": "Trận Vân Đồn 1288",
+      "ten_chuan": "tran van don 1288",
+      "file": "battles/van-don-1288.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vay-thanh-dong-quan-1427",
+      "slug": null,
+      "ten": "Vây thành Đông Quan (1426–1427)",
+      "ten_chuan": "vay thanh dong quan 1426 1427",
+      "file": "battles/vay-thanh-dong-quan-1427.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 4,
       "trang_thai": "draft"
     },
     {
@@ -68883,6 +69013,26 @@
       ]
     },
     {
+      "ten_chuan": "duong dinh nghe khoi phuc tu chu danh nam han 931",
+      "so_file": 2,
+      "files": [
+        "battles/duong-dinh-nghe-khoi-phuc-tu-chu-931.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/duong-dinh-nghe-khoi-phuc-tu-chu-931.json",
+          "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+          "ten": "Dương Đình Nghệ khôi phục tự chủ, đánh Nam Hán 931"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "duong-dinh-nghe-khoi-phuc-tu-chu-931",
+          "ten": "Dương Đình Nghệ khôi phục tự chủ, đánh Nam Hán 931"
+        }
+      ]
+    },
+    {
       "ten_chuan": "duong quang ham",
       "so_file": 2,
       "files": [
@@ -70133,6 +70283,26 @@
       ]
     },
     {
+      "ten_chuan": "khang chien trieu quang phuc chong luong dam da trach 546 550",
+      "so_file": 2,
+      "files": [
+        "battles/trieu-quang-phuc-da-trach-546.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/trieu-quang-phuc-da-trach-546.json",
+          "id": "trieu-quang-phuc-da-trach-546",
+          "ten": "Kháng chiến Triệu Quang Phục chống Lương – Đầm Dạ Trạch 546–550"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "trieu-quang-phuc-da-trach-546",
+          "ten": "Kháng chiến Triệu Quang Phục chống Lương – Đầm Dạ Trạch 546–550"
+        }
+      ]
+    },
+    {
       "ten_chuan": "khoi nghia ba trieu",
       "so_file": 2,
       "files": [
@@ -70153,6 +70323,66 @@
       ]
     },
     {
+      "ten_chuan": "khoi nghia ba trieu 248",
+      "so_file": 2,
+      "files": [
+        "battles/khoi-nghia-ba-trieu-248.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/khoi-nghia-ba-trieu-248.json",
+          "id": "khoi-nghia-ba-trieu-248",
+          "ten": "Khởi nghĩa Bà Triệu 248"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "khoi-nghia-ba-trieu-248",
+          "ten": "Khởi nghĩa Bà Triệu 248"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia ly bi 542 544",
+      "so_file": 2,
+      "files": [
+        "battles/ly-bi-542.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/ly-bi-542.json",
+          "id": "ly-bi-542",
+          "ten": "Khởi nghĩa Lý Bí 542–544"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "ly-bi-542",
+          "ten": "Khởi nghĩa Lý Bí 542–544"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia mai thuc loan hoan chau 713 722",
+      "so_file": 2,
+      "files": [
+        "battles/khoi-nghia-mai-thuc-loan-713.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/khoi-nghia-mai-thuc-loan-713.json",
+          "id": "khoi-nghia-mai-thuc-loan-713",
+          "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu) 713–722"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "khoi-nghia-mai-thuc-loan-713",
+          "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu) 713–722"
+        }
+      ]
+    },
+    {
       "ten_chuan": "khoi nghia phung hung",
       "so_file": 2,
       "files": [
@@ -70169,6 +70399,26 @@
           "file": "timeline/moc-lich-su.json",
           "id": "khoi-nghia-phung-hung-766",
           "ten": "Khởi nghĩa Phùng Hưng"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia phung hung 766 791",
+      "so_file": 2,
+      "files": [
+        "battles/phung-hung-766.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/phung-hung-766.json",
+          "id": "phung-hung-766",
+          "ten": "Khởi nghĩa Phùng Hưng 766–791"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "phung-hung-766",
+          "ten": "Khởi nghĩa Phùng Hưng 766–791"
         }
       ]
     },
@@ -76168,6 +76418,26 @@
       ]
     },
     {
+      "ten_chuan": "tran binh le nguyen 1258",
+      "so_file": 2,
+      "files": [
+        "battles/binh-le-nguyen-1258.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/binh-le-nguyen-1258.json",
+          "id": "binh-le-nguyen-1258",
+          "ten": "Trận Bình Lệ Nguyên (1258)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "binh-le-nguyen-1258",
+          "ten": "Trận Bình Lệ Nguyên (1258)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran binh trong bao nghia vuong",
       "so_file": 2,
       "files": [
@@ -76184,6 +76454,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trần Bình Trọng — Bảo Nghĩa vương"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran bo co 1408",
+      "so_file": 2,
+      "files": [
+        "battles/bo-co-1408.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/bo-co-1408.json",
+          "id": "bo-co-1408",
+          "ten": "Trận Bô Cô 1408"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bo-co-1408",
+          "ten": "Trận Bô Cô 1408"
         }
       ]
     },
@@ -76794,6 +77084,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trần Văn Chuông"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran van don 1288",
+      "so_file": 2,
+      "files": [
+        "battles/van-don-1288.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/van-don-1288.json",
+          "id": "van-don-1288",
+          "ten": "Trận Vân Đồn 1288"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "van-don-1288",
+          "ten": "Trận Vân Đồn 1288"
         }
       ]
     },
@@ -77974,6 +78284,26 @@
           "file": "overlays/di-tich-quoc-gia.json",
           "id": "van-thanh-mieu-vinh-long",
           "ten": "Văn Thánh Miếu Vĩnh Long"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "vay thanh dong quan 1426 1427",
+      "so_file": 2,
+      "files": [
+        "battles/vay-thanh-dong-quan-1427.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/vay-thanh-dong-quan-1427.json",
+          "id": "vay-thanh-dong-quan-1427",
+          "ten": "Vây thành Đông Quan (1426–1427)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "vay-thanh-dong-quan-1427",
+          "ten": "Vây thành Đông Quan (1426–1427)"
         }
       ]
     },

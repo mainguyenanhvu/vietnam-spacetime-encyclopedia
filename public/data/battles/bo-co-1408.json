@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ trận Bô Cô 1408 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Quân số '5 vạn quân Minh... diệt và bắt hơn 10 vạn quân' theo cách chép trong nguồn overlay (ước lệ, có thể gồm cả dân phu đi theo) — giữ nguyên theo nguồn, gắn cờ cần tra thêm. trang_thai=draft chờ soát §9.",
+  "id": "bo-co-1408",
+  "ten": "Trận Bô Cô 1408",
+  "nam": 1408,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đặng Tất, vua Giản Định (Trần Ngỗi)",
+  "doi_thu": "Nhà Minh (Mộc Thạnh)",
+  "dia_diem": "Bến Bô Cô (nay thuộc tỉnh Ninh Bình)",
+  "lien_quan_tinh": [
+    "ninh-binh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          1000,
+          370
+        ]
+      ],
+      "nhan": "Sông Đáy — bến Bô Cô"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-gian-dinh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 480,
+      "nhan": "Vua Giản Định dấy nghiệp Hậu Trần"
+    },
+    {
+      "id": "quan-ta-dang-tat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 420,
+      "nhan": "Đặng Tất hội quân"
+    },
+    {
+      "id": "ben-bo-co",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 370,
+      "nhan": "Bến Bô Cô"
+    },
+    {
+      "id": "quan-dich-moc-thanh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 280,
+      "nhan": "Quân Minh (Mộc Thạnh)"
+    },
+    {
+      "id": "mui-dai-pha",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        400
+      ],
+      "den": [
+        700,
+        300
+      ],
+      "nhan": "Đại phá quân Minh"
+    },
+    {
+      "id": "quan-dich-tan-vo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 780,
+      "y": 220,
+      "nhan": "Thượng thư binh bộ bị chém"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 250,
+      "nhan": "Trận thắng lớn nhất nghĩa quân Hậu Trần"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Vua Giản Định dấy nghiệp Hậu Trần",
+      "mo_ta": "Sau khi nhà Hồ sụp đổ, nhà Minh đặt ách đô hộ; Trần Ngỗi xưng vương (Giản Định Đế), dấy quân khôi phục nhà Trần.",
+      "hien": [
+        "co-ta-gian-dinh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đặng Tất đem quân hội quân",
+      "mo_ta": "Quốc công Đặng Tất đem lực lượng lớn từ Hóa Châu ra hội quân với vua Giản Định, chuẩn bị quyết chiến với quân Minh.",
+      "hien": [
+        "co-ta-gian-dinh",
+        "quan-ta-dang-tat"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bày trận tại bến Bô Cô",
+      "mo_ta": "Nghĩa quân bố trí trận địa đón đánh quân Minh do Mộc Thạnh chỉ huy tại bến Bô Cô.",
+      "hien": [
+        "quan-ta-dang-tat",
+        "ben-bo-co",
+        "quan-dich-moc-thanh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đại phá quân Minh, chém Thượng thư binh bộ",
+      "mo_ta": "Nghĩa quân đánh tan quân Minh, chém chết viên Thượng thư binh bộ nhà Minh, diệt và bắt số lớn quân địch.",
+      "hien": [
+        "ben-bo-co",
+        "mui-dai-pha",
+        "quan-dich-tan-vo"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trận thắng lớn nhất của nghĩa quân Hậu Trần",
+      "mo_ta": "Chiến thắng Bô Cô là trận thắng lớn nhất trong cuộc khởi nghĩa Hậu Trần, gắn liền với tài năng quân sự của Đặng Tất.",
+      "hien": [
+        "quan-dich-tan-vo",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Nghĩa quân Hậu Trần đánh tan quân Minh do Mộc Thạnh chỉ huy, chém chết Thượng thư binh bộ nhà Minh, diệt và bắt số lớn quân địch.",
+  "y_nghia": "Trận thắng lớn nhất của nghĩa quân Hậu Trần, cho thấy tinh thần kháng chiến liên tục của nhân dân Đại Việt trong 20 năm quân Minh đô hộ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Hậu Trần",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Tướng Đặng Tất bị chết oan như thế nào?"
+  ]
+}
