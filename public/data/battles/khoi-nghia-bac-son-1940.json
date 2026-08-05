@@ -1,0 +1,126 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Bắc Sơn 1940 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-bac-son-1940",
+  "ten": "Khởi nghĩa Bắc Sơn",
+  "nam": 1940,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đảng bộ Bắc Sơn",
+  "doi_thu": "Pháp",
+  "dia_diem": "Huyện Bắc Sơn, Lạng Sơn",
+  "lien_quan_tinh": [
+    "lang-son"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          100
+        ],
+        [
+          500,
+          60
+        ],
+        [
+          900,
+          120
+        ]
+      ],
+      "nhan": "Vùng núi Bắc Sơn, Lạng Sơn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-nhat-danh-phap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 150,
+      "nhan": "Nhật đánh Pháp, Pháp tan rã rút chạy"
+    },
+    {
+      "id": "co-ta-nhan-dan-noi-day",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Nhân dân các dân tộc Bắc Sơn nổi dậy"
+    },
+    {
+      "id": "don-mo-nhai",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 550,
+      "y": 300,
+      "nhan": "Đồn Mỏ Nhài"
+    },
+    {
+      "id": "mui-danh-don-mo-nhai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        380
+      ],
+      "den": [
+        520,
+        320
+      ],
+      "nhan": "Đánh đồn Mỏ Nhài"
+    },
+    {
+      "id": "doi-du-kich-bac-son",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 230,
+      "nhan": "Đội du kích Bắc Sơn ra đời"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nhật đánh Pháp qua biên giới Lạng Sơn",
+      "mo_ta": "Trong bối cảnh Nhật tiến vào Đông Dương, quân Pháp ở Lạng Sơn tan rã, rút chạy qua Bắc Sơn.",
+      "hien": [
+        "quan-dich-nhat-danh-phap"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nhân dân các dân tộc Bắc Sơn nổi dậy",
+      "mo_ta": "Nhân dân các dân tộc Tày, Nùng, Dao, Kinh ở Bắc Sơn nổi dậy đánh đồn Mỏ Nhài ngày 27/9/1940.",
+      "hien": [
+        "co-ta-nhan-dan-noi-day"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiếm đồn Mỏ Nhài",
+      "mo_ta": "Nghĩa quân chiếm được đồn Mỏ Nhài.",
+      "hien": [
+        "co-ta-nhan-dan-noi-day",
+        "don-mo-nhai",
+        "mui-danh-don-mo-nhai"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hình thành đội du kích Bắc Sơn",
+      "mo_ta": "Sau khởi nghĩa, đội du kích Bắc Sơn được hình thành, trở thành tiền thân lực lượng vũ trang cách mạng Việt Nam.",
+      "hien": [
+        "doi-du-kich-bac-son"
+      ]
+    }
+  ],
+  "ket_qua": "Nhân dân các dân tộc Bắc Sơn nổi dậy đánh chiếm đồn Mỏ Nhài, hình thành đội du kích Bắc Sơn.",
+  "y_nghia": "Đội du kích Bắc Sơn trở thành tiền thân của lực lượng vũ trang cách mạng Việt Nam, đặt nền móng cho sự ra đời của Quân đội nhân dân Việt Nam sau này.",
+  "trang_thai": "draft",
+  "nguon": [
+    "sknc.qdnd.vn — Vang mãi tiếng súng Bắc Sơn",
+    "baotanglichsu.vn — Khởi nghĩa Bắc Sơn",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

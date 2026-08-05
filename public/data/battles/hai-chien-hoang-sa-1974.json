@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Sa đồ Hải chiến Hoàng Sa 1974 — chủ đề chủ quyền lãnh thổ nhạy cảm (không nằm trong docs/section9-sensitive.json chính thức nhưng áp kỷ luật T2 theo Bất biến #1 dự án). Nội dung bám sát NGUYÊN VĂN mo_ta/ket_qua đã duyệt trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật (số tàu, đội hình, tên chỉ huy cụ thể) ngoài những gì nguồn đã nêu. Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "id": "hai-chien-hoang-sa-1974",
+  "ten": "Hải chiến Hoàng Sa 1974",
+  "nam": 1974,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hải quân Việt Nam Cộng hòa",
+  "doi_thu": "Hải quân Trung Quốc",
+  "dia_diem": "Quần đảo Hoàng Sa (nay thuộc TP Đà Nẵng)",
+  "lien_quan_tinh": [
+    "da-nang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Vùng biển quần đảo Hoàng Sa"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-hai-quan-vnch",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 350,
+      "y": 350,
+      "nhan": "Hải quân Việt Nam Cộng hòa đồn trú, thực thi chủ quyền"
+    },
+    {
+      "id": "quan-dich-tq-dieu-dong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Trung Quốc điều động lực lượng hải quân lớn"
+    },
+    {
+      "id": "mui-dich-tan-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        650,
+        230
+      ],
+      "den": [
+        420,
+        330
+      ],
+      "nhan": "Dùng vũ lực tiến công, chiếm đóng"
+    },
+    {
+      "id": "co-hy-sinh-hs",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 420,
+      "nhan": "74 quân nhân Việt Nam hy sinh"
+    },
+    {
+      "id": "co-khang-dinh-chu-quyen",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 150,
+      "nhan": "Khẳng định chủ quyền không thể tranh cãi"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Hải quân Việt Nam Cộng hòa đồn trú, thực thi chủ quyền",
+      "mo_ta": "Lực lượng Hải quân Việt Nam Cộng hòa đang đồn trú và thực thi chủ quyền của Việt Nam tại nhóm đảo phía Tây quần đảo Hoàng Sa.",
+      "hien": [
+        "quan-ta-hai-quan-vnch"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trung Quốc điều động lực lượng hải quân lớn",
+      "mo_ta": "Từ 17/1/1974, Trung Quốc điều động lực lượng hải quân lớn tiến công.",
+      "hien": [
+        "quan-ta-hai-quan-vnch",
+        "quan-dich-tq-dieu-dong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trung Quốc dùng vũ lực chiếm đóng",
+      "mo_ta": "Trung Quốc dùng vũ lực tiến công và chiếm đóng nhóm đảo phía Tây quần đảo Hoàng Sa (17-19/1/1974).",
+      "hien": [
+        "quan-dich-tq-dieu-dong",
+        "mui-dich-tan-cong",
+        "quan-ta-hai-quan-vnch"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "74 quân nhân Việt Nam hy sinh",
+      "mo_ta": "Trong trận hải chiến, 74 quân nhân Việt Nam đã hy sinh.",
+      "hien": [
+        "co-hy-sinh-hs"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Việt Nam khẳng định chủ quyền không thể tranh cãi",
+      "mo_ta": "Chính quyền Sài Gòn ra tuyên cáo phản đối; Nhà nước Việt Nam thống nhất sau này tiếp tục khẳng định chủ quyền không thể tranh cãi đối với Hoàng Sa, coi việc dùng vũ lực năm 1974 là hành vi bất hợp pháp không làm thay đổi được chủ quyền lãnh thổ.",
+      "hien": [
+        "co-khang-dinh-chu-quyen"
+      ]
+    }
+  ],
+  "ket_qua": "Trung Quốc dùng vũ lực đánh chiếm nhóm đảo phía Tây quần đảo Hoàng Sa do lực lượng Hải quân Việt Nam Cộng hòa quản lý, khiến 74 quân nhân Việt Nam hy sinh; hành động này bị nhiều nước lên tiếng phản đối.",
+  "y_nghia": "Việt Nam khẳng định việc dùng vũ lực chiếm đóng năm 1974 là hành vi bất hợp pháp, không thể tạo ra danh nghĩa chủ quyền hợp pháp; chủ quyền của Việt Nam đối với Hoàng Sa là không thể tranh cãi.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Nhân Dân điện tử (nhandan.vn) — Khẳng định chủ quyền của Việt Nam trên hai quần đảo Hoàng Sa, Trường Sa",
+    "Cổng Thông tin điện tử thành phố Đà Nẵng (danang.gov.vn) — Huyện đảo Hoàng Sa",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "ghi_chu": "Sa đồ trận Phai Khắt – Nà Ngần 1944 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "phai-khat-na-ngan-1944",
+  "ten": "Trận Phai Khắt – Nà Ngần (1944), trận đầu của Quân đội nhân dân Việt Nam",
+  "nam": 1944,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Võ Nguyên Giáp",
+  "doi_thu": "Pháp",
+  "dia_diem": "Đồn Phai Khắt, Nà Ngần, Nguyên Bình, Cao Bằng",
+  "lien_quan_tinh": [
+    "cao-bang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          100
+        ],
+        [
+          500,
+          60
+        ],
+        [
+          900,
+          120
+        ]
+      ],
+      "nhan": "Khu rừng Trần Hưng Đạo, Nguyên Bình"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-thanh-lap-doi",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 450,
+      "nhan": "Thành lập Đội VN Tuyên truyền Giải phóng quân"
+    },
+    {
+      "id": "don-phai-khat",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 450,
+      "y": 350,
+      "nhan": "Đồn Phai Khắt"
+    },
+    {
+      "id": "mui-danh-phai-khat",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        280,
+        420
+      ],
+      "den": [
+        420,
+        370
+      ],
+      "nhan": "Tập kích hạ đồn (25/12)"
+    },
+    {
+      "id": "don-na-ngan",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 300,
+      "nhan": "Đồn Nà Ngần"
+    },
+    {
+      "id": "mui-danh-na-ngan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        480,
+        340
+      ],
+      "den": [
+        620,
+        310
+      ],
+      "nhan": "Hạ tiếp đồn (26/12)"
+    },
+    {
+      "id": "co-thang-vo-nguyen-giap",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 200,
+      "nhan": "Mở đầu truyền thống 'đánh là thắng'"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Thành lập Đội Việt Nam Tuyên truyền Giải phóng quân",
+      "mo_ta": "Ngày 22/12/1944, tại khu rừng Trần Hưng Đạo, Đội Việt Nam Tuyên truyền Giải phóng quân được thành lập dưới chỉ huy của Võ Nguyên Giáp.",
+      "hien": [
+        "co-thanh-lap-doi"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tập kích hạ đồn Phai Khắt (25/12)",
+      "mo_ta": "Chiều 25/12/1944, đội tập kích hạ đồn Phai Khắt.",
+      "hien": [
+        "co-thanh-lap-doi",
+        "don-phai-khat",
+        "mui-danh-phai-khat"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Hạ tiếp đồn Nà Ngần (26/12)",
+      "mo_ta": "Ngày 26/12, đội hạ tiếp đồn Nà Ngần cách đó khoảng 15km.",
+      "hien": [
+        "don-phai-khat",
+        "don-na-ngan",
+        "mui-danh-na-ngan"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hai chiến thắng đầu tiên liên tiếp",
+      "mo_ta": "Cả hai trận đều do Võ Nguyên Giáp trực tiếp chỉ huy, giành thắng lợi liên tiếp chỉ trong 3 ngày sau khi thành lập.",
+      "hien": [
+        "don-phai-khat",
+        "don-na-ngan"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở đầu truyền thống 'đánh là thắng'",
+      "mo_ta": "Chiến thắng cổ vũ mạnh mẽ phong trào vũ trang cách mạng trước Tổng khởi nghĩa Tháng Tám.",
+      "hien": [
+        "co-thang-vo-nguyen-giap"
+      ]
+    }
+  ],
+  "ket_qua": "Ba ngày sau khi thành lập, Đội Việt Nam Tuyên truyền Giải phóng quân đánh thắng liên tiếp hai trận đầu, hạ đồn Phai Khắt (25/12) rồi đồn Nà Ngần (26/12).",
+  "y_nghia": "Mở đầu truyền thống 'đánh là thắng' của Quân đội nhân dân Việt Nam, đánh dấu sự ra đời của lực lượng vũ trang chủ lực đầu tiên.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Quân đội nhân dân (qdnd.vn) — Phai Khắt – Nà Ngần: Trận đầu đánh thắng",
+    "Báo Nhân Dân điện tử (nhandan.vn) — Đội Việt Nam tuyên truyền giải phóng quân",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

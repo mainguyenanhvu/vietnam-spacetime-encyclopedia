@@ -1,0 +1,134 @@
+{
+  "ghi_chu": "Sa đồ trận thủy chiến Thị Nại 1801 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Con số '2 vạn quân, 1.800 chiến thuyền' theo cách chép truyền thống, mang tính ước lệ. trang_thai=draft chờ soát §9.",
+  "id": "tran-thi-nai-1801",
+  "ten": "Trận thủy chiến Thị Nại (1801)",
+  "nam": 1801,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Ánh",
+  "doi_thu": "Tây Sơn",
+  "dia_diem": "Đầm Thị Nại, Quy Nhơn, tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Đầm Thị Nại"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thuyen-dich-tay-son",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 600,
+      "y": 280,
+      "nhan": "Thủy quân Tây Sơn đồn trú"
+    },
+    {
+      "id": "quan-ta-nguyen-anh",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Thủy quân Nguyễn Ánh áp sát"
+    },
+    {
+      "id": "mui-hoa-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        370
+      ],
+      "den": [
+        560,
+        300
+      ],
+      "nhan": "Bất ngờ dùng hỏa công"
+    },
+    {
+      "id": "thuyen-dich-chay-1801",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 650,
+      "y": 220,
+      "nhan": "Chiến thuyền Tây Sơn bị đốt cháy"
+    },
+    {
+      "id": "co-thang-thi-nai",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 180,
+      "nhan": "Xoay chuyển cục diện chiến tranh"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Ánh quyết chiến với thủy quân Tây Sơn",
+      "mo_ta": "Sau nhiều năm giằng co, Nguyễn Ánh quyết định tổ chức trận thủy chiến quyết định tại đầm Thị Nại.",
+      "hien": [
+        "thuyen-dich-tay-son"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bí mật áp sát trong đêm",
+      "mo_ta": "Đêm 27/2/1801, thủy quân Nguyễn Ánh bí mật áp sát đầm Thị Nại, nơi thủy quân Tây Sơn đồn trú.",
+      "hien": [
+        "thuyen-dich-tay-son",
+        "quan-ta-nguyen-anh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Dùng hỏa công đánh úp",
+      "mo_ta": "Quân Nguyễn Ánh dùng hỏa công bất ngờ đánh úp thủy quân Tây Sơn đang neo đậu.",
+      "hien": [
+        "quan-ta-nguyen-anh",
+        "mui-hoa-cong",
+        "thuyen-dich-tay-son"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đốt cháy hàng loạt chiến thuyền Tây Sơn",
+      "mo_ta": "Hỏa công thiêu rụi khoảng 1.800 chiến thuyền, thủy quân Tây Sơn tổn thất khoảng 2 vạn quân.",
+      "hien": [
+        "thuyen-dich-chay-1801"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Xoay chuyển cục diện chiến tranh",
+      "mo_ta": "Chiến thắng Thị Nại xoay chuyển cục diện chiến tranh Nguyễn-Tây Sơn theo hướng có lợi cho Nguyễn Ánh.",
+      "hien": [
+        "co-thang-thi-nai"
+      ]
+    }
+  ],
+  "ket_qua": "Đêm 27/2/1801, thủy quân Nguyễn Ánh dùng hỏa công đánh tan thủy quân Tây Sơn tại đầm Thị Nại (Tây Sơn mất khoảng 2 vạn quân, 1.800 chiến thuyền), xoay chuyển cục diện chiến tranh Nguyễn-Tây Sơn.",
+  "y_nghia": "Trận thủy chiến quyết định làm suy yếu nghiêm trọng lực lượng thủy quân Tây Sơn, mở đường cho Nguyễn Ánh phản công giành lại toàn bộ lãnh thổ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Bảo tàng Lịch sử Quốc gia — Biển lửa Thị Nại - trận Xích Bích bi tráng của người Việt",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "ghi_chu": "Sa đồ trận thành Hà Nội 1873 (Nguyễn Tri Phương) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-thanh-ha-noi-1873",
+  "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)",
+  "nam": 1873,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Tri Phương",
+  "doi_thu": "Pháp (Francis Garnier)",
+  "dia_diem": "Thành Hà Nội (Hoàng thành Thăng Long)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          600,
+          50
+        ],
+        [
+          700,
+          300
+        ],
+        [
+          750,
+          550
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-garnier-1873",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Garnier đem quân tiến đánh"
+    },
+    {
+      "id": "thanh-ha-noi-1873-2",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 450,
+      "y": 350,
+      "nhan": "Thành Hà Nội"
+    },
+    {
+      "id": "quan-ta-ntp-1873",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 330,
+      "y": 400,
+      "nhan": "Nguyễn Tri Phương chỉ huy chống cự"
+    },
+    {
+      "id": "co-that-thu-hn-1873",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 450,
+      "y": 280,
+      "nhan": "Thành thất thủ, Nguyễn Tri Phương bị bắt"
+    },
+    {
+      "id": "co-tuyet-thuc",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 450,
+      "nhan": "Nguyễn Tri Phương tuyệt thực đến chết"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Garnier lấy cớ tranh chấp thương mại tiến đánh Hà Nội",
+      "mo_ta": "Cuối 1873, Francis Garnier đem quân Pháp tiến đánh thành Hà Nội.",
+      "hien": [
+        "quan-dich-garnier-1873"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Tri Phương chỉ huy chống cự",
+      "mo_ta": "Tổng đốc Nguyễn Tri Phương trực tiếp chỉ huy quân dân chống cự quyết liệt.",
+      "hien": [
+        "thanh-ha-noi-1873-2",
+        "quan-ta-ntp-1873"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Thành thất thủ, Nguyễn Tri Phương bị thương, bị bắt",
+      "mo_ta": "Thành thất thủ, Nguyễn Tri Phương bị thương nặng và bị bắt.",
+      "hien": [
+        "thanh-ha-noi-1873-2",
+        "co-that-thu-hn-1873"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Nguyễn Tri Phương tuyệt thực đến chết",
+      "mo_ta": "Nguyễn Tri Phương tuyệt thực, tuẫn tiết ngày 20/12/1873, không chịu để Pháp chữa trị.",
+      "hien": [
+        "co-tuyet-thuc"
+      ]
+    }
+  ],
+  "ket_qua": "Thành thất thủ; Nguyễn Tri Phương bị thương, bị bắt và tuyệt thực đến chết ngày 20/12/1873, không chịu khuất phục.",
+  "y_nghia": "Tấm gương tuẫn tiết của một trong những đại thần lớn nhất triều Nguyễn, đã từng chỉ huy phòng thủ Đà Nẵng 1858 và Đại đồn Chí Hoà 1861.",
+  "trang_thai": "draft",
+  "nguon": [
+    "sknc.qdnd.vn — Tổng đốc chỉ huy bảo vệ thành Hà Nội",
+    "sknc.qdnd.vn — Danh tướng Nguyễn Tri Phương",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch giải phóng quần đảo Trường Sa 1975 — Mục T2 theo docs/section9-sensitive.json (chủ quyền biển đảo). MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "giai-phong-truong-sa-1975",
+  "ten": "Chiến dịch giải phóng quần đảo Trường Sa 1975",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hải quân nhân dân Việt Nam",
+  "doi_thu": "Quân lực Việt Nam Cộng hòa",
+  "dia_diem": "Đảo Song Tử Tây và các đảo thuộc quần đảo Trường Sa, tỉnh Khánh Hòa",
+  "lien_quan_tinh": [
+    "khanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Vùng biển quần đảo Trường Sa"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-phuong-cham",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 250,
+      "y": 400,
+      "nhan": "Phương châm 'thần tốc, táo bạo, bất ngờ'"
+    },
+    {
+      "id": "dao-song-tu-tay",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 350,
+      "nhan": "Đảo Song Tử Tây"
+    },
+    {
+      "id": "co-thang-song-tu-tay",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 290,
+      "nhan": "Giải phóng Song Tử Tây (14/4/1975)"
+    },
+    {
+      "id": "mui-tiep-tuc-giai-phong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        320
+      ],
+      "den": [
+        750,
+        250
+      ],
+      "nhan": "Tiếp tục giải phóng các đảo còn lại"
+    },
+    {
+      "id": "co-thang-truong-sa",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 800,
+      "y": 180,
+      "nhan": "Toàn bộ Trường Sa được giải phóng (29/4/1975)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Phương châm 'thần tốc, táo bạo, bất ngờ'",
+      "mo_ta": "Hải quân nhân dân Việt Nam đề ra phương châm 'thần tốc, táo bạo, bất ngờ' cho chiến dịch giải phóng Trường Sa.",
+      "hien": [
+        "quan-ta-phuong-cham"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Giải phóng đảo Song Tử Tây (14/4/1975)",
+      "mo_ta": "Sáng 14/4/1975, Hải quân nhân dân Việt Nam giải phóng đảo Song Tử Tây — chiến thắng đầu tiên tại quần đảo Trường Sa.",
+      "hien": [
+        "dao-song-tu-tay",
+        "co-thang-song-tu-tay"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiếp tục giải phóng các đảo còn lại",
+      "mo_ta": "Lực lượng tiếp tục tiến công giải phóng các đảo còn lại thuộc quần đảo Trường Sa.",
+      "hien": [
+        "co-thang-song-tu-tay",
+        "mui-tiep-tuc-giai-phong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Toàn bộ quần đảo Trường Sa được giải phóng (29/4/1975)",
+      "mo_ta": "Đến ngày 29/4/1975, toàn bộ quần đảo Trường Sa được giải phóng, góp phần khẳng định và bảo vệ chủ quyền biển đảo.",
+      "hien": [
+        "co-thang-truong-sa"
+      ]
+    }
+  ],
+  "ket_qua": "Sáng 14/4/1975 Hải quân nhân dân Việt Nam giải phóng đảo Song Tử Tây — chiến thắng đầu tiên tại quần đảo Trường Sa; đến ngày 29/4/1975, toàn bộ quần đảo Trường Sa được giải phóng.",
+  "y_nghia": "Chiến dịch góp phần khẳng định và bảo vệ chủ quyền biển đảo thiêng liêng của Tổ quốc, hoàn thành ngay trước khi Chiến dịch Hồ Chí Minh kết thúc thắng lợi.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo QĐND — Ngày 14-4-1975: Song Tử Tây - đảo đầu tiên được giải phóng ở quần đảo Trường Sa",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

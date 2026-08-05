@@ -1,0 +1,142 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Ba Tơ 1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Overlay tự ghi ngày thành lập Đội du kích Ba Tơ có 2 mốc lệch nhau giữa các nguồn thứ cấp (12/3 và 14/3) — giữ nguyên lựa chọn 14/3 đã có trong overlay. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-ba-to-1945",
+  "ten": "Khởi nghĩa Ba Tơ",
+  "nam": 1945,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phạm Kiệt, Nguyễn Đôn",
+  "doi_thu": "Nhật (chính quyền bù nhìn)",
+  "dia_diem": "Huyện Ba Tơ, Quảng Ngãi",
+  "lien_quan_tinh": [
+    "quang-ngai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          100
+        ],
+        [
+          500,
+          60
+        ],
+        [
+          900,
+          120
+        ]
+      ],
+      "nhan": "Huyện Ba Tơ, Quảng Ngãi"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-nhat-dao-chinh",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 480,
+      "nhan": "Nhật đảo chính Pháp (9/3/1945)"
+    },
+    {
+      "id": "nha-kiem-ly",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 350,
+      "y": 400,
+      "nhan": "Nha kiểm lý"
+    },
+    {
+      "id": "don-ba-to",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 550,
+      "y": 320,
+      "nhan": "Đồn Ba Tơ"
+    },
+    {
+      "id": "mui-danh-don-ba-to",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        380
+      ],
+      "den": [
+        520,
+        340
+      ],
+      "nhan": "Đánh chiếm đồn Ba Tơ"
+    },
+    {
+      "id": "co-cach-mang-1945",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 260,
+      "nhan": "Cờ cách mạng kéo lên trên đồn"
+    },
+    {
+      "id": "doi-du-kich-ba-to",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 200,
+      "nhan": "Đội du kích Ba Tơ ra đời (14/3)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nhật đảo chính Pháp, thời cơ cách mạng xuất hiện",
+      "mo_ta": "Sau sự kiện Nhật đảo chính Pháp (9/3/1945), Tỉnh ủy lâm thời Quảng Ngãi chủ động chớp thời cơ.",
+      "hien": [
+        "boi-canh-nhat-dao-chinh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiếm Nha kiểm lý, thu vũ khí",
+      "mo_ta": "Khoảng 17h ngày 11/3/1945, đội quân khởi nghĩa chiếm Nha kiểm lý, thu vũ khí.",
+      "hien": [
+        "nha-kiem-ly"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh chiếm đồn Ba Tơ",
+      "mo_ta": "Nghĩa quân tiếp tục đánh chiếm đồn Ba Tơ, binh lính địch đầu hàng.",
+      "hien": [
+        "nha-kiem-ly",
+        "don-ba-to",
+        "mui-danh-don-ba-to"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Cờ cách mạng kéo lên trên đồn",
+      "mo_ta": "Ngay đêm 11/3, cờ cách mạng được kéo lên trên đồn Ba Tơ.",
+      "hien": [
+        "don-ba-to",
+        "co-cach-mang-1945"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đội du kích Ba Tơ ra đời (14/3)",
+      "mo_ta": "Ủy ban nhân dân cách mạng Ba Tơ được thành lập; ngày 14/3/1945 Đội du kích Ba Tơ ra đời với 17-28 chiến sĩ ban đầu.",
+      "hien": [
+        "doi-du-kich-ba-to"
+      ]
+    }
+  ],
+  "ket_qua": "Đội quân khởi nghĩa chiếm Nha kiểm lý và đồn Ba Tơ; chính quyền cách mạng được thành lập, Đội du kích Ba Tơ ra đời ngày 14/3/1945.",
+  "y_nghia": "Cuộc khởi nghĩa vũ trang giành thắng lợi trọn vẹn đầu tiên của quần chúng cách mạng ở Nam Trung Bộ trong cao trào tiến tới Tổng khởi nghĩa Tháng Tám.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tỉnh đoàn Quảng Ngãi — Khởi nghĩa Ba Tơ - Quảng Ngãi trong Cuộc vận động Tổng khởi nghĩa Tháng Tám năm 1945",
+    "Sở VHTTDL Quảng Ngãi — Khởi nghĩa Ba Tơ: Giá trị lịch sử",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

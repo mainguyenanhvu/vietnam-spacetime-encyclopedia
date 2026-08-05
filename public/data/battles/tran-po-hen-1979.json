@@ -1,0 +1,159 @@
+{
+  "ghi_chu": "Sa đồ trận Pò Hèn 1979 — bản chi tiết hoá riêng, bổ sung cho bien-gioi-phia-bac-1979 (đã có sa đồ tổng quát ở đợt 2). Bám sát nguyên văn nguồn, không suy diễn thêm diễn biến ngoài các chi tiết đã nêu. trang_thai=draft chờ soát §9.",
+  "id": "tran-po-hen-1979",
+  "ten": "Trận Pò Hèn",
+  "nam": 1979,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đồn Biên phòng Pò Hèn",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Đồn Biên phòng Pò Hèn, Móng Cái, Quảng Ninh",
+  "lien_quan_tinh": [
+    "quang-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          0,
+          150
+        ],
+        [
+          500,
+          120
+        ],
+        [
+          1000,
+          160
+        ]
+      ],
+      "nhan": "Đường biên giới — sương mù dày đặc"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-2000-tq",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 150,
+      "nhan": "Khoảng 2.000 quân Trung Quốc"
+    },
+    {
+      "id": "mui-ban-pha",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        550,
+        180
+      ],
+      "den": [
+        420,
+        280
+      ],
+      "nhan": "Bắn phá dữ dội vị trí phòng ngự"
+    },
+    {
+      "id": "don-po-hen-2",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 320,
+      "nhan": "Đồn Biên phòng Pò Hèn"
+    },
+    {
+      "id": "mui-dich-tran-qua",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        500,
+        220
+      ],
+      "den": [
+        420,
+        300
+      ],
+      "nhan": "Tràn qua biên giới"
+    },
+    {
+      "id": "quan-ta-60-can-bo",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 380,
+      "nhan": "Hơn 60 cán bộ, chiến sĩ, phần lớn lính mới"
+    },
+    {
+      "id": "nong-van-dieu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 430,
+      "nhan": "Binh nhất Nông Văn Điều nổ súng đầu tiên, hy sinh đầu tiên"
+    },
+    {
+      "id": "co-chien-dau-den-cung",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 450,
+      "nhan": "86 người chiến đấu đến cùng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trung Quốc bắn phá dữ dội trong sương mù (5h30, 17/2/1979)",
+      "mo_ta": "Rạng sáng 17/2/1979, trong làn sương mù dày đặc, khoảng 2.000 quân Trung Quốc dùng hỏa lực bắn phá dữ dội các vị trí phòng ngự của Đồn Biên phòng Pò Hèn.",
+      "hien": [
+        "quan-dich-2000-tq",
+        "mui-ban-pha",
+        "don-po-hen-2"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân Trung Quốc tràn qua biên giới",
+      "mo_ta": "Sau hỏa lực chuẩn bị, quân Trung Quốc tràn qua biên giới tiến công đồn.",
+      "hien": [
+        "don-po-hen-2",
+        "mui-dich-tran-qua"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đồn Pò Hèn với hơn 60 cán bộ, chiến sĩ đối đầu lực lượng áp đảo",
+      "mo_ta": "Đồn chỉ có hơn 60 cán bộ, chiến sĩ, phần lớn là lính mới, phải đối đầu với lực lượng đông gấp hàng chục lần.",
+      "hien": [
+        "don-po-hen-2",
+        "quan-ta-60-can-bo"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Binh nhất Nông Văn Điều nổ súng đầu tiên, hy sinh đầu tiên",
+      "mo_ta": "Binh nhất Nông Văn Điều nổ súng đầu tiên và cũng là chiến sĩ biên phòng đầu tiên hy sinh trong cuộc chiến bảo vệ biên giới phía Bắc.",
+      "hien": [
+        "quan-ta-60-can-bo",
+        "nong-van-dieu"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "86 cán bộ, chiến sĩ và công nhân thương nghiệp chiến đấu đến cùng",
+      "mo_ta": "Cùng với chính trị viên Phạm Xuân Tảo, phó đồn trưởng Đỗ Sĩ Họa và nhiều đồng đội, 86 cán bộ, chiến sĩ cùng công nhân thương nghiệp chiến đấu đến cùng trước lực lượng áp đảo gấp hơn 30 lần.",
+      "hien": [
+        "nong-van-dieu",
+        "co-chien-dau-den-cung"
+      ]
+    }
+  ],
+  "ket_qua": "86 cán bộ, chiến sĩ Đồn Biên phòng Pò Hèn cùng công nhân thương nghiệp chiến đấu đến cùng trước lực lượng áp đảo gấp hơn 30 lần; nhiều chiến sĩ hy sinh, trong đó binh nhất Nông Văn Điều là chiến sĩ biên phòng đầu tiên ngã xuống trong cuộc chiến bảo vệ biên giới phía Bắc.",
+  "y_nghia": "Trận chiến đấu không cân sức tiêu biểu cho tinh thần kiên cường của bộ đội biên phòng trong ngày đầu cuộc chiến bảo vệ biên giới phía Bắc 1979.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Quảng Ninh — Nông Văn Điều - chiến sĩ biên phòng đầu tiên hy sinh ngày 17/2/1979 tại Pò Hèn",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

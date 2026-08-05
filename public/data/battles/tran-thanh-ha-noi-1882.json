@@ -1,0 +1,119 @@
+{
+  "ghi_chu": "Sa đồ trận thành Hà Nội 1882 (Hoàng Diệu) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-thanh-ha-noi-1882",
+  "ten": "Trận thành Hà Nội (Hoàng Diệu)",
+  "nam": 1882,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hoàng Diệu",
+  "doi_thu": "Pháp (Henri Rivière)",
+  "dia_diem": "Thành Hà Nội (Hoàng thành Thăng Long)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          600,
+          50
+        ],
+        [
+          700,
+          300
+        ],
+        [
+          750,
+          550
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-riviere-1882",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Rivière đem quân đánh chiếm"
+    },
+    {
+      "id": "thanh-ha-noi-1882-2",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 450,
+      "y": 350,
+      "nhan": "Thành Hà Nội"
+    },
+    {
+      "id": "quan-ta-hoang-dieu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 330,
+      "y": 400,
+      "nhan": "Hoàng Diệu chỉ huy chống cự"
+    },
+    {
+      "id": "co-that-thu-hn-1882",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 450,
+      "y": 280,
+      "nhan": "Thành thất thủ"
+    },
+    {
+      "id": "vo-mieu",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 450,
+      "nhan": "Võ Miếu — Hoàng Diệu tự vẫn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Rivière lấy cớ tiến đánh Hà Nội lần hai",
+      "mo_ta": "Ngày 25/4/1882, Henri Rivière đem quân Pháp đánh chiếm thành Hà Nội.",
+      "hien": [
+        "quan-dich-riviere-1882"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hoàng Diệu chỉ huy chống cự đến cùng",
+      "mo_ta": "Tổng đốc Hoàng Diệu chỉ huy quân dân chống cự đến cùng.",
+      "hien": [
+        "thanh-ha-noi-1882-2",
+        "quan-ta-hoang-dieu"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Thành thất thủ",
+      "mo_ta": "Trước hỏa lực vượt trội, thành thất thủ.",
+      "hien": [
+        "thanh-ha-noi-1882-2",
+        "co-that-thu-hn-1882"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hoàng Diệu tự vẫn tại Võ Miếu giữ khí tiết",
+      "mo_ta": "Hoàng Diệu tự vẫn tại Võ Miếu để giữ khí tiết, không chịu đầu hàng.",
+      "hien": [
+        "vo-mieu"
+      ]
+    }
+  ],
+  "ket_qua": "Thành thất thủ lần hai, Hoàng Diệu tuẫn tiết tại Võ Miếu; Pháp áp đặt bảo hộ Bắc Kỳ.",
+  "y_nghia": "Cùng với Nguyễn Tri Phương năm 1873, sự tuẫn tiết của Hoàng Diệu trở thành biểu tượng khí tiết của quan lại triều Nguyễn trước sức ép ngoại xâm.",
+  "trang_thai": "draft",
+  "nguon": [
+    "baotanglichsu.vn — Tổng đốc Hoàng Diệu quyết tử giữ thành Hà Nội",
+    "sknc.qdnd.vn — cuộc tự tiết của Tổng đốc Hoàng Diệu",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

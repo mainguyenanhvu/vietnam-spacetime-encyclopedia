@@ -1,0 +1,159 @@
+{
+  "ghi_chu": "Sa đồ 60 ngày đêm khói lửa Hà Nội 1946-1947 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "60-ngay-dem-ha-noi-1946-1947",
+  "ten": "60 ngày đêm khói lửa Hà Nội",
+  "nam": 1946,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Vương Thừa Vũ, Trần Độ",
+  "doi_thu": "Pháp",
+  "dia_diem": "Liên khu 1 nội thành Hà Nội (nay Hoàn Kiếm)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          700,
+          50
+        ],
+        [
+          750,
+          300
+        ],
+        [
+          800,
+          550
+        ]
+      ],
+      "nhan": "Sông Hồng — cầu Long Biên"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "phao-dai-lang",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 200,
+      "y": 450,
+      "nhan": "Pháo đài Láng nổ súng"
+    },
+    {
+      "id": "lien-khu-1",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Liên khu 1 — khu phố cổ"
+    },
+    {
+      "id": "quan-ta-ve-quoc-doan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Vệ quốc đoàn, tự vệ thành"
+    },
+    {
+      "id": "quan-dich-phap-hien-dai",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 300,
+      "nhan": "Quân Pháp trang bị hiện đại"
+    },
+    {
+      "id": "co-kim-chan-60-ngay",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 280,
+      "nhan": "Kìm chân địch 60 ngày đêm"
+    },
+    {
+      "id": "co-quan-dau-nao-rut",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 200,
+      "nhan": "Cơ quan đầu não rút lên Việt Bắc"
+    },
+    {
+      "id": "mui-rut-qua-cau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        330
+      ],
+      "den": [
+        700,
+        250
+      ],
+      "nhan": "Rút quân qua gầm cầu Long Biên"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Pháo đài Láng nổ súng, mở đầu Toàn quốc kháng chiến",
+      "mo_ta": "Đêm 19/12/1946, pháo đài Láng nổ những phát súng đầu tiên hưởng ứng Lời kêu gọi Toàn quốc kháng chiến của Hồ Chí Minh.",
+      "hien": [
+        "phao-dai-lang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiến đấu giành từng ngôi nhà, góc phố",
+      "mo_ta": "Quân dân Hà Nội chiến đấu giành từng ngôi nhà, từng góc phố trong Liên khu 1.",
+      "hien": [
+        "lien-khu-1",
+        "quan-ta-ve-quoc-doan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vũ khí thô sơ đối chọi trang bị hiện đại",
+      "mo_ta": "Vũ khí thô sơ của Vệ quốc đoàn và tự vệ thành đối chọi với quân Pháp trang bị hiện đại.",
+      "hien": [
+        "quan-ta-ve-quoc-doan",
+        "quan-dich-phap-hien-dai"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Kìm chân địch 60 ngày đêm",
+      "mo_ta": "Quân dân Hà Nội kìm chân quân Pháp 60 ngày đêm trong lòng thành phố, đánh bại chiến thuật 'đánh nhanh thắng nhanh'.",
+      "hien": [
+        "lien-khu-1",
+        "co-kim-chan-60-ngay"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cơ quan đầu não rút an toàn lên Việt Bắc",
+      "mo_ta": "Thời gian kìm chân tạo điều kiện để cơ quan đầu não Đảng, Chính phủ rút an toàn lên chiến khu Việt Bắc.",
+      "hien": [
+        "co-quan-dau-nao-rut"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Rút quân an toàn qua gầm cầu Long Biên (17/2/1947)",
+      "mo_ta": "Lực lượng ta rút khỏi thành phố an toàn qua gầm cầu Long Biên, hoàn thành nhiệm vụ giam chân địch.",
+      "hien": [
+        "lien-khu-1",
+        "mui-rut-qua-cau"
+      ]
+    }
+  ],
+  "ket_qua": "Quân dân Hà Nội kìm chân quân Pháp 60 ngày đêm trong lòng thành phố, đánh bại chiến thuật 'đánh nhanh thắng nhanh', tạo điều kiện để cơ quan đầu não Đảng, Chính phủ rút an toàn lên chiến khu Việt Bắc.",
+  "y_nghia": "Trận đánh mở đầu 9 năm kháng chiến chống Pháp, thể hiện tinh thần 'Quyết tử để Tổ quốc quyết sinh' của quân dân Thủ đô.",
+  "trang_thai": "draft",
+  "nguon": [
+    "nhandan.vn — Hà Nội 60 ngày đêm khói lửa",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

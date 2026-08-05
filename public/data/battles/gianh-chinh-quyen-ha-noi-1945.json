@@ -1,0 +1,126 @@
+{
+  "ghi_chu": "Sa đồ giành chính quyền Hà Nội 19/8/1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "gianh-chinh-quyen-ha-noi-1945",
+  "ten": "Giành chính quyền Hà Nội (19/8/1945)",
+  "nam": 1945,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Việt Minh (Xứ ủy Bắc Kỳ)",
+  "doi_thu": "Chính quyền bù nhìn Nhật",
+  "dia_diem": "Quảng trường Nhà hát Lớn — Bắc Bộ phủ, Hà Nội",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          350
+        ],
+        [
+          500,
+          330
+        ],
+        [
+          800,
+          310
+        ]
+      ],
+      "nhan": "Trung tâm Hà Nội"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "nha-hat-lon",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 400,
+      "nhan": "Quảng trường Nhà hát Lớn"
+    },
+    {
+      "id": "quan-ta-quan-chung",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 350,
+      "nhan": "Hàng vạn quần chúng dưới lãnh đạo Việt Minh"
+    },
+    {
+      "id": "bac-bo-phu",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 600,
+      "y": 280,
+      "nhan": "Bắc Bộ phủ"
+    },
+    {
+      "id": "mui-tien-chiem-bbp",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        330
+      ],
+      "den": [
+        570,
+        290
+      ],
+      "nhan": "Tiến chiếm Bắc Bộ phủ"
+    },
+    {
+      "id": "co-thang-hn-1945",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 600,
+      "y": 220,
+      "nhan": "Giành chính quyền, mở đường Tuyên ngôn Độc lập"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Việt Minh phát động mít tinh tại Nhà hát Lớn",
+      "mo_ta": "Ngày 19/8/1945, Việt Minh phát động mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội.",
+      "hien": [
+        "nha-hat-lon"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hàng vạn quần chúng tham gia",
+      "mo_ta": "Hàng vạn quần chúng dưới sự lãnh đạo Việt Minh tham gia mít tinh, biến thành cuộc biểu dương lực lượng.",
+      "hien": [
+        "nha-hat-lon",
+        "quan-ta-quan-chung"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiếm Bắc Bộ phủ",
+      "mo_ta": "Quần chúng cách mạng tiến chiếm Bắc Bộ phủ, cơ quan đầu não chính quyền bù nhìn.",
+      "hien": [
+        "quan-ta-quan-chung",
+        "bac-bo-phu",
+        "mui-tien-chiem-bbp"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Giành chính quyền gần như không đổ máu",
+      "mo_ta": "Chính quyền về tay nhân dân gần như không đổ máu, mở đường Tổng khởi nghĩa và Tuyên ngôn Độc lập 2/9/1945.",
+      "hien": [
+        "co-thang-hn-1945"
+      ]
+    }
+  ],
+  "ket_qua": "Giành chính quyền gần như không đổ máu, mở đường Tổng khởi nghĩa và Tuyên ngôn Độc lập 2/9/1945.",
+  "y_nghia": "Một trong ba thắng lợi quyết định của Cách mạng Tháng Tám (cùng Huế 23/8, Sài Gòn 25/8), giành chính quyền tại Thủ đô — trung tâm chính trị cả nước.",
+  "trang_thai": "draft",
+  "nguon": [
+    "sknc.qdnd.vn — Tổng khởi nghĩa 19/8/1945 ở Hà Nội",
+    "qdnd.vn — Ngày 19-8-1945 khởi nghĩa giành chính quyền Hà Nội",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

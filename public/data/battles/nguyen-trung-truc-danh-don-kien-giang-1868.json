@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Trung Trực đánh đồn Kiên Giang 1868 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-trung-truc-danh-don-kien-giang-1868",
+  "ten": "Nguyễn Trung Trực đánh đồn Kiên Giang (1868)",
+  "nam": 1868,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Trung Trực",
+  "doi_thu": "Pháp",
+  "dia_diem": "Đồn Kiên Giang (Rạch Giá), nay tỉnh Cần Thơ",
+  "lien_quan_tinh": [
+    "can-tho"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          1000,
+          320
+        ]
+      ],
+      "nhan": "Vùng biển Rạch Giá"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-tiep-tuc-khang-chien",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 450,
+      "nhan": "Nguyễn Trung Trực tiếp tục kháng chiến"
+    },
+    {
+      "id": "ta-nien",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 350,
+      "y": 400,
+      "nhan": "Căn cứ Tà Niên"
+    },
+    {
+      "id": "don-kien-giang",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 600,
+      "y": 300,
+      "nhan": "Đồn Kiên Giang"
+    },
+    {
+      "id": "mui-do-bo",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        380
+      ],
+      "den": [
+        570,
+        310
+      ],
+      "nhan": "Đổ bộ đường biển, áp sát đồn"
+    },
+    {
+      "id": "co-thang-kien-giang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 680,
+      "y": 220,
+      "nhan": "Đánh úp đồn lúc rạng sáng"
+    },
+    {
+      "id": "quan-dich-phan-cong-kg",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 200,
+      "nhan": "Pháp phản công tái chiếm"
+    },
+    {
+      "id": "quan-ta-bi-bat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 180,
+      "nhan": "Nguyễn Trung Trực bị bắt, xử tử"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tiếp tục kháng chiến sau đốt tàu Espérance",
+      "mo_ta": "Sau khi đốt tàu Espérance (1861), Nguyễn Trung Trực tiếp tục kháng chiến vùng Rạch Giá - Hà Tiên - Phú Quốc.",
+      "hien": [
+        "quan-ta-tiep-tuc-khang-chien"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tập hợp nghĩa quân tại Tà Niên, cài nội ứng",
+      "mo_ta": "Ông tập hợp nghĩa quân tại Tà Niên, cài người do thám và vận động lính mã tà trong đồn làm nội ứng.",
+      "hien": [
+        "quan-ta-tiep-tuc-khang-chien",
+        "ta-nien"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đổ bộ đường biển, áp sát đồn",
+      "mo_ta": "Đêm 16/6/1868, nghĩa quân từ Tà Niên theo đường biển đổ bộ gần Lăng Ông, áp sát đồn Kiên Giang.",
+      "hien": [
+        "ta-nien",
+        "don-kien-giang",
+        "mui-do-bo"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh úp đồn lúc rạng sáng",
+      "mo_ta": "Nghĩa quân đánh úp đồn lúc rạng sáng khiến quân Pháp trở tay không kịp, diệt và bắt nhiều lính Pháp cùng tay sai.",
+      "hien": [
+        "don-kien-giang",
+        "co-thang-kien-giang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Pháp phản công tái chiếm, Nguyễn Trung Trực bị bắt",
+      "mo_ta": "Sau đó Pháp phản công tái chiếm; Nguyễn Trung Trực bị bắt và xử tử tại Rạch Giá cuối 1868.",
+      "hien": [
+        "quan-dich-phan-cong-kg",
+        "quan-ta-bi-bat"
+      ]
+    }
+  ],
+  "ket_qua": "Nghĩa quân bất ngờ tập kích đồn lúc rạng sáng, diệt và bắt nhiều lính Pháp cùng tay sai, thu hơn 100 khẩu súng; sau đó Pháp phản công tái chiếm, Nguyễn Trung Trực bị bắt và xử tử tại Rạch Giá cuối 1868.",
+  "y_nghia": "Chiến công cuối cùng và cũng là sự hy sinh của Nguyễn Trung Trực, gắn liền với câu nói bất hủ 'Bao giờ người Tây nhổ hết cỏ nước Nam thì mới hết người Nam đánh Tây'.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn) — Khởi nghĩa Nguyễn Trung Trực (1861-1868)",
+    "Cổng TTĐT tỉnh An Giang (angiang.gov.vn) — Khí phách Nguyễn Trung Trực sáng mãi",
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+  ]
+}

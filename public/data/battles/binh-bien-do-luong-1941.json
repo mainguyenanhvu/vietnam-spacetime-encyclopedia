@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Sa đồ binh biến Đô Lương 1941 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "binh-bien-do-luong-1941",
+  "ten": "Binh biến Đô Lương (1941)",
+  "nam": 1941,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đội Cung (Nguyễn Văn Cung)",
+  "doi_thu": "Pháp",
+  "dia_diem": "Đồn Chợ Rạng và đồn Đô Lương, Nghệ An",
+  "lien_quan_tinh": [
+    "nghe-an"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          450
+        ],
+        [
+          450,
+          380
+        ],
+        [
+          700,
+          300
+        ]
+      ],
+      "nhan": "Đường từ Đô Lương về Vinh"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-doi-cung",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 480,
+      "nhan": "Đội Cung nhậm chức đại đội trưởng"
+    },
+    {
+      "id": "don-cho-rang",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 300,
+      "y": 400,
+      "nhan": "Đồn Chợ Rạng"
+    },
+    {
+      "id": "don-do-luong",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 450,
+      "y": 350,
+      "nhan": "Đồn Đô Lương"
+    },
+    {
+      "id": "mui-keo-ve-vinh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        480,
+        340
+      ],
+      "den": [
+        680,
+        270
+      ],
+      "nhan": "Kéo quân về hướng Vinh"
+    },
+    {
+      "id": "co-bi-dap-tat",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 700,
+      "y": 220,
+      "nhan": "Bị Pháp dập tắt"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đội Cung nhậm chức đại đội trưởng",
+      "mo_ta": "Nguyễn Văn Cung (Đội Cung) vừa nhậm chức đại đội trưởng trong quân đội thuộc địa Pháp.",
+      "hien": [
+        "quan-ta-doi-cung"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chỉ huy binh lính nổi dậy tại đồn Chợ Rạng",
+      "mo_ta": "Chỉ 5 ngày sau khi nhậm chức, đêm 13/1/1941 ông chỉ huy binh lính đồn Chợ Rạng nổi dậy.",
+      "hien": [
+        "quan-ta-doi-cung",
+        "don-cho-rang"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiếm đồn Chợ Rạng rồi Đô Lương",
+      "mo_ta": "Nghĩa quân chiếm đồn Chợ Rạng rồi tiếp tục chiếm đồn Đô Lương.",
+      "hien": [
+        "don-cho-rang",
+        "don-do-luong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Kéo quân về hướng Vinh",
+      "mo_ta": "Dùng xe tải, nghĩa quân kéo về hướng Vinh nhằm phối hợp lính đồn trong thành phố nổi dậy.",
+      "hien": [
+        "don-do-luong",
+        "mui-keo-ve-vinh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Thiếu ủng hộ quần chúng, bị Pháp dập tắt",
+      "mo_ta": "Do không huy động được sự ủng hộ rộng rãi của quần chúng, cuộc binh biến nhanh chóng bị Pháp dập tắt.",
+      "hien": [
+        "co-bi-dap-tat"
+      ]
+    }
+  ],
+  "ket_qua": "Binh lính người Việt dưới chỉ huy Đội Cung chiếm đồn Chợ Rạng và Đô Lương, kéo về hướng Vinh nhưng do thiếu sự tham gia rộng rãi của quần chúng nên nhanh chóng bị Pháp dập tắt.",
+  "y_nghia": "Một trong ba cuộc nổi dậy mở đầu cao trào cách mạng 1940-1945 (cùng Bắc Sơn, Nam Kỳ), cho thấy cần kết hợp đấu tranh vũ trang với vận động quần chúng.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn) — Đội Cung (Nguyễn Văn Cung) và cuộc binh biến Đô Lương",
+    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Đội Cung và cuộc binh biến Đô Lương",
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ]
+}

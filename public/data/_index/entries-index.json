@@ -1,12 +1,25 @@
 {
   "sinh_luc": {
-    "tong_muc": 5129,
+    "tong_muc": 5149,
     "tong_co_toa_do": 2531,
-    "so_nhom_trung_ten": 683,
+    "so_nhom_trung_ten": 700,
     "so_cap_trung_toa_do": 664,
     "ngay_sinh": "2026-08-05"
   },
   "entries": [
+    {
+      "id": "60-ngay-dem-ha-noi-1946-1947",
+      "slug": null,
+      "ten": "60 ngày đêm khói lửa Hà Nội",
+      "ten_chuan": "60 ngay dem khoi lua ha noi",
+      "file": "battles/60-ngay-dem-ha-noi-1946-1947.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
     {
       "id": "81-ngay-dem-thanh-co-quang-tri-1972",
       "slug": null,
@@ -122,6 +135,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 4,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "binh-bien-do-luong-1941",
+      "slug": null,
+      "ten": "Binh biến Đô Lương (1941)",
+      "ten_chuan": "binh bien do luong 1941",
+      "file": "battles/binh-bien-do-luong-1941.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
       "trang_thai": "draft"
     },
     {
@@ -359,6 +385,58 @@
       "trang_thai": "draft"
     },
     {
+      "id": "giai-phong-truong-sa-1975",
+      "slug": null,
+      "ten": "Chiến dịch giải phóng quần đảo Trường Sa 1975",
+      "ten_chuan": "chien dich giai phong quan dao truong sa 1975",
+      "file": "battles/giai-phong-truong-sa-1975.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "gianh-chinh-quyen-ha-noi-1945",
+      "slug": null,
+      "ten": "Giành chính quyền Hà Nội (19/8/1945)",
+      "ten_chuan": "gianh chinh quyen ha noi 19 8 1945",
+      "file": "battles/gianh-chinh-quyen-ha-noi-1945.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "gianh-chinh-quyen-hue-23-8-1945",
+      "slug": null,
+      "ten": "Khởi nghĩa giành chính quyền tại Huế (23/8/1945)",
+      "ten_chuan": "khoi nghia gianh chinh quyen tai hue 23 8 1945",
+      "file": "battles/gianh-chinh-quyen-hue-23-8-1945.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "gianh-chinh-quyen-sai-gon-25-8-1945",
+      "slug": null,
+      "ten": "Khởi nghĩa giành chính quyền tại Sài Gòn (25/8/1945)",
+      "ten_chuan": "khoi nghia gianh chinh quyen tai sai gon 25 8 1945",
+      "file": "battles/gianh-chinh-quyen-sai-gon-25-8-1945.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "ha-noi-dien-bien-phu-tren-khong-1972",
       "slug": null,
       "ten": "«Điện Biên Phủ trên không» 1972",
@@ -377,6 +455,19 @@
       "ten": "Hạ thành Thăng Long, diệt nhà Mạc (1592)",
       "ten_chuan": "ha thanh thang long diet nha mac 1592",
       "file": "battles/ha-thanh-thang-long-diet-mac-1592.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hai-chien-hoang-sa-1974",
+      "slug": null,
+      "ten": "Hải chiến Hoàng Sa 1974",
+      "ten_chuan": "hai chien hoang sa 1974",
+      "file": "battles/hai-chien-hoang-sa-1974.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -463,11 +554,37 @@
       "trang_thai": "draft"
     },
     {
+      "id": "khoi-nghia-ba-to-1945",
+      "slug": null,
+      "ten": "Khởi nghĩa Ba Tơ",
+      "ten_chuan": "khoi nghia ba to",
+      "file": "battles/khoi-nghia-ba-to-1945.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "khoi-nghia-ba-trieu-248",
       "slug": null,
       "ten": "Khởi nghĩa Bà Triệu 248",
       "ten_chuan": "khoi nghia ba trieu 248",
       "file": "battles/khoi-nghia-ba-trieu-248.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khoi-nghia-bac-son-1940",
+      "slug": null,
+      "ten": "Khởi nghĩa Bắc Sơn",
+      "ten_chuan": "khoi nghia bac son",
+      "file": "battles/khoi-nghia-bac-son-1940.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -538,6 +655,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khoi-nghia-yen-bai-1930",
+      "slug": null,
+      "ten": "Khởi nghĩa Yên Bái",
+      "ten_chuan": "khoi nghia yen bai",
+      "file": "battles/khoi-nghia-yen-bai-1930.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -632,6 +762,32 @@
       "trang_thai": "draft"
     },
     {
+      "id": "nam-bo-khang-chien-1945",
+      "slug": null,
+      "ten": "Nam Bộ kháng chiến",
+      "ten_chuan": "nam bo khang chien",
+      "file": "battles/nam-bo-khang-chien-1945.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nam-ky-khoi-nghia-1940",
+      "slug": null,
+      "ten": "Nam Kỳ khởi nghĩa",
+      "ten_chuan": "nam ky khoi nghia",
+      "file": "battles/nam-ky-khoi-nghia-1940.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "ngoc-hoi-dong-da-1789",
       "slug": null,
       "ten": "Ngọc Hồi – Đống Đa 1789",
@@ -658,11 +814,37 @@
       "trang_thai": "draft"
     },
     {
+      "id": "nguyen-trung-truc-danh-don-kien-giang-1868",
+      "slug": null,
+      "ten": "Nguyễn Trung Trực đánh đồn Kiên Giang (1868)",
+      "ten_chuan": "nguyen trung truc danh don kien giang 1868",
+      "file": "battles/nguyen-trung-truc-danh-don-kien-giang-1868.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
       "id": "nhu-nguyet-1077",
       "slug": null,
       "ten": "Phòng tuyến Như Nguyệt 1077",
       "ten_chuan": "phong tuyen nhu nguyet 1077",
       "file": "battles/nhu-nguyet-1077.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phai-khat-na-ngan-1944",
+      "slug": null,
+      "ten": "Trận Phai Khắt – Nà Ngần (1944), trận đầu của Quân đội nhân dân Việt Nam",
+      "ten_chuan": "tran phai khat na ngan 1944 tran dau cua quan doi nhan dan viet nam",
+      "file": "battles/phai-khat-na-ngan-1944.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -892,6 +1074,71 @@
       "trang_thai": "draft"
     },
     {
+      "id": "tran-po-hen-1979",
+      "slug": null,
+      "ten": "Trận Pò Hèn",
+      "ten_chuan": "tran po hen",
+      "file": "battles/tran-po-hen-1979.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thanh-gia-dinh-1859",
+      "slug": null,
+      "ten": "Trận thành Gia Định",
+      "ten_chuan": "tran thanh gia dinh",
+      "file": "battles/tran-thanh-gia-dinh-1859.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thanh-ha-noi-1873",
+      "slug": null,
+      "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)",
+      "ten_chuan": "tran thanh ha noi nguyen tri phuong",
+      "file": "battles/tran-thanh-ha-noi-1873.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thanh-ha-noi-1882",
+      "slug": null,
+      "ten": "Trận thành Hà Nội (Hoàng Diệu)",
+      "ten_chuan": "tran thanh ha noi hoang dieu",
+      "file": "battles/tran-thanh-ha-noi-1882.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-nai-1801",
+      "slug": null,
+      "ten": "Trận thủy chiến Thị Nại (1801)",
+      "ten_chuan": "tran thuy chien thi nai 1801",
+      "file": "battles/tran-thi-nai-1801.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
       "id": "tran-van-tuong-1965",
       "slug": null,
       "ten": "Trận Vạn Tường",
@@ -988,6 +1235,19 @@
       "ten": "Chiến dịch Việt Bắc Thu Đông 1947",
       "ten_chuan": "chien dich viet bac thu dong 1947",
       "file": "battles/viet-bac-thu-dong-1947.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "xo-viet-nghe-tinh-1930",
+      "slug": null,
+      "ten": "Xô Viết Nghệ Tĩnh",
+      "ten_chuan": "xo viet nghe tinh",
+      "file": "battles/xo-viet-nghe-tinh-1930.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -66757,6 +67017,38 @@
       ]
     },
     {
+      "ten_chuan": "khoi nghia bac son",
+      "so_file": 4,
+      "files": [
+        "battles/khoi-nghia-bac-son-1940.json",
+        "overlays/chien-dich-tran-danh.json",
+        "overlays/di-tich-qgdb.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/khoi-nghia-bac-son-1940.json",
+          "id": "khoi-nghia-bac-son-1940",
+          "ten": "Khởi nghĩa Bắc Sơn"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "khoi-nghia-bac-son-1940",
+          "ten": "Khởi nghĩa Bắc Sơn"
+        },
+        {
+          "file": "overlays/di-tich-qgdb.json",
+          "id": null,
+          "ten": "Khởi nghĩa Bắc Sơn"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-bac-son-1940",
+          "ten": "Khởi nghĩa Bắc Sơn"
+        }
+      ]
+    },
+    {
       "ten_chuan": "khoi nghia truong dinh",
       "so_file": 4,
       "files": [
@@ -67361,32 +67653,6 @@
       ]
     },
     {
-      "ten_chuan": "khoi nghia bac son",
-      "so_file": 3,
-      "files": [
-        "overlays/chien-dich-tran-danh.json",
-        "overlays/di-tich-qgdb.json",
-        "timeline/moc-lich-su.json"
-      ],
-      "muc": [
-        {
-          "file": "overlays/chien-dich-tran-danh.json",
-          "id": "khoi-nghia-bac-son-1940",
-          "ten": "Khởi nghĩa Bắc Sơn"
-        },
-        {
-          "file": "overlays/di-tich-qgdb.json",
-          "id": null,
-          "ten": "Khởi nghĩa Bắc Sơn"
-        },
-        {
-          "file": "timeline/moc-lich-su.json",
-          "id": "khoi-nghia-bac-son-1940",
-          "ten": "Khởi nghĩa Bắc Sơn"
-        }
-      ]
-    },
-    {
       "ten_chuan": "khoi nghia hai ba trung",
       "so_file": 3,
       "files": [
@@ -67409,6 +67675,32 @@
           "file": "timeline/moc-lich-su.json",
           "id": "khoi-nghia-hai-ba-trung-40",
           "ten": "Khởi nghĩa Hai Bà Trưng"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia yen bai",
+      "so_file": 3,
+      "files": [
+        "battles/khoi-nghia-yen-bai-1930.json",
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/khoi-nghia-yen-bai-1930.json",
+          "id": "khoi-nghia-yen-bai-1930",
+          "ten": "Khởi nghĩa Yên Bái"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "khoi-nghia-yen-bai-1930",
+          "ten": "Khởi nghĩa Yên Bái"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-yen-bai-1930",
+          "ten": "Khởi nghĩa Yên Bái"
         }
       ]
     },
@@ -67617,6 +67909,32 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Minh Mạng (1791–1841)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "nam ky khoi nghia",
+      "so_file": 3,
+      "files": [
+        "battles/nam-ky-khoi-nghia-1940.json",
+        "overlays/chien-dich-tran-danh.json",
+        "timeline/moc-lich-su.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/nam-ky-khoi-nghia-1940.json",
+          "id": "nam-ky-khoi-nghia-1940",
+          "ten": "Nam Kỳ khởi nghĩa"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "nam-ky-khoi-nghia-1940",
+          "ten": "Nam Kỳ khởi nghĩa"
+        },
+        {
+          "file": "timeline/moc-lich-su.json",
+          "id": "khoi-nghia-nam-ky-1940",
+          "ten": "Nam Kỳ khởi nghĩa"
         }
       ]
     },
@@ -68609,6 +68927,26 @@
       ]
     },
     {
+      "ten_chuan": "60 ngay dem khoi lua ha noi",
+      "so_file": 2,
+      "files": [
+        "battles/60-ngay-dem-ha-noi-1946-1947.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/60-ngay-dem-ha-noi-1946-1947.json",
+          "id": "60-ngay-dem-ha-noi-1946-1947",
+          "ten": "60 ngày đêm khói lửa Hà Nội"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "60-ngay-dem-ha-noi-1946-1947",
+          "ten": "60 ngày đêm khói lửa Hà Nội"
+        }
+      ]
+    },
+    {
       "ten_chuan": "81 ngay dem bao ve thanh co quang tri",
       "so_file": 2,
       "files": [
@@ -69149,6 +69487,26 @@
       ]
     },
     {
+      "ten_chuan": "binh bien do luong 1941",
+      "so_file": 2,
+      "files": [
+        "battles/binh-bien-do-luong-1941.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/binh-bien-do-luong-1941.json",
+          "id": "binh-bien-do-luong-1941",
+          "ten": "Binh biến Đô Lương (1941)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "binh-bien-do-luong-1941",
+          "ten": "Binh biến Đô Lương (1941)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "bo cai dai vuong phung hung",
       "so_file": 2,
       "files": [
@@ -69565,6 +69923,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "duong-9-khe-sanh-1968",
           "ten": "Chiến dịch Đường 9 – Khe Sanh 1968"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich giai phong quan dao truong sa 1975",
+      "so_file": 2,
+      "files": [
+        "battles/giai-phong-truong-sa-1975.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/giai-phong-truong-sa-1975.json",
+          "id": "giai-phong-truong-sa-1975",
+          "ten": "Chiến dịch giải phóng quần đảo Trường Sa 1975"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "giai-phong-truong-sa-1975",
+          "ten": "Chiến dịch giải phóng quần đảo Trường Sa 1975"
         }
       ]
     },
@@ -71614,6 +71992,26 @@
       ]
     },
     {
+      "ten_chuan": "gianh chinh quyen ha noi 19 8 1945",
+      "so_file": 2,
+      "files": [
+        "battles/gianh-chinh-quyen-ha-noi-1945.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/gianh-chinh-quyen-ha-noi-1945.json",
+          "id": "gianh-chinh-quyen-ha-noi-1945",
+          "ten": "Giành chính quyền Hà Nội (19/8/1945)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "gianh-chinh-quyen-ha-noi-1945",
+          "ten": "Giành chính quyền Hà Nội (19/8/1945)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "giao su anh hung lao dong luong dinh cua",
       "so_file": 2,
       "files": [
@@ -71770,6 +72168,26 @@
           "file": "figures/danh-nhan.json",
           "id": "phu-tho-hai-ba-trung",
           "ten": "Hai Bà Trưng (thế kỷ I)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "hai chien hoang sa 1974",
+      "so_file": 2,
+      "files": [
+        "battles/hai-chien-hoang-sa-1974.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/hai-chien-hoang-sa-1974.json",
+          "id": "hai-chien-hoang-sa-1974",
+          "ten": "Hải chiến Hoàng Sa 1974"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "hai-chien-hoang-sa-1974",
+          "ten": "Hải chiến Hoàng Sa 1974"
         }
       ]
     },
@@ -72639,6 +73057,26 @@
       ]
     },
     {
+      "ten_chuan": "khoi nghia ba to",
+      "so_file": 2,
+      "files": [
+        "battles/khoi-nghia-ba-to-1945.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/khoi-nghia-ba-to-1945.json",
+          "id": "khoi-nghia-ba-to-1945",
+          "ten": "Khởi nghĩa Ba Tơ"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "khoi-nghia-ba-to-1945",
+          "ten": "Khởi nghĩa Ba Tơ"
+        }
+      ]
+    },
+    {
       "ten_chuan": "khoi nghia ba trieu",
       "so_file": 2,
       "files": [
@@ -72695,6 +73133,46 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "bai-say-1883",
           "ten": "Khởi nghĩa Bãi Sậy 1883–1892"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia gianh chinh quyen tai hue 23 8 1945",
+      "so_file": 2,
+      "files": [
+        "battles/gianh-chinh-quyen-hue-23-8-1945.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/gianh-chinh-quyen-hue-23-8-1945.json",
+          "id": "gianh-chinh-quyen-hue-23-8-1945",
+          "ten": "Khởi nghĩa giành chính quyền tại Huế (23/8/1945)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "gianh-chinh-quyen-hue-23-8-1945",
+          "ten": "Khởi nghĩa giành chính quyền tại Huế (23/8/1945)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "khoi nghia gianh chinh quyen tai sai gon 25 8 1945",
+      "so_file": 2,
+      "files": [
+        "battles/gianh-chinh-quyen-sai-gon-25-8-1945.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/gianh-chinh-quyen-sai-gon-25-8-1945.json",
+          "id": "gianh-chinh-quyen-sai-gon-25-8-1945",
+          "ten": "Khởi nghĩa giành chính quyền tại Sài Gòn (25/8/1945)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "gianh-chinh-quyen-sai-gon-25-8-1945",
+          "ten": "Khởi nghĩa giành chính quyền tại Sài Gòn (25/8/1945)"
         }
       ]
     },
@@ -72875,26 +73353,6 @@
           "file": "timeline/moc-lich-su.json",
           "id": "khoi-nghia-tay-son-1771",
           "ten": "Khởi nghĩa Tây Sơn bùng nổ"
-        }
-      ]
-    },
-    {
-      "ten_chuan": "khoi nghia yen bai",
-      "so_file": 2,
-      "files": [
-        "overlays/chien-dich-tran-danh.json",
-        "timeline/moc-lich-su.json"
-      ],
-      "muc": [
-        {
-          "file": "overlays/chien-dich-tran-danh.json",
-          "id": "khoi-nghia-yen-bai-1930",
-          "ten": "Khởi nghĩa Yên Bái"
-        },
-        {
-          "file": "timeline/moc-lich-su.json",
-          "id": "khoi-nghia-yen-bai-1930",
-          "ten": "Khởi nghĩa Yên Bái"
         }
       ]
     },
@@ -74479,22 +74937,22 @@
       ]
     },
     {
-      "ten_chuan": "nam ky khoi nghia",
+      "ten_chuan": "nam bo khang chien",
       "so_file": 2,
       "files": [
-        "overlays/chien-dich-tran-danh.json",
-        "timeline/moc-lich-su.json"
+        "battles/nam-bo-khang-chien-1945.json",
+        "overlays/chien-dich-tran-danh.json"
       ],
       "muc": [
         {
-          "file": "overlays/chien-dich-tran-danh.json",
-          "id": "nam-ky-khoi-nghia-1940",
-          "ten": "Nam Kỳ khởi nghĩa"
+          "file": "battles/nam-bo-khang-chien-1945.json",
+          "id": "nam-bo-khang-chien-1945",
+          "ten": "Nam Bộ kháng chiến"
         },
         {
-          "file": "timeline/moc-lich-su.json",
-          "id": "khoi-nghia-nam-ky-1940",
-          "ten": "Nam Kỳ khởi nghĩa"
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "nam-bo-khang-chien-1945",
+          "ten": "Nam Bộ kháng chiến"
         }
       ]
     },
@@ -76685,6 +77143,26 @@
           "file": "figures/danh-nhan.json",
           "id": "tay-ninh-nguyen-trung-truc",
           "ten": "Nguyễn Trung Trực (1838–1868)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "nguyen trung truc danh don kien giang 1868",
+      "so_file": 2,
+      "files": [
+        "battles/nguyen-trung-truc-danh-don-kien-giang-1868.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/nguyen-trung-truc-danh-don-kien-giang-1868.json",
+          "id": "nguyen-trung-truc-danh-don-kien-giang-1868",
+          "ten": "Nguyễn Trung Trực đánh đồn Kiên Giang (1868)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "nguyen-trung-truc-danh-don-kien-giang-1868",
+          "ten": "Nguyễn Trung Trực đánh đồn Kiên Giang (1868)"
         }
       ]
     },
@@ -79594,6 +80072,26 @@
       ]
     },
     {
+      "ten_chuan": "tran phai khat na ngan 1944 tran dau cua quan doi nhan dan viet nam",
+      "so_file": 2,
+      "files": [
+        "battles/phai-khat-na-ngan-1944.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/phai-khat-na-ngan-1944.json",
+          "id": "phai-khat-na-ngan-1944",
+          "ten": "Trận Phai Khắt – Nà Ngần (1944), trận đầu của Quân đội nhân dân Việt Nam"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "phai-khat-na-ngan-1944",
+          "ten": "Trận Phai Khắt – Nà Ngần (1944), trận đầu của Quân đội nhân dân Việt Nam"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran phu 1904 1931",
       "so_file": 2,
       "files": [
@@ -79640,6 +80138,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "tran-phu-xuan-1786",
           "ten": "Trận Phú Xuân (1786)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran po hen",
+      "so_file": 2,
+      "files": [
+        "battles/tran-po-hen-1979.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-po-hen-1979.json",
+          "id": "tran-po-hen-1979",
+          "ten": "Trận Pò Hèn"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-po-hen-1979",
+          "ten": "Trận Pò Hèn"
         }
       ]
     },
@@ -79804,6 +80322,66 @@
       ]
     },
     {
+      "ten_chuan": "tran thanh gia dinh",
+      "so_file": 2,
+      "files": [
+        "battles/tran-thanh-gia-dinh-1859.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-thanh-gia-dinh-1859.json",
+          "id": "tran-thanh-gia-dinh-1859",
+          "ten": "Trận thành Gia Định"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-thanh-gia-dinh-1859",
+          "ten": "Trận thành Gia Định"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran thanh ha noi hoang dieu",
+      "so_file": 2,
+      "files": [
+        "battles/tran-thanh-ha-noi-1882.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-thanh-ha-noi-1882.json",
+          "id": "tran-thanh-ha-noi-1882",
+          "ten": "Trận thành Hà Nội (Hoàng Diệu)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-thanh-ha-noi-1882",
+          "ten": "Trận thành Hà Nội (Hoàng Diệu)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran thanh ha noi nguyen tri phuong",
+      "so_file": 2,
+      "files": [
+        "battles/tran-thanh-ha-noi-1873.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-thanh-ha-noi-1873.json",
+          "id": "tran-thanh-ha-noi-1873",
+          "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-thanh-ha-noi-1873",
+          "ten": "Trận thành Hà Nội (Nguyễn Tri Phương)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran thanh tong",
       "so_file": 2,
       "files": [
@@ -79900,6 +80478,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "cua-eo-thuan-an-1643",
           "ten": "Trận thuỷ chiến cửa Eo (Thuận An) 1643 — đánh bại hạm đội Hà Lan"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran thuy chien thi nai 1801",
+      "so_file": 2,
+      "files": [
+        "battles/tran-thi-nai-1801.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-thi-nai-1801.json",
+          "id": "tran-thi-nai-1801",
+          "ten": "Trận thủy chiến Thị Nại (1801)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-thi-nai-1801",
+          "ten": "Trận thủy chiến Thị Nại (1801)"
         }
       ]
     },
@@ -81620,6 +82218,26 @@
           "file": "figures/danh-nhan.json",
           "id": "tuyen-quang-vuong-chinh-duc",
           "ten": "Vương Chính Đức (1865–1947)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "xo viet nghe tinh",
+      "so_file": 2,
+      "files": [
+        "battles/xo-viet-nghe-tinh-1930.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/xo-viet-nghe-tinh-1930.json",
+          "id": "xo-viet-nghe-tinh-1930",
+          "ten": "Xô Viết Nghệ Tĩnh"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "xo-viet-nghe-tinh-1930",
+          "ten": "Xô Viết Nghệ Tĩnh"
         }
       ]
     },
