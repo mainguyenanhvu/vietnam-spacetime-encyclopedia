@@ -1,0 +1,353 @@
+/* Sa đồ chiến dịch — Màn A (danh sách) + Màn B (chi tiết). Chỉ battle.ts
+   (`src/battle.ts`) đọc các class dưới đây; không class nào ở đây trùng tên
+   với `.battle-*`/`.journey-*` cũ trong style.css (những rule đó nay là
+   phần tử chết vì battle.ts không còn phát ra class cũ — không xoá ở đây,
+   ngoài phạm vi sở hữu file của lượt việc này, xem báo cáo cuối).
+
+   Mọi màu là BÍ DANH trỏ token có sẵn trong theme.css — không hex mới.
+   `color-mix()` phái sinh từ token có sẵn (đúng cách theme.css đã dùng cho
+   --vien-nhan-nhe/--glow-nhan…), không phải hex mới. */
+
+:root {
+  /* Ngoại xâm (mặc định): quân ta = xanh "đúng", đối phương = đỏ "sai" —
+     mượn ngữ nghĩa dung-chu/sai-chu đã có, hợp lý cho kháng chiến chống ngoại xâm. */
+  --sd-ta-chu: var(--dung-chu);
+  --sd-ta-nen: var(--dung-nen);
+  --sd-ta-vien: var(--dung-vien);
+  --sd-doi-chu: var(--sai-chu);
+  --sd-doi-nen: var(--sai-nen);
+  --sd-doi-vien: var(--sai-vien);
+  /* Nền địa hình — thay 6+ hex cứng cũ trong battle.ts. */
+  --sd-nen-bo: var(--mat-3);
+  --sd-nen-song: var(--tin-nen);
+  --sd-nen-song-sau: color-mix(in srgb, var(--tin-chu) 25%, var(--tin-nen));
+}
+
+/* Nội chiến: KHÔNG dùng cặp "đúng/sai" — đọc như phán xét đạo đức một bên.
+   Cặp trung tính --nhan (vàng/tím theo chế độ) / --tin-chu (xanh dương) thay thế. */
+.sd-detail[data-xung-dot="noi-chien"] {
+  --sd-ta-chu: var(--nhan);
+  --sd-ta-nen: var(--nhan-mo);
+  --sd-ta-vien: var(--nhan-sang);
+  --sd-doi-chu: var(--tin-chu);
+  --sd-doi-nen: var(--tin-nen);
+  --sd-doi-vien: var(--tin-chu);
+}
+
+/* ── Màn A — danh sách 168 trận ────────────────────────────────────────── */
+
+.sd-index-title {
+  margin: 0 0 0.3rem;
+}
+.sd-index-note {
+  margin: 0 0 0.7rem;
+}
+.sd-era-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+}
+.sd-era-chip {
+  border: 1px solid var(--nhan);
+  background: var(--mat-2);
+  color: var(--nhan);
+  border-radius: var(--bo-vien-tron);
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  font-size: var(--co-sm);
+  font-weight: 600;
+}
+.sd-era-chip.active {
+  background: var(--nhan);
+  color: var(--mat);
+}
+.sd-era-group {
+  margin-bottom: 1.1rem;
+}
+.sd-era-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--co-md);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--bo-nho);
+  background: var(--the-1);
+  color: var(--the-chu);
+  margin: 0 0 0.5rem;
+}
+.sd-era-heading.the-1 { background: var(--the-1); }
+.sd-era-heading.the-2 { background: var(--the-2); }
+.sd-era-heading.the-3 { background: var(--the-3); }
+.sd-era-heading.the-4 { background: var(--the-4); }
+.sd-era-heading.the-5 { background: var(--the-5); }
+.sd-era-heading.the-6 { background: var(--the-6); }
+.sd-era-count {
+  font-weight: 400;
+  color: inherit;
+  opacity: 0.85;
+}
+.sd-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.sd-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.2rem 0.7rem;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-nho);
+  background: var(--mat);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: var(--co-sm);
+}
+.sd-card-ready {
+  border-style: solid;
+}
+.sd-card-ready:hover {
+  border-color: var(--brand-dam);
+}
+.sd-card-soon {
+  border-style: dashed;
+  opacity: 0.85;
+}
+.sd-card-year {
+  font-weight: 700;
+  color: var(--chu-mem);
+}
+.sd-card-name {
+  grid-column: 2;
+  font-weight: 600;
+}
+.sd-card-place {
+  grid-column: 2;
+  font-size: var(--co-xs);
+}
+.sd-card-tag {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  font-size: var(--co-2xs);
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--bo-vien-tron);
+  white-space: nowrap;
+}
+.sd-card-tag-ready {
+  background: var(--dung-nen);
+  color: var(--dung-chu);
+  border: 1px solid var(--dung-vien);
+}
+.sd-card-tag-soon {
+  background: var(--mat-chim);
+  color: var(--chu-mem);
+  border: 1px dashed var(--vien-ro);
+}
+
+/* ── Màn B — chi tiết ─────────────────────────────────────────────────── */
+
+.sd-back {
+  border: 1px solid var(--vien-ro);
+  background: var(--mat-2);
+  color: var(--chu-mem);
+  border-radius: var(--bo-nho);
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  font-size: var(--co-sm);
+  margin-bottom: 0.5rem;
+}
+.sd-back:hover {
+  border-color: var(--brand-dam);
+  color: var(--brand-dam);
+}
+.sd-title {
+  margin: 0.2rem 0 0.3rem;
+}
+.sd-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.3rem 1rem;
+  margin: 0.5rem 0;
+  font-size: var(--co-sm);
+}
+.sd-meta dt {
+  color: var(--chu-mem);
+  font-weight: 600;
+  margin: 0;
+}
+.sd-meta dd {
+  margin: 0;
+}
+
+.sd-stage-wrap {
+  margin: 0.6rem 0;
+}
+.sd-svg {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-nho);
+  background: var(--sd-nen-song);
+}
+/* Halo nhãn — kỹ thuật bản đồ chuẩn cho chữ đè lên nền đổi màu theo chế độ.
+   Đo bằng công cụ (xem báo cáo): --sd-ta-chu trên --sd-nen-bo chỉ đạt 4,38:1
+   ở chế độ trẻ em (dưới ngưỡng 4,5:1 cho chữ, dù vẫn đạt 3:1 phi văn bản).
+   Viền --mat quanh glyph nâng tương phản thật khi hiển thị — không thay đổi
+   token màu ta/đối đang dùng nhất quán cho mũi tên/vùng/chú giải. */
+.sd-caption {
+  paint-order: stroke fill;
+  stroke: var(--mat);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.sd-layer {
+  transition: opacity var(--dur-vua) var(--ease);
+}
+.sd-layer-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.sd-arrow-draw {
+  animation: sd-draw-arrow 700ms var(--ease) forwards;
+}
+@keyframes sd-draw-arrow {
+  from {
+    stroke-dashoffset: var(--sd-len, 0);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.sd-step-rail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+.sd-step-dot {
+  border-radius: 50%;
+  border: 2px solid var(--vien-ro);
+  background: var(--mat);
+  color: var(--chu-mem);
+  font-weight: 700;
+  font-size: var(--co-sm);
+  cursor: pointer;
+  transition:
+    background-color var(--dur-nhanh) var(--ease),
+    border-color var(--dur-nhanh) var(--ease),
+    color var(--dur-nhanh) var(--ease);
+}
+.sd-step-dot.sd-step-done {
+  background: var(--nhan);
+  border-color: var(--nhan);
+  color: var(--mat);
+}
+.sd-step-dot.sd-step-current {
+  border-color: var(--nhan);
+  border-width: 3px;
+  color: var(--nhan);
+  background: var(--mat);
+}
+.sd-step-dot.sd-step-upcoming {
+  border-color: var(--vien-ro);
+  background: var(--mat);
+  color: var(--chu-mem);
+}
+
+.sd-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  font-size: var(--co-sm);
+}
+.sd-legend-item {
+  display: inline-flex;
+  align-items: center;
+}
+.sd-legend-swatch {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 0.35rem;
+  border: 1.5px solid;
+}
+.sd-legend-ta {
+  background-color: var(--sd-ta-nen);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--sd-ta-chu) 0 2px,
+    transparent 2px 6px
+  );
+  border-color: var(--sd-ta-chu);
+}
+.sd-legend-doi {
+  background-color: var(--sd-doi-nen);
+  background-image:
+    repeating-linear-gradient(45deg, var(--sd-doi-chu) 0 2px, transparent 2px 6px),
+    repeating-linear-gradient(-45deg, var(--sd-doi-chu) 0 2px, transparent 2px 6px);
+  border-color: var(--sd-doi-chu);
+}
+
+.sd-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.6rem 0;
+}
+.sd-nav {
+  border: 1px solid var(--nhan);
+  background: var(--nhan);
+  color: var(--mat);
+  border-radius: var(--bo-nho);
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  font-size: var(--co-md);
+}
+.sd-nav:disabled {
+  background: var(--vien-ro);
+  border-color: var(--vien-ro);
+  cursor: default;
+}
+.sd-step-count {
+  font-weight: 600;
+  color: var(--chu-mem);
+}
+
+.sd-narrative,
+.sd-outcome {
+  margin: 0.6rem 0;
+}
+.sd-narrative h3 {
+  margin: 0 0 0.3rem;
+}
+.sd-narrative p,
+.sd-outcome p {
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+/* ── Vùng chạm tối thiểu 44×44px cho các phần tử bấm được MỚI ─────────────
+   style.css:1690-1716 đã có khối luật này cho .battle-controls/.journey-*
+   nhưng lượt việc này không được sửa style.css ngoài đúng một dòng @import,
+   nên khối tương đương phải sống ở đây. CẦN main gộp hai khối lại nếu muốn
+   một nguồn sự thật duy nhất — ghi trong báo cáo cuối. */
+.sd-era-chip,
+.sd-card,
+.sd-step-dot,
+.sd-back,
+.sd-nav {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+}

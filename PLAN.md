@@ -347,10 +347,13 @@ Chủ dự án giao 13 hạng mục. Tiến độ ở đây, chi tiết kỹ thu
 | 7 | Ngục trung nhật ký xếp theo thứ tự bài | ✅ Xong |
 | 8 | Thư viện: chế độ đọc kiểu Kindle, chế độ lật, mở rộng cửa sổ, tuỳ chỉnh, bỏ biểu tượng thừa, sắp theo chủ đề + thời gian/tác giả, link trang tỉnh, bổ sung tác phẩm | 🔄 hai sóng đang chạy: đặc tả UI · mở rộng nội dung + gán chủ đề + liên kết tỉnh |
 | 9 | Hành trình lịch sử: thiếu mốc, UI lỗi thời | 🔄 sóng đặc tả UI đang chạy |
-| 10 | Sa đồ chiến dịch: thiếu chiến dịch/trận đánh, UI lỗi thời. Đích: học **toàn bộ** trận đánh 4000 năm qua sa đồ | 🔄 hai sóng đang chạy: đặc tả UI · mở rộng dữ liệu |
+| 10 | Sa đồ chiến dịch | 🔄 **UI xong, dữ liệu sa đồ vẫn 1/189.** `battle.ts` 313 → 631 dòng: thêm Màn A danh sách 189 trận nhóm 5 thời kỳ + chip lọc, Màn B sa đồ SVG có bước diễn biến. Phân biệt hai phe bằng gạch chéo/ca-rô, không chỉ bằng màu. **Còn lại**: 188/189 trận chưa có file sa đồ trong `battles/` — đây mới là phần nặng. |
 | 11 | Lớp phủ chia theo lĩnh vực/chủ đề/giai đoạn, **không chia theo giới tính** | ⬜ chưa bắt đầu. Lớp `nu-danh-nhan-lich-su` phải giải thể, phân bổ lại theo lĩnh vực. |
 | 12 | UI lag khi di chuyển | 🔄 Đã bỏ lượt dựng lại mô hình khi khung nhìn không đổi đáng kể. **Chưa chứng minh được đây là nguyên nhân chính** — xem cảnh báo dưới. |
 | 13 | Nâng cấp bản đồ 3D | ⬜ chưa bắt đầu |
+
+🔴 **Tương phản chế độ TRẺ EM của sa đồ CHƯA ĐẠT — chưa sửa xong.** Agent thi công đo trên trình duyệt thật ngày 2026-08-05: `--sd-ta-chu` trên nền bờ **4,38:1** và trên nền sông **4,11:1**, dưới ngưỡng 4,5:1 của WCAG 1.4.3 cho chữ thường (vẫn qua 3:1 cho hình khối). Ảnh hưởng 3 chú thích trên sa đồ. Agent thêm halo viền quanh `.sd-caption` — kỹ thuật nhãn bản đồ chuẩn — nhưng **công thức tương phản phẳng không mô hình hoá được halo**, nên hiệu quả CHƯA được chứng minh. Chế độ người lớn đạt hết (4,91–7,44:1).
+   Cách chữa dứt điểm: đổi `--sd-ta-chu` ở khối trẻ em sang một token đậm hơn rồi đo lại trên trình duyệt thật. **Đừng coi là đã xong chỉ vì có halo.**
 
 ⚠️ **Chưa đo được lag thật.** Harness headless chạy trên swiftshader (GPU phần mềm) nên **mọi** cấu hình đều tụt xuống 3–6 fps, kể cả 2D không lớp phủ — sàn đó nuốt mất thứ cần đo. Chỉ so tương đối được: lớp phủ tốn ~21%, chế độ 3D tốn ~23%, cộng gần như tuyến tính, **không điểm nghẽn bất thường nào lộ ra**. Muốn tìm nguyên nhân thật phải đo trên máy có GPU thật (Chrome Performance panel), việc harness này không làm được.
 
