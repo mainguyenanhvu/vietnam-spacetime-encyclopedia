@@ -63,6 +63,8 @@ const SHIP_TRIM = 0x707880; // thượng tầng sáng hơn
 const SHIP_FUNNEL = 0x3a3a3a; // ống khói
 const SHIP_BAND = 0xb23a3a; // vành sọc ống khói
 const PODIUM_BACKDROP = 0x6b5535; // phông gỗ lễ đài Ba Đình
+const FLAG_RED = 0xda251d; // đỏ quốc kỳ (khác CLOTH_RED của cờ hiệu quân đội)
+const FLAG_GOLD = 0xffcd00; // vàng sao quốc kỳ (khác GOLD trang trí kim tuyến)
 const MILITARY_GREEN = 0x4a5a3a; // xanh ô liu quân đội (pháo + xe tăng)
 const DARK_STEEL = 0x2b2b2b; // xích tăng, bánh pháo, dây kéo
 const TANK_PLATE = 0xe8e4d8; // mảng màu số hiệu 390 (thay chữ số)
@@ -156,6 +158,19 @@ function makeSpear(shaftLen = 1.7, tipColor = BLADE): THREE.Group {
   return s;
 }
 
+// Que/thanh thẳng, GỐC Ở MỘT ĐẦU (không phải giữa) — cùng quy ước với
+// makeSword/makeSpear để gắn đúng điểm nối bất kể góc xoay: đặt group tại
+// đúng toạ độ điểm nối rồi xoay, đầu gần luôn dính tại đó vì phép xoay chỉ
+// đổi hướng, không đổi gốc. Dùng cho càng pháo, dây kéo — vật KHÔNG cầm ở
+// tay (không qua attachArm) nên cần tự đảm bảo điểm chạm.
+function makeRod(len: number, rTop: number, rBot: number, color: number, seg = 6): THREE.Group {
+  const r = new THREE.Group();
+  const rod = cyl(rTop, rBot, len, color, seg);
+  rod.position.y = -len / 2;
+  r.add(rod);
+  return r;
+}
+
 // Khiên tròn: mặt khiên + viền — gắn vào tay giống đạo cụ khác (position.y=-len).
 function makeShield(r = 0.32): THREE.Group {
   const sh = new THREE.Group();
@@ -168,9 +183,13 @@ function makeShield(r = 0.32): THREE.Group {
   return sh;
 }
 
-// Ngôi sao 5 cánh phẳng (cờ đỏ sao vàng) — mặt phẳng nằm trên trục XY cục bộ,
-// hai mặt đều hiện (DoubleSide) vì không biết trước góc nhìn sẽ từ phía nào.
-function makeStar(r = 0.16, color = GOLD): THREE.Mesh {
+// Ngôi sao 5 cánh CÓ ĐỘ DÀY thật (Extrude, không phải mặt phẳng 2D) — sửa lỗi
+// §9: bản đầu dùng ShapeGeometry phẳng tuyệt đối (độ dày 0 theo pháp tuyến),
+// nên ở góc nhìn gần như song song mặt phẳng đó thì diện tích chiếu gần bằng
+// 0 và biến mất dù DoubleSide. Đúc khối thật loại bỏ hẳn khả năng đó — luôn
+// có mặt bên hiện ra dù nhìn từ góc nào. Mặt phẳng sao nằm trên trục XY cục
+// bộ (đùn theo +Z một đoạn `depth`), tâm ở gốc để dễ áp vào bề mặt vật khác.
+function makeStar(r = 0.16, color = GOLD, depth = 0.04): THREE.Mesh {
   const shape = new THREE.Shape();
   const spikes = 5;
   const innerR = r * 0.38;
@@ -183,9 +202,9 @@ function makeStar(r = 0.16, color = GOLD): THREE.Mesh {
     else shape.lineTo(x, y);
   }
   shape.closePath();
-  const m = new THREE.Mesh(new THREE.ShapeGeometry(shape), mat(color, 0.5));
-  m.material.side = THREE.DoubleSide;
-  return m;
+  const geo = new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: false });
+  geo.translate(0, 0, -depth / 2); // tâm khối theo Z tại gốc, không lệch hẳn về +Z
+  return new THREE.Mesh(geo, mat(color, 0.5));
 }
 
 // Thân người đứng cách điệu: váy áo loe, thân, cổ, đầu cầu trơn, tóc/búi.
@@ -951,11 +970,9 @@ function tranNhanTong(): THREE.Group {
   torso.position.y = 0.92;
   g.add(torso);
 
-  // Dải cà sa vắt chéo qua vai.
-  const sash = box(0.08, 0.85, 0.3, MONK_SASH);
-  sash.position.set(0.1, 1.05, 0.18);
-  sash.rotation.z = 0.3;
-  g.add(sash);
+  // (Đã bỏ dải cà sa chéo vai theo phản hồi §9 — tấm phẳng vàng nghệ dựng
+  // đứng đọc thành "ván lạ" gây nhiễu hơn là giúp nhận dạng; áo nâu + đầu
+  // trọc đã đủ đọc ra tăng sĩ, không cần thêm chi tiết khó hiểu.)
 
   const shoulders = cyl(0.14, 0.16, 0.62, MONK_ROBE, 6);
   shoulders.rotation.x = Math.PI / 2;
@@ -1201,16 +1218,30 @@ function leDaiBaDinh(): THREE.Group {
   g.add(roof);
 
   // Cờ đỏ sao vàng cắm cao giữa bục (bắt buộc có sao — cờ đỏ trơn là sai cờ).
-  const pole = cyl(0.035, 0.04, 2.4, WOOD, 6);
-  pole.position.set(0.3, 1.87, 0.1);
+  // Sửa lỗi §9: bản đầu dùng CLOTH_RED (đỏ nâu sẫm của cờ hiệu quân đội) và
+  // sao quá nhỏ so với cả cụm lễ đài + cán cờ cao — nay dùng đúng màu quốc kỳ
+  // riêng (FLAG_RED/FLAG_GOLD), cán cờ rút ngắn để cờ không bị "chìm" khi máy
+  // ảo tự lùi ra xa cho vừa khung, và sao to hẳn lên (r=0.24, gần 2/3 chiều
+  // cao vải) để không còn là "một chấm không thấy".
+  const pole = cyl(0.04, 0.045, 2.2, WOOD, 6);
+  pole.position.set(0.3, 1.1, 0.1);
   g.add(pole);
-  const cloth = box(0.04, 0.7, 1.0, CLOTH_RED);
-  cloth.position.set(0.3, 2.6, 0.62);
+  const cloth = box(0.05, 0.85, 1.15, FLAG_RED);
+  cloth.position.set(0.3, 1.85, 0.65);
   g.add(cloth);
-  const star = makeStar(0.18, GOLD);
-  star.rotation.y = Math.PI / 2;
-  star.position.set(0.34, 2.6, 0.62);
-  g.add(star);
+  // Sao phải có ở CẢ HAI mặt vải. Bản một mặt đã dựng đúng hình nhưng chỉ nằm
+  // ở mặt +X, mà góc máy ảo mặc định lúc mở mô hình lại nhìn vào mặt −X — người
+  // dùng thấy một lá cờ đỏ trơn và phải tự kéo xoay nửa vòng mới thấy quốc kỳ.
+  // Đo trên Chrome bằng cách chụp 4 góc mới lộ ra; ảnh một góc không đủ.
+  // Chữa bằng cách xoay cả cụm cờ về phía máy ảo thì vô nghĩa: mô hình xoay
+  // được nên mặt kia vẫn lộ ra. Cờ thật cũng có sao hai mặt.
+  // Vải X:[0.275, 0.325]; mỗi sao dày 0,05 và cách mặt vải gần nhất 0,005.
+  for (const [x, huong] of [[0.355, 1], [0.245, -1]] as const) {
+    const star = makeStar(0.24, FLAG_GOLD, 0.05);
+    star.rotation.y = (huong * Math.PI) / 2;
+    star.position.set(x, 1.85, 0.65);
+    g.add(star);
+  }
 
   return g;
 }
@@ -1251,19 +1282,25 @@ function phaoDienBien(): THREE.Group {
     g.add(hub);
   }
 
-  // Càng pháo chữ V xoè phía sau.
+  // Càng pháo chữ V xoè phía sau — gốc đặt ĐÚNG tại bệ pháo gần trục bánh
+  // (0.1, 0.55, ±0.18), nằm trong khung trục bánh x∈[0.115,0.185],
+  // z∈[-0.45,0.45) — nên đầu gần luôn chạm bệ pháo bất kể góc xoè. Sửa lỗi
+  // §9: bản đầu định vị theo TÂM hình trụ (`cyl` luôn tự đối xứng quanh gốc),
+  // xoay lệch trục khiến đầu gần hụt cách bệ pháo hẳn nửa mét — dùng makeRod
+  // (gốc ở đầu, không phải giữa) để tránh lặp lại lỗi này.
   for (const sz of [-1, 1]) {
-    const trail = cyl(0.035, 0.045, 1.5, WOOD, 6);
-    trail.position.set(-0.75, 0.4, sz * 0.5);
-    trail.rotation.y = sz * 0.35;
-    trail.rotation.z = 0.25;
+    const trail = makeRod(1.3, 0.045, 0.035, WOOD, 6);
+    trail.position.set(0.1, 0.55, sz * 0.18);
+    trail.rotation.z = -1.2;
+    trail.rotation.y = sz * 0.3;
     g.add(trail);
   }
 
-  // Dây kéo tượng trưng phía trước («kéo pháo vào»).
-  const rope = cyl(0.025, 0.03, 1.1, DARK_STEEL, 6);
+  // Dây kéo tượng trưng phía trước («kéo pháo vào») — gốc đặt ĐÚNG tại đầu
+  // nòng (1.96, 1.0, 0), khớp mặt trước của `muzzle`, nên luôn dính vào nòng.
+  const rope = makeRod(1.1, 0.03, 0.025, DARK_STEEL, 6);
+  rope.position.set(1.96, 1.0, 0);
   rope.rotation.z = Math.PI / 2 - 0.3;
-  rope.position.set(2.4, 0.7, 0);
   g.add(rope);
 
   return g;
