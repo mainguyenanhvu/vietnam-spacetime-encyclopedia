@@ -1,0 +1,113 @@
+{
+  "ghi_chu": "Sa đồ Tiểu đoàn tên lửa 59 bắn rơi B-52 đầu tiên tại chỗ — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. NGUỒN VÊNH: nguồn Hà Nội Mới ghi Tiểu đoàn 59 hạ B-52 đầu tiên rơi tại chỗ (20h13, Phù Lỗ, Đông Anh) đêm 18/12/1972; nguồn Nhân Dân về Tiểu đoàn 77 (mục riêng) cũng ghi đơn vị này 'hạ B-52 đầu tiên rơi tại chỗ' tại Tam Hưng, Thanh Oai cùng đêm mở màn — hai địa điểm khác nhau, không rõ nguồn nào ưu tiên hơn. Nêu cả hai theo đúng nguồn, không tự chọn. trang_thai=draft chờ soát §9.",
+  "id": "tieu-doan-ten-lua-59-b52-dau-tien-1972",
+  "ten": "Tiểu đoàn tên lửa 59 bắn rơi B-52 đầu tiên tại chỗ",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Không quân Mỹ (B-52)",
+  "dia_diem": "Cánh đồng Chuôm, xã Phù Lỗ, huyện Đông Anh (Hà Nội)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "mo-man-chien-dich",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 150,
+      "nhan": "Đêm mở màn Chiến dịch phòng không 12 ngày đêm (18/12/1972)"
+    },
+    {
+      "id": "td59",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 350,
+      "y": 300,
+      "nhan": "Tiểu đoàn tên lửa 59 (Trung đoàn 261)"
+    },
+    {
+      "id": "phu-lo",
+      "kieu": "dia-danh",
+      "ben": "ta",
+      "x": 550,
+      "y": 420,
+      "nhan": "Cánh đồng Chuôm, xã Phù Lỗ, Đông Anh"
+    },
+    {
+      "id": "ban-roi-20h13",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        410,
+        320
+      ],
+      "den": [
+        660,
+        250
+      ],
+      "nhan": "20h13 ngày 18/12/1972: bắn rơi tại chỗ B-52 đầu tiên của toàn chiến dịch"
+    },
+    {
+      "id": "y-nghia-bieu-tuong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 250,
+      "nhan": "Minh chứng khả năng đánh thắng B-52 bằng tên lửa SAM-2"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đêm mở màn Chiến dịch phòng không 12 ngày đêm (18/12/1972)",
+      "mo_ta": "Ngay trong đêm mở màn Chiến dịch phòng không 12 ngày đêm bảo vệ Hà Nội – Hải Phòng (đã có mục riêng, 'Điện Biên Phủ trên không').",
+      "hien": [
+        "mo-man-chien-dich"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tiểu đoàn tên lửa 59 (Trung đoàn 261) trực chiến",
+      "mo_ta": "Tiểu đoàn tên lửa 59 (Trung đoàn 261) trực chiến trong đêm mở màn.",
+      "hien": [
+        "mo-man-chien-dich",
+        "td59"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trận địa tại cánh đồng Chuôm, xã Phù Lỗ, Đông Anh",
+      "mo_ta": "Trận địa của đơn vị đặt tại cánh đồng Chuôm, xã Phù Lỗ, huyện Đông Anh.",
+      "hien": [
+        "td59",
+        "phu-lo"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "20h13 ngày 18/12/1972: bắn rơi tại chỗ B-52 đầu tiên",
+      "mo_ta": "Tiểu đoàn tên lửa 59 lập chiến công có ý nghĩa biểu tượng đặc biệt: bắn rơi tại chỗ chiếc B-52 đầu tiên của toàn chiến dịch lúc 20h13 ngày 18/12/1972, đánh dấu lần đầu tiên 'pháo đài bay' B-52 bị hạ ngay trên bầu trời Hà Nội.",
+      "hien": [
+        "phu-lo",
+        "ban-roi-20h13"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Minh chứng khả năng đánh thắng B-52 bằng tên lửa SAM-2",
+      "mo_ta": "Chiến công minh chứng cho khả năng đánh thắng B-52 bằng tên lửa SAM-2 mà bộ đội Việt Nam đã dày công nghiên cứu cách đánh từ trước đó nhiều năm.",
+      "hien": [
+        "ban-roi-20h13",
+        "y-nghia-bieu-tuong"
+      ]
+    }
+  ],
+  "ket_qua": "Tiểu đoàn tên lửa 59 bắn rơi tại chỗ chiếc B-52 đầu tiên của toàn chiến dịch lúc 20h13 ngày 18/12/1972 tại cánh đồng Chuôm, xã Phù Lỗ, Đông Anh.",
+  "y_nghia": "Lần đầu tiên 'pháo đài bay' B-52 bị hạ ngay trên bầu trời Hà Nội, minh chứng khả năng đánh thắng B-52 bằng tên lửa SAM-2.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đêm 18, rạng sáng 19-12-1972: B-52 đầu tiên bị bắn rơi tại chỗ trên bầu trời Hà Nội — Báo Hà Nội mới — https://hanoimoi.vn/dem-18-rang-sang-19-12-1972-b-52-dau-tien-bi-ban-roi-tai-cho-tren-bau-troi-ha-noi-3120.html"
+  ]
+}

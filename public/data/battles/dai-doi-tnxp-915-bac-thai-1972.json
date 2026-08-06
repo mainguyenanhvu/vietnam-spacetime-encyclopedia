@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Sa đồ Đại đội Thanh niên xung phong 915 (Bắc Thái) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Ghi trang trọng, đúng số liệu nguồn (60 TNXP hy sinh), không thêm chi tiết cảm động ngoài nguồn. trang_thai=draft chờ soát §9.",
+  "id": "dai-doi-tnxp-915-bac-thai-1972",
+  "ten": "Đại đội Thanh niên xung phong 915 (Bắc Thái)",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Không quân Mỹ (B-52, tập kích chiến lược 12 ngày đêm)",
+  "dia_diem": "Ga Lưu Xá, phường Gia Sàng, TP Thái Nguyên",
+  "lien_quan_tinh": [
+    "thai-nguyen"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          500,
+          320
+        ],
+        [
+          900,
+          300
+        ]
+      ],
+      "nhan": "Tuyến đường sắt qua ga Lưu Xá"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-lap-915",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 180,
+      "nhan": "Đại đội 915 (Đội 91 Bắc Thái) thành lập 6/1972"
+    },
+    {
+      "id": "ga-luu-xa",
+      "kieu": "dia-danh",
+      "ben": "ta",
+      "x": 400,
+      "y": 300,
+      "nhan": "Giữ mạch giao thông trọng yếu tại ga Lưu Xá"
+    },
+    {
+      "id": "b52-ha-noi",
+      "kieu": "dia-danh",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Đợt tập kích chiến lược 12 ngày đêm bằng B-52 vào Hà Nội – Hải Phòng (đã có mục riêng)"
+    },
+    {
+      "id": "bom-trung-ga",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        700,
+        190
+      ],
+      "den": [
+        440,
+        300
+      ],
+      "nhan": "Tối 24/12/1972: máy bay Mỹ ném bom rải thảm trúng khu vực"
+    },
+    {
+      "id": "hy-sinh-60",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 470,
+      "nhan": "Toàn bộ 60 chiến sĩ TNXP có mặt hy sinh trong hầm trú ẩn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đại đội 915 (Đội 91 Bắc Thái) thành lập tháng 6/1972",
+      "mo_ta": "Đại đội 915 (Đội 91 Bắc Thái) thành lập tháng 6/1972.",
+      "hien": [
+        "thanh-lap-915"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đảm nhận giữ mạch giao thông trọng yếu tại ga Lưu Xá",
+      "mo_ta": "Đơn vị đảm nhận nhiệm vụ giữ vững mạch giao thông trọng yếu tại khu vực ga Lưu Xá trong giai đoạn ác liệt nhất của chiến tranh phá hoại lần thứ hai.",
+      "hien": [
+        "thanh-lap-915",
+        "ga-luu-xa"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trong đợt tập kích chiến lược 12 ngày đêm bằng B-52 vào Hà Nội – Hải Phòng",
+      "mo_ta": "Sự kiện diễn ra giữa đợt tập kích chiến lược 12 ngày đêm bằng B-52 vào Hà Nội - Hải Phòng.",
+      "hien": [
+        "ga-luu-xa",
+        "b52-ha-noi"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tối 24/12/1972: bom rải thảm trúng khu vực đơn vị đang bốc dỡ hàng hoá",
+      "mo_ta": "Tối 24/12/1972, máy bay Mỹ ném bom rải thảm trúng khu vực ga Lưu Xá đúng lúc đơn vị đang bốc dỡ hàng hoá quân sự.",
+      "hien": [
+        "ga-luu-xa",
+        "b52-ha-noi",
+        "bom-trung-ga"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Toàn bộ 60 chiến sĩ TNXP có mặt hy sinh",
+      "mo_ta": "Toàn bộ 60 chiến sĩ TNXP có mặt hy sinh ngay trong hầm trú ẩn — một trong những tổn thất tập thể lớn nhất của lực lượng TNXP trong cả cuộc kháng chiến chống Mỹ.",
+      "hien": [
+        "bom-trung-ga",
+        "hy-sinh-60"
+      ]
+    }
+  ],
+  "ket_qua": "Toàn bộ 60 chiến sĩ TNXP Đại đội 915 có mặt tại ga Lưu Xá hy sinh trong hầm trú ẩn tối 24/12/1972.",
+  "y_nghia": "Một trong những tổn thất tập thể lớn nhất của lực lượng TNXP trong cả cuộc kháng chiến chống Mỹ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tưởng niệm 50 năm Ngày hy sinh của 60 liệt sĩ TNXP Đại đội 915, Đội 91 Bắc Thái — Đảng bộ tỉnh Thái Nguyên — https://thainguyen.dcs.vn/trong-tinh/tuong-niem-50-nam-ngay-hy-sinh-cua-60-liet-si-tnxp-dai-doi-915-doi-91-bac-thai-24-12-1972-24-12-2022-544.html",
+    "Sống mãi huyền thoại Đại đội 915 — Cổng TTĐT tỉnh Thái Nguyên (Sở TT&TT) — https://sotttt.thainguyen.gov.vn/tin-tuc/-/asset_publisher/LgMJqmfcY8Ds/content/song-mai-huyen-thoai-ai-oi-915?inheritRedirect=true"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "ghi_chu": "Sa đồ Đường ống xăng dầu Trường Sơn — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mục về CÔNG TRÌNH/TUYẾN 1968–1975, các mốc là điểm dọc tuyến chứ không phải pha một trận. trang_thai=draft chờ soát §9.",
+  "id": "duong-ong-xang-dau-truong-son",
+  "ten": "Đường ống xăng dầu Trường Sơn",
+  "nam": 1968,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Không quân Mỹ (đánh phá tuyến vận chuyển)",
+  "dia_diem": "Từ Lạng Sơn, Quảng Ninh qua Nghệ - Tĩnh, cửa khẩu Mụ Giạ (Quảng Bình) sang Lào, tới Bù Gia Mập (Bình Phước)",
+  "lien_quan_tinh": [
+    "lang-son",
+    "quang-ninh",
+    "nghe-an",
+    "ha-tinh",
+    "quang-tri",
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          120,
+          100
+        ],
+        [
+          400,
+          260
+        ],
+        [
+          650,
+          380
+        ],
+        [
+          820,
+          490
+        ]
+      ],
+      "nhan": "Tuyến đường ống xăng dầu Trường Sơn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "diem-dau",
+      "kieu": "dia-danh",
+      "x": 120,
+      "y": 100,
+      "nhan": "Lạng Sơn – Quảng Ninh: điểm đầu tuyến ống"
+    },
+    {
+      "id": "qua-nghe-tinh",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 200,
+      "nhan": "Qua Nghệ An – Hà Tĩnh"
+    },
+    {
+      "id": "mu-giap",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 300,
+      "nhan": "Đèo Mụ Giạ (Quảng Bình) — vượt sang Lào"
+    },
+    {
+      "id": "nhanh-dong",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 380,
+      "nhan": "Nhánh Trường Sơn Đông: Quảng Trị – Thừa Thiên – Quảng Nam – Quảng Ngãi – Kon Tum"
+    },
+    {
+      "id": "nhanh-tay",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 460,
+      "nhan": "Nhánh qua Lào, Campuchia vào Nam Bộ"
+    },
+    {
+      "id": "diem-cuoi",
+      "kieu": "dia-danh",
+      "x": 850,
+      "y": 500,
+      "nhan": "Bù Gia Mập (Bình Phước) — điểm cuối tuyến ống"
+    },
+    {
+      "id": "luc-luong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 150,
+      "nhan": "9 trung đoàn đường ống, 2 trung đoàn công trình, 1 trung đoàn thông tin"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Từ 1968: Bộ đội Trường Sơn xây dựng hệ thống đường ống xăng dầu",
+      "mo_ta": "Từ năm 1968, Bộ đội Trường Sơn bắt đầu xây dựng hệ thống đường ống dẫn xăng dầu để tránh dùng ô tô dễ bị bom đánh phá.",
+      "hien": [
+        "diem-dau"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Qua Nghệ An – Hà Tĩnh",
+      "mo_ta": "Tuyến ống kéo dài qua địa bàn Nghệ An – Hà Tĩnh.",
+      "hien": [
+        "diem-dau",
+        "qua-nghe-tinh"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Vượt đèo Mụ Giạ (Quảng Bình) sang Lào",
+      "mo_ta": "Tuyến ống vượt đèo Mụ Giạ sang Lào.",
+      "hien": [
+        "qua-nghe-tinh",
+        "mu-giap"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hai nhánh: Trường Sơn Đông và qua Lào – Campuchia",
+      "mo_ta": "Phát triển thành hai nhánh: một xuyên Trường Sơn Đông qua Quảng Trị, Thừa Thiên, Quảng Nam, Quảng Ngãi, Kon Tum xuống Bình Phước; một vượt sang Lào, Campuchia rồi vào Nam Bộ.",
+      "hien": [
+        "mu-giap",
+        "nhanh-dong",
+        "nhanh-tay"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tới Bù Gia Mập (Bình Phước) — điểm cuối tuyến ống",
+      "mo_ta": "Nhánh Trường Sơn Đông xuống tới Bù Gia Mập, Bình Phước.",
+      "hien": [
+        "nhanh-dong",
+        "nhanh-tay",
+        "diem-cuoi"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Lực lượng: 9 trung đoàn đường ống, 2 trung đoàn công trình, 1 trung đoàn thông tin",
+      "mo_ta": "Hệ thống gồm 9 trung đoàn đường ống, 2 trung đoàn công trình, 1 trung đoàn thông tin cùng các xưởng cơ khí.",
+      "hien": [
+        "diem-cuoi",
+        "luc-luong"
+      ]
+    }
+  ],
+  "ket_qua": "Hệ thống đường ống xăng dầu Trường Sơn vận chuyển nhiên liệu khối lượng lớn xuyên suốt hai nhánh Đông – Tây Trường Sơn, từ 1968 đến 1975.",
+  "y_nghia": "Một trong những kỳ tích công trình quân sự lớn nhất của cuộc kháng chiến chống Mỹ, giải quyết bài toán vận chuyển nhiên liệu mà không phải dùng ô tô dễ bị bom đánh phá.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đường ống xăng dầu Trường Sơn - một dòng sông mang lửa — Báo Quân đội nhân dân — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/duong-ong-xang-dau-truong-son-mot-dong-song-mang-lua-574283"
+  ]
+}

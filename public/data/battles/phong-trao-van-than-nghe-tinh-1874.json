@@ -1,0 +1,118 @@
+{
+  "ghi_chu": "Sa đồ phong trào Văn Thân Nghệ – Tĩnh (1874) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Phong trào phản ánh sự phẫn nộ của tầng lớp sĩ phu yêu nước trước việc triều đình nhượng bộ Pháp, đồng thời gắn với mâu thuẫn xã hội thời kỳ đó giữa một bộ phận Văn Thân với cộng đồng Công giáo — vốn bị nghi ngờ cấu kết với thực dân Pháp. Trình bày theo hướng SGK/Viện Sử học đã duyệt trong overlay, giữ nguyên văn cụm mô tả, KHÔNG đi sâu bình luận, KHÔNG thêm từ ngữ mang sắc thái. Đại Nam thực lục chỉ ghi theo kỷ (Đệ ngũ kỷ), KHÔNG rõ số quyển — KHÔNG tự thêm số quyển. Quân số 'khoảng 3.000 người' là quân số nghĩa quân theo chính sử, không phải số liệu thương vong. trang_thai=draft chờ soát §9.",
+  "id": "phong-trao-van-than-nghe-tinh-1874",
+  "ten": "Phong trào Văn Thân Nghệ – Tĩnh (1874)",
+  "nam": 1874,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Tấn, Đặng Như Mai",
+  "doi_thu": "Quân triều đình (phản công theo Hòa ước Giáp Tuất)",
+  "dia_diem": "Các tỉnh Nghệ An, Hà Tĩnh",
+  "lien_quan_tinh": [
+    "nghe-an",
+    "ha-tinh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          80,
+          460
+        ],
+        [
+          400,
+          420
+        ],
+        [
+          750,
+          440
+        ]
+      ],
+      "nhan": "Nghệ An — Hà Tĩnh — vùng núi phía Tây"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-hoa-uoc-giap-tuat",
+      "kieu": "co",
+      "x": 130,
+      "y": 490,
+      "nhan": "Sau Hòa ước Giáp Tuất 1874 (thừa nhận chủ quyền Pháp ở Nam Kỳ)"
+    },
+    {
+      "id": "co-day-phong-trao-binh-tay-sat-ta",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 280,
+      "y": 430,
+      "nhan": "Trần Tấn, Đặng Như Mai dấy phong trào Văn Thân, khẩu hiệu 'Bình Tây, sát Tả', khoảng 3.000 người"
+    },
+    {
+      "id": "mui-lam-chu-nghe-tinh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        320,
+        415
+      ],
+      "den": [
+        540,
+        325
+      ],
+      "nhan": "Làm chủ hầu hết huyện Nghệ An (trừ tỉnh thành Vinh), đánh sang Hà Tĩnh (7/1874)"
+    },
+    {
+      "id": "co-rut-vao-nui",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 880,
+      "y": 190,
+      "nhan": "8/1874: trước sức phản công của quân triều đình, nghĩa quân rút vào vùng núi phía Tây"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sau Hòa ước Giáp Tuất 1874",
+      "mo_ta": "Sau khi triều đình ký Hòa ước Giáp Tuất 1874 (thừa nhận chủ quyền Pháp ở Nam Kỳ).",
+      "hien": [
+        "co-hoa-uoc-giap-tuat"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trần Tấn, Đặng Như Mai dấy phong trào Văn Thân",
+      "mo_ta": "Sĩ phu Trần Tấn cùng học trò Đặng Như Mai dấy lên phong trào Văn Thân với khẩu hiệu 'Bình Tây, sát Tả', quy tụ khoảng 3.000 người.",
+      "hien": [
+        "co-hoa-uoc-giap-tuat",
+        "co-day-phong-trao-binh-tay-sat-ta"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Làm chủ Nghệ An, đánh sang Hà Tĩnh (7/1874)",
+      "mo_ta": "Nghĩa quân làm chủ hầu hết các huyện Nghệ An (trừ tỉnh thành Vinh) rồi đánh sang Hà Tĩnh trong tháng 7/1874.",
+      "hien": [
+        "co-day-phong-trao-binh-tay-sat-ta",
+        "mui-lam-chu-nghe-tinh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Rút vào vùng núi phía Tây (8/1874)",
+      "mo_ta": "Sang tháng 8/1874, trước sức phản công của quân triều đình, nghĩa quân phải rút vào vùng núi phía Tây Nghệ – Tĩnh.",
+      "hien": [
+        "mui-lam-chu-nghe-tinh",
+        "co-rut-vao-nui"
+      ]
+    }
+  ],
+  "ket_qua": "Sau Hòa ước Giáp Tuất 1874, Trần Tấn cùng Đặng Như Mai dấy phong trào Văn Thân khoảng 3.000 người, làm chủ hầu hết Nghệ An rồi đánh sang Hà Tĩnh tháng 7/1874; sang tháng 8/1874, trước sức phản công của quân triều đình, nghĩa quân phải rút vào vùng núi phía Tây Nghệ – Tĩnh.",
+  "y_nghia": "Phong trào phản ánh sự phẫn nộ của tầng lớp sĩ phu yêu nước trước việc triều đình nhượng bộ Pháp, đồng thời gắn với mâu thuẫn xã hội thời kỳ đó giữa một bộ phận Văn Thân với cộng đồng Công giáo — vốn bị nghi ngờ cấu kết với thực dân Pháp. Trình bày theo hướng SGK và các công trình sử học, không đi sâu bình luận.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học) — phong trào Văn Thân chống Pháp",
+    "Đại Nam thực lục — Chính biên, Đệ ngũ kỷ"
+  ]
+}

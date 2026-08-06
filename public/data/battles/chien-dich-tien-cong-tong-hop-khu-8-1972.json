@@ -1,0 +1,115 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch tiến công tổng hợp chống phá bình định ở Khu 8 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mỹ Tho/Gò Công (nay Đồng Tháp), Kiến Tường (nay Tây Ninh), Kiến Phong (nay Đồng Tháp), Kiến Hòa (nay Vĩnh Long) — theo sáp nhập 01/07/2025. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-tien-cong-tong-hop-khu-8-1972",
+  "ten": "Chiến dịch tiến công tổng hợp chống phá bình định ở Khu 8",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Chính quyền Sài Gòn (chương trình 'bình định')",
+  "dia_diem": "Mỹ Tho, Kiến Tường, Kiến Phong, Gò Công, Kiến Hòa (Khu 8, đồng bằng Nam Bộ)",
+  "lien_quan_tinh": [
+    "dong-thap",
+    "tay-ninh",
+    "vinh-long"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "chien-dich-nguyen-hue",
+      "kieu": "dia-danh",
+      "x": 180,
+      "y": 150,
+      "nhan": "Sau khi chiến dịch Nguyễn Huệ 1972 mở màn ở Đông Nam Bộ, Tây Nguyên (đã có mục chung)"
+    },
+    {
+      "id": "khu8",
+      "kieu": "dia-danh",
+      "ben": "ta",
+      "x": 420,
+      "y": 300,
+      "nhan": "Khu 8: Mỹ Tho, Kiến Tường, Kiến Phong, Gò Công, Kiến Hòa"
+    },
+    {
+      "id": "chinh-tri-binh-van",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 680,
+      "y": 200,
+      "nhan": "Kết hợp quân sự, chính trị, binh vận"
+    },
+    {
+      "id": "chong-binh-dinh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        450,
+        340
+      ],
+      "den": [
+        680,
+        420
+      ],
+      "nhan": "Chống phá chương trình 'bình định' của chính quyền Sài Gòn"
+    },
+    {
+      "id": "mo-rong-vung-gp",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 460,
+      "nhan": "Mở rộng, giữ vững vùng giải phóng ở đồng bằng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sau chiến dịch Nguyễn Huệ 1972 mở màn ở Đông Nam Bộ, Tây Nguyên",
+      "mo_ta": "Sau khi chiến dịch Nguyễn Huệ 1972 (đã có mục chung trong hệ thống dữ liệu) mở màn ở Đông Nam Bộ và Tây Nguyên.",
+      "hien": [
+        "chien-dich-nguyen-hue"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Khu 8 mở chiến dịch tiến công tổng hợp, kết hợp quân sự – chính trị – binh vận",
+      "mo_ta": "Lực lượng vũ trang Khu 8 (Mỹ Tho, Kiến Tường, Kiến Phong, Gò Công, Kiến Hòa) đồng thời mở chiến dịch tiến công tổng hợp — kết hợp quân sự, chính trị, binh vận.",
+      "hien": [
+        "khu8",
+        "chinh-tri-binh-van"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chống phá chương trình 'bình định' của chính quyền Sài Gòn tại đồng bằng",
+      "mo_ta": "Chiến dịch nhằm chống phá chương trình 'bình định' của chính quyền Sài Gòn tại đồng bằng sông Cửu Long.",
+      "hien": [
+        "khu8",
+        "chong-binh-dinh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hướng phối hợp ít được biết đến hơn so với Đông Nam Bộ, Trị – Thiên",
+      "mo_ta": "Đây là một hướng phối hợp ít được biết đến hơn so với các mặt trận chính ở Đông Nam Bộ và Trị - Thiên trong cùng năm 1972.",
+      "hien": [
+        "chien-dich-nguyen-hue",
+        "khu8"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở rộng và giữ vững vùng giải phóng ở đồng bằng sông Cửu Long",
+      "mo_ta": "Chiến dịch có ý nghĩa quan trọng trong việc mở rộng và giữ vững vùng giải phóng ở đồng bằng.",
+      "hien": [
+        "chong-binh-dinh",
+        "mo-rong-vung-gp"
+      ]
+    }
+  ],
+  "ket_qua": "Lực lượng vũ trang Khu 8 chống phá chương trình 'bình định', mở rộng và giữ vững vùng giải phóng ở đồng bằng sông Cửu Long.",
+  "y_nghia": "Hướng phối hợp ít được biết đến hơn so với các mặt trận chính ở Đông Nam Bộ và Trị - Thiên trong cùng năm 1972, nhưng có ý nghĩa quan trọng.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Thắng lợi của chiến dịch tiến công tổng hợp chống phá bình định ở khu 8, đồng bằng Nam Bộ — Báo Quân đội nhân dân — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/thang-loi-cua-chien-dich-tien-cong-tong-hop-chong-pha-binh-dinh-o-khu-8-dong-bang-nam-bo-261591"
+  ]
+}

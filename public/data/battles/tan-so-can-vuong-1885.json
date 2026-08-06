@@ -1,0 +1,119 @@
+{
+  "ghi_chu": "Sa đồ Chiếu Cần Vương – Thành Tân Sở (1885) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Bước 1 kế thừa nguyên trạng diễn biến đã dựng trong kinh-thanh-hue-that-thu-1885.json (cùng dự án, cùng nguồn Đại Nam thực lục) — KHÔNG suy diễn thêm ngoài file đó. Overlay gốc có trang_thai=reviewed, nhưng sa đồ này là hồ sơ MỚI nên đặt trang_thai=draft chờ soát §9 theo quy định chung. trang_thai=draft chờ soát §9.",
+  "id": "tan-so-can-vuong-1885",
+  "ten": "Chiếu Cần Vương – Thành Tân Sở (1885)",
+  "nam": 1885,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Vua Hàm Nghi · Tôn Thất Thuyết",
+  "doi_thu": "Pháp",
+  "dia_diem": "Thành Tân Sở, Cam Lộ, Quảng Trị",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          80,
+          460
+        ],
+        [
+          400,
+          420
+        ],
+        [
+          750,
+          440
+        ]
+      ],
+      "nhan": "Đường ra sơn phòng Tân Sở, Cam Lộ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-ho-gia-tan-so",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 130,
+      "y": 490,
+      "nhan": "Sau khi kinh thành Huế thất thủ (5/7/1885), Tôn Thất Thuyết hộ giá vua Hàm Nghi ra sơn phòng Tân Sở"
+    },
+    {
+      "id": "co-cieu-can-vuong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 430,
+      "y": 370,
+      "nhan": "8 ngày sau: vua Hàm Nghi hạ Chiếu Cần Vương tại Tân Sở"
+    },
+    {
+      "id": "mui-huong-ung-khap-noi",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        470,
+        355
+      ],
+      "den": [
+        690,
+        265
+      ],
+      "nhan": "Hưởng ứng khắp Trung – Bắc Kỳ (Quảng Ngãi, Bình Định, Quảng Nam...)"
+    },
+    {
+      "id": "co-mo-dau-phong-trao",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 880,
+      "y": 190,
+      "nhan": "Mở đầu phong trào Cần Vương kháng Pháp có tổ chức"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tôn Thất Thuyết hộ giá vua Hàm Nghi ra Tân Sở",
+      "mo_ta": "Sau khi kinh thành Huế thất thủ (5/7/1885), Tôn Thất Thuyết hộ giá vua Hàm Nghi rời kinh thành, ra sơn phòng Tân Sở (Cam Lộ, Quảng Trị) lánh nạn (xem kinh-thanh-hue-that-thu-1885).",
+      "hien": [
+        "quan-ta-ho-gia-tan-so"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Vua Hàm Nghi hạ Chiếu Cần Vương tại Tân Sở",
+      "mo_ta": "Tám ngày sau, tại Tân Sở, vua Hàm Nghi hạ Chiếu Cần Vương, kêu gọi văn thân – sĩ phu cả nước phò vua cứu nước chống Pháp.",
+      "hien": [
+        "quan-ta-ho-gia-tan-so",
+        "co-cieu-can-vuong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Hưởng ứng khắp Trung – Bắc Kỳ",
+      "mo_ta": "Chiếu Cần Vương nhanh chóng được hưởng ứng khắp Trung Kỳ và Bắc Kỳ, như các cuộc dấy binh tại Quảng Ngãi, Bình Định, Quảng Nam ngay trong năm 1885.",
+      "hien": [
+        "co-cieu-can-vuong",
+        "mui-huong-ung-khap-noi"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mở đầu phong trào Cần Vương",
+      "mo_ta": "Mở đầu giai đoạn kháng chiến có tổ chức rộng khắp mang tên phong trào Cần Vương, kéo dài đến cuối thập niên 1880.",
+      "hien": [
+        "mui-huong-ung-khap-noi",
+        "co-mo-dau-phong-trao"
+      ]
+    }
+  ],
+  "ket_qua": "Tôn Thất Thuyết hộ giá vua Hàm Nghi ra sơn phòng Tân Sở sau khi kinh thành Huế thất thủ; tám ngày sau, vua hạ Chiếu Cần Vương tại đây, phát động phong trào văn thân – sĩ phu cả nước phò vua cứu nước chống Pháp, nhanh chóng được hưởng ứng khắp Trung – Bắc Kỳ.",
+  "y_nghia": "Nơi phát tích phong trào Cần Vương — giai đoạn kháng chiến có tổ chức rộng khắp Trung – Bắc Kỳ cuối thế kỷ 19.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lịch sử Việt Nam (Viện Sử học) — Chiếu Cần Vương",
+    "Sở VHTTDL Quảng Trị — di tích Thành Tân Sở, Cam Lộ (chờ soát toạ độ)",
+    "Đại Nam thực lục — Chính biên Đệ lục kỷ phụ biên"
+  ]
+}

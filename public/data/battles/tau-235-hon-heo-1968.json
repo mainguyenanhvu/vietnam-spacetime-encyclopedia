@@ -1,0 +1,145 @@
+{
+  "ghi_chu": "Sa đồ Tàu 235 tại vịnh Hòn Hèo (Tết Mậu Thân 1968) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Ghi trang trọng theo đúng số liệu nguồn, không thêm chi tiết cảm động ngoài nguồn. trang_thai=draft chờ soát §9.",
+  "id": "tau-235-hon-heo-1968",
+  "ten": "Tàu 235 tại vịnh Hòn Hèo (Tết Mậu Thân 1968)",
+  "nam": 1968,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Thuyền trưởng Nguyễn Phan Vinh",
+  "doi_thu": "7 tàu chiến, hàng chục trực thăng và 2 tiểu đoàn biệt kích Mỹ – Sài Gòn",
+  "dia_diem": "Vịnh Hòn Hèo, Ninh Vân (nay Ninh Hòa, Khánh Hòa)",
+  "lien_quan_tinh": [
+    "khanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          100,
+          200
+        ],
+        [
+          500,
+          180
+        ],
+        [
+          900,
+          220
+        ]
+      ],
+      "nhan": "Vịnh Hòn Hèo"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "tau235",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 250,
+      "y": 260,
+      "nhan": "Tàu 235 (Đoàn 125 Hải quân) chở 14 tấn vũ khí"
+    },
+    {
+      "id": "phat-hien-bao-vay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 170,
+      "nhan": "7 tàu chiến, trực thăng, 2 tiểu đoàn biệt kích phát hiện, bao vây"
+    },
+    {
+      "id": "bai-ninh-phuoc",
+      "kieu": "dia-danh",
+      "ben": "ta",
+      "x": 280,
+      "y": 420,
+      "nhan": "Bãi Ninh Phước — thả vũ khí đóng gói túi nylon"
+    },
+    {
+      "id": "bai-ninh-van",
+      "kieu": "dia-danh",
+      "ben": "ta",
+      "x": 560,
+      "y": 460,
+      "nhan": "Bãi Ninh Vân — đánh lạc hướng địch"
+    },
+    {
+      "id": "mui-chuyen-huong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        320,
+        400
+      ],
+      "den": [
+        540,
+        440
+      ],
+      "nhan": "Chuyển hướng đánh lạc hướng, tìm cơ hội thoát vòng vây"
+    },
+    {
+      "id": "hy-sinh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 400,
+      "nhan": "Trận chiến không cân sức — phần lớn thủy thủ đoàn hy sinh"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đêm 29/2 rạng 1/3/1968: Tàu 235 chở 14 tấn vũ khí cập bến Hòn Hèo",
+      "mo_ta": "Trong dịp Tết Mậu Thân, tàu 235 (Đoàn 125 Hải quân) chở 14 tấn vũ khí bí mật cập bến Hòn Hèo (Khánh Hòa).",
+      "hien": [
+        "tau235"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bị lực lượng địch phát hiện, bao vây",
+      "mo_ta": "Tàu bị lực lượng địch gồm 7 tàu chiến, hàng chục trực thăng và 2 tiểu đoàn biệt kích Mỹ - Sài Gòn phát hiện, bao vây.",
+      "hien": [
+        "tau235",
+        "phat-hien-bao-vay"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Áp sát bãi Ninh Phước, thả vũ khí",
+      "mo_ta": "Thuyền trưởng Nguyễn Phan Vinh chỉ huy cho tàu áp sát bãi Ninh Phước để thả vũ khí, đóng gói trong túi nylon.",
+      "hien": [
+        "tau235",
+        "bai-ninh-phuoc"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chuyển hướng sang bãi Ninh Vân để đánh lạc hướng địch",
+      "mo_ta": "Sau đó nhanh chóng chuyển hướng sang bãi Ninh Vân để đánh lạc hướng địch khỏi vị trí giấu hàng, tìm cơ hội thoát vòng vây.",
+      "hien": [
+        "bai-ninh-phuoc",
+        "bai-ninh-van",
+        "mui-chuyen-huong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trận chiến không cân sức — phần lớn thủy thủ đoàn hy sinh",
+      "mo_ta": "Trong trận chiến không cân sức, phần lớn thủy thủ đoàn hy sinh; tàu 235 là một trong 4 con tàu (cùng 165, 56, 54) nhận nhiệm vụ đặc biệt vận chuyển vũ khí đợt Tết Mậu Thân 1968.",
+      "hien": [
+        "bai-ninh-van",
+        "phat-hien-bao-vay",
+        "hy-sinh"
+      ]
+    }
+  ],
+  "ket_qua": "Vũ khí được thả xuống bãi Ninh Phước; tàu 235 chuyển hướng đánh lạc hướng địch, chiến đấu không cân sức và phần lớn thủy thủ đoàn hy sinh.",
+  "y_nghia": "Một trong 4 con tàu không số nhận nhiệm vụ đặc biệt vận chuyển vũ khí đợt Tết Mậu Thân 1968, nay là di tích quốc gia; khác với các bến K15 Đồ Sơn, Vàm Lũng, Lộc An (đã có trong lớp di tích cách mạng) — đó là các BẾN nhận hàng, còn đây là TRẬN ĐÁNH của một con tàu cụ thể trên biển.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tàu 235 \"không số\" là di tích quốc gia — Báo Tuổi Trẻ — https://tuoitre.vn/tau-235-khong-so-la-di-tich-quoc-gia-605702.htm",
+    "Vùng biển Ninh Vân - nơi \"con tàu không số 235\" phát nổ vang trời — Báo Pháp luật TP.HCM — https://plo.vn/vung-bien-ninh-van-noi-con-tau-khong-so-235-phat-no-vang-troi-post653772.html"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "ghi_chu": "Sa đồ quân Xiêm đánh chiếm Hà Tiên – Châu Đốc (1833) — phần 1/2, tiếp nối bởi tran-vam-nao-co-ho-1834 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Đại Nam thực lục chỉ ghi theo kỷ (Minh Mạng), KHÔNG rõ số quyển — KHÔNG tự thêm số quyển. Quy mô quân Xiêm theo chính sử mang tính ước lệ. trang_thai=draft chờ soát §9.",
+  "id": "xiem-chiem-ha-tien-chau-doc-1833",
+  "ten": "Quân Xiêm đánh chiếm Hà Tiên – Châu Đốc (1833)",
+  "nam": 1833,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Xuân, Trương Minh Giảng (Đại Nam)",
+  "doi_thu": "Xiêm La — Chao Phraya Bodindecha, Chao Phraya Phrakhlang",
+  "dia_diem": "Hà Tiên và Châu Đốc, tỉnh An Giang",
+  "lien_quan_tinh": [
+    "an-giang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          60,
+          470
+        ],
+        [
+          400,
+          440
+        ],
+        [
+          750,
+          470
+        ]
+      ],
+      "nhan": "Vịnh Thái Lan — cửa biển Hà Tiên"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          300,
+          300
+        ],
+        [
+          550,
+          280
+        ],
+        [
+          800,
+          260
+        ]
+      ],
+      "nhan": "Sông Hậu"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-dep-le-van-khoi",
+      "kieu": "dia-danh",
+      "x": 130,
+      "y": 490,
+      "nhan": "Đại Nam đang tập trung dẹp loạn Lê Văn Khôi ở Gia Định"
+    },
+    {
+      "id": "thuyen-dich-xiem-tien-cong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 280,
+      "y": 430,
+      "nhan": "11/1833: Chao Phraya Bodindecha (lục quân), Chao Phraya Phrakhlang (thủy quân) tiến đánh"
+    },
+    {
+      "id": "mui-chiem-ha-tien-chau-doc",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        320,
+        415
+      ],
+      "den": [
+        540,
+        325
+      ],
+      "nhan": "Chiếm Hà Tiên, Châu Đốc"
+    },
+    {
+      "id": "thanh-ha-tien-chau-doc",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 580,
+      "y": 310,
+      "nhan": "Hà Tiên, Châu Đốc thất thủ, quân Xiêm tiến theo sông Hậu vào Nam Kỳ"
+    },
+    {
+      "id": "quan-ta-chong-giu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 880,
+      "y": 190,
+      "nhan": "Minh Mạng điều Nguyễn Xuân, Trương Minh Giảng lên chống giữ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đại Nam đang tập trung dẹp loạn Lê Văn Khôi",
+      "mo_ta": "Đại Nam đang tập trung dẹp loạn Lê Văn Khôi ở Gia Định thì bị quân Xiêm bất ngờ đánh úp biên giới Tây Nam.",
+      "hien": [
+        "boi-canh-dep-le-van-khoi"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Xiêm La cử đại quân xâm lược (11/1833)",
+      "mo_ta": "Tháng 11/1833, Xiêm La cử Chao Phraya Bodindecha đem lục quân cùng các hoàng tử Chân Lạp Ang Em, Ang Duong xâm lược Chân Lạp; đồng thời Chao Phraya Phrakhlang đưa thủy quân đánh cửa biển Hà Tiên.",
+      "hien": [
+        "boi-canh-dep-le-van-khoi",
+        "thuyen-dich-xiem-tien-cong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân Xiêm chiếm Hà Tiên, Châu Đốc",
+      "mo_ta": "Quân Xiêm nhanh chóng chiếm Hà Tiên, Châu Đốc rồi theo sông Hậu tiến sâu vào Nam Kỳ.",
+      "hien": [
+        "thuyen-dich-xiem-tien-cong",
+        "thanh-ha-tien-chau-doc",
+        "mui-chiem-ha-tien-chau-doc"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Minh Mạng điều quân chống giữ",
+      "mo_ta": "Minh Mạng phải điều một phần quân dưới quyền Nguyễn Xuân, Trương Minh Giảng lên chống giữ.",
+      "hien": [
+        "thanh-ha-tien-chau-doc",
+        "quan-ta-chong-giu"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Xiêm chiếm Hà Tiên, Châu Đốc rồi tiến sâu vào Nam Kỳ; Minh Mạng điều Nguyễn Xuân, Trương Minh Giảng lên chống giữ. Diễn biến tiếp theo xem tran-vam-nao-co-ho-1834.",
+  "y_nghia": "Mở đầu cuộc chiến tranh Việt–Xiêm 1833–1834, diễn ra trong lúc Đại Nam còn đang dẹp loạn Lê Văn Khôi ở Gia Định.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

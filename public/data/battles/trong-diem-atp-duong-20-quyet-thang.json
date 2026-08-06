@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ Trọng điểm ATP, đường 20 Quyết Thắng — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mục về TRỌNG ĐIỂM/TUYẾN ĐƯỜNG 1966–1972, không phải một trận đơn. Bố Trạch (Quảng Bình cũ) nay thuộc tỉnh Quảng Trị (hợp nhất 01/07/2025). trang_thai=draft chờ soát §9.",
+  "id": "trong-diem-atp-duong-20-quyet-thang",
+  "ten": "Trọng điểm ATP (Cua chữ A – ngầm Ta Lê – đèo Phu La Nhích), đường 20 Quyết Thắng",
+  "nam": 1966,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Không quân Mỹ",
+  "dia_diem": "Đường 20 Quyết Thắng, Bố Trạch (Quảng Bình cũ, nay Quảng Trị), giáp biên giới Việt – Lào",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          200
+        ],
+        [
+          450,
+          250
+        ],
+        [
+          850,
+          300
+        ]
+      ],
+      "nhan": "Đường 20 Quyết Thắng — nhánh đường Hồ Chí Minh"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          600,
+          150
+        ],
+        [
+          800,
+          100
+        ],
+        [
+          950,
+          180
+        ]
+      ],
+      "nhan": "Dãy núi biên giới Việt – Lào"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "duong20",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 180,
+      "nhan": "Đường 20 Quyết Thắng — nối Phong Nha (Quảng Bình) sang Lào"
+    },
+    {
+      "id": "atp",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 300,
+      "nhan": "ATP: Cua chữ A – ngầm Ta Lê – đèo Phu La Nhích"
+    },
+    {
+      "id": "danh-pha-my",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        880,
+        130
+      ],
+      "den": [
+        600,
+        270
+      ],
+      "nhan": "Không quân Mỹ tập trung đánh phá liên tục nhiều năm"
+    },
+    {
+      "id": "gd-ac-liet",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 460,
+      "nhan": "Ác liệt nhất mùa khô 1970 – 1971"
+    },
+    {
+      "id": "vo-nguyen-giap-tham",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 460,
+      "nhan": "Đại tướng Võ Nguyên Giáp thăm lại (3/1973): 'một kỳ công, kỳ tích, kỳ quan'"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đường 20 Quyết Thắng — nhánh chiến lược của đường Hồ Chí Minh",
+      "mo_ta": "Đường 20 Quyết Thắng là một nhánh quan trọng của đường Hồ Chí Minh xuyên Trường Sơn, nối từ Phong Nha (Quảng Bình) sang Lào.",
+      "hien": [
+        "duong20"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "ATP — 'trọng điểm của các trọng điểm'",
+      "mo_ta": "ATP (Cua chữ A, ngầm Ta Lê, đèo Phu La Nhích) là trọng điểm đánh phá ác liệt nhất trong số 42 trọng điểm trên toàn tuyến.",
+      "hien": [
+        "duong20",
+        "atp"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Không quân Mỹ tập trung hoả lực đánh phá liên tục nhiều năm",
+      "mo_ta": "Không quân Mỹ coi ATP là 'trọng điểm của các trọng điểm', tập trung hỏa lực đánh phá liên tục nhiều năm nhằm cắt đứt tuyến chi viện chiến lược.",
+      "hien": [
+        "duong20",
+        "atp",
+        "danh-pha-my"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Ác liệt nhất mùa khô 1970 – 1971",
+      "mo_ta": "Cường độ đánh phá tại ATP lên đến đỉnh điểm trong mùa khô 1970 – 1971.",
+      "hien": [
+        "atp",
+        "danh-pha-my",
+        "gd-ac-liet"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "'Một kỳ công, kỳ tích, kỳ quan' (3/1973)",
+      "mo_ta": "Đại tướng Võ Nguyên Giáp khi thăm lại tuyến đường này tháng 3/1973 đã gọi Đường 20 Quyết Thắng là 'một kỳ công, kỳ tích, kỳ quan'.",
+      "hien": [
+        "atp",
+        "vo-nguyen-giap-tham"
+      ]
+    }
+  ],
+  "ket_qua": "Đường 20 Quyết Thắng và trọng điểm ATP được giữ vững thông suốt qua nhiều năm đánh phá ác liệt của không quân Mỹ.",
+  "y_nghia": "Được Đại tướng Võ Nguyên Giáp gọi là 'một kỳ công, kỳ tích, kỳ quan' — biểu tượng cho ý chí giữ vững tuyến chi viện chiến lược Trường Sơn.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đường 20 Quyết thắng - Sợi chỉ đỏ xuyên Trường Sơn — Báo Quân đội nhân dân — https://sknc.qdnd.vn/dia-chi-do/duong-20-quyet-thang-soi-chi-do-xuyen-truong-son-499407",
+    "Khúc tráng ca đường 20 Quyết thắng — Báo Nhân Dân — https://nhandan.vn/khuc-trang-ca-duong-20-quyet-thang-post707518.html"
+  ]
+}

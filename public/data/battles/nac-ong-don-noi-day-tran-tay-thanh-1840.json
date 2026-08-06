@@ -1,0 +1,124 @@
+{
+  "ghi_chu": "Sa đồ Nặc Ông Đôn nổi dậy, quân Xiêm tiến vào Trấn Tây thành (1840) — phần 1/3 chuỗi Trấn Tây thành, tiếp nối bởi truong-minh-giang-rut-quan-an-giang-1841 rồi dai-nam-vay-oudong-hoa-uoc-1845 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. NHẠY CẢM — quan hệ Việt Nam–Campuchia thời Nguyễn: thuật theo chính sử/Viện Sử học, không bình luận đánh giá về quốc gia láng giềng, không dùng từ mang sắc thái. Sự kiện diễn ra trên đất Chân Lạp nên không gắn lien_quan_tinh (theo overlay). Đại Nam thực lục chỉ ghi theo kỷ (Minh Mạng), KHÔNG rõ số quyển — KHÔNG tự thêm số quyển. Không đưa số liệu thương vong cụ thể. trang_thai=draft chờ soát §9.",
+  "id": "nac-ong-don-noi-day-tran-tay-thanh-1840",
+  "ten": "Nặc Ông Đôn nổi dậy, quân Xiêm tiến vào Trấn Tây thành (1840)",
+  "nam": 1840,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trương Minh Giảng, Phạm Văn Điển, Nguyễn Tiến Lâm (Đại Nam)",
+  "doi_thu": "Nặc Ông Đôn — được Xiêm La hậu thuẫn",
+  "dia_diem": "Oudong (U Đông) và vùng phụ cận, Chân Lạp (nay là Campuchia)",
+  "lien_quan_tinh": [],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          80,
+          480
+        ],
+        [
+          400,
+          440
+        ],
+        [
+          750,
+          420
+        ]
+      ],
+      "nhan": "Vùng Oudong và phụ cận"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-tran-tay-1836",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 130,
+      "y": 490,
+      "nhan": "Trấn Tây thành, lập năm 1836, Đại Nam cai trị trực tiếp"
+    },
+    {
+      "id": "quan-dich-nac-ong-don",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 280,
+      "y": 430,
+      "nhan": "Nặc Ông Đôn — em Nặc Ông Chân — nổi dậy, được Xiêm hậu thuẫn"
+    },
+    {
+      "id": "mui-xiem-tien-dong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        320,
+        415
+      ],
+      "den": [
+        540,
+        325
+      ],
+      "nhan": "Hàng vạn quân Xiêm tiến đóng tại Oudong"
+    },
+    {
+      "id": "quan-ta-doi-pho",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 580,
+      "y": 310,
+      "nhan": "Phạm Văn Điển, Nguyễn Tiến Lâm được cử sang đối phó"
+    },
+    {
+      "id": "co-khong-thang",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 880,
+      "y": 190,
+      "nhan": "Không thắng được, mở đầu chiến tranh Việt–Xiêm 1840–1845"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trấn Tây thành, lập năm 1836",
+      "mo_ta": "Đại Nam lập Trấn Tây thành năm 1836, đặt chính sách cai trị trực tiếp tại Chân Lạp.",
+      "hien": [
+        "thanh-tran-tay-1836"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nặc Ông Đôn nổi dậy, được Xiêm hậu thuẫn",
+      "mo_ta": "Bất bình với chính sách cai trị của Đại Nam tại Trấn Tây thành, hoàng thân Nặc Ông Đôn — em Nặc Ông Chân — được Xiêm hậu thuẫn nổi dậy chống quyền bảo hộ của Đại Nam.",
+      "hien": [
+        "thanh-tran-tay-1836",
+        "quan-dich-nac-ong-don"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Hàng vạn quân Xiêm tiến đóng tại Oudong",
+      "mo_ta": "Hàng vạn quân Xiêm tiến đóng tại Oudong.",
+      "hien": [
+        "quan-dich-nac-ong-don",
+        "mui-xiem-tien-dong"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đại Nam cử tướng đối phó nhưng không thắng được",
+      "mo_ta": "Các tướng Phạm Văn Điển, Nguyễn Tiến Lâm được Minh Mạng cử sang đối phó nhưng không thắng được, mở đầu chiến tranh Việt–Xiêm kéo dài đến 1845.",
+      "hien": [
+        "quan-ta-doi-pho",
+        "co-khong-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Nặc Ông Đôn được Xiêm hậu thuẫn nổi dậy chống Trấn Tây thành; quân Đại Nam dưới quyền Phạm Văn Điển, Nguyễn Tiến Lâm không thắng được, mở đầu chiến tranh Việt–Xiêm kéo dài đến 1845. Diễn biến tiếp theo xem truong-minh-giang-rut-quan-an-giang-1841.",
+  "y_nghia": "Mở đầu giai đoạn khủng hoảng của Trấn Tây thành, dẫn tới việc Đại Nam rút quân khỏi Chân Lạp năm 1841.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

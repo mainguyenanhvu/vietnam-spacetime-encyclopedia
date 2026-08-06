@@ -1,0 +1,126 @@
+{
+  "ghi_chu": "Sa đồ Lê Văn Duyệt hộ tống Nặc Ông Chân về Nam Vang (1813) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Sự kiện diễn ra chủ yếu trên đất Chân Lạp; Đại Nam thực lục chỉ ghi theo kỷ (Gia Long), KHÔNG rõ số quyển — KHÔNG tự thêm số quyển. Không đưa số liệu quân số vì nguồn không nêu cụ thể. Phần đầu chuỗi sự kiện Việt–Xiêm–Chân Lạp nửa đầu XIX, nối tiếp bởi chuỗi Trấn Tây thành 1840–1845. trang_thai=draft chờ soát §9.",
+  "id": "le-van-duyet-ho-tong-nac-ong-chan-1813",
+  "ten": "Lê Văn Duyệt hộ tống Nặc Ông Chân về Nam Vang, lập phòng tuyến chống Xiêm (1813)",
+  "nam": 1813,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Văn Duyệt, Ngô Nhân Tĩnh, Nguyễn Văn Thoại",
+  "doi_thu": "Xiêm La (nguy cơ tái xâm lấn Chân Lạp)",
+  "dia_diem": "Nam Vang (Phnom Penh), Chân Lạp — xuất phát từ Châu Đốc, An Giang",
+  "lien_quan_tinh": [
+    "an-giang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          500
+        ],
+        [
+          400,
+          450
+        ],
+        [
+          700,
+          400
+        ]
+      ],
+      "nhan": "Đường thủy Châu Đốc – Nam Vang"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-xiem-ep",
+      "kieu": "dia-danh",
+      "x": 130,
+      "y": 490,
+      "nhan": "Xiêm ép Chân Lạp, Nặc Ông Chân chạy sang Gia Định cầu cứu (1812)"
+    },
+    {
+      "id": "thuyen-le-van-duyet",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 280,
+      "y": 430,
+      "nhan": "Lê Văn Duyệt, Ngô Nhân Tĩnh đem thủy quân hộ tống"
+    },
+    {
+      "id": "mui-ho-tong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        310,
+        420
+      ],
+      "den": [
+        550,
+        320
+      ],
+      "nhan": "Hộ tống Nặc Ông Chân về Nam Vang (2/1813)"
+    },
+    {
+      "id": "thanh-nam-vang",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 580,
+      "y": 310,
+      "nhan": "Xây thành Nam Vang, lũy Lô Yêm chứa quân lương"
+    },
+    {
+      "id": "quan-nguyen-van-thoai",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 880,
+      "y": 190,
+      "nhan": "Nguyễn Văn Thoại ở lại trấn giữ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Xiêm ép Chân Lạp, Nặc Ông Chân cầu cứu (1812)",
+      "mo_ta": "Năm 1812, quân Xiêm ép Chân Lạp; vua Nặc Ông Chân chạy sang Gia Định cầu cứu, được Gia Long cho tá túc.",
+      "hien": [
+        "boi-canh-xiem-ep"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lê Văn Duyệt đem thủy quân hộ tống về Nam Vang (2/1813)",
+      "mo_ta": "Tháng 2/1813, Lê Văn Duyệt cùng Ngô Nhân Tĩnh đem thủy quân hộ tống Nặc Ông Chân về Nam Vang.",
+      "hien": [
+        "boi-canh-xiem-ep",
+        "thuyen-le-van-duyet",
+        "mui-ho-tong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Xây thành Nam Vang, lũy Lô Yêm",
+      "mo_ta": "Lê Văn Duyệt cho xây thành Nam Vang làm kinh đô mới và lũy Lô Yêm chứa quân lương.",
+      "hien": [
+        "thuyen-le-van-duyet",
+        "thanh-nam-vang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Nguyễn Văn Thoại trấn giữ, ngăn Xiêm tái xâm lấn",
+      "mo_ta": "Nguyễn Văn Thoại (Thoại Ngọc Hầu) ở lại trấn giữ Nam Vang, ngăn được ý đồ Xiêm tái xâm lấn.",
+      "hien": [
+        "thanh-nam-vang",
+        "quan-nguyen-van-thoai"
+      ]
+    }
+  ],
+  "ket_qua": "Lê Văn Duyệt cùng Ngô Nhân Tĩnh đem thủy quân hộ tống Nặc Ông Chân về Nam Vang, xây thành Nam Vang làm kinh đô mới và lũy Lô Yêm chứa quân lương; Nguyễn Văn Thoại ở lại trấn giữ, ngăn được ý đồ Xiêm tái xâm lấn.",
+  "y_nghia": "Xác lập vai trò bảo hộ của Đại Nam với Chân Lạp trước sức ép Xiêm La, mở đầu chuỗi quan hệ Việt–Xiêm–Chân Lạp phức tạp nửa đầu thế kỷ 19 — xem thêm chuỗi Trấn Tây thành 1840–1845.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Nam thực lục — Chính biên, kỷ Gia Long",
+    "Lịch sử Việt Nam (Viện Sử học)"
+  ]
+}

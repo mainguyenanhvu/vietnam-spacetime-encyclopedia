@@ -1,0 +1,154 @@
+{
+  "ghi_chu": "Sa đồ Lữ đoàn Đặc công Hải quân 126 tại Cửa Việt – Đông Hà — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mục về ĐƠN VỊ/ĐỊA BÀN 1966–1973, không phải một trận đơn. trang_thai=draft chờ soát §9.",
+  "id": "dac-cong-hai-quan-126-cua-viet-1966-1973",
+  "ten": "Lữ đoàn Đặc công Hải quân 126 tại Cửa Việt – Đông Hà",
+  "nam": 1966,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Mỹ – Sài Gòn (tàu vận tải, tàu đổ bộ tại cảng Cửa Việt – Đông Hà)",
+  "dia_diem": "Cửa Việt – Đông Hà (Quảng Trị)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          450,
+          320
+        ],
+        [
+          800,
+          300
+        ]
+      ],
+      "nhan": "Sông Cửa Việt"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          820,
+          200
+        ],
+        [
+          960,
+          300
+        ],
+        [
+          900,
+          450
+        ]
+      ],
+      "nhan": "Biển Đông — Cửa Việt"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-lap-126",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 150,
+      "nhan": "Đoàn huấn luyện trinh sát đặc công Hải quân 126 thành lập 13/4/1966"
+    },
+    {
+      "id": "cang-cua-viet",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 250,
+      "nhan": "Cảng Cửa Việt – Đông Hà — cảng quân sự, hậu cần lớn của Mỹ"
+    },
+    {
+      "id": "tau-van-tai-dich",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 850,
+      "y": 400,
+      "nhan": "Tàu vận tải, tàu đổ bộ địch"
+    },
+    {
+      "id": "dac-cong-nuoc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Đặc công nước 126 tiếp cận qua cửa sông, cửa biển"
+    },
+    {
+      "id": "mui-danh-chim",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        370,
+        400
+      ],
+      "den": [
+        660,
+        300
+      ],
+      "nhan": "Liên tục tổ chức đánh chìm tàu ngay trong khu vực cảng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lữ đoàn Đặc công Hải quân 126 thành lập (13/4/1966)",
+      "mo_ta": "Tiền thân là Đoàn huấn luyện trinh sát đặc công Hải quân 126, lực lượng tinh nhuệ của Quân chủng Hải quân chuyên đánh phá tàu thuyền, cầu cảng Mỹ – Sài Gòn.",
+      "hien": [
+        "thanh-lap-126"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Cửa Việt – Đông Hà: cảng quân sự – hậu cần trọng yếu của Mỹ",
+      "mo_ta": "Chiến trường Cửa Việt – Đông Hà là một trong những cảng quân sự – hậu cần quan trọng nhất của Mỹ ở Quảng Trị.",
+      "hien": [
+        "thanh-lap-126",
+        "cang-cua-viet"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tàu vận tải, tàu đổ bộ neo đậu, được bảo vệ nghiêm ngặt",
+      "mo_ta": "Tàu vận tải, tàu đổ bộ của Mỹ neo đậu trong khu vực cảng được bảo vệ nghiêm ngặt.",
+      "hien": [
+        "cang-cua-viet",
+        "tau-van-tai-dich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đặc công nước 126 tiếp cận qua cửa sông, cửa biển",
+      "mo_ta": "Đặc công nước 126 tiếp cận mục tiêu qua các cửa sông, cửa biển.",
+      "hien": [
+        "cang-cua-viet",
+        "tau-van-tai-dich",
+        "dac-cong-nuoc"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Liên tục tổ chức đánh chìm tàu ngay trong khu vực cảng",
+      "mo_ta": "Đặc công nước 126 liên tục tổ chức các trận đánh chìm tàu vận tải, tàu đổ bộ ngay trong khu vực cảng được bảo vệ nghiêm ngặt.",
+      "hien": [
+        "dac-cong-nuoc",
+        "tau-van-tai-dich",
+        "mui-danh-chim"
+      ]
+    }
+  ],
+  "ket_qua": "Đặc công nước 126 liên tục tổ chức đánh chìm tàu vận tải, tàu đổ bộ của Mỹ ngay trong khu vực cảng Cửa Việt – Đông Hà suốt 1966–1973.",
+  "y_nghia": "Lực lượng đặc biệt tinh nhuệ của Quân chủng Hải quân, gây thiệt hại liên tục cho hệ thống hậu cần đường biển của Mỹ tại Quảng Trị.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lực lượng Đặc công Hải quân Việt Nam Anh Hùng — TTXVN (VietnamPlus) — https://www.vietnamplus.vn/luc-luong-dac-biet-tinh-nhue-cua-quan-chung-hai-quan-viet-nam-post1036668.vnp",
+    "Lữ đoàn Đặc công 126 anh hùng, tinh nhuệ, thiện chiến, chuyên sâu, hiện đại — Báo Tuổi Trẻ — https://tuoitre.vn/lu-doan-dac-cong-126-anh-hung-tinh-nhue-thien-chien-chuyen-sau-hien-dai-20260404222603897.htm"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "ghi_chu": "Sa đồ Tiểu đoàn tên lửa 77 bắn rơi 4 'pháo đài bay' B-52 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. NGUỒN VÊNH: nguồn Nhân Dân ghi Tiểu đoàn 77 'hạ B-52 đầu tiên rơi tại chỗ ở Tam Hưng, Thanh Oai' ngay từ trận mở màn đêm 18/12/1972; nguồn Hà Nội Mới (mục Tiểu đoàn 59, riêng) lại ghi Tiểu đoàn 59 bắn rơi tại chỗ B-52 đầu tiên của TOÀN CHIẾN DỊCH lúc 20h13 cùng đêm tại Phù Lỗ, Đông Anh — hai địa điểm khác nhau. Nêu cả hai theo đúng nguồn, không tự chọn. trang_thai=draft chờ soát §9.",
+  "id": "tieu-doan-ten-lua-77-ban-roi-b52-1972",
+  "ten": "Tiểu đoàn tên lửa 77 bắn rơi 4 \"pháo đài bay\" B-52",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Tiểu đoàn trưởng Đinh Thế Văn",
+  "doi_thu": "Không quân Mỹ (B-52)",
+  "dia_diem": "Trận địa tên lửa tại khu vực Thanh Oai (Hà Tây cũ, nay Hà Nội)",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "mo-man-1812",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 150,
+      "nhan": "Đêm mở màn Chiến dịch phòng không 12 ngày đêm (18/12/1972)"
+    },
+    {
+      "id": "td77",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 350,
+      "y": 300,
+      "nhan": "Tiểu đoàn tên lửa 77 — chỉ huy Đinh Thế Văn"
+    },
+    {
+      "id": "tam-hung",
+      "kieu": "dia-danh",
+      "ben": "ta",
+      "x": 550,
+      "y": 420,
+      "nhan": "Trận địa Tam Hưng, Thanh Oai"
+    },
+    {
+      "id": "vuot-nua-goc",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        410,
+        320
+      ],
+      "den": [
+        660,
+        250
+      ],
+      "nhan": "Cách đánh 'vượt nửa góc' — đối phó nhiễu điện tử của Mỹ"
+    },
+    {
+      "id": "ha-4-b52",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 250,
+      "nhan": "Bắn rơi 4 'pháo đài bay' B-52 trong 12 ngày đêm"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đêm mở màn Chiến dịch phòng không 12 ngày đêm (18/12/1972)",
+      "mo_ta": "Trong Chiến dịch phòng không 12 ngày đêm bảo vệ Hà Nội – Hải Phòng cuối tháng 12/1972 (đã có mục riêng, tên gọi 'Điện Biên Phủ trên không').",
+      "hien": [
+        "mo-man-1812"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tiểu đoàn tên lửa 77 do Đinh Thế Văn chỉ huy",
+      "mo_ta": "Tiểu đoàn tên lửa 77 là một trong những đơn vị bắn rơi nhiều máy bay Mỹ nhất, do Tiểu đoàn trưởng Đinh Thế Văn trực tiếp chỉ huy.",
+      "hien": [
+        "mo-man-1812",
+        "td77"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trận địa tại Tam Hưng, Thanh Oai",
+      "mo_ta": "Trận địa của đơn vị đặt tại khu vực Tam Hưng, Thanh Oai.",
+      "hien": [
+        "td77",
+        "tam-hung"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Áp dụng cách đánh 'vượt nửa góc', hạ B-52 rơi tại chỗ ngay từ trận mở màn",
+      "mo_ta": "Cách đánh 'vượt nửa góc' — kỹ thuật bám sát và đón đánh B-52 do bộ đội tên lửa Việt Nam tự sáng tạo để đối phó với nhiễu điện tử của Mỹ — được áp dụng thành công ngay từ trận mở màn đêm 18/12/1972, hạ B-52 đầu tiên rơi tại chỗ ở Tam Hưng, Thanh Oai.",
+      "hien": [
+        "tam-hung",
+        "vuot-nua-goc"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Bắn rơi 4 'pháo đài bay' B-52 trong 12 ngày đêm",
+      "mo_ta": "Tiểu đoàn tên lửa 77 là một trong những đơn vị bắn rơi nhiều máy bay Mỹ nhất trong Chiến dịch phòng không 12 ngày đêm.",
+      "hien": [
+        "vuot-nua-goc",
+        "ha-4-b52"
+      ]
+    }
+  ],
+  "ket_qua": "Tiểu đoàn tên lửa 77 áp dụng cách đánh 'vượt nửa góc' tự sáng tạo, bắn rơi 4 'pháo đài bay' B-52 trong Chiến dịch phòng không 12 ngày đêm.",
+  "y_nghia": "Một trong những đơn vị bắn rơi nhiều máy bay Mỹ nhất, minh chứng cho sự sáng tạo cách đánh của bộ đội tên lửa Việt Nam trước nhiễu điện tử của Mỹ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tiểu đoàn 77 bắn rơi 4 \"pháo đài bay\" B-52 thế nào? — Báo Nhân Dân — https://nhandan.vn/tieu-doan-77-ban-roi-4-phao-dai-bay-b-52-the-nao-post730473.html"
+  ]
+}

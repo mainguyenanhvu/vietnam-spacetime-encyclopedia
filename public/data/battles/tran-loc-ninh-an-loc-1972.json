@@ -1,0 +1,130 @@
+{
+  "ghi_chu": "Sa đồ Trận Lộc Ninh – An Lộc (Chiến dịch Nguyễn Huệ) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Bình Long (cũ) nay thuộc tỉnh Đồng Nai (hợp nhất Đồng Nai + Bình Phước, 01/07/2025). trang_thai=draft chờ soát §9.",
+  "id": "tran-loc-ninh-an-loc-1972",
+  "ten": "Trận Lộc Ninh – An Lộc (Chiến dịch Nguyễn Huệ)",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Quân đội Sài Gòn (được B-52, trực thăng vũ trang Mỹ yểm trợ)",
+  "dia_diem": "Lộc Ninh và An Lộc, Bình Long (nay Bình Phước, thuộc Đồng Nai)",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "chien-dich-nguyen-hue2",
+      "kieu": "dia-danh",
+      "x": 160,
+      "y": 150,
+      "nhan": "Chiến dịch Nguyễn Huệ 1972 — hướng Đông Nam Bộ: Lộc Ninh – Bình Long – Chơn Thành – Bến Cát"
+    },
+    {
+      "id": "td52-rut",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 350,
+      "y": 250,
+      "nhan": "7/4/1972: Trung đoàn 52 Sài Gòn rút khỏi Lộc Ninh"
+    },
+    {
+      "id": "su-doan7-truy-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        390,
+        270
+      ],
+      "den": [
+        610,
+        340
+      ],
+      "nhan": "Sư đoàn 7 truy kích đến cửa ngõ An Lộc"
+    },
+    {
+      "id": "an-loc-chao-lua",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 400,
+      "nhan": "An Lộc — 'chảo lửa' (giữa tháng 4 đến cuối 7/1972)"
+    },
+    {
+      "id": "su-doan5-t54",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 480,
+      "nhan": "Sư đoàn 5 tiến công có xe tăng T-54 yểm trợ"
+    },
+    {
+      "id": "cam-cu-b52",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 880,
+      "y": 300,
+      "nhan": "Quân đội Sài Gòn cầm cự nhờ B-52, trực thăng vũ trang Mỹ"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chiến dịch Nguyễn Huệ 1972 — hướng Đông Nam Bộ",
+      "mo_ta": "Trong khuôn khổ chiến dịch Nguyễn Huệ 1972 (đã có trong hệ thống dữ liệu ở tầm chiến dịch), hướng Đông Nam Bộ lấy Lộc Ninh – Bình Long – Chơn Thành – Bến Cát làm hướng chủ yếu.",
+      "hien": [
+        "chien-dich-nguyen-hue2"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "7/4/1972: Trung đoàn 52 Sài Gòn rút khỏi Lộc Ninh",
+      "mo_ta": "Ngày 7/4/1972, Trung đoàn 52 quân đội Sài Gòn rút khỏi Lộc Ninh.",
+      "hien": [
+        "chien-dich-nguyen-hue2",
+        "td52-rut"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Sư đoàn 7 truy kích đến cửa ngõ An Lộc",
+      "mo_ta": "Trung đoàn 52 bị Sư đoàn 7 truy kích đến cửa ngõ An Lộc.",
+      "hien": [
+        "td52-rut",
+        "su-doan7-truy-kich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Giữa tháng 4 đến cuối 7/1972: An Lộc trở thành 'chảo lửa'",
+      "mo_ta": "Từ giữa tháng 4 đến cuối tháng 7/1972, An Lộc trở thành 'chảo lửa' với các đợt tiến công của quân ta.",
+      "hien": [
+        "su-doan7-truy-kich",
+        "an-loc-chao-lua"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Sư đoàn 5 tiến công có xe tăng T-54 yểm trợ",
+      "mo_ta": "Sư đoàn 5 có xe tăng T-54 yểm trợ tiến công vào An Lộc.",
+      "hien": [
+        "an-loc-chao-lua",
+        "su-doan5-t54"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Quân đội Sài Gòn cầm cự nhờ B-52, trực thăng vũ trang Mỹ",
+      "mo_ta": "Quân đội Sài Gòn cầm cự được nhờ pháo đài bay B-52 và trực thăng vũ trang Mỹ.",
+      "hien": [
+        "an-loc-chao-lua",
+        "cam-cu-b52"
+      ]
+    }
+  ],
+  "ket_qua": "Sư đoàn 7 truy kích quân Sài Gòn đến cửa ngõ An Lộc; Sư đoàn 5 có xe tăng T-54 yểm trợ tiến công vào 'chảo lửa' An Lộc, nhưng quân đội Sài Gòn cầm cự được nhờ B-52 và trực thăng vũ trang Mỹ.",
+  "y_nghia": "Hai trận then chốt của hướng Đông Nam Bộ trong chiến dịch Nguyễn Huệ 1972, thể hiện mức độ ác liệt của cuộc tiến công chiến lược.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Hiểu thêm về chiến dịch tiến công Nguyễn Huệ và việc giải phóng Lộc Ninh xuân hè 1972 — Cổng TTĐT Chính phủ — https://baochinhphu.vn/tam-voc-cua-chien-dich-nguyen-hue-giai-phong-loc-ninh-xuan-he-1972-102220411083946004.htm"
+  ]
+}

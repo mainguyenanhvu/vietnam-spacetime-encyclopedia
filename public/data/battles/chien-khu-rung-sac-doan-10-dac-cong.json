@@ -1,0 +1,160 @@
+{
+  "ghi_chu": "Sa đồ Chiến khu Rừng Sác – Đoàn 10 đặc công — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mục về ĐƠN VỊ/ĐỊA BÀN 1966–1975, khác với trận đánh kho xăng Nhà Bè 1973 (mục riêng). trang_thai=draft chờ soát §9.",
+  "id": "chien-khu-rung-sac-doan-10-dac-cong",
+  "ten": "Chiến khu Rừng Sác – Đoàn 10 đặc công",
+  "nam": 1966,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Mỹ – quân đội Sài Gòn (kho tàng, cảng, bộ chỉ huy, phương tiện chiến tranh trên sông Lòng Tàu – Nhà Bè)",
+  "dia_diem": "Rừng Sác, Cần Giờ (nay TP Hồ Chí Minh)",
+  "lien_quan_tinh": [
+    "thanh-pho-ho-chi-minh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          150,
+          380
+        ],
+        [
+          500,
+          420
+        ],
+        [
+          850,
+          400
+        ]
+      ],
+      "nhan": "Rừng Sác — vùng rừng ngập nước hơn 75.000 ha"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          250
+        ],
+        [
+          500,
+          230
+        ],
+        [
+          900,
+          260
+        ]
+      ],
+      "nhan": "Sông Lòng Tàu – Nhà Bè"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-lap-doan10",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 150,
+      "nhan": "Đoàn 10 đặc công (T10) thành lập 15/4/1966"
+    },
+    {
+      "id": "vung-rung-ngap-nuoc",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 470,
+      "nhan": "Vùng rừng ngập nước — 'vùng đất chết' bị rải chất độc hoá học, bom đạn"
+    },
+    {
+      "id": "muc-tieu-kho-cang",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 200,
+      "nhan": "Kho tàng, cảng, bộ chỉ huy, phương tiện chiến tranh Mỹ – ngụy"
+    },
+    {
+      "id": "dac-cong-bam-tru",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 320,
+      "nhan": "Đặc công luồn sâu, bám trụ giữ vùng Rừng Sác"
+    },
+    {
+      "id": "mui-tan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        300
+      ],
+      "den": [
+        700,
+        220
+      ],
+      "nhan": "Đánh liên tục vào kho tàng, cảng, bộ chỉ huy"
+    },
+    {
+      "id": "unesco-cong-nhan",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 470,
+      "nhan": "UNESCO công nhận Khu dự trữ sinh quyển thế giới (21/1/2000)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đoàn 10 đặc công Rừng Sác thành lập (15/4/1966)",
+      "mo_ta": "Đoàn 10 đặc công Rừng Sác (mật danh T10) thành lập ngày 15/4/1966, nhiệm vụ luồn sâu, bám trụ giữ vùng Rừng Sác.",
+      "hien": [
+        "thanh-lap-doan10"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Địa bàn — 'vùng đất chết'",
+      "mo_ta": "Địa bàn hoạt động là vùng rừng ngập nước hơn 75.000 ha, bị Mỹ rải chất độc hóa học và bom đạn hủy diệt liên tục.",
+      "hien": [
+        "thanh-lap-doan10",
+        "vung-rung-ngap-nuoc"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Luồn sâu, bám trụ giữ vùng Rừng Sác",
+      "mo_ta": "Đơn vị bám trụ giữa vùng đất bị hủy diệt để giữ tuyến sông Lòng Tàu – Nhà Bè, cửa ngõ đường thủy huyết mạch vào Sài Gòn.",
+      "hien": [
+        "vung-rung-ngap-nuoc",
+        "dac-cong-bam-tru"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh liên tục vào kho tàng, cảng, bộ chỉ huy",
+      "mo_ta": "Đơn vị đánh liên tục vào kho tàng, cảng, bộ chỉ huy và phương tiện chiến tranh của Mỹ – ngụy trên tuyến sông.",
+      "hien": [
+        "dac-cong-bam-tru",
+        "muc-tieu-kho-cang",
+        "mui-tan-cong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Rừng Sác — Khu dự trữ sinh quyển thế giới",
+      "mo_ta": "Rừng Sác được UNESCO công nhận là Khu dự trữ sinh quyển thế giới ngày 21/1/2000.",
+      "hien": [
+        "vung-rung-ngap-nuoc",
+        "unesco-cong-nhan"
+      ]
+    }
+  ],
+  "ket_qua": "Đoàn 10 đặc công Rừng Sác bám trụ, đánh liên tục vào kho tàng, cảng, bộ chỉ huy và phương tiện chiến tranh của Mỹ – ngụy trên tuyến sông Lòng Tàu – Nhà Bè suốt 1966–1975.",
+  "y_nghia": "Giữ vững một chiến khu sát cửa ngõ Sài Gòn giữa vùng đất bị hủy diệt bởi bom đạn và chất độc hóa học; nay Rừng Sác là Khu dự trữ sinh quyển thế giới.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tự hào những chiến sĩ đặc công Rừng Sác — Báo Nhân Dân — https://nhandan.vn/tu-hao-nhung-chien-si-dac-cong-rung-sac-post876080.html",
+    "Dấu ấn ở Di tích lịch sử chiến khu rừng Sác — Báo Quân đội nhân dân — https://www.qdnd.vn/phong-su-dieu-tra/phong-su/dau-an-o-di-tich-lich-su-chien-khu-rung-sac-709265"
+  ]
+}
