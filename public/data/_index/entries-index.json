@@ -3,7 +3,7 @@
     "tong_muc": 5361,
     "tong_co_toa_do": 2583,
     "so_nhom_trung_ten": 828,
-    "so_cap_trung_toa_do": 678,
+    "so_cap_trung_toa_do": 679,
     "ngay_sinh": "2026-08-06"
   },
   "entries": [
@@ -39808,8 +39808,8 @@
       "file": "overlays/di-tich-qgdb.json",
       "mien": "overlays",
       "loai": "danh lam thắng cảnh",
-      "lat": 17.5552645,
-      "lon": 106.1123041,
+      "lat": 17.53,
+      "lon": 106.283,
       "so_nguon": 1,
       "trang_thai": "reviewed"
     },
@@ -90027,6 +90027,19 @@
         "file": "overlays/thien-su-cao-tang.json",
         "id": "cam-thanh",
         "ten": "Cảm Thành (Lập Đức)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": null,
+        "ten": "Vườn quốc gia Phong Nha - Kẻ Bàng"
+      },
+      "b": {
+        "file": "overlays/unesco.json",
+        "id": null,
+        "ten": "Vườn quốc gia Phong Nha – Kẻ Bàng"
       },
       "khoang_cach_m": 0
     },
