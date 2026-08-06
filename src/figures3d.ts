@@ -39,6 +39,33 @@ const LY_ROBE = 0xc9a227; // long bào vàng
 const TRAN_ROBE = 0x6b5535; // giáp trụ đồng
 const LE_ROBE = 0xc7a63a; // long bào vàng nghệ
 const QUANG_ROBE = 0xa8323f; // áo bào đỏ
+const BA_TRIEU_ROBE = 0xb8860b; // giáp vàng đồng nữ tướng
+const BA_TRIEU_ACCENT = 0xa8323f; // đỏ son
+const LY_BI_ROBE = 0xab8a52; // áo bào vàng nhạt, vương triều sơ khai (tránh kiểu Nguyễn)
+const LY_BI_ACCENT = 0x6b4a2f; // nâu trầm
+const MAI_ROBE = 0x7a5230; // giáp vải/da nâu đất Hoan Châu
+const MAI_ACCENT = 0x5b6b45; // xanh rêu
+const LE_HOAN_ACCENT = 0x9b2d2d; // long bào đỏ sẫm khoác ngoài giáp thép
+const LTK_ROBE = 0x33507a; // giáp trụ xanh chàm thời Lý
+const MONK_ROBE = 0x8a5a2f; // cà sa nâu sồng
+const MONK_SASH = 0xd4af37; // dải vàng nghệ
+const NGUYEN_ANH_ROBE = 0xd9b23a; // long bào vàng cung đình Huế
+const NGUYEN_ANH_ACCENT = 0xa8323f; // đỏ son
+const TRUONG_DINH_ROBE = 0x6b5535; // áo nghĩa quân nâu vải, giản dị hơn quan phục triều đình
+const HAM_NGHI_ROBE = 0xd8c37a; // áo vua giản lược khi lưu vong, vàng nhạt
+const HAM_NGHI_ACCENT = 0x3f5f3a; // xanh rừng núi Tân Sở
+const PHAN_ROBE = 0x2b2620; // áo the đen nho sĩ
+const PHAN_ACCENT = 0x5a4632; // khăn xếp nâu sẫm
+
+// Màu cho 4 VẬT biểu tượng thế kỷ XX (không dựng chân dung người).
+const SHIP_HULL = 0x2b2f33; // thân tàu thép đen/xám
+const SHIP_TRIM = 0x707880; // thượng tầng sáng hơn
+const SHIP_FUNNEL = 0x3a3a3a; // ống khói
+const SHIP_BAND = 0xb23a3a; // vành sọc ống khói
+const PODIUM_BACKDROP = 0x6b5535; // phông gỗ lễ đài Ba Đình
+const MILITARY_GREEN = 0x4a5a3a; // xanh ô liu quân đội (pháo + xe tăng)
+const DARK_STEEL = 0x2b2b2b; // xích tăng, bánh pháo, dây kéo
+const TANK_PLATE = 0xe8e4d8; // mảng màu số hiệu 390 (thay chữ số)
 
 // ── Primitive helper ─────────────────────────────────────────────────────
 function mat(color: number, roughness = 0.85): THREE.MeshStandardMaterial {
@@ -109,6 +136,56 @@ function makeFlag(cloth: number): THREE.Group {
   tip.position.y = 1.42;
   f.add(tip);
   return f;
+}
+
+// Thương/giáo/đại đao: cán gỗ dài + mũi nhọn ở đầu. Cùng quy ước toạ độ với
+// makeSword (gốc cán quanh origin để gắn vào bàn tay, phần dài vươn +Y) để
+// gắn vào tay theo đúng công thức đã kiểm chứng ở 8 mô hình có sẵn
+// (`arm.add(prop); prop.position.y = -len; prop.rotation.z = Math.PI`).
+function makeSpear(shaftLen = 1.7, tipColor = BLADE): THREE.Group {
+  const s = new THREE.Group();
+  const grip = cyl(0.04, 0.045, 0.3, WOOD, 6);
+  grip.position.y = -0.15;
+  s.add(grip);
+  const shaft = cyl(0.032, 0.036, shaftLen, WOOD, 6);
+  shaft.position.y = shaftLen / 2;
+  s.add(shaft);
+  const tip = cone(0.07, 0.34, tipColor, 5);
+  tip.position.y = shaftLen + 0.15;
+  s.add(tip);
+  return s;
+}
+
+// Khiên tròn: mặt khiên + viền — gắn vào tay giống đạo cụ khác (position.y=-len).
+function makeShield(r = 0.32): THREE.Group {
+  const sh = new THREE.Group();
+  const face = new THREE.Mesh(new THREE.CylinderGeometry(r, r, 0.06, 10), mat(WOOD, 0.9));
+  face.rotation.z = Math.PI / 2;
+  sh.add(face);
+  const rim = new THREE.Mesh(new THREE.TorusGeometry(r, 0.025, 6, 10), mat(DARK_BRONZE, 0.6));
+  rim.rotation.y = Math.PI / 2;
+  sh.add(rim);
+  return sh;
+}
+
+// Ngôi sao 5 cánh phẳng (cờ đỏ sao vàng) — mặt phẳng nằm trên trục XY cục bộ,
+// hai mặt đều hiện (DoubleSide) vì không biết trước góc nhìn sẽ từ phía nào.
+function makeStar(r = 0.16, color = GOLD): THREE.Mesh {
+  const shape = new THREE.Shape();
+  const spikes = 5;
+  const innerR = r * 0.38;
+  for (let i = 0; i < spikes * 2; i++) {
+    const ang = (i / (spikes * 2)) * Math.PI * 2 - Math.PI / 2;
+    const rad = i % 2 === 0 ? r : innerR;
+    const x = Math.cos(ang) * rad;
+    const y = Math.sin(ang) * rad;
+    if (i === 0) shape.moveTo(x, y);
+    else shape.lineTo(x, y);
+  }
+  shape.closePath();
+  const m = new THREE.Mesh(new THREE.ShapeGeometry(shape), mat(color, 0.5));
+  m.material.side = THREE.DoubleSide;
+  return m;
 }
 
 // Thân người đứng cách điệu: váy áo loe, thân, cổ, đầu cầu trơn, tóc/búi.
@@ -711,6 +788,533 @@ function quangTrung(): THREE.Group {
   return g;
 }
 
+// ── 10 nhân vật bổ sung cho «Hành trình lịch sử» ────────────────────────────
+// Cùng quy ước cách điệu: đầu cầu trơn KHÔNG tả chân dung thật — đây là tạo
+// hình theo tượng đài/SGK, không phải ngoại hình đã được sử liệu xác nhận.
+
+// 9. Bà Triệu — nữ tướng cưỡi voi, giáo dài, giáp vàng đồng (quy ước tượng đài
+// đền Bà Triệu, Thanh Hoá).
+function baTrieu(): THREE.Group {
+  const g = new THREE.Group();
+  const elephant = makeElephant();
+  g.add(elephant);
+
+  const rider = seatedRider(BA_TRIEU_ROBE, BA_TRIEU_ACCENT);
+
+  // Tay trái ghì cương; tay phải cầm giáo dài chếch lên trước.
+  attachRiderArm(rider, -1, BA_TRIEU_ROBE, Math.PI / 2 - 0.2, 0, 0.58);
+  const spearArm = attachRiderArm(rider, 1, BA_TRIEU_ROBE, Math.PI / 2 + 0.5, 0, 0.6);
+  const spear = makeSpear(1.5);
+  spear.position.y = -0.6;
+  spear.rotation.z = Math.PI;
+  spearArm.add(spear);
+
+  rider.g.position.set(-0.1, 2.42, 0);
+  g.add(rider.g);
+  return g;
+}
+
+// 10. Lý Bí (Lý Nam Đế) — đế vương giản dị buổi khai quốc, hai tay nâng hốt
+// ngà trước ngực, không phô binh khí.
+function lyBi(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(LY_BI_ROBE, LY_BI_ACCENT, false);
+
+  // Mũ bình thiên giản lược (một vành thấp, không cầu kỳ).
+  const crown = cyl(0.28, 0.29, 0.1, LY_BI_ACCENT, 8);
+  crown.position.y = 2.6;
+  t.g.add(crown);
+
+  // Hai tay đưa ra trước, khuỷu gập nhẹ, cùng nâng hốt ngà.
+  attachArm(t, -1, LY_BI_ROBE, Math.PI / 2 - 0.2, -0.4, 0.6);
+  attachArm(t, 1, LY_BI_ROBE, Math.PI / 2 - 0.2, 0.4, 0.6);
+  const hot = box(0.16, 0.55, 0.05, IVORY);
+  hot.position.set(0.55, 1.55, 0);
+  t.g.add(hot);
+  g.add(t.g);
+  return g;
+}
+
+// 11. Mai Thúc Loan (Mai Hắc Đế) — thủ lĩnh dấy binh Hoan Châu, đại đao + khiên mây.
+function maiThucLoan(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(MAI_ROBE, MAI_ACCENT, false);
+
+  // Khăn quấn đầu giản dị (thay vành mũ).
+  const headband = cyl(0.3, 0.3, 0.08, MAI_ACCENT, 8);
+  headband.position.y = 2.5;
+  t.g.add(headband);
+
+  // Tay trái mang khiên mây; tay phải cầm đại đao chếch lên trước.
+  const shieldArm = attachArm(t, -1, MAI_ROBE, 0.3, 0, 0.6);
+  const shield = makeShield(0.3);
+  shield.position.y = -0.6;
+  shieldArm.add(shield);
+
+  const daoArm = attachArm(t, 1, MAI_ROBE, Math.PI / 2 + 0.4, 0, 0.7);
+  const dao = makeSpear(1.0, BLADE);
+  dao.position.y = -0.7;
+  dao.rotation.z = Math.PI;
+  daoArm.add(dao);
+  g.add(t.g);
+  return g;
+}
+
+// 12. Lê Hoàn (Lê Đại Hành) — giáp trụ thời Đinh – Tiền Lê (bám theo dinhBoLinh)
+// khoác thêm long bào nhẹ, cầm thương.
+function leHoan(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(STEEL, LE_HOAN_ACCENT, false);
+
+  // Mũ trụ chiến + chóp (cùng kiểu ngoQuyen để giữ nhất quán thời đại).
+  const helmet = cyl(0.3, 0.32, 0.26, STEEL, 8);
+  helmet.position.y = 2.56;
+  t.g.add(helmet);
+  const helmTip = cone(0.08, 0.24, GOLD, 6);
+  helmTip.position.y = 2.82;
+  t.g.add(helmTip);
+
+  // Long bào khoác ngoài (tấm phất sau lưng, như tranHungDao).
+  const cloak = box(0.08, 1.2, 0.66, LE_HOAN_ACCENT);
+  cloak.position.set(-0.34, 1.4, 0);
+  cloak.rotation.z = -0.1;
+  t.g.add(cloak);
+
+  // Bổ tử nhỏ trước ngực (đế vương xuất thân tướng quân).
+  const badge = box(0.05, 0.22, 0.22, GOLD);
+  badge.position.set(0.34, 1.65, 0);
+  t.g.add(badge);
+
+  // Tay trái buông; tay phải cầm thương chếch lên trước (thế thủ).
+  attachArm(t, -1, STEEL, 0.24);
+  const spearArm = attachArm(t, 1, STEEL, 0.85, 0, 0.72);
+  const spear = makeSpear(1.3);
+  spear.position.y = -0.72;
+  spear.rotation.z = Math.PI;
+  spearArm.add(spear);
+  g.add(t.g);
+  return g;
+}
+
+// 13. Lý Thường Kiệt — giáp trụ thời Lý, trường kiếm, thẻ tre bên hông tượng
+// trưng bài thơ thần «Nam quốc sơn hà».
+function lyThuongKiet(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(LTK_ROBE, GOLD, false);
+
+  const helmet = cyl(0.3, 0.32, 0.26, LTK_ROBE, 8);
+  helmet.position.y = 2.56;
+  t.g.add(helmet);
+  const helmTip = cone(0.07, 0.22, GOLD, 6);
+  helmTip.position.y = 2.8;
+  t.g.add(helmTip);
+
+  // Tay trái buông; tay phải chống trường kiếm chúc mũi xuống trước.
+  attachArm(t, -1, LTK_ROBE, 0.22);
+  const swordArm = attachArm(t, 1, LTK_ROBE, 0.9, 0, 0.74);
+  const sword = makeSword(1.1);
+  sword.position.y = -0.74;
+  sword.rotation.z = Math.PI;
+  swordArm.add(sword);
+  g.add(t.g);
+
+  // Bó thẻ tre bên hông (tượng trưng bài thơ thần).
+  const bundle = new THREE.Group();
+  for (let i = 0; i < 4; i++) {
+    const slat = box(0.05, 0.5, 0.02, SCROLL);
+    slat.position.set(0, 0, (i - 1.5) * 0.03);
+    bundle.add(slat);
+  }
+  bundle.position.set(0.3, 1.15, 0.44);
+  bundle.rotation.z = 0.15;
+  g.add(bundle);
+  return g;
+}
+
+// 14. Trần Nhân Tông (Phật hoàng) — tăng sĩ ngồi thiền, cà sa, tràng hạt,
+// KHÔNG giáp/binh khí. Dựng riêng (không dùng standingBody vì hàm đó luôn
+// gắn khối tóc — tăng sĩ đầu trọc).
+function tranNhanTong(): THREE.Group {
+  const g = new THREE.Group();
+
+  // Đệm toạ.
+  const cushion = cyl(0.5, 0.56, 0.14, MONK_SASH, 10);
+  cushion.position.y = 0.07;
+  g.add(cushion);
+
+  // Thân ngồi xếp bằng (khối trụ loe thay hai chân gập).
+  const lap = cyl(0.32, 0.5, 0.42, MONK_ROBE, 8);
+  lap.position.y = 0.35;
+  g.add(lap);
+
+  const torso = cyl(0.3, 0.33, 0.7, MONK_ROBE, 8);
+  torso.position.y = 0.92;
+  g.add(torso);
+
+  // Dải cà sa vắt chéo qua vai.
+  const sash = box(0.08, 0.85, 0.3, MONK_SASH);
+  sash.position.set(0.1, 1.05, 0.18);
+  sash.rotation.z = 0.3;
+  g.add(sash);
+
+  const shoulders = cyl(0.14, 0.16, 0.62, MONK_ROBE, 6);
+  shoulders.rotation.x = Math.PI / 2;
+  shoulders.position.y = 1.24;
+  g.add(shoulders);
+
+  const neck = cyl(0.1, 0.12, 0.14, SKIN, 6);
+  neck.position.y = 1.36;
+  g.add(neck);
+  const head = ball(0.27, SKIN, 1);
+  head.position.y = 1.66;
+  g.add(head);
+  // Nhục kế nhỏ trên đỉnh đầu (không tóc — đầu trọc tăng sĩ).
+  const ushnisha = ball(0.09, SKIN, 0);
+  ushnisha.position.y = 1.9;
+  g.add(ushnisha);
+
+  // Hai tay gập vào trước ngực, chắp lại (ấn thiền).
+  for (const sz of [-1, 1]) {
+    const arm = cyl(0.09, 0.11, 0.42, MONK_ROBE, 6);
+    arm.position.set(0.18, 1.06, sz * 0.16);
+    arm.rotation.z = -sz * 0.9;
+    arm.rotation.x = sz * 0.5;
+    g.add(arm);
+  }
+  const hands = ball(0.11, SKIN, 0);
+  hands.position.set(0.32, 0.98, 0);
+  g.add(hands);
+
+  // Tràng hạt vắt qua tay chắp.
+  const mala = new THREE.Mesh(new THREE.TorusGeometry(0.15, 0.025, 6, 12), mat(WOOD, 0.6));
+  mala.rotation.x = Math.PI / 2.4;
+  mala.position.set(0.3, 0.86, 0);
+  g.add(mala);
+
+  return g;
+}
+
+// 15. Nguyễn Ánh (Gia Long) — đế vương cung đình Huế, long bào vàng (tương
+// phản màu đỏ Tây Sơn của quangTrung), cầm ấn và kiếm nghi lễ.
+function nguyenAnh(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(NGUYEN_ANH_ROBE, NGUYEN_ANH_ACCENT);
+
+  const crownBase = cyl(0.3, 0.31, 0.16, NGUYEN_ANH_ACCENT, 8);
+  crownBase.position.y = 2.64;
+  t.g.add(crownBase);
+  const crownTop = box(0.46, 0.14, 0.36, GOLD);
+  crownTop.position.y = 2.8;
+  t.g.add(crownTop);
+  const crownJewel = ball(0.06, NGUYEN_ANH_ACCENT, 0);
+  crownJewel.position.y = 2.9;
+  t.g.add(crownJewel);
+
+  const badge = box(0.05, 0.28, 0.28, NGUYEN_ANH_ACCENT);
+  badge.position.set(0.34, 1.62, 0);
+  t.g.add(badge);
+
+  // Tay trái nâng ấn triện; tay phải chống kiếm nghi lễ chúc mũi xuống.
+  const sealArm = attachArm(t, -1, NGUYEN_ANH_ROBE, Math.PI / 2 - 0.3, -0.3, 0.6);
+  const seal = box(0.16, 0.14, 0.16, GOLD);
+  seal.position.y = -0.62;
+  sealArm.add(seal);
+
+  const swordArm = attachArm(t, 1, NGUYEN_ANH_ROBE, 0.9, 0, 0.7);
+  const sword = makeSword(1.0);
+  sword.position.y = -0.7;
+  sword.rotation.z = Math.PI;
+  swordArm.add(sword);
+  g.add(t.g);
+  return g;
+}
+
+// 16. Trương Định (Bình Tây Đại Nguyên Soái) — nghĩa quân Nam Kỳ, áo vải giản
+// dị, gươm + cờ lệnh «Bình Tây».
+function truongDinh(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(TRUONG_DINH_ROBE, CLOTH_RED, false);
+
+  // Khăn vấn đầu (thay mũ/crown — không phải quan phục triều đình).
+  const headband = cyl(0.3, 0.3, 0.08, CLOTH_RED, 8);
+  headband.position.y = 2.5;
+  t.g.add(headband);
+
+  // Tay trái cầm cờ lệnh; tay phải cầm gươm chếch lên trước.
+  const flagArm = attachArm(t, -1, TRUONG_DINH_ROBE, Math.PI / 2 - 0.3, -0.3, 0.62);
+  const flag = makeFlag(CLOTH_RED);
+  flag.scale.set(0.75, 0.75, 0.75);
+  flag.position.y = -0.62;
+  flag.rotation.z = Math.PI;
+  flagArm.add(flag);
+
+  const swordArm = attachArm(t, 1, TRUONG_DINH_ROBE, Math.PI / 2 + 0.4, 0, 0.72);
+  const sword = makeSword(1.0);
+  sword.position.y = -0.72;
+  sword.rotation.z = Math.PI;
+  swordArm.add(sword);
+  g.add(t.g);
+  return g;
+}
+
+// 17. Vua Hàm Nghi — vua trẻ tuổi lưu vong, áo giản lược (không đại triều
+// phục), hai tay nâng cuộn chiếu chỉ Cần Vương (thế giống lyThaiTo nhưng nhỏ,
+// mộc mạc hơn — không mũ miện lớn, chỉ vành khăn mảnh).
+function hamNghi(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(HAM_NGHI_ROBE, HAM_NGHI_ACCENT, false);
+
+  // Vành khăn mảnh (không phải miện đế vương đầy đủ).
+  const circlet = new THREE.Mesh(new THREE.TorusGeometry(0.29, 0.025, 6, 12), mat(GOLD, 0.5));
+  circlet.rotation.x = Math.PI / 2;
+  circlet.position.y = 2.58;
+  t.g.add(circlet);
+
+  attachArm(t, -1, HAM_NGHI_ROBE, Math.PI / 2 - 0.25, -0.5, 0.62);
+  attachArm(t, 1, HAM_NGHI_ROBE, Math.PI / 2 - 0.25, 0.5, 0.62);
+
+  // Cuộn chiếu chỉ (nhỏ hơn cuộn của lyThaiTo).
+  const scroll = new THREE.Group();
+  const roll = cyl(0.09, 0.09, 0.5, SCROLL, 10);
+  roll.rotation.x = Math.PI / 2;
+  scroll.add(roll);
+  for (const sz of [-1, 1]) {
+    const cap = cyl(0.11, 0.11, 0.05, GOLD, 10);
+    cap.rotation.x = Math.PI / 2;
+    cap.position.z = sz * 0.26;
+    scroll.add(cap);
+  }
+  scroll.position.set(0.56, 1.5, 0);
+  t.g.add(scroll);
+  g.add(t.g);
+  return g;
+}
+
+// 18. Phan Bội Châu — nho sĩ đầu thế kỷ XX, áo the đen, khăn xếp, cầm sách.
+function phanBoiChau(): THREE.Group {
+  const g = new THREE.Group();
+  const t = standingBody(PHAN_ROBE, PHAN_ACCENT, false);
+
+  // Khăn xếp (vành quấn dày kiểu nho sĩ, thay mũ/miện).
+  const turban = cyl(0.31, 0.33, 0.18, PHAN_ACCENT, 10);
+  turban.position.y = 2.54;
+  t.g.add(turban);
+  const turbanTop = cyl(0.26, 0.29, 0.08, PHAN_ACCENT, 10);
+  turbanTop.position.y = 2.66;
+  t.g.add(turbanTop);
+
+  // Tay trái buông; tay phải cầm tập sách trước ngực.
+  attachArm(t, -1, PHAN_ROBE, 0.22);
+  const bookArm = attachArm(t, 1, PHAN_ROBE, Math.PI / 2 - 0.15, 0.35, 0.6);
+  const book = box(0.24, 0.05, 0.32, SCROLL);
+  book.position.y = -0.62;
+  bookArm.add(book);
+  g.add(t.g);
+  return g;
+}
+
+// ── 4 VẬT biểu tượng thế kỷ XX ───────────────────────────────────────────
+// Chủ dự án quyết: không dựng chân dung cách điệu cho các lãnh tụ/tướng lĩnh
+// hiện đại — dựng VẬT gắn với sự kiện thay thế. Không dùng standingBody/
+// seatedRider (đó là khung người); chỉ ghép primitive như các đạo cụ khác.
+
+// 19. Tàu Amiral Latouche-Tréville — tàu hơi nước Chargeurs Réunis đầu TK20
+// (bến Nhà Rồng, 1911). Một ống khói lớn + hai cột buồm TRẦN (không cánh
+// buồm) — đây là tàu hơi nước, khác hẳn thuyền buồm cổ.
+function tauLatoucheTreville(): THREE.Group {
+  const g = new THREE.Group();
+
+  const hull = box(3.2, 0.6, 0.75, SHIP_HULL);
+  hull.position.set(0, 0.5, 0);
+  g.add(hull);
+  // Mũi tàu vát nhọn hướng +X.
+  const bow = cone(0.4, 0.9, SHIP_HULL, 6);
+  bow.rotation.z = -Math.PI / 2;
+  bow.position.set(1.9, 0.5, 0);
+  g.add(bow);
+  // Đuôi tàu bo tròn.
+  const stern = ball(0.4, SHIP_HULL, 1);
+  stern.scale.set(0.6, 1, 1);
+  stern.position.set(-1.6, 0.5, 0);
+  g.add(stern);
+
+  const deck = box(3.0, 0.06, 0.7, WOOD);
+  deck.position.set(0, 0.83, 0);
+  g.add(deck);
+
+  const bridge = box(0.9, 0.5, 0.6, SHIP_TRIM);
+  bridge.position.set(-0.1, 1.12, 0);
+  g.add(bridge);
+
+  // Ống khói lớn + vành sọc.
+  const funnel = cyl(0.24, 0.28, 0.95, SHIP_FUNNEL, 10);
+  funnel.position.set(-0.1, 1.85, 0);
+  g.add(funnel);
+  const funnelBand = cyl(0.27, 0.27, 0.14, SHIP_BAND, 10);
+  funnelBand.position.set(-0.1, 2.24, 0);
+  g.add(funnelBand);
+
+  // Hai cột buồm trần (tàu hơi nước, không cánh buồm).
+  for (const sx of [0.9, -1.0]) {
+    const mast = cyl(0.035, 0.045, 1.6, WOOD, 6);
+    mast.position.set(sx, 1.55, 0);
+    g.add(mast);
+    const crow = ball(0.07, WOOD, 0);
+    crow.position.set(sx, 2.32, 0);
+    g.add(crow);
+  }
+
+  // Lan can boong hai bên mép.
+  for (const sz of [-1, 1]) {
+    const rail = box(3.0, 0.1, 0.02, SHIP_TRIM);
+    rail.position.set(0, 0.92, sz * 0.35);
+    g.add(rail);
+  }
+
+  return g;
+}
+
+// 20. Lễ đài Ba Đình, 2/9/1945 — bục gỗ nhiều bậc, phông + mái đơn giản, cờ
+// đỏ sao vàng cắm cao. KHÔNG đặt hình người nào trên lễ đài.
+function leDaiBaDinh(): THREE.Group {
+  const g = new THREE.Group();
+
+  // Ba bậc bục gỗ, to dần xuống dưới.
+  const tiers: Array<[number, number, number, number]> = [
+    [2.4, 0.22, 1.6, 0.11],
+    [1.9, 0.22, 1.3, 0.33],
+    [1.4, 0.22, 1.0, 0.55],
+  ];
+  for (const [w, h, d, y] of tiers) {
+    const tier = box(w, h, d, WOOD);
+    tier.position.y = y;
+    g.add(tier);
+  }
+
+  // Phông gỗ phía sau + mái đơn giản.
+  const backdrop = box(2.2, 1.7, 0.12, PODIUM_BACKDROP);
+  backdrop.position.set(-0.6, 1.5, -0.5);
+  g.add(backdrop);
+  const roof = box(2.4, 0.14, 0.9, WOOD);
+  roof.position.set(-0.6, 2.4, -0.35);
+  roof.rotation.x = -0.15;
+  g.add(roof);
+
+  // Cờ đỏ sao vàng cắm cao giữa bục (bắt buộc có sao — cờ đỏ trơn là sai cờ).
+  const pole = cyl(0.035, 0.04, 2.4, WOOD, 6);
+  pole.position.set(0.3, 1.87, 0.1);
+  g.add(pole);
+  const cloth = box(0.04, 0.7, 1.0, CLOTH_RED);
+  cloth.position.set(0.3, 2.6, 0.62);
+  g.add(cloth);
+  const star = makeStar(0.18, GOLD);
+  star.rotation.y = Math.PI / 2;
+  star.position.set(0.34, 2.6, 0.62);
+  g.add(star);
+
+  return g;
+}
+
+// 21. Pháo 105mm kéo vào trận địa Điện Biên Phủ — nòng dài, hai bánh, càng
+// chữ V xoè sau, dây kéo tượng trưng phía trước.
+function phaoDienBien(): THREE.Group {
+  const g = new THREE.Group();
+
+  const barrel = cyl(0.05, 0.06, 2.0, STEEL, 8);
+  barrel.rotation.z = -Math.PI / 2;
+  barrel.position.set(0.9, 1.0, 0);
+  g.add(barrel);
+  const muzzle = cyl(0.07, 0.07, 0.12, STEEL, 8);
+  muzzle.rotation.z = -Math.PI / 2;
+  muzzle.position.set(1.9, 1.0, 0);
+  g.add(muzzle);
+
+  const breech = box(0.5, 0.42, 0.4, MILITARY_GREEN);
+  breech.position.set(0.25, 1.0, 0);
+  g.add(breech);
+  const shield = box(0.06, 0.75, 1.1, MILITARY_GREEN);
+  shield.position.set(0.55, 1.0, 0);
+  g.add(shield);
+
+  const axle = cyl(0.04, 0.04, 0.9, STEEL, 6);
+  axle.rotation.x = Math.PI / 2;
+  axle.position.set(0.15, 0.55, 0);
+  g.add(axle);
+  for (const sz of [-1, 1]) {
+    const wheel = cyl(0.32, 0.32, 0.14, DARK_STEEL, 12);
+    wheel.rotation.x = Math.PI / 2;
+    wheel.position.set(0.15, 0.55, sz * 0.5);
+    g.add(wheel);
+    const hub = cyl(0.08, 0.08, 0.16, STEEL, 8);
+    hub.rotation.x = Math.PI / 2;
+    hub.position.set(0.15, 0.55, sz * 0.5);
+    g.add(hub);
+  }
+
+  // Càng pháo chữ V xoè phía sau.
+  for (const sz of [-1, 1]) {
+    const trail = cyl(0.035, 0.045, 1.5, WOOD, 6);
+    trail.position.set(-0.75, 0.4, sz * 0.5);
+    trail.rotation.y = sz * 0.35;
+    trail.rotation.z = 0.25;
+    g.add(trail);
+  }
+
+  // Dây kéo tượng trưng phía trước («kéo pháo vào»).
+  const rope = cyl(0.025, 0.03, 1.1, DARK_STEEL, 6);
+  rope.rotation.z = Math.PI / 2 - 0.3;
+  rope.position.set(2.4, 0.7, 0);
+  g.add(rope);
+
+  return g;
+}
+
+// 22. Xe tăng T-54 số hiệu 390 — thân thấp bè, tháp pháo tròn, nòng dài,
+// xích hai bên. Số hiệu 390 thể hiện bằng mảng màu trên tháp pháo (tránh
+// dựng font low-poly méo bằng khối lập phương nhỏ).
+function xeTang390(): THREE.Group {
+  const g = new THREE.Group();
+
+  const hull = box(2.3, 0.55, 1.3, MILITARY_GREEN);
+  hull.position.set(0, 0.55, 0);
+  g.add(hull);
+  const glacis = box(0.7, 0.4, 1.2, MILITARY_GREEN);
+  glacis.position.set(1.1, 0.62, 0);
+  glacis.rotation.z = -0.3;
+  g.add(glacis);
+
+  const turret = cyl(0.62, 0.68, 0.5, MILITARY_GREEN, 10);
+  turret.position.set(-0.1, 1.08, 0);
+  g.add(turret);
+  const hatch = cyl(0.14, 0.14, 0.08, MILITARY_GREEN, 8);
+  hatch.position.set(-0.3, 1.37, 0);
+  g.add(hatch);
+
+  const barrel = cyl(0.045, 0.05, 1.9, STEEL, 8);
+  barrel.rotation.z = -Math.PI / 2;
+  barrel.position.set(0.85, 1.1, 0);
+  g.add(barrel);
+
+  // Mảng số hiệu «390».
+  const plate = box(0.03, 0.28, 0.4, TANK_PLATE);
+  plate.position.set(-0.1, 1.1, 0.63);
+  g.add(plate);
+
+  for (const sz of [-1, 1]) {
+    const track = box(2.3, 0.36, 0.28, DARK_STEEL);
+    track.position.set(0, 0.28, sz * 0.72);
+    g.add(track);
+    for (let i = 0; i < 5; i++) {
+      const roadWheel = cyl(0.16, 0.16, 0.26, DARK_STEEL, 10);
+      roadWheel.rotation.x = Math.PI / 2;
+      roadWheel.position.set(-0.85 + i * 0.42, 0.28, sz * 0.72);
+      g.add(roadWheel);
+    }
+  }
+
+  return g;
+}
+
 // ── Registry ─────────────────────────────────────────────────────────────
 
 export interface Figure3DDef {
@@ -728,6 +1332,20 @@ export const FIGURES3D: Figure3DDef[] = [
   { id: "tran-hung-dao", ten: "Trần Hưng Đạo", build: tranHungDao },
   { id: "le-loi", ten: "Lê Lợi", build: leLoi },
   { id: "quang-trung", ten: "Quang Trung", build: quangTrung },
+  { id: "ba-trieu", ten: "Bà Triệu", build: baTrieu },
+  { id: "ly-bi", ten: "Lý Bí (Lý Nam Đế)", build: lyBi },
+  { id: "mai-thuc-loan", ten: "Mai Thúc Loan (Mai Hắc Đế)", build: maiThucLoan },
+  { id: "le-hoan", ten: "Lê Hoàn (Lê Đại Hành)", build: leHoan },
+  { id: "ly-thuong-kiet", ten: "Lý Thường Kiệt", build: lyThuongKiet },
+  { id: "tran-nhan-tong", ten: "Trần Nhân Tông", build: tranNhanTong },
+  { id: "nguyen-anh", ten: "Nguyễn Ánh (Gia Long)", build: nguyenAnh },
+  { id: "truong-dinh", ten: "Trương Định", build: truongDinh },
+  { id: "ham-nghi", ten: "Vua Hàm Nghi", build: hamNghi },
+  { id: "phan-boi-chau", ten: "Phan Bội Châu", build: phanBoiChau },
+  { id: "tau-latouche-treville", ten: "Tàu Amiral Latouche-Tréville", build: tauLatoucheTreville },
+  { id: "le-dai-ba-dinh", ten: "Lễ đài Ba Đình", build: leDaiBaDinh },
+  { id: "phao-dien-bien", ten: "Pháo 105mm Điện Biên Phủ", build: phaoDienBien },
+  { id: "xe-tang-390", ten: "Xe tăng 390", build: xeTang390 },
 ];
 
 // ── Trình xem ────────────────────────────────────────────────────────────
