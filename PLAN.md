@@ -17,9 +17,13 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ---
 
-## Trạng thái hiện tại — 2026-08-05
+## Trạng thái hiện tại — 2026-08-06
 
-98 file dữ liệu · **4.531 mục** · 7,76 MB · 34 lớp phủ (2.347 mục, 52%) · 12/12 cổng dữ liệu xanh · smoke 9 đạt/0 hỏng · chủ quyền 13/13 thời kỳ · `tsc` exit 0.
+252 file dữ liệu · **5.345 mục** · 33 lớp phủ · **13/13 cổng dữ liệu xanh** · smoke 9 đạt/0 hỏng · chủ quyền 13/13 thời kỳ · `tsc` exit 0.
+
+**Sa đồ 240/241 trận** · **Hành trình lịch sử 22 chặng** (phân kỳ đủ 5 nhóm) · **22 mô hình nhân vật/hiện vật 3D**.
+
+⚠️ Khối này lỗi thời rất nhanh. Số cũ ghi 4.531 mục / 34 lớp / 12 cổng, sai cả ba, và tôi đã có lần đề xuất làm lại một việc đã xong vì tin vào nó. **Đếm lại trước khi trích.**
 
 | Chiến dịch đang mở | Trạng thái |
 |---|---|
@@ -89,7 +93,7 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 - [ ] **Khoá GeoJSON có dấu cách.** `boundaries/*.geojson` nhóm tỉnh dùng `"Tỉnh thành mới"`, `"GRDP 2024 (tỷ VND)"`, `"Diện tích (km2)"` — không dùng trực tiếp làm tên thuộc tính JS/SQL được. Map lại tên. **M**
 - [ ] `di-tich-qgdb` / `unesco` / `bao-vat-quoc-gia` thiếu trường `id`. `unesco.json` lệch nặng nhất — thiếu 6 trường lõi. **S**
 - [ ] `to-nghe-danh-than.json` trộn kiểu `nam_hien_thi`: 54 mục chuỗi, **14 mục số**. **S**
-- [ ] 🔴 **`chien-dich-tran-danh.json` có 11 giá trị `loai`, trong đó hai CẶP ĐỒNG NGHĨA** — đo 2026-08-05: `chong-phap` 8 ⟷ `khang-phap` 21 · `chong-my` 4 ⟷ `khang-my` 62. Cùng một khái niệm mang hai tên, nên bất kỳ bộ lọc nào theo `loai` cũng đang bỏ sót âm thầm. Đây đúng là bẫy #12. Chốt một tên rồi di trú, **đừng** để agent sau tự chọn. Bảy giá trị còn lại: `giu-nuoc` 29 · `bao-ve-bien-gioi` 18 · `can-dai` 9 · `trung-dai` 5 · `cach-mang` 5 · `khoi-nghia` 4 · `hien-dai` 3. **S/M**
+- [x] ~~🔴 **`chien-dich-tran-danh.json` hai CẶP `loai` ĐỒNG NGHĨA** — `chong-phap` 8 ⟷ `khang-phap` 21 · `chong-my` 4 ⟷ `khang-my` 62.~~ **ĐÃ XONG từ commit `1dc1b73`** — đếm lại 2026-08-06: `chong-phap` = **0**, `chong-my` = 0, còn `khang-phap` 37 · `khang-my` 66. Mục này đã lỗi thời khi tôi đọc nó và tôi suýt cử agent làm lại. **Đếm trước khi tin.**
 - [ ] `bao-vat-quoc-gia.json` + `di-tich-qgdb.json` có **cả `cap_nhat` lẫn `ngay_cap_nhat`** — kiểm hai giá trị có lệch không. **S**
 
 **Không phải lỗi, đừng "sửa"**: 26 id + 34 slug trùng chéo file là **có chủ ý** — chúng đang hoạt động như khoá ngoại giữa các miền (`bach-dang-938` nối 3 miền; `slug="hue"` nối media/provinces/story). Việc cần làm là **chính thức hoá** chúng, không phải khử trùng.
@@ -102,11 +106,16 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 - [ ] **442 draft chờ cổng §9** — khối lượng lớn nhất còn treo. Cần soát tay nội dung nhạy cảm (chiến tranh, chính trị, liệt sĩ). **L**
 - [ ] **155 phim + 301 tiểu sử** ở trường `phim_trang_thai` (khác `trang_thai` overlay đã xử lý xong) — không file nào sau nhắc lại, cần xác nhận còn treo hay đã bỏ theo dõi. **M**
 
-### Lỗi dữ kiện cần tra nguồn — từ `docs/lich-su/audit-findings.md`, chưa có bằng chứng đã sửa
-- [ ] `le-nhan-kiet` khoa Tân Sửu: 1651 hay 1661 — can chi lệch. **S**
-- [ ] `duong-van-manh` + `tran-hoang-na`: năm sinh/mất lệch tuổi hy sinh khai báo. **S**
-- [ ] `bien-gioi-tay-nam-1978-1979`: ba mốc năm mâu thuẫn (1978 / 1977–79 / 1975–78). **S**
-- [ ] `nguyen-an-nien`, `trieu-kim-van`: năm mất = 2026, cần xác nhận nguồn. **S**
+### Lỗi dữ kiện — TRA XONG 2026-08-06. Trong 8 mục, chỉ 5 là lỗi thật.
+- [x] ~~`le-nhan-kiet` khoa Tân Sửu 1651 hay 1661~~ → **1661** (1651 là Tân Mão; bản ghi tự mâu thuẫn giữa can chi và năm dương). Đã sửa `nam_hien_thi` + `mo_ta`.
+- [x] ~~`tran-hoang-na` lệch tuổi hy sinh~~ → 1962 **→ 1964**, khớp «tháng 8/1964» và tuổi 15 trong chính nguồn.
+- [ ] ⛔ `duong-van-manh` **KHÔNG TRA ĐƯỢC** — nguồn gốc tự mâu thuẫn (14 ≠ 16 tuổi) và mọi nguồn lặp y hệt, không có số thay thế. Để nguyên, **đừng đoán**. **S**
+- [x] ~~`bien-gioi-tay-nam-1978-1979` ba mốc năm mâu thuẫn~~ → **không phải chọn 1 trong 3.** `nam: 1978` tự mâu thuẫn với `nam_hien_thi: "1977–1979"` trong CÙNG bản ghi (đã sửa → 1977). Còn «1977–1979» (mốc chiến tranh chính thức) và «1975–1978» (mốc thống kê thiệt hại do xâm phạm lẻ tẻ) **đều đúng** — chính nguồn Bảo tàng LSQG dùng cả hai cho hai mục đích trong cùng bài. **Giữ cả hai, đừng ép về một.**
+- [x] ~~`nguyen-an-nien`, `trieu-kim-van` năm mất 2026~~ → **KHÔNG PHẢI LỖI**, mất thật (8/4/2026 và 24/6/2026), khớp tuổi thọ, đúng nguồn đã trích.
+- [x] ~~Phong Nha lệch ~18 km giữa `di-tich-qgdb` và `unesco`~~ → sửa về đúng toạ độ **đã có nguồn** trong `unesco.json` (106.283, 17.53), không bịa số mới. **Bảy cặp trùng còn lại lệch lớn nhất 1,9 km (Tràng An), phần lớn dưới 500 m — KHÔNG phải lỗi, đừng "sửa".**
+- [x] ~~Không Lộ vs Nguyễn Minh Không~~ → tranh luận sử học **chưa ngã ngũ**, ngay nguồn nhà nước cũng không kết luận. Giữ hai mục tách riêng theo phe «hai người» (căn cứ niên đại + đời vua phục vụ) và thêm `ghi_chu_bien_tap` ở cả hai. **Đừng gộp mà cũng đừng coi là đã kết luận.**
+- [x] ~~Nữ TNXP Đồng Lộc ↔ Võ Thị Tần trùng marker~~ → đã tự giải quyết sau đợt bỏ mục gộp, cách nhau 3,75 km.
+- [ ] ⚠️ Phát hiện phụ chưa xử: **9 nữ TNXP Đồng Lộc còn lại dùng chung một toạ độ giữ chỗ**, lệch 1,6–2 km khỏi cụm thật. Không khẩn, nêu để người duyệt §9 biết. **S**
 - [ ] ~10 mục lệch `loai`/file. ⚠️ Nhiều file nguồn **đã bị gộp ở Phase 3** — kiểm lại tên file/id sau merge trước khi áp, có thể một phần đã tự giải quyết. **S/M**
 - [ ] Trùng người ↔ sự kiện: 4/8 mục `khoi-nghia-bac-thuoc` trùng bản sự kiện đầy đủ ở file khác · `thai-phien` ↔ `duy-tan-1916` · Không Lộ vs Nguyễn Minh Không (một hay hai người — cần tra sử) · ~8 di tích trùng `di-tich-qgdb` ↔ `unesco` (Hạ Long, **Phong Nha lệch ~18 km**, Huế, Hội An, Mỹ Sơn, Hoàng thành TL, Thành nhà Hồ, Tràng An) · Nữ TNXP Đồng Lộc ↔ Võ Thị Tần trùng marker. **M**
 - [ ] `di-tich-qgdb.json` header ghi toạ độ lấy từ Wikipedia/Wikidata — vi phạm nguyên tắc không-Wikipedia dù chỉ dùng cho toạ độ. Tái tính qua Nominatim / dsvh.gov.vn. **M**
@@ -183,8 +192,14 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 
 🔴 **16 mục lô 3 trùng UNESCO** — Quần thể Cố đô Huế (11), Cố đô Hoa Lư (11 mục nhưng nằm trong vùng lõi Tràng An), Tràng An–Tam Cốc–Bích Động (3). Dự án đã có sẵn ~8 di tích trùng giữa `di-tich-qgdb` và `unesco`. **Không tạo bản ghi độc lập** — gắn `trung_unesco: true` và liên kết.
 
-- [ ] Dry-run đối chiếu chéo với `entries-index.json` trước khi nạp. **M**
-- [ ] Xác minh 5 điểm agent tự gắn cờ nghi ngờ: "Chùa Trình" Yên Tử có phải Chùa Bí Thượng · "Ngọc Vân" hay "Ngọa Vân" · ngày ký Văn Miếu 10 hay 12/05/2012 · 11/26 điểm Điện Biên chưa rõ thuộc đợt 2009 hay 2015 · số QĐ Núi Trường Lệ (chỉ có ở báo tỉnh). **S**
+- [x] ~~Dry-run đối chiếu chéo với `entries-index.json` trước khi nạp.~~ **XONG 2026-08-06** — trùng tên chính xác mới×cũ: 4 · trùng nội bộ 181×181: **0** · biến thể y/i: 0 · toạ độ <200 m: 0. Còn ~14 cặp «chứa cụm từ» cần người soát (Hồ Hoàn Kiếm–Đền Ngọc Sơn, Văn Miếu–QTG, Đền Trần–Chùa Phổ Minh, Cát Bà, **Cát Tiên — 2 cụm mới trỏ cùng 1 điểm cũ, nghi một vườn bị tách hai hồ sơ**).
+- [ ] 🔴 **Toạ độ: mâu thuẫn trong chính hồ sơ đã giải — nhưng vẫn chặn cách nạp.** Đếm thật 2026-08-06: **1/181 mục có lat+lon dùng được** (Trấn Hải Thành). 180 mục kia `lat=null/lon=null` mà **vẫn** mang `do_tin_cay_toa_do` trung(54)/thấp(126) — trường này đang dùng như nhãn «độ chi tiết địa lý mà nguồn mô tả», dự phòng cho bước geocode sau, **không phải** đánh giá độ tin cậy của một con số đã có. Không phải lỗi dữ liệu, chỉ là hai trường dễ đọc nhầm thành mâu thuẫn.
+   **Nhưng phát hiện quan trọng hơn**: `di-tich-qgdb.json` hiện tại (152 mục) đã dùng mô hình **1 toạ độ/cụm + `diem_thanh_phan[]` không toạ độ cho điểm con**. Đối chiếu 47 đơn vị cấp cụm của bộ 181 với 152 mục cũ: 6 khớp chính xác + 30 khớp lỏng đã CÓ toạ độ sẵn → **chỉ 11/47 thật sự cần tra toạ độ mới**, không phải 180. Lớp phủ vẫn khả thi; sai là ở **độ hạt** nếu nạp phẳng theo bản ghi con. **M**
+- [ ] ⚠️ Hai lỗ hổng lộ ra khi rà tay 30 cặp khớp lỏng: «Bạch Đằng» đã có trong CSDL **có thể là trận 938/981 chứ không chắc 1288** · **«Đường Trường Sơn – HCM» (28 bản ghi con, 11 tỉnh) là một TUYẾN chứ không phải điểm** — gán một toạ độ là sai kiểu hình học, không phải thiếu dữ liệu. Cần bàn riêng trước khi nạp. **M**
+- [x] ~~Xác minh 5 điểm agent tự gắn cờ nghi ngờ.~~ **4/5 xong 2026-08-06**, tra bằng `dsvh.gov.vn` thật: «Chùa Trình» = Chùa Bí Thượng ✅ · «Ngọa Vân» đã tự giải đúng từ trước · Văn Miếu **10/05/2012** (hai trang dsvh độc lập cùng ghi) · Núi Trường Lệ **QĐ 1954/QĐ-TTg 31/12/2019** — nay có nguồn dsvh, không còn chỉ mỗi báo tỉnh.
+- [ ] ⛔ **Còn treo thật: 11/26 điểm Điện Biên thuộc đợt xếp hạng 2009 hay 2015.** Đếm lại khớp đúng 11/26 (không phải ước lượng sai). Trang «bổ sung 23 điểm» của dsvh.gov.vn không cho danh sách tường minh đủ tin để trích, và **bản tóm tắt WebFetch không đáng tin cho việc này**. Cần người đọc trực tiếp văn bản **QĐ 1272/QĐ-TTg 2009**. **S**
+- [x] ~~16 mục lô 3 trùng UNESCO đã gắn `trung_unesco` chưa.~~ Kiểm 2026-08-06: con số thật là **25** (Huế 11 + Hoa Lư 11 + Tràng An 3), brief ghi 16 là ước lượng ban đầu. **100% đã gắn đúng**, không sót mục nào. Cộng Hoàng thành Thăng Long ở lô 1 = 26, khớp.
+- [x] ~~Hai mục hoá ra KHÔNG phải QGĐB cần tách.~~ Kiểm 2026-08-06: đã nằm sẵn trong `lo1/lo3-khong-tra-duoc.json`, **không có trong bộ 181** — vòng tra nguồn đã xử đúng từ đầu, mục này ghi thừa.
 - [ ] **Hai mục hoá ra KHÔNG phải QGĐB**, đưa vào lớp di tích quốc gia thường: Nhà 48 Hàng Ngang (QĐ 54/VH-QĐ 29/4/1979) và Hang Ngườm Bốc (QĐ 02/2004/QĐ-BVHTT 09/01/2004 — **và danh sách gốc còn ghi sai tỉnh**, thật ra ở Cao Bằng chứ không phải Tuyên Quang). **S**
 - [ ] 2.122 di tích lịch sử văn hoá — đợt sau, sau khi pipeline QGĐB chứng minh chất lượng **L**
 - [ ] 622 mục khớp một phần — cần người soát. Cảnh báo: thuật toán bỏ dấu làm "làng" và "lăng" trùng thành "lang" → có khớp giả. **M**
@@ -314,6 +329,13 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
     (b) Gieo payload thử vào **đúng một mục** rồi bấm marker: cú bấm rơi trúng mục khác (điểm chồng nhau ở zoom xa), popup trả về là của mục sạch, và phép thử «đạt» mà chẳng chứng minh gì. Gieo vào **mọi** mục thì bấm trúng ai cũng là ca hợp lệ.
     (c) Quét URL ảnh bằng nhiều luồng song song vào Wikimedia → **429 hàng loạt**, trông y hệt «ảnh chết». Báo cáo đó mà tin là đi sửa hàng trăm mục lành. Quét chậm, tuần tự, và phân biệt 429 với 404.
 19. **Google Sheets**: `/export?format=csv` trả **401**; `/gviz/tq?tqx=out:csv` **mở**. Lấy tab khác bằng `&sheet=<tên URL-encoded>`.
+20. 🔴 **`npm run build:index` từng dựng catalog TRƯỚC chỉ mục sa đồ**, nên `validate_catalog_freshness` đỏ ngay sau khi vừa dựng lại chỉ mục — lệnh đó chưa bao giờ ra được catalog tươi khi thư mục `battles/` đổi. Đã đảo thứ tự (sado → catalog → entries) ngày 2026-08-06. Thêm bước sinh file mới thì **kiểm lại thứ tự phụ thuộc**.
+21. 🔴 **Ba bẫy đo mô hình 3D — cùng họ với #10 và #18.**
+    (a) `import("three")` trong `Runtime.evaluate` **không phân giải được**: Vite chỉ viết lại định danh trần ở khâu biến đổi mã nguồn, không phải lúc chạy. Đo hộp bao bằng tay từ `geometry.attributes.position` + `matrixWorld.elements`.
+    (b) `ctx2d.drawImage(canvasWebGL)` trả khung **TRẮNG TRƠN** vì `WebGLRenderer` không đặt `preserveDrawingBuffer`. Lượt đầu cho 0% hiển thị trên **CẢ 8 mô hình cũ đang chạy tốt** — nhóm đối chứng là thứ bắt được lỗi phép đo. Chụp bằng `Page.captureScreenshot` của CDP (ảnh hợp thành) mới đúng.
+    (c) **Kích thước ảnh chỉ chứng minh «có gì đó được vẽ».** Câu «ngôi sao có đúng chỗ không» phải MỞ ẢNH RA XEM — và xem **nhiều góc**: lá cờ Ba Đình có sao dựng đúng nhưng chỉ ở một mặt, ba góc đầu đều thấy vải đỏ trơn. Một góc thiếu sao suýt làm tôi bắt làm lại một bản vá vốn đã đúng.
+22. **`ShapeGeometry` là mặt phẳng 0 độ dày** → ở góc nhìn gần song song thì diện tích chiếu gần 0 và chi tiết biến mất. `DoubleSide` KHÔNG cứu được vì đây là vấn đề góc chiếu, không phải mặt sau. Dùng `ExtrudeGeometry` cho chi tiết phải luôn thấy.
+23. **`cyl()` luôn đối xứng quanh TÂM**, không phải quanh một đầu. Đặt `position` theo ý «đây là điểm nối» thực ra đặt điểm giữa; xoay lệch hai trục cùng lúc thì đầu gần trôi khỏi chỗ nối. Dùng nhóm có gốc ở một đầu (quy ước `makeSword`/`makeSpear`/`makeRod`).
 
 ---
 
@@ -346,8 +368,9 @@ Chủ dự án giao 13 hạng mục. Tiến độ ở đây, chi tiết kỹ thu
 | 6 | Mốc dòng thời gian: gắn vị trí, hiện note khi kéo; đủ 4000 năm | ✅ **XONG 2026-08-05.** `src/moc-lich-su.ts` + `.css`: vạch đính theo năm, note bung khi kéo, ◂ ▸ đi hết mốc trong kỳ, bấm vạch nhảy đúng thời kỳ. **62 → 181 mốc, phủ đủ 13/13 đoạn** (trước đó 7 đoạn trống, nửa đầu 4000 năm trắng). Đo Chrome thật: vạch năm 602 rơi 491,1 px / lý thuyết 491,1 px — lệch 0. Nhóm huyền sử: `nam` chỉ là khoá sắp xếp, `nam_hien_thi` (thứ duy nhất hiện ra) ghi rõ «không có năm xác định». |
 | 7 | Ngục trung nhật ký xếp theo thứ tự bài | ✅ Xong |
 | 8 | Thư viện: chế độ đọc kiểu Kindle, chế độ lật, mở rộng cửa sổ, tuỳ chỉnh, bỏ biểu tượng thừa, sắp theo chủ đề + thời gian/tác giả, link trang tỉnh, bổ sung tác phẩm | ✅ **XONG 2026-08-05.** `src/thuvien.ts` (1.470 dòng) + `.css` (671); `main.ts` 3.051 → 2.467. 14 tab chủ đề kèm số lượng · 3 bộ sắp xếp · khung đọc chỉnh cỡ chữ/giãn dòng/phông/nền/cột · lật trang · phóng 560→1100 px · nút mở trang tỉnh · 0 emoji trang trí còn sót. **+144 tác phẩm** (705 mục). Người thi công ĐO trước khi viết hàm so sánh và dữ liệu bác giả định: 157 mục không có trường năm nào, 0/127 ca dao có tác giả → ô «sắp theo tác giả» tự tắt ở chủ đề khuyết danh thay vì cho thứ tự vô nghĩa. |
-| 9 | Hành trình lịch sử | 🔄 **UI xong, dữ liệu vẫn 6 chặng.** `journey.ts` 189 → 377 dòng: khay «Toàn bộ lộ trình» gập/mở nhóm theo `thoi_ky`, thanh tiến độ, chuyển cảnh CSS, phím ←/→. Renderer chịu được vài chục chặng. **Còn lại**: (a) đội nội dung viết thêm chặng, (b) thêm trường tuỳ chọn `thoi_ky` vào `journey/hanh-trinh.json` để nhóm — hiện fallback «Chưa phân kỳ». |
-| 10 | Sa đồ chiến dịch | 🔄 **116/241.** Trình dựng SVG tổng quát chạy bằng dữ liệu; `battles/_index.json` tự sinh + cổng chống mốc. 6 đợt, không đợt nào phải quay lại sửa nội dung. **Lớp dữ liệu nguồn đã lấp**: overlay 189 → 241, lệch TK20 65,6 % → 51,2 %, giai đoạn 1789–1858 từ ĐÚNG MỘT mục lên 28, các khởi nghĩa nông dân thời Nguyễn trước đây KHÔNG có mục nào nay đã có. Còn 125 trận: 57 ngoài TK20 (TK19 38 · TK14 6 · TK16 3 · TK18 3) và 68 ở TK20. |
+| 9 | Hành trình lịch sử | ✅ **XONG 2026-08-06. 6 → 22 chặng**, phân kỳ đủ 5 nhóm (Dựng nước 1 · Bắc thuộc 5 · Kỷ nguyên độc lập 8 · Nhà Nguyễn–Pháp thuộc 4 · Thời hiện đại 4). 🔴 **Chỗ nghẽn KHÔNG phải thiếu nội dung** như mục này từng ghi: `validate_journey.mjs` đòi `figure_id` có builder thật và chỉ có **8 builder, tất cả trước năm 1800** — viết bao nhiêu chặng cũng không nạp được. Mở khoá bằng 14 builder mới (xem #13b). Lấp hai mảng trống lớn nhất: trước Ngô Quyền (chỉ có mỗi Hùng Vương) và sau Quang Trung (**trắng hoàn toàn**, mất cả TK XIX lẫn XX). 4 chặng TK20 dựng quanh **hiện vật** thay chân dung — quyết định của chủ dự án 2026-08-06. |
+| 10 | Sa đồ chiến dịch | ✅ **XONG 2026-08-06. 136 → 240/241.** Đợt 8 chạy 5 lô song song (A trước 1802 · B 1802–1921 · C 1946–1965 · D 1966–1974 · E 1975–1984 nhạy cảm). **1 mục duy nhất bỏ**: `khoi-nghia-doi-an-lang-son-1921` — chính overlay tự khai nguồn «RẤT ÍT, chỉ một dòng tóm tắt». Không đợt nào phải quay lại sửa nội dung. Dry-run độc lập của main trên cả 105 file: 0 lỗi. |
+| 13b | 22 mô hình nhân vật/hiện vật 3D | ✅ **XONG 2026-08-06, 8 → 22.** 10 nhân vật (Bà Triệu · Lý Bí · Mai Thúc Loan · Lê Hoàn · Lý Thường Kiệt · Trần Nhân Tông · Nguyễn Ánh · Trương Định · Hàm Nghi · Phan Bội Châu) + **4 hiện vật thay chân dung TK20** (tàu Latouche-Tréville · lễ đài Ba Đình · pháo Điện Biên · xe tăng 390). |
 | 11 | Lớp phủ chia theo lĩnh vực/chủ đề/giai đoạn, **không chia theo giới tính** | ✅ **XONG 2026-08-05.** Lớp `nu-danh-nhan-lich-su` và nhóm «Nữ danh nhân · Dân tộc thiểu số» đã bỏ; 34 → 33 lớp. 38 mục về 8 lớp lĩnh vực. 4 vụ trùng người (Võ Thị Sáu, Út Tịch, Hoàng Thiều Hoa, Xuân Nương) tự kiểm xác nhận — không chép sang, không xoá bản cũ. Mục gộp «Mười nữ liệt sĩ Đồng Lộc» bỏ vì 9/10 đã có bản cá nhân; chuyển Võ Thị Tần sang cho đủ 10. Thêm `loai: bieu-tuong-khang-chien` cho 2 người chưa tra ra danh hiệu chính thức — gán `anh-hung-llvt` cho họ là khẳng định danh hiệu nhà nước mà nguồn không nói. |
 | 12 | UI lag khi di chuyển | 🔄 **Tìm ra một nguồn tải lớn, đã cắt; chưa tuyên bố hết lag.** Đo bằng cách bọc `queryRenderedFeatures` rồi ĐẾM (fps ở harness này vô nghĩa, nhưng số lời gọi thì tất định): 30 lần rê chuột → **240 lời gọi** khi không lớp phủ, **4.200** khi bật 33 lớp = **140 lần dò mỗi `mousemove`**, mà `mousemove` bắn ~60 lần/giây. Kéo bản đồ tốn **0** — chốt chữ ký khung nhìn vẫn tốt. Nghĩa là giật nằm ở RÊ CHUỘT chứ không phải kéo bản đồ; suốt trước đó tôi đo fps lúc kéo, tức đo nhầm chỗ. Nguyên nhân: `mouseenter`/`mouseleave` gắn theo TỪNG lớp, MapLibre dò riêng cho mỗi lượt đăng ký. Gộp về một handler + một lượt dò → **270 lời gọi**, ít hơn 15,6 lần. **Còn lại**: 33 nguồn GeoJSON + 33 lớp vòng tròn + 33 lớp icon vẫn là chi phí cấu trúc chưa đụng (gom nguồn / clustering / LOD), và cần đo trên máy có GPU thật mới biết người dùng cảm nhận ra sao. |
 | 13 | Nâng cấp bản đồ 3D | ✅ **XONG 2026-08-05** cùng #4/#5. Sửa thêm một lỗi thật bắt được bằng ẢNH DỰNG chứ không phải đọc mã: `queryRenderedFeatures` chỉ thấy thứ ĐÃ VẼ nên nhảy Hà Nội → Huế thì 38 điểm có vòng tròn mà 0 mô hình; `map.areTilesLoaded()` không bắt được vì ngay sau `jumpTo` nó vẫn trả `true`. Chữa bằng lượt quét bù 600 ms chỉ sau cú nhảy xa. |
@@ -372,8 +395,17 @@ Chủ dự án giao 13 hạng mục. Tiến độ ở đây, chi tiết kỹ thu
 🔴 **Thanh thời gian: 7/13 đoạn TRỐNG mốc.** Đo ngày 2026-08-05 sau khi nối dây, chia 4000 năm thành 13 đoạn: Xích Quỷ 0 · Văn Lang 0 · Âu Lạc 0 · Nam Việt 0 · Giao Chỉ/Bắc thuộc I–II 0 · Vạn Xuân 0 · Bắc thuộc III→Tự chủ 4 · Đại Cồ Việt 3 · Đại Việt **31** · Đại Nam 13 · Pháp thuộc 10 · 1945–2025 **1** · từ 1/7/2025 **0**.
    Nghĩa là **toàn bộ lịch sử trước năm 602 không có một mốc nào** — kéo thanh trượt qua nửa đầu 4000 năm thì không hiện gì. Đây đúng là chỗ chủ dự án nói "chưa đủ cho 4000 năm", nay có số. Đợt tra cứu đang chạy đã nhận thứ tự ưu tiên mới: trước-602 trước nhất, rồi 1945–2025, rồi mốc sắp xếp 34 tỉnh (lấy số nghị quyết từ `timeline/events.json`, đừng tra lại rồi ghi số khác).
 
-🔴 **Tương phản chế độ TRẺ EM của sa đồ CHƯA ĐẠT — chưa sửa xong.** Agent thi công đo trên trình duyệt thật ngày 2026-08-05: `--sd-ta-chu` trên nền bờ **4,38:1** và trên nền sông **4,11:1**, dưới ngưỡng 4,5:1 của WCAG 1.4.3 cho chữ thường (vẫn qua 3:1 cho hình khối). Ảnh hưởng 3 chú thích trên sa đồ. Agent thêm halo viền quanh `.sd-caption` — kỹ thuật nhãn bản đồ chuẩn — nhưng **công thức tương phản phẳng không mô hình hoá được halo**, nên hiệu quả CHƯA được chứng minh. Chế độ người lớn đạt hết (4,91–7,44:1).
-   Cách chữa dứt điểm: đổi `--sd-ta-chu` ở khối trẻ em sang một token đậm hơn rồi đo lại trên trình duyệt thật. **Đừng coi là đã xong chỉ vì có halo.**
+- [x] ~~🔴 **Tương phản chữ sa đồ chưa đạt 4,5:1.**~~ **XONG 2026-08-06 — và hoá ra hỏng HAI ca, không phải một.**
+   Lượt trước chỉ đo bảng màu mặc định ở chế độ trẻ em rồi kết luận «chế độ người lớn đạt hết». Đo lại đủ 4 tổ hợp (2 chế độ × ngoại xâm/nội chiến), **đọc token thẳng từ `theme.css`** thay vì chép tay hex:
+   · ❌ trẻ em · ngoại xâm `--dung-chu` #15803d → 4,38 bờ / 4,11 sông
+   · ❌ **người lớn · nội chiến** `--nhan` #b3791f → **3,33 / 3,23** ← tệ hơn hẳn, chưa ai đo
+   · ✅ người lớn · ngoại xâm 5,06 / 4,91 · ✅ trẻ em · nội chiến 4,97 / 4,67
+   Chữa bằng 2 token mới trong `theme.css` (`--sd-ta-chu-ngoai-xam` #166534, `--sd-ta-chu-noi-chien` #92400e), đè đúng hai ca hỏng trong `sado.css`, **không** hạ tối `--dung-chu`/`--nhan` vì quiz/olympia/badge dùng chúng trên nền sáng hơn.
+   Nghiệm thu Chrome thật: trẻ em 6,22 / 5,84. **Halo giữ nhưng nay chỉ là lớp phụ — lấy halo làm bằng chứng đạt ngưỡng là sai, lượt trước mắc đúng lỗi đó.**
+   Phạm vi thật hẹp hơn tưởng: **chỉ bản vẽ tay `bach-dang-938`** dùng `--sd-ta-chu` làm màu chữ; trình dựng tổng quát dùng `--chu` trên quầng `--mat` (15:1).
+
+🔴 **`loai_xung_dot` chưa mục nào khai — bảng màu nội chiến chưa bao giờ được bật.** Đo 2026-08-06: **0/240 hồ sơ trận** có trường này. `battle.ts` dựng sẵn cả một bảng màu riêng cho nội chiến vì cặp «đúng/sai» xanh-đỏ *«đọc như phán xét đạo đức một bên»* — nhưng Mạc–Lê, Trịnh–Nguyễn, Lê Duy Lương, Nông Văn Vân đang bị tô xanh «đúng» cho một bên và đỏ «sai» cho bên kia, đúng thứ bảng màu kia sinh ra để tránh.
+   **Chưa tự gán**: phân loại một cuộc khởi nghĩa nông dân thời Nguyễn là «nội chiến» hay «khởi nghĩa» là quyết định biên tập có sức nặng, không phải việc máy. Ca vá `--sd-ta-chu-noi-chien` ở chế độ người lớn hiện là **bản vá ngủ** cho tới khi có file bật cờ. **M**
 
 ⚠️ **Chưa đo được lag thật.** Harness headless chạy trên swiftshader (GPU phần mềm) nên **mọi** cấu hình đều tụt xuống 3–6 fps, kể cả 2D không lớp phủ — sàn đó nuốt mất thứ cần đo. Chỉ so tương đối được: lớp phủ tốn ~21%, chế độ 3D tốn ~23%, cộng gần như tuyến tính, **không điểm nghẽn bất thường nào lộ ra**. Muốn tìm nguyên nhân thật phải đo trên máy có GPU thật (Chrome Performance panel), việc harness này không làm được.
 
