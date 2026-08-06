@@ -8,9 +8,92 @@
       "loi_dan": "Bạn là một người dân Lạc Việt bên dòng sông Hồng. Bạn trồng lúa nước, đúc trống đồng và tin mình là con cháu của Lạc Long Quân và Âu Cơ. Vua Hùng dựng nên nước Văn Lang — nhà nước đầu tiên của người Việt.",
       "boi_canh": "Nước Văn Lang, kinh đô Phong Châu.",
       "figure_id": "hung-vuong",
-      "lien_quan_tinh": ["phu-tho"],
+      "lien_quan_tinh": [
+        "phu-tho"
+      ],
       "trang_thai": "draft",
-      "nguon": ["Đại Việt sử ký toàn thư (ngoại kỷ)", "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"]
+      "nguon": [
+        "Đại Việt sử ký toàn thư (ngoại kỷ)",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ],
+      "thoi_ky": "Dựng nước"
+    },
+    {
+      "id": "khoi-nghia-hai-ba-trung",
+      "tieu_de": "Hai Bà Trưng phất cờ khởi nghĩa",
+      "nam": "40",
+      "loi_dan": "Bạn là một nghĩa binh dưới cờ Trưng Trắc, Trưng Nhị. Căm giận ách cai trị hà khắc của Thái thú Tô Định, hai Bà dựng cờ khởi nghĩa ở Mê Linh; bạn cùng nghĩa quân đánh chiếm 65 thành trì, lập nên nền độc lập ngắn ngủi đầu tiên sau những năm Bắc thuộc.",
+      "boi_canh": "Khởi nghĩa Hai Bà Trưng, Mê Linh, năm 40.",
+      "figure_id": "hai-ba-trung",
+      "battle_id": "khoi-nghia-hai-ba-trung-40",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "thoi_ky": "Bắc thuộc và đấu tranh giành độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (ngoại kỷ)",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "khoi-nghia-ba-trieu",
+      "tieu_de": "Bà Triệu dấy binh trên núi Nưa",
+      "nam": "248",
+      "loi_dan": "Bạn là một nghĩa binh theo Triệu Thị Trinh. Người nữ tướng trẻ tuổi dấy binh trên núi Nưa (Thanh Hoá), thề rằng «tôi muốn cưỡi cơn gió mạnh, đạp luồng sóng dữ... chứ không chịu khom lưng làm tì thiếp người ta». Bạn cùng nghĩa quân đánh phá nhiều thành ấp, khiến quân Ngô nhiều phen khiếp sợ.",
+      "boi_canh": "Khởi nghĩa Bà Triệu, núi Nưa — Thanh Hoá, năm 248.",
+      "figure_id": "ba-trieu",
+      "battle_id": "khoi-nghia-ba-trieu-248",
+      "lien_quan_tinh": [
+        "thanh-hoa"
+      ],
+      "thoi_ky": "Bắc thuộc và đấu tranh giành độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (ngoại kỷ)",
+        "Khâm định Việt sử thông giám cương mục (tiền biên)",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "ly-bi-van-xuan",
+      "tieu_de": "Lý Bí dựng nước Vạn Xuân",
+      "nam": "542 – 544",
+      "loi_dan": "Bạn là một nghĩa binh theo Lý Bí khởi binh chống ách đô hộ nhà Lương. Năm 544, Lý Bí lên ngôi hoàng đế, xưng là Lý Nam Đế, đặt quốc hiệu Vạn Xuân — lần đầu tiên người Việt xưng đế, đặt quốc hiệu riêng kể từ khi rơi vào thời Bắc thuộc.",
+      "boi_canh": "Khởi nghĩa Lý Bí và sự ra đời của nhà nước Vạn Xuân, 542–544.",
+      "figure_id": "ly-bi",
+      "battle_id": "ly-bi-542",
+      "lien_quan_tinh": [
+        "bac-ninh",
+        "ha-noi"
+      ],
+      "thoi_ky": "Bắc thuộc và đấu tranh giành độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (bản kỷ, kỷ nhà Tiền Lý)",
+        "Khâm định Việt sử thông giám cương mục (tiền biên)",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "mai-thuc-loan-phung-hung",
+      "tieu_de": "Mai Thúc Loan, Phùng Hưng — hai cuộc dấy nghĩa thời Đường đô hộ",
+      "nam": "713 – 791",
+      "loi_dan": "Bạn là một nghĩa binh theo Mai Thúc Loan, người dấy binh ở Hoan Châu, xưng là Mai Hắc Đế, lập thành Vạn An. Gần nửa thế kỷ sau, Phùng Hưng dấy nghĩa ở Đường Lâm, chiếm được phủ thành Tống Bình, được dân tôn là Bố Cái Đại Vương. Cả hai cuộc dấy nghĩa cho thấy người Việt không cam chịu ách đô hộ nhà Đường.",
+      "boi_canh": "Khởi nghĩa Mai Thúc Loan (Hoan Châu, 713–722) và khởi nghĩa Phùng Hưng (Đường Lâm, 766–791), thời Bắc thuộc nhà Đường.",
+      "figure_id": "mai-thuc-loan",
+      "battle_id": "khoi-nghia-mai-thuc-loan-713",
+      "lien_quan_tinh": [
+        "nghe-an",
+        "ha-noi"
+      ],
+      "thoi_ky": "Bắc thuộc và đấu tranh giành độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (ngoại kỷ)",
+        "Khâm định Việt sử thông giám cương mục (tiền biên)",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ]
     },
     {
       "id": "bach-dang-938",
@@ -20,9 +103,56 @@
       "boi_canh": "Cửa sông Bạch Đằng, kháng chiến chống Nam Hán.",
       "figure_id": "ngo-quyen",
       "battle_id": "bach-dang-938",
-      "lien_quan_tinh": ["hai-phong", "quang-ninh"],
+      "lien_quan_tinh": [
+        "hai-phong",
+        "quang-ninh"
+      ],
       "trang_thai": "draft",
-      "nguon": ["Đại Việt sử ký toàn thư (ngoại kỷ, quyển V)", "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"]
+      "nguon": [
+        "Đại Việt sử ký toàn thư (ngoại kỷ, quyển V)",
+        "SGK Lịch sử 6 — NXB Giáo dục Việt Nam"
+      ],
+      "thoi_ky": "Bắc thuộc và đấu tranh giành độc lập"
+    },
+    {
+      "id": "dinh-bo-linh-dep-loan",
+      "tieu_de": "Đinh Bộ Lĩnh dẹp loạn 12 sứ quân",
+      "nam": "968",
+      "loi_dan": "Bạn là một tráng đinh theo Đinh Bộ Lĩnh từ thuở còn cờ lau tập trận ở Hoa Lư. Bạn cùng ông lần lượt thu phục 12 sứ quân cát cứ, thống nhất giang sơn. Năm 968, Đinh Bộ Lĩnh lên ngôi hoàng đế, đặt quốc hiệu Đại Cồ Việt, đóng đô ở Hoa Lư.",
+      "boi_canh": "Đinh Bộ Lĩnh dẹp loạn 12 sứ quân, thống nhất đất nước, lập nhà Đinh, 966–968.",
+      "figure_id": "dinh-bo-linh",
+      "battle_id": "dinh-bo-linh-966",
+      "lien_quan_tinh": [
+        "ninh-binh"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (bản kỷ, kỷ nhà Đinh)",
+        "Khâm định Việt sử thông giám cương mục (chính biên)",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "le-hoan-chong-tong",
+      "tieu_de": "Lê Hoàn đại phá quân Tống trên sông Bạch Đằng",
+      "nam": "981",
+      "loi_dan": "Bạn là một binh sĩ dưới quyền Thập đạo tướng quân Lê Hoàn. Trước nguy cơ nhà Tống đem quân xâm lược, triều thần cùng Thái hậu Dương Vân Nga suy tôn ông lên ngôi, lập nhà Tiền Lê. Năm 981, bạn theo Lê Hoàn đánh tan quân Tống trên sông Bạch Đằng, giữ vững nền độc lập vừa giành lại.",
+      "boi_canh": "Kháng chiến chống Tống lần thứ nhất, chiến thắng Bạch Đằng, 981.",
+      "figure_id": "le-hoan",
+      "battle_id": "bach-dang-981",
+      "lien_quan_tinh": [
+        "ninh-binh",
+        "hai-phong",
+        "quang-ninh"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (bản kỷ, kỷ nhà Tiền Lê)",
+        "Khâm định Việt sử thông giám cương mục (chính biên)",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ]
     },
     {
       "id": "doi-do-thang-long",
@@ -31,9 +161,36 @@
       "loi_dan": "Bạn theo hầu vua Lý Thái Tổ. Nhà vua ban Chiếu dời đô, rời Hoa Lư chật hẹp về thành Đại La — nơi «ở giữa khu vực trời đất, được thế rồng cuộn hổ ngồi». Kinh đô mới mang tên Thăng Long: rồng bay lên.",
       "boi_canh": "Từ Hoa Lư (Ninh Bình) về Thăng Long (Hà Nội).",
       "figure_id": "ly-thai-to",
-      "lien_quan_tinh": ["ha-noi", "ninh-binh"],
+      "lien_quan_tinh": [
+        "ha-noi",
+        "ninh-binh"
+      ],
       "trang_thai": "draft",
-      "nguon": ["Đại Việt sử ký toàn thư", "Chiếu dời đô (Thiên đô chiếu)", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+      "nguon": [
+        "Đại Việt sử ký toàn thư",
+        "Chiếu dời đô (Thiên đô chiếu)",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập"
+    },
+    {
+      "id": "ly-thuong-kiet-nhu-nguyet",
+      "tieu_de": "Lý Thường Kiệt và phòng tuyến sông Như Nguyệt",
+      "nam": "1077",
+      "loi_dan": "Bạn là một binh sĩ nhà Lý dưới quyền Lý Thường Kiệt. Trước đó, ông đã táo bạo mang quân đánh sang đất Tống, phá thành Ung Châu để phá thế chuẩn bị xâm lược. Năm 1077, bạn cùng ông lập phòng tuyến trên sông Như Nguyệt chặn đại quân Tống; đêm đêm từ trong đền thờ vang lên bài thơ thần «Nam quốc sơn hà» khích lệ ba quân.",
+      "boi_canh": "Kháng chiến chống Tống lần thứ hai, phòng tuyến sông Như Nguyệt, 1077.",
+      "figure_id": "ly-thuong-kiet",
+      "battle_id": "nhu-nguyet-1077",
+      "lien_quan_tinh": [
+        "bac-ninh"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (bản kỷ, kỷ nhà Lý)",
+        "Khâm định Việt sử thông giám cương mục (chính biên)",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ]
     },
     {
       "id": "chong-nguyen-mong",
@@ -42,9 +199,34 @@
       "loi_dan": "Bạn là một binh sĩ nhà Trần, thích hai chữ «Sát Thát» lên cánh tay. Dưới sự chỉ huy của Hưng Đạo Đại Vương, ba lần bạn cùng quân dân Đại Việt đánh bại đội quân Mông Cổ từng làm cỏ nửa thế giới — đỉnh cao là trận Bạch Đằng năm 1288.",
       "boi_canh": "Kháng chiến chống Nguyên – Mông đời Trần.",
       "figure_id": "tran-hung-dao",
-      "lien_quan_tinh": ["ninh-binh", "quang-ninh"],
+      "lien_quan_tinh": [
+        "ninh-binh",
+        "quang-ninh"
+      ],
       "trang_thai": "draft",
-      "nguon": ["Đại Việt sử ký toàn thư", "Hịch tướng sĩ", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+      "nguon": [
+        "Đại Việt sử ký toàn thư",
+        "Hịch tướng sĩ",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập"
+    },
+    {
+      "id": "tran-nhan-tong-yen-tu",
+      "tieu_de": "Trần Nhân Tông xuất gia, sáng lập Thiền phái Trúc Lâm",
+      "nam": "1299",
+      "loi_dan": "Bạn là một tăng sĩ theo hầu Trần Nhân Tông. Sau khi lãnh đạo quân dân hai lần đánh bại quân Nguyên Mông, ông nhường ngôi cho con rồi tìm lên non thiêng Yên Tử, xuất gia tu hành, sáng lập Thiền phái Trúc Lâm — dòng thiền mang bản sắc riêng của người Việt.",
+      "boi_canh": "Trần Nhân Tông xuất gia tại Yên Tử, sáng lập Thiền phái Trúc Lâm, cuối thế kỷ XIII.",
+      "figure_id": "tran-nhan-tong",
+      "lien_quan_tinh": [
+        "quang-ninh"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Việt sử ký toàn thư (bản kỷ, kỷ nhà Trần)",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ]
     },
     {
       "id": "lam-son",
@@ -53,9 +235,17 @@
       "loi_dan": "Bạn theo Lê Lợi dấy nghĩa ở Lam Sơn. Mười năm gian khổ, từ núi rừng Thanh Hoá, nghĩa quân lớn dần rồi quét sạch quân Minh. Truyền thuyết kể vua trả lại gươm báu cho Rùa Vàng nơi hồ Hoàn Kiếm.",
       "boi_canh": "Khởi nghĩa Lam Sơn, từ Thanh Hoá ra Đông Quan.",
       "figure_id": "le-loi",
-      "lien_quan_tinh": ["thanh-hoa", "ha-noi"],
+      "lien_quan_tinh": [
+        "thanh-hoa",
+        "ha-noi"
+      ],
       "trang_thai": "draft",
-      "nguon": ["Đại Việt sử ký toàn thư", "Lam Sơn thực lục", "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"]
+      "nguon": [
+        "Đại Việt sử ký toàn thư",
+        "Lam Sơn thực lục",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập"
     },
     {
       "id": "dong-da-1789",
@@ -64,9 +254,160 @@
       "loi_dan": "Bạn là lính Tây Sơn trong đoàn quân của Hoàng đế Quang Trung. Vừa ăn Tết sớm, bạn hành quân thần tốc ra Bắc, và mờ sáng mùng 5 Tết Kỷ Dậu, cùng đại quân đại phá 29 vạn quân Thanh ở Ngọc Hồi – Đống Đa, giải phóng Thăng Long.",
       "boi_canh": "Chiến dịch Ngọc Hồi – Đống Đa, xuân Kỷ Dậu 1789.",
       "figure_id": "quang-trung",
-      "lien_quan_tinh": ["ha-noi", "gia-lai"],
+      "lien_quan_tinh": [
+        "ha-noi",
+        "gia-lai"
+      ],
       "trang_thai": "draft",
-      "nguon": ["Đại Việt sử ký tục biên", "Hoàng Lê nhất thống chí", "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"]
+      "nguon": [
+        "Đại Việt sử ký tục biên",
+        "Hoàng Lê nhất thống chí",
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+      ],
+      "thoi_ky": "Kỷ nguyên độc lập"
+    },
+    {
+      "id": "nguyen-anh-lap-trieu-nguyen",
+      "tieu_de": "Nguyễn Ánh lên ngôi, lập triều Nguyễn",
+      "nam": "1802",
+      "loi_dan": "Bạn là một binh sĩ dưới cờ chúa Nguyễn Ánh trong những năm tháng bôn ba rồi phản công. Sau nhiều năm giao tranh với Tây Sơn, năm 1802 Nguyễn Ánh đánh chiếm Phú Xuân rồi tiến ra Bắc hạ thành Thăng Long, lên ngôi hoàng đế lấy niên hiệu Gia Long, đóng đô ở Phú Xuân (Huế).",
+      "boi_canh": "Nguyễn Ánh thống nhất đất nước, lập nhà Nguyễn, 1802.",
+      "figure_id": "nguyen-anh",
+      "battle_id": "nguyen-anh-bac-tien-ha-thang-long-1802",
+      "lien_quan_tinh": [
+        "hue",
+        "ha-noi"
+      ],
+      "thoi_ky": "Nhà Nguyễn và thời Pháp thuộc",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Nam thực lục (chính biên, đệ nhất kỷ)",
+        "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "truong-dinh-nguyen-trung-truc",
+      "tieu_de": "Trương Định, Nguyễn Trung Trực — những ngọn cờ đầu chống Pháp ở Nam Kỳ",
+      "nam": "1861 – 1868",
+      "loi_dan": "Bạn là một nghĩa quân theo Trương Định ở Gò Công. Bị triều đình ra lệnh bãi binh sau hoà ước 1862, ông vẫn ở lại cùng dân chúng chống Pháp, được tôn làm Bình Tây Đại Nguyên Soái. Cùng thời, ở Nam Kỳ còn có Nguyễn Trung Trực — người đốt cháy tàu chiến Pháp Espérance trên sông Vàm Cỏ Đông năm 1861 rồi đánh chiếm đồn Kiên Giang năm 1868, để lại câu nói được truyền tụng: «Bao giờ người Tây nhổ hết cỏ nước Nam thì mới hết người Nam đánh Tây».",
+      "boi_canh": "Phong trào chống Pháp ở Nam Kỳ ngay sau khi thực dân Pháp xâm lược, 1861–1868.",
+      "figure_id": "truong-dinh",
+      "battle_id": "khoi-nghia-truong-dinh-go-cong",
+      "lien_quan_tinh": [
+        "dong-thap",
+        "can-tho"
+      ],
+      "thoi_ky": "Nhà Nguyễn và thời Pháp thuộc",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đại Nam thực lục (chính biên)",
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "can-vuong",
+      "tieu_de": "Chiếu Cần Vương và phong trào kháng Pháp",
+      "nam": "1885 – 1896",
+      "loi_dan": "Bạn là một nghĩa quân hưởng ứng chiếu Cần Vương. Sau khi kinh thành Huế thất thủ, vua Hàm Nghi cùng Tôn Thất Thuyết ra Tân Sở (Quảng Trị) hạ chiếu Cần Vương, kêu gọi văn thân, sĩ phu khắp nơi đứng lên giúp vua cứu nước. Bạn theo về với một trong những cuộc khởi nghĩa hưởng ứng kéo dài nhất — khởi nghĩa Hương Khê do Phan Đình Phùng lãnh đạo.",
+      "boi_canh": "Phong trào Cần Vương chống Pháp cuối thế kỷ XIX, từ chiếu Cần Vương (1885) đến khởi nghĩa Hương Khê (1885–1896).",
+      "figure_id": "ham-nghi",
+      "battle_id": "huong-khe-1885",
+      "lien_quan_tinh": [
+        "quang-tri",
+        "ha-tinh"
+      ],
+      "thoi_ky": "Nhà Nguyễn và thời Pháp thuộc",
+      "trang_thai": "draft",
+      "nguon": [
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "phan-boi-chau-phan-chau-trinh",
+      "tieu_de": "Phan Bội Châu, Phan Châu Trinh — hai con đường cứu nước đầu thế kỷ XX",
+      "nam": "1904 – 1908",
+      "loi_dan": "Bạn là một thanh niên yêu nước đầu thế kỷ XX. Phan Bội Châu lập Duy Tân hội, phát động phong trào Đông Du, đưa bạn cùng nhiều thanh niên khác sang Nhật Bản du học, tìm đường bạo động giành độc lập. Cùng thời, Phan Châu Trinh chủ trương một con đường khác: duy tân đất nước bằng cải cách giáo dục, kinh tế trước khi tính chuyện độc lập.",
+      "boi_canh": "Phong trào Duy Tân hội – Đông Du (Phan Bội Châu) và phong trào Duy Tân (Phan Châu Trinh), đầu thế kỷ XX.",
+      "figure_id": "phan-boi-chau",
+      "lien_quan_tinh": [
+        "nghe-an",
+        "da-nang"
+      ],
+      "thoi_ky": "Nhà Nguyễn và thời Pháp thuộc",
+      "trang_thai": "draft",
+      "nguon": [
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "nguyen-ai-quoc-ra-di-tim-duong",
+      "tieu_de": "Nguyễn Tất Thành ra đi tìm đường cứu nước",
+      "nam": "1911",
+      "loi_dan": "Bạn đứng trên bến cảng Nhà Rồng, nhìn con tàu Amiral Latouche-Tréville chuẩn bị nhổ neo. Ngày 5 tháng 6 năm 1911, chàng thanh niên Nguyễn Tất Thành, khi ấy mới hai mươi mốt tuổi, bước lên con tàu này, xin làm phụ bếp lấy tên Văn Ba, bắt đầu ba mươi năm bôn ba khắp năm châu tìm con đường giải phóng dân tộc.",
+      "boi_canh": "Con tàu Amiral Latouche-Tréville rời bến Nhà Rồng, Sài Gòn, chở Nguyễn Tất Thành (Nguyễn Ái Quốc) ra đi tìm đường cứu nước, ngày 5/6/1911.",
+      "figure_id": "tau-latouche-treville",
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "thoi_ky": "Thời hiện đại",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Hồ Chí Minh — trưng bày về ngày Bác ra đi tìm đường cứu nước (5/6/1911)",
+        "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "cach-mang-thang-tam-1945",
+      "tieu_de": "Cách mạng Tháng Tám và ngày Độc lập",
+      "nam": "1945",
+      "loi_dan": "Bạn đứng giữa rừng người tại vườn hoa Ba Đình, trước lễ đài dựng tạm còn thơm mùi gỗ mới. Lá cờ đỏ sao vàng từ từ được kéo lên. Ngày 2 tháng 9 năm 1945, từ trên lễ đài ấy, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hoà.",
+      "boi_canh": "Lễ đài dựng tạm tại vườn hoa Ba Đình, nơi Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập, Hà Nội, ngày 2/9/1945.",
+      "figure_id": "le-dai-ba-dinh",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "thoi_ky": "Thời hiện đại",
+      "trang_thai": "draft",
+      "nguon": [
+        "Hồ Chí Minh toàn tập — Tuyên ngôn Độc lập (2/9/1945), NXB Chính trị quốc gia Sự thật",
+        "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+      ]
+    },
+    {
+      "id": "chien-thang-dien-bien-phu-1954",
+      "tieu_de": "56 ngày đêm khoét núi, ngủ hầm — chiến thắng Điện Biên Phủ",
+      "nam": "1954",
+      "loi_dan": "Bạn ghé vai cùng đồng đội kéo khẩu pháo nặng hàng tấn vượt đèo dốc, xuyên rừng vào trận địa lòng chảo Điện Biên. Dưới sự chỉ huy của Đại tướng Võ Nguyên Giáp, những khẩu pháo như thế này được kéo bằng sức người qua địa hình hiểm trở, đặt vào vị trí bí mật, mở màn 56 ngày đêm chiến đấu. Ngày 7/5/1954, lá cờ «Quyết chiến quyết thắng» tung bay trên nóc hầm Đờ Cát, buộc thực dân Pháp phải ký Hiệp định Genève.",
+      "boi_canh": "Pháo binh được kéo qua đèo dốc vào trận địa lòng chảo Điện Biên Phủ, chiến dịch 13/3 – 7/5/1954.",
+      "figure_id": "phao-dien-bien",
+      "battle_id": "dien-bien-phu-1954",
+      "lien_quan_tinh": [
+        "dien-bien"
+      ],
+      "thoi_ky": "Thời hiện đại",
+      "trang_thai": "draft",
+      "nguon": [
+        "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+        "Thông tấn xã Việt Nam"
+      ]
+    },
+    {
+      "id": "thong-nhat-dat-nuoc-1975",
+      "tieu_de": "Chiến dịch Hồ Chí Minh, non sông thu về một mối",
+      "nam": "1975",
+      "loi_dan": "Bạn ngồi trên chiếc xe tăng 390 đang tiến vào Dinh Độc Lập. Sau chiến thắng Buôn Ma Thuột mở màn Tây Nguyên, Chiến dịch Hồ Chí Minh được phát động dưới sự chỉ huy của Đại tướng Văn Tiến Dũng. Trưa ngày 30 tháng 4 năm 1975, xe tăng 390 húc đổ cổng chính Dinh Độc Lập, kết thúc chiến tranh, đất nước thống nhất.",
+      "boi_canh": "Xe tăng 390 tiến vào Dinh Độc Lập, kết thúc Chiến dịch Hồ Chí Minh, ngày 30/4/1975.",
+      "figure_id": "xe-tang-390",
+      "battle_id": "chien-dich-hcm-1975",
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "thoi_ky": "Thời hiện đại",
+      "trang_thai": "draft",
+      "nguon": [
+        "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+        "Thông tấn xã Việt Nam"
+      ]
     }
   ]
 }

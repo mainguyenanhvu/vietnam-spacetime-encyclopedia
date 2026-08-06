@@ -1,8 +1,8 @@
 {
   "tong": {
     "so_file": 344,
-    "so_muc": 5345,
-    "so_byte": 10115830,
+    "so_muc": 5361,
+    "so_byte": 10133978,
     "ngay_sinh": "2026-08-06"
   },
   "files": [
@@ -7203,8 +7203,8 @@
     {
       "file": "journey/hanh-trinh.json",
       "mien": "journey",
-      "so_muc": 6,
-      "byte": 5019,
+      "so_muc": 22,
+      "byte": 23167,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -7218,9 +7218,11 @@
         "figure_id",
         "lien_quan_tinh",
         "trang_thai",
-        "nguon"
+        "nguon",
+        "thoi_ky",
+        "battle_id"
       ],
-      "sha256": "e21244403af1986a56a635d7e46c57d22544d66cadd078735e8cf1870bce51ad",
+      "sha256": "e888acf199ec9f8622b89aa02325ab18624b51ce7aa6e2a7064ea5941761ec25",
       "mo_ta": "«Hành trình lịch sử» — người dùng hoá thân đi qua các mốc dựng nước & giữ nước."
     },
     {
