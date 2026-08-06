@@ -1,8 +1,8 @@
 {
   "sinh_luc": {
-    "tong_muc": 5331,
+    "tong_muc": 5345,
     "tong_co_toa_do": 2583,
-    "so_nhom_trung_ten": 813,
+    "so_nhom_trung_ten": 827,
     "so_cap_trung_toa_do": 678,
     "ngay_sinh": "2026-08-06"
   },
@@ -216,6 +216,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "binh-do-400-lang-son-1981",
+      "slug": null,
+      "ten": "Bình độ 400 (Cao Lộc, Lạng Sơn)",
+      "ten_chuan": "binh do 400 cao loc lang son",
+      "file": "battles/binh-do-400-lang-son-1981.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "binh-gia-1964",
       "slug": null,
       "ten": "Chiến dịch Bình Giã",
@@ -359,6 +372,71 @@
       "trang_thai": "draft"
     },
     {
+      "id": "chien-dau-bao-ve-bien-gioi-cao-bang-1979",
+      "slug": null,
+      "ten": "Chiến đấu bảo vệ biên giới Cao Bằng",
+      "ten_chuan": "chien dau bao ve bien gioi cao bang",
+      "file": "battles/chien-dau-bao-ve-bien-gioi-cao-bang-1979.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979",
+      "slug": null,
+      "ten": "Chiến đấu bảo vệ biên giới Hà Tiên (Kiên Giang)",
+      "ten_chuan": "chien dau bao ve bien gioi ha tien kien giang",
+      "file": "battles/chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dau-bao-ve-bien-gioi-lang-son-1979",
+      "slug": null,
+      "ten": "Chiến đấu bảo vệ biên giới Lạng Sơn (Đồng Đăng)",
+      "ten_chuan": "chien dau bao ve bien gioi lang son dong dang",
+      "file": "battles/chien-dau-bao-ve-bien-gioi-lang-son-1979.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dau-bao-ve-bien-gioi-lao-cai-1979",
+      "slug": null,
+      "ten": "Chiến đấu bảo vệ biên giới Lào Cai",
+      "ten_chuan": "chien dau bao ve bien gioi lao cai",
+      "file": "battles/chien-dau-bao-ve-bien-gioi-lao-cai-1979.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dau-bao-ve-bien-gioi-tay-ninh-1977",
+      "slug": null,
+      "ten": "Chiến đấu bảo vệ biên giới Tây Ninh",
+      "ten_chuan": "chien dau bao ve bien gioi tay ninh",
+      "file": "battles/chien-dau-bao-ve-bien-gioi-tay-ninh-1977.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
       "id": "chien-dich-bac-tay-nguyen-1954",
       "slug": null,
       "ten": "Chiến dịch Bắc Tây Nguyên (Đông Xuân 1953 – 1954)",
@@ -455,6 +533,19 @@
       "ten": "Chiến dịch Hoàng Hoa Thám (Chiến dịch Đường 18)",
       "ten_chuan": "chien dich hoang hoa tham chien dich duong 18",
       "file": "battles/chien-dich-hoang-hoa-tham-duong-18-1951.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dich-mb84-vi-xuyen-1984",
+      "slug": null,
+      "ten": "Chiến dịch phản kích MB84 (Vị Xuyên)",
+      "ten_chuan": "chien dich phan kich mb84 vi xuyen",
+      "file": "battles/chien-dich-mb84-vi-xuyen-1984.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -918,6 +1009,45 @@
       "trang_thai": "draft"
     },
     {
+      "id": "diem-cao-1509-vi-xuyen",
+      "slug": null,
+      "ten": "Điểm cao 1509 (Vị Xuyên)",
+      "ten_chuan": "diem cao 1509 vi xuyen",
+      "file": "battles/diem-cao-1509-vi-xuyen.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "diem-cao-685-vi-xuyen",
+      "slug": null,
+      "ten": "Điểm cao 685 – \"Lò vôi thế kỷ\" (Vị Xuyên)",
+      "ten_chuan": "diem cao 685 lo voi the ky vi xuyen",
+      "file": "battles/diem-cao-685-vi-xuyen.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "diem-cao-772-vi-xuyen",
+      "slug": null,
+      "ten": "Điểm cao 772 (Vị Xuyên)",
+      "ten_chuan": "diem cao 772 vi xuyen",
+      "file": "battles/diem-cao-772-vi-xuyen.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "dien-bien-phu-1954",
       "slug": null,
       "ten": "Chiến dịch Điện Biên Phủ 1954",
@@ -1084,6 +1214,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "giai-phong-phu-quoc-tho-chu-1975",
+      "slug": null,
+      "ten": "Giải phóng Phú Quốc – Thổ Chu",
+      "ten_chuan": "giai phong phu quoc tho chu",
+      "file": "battles/giai-phong-phu-quoc-tho-chu-1975.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -1997,6 +2140,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "quan-tinh-nguyen-vn-campuchia-1979-1989",
+      "slug": null,
+      "ten": "Quân tình nguyện Việt Nam làm nghĩa vụ quốc tế tại Campuchia",
+      "ten_chuan": "quan tinh nguyen viet nam lam nghia vu quoc te tai campuchia",
+      "file": "battles/quan-tinh-nguyen-vn-campuchia-1979-1989.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
       "id": "rach-gam-xoai-mut-1785",
       "slug": null,
       "ten": "Rạch Gầm – Xoài Mút 1785",
@@ -2124,6 +2280,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tham-sat-ba-chuc-1978",
+      "slug": null,
+      "ten": "Thảm sát Ba Chúc",
+      "ten_chuan": "tham sat ba chuc",
+      "file": "battles/tham-sat-ba-chuc-1978.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 4,
       "trang_thai": "draft"
     },
     {
@@ -2306,6 +2475,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-cau-rach-chiec-1975",
+      "slug": null,
+      "ten": "Trận cầu Rạch Chiếc",
+      "ten_chuan": "tran cau rach chiec",
+      "file": "battles/tran-cau-rach-chiec-1975.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -72025,6 +72207,26 @@
       ]
     },
     {
+      "ten_chuan": "binh do 400 cao loc lang son",
+      "so_file": 2,
+      "files": [
+        "battles/binh-do-400-lang-son-1981.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/binh-do-400-lang-son-1981.json",
+          "id": "binh-do-400-lang-son-1981",
+          "ten": "Bình độ 400 (Cao Lộc, Lạng Sơn)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "binh-do-400-lang-son-1981",
+          "ten": "Bình độ 400 (Cao Lộc, Lạng Sơn)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "bo cai dai vuong phung hung",
       "so_file": 2,
       "files": [
@@ -72425,6 +72627,106 @@
       ]
     },
     {
+      "ten_chuan": "chien dau bao ve bien gioi cao bang",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dau-bao-ve-bien-gioi-cao-bang-1979.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dau-bao-ve-bien-gioi-cao-bang-1979.json",
+          "id": "chien-dau-bao-ve-bien-gioi-cao-bang-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Cao Bằng"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dau-bao-ve-bien-gioi-cao-bang-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Cao Bằng"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dau bao ve bien gioi ha tien kien giang",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979.json",
+          "id": "chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Hà Tiên (Kiên Giang)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Hà Tiên (Kiên Giang)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dau bao ve bien gioi lang son dong dang",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dau-bao-ve-bien-gioi-lang-son-1979.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dau-bao-ve-bien-gioi-lang-son-1979.json",
+          "id": "chien-dau-bao-ve-bien-gioi-lang-son-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Lạng Sơn (Đồng Đăng)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dau-bao-ve-bien-gioi-lang-son-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Lạng Sơn (Đồng Đăng)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dau bao ve bien gioi lao cai",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dau-bao-ve-bien-gioi-lao-cai-1979.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dau-bao-ve-bien-gioi-lao-cai-1979.json",
+          "id": "chien-dau-bao-ve-bien-gioi-lao-cai-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Lào Cai"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dau-bao-ve-bien-gioi-lao-cai-1979",
+          "ten": "Chiến đấu bảo vệ biên giới Lào Cai"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dau bao ve bien gioi tay ninh",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dau-bao-ve-bien-gioi-tay-ninh-1977.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dau-bao-ve-bien-gioi-tay-ninh-1977.json",
+          "id": "chien-dau-bao-ve-bien-gioi-tay-ninh-1977",
+          "ten": "Chiến đấu bảo vệ biên giới Tây Ninh"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dau-bao-ve-bien-gioi-tay-ninh-1977",
+          "ten": "Chiến đấu bảo vệ biên giới Tây Ninh"
+        }
+      ]
+    },
+    {
       "ten_chuan": "chien dich bac tay nguyen dong xuan 1953 1954",
       "so_file": 2,
       "files": [
@@ -72721,6 +73023,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "duong-9-nam-lao-1971",
           "ten": "Chiến dịch phản công Đường 9 – Nam Lào 1971"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich phan kich mb84 vi xuyen",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dich-mb84-vi-xuyen-1984.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-mb84-vi-xuyen-1984.json",
+          "id": "chien-dich-mb84-vi-xuyen-1984",
+          "ten": "Chiến dịch phản kích MB84 (Vị Xuyên)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-mb84-vi-xuyen-1984",
+          "ten": "Chiến dịch phản kích MB84 (Vị Xuyên)"
         }
       ]
     },
@@ -74445,6 +74767,66 @@
       ]
     },
     {
+      "ten_chuan": "diem cao 1509 vi xuyen",
+      "so_file": 2,
+      "files": [
+        "battles/diem-cao-1509-vi-xuyen.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/diem-cao-1509-vi-xuyen.json",
+          "id": "diem-cao-1509-vi-xuyen",
+          "ten": "Điểm cao 1509 (Vị Xuyên)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "diem-cao-1509-vi-xuyen",
+          "ten": "Điểm cao 1509 (Vị Xuyên)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "diem cao 685 lo voi the ky vi xuyen",
+      "so_file": 2,
+      "files": [
+        "battles/diem-cao-685-vi-xuyen.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/diem-cao-685-vi-xuyen.json",
+          "id": "diem-cao-685-vi-xuyen",
+          "ten": "Điểm cao 685 – \"Lò vôi thế kỷ\" (Vị Xuyên)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "diem-cao-685-vi-xuyen",
+          "ten": "Điểm cao 685 – \"Lò vôi thế kỷ\" (Vị Xuyên)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "diem cao 772 vi xuyen",
+      "so_file": 2,
+      "files": [
+        "battles/diem-cao-772-vi-xuyen.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/diem-cao-772-vi-xuyen.json",
+          "id": "diem-cao-772-vi-xuyen",
+          "ten": "Điểm cao 772 (Vị Xuyên)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "diem-cao-772-vi-xuyen",
+          "ten": "Điểm cao 772 (Vị Xuyên)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "dien bien phu tren khong 1972",
       "so_file": 2,
       "files": [
@@ -75141,6 +75523,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "giai-phong-con-tien-doc-mieu-1972",
           "ten": "Giải phóng Cồn Tiên – Dốc Miếu, phá vành đai điện tử McNamara"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "giai phong phu quoc tho chu",
+      "so_file": 2,
+      "files": [
+        "battles/giai-phong-phu-quoc-tho-chu-1975.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/giai-phong-phu-quoc-tho-chu-1975.json",
+          "id": "giai-phong-phu-quoc-tho-chu-1975",
+          "ten": "Giải phóng Phú Quốc – Thổ Chu"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "giai-phong-phu-quoc-tho-chu-1975",
+          "ten": "Giải phóng Phú Quốc – Thổ Chu"
         }
       ]
     },
@@ -82530,6 +82932,26 @@
       ]
     },
     {
+      "ten_chuan": "quan tinh nguyen viet nam lam nghia vu quoc te tai campuchia",
+      "so_file": 2,
+      "files": [
+        "battles/quan-tinh-nguyen-vn-campuchia-1979-1989.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/quan-tinh-nguyen-vn-campuchia-1979-1989.json",
+          "id": "quan-tinh-nguyen-vn-campuchia-1979-1989",
+          "ten": "Quân tình nguyện Việt Nam làm nghĩa vụ quốc tế tại Campuchia"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "quan-tinh-nguyen-vn-campuchia-1979-1989",
+          "ten": "Quân tình nguyện Việt Nam làm nghĩa vụ quốc tế tại Campuchia"
+        }
+      ]
+    },
+    {
       "ten_chuan": "quan xiem danh chiem ha tien chau doc 1833",
       "so_file": 2,
       "files": [
@@ -82846,6 +83268,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Thái Phiên"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tham sat ba chuc",
+      "so_file": 2,
+      "files": [
+        "battles/tham-sat-ba-chuc-1978.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tham-sat-ba-chuc-1978.json",
+          "id": "tham-sat-ba-chuc-1978",
+          "ten": "Thảm sát Ba Chúc"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tham-sat-ba-chuc-1978",
+          "ten": "Thảm sát Ba Chúc"
         }
       ]
     },
@@ -83806,6 +84248,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "tran-cau-giay-1883",
           "ten": "Trận Cầu Giấy (lần 2)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran cau rach chiec",
+      "so_file": 2,
+      "files": [
+        "battles/tran-cau-rach-chiec-1975.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-cau-rach-chiec-1975.json",
+          "id": "tran-cau-rach-chiec-1975",
+          "ten": "Trận cầu Rạch Chiếc"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-cau-rach-chiec-1975",
+          "ten": "Trận cầu Rạch Chiếc"
         }
       ]
     },

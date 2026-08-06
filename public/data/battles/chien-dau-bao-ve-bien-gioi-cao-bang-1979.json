@@ -1,0 +1,232 @@
+{
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới Cao Bằng 1979 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước («Quân đội Trung Quốc», «đối phương»), không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỈ CÓ MỘT NGUỒN trực tiếp (Báo Cao Bằng). Con số 62.500 quân bị loại khỏi vòng chiến và 550 xe quân sự, 115 pháo cối là con số TÍNH CHUNG TOÀN TUYẾN biên giới phía Bắc theo ket_qua đã duyệt, KHÔNG phải riêng Cao Bằng — sa đồ ghi rõ phạm vi và ghi kèm nguồn. Con số «hơn 600.000 quân» lấy nguyên từ mo_ta đã duyệt, cũng ghi kèm nguồn. Người soát §9 cân nhắc có giữ các con số này trên sa đồ hay không.",
+  "id": "chien-dau-bao-ve-bien-gioi-cao-bang-1979",
+  "ten": "Chiến đấu bảo vệ biên giới Cao Bằng",
+  "nam": 1979,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân và dân tỉnh Cao Bằng",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Thị xã Cao Bằng và các huyện biên giới Thông Nông, Trà Lĩnh, Phục Hòa, Thạch An",
+  "lien_quan_tinh": [
+    "cao-bang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          120
+        ],
+        [
+          400,
+          95
+        ],
+        [
+          720,
+          110
+        ],
+        [
+          940,
+          140
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          150,
+          220
+        ],
+        [
+          350,
+          205
+        ],
+        [
+          600,
+          215
+        ],
+        [
+          820,
+          230
+        ]
+      ],
+      "nhan": "Địa hình núi đá vùng biên Cao Bằng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-tq",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 55,
+      "nhan": "Quân đội Trung Quốc tiến công toàn tuyến"
+    },
+    {
+      "id": "huong-thong-nong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        180,
+        110
+      ],
+      "den": [
+        230,
+        260
+      ],
+      "nhan": "Hướng Thông Nông"
+    },
+    {
+      "id": "huong-tra-linh",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        420,
+        105
+      ],
+      "den": [
+        430,
+        255
+      ],
+      "nhan": "Hướng Trà Lĩnh"
+    },
+    {
+      "id": "huong-phuc-hoa",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        680,
+        110
+      ],
+      "den": [
+        650,
+        260
+      ],
+      "nhan": "Hướng Phục Hòa"
+    },
+    {
+      "id": "huong-thach-an",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        880,
+        130
+      ],
+      "den": [
+        820,
+        270
+      ],
+      "nhan": "Hướng Thạch An"
+    },
+    {
+      "id": "nguyen-binh",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 350,
+      "nhan": "Nguyên Bình"
+    },
+    {
+      "id": "ha-quang",
+      "kieu": "dia-danh",
+      "x": 470,
+      "y": 350,
+      "nhan": "Hà Quảng"
+    },
+    {
+      "id": "thi-xa-cao-bang",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 700,
+      "y": 370,
+      "nhan": "Thị xã Cao Bằng"
+    },
+    {
+      "id": "tinh-uy-cao-bang",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 150,
+      "y": 450,
+      "nhan": "Thường vụ Tỉnh uỷ Cao Bằng họp khẩn (17/2/1979)"
+    },
+    {
+      "id": "quan-dan-cao-bang",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 470,
+      "nhan": "Quân và dân Cao Bằng tổ chức chiến đấu"
+    },
+    {
+      "id": "co-rut-quan",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 440,
+      "nhan": "18/3/1979 — hoàn tất rút quân khỏi Việt Nam"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sáng 17/2/1979 — tiến công từ bốn hướng vào Cao Bằng",
+      "mo_ta": "Sáng 17/2/1979, quân đội Trung Quốc tiến công dọc toàn tuyến biên giới 6 tỉnh phía Bắc với lực lượng hơn 600.000 quân (theo Báo Cao Bằng); tại Cao Bằng, đối phương tiến công từ bốn hướng Thông Nông, Trà Lĩnh, Phục Hòa, Thạch An.",
+      "hien": [
+        "quan-tq",
+        "huong-thong-nong",
+        "huong-tra-linh",
+        "huong-phuc-hoa",
+        "huong-thach-an"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đánh chiếm Nguyên Bình, Hà Quảng rồi vào thị xã Cao Bằng",
+      "mo_ta": "Sau các hướng biên giới, đối phương đánh chiếm Nguyên Bình, Hà Quảng rồi tiến vào thị xã Cao Bằng.",
+      "hien": [
+        "nguyen-binh",
+        "ha-quang",
+        "thi-xa-cao-bang",
+        "quan-tq"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Ngay 17/2 — Tỉnh uỷ họp khẩn, chuyển toàn tỉnh sang thời chiến",
+      "mo_ta": "Ngay trong ngày 17/2, Thường vụ Tỉnh ủy Cao Bằng họp khẩn quyết định các vấn đề cấp bách, chuyển toàn tỉnh từ thời bình sang thời chiến.",
+      "hien": [
+        "tinh-uy-cao-bang",
+        "thi-xa-cao-bang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Quân và dân Cao Bằng chiến đấu trên các hướng phòng ngự chủ yếu",
+      "mo_ta": "Tỉnh uỷ chỉ đạo các địa phương tổ chức chiến đấu, tăng cường lực lượng trên các hướng phòng ngự chủ yếu.",
+      "hien": [
+        "quan-dan-cao-bang",
+        "nguyen-binh",
+        "ha-quang",
+        "thi-xa-cao-bang"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "18/3/1979 — hoàn tất rút quân khỏi Việt Nam",
+      "mo_ta": "Cuộc chiến đấu bảo vệ biên giới kéo dài khoảng một tháng; đến 18/3/1979 Trung Quốc hoàn tất rút quân khỏi Việt Nam. Thị xã Cao Bằng bị tàn phá gần như hoàn toàn.",
+      "hien": [
+        "thi-xa-cao-bang",
+        "co-rut-quan"
+      ]
+    }
+  ],
+  "ket_qua": "Theo Báo Cao Bằng, tính chung toàn tuyến biên giới phía Bắc, quân dân ta loại khỏi vòng chiến 62.500 quân Trung Quốc, phá hủy 550 xe quân sự (gồm 280 xe tăng, xe bọc thép) và 115 pháo, cối lớn; riêng thị xã Cao Bằng bị tàn phá gần như hoàn toàn. Trung Quốc hoàn tất rút quân ngày 18/3/1979.",
+  "y_nghia": "Cao Bằng là một trong những hướng bị tiến công nặng nhất; việc chuyển toàn tỉnh sang thời chiến ngay trong ngày đầu cho thấy thế chủ động của địa phương trong bảo vệ biên cương.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Chiến đấu bảo vệ Tổ quốc, khắc phục hậu quả chiến tranh, ổn định đời sống nhân dân — Báo Cao Bằng — https://baocaobang.vn/-7266.html"
+  ]
+}

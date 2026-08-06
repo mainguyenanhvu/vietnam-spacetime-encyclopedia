@@ -1,0 +1,203 @@
+{
+  "ghi_chu": "Sa đồ Trận cầu Rạch Chiếc 1975 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Cần người soát §9 trước khi publish. trang_thai=draft. Hai con số (khoảng 2.000 quân phòng thủ; 52 chiến sĩ hy sinh) đều ghi kèm nguồn ngay trong nhãn và mô tả bước.",
+  "id": "tran-cau-rach-chiec-1975",
+  "ten": "Trận cầu Rạch Chiếc",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lữ đoàn đặc công 316",
+  "doi_thu": "Lực lượng quân đội Sài Gòn phòng thủ khu vực",
+  "dia_diem": "Cầu Rạch Chiếc, xa lộ Biên Hòa (nay TP Hồ Chí Minh)",
+  "lien_quan_tinh": [
+    "thanh-pho-ho-chi-minh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          340
+        ],
+        [
+          940,
+          320
+        ]
+      ],
+      "nhan": "Xa lộ Biên Hòa"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          520,
+          60
+        ],
+        [
+          545,
+          190
+        ],
+        [
+          505,
+          350
+        ],
+        [
+          480,
+          540
+        ]
+      ],
+      "nhan": "Rạch Chiếc"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cau-rach-chiec",
+      "kieu": "dia-danh",
+      "x": 505,
+      "y": 330,
+      "nhan": "Cầu Rạch Chiếc"
+    },
+    {
+      "id": "dac-cong-316",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 700,
+      "y": 440,
+      "nhan": "Lữ đoàn đặc công 316"
+    },
+    {
+      "id": "quan-sai-gon",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 170,
+      "nhan": "Khoảng 2.000 quân đội Sài Gòn phòng thủ khu vực (theo Báo Nhân Dân)"
+    },
+    {
+      "id": "co-52-hy-sinh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 820,
+      "y": 230,
+      "nhan": "52 chiến sĩ Lữ đoàn 316 hy sinh (theo Báo Nhân Dân)"
+    },
+    {
+      "id": "thiet-giap-203",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 860,
+      "y": 470,
+      "nhan": "Xe tăng Lữ đoàn 203"
+    },
+    {
+      "id": "huong-noi-do",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 470,
+      "nhan": "Hướng nội đô Sài Gòn"
+    },
+    {
+      "id": "mui-danh-chiem-cau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        680,
+        410
+      ],
+      "den": [
+        530,
+        365
+      ],
+      "nhan": "Đánh chiếm cầu (đêm 27/4/1975)"
+    },
+    {
+      "id": "mui-phan-kich",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        340,
+        215
+      ],
+      "den": [
+        475,
+        300
+      ],
+      "nhan": "Các đợt phản kích giành lại cầu"
+    },
+    {
+      "id": "mui-vao-noi-do",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        820,
+        510
+      ],
+      "den": [
+        200,
+        500
+      ],
+      "nhan": "9h30 ngày 30/4/1975 — vượt cầu tiến vào nội đô"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Cầu Rạch Chiếc — cửa ngõ then chốt vào Sài Gòn từ hướng đông",
+      "mo_ta": "Cầu Rạch Chiếc trên xa lộ Biên Hòa là cửa ngõ then chốt để các mũi thiết giáp từ hướng đông tiến vào giải phóng Sài Gòn; khu vực do khoảng 2.000 quân đội Sài Gòn phòng thủ (theo Báo Nhân Dân).",
+      "hien": [
+        "cau-rach-chiec",
+        "quan-sai-gon",
+        "huong-noi-do"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đêm 27/4/1975 — Lữ đoàn đặc công 316 đánh chiếm cầu",
+      "mo_ta": "Từ đêm 27/4/1975, Lữ đoàn đặc công 316 bất ngờ đánh chiếm cầu Rạch Chiếc, giữ bằng được cây cầu cho đại quân.",
+      "hien": [
+        "cau-rach-chiec",
+        "dac-cong-316",
+        "mui-danh-chiem-cau"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Liên tục phản kích để giành lại cầu",
+      "mo_ta": "Lực lượng phòng thủ khu vực liên tục phản kích quyết liệt nhằm giành lại cầu; giao tranh kéo dài đến sáng 29/4/1975.",
+      "hien": [
+        "cau-rach-chiec",
+        "quan-sai-gon",
+        "mui-phan-kich",
+        "dac-cong-316"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "52 chiến sĩ hy sinh (theo Báo Nhân Dân); sáng 29/4/1975 quân ta hoàn toàn kiểm soát cầu",
+      "mo_ta": "52 chiến sĩ Lữ đoàn đặc công 316 hy sinh trong các trận đánh giữ cầu (theo Báo Nhân Dân); sáng 29/4/1975 quân ta hoàn toàn kiểm soát cầu Rạch Chiếc.",
+      "hien": [
+        "cau-rach-chiec",
+        "co-52-hy-sinh",
+        "dac-cong-316"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "9h30 sáng 30/4/1975 — xe tăng Lữ đoàn 203 vượt cầu",
+      "mo_ta": "9h30 sáng 30/4/1975, xe tăng Lữ đoàn 203 vượt cầu Rạch Chiếc, tiến thẳng vào Dinh Độc Lập.",
+      "hien": [
+        "cau-rach-chiec",
+        "thiet-giap-203",
+        "mui-vao-noi-do",
+        "huong-noi-do"
+      ]
+    }
+  ],
+  "ket_qua": "52 chiến sĩ Lữ đoàn đặc công 316 hy sinh trong các trận đánh giữ cầu (theo Báo Nhân Dân); sáng 29/4/1975 quân ta hoàn toàn kiểm soát cầu Rạch Chiếc, mở đường cho các mũi thiết giáp tiến vào nội đô; 9h30 sáng 30/4/1975 xe tăng Lữ đoàn 203 vượt cầu, tiến thẳng vào Dinh Độc Lập.",
+  "y_nghia": "Giữ vững cầu Rạch Chiếc góp phần làm vỡ kế hoạch «tử thủ», tạo bàn đạp cho đại quân tiến vào giải phóng Sài Gòn sáng 30/4/1975.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Oanh liệt trận đánh cầu Rạch Chiếc, góp phần vào chiến thắng 30/4 lịch sử — Báo Nhân Dân — https://nhandan.vn/oanh-liet-tran-danh-cau-rach-chiec-gop-phan-vao-chien-thang-304-lich-su-post876737.html",
+    "Ký ức nóng bỏng về trận chiến đấu lịch sử ở cầu Rạch Chiếc — Báo Chính phủ — https://baochinhphu.vn/ky-uc-nong-bong-ve-tran-chien-dau-lich-su-o-cau-rach-chiec-102183004.htm"
+  ]
+}

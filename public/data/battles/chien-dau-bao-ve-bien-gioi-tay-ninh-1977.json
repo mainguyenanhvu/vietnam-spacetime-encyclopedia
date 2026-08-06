@@ -1,0 +1,189 @@
+{
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới Tây Ninh 1977 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Cần người soát §9 trước khi publish. trang_thai=draft. CHỖ NGUỒN VÊNH, đã nêu cả hai trong bước 2: mo_ta đã duyệt ghi đợt 25/9/1977 huy động 9 sư đoàn đánh vào 5 tỉnh (An Giang, Kiên Giang, Long An, Đồng Tháp, Tây Ninh), còn ket_qua đã duyệt ghi 4 sư đoàn đánh riêng vào Tân Biên – Bến Cầu – Châu Thành. Hai con số ở hai phạm vi khác nhau, KHÔNG chọn bản gọn hơn.",
+  "id": "chien-dau-bao-ve-bien-gioi-tay-ninh-1977",
+  "ten": "Chiến đấu bảo vệ biên giới Tây Ninh",
+  "nam": 1977,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân đội nhân dân Việt Nam và lực lượng vũ trang tỉnh Tây Ninh",
+  "doi_thu": "Quân Khmer Đỏ (Pol Pot)",
+  "dia_diem": "Tân Biên – Bến Cầu – Châu Thành (Tây Ninh)",
+  "lien_quan_tinh": [
+    "tay-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          300,
+          50
+        ],
+        [
+          240,
+          250
+        ],
+        [
+          300,
+          450
+        ],
+        [
+          380,
+          540
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Campuchia"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "tan-bien",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 140,
+      "nhan": "Tân Biên"
+    },
+    {
+      "id": "chau-thanh",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 330,
+      "nhan": "Châu Thành"
+    },
+    {
+      "id": "ben-cau",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 480,
+      "nhan": "Bến Cầu"
+    },
+    {
+      "id": "thi-xa-tay-ninh",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 640,
+      "y": 330,
+      "nhan": "Thị xã Tây Ninh"
+    },
+    {
+      "id": "quan-khmer-do",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 140,
+      "y": 240,
+      "nhan": "Các sư đoàn Khmer Đỏ"
+    },
+    {
+      "id": "quan-ta-phan-cong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 700,
+      "y": 150,
+      "nhan": "Sáu sư đoàn quân đội ta phản công"
+    },
+    {
+      "id": "neak-luong",
+      "kieu": "dia-danh",
+      "x": 120,
+      "y": 470,
+      "nhan": "Neak Luong"
+    },
+    {
+      "id": "co-thang-tn",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 250,
+      "nhan": "Bảo vệ vững thị xã Tây Ninh"
+    },
+    {
+      "id": "mui-tien-cong-9-1977",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        190,
+        230
+      ],
+      "den": [
+        360,
+        300
+      ],
+      "nhan": "Đợt tiến công 25/9/1977"
+    },
+    {
+      "id": "mui-phan-cong-12-1977",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        640,
+        230
+      ],
+      "den": [
+        200,
+        430
+      ],
+      "nhan": "Phản công 5/12/1977 – 5/1/1978"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đêm 30/4/1977 — tiến công đồng loạt từ Tây Ninh đến Hà Tiên",
+      "mo_ta": "Đêm 30/4/1977, quân Pol Pot tiến công đồng loạt trên tuyến biên giới Tây Nam từ Tây Ninh đến Hà Tiên. Tây Ninh là địa bàn bị tiến công dồn dập nhất trong giai đoạn đầu.",
+      "hien": [
+        "quan-khmer-do",
+        "thi-xa-tay-ninh"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "25/9/1977 — đợt tiến công lớn thứ hai vào Tân Biên, Bến Cầu, Châu Thành",
+      "mo_ta": "Ngày 25/9/1977 mở đợt tiến công lớn thứ hai. Hai nguồn nhà nước ghi phạm vi khác nhau và cả hai đều được giữ lại: mô tả đã duyệt nêu 9 sư đoàn đánh vào An Giang, Kiên Giang, Long An, Đồng Tháp và Tây Ninh; kết quả đã duyệt nêu 4 sư đoàn đánh riêng vào ba huyện Tân Biên, Bến Cầu, Châu Thành.",
+      "hien": [
+        "quan-khmer-do",
+        "tan-bien",
+        "chau-thanh",
+        "ben-cau",
+        "mui-tien-cong-9-1977"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Thiệt hại nặng nề cho dân thường ba huyện biên giới",
+      "mo_ta": "Đợt tiến công tháng 9/1977 vào Tân Biên, Bến Cầu, Châu Thành đốt phá 471 nhà; gần 800 dân bị giết, bị thương và mất tích (theo Học viện Quốc phòng).",
+      "hien": [
+        "tan-bien",
+        "chau-thanh",
+        "ben-cau",
+        "thi-xa-tay-ninh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Từ 5/12/1977 — quân ta phản công quy mô lớn",
+      "mo_ta": "Từ 5/12/1977 đến 5/1/1978, sáu sư đoàn quân đội ta phản công, đánh sâu vào lãnh thổ Campuchia đến Neak Luong rồi rút về.",
+      "hien": [
+        "quan-ta-phan-cong",
+        "mui-phan-cong-12-1977",
+        "neak-luong",
+        "thi-xa-tay-ninh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đầu tháng 1/1978 — bảo vệ vững thị xã Tây Ninh",
+      "mo_ta": "Cuộc phản công làm thất bại ý đồ dùng Tây Ninh làm bàn đạp mở rộng chiến tranh và đánh chiếm thị xã Tây Ninh.",
+      "hien": [
+        "thi-xa-tay-ninh",
+        "co-thang-tn"
+      ]
+    }
+  ],
+  "ket_qua": "Đợt tiến công tháng 9/1977 của 4 sư đoàn Khmer Đỏ vào Tân Biên, Bến Cầu, Châu Thành đốt phá 471 nhà, giết, làm bị thương và mất tích gần 800 dân (theo Học viện Quốc phòng); từ 5/12/1977 đến 5/1/1978, 6 sư đoàn quân đội ta phản công đánh sâu vào lãnh thổ Campuchia đến Neak Luong rồi rút về, làm thất bại ý đồ đánh chiếm thị xã Tây Ninh của Khmer Đỏ.",
+  "y_nghia": "Giữ vững tuyến biên giới trọng yếu phía đông bắc đồng bằng sông Cửu Long, chặn ý đồ dùng Tây Ninh làm bàn đạp mở rộng chiến tranh.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Chiến dịch biên giới Tây Nam — Học viện Quốc phòng — https://nda.edu.vn/tin-tuc/cac-chien-le/chien-dich-bien-gioi-tay-nam-963.html",
+    "Diễn biến cuộc chiến tranh bảo vệ Tổ quốc ở biên giới Tây Nam — Báo Tuyên Quang — https://baotuyenquang.com.vn/dong-su-kien/202401/dien-bien-cuoc-chien-tranh-bao-ve-to-quoc-o-bien-gioi-tay-nam-9bf0b7d/"
+  ]
+}

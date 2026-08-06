@@ -1,0 +1,240 @@
+{
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới Hà Tiên (Kiên Giang) 1975–1979 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Cần người soát §9 trước khi publish. trang_thai=draft. Kiên Giang đã hợp nhất vào tỉnh An Giang từ 2025 nên lien_quan_tinh ghi 'an-giang'.",
+  "id": "chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979",
+  "ten": "Chiến đấu bảo vệ biên giới Hà Tiên (Kiên Giang)",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lực lượng vũ trang tỉnh Kiên Giang (Tiểu đoàn 207)",
+  "doi_thu": "Quân Khmer Đỏ (Pol Pot)",
+  "dia_diem": "Hà Tiên, Kiên Giang (khu vực núi Thạch Động, núi Đá Dựng)",
+  "lien_quan_tinh": [
+    "an-giang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          140
+        ],
+        [
+          400,
+          110
+        ],
+        [
+          720,
+          125
+        ],
+        [
+          940,
+          160
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Campuchia"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          45,
+          340
+        ],
+        [
+          130,
+          320
+        ],
+        [
+          175,
+          450
+        ],
+        [
+          60,
+          520
+        ]
+      ],
+      "nhan": "Vịnh Thái Lan"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          320,
+          270
+        ],
+        [
+          470,
+          265
+        ]
+      ],
+      "nhan": "Núi Thạch Động – núi Đá Dựng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-pol-pot",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 450,
+      "y": 60,
+      "nhan": "Quân Pol Pot vượt biên giới"
+    },
+    {
+      "id": "thach-dong",
+      "kieu": "dia-danh",
+      "x": 320,
+      "y": 300,
+      "nhan": "Vị trí Thạch Động"
+    },
+    {
+      "id": "da-dung",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 300,
+      "nhan": "Núi Đá Dựng (xã Mỹ Đức)"
+    },
+    {
+      "id": "thi-xa-ha-tien",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 300,
+      "y": 450,
+      "nhan": "Thị xã Hà Tiên"
+    },
+    {
+      "id": "bo-doi-kien-giang",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 440,
+      "nhan": "Bộ đội Kiên Giang"
+    },
+    {
+      "id": "giang-thanh-vinh-dieu",
+      "kieu": "dia-danh",
+      "x": 720,
+      "y": 250,
+      "nhan": "Tuyến Giang Thành – Vĩnh Điều"
+    },
+    {
+      "id": "tieu-doan-207",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 700,
+      "y": 420,
+      "nhan": "Tiểu đoàn 207 phòng ngự tuyến biên giới"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 880,
+      "y": 320,
+      "nhan": "Bảo vệ vững tuyến biên giới Hà Tiên"
+    },
+    {
+      "id": "mui-tan-cong-6-1975",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        440,
+        120
+      ],
+      "den": [
+        340,
+        265
+      ],
+      "nhan": "Tiến công đêm 14/6/1975"
+    },
+    {
+      "id": "mui-danh-bat",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        470,
+        420
+      ],
+      "den": [
+        350,
+        320
+      ],
+      "nhan": "Đánh bật ngay trong đêm"
+    },
+    {
+      "id": "mui-tien-cong-12-1978",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        700,
+        370
+      ],
+      "den": [
+        560,
+        150
+      ],
+      "nhan": "Tháng 12/1978 — chuyển sang tiến công"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đêm 14/6/1975 — tiến công vị trí Thạch Động",
+      "mo_ta": "Hà Tiên là một trong những địa bàn đầu tiên xảy ra xung đột vũ trang ngay sau ngày miền Nam giải phóng: đêm 14/6/1975, quân Pol Pot bất ngờ tiến công vị trí Thạch Động.",
+      "hien": [
+        "quan-pol-pot",
+        "thach-dong",
+        "mui-tan-cong-6-1975"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bộ đội Kiên Giang đánh bật ngay trong đêm",
+      "mo_ta": "Bộ đội Kiên Giang đánh trả và đẩy lùi cuộc tiến công vào vị trí phòng ngự Thạch Động ngay trong một đêm.",
+      "hien": [
+        "thach-dong",
+        "bo-doi-kien-giang",
+        "mui-danh-bat",
+        "thi-xa-ha-tien"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Từ tháng 6/1977 — đối phương chuyển hướng lên phía bắc Hà Tiên",
+      "mo_ta": "Từ tháng 6/1977, đối phương chuyển hướng tiến công lên phía bắc Hà Tiên và tuyến Giang Thành – Vĩnh Điều.",
+      "hien": [
+        "quan-pol-pot",
+        "giang-thanh-vinh-dieu",
+        "thi-xa-ha-tien"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Thạch Động và Đá Dựng thành chốt quan sát, phòng ngự trọng yếu",
+      "mo_ta": "Núi Thạch Động và núi Đá Dựng (xã Mỹ Đức) được Tiểu đoàn 207 dùng làm chốt quan sát và phòng ngự trọng yếu suốt thời kỳ chiến tranh bảo vệ biên giới Tây Nam.",
+      "hien": [
+        "thach-dong",
+        "da-dung",
+        "tieu-doan-207",
+        "thi-xa-ha-tien"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tháng 12/1978 — chuyển sang tiến công giải phóng vùng biên giới đối diện",
+      "mo_ta": "Đến tháng 12/1978, Tiểu đoàn 207 chuyển từ phòng ngự sang tiến công giải phóng vùng biên giới đối diện.",
+      "hien": [
+        "tieu-doan-207",
+        "mui-tien-cong-12-1978",
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Đêm 14/6/1975, bộ đội Kiên Giang đánh trả và đẩy lùi quân Pol Pot tiến công vị trí phòng ngự Thạch Động ngay trong một đêm; Tiểu đoàn 207 sau đó đảm nhiệm phòng thủ suốt tuyến biên giới Hà Tiên, đến tháng 12/1978 chuyển sang tiến công giải phóng vùng biên giới đối diện.",
+  "y_nghia": "Hà Tiên là một trong những địa bàn đầu tiên bị tiến công sau ngày 30/4/1975, mở đầu cho cuộc chiến tranh bảo vệ biên giới Tây Nam của Tổ quốc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "40 năm chiến thắng bảo vệ biên giới Tây Nam: Đổi thay ở Hà Tiên — TTXVN (VietnamPlus) — https://www.vietnamplus.vn/40-nam-chien-thang-bao-ve-bien-gioi-tay-nam-doi-thay-o-ha-tien-post545392.vnp",
+    "Quân và dân Kiên Giang trong chiến tranh bảo vệ biên giới Tây Nam — Báo Nhân Dân — https://nhandan.vn/quan-va-dan-kien-giang-trong-chien-tranh-bao-ve-bien-gioi-tay-nam-post345732.html"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới Lào Cai 1979 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước («Quân đội Trung Quốc», «đối phương»), không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỈ CÓ MỘT NGUỒN trực tiếp (Báo Lào Cai). Nguồn không nêu số thương vong nên sa đồ KHÔNG có con số nào; ba liệt sĩ được nêu đích danh theo ket_qua đã duyệt vì tỉnh đã đặt tên đường ghi công.",
+  "id": "chien-dau-bao-ve-bien-gioi-lao-cai-1979",
+  "ten": "Chiến đấu bảo vệ biên giới Lào Cai",
+  "nam": 1979,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân và dân tỉnh Lào Cai",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Thị xã Lào Cai và các huyện Bát Xát, Bắc Hà, Bảo Thắng, Mường Khương",
+  "lien_quan_tinh": [
+    "lao-cai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          110
+        ],
+        [
+          400,
+          90
+        ],
+        [
+          720,
+          105
+        ],
+        [
+          940,
+          135
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          250,
+          140
+        ],
+        [
+          380,
+          300
+        ],
+        [
+          470,
+          540
+        ]
+      ],
+      "nhan": "Sông Hồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-tq-lc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 55,
+      "nhan": "Quân đội Trung Quốc tiến công"
+    },
+    {
+      "id": "bat-xat",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 220,
+      "nhan": "Bát Xát"
+    },
+    {
+      "id": "muong-khuong",
+      "kieu": "dia-danh",
+      "x": 640,
+      "y": 200,
+      "nhan": "Mường Khương"
+    },
+    {
+      "id": "bac-ha",
+      "kieu": "dia-danh",
+      "x": 860,
+      "y": 280,
+      "nhan": "Bắc Hà"
+    },
+    {
+      "id": "bao-thang",
+      "kieu": "dia-danh",
+      "x": 640,
+      "y": 400,
+      "nhan": "Bảo Thắng"
+    },
+    {
+      "id": "thi-xa-lao-cai",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 250,
+      "y": 380,
+      "nhan": "Thị xã Lào Cai (bị chiếm 19/2/1979)"
+    },
+    {
+      "id": "cam-duong",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 500,
+      "nhan": "Cam Đường (bị chiếm 25/2/1979)"
+    },
+    {
+      "id": "quan-dan-lao-cai",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 330,
+      "nhan": "Cán bộ, chiến sĩ, giáo viên, dân quân địa phương"
+    },
+    {
+      "id": "co-ba-liet-si",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 450,
+      "nhan": "Ghi công ba liệt sĩ Võ Đại Huệ, Bùi Nguyên Khiết, Quách Văn Rạng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "17/2/1979 — tiến công trên các hướng Bát Xát, Bắc Hà, Bảo Thắng, Mường Khương",
+      "mo_ta": "Ngày 17/2/1979, cùng lúc với toàn tuyến biên giới phía Bắc, quân Trung Quốc mở cuộc tiến công lớn vào Lào Cai trên các hướng Bát Xát, Bắc Hà, Bảo Thắng, Mường Khương.",
+      "hien": [
+        "quan-tq-lc",
+        "bat-xat",
+        "muong-khuong",
+        "bac-ha",
+        "bao-thang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "19/2/1979 — thị xã Lào Cai",
+      "mo_ta": "Với ưu thế về quân số và trang bị, đối phương từng bước lấn sâu và chiếm thị xã Lào Cai ngày 19/2/1979.",
+      "hien": [
+        "thi-xa-lao-cai",
+        "quan-tq-lc",
+        "bat-xat"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "25/2/1979 — Cam Đường",
+      "mo_ta": "Ngày 25/2/1979, đối phương chiếm Cam Đường.",
+      "hien": [
+        "cam-duong",
+        "thi-xa-lao-cai",
+        "quan-tq-lc"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chiến đấu bảo vệ từng thước đất biên cương",
+      "mo_ta": "Nhiều cán bộ, chiến sĩ, giáo viên, dân quân địa phương đã ngã xuống trong cuộc chiến bảo vệ từng thước đất biên cương.",
+      "hien": [
+        "quan-dan-lao-cai",
+        "thi-xa-lao-cai",
+        "bao-thang",
+        "muong-khuong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đến 4/3/1979 — kết thúc cuộc chiến đấu, ghi công các liệt sĩ",
+      "mo_ta": "Cuộc chiến đấu tại Lào Cai kéo dài từ 17/2 đến 4/3/1979 qua ba giai đoạn; ba liệt sĩ Võ Đại Huệ, Bùi Nguyên Khiết, Quách Văn Rạng được đặt tên đường tại tỉnh Lào Cai để ghi công.",
+      "hien": [
+        "co-ba-liet-si",
+        "thi-xa-lao-cai",
+        "quan-dan-lao-cai"
+      ]
+    }
+  ],
+  "ket_qua": "Cuộc chiến đấu tại Lào Cai kéo dài từ 17/2 đến 4/3/1979 qua 3 giai đoạn; ba liệt sĩ Võ Đại Huệ, Bùi Nguyên Khiết, Quách Văn Rạng được đặt tên đường tại tỉnh Lào Cai để ghi công.",
+  "y_nghia": "Lào Cai là một trong sáu tỉnh biên giới bị tiến công ngày 17/2/1979; sự hy sinh của cán bộ, chiến sĩ, giáo viên và dân quân địa phương là tấm gương bảo vệ biên cương Tổ quốc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "45 năm cuộc chiến đấu bảo vệ biên giới phía Bắc Tổ quốc — Báo Lào Cai — https://baolaocai.vn/45-nam-cuoc-chien-dau-bao-ve-bien-gioi-phia-bac-to-quoc-1721979-1722024-ven-nguyen-loi-the-ve-quoc-post425557.html"
+  ]
+}

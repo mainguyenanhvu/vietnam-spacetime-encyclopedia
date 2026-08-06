@@ -1,0 +1,175 @@
+{
+  "ghi_chu": "Sa đồ Giải phóng Phú Quốc – Thổ Chu 1975 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Cần người soát §9 trước khi publish. trang_thai=draft. Con số «hơn 500 dân bị bắt và sát hại tại Thổ Chu» ghi theo Đài Tiếng nói Việt Nam và ket_qua đã duyệt; không làm tròn, không suy đoán thêm. Kiên Giang đã hợp nhất vào tỉnh An Giang từ 2025.",
+  "id": "giai-phong-phu-quoc-tho-chu-1975",
+  "ten": "Giải phóng Phú Quốc – Thổ Chu",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đại uý Trịnh Khắc Thuyết (chỉ huy lực lượng giải phóng lại Thổ Chu)",
+  "doi_thu": "Quân Khmer Đỏ (Pol Pot)",
+  "dia_diem": "Đảo Phú Quốc và quần đảo Thổ Chu (Kiên Giang)",
+  "lien_quan_tinh": [
+    "an-giang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          60,
+          80
+        ],
+        [
+          900,
+          70
+        ],
+        [
+          930,
+          530
+        ],
+        [
+          70,
+          540
+        ]
+      ],
+      "nhan": "Vịnh Thái Lan"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "phu-quoc",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 180,
+      "nhan": "Đảo Phú Quốc"
+    },
+    {
+      "id": "nha-lao-phu-quoc",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 300,
+      "y": 330,
+      "nhan": "Nhà tù Phú Quốc"
+    },
+    {
+      "id": "quan-chung-noi-day",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 520,
+      "y": 250,
+      "nhan": "Hơn 8.000 quần chúng và cán bộ cách mạng nổi dậy"
+    },
+    {
+      "id": "co-lam-chu",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 520,
+      "y": 110,
+      "nhan": "Làm chủ đảo trong ngày 30/4; 1/5/1975 chính quyền cách mạng ra mắt"
+    },
+    {
+      "id": "tho-chu",
+      "kieu": "dia-danh",
+      "x": 760,
+      "y": 430,
+      "nhan": "Quần đảo Thổ Chu"
+    },
+    {
+      "id": "khmer-do-tho-chu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 760,
+      "y": 270,
+      "nhan": "Khmer Đỏ đánh chiếm Thổ Chu (10/5/1975)"
+    },
+    {
+      "id": "luc-luong-phan-cong",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 420,
+      "y": 460,
+      "nhan": "Tiểu đoàn 410, Trung đoàn 195 (Quân khu 9) và hai đội đặc công nước Hải quân"
+    },
+    {
+      "id": "co-giai-phong-tc",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 150,
+      "nhan": "Giải phóng lại Thổ Chu 27/5/1975"
+    },
+    {
+      "id": "mui-phan-cong-tc",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        480,
+        440
+      ],
+      "den": [
+        700,
+        420
+      ],
+      "nhan": "Phản công ra Thổ Chu"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sáng 30/4/1975 — Phú Quốc nổi dậy, phá nhà tù",
+      "mo_ta": "Sáng 30/4/1975, ngay khi nghe tin đầu hàng, hơn 8.000 quần chúng và cán bộ cách mạng Phú Quốc nổi dậy phá nhà tù — nơi từng giam giữ hàng chục nghìn tù chính trị — và chiếm các mục tiêu quan trọng (số liệu theo Báo Nhân Dân).",
+      "hien": [
+        "phu-quoc",
+        "nha-lao-phu-quoc",
+        "quan-chung-noi-day"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Làm chủ đảo Phú Quốc; 1/5/1975 chính quyền cách mạng ra mắt",
+      "mo_ta": "Đến chiều 30/4/1975 lực lượng khởi nghĩa làm chủ hoàn toàn đảo Phú Quốc; sáng 1/5/1975 chính quyền cách mạng ra mắt nhân dân.",
+      "hien": [
+        "phu-quoc",
+        "co-lam-chu",
+        "quan-chung-noi-day"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "10/5/1975 — Thổ Chu bị đánh chiếm",
+      "mo_ta": "Quần đảo Thổ Chu, nơi lực lượng phòng thủ còn mỏng trong giai đoạn chuyển giao, bị quân Khmer Đỏ bất ngờ đánh chiếm ngày 10/5/1975; hơn 500 người dân trên đảo bị bắt và sát hại (theo Đài Tiếng nói Việt Nam).",
+      "hien": [
+        "tho-chu",
+        "khmer-do-tho-chu"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hải quân và Quân khu 9 tổ chức phản công",
+      "mo_ta": "Tiểu đoàn 410, Trung đoàn 195 (Quân khu 9) cùng hai đội đặc công nước của Quân chủng Hải quân tổ chức phản công ra quần đảo Thổ Chu.",
+      "hien": [
+        "tho-chu",
+        "khmer-do-tho-chu",
+        "luc-luong-phan-cong",
+        "mui-phan-cong-tc"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "27/5/1975 — giải phóng lại Thổ Chu",
+      "mo_ta": "Đến 27/5/1975, ta tiêu diệt và bắt sống toàn bộ lực lượng chiếm đảo, giải phóng lại Thổ Chu — nơi được giải phóng cuối cùng trong cả nước, 27 ngày sau 30/4.",
+      "hien": [
+        "tho-chu",
+        "co-giai-phong-tc",
+        "luc-luong-phan-cong"
+      ]
+    }
+  ],
+  "ket_qua": "Sáng 30/4/1975, hơn 8.000 quần chúng và cán bộ khởi nghĩa phá nhà tù, chiếm các mục tiêu, đến chiều làm chủ hoàn toàn đảo Phú Quốc; sáng 1/5/1975 chính quyền cách mạng ra mắt. Riêng Thổ Chu bị Khmer Đỏ đánh chiếm ngày 10/5/1975, bắt và sát hại hơn 500 dân (theo Đài Tiếng nói Việt Nam); Tiểu đoàn 410, Trung đoàn 195 (Quân khu 9) cùng 2 đội đặc công nước Hải quân phản công, đến 27/5/1975 tiêu diệt và bắt sống toàn bộ lực lượng chiếm đảo — Thổ Chu là nơi được giải phóng cuối cùng trong cả nước, 27 ngày sau 30/4.",
+  "y_nghia": "Khép lại tiến trình giải phóng trên phạm vi cả nước, đồng thời là dấu hiệu sớm về xung đột vũ trang trên tuyến biên giới, biển đảo Tây Nam ngay trong tháng 5/1975.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Phú Quốc, phút lắng đọng về nguồn — Báo Nhân Dân — https://nhandan.vn/phu-quoc-phut-lang-dong-ve-nguon-post495108.html",
+    "Vì sao đảo Thổ Chu là nơi cuối cùng được giải phóng cách đây 47 năm — Đài Tiếng nói Việt Nam — https://vov.vn/chinh-tri/vi-sao-dao-tho-chu-la-noi-cuoi-cung-duoc-giai-phong-cach-day-47-nam-post940511.vov"
+  ]
+}

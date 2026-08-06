@@ -1,0 +1,185 @@
+{
+  "ghi_chu": "Sa đồ Thảm sát Ba Chúc 1978 — lô E. ĐÂY KHÔNG PHẢI MỘT TRẬN ĐÁNH mà là tội ác chiến tranh đối với thường dân: sa đồ dựng theo dạng SƠ ĐỒ SỰ KIỆN VÀ ĐỊA ĐIỂM TƯỞNG NIỆM (nhà mồ Ba Chúc, chùa Tam Bửu, chùa Phi Lai, hang đá núi Tượng), viết trang trọng, KHÔNG mô tả chi tiết bạo lực. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Cần người soát §9 trước khi publish. trang_thai=draft. Số nạn nhân 3.157 lấy đúng theo ket_qua đã duyệt của mục này và mục 'Nhà mồ Ba Chúc' trong nghia-trang-liet-si.json — KHÔNG làm tròn thành «hơn 3.000» như một số mục khác trong kho. CHỖ NGUỒN VÊNH cần người soát quyết: số hài cốt lưu giữ tại nhà mồ ghi 1.160 sọ (nghia-trang-liet-si.json, theo Báo Lâm Đồng) so với 1.159 bộ hài cốt (literature/nhat-ky-thu-chien-tranh.json, theo Báo Quân đội nhân dân/TTXVN/Nhân Dân); và thời gian ghi 12 ngày chiếm đóng (18–30/4/1978) so với 13 ngày đêm. Sa đồ dùng mốc 18–30/4/1978, không nêu số hài cốt để tránh chốt một con số đang vênh.",
+  "id": "tham-sat-ba-chuc-1978",
+  "ten": "Thảm sát Ba Chúc",
+  "nam": 1978,
+  "sa_do_kieu": "tong-quat",
+  "doi_thu": "Quân Khmer Đỏ (Pol Pot)",
+  "dia_diem": "Ba Chúc, Tri Tôn (An Giang)",
+  "lien_quan_tinh": [
+    "an-giang"
+  ],
+  "sa_do_ghi_chu": "Sơ đồ sự kiện và địa điểm tưởng niệm, minh hoạ theo tư liệu nhà nước, không theo tỉ lệ địa lý chính xác. Sơ đồ cố ý chỉ định vị các điểm tưởng niệm, không tái hiện diễn biến bạo lực.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          80,
+          110
+        ],
+        [
+          400,
+          90
+        ],
+        [
+          730,
+          105
+        ],
+        [
+          940,
+          135
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Campuchia"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          300,
+          300
+        ],
+        [
+          420,
+          290
+        ],
+        [
+          540,
+          305
+        ]
+      ],
+      "nhan": "Núi Tượng – dãy Thất Sơn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-khmer-do-bc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 420,
+      "y": 150,
+      "nhan": "Quân Khmer Đỏ tràn qua biên giới"
+    },
+    {
+      "id": "ba-chuc",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 400,
+      "nhan": "Xã (nay thị trấn) Ba Chúc, huyện Tri Tôn"
+    },
+    {
+      "id": "chua-tam-buu",
+      "kieu": "dia-danh",
+      "x": 520,
+      "y": 400,
+      "nhan": "Chùa Tam Bửu"
+    },
+    {
+      "id": "chua-phi-lai",
+      "kieu": "dia-danh",
+      "x": 740,
+      "y": 400,
+      "nhan": "Chùa Phi Lai"
+    },
+    {
+      "id": "hang-nui-tuong",
+      "kieu": "dia-danh",
+      "x": 640,
+      "y": 250,
+      "nhan": "Hang đá trên núi Tượng"
+    },
+    {
+      "id": "nha-mo-ba-chuc",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 470,
+      "nhan": "Nhà mồ Ba Chúc — di tích lịch sử quốc gia (7/1980)"
+    },
+    {
+      "id": "co-tuong-niem",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 300,
+      "nhan": "3.157 thường dân bị sát hại, chỉ 3 người sống sót (theo Khu di tích Nhà mồ Ba Chúc)"
+    },
+    {
+      "id": "le-tuong-niem",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 180,
+      "nhan": "Lễ tưởng niệm nạn nhân được tổ chức hằng năm tại Ba Chúc"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tháng 4/1978 — quân Khmer Đỏ tràn qua biên giới vào huyện Tri Tôn",
+      "mo_ta": "Từ đêm 30/4/1977, quân Khmer Đỏ đã nhiều lần tiến công qua biên giới vào 14 xã của An Giang. Tháng 4/1978, lực lượng này tràn vào địa bàn huyện Tri Tôn.",
+      "hien": [
+        "quan-khmer-do-bc",
+        "ba-chuc"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "18 – 30/4/1978 — Ba Chúc bị chiếm đóng 12 ngày",
+      "mo_ta": "Quân Khmer Đỏ tràn vào xã Ba Chúc ngày 18/4/1978 và chiếm đóng 12 ngày, giết hại tập thể dân thường không phân biệt già trẻ. Đây là đỉnh điểm bi thảm nhất của chuỗi tiến công qua biên giới An Giang.",
+      "hien": [
+        "quan-khmer-do-bc",
+        "ba-chuc",
+        "chua-tam-buu"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chùa Tam Bửu và chùa Phi Lai — hai điểm ghi dấu trong thị trấn",
+      "mo_ta": "Chùa Tam Bửu và chùa Phi Lai là hai nơi trú ẩn của người dân trong những ngày đó, nay thuộc quần thể chứng tích tội ác được gìn giữ tại Ba Chúc.",
+      "hien": [
+        "ba-chuc",
+        "chua-tam-buu",
+        "chua-phi-lai"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hang đá trên núi Tượng (dãy Thất Sơn)",
+      "mo_ta": "Các hang đá trên núi Tượng thuộc dãy Thất Sơn cũng là nơi người dân Ba Chúc lánh nạn và là một trong những địa điểm ghi dấu nạn nhân của vụ thảm sát.",
+      "hien": [
+        "ba-chuc",
+        "hang-nui-tuong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Nhà mồ Ba Chúc — nơi lưu giữ hài cốt các nạn nhân",
+      "mo_ta": "Cuối năm 1979, chính quyền và nhân dân An Giang xây dựng quần thể chứng tích, trong đó có nhà mồ lưu giữ hài cốt các nạn nhân; di tích được công nhận cấp quốc gia tháng 7/1980.",
+      "hien": [
+        "ba-chuc",
+        "nha-mo-ba-chuc",
+        "co-tuong-niem"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tưởng niệm 3.157 thường dân",
+      "mo_ta": "Trong 12 ngày chiếm đóng (18 – 30/4/1978), 3.157 dân thường Ba Chúc bị giết hại, chỉ còn 3 người sống sót (theo Khu di tích Nhà mồ Ba Chúc). Lễ tưởng niệm các nạn nhân được tổ chức hằng năm tại đây.",
+      "hien": [
+        "nha-mo-ba-chuc",
+        "co-tuong-niem",
+        "le-tuong-niem"
+      ]
+    }
+  ],
+  "ket_qua": "Trong 12 ngày chiếm đóng (18–30/4/1978), quân Khmer Đỏ giết hại 3.157 dân thường Ba Chúc, chỉ còn 3 người sống sót (theo Khu di tích Nhà mồ Ba Chúc); đây là một trong những nguyên nhân trực tiếp dẫn đến cuộc chiến tranh bảo vệ biên giới Tây Nam.",
+  "y_nghia": "Nhà mồ Ba Chúc là di tích lịch sử quốc gia ghi dấu tội ác đối với thường dân Việt Nam trên biên giới Tây Nam, và là nơi tưởng niệm các nạn nhân.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Lễ tưởng niệm những nạn nhân bị sát hại trong chiến tranh biên giới Tây Nam — Báo An Giang — https://baoangiang.com.vn/le-tuong-niem-nhung-nan-nhan-bi-sat-hai-trong-chien-tranh-bien-gioi-tay-nam-a418769.html",
+    "\"Vùng đất chết\" Ba Chúc chuyển mình mạnh mẽ — TTXVN — https://chinhsachcuocsong.vnanet.vn/vung-dat-chet-ba-chuc-chuyen-minh-manh-me/58759.html",
+    "Nhà mồ Ba Chúc — chứng tích tội ác Khmer Đỏ — Báo Quân đội nhân dân — https://www.qdnd.vn/xa-hoi/cac-van-de/nha-mo-ba-chuc-chung-tich-toi-ac-khmer-do-1020369",
+    "Quân và dân An Giang trong chiến tranh bảo vệ biên giới Tây Nam — Báo Nhân Dân — https://nhandan.vn/quan-va-dan-an-giang-trong-chien-tranh-bao-ve-bien-gioi-tay-nam-post790961.html"
+  ]
+}

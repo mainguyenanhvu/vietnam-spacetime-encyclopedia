@@ -1,0 +1,200 @@
+{
+  "ghi_chu": "Sa đồ Điểm cao 685 – «Lò vôi thế kỷ» (Vị Xuyên) — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ mat-tran-vi-xuyen-1984-1989 đã xếp T2 trong docs/section9-sensitive.json — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước, không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỈ CÓ MỘT NGUỒN trực tiếp (Đài Tiếng nói Việt Nam). Con số mật độ đạn pháo 20.000–30.000 quả/ngày ghi nguyên dạng KHOẢNG như nguồn nêu, không quy về một số. Con số «hơn 4.000 cán bộ, chiến sĩ hy sinh» là của TOÀN MẶT TRẬN Vị Xuyên 1984–1989 chứ không riêng điểm cao 685 — sa đồ cố ý không đưa con số này lên hình để tránh gán nhầm phạm vi.",
+  "id": "diem-cao-685-vi-xuyen",
+  "ten": "Điểm cao 685 – \"Lò vôi thế kỷ\" (Vị Xuyên)",
+  "nam": 1984,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Thiếu tướng Hoàng Đan (chỉ đạo trận tái chiếm 10/1984); Trung đoàn 153",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Đồi Đài, xã Thanh Thủy, Vị Xuyên, Hà Giang (nay tỉnh Tuyên Quang)",
+  "lien_quan_tinh": [
+    "tuyen-quang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          110
+        ],
+        [
+          420,
+          95
+        ],
+        [
+          760,
+          105
+        ],
+        [
+          940,
+          130
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          350,
+          230
+        ],
+        [
+          520,
+          210
+        ],
+        [
+          690,
+          230
+        ]
+      ],
+      "nhan": "Đồi Đài — điểm cao 685, xã Thanh Thuỷ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cd-685",
+      "kieu": "dia-danh",
+      "x": 520,
+      "y": 280,
+      "nhan": "Điểm cao 685 (Đồi Đài)"
+    },
+    {
+      "id": "quan-tq-685",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 520,
+      "y": 80,
+      "nhan": "Quân đội Trung Quốc chiếm giữ (cuối 4/1984)"
+    },
+    {
+      "id": "phao-kich",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 820,
+      "y": 200,
+      "nhan": "Có ngày 20.000 – 30.000 quả đạn pháo (theo Đài Tiếng nói Việt Nam)"
+    },
+    {
+      "id": "lo-voi",
+      "kieu": "dia-danh",
+      "x": 820,
+      "y": 340,
+      "nhan": "«Lò vôi thế kỷ» — tên bộ đội ta đặt cho mặt đồi bị bạt trắng"
+    },
+    {
+      "id": "cd-1509-772-lien-ke",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 320,
+      "nhan": "Các điểm cao 1509, 772 liền kề"
+    },
+    {
+      "id": "mb84-khong-thanh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 200,
+      "nhan": "MB84 (12/7/1984) chưa giành lại được điểm cao"
+    },
+    {
+      "id": "trung-doan-153",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 430,
+      "nhan": "Trung đoàn 153"
+    },
+    {
+      "id": "co-giu-vung",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 820,
+      "y": 470,
+      "nhan": "10/1984 — tái chiếm và giữ vững"
+    },
+    {
+      "id": "mui-tai-chiem",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        390
+      ],
+      "den": [
+        470,
+        320
+      ],
+      "nhan": "Tháng 10/1984 — tái chiếm"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Điểm cao 685 (Đồi Đài) — một trong những cao điểm ác liệt nhất mặt trận Vị Xuyên",
+      "mo_ta": "Điểm cao 685, còn gọi Đồi Đài, tại xã Thanh Thủy là một trong những cao điểm ác liệt nhất của mặt trận Vị Xuyên.",
+      "hien": [
+        "cd-685",
+        "quan-tq-685"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Cuối tháng 4/1984 — bị chiếm giữ cùng các điểm cao 1509, 772",
+      "mo_ta": "Điểm cao 685 bị quân Trung Quốc chiếm giữ cuối tháng 4/1984, cùng đợt với các điểm cao 1509 và 772.",
+      "hien": [
+        "cd-685",
+        "quan-tq-685",
+        "cd-1509-772-lien-ke"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Mật độ đạn pháo cày xới mặt đồi",
+      "mo_ta": "Điểm cao hứng chịu mật độ đạn pháo rất lớn — có ngày tới 20.000 – 30.000 quả theo Đài Tiếng nói Việt Nam — khiến mặt đồi bị cày xới, bạt trắng như vôi nung.",
+      "hien": [
+        "cd-685",
+        "phao-kich",
+        "lo-voi"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bộ đội ta đặt tên «Lò vôi thế kỷ»",
+      "mo_ta": "Từ hình ảnh mặt đồi bạt trắng, bộ đội ta đặt tên cho điểm cao này là «Lò vôi thế kỷ».",
+      "hien": [
+        "cd-685",
+        "lo-voi"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chiến dịch MB84 ngày 12/7/1984 chưa giành lại được điểm cao",
+      "mo_ta": "Chiến dịch phản kích MB84 ngày 12/7/1984 không thành công trong đợt đầu, chưa giành lại được điểm cao 685.",
+      "hien": [
+        "mb84-khong-thanh",
+        "cd-685",
+        "quan-tq-685"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tháng 10/1984 — Trung đoàn 153 tái chiếm và giữ vững",
+      "mo_ta": "Đến tháng 10/1984, Trung đoàn 153 tái chiếm và giữ vững điểm cao 685.",
+      "hien": [
+        "trung-doan-153",
+        "mui-tai-chiem",
+        "cd-685",
+        "co-giu-vung"
+      ]
+    }
+  ],
+  "ket_qua": "Trung Quốc chiếm điểm cao 685 cuối tháng 4/1984; chiến dịch MB84 (12/7/1984) không giành lại được, đến tháng 10/1984 Trung đoàn 153 mới tái chiếm và giữ vững. Trên toàn mặt trận Vị Xuyên 1984–1989 có hơn 4.000 cán bộ, chiến sĩ hy sinh theo mục «Mặt trận Vị Xuyên 1984–1989» đã có trong kho (nguồn Báo Nhân Dân) — con số của cả mặt trận, không riêng điểm cao này.",
+  "y_nghia": "«Lò vôi thế kỷ» là hình ảnh tiêu biểu nhất cho mức độ ác liệt của mặt trận Vị Xuyên trong toàn bộ cuộc chiến đấu bảo vệ biên giới phía Bắc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "1984-1989: Mặt trận Vị Xuyên được ví như \"lò vôi thế kỷ\" — Đài Tiếng nói Việt Nam — https://vov.gov.vn/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-dtnew-354994"
+  ]
+}

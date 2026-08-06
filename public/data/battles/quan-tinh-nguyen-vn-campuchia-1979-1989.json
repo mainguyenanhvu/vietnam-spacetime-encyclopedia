@@ -1,0 +1,191 @@
+{
+  "ghi_chu": "Sa đồ Quân tình nguyện Việt Nam làm nghĩa vụ quốc tế tại Campuchia 1979–1989 — lô E. MỤC TẾ NHỊ NHẤT LÔ: cố ý dựng dạng SƠ ĐỒ MỐC THỜI GIAN VÀ ĐỊA BÀN thay vì sa đồ diễn biến quân sự, để thuật lại bằng đúng cách diễn đạt của nguồn nhà nước Việt Nam mà không sa vào đánh giá chính trị. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Cần người soát §9 trước khi publish. trang_thai=draft. lien_quan_tinh CỐ Ý ĐỂ RỖNG: nguồn đặt toàn bộ sự kiện trên lãnh thổ Campuchia, mục gốc trong overlay cũng không gắn tỉnh nào; gán một tỉnh biên giới vào đây sẽ là suy diễn. Người soát §9 quyết định có gắn tỉnh hay không.",
+  "id": "quan-tinh-nguyen-vn-campuchia-1979-1989",
+  "ten": "Quân tình nguyện Việt Nam làm nghĩa vụ quốc tế tại Campuchia",
+  "nam": 1979,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân tình nguyện và chuyên gia Việt Nam tại Campuchia",
+  "dia_diem": "Toàn lãnh thổ Campuchia (trọng điểm Phnom Penh và biên giới Tây, Tây Bắc)",
+  "lien_quan_tinh": [],
+  "sa_do_ghi_chu": "Sơ đồ mốc thời gian và địa bàn, minh hoạ theo tư liệu nhà nước, không theo tỉ lệ địa lý chính xác. Sơ đồ cố ý KHÔNG tái hiện diễn biến quân sự chi tiết.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          820,
+          60
+        ],
+        [
+          790,
+          300
+        ],
+        [
+          840,
+          540
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Campuchia"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "phnom-penh",
+      "kieu": "thanh",
+      "x": 420,
+      "y": 270,
+      "nhan": "Phnom Penh"
+    },
+    {
+      "id": "bien-gioi-tay-bac-cpc",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 150,
+      "nhan": "Địa bàn Tây Bắc Campuchia"
+    },
+    {
+      "id": "bien-gioi-tay-cpc",
+      "kieu": "dia-danh",
+      "x": 160,
+      "y": 380,
+      "nhan": "Địa bàn phía Tây Campuchia"
+    },
+    {
+      "id": "quan-tinh-nguyen",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 640,
+      "y": 180,
+      "nhan": "Quân tình nguyện Việt Nam"
+    },
+    {
+      "id": "moc-23-12-1978",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 110,
+      "nhan": "23/12/1978 — mở đầu"
+    },
+    {
+      "id": "moc-7-1-1979",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 230,
+      "nhan": "7/1/1979 — giải phóng Phnom Penh"
+    },
+    {
+      "id": "moc-hiep-uoc-2-1979",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 350,
+      "nhan": "2/1979 — Hiệp ước hoà bình, hữu nghị và hợp tác Việt Nam – Campuchia"
+    },
+    {
+      "id": "moc-26-9-1989",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 470,
+      "nhan": "26/9/1989 — rút quân hoàn toàn về nước"
+    },
+    {
+      "id": "ba-nhiem-vu",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 430,
+      "nhan": "Ba nhiệm vụ: xây dựng lực lượng, củng cố chính quyền, khôi phục kinh tế – xã hội"
+    },
+    {
+      "id": "doi-quan-nha-phat",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 380,
+      "y": 470,
+      "nhan": "«Đội quân nhà Phật» — cách gọi của nhân dân Campuchia"
+    },
+    {
+      "id": "mui-rut-quan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        470
+      ],
+      "den": [
+        790,
+        500
+      ],
+      "nhan": "Rút quân về nước"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "23/12/1978 – 17/1/1979 — phối hợp với lực lượng cách mạng Campuchia",
+      "mo_ta": "Từ 23/12/1978 đến 17/1/1979, quân tình nguyện Việt Nam cùng lực lượng cách mạng Campuchia tiêu diệt và làm tan rã 18 sư đoàn Khmer Đỏ, giải phóng hơn 4 triệu dân (theo Báo Quân đội nhân dân).",
+      "hien": [
+        "quan-tinh-nguyen",
+        "phnom-penh",
+        "moc-23-12-1978"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "7/1/1979 — giải phóng Phnom Penh",
+      "mo_ta": "Ngày 7/1/1979, liên quân tiến vào giải phóng thủ đô Phnom Penh, chấm dứt chế độ diệt chủng Pol Pot.",
+      "hien": [
+        "phnom-penh",
+        "moc-7-1-1979",
+        "quan-tinh-nguyen"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tháng 2/1979 — ký Hiệp ước hoà bình, hữu nghị và hợp tác Việt Nam – Campuchia",
+      "mo_ta": "Tháng 2/1979, hai nước ký Hiệp ước hoà bình, hữu nghị và hợp tác Việt Nam – Campuchia, đặt khuôn khổ cho việc quân tình nguyện Việt Nam ở lại làm nghĩa vụ quốc tế.",
+      "hien": [
+        "phnom-penh",
+        "moc-hiep-uoc-2-1979"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "1979 – 1989 — ba nhiệm vụ trên địa bàn phía Tây và Tây Bắc Campuchia",
+      "mo_ta": "Trong 10 năm, quân tình nguyện Việt Nam đồng thời thực hiện ba nhiệm vụ: giúp lực lượng vũ trang cách mạng Campuchia xây dựng lực lượng và phối hợp truy quét tàn quân Pol Pot ở biên giới Tây, Tây Bắc và nội địa; giúp bạn xây dựng, củng cố hệ thống chính quyền cách mạng; cử hàng nghìn cán bộ, chuyên gia giúp khôi phục kinh tế – xã hội.",
+      "hien": [
+        "ba-nhiem-vu",
+        "bien-gioi-tay-cpc",
+        "bien-gioi-tay-bac-cpc",
+        "quan-tinh-nguyen"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "«Đội quân nhà Phật» — cách gọi của nhân dân Campuchia",
+      "mo_ta": "Quân tình nguyện Việt Nam được nhân dân Campuchia gọi là «Đội quân nhà Phật».",
+      "hien": [
+        "phnom-penh",
+        "doi-quan-nha-phat"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "26/9/1989 — rút quân hoàn toàn về nước",
+      "mo_ta": "Ngày 26/9/1989, toàn bộ quân tình nguyện Việt Nam rút hết về nước, hoàn thành nghĩa vụ quốc tế.",
+      "hien": [
+        "moc-26-9-1989",
+        "mui-rut-quan",
+        "quan-tinh-nguyen"
+      ]
+    }
+  ],
+  "ket_qua": "Từ 23/12/1978 đến 17/1/1979, quân tình nguyện Việt Nam cùng lực lượng cách mạng Campuchia tiêu diệt và làm tan rã 18 sư đoàn Khmer Đỏ, giải phóng hơn 4 triệu dân; trong 10 năm (1979–1989) tiếp tục giúp bạn truy quét tàn quân Pol Pot, xây dựng chính quyền cách mạng; ngày 26/9/1989 toàn bộ quân tình nguyện Việt Nam rút hết về nước, hoàn thành nghĩa vụ quốc tế.",
+  "y_nghia": "Giai đoạn quân tình nguyện Việt Nam sang giúp Campuchia sau khi biên giới Tây Nam đã được bảo vệ — khác với giai đoạn phòng ngự trên đất Việt Nam đã có mục riêng.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Quân tình nguyện hoàn thành sứ mệnh tại Campuchia — Báo Quân đội nhân dân — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/hoan-thanh-su-menh-hoi-sinh-quoc-gia-dan-toc-campuchia-doi-quan-nha-phat-rut-ve-nuoc-802564",
+    "Quân đội nhân dân Việt Nam thực hiện nhiệm vụ quốc tế ở Campuchia (1979-1989) – Vang danh \"Đội quân nhà Phật\" — Báo Nhân Dân — https://special.nhandan.vn/vang-danh-doi-quan-nha-Phat-/index.html"
+  ]
+}

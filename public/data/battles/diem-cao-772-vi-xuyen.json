@@ -1,0 +1,185 @@
+{
+  "ghi_chu": "Sa đồ Điểm cao 772 (Vị Xuyên) 12/7/1984 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ mat-tran-vi-xuyen-1984-1989 đã xếp T2 trong docs/section9-sensitive.json — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước, không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỈ CÓ MỘT NGUỒN trực tiếp (VOV2). CHỖ NGUỒN VÊNH cần soát: mo_ta đã duyệt ghi «Đại đội 3, Tiểu đoàn 876 (Sư đoàn 356)», còn ket_qua đã duyệt ghi «Trung đoàn 876 (Sư đoàn 356)» — 876 là phiên hiệu trung đoàn hay tiểu đoàn cần người có thẩm quyền xác nhận; sa đồ nêu cả hai cách ghi. Liệt sĩ Nguyễn Lê Thanh được nêu đích danh theo nguồn, nhưng CỐ Ý KHÔNG mô tả chi tiết di hài như trong mo_ta gốc — giữ giọng trang trọng.",
+  "id": "diem-cao-772-vi-xuyen",
+  "ten": "Điểm cao 772 (Vị Xuyên)",
+  "nam": 1984,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trung đoàn 876 (Sư đoàn 356)",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Mỏm D2, điểm cao 772, xã Thanh Thủy, Vị Xuyên (Hà Giang, nay tỉnh Tuyên Quang)",
+  "lien_quan_tinh": [
+    "tuyen-quang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          110
+        ],
+        [
+          420,
+          95
+        ],
+        [
+          760,
+          105
+        ],
+        [
+          940,
+          130
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          330,
+          240
+        ],
+        [
+          500,
+          215
+        ],
+        [
+          670,
+          240
+        ]
+      ],
+      "nhan": "Điểm cao 772 và mỏm D2, xã Thanh Thuỷ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cd-772",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 290,
+      "nhan": "Điểm cao 772"
+    },
+    {
+      "id": "mom-d2",
+      "kieu": "dia-danh",
+      "x": 740,
+      "y": 290,
+      "nhan": "Mỏm D2"
+    },
+    {
+      "id": "trung-doan-876",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 280,
+      "y": 440,
+      "nhan": "Trung đoàn 876 (Sư đoàn 356)"
+    },
+    {
+      "id": "quan-tq-772",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 80,
+      "nhan": "Quân đội Trung Quốc chiếm giữ"
+    },
+    {
+      "id": "co-hy-sinh-772",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 830,
+      "y": 450,
+      "nhan": "Đại đội trưởng Nguyễn Lê Thanh và nhiều cán bộ đại đội hy sinh tại chiến hào"
+    },
+    {
+      "id": "cd-685-1509",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 250,
+      "nhan": "Các điểm cao 685 và 1509"
+    },
+    {
+      "id": "mb84-772",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 430,
+      "nhan": "Mục tiêu tiến công chủ yếu của chiến dịch MB84"
+    },
+    {
+      "id": "mui-danh-chiem-d2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        400
+      ],
+      "den": [
+        680,
+        330
+      ],
+      "nhan": "12/7/1984 — đánh chiếm mỏm D2"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Điểm cao 772 — một trong ba cao điểm then chốt cùng 685 và 1509",
+      "mo_ta": "Điểm cao 772 tại xã Thanh Thủy, cùng với 685 và 1509, là một trong ba cao điểm then chốt của toàn bộ mặt trận Vị Xuyên giai đoạn 1984.",
+      "hien": [
+        "cd-772",
+        "cd-685-1509",
+        "quan-tq-772"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "12/7/1984 — mục tiêu tiến công chủ yếu của chiến dịch MB84",
+      "mo_ta": "Điểm cao 772 là một trong các mục tiêu chính, và theo kết quả đã duyệt là mục tiêu tiến công chủ yếu, của chiến dịch phản kích MB84 ngày 12/7/1984.",
+      "hien": [
+        "mb84-772",
+        "cd-772",
+        "quan-tq-772"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đơn vị 876 (Sư đoàn 356) tiến công mỏm D2",
+      "mo_ta": "Đơn vị 876 thuộc Sư đoàn 356 trực tiếp đánh chiếm mỏm D2 của điểm cao 772. Hai mô tả đã duyệt ghi phiên hiệu khác nhau — «Trung đoàn 876» và «Đại đội 3, Tiểu đoàn 876» — và cả hai đều được giữ lại chờ đối chiếu.",
+      "hien": [
+        "trung-doan-876",
+        "mui-danh-chiem-d2",
+        "cd-772",
+        "mom-d2"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Giao tranh tại mỏm D2 thuộc số những nơi ác liệt nhất trong ngày",
+      "mo_ta": "Giao tranh tại điểm cao 772, đặc biệt ở mỏm D2, thuộc số những nơi ác liệt nhất trong ngày 12/7/1984.",
+      "hien": [
+        "mom-d2",
+        "cd-772",
+        "quan-tq-772",
+        "trung-doan-876"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Nhiều cán bộ đại đội hy sinh ngay tại chiến hào",
+      "mo_ta": "Nhiều cán bộ đại đội hy sinh ngay tại chiến hào trên mỏm D2, trong đó có đại đội trưởng Nguyễn Lê Thanh.",
+      "hien": [
+        "co-hy-sinh-772",
+        "mom-d2",
+        "trung-doan-876"
+      ]
+    }
+  ],
+  "ket_qua": "Điểm cao 772 là mục tiêu tiến công chủ yếu của Trung đoàn 876 (Sư đoàn 356) trong chiến dịch phản kích MB84 ngày 12/7/1984; giao tranh tại đây, đặc biệt ở mỏm D2, thuộc số những nơi ác liệt nhất trong ngày, nhiều cán bộ đại đội hy sinh ngay tại chiến hào.",
+  "y_nghia": "Cùng với 685 và 1509, điểm cao 772 là một trong ba cao điểm then chốt quyết định cục diện mặt trận Vị Xuyên năm 1984.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Ký ức về sự hy sinh của đồng đội ở Mặt trận Vị Xuyên — Đài Tiếng nói Việt Nam (VOV2) — https://vov2.vov.vn/bai-ca-nguoi-linh/thong-tin-liet-sy/ky-uc-ve-su-hy-sinh-cua-dong-doi-o-mat-tran-vi-xuyen-32645.vov2"
+  ]
+}

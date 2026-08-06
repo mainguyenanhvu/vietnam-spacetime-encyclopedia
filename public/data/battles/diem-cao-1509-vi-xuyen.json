@@ -1,0 +1,196 @@
+{
+  "ghi_chu": "Sa đồ Điểm cao 1509 (Vị Xuyên) 28/4/1984 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ mat-tran-vi-xuyen-1984-1989 đã xếp T2 trong docs/section9-sensitive.json — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước, không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỈ CÓ MỘT NGUỒN trực tiếp (Đài Tiếng nói Việt Nam). Nguồn KHÔNG nêu số thương vong nên sa đồ không có con số nào. Hà Giang đã hợp nhất vào tỉnh Tuyên Quang từ 2025 nên lien_quan_tinh ghi 'tuyen-quang'.",
+  "id": "diem-cao-1509-vi-xuyen",
+  "ten": "Điểm cao 1509 (Vị Xuyên)",
+  "nam": 1984,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đại đội 14, Trung đoàn 122, Sư đoàn 313",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Xã Thanh Thủy, Vị Xuyên, Hà Giang (nay tỉnh Tuyên Quang), sát mốc quốc giới 252 – 254",
+  "lien_quan_tinh": [
+    "tuyen-quang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          110
+        ],
+        [
+          420,
+          95
+        ],
+        [
+          760,
+          105
+        ],
+        [
+          940,
+          130
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          200,
+          230
+        ],
+        [
+          450,
+          200
+        ],
+        [
+          700,
+          215
+        ],
+        [
+          880,
+          235
+        ]
+      ],
+      "nhan": "Dãy núi biên giới xã Thanh Thuỷ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cd-1509",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 270,
+      "nhan": "Điểm cao 1509 — đỉnh cao nhất khu vực"
+    },
+    {
+      "id": "moc-252",
+      "kieu": "dia-danh",
+      "x": 180,
+      "y": 180,
+      "nhan": "Mốc quốc giới 252"
+    },
+    {
+      "id": "moc-253",
+      "kieu": "dia-danh",
+      "x": 180,
+      "y": 320,
+      "nhan": "Mốc quốc giới 253"
+    },
+    {
+      "id": "moc-254",
+      "kieu": "dia-danh",
+      "x": 180,
+      "y": 460,
+      "nhan": "Mốc quốc giới 254"
+    },
+    {
+      "id": "dai-doi-14",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 430,
+      "nhan": "Đại đội 14, Trung đoàn 122, Sư đoàn 313 phòng ngự"
+    },
+    {
+      "id": "phao-binh-tq",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 60,
+      "nhan": "Pháo binh đối phương bắn cấp tập"
+    },
+    {
+      "id": "quan-tq-chiem",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 300,
+      "nhan": "Vị trí bị chiếm giữ (28/4/1984)"
+    },
+    {
+      "id": "co-nguyen-nhan-mb84",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 450,
+      "nhan": "Nguyên nhân trực tiếp dẫn tới chiến dịch phản kích MB84 (12/7/1984)"
+    },
+    {
+      "id": "mui-phao-kich",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        680,
+        130
+      ],
+      "den": [
+        500,
+        240
+      ],
+      "nhan": "Hoả lực pháo binh sáng 28/4/1984"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Điểm cao 1509 và ba mốc quốc giới 252, 253, 254",
+      "mo_ta": "Điểm cao 1509 là đỉnh cao nhất trong dãy núi biên giới thuộc xã Thanh Thủy, huyện Vị Xuyên, nơi có ba mốc quốc giới 252, 253, 254.",
+      "hien": [
+        "cd-1509",
+        "moc-252",
+        "moc-253",
+        "moc-254"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đại đội 14, Trung đoàn 122, Sư đoàn 313 phòng ngự tại điểm cao",
+      "mo_ta": "Đại đội 14, Trung đoàn 122, Sư đoàn 313 đảm nhiệm phòng ngự tại điểm cao 1509.",
+      "hien": [
+        "cd-1509",
+        "dai-doi-14",
+        "moc-253"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Sáng 28/4/1984 — hoả lực pháo binh cấp tập",
+      "mo_ta": "Từ sáng 28/4/1984, đơn vị phòng ngự phải chịu đựng hoả lực pháo binh cấp tập của đối phương.",
+      "hien": [
+        "phao-binh-tq",
+        "mui-phao-kich",
+        "cd-1509",
+        "dai-doi-14"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Vị trí bị chiếm giữ",
+      "mo_ta": "Sau đợt pháo kích, quân Trung Quốc chiếm được điểm cao 1509 — điểm cao nhất khu vực Thanh Thủy, phía đối phương đặt tên là Lão Sơn.",
+      "hien": [
+        "quan-tq-chiem",
+        "cd-1509",
+        "dai-doi-14"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Nguyên nhân trực tiếp dẫn tới chiến dịch phản kích MB84",
+      "mo_ta": "Việc mất điểm cao 1509 cùng các vị trí lân cận (772, 685) là nguyên nhân trực tiếp khiến Quân khu 2 mở chiến dịch phản kích MB84 ngày 12/7/1984 nhằm giành lại các cao điểm này.",
+      "hien": [
+        "cd-1509",
+        "co-nguyen-nhan-mb84",
+        "quan-tq-chiem"
+      ]
+    }
+  ],
+  "ket_qua": "Sáng 28/4/1984, sau đợt pháo kích cấp tập, quân Trung Quốc chiếm được điểm cao 1509 — điểm cao nhất khu vực Thanh Thủy, đặt tên là Lão Sơn; đây là một trong nguyên nhân trực tiếp dẫn đến chiến dịch phản kích MB84 ngày 12/7/1984.",
+  "y_nghia": "1509 là cao điểm khống chế cả khu vực Thanh Thuỷ; mất vị trí này kéo theo toàn bộ diễn biến mặt trận Vị Xuyên các năm sau.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tháng Bảy ở Vị Xuyên — Đài Tiếng nói Việt Nam — https://vov.gov.vn/thang-bay-o-vi-xuyen-dtnew-288922"
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "ghi_chu": "Sa đồ Bình độ 400 (Cao Lộc, Lạng Sơn) 10–16/5/1981 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước, không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỈ CÓ MỘT NGUỒN trực tiếp (Báo Quân khu 4) — mục gốc trong overlay đã ghi rõ điều này trong ghi_chu_bien_tap, kèm cảnh báo rằng mốc thời gian đúng là THÁNG 5/1981 chứ không phải 1984 như giả định ban đầu. Con số tổn thất (hơn 100 hy sinh, trên 70 chưa tìm được hài cốt) ghi kèm nguồn, không làm tròn. CHỖ NGUỒN VÊNH cần soát: mo_ta đã duyệt liệt kê Trung đoàn Bộ binh 52 (Sư đoàn 337), Trung đoàn Đặc công 198, Tiểu đoàn Trinh sát 31, Tiểu đoàn Đặc công 20 (Quân khu 1); ket_qua đã duyệt lại nêu mũi mở màn là «Tiểu đoàn đặc công (Trung đoàn 198)». Sa đồ giữ cả hai cách diễn đạt.",
+  "id": "binh-do-400-lang-son-1981",
+  "ten": "Bình độ 400 (Cao Lộc, Lạng Sơn)",
+  "nam": 1981,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Thiếu tướng Hoàng Đan (Tư lệnh mặt trận Lạng Sơn)",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Bình độ 400, Cao Lộc (Lạng Sơn)",
+  "lien_quan_tinh": [
+    "lang-son"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác. Vị trí bình độ 400 không có toạ độ công bố chi tiết nên hình thế chỉ mang tính khái quát.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          110
+        ],
+        [
+          420,
+          95
+        ],
+        [
+          760,
+          105
+        ],
+        [
+          940,
+          130
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          330,
+          250
+        ],
+        [
+          500,
+          235
+        ],
+        [
+          670,
+          250
+        ]
+      ],
+      "nhan": "Bình độ 400 và các mỏm địa hình lân cận (huyện Cao Lộc)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "ba-mom",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 290,
+      "nhan": "Ba mỏm địa hình trên bình độ 400"
+    },
+    {
+      "id": "quan-tq-bd400",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 80,
+      "nhan": "Quân đội Trung Quốc lấn chiếm vị trí biên giới"
+    },
+    {
+      "id": "dac-cong-198",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 420,
+      "nhan": "Tiểu đoàn đặc công (Trung đoàn Đặc công 198)"
+    },
+    {
+      "id": "trung-doan-52",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 720,
+      "y": 420,
+      "nhan": "Trung đoàn Bộ binh 52 (Sư đoàn 337)"
+    },
+    {
+      "id": "dan-quan-cao-loc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 270,
+      "nhan": "Dân quân tự vệ huyện Cao Lộc"
+    },
+    {
+      "id": "co-16-5",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 280,
+      "nhan": "16/5/1981 — đối phương rút quân"
+    },
+    {
+      "id": "co-tuong-nho",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 180,
+      "nhan": "Trung đoàn 52: hơn 100 cán bộ, chiến sĩ hy sinh, trên 70 chưa tìm được hài cốt (theo Báo Quân khu 4)"
+    },
+    {
+      "id": "mui-tien-cong-10-5",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        380
+      ],
+      "den": [
+        450,
+        320
+      ],
+      "nhan": "Rạng sáng 10/5/1981 — bí mật tiến công"
+    },
+    {
+      "id": "mui-phan-cong-11-5",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        560,
+        130
+      ],
+      "den": [
+        560,
+        255
+      ],
+      "nhan": "11/5 — phản công bằng hai sư đoàn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bình độ 400 — điểm nóng của giai đoạn sau năm 1979",
+      "mo_ta": "Bình độ 400 (còn gọi Cao điểm 400) tại Cao Lộc là một trong những điểm nóng của giai đoạn chiến đấu bảo vệ biên giới phía Bắc kéo dài sau năm 1979, khi đối phương tiếp tục lấn chiếm các vị trí biên giới bằng các cuộc tiến công quy mô cấp trung đoàn – sư đoàn.",
+      "hien": [
+        "ba-mom",
+        "quan-tq-bd400",
+        "dan-quan-cao-loc"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Rạng sáng 10/5/1981 — bí mật tiến công",
+      "mo_ta": "Rạng sáng 10/5/1981, tiểu đoàn đặc công thuộc Trung đoàn Đặc công 198 bí mật tiến công lên bình độ 400. Cùng tham chiến trong đợt này còn có Trung đoàn Bộ binh 52 (Sư đoàn 337), Tiểu đoàn Trinh sát 31, Tiểu đoàn Đặc công 20 (Quân khu 1) và dân quân tự vệ huyện Cao Lộc.",
+      "hien": [
+        "dac-cong-198",
+        "mui-tien-cong-10-5",
+        "ba-mom"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "11h30 ngày 10/5 — chiếm cả ba mỏm địa hình",
+      "mo_ta": "Đến 11h30 ngày 10/5/1981, ta chiếm cả ba mỏm địa hình trên bình độ 400.",
+      "hien": [
+        "ba-mom",
+        "dac-cong-198",
+        "trung-doan-52"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Ngày 11/5 — đối phương phản công, giằng co 7 ngày đêm",
+      "mo_ta": "Ngày 11/5/1981 đối phương phản công bằng hai sư đoàn; hai bên giành giật quyết liệt trên điểm cao này suốt 7 ngày đêm liên tục, dưới sự chỉ huy trực tiếp của Thiếu tướng Hoàng Đan.",
+      "hien": [
+        "quan-tq-bd400",
+        "mui-phan-cong-11-5",
+        "ba-mom",
+        "trung-doan-52"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "16/5/1981 — đối phương buộc phải rút quân",
+      "mo_ta": "Đến ngày 16/5/1981, đối phương buộc phải rút quân khỏi khu vực bình độ 400.",
+      "hien": [
+        "ba-mom",
+        "co-16-5",
+        "trung-doan-52"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tổn thất của Trung đoàn Bộ binh 52",
+      "mo_ta": "Theo Báo Quân khu 4, Trung đoàn Bộ binh 52 (Sư đoàn 337) chịu tổn thất hơn 100 cán bộ, chiến sĩ hy sinh, trong đó trên 70 người chưa tìm được hài cốt.",
+      "hien": [
+        "co-tuong-nho",
+        "trung-doan-52",
+        "ba-mom"
+      ]
+    }
+  ],
+  "ket_qua": "Rạng sáng 10/5/1981, Tiểu đoàn đặc công (Trung đoàn 198) bí mật tiến công, đến 11h30 chiếm cả ba mỏm địa hình; ngày 11/5 địch phản công bằng hai sư đoàn, giao tranh giằng co suốt 7 ngày đêm; đến 16/5/1981 Trung Quốc buộc phải rút quân. Trung đoàn Bộ binh 52 (Sư đoàn 337) chịu tổn thất hơn 100 cán bộ, chiến sĩ hy sinh, trên 70 người chưa tìm được hài cốt (theo Báo Quân khu 4).",
+  "y_nghia": "Bình độ 400 cho thấy cuộc chiến đấu bảo vệ biên giới phía Bắc không kết thúc năm 1979 mà còn kéo dài suốt thập niên 1980 trên các điểm cao biên giới.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Muôn tấm lòng hướng về bình độ 400 — Báo Quân khu 4 — http://baoquankhu4.com.vn/chinh-tri/muon-tam-long-huong-ve-binh-do-400.html"
+  ]
+}

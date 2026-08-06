@@ -1,0 +1,209 @@
+{
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới Lạng Sơn (Đồng Đăng) 1979 — lô E. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json (bien-gioi-tay-nam-1978-1979, bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989) — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước («Quân đội Trung Quốc», «đối phương»), không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỈ CÓ MỘT NGUỒN trực tiếp (Cổng TTĐT huyện Văn Lãng, Lạng Sơn). CHỖ NGUỒN VÊNH, đã nêu cả hai: mo_ta đã duyệt nhấn mạnh ta phản kích chiếm lại các vị trí đã mất và đối phương rút quân «giữa tháng 3/1979», còn ket_qua đã duyệt nêu chiều 4/3 đối phương chiếm nam sông Kỳ Cùng, sân bay Mai Pha và một phần thị xã Lạng Sơn ngày 5/3/1979 rồi Trung Quốc tuyên bố rút quân. Sa đồ giữ cả hai mốc: 5/3 là ngày tuyên bố rút, 18/3 là ngày hoàn tất rút quân theo mục Cao Bằng.",
+  "id": "chien-dau-bao-ve-bien-gioi-lang-son-1979",
+  "ten": "Chiến đấu bảo vệ biên giới Lạng Sơn (Đồng Đăng)",
+  "nam": 1979,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Sư đoàn 3, Trung đoàn 12 Thanh Xuyên, Tiểu đoàn 11 địa phương, Tiểu đoàn 1 cảnh sát cơ động, đồn biên phòng Hữu Nghị và dân quân",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Đồng Đăng và thị xã Lạng Sơn",
+  "lien_quan_tinh": [
+    "lang-son"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          110
+        ],
+        [
+          400,
+          90
+        ],
+        [
+          720,
+          105
+        ],
+        [
+          940,
+          135
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          200,
+          420
+        ],
+        [
+          450,
+          395
+        ],
+        [
+          720,
+          410
+        ],
+        [
+          930,
+          440
+        ]
+      ],
+      "nhan": "Sông Kỳ Cùng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-tq-ls",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 450,
+      "y": 55,
+      "nhan": "Hai sư đoàn bộ binh, một trung đoàn xe tăng, sáu trung đoàn pháo binh"
+    },
+    {
+      "id": "dong-dang",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 230,
+      "nhan": "Cửa ngõ Đồng Đăng"
+    },
+    {
+      "id": "tam-lung",
+      "kieu": "dia-danh",
+      "x": 540,
+      "y": 230,
+      "nhan": "Ngã ba Tam Lung"
+    },
+    {
+      "id": "su-doan-3",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 170,
+      "y": 330,
+      "nhan": "Sư đoàn 3 và các đơn vị hỗn hợp"
+    },
+    {
+      "id": "don-bien-phong-huu-nghi",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 700,
+      "y": 220,
+      "nhan": "Đồn biên phòng Hữu Nghị"
+    },
+    {
+      "id": "san-bay-mai-pha",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 470,
+      "nhan": "Sân bay Mai Pha"
+    },
+    {
+      "id": "thi-xa-lang-son",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 380,
+      "y": 470,
+      "nhan": "Thị xã Lạng Sơn"
+    },
+    {
+      "id": "co-rut-quan-ls",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 860,
+      "y": 300,
+      "nhan": "5/3/1979 — Trung Quốc tuyên bố rút quân"
+    },
+    {
+      "id": "mui-tien-cong-dong-dang",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        400,
+        110
+      ],
+      "den": [
+        330,
+        205
+      ],
+      "nhan": "Hướng chủ yếu: Đồng Đăng"
+    },
+    {
+      "id": "mui-phan-kich-ta",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        200,
+        350
+      ],
+      "den": [
+        260,
+        280
+      ],
+      "nhan": "Phản kích chiếm lại vị trí đã mất"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sáng 17/2/1979 — tiến công vào cửa ngõ Đồng Đăng",
+      "mo_ta": "Sáng 17/2/1979, hai sư đoàn bộ binh Trung Quốc có một trung đoàn xe tăng và sáu trung đoàn pháo binh yểm trợ tiến công vào cửa ngõ Đồng Đăng — hướng chủ yếu, vì chiếm được Đồng Đăng sẽ mở đường tiến sâu vào nội địa.",
+      "hien": [
+        "quan-tq-ls",
+        "dong-dang",
+        "mui-tien-cong-dong-dang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đồng Đăng và ngã ba Tam Lung — giao tranh liên tục 17 – 20/2/1979",
+      "mo_ta": "Đồng Đăng và ngã ba Tam Lung là nơi chiến sự ác liệt nhất, giao tranh liên tục từ 17 đến 20/2/1979.",
+      "hien": [
+        "dong-dang",
+        "tam-lung",
+        "quan-tq-ls"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Các đơn vị hỗn hợp giữ chốt và phản kích",
+      "mo_ta": "Sư đoàn 3, Trung đoàn 12 Thanh Xuyên, Tiểu đoàn 11 địa phương, Tiểu đoàn 1 cảnh sát cơ động và lực lượng đồn biên phòng Hữu Nghị cùng dân quân kiên cường giữ chốt, tổ chức phản kích chiếm lại các vị trí đã mất.",
+      "hien": [
+        "su-doan-3",
+        "don-bien-phong-huu-nghi",
+        "mui-phan-kich-ta",
+        "dong-dang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chiều 4/3 – ngày 5/3/1979 — nam sông Kỳ Cùng, sân bay Mai Pha và một phần thị xã",
+      "mo_ta": "Chiều 4/3/1979 đối phương chiếm khu vực nam sông Kỳ Cùng và sân bay Mai Pha; ngày 5/3/1979 chiếm một phần thị xã Lạng Sơn.",
+      "hien": [
+        "san-bay-mai-pha",
+        "thi-xa-lang-son",
+        "quan-tq-ls"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "5/3/1979 — Trung Quốc tuyên bố rút quân",
+      "mo_ta": "Ngày 5/3/1979, Trung Quốc tuyên bố rút quân; việc rút quân hoàn tất ngày 18/3/1979 trên toàn tuyến.",
+      "hien": [
+        "thi-xa-lang-son",
+        "co-rut-quan-ls"
+      ]
+    }
+  ],
+  "ket_qua": "Đồng Đăng và ngã ba Tam Lung là nơi chiến sự ác liệt nhất, giao tranh liên tục từ 17 đến 20/2/1979; chiều 4/3 địch chiếm khu vực nam sông Kỳ Cùng, sân bay Mai Pha và một phần thị xã Lạng Sơn ngày 5/3/1979, trước khi Trung Quốc tuyên bố rút quân.",
+  "y_nghia": "Đồng Đăng là cửa ngõ then chốt của hướng Lạng Sơn; việc giữ chốt và phản kích liên tục tại đây là một trong những điểm nóng nhất của toàn tuyến biên giới phía Bắc năm 1979.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Gặp mặt đoàn cựu chiến binh Hội 2/1979 mặt trận Lạng Sơn — Cổng TTĐT huyện Văn Lãng, Lạng Sơn — https://vanlang.langson.gov.vn/tin-tuc-su-kien/hoat-dong-cac-doan-the/van-lang-gap-mat-doan-cuu-chien-binh-hoi-2-1979-mat-tran-lang-son-tham-lai-chien-truong-nhan-dip-ky-niem-45-nam-chien-th.html"
+  ]
+}

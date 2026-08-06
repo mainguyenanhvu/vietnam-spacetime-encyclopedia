@@ -1,0 +1,235 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch phản kích MB84 (Vị Xuyên) 12/7/1984 — lô E. MỤC TỔN THẤT NẶNG, cần soát kỹ. Coi là mục T2 NHẠY CẢM theo tiền lệ ba mục cùng chủ đề đã xếp T2 trong docs/section9-sensitive.json — bản thân mục này chưa có tên riêng trong sổ. Nội dung bám sát mo_ta + ket_qua ĐÃ DUYỆT của mục cùng id trong public/data/overlays/chien-dich-tran-danh.json, không suy diễn thêm diễn biến ngoài nguồn. Giữ đúng cách gọi của nguồn nhà nước, không thêm lời bình đánh giá. Cần người soát §9 trước khi publish. trang_thai=draft. CHỖ NGUỒN VÊNH ĐÃ NÊU CẢ HAI trong bước 4, không chọn bản gọn hơn: mo_ta đã duyệt ghi mục tiêu là các điểm cao 772, 685, 233, 300, 400; ket_qua đã duyệt ghi 772, 233, 1030 và nêu đích danh ba sư đoàn 356, 316, 312. Con số «Sư đoàn 356 chịu tổn thất hơn 600 cán bộ, chiến sĩ hy sinh trong một ngày» lấy từ ket_qua đã duyệt và ghi kèm nguồn; nguồn nhà nước nói về chiến dịch này ở mức chi tiết khác nhau nên người soát cần cân nhắc giữ hay bỏ con số này.",
+  "id": "chien-dich-mb84-vi-xuyen-1984",
+  "ten": "Chiến dịch phản kích MB84 (Vị Xuyên)",
+  "nam": 1984,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Quân khu 2 — Thiếu tướng Hoàng Đan (chỉ đạo mặt trận)",
+  "doi_thu": "Quân đội Trung Quốc",
+  "dia_diem": "Vị Xuyên, Hà Giang (nay tỉnh Tuyên Quang)",
+  "lien_quan_tinh": [
+    "tuyen-quang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, không theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          70,
+          100
+        ],
+        [
+          420,
+          85
+        ],
+        [
+          760,
+          95
+        ],
+        [
+          940,
+          120
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          150,
+          220
+        ],
+        [
+          380,
+          195
+        ],
+        [
+          620,
+          205
+        ],
+        [
+          850,
+          225
+        ]
+      ],
+      "nhan": "Dãy núi đá vùng Thanh Thuỷ, Vị Xuyên"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cd-1509",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 270,
+      "nhan": "Điểm cao 1509"
+    },
+    {
+      "id": "cd-772",
+      "kieu": "dia-danh",
+      "x": 430,
+      "y": 270,
+      "nhan": "Điểm cao 772"
+    },
+    {
+      "id": "cd-685",
+      "kieu": "dia-danh",
+      "x": 660,
+      "y": 270,
+      "nhan": "Điểm cao 685"
+    },
+    {
+      "id": "cd-233-300-400",
+      "kieu": "dia-danh",
+      "x": 880,
+      "y": 270,
+      "nhan": "Các điểm cao 233, 300, 400, 1030"
+    },
+    {
+      "id": "quan-tq-vx",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 60,
+      "nhan": "Hoả lực phòng ngự và pháo binh bố trí kiên cố"
+    },
+    {
+      "id": "sd-356",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 180,
+      "y": 430,
+      "nhan": "Sư đoàn 356"
+    },
+    {
+      "id": "sd-316",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 430,
+      "y": 430,
+      "nhan": "Sư đoàn 316"
+    },
+    {
+      "id": "sd-312",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 680,
+      "y": 430,
+      "nhan": "Sư đoàn 312"
+    },
+    {
+      "id": "co-ton-that",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 880,
+      "y": 430,
+      "nhan": "Sư đoàn 356: hơn 600 cán bộ, chiến sĩ hy sinh trong một ngày (theo ket_qua đã duyệt)"
+    },
+    {
+      "id": "co-tai-chiem-685",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 880,
+      "y": 180,
+      "nhan": "10/1984 — Trung đoàn 153 giành lại điểm cao 685"
+    },
+    {
+      "id": "mui-mb84",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        430,
+        390
+      ],
+      "den": [
+        430,
+        320
+      ],
+      "nhan": "12/7/1984 — đồng loạt tiến công"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tháng 4 – 5/1984 — các đợt phản kích chưa khôi phục được các điểm chốt",
+      "mo_ta": "Sau các đợt phản kích tháng 4 và tháng 5/1984 không khôi phục được các điểm chốt bị chiếm giữ ở khu vực Vị Xuyên – Yên Minh, tình hình mặt trận vẫn bế tắc.",
+      "hien": [
+        "quan-tq-vx",
+        "cd-1509",
+        "cd-772",
+        "cd-685"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tháng 6/1984 — Quân khu 2 quyết định mở chiến dịch mật danh MB84",
+      "mo_ta": "Tháng 6/1984, Quân khu 2 quyết định mở chiến dịch tiến công quy mô lớn mang mật danh MB84 nhằm giành lại các cao điểm.",
+      "hien": [
+        "cd-772",
+        "cd-685",
+        "cd-233-300-400",
+        "quan-tq-vx"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Ngày 12/7/1984 — ba sư đoàn chủ lực đồng loạt tiến công",
+      "mo_ta": "Ngày 12/7/1984, ba sư đoàn chủ lực — theo kết quả đã duyệt là các Sư đoàn 356, 316, 312 — đồng loạt tiến công.",
+      "hien": [
+        "sd-356",
+        "sd-316",
+        "sd-312",
+        "mui-mb84"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Danh sách mục tiêu — hai nguồn nhà nước ghi khác nhau",
+      "mo_ta": "Hai mô tả đã duyệt trong kho dữ liệu ghi danh sách mục tiêu khác nhau và cả hai đều được giữ lại: một bản nêu các điểm cao 772, 685, 233, 300, 400; bản kia nêu 772, 233, 1030. Chưa có nguồn thứ ba để đối chiếu.",
+      "hien": [
+        "cd-772",
+        "cd-685",
+        "cd-233-300-400",
+        "cd-1509",
+        "sd-356"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Vấp phải hoả lực phòng ngự trên địa hình núi đá hiểm trở",
+      "mo_ta": "Các mũi tiến công vấp phải hoả lực phòng ngự và pháo binh đối phương bố trí kiên cố trên địa hình núi đá hiểm trở.",
+      "hien": [
+        "quan-tq-vx",
+        "cd-772",
+        "sd-356",
+        "sd-316"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tổn thất lớn ngay trong ngày mở màn",
+      "mo_ta": "Chiến dịch gây tổn thất lớn ngay trong ngày mở màn; riêng Sư đoàn 356 chịu tổn thất hơn 600 cán bộ, chiến sĩ hy sinh trong một ngày theo kết quả đã duyệt của mục này. Mức độ chi tiết về con số khác nhau giữa các nguồn nhà nước.",
+      "hien": [
+        "co-ton-that",
+        "sd-356",
+        "cd-772"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Tháng 10/1984 — Trung đoàn 153 giành lại điểm cao 685",
+      "mo_ta": "Đến tháng 10/1984, điểm cao 685 được Trung đoàn 153 giành lại và giữ vững. Mặt trận Vị Xuyên sau đó tiếp diễn dai dẳng đến năm 1989.",
+      "hien": [
+        "co-tai-chiem-685",
+        "cd-685"
+      ]
+    }
+  ],
+  "ket_qua": "Cuộc phản kích ngày 12/7/1984 với 3 sư đoàn (356, 316, 312) đánh chiếm lại các điểm cao không thành công, riêng Sư đoàn 356 chịu tổn thất hơn 600 cán bộ, chiến sĩ hy sinh trong một ngày (theo kết quả đã duyệt của mục này — các nguồn nhà nước nêu ở mức chi tiết khác nhau); đến tháng 10/1984 điểm cao 685 mới được Trung đoàn 153 giành lại và giữ vững dưới sự chỉ đạo của Thiếu tướng Hoàng Đan.",
+  "y_nghia": "MB84 là chiến dịch phản kích quy mô lớn nhất của mặt trận Vị Xuyên; mặt trận này sau đó kéo dài đến 1989, là một trong những mặt trận ác liệt và dai dẳng nhất của cuộc chiến đấu bảo vệ biên giới phía Bắc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tháng Bảy ở Vị Xuyên — Đài Tiếng nói Việt Nam — https://vov.gov.vn/thang-bay-o-vi-xuyen-dtnew-288922"
+  ]
+}
