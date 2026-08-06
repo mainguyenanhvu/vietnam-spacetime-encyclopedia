@@ -43,6 +43,27 @@
   --sd-doi-vien: var(--tin-chu);
 }
 
+/* Hai ca đo được DƯỚI ngưỡng 4,5:1 của WCAG 1.4.3 khi chữ đè nền bờ/sông —
+   đo bằng cách đọc token thẳng từ theme.css chứ không chép tay hex:
+     trẻ em · ngoại xâm    --dung-chu #15803d → 4,38:1 bờ / 4,11:1 sông
+     người lớn · nội chiến --nhan     #b3791f → 3,33:1 bờ / 3,23:1 sông
+   Chỉ đè ĐÚNG hai ca đó, không đổi token gốc: --dung-chu còn dùng cho
+   quiz/olympia và --nhan cho badge, cả hai trên nền sáng hơn nên vẫn đạt.
+   Hai tổ hợp còn lại (người lớn · ngoại xâm 5,06/4,91 — trẻ em · nội chiến
+   4,97/4,67) đã đạt, để nguyên.
+   Halo ở .sd-caption giữ nguyên nhưng nay chỉ là lớp phụ: công thức tương phản
+   phẳng KHÔNG mô hình hoá được halo, nên lấy halo làm bằng chứng đạt ngưỡng là
+   sai — đợt trước đã mắc đúng lỗi đó.
+   Quy tắc cascade ở đây: quy tắc nội chiến bên trên đặt biến trên .sd-detail
+   nên thắng :root cho chế độ trẻ em; còn ca người lớn · nội chiến phải nâng
+   riêng độ đặc hiệu mới đè được nó. */
+:root[data-che-do="tre-em"] {
+  --sd-ta-chu: var(--sd-ta-chu-ngoai-xam);
+}
+:root[data-che-do="nguoi-lon"] .sd-detail[data-xung-dot="noi-chien"] {
+  --sd-ta-chu: var(--sd-ta-chu-noi-chien);
+}
+
 /* ── Màn A — danh sách 168 trận ────────────────────────────────────────── */
 
 .sd-index-title {

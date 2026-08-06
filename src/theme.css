@@ -136,6 +136,12 @@
   --luu-nen: #fef3c7;
   --luu-chu: #92400e;
 
+  /* Chữ phe "ta" của sa đồ ở chế độ NỘI CHIẾN. --nhan (#b3791f) chỉ đạt
+     3,33:1 trên nền bờ và 3,23:1 trên nền sông — đủ 3:1 cho hình khối nhưng
+     hỏng 4,5:1 của WCAG 1.4.3 cho chữ. Không hạ tối --nhan vì nó còn dùng cho
+     badge và nhãn trên nền sáng hơn. Bản này đo 6,37:1 / 6,18:1. */
+  --sd-ta-chu-noi-chien: #92400e;
+
   /* Vòng focus bàn phím. Không dùng --nhan-sang: nó chỉ đạt ~2,3:1 trên nền
      sáng, trượt ngưỡng 3:1 của WCAG 1.4.11. Giá trị này đo được 3,45–3,70:1. */
   --focus: #b3791f;
@@ -221,6 +227,12 @@
   --tin-chu: #1d4ed8;
   --luu-nen: #fef9c3;
   --luu-chu: #a16207;
+
+  /* Chữ phe "ta" của sa đồ ở chế độ NGOẠI XÂM. --dung-chu (#15803d) chỉ đạt
+     4,38:1 trên nền bờ và 4,11:1 trên nền sông — hỏng 4,5:1 của WCAG 1.4.3.
+     Không hạ tối --dung-chu vì quiz/olympia dùng nó trên nền --dung-nen sáng
+     hơn hẳn. Bản này giữ đúng sắc xanh lá, đo 6,22:1 / 5,84:1. */
+  --sd-ta-chu-ngoai-xam: #166534;
 
   /* Tím đậm trên nền sáng — đo được trên 4,5:1, không dùng tím nhạt */
   --focus: #6d28d9;
