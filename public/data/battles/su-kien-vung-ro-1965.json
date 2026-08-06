@@ -1,0 +1,147 @@
+{
+  "ghi_chu": "Sa đồ Sự kiện Vũng Rô (tàu 143) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "su-kien-vung-ro-1965",
+  "ten": "Sự kiện Vũng Rô (tàu 143)",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đoàn 125 Hải quân (tàu 143)",
+  "doi_thu": "Không quân trinh sát, hải quân Mỹ – Sài Gòn",
+  "dia_diem": "Vũng Rô, Đông Hòa (Phú Yên cũ, nay Đắk Lắk)",
+  "lien_quan_tinh": [
+    "dak-lak"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          40,
+          480
+        ],
+        [
+          500,
+          530
+        ],
+        [
+          960,
+          480
+        ]
+      ],
+      "nhan": "Vùng biển Vũng Rô"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cang-lo-dieu",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 200,
+      "nhan": "Cảng Lộ Diêu, Bình Định (điểm đến dự kiến ban đầu)"
+    },
+    {
+      "id": "tau-143",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 480,
+      "y": 300,
+      "nhan": "Tàu 143, Đoàn 125 Hải quân"
+    },
+    {
+      "id": "vung-ro",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 460,
+      "nhan": "Vũng Rô, Phú Yên (bến chuyển hướng)"
+    },
+    {
+      "id": "do-hang-63-tan",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 460,
+      "nhan": "Đêm 16/2/1965: dỡ hàng xong 63 tấn vũ khí"
+    },
+    {
+      "id": "may-bay-trinh-sat-my",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 200,
+      "nhan": "17/2/1965: máy bay trinh sát Mỹ phát hiện vị trí đá lộ bất thường"
+    },
+    {
+      "id": "buoc-doi-phuong-thuc",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 800,
+      "y": 460,
+      "nhan": "Buộc chuyển phương thức: du kích, bí mật, tự lực, linh hoạt"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Kế hoạch: cập cảng Lộ Diêu",
+      "mo_ta": "Theo kế hoạch, tàu 143 của Đoàn 125 Hải quân chở 63 tấn vũ khí dự kiến vào cảng Lộ Diêu (Bình Định).",
+      "hien": [
+        "cang-lo-dieu",
+        "tau-143"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chuyển hướng cập bến Vũng Rô",
+      "mo_ta": "Nhưng được lệnh chuyển hướng cập bến Vũng Rô (Phú Yên).",
+      "hien": [
+        "tau-143",
+        "vung-ro"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đêm 16/2/1965: dỡ hàng xong",
+      "mo_ta": "Sau khi dỡ hàng xong, tàu bị hỏng tời neo phải nằm lại nguỵ trang chờ sửa chữa.",
+      "hien": [
+        "vung-ro",
+        "do-hang-63-tan",
+        "tau-143"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "17/2/1965: máy bay trinh sát Mỹ phát hiện",
+      "mo_ta": "Bị máy bay trinh sát Mỹ phát hiện vị trí đá lộ bất thường trên vách núi.",
+      "hien": [
+        "vung-ro",
+        "tau-143",
+        "may-bay-trinh-sat-my"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tuyến vận chuyển không còn giữ được bí mật tuyệt đối",
+      "mo_ta": "Sau sự kiện Vũng Rô, tuyến \"Đường Hồ Chí Minh trên biển\" không còn giữ được bí mật tuyệt đối như trước.",
+      "hien": [
+        "vung-ro",
+        "may-bay-trinh-sat-my"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Buộc chuyển đổi phương thức vận chuyển",
+      "mo_ta": "Buộc phương thức vận chuyển phải chuyển sang du kích, bí mật cao độ, tự lực trên biển, nguỵ trang, linh hoạt hơn nhiều.",
+      "hien": [
+        "vung-ro",
+        "buoc-doi-phuong-thuc"
+      ]
+    }
+  ],
+  "ket_qua": "Tàu 143 dỡ xong 63 tấn vũ khí tại Vũng Rô đêm 16/2/1965 nhưng bị máy bay trinh sát Mỹ phát hiện ngày 17/2/1965.",
+  "y_nghia": "Buộc tuyến \"Đường Hồ Chí Minh trên biển\" chuyển sang phương thức vận chuyển du kích, bí mật cao độ, tự lực, nguỵ trang, linh hoạt hơn nhiều.",
+  "ghi_chu_bien_tap": "Sự kiện có nhiều dị bản chi tiết về thời điểm và cách thức bị phát hiện (đã lưu ý theo yêu cầu team lead); ở đây thuật lại theo đúng nguồn Báo Hải quân Việt Nam đã dẫn, không bổ sung chi tiết từ nguồn khác.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Vũng Rô - Huyền thoại ngày ấy, bây giờ — Báo Hải quân Việt Nam — https://baohaiquanvietnam.vn/tin-tuc/vung-ro-huyen-thoai-ngay-ay-bay-gio"
+  ]
+}

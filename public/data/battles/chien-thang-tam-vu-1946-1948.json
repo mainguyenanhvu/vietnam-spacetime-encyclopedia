@@ -1,0 +1,136 @@
+{
+  "ghi_chu": "Sa đồ Chiến thắng Tầm Vu (I – IV) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-thang-tam-vu-1946-1948",
+  "ten": "Chiến thắng Tầm Vu (I – IV)",
+  "nam": 1946,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Cầu Tầm Vu, xã Thạnh Xuân, huyện Châu Thành A (Hậu Giang cũ, nay TP Cần Thơ)",
+  "lien_quan_tinh": [
+    "can-tho"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          150
+        ],
+        [
+          500,
+          200
+        ],
+        [
+          900,
+          180
+        ]
+      ],
+      "nhan": "Lộ qua cầu Tầm Vu"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cau-tam-vu",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 300,
+      "nhan": "Cầu Tầm Vu, xã Thạnh Xuân"
+    },
+    {
+      "id": "doan-xe-phap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 160,
+      "nhan": "Đoàn xe, đoàn hộ tống Pháp"
+    },
+    {
+      "id": "llvt-khu9",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 480,
+      "nhan": "Lực lượng vũ trang Khu 9"
+    },
+    {
+      "id": "phuc-kich-chung",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        220,
+        460
+      ],
+      "den": [
+        650,
+        220
+      ],
+      "nhan": "4 trận phục kích liên tiếp (1946–1948)"
+    },
+    {
+      "id": "thu-phao-105",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 820,
+      "y": 300,
+      "nhan": "Tầm Vu IV (4/1948): thu pháo 105mm nguyên vẹn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Cầu Tầm Vu — tuyến giao thông của Pháp",
+      "mo_ta": "Khu vực cầu Tầm Vu, xã Thạnh Xuân, huyện Châu Thành A, cách Cần Thơ khoảng 17km.",
+      "hien": [
+        "cau-tam-vu"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tầm Vu I (1946): trận phục kích mở đầu",
+      "mo_ta": "Lực lượng vũ trang Khu 9 tổ chức phục kích đoàn xe, đoàn hộ tống của Pháp di chuyển trên lộ.",
+      "hien": [
+        "cau-tam-vu",
+        "doan-xe-phap",
+        "llvt-khu9"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tầm Vu II – III (1947): tiếp tục phục kích",
+      "mo_ta": "Các trận phục kích tiếp theo nhằm vào đoàn xe, đoàn hộ tống Pháp, gây tổn thất nặng cả về sinh lực và trang bị.",
+      "hien": [
+        "cau-tam-vu",
+        "doan-xe-phap",
+        "phuc-kich-chung"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tầm Vu IV (4/1948): trận lớn nhất",
+      "mo_ta": "Trận đánh đặc biệt quan trọng khi lần đầu tiên quân ta thu được một khẩu pháo 105mm còn nguyên vẹn của Pháp.",
+      "hien": [
+        "cau-tam-vu",
+        "phuc-kich-chung",
+        "thu-phao-105"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Kết quả",
+      "mo_ta": "4 trận phục kích lớn tại Tầm Vu gây tổn thất nặng cho quân Pháp trong những năm đầu kháng chiến chống Pháp ở Khu 9.",
+      "hien": [
+        "cau-tam-vu",
+        "thu-phao-105"
+      ]
+    }
+  ],
+  "ket_qua": "4 trận phục kích (Tầm Vu I–IV) gây tổn thất nặng về sinh lực và trang bị cho quân Pháp; Tầm Vu IV (4/1948) lần đầu thu được một khẩu pháo 105mm còn nguyên vẹn.",
+  "y_nghia": "Một trong những cụm chiến thắng tiêu biểu của lực lượng vũ trang Khu 9 trong những năm đầu kháng chiến chống Pháp ở Nam Bộ; nay là di tích lịch sử.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Di tích lịch sử chiến thắng Tầm Vu — https://haugiang.gov.vn/en/chi-tiet1/-/tin-tuc/Di-tich-lich-su--chien-thang-Tam-Vu50034"
+  ]
+}

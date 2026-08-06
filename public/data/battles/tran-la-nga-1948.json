@@ -1,0 +1,152 @@
+{
+  "ghi_chu": "Sa đồ Trận La Ngà — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-la-nga-1948",
+  "ten": "Trận La Ngà",
+  "nam": 1948,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chi đội 10",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Quốc lộ 20, đoạn Phú Ngọc – Ngọc Định – Định Quán (Đồng Nai)",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          150,
+          80
+        ],
+        [
+          500,
+          250
+        ],
+        [
+          850,
+          500
+        ]
+      ],
+      "nhan": "Quốc lộ 20, km104–km113"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          500,
+          450
+        ],
+        [
+          900,
+          350
+        ]
+      ],
+      "nhan": "Địa hình rừng núi hiểm trở"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "km104-113",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 280,
+      "nhan": "QL20 km104–km113 (Phú Ngọc – Ngọc Định – Định Quán)"
+    },
+    {
+      "id": "chi-doi-10",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 450,
+      "nhan": "Chi đội 10 và LLVT Đồng Nai"
+    },
+    {
+      "id": "doan-xe-phap-20",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Đoàn xe quân sự Pháp"
+    },
+    {
+      "id": "phuc-kich-chia-cat",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        230,
+        430
+      ],
+      "den": [
+        650,
+        200
+      ],
+      "nhan": "Phục kích, đánh chia cắt"
+    },
+    {
+      "id": "thang-loi-la-nga",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 830,
+      "y": 420,
+      "nhan": "Tiêu diệt gọn đoàn xe địch"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Địa bàn QL20 rừng núi hiểm trở",
+      "mo_ta": "Đoạn Quốc lộ 20 từ km104 đến km113 thuộc các xã Phú Ngọc, Ngọc Định và thị trấn Định Quán, địa hình rừng núi hiểm trở.",
+      "hien": [
+        "km104-113"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bố trí trận địa phục kích",
+      "mo_ta": "Chi đội 10 cùng lực lượng vũ trang Đồng Nai tổ chức phục kích giao thông, bố trí trận địa công phu.",
+      "hien": [
+        "km104-113",
+        "chi-doi-10"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "1/3/1948: đoàn xe Pháp lọt trận địa",
+      "mo_ta": "Đoàn xe quân sự Pháp lọt vào trận địa phục kích được bố trí công phu trên địa hình rừng núi hiểm trở.",
+      "hien": [
+        "km104-113",
+        "doan-xe-phap-20"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đánh chia cắt, tiêu diệt gọn",
+      "mo_ta": "Đoàn xe địch bị đánh chia cắt và tiêu diệt gọn.",
+      "hien": [
+        "km104-113",
+        "phuc-kich-chia-cat",
+        "doan-xe-phap-20"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Trận phục kích tiêu biểu Nam Bộ",
+      "mo_ta": "Chiến thắng La Ngà là một trong những trận phục kích tiêu biểu nhất trên chiến trường Nam Bộ thời kỳ đầu kháng chiến chống Pháp.",
+      "hien": [
+        "km104-113",
+        "thang-loi-la-nga"
+      ]
+    }
+  ],
+  "ket_qua": "Đoàn xe quân sự Pháp bị đánh chia cắt và tiêu diệt gọn trên Quốc lộ 20.",
+  "y_nghia": "Một trong những trận phục kích tiêu biểu nhất trên chiến trường Nam Bộ thời kỳ đầu kháng chiến chống Pháp.",
+  "trang_thai": "draft",
+  "nguon": [
+    "La Ngà - trận phục kích xuất sắc trên chiến trường Nam Bộ — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/la-nga-tran-phuc-kich-xuat-sac-tren-chien-truong-nam-bo-438222"
+  ]
+}

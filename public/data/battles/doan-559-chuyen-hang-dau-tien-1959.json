@@ -1,0 +1,152 @@
+{
+  "ghi_chu": "Sa đồ Đoàn 559 và chuyến hàng đầu tiên vượt Trường Sơn — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "doan-559-chuyen-hang-dau-tien-1959",
+  "ten": "Đoàn 559 và chuyến hàng đầu tiên vượt Trường Sơn",
+  "nam": 1959,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đoàn 559",
+  "doi_thu": "",
+  "dia_diem": "Khe Hó, Vĩnh Linh (Quảng Trị) — điểm xuất phát; giao hàng tại Tà Riệp, Liên khu 5",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          80,
+          80
+        ],
+        [
+          500,
+          40
+        ],
+        [
+          920,
+          90
+        ]
+      ],
+      "nhan": "Dãy Trường Sơn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "khe-ho",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 300,
+      "nhan": "Khe Hó, Vĩnh Linh (điểm xuất phát)"
+    },
+    {
+      "id": "to-trinh-sat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 460,
+      "nhan": "Tổ trinh sát mở tuyến"
+    },
+    {
+      "id": "pa-lin",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 200,
+      "nhan": "Trạm cuối Pa Lin"
+    },
+    {
+      "id": "phat-trien-tuyen",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        200,
+        440
+      ],
+      "den": [
+        450,
+        230
+      ],
+      "nhan": "Phát triển tuyến hướng tây nam"
+    },
+    {
+      "id": "ta-riep",
+      "kieu": "dia-danh",
+      "x": 820,
+      "y": 300,
+      "nhan": "Tà Riệp, Liên khu 5 (nơi giao hàng)"
+    },
+    {
+      "id": "giao-hang-thanh-cong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 820,
+      "y": 460,
+      "nhan": "20/8/1959: giao hàng an toàn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "19/5/1959: giao nhiệm vụ mở đường chi viện chiến lược",
+      "mo_ta": "Bộ Chính trị và Tổng Quân uỷ giao nhiệm vụ mở đường chi viện chiến lược cho chiến trường miền Nam; ngày này trở thành ngày truyền thống của Đoàn 559 – Bộ đội Trường Sơn.",
+      "hien": [
+        "khe-ho"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đầu 6/1959: tổ trinh sát mở tuyến từ Khe Hó",
+      "mo_ta": "Đoàn 559 tổ chức tổ trinh sát mở tuyến từ Khe Hó (thung lũng tây nam Vĩnh Linh).",
+      "hien": [
+        "khe-ho",
+        "to-trinh-sat"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phát triển tuyến về hướng tây nam",
+      "mo_ta": "Phát triển về hướng tây nam, trạm cuối tại Pa Lin.",
+      "hien": [
+        "khe-ho",
+        "pa-lin",
+        "phat-trien-tuyen"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "13/8/1959: chuyến hàng đầu tiên vượt Trường Sơn",
+      "mo_ta": "Chuyến hàng đầu tiên chính thức vượt Trường Sơn.",
+      "hien": [
+        "khe-ho",
+        "pa-lin",
+        "phat-trien-tuyen"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "20/8/1959: giao hàng an toàn tại Tà Riệp",
+      "mo_ta": "Giao hàng an toàn tại Tà Riệp.",
+      "hien": [
+        "ta-riep",
+        "giao-hang-thanh-cong"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Mở đầu hệ thống hậu cần chiến lược",
+      "mo_ta": "Mở đầu cho hệ thống hậu cần chiến lược sau này gắn liền với đường ống xăng dầu Trường Sơn và trọng điểm ATP (đã có mục riêng trong hệ thống dữ liệu).",
+      "hien": [
+        "khe-ho",
+        "ta-riep",
+        "giao-hang-thanh-cong"
+      ]
+    }
+  ],
+  "ket_qua": "Chuyến hàng đầu tiên vượt Trường Sơn xuất phát từ Khe Hó ngày 13/8/1959, giao hàng an toàn tại Tà Riệp ngày 20/8/1959.",
+  "y_nghia": "Mở đầu cho hệ thống hậu cần chiến lược Đường Hồ Chí Minh, gắn liền với đường ống xăng dầu Trường Sơn về sau.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Ngày 19-5-1959: Thành lập Đoàn 559 Bộ đội Trường Sơn - Đường Hồ Chí Minh — Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19219/ngay-19-5-1959-thanh-lap-djoan-559-bo-djoi-truong-son-djuong-ho-chi-minh.html",
+    "Địa điểm xuất phát của đường dây 559 — Báo Quân đội nhân dân — https://www.qdnd.vn/xa-hoi/chinh-sach/dia-diem-xuat-phat-cua-duong-day-559-574425"
+  ]
+}

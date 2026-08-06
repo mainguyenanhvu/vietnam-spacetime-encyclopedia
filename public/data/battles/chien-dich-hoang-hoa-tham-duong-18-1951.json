@@ -1,0 +1,122 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Hoàng Hoa Thám (Chiến dịch Đường 18) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-hoang-hoa-tham-duong-18-1951",
+  "ten": "Chiến dịch Hoàng Hoa Thám (Chiến dịch Đường 18)",
+  "nam": 1951,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Đường số 18, đoạn Phả Lại – Uông Bí (nay Hải Phòng – Quảng Ninh)",
+  "lien_quan_tinh": [
+    "hai-phong",
+    "quang-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          150,
+          300
+        ],
+        [
+          500,
+          280
+        ],
+        [
+          850,
+          320
+        ]
+      ],
+      "nhan": "Đường số 18, đoạn Phả Lại – Uông Bí"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "pha-lai",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 300,
+      "nhan": "Phả Lại"
+    },
+    {
+      "id": "uong-bi",
+      "kieu": "dia-danh",
+      "x": 850,
+      "y": 320,
+      "nhan": "Uông Bí"
+    },
+    {
+      "id": "7-trung-doan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 480,
+      "nhan": "7 trung đoàn: Đại đoàn 308, 312, Trung đoàn 98, 174 + pháo binh, công binh"
+    },
+    {
+      "id": "dai-doan-304-320",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 120,
+      "nhan": "Đại đoàn 304, 320 hoạt động du kích phối hợp"
+    },
+    {
+      "id": "tuyen-phong-ngu-phap-18",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 480,
+      "nhan": "Tuyến phòng ngự Đường 18 của Pháp"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "3/1951: chủ trương mở chiến dịch",
+      "mo_ta": "Thực hiện quyết định của Hội nghị Trung ương lần thứ nhất (khoá II, 3/1951).",
+      "hien": [
+        "pha-lai",
+        "uong-bi"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "23/3–7/4/1951: tiến công tuyến Phả Lại – Uông Bí",
+      "mo_ta": "Ta huy động 7 trung đoàn (Đại đoàn 308, 312, Trung đoàn 98, 174, cùng pháo binh, công binh) tiến công tuyến phòng ngự Đường 18 đoạn Phả Lại – Uông Bí.",
+      "hien": [
+        "pha-lai",
+        "uong-bi",
+        "7-trung-doan",
+        "tuyen-phong-ngu-phap-18"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đại đoàn 304, 320 phối hợp du kích",
+      "mo_ta": "Đồng thời dùng Đại đoàn 304, 320 hoạt động du kích ở trung du, đồng bằng để phối hợp.",
+      "hien": [
+        "pha-lai",
+        "uong-bi",
+        "dai-doan-304-320"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mục tiêu chiến dịch",
+      "mo_ta": "Mục tiêu là tiêu diệt sinh lực địch, phá kế hoạch bình định, đẩy mạnh chiến tranh du kích ở vùng mỏ Đông Bắc.",
+      "hien": [
+        "uong-bi",
+        "7-trung-doan"
+      ]
+    }
+  ],
+  "ket_qua": "Tiến công tuyến phòng ngự Đường 18 đoạn Phả Lại – Uông Bí với 7 trung đoàn, phối hợp Đại đoàn 304, 320 hoạt động du kích ở trung du, đồng bằng.",
+  "y_nghia": "Nhằm tiêu diệt sinh lực địch, phá kế hoạch bình định, đẩy mạnh chiến tranh du kích ở vùng mỏ Đông Bắc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Mở liên tiếp ba chiến dịch vào trung du và Đồng bằng Bắc Bộ — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/mo-lien-tiep-ba-chien-dich-vao-trung-du-va-dong-bang-bac-bo-261492"
+  ]
+}

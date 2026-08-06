@@ -1,8 +1,8 @@
 {
   "sinh_luc": {
-    "tong_muc": 5253,
+    "tong_muc": 5279,
     "tong_co_toa_do": 2583,
-    "so_nhom_trung_ten": 735,
+    "so_nhom_trung_ten": 761,
     "so_cap_trung_toa_do": 678,
     "ngay_sinh": "2026-08-06"
   },
@@ -112,6 +112,32 @@
       "trang_thai": "draft"
     },
     {
+      "id": "bao-ve-cau-long-bien-1965-1972",
+      "slug": null,
+      "ten": "Bảo vệ cầu Long Biên trước chiến tranh phá hoại",
+      "ten_chuan": "bao ve cau long bien truoc chien tranh pha hoai",
+      "file": "battles/bao-ve-cau-long-bien-1965-1972.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-ve-cau-song-thuong-bac-giang",
+      "slug": null,
+      "ten": "Bảo vệ cầu Sông Thương (Bắc Giang)",
+      "ten_chuan": "bao ve cau song thuong bac giang",
+      "file": "battles/bao-ve-cau-song-thuong-bac-giang.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
       "id": "bien-gioi-phia-bac-1979",
       "slug": null,
       "ten": "Chiến tranh bảo vệ biên giới phía Bắc 1979",
@@ -143,6 +169,19 @@
       "ten": "Biệt động Sài Gòn đánh Đại sứ quán Mỹ (Mậu Thân 1968)",
       "ten_chuan": "biet dong sai gon danh dai su quan my mau than 1968",
       "file": "battles/biet-dong-sai-gon-dai-su-quan-my-1968.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "biet-dong-sai-gon-khach-san-caravelle-1964",
+      "slug": null,
+      "ten": "Biệt động Sài Gòn đánh khách sạn Caravelle",
+      "ten_chuan": "biet dong sai gon danh khach san caravelle",
+      "file": "battles/biet-dong-sai-gon-khach-san-caravelle-1964.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -320,6 +359,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "chien-dich-bau-bang-dau-tieng-1965",
+      "slug": null,
+      "ten": "Chiến dịch Bàu Bàng – Dầu Tiếng",
+      "ten_chuan": "chien dich bau bang dau tieng",
+      "file": "battles/chien-dich-bau-bang-dau-tieng-1965.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "chien-dich-bien-gioi-thu-dong-1950",
       "slug": null,
       "ten": "Chiến dịch Biên giới Thu Đông 1950",
@@ -385,6 +437,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "chien-dich-hoang-hoa-tham-duong-18-1951",
+      "slug": null,
+      "ten": "Chiến dịch Hoàng Hoa Thám (Chiến dịch Đường 18)",
+      "ten_chuan": "chien dich hoang hoa tham chien dich duong 18",
+      "file": "battles/chien-dich-hoang-hoa-tham-duong-18-1951.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "chien-dich-plei-me-ia-drang-1965",
       "slug": null,
       "ten": "Chiến dịch Plei Me – Ia Đrăng",
@@ -398,6 +463,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "chien-dich-quang-trung-ha-nam-ninh-1951",
+      "slug": null,
+      "ten": "Chiến dịch Quang Trung (Chiến dịch Hà Nam Ninh)",
+      "ten_chuan": "chien dich quang trung chien dich ha nam ninh",
+      "file": "battles/chien-dich-quang-trung-ha-nam-ninh-1951.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "chien-dich-thuong-lao-1953",
       "slug": null,
       "ten": "Chiến dịch Thượng Lào 1953",
@@ -408,6 +486,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-dich-tran-hung-dao-trung-du-1950",
+      "slug": null,
+      "ten": "Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du)",
+      "ten_chuan": "chien dich tran hung dao chien dich trung du",
+      "file": "battles/chien-dich-tran-hung-dao-trung-du-1950.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
       "trang_thai": "draft"
     },
     {
@@ -437,6 +528,58 @@
       "trang_thai": "draft"
     },
     {
+      "id": "chien-thang-ba-gia-1965",
+      "slug": null,
+      "ten": "Chiến thắng Ba Gia",
+      "ten_chuan": "chien thang ba gia",
+      "file": "battles/chien-thang-ba-gia-1965.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-thang-deo-bong-lau-1949",
+      "slug": null,
+      "ten": "Chiến thắng Đèo Bông Lau",
+      "ten_chuan": "chien thang deo bong lau",
+      "file": "battles/chien-thang-deo-bong-lau-1949.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-thang-song-lo-doan-hung-1947",
+      "slug": null,
+      "ten": "Chiến thắng Sông Lô – Đoan Hùng",
+      "ten_chuan": "chien thang song lo doan hung",
+      "file": "battles/chien-thang-song-lo-doan-hung-1947.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-thang-tam-vu-1946-1948",
+      "slug": null,
+      "ten": "Chiến thắng Tầm Vu (I – IV)",
+      "ten_chuan": "chien thang tam vu i iv",
+      "file": "battles/chien-thang-tam-vu-1946-1948.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "chien-thang-tran-dau-hai-quan-1964",
       "slug": null,
       "ten": "Chiến thắng trận đầu của Hải quân nhân dân Việt Nam",
@@ -447,6 +590,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chien-thang-tran-dau-khong-quan-ham-rong-1965",
+      "slug": null,
+      "ten": "Chiến thắng trận đầu của Không quân nhân dân Việt Nam (Hàm Rồng)",
+      "ten_chuan": "chien thang tran dau cua khong quan nhan dan viet nam ham rong",
+      "file": "battles/chien-thang-tran-dau-khong-quan-ham-rong-1965.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
       "trang_thai": "draft"
     },
     {
@@ -528,6 +684,45 @@
       "trang_thai": "draft"
     },
     {
+      "id": "dao-bach-long-vi-chien-dau-bao-ve",
+      "slug": null,
+      "ten": "Đảo Bạch Long Vĩ chiến đấu bảo vệ",
+      "ten_chuan": "dao bach long vi chien dau bao ve",
+      "file": "battles/dao-bach-long-vi-chien-dau-bao-ve.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dao-con-co-1959-1973",
+      "slug": null,
+      "ten": "Đảo Cồn Cỏ chiến đấu bảo vệ vùng biển, vùng trời",
+      "ten_chuan": "dao con co chien dau bao ve vung bien vung troi",
+      "file": "battles/dao-con-co-1959-1973.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dao-hon-me-chien-dau-bao-ve",
+      "slug": null,
+      "ten": "Đảo Hòn Mê chiến đấu bảo vệ",
+      "ten_chuan": "dao hon me chien dau bao ve",
+      "file": "battles/dao-hon-me-chien-dau-bao-ve.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "dien-bien-phu-1954",
       "slug": null,
       "ten": "Chiến dịch Điện Biên Phủ 1954",
@@ -551,6 +746,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "doan-559-chuyen-hang-dau-tien-1959",
+      "slug": null,
+      "ten": "Đoàn 559 và chuyến hàng đầu tiên vượt Trường Sơn",
+      "ten_chuan": "doan 559 va chuyen hang dau tien vuot truong son",
+      "file": "battles/doan-559-chuyen-hang-dau-tien-1959.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -1412,6 +1620,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "su-kien-vung-ro-1965",
+      "slug": null,
+      "ten": "Sự kiện Vũng Rô (tàu 143)",
+      "ten_chuan": "su kien vung ro tau 143",
+      "file": "battles/su-kien-vung-ro-1965.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "tay-bac-1952",
       "slug": null,
       "ten": "Chiến dịch Tây Bắc 1952",
@@ -1474,6 +1695,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tieng-sam-duong-5",
+      "slug": null,
+      "ten": "\"Tiếng sấm đường 5\" – đánh giao thông chống Pháp",
+      "ten_chuan": "tieng sam duong 5 danh giao thong chong phap",
+      "file": "battles/tieng-sam-duong-5.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
       "trang_thai": "draft"
     },
     {
@@ -1594,6 +1828,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "tran-dau-su-doan-320-1951",
+      "slug": null,
+      "ten": "Trận đầu của Đại đoàn Đồng Bằng (Sư đoàn 320)",
+      "ten_chuan": "tran dau cua dai doan dong bang su doan 320",
+      "file": "battles/tran-dau-su-doan-320-1951.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "tran-do-ban-1377",
       "slug": null,
       "ten": "Trận Đồ Bàn (1377) — vua Trần Duệ Tông tử trận",
@@ -1633,6 +1880,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "tran-la-nga-1948",
+      "slug": null,
+      "ten": "Trận La Ngà",
+      "ten_chuan": "tran la nga",
+      "file": "battles/tran-la-nga-1948.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "tran-lang-vay-1968",
       "slug": null,
       "ten": "Trận Làng Vây",
@@ -1643,6 +1903,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-moc-hoa-1948",
+      "slug": null,
+      "ten": "Trận Mộc Hóa",
+      "ten_chuan": "tran moc hoa",
+      "file": "battles/tran-moc-hoa-1948.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
       "trang_thai": "draft"
     },
     {
@@ -1750,6 +2023,19 @@
       "trang_thai": "draft"
     },
     {
+      "id": "tran-thanh-huong-my-xuyen-1951",
+      "slug": null,
+      "ten": "Trận Thanh Hương – Mỹ Xuyên (ngày truyền thống Sư đoàn 325)",
+      "ten_chuan": "tran thanh huong my xuyen ngay truyen thong su doan 325",
+      "file": "battles/tran-thanh-huong-my-xuyen-1951.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "tran-thi-nai-1792",
       "slug": null,
       "ten": "Nguyễn Ánh đánh phá thủy quân Tây Sơn tại Thị Nại lần thứ nhất (1792)",
@@ -1776,6 +2062,32 @@
       "trang_thai": "draft"
     },
     {
+      "id": "tran-thuan-ninh-1965",
+      "slug": null,
+      "ten": "Trận Thuận Ninh (trận đầu của Sư đoàn 3 Sao Vàng)",
+      "ten_chuan": "tran thuan ninh tran dau cua su doan 3 sao vang",
+      "file": "battles/tran-thuan-ninh-1965.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-tua-hai-1960",
+      "slug": null,
+      "ten": "Trận Tua Hai",
+      "ten_chuan": "tran tua hai",
+      "file": "battles/tran-tua-hai-1960.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "tran-van-tuong-1965",
       "slug": null,
       "ten": "Trận Vạn Tường",
@@ -1786,6 +2098,19 @@
       "lat": null,
       "lon": null,
       "so_nguon": 3,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-xuan-trach-1950",
+      "slug": null,
+      "ten": "Trận Xuân Trạch (trận đầu của Đại đoàn 312)",
+      "ten_chuan": "tran xuan trach tran dau cua dai doan 312",
+      "file": "battles/tran-xuan-trach-1950.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
       "trang_thai": "draft"
     },
     {
@@ -1820,6 +2145,19 @@
       "ten": "Trịnh Sâm chiếm Phú Xuân (1774)",
       "ten_chuan": "trinh sam chiem phu xuan 1774",
       "file": "battles/trinh-sam-chiem-phu-xuan-1774.json",
+      "mien": "battles",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "trung-doi-nu-du-kich-cu-chi-1965",
+      "slug": null,
+      "ten": "Trung đội nữ du kích Củ Chi",
+      "ten_chuan": "trung doi nu du kich cu chi",
+      "file": "battles/trung-doi-nu-du-kich-cu-chi-1965.json",
       "mien": "battles",
       "loai": null,
       "lat": null,
@@ -70821,6 +71159,46 @@
       ]
     },
     {
+      "ten_chuan": "bao ve cau long bien truoc chien tranh pha hoai",
+      "so_file": 2,
+      "files": [
+        "battles/bao-ve-cau-long-bien-1965-1972.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/bao-ve-cau-long-bien-1965-1972.json",
+          "id": "bao-ve-cau-long-bien-1965-1972",
+          "ten": "Bảo vệ cầu Long Biên trước chiến tranh phá hoại"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bao-ve-cau-long-bien-1965-1972",
+          "ten": "Bảo vệ cầu Long Biên trước chiến tranh phá hoại"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "bao ve cau song thuong bac giang",
+      "so_file": 2,
+      "files": [
+        "battles/bao-ve-cau-song-thuong-bac-giang.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/bao-ve-cau-song-thuong-bac-giang.json",
+          "id": "bao-ve-cau-song-thuong-bac-giang",
+          "ten": "Bảo vệ cầu Sông Thương (Bắc Giang)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "bao-ve-cau-song-thuong-bac-giang",
+          "ten": "Bảo vệ cầu Sông Thương (Bắc Giang)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "bat nan cong chua vu thi thuc",
       "so_file": 2,
       "files": [
@@ -70907,6 +71285,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "biet-dong-sai-gon-dai-su-quan-my-1968",
           "ten": "Biệt động Sài Gòn đánh Đại sứ quán Mỹ (Mậu Thân 1968)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "biet dong sai gon danh khach san caravelle",
+      "so_file": 2,
+      "files": [
+        "battles/biet-dong-sai-gon-khach-san-caravelle-1964.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/biet-dong-sai-gon-khach-san-caravelle-1964.json",
+          "id": "biet-dong-sai-gon-khach-san-caravelle-1964",
+          "ten": "Biệt động Sài Gòn đánh khách sạn Caravelle"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "biet-dong-sai-gon-khach-san-caravelle-1964",
+          "ten": "Biệt động Sài Gòn đánh khách sạn Caravelle"
         }
       ]
     },
@@ -71331,6 +71729,26 @@
       ]
     },
     {
+      "ten_chuan": "chien dich bau bang dau tieng",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dich-bau-bang-dau-tieng-1965.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-bau-bang-dau-tieng-1965.json",
+          "id": "chien-dich-bau-bang-dau-tieng-1965",
+          "ten": "Chiến dịch Bàu Bàng – Dầu Tiếng"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-bau-bang-dau-tieng-1965",
+          "ten": "Chiến dịch Bàu Bàng – Dầu Tiếng"
+        }
+      ]
+    },
+    {
       "ten_chuan": "chien dich binh gia",
       "so_file": 2,
       "files": [
@@ -71511,6 +71929,26 @@
       ]
     },
     {
+      "ten_chuan": "chien dich hoang hoa tham chien dich duong 18",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dich-hoang-hoa-tham-duong-18-1951.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-hoang-hoa-tham-duong-18-1951.json",
+          "id": "chien-dich-hoang-hoa-tham-duong-18-1951",
+          "ten": "Chiến dịch Hoàng Hoa Thám (Chiến dịch Đường 18)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-hoang-hoa-tham-duong-18-1951",
+          "ten": "Chiến dịch Hoàng Hoa Thám (Chiến dịch Đường 18)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "chien dich le trinh bac phat 1559",
       "so_file": 2,
       "files": [
@@ -71567,6 +72005,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "chien-dich-plei-me-ia-drang-1965",
           "ten": "Chiến dịch Plei Me – Ia Đrăng"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien dich quang trung chien dich ha nam ninh",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dich-quang-trung-ha-nam-ninh-1951.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-quang-trung-ha-nam-ninh-1951.json",
+          "id": "chien-dich-quang-trung-ha-nam-ninh-1951",
+          "ten": "Chiến dịch Quang Trung (Chiến dịch Hà Nam Ninh)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-quang-trung-ha-nam-ninh-1951",
+          "ten": "Chiến dịch Quang Trung (Chiến dịch Hà Nam Ninh)"
         }
       ]
     },
@@ -71671,6 +72129,26 @@
       ]
     },
     {
+      "ten_chuan": "chien dich tran hung dao chien dich trung du",
+      "so_file": 2,
+      "files": [
+        "battles/chien-dich-tran-hung-dao-trung-du-1950.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-dich-tran-hung-dao-trung-du-1950.json",
+          "id": "chien-dich-tran-hung-dao-trung-du-1950",
+          "ten": "Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-dich-tran-hung-dao-trung-du-1950",
+          "ten": "Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "chien dich tri thien hue va da nang 1975",
       "so_file": 2,
       "files": [
@@ -71751,6 +72229,46 @@
       ]
     },
     {
+      "ten_chuan": "chien thang ba gia",
+      "so_file": 2,
+      "files": [
+        "battles/chien-thang-ba-gia-1965.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-thang-ba-gia-1965.json",
+          "id": "chien-thang-ba-gia-1965",
+          "ten": "Chiến thắng Ba Gia"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-thang-ba-gia-1965",
+          "ten": "Chiến thắng Ba Gia"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien thang deo bong lau",
+      "so_file": 2,
+      "files": [
+        "battles/chien-thang-deo-bong-lau-1949.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-thang-deo-bong-lau-1949.json",
+          "id": "chien-thang-deo-bong-lau-1949",
+          "ten": "Chiến thắng Đèo Bông Lau"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-thang-deo-bong-lau-1949",
+          "ten": "Chiến thắng Đèo Bông Lau"
+        }
+      ]
+    },
+    {
       "ten_chuan": "chien thang dien bien phu tren khong",
       "so_file": 2,
       "files": [
@@ -71767,6 +72285,46 @@
           "file": "timeline/moc-lich-su.json",
           "id": "dien-bien-phu-tren-khong-1972",
           "ten": "Chiến thắng «Điện Biên Phủ trên không»"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien thang song lo doan hung",
+      "so_file": 2,
+      "files": [
+        "battles/chien-thang-song-lo-doan-hung-1947.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-thang-song-lo-doan-hung-1947.json",
+          "id": "chien-thang-song-lo-doan-hung-1947",
+          "ten": "Chiến thắng Sông Lô – Đoan Hùng"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-thang-song-lo-doan-hung-1947",
+          "ten": "Chiến thắng Sông Lô – Đoan Hùng"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien thang tam vu i iv",
+      "so_file": 2,
+      "files": [
+        "battles/chien-thang-tam-vu-1946-1948.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-thang-tam-vu-1946-1948.json",
+          "id": "chien-thang-tam-vu-1946-1948",
+          "ten": "Chiến thắng Tầm Vu (I – IV)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-thang-tam-vu-1946-1948",
+          "ten": "Chiến thắng Tầm Vu (I – IV)"
         }
       ]
     },
@@ -71807,6 +72365,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "chien-thang-tran-dau-hai-quan-1964",
           "ten": "Chiến thắng trận đầu của Hải quân nhân dân Việt Nam"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "chien thang tran dau cua khong quan nhan dan viet nam ham rong",
+      "so_file": 2,
+      "files": [
+        "battles/chien-thang-tran-dau-khong-quan-ham-rong-1965.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/chien-thang-tran-dau-khong-quan-ham-rong-1965.json",
+          "id": "chien-thang-tran-dau-khong-quan-ham-rong-1965",
+          "ten": "Chiến thắng trận đầu của Không quân nhân dân Việt Nam (Hàm Rồng)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "chien-thang-tran-dau-khong-quan-ham-rong-1965",
+          "ten": "Chiến thắng trận đầu của Không quân nhân dân Việt Nam (Hàm Rồng)"
         }
       ]
     },
@@ -72611,6 +73189,46 @@
       ]
     },
     {
+      "ten_chuan": "dao bach long vi chien dau bao ve",
+      "so_file": 2,
+      "files": [
+        "battles/dao-bach-long-vi-chien-dau-bao-ve.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/dao-bach-long-vi-chien-dau-bao-ve.json",
+          "id": "dao-bach-long-vi-chien-dau-bao-ve",
+          "ten": "Đảo Bạch Long Vĩ chiến đấu bảo vệ"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "dao-bach-long-vi-chien-dau-bao-ve",
+          "ten": "Đảo Bạch Long Vĩ chiến đấu bảo vệ"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "dao con co chien dau bao ve vung bien vung troi",
+      "so_file": 2,
+      "files": [
+        "battles/dao-con-co-1959-1973.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/dao-con-co-1959-1973.json",
+          "id": "dao-con-co-1959-1973",
+          "ten": "Đảo Cồn Cỏ chiến đấu bảo vệ vùng biển, vùng trời"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "dao-con-co-1959-1973",
+          "ten": "Đảo Cồn Cỏ chiến đấu bảo vệ vùng biển, vùng trời"
+        }
+      ]
+    },
+    {
       "ten_chuan": "dao cong chinh",
       "so_file": 2,
       "files": [
@@ -72667,6 +73285,26 @@
           "file": "figures/danh-nhan.json",
           "id": "thanh-hoa-dao-duy-tu",
           "ten": "Đào Duy Từ (1572–1634)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "dao hon me chien dau bao ve",
+      "so_file": 2,
+      "files": [
+        "battles/dao-hon-me-chien-dau-bao-ve.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/dao-hon-me-chien-dau-bao-ve.json",
+          "id": "dao-hon-me-chien-dau-bao-ve",
+          "ten": "Đảo Hòn Mê chiến đấu bảo vệ"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "dao-hon-me-chien-dau-bao-ve",
+          "ten": "Đảo Hòn Mê chiến đấu bảo vệ"
         }
       ]
     },
@@ -73147,6 +73785,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Đỗ Tông"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "doan 559 va chuyen hang dau tien vuot truong son",
+      "so_file": 2,
+      "files": [
+        "battles/doan-559-chuyen-hang-dau-tien-1959.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/doan-559-chuyen-hang-dau-tien-1959.json",
+          "id": "doan-559-chuyen-hang-dau-tien-1959",
+          "ten": "Đoàn 559 và chuyến hàng đầu tiên vượt Trường Sơn"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "doan-559-chuyen-hang-dau-tien-1959",
+          "ten": "Đoàn 559 và chuyến hàng đầu tiên vượt Trường Sơn"
         }
       ]
     },
@@ -80556,6 +81214,26 @@
       ]
     },
     {
+      "ten_chuan": "su kien vung ro tau 143",
+      "so_file": 2,
+      "files": [
+        "battles/su-kien-vung-ro-1965.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/su-kien-vung-ro-1965.json",
+          "id": "su-kien-vung-ro-1965",
+          "ten": "Sự kiện Vũng Rô (tàu 143)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "su-kien-vung-ro-1965",
+          "ten": "Sự kiện Vũng Rô (tàu 143)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "suong nguyet anh",
       "so_file": 2,
       "files": [
@@ -81156,6 +81834,26 @@
       ]
     },
     {
+      "ten_chuan": "tieng sam duong 5 danh giao thong chong phap",
+      "so_file": 2,
+      "files": [
+        "battles/tieng-sam-duong-5.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tieng-sam-duong-5.json",
+          "id": "tieng-sam-duong-5",
+          "ten": "\"Tiếng sấm đường 5\" – đánh giao thông chống Pháp"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tieng-sam-duong-5",
+          "ten": "\"Tiếng sấm đường 5\" – đánh giao thông chống Pháp"
+        }
+      ]
+    },
+    {
       "ten_chuan": "to hien thanh",
       "so_file": 2,
       "files": [
@@ -81676,6 +82374,26 @@
       ]
     },
     {
+      "ten_chuan": "tran dau cua dai doan dong bang su doan 320",
+      "so_file": 2,
+      "files": [
+        "battles/tran-dau-su-doan-320-1951.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-dau-su-doan-320-1951.json",
+          "id": "tran-dau-su-doan-320-1951",
+          "ten": "Trận đầu của Đại đoàn Đồng Bằng (Sư đoàn 320)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-dau-su-doan-320-1951",
+          "ten": "Trận đầu của Đại đoàn Đồng Bằng (Sư đoàn 320)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran do ban 1377 vua tran due tong tu tran",
       "so_file": 2,
       "files": [
@@ -81916,6 +82634,26 @@
       ]
     },
     {
+      "ten_chuan": "tran la nga",
+      "so_file": 2,
+      "files": [
+        "battles/tran-la-nga-1948.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-la-nga-1948.json",
+          "id": "tran-la-nga-1948",
+          "ten": "Trận La Ngà"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-la-nga-1948",
+          "ten": "Trận La Ngà"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran lang vay",
       "so_file": 2,
       "files": [
@@ -81992,6 +82730,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trần Minh Tông"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran moc hoa",
+      "so_file": 2,
+      "files": [
+        "battles/tran-moc-hoa-1948.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-moc-hoa-1948.json",
+          "id": "tran-moc-hoa-1948",
+          "ten": "Trận Mộc Hóa"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-moc-hoa-1948",
+          "ten": "Trận Mộc Hóa"
         }
       ]
     },
@@ -82406,6 +83164,26 @@
       ]
     },
     {
+      "ten_chuan": "tran thanh huong my xuyen ngay truyen thong su doan 325",
+      "so_file": 2,
+      "files": [
+        "battles/tran-thanh-huong-my-xuyen-1951.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-thanh-huong-my-xuyen-1951.json",
+          "id": "tran-thanh-huong-my-xuyen-1951",
+          "ten": "Trận Thanh Hương – Mỹ Xuyên (ngày truyền thống Sư đoàn 325)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-thanh-huong-my-xuyen-1951",
+          "ten": "Trận Thanh Hương – Mỹ Xuyên (ngày truyền thống Sư đoàn 325)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "tran thanh tong",
       "so_file": 2,
       "files": [
@@ -82462,6 +83240,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trần Thủ Độ (1194–1264)"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran thuan ninh tran dau cua su doan 3 sao vang",
+      "so_file": 2,
+      "files": [
+        "battles/tran-thuan-ninh-1965.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-thuan-ninh-1965.json",
+          "id": "tran-thuan-ninh-1965",
+          "ten": "Trận Thuận Ninh (trận đầu của Sư đoàn 3 Sao Vàng)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-thuan-ninh-1965",
+          "ten": "Trận Thuận Ninh (trận đầu của Sư đoàn 3 Sao Vàng)"
         }
       ]
     },
@@ -82542,6 +83340,26 @@
           "file": "overlays/chien-dich-tran-danh.json",
           "id": "tran-ninh-nhat-le-1672",
           "ten": "Trận Trấn Ninh — Nhật Lệ (1672), kết thúc chiến tranh Trịnh-Nguyễn"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "tran tua hai",
+      "so_file": 2,
+      "files": [
+        "battles/tran-tua-hai-1960.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-tua-hai-1960.json",
+          "id": "tran-tua-hai-1960",
+          "ten": "Trận Tua Hai"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-tua-hai-1960",
+          "ten": "Trận Tua Hai"
         }
       ]
     },
@@ -82746,6 +83564,26 @@
       ]
     },
     {
+      "ten_chuan": "tran xuan trach tran dau cua dai doan 312",
+      "so_file": 2,
+      "files": [
+        "battles/tran-xuan-trach-1950.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/tran-xuan-trach-1950.json",
+          "id": "tran-xuan-trach-1950",
+          "ten": "Trận Xuân Trạch (trận đầu của Đại đoàn 312)"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "tran-xuan-trach-1950",
+          "ten": "Trận Xuân Trạch (trận đầu của Đại đoàn 312)"
+        }
+      ]
+    },
+    {
       "ten_chuan": "trieu viet vuong trieu quang phuc",
       "so_file": 2,
       "files": [
@@ -82862,6 +83700,26 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Trịnh Văn Bô"
+        }
+      ]
+    },
+    {
+      "ten_chuan": "trung doi nu du kich cu chi",
+      "so_file": 2,
+      "files": [
+        "battles/trung-doi-nu-du-kich-cu-chi-1965.json",
+        "overlays/chien-dich-tran-danh.json"
+      ],
+      "muc": [
+        {
+          "file": "battles/trung-doi-nu-du-kich-cu-chi-1965.json",
+          "id": "trung-doi-nu-du-kich-cu-chi-1965",
+          "ten": "Trung đội nữ du kích Củ Chi"
+        },
+        {
+          "file": "overlays/chien-dich-tran-danh.json",
+          "id": "trung-doi-nu-du-kich-cu-chi-1965",
+          "ten": "Trung đội nữ du kích Củ Chi"
         }
       ]
     },

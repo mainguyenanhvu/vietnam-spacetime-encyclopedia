@@ -1,0 +1,107 @@
+{
+  "ghi_chu": "Sa đồ Trận Mộc Hóa — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-moc-hoa-1948",
+  "ten": "Trận Mộc Hóa",
+  "nam": 1948,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trung đoàn 120, Tiểu đoàn 307",
+  "doi_thu": "Quân đội Pháp (đồn Mộc Hóa)",
+  "dia_diem": "Đồn Mộc Hóa, Long An cũ (nay Tây Ninh), vùng Đồng Tháp Mười",
+  "lien_quan_tinh": [
+    "tay-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "don-moc-hoa",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 260,
+      "nhan": "Đồn Mộc Hóa, sát biên giới Việt Nam – Campuchia"
+    },
+    {
+      "id": "quan-phap-don",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 160,
+      "nhan": "Quân Pháp đóng đồn"
+    },
+    {
+      "id": "trung-doan-120-td307",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 420,
+      "nhan": "Trung đoàn 120, Tiểu đoàn 307, du kích, dân quân 3 xã"
+    },
+    {
+      "id": "danh-don-diet-vien",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        200,
+        400
+      ],
+      "den": [
+        630,
+        200
+      ],
+      "nhan": "Đánh đồn, diệt viện"
+    },
+    {
+      "id": "thang-loi-moc-hoa",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 830,
+      "y": 420,
+      "nhan": "Chia cắt, tiêu diệt quân địch"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đồn Mộc Hóa — vị trí chiến lược của Pháp",
+      "mo_ta": "Đồn Mộc Hóa là vị trí Pháp cắm sâu trong căn cứ Đồng Tháp Mười, sát biên giới Việt Nam – Campuchia, khống chế hành lang nối miền Đông và miền Tây Nam Bộ.",
+      "hien": [
+        "don-moc-hoa",
+        "quan-phap-don"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đêm 16/8/1948: đánh đồn diệt viện",
+      "mo_ta": "Trung đoàn 120, Tiểu đoàn 307 cùng các trung đội du kích tập trung của huyện và dân quân 3 xã lân cận thực hành đánh đồn theo cách \"đánh đồn diệt viện\".",
+      "hien": [
+        "don-moc-hoa",
+        "trung-doan-120-td307"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "15h ngày 18/8/1948: địch lọt vị trí phục kích",
+      "mo_ta": "Đến 15 giờ ngày 18/8/1948 địch lọt vào vị trí phục kích.",
+      "hien": [
+        "don-moc-hoa",
+        "quan-phap-don",
+        "danh-don-diet-vien"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Toàn tuyến nổ súng, chia cắt tiêu diệt",
+      "mo_ta": "Toàn tuyến nổ súng dồn dập chia cắt và tiêu diệt quân địch.",
+      "hien": [
+        "don-moc-hoa",
+        "danh-don-diet-vien",
+        "thang-loi-moc-hoa"
+      ]
+    }
+  ],
+  "ket_qua": "Toàn tuyến nổ súng dồn dập chia cắt và tiêu diệt quân địch tại đồn Mộc Hóa.",
+  "y_nghia": "Đánh vào vị trí Pháp cắm sâu trong căn cứ Đồng Tháp Mười, khống chế hành lang chiến lược nối miền Đông và miền Tây Nam Bộ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Long An kỷ niệm 75 năm chiến thắng trận Mộc Hóa — https://nhandan.vn/long-an-ky-niem-75-nam-chien-thang-tran-moc-hoa-post768043.html"
+  ]
+}

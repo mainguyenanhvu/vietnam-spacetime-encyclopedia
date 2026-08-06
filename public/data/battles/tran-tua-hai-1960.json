@@ -1,0 +1,116 @@
+{
+  "ghi_chu": "Sa đồ Trận Tua Hai — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-tua-hai-1960",
+  "ten": "Trận Tua Hai",
+  "nam": 1960,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Quân đội Sài Gòn (trung đoàn đóng tại căn cứ Tua Hai)",
+  "dia_diem": "Căn cứ Tua Hai, Châu Thành (Tây Ninh)",
+  "lien_quan_tinh": [
+    "tay-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "can-cu-tua-hai",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 240,
+      "nhan": "Căn cứ Tua Hai — kho vũ khí dự trữ 3 vùng chiến thuật"
+    },
+    {
+      "id": "so-chi-huy-trung-doan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 150,
+      "nhan": "Sở chỉ huy trung đoàn địch"
+    },
+    {
+      "id": "llvt-nhan-dan-tay-ninh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 450,
+      "nhan": "Lực lượng vũ trang, nhân dân Tây Ninh"
+    },
+    {
+      "id": "tap-kich-bat-ngo",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        200,
+        430
+      ],
+      "den": [
+        680,
+        190
+      ],
+      "nhan": "0h30 26/1/1960: tập kích bất ngờ"
+    },
+    {
+      "id": "chiem-kho-vu-khi",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 460,
+      "nhan": "Chiếm kho vũ khí"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bối cảnh: Nghị quyết 15 lan tỏa",
+      "mo_ta": "Nghị quyết 15 (1/1959) của Trung ương đã thấm sâu vào phong trào cách mạng miền Nam.",
+      "hien": [
+        "can-cu-tua-hai"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Căn cứ Tua Hai — kho vũ khí chiến lược",
+      "mo_ta": "Tua Hai nguyên là tháp canh của Pháp, sau được Mỹ – ngụy xây thành căn cứ quân sự lớn, kiêm kho vũ khí dự trữ cho cả 3 vùng chiến thuật miền Nam.",
+      "hien": [
+        "can-cu-tua-hai",
+        "so-chi-huy-trung-doan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "0h30 26/1/1960: bí mật áp sát, tập kích",
+      "mo_ta": "Lực lượng vũ trang và nhân dân Tây Ninh bí mật áp sát, bất ngờ tập kích sở chỉ huy trung đoàn địch đóng tại căn cứ Tua Hai.",
+      "hien": [
+        "can-cu-tua-hai",
+        "llvt-nhan-dan-tay-ninh",
+        "so-chi-huy-trung-doan",
+        "tap-kich-bat-ngo"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Nhanh chóng chiếm kho vũ khí",
+      "mo_ta": "Nhanh chóng chiếm kho vũ khí.",
+      "hien": [
+        "can-cu-tua-hai",
+        "tap-kich-bat-ngo",
+        "chiem-kho-vu-khi"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mở đầu phong trào Đồng Khởi vũ trang",
+      "mo_ta": "Chiến thắng Tua Hai mở đầu cho phong trào Đồng Khởi vũ trang lan rộng khắp các chiến trường miền Nam.",
+      "hien": [
+        "can-cu-tua-hai",
+        "chiem-kho-vu-khi"
+      ]
+    }
+  ],
+  "ket_qua": "Chiếm kho vũ khí căn cứ Tua Hai, đánh sập sở chỉ huy trung đoàn địch.",
+  "y_nghia": "Mở đầu cho phong trào Đồng Khởi vũ trang lan rộng khắp các chiến trường miền Nam.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tua Hai - Trận mở màn cho cao trào Đồng khởi ở miền Nam — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/tua-hai-tran-mo-man-cho-cao-trao-dong-khoi-o-mien-nam-607562"
+  ]
+}

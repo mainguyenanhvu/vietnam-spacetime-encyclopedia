@@ -1,0 +1,148 @@
+{
+  "ghi_chu": "Sa đồ Chiến thắng trận đầu của Không quân nhân dân Việt Nam (Hàm Rồng) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-thang-tran-dau-khong-quan-ham-rong-1965",
+  "ten": "Chiến thắng trận đầu của Không quân nhân dân Việt Nam (Hàm Rồng)",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phạm Ngọc Lan (biên đội trưởng, Không quân nhân dân Việt Nam)",
+  "doi_thu": "Không quân Mỹ",
+  "dia_diem": "Cầu Hàm Rồng, Thanh Hóa",
+  "lien_quan_tinh": [
+    "thanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          450,
+          60
+        ],
+        [
+          470,
+          300
+        ],
+        [
+          490,
+          545
+        ]
+      ],
+      "nhan": "Sông Mã, khu vực cầu Hàm Rồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cau-ham-rong",
+      "kieu": "dia-danh",
+      "x": 470,
+      "y": 300,
+      "nhan": "Cầu Hàm Rồng (mật danh Alpha-9)"
+    },
+    {
+      "id": "79-may-bay-dat-lien",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 130,
+      "nhan": "79 máy bay: 46 F-105, 21 F-100, 2 RF-101, 10 KC-135"
+    },
+    {
+      "id": "35-may-bay-hai-quan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 300,
+      "nhan": "35 A-4, 16 F-8E, 4 F-4B từ tàu sân bay Hancock, Coral Sea"
+    },
+    {
+      "id": "bien-doi-pham-ngoc-lan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 200,
+      "nhan": "Biên đội Phạm Ngọc Lan xuất kích"
+    },
+    {
+      "id": "ban-roi-2-f8u",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 400,
+      "nhan": "3/4/1965: bắn rơi 2 F-8U"
+    },
+    {
+      "id": "ban-roi-2-f105",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 780,
+      "y": 460,
+      "nhan": "4/4/1965: bắn rơi tiếp 2 F-105"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Cầu Hàm Rồng — mục tiêu trọng điểm",
+      "mo_ta": "Cầu Hàm Rồng (mật danh Alpha-9) là mục tiêu trọng điểm chiến tranh phá hoại của Mỹ.",
+      "hien": [
+        "cau-ham-rong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "3/4/1965: 79 máy bay tập kích từ đất liền",
+      "mo_ta": "Mỹ huy động 79 máy bay (gồm 46 F-105 ném bom, 21 F-100 hộ tống, 2 RF-101 trinh sát, 10 KC-135 tiếp dầu) tập kích khu vực cầu Hàm Rồng.",
+      "hien": [
+        "cau-ham-rong",
+        "79-may-bay-dat-lien"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Cùng lực lượng hải quân từ hai tàu sân bay",
+      "mo_ta": "Cùng lực lượng hải quân với 35 A-4, 16 F-8E, 4 F-4B từ hai tàu sân bay Hancock và Coral Sea.",
+      "hien": [
+        "cau-ham-rong",
+        "79-may-bay-dat-lien",
+        "35-may-bay-hai-quan"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "3/4: Không quân nhân dân VN lần đầu xuất kích",
+      "mo_ta": "Không quân nhân dân Việt Nam lần đầu xuất kích chiến đấu, biên đội do Phạm Ngọc Lan dẫn đầu bắn rơi 2 máy bay F-8U ngay trong ngày 3/4.",
+      "hien": [
+        "cau-ham-rong",
+        "bien-doi-pham-ngoc-lan",
+        "ban-roi-2-f8u"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "4/4: tiếp tục bắn rơi 2 F-105",
+      "mo_ta": "Ngày 4/4, không quân ta tiếp tục bắn rơi 2 máy bay F-105.",
+      "hien": [
+        "cau-ham-rong",
+        "bien-doi-pham-ngoc-lan",
+        "ban-roi-2-f105"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Mở ra mặt trận trên không",
+      "mo_ta": "Mở ra mặt trận trên không chống chiến tranh phá hoại miền Bắc.",
+      "hien": [
+        "cau-ham-rong",
+        "ban-roi-2-f8u",
+        "ban-roi-2-f105"
+      ]
+    }
+  ],
+  "ket_qua": "Không quân nhân dân Việt Nam lần đầu xuất kích chiến đấu, bắn rơi tổng cộng 4 máy bay Mỹ (2 F-8U ngày 3/4, 2 F-105 ngày 4/4).",
+  "y_nghia": "Mở ra mặt trận trên không chống chiến tranh phá hoại miền Bắc, đánh dấu trận đầu ra quân của Không quân nhân dân Việt Nam.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Trận chiến đấu không quân 3/4/1965 — https://nvsk.vnanet.vn/tran-chien-dau-khong-quan-3-4-1965-1-34448.vna"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "ghi_chu": "Sa đồ Chiến thắng Đèo Bông Lau — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-thang-deo-bong-lau-1949",
+  "ten": "Chiến thắng Đèo Bông Lau",
+  "nam": 1947,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trung đoàn trưởng Đặng Văn Việt (Trung đoàn 174 — Cao Bắc Lạng)",
+  "doi_thu": "Quân đội Pháp",
+  "dia_diem": "Đèo Bông Lau (Lũng Phầy), Quốc lộ 4A, giữa Tràng Định (Lạng Sơn) và Thạch An (Cao Bằng)",
+  "lien_quan_tinh": [
+    "lang-son",
+    "cao-bang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          200,
+          60
+        ],
+        [
+          400,
+          300
+        ],
+        [
+          600,
+          545
+        ]
+      ],
+      "nhan": "Quốc lộ 4A"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          80,
+          80
+        ],
+        [
+          500,
+          40
+        ],
+        [
+          920,
+          90
+        ]
+      ],
+      "nhan": "Vùng núi Cao – Bắc – Lạng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "deo-bong-lau",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 220,
+      "nhan": "Đèo Bông Lau (Lũng Phầy)"
+    },
+    {
+      "id": "trung-doan-174",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 420,
+      "nhan": "Trung đoàn 174 (Cao Bắc Lạng)"
+    },
+    {
+      "id": "doan-xe-phap-4a",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 180,
+      "nhan": "Đoàn xe quân sự Pháp trên QL4A"
+    },
+    {
+      "id": "tran-dia-2-5km",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        220,
+        400
+      ],
+      "den": [
+        560,
+        240
+      ],
+      "nhan": "Trận địa phục kích dài 2,5km, bản Bó → đỉnh đèo"
+    },
+    {
+      "id": "hum-xam-duong-4",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 820,
+      "y": 460,
+      "nhan": "\"Hùm xám đường số 4\""
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "1947–1949: nhiều trận phục kích liên tiếp",
+      "mo_ta": "Trung đoàn 174 (Trung đoàn Cao – Bắc – Lạng) tổ chức nhiều trận phục kích lớn trên Đèo Bông Lau từ 1947 đến 1949.",
+      "hien": [
+        "deo-bong-lau",
+        "trung-doan-174"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đoàn xe Pháp thường xuyên qua Đường số 4",
+      "mo_ta": "Quốc lộ 4A nối Tràng Định (Lạng Sơn) với Thạch An (Cao Bằng) là tuyến vận chuyển quân sự chính của Pháp.",
+      "hien": [
+        "deo-bong-lau",
+        "doan-xe-phap-4a"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "3/9/1949: bố trí trận địa 2,5km",
+      "mo_ta": "Trận đánh lớn nhất bố trí trận địa phục kích dài 2,5km từ bản Bó đến đỉnh đèo.",
+      "hien": [
+        "deo-bong-lau",
+        "trung-doan-174",
+        "tran-dia-2-5km"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chưa đầy 30 phút, đánh thiệt hại nặng đoàn xe",
+      "mo_ta": "Chỉ trong chưa đầy 30 phút đã đánh thiệt hại nặng đoàn xe quân sự Pháp.",
+      "hien": [
+        "deo-bong-lau",
+        "tran-dia-2-5km",
+        "doan-xe-phap-4a"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "\"Hùm xám đường số 4\"",
+      "mo_ta": "Chiến công gắn liền với tên tuổi Trung đoàn trưởng Đặng Văn Việt, được lính Pháp gọi là \"Hùm xám đường số 4\".",
+      "hien": [
+        "deo-bong-lau",
+        "hum-xam-duong-4"
+      ]
+    }
+  ],
+  "ket_qua": "Đánh thiệt hại nặng đoàn xe quân sự Pháp trên Đường số 4 trong trận lớn nhất ngày 3/9/1949.",
+  "y_nghia": "Loạt trận phục kích tiêu biểu trên Đường số 4, gắn với tên tuổi Trung đoàn trưởng Đặng Văn Việt — \"Hùm xám đường số 4\".",
+  "trang_thai": "draft",
+  "nguon": [
+    "Người chỉ huy huyền thoại trên đường 4 rực lửa — https://baocaobang.vn/-30330.html",
+    "Chiến dịch Cao-Bắc-Lạng (Chiến dịch đường 4, 15/3-30/4/1949) — https://nvsk.vnanet.vn/chien-dich-cao-bac-lang-chien-dich-duong-4-15-3-30-4-1949-1-33208.vna"
+  ]
+}

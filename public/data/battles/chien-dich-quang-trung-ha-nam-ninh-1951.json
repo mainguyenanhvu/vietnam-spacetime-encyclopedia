@@ -1,0 +1,111 @@
+{
+  "ghi_chu": "Sa đồ Chiến dịch Quang Trung (Chiến dịch Hà Nam Ninh) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-dich-quang-trung-ha-nam-ninh-1951",
+  "ten": "Chiến dịch Quang Trung (Chiến dịch Hà Nam Ninh)",
+  "nam": 1951,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "",
+  "doi_thu": "Quân đội Pháp (tuyến phòng ngự sông Đáy)",
+  "dia_diem": "Hà Nam – Nam Định – Ninh Bình (mặt trận sông Đáy), nay Ninh Bình",
+  "lien_quan_tinh": [
+    "ninh-binh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          300,
+          60
+        ],
+        [
+          350,
+          300
+        ],
+        [
+          400,
+          545
+        ]
+      ],
+      "nhan": "Sông Đáy"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "tuyen-song-day",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 300,
+      "nhan": "Tuyến phòng ngự sông Đáy"
+    },
+    {
+      "id": "3-dai-doan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 450,
+      "nhan": "Đại đoàn 308, 304, 320 + pháo binh, công binh"
+    },
+    {
+      "id": "tuyen-phong-ngu-day",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 200,
+      "nhan": "Tuyến phòng ngự sông Đáy của Pháp"
+    },
+    {
+      "id": "chien-dich-thu-3",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 800,
+      "y": 460,
+      "nhan": "Chiến dịch thứ ba liên tiếp Đông Xuân 1950–1951"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Cuối 4/1951: quyết định mở chiến dịch Quang Trung",
+      "mo_ta": "Trung ương Đảng và Tổng Quân ủy quyết định mở chiến dịch Quang Trung nhằm phá tuyến phòng ngự sông Đáy của quân Pháp.",
+      "hien": [
+        "tuyen-song-day"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Ba đại đoàn cùng pháo binh, công binh tham gia",
+      "mo_ta": "Ba đại đoàn 308, 304, 320 cùng 5 đại đội pháo binh, 1 tiểu đoàn công binh và lực lượng địa phương tham gia chiến dịch.",
+      "hien": [
+        "tuyen-song-day",
+        "3-dai-doan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "28/5–20/6/1951: phá tuyến phòng ngự 3 tỉnh",
+      "mo_ta": "Phá tuyến phòng ngự sông Đáy trên địa bàn ba tỉnh Hà Nam, Nam Định, Ninh Bình.",
+      "hien": [
+        "tuyen-song-day",
+        "3-dai-doan",
+        "tuyen-phong-ngu-day"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chiến dịch thứ ba Đông Xuân 1950–1951",
+      "mo_ta": "Chiến dịch thứ ba liên tiếp vào trung du và đồng bằng Bắc Bộ trong Đông Xuân 1950–1951, cùng với Trần Hưng Đạo và Hoàng Hoa Thám.",
+      "hien": [
+        "tuyen-song-day",
+        "chien-dich-thu-3"
+      ]
+    }
+  ],
+  "ket_qua": "Phá tuyến phòng ngự sông Đáy trên địa bàn ba tỉnh Hà Nam, Nam Định, Ninh Bình.",
+  "y_nghia": "Chiến dịch thứ ba liên tiếp vào trung du và đồng bằng Bắc Bộ trong Đông Xuân 1950–1951, cùng với Trần Hưng Đạo và Hoàng Hoa Thám.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Mở liên tiếp ba chiến dịch vào trung du và Đồng bằng Bắc Bộ — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/mo-lien-tiep-ba-chien-dich-vao-trung-du-va-dong-bang-bac-bo-261492"
+  ]
+}
