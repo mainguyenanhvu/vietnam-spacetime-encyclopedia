@@ -1,0 +1,158 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa Nguyễn Thanh, Nguyễn Kỵ 1379 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Sử liệu ghi rất vắn tắt, không nêu chi tiết quân số/ngày tháng cụ thể — sa đồ không bịa thêm. trang_thai=draft chờ soát §9.",
+  "id": "khoi-nghia-nguyen-thanh-nguyen-ky-1379",
+  "ten": "Khởi nghĩa Nguyễn Thanh, Nguyễn Kỵ ở Thanh Hóa (1379)",
+  "nam": 1379,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Thanh, Nguyễn Kỵ",
+  "doi_thu": "Triều đình nhà Trần (thời Trần Phế Đế)",
+  "dia_diem": "Vùng sông Chu và huyện Nông Cống, tỉnh Thanh Hóa",
+  "lien_quan_tinh": [
+    "thanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          200
+        ],
+        [
+          350,
+          260
+        ],
+        [
+          600,
+          320
+        ]
+      ],
+      "nhan": "Sông Chu"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-suy-yeu",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 100,
+      "nhan": "Cuối đời Trần suy yếu, đói kém, sưu thuế nặng"
+    },
+    {
+      "id": "nguyen-thanh-day-quan",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 250,
+      "y": 260,
+      "nhan": "Nguyễn Thanh tự xưng Linh Đức vương, dấy quân ở vùng sông Chu"
+    },
+    {
+      "id": "nguyen-ky-day-quan",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 550,
+      "y": 420,
+      "nhan": "Nguyễn Kỵ dấy quân riêng ở Nông Cống, hưởng ứng"
+    },
+    {
+      "id": "trieu-dinh-dan-ap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 200,
+      "nhan": "Triều đình nhà Trần cử quân đàn áp"
+    },
+    {
+      "id": "mui-dan-ap-1",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        750,
+        220
+      ],
+      "den": [
+        320,
+        280
+      ],
+      "nhan": "Quân triều đình tiến đánh Nguyễn Thanh"
+    },
+    {
+      "id": "mui-dan-ap-2",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        750,
+        240
+      ],
+      "den": [
+        580,
+        400
+      ],
+      "nhan": "Quân triều đình tiến đánh Nguyễn Kỵ"
+    },
+    {
+      "id": "khoi-nghia-that-bai",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 500,
+      "y": 500,
+      "nhan": "Cuộc khởi nghĩa bị dập tắt"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bối cảnh cuối đời Trần suy yếu",
+      "mo_ta": "Cuối thời Trần Phế Đế, triều chính suy yếu, mất mùa đói kém, sưu cao thuế nặng khiến dân chúng nhiều nơi bất bình.",
+      "hien": [
+        "boi-canh-suy-yeu"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Thanh dấy quân ở vùng sông Chu",
+      "mo_ta": "Nguyễn Thanh tự xưng Linh Đức vương, dấy quân khởi nghĩa ở vùng sông Chu, Thanh Hoá.",
+      "hien": [
+        "boi-canh-suy-yeu",
+        "nguyen-thanh-day-quan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nguyễn Kỵ dấy quân hưởng ứng ở Nông Cống",
+      "mo_ta": "Cùng thời gian, Nguyễn Kỵ dấy quân riêng tại vùng Nông Cống, hưởng ứng phong trào chống lại triều đình.",
+      "hien": [
+        "nguyen-thanh-day-quan",
+        "nguyen-ky-day-quan"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Triều đình cử quân đàn áp",
+      "mo_ta": "Triều đình nhà Trần cử quân đi đánh dẹp cả hai cánh quân khởi nghĩa.",
+      "hien": [
+        "nguyen-thanh-day-quan",
+        "nguyen-ky-day-quan",
+        "trieu-dinh-dan-ap",
+        "mui-dan-ap-1",
+        "mui-dan-ap-2"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cuộc khởi nghĩa bị dập tắt",
+      "mo_ta": "Cả hai cánh quân khởi nghĩa của Nguyễn Thanh và Nguyễn Kỵ đều bị triều đình dẹp tan.",
+      "hien": [
+        "khoi-nghia-that-bai"
+      ]
+    }
+  ],
+  "ket_qua": "Cuộc khởi nghĩa của Nguyễn Thanh và Nguyễn Kỵ bị triều đình nhà Trần dẹp tan. Sử liệu ghi vắn tắt, không nêu chi tiết quân số hay ngày tháng cụ thể.",
+  "y_nghia": "Là một trong nhiều cuộc nổi dậy của dân chúng cuối thời Trần, phản ánh tình trạng bất ổn xã hội trước khi nhà Trần suy vong.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "Khâm định Việt sử thông giám cương mục — Chính biên"
+  ]
+}

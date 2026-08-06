@@ -1,0 +1,128 @@
+{
+  "ghi_chu": "Sa đồ Hội thề Lũng Nhai 1416 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh. Sự kiện KHÔNG chép trong Đại Việt sử ký toàn thư / Lam Sơn thực lục — chỉ có trong nguồn di tích và báo chí hiện đại, chi tiết (số người thề, ngày tháng) còn tranh luận; sa đồ không bịa thêm chi tiết. trang_thai=draft chờ soát §9.",
+  "id": "hoi-the-lung-nhai-1416",
+  "ten": "Hội thề Lũng Nhai",
+  "nam": 1416,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Lợi",
+  "doi_thu": "Nhà Minh (bối cảnh đô hộ)",
+  "dia_diem": "Lũng Nhai, Thanh Hóa (Thọ Xuân/Thường Xuân)",
+  "lien_quan_tinh": [
+    "thanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo tư liệu di tích Lam Kinh, KHÔNG theo tỉ lệ địa lý chính xác. Sự kiện không được chép trong chính sử.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          100
+        ],
+        [
+          300,
+          60
+        ],
+        [
+          500,
+          110
+        ]
+      ],
+      "nhan": "Vùng núi Lũng Nhai"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-minh-do-ho",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 100,
+      "nhan": "Đầu thế kỷ XV, nhà Minh đô hộ, dân chúng lầm than"
+    },
+    {
+      "id": "hao-kiet-te-tuu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 260,
+      "nhan": "Lê Lợi cùng các hào kiệt tề tựu tại Lũng Nhai"
+    },
+    {
+      "id": "le-le-hoi-the",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 380,
+      "nhan": "Làm lễ thề kết nghĩa, quyết tâm đánh đuổi giặc Minh"
+    },
+    {
+      "id": "chuan-bi-luc-luong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 550,
+      "y": 460,
+      "nhan": "Ngầm chuẩn bị lực lượng, chờ thời cơ khởi binh"
+    },
+    {
+      "id": "khoi-nghia-lam-son",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 780,
+      "y": 380,
+      "nhan": "1418: chính thức phất cờ khởi nghĩa Lam Sơn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bối cảnh nhà Minh đô hộ",
+      "mo_ta": "Đầu thế kỷ XV, sau khi nhà Hồ thất bại, nhà Minh đặt ách đô hộ hà khắc lên Đại Việt, dân chúng nhiều nơi lầm than.",
+      "hien": [
+        "boi-canh-minh-do-ho"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lê Lợi cùng hào kiệt tề tựu tại Lũng Nhai",
+      "mo_ta": "Lê Lợi cùng những người tâm phúc tề tựu tại vùng núi Lũng Nhai (Thanh Hoá).",
+      "hien": [
+        "boi-canh-minh-do-ho",
+        "hao-kiet-te-tuu"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Làm lễ thề kết nghĩa",
+      "mo_ta": "Theo nguồn di tích và báo chí hiện đại (sự kiện không có trong Đại Việt sử ký toàn thư hay Lam Sơn thực lục), Lê Lợi cùng các hào kiệt làm lễ thề kết nghĩa, quyết tâm đồng lòng đánh đuổi giặc Minh.",
+      "hien": [
+        "hao-kiet-te-tuu",
+        "le-le-hoi-the"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Ngầm chuẩn bị lực lượng",
+      "mo_ta": "Sau hội thề, các thành viên ngầm chuẩn bị lực lượng, chờ thời cơ khởi binh.",
+      "hien": [
+        "le-le-hoi-the",
+        "chuan-bi-luc-luong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Khởi nghĩa Lam Sơn (1418)",
+      "mo_ta": "Hai năm sau, Lê Lợi chính thức phất cờ khởi nghĩa Lam Sơn.",
+      "hien": [
+        "chuan-bi-luc-luong",
+        "khoi-nghia-lam-son"
+      ]
+    }
+  ],
+  "ket_qua": "Đặt nền tảng nhân sự và tinh thần cho cuộc khởi nghĩa Lam Sơn phát động năm 1418.",
+  "y_nghia": "Được xem là sự kiện mở đầu quá trình quy tụ lực lượng cốt cán của khởi nghĩa Lam Sơn, dù không được chính sử ghi chép trực tiếp.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Khu di tích Lam Kinh — ditichlamkinh.vn",
+    "Báo Quân đội nhân dân (sknc.qdnd.vn) — Từ Hội thề Lũng Nhai đến Hội thề Đông Quan — http://sknc.qdnd.vn/chuyen-xua-nay/tu-hoi-the-lung-nhai-den-hoi-the-dong-quan-503083"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "ghi_chu": "Sa đồ trận hồ Điển Triệt 545 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-ho-dien-triet-545",
+  "ten": "Trận hồ Điển Triệt, Lý Nam Đế thất thế (545)",
+  "nam": 545,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lý Nam Đế (Lý Bí)",
+  "doi_thu": "Nhà Lương (Trần Bá Tiên, Dương Phiêu)",
+  "dia_diem": "Hồ Điển Triệt, huyện Lập Thạch (nay thuộc tỉnh Phú Thọ)",
+  "lien_quan_tinh": [
+    "phu-tho"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          80,
+          480
+        ],
+        [
+          400,
+          460
+        ],
+        [
+          750,
+          440
+        ]
+      ],
+      "nhan": "Sông vùng hồ Điển Triệt"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          600,
+          100
+        ],
+        [
+          700,
+          60
+        ],
+        [
+          800,
+          110
+        ]
+      ],
+      "nhan": "Động Khuất Lão (Tam Nông)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-to-lich",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 130,
+      "y": 150,
+      "nhan": "Thành cửa sông Tô Lịch — nơi lui quân trước"
+    },
+    {
+      "id": "ho-dien-triet",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 380,
+      "nhan": "Hồ Điển Triệt"
+    },
+    {
+      "id": "quan-ta-dong-luy",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 300,
+      "nhan": "Lý Nam Đế đóng quân, đắp luỹ giữ hồ Điển Triệt"
+    },
+    {
+      "id": "quan-dich-ap-sat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 300,
+      "nhan": "Trần Bá Tiên tiến quân, đóng đối diện"
+    },
+    {
+      "id": "mui-tap-kich-dem",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        620,
+        320
+      ],
+      "den": [
+        400,
+        340
+      ],
+      "nhan": "Đêm nước sông dâng cao, Trần Bá Tiên bất ngờ tập kích"
+    },
+    {
+      "id": "quan-ta-tan-vo",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 440,
+      "nhan": "Quân Vạn Xuân tan vỡ"
+    },
+    {
+      "id": "khuat-lao",
+      "kieu": "dia-danh",
+      "x": 720,
+      "y": 90,
+      "nhan": "Động Khuất Lão — Lý Nam Đế lánh vào"
+    },
+    {
+      "id": "mui-chay-khuat-lao",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        420
+      ],
+      "den": [
+        660,
+        130
+      ],
+      "nhan": "Lý Nam Đế chạy vào động Khuất Lão"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lui quân từ thành cửa sông Tô Lịch",
+      "mo_ta": "Sau nhiều trận thua trước sức tiến công của quân Lương, Lý Nam Đế bỏ thành ở cửa sông Tô Lịch, lui quân lên phía thượng nguồn.",
+      "hien": [
+        "thanh-to-lich"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đóng quân, đắp luỹ giữ hồ Điển Triệt",
+      "mo_ta": "Lý Nam Đế đưa hai vạn quân đóng tại hồ Điển Triệt (Lập Thạch), đắp luỹ phòng thủ, cho thuyền đậu kín mặt hồ.",
+      "hien": [
+        "ho-dien-triet",
+        "quan-ta-dong-luy"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trần Bá Tiên tiến quân áp sát",
+      "mo_ta": "Trần Bá Tiên đem quân Lương đuổi theo, đóng quân đối diện bên hồ, các tướng đều e ngại thế hiểm không dám đánh trước.",
+      "hien": [
+        "ho-dien-triet",
+        "quan-ta-dong-luy",
+        "quan-dich-ap-sat"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đêm nước dâng, bị tập kích bất ngờ",
+      "mo_ta": "Đêm mưa, nước sông đột ngột dâng cao tràn vào hồ; Trần Bá Tiên thừa cơ cho quân theo dòng nước đánh úp, quân Vạn Xuân không kịp trở tay.",
+      "hien": [
+        "quan-dich-ap-sat",
+        "mui-tap-kich-dem",
+        "quan-ta-dong-luy"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân tan vỡ, Lý Nam Đế lánh vào động Khuất Lão",
+      "mo_ta": "Quân Vạn Xuân tan vỡ; Lý Nam Đế cùng thân tín chạy vào động Khuất Lão (Tam Nông), giao lại binh quyền cho Triệu Quang Phục tiếp tục kháng cự.",
+      "hien": [
+        "quan-ta-tan-vo",
+        "khuat-lao",
+        "mui-chay-khuat-lao"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Vạn Xuân tan vỡ tại hồ Điển Triệt; Lý Nam Đế lánh vào động Khuất Lão rồi mất không lâu sau đó; Triệu Quang Phục thay quyền, lui về đầm Dạ Trạch tiếp tục kháng chiến.",
+  "y_nghia": "Đánh dấu bước ngoặt của cuộc kháng chiến chống Lương: nhà nước Vạn Xuân non trẻ mất người đứng đầu, cuộc kháng chiến chuyển sang giai đoạn du kích dưới quyền Triệu Quang Phục.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Tiền Lý",
+    "Khâm định Việt sử thông giám cương mục — Tiền biên"
+  ]
+}

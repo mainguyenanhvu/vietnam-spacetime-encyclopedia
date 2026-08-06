@@ -1,0 +1,140 @@
+{
+  "ghi_chu": "Sa đồ Nguyễn Kim dựng cờ 'phù Lê diệt Mạc' 1533 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh. MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Sầm Châu (Ai Lao) nay thuộc Lào nên không gán slug tỉnh Việt Nam cho vị trí này. trang_thai=draft chờ soát §9.",
+  "id": "nguyen-kim-pho-le-diet-mac-1533",
+  "ten": "Nguyễn Kim dựng cờ 'phù Lê diệt Mạc', mở đầu Nam – Bắc triều (1533)",
+  "nam": 1533,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Kim",
+  "doi_thu": "Nhà Mạc",
+  "dia_diem": "Sầm Châu (Ai Lao, nay thuộc Lào) và vùng biên giới phía Tây Thanh Hóa",
+  "lien_quan_tinh": [
+    "thanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "mac-cuop-ngoi",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 750,
+      "y": 100,
+      "nhan": "Sau khi nhà Mạc cướp ngôi (1527)"
+    },
+    {
+      "id": "nguyen-kim-lanh-nan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 220,
+      "nhan": "Nguyễn Kim (cựu thần nhà Lê) lánh sang Ai Lao (Sầm Châu), chiêu tập lực lượng"
+    },
+    {
+      "id": "tim-duoc-le-duy-ninh",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 350,
+      "nhan": "Tìm được người dòng dõi nhà Lê: Lê Duy Ninh"
+    },
+    {
+      "id": "ton-le-trang-tong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 450,
+      "y": 350,
+      "nhan": "Tôn Lê Duy Ninh lên ngôi (Lê Trang Tông), dựng cờ 'phù Lê diệt Mạc' (1533)"
+    },
+    {
+      "id": "can-cu-bien-gioi",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 700,
+      "y": 450,
+      "nhan": "Xây dựng căn cứ ở biên giới phía Tây Thanh Hoá"
+    },
+    {
+      "id": "mui-ve-thanh-hoa",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        380
+      ],
+      "den": [
+        660,
+        440
+      ],
+      "nhan": "Chuyển lực lượng về vùng biên giới Thanh Hoá"
+    },
+    {
+      "id": "mo-dau-nam-bac-trieu",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 850,
+      "y": 300,
+      "nhan": "Mở đầu thời kỳ Nam – Bắc triều"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nhà Mạc cướp ngôi nhà Lê",
+      "mo_ta": "Sau khi Mạc Đăng Dung cướp ngôi nhà Lê năm 1527, nhiều cựu thần nhà Lê không thần phục.",
+      "hien": [
+        "mac-cuop-ngoi"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Kim lánh sang Ai Lao, chiêu tập lực lượng",
+      "mo_ta": "Nguyễn Kim, một cựu thần nhà Lê, lánh sang đất Ai Lao (Sầm Châu), chiêu tập lực lượng chống nhà Mạc.",
+      "hien": [
+        "mac-cuop-ngoi",
+        "nguyen-kim-lanh-nan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tìm được người dòng dõi nhà Lê",
+      "mo_ta": "Nguyễn Kim tìm được Lê Duy Ninh, người thuộc dòng dõi nhà Lê.",
+      "hien": [
+        "nguyen-kim-lanh-nan",
+        "tim-duoc-le-duy-ninh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tôn Lê Duy Ninh lên ngôi, dựng cờ phù Lê diệt Mạc",
+      "mo_ta": "Năm 1533, Nguyễn Kim tôn Lê Duy Ninh lên ngôi, tức Lê Trang Tông, dựng cờ 'phù Lê diệt Mạc'.",
+      "hien": [
+        "tim-duoc-le-duy-ninh",
+        "ton-le-trang-tong"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Xây dựng căn cứ ở biên giới Thanh Hoá",
+      "mo_ta": "Lực lượng phù Lê chuyển về xây dựng căn cứ tại vùng biên giới phía Tây Thanh Hoá, chuẩn bị đối đầu nhà Mạc.",
+      "hien": [
+        "ton-le-trang-tong",
+        "can-cu-bien-gioi",
+        "mui-ve-thanh-hoa"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Mở đầu thời kỳ Nam – Bắc triều",
+      "mo_ta": "Sự kiện mở đầu cho gần 60 năm nội chiến Nam - Bắc triều giữa nhà Lê trung hưng và nhà Mạc.",
+      "hien": [
+        "can-cu-bien-gioi",
+        "mo-dau-nam-bac-trieu"
+      ]
+    }
+  ],
+  "ket_qua": "Lê Trang Tông được tôn lập, lực lượng phù Lê hình thành căn cứ tại Thanh Hoá, mở đầu thời kỳ Nam - Bắc triều kéo dài đến năm 1592.",
+  "y_nghia": "Đặt nền móng cho công cuộc Lê trung hưng, dẫn tới cuộc nội chiến Nam - Bắc triều kéo dài gần 60 năm giữa hai tập đoàn phong kiến Lê - Trịnh và Mạc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ tục biên",
+    "Khâm định Việt sử thông giám cương mục — Chính biên"
+  ]
+}

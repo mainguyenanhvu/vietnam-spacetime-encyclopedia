@@ -1,0 +1,192 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch Lê-Trịnh Bắc phạt 1559-1560 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Một trong khoảng 38 trận lớn nhỏ của 60 năm nội chiến Nam-Bắc triều; sa đồ chỉ dựng đợt tiến quân lớn tháng 11/1559 - 4/1560, không dựng riêng từng trận nhỏ. trang_thai=draft chờ soát §9.",
+  "id": "le-trinh-bac-phat-1559",
+  "ten": "Chiến dịch Lê-Trịnh Bắc phạt (1559)",
+  "nam": 1559,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trịnh Kiểm (phù Lê)",
+  "doi_thu": "Nhà Mạc (đóng Đông Đô)",
+  "dia_diem": "Sơn Tây, Tuyên Quang, Hưng Hoá, Kinh Bắc, Hải Dương — vùng phụ cận thành Đông Đô",
+  "lien_quan_tinh": [
+    "ha-noi",
+    "tuyen-quang",
+    "phu-tho",
+    "bac-ninh",
+    "hai-phong"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          60,
+          500
+        ],
+        [
+          400,
+          480
+        ],
+        [
+          750,
+          460
+        ]
+      ],
+      "nhan": "Vùng đồng bằng Bắc Bộ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "boi-canh-noi-chien",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 100,
+      "nhan": "Nội chiến Nam-Bắc triều: Lê trung hưng (Thanh Hoá) đối đầu nhà Mạc (Đông Đô)"
+    },
+    {
+      "id": "trinh-kiem-phat-dong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 460,
+      "nhan": "Tháng 11/1559: Trịnh Kiểm phát động đại quân Bắc phạt"
+    },
+    {
+      "id": "son-tay-tuyen-quang-hung-hoa",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 300,
+      "nhan": "Sơn Tây, Tuyên Quang, Hưng Hoá"
+    },
+    {
+      "id": "mui-tien-tay-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        200,
+        430
+      ],
+      "den": [
+        340,
+        320
+      ],
+      "nhan": "Tiến đánh, uy hiếp vùng Sơn Tây – Tuyên Quang – Hưng Hoá"
+    },
+    {
+      "id": "kinh-bac-hai-duong",
+      "kieu": "dia-danh",
+      "x": 650,
+      "y": 300,
+      "nhan": "Kinh Bắc, Hải Dương"
+    },
+    {
+      "id": "mui-tien-dong-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        300
+      ],
+      "den": [
+        620,
+        300
+      ],
+      "nhan": "Tiến đánh Kinh Bắc, Hải Dương"
+    },
+    {
+      "id": "dong-do-uy-hiep",
+      "kieu": "thanh",
+      "x": 500,
+      "y": 170,
+      "nhan": "Áp sát, uy hiếp thành Đông Đô"
+    },
+    {
+      "id": "mac-phong-thu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 90,
+      "nhan": "Nhà Mạc phòng thủ Đông Đô"
+    },
+    {
+      "id": "rut_ve_thanh_hoa",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        480,
+        200
+      ],
+      "den": [
+        180,
+        440
+      ],
+      "nhan": "Đến 4/1560, quân Nam triều rút về Thanh Hoá"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bối cảnh nội chiến Nam-Bắc triều",
+      "mo_ta": "Từ 1533, nội chiến Nam-Bắc triều diễn ra giữa Lê trung hưng (đóng Thanh Hoá) và nhà Mạc (đóng Đông Đô).",
+      "hien": [
+        "boi-canh-noi-chien"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trịnh Kiểm phát động Bắc phạt",
+      "mo_ta": "Tháng 11/1559, Trịnh Kiểm phát động chiến dịch lớn đưa đại quân tiến đánh Bắc Bộ.",
+      "hien": [
+        "boi-canh-noi-chien",
+        "trinh-kiem-phat-dong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiến đánh Sơn Tây, Tuyên Quang, Hưng Hoá",
+      "mo_ta": "Quân Nam triều tiến đánh, uy hiếp các vùng Sơn Tây, Tuyên Quang, Hưng Hoá.",
+      "hien": [
+        "trinh-kiem-phat-dong",
+        "son-tay-tuyen-quang-hung-hoa",
+        "mui-tien-tay-bac"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiến đánh Kinh Bắc, Hải Dương",
+      "mo_ta": "Quân Nam triều tiếp tục tiến đánh vùng Kinh Bắc, Hải Dương, mở rộng phạm vi uy hiếp.",
+      "hien": [
+        "son-tay-tuyen-quang-hung-hoa",
+        "kinh-bac-hai-duong",
+        "mui-tien-dong-bac"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Áp sát, uy hiếp thành Đông Đô",
+      "mo_ta": "Đây là một trong khoảng 38 trận lớn nhỏ của 60 năm nội chiến, nhưng là đợt Nam triều tiến sâu và đe doạ trực tiếp thành Đông Đô rõ rệt nhất trước năm 1592.",
+      "hien": [
+        "kinh-bac-hai-duong",
+        "dong-do-uy-hiep",
+        "mac-phong-thu"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Rút quân về Thanh Hoá",
+      "mo_ta": "Đến tháng 4/1560, quân Nam triều rút về Thanh Hoá, kết thúc đợt Bắc phạt.",
+      "hien": [
+        "dong-do-uy-hiep",
+        "mac-phong-thu",
+        "rut_ve_thanh_hoa"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Nam triều tiến sâu và uy hiếp trực tiếp thành Đông Đô, nhưng không chiếm được kinh thành, sau đó rút về Thanh Hoá (4/1560).",
+  "y_nghia": "Là đợt tiến quân của Nam triều đe doạ Đông Đô rõ rệt nhất trong số khoảng 38 trận lớn nhỏ của 60 năm nội chiến Nam-Bắc triều trước năm 1592.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng thông tin điện tử Bộ Văn hoá, Thể thao và Du lịch (scov.gov.vn) — Tóm tắt biên niên sử Việt Nam, XIX. Nhà Mạc 65 năm (1527–1592) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xix.-nha-mac-65-nam-1527-1592-kinh-do-dong-do-ha-noi-.html",
+    "Đại Việt sử ký toàn thư — Bản kỷ tục biên"
+  ]
+}

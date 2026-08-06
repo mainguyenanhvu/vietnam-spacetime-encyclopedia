@@ -1,0 +1,153 @@
+{
+  "ghi_chu": "Sa đồ Hội nghị Bình Than 1282 — sơ đồ thế cục/diễn biến chính trị-quân sự, KHÔNG phải trận đánh. MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Vị trí họp còn hai thuyết: bến Bình Than (Gia Bình, Bắc Ninh) hoặc vụng Trần Xá (Nam Sách, Hải Dương) — sa đồ nêu cả hai, không chọn một. trang_thai=draft chờ soát §9.",
+  "id": "hoi-nghi-binh-than-1282",
+  "ten": "Hội nghị Bình Than (1282)",
+  "nam": 1282,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Nhân Tông, Trần Hưng Đạo",
+  "doi_thu": "Nhà Nguyên (đe doạ xâm lược lần thứ hai)",
+  "dia_diem": "Bến Bình Than (sông Lục Đầu), xã Cao Đức, huyện Gia Bình, tỉnh Bắc Ninh — hoặc vụng Trần Xá, Nam Sách, Hải Dương (còn tranh luận)",
+  "lien_quan_tinh": [
+    "bac-ninh",
+    "hai-phong"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          60,
+          300
+        ],
+        [
+          400,
+          320
+        ],
+        [
+          800,
+          300
+        ]
+      ],
+      "nhan": "Sông Lục Đầu"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "tin-nguyen-de-doa",
+      "kieu": "dia-danh",
+      "x": 850,
+      "y": 130,
+      "nhan": "Tin quân Nguyên chuẩn bị xâm lược lần hai"
+    },
+    {
+      "id": "trieu-tap-vuong-hau",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 130,
+      "nhan": "Triều đình triệu tập vương hầu, bách quan"
+    },
+    {
+      "id": "hoi-nghi-binh-than-diem",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 300,
+      "nhan": "Bến Bình Than (Gia Bình, Bắc Ninh) / vụng Trần Xá (Nam Sách, Hải Dương) — hai thuyết"
+    },
+    {
+      "id": "quan-hoi-ban",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Vương hầu, bách quan họp bàn kế sách"
+    },
+    {
+      "id": "tran-quoc-toan-bop-cam",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 650,
+      "y": 400,
+      "nhan": "Trần Quốc Toản nhỏ tuổi không được dự, bóp nát quả cam"
+    },
+    {
+      "id": "mui-ve-chieu-mo",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        630,
+        420
+      ],
+      "den": [
+        780,
+        480
+      ],
+      "nhan": "Về chiêu mộ gia binh, may cờ «Phá cường địch, báo hoàng ân»"
+    },
+    {
+      "id": "quyet-khang-chien",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 500,
+      "nhan": "Thống nhất chủ trương kháng chiến"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tin quân Nguyên chuẩn bị xâm lược lần hai",
+      "mo_ta": "Sau lần thất bại xâm lược thứ nhất (1258), nhà Nguyên ráo riết chuẩn bị đại quân đánh Đại Việt lần thứ hai; triều đình nhà Trần triệu tập vương hầu, bách quan bàn kế sách đối phó.",
+      "hien": [
+        "tin-nguyen-de-doa",
+        "trieu-tap-vuong-hau"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Họp tại bến Bình Than",
+      "mo_ta": "Vua Trần Nhân Tông cùng Trần Hưng Đạo và các vương hầu, trăm quan họp bàn tại bến Bình Than trên sông Lục Đầu (vị trí còn hai thuyết: Gia Bình – Bắc Ninh hoặc Nam Sách – Hải Dương) để định kế sách kháng cự.",
+      "hien": [
+        "hoi-nghi-binh-than-diem",
+        "quan-hoi-ban"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Trần Quốc Toản bóp nát quả cam",
+      "mo_ta": "Trần Quốc Toản còn nhỏ tuổi, không được dự bàn việc nước, tức giận bóp nát quả cam đang cầm trong tay lúc nào không hay.",
+      "hien": [
+        "hoi-nghi-binh-than-diem",
+        "quan-hoi-ban",
+        "tran-quoc-toan-bop-cam"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Trần Quốc Toản về chiêu mộ gia binh",
+      "mo_ta": "Trần Quốc Toản trở về huy động gia nô, thân thuộc lập đội quân riêng, may lá cờ thêu sáu chữ «Phá cường địch, báo hoàng ân».",
+      "hien": [
+        "tran-quoc-toan-bop-cam",
+        "mui-ve-chieu-mo"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Thống nhất chủ trương kháng chiến",
+      "mo_ta": "Hội nghị Bình Than thống nhất chủ trương kháng chiến chống Nguyên, đặt nền cho việc chuẩn bị lực lượng và Hội nghị Diên Hồng năm sau.",
+      "hien": [
+        "quan-hoi-ban",
+        "quyet-khang-chien"
+      ]
+    }
+  ],
+  "ket_qua": "Triều đình nhà Trần thống nhất chủ trương kháng chiến chống quân Nguyên xâm lược lần thứ hai; các vương hầu được giao nhiệm vụ chuẩn bị quân lực tại địa phương.",
+  "y_nghia": "Bước chuẩn bị chính trị-quân sự quan trọng, mở đầu cho cuộc kháng chiến chống Nguyên Mông lần thứ hai (1285), gắn với giai thoại Trần Quốc Toản bóp nát quả cam.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/hoi-nghi-binh-than-1282-1-34661.vna",
+    "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/10182/su-that-ve-noi-dien-ra-hoi-nghi-binh-than.html"
+  ]
+}

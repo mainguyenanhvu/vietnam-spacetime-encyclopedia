@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Sa đồ Mạc Đăng Dung soán ngôi nhà Lê 1527 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh. MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "mac-dang-dung-soan-ngoi-1527",
+  "ten": "Mạc Đăng Dung ép vua Lê nhường ngôi, lập nhà Mạc (1527)",
+  "nam": 1527,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Mạc Đăng Dung",
+  "doi_thu": "Vua Lê Cung Hoàng, triều Lê sơ",
+  "dia_diem": "Kinh thành Thăng Long",
+  "lien_quan_tinh": [
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "phan_tu": [
+    {
+      "id": "mac-nam-binh-quyen",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 250,
+      "y": 130,
+      "nhan": "Mạc Đăng Dung nắm binh quyền, thao túng triều chính"
+    },
+    {
+      "id": "thanh-thang-long",
+      "kieu": "thanh",
+      "x": 550,
+      "y": 120,
+      "nhan": "Kinh thành Thăng Long"
+    },
+    {
+      "id": "thanh-trung-doi-lap",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 260,
+      "nhan": "Thanh trừ các thế lực đối lập trong triều"
+    },
+    {
+      "id": "vua-le-cung-hoang",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 780,
+      "y": 200,
+      "nhan": "Vua Lê Cung Hoàng"
+    },
+    {
+      "id": "ep-nhuong-ngoi",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        320,
+        280
+      ],
+      "den": [
+        700,
+        220
+      ],
+      "nhan": "Ép vua Lê Cung Hoàng nhường ngôi (6/1527)"
+    },
+    {
+      "id": "cung-hoang-buc-tu",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 780,
+      "y": 340,
+      "nhan": "Lê Cung Hoàng và Thái hậu bị bức tử"
+    },
+    {
+      "id": "lap-nha-mac",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 400,
+      "y": 420,
+      "nhan": "Mạc Đăng Dung lên ngôi, lập nhà Mạc"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mạc Đăng Dung nắm binh quyền",
+      "mo_ta": "Từ một võ quan, Mạc Đăng Dung dần thăng tiến, nắm giữ binh quyền và thao túng triều chính nhà Lê sơ đang suy yếu.",
+      "hien": [
+        "mac-nam-binh-quyen",
+        "thanh-thang-long"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Thanh trừ thế lực đối lập",
+      "mo_ta": "Mạc Đăng Dung lần lượt thanh trừ các đại thần và thế lực đối lập trong triều để củng cố quyền lực.",
+      "hien": [
+        "mac-nam-binh-quyen",
+        "thanh-trung-doi-lap",
+        "thanh-thang-long"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Ép vua nhường ngôi",
+      "mo_ta": "Tháng 6/1527, Mạc Đăng Dung ép vua Lê Cung Hoàng nhường ngôi.",
+      "hien": [
+        "thanh-trung-doi-lap",
+        "vua-le-cung-hoang",
+        "ep-nhuong-ngoi",
+        "thanh-thang-long"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Vua Lê bị bức tử",
+      "mo_ta": "Sau khi nhường ngôi, Lê Cung Hoàng cùng Thái hậu bị Mạc Đăng Dung bức tử.",
+      "hien": [
+        "vua-le-cung-hoang",
+        "cung-hoang-buc-tu",
+        "thanh-thang-long"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Mạc Đăng Dung lập nhà Mạc",
+      "mo_ta": "Mạc Đăng Dung lên ngôi hoàng đế, lập ra nhà Mạc, chấm dứt triều Lê sơ.",
+      "hien": [
+        "lap-nha-mac",
+        "thanh-thang-long"
+      ]
+    }
+  ],
+  "ket_qua": "Nhà Lê sơ chấm dứt sau hơn 100 năm; Mạc Đăng Dung lập nhà Mạc, mở đầu một giai đoạn mới trong lịch sử phong kiến Việt Nam.",
+  "y_nghia": "Sự kiện gây tranh cãi lớn trong sử sách phong kiến (bị xem là 'nguỵ triều' trong nhiều bộ sử), nhưng cũng mở đầu cho gần 70 năm nội chiến Nam - Bắc triều sau đó.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ tục biên",
+    "Khâm định Việt sử thông giám cương mục — Chính biên"
+  ]
+}

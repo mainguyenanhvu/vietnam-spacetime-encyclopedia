@@ -1,0 +1,170 @@
+{
+  "ghi_chu": "Sa đồ minh hoạ vụ Sĩ Huy nổi dậy chống việc Đông Ngô thay quyền cai quản Giao Châu sau khi Sĩ Nhiếp mất (226) — tranh chấp quyền lực nội bộ giữa họ Sĩ và triều đình Đông Ngô, KHÔNG phải kháng chiến chống ngoại xâm. MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "si-huy-noi-loan-226",
+  "ten": "Sĩ Huy nổi dậy chống Đông Ngô sau khi Sĩ Nhiếp mất (226)",
+  "nam": 226,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Sĩ Huy (con Sĩ Nhiếp)",
+  "doi_thu": "Đông Ngô (Lữ Đại)",
+  "dia_diem": "Quận Giao Chỉ (vùng Long Biên, nay thuộc tỉnh Bắc Ninh) và quận Cửu Chân (nay tỉnh Thanh Hóa)",
+  "lien_quan_tinh": [
+    "bac-ninh",
+    "thanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          750,
+          120
+        ],
+        [
+          500,
+          150
+        ],
+        [
+          280,
+          170
+        ]
+      ],
+      "nhan": "Đường Lữ Đại tiến quân từ Đông Ngô sang"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "long-bien",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 130,
+      "nhan": "Long Biên — thủ phủ Giao Chỉ"
+    },
+    {
+      "id": "si-huy-tu-lap",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 250,
+      "y": 230,
+      "nhan": "Sĩ Huy tự xưng Thái thú, nối quyền cha"
+    },
+    {
+      "id": "lu-dai-tien-quan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 850,
+      "y": 110,
+      "nhan": "Lữ Đại đem quân sang, chia đặt Quảng Châu – Giao Châu"
+    },
+    {
+      "id": "mui-tien-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        780,
+        140
+      ],
+      "den": [
+        340,
+        190
+      ],
+      "nhan": "Lữ Đại tiến quân áp sát Long Biên"
+    },
+    {
+      "id": "si-huy-hang",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 350,
+      "nhan": "Sĩ Huy ra hàng theo lời dụ hoà"
+    },
+    {
+      "id": "si-huy-bi-giet",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 550,
+      "y": 350,
+      "nhan": "Lữ Đại trở mặt, giết Sĩ Huy cùng anh em"
+    },
+    {
+      "id": "cuu-chan",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 490,
+      "nhan": "Cửu Chân"
+    },
+    {
+      "id": "mui-den-cuu-chan",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        520,
+        380
+      ],
+      "den": [
+        280,
+        470
+      ],
+      "nhan": "Lữ Đại tiến xuống dẹp dư đảng họ Sĩ ở Cửu Chân"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sĩ Nhiếp mất, Sĩ Huy tự xưng nối quyền cha",
+      "mo_ta": "Sĩ Nhiếp cai quản Giao Châu gần 40 năm, mất năm 226. Con là Sĩ Huy tự xưng Thái thú, nối quyền cha mà không đợi triều đình Đông Ngô phong.",
+      "hien": [
+        "long-bien",
+        "si-huy-tu-lap"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tôn Quyền chia Giao Châu, cử Lữ Đại đem quân sang",
+      "mo_ta": "Tôn Quyền không chấp nhận việc tự lập, chia Giao Châu thành Quảng Châu và Giao Châu, cử Lữ Đại làm Thứ sử Giao Châu đem quân sang tiếp quản.",
+      "hien": [
+        "long-bien",
+        "si-huy-tu-lap",
+        "lu-dai-tien-quan"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Lữ Đại tiến quân áp sát, Sĩ Huy ra hàng",
+      "mo_ta": "Lữ Đại tiến quân đến Long Biên; Sĩ Huy chống cự không nổi, ra hàng theo lời dụ hứa tha tội của Lữ Đại.",
+      "hien": [
+        "long-bien",
+        "lu-dai-tien-quan",
+        "mui-tien-cong",
+        "si-huy-hang"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Lữ Đại trở mặt, giết Sĩ Huy",
+      "mo_ta": "Lữ Đại thất hứa, giết Sĩ Huy cùng các anh em.",
+      "hien": [
+        "long-bien",
+        "si-huy-hang",
+        "si-huy-bi-giet"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Dẹp dư đảng họ Sĩ ở Cửu Chân, Đông Ngô kiểm soát toàn Giao Châu",
+      "mo_ta": "Lữ Đại tiếp tục tiến xuống Cửu Chân dẹp lực lượng còn lại của họ Sĩ, đặt toàn bộ Giao Châu dưới quyền kiểm soát trực tiếp của Đông Ngô.",
+      "hien": [
+        "cuu-chan",
+        "si-huy-bi-giet",
+        "mui-den-cuu-chan"
+      ]
+    }
+  ],
+  "ket_qua": "Sĩ Huy bị giết, dư đảng họ Sĩ ở Cửu Chân bị dẹp; Đông Ngô đặt quyền cai trị trực tiếp lên toàn bộ Giao Châu, chấm dứt gần 40 năm họ Sĩ cát cứ.",
+  "y_nghia": "Kết thúc thời kỳ họ Sĩ Nhiếp gần như tự trị ở Giao Châu, mở ra giai đoạn Giao Châu chịu sự cai trị trực tiếp và chặt chẽ hơn của các triều đại phương Bắc.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Sĩ Vương",
+    "Khâm định Việt sử thông giám cương mục — Tiền biên"
+  ]
+}

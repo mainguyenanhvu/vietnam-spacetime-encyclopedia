@@ -1,0 +1,143 @@
+{
+  "ghi_chu": "Sa đồ chúa Nguyễn chiếm châu Nam Bố Chính 1630 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Không nêu tên tướng chỉ huy chiến dịch cụ thể vì nguồn không nêu rõ, tránh đoán. trang_thai=draft chờ soát §9.",
+  "id": "chua-nguyen-chiem-nam-bo-chinh-1630",
+  "ten": "Chúa Nguyễn phản công, chiếm châu Nam Bố Chính, xác lập ranh giới sông Gianh (1630)",
+  "nam": 1630,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chúa Nguyễn Phúc Nguyên",
+  "doi_thu": "Chúa Trịnh (quân trấn giữ Bắc Bố Chính)",
+  "dia_diem": "Châu Nam Bố Chính, dọc sông Gianh (nay tỉnh Quảng Trị — trước thuộc tỉnh Quảng Bình)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          60,
+          300
+        ],
+        [
+          400,
+          320
+        ],
+        [
+          750,
+          340
+        ]
+      ],
+      "nhan": "Sông Gianh"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "sau-that-bai-1627",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 130,
+      "nhan": "Sau thất bại của Trịnh Tráng năm 1627"
+    },
+    {
+      "id": "chua-nguyen-phan-cong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 460,
+      "nhan": "Chúa Nguyễn chủ động phản công"
+    },
+    {
+      "id": "quan-nguyen-vuot-song",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 380,
+      "nhan": "Quân Nguyễn vượt sông Gianh"
+    },
+    {
+      "id": "chau-nam-bo-chinh",
+      "kieu": "dia-danh",
+      "x": 650,
+      "y": 260,
+      "nhan": "Châu Nam Bố Chính"
+    },
+    {
+      "id": "mui-tien-chiem",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        480,
+        360
+      ],
+      "den": [
+        630,
+        280
+      ],
+      "nhan": "Tiến đánh, chiếm châu Nam Bố Chính"
+    },
+    {
+      "id": "quan-trinh-day-lui",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 850,
+      "y": 150,
+      "nhan": "Thế lực Trịnh bị đẩy lùi về phía Bắc"
+    },
+    {
+      "id": "ranh-gioi-song-gianh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 460,
+      "nhan": "Xác lập sông Gianh làm ranh giới Đàng Trong - Đàng Ngoài"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Sau thất bại của Trịnh Tráng năm 1627",
+      "mo_ta": "Sau khi cuộc Nam chinh lần thứ nhất của Trịnh Tráng thất bại năm 1627, chúa Nguyễn Phúc Nguyên chủ động chuyển sang phản công.",
+      "hien": [
+        "sau-that-bai-1627",
+        "chua-nguyen-phan-cong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân Nguyễn vượt sông Gianh",
+      "mo_ta": "Năm 1630, quân chúa Nguyễn vượt sông Gianh, tiến đánh vùng đất phía Bắc.",
+      "hien": [
+        "chua-nguyen-phan-cong",
+        "quan-nguyen-vuot-song"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiếm châu Nam Bố Chính",
+      "mo_ta": "Quân Nguyễn tiến đánh và chiếm được châu Nam Bố Chính.",
+      "hien": [
+        "quan-nguyen-vuot-song",
+        "chau-nam-bo-chinh",
+        "mui-tien-chiem"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đẩy lùi thế lực Trịnh, xác lập ranh giới sông Gianh",
+      "mo_ta": "Thế lực Trịnh bị đẩy lùi về phía Bắc; sông Gianh được xác lập làm ranh giới thực tế giữa Đàng Trong và Đàng Ngoài.",
+      "hien": [
+        "chau-nam-bo-chinh",
+        "quan-trinh-day-lui",
+        "ranh-gioi-song-gianh"
+      ]
+    }
+  ],
+  "ket_qua": "Chúa Nguyễn chiếm được châu Nam Bố Chính, đẩy thế lực Trịnh về phía Bắc sông Gianh; sông Gianh trở thành ranh giới thực tế giữa Đàng Trong và Đàng Ngoài trong suốt thời kỳ Trịnh - Nguyễn phân tranh.",
+  "y_nghia": "Củng cố thêm việc chia cắt đất nước theo ranh giới sông Gianh, kéo dài đến cuộc phân tranh Trịnh - Nguyễn hơn 200 năm sau đó.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng thông tin điện tử Bộ Văn hoá, Thể thao và Du lịch (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 1) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html",
+    "Đại Nam thực lục — Tiền biên"
+  ]
+}

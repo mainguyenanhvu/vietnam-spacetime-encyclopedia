@@ -1,9 +1,9 @@
 {
   "tong": {
-    "so_file": 240,
-    "so_muc": 5241,
-    "so_byte": 9601017,
-    "ngay_sinh": "2026-08-05"
+    "so_file": 252,
+    "so_muc": 5253,
+    "so_byte": 9661797,
+    "ngay_sinh": "2026-08-06"
   },
   "files": [
     {
@@ -68,7 +68,7 @@
       "file": "battles/_index.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4564,
+      "byte": 4985,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": null,
@@ -78,7 +78,7 @@
         "so_luong",
         "ids"
       ],
-      "sha256": "7f97ba17f61b1175427aa30b3b4d667a6ee6624eedc451d7a69eebe5c940e396",
+      "sha256": "94e57e125175a8417ee43ccf55aabfbc2d08c6742ae63a440bf10d761138f48c",
       "mo_ta": "SINH TỰ ĐỘNG bởi scripts/build_sado_index.mjs — đừng sửa tay."
     },
     {
@@ -515,6 +515,35 @@
       ],
       "sha256": "51c7cb0c5ee2d5fac6811c1b938b110e0869ed4abe49a553dc52b272422ad3e2",
       "mo_ta": "Sa đồ Chế Bồng Nga đánh Thăng Long lần 1 (1371) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/che-bong-nga-danh-thang-long-1377.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5187,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "2767ea22e78d35d4bbb3da4607f65a539238ee5c2ff044ffae051f01267e9c07",
+      "mo_ta": "Sa đồ Chế Bồng Nga đánh phá Thăng Long 1377 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/che-bong-nga-danh-thang-long-1378.json",
@@ -1008,6 +1037,35 @@
       ],
       "sha256": "af1fefb4f3809aa496d5bea67c557b33347f3076b6ffe54fff50de50a5988b8d",
       "mo_ta": "Sa đồ Chúa Nguyễn Bắc tiến, chiếm 7 huyện Nghệ An 1655–1660 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/chua-nguyen-chiem-nam-bo-chinh-1630.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4630,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "ba1199b9a3a8c4ee965f43449484d318233504c56c4bdffb16cd54504e4daff8",
+      "mo_ta": "Sa đồ chúa Nguyễn chiếm châu Nam Bố Chính 1630 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/cua-eo-thuan-an-1643.json",
@@ -1648,6 +1706,64 @@
       "mo_ta": "Sa đồ Chiến dịch Hòa Bình 1951–1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/hoi-nghi-binh-than-1282.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5614,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "d71375381066962c4493dc8ccec8832770c3d0189b59d389fbfb43a3bb3ae44b",
+      "mo_ta": "Sa đồ Hội nghị Bình Than 1282 — sơ đồ thế cục/diễn biến chính trị-quân sự, KHÔNG phải trận đánh."
+    },
+    {
+      "file": "battles/hoi-the-lung-nhai-1416.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4308,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "5c0a714581b085c8d2f920d001361c4ada386fb11b2163f56057d95dbcfad689",
+      "mo_ta": "Sa đồ Hội thề Lũng Nhai 1416 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh."
+    },
+    {
       "file": "battles/hue-da-nang-1975.json",
       "mien": "battles",
       "so_muc": 1,
@@ -1996,6 +2112,35 @@
       "mo_ta": "Sa đồ khởi nghĩa Ngô Bệ 1344-1360 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/khoi-nghia-nguyen-thanh-nguyen-ky-1379.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4766,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "f389c4e15979ddb5984f4256d356637d1b31759aa29db835a9027c6dc882977c",
+      "mo_ta": "Sa đồ khởi nghĩa Nguyễn Thanh, Nguyễn Kỵ 1379 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
       "file": "battles/khoi-nghia-phan-ba-vanh-1821.json",
       "mien": "battles",
       "so_muc": 1,
@@ -2141,6 +2286,35 @@
       "mo_ta": "Sa đồ Kinh thành Huế thất thủ 1885 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/le-trinh-bac-phat-1559.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5896,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "566c079d2605827066d0d9c40feaa7fe44e84ded0e7be3f4c504576ce121ca79",
+      "mo_ta": "Sa đồ chiến dịch Lê-Trịnh Bắc phạt 1559-1560 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
       "file": "battles/le-van-khoi-chiem-thanh-phien-an-1833.json",
       "mien": "battles",
       "so_muc": 1,
@@ -2228,6 +2402,35 @@
       "mo_ta": "Sa đồ khởi nghĩa Lý Bí 542–544 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/ly-phat-tu-tranh-quyen-van-xuan-571.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5375,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "a2e3e99e20f08abde5dfaeabdb2b7d7a38624ee13776b90b9d1fbc67adb2bdb5",
+      "mo_ta": "Sa đồ vụ Lý Phật Tử chiếm quyền Vạn Xuân từ Triệu Việt Vương (571) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
       "file": "battles/ly-thuong-kiet-nam-chinh-1069.json",
       "mien": "battles",
       "so_muc": 1,
@@ -2255,6 +2458,35 @@
       ],
       "sha256": "7180db84dd53c87a61d8df04ca41944605674870b7afe44dcbd1ab5e938ef496",
       "mo_ta": "Sa đồ Lý Thường Kiệt Nam chinh Chiêm Thành 1069 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/mac-dang-dung-soan-ngoi-1527.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4183,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia",
+        "trang_thai"
+      ],
+      "sha256": "f4df211d461813d017e41e1e4e53201520247893709b11c0990e1f5441c3edb3",
+      "mo_ta": "Sa đồ Mạc Đăng Dung soán ngôi nhà Lê 1527 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh."
     },
     {
       "file": "battles/mat-tran-vi-xuyen-1984-1989.json",
@@ -2576,6 +2808,35 @@
       "mo_ta": "Sa đồ Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long 1786 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/nguyen-kim-pho-le-diet-mac-1533.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4838,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia",
+        "trang_thai"
+      ],
+      "sha256": "0c8623836f3ed54aae57e835623d4cb0b34e938ccedb4380192b5adf0ad626b4",
+      "mo_ta": "Sa đồ Nguyễn Kim dựng cờ 'phù Lê diệt Mạc' 1533 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh."
+    },
+    {
       "file": "battles/nguyen-trung-truc-danh-don-kien-giang-1868.json",
       "mien": "battles",
       "so_muc": 1,
@@ -2835,6 +3096,35 @@
       ],
       "sha256": "22873eae6c9e56a13389ad8f8848a0a2fd30794fa41edd8eb016fe1a3861c511",
       "mo_ta": "Sa đồ trận Rạch Gầm – Xoài Mút 1785 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/si-huy-noi-loan-226.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5312,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "58b7bdcb687542b96517ea91b25f83c55ad363dadc21f5e9a4b54d20552a5071",
+      "mo_ta": "Sa đồ minh hoạ vụ Sĩ Huy nổi dậy chống việc Đông Ngô thay quyền cai quản Giao Châu sau khi Sĩ Nhiếp mất (226) — tranh chấp quyền lực nội bộ giữa họ Sĩ và triều đình Đông Ngô, KHÔNG phải kháng chiến chống ngoại xâm."
     },
     {
       "file": "battles/tay-bac-1952.json",
@@ -3301,6 +3591,35 @@
       "mo_ta": "Sa đồ trận đồi A Bia 1969 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/tran-ho-dien-triet-545.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5362,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "43c55d02dbcdabdb7df2873c5efd2e628996b2ea146d4a8bcd3c675b1ece2436",
+      "mo_ta": "Sa đồ trận hồ Điển Triệt 545 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
       "file": "battles/tran-lang-vay-1968.json",
       "mien": "battles",
       "so_muc": 1,
@@ -3328,6 +3647,35 @@
       ],
       "sha256": "2e8f61cf0a7d6f88c3cb61c91893f4d2e91dc8acf0aa4401e6798af1fc4e67cb",
       "mo_ta": "Sa đồ trận Làng Vây 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/tran-nhat-le-1627.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4888,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "e124f01149b0437b522e2b4ed3bd117c773db0ea9f8412f4be2d31e734cc5550",
+      "mo_ta": "Sa đồ trận Nhật Lệ 1627 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/tran-nhat-tao-1861.json",

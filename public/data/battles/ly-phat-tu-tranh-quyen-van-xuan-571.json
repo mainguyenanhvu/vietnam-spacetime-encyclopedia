@@ -1,0 +1,168 @@
+{
+  "ghi_chu": "Sa đồ vụ Lý Phật Tử chiếm quyền Vạn Xuân từ Triệu Việt Vương (571) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Nguồn ghi khác nhau về nơi Triệu Việt Vương gieo mình: có thuyết là cửa Đại Nha, có thuyết là cửa Đại Ác — sa đồ mô tả chung là «vùng cửa sông Đáy», không chọn một thuyết. trang_thai=draft chờ soát §9.",
+  "id": "ly-phat-tu-tranh-quyen-van-xuan-571",
+  "ten": "Lý Phật Tử đánh bại Triệu Việt Vương, chiếm quyền Vạn Xuân (571)",
+  "nam": 571,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Triệu Việt Vương (Triệu Quang Phục)",
+  "doi_thu": "Lý Phật Tử",
+  "dia_diem": "Vùng cửa sông Đáy — hai thuyết: cửa Đại Nha hoặc cửa Đại Ác, nay thuộc tỉnh Ninh Bình",
+  "lien_quan_tinh": [
+    "ninh-binh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          200
+        ],
+        [
+          400,
+          300
+        ],
+        [
+          700,
+          420
+        ]
+      ],
+      "nhan": "Sông Đáy"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          650,
+          460
+        ],
+        [
+          850,
+          500
+        ],
+        [
+          960,
+          540
+        ]
+      ],
+      "nhan": "Cửa sông Đáy ra biển"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "hoa-uoc",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 130,
+      "nhan": "Triệu Việt Vương – Lý Phật Tử giảng hoà, chia đất, kết thông gia (Nhã Lang – Cảo Nương)"
+    },
+    {
+      "id": "quan-dich-danh-up",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 200,
+      "y": 260,
+      "nhan": "Lý Phật Tử bất ngờ đánh úp, phá vỡ hoà ước"
+    },
+    {
+      "id": "quan-ta-thua-chay",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 340,
+      "nhan": "Triệu Việt Vương thua chạy về phía biển"
+    },
+    {
+      "id": "mui-truy-duoi",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        260,
+        290
+      ],
+      "den": [
+        420,
+        350
+      ],
+      "nhan": "Lý Phật Tử truy đuổi"
+    },
+    {
+      "id": "cua-song-day",
+      "kieu": "dia-danh",
+      "x": 720,
+      "y": 470,
+      "nhan": "Vùng cửa sông Đáy (cửa Đại Nha / cửa Đại Ác — hai thuyết)"
+    },
+    {
+      "id": "trieu-viet-vuong-tu-van",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 720,
+      "y": 380,
+      "nhan": "Triệu Việt Vương cùng đường, tự vẫn"
+    },
+    {
+      "id": "ly-phat-tu-chiem-van-xuan",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 450,
+      "y": 200,
+      "nhan": "Lý Phật Tử chiếm trọn Vạn Xuân, xưng Hậu Lý Nam Đế"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Giảng hoà, chia đất, kết thông gia",
+      "mo_ta": "Sau nhiều lần giao tranh bất phân thắng bại, Triệu Việt Vương và Lý Phật Tử giảng hoà, chia đất cai quản; hai bên kết thông gia — Nhã Lang (con Lý Phật Tử) cưới Cảo Nương (con Triệu Việt Vương).",
+      "hien": [
+        "hoa-uoc"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lý Phật Tử bất ngờ đánh úp",
+      "mo_ta": "Lý Phật Tử bất ngờ đem quân đánh úp, phá vỡ hoà ước đã lập.",
+      "hien": [
+        "hoa-uoc",
+        "quan-dich-danh-up"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Triệu Việt Vương thua chạy",
+      "mo_ta": "Không kịp phòng bị, Triệu Việt Vương thua trận, đem theo con gái chạy về phía biển, bị Lý Phật Tử truy đuổi gấp.",
+      "hien": [
+        "quan-dich-danh-up",
+        "quan-ta-thua-chay",
+        "mui-truy-duoi"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Cùng đường tại vùng cửa sông Đáy, tự vẫn",
+      "mo_ta": "Triệu Việt Vương chạy đến vùng cửa sông Đáy — sử chép khác nhau về địa điểm chính xác, có thuyết là cửa Đại Nha, có thuyết là cửa Đại Ác — cùng đường, gieo mình xuống biển tự vẫn.",
+      "hien": [
+        "cua-song-day",
+        "trieu-viet-vuong-tu-van"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Lý Phật Tử chiếm trọn Vạn Xuân",
+      "mo_ta": "Lý Phật Tử chiếm toàn bộ nước Vạn Xuân, tự xưng là Hậu Lý Nam Đế.",
+      "hien": [
+        "ly-phat-tu-chiem-van-xuan"
+      ]
+    }
+  ],
+  "ket_qua": "Triệu Việt Vương tự vẫn tại vùng cửa sông Đáy; Lý Phật Tử chiếm trọn Vạn Xuân, xưng Hậu Lý Nam Đế, cai trị đến khi nhà Tuỳ sang đánh năm 602.",
+  "y_nghia": "Chấm dứt thế lực Triệu Việt Vương, đưa Vạn Xuân vào tay Lý Phật Tử — giai đoạn cuối cùng của nhà nước Vạn Xuân trước khi rơi vào tay nhà Tuỳ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Tiền Lý",
+    "Khâm định Việt sử thông giám cương mục — Tiền biên"
+  ]
+}

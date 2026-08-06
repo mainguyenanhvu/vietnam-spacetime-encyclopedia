@@ -1,0 +1,168 @@
+{
+  "ghi_chu": "Sa đồ trận Nhật Lệ 1627 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Không nêu quân số/thương vong vì nguồn không ghi con số cụ thể. trang_thai=draft chờ soát §9.",
+  "id": "tran-nhat-le-1627",
+  "ten": "Trịnh Tráng Nam chinh lần thứ nhất, giao tranh tại Nhật Lệ (1627)",
+  "nam": 1627,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chúa Trịnh Tráng",
+  "doi_thu": "Chúa Nguyễn Phúc Nguyên",
+  "dia_diem": "Cửa biển Nhật Lệ, sông Gianh (nay tỉnh Quảng Trị — trước thuộc tỉnh Quảng Bình)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          60,
+          300
+        ],
+        [
+          400,
+          320
+        ],
+        [
+          750,
+          340
+        ]
+      ],
+      "nhan": "Sông Gianh"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          700,
+          400
+        ],
+        [
+          850,
+          440
+        ],
+        [
+          960,
+          480
+        ]
+      ],
+      "nhan": "Cửa biển Nhật Lệ"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "trinh-trang-phat-dong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 150,
+      "nhan": "1627: Trịnh Tráng phát động Nam chinh lần thứ nhất"
+    },
+    {
+      "id": "quan-trinh-tien",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 250,
+      "nhan": "Đại quân Trịnh tiến vào Nam"
+    },
+    {
+      "id": "cua-nhat-le",
+      "kieu": "dia-danh",
+      "x": 650,
+      "y": 400,
+      "nhan": "Cửa biển Nhật Lệ, sông Gianh"
+    },
+    {
+      "id": "phong-tuyen-nguyen",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 280,
+      "nhan": "Phòng tuyến quân Nguyễn dọc sông Gianh"
+    },
+    {
+      "id": "mui-giao-tranh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        420,
+        260
+      ],
+      "den": [
+        600,
+        290
+      ],
+      "nhan": "Hai bên giao tranh giằng co tại Nhật Lệ"
+    },
+    {
+      "id": "quan-trinh-rut",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        600,
+        250
+      ],
+      "den": [
+        250,
+        150
+      ],
+      "nhan": "Quân Trịnh không phá được phòng tuyến, rút về Bắc"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trịnh Tráng phát động Nam chinh lần thứ nhất",
+      "mo_ta": "Năm 1627, chúa Trịnh Tráng phát động cuộc Nam chinh lần thứ nhất, đưa đại quân vào đánh chúa Nguyễn ở Đàng Trong.",
+      "hien": [
+        "trinh-trang-phat-dong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đại quân Trịnh tiến vào Nam",
+      "mo_ta": "Quân Trịnh tiến vào Nam, hướng đến khu vực sông Gianh.",
+      "hien": [
+        "trinh-trang-phat-dong",
+        "quan-trinh-tien"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiến đến cửa biển Nhật Lệ, đối đầu phòng tuyến quân Nguyễn",
+      "mo_ta": "Quân Trịnh tiến đến cửa biển Nhật Lệ, sông Gianh, đối đầu với phòng tuyến phòng thủ của quân Nguyễn.",
+      "hien": [
+        "quan-trinh-tien",
+        "cua-nhat-le",
+        "phong-tuyen-nguyen"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Giao tranh giằng co",
+      "mo_ta": "Hai bên giao tranh giằng co tại khu vực cửa Nhật Lệ, sông Gianh.",
+      "hien": [
+        "cua-nhat-le",
+        "phong-tuyen-nguyen",
+        "mui-giao-tranh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân Trịnh rút về Bắc",
+      "mo_ta": "Quân Trịnh không phá được phòng tuyến quân Nguyễn, buộc phải rút quân về Bắc.",
+      "hien": [
+        "phong-tuyen-nguyen",
+        "quan-trinh-rut"
+      ]
+    }
+  ],
+  "ket_qua": "Quân Trịnh không phá được phòng tuyến quân Nguyễn, phải rút về Bắc; ranh giới sông Gianh giữa hai vùng cát cứ Đàng Trong - Đàng Ngoài bắt đầu hình thành trên thực tế.",
+  "y_nghia": "Mở đầu cuộc chiến Trịnh - Nguyễn kéo dài hơn nửa thế kỷ (1627–1672), chính thức chia cắt đất nước thành Đàng Trong và Đàng Ngoài lấy sông Gianh làm ranh giới thực tế.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng thông tin điện tử Bộ Văn hoá, Thể thao và Du lịch (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 1) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html",
+    "Đại Nam thực lục — Tiền biên"
+  ]
+}

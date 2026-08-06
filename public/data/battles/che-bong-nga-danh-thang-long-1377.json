@@ -1,0 +1,184 @@
+{
+  "ghi_chu": "Sa đồ Chế Bồng Nga đánh phá Thăng Long 1377 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Trình bày theo sử liệu, không kèm lời bình sắc tộc. trang_thai=draft chờ soát §9.",
+  "id": "che-bong-nga-danh-thang-long-1377",
+  "ten": "Chế Bồng Nga đánh phá Thăng Long lần thứ hai, qua cửa Thần Phù (1377)",
+  "nam": 1377,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Duệ Tông (mất trận Đồ Bàn) / Trần Phế Đế",
+  "doi_thu": "Chiêm Thành (Chế Bồng Nga)",
+  "dia_diem": "Kinh thành Thăng Long, qua ngả cửa Thần Phù – sông Chính Đại (Yên Mô, nay tỉnh Ninh Bình)",
+  "lien_quan_tinh": [
+    "ninh-binh",
+    "ha-noi"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          80,
+          480
+        ],
+        [
+          200,
+          520
+        ],
+        [
+          340,
+          500
+        ]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          300,
+          460
+        ],
+        [
+          450,
+          380
+        ],
+        [
+          560,
+          280
+        ]
+      ],
+      "nhan": "Cửa Thần Phù – sông Chính Đại"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "do-ban",
+      "kieu": "dia-danh",
+      "x": 100,
+      "y": 120,
+      "nhan": "Thành Đồ Bàn (Chiêm Thành) — Trần Duệ Tông tử trận đầu 1377"
+    },
+    {
+      "id": "thuyen-cham-xuat-phat",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 150,
+      "y": 470,
+      "nhan": "Thuỷ quân Chế Bồng Nga xuất phát, tiến ra Bắc"
+    },
+    {
+      "id": "cua-than-phu",
+      "kieu": "dia-danh",
+      "x": 420,
+      "y": 440,
+      "nhan": "Cửa Thần Phù (Yên Mô, Ninh Bình)"
+    },
+    {
+      "id": "mui-tien-bac",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        220,
+        460
+      ],
+      "den": [
+        400,
+        440
+      ],
+      "nhan": "Quân Chiêm qua cửa Thần Phù, tiến vào sông"
+    },
+    {
+      "id": "mui-ap-sat-thang-long",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        460,
+        400
+      ],
+      "den": [
+        700,
+        220
+      ],
+      "nhan": "Áp sát Thăng Long"
+    },
+    {
+      "id": "thang-long-that-thu",
+      "kieu": "thanh",
+      "x": 750,
+      "y": 170,
+      "nhan": "Kinh thành Thăng Long thất thủ"
+    },
+    {
+      "id": "vua-tran-chay-lanh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 850,
+      "y": 280,
+      "nhan": "Vua tôi nhà Trần phải chạy lánh"
+    },
+    {
+      "id": "cuop-pha-rut",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 750,
+      "y": 100,
+      "nhan": "Quân Chiêm cướp phá, đốt cung điện rồi rút về"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Trần Duệ Tông tử trận tại thành Đồ Bàn",
+      "mo_ta": "Đầu năm 1377, vua Trần Duệ Tông thân chinh đánh Chiêm Thành, tử trận trước thành Đồ Bàn.",
+      "hien": [
+        "do-ban"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chế Bồng Nga thừa thắng tiến ra Bắc",
+      "mo_ta": "Thừa thắng, Chế Bồng Nga đem thuỷ quân tiến ra Bắc theo đường biển.",
+      "hien": [
+        "do-ban",
+        "thuyen-cham-xuat-phat"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Qua cửa Thần Phù, tiến vào sông",
+      "mo_ta": "Quân Chiêm theo đường biển qua cửa Thần Phù – sông Chính Đại (Yên Mô, nay Ninh Bình), tiến sâu vào nội địa.",
+      "hien": [
+        "thuyen-cham-xuat-phat",
+        "cua-than-phu",
+        "mui-tien-bac"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Áp sát và đánh chiếm Thăng Long",
+      "mo_ta": "Quân Chiêm tiến thẳng đến áp sát rồi đánh chiếm kinh thành Thăng Long; vua tôi nhà Trần không kịp phòng bị phải chạy lánh.",
+      "hien": [
+        "cua-than-phu",
+        "mui-ap-sat-thang-long",
+        "thang-long-that-thu",
+        "vua-tran-chay-lanh"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cướp phá rồi rút quân",
+      "mo_ta": "Quân Chiêm cướp phá, đốt cung điện tại Thăng Long trong nhiều ngày rồi rút quân về nước.",
+      "hien": [
+        "thang-long-that-thu",
+        "cuop-pha-rut"
+      ]
+    }
+  ],
+  "ket_qua": "Kinh thành Thăng Long bị chiếm và cướp phá; quân Chiêm sau đó rút về nước. Đây là một trong nhiều lần Chế Bồng Nga đánh ra Thăng Long cuối thời Trần.",
+  "y_nghia": "Cho thấy sự suy yếu quân sự của nhà Trần cuối thế kỷ XIV trước sức tiến công liên tục của Chiêm Thành dưới thời Chế Bồng Nga.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
+    "Khâm định Việt sử thông giám cương mục — Chính biên"
+  ]
+}
