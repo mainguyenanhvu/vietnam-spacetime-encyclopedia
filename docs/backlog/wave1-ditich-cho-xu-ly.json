@@ -7420,6 +7420,45 @@
         "[WF] nhandan.vn + [WS] tuoitre (tu bổ 2024)"
       ],
       "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "ben-do-phu-my",
+      "ten": "Bến đò Phú Mỹ (đồn Pháp 1945-47 — bia căm thù)",
+      "cap": "quoc-gia",
+      "xep_hang": "Lịch sử QG — 20/7/1994, số chưa xác minh (⚠️ khớp ĐỢT 921/QĐ-BT 20/7/1994 HN+KG+Huế → TG là tỉnh thứ 4 của đợt)",
+      "dia_diem": "Phú Mỹ cũ, Tân Phước (nay Hưng Thạnh)",
+      "mo_ta": "Tuyến sông Mỹ Tho - Đồng Tháp Mười; nơi Pháp tra tấn, hành quyết cán bộ. Nội dung tội ác chiến tranh — soát §9 khi nạp.",
+      "nguon": [
+        "[WF-gov] svhttdl.tiengiang.gov.vn (đường pop_up lọt qua cert chết)"
+      ],
+      "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "chien-luy-phao-dai",
+      "ten": "Chiến lũy Pháo Đài (đồn Từ Linh 1834 → chiến lũy Trương Định)",
+      "cap": "quoc-gia",
+      "xep_hang": "Lịch sử QG — 1987, số trống (nguồn fetch xác nhận năm, không số — hợp chuẩn kho)",
+      "dia_diem": "Phú Tân cũ, Tân Phú Đông (giữ Cửa Tiểu)",
+      "mo_ta": "Triều Nguyễn đắp giữ cửa sông; sau 1861 Trương Định biến thành chiến lũy có đại bác. LIÊN KẾT CHÉO: lăng Trương Định (DB có) — chuỗi Trương Định.",
+      "nguon": [
+        "[WF] baodongthap.vn"
+      ],
+      "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "dinh-dieu-hoa",
+      "ten": "Đình Điều Hoà (~1792 — trạm quan lại triều Nguyễn qua Mỹ Tho)",
+      "cap": "quoc-gia",
+      "xep_hang": "Lịch sử - văn hoá QG — 2009 (hậu tố BVHTTDL khớp phép thử niên đại), số trống",
+      "dia_diem": "101 Trịnh Hoài Đức, P.2 Mỹ Tho cũ",
+      "mo_ta": "Chạm khắc quy mô lớn, đậm bản sắc Nam Bộ.",
+      "nguon": [
+        "[WF] baodongthap.vn"
+      ],
+      "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
     }
   ],
   "can_xac_minh": [
@@ -13075,6 +13114,61 @@
       "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
       "nguon": [
         "[WS-only]; kiểm trùng DB: KHÔNG có — hợp lệ vào kho"
+      ]
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "dinh-long-trung",
+      "ten": "Đình Long Trung (Mỹ Đông Trung Đình — phong cách Hoa - Nam Bộ)",
+      "dia_diem": "Long Trung cũ, Cai Lậy (nay Long Tiên) — KHÔNG nhầm đình Long Hưng (DB có)",
+      "xep_hang_theo_nguon": "KTNT QG 1999 — số trống",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only] baoapbac (DNS chết không fetch được)"
+      ]
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "chien-thang-giong-dua",
+      "ten": "Chiến thắng Giồng Dứa (25/4/1947 — Trần Văn Trà chỉ huy)",
+      "dia_diem": "Long Định, Châu Thành cũ; tượng đài 1985, dời 2000 khi mở QL1",
+      "xep_hang_theo_nguon": "Lịch sử QG — 27/11/2003, số trống (cùng quãng 'cuối 2003' với thành Cha BĐ — chưa đủ bằng chứng ghép đợt)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only] baoapbac"
+      ]
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "tham-sat-cho-giua",
+      "ten": "Địa điểm thảm sát Chợ Giữa - Vĩnh Kim (5/12/1940)",
+      "dia_diem": "Vĩnh Kim, Châu Thành cũ; tượng đài Căm thù đồng cao 8 m (2005)",
+      "xep_hang_theo_nguon": "Lịch sử QG — NĂM VÊNH: 2003 vs 22/2/2004 — nêu vênh không tự chọn. ⚠️ NHẠY CẢM §9: Pháp ném bom chợ đông người trong Khởi nghĩa Nam Kỳ, 'hơn 200 thương vong' (theo báo Ấp Bắc — giữ nguyên nguồn, cấm gán chéo)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only] baoapbac; liên kết chéo lớp Nam Kỳ khởi nghĩa (đình Long Hưng DB có)"
+      ]
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "dinh-doc-phu-hai",
+      "ten": "Dinh Đốc phủ Hải (Gò Công — Á Đông + châu Âu, gỗ quý đá cẩm thạch)",
+      "dia_diem": "P.1 Gò Công cũ; 1980-99 làm Nhà truyền thống, 2000 trả tên",
+      "xep_hang_theo_nguon": "KTNT QG 1994 — số trống; search ra '921 ngày 20/7/1994' — trùng ngày Bến đò Phú Mỹ: HOẶC AI gán chéo HOẶC cùng đợt 921 thật — không gán, chờ fetch khớp tên",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only] đồng thuận nhiều nguồn thứ cấp"
+      ]
+    },
+    {
+      "lo": "tiengiang-w18",
+      "id": "lang-tu-kiet",
+      "ten": "Lăng Tứ Kiệt (4 nghĩa quân kháng Pháp Cai Lậy 1868-71)",
+      "dia_diem": "Mỹ Phước Tây, Cai Lậy cũ; giỗ 25 tháng Chạp hằng năm",
+      "xep_hang_theo_nguon": "Lịch sử - văn hoá QG — 13/9/1999 (nguồn hội đồng hương fetch được — NGOÀI chuẩn nhà nước, độ tin trung bình); '61/QĐ-BT 1999' bị bác (hậu tố lệch niên đại + không khớp fetch)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WF] donghuongtiengiang.vn (hội đồng hương — cần nguồn nhà nước củng cố)"
       ]
     }
   ],
