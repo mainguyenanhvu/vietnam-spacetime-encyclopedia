@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5409,
-    "tong_co_toa_do": 2627,
+    "tong_muc": 5417,
+    "tong_co_toa_do": 2634,
     "so_nhom_trung_ten": 828,
-    "so_cap_trung_toa_do": 722,
+    "so_cap_trung_toa_do": 740,
     "ngay_sinh": "2026-08-11"
   },
   "entries": [
@@ -33314,6 +33314,45 @@
       "trang_thai": "reviewed"
     },
     {
+      "id": "ly-tu-tien-dinh-kien-687",
+      "slug": null,
+      "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)",
+      "ten_chuan": "khoi nghia ly tu tien dinh kien 687",
+      "file": "overlays/chien-dich-tran-danh.json",
+      "mien": "overlays",
+      "loai": "giu-nuoc",
+      "lat": 21.03,
+      "lon": 105.85,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "khoi-nghia-duong-thanh-819",
+      "slug": null,
+      "ten": "Khởi nghĩa Dương Thanh (819–820)",
+      "ten_chuan": "khoi nghia duong thanh 819 820",
+      "file": "overlays/chien-dich-tran-danh.json",
+      "mien": "overlays",
+      "loai": "giu-nuoc",
+      "lat": 21.03,
+      "lon": 105.85,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+      "slug": null,
+      "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)",
+      "ten_chuan": "nam chieu danh chiem giao chau cao bien khoi phuc xay thanh dai la 862 866",
+      "file": "overlays/chien-dich-tran-danh.json",
+      "mien": "overlays",
+      "loai": "trung-dai",
+      "lat": 21.03,
+      "lon": 105.85,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
       "id": "cau-my-thuan",
       "slug": null,
       "ten": "Cầu Mỹ Thuận",
@@ -66256,6 +66295,32 @@
       "trang_thai": null
     },
     {
+      "id": "su-kien-duong-tam-kha-soan-ngoi-944",
+      "slug": null,
+      "ten": "Dương Tam Kha soán ngôi, xưng Bình Vương",
+      "ten_chuan": "duong tam kha soan ngoi xung binh vuong",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 19.8862853,
+      "lon": 105.6800613,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-ngo-xuong-van-khoi-phuc-950",
+      "slug": null,
+      "ten": "Ngô Xương Văn lật đổ Dương Tam Kha, khôi phục nhà Ngô",
+      "ten_chuan": "ngo xuong van lat do duong tam kha khoi phuc nha ngo",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "trieu-dai",
+      "lat": 21.1026389,
+      "lon": 105.8719903,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
       "id": "nha-ngo-ket-thuc-965",
       "slug": null,
       "ten": "Nhà Ngô kết thúc, mở đầu Loạn 12 sứ quân",
@@ -66289,6 +66354,32 @@
       "file": "timeline/moc-lich-su.json",
       "mien": "timeline",
       "loai": "trieu-dai",
+      "lat": 20.2668,
+      "lon": 105.9012,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-dat-nien-hieu-thai-binh-970",
+      "slug": null,
+      "ten": "Đinh Tiên Hoàng đặt niên hiệu Thái Bình",
+      "ten_chuan": "dinh tien hoang dat nien hieu thai binh",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
+      "lat": 20.2668,
+      "lon": 105.9012,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "su-kien-do-thich-sat-hai-dinh-tien-hoang-979",
+      "slug": null,
+      "ten": "Đỗ Thích sát hại Đinh Tiên Hoàng và Đinh Liễn",
+      "ten_chuan": "do thich sat hai dinh tien hoang va dinh lien",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "su-kien",
       "lat": 20.2668,
       "lon": 105.9012,
       "so_nguon": 1,
@@ -66343,6 +66434,19 @@
       "loai": "tran-danh",
       "lat": 20.935,
       "lon": 106.785,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "khang-chien-chong-chiem-thanh-982",
+      "slug": null,
+      "ten": "Lê Hoàn đánh Chiêm Thành, hạ kinh đô Indrapura",
+      "ten_chuan": "le hoan danh chiem thanh ha kinh do indrapura",
+      "file": "timeline/moc-lich-su.json",
+      "mien": "timeline",
+      "loai": "tran-danh",
+      "lat": null,
+      "lon": null,
       "so_nguon": 1,
       "trang_thai": null
     },
@@ -89889,6 +89993,162 @@
     },
     {
       "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-an-nam-do-ho-phu-679",
+        "ten": "Nhà Đường lập An Nam đô hộ phủ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-hoi-the-dong-quan-1427",
+        "ten": "Hội thề Đông Quan, quân Minh rút khỏi Đại Việt"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh (819–820)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-an-nam-do-ho-phu-679",
+        "ten": "Nhà Đường lập An Nam đô hộ phủ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh (819–820)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh (819–820)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh (819–820)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-hoi-the-dong-quan-1427",
+        "ten": "Hội thề Đông Quan, quân Minh rút khỏi Đại Việt"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+        "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-an-nam-do-ho-phu-679",
+        "ten": "Nhà Đường lập An Nam đô hộ phủ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+        "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+        "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+        "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-hoi-the-dong-quan-1427",
+        "ten": "Hội thề Đông Quan, quân Minh rút khỏi Đại Việt"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
         "file": "overlays/danh-nhan-dan-toc-thieu-so.json",
         "id": "ama-kong",
         "ten": "Ama Kông"
@@ -91457,6 +91717,32 @@
         "file": "timeline/moc-lich-su.json",
         "id": "chua-trinh-bat-dau-1545",
         "ten": "Trịnh Kiểm — chúa Trịnh đầu tiên nắm quyền Đàng Ngoài"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/vua-hoang-de.json",
+        "id": "duong-tam-kha",
+        "ten": "Dương Tam Kha (Dương Bình Vương)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-duong-tam-kha-soan-ngoi-944",
+        "ten": "Dương Tam Kha soán ngôi, xưng Bình Vương"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/vua-hoang-de.json",
+        "id": "ngo-xuong-van-nam-tan-vuong",
+        "ten": "Ngô Xương Văn (Nam Tấn Vương)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-ngo-xuong-van-khoi-phuc-950",
+        "ten": "Ngô Xương Văn lật đổ Dương Tam Kha, khôi phục nhà Ngô"
       },
       "khoang_cach_m": 0
     },
@@ -93810,6 +94096,19 @@
         "file": "overlays/vua-hoang-de.json",
         "id": "ngo-xuong-van-nam-tan-vuong",
         "ten": "Ngô Xương Văn (Nam Tấn Vương)"
+      },
+      "khoang_cach_m": 65
+    },
+    {
+      "a": {
+        "file": "overlays/huyen-su-khai-quoc.json",
+        "id": "an-duong-vuong",
+        "ten": "An Dương Vương (Thục Phán)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-ngo-xuong-van-khoi-phuc-950",
+        "ten": "Ngô Xương Văn lật đổ Dương Tam Kha, khôi phục nhà Ngô"
       },
       "khoang_cach_m": 65
     },
@@ -97478,6 +97777,45 @@
         "ten": "Văn Miếu – Quốc Tử Giám"
       },
       "khoang_cach_m": 190
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "thap-bao-thien",
+        "ten": "Tháp Báo Thiên — An Nam tứ đại khí"
+      },
+      "khoang_cach_m": 191
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh (819–820)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "thap-bao-thien",
+        "ten": "Tháp Báo Thiên — An Nam tứ đại khí"
+      },
+      "khoang_cach_m": 191
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+        "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "thap-bao-thien",
+        "ten": "Tháp Báo Thiên — An Nam tứ đại khí"
+      },
+      "khoang_cach_m": 191
     },
     {
       "a": {
