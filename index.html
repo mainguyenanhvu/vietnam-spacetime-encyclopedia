@@ -62,7 +62,9 @@
       </footer>
       <aside id="province-panel" data-nhan="Hồ sơ tỉnh thành" hidden>
         <button id="panel-close" aria-label="Đóng">×</button>
-        <div id="panel-content"></div>
+        <!-- aria-live=polite: nội dung swap cả innerHTML khi đổi tỉnh — không
+             có vùng live thì trình đọc màn hình im lặng hoàn toàn. -->
+        <div id="panel-content" aria-live="polite"></div>
       </aside>
       <aside id="library-panel" data-nhan="Thư viện" hidden>
         <button id="library-close" aria-label="Đóng">×</button>

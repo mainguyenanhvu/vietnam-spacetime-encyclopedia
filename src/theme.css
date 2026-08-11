@@ -72,6 +72,14 @@
      của trình phát video, đổi nó theo theme sẽ trông như lỗi render. */
   --nen-khung-video: #000;
   --nen-khung-3d: #111;
+
+  /* Bốn màu ngữ nghĩa dùng MỘT lần — lên token 2026-08-11 (PLAN mục 1).
+     Bất biến giữa hai chế độ: trước đây là hex thẳng trong style.css nên
+     hai chế độ vốn đã dùng chung giá trị; token hoá giữ nguyên hành vi. */
+  --truyen-au-lac-nen: #fce7f3; /* nền nhân vật Âu Lạc trong truyện */
+  --story-retry-chu: #a84d08; /* chữ .story-retry — 4,52:1 trên nền #fde68a, KHÔNG phải --luu-chu */
+  --qg-badge-khac-nen: #fef2f2; /* badge «chưa rõ chính chủ» — sát --sai-nen nhưng cố ý không gộp */
+  --nhan-huyen-su: #7c3aed; /* nhãn «huyền sử» .lc-tag */
 }
 
 /* ═══════════════════════════════════════════════════════════════════════

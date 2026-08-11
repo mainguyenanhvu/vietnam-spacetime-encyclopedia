@@ -458,7 +458,7 @@ body.kid-mode #topbar {
 }
 
 .story-au {
-  background: #fce7f3;
+  background: var(--truyen-au-lac-nen);
   border-radius: var(--bo-vua);
   padding: 0.4rem 0.6rem;
 }
@@ -528,10 +528,9 @@ body.kid-mode #topbar {
 
 .story-retry {
   /* #b45309 gốc chỉ đạt 4.03:1 trên nền gradient story-panel (#fde68a) — dưới
-     ngưỡng 4.5:1. Đậm thêm 1 nấc để đạt 4.52:1, vẫn cùng tông cam-nâu.
-     #a84d08 chưa có token tương ứng trong theme.css (không phải --luu-chu —
-     giá trị khác) — CỐ Ý giữ hex, xem báo cáo mục E/F. */
-  color: #a84d08;
+     ngưỡng 4.5:1. Token --story-retry-chu (#a84d08) đậm hơn 1 nấc đạt 4.52:1,
+     KHÔNG phải --luu-chu (giá trị khác). Lên token 2026-08-11. */
+  color: var(--story-retry-chu);
   font-weight: 600;
 }
 
@@ -1180,7 +1179,7 @@ body.kid-mode #topbar {
   border: 1px solid var(--vien-ro);
 }
 .qg-badge-state { background: var(--dung-nen); color: var(--dung-chu); border-color: var(--dung-vien); }
-.qg-badge-khac { background: #fef2f2; color: var(--brand); border-color: var(--sai-vien); }
+.qg-badge-khac { background: var(--qg-badge-khac-nen); color: var(--brand); border-color: var(--sai-vien); }
 .qg-draft { background: var(--mat-3); color: var(--luu-chu); border-color: var(--nhan-mo); }
 .qg-card-multi .qg-version { margin-top: 0.5rem; }
 .qg-version-by { font-size: var(--co-sm); font-weight: 600; margin: 0.2rem 0; color: var(--chu-mem); }
@@ -1507,7 +1506,7 @@ body.kid-mode #topbar {
 #layer-control .lc-tag {
   font-size: var(--co-2xs);
   background: rgba(147, 51, 234, 0.14);
-  color: #7c3aed;
+  color: var(--nhan-huyen-su);
   border-radius: var(--bo-vien-tron);
   padding: 0.02rem 0.42rem;
   font-weight: 600;
