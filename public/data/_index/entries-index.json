@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5444,
-    "tong_co_toa_do": 2661,
+    "tong_muc": 5454,
+    "tong_co_toa_do": 2671,
     "so_nhom_trung_ten": 828,
-    "so_cap_trung_toa_do": 757,
+    "so_cap_trung_toa_do": 764,
     "ngay_sinh": "2026-08-11"
   },
   "entries": [
@@ -39866,6 +39866,201 @@
       "trang_thai": "reviewed"
     },
     {
+      "id": "truong-thanh-nien-tien-tuyen-hue",
+      "slug": null,
+      "ten": "Trường Thanh niên Tiền tuyến Huế",
+      "ten_chuan": "truong thanh nien tien tuyen hue",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 16.4630663,
+      "lon": 107.5767777,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-lang-kim-long",
+      "slug": null,
+      "ten": "Đình làng Kim Long",
+      "ten_chuan": "dinh lang kim long",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.4645563,
+      "lon": 107.5611243,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-van-xuan-kim-long",
+      "slug": null,
+      "ten": "Đình Vạn Xuân",
+      "ten_chuan": "dinh van xuan",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.4646,
+      "lon": 107.5611,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "mieu-tien-y-hue",
+      "slug": null,
+      "ten": "Miếu Tiên Y",
+      "ten_chuan": "mieu tien y",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.4768,
+      "lon": 107.57221,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-lang-hien-sy",
+      "slug": null,
+      "ten": "Đình làng Hiền Sỹ",
+      "ten_chuan": "dinh lang hien sy",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 16.6382,
+      "lon": 107.3099,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dia-diem-chien-thang-thanh-huong",
+      "slug": null,
+      "ten": "Địa điểm chiến thắng Thanh Hương",
+      "ten_chuan": "dia diem chien thang thanh huong",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 16.6382,
+      "lon": 107.3099,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "mieu-linh-quang-phong-hoa",
+      "slug": null,
+      "ten": "Miếu Linh Quang",
+      "ten_chuan": "mieu linh quang",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.6382,
+      "lon": 107.3099,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-tu-quang-huong-tra",
+      "slug": null,
+      "ten": "Chùa Từ Quang",
+      "ten_chuan": "chua tu quang",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.5082,
+      "lon": 107.5039,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-giap-nhat",
+      "slug": null,
+      "ten": "Đình Giáp Nhất",
+      "ten_chuan": "dinh giap nhat",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 16.5082,
+      "lon": 107.5039,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-thanh-luong",
+      "slug": null,
+      "ten": "Đình Thanh Lương",
+      "ten_chuan": "dinh thanh luong",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.5082,
+      "lon": 107.5039,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "di-chi-vuon-chuoi",
+      "slug": null,
+      "ten": "Di chỉ khảo cổ Vườn Chuối",
+      "ten_chuan": "di chi khao co vuon chuoi",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "khao-co",
+      "lat": 21.0527214,
+      "lon": 105.7095565,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "chua-hang-do-son",
+      "slug": null,
+      "ten": "Chùa Hang (Cốc tự, Đồ Sơn)",
+      "ten_chuan": "chua hang coc tu do son",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 20.7075636,
+      "lon": 106.7926245,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "kenh-vinh-te",
+      "slug": null,
+      "ten": "Kênh Vĩnh Tế",
+      "ten_chuan": "kenh vinh te",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 10.7169029,
+      "lon": 105.1107749,
+      "so_nguon": 2,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "truong-le-hong-phong-petrus-ky",
+      "slug": null,
+      "ten": "Trường THPT chuyên Lê Hồng Phong (Collège Petrus Ký)",
+      "ten_chuan": "truong thpt chuyen le hong phong college petrus ky",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 10.7605,
+      "lon": 106.6822,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
+      "id": "truong-nguyen-dinh-chieu-my-tho",
+      "slug": null,
+      "ten": "Trường THPT Nguyễn Đình Chiểu (Collège de Mytho)",
+      "ten_chuan": "truong thpt nguyen dinh chieu college de mytho",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 10.3573,
+      "lon": 106.3585,
+      "so_nguon": 1,
+      "trang_thai": "reviewed"
+    },
+    {
       "id": "chien-truong-dien-bien-phu",
       "slug": null,
       "ten": "Chiến trường Điện Biên Phủ",
@@ -42154,19 +42349,6 @@
       "trang_thai": "reviewed"
     },
     {
-      "id": "di-chi-vuon-chuoi",
-      "slug": null,
-      "ten": "Di chỉ khảo cổ Vườn Chuối",
-      "ten_chuan": "di chi khao co vuon chuoi",
-      "file": "overlays/di-tich-quoc-gia.json",
-      "mien": "overlays",
-      "loai": "khao-co",
-      "lat": 21.0527214,
-      "lon": 105.7095565,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
       "id": "chua-cau-hoi-an",
       "slug": null,
       "ten": "Chùa Cầu (Lai Viễn Kiều)",
@@ -42930,19 +43112,6 @@
       "loai": "kien-truc",
       "lat": 20.9507777,
       "lon": 105.6799343,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "chua-hang-do-son",
-      "slug": null,
-      "ten": "Chùa Hang (Cốc tự, Đồ Sơn)",
-      "ten_chuan": "chua hang coc tu do son",
-      "file": "overlays/di-tich-quoc-gia.json",
-      "mien": "overlays",
-      "loai": "kien-truc",
-      "lat": 20.7075636,
-      "lon": 106.7926245,
       "so_nguon": 1,
       "trang_thai": "reviewed"
     },
@@ -44169,19 +44338,6 @@
       "trang_thai": "reviewed"
     },
     {
-      "id": "kenh-vinh-te",
-      "slug": null,
-      "ten": "Kênh Vĩnh Tế",
-      "ten_chuan": "kenh vinh te",
-      "file": "overlays/di-tich-quoc-gia.json",
-      "mien": "overlays",
-      "loai": "lich-su",
-      "lat": 10.7169029,
-      "lon": 105.1107749,
-      "so_nguon": 2,
-      "trang_thai": "reviewed"
-    },
-    {
       "id": "kenh-thoai-ha",
       "slug": null,
       "ten": "Kênh Thoại Hà và bia Thoại Sơn",
@@ -45167,32 +45323,6 @@
       "lat": 10.3437,
       "lon": 107.0835,
       "so_nguon": 2,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "truong-le-hong-phong-petrus-ky",
-      "slug": null,
-      "ten": "Trường THPT chuyên Lê Hồng Phong (Collège Petrus Ký)",
-      "ten_chuan": "truong thpt chuyen le hong phong college petrus ky",
-      "file": "overlays/di-tich-quoc-gia.json",
-      "mien": "overlays",
-      "loai": "kien-truc",
-      "lat": 10.7605,
-      "lon": 106.6822,
-      "so_nguon": 1,
-      "trang_thai": "reviewed"
-    },
-    {
-      "id": "truong-nguyen-dinh-chieu-my-tho",
-      "slug": null,
-      "ten": "Trường THPT Nguyễn Đình Chiểu (Collège de Mytho)",
-      "ten_chuan": "truong thpt nguyen dinh chieu college de mytho",
-      "file": "overlays/di-tich-quoc-gia.json",
-      "mien": "overlays",
-      "loai": "kien-truc",
-      "lat": 10.3573,
-      "lon": 106.3585,
-      "so_nguon": 1,
       "trang_thai": "reviewed"
     },
     {
@@ -90882,7 +91012,7 @@
         "ten": "GS Nguyễn Văn Huyên"
       },
       "b": {
-        "file": "overlays/di-tich-quoc-gia.json",
+        "file": "overlays/di-tich-cap-tinh.json",
         "id": "di-chi-vuon-chuoi",
         "ten": "Di chỉ khảo cổ Vườn Chuối"
       },
@@ -91254,6 +91384,58 @@
     },
     {
       "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "chua-tu-quang-huong-tra",
+        "ten": "Chùa Từ Quang"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-van-xa",
+        "ten": "Đình Văn Xá"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-giap-nhat",
+        "ten": "Đình Giáp Nhất"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-van-xa",
+        "ten": "Đình Văn Xá"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thanh-luong",
+        "ten": "Đình Thanh Lương"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-van-xa",
+        "ten": "Đình Văn Xá"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "di-chi-vuon-chuoi",
+        "ten": "Di chỉ khảo cổ Vườn Chuối"
+      },
+      "b": {
+        "file": "overlays/to-nghe-danh-than.json",
+        "id": "nguyen-dinh-khanh-khanh-ky",
+        "ten": "Nguyễn Đình Khánh (Khánh Ký)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
         "file": "overlays/di-tich-qgdb.json",
         "id": "khu-trung-tam-hoang-thanh-thang-long-ha-noi",
         "ten": "Khu Trung tâm Hoàng thành Thăng Long - Hà Nội"
@@ -91509,19 +91691,6 @@
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "truong-dang-trinh",
         "ten": "Trương Đăng Trinh"
-      },
-      "khoang_cach_m": 0
-    },
-    {
-      "a": {
-        "file": "overlays/di-tich-quoc-gia.json",
-        "id": "di-chi-vuon-chuoi",
-        "ten": "Di chỉ khảo cổ Vườn Chuối"
-      },
-      "b": {
-        "file": "overlays/to-nghe-danh-than.json",
-        "id": "nguyen-dinh-khanh-khanh-ky",
-        "ten": "Nguyễn Đình Khánh (Khánh Ký)"
       },
       "khoang_cach_m": 0
     },
@@ -93030,6 +93199,45 @@
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "phan-dinh-phung-khoa-bang",
         "ten": "Phan Đình Phùng — Đình nguyên Cần Vương"
+      },
+      "khoang_cach_m": 6
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-lang-hien-sy",
+        "ten": "Đình làng Hiền Sỹ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "lang-co-phuoc-tich",
+        "ten": "Làng cổ Phước Tích"
+      },
+      "khoang_cach_m": 6
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dia-diem-chien-thang-thanh-huong",
+        "ten": "Địa điểm chiến thắng Thanh Hương"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "lang-co-phuoc-tich",
+        "ten": "Làng cổ Phước Tích"
+      },
+      "khoang_cach_m": 6
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "mieu-linh-quang-phong-hoa",
+        "ten": "Miếu Linh Quang"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "lang-co-phuoc-tich",
+        "ten": "Làng cổ Phước Tích"
       },
       "khoang_cach_m": 6
     },
@@ -97476,6 +97684,19 @@
         "file": "overlays/vua-hoang-de.json",
         "id": "ly-thai-tong",
         "ten": "Lý Thái Tông"
+      },
+      "khoang_cach_m": 162
+    },
+    {
+      "a": {
+        "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
+        "id": "tran-van-ky",
+        "ten": "Trần Văn Kỷ (Trung thư lệnh Tây Sơn)"
+      },
+      "b": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "mieu-tien-y-hue",
+        "ten": "Miếu Tiên Y"
       },
       "khoang_cach_m": 162
     },

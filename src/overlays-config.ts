@@ -449,6 +449,30 @@ export const OVERLAYS: OverlayConf[] = [
     popup: eventOverlayPopup,
   },
   {
+    // Lớp mở 2026-08-11 (quyết định chủ dự án, phương án A): di tích do UBND
+    // tỉnh/thành phố ký QĐ xếp hạng — tầng dưới hai sổ đăng ký cấp quốc gia.
+    // Giữ CÙNG ngôn ngữ màu theo loai với di-tich-quoc-gia, chỉ khác màu nền
+    // mặc định (xám lam = tầng thấp hơn cyan) để phân bậc bằng mắt.
+    id: "di-tich-cap-tinh",
+    label: "🏘️ Di tích cấp tỉnh/thành phố",
+    icon: "🏘️",
+    file: "data/overlays/di-tich-cap-tinh.json",
+    circleColor: [
+      "match",
+      ["get", "loai"],
+      "danh-thang",
+      "#16a34a",
+      "khao-co",
+      "#a16207",
+      "cach-mang",
+      "#dc2626",
+      "#64748b",
+    ],
+    nguon:
+      "Cổng TTĐT tỉnh/thành phố · Báo Đảng các tỉnh · Phòng VH&TT cấp huyện",
+    popup: eventOverlayPopup,
+  },
+  {
     id: "le-hoi-truyen-thong",
     label: "🎏 Lễ hội truyền thống (di sản phi vật thể)",
     icon: "🎏",
@@ -616,7 +640,7 @@ export const OVERLAYS: OverlayConf[] = [
 // `id` dùng để tra tên gọi phiên bản trẻ em (tu-vung-tre-em.ts) — nhãn người
 // lớn không làm khoá được vì nó chính là thứ bị thay.
 export const OVERLAY_GROUPS: { id: string; nhan: string; icon: string; ids: string[] }[] = [
-  { id: "di-san", nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
+  { id: "di-san", nhan: "Di sản & Di tích", icon: "🏛️", ids: ["unesco", "di-tich-qgdb", "di-tich-quoc-gia", "di-tich-cap-tinh", "bao-vat-quoc-gia", "di-tich-cach-mang"] },
   { id: "quan-su", nhan: "Sự kiện & Quân sự", icon: "⚔️", ids: ["chien-dich-tran-danh", "danh-nhan-quan-su-co-trung-dai", "nghia-si-can-vuong"] },
   { id: "vua-khoa-bang", nhan: "Vua chúa · Khoa bảng · Ngoại giao", icon: "👑", ids: ["vua-hoang-de", "khoa-bang-danh-nhan", "su-than-ngoai-giao", "danh-nhan-cac-trieu"] },
   { id: "cong-dong-dan-toc", nhan: "Cộng đồng các dân tộc", icon: "🪶", ids: ["danh-nhan-dan-toc-thieu-so"] },

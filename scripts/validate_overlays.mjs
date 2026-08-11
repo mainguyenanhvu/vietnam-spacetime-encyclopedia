@@ -21,6 +21,7 @@ const isWiki = (s) => /wikipedia\.org|wikimedia\.org/i.test(String(s));
 const OVERLAY_DIR = P("public/data/overlays");
 const STRICT_SOURCE = new Set([
   "unesco.json",
+  "di-tich-cap-tinh.json",
   "bao-vat-quoc-gia.json",
   "huyen-su-khai-quoc.json",
   "khoa-bang-danh-nhan.json",
