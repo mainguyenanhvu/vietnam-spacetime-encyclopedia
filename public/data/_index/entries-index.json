@@ -1,7 +1,7 @@
 {
   "sinh_luc": {
-    "tong_muc": 5548,
-    "tong_co_toa_do": 2765,
+    "tong_muc": 5550,
+    "tong_co_toa_do": 2767,
     "so_nhom_trung_ten": 828,
     "so_cap_trung_toa_do": 799,
     "ngay_sinh": "2026-08-11"
@@ -46895,6 +46895,32 @@
       "loai": "lich-su",
       "lat": 20.42658,
       "lon": 106.17598,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-sai",
+      "slug": null,
+      "ten": "Đền Sái",
+      "ten_chuan": "den sai",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 21.1831611,
+      "lon": 105.9158982,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-ngoc-dinh",
+      "slug": null,
+      "ten": "Chùa Ngọc Đình (Thắng Phúc Tự)",
+      "ten_chuan": "chua ngoc dinh thang phuc tu",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.8003971,
+      "lon": 105.7782671,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
