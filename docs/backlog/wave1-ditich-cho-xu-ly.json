@@ -5496,6 +5496,32 @@
         "[WF] baothainguyen"
       ],
       "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
+    },
+    {
+      "lo": "quangtri-w12",
+      "id": "cau-treo-ben-tat",
+      "ten": "Cầu treo Bến Tắt",
+      "cap": "quoc-gia",
+      "xep_hang": "Lịch sử QG 1986 — TÁCH từ dòng gộp 'NT Trường Sơn + cầu treo' (nghĩa trang thuộc lớp riêng đã có); nghi thuộc quần thể Trường Sơn QGĐB — cân nhắc quy cụm khi nạp",
+      "dia_diem": "Thượng nguồn Bến Hải, cạnh NTLS QG Trường Sơn, Gio Linh (checklist 'Cồn Tiên')",
+      "mo_ta": "Cầu treo đầu tiên do Công binh Trường Sơn xây 1973-1974, nhịp hơn 100 m; lũ cuốn 2005, phục dựng 2012 (22,5 tỷ).",
+      "nguon": [
+        "[WF] dulich.quangtri.gov.vn — https://dulich.quangtri.gov.vn/vi/cautreobentat"
+      ],
+      "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
+    },
+    {
+      "lo": "quangtri-w12",
+      "id": "bo-bac-nga-ba-gia-do",
+      "ten": "Bờ bắc Ngã ba Gia Độ",
+      "cap": "cap-tinh",
+      "xep_hang": "Cấp tỉnh — số/ngày cổng không công bố",
+      "dia_diem": "Hợp lưu Thạch Hãn - Hiếu Giang, Đông Giang cũ (checklist 'Triệu Bình' — ranh 2025 qua vùng hợp lưu, không phải lỗi)",
+      "mo_ta": "Du kích Cam Giang phục kích tàu chiến Pháp cuối 1946 — mở đầu 9 năm kháng Pháp ở Quảng Trị.",
+      "nguon": [
+        "[WF-gov] dongha.quangtri.gov.vn — https://dongha.quangtri.gov.vn/chi-tiet-tin/-/view-article/1/1661755110879/1691563050695"
+      ],
+      "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
     }
   ],
   "can_xac_minh": [
@@ -10624,6 +10650,39 @@
       "nguon": [
         "[WF] baothainguyen + baovanhoa"
       ]
+    },
+    {
+      "lo": "quangtri-w12",
+      "id": "tham-sat-lang-tan-minh",
+      "ten": "Địa điểm thảm sát làng Tân Minh (15/10/1947 — 150/173 người)",
+      "dia_diem": "Tân Minh, Gio Thành cũ (checklist 'Cửa Việt'), Gio Linh",
+      "xep_hang_theo_nguon": "'QG, 65-VH/QĐ 16/1/1995' theo 2 nguồn thứ cấp CÙNG GỐC (tính 1 nguồn) — KHÔNG ghi số vào DB đến khi có nguồn nhà nước; sự kiện + số nạn nhân nhất quán; NHẠY CẢM §9 — soát trước khi lên lớp",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only] ditichlichsuvanhoa + bazantravel; kho đã có ghi chú Tân Minh từ wave6 — GỘP"
+      ]
+    },
+    {
+      "lo": "quangtri-w12",
+      "id": "tuong-dai-cao-diem-241-carroll",
+      "ten": "Tượng đài chiến thắng Cao điểm 241 (căn cứ Carroll/Tân Lâm)",
+      "dia_diem": "Tân Phú, Cam Thành cũ (checklist 'Khe Sanh'), km21 QL9",
+      "xep_hang_theo_nguon": "'Cấp tỉnh 1996' nguồn thứ cấp KHÔNG xác nhận được — treo; trung đoàn 56 VNCH đầu hàng 1972, Fidel Castro thăm 1973",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only] — kho wave6 đã ghi, GỘP + cập nhật"
+      ]
+    },
+    {
+      "lo": "quangtri-w12",
+      "id": "doi-rockpile",
+      "ten": "Đồi Rockpile (cao điểm quan sát Mỹ 1966-1968)",
+      "dia_diem": "Thượng Lâm, Cam Thành cũ (checklist 'Hiếu Giang'), đường 9",
+      "xep_hang_theo_nguon": "ĐANG hoàn thiện hồ sơ đề nghị xếp hạng — chưa có QĐ (cập nhật trạng thái kho wave6)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only] danviet + sovaba"
+      ]
     }
   ],
   "khong_tim_thay": [
@@ -11767,6 +11826,15 @@
     {
       "lo": "thainguyen-w12",
       "ten": "HCM thăm Hùng Sơn (nghi thuộc khu 27/7) · Bộ Tổng tham mưu 'Định Hoá' (≠ Bộ Tổng Tư lệnh Bảo Linh — tên khác, không gán) · Bộ Tổng tham mưu + Hoàng Văn Thái 'Bình Yên' · Ban Nông vận TW (chỉ bia) · Ban Giao thông Liên lạc TW · thành lập chính quyền huyện Định Hoá · đình Đông Kha Sơn (không trong 7 điểm — hỏi xã) · đình Hàng Phố 'Gia Sàng' (trắng hoàn toàn)"
+    },
+    {
+      "lo": "quangtri-w12",
+      "ten": "Bảo tàng tỉnh Quảng Trị cơ sở 2 (công trình 2000-2008) — thiết chế",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangtri-w12",
+      "ten": "Đồi cây Gõ (Nam Đông Hà) — không có bài riêng trên cổng như 14 mục kia + web trắng — củng cố nghi lỗi checklist từ wave6"
     }
   ]
 }
