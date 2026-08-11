@@ -2,7 +2,7 @@
   "tong": {
     "so_file": 344,
     "so_muc": 5398,
-    "so_byte": 10195094,
+    "so_byte": 10199718,
     "ngay_sinh": "2026-08-11"
   },
   "files": [
@@ -7054,7 +7054,7 @@
       "file": "documentaries/phim-tai-lieu.json",
       "mien": "documentaries",
       "so_muc": 121,
-      "byte": 33404,
+      "byte": 33689,
       "kieu_boc_ngoai": "danh_nhan[]",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": null,
@@ -7066,14 +7066,14 @@
         "kenh_loai",
         "trang_thai"
       ],
-      "sha256": "3e0230ce206a78d30e88313cf3017a8849b2ad26677e0fe37c2a9ce21fc11df6",
+      "sha256": "2c2349dc15574585ebe6ee1a2e500ef91109ee700f6b647aa1d6e7f3aadf561e",
       "mo_ta": "Chỉ mục phim tài liệu danh nhân/anh hùng theo tỉnh."
     },
     {
       "file": "figures/danh-nhan.json",
       "mien": "figures",
       "so_muc": 301,
-      "byte": 166175,
+      "byte": 167078,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -7092,14 +7092,14 @@
         "linh_vuc",
         "que"
       ],
-      "sha256": "b060142d4f5f2079234691fc51be257b7048331eb0aed6c2676ad6e273de36c3",
+      "sha256": "aba3d9ce061f5fb3fa0a80fcb23f46aac89d35bb2aaf7bf3bb726329ea5f1abd",
       "mo_ta": "Danh nhân theo tỉnh (34 tỉnh hợp nhất 2025)."
     },
     {
       "file": "figures/figures-3d.json",
       "mien": "figures",
       "so_muc": 8,
-      "byte": 7589,
+      "byte": 8002,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -7115,7 +7115,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "7fecf873164652990f7a1f2b59c3526f5bc8f01380ec4768f2512290d687f99e",
+      "sha256": "5441155122294d7ba89d77e47ad79c15b43d07491cbe3a6be40cb43aa5a6fefe",
       "mo_ta": "Nhân vật lịch sử — mô hình 3D."
     },
     {
@@ -7204,7 +7204,7 @@
       "file": "journey/hanh-trinh.json",
       "mien": "journey",
       "so_muc": 22,
-      "byte": 23167,
+      "byte": 23233,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -7222,7 +7222,7 @@
         "thoi_ky",
         "battle_id"
       ],
-      "sha256": "e888acf199ec9f8622b89aa02325ab18624b51ce7aa6e2a7064ea5941761ec25",
+      "sha256": "8b989fdd7df0ebcb342c830e0b3d3e13bee5717c336b9ba95438357cceedf151",
       "mo_ta": "«Hành trình lịch sử» — người dùng hoá thân đi qua các mốc dựng nước & giữ nước."
     },
     {
@@ -7293,7 +7293,7 @@
       "file": "literature/ca-dao-tuc-ngu.json",
       "mien": "literature",
       "so_muc": 127,
-      "byte": 102224,
+      "byte": 102230,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7307,14 +7307,14 @@
         "nguon",
         "chu_de"
       ],
-      "sha256": "964863b0c6e2ac852b96867b40cfc14e86cc4d012275ee11c18ea81cc14f6954",
+      "sha256": "6c2449e41d2d9a9f026391e0cc47c587cf5ddaa0345465b7de6c7875974461bc",
       "mo_ta": "Ca dao & tục ngữ là sáng tác dân gian khuyết danh → public-domain, đăng toàn văn."
     },
     {
       "file": "literature/giai-thoai-khoa-bang.json",
       "mien": "literature",
       "so_muc": 30,
-      "byte": 51401,
+      "byte": 51428,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -7330,14 +7330,14 @@
         "sources",
         "chu_de"
       ],
-      "sha256": "1b4d7c8884ad194eb732e3368a55c7f0c573e97c77da23e0d90c9ace14c3307a",
+      "sha256": "3bd1fc42421f29930f91d8c763c20c6ebf0a3720db991c40c45c214adf985c5e",
       "mo_ta": "Dữ liệu miền «literature» — tệp giai-thoai-khoa-bang."
     },
     {
       "file": "literature/gioi-thieu-tac-pham.json",
       "mien": "literature",
       "so_muc": 68,
-      "byte": 61169,
+      "byte": 61373,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -7355,7 +7355,7 @@
         "tom_tat",
         "the_ky"
       ],
-      "sha256": "0900bff4af8b70894143f4fbb47b6ba65738548fe44259f87ec793398834a69f",
+      "sha256": "1a6106022fd9b974e17b08d4a2cce109ed8091cdc0efaf74c0c8b211c0be19fe",
       "mo_ta": "Tác phẩm được GIỚI THIỆU chứ không in nguyên văn."
     },
     {
@@ -7411,7 +7411,7 @@
       "file": "literature/su-ky-dia-chi.json",
       "mien": "literature",
       "so_muc": 20,
-      "byte": 20855,
+      "byte": 20915,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -7430,7 +7430,7 @@
         "gioi_thieu",
         "tom_tat"
       ],
-      "sha256": "9dd0d6f1834ae7b9046971b35a407f3479576f116f0e872d67c3ee13867fa50f",
+      "sha256": "cd465ccf29e2a736b2f7835b3b37835cf62408df8e2f8fa2dc730578321cbd11",
       "mo_ta": "Tác phẩm được GIỚI THIỆU, không in nguyên văn."
     },
     {
@@ -7466,7 +7466,7 @@
       "file": "literature/tho-moi-lang-man.json",
       "mien": "literature",
       "so_muc": 11,
-      "byte": 8631,
+      "byte": 8664,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -7484,7 +7484,7 @@
         "sources",
         "nam"
       ],
-      "sha256": "a4ed910e652975767de08d9bbb8755cfc42fd70a0b4de8e5b08390a37fec7c6b",
+      "sha256": "0258f0408c1f12ada7acb299bf28f2f4716705d5777abfacb24ba62a02eb4d2f",
       "mo_ta": "Tác phẩm được GIỚI THIỆU, không in nguyên văn."
     },
     {
@@ -7517,7 +7517,7 @@
       "file": "literature/tho-yeu-nuoc.json",
       "mien": "literature",
       "so_muc": 97,
-      "byte": 164958,
+      "byte": 164982,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -7535,14 +7535,14 @@
         "sources",
         "chu_de"
       ],
-      "sha256": "bb11911f91120d82e59e2372c1a00603bc1402007b1a104979154ab9cfbc1662",
+      "sha256": "08b041cf94045aa8d5ea93e1321af4f051c668815bd60ee8f685c7ebf1d5e8f4",
       "mo_ta": "Dữ liệu miền «literature» — tệp tho-yeu-nuoc."
     },
     {
       "file": "literature/van-xuoi-hien-thuc-vung-mien.json",
       "mien": "literature",
       "so_muc": 26,
-      "byte": 23491,
+      "byte": 23569,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "sources",
       "truong_nguon_cap_file": null,
@@ -7560,7 +7560,7 @@
         "trang_thai",
         "nam"
       ],
-      "sha256": "8e043e4a457b33336d094da335bd8ecfb2707c27fe14cc4f93a4a2feb2d4c219",
+      "sha256": "a2ef2806ca425f477492080c55e110b5e2fa8abc0716c66d047bb24ba0a72b1d",
       "mo_ta": "Tác phẩm được GIỚI THIỆU, không in nguyên văn."
     },
     {
@@ -7677,7 +7677,7 @@
       "file": "overlays/anh-hung-can-hien-dai.json",
       "mien": "overlays",
       "so_muc": 177,
-      "byte": 216152,
+      "byte": 216386,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7695,14 +7695,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "22558fe986422d5bf035a3257724714ea936b88285822ee938598f3149770bae",
+      "sha256": "51a839c533340fe20b2e8b71e1ee7785f249d9a00261c0be46bf15ae67e3ec84",
       "mo_ta": "Anh hùng cận–hiện đại Việt Nam (thế kỷ 20–21): đại tướng QĐND, Anh hùng LLVTND, Mẹ Việt Nam Anh hùng, Anh hùng Lao động."
     },
     {
       "file": "overlays/bao-tang.json",
       "mien": "overlays",
       "so_muc": 16,
-      "byte": 40166,
+      "byte": 40214,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7724,14 +7724,14 @@
         "anh_giay_phep",
         "anh_muc"
       ],
-      "sha256": "ac5ac92c9234678ddc4bcebd7d5cec1985a279f55ec5aae059cdb1b965e36a44",
+      "sha256": "3b4e6b98e44e4e1dc4423de3a93c489c924cd3bb1150fab7eb8f293c14d17fe2",
       "mo_ta": "Bảo tàng lịch sử – văn hoá – nghệ thuật quan trọng của Việt Nam (thiết chế công lập)."
     },
     {
       "file": "overlays/bao-vat-quoc-gia.json",
       "mien": "overlays",
       "so_muc": 77,
-      "byte": 77357,
+      "byte": 77480,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "nguon_chinh",
@@ -7750,14 +7750,14 @@
         "do_tin_cay_toa_do",
         "trang_thai"
       ],
-      "sha256": "fedaf19dc33cdcb1994044fb4014c24cf759bd7f44dba9def9e52ee308cb8166",
+      "sha256": "bc6ebc9809c5052057c93201e217e3f5fa784431b52927ae817e912d2ba2f13f",
       "mo_ta": "Vị trí pin = nơi hiện lưu giữ/trưng bày bảo vật (bảo tàng/di tích), không phải nơi phát hiện."
     },
     {
       "file": "overlays/chi-si-cach-mang.json",
       "mien": "overlays",
       "so_muc": 60,
-      "byte": 73800,
+      "byte": 73805,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7779,14 +7779,14 @@
         "anh_giay_phep",
         "anh_muc"
       ],
-      "sha256": "c44a6767554491647056a1d902933953d87264284d431d1861275c4f9e7cadd2",
+      "sha256": "1bcdd0949a7bb587f60f073500eb3ffe5e5b9b87ffeb9f48181fe17885f5eed2",
       "mo_ta": "Chí sĩ yêu nước & nhà cách mạng tiền bối (cuối thế kỷ 19 – trước 1945): phong trào Duy Tân/Đông Du, Đông Kinh Nghĩa Thục, chí sĩ Nam Kỳ, Việt Nam Quốc dân Đảng, và các nhà cách mạng tiền bối của Đảng Cộng sản Đông Dương."
     },
     {
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
       "so_muc": 251,
-      "byte": 394825,
+      "byte": 395311,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7807,7 +7807,7 @@
         "mo_ta",
         "chi_huy"
       ],
-      "sha256": "61204f80a0ef5e7527901fe7f6209a62d806ec5b726bf669ce30d5b1f8d29da9",
+      "sha256": "5d9c58e0c95aa88d8611d50f518398c5ec9447b0f53fd1edb5a3411b48c55f80",
       "mo_ta": "Chiến dịch · trận đánh · khởi nghĩa tiêu biểu trong lịch sử giữ nước (938–1975), neo vào ĐỊA ĐIỂM diễn ra."
     },
     {
@@ -7943,7 +7943,7 @@
       "file": "overlays/danh-thang-thien-nhien.json",
       "mien": "overlays",
       "so_muc": 147,
-      "byte": 229113,
+      "byte": 229494,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -7961,7 +7961,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "056c4e13baa3896a9c4a2fa164b0465d27bf46ba3c21b3a178177cd7537bbc67",
+      "sha256": "6263ed589ca36ae3daf1499116a4e3dec2361766041bf85be9aa9b2201a248d0",
       "mo_ta": "Lớp danh thắng thiên nhiên: đèo, thác, núi, hồ, vịnh, mũi, đảo — những địa danh tự nhiên nổi tiếng chưa thuộc bản ghi VQG/quần thể nào."
     },
     {
@@ -7993,7 +7993,7 @@
       "file": "overlays/di-san-phi-vat-the.json",
       "mien": "overlays",
       "so_muc": 27,
-      "byte": 51267,
+      "byte": 51348,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8011,14 +8011,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "f4374de4f11bb7b759e9ce2ff1d65096785007290b7607b51381b949b7b93f12",
+      "sha256": "018ee09edfd4522ac9c1099f7e363713e0ef31ac6dbd4b45c941d43565e7f34c",
       "mo_ta": "Di sản văn hoá phi vật thể của Việt Nam: các mục UNESCO ghi danh (Danh sách đại diện / cần bảo vệ khẩn cấp) và di sản văn hoá phi vật thể quốc gia tiêu biểu (Bộ VHTTDL)."
     },
     {
       "file": "overlays/di-tich-cach-mang.json",
       "mien": "overlays",
       "so_muc": 30,
-      "byte": 41061,
+      "byte": 41097,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8036,7 +8036,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "2e261b7bb9ee79b8cf9fbb5bcd2d5a04b485567c4c3f863cc04f49c6bd37fadb",
+      "sha256": "55508c66c3cbaf4523c9213fb0f31315808b1dea02c1f0afe3d8ccb353e0613a",
       "mo_ta": "Di tích lịch sử cách mạng · kháng chiến (nhà tù, căn cứ, địa đạo, bến bãi) chưa có trong CSDL — bổ sung ngoài các sự kiện/chiến dịch đã có (Điện Biên Phủ, Địa đạo Củ Chi, Pác Bó, Tân Trào, ATK Định Hóa, Côn Đảo, Sơn La, Phú Quốc, Hiền Lương, Kim Liên..."
     },
     {
@@ -8070,7 +8070,7 @@
       "file": "overlays/di-tich-quoc-gia.json",
       "mien": "overlays",
       "so_muc": 258,
-      "byte": 402144,
+      "byte": 402636,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8088,7 +8088,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "a81b226872245de2fe5a7963398d25751874dc020787b13b71384d3a12a06c93",
+      "sha256": "e783da09f1c7ecef08f2329daf7b7a57cd265cdc0f1c309a49227f1f77862b6b",
       "mo_ta": "Di tích cấp quốc gia (đền/chùa/thành/hang/khảo cổ) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23."
     },
     {
@@ -8149,7 +8149,7 @@
       "file": "overlays/le-hoi-truyen-thong.json",
       "mien": "overlays",
       "so_muc": 64,
-      "byte": 76349,
+      "byte": 76415,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8167,7 +8167,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "746014a0a6736e01c5d4593b43b84c463caab46254c1e732b50f7570e5f828a4",
+      "sha256": "21b34793de74fd24ab8eba4764647af0d9c06f90a01709469eccb1d080f5430b",
       "mo_ta": "Lễ hội truyền thống có địa điểm cố định, đa số là Di sản văn hóa phi vật thể quốc gia (Bộ VHTTDL công bố qua dsvh.gov.vn) hoặc đã được UNESCO ghi danh."
     },
     {
@@ -8249,7 +8249,7 @@
       "file": "overlays/nghia-trang-liet-si.json",
       "mien": "overlays",
       "so_muc": 104,
-      "byte": 128763,
+      "byte": 129075,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8267,7 +8267,7 @@
         "trang_thai",
         "quy_mo"
       ],
-      "sha256": "d889d41348b49794dcbd18f6074252dc733b46543f1b1fb23fd692a146707b70",
+      "sha256": "9bae0bdfe24c227658209dfab68fbb4299d9ba4cedc7c269f884a6178bd46479",
       "mo_ta": "Lớp bản đồ Nghĩa trang liệt sĩ · Đài tưởng niệm · Đền thờ liệt sĩ toàn Việt Nam."
     },
     {
@@ -8299,7 +8299,7 @@
       "file": "overlays/su-than-ngoai-giao.json",
       "mien": "overlays",
       "so_muc": 25,
-      "byte": 34225,
+      "byte": 34213,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8321,14 +8321,14 @@
         "anh_giay_phep",
         "anh_muc"
       ],
-      "sha256": "589261c657e699d14ec78f71caa89fcb3180fed8ec5821a04e3b303a8870fbc1",
+      "sha256": "89e2ec4d909c3b5eae28d0642defc0b6997b6908cdcdba6238c3e04ad6d472fe",
       "mo_ta": "Sứ thần & nhà ngoại giao lịch sử Việt Nam — Sóng 9."
     },
     {
       "file": "overlays/thanh-hoang-danh-than.json",
       "mien": "overlays",
       "so_muc": 46,
-      "byte": 56139,
+      "byte": 56175,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8346,7 +8346,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "2f7f3e1490e36130e8567882ca23eded508ca69551bceae4409acce65f33b28c",
+      "sha256": "9327dcc879fbd94d0d35e8179717e0b24a87ae15edbfb29af27ff223ccae1259",
       "mo_ta": "Thành hoàng & danh thần có đền/đình thờ lớn (không trùng Tứ bất tử đã có ở lớp «Huyền sử khai quốc»)."
     },
     {
@@ -8403,7 +8403,7 @@
       "file": "overlays/to-nghe-danh-than.json",
       "mien": "overlays",
       "so_muc": 68,
-      "byte": 93949,
+      "byte": 94009,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8421,7 +8421,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "48b65e1e2bec909ed5e4dbf8933851ac961a0f4c5731faac973f03763fd94578",
+      "sha256": "c761f64bee7e5d5657e32047a7ba9f02b8b7e26fb8b7d11ec299eafcf2404cba",
       "mo_ta": "Ông tổ nghề (craft founders) và thành hoàng/danh thần bổ sung (chưa có trong CSDL)."
     },
     {
@@ -8453,7 +8453,7 @@
       "file": "overlays/truyen-thuyet-dan-gian.json",
       "mien": "overlays",
       "so_muc": 59,
-      "byte": 85361,
+      "byte": 85538,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8470,7 +8470,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "8a5de11ec7e150e0e3b8ce2e1e25e3a0769189bd4db85f20c5c49936ff09f796",
+      "sha256": "afa3128be2bec02d286faa8325f7dfe80d6510faf4048c7a5e550b84de3abbcf",
       "mo_ta": "Sóng 11: văn học dân gian gắn với địa danh cụ thể trên bản đồ — sự tích, truyền thuyết, thần thoại, cổ tích, ca dao, tục ngữ."
     },
     {

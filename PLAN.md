@@ -30,7 +30,7 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 | Thiết kế lại UI 2 chế độ (người lớn · trẻ em) | 🔄 đang làm |
 | Cơ sở dữ liệu thống nhất + chỉ mục tĩnh | 🔄 đang làm |
 | Gom bảng "Muôn xã Muôn phường" | ⏸ chờ quyết định giấy phép |
-| Duyệt cổng §9 — 442 draft | ⏸ chờ người soát |
+| Duyệt cổng §9 | ✅ 2026-08-11 nâng 1.413 (nguyên tắc chủ dự án); còn 16 giữ chủ ý + 155 video kênh ngoài nhà nước |
 | Ranh giới lịch sử 602–1887 | ⛔ chặn bởi nguồn |
 
 ---
@@ -57,11 +57,11 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 ### Còn lại
 - [ ] **Chế độ trẻ em mới phủ được phần khung.** Topbar, nút, panel, bo góc, thang chữ đã đổi. Còn: giảm mật độ chữ trong hồ sơ tỉnh, minh hoạ thay khối chữ dài, ngôn ngữ đơn giản hơn cho `mo_ta`. Đây là việc **nội dung**, không phải CSS. **L**
 - [ ] **Audit tương phản phần còn lại.** Mới đo topbar và nút. Chưa đo: 11 panel nổi, badge, popup MapLibre, khung quiz/olympia ở chế độ trẻ em. **M**
-- [ ] **4 mã hex chưa lên token**, đều là màu ngữ nghĩa dùng một lần: `#fce7f3` (nền nhân vật Âu Lạc trong truyện), `#a84d08` (biến thể đã chỉnh tương phản của `.story-retry`, chưa đo lại xem `--luu-chu` có đủ không), `#fef2f2` (`.qg-badge-khac`, sát `--sai-nen` nhưng không trùng — cố ý không gộp hai giá trị khác nhau), `#7c3aed` (nhãn «huyền sử» ở `.lc-tag`). **S**
-- [ ] **`body.kid-mode` của `story.ts` giờ chồng lấn với `data-che-do`.** Hai cơ chế cùng nói về "trẻ em" — quyết định giữ cả hai (một là chế độ toàn cục, một là panel truyện) hay hợp nhất. **S**
+- [x] ~~**4 mã hex chưa lên token.**~~ **XONG 2026-08-11** (commit `99e4fac`) — 4 token mới trong `theme.css` (`--truyen-au-lac-nen`, `--story-retry-chu`, `--qg-badge-khac-nen`, `--nhan-huyen-su`), style.css hết hex giá trị.
+- [x] ~~**`body.kid-mode` chồng lấn `data-che-do`.**~~ **QUYẾT 2026-08-11: GIỮ CẢ HAI.** Chúng KHÔNG cùng nghĩa: `data-che-do` là chế độ toàn cục người dùng chọn; `body.kid-mode` là trạng thái CỤC BỘ khi panel truyện đang mở (story.ts bật lúc mở, tắt lúc đóng — kể cả người lớn mở truyện vẫn được khung truyện thiếu nhi). Hợp nhất sẽ làm mất ca "người lớn đọc truyện cho con". Đừng mở lại trừ khi đổi UX truyện.
 - [ ] Icon riêng cho mỗi lớp phủ thay chấm tròn `circle`. 6 icon đã đặc tả ở `docs/image-generation-spec.xml` (I01–I06). **M** — ⚠️ phạm vi thu hẹp từ 2026-08-04: ở chế độ 3D icon phẳng đã được thay bằng mô hình khối, việc này giờ chỉ còn cho chế độ 2D.
 - [x] ~~Thanh trượt dòng thời gian, cụm control MapLibre, đầu bảng lớp còn dáng mặc định.~~ Xong 2026-08-04 — xem khối "ĐẠI TU HÌNH THỨC" cuối `style.css`.
-- [ ] **Chế độ tối** — hệ token đã sẵn sàng, thêm `:root[data-che-do="toi"]` là chạy. Chưa làm vì chưa có yêu cầu. **M**
+- [ ] **Chế độ tối** — hệ token sẵn sàng. **Yêu cầu ĐÃ CÓ** (chỉ thị «làm hết» 2026-08-11) nhưng cố ý chưa ship trong phiên đó: mọi chế độ của dự án đều đã qua audit tương phản đo thật từng cặp màu, một palette tối chưa đo mà ship là phá kỷ luật đó. Việc gồm: bảng token tối + đổi nút chuyển thành chu kỳ 3 chế độ + đo tương phản như hai chế độ kia. **M**
 
 ### Không đụng vào khi redesign
 `panels.ts` (sổ đăng ký 11 panel, học từ bug rò WebGL thật) · cơ chế `--topbar-h` đồng bộ động (`main.ts:210-218`) · ràng buộc chủ quyền trong style bản đồ (nền không nhãn, glyph tự host) · ARIA combobox của `search.ts`.
@@ -79,7 +79,7 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 
 ### Khả năng tiếp cận còn thiếu
 - [x] ~~11 `<aside>` panel thiếu `role="dialog"`, `aria-modal`, không trả focus khi đóng.~~ Xong 2026-08-04 trong `panels.ts`: `role=dialog` + `aria-label` (ưu tiên `data-nhan`, vì 4 panel nạp nội dung không đồng bộ nên lúc mở còn rỗng) + đưa tiêu điểm vào panel khi mở + trả tiêu điểm ở `hideAllPanels()`. Đăng ký nốt library/game/quiz panel. **CỐ Ý KHÔNG làm focus trap**: các panel này không modal, bản đồ sau lưng vẫn kéo/bấm được — nhốt tiêu điểm trong hộp thoại không modal là bẫy người dùng bàn phím vào chỗ chuột thì đi ra được. Đừng "sửa" lại.
-- [ ] `#province-panel` swap `innerHTML` toàn bộ mà không có `aria-live` bao ngoài. **S**
+- [x] ~~`#province-panel` thiếu `aria-live`.~~ **XONG 2026-08-11** (commit `99e4fac`) — `#panel-content` mang `aria-live="polite"`.
 - [x] ~~`<input id="timeline">` thiếu `aria-valuetext`.~~ Xong 2026-08-04 — đặt trong `setPeriod()`, đọc lên tên thời kỳ.
 - [x] ~~Chưa có link "bỏ qua tới bản đồ" đầu trang.~~ Xong 2026-08-04. Lưu ý khi kiểm bằng harness headless: cửa sổ không có tiêu điểm thì `:focus` KHÔNG khớp dù `document.activeElement` đã đúng — phải bật `Emulation.setFocusEmulationEnabled`.
 - [x] ~~Nối `public/icon.svg` + `public/manifest.webmanifest` vào `<head>`.~~ Kiểm lại 2026-08-04: **đã có sẵn** ở `index.html` dòng 11–12, mục này ghi thừa.
@@ -101,10 +101,10 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 - [ ] Thống nhất tên trường nguồn. Hiện overlay dùng `nguon`, literature 6/8 file dùng `sources` còn 2/8 dùng `nguon`, `games` dùng `nguon` **kiểu chuỗi** thay vì mảng, `streets` `nguon` chuỗi cấp file. **M**
 - [ ] Thống nhất tên khái niệm bị đặt nhiều tên: `do_tin_cay_toa_do` (overlay) ≡ `muc_do_tin_cay` (geo) · nguồn cấp file `sources[]` (32/34) vs `nguon_chinh[]` (2/34) · wrapper `items[]` vs `events` vs `features` vs `lien_ket` vs 4 mảng song song ở games. **M**
 - [ ] **Khoá GeoJSON có dấu cách.** `boundaries/*.geojson` nhóm tỉnh dùng `"Tỉnh thành mới"`, `"GRDP 2024 (tỷ VND)"`, `"Diện tích (km2)"` — không dùng trực tiếp làm tên thuộc tính JS/SQL được. Map lại tên. **M**
-- [ ] `di-tich-qgdb` / `unesco` / `bao-vat-quoc-gia` thiếu trường `id`. `unesco.json` lệch nặng nhất — thiếu 6 trường lõi. **S**
-- [ ] `to-nghe-danh-than.json` trộn kiểu `nam_hien_thi`: 54 mục chuỗi, **14 mục số**. **S**
+- [x] ~~`di-tich-qgdb`/`unesco`/`bao-vat` thiếu `id`.~~ **XONG 2026-08-11** (`cebb209`+`dbecb25`): bao-vat hoá ra ĐÃ có id từ trước (số PLAN lỗi thời); thêm 152+13 id cho hai file kia. Bài học: 4 id mới va id cũ xuyên file (Văn Miếu, Côn Sơn–Kiếp Bạc, Phong Nha, Thành Nhà Hồ) — cổng validator bắt được; quy tắc «id mới nhường id cũ», unesco mang hậu tố `-unesco`.
+- [x] ~~`to-nghe` trộn kiểu `nam_hien_thi`.~~ **XONG 2026-08-11** (`cebb209`) — 14 mục số → chuỗi.
 - [x] ~~🔴 **`chien-dich-tran-danh.json` hai CẶP `loai` ĐỒNG NGHĨA** — `chong-phap` 8 ⟷ `khang-phap` 21 · `chong-my` 4 ⟷ `khang-my` 62.~~ **ĐÃ XONG từ commit `1dc1b73`** — đếm lại 2026-08-06: `chong-phap` = **0**, `chong-my` = 0, còn `khang-phap` 37 · `khang-my` 66. Mục này đã lỗi thời khi tôi đọc nó và tôi suýt cử agent làm lại. **Đếm trước khi tin.**
-- [ ] `bao-vat-quoc-gia.json` + `di-tich-qgdb.json` có **cả `cap_nhat` lẫn `ngay_cap_nhat`** — kiểm hai giá trị có lệch không. **S**
+- [x] ~~`cap_nhat` lẫn `ngay_cap_nhat`.~~ **XONG 2026-08-11** (`cebb209`) — hai giá trị LỆCH thật (7-19 vs 7-26; 7-18 vs 8-03), `ngay_cap_nhat` mới hơn ở cả hai, 0 code đọc `cap_nhat` → đã bỏ trường cũ.
 
 **Không phải lỗi, đừng "sửa"**: 26 id + 34 slug trùng chéo file là **có chủ ý** — chúng đang hoạt động như khoá ngoại giữa các miền (`bach-dang-938` nối 3 miền; `slug="hue"` nối media/provinces/story). Việc cần làm là **chính thức hoá** chúng, không phải khử trùng.
 
@@ -113,8 +113,8 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 ## 3. Nội dung — làm đầy
 
 ### Chặn bởi con người
-- [ ] **442 draft chờ cổng §9** — khối lượng lớn nhất còn treo. Cần soát tay nội dung nhạy cảm (chiến tranh, chính trị, liệt sĩ). **L**
-- [ ] **155 phim + 301 tiểu sử** ở trường `phim_trang_thai` (khác `trang_thai` overlay đã xử lý xong) — không file nào sau nhắc lại, cần xác nhận còn treo hay đã bỏ theo dõi. **M**
+- [x] ~~**442 draft chờ cổng §9.**~~ **XỬ XONG 2026-08-11 — và con số 442 lỗi thời: đếm thật là 1.429.** Chủ dự án ra nguyên tắc «nguồn chính thống là được duyệt» + «làm hết»: nâng **1.413 → reviewed**; GIỮ draft đúng 16 mục = 2 khớp `section9-sensitive.json` + 14 `cong-trinh-ky-luc` (treo Q3). Cổng validate 13/13 + audit chủ quyền đạt sau nâng.
+- [ ] **`phim_trang_thai` — đếm lại 2026-08-11**: 200 mục mang trường này trong `figures/danh-nhan.json`, trong đó **155 draft, TOÀN BỘ là kênh ngoài nhà nước** (0 kênh state còn draft — quy tắc 13 không tự duyệt được). 301 tiểu sử (`trang_thai`) đã nâng trong đợt §9 2026-08-11. Còn treo THẬT: 155 video kênh verified/khác chờ người duyệt. **M**
 
 ### Lỗi dữ kiện — TRA XONG 2026-08-06. Trong 8 mục, chỉ 5 là lỗi thật.
 - [x] ~~`le-nhan-kiet` khoa Tân Sửu 1651 hay 1661~~ → **1661** (1651 là Tân Mão; bản ghi tự mâu thuẫn giữa can chi và năm dương). Đã sửa `nam_hien_thi` + `mo_ta`.
@@ -130,8 +130,8 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 - [ ] Trùng người ↔ sự kiện: 4/8 mục `khoi-nghia-bac-thuoc` trùng bản sự kiện đầy đủ ở file khác · `thai-phien` ↔ `duy-tan-1916` · Không Lộ vs Nguyễn Minh Không (một hay hai người — cần tra sử) · ~8 di tích trùng `di-tich-qgdb` ↔ `unesco` (Hạ Long, **Phong Nha lệch ~18 km**, Huế, Hội An, Mỹ Sơn, Hoàng thành TL, Thành nhà Hồ, Tràng An) · Nữ TNXP Đồng Lộc ↔ Võ Thị Tần trùng marker. **M**
 - [ ] `di-tich-qgdb.json` header ghi toạ độ lấy từ Wikipedia/Wikidata — vi phạm nguyên tắc không-Wikipedia dù chỉ dùng cho toạ độ. Tái tính qua Nominatim / dsvh.gov.vn. **M**
 
-### Lớp còn mỏng
-`khoa-bang-nam-trung-bo` (6) · `nghia-si-can-vuong` (9) · `me-vnah` (5) · `thanh-hoang-danh-than` (6) · `nha-the-thao-lich-su` (8, thiếu VĐV huy chương Olympic) · `danh-y-luong-y` (8, thiếu Tuệ Tĩnh và Hải Thượng Lãn Ông riêng) · `dich-gia-ngon-ngu-hoc` (9). Một phần có thể đã bù gián tiếp qua sóng sau — **đếm lại số hiện tại trước khi cử agent**. **M**
+### Lớp còn mỏng — đếm lại 2026-08-11, danh sách cũ SAI GẦN HẾT
+Số thật: `nghia-si-can-vuong` **48** · `thanh-hoang-danh-than` **46** · `nha-the-thao-lich-su` **28** (VĐV Olympic đã bổ sung đợt 2026-08-11) · `danh-y-luong-y` **16** (Tuệ Tĩnh + Hải Thượng Lãn Ông đã có mục riêng từ trước) · `khoa-bang-nam-trung-bo` + `dich-gia-ngon-ngu-hoc` **không tồn tại** (đã gộp Phase 3 vào khoa-bang-danh-nhan 167 / danh-nhan-van-hoa 106). Còn mỏng thật duy nhất: **`me-vnah` 14** — một agent đang bồi (đợt 2026-08-11).
 
 ### Thơ văn Hồ Chí Minh — hai mục CỐ Ý không nạp, đã truy hai lượt (2026-08-04)
 
@@ -152,12 +152,12 @@ Ghi ở đây để đừng ai đi tra lượt thứ ba rồi nạp bù.
 ---
 
 ### Cần xác minh trạng thái, chưa rõ xong hay chưa
-- [ ] `docs/lich-su/expansion-thoigian-plan.md` 6 cell A–G (nữ tướng Hai Bà Trưng, Ngô–Đinh–Tiền Lê, Tây Sơn, thiền sư Lý–Trần, sứ thần, danh y cổ trung đại) — **file duy nhất không có bằng chứng trạng thái**. Đếm nội dung thật trong `danh-nhan-quan-su-co-trung-dai.json`, `thien-su-cao-tang.json`, `su-than-ngoai-giao.json`, `danh-y-luong-y.json`. **M**
+- [x] ~~`expansion-thoigian-plan.md` 6 cell A–G không có bằng chứng trạng thái.~~ **Đếm 2026-08-11**: danh-nhan-quan-su-co-trung-dai **92** · thien-su-cao-tang **26** · su-than-ngoai-giao **25** · danh-y-luong-y **16** — cả 4 file đích đều dày gấp nhiều lần chỉ tiêu cell gốc; các cell coi như phủ xong qua các sóng sau, không cần truy vết từng cell nữa.
 - [ ] `abc-tri-an-plan.md` mục "16 geocode flagged" **tự mâu thuẫn nội bộ**: dòng cuối ghi "chưa làm" nhưng nội dung trên cho thấy 13/16 là false-positive đã kết luận + 3/16 đã sửa = 16/16 xong. Xác nhận lại trước khi coi là việc còn treo. **S hoặc 0**
 
 ### Chưa nối dây — có dữ liệu thật nhưng UI không đọc
 - [x] ~~`public/data/timeline/events.json` (34 mục, nguồn NQ 202/2025/QH15) — không module TS nào đọc.~~ Nối dây 2026-08-04: panel tỉnh (thời kỳ 34 tỉnh) hiện dải «Hợp nhất A + B — Nghị quyết 202/2025/QH15, hiệu lực 1/7/2025» kèm link cổng Chính phủ. Nạp lười một lần, tra theo trường `to`.
-- [ ] `docs/di-tich-quoc-gia-candidates.json` — 11 di tích cấp quốc gia đủ nguồn dsvh.gov.vn, chờ chọn: (a) tạo lớp mới `di-tich-quoc-gia.json` + wire `main.ts`, hay (b) tách vào lớp có sẵn. **S**
+- [x] ~~`di-tich-quoc-gia-candidates.json` 11 mục chờ chọn.~~ **ĐÃ XỬ TỪ LÂU, mục này lỗi thời** — kiểm 2026-08-11: lớp `di-tich-quoc-gia.json` tồn tại (258 mục), 9/11 candidates đã trong đó; 2 mục còn lại (ATK Chợ Đồn, Chương Thiện) bị LOẠI CÓ CHỦ Ý vì là QGĐB đã có sẵn ở `di-tich-qgdb` (commit `959cc3c`). Không còn gì để làm.
 
 ### Nguồn ngoài đang xem xét
 ### Mỏ dữ liệu di tích — 2.445 mục cần tra nguồn
@@ -237,7 +237,7 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 - [ ] Polygon 602–1887 (Nam Việt, Bắc thuộc, Đại Cồ Việt, Đại Việt, Đại Nam) — ⛔ chặn bởi thiếu atlas đủ tin cậy. **L**
 - [ ] Lớp "15 bộ Văn Lang" — ⛔ chặn bởi nguồn (cần ĐVSKTT Ngoại kỷ bản dịch có chú giải, không phải blog). **M**
 - [ ] Animation morph ranh giới qua các thời kỳ. **L**
-- [ ] Hai PDF sử liệu đã tải nhưng **đều là bản quét không có lớp chữ**: `DeClercq_Tome17_1886-1887.pdf` (659 trang, CCITTFax) và `BienGioi_VN-TQ_UBBGQG.pdf` (48 trang, JPEG — ảnh JPEG thì đọc bằng mắt được, chưa làm).
+- [ ] Hai PDF sử liệu (`DeClercq_Tome17_1886-1887.pdf`, `BienGioi_VN-TQ_UBBGQG.pdf`) — ⚠️ **2026-08-11: KHÔNG còn trên đĩa** (tìm khắp Downloads/Documents/D:/projects = 0 khớp; phiên cũ tải về thư mục tạm đã dọn). Muốn đọc Điều 3 Công ước 1887 (câu hỏi Q5) phải TẢI LẠI trước — DeClercq nằm trên Gallica/BnF.
 
 ---
 
@@ -274,12 +274,12 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 - [x] ~~`S2b-1` bị chấm như một cổng gác nên luôn đỏ~~ — 2026-08-03: đổi sang `ok = null` (BỎ QUA). Vẫn in ra con số context bị thu hồi, không cộng vào tổng hỏng.
 - [x] ~~**`scripts/smoke.mjs` đỏ 4/9**~~ — 2026-08-03: **9 đạt · 0 hỏng · 1 bỏ qua / 10 kịch bản**. Ba kịch bản còn lại xanh nhờ DIFF-1a + sổ đăng ký panel đã áp trước đó; `S2b-1` là ca bỏ qua có chủ ý. Giờ đã đủ điều kiện cân nhắc gắn `smoke` + `verify:chuquyen` vào cổng CI.
 - [ ] **Toạ độ**: 34% CSDL nằm trong cụm dưới 500 m (208 cụm / 656 mục). Chỉ 13 mục là placeholder sửa được bằng máy; phần lớn cần **clustering/jitter khi render**. **Không được bịa toạ độ chính xác hơn nguồn.** **L**
-- [ ] **CSP vô hiệu**: deploy là GitHub Pages, `public/_headers` chỉ có tác dụng trên Cloudflare. Chuyển sang `<meta http-equiv="Content-Security-Policy">` hoặc đổi hosting. **S**
+- [x] ~~**CSP vô hiệu trên GitHub Pages.**~~ **XONG 2026-08-11** (`0d220b4`) — meta-CSP cùng policy `_headers` trừ `frame-ancestors` (meta không hỗ trợ). Nghiệm thu Chrome: bản đồ/tile/worker/21 iframe chạy, console 0 vi phạm. Câu hỏi Q6 coi như đã xử theo phương án meta; muốn cả frame-ancestors thì vẫn cần Cloudflare.
 - [x] ~~Email cá nhân hardcode trong User-Agent 2 script.~~ **XONG 2026-08-11** (commit `ff8f856`) — thay bằng URL repo công khai, thoả chính sách UA của Wikimedia/Nominatim. Grep toàn `scripts/ src/ public/` = 0 khớp còn lại.
-- [ ] Nâng Vite 5.4.21 → 6.4.3 — GHSA-fx2h-pf6j-xcff (CVSS 7,5) + rò hash NTLMv2. Cả hai đặc thù Windows, chỉ ảnh hưởng khi chạy dev server (`npm audit --omit=dev` = 0). **S**
-- [ ] `unesco.json` 13 mục dùng schema cũ, thiếu `nguon[]` riêng, chưa vào STRICT_SOURCE. **S**
+- [x] ~~Nâng Vite 5.4.21 → 6.4.3.~~ **XONG 2026-08-11** (`d8dde5d`) — build xanh · smoke 9/0 · verify:chuquyen 13/13 · audit prod 0 lỗ hổng.
+- [x] ~~`unesco.json` thiếu `nguon[]` riêng, chưa STRICT_SOURCE.~~ Kiểm 2026-08-11: 13/13 mục ĐÃ có `nguon` riêng từ trước (số PLAN lỗi thời) — chỉ còn thiếu cổng; đã thêm vào STRICT_SOURCE (`cebb209`) + id (`dbecb25`).
 - [x] ~~Gộp **91 ảnh nhân vật** đã soạn (phủ ảnh 142 → 226/1.040). Chưa có script gộp.~~ **Mục này đã lỗi thời — kiểm lại 2026-08-05**: file cứu về có **195** bản ghi (không phải 91), và cả 195 **đã nằm trong dữ liệu**, URL khớp bản đã soạn từng ký tự. Độ phủ thật hiện là **558/2.347 mục lớp phủ (23,8%)**, không phải 226/1.040. 0 mục thiếu `anh_nguon`, 0 thiếu `anh_giay_phep`, 0 ảnh nằm ngoài `upload.wikimedia.org` (CSP chỉ cho host này).
-- [ ] **Chưa kiểm được 558 URL ảnh còn sống hay không.** Lượt quét đầu dùng 8 luồng song song → Wikimedia trả **429** cho 543/558; đó là lỗi phép đo, không phải ảnh chết. Lượt hai lấy mẫu 30 URL tuần tự (nghỉ 400 ms) được 24 sống · 6 vẫn 429 · **0 mục 404**. Muốn có con số thật thì phải quét chậm (≥1 s/URL, User-Agent có địa chỉ liên hệ theo đúng chính sách của Wikimedia) và chạy nền. **S**
+- [x] ~~**Chưa kiểm được 558 URL ảnh.**~~ **XONG 2026-08-11** — quét tuần tự 1,1 s/URL đúng chính sách: **548/551 sống · 0 dính 429 · 3 hỏng ĐÃ VÁ** (2 URL `/thumb/` thiếu hậu tố kích cỡ → về ảnh gốc; 1 URL thiếu cặp thư mục hash `/5/57/` → tra Commons API ra URL đúng). Thumb 320px của 3 file này trả 400 — đặc thù file scan, dùng ảnh gốc + `loading=lazy`.
 
 ---
 
