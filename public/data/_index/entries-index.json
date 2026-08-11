@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5417,
-    "tong_co_toa_do": 2634,
+    "tong_muc": 5422,
+    "tong_co_toa_do": 2639,
     "so_nhom_trung_ten": 828,
-    "so_cap_trung_toa_do": 740,
+    "so_cap_trung_toa_do": 742,
     "ngay_sinh": "2026-08-11"
   },
   "entries": [
@@ -45194,6 +45194,71 @@
       "lon": 106.3585,
       "so_nguon": 1,
       "trang_thai": "reviewed"
+    },
+    {
+      "id": "kham-thien-giam",
+      "slug": null,
+      "ten": "Khâm Thiên Giám",
+      "ten_chuan": "kham thien giam",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 16.4735873,
+      "lon": 107.5827834,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phu-phu-chinh",
+      "slug": null,
+      "ten": "Phủ Phụ Chính",
+      "ten_chuan": "phu phu chinh",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.474327,
+      "lon": 107.5822037,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thap-lieu-coc",
+      "slug": null,
+      "ten": "Tháp đôi Liễu Cốc",
+      "ten_chuan": "thap doi lieu coc",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "khao-co",
+      "lat": 16.5087,
+      "lon": 107.5167,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-van-xa",
+      "slug": null,
+      "ten": "Đình Văn Xá",
+      "ten_chuan": "dinh van xa",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 16.5082,
+      "lon": 107.5039,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "lang-truong-co-nguyen-hoang",
+      "slug": null,
+      "ten": "Lăng Trường Cơ (lăng chúa Tiên Nguyễn Hoàng)",
+      "ten_chuan": "lang truong co lang chua tien nguyen hoang",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 16.3814,
+      "lon": 107.5781,
+      "so_nguon": 1,
+      "trang_thai": "draft"
     },
     {
       "id": "kinh-duong-vuong",
@@ -95687,6 +95752,19 @@
     },
     {
       "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-chay-voi-1866",
+        "ten": "Khởi nghĩa 'chày vôi' của Đoàn Hữu Trưng tại Huế (1866)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "phu-phu-chinh",
+        "ten": "Phủ Phụ Chính"
+      },
+      "khoang_cach_m": 113
+    },
+    {
+      "a": {
         "file": "overlays/bao-vat-quoc-gia.json",
         "id": "bvqg-duong-cach-menh",
         "ten": "Đường Kách mệnh"
@@ -96852,6 +96930,19 @@
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
         "id": "nguyen-truc-luyen",
         "ten": "Nguyễn Trực Luyện"
+      },
+      "khoang_cach_m": 159
+    },
+    {
+      "a": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-chay-voi-1866",
+        "ten": "Khởi nghĩa 'chày vôi' của Đoàn Hữu Trưng tại Huế (1866)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "kham-thien-giam",
+        "ten": "Khâm Thiên Giám"
       },
       "khoang_cach_m": 159
     },
