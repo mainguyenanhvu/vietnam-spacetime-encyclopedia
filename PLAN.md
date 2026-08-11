@@ -131,7 +131,7 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 - [ ] `di-tich-qgdb.json` header ghi toạ độ lấy từ Wikipedia/Wikidata — vi phạm nguyên tắc không-Wikipedia dù chỉ dùng cho toạ độ. Tái tính qua Nominatim / dsvh.gov.vn. **M**
 
 ### Lớp còn mỏng — đếm lại 2026-08-11, danh sách cũ SAI GẦN HẾT
-Số thật: `nghia-si-can-vuong` **48** · `thanh-hoang-danh-than` **46** · `nha-the-thao-lich-su` **28** (VĐV Olympic đã bổ sung đợt 2026-08-11) · `danh-y-luong-y` **16** (Tuệ Tĩnh + Hải Thượng Lãn Ông đã có mục riêng từ trước) · `khoa-bang-nam-trung-bo` + `dich-gia-ngon-ngu-hoc` **không tồn tại** (đã gộp Phase 3 vào khoa-bang-danh-nhan 167 / danh-nhan-van-hoa 106). Còn mỏng thật duy nhất: **`me-vnah` 14** — một agent đang bồi (đợt 2026-08-11).
+Số thật: `nghia-si-can-vuong` **48** · `thanh-hoang-danh-than` **46** · `nha-the-thao-lich-su` **28** (VĐV Olympic đã bổ sung đợt 2026-08-11) · `danh-y-luong-y` **16** (Tuệ Tĩnh + Hải Thượng Lãn Ông đã có mục riêng từ trước) · `khoa-bang-nam-trung-bo` + `dich-gia-ngon-ngu-hoc` **không tồn tại** (đã gộp Phase 3 vào khoa-bang-danh-nhan 167 / danh-nhan-van-hoa 106). Lớp mỏng cuối `me-vnah` **14 → 25** cùng ngày (agent bồi 11 Mẹ, nguồn Bộ Công an/CA tỉnh/đài tỉnh/SK&ĐS; 9 ứng viên bị loại vì nguồn yếu/mâu thuẫn — kỷ luật giữ nguyên). **KHÔNG còn lớp nào dưới ngưỡng 15.**
 
 ### Thơ văn Hồ Chí Minh — hai mục CỐ Ý không nạp, đã truy hai lượt (2026-08-04)
 
