@@ -2,7 +2,7 @@
   "tong": {
     "so_file": 344,
     "so_muc": 5398,
-    "so_byte": 10188591,
+    "so_byte": 10195070,
     "ngay_sinh": "2026-08-11"
   },
   "files": [
@@ -7731,7 +7731,7 @@
       "file": "overlays/bao-vat-quoc-gia.json",
       "mien": "overlays",
       "so_muc": 77,
-      "byte": 77385,
+      "byte": 77357,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "nguon_chinh",
@@ -7750,7 +7750,7 @@
         "do_tin_cay_toa_do",
         "trang_thai"
       ],
-      "sha256": "afeda1bb328260e9d1aaf9e8f95eaaf43fcfdbcb1ad4df2dea3bd91991499fdd",
+      "sha256": "fedaf19dc33cdcb1994044fb4014c24cf759bd7f44dba9def9e52ee308cb8166",
       "mo_ta": "Vị trí pin = nơi hiện lưu giữ/trưng bày bảo vật (bảo tàng/di tích), không phải nơi phát hiện."
     },
     {
@@ -8043,12 +8043,13 @@
       "file": "overlays/di-tich-qgdb.json",
       "mien": "overlays",
       "so_muc": 152,
-      "byte": 262344,
+      "byte": 268228,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "nguon_chinh",
       "phu_nguon_cap_muc_pct": 100,
       "truong_pho_bien": [
+        "id",
         "ten",
         "tinh_34",
         "lon",
@@ -8062,7 +8063,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "cc6f643381e708fade5f4fae7c50b2be1f9e301f644d2a5e4b2bc770fe6112d1",
+      "sha256": "565462d53e8c9cc04431d83ad9453d1abf19e947a3bc33d6c98c2021f88f2537",
       "mo_ta": "Dữ liệu miền «overlays» — tệp di-tich-qgdb."
     },
     {
@@ -8402,7 +8403,7 @@
       "file": "overlays/to-nghe-danh-than.json",
       "mien": "overlays",
       "so_muc": 68,
-      "byte": 93921,
+      "byte": 93949,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8420,7 +8421,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "9fe4aa0e79042c0cd95f295da1db9a0f0843446f4002dbd141a1566a46a6923c",
+      "sha256": "48b65e1e2bec909ed5e4dbf8933851ac961a0f4c5731faac973f03763fd94578",
       "mo_ta": "Ông tổ nghề (craft founders) và thành hoàng/danh thần bổ sung (chưa có trong CSDL)."
     },
     {
@@ -8476,12 +8477,13 @@
       "file": "overlays/unesco.json",
       "mien": "overlays",
       "so_muc": 13,
-      "byte": 11992,
+      "byte": 12587,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
       "phu_nguon_cap_muc_pct": 100,
       "truong_pho_bien": [
+        "id",
         "ten",
         "loai",
         "hang_muc",
@@ -8495,7 +8497,7 @@
         "anh_giay_phep",
         "anh_muc"
       ],
-      "sha256": "39f587554330f1d928a7e25ab183cf4275b3c9428da5dd7659bc935260f31f0d",
+      "sha256": "f38050e989e32bc6e49e95d6755980ec7e1cd280de3f38a85aea33f0c67d1084",
       "mo_ta": "Di sản thế giới UNESCO tại Việt Nam (di sản văn hoá/thiên nhiên/hỗn hợp) và Công viên địa chất toàn cầu UNESCO."
     },
     {
