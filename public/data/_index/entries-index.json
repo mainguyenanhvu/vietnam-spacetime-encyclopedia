@@ -1,7 +1,7 @@
 {
   "sinh_luc": {
-    "tong_muc": 5422,
-    "tong_co_toa_do": 2639,
+    "tong_muc": 5426,
+    "tong_co_toa_do": 2643,
     "so_nhom_trung_ten": 828,
     "so_cap_trung_toa_do": 742,
     "ngay_sinh": "2026-08-11"
@@ -45258,6 +45258,58 @@
       "lat": 16.3814,
       "lon": 107.5781,
       "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-dinh-suot",
+      "slug": null,
+      "ten": "Đền – Đình Sượt",
+      "ten_chuan": "den dinh suot",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.9289,
+      "lon": 106.3287,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-den-chua-bao-sai",
+      "slug": null,
+      "ten": "Đình – Đền – Chùa Bảo Sài",
+      "ten_chuan": "dinh den chua bao sai",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.9289,
+      "lon": 106.3287,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-dong-cao-tan-hung",
+      "slug": null,
+      "ten": "Chùa Đống Cao (Chùa Sếu, Tổ đình Đống Cao)",
+      "ten_chuan": "chua dong cao chua seu to dinh dong cao",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 20.9062,
+      "lon": 106.3294,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-ninh-xa-kinh-mon",
+      "slug": null,
+      "ten": "Đình Ninh Xá",
+      "ten_chuan": "dinh ninh xa",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 21.0516,
+      "lon": 106.4813,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
