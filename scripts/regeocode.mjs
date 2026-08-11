@@ -14,7 +14,7 @@ import { dirname, join, basename } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OVERLAY_DIR = join(ROOT, "public", "data", "overlays");
-const UA = "vn-encyclopedia-geo/1.0 (contact: mnav.tkonline@gmail.com)";
+const UA = "vn-encyclopedia-geo/1.0 (+https://github.com/mainguyenanhvu/vietnam-spacetime-encyclopedia)";
 const SLEEP_MS = 1100;
 const MAX_DELTA_DEG = 0.3; // ~33 km geoBounded guard
 

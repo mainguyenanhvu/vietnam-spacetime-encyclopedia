@@ -14,7 +14,7 @@ import fs from "fs";
 import path from "path";
 
 const OVERLAYS_DIR = path.resolve("public/data/overlays");
-const USER_AGENT = "vn-encyclopedia-photos/1.0 (mnav.tkonline@gmail.com)";
+const USER_AGENT = "vn-encyclopedia-photos/1.0 (+https://github.com/mainguyenanhvu/vietnam-spacetime-encyclopedia)";
 const SLEEP_MS = 500;
 
 // Layers of modern people -> a matched image is a portrait (anh_muc=chan-dung).
