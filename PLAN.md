@@ -44,6 +44,16 @@ Vì sao dùng biến CSS chứ không 2 file: `body.kid-mode` (`story.ts:131-133
 ### ✅ Nền móng đã xong
 Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/chedo.ts`), tokenise `style.css` (236 → 4 hex), thang cỡ chữ và khoảng cách, audit tương phản trên trình duyệt thật. Chi tiết và số đo: `RELEASE.md`.
 
+### ✅ Đợt "học Google Maps" 2026-08-11 — đã áp, đã nghiệm thu Chrome thật
+- **Thanh chip nhóm lớp phủ** (`src/chip-bar.ts`): hàng chip full-width TRONG `#topbar` (ResizeObserver tự cộng vào `--topbar-h` nên panel nổi không cần biết gì). Chip bật/tắt CẢ cụm bằng cách dispatch `change` vào checkbox có sẵn — không nhân đôi đường toggleOverlay. Bẫy đã vấp: `display: inline-flex` của `.chip` đè quy tắc `[hidden]` của trình duyệt → chip "Tắt hết" hiện cả khi chưa lớp nào bật; phải khai lại `.chip[hidden]{display:none}`.
+- **Ô tìm kiếm thành viên thuốc sáng cố định** + kính lúp SVG data-URI (hex `#79706a` là ngoại lệ có chủ ý — SVG trong CSS không đọc được `var()`). Đã bỏ emoji 🔍 trong placeholder của `search.ts` vì đúp icon.
+- **Icon lớp phủ theo thuật toán va chạm** (`ICON_VA_CHAM_THEO_ZOOM` trong main.ts): dưới zoom 9,5 icon chồng lấn tự ẩn (vòng tròn + vùng bấm giữ nguyên), từ 9,5 hiện đủ. Áp cả lớp tên đường.
+- **Tách điểm trùng khi render** (`tachDiemTrung` trong main.ts): lưới 11 m, vòng xoáy góc vàng ≤~65 m, chỉ dời HÌNH HỌC GeoJSON — properties giữ lat/lon nguồn nguyên vẹn. Chữa hai bệnh cùng lúc: điểm sau đè điểm trước không bấm được, và mô hình 3D khử trùng theo khoá 5 chữ số nuốt mất mục sau.
+- Nghiệm thu: `verify:chuquyen` 13/13 xanh SAU thay đổi; mắt thường xác nhận nhãn Hoàng Sa + Trường Sa khi bật 5 lớp; bấm chip bật đủ 5 lớp; bấm điểm jitter mở đúng popup («Di chỉ khảo cổ Làng Cả»).
+
+### 🔜 Gom 34 nguồn → 1 nguồn cluster — ĐÃ THIẾT KẾ, chưa thi công
+Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được bằng gom nguồn + cluster toàn cục. **Chặn bởi**: `capNhatMoHinhDiem()` (mô hình 3D) đọc/ghi từng lớp `overlay-${id}` riêng (visibility, paint, queryRenderedFeatures theo danh sách lớp) — gom nguồn là phải viết lại tích hợp 3D, mà 3D chỉ nghiệm thu được trên Chrome GPU thật. Thiết kế đề xuất: 1 nguồn `overlay-gop` (cluster:true) + 4 lớp (cluster / đếm / điểm / icon), màu = mega-expression `["match",["get","lop"], …confExpr từng lớp]` (expression lồng được), popup = 1 handler đọc prop `lop` → conf. Làm ở phiên riêng, nghiệm thu 3D đầy đủ. **L**
+
 ### Còn lại
 - [ ] **Chế độ trẻ em mới phủ được phần khung.** Topbar, nút, panel, bo góc, thang chữ đã đổi. Còn: giảm mật độ chữ trong hồ sơ tỉnh, minh hoạ thay khối chữ dài, ngôn ngữ đơn giản hơn cho `mo_ta`. Đây là việc **nội dung**, không phải CSS. **L**
 - [ ] **Audit tương phản phần còn lại.** Mới đo topbar và nút. Chưa đo: 11 panel nổi, badge, popup MapLibre, khung quiz/olympia ở chế độ trẻ em. **M**

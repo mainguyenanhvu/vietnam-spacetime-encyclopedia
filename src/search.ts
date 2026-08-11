@@ -184,7 +184,7 @@ export function initSearch(
       aria-autocomplete="list"
       aria-activedescendant=""
       autocomplete="off"
-      placeholder="🔍 Tìm địa danh, nhân vật… ( / hoặc Ctrl+K )"
+      placeholder="Tìm địa danh, nhân vật… ( / hoặc Ctrl+K )"
     />
     <ul id="vn-search-listbox" role="listbox" hidden></ul>
     <span id="vn-search-status" class="vn-sr-only" aria-live="polite"></span>

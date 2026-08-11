@@ -36,6 +36,7 @@ import {
   parseOverlayItem,
   type OverlayConf,
 } from "./overlays-config";
+import { initChipBar } from "./chip-bar";
 
 // Đặt chế độ xem đã lưu trước mọi thứ khác, nếu không trang sẽ nháy sang chế độ
 // mặc định rồi mới đổi.
@@ -1091,6 +1092,9 @@ map.on("load", () => {
   setPeriod(currentPeriod);
   buildTimeline();
   buildLayerControl();
+  // Chip bar phải mount SAU buildLayerControl: nó tra checkbox trong
+  // #layer-control để tái dùng đường toggleOverlay có sẵn.
+  initChipBar();
   // Ô tìm kiếm toàn cục: 2005 mục trải 33 lớp thì duyệt tay không nổi. Chỉ mục
   // nạp LƯỜI (lần đầu chạm ô tìm) để không cộng thêm vào lượt tải đầu trang.
   initSearch(map, OVERLAYS, (id) => void toggleOverlay(id, true));
@@ -1623,6 +1627,39 @@ function troChuotTrenLopPhu(): void {
   });
 }
 
+// ── Tách điểm trùng toạ độ khi RENDER ───────────────────────────────────────
+// 34% CSDL nằm trong cụm <500 m, trong đó nhiều cặp trùng KHÍT: điểm sau đè
+// điểm trước → không bấm được, và mô hình 3D khử trùng theo khoá toạ độ làm
+// tròn 5 chữ số nên mục sau âm thầm mất mô hình (PLAN.md mục 10). Đây là dịch
+// chuyển HIỂN THỊ thuần tuý: chỉ hình học GeoJSON dời ≤~65 m theo vòng xoáy
+// góc vàng quanh điểm gốc; properties (lat/lon nguồn) giữ nguyên từng chữ số.
+// KHÔNG phải "sửa toạ độ" trong dữ liệu — nguyên tắc "không bịa toạ độ chính
+// xác hơn nguồn" không bị đụng vì file dữ liệu không đổi.
+const oChiemCho = new Map<string, number>();
+function tachDiemTrung(lon: number, lat: number): [number, number] {
+  const khoa = `${lon.toFixed(4)},${lat.toFixed(4)}`; // lưới ~11 m
+  const n = oChiemCho.get(khoa) ?? 0;
+  oChiemCho.set(khoa, n + 1);
+  if (n === 0) return [lon, lat];
+  // Góc vàng: các điểm tách không bao giờ thẳng hàng/chồng nhau lại.
+  const goc = n * 2.399963;
+  // Vòng đầu ~60 m, cứ đủ 8 điểm thì nở thêm một vành.
+  const r = 0.00055 * (1 + Math.floor((n - 1) / 8) * 0.6);
+  return [lon + (r * Math.cos(goc)) / Math.cos((lat * Math.PI) / 180), lat + r * Math.sin(goc)];
+}
+
+// Thuật toán va chạm nhãn của MapLibre làm việc khử rối thay ta: dưới zoom
+// 9,5 icon nào chồng lấn sẽ tự ẩn (vòng tròn màu vẫn vẽ, vùng bấm vẫn còn);
+// từ 9,5 trở lên hiện đủ 100% như trước. Trước đây allow-overlap:true nghĩa
+// là 2.300+ icon vẽ đè nhau thành một đám rối ở mức zoom toàn quốc.
+const ICON_VA_CHAM_THEO_ZOOM: ExpressionSpecification = [
+  "step",
+  ["zoom"],
+  false,
+  9.5,
+  true,
+];
+
 async function toggleOverlay(id: string, on: boolean): Promise<void> {
   const layerId = `overlay-${id}`;
   const iconLayerId = `${layerId}-icon`;
@@ -1653,7 +1690,9 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
       features: data.items.map((it) => ({
         type: "Feature",
         properties: { ...it },
-        geometry: { type: "Point", coordinates: [it.lon, it.lat] },
+        // Hình học có thể dời ≤~65 m để tách điểm trùng khít (bấm được từng
+        // mục, mô hình 3D không nuốt nhau); lat/lon THẬT vẫn trong properties.
+        geometry: { type: "Point", coordinates: tachDiemTrung(it.lon, it.lat) },
       })),
     },
   });
@@ -1678,8 +1717,8 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
     layout: {
       "icon-image": conf.icon,
       "icon-size": 0.5,
-      "icon-allow-overlap": true,
-      "icon-ignore-placement": true,
+      "icon-allow-overlap": ICON_VA_CHAM_THEO_ZOOM,
+      "icon-ignore-placement": ICON_VA_CHAM_THEO_ZOOM,
     },
   });
   bindOverlayInteractions(layerId, conf);
@@ -1797,8 +1836,8 @@ async function applyStreets(on: boolean): Promise<void> {
     layout: {
       "icon-image": DUONG_DANH_NHAN_ICON,
       "icon-size": 0.4,
-      "icon-allow-overlap": true,
-      "icon-ignore-placement": true,
+      "icon-allow-overlap": ICON_VA_CHAM_THEO_ZOOM,
+      "icon-ignore-placement": ICON_VA_CHAM_THEO_ZOOM,
     },
   });
   const onStreetClick = (e: MapLayerMouseEvent) => {
