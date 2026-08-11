@@ -4626,7 +4626,7 @@
       "ten": "Động Xá Nhè",
       "dia_diem": "Xá Nhè cũ (nay Sáng Nhè), Tủa Chùa",
       "xep_hang_theo_nguon": "Danh thắng QG — công nhận 10/3/2014, SỐ QĐ CHƯA RÕ",
-      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "ly_do": "Đào sâu 2026-08-12: 4 lượt tìm KHÔNG ra số QĐ (chỉ chắc: danh thắng QG, công nhận 10/3/2014, có trong danh sách 14 di tích QG Điện Biên). huyentuachua.dienbien.gov.vn DNS chết — thử lại phiên sau.",
       "nguon": [
         "[WS] huyentuachua.dienbien.gov.vn (URL sẵn)"
       ]
@@ -4636,10 +4636,252 @@
       "id": "nha-tu-lai-chau-muong-lay",
       "ten": "Nhà tù Lai Châu (Pháp xây 1901)",
       "dia_diem": "Sông Đà, Mường Lay — vùng ngập lòng hồ thuỷ điện Sơn La, ít dấu tích",
-      "xep_hang_theo_nguon": "QG 2011 — số QĐ chưa rõ; NGHI liên quan/khác di tích «Đồi Cao» cấp tỉnh 1980 (QĐ 27/QĐ-VH 4/1/1980 Lai Châu cũ) — phân định trước khi nạp",
-      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "xep_hang_theo_nguon": "CHƯA XÁC THỰC — claim 'QG 2011' chỉ từ trang du lịch chép lẫn nhau; VẮNG MẶT trong danh sách chính thức 14 di tích QG Điện Biên và không có trang dsvh.gov.vn (các nhà tù QG khác đều có). Đồi Cao cấp tỉnh 1980 (QĐ 27/QĐ-VH Lai Châu cũ) chưa rõ cùng/khác địa điểm.",
+      "ly_do": "Đào sâu 2026-08-12: bằng chứng ngược nghiêng về khả năng thông tin du lịch SAI — KHÔNG nạp cho đến khi có nguồn nhà nước xác nhận.",
       "nguon": [
         "[WS] vnexpress"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "ben-do-me-suot-dong-hoi",
+      "ten": "Bến đò Mẹ Suốt",
+      "dia_diem": "Sông Nhật Lệ, Đồng Hới",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ) — Nguyễn Thị Suốt, AHLĐ 1/1/1967, hy sinh 11/10/1968",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] 63stravel + quangbinhtourism — KIỂM TRÙNG hồ sơ người Mẹ Suốt trong DB (me-vnah/anh-hung)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "khu-giao-te-quang-binh",
+      "ten": "Khu Giao tế Quảng Bình",
+      "dia_diem": "Cách trung tâm Đồng Hới 3 km về tây",
+      "xep_hang_theo_nguon": "QG 1998 — nơi đón Fidel Castro sau 1975",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] baoquangbinh"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "cua-bien-nhat-le",
+      "ten": "Cửa biển Nhật Lệ",
+      "dia_diem": "Đông bắc Đồng Hới 3 km",
+      "xep_hang_theo_nguon": "Lịch sử - danh thắng QG — số 97/QĐ 21/1/1992 NGHI TRÙNG số với Lũy Thầy (cần xác minh)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] baoquangbinh"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "thanh-dong-hoi",
+      "ten": "Thành Đồng Hới",
+      "dia_diem": "Trung tâm Đồng Hới",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ) — xây Gia Long 10 (1812) trên nền lũy Trấn Ninh",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] travelviet — có thể thuộc QĐ 97/1992 hệ Lũy Thầy nhưng KHÔNG suy diễn"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "dia-diem-luu-niem-bac-ho-quang-binh",
+      "ten": "Địa điểm lưu niệm Bác Hồ về thăm Quảng Bình (5 điểm)",
+      "dia_diem": "Đồng Hới (sân bay Lộc Đại, trụ sở UBHC, hội trường Tỉnh ủy = Bảo tàng nay, sân vận động, nhà khách 325 + bãi biển)",
+      "xep_hang_theo_nguon": "QG — QĐ 983/QĐ 4/8/1992; Bác thăm duy nhất 16-17/6/1957; chỉ 3/5 điểm còn bia",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] phongnhainfo — nạp dạng cụm 5 điểm"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "thap-chuong-tam-toa",
+      "ten": "Tháp chuông nhà thờ Tam Toà",
+      "dia_diem": "Nguyễn Du, Đồng Mỹ, Đồng Hới",
+      "xep_hang_theo_nguon": "Cấp tỉnh (chứng tích tội ác chiến tranh) — QĐ 26/3/1997; nhà thờ 1886, bị phá hoàn toàn 11/2/1965",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] tuyengiao.vn — GIÁ TRỊ CAO"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "nha-lao-dong-hoi",
+      "ten": "Nhà lao Đồng Hới",
+      "dia_diem": "Hải Đình, Đồng Hới",
+      "xep_hang_theo_nguon": "Cấp tỉnh (số QĐ chưa rõ) — Pháp xây sau 1885, 60.000 m², bị bom phá hết",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] phongnhaexplorer (xám)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "dinh-lu-phong",
+      "ten": "Đình Lũ Phong",
+      "dia_diem": "Quảng Phong cũ, Ba Đồn",
+      "xep_hang_theo_nguon": "QG 1962 — xây 1542 thời Mạc; chi bộ Đảng đầu tiên Bắc Quảng Bình 10/1933",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] bazantravel (xám) — năm 1962 đáng chú ý, ưu tiên xác minh"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "dinh-hoa-ninh",
+      "ten": "Đình Hòa Ninh",
+      "dia_diem": "Quảng Hòa, Ba Đồn",
+      "xep_hang_theo_nguon": "QG 1993 — xây 1936, 1.758 m²",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] dukhach.quangbinh.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "dinh-phu-trich",
+      "ten": "Đình Phù Trịch",
+      "dia_diem": "Nam Gianh, Ba Đồn cũ",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ, single source) — xây 1843; gắn chiến thắng Phù Trịch - La Hà 2/1950; NGHI 2 hồ sơ (đình vs địa điểm chiến thắng xếp 29/2/2016)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] dukhach.quangbinh.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "dien-thanh-hoang-vinh-loc",
+      "ten": "Điện Thành Hoàng Vĩnh Lộc",
+      "dia_diem": "Quảng Lộc, Ba Đồn cũ",
+      "xep_hang_theo_nguon": "QG 1995 — xây 1483 thờ Trần Bang Cẩn",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] quangloc.quangbinh.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "di-tich-mai-luong",
+      "ten": "Lăng mộ + nhà bia Mai Lượng",
+      "dia_diem": "Nam Ba Đồn",
+      "xep_hang_theo_nguon": "QG? — ĐỘ TIN THẤP, không URL gốc",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] tổng hợp — re-verify bắt buộc"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "hang-len-ha",
+      "ten": "Hang Lèn Hà (Trạm A69 thông tin)",
+      "dia_diem": "Tuyên Hoá, cách đường 15A ~3 km",
+      "xep_hang_theo_nguon": "QG 7/5/2009 — trạm A69 từ 7/1/1967; quy hoạch 12 ha 2017",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] moitruong.net.vn — kiểm chéo battles nếu có A69"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "chien-khu-trung-thuan",
+      "ten": "Chiến khu Trung Thuần",
+      "dia_diem": "Quảng Trạch cũ",
+      "xep_hang_theo_nguon": "QG 1995 — căn cứ ~150 km² hai xã Quảng Lưu/Quảng Thạch",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] dangcongsan.org.vn"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "lang-chien-dau-canh-duong",
+      "ten": "Làng chiến đấu Cảnh Dương",
+      "dia_diem": "Cảnh Dương, Quảng Trạch cũ",
+      "xep_hang_theo_nguon": "QG 1993 (dịp 350 năm lập làng) — «Cự Nẫm anh dũng, Cảnh Dương kiên cường, La Hà chiến thắng»",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] canhduong.quangbinh.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "nha-nhom-thon-trung",
+      "ten": "Nhà nhóm thôn Trung",
+      "dia_diem": "Thôn Trung, Võ Ninh cũ, Quảng Ninh QB",
+      "xep_hang_theo_nguon": "Lịch sử cách mạng QG — QĐ 43-VH/QĐ 7/1/1993 (CÙNG SỐ với Hội quán Nghĩa Nhuận HCM — QĐ đợt quen)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] voninh.quangbinh.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "ben-pha-quan-hau",
+      "ten": "Bến phà Quán Hàu",
+      "dia_diem": "QL1A, Quán Hàu, Quảng Ninh QB",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ) — Pháp xây 1886, vượt Nhật Lệ",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] nguoihanoi.vn"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "chien-thang-xuan-bo",
+      "ten": "Chiến thắng Xuân Bồ",
+      "dia_diem": "Lệ Thủy",
+      "xep_hang_theo_nguon": "QG 1992 — ĐỘ TIN TRUNG BÌNH, không URL gốc",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] tổng hợp — re-verify"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "mo-nha-tho-vo-xuan-can",
+      "ten": "Mộ và nhà thờ Võ Xuân Cẩn",
+      "dia_diem": "Mộ: Tân Hòa, Tân Thủy cũ; nhà thờ: Hòa Luật Nam, Cam Thủy cũ (Lệ Thủy)",
+      "xep_hang_theo_nguon": "QG — QĐ 4/11/2020 (lễ đón bằng 25/6/2024); Đông các Đại học sĩ triều Nguyễn",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] baoquangtri + nhandan — 2 vị trí, cân nhắc 2 điểm"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "tham-sat-my-trach",
+      "ten": "Di tích Thảm sát Mỹ Trạch (28/11/1947)",
+      "dia_diem": "Mỹ Trạch, Mỹ Thủy cũ, Lệ Thủy",
+      "xep_hang_theo_nguon": "QG 2001 — 421 nạn nhân (170 phụ nữ, 94 người già, 157 trẻ em)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] dantri — GIÁ TRỊ CAO; kiểm chéo moc-lich-su/tham-sat"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "mieu-thanh-hoang-my-tho-trung-luc",
+      "ten": "Miếu Thành Hoàng Mỹ Thổ – Trung Lực",
+      "dia_diem": "Đồi Lòi Dạ, Tân Lực, Tân Thủy cũ, Lệ Thủy",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ) — gắn chi bộ Đảng đầu tiên Nam Quảng Bình",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] 63stravel (xám)"
+      ]
+    },
+    {
+      "lo": "quangbinh-w6",
+      "id": "lang-mo-mieu-tho-hoang-hoi-khanh",
+      "ten": "Lăng mộ và miếu thờ Hoàng Hối Khanh",
+      "dia_diem": "Lăng: Đại Giang, Trường Thủy cũ; miếu: Hà Thanh, Phong Thủy cũ (Lệ Thủy)",
+      "xep_hang_theo_nguon": "QG — QĐ 1422 QĐ/VHTT 23/7/1998; xây lại Thiệu Trị 6 (1845)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS] baoquangbinh + dukhach.quangbinh.gov.vn (URL sẵn) — KIỂM TRÙNG hồ sơ người Hoàng Hối Khanh"
       ]
     }
   ],
@@ -5331,6 +5573,46 @@
       "lo": "dienbien-w6",
       "ten": "Nhà trưng bày di tích Đường kéo pháo (công trình phục vụ tham quan cạnh điểm 'Đường kéo pháo bằng tay' 2015 — không phải di tích xếp hạng riêng)",
       "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangbinh-w6",
+      "ten": "Bảo tàng Quảng Trị cơ sở Đồng Hới (thiết chế; tiền thân hội trường Tỉnh ủy = 1/5 điểm cụm Bác Hồ 1992 — không thêm riêng)",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangbinh-w6",
+      "ten": "Trận địa pháo lão dân quân Đức Ninh (gọi 'di tích' nhưng không thấy QĐ)",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangbinh-w6",
+      "ten": "Đình Lý Hòa (có thể trong phạm vi danh thắng Lý Hòa 1992)",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangbinh-w6",
+      "ten": "Ga Kẻ Rấy (trang Bố Trạch 404)",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangbinh-w6",
+      "ten": "Lăng mộ Hồ Cưỡng (mô tả chi tiết, không thấy cấp)",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangbinh-w6",
+      "ten": "Làng chiến đấu Cự Nẫm (AHLLVT 1996 ≠ xếp hạng di tích — phân biệt!)",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "quangbinh-w6",
+      "ten": "Lăng mộ Lê Sỹ (Võ Xá — không thấy cấp)",
+      "ly_do": "chưa rõ xếp hạng — "
+    },
+    {
+      "lo": "dienbien-w6",
+      "ten": "Cứ điểm 310 (Claudine) — đợt xếp hạng",
+      "ly_do": "Đào 3 lượt: không có trong 23 điểm 2015, không trong 4 điểm đang đề xuất bổ sung (nguoihanoi.vn quy hoạch), bài quy hoạch liệt kê cứ điểm 105/106/206/311/311A/311B nhưng KHÔNG có 310. Khả năng: thuộc đợt 2009 (loại trừ) HOẶC chưa từng xếp riêng vì nằm trong ranh khoanh vùng cụm. Dứt điểm cần phụ lục QĐ 1272/QĐ-TTg — chưa nguồn nào có."
     }
   ]
 }
