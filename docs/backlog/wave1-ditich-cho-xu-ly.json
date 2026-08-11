@@ -148,6 +148,15 @@
         "Báo Hà Tĩnh — https://baohatinh.vn/dia-diem-so-an-loat-tai-chinh-trung-bo-duoc-cong-nhan-di-tich-lich-su-quoc-gia-post74417.html",
         "Cổng Phong Điền cũ — https://phongdien.thuathienhue.gov.vn/di-tich-lich-su-van-hoa/di-tich-lich-su-dia-diem-in-bac-tai-chinh-cu-ho-nam-1946.html"
       ]
+    },
+    {
+      "lo": "hanoi",
+      "id": "chua-ho-quoc-thanh-luong",
+      "ten": "Chùa Hộ Quốc (Vĩnh Tuy)",
+      "cap": "quoc-gia",
+      "dia_diem": "phường Thanh Lương, quận Hai Bà Trưng cũ, Hà Nội",
+      "xep_hang": "Di tích kiến trúc nghệ thuật QG 1990 (nguoihanoi.vn xác nhận)",
+      "ly_do": "Nominatim khớp giả (ra ĐH Y Hà Nội) — chờ geocode tay"
     }
   ],
   "can_xac_minh": [
@@ -558,6 +567,86 @@
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
+    },
+    {
+      "lo": "hanoi",
+      "id": "dinh-kim-ngan",
+      "ten": "Đình Kim Ngân",
+      "lon": 105.8529039,
+      "lat": 21.0341289,
+      "dia_diem": "42-44 Hàng Bạc, Hoàn Kiếm",
+      "xep_hang_theo_nguon": "QG 10/2012 — số QĐ chưa xác minh",
+      "ly_do": "WS-only (Dân Việt), cần fetch lại"
+    },
+    {
+      "lo": "hanoi",
+      "id": "den-quan-de",
+      "ten": "Đền Quan Đế",
+      "lon": 105.8519723,
+      "lat": 21.0360963,
+      "dia_diem": "28 Hàng Buồm, Hoàn Kiếm",
+      "xep_hang_theo_nguon": "QG — QĐ 512/QĐ-BVHTTDL 13/02/2015 (từ tiêu đề văn bản được index)",
+      "ly_do": "Trang bvhttdl động, chưa đọc được toàn văn QĐ"
+    },
+    {
+      "lo": "hanoi",
+      "id": "den-hoa-than",
+      "ten": "Đền Hoả Thần",
+      "lon": 105.8469266,
+      "lat": 21.0328454,
+      "dia_diem": "30 Hàng Điếu, Cửa Nam",
+      "xep_hang_theo_nguon": "cấp CHƯA RÕ, năm vênh 1996/1997",
+      "ly_do": "WS-only, không nguồn .gov.vn xác nhận"
+    },
+    {
+      "lo": "hanoi",
+      "id": "dinh-trung-yen",
+      "ten": "Đình Trung Yên",
+      "lon": 105.8529039,
+      "lat": 21.0341289,
+      "dia_diem": "10 ngõ Trung Yên, Hoàn Kiếm",
+      "xep_hang_theo_nguon": "QG — QĐ 07/2008/QĐ-BVHTTDL 26/02/2008",
+      "ly_do": "WS-only (báo NN&MT), cần fetch lại"
+    },
+    {
+      "lo": "hanoi",
+      "id": "nha-90-tho-nhuom",
+      "ten": "Ngôi nhà 90 Thợ Nhuộm",
+      "lon": 105.8440885,
+      "lat": 21.0283275,
+      "dia_diem": "90 Thợ Nhuộm, Cửa Nam — nơi Trần Phú soạn Luận cương 1930",
+      "xep_hang_theo_nguon": "QG — QĐ 29-VH/QĐ 13/01/1964",
+      "ly_do": "sodulich.hanoi.gov.vn lỗi SSL, số QĐ qua Hànộimới trích lại chưa fetch"
+    },
+    {
+      "lo": "hanoi",
+      "id": "dinh-dai-yen",
+      "ten": "Đình Đại Yên",
+      "lon": 105.8294,
+      "lat": 21.0378,
+      "dia_diem": "làng Đại Yên, phường Ngọc Hà",
+      "xep_hang_theo_nguon": "QG 27/12/1990 — số QĐ chưa xác minh",
+      "ly_do": "WS-only, cần fetch lại"
+    },
+    {
+      "lo": "hanoi",
+      "id": "dinh-kim-ma",
+      "ten": "Đình Kim Mã",
+      "lon": 105.8251,
+      "lat": 21.0306,
+      "dia_diem": "61 Kim Mã, Ba Đình",
+      "xep_hang_theo_nguon": "QG 27/12/1990 — số QĐ chưa xác minh",
+      "ly_do": "YẾU NHẤT: chưa fetch được nguồn nào — cân nhắc hạ xuống không-tra-được"
+    },
+    {
+      "lo": "hanoi",
+      "id": "den-lieu-giai",
+      "ten": "Đền Liễu Giai",
+      "lon": 105.8151,
+      "lat": 21.0315,
+      "dia_diem": "phường Liễu Giai, Ba Đình",
+      "xep_hang_theo_nguon": "CHƯA RÕ — nguồn lẫn Đền/Đình: một nguồn ghi cụm xếp QG 27/12/1990, nguồn đã fetch chỉ xác nhận ĐÌNH cấp thành phố 2002",
+      "ly_do": "Nghi 2 công trình bị nhầm trong tư liệu — đọc riêng từng trang trước khi nạp"
     }
   ]
 }
