@@ -37,6 +37,7 @@ import {
   type OverlayConf,
 } from "./overlays-config";
 import { initChipBar } from "./chip-bar";
+import { initLienKetTrangThai } from "./lien-ket-trang-thai";
 
 // Đặt chế độ xem đã lưu trước mọi thứ khác, nếu không trang sẽ nháy sang chế độ
 // mặc định rồi mới đổi.
@@ -1095,6 +1096,8 @@ map.on("load", () => {
   // Chip bar phải mount SAU buildLayerControl: nó tra checkbox trong
   // #layer-control để tái dùng đường toggleOverlay có sẵn.
   initChipBar();
+  // Permalink cũng mô phỏng thao tác lên control có sẵn — phải sau cả hai.
+  initLienKetTrangThai(map);
   // Ô tìm kiếm toàn cục: 2005 mục trải 33 lớp thì duyệt tay không nổi. Chỉ mục
   // nạp LƯỜI (lần đầu chạm ô tìm) để không cộng thêm vào lượt tải đầu trang.
   initSearch(map, OVERLAYS, (id) => void toggleOverlay(id, true));
