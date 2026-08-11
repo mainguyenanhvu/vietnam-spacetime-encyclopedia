@@ -850,6 +850,70 @@
       "dia_diem": "Đông Hưng — làng Phù Lưu",
       "xep_hang_theo_nguon": "cấp/năm chưa rõ",
       "ly_do": "[WS-only] baothaibinh TLS"
+    },
+    {
+      "lo": "nghean",
+      "id": "chua-co-am",
+      "ten": "Chùa Cổ Am",
+      "dia_diem": "Minh Châu — quần thể Lèn Hai Vai",
+      "xep_hang_theo_nguon": "KHÔNG có QĐ xếp hạng — nguồn chỉ xác nhận điểm du lịch",
+      "ly_do": "[WF-gov] fetch được nhưng không phải di tích xếp hạng đã xác minh"
+    },
+    {
+      "lo": "nghean",
+      "id": "den-tho-nguyen-canh-hoan",
+      "ten": "Đền thờ Nguyễn Cảnh Hoan",
+      "dia_diem": "Lương Sơn (Tràng Sơn cũ)",
+      "xep_hang_theo_nguon": "QG — 8/4/1991; lễ hội Thập niên sự lệ",
+      "ly_do": "[WS] DNS lỗi 2 lần, chỉ synopsis"
+    },
+    {
+      "lo": "nghean",
+      "id": "den-tho-dinh-bat-tuy",
+      "ten": "Đền thờ Đinh Bạt Tụy",
+      "dia_diem": "Yên Trung",
+      "xep_hang_theo_nguon": "QG — QĐ 1549/QĐ 30/9/1991, 37 sắc phong",
+      "ly_do": "[WS] synopsis, chưa fetch"
+    },
+    {
+      "lo": "nghean",
+      "id": "khu-luu-niem-le-hong-phong",
+      "ten": "Khu lưu niệm cố TBT Lê Hồng Phong",
+      "dia_diem": "Hưng Nguyên Nam (Hưng Thông cũ)",
+      "xep_hang_theo_nguon": "QG 1990, mở rộng 2009",
+      "ly_do": "[WS] banquanlyditichnghean.gov.vn 404 — mục QUAN TRỌNG, ưu tiên fetch lại"
+    },
+    {
+      "lo": "nghean",
+      "id": "dinh-den-chua-trung-kien",
+      "ten": "Đình, đền, chùa Trung Kiên",
+      "dia_diem": "Hải Lộc — làng đóng thuyền 700 năm",
+      "xep_hang_theo_nguon": "QG 1992",
+      "ly_do": "[WS] fetch nhầm trang, cần nguồn đúng"
+    },
+    {
+      "lo": "nghean",
+      "id": "den-voi-quynh-luu",
+      "ten": "Đền Voi",
+      "dia_diem": "Quỳnh Hồng",
+      "xep_hang_theo_nguon": "cấp tỉnh, năm chưa rõ",
+      "ly_do": "[WS-only] SSL lỗi 2 lần — yếu nhất lô"
+    },
+    {
+      "lo": "nghean",
+      "id": "nha-tho-nguyen-trieu-co",
+      "ten": "Nhà thờ họ Nguyễn Triệu Cơ",
+      "dia_diem": "Quỳnh Anh (Quỳnh Đôi cũ)",
+      "xep_hang_theo_nguon": "QG — 19/2/1998",
+      "ly_do": "[WS] cert quynhdoi.gov.vn trỏ nhầm cloudnetwork.vn"
+    },
+    {
+      "lo": "nghean",
+      "id": "den-than-quynh-doi",
+      "ten": "Đền Thần (Quỳnh Đôi)",
+      "dia_diem": "Quỳnh Anh",
+      "xep_hang_theo_nguon": "QG — QĐ 3821/QĐ-BVHTTDL 31/10/2013",
+      "ly_do": "[WS] synopsis baonghean, chưa fetch"
     }
   ]
 }
