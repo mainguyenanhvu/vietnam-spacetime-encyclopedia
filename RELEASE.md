@@ -8,6 +8,24 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## Ảnh chụp hiện trạng — 2026-08-11 (cuối phiên «làm hết kế hoạch»)
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| File dữ liệu | **344** | `catalog.json` (build:index tươi) |
+| Tổng mục | **5.398** | như trên |
+| Trận đánh / mốc thời gian | **251 / 196** | đếm file |
+| Cổng dữ liệu | **13/13 xanh, exit 0** | `npm run validate` |
+| Chủ quyền hiển thị | **13/13 thời kỳ** | `verify:chuquyen` (trên Vite 6) |
+| Smoke | **9 đạt · 0 hỏng** | `npm run smoke` (trên Vite 6) |
+| Draft §9 còn giữ | **16 CHỦ Ý** (2 sensitive-list + 14 chờ Q3) + 155 video kênh ngoài nhà nước | script promote9 |
+| URL ảnh sống | **551/551 sau vá** (548 sống + 3 vá từ hỏng) | quét tuần tự 1,1 s/URL |
+| npm audit prod | **0 lỗ hổng** | `npm audit --omit=dev` |
+
+Phiên 2026-08-11 (11 commit `21e0f7c`→`83b7b67`): UI học Google Maps (chip bar · search pill · permalink) · thuật toán bản đồ (va chạm icon theo zoom · tách điểm trùng render-time) · +52 mục dữ liệu 4 agent + 15 video giáo dục · §9 nâng 1.413 · meta-CSP · Vite 6.4.3 · id cho 2 sổ đăng ký · 4 hex cuối lên token · aria-live hồ sơ tỉnh · email cá nhân ra khỏi User-Agent.
+
+---
+
 ## Ảnh chụp hiện trạng — 2026-08-03
 
 | Chỉ số | Giá trị | Đo bằng |
