@@ -1,44 +1,7 @@
 {
-  "ghi_chu": "Kho Wave 1 chiến dịch 2.122 di tích — bản ghi ĐÃ tra nguồn nhưng chưa nạp lớp: cap_tinh chờ quyết định lớp mới (câu hỏi A/B với chủ dự án); cho_toa_do = QG thiếu toạ độ (xã sáp nhập 2025 chưa vào OSM/Nominatim); can_xac_minh = nguồn chưa fetch trực tiếp được.",
+  "ghi_chu": "Kho chiến dịch 2.122 di tích — cập nhật 2026-08-11 sau lô nạp vét-kho đợt 1 (12 mục lên lớp). cho_toa_do = nguồn ĐÃ đạt, chỉ thiếu toạ độ; can_xac_minh = nguồn chưa fetch trực tiếp được.",
   "cap_tinh": [],
   "cho_toa_do": [
-    {
-      "lo": "hue",
-      "id": "lang-mo-nha-tho-nguyen-tri-phuong",
-      "ten": "Lăng mộ và nhà thờ Nguyễn Tri Phương",
-      "cap": "quoc-gia",
-      "dia_diem": "Làng Chí Long, xã Phong Dinh (Phong Chương cũ), TP Huế",
-      "xep_hang": "Di tích lịch sử cấp quốc gia — QĐ 575-QĐ/VHTT ngày 14/7/1990",
-      "ly_do": "Xã sáp nhập 2025 chưa vào Nominatim, 2 vòng geocode trắng",
-      "nguon": [
-        "Cổng TTĐT tỉnh TT-Huế — https://thuathienhue.gov.vn/vi-vn/Thong-tin-du-dia-chi/tid/Nha-tho-va-lang-mo-Nguyen-Tri-Phuong-Di-tich-lich-su-cap-Quoc-gia/newsid/6D611425-DC32-41C1-BE96-6209DBDAA063/cid/17755F05-A6DF-4876-A5A9-5987A6567282"
-      ]
-    },
-    {
-      "lo": "hue",
-      "id": "dia-dao-khu-uy-tri-thien-hue",
-      "ten": "Địa đạo Khu ủy Trị Thiên Huế (Khe Trái)",
-      "cap": "quoc-gia",
-      "dia_diem": "Khe Trái, phường Hương Vân cũ, TP Huế",
-      "xep_hang": "Di tích lịch sử cấp quốc gia — QĐ 310/QĐ-BT ngày 13/2/1996",
-      "ly_do": "Địa danh rừng núi không có POI OSM, 2 vòng geocode trắng",
-      "nguon": [
-        "Cổng TTĐT TP Huế — https://hue.gov.vn/Thong-tin-du-dia-chi/tid/Dia-dao-Khu-uy-Tri-Thien-Hue-Di-tich-lich-su-cap-quoc-gia/newsid/2D06A94B-A51D-4840-82D2-5FB7ECB6D2E4/cid/806FAD33-57C7-4576-B571-AEBE008B43B2"
-      ]
-    },
-    {
-      "lo": "hue",
-      "id": "dia-diem-so-an-loat-tai-chinh-trung-bo",
-      "ten": "Di tích Sở Ấn Loát Tài Chính Trung Bộ",
-      "cap": "quoc-gia",
-      "dia_diem": "Thôn Hiền Sĩ, xã Phong Thái (Phong Sơn cũ), TP Huế",
-      "xep_hang": "Di tích lịch sử quốc gia — công bố 8/2010, số QĐ chưa xác minh",
-      "ly_do": "Geocode 2 vòng đều rơi khớp giả (Trạm Y tế Phong Xuân)",
-      "nguon": [
-        "Báo Hà Tĩnh — https://baohatinh.vn/dia-diem-so-an-loat-tai-chinh-trung-bo-duoc-cong-nhan-di-tich-lich-su-quoc-gia-post74417.html",
-        "Cổng Phong Điền cũ — https://phongdien.thuathienhue.gov.vn/di-tich-lich-su-van-hoa/di-tich-lich-su-dia-diem-in-bac-tai-chinh-cu-ho-nam-1946.html"
-      ]
-    },
     {
       "lo": "hanoi",
       "id": "chua-ho-quoc-thanh-luong",
@@ -46,88 +9,77 @@
       "cap": "quoc-gia",
       "dia_diem": "phường Thanh Lương, quận Hai Bà Trưng cũ, Hà Nội",
       "xep_hang": "Di tích kiến trúc nghệ thuật QG 1990 (nguoihanoi.vn xác nhận)",
-      "ly_do": "Nominatim khớp giả (ra ĐH Y Hà Nội) — chờ geocode tay"
+      "ly_do": "Nominatim khớp giả; 3 vòng Overpass không có POI 'Hộ Quốc' quanh Thanh Lương/Vĩnh Tuy (2026-08-11). Điểm tạm cấp phường ~20.9985,105.8758 CHƯA dùng. Cũng chưa có nguồn fetch trực tiếp."
     },
     {
-      "lo": "hcm",
-      "id": "hoi-quan-nhi-phu",
-      "ten": "Miếu Nhị Phủ (Hội quán Nhị Phủ)",
+      "lo": "nghean",
+      "id": "khu-luu-niem-le-hong-phong",
+      "ten": "Khu lưu niệm cố Tổng Bí thư Lê Hồng Phong",
       "cap": "quoc-gia",
-      "dia_diem": "264 Hải Thượng Lãn Ông, Q5 cũ, TP.HCM",
-      "xep_hang": "QG — QĐ 722/QĐ-BVHTT 25/4/1998",
-      "ly_do": "[WF] đạt nguồn, Nominatim không có POI, 2 vòng trắng",
+      "dia_diem": "Xóm 10, xã Hưng Thông cũ (nay xã Hưng Nguyên Nam), tỉnh Nghệ An",
+      "xep_hang": "QG — QĐ 218/QĐ-VH ngày 13/3/1990; Điểm du lịch QĐ 1506/QĐ.UBND 2/6/2022",
+      "ly_do": "NGUỒN ĐÃ ĐẠT [WF-gov]×2 (visitnghean + hcc.nghean) — chỉ còn thiếu toạ độ; xã Hưng Thông không còn trong Nominatim sau sáp nhập, visitnghean không nhúng bản đồ",
       "nguon": [
-        "Trung tâm Bảo tồn và Phát huy giá trị di tích LSVH TP.HCM (đơn vị nhà nước trực thuộc Sở VHTT) — https://trungtambaotonditichtphcm.com/Hoat-dong-trung-tam/10034/HOI-QUAN-NHI-PHU.aspx"
+        "Cổng du lịch Nghệ An — https://visitnghean.gov.vn/diem-tham-quan/khu-luu-niem-dong-chi-le-hong-phong",
+        "TT Phục vụ HCC Nghệ An — https://hcc.nghean.gov.vn/laws/detail/Quyet-dinh-ve-viec-cong-nhan-Diem-du-lich-doi-voi-Di-tich-quoc-gia-Khu-luu-niem-dong-chi-Le-Hong-Phong-xa-Hung-Thong-huyen-Hung-Nguyen-455/"
       ]
     },
     {
-      "lo": "hcm",
-      "id": "hoi-quan-ha-chuong",
-      "ten": "Hội quán Hà Chương",
+      "lo": "nghean",
+      "id": "dinh-den-chua-trung-kien",
+      "ten": "Đình, đền, chùa Trung Kiên",
       "cap": "quoc-gia",
-      "dia_diem": "820 Nguyễn Trãi, Q5 cũ, TP.HCM",
-      "xep_hang": "QG — QĐ 52/2001/QĐ-BVHTT 28/12/2001",
-      "ly_do": "[WF] đạt nguồn, chưa geocode được",
+      "dia_diem": "Xóm Đình, xã Nghi Thiết, huyện Nghi Lộc cũ, tỉnh Nghệ An — làng đóng thuyền 700 năm",
+      "xep_hang": "QG — Di tích lịch sử - nghệ thuật 1992, số QĐ chưa tra được",
+      "ly_do": "NGUỒN ĐẠT [WF] (baonghean) — thiếu toạ độ; Nghi Thiết không ra Nominatim, không có điểm DB cùng xã",
       "nguon": [
-        "Trung tâm Bảo tồn và Phát huy giá trị di tích LSVH TP.HCM (đơn vị nhà nước trực thuộc Sở VHTT) — https://trungtambaotonditichtphcm.com/Hoat-dong-trung-tam/10029/HOI-QUAN-HA-CHUONG.aspx"
+        "Báo Nghệ An — https://baonghean.vn/nghe-thuat-dieu-khac-doc-dao-cua-ngoi-dinh-lang-bien-hang-tram-nam-tuoi-10203425.html"
       ]
     },
     {
-      "lo": "hcm",
-      "id": "hoi-quan-nghia-nhuan",
-      "ten": "Hội quán Nghĩa Nhuận",
-      "cap": "quoc-gia",
-      "dia_diem": "27 Phan Văn Khoẻ, Q5 cũ, TP.HCM",
-      "xep_hang": "QG — QĐ 43-VH/QĐ 7/1/1993",
-      "ly_do": "[WF] đạt nguồn, chưa geocode được",
-      "nguon": [
-        "Trung tâm Bảo tồn và Phát huy giá trị di tích LSVH TP.HCM (đơn vị nhà nước trực thuộc Sở VHTT) — https://trungtambaotonditichtphcm.com/Hoat-dong-trung-tam/10031/HOI-QUAN-NGHIA-NHUAN.aspx"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "dinh-nam-chon",
-      "ten": "Đình Nam Chơn",
+      "lo": "nghean",
+      "id": "den-voi-quynh-luu",
+      "ten": "Đền Voi (đền Nhân Sơn)",
       "cap": "cap-tinh",
-      "dia_diem": "29 Trần Quang Khải, phường Tân Định, Q1 cũ, TP.HCM",
-      "xep_hang": "Cấp TP 2006 — số QĐ chưa xác minh",
-      "ly_do": "[WF] Thanh Niên đạt, chưa geocode được — đích: lớp di-tich-cap-tinh",
+      "dia_diem": "Xóm 2, xã Quỳnh Hồng, huyện Quỳnh Lưu cũ, tỉnh Nghệ An",
+      "xep_hang": "Cấp tỉnh 2012 — số QĐ chưa tra được",
+      "ly_do": "NGUỒN ĐẠT [WF] (baonghean) — thiếu toạ độ; đích lớp di-tich-cap-tinh",
       "nguon": [
-        "Báo Thanh Niên — https://thanhnien.vn/ngoi-dinh-giua-trung-tam-tphcm-giu-nguyen-5-sac-phong-trieu-nguyen-hon-170-nam-185260505181423811.htm"
+        "Báo Nghệ An — https://baonghean.vn/den-voi-ve-dep-kien-truc-co-10065602.html"
+      ]
+    },
+    {
+      "lo": "nghean",
+      "id": "den-tho-nguyen-canh-hoan",
+      "ten": "Đền thờ Nguyễn Cảnh Hoan",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Tràng Sơn, huyện Đô Lương cũ, tỉnh Nghệ An",
+      "xep_hang": "QG năm 1991 (bvhttdl.gov.vn xác nhận trực tiếp; ngày 8/4/1991 mức WS)",
+      "ly_do": "NGUỒN ĐẠT [WF-gov] (bvhttdl) — thiếu toạ độ; lễ hội Thập niên sự lệ là DSVHPVT quốc gia 2024",
+      "nguon": [
+        "Bộ VHTTDL — https://bvhttdl.gov.vn/le-hoi-den-nguyen-canh-hoan-duoc-cong-nhan-di-san-van-hoa-phi-vat-the-quoc-gia-20240422221323361.htm"
+      ]
+    },
+    {
+      "lo": "hue",
+      "id": "dinh-lang-the-chi-dong",
+      "ten": "Đình làng Thế Chí Đông",
+      "cap": "cap-tinh",
+      "dia_diem": "Xã Điền Hải cũ, huyện Phong Điền cũ, TP Huế — ven phá Tam Giang; tên đơn vị 2025 chưa xác minh",
+      "xep_hang": "Cấp tỉnh — QĐ 705/QĐ-UBND ngày 21/3/2024",
+      "ly_do": "NGUỒN ĐẠT [WF]×3 (nguoihanoi + huengaynay) — thiếu toạ độ; Điền Hải không ra Nominatim; đích lớp di-tich-cap-tinh",
+      "nguon": [
+        "Người Hà Nội — https://nguoihanoi.vn/ngoi-dinh-mang-net-dac-trung-kien-truc-dan-gian-trieu-nguyen-o-hue-duoc-cong-nhan-la-di-tich-lich-su-84783.html",
+        "Huế Ngày Nay — https://huengaynay.vn/van-hoa-nghe-thuat/thong-tin-van-hoa/phat-huy-gia-tri-cua-dinh-lang-the-chi-dong-141716.html"
       ]
     }
   ],
   "can_xac_minh": [
     {
       "lo": "hue",
-      "id": "chua-giac-luong",
-      "ten": "Chùa Giác Lương",
-      "ly_do": "Nguồn duy nhất phatsuonline.vn (báo Giáo hội, ngoài hệ nhà nước) — cần đối chiếu dsvh.gov.vn/thuathienhue.gov.vn",
-      "xep_hang_theo_nguon": "QĐ 776-QĐ/BT ngày 23/6/1992"
-    },
-    {
-      "lo": "hue",
       "id": "xien-vo-tu-hue",
       "ten": "Xiển Võ Từ",
-      "ly_do": "Cấp/năm lấy từ tóm tắt WebSearch, chưa fetch được trang gốc"
-    },
-    {
-      "lo": "hue",
-      "id": "dinh-lang-the-chi-dong",
-      "ten": "Đình làng Thế Chí Đông",
-      "ly_do": "Chưa fetch được trang gốc xác nhận"
-    },
-    {
-      "lo": "hue",
-      "id": "dinh-va-chua-la-chu",
-      "ten": "Đình và chùa La Chữ",
-      "ly_do": "vhtthuongtra.gov.vn lỗi DNS 2 lần"
-    },
-    {
-      "lo": "hue",
-      "id": "dia-diem-luu-niem-hoang-anh",
-      "ten": "Địa điểm lưu niệm đồng chí Hoàng Anh",
-      "ly_do": "Agent nghi nguồn nói về người trùng tên khác"
+      "ly_do": "2026-08-11: mọi nguồn phi-Wikipedia đều không fetch được (sdl.hue.gov.vn rỗng, thuathienhue.gov.vn DNS/422 kể cả proxy). Tóm tắt WS (gốc Wikipedia — cấm dùng): cấp tỉnh 10/2006, tên gốc Trường Anh danh Giáo dưỡng 1826. Cần nguồn phi-Wikipedia."
     },
     {
       "lo": "haiduong",
@@ -853,67 +805,11 @@
     },
     {
       "lo": "nghean",
-      "id": "chua-co-am",
-      "ten": "Chùa Cổ Am",
-      "dia_diem": "Minh Châu — quần thể Lèn Hai Vai",
-      "xep_hang_theo_nguon": "KHÔNG có QĐ xếp hạng — nguồn chỉ xác nhận điểm du lịch",
-      "ly_do": "[WF-gov] fetch được nhưng không phải di tích xếp hạng đã xác minh"
-    },
-    {
-      "lo": "nghean",
-      "id": "den-tho-nguyen-canh-hoan",
-      "ten": "Đền thờ Nguyễn Cảnh Hoan",
-      "dia_diem": "Lương Sơn (Tràng Sơn cũ)",
-      "xep_hang_theo_nguon": "QG — 8/4/1991; lễ hội Thập niên sự lệ",
-      "ly_do": "[WS] DNS lỗi 2 lần, chỉ synopsis"
-    },
-    {
-      "lo": "nghean",
-      "id": "den-tho-dinh-bat-tuy",
-      "ten": "Đền thờ Đinh Bạt Tụy",
-      "dia_diem": "Yên Trung",
-      "xep_hang_theo_nguon": "QG — QĐ 1549/QĐ 30/9/1991, 37 sắc phong",
-      "ly_do": "[WS] synopsis, chưa fetch"
-    },
-    {
-      "lo": "nghean",
-      "id": "khu-luu-niem-le-hong-phong",
-      "ten": "Khu lưu niệm cố TBT Lê Hồng Phong",
-      "dia_diem": "Hưng Nguyên Nam (Hưng Thông cũ)",
-      "xep_hang_theo_nguon": "QG 1990, mở rộng 2009",
-      "ly_do": "[WS] banquanlyditichnghean.gov.vn 404 — mục QUAN TRỌNG, ưu tiên fetch lại"
-    },
-    {
-      "lo": "nghean",
-      "id": "dinh-den-chua-trung-kien",
-      "ten": "Đình, đền, chùa Trung Kiên",
-      "dia_diem": "Hải Lộc — làng đóng thuyền 700 năm",
-      "xep_hang_theo_nguon": "QG 1992",
-      "ly_do": "[WS] fetch nhầm trang, cần nguồn đúng"
-    },
-    {
-      "lo": "nghean",
-      "id": "den-voi-quynh-luu",
-      "ten": "Đền Voi",
-      "dia_diem": "Quỳnh Hồng",
-      "xep_hang_theo_nguon": "cấp tỉnh, năm chưa rõ",
-      "ly_do": "[WS-only] SSL lỗi 2 lần — yếu nhất lô"
-    },
-    {
-      "lo": "nghean",
       "id": "nha-tho-nguyen-trieu-co",
       "ten": "Nhà thờ họ Nguyễn Triệu Cơ",
       "dia_diem": "Quỳnh Anh (Quỳnh Đôi cũ)",
       "xep_hang_theo_nguon": "QG — 19/2/1998",
-      "ly_do": "[WS] cert quynhdoi.gov.vn trỏ nhầm cloudnetwork.vn"
-    },
-    {
-      "lo": "nghean",
-      "id": "den-than-quynh-doi",
-      "ten": "Đền Thần (Quỳnh Đôi)",
-      "dia_diem": "Quỳnh Anh",
-      "xep_hang_theo_nguon": "QG — QĐ 3821/QĐ-BVHTTDL 31/10/2013",
-      "ly_do": "[WS] synopsis baonghean, chưa fetch"
+      "ly_do": "2026-08-11: quynhdoi.gov.vn cert trỏ nhầm cloudnetwork.vn, 3 lần lỗi kể cả proxy — chỉ có tóm tắt WS của chính trang xã (QG 19/2/1998). Chưa đạt chuẩn nạp."
     }
   ]
 }

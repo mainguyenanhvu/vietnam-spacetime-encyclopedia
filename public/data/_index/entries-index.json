@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5486,
-    "tong_co_toa_do": 2703,
+    "tong_muc": 5498,
+    "tong_co_toa_do": 2715,
     "so_nhom_trung_ten": 828,
-    "so_cap_trung_toa_do": 772,
+    "so_cap_trung_toa_do": 777,
     "ngay_sinh": "2026-08-11"
   },
   "entries": [
@@ -40126,6 +40126,45 @@
       "trang_thai": "draft"
     },
     {
+      "id": "dinh-nam-chon",
+      "slug": null,
+      "ten": "Đình Nam Chơn",
+      "ten_chuan": "dinh nam chon",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 10.7921678,
+      "lon": 106.6949421,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-va-chua-la-chu",
+      "slug": null,
+      "ten": "Đình và chùa La Chữ",
+      "ten_chuan": "dinh va chua la chu",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 16.4924722,
+      "lon": 107.5119899,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dia-diem-luu-niem-hoang-anh",
+      "slug": null,
+      "ten": "Địa điểm lưu niệm đồng chí Hoàng Anh",
+      "ten_chuan": "dia diem luu niem dong chi hoang anh",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 16.47944,
+      "lon": 107.3771,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
       "id": "chien-truong-dien-bien-phu",
       "slug": null,
       "ten": "Chiến trường Điện Biên Phủ",
@@ -46090,6 +46129,123 @@
       "lat": 19.1675987,
       "lon": 105.68394,
       "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoi-quan-nhi-phu",
+      "slug": null,
+      "ten": "Miếu Nhị Phủ (Hội quán Nhị Phủ)",
+      "ten_chuan": "mieu nhi phu hoi quan nhi phu",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 10.751397,
+      "lon": 106.6572598,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoi-quan-ha-chuong",
+      "slug": null,
+      "ten": "Hội quán Hà Chương",
+      "ten_chuan": "hoi quan ha chuong",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 10.7530416,
+      "lon": 106.6575214,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoi-quan-nghia-nhuan",
+      "slug": null,
+      "ten": "Hội quán Nghĩa Nhuận",
+      "ten_chuan": "hoi quan nghia nhuan",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 10.7493723,
+      "lon": 106.6543875,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dia-dao-khu-uy-tri-thien-hue",
+      "slug": null,
+      "ten": "Địa đạo Khu ủy Trị Thiên Huế (Khe Trái)",
+      "ten_chuan": "dia dao khu uy tri thien hue khe trai",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 16.5000036,
+      "lon": 107.4381466,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "lang-mo-nha-tho-nguyen-tri-phuong",
+      "slug": null,
+      "ten": "Lăng mộ và nhà thờ Nguyễn Tri Phương",
+      "ten_chuan": "lang mo va nha tho nguyen tri phuong",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 16.64317,
+      "lon": 107.36373,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dia-diem-so-an-loat-tai-chinh-trung-bo",
+      "slug": null,
+      "ten": "Địa điểm Sở Ấn loát Tài chính Trung Bộ",
+      "ten_chuan": "dia diem so an loat tai chinh trung bo",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 16.47944,
+      "lon": 107.3771,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-giac-luong",
+      "slug": null,
+      "ten": "Chùa Giác Lương",
+      "ten_chuan": "chua giac luong",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 16.47944,
+      "lon": 107.3771,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-tho-dinh-bat-tuy",
+      "slug": null,
+      "ten": "Đền thờ Đinh Bạt Tụy",
+      "ten_chuan": "den tho dinh bat tuy",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 18.761855,
+      "lon": 105.5852399,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-than-quynh-doi",
+      "slug": null,
+      "ten": "Đền Thần (Quỳnh Đôi)",
+      "ten_chuan": "den than quynh doi",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 19.1675987,
+      "lon": 105.68394,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -91866,6 +92022,19 @@
     {
       "a": {
         "file": "overlays/di-tich-cap-tinh.json",
+        "id": "chua-cho-hen",
+        "ten": "Chùa Chợ Hến"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "den-tho-dinh-bat-tuy",
+        "ten": "Đền thờ Đinh Bạt Tụy"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
         "id": "ben-do-co-xin",
         "ten": "Bến đò Cố Xin"
       },
@@ -91899,6 +92068,45 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "dinh-lang-quynh-doi",
         "ten": "Đình làng Quỳnh Đôi"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-quy-linh",
+        "ten": "Đền Quy Lĩnh"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "den-than-quynh-doi",
+        "ten": "Đền Thần (Quỳnh Đôi)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dia-diem-luu-niem-hoang-anh",
+        "ten": "Địa điểm lưu niệm đồng chí Hoàng Anh"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dia-diem-so-an-loat-tai-chinh-trung-bo",
+        "ten": "Địa điểm Sở Ấn loát Tài chính Trung Bộ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dia-diem-luu-niem-hoang-anh",
+        "ten": "Địa điểm lưu niệm đồng chí Hoàng Anh"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "chua-giac-luong",
+        "ten": "Chùa Giác Lương"
       },
       "khoang_cach_m": 0
     },
@@ -97055,6 +97263,19 @@
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "dinh-lang-quynh-doi",
         "ten": "Đình làng Quỳnh Đôi"
+      },
+      "b": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "van-nhu-cuong",
+        "ten": "Văn Như Cương"
+      },
+      "khoang_cach_m": 120
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "den-than-quynh-doi",
+        "ten": "Đền Thần (Quỳnh Đôi)"
       },
       "b": {
         "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
