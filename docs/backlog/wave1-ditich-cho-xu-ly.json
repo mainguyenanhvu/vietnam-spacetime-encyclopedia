@@ -5860,6 +5860,19 @@
         "[WF-gov] trungtambaotonditichquocgiacondao.vn — https://trungtambaotonditichquocgiacondao.vn/vn/di-tich-cap-tinh/an-son-mieu-90.htm"
       ],
       "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "mo-mai-luong",
+      "ten": "Mộ tướng Mai Lượng (Cần Vương)",
+      "cap": "quoc-gia",
+      "xep_hang": "Lịch sử QG (cùng đợt mộ Lê Trực theo Tuổi Trẻ) — số/ngày chưa tra",
+      "dia_diem": "Thọ Linh, Quảng Sơn cũ (nay Nam Ba Đồn)",
+      "mo_ta": "Thủ lĩnh nghĩa quân dưới quyền Đề đốc Nguyễn Phạm Tuân, phong trào Cần Vương — liên kết chéo Cần Vương + mộ Lê Trực (kiểm DB).",
+      "nguon": [
+        "[WF] tuoitre — https://tuoitre.vn/nld/thoi-su/chinh-thuc-xac-dinh-mo-phan-danh-tuong-thu-linh-phong-trao-can-vuong-o-quang-binh-20210625130819333.htm"
+      ],
+      "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
     }
   ],
   "can_xac_minh": [
@@ -11131,6 +11144,105 @@
       "nguon": [
         "[WS-only]"
       ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "lang-chien-dau-cu-nam",
+      "ten": "Làng chiến đấu Cự Nẫm",
+      "dia_diem": "Cự Nẫm, Bố Trạch",
+      "xep_hang_theo_nguon": "'QG' theo nhiều nguồn không chính thức — số/ngày trắng sau nhiều lượt; danh hiệu AHLLVT 1/1/1996 = thi đua ≠ di tích (phân định đúng)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "quang-binh-quan-luy-thay",
+      "ten": "Quảng Bình Quan - luỹ Thầy",
+      "dia_diem": "Đồng Hới",
+      "xep_hang_theo_nguon": "QG 21/01/1992 (số '97/QĐ' chưa fetch xác nhận — khớp đợt 97 quen); KIỂM DB (exclusion list nói đã có)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "thanh-co-dong-hoi",
+      "ten": "Thành cổ Đồng Hới",
+      "dia_diem": "Đồng Hới",
+      "xep_hang_theo_nguon": "QG 21/01/1992 (cùng ngày Quảng Bình Quan — nghi 1 hồ sơ); Bảo tàng QB/QT (2019) nằm TRONG khuôn viên — kiểm DB",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "lang-mo-ho-cuong",
+      "ten": "Lăng mộ Hồ Cưỡng (Hồ Phúc Thiện — quan cuối Trần)",
+      "dia_diem": "Nhân Trạch, Bố Trạch",
+      "xep_hang_theo_nguon": "'QG' CHỈ trên Wikipedia (cấm) → chưa xác minh; quangbinh.gov.vn bài liên quan 404",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "lang-mo-le-sy",
+      "ten": "Lăng mộ Hữu Quân Đô thống Lê Sỹ",
+      "dia_diem": "Quảng Ninh (QB)",
+      "xep_hang_theo_nguon": "'Tỉnh' CHỈ trên Wikipedia (cấm) → chưa xác minh",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "dinh-ly-hoa",
+      "ten": "Đình Lý Hoà (1737)",
+      "dia_diem": "Hải Trạch cũ, Bố Trạch",
+      "xep_hang_theo_nguon": "Không thấy xếp hạng — baoquangbinh chết là nghi phạm chính",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "bai-da-nhay-ly-hoa",
+      "ten": "Bãi Đá Nhảy - Lý Hoà",
+      "dia_diem": "Bắc Trạch, Bố Trạch",
+      "xep_hang_theo_nguon": "'QG' từ AI-search không trích dẫn — không đủ tin",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "ga-ke-ray",
+      "ten": "Ga Kẻ Rấy (chi bộ ga Bố Trạch 1930)",
+      "dia_diem": "Hoàn Lão, Bố Trạch",
+      "xep_hang_theo_nguon": "Không thấy xếp hạng",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
+    },
+    {
+      "lo": "quangbinh-w13",
+      "id": "tran-dia-lao-dan-quan-duc-ninh",
+      "ten": "Trận địa pháo lão dân quân Đức Ninh",
+      "dia_diem": "Đức Ninh, Đồng Hới",
+      "xep_hang_theo_nguon": "Không thấy xếp hạng (1 nguồn du lịch)",
+      "ly_do": "WS-only (w5 QN) — chưa fetch trực tiếp",
+      "nguon": [
+        "[WS-only]"
+      ]
     }
   ],
   "khong_tim_thay": [
@@ -12297,6 +12409,11 @@
     {
       "lo": "brvt-w13",
       "ten": "Đình An Ngãi (Long Điền) — xã chỉ có 2 di tích cấp tỉnh trong danh mục (núi Chân Tiên 2014 + chùa Long Hoà 2009), không có đình — nghi checklist nhầm tên, mồi: 2 di tích kia chưa chắc có trong kho"
+    },
+    {
+      "lo": "quangbinh-w13",
+      "ten": "Bảo tàng QB/QT Đồng Hới (2019, 08 Hùng Vương) — thiết chế trong khuôn viên Thành cổ",
+      "ly_do": "chưa rõ xếp hạng — "
     }
   ]
 }
