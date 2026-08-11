@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#b02020" />
+    <!-- CSP qua <meta> vì GitHub Pages không cho đặt header (public/_headers
+         chỉ có tác dụng trên Cloudflare — PLAN mục 5). Cùng policy với
+         _headers, TRỪ frame-ancestors: meta-CSP không hỗ trợ directive đó.
+         Danh sách host quét từ mã nguồn — xem chú thích trong public/_headers. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://upload.wikimedia.org https://*.basemaps.cartocdn.com; connect-src 'self' https://*.basemaps.cartocdn.com https://upload.wikimedia.org; frame-src https://www.youtube-nocookie.com https://sketchfab.com https://www.google.com; worker-src blob:; child-src blob:; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
     <meta
       name="description"
       content="Từ điển bách khoa Việt Nam theo không gian–thời gian: khám phá lịch sử, văn hoá, địa lý các tỉnh thành Việt Nam qua các thời kỳ trên bản đồ tương tác."
