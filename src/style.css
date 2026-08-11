@@ -2248,3 +2248,23 @@ input[type="range"] {
 #layer-control {
   border-radius: var(--bo-lon);
 }
+
+/* ── Nhóm video giáo dục trong panel Quốc gia (2026-08-11) ── */
+.qg-section-nhom {
+  margin: 0.5rem 0;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vua);
+  padding: 0.35rem 0.6rem;
+  background: var(--mat);
+}
+.qg-section-nhom > summary {
+  cursor: pointer;
+  font-weight: var(--dam-manh);
+  min-height: max(2.75rem, 44px);
+  display: flex;
+  align-items: center;
+}
+.qg-section-nhom[open] > summary {
+  border-bottom: 1px dashed var(--vien);
+  margin-bottom: 0.5rem;
+}

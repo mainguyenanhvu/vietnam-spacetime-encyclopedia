@@ -22,10 +22,23 @@ interface PhimQuocGia {
   kenh_loai: string;
   figure_id?: string;
 }
+interface PhimGiaoDuc {
+  ten: string;
+  youtube_id: string;
+  kenh?: string;
+  kenh_loai: string;
+  // [thời kỳ, lĩnh vực] — phần tử đầu LUÔN là slug thời kỳ (kể cả "tong-hop")
+  chu_de?: string[];
+  mo_ta?: string;
+  nguon?: string[];
+  trang_thai?: string;
+  ghi_chu_bien_tap?: string;
+}
 interface PhimData {
   ghi_chu?: string;
   quoc_gia?: PhimQuocGia[];
   danh_nhan: Phim[];
+  giao_duc?: PhimGiaoDuc[];
 }
 interface DanhNhan {
   id: string;
@@ -152,6 +165,50 @@ function danhNhanCard(d: DanhNhan): string {
   </article>`;
 }
 
+// ── Video giáo dục theo thời kỳ × lĩnh vực (mảng giao_duc, 2026-08-11) ──
+const THOI_KY_GIAO_DUC: [string, string][] = [
+  ["dung-nuoc", "🌾 Dựng nước"],
+  ["bac-thuoc", "⛓️ Bắc thuộc"],
+  ["doc-lap-tu-chu", "👑 Độc lập – tự chủ"],
+  ["phap-thuoc", "🏭 Pháp thuộc"],
+  ["hien-dai", "🚩 Hiện đại"],
+  ["tong-hop", "📚 Nhiều thời kỳ"],
+];
+const LINH_VUC_TEN: Record<string, string> = {
+  "tran-danh": "Trận đánh",
+  "danh-nhan": "Danh nhân",
+  "di-san": "Di sản",
+  "van-hoa-nghe-thuat": "Văn hoá – nghệ thuật",
+};
+
+function giaoDucCard(v: PhimGiaoDuc): string {
+  const linhVuc = (v.chu_de ?? []).slice(1).map((c) => LINH_VUC_TEN[c] ?? c);
+  const meta = [v.kenh, ...linhVuc].filter(Boolean).join(" · ");
+  return `<article class="qg-card">
+    <h4>${esc(v.ten)}</h4>
+    ${meta ? `<p class="qg-meta">${esc(meta)}</p>` : ""}
+    ${v.mo_ta ? `<p class="qg-bio">${esc(v.mo_ta)}</p>` : ""}
+    ${badge(v.kenh_loai, v.trang_thai === "draft")}
+    ${embed(v.youtube_id, v.ten)}
+  </article>`;
+}
+
+function renderGiaoDucSection(): string {
+  const vids = (phim?.giao_duc ?? []).filter((v) => YT.test(v.youtube_id));
+  if (!vids.length) return "";
+  const nhom = THOI_KY_GIAO_DUC.map(([slug, nhan], i) => {
+    const list = vids.filter((v) => (v.chu_de?.[0] ?? "tong-hop") === slug);
+    if (!list.length) return "";
+    // iframe loading="lazy" + details gập: nhóm chưa mở thì trình duyệt
+    // không tải video nào, 15 embed không đè lên thời gian mở panel.
+    return `<details class="qg-section-nhom"${i === 0 ? " open" : ""}>
+      <summary>${nhan} (${list.length})</summary>
+      <div class="qg-grid">${list.map(giaoDucCard).join("")}</div>
+    </details>`;
+  }).join("");
+  return `<section class="qg-section"><h3>🎬 Video giáo dục theo thời kỳ</h3>${nhom}</section>`;
+}
+
 function renderQuocGiaSection(): string {
   if (!phim?.quoc_gia?.length) return "";
   const cards = phim.quoc_gia
@@ -180,6 +237,7 @@ function renderPhimTab(host: HTMLElement): void {
   const coPhim = danhnhan?.items.filter((d) => d.youtube_id).length ?? 0;
   host.innerHTML = `
     <p class="qg-note">${tong} danh nhân theo 34 tỉnh · ${coPhim} có phim tài liệu. Phim do bên thứ ba sản xuất, nhúng từ YouTube; bản nháp — chờ người duyệt. Chủ quyền Hoàng Sa & Trường Sa của Việt Nam.</p>
+    ${renderGiaoDucSection()}
     ${renderQuocGiaSection()}
     <section class="qg-section">
       <h3>🎖️ Danh nhân theo tỉnh</h3>
