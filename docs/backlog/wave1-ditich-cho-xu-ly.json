@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Kho chiến dịch 2.122 di tích — cập nhật 2026-08-11 sau lô nạp vét-kho đợt 1 (12 mục lên lớp). cho_toa_do = nguồn ĐÃ đạt, chỉ thiếu toạ độ; can_xac_minh = nguồn chưa fetch trực tiếp được.",
+  "ghi_chu": "Kho chiến dịch 2.122 di tích — cập nhật 2026-08-11 sau vét kho đợt 1+2 và Wave 3 (HN-B, Nam Định cũ, Hà Nam cũ). cho_toa_do = nguồn ĐÃ đạt chỉ thiếu toạ độ; can_xac_minh = chưa fetch trực tiếp được nguồn đạt chuẩn (leads kèm số QĐ nếu có); khong_tim_thay = đã tra không ra, kèm lý do.",
   "cap_tinh": [],
   "cho_toa_do": [
     {
@@ -72,6 +72,608 @@
         "Người Hà Nội — https://nguoihanoi.vn/ngoi-dinh-mang-net-dac-trung-kien-truc-dan-gian-trieu-nguyen-o-hue-duoc-cong-nhan-la-di-tich-lich-su-84783.html",
         "Huế Ngày Nay — https://huengaynay.vn/van-hoa-nghe-thuat/thong-tin-van-hoa/phat-huy-gia-tri-cua-dinh-lang-the-chi-dong-141716.html"
       ]
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-bich-doai",
+      "ten": "Đình Bích Đoài",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng Bích Du Đoài (Bích Đoài), xã Thái Nguyên, huyện Thái Thụy cũ, Thái Bình (nay Hưng Yên)",
+      "xep_hang": "Di tích lịch sử văn hoá, kiến trúc nghệ thuật quốc gia — QĐ 2015/VHQĐ ngày 16/12/1993",
+      "mo_ta": "Khởi dựng ít nhất từ đầu thế kỷ 17, trùng tu lớn nhất năm Khải Định 8 (1924). Thờ Hoàng giáp Nguyễn Mậu, một trong 38 vị đại khoa của Thái Bình thời Lê Sơ.",
+      "ly_do": "NGUỒN ĐẠT (2026-08-11) — thiếu toạ độ; xã không ra Nominatim/Overpass",
+      "nguon": [
+        "[WF] Cổng TTĐT tỉnh Hưng Yên (qua proxy r.jina.ai) — https://hungyen.gov.vn/dinh-bich-doai-xa-thai-nguyen-huyen-thai-thuy-tinh-thai-binh-c279488.html"
+      ]
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-den-chua-binh-cach",
+      "ten": "Đình – Đền – Chùa Bình Cách",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Tây Bình Cách (Làng Gạch), xã Đông Xá, huyện Đông Hưng cũ, Thái Bình",
+      "xep_hang": "Di tích lịch sử và kiến trúc nghệ thuật quốc gia — công nhận 1993, số QĐ chưa xác minh (KHÔNG dùng 2015-VH/QĐ vì thuộc Bích Đoài)",
+      "mo_ta": "Quần thể đình-đền-chùa rộng 6.373 m², còn nguyên vẹn nhiều mảng chạm gỗ, bia đá, ghép gốm. Đền thờ công chúa Chiêu Dung nhà Trần; chùa kết cấu chữ Đinh 9 nóc mang phong cách Huế.",
+      "ly_do": "NGUỒN ĐẠT (2026-08-11) — thiếu toạ độ; xã không ra Nominatim/Overpass",
+      "nguon": [
+        "[WF] Cổng du lịch tỉnh Hưng Yên — https://dulich.hungyen.gov.vn/vi/detailnews/?t=quan-the-di-tich-dinh-den-chua-binh-cach-xa-dong-xa-huyen-dong-hung&id=news_2286"
+      ]
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-thanh-mau-dong-son",
+      "ten": "Đền Thánh Mẫu",
+      "cap": "cap-tinh",
+      "dia_diem": "Thôn Trung, làng Phù Lưu, xã Đông Sơn, huyện Đông Hưng cũ, Thái Bình",
+      "xep_hang": "Di tích lịch sử văn hoá cấp tỉnh — UBND tỉnh Thái Bình công nhận, ngày/số QĐ chưa xác minh",
+      "mo_ta": "Công trình gỗ đá thời Nguyễn còn khá nguyên vẹn, còn 3 sắc phong. Thờ một vị Hoàng hậu triều Đinh (hai nguồn ghi tên khác nhau: Đào Thị Rạng / Đinh Thị Tỉnh — chưa thống nhất) cùng 4 người em.",
+      "ly_do": "NGUỒN ĐẠT (2026-08-11) — thiếu toạ độ; xã không ra Nominatim/Overpass",
+      "nguon": [
+        "[WF] Cổng du lịch tỉnh Hưng Yên — https://dulich.hungyen.gov.vn/vi/detailnews/?t=den-thanh-mau-xa-dong-son-huyen-dong-hung&id=news_2317"
+      ]
+    },
+    {
+      "lo": "namdinh",
+      "id": "den-tay-chua-van-don",
+      "ten": "Đền Tây và chùa Vân Đồn",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Nghĩa An, huyện Nam Trực cũ, tỉnh Nam Định (nay tỉnh Ninh Bình)",
+      "xep_hang": "Di tích cấp quốc gia — QĐ 1904/QĐ-BVHTTDL ngày 18/6/2021",
+      "mo_ta": "Đền Tây (thế kỷ XVII-XVIII) thờ Thủy Hải Ô Long Đại vương; chùa Vân Đồn (Tập Hy quán, gốc thời Tiền Lý) thờ cả Phật – Đạo – Mẫu.",
+      "ly_do": "NGUỒN ĐẠT [WF-gov/WF] (2026-08-11) — thiếu toạ độ",
+      "nguon": [
+        "[WF-gov] Cục Di sản văn hoá — https://dsvh.gov.vn/den-tay-va-chua-van-don-tinh-nam-dinh-3431"
+      ]
+    },
+    {
+      "lo": "namdinh",
+      "id": "nha-tuong-niem-le-duc-tho",
+      "ten": "Nhà tưởng niệm đồng chí Lê Đức Thọ",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Địch Lễ, phường Hồng Quang (trước là xã Nam Vân, TP Nam Định), tỉnh Ninh Bình",
+      "xep_hang": "Di tích cấp quốc gia — QĐ 3237/QĐ-BVHTTDL ngày 09/9/2025",
+      "mo_ta": "Nơi lưu niệm nhà cách mạng Lê Đức Thọ, cơ sở bí mật hoạt động cách mạng thời chống Pháp; khánh thành năm 2014.",
+      "ly_do": "NGUỒN ĐẠT [WF-gov/WF] (2026-08-11) — thiếu toạ độ",
+      "nguon": [
+        "[WF-gov] Cục Di sản văn hoá — https://dsvh.gov.vn/nha-tuong-niem-dong-chi-le-duc-tho-22301"
+      ]
+    },
+    {
+      "lo": "namdinh",
+      "id": "den-mien-hoan",
+      "ten": "Đền Miễn Hoàn",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Đại Thắng, huyện Vụ Bản cũ, tỉnh Nam Định (nay tỉnh Ninh Bình)",
+      "xep_hang": "Di tích cấp quốc gia — QĐ 3242/QĐ-BVHTTDL ngày 04/11/2020",
+      "mo_ta": "Đền thờ Công chúa Thái Đường, con vua Trần Thái Tông, có công khẩn hoang lập điền trang vùng Thi Liệu.",
+      "ly_do": "NGUỒN ĐẠT [WF-gov/WF] (2026-08-11) — thiếu toạ độ",
+      "nguon": [
+        "[WF-gov] Cục Di sản văn hoá — https://dsvh.gov.vn/den-mien-hoan-tinh-nam-dinh-3342"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "tru-so-bao-dan-chung",
+      "ten": "Trụ sở báo Dân Chúng",
+      "cap": "quoc-gia",
+      "dia_diem": "43 Lê Thị Hồng Gấm, phường Nguyễn Thái Bình, Quận 1 cũ, TP.HCM",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — QĐ 1288-VH/QĐ ngày 16/11/1988",
+      "mo_ta": "Trụ sở toà soạn báo Dân Chúng, cơ quan ngôn luận công khai của Đảng thời 1938–1939 do Hà Huy Tập, Nguyễn Văn Cừ chỉ đạo, có bài viết của Nguyễn Ái Quốc, phát hành tới 15.000 bản mỗi kỳ. Bị chính quyền thực dân Pháp đóng cửa tháng 9/1939.",
+      "ly_do": "NGUỒN ĐẠT (2026-08-11) — thiếu toạ độ (POI/addr không có trong OSM)",
+      "nguon": [
+        "[WF-gov] Trung tâm Bảo tồn di tích TP.HCM — https://trungtambaotonditichtphcm.com/Hoat-dong-trung-tam/10022/TRU-SO-B%C3%81O-DAN-CHUNG.aspx",
+        "[WF-gov] SVHTT TP.HCM — https://svhtt.hochiminhcity.gov.vn/tin-chi-tiet/-/chi-tiet/danh-sach-cac-cong-trinh-dia-diem-da-duoc-quyet-dinh-xep-hang-di-tich-tren-dia-ban-thanh-pho-ho-chi-minh-tinh-den-het-thang-10-nam-2022--21236-201.html"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "co-so-giau-vu-khi-biet-dong-thanh-dinh-doc-lap",
+      "ten": "Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập Tết Mậu Thân 1968",
+      "cap": "quoc-gia",
+      "dia_diem": "287/70 Nguyễn Đình Chiểu, phường 5, Quận 3 cũ, TP.HCM",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — QĐ 1288-VH/QĐ ngày 16/11/1988",
+      "mo_ta": "Hầm bí mật do ông Trần Văn Lài đào từ 1966 dưới vỏ bọc hầm tự hoại, dài hơn 8 m, từng chứa hơn 2 tấn vũ khí. Đội 5 Biệt động Sài Gòn lấy vũ khí từ đây rạng sáng 31/1/1968 để tấn công Dinh Độc Lập.",
+      "ly_do": "NGUỒN ĐẠT (2026-08-11) — thiếu toạ độ (POI/addr không có trong OSM)",
+      "nguon": [
+        "[WF-gov] SVHTT TP.HCM — https://svhtt.hochiminhcity.gov.vn/tin-chi-tiet/-/chi-tiet/danh-sach-cac-cong-trinh-dia-diem-da-duoc-quyet-dinh-xep-hang-di-tich-tren-dia-ban-thanh-pho-ho-chi-minh-tinh-den-het-thang-10-nam-2022--21236-201.html",
+        "[WF] Dân trí — https://dantri.com.vn/thoi-su/can-ham-bi-mat-chua-gan-2-tan-vu-khi-nam-giua-long-tphcm-20220426134741125.htm"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "quan-nhan-huong-thao-cam-vien",
+      "ten": "Quán Nhan Hương",
+      "cap": "cap-tinh",
+      "dia_diem": "02 Nguyễn Bỉnh Khiêm, phường Bến Nghé, Quận 1 cũ (trong Thảo Cầm Viên), TP.HCM",
+      "xep_hang": "Di tích cấp thành phố — QĐ 1515/QĐ-UBND ngày 28/3/2014",
+      "mo_ta": "Quán ăn do ông Nguyễn Văn Tửng lập năm 1963, là cơ sở bí mật của Biệt động Sài Gòn dùng làm bình phong thu thập tin tức, cất giấu vũ khí trong lòng địch suốt 1963–1975.",
+      "ly_do": "NGUỒN ĐẠT (2026-08-11) — thiếu toạ độ (POI/addr không có trong OSM)",
+      "nguon": [
+        "[WF-gov] SVHTT TP.HCM — https://svhtt.hochiminhcity.gov.vn/tin-chi-tiet/-/chi-tiet/danh-sach-cac-cong-trinh-dia-diem-da-duoc-quyet-dinh-xep-hang-di-tich-tren-dia-ban-thanh-pho-ho-chi-minh-tinh-den-het-thang-10-nam-2022--21236-201.html"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "dia-diem-luu-niem-ton-duc-thang-ba-son",
+      "ten": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son",
+      "cap": "quoc-gia",
+      "dia_diem": "Khu vực Ba Son, phường Bến Nghé, Quận 1 cũ, TP.HCM",
+      "xep_hang": "Di tích cấp quốc gia — QĐ 1269/QĐ-BVHTTDL ngày 30/3/2016",
+      "mo_ta": "Di tích gắn với hoạt động của Chủ tịch Tôn Đức Thắng tại xưởng Ba Son thập niên 1920, cái nôi của phong trào công nhân Sài Gòn – Chợ Lớn, gồm ụ tàu cổ xây từ 1884 được giữ lại làm chứng tích.",
+      "ly_do": "NGUỒN ĐẠT (2026-08-11) — thiếu toạ độ (POI/addr không có trong OSM)",
+      "nguon": [
+        "[WF-gov] SVHTT TP.HCM — https://svhtt.hochiminhcity.gov.vn/tin-chi-tiet/-/chi-tiet/danh-sach-cac-cong-trinh-dia-diem-da-duoc-quyet-dinh-xep-hang-di-tich-tren-dia-ban-thanh-pho-ho-chi-minh-tinh-den-het-thang-10-nam-2022--21236-201.html",
+        "[WF] SGGP — https://www.sggp.org.vn/di-tich-luu-niem-chu-tich-ton-duc-thang-tai-ba-son-giu-lai-u-tau-va-cong-nhan-cum-di-tich-nay-post126470.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "mieu-chua-dinh-lai-da",
+      "ten": "Miếu, Chùa, Đình Lại Đà",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Lại Đà, xã Đông Hội cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "QG 1989, số QĐ chưa rõ",
+      "mo_ta": "Cụm đình – chùa (Cảnh Phúc tự) – miếu thờ Thành hoàng Nguyễn Hiền (Trạng nguyên đầu tiên triều Trần, đỗ 1247) và công chúa Tiên Dung. Đình dựng thời Lê, trùng tu 1853, còn 20 đạo sắc phong 1652–1924.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Sở VHTT Hà Nội — https://sovhtt.hanoi.gov.vn/doc-dao-di-tich-quoc-gia-dinh-lai-da/"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-chua-dong-tru",
+      "ten": "Đình Chùa Đông Trù",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Đông Trù, xã Đông Hội cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "QG 1995, số QĐ chưa rõ",
+      "mo_ta": "Cụm đình - chùa bên bờ sông Đuống, trùng tu theo kiến trúc gốc năm 2006; gắn với bến đò Đông Trù thời kháng chiến, nay là vị trí cầu Đông Trù.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-chua-dong-tru-68481.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-den-hoi-phu-chua-a-phai",
+      "ten": "Đình - Đền Hội Phụ và Chùa Hội Phụ (A Phái Tự)",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Hội Phụ, xã Đông Hội cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử + KTNT QG 1996",
+      "mo_ta": "Hội Phụ xưa là làng Cói/Cối Giang. Di tích còn 4 đạo sắc phong (1842–1887), thần phả về Đào Kỳ - Phương Dung và Triệu Việt Vương.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/dinh---den-hoi-phu"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-chua-mach-trang",
+      "ten": "Đình - Chùa Mạch Tràng",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Mạch Tràng, xã Cổ Loa cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "QG 1997 (KHÔNG phải QGĐB — chỉ nằm trong vùng Khu DTQGĐB Cổ Loa)",
+      "mo_ta": "Đình hậu cung thờ An Dương Vương; Mạch Tràng xưa là nơi tích trữ lương thảo cho quân Âu Lạc. Chùa Quang Linh tự liền kề.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-mach-trang-huyen-dong-anh-71401.html",
+        "[WF-gov] dsvh.gov.vn — https://dsvh.gov.vn/di-tich-lich-su-kien-truc-nghe-thuat-va-khao-co-co-loa-2958"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-chua-phuc-hau",
+      "ten": "Đình, Chùa Phúc Hậu",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Phúc Hậu, xã Dục Tú cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "KTNT QG 1994",
+      "mo_ta": "Đình thờ Tam Lang đại vương, dựng khoảng thế kỷ XVII, còn bát hương đá Hậu Lê; nơi chứng kiến khởi nghĩa 23/8/1945, làm kho quân nhu kháng chiến.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-phuc-hau-66127.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-cau-ca-chua-uy-nhu",
+      "ten": "Đình Cầu Cả - Chùa Uy Như",
+      "cap": "cap-tinh",
+      "dia_diem": "Thôn Cầu Cả, xã Cổ Loa cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Cấp TP — QĐ 1652/QĐ-UB ngày 25/3/2003 (checklist ghi QGĐB SAI)",
+      "mo_ta": "Đình thờ An Dương Vương làm Thành hoàng, dời về vị trí hiện nay 1923; chùa Uy Như tự xây thế kỷ XIX, trùng tu 2018-2020.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/dinh-cau-ca"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-thu-cuu",
+      "ten": "Đình Thư Cưu",
+      "cap": "cap-tinh",
+      "dia_diem": "Thôn Thư Cưu, xã Cổ Loa cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Cấp TP — QĐ 2458/QĐ-UBND ngày 1/6/2011 (checklist ghi QGĐB SAI)",
+      "mo_ta": "Một trong «Bát xã Cổ Loa» phụng thờ An Dương Vương; bia đá 1719; đình bị phá 1962, phục dựng 1992-2008.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/dinh-thu-cuu"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "den-le-xa-mai-lam",
+      "ten": "Đền Lê Xá",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Lê Xá, xã Mai Lâm cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "KTNT QG 1992",
+      "mo_ta": "Đền thờ Đào Kỳ và Phương Dung, hai tướng khởi nghĩa Hai Bà Trưng, được phong Thượng đẳng phúc thần. Kiến trúc phong cách thế kỷ XIX.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/den-le-xa-huyen-dong-anh-70226.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-thai-binh-chua-dien-phuc",
+      "ten": "Đình Thái Bình - Chùa Diên Phúc",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Thái Bình (Thái Đường), xã Mai Lâm cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử + KTNT QG 1992",
+      "mo_ta": "Chùa Diên Phúc tương truyền dựng thế kỷ XI, thờ bà Phạm Thị — mẹ vua Lý Công Uẩn; chuông «Diên Phúc Tự Chung» đúc năm Minh Mệnh 2 (1821).",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-thai-binh-chua-dien-phuc-66101.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "nha-tho-ho-trinh-mai-lam",
+      "ten": "Nhà thờ họ Trịnh",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Thái Đường, xã Mai Lâm cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử + KTNT QG 1997",
+      "mo_ta": "Nhà thờ dòng họ định cư hơn 500 năm; bia đá gia phả dựng 1696 (Chính Hòa) cao 1,5 m cùng ngai thờ, bát hương đá thế kỷ XIX.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/nha-tho-ho-trinh-huyen-dong-anh-74603.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "den-chua-to-uy-no",
+      "ten": "Đền - Chùa Tó (Khánh Sơn Tự)",
+      "cap": "cap-tinh",
+      "dia_diem": "Cạnh chợ Tó, xã Uy Nỗ cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Cấp TP 1999",
+      "mo_ta": "Thờ An Dương Vương và Triệu Việt Vương; bia đá niên hiệu Cảnh Thịnh (1800); lễ hội làng Tó mùng 4-10 tháng Giêng.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/den-chua-to-huyen-dong-anh-74397.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "den-sai",
+      "ten": "Đền Sái",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Thụy Lâm cũ (nay xã Thư Lâm), Hà Nội",
+      "xep_hang": "Lịch sử QG — QĐ 15/VH/QĐ ngày 27/1/1986",
+      "mo_ta": "Đền thờ Huyền Thiên Trấn Vũ, người giúp An Dương Vương xây thành Cổ Loa. Tục rước vua giả ngày 11 tháng Giêng — lễ hội đền Sái ghi danh DSVHPVT quốc gia 8/2025.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] Bảo tàng Lịch sử Việt Nam — http://baotanglichsu.vn/vi/Articles/3096/19751/djen-sai-di-tich-lich-su-van-hoa-noi-tieng-cua-thang-long-ha-noi.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-xuan-canh-chua-quan-am",
+      "ten": "Đình Xuân Canh - Chùa Quan Âm",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Xuân Canh, xã Xuân Canh cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "KTNT QG — đình 2000; chùa 2000-2002 (nguồn không thống nhất)",
+      "mo_ta": "Đình Thượng Lão thờ Cao Sơn và Linh Lang, sắc phong sớm nhất Cảnh Hưng 4 (1743). Chùa Quan Âm xây từ thời Lý, còn 41 pho tượng tròn.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-xuan-canh-huyen-dong-anh-74749.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "phao-dai-xuan-canh-chua-van-hoach",
+      "ten": "Pháo đài Xuân Canh - Chùa Vân Hoạch",
+      "cap": "quoc-gia",
+      "dia_diem": "Chùa Vân Hoạch, thôn Xuân Canh, xã Xuân Canh cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử cách mạng QG — QĐ 69/2004/QĐ-BVHTT ngày 10/8/2004",
+      "mo_ta": "Pháo đài kháng chiến chống Pháp giai đoạn 12/1946 – đầu 1947; quân dân Xuân Canh được phong Anh hùng LLVTND 15/8/2003.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/phao-dai-xuan-canh-tai-chua-van-hoach"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "chua-xuyen-duong",
+      "ten": "Chùa Xuyên Dương (Bạch Dương am)",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Xuyên Dương, xã Xuân Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "KTNT QG 2008",
+      "mo_ta": "Dấu tích cổ nhất là bia đá năm Xương Phù 3 (1379); còn bảo tháp đất nung thời Mạc và bia đá Cảnh Hưng 1752.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/chua-xuyen-duong-huyen-thanh-oai-77036.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "nha-luu-niem-bac-ho-xuyen-duong",
+      "ten": "Nhà lưu niệm Bác Hồ tại Xuyên Dương",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Xuyên Dương, xã Xuân Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "Lịch sử QG 1996",
+      "mo_ta": "Nhà gia đình ông Nguyễn Huy Chức, nơi Chủ tịch Hồ Chí Minh ở và làm việc 19/12/1946 – 13/1/1947 sau Lời kêu gọi toàn quốc kháng chiến.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/nha-luu-niem-bac-ho-o-xa-xuan-duong-huyen-thanh-oai-77298.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-truong-xuan",
+      "ten": "Đình Trường Xuân",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Trường Xuân, xã Xuân Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "KTNT QG 1989",
+      "mo_ta": "Thờ ba con trai Hùng Nghị Vương cùng công chúa Tiên Dung, có công trấn giữ vùng Trường Xuân - Thị Nguyên thời Văn Lang.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-truong-xuan-huyen-thanh-oai-74605.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-tu-chau",
+      "ten": "Đình Từ Châu",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Từ Châu, xã Liên Châu cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG — QĐ 28/VHQĐ ngày 18/1/1988",
+      "mo_ta": "Thờ Lỗ Cầu Đại Vương, tướng thời Hùng Duệ Vương. Còn 14 đạo sắc phong và kiệu bát cống hơn 400 năm tuổi.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Cổng xã Liên Châu — https://lienchau.thanhoai.hanoi.gov.vn/tin-chi-tiet/-/chi-tiet/-inh-tu-chau-di-tich-lich-su-cap-quoc-gia-2011-137.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-chau-mai",
+      "ten": "Đình Châu Mai",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Châu Mai, xã Liên Châu cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG — QĐ 65-QĐ/BT ngày 16/1/1995",
+      "mo_ta": "Thờ Phù Tế Minh Lang Phù thần Đại Tướng Quân, giúp Trần Hưng Đạo chống Nguyên Mông thế kỷ XIII.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Cổng xã Liên Châu — https://lienchau.thanhoai.hanoi.gov.vn/tin-chi-tiet/-/chi-tiet/-inh-chau-mai-di-tich-lich-su-cap-quoc-gia-1583-100.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-canh-hoach",
+      "ten": "Đình Canh Hoạch (Đình Vác)",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Canh Hoạch, xã Dân Hòa cũ, Thanh Oai, Hà Nội",
+      "xep_hang": "QG 1991",
+      "mo_ta": "Đình duy nhất còn lại trong 3 đình cũ của làng, thờ 3 vị Thành hoàng.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Cổng xã Dân Hòa — https://danhoa.thanhoai.hanoi.gov.vn/en/tin-chi-tiet/-/chi-tiet/gioi-thieu-ve-di-tich-lich-su-tren-ia-ban-xa-1623-107.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "chua-ngoc-dinh",
+      "ten": "Chùa Ngọc Đình (Thắng Phúc Tự)",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Ngọc Đình, xã Hồng Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG 1989",
+      "mo_ta": "Bệ đá sen thời Trần cho thấy hiện diện từ khoảng 1225–1400.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/chua-ngoc-dinh-huyen-thanh-oai-76515.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-tao-duong",
+      "ten": "Đình Tảo Dương",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Tảo Dương, xã Hồng Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG — hai mốc 1982/1985 vênh trong nguồn, chưa phân xử",
+      "mo_ta": "Đình sàn cổ trên khu đất gần 4.000 m², chạm khắc phong cách nghệ thuật thời Mạc.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] Nhịp sống Hà Nội — https://nhipsonghanoi.hanoimoi.vn/dinh-tao-duong-627134.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-ang-phao",
+      "ten": "Đình Áng Phao",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Áng Phao, xã Cao Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG 1991",
+      "mo_ta": "Đình dựng khoảng thế kỷ XVIII, thờ Tam vị Đức Thượng Đẳng; kiến trúc 5 gian 2 dĩ, cột gỗ lim.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Cổng xã Cao Dương — https://caoduong.thanhoai.hanoi.gov.vn/en/tin-chi-tiet/-/chi-tiet/-inh-ang-phao-noi-luu-giu-gia-tri-lich-su-van-hoa-dan-toc-1552-42.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-uoc-le",
+      "ten": "Đình Ước Lễ",
+      "cap": "cap-tinh",
+      "dia_diem": "Làng Ước Lễ, xã Tân Ước cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "Cấp tỉnh (Hà Tây cũ) 2004",
+      "mo_ta": "Thờ Tể tướng Lữ Gia, sát cổng làng cổ Ước Lễ (làng nghề giò chả); đình có từ thế kỷ XVII.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-uoc-le-huyen-thanh-oai-74615.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-phuc-thuy",
+      "ten": "Đình Phúc Thụy",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng Phúc Lâm - Phượng Thụy, xã Tân Ước cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG 1992",
+      "mo_ta": "Đình chung của hai làng Phúc Lâm và Phượng Thụy, xây lại năm 1907 kiểu chữ Công.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-phuc-thuy-huyen-thanh-oai-71911.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "chua-ba-te-hiep-thuan",
+      "ten": "Chùa Bà Tề (Đại Bi tự)",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Hiệp Thuận cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1993",
+      "mo_ta": "Hiện vật cổ nhất khoảng thế kỷ XVII; lưu giữ khoảng 70 pho tượng.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] Nhịp sống Hà Nội — https://nhipsonghanoi.hanoimoi.vn/chua-ba-te-636107.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-hiep-loc",
+      "ten": "Đình Hiệp Lộc",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Hiệp Lộc, xã Hiệp Thuận cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1997",
+      "mo_ta": "Thờ Hoàng Đạo Thượng Sĩ Đại tướng quân, giúp Hai Bà Trưng đánh Tô Định.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-hiep-loc-huyen-phuc-tho-69116.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-mieu-giao-ha",
+      "ten": "Đình - Miếu Giáo Hạ",
+      "cap": "quoc-gia",
+      "dia_diem": "Xóm Giáo Hạ, xã Ngọc Tảo cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1990",
+      "mo_ta": "Đình và miếu cùng thờ Ả Lã Nương Đê, nữ tướng giúp Hai Bà Trưng.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-giao-ha-huyen-phuc-tho-68990.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-chua-mieu-ngoc-tao",
+      "ten": "Đình Chùa Miếu Ngọc Tảo",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Ngọc Tảo, xã Ngọc Tảo cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1990",
+      "mo_ta": "Đình dựng từ thế kỷ XVI, thờ Vi Ngọc Quang — tướng thời Hùng Vương; còn 17 đạo sắc phong.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-ngoc-tao-huyen-phuc-tho-71446.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-chua-huong-tao",
+      "ten": "Đình Chùa Hương Tảo",
+      "cap": "cap-tinh",
+      "dia_diem": "Thôn Hương Tảo, xã Ngọc Tảo cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "Cấp tỉnh (Hà Tây cũ) 2005",
+      "mo_ta": "Thờ Chử Đồng Tử, Tiên Dung và Triệu Quang Phục.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-huong-tao-huyen-phuc-tho-69122.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "phu-quan-cong-nguyen-ngoc-tri",
+      "ten": "Phủ Quận Công Nguyễn Ngọc Trì",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Hát Môn, Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 2016",
+      "mo_ta": "Phủ thờ Quận công Nguyễn Ngọc Trì, trong quần thể di tích xã Hát Môn cùng đền Hai Bà Trưng.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Sở VHTT Hà Nội — https://sovhtt.hanoi.gov.vn/hat-mon-day-manh-bao-ton-va-phat-huy-gia-tri-cac-di-tich-tren-dia-ban/"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-ha-thai",
+      "ten": "Đình Hạ Thái",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng nghề sơn mài Hạ Thái, xã Duyên Thái cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "KTNT QG 2017",
+      "mo_ta": "Đình gắn với làng nghề sơn mài Hạ Thái nổi tiếng của Thường Tín.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Sở VHTT Hà Nội — https://sovhtt.hanoi.gov.vn/dinh-ha-thai-thuong-tin-ha-noi-duoc-xep-hang-di-tich-quoc-gia/"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "lang-da-quan-cong-do-ba-pham",
+      "ten": "Lăng đá Quận công Đỗ Bá Phẩm (Lăng đá Quận Vân)",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Nỏ Bạn, xã Vân Tảo cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "QG 2003",
+      "mo_ta": "Lăng mộ đá xây năm 1733 bằng đá chở từ Đông Triều; một trong những lăng đá lớn nhất cả nước còn nguyên vẹn kiến trúc thế kỷ XVIII, phát hiện lại năm 1985.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/lang-da-quan-van-huyen-thuong-tin-71978.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-den-chua-ninh-xa-thuong-tin",
+      "ten": "Đình Đền Chùa Ninh Xá (Thường Tín)",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Ninh Sở cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "KTNT QG 1993",
+      "mo_ta": "Đình Ninh Xá thờ Pháp Công đại vương; thần phả soạn năm Phúc Thái 2 (1644) còn lưu cùng 20 đạo sắc phong Lê–Nguyễn.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-ninh-xa-66198.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-chua-khe-hoi",
+      "ten": "Đình Chùa Khê Hồi",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng Khê Hồi, xã Hà Hồi cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "QG 2000",
+      "mo_ta": "Đình xây thế kỷ XVIII, thờ Cao Sơn Đại Vương; lễ hội làng 14-17 tháng Ba âm lịch.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF] Nhịp sống Hà Nội — https://nhipsonghanoi.hanoimoi.vn/dinh-khe-hoi-net-thoi-gian-noi-lang-que-624563.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-bach-lien-thuong-tin",
+      "ten": "Đình Bạch Liên (Thường Tín)",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Liên Phương cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "KTNT QG — QĐ 673/QĐ-BVHTTDL ngày 7/2/2013",
+      "mo_ta": "Đình làng Bạch Liên, xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia năm 2013.",
+      "ly_do": "NGUỒN ĐẠT [WF/WF-gov] (Wave 3 lát A, 2026-08-11) — thiếu toạ độ, chờ lượt geocode",
+      "nguon": [
+        "[WF-gov] Bộ VHTTDL — https://bvhttdl.gov.vn/van-ban-quan-ly/1379.htm"
+      ]
     }
   ],
   "can_xac_minh": [
@@ -89,72 +691,7 @@
       "lat": 20.9659,
       "dia_diem": "thôn Văn Xá, phường Ái Quốc, TP Hải Phòng",
       "xep_hang_theo_nguon": "QG — QĐ 1460-QĐ/VH 28/6/1996",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "mieu-tu-giap",
-      "ten": "Miếu Tứ Giáp",
-      "lon": 106.3846,
-      "lat": 20.9328,
-      "dia_diem": "phường Ái Quốc, TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 04/2001/QĐ-BVHTT 19/01/2001",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "khu-luu-niem-dinh-van-ta",
-      "ten": "Khu lưu niệm Đinh Văn Tả",
-      "lon": 106.3351,
-      "lat": 20.9444,
-      "dia_diem": "phường Hải Dương, TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 68-VH/QĐ 29/1/1993",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-ngoc-uyen",
-      "ten": "Đình Ngọc Uyên",
-      "lon": 106.3478,
-      "lat": 20.9344,
-      "dia_diem": "phường Hải Dương, TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 226-QĐ/BT 5/2/1994",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "chua-dong-ngo",
-      "ten": "Chùa Động Ngọ",
-      "lon": 106.3702,
-      "lat": 20.9111,
-      "dia_diem": "phường Nam Đồng, TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 15-VH/QĐ 13/3/1974",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "chua-dong-neo",
-      "ten": "Chùa Đồng Neo",
-      "lon": 106.3702,
-      "lat": 20.9111,
-      "dia_diem": "phường Nam Đồng, TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 3951-QĐ/BVHTT 20/12/1997",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: Nguồn ngoài nhà nước ghi năm 2001 lệch kho (1996) — chưa phân xử",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -167,72 +704,7 @@
       "lat": 20.9062,
       "dia_diem": "phường Tân Hưng, TP Hải Phòng",
       "xep_hang_theo_nguon": "QG — QĐ 97/QĐ 21/1/1992",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "mieu-pham-xa",
-      "ten": "Miếu Phạm Xá",
-      "lon": 106.3294,
-      "lat": 20.9062,
-      "dia_diem": "phường Tân Hưng (nguyên xã Ngọc Sơn), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 05/1999-QĐ-BVHTT 12/02/1999",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-ngoc-lac",
-      "ten": "Đình Ngọc Lặc",
-      "lon": 106.3294,
-      "lat": 20.9062,
-      "dia_diem": "XUNG ĐỘT đơn vị: bvhttdl.gov.vn ghi xã Ngọc Sơn huyện Tứ Kỳ, danh mục ghi TP Hải Dương — toạ độ hiện KHÔNG tin được",
-      "xep_hang_theo_nguon": "QG — QĐ 13/2007/QĐ-BVHTT 13/6/2007 (bvhttdl.gov.vn/van-ban-quan-ly/61.htm)",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-den-chua-dong-bao",
-      "ten": "Đình – Đền – Chùa Đồng Bào",
-      "lon": 106.3081,
-      "lat": 20.9097,
-      "dia_diem": "phường Thạch Khôi, TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 154-QĐ 25/1/1991",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "den-vang-gia-xuyen",
-      "ten": "Đền Vàng",
-      "lon": 106.3081,
-      "lat": 20.9097,
-      "dia_diem": "phường Thạch Khôi, TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 2307/QĐ 30/12/1991",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "mo-den-tho-nguyen-thi-due-chi-linh",
-      "ten": "Mộ và Đền thờ Nữ tiến sĩ Nguyễn Thị Duệ (Đền Bà Chúa Sao Sa)",
-      "lon": 106.3916,
-      "lat": 21.1119,
-      "dia_diem": "núi Phượng Hoàng, phường Chu Văn An, TP Hải Phòng — GỘP với mục checklist «Đền thờ Bà chúa Sao sa» (cùng di tích); KHÁC hồ sơ tiểu sử nguyen-thi-due đã có (người ≠ di tích)",
-      "xep_hang_theo_nguon": "QG — QĐ 2102/QĐ-BVHTTDL 8/7/2014",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: XUNG ĐỘT CẤP: báo Hải Phòng (fetch trực tiếp) nói CẤP TỈNH 1992, kho/blog nói QG QĐ 97/QĐ — đề xuất chờ văn bản gốc, có thể hạ lớp cấp tỉnh",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -245,7 +717,7 @@
       "lat": 21.0999,
       "dia_diem": "phường Chí Linh (nguyên xã Nhân Huệ), TP Hải Phòng",
       "xep_hang_theo_nguon": "QG — QĐ 502 QĐ/BT 28/4/1994",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: Số QĐ vênh (205-VH/QĐ vs 502 QĐ/BT), ngày 28/4/1994 khớp; [WS-only] — cần văn bản gốc",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -258,7 +730,7 @@
       "lat": 21.0999,
       "dia_diem": "phường Chí Linh (nguyên phường Cổ Thành), TP Hải Phòng",
       "xep_hang_theo_nguon": "QG — QĐ 226-QĐ/BT 5/2/1994",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: Vị trí + nhân vật (Trần Khánh Dư) xác nhận qua nguồn du lịch; năm/số QĐ chưa có nguồn nào xác nhận",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -271,20 +743,7 @@
       "lat": 20.9659,
       "dia_diem": "phường Phú Thái (nguyên xã Kim Liên, Kim Thành) — toạ độ tạm theo ga Phú Thái",
       "xep_hang_theo_nguon": "QG — QĐ 04/2001/QĐ-BVHTT 19/01/2001",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "chua-muong",
-      "ten": "Chùa Muống (Quang Khánh tự)",
-      "lon": 106.4948,
-      "lat": 20.9405,
-      "dia_diem": "xã An Thành (nguyên xã Ngũ Phúc, Kim Thành), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 97/QĐ 21/1/1992",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: [WF] baohaiphong xác nhận vị trí xã Kim Liên (Lương Xá) — toạ độ kho theo ga Phú Thái SAI, cần geocode lại Kim Liên/Kim Lương; bài không có số QĐ",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -297,7 +756,7 @@
       "lat": 20.9405,
       "dia_diem": "xã An Thành (nguyên xã Kim Tân, Kim Thành), TP Hải Phòng",
       "xep_hang_theo_nguon": "QG — QĐ 39/2002/QĐ-BVHTT 30/12/2002",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: [WS-only]; kimthanh.haiduong.gov.vn TLS hết hạn — thử r.jina.ai đợt sau",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -310,20 +769,7 @@
       "lat": 20.9026,
       "dia_diem": "xã Kim Thành (nguyên xã Đại Đức), TP Hải Phòng",
       "xep_hang_theo_nguon": "QG — QĐ 2233 QĐ/BT 26/6/1995",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "den-ngu-uyen",
-      "ten": "Đền Ngư Uyên",
-      "lon": 106.5555,
-      "lat": 20.988,
-      "dia_diem": "phường Kinh Môn (nguyên phường Long Xuyên), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 168 VH/QĐ 2/3/1990",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: Số QĐ khớp tuyệt đối kho (2233) nhưng nguồn chưa rõ nhà nước — cần fetch xác nhận",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -336,7 +782,7 @@
       "lat": 20.9718,
       "dia_diem": "phường Nguyễn Đại Năng (nguyên phường Hiến Thành), TP Hải Phòng",
       "xep_hang_theo_nguon": "QG — QĐ 295-QĐ/BT 12/2/1994",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: Ngày khớp kho nhưng [WS-only] (facebook/wiki/youtube) — cần nguồn đạt chuẩn",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
       ]
@@ -349,215 +795,9 @@
       "lat": 20.9952,
       "dia_diem": "thôn Huề Trì, phường Trần Liễu (nguyên An Phụ), TP Hải Phòng — thờ 2 nữ tướng Thiện Nhân–Thiện Khánh thời Hai Bà Trưng; XUNG ĐỘT năm xếp hạng 1974 vs 1984 giữa 2 nguồn",
       "xep_hang_theo_nguon": "QG — QĐ 15-VH/QĐ 13/3/1974 (theo danh mục)",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
+      "ly_do": "2026-08-11: XUNG ĐỘT 3 MỐC: 1974 (kho) / đình 13/3/1984 / chùa 25/05/2017 — cần văn bản gốc Bộ VHTTDL, không tự chọn",
       "nguon": [
         "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-chua-khue-bich",
-      "ten": "Đình – Chùa Khuê Bích",
-      "lon": 106.5109,
-      "lat": 20.9952,
-      "dia_diem": "phường Trần Liễu (nguyên xã Thượng Quận), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 921 QĐ/BT 20/7/1994",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-noi-hop",
-      "ten": "Đình Nội Hợp",
-      "lon": 106.4813,
-      "lat": 21.0516,
-      "dia_diem": "phường Bắc An Phụ (nguyên xã Lê Ninh), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 17/2006/QĐ-BVHTT 26/01/2006",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "chua-dong-ham-long",
-      "ten": "Chùa – Động Hàm Long (cụm hang Đốc Tít – Hàm Long – Tâm Long)",
-      "lon": 106.5569,
-      "lat": 21.0211,
-      "dia_diem": "phường Nhị Chiểu (nguyên Minh Tân), TP Hải Phòng",
-      "xep_hang_theo_nguon": "Danh thắng QG — QĐ 774 QĐ/BT 21/6/1993",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "den-thien-ky",
-      "ten": "Đền Thiên Kỳ",
-      "lon": 106.5247,
-      "lat": 21.0384,
-      "dia_diem": "phường Duy Tân (nguyên xã Hoành Sơn) — checklist ghi sai đơn vị Nhị Chiểu",
-      "xep_hang_theo_nguon": "QG — QĐ 20/2001/QĐ-BVHTT 29/3/2001",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-dong-quan-noi",
-      "ten": "Đình Đồng Quan Nội",
-      "lon": 106.4501,
-      "lat": 21.0049,
-      "dia_diem": "xã Nam An Phụ (nguyên xã Quang Thành), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 05/1999-QĐ-BVHTT 12/02/1999",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-lang-xa-son",
-      "ten": "Đình Làng Xạ Sơn",
-      "lon": 106.4501,
-      "lat": 21.0049,
-      "dia_diem": "xã Nam An Phụ (nguyên xã Quang Thành), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 04/2001/QĐ-BVHTT 19/01/2001",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-phuong-quat",
-      "ten": "Đình Phương Quất",
-      "lon": 106.4501,
-      "lat": 21.0049,
-      "dia_diem": "xã Nam An Phụ (nguyên xã Lạc Long), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 18/2007/QĐ-BVHTT 14/6/2007",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "haiduong",
-      "id": "dinh-lau-dong",
-      "ten": "Đình Lâu Động",
-      "lon": 106.4501,
-      "lat": 21.0049,
-      "dia_diem": "xã Nam An Phụ (nguyên xã Quang Thành), TP Hải Phòng",
-      "xep_hang_theo_nguon": "QG — QĐ 4700/QĐ-BVHTTDL 18/12/2009",
-      "ly_do": "Nguồn chính là blog tổng hợp chilinhquetoi.com (nguồn xám, có số QĐ) — chờ đối chiếu dsvh.gov.vn rồi mới nạp lớp",
-      "nguon": [
-        "Danh mục di tích tỉnh Hải Dương (blog tổng hợp, kèm số QĐ) — https://chilinhquetoi.com/Van-hien-xu-dong/danh-muc-cac-di-tich-danh-thang-le-hoi-bao-vat-quoc-gia-da-xep-hang-tren-dia-ban-tinh-hai-duong-1872.html"
-      ]
-    },
-    {
-      "lo": "hanoi",
-      "id": "dinh-kim-ngan",
-      "ten": "Đình Kim Ngân",
-      "lon": 105.8529039,
-      "lat": 21.0341289,
-      "dia_diem": "42-44 Hàng Bạc, Hoàn Kiếm",
-      "xep_hang_theo_nguon": "QG 10/2012 — số QĐ chưa xác minh",
-      "ly_do": "WS-only (Dân Việt), cần fetch lại"
-    },
-    {
-      "lo": "hanoi",
-      "id": "den-quan-de",
-      "ten": "Đền Quan Đế",
-      "lon": 105.8519723,
-      "lat": 21.0360963,
-      "dia_diem": "28 Hàng Buồm, Hoàn Kiếm",
-      "xep_hang_theo_nguon": "QG — QĐ 512/QĐ-BVHTTDL 13/02/2015 (từ tiêu đề văn bản được index)",
-      "ly_do": "Trang bvhttdl động, chưa đọc được toàn văn QĐ"
-    },
-    {
-      "lo": "hanoi",
-      "id": "den-hoa-than",
-      "ten": "Đền Hoả Thần",
-      "lon": 105.8469266,
-      "lat": 21.0328454,
-      "dia_diem": "30 Hàng Điếu, Cửa Nam",
-      "xep_hang_theo_nguon": "cấp CHƯA RÕ, năm vênh 1996/1997",
-      "ly_do": "WS-only, không nguồn .gov.vn xác nhận"
-    },
-    {
-      "lo": "hanoi",
-      "id": "dinh-trung-yen",
-      "ten": "Đình Trung Yên",
-      "lon": 105.8529039,
-      "lat": 21.0341289,
-      "dia_diem": "10 ngõ Trung Yên, Hoàn Kiếm",
-      "xep_hang_theo_nguon": "QG — QĐ 07/2008/QĐ-BVHTTDL 26/02/2008",
-      "ly_do": "WS-only (báo NN&MT), cần fetch lại"
-    },
-    {
-      "lo": "hanoi",
-      "id": "nha-90-tho-nhuom",
-      "ten": "Ngôi nhà 90 Thợ Nhuộm",
-      "lon": 105.8440885,
-      "lat": 21.0283275,
-      "dia_diem": "90 Thợ Nhuộm, Cửa Nam — nơi Trần Phú soạn Luận cương 1930",
-      "xep_hang_theo_nguon": "QG — QĐ 29-VH/QĐ 13/01/1964",
-      "ly_do": "sodulich.hanoi.gov.vn lỗi SSL, số QĐ qua Hànộimới trích lại chưa fetch"
-    },
-    {
-      "lo": "hanoi",
-      "id": "dinh-dai-yen",
-      "ten": "Đình Đại Yên",
-      "lon": 105.8294,
-      "lat": 21.0378,
-      "dia_diem": "làng Đại Yên, phường Ngọc Hà",
-      "xep_hang_theo_nguon": "QG 27/12/1990 — số QĐ chưa xác minh",
-      "ly_do": "WS-only, cần fetch lại"
-    },
-    {
-      "lo": "hanoi",
-      "id": "dinh-kim-ma",
-      "ten": "Đình Kim Mã",
-      "lon": 105.8251,
-      "lat": 21.0306,
-      "dia_diem": "61 Kim Mã, Ba Đình",
-      "xep_hang_theo_nguon": "QG 27/12/1990 — số QĐ chưa xác minh",
-      "ly_do": "YẾU NHẤT: chưa fetch được nguồn nào — cân nhắc hạ xuống không-tra-được"
-    },
-    {
-      "lo": "hanoi",
-      "id": "den-lieu-giai",
-      "ten": "Đền Liễu Giai",
-      "lon": 105.8151,
-      "lat": 21.0315,
-      "dia_diem": "phường Liễu Giai, Ba Đình",
-      "xep_hang_theo_nguon": "CHƯA RÕ — nguồn lẫn Đền/Đình: một nguồn ghi cụm xếp QG 27/12/1990, nguồn đã fetch chỉ xác nhận ĐÌNH cấp thành phố 2002",
-      "ly_do": "Nghi 2 công trình bị nhầm trong tư liệu — đọc riêng từng trang trước khi nạp"
-    },
-    {
-      "lo": "hcm",
-      "id": "dien-ngoc-hoang",
-      "ten": "Điện Ngọc Hoàng (Chùa Ngọc Hoàng)",
-      "dia_diem": "73 Mai Thị Lựu, Đa Kao Q1 — checklist ghi sai Tân Định",
-      "xep_hang_theo_nguon": "QG — QĐ 2754/QĐ-BT 15/10/1994",
-      "ly_do": "[WS-only] số QĐ từ tóm tắt search",
-      "nguon": [
-        "nld.com.vn (tổng hợp)"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "tru-so-bao-dan-chung",
-      "ten": "Trụ sở báo Dân Chúng",
-      "dia_diem": "43 Lê Thị Hồng Gấm, Q1",
-      "xep_hang_theo_nguon": "QG — công nhận 16/11/1988",
-      "ly_do": "[WS-only] chưa fetch bài gốc",
-      "nguon": [
-        "https://tuoitre.vn/tru-so-bao-dan-chung-tai-quan-1-tp-hcm-duoc-gan-bang-di-tich-lich-su-quoc-gia-20250618124959609.htm"
       ]
     },
     {
@@ -565,65 +805,10 @@
       "id": "mo-co-ho-lam",
       "ten": "Mộ cổ họ Lâm",
       "dia_diem": "Công viên Tao Đàn, Q1",
-      "xep_hang_theo_nguon": "Cấp TP 2014",
-      "ly_do": "[WS-only] nguồn VnExpress ngoài hệ nhà nước",
+      "xep_hang_theo_nguon": "Cấp TP 17/4/2014, số QĐ chưa xác minh",
+      "ly_do": "2026-08-11: [WS] VnExpress duy nhất, không thấy trong bảng SVHTT trích được — chờ đối chiếu thêm",
       "nguon": [
         "https://vnexpress.net/mo-co-trong-cong-vien-tao-dan-duoc-xep-hang-di-tich-2979088.html"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "co-so-giau-vu-khi-biet-dong-thanh-dinh-doc-lap",
-      "ten": "Cơ sở giấu vũ khí Biệt động Thành đánh Dinh Độc Lập",
-      "dia_diem": "287/70 Nguyễn Đình Chiểu, Q3",
-      "xep_hang_theo_nguon": "QG 1988",
-      "ly_do": "[WS-only] quan3.hochiminhcity.gov.vn ECONNREFUSED nhiều lần",
-      "nguon": [
-        "https://quan3.hochiminhcity.gov.vn/van-hoa-the-thao-du-lich/co-so-dau-vu-khi-cua-biet-dong-thanh-danh-dinh-doc-lap-nam-1968-234.html"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "quan-nhan-huong-thao-cam-vien",
-      "ten": "Quán Nhan Hương - Thảo Cầm Viên",
-      "dia_diem": "Thảo Cầm Viên, Q1",
-      "xep_hang_theo_nguon": "Cấp TP 2014",
-      "ly_do": "[WS-only] chưa fetch",
-      "nguon": [
-        "https://baophapluat.vn/quan-an-nhan-huong-binh-phong-cua-biet-dong-sai-gon-trong-long-dich-post370930.html"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "dia-diem-luu-niem-ton-duc-thang-ba-son",
-      "ten": "Địa điểm lưu niệm Tôn Đức Thắng tại Ba Son",
-      "dia_diem": "2 Tôn Đức Thắng, Q1",
-      "xep_hang_theo_nguon": "QG 1993",
-      "ly_do": "[WS-only] chưa fetch SGGP",
-      "nguon": [
-        "https://www.sggp.org.vn/di-tich-luu-niem-chu-tich-ton-duc-thang-tai-ba-son-giu-lai-u-tau-va-cong-nhan-cum-di-tich-nay-post126470.html"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "dinh-hung-phu",
-      "ten": "Đình Hưng Phú",
-      "dia_diem": "617/19 Bến Bà Đình, Q8",
-      "xep_hang_theo_nguon": "Cấp TP — QĐ 187/2005/QĐ-UBND 12/10/2005",
-      "ly_do": "[WS-only] chưa fetch hcmcpv",
-      "nguon": [
-        "https://hcmcpv.org.vn/tin-tuc/quan-8-hoan-thanh-tu-bo-di-tich-kien-truc-nghe-thuat-cap-thanh-pho-dinh-hung-phu-1491873496"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "dinh-vinh-hoi-quan-4",
-      "ten": "Đình Vĩnh Hội",
-      "dia_diem": "phường Vĩnh Hội cũ, Q4",
-      "xep_hang_theo_nguon": "Cấp TP — QĐ 4345/QĐ-UB 13/10/2008",
-      "ly_do": "[WS-only] nguồn chonthieng ngoài nhà nước",
-      "nguon": [
-        "https://chonthieng.com/dia-diem/dinh-vinh-hoi-quan-4-tphcm/"
       ]
     },
     {
@@ -632,20 +817,9 @@
       "ten": "Chùa Huệ Lâm",
       "dia_diem": "154 Tùng Thiện Vương, Phú Định Q8",
       "xep_hang_theo_nguon": "Cấp TP 2005",
-      "ly_do": "[WS-only] chưa fetch",
+      "ly_do": "2026-08-11: [WS] Thanh Niên duy nhất — cấp TP 2005, số QĐ chưa xác minh",
       "nguon": [
         "https://thanhnien.vn/chua-co-hon-200-nam-o-tphcm-vua-thanh-thai-ban-sac-gan-dai-gia-nhi-phuong-185260504182240486.htm"
-      ]
-    },
-    {
-      "lo": "hcm",
-      "id": "cot-co-thu-ngu",
-      "ten": "Cột cờ Thủ Ngữ",
-      "dia_diem": "Bến Bạch Đằng, Q1",
-      "xep_hang_theo_nguon": "Cấp TP — QĐ 2440/QĐ-UBND 16/5/2016",
-      "ly_do": "[WF] tapchikientruc (hội nghề nghiệp) — chưa dedup kỹ, agent tự khai sót",
-      "nguon": [
-        "tapchikientruc.com.vn"
       ]
     },
     {
@@ -664,40 +838,32 @@
       "id": "mieu-ba-thon",
       "ten": "Miếu Ba Thôn",
       "dia_diem": "Thái Thụy — làng Quang Lang",
-      "xep_hang_theo_nguon": "Cụm QG, năm chưa rõ",
-      "ly_do": "[WS-only] thaibinhtv.vn DNS lỗi"
+      "xep_hang_theo_nguon": "Cụm QG Miếu Ba Thôn – Chùa Hưng Quốc, làng Quang Lang, xã Thụy Hải, Thái Thụy; thờ tướng Nguyễn Quảng Lại thời Đinh",
+      "ly_do": "2026-08-11: Số/ngày QĐ chưa tra được; *.thaibinh.gov.vn ECONNREFUSED tầng mạng, proxy 422"
     },
     {
       "lo": "thaibinh",
       "id": "den-choi-thuy-truong",
       "ten": "Đền Chòi",
       "dia_diem": "Đông Thụy Anh",
-      "xep_hang_theo_nguon": "Cụm QG 1989",
-      "ly_do": "[WS-only] baothaibinh TLS hết hạn"
+      "xep_hang_theo_nguon": "Cụm QG Đền Chòi – Chùa Bến – Chùa Chỉ Bồ 1989, xã Thụy Trường; gắn trận Đại Bàng 1285, Bạch Đằng 1288",
+      "ly_do": "2026-08-11: [WS] đồng thuận nhiều snippet, chưa fetch trực tiếp"
     },
     {
       "lo": "thaibinh",
       "id": "den-he-thuy-ninh",
       "ten": "Đền Hệ",
       "dia_diem": "Tây Thụy Anh",
-      "xep_hang_theo_nguon": "QG 1991",
-      "ly_do": "[WS-only] proxy 404"
+      "xep_hang_theo_nguon": "QG 1990 (checklist ghi 1991 — vênh nhẹ); thôn Ninh Cù, xã Tây Thụy Anh; thờ Ngô Đồng công + Ả nương thời Hùng Vương",
+      "ly_do": "2026-08-11: [WS] domain gốc bất khả fetch"
     },
     {
       "lo": "thaibinh",
       "id": "den-het-thai-ninh",
       "ten": "Đền Hét (thờ Phạm Ngũ Lão)",
       "dia_diem": "Thái Ninh",
-      "xep_hang_theo_nguon": "QG 1993",
-      "ly_do": "[WS-only] nhiều báo đồng nhất, chưa fetch"
-    },
-    {
-      "lo": "thaibinh",
-      "id": "dinh-bich-doai",
-      "ten": "Đình Bích Đoài",
-      "dia_diem": "Thái Ninh",
-      "xep_hang_theo_nguon": "QG — QĐ 2015/VHQĐ 16/12/1993",
-      "ly_do": "[WS-only] snippet cổng tỉnh, chưa fetch nguyên văn"
+      "xep_hang_theo_nguon": "QG 12/1993; làng Bích Du, xã Thái Thượng; gắn Phạm Ngũ Lão, vật cầu cạn",
+      "ly_do": "2026-08-11: [WS] chưa nguồn .gov.vn fetch trực tiếp"
     },
     {
       "lo": "thaibinh",
@@ -720,64 +886,56 @@
       "id": "chua-thien-quy",
       "ten": "Chùa Thiên Quý",
       "dia_diem": "Nam Đông Hưng",
-      "xep_hang_theo_nguon": "QG 1989",
-      "ly_do": "[WS-only] thaibinhtv DNS lỗi"
+      "xep_hang_theo_nguon": "QG — QĐ 1851-VH/QĐ 14/11/1989; thôn Kỳ Con, xã Đông Xuân, Đông Hưng",
+      "ly_do": "2026-08-11: [WS] domain gốc bất khả fetch"
     },
     {
       "lo": "thaibinh",
       "id": "dinh-tau-dong-son",
       "ten": "Đình Tàu",
       "dia_diem": "Đông Hưng",
-      "xep_hang_theo_nguon": "QG — QĐ 3240/QĐ-BVHTTDL 4/11/2020",
-      "ly_do": "[WS-only] nguồn phụ nhất quán, chưa fetch"
-    },
-    {
-      "lo": "thaibinh",
-      "id": "dinh-den-chua-binh-cach",
-      "ten": "Đình, Chùa, Miếu Bình Cách",
-      "dia_diem": "Bắc Đông Hưng",
-      "xep_hang_theo_nguon": "QG 1993",
-      "ly_do": "[WS-only] chưa fetch"
+      "xep_hang_theo_nguon": "QG — QĐ 3240/QĐ-BVHTTDL 4/11/2020; thôn Nam, xã Đông Sơn, Đông Hưng; nơi bầu cử Quốc hội khoá I 1946",
+      "ly_do": "2026-08-11: [WF] chonthieng.com (nguồn xám) — cần nguồn nhà nước"
     },
     {
       "lo": "thaibinh",
       "id": "dinh-lich-dong",
       "ten": "Đình Lịch Động",
       "dia_diem": "Đông Hưng",
-      "xep_hang_theo_nguon": "QG 2006",
-      "ly_do": "[WS-only] baothaibinh TLS"
+      "xep_hang_theo_nguon": "QG 2006; xã Đông Các, Đông Hưng; thờ Đoàn Thượng, Đào Lôi",
+      "ly_do": "2026-08-11: [WS] chưa fetch trực tiếp"
     },
     {
       "lo": "thaibinh",
       "id": "mieu-giang",
       "ten": "Miếu Giàng",
       "dia_diem": "Đông Á, Đông Hưng — checklist ghi sai Đông Quan",
-      "xep_hang_theo_nguon": "QG — QĐ 697/QĐ-BVHTTDL 20/3/2023",
-      "ly_do": "[WS-only] chưa fetch"
+      "xep_hang_theo_nguon": "QG — QĐ 697/QĐ-BVHTTDL 20/3/2023 (nâng từ cấp tỉnh 2020); thôn Đại Đồng, xã Đông Á; thờ Ỷ Lan + công chúa Thiệu Ninh",
+      "ly_do": "2026-08-11: [WS] baothaibinh TLS hết hạn"
     },
     {
       "lo": "thaibinh",
       "id": "den-ngoc-que",
       "ten": "Đền Ngọc Quế",
       "dia_diem": "Quỳnh Phụ",
-      "xep_hang_theo_nguon": "QG — QĐ 1214 ngày 30/10/1990",
-      "ly_do": "[WS-only] [WF] nhưng nguồn tư liệu tư nhân — đối chiếu dsvh"
+      "xep_hang_theo_nguon": "QG — QĐ 1214 ngày 30/10/1990; xã Quỳnh Hoa, Quỳnh Phụ; thờ Đỗ Huyến — khớp chéo số QĐ checklist",
+      "ly_do": "2026-08-11: [WF] ditichlichsuvanhoa.com (nguồn xám) — cần nguồn nhà nước"
     },
     {
       "lo": "thaibinh",
       "id": "chua-am-vo",
       "ten": "Chùa Am Vô",
       "dia_diem": "Đông Tiên Hưng",
-      "xep_hang_theo_nguon": "CẤP TỈNH 2011 — đích lớp di-tich-cap-tinh",
-      "ly_do": "[WS-only] chưa fetch"
+      "xep_hang_theo_nguon": "CẤP TỈNH 2011; xã Phong Châu, Đông Hưng (checklist ghi sai 'Đông Tiên Hưng'); khuôn viên 20.488 m²",
+      "ly_do": "2026-08-11: [WS] domain gốc bất khả fetch; đích lớp di-tich-cap-tinh"
     },
     {
       "lo": "thaibinh",
       "id": "dinh-luu-dong-phuong",
       "ten": "Đình Lưu",
       "dia_diem": "Bắc Đông Hưng",
-      "xep_hang_theo_nguon": "QG, năm/số chưa rõ",
-      "ly_do": "[WS-only] đài tỉnh nói QG không kèm QĐ"
+      "xep_hang_theo_nguon": "QG (số QĐ gốc chưa rõ); xã Đông Phương, Đông Hưng (checklist ghi sai 'Bắc Đông Hưng'); cháy 2017, phục dựng khánh thành 9/12/2023",
+      "ly_do": "2026-08-11: [WS] fetch 404 hai lần"
     },
     {
       "lo": "thaibinh",
@@ -796,20 +954,1613 @@
       "ly_do": "[WS-only] chưa fetch"
     },
     {
-      "lo": "thaibinh",
-      "id": "den-thanh-mau-dong-son",
-      "ten": "Đền Thánh Mẫu",
-      "dia_diem": "Đông Hưng — làng Phù Lưu",
-      "xep_hang_theo_nguon": "cấp/năm chưa rõ",
-      "ly_do": "[WS-only] baothaibinh TLS"
-    },
-    {
       "lo": "nghean",
       "id": "nha-tho-nguyen-trieu-co",
       "ten": "Nhà thờ họ Nguyễn Triệu Cơ",
       "dia_diem": "Quỳnh Anh (Quỳnh Đôi cũ)",
       "xep_hang_theo_nguon": "QG — 19/2/1998",
       "ly_do": "2026-08-11: quynhdoi.gov.vn cert trỏ nhầm cloudnetwork.vn, 3 lần lỗi kể cả proxy — chỉ có tóm tắt WS của chính trang xã (QG 19/2/1998). Chưa đạt chuẩn nạp."
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "nha-48-hang-ngang",
+      "ten": "Hàng Ngang",
+      "cap": "quoc-gia",
+      "dia_diem": "48 Hàng Ngang, phường Hoàn Kiếm (quận Hoàn Kiếm cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lưu niệm sự kiện — nhà số 48 Hàng Ngang, nơi Chủ tịch Hồ Chí Minh soạn Tuyên ngôn Độc lập 1945; thuộc quần thể Khu phố cổ Hà Nội xếp hạng quốc gia",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] WebSearch tổng hợp từ nhiều nguồn (36pho.com, hanoionline.vn) — truy vấn 'danh sách di tích xếp hạng phường Hoàn Kiếm'"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "den-phu-ung-hang-trong",
+      "ten": "Đền Phù Ủng",
+      "cap": "quoc-gia",
+      "dia_diem": "25 Lý Quốc Sư, phường Hàng Trống, quận Hoàn Kiếm (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử kiến trúc nghệ thuật cấp quốc gia, xếp hạng năm 1988 (Bộ Văn hoá - Thông tin)",
+      "ly_do": "Checklist ghi 'quận Hoàn Kiếm' — thực chất thuộc phường Hàng Trống trong quận cũ.",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/den-phu-ung-quan-hoan-kiem-71835.html",
+        "[WS-only] chonthieng.com — https://chonthieng.com/dia-diem/den-phu-ung-hoan-kiem-ha-noi/"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "nha-co-87-ma-may",
+      "ten": "Căn nhà 87 Mã Mây",
+      "cap": "quoc-gia",
+      "dia_diem": "87 Mã Mây, phường Hoàn Kiếm (quận Hoàn Kiếm cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích kiến trúc nhà cổ dân gian, thuộc quần thể Khu phố cổ Hà Nội cấp quốc gia",
+      "ly_do": "Chưa tìm được số quyết định xếp hạng riêng cho căn nhà; có thể được công nhận cùng đợt với 38 Hàng Đào (2004) — cần xác minh thêm.",
+      "nguon": [
+        "[WS-only] WebSearch tổng hợp — truy vấn danh sách di tích khu phố cổ Hà Nội (36pho.com)"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "den-nam-huong-hang-trong",
+      "ten": "Đền Nam Hương",
+      "cap": "quoc-gia",
+      "dia_diem": "75 Hàng Trống, phường Hàng Trống, quận Hoàn Kiếm (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử - văn hoá cấp quốc gia, xếp hạng năm 1995 (Bộ Văn hoá và Thông tin)",
+      "ly_do": "Checklist ghi 'Đền Nam Hương', nguồn gọi là 'Đình Nam Hương' — cùng một di tích, tên gọi song song đền/đình.",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-nam-huong-quan-hoan-kiem-71414.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-tan-khai-chua-thai-cam",
+      "ten": "Đình - Chùa Thái Cam",
+      "cap": "quoc-gia",
+      "dia_diem": "16A Hàng Gà, phường Hàng Bồ, quận Hoàn Kiếm (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Cụm di tích quốc gia Đình Tân Khai - Chùa Thái Cam",
+      "ly_do": "Checklist ghi 'Đình - Chùa Thái Cam' nhưng đình đúng tên là 'Tân Khai' (tên khác: Thái Cam).",
+      "nguon": [
+        "[WS-only] thanhuyhanoi.vn — https://thanhuyhanoi.vn/tin-tuc/quan-hoan-kiem/tu-bo-ton-tao-chua-thai-cam-bao-ton-va-phat-huy-di-san-van-hoa-giua-long-pho-co-ha-noi-50012281.html",
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/chua-thai-cam-quan-hoan-kiem-76764.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "den-huong-tuong-ma-may",
+      "ten": "Đền Hương Tượng",
+      "cap": "quoc-gia",
+      "dia_diem": "64 Mã Mây, phường Hoàn Kiếm (quận Hoàn Kiếm cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích kiến trúc nghệ thuật cấp quốc gia, xếp hạng ngày 26/02/2008 (Bộ Văn hoá, Thể thao và Du lịch)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WF] 36pho.com — https://36pho.com/den-huong-tuong-1132.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-cau-dong-dinh-duc-mon",
+      "ten": "Chùa Cầu Đông - Đình Đức Môn",
+      "cap": "quoc-gia",
+      "dia_diem": "38B Hàng Đường, phường Hoàn Kiếm (quận Hoàn Kiếm cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia, xếp hạng ngày 5/9/1989 (Bộ Văn hoá và Thông tin)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] thanhdiavietnamhoc.com — https://thanhdiavietnamhoc.com/chua-cau-dong-mot-di-tich-quan-trong-gop-phan-xac-dinh-vi-tri-hoang-thanh-thang-long/",
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-duc-mon-quan-hoan-kiem-68978.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-dong-lac-hang-dao",
+      "ten": "Đình Đồng Lạc",
+      "cap": "quoc-gia",
+      "dia_diem": "38 Hàng Đào, phường Hoàn Kiếm (quận Hoàn Kiếm cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích cấp quốc gia, công nhận năm 2004",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] cand.com.vn — https://cand.com.vn/Tieu-diem-van-hoa/Dinh-Dong-Lac-38-Hang-Dao-diem-den-moi-cho-du-khach-i418194/",
+        "[WS-only] baophapluat.vn — https://baophapluat.vn/dinh-dong-lac-va-con-duong-to-lua-hang-dao-post425868.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-tu-thi-yen-thai",
+      "ten": "Đình Tú Thị",
+      "cap": "quoc-gia",
+      "dia_diem": "2A Yên Thái, phường Hàng Gai, quận Hoàn Kiếm (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia, xếp hạng năm 2015",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] giaoducthoidai.vn — https://giaoducthoidai.vn/ghe-dinh-tu-thi-nho-ong-to-nghe-theu-post673806.html",
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-tu-thi-va-nghe-theu-quan-hoan-kiem-74366.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-vinh-tru-hang-luoc",
+      "ten": "Chùa Vĩnh Trù",
+      "cap": "quoc-gia",
+      "dia_diem": "59 Hàng Lược, phường Hoàn Kiếm (quận Hoàn Kiếm cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá, công nhận bởi Bộ Văn hoá Thông tin (ngày cụ thể chưa xác minh được)",
+      "ly_do": "Chưa tìm được năm/số quyết định cụ thể.",
+      "nguon": [
+        "[WS-only] WebSearch tổng hợp — truy vấn 'Chùa Vĩnh Trù phố Hàng Lược di tích xếp hạng'"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-ha-lo-lien-ha",
+      "ten": "Đình Hà Lỗ",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Hà Lỗ, xã Liên Hà cũ (nay xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia (cùng cụm 4 đình Liên Hà)",
+      "ly_do": "Chưa xác minh được số quyết định/năm xếp hạng cụ thể.",
+      "nguon": [
+        "[WF] donganh360.vn — https://donganh360.vn/danh-muc-di-tich/di-tich-lich-su-cap-quoc-gia/2"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-ha-huong-lien-ha",
+      "ten": "Đình Hà Hương",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Hà Hương, xã Liên Hà cũ (nay xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia, xếp hạng năm 1989",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] chonthieng.com — https://chonthieng.com/dia-diem/dinh-ha-huong/",
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-ha-huong-5534.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "nghe-chau-phong-lien-ha",
+      "ten": "Nghè Châu Phong",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Châu Phong, xã Liên Hà cũ (nay xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử, kiến trúc, nghệ thuật, xếp hạng năm 2003 (Bộ Văn hoá Thông tin)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WF] donganh360.vn — https://donganh360.vn/di-tich/nghe-den-chau-phong",
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/nghe-chau-phong-68693.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-chua-dao-thuc",
+      "ten": "Đình Đảo Thục - Chùa Thánh Phúc",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Đào Thục, xã Thụy Lâm cũ (nay xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Xếp hạng cấp quốc gia năm 1995 (Bộ Văn hoá - Thông tin)",
+      "ly_do": "SỬA LỖI TÊN: checklist ghi 'Đảo Thục' — tên đúng 'Đào Thục'. Không thấy tên 'Chùa Thánh Phúc' cho di tích này — đối chiếu CSV gốc dòng 722.",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-chua-dao-thuc-huyen-dong-anh-68906.html",
+        "[WF] donganh360.vn — https://donganh360.vn/di-tich/dinh---chua-dao-thuc"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "nha-tho-nguyen-thuc-van-diem",
+      "ten": "Nhà thờ họ Nguyễn Thực",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Vân Điềm, xã Vân Hà cũ (nay xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử, xếp hạng năm 1993 (Bộ Văn hoá và Thông tin)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/nha-tho-nguyen-thuc-huyen-dong-anh-71484.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-van-diem",
+      "ten": "Đình Vân Điềm",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Vân Điềm (tên nôm Kẻ Đóm), xã Vân Hà cũ (nay xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử, xếp hạng năm 2006 (Bộ Văn hoá - Thể thao - Du lịch)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-van-diem-huyen-dong-anh-74620.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-lo-giao-viet-hung",
+      "ten": "Đình Lỗ Giao",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Lỗ Giao, xã Việt Hùng cũ (nay một phần xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Bằng di tích lịch sử, kiến trúc nghệ thuật, cấp năm 1998",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] ditichlichsu-vanhoahanoi.com — https://ditichlichsu-vanhoahanoi.com/2017/11/30/dinh-lo-giao-2/",
+        "[WF] donganh360.vn — https://donganh360.vn/danh-muc-di-tich/di-tich-lich-su-cap-quoc-gia/4"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-kim-tien-xuan-non",
+      "ten": "Đình Kim Tiên",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Kim Tiên, xã Xuân Nộn cũ (nay xã Thư Lâm), huyện Đông Anh, Hà Nội",
+      "xep_hang_theo_nguon": "Trong danh mục di tích cấp quốc gia huyện Đông Anh (số QĐ chưa xác minh được)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WF] donganh360.vn — https://donganh360.vn/danh-muc-di-tich/di-tich-lich-su-cap-quoc-gia/3",
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-kim-tien-huyen-dong-anh-70189.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-van-nien-tay-ho",
+      "ten": "Chùa Vạn Niên",
+      "cap": "quoc-gia",
+      "dia_diem": "Ven Hồ Tây, quận Tây Hồ (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích kiến trúc nghệ thuật cấp quốc gia, xếp hạng năm 1996",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] WebSearch tổng hợp — truy vấn 'di tích xếp hạng quận Tây Hồ Hà Nội đình chùa'"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-thien-nien-tay-ho",
+      "ten": "Chùa Thiên Niên",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng cổ Trích Sài, ven Hồ Tây, quận Tây Hồ (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích kiến trúc nghệ thuật cấp quốc gia, xếp hạng ngày 31/1/1992",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] xanhsm.com — https://www.xanhsm.com/news/chua-thien-nien-tay-ho"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-sai-tinh-lau",
+      "ten": "Chùa Sải",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng Hồ Khẩu, phường Bưởi, quận Tây Hồ (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia — QĐ 1460/QĐ-BT ngày 26/6/1996",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] chonthieng.com — https://chonthieng.com/dia-diem/chua-sai-tinh-lau-tu-tay-ho-ha-noi/",
+        "[WS-only] ditichlichsu-vanhoahanoi.com — https://ditichlichsu-vanhoahanoi.com/2017/10/04/chua-sai/"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-chua-quang-ba",
+      "ten": "Đình - chùa Quảng Bá",
+      "cap": "quoc-gia",
+      "dia_diem": "Phường Quảng An/Quảng Bá, quận Tây Hồ (cũ), Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử kiến trúc nghệ thuật và thắng cảnh, xếp hạng năm 1992",
+      "ly_do": "Chưa xác minh số QĐ (single source, năm 1992 chưa đối chiếu chéo).",
+      "nguon": [
+        "[WS-only] vinwonders.com — https://vinwonders.com/vi/wonderpedia/news/chiem-bai-14-ngoi-den-chua-o-ho-tay/"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-huu-thanh-oai",
+      "ten": "Đình Hữu Thanh Oai",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Hữu Hòa/Tả Thanh Oai cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia, xếp hạng năm 1992",
+      "ly_do": "thanhtri.hanoi.gov.vn 404 khi fetch trực tiếp — thông tin từ WS tóm tắt trang này.",
+      "nguon": [
+        "[WS-only] thanhtri.hanoi.gov.vn — https://thanhtri.hanoi.gov.vn/sach/-/asset_publisher/HgNzlI7sMGQj/content/-inh-huu-thanh-oai"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-bao-thap-ta-thanh-oai",
+      "ten": "Chùa Bảo Tháp",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Thượng Phúc, xã Tả Thanh Oai cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử - văn hoá cấp quốc gia, xếp hạng năm 1990",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/chua-bao-thap-huyen-thanh-tri-74920.html",
+        "[WS-only] chonthieng.com — https://chonthieng.com/dia-diem/chua-bao-thap-thuong-phuc-tu-thanh-tri-ha-noi/"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-chua-nhan-hoa-phuc-lam",
+      "ten": "Đình Nhân Hoà - Chùa Phúc Lâm",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Nhân Hòa, xã Tả Thanh Oai cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích kiến trúc nghệ thuật cấp quốc gia, xếp hạng năm 1992",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] suckhoemoitruong.com.vn — https://suckhoemoitruong.com.vn/chua-nhan-hoa-noi-hoi-tu-hon-thieng-va-tin-nguong-lang-que-dai-thanh-ha-noi-27688.html",
+        "[WS-only] thanhtri.hanoi.gov.vn — https://thanhtri.hanoi.gov.vn/xay-dung-quan-ly-o-thi/-/asset_publisher/HgNzlI7sMGQj/content/chua-nhan-hoa-phuc-lam-tu-xa-ta-thanh-oai-huyen-thanh-tri-uoc-bo-van-hoa-the-thao-va-du-lich-tham-inh-thoa-thuan-du-an-tu-bo-ton-tao-di-tich-"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-hoa-xa-ta-thanh-oai",
+      "ten": "Đình Hoa Xá",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Tả Thanh Oai (làng Tó), xã Tả Thanh Oai cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử kiến trúc cấp quốc gia, xếp hạng 5/2/1994 (cùng cụm với Minh Ngự Lâu)",
+      "ly_do": "Cụm với Minh Ngự Lâu — cân nhắc gộp khi nhập.",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-hoa-xa-minh-ngu-lau-huyen-thanh-tri-69096.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "minh-ngu-lau-ta-thanh-oai",
+      "ten": "Minh Ngự Lâu",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Tả Thanh Oai (làng Tó), xã Tả Thanh Oai cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử kiến trúc cấp quốc gia, xếp hạng ngày 5/2/1994",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] nguoihanoi.vn — https://nguoihanoi.vn/dinh-hoa-xa-minh-ngu-lau-huyen-thanh-tri-69096.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-sieu-quan-ta-thanh-oai",
+      "ten": "Đình Siêu Quần",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Siêu Quần, xã Tả Thanh Oai cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích kiến trúc nghệ thuật quốc gia — QĐ 226 ngày 5/2/1994 (Bộ Văn hoá - Thông tin)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] thuonghieucongluan.com.vn — https://thuonghieucongluan.com.vn/sieu-quan-mot-goc-hoi-que-giua-long-ha-noi-a49205.html"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-huynh-cung-tam-hiep",
+      "ten": "Đình Chùa Huỳnh Cung",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Huỳnh Cung, xã Tam Hiệp cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử - kiến trúc - nghệ thuật cấp quốc gia, xếp hạng năm 1993",
+      "ly_do": "DNS lỗi khi fetch trực tiếp — thông tin từ WS tóm tắt trang .gov.vn.",
+      "nguon": [
+        "[WS-only] Cổng TTĐT xã Tam Hiệp (tamhiep.thanhtri.hanoi.gov.vn) — https://tamhiep.thanhtri.hanoi.gov.vn/gioi-thieu-chung/-/asset_publisher/UByp2W88WPKe/content/-inh-huynh-cung-di-tich-lich-su-cap-quoc-gia"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-yen-nguu-tam-hiep",
+      "ten": "Đình Yên Ngưu",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Yên Ngưu, xã Tam Hiệp cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia, xếp hạng năm 1995",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS-only] Cổng TTĐT xã Tam Hiệp — https://tamhiep.thanhtri.hanoi.gov.vn/gioi-thieu-chung/-/asset_publisher/UByp2W88WPKe/content/-inh-yen-nguu-di-tich-lich-su-cap-quoc-gia"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-hung-long-yen-nguu",
+      "ten": "Chùa Hưng Long",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Yên Ngưu, xã Tam Hiệp cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia, xếp hạng năm 1995 (cùng đợt với Đình Yên Ngưu)",
+      "ly_do": "Nguồn gọi 'Chùa Yên Ngưu' — cùng một chùa với tên checklist 'Chùa Hưng Long'.",
+      "nguon": [
+        "[WS-only] Cổng TTĐT xã Tam Hiệp — https://tamhiep.thanhtri.hanoi.gov.vn/gioi-thieu-chung/-/asset_publisher/UByp2W88WPKe/content/chua-yen-nguu-di-tich-lich-su-cap-quoc-gia"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "chua-tien-linh-van-phuc",
+      "ten": "Chùa Tiên Linh",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Vạn Phúc, xã Vạn Phúc cũ, huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử kiến trúc - nghệ thuật cấp quốc gia, xếp hạng năm 1992",
+      "ly_do": "Checklist gán don_vi 'Đại Thanh' nhưng Vạn Phúc có thể KHÔNG thuộc Đại Thanh mới — đối chiếu ranh giới trước khi định vị.",
+      "nguon": [
+        "[WS-only] thanhtri.hanoi.gov.vn — https://thanhtri.hanoi.gov.vn/du-lich-thanh-tri/-/asset_publisher/HgNzlI7sMGQj/content/chua-tien-linh-xa-van-phuc-huyen-thanh-tri-uoc-bo-van-hoa-the-thao-va-du-lich-thoa-thuan-du-an-tu-bo-ton-tao-di-tich-"
+      ]
+    },
+    {
+      "lo": "hanoi-w3",
+      "id": "dinh-vinh-ninh-vinh-quynh",
+      "ten": "Đình Vĩnh Ninh",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng Vĩnh Ninh (tên khác Vĩnh Đặng), xã Vĩnh Quỳnh cũ (nay xã Đại Thanh), huyện Thanh Trì, Hà Nội",
+      "xep_hang_theo_nguon": "Di tích lịch sử văn hoá cấp quốc gia — hai nguồn vênh năm: 1980 và 1989",
+      "ly_do": "Năm xếp hạng vênh (1980 vs 1989) — ghi cả hai, không tự chọn.",
+      "nguon": [
+        "[WS-only] hanoidep.vn — https://hanoidep.vn/dinh-vinh-ninh/",
+        "[WS-only] chonthieng.com — https://chonthieng.com/dia-diem/dinh-vinh-ninh/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "khu-chi-huy-nha-may-det-nam-dinh",
+      "ten": "Khu chỉ huy Nhà máy Liên hợp Dệt Nam Định",
+      "dia_diem": "TP Nam Định",
+      "xep_hang_theo_nguon": "QG 4/1979",
+      "ly_do": "WS-only; hiện trạng xuống cấp nghiêm trọng",
+      "nguon": [
+        "[WS] thanhnien.vn/lich-su-thanh-nam-se-chi-con-tren-giay-185289153.htm"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "cua-hang-cat-toc-duoi-ham",
+      "ten": "Cửa hàng cắt tóc dưới hầm",
+      "dia_diem": "Ngõ 96 Nguyễn Du, TP Nam Định — khai trương 2/9/1966",
+      "xep_hang_theo_nguon": "QG 1979",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5093/201310/nam-dinh-manh-dat-con-nguoi-cua-hang-cat-toc-duoi-ham-2280508/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "nha-co-so-7-ben-ngu",
+      "ten": "Nhà cổ số 7 phố Bến Ngự",
+      "dia_diem": "7 Bến Ngự, TP Nam Định — nơi sinh Trần Bích San; chi hội VNCM Thanh niên đầu tiên Nam Định",
+      "xep_hang_theo_nguon": "QG 1991",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5093/201312/nha-so-7-pho-ben-ngu-thanh-pho-nam-dinh-2297320/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "ham-chi-huy-thanh-uy-nam-dinh",
+      "ten": "Hầm chỉ huy Thành ủy Nam Định (hầm A4)",
+      "dia_diem": "57 Quang Trung (Công ty In Nam Định)",
+      "xep_hang_theo_nguon": "chưa rõ",
+      "ly_do": "WS-only, chưa rõ cấp",
+      "nguon": [
+        "[WS] danviet.vn/phuong-nam-dinh-tinh-ninh-binh-moi-dia-phan-nam-dinh-cu-lam-viec-quan-trong-nay-doi-voi-cac-di-tich-lich-su-cach-mang-d1425111.html"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-bao-loc",
+      "ten": "Đền Bảo Lộc",
+      "dia_diem": "Vùng phụ cận Đền Trần, TP Nam Định — thái ấp Trần Liễu, thờ Trần Hưng Đạo",
+      "xep_hang_theo_nguon": "QG 1988",
+      "ly_do": "WS-only; coi chừng trùng vùng cụm Đền Trần",
+      "nguon": [
+        "[WS] tuoitre.vn/thuc-hien-nghiem-cac-quy-dinh-ve-quan-ly-di-tich-va-to-chuc-le-hoi-tai-den-bao-loc-20260301112750167.htm"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-luu-pho",
+      "ten": "Đền Lựu Phố",
+      "dia_diem": "Xã Mỹ Phúc, Mỹ Lộc — thờ Trần Quang Khải",
+      "xep_hang_theo_nguon": "QG — QĐ 2310/QĐ-BVHTTDL 26/7/2011",
+      "ly_do": "WS-only nhưng có số QĐ — ưu tiên fetch lại",
+      "nguon": [
+        "[WS] baochinhphu.vn/den-luu-pho-nam-dinh-duoc-xep-hang-di-tich-quoc-gia-10288656.htm"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "cot-co-nam-dinh",
+      "ten": "Cột cờ Nam Định",
+      "dia_diem": "TP Nam Định — 1 trong 4 cột cờ cổ nhất VN",
+      "xep_hang_theo_nguon": "QG 28/4/1962, cấp bằng 1997",
+      "ly_do": "WS-only; kiểm trùng DB trước (khả năng đã có)",
+      "nguon": [
+        "[WS] baotangtinhnamdinh.vn/tin-tuc-detail.aspx?id=152"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-cay-que",
+      "ten": "Đền Cây Quế",
+      "dia_diem": "Xã Mỹ Tân, Mỹ Lộc — thờ Linh Lang Đại Vương",
+      "xep_hang_theo_nguon": "QG 2013",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] cand.com.vn/van-hoa/Di-tich-Quoc-gia-den-Cay-que-Nam-Dinh-con-giu-duoc-nhieu-co-vat-co-gia-tri-i241657/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-sung-van",
+      "ten": "Đình Sùng Văn",
+      "dia_diem": "Xã Mỹ Thuận, Mỹ Lộc — thờ Linh Lang + Cao Đê, Đãi Chân",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only, thiếu số QĐ",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5093/201603/nhung-ngoi-dinh-co-o-my-loc-2474105/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-ca-dinh-cha",
+      "ten": "Đình Cả (Đình Chạ)",
+      "dia_diem": "Xã Mỹ Trung, Mỹ Lộc",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only, thiếu số QĐ",
+      "nguon": [
+        "[WS] baonamdinh (cùng bài đình cổ Mỹ Lộc)"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-am-nam-giang",
+      "ten": "Đền Am",
+      "dia_diem": "TT Nam Giang, Nam Trực — thờ Thiền sư Bùi Huệ Tổ (1566-1641)",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only; checklist gộp 'Đền Am Giáp Nhất' nghi 2 di tích",
+      "nguon": [
+        "[WS] quydisan.vn/kham-pha-thi-tran-co-4-di-tich-quoc-gia-o-nam-dinh/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-lang-van-chang",
+      "ten": "Đình làng Vân Chàng",
+      "dia_diem": "TT Nam Giang, Nam Trực — thờ Lục vị Tổ sư nghề rèn, 6 sắc phong Khải Định 1924",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] vanhoanghethuat.vn/gia-tri-lich-su---van-hoa-dinh-lang-van-chang.htm"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-gin",
+      "ten": "Đền Gin",
+      "dia_diem": "Xã Nam Dương, Nam Trực — thờ Kiều Công Hãn; lễ rước cá trắm đen",
+      "xep_hang_theo_nguon": "QG 1962/1964, cấp bằng 1989",
+      "ly_do": "WS-only; checklist ghi 'Nam Minh' sai",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5087/202001/dac-sac-tuc-thi-co-trong-le-hoi-den-gin-2535135/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-tho-trang-nguyen-nguyen-hien",
+      "ten": "Đền thờ Trạng nguyên Nguyễn Hiền",
+      "dia_diem": "Thôn Dương A, xã Nam Thắng, Nam Trực",
+      "xep_hang_theo_nguon": "QG 1994",
+      "ly_do": "WS-only; coi chừng trùng hồ sơ người nguyen-hien",
+      "nguon": [
+        "[WS] baoninhbinh.org.vn/den-tho-trang-nguyen-nguyen-hien-noi-gin-giu-va-lan-toa-truyen-thong-hieu-hoc-260322085052696.html"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-da-nam-ha",
+      "ten": "Đền Đá (Nam Hà)",
+      "dia_diem": "Thôn Nam Hà, xã Tân Thịnh, Nam Trực — thờ 3 anh em họ Vũ thời Hùng Vương",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only nguồn du lịch",
+      "nguon": [
+        "[WS] 63stravel.com/vn/relics-new/nam-dinh/den-da-nam-ha"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-giap-ba",
+      "ten": "Đền Giáp Ba (đền Cẩm Nang)",
+      "dia_diem": "Thôn Ba, TT Nam Giang, Nam Trực — thờ Triệu Việt Vương",
+      "xep_hang_theo_nguon": "QG 1994",
+      "ly_do": "WS-only; checklist có 2 dòng Giáp Ba (Nam Trực vs Hiển Khánh) — nghi trùng lặp checklist",
+      "nguon": [
+        "[WS] nguoiquansat.vn/ngoi-den-thieng-ton-tai-hon-14-the-ky-tai-vung-dat-hoc-nam-dinh-duoc-xep-hang-di-tich-lich-su-quoc-gia-183754.html"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-vu-nu",
+      "ten": "Đền Vụ Nữ",
+      "dia_diem": "Xã Hợp Hưng, Vụ Bản",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5093/201405/nam-dinh-dat-nuoc-con-nguoi-den-vu-nu-2326250/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-giap-nhat",
+      "ten": "Đền Giáp Nhất (phủ Giáp Nhất)",
+      "dia_diem": "Thôn Giáp Nhất, xã Quang Trung, Vụ Bản — thờ Đào Quý Nương thời Hai Bà Trưng",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5093/201311/nam-dinh-manh-dat-con-nguoi-den-giap-nhat-2289278/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-vinh-lai",
+      "ten": "Đình (Đền), chùa Vĩnh Lại",
+      "dia_diem": "Xã Vĩnh Hào, Vụ Bản — thờ Bạch Đằng - Cao Lôi thời Hai Bà Trưng",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5087/202205/vu-ban-phat-huy-cac-gia-tri-di-san-van-hoa-que-huong-2550736/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "phu-quang-cung",
+      "ten": "Phủ Quảng Cung (Phủ Nấp)",
+      "dia_diem": "Xã Yên Đồng, Ý Yên — lần giáng sinh thứ nhất Thánh Mẫu Liễu Hạnh",
+      "xep_hang_theo_nguon": "QG 11/4/2013 (trước đó cấp tỉnh 2005)",
+      "ly_do": "WS-only; đối chiếu trùng quần thể Phủ Dầy trong DB",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5087/202011/phu-quang-cung-diem-den-tam-linh-hap-dan-du-khach-2540774/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-chua-do-quan",
+      "ten": "Đình, chùa Đô Quan",
+      "dia_diem": "Xã Yên Khang, Ý Yên — thờ Trần Nhân Trứ; chạm khắc TK XVI-XVIII",
+      "xep_hang_theo_nguon": "QG (cụm)",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] chonthieng.com/dia-diem/chua-do-quan-y-yen-nam-dinh/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-ngoc-chan",
+      "ten": "Đền Ngọc Chấn",
+      "dia_diem": "Ý Yên — thờ Đặng Dung",
+      "xep_hang_theo_nguon": "QG? (low confidence)",
+      "ly_do": "low confidence, chưa kiểm chứng",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-tuong-loat",
+      "ten": "Đền Tướng Loát",
+      "dia_diem": "Ý Yên — thờ Ngô Quý Duật",
+      "xep_hang_theo_nguon": "QG? (low confidence)",
+      "ly_do": "low confidence",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-den-chua-pham-xa-nd",
+      "ten": "Đình, đền, chùa Phạm Xá (Nam Định)",
+      "dia_diem": "Thôn Phạm Xá, xã Yên Nhân, Ý Yên — KHÁC Miếu Phạm Xá Hải Dương",
+      "xep_hang_theo_nguon": "QG 2000",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] chonthieng.com/dia-diem/chua-pham-xa-y-yen-nam-dinh/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-phuc-chi",
+      "ten": "Chùa Phúc Chỉ",
+      "dia_diem": "Xã Yên Thắng, Ý Yên — Trần Nhật Duật xây; cơ sở cách mạng đầu tiên của tỉnh",
+      "xep_hang_theo_nguon": "QG 1999",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5087/201901/chua-phuc-chi-co-so-cach-mang-dau-tien-cua-tinh-2528427/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-ne-dinh-ngo-xa-thap-chuong-son",
+      "ten": "Chùa Nề - Đình Ngô Xá - Phế tích Tháp Chương Sơn",
+      "dia_diem": "Xã Yên Lợi, Ý Yên — giữ 2 Bảo vật quốc gia (tượng A Di Đà thời Lý, lan can thành bậc)",
+      "xep_hang_theo_nguon": "QG 2012",
+      "ly_do": "WS-only; đối chiếu bảo vật trong DB",
+      "nguon": [
+        "[WS] baonamdinh.vn/van-hoa-nghe-thuat/202312/yen-loi-bao-tonphat-huy-gia-tri-di-tich-21e03ce/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-ruoi",
+      "ten": "Đình Ruối",
+      "dia_diem": "Thôn Ngọc Chuế, xã Yên Nghĩa, Ý Yên — thờ Lương Thị Minh Nguyệt, nữ tình báo đầu tiên trong chính sử",
+      "xep_hang_theo_nguon": "QG 1992",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5087/202208/dinh-ruoi-noi-tho-nu-tinh-bao-dau-tien-cua-chinh-su-viet-nam-2552545/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "cum-ba-don-binh-thoi-tran",
+      "ten": "Cụm ba đồn binh thời Trần (Đền Xối Đông Thượng/Trung/Hạ)",
+      "dia_diem": "Xã Trung Đông, Trực Ninh",
+      "xep_hang_theo_nguon": "QG (nhóm 7 di tích QG Trực Ninh)",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] vietnamtourism.gov.vn/printer/56072?type=1"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-tuan-luc",
+      "ten": "Đền Tuân Lục",
+      "dia_diem": "Trực Ninh — 15 sắc phong từ 1783",
+      "xep_hang_theo_nguon": "cấp tỉnh 1996 → QG (năm chưa rõ)",
+      "ly_do": "low confidence",
+      "nguon": [
+        "[WS] namdinhtrongtoi.4devvn.com/more/35"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-co-chat",
+      "ten": "Chùa Cổ Chất",
+      "dia_diem": "Xã Phương Định, Trực Ninh",
+      "xep_hang_theo_nguon": "QG (nhóm 7 Trực Ninh)",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] vietnamtourism.gov.vn/printer/56072?type=1"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-cu-tru",
+      "ten": "Chùa (Đền) Cự Trữ",
+      "dia_diem": "Xã Phương Định, Trực Ninh",
+      "xep_hang_theo_nguon": "QG (nhóm 7 Trực Ninh)",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] vietnamtourism.gov.vn"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-ninh-cuong",
+      "ten": "Chùa Ninh Cường",
+      "dia_diem": "Xã Trực Cường, Trực Ninh — Huân chương Kháng chiến hạng Ba",
+      "xep_hang_theo_nguon": "QG 1995",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] chonthieng.com/dia-diem/chua-ninh-cuong-truc-ninh-nam-dinh/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-vien-quang",
+      "ten": "Chùa Viên Quang (chùa Nghĩa Xá)",
+      "dia_diem": "Xã Xuân Ninh, Xuân Trường — hơn 900 năm, xuống cấp nghiêm trọng",
+      "xep_hang_theo_nguon": "QG 1991",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] danviet.vn/chua-co-hon-900-tuoi-cua-mot-lang-o-nam-dinh-co-the-sap-do-bat-cu-luc-nao-dan-dang-keu-cuu-20231217204603932.htm"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-anh-quang-xa-ha",
+      "ten": "Chùa Anh Quang (Chùa Xã Hạ)",
+      "dia_diem": "Xã Hải Bắc, Hải Hậu — xây 1823",
+      "xep_hang_theo_nguon": "QG 1995",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] chonthieng.com/dia-diem/chua-anh-quang-chua-xa-ha-hai-hau-nam-dinh/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-bao-ninh",
+      "ten": "Đền Bảo Ninh",
+      "dia_diem": "Xã Hải Phương, Hải Hậu",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5087/201505/hai-hau-bao-ton-phat-huy-gia-tri-cac-di-tich-lich-su-van-hoa-2416399/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-phuc-son",
+      "ten": "Chùa Phúc Sơn (chùa Trung)",
+      "dia_diem": "Xã Hải Trung, Hải Hậu",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] chonthieng.com/dia-diem/chua-phuc-son-chua-trung-hai-hau-nam-dinh/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-luong-cau-ngoi",
+      "ten": "Chùa Lương và Cầu ngói chùa Lương",
+      "dia_diem": "Xã Hải Anh, Hải Hậu",
+      "xep_hang_theo_nguon": "QG (cụm Cầu Ngói - Đền Thủy tổ - Chùa Lương)",
+      "ly_do": "WS-only; checklist tách 2 dòng — cùng cụm; kiểm trùng DB (cầu ngói nổi tiếng)",
+      "nguon": [
+        "[WS] baonamdinh (bài Hải Hậu)"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-con",
+      "ten": "Chùa Cồn (Quy Hồn tự)",
+      "dia_diem": "TT Cồn, Hải Hậu — hoàn chỉnh 1886, trùng tu 1926",
+      "xep_hang_theo_nguon": "QG — QĐ 141 QĐ-VH 23/1/1997",
+      "ly_do": "WS-only nhưng có số QĐ",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5093/201405/nam-dinh-manh-dat-con-nguoi-chua-con-2326833/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "chua-ha-lan",
+      "ten": "Chùa Hà Lạn",
+      "dia_diem": "Xã Hải Phúc, Hải Hậu — trụ sở UB kháng chiến xã Hưng Đạo thời chống Pháp",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh (bài Hải Hậu)"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-an-trach",
+      "ten": "Đền An Trạch",
+      "dia_diem": "Thôn An Trạch, xã Hải An, Hải Hậu — thờ Trần Hưng Đạo + Nguyễn Công Trứ",
+      "xep_hang_theo_nguon": "QG 2014",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] namdinhtrongtoi.4devvn.com/history/36"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-chua-ha-cat",
+      "ten": "Đền, chùa Hà Cát",
+      "dia_diem": "Xã Hồng Thuận, Giao Thủy — chi bộ Đảng đầu tiên của huyện 22/4/1940",
+      "xep_hang_theo_nguon": "QG 2001",
+      "ly_do": "WS-only (URL .gov.vn — ưu tiên fetch lại đợt sau)",
+      "nguon": [
+        "[WS] giaothuy.namdinh.gov.vn/van-hoa-xa-hoi/le-hoi-truyen-thong-di-tich-lich-su-van-hoa-cap-quoc-gia-den-chua-ha-cat-xa-hong-thuan-418385"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-chua-hung-thinh",
+      "ten": "Đền, chùa Hưng Thịnh",
+      "dia_diem": "Xã Hoàng Nam, Nghĩa Hưng — thờ Phạm Nguyên Bảo + Phạm Đạo Phú",
+      "xep_hang_theo_nguon": "QG — QĐ 226-VH/QĐ 05/02/1994",
+      "ly_do": "nguồn xám + WS",
+      "nguon": [
+        "[WS] timcoinguon.blogspot.com (blog dòng họ)"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "dinh-hung-loc",
+      "ten": "Đình Hưng Lộc",
+      "dia_diem": "Xã Nghĩa Thịnh, Nghĩa Hưng — thờ Phạm Cự Lượng",
+      "xep_hang_theo_nguon": "QG",
+      "ly_do": "nguồn xám",
+      "nguon": [
+        "[WS] hophamvietnam.org (trang dòng họ)"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-chua-ha-duong",
+      "ten": "Đền, chùa Hà Dương",
+      "dia_diem": "Xã Hoàng Nam, Nghĩa Hưng",
+      "xep_hang_theo_nguon": "QG 2017",
+      "ly_do": "WS-only",
+      "nguon": [
+        "[WS] baonamdinh.vn/channel/5106/201703/den-chua-ha-duong-xa-hoang-nam-huyen-nghia-hung-duoc-xep-hang-la-di-tich-quoc-gia-2517354/"
+      ]
+    },
+    {
+      "lo": "namdinh-w3",
+      "id": "den-binh-hai",
+      "ten": "Đền Bình Hải",
+      "dia_diem": "Nghĩa Hưng — lễ hội Bình Hải Yên DSVHPVT 2023; NGHI lẫn đền cùng tên ở Ninh Bình",
+      "xep_hang_theo_nguon": "QG 1993 (low confidence)",
+      "ly_do": "low confidence, nghi nhầm địa danh",
+      "nguon": [
+        "[WS] yeulichsu.edu.vn/den-binh-hai-yen-tho-ai"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "chua-bach-lien-trac-van",
+      "ten": "Chùa Bạch Liên",
+      "cap": "quoc-gia",
+      "dia_diem": "Trác Văn, Duy Tiên",
+      "xep_hang_theo_nguon": "Kiến trúc nghệ thuật QG 09/02/1992",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] dangcongsan.vn/tu-tuong-van-hoa/tu-bo-ton-tao-di-tich-chua-bach-lien-tinh-ha-nam-592448.html"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-lung-xuyen-yen-bac",
+      "ten": "Đình Lũng Xuyên",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Lũng Xuyên, Yên Bắc, Duy Tiên — nơi lập BCH lâm thời Đảng bộ Hà Nam 9/1930; nhà lưu niệm Nguyễn Hữu Tiến (người vẽ Quốc kỳ)",
+      "xep_hang_theo_nguon": "Lịch sử cách mạng QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] hanam.gov.vn (URL sẵn trong báo cáo agent — ưu tiên fetch lại)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-le-xa-tien-son",
+      "ten": "Đình Lê Xá",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Lê Xá, Tiên Sơn, Duy Tiên — thờ TS Lý Trần Thản",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-lang-doi-tam",
+      "ten": "Đình Làng Đọi Tam",
+      "cap": "quoc-gia",
+      "dia_diem": "Đọi Sơn, Duy Tiên — làng nghề trống Đọi Tam",
+      "xep_hang_theo_nguon": "Lịch sử - kiến trúc nghệ thuật QG 2017",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] vietnamplus.vn/nhung-nguoi-giu-lua-nghe-de-trong-doi-tam-ngan-nam-vang-vong-post986809.vnp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-da-tien-phong",
+      "ten": "Đình đá Tiên Phong",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn An Mông, Tiên Phong, Duy Tiên — đình toàn đá, thờ nữ tướng Nguyệt Nga",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] duytien.hanam.gov.vn (SSL lỗi — thử proxy)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-lac-nhue-le-ho",
+      "ten": "Đình Lạc Nhuế",
+      "cap": "quoc-gia",
+      "dia_diem": "Đồng Hóa/Lê Hồ, Kim Bảng — thờ Đinh Tiên Hoàng",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-phu-thuy-thi-son",
+      "ten": "Đình Phù Thụy",
+      "cap": "quoc-gia",
+      "dia_diem": "Thi Sơn, Kim Bảng",
+      "xep_hang_theo_nguon": "QĐ 3088/QĐ-BVHTTDL (ngày chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-thuong-thanh-non",
+      "ten": "Đình Thượng - Thanh Nộn",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Thanh Nộn, Thi Sơn, Kim Bảng",
+      "xep_hang_theo_nguon": "Lịch sử + KTNT QG 18/01/1993",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "den-truc-ngu-dong-thi-son",
+      "ten": "Đền Trúc và Ngũ Động Thi Sơn",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng Quyển Sơn, Thi Sơn, Kim Bảng — thờ Lý Thường Kiệt; 5 hang liên hoàn núi Cấm",
+      "xep_hang_theo_nguon": "QĐ 152-VH/QĐ ngày 25/01/1994",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WF-xam] ditichlichsuvanhoa.com/dttc/DEN-TRUC-a106.html (nguồn xám fetch được — cần nguồn nhà nước)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "chua-ba-sao-tam-chuc",
+      "ten": "Chùa Ba Sao (Quần thể Tam Chúc)",
+      "cap": "dac-biet",
+      "dia_diem": "Ba Sao, Kim Bảng (2025: Tam Chúc)",
+      "xep_hang_theo_nguon": "DTQG ĐẶC BIỆT — QĐ 1959/QĐ-TTg ngày 11/09/2025 (đợt 18)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] baochinhphu.vn/xep-hang-04-di-tich-quoc-gia-dac-biet-102250911134209282.htm — ƯU TIÊN fetch lại: DTQGĐB mới nhất, kiểm trùng quần thể Tam Chúc trong DB"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-thinh-chau-ha",
+      "ten": "Đình Thịnh Châu Hạ",
+      "cap": "quoc-gia",
+      "dia_diem": "Châu Sơn, Phủ Lý",
+      "xep_hang_theo_nguon": "KTNT QG 12/02/1999",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-tai-kenh",
+      "ten": "Đình Tái Kênh (Đình làng Tái)",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Tái Kênh, Đinh Xá, Phủ Lý (2025: Liêm Tuyền) — thờ nữ tướng Quỳnh Trân thời Hai Bà Trưng",
+      "xep_hang_theo_nguon": "QĐ 22/2006/QĐ-BVHTT ngày 26/01/2006",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WF-xam] ditichlichsuvanhoa.com/dttc/DINH-TAI-KENH-a121.html"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-an-bai-dong-du",
+      "ten": "Đình An Bài",
+      "cap": "quoc-gia",
+      "dia_diem": "Đồng Du, Bình Lục",
+      "xep_hang_theo_nguon": "KTNT QG 01/02/2000",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-cong-dong-an-my",
+      "ten": "Đình Công Đồng",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn An Thái, An Mỹ, Bình Lục (2025: Bình Mỹ)",
+      "xep_hang_theo_nguon": "Lịch sử QG 02/03/1990",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-chua-dao-truyen",
+      "ten": "Đình, chùa Đạo Truyền",
+      "cap": "quoc-gia",
+      "dia_diem": "Đồn Xá, Bình Lục — checklist gắn 'Bình Mỹ' LỆCH, cần rà",
+      "xep_hang_theo_nguon": "Lịch sử + nghệ thuật QG 02/08/1999",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-chua-co-vien",
+      "ten": "Đình, Chùa Cổ Viễn",
+      "cap": "quoc-gia",
+      "dia_diem": "Hưng Công, Bình Lục (2025: Bình An) — địa chỉ đỏ thời lập Đảng",
+      "xep_hang_theo_nguon": "Lịch sử + kiến trúc QG 25/01/1994",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-mai-dong-trung-luong",
+      "ten": "Đình Mai Động",
+      "cap": "quoc-gia",
+      "dia_diem": "Trung Lương, Bình Lục (2025: Bình An)",
+      "xep_hang_theo_nguon": "Lịch sử nghệ thuật QG 20/07/1994",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "den-to-tran-nhu-lan",
+      "ten": "Đền thờ tổ Quốc Công Trần Như Lân",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Thượng Lang, Ngọc Lũ, Bình Lục — xây 1681, 15 sắc phong Hậu Lê",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] 63stravel.com"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-hung-cong",
+      "ten": "Đình Hưng Công",
+      "cap": "quoc-gia",
+      "dia_diem": "Hưng Công, Bình Lục",
+      "xep_hang_theo_nguon": "Lịch sử + kiến trúc QG 25/01/1994 (cùng đợt Cổ Viễn)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-chua-vi-ha",
+      "ten": "Đình, Chùa Vị Hạ",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Vị Hạ, Trung Lương, Bình Lục — gồm Từ đường Nguyễn Khuyến; KIỂM TRÙNG DB (Nguyễn Khuyến khả năng đã có)",
+      "xep_hang_theo_nguon": "Lịch sử QG 30/12/1991",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] vietnamnet.vn/chuyen-la-trong-ngoi-nha-go-hon-100-tuoi-o-ha-nam-664030.html"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-vi-thuong-trung-luong",
+      "ten": "Đình Vị Thượng",
+      "cap": "quoc-gia",
+      "dia_diem": "Trung Lương, Bình Lục — thờ Tản Viên + Sùng Công, Hiển Công",
+      "xep_hang_theo_nguon": "QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] daibieunhandan.vn/dinh-lang-vi-thuong-10051470.html"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-den-hoa-ngai",
+      "ten": "Đình, đền Hòa Ngãi",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Hòa Ngãi, Thanh Hà, Thanh Liêm — thờ Đinh Lôi (tướng Lý Bôn)",
+      "xep_hang_theo_nguon": "KTNT QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] thanhliem.hanam.gov.vn (URL sẵn — ưu tiên fetch lại)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-cam-du-thanh-luu",
+      "ten": "Đình Cẩm Du",
+      "cap": "quoc-gia",
+      "dia_diem": "Thanh Lưu, Thanh Liêm",
+      "xep_hang_theo_nguon": "KTNT QG 20/04/2001",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "kem-trong-thanh-mai",
+      "ten": "Kẽm Trống",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Đoan Vĩ, Thanh Mai, Thanh Liêm — khe núi sông Đáy; từng bị xâm hại khai thác đá",
+      "xep_hang_theo_nguon": "Danh thắng QG — QĐ 314-VH/VP năm 1962 (mục 33)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] caselaw.vn (toàn văn QĐ 314-VH/VP)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-chua-mac-thuong",
+      "ten": "Đình, chùa Mạc Thượng",
+      "cap": "quoc-gia",
+      "dia_diem": "Chính Lý, Lý Nhân",
+      "xep_hang_theo_nguon": "KTNT QG 26/01/2011",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] sites.google.com/a/hanam.edu.vn"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-noi-chua-phuc-khanh",
+      "ten": "Đình Nội - Chùa Phúc Khánh",
+      "cap": "quoc-gia",
+      "dia_diem": "Đức Lý, Lý Nhân — nguồn chỉ xác nhận Đình Nội, chưa nhắc chùa",
+      "xep_hang_theo_nguon": "Lịch sử văn hoá QG (số QĐ chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] lynhan.hanam.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-chua-te-xuyen",
+      "ten": "Đình, chùa Tế Xuyên",
+      "cap": "quoc-gia",
+      "dia_diem": "Làng Tế Xuyên, Đức Lý, Lý Nhân — tổ đình ~1.700 bản khắc gỗ kinh Phật",
+      "xep_hang_theo_nguon": "Kiến trúc QG 05/11/1996",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] phatgiao.org.vn/to-dinh-te-xuyen-noi-phat-xuat-nhieu-vi-cao-tang-phat-giao-d26829.html"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "den-ba-vu-chan-ly",
+      "ten": "Đền Bà Vũ",
+      "cap": "quoc-gia",
+      "dia_diem": "Thôn Vũ Điện, Chân Lý, Lý Nhân — thờ Vũ Thị Thiết (Người con gái Nam Xương)",
+      "xep_hang_theo_nguon": "Lịch sử văn hoá QG 1993",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] scov.gov.vn/ban-sac-van-hoa/den-ba-vu-trong-doi-song-tam-linh-cua-nguoi-ha-nam.html (URL .gov.vn — ưu tiên fetch)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-vinh-tru",
+      "ten": "Đình Vĩnh Trụ",
+      "cap": "quoc-gia",
+      "dia_diem": "TT Vĩnh Trụ, Lý Nhân",
+      "xep_hang_theo_nguon": "Lịch sử, văn hoá, KTNT QG 1993",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] baoninhbinh.org.vn/di-tich-quoc-gia-dinh-vinh-tru-2303240837000.html"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-trac-noi-nhan-dao",
+      "ten": "Đình Trác Nội",
+      "cap": "quoc-gia",
+      "dia_diem": "Nhân Đạo, Lý Nhân (2025: Trần Thương)",
+      "xep_hang_theo_nguon": "KTNT QG 15/12/2004",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] tổng hợp"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-duc-ban-ngoai",
+      "ten": "Đình Đức Bản Ngoại",
+      "cap": "quoc-gia",
+      "dia_diem": "Nhân Nghĩa, Lý Nhân",
+      "xep_hang_theo_nguon": "Lịch sử văn hoá QG 2009",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] hanam.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-nam-xa-thuong",
+      "ten": "Đình Nam Xá Thượng",
+      "cap": "quoc-gia",
+      "dia_diem": "Nhân Nghĩa, Lý Nhân — trùng tu Duy Tân 4 (1910)",
+      "xep_hang_theo_nguon": "KTNT QG 2017",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] lynhan.hanam.gov.vn (URL sẵn)"
+      ]
+    },
+    {
+      "lo": "hanam-w3",
+      "id": "dinh-chuong-luong-bac-ly",
+      "ten": "Đình Chương Lương",
+      "cap": "quoc-gia",
+      "dia_diem": "Bắc Lý, Lý Nhân",
+      "xep_hang_theo_nguon": "KTNT QG (bvhttdl.gov.vn/van-ban-quan-ly/5.htm — ngày chưa rõ)",
+      "ly_do": "WS-only — chưa fetch trực tiếp được nguồn đạt chuẩn (Wave 3, 2026-08-11)",
+      "nguon": [
+        "[WS] bvhttdl.gov.vn/van-ban-quan-ly/5.htm (ưu tiên fetch lại — văn bản Bộ)"
+      ]
+    },
+    {
+      "lo": "hanoi-w3a",
+      "id": "dinh-phuong-que",
+      "ten": "Đình Phương Quế",
+      "cap": "cap-tinh",
+      "dia_diem": "Làng Phương Quế, xã Hà Hồi cũ (nay xã Hồng Vân), Thường Tín",
+      "xep_hang_theo_nguon": "Cấp tỉnh (Hà Tây cũ) 2008",
+      "ly_do": "Nguồn duy nhất chonthieng.com (xám) — cần nguồn nhà nước/báo chính thống",
+      "nguon": [
+        "chonthieng.com — https://chonthieng.com/dia-diem/dinh-phuong-que-thuong-tin-ha-noi/"
+      ]
+    }
+  ],
+  "khong_tim_thay": [
+    {
+      "lo": "thaibinh/hanoi",
+      "id": "dinh-dong-quach",
+      "ly_do": "Không nguồn nào xác nhận tồn tại 'Đình Đông Quách' ở Thái Bình — nghi checklist sai tên"
+    },
+    {
+      "lo": "thaibinh/hanoi",
+      "id": "den-tho-va-lang-nguyen-cong-tru-tien-hai",
+      "ly_do": "KHÔNG có di tích riêng ở Tiền Hải — khu mộ+đền QG 1991 nằm ở Kim Sơn, NINH BÌNH (dân 2 huyện cùng xây 1868)"
+    },
+    {
+      "lo": "thaibinh/hanoi",
+      "id": "den-tho-nguyen-quang-bich",
+      "ly_do": "Họ chuẩn NGUYỄN (gốc Ngô, ông nội đổi họ ngoại); di tích QG mang tên ông là Căn cứ Tiên Động ở Cẩm Khê PHÚ THỌ — không tìm được đền/khu lưu niệm xếp hạng riêng tại An Ninh, Tiền Hải"
+    },
+    {
+      "lo": "thaibinh/hanoi",
+      "id": "dinh-phuc-loc",
+      "ly_do": "Tên chuẩn ĐÌNH PHẤT LỘC (hungyen.gov.vn xác nhận 3 thôn Phất Lộc); mô tả kiến trúc thời Nguyễn nhưng chưa tìm được cấp/số QĐ"
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Khu di tích phố Hàng Thao (có thật, không rõ xếp hạng)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đình Bườm - Miếu Trúc",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đình làng Vị Khê (chỉ thấy làng nghề)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền Vô Hoạn",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền Võng Cổ",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền Đông (Trường Thi)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền, chùa Thọ Tung",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền làng Đồng Qũy",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền Giao Cù",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Chùa Xối Thượng",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền làng Thi Liệu",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền thờ Đức Thánh Tổ (Ý Yên)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền Ninh Xá (vị trí rõ, cấp không rõ)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Núi Tiên Hương (cảnh quan Phủ Dầy?)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Chùa Tiên Hương (chỉ có Phủ Tiên Hương)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền, chùa Diêm Điền (trong 30 di tích Giao Thủy, cấp chưa rõ)",
+      "ly_do": ""
+    },
+    {
+      "lo": "namdinh-w3",
+      "ten": "Đền - chùa Hoành Nha (trong 30 di tích Giao Thủy, cấp chưa rõ)",
+      "ly_do": ""
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Quan Phố (mô tả có, cấp không rõ)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Chùa Bút Thượng"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Khả Duy (xã vênh Mộc Hoàn/Mộc Bắc)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Ngô Xá (lẫn với Ý Yên NĐ)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Phương Lâm"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Phương Thượng"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đền Ba Dân (mô tả có, cấp không rõ)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Mã Não (nghi chép sai tên)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Chùa - Miếu Làng Đặng Xá (mô tả có, cấp không rõ)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đền Cửu Tỉnh (điểm tín ngưỡng, chưa thấy xếp hạng)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình, chùa Châu (nghi nhầm Châu Giang Hưng Yên — Chùa Châu QG 1994?)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Động Tiên Chúa"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Đinh"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Chiềng"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình, chùa Đồng Du Trung"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Cát Lại"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Chùa Văn Phú"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Mỹ Đôi"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Ngọc Lũ - Chùa Kim Sơn (trống đồng là BẢO VẬT, không phải đình xếp hạng)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Nam"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Cả"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Ô Cách"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Đống Cầu"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Chảy"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Mạc Hạ"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Ngò"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Thọ Chương (mô tả có, cấp không rõ)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Nội Rối - Chùa Xuân Uẩn"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình, chùa Cao Đà (mô tả có, cấp không rõ)"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Gia"
+    },
+    {
+      "lo": "hanam-w3",
+      "ten": "Đình Đông Trụ"
+    },
+    {
+      "lo": "hanoi-w3",
+      "ten": "Đền Thọ Nam",
+      "ly_do": "Tìm nhiều biến thể tên trong khu vực Hoàn Kiếm/Hàng Trống/Hàng Gai nhưng không khớp được di tích cụ thể nào tên 'Đền Thọ Nam'. Có thể là lỗi chính tả/nhầm tên trong checklist gốc — cần đối chiếu lại với nguồn CSV gốc dòng 16."
+    },
+    {
+      "lo": "hanoi-w3a",
+      "ten": "Đình Thuấn Ngoại"
+    },
+    {
+      "lo": "hanoi-w3a",
+      "ten": "Đình Yên Dục"
+    },
+    {
+      "lo": "hanoi-w3a",
+      "ten": "Đình Cao Xá (Dân Hòa — CẢNH BÁO trùng tên đình Cao Xá ở Dũng Tiến, Thường Tín)"
+    },
+    {
+      "lo": "hanoi-w3a",
+      "ten": "Đình Miếu Mục Xá"
+    },
+    {
+      "lo": "haiduong",
+      "id": "mieu-tu-giap",
+      "ten": "Miếu Tứ Giáp",
+      "ly_do": "2026-08-11: KHÔNG có vết ngoài blog chilinhquetoi"
+    },
+    {
+      "lo": "haiduong",
+      "id": "khu-luu-niem-dinh-van-ta",
+      "ten": "Khu lưu niệm Đinh Văn Tả",
+      "ly_do": "2026-08-11: Có 'Đình Đinh Văn Tả' (báo Xây dựng) nhưng không xác nhận xếp hạng QG"
+    },
+    {
+      "lo": "haiduong",
+      "id": "dinh-den-chua-dong-bao",
+      "ten": "Đình – Đền – Chùa Đồng Bào",
+      "ly_do": "2026-08-11: KHÔNG có vết ngoài blog"
+    },
+    {
+      "lo": "haiduong",
+      "id": "dinh-lang-xa-son",
+      "ten": "Đình Làng Xạ Sơn",
+      "ly_do": "2026-08-11: KHÔNG có vết"
+    },
+    {
+      "lo": "haiduong",
+      "id": "dinh-phuong-quat",
+      "ten": "Đình Phương Quất",
+      "ly_do": "2026-08-11: KHÔNG có vết"
+    },
+    {
+      "lo": "haiduong",
+      "id": "dinh-lau-dong",
+      "ten": "Đình Lâu Động",
+      "ly_do": "2026-08-11: KHÔNG có vết"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "tong": {
     "so_file": 345,
-    "so_muc": 5498,
-    "so_byte": 10306774,
+    "so_muc": 5547,
+    "so_byte": 10350259,
     "ngay_sinh": "2026-08-11"
   },
   "files": [
@@ -8042,8 +8042,8 @@
     {
       "file": "overlays/di-tich-cap-tinh.json",
       "mien": "overlays",
-      "so_muc": 23,
-      "byte": 27487,
+      "so_muc": 33,
+      "byte": 36777,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -8062,7 +8062,7 @@
         "nguon",
         "xep_hang"
       ],
-      "sha256": "40510cd156d62e8b13280db30d15396d3fde31dcce248e8aad20d95d2581b101",
+      "sha256": "322f7ec40d42e74e4298506922d4d9f3194daca25606ae88b8dc0134d0d291a5",
       "mo_ta": "Di tích xếp hạng CẤP TỈNH/THÀNH PHỐ (UBND tỉnh ký QĐ) — lớp mở 2026-08-11 theo quyết định chủ dự án (phương án A)."
     },
     {
@@ -8095,8 +8095,8 @@
     {
       "file": "overlays/di-tich-quoc-gia.json",
       "mien": "overlays",
-      "so_muc": 316,
-      "byte": 460601,
+      "so_muc": 355,
+      "byte": 494796,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8114,7 +8114,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "85fd3aa2a2f76a33e938ed6818991e28c43815c36b8d40b9cb584fcc3eca6950",
+      "sha256": "753410be21fab9dbacb7156ec1640bbd5caca22a69152d9838b432c2e76edb45",
       "mo_ta": "Di tích cấp quốc gia (đền/chùa/thành/hang/khảo cổ) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23."
     },
     {
