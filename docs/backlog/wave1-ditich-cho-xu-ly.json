@@ -47,6 +47,54 @@
       "dia_diem": "phường Thanh Lương, quận Hai Bà Trưng cũ, Hà Nội",
       "xep_hang": "Di tích kiến trúc nghệ thuật QG 1990 (nguoihanoi.vn xác nhận)",
       "ly_do": "Nominatim khớp giả (ra ĐH Y Hà Nội) — chờ geocode tay"
+    },
+    {
+      "lo": "hcm",
+      "id": "hoi-quan-nhi-phu",
+      "ten": "Miếu Nhị Phủ (Hội quán Nhị Phủ)",
+      "cap": "quoc-gia",
+      "dia_diem": "264 Hải Thượng Lãn Ông, Q5 cũ, TP.HCM",
+      "xep_hang": "QG — QĐ 722/QĐ-BVHTT 25/4/1998",
+      "ly_do": "[WF] đạt nguồn, Nominatim không có POI, 2 vòng trắng",
+      "nguon": [
+        "Trung tâm Bảo tồn và Phát huy giá trị di tích LSVH TP.HCM (đơn vị nhà nước trực thuộc Sở VHTT) — https://trungtambaotonditichtphcm.com/Hoat-dong-trung-tam/10034/HOI-QUAN-NHI-PHU.aspx"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "hoi-quan-ha-chuong",
+      "ten": "Hội quán Hà Chương",
+      "cap": "quoc-gia",
+      "dia_diem": "820 Nguyễn Trãi, Q5 cũ, TP.HCM",
+      "xep_hang": "QG — QĐ 52/2001/QĐ-BVHTT 28/12/2001",
+      "ly_do": "[WF] đạt nguồn, chưa geocode được",
+      "nguon": [
+        "Trung tâm Bảo tồn và Phát huy giá trị di tích LSVH TP.HCM (đơn vị nhà nước trực thuộc Sở VHTT) — https://trungtambaotonditichtphcm.com/Hoat-dong-trung-tam/10029/HOI-QUAN-HA-CHUONG.aspx"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "hoi-quan-nghia-nhuan",
+      "ten": "Hội quán Nghĩa Nhuận",
+      "cap": "quoc-gia",
+      "dia_diem": "27 Phan Văn Khoẻ, Q5 cũ, TP.HCM",
+      "xep_hang": "QG — QĐ 43-VH/QĐ 7/1/1993",
+      "ly_do": "[WF] đạt nguồn, chưa geocode được",
+      "nguon": [
+        "Trung tâm Bảo tồn và Phát huy giá trị di tích LSVH TP.HCM (đơn vị nhà nước trực thuộc Sở VHTT) — https://trungtambaotonditichtphcm.com/Hoat-dong-trung-tam/10031/HOI-QUAN-NGHIA-NHUAN.aspx"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "dinh-nam-chon",
+      "ten": "Đình Nam Chơn",
+      "cap": "cap-tinh",
+      "dia_diem": "29 Trần Quang Khải, phường Tân Định, Q1 cũ, TP.HCM",
+      "xep_hang": "Cấp TP 2006 — số QĐ chưa xác minh",
+      "ly_do": "[WF] Thanh Niên đạt, chưa geocode được — đích: lớp di-tich-cap-tinh",
+      "nguon": [
+        "Báo Thanh Niên — https://thanhnien.vn/ngoi-dinh-giua-trung-tam-tphcm-giu-nguyen-5-sac-phong-trieu-nguyen-hon-170-nam-185260505181423811.htm"
+      ]
     }
   ],
   "can_xac_minh": [
@@ -537,6 +585,271 @@
       "dia_diem": "phường Liễu Giai, Ba Đình",
       "xep_hang_theo_nguon": "CHƯA RÕ — nguồn lẫn Đền/Đình: một nguồn ghi cụm xếp QG 27/12/1990, nguồn đã fetch chỉ xác nhận ĐÌNH cấp thành phố 2002",
       "ly_do": "Nghi 2 công trình bị nhầm trong tư liệu — đọc riêng từng trang trước khi nạp"
+    },
+    {
+      "lo": "hcm",
+      "id": "dien-ngoc-hoang",
+      "ten": "Điện Ngọc Hoàng (Chùa Ngọc Hoàng)",
+      "dia_diem": "73 Mai Thị Lựu, Đa Kao Q1 — checklist ghi sai Tân Định",
+      "xep_hang_theo_nguon": "QG — QĐ 2754/QĐ-BT 15/10/1994",
+      "ly_do": "[WS-only] số QĐ từ tóm tắt search",
+      "nguon": [
+        "nld.com.vn (tổng hợp)"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "tru-so-bao-dan-chung",
+      "ten": "Trụ sở báo Dân Chúng",
+      "dia_diem": "43 Lê Thị Hồng Gấm, Q1",
+      "xep_hang_theo_nguon": "QG — công nhận 16/11/1988",
+      "ly_do": "[WS-only] chưa fetch bài gốc",
+      "nguon": [
+        "https://tuoitre.vn/tru-so-bao-dan-chung-tai-quan-1-tp-hcm-duoc-gan-bang-di-tich-lich-su-quoc-gia-20250618124959609.htm"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "mo-co-ho-lam",
+      "ten": "Mộ cổ họ Lâm",
+      "dia_diem": "Công viên Tao Đàn, Q1",
+      "xep_hang_theo_nguon": "Cấp TP 2014",
+      "ly_do": "[WS-only] nguồn VnExpress ngoài hệ nhà nước",
+      "nguon": [
+        "https://vnexpress.net/mo-co-trong-cong-vien-tao-dan-duoc-xep-hang-di-tich-2979088.html"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "co-so-giau-vu-khi-biet-dong-thanh-dinh-doc-lap",
+      "ten": "Cơ sở giấu vũ khí Biệt động Thành đánh Dinh Độc Lập",
+      "dia_diem": "287/70 Nguyễn Đình Chiểu, Q3",
+      "xep_hang_theo_nguon": "QG 1988",
+      "ly_do": "[WS-only] quan3.hochiminhcity.gov.vn ECONNREFUSED nhiều lần",
+      "nguon": [
+        "https://quan3.hochiminhcity.gov.vn/van-hoa-the-thao-du-lich/co-so-dau-vu-khi-cua-biet-dong-thanh-danh-dinh-doc-lap-nam-1968-234.html"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "quan-nhan-huong-thao-cam-vien",
+      "ten": "Quán Nhan Hương - Thảo Cầm Viên",
+      "dia_diem": "Thảo Cầm Viên, Q1",
+      "xep_hang_theo_nguon": "Cấp TP 2014",
+      "ly_do": "[WS-only] chưa fetch",
+      "nguon": [
+        "https://baophapluat.vn/quan-an-nhan-huong-binh-phong-cua-biet-dong-sai-gon-trong-long-dich-post370930.html"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "dia-diem-luu-niem-ton-duc-thang-ba-son",
+      "ten": "Địa điểm lưu niệm Tôn Đức Thắng tại Ba Son",
+      "dia_diem": "2 Tôn Đức Thắng, Q1",
+      "xep_hang_theo_nguon": "QG 1993",
+      "ly_do": "[WS-only] chưa fetch SGGP",
+      "nguon": [
+        "https://www.sggp.org.vn/di-tich-luu-niem-chu-tich-ton-duc-thang-tai-ba-son-giu-lai-u-tau-va-cong-nhan-cum-di-tich-nay-post126470.html"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "dinh-hung-phu",
+      "ten": "Đình Hưng Phú",
+      "dia_diem": "617/19 Bến Bà Đình, Q8",
+      "xep_hang_theo_nguon": "Cấp TP — QĐ 187/2005/QĐ-UBND 12/10/2005",
+      "ly_do": "[WS-only] chưa fetch hcmcpv",
+      "nguon": [
+        "https://hcmcpv.org.vn/tin-tuc/quan-8-hoan-thanh-tu-bo-di-tich-kien-truc-nghe-thuat-cap-thanh-pho-dinh-hung-phu-1491873496"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "dinh-vinh-hoi-quan-4",
+      "ten": "Đình Vĩnh Hội",
+      "dia_diem": "phường Vĩnh Hội cũ, Q4",
+      "xep_hang_theo_nguon": "Cấp TP — QĐ 4345/QĐ-UB 13/10/2008",
+      "ly_do": "[WS-only] nguồn chonthieng ngoài nhà nước",
+      "nguon": [
+        "https://chonthieng.com/dia-diem/dinh-vinh-hoi-quan-4-tphcm/"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "chua-hue-lam-phu-dinh",
+      "ten": "Chùa Huệ Lâm",
+      "dia_diem": "154 Tùng Thiện Vương, Phú Định Q8",
+      "xep_hang_theo_nguon": "Cấp TP 2005",
+      "ly_do": "[WS-only] chưa fetch",
+      "nguon": [
+        "https://thanhnien.vn/chua-co-hon-200-nam-o-tphcm-vua-thanh-thai-ban-sac-gan-dai-gia-nhi-phuong-185260504182240486.htm"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "cot-co-thu-ngu",
+      "ten": "Cột cờ Thủ Ngữ",
+      "dia_diem": "Bến Bạch Đằng, Q1",
+      "xep_hang_theo_nguon": "Cấp TP — QĐ 2440/QĐ-UBND 16/5/2016",
+      "ly_do": "[WF] tapchikientruc (hội nghề nghiệp) — chưa dedup kỹ, agent tự khai sót",
+      "nguon": [
+        "tapchikientruc.com.vn"
+      ]
+    },
+    {
+      "lo": "hcm",
+      "id": "leads-11-muc-do-dang",
+      "ten": "11 mục HCM có mồi QĐ chưa fetch xác nhận",
+      "dia_diem": "Tân Kiểng · Thiên Tôn · Ấn Quang · Phụng Sơn · Pháp Hoa · Chí Hoà · Nhơn Hòa · Bình Đông · Bình Tiên · Long Hoa · Tam Sơn",
+      "xep_hang_theo_nguon": "xem báo cáo agent ditich-hcm 2026-08-11 (số QĐ từng mục trong transcript)",
+      "ly_do": "hết giờ, cần một lượt fetch hoàn thiện",
+      "nguon": [
+        "(nhiều nguồn)"
+      ]
+    },
+    {
+      "lo": "thaibinh",
+      "id": "mieu-ba-thon",
+      "ten": "Miếu Ba Thôn",
+      "dia_diem": "Thái Thụy — làng Quang Lang",
+      "xep_hang_theo_nguon": "Cụm QG, năm chưa rõ",
+      "ly_do": "[WS-only] thaibinhtv.vn DNS lỗi"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-choi-thuy-truong",
+      "ten": "Đền Chòi",
+      "dia_diem": "Đông Thụy Anh",
+      "xep_hang_theo_nguon": "Cụm QG 1989",
+      "ly_do": "[WS-only] baothaibinh TLS hết hạn"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-he-thuy-ninh",
+      "ten": "Đền Hệ",
+      "dia_diem": "Tây Thụy Anh",
+      "xep_hang_theo_nguon": "QG 1991",
+      "ly_do": "[WS-only] proxy 404"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-het-thai-ninh",
+      "ten": "Đền Hét (thờ Phạm Ngũ Lão)",
+      "dia_diem": "Thái Ninh",
+      "xep_hang_theo_nguon": "QG 1993",
+      "ly_do": "[WS-only] nhiều báo đồng nhất, chưa fetch"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-bich-doai",
+      "ten": "Đình Bích Đoài",
+      "dia_diem": "Thái Ninh",
+      "xep_hang_theo_nguon": "QG — QĐ 2015/VHQĐ 16/12/1993",
+      "ly_do": "[WS-only] snippet cổng tỉnh, chưa fetch nguyên văn"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-phuc-loc",
+      "ten": "Đình Phất Lộc/Phúc Lộc",
+      "dia_diem": "Tây Thái Ninh",
+      "xep_hang_theo_nguon": "QG 1989 — NGHI biến thể tên",
+      "ly_do": "[WS-only] đối chiếu dsvh"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-tho-nguyen-quang-bich",
+      "ten": "Khu lưu niệm NGUYỄN Quang Bích (checklist ghi sai Ngô)",
+      "dia_diem": "Tiền Hải — làng Trình Phố",
+      "xep_hang_theo_nguon": "chưa rõ cấp/năm; TRÁNH nhầm Căn cứ Tiên Động Phú Thọ",
+      "ly_do": "[WS-only] sửa tên theo chính sử"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "chua-thien-quy",
+      "ten": "Chùa Thiên Quý",
+      "dia_diem": "Nam Đông Hưng",
+      "xep_hang_theo_nguon": "QG 1989",
+      "ly_do": "[WS-only] thaibinhtv DNS lỗi"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-tau-dong-son",
+      "ten": "Đình Tàu",
+      "dia_diem": "Đông Hưng",
+      "xep_hang_theo_nguon": "QG — QĐ 3240/QĐ-BVHTTDL 4/11/2020",
+      "ly_do": "[WS-only] nguồn phụ nhất quán, chưa fetch"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-den-chua-binh-cach",
+      "ten": "Đình, Chùa, Miếu Bình Cách",
+      "dia_diem": "Bắc Đông Hưng",
+      "xep_hang_theo_nguon": "QG 1993",
+      "ly_do": "[WS-only] chưa fetch"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-lich-dong",
+      "ten": "Đình Lịch Động",
+      "dia_diem": "Đông Hưng",
+      "xep_hang_theo_nguon": "QG 2006",
+      "ly_do": "[WS-only] baothaibinh TLS"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "mieu-giang",
+      "ten": "Miếu Giàng",
+      "dia_diem": "Đông Á, Đông Hưng — checklist ghi sai Đông Quan",
+      "xep_hang_theo_nguon": "QG — QĐ 697/QĐ-BVHTTDL 20/3/2023",
+      "ly_do": "[WS-only] chưa fetch"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-ngoc-que",
+      "ten": "Đền Ngọc Quế",
+      "dia_diem": "Quỳnh Phụ",
+      "xep_hang_theo_nguon": "QG — QĐ 1214 ngày 30/10/1990",
+      "ly_do": "[WS-only] [WF] nhưng nguồn tư liệu tư nhân — đối chiếu dsvh"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "chua-am-vo",
+      "ten": "Chùa Am Vô",
+      "dia_diem": "Đông Tiên Hưng",
+      "xep_hang_theo_nguon": "CẤP TỈNH 2011 — đích lớp di-tich-cap-tinh",
+      "ly_do": "[WS-only] chưa fetch"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-luu-dong-phuong",
+      "ten": "Đình Lưu",
+      "dia_diem": "Bắc Đông Hưng",
+      "xep_hang_theo_nguon": "QG, năm/số chưa rõ",
+      "ly_do": "[WS-only] đài tỉnh nói QG không kèm QĐ"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "dinh-dong-quach",
+      "ten": "Đình Đông Quách",
+      "dia_diem": "Nam Tiền Hải",
+      "xep_hang_theo_nguon": "trong danh mục KTNT của tỉnh, cấp chưa rõ",
+      "ly_do": "[WS-only] cần fetch trang tỉnh"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-tho-va-lang-nguyen-cong-tru-tien-hai",
+      "ten": "Đền thờ và Lăng Nguyễn Công Trứ (Tiền Hải)",
+      "dia_diem": "Tiền Hải — KHÁC đền Nghi Xuân Hà Tĩnh đã có",
+      "xep_hang_theo_nguon": "chưa rõ cấp/năm",
+      "ly_do": "[WS-only] chưa fetch"
+    },
+    {
+      "lo": "thaibinh",
+      "id": "den-thanh-mau-dong-son",
+      "ten": "Đền Thánh Mẫu",
+      "dia_diem": "Đông Hưng — làng Phù Lưu",
+      "xep_hang_theo_nguon": "cấp/năm chưa rõ",
+      "ly_do": "[WS-only] baothaibinh TLS"
     }
   ]
 }

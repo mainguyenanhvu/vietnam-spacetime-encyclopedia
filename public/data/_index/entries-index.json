@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5454,
-    "tong_co_toa_do": 2671,
+    "tong_muc": 5465,
+    "tong_co_toa_do": 2682,
     "so_nhom_trung_ten": 828,
-    "so_cap_trung_toa_do": 764,
+    "so_cap_trung_toa_do": 765,
     "ngay_sinh": "2026-08-11"
   },
   "entries": [
@@ -45673,6 +45673,149 @@
       "loai": "danh-thang",
       "lat": 21.0184311,
       "lon": 105.8457655,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoi-quan-nghia-an",
+      "slug": null,
+      "ten": "Hội quán Nghĩa An (Miếu Quan Đế)",
+      "ten_chuan": "hoi quan nghia an mieu quan de",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 10.7537,
+      "lon": 106.6621,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoi-quan-on-lang",
+      "slug": null,
+      "ten": "Hội quán Ôn Lăng",
+      "ten_chuan": "hoi quan on lang",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 10.7542,
+      "lon": 106.6597,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoi-quan-quynh-phu",
+      "slug": null,
+      "ten": "Hội quán Quỳnh Phủ",
+      "ten_chuan": "hoi quan quynh phu",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 10.7556,
+      "lon": 106.6823,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoi-quan-le-chau",
+      "slug": null,
+      "ten": "Hội quán Lệ Châu (Nhà thờ Tổ thợ bạc)",
+      "ten_chuan": "hoi quan le chau nha tho to tho bac",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc-nghe-thuat",
+      "lat": 10.7557,
+      "lon": 106.6827,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khu-trai-giam-benh-vien-cho-quan",
+      "slug": null,
+      "ten": "Khu trại giam Bệnh viện Chợ Quán",
+      "ten_chuan": "khu trai giam benh vien cho quan",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 10.7531,
+      "lon": 106.6784,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "so-chi-huy-tien-phuong-phan-khu-6",
+      "slug": null,
+      "ten": "Sở Chỉ huy tiền phương Phân khu 6 — Phở Bình",
+      "ten_chuan": "so chi huy tien phuong phan khu 6 pho binh",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 10.7909,
+      "lon": 106.6871,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "co-so-ban-tuyen-huan-xu-uy-nam-bo",
+      "slug": null,
+      "ten": "Cơ sở Ban Tuyên huấn Xứ uỷ Nam Bộ",
+      "ten_chuan": "co so ban tuyen huan xu uy nam bo",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 10.7689,
+      "lon": 106.6832,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "noi-nguyen-tat-thanh-o-truoc-khi-ra-di",
+      "slug": null,
+      "ten": "Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước",
+      "ten_chuan": "noi dong chi nguyen tat thanh o truoc khi ra di tim duong cuu nuoc",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 10.7482,
+      "lon": 106.646,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "khu-luu-niem-nguyen-duc-canh",
+      "slug": null,
+      "ten": "Khu lưu niệm và Lăng mộ Nguyễn Đức Cảnh",
+      "ten_chuan": "khu luu niem va lang mo nguyen duc canh",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 20.5657,
+      "lon": 106.5648,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-con-giang",
+      "slug": null,
+      "ten": "Đền Côn Giang",
+      "ten_chuan": "den con giang",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.5094,
+      "lon": 106.4531,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ma-but-tien-hai",
+      "slug": null,
+      "ten": "Di tích Mả Bụt",
+      "ten_chuan": "di tich ma but",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "cach-mang",
+      "lat": 20.4057,
+      "lon": 106.5032,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -97491,6 +97634,19 @@
         "ten": "Khởi nghĩa Nguyễn Trung Trực"
       },
       "khoang_cach_m": 157
+    },
+    {
+      "a": {
+        "file": "overlays/chi-si-cach-mang.json",
+        "id": "truong-van-ben",
+        "ten": "Trương Văn Bền"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "hoi-quan-nghia-an",
+        "ten": "Hội quán Nghĩa An (Miếu Quan Đế)"
+      },
+      "khoang_cach_m": 158
     },
     {
       "a": {
