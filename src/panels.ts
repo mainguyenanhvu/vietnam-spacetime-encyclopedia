@@ -34,6 +34,7 @@ export const PANEL_IDS = [
   "journey-panel",
   "quocgia-panel",
   "timeline-panel",
+  "huongdan-panel",
 ] as const;
 
 export type PanelId = (typeof PANEL_IDS)[number];

@@ -8,8 +8,11 @@
 // Chạy SAU mọi init* — nó di chuyển nút đã tồn tại chứ không tự tạo, nên module
 // nào thêm nút muộn hơn vẫn hiện ra ngoài (thấy được, chỉ là không được gom).
 
-/** Nút ở lại thanh chính. Mọi nút khác rơi vào menu «Khám phá». */
-const GIU_NGOAI = ["che-do-btn", "threed-btn", "library-btn"];
+/** Nút ở lại thanh chính. Mọi nút khác rơi vào menu «Khám phá».
+ *
+ * `huongdan-btn` ở lại vì nó là lối vào cho người CHƯA biết dùng trang —
+ * giấu nó sau một cú bấm nữa là giấu đúng thứ họ cần thấy đầu tiên. */
+const GIU_NGOAI = ["che-do-btn", "huongdan-btn", "threed-btn", "library-btn"];
 
 export function gomNutTopbar(): void {
   const nav = document.getElementById("topbar-nav");

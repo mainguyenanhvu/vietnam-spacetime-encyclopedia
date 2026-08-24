@@ -38,6 +38,7 @@ import {
 } from "./overlays-config";
 import { initChipBar } from "./chip-bar";
 import { initLienKetTrangThai } from "./lien-ket-trang-thai";
+import { initHuongDan } from "./huong-dan";
 
 // Đặt chế độ xem đã lưu trước mọi thứ khác, nếu không trang sẽ nháy sang chế độ
 // mặc định rồi mới đổi.
@@ -1465,6 +1466,9 @@ for (const id of ["library-panel", "game-panel", "quiz-panel"] as const)
 // Chèn CUỐI cùng nhưng nút nằm ĐẦU #topbar-nav (insertBefore) — chuyển chế độ
 // xem là hành động khung, không cùng hạng với các nút mở panel nội dung.
 initCheDo();
+// SAU initCheDo(): lời mời lần đầu chỉ hiện ở chế độ trẻ em, nên phải biết
+// chế độ đã. Trước gomNutTopbar() thì nút 🧭 mới kịp vào danh sách giữ ngoài.
+initHuongDan();
 // Phải chạy SAU mọi init* — nó gom những nút đã có mặt.
 gomNutTopbar();
 

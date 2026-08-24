@@ -90,6 +90,13 @@
         <button id="story-close" aria-label="Đóng">×</button>
         <div id="story-content"></div>
       </aside>
+      <!-- Sổ tay thám hiểm. Phần «cầm tay chỉ việc» KHÔNG nằm ở đây: nó là
+           lớp phủ dựng bằng JS trên body, vì nó phải sống ĐỒNG THỜI với
+           panel mà nó đang bảo người dùng mở ra. -->
+      <aside id="huongdan-panel" data-nhan="Sổ tay thám hiểm" hidden>
+        <button id="huongdan-close" aria-label="Đóng">×</button>
+        <div id="huongdan-content"></div>
+      </aside>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

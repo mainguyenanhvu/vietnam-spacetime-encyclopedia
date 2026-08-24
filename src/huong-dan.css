@@ -1,0 +1,337 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   🧭 HƯỚNG DẪN THAO TÁC — lớp khoét sáng, bong bóng chỉ việc, sổ tay nhiệm vụ
+   ═══════════════════════════════════════════════════════════════════════════
+
+   Nạp qua @import trong style.css, cùng cách với sado / hanhtrinh / thuvien.
+   Toàn bộ màu lấy từ token của theme.css nên hai chế độ tự đổi — ĐỪNG viết hex
+   thẳng ở đây, chế độ trẻ em sẽ không đổi theo.
+
+   🔴 `#hd-lop { pointer-events: none }` là ràng buộc, không phải tinh chỉnh:
+   lớp tối chỉ để NHÌN. Bỏ dòng đó ra là chặn mọi cú bấm xuống bản đồ — tức
+   khoá đúng thao tác mà bước hướng dẫn đang bảo đứa trẻ làm. */
+
+#hd-lop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+}
+
+/* Khoét lỗ bằng box-shadow trải rộng: một phần tử, không phải bốn tấm che ghép
+   lại. Đổi lại phải là `vmax` — `vw` để lộ dải sáng ở mép dưới màn hình dọc. */
+#hd-vong {
+  position: absolute;
+  border-radius: var(--bo-vua);
+  box-shadow: 0 0 0 100vmax var(--hd-mo), 0 0 0 3px var(--nhan-sang) inset;
+  outline: 3px solid var(--nhan-sang);
+  outline-offset: 0;
+  opacity: 0;
+  transition: left var(--dur-vua) var(--ease), top var(--dur-vua) var(--ease),
+    width var(--dur-vua) var(--ease), height var(--dur-vua) var(--ease),
+    opacity var(--dur-nhanh) var(--ease);
+  animation: hd-nhip 1.6s ease-in-out infinite;
+}
+
+@keyframes hd-nhip {
+  50% {
+    outline-color: var(--brand);
+  }
+}
+
+#hd-bong {
+  position: fixed;
+  z-index: 61;
+  width: min(340px, 92vw);
+  padding: var(--s-4);
+  background: var(--mat);
+  color: var(--chu);
+  border: 2px solid var(--vien-nhan-ro);
+  border-radius: var(--bo-lon);
+  box-shadow: var(--bong-2);
+  font-size: var(--co-md);
+  animation: panel-in 0.28s var(--ease) both;
+}
+
+#hd-bong.hd-bong-thang {
+  border-color: var(--dung-chu);
+  background: var(--dung-nen);
+}
+
+.hd-dau {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--s-2);
+}
+
+.hd-buoc {
+  font-size: var(--co-xs);
+  font-weight: 700;
+  color: var(--chu-mem);
+  letter-spacing: 0.04em;
+}
+
+.hd-dong {
+  border: none;
+  background: none;
+  color: var(--chu-mem);
+  font-size: var(--co-xl);
+  line-height: 1;
+  cursor: pointer;
+  /* 44px là vùng chạm tối thiểu THẬT. `2.75rem` KHÔNG ra 44px vì html đặt
+     font-size 0.94rem — xem ghi chú cùng nội dung ở style.css. */
+  min-width: max(2.75rem, 44px);
+  min-height: max(2.75rem, 44px);
+}
+
+.hd-loi {
+  margin: 0 0 var(--s-2);
+  line-height: 1.55;
+}
+
+.hd-goi-y {
+  display: block;
+  margin: 0;
+  font-size: var(--co-sm);
+  color: var(--chu-mem);
+  line-height: 1.5;
+}
+
+.hd-cham {
+  display: flex;
+  gap: 6px;
+  margin: var(--s-3) 0;
+}
+
+.hd-cham i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--vien-ro);
+}
+
+.hd-cham i.hd-cham-xong {
+  background: var(--dung-chu);
+}
+
+.hd-cham i.hd-cham-nay {
+  background: var(--brand);
+  transform: scale(1.35);
+}
+
+.hd-nut {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+/* Mặc định NHẠT. Trong một bước hướng dẫn, mọi nút trong bong bóng đều là lối
+   THOÁT — việc cần làm nằm ngoài bong bóng, trên chính bản đồ. Tô đậm nút «Bỏ
+   qua» là mời người ta bấm cho xong thay vì làm thử. */
+.hd-nut button {
+  flex: 1 1 auto;
+  min-height: max(2.75rem, 44px);
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vien-tron);
+  background: none;
+  color: var(--chu-mem);
+  font-size: var(--co-sm);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Chỉ nút mà BẤM VÀO CHÍNH NÓ mới là hành động tiếp theo — «Đi thôi!» ở màn
+   mời, «Mở sổ tay» ở màn kết thúc. Trong các bước giữa, không nút nào được
+   mang class này. */
+.hd-nut button.hd-chinh {
+  border-color: var(--vien-nhan-ro);
+  background: var(--lop-brand-nhe);
+  color: var(--chu);
+  font-weight: 700;
+}
+
+.hd-nut button:hover {
+  background: var(--lop-brand-vua);
+  color: var(--chu);
+}
+
+.hd-thang {
+  margin: 0;
+  font-size: var(--co-lg);
+  font-weight: 700;
+  color: var(--dung-chu);
+  text-align: center;
+}
+
+.hd-huy-hieu {
+  margin: 0 0 var(--s-2);
+  font-size: 3rem;
+  text-align: center;
+  animation: hd-huy-hieu-vao 0.6s var(--ease-nhan) both;
+}
+
+@keyframes hd-huy-hieu-vao {
+  from {
+    transform: scale(0.2) rotate(-25deg);
+    opacity: 0;
+  }
+}
+
+/* ── Nút 🧭 trên thanh trên cùng ─────────────────────────────────────────── */
+
+#huongdan-btn {
+  position: relative;
+}
+
+/* Huy hiệu tiến độ vẽ bằng ::after để JS chỉ phải ghi một thuộc tính data —
+   không phải dựng lại nút mỗi lần xong một nhiệm vụ. */
+#huongdan-btn[data-dem]:not([data-dem=""])::after {
+  content: attr(data-dem);
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: var(--bo-vien-tron);
+  background: var(--nhan-mo);
+  color: var(--brand-sau);
+  font-size: var(--co-2xs);
+  font-weight: 700;
+}
+
+/* ── Sổ tay thám hiểm ───────────────────────────────────────────────────── */
+
+#huongdan-panel {
+  position: absolute;
+  top: var(--panel-top);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(460px, 94vw);
+  max-height: var(--panel-maxh);
+  overflow-y: auto;
+  background: var(--mat);
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-nho);
+  box-shadow: var(--bong-2);
+  padding: 1rem;
+  z-index: 20;
+}
+
+#huongdan-close {
+  float: right;
+  border: none;
+  background: none;
+  font-size: var(--co-2xl);
+  line-height: 1;
+  cursor: pointer;
+  color: var(--chu-mem);
+  min-width: max(2.75rem, 44px);
+  min-height: max(2.75rem, 44px);
+}
+
+#huongdan-content h2 {
+  margin: 0 0 var(--s-2);
+  font-size: var(--co-xl);
+}
+
+.hd-tien-do-so {
+  margin: 0 0 var(--s-2);
+  color: var(--chu-mem);
+  font-size: var(--co-sm);
+}
+
+.hd-thanh {
+  height: 10px;
+  border-radius: var(--bo-vien-tron);
+  background: var(--vien);
+  overflow: hidden;
+  margin-bottom: var(--s-3);
+}
+
+.hd-thanh i {
+  display: block;
+  height: 100%;
+  background: var(--mat-nghich);
+  transition: width var(--dur-vua) var(--ease);
+}
+
+.hd-chay-tour {
+  width: 100%;
+  min-height: max(2.75rem, 44px);
+  margin-bottom: var(--s-3);
+  border: 1px solid var(--vien-nhan-ro);
+  border-radius: var(--bo-vua);
+  background: var(--lop-brand-nhe);
+  color: var(--chu);
+  font-size: var(--co-md);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hd-chay-tour:hover {
+  background: var(--lop-brand-vua);
+}
+
+.hd-danh-sach {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-2);
+}
+
+.hd-danh-sach li {
+  display: flex;
+  gap: var(--s-2);
+  align-items: flex-start;
+  padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vua);
+  background: var(--mat-2);
+  line-height: 1.45;
+}
+
+.hd-danh-sach li.hd-xong {
+  border-color: var(--dung-vien);
+  background: var(--dung-nen);
+}
+
+.hd-danh-sach li.hd-xong b {
+  color: var(--dung-chu);
+}
+
+.hd-tick {
+  flex: 0 0 auto;
+  font-size: var(--co-lg);
+}
+
+.hd-danh-sach b {
+  display: block;
+  font-size: var(--co-md);
+}
+
+.hd-chan {
+  margin: var(--s-3) 0 0;
+  font-size: var(--co-xs);
+  color: var(--chu-mem);
+}
+
+/* ── Chế độ trẻ em: to hơn, tròn hơn, nảy hơn ───────────────────────────── */
+
+:root[data-che-do="tre-em"] #hd-bong {
+  border-width: 3px;
+  font-size: var(--co-lg);
+}
+
+:root[data-che-do="tre-em"] .hd-danh-sach li {
+  padding: var(--s-3);
+}
+
+/* Người dùng đã báo hệ điều hành là không muốn chuyển động thì bỏ hết nhịp
+   nháy và trượt — vòng sáng vẫn thấy được nhờ outline đặc. */
+@media (prefers-reduced-motion: reduce) {
+  #hd-vong,
+  #hd-bong,
+  .hd-huy-hieu {
+    animation: none;
+    transition: none;
+  }
+}
