@@ -17,9 +17,11 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ---
 
-## Trạng thái hiện tại — 2026-08-06
+## Trạng thái hiện tại — 2026-08-24
 
-252 file dữ liệu · **5.345 mục** · 33 lớp phủ · **13/13 cổng dữ liệu xanh** · smoke 9 đạt/0 hỏng · chủ quyền 13/13 thời kỳ · `tsc` exit 0.
+**347 file dữ liệu · 5.593 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · 34 lớp phủ · **13/13 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
+
+⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
 **Sa đồ 240/241 trận** · **Hành trình lịch sử 22 chặng** (phân kỳ đủ 5 nhóm) · **22 mô hình nhân vật/hiện vật 3D**.
 
@@ -55,7 +57,8 @@ Token hai chế độ (`src/theme.css`), nút chuyển + `localStorage` (`src/ch
 Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được bằng gom nguồn + cluster toàn cục. **Chặn bởi**: `capNhatMoHinhDiem()` (mô hình 3D) đọc/ghi từng lớp `overlay-${id}` riêng (visibility, paint, queryRenderedFeatures theo danh sách lớp) — gom nguồn là phải viết lại tích hợp 3D, mà 3D chỉ nghiệm thu được trên Chrome GPU thật. Thiết kế đề xuất: 1 nguồn `overlay-gop` (cluster:true) + 4 lớp (cluster / đếm / điểm / icon), màu = mega-expression `["match",["get","lop"], …confExpr từng lớp]` (expression lồng được), popup = 1 handler đọc prop `lop` → conf. Làm ở phiên riêng, nghiệm thu 3D đầy đủ. **L**
 
 ### Còn lại
-- [ ] **Chế độ trẻ em mới phủ được phần khung.** Topbar, nút, panel, bo góc, thang chữ đã đổi. Còn: giảm mật độ chữ trong hồ sơ tỉnh, minh hoạ thay khối chữ dài, ngôn ngữ đơn giản hơn cho `mo_ta`. Đây là việc **nội dung**, không phải CSS. **L**
+- [ ] **Chế độ trẻ em: phần KHUNG xong, phần CHỮ chưa.** 🔄 **Thu hẹp 2026-08-24** — mảng «không ai chỉ đường» đã đóng bằng `src/huong-dan.ts` (cầm tay chỉ việc 10 bước + sổ tay 17 nhiệm vụ, xem `RELEASE.md`). Phần CÒN LẠI vẫn nguyên và vẫn là việc **nội dung**, không phải CSS: giảm mật độ chữ trong hồ sơ tỉnh, minh hoạ thay khối chữ dài, ngôn ngữ đơn giản hơn cho `mo_ta`. **L**
+  ⚠️ Mẫu đã có sẵn để chép: trường `giai_nghia[]` trong `sgk-xua-tho.json` (từ khó → nghĩa, hiện ra bằng `<details>`) là cách rẻ nhất để hạ độ khó một khối chữ mà KHÔNG phải viết lại nó. Cân nhắc áp cho `mo_ta` của lớp phủ trước khi nghĩ tới việc viết hai bản văn.
 - [ ] **Audit tương phản phần còn lại.** Mới đo topbar và nút. Chưa đo: 11 panel nổi, badge, popup MapLibre, khung quiz/olympia ở chế độ trẻ em. **M**
 - [x] ~~**4 mã hex chưa lên token.**~~ **XONG 2026-08-11** (commit `99e4fac`) — 4 token mới trong `theme.css` (`--truyen-au-lac-nen`, `--story-retry-chu`, `--qg-badge-khac-nen`, `--nhan-huyen-su`), style.css hết hex giá trị.
 - [x] ~~**`body.kid-mode` chồng lấn `data-che-do`.**~~ **QUYẾT 2026-08-11: GIỮ CẢ HAI.** Chúng KHÔNG cùng nghĩa: `data-che-do` là chế độ toàn cục người dùng chọn; `body.kid-mode` là trạng thái CỤC BỘ khi panel truyện đang mở (story.ts bật lúc mở, tắt lúc đóng — kể cả người lớn mở truyện vẫn được khung truyện thiếu nhi). Hợp nhất sẽ làm mất ca "người lớn đọc truyện cho con". Đừng mở lại trừ khi đổi UX truyện.
@@ -75,6 +78,8 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 | `.active` | 9 điểm ở main/quocgia/timeline | Tái dùng ngữ nghĩa khác nhau ở ≥5 nơi |
 | `.ol-right`/`.ol-wrong` | `olympia.ts` 189, 369, 446 | Phải sửa 3 chỗ đồng thời |
 | `body.kid-mode` | `story.ts:131,133` | Toàn bộ cơ chế theme trẻ em hiện tại |
+| `#timeline`, `#period-label`, `#map`, `#chip-bar`, `#vn-search-input`, `#library-content` | `huong-dan.ts` bảng `VIEC` | **Cảm biến câm, không nổ.** Đổi tên một id là nhiệm vụ tương ứng KHÔNG BAO GIỜ tick — không lỗi, không cảnh báo, chỉ là bước hướng dẫn treo mãi. `tsc` không bắt được vì tất cả đều là chuỗi. |
+| `.lib-doc`, `.maplibregl-popup` | `huong-dan.ts` (hai cảm biến quan sát DOM) | Như trên — bước «đọc một bài thơ» và «bấm vào bản đồ» treo |
 | `.muted` | `quiz.ts:188` query theo class chung | Utility class dùng lại nhiều nơi, phạm vi ảnh hưởng khó lường |
 
 ### Khả năng tiếp cận còn thiếu

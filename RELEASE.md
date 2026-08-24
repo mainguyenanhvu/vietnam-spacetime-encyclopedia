@@ -8,6 +8,49 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-08-24 — Hướng dẫn thao tác cho trẻ em + chủ đề «Sách học ngày xưa»
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| File dữ liệu | **347** (+2) | `catalog.json` sau `build:index` |
+| Tổng mục | **5.593** (+43) | như trên |
+| Chủ đề thư viện | **15** (+1) · **765 tác phẩm** | thấy trên màn hình thư viện |
+| Cổng dữ liệu | **13/13 xanh** | `npm run validate` |
+| Chủ quyền — dữ liệu · hiển thị | **xanh · 13/13 thời kỳ** | `audit_sovereignty.mjs` · `verify:chuquyen` |
+| Type check · build | **exit 0 · xanh** | `npx tsc --noEmit` · `npm run build` |
+
+### 1. `src/huong-dan.ts` — «Cầm tay chỉ việc» + «Sổ tay thám hiểm»
+
+Lỗ hổng đóng lại: chế độ trẻ em trước đó chỉ đổi màu và cỡ chữ. `grep -rn "tour\|onboard\|huong-dan\|welcome" src/` ra **0** — không có một cơ chế chỉ đường nào, đứa trẻ mở trang lên là đối diện bản đồ 34 lớp phủ và thanh trượt 4000 năm.
+
+- **10 bước cầm tay chỉ việc**: lớp che khoét sáng đúng phần tử THẬT trên màn hình + bong bóng lời Lạc & Âu. **Không có nút «Tiếp»** — mỗi bước nghe một sự kiện thật của ứng dụng và chỉ qua khi người dùng tự làm được.
+- **Sổ tay 17 nhiệm vụ** (`#huongdan-panel`, panel thứ 12): cảm biến chạy nền từ lúc nạp trang, nên việc trẻ tự mò ra trước khi mở sổ tay vẫn được tính. Tiến độ trong `localStorage`, không PII.
+- **Chữ hai bản**: `loiBe` cho trẻ, `loiNguoiLon` cho người lớn; đổi chế độ giữa chừng thì vẽ lại đúng bản. Lời mời lần đầu CHỈ hiện ở chế độ trẻ em.
+- `pointer-events: none` trên lớp che là **ràng buộc**, không phải tinh chỉnh: bỏ đi là chặn chính thao tác mà bước hướng dẫn đang bảo trẻ làm.
+
+**Ba lỗi bắt được bằng Chrome thật, không phải bằng đọc mã** — cả ba đều build xanh, `tsc` xanh, và đều hỏng khi chạy:
+
+| Lỗi | Triệu chứng | Nguyên nhân |
+|---|---|---|
+| Bước «bấm vào tỉnh» bất khả thi | Bước trước vừa bảo kéo về thời Âu Lạc, mà thời ấy KHÔNG có tỉnh nào — bấm chỉ ra popup cương vực | Thứ tự bước sai. Đảo «bấm bản đồ» lên trước, và nhận CẢ popup cương vực làm bằng chứng |
+| Bấm vạch mốc không tính là «kéo thanh thời gian» | Thời kỳ đổi thật mà bước vẫn treo | `moc-lich-su.ts` gán thẳng `.value` rồi gọi `setPeriod` — KHÔNG bắn `input`. Thêm cảm biến quan sát chữ `#period-label` |
+| Huy hiệu nhảy **1/17** ngay khi mở trang | Chưa ai làm gì đã có một nhiệm vụ tick | Nhãn thời kỳ đổi từ «Đang tải dữ liệu…» sang tên thời kỳ — cảm biến đọc đó là người dùng đổi thời kỳ. Lấy lại mốc so sánh khi chữ cũ còn là chỗ giữ chỗ |
+
+Nghiệm thu trên Chrome thật (dev server): mời lần đầu → 10 bước → bước 1 xong bằng cú bấm vào Tây Ninh, bước 2 xong bằng cú bấm VẠCH MỐC (đường trước đây hỏng), bước 3 xong bằng chip «Di sản & Di tích»; sổ tay 5/17 rồi 6/17; đổi sang chế độ người lớn thì bảng vẽ lại đúng bản chữ người lớn; console sạch; nhãn **Hoàng Sa + Trường Sa** hiện đủ trong mọi ảnh chụp.
+
+### 2. Chủ đề thư viện thứ 15 — «Sách học ngày xưa» (26 mục)
+
+- `sgk-xua-tho.json` — **17 bài thơ nguyên văn**, từ Pháp Thuận (915–990) tới Thâm Tâm (1917–1950). Toàn bộ đã hết thời hạn bảo hộ.
+- `sach-hoc-xua.json` — **9 bộ sách** dạng giới thiệu: Quốc văn giáo khoa thư · Luân lý giáo khoa thư · Việt Nam sử lược · Quốc văn trích diễm · Việt Nam văn học sử yếu · Việt Nam thi văn hợp tuyển · Cổ học tinh hoa · Tục ngữ phong dao · Truyện cổ nước Nam.
+- `ca-dao-tuc-ngu.json` **127 → 143**: 16 bài ca dao – tục ngữ vỡ lòng. Lỗ hổng tìm ra bằng cách đếm chứ không phải đoán — 121/127 mục cũ đều neo theo tỉnh, nên toàn bộ ca dao phổ quát (*Công cha như núi Thái Sơn*, *Bầu ơi thương lấy bí cùng*, *Con cò mà đi ăn đêm*, *Thằng Bờm*…) thiếu sạch.
+- Hai trường mới trên lược đồ `Poem`: `sach_xua` (bộ sách đã in bài này) và `giai_nghia[]` (từ khó → nghĩa, hiện ra bằng `<details>` — thơ cổ dày chữ Hán-Việt, không giải nghĩa thì trẻ đọc hết bài vẫn không hiểu).
+
+**Cổng bản quyền mới trong `validate_literature.mjs`**: chủ đề này in NGUYÊN VĂN thơ đầu thế kỷ XX nên ranh giới bản quyền là chỗ dễ vượt nhất kho. Validator đọc năm mất từ chuỗi `tac_gia` và đỏ cổng nếu > 1975 (Điều 27 Luật SHTT: đời tác giả + 50 năm). Trần Tuấn Khải †1983, Thế Lữ †1989, Vũ Đình Liên †1996 vì thế không thể lọt vào tệp này.
+
+Nguồn: Báo Sài Gòn Giải Phóng · Báo Thế giới và Việt Nam · NXB Trẻ · Báo Công an Nhân dân · NXB Chính trị quốc gia Sự thật · Báo Hưng Yên · Báo Dân Việt · Tạp chí Công dân và Khuyến học · Báo Pháp Luật TP HCM · VietNamNet · Báo Người Lao Động — không mục nào dựa vào wiki hay kho thơ cộng đồng.
+
+---
+
 ## Ảnh chụp hiện trạng — 2026-08-11 (cuối phiên «làm hết kế hoạch»)
 
 | Chỉ số | Giá trị | Đo bằng |
