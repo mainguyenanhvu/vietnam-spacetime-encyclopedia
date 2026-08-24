@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Bộ chủ đề của thư viện. Mọi mục trong literature/*.json mang một `chu_de` trỏ về `id` ở đây. Soạn 2026-08-05.",
-  "ngay_cap_nhat": "2026-08-05",
+  "ngay_cap_nhat": "2026-08-24",
   "items": [
     {
       "id": "van-hoc-dan-gian",
@@ -11,6 +11,11 @@
       "id": "giai-thoai-khoa-bang",
       "ten": "Giai thoại khoa bảng",
       "mo_ta": "Giai thoại về Trạng nguyên, Tiến sĩ, Nho học và khoa cử thời phong kiến."
+    },
+    {
+      "id": "sach-hoc-xua",
+      "ten": "Sách học ngày xưa",
+      "mo_ta": "Những bộ sách người Việt dùng để học chữ, học sử, học làm người trước 1945 — Quốc văn giáo khoa thư, Luân lý giáo khoa thư, Quốc văn trích diễm, Việt Nam thi văn hợp tuyển — và các bài thơ hay trích ra từ đó. Chỉ nhận tác phẩm đã hết thời hạn bảo hộ bản quyền."
     },
     {
       "id": "tho-van-trung-dai",

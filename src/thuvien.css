@@ -438,6 +438,65 @@
 .lib-loi-binh { font-style: italic; }
 .lib-phu { font-size: 0.88em; color: var(--chu-mem); }
 
+/* Bộ sách học ngày xưa đã in bài này */
+.lib-sach-xua {
+  font-size: 0.88em;
+  color: var(--chu-mem);
+  margin: 0 0 0.6em;
+}
+
+/* Bảng từ khó — thơ cổ dày chữ Hán-Việt («thái hư», «lữ thứ», «viễn phố»),
+   không giải nghĩa thì đọc hết bài vẫn không hiểu gì. Đóng sẵn để không đẩy
+   bài thơ xuống dưới màn hình; mở ra là hai cột từ ⟷ nghĩa.
+   Dùng grid chứ không phải dt/dd trần: mặc định của trình duyệt xếp chúng
+   thành hai dòng rời, nhìn không ra chữ nào giải nghĩa cho chữ nào. */
+.lib-giai-nghia {
+  margin: 0.8em 0;
+  border: 1px solid var(--lib-vien);
+  border-radius: var(--bo-nho);
+  padding: 0.45em 0.7em;
+  font-size: 0.92em;
+}
+
+.lib-giai-nghia > summary {
+  cursor: pointer;
+  font-weight: 600;
+  /* Vùng chạm: mục này dành cho trẻ con, mà `summary` mặc định chỉ cao đúng
+     một dòng chữ. */
+  min-height: max(2.75rem, 44px);
+  display: flex;
+  align-items: center;
+}
+
+.lib-giai-nghia dl {
+  display: grid;
+  grid-template-columns: minmax(6em, auto) 1fr;
+  gap: 0.3em 0.8em;
+  margin: 0.4em 0 0.2em;
+}
+
+.lib-giai-nghia dt {
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.lib-giai-nghia dd {
+  margin: 0;
+  color: var(--chu-mem);
+}
+
+/* Màn hình hẹp: hai cột thành hai dòng, nghĩa thụt vào cho thấy nó thuộc về
+   từ ngay trên. */
+@media (max-width: 460px) {
+  .lib-giai-nghia dl {
+    grid-template-columns: 1fr;
+    gap: 0 0;
+  }
+  .lib-giai-nghia dd {
+    margin: 0 0 0.5em 1em;
+  }
+}
+
 .lib-canh-bao,
 .lib-ban-quyen {
   padding: 0.5em 0.7em;

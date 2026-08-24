@@ -1,0 +1,625 @@
+{
+  "ghi_chu": "Thơ trong các bộ sách học ngày xưa — Quốc văn giáo khoa thư, Quốc văn trích diễm, Việt Nam thi văn hợp tuyển và sách giáo khoa các thời. CHỈ nhận tác phẩm đã HẾT thời hạn bảo hộ theo Điều 27 Luật Sở hữu trí tuệ (đời tác giả + 50 năm) — tính đến 2026 là tác giả mất từ 1975 trở về trước. Tác giả mất sau 1975 (Trần Tuấn Khải †1983, Thế Lữ †1989, Vũ Đình Liên †1996, Huy Cận †2005…) CHỈ được giới thiệu, xem tho-moi-lang-man.json.",
+  "ghi_chu_ban_quyen": "Toàn bộ mục trong tệp này là public-domain: tác giả mất trước 1976 hoặc khuyết danh. Trước khi thêm mục mới PHẢI tra năm mất của tác giả.",
+  "ngay_cap_nhat": "2026-08-24",
+  "items": [
+    {
+      "id": "quoc-to-phap-thuan",
+      "ten": "Quốc tộ (Vận nước)",
+      "tac_gia": "Thiền sư Pháp Thuận (915–990)",
+      "thoi_ky": "Nhà Tiền Lê, cuối thế kỷ X — lời đáp vua Lê Đại Hành hỏi về vận nước",
+      "the_loai": "Ngũ ngôn tứ tuyệt chữ Hán",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Việt Nam thi văn hợp tuyển (Dương Quảng Hàm) · SGK Ngữ văn 10",
+      "lien_quan_tinh": ["ninh-binh"],
+      "loi_binh": "Bài thơ chính trị sớm nhất còn lại của nước ta. Vua hỏi vận nước dài ngắn ra sao, nhà sư không bói toán mà trả lời bằng một nguyên tắc cai trị: người cầm quyền cứ «vô vi» — không nhũng nhiễu dân — thì khắp nơi tự dứt đao binh.",
+      "vi_sao_hay": "Hai mươi chữ gói trọn một học thuyết giữ nước: sức mạnh quốc gia nằm ở lòng dân yên, không nằm ở binh khí.",
+      "nguyen_van": [
+        "Quốc tộ như đằng lạc,",
+        "Nam thiên lý thái bình.",
+        "Vô vi cư điện các,",
+        "Xứ xứ tức đao binh."
+      ],
+      "ban_dich": [
+        "Vận nước như mây quấn,",
+        "Trời Nam mở thái bình.",
+        "Vô vi trên điện các,",
+        "Chốn chốn dứt đao binh."
+      ],
+      "ghi_chu_dich": "Bản dịch lưu hành trong SGK Ngữ văn. «Vô vi» ở đây là khái niệm chính trị phương Đông — cai trị thuận tự nhiên, không phiền nhiễu dân — chứ không phải «không làm gì cả».",
+      "giai_nghia": [
+        { "tu": "quốc tộ", "nghia": "vận mệnh, tuổi thọ của một nước" },
+        { "tu": "đằng lạc", "nghia": "dây mây quấn quýt vào nhau — ý nói bền chắc, ràng buộc lẫn nhau" },
+        { "tu": "điện các", "nghia": "cung điện, lầu gác — chỉ nơi vua và triều đình làm việc" },
+        { "tu": "đao binh", "nghia": "gươm giáo và quân lính — chỉ chiến tranh" }
+      ],
+      "sources": [
+        "Thơ văn Lý – Trần, tập I — NXB Khoa học xã hội",
+        "Dương Quảng Hàm, Việt Nam thi văn hợp tuyển — Nha học chính Đông Pháp, Hà Nội, 1943",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "cao-tat-thi-chung-man-giac",
+      "ten": "Cáo tật thị chúng (Có bệnh bảo mọi người)",
+      "tac_gia": "Thiền sư Mãn Giác (1052–1096)",
+      "thoi_ky": "Nhà Lý, cuối thế kỷ XI — bài kệ đọc trước lúc viên tịch",
+      "the_loai": "Kệ chữ Hán",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Việt Nam thi văn hợp tuyển (Dương Quảng Hàm) · SGK Ngữ văn 10",
+      "lien_quan_tinh": ["ha-noi"],
+      "loi_binh": "Bốn câu đầu nói lẽ vô thường: hoa nở rồi rụng, việc trôi qua trước mắt, tóc bạc đến trên đầu. Hai câu cuối lật ngược lại — giữa lúc xuân tàn vẫn còn một cành mai nở đêm qua ngoài sân.",
+      "vi_sao_hay": "Cành mai cuối bài là một trong những hình ảnh nổi tiếng nhất thơ Việt: giữa cái tàn lụi vẫn có cái bừng nở, nên không việc gì phải bi quan.",
+      "nguyen_van": [
+        "Xuân khứ bách hoa lạc,",
+        "Xuân đáo bách hoa khai.",
+        "Sự trục nhãn tiền quá,",
+        "Lão tòng đầu thượng lai.",
+        "Mạc vị xuân tàn hoa lạc tận,",
+        "Đình tiền tạc dạ nhất chi mai."
+      ],
+      "ban_dich": [
+        "Xuân ruổi trăm hoa rụng,",
+        "Xuân tới, trăm hoa cười.",
+        "Trước mắt việc đi mãi,",
+        "Trên đầu già đến rồi.",
+        "Đừng bảo xuân tàn hoa rụng hết,",
+        "Đêm qua sân trước một cành mai."
+      ],
+      "ghi_chu_dich": "Bản dịch của Ngô Tất Tố, được SGK Ngữ văn dùng phổ biến. Nhan đề «Cáo tật thị chúng» do người đời sau đặt.",
+      "giai_nghia": [
+        { "tu": "cáo tật", "nghia": "báo rằng mình có bệnh" },
+        { "tu": "thị chúng", "nghia": "bảo cho mọi người biết" },
+        { "tu": "vô thường", "nghia": "quan niệm nhà Phật: mọi vật đều đổi thay, không có gì đứng yên mãi" },
+        { "tu": "đình tiền", "nghia": "phía trước sân" }
+      ],
+      "sources": [
+        "Thơ văn Lý – Trần, tập I — NXB Khoa học xã hội",
+        "Dương Quảng Hàm, Việt Nam thi văn hợp tuyển — Nha học chính Đông Pháp, Hà Nội, 1943",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "ngon-hoai-khong-lo",
+      "ten": "Ngôn hoài (Tỏ lòng)",
+      "tac_gia": "Thiền sư Không Lộ (?–1119)",
+      "thoi_ky": "Nhà Lý, đầu thế kỷ XII",
+      "the_loai": "Thất ngôn tứ tuyệt chữ Hán",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Việt Nam thi văn hợp tuyển (Dương Quảng Hàm) · SGK Ngữ văn",
+      "lien_quan_tinh": ["ninh-binh"],
+      "loi_binh": "Nhà sư chọn được một mảnh đất hợp ý, sống với tình quê mà thấy đủ đầy. Câu cuối là tiếng kêu dài trên đỉnh núi làm lạnh cả bầu trời — hình ảnh con người đứng ngang tầm vũ trụ.",
+      "vi_sao_hay": "Câu «Trường khiếu nhất thanh hàn thái hư» được xem là một trong những câu thơ có tầm vóc lớn nhất của thơ thiền Lý – Trần.",
+      "nguyen_van": [
+        "Trạch đắc long xà địa khả cư,",
+        "Dã tình chung nhật lạc vô dư.",
+        "Hữu thì trực thướng cô phong đỉnh,",
+        "Trường khiếu nhất thanh hàn thái hư."
+      ],
+      "ban_dich": [
+        "Kiểu đất long xà chọn được nơi,",
+        "Tình quê nào chán suốt ngày vui.",
+        "Có khi xông thẳng lên đầu núi,",
+        "Một tiếng kêu vang lạnh cả trời."
+      ],
+      "ghi_chu_dich": "Bản dịch lưu hành trong SGK Ngữ văn; tên người dịch ghi khác nhau giữa các lần in nên ở đây không nêu. Bài còn có tên «Ngư nhàn» tuỳ bản.",
+      "giai_nghia": [
+        { "tu": "trạch đắc", "nghia": "chọn được" },
+        { "tu": "long xà", "nghia": "rồng và rắn — chỉ thế đất uốn lượn đẹp theo cách xem đất ngày xưa" },
+        { "tu": "cô phong", "nghia": "ngọn núi đứng một mình" },
+        { "tu": "thái hư", "nghia": "bầu trời rộng lớn, khoảng không vũ trụ" }
+      ],
+      "sources": [
+        "Thơ văn Lý – Trần, tập I — NXB Khoa học xã hội",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "cay-chuoi-nguyen-trai",
+      "ten": "Cây chuối (Ba tiêu)",
+      "tac_gia": "Nguyễn Trãi (1380–1442)",
+      "thoi_ky": "Nhà Lê sơ, thế kỷ XV — trong Quốc âm thi tập",
+      "the_loai": "Thơ Nôm Đường luật biến thể",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · SGK Ngữ văn",
+      "lien_quan_tinh": ["hai-phong"],
+      "loi_binh": "Tàu lá chuối non còn cuộn tròn chưa mở được ví như một bức thư tình đã phong kín. Gió ở đâu tới, khẽ mở ra xem trộm.",
+      "vi_sao_hay": "Một trong những bài thơ Nôm sớm nhất tả cảnh vật bằng chính tiếng nói dân tộc, mà lại tình tứ và tinh nghịch đến bất ngờ ở một vị khai quốc công thần.",
+      "nguyen_van": [
+        "Tự bén hơi xuân, tốt lại thêm,",
+        "Đầy buồng lạ, màu thâu đêm.",
+        "Tình thư một bức phong còn kín,",
+        "Gió nơi đâu gượng mở xem."
+      ],
+      "ghi_chu_dich": "Thơ Nôm, không cần dịch. Văn bản Quốc âm thi tập có dị bản ở chữ «màu»/«mùi» câu 2 — đây là bản lưu hành rộng nhất.",
+      "giai_nghia": [
+        { "tu": "bén hơi xuân", "nghia": "vừa chạm phải hơi ấm mùa xuân" },
+        { "tu": "buồng", "nghia": "buồng chuối — chùm quả chuối" },
+        { "tu": "tình thư", "nghia": "bức thư tỏ tình" },
+        { "tu": "gượng", "nghia": "khẽ khàng, làm một cách nhẹ nhàng dè dặt" }
+      ],
+      "sources": [
+        "Nguyễn Trãi toàn tập — NXB Khoa học xã hội",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "nhan-nguyen-binh-khiem",
+      "ten": "Nhàn",
+      "tac_gia": "Nguyễn Bỉnh Khiêm (1491–1585)",
+      "thoi_ky": "Thời Mạc, thế kỷ XVI — trong Bạch Vân quốc ngữ thi tập",
+      "the_loai": "Thất ngôn bát cú Nôm",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · SGK Ngữ văn 10",
+      "lien_quan_tinh": ["hai-phong"],
+      "loi_binh": "Trạng Trình bỏ triều đình về quê, sống bằng một mai, một cuốc, một cần câu. Cái «dại» ông tự nhận là chọn nơi vắng vẻ, cái «khôn» của người đời là chen vào chốn lao xao.",
+      "vi_sao_hay": "Hai câu «Ta dại, ta tìm nơi vắng vẻ / Người khôn, người đến chốn lao xao» là một trong những cặp đối nổi tiếng nhất thơ Nôm — mỉa mai mà không cay nghiệt.",
+      "nguyen_van": [
+        "Một mai, một cuốc, một cần câu,",
+        "Thơ thẩn dầu ai vui thú nào.",
+        "Ta dại, ta tìm nơi vắng vẻ,",
+        "Người khôn, người đến chốn lao xao.",
+        "Thu ăn măng trúc, đông ăn giá,",
+        "Xuân tắm hồ sen, hạ tắm ao.",
+        "Rượu, đến cội cây, ta sẽ uống,",
+        "Nhìn xem phú quý tựa chiêm bao."
+      ],
+      "giai_nghia": [
+        { "tu": "mai", "nghia": "dụng cụ đào đất, giống cái xẻng lưỡi dài" },
+        { "tu": "thơ thẩn", "nghia": "đi lại thong thả, không vội vã, không mục đích" },
+        { "tu": "lao xao", "nghia": "ồn ào chen chúc — ý chỉ chốn quan trường tranh giành" },
+        { "tu": "chiêm bao", "nghia": "giấc mơ" }
+      ],
+      "sources": [
+        "Bạch Vân quốc ngữ thi tập — trong Thơ văn Nguyễn Bỉnh Khiêm, NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "moi-trau-ho-xuan-huong",
+      "ten": "Mời trầu",
+      "tac_gia": "Hồ Xuân Hương (cuối thế kỷ XVIII – đầu thế kỷ XIX)",
+      "thoi_ky": "Cuối Lê – đầu Nguyễn",
+      "the_loai": "Thất ngôn tứ tuyệt Nôm",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · SGK Ngữ văn 8",
+      "lien_quan_tinh": ["nghe-an", "ha-noi"],
+      "loi_binh": "Miếng trầu là lời chào của người Việt. Ở đây nó thành lời tỏ bày: nếu có duyên thì trầu tự thắm lại, còn nếu không thì xin đừng bạc bẽo như vôi.",
+      "vi_sao_hay": "Bốn câu hai mươi tám chữ mà vừa là phong tục, vừa là tiếng nói của một người phụ nữ dám đòi được đối xử tử tế — hiếm thấy trong thơ thế kỷ XVIII.",
+      "nguyen_van": [
+        "Quả cau nho nhỏ miếng trầu hôi,",
+        "Này của Xuân Hương mới quệt rồi.",
+        "Có phải duyên nhau thì thắm lại,",
+        "Đừng xanh như lá, bạc như vôi."
+      ],
+      "giai_nghia": [
+        { "tu": "trầu hôi", "nghia": "một giống trầu lá nhỏ, vị cay nồng — «hôi» ở đây là tên giống trầu, không phải chê" },
+        { "tu": "quệt", "nghia": "phết vôi lên lá trầu để têm" },
+        { "tu": "thắm lại", "nghia": "trầu cau nhai với vôi thì đỏ thắm — ý nói tình duyên bền đẹp" }
+      ],
+      "sources": [
+        "Thơ Hồ Xuân Hương — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "doc-tieu-thanh-ky-nguyen-du",
+      "ten": "Độc Tiểu Thanh ký (Đọc truyện nàng Tiểu Thanh)",
+      "tac_gia": "Nguyễn Du (1765–1820)",
+      "thoi_ky": "Nhà Nguyễn, đầu thế kỷ XIX — trong Thanh Hiên thi tập",
+      "the_loai": "Thất ngôn bát cú chữ Hán",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Việt Nam thi văn hợp tuyển (Dương Quảng Hàm) · SGK Ngữ văn 10",
+      "lien_quan_tinh": ["ha-tinh"],
+      "loi_binh": "Nguyễn Du đọc chuyện một người con gái tài sắc mà bạc mệnh, rồi tự hỏi ba trăm năm sau còn ai khóc mình. Câu hỏi ấy đã được cả dân tộc trả lời.",
+      "vi_sao_hay": "Câu kết «Thiên hạ hà nhân khấp Tố Như?» là câu thơ được nhắc lại nhiều nhất mỗi dịp kỷ niệm Đại thi hào — một lời hỏi vọng qua ba thế kỷ.",
+      "nguyen_van": [
+        "Tây Hồ hoa uyển tẫn thành khư,",
+        "Độc điếu song tiền nhất chỉ thư.",
+        "Chi phấn hữu thần liên tử hậu,",
+        "Văn chương vô mệnh luỵ phần dư.",
+        "Cổ kim hận sự thiên nan vấn,",
+        "Phong vận kỳ oan ngã tự cư.",
+        "Bất tri tam bách dư niên hậu,",
+        "Thiên hạ hà nhân khấp Tố Như?"
+      ],
+      "ban_dich": [
+        "Tây Hồ cảnh đẹp hoá gò hoang,",
+        "Thổn thức bên song mảnh giấy tàn.",
+        "Son phấn có thần chôn vẫn hận,",
+        "Văn chương không mệnh đốt còn vương.",
+        "Nỗi hờn kim cổ trời khôn hỏi,",
+        "Cái án phong lưu khách tự mang.",
+        "Chẳng biết ba trăm năm lẻ nữa,",
+        "Người đời ai khóc Tố Như chăng?"
+      ],
+      "ghi_chu_dich": "Bản dịch của Vũ Tam Tập, dùng trong SGK Ngữ văn.",
+      "giai_nghia": [
+        { "tu": "Tố Như", "nghia": "tên tự của Nguyễn Du" },
+        { "tu": "hoa uyển", "nghia": "vườn hoa" },
+        { "tu": "phần dư", "nghia": "phần còn sót lại sau khi bị đốt" },
+        { "tu": "phong vận", "nghia": "vẻ tài hoa, phong nhã" }
+      ],
+      "sources": [
+        "Nguyễn Du toàn tập — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "kieu-o-lau-ngung-bich-buon-trong",
+      "ten": "Kiều ở lầu Ngưng Bích — tám câu «Buồn trông» (trích Truyện Kiều)",
+      "tac_gia": "Nguyễn Du (1765–1820)",
+      "thoi_ky": "Nhà Nguyễn, đầu thế kỷ XIX",
+      "the_loai": "Lục bát — trích truyện thơ Nôm",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · SGK Ngữ văn 9",
+      "lien_quan_tinh": ["ha-tinh"],
+      "loi_binh": "Bốn lần «buồn trông» mở ra bốn bức tranh, càng lúc càng dữ: cánh buồm xa, hoa trôi, nội cỏ, rồi tiếng sóng ầm ầm vây quanh chỗ ngồi. Cảnh vật chính là nỗi lo trong lòng Kiều.",
+      "vi_sao_hay": "Sách xưa gọi đây là mẫu mực của lối «tả cảnh ngụ tình»: không câu nào nói buồn mà cả tám câu đều buồn.",
+      "nguyen_van": [
+        "Buồn trông cửa bể chiều hôm,",
+        "Thuyền ai thấp thoáng cánh buồm xa xa?",
+        "Buồn trông ngọn nước mới sa,",
+        "Hoa trôi man mác biết là về đâu?",
+        "Buồn trông nội cỏ rầu rầu,",
+        "Chân mây mặt đất một màu xanh xanh.",
+        "Buồn trông gió cuốn mặt duềnh,",
+        "Ầm ầm tiếng sóng kêu quanh ghế ngồi."
+      ],
+      "ghi_chu_dich": "Trích tám câu cuối đoạn «Kiều ở lầu Ngưng Bích». Truyện Kiều có nhiều bản Nôm khác nhau; đây là văn bản phổ thông dùng trong nhà trường.",
+      "giai_nghia": [
+        { "tu": "cửa bể", "nghia": "cửa biển, nơi sông đổ ra biển" },
+        { "tu": "ngọn nước mới sa", "nghia": "dòng nước vừa đổ xuống" },
+        { "tu": "rầu rầu", "nghia": "héo úa, ủ dột" },
+        { "tu": "mặt duềnh", "nghia": "mặt vũng nước lớn ven biển" }
+      ],
+      "sources": [
+        "Truyện Kiều — bản phổ thông, NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "chieu-hom-nho-nha-thanh-quan",
+      "ten": "Chiều hôm nhớ nhà",
+      "tac_gia": "Bà Huyện Thanh Quan (thế kỷ XIX)",
+      "thoi_ky": "Nhà Nguyễn, nửa đầu thế kỷ XIX",
+      "the_loai": "Thất ngôn bát cú Đường luật",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · Việt Nam thi văn hợp tuyển",
+      "lien_quan_tinh": ["ha-noi"],
+      "loi_binh": "Trời chiều, tiếng ốc và tiếng trống đồn vẳng lại; ông chài gác mái về bến xa, trẻ chăn trâu gõ sừng về xóm vắng. Cảnh càng yên thì nỗi nhớ nhà càng rõ.",
+      "vi_sao_hay": "Cùng với «Qua Đèo Ngang», đây là bài mẫu mực cho giọng thơ hoài cổ trang nhã — sách học ngày xưa thường lấy làm bài tập đối và luyện niêm luật.",
+      "nguyen_van": [
+        "Chiều trời bảng lảng bóng hoàng hôn,",
+        "Tiếng ốc xa đưa vẳng trống đồn.",
+        "Gác mái, ngư ông về viễn phố,",
+        "Gõ sừng, mục tử lại cô thôn.",
+        "Ngàn mai gió cuốn chim bay mỏi,",
+        "Dặm liễu sương sa khách bước dồn.",
+        "Kẻ chốn Chương Đài, người lữ thứ,",
+        "Lấy ai mà kể nỗi hàn ôn?"
+      ],
+      "giai_nghia": [
+        { "tu": "bảng lảng", "nghia": "mờ nhạt, chập chờn lúc sắp tối" },
+        { "tu": "ngư ông", "nghia": "ông lão đánh cá" },
+        { "tu": "mục tử", "nghia": "đứa trẻ chăn trâu" },
+        { "tu": "viễn phố", "nghia": "bến sông xa" },
+        { "tu": "lữ thứ", "nghia": "chốn đất khách, nơi dừng chân trên đường đi" },
+        { "tu": "hàn ôn", "nghia": "lạnh và ấm — chỉ chuyện tâm tình hỏi han nhau" }
+      ],
+      "sources": [
+        "Dương Quảng Hàm, Việt Nam thi văn hợp tuyển — Nha học chính Đông Pháp, Hà Nội, 1943",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "ban-den-choi-nha-nguyen-khuyen",
+      "ten": "Bạn đến chơi nhà",
+      "tac_gia": "Nguyễn Khuyến (1835–1909)",
+      "thoi_ky": "Cuối thế kỷ XIX — thời gian cáo quan về ở ẩn tại quê nhà",
+      "the_loai": "Thất ngôn bát cú Nôm",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · SGK Ngữ văn 7",
+      "lien_quan_tinh": ["ninh-binh"],
+      "loi_binh": "Bạn quý tới chơi mà nhà chẳng có gì đãi: trẻ đi vắng, chợ thì xa, cá khó chài, gà khó đuổi, cải chưa ra cây, đến miếng trầu cũng không. Cuối cùng chỉ còn «ta với ta» — và thế là đủ.",
+      "vi_sao_hay": "Cả bài là một lời xin lỗi dí dỏm, để dồn hết sức nặng vào ba chữ cuối: tình bạn không cần mâm cao cỗ đầy.",
+      "nguyen_van": [
+        "Đã bấy lâu nay bác tới nhà,",
+        "Trẻ thời đi vắng, chợ thời xa.",
+        "Ao sâu nước cả, khôn chài cá,",
+        "Vườn rộng rào thưa, khó đuổi gà.",
+        "Cải chửa ra cây, cà mới nụ,",
+        "Bầu vừa rụng rốn, mướp đương hoa.",
+        "Đầu trò tiếp khách, trầu không có,",
+        "Bác đến chơi đây, ta với ta!"
+      ],
+      "giai_nghia": [
+        { "tu": "thời", "nghia": "thì (cách nói cũ)" },
+        { "tu": "nước cả", "nghia": "nước lớn, nước sâu" },
+        { "tu": "khôn", "nghia": "khó, không thể (nghĩa cũ)" },
+        { "tu": "chửa", "nghia": "chưa" },
+        { "tu": "rụng rốn", "nghia": "quả bầu vừa rụng cái hoa ở đầu quả — tức còn rất non" },
+        { "tu": "đầu trò", "nghia": "việc mở đầu khi tiếp khách; người Việt xưa mời trầu trước tiên" }
+      ],
+      "sources": [
+        "Thơ văn Nguyễn Khuyến — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "khoc-duong-khue-nguyen-khuyen",
+      "ten": "Khóc Dương Khuê (trích)",
+      "tac_gia": "Nguyễn Khuyến (1835–1909)",
+      "thoi_ky": "Năm 1902 — khóc bạn đồng khoa Dương Khuê qua đời",
+      "the_loai": "Song thất lục bát",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · SGK Ngữ văn 8",
+      "lien_quan_tinh": ["ninh-binh", "ha-noi"],
+      "loi_binh": "Bài thơ khóc bạn nổi tiếng nhất của văn học Việt Nam. Nguyên tác chữ Hán là «Vãn đồng niên Vân Đình tiến sĩ Dương thượng thư», chính Nguyễn Khuyến diễn Nôm lại thành bài này.",
+      "vi_sao_hay": "Câu mở đầu chỉ sáu chữ «Bác Dương thôi đã thôi rồi» mà nói hết cái hẫng hụt khi mất bạn — không một chữ nào kêu than.",
+      "nguyen_van": [
+        "Bác Dương thôi đã thôi rồi,",
+        "Nước mây man mác ngậm ngùi lòng ta.",
+        "Nhớ từ thuở đăng khoa ngày trước,",
+        "Vẫn sớm hôm tôi bác cùng nhau;",
+        "Kính yêu từ trước đến sau,",
+        "Trong khi gặp gỡ khác đâu duyên trời.",
+        "Cũng có lúc chơi nơi dặm khách,",
+        "Tiếng suối nghe róc rách lưng đèo;",
+        "Có khi từng gác cheo leo,",
+        "Thú vui con hát lựa chiều cầm xoang.",
+        "Cũng có lúc rượu ngon cùng nhắp,",
+        "Chén quỳnh tương ăm ắp bầu xuân."
+      ],
+      "ghi_chu_dich": "Trích 12 câu đầu của bài diễn Nôm; toàn bài dài hơn ba mươi câu.",
+      "giai_nghia": [
+        { "tu": "đăng khoa", "nghia": "thi đỗ, có tên trên bảng vàng" },
+        { "tu": "dặm khách", "nghia": "đường đi xa, chốn tha hương" },
+        { "tu": "cầm xoang", "nghia": "cung đàn, điệu đàn" },
+        { "tu": "quỳnh tương", "nghia": "rượu quý — cách nói ước lệ trong thơ cổ" }
+      ],
+      "sources": [
+        "Thơ văn Nguyễn Khuyến — NXB Văn học",
+        "Dương Quảng Hàm, Việt Nam thi văn hợp tuyển — Nha học chính Đông Pháp, Hà Nội, 1943",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "vinh-khoa-thi-huong-tu-xuong",
+      "ten": "Vịnh khoa thi Hương (Lễ xướng danh khoa Đinh Dậu)",
+      "tac_gia": "Trần Tế Xương — Tú Xương (1870–1907)",
+      "thoi_ky": "Khoa thi Hương năm Đinh Dậu 1897 — trường Hà Nội thi chung với trường Nam Định",
+      "the_loai": "Thất ngôn bát cú Đường luật",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Quốc văn trích diễm (Dương Quảng Hàm) · SGK Ngữ văn 8",
+      "lien_quan_tinh": ["ninh-binh"],
+      "loi_binh": "Trường thi chữ Hán nghìn năm bị hạ xuống thành cái chợ: sĩ tử lôi thôi vai đeo lọ, quan trường ậm oẹ thét loa, lọng quan sứ Pháp che rợp trời, váy mụ đầm quét đất. Hai câu cuối là tiếng gọi giật của một người còn biết đau.",
+      "vi_sao_hay": "Một bài thơ trào phúng nhưng đọc đến câu cuối thì hết cười — Tú Xương ghi lại đúng cái khoảnh khắc nền học cũ tàn lụi dưới ách đô hộ.",
+      "nguyen_van": [
+        "Nhà nước ba năm mở một khoa,",
+        "Trường Nam thi lẫn với trường Hà.",
+        "Lôi thôi sĩ tử vai đeo lọ,",
+        "Ậm oẹ quan trường miệng thét loa.",
+        "Lọng cắm rợp trời quan sứ đến,",
+        "Váy lê quét đất mụ đầm ra.",
+        "Nhân tài đất Bắc nào ai đó,",
+        "Ngoảnh cổ mà trông cảnh nước nhà."
+      ],
+      "giai_nghia": [
+        { "tu": "khoa", "nghia": "kỳ thi tuyển người tài, ba năm mở một lần" },
+        { "tu": "sĩ tử", "nghia": "người đi thi" },
+        { "tu": "ậm oẹ", "nghia": "tiếng ề à trong cổ họng, ra vẻ oai vệ" },
+        { "tu": "quan sứ", "nghia": "công sứ Pháp — viên quan cai trị đầu tỉnh thời thuộc địa" },
+        { "tu": "lọng", "nghia": "cái ô lớn có cán dài, che cho quan lại ngày xưa" }
+      ],
+      "sources": [
+        "Thơ Trần Tế Xương — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "song-lap-tu-xuong",
+      "ten": "Sông Lấp",
+      "tac_gia": "Trần Tế Xương — Tú Xương (1870–1907)",
+      "thoi_ky": "Đầu thế kỷ XX — sau khi con sông Vị Hoàng chảy qua thành Nam bị lấp",
+      "the_loai": "Lục bát",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Việt Nam thi văn hợp tuyển (Dương Quảng Hàm) · SGK Ngữ văn",
+      "lien_quan_tinh": ["ninh-binh"],
+      "loi_binh": "Con sông đã bị lấp thành đồng, chỗ thì dựng nhà, chỗ thì trồng ngô khoai. Nửa đêm nghe tiếng ếch, nhà thơ vẫn giật mình tưởng có ai gọi đò.",
+      "vi_sao_hay": "Bốn câu hai mươi tám chữ nói được cả một sự đổi thay của quê hương và nỗi tiếc không nguôi — sách xưa hay lấy làm bài đọc mẫu về lục bát.",
+      "nguyen_van": [
+        "Sông kia rày đã nên đồng,",
+        "Chỗ làm nhà cửa, chỗ trồng ngô khoai.",
+        "Vẳng nghe tiếng ếch bên tai,",
+        "Giật mình còn tưởng tiếng ai gọi đò."
+      ],
+      "ghi_chu_dich": "Bài còn có tên «Sông lấp» hoặc «Vị Hoàng hoài cổ» tuỳ bản.",
+      "giai_nghia": [
+        { "tu": "rày", "nghia": "nay, bây giờ (tiếng cũ)" },
+        { "tu": "nên đồng", "nghia": "trở thành ruộng đồng" },
+        { "tu": "vẳng", "nghia": "nghe xa xa, mơ hồ" }
+      ],
+      "sources": [
+        "Thơ Trần Tế Xương — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "muon-lam-thang-cuoi-tan-da",
+      "ten": "Muốn làm thằng Cuội",
+      "tac_gia": "Tản Đà — Nguyễn Khắc Hiếu (1889–1939)",
+      "thoi_ky": "Đầu thế kỷ XX — trong tập Khối tình con",
+      "the_loai": "Thất ngôn bát cú Đường luật",
+      "ban_quyen": "public-domain",
+      "sach_xua": "Việt Nam thi văn hợp tuyển (Dương Quảng Hàm) · SGK Ngữ văn 8",
+      "lien_quan_tinh": ["ha-noi"],
+      "loi_binh": "Chán trần thế, nhà thơ xin chị Hằng nhắc cành đa cho lên cung trăng ngồi chơi. Ngông mà buồn: cái ngông ấy là cách một người có tài che nỗi bất lực trước thời cuộc.",
+      "vi_sao_hay": "Tản Đà là nhịp cầu giữa thơ cũ và Thơ mới. Bài này giữ nguyên luật Đường mà giọng đã hoàn toàn hiện đại — tự xưng «em» với chị Hằng, rủ nhau «trông xuống thế gian cười».",
+      "nguyen_van": [
+        "Đêm thu buồn lắm chị Hằng ơi!",
+        "Trần thế em nay chán nửa rồi.",
+        "Cung quế đã ai ngồi đó chửa?",
+        "Cành đa xin chị nhắc lên chơi.",
+        "Có bầu có bạn can chi tủi,",
+        "Cùng gió cùng mây thế mới vui.",
+        "Rồi cứ mỗi năm rằm tháng tám,",
+        "Tựa nhau trông xuống thế gian cười."
+      ],
+      "giai_nghia": [
+        { "tu": "chị Hằng", "nghia": "Hằng Nga — nàng tiên ở cung trăng theo truyện xưa" },
+        { "tu": "cung quế", "nghia": "cung trăng, nơi tương truyền có cây quế" },
+        { "tu": "chửa", "nghia": "chưa" },
+        { "tu": "rằm tháng tám", "nghia": "Tết Trung thu" }
+      ],
+      "sources": [
+        "Tản Đà toàn tập — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "chan-que-nguyen-binh",
+      "ten": "Chân quê",
+      "tac_gia": "Nguyễn Bính — Nguyễn Trọng Bính (1918–1966)",
+      "thoi_ky": "Phong trào Thơ mới, khoảng 1936–1940",
+      "the_loai": "Lục bát",
+      "ban_quyen": "public-domain",
+      "sach_xua": "SGK Ngữ văn — bài đọc quen thuộc của nhiều thế hệ học trò",
+      "lien_quan_tinh": ["ninh-binh"],
+      "loi_binh": "Người con gái đi tỉnh về, đổi sang khăn nhung quần lĩnh áo cài khuy bấm. Chàng trai đợi ở đầu làng chỉ xin một điều: giữ lại cái yếm lụa sồi, cái khăn mỏ quạ, cái quần nái đen — giữ lại chất quê.",
+      "vi_sao_hay": "Câu kết «Hương đồng gió nội bay đi ít nhiều» đã thành thành ngữ trong tiếng Việt. Bài thơ đặt ra một câu hỏi vẫn còn nguyên: đổi mới đến đâu thì mất gốc?",
+      "nguyen_van": [
+        "Hôm qua em đi tỉnh về,",
+        "Đợi em ở mãi con đê đầu làng.",
+        "Khăn nhung, quần lĩnh rộn ràng,",
+        "Áo cài khuy bấm, em làm khổ tôi!",
+        "Nào đâu cái yếm lụa sồi?",
+        "Cái dây lưng đũi nhuộm hồi sang xuân?",
+        "Nào đâu cái áo tứ thân?",
+        "Cái khăn mỏ quạ, cái quần nái đen?",
+        "Nói ra sợ mất lòng em,",
+        "Van em, em hãy giữ nguyên quê mùa.",
+        "Như hôm em đi lễ chùa,",
+        "Cứ ăn mặc thế cho vừa lòng anh.",
+        "Hoa chanh nở giữa vườn chanh,",
+        "Thầy u mình với chúng mình chân quê.",
+        "Hôm qua em đi tỉnh về,",
+        "Hương đồng gió nội bay đi ít nhiều."
+      ],
+      "giai_nghia": [
+        { "tu": "yếm", "nghia": "mảnh vải che ngực của phụ nữ Việt xưa" },
+        { "tu": "lụa sồi", "nghia": "thứ lụa dệt thô, mộc mạc, người quê hay mặc" },
+        { "tu": "khăn mỏ quạ", "nghia": "khăn vuông chít trên đầu, gấp nhọn phía trước như mỏ con quạ" },
+        { "tu": "quần nái", "nghia": "quần bằng vải nái — loại vải thô dệt từ tơ gốc" },
+        { "tu": "thầy u", "nghia": "cha mẹ — cách gọi của người vùng đồng bằng Bắc Bộ xưa" }
+      ],
+      "sources": [
+        "Nguyễn Bính — Thơ và đời, NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "mua-xuan-chin-han-mac-tu",
+      "ten": "Mùa xuân chín",
+      "tac_gia": "Hàn Mặc Tử — Nguyễn Trọng Trí (1912–1940)",
+      "thoi_ky": "Phong trào Thơ mới, khoảng 1937",
+      "the_loai": "Thất ngôn — thơ mới",
+      "ban_quyen": "public-domain",
+      "sach_xua": "SGK Ngữ văn 10",
+      "lien_quan_tinh": ["quang-tri", "khanh-hoa"],
+      "loi_binh": "Nắng ửng, khói mơ, mái tranh lấm tấm vàng, gió trêu tà áo biếc — mùa xuân đang ở độ «chín» nhất. Nhưng ngay giữa lúc đẹp nhất, nhà thơ đã nghĩ tới ngày mai có kẻ theo chồng bỏ cuộc chơi.",
+      "vi_sao_hay": "Chữ «chín» đặt cho mùa xuân là sáng tạo riêng của Hàn Mặc Tử: cái gì chín tới cũng là cái sắp qua. Câu cuối «nắng chang chang» ở lại rất lâu trong trí người đọc.",
+      "nguyen_van": [
+        "Trong làn nắng ửng: khói mơ tan,",
+        "Đôi mái nhà tranh lấm tấm vàng.",
+        "Sột soạt gió trêu tà áo biếc,",
+        "Trên giàn thiên lý. Bóng xuân sang.",
+        "Sóng cỏ xanh tươi gợn tới trời.",
+        "Bao cô thôn nữ hát trên đồi;",
+        "— Ngày mai trong đám xuân xanh ấy,",
+        "Có kẻ theo chồng bỏ cuộc chơi...",
+        "Tiếng ca vắt vẻo lưng chừng núi,",
+        "Hổn hển như lời của nước mây...",
+        "Thầm thĩ với ai ngồi dưới trúc,",
+        "Nghe ra ý vị và thơ ngây...",
+        "Khách xa gặp lúc mùa xuân chín,",
+        "Lòng trí bâng khuâng sực nhớ làng:",
+        "— «Chị ấy, năm nay còn gánh thóc",
+        "Dọc bờ sông trắng nắng chang chang?»"
+      ],
+      "giai_nghia": [
+        { "tu": "nắng ửng", "nghia": "nắng mới lên, còn nhạt và hồng" },
+        { "tu": "thiên lý", "nghia": "loài dây leo hoa vàng xanh thơm, hay trồng làm giàn trước nhà" },
+        { "tu": "thôn nữ", "nghia": "cô gái ở làng quê" },
+        { "tu": "xuân xanh", "nghia": "tuổi trẻ" }
+      ],
+      "sources": [
+        "Hàn Mặc Tử — Tác phẩm, NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    },
+    {
+      "id": "tong-biet-hanh-tham-tam",
+      "ten": "Tống biệt hành",
+      "tac_gia": "Thâm Tâm — Nguyễn Tuấn Trình (1917–1950)",
+      "thoi_ky": "Phong trào Thơ mới, khoảng 1940",
+      "the_loai": "Hành — thể thơ cổ phong",
+      "ban_quyen": "public-domain",
+      "sach_xua": "SGK Ngữ văn 11",
+      "lien_quan_tinh": ["hai-phong"],
+      "loi_binh": "Một cuộc tiễn đưa không có sông, không có hoàng hôn, vậy mà trong lòng vẫn dậy tiếng sóng và đầy bóng chiều. Người ra đi dặn: chí lớn chưa thành thì không bao giờ trở lại.",
+      "vi_sao_hay": "Thâm Tâm chỉ để lại vài bài mà bài này đủ đưa ông vào sách giáo khoa. Cách nói «Mẹ thà coi như chiếc lá bay» — dứt khoát đến tàn nhẫn mà thật ra là cố nén.",
+      "nguyen_van": [
+        "Đưa người, ta không đưa qua sông,",
+        "Sao có tiếng sóng ở trong lòng?",
+        "Bóng chiều không thắm, không vàng vọt,",
+        "Sao đầy hoàng hôn trong mắt trong?",
+        "Đưa người ta chỉ đưa người ấy,",
+        "Một giã gia đình, một dửng dưng...",
+        "— Ly khách! Ly khách! Con đường nhỏ,",
+        "Chí lớn chưa về bàn tay không,",
+        "Thì không bao giờ nói trở lại!",
+        "Ba năm mẹ già cũng đừng mong.",
+        "Ta biết người buồn chiều hôm trước:",
+        "Bây giờ mùa hạ sen nở nốt,",
+        "Một chị, hai chị cũng như sen",
+        "Khuyên nốt em trai dòng lệ sót.",
+        "Ta biết người buồn sáng hôm nay:",
+        "Giời chưa mùa thu, tươi lắm thay,",
+        "Em nhỏ ngây thơ đôi mắt biếc",
+        "Gói tròn thương tiếc chiếc khăn tay...",
+        "Người đi? Ừ nhỉ, người đi thực!",
+        "Mẹ thà coi như chiếc lá bay,",
+        "Chị thà coi như là hạt bụi,",
+        "Em thà coi như hơi rượu say."
+      ],
+      "giai_nghia": [
+        { "tu": "tống biệt", "nghia": "tiễn đưa người đi xa" },
+        { "tu": "hành", "nghia": "một thể thơ cổ, nhịp tự do, thường dùng kể chuyện hoặc tỏ chí" },
+        { "tu": "ly khách", "nghia": "người khách sắp lìa xa, người ra đi" },
+        { "tu": "giã", "nghia": "từ biệt" }
+      ],
+      "sources": [
+        "Thơ Thâm Tâm — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "sach-hoc-xua"
+    }
+  ]
+}

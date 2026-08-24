@@ -1,10 +1,10 @@
 {
   "sinh_luc": {
-    "tong_muc": 5550,
+    "tong_muc": 5593,
     "tong_co_toa_do": 2767,
     "so_nhom_trung_ten": 828,
     "so_cap_trung_toa_do": 799,
-    "ngay_sinh": "2026-08-11"
+    "ngay_sinh": "2026-08-24"
   },
   "entries": [
     {
@@ -13086,6 +13086,19 @@
       "trang_thai": null
     },
     {
+      "id": "sach-hoc-xua",
+      "slug": null,
+      "ten": "Sách học ngày xưa",
+      "ten_chuan": "sach hoc ngay xua",
+      "file": "literature/_chu-de.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
       "id": "tho-van-trung-dai",
       "slug": null,
       "ten": "Thơ văn trung đại",
@@ -15294,6 +15307,214 @@
       "lon": null,
       "so_nguon": 1,
       "trang_thai": "reviewed"
+    },
+    {
+      "id": "cong-cha-nhu-nui-thai-son",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "bau-oi-thuong-lay-bi-cung",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "nhieu-dieu-phu-lay-gia-guong",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "con-co-ma-di-an-dem",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "trau-oi-ta-bao-trau-nay",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "anh-em-nhu-the-tay-chan",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "mot-cay-lam-chang-nen-non",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "thang-bom-co-cai-quat-mo",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "ai-oi-bung-bat-com-day",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "len-non-moi-biet-non-cao",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "rau-tom-nau-voi-ruot-bau",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "ca-khong-an-muoi-ca-uon",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "ca-dao",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "di-mot-ngay-dang-hoc-mot-sang-khon",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "tuc-ngu",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "an-qua-nho-ke-trong-cay",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "tuc-ngu",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "la-lanh-dum-la-rach",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "tuc-ngu",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "khong-thay-do-may-lam-nen",
+      "slug": null,
+      "ten": "van-hoc-dan-gian",
+      "ten_chuan": "van hoc dan gian",
+      "file": "literature/ca-dao-tuc-ngu.json",
+      "mien": "literature",
+      "loai": "tuc-ngu",
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
     },
     {
       "id": "mac-dinh-chi",
@@ -17672,6 +17893,344 @@
       "lat": null,
       "lon": null,
       "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "quoc-van-giao-khoa-thu",
+      "slug": null,
+      "ten": "Quốc văn giáo khoa thư",
+      "ten_chuan": "quoc van giao khoa thu",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "luan-ly-giao-khoa-thu",
+      "slug": null,
+      "ten": "Luân lý giáo khoa thư",
+      "ten_chuan": "luan ly giao khoa thu",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "viet-nam-su-luoc-tran-trong-kim",
+      "slug": null,
+      "ten": "Việt Nam sử lược",
+      "ten_chuan": "viet nam su luoc",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "quoc-van-trich-diem",
+      "slug": null,
+      "ten": "Quốc văn trích diễm",
+      "ten_chuan": "quoc van trich diem",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "viet-nam-van-hoc-su-yeu",
+      "slug": null,
+      "ten": "Việt Nam văn học sử yếu",
+      "ten_chuan": "viet nam van hoc su yeu",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "viet-nam-thi-van-hop-tuyen",
+      "slug": null,
+      "ten": "Việt Nam thi văn hợp tuyển",
+      "ten_chuan": "viet nam thi van hop tuyen",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "co-hoc-tinh-hoa",
+      "slug": null,
+      "ten": "Cổ học tinh hoa",
+      "ten_chuan": "co hoc tinh hoa",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tuc-ngu-phong-dao-nguyen-van-ngoc",
+      "slug": null,
+      "ten": "Tục ngữ phong dao",
+      "ten_chuan": "tuc ngu phong dao",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "truyen-co-nuoc-nam",
+      "slug": null,
+      "ten": "Truyện cổ nước Nam",
+      "ten_chuan": "truyen co nuoc nam",
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 1,
+      "trang_thai": null
+    },
+    {
+      "id": "quoc-to-phap-thuan",
+      "slug": null,
+      "ten": "Quốc tộ (Vận nước)",
+      "ten_chuan": "quoc to van nuoc",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "cao-tat-thi-chung-man-giac",
+      "slug": null,
+      "ten": "Cáo tật thị chúng (Có bệnh bảo mọi người)",
+      "ten_chuan": "cao tat thi chung co benh bao moi nguoi",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "ngon-hoai-khong-lo",
+      "slug": null,
+      "ten": "Ngôn hoài (Tỏ lòng)",
+      "ten_chuan": "ngon hoai to long",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "cay-chuoi-nguyen-trai",
+      "slug": null,
+      "ten": "Cây chuối (Ba tiêu)",
+      "ten_chuan": "cay chuoi ba tieu",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "nhan-nguyen-binh-khiem",
+      "slug": null,
+      "ten": "Nhàn",
+      "ten_chuan": "nhan",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "moi-trau-ho-xuan-huong",
+      "slug": null,
+      "ten": "Mời trầu",
+      "ten_chuan": "moi trau",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "doc-tieu-thanh-ky-nguyen-du",
+      "slug": null,
+      "ten": "Độc Tiểu Thanh ký (Đọc truyện nàng Tiểu Thanh)",
+      "ten_chuan": "doc tieu thanh ky doc truyen nang tieu thanh",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "kieu-o-lau-ngung-bich-buon-trong",
+      "slug": null,
+      "ten": "Kiều ở lầu Ngưng Bích — tám câu «Buồn trông» (trích Truyện Kiều)",
+      "ten_chuan": "kieu o lau ngung bich tam cau buon trong trich truyen kieu",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "chieu-hom-nho-nha-thanh-quan",
+      "slug": null,
+      "ten": "Chiều hôm nhớ nhà",
+      "ten_chuan": "chieu hom nho nha",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "ban-den-choi-nha-nguyen-khuyen",
+      "slug": null,
+      "ten": "Bạn đến chơi nhà",
+      "ten_chuan": "ban den choi nha",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "khoc-duong-khue-nguyen-khuyen",
+      "slug": null,
+      "ten": "Khóc Dương Khuê (trích)",
+      "ten_chuan": "khoc duong khue trich",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 3,
+      "trang_thai": null
+    },
+    {
+      "id": "vinh-khoa-thi-huong-tu-xuong",
+      "slug": null,
+      "ten": "Vịnh khoa thi Hương (Lễ xướng danh khoa Đinh Dậu)",
+      "ten_chuan": "vinh khoa thi huong le xuong danh khoa dinh dau",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "song-lap-tu-xuong",
+      "slug": null,
+      "ten": "Sông Lấp",
+      "ten_chuan": "song lap",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "muon-lam-thang-cuoi-tan-da",
+      "slug": null,
+      "ten": "Muốn làm thằng Cuội",
+      "ten_chuan": "muon lam thang cuoi",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "chan-que-nguyen-binh",
+      "slug": null,
+      "ten": "Chân quê",
+      "ten_chuan": "chan que",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "mua-xuan-chin-han-mac-tu",
+      "slug": null,
+      "ten": "Mùa xuân chín",
+      "ten_chuan": "mua xuan chin",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "tong-biet-hanh-tham-tam",
+      "slug": null,
+      "ten": "Tống biệt hành",
+      "ten_chuan": "tong biet hanh",
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
       "trang_thai": null
     },
     {
@@ -89522,6 +90081,86 @@
         {
           "file": "literature/ca-dao-tuc-ngu.json",
           "id": "cd-ben-tre-khan-ran-dong-khoi",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "cong-cha-nhu-nui-thai-son",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "bau-oi-thuong-lay-bi-cung",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "nhieu-dieu-phu-lay-gia-guong",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "con-co-ma-di-an-dem",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "trau-oi-ta-bao-trau-nay",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "anh-em-nhu-the-tay-chan",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "mot-cay-lam-chang-nen-non",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "thang-bom-co-cai-quat-mo",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "ai-oi-bung-bat-com-day",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "len-non-moi-biet-non-cao",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "rau-tom-nau-voi-ruot-bau",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "ca-khong-an-muoi-ca-uon",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "di-mot-ngay-dang-hoc-mot-sang-khon",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "an-qua-nho-ke-trong-cay",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "la-lanh-dum-la-rach",
+          "ten": "van-hoc-dan-gian"
+        },
+        {
+          "file": "literature/ca-dao-tuc-ngu.json",
+          "id": "khong-thay-do-may-lam-nen",
           "ten": "van-hoc-dan-gian"
         }
       ]

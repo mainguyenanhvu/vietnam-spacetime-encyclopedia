@@ -34,7 +34,14 @@ const checkSources = (where, sources) => {
 };
 
 // --- Các tuyển tập dạng "poem" (chung schema)
-const POEM_FILES = ["tho-yeu-nuoc.json", "tac-pham-ho-chi-minh.json", "tho-ve-bac.json"];
+// `sgk-xua-tho.json` dùng chung lược đồ poem. Ràng buộc riêng của nó — toàn bộ
+// phải là public-domain — kiểm ở khối «Sách học ngày xưa» phía dưới.
+const POEM_FILES = [
+  "tho-yeu-nuoc.json",
+  "tac-pham-ho-chi-minh.json",
+  "tho-ve-bac.json",
+  "sgk-xua-tho.json",
+];
 for (const file of POEM_FILES) {
   const poemsPath = join(DIR, file);
   if (!existsSync(poemsPath)) continue;
@@ -180,6 +187,7 @@ const GIOI_THIEU_FILES = [
   "su-ky-dia-chi.json",
   "van-xuoi-hien-thuc-vung-mien.json",
   "tho-moi-lang-man.json",
+  "sach-hoc-xua.json",
 ];
 for (const file of GIOI_THIEU_FILES) {
   const p = join(DIR, file);
@@ -199,6 +207,38 @@ for (const file of GIOI_THIEU_FILES) {
     checkSources(w, a.sources);
   }
   console.log(`✅ ${file}: ${items.length} tác phẩm`);
+}
+
+// --- Sách học ngày xưa: CHỈ nhận tác phẩm đã hết thời hạn bảo hộ.
+// Chủ đề này in NGUYÊN VĂN thơ của tác giả đầu thế kỷ XX (Tản Đà, Hàn Mặc Tử,
+// Nguyễn Bính, Thâm Tâm…), nên ranh giới bản quyền là thứ dễ vượt nhất trong cả
+// kho. Điều 27 Luật Sở hữu trí tuệ: đời tác giả + 50 năm → tác giả mất từ 1975
+// trở về trước mới được in đủ bài. Chặn ngay ở mức dữ liệu thay vì trông chờ
+// người soạn nhớ.
+const NAM_HET_BAO_HO = 1975;
+for (const file of ["sgk-xua-tho.json", "sach-hoc-xua.json"]) {
+  const p = join(DIR, file);
+  if (!existsSync(p)) continue;
+  const { items } = JSON.parse(readFileSync(p, "utf8"));
+  for (const a of items) {
+    const w = `${file}/${a.id}`;
+    if (a.ban_quyen !== "public-domain")
+      fail(w, `ban_quyen="${a.ban_quyen}" — chủ đề «Sách học ngày xưa» chỉ nhận public-domain`);
+    if (a.chu_de !== "sach-hoc-xua")
+      fail(w, `chu_de="${a.chu_de}" — phải là "sach-hoc-xua" thì tab thư viện mới gom vào`);
+    // Năm mất đọc từ chuỗi tac_gia dạng "Tên (1912–1940)" hoặc "Tên (?–1119)".
+    // Không khớp thì bỏ qua: tác giả trung đại nhiều khi chỉ ghi thế kỷ, mà thế
+    // kỷ nào cũng đã quá 50 năm.
+    const m = /\((?:\?|\d{3,4})\s*[–-]\s*(\d{3,4})\)/.exec(String(a.tac_gia ?? ""));
+    if (m && Number(m[1]) > NAM_HET_BAO_HO)
+      fail(
+        w,
+        `tác giả mất năm ${m[1]} — còn trong thời hạn bảo hộ (đời + 50 năm). Chỉ được GIỚI THIỆU, đưa sang tho-moi-lang-man.json`,
+      );
+    for (const g of a.giai_nghia ?? [])
+      if (!g.tu || !g.nghia) fail(w, "giai_nghia thiếu tu/nghia");
+  }
+  console.log(`✅ ${file}: ${items.length} mục — public-domain, đúng chủ đề sach-hoc-xua`);
 }
 
 if (errors) {

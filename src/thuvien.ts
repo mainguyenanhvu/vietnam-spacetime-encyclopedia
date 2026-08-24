@@ -50,6 +50,15 @@ interface Poem {
   /** CỐ Ý KHÔNG render — chữ dặn người sửa dữ liệu, không phải chữ cho bạn đọc. */
   ghi_chu_bien_tap?: string;
   nhom?: "nktt" | "chuc-tet" | "trung-thu" | "tho" | "van" | "ton-nghi";
+  /** Bộ sách học ngày xưa đã in bài này (Quốc văn giáo khoa thư, Quốc văn
+   *  trích diễm, Việt Nam thi văn hợp tuyển…). Chỉ chủ đề `sach-hoc-xua` dùng. */
+  sach_xua?: string;
+  /**
+   * Từ khó → nghĩa, để bấm vào chữ lạ là hiện lời giải ngay tại chỗ. Sinh ra
+   * cho chế độ trẻ em: thơ cổ đầy chữ Hán-Việt («thái hư», «lữ thứ»), không
+   * giải nghĩa thì đứa trẻ đọc hết bài vẫn không hiểu gì.
+   */
+  giai_nghia?: Array<{ tu: string; nghia: string }>;
   sources: string[];
 }
 
@@ -73,6 +82,11 @@ const parsePoem = (raw: unknown): Poem => {
     ghi_chu_dich: str(r.ghi_chu_dich),
     ghi_chu_bien_tap: str(r.ghi_chu_bien_tap),
     nhom: oneOf(r.nhom, ["nktt", "chuc-tet", "trung-thu", "tho", "van", "ton-nghi"] as const, "tho"),
+    sach_xua: str(r.sach_xua),
+    giai_nghia: arr(r.giai_nghia, (x) => {
+      const g = rec(x);
+      return { tu: str(g.tu), nghia: str(g.nghia) };
+    }).filter((g) => g.tu && g.nghia),
     sources: strs(r.sources),
   };
 };
@@ -298,6 +312,10 @@ export interface ThuVienData {
   caDao: CaDao[];
   baiHat: BaiHat[];
   tuLieu: Poem[];
+  /** Thơ trong các bộ sách học ngày xưa — chủ đề `sach-hoc-xua`. */
+  thoSgkXua: Poem[];
+  /** Chính các bộ sách học ngày xưa, dạng giới thiệu — cùng chủ đề. */
+  sachHocXua: VanXuoi[];
   banDoCo: BanDoCo[];
 }
 
@@ -317,6 +335,7 @@ export async function loadLiterature(): Promise<ThuVienData> {
   const [
     chuDe, poems, hcmWorks, aboutHcm, vanXuoiHcm, anecdotes, hcm,
     caDao, baiHat, tuLieu, banDoCo, gioiThieu, suKy, vanXuoiVungMien, thoMoi,
+    thoSgkXua, sachHocXua,
   ] = await Promise.all([
     fetchJson("data/literature/_chu-de.json", itemsOf(parseChuDe)),
     fetchJson("data/literature/tho-yeu-nuoc.json", itemsOf(parsePoem)),
@@ -335,6 +354,9 @@ export async function loadLiterature(): Promise<ThuVienData> {
     // Thêm sau khi nhánh này tách ra: 11 tác phẩm Thơ mới, chủ đề `tho-moi`.
     // Thiếu dòng này thì tab «Thơ mới» không bao giờ hiện dù dữ liệu đã có.
     fetchJson("data/literature/tho-moi-lang-man.json", itemsOf(parseVanXuoi)),
+    // Chủ đề «Sách học ngày xưa»: thơ trích ra khỏi sách, và chính các bộ sách.
+    fetchJson("data/literature/sgk-xua-tho.json", itemsOf(parsePoem)),
+    fetchJson("data/literature/sach-hoc-xua.json", itemsOf(parseVanXuoi)),
   ]);
   literatureCache = {
     chuDe: chuDe?.items ?? [],
@@ -351,6 +373,8 @@ export async function loadLiterature(): Promise<ThuVienData> {
     caDao: caDao?.items ?? [],
     baiHat: baiHat?.items ?? [],
     tuLieu: tuLieu?.items ?? [],
+    thoSgkXua: thoSgkXua?.items ?? [],
+    sachHocXua: sachHocXua?.items ?? [],
     banDoCo: banDoCo?.items ?? [],
   };
   return literatureCache;
@@ -514,6 +538,18 @@ const nguonHtml = (ds: string[]): string =>
 
 const canhBaoHtml = (s: string): string => `<p class="lib-canh-bao">${esc(s)}</p>`;
 
+/**
+ * Bảng từ khó. Dùng `<details>` chứ không phải tooltip: tooltip đòi hover nên
+ * trên điện thoại — thiết bị chính của trẻ con — nó không tồn tại.
+ */
+const giaiNghiaHtml = (gs?: Array<{ tu: string; nghia: string }>): string =>
+  gs?.length
+    ? `<details class="lib-giai-nghia"><summary>💡 Từ khó trong bài (${gs.length})</summary>
+       <dl>${gs
+         .map((g) => `<dt>${esc(g.tu)}</dt><dd>${esc(g.nghia)}</dd>`)
+         .join("")}</dl></details>`
+    : "";
+
 const banQuyenHtml = (bq: string, dai = false): string =>
   bq === "cited-excerpt"
     ? `<p class="lib-ban-quyen">Bản quyền: tác phẩm còn được bảo hộ — ${
@@ -541,6 +577,7 @@ function mucTuPoem(p: Poem, chuDeMacDinh?: string): Muc {
     nguon: p.sources,
     than: () => `
       ${p.nhom === "ton-nghi" ? canhBaoHtml(CANH_BAO_TON_NGHI) : ""}
+      ${p.sach_xua ? `<p class="lib-sach-xua">📕 In trong: ${esc(p.sach_xua)}</p>` : ""}
       ${p.loi_binh ? `<p class="lib-loi-binh">${esc(p.loi_binh)}</p>` : ""}
       ${p.vi_sao_hay ? `<p class="lib-loi-binh"><b>Vì sao được xếp hạng cao:</b> ${esc(p.vi_sao_hay)}</p>` : ""}
       ${p.nguyen_van.length ? `<blockquote class="lib-tho">${dong(p.nguyen_van)}</blockquote>` : ""}
@@ -550,6 +587,7 @@ function mucTuPoem(p: Poem, chuDeMacDinh?: string): Muc {
           : ""
       }
       ${p.ghi_chu_dich ? `<p class="lib-phu">${esc(p.ghi_chu_dich)}</p>` : ""}
+      ${giaiNghiaHtml(p.giai_nghia)}
       ${banQuyenHtml(p.ban_quyen)}`,
   };
 }
@@ -739,6 +777,8 @@ function gomMuc(lib: ThuVienData): Muc[] {
     ...lib.suKy.map(mucTuVanXuoi),
     ...lib.vanXuoiVungMien.map(mucTuVanXuoi),
     ...lib.thoMoi.map(mucTuVanXuoi),
+    ...lib.thoSgkXua.map((p) => mucTuPoem(p)),
+    ...lib.sachHocXua.map(mucTuVanXuoi),
     ...lib.anecdotes.map(mucTuAnecdote),
     ...lib.caDao.map(mucTuCaDao),
     ...lib.baiHat.map(mucTuBaiHat),

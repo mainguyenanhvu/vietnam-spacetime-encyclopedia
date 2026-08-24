@@ -1,9 +1,9 @@
 {
   "tong": {
-    "so_file": 345,
-    "so_muc": 5550,
-    "so_byte": 10352937,
-    "ngay_sinh": "2026-08-11"
+    "so_file": 347,
+    "so_muc": 5593,
+    "so_byte": 10420973,
+    "ngay_sinh": "2026-08-24"
   },
   "files": [
     {
@@ -7248,8 +7248,8 @@
     {
       "file": "literature/_chu-de.json",
       "mien": "literature",
-      "so_muc": 13,
-      "byte": 3093,
+      "so_muc": 14,
+      "byte": 3540,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": null,
@@ -7259,7 +7259,7 @@
         "ten",
         "mo_ta"
       ],
-      "sha256": "c1ce6c432a2d6bdb6f7539820c91212aed453fd51dbd161910ae8a1888a70fb9",
+      "sha256": "1da912ecf79e270b3036b5d6c71285ec4fcfa92c8b8116dbda7c54f29faba567",
       "mo_ta": "Bộ chủ đề của thư viện."
     },
     {
@@ -7292,8 +7292,8 @@
     {
       "file": "literature/ca-dao-tuc-ngu.json",
       "mien": "literature",
-      "so_muc": 127,
-      "byte": 102230,
+      "so_muc": 143,
+      "byte": 115357,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7307,7 +7307,7 @@
         "nguon",
         "chu_de"
       ],
-      "sha256": "6c2449e41d2d9a9f026391e0cc47c587cf5ddaa0345465b7de6c7875974461bc",
+      "sha256": "d6bccd4dc5be60d7ba1657fc84f07cb9af66271a0e910bed6c47cc34ea3b048e",
       "mo_ta": "Ca dao & tục ngữ là sáng tác dân gian khuyết danh → public-domain, đăng toàn văn."
     },
     {
@@ -7406,6 +7406,62 @@
       ],
       "sha256": "77c9432647ba489ba93589b3d838fa2af94afa3d01c0a90e1b16048e9117aeb0",
       "mo_ta": "Tập «Nhật ký · Thư · Hồi ký chiến trường» — văn xuôi tư liệu của người trong cuộc, gồm 4 nhánh: nhật ký chiến trường (nk-), thư từ mặt trận và thư của lãnh tụ (thu-), hồi ký tướng lĩnh và cán bộ cách mạng (hk-), lời kể nhân chứng (ck-)."
+    },
+    {
+      "file": "literature/sach-hoc-xua.json",
+      "mien": "literature",
+      "so_muc": 9,
+      "byte": 17000,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": "sources",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ten",
+        "tac_gia",
+        "nam",
+        "the_loai",
+        "thoi_ky",
+        "ban_quyen",
+        "lien_quan_tinh",
+        "tom_tat",
+        "gioi_thieu",
+        "loi_binh",
+        "sources",
+        "chu_de",
+        "ghi_chu"
+      ],
+      "sha256": "8fab80e50060d7d7bb192652c8d97e78314c22b01ed8001f17fa055783a05f5c",
+      "mo_ta": "Những bộ sách người Việt dùng để học chữ, học sử, học làm người trước 1945 — sách giáo khoa tiểu học quốc ngữ, sách hợp tuyển văn thơ dùng trong nhà trường, và sách vỡ lòng chữ Hán."
+    },
+    {
+      "file": "literature/sgk-xua-tho.json",
+      "mien": "literature",
+      "so_muc": 17,
+      "byte": 37462,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": "sources",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ten",
+        "tac_gia",
+        "thoi_ky",
+        "the_loai",
+        "ban_quyen",
+        "sach_xua",
+        "lien_quan_tinh",
+        "loi_binh",
+        "vi_sao_hay",
+        "nguyen_van",
+        "giai_nghia",
+        "sources",
+        "chu_de"
+      ],
+      "sha256": "0e1e5151fbd9ba093d19dd9969dfade23aa8e5c4875937265cbfc9748a8aed9f",
+      "mo_ta": "Thơ trong các bộ sách học ngày xưa — Quốc văn giáo khoa thư, Quốc văn trích diễm, Việt Nam thi văn hợp tuyển và sách giáo khoa các thời."
     },
     {
       "file": "literature/su-ky-dia-chi.json",
