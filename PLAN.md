@@ -19,11 +19,11 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ## Trạng thái hiện tại — 2026-08-25
 
-**351 file dữ liệu · 5.683 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
+**351 file dữ liệu · 5.794 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
-**Sa đồ 240/241 trận** · **Hành trình lịch sử 22 chặng** (phân kỳ đủ 5 nhóm) · **22 mô hình nhân vật/hiện vật 3D**.
+**Sa đồ 240/241 trận** · **Hành trình lịch sử 22 chặng** (phân kỳ đủ 5 nhóm) · **22 mô hình nhân vật/hiện vật 3D**. Đợt 2026-08-25: mọi sa đồ kèm **bản đồ định vị** (silhouette 34 tỉnh + nhãn Hoàng Sa/Trường Sa + chấm vị trí trận) · **60 trích văn tịch nguyên văn / 30 trận** (khối «Văn tịch chép», sáng theo bước) · 22/24 trận nền trơn đã có địa hình theo nguồn · thuỷ triều sa đồ tổng quát hết là class chết.
 
 ⚠️ Khối này lỗi thời rất nhanh. Số cũ ghi 4.531 mục / 34 lớp / 12 cổng, sai cả ba, và tôi đã có lần đề xuất làm lại một việc đã xong vì tin vào nó. **Đếm lại trước khi trích.**
 
@@ -33,7 +33,7 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 | Cơ sở dữ liệu thống nhất + chỉ mục tĩnh | 🔄 đang làm |
 | Gom bảng "Muôn xã Muôn phường" | ⏸ chờ quyết định giấy phép |
 | Duyệt cổng §9 | ✅ 2026-08-11 nâng 1.413 (nguyên tắc chủ dự án); còn 16 giữ chủ ý + 155 video kênh ngoài nhà nước |
-| Ranh giới lịch sử 602–1887 | ⛔ chặn bởi nguồn — nhưng xem mục 4: đã mở lối VÙNG thay cho ĐƯỜNG BIÊN |
+| Ranh giới lịch sử 602–1887 | 🔄 lối VÙNG chạy tốt — **43/54 đơn vị có vùng** (2026-08-25); còn 5 đơn vị bí nguồn, xem mục 4 |
 | Vá lỗ hổng Tây Bắc trong lớp phủ | 🔄 đang làm — chặn ở GEOCODE chứ không phải nguồn |
 
 ---
@@ -316,24 +316,38 @@ RIÊNG (nguồn của mục chỉ chứng minh đơn vị CÓ THẬT, không ch�
 `khop` ∈ {gan-dung|mot-phan|toi-thieu}, tên tỉnh phải có thật, tệp dẫn xuất phải
 khớp byte. Thử ngược 4 lỗi → bắt đủ 4.
 
-**Đã tra được 10/54 đơn vị.** Nguồn: Cục Văn thư và Lưu trữ nhà nước · Trung tâm
-Lưu trữ quốc gia I · TTXVN/VietnamPlus · Báo Công Thương · Báo Thanh Niên.
+**Đã tra được 43/54 đơn vị (2026-08-25, ba sóng agent — trước đó 10, rồi 16).**
+Nguồn: Cục Văn thư và Lưu trữ nhà nước · TTXVN/VietnamPlus · cổng TTĐT tỉnh ·
+báo Đảng bộ tỉnh · Trang Báo cáo viên (Ban Tuyên giáo TW) · cand.vn · báo lớn.
+**Phương pháp thắng cuộc là CHIỀU NGƯỢC**: bài «danh xưng / lịch sử tỉnh X» chép
+«X ngày nay thời Lê thuộc thừa tuyên Y» — gom từng tỉnh dựng được ánh xạ cả
+thời kỳ, thay vì đi tìm một bảng đối chiếu đủ 31 tỉnh (không tồn tại).
+Đủ 13/13 thừa tuyên 1490 · 26/31 tỉnh Minh Mệnh · quận Giao Chỉ ĐÃ GỠ CHỐT
+(cand.vn «Cấp huyện trong lịch sử Việt Nam» liệt kê đủ 10 huyện → 10 tỉnh nay).
 
-⚠️ **CÒN 44 ĐƠN VỊ CHƯA CÓ ÁNH XẠ — đừng đoán cho đủ.** Cụ thể:
-· **quận Giao Chỉ** — nguồn chỉ ghi «vùng Bắc Bộ», không liệt kê ra tỉnh được.
-· **11/13 thừa tuyên Hồng Đức** — chính sử chép TÊN và LỴ SỞ, không chép phạm vi.
-· **22/31 tỉnh Minh Mệnh** — chưa tra. Không nguồn nhà nước nào có BẢNG đối chiếu
-  đủ 31 tỉnh xưa → tỉnh nay; đã thử Cục Lưu trữ, Tuổi Trẻ, Dân trí: đều chỉ liệt
-  kê TÊN. Phải đi từng tỉnh một, qua cổng TTĐT tỉnh hoặc loạt «Lịch sử tỉnh X»
-  của TTXVN.
-· **Tỉnh Tuyên Quang 1831 — HAI NGUỒN NHÀ NƯỚC VÊNH NHAU, giữ cả hai, chưa tô.**
-  Báo Tuyên Quang loạt «700 năm danh xưng Tuyên Quang» có chỗ chép tỉnh này gồm
-  cả Hà Giang cùng vài huyện Yên Bái và Cao Bằng; có chỗ chỉ chép phủ Yên Bình
-  với 2 huyện Hàm Yên, Sơn Dương và châu Chiêm Hoá.
+⚠️ **CÒN THIẾU THẬT SỰ (đừng đoán cho đủ)** — 11 mục trống gồm 6 mục loại
+kinh-đô/lăng (ĐIỂM, không cần vùng) và 5 đơn vị bí nguồn:
+· **Tĩnh Hải quân** — archives/nhandan chỉ chép TÊN 12 châu; phép gán «Ái Châu
+  = Thanh Hoá» chỉ có trên nguồn cấm. Mối còn lại: bachkhoatoanthu.vass.gov.vn
+  (ECONNREFUSED lượt thử đầu).
+· **Cao Bằng · Lạng Sơn 1831** — nguồn chỉ chép phủ/châu, không chép tỉnh nay;
+  baolangson.vn chặn fetch 403.
+· **Sơn Tây 1831** — chỉ chắc phần Vĩnh Phúc; phạm vi đầy đủ mọi vết đều dẫn về
+  Wikipedia. (Thừa tuyên Sơn Tây 1490 cũng chỉ tô được Phú Thọ vì cùng lý do —
+  cần cổng Vĩnh Phúc/Hà Nội bản đầy đủ.)
+· **Tuyên Quang 1831 — HAI NGUỒN NHÀ NƯỚC VÊNH NHAU, giữ cả hai, chưa tô** (báo
+  Tuyên Quang phương án rộng gồm Hà Giang + huyện Yên Bái, Cao Bằng; cổng tỉnh
+  phương án hẹp). Sóng 3 đã tìm nguồn thứ ba: không ra. Chờ Đại Nam nhất thống chí (Q4).
+· Ca vênh mới ghi nhận: **huyện Chu Diên (Giao Chỉ)** — baocaovien gán Hà Nam,
+  cand.vn gán nam Hà Tây cũ → Hà Nam không tô, đã ghi xung đột trong dữ liệu.
 · Ghi chú: Cục Lưu trữ chép 12 thừa tuyên năm 1466 theo tên CŨ (Bắc Giang, Nam
   Sách, Quốc Oai, An Bang, Thiên Trường…), kho dự án dùng tên SAU đợt đổi 1469
   (Kinh Bắc, Hải Dương, Sơn Tây, Yên Bang, Sơn Nam…). Cùng một tập đơn vị, hai
   bộ tên — nên ghi cả hai chứ đừng tưởng nguồn mâu thuẫn.
+· ✅ **Lỗ bất biến #3 của lớp Pháp thuộc ĐÃ VÁ 2026-08-25**: `vn-phap-thuoc-1887-1945.geojson`
+  nay có `ghi_chu` + 3 `sources` (Cục Lưu trữ ×2, Thanh Niên) — mốc gán Bắc Kỳ từ
+  Ninh Bình trở ra · Trung Kỳ Thanh Hoá–Bình Thuận · Nam Kỳ Đồng Nai–Hà Tiên, kèm
+  caveat Tây Nguyên/Hoàng triều Cương thổ (1950) cần nguồn riêng nếu muốn chi tiết.
 
 
 **Phán quyết nguồn** (chi tiết: `docs/ranh-gioi-1887-1895-phan-quyet.md`):
@@ -511,6 +525,30 @@ Chủ dự án giao 13 hạng mục. Tiến độ ở đây, chi tiết kỹ thu
 | 11 | Lớp phủ chia theo lĩnh vực/chủ đề/giai đoạn, **không chia theo giới tính** | ✅ **XONG 2026-08-05.** Lớp `nu-danh-nhan-lich-su` và nhóm «Nữ danh nhân · Dân tộc thiểu số» đã bỏ; 34 → 33 lớp. 38 mục về 8 lớp lĩnh vực. 4 vụ trùng người (Võ Thị Sáu, Út Tịch, Hoàng Thiều Hoa, Xuân Nương) tự kiểm xác nhận — không chép sang, không xoá bản cũ. Mục gộp «Mười nữ liệt sĩ Đồng Lộc» bỏ vì 9/10 đã có bản cá nhân; chuyển Võ Thị Tần sang cho đủ 10. Thêm `loai: bieu-tuong-khang-chien` cho 2 người chưa tra ra danh hiệu chính thức — gán `anh-hung-llvt` cho họ là khẳng định danh hiệu nhà nước mà nguồn không nói. |
 | 12 | UI lag khi di chuyển | 🔄 **Tìm ra một nguồn tải lớn, đã cắt; chưa tuyên bố hết lag.** Đo bằng cách bọc `queryRenderedFeatures` rồi ĐẾM (fps ở harness này vô nghĩa, nhưng số lời gọi thì tất định): 30 lần rê chuột → **240 lời gọi** khi không lớp phủ, **4.200** khi bật 33 lớp = **140 lần dò mỗi `mousemove`**, mà `mousemove` bắn ~60 lần/giây. Kéo bản đồ tốn **0** — chốt chữ ký khung nhìn vẫn tốt. Nghĩa là giật nằm ở RÊ CHUỘT chứ không phải kéo bản đồ; suốt trước đó tôi đo fps lúc kéo, tức đo nhầm chỗ. Nguyên nhân: `mouseenter`/`mouseleave` gắn theo TỪNG lớp, MapLibre dò riêng cho mỗi lượt đăng ký. Gộp về một handler + một lượt dò → **270 lời gọi**, ít hơn 15,6 lần. **Còn lại**: 33 nguồn GeoJSON + 33 lớp vòng tròn + 33 lớp icon vẫn là chi phí cấu trúc chưa đụng (gom nguồn / clustering / LOD), và cần đo trên máy có GPU thật mới biết người dùng cảm nhận ra sao. |
 | 13 | Nâng cấp bản đồ 3D | ✅ **XONG 2026-08-05** cùng #4/#5. Sửa thêm một lỗi thật bắt được bằng ẢNH DỰNG chứ không phải đọc mã: `queryRenderedFeatures` chỉ thấy thứ ĐÃ VẼ nên nhảy Hà Nội → Huế thì 38 điểm có vòng tròn mà 0 mô hình; `map.areTilesLoaded()` không bắt được vì ngay sau `jumpTo` nó vẫn trả `true`. Chữa bằng lượt quét bù 600 ms chỉ sau cú nhảy xa. |
+
+### Sa đồ 2026-08-25 — «đi kèm bản đồ + ký hiệu đẹp + theo văn tịch» (chỉ thị chủ dự án)
+
+✅ Đã ship trong phiên (5 commit `8f41b80`→`9efed1c`): bản đồ định vị mini trong
+Màn B (sinh từ ranh giới thật bởi `scripts/build_minimap_vn.mjs`, hằng chiếu
+build/runtime PHẢI khớp nhau — lệch là chấm rơi sai tỉnh không lỗi console);
+trường `trich_van_tich[]` + validator + khối «Văn tịch chép»; 22 trận nền trơn
+có địa hình theo nguồn; vá class chết `.tide-len/.tide-xuong`. Nghiệm thu Chrome
+thật từng phần, ảnh chụp lưu scratchpad phiên.
+
+Còn lại:
+- [ ] **Trích văn tịch cho ~210 trận còn lại.** Mạch đã chứng minh với 30 trận
+  đầu; brief mẫu nằm ở lịch sử phiên 2026-08-25. Kỷ luật: sách không rõ ghi
+  «Không rõ» kèm chú thích, KHÔNG bịa tên sách/số quyển; đoạn chỉ thấy trên
+  nguồn cấm thì bỏ. **L**
+- [ ] **`journey.ts` chưa phát `sado:mo-tran`** — nút «Xem sa đồ trận này» trong
+  chặng hành trình vẫn mở Màn A thay vì nhảy thẳng Màn B. battle.ts đã nghe sẵn
+  CustomEvent này (initBattle), chỉ thiếu bên phát. **S**
+- [ ] **Hợp nhất renderer `bach-dang-938` sang tong-quat** — nợ từ `225e0f6`:
+  bản vẽ tay thiếu cả 4 thủ pháp làm đẹp lẫn `veNenNhan()`; chuyển sang dữ liệu
+  tong-quat (nay đã có thuỷ triều sống) thì xoá được ~110 dòng. Đổi lại phải
+  dựng lại 8 lớp phần tử thành `phan_tu[]` và nghiệm thu đủ 5 bước. **M**
+- [ ] `dai-don-chi-hoa-1861` + 4 trận lô 2 còn khoảng thiếu trích đã ghi lý do
+  trong `_khong_tra_duoc` (scratchpad phiên) — bổ sung khi có nguồn mới. **S**
 
 - [ ] **CSS mồ côi sau khi làm lại Hành trình** (`style.css` ~984–1052): `.journey-narration`, `.journey-scene`, `.journey-context`, `.journey-battle-btn` không còn mã nào phát ra. **CỐ Ý CHƯA XOÁ**: `.journey-counter` và `.journey-stage` VẪN dùng, và `.journey-controls` nằm chung bộ chọn với `.battle-controls` (dòng 983 và 1712) nên xoá chọn lọc dễ vỡ vùng chạm 44px của sa đồ. Xoá thì phải nghiệm thu lại cả hai màn. **S**
 
