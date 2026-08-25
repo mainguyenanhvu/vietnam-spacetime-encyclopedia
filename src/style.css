@@ -2318,3 +2318,86 @@ input[type="range"] {
 .tk-nghia::before {
   content: "💡 ";
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   THANH CHIP — DẤU HIỆU CUỘN NGANG (2026-08-25)
+   Trước đây hàng chip khai `overflow-x: auto` rồi ẩn luôn thanh cuộn, nên
+   nó bị cắt cụt ở mép phải mà không có dấu hiệu nào cho biết còn nữa. Nay:
+   dải mờ ở mép + hai mũi tên + lăn dọc thành cuộn ngang (xem chip-bar.ts).
+   Thanh cuộn vẫn ẩn — dải mờ và mũi tên nói rõ hơn một vạch xám 4px.
+   ═══════════════════════════════════════════════════════════════════════ */
+#chip-khung {
+  flex: 1 0 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+/* #chip-bar nay nằm trong #chip-khung nên không tự chiếm hàng nữa. */
+#chip-khung > #chip-bar {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Dải mờ báo "còn nữa" — chỉ hiện đúng phía còn cuộn được. `mask-image` chứ
+   không phải lớp phủ màu: topbar có nền chuyển sắc, tô một khối đặc lên sẽ
+   thành vệt tối lệch màu. */
+#chip-khung.con-phai > #chip-bar {
+  mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent 100%);
+}
+#chip-khung.con-trai > #chip-bar {
+  mask-image: linear-gradient(to right, transparent 0, #000 2.5rem);
+}
+#chip-khung.con-trai.con-phai > #chip-bar {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 2.5rem,
+    #000 calc(100% - 2.5rem),
+    transparent 100%
+  );
+}
+
+.chip-mui {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: max(2.75rem, 44px);
+  min-height: max(2.75rem, 44px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--vien-nhan-ro);
+  border-radius: var(--bo-vien-tron);
+  background: var(--mat);
+  color: var(--brand-sau);
+  font-size: var(--co-lg);
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--bong-1);
+}
+.chip-mui[hidden] {
+  display: none;
+}
+.chip-mui-trai {
+  left: 0;
+}
+.chip-mui-phai {
+  right: 0;
+}
+.chip-mui:hover {
+  background: var(--nhan-mo);
+}
+.chip-mui:focus-visible {
+  outline: 3px solid var(--nhan);
+  outline-offset: 2px;
+}
+
+/* Chạm thì vuốt là đủ tự nhiên, mũi tên chỉ chiếm chỗ. Dải mờ vẫn giữ vì nó
+   là thứ nói "còn nữa" — vuốt được không có nghĩa là biết có gì để vuốt. */
+@media (hover: none) and (pointer: coarse) {
+  .chip-mui {
+    display: none !important;
+  }
+}

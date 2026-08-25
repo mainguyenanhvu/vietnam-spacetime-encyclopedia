@@ -59,7 +59,58 @@ export function initChipBar(): void {
           `<span class="chip-dem" hidden></span></button>`,
       )
       .join("");
-  topbar.appendChild(bar);
+  // Khung bọc: hai mũi tên nằm ngoài vùng cuộn, nếu không chúng cuộn theo
+  // và trôi khỏi màn hình đúng lúc cần tới nhất.
+  const khung = document.createElement("div");
+  khung.id = "chip-khung";
+  khung.innerHTML =
+    `<button type="button" class="chip-mui chip-mui-trai" aria-label="Cuộn nhóm lớp phủ sang trái" hidden>‹</button>` +
+    `<button type="button" class="chip-mui chip-mui-phai" aria-label="Cuộn nhóm lớp phủ sang phải" hidden>›</button>`;
+  khung.insertBefore(bar, khung.querySelector(".chip-mui-phai"));
+  topbar.appendChild(khung);
+
+  const muiTrai = khung.querySelector<HTMLButtonElement>(".chip-mui-trai");
+  const muiPhai = khung.querySelector<HTMLButtonElement>(".chip-mui-phai");
+
+  /**
+   * Bật/tắt mũi tên + dải mờ ở mép theo lượng còn cuộn được.
+   *
+   * Ngưỡng 4px chứ không phải 0: bề rộng bố cục là số thực, so bằng 0 thì mũi
+   * tên nhấp nháy ở đúng hai đầu rãnh.
+   */
+  const capNhatCuon = (): void => {
+    const conTrai = bar.scrollLeft > 4;
+    const conPhai = bar.scrollLeft + bar.clientWidth < bar.scrollWidth - 4;
+    if (muiTrai) muiTrai.hidden = !conTrai;
+    if (muiPhai) muiPhai.hidden = !conPhai;
+    khung.classList.toggle("con-trai", conTrai);
+    khung.classList.toggle("con-phai", conPhai);
+  };
+
+  khung.addEventListener("click", (e) => {
+    const mui = (e.target as HTMLElement).closest<HTMLButtonElement>(".chip-mui");
+    if (!mui) return;
+    // Cuộn 80% khung: chừa lại một chip đã thấy làm mốc mắt, đỡ mất phương hướng.
+    const buoc = bar.clientWidth * 0.8;
+    bar.scrollBy({ left: mui.classList.contains("chip-mui-trai") ? -buoc : buoc, behavior: "smooth" });
+  });
+
+  // Chuột bàn phím không có bánh xe ngang. Đổi lăn dọc thành cuộn ngang KHI
+  // hàng chip thật sự tràn — không thì cướp mất cú lăn của cả trang.
+  bar.addEventListener(
+    "wheel",
+    (e) => {
+      if (e.deltaY === 0 || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+      if (bar.scrollWidth <= bar.clientWidth) return;
+      e.preventDefault();
+      bar.scrollLeft += e.deltaY;
+    },
+    { passive: false },
+  );
+
+  bar.addEventListener("scroll", capNhatCuon, { passive: true });
+  if (typeof ResizeObserver !== "undefined") new ResizeObserver(capNhatCuon).observe(bar);
+  capNhatCuon();
 
   const capNhat = (): void => {
     let coLopBat = false;
@@ -99,6 +150,7 @@ export function initChipBar(): void {
     }
     const g = nhom.find((x) => x.id === btn.dataset.nhom);
     if (!g) return;
+    btn.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "smooth" });
     const cbs = g.ids.map(checkboxCua).filter((c): c is HTMLInputElement => c !== null);
     // Đang có lớp nào bật → tắt cả cụm; sạch trơn → bật cả cụm.
     const dich = !cbs.some((c) => c.checked);

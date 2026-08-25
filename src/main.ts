@@ -1740,6 +1740,7 @@ function buildTimeline(): void {
   });
   void initMocLichSu({
     namKy: NAM_MOC_KY,
+    tenKy: PERIODS.map((p) => p.nhan),
     namKet: NAM_KET_MOC,
     datPeriod: (i) => {
       daDoiThoiKy = true;

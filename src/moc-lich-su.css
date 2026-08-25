@@ -182,3 +182,67 @@
     height: 9px;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ĐỢT SỬA 2026-08-25 — "chọn theo mốc mà bản đồ không đổi"
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* Vạch GỘP CỤM: nhiều mốc quá sát nhau dồn về một vạch bấm được. Số lượng
+   KHÔNG chỉ dựa vào bề ngang (thị giác yếu không đọc được chênh lệch 1px) —
+   `title` liệt kê tên từng mốc và ô chọn trong note liệt kê đủ. */
+.moc-tick[data-n]:not([data-n="1"]) {
+  width: 5px;
+  border-radius: 2px 2px 0 0;
+}
+.moc-tick[data-n]:not([data-n="1"])::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  width: 3px;
+  height: 3px;
+  margin-left: -1.5px;
+  border-radius: 50%;
+  background: var(--moc-mau, var(--vien-nhan));
+}
+
+/* Ô chọn mốc — lối đi tới MỌI mốc của thời kỳ. Thời kỳ Đại Việt có 83 mốc;
+   hai nút ◂ ▸ một mình bắt người ta bấm 82 lần. */
+.moc-chon {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.35rem;
+  min-height: max(2.75rem, 44px);
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vua, 8px);
+  background: var(--mat-3);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+  cursor: pointer;
+}
+.moc-chon:focus-visible {
+  outline: 3px solid var(--nhan);
+  outline-offset: 2px;
+}
+
+/* Triều đại THẬT của năm đó — tra từ nien-hieu.json, độc lập với nấc thanh
+   trượt. Đây là chỗ vá lời nói sai "mốc 1789 thuộc Lê sơ Hồng Đức". */
+.moc-trieu {
+  margin: 0.2rem 0 0;
+  font-size: var(--co-xs);
+  color: var(--chu);
+}
+.moc-song-song {
+  color: var(--chu-mem);
+}
+
+/* Bản đồ đang hiện gì — nói thẳng chỗ vênh thay vì để người đọc tự đoán. */
+.moc-ban-do {
+  margin: 0.35rem 0 0;
+  padding-top: 0.3rem;
+  border-top: 1px dashed var(--vien);
+  font-size: var(--co-xs);
+  color: var(--chu-mem);
+}
