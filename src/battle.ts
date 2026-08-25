@@ -71,6 +71,19 @@ interface BattleStep {
   hien: LayerKey[];
 }
 
+/** Trích dẫn nguyên văn từ văn tịch/chính sử — hiển thị ở khối «Văn tịch chép».
+ *  `sach` ghi theo mẫu đã chốt: «Đại Việt sử ký toàn thư — Bản kỷ, quyển V»
+ *  (kỷ + quyển, KHÔNG URL); `nguon_trich` là nơi lấy được ĐOẠN trích (cổng nhà
+ *  nước / bản in) — hai nguồn này khác nhau và validator đòi cả hai. */
+interface TrichVanTich {
+  sach: string;
+  doan: string;
+  nguon_trich: string;
+  /** Gắn với bước diễn biến nào thì nêu id bước — khối trích sẽ sáng lên khi
+   *  người xem đứng ở bước đó. Vắng mặt = trích chung cho cả trận. */
+  buoc?: number;
+}
+
 interface Battle {
   ghi_chu?: string;
   id: string;
@@ -85,6 +98,8 @@ interface Battle {
   y_nghia: string;
   trang_thai: string;
   nguon: string[];
+  lien_quan_tinh?: string[];
+  trich_van_tich?: TrichVanTich[];
   // Nội chiến (Trịnh–Nguyễn, 1954–1975…) không dùng cặp màu "đúng/sai" —
   // xem token --sd-ta-*/--sd-doi-* trong sado.css. Vắng mặt = "ngoai-xam",
   // đúng với bach-dang-938.json hiện tại (chưa có trường này).
@@ -107,6 +122,10 @@ interface BattleIndexItem {
   ket_qua?: string;
   trang_thai?: string;
   nguon?: string[];
+  /** Toạ độ từ lớp phủ chien-dich-tran-danh — nguồn định vị duy nhất của sa đồ. */
+  lat?: number;
+  lon?: number;
+  do_tin_cay_toa_do?: string;
 }
 
 const INDEX_URL = `${import.meta.env.BASE_URL}data/overlays/chien-dich-tran-danh.json`;
@@ -119,6 +138,91 @@ const battleDetailUrl = (id: string): string =>
 
 let saDoIds: ReadonlySet<string> = new Set<string>();
 const battleReady = (id: string): boolean => saDoIds.has(id);
+
+// ── Bản đồ định vị mini — «sa đồ phải đi kèm bản đồ» ─────────────────────
+// Silhouette 34 tỉnh + 5 đảo/quần đảo chủ quyền, sinh sẵn bởi
+// scripts/build_minimap_vn.mjs từ ranh giới thật. Sa đồ vẫn là hình minh hoạ
+// không tỉ lệ; minimap trả lời câu «trận này ở ĐÂU trên đất nước» bằng toạ độ
+// đã soát của lớp phủ chien-dich-tran-danh — không bịa thêm hình học nào.
+const MINIMAP_URL = `${import.meta.env.BASE_URL}data/geo/vn-minimap.json`;
+
+interface MiniMap {
+  w: number;
+  h: number;
+  tinh: { slug: string; ten: string; d: string }[];
+  dao: { ten: string; d: string; x: number; y: number }[];
+}
+
+// Hằng chiếu PHẢI khớp scripts/build_minimap_vn.mjs: silhouette được chiếu
+// lúc build, còn chấm vị trí trận chiếu lúc chạy — hai phép chiếu lệch nhau
+// là chấm rơi sai tỉnh mà không lỗi nào nổ ra.
+const MM_LON_MIN = 101.8;
+const MM_LAT_MIN = 4.6;
+const MM_LAT_MAX = 23.7;
+const MM_K = 560 / (MM_LAT_MAX - MM_LAT_MIN);
+const MM_CO_LAT = Math.cos((((MM_LAT_MIN + MM_LAT_MAX) / 2) * Math.PI) / 180);
+
+let miniMap: MiniMap | null | undefined; // undefined = chưa thử · null = nạp hỏng
+async function ensureMiniMap(): Promise<MiniMap | null> {
+  if (miniMap !== undefined) return miniMap;
+  try {
+    const res = await fetch(MINIMAP_URL);
+    if (!res.ok) throw new Error(String(res.status));
+    miniMap = (await res.json()) as MiniMap;
+  } catch {
+    miniMap = null; // minimap hỏng KHÔNG được kéo sập sa đồ
+  }
+  return miniMap;
+}
+
+function miniMapSvg(mm: MiniMap, item: BattleIndexItem | undefined, tinhLienQuan: string[]): string {
+  const lienQuan = new Set(tinhLienQuan);
+  const tinh = mm.tinh
+    .map(
+      (t) =>
+        `<path class="sd-mm-tinh${lienQuan.has(t.slug) ? " sd-mm-lien-quan" : ""}" d="${t.d}"><title>${esc(t.ten)}</title></path>`,
+    )
+    .join("");
+  // 🔴 Bất biến #1: đảo/quần đảo chủ quyền vẽ ở MỌI bản đồ — kể cả bản đồ
+  // định vị bé. Hai quần đảo mang nhãn chữ, ba đảo còn lại có chấm khuếch đại
+  // vì hình học thật ở cỡ này nhỏ hơn 1px.
+  const dao = mm.dao
+    .map((dv) => {
+      const nhan = dv.ten.startsWith("Quần đảo")
+        ? `<text class="sd-mm-nhan-dao" x="${dv.x}" y="${dv.y + 16}" text-anchor="middle">${esc(dv.ten.replace("Quần đảo ", "QĐ. "))}</text>`
+        : "";
+      return `<path class="sd-mm-dao" d="${dv.d}"/><circle class="sd-mm-dao-cham" cx="${dv.x}" cy="${dv.y}" r="3.5"/>${nhan}`;
+    })
+    .join("");
+  let diem = "";
+  if (item && typeof item.lat === "number" && typeof item.lon === "number") {
+    const x = Math.round((item.lon - MM_LON_MIN) * MM_K * MM_CO_LAT * 10) / 10;
+    const y = Math.round((MM_LAT_MAX - item.lat) * MM_K * 10) / 10;
+    // r tính theo viewBox 449×560 nhưng minimap chỉ hiện ~148px — chấm nhỏ hơn
+    // r=10 là biến mất trên màn hình thật (đã soi ảnh chụp).
+    diem = `<circle class="sd-mm-diem-quang" cx="${x}" cy="${y}" r="22"/><circle class="sd-mm-diem" cx="${x}" cy="${y}" r="10"/>`;
+  }
+  return `<svg class="sd-mm-svg" viewBox="0 0 ${mm.w} ${mm.h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Vị trí trận đánh trên bản đồ Việt Nam">${tinh}${dao}${diem}</svg>`;
+}
+
+/** Điền khối «vị trí» sau khi minimap nạp xong. Panel có thể đã chuyển sang
+ *  trận khác trong lúc chờ fetch — kiểm `data-battle` sau await, điền nhầm
+ *  trận là bản đồ nói dối mà console vẫn sạch. */
+async function dienViTri(battleId: string, tinhLienQuan: string[]): Promise<void> {
+  const mm = await ensureMiniMap();
+  if (!mm) return;
+  const host = document.getElementById("sd-vi-tri");
+  if (!host || host.dataset["battle"] !== battleId) return;
+  const item = (indexItems ?? []).find((it) => it.id === battleId);
+  const coDiem = item && typeof item.lat === "number" && typeof item.lon === "number";
+  if (!coDiem && tinhLienQuan.length === 0) return; // không có gì để chỉ — đừng hiện khung rỗng
+  const tinCay =
+    item?.do_tin_cay_toa_do && item.do_tin_cay_toa_do !== "cao"
+      ? " · vị trí ước theo nguồn"
+      : "";
+  host.innerHTML = `${miniMapSvg(mm, coDiem ? item : undefined, tinhLienQuan)}<p class="sd-mm-chu-thich muted">Vị trí trên bản đồ Việt Nam hôm nay${tinCay}</p>`;
+  host.hidden = false;
+}
 
 let indexItems: BattleIndexItem[] | null = null;
 let currentBattle: Battle | null = null;
@@ -231,11 +335,14 @@ function renderBasicDetail(content: HTMLElement, item: BattleIndexItem): void {
     <header class="sd-head">
       <h2 class="sd-title">⚔️ ${esc(item.ten)} ${draftBadge}</h2>
       <p class="sd-index-note muted">Chưa có sa đồ diễn biến từng bước cho trận này — đang biên soạn dần. Dưới đây là thông tin cơ bản đã có.</p>
-      <dl class="sd-meta">
-        ${item.chi_huy ? `<div><dt>Chỉ huy</dt><dd>${esc(item.chi_huy)}</dd></div>` : ""}
-        ${item.dia_diem ? `<div><dt>Địa điểm</dt><dd>${esc(item.dia_diem)}</dd></div>` : ""}
-        <div><dt>Năm</dt><dd>${esc(item.nam_hien_thi ?? String(item.nam))}</dd></div>
-      </dl>
+      <div class="sd-meta-hang">
+        <dl class="sd-meta">
+          ${item.chi_huy ? `<div><dt>Chỉ huy</dt><dd>${esc(item.chi_huy)}</dd></div>` : ""}
+          ${item.dia_diem ? `<div><dt>Địa điểm</dt><dd>${esc(item.dia_diem)}</dd></div>` : ""}
+          <div><dt>Năm</dt><dd>${esc(item.nam_hien_thi ?? String(item.nam))}</dd></div>
+        </dl>
+        <div class="sd-vi-tri" id="sd-vi-tri" data-battle="${esc(item.id)}" hidden></div>
+      </div>
     </header>
     ${item.mo_ta ? `<div class="sd-narrative"><p>${esc(item.mo_ta)}</p></div>` : ""}
     ${item.ket_qua ? `<div class="sd-outcome"><p><b>🏁 Kết quả:</b> ${esc(item.ket_qua)}</p></div>` : ""}
@@ -243,6 +350,36 @@ function renderBasicDetail(content: HTMLElement, item: BattleIndexItem): void {
   </div>`;
 
   document.getElementById("sd-back")?.addEventListener("click", () => renderIndex(content));
+  void dienViTri(item.id, []);
+}
+
+// ── Khối «Văn tịch chép» — trích nguyên văn chính sử ─────────────────────
+
+function vanTichHtml(b: Battle): string {
+  const ds = b.trich_van_tich ?? [];
+  if (ds.length === 0) return "";
+  const items = ds
+    .map(
+      (t) => `<figure class="sd-vt-item"${typeof t.buoc === "number" ? ` data-buoc="${t.buoc}"` : ""}>
+      <blockquote class="sd-vt-doan">${nhamNhayVt(t.doan)}</blockquote>
+      <figcaption class="sd-vt-nguon">— ${esc(t.sach)}${typeof t.buoc === "number" ? ` <span class="sd-vt-buoc">bước ${t.buoc}</span>` : ""}
+        <span class="sd-vt-xuat-xu muted">Dẫn theo: ${esc(t.nguon_trich)}</span>
+      </figcaption>
+    </figure>`,
+    )
+    .join("");
+  return `<div class="sd-van-tich">
+    <h3 class="sd-vt-title">📜 Văn tịch chép</h3>
+    ${items}
+  </div>`;
+}
+
+/** Đoạn trích đặt trong dấu « » — nhưng nếu người soạn đã tự gõ « » ở đầu
+ *  cuối thì đừng bọc đôi. */
+function nhamNhayVt(doan: string): string {
+  const s = doan.trim();
+  const daCo = s.startsWith("«") && s.endsWith("»");
+  return daCo ? esc(s) : `«${esc(s)}»`;
 }
 
 // ── Ký hiệu dùng chung cho mọi sa đồ ──────────────────────────────────────
@@ -946,6 +1083,13 @@ function applyStep(content: HTMLElement): void {
     dot.textContent = idx < stepIdx ? "✓" : String(idx + 1);
   });
 
+  // Khối văn tịch: đoạn trích gắn với bước đang xem thì sáng lên. Không ẩn
+  // các đoạn khác — người đọc vẫn thấy toàn cảnh tư liệu.
+  content.querySelectorAll<HTMLElement>(".sd-vt-item").forEach((el) => {
+    const gan = el.dataset["buoc"];
+    el.classList.toggle("sd-vt-active", gan !== undefined && Number(gan) === step.id);
+  });
+
   // Số phần tử hiện đổi theo từng bước, nên bố cục nhãn phải tính lại theo
   // từng bước — tính một lần lúc dựng thì thuật toán giữ chỗ cho cả nhãn của
   // lớp đang ẩn và đẩy nhãn đang hiện văng khỏi khung.
@@ -983,12 +1127,15 @@ function renderFullDetail(content: HTMLElement): void {
     <header class="sd-head">
       <h2 class="sd-title">⚔️ ${esc(b.ten)} ${draftBadge}</h2>
       <p class="sa-do-disclaimer">⚠️ ${esc(b.sa_do_ghi_chu)}</p>
-      <dl class="sd-meta">
-        ${b.chi_huy ? `<div><dt>Chỉ huy</dt><dd>${esc(b.chi_huy)}</dd></div>` : ""}
-        ${b.doi_thu ? `<div><dt>Đối thủ</dt><dd>${esc(b.doi_thu)}</dd></div>` : ""}
-        ${b.dia_diem ? `<div><dt>Địa điểm</dt><dd>${esc(b.dia_diem)}</dd></div>` : ""}
-        <div><dt>Năm</dt><dd>${esc(String(b.nam))}</dd></div>
-      </dl>
+      <div class="sd-meta-hang">
+        <dl class="sd-meta">
+          ${b.chi_huy ? `<div><dt>Chỉ huy</dt><dd>${esc(b.chi_huy)}</dd></div>` : ""}
+          ${b.doi_thu ? `<div><dt>Đối thủ</dt><dd>${esc(b.doi_thu)}</dd></div>` : ""}
+          ${b.dia_diem ? `<div><dt>Địa điểm</dt><dd>${esc(b.dia_diem)}</dd></div>` : ""}
+          <div><dt>Năm</dt><dd>${esc(String(b.nam))}</dd></div>
+        </dl>
+        <div class="sd-vi-tri" id="sd-vi-tri" data-battle="${esc(b.id)}" hidden></div>
+      </div>
     </header>
 
     <div class="sd-stage-wrap">
@@ -1012,6 +1159,7 @@ function renderFullDetail(content: HTMLElement): void {
       <h3 id="battle-step-title"></h3>
       <p id="battle-step-desc"></p>
     </div>
+    ${vanTichHtml(b)}
 
     <div class="sd-outcome">
       ${b.ket_qua ? `<p><b>🏁 Kết quả:</b> ${esc(b.ket_qua)}</p>` : ""}
@@ -1047,6 +1195,7 @@ function renderFullDetail(content: HTMLElement): void {
   });
 
   applyStep(content);
+  void dienViTri(b.id, b.lien_quan_tinh ?? []);
 
   // Nền chữ + gỡ nhãn chồng nhau. Phải chạy SAU khi trình duyệt dựng xong
   // font, vì bề rộng chữ chỉ đo được lúc đó — `requestAnimationFrame` là mốc

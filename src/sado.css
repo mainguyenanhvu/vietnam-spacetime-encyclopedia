@@ -598,6 +598,154 @@
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
 }
 
+/* ── Thuỷ triều trên sa đồ tổng quát ───────────────────────────────────────
+   applyStep() gắn .tide-len/.tide-xuong lên .sd-svg từ trường buoc[].thuy_trieu
+   (bach-dang-981, bach-dang-1288). Triều lên: sông PHÌNH ra; triều xuống: sông
+   RÚT lại + dòng chảy chậm mờ. Trước 2026-08-25 hai class này là class chết —
+   chỉ badge chữ đổi, mực nước đứng im. */
+.sd-song-mep,
+.sd-song-long,
+.sd-song-dong {
+  transition:
+    stroke-width var(--dur-vua) var(--ease),
+    opacity var(--dur-vua) var(--ease);
+}
+.sd-svg.tide-len .sd-song-mep {
+  stroke-width: 40;
+}
+.sd-svg.tide-len .sd-song-long {
+  stroke-width: 33;
+}
+.sd-svg.tide-xuong .sd-song-mep {
+  stroke-width: 22;
+}
+.sd-svg.tide-xuong .sd-song-long {
+  stroke-width: 16;
+}
+.sd-svg.tide-xuong .sd-song-dong {
+  opacity: 0.45;
+}
+
+/* ── Bản đồ định vị mini — «trận này ở đâu trên đất nước» ──────────────────
+   Silhouette 34 tỉnh từ ranh giới thật (vn-minimap.json); đảo/quần đảo chủ
+   quyền LUÔN vẽ — bất biến #1 áp cho mọi bản đồ, kể cả bản đồ bé. Mọi màu
+   phái sinh token, không hex mới. */
+.sd-meta-hang {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.sd-meta-hang .sd-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.sd-vi-tri {
+  flex: 0 0 148px;
+  text-align: center;
+}
+.sd-mm-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.sd-mm-tinh {
+  fill: color-mix(in srgb, var(--chu-mem) 16%, var(--mat-3));
+  stroke: var(--mat);
+  stroke-width: 0.8;
+}
+.sd-mm-lien-quan {
+  fill: color-mix(in srgb, var(--sd-ta-nen) 55%, var(--mat-3));
+  stroke: var(--sd-ta-vien);
+  stroke-width: 1.2;
+}
+.sd-mm-dao {
+  fill: color-mix(in srgb, var(--chu-mem) 40%, var(--mat-3));
+  stroke: none;
+}
+.sd-mm-dao-cham {
+  fill: var(--chu-mem);
+}
+.sd-mm-nhan-dao {
+  font-size: 19px;
+  fill: var(--chu-mem);
+  paint-order: stroke fill;
+  stroke: var(--mat);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.sd-mm-diem {
+  fill: var(--sd-doi-vien);
+  stroke: var(--mat);
+  stroke-width: 2;
+}
+.sd-mm-diem-quang {
+  fill: color-mix(in srgb, var(--sd-doi-vien) 28%, transparent);
+}
+.sd-mm-chu-thich {
+  margin: 4px 0 0;
+  font-size: var(--co-xs, 0.72rem);
+  line-height: 1.35;
+}
+@media (max-width: 560px) {
+  .sd-meta-hang {
+    flex-direction: column;
+  }
+  .sd-vi-tri {
+    flex-basis: auto;
+    width: 148px;
+    align-self: center;
+  }
+}
+
+/* ── Khối «Văn tịch chép» — trích nguyên văn chính sử ──────────────────────
+   Kiểu trang sách: viền trái đậm + nền giấy nhạt. Đoạn gắn với bước đang xem
+   (.sd-vt-active) sáng lên bằng nền + viền, không dùng màu phe. */
+.sd-van-tich {
+  margin-top: 14px;
+}
+.sd-vt-title {
+  font-size: var(--co-md, 1rem);
+  margin: 0 0 8px;
+}
+.sd-vt-item {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--chu-mem);
+  border-radius: 0 8px 8px 0;
+  background: color-mix(in srgb, var(--chu-mem) 7%, var(--mat));
+  transition:
+    background-color var(--dur-vua) var(--ease),
+    border-color var(--dur-vua) var(--ease);
+}
+.sd-vt-active {
+  border-left-color: var(--tin-chu);
+  background: color-mix(in srgb, var(--tin-nen) 55%, var(--mat));
+}
+.sd-vt-doan {
+  margin: 0;
+  font-style: italic;
+  line-height: 1.55;
+}
+.sd-vt-nguon {
+  margin-top: 6px;
+  font-size: var(--co-sm, 0.85rem);
+}
+.sd-vt-buoc {
+  display: inline-block;
+  padding: 0 7px;
+  border-radius: 999px;
+  font-style: normal;
+  font-size: var(--co-xs, 0.72rem);
+  background: var(--tin-nen);
+  color: var(--tin-chu);
+}
+.sd-vt-xuat-xu {
+  display: block;
+  font-size: var(--co-xs, 0.72rem);
+  margin-top: 2px;
+  overflow-wrap: anywhere;
+}
+
 /* Người dùng tắt hiệu ứng chuyển động: dòng chảy dừng hẳn (killswitch toàn
    cục của theme.css ép animation-duration 0.01ms, nhưng khai thẳng ở đây cho
    chắc), và phần tử hiện ngay không bung. */
@@ -610,5 +758,11 @@
   }
   .sd-layer-hidden {
     transform: none;
+  }
+  .sd-song-mep,
+  .sd-song-long,
+  .sd-song-dong,
+  .sd-vt-item {
+    transition: none;
   }
 }

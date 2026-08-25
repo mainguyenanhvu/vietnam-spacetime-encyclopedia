@@ -1,8 +1,8 @@
 {
   "tong": {
-    "so_file": 350,
-    "so_muc": 5742,
-    "so_byte": 10663199,
+    "so_file": 351,
+    "so_muc": 5761,
+    "so_byte": 10810006,
     "ngay_sinh": "2026-08-25"
   },
   "files": [
@@ -7164,13 +7164,13 @@
       "file": "geo/don-vi-hanh-chinh-xua.json",
       "mien": "geo",
       "so_muc": 0,
-      "byte": 64382,
+      "byte": 77677,
       "kieu_boc_ngoai": "FeatureCollection",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": "sources",
       "phu_nguon_cap_muc_pct": 0,
       "truong_pho_bien": [],
-      "sha256": "cfb7ea63230293890092a2a2a81119bc1870b76207e5016fb2451136a7aec8fb",
+      "sha256": "899e82239152a86ad7a106ea2d85320110b77a44bcb87b8a20019434dd00c77e",
       "mo_ta": "ĐƠN VỊ HÀNH CHÍNH QUA CÁC THỜI KỲ — quận · châu · phủ · lộ · trấn · thừa tuyên · tỉnh."
     },
     {
@@ -7192,10 +7192,23 @@
       "mo_ta": "Địa hình: SÔNG dạng LineString (đường sông nhìn thấy), NÚI dạng Point (tam giác)."
     },
     {
+      "file": "geo/vn-minimap.json",
+      "mien": "geo",
+      "so_muc": 0,
+      "byte": 67970,
+      "kieu_boc_ngoai": "FeatureCollection",
+      "truong_nguon_cap_muc": null,
+      "truong_nguon_cap_file": "nguon",
+      "phu_nguon_cap_muc_pct": 0,
+      "truong_pho_bien": [],
+      "sha256": "129fc7e89835acbc467e5b349890bb19ad042d4e9dd756e7da7a15f0c9ee8d84",
+      "mo_ta": "TỆP SINH RA từ scripts/build_minimap_vn.mjs — đừng sửa tay."
+    },
+    {
       "file": "geo/vung-don-vi-xua.geojson",
       "mien": "geo",
-      "so_muc": 44,
-      "byte": 63596,
+      "so_muc": 63,
+      "byte": 129138,
       "kieu_boc_ngoai": "FeatureCollection",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": null,
@@ -7208,7 +7221,7 @@
         "khop",
         "tinh_63"
       ],
-      "sha256": "1d4f0dcb0dfa1f3a61d782a2bb71daf3d8293896a1701805a4723fc61b346820",
+      "sha256": "0765d77f3caaa89bfd0351e253780809b5407cf5e81953b1fe19e9bfdf21bea1",
       "mo_ta": "TỆP SINH RA, đừng sửa tay — chạy scripts/build_vung_don_vi_xua.mjs."
     },
     {

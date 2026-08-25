@@ -54,6 +54,28 @@ for (const file of files) {
   if (!Array.isArray(b.nguon) || b.nguon.length === 0) fail(w, "thiếu nguon[]");
   else if (!b.nguon.some((s) => !isWiki(s)))
     fail(w, "TẤT CẢ nguồn đều là wiki — cần >=1 nguồn chính sử");
+  // Trích văn tịch (nếu có): đoạn trích phải nêu SÁCH (kỷ + quyển, không URL)
+  // và NƠI LẤY đoạn trích — hai nguồn khác nhau, thiếu một là trích không kiểm
+  // được. `buoc` (nếu khai) phải trỏ vào một bước có thật.
+  if (b.trich_van_tich !== undefined) {
+    if (!Array.isArray(b.trich_van_tich)) fail(w, "trich_van_tich phải là mảng");
+    else {
+      const buocIds = new Set((b.buoc ?? []).map((s) => s.id));
+      b.trich_van_tich.forEach((t, i) => {
+        const wi = `${w} trich[${i}]`;
+        if (!t.sach) fail(wi, "thiếu sach");
+        else if (/https?:\/\//i.test(t.sach))
+          fail(wi, "sach không được kèm URL — mẫu «Tên sách — kỷ, quyển» (URL để ở nguon_trich)");
+        if (!t.doan || String(t.doan).trim().length < 20)
+          fail(wi, "doan trích phải ≥20 ký tự — trích cụt không kiểm được");
+        if (!t.nguon_trich) fail(wi, "thiếu nguon_trich — nơi lấy được đoạn trích");
+        for (const s of [t.sach, t.doan, t.nguon_trich])
+          if (s && isWiki(String(s))) fail(wi, "dính nguồn wiki");
+        if (t.buoc !== undefined && !buocIds.has(t.buoc))
+          fail(wi, `buoc ${t.buoc} không có trong buoc[] của trận`);
+      });
+    }
+  }
   if (!errors) console.log(`✅ ${file}: ${b.buoc.length} bước`);
 }
 
