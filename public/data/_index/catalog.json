@@ -1,8 +1,8 @@
 {
   "tong": {
-    "so_file": 348,
-    "so_muc": 5609,
-    "so_byte": 10456713,
+    "so_file": 349,
+    "so_muc": 5604,
+    "so_byte": 10493430,
     "ngay_sinh": "2026-08-25"
   },
   "files": [
@@ -7142,8 +7142,8 @@
     {
       "file": "geo/co-truong-viet-co.json",
       "mien": "geo",
-      "so_muc": 7,
-      "byte": 18794,
+      "so_muc": 2,
+      "byte": 4129,
       "kieu_boc_ngoai": "FeatureCollection",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -7157,8 +7157,21 @@
         "ghi_chu",
         "nguon"
       ],
-      "sha256": "1e3d2a63091a74f3acae63c14d2576cbb573723a01972095f8e68d59518d25d7",
-      "mo_ta": "CƯƠNG VỰC các nhà nước Việt cổ."
+      "sha256": "ecdd79110c96d6db68e204eb8129077a26ae89d343fbf7d8b0329ca57819d9af",
+      "mo_ta": "Địa điểm gốc của các nhà nước Việt cổ."
+    },
+    {
+      "file": "geo/don-vi-hanh-chinh-xua.json",
+      "mien": "geo",
+      "so_muc": 0,
+      "byte": 51382,
+      "kieu_boc_ngoai": "FeatureCollection",
+      "truong_nguon_cap_muc": null,
+      "truong_nguon_cap_file": "sources",
+      "phu_nguon_cap_muc_pct": 0,
+      "truong_pho_bien": [],
+      "sha256": "3f0505b0121e23710a48f7762e1f36b0b9bcfb0924e100a8dd7200f283727e2a",
+      "mo_ta": "ĐƠN VỊ HÀNH CHÍNH QUA CÁC THỜI KỲ — quận · châu · phủ · lộ · trấn · thừa tuyên · tỉnh."
     },
     {
       "file": "geo/song-nui.json",

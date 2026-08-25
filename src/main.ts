@@ -27,7 +27,7 @@ import { initQuocGia } from "./quocgia";
 import { initTimeline } from "./timeline";
 import { initMocLichSu, capNhatMoc } from "./moc-lich-su";
 import { initThuVien, loadLiterature, htmlVanThoTinh } from "./thuvien";
-import { esc } from "./util/html";
+import { esc, sourcesHtml } from "./util/html";
 import { fetchJson } from "./util/fetch";
 import { str, num, strs, rec, arr, itemsOf } from "./types/parse";
 import {
@@ -84,25 +84,28 @@ const ERAS: Era[] = [
 //   kind "admin"    = ranh giới hành chính có sẵn   (ref = chỉ số trong ERAS)
 //   kind "ten"      = chỉ hiện TÊN NƯỚC + năm (đường biên chính xác đang tra nguồn — Phase 2b)
 interface Period {
+  /** Khoá ỔN ĐỊNH nối với `ky_id` của dữ liệu đơn vị hành chính xưa.
+   *  Cố ý KHÔNG dùng chỉ số mảng: thêm/bớt một thời kỳ là lệch toàn bộ dữ liệu. */
+  id: string;
   ten_nuoc: string;
   nhan: string;
   kind: "cuongvuc" | "admin" | "ten";
   ref?: string | number;
 }
 const PERIODS: Period[] = [
-  { ten_nuoc: "Xích Quỷ", nhan: "Xích Quỷ · huyền sử (~2879 TCN)", kind: "cuongvuc", ref: "xich-quy" },
-  { ten_nuoc: "Văn Lang", nhan: "Văn Lang · Hùng Vương (~700–258 TCN)", kind: "cuongvuc", ref: "van-lang" },
-  { ten_nuoc: "Âu Lạc", nhan: "Âu Lạc · An Dương Vương (257–179 TCN)", kind: "cuongvuc", ref: "au-lac" },
-  { ten_nuoc: "Nam Việt", nhan: "Nam Việt · nhà Triệu (204–111 TCN)", kind: "ten" },
-  { ten_nuoc: "Giao Chỉ – Giao Châu", nhan: "Bắc thuộc I–II · Giao Chỉ (111 TCN–544)", kind: "ten" },
-  { ten_nuoc: "Vạn Xuân", nhan: "Vạn Xuân · Lý Nam Đế (544–602)", kind: "cuongvuc", ref: "van-xuan" },
-  { ten_nuoc: "Tĩnh Hải quân", nhan: "Bắc thuộc III → Tự chủ (602–938)", kind: "ten" },
-  { ten_nuoc: "Đại Cồ Việt", nhan: "Đại Cồ Việt · Đinh–Tiền Lê–Lý (968–1054)", kind: "ten" },
-  { ten_nuoc: "Đại Việt", nhan: "Đại Việt · Lê sơ — cương vực ~1490 (Hồng Đức)", kind: "cuongvuc", ref: "dai-viet-1490" },
-  { ten_nuoc: "Đại Nam", nhan: "Đại Nam · nhà Nguyễn — cương vực ~1838", kind: "cuongvuc", ref: "dai-nam-1838" },
-  { ten_nuoc: "Việt Nam thời Pháp thuộc", nhan: "Pháp thuộc · Bắc–Trung–Nam Kỳ (1887–1945)", kind: "admin", ref: 0 },
-  { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 63 tỉnh (1976–30/6/2025)", kind: "admin", ref: 1 },
-  { ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 34 tỉnh (từ 1/7/2025)", kind: "admin", ref: 2 },
+  { id: "xich-quy", ten_nuoc: "Xích Quỷ", nhan: "Xích Quỷ · huyền sử (~2879 TCN)", kind: "cuongvuc", ref: "xich-quy" },
+  { id: "van-lang", ten_nuoc: "Văn Lang", nhan: "Văn Lang · Hùng Vương (~700–258 TCN)", kind: "ten" },
+  { id: "au-lac", ten_nuoc: "Âu Lạc", nhan: "Âu Lạc · An Dương Vương (257–179 TCN)", kind: "cuongvuc", ref: "au-lac" },
+  { id: "nam-viet", ten_nuoc: "Nam Việt", nhan: "Nam Việt · nhà Triệu (204–111 TCN)", kind: "ten" },
+  { id: "bac-thuoc", ten_nuoc: "Giao Chỉ – Giao Châu", nhan: "Bắc thuộc I–II · Giao Chỉ (111 TCN–544)", kind: "ten" },
+  { id: "van-xuan", ten_nuoc: "Vạn Xuân", nhan: "Vạn Xuân · Lý Nam Đế (544–602)", kind: "ten" },
+  { id: "tinh-hai-quan", ten_nuoc: "Tĩnh Hải quân", nhan: "Bắc thuộc III → Tự chủ (602–938)", kind: "ten" },
+  { id: "dai-co-viet", ten_nuoc: "Đại Cồ Việt", nhan: "Đại Cồ Việt · Đinh–Tiền Lê–Lý (968–1054)", kind: "ten" },
+  { id: "dai-viet-1490", ten_nuoc: "Đại Việt", nhan: "Đại Việt · Lê sơ — cương vực ~1490 (Hồng Đức)", kind: "ten" },
+  { id: "dai-nam-1838", ten_nuoc: "Đại Nam", nhan: "Đại Nam · nhà Nguyễn — cương vực ~1838", kind: "ten" },
+  { id: "phap-thuoc", ten_nuoc: "Việt Nam thời Pháp thuộc", nhan: "Pháp thuộc · Bắc–Trung–Nam Kỳ (1887–1945)", kind: "admin", ref: 0 },
+  { id: "vn-63", ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 63 tỉnh (1976–30/6/2025)", kind: "admin", ref: 1 },
+  { id: "vn-34", ten_nuoc: "CHXHCN Việt Nam", nhan: "Việt Nam · 34 tỉnh (từ 1/7/2025)", kind: "admin", ref: 2 },
 ];
 
 // Năm mở đầu ĐOẠN RÃNH của từng thời kỳ, dùng để đặt mốc lịch sử vào đúng chỗ
@@ -658,6 +661,189 @@ function applyCuongVuc(eraId: string): void {
   }
 }
 
+// --- Đơn vị hành chính qua các thời kỳ (quận · châu · phủ · thừa tuyên · tỉnh)
+//
+// ĐIỂM chứ không phải VÙNG, và đó là quyết định SỬ LIỆU chứ không phải giới hạn
+// kỹ thuật: chính sử và địa chí ghi rõ TÊN đơn vị, LỴ SỞ và vùng tương ứng ngày
+// nay, nhưng KHÔNG ghi đường biên. Vẽ vùng là bịa ra một độ chính xác không tồn
+// tại — đúng cái kết luận đã rút ra cho đường biên 1887 trong
+// docs/ranh-gioi-1887-1895-phan-quyet.md, nay áp cho mọi thời kỳ trước đó.
+//
+// Lớp này thay chỗ các polygon cương vực phỏng dựng đã gỡ bỏ.
+interface DonViXua {
+  id: string;
+  ten: string;
+  cap: string;
+  ky_id: string;
+  thoi_ky: string;
+  ly_so: string;
+  lat: number;
+  lon: number;
+  nay_la: string;
+  ghi_chu: string;
+  do_tin_cay: string;
+  nguon: string[];
+}
+
+const parseDonViXua = (raw: unknown): DonViXua => {
+  const r = rec(raw);
+  return {
+    id: str(r.id),
+    ten: str(r.ten),
+    cap: str(r.cap),
+    ky_id: str(r.ky_id),
+    thoi_ky: str(r.thoi_ky),
+    ly_so: str(r.ly_so),
+    lat: num(r.lat) ?? 0,
+    lon: num(r.lon) ?? 0,
+    nay_la: str(r.nay_la),
+    ghi_chu: str(r.ghi_chu),
+    do_tin_cay: str(r.do_tin_cay),
+    nguon: strs(r.nguon),
+  };
+};
+
+/** Màu theo CẤP đơn vị — nhìn màu là biết đang xem quận, thừa tuyên hay tỉnh. */
+const MAU_CAP_DON_VI: ExpressionSpecification = [
+  "match",
+  ["get", "cap"],
+  "kinh đô",
+  "#b45309",
+  "nơi thờ",
+  "#a16207",
+  "quận",
+  "#7c3aed",
+  "phủ",
+  "#0f766e",
+  "thừa tuyên",
+  "#b02020",
+  "tỉnh",
+  "#1d4ed8",
+  "mốc cương vực",
+  "#57534e",
+  "#78716c",
+];
+
+/** Bộ lọc rỗng: không thời kỳ nào mang ky_id này, dùng làm trạng thái «tắt». */
+const LOC_TAT_DON_VI = ["==", ["get", "ky_id"], "__khong-thoi-ky-nao__"];
+
+let donViXuaDangNap: Promise<void> | null = null;
+
+const donViXuaPopup = (o: DonViXua): string => {
+  const canhBao =
+    o.do_tin_cay !== "cao"
+      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Vị trí độ tin cậy ${esc(
+          o.do_tin_cay,
+        )} — lý do nêu trong ghi chú</span>`
+      : "";
+  return `<strong>${esc(o.ten)}</strong>
+    <br/><span style="color:#78716c">${esc(o.cap)} · ${esc(o.thoi_ky)}</span>
+    <br/>🏛️ <b>Lỵ sở:</b> ${esc(o.ly_so)}
+    <br/>📍 <b>Nay là:</b> ${escKho(o.nay_la)}
+    <br/><span style="color:#57534e">${escKho(o.ghi_chu)}</span>${canhBao}
+    ${sourcesHtml(o.nguon)}`;
+};
+
+function ensureDonViXua(): Promise<void> {
+  if (donViXuaDangNap) return donViXuaDangNap;
+  donViXuaDangNap = (async () => {
+    const data = await fetchJson(
+      "data/geo/don-vi-hanh-chinh-xua.json",
+      itemsOf(parseDonViXua),
+    );
+    if (!data) {
+      // Nạp hỏng thì cho phép thử lại ở lần đổi thời kỳ sau.
+      donViXuaDangNap = null;
+      return;
+    }
+    map.addSource("don-vi-xua", {
+      type: "geojson",
+      data: {
+        type: "FeatureCollection",
+        features: data.items.map((it) => ({
+          type: "Feature" as const,
+          properties: { ...it },
+          geometry: {
+            type: "Point" as const,
+            coordinates: tachDiemTrung(it.lon, it.lat),
+          },
+        })),
+      },
+    });
+    // 🔴 beforeId BẮT BUỘC. Lớp thêm sau chèn LÊN TRÊN và phủ mất nhãn Hoàng Sa
+    //    / Trường Sa — không lỗi console, không cổng dữ liệu nào bắt được, chỉ
+    //    `npm run verify:chuquyen` mới thấy. Xem bẫy landmarks3d.ts trong PLAN.
+    const duoiNhanChuQuyen = map.getLayer("chu-quyen-labels")
+      ? "chu-quyen-labels"
+      : undefined;
+    map.addLayer(
+      {
+        id: "don-vi-xua-diem",
+        type: "circle",
+        source: "don-vi-xua",
+        filter: LOC_TAT_DON_VI as never,
+        paint: {
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 6, 8, 9] as ExpressionSpecification,
+          "circle-color": MAU_CAP_DON_VI,
+          "circle-opacity": 0.9,
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "#ffffff",
+        },
+      },
+      duoiNhanChuQuyen,
+    );
+    map.addLayer(
+      {
+        id: "don-vi-xua-nhan",
+        type: "symbol",
+        source: "don-vi-xua",
+        filter: LOC_TAT_DON_VI as never,
+        layout: {
+          ...textFont(FONT_LABEL),
+          "text-field": ["get", "ten"],
+          "text-size": ["interpolate", ["linear"], ["zoom"], 4, 10, 8, 13],
+          "text-offset": [0, 1.1],
+          "text-anchor": "top",
+          "text-max-width": 9,
+          "text-optional": true,
+        },
+        paint: {
+          "text-color": "#292524",
+          "text-halo-color": "#ffffff",
+          "text-halo-width": 1.6,
+        },
+      },
+      duoiNhanChuQuyen,
+    );
+    map.on("click", "don-vi-xua-diem", (e) => {
+      const f = e.features?.[0];
+      if (!f) return;
+      moPopup(map, e.lngLat, donViXuaPopup(parseDonViXua(f.properties)));
+    });
+    // Áp lại thời kỳ mà setPeriod() đã chọn từ trước khi lớp kịp tồn tại.
+    if (kyDonViXua) apDonViXua(kyDonViXua);
+  })();
+  return donViXuaDangNap;
+}
+
+/**
+ * Thời kỳ đang chọn. NHỚ LẠI chứ không chỉ áp ngay, vì `setPeriod()` chạy từ
+ * lúc khởi tạo — TRƯỚC `map.on("load")`, khi lớp còn chưa tồn tại. Bản trước
+ * tôi cho `ensureDonViXua()` tự chờ `map.once("load")`; cách đó có ĐUA TRANH:
+ * style nạp xong đúng giữa lúc kiểm `isStyleLoaded()` và lúc đăng ký listener
+ * thì `load` đã bắn rồi, promise treo vĩnh viễn và lớp không bao giờ hiện —
+ * console vẫn sạch. Nhớ trạng thái rồi áp lại trong `load` thì không đua.
+ */
+let kyDonViXua = "";
+
+/** Hiện đúng những đơn vị hành chính thuộc thời kỳ `kyId`. */
+function apDonViXua(kyId: string): void {
+  kyDonViXua = kyId;
+  const loc = ["==", ["get", "ky_id"], kyId];
+  for (const id of ["don-vi-xua-diem", "don-vi-xua-nhan"])
+    if (map.getLayer(id)) map.setFilter(id, loc as never);
+}
+
 // --- Animation Nam tiến: lộ dần các tỉnh (bản đồ 34 tỉnh) theo mốc sáp nhập ---
 interface NamTienMoc {
   buoc: number;
@@ -1121,6 +1307,9 @@ map.on("load", () => {
   // moveend gồm cả zoom lẫn kéo — mô hình điểm phải dựng lại cho vùng mới.
   map.on("moveend", capNhatNenBanDo);
   troChuotTrenLopPhu();
+  // Dựng lớp «đơn vị hành chính xưa» Ở ĐÂY chứ không ở setPeriod: cần
+  // `chu-quyen-labels` đã tồn tại để chèn XUỐNG DƯỚI nó.
+  void ensureDonViXua();
 });
 
 // Lớp landmark 3D (Three.js) nạp lười ở lần bật 3D đầu tiên để không phình
@@ -1511,6 +1700,7 @@ function setPeriod(i: number): void {
   const p = PERIODS[i];
   setEra(p.kind === "admin" ? (p.ref as number) : -1);
   applyCuongVuc(p.kind === "cuongvuc" ? (p.ref as string) : "off");
+  apDonViXua(p.id);
   const label = document.getElementById("period-label");
   if (label) label.textContent = p.nhan;
   const slider = document.getElementById("timeline") as HTMLInputElement | null;

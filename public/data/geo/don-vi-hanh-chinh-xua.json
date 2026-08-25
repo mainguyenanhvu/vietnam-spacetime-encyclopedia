@@ -1,0 +1,892 @@
+{
+  "ghi_chu": "ĐƠN VỊ HÀNH CHÍNH QUA CÁC THỜI KỲ — quận · châu · phủ · lộ · trấn · thừa tuyên · tỉnh. Mỗi mục là MỘT ĐIỂM đặt tại LỴ SỞ (nơi đặt trị sở) của đơn vị đó, KHÔNG phải một vùng. Đây là quyết định sử liệu chứ không phải giới hạn kỹ thuật: chính sử và địa chí ghi rõ TÊN đơn vị, lỵ sở và vùng tương ứng ngày nay, nhưng KHÔNG ghi đường biên — vẽ vùng là bịa ra một độ chính xác không tồn tại (cùng nguyên tắc đã áp cho đường biên 1887, xem docs/ranh-gioi-1887-1895-phan-quyet.md). Trường `ky_id` nối mục với thời kỳ trên thanh thời gian; kéo thanh trượt thì lớp này đổi theo. Trường `do_tin_cay` nói rõ vì sao điểm đứng ở đó: `cao` = lỵ sở đã định vị bằng khảo cổ hoặc di tích còn tại chỗ · `trung` = neo về nơi cùng tên ngày nay · `thap` = chỉ biết vùng, chưa tra được lỵ sở. CHƯA TRA ĐƯỢC (để trống, KHÔNG bịa): tên 12 châu của An Nam đô hộ phủ (612), tên 10 đạo của Đại Cồ Việt (968) — chính sử chép số lượng mà không chép đủ danh sách.",
+  "ngay_cap_nhat": "2026-08-26",
+  "sources": [
+    "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)",
+    "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)",
+    "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)",
+    "Trung tâm Bảo tồn Di sản Thăng Long – Hà Nội — Tống Bình thăng trầm trước thời Thăng Long (https://hoangthanhthanglong.vn/tong-binh-thang-tram-truoc-thoi-thang-long/)",
+    "Cổng TTĐT thị xã Thuận Thành, Bắc Ninh — Luy Lâu, vùng đất cổ (https://thuanthanh.bacninh.gov.vn/news/-/details/22340/luy-lau-vung-at-co-noi-truyen-ba-phat-giao-viet-nam-au-tien)",
+    "Sở TT&TT Thanh Hoá — Nơi đặt quận trị, trấn lỵ, tỉnh lỵ Thanh Hoá (https://stttt.thanhhoa.gov.vn/NewsDetail.aspx?Id=5381)",
+    "Cổng TTĐT tỉnh Ninh Bình — Nhà nước Đại Cồ Việt thời Đinh (968–980)"
+  ],
+  "items": [
+    {
+      "id": "quan-giao-chi",
+      "ten": "Quận Giao Chỉ",
+      "cap": "quận",
+      "ky_id": "bac-thuoc",
+      "thoi_ky": "111 TCN – 544",
+      "ly_so": "Thành Luy Lâu",
+      "lat": 21.045,
+      "lon": 106.075,
+      "nay_la": "Vùng Bắc Bộ. Trị sở nay ở phường Thanh Khương, thị xã Thuận Thành, Bắc Ninh — thành cổ Luy Lâu đã được khai quật khảo cổ.",
+      "ghi_chu": "Luy Lâu là trung tâm hành chính và kinh tế – thương mại của Giao Châu, đồng thời là nơi Phật giáo truyền vào Việt Nam sớm nhất.",
+      "do_tin_cay": "cao",
+      "nguon": [
+        "Cổng TTĐT thị xã Thuận Thành, Bắc Ninh — Luy Lâu, vùng đất cổ (https://thuanthanh.bacninh.gov.vn/news/-/details/22340/luy-lau-vung-at-co-noi-truyen-ba-phat-giao-viet-nam-au-tien)",
+        "Báo Chính phủ — Khai quật khảo cổ di tích Thành cổ Luy Lâu, Bắc Ninh (https://baochinhphu.vn/khai-quat-khao-co-di-tich-thanh-co-luy-lau-bac-ninh-102212640.htm)",
+        "Báo Nhân Dân — Thành nội tại Luy Lâu, những dấu vết đứt đoạn đang được kết nối (https://nhandan.vn/thanh-noi-tai-luy-lau-nhung-dau-vet-dut-doan-dang-duoc-ket-noi-post255680.html)"
+      ]
+    },
+    {
+      "id": "quan-cuu-chan",
+      "ten": "Quận Cửu Chân",
+      "cap": "quận",
+      "ky_id": "bac-thuoc",
+      "thoi_ky": "111 TCN – 544",
+      "ly_so": "Tư Phố (hữu ngạn sông Mã)",
+      "lat": 19.84,
+      "lon": 105.74,
+      "nay_la": "Vùng Thanh Hoá và Nghệ – Tĩnh ngày nay.",
+      "ghi_chu": "Tư Phố là trị sở SỚM NHẤT và LÂU NHẤT của đất Thanh Hoá — khoảng 520 năm, từ thời Hán đến đầu thời Tiền Tống. Cửu Chân là quận lớn và quan trọng nhất khi nhà Hán lập bộ Giao Chỉ. ⚠️ Toạ độ neo về vùng Thiệu Dương – hữu ngạn sông Mã theo mô tả của nguồn; vị trí chính xác của thành Tư Phố CHƯA được xác định bằng khảo cổ.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Sở TT&TT Thanh Hoá — Nơi đặt quận trị, trấn lỵ, tỉnh lỵ Thanh Hoá (https://stttt.thanhhoa.gov.vn/NewsDetail.aspx?Id=5381)",
+        "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)"
+      ]
+    },
+    {
+      "id": "quan-nhat-nam",
+      "ten": "Quận Nhật Nam",
+      "cap": "quận",
+      "ky_id": "bac-thuoc",
+      "thoi_ky": "111 TCN – 544",
+      "ly_so": "Tây Quyển",
+      "lat": 17.468,
+      "lon": 106.622,
+      "nay_la": "Từ đèo Ngang trở vào nam, đến khoảng Quảng Nam – Đà Nẵng ngày nay.",
+      "ghi_chu": "⚠️ Điểm đặt tạm ở Quảng Bình: nguồn cho biết đất Quảng Bình thuộc hai huyện Tây Quyển và Tỷ Ảnh của quận Nhật Nam, và ranh giới với Cửu Chân là dãy Hoành Sơn — nhưng CHƯA tra được vị trí chính xác của trị sở Tây Quyển. Huyện cực nam của quận là Tượng Lâm, năm 192 tách ra lập nước Lâm Ấp.",
+      "do_tin_cay": "thap",
+      "nguon": [
+        "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)",
+        "Cổng TTĐT tỉnh Quảng Bình — địa giới hành chính qua các thời kỳ (https://quangbinh.gov.vn/chi-tiet-tin/-/view-article/1/13794671512727/13883632201547)"
+      ]
+    },
+    {
+      "id": "an-nam-do-ho-phu",
+      "ten": "An Nam đô hộ phủ → Tĩnh Hải quân",
+      "cap": "phủ",
+      "ky_id": "tinh-hai-quan",
+      "thoi_ky": "612 – 938",
+      "ly_so": "Tống Bình → thành Đại La",
+      "lat": 21.0333,
+      "lon": 105.84,
+      "nay_la": "Trung tâm Hà Nội ngày nay.",
+      "ghi_chu": "Nhà Tuỳ đặt Tống Bình làm trị sở; năm 612 nhà Đường lập An Nam đô hộ phủ, cai quản 12 châu. Năm 866 Cao Biền đắp thành Đại La và nhà Đường lập TĨNH HẢI QUÂN ở Giao Châu. ⚠️ Tên đủ 12 châu CHƯA tra được từ nguồn nhà nước — chính sử chép số lượng mà không chép đủ danh sách, nên để trống thay vì bịa.",
+      "do_tin_cay": "cao",
+      "nguon": [
+        "Trung tâm Bảo tồn Di sản Thăng Long – Hà Nội — Tống Bình thăng trầm trước thời Thăng Long (https://hoangthanhthanglong.vn/tong-binh-thang-tram-truoc-thoi-thang-long/)",
+        "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)"
+      ]
+    },
+    {
+      "id": "kinh-do-hoa-lu",
+      "ten": "Kinh đô Hoa Lư",
+      "cap": "kinh đô",
+      "ky_id": "dai-co-viet",
+      "thoi_ky": "968 – 1010",
+      "ly_so": "Hoa Lư",
+      "lat": 20.2536,
+      "lon": 105.9106,
+      "nay_la": "Cố đô Hoa Lư, Ninh Bình — Di tích Quốc gia đặc biệt.",
+      "ghi_chu": "Năm 968 Đinh Bộ Lĩnh lên ngôi Hoàng đế, đặt quốc hiệu Đại Cồ Việt, đóng đô ở Hoa Lư — kinh đô đầu tiên của nhà nước phong kiến tập quyền. Kinh thành rộng khoảng 300 ha, nằm giữa vòng cung núi đá. ⚠️ Tên đủ 10 ĐẠO mà Đinh Tiên Hoàng chia CHƯA tra được từ nguồn nhà nước — để trống thay vì bịa.",
+      "do_tin_cay": "cao",
+      "nguon": [
+        "Cổng TTĐT tỉnh Ninh Bình — Nhà nước Đại Cồ Việt thời Đinh (968–980)",
+        "Báo Ninh Bình — Cố đô Hoa Lư, kinh đô đầu tiên của Nhà nước phong kiến tập quyền (https://baoninhbinh.org.vn/co-do-hoa-lu-kinh-do-dau-tien-cua-nha-nuoc-phong-kien-tap/d20200402063640559.htm)"
+      ]
+    },
+    {
+      "id": "dcv-nam-gioi-hoanh-son",
+      "ten": "Nam giới Đại Cồ Việt — Hoành Sơn",
+      "cap": "mốc cương vực",
+      "ky_id": "dai-co-viet",
+      "thoi_ky": "968 – 1054",
+      "ly_so": "Dãy Hoành Sơn (đèo Ngang)",
+      "lat": 18.0686,
+      "lon": 106.4694,
+      "nay_la": "Đèo Ngang, ranh giới Hà Tĩnh – Quảng Bình.",
+      "ghi_chu": "Cương vực Đại Cồ Việt trải từ vùng biên phía bắc xuống tới bắc Hoành Sơn; phần mở về nam gồm đất Thanh Hoá, Nghệ An, Hà Tĩnh — tính từ nam đèo Tam Điệp (Ninh Bình) đến bắc Hoành Sơn. Đây là MỐC ĐỊA LÝ có thật, không phải đường biên vẽ ra.",
+      "do_tin_cay": "cao",
+      "nguon": [
+        "Cổng TTĐT tỉnh Ninh Bình — Nhà nước Đại Cồ Việt thời Đinh (968–980)",
+        "Báo Ninh Bình — Ý nghĩa sự ra đời, vị trí và vai trò của Nhà nước Đại Cồ Việt thời Đinh (https://baoninhbinh.org.vn/y-nghia-su-ra-doi-vi-tri-va-vai-tro-cua-nha-nuoc-dai-co-viet/d20180326021439489.htm)"
+      ]
+    },
+    {
+      "id": "tt-son-nam",
+      "ten": "Thừa tuyên Sơn Nam",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 20.42,
+      "lon": 106.168,
+      "nay_la": "Neo về Nam Định ngày nay — vùng nam đồng bằng sông Hồng.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "thap",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-kinh-bac",
+      "ten": "Thừa tuyên Kinh Bắc",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 21.186,
+      "lon": 106.076,
+      "nay_la": "Neo về Bắc Ninh ngày nay — xứ Kinh Bắc.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-son-tay",
+      "ten": "Thừa tuyên Sơn Tây",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 21.138,
+      "lon": 105.507,
+      "nay_la": "Neo về thị xã Sơn Tây, Hà Nội ngày nay — xứ Đoài.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-hai-duong",
+      "ten": "Thừa tuyên Hải Dương",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 20.94,
+      "lon": 106.33,
+      "nay_la": "Neo về Hải Dương ngày nay — xứ Đông.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-yen-bang",
+      "ten": "Thừa tuyên Yên Bang",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 21.006,
+      "lon": 107.29,
+      "nay_la": "Neo về Quảng Ninh ngày nay — vùng đông bắc ven biển.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471. Còn viết là An Bang.",
+      "do_tin_cay": "thap",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-lang-son",
+      "ten": "Thừa tuyên Lạng Sơn",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 21.853,
+      "lon": 106.761,
+      "nay_la": "Neo về Lạng Sơn ngày nay — vùng biên giới đông bắc.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-ninh-soc",
+      "ten": "Thừa tuyên Ninh Sóc",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 21.594,
+      "lon": 105.848,
+      "nay_la": "Neo về Thái Nguyên ngày nay — vùng Việt Bắc.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471. Sau đổi thành Thái Nguyên.",
+      "do_tin_cay": "thap",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-tuyen-quang",
+      "ten": "Thừa tuyên Tuyên Quang",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 21.818,
+      "lon": 105.214,
+      "nay_la": "Neo về Tuyên Quang ngày nay — vùng thượng du phía bắc.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-hung-hoa",
+      "ten": "Thừa tuyên Hưng Hoá",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 21.35,
+      "lon": 105.28,
+      "nay_la": "Neo về Hưng Hoá (Tam Nông, Phú Thọ) ngày nay — vùng tây bắc.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "thap",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-thanh-hoa",
+      "ten": "Thừa tuyên Thanh Hoá",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 19.807,
+      "lon": 105.776,
+      "nay_la": "Neo về Thanh Hoá ngày nay.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471. Còn viết là Thanh Hoa.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-nghe-an",
+      "ten": "Thừa tuyên Nghệ An",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 18.679,
+      "lon": 105.681,
+      "nay_la": "Neo về Vinh (Nghệ An) ngày nay — gồm cả đất Hà Tĩnh.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ]
+    },
+    {
+      "id": "tt-thuan-hoa",
+      "ten": "Thừa tuyên Thuận Hoá",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "1469 – 1490 (Hồng Đức)",
+      "ly_so": "Chưa tra được lỵ sở",
+      "lat": 16.463,
+      "lon": 107.59,
+      "nay_la": "Neo về Huế ngày nay — đất Thuận Châu và Hoá Châu.",
+      "ghi_chu": "Một trong 12 thừa tuyên có trước năm 1471. Gốc là hai châu Ô và Lý do Chế Mân dâng làm sính lễ năm 1306, nhà Trần đổi thành Thuận Châu và Hoá Châu.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)",
+        "Cổng TTĐT tỉnh Thừa Thiên Huế — Thừa Thiên Huế dưới thời Trần (1306–1400) (https://thuathienhue.gov.vn/Thong-tin-du-dia-chi/tid/Thua-Thien-Hue-duoi-thoi-Tran-1306-1400/newsid/E100BA4A-F181-40A6-B0B6-58FE7C1EA1FD/cid/3495DBC2-0A1B-4624-A857-A30895DD2960)"
+      ]
+    },
+    {
+      "id": "tt-quang-nam",
+      "ten": "Thừa tuyên Quảng Nam",
+      "cap": "thừa tuyên",
+      "ky_id": "dai-viet-1490",
+      "thoi_ky": "Lập tháng 6 năm 1471",
+      "ly_so": "Phủ Thăng Hoa",
+      "lat": 15.573,
+      "lon": 108.474,
+      "nay_la": "Gồm 3 phủ Thăng Hoa, Tư Nghĩa, Hoài Nhơn — nay là vùng Quảng Nam, Quảng Ngãi và Bình Định.",
+      "ghi_chu": "THỪA TUYÊN THỨ 13, lập tháng 6 năm 1471 sau chiến thắng Trà Bàn — mốc đưa cương vực Đại Việt xuống tới khoảng đèo Cù Mông. Đây cũng là lần đầu danh xưng «Quảng Nam» xuất hiện. ⚠️ Toạ độ neo về vùng phủ Thăng Hoa (Quảng Nam) ngày nay — nguồn không nêu vị trí lỵ sở thừa tuyên.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)",
+        "Bảo tàng Lịch sử Quốc gia — Xứ Quảng Nam xưa: Sự kiện lớn năm 1471 (https://baotanglichsu.vn/vi/Articles/3101/73267/xu-quang-nam-xua-su-kien-lon-nam-1471.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-cao-bang",
+      "ten": "Tỉnh Cao Bằng",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Cao Bằng",
+      "lat": 22.666,
+      "lon": 106.258,
+      "nay_la": "Neo về Cao Bằng ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-lang-son",
+      "ten": "Tỉnh Lạng Sơn",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Lạng Sơn",
+      "lat": 21.853,
+      "lon": 106.761,
+      "nay_la": "Neo về Lạng Sơn ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-hung-hoa",
+      "ten": "Tỉnh Hưng Hoá",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Hưng Hoá",
+      "lat": 21.35,
+      "lon": 105.28,
+      "nay_la": "Neo về Hưng Hoá ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-thai-nguyen",
+      "ten": "Tỉnh Thái Nguyên",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Thái Nguyên",
+      "lat": 21.594,
+      "lon": 105.848,
+      "nay_la": "Neo về Thái Nguyên ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-tuyen-quang",
+      "ten": "Tỉnh Tuyên Quang",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Tuyên Quang",
+      "lat": 21.818,
+      "lon": 105.214,
+      "nay_la": "Neo về Tuyên Quang ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-son-tay",
+      "ten": "Tỉnh Sơn Tây",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Sơn Tây",
+      "lat": 21.138,
+      "lon": 105.507,
+      "nay_la": "Neo về Sơn Tây ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-quang-yen",
+      "ten": "Tỉnh Quảng Yên",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Quảng Yên",
+      "lat": 20.94,
+      "lon": 106.8,
+      "nay_la": "Neo về Quảng Yên ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-bac-ninh",
+      "ten": "Tỉnh Bắc Ninh",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Bắc Ninh",
+      "lat": 21.186,
+      "lon": 106.076,
+      "nay_la": "Neo về Bắc Ninh ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-hai-duong",
+      "ten": "Tỉnh Hải Dương",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Hải Dương",
+      "lat": 20.94,
+      "lon": 106.33,
+      "nay_la": "Neo về Hải Dương ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-hung-yen",
+      "ten": "Tỉnh Hưng Yên",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Hưng Yên",
+      "lat": 20.646,
+      "lon": 106.051,
+      "nay_la": "Neo về Hưng Yên ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-ha-noi",
+      "ten": "Tỉnh Hà Nội",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Hà Nội",
+      "lat": 21.028,
+      "lon": 105.852,
+      "nay_la": "Neo về Hà Nội ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-nam-dinh",
+      "ten": "Tỉnh Nam Định",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Nam Định",
+      "lat": 20.42,
+      "lon": 106.168,
+      "nay_la": "Neo về Nam Định ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-ninh-binh",
+      "ten": "Tỉnh Ninh Bình",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Ninh Bình",
+      "lat": 20.254,
+      "lon": 105.975,
+      "nay_la": "Neo về Ninh Bình ngày nay — Bắc Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-thanh-hoa",
+      "ten": "Tỉnh Thanh Hoá",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Thanh Hoá",
+      "lat": 19.807,
+      "lon": 105.776,
+      "nay_la": "Neo về Thanh Hoá ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-nghe-an",
+      "ten": "Tỉnh Nghệ An",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Nghệ An",
+      "lat": 18.679,
+      "lon": 105.681,
+      "nay_la": "Neo về Nghệ An ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-ha-tinh",
+      "ten": "Tỉnh Hà Tĩnh",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Hà Tĩnh",
+      "lat": 18.343,
+      "lon": 105.906,
+      "nay_la": "Neo về Hà Tĩnh ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-quang-binh",
+      "ten": "Tỉnh Quảng Bình",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Quảng Bình",
+      "lat": 17.468,
+      "lon": 106.622,
+      "nay_la": "Neo về Quảng Bình ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-quang-tri",
+      "ten": "Tỉnh Quảng Trị",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Quảng Trị",
+      "lat": 16.75,
+      "lon": 107.19,
+      "nay_la": "Neo về Quảng Trị ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-quang-nam",
+      "ten": "Tỉnh Quảng Nam",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Quảng Nam",
+      "lat": 15.879,
+      "lon": 108.335,
+      "nay_la": "Neo về Quảng Nam ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-quang-ngai",
+      "ten": "Tỉnh Quảng Ngãi",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Quảng Ngãi",
+      "lat": 15.121,
+      "lon": 108.792,
+      "nay_la": "Neo về Quảng Ngãi ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-binh-dinh",
+      "ten": "Tỉnh Bình Định",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Bình Định",
+      "lat": 13.782,
+      "lon": 109.219,
+      "nay_la": "Neo về Bình Định ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-phu-yen",
+      "ten": "Tỉnh Phú Yên",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Phú Yên",
+      "lat": 13.089,
+      "lon": 109.093,
+      "nay_la": "Neo về Phú Yên ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-khanh-hoa",
+      "ten": "Tỉnh Khánh Hoà",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Khánh Hoà",
+      "lat": 12.239,
+      "lon": 109.196,
+      "nay_la": "Neo về Khánh Hoà ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-binh-thuan",
+      "ten": "Tỉnh Bình Thuận",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Bình Thuận",
+      "lat": 10.933,
+      "lon": 108.1,
+      "nay_la": "Neo về Bình Thuận ngày nay — Trung Kỳ.",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-phien-an",
+      "ten": "Tỉnh Phiên An",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Phiên An",
+      "lat": 10.776,
+      "lon": 106.7,
+      "nay_la": "Neo về Phiên An ngày nay — Nam Kỳ — «Nam Kỳ lục tỉnh».",
+      "ghi_chu": "Năm 1836 đổi thành Gia Định; sau người Pháp gọi là Sài Gòn. Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-bien-hoa",
+      "ten": "Tỉnh Biên Hoà",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Biên Hoà",
+      "lat": 10.945,
+      "lon": 106.824,
+      "nay_la": "Neo về Biên Hoà ngày nay — Nam Kỳ — «Nam Kỳ lục tỉnh».",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-an-giang",
+      "ten": "Tỉnh An Giang",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ An Giang",
+      "lat": 10.386,
+      "lon": 105.435,
+      "nay_la": "Neo về An Giang ngày nay — Nam Kỳ — «Nam Kỳ lục tỉnh».",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-vinh-long",
+      "ten": "Tỉnh Vĩnh Long",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Vĩnh Long",
+      "lat": 10.253,
+      "lon": 105.972,
+      "nay_la": "Neo về Vĩnh Long ngày nay — Nam Kỳ — «Nam Kỳ lục tỉnh».",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-dinh-tuong",
+      "ten": "Tỉnh Định Tường",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Định Tường",
+      "lat": 10.36,
+      "lon": 106.36,
+      "nay_la": "Neo về Định Tường ngày nay — Nam Kỳ — «Nam Kỳ lục tỉnh».",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "tinh-1831-ha-tien",
+      "ten": "Tỉnh Hà Tiên",
+      "cap": "tỉnh",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Tỉnh lỵ Hà Tiên",
+      "lat": 10.383,
+      "lon": 104.487,
+      "nay_la": "Neo về Hà Tiên ngày nay — Nam Kỳ — «Nam Kỳ lục tỉnh».",
+      "ghi_chu": "Năm 1831–1832 Minh Mệnh bỏ cấp Bắc Thành và Gia Định Thành, đổi thành và trấn thành TỈNH, chia cả nước làm 30 tỉnh và 1 phủ Thừa Thiên. ⚠️ Toạ độ neo về nơi cùng tên ngày nay — nguồn không nêu vị trí lỵ sở.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "phu-thua-thien-1831",
+      "ten": "Phủ Thừa Thiên",
+      "cap": "phủ",
+      "ky_id": "dai-nam-1838",
+      "thoi_ky": "1831 – 1832 (cải cách Minh Mệnh)",
+      "ly_so": "Kinh đô Phú Xuân",
+      "lat": 16.463,
+      "lon": 107.59,
+      "nay_la": "Huế ngày nay.",
+      "ghi_chu": "Riêng doanh Quảng Đức — nơi đóng đô — KHÔNG đổi thành tỉnh mà đổi thành PHỦ THỪA THIÊN. Vì vậy con số đúng là 30 tỉnh + 1 phủ, tổng 31 đơn vị: 13 tỉnh Bắc Kỳ + 11 tỉnh Trung Kỳ + 6 tỉnh Nam Kỳ = 30.",
+      "do_tin_cay": "cao",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ]
+    },
+    {
+      "id": "kinh-do-phong-chau",
+      "ten": "Kinh đô Phong Châu",
+      "cap": "kinh đô",
+      "ky_id": "van-lang",
+      "thoi_ky": "≈ thế kỷ VII TCN – 258 TCN",
+      "ly_so": "Phong Châu",
+      "lat": 21.3,
+      "lon": 105.4,
+      "nay_la": "Vùng Việt Trì, Phú Thọ ngày nay.",
+      "ghi_chu": "Kinh đô nước Văn Lang thời Hùng Vương. ⚠️ KHÔNG có bản đồ đương thời và cũng KHÔNG có danh sách «15 bộ» định vị được — dự án chỉ đánh dấu kinh đô, không vẽ vùng.",
+      "do_tin_cay": "trung",
+      "nguon": [
+        "Sở VHTTDL Phú Thọ — «Dấu tích Kinh đô Văn Lang thời đại Hùng Vương trên địa bàn thành phố Việt Trì»"
+      ]
+    },
+    {
+      "id": "kinh-do-co-loa",
+      "ten": "Kinh đô Cổ Loa",
+      "cap": "kinh đô",
+      "ky_id": "au-lac",
+      "thoi_ky": "≈ 257 TCN – 179 TCN",
+      "ly_so": "Cổ Loa",
+      "lat": 21.1206,
+      "lon": 105.8756,
+      "nay_la": "Xã Cổ Loa, Đông Anh, Hà Nội — Di tích Quốc gia đặc biệt.",
+      "ghi_chu": "Kinh đô nước Âu Lạc. Vòng thành Cổ Loa được định tuổi carbon phóng xạ thế kỷ III–II TCN — bằng chứng khảo cổ VỮNG cho trung tâm chính trị, tương phản với đường biên toàn lãnh thổ vốn chỉ phỏng dựng. Thành Ngoại chu vi hơn 8 km, thành Trung 6,58 km, thành Nội 1,65 km.",
+      "do_tin_cay": "cao",
+      "nguon": [
+        "Viện Khảo cổ học Việt Nam — định tuổi carbon phóng xạ vòng thành Cổ Loa (hợp tác ĐH Wisconsin-Madison 2005–2008)",
+        "Bảo tàng Lịch sử Quốc gia — Thành Cổ Loa, kinh đô nước Âu Lạc",
+        "Cục Di sản văn hoá (dsvh.gov.vn) — Di tích Cổ Loa"
+      ]
+    },
+    {
+      "id": "kinh-do-van-xuan",
+      "ten": "Kinh đô nước Vạn Xuân",
+      "cap": "kinh đô",
+      "ky_id": "van-xuan",
+      "thoi_ky": "544 – 602",
+      "ly_so": "Long Biên / Ô Diên",
+      "lat": 21.0833,
+      "lon": 105.7,
+      "nay_la": "Vùng Hà Nội – Bắc Ninh ngày nay.",
+      "ghi_chu": "⚠️ VỊ TRÍ CÒN TRANH CÃI, GIỮ NGUYÊN CHỖ VÊNH: giới nghiên cứu chưa thống nhất kinh đô Vạn Xuân là Long Biên hay Ô Diên (Hạ Mỗ, Đan Phượng). Điểm này đặt ở khoảng giữa hai giả thuyết, KHÔNG phải khẳng định vị trí.",
+      "do_tin_cay": "thap",
+      "nguon": [
+        "Trung tâm Bảo tồn Di sản Thăng Long – Hà Nội — «Lý Nam Đế đặt tên nước là Vạn Xuân» (hoangthanhthanglong.vn)",
+        "Báo Hànộimới — Dấu tích thời Lý Nam Đế ở Hà Nội (https://hanoimoi.vn/dau-tich-thoi-ly-nam-de-o-ha-noi-112829.html)"
+      ]
+    },
+    {
+      "id": "lang-kinh-duong-vuong",
+      "ten": "Lăng Kinh Dương Vương",
+      "cap": "nơi thờ",
+      "ky_id": "xich-quy",
+      "thoi_ky": "Huyền sử",
+      "ly_so": "Thuận Thành, Bắc Ninh",
+      "lat": 21.0361,
+      "lon": 106.0725,
+      "nay_la": "Thị xã Thuận Thành, Bắc Ninh.",
+      "ghi_chu": "Xích Quỷ là HUYỀN SỬ, không có kinh đô khảo cổ hay bản đồ đương thời. Điểm này chỉ đánh dấu NƠI THỜ Kinh Dương Vương, mang tính tưởng niệm — KHÔNG phải kinh đô, KHÔNG phải mốc lãnh thổ.",
+      "do_tin_cay": "cao",
+      "nguon": [
+        "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Hồng Bàng thị",
+        "Đào Duy Anh — Đất nước Việt Nam qua các đời"
+      ]
+    }
+  ]
+}
