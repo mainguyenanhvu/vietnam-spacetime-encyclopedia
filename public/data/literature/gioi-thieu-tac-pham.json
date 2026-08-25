@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Tác phẩm được GIỚI THIỆU chứ không in nguyên văn. Cả 7 mục đều đã hết hạn bảo hộ (tác giả mất trước 1976, Luật SHTT bảo hộ đời tác giả + 50 năm) nên chép nguyên văn là hợp pháp — chưa chép chỉ vì CHƯA TRA ĐƯỢC văn bản đáng tin ngoài các nguồn bị bác. Tra ra thì chuyển ngược về tho-yeu-nuoc.json kèm nguyen_van. Theo tiền lệ nhat-ky-thu-chien-tranh.json: rỗng nguyen_van thì bắt buộc có lời bình.",
-  "ngay_cap_nhat": "2026-08-05",
+  "ngay_cap_nhat": "2026-08-26",
   "items": [
     {
       "id": "sa-hanh-doan-ca-cao-ba-quat",
@@ -1168,6 +1168,511 @@
       "sources": [
         "Cục Bản quyền tác giả (scov.gov.vn) — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/nguyen-gia-thieu-tac-gia-cung-oan-ngam-khuc.html"
       ]
+    },
+    {
+      "id": "bach-dang-giang-phu",
+      "ten": "Bạch Đằng giang phú (Phú sông Bạch Đằng)",
+      "tac_gia": "Trương Hán Siêu (?–1354)",
+      "thoi_ky": "Đời Trần, khoảng năm 1345 — chừng nửa thế kỷ sau chiến thắng Bạch Đằng 1288",
+      "the_loai": "Phú chữ Hán, thể phú cổ thể (chủ – khách vấn đáp)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "quang-ninh",
+        "hai-phong"
+      ],
+      "loi_binh": "Đỉnh cao nghệ thuật của thể phú trong văn học trung đại Việt Nam. Bài phú dựng cảnh một người khách dạo thuyền trên sông Bạch Đằng, gặp các bô lão kể lại trận thuỷ chiến, rồi khép lại bằng lời khẳng định: đất hiểm là nhờ trời, nhưng giữ được nước là nhờ ĐỨC của người. Chỗ lớn của bài không phải ở việc dựng lại hào khí trận đánh, mà ở việc rút từ trận đánh ra một chân lý dùng được cho mọi thời.",
+      "ghi_chu": "⚠️ CHƯA CHÉP NGUYÊN VĂN, và lý do rất cụ thể: theo khảo cứu của Đỗ Phương Lâm (Tạp chí Hán Nôm số 4(83) 2007), các bản dịch quen thuộc nhất — Đông Châu Nguyễn Hữu Tiến, Nguyễn Đổng Chi, Bùi Văn Nguyên — đều «gò vần ép đối mà rời xa nguyên tác»: chẳng hạn «quải hãn mạn chi phong phàm» bị dịch thành «chèo quế bơi trăng», và các từ tượng thanh «sắt sắt sâu sâu» bị bỏ mất khiến câu văn mất nhạc. Bài viết kêu gọi cần một bản dịch đáng tin hơn cho nhà trường. Chép một bản dịch đã được chỉ đích danh là sai lệch thì chẳng khác gì nhân bản cái sai — dự án chờ bản phiên âm và bản dịch đối chiếu được.",
+      "sources": [
+        "Đỗ Phương Lâm (ĐH Hải Phòng) — «Đọc bài phú Sông Bạch Đằng qua nguyên tác», Tạp chí Hán Nôm số 4(83) 2007, tr.49-54; đăng lại trên Khoa Văn học & Ngôn ngữ, ĐH KHXH&NV — http://khoavanhoc-ngonngu.edu.vn/home/index.php?option=com_content&view=article&id=685",
+        "SGK Ngữ văn 10 — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "viet-dien-u-linh-tap",
+      "ten": "Việt điện u linh tập",
+      "tac_gia": "Lý Tế Xuyên",
+      "thoi_ky": "Đời Trần, soạn năm 1329",
+      "the_loai": "Truyện chí quái chữ Hán chép thần tích",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "bac-ninh"
+      ],
+      "loi_binh": "Tập truyện chép sự tích các vị thần được thờ trong «cõi u linh nước Việt» — chia làm ba hạng: nhân quân (vua), nhân thần (bề tôi) và hạo khí anh linh (thần núi sông). Đây là văn bản sớm nhất hệ thống hoá tín ngưỡng thờ thần của người Việt, và là nguồn gốc cho phần lớn thần tích đình đền còn kể tới hôm nay. Dự án dùng sách này làm nguồn cho lớp phủ «Huyền sử khai quốc» và «Thành hoàng · Danh thần».",
+      "ghi_chu": "Chỉ giới thiệu; văn bản có nhiều lần tăng bổ qua các đời nên bản lưu hành không thuần nhất bản 1329.",
+      "sources": [
+        "Lý Tế Xuyên — Việt điện u linh tập, bản dịch NXB Văn học",
+        "Viện Nghiên cứu Hán Nôm — thư mục sách Hán Nôm Việt Nam"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "linh-nam-chich-quai",
+      "ten": "Lĩnh Nam chích quái",
+      "tac_gia": "Tương truyền Trần Thế Pháp soạn; Vũ Quỳnh và Kiều Phú hiệu chính (1492–1493)",
+      "thoi_ky": "Cuối Trần – đầu Lê sơ",
+      "the_loai": "Truyện chí quái chữ Hán",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "phu-tho",
+        "bac-ninh"
+      ],
+      "loi_binh": "«Chọn lượm những chuyện quái ở cõi Lĩnh Nam» — tập truyện giữ lại gần như toàn bộ kho huyền sử khai quốc: Họ Hồng Bàng, Ngư tinh, Hồ tinh, Mộc tinh, Đổng Thiên Vương, Bánh chưng, Dưa hấu, Trầu cau, Núi Tản Viên, Rùa vàng. Truyện «Con Rồng cháu Tiên» mà mọi trẻ em Việt Nam đều thuộc chính là từ thiên Họ Hồng Bàng của sách này.",
+      "ghi_chu": "Chỉ giới thiệu. Ba truyện dòng thời gian có nhắc — Bánh chưng bánh giầy, Thánh Gióng, Sơn Tinh – Thuỷ Tinh — đều nằm trong tập này; xem thêm lớp phủ «Truyền thuyết dân gian» trên bản đồ.",
+      "sources": [
+        "Vũ Quỳnh, Kiều Phú — Lĩnh Nam chích quái, bản dịch NXB Văn học",
+        "SGK Ngữ văn 6 — NXB Giáo dục Việt Nam (truyện Con Rồng cháu Tiên, Thánh Gióng, Sơn Tinh Thuỷ Tinh)"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "quoc-am-thi-tap",
+      "ten": "Quốc âm thi tập",
+      "tac_gia": "Nguyễn Trãi (1380–1442)",
+      "thoi_ky": "Đời Lê sơ; phần lớn sáng tác thời Nguyễn Trãi lui về Côn Sơn",
+      "the_loai": "Tập thơ Nôm, 254 bài, phần lớn thất ngôn bát cú và thất ngôn xen lục ngôn",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "hai-phong",
+        "ha-noi"
+      ],
+      "loi_binh": "Tập thơ Nôm CỔ NHẤT và phong phú nhất còn giữ được của Việt Nam — cột mốc khai sinh dòng thơ tiếng Việt. 254 bài chia theo các môn Vô đề, Thời lệnh, Hoa mộc, Cầm thú. Câu thất ngôn xen lục ngôn là sáng tạo riêng của Nguyễn Trãi, một nhịp thơ không có trong Đường luật chữ Hán. Sau vụ án Lệ Chi Viên, sách vở của ông bị huỷ; con số 254 bài còn lại là nhờ Dương Bá Cung sưu tầm lại vào thế kỷ XIX.",
+      "ghi_chu": "Chỉ giới thiệu tập; bài «Bài ca Côn Sơn» rút từ tập này đã có mục riêng trong kho.",
+      "sources": [
+        "Nguyễn Trãi toàn tập — NXB Khoa học Xã hội",
+        "Đài Tiếng nói Việt Nam (VOV) — «Thơ Nôm của Đại thi hào Nguyễn Trãi: Những châu ngọc của thơ ca thời trung đại» — https://vov.gov.vn/tho-nom-cua-dai-thi-hao-nguyen-trai-nhung-chau-ngoc-cua-tho-ca-thoi-trung-dai-dtnew-430953",
+        "Báo Công an Nhân dân — «Hiểu về chữ Dân của Nguyễn Trãi trong Quốc âm thi tập» — https://cand.com.vn/Ly-luan/hieu-ve-chu-dan-cua-nguyen-trai-trong-quoc-am-thi-tap--i728687/"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "uc-trai-thi-tap",
+      "ten": "Ức Trai thi tập",
+      "tac_gia": "Nguyễn Trãi (1380–1442)",
+      "thoi_ky": "Đời Lê sơ",
+      "the_loai": "Tập thơ chữ Hán, trên 105 bài",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "hai-phong"
+      ],
+      "loi_binh": "Tập thơ chữ Hán của Nguyễn Trãi, đi cùng «Quốc âm thi tập» làm thành hai nửa của một hồn thơ: một nửa viết bằng chữ của thiên hạ, một nửa viết bằng tiếng của nước mình. Thơ trong tập nhiều bài làm lúc đi sứ, lúc ẩn dật, giọng trầm mà không bi luỵ.",
+      "ghi_chu": "Chỉ giới thiệu tập.",
+      "sources": [
+        "Nguyễn Trãi toàn tập — NXB Khoa học Xã hội",
+        "Đài Tiếng nói Việt Nam (VOV) — chuyên đề thơ Nguyễn Trãi — https://vov.gov.vn/tho-nom-cua-dai-thi-hao-nguyen-trai-nhung-chau-ngoc-cua-tho-ca-thoi-trung-dai-dtnew-430953"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "quan-trung-tu-menh-tap",
+      "ten": "Quân trung từ mệnh tập",
+      "tac_gia": "Nguyễn Trãi (1380–1442)",
+      "thoi_ky": "Trong kháng chiến Lam Sơn, khoảng 1423–1427",
+      "the_loai": "Tập thư từ, chiếu dụ chữ Hán viết thay Lê Lợi",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thanh-hoa",
+        "ha-noi"
+      ],
+      "loi_binh": "Tập hợp thư từ Nguyễn Trãi thay mặt Lê Lợi gửi các tướng Minh trong suốt cuộc kháng chiến — thứ vũ khí mà người đời sau gọi là «đánh vào lòng người». Có bức viết cho Vương Thông, có bức cho Phương Chính, Sơn Thọ; lời lẽ khi mềm khi cứng nhưng đều nhằm một việc: làm quân địch mất ý chí mà rút, đỡ một trận máu. Đọc tập này rồi đọc «Bình Ngô đại cáo» mới thấy hết vì sao Nguyễn Trãi viết được câu «lấy đại nghĩa để thắng hung tàn».",
+      "ghi_chu": "Chỉ giới thiệu tập.",
+      "sources": [
+        "Nguyễn Trãi toàn tập — NXB Khoa học Xã hội",
+        "Đại Việt sử ký toàn thư — Bản kỷ, kỷ nhà Lê, đời Lê Thái Tổ"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hong-duc-quoc-am-thi-tap",
+      "ten": "Hồng Đức quốc âm thi tập",
+      "tac_gia": "Lê Thánh Tông và Hội Tao Đàn",
+      "thoi_ky": "Niên hiệu Hồng Đức (1470–1497)",
+      "the_loai": "Tập thơ Nôm của một hội thơ cung đình",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Tập thơ Nôm của Hội Tao Đàn do Lê Thánh Tông làm Nguyên suý — hội thơ có tổ chức đầu tiên trong lịch sử văn học Việt Nam. Nối sau «Quốc âm thi tập» của Nguyễn Trãi, tập này cho thấy thơ tiếng Việt đã đi từ chỗ một người làm tới chỗ cả triều đình cùng làm.",
+      "ghi_chu": "Chỉ giới thiệu tập.",
+      "sources": [
+        "Hồng Đức quốc âm thi tập — bản phiên âm chú giải, NXB Văn học",
+        "Đại Việt sử ký toàn thư — Bản kỷ, đời Lê Thánh Tông"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "van-te-thap-loai-chung-sinh",
+      "ten": "Văn tế thập loại chúng sinh (Văn chiêu hồn)",
+      "tac_gia": "Nguyễn Du (1765–1820)",
+      "thoi_ky": "Đời Nguyễn, đầu thế kỷ XIX",
+      "the_loai": "Văn tế chữ Nôm, song thất lục bát, 184 câu",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-tinh"
+      ],
+      "loi_binh": "Bài văn tế cúng cô hồn tháng bảy, gọi hồn đủ mười hạng người chết đường chết chợ — từ kẻ tướng soái, người buôn bán, đến đứa trẻ mới lọt lòng, người đàn bà chết vì sinh nở. Cùng với «Truyện Kiều», đây là chỗ lòng thương người của Nguyễn Du đi xa nhất: thương cả những kẻ không ai còn nhớ tên.",
+      "ghi_chu": "Chỉ giới thiệu; chưa tra được bản phiên âm đáng tin ngoài các nguồn bị bác.",
+      "sources": [
+        "Nguyễn Du toàn tập — NXB Văn học",
+        "SGK Ngữ văn — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chieu-can-vuong",
+      "ten": "Chiếu Cần Vương",
+      "tac_gia": "Ban dưới danh nghĩa vua Hàm Nghi; Tôn Thất Thuyết chủ trương",
+      "thoi_ky": "Ngày 13/7/1885 tại sơn phòng Tân Sở (Quảng Trị), sau khi kinh thành Huế thất thủ",
+      "the_loai": "Chiếu (văn kêu gọi chữ Hán)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "quang-tri",
+        "hue",
+        "ha-tinh"
+      ],
+      "loi_binh": "Tờ chiếu kêu gọi sĩ phu, văn thân và nhân dân cả nước đứng lên giúp vua đánh Pháp, mở đầu phong trào Cần Vương kéo dài hơn mười năm. Bản thứ nhất gồm 24 dòng chữ Hán, kêu gọi «quan binh kẻ sĩ không rời bỏ vua mà đồng lòng bày mưu hiến sức». Danh nghĩa là giúp vua, nhưng thực chất là một phong trào yêu nước chống xâm lược của nhân dân.",
+      "ghi_chu": "⚠️ BA BẢN, CHỈ MỘT BẢN ĐƯỢC COI LÀ THẬT — giữ nguyên chỗ vênh, đừng gộp làm một. Theo khảo cứu văn bản học của Trung tâm Lưu trữ quốc gia I: (1) bản ngày 2/6 năm Hàm Nghi thứ nhất (1885), 24 dòng chữ Hán KHÔNG đóng dấu — hầu hết nhà nghiên cứu coi là xác thực; (2) bản đề 11/8 năm Ất Dậu 1885, công bố trong sách «Le Laos et le protectorat français» (1900) dưới dạng dịch tiếng Pháp — bị đánh giá là NGUỴ TẠO vì sự kiện không khớp chính sử và thể thức hành văn không phù hợp; (3) bản đề 6/6 năm Hàm Nghi thứ 5 (1889), phát hiện tại bảo tàng gia đình Thierry d'Argenlieu — giới nghiên cứu xác định là GIẢ MẠO do sai thể thức, con dấu không hợp quy định và thời gian không khả thi. Chưa chép nguyên văn vì lý do đó: phải chọn đúng bản trước đã.",
+      "sources": [
+        "Trung tâm Lưu trữ quốc gia I — «Trở lại câu chuyện Chiếu Cần vương và những vấn đề đáng ngờ về văn bản học» — https://www.archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/tro-lai-cau-chuyen-chieu-can-vuong-va-nhung-van-de-%E2%80%9Cdang-ngo%E2%80%9D-ve-van-ban-hoc-ky-1.htm",
+        "Cổng TTĐT tỉnh Quảng Trị — Lễ rước Long vị vua Hàm Nghi và các tướng sỹ Cần Vương về Tân Sở (Cam Lộ) — https://www.quangtri.gov.vn/chi-tiet-tin/-/view-article/1/13848241113627/1594551294984"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chieu-cau-hien-ngo-thi-nham",
+      "ten": "Chiếu cầu hiền",
+      "tac_gia": "Ngô Thì Nhậm (1746–1803) viết thay vua Quang Trung",
+      "thoi_ky": "Sau chiến thắng Ngọc Hồi – Đống Đa 1789, buổi đầu triều Tây Sơn",
+      "the_loai": "Chiếu (văn nghị luận chữ Hán)",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "binh-dinh"
+      ],
+      "loi_binh": "Tờ chiếu vua Quang Trung mời kẻ sĩ Bắc Hà ra giúp nước sau khi Tây Sơn thắng trận. Cái khó của bài: người viết phải thuyết phục chính những nho sĩ vốn trung với nhà Lê rằng ra giúp triều mới không phải là bất trung. Ngô Thì Nhậm giải bằng lẽ «người hiền như sao sáng trên trời, sao phải chầu về Bắc thần» — hiền tài sinh ra là để dùng cho đời, không phải để giữ riêng cho một họ.",
+      "ghi_chu": "Chỉ giới thiệu; chưa tra được bản dịch đáng tin ngoài các nguồn bị bác.",
+      "sources": [
+        "Ngô Thì Nhậm toàn tập — NXB Khoa học Xã hội",
+        "SGK Ngữ văn 11 — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hai-chu-nuoc-nha",
+      "ten": "Hai chữ nước nhà",
+      "tac_gia": "Á Nam Trần Tuấn Khải (1895–1983)",
+      "thoi_ky": "Đăng năm 1924, thời Pháp thuộc",
+      "the_loai": "Thơ song thất lục bát",
+      "ban_quyen": "cited-excerpt",
+      "lien_quan_tinh": [
+        "lang-son",
+        "nam-dinh"
+      ],
+      "loi_binh": "Bài thơ mượn lời Nguyễn Phi Khanh dặn con là Nguyễn Trãi ở ải Nam Quan, khi bị quân Minh giải sang Trung Quốc: cha bảo con quay về lo trả thù nhà đền nợ nước chứ đừng theo cha. Mượn chuyện xưa nói chuyện nay — đó là cách người cầm bút nói được tiếng nói yêu nước dưới ách kiểm duyệt thực dân.",
+      "ghi_chu": "⚠️ KHÔNG chép nguyên văn: Trần Tuấn Khải mất năm 1983, theo Điều 27 Luật Sở hữu trí tuệ (đời tác giả + 50 năm) tác phẩm còn được bảo hộ tới 2033.",
+      "sources": [
+        "SGK Ngữ văn 8 — NXB Giáo dục Việt Nam",
+        "Cục Bản quyền tác giả (cov.gov.vn) — quy định thời hạn bảo hộ"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thach-sanh-truyen-tho",
+      "ten": "Thạch Sanh (truyện thơ Nôm)",
+      "tac_gia": "Khuyết danh",
+      "thoi_ky": "Thế kỷ XVIII–XIX",
+      "the_loai": "Truyện thơ Nôm lục bát",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Bản diễn Nôm của truyện cổ tích Thạch Sanh — chàng trai mồ côi đốn củi, chém chằn tinh, diệt đại bàng cứu công chúa, rồi tha chết cho mười tám nước chư hầu bằng niêu cơm ăn mãi không hết và cây đàn thần. Chi tiết niêu cơm và cây đàn là chỗ đặc sắc: kẻ thắng trận không giết mà cho ăn, không doạ mà gảy đàn.",
+      "ghi_chu": "Chỉ giới thiệu; bản Nôm có nhiều dị bản.",
+      "sources": [
+        "Kho tàng truyện cổ tích Việt Nam — Nguyễn Đổng Chi, NXB Khoa học Xã hội",
+        "SGK Ngữ văn 6 — NXB Giáo dục Việt Nam"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bich-cau-ky-ngo",
+      "ten": "Bích Câu kỳ ngộ",
+      "tac_gia": "Khuyết danh (có thuyết cho là Đặng Trần Côn soạn bản chữ Hán)",
+      "thoi_ky": "Thế kỷ XVIII–XIX",
+      "the_loai": "Truyện thơ Nôm lục bát, 648 câu",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "«Cuộc gặp lạ ở Bích Câu» — chuyện chàng thư sinh Trần Tú Uyên gặp tiên nữ Giáng Kiều ở đất Bích Câu (nay thuộc Hà Nội). Truyện thơ hiếm hoi lấy bối cảnh ngay giữa kinh thành Thăng Long, và đền Bích Câu đạo quán nay vẫn còn.",
+      "ghi_chu": "Chỉ giới thiệu.",
+      "sources": [
+        "Bích Câu kỳ ngộ — bản phiên âm chú giải, NXB Văn học",
+        "Cục Di sản văn hoá (dsvh.gov.vn) — di tích Bích Câu đạo quán, Hà Nội"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phan-tran-truyen",
+      "ten": "Phan Trần",
+      "tac_gia": "Khuyết danh",
+      "thoi_ky": "Thế kỷ XVIII–XIX",
+      "the_loai": "Truyện thơ Nôm lục bát",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [],
+      "loi_binh": "Truyện thơ Nôm về mối tình Phan Sinh – Trần Kiều Liên, từng bị nhà nho chê là uỷ mị, gắn với câu răn quen thuộc «Đàn ông chớ kể Phan Trần, đàn bà chớ kể Thuý Vân Thuý Kiều». Chính lời răn đó lại là bằng chứng cho biết hai truyện được đọc rộng đến mức nào.",
+      "ghi_chu": "Chỉ giới thiệu.",
+      "sources": [
+        "Phan Trần — bản phiên âm chú giải, NXB Văn học",
+        "Việt Nam văn học sử yếu — Dương Quảng Hàm"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "truyen-thay-lazaro-phien",
+      "ten": "Truyện thầy Lazaro Phiền",
+      "tac_gia": "Nguyễn Trọng Quản (1865–1911)",
+      "thoi_ky": "In năm 1887 tại Sài Gòn",
+      "the_loai": "Tiểu thuyết chữ Quốc ngữ",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "loi_binh": "Được coi là TIỂU THUYẾT CHỮ QUỐC NGỮ ĐẦU TIÊN của Việt Nam. Truyện kể một linh mục vì ghen mà hại chết vợ và bạn, rồi sống nốt đời trong dằn vặt. Đáng chú ý ở hai điểm rất sớm: viết bằng văn xuôi quốc ngữ đời thường chứ không biền ngẫu, và lấy nội tâm tội lỗi làm trung tâm — hai thứ phải mấy chục năm sau mới thành phổ biến trong văn xuôi Việt Nam.",
+      "ghi_chu": "Chỉ giới thiệu; bản in 1887 hiếm.",
+      "sources": [
+        "Khoa Văn học & Ngôn ngữ, ĐH KHXH&NV — chuyên đề văn học Quốc ngữ Nam Bộ",
+        "Việt Nam văn học sử yếu — Dương Quảng Hàm"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "to-tam",
+      "ten": "Tố Tâm",
+      "tac_gia": "Hoàng Ngọc Phách (1896–1973)",
+      "thoi_ky": "Viết 1922, in 1925",
+      "the_loai": "Tiểu thuyết tâm lý",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "ha-tinh"
+      ],
+      "loi_binh": "Tiểu thuyết tâm lý đầu tiên của văn học Việt Nam hiện đại. Chuyện tình Đạm Thuỷ – Tố Tâm không đi đến đâu vì lễ giáo gia đình, và cái mới không nằm ở cốt truyện mà ở chỗ tác giả dành gần trọn cuốn sách để mổ xẻ diễn biến bên trong của nhân vật. Cuốn sách làm nên một cơn sốt trong thanh niên thành thị những năm 1920.",
+      "ghi_chu": "Chỉ giới thiệu.",
+      "sources": [
+        "Việt Nam văn học sử yếu — Dương Quảng Hàm",
+        "Nhà văn hiện đại — Vũ Ngọc Phan"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "so-do",
+      "ten": "Số đỏ",
+      "tac_gia": "Vũ Trọng Phụng (1912–1939)",
+      "thoi_ky": "Đăng báo Hà Nội năm 1936",
+      "the_loai": "Tiểu thuyết trào phúng",
+      "ban_quyen": "public-domain",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "hung-yen"
+      ],
+      "loi_binh": "Tiểu thuyết trào phúng vào loại sắc nhất của văn học Việt Nam. Xuân Tóc Đỏ từ một thằng nhặt bóng quần vợt leo lên thành «đốc-tờ», «anh hùng cứu quốc», nhờ đúng một thứ: cái xã hội trưởng giả Âu hoá nửa mùa quanh nó không phân biệt nổi thật với giả. Chương «Hạnh phúc của một tang gia» — cả nhà mừng rỡ vì cụ cố tổ chết — là một trong những chương hay nhất của văn xuôi tiếng Việt.",
+      "ghi_chu": "Chỉ giới thiệu. Tác giả mất 1939 nên tác phẩm đã hết hạn bảo hộ; kho có sẵn mục «Giông tố» và «Kỹ nghệ lấy Tây» của cùng tác giả.",
+      "sources": [
+        "SGK Ngữ văn 11 — NXB Giáo dục Việt Nam (trích «Hạnh phúc của một tang gia»)",
+        "Nhà văn hiện đại — Vũ Ngọc Phan"
+      ],
+      "chu_de": "tho-van-trung-dai",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "su-tich-banh-chung-banh-giay",
+      "ten": "Sự tích bánh chưng, bánh giầy",
+      "tac_gia": "Truyện dân gian, khuyết danh; chép trong Lĩnh Nam chích quái",
+      "thoi_ky": "Đời Hùng Vương thứ sáu (huyền sử)",
+      "the_loai": "Truyền thuyết",
+      "chu_de": "van-hoc-dan-gian",
+      "lien_quan_tinh": [
+        "phu-tho"
+      ],
+      "loi_binh": "Hoàng tử Lang Liêu nghèo nhất trong các con vua, không có của quý dâng lên, bèn lấy gạo nếp làm bánh chưng vuông tượng Đất và bánh giầy tròn tượng Trời. Vua Hùng chọn Lang Liêu nối ngôi. Truyện giải thích một phong tục còn sống nguyên đến hôm nay, và gói trong đó một lời khẳng định: cái quý nhất dâng lên tổ tiên là hạt gạo do chính tay mình làm ra.",
+      "ghi_chu": "Chỉ giới thiệu; văn bản gốc nằm trong Lĩnh Nam chích quái, đã có mục riêng.",
+      "sources": [
+        "Lĩnh Nam chích quái — bản dịch NXB Văn học",
+        "SGK Ngữ văn 6 — NXB Giáo dục Việt Nam"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "truyen-thuyet-thanh-giong",
+      "ten": "Truyền thuyết Thánh Gióng",
+      "tac_gia": "Truyện dân gian, khuyết danh; chép trong Lĩnh Nam chích quái (thiên Đổng Thiên Vương)",
+      "thoi_ky": "Đời Hùng Vương thứ sáu (huyền sử), chống giặc Ân",
+      "the_loai": "Truyền thuyết anh hùng",
+      "chu_de": "van-hoc-dan-gian",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "bac-ninh"
+      ],
+      "loi_binh": "Đứa bé ba tuổi không nói không cười, nghe sứ giả rao tìm người đánh giặc thì cất tiếng đầu tiên là đòi ngựa sắt, roi sắt, áo giáp sắt. Ăn cơm cả làng góp mà lớn nhanh như thổi, đánh tan giặc Ân rồi cưỡi ngựa bay về trời, không nhận một chức tước nào. Hội Gióng ở đền Phù Đổng và đền Sóc được UNESCO ghi danh năm 2010 — mục di sản này đã có trong lớp phủ của dự án.",
+      "ghi_chu": "Chỉ giới thiệu; văn bản gốc trong Lĩnh Nam chích quái.",
+      "sources": [
+        "Lĩnh Nam chích quái — bản dịch NXB Văn học",
+        "Cục Di sản văn hoá (dsvh.gov.vn) — Hội Gióng ở đền Phù Đổng và đền Sóc, di sản UNESCO 2010"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "truyen-thuyet-son-tinh-thuy-tinh",
+      "ten": "Truyền thuyết Sơn Tinh – Thuỷ Tinh",
+      "tac_gia": "Truyện dân gian, khuyết danh; chép trong Lĩnh Nam chích quái (thiên Núi Tản Viên)",
+      "thoi_ky": "Đời Hùng Vương thứ mười tám (huyền sử)",
+      "the_loai": "Truyền thuyết giải thích tự nhiên",
+      "chu_de": "van-hoc-dan-gian",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "phu-tho"
+      ],
+      "loi_binh": "Hai vị thần cùng cầu hôn Mỵ Nương; Sơn Tinh đem sính lễ tới trước nên được vợ, Thuỷ Tinh tức giận dâng nước đánh, năm nào cũng đánh, năm nào cũng thua. Đây là cách người Việt cổ giải thích mùa lũ sông Hồng — và cũng là cách họ nói rằng đắp đê chống lụt là việc phải làm lại hằng năm, không bao giờ xong hẳn.",
+      "ghi_chu": "Chỉ giới thiệu; văn bản gốc trong Lĩnh Nam chích quái.",
+      "sources": [
+        "Lĩnh Nam chích quái — bản dịch NXB Văn học",
+        "SGK Ngữ văn 6 — NXB Giáo dục Việt Nam"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "gia-dinh-bao",
+      "ten": "Gia Định báo",
+      "tac_gia": "Trương Vĩnh Ký làm chủ bút từ năm 1869",
+      "thoi_ky": "Số đầu ra ngày 15/4/1865 tại Sài Gòn",
+      "the_loai": "Báo chữ Quốc ngữ",
+      "chu_de": "can-dai-khang-phap",
+      "lien_quan_tinh": [
+        "thanh-pho-ho-chi-minh"
+      ],
+      "loi_binh": "TỜ BÁO CHỮ QUỐC NGỮ ĐẦU TIÊN của Việt Nam. Ngoài phần công vụ, báo đăng thơ văn, chuyện đời xưa, bài dạy cách viết chữ Quốc ngữ — nhờ đó góp phần lớn vào việc đưa thứ chữ này từ nhà thờ ra đời sống dân chúng. Mốc 1865 đã có trong dòng thời gian của dự án.",
+      "ghi_chu": "Chỉ giới thiệu ấn phẩm; bộ sưu tập bản gốc do các thư viện quốc gia lưu giữ.",
+      "sources": [
+        "Thư viện Quốc gia Việt Nam — bộ sưu tập báo chí Quốc ngữ thời kỳ đầu",
+        "Việt Nam văn học sử yếu — Dương Quảng Hàm"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "van-minh-tan-hoc-sach",
+      "ten": "Văn minh tân học sách",
+      "tac_gia": "Khuyết danh — cương lĩnh của Đông Kinh Nghĩa Thục",
+      "thoi_ky": "Năm 1907, Hà Nội",
+      "the_loai": "Luận thuyết duy tân chữ Hán",
+      "chu_de": "can-dai-khang-phap",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Bản cương lĩnh của phong trào Đông Kinh Nghĩa Thục — trường học và cũng là phong trào cải cách lớn nhất đầu thế kỷ XX. Sách nêu sáu việc phải làm để nước mạnh, trong đó có bỏ lối học từ chương khoa cử, dùng chữ Quốc ngữ, mở mang công thương nghiệp và học cái hay của phương Tây mà không mất gốc. Trường bị Pháp đóng cửa sau chín tháng hoạt động.",
+      "ghi_chu": "Chỉ giới thiệu; chưa tra được bản dịch đáng tin ngoài các nguồn bị bác.",
+      "sources": [
+        "Văn thơ Đông Kinh Nghĩa Thục — NXB Văn hoá",
+        "SGK Lịch sử — NXB Giáo dục Việt Nam (phong trào Đông Kinh Nghĩa Thục 1907)"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nam-phong-tap-chi",
+      "ten": "Nam Phong tạp chí",
+      "tac_gia": "Phạm Quỳnh chủ nhiệm kiêm chủ bút phần Quốc ngữ",
+      "thoi_ky": "Ra số đầu tháng 7/1917, đình bản năm 1934",
+      "the_loai": "Tạp chí ba thứ tiếng (Quốc ngữ, chữ Hán, tiếng Pháp)",
+      "chu_de": "can-dai-khang-phap",
+      "lien_quan_tinh": [
+        "ha-noi"
+      ],
+      "loi_binh": "Tạp chí lớn nhất của giai đoạn văn học Quốc ngữ hình thành, ra 210 số trong 17 năm. Công lớn nhất của nó là rèn được một thứ văn xuôi Quốc ngữ đủ sức bàn triết học, khoa học, chính trị — trước Nam Phong, tiếng Việt viết chưa có sẵn lối diễn đạt cho những việc đó. ⚠️ Vai trò chính trị của Phạm Quỳnh và của tạp chí là chỗ giới nghiên cứu còn đánh giá khác nhau; dự án nêu công về mặt ngôn ngữ – văn học, không kết luận thay phần còn lại.",
+      "ghi_chu": "Chỉ giới thiệu ấn phẩm.",
+      "sources": [
+        "Thư viện Quốc gia Việt Nam — bộ sưu tập Nam Phong tạp chí",
+        "Việt Nam văn học sử yếu — Dương Quảng Hàm"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ban-an-che-do-thuc-dan-phap",
+      "ten": "Bản án chế độ thực dân Pháp",
+      "tac_gia": "Nguyễn Ái Quốc (Hồ Chí Minh, 1890–1969)",
+      "thoi_ky": "Xuất bản năm 1925 tại Paris, nguyên tác tiếng Pháp «Le Procès de la colonisation française»",
+      "the_loai": "Chính luận",
+      "chu_de": "can-dai-khang-phap",
+      "lien_quan_tinh": [
+        "nghe-an"
+      ],
+      "loi_binh": "Bản cáo trạng chế độ thuộc địa, viết bằng tiếng Pháp và in ngay tại Paris. Sách lần lượt vạch ra thuế máu, việc bóc lột người bản xứ, tệ tham nhũng của bộ máy cai trị, số phận người phụ nữ thuộc địa. Giọng văn châm biếm sắc, dẫn chứng lấy thẳng từ báo chí và tài liệu Pháp — nên khó bác bỏ bằng chính ngôn ngữ của kẻ bị tố cáo.",
+      "ghi_chu": "Chỉ giới thiệu; kho đã có riêng bộ tác phẩm Hồ Chí Minh phần thơ.",
+      "sources": [
+        "Hồ Chí Minh toàn tập — NXB Chính trị quốc gia Sự thật",
+        "Bảo tàng Hồ Chí Minh — sưu tập tác phẩm thời kỳ Nguyễn Ái Quốc ở Pháp"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "duong-kach-menh",
+      "ten": "Đường Kách mệnh",
+      "tac_gia": "Nguyễn Ái Quốc (Hồ Chí Minh, 1890–1969)",
+      "thoi_ky": "In năm 1927 tại Quảng Châu (Trung Quốc)",
+      "the_loai": "Tập bài giảng chính trị",
+      "chu_de": "can-dai-khang-phap",
+      "lien_quan_tinh": [
+        "nghe-an"
+      ],
+      "loi_binh": "Tập hợp bài giảng cho các lớp huấn luyện cán bộ ở Quảng Châu. Sách viết bằng lối hỏi – đáp, câu ngắn, chữ dễ, cốt cho người ít học cũng theo được. Được công nhận là Bảo vật quốc gia.",
+      "ghi_chu": "Chỉ giới thiệu.",
+      "sources": [
+        "Hồ Chí Minh toàn tập — NXB Chính trị quốc gia Sự thật",
+        "Cục Di sản văn hoá (dsvh.gov.vn) — Bảo vật quốc gia «Đường Kách mệnh»"
+      ],
+      "ban_quyen": "public-domain",
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thi-nhan-viet-nam",
+      "ten": "Thi nhân Việt Nam",
+      "tac_gia": "Hoài Thanh (1909–1982) và Hoài Chân",
+      "thoi_ky": "Hoàn thành năm 1941, in năm 1942",
+      "the_loai": "Phê bình – tuyển thơ",
+      "chu_de": "can-dai-khang-phap",
+      "lien_quan_tinh": [
+        "ha-noi",
+        "nghe-an"
+      ],
+      "ban_quyen": "cited-excerpt",
+      "loi_binh": "Cuốn phê bình dựng nên bản đồ của phong trào Thơ mới: chọn 46 nhà thơ, mỗi người một bài giới thiệu ngắn mà đến nay vẫn được trích lại nhiều nhất. Bài tổng luận «Một thời đại trong thi ca» là văn bản kinh điển về cuộc chuyển mình từ thơ cũ sang thơ mới.",
+      "ghi_chu": "⚠️ KHÔNG chép nguyên văn: Hoài Thanh mất năm 1982, theo Điều 27 Luật Sở hữu trí tuệ tác phẩm còn được bảo hộ tới 2032.",
+      "sources": [
+        "Hoài Thanh, Hoài Chân — Thi nhân Việt Nam, NXB Văn học tái bản",
+        "SGK Ngữ văn 11 — NXB Giáo dục Việt Nam (trích «Một thời đại trong thi ca»)"
+      ],
+      "trang_thai": "draft"
     }
   ]
 }
