@@ -2268,3 +2268,53 @@ input[type="range"] {
   border-bottom: 1px dashed var(--vien);
   margin-bottom: 0.5rem;
 }
+
+/* ── Chú giải từ khó trong chế độ trẻ em (2026-08-25) ────────────────────────
+   Markup do `tu-kho-tre-em.ts` sinh ra và CHỈ sinh ra ở chế độ trẻ em, nên
+   không cần bọc trong `[data-che-do="tre-em"]` — ở chế độ người lớn các class
+   này không tồn tại trong DOM.
+
+   Vùng bấm KHÔNG đạt 44px và đó là cố ý: đây là từ nằm giữa câu văn, kéo cao
+   lên sẽ phá dòng chữ. WCAG 2.5.8 miễn trừ đúng trường hợp "inline trong một
+   câu". Bù lại bằng gạch chân dày và dấu ? để trẻ nhìn ra chỗ bấm được. */
+.tk-tu {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-bottom: 2px dotted var(--brand);
+  border-radius: 3px;
+  padding: 0 0.12em;
+  margin: 0;
+  cursor: pointer;
+}
+.tk-tu::after {
+  content: "?";
+  font-size: 0.68em;
+  font-weight: 700;
+  color: var(--brand);
+  vertical-align: super;
+  margin-left: 0.08em;
+}
+.tk-tu:hover,
+.tk-tu:focus-visible {
+  background: var(--mat-3);
+}
+.tk-tu[aria-expanded="true"] {
+  background: var(--mat-3);
+  border-bottom-style: solid;
+}
+.tk-nghia {
+  display: block;
+  margin: 0.35rem 0 0.45rem;
+  padding: 0.45rem 0.6rem;
+  border-left: 4px solid var(--brand);
+  border-radius: 0 var(--bo-vua) var(--bo-vua) 0;
+  background: var(--mat-2);
+  color: var(--chu-mem);
+  font-size: 0.92em;
+  line-height: 1.5;
+}
+.tk-nghia::before {
+  content: "💡 ";
+}

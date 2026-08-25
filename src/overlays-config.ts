@@ -10,6 +10,7 @@
 // của dải cảnh báo toạ độ về `canhBaoToaDo()`.
 import type { ExpressionSpecification } from "maplibre-gl";
 import { esc } from "./util/html";
+import { escKho } from "./tu-kho-tre-em";
 import { str, num, oneOf, rec } from "./types/parse";
 
 /**
@@ -117,7 +118,7 @@ const photoAttrBlock = (o: OverlayItem): string =>
 const personOverlayPopup = (p: OverlayItem): string => {
   const o = p;
   const tc = canhBaoToaDo(o.do_tin_cay_toa_do);
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
+  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
 };
 
 // Popup HỢP NHẤT cho lớp gộp nhiều schema (nhân vật + thờ tự + sự kiện) — dùng fallback
@@ -128,14 +129,14 @@ const universalPersonPopup = (p: OverlayItem): string => {
   const noi = o.dia_diem || o.noi_tho;
   const ta = o.mo_ta || o.cong_trang;
   const tc = canhBaoToaDo(o.do_tin_cay_toa_do);
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong>${nam ? `<br/><span style="color:#78716c">${esc(nam)}</span>` : ""}${noi ? `<br/>📍 ${esc(noi)}` : ""}${ta ? `<br/><span style="color:#57534e">${esc(ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
+  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong>${nam ? `<br/><span style="color:#78716c">${esc(nam)}</span>` : ""}${noi ? `<br/>📍 ${esc(noi)}` : ""}${ta ? `<br/><span style="color:#57534e">${escKho(ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
 };
 
 // Popup dùng chung cho lớp phủ "sự kiện/trận đánh" (ưu tiên nam_hien_thi rồi nam).
 const eventOverlayPopup = (p: OverlayItem): string => {
   const o = p;
   const tc = canhBaoToaDo(o.do_tin_cay_toa_do);
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi || o.nam)}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
+  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi || o.nam)}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
 };
 
 export const OVERLAYS: OverlayConf[] = [
@@ -176,7 +177,7 @@ export const OVERLAYS: OverlayConf[] = [
     nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn)",
     popup: (p) => {
       const o = p;
-      return `<strong>${esc(o.ten)}</strong><br/>${esc(o.loai ?? "")}${o.dot ? ` · công nhận đợt năm ${esc(o.dot)}` : ""}<br/>📍 ${esc(o.noi_luu_giu ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}`;
+      return `<strong>${esc(o.ten)}</strong><br/>${esc(o.loai ?? "")}${o.dot ? ` · công nhận đợt năm ${esc(o.dot)}` : ""}<br/>📍 ${esc(o.noi_luu_giu ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}`;
     },
   },
   {
@@ -200,7 +201,7 @@ export const OVERLAYS: OverlayConf[] = [
     popup: (p) => {
       const o = p;
       const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ nơi thờ");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.thoi_ky ?? "")}</span><br/>📍 ${esc(o.noi_tho ?? "")}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.thoi_ky ?? "")}</span><br/>📍 ${esc(o.noi_tho ?? "")}${o.cong_trang ? `<br/><span style="color:#57534e">${escKho(o.cong_trang)}</span>` : ""}${tc}`;
     },
   },
   {
@@ -244,7 +245,7 @@ export const OVERLAYS: OverlayConf[] = [
     popup: (p) => {
       const o = p;
       const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ nơi thờ");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.thoi_ky ?? "")}</span><br/>📍 ${esc(o.noi_tho ?? "")}${o.cong_trang ? `<br/><span style="color:#57534e">${esc(o.cong_trang)}</span>` : ""}${tc}`;
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.thoi_ky ?? "")}</span><br/>📍 ${esc(o.noi_tho ?? "")}${o.cong_trang ? `<br/><span style="color:#57534e">${escKho(o.cong_trang)}</span>` : ""}${tc}`;
     },
   },
   {
@@ -291,7 +292,7 @@ export const OVERLAYS: OverlayConf[] = [
     popup: (p) => {
       const o = p;
       const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ quê/khu lưu niệm");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${tc}`;
     },
   },
   {
@@ -313,7 +314,7 @@ export const OVERLAYS: OverlayConf[] = [
     popup: (p) => {
       const o = p;
       const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ quê/khu lưu niệm");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${tc}`;
     },
   },
   {
@@ -332,7 +333,7 @@ export const OVERLAYS: OverlayConf[] = [
     popup: (p) => {
       const o = p;
       const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ đền/đình");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${esc(o.mo_ta)}</span>` : ""}${tc}`;
+      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${tc}`;
     },
   },
   {

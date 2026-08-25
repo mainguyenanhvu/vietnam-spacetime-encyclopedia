@@ -71,6 +71,7 @@ interface NhacItem {
 interface NhacData { ghi_chu?: string; items: NhacItem[] }
 
 import { esc, sourcesHtml } from "./util/html";
+import { escKho } from "./tu-kho-tre-em";
 import { registerPanel, showOnly, hidePanel } from "./panels";
 
 const PHIM_URL = `${import.meta.env.BASE_URL}data/documentaries/phim-tai-lieu.json`;
@@ -187,7 +188,7 @@ function giaoDucCard(v: PhimGiaoDuc): string {
   return `<article class="qg-card">
     <h4>${esc(v.ten)}</h4>
     ${meta ? `<p class="qg-meta">${esc(meta)}</p>` : ""}
-    ${v.mo_ta ? `<p class="qg-bio">${esc(v.mo_ta)}</p>` : ""}
+    ${v.mo_ta ? `<p class="qg-bio">${escKho(v.mo_ta)}</p>` : ""}
     ${badge(v.kenh_loai, v.trang_thai === "draft")}
     ${embed(v.youtube_id, v.ten)}
   </article>`;

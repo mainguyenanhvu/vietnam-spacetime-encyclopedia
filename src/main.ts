@@ -39,6 +39,7 @@ import {
 import { initChipBar } from "./chip-bar";
 import { initLienKetTrangThai } from "./lien-ket-trang-thai";
 import { initHuongDan } from "./huong-dan";
+import { initTuKho, escKho } from "./tu-kho-tre-em";
 
 // Đặt chế độ xem đã lưu trước mọi thứ khác, nếu không trang sẽ nháy sang chế độ
 // mặc định rồi mới đổi.
@@ -897,7 +898,7 @@ function renderNamTienPanel(): void {
   c.innerHTML = `
     <h2>🧭 Nam tiến — mở cõi về phương Nam</h2>
     <p class="namtien-year">${esc(m.nam)} · <strong>${esc(m.ten)}</strong></p>
-    <p>${esc(m.mo_ta)}</p>
+    <p>${escKho(m.mo_ta)}</p>
     <div class="namtien-controls">
       <button data-act="prev"${namTienStep <= 0 ? " disabled" : ""}>◀</button>
       <button data-act="play">${playing ? "⏸ Dừng" : "▶ Tự chạy"}</button>
@@ -1469,6 +1470,9 @@ initCheDo();
 // SAU initCheDo(): lời mời lần đầu chỉ hiện ở chế độ trẻ em, nên phải biết
 // chế độ đã. Trước gomNutTopbar() thì nút 🧭 mới kịp vào danh sách giữ ngoài.
 initHuongDan();
+// Uỷ nhiệm trên document — không phụ thuộc nút nào đã dựng, đặt ở đâu cũng
+// được, để cạnh đây cho cùng một cụm «chữ cho trẻ em».
+initTuKho();
 // Phải chạy SAU mọi init* — nó gom những nút đã có mặt.
 gomNutTopbar();
 
@@ -2096,6 +2100,12 @@ async function loadProfile(name: string): Promise<ProvinceProfile | null> {
 const list = (items: string[] | undefined) =>
   items?.length ? `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>` : "";
 
+// Bản `list` có chú giải từ khó cho chế độ trẻ em. TÁCH RIÊNG chứ không sửa
+// thẳng `list` vì cùng hàm đó còn dựng danh sách NGUỒN — gạch chân chú giải
+// giữa một dòng trích dẫn là làm hỏng chính cái đang được trích.
+const listKho = (items: string[] | undefined) =>
+  items?.length ? `<ul>${items.map((i) => `<li>${escKho(i)}</li>`).join("")}</ul>` : "";
+
 function profileHtml(p: ProvinceProfile): string {
   const vh = p.van_hoa ?? {};
   const section = (title: string, body: string, open = false) =>
@@ -2104,8 +2114,8 @@ function profileHtml(p: ProvinceProfile): string {
       : "";
   return `
     ${p.trang_thai === "draft" ? `<p class="draft-badge">📝 Bản nháp — đang kiểm chứng nguồn</p>` : ""}
-    <p class="tong-quan">${esc(p.tong_quan)}</p>
-    <p class="giai-nghia">💡 <em>${esc(p.giai_nghia_ten)}</em></p>
+    <p class="tong-quan">${escKho(p.tong_quan)}</p>
+    <p class="giai-nghia">💡 <em>${escKho(p.giai_nghia_ten)}</em></p>
     ${section(
       "🕰️ Tên gọi qua các thời kỳ",
       `<table class="facts">${p.ten_thoi_ky
@@ -2113,10 +2123,10 @@ function profileHtml(p: ProvinceProfile): string {
         .join("")}</table>`,
       true,
     )}
-    ${section("📜 Dấu mốc lịch sử", list(p.lich_su))}
+    ${section("📜 Dấu mốc lịch sử", listKho(p.lich_su))}
     ${section(
       "🏺 Di chỉ khảo cổ",
-      list(p.khao_co?.map((k) => `${k.ten} — ${k.mo_ta}`)),
+      listKho(p.khao_co?.map((k) => `${k.ten} — ${k.mo_ta}`)),
     )}
     ${section(
       "🎎 Văn hoá",
@@ -2130,11 +2140,11 @@ function profileHtml(p: ProvinceProfile): string {
     )}
     ${section(
       "🌟 Danh nhân & anh hùng",
-      list(p.danh_nhan.map((d) => `${d.ten}: ${d.ghi_chu}`)),
+      listKho(p.danh_nhan.map((d) => `${d.ten}: ${d.ghi_chu}`)),
     )}
     ${section(
       "🐉 Truyền thuyết & giai thoại",
-      list(p.truyen_thuyet?.map((t) => `${t.ten} — ${t.tom_tat}`)),
+      listKho(p.truyen_thuyet?.map((t) => `${t.ten} — ${t.tom_tat}`)),
     )}
     ${p.bien_so_xe?.length ? `<p><b>🚗 Biển số xe:</b> ${esc(p.bien_so_xe.join(", "))}</p>` : ""}
     ${p.sap_nhap_2025 ? `<p><b>🔀 Sắp xếp 2025:</b> ${esc(p.sap_nhap_2025)}</p>` : ""}
