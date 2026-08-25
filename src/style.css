@@ -2401,3 +2401,186 @@ input[type="range"] {
     display: none !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   RUỘT POPUP — CẤP BẬC CHỮ KIỂU SÁCH ĐIỆN TỬ (2026-08-25)
+
+   Trước đây popup là một chuỗi <br/> nối tên, loại, năm, nơi chốn, mô tả và
+   nguồn lại với nhau — cùng cỡ chữ, cùng khoảng cách, cùng sức nặng, mắt
+   không có chỗ bám. Màu thì gõ thẳng hex vào chuỗi TS nên không đọc token,
+   hai bảng màu người lớn / trẻ em dừng lại ở mép popup.
+
+   Cách của máy đọc sách: cấp bậc dựng bằng KHOẢNG TRẮNG và CỠ CHỮ, không
+   bằng in đậm hay gạch đầu dòng. Tiêu đề sát trên, dòng phụ nhỏ và giãn
+   chữ, thân bài giãn dòng rộng để đọc lâu, nguồn lùi hẳn xuống và im tiếng.
+   ═══════════════════════════════════════════════════════════════════════ */
+.pu {
+  /* Bề rộng đọc được: ~44 ký tự/dòng ở cỡ thân bài. Rộng hơn thì mắt lạc
+     dòng, hẹp hơn thì tiếng Việt có dấu bị ngắt vụn. */
+  max-width: 21rem;
+  color: var(--chu);
+}
+
+.pu-anh {
+  display: block;
+  max-width: 100%;
+  max-height: 8.5rem;
+  border-radius: var(--bo-nho);
+  margin: 0 0 0.55rem;
+}
+
+.pu-ten {
+  margin: 0;
+  font-family: var(--font-tieu-de);
+  font-size: var(--co-lg);
+  font-weight: var(--dam-manh);
+  /* Tiêu đề nhiều dòng phải bó sát nhau, nếu không nó trông như hai đoạn. */
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* Dòng phụ: loại · năm · thời kỳ. Nhỏ, giãn chữ nhẹ, nhạt — đọc lướt qua chứ
+   không đọc kỹ, nên phải KHÁC HẲN thân bài về kết cấu chứ không chỉ về độ đậm.
+
+   CỐ Ý KHÔNG viết hoa toàn bộ. Đo trên popup thật: «DT KIẾN TRÚC NGHỆ THUẬT
+   CẤP QUỐC GIA NGÀY 11/6/1999» viết hoa ở cỡ 0,72rem thì dấu thanh và dấu mũ
+   chồng lên nhau, chữ Việt mất luôn đường viền trên vốn là thứ mắt dùng để
+   nhận dạng từ. Viết hoa chỉ giữ ở nhãn NGẮN của bảng sự kiện bên dưới. */
+.pu-meta {
+  margin: 0.25rem 0 0;
+  font-size: var(--co-2xs);
+  letter-spacing: 0.015em;
+  color: var(--chu-nhat);
+}
+.pu-cham {
+  margin: 0 0.4em;
+  opacity: 0.65;
+}
+
+/* Bảng sự kiện: nhãn treo bên trái, giá trị canh đều một cột. Dạng này đọc
+   nhanh hơn "📍 Nhãn: giá trị" nối bằng <br/> vì mắt có đường dóng dọc. */
+.pu-hang {
+  margin: 0.55rem 0 0;
+  display: grid;
+  gap: 0.28rem;
+  font-size: var(--co-sm);
+}
+.pu-hang > div {
+  display: grid;
+  grid-template-columns: 5.4rem 1fr;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.pu-hang dt {
+  margin: 0;
+  color: var(--chu-nhat);
+  font-size: var(--co-2xs);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* Nhãn dài hơn cột thì xuống dòng chứ không đẩy giãn cột giá trị. */
+  overflow-wrap: anywhere;
+}
+.pu-hang dd {
+  margin: 0;
+  color: var(--chu);
+  line-height: 1.5;
+}
+.pu-icon {
+  margin-right: 0.25em;
+}
+
+/* Thân bài — khối duy nhất người ta ĐỌC chứ không liếc. Giãn dòng 1,62 là
+   khoảng máy đọc sách hay dùng cho cỡ chữ này. */
+.pu-than {
+  margin: 0.6rem 0 0;
+  font-size: var(--co-sm);
+  line-height: 1.62;
+  color: var(--chu-mem);
+}
+
+/* Tên tác phẩm / trích dẫn: in nghiêng thay cho « ». Xem nhamNhay() trong
+   popup-noi-dung.ts — dữ liệu vẫn giữ nguyên dấu, chỉ lớp trình bày đổi. */
+.pu-nhan {
+  font-style: italic;
+  color: var(--chu);
+}
+
+.pu-canh-bao {
+  margin: 0.55rem 0 0;
+  padding: 0.35rem 0.55rem;
+  border-left: 2px solid var(--nhan-sang);
+  background: var(--vien-nhan-nhe);
+  border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
+  font-size: var(--co-2xs);
+  line-height: 1.5;
+  color: var(--chu-mem);
+}
+
+.pu-anh-chu {
+  margin: 0.45rem 0 0;
+  font-size: var(--co-2xs);
+  color: var(--chu-nhat);
+}
+
+/* Nguồn: bắt buộc phải có (bất biến #3) nhưng KHÔNG phải thứ người ta mở
+   popup để đọc. Gập lại, tách bằng một đường mảnh, chữ nhỏ nhất khối. */
+.pu-nguon {
+  margin: 0.6rem 0 0;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--vien);
+  font-size: var(--co-2xs);
+  color: var(--chu-nhat);
+}
+.pu-nguon > summary {
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  list-style: none;
+}
+.pu-nguon > summary::-webkit-details-marker {
+  display: none;
+}
+.pu-nguon > summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform var(--dur-nhanh) var(--ease);
+}
+.pu-nguon[open] > summary::before {
+  content: "▾ ";
+}
+.pu-nguon > p {
+  margin: 0.35rem 0 0;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+/* Khối gập trong popup lớp «Bản đồ cổ» — cùng ngôn ngữ với khối nguồn. */
+.pu-ds {
+  margin: 0.6rem 0 0;
+  font-size: var(--co-2xs);
+}
+.pu-ds > summary {
+  cursor: pointer;
+  color: var(--chu-mem);
+  font-size: var(--co-xs);
+}
+.pu-ds ul {
+  margin: 0.45rem 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+.pu-ds li {
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--vien);
+  line-height: 1.5;
+}
+.pu-ds .pu-ds-nam {
+  font-weight: var(--dam-manh);
+  font-variant-numeric: tabular-nums;
+}
+.pu-ds .pu-ds-phu {
+  display: block;
+  color: var(--chu-nhat);
+}

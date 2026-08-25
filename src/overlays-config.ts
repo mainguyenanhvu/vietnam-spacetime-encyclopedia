@@ -9,8 +9,7 @@
 // Đây là bước DI CHUYỂN, không viết lại. Thay đổi thật duy nhất: gom 9 bản sao
 // của dải cảnh báo toạ độ về `canhBaoToaDo()`.
 import type { ExpressionSpecification } from "maplibre-gl";
-import { esc } from "./util/html";
-import { escKho } from "./tu-kho-tre-em";
+import { dungPopup, escVan, escVanKho } from "./popup-noi-dung";
 import { str, num, oneOf, rec, arr } from "./types/parse";
 
 /**
@@ -22,9 +21,7 @@ import { str, num, oneOf, rec, arr } from "./types/parse";
  * thông tin thật chứ không phải dị bản ngẫu nhiên.
  */
 const canhBaoToaDo = (muc: string, doiTuong = "Toạ độ"): string =>
-  muc && muc !== "cao"
-    ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ ${doiTuong} độ tin cậy ${esc(muc)} — đang soát</span>`
-    : "";
+  muc && muc !== "cao" ? `⚠️ ${doiTuong} độ tin cậy ${muc} — đang soát` : "";
 
 /**
  * Một mục lớp phủ, SAU khi đã qua `parseOverlayItem`.
@@ -59,6 +56,14 @@ export interface OverlayItem {
   chi_huy: string;
   trang_thai: string;
   do_tin_cay_toa_do: string;
+  /**
+   * Nguồn RIÊNG của từng mục.
+   *
+   * 2.584/2.599 mục lớp phủ có `sources[]` trong tệp dữ liệu, nhưng popup cũ
+   * chỉ hiện nguồn cấp LỚP — tức là trích dẫn cụ thể nhất, thứ bất biến #3
+   * đòi phải có, lại là thứ người đọc không bao giờ thấy.
+   */
+  nguon: string[];
   // Năm trường dưới đây chỉ lớp «ban-do-co» dùng. Khai Ở ĐÂY chứ không
   // `as OverlayItem & { ... }` tại chỗ dựng popup — chính lối khai rời rạc đó
   // là thứ đẻ ra 10 tập trường khác nhau và mấy sink XSS đã phải đi vá.
@@ -120,6 +125,9 @@ export function parseOverlayItem(raw: unknown): OverlayItem {
     chi_huy: str(r.chi_huy),
     trang_thai: str(r.trang_thai),
     do_tin_cay_toa_do: str(r.do_tin_cay_toa_do),
+    // `sources` hay `nguon` tuỳ tệp; và cũng phải qua goSerialize vì mảng lồng
+    // trong properties bị MapLibre chuỗi hoá y như `ban_do_ghi`.
+    nguon: arr(goSerialize(r.sources ?? r.nguon), (x) => str(x)).filter(Boolean),
     dia_danh_xua: str(r.dia_danh_xua),
     nhom_ban_do: str(r.nhom_ban_do),
     ban_do_ghi: arr(goSerialize(r.ban_do_ghi), (x) => {
@@ -145,44 +153,51 @@ export interface OverlayConf {
   file: string;
   circleColor: ExpressionSpecification | string;
   nguon: string;
-  popup: (p: OverlayItem) => string;
+  /**
+   * @param p        mục đã parse.
+   * @param nguonLop nguồn cấp LỚP — chỉ dùng khi mục không có nguồn riêng.
+   *                 Trước đây main.ts nối chuỗi này vào SAU popup mà KHÔNG
+   *                 escape; nay nó đi vào đúng khối nguồn và có escape.
+   */
+  popup: (p: OverlayItem, nguonLop: string) => string;
 }
 
-// Ảnh minh hoạ (chân dung/tư liệu) hiện trong popup nếu có URL hợp lệ — chỉ chấp nhận
-// https:// (chặn javascript:/http: không mã hoá) để tránh chèn script qua dữ liệu.
-const photoImgBlock = (o: OverlayItem): string =>
-  o.anh && o.anh.startsWith("https://")
-    ? `<img src="${esc(o.anh)}" alt="${esc(o.ten)}" loading="lazy" style="max-width:120px;max-height:120px;border-radius:6px;display:block;margin:0 0 4px" referrerpolicy="no-referrer"/>`
-    : "";
-const photoAttrBlock = (o: OverlayItem): string =>
-  o.anh && o.anh.startsWith("https://") && o.anh_nguon
-    ? `<br/><span style="color:#a8a29e;font-size:0.66rem">🖼️ ${esc(o.anh_nguon)}${o.anh_giay_phep ? " · " + esc(o.anh_giay_phep) : ""}</span>`
+// Chỉ nhận https:// — chặn javascript:/http: không mã hoá, tức chặn chèn script
+// qua dữ liệu ảnh.
+const anhHopLe = (o: OverlayItem): string =>
+  o.anh && o.anh.startsWith("https://") ? o.anh : "";
+const chuAnh = (o: OverlayItem): string =>
+  anhHopLe(o) && o.anh_nguon
+    ? `🖼️ ${o.anh_nguon}${o.anh_giay_phep ? " · " + o.anh_giay_phep : ""}`
     : "";
 
-// Popup dùng chung cho các lớp phủ "nhân vật" (tên · năm · quê/đền · mô tả · cảnh báo toạ độ).
-const personOverlayPopup = (p: OverlayItem): string => {
-  const o = p;
-  const tc = canhBaoToaDo(o.do_tin_cay_toa_do);
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
-};
-
-// Popup HỢP NHẤT cho lớp gộp nhiều schema (nhân vật + thờ tự + sự kiện) — dùng fallback
-// nam_hien_thi ?? thoi_ky ?? nam · dia_diem ?? noi_tho · mo_ta ?? cong_trang. Không để trống dòng.
-const universalPersonPopup = (p: OverlayItem): string => {
-  const o = p;
-  const nam = o.nam_hien_thi || o.thoi_ky || o.nam;
-  const noi = o.dia_diem || o.noi_tho;
-  const ta = o.mo_ta || o.cong_trang;
-  const tc = canhBaoToaDo(o.do_tin_cay_toa_do);
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong>${nam ? `<br/><span style="color:#78716c">${esc(nam)}</span>` : ""}${noi ? `<br/>📍 ${esc(noi)}` : ""}${ta ? `<br/><span style="color:#57534e">${escKho(ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
-};
-
-// Popup dùng chung cho lớp phủ "sự kiện/trận đánh" (ưu tiên nam_hien_thi rồi nam).
-const eventOverlayPopup = (p: OverlayItem): string => {
-  const o = p;
-  const tc = canhBaoToaDo(o.do_tin_cay_toa_do);
-  return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi || o.nam)}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
-};
+/**
+ * Popup dùng chung cho gần hết lớp phủ.
+ *
+ * Ba hàm cũ (personOverlayPopup / universalPersonPopup / eventOverlayPopup) chỉ
+ * khác nhau ở THỨ TỰ DỰ PHÒNG của mấy trường — một hàm lấy `nam_hien_thi`, hàm
+ * kia lấy `nam_hien_thi || thoi_ky || nam`. Gộp về một chuỗi dự phòng đầy đủ
+ * thì không lớp nào mất chữ, mà lại thêm được chữ cho lớp trước đây bỏ sót:
+ * `chien-dich-tran-danh` có CẢ `mo_ta` lẫn `ket_qua` nhưng popup cũ chỉ hiện
+ * `ket_qua`, nay hiện cả hai ở hai chỗ khác nhau.
+ *
+ * @param nhanToaDo cụm danh từ trong dải cảnh báo — mỗi lớp nói rõ toạ độ NÀO
+ *                  đang bị nghi ngờ (nơi thờ, quê, đền/đình…).
+ */
+const popupChung = (o: OverlayItem, nguonLop: string, nhanToaDo = "Toạ độ"): string =>
+  dungPopup({
+    anh: anhHopLe(o),
+    anh_chu: chuAnh(o),
+    ten: o.ten,
+    meta: [o.nam_hien_thi || o.thoi_ky || o.nam, o.chi_huy],
+    hang: [
+      { icon: "📍", nhan: "Nơi", gia_tri: o.dia_diem || o.noi_tho || o.noi_luu_giu },
+      { icon: "🏁", nhan: "Kết quả", gia_tri: o.ket_qua },
+    ],
+    than: escVanKho(o.mo_ta || o.cong_trang),
+    canh_bao: canhBaoToaDo(o.do_tin_cay_toa_do, nhanToaDo),
+    nguon: o.nguon.join(" · ") || nguonLop,
+  });
 
 // Popup lớp «Bản đồ cổ». Tiêu đề là ĐỊA ĐIỂM NGÀY NAY, thân là danh sách mọi
 // tấm bản đồ cổ từng ghi tên nơi đó — xem `scripts/build_ban_do_co_overlay.mjs`
@@ -197,28 +212,27 @@ const KY_HIEU_NHOM: Record<string, string> = {
   "trung-quoc": "📜",
 };
 
-const banDoCoPopup = (p: OverlayItem): string => {
+const banDoCoPopup = (p: OverlayItem, nguonLop: string): string => {
   const o = p;
   const dong = (g: OverlayItem["ban_do_ghi"][number]): string =>
-    `<li style="margin-bottom:5px"><b>${esc(g.nam)}</b> · «${esc(g.dia_danh_xua)}» — ${esc(
-      g.ten_ban_do,
-    )} ${KY_HIEU_NHOM[g.nhom] ?? ""}<br/><span style="color:#78716c;font-size:0.72rem">${escKho(
+    `<li><span class="pu-ds-nam">${escVan(g.nam)}</span> ${escVan(
+      `«${g.dia_danh_xua}»`,
+    )} — ${escVan(g.ten_ban_do)} ${KY_HIEU_NHOM[g.nhom] ?? ""}<span class="pu-ds-phu">${escVanKho(
       g.ghi_chu,
-    )}</span>${
-      g.do_tin_cay !== "cao"
-        ? `<br/><span style="color:#b45309;font-size:0.68rem">⚠️ Khớp vị trí độ tin cậy ${esc(
-            g.do_tin_cay,
-          )}</span>`
-        : ""
-    }</li>`;
-  return `<strong>${esc(o.ten)}</strong>
-    <br/><span style="color:#78716c">🕰️ Bản đồ cổ gọi nơi này là: <b>${esc(o.dia_danh_xua)}</b></span>
-    <br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>
-    <details style="margin-top:6px"><summary style="cursor:pointer">🗺️ Xem ${esc(
-      String(o.ban_do_ghi.length),
-    )} tấm bản đồ (${esc(o.nam_hien_thi)})</summary>
-    <ul style="margin:6px 0 0;padding-left:18px">${o.ban_do_ghi.map(dong).join("")}</ul>
-    <p style="margin:6px 0 0;color:#78716c;font-size:0.72rem">Hồ sơ đầy đủ từng tấm: Thư viện → 🗺️ Bản đồ cổ.</p></details>`;
+    )}${g.do_tin_cay !== "cao" ? ` ⚠️ Khớp vị trí độ tin cậy ${escVan(g.do_tin_cay)}` : ""}</span></li>`;
+  return dungPopup({
+    ten: o.ten,
+    meta: ["Bản đồ cổ", o.nam_hien_thi],
+    hang: [{ icon: "🕰️", nhan: "Tên xưa", gia_tri: o.dia_danh_xua }],
+    than: escVanKho(o.mo_ta),
+    them:
+      `<details class="pu-ds"><summary>🗺️ ${escVan(
+        String(o.ban_do_ghi.length),
+      )} tấm bản đồ từng ghi tên nơi này</summary>` +
+      `<ul>${o.ban_do_ghi.map(dong).join("")}</ul>` +
+      `<p>Hồ sơ đầy đủ từng tấm: Thư viện → 🗺️ Bản đồ cổ.</p></details>`,
+    nguon: o.nguon.join(" · ") || nguonLop,
+  });
 };
 
 export const OVERLAYS: OverlayConf[] = [
@@ -237,8 +251,16 @@ export const OVERLAYS: OverlayConf[] = [
       "#7c3aed",
     ],
     nguon: "UNESCO (whc.unesco.org) · Cục Di sản văn hóa",
-    popup: (p) =>
-      `<strong>${esc(p.ten)}</strong><br/>${esc(p.hang_muc ?? "")} · Ghi danh ${esc(p.nam ?? "")}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
+    popup: (p, nguonLop) =>
+      dungPopup({
+        anh: anhHopLe(p),
+        anh_chu: chuAnh(p),
+        ten: p.ten,
+        meta: [p.hang_muc, p.nam ? `Ghi danh ${p.nam}` : ""],
+        hang: [{ icon: "📍", nhan: "Tỉnh", gia_tri: p.tinh_34 }],
+        than: escVanKho(p.mo_ta),
+        nguon: p.nguon.join(" · ") || nguonLop,
+      }),
   },
   {
     id: "di-tich-qgdb",
@@ -247,8 +269,16 @@ export const OVERLAYS: OverlayConf[] = [
     file: "data/overlays/di-tich-qgdb.json",
     circleColor: "#b45309",
     nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Quyết định xếp hạng của Thủ tướng Chính phủ",
-    popup: (p) =>
-      `<strong>${esc(p.ten)}</strong><br/>${esc(p.loai ?? "di tích")} · Xếp hạng ${esc(p.nam ?? "")}${p.dot ? ` (đợt ${esc(p.dot)})` : ""}<br/><span style="color:#78716c">${esc(p.tinh_34 ?? "")}</span>`,
+    popup: (p, nguonLop) =>
+      dungPopup({
+        anh: anhHopLe(p),
+        anh_chu: chuAnh(p),
+        ten: p.ten,
+        meta: [p.loai || "di tích", p.nam ? `Xếp hạng ${p.nam}${p.dot ? ` · đợt ${p.dot}` : ""}` : ""],
+        hang: [{ icon: "📍", nhan: "Tỉnh", gia_tri: p.tinh_34 }],
+        than: escVanKho(p.mo_ta),
+        nguon: p.nguon.join(" · ") || nguonLop,
+      }),
   },
   {
     id: "bao-vat-quoc-gia",
@@ -257,10 +287,16 @@ export const OVERLAYS: OverlayConf[] = [
     file: "data/overlays/bao-vat-quoc-gia.json",
     circleColor: "#d4af37",
     nguon: "Cục Di sản văn hóa (dsvh.gov.vn) · Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn)",
-    popup: (p) => {
-      const o = p;
-      return `<strong>${esc(o.ten)}</strong><br/>${esc(o.loai ?? "")}${o.dot ? ` · công nhận đợt năm ${esc(o.dot)}` : ""}<br/>📍 ${esc(o.noi_luu_giu ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}`;
-    },
+    popup: (p, nguonLop) =>
+      dungPopup({
+        anh: anhHopLe(p),
+        anh_chu: chuAnh(p),
+        ten: p.ten,
+        meta: [p.loai, p.dot ? `Công nhận đợt năm ${p.dot}` : ""],
+        hang: [{ icon: "🏛️", nhan: "Lưu giữ", gia_tri: p.noi_luu_giu }],
+        than: escVanKho(p.mo_ta),
+        nguon: p.nguon.join(" · ") || nguonLop,
+      }),
   },
   {
     id: "huyen-su-khai-quoc",
@@ -280,11 +316,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái · Việt Điện U Linh · Phủ Biên Tạp Lục · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p;
-      const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ nơi thờ");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.thoi_ky ?? "")}</span><br/>📍 ${esc(o.noi_tho ?? "")}${o.cong_trang ? `<br/><span style="color:#57534e">${escKho(o.cong_trang)}</span>` : ""}${tc}`;
-    },
+    popup: (p, nguonLop) => popupChung(p, nguonLop, "Toạ độ nơi thờ"),
   },
   {
     id: "khoa-bang-danh-nhan",
@@ -306,7 +338,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Đại Việt Sử Ký Toàn Thư · Đại Nam Thực Lục · Phủ Biên Tạp Lục · Cục Di sản Văn hoá (dsvh.gov.vn) · vanmieu.gov.vn",
-    popup: universalPersonPopup,
+    popup: popupChung,
   },
   {
     id: "danh-nhan-cac-trieu",
@@ -324,11 +356,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Đại Việt Sử Ký Toàn Thư · Đại Nam Thực Lục · Đại Nam Liệt Truyện · Hải Thượng Y Tông Tâm Lĩnh · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p;
-      const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ nơi thờ");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.thoi_ky ?? "")}</span><br/>📍 ${esc(o.noi_tho ?? "")}${o.cong_trang ? `<br/><span style="color:#57534e">${escKho(o.cong_trang)}</span>` : ""}${tc}`;
-    },
+    popup: (p, nguonLop) => popupChung(p, nguonLop, "Toạ độ nơi thờ"),
   },
   {
     id: "chien-dich-tran-danh",
@@ -345,11 +373,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Đại Việt Sử Ký Toàn Thư · Hoàng Lê nhất thống chí · Lịch sử Việt Nam (Viện Sử học) · Cục Di sản Văn hoá (dsvh.gov.vn)",
-    popup: (p) => {
-      const o = p;
-      const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ địa điểm");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi || o.nam)}${o.chi_huy ? " · " + esc(o.chi_huy) : ""}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.ket_qua ? `<br/><span style="color:#57534e">${esc(o.ket_qua)}</span>` : ""}${tc}`;
-    },
+    popup: (p, nguonLop) => popupChung(p, nguonLop, "Toạ độ địa điểm"),
   },
   {
     id: "anh-hung-can-hien-dai",
@@ -371,11 +395,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Báo Quân đội Nhân dân (qdnd.vn) · Báo Nhân Dân (nhandan.vn) · Bảo tàng Lịch sử Quân sự Việt Nam · Cổng TTĐT Chính phủ (baochinhphu.vn)",
-    popup: (p) => {
-      const o = p;
-      const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ quê/khu lưu niệm");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${tc}`;
-    },
+    popup: (p, nguonLop) => popupChung(p, nguonLop, "Toạ độ quê/khu lưu niệm"),
   },
   {
     id: "danh-nhan-van-hoa-can-hien-dai",
@@ -393,11 +413,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Báo Nhân Dân · Cổng TTĐT Chính phủ · Cục Di sản Văn hoá · Bảo tàng Lịch sử Quốc gia · Sức khoẻ & Đời sống (Bộ Y tế)",
-    popup: (p) => {
-      const o = p;
-      const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ quê/khu lưu niệm");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${tc}`;
-    },
+    popup: (p, nguonLop) => popupChung(p, nguonLop, "Toạ độ quê/khu lưu niệm"),
   },
   {
     id: "thanh-hoang-danh-than",
@@ -412,11 +428,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Cục Du lịch Quốc gia · Cổng TTĐT tỉnh Quảng Ninh · Bảo tàng Lịch sử Quốc gia · Sở Du lịch Ninh Bình · Báo An Giang · Cổng du lịch Bắc Ninh",
-    popup: (p) => {
-      const o = p;
-      const tc = canhBaoToaDo(o.do_tin_cay_toa_do, "Toạ độ đền/đình");
-      return `<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi ?? "")}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${tc}`;
-    },
+    popup: (p, nguonLop) => popupChung(p, nguonLop, "Toạ độ đền/đình"),
   },
   {
     id: "me-vnah",
@@ -426,7 +438,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#db2777",
     nguon:
       "Báo Chính phủ · Báo QĐND · Bảo tàng Phụ nữ Nam Bộ · cổng tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "vua-hoang-de",
@@ -436,7 +448,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#a16207",
     nguon:
       "Trung tâm Bảo tồn Di tích Cố đô Huế · Cục Di sản văn hóa · cổng tỉnh · Báo Nhân Dân",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "chi-si-cach-mang",
@@ -446,7 +458,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#b91c1c",
     nguon:
       "Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · TTXVN · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "to-nghe-danh-than",
@@ -456,7 +468,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#0891b2",
     nguon:
       "Cục Di sản văn hóa · Sở VHTT các tỉnh · Cục Bản quyền tác giả · cổng tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "di-tich-cach-mang",
@@ -474,7 +486,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Cục Di sản văn hóa · Báo điện tử Đảng Cộng sản · Bảo tàng Lịch sử Quốc gia · Cục Du lịch Quốc gia (vietnamtourism.vn) · cổng tỉnh",
-    popup: eventOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "nghia-trang-liet-si",
@@ -499,7 +511,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Cục Người có công (Bộ Nội vụ) · Báo Quân đội nhân dân · Báo Nhân Dân · Báo điện tử Đảng Cộng sản · cổng TTĐT tỉnh/huyện",
-    popup: eventOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "nghe-nhan-di-san",
@@ -509,7 +521,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#7c3aed",
     nguon:
       "Cục Di sản văn hóa · Sở VHTT các tỉnh · Báo Nhân Dân · Cục Du lịch Quốc gia",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "di-tich-quoc-gia",
@@ -529,7 +541,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Cục Di sản văn hóa (dsvh.gov.vn) · Báo Đảng các tỉnh · Cổng TTĐT tỉnh",
-    popup: eventOverlayPopup,
+    popup: popupChung,
   },
   {
     // Lớp mở 2026-08-11 (quyết định chủ dự án, phương án A): di tích do UBND
@@ -553,7 +565,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "Cổng TTĐT tỉnh/thành phố · Báo Đảng các tỉnh · Phòng VH&TT cấp huyện",
-    popup: eventOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "le-hoi-truyen-thong",
@@ -563,7 +575,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#ea580c",
     nguon:
       "Cục Di sản văn hóa · Cục Du lịch Quốc gia · Sở VHTT các tỉnh · cổng tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "cong-trinh-ky-luc",
@@ -573,7 +585,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#d97706",
     nguon:
       "Cổng Chính phủ (chinhphu.vn) · TTXVN · Nhân Dân · báo Đảng các tỉnh · cổng bộ ngành",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "truyen-thuyet-dan-gian",
@@ -583,7 +595,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#7c3aed",
     nguon:
       "Cổng TTĐT tỉnh/huyện · báo Đảng bộ tỉnh · Cục Di sản văn hoá · Sở VHTTDL · TTXVN",
-    popup: eventOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "danh-thang-thien-nhien",
@@ -593,7 +605,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#059669",
     nguon:
       "Cục Du lịch Quốc gia (vietnamtourism.gov.vn) · Cục Di sản văn hóa (dsvh.gov.vn) · cổng TTĐT các tỉnh · báo Đảng",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "bao-tang",
@@ -603,7 +615,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#0891b2",
     nguon:
       "Website chính thức các bảo tàng công lập · Cục Di sản văn hóa (dsvh.gov.vn)",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "di-san-phi-vat-the",
@@ -619,7 +631,7 @@ export const OVERLAYS: OverlayConf[] = [
     ],
     nguon:
       "UNESCO (ich.unesco.org) · Cục Di sản văn hóa (dsvh.gov.vn) · báo Đảng các tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "su-than-ngoai-giao",
@@ -629,7 +641,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#4f46e5",
     nguon:
       "Bảo tàng Lịch sử Quốc gia · Giáo dục & Thời đại · Báo Nhân Dân · scov.gov.vn",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "danh-y-luong-y",
@@ -639,7 +651,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#047857",
     nguon:
       "Sức khỏe & Đời sống · Viện Y dược học dân tộc · Bảo tàng Lịch sử Quốc gia · cổng tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   // Lớp `nu-danh-nhan-lich-su` đã GIẢI THỂ 2026-08-05 (chỉ thị #10: chia theo
   // lĩnh vực / chủ đề / giai đoạn, KHÔNG theo giới tính). 38 mục về 8 lớp lĩnh
@@ -653,7 +665,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#0f766e",
     nguon:
       "Báo Dân tộc & Phát triển · Ủy ban Dân tộc · Báo QĐND · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "thieu-nien-anh-hung",
@@ -663,7 +675,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#be123c",
     nguon:
       "Bảo tàng Lịch sử Quốc gia · Báo Thiếu niên Tiền phong · Báo Nhân Dân · cổng tỉnh",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "thien-su-cao-tang",
@@ -673,7 +685,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#ca8a04",
     nguon:
       "Giác Ngộ · Phật giáo VN · Tạp chí NC Phật học · Báo Nhân Dân · dsvh.gov.vn",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "danh-nhan-quan-su-co-trung-dai",
@@ -683,7 +695,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#991b1b",
     nguon:
       "Bảo tàng Lịch sử Quốc gia · Khu di tích Lam Kinh · Báo Văn hoá · cổng tỉnh · Dân trí · Đại Việt Sử Ký Toàn Thư · Lĩnh Nam Chích Quái",
-    popup: universalPersonPopup,
+    popup: popupChung,
   },
   {
     id: "nha-the-thao-lich-su",
@@ -693,7 +705,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#166534",
     nguon:
       "Báo Nhân Dân · Thể thao & Văn hoá · CAND · Lao Động · Thanh Niên · Vovinam",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "nghia-si-can-vuong",
@@ -703,7 +715,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#881337",
     nguon:
       "Báo Nhân Dân · QĐND · cổng tỉnh · dsvh.gov.vn · bảo tàng · di tích",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "tri-thuc-khoa-hoc-tk20",
@@ -713,7 +725,7 @@ export const OVERLAYS: OverlayConf[] = [
     circleColor: "#065f46",
     nguon:
       "Báo Nhân Dân · Viện Hàn lâm KHCN/KHXH VN · ĐHQG · MEDDOM · Tia Sáng",
-    popup: personOverlayPopup,
+    popup: popupChung,
   },
   {
     id: "ban-do-co",

@@ -23,6 +23,7 @@
 // nhà nước — niên đại thật nằm ở nhãn thời kỳ (PERIODS[i].nhan).
 
 import { esc } from "./util/html";
+import { escVan } from "./popup-noi-dung";
 import { fetchJson } from "./util/fetch";
 import { str, num, oneOf, rec, itemsOf } from "./types/parse";
 
@@ -306,11 +307,11 @@ function veNote(hien: boolean): void {
     ${oChon}
     <p class="moc-ten">${esc(m.ten)}</p>
     ${dongTrieuDai(m.nam)}
-    ${m.mo_ta ? `<p class="moc-mo-ta">${esc(m.mo_ta)}</p>` : ""}
+    ${m.mo_ta ? `<p class="moc-mo-ta">${escVan(m.mo_ta)}</p>` : ""}
     ${
       // `ghi_chu` là chỗ ghi hai nguồn chính thống vênh nhau. Đây là nội dung
       // phải HIỆN RA cho người đọc, không phải ghi chú nội bộ (quy tắc #4).
-      m.ghi_chu ? `<p class="moc-venh">⚠️ ${esc(m.ghi_chu)}</p>` : ""
+      m.ghi_chu ? `<p class="moc-venh">⚠️ ${escVan(m.ghi_chu)}</p>` : ""
     }
     ${m.nguon ? `<p class="moc-nguon">${esc(m.nguon)}</p>` : ""}
     ${dongBanDo()}`;

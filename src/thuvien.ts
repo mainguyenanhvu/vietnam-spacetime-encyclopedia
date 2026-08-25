@@ -17,6 +17,7 @@
 //   .lib-cong-cu — tra cứu niên hiệu (không phải tác phẩm, không sắp xếp)
 
 import { esc } from "./util/html";
+import { escVan } from "./popup-noi-dung";
 import { fetchJson } from "./util/fetch";
 import { str, num, strs, oneOf, rec, arr, itemsOf } from "./types/parse";
 import { showOnly } from "./panels";
@@ -669,7 +670,7 @@ function mucTuCaDao(c: CaDao): Muc {
     nguon: c.nguon,
     than: () => `
       <blockquote class="lib-tho">${dong(c.noi_dung)}</blockquote>
-      ${c.y_nghia ? `<p class="lib-loi-binh">${esc(c.y_nghia)}</p>` : ""}`,
+      ${c.y_nghia ? `<p class="lib-loi-binh">${escVan(c.y_nghia)}</p>` : ""}`,
   };
 }
 

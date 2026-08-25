@@ -27,7 +27,7 @@ import { initQuocGia } from "./quocgia";
 import { initTimeline } from "./timeline";
 import { initMocLichSu, capNhatMoc } from "./moc-lich-su";
 import { initThuVien, loadLiterature, htmlVanThoTinh } from "./thuvien";
-import { esc, sourcesHtml } from "./util/html";
+import { esc } from "./util/html";
 import { fetchJson } from "./util/fetch";
 import { str, num, strs, rec, arr, itemsOf } from "./types/parse";
 import {
@@ -39,7 +39,10 @@ import {
 import { initChipBar } from "./chip-bar";
 import { initLienKetTrangThai } from "./lien-ket-trang-thai";
 import { initHuongDan } from "./huong-dan";
-import { initTuKho, escKho } from "./tu-kho-tre-em";
+import { initTuKho } from "./tu-kho-tre-em";
+// escVanKho = escKho + lớp typo: dấu « » thành chữ nghiêng thay vì hiện nguyên
+// hai mũi tên trên màn hình. Xem popup-noi-dung.ts.
+import { dungPopup, escVanKho } from "./popup-noi-dung";
 
 // Đặt chế độ xem đã lưu trước mọi thứ khác, nếu không trang sẽ nháy sang chế độ
 // mặc định rồi mới đổi.
@@ -729,20 +732,21 @@ const LOC_TAT_DON_VI = ["==", ["get", "ky_id"], "__khong-thoi-ky-nao__"];
 
 let donViXuaDangNap: Promise<void> | null = null;
 
-const donViXuaPopup = (o: DonViXua): string => {
-  const canhBao =
-    o.do_tin_cay !== "cao"
-      ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠️ Vị trí độ tin cậy ${esc(
-          o.do_tin_cay,
-        )} — lý do nêu trong ghi chú</span>`
-      : "";
-  return `<strong>${esc(o.ten)}</strong>
-    <br/><span style="color:#78716c">${esc(o.cap)} · ${esc(o.thoi_ky)}</span>
-    <br/>🏛️ <b>Lỵ sở:</b> ${esc(o.ly_so)}
-    <br/>📍 <b>Nay là:</b> ${escKho(o.nay_la)}
-    <br/><span style="color:#57534e">${escKho(o.ghi_chu)}</span>${canhBao}
-    ${sourcesHtml(o.nguon)}`;
-};
+const donViXuaPopup = (o: DonViXua): string =>
+  dungPopup({
+    ten: o.ten,
+    meta: [o.cap, o.thoi_ky],
+    hang: [
+      { icon: "🏛️", nhan: "Lỵ sở", gia_tri: o.ly_so },
+      { icon: "📍", nhan: "Nay là", gia_tri: o.nay_la },
+    ],
+    than: escVanKho(o.ghi_chu),
+    canh_bao:
+      o.do_tin_cay !== "cao"
+        ? `⚠️ Vị trí độ tin cậy ${o.do_tin_cay} — lý do nêu trong ghi chú`
+        : "",
+    nguon: o.nguon.join(" · "),
+  });
 
 function ensureDonViXua(): Promise<void> {
   if (donViXuaDangNap) return donViXuaDangNap;
@@ -1084,7 +1088,7 @@ function renderNamTienPanel(): void {
   c.innerHTML = `
     <h2>🧭 Nam tiến — mở cõi về phương Nam</h2>
     <p class="namtien-year">${esc(m.nam)} · <strong>${esc(m.ten)}</strong></p>
-    <p>${escKho(m.mo_ta)}</p>
+    <p>${escVanKho(m.mo_ta)}</p>
     <div class="namtien-controls">
       <button data-act="prev"${namTienStep <= 0 ? " disabled" : ""}>◀</button>
       <button data-act="play">${playing ? "⏸ Dừng" : "▶ Tự chạy"}</button>
@@ -1791,11 +1795,11 @@ function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
     // Parse LẠI ở đây chứ không cast: properties do MapLibre trả về đã đi qua
     // một vòng serialize, và cast chỉ là lời khai. parse thì có ép kiểu thật.
     const p = parseOverlayItem(f.properties);
-    moPopup(
-      map,
-      e.lngLat,
-      `${conf.popup(p)}<br/><span style="color:#78716c;font-size:0.75rem">Nguồn: ${conf.nguon}</span>`,
-    );
+    // Nguồn cấp LỚP đi vào trong popup chứ không nối đuôi vào sau nữa. Lối cũ
+    // vừa nhét một dòng xám không cấp bậc xuống cuối mọi popup, vừa chèn
+    // `conf.nguon` vào HTML KHÔNG escape. Nay nó là tham số, và mục nào có
+    // `sources[]` riêng thì nguồn riêng thắng — 2.584/2.599 mục có.
+    moPopup(map, e.lngLat, conf.popup(p, conf.nguon), { maxWidth: "360px" });
   });
   // CỐ Ý KHÔNG gắn mouseenter/mouseleave theo từng lớp ở đây — xem
   // `troChuotTrenLopPhu` bên dưới.
@@ -2295,7 +2299,7 @@ const list = (items: string[] | undefined) =>
 // thẳng `list` vì cùng hàm đó còn dựng danh sách NGUỒN — gạch chân chú giải
 // giữa một dòng trích dẫn là làm hỏng chính cái đang được trích.
 const listKho = (items: string[] | undefined) =>
-  items?.length ? `<ul>${items.map((i) => `<li>${escKho(i)}</li>`).join("")}</ul>` : "";
+  items?.length ? `<ul>${items.map((i) => `<li>${escVanKho(i)}</li>`).join("")}</ul>` : "";
 
 function profileHtml(p: ProvinceProfile): string {
   const vh = p.van_hoa ?? {};
@@ -2305,8 +2309,8 @@ function profileHtml(p: ProvinceProfile): string {
       : "";
   return `
     ${p.trang_thai === "draft" ? `<p class="draft-badge">📝 Bản nháp — đang kiểm chứng nguồn</p>` : ""}
-    <p class="tong-quan">${escKho(p.tong_quan)}</p>
-    <p class="giai-nghia">💡 <em>${escKho(p.giai_nghia_ten)}</em></p>
+    <p class="tong-quan">${escVanKho(p.tong_quan)}</p>
+    <p class="giai-nghia">💡 <em>${escVanKho(p.giai_nghia_ten)}</em></p>
     ${section(
       "🕰️ Tên gọi qua các thời kỳ",
       `<table class="facts">${p.ten_thoi_ky
