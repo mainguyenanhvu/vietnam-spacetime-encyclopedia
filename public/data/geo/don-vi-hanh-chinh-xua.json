@@ -1,6 +1,6 @@
 {
   "ghi_chu": "ĐƠN VỊ HÀNH CHÍNH QUA CÁC THỜI KỲ — quận · châu · phủ · lộ · trấn · thừa tuyên · tỉnh. Mỗi mục là MỘT ĐIỂM đặt tại LỴ SỞ (nơi đặt trị sở) của đơn vị đó, KHÔNG phải một vùng. Đây là quyết định sử liệu chứ không phải giới hạn kỹ thuật: chính sử và địa chí ghi rõ TÊN đơn vị, lỵ sở và vùng tương ứng ngày nay, nhưng KHÔNG ghi đường biên — vẽ vùng là bịa ra một độ chính xác không tồn tại (cùng nguyên tắc đã áp cho đường biên 1887, xem docs/ranh-gioi-1887-1895-phan-quyet.md). Trường `ky_id` nối mục với thời kỳ trên thanh thời gian; kéo thanh trượt thì lớp này đổi theo. Trường `do_tin_cay` nói rõ vì sao điểm đứng ở đó: `cao` = lỵ sở đã định vị bằng khảo cổ hoặc di tích còn tại chỗ · `trung` = neo về nơi cùng tên ngày nay · `thap` = chỉ biết vùng, chưa tra được lỵ sở. CHƯA TRA ĐƯỢC (để trống, KHÔNG bịa): tên 12 châu của An Nam đô hộ phủ (612), tên 10 đạo của Đại Cồ Việt (968) — chính sử chép số lượng mà không chép đủ danh sách.",
-  "ngay_cap_nhat": "2026-08-25",
+  "ngay_cap_nhat": "2026-08-26",
   "sources": [
     "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)",
     "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)",
@@ -515,6 +515,15 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Bắc Ninh",
+        "Bắc Giang"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Cổng TTĐT tỉnh Bắc Ninh — «Quá trình hình thành và phát triển tỉnh Bắc Ninh»: năm 1831 (Minh Mệnh 12) đổi trấn Bắc Ninh thành tỉnh Bắc Ninh gồm 21 huyện, rộng khoảng 6.000 km²; tháng 10/1895 thực dân Pháp chia tỉnh Bắc Ninh thành HAI tỉnh Bắc Ninh và Bắc Giang, lấy sông Cầu làm ranh giới — https://bacninh.gov.vn/news/-/details/20182/qua-trinh-hinh-thanh-va-phat-trien-tinh-bac-ninh",
+        "Cục Văn thư và Lưu trữ nhà nước — «Bắc Ninh xưa» — https://www.archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/tin-noi-bat/bac-ninh-xua.htm"
       ]
     },
     {
@@ -778,6 +787,15 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Bình Thuận",
+        "Ninh Thuận"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Năm Minh Mạng thứ 13 (1832), sau khi bỏ cấp trấn Thuận Thành, đặt làm 2 phủ Ninh Thuận và Hàm Thuận cùng 4 huyện An Phước, Tuy Phong, Hoà Đa, Tuy Định; phủ Bình Thuận chính thức thành tỉnh — tức tỉnh Bình Thuận 1832 bao gồm cả phủ Ninh Thuận, phần sau này tách thành tỉnh Ninh Thuận.",
+        "Báo Cáo Viên (Ban Tuyên giáo Trung ương) — «Lịch sử tỉnh Bình Thuận: những lần sáp nhập và chia tách» — https://baocaovien.vn/tin-tuc/lich-su-tinh-binh-thuan-nhung-lan-sat-nhap-va-chia-tach-cua-thu-phu-thanh-long/209924.html"
       ]
     },
     {
@@ -819,6 +837,17 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Đồng Nai",
+        "Bà Rịa - Vũng Tàu",
+        "Bình Dương",
+        "Bình Phước"
+      ],
+      "khop": "mot-phan",
+      "nguon_anh_xa": [
+        "Báo Đồng Nai — «Biên Hòa - Đồng Nai qua các thời kỳ»: năm 1832 trấn Biên Hòa nâng thành tỉnh Biên Hòa; địa giới ứng với phạm vi các tỉnh Bình Phước, Bình Dương, Đồng Nai, Bà Rịa – Vũng Tàu và MỘT PHẦN Bình Thuận — https://baodongnai.com.vn/phongsukysu/201807/bien-hoa-dong-nai-qua-cac-thoi-ky-2904280/",
+        "⚠️ KHÔNG TÔ BÌNH THUẬN dù nguồn có nhắc «một phần»: Bình Thuận là một tỉnh RIÊNG trong 31 tỉnh Minh Mệnh và đã tô riêng — tô thêm vào Biên Hoà là hai đơn vị cùng nhận một tỉnh."
       ]
     },
     {
@@ -835,6 +864,19 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "An Giang",
+        "Cần Thơ",
+        "Hậu Giang",
+        "Sóc Trăng",
+        "Đồng Tháp"
+      ],
+      "khop": "mot-phan",
+      "nguon_anh_xa": [
+        "Cổng TTĐT tỉnh An Giang (Văn nghệ An Giang) — «Quá trình hình thành, thay đổi tên tỉnh An Giang»: địa bàn tỉnh An Giang thời Nguyễn «bao gồm toàn bộ tỉnh An Giang, thành phố Cần Thơ, Hậu Giang, Sóc Trăng, phần lớn tỉnh Đồng Tháp và huyện Giá Rai (thuộc tỉnh Bạc Liêu) hiện nay»; lỵ sở đặt tại Châu Đốc — https://vannghe.angiang.gov.vn/qua-trinh-hinh-thanh-thay-doi-ten-tinh-an-giang-va-thanh-pho-chau-doc-thanh-pho-long-xuyen/",
+        "⚠️ KHÔNG TÔ BẠC LIÊU dù nguồn có kể huyện Giá Rai: đất Bạc Liêu đã tô cho tỉnh Hà Tiên theo Trung tâm Lưu trữ quốc gia I, tô hai lần thì bản đồ chồng màu và nói hai điều trái nhau.",
+        "⚠️ ĐỒNG THÁP — BA NGUỒN XẾP BA KIỂU, dự án tô về An Giang và ghi lại chỗ vênh: (a) cổng An Giang nói «phần lớn tỉnh Đồng Tháp» thuộc An Giang; (b) cổng Vĩnh Long kể Sa Đéc là một tiểu khu của Vĩnh Long; (c) Cục Văn thư và Lưu trữ nhà nước («Đồng Tháp – Những dấu mốc lịch sử») nói đất Đồng Tháp nay nằm trên huyện Vĩnh An phủ Tân Thành và huyện Đông Xuyên phủ Tuy Biên (tỉnh An Giang) VÀ huyện Kiến Đăng phủ Kiến An (tỉnh Định Tường) — tức bị CHIA giữa hai tỉnh. Ba nguồn đều là nguồn nhà nước."
       ]
     },
     {
@@ -851,6 +893,16 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Vĩnh Long",
+        "Bến Tre",
+        "Trà Vinh"
+      ],
+      "khop": "mot-phan",
+      "nguon_anh_xa": [
+        "Cổng TTĐT tỉnh Vĩnh Long — «Lịch sử hình thành»: khu vực hành chính Vĩnh Long gồm 4 tiểu khu Vĩnh Long, Trà Vinh, Bến Tre, Sa Đéc; nghị định 20/12/1899 của Toàn quyền Doumer đổi tiểu khu thành tỉnh, tỉnh Vĩnh Long cũ tách thành 3 tỉnh mới Vĩnh Long, Bến Tre, Trà Vinh — https://vinhlong.gov.vn/gioi-thieu/lich-su-hinh-thanh",
+        "⚠️ KHÔNG TÔ ĐỒNG THÁP dù nguồn Vĩnh Long có kể tiểu khu Sa Đéc: đất Sa Đéc bị hai nguồn nhà nước xếp về hai tỉnh khác nhau — xem ghi chú ở mục tỉnh An Giang."
       ]
     },
     {
@@ -867,6 +919,15 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Tiền Giang"
+      ],
+      "khop": "toi-thieu",
+      "nguon_anh_xa": [
+        "Cục Văn thư và Lưu trữ nhà nước — «Đồng Tháp – Những dấu mốc lịch sử»: năm 1832 lập Nam Kỳ lục tỉnh; đất Đồng Tháp nay thuộc huyện Vĩnh An phủ Tân Thành, huyện Đông Xuyên phủ Tuy Biên (tỉnh An Giang) và huyện Kiến Đăng phủ Kiến An (tỉnh Định Tường) — https://www.archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/dong-thap-%E2%80%93-nhung-dau-moc-lich-su.htm",
+        "Địa giới tỉnh Định Tường thời kỳ đầu ứng với phần lớn tỉnh Tiền Giang ngày nay, gồm vùng Mỹ Tho và Gò Công.",
+        "⚠️ CHỈ TÔ TIỀN GIANG: một phần đất Đồng Tháp ngày nay (huyện Kiến Đăng, phủ Kiến An) cũng thuộc Định Tường, và một phần Long An nữa — nhưng chưa tra được ranh giới phần chia nên không tô, tránh chồng lấn với An Giang và Phiên An."
       ]
     },
     {
@@ -979,5 +1040,5 @@
       ]
     }
   ],
-  "ghi_chu_anh_xa": "ÁNH XẠ «đơn vị xưa → tỉnh ngày nay» (thêm 2026-08-25). Mỗi mục có `tinh_nay[]` sẽ được tô lên đúng những polygon tỉnh đó trong lớp «Vùng đơn vị hành chính xưa». 🔴 ĐÂY KHÔNG PHẢI ĐƯỜNG BIÊN XƯA. Đường vẽ ra là đường biên tỉnh NGÀY NAY; lời khẳng định duy nhất là «đơn vị xưa này phủ lên đất của những tỉnh nay đó», và lời đó phải có `nguon_anh_xa[]` riêng — nguồn của mục chỉ chứng minh đơn vị có thật, không chứng minh phạm vi. Đã tra được 10/54 đơn vị. ⚠️ CHƯA TRA ĐƯỢC, ĐỪNG ĐOÁN: quận Giao Chỉ (nguồn chỉ ghi «vùng Bắc Bộ», không liệt kê được ra tỉnh); 11/13 thừa tuyên Hồng Đức (chính sử chép TÊN và LỴ SỞ, không chép phạm vi); 22/31 tỉnh Minh Mệnh. ⚠️ TỈNH TUYÊN QUANG 1831 — HAI NGUỒN NHÀ NƯỚC VÊNH NHAU, chưa đối chiếu xong nên chưa tô: Báo Tuyên Quang loạt «700 năm danh xưng Tuyên Quang» có chỗ chép tỉnh này gồm cả Hà Giang cùng vài huyện của Yên Bái và Cao Bằng, có chỗ lại chỉ chép phủ Yên Bình với 2 huyện Hàm Yên, Sơn Dương và châu Chiêm Hoá."
+  "ghi_chu_anh_xa": "ÁNH XẠ «đơn vị xưa → tỉnh ngày nay» (thêm 2026-08-25). Mỗi mục có `tinh_nay[]` sẽ được tô lên đúng những polygon tỉnh đó trong lớp «Vùng đơn vị hành chính xưa». 🔴 ĐÂY KHÔNG PHẢI ĐƯỜNG BIÊN XƯA. Đường vẽ ra là đường biên tỉnh NGÀY NAY; lời khẳng định duy nhất là «đơn vị xưa này phủ lên đất của những tỉnh nay đó», và lời đó phải có `nguon_anh_xa[]` riêng — nguồn của mục chỉ chứng minh đơn vị có thật, không chứng minh phạm vi. Đã tra được 16/54 đơn vị. ⚠️ CHƯA TRA ĐƯỢC, ĐỪNG ĐOÁN: quận Giao Chỉ (nguồn chỉ ghi «vùng Bắc Bộ», không liệt kê được ra tỉnh); 11/13 thừa tuyên Hồng Đức (chính sử chép TÊN và LỴ SỞ, không chép phạm vi); 22/31 tỉnh Minh Mệnh. ⚠️ TỈNH TUYÊN QUANG 1831 — HAI NGUỒN NHÀ NƯỚC VÊNH NHAU, chưa đối chiếu xong nên chưa tô: Báo Tuyên Quang loạt «700 năm danh xưng Tuyên Quang» có chỗ chép tỉnh này gồm cả Hà Giang cùng vài huyện của Yên Bái và Cao Bằng, có chỗ lại chỉ chép phủ Yên Bình với 2 huyện Hàm Yên, Sơn Dương và châu Chiêm Hoá. ── ĐỢT 2026-08-26: +6 tỉnh Minh Mệnh (Bắc Ninh · Vĩnh Long · An Giang · Định Tường · Biên Hoà · Bình Thuận). Cách tra ĐỔI: không đi tìm một bảng đối chiếu đủ 31 tỉnh (không tồn tại), mà vào CỔNG TTĐT của từng tỉnh — mục «Lịch sử hình thành» của họ chép rõ tỉnh mình tách ra từ đâu, năm nào, theo nghị định nào. 🔴 QUY TẮC MỚI TỰ ĐẶT: một tỉnh ngày nay chỉ được gán cho MỘT đơn vị xưa trong cùng thời kỳ. Tô hai lần thì bản đồ chồng màu và nói hai điều trái nhau. Chỗ nguồn có nhắc phần đất chia sẻ (Bạc Liêu, Bình Thuận, Đồng Tháp, Long An) đều ghi vào nguon_anh_xa chứ không tô."
 }

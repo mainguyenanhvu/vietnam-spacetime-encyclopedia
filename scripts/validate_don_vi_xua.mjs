@@ -118,6 +118,28 @@ for (const it of items) {
   }
 }
 
+// --- Cổng KHÔNG TÔ CHỒNG ----------------------------------------------------
+// Một tỉnh ngày nay chỉ được gán cho MỘT đơn vị xưa trong cùng một thời kỳ.
+// Tô hai lần thì hai mảng màu đè lên nhau và bản đồ nói hai điều trái nhau về
+// cùng một khoảnh đất — mà nguồn thì hay kể phần đất chia sẻ («một phần Bình
+// Thuận thuộc Biên Hoà», «huyện Giá Rai thuộc An Giang»), nên rất dễ vô tình
+// gán chồng. Chỗ chia sẻ phải ghi vào `nguon_anh_xa` chứ không tô.
+{
+  const chu = new Map(); // "ky_id|khoa tỉnh" -> id đơn vị đã nhận
+  for (const it of items) {
+    for (const t of it.tinh_nay ?? []) {
+      const k = `${it.ky_id}|${khoaTinh(t)}`;
+      const cu = chu.get(k);
+      if (cu)
+        hong(
+          `don-vi-xua/${it.id}`,
+          `tỉnh "${t}" đã được gán cho "${cu}" trong cùng thời kỳ ${it.ky_id} — tô chồng`,
+        );
+      else chu.set(k, it.id);
+    }
+  }
+}
+
 // --- Cổng TƯƠI MỚI của tệp dẫn xuất ----------------------------------------
 // Sửa ánh xạ mà quên chạy lại build là bản đồ tô theo dữ liệu cũ — không lỗi
 // nào nổ ra, chỉ sai âm thầm. So byte là cách duy nhất bắt được.

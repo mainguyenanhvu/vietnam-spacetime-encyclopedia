@@ -1,8 +1,8 @@
 {
   "tong": {
     "so_file": 350,
-    "so_muc": 5718,
-    "so_byte": 10629895,
+    "so_muc": 5735,
+    "so_byte": 10655838,
     "ngay_sinh": "2026-08-25"
   },
   "files": [
@@ -7164,13 +7164,13 @@
       "file": "geo/don-vi-hanh-chinh-xua.json",
       "mien": "geo",
       "so_muc": 0,
-      "byte": 57807,
+      "byte": 64382,
       "kieu_boc_ngoai": "FeatureCollection",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": "sources",
       "phu_nguon_cap_muc_pct": 0,
       "truong_pho_bien": [],
-      "sha256": "a729ad25923ced1cb4eca4d0f6cb1412e7a9662356c2fd42d7ba528597dc825a",
+      "sha256": "cfb7ea63230293890092a2a2a81119bc1870b76207e5016fb2451136a7aec8fb",
       "mo_ta": "ĐƠN VỊ HÀNH CHÍNH QUA CÁC THỜI KỲ — quận · châu · phủ · lộ · trấn · thừa tuyên · tỉnh."
     },
     {
@@ -7194,8 +7194,8 @@
     {
       "file": "geo/vung-don-vi-xua.geojson",
       "mien": "geo",
-      "so_muc": 27,
-      "byte": 45976,
+      "so_muc": 44,
+      "byte": 63596,
       "kieu_boc_ngoai": "FeatureCollection",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": null,
@@ -7208,7 +7208,7 @@
         "khop",
         "tinh_63"
       ],
-      "sha256": "f06dc4e0956d1423638cbbec01945720fb1c803c194ff1fe94671a6ec01636c0",
+      "sha256": "1d4f0dcb0dfa1f3a61d782a2bb71daf3d8293896a1701805a4723fc61b346820",
       "mo_ta": "TỆP SINH RA, đừng sửa tay — chạy scripts/build_vung_don_vi_xua.mjs."
     },
     {
@@ -7677,7 +7677,7 @@
       "file": "media/ban-do-co.json",
       "mien": "media",
       "so_muc": 19,
-      "byte": 50548,
+      "byte": 52296,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7697,7 +7697,7 @@
         "y_nghia_chu_quyen",
         "anh_ghi_chu"
       ],
-      "sha256": "5dccc7267b5b4901a6207896d1da1f84a9138a931e8f10086f3adc7f8178d19c",
+      "sha256": "0470426af93a50253d1a58c1ec20fdd650487e31da6945beb4992d297c732b80",
       "mo_ta": "Bản đồ cổ về lãnh thổ Việt Nam qua các thời kỳ."
     },
     {
@@ -7808,7 +7808,7 @@
         "ban_do_ghi",
         "do_tin_cay_toa_do"
       ],
-      "sha256": "eefbcb7a7d35b4618eaa198d8adba888151a9bae3434a37b482e840db13e9132",
+      "sha256": "7dfefde7394916d0b9f87705dafccced0b105ea14507da39f48d2d8360dcea0e",
       "mo_ta": "SINH TỰ ĐỘNG từ media/ban-do-co.json bởi scripts/build_ban_do_co_overlay.mjs — ĐỪNG SỬA TAY, sửa bản gốc rồi chạy lại."
     },
     {
