@@ -253,6 +253,31 @@ function renderBasicDetail(content: HTMLElement, item: BattleIndexItem): void {
 // đồ tổng quát dùng tới, thừa ra trong sa đồ Bạch Đằng cũng vô hại.
 function saDoDefs(): string {
   return `<defs>
+      <!-- Chiều sâu dựng bằng CHUYỂN SẮC, không bằng thêm chi tiết: hai đầu
+           chuyển sắc đều phái sinh từ token có sẵn qua color-mix, nên đổi chế
+           độ người lớn ⇄ trẻ em là cả sa đồ đổi theo. -->
+      <linearGradient id="sd-g-dat" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="color-mix(in srgb, var(--sd-nen-bo) 88%, var(--mat))"/>
+        <stop offset="1" stop-color="color-mix(in srgb, var(--sd-nen-bo) 82%, var(--chu-mem))"/>
+      </linearGradient>
+      <linearGradient id="sd-g-song" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="color-mix(in srgb, var(--sd-nen-song) 70%, var(--mat))"/>
+        <stop offset="0.5" stop-color="var(--sd-nen-song-sau)"/>
+        <stop offset="1" stop-color="color-mix(in srgb, var(--sd-nen-song) 70%, var(--mat))"/>
+      </linearGradient>
+      <!-- Vệt tối quanh mép khung: mắt tự dồn vào giữa, đúng thủ pháp khung
+           hình của phim. Rất nhạt (12%) để không đụng ngưỡng tương phản của
+           chữ và nét — phần tô nền vốn không mang ngưỡng nào. -->
+      <radialGradient id="sd-g-vien" cx="0.5" cy="0.5" r="0.75">
+        <stop offset="0.55" stop-color="var(--chu)" stop-opacity="0"/>
+        <stop offset="1" stop-color="var(--chu)" stop-opacity="0.12"/>
+      </radialGradient>
+      <!-- Hạt giấy: chống cảm giác "màu bệt" của SVG phẳng. baseFrequency cao
+           cho hạt mịn; opacity thấp để không thành nhiễu. -->
+      <filter id="sd-f-giay" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+        <feColorMatrix in="n" type="saturate" values="0"/>
+      </filter>
       <pattern id="sd-hatch-ta" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
         <line x1="0" y1="0" x2="0" y2="8" stroke="var(--sd-ta-chu)" stroke-width="2" opacity="0.55"/>
       </pattern>
@@ -456,7 +481,95 @@ function netMem(pts: Diem[]): string {
 
 /** Nhãn chữ có quầng --mat (kỹ thuật bản đồ chuẩn cho chữ đè nền đổi màu). */
 function nhanSvg(x: number, y: number, chu: string, phu = false): string {
-  return `<text class="sd-nhan${phu ? " sd-nhan-phu" : ""}" x="${r1(x)}" y="${r1(y)}" text-anchor="middle">${esc(chu)}</text>`;
+  // Bọc trong <g> để `veNenNhan()` chèn được tấm nền phía sau lúc chạy —
+  // bề rộng chữ chỉ đo được sau khi trình duyệt dựng font, không tính trước
+  // ở khâu sinh chuỗi được.
+  return `<g class="sd-nhan-g"><text class="sd-nhan${phu ? " sd-nhan-phu" : ""}" x="${r1(x)}" y="${r1(y)}" text-anchor="middle">${esc(chu)}</text></g>`;
+}
+
+/**
+ * Chèn tấm nền sau mỗi nhãn, và ĐẨY NHÃN CHỒNG NHAU ra khỏi nhau.
+ *
+ * Vì sao cần: trên trận Bạch Đằng 1288 đo được «Bãi cọc Yên Giang» và «Thuyền
+ * địch mắc cọc, vỡ» đè lên nhau thành một mớ không đọc nổi. Quầng chữ quanh
+ * glyph không cứu được ca này — hai dòng chữ chồng nhau thì quầng của dòng
+ * này lại ăn vào glyph của dòng kia.
+ *
+ * Cách xử: đo hộp bao thật bằng getBBox(), vẽ nền bo góc, rồi quét từ trên
+ * xuống đẩy nhãn nào còn chạm nhau xuống dưới. Chỉ đẩy DỌC — đẩy ngang sẽ
+ * kéo nhãn rời khỏi thứ nó chú thích.
+ */
+export function veNenNhan(svg: SVGSVGElement): void {
+  // Dọn kết quả lượt trước: bỏ tấm nền cũ và trả nhãn về đúng chỗ gốc.
+  // Không dọn thì mỗi lần đổi bước lại cộng dồn một lớp `dy` nữa.
+  for (const r of svg.querySelectorAll(".sd-nhan-nen")) r.remove();
+  for (const t of svg.querySelectorAll("text.sd-nhan")) t.removeAttribute("dy");
+
+  const nhom = [...svg.querySelectorAll<SVGGElement>(".sd-nhan-g")];
+  const hop: { g: SVGGElement; t: SVGTextElement; b: DOMRect }[] = [];
+  for (const g of nhom) {
+    // CHỈ xếp nhãn ĐANG HIỆN. Giữ chỗ cho nhãn của lớp đang ẩn thì nhãn đang
+    // hiện bị đẩy văng khỏi khung — đo được 3–4 cặp chồng nhau vì lỗi này.
+    // Nhãn địa hình không nằm trong .sd-layer nào nên luôn được tính.
+    if (g.closest(".sd-layer-hidden")) continue;
+    const t = g.querySelector<SVGTextElement>("text");
+    if (!t) continue;
+    let b: DOMRect;
+    try {
+      b = t.getBBox();
+    } catch {
+      continue; // phần tử chưa dựng xong
+    }
+    if (!b.width) continue;
+    hop.push({ g, t, b });
+  }
+  hop.sort((a, z) => a.b.y - z.b.y);
+
+  const daDat: DOMRect[] = [];
+  const DEM = 4; // đệm quanh chữ
+  // Đáy khung: đẩy quá mức này là nhãn rơi ra ngoài viewBox và mất hẳn — đã
+  // gặp đúng ca đó với «Ô Mã Nhi bị bắt sống» ở bước cuối trận Bạch Đằng.
+  const DAY = TQ_CAO - 26;
+  const cham = (x: number, y: number, w: number, hgt: number): boolean =>
+    daDat.some(
+      (r) =>
+        x < r.x + r.width + DEM &&
+        x + w + DEM > r.x &&
+        y < r.y + r.height + DEM &&
+        y + hgt + DEM > r.y,
+    );
+  for (const h of hop) {
+    const buoc = h.b.height + DEM * 2;
+    // Danh sách vị trí ứng viên theo thứ tự ƯU TIÊN: đứng yên trước, rồi
+    // xuống một nấc, lên một nấc, xuống hai nấc… Nhận vị trí ĐẦU TIÊN vừa
+    // không đè ai vừa còn nằm trong khung.
+    //
+    // Bản trước tôi viết kiểu «đẩy xuống, hết chỗ thì quay sang đẩy lên» rồi
+    // `break` mà KHÔNG kiểm lại vị trí vừa chọn — kết quả đo được là 0 cặp
+    // chồng nhau thành 3. Duyệt ứng viên thì không có nhánh nào thoát mà
+    // chưa kiểm.
+    const ungVien = [0];
+    for (let k = 1; k <= 6; k++) ungVien.push(k * buoc, -k * buoc);
+    let dy = 0;
+    for (const ứ of ungVien) {
+      const y = h.b.y + ứ;
+      if (y < 8 || y + h.b.height > DAY) continue;
+      if (cham(h.b.x, y, h.b.width, h.b.height)) continue;
+      dy = ứ;
+      break;
+    }
+    if (dy) h.t.setAttribute("dy", String(dy));
+    const y = h.b.y + dy;
+    daDat.push(new DOMRect(h.b.x, y, h.b.width, h.b.height));
+    const nen = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    nen.setAttribute("class", "sd-nhan-nen");
+    nen.setAttribute("x", String(h.b.x - 6));
+    nen.setAttribute("y", String(y - 2));
+    nen.setAttribute("width", String(h.b.width + 12));
+    nen.setAttribute("height", String(h.b.height + 4));
+    nen.setAttribute("rx", "6");
+    h.g.insertBefore(nen, h.t);
+  }
 }
 
 interface BenMau {
@@ -490,9 +603,12 @@ function diaHinhSvg(dh: DiaHinh): string {
     case "song":
       // Hai nét chồng: nét ngoài rộng hơn tạo mép sông thấy được, nét trong
       // là lòng sông. Rẻ hơn nhiều so với dựng đa giác hai bờ từ đường tim.
+      // Nét thứ BA là dòng chảy: nét mảnh đứt quãng chạy dọc tim sông, cho
+      // sông có hướng và có chuyển động. Không có nó, sông đọc như con đường.
       return `<g class="sd-dh sd-dh-song">
         <path class="sd-song-mep" d="${d}"/>
         <path class="sd-song-long" d="${d}"/>
+        <path class="sd-song-dong" d="${d}"/>
         ${nhan}
       </g>`;
     case "bien":
@@ -575,17 +691,27 @@ function thanhSvg(m: BenMau, ben: Ben | undefined): string {
 }
 
 function thuyenSvg(m: BenMau, ben: Ben | undefined): string {
+  // Buồm CĂNG GIÓ (đường cong) thay cho hình chữ nhật phẳng, kèm hai thanh
+  // nẹp — buồm cánh dơi có nẹp là dáng thuyền buồm quen thuộc của cả hai
+  // phía, và chính mấy nét nẹp đó làm cánh buồm không còn đọc ra "cái hộp".
+  // Vẫn giữ nguyên KÊNH PHÂN BIỆT PHE bằng hình dạng: buồm địch cong về
+  // trước, buồm ta là buồm tam giác — đọc được cả khi in đen trắng.
   const buom =
     ben === "dich"
-      ? `<rect class="sd-hinh" x="2" y="-38" width="26" height="26" fill="${m.nen}"/>
-         <rect class="sd-hinh" x="2" y="-38" width="26" height="26" fill="${m.hoa_tiet}"/>
-         <rect class="sd-net" x="2" y="-38" width="26" height="26" stroke="${m.chu}"/>`
-      : `<path class="sd-hinh" d="M3,-38 L28,-10 L3,-10 Z" fill="${m.nen}"/>
-         <path class="sd-hinh" d="M3,-38 L28,-10 L3,-10 Z" fill="${m.hoa_tiet}"/>
-         <path class="sd-net" d="M3,-38 L28,-10 L3,-10 Z" stroke="${m.chu}"/>`;
-  return `<path class="sd-hinh" d="M-34,-6 Q0,26 34,-6 Z" fill="${m.nen}"/>
-    <path class="sd-net" d="M-34,-6 Q0,26 34,-6 Z" stroke="${m.chu}"/>
-    <path class="sd-net" d="M0,-6 L0,-40" stroke="${m.chu}"/>
+      ? `<path class="sd-hinh" d="M3,-40 Q30,-27 3,-10 Z" fill="${m.nen}"/>
+         <path class="sd-hinh" d="M3,-40 Q30,-27 3,-10 Z" fill="${m.hoa_tiet}"/>
+         <path class="sd-net" d="M3,-40 Q30,-27 3,-10 Z" stroke="${m.chu}"/>
+         <path class="sd-net sd-net-manh" d="M3,-32 Q21,-26 3,-21 M3,-21 Q17,-18 3,-14" stroke="${m.chu}"/>`
+      : `<path class="sd-hinh" d="M3,-40 L28,-10 L3,-10 Z" fill="${m.nen}"/>
+         <path class="sd-hinh" d="M3,-40 L28,-10 L3,-10 Z" fill="${m.hoa_tiet}"/>
+         <path class="sd-net" d="M3,-40 L28,-10 L3,-10 Z" stroke="${m.chu}"/>
+         <path class="sd-net sd-net-manh" d="M3,-27 L17,-11 M3,-18 L11,-11" stroke="${m.chu}"/>`;
+  // Thân thuyền: mũi và lái CONG NGƯỢC LÊN, thêm mạn khô (đường boong) —
+  // ba nét đó đủ để nửa vành cung trước kia thành một con thuyền.
+  return `<path class="sd-hinh" d="M-36,-10 Q-30,-2 -30,0 Q0,26 30,0 Q30,-2 36,-10 Q18,2 0,2 Q-18,2 -36,-10 Z" fill="${m.nen}"/>
+    <path class="sd-net" d="M-36,-10 Q-30,-2 -30,0 Q0,26 30,0 Q30,-2 36,-10 Q18,2 0,2 Q-18,2 -36,-10 Z" stroke="${m.chu}"/>
+    <path class="sd-net sd-net-manh" d="M-28,2 Q0,12 28,2" stroke="${m.chu}"/>
+    <path class="sd-net" d="M0,0 L0,-42" stroke="${m.chu}"/>
     ${buom}`;
 }
 
@@ -607,8 +733,18 @@ function coSvg(m: BenMau, ben: Ben | undefined): string {
 function congSuSvg(): string {
   const coc = [-56, -37, -18, 1, 20, 39, 58]
     .map(
-      (x) =>
-        `<path class="sd-cong-su" d="M${x},30 L${x},2 M${x - 8},4 L${x},-14 L${x + 8},4 Z"/>`,
+      // SAI KHÁC NHỎ theo chỉ số: cao thấp so le và nghiêng qua lại vài độ.
+      // Bảy cọc y hệt nhau, cùng chiều cao, cách đều tăm tắp thì mắt đọc
+      // thành biểu đồ cột chứ không thành bãi cọc cắm dưới lòng sông. Dùng
+      // hàm sin theo chỉ số chứ KHÔNG dùng Math.random(): sa đồ phải dựng ra
+      // đúng một hình mỗi lần mở, nếu không thì ảnh chụp đối chiếu vô nghĩa.
+      (x, i) => {
+        const cao = 14 + Math.round(Math.sin(i * 1.7) * 5);
+        const xoay = Math.round(Math.sin(i * 2.3) * 4);
+        return `<g transform="rotate(${xoay} ${x} 30)">
+          <path class="sd-cong-su" d="M${x},30 L${x},2 M${x - 8},4 L${x},${-cao} L${x + 8},4 Z"/>
+        </g>`;
+      },
     )
     .join("");
   return coc;
@@ -681,7 +817,7 @@ function phanTuSvg(p: PhanTu): string {
   const than =
     p.kieu === "mui-ten"
       ? muiTenSvg(p, m)
-      : `<g transform="translate(${r1(so(p.x))},${r1(so(p.y))})">${noiDung}</g>${
+      : `<g class="sd-khoi" transform="translate(${r1(so(p.x))},${r1(so(p.y))})">${noiDung}</g>${
           p.nhan ? nhanSvg(so(p.x), so(p.y) + nhanDuoi[p.kieu], p.nhan) : ""
         }`;
   return `<g class="sd-layer" data-key="${esc(p.id)}">${than}</g>`;
@@ -693,7 +829,9 @@ function buildTongQuatSvg(b: Battle): string {
   return `<svg class="sd-svg sd-svg-tq" viewBox="0 0 ${TQ_RONG} ${TQ_CAO}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Sa đồ minh hoạ ${esc(b.ten)}">
     ${saDoDefs()}
     <rect class="sd-nen-dat" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}"/>
+    <rect class="sd-nen-hat" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}" filter="url(#sd-f-giay)" aria-hidden="true"/>
     <g class="sd-dia-hinh" aria-hidden="true">${diaHinh}</g>
+    <rect class="sd-nen-vien" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}" aria-hidden="true"/>
     ${phanTu}
     <text class="sd-note-tq" x="${TQ_RONG / 2}" y="${TQ_CAO - 12}" text-anchor="middle">Sa đồ minh hoạ — không theo tỉ lệ</text>
   </svg>`;
@@ -722,6 +860,17 @@ function triggerArrowDraw(g: SVGGElement): void {
   path.style.setProperty("--sd-len", String(len));
   path.style.strokeDasharray = String(len);
   path.classList.add("sd-arrow-draw");
+}
+
+/** Xếp lại nhãn của sa đồ trong `content` — an toàn khi gọi nhiều lần. */
+function xepLaiNhan(content: HTMLElement): void {
+  const svg = content.querySelector<SVGSVGElement>(".sd-svg-tq");
+  if (!svg) return;
+  try {
+    veNenNhan(svg);
+  } catch {
+    /* nhãn giữ nguyên quầng chữ như cũ — vẫn đọc được */
+  }
 }
 
 function applyStep(content: HTMLElement): void {
@@ -796,6 +945,11 @@ function applyStep(content: HTMLElement): void {
     dot.setAttribute("aria-selected", String(idx === stepIdx));
     dot.textContent = idx < stepIdx ? "✓" : String(idx + 1);
   });
+
+  // Số phần tử hiện đổi theo từng bước, nên bố cục nhãn phải tính lại theo
+  // từng bước — tính một lần lúc dựng thì thuật toán giữ chỗ cho cả nhãn của
+  // lớp đang ẩn và đẩy nhãn đang hiện văng khỏi khung.
+  xepLaiNhan(content);
 }
 
 // ── Màn B, đầy đủ — trận đã có sa đồ diễn biến ───────────────────────────
@@ -893,6 +1047,20 @@ function renderFullDetail(content: HTMLElement): void {
   });
 
   applyStep(content);
+
+  // Nền chữ + gỡ nhãn chồng nhau. Phải chạy SAU khi trình duyệt dựng xong
+  // font, vì bề rộng chữ chỉ đo được lúc đó — `requestAnimationFrame` là mốc
+  // sớm nhất chắc chắn đã có bố cục. Bọc try/catch: getBBox() ném nếu phần tử
+  // chưa dựng, và một nhãn xấu không được phép làm chết cả sa đồ.
+  requestAnimationFrame(() => {
+    const svg = content.querySelector<SVGSVGElement>(".sd-svg-tq");
+    if (!svg) return;
+    try {
+      veNenNhan(svg);
+    } catch {
+      /* nhãn giữ nguyên quầng chữ như cũ — vẫn đọc được */
+    }
+  });
 }
 
 // ── Điều hướng Màn A ↔ Màn B ──────────────────────────────────────────────

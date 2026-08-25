@@ -499,3 +499,116 @@
   min-height: 2.75rem;
   min-width: 2.75rem;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   SA ĐỒ — LÀM ĐẸP THEO LỐI PHIM HOẠT HÌNH LỊCH SỬ (2026-08-26)
+
+   Chỗ hỏng nhìn thấy trên trận Bạch Đằng 1288: nền là hình chữ nhật be
+   phẳng lì; sông là dải màu viền cứng, đọc như con đường; hai nhãn «Bãi cọc
+   Yên Giang» và «Thuyền địch mắc cọc, vỡ» CHỒNG LÊN NHAU không đọc nổi.
+
+   Bốn thủ pháp mượn của phim, không thủ pháp nào cần thêm chi tiết vẽ tay:
+     1. chiều sâu bằng CHUYỂN SẮC + BÓNG ĐỔ, không bằng vẽ thêm;
+     2. nước phải CHẢY — tĩnh thì mắt đọc thành mặt đường;
+     3. phần tử vào khung có QUÁN TÍNH (bung nhẹ) chứ không bật/tắt khô khốc;
+     4. chữ luôn có NỀN RIÊNG, không bao giờ chìm vào hình.
+
+   Ràng buộc giữ nguyên: không hex màu mới (mọi màu phái sinh từ token qua
+   color-mix), và phần tô nền KHÔNG mang ngưỡng tương phản — ngưỡng nằm ở
+   đường nét và ở chữ, cả hai không đổi trong đợt này.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.sd-nen-dat {
+  fill: url(#sd-g-dat);
+}
+
+/* Hạt giấy — chống cảm giác "màu bệt" của SVG phẳng. Rất nhẹ; đậm hơn là
+   thành nhiễu và làm chữ khó đọc. */
+.sd-nen-hat {
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Vệt tối quanh mép khung: mắt tự dồn về giữa. Nằm TRÊN địa hình, DƯỚI quân
+   — phủ lên quân thì làm sạm màu phe. */
+.sd-nen-vien {
+  fill: url(#sd-g-vien);
+  pointer-events: none;
+}
+
+/* ── Sông có dòng chảy ─────────────────────────────────────────────────── */
+.sd-song-long {
+  stroke: url(#sd-g-song);
+}
+.sd-song-dong {
+  fill: none;
+  stroke: color-mix(in srgb, var(--mat) 70%, var(--sd-nen-song));
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 16 26;
+  opacity: 0.85;
+  animation: sd-chay 3.2s linear infinite;
+}
+@keyframes sd-chay {
+  to {
+    stroke-dashoffset: -42;
+  }
+}
+
+/* ── Bóng đổ cho quân · thành · thuyền · cờ ────────────────────────────────
+   Dùng drop-shadow đen alpha chứ không token màu: đây là BÓNG, không phải
+   một màu ngữ nghĩa của giao diện — theme.css cũng chỉ có token bóng dạng
+   box-shadow, không dùng lại được trong SVG. */
+.sd-khoi {
+  filter: drop-shadow(0 2px 2.5px rgba(0, 0, 0, 0.3));
+}
+
+/* ── Vào khung có quán tính ────────────────────────────────────────────────
+   Dùng transition chứ không @keyframes: applyStep() bật/tắt class nên
+   transition tự chạy lại mỗi lần hiện, còn keyframes thì chỉ chạy một lần.
+   `transform-box: fill-box` bắt buộc — thiếu nó thì transform-origin tính
+   theo gốc toạ độ của cả SVG và phần tử bay ngang màn hình. */
+.sd-layer {
+  transition:
+    opacity var(--dur-vua) var(--ease),
+    transform var(--dur-vua) var(--ease);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.sd-layer-hidden {
+  opacity: 0;
+  transform: scale(0.86);
+}
+
+/* ── Nhãn: nền riêng + tự tránh nhau ───────────────────────────────────────
+   Tấm nền do veNenNhan() chèn lúc chạy sau khi đo getBBox(). Quầng chữ cũ
+   GIỮ NGUYÊN chứ không bỏ: hai lớp bảo vệ, và nếu getBBox() ném lỗi thì chữ
+   vẫn đọc được y như trước. Tương quan đã đo (--chu trên --mat: 15,14:1
+   người lớn / 17,49:1 trẻ em) không đổi vì nền chính là --mat. */
+.sd-nhan-nen {
+  fill: var(--mat);
+  opacity: 0.82;
+  stroke: color-mix(in srgb, var(--chu) 12%, transparent);
+  stroke-width: 1;
+}
+
+/* ── Mũi tên: quầng sáng nhẹ để tách khỏi nền địa hình ─────────────────── */
+.sd-arrow {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+/* Người dùng tắt hiệu ứng chuyển động: dòng chảy dừng hẳn (killswitch toàn
+   cục của theme.css ép animation-duration 0.01ms, nhưng khai thẳng ở đây cho
+   chắc), và phần tử hiện ngay không bung. */
+@media (prefers-reduced-motion: reduce) {
+  .sd-song-dong {
+    animation: none;
+  }
+  .sd-layer {
+    transition: opacity 1ms linear;
+  }
+  .sd-layer-hidden {
+    transform: none;
+  }
+}
