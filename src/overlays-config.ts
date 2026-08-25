@@ -11,7 +11,7 @@
 import type { ExpressionSpecification } from "maplibre-gl";
 import { esc } from "./util/html";
 import { escKho } from "./tu-kho-tre-em";
-import { str, num, oneOf, rec } from "./types/parse";
+import { str, num, oneOf, rec, arr } from "./types/parse";
 
 /**
  * Dải cảnh báo khi toạ độ chưa được xác minh ở mức "cao".
@@ -59,7 +59,39 @@ export interface OverlayItem {
   chi_huy: string;
   trang_thai: string;
   do_tin_cay_toa_do: string;
+  // Năm trường dưới đây chỉ lớp «ban-do-co» dùng. Khai Ở ĐÂY chứ không
+  // `as OverlayItem & { ... }` tại chỗ dựng popup — chính lối khai rời rạc đó
+  // là thứ đẻ ra 10 tập trường khác nhau và mấy sink XSS đã phải đi vá.
+  dia_danh_xua: string;
+  nhom_ban_do: string;
+  /** Mọi tấm bản đồ cổ từng ghi tên địa điểm này, sắp theo năm. */
+  ban_do_ghi: Array<{
+    nam: string;
+    ten_ban_do: string;
+    dia_danh_xua: string;
+    nhom: string;
+    ghi_chu: string;
+    do_tin_cay: string;
+  }>;
 }
+
+/**
+ * Gỡ một vòng serialize của MapLibre.
+ *
+ * Giá trị LỒNG trong `properties` bị MapLibre chuỗi hoá thành JSON khi trả về
+ * từ sự kiện click. Nên cùng một trường `ban_do_ghi` đi qua hàm parse này ở
+ * HAI trạng thái khác nhau: lúc nạp tệp nó là mảng thật, lúc dựng popup nó là
+ * chuỗi. Không gỡ thì `arr()` trả mảng rỗng và popup hiện «0 tấm bản đồ» —
+ * KHÔNG có lỗi nào trên console, `tsc` vẫn xanh, chỉ nhìn bản đồ thật mới thấy.
+ */
+const goSerialize = (v: unknown): unknown => {
+  if (typeof v !== "string") return v;
+  try {
+    return JSON.parse(v);
+  } catch {
+    return [];
+  }
+};
 
 /** Ranh giới JSON → OverlayItem. `lon`/`lat` giữ kiểu số vì đi vào hình học. */
 export function parseOverlayItem(raw: unknown): OverlayItem {
@@ -88,6 +120,19 @@ export function parseOverlayItem(raw: unknown): OverlayItem {
     chi_huy: str(r.chi_huy),
     trang_thai: str(r.trang_thai),
     do_tin_cay_toa_do: str(r.do_tin_cay_toa_do),
+    dia_danh_xua: str(r.dia_danh_xua),
+    nhom_ban_do: str(r.nhom_ban_do),
+    ban_do_ghi: arr(goSerialize(r.ban_do_ghi), (x) => {
+      const g = rec(x);
+      return {
+        nam: str(g.nam),
+        ten_ban_do: str(g.ten_ban_do),
+        dia_danh_xua: str(g.dia_danh_xua),
+        nhom: str(g.nhom),
+        ghi_chu: str(g.ghi_chu),
+        do_tin_cay: str(g.do_tin_cay),
+      };
+    }),
   };
 }
 
@@ -137,6 +182,43 @@ const eventOverlayPopup = (p: OverlayItem): string => {
   const o = p;
   const tc = canhBaoToaDo(o.do_tin_cay_toa_do);
   return `${photoImgBlock(o)}<strong>${esc(o.ten)}</strong><br/><span style="color:#78716c">${esc(o.nam_hien_thi || o.nam)}</span><br/>📍 ${esc(o.dia_diem ?? "")}${o.mo_ta ? `<br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>` : ""}${photoAttrBlock(o)}${tc}`;
+};
+
+// Popup lớp «Bản đồ cổ». Tiêu đề là ĐỊA ĐIỂM NGÀY NAY, thân là danh sách mọi
+// tấm bản đồ cổ từng ghi tên nơi đó — xem `scripts/build_ban_do_co_overlay.mjs`
+// để hiểu vì sao gom theo địa điểm chứ không theo bản đồ.
+//
+// Hồ sơ đầy đủ của từng tấm (mô tả dài, ý nghĩa chủ quyền, nơi lưu giữ, nguồn)
+// nằm ở Thư viện → Bản đồ cổ. Popup CỐ Ý không chép lại: ở điểm Hoàng Sa có 12
+// tấm, chép đủ thì popup dài hơn màn hình.
+const KY_HIEU_NHOM: Record<string, string> = {
+  "viet-nam": "🇻🇳",
+  "phuong-tay": "🌍",
+  "trung-quoc": "📜",
+};
+
+const banDoCoPopup = (p: OverlayItem): string => {
+  const o = p;
+  const dong = (g: OverlayItem["ban_do_ghi"][number]): string =>
+    `<li style="margin-bottom:5px"><b>${esc(g.nam)}</b> · «${esc(g.dia_danh_xua)}» — ${esc(
+      g.ten_ban_do,
+    )} ${KY_HIEU_NHOM[g.nhom] ?? ""}<br/><span style="color:#78716c;font-size:0.72rem">${escKho(
+      g.ghi_chu,
+    )}</span>${
+      g.do_tin_cay !== "cao"
+        ? `<br/><span style="color:#b45309;font-size:0.68rem">⚠️ Khớp vị trí độ tin cậy ${esc(
+            g.do_tin_cay,
+          )}</span>`
+        : ""
+    }</li>`;
+  return `<strong>${esc(o.ten)}</strong>
+    <br/><span style="color:#78716c">🕰️ Bản đồ cổ gọi nơi này là: <b>${esc(o.dia_danh_xua)}</b></span>
+    <br/><span style="color:#57534e">${escKho(o.mo_ta)}</span>
+    <details style="margin-top:6px"><summary style="cursor:pointer">🗺️ Xem ${esc(
+      String(o.ban_do_ghi.length),
+    )} tấm bản đồ (${esc(o.nam_hien_thi)})</summary>
+    <ul style="margin:6px 0 0;padding-left:18px">${o.ban_do_ghi.map(dong).join("")}</ul>
+    <p style="margin:6px 0 0;color:#78716c;font-size:0.72rem">Hồ sơ đầy đủ từng tấm: Thư viện → 🗺️ Bản đồ cổ.</p></details>`;
 };
 
 export const OVERLAYS: OverlayConf[] = [
@@ -633,6 +715,32 @@ export const OVERLAYS: OverlayConf[] = [
       "Báo Nhân Dân · Viện Hàn lâm KHCN/KHXH VN · ĐHQG · MEDDOM · Tia Sáng",
     popup: personOverlayPopup,
   },
+  {
+    id: "ban-do-co",
+    label: "🗺️ Bản đồ cổ — nơi này ngày xưa gọi là gì",
+    icon: "🗺️",
+    file: "data/overlays/ban-do-co.json",
+    // Màu đọc thẳng thuộc tính feature: đỏ = chỉ bản đồ người Việt ghi, xanh =
+    // chỉ bản đồ phương Tây, xám = chỉ bản đồ Trung Quốc, VÀNG = nơi có HƠN
+    // MỘT phía cùng ghi tên. Vàng là tín hiệu mạnh nhất của cả vỉa dữ liệu nên
+    // nó được màu nổi nhất.
+    circleColor: [
+      "match",
+      ["get", "nhom_ban_do"],
+      "viet-nam",
+      "#c2410c",
+      "phuong-tay",
+      "#1d4ed8",
+      "trung-quoc",
+      "#57534e",
+      "nhieu",
+      "#d4af37",
+      "#78716c",
+    ],
+    nguon:
+      "Bộ Ngoại giao · Uỷ ban Biên giới quốc gia · Cục Di sản văn hoá · Báo Nhân Dân · Báo Chính phủ · VOV · Báo Đà Nẵng",
+    popup: banDoCoPopup,
+  },
   ];
 
 // Gom 29 lớp phủ thành cụm chủ đề (accordion) để panel gọn (Phase 3 P3.4).
@@ -649,4 +757,5 @@ export const OVERLAY_GROUPS: { id: string; nhan: string; icon: string; ids: stri
   { id: "van-hoa-khoa-hoc", nhan: "Văn hoá · Khoa học · Thể thao cận-hiện đại", icon: "📚", ids: ["danh-nhan-van-hoa-can-hien-dai", "tri-thuc-khoa-hoc-tk20", "nha-the-thao-lich-su", "nghe-nhan-di-san"] },
   { id: "cach-mang", nhan: "Cách mạng & Anh hùng", icon: "⭐", ids: ["anh-hung-can-hien-dai", "chi-si-cach-mang", "me-vnah", "thieu-nien-anh-hung", "nghia-trang-liet-si"] },
   { id: "huyen-su", nhan: "Huyền sử & Truyền thuyết", icon: "🐉", ids: ["huyen-su-khai-quoc", "truyen-thuyet-dan-gian"] },
+  { id: "ban-do-co", nhan: "Bản đồ cổ qua các thời kỳ", icon: "🗺️", ids: ["ban-do-co"] },
 ];

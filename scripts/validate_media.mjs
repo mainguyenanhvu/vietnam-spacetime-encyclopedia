@@ -97,6 +97,46 @@ if (existsSync(BAN_DO)) {
       fail(w, "cần ít nhất 1 nguồn NGOÀI Wikipedia");
   }
   console.log(`✅ ban-do-co.json: ${bd.length} bản đồ (${bd.filter((b) => b.anh).length} có ảnh)`);
+
+  // --- Điểm neo: khớp địa danh trên bản đồ cổ với vị trí thật ngày nay ------
+  // Đây là chỗ dễ bịa nhất trong cả dự án — một toạ độ sai biến tư liệu chủ
+  // quyền thành thứ phản chứng. Nên cổng đòi ĐỦ trường, toạ độ nằm trong khung
+  // Biển Đông – Đông Dương, và độ tin cậy phải khai rõ.
+  const TIN_CAY = new Set(["cao", "trung", "thap"]);
+  let soNeo = 0;
+  for (const b of bd) {
+    for (const [i, n] of (b.diem_neo ?? []).entries()) {
+      const w = `ban-do-co/${b.id}/diem_neo[${i}]`;
+      soNeo++;
+      if (!n.ten_xua) fail(w, "thiếu ten_xua (địa danh GHI TRÊN bản đồ cổ)");
+      if (!n.ten_nay) fail(w, "thiếu ten_nay (nơi đó là gì ngày nay)");
+      if (!n.ghi_chu) fail(w, "thiếu ghi_chu — phải nói rõ căn cứ khớp vị trí");
+      if (typeof n.lat !== "number" || typeof n.lon !== "number")
+        fail(w, "lat/lon phải là số");
+      else if (n.lat < 5 || n.lat > 26 || n.lon < 100 || n.lon > 120)
+        fail(w, `toạ độ (${n.lat}, ${n.lon}) nằm ngoài khung Biển Đông – Đông Dương`);
+      if (!TIN_CAY.has(n.do_tin_cay))
+        fail(w, `do_tin_cay "${n.do_tin_cay}" không thuộc {cao|trung|thap}`);
+    }
+  }
+
+  // --- Lớp phủ sinh ra có còn khớp bản gốc không ----------------------------
+  // Cùng lối canh của validate_catalog_freshness.mjs: tệp sinh tự động thì
+  // phải sinh lại chứ không sửa tay, và cổng có nhiệm vụ bắt lúc quên.
+  const LOP = join(ROOT, "public", "data", "overlays", "ban-do-co.json");
+  if (!existsSync(LOP)) {
+    fail("ban-do-co", "thiếu overlays/ban-do-co.json — chạy node scripts/build_ban_do_co_overlay.mjs");
+  } else {
+    const { dungTep } = await import("./build_ban_do_co_overlay.mjs");
+    const dangCo = readFileSync(LOP, "utf8");
+    const phaiLa = JSON.stringify(dungTep(JSON.parse(readFileSync(BAN_DO, "utf8"))), null, 2) + "\n";
+    if (dangCo !== phaiLa)
+      fail(
+        "ban-do-co",
+        "overlays/ban-do-co.json LỆCH bản gốc media/ban-do-co.json — chạy lại node scripts/build_ban_do_co_overlay.mjs",
+      );
+    else console.log(`✅ overlays/ban-do-co.json khớp bản gốc: ${soNeo} điểm neo`);
+  }
 }
 
 if (errors) {

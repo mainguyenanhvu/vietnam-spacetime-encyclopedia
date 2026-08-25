@@ -1,10 +1,10 @@
 {
   "sinh_luc": {
-    "tong_muc": 5593,
-    "tong_co_toa_do": 2767,
-    "so_nhom_trung_ten": 828,
-    "so_cap_trung_toa_do": 799,
-    "ngay_sinh": "2026-08-24"
+    "tong_muc": 5609,
+    "tong_co_toa_do": 2782,
+    "so_nhom_trung_ten": 829,
+    "so_cap_trung_toa_do": 815,
+    "ngay_sinh": "2026-08-25"
   },
   "entries": [
     {
@@ -23131,7 +23131,7 @@
       "loai": null,
       "lat": null,
       "lon": null,
-      "so_nguon": 1,
+      "so_nguon": 3,
       "trang_thai": null
     },
     {
@@ -23178,6 +23178,19 @@
       "slug": null,
       "ten": "Hải Quốc Đồ Chí — bản đồ \"Đông Nam Dương các quốc diên cách đồ\" (quyển 9)",
       "ten_chuan": "hai quoc do chi ban do dong nam duong cac quoc dien cach do quyen 9",
+      "file": "media/ban-do-co.json",
+      "mien": "media",
+      "loai": null,
+      "lat": null,
+      "lon": null,
+      "so_nguon": 2,
+      "trang_thai": null
+    },
+    {
+      "id": "hoai-duc-phu-toan-do-1831",
+      "slug": null,
+      "ten": "Hoài Đức phủ toàn đồ (1831)",
+      "ten_chuan": "hoai duc phu toan do 1831",
       "file": "media/ban-do-co.json",
       "mien": "media",
       "loai": null,
@@ -28619,6 +28632,201 @@
       "lon": 106.78,
       "so_nguon": 1,
       "trang_thai": "reviewed"
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Thăng Long — nay là Hà Nội",
+      "ten_chuan": "thang long nay la ha noi",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.0333,
+      "lon": 105.85,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Vùng biển ngoài khơi Quảng Ngãi",
+      "ten_chuan": "vung bien ngoai khoi quang ngai",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 15.2,
+      "lon": 109.6,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Côn Đảo",
+      "ten_chuan": "con dao",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 8.6833,
+      "lon": 106.6,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Đảo Phú Quốc",
+      "ten_chuan": "dao phu quoc",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 10.22,
+      "lon": 103.96,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Quần đảo Hoàng Sa",
+      "ten_chuan": "quan dao hoang sa",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 16.5,
+      "lon": 112,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
+      "ten_chuan": "dao hai nam trung quoc mui cuc nam",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 18.25,
+      "lon": 109.5,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Đảo Lý Sơn (Quảng Ngãi)",
+      "ten_chuan": "dao ly son quang ngai",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 15.3833,
+      "lon": 109.1167,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Đảo Phú Quý (Bình Thuận cũ)",
+      "ten_chuan": "dao phu quy binh thuan cu",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 10.52,
+      "lon": 108.9333,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Cửa Đại (Hội An)",
+      "ten_chuan": "cua dai hoi an",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 15.89,
+      "lon": 108.38,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Cửa Sa Kỳ (Quảng Ngãi)",
+      "ten_chuan": "cua sa ky quang ngai",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 15.38,
+      "lon": 108.92,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Cù Lao Chàm (Đà Nẵng)",
+      "ten_chuan": "cu lao cham da nang",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 15.95,
+      "lon": 108.5,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Nội thành Hà Nội",
+      "ten_chuan": "noi thanh ha noi",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.0287,
+      "lon": 105.8524,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Quần đảo Trường Sa (đảo Trường Sa Lớn)",
+      "ten_chuan": "quan dao truong sa dao truong sa lon",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 8.64,
+      "lon": 111.92,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Hữu Nghị Quan (Lạng Sơn)",
+      "ten_chuan": "huu nghi quan lang son",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.9667,
+      "lon": 106.7167,
+      "so_nguon": 0,
+      "trang_thai": null
+    },
+    {
+      "id": null,
+      "slug": null,
+      "ten": "Vĩnh Long",
+      "ten_chuan": "vinh long",
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 10.25,
+      "lon": 105.97,
+      "so_nguon": 0,
+      "trang_thai": null
     },
     {
       "id": "bao-tang-lich-su-quoc-gia",
@@ -72853,6 +73061,38 @@
       ]
     },
     {
+      "ten_chuan": "quan dao hoang sa",
+      "so_file": 4,
+      "files": [
+        "boundaries/vn-34-tinh-2025.geojson",
+        "boundaries/vn-63-tinh-truoc-2025.geojson",
+        "boundaries/vn-phap-thuoc-1887-1945.geojson",
+        "overlays/ban-do-co.json"
+      ],
+      "muc": [
+        {
+          "file": "boundaries/vn-34-tinh-2025.geojson",
+          "id": null,
+          "ten": "Quần đảo Hoàng Sa"
+        },
+        {
+          "file": "boundaries/vn-63-tinh-truoc-2025.geojson",
+          "id": null,
+          "ten": "Quần đảo Hoàng Sa"
+        },
+        {
+          "file": "boundaries/vn-phap-thuoc-1887-1945.geojson",
+          "id": null,
+          "ten": "Quần đảo Hoàng Sa"
+        },
+        {
+          "file": "overlays/ban-do-co.json",
+          "id": null,
+          "ten": "Quần đảo Hoàng Sa"
+        }
+      ]
+    },
+    {
       "ten_chuan": "ba huyen thanh quan the ky xix",
       "so_file": 3,
       "files": [
@@ -74201,32 +74441,6 @@
           "file": "streets/danh-nhan-duong-pilot.json",
           "id": null,
           "ten": "Phó Đức Chính (1907–1930)"
-        }
-      ]
-    },
-    {
-      "ten_chuan": "quan dao hoang sa",
-      "so_file": 3,
-      "files": [
-        "boundaries/vn-34-tinh-2025.geojson",
-        "boundaries/vn-63-tinh-truoc-2025.geojson",
-        "boundaries/vn-phap-thuoc-1887-1945.geojson"
-      ],
-      "muc": [
-        {
-          "file": "boundaries/vn-34-tinh-2025.geojson",
-          "id": null,
-          "ten": "Quần đảo Hoàng Sa"
-        },
-        {
-          "file": "boundaries/vn-63-tinh-truoc-2025.geojson",
-          "id": null,
-          "ten": "Quần đảo Hoàng Sa"
-        },
-        {
-          "file": "boundaries/vn-phap-thuoc-1887-1945.geojson",
-          "id": null,
-          "ten": "Quần đảo Hoàng Sa"
         }
       ]
     },
@@ -90306,6 +90520,26 @@
       ]
     },
     {
+      "ten_chuan": "vinh long",
+      "so_file": 2,
+      "files": [
+        "overlays/ban-do-co.json",
+        "provinces/vinh-long.json"
+      ],
+      "muc": [
+        {
+          "file": "overlays/ban-do-co.json",
+          "id": null,
+          "ten": "Vĩnh Long"
+        },
+        {
+          "file": "provinces/vinh-long.json",
+          "id": null,
+          "ten": "Vĩnh Long"
+        }
+      ]
+    },
+    {
       "ten_chuan": "vo nguyen giap 1911 2013",
       "so_file": 2,
       "files": [
@@ -90913,6 +91147,71 @@
         "file": "overlays/nghia-trang-liet-si.json",
         "id": "ntls-duy-xuyen-quang-nam",
         "ten": "Cụm nghĩa trang liệt sĩ huyện Duy Xuyên"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Côn Đảo"
+      },
+      "b": {
+        "file": "overlays/danh-thang-thien-nhien.json",
+        "id": "vqg-con-dao",
+        "ten": "Vườn quốc gia Côn Đảo"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Quần đảo Hoàng Sa"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "hai-chien-hoang-sa-1974",
+        "ten": "Hải chiến Hoàng Sa"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Đảo Lý Sơn (Quảng Ngãi)"
+      },
+      "b": {
+        "file": "overlays/danh-thang-thien-nhien.json",
+        "id": "dao-ly-son-quang-ngai",
+        "ten": "Đảo Lý Sơn"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Vĩnh Long"
+      },
+      "b": {
+        "file": "overlays/nghe-nhan-di-san.json",
+        "id": "nghe-nhan-vu-linh-tam",
+        "ten": "Vũ Linh Tâm"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Vĩnh Long"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-vinh-long",
+        "ten": "Nghĩa trang liệt sĩ tỉnh Vĩnh Long"
       },
       "khoang_cach_m": 0
     },
@@ -95572,6 +95871,19 @@
     },
     {
       "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Nội thành Hà Nội"
+      },
+      "b": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": "ho-hoan-kiem-va-den-ngoc-son",
+        "ten": "Hồ Hoàn Kiếm và Đền Ngọc Sơn"
+      },
+      "khoang_cach_m": 23
+    },
+    {
+      "a": {
         "file": "overlays/bao-vat-quoc-gia.json",
         "id": "tuong-phat-nghin-mat-nghin-tay-chua-but-thap",
         "ten": "Tượng Phật nghìn mắt nghìn tay chùa Bút Tháp"
@@ -95764,6 +96076,58 @@
         "ten": "Ngô Bảo Châu"
       },
       "khoang_cach_m": 30
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Thăng Long — nay là Hà Nội"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "60-ngay-dem-ha-noi-1946-1947",
+        "ten": "60 ngày đêm khói lửa Hà Nội"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Thăng Long — nay là Hà Nội"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-dong-kinh-nghia-thuc-1907",
+        "ten": "Thành lập Đông Kinh Nghĩa Thục"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Thăng Long — nay là Hà Nội"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-van-minh-tan-hoc-sach-1907",
+        "ten": "Văn minh tân học sách (Đông Kinh Nghĩa Thục)"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Thăng Long — nay là Hà Nội"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tac-pham-nam-phong-tap-chi-1917",
+        "ten": "Nam Phong tạp chí ra đời"
+      },
+      "khoang_cach_m": 31
     },
     {
       "a": {
@@ -97626,6 +97990,19 @@
     },
     {
       "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Thăng Long — nay là Hà Nội"
+      },
+      "b": {
+        "file": "overlays/chi-si-cach-mang.json",
+        "id": "hoang-thi-minh-ho",
+        "ten": "Hoàng Thị Minh Hồ"
+      },
+      "khoang_cach_m": 94
+    },
+    {
+      "a": {
         "file": "overlays/chien-dich-tran-danh.json",
         "id": "kinh-thanh-hue-that-thu-1885",
         "ten": "Kinh thành Huế thất thủ (1885)"
@@ -97727,6 +98104,19 @@
         "ten": "Nghĩa trang liệt sĩ quốc gia A1"
       },
       "khoang_cach_m": 99
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Nội thành Hà Nội"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-den-vu-thach",
+        "ten": "Đình và đền Vũ Thạch"
+      },
+      "khoang_cach_m": 100
     },
     {
       "a": {
@@ -100252,6 +100642,19 @@
     },
     {
       "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Nội thành Hà Nội"
+      },
+      "b": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "to-ngoc-van",
+        "ten": "Tô Ngọc Vân"
+      },
+      "khoang_cach_m": 172
+    },
+    {
+      "a": {
         "file": "overlays/chi-si-cach-mang.json",
         "id": "trinh-van-bo",
         "ten": "Trịnh Văn Bô"
@@ -100590,6 +100993,19 @@
     },
     {
       "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Thăng Long — nay là Hà Nội"
+      },
+      "b": {
+        "file": "overlays/chi-si-cach-mang.json",
+        "id": "pham-chan-hung",
+        "ten": "Phạm Chân Hưng"
+      },
+      "khoang_cach_m": 183
+    },
+    {
+      "a": {
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "hoang-van",
         "ten": "Hoàng Vân (Lê Văn Ngọ)"
@@ -100741,6 +101157,32 @@
         "file": "overlays/khoa-bang-danh-nhan.json",
         "id": "truong-quoc-dung",
         "ten": "Trương Quốc Dụng"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Nội thành Hà Nội"
+      },
+      "b": {
+        "file": "overlays/nha-the-thao-lich-su.json",
+        "id": "vu-bich-huong",
+        "ten": "Vũ Bích Hường"
+      },
+      "khoang_cach_m": 188
+    },
+    {
+      "a": {
+        "file": "overlays/ban-do-co.json",
+        "id": null,
+        "ten": "Nội thành Hà Nội"
+      },
+      "b": {
+        "file": "overlays/nha-the-thao-lich-su.json",
+        "id": "nguyen-hoang-ngan",
+        "ten": "Nguyễn Hoàng Ngân"
       },
       "khoang_cach_m": 188
     },

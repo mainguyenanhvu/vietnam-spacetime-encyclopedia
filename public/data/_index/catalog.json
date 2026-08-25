@@ -1,9 +1,9 @@
 {
   "tong": {
-    "so_file": 347,
-    "so_muc": 5593,
-    "so_byte": 10420973,
-    "ngay_sinh": "2026-08-24"
+    "so_file": 348,
+    "so_muc": 5609,
+    "so_byte": 10456713,
+    "ngay_sinh": "2026-08-25"
   },
   "files": [
     {
@@ -7645,8 +7645,8 @@
     {
       "file": "media/ban-do-co.json",
       "mien": "media",
-      "so_muc": 18,
-      "byte": 33480,
+      "so_muc": 19,
+      "byte": 50548,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7659,13 +7659,15 @@
         "nam_hien_thi",
         "nhom",
         "mo_ta",
-        "y_nghia_chu_quyen",
         "noi_luu_giu",
         "nguon",
+        "pham_vi",
+        "diem_neo",
+        "y_nghia_chu_quyen",
         "anh_ghi_chu"
       ],
-      "sha256": "383e039c4e55472e3a02d98e86514972342834e4b7772a9795b09b06b0d6bac5",
-      "mo_ta": "Vỉa bản đồ cổ chứng minh chủ quyền Việt Nam đối với Hoàng Sa và Trường Sa."
+      "sha256": "5dccc7267b5b4901a6207896d1da1f84a9138a931e8f10086f3adc7f8178d19c",
+      "mo_ta": "Bản đồ cổ về lãnh thổ Việt Nam qua các thời kỳ."
     },
     {
       "file": "media/dia-danh.json",
@@ -7753,6 +7755,30 @@
       ],
       "sha256": "51a839c533340fe20b2e8b71e1ee7785f249d9a00261c0be46bf15ae67e3ec84",
       "mo_ta": "Anh hùng cận–hiện đại Việt Nam (thế kỷ 20–21): đại tướng QĐND, Anh hùng LLVTND, Mẹ Việt Nam Anh hùng, Anh hùng Lao động."
+    },
+    {
+      "file": "overlays/ban-do-co.json",
+      "mien": "overlays",
+      "so_muc": 15,
+      "byte": 18672,
+      "kieu_boc_ngoai": "items[]",
+      "truong_nguon_cap_muc": null,
+      "truong_nguon_cap_file": "sources",
+      "phu_nguon_cap_muc_pct": 0,
+      "truong_pho_bien": [
+        "ten",
+        "lat",
+        "lon",
+        "dia_danh_xua",
+        "nhom_ban_do",
+        "nam",
+        "nam_hien_thi",
+        "mo_ta",
+        "ban_do_ghi",
+        "do_tin_cay_toa_do"
+      ],
+      "sha256": "eefbcb7a7d35b4618eaa198d8adba888151a9bae3434a37b482e840db13e9132",
+      "mo_ta": "SINH TỰ ĐỘNG từ media/ban-do-co.json bởi scripts/build_ban_do_co_overlay.mjs — ĐỪNG SỬA TAY, sửa bản gốc rồi chạy lại."
     },
     {
       "file": "overlays/bao-tang.json",

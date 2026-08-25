@@ -1,0 +1,476 @@
+{
+  "ghi_chu": "SINH TỰ ĐỘNG từ media/ban-do-co.json bởi scripts/build_ban_do_co_overlay.mjs — ĐỪNG SỬA TAY, sửa bản gốc rồi chạy lại. Mỗi mục là MỘT ĐỊA ĐIỂM có thật ngày nay, mang danh sách mọi bản đồ cổ từng ghi tên nơi đó (ban_do_ghi[]). Gom theo địa điểm chứ không theo bản đồ, vì nhiều tấm cùng gọi tên một chỗ — để riêng thì các điểm chồng khít, bấm không tới.",
+  "ngay_cap_nhat": "2026-08-25",
+  "sources": [
+    "Cục Di sản Văn hoá, Bộ Ngoại giao, Ủy ban Biên giới quốc gia, VOV, Tuổi Trẻ, Dân trí, báo Đà Nẵng, Tạp chí Xây dựng Đảng, Mộc Bản Triều Nguyễn — Trung tâm Lưu trữ quốc gia IV"
+  ],
+  "items": [
+    {
+      "ten": "Thăng Long — nay là Hà Nội",
+      "lat": 21.0333,
+      "lon": 105.85,
+      "dia_danh_xua": "Trung Đô · Kecio",
+      "nhom_ban_do": "nhieu",
+      "nam": "1490",
+      "nam_hien_thi": "1490 – 1771",
+      "mo_ta": "3 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1490.",
+      "ban_do_ghi": [
+        {
+          "nam": "1490",
+          "ten_ban_do": "Hồng Đức bản đồ",
+          "dia_danh_xua": "Trung Đô",
+          "nhom": "viet-nam",
+          "ghi_chu": "Kinh đô có bản đồ riêng, là một trong ba phần của bộ.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1650",
+          "ten_ban_do": "Bản đồ \"Vương quốc An Nam\" (Regnu Annam) của Alexandre de Rhodes",
+          "dia_danh_xua": "Kecio",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Kẻ Chợ — địa danh DUY NHẤT mang ký hiệu thành phố trên bản A (1650, Rome).",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1771",
+          "ten_ban_do": "Thiên Nam lộ đồ",
+          "dia_danh_xua": "Trung Đô",
+          "nhom": "viet-nam",
+          "ghi_chu": "Điểm gốc của các lộ trình vẽ trong bộ atlas.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Vùng biển ngoài khơi Quảng Ngãi",
+      "lat": 15.2,
+      "lon": 109.6,
+      "dia_danh_xua": "Đại Hải",
+      "nhom_ban_do": "viet-nam",
+      "nam": "1490",
+      "nam_hien_thi": "1490",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1490.",
+      "ban_do_ghi": [
+        {
+          "nam": "1490",
+          "ten_ban_do": "Hồng Đức bản đồ",
+          "dia_danh_xua": "Đại Hải",
+          "nhom": "viet-nam",
+          "ghi_chu": "Ngoài khơi Quảng Ngãi bản đồ ghi ba chữ Hán «Đại Hải». KHÔNG neo vào Bãi Cát Vàng: mô tả dải cát chỉ đến với đời sau qua Toản tập Thiên Nam tứ chí lộ đồ thư, không đọc được trên bản 1490 còn nguyên.",
+          "do_tin_cay": "trung"
+        }
+      ],
+      "do_tin_cay_toa_do": "trung"
+    },
+    {
+      "ten": "Côn Đảo",
+      "lat": 8.6833,
+      "lon": 106.6,
+      "dia_danh_xua": "Pulo Condor",
+      "nhom_ban_do": "phuong-tay",
+      "nam": "1613",
+      "nam_hien_thi": "1613",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1613.",
+      "ban_do_ghi": [
+        {
+          "nam": "1613",
+          "ten_ban_do": "Insulae Indiae Orientalis (Jodocus Hondius)",
+          "dia_danh_xua": "Pulo Condor",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Vẽ tách biệt khỏi chuỗi đảo ven bờ.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Đảo Phú Quốc",
+      "lat": 10.22,
+      "lon": 103.96,
+      "dia_danh_xua": "Pulo Cici",
+      "nhom_ban_do": "phuong-tay",
+      "nam": "1613",
+      "nam_hien_thi": "1613",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1613.",
+      "ban_do_ghi": [
+        {
+          "nam": "1613",
+          "ten_ban_do": "Insulae Indiae Orientalis (Jodocus Hondius)",
+          "dia_danh_xua": "Pulo Cici",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Định danh theo nguồn dẫn của mục này.",
+          "do_tin_cay": "trung"
+        }
+      ],
+      "do_tin_cay_toa_do": "trung"
+    },
+    {
+      "ten": "Quần đảo Hoàng Sa",
+      "lat": 16.5,
+      "lon": 112,
+      "dia_danh_xua": "Paracels · Paracel · Bãi Cát Vàng · Hoàng Sa · Paracel seu Cát Vàng · Quần đảo ngoài khơi miền Trung · Vạn Lý Trường Sa · Hoàng Sa chử",
+      "nhom_ban_do": "nhieu",
+      "nam": "1613",
+      "nam_hien_thi": "1613 – 1881",
+      "mo_ta": "12 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1613.",
+      "ban_do_ghi": [
+        {
+          "nam": "1613",
+          "ten_ban_do": "Insulae Indiae Orientalis (Jodocus Hondius)",
+          "dia_danh_xua": "Paracels",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Vẽ trong hệ thống đảo ven bờ Việt Nam, phân biệt với các đảo khác trong khu vực.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1645",
+          "ten_ban_do": "Bản đồ Đông Ấn của Willem Blaeu",
+          "dia_danh_xua": "Paracel",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Vẽ nối liền với chuỗi đảo ven bờ chứ không phải thực thể biển khơi tách biệt.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1686",
+          "ten_ban_do": "Toản tập Thiên Nam tứ chí lộ đồ thư",
+          "dia_danh_xua": "Bãi Cát Vàng",
+          "nhom": "viet-nam",
+          "ghi_chu": "Ghi bằng chữ Nôm — bản đồ đầu tiên còn lưu khẳng định Bãi Cát Vàng thuộc Đại Việt.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1737",
+          "ten_ban_do": "Bản đồ Trung Hoa trong Nouvel Atlas de la Chine (d'Anville)",
+          "dia_danh_xua": "Paracel",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Ghi riêng biệt ở khoảng vĩ tuyến 16–17°B, TÁCH khỏi phần lãnh thổ Trung Quốc.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1771",
+          "ten_ban_do": "Thiên Nam lộ đồ",
+          "dia_danh_xua": "Bãi Cát Vàng",
+          "nhom": "viet-nam",
+          "ghi_chu": "Tờ thứ 78 mô tả bãi ngoài khơi và việc chúa Nguyễn hằng năm cử thuyền ra khai thác.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1774",
+          "ten_ban_do": "Giáp Ngọ Bình Nam đồ",
+          "dia_danh_xua": "Bãi Cát Vàng",
+          "nhom": "viet-nam",
+          "ghi_chu": "Vẽ cách điệu hình bầu dục, đặt giữa Cù Lao Chàm và Cù Lao Ré, ngoài khơi phủ Quảng Ngãi.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1827",
+          "ten_ban_do": "Atlas Universel — \"Partie de la Cochinchine\" (bản đồ số 106) của Philippe Vandermaelen",
+          "dia_danh_xua": "Paracels",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Vẽ trong khoảng vĩ tuyến 16–17°, kinh tuyến 109–111°, kèm ghi chú thuộc «Empire of Annam».",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1838",
+          "ten_ban_do": "Đại Nam nhất thống toàn đồ",
+          "dia_danh_xua": "Hoàng Sa",
+          "nhom": "viet-nam",
+          "ghi_chu": "Ghi bằng chữ Hán trong vùng biển thuộc lãnh thổ Việt Nam — Bộ Ngoại giao viện dẫn làm căn cứ chính thức.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1838",
+          "ten_ban_do": "An Nam Đại Quốc Hoạ Đồ",
+          "dia_danh_xua": "Paracel seu Cát Vàng",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Ghi phía trên vĩ tuyến 16 — đồng nhất tên hàng hải quốc tế «Paracel» với địa danh Việt «Cát Vàng».",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1841",
+          "ten_ban_do": "Đại Nam toàn đồ",
+          "dia_danh_xua": "Quần đảo ngoài khơi miền Trung",
+          "nhom": "viet-nam",
+          "ghi_chu": "Nguồn chỉ nói bản đồ «tiếp tục ghi nhận các quần đảo ngoài khơi miền Trung», KHÔNG trích tên chữ Hán cụ thể — neo tạm về Hoàng Sa, chờ nguồn dẫn nguyên văn.",
+          "do_tin_cay": "thap"
+        },
+        {
+          "nam": "1842",
+          "ten_ban_do": "Hải Quốc Đồ Chí — bản đồ \"Đông Nam Dương các quốc diên cách đồ\" (quyển 9)",
+          "dia_danh_xua": "Vạn Lý Trường Sa",
+          "nhom": "trung-quoc",
+          "ghi_chu": "⚠️ Nguồn nói hai tên «Vạn Lý Trường Sa» và «Thiên Lý Thạch Đường» TƯƠNG ỨNG với Hoàng Sa và Trường Sa ngày nay nhưng KHÔNG nói tên nào ứng với quần đảo nào. Giữ nguyên chỗ vênh, đừng chọn bản gọn hơn.",
+          "do_tin_cay": "thap"
+        },
+        {
+          "nam": "1881",
+          "ten_ban_do": "Bản Quốc Địa Đồ",
+          "dia_danh_xua": "Hoàng Sa chử",
+          "nhom": "viet-nam",
+          "ghi_chu": "Ba chữ Hán «Hoàng Sa chử» (bãi Hoàng Sa) ghi ở vùng biển ngoài khơi miền Trung.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
+      "lat": 18.25,
+      "lon": 109.5,
+      "dia_danh_xua": "Cực nam lãnh thổ · Ranh giới đông nam · Cực nam lãnh thổ Trung Quốc",
+      "nhom_ban_do": "nhieu",
+      "nam": "1635",
+      "nam_hien_thi": "1635 – 1905",
+      "mo_ta": "5 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1635.",
+      "ban_do_ghi": [
+        {
+          "nam": "1635",
+          "ten_ban_do": "Hoàng Minh Chức Phương Địa Đồ",
+          "dia_danh_xua": "Cực nam lãnh thổ",
+          "nhom": "trung-quoc",
+          "ghi_chu": "Không có hình vẽ hay ghi chú Hoàng Sa, Trường Sa ở phía nam mốc này.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1717",
+          "ten_ban_do": "Hoàng Dư Toàn Lãm Phân Tỉnh Đồ (Hoàng dư toàn lãm đồ)",
+          "dia_danh_xua": "Ranh giới đông nam",
+          "nhom": "trung-quoc",
+          "ghi_chu": "Ngay ở bộ đo đạc khoa học sớm nhất, cương vực nhà Thanh cũng dừng ở đảo Hải Nam.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1737",
+          "ten_ban_do": "Bản đồ Trung Hoa trong Nouvel Atlas de la Chine (d'Anville)",
+          "dia_danh_xua": "Cực nam lãnh thổ Trung Quốc",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Ranh giới phía nam của Trung Quốc trên bản đồ dừng lại ở đảo Hải Nam.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1904",
+          "ten_ban_do": "Hoàng triều trực tỉnh địa dư toàn đồ",
+          "dia_danh_xua": "Cực nam lãnh thổ",
+          "nhom": "trung-quoc",
+          "ghi_chu": "Bản đồ do chính triều đình nhà Thanh ban hành dừng cương vực ở đảo Hải Nam.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1905",
+          "ten_ban_do": "Đại Thanh đế quốc toàn đồ",
+          "dia_danh_xua": "Cực nam lãnh thổ",
+          "nhom": "trung-quoc",
+          "ghi_chu": "Trùng khớp bản đồ 1904 — không phải trường hợp cá biệt.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Đảo Lý Sơn (Quảng Ngãi)",
+      "lat": 15.3833,
+      "lon": 109.1167,
+      "dia_danh_xua": "Pulo Canton · Cù Lao Ré",
+      "nhom_ban_do": "nhieu",
+      "nam": "1645",
+      "nam_hien_thi": "1645 – 1774",
+      "mo_ta": "2 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1645.",
+      "ban_do_ghi": [
+        {
+          "nam": "1645",
+          "ten_ban_do": "Bản đồ Đông Ấn của Willem Blaeu",
+          "dia_danh_xua": "Pulo Canton",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Một mắt của chuỗi đảo.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1774",
+          "ten_ban_do": "Giáp Ngọ Bình Nam đồ",
+          "dia_danh_xua": "Cù Lao Ré",
+          "nhom": "viet-nam",
+          "ghi_chu": "Vẽ như một đỉnh núi, làm mốc phía nam.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Đảo Phú Quý (Bình Thuận cũ)",
+      "lat": 10.52,
+      "lon": 108.9333,
+      "dia_danh_xua": "Pulo Secca de Mare",
+      "nhom_ban_do": "phuong-tay",
+      "nam": "1645",
+      "nam_hien_thi": "1645",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1645.",
+      "ban_do_ghi": [
+        {
+          "nam": "1645",
+          "ten_ban_do": "Bản đồ Đông Ấn của Willem Blaeu",
+          "dia_danh_xua": "Pulo Secca de Mare",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Một mắt của chuỗi đảo.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Cửa Đại (Hội An)",
+      "lat": 15.89,
+      "lon": 108.38,
+      "dia_danh_xua": "Cửa Đại Chiêm",
+      "nhom_ban_do": "viet-nam",
+      "nam": "1686",
+      "nam_hien_thi": "1686",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1686.",
+      "ban_do_ghi": [
+        {
+          "nam": "1686",
+          "ten_ban_do": "Toản tập Thiên Nam tứ chí lộ đồ thư",
+          "dia_danh_xua": "Cửa Đại Chiêm",
+          "nhom": "viet-nam",
+          "ghi_chu": "Đầu phía bắc của dải cát theo mô tả trên bản đồ.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Cửa Sa Kỳ (Quảng Ngãi)",
+      "lat": 15.38,
+      "lon": 108.92,
+      "dia_danh_xua": "Cửa Sa Kỳ",
+      "nhom_ban_do": "viet-nam",
+      "nam": "1686",
+      "nam_hien_thi": "1686",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1686.",
+      "ban_do_ghi": [
+        {
+          "nam": "1686",
+          "ten_ban_do": "Toản tập Thiên Nam tứ chí lộ đồ thư",
+          "dia_danh_xua": "Cửa Sa Kỳ",
+          "nhom": "viet-nam",
+          "ghi_chu": "Đầu phía nam của dải cát theo mô tả trên bản đồ.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Cù Lao Chàm (Đà Nẵng)",
+      "lat": 15.95,
+      "lon": 108.5,
+      "dia_danh_xua": "Cù Lao Chàm",
+      "nhom_ban_do": "viet-nam",
+      "nam": "1774",
+      "nam_hien_thi": "1774",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1774.",
+      "ban_do_ghi": [
+        {
+          "nam": "1774",
+          "ten_ban_do": "Giáp Ngọ Bình Nam đồ",
+          "dia_danh_xua": "Cù Lao Chàm",
+          "nhom": "viet-nam",
+          "ghi_chu": "Vẽ như một đỉnh núi, làm mốc phía bắc.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Nội thành Hà Nội",
+      "lat": 21.0287,
+      "lon": 105.8524,
+      "dia_danh_xua": "Phủ Hoài Đức",
+      "nhom_ban_do": "viet-nam",
+      "nam": "1831",
+      "nam_hien_thi": "1831",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1831.",
+      "ban_do_ghi": [
+        {
+          "nam": "1831",
+          "ten_ban_do": "Hoài Đức phủ toàn đồ",
+          "dia_danh_xua": "Phủ Hoài Đức",
+          "nhom": "viet-nam",
+          "ghi_chu": "Toàn bộ tờ bản đồ vẽ đúng vùng này ở tỷ lệ ~1/500.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Quần đảo Trường Sa (đảo Trường Sa Lớn)",
+      "lat": 8.64,
+      "lon": 111.92,
+      "dia_danh_xua": "Vạn Lý Trường Sa · Thiên Lý Thạch Đường",
+      "nhom_ban_do": "nhieu",
+      "nam": "1838",
+      "nam_hien_thi": "1838 – 1842",
+      "mo_ta": "2 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1838.",
+      "ban_do_ghi": [
+        {
+          "nam": "1838",
+          "ten_ban_do": "Đại Nam nhất thống toàn đồ",
+          "dia_danh_xua": "Vạn Lý Trường Sa",
+          "nhom": "viet-nam",
+          "ghi_chu": "Trên bản đồ vẽ thành một dải dài chứ không phải một điểm; neo về đảo Trường Sa Lớn để đối chiếu vị trí.",
+          "do_tin_cay": "trung"
+        },
+        {
+          "nam": "1842",
+          "ten_ban_do": "Hải Quốc Đồ Chí — bản đồ \"Đông Nam Dương các quốc diên cách đồ\" (quyển 9)",
+          "dia_danh_xua": "Thiên Lý Thạch Đường",
+          "nhom": "trung-quoc",
+          "ghi_chu": "⚠️ Xem ghi chú ở mục «Vạn Lý Trường Sa» cùng bản đồ này — cặp tên chưa phân định được tên nào ứng quần đảo nào.",
+          "do_tin_cay": "thap"
+        }
+      ],
+      "do_tin_cay_toa_do": "trung"
+    },
+    {
+      "ten": "Hữu Nghị Quan (Lạng Sơn)",
+      "lat": 21.9667,
+      "lon": 106.7167,
+      "dia_danh_xua": "Ải Nam Quan",
+      "nhom_ban_do": "viet-nam",
+      "nam": "1881",
+      "nam_hien_thi": "1881",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1881.",
+      "ban_do_ghi": [
+        {
+          "nam": "1881",
+          "ten_ban_do": "Bản Quốc Địa Đồ",
+          "dia_danh_xua": "Ải Nam Quan",
+          "nhom": "viet-nam",
+          "ghi_chu": "Mốc cực bắc của phạm vi bản đồ.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "do_tin_cay_toa_do": "cao"
+    },
+    {
+      "ten": "Vĩnh Long",
+      "lat": 10.25,
+      "lon": 105.97,
+      "dia_danh_xua": "Vĩnh Long",
+      "nhom_ban_do": "viet-nam",
+      "nam": "1881",
+      "nam_hien_thi": "1881",
+      "mo_ta": "1 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1881.",
+      "ban_do_ghi": [
+        {
+          "nam": "1881",
+          "ten_ban_do": "Bản Quốc Địa Đồ",
+          "dia_danh_xua": "Vĩnh Long",
+          "nhom": "viet-nam",
+          "ghi_chu": "Mốc cực nam của phạm vi bản đồ.",
+          "do_tin_cay": "trung"
+        }
+      ],
+      "do_tin_cay_toa_do": "trung"
+    }
+  ]
+}

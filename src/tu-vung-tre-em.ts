@@ -23,6 +23,7 @@ export const CUM_TRE_EM: Record<string, string> = {
   "van-hoa-khoa-hoc": "Nhà văn, nhà khoa học, vận động viên",
   "cach-mang": "Anh hùng cách mạng",
   "huyen-su": "Chuyện xưa tích cũ",
+  "ban-do-co": "Bản đồ vẽ từ đời xưa",
   khac: "Thứ khác",
 };
 
@@ -57,6 +58,7 @@ export const LOP_TRE_EM: Record<string, string> = {
   "nghia-trang-liet-si": "Nghĩa trang liệt sĩ",
   "huyen-su-khai-quoc": "Chuyện dựng nước thuở xưa",
   "truyen-thuyet-dan-gian": "Truyện truyền thuyết",
+  "ban-do-co": "Ngày xưa chỗ này gọi là gì",
 };
 
 /** Tiêu đề và nhãn cố định trong bảng lớp bản đồ. Khoá = id phần tử/mục. */

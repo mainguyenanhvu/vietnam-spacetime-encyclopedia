@@ -1,6 +1,6 @@
 {
-  "ghi_chu": "Vỉa bản đồ cổ chứng minh chủ quyền Việt Nam đối với Hoàng Sa và Trường Sa. Ba nhóm: viet-nam (bản đồ do người Việt vẽ), phuong-tay (bản đồ phương Tây), trung-quoc (bản đồ cổ Trung Quốc cho thấy cực nam lãnh thổ chỉ đến đảo Hải Nam — bằng chứng từ chính tư liệu phía đối phương). Chính sách ảnh: CHỈ dùng URL https://upload.wikimedia.org/... (CSP dự án chặn host khác). Mục không tìm được ảnh trên Commons vẫn giữ, kèm anh_ghi_chu nói rõ bản gốc đang ở đâu. Nội dung mô tả và ý nghĩa chủ quyền CHỈ lấy từ nguồn nhà nước/báo chí chính thống — Wikimedia Commons chỉ dùng làm kho ảnh, không dùng làm nguồn nội dung. Đang ghi bản nháp giữa chừng (đợt tra cứu bị gián đoạn do rate-limit hạ tầng) — sẽ cập nhật thêm.",
-  "ngay_cap_nhat": "2026-07-26",
+  "ghi_chu": "Bản đồ cổ về lãnh thổ Việt Nam qua các thời kỳ. Phần lớn là vỉa tư liệu chứng minh chủ quyền đối với Hoàng Sa và Trường Sa, nay mở thêm cả bản đồ cổ KHÔNG thuộc mảng chủ quyền (bản đồ đô thị, bản đồ hành chính). ⚠️ KHÔNG CÓ BẢN ĐỒ NÀO TRƯỚC THẾ KỶ XV. Nghề vẽ bản đồ nhà nước ở Việt Nam bắt đầu từ Hồng Đức bản đồ (1490); mọi thời kỳ sớm hơn — Văn Lang, Âu Lạc, Bắc thuộc, Lý – Trần — không để lại bản đồ nào, và dự án KHÔNG dựng bản đồ phỏng đoán để lấp chỗ trống (bất biến «thà không vẽ còn hơn vẽ đoán»). Ba nhóm: viet-nam (bản đồ do người Việt vẽ), phuong-tay (bản đồ phương Tây), trung-quoc (bản đồ cổ Trung Quốc cho thấy cực nam lãnh thổ chỉ đến đảo Hải Nam — bằng chứng từ chính tư liệu phía đối phương). Trường diem_neo[] khớp địa danh GHI TRÊN bản đồ cổ với toạ độ thật ngày nay; toạ độ Hoàng Sa/Trường Sa dùng đúng hằng số của scripts/audit_sovereignty.mjs. Chính sách ảnh: CHỈ dùng URL https://upload.wikimedia.org/... (CSP dự án chặn host khác). Mục không tìm được ảnh trên Commons phải ghi rõ bản gốc đang ở đâu trong anh_ghi_chu.",
+  "ngay_cap_nhat": "2026-08-25",
   "sources": [
     "Cục Di sản Văn hoá, Bộ Ngoại giao, Ủy ban Biên giới quốc gia, VOV, Tuổi Trẻ, Dân trí, báo Đà Nẵng, Tạp chí Xây dựng Đảng, Mộc Bản Triều Nguyễn — Trung tâm Lưu trữ quốc gia IV"
   ],
@@ -19,6 +19,25 @@
       "nguon": [
         "VOV — https://vov.vn/van-hoa-giai-tri/ban-do-co-viet-nam-bang-chung-thep-ve-chu-quyen-voi-hoang-sa-va-truong-sa-327320.vov",
         "Báo Đà Nẵng — https://www.baodanang.vn/channel/6060/201308/do-ba-nguoi-ve-ban-do-bai-cat-vang-2260678/index.htm"
+      ],
+      "pham_vi": "Toàn quốc Đại Việt cuối thời Hồng Đức — 1 bản đồ toàn quốc, 1 bản đồ Trung Đô (Thăng Long) và 13 thừa tuyên với 52 phủ.",
+      "diem_neo": [
+        {
+          "ten_xua": "Trung Đô",
+          "ten_nay": "Thăng Long — nay là Hà Nội",
+          "lat": 21.0333,
+          "lon": 105.85,
+          "ghi_chu": "Kinh đô có bản đồ riêng, là một trong ba phần của bộ.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Đại Hải",
+          "ten_nay": "Vùng biển ngoài khơi Quảng Ngãi",
+          "lat": 15.2,
+          "lon": 109.6,
+          "ghi_chu": "Ngoài khơi Quảng Ngãi bản đồ ghi ba chữ Hán «Đại Hải». KHÔNG neo vào Bãi Cát Vàng: mô tả dải cát chỉ đến với đời sau qua Toản tập Thiên Nam tứ chí lộ đồ thư, không đọc được trên bản 1490 còn nguyên.",
+          "do_tin_cay": "trung"
+        }
       ]
     },
     {
@@ -36,6 +55,33 @@
         "Tạp chí Xây dựng Đảng — https://xaydungdang.org.vn/van-kien-tu-lieu/bien-dao-viet-nam/toan-tap-thien-nam-tu-chi-lo-do-thu-4427",
         "Báo Đà Nẵng — https://www.baodanang.vn/channel/6060/201308/do-ba-nguoi-ve-ban-do-bai-cat-vang-2260678/index.htm",
         "Phú Yên Online — https://phuyen.baodaklak.vn/367/117137/dia-danh-hoang-sa-trong-toan-tap-thien-nam-tu-chi-lo-do-thu-cua-do-ba.html"
+      ],
+      "pham_vi": "Bản đồ toàn quốc và các trấn/phủ; tờ vẽ phủ Quảng Ngãi mang ghi chú chữ Nôm về Bãi Cát Vàng.",
+      "diem_neo": [
+        {
+          "ten_xua": "Bãi Cát Vàng",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Ghi bằng chữ Nôm — bản đồ đầu tiên còn lưu khẳng định Bãi Cát Vàng thuộc Đại Việt.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Cửa Đại Chiêm",
+          "ten_nay": "Cửa Đại (Hội An)",
+          "lat": 15.89,
+          "lon": 108.38,
+          "ghi_chu": "Đầu phía bắc của dải cát theo mô tả trên bản đồ.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Cửa Sa Kỳ",
+          "ten_nay": "Cửa Sa Kỳ (Quảng Ngãi)",
+          "lat": 15.38,
+          "lon": 108.92,
+          "ghi_chu": "Đầu phía nam của dải cát theo mô tả trên bản đồ.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -51,6 +97,33 @@
       "anh_ghi_chu": "Chưa tìm được bản scan trên Wikimedia Commons.",
       "nguon": [
         "Địa danh Bãi cát vàng trong sử sách — Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/8031/djia-danh-bai-cat-vang-trong-su-sach.html"
+      ],
+      "pham_vi": "Vùng Đàng Trong — bản đồ tình báo do Bùi Thế Đạt dâng chúa Trịnh phục vụ kế hoạch đánh Đàng Trong.",
+      "diem_neo": [
+        {
+          "ten_xua": "Bãi Cát Vàng",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Vẽ cách điệu hình bầu dục, đặt giữa Cù Lao Chàm và Cù Lao Ré, ngoài khơi phủ Quảng Ngãi.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Cù Lao Chàm",
+          "ten_nay": "Cù Lao Chàm (Đà Nẵng)",
+          "lat": 15.95,
+          "lon": 108.5,
+          "ghi_chu": "Vẽ như một đỉnh núi, làm mốc phía bắc.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Cù Lao Ré",
+          "ten_nay": "Đảo Lý Sơn (Quảng Ngãi)",
+          "lat": 15.3833,
+          "lon": 109.1167,
+          "ghi_chu": "Vẽ như một đỉnh núi, làm mốc phía nam.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -70,6 +143,25 @@
         "Tuổi Trẻ Cuối Tuần (tranh cãi niên đại) — https://cuoituan.tuoitre.vn/van-de-nien-dai-lon-xon-cua-dai-nam-nhat-thong-toan-do-20241023095500073.htm",
         "Tạp chí Xây dựng Đảng — https://www.xaydungdang.org.vn/van-kien-tu-lieu/bien-dao-viet-nam/dai-nam-nhat-thong-toan-do-4368",
         "Dân trí — https://dantri.com.vn/van-hoa/nhieu-tu-lieu-co-khang-dinh-hoang-sa-truong-sa-la-cua-viet-nam-1404198313.htm"
+      ],
+      "pham_vi": "Toàn quốc Đại Nam thời Nguyễn, núi sông biển đảo đặt gần đúng toạ độ địa lý như ngày nay.",
+      "diem_neo": [
+        {
+          "ten_xua": "Hoàng Sa",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Ghi bằng chữ Hán trong vùng biển thuộc lãnh thổ Việt Nam — Bộ Ngoại giao viện dẫn làm căn cứ chính thức.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Vạn Lý Trường Sa",
+          "ten_nay": "Quần đảo Trường Sa (đảo Trường Sa Lớn)",
+          "lat": 8.64,
+          "lon": 111.92,
+          "ghi_chu": "Trên bản đồ vẽ thành một dải dài chứ không phải một điểm; neo về đảo Trường Sa Lớn để đối chiếu vị trí.",
+          "do_tin_cay": "trung"
+        }
       ]
     },
     {
@@ -88,6 +180,17 @@
       "nguon": [
         "Thanh Niên — https://thanhnien.vn/gia-tri-vo-gia-cua-ban-do-taberd-1838-185241008215439532.htm",
         "VOV — https://vov.vn/van-hoa-giai-tri/ban-do-co-viet-nam-bang-chung-thep-ve-chu-quyen-voi-hoang-sa-va-truong-sa-327320.vov"
+      ],
+      "pham_vi": "Bản đồ khổ 40×80 cm in kèm từ điển «Dictionarium Anamitico-Latinum» (Serampore, Ấn Độ).",
+      "diem_neo": [
+        {
+          "ten_xua": "Paracel seu Cát Vàng",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Ghi phía trên vĩ tuyến 16 — đồng nhất tên hàng hải quốc tế «Paracel» với địa danh Việt «Cát Vàng».",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -105,6 +208,17 @@
       "anh_giay_phep": "public domain",
       "nguon": [
         "Báo Chính phủ — https://baochinhphu.vn/hoang-sa-truong-sa-trong-ban-do-co-nuoc-ngoai-10290708.htm"
+      ],
+      "pham_vi": "Bờ biển Việt Nam từ vĩ tuyến 12°B đến 24°B, chia Đàng Trong (Cochinchina) — Đàng Ngoài (Tunquin).",
+      "diem_neo": [
+        {
+          "ten_xua": "Kecio",
+          "ten_nay": "Thăng Long — nay là Hà Nội",
+          "lat": 21.0333,
+          "lon": 105.85,
+          "ghi_chu": "Kẻ Chợ — địa danh DUY NHẤT mang ký hiệu thành phố trên bản A (1650, Rome).",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -120,6 +234,33 @@
       "anh_ghi_chu": "Chưa xác nhận được file Wikimedia Commons khớp đúng ấn bản 1613 này (có nhiều ấn bản Hondius tương tự từ 1606-1613 dễ gây nhầm lẫn) — không gắn ảnh để tránh gán sai ấn bản.",
       "nguon": [
         "VOV — https://vov.vn/van-hoa-giai-tri/ban-do-co-viet-nam-bang-chung-thep-ve-chu-quyen-voi-hoang-sa-va-truong-sa-327320.vov"
+      ],
+      "pham_vi": "Đông Ấn — toàn bộ chuỗi đảo của Việt Nam từ nam Vịnh Bắc Bộ xuống vùng biển phía nam.",
+      "diem_neo": [
+        {
+          "ten_xua": "Paracels",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Vẽ trong hệ thống đảo ven bờ Việt Nam, phân biệt với các đảo khác trong khu vực.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Pulo Condor",
+          "ten_nay": "Côn Đảo",
+          "lat": 8.6833,
+          "lon": 106.6,
+          "ghi_chu": "Vẽ tách biệt khỏi chuỗi đảo ven bờ.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Pulo Cici",
+          "ten_nay": "Đảo Phú Quốc",
+          "lat": 10.22,
+          "lon": 103.96,
+          "ghi_chu": "Định danh theo nguồn dẫn của mục này.",
+          "do_tin_cay": "trung"
+        }
       ]
     },
     {
@@ -136,6 +277,33 @@
       "nguon": [
         "Việt Nam Net (Hoàng Sa và Trường Sa qua bản đồ cổ phương Tây) — https://danviet.vn/hoang-sa-va-truong-sa-qua-ban-do-co-cua-cac-nuoc-phuong-tay-d1356197.html",
         "VOV — https://vov.vn/van-hoa-giai-tri/ban-do-co-viet-nam-bang-chung-thep-ve-chu-quyen-voi-hoang-sa-va-truong-sa-327320.vov"
+      ],
+      "pham_vi": "Vùng Đông Ấn — Hoàng Sa nối liền chuỗi đảo ven bờ Đàng Trong (Cochinchina).",
+      "diem_neo": [
+        {
+          "ten_xua": "Paracel",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Vẽ nối liền với chuỗi đảo ven bờ chứ không phải thực thể biển khơi tách biệt.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Pulo Secca de Mare",
+          "ten_nay": "Đảo Phú Quý (Bình Thuận cũ)",
+          "lat": 10.52,
+          "lon": 108.9333,
+          "ghi_chu": "Một mắt của chuỗi đảo.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Pulo Canton",
+          "ten_nay": "Đảo Lý Sơn (Quảng Ngãi)",
+          "lat": 15.3833,
+          "lon": 109.1167,
+          "ghi_chu": "Một mắt của chuỗi đảo.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -151,6 +319,25 @@
       "anh_ghi_chu": "Chưa xác nhận được file Wikimedia Commons cho đúng tờ bản đồ này trong bộ atlas 42 tờ — không gắn ảnh để tránh nhầm tờ.",
       "nguon": [
         "VOV — https://vov.vn/van-hoa-giai-tri/ban-do-co-viet-nam-bang-chung-thep-ve-chu-quyen-voi-hoang-sa-va-truong-sa-327320.vov"
+      ],
+      "pham_vi": "Trung Hoa — dựng theo số liệu khảo sát thực địa của các giáo sĩ Dòng Tên theo lệnh vua Khang Hy.",
+      "diem_neo": [
+        {
+          "ten_xua": "Paracel",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Ghi riêng biệt ở khoảng vĩ tuyến 16–17°B, TÁCH khỏi phần lãnh thổ Trung Quốc.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Cực nam lãnh thổ Trung Quốc",
+          "ten_nay": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
+          "lat": 18.25,
+          "lon": 109.5,
+          "ghi_chu": "Ranh giới phía nam của Trung Quốc trên bản đồ dừng lại ở đảo Hải Nam.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -166,6 +353,17 @@
       "anh_ghi_chu": "Chưa tìm được bản scan trên Wikimedia Commons.",
       "nguon": [
         "Đối ngoại Lào Cai — https://doingoailaocai.vn/vi/bai-viet/4105"
+      ],
+      "pham_vi": "Các phương vực hành chính nhà Minh.",
+      "diem_neo": [
+        {
+          "ten_xua": "Cực nam lãnh thổ",
+          "ten_nay": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
+          "lat": 18.25,
+          "lon": 109.5,
+          "ghi_chu": "Không có hình vẽ hay ghi chú Hoàng Sa, Trường Sa ở phía nam mốc này.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -183,6 +381,17 @@
         "Dân trí — https://dantri.com.vn/van-hoa/trung-bay-ban-do-co-trung-quoc-khong-co-hoang-sa-truong-sa-1344287613.htm",
         "Tuổi Trẻ — https://tuoitre.vn/ban-do-trung-quoc-1904-khong-co-hoang-sa-truong-sa-503071.htm",
         "VOVworld — https://vovworld.vn/vi-VN/tin-tuc/tam-ban-do-co-chung-minh-hoang-sa-truong-sa-khong-thuoc-lanh-tho-trung-quoc-97571.vov"
+      ],
+      "pham_vi": "Toàn bộ các tỉnh trực thuộc triều đình nhà Thanh, gom tư liệu khảo sát 1708–1904.",
+      "diem_neo": [
+        {
+          "ten_xua": "Cực nam lãnh thổ",
+          "ten_nay": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
+          "lat": 18.25,
+          "lon": 109.5,
+          "ghi_chu": "Bản đồ do chính triều đình nhà Thanh ban hành dừng cương vực ở đảo Hải Nam.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -198,6 +407,17 @@
       "anh_ghi_chu": "Chưa tìm được bản scan trên Wikimedia Commons.",
       "nguon": [
         "Tuổi Trẻ — https://tuoitre.vn/ban-do-trung-quoc-1904-khong-co-hoang-sa-truong-sa-503071.htm"
+      ],
+      "pham_vi": "Toàn bộ đế quốc Đại Thanh.",
+      "diem_neo": [
+        {
+          "ten_xua": "Cực nam lãnh thổ",
+          "ten_nay": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
+          "lat": 18.25,
+          "lon": 109.5,
+          "ghi_chu": "Trùng khớp bản đồ 1904 — không phải trường hợp cá biệt.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -213,6 +433,25 @@
       "anh_ghi_chu": "Chưa tìm được bản scan trên Wikimedia Commons.",
       "nguon": [
         "Viện nghiên cứu phát triển Phương Đông — https://ordi.vn/ban-do-chung-minh-viet-nam-co-chu-quyen-tren-hai-quan-dao-hoang-sa-va-truong-sa.html"
+      ],
+      "pham_vi": "Trung Đô (Thăng Long) và 13 thừa tuyên, chi tiết đến phủ — huyện — xã, kèm lộ trình nam — bắc.",
+      "diem_neo": [
+        {
+          "ten_xua": "Trung Đô",
+          "ten_nay": "Thăng Long — nay là Hà Nội",
+          "lat": 21.0333,
+          "lon": 105.85,
+          "ghi_chu": "Điểm gốc của các lộ trình vẽ trong bộ atlas.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Bãi Cát Vàng",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Tờ thứ 78 mô tả bãi ngoài khơi và việc chúa Nguyễn hằng năm cử thuyền ra khai thác.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -222,12 +461,41 @@
       "nam": 1881,
       "nam_hien_thi": "1881",
       "nhom": "viet-nam",
-      "mo_ta": "Bản đồ toàn quốc thời Nguyễn cuối thế kỷ 19, do Phạm Vọng và Ngô Thế Vinh biên soạn, tiếp nối truyền thống lập bản đồ nhà nước ghi nhận các vùng biển đảo ngoài khơi thuộc lãnh thổ Đại Nam.",
+      "mo_ta": "Bản đồ toàn quốc thời Nguyễn cuối thế kỷ 19, do Phạm Vọng và Ngô Thế Vinh biên soạn, tiếp nối truyền thống lập bản đồ nhà nước ghi nhận các vùng biển đảo ngoài khơi thuộc lãnh thổ Đại Nam. ⚠️ VÊNH NIÊN ĐẠI — GIỮ CẢ HAI, đừng chọn một cho gọn: mục này ghi 1881 (Phạm Vọng, Ngô Thế Vinh), còn VOV và Báo Đà Nẵng cho biết «Bản quốc địa đồ» là tấm bản đồ in trong sách «Khải đồng thuyết ước» — sách học vỡ lòng thời Nguyễn, KHẮC IN LẦN ĐẦU năm Tự Đức thứ 6 (1853) rồi tái bản nhiều lần. Hai mốc đều có thể đúng vì là hai lần in của cùng một tấm bản đồ; chưa có nguồn nào đối chiếu trực tiếp hai bản.",
       "y_nghia_chu_quyen": "Bổ sung vào chuỗi liên tục các bản đồ nhà nước Việt Nam qua các đời vua triều Nguyễn (Minh Mạng, Thiệu Trị, Tự Đức...) đều ghi nhận Hoàng Sa/Trường Sa trong cương vực, cho thấy tính liên tục chứ không phải một lần ghi chép đơn lẻ.",
       "noi_luu_giu": "Chưa xác định cụ thể qua nguồn đã tra",
       "anh_ghi_chu": "Chưa tìm được bản scan trên Wikimedia Commons.",
       "nguon": [
-        "Viện nghiên cứu phát triển Phương Đông — https://ordi.vn/ban-do-chung-minh-viet-nam-co-chu-quyen-tren-hai-quan-dao-hoang-sa-va-truong-sa.html"
+        "Viện nghiên cứu phát triển Phương Đông — https://ordi.vn/ban-do-chung-minh-viet-nam-co-chu-quyen-tren-hai-quan-dao-hoang-sa-va-truong-sa.html",
+        "VOV — Bản đồ cổ Việt Nam, bằng chứng «thép» về chủ quyền với Hoàng Sa và Trường Sa (https://vov.vn/van-hoa-giai-tri/ban-do-co-viet-nam-bang-chung-thep-ve-chu-quyen-voi-hoang-sa-va-truong-sa-327320.vov)",
+        "Báo Đà Nẵng — Tài liệu Hán - Nôm về chủ quyền biển đảo Việt Nam (https://baodanang.vn/channel/5414/201406/the-gioi-sach-tai-lieu-han-nom-ve-chu-quyen-bien-dao-viet-nam-2334867/)"
+      ],
+      "pham_vi": "Toàn quốc — vẽ vị trí các tỉnh và núi lớn từ Ải Nam Quan đến vùng Biên Hoà – Vĩnh Long.",
+      "diem_neo": [
+        {
+          "ten_xua": "Hoàng Sa chử",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Ba chữ Hán «Hoàng Sa chử» (bãi Hoàng Sa) ghi ở vùng biển ngoài khơi miền Trung.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Ải Nam Quan",
+          "ten_nay": "Hữu Nghị Quan (Lạng Sơn)",
+          "lat": 21.9667,
+          "lon": 106.7167,
+          "ghi_chu": "Mốc cực bắc của phạm vi bản đồ.",
+          "do_tin_cay": "cao"
+        },
+        {
+          "ten_xua": "Vĩnh Long",
+          "ten_nay": "Vĩnh Long",
+          "lat": 10.25,
+          "lon": 105.97,
+          "ghi_chu": "Mốc cực nam của phạm vi bản đồ.",
+          "do_tin_cay": "trung"
+        }
       ]
     },
     {
@@ -243,6 +511,17 @@
       "anh_ghi_chu": "Chưa tìm được bản scan trên Wikimedia Commons.",
       "nguon": [
         "Viện nghiên cứu phát triển Phương Đông — https://ordi.vn/ban-do-chung-minh-viet-nam-co-chu-quyen-tren-hai-quan-dao-hoang-sa-va-truong-sa.html"
+      ],
+      "pham_vi": "Toàn quốc Đại Nam thời Thiệu Trị, kế thừa Đại Nam nhất thống toàn đồ thời Minh Mạng.",
+      "diem_neo": [
+        {
+          "ten_xua": "Quần đảo ngoài khơi miền Trung",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Nguồn chỉ nói bản đồ «tiếp tục ghi nhận các quần đảo ngoài khơi miền Trung», KHÔNG trích tên chữ Hán cụ thể — neo tạm về Hoàng Sa, chờ nguồn dẫn nguyên văn.",
+          "do_tin_cay": "thap"
+        }
       ]
     },
     {
@@ -261,6 +540,17 @@
         "Tiền Phong — https://tienphong.vn/xa-hoi/cong-bo-atlas-the-gioi-them-bang-chung-hoang-sa-la-cua-viet-nam-705106.tpo",
         "Tạp chí Tổ chức Nhà nước (Bộ Nội vụ) — https://tcnn.vn/news/detail/7053/Bo_Noi_vu_tiep_nhan_Bo_Atlas_the_gioi_Bruxelles_1827all.html",
         "VOV — https://vov.vn/xa-hoi/bo-atlas-khang-dinh-chu-quyen-cua-viet-nam-doi-voi-2-quan-dao-hoang-sa-truong-sa-326125.vov"
+      ],
+      "pham_vi": "Tờ số 106 vẽ bờ biển miền Trung từ vĩ tuyến 12 đến 16 độ; Việt Nam nằm trong các tờ 97, 105, 106, 110.",
+      "diem_neo": [
+        {
+          "ten_xua": "Paracels",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "Vẽ trong khoảng vĩ tuyến 16–17°, kinh tuyến 109–111°, kèm ghi chú thuộc «Empire of Annam».",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -277,6 +567,17 @@
       "nguon": [
         "Tuổi Trẻ — https://tuoitre.vn/nhieu-ban-do-khang-dinh-tq-khong-co-hoang-sa-truong-sa-503660.htm",
         "Cổng TTĐT tỉnh Cà Mau — https://www.camau.gov.vn/wps/portal/?page=trangchitiet&urile=wcm:path:/camaulibrary/camauofsite/gioithieu/chuyende/biendaoquehuong/tulieuvanban/fhfdhdfheryr"
+      ],
+      "pham_vi": "Toàn lãnh thổ nhà Thanh phân theo tỉnh — bộ khảo sát trắc địa hiện đại đầu tiên của Trung Quốc.",
+      "diem_neo": [
+        {
+          "ten_xua": "Ranh giới đông nam",
+          "ten_nay": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
+          "lat": 18.25,
+          "lon": 109.5,
+          "ghi_chu": "Ngay ở bộ đo đạc khoa học sớm nhất, cương vực nhà Thanh cũng dừng ở đảo Hải Nam.",
+          "do_tin_cay": "cao"
+        }
       ]
     },
     {
@@ -293,6 +594,51 @@
       "nguon": [
         "Thanh Niên — https://thanhnien.vn/ban-do-co-trung-quoc-khong-co-hoang-sa-truong-sa-185876968.htm",
         "Tuổi Trẻ — https://tuoitre.vn/phai-cho-dan-trung-quoc-cung-biet-503353.htm"
+      ],
+      "pham_vi": "Quyển 9 — «Đông Nam Dương các quốc diên cách đồ», vẽ vùng biển ngoài khơi Việt Nam.",
+      "diem_neo": [
+        {
+          "ten_xua": "Vạn Lý Trường Sa",
+          "ten_nay": "Quần đảo Hoàng Sa",
+          "lat": 16.5,
+          "lon": 112,
+          "ghi_chu": "⚠️ Nguồn nói hai tên «Vạn Lý Trường Sa» và «Thiên Lý Thạch Đường» TƯƠNG ỨNG với Hoàng Sa và Trường Sa ngày nay nhưng KHÔNG nói tên nào ứng với quần đảo nào. Giữ nguyên chỗ vênh, đừng chọn bản gọn hơn.",
+          "do_tin_cay": "thap"
+        },
+        {
+          "ten_xua": "Thiên Lý Thạch Đường",
+          "ten_nay": "Quần đảo Trường Sa (đảo Trường Sa Lớn)",
+          "lat": 8.64,
+          "lon": 111.92,
+          "ghi_chu": "⚠️ Xem ghi chú ở mục «Vạn Lý Trường Sa» cùng bản đồ này — cặp tên chưa phân định được tên nào ứng quần đảo nào.",
+          "do_tin_cay": "thap"
+        }
+      ]
+    },
+    {
+      "id": "hoai-duc-phu-toan-do-1831",
+      "ten": "Hoài Đức phủ toàn đồ (1831)",
+      "tac_gia": "Lê Đức Lộc và Nguyễn Công Tiến",
+      "nam": 1831,
+      "nam_hien_thi": "1831 (Minh Mệnh thứ 12, ngày 15 tháng 5 âm lịch)",
+      "nhom": "viet-nam",
+      "mo_ta": "Bản đồ phủ Hoài Đức — tương ứng khu vực nội thành Hà Nội ngày nay. Vẽ tay trên giấy crô-ki khổ 175×190 cm, chú bằng chữ Hán và chữ Nôm, tỷ lệ khoảng 1/500, dựng trên số đo thực địa nên có độ chính xác tương đối cao. Thể hiện cả hình thể tự nhiên (thành, hồ, sông) lẫn các thiết chế xã hội và hệ thống phố phường. Giới nghiên cứu xếp đây vào nhóm những bản đồ Việt Nam đầu tiên vẽ theo phương pháp bản đồ học phương Tây thay cho lối ước lượng truyền thống.",
+      "pham_vi": "Phủ Hoài Đức — khu vực nội thành Hà Nội ngày nay.",
+      "diem_neo": [
+        {
+          "ten_xua": "Phủ Hoài Đức",
+          "ten_nay": "Nội thành Hà Nội",
+          "lat": 21.0287,
+          "lon": 105.8524,
+          "ghi_chu": "Toàn bộ tờ bản đồ vẽ đúng vùng này ở tỷ lệ ~1/500.",
+          "do_tin_cay": "cao"
+        }
+      ],
+      "noi_luu_giu": "",
+      "anh_ghi_chu": "Chưa tìm được bản scan trên Wikimedia Commons. Hai bài của Báo Nhân Dân và Báo Chính phủ đều KHÔNG nêu nơi lưu giữ hiện nay — để trống thay vì đoán.",
+      "nguon": [
+        "Báo Nhân Dân — «Hoài Đức phủ toàn đồ», tấm căn cước của Hà Nội 1831 (https://nhandan.vn/hoai-duc-phu-toan-do-tam-can-cuoc-cua-ha-noi-1831-post508044.html)",
+        "Báo Chính phủ — «Hoài Đức phủ toàn đồ» - tư liệu quý để nghiên cứu Thăng Long - Hà Nội (https://baochinhphu.vn/hoai-duc-phu-toan-do-tu-lieu-quy-de-nghien-cuu-thang-long-ha-noi-10237454.htm)"
       ]
     }
   ]
