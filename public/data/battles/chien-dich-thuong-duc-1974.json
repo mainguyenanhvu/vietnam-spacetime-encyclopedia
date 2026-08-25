@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Thượng Đức — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Đại Lộc (Quảng Nam cũ) nay thuộc TP Đà Nẵng (hợp nhất 01/07/2025). trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Thượng Đức — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Đại Lộc (Quảng Nam cũ) nay thuộc TP Đà Nẵng (hợp nhất 01/07/2025). trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Núi bao ba phía — Thượng Đức 'lưng dựa vào núi, hai bên là sông Côn và sông Vu Gia bao bọc' — theo Báo Nông nghiệp và Môi trường (tiền thân Báo Tài nguyên & Môi trường): 'Về quê hương Thượng Đức anh hùng' — https://nongnghiepmoitruong.vn/ve-que-huong-thuong-duc-anh-hung-378001.html — khớp với nguồn QĐND đã có sẵn trong file (bước 1: cứ điểm 'mắt ngọc, cửa sắt' phòng thủ kiên cố). · Sông Vu Gia — cùng nguồn trên: Thượng Đức nằm ở ngã ba nơi sông Côn gặp sông Vu Gia. · Sông Côn — cùng nguồn trên, hợp lưu với sông Vu Gia ngay tại Thượng Đức. · Đường chiến lược 14B — cùng nguồn trên: 'Highway 14B runs through the region, positioned about 50km southwest of Đà Nẵng'.",
   "id": "chien-dich-thuong-duc-1974",
   "ten": "Chiến dịch Thượng Đức",
   "nam": 1974,
@@ -94,5 +94,91 @@
   "nguon": [
     "Tầm vóc chiến lược của chiến thắng Thượng Đức 1974 — Báo Quân đội nhân dân — https://www.qdnd.vn/phong-su-dieu-tra/phong-su/tam-voc-chien-luoc-cua-chien-thang-thuong-duc-1974-451699",
     "Kỷ niệm 50 năm ngày chiến thắng Thượng Đức — Cổng TTĐT tỉnh Quảng Nam — https://quangnam.gov.vn/ky-niem-50-nam-ngay-chien-thang-thuong-duc-57481.html"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          90,
+          120
+        ],
+        [
+          70,
+          260
+        ],
+        [
+          130,
+          400
+        ]
+      ],
+      "nhan": "Dãy núi bao quanh ba phía Thượng Đức"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          160,
+          420
+        ],
+        [
+          210,
+          340
+        ],
+        [
+          240,
+          270
+        ],
+        [
+          255,
+          210
+        ]
+      ],
+      "nhan": "Sông Vu Gia"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          80,
+          160
+        ],
+        [
+          140,
+          175
+        ],
+        [
+          195,
+          190
+        ],
+        [
+          240,
+          205
+        ]
+      ],
+      "nhan": "Sông Côn"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          60,
+          230
+        ],
+        [
+          220,
+          215
+        ],
+        [
+          380,
+          240
+        ],
+        [
+          540,
+          280
+        ]
+      ],
+      "nhan": "Đường chiến lược 14B"
+    }
   ]
 }

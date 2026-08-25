@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Trận Thanh Hương – Mỹ Xuyên (ngày truyền thống Sư đoàn 325) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Trận Thanh Hương – Mỹ Xuyên (ngày truyền thống Sư đoàn 325) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): phần tử 1 (tuyến đường): báo Huế Ngày Nay (huengaynay.vn — ấn bản điện tử Báo Thừa Thiên Huế, báo Đảng bộ địa phương), bài 'Nhìn lại trận chiến Thanh Hương - Mỹ Xuyên', nêu 'các tuyến đường quân sự: Mỹ Chánh, Ưu Điềm, Vân Trình, Tỉnh lộ 68'. · phần tử 2 (đồi Vĩnh Xương): cùng nguồn huengaynay.vn, nêu 'Đồi Vĩnh Xương (nằm giữa hai làng Thanh Hương và Vĩnh Xương)' — đặt gần điểm 'Thanh Hương – Mỹ Xuyên' trên sa đồ.",
   "id": "tran-thanh-huong-my-xuyen-1951",
   "ten": "Trận Thanh Hương – Mỹ Xuyên (ngày truyền thống Sư đoàn 325)",
   "nam": 1951,
@@ -86,5 +86,43 @@
   "trang_thai": "draft",
   "nguon": [
     "Ngày 11-3-1951: Ngày truyền thống Sư đoàn 325, Quân đoàn 2 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-11-3-1951-ngay-truyen-thong-su-doan-325-quan-doan-2-687775"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          300,
+          200
+        ],
+        [
+          500,
+          220
+        ],
+        [
+          700,
+          250
+        ],
+        [
+          900,
+          270
+        ]
+      ],
+      "nhan": "Tuyến đường Mỹ Chánh – Ưu Điềm – Vân Trình (Tỉnh lộ 68)"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          560,
+          190
+        ],
+        [
+          610,
+          210
+        ]
+      ],
+      "nhan": "Đồi Vĩnh Xương"
+    }
   ]
 }

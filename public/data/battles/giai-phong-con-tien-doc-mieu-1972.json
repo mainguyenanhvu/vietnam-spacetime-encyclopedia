@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Giải phóng Cồn Tiên – Dốc Miếu, phá vành đai điện tử McNamara — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mục con tách từ Chiến dịch tiến công giải phóng Quảng Trị 1972 (đã có mục riêng), tập trung vào tuyến hàng rào điện tử McNamara. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Giải phóng Cồn Tiên – Dốc Miếu, phá vành đai điện tử McNamara — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mục con tách từ Chiến dịch tiến công giải phóng Quảng Trị 1972 (đã có mục riêng), tập trung vào tuyến hàng rào điện tử McNamara. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): song: Báo Nhân Dân (đã có trong nguon[] của file) — 'Huyện Gio Linh nằm ở bờ nam sông Bến Hải – vĩ tuyến 17' — https://special.nhandan.vn/-xanh-tren-vanh-dai-trang-Gio-Linh/index.html · duong: Báo Dân Việt (báo nhà nước) — cứ điểm Dốc Miếu 'được xây dựng... ở vị trí khống chế Quốc lộ 1A', thôn Gia Môn, xã Gio Phong, huyện Gio Linh — https://danviet.vn/hang-chuc-ho-dan-suot-30-nam-mac-ket-vi-quy-hoach-khu-di-tich-quoc-gia-o-gio-linh-quang-tri-d1389230.html",
   "id": "giai-phong-con-tien-doc-mieu-1972",
   "ten": "Giải phóng Cồn Tiên – Dốc Miếu, phá vành đai điện tử McNamara",
   "nam": 1972,
@@ -116,5 +116,55 @@
   "trang_thai": "draft",
   "nguon": [
     "Màu xanh trên \"vành đai trắng\" Gio Linh — Báo Nhân Dân — https://special.nhandan.vn/-xanh-tren-vanh-dai-trang-Gio-Linh/index.html"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          60,
+          60
+        ],
+        [
+          300,
+          55
+        ],
+        [
+          550,
+          65
+        ],
+        [
+          800,
+          50
+        ],
+        [
+          940,
+          60
+        ]
+      ],
+      "nhan": "Sông Bến Hải (vĩ tuyến 17) — ranh giới phía bắc Gio Linh"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          420,
+          320
+        ],
+        [
+          450,
+          290
+        ],
+        [
+          470,
+          260
+        ],
+        [
+          490,
+          220
+        ]
+      ],
+      "nhan": "Quốc lộ 1A qua Dốc Miếu"
+    }
   ]
 }

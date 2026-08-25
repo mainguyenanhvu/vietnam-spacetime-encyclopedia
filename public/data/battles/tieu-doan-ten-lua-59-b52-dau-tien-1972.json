@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Tiểu đoàn tên lửa 59 bắn rơi B-52 đầu tiên tại chỗ — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. NGUỒN VÊNH: nguồn Hà Nội Mới ghi Tiểu đoàn 59 hạ B-52 đầu tiên rơi tại chỗ (20h13, Phù Lỗ, Đông Anh) đêm 18/12/1972; nguồn Nhân Dân về Tiểu đoàn 77 (mục riêng) cũng ghi đơn vị này 'hạ B-52 đầu tiên rơi tại chỗ' tại Tam Hưng, Thanh Oai cùng đêm mở màn — hai địa điểm khác nhau, không rõ nguồn nào ưu tiên hơn. Nêu cả hai theo đúng nguồn, không tự chọn. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Tiểu đoàn tên lửa 59 bắn rơi B-52 đầu tiên tại chỗ — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. NGUỒN VÊNH: nguồn Hà Nội Mới ghi Tiểu đoàn 59 hạ B-52 đầu tiên rơi tại chỗ (20h13, Phù Lỗ, Đông Anh) đêm 18/12/1972; nguồn Nhân Dân về Tiểu đoàn 77 (mục riêng) cũng ghi đơn vị này 'hạ B-52 đầu tiên rơi tại chỗ' tại Tam Hưng, Thanh Oai cùng đêm mở màn — hai địa điểm khác nhau, không rõ nguồn nào ưu tiên hơn. Nêu cả hai theo đúng nguồn, không tự chọn. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Sông Cà Lồ — sông này là ranh giới tự nhiên của huyện Sóc Sơn, nơi có xã Phù Lỗ/cánh đồng Chuôm (địa điểm nêu ở bước 3-4 của file và trong nguồn Hà Nội Mới đã có sẵn); xác nhận vị trí sông qua bài 'Sóc Sơn: Mưa lớn, nước sông Cà Lồ dâng cao khiến hơn 1.000 hộ dân bị úng ngập' — Báo Hà Nội Mới — https://hanoimoi.vn/soc-son-mua-lon-nuoc-song-ca-lo-dang-cao-khien-hon-1-000-ho-dan-bi-ung-ngap-718865.html. Lưu ý: nguồn tra thêm ghi Phù Lỗ thuộc huyện Sóc Sơn (không phải Đông Anh như trường 'dia_diem' hiện có của file) — chỉ dùng để đặt sông cho đúng vị trí thực địa, không đề xuất sửa trường đó.",
   "id": "tieu-doan-ten-lua-59-b52-dau-tien-1972",
   "ten": "Tiểu đoàn tên lửa 59 bắn rơi B-52 đầu tiên tại chỗ",
   "nam": 1972,
@@ -109,5 +109,33 @@
   "trang_thai": "draft",
   "nguon": [
     "Đêm 18, rạng sáng 19-12-1972: B-52 đầu tiên bị bắn rơi tại chỗ trên bầu trời Hà Nội — Báo Hà Nội mới — https://hanoimoi.vn/dem-18-rang-sang-19-12-1972-b-52-dau-tien-bi-ban-roi-tai-cho-tren-bau-troi-ha-noi-3120.html"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          400,
+          470
+        ],
+        [
+          480,
+          440
+        ],
+        [
+          560,
+          415
+        ],
+        [
+          650,
+          395
+        ],
+        [
+          740,
+          380
+        ]
+      ],
+      "nhan": "Sông Cà Lồ"
+    }
   ]
 }

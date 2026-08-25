@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Trận đầu của Đại đoàn Đồng Bằng (Sư đoàn 320) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Trận đầu của Đại đoàn Đồng Bằng (Sư đoàn 320) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): phần tử 1 (rừng Mống Lá): địa danh 'Rừng Mống Lá, huyện Nho Quan (Ninh Bình)' nêu ngay trong dia_diem của file và trong mo_ta bước 1 ('Đại đoàn Đồng Bằng...thành lập ngày 16/1/1951 tại rừng Mống Lá, huyện Nho Quan').",
   "id": "tran-dau-su-doan-320-1951",
   "ten": "Trận đầu của Đại đoàn Đồng Bằng (Sư đoàn 320)",
   "nam": 1951,
@@ -88,5 +88,33 @@
   "trang_thai": "draft",
   "nguon": [
     "Kỷ niệm 60 năm ngày thành lập Sư đoàn 320 — Đài Tiếng nói Việt Nam — https://vov.vn/doi-song/ky-niem-60-nam-ngay-thanh-lap-su-doan-320-173136.vov"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          160,
+          230
+        ],
+        [
+          340,
+          220
+        ],
+        [
+          360,
+          380
+        ],
+        [
+          300,
+          500
+        ],
+        [
+          150,
+          470
+        ]
+      ],
+      "nhan": "Rừng Mống Lá, Nho Quan (Ninh Bình)"
+    }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Trận Tua Hai — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Trận Tua Hai — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Rừng: Cổng TTĐT Du lịch Tây Ninh (dulich.tayninh.gov.vn/tin-tuc/di-tich-dong-khoi-tua-hai-1277) và Báo Tây Ninh (baotayninh.vn) mô tả căn cứ Tua Hai nằm giữa vùng đồn điền cao su rộng lớn, khống chế tuyến đường nối Tây Ninh - Campuchia. · Núi: cùng nguồn trên mô tả địa hình khu vực Tua Hai, Châu Thành là 'đồi thấp xen ruộng lúa và đồn điền cao su', thuận lợi cho tác chiến và ẩn náu — dùng làm nền cho hướng tiến quân của LLVT Tây Ninh.",
   "id": "tran-tua-hai-1960",
   "ten": "Trận Tua Hai",
   "nam": 1960,
@@ -112,5 +112,47 @@
   "trang_thai": "draft",
   "nguon": [
     "Tua Hai - Trận mở màn cho cao trào Đồng khởi ở miền Nam — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/tua-hai-tran-mo-man-cho-cao-trao-dong-khoi-o-mien-nam-607562"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          300,
+          120
+        ],
+        [
+          620,
+          110
+        ],
+        [
+          600,
+          300
+        ],
+        [
+          320,
+          290
+        ]
+      ],
+      "nhan": "Đồn điền cao su Tua Hai"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          500
+        ],
+        [
+          250,
+          510
+        ],
+        [
+          400,
+          495
+        ]
+      ],
+      "nhan": "Vùng đồi thấp Châu Thành, Tây Ninh"
+    }
   ]
 }

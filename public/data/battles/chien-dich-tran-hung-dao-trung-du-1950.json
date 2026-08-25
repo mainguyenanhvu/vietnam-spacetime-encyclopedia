@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): phần tử 1 (đồi trung du): mo_ta bước 1 nêu rõ mục tiêu chiến dịch là 'phá tuyến phòng ngự trung du Bắc Bộ của Pháp, mở rộng vùng giải phóng xuống đồng bằng' — đặt ở dải trên bản đồ để phân biệt với vùng đồng bằng phía dưới, khớp với bố cục vinh-phuc-hai-ninh (đợt 1, phía trên-trái). · phần tử 2 (sông Lô/ngã ba Việt Trì): dia_diem của file ghi 'Vĩnh Yên – Việt Trì (nay Phú Thọ)'; xác nhận thêm qua báo Công an Nhân dân (cand.com.vn, bài 'Nghề lấy nước thiêng ở ngã ba sông' và 'Sông Lô - Một dòng huyền thoại!') và báo Phú Thọ (baophutho.vn, bài 'Ngã ba Hồng Lô và những điều chưa kể'): Việt Trì là nơi hợp lưu sông Hồng (sông Thao) – sông Lô – sông Đà tại ngã ba Bạch Hạc.",
   "id": "chien-dich-tran-hung-dao-trung-du-1950",
   "ten": "Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du)",
   "nam": 1950,
@@ -103,5 +103,47 @@
   "trang_thai": "draft",
   "nguon": [
     "Mở liên tiếp ba chiến dịch vào trung du và Đồng bằng Bắc Bộ — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/mo-lien-tiep-ba-chien-dich-vao-trung-du-va-dong-bang-bac-bo-261492"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          170,
+          140
+        ],
+        [
+          280,
+          110
+        ],
+        [
+          400,
+          150
+        ]
+      ],
+      "nhan": "Vùng đồi trung du Vĩnh Phúc – Phú Thọ"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          510
+        ],
+        [
+          350,
+          495
+        ],
+        [
+          600,
+          515
+        ],
+        [
+          900,
+          500
+        ]
+      ],
+      "nhan": "Sông Lô — ngã ba Việt Trì"
+    }
   ]
 }

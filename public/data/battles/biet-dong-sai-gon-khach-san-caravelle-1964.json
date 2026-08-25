@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Biệt động Sài Gòn đánh khách sạn Caravelle — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Biệt động Sài Gòn đánh khách sạn Caravelle — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): duong: Báo Tuổi Trẻ — 'Khách sạn Caravelle tọa lạc tại một vị trí đắc địa trên đường Tự Do... có vị trí trung tâm quay ra Công trường Lam Sơn và Nhà hát thành phố' — https://tuoitre.vn/danh-bom-khach-san-caravelle-ghi-dau-lich-su-1051747.htm . Trận đánh trong nội đô, không có địa hình tự nhiên nào được nguồn xác nhận nên chỉ ghi 1 phần tử đường phố.",
   "id": "biet-dong-sai-gon-khach-san-caravelle-1964",
   "ten": "Biệt động Sài Gòn đánh khách sạn Caravelle",
   "nam": 1964,
@@ -88,5 +88,25 @@
   "nguon": [
     "Đội trưởng biệt động Bảy Bê — Báo Sài Gòn Giải Phóng — https://www.sggp.org.vn/doi-truong-biet-dong-bay-be-post225905.html",
     "Gặp lại nữ Biệt động Sài Gòn đánh sập khách sạn Caravelle — Báo Pháp luật Việt Nam — https://baophapluat.vn/gap-lai-nu-biet-dong-sai-gon-danh-sap-khach-san-caravelle-post154797.html"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          250,
+          240
+        ],
+        [
+          450,
+          235
+        ],
+        [
+          650,
+          230
+        ]
+      ],
+      "nhan": "Đại lộ Tự Do (nay Đồng Khởi), trước Công trường Lam Sơn – Nhà hát Thành phố"
+    }
   ]
 }

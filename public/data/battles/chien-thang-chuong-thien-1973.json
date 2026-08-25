@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến thắng Chương Thiện (75 lượt tiểu đoàn địch) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Chương Thiện (cũ) nay thuộc TP Cần Thơ (hợp nhất Cần Thơ + Sóc Trăng + Hậu Giang, 01/07/2025). trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến thắng Chương Thiện (75 lượt tiểu đoàn địch) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Chương Thiện (cũ) nay thuộc TP Cần Thơ (hợp nhất Cần Thơ + Sóc Trăng + Hậu Giang, 01/07/2025). trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Kênh xáng Xà No — chảy qua trung tâm TP Vị Thanh, một trong hai địa bàn chính của trận (bước 3: 'Địa bàn Chương Thiện — Vị Thanh, Long Mỹ') — theo Báo Hậu Giang: 'Sông, kinh, hồ tiêu biểu trên địa bàn thành phố' — https://www.baohaugiang.com.vn/chinh-tri/song-kinh-ho-tieu-bieu-tren-dia-ban-thanh-pho-98226.html · Sông Cái Lớn — chạy dọc ranh giới TP Vị Thanh và huyện Long Mỹ (hai địa bàn nêu ở bước 3) — theo Báo Hậu Giang, cùng bài trên: https://www.baohaugiang.com.vn/chinh-tri/song-kinh-ho-tieu-bieu-tren-dia-ban-thanh-pho-98226.html",
   "id": "chien-thang-chuong-thien-1973",
   "ten": "Chiến thắng Chương Thiện (75 lượt tiểu đoàn địch)",
   "nam": 1973,
@@ -110,5 +110,59 @@
   "nguon": [
     "Di tích lịch sử Chiến thắng Chương Thiện (thành phố Vị Thanh và huyện Long Mỹ, tỉnh Hậu Giang) — Cục Di sản Văn hoá — https://dsvh.gov.vn/di-tich-lich-su-chien-thang-chuong-thien-thanh-pho-vi-thanh-va-huyen-long-my-tinh-hau-giang-2976",
     "Di tích lịch sử địa điểm chiến thắng Chương Thiện — Cổng TTĐT tỉnh Hậu Giang — https://haugiang.gov.vn/en/chi-tiet1/-/tin-tuc/Di-tich-lich-su-ia-iem-chien-thang-Chuong-Thien32558"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          280,
+          400
+        ],
+        [
+          380,
+          390
+        ],
+        [
+          460,
+          382
+        ],
+        [
+          560,
+          388
+        ],
+        [
+          660,
+          400
+        ]
+      ],
+      "nhan": "Kênh xáng Xà No"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          450,
+          500
+        ],
+        [
+          550,
+          485
+        ],
+        [
+          650,
+          475
+        ],
+        [
+          750,
+          470
+        ],
+        [
+          850,
+          465
+        ]
+      ],
+      "nhan": "Sông Cái Lớn"
+    }
   ]
 }

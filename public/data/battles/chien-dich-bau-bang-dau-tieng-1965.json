@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Bàu Bàng – Dầu Tiếng — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Bàu Bàng – Dầu Tiếng — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): duong: TTXVN (nvsk.vnanet.vn) — hai tiểu đoàn Lữ đoàn 3 Mỹ hành quân từ căn cứ Lai Khê theo Đường 13 lên phía bắc, dừng lập vị trí bắc ấp Bàu Bàng và nam ấp Đồng Sổ — https://nvsk.vnanet.vn/chien-dich-bau-bang-dau-tieng-12-27-11-1965-1-34059.vna · rung: cùng nguồn TTXVN trên — 'địa hình khu vực chiến đấu chủ yếu là rừng cao su và bãi trống', quân ta dùng rừng cao su để ẩn giấu lực lượng và rút quân an toàn sau trận.",
   "id": "chien-dich-bau-bang-dau-tieng-1965",
   "ten": "Chiến dịch Bàu Bàng – Dầu Tiếng",
   "nam": 1965,
@@ -126,5 +126,55 @@
   "trang_thai": "draft",
   "nguon": [
     "Chiến dịch Bầu Bàng – Dầu Tiếng (từ 12 đến 27-11-1965) — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-bau-bang-dau-tieng-tu-12-den-27-11-1965-261550"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          260,
+          80
+        ],
+        [
+          255,
+          220
+        ],
+        [
+          260,
+          350
+        ],
+        [
+          270,
+          480
+        ]
+      ],
+      "nhan": "Đường 13 (Quốc lộ 13) — trục hành quân từ căn cứ Lai Khê"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          160,
+          260
+        ],
+        [
+          380,
+          230
+        ],
+        [
+          420,
+          360
+        ],
+        [
+          260,
+          440
+        ],
+        [
+          140,
+          400
+        ]
+      ],
+      "nhan": "Rừng cao su Bàu Bàng"
+    }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Nguyễn Kim dựng cờ 'phù Lê diệt Mạc' 1533 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh. MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Sầm Châu (Ai Lao) nay thuộc Lào nên không gán slug tỉnh Việt Nam cho vị trí này. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Nguyễn Kim dựng cờ 'phù Lê diệt Mạc' 1533 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh. MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Sầm Châu (Ai Lao) nay thuộc Lào nên không gán slug tỉnh Việt Nam cho vị trí này. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Núi: file ghi dia_diem = 'Sầm Châu (Ai Lao, nay thuộc Lào) và vùng biên giới phía Tây Thanh Hóa'; Cổng TTĐT Sở VHTTDL Thanh Hóa (svhttdl.thanhhoa.gov.vn/tong-quan-thanh-hoa) xác nhận: phía Tây tỉnh Thanh Hóa giáp Lào (Hủa Phăn) là vùng núi, chiếm 75,44% diện tích tỉnh, cao trung bình 600-700m — đúng địa bàn Nguyễn Kim dựng căn cứ chống Mạc (phần tử 'can-cu-bien-gioi').",
   "id": "nguyen-kim-pho-le-diet-mac-1533",
   "ten": "Nguyễn Kim dựng cờ 'phù Lê diệt Mạc', mở đầu Nam – Bắc triều (1533)",
   "nam": 1533,
@@ -136,5 +136,29 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ tục biên",
     "Khâm định Việt sử thông giám cương mục — Chính biên"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          150,
+          500
+        ],
+        [
+          400,
+          480
+        ],
+        [
+          650,
+          505
+        ],
+        [
+          880,
+          485
+        ]
+      ],
+      "nhan": "Vùng núi biên giới phía Tây Thanh Hoá – Ai Lao (Lào)"
+    }
   ]
 }

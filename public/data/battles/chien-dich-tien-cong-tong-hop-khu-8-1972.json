@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch tiến công tổng hợp chống phá bình định ở Khu 8 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mỹ Tho/Gò Công (nay Đồng Tháp), Kiến Tường (nay Tây Ninh), Kiến Phong (nay Đồng Tháp), Kiến Hòa (nay Vĩnh Long) — theo sáp nhập 01/07/2025. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch tiến công tổng hợp chống phá bình định ở Khu 8 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Mỹ Tho/Gò Công (nay Đồng Tháp), Kiến Tường (nay Tây Ninh), Kiến Phong (nay Đồng Tháp), Kiến Hòa (nay Vĩnh Long) — theo sáp nhập 01/07/2025. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): sông Tiền: baobinhphuoc.com.vn (đăng lại bài QĐND 'Thắng lợi của chiến dịch tiến công tổng hợp chống phá bình định ở khu 8...') — nêu các trận đánh tàu địch trên sông Tiền, sông Hàm Luông trong chiến dịch. · kênh Nguyễn Văn Tiếp: cùng nguồn — nêu đích danh 'kênh Nguyễn Văn Tiếp' là địa bàn hoạt động của lực lượng vũ trang Khu 8. · đường số 4: cùng nguồn — mục tiêu chiến dịch là cắt đường số 4 nối Sài Gòn với các tỉnh miền Tây, nêu cụ thể các đoạn 'Vưng Mai - Cai Lậy', 'Cái Lậy - An Hữu'.",
   "id": "chien-dich-tien-cong-tong-hop-khu-8-1972",
   "ten": "Chiến dịch tiến công tổng hợp chống phá bình định ở Khu 8",
   "nam": 1972,
@@ -111,5 +111,81 @@
   "trang_thai": "draft",
   "nguon": [
     "Thắng lợi của chiến dịch tiến công tổng hợp chống phá bình định ở khu 8, đồng bằng Nam Bộ — Báo Quân đội nhân dân — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/thang-loi-cua-chien-dich-tien-cong-tong-hop-chong-pha-binh-dinh-o-khu-8-dong-bang-nam-bo-261591"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          480
+        ],
+        [
+          300,
+          460
+        ],
+        [
+          500,
+          470
+        ],
+        [
+          700,
+          450
+        ],
+        [
+          900,
+          460
+        ]
+      ],
+      "nhan": "sông Tiền"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          250,
+          200
+        ],
+        [
+          400,
+          250
+        ],
+        [
+          550,
+          300
+        ],
+        [
+          700,
+          340
+        ]
+      ],
+      "nhan": "kênh Nguyễn Văn Tiếp"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          150,
+          380
+        ],
+        [
+          350,
+          370
+        ],
+        [
+          550,
+          360
+        ],
+        [
+          750,
+          350
+        ],
+        [
+          950,
+          340
+        ]
+      ],
+      "nhan": "đường số 4 (nay QL1A)"
+    }
   ]
 }

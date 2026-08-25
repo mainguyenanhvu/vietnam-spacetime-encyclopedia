@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến thắng Ba Gia — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến thắng Ba Gia — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): nui: Thư viện tỉnh Quảng Ngãi (thuvientinh.quangngai.gov.vn, cổng .gov.vn) — 'Trận đánh Ba Gia diễn ra trên các cứ điểm: Núi Tròn, núi Khỉ, núi Chóp Nón, giao thông hào Phước Lộc, điểm cao 47, đồi Mã Tổ, đồi Gò Cao' — https://thuvientinh.quangngai.gov.vn/chien-thang-ba-gia/ . Không tìm được sông cụ thể được xác nhận trực tiếp từ nguồn nhà nước nên không thêm phần tử sông.",
   "id": "chien-thang-ba-gia-1965",
   "ten": "Chiến thắng Ba Gia",
   "nam": 1965,
@@ -103,5 +103,29 @@
   "nguon": [
     "Chiến thắng Ba Gia - nét độc đáo về nghệ thuật quân sự — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/chien-thang-ba-gia-net-doc-dao-ve-nghe-thuat-quan-su-665773",
     "Quảng Ngãi kỷ niệm 60 năm chiến thắng Ba Gia — https://baochinhphu.vn/quang-ngai-ky-niem-60-nam-chien-thang-ba-gia-102250531110135938.htm"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          680,
+          110
+        ],
+        [
+          730,
+          90
+        ],
+        [
+          790,
+          100
+        ],
+        [
+          840,
+          130
+        ]
+      ],
+      "nhan": "Núi Tròn – núi Khỉ – núi Chóp Nón (cứ điểm cao khu vực Ba Gia)"
+    }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Trận Cầu Ván (Tiểu đoàn 263, Quân khu 8) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Long An (cũ) nay thuộc Tây Ninh, Bến Tre (cũ) nay thuộc Vĩnh Long (hợp nhất 01/07/2025). trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Trận Cầu Ván (Tiểu đoàn 263, Quân khu 8) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Long An (cũ) nay thuộc Tây Ninh, Bến Tre (cũ) nay thuộc Vĩnh Long (hợp nhất 01/07/2025). trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): nui (dùng ký hiệu độ cao cho gò đất vì schema không có kiểu 'gò'): Báo Quân khu 7 — Tiểu đoàn 263 'dừng chân tại khu vực Gò Trâm Bầu, thuộc ấp Cầu Ván, xã An Lục Long' trước khi bị lộ và nghênh chiến — https://baoquankhu7.vn/khanh-thanh-va-don-nhan-bang-xep-hang-di-tich-lich-su-khu-tuong-niem-can-bo-chien-si-tieu-doan-263-hy-sinh-trong-tran-cau-van--1195283466-0025733s34710gs . Không tìm được tên kênh/rạch cụ thể nào tại Cầu Ván từ nguồn nhà nước nên không thêm phần tử sông.",
   "id": "tran-cau-van-tieu-doan-263-1968",
   "ten": "Trận Cầu Ván (Tiểu đoàn 263, Quân khu 8)",
   "nam": 1968,
@@ -112,5 +112,25 @@
   "nguon": [
     "Lễ tưởng niệm liệt sĩ Tiểu đoàn 263 hy sinh trong trận Cầu Ván — Báo Quân khu 7 — https://baoquankhu7.vn/le-tuong-niem-liet-si-tieu-doan-263-hy-sinh-trong-tran-cau-van-1125356978-0059440s40210gs",
     "Tưởng niệm chiến sỹ Tiểu đoàn 263 - Quân khu 8 hy sinh trong trận Cầu Ván — Bộ Quốc phòng — https://mod.gov.vn/vn/noi-dung/sa-cdcs/sa-cdcs-tt/tuong-niem-chien-sy-tieu-doan-263-quan-khu-8-hy-sinh-trong-tran-cau-van"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          330,
+          270
+        ],
+        [
+          360,
+          260
+        ],
+        [
+          390,
+          290
+        ]
+      ],
+      "nhan": "Gò Trâm Bầu, ấp Cầu Ván (xã An Lục Long, Châu Thành)"
+    }
   ]
 }

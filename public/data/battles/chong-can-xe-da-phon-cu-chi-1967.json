@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chống càn Xê-đa-Phôn (Cedar Falls) vào Củ Chi – Tam giác sắt — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Bến Cát (Bình Dương cũ) nay thuộc TP Hồ Chí Minh (hợp nhất 01/07/2025). trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chống càn Xê-đa-Phôn (Cedar Falls) vào Củ Chi – Tam giác sắt — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Bến Cát (Bình Dương cũ) nay thuộc TP Hồ Chí Minh (hợp nhất 01/07/2025). trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): phần tử 1+2 (sông Sài Gòn + sông Thị Tính): Cổng TTĐT thị xã Bến Cát, tỉnh Bình Dương (bencat.binhduong.gov.vn, mục 'Địa đạo Tam giác sắt - Tây Nam Bến Cát') và Báo Tây Ninh (baotayninh.vn, 'Di tích địa đạo Tam giác sắt Tây Nam Bến Cát - Bình Dương'): 'Đây là địa bàn được hình thành một tam giác do 2 con sông Sài Gòn, Thị Tính bao bọc...Tam Giác Sắt là tam giác với các đỉnh: thị tứ Bến Súc, thị trấn Bến Cát và một điểm trên sông Thị Tính (gần chỗ gặp sông Sài Gòn)' — hai đường sông đặt giao nhau ở góc dưới-phải để mô phỏng đỉnh tam giác, nằm giữa cụm 'tam-giac-sat/dia-dao-cu-chi' (trái) và các cụm quân Mỹ (phải), khớp hướng mũi tên 'mui-cang-quet' vượt sông từ Đông sang Tây.",
   "id": "chong-can-xe-da-phon-cu-chi-1967",
   "ten": "Chống càn Xê-đa-Phôn (Cedar Falls) vào Củ Chi – Tam giác sắt",
   "nam": 1967,
@@ -138,5 +138,43 @@
   "nguon": [
     "Củ Chi đất thép thành đồng — Báo Thanh Hóa — https://baothanhhoa.vn/cu-chi-dat-thep-thanh-dong-246791.htm",
     "Kỷ niệm 55 năm Củ Chi được phong tặng danh hiệu \"Đất thép thành đồng\" — Báo Nhân Dân — https://nhandan.vn/ky-niem-55-nam-cu-chi-duoc-phong-tang-danh-hieu-dat-thep-thanh-dong-post715672.html"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          480,
+          140
+        ],
+        [
+          460,
+          300
+        ],
+        [
+          490,
+          480
+        ]
+      ],
+      "nhan": "Sông Sài Gòn (ranh giới Đông Tam giác sắt)"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          150,
+          500
+        ],
+        [
+          300,
+          470
+        ],
+        [
+          470,
+          480
+        ]
+      ],
+      "nhan": "Sông Thị Tính"
+    }
   ]
 }

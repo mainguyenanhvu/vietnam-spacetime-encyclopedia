@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Trận Lộc Ninh – An Lộc (Chiến dịch Nguyễn Huệ) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Bình Long (cũ) nay thuộc tỉnh Đồng Nai (hợp nhất Đồng Nai + Bình Phước, 01/07/2025). trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Trận Lộc Ninh – An Lộc (Chiến dịch Nguyễn Huệ) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ. Bình Long (cũ) nay thuộc tỉnh Đồng Nai (hợp nhất Đồng Nai + Bình Phước, 01/07/2025). trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Quốc lộ 13: đã có sẵn trong nguồn của file (baochinhphu.vn, 'Tầm vóc của chiến dịch Nguyễn Huệ...') — nêu 'đường 13' là trục chính của hướng Đông Nam Bộ, nối Lộc Ninh – An Lộc – Chơn Thành – Bến Cát. · vùng cao su Lộc Ninh: tuyengiaobinhphuoc.org.vn (Ban Tuyên giáo tỉnh Bình Phước, 'Tham gia chiến dịch mùa khô năm 1972, giải phóng Lộc Ninh, Bù Đốp') — hơn 11.000 công nhân cao su nổi dậy, các vùng cao su rộng lớn ở Lộc Ninh, Bù Đốp, Đa Kia được giải phóng cùng đợt.",
   "id": "tran-loc-ninh-an-loc-1972",
   "ten": "Trận Lộc Ninh – An Lộc (Chiến dịch Nguyễn Huệ)",
   "nam": 1972,
@@ -126,5 +126,47 @@
   "trang_thai": "draft",
   "nguon": [
     "Hiểu thêm về chiến dịch tiến công Nguyễn Huệ và việc giải phóng Lộc Ninh xuân hè 1972 — Cổng TTĐT Chính phủ — https://baochinhphu.vn/tam-voc-cua-chien-dich-nguyen-hue-giai-phong-loc-ninh-xuan-he-1972-102220411083946004.htm"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          300,
+          220
+        ],
+        [
+          430,
+          270
+        ],
+        [
+          560,
+          330
+        ],
+        [
+          700,
+          390
+        ]
+      ],
+      "nhan": "Quốc lộ 13"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          220,
+          190
+        ],
+        [
+          300,
+          230
+        ],
+        [
+          260,
+          290
+        ]
+      ],
+      "nhan": "vùng cao su Lộc Ninh"
+    }
   ]
 }

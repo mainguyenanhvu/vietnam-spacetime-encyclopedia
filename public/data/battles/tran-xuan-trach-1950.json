@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Trận Xuân Trạch (trận đầu của Đại đoàn 312) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Trận Xuân Trạch (trận đầu của Đại đoàn 312) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Núi: mo_ta bước 2 (đã có trong file) ghi trận diễn ra 'trong khuôn khổ chiến dịch Trần Hưng Đạo'; theo TTXVN (nvsk.vnanet.vn/chien-dich-tran-hung-dao-chien-dich-trung-du-25-12-1950-17-1-1951-1-34114.vna), chiến dịch này còn gọi là 'Chiến dịch Trung Du', tiến công phòng tuyến trung du Việt Trì – Bắc Giang, đợt 1 tại Vĩnh Phúc — Lập Thạch/Xuân Trạch nằm trong vùng đồi trung du này.",
   "id": "tran-xuan-trach-1950",
   "ten": "Trận Xuân Trạch (trận đầu của Đại đoàn 312)",
   "nam": 1950,
@@ -107,5 +107,25 @@
   "trang_thai": "draft",
   "nguon": [
     "Sư đoàn 312 (tiếp theo và hết) — Báo Quân đội nhân dân — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/su-doan-312-tiep-theo-va-het-438288"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          350,
+          250
+        ],
+        [
+          550,
+          230
+        ],
+        [
+          750,
+          280
+        ]
+      ],
+      "nhan": "Vùng đồi trung du Lập Thạch, Vĩnh Phúc (chiến dịch Trung Du)"
+    }
   ]
 }

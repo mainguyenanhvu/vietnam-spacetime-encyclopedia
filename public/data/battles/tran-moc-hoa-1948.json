@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Trận Mộc Hóa — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Trận Mộc Hóa — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9. Địa hình nền bổ sung 2026-08-25 (toạ độ khung vẽ minh hoạ, đặt theo tương quan mô tả trong nguồn): Rừng: mo_ta bước 1 (đã có trong file) ghi nguyên văn 'Đồn Mộc Hóa là vị trí Pháp cắm sâu trong căn cứ Đồng Tháp Mười, sát biên giới Việt Nam – Campuchia' — dùng kiểu 'rung' thể hiện vùng rừng tràm/đầm lầy Đồng Tháp Mười bao quanh đồn.",
   "id": "tran-moc-hoa-1948",
   "ten": "Trận Mộc Hóa",
   "nam": 1948,
@@ -103,5 +103,29 @@
   "trang_thai": "draft",
   "nguon": [
     "Long An kỷ niệm 75 năm chiến thắng trận Mộc Hóa — https://nhandan.vn/long-an-ky-niem-75-nam-chien-thang-tran-moc-hoa-post768043.html"
+  ],
+  "dia_hinh": [
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          200,
+          180
+        ],
+        [
+          600,
+          170
+        ],
+        [
+          620,
+          400
+        ],
+        [
+          220,
+          410
+        ]
+      ],
+      "nhan": "Vùng rừng, đầm lầy Đồng Tháp Mười"
+    }
   ]
 }
