@@ -6,7 +6,10 @@
   "chi_huy": "Ngô Quyền",
   "doi_thu": "Quân Nam Hán (chủ tướng Lưu Hoằng Tháo)",
   "dia_diem": "Cửa sông Bạch Đằng (nay thuộc địa phận Hải Phòng – Quảng Ninh)",
-  "lien_quan_tinh": ["hai-phong", "quang-ninh"],
+  "lien_quan_tinh": [
+    "hai-phong",
+    "quang-ninh"
+  ],
   "figure_id": "ngo-quyen",
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "buoc": [
@@ -15,35 +18,58 @@
       "tieu_de": "Đóng cọc, bố trí trận địa",
       "mo_ta": "Ngô Quyền cho đóng hàng nghìn cọc gỗ nhọn bịt sắt xuống lòng sông Bạch Đằng, giấu dưới mặt nước khi triều lên; mai phục quân hai bên bờ.",
       "thuy_trieu": "len",
-      "hien": ["song", "coc-ngam", "quan-ta-mai-phuc"]
+      "hien": [
+        "song",
+        "coc-ngam",
+        "quan-ta-mai-phuc"
+      ]
     },
     {
       "id": 2,
       "tieu_de": "Nhử địch vào bãi cọc",
       "mo_ta": "Khi thuỷ triều lên ngập cọc, Ngô Quyền cho thuyền nhẹ ra khiêu chiến rồi giả thua, nhử đoàn thuyền lớn của Lưu Hoằng Tháo tiến sâu qua bãi cọc.",
       "thuy_trieu": "len",
-      "hien": ["song", "coc-ngam", "thuyen-dich", "mui-nhu-dich"]
+      "hien": [
+        "song",
+        "coc-ngam",
+        "thuyen-dich",
+        "mui-nhu-dich"
+      ]
     },
     {
       "id": 3,
       "tieu_de": "Nước triều rút",
       "mo_ta": "Thuỷ triều bắt đầu rút nhanh; bãi cọc nhô dần lên, thuyền lớn quân Nam Hán bị vướng và va vào cọc, vỡ và mắc cạn.",
       "thuy_trieu": "xuong",
-      "hien": ["song", "coc-lo", "thuyen-mac-can"]
+      "hien": [
+        "song",
+        "coc-lo",
+        "thuyen-mac-can"
+      ]
     },
     {
       "id": 4,
       "tieu_de": "Tổng phản công",
       "mo_ta": "Ngô Quyền tung toàn lực từ hai bờ và thượng nguồn đánh xuống. Quân Nam Hán rối loạn, thuyền đắm, Lưu Hoằng Tháo tử trận.",
       "thuy_trieu": "xuong",
-      "hien": ["song", "coc-lo", "thuyen-mac-can", "mui-phan-cong-trai", "mui-phan-cong-phai"]
+      "hien": [
+        "song",
+        "coc-lo",
+        "thuyen-mac-can",
+        "mui-phan-cong-trai",
+        "mui-phan-cong-phai"
+      ]
     },
     {
       "id": 5,
       "tieu_de": "Toàn thắng",
       "mo_ta": "Quân Nam Hán đại bại, vua Nam Hán phải rút quân. Chiến thắng Bạch Đằng chấm dứt hơn một nghìn năm Bắc thuộc, mở nền độc lập lâu dài.",
       "thuy_trieu": "xuong",
-      "hien": ["song", "coc-lo", "co-thang"]
+      "hien": [
+        "song",
+        "coc-lo",
+        "co-thang"
+      ]
     }
   ],
   "ket_qua": "Quân Nam Hán đại bại, chủ tướng Lưu Hoằng Tháo tử trận; vua Nam Hán bãi binh.",
@@ -53,5 +79,24 @@
     "Đại Việt sử ký toàn thư (ngoại kỷ, quyển V)",
     "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
     "Ngô Sĩ Liên và các sử thần triều Lê — bản dịch Viện Sử học"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Đại Việt sử ký toàn thư — Ngoại kỷ, quyển 5",
+      "doan": "Nếu ta sai người đem cọc lớn đóng ngầm ở cửa biển trước, vạt nhọn đầu mà bịt sắt, thuyền của chúng nhân khi nước triều lên, tiến vào bên trong hàng cọc, bấy giờ ta sẽ dễ bề chế ngự. Không kế gì hay hơn kế ấy cả.",
+      "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ngo-quyen-va-chien-thang-bach-dang-lich-su-post484767.html",
+      "buoc": 1
+    },
+    {
+      "sach": "Khâm định Việt sử thông giám cương mục",
+      "doan": "Sông rộng hơn hai dặm, ở đó có núi cao ngất, nhiều nhánh sông đổ lại, sóng cồn man mác giáp tận chân trời, cây cối um tùm che lấp bờ bến.",
+      "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ngo-quyen-va-chien-thang-bach-dang-lich-su-post484767.html"
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư",
+      "doan": "Tiền Ngô Vương có thể lấy quân mới họp của đất Việt ta mà phá được trăm vạn quân của Lưu Hoằng Tháo, mở nước xưng vương, làm cho người phương Bắc không dám lại sang nữa. Có thể nói là một cơn giận mà yên được dân, mưu giỏi mà đánh cũng giỏi vậy.",
+      "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ngo-quyen-va-chien-thang-bach-dang-lich-su-post484767.html",
+      "buoc": 5
+    }
   ]
 }

@@ -828,7 +828,8 @@ function ensureDonViXua(): Promise<void> {
 
     // Lớp VÙNG dựng TRƯỚC lớp điểm để điểm nằm đè lên và vẫn bấm được.
     // Nạp hỏng thì bỏ qua vùng, KHÔNG kéo theo cả lớp điểm — lớp điểm mới là
-    // phần có nguồn cho cả 54 đơn vị, vùng chỉ có cho 10.
+    // phần có nguồn cho cả 54 đơn vị, vùng chỉ có cho những đơn vị đã tra
+    // được nguồn ánh xạ (một tập con, xem ghi_chu_anh_xa trong file dữ liệu).
     const vung = await fetch(`${import.meta.env.BASE_URL}data/geo/vung-don-vi-xua.geojson`)
       .then((r) => (r.ok ? (r.json() as Promise<GeoJSON.FeatureCollection>) : null))
       .catch(() => null);
