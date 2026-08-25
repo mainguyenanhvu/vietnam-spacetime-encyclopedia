@@ -8,6 +8,55 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-08-25 — Chú giải từ khó cho trẻ em + lớp phủ «Bản đồ cổ»
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| File dữ liệu | **348** (+1) | `catalog.json` sau `build:index` |
+| Tổng mục | **5.628** (+35) | như trên |
+| Lớp phủ bản đồ | **35** (+1) | bảng lớp trên màn hình |
+| Bảng từ khó trẻ em | **187 cụm** · đánh dấu **4.779** lượt | đo trên 5.111 khối `mo_ta`/`cong_trang`/`loi_binh` |
+| Bản đồ cổ | **19 tấm** (+1) · **34 điểm neo** · **15 địa điểm** | `validate_media.mjs` |
+| Cổng dữ liệu | **13/13 xanh** | `npm run validate` |
+| Chủ quyền — dữ liệu · hiển thị | **xanh · 13/13 thời kỳ** | `audit_sovereignty.mjs` · `verify:chuquyen` |
+| Type check · build | **exit 0 · xanh** | `npx tsc --noEmit` · `npm run build` |
+
+### 1. `src/tu-kho-tre-em.ts` — chú giải từ khó bấm-ra-xem
+
+`tu-vung-tre-em.ts` đã đổi NHÃN lớp phủ sang tiếng trẻ em, nhưng phần chữ nặng nhất vẫn nguyên: `mo_ta` của 5.111 khối văn viết bằng ngôn ngữ hồ sơ di sản. Viết lại 5.111 khối là việc nhiều tháng; chú giải TỪ làm được ngay và **không đụng một chữ nào của bản gốc** — người lớn vẫn đọc đúng câu văn cũ, chế độ người lớn trả về đúng `esc()` không thêm một byte.
+
+Bảng **187 cụm**, chọn theo ba luật **đo trên dữ liệu thật** chứ không liệt kê theo trí nhớ:
+
+1. **Chỉ nhận cụm đa âm tiết** — loại «phủ» (285 lần), «châu» (273), «tổng» (247), «trấn» (163), «lộ» (98), «then» (51), «chèo» (21) vì đa nghĩa. Chú giải sai tệ hơn không chú giải.
+2. **Nghĩa phải đúng trong MỌI ngữ cảnh của kho** — «duy tân» viết bao được cả phong trào lẫn niên hiệu vua nên giữ; từ nào không bao được thì bỏ.
+3. **Có mặt thật ≥2 lần.**
+
+⚠️ **Lượt soát khớp giả bắt được ba lỗi tên riêng bị chú giải như từ chung**: «Nhà thơ Nguyễn **Thế Kỷ**», «châu Nam **Bố Chính**», «Vân **Nam tiến** đánh». Vá bằng `hoaLienTruoc()` — bỏ qua cụm viết hoa nằm giữa chuỗi chữ hoa, **cố ý không nhận dấu chấm** làm chỗ nối vì sau dấu chấm là câu mới, chữ hoa ở đó là hoa đầu câu. Cắt thêm 5 mục không bao được ngữ cảnh, nới nghĩa «kỵ binh» (còn dùng cho đơn vị cơ động nhanh) và «thái y» (còn là «Thái y viện»).
+
+Nối **16 sink**: 10 popup lớp phủ, `tong_quan` + `giai_nghia_ten` + 4 danh sách kể chuyện của hồ sơ tỉnh, Nam tiến, thẻ phim giáo dục. `listKho()` **tách riêng khỏi `list()`** vì cùng hàm đó dựng cả danh sách NGUỒN — gạch chân chú giải giữa một dòng trích dẫn là làm hỏng chính cái đang được trích.
+
+An toàn XSS: dò trên chuỗi THÔ rồi mới `esc()` từng đoạn, nên cụm không cắt vỡ được chuỗi thực thể HTML.
+
+**Nghiệm thu Chrome thật**: hồ sơ Hà Nội **13 chú giải**, khối nguồn **0 nút**; popup Hoành Sơn Quan bung đúng thẻ 💡; đổi sang chế độ người lớn gỡ sạch markup, câu trở về nguyên văn «Chùa dựng thời kinh đô Thăng Long.».
+
+### 2. Lớp phủ «Bản đồ cổ» — địa danh xưa đặt đúng vị trí thật
+
+19 tấm bản đồ cổ trong `media/ban-do-co.json` trước nay chỉ sống trong Thư viện dưới dạng chữ: **0/18 mục có toạ độ**, chưa tấm nào lên bản đồ.
+
+- **`diem_neo[]`** — mỗi bản đồ khai những địa danh nó GHI TRÊN MẶT GIẤY, kèm nơi đó là gì ngày nay và toạ độ thật. **34 điểm neo.** Toạ độ Hoàng Sa/Trường Sa lấy đúng hằng số `audit_sovereignty.mjs` đang dùng.
+- **Gom theo ĐỊA ĐIỂM, không theo bản đồ** — quyết định đến từ việc nhìn bản đồ thật: 12 tấm cùng gọi tên quần đảo Hoàng Sa, để mỗi tấm một điểm thì 12 chấm chồng khít; `tachDiemTrung` chỉ dời ≤65 m nên ở zoom thường 11/12 tấm bấm không tới. Gom còn **15 địa điểm**, mỗi điểm mang danh sách mọi bản đồ từng ghi tên nơi đó. Màu **vàng** = nơi có hơn một phía cùng ghi tên.
+- **Bổ sung tra cứu**: Hoài Đức phủ toàn đồ (1831) mở vỉa ra ngoài mảng chủ quyền · «Đại Hải» của Hồng Đức bản đồ, KHÔNG neo vào Bãi Cát Vàng vì mô tả dải cát chỉ đến qua bản chép đời sau · Bản Quốc Địa Đồ **vênh niên đại 1881 ↔ 1853 (Khải đồng thuyết ước), GIỮ CẢ HAI** · Hải Quốc Đồ Chí ghi rõ chỗ vênh «Vạn Lý Trường Sa»/«Thiên Lý Thạch Đường» chưa phân định được tên nào ứng quần đảo nào.
+- ⚠️ **KHÔNG CÓ BẢN ĐỒ NÀO TRƯỚC THẾ KỶ XV** — nghề vẽ bản đồ nhà nước ở Việt Nam bắt đầu từ Hồng Đức bản đồ (1490). Văn Lang, Âu Lạc, Bắc thuộc, Lý – Trần không để lại bản đồ nào, và dự án KHÔNG dựng bản đồ phỏng đoán để lấp chỗ trống.
+- **Cổng mới** trong `validate_media.mjs`: điểm neo phải đủ `ten_xua`/`ten_nay`/`ghi_chu`, toạ độ trong khung Biển Đông – Đông Dương, `do_tin_cay ∈ {cao|trung|thap}`; tệp lớp phủ sinh ra phải khớp bản gốc. **Đã thử ca dương tính cả hai — cổng đỏ đúng chỗ.**
+
+🔴 **Lỗi chỉ Chrome thật mới lộ**: MapLibre chuỗi hoá mọi giá trị **lồng** trong feature `properties`, nên `ban_do_ghi[]` tới hàm dựng popup dưới dạng chuỗi JSON, `arr()` trả mảng rỗng và popup hiện **«Xem 0 tấm bản đồ»**. Không lỗi console, `tsc` xanh, `build` xanh. Vá bằng `goSerialize()` ở tầng parse.
+
+**Nghiệm thu Chrome thật**: mũi nam Hải Nam gom **5 tấm** (1635·1717·1737·1904·1905), Hoàng Sa gom **12 tấm** (1613→1881) đủ 12 dòng; chú giải từ khó trẻ em chạy luôn trong popup («cương vực?»); console sạch.
+
+**Commit**: `d7fd76b` (chú giải từ khó) · `80c7911` (bản đồ cổ).
+
+---
+
 ## 2026-08-24 — Hướng dẫn thao tác cho trẻ em + chủ đề «Sách học ngày xưa»
 
 | Chỉ số | Giá trị | Đo bằng |

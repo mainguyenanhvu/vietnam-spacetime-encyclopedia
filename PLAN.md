@@ -17,9 +17,9 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ---
 
-## Trạng thái hiện tại — 2026-08-24
+## Trạng thái hiện tại — 2026-08-25
 
-**347 file dữ liệu · 5.593 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · 34 lớp phủ · **13/13 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
+**348 file dữ liệu · 5.628 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **13/13 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
@@ -58,7 +58,8 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 
 ### Còn lại
 - [ ] **Chế độ trẻ em: phần KHUNG xong, phần CHỮ chưa.** 🔄 **Thu hẹp 2026-08-24** — mảng «không ai chỉ đường» đã đóng bằng `src/huong-dan.ts` (cầm tay chỉ việc 10 bước + sổ tay 17 nhiệm vụ, xem `RELEASE.md`). Phần CÒN LẠI vẫn nguyên và vẫn là việc **nội dung**, không phải CSS: giảm mật độ chữ trong hồ sơ tỉnh, minh hoạ thay khối chữ dài, ngôn ngữ đơn giản hơn cho `mo_ta`. **L**
-  ⚠️ Mẫu đã có sẵn để chép: trường `giai_nghia[]` trong `sgk-xua-tho.json` (từ khó → nghĩa, hiện ra bằng `<details>`) là cách rẻ nhất để hạ độ khó một khối chữ mà KHÔNG phải viết lại nó. Cân nhắc áp cho `mo_ta` của lớp phủ trước khi nghĩ tới việc viết hai bản văn.
+  ✅ **Mảng NGÔN NGỮ đã đóng 2026-08-25** bằng `src/tu-kho-tre-em.ts` — 187 cụm từ khó, chú giải bấm-ra-xem, phủ 16 sink (popup lớp phủ + hồ sơ tỉnh + Nam tiến). Xem `RELEASE.md`. **CÒN LẠI hai mảng, đều KHÔNG phải chữ**: giảm mật độ chữ trong hồ sơ tỉnh (chia nhỏ, gập bớt) và minh hoạ thay khối chữ dài.
+  ⚠️ **Đừng nới ba luật chọn từ** ghi ở đầu `tu-kho-tre-em.ts`. Lượt soát đầu tiên đã bắt ba lỗi tên riêng bị chú giải như từ chung («Nguyễn Thế Kỷ», «châu Nam Bố Chính», «Vân Nam tiến đánh») — thêm từ mới thì phải chạy lại phép soát khớp giả trên dữ liệu thật, không đoán.
 - [ ] **Audit tương phản phần còn lại.** Mới đo topbar và nút. Chưa đo: 11 panel nổi, badge, popup MapLibre, khung quiz/olympia ở chế độ trẻ em. **M**
 - [x] ~~**4 mã hex chưa lên token.**~~ **XONG 2026-08-11** (commit `99e4fac`) — 4 token mới trong `theme.css` (`--truyen-au-lac-nen`, `--story-retry-chu`, `--qg-badge-khac-nen`, `--nhan-huyen-su`), style.css hết hex giá trị.
 - [x] ~~**`body.kid-mode` chồng lấn `data-che-do`.**~~ **QUYẾT 2026-08-11: GIỮ CẢ HAI.** Chúng KHÔNG cùng nghĩa: `data-che-do` là chế độ toàn cục người dùng chọn; `body.kid-mode` là trạng thái CỤC BỘ khi panel truyện đang mở (story.ts bật lúc mở, tắt lúc đóng — kể cả người lớn mở truyện vẫn được khung truyện thiếu nhi). Hợp nhất sẽ làm mất ca "người lớn đọc truyện cho con". Đừng mở lại trừ khi đổi UX truyện.
@@ -78,6 +79,7 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 | `.active` | 9 điểm ở main/quocgia/timeline | Tái dùng ngữ nghĩa khác nhau ở ≥5 nơi |
 | `.ol-right`/`.ol-wrong` | `olympia.ts` 189, 369, 446 | Phải sửa 3 chỗ đồng thời |
 | `body.kid-mode` | `story.ts:131,133` | Toàn bộ cơ chế theme trẻ em hiện tại |
+| `.tk-tu`, `.tk-nghia`, `.tk-boc` | `tu-kho-tre-em.ts` sinh markup, `style.css` cuối file tô | Đổi tên class = chú giải từ khó mất kiểu dáng, **không lỗi console** |
 | `#timeline`, `#period-label`, `#map`, `#chip-bar`, `#vn-search-input`, `#library-content` | `huong-dan.ts` bảng `VIEC` | **Cảm biến câm, không nổ.** Đổi tên một id là nhiệm vụ tương ứng KHÔNG BAO GIỜ tick — không lỗi, không cảnh báo, chỉ là bước hướng dẫn treo mãi. `tsc` không bắt được vì tất cả đều là chuỗi. |
 | `.lib-doc`, `.maplibregl-popup` | `huong-dan.ts` (hai cảm biến quan sát DOM) | Như trên — bước «đọc một bài thơ» và «bấm vào bản đồ» treo |
 | `.muted` | `quiz.ts:188` query theo class chung | Utility class dùng lại nhiều nơi, phạm vi ảnh hưởng khó lường |
@@ -238,7 +240,12 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 - ⚠️ Kinh tuyến 105°43′ ghi dạng "không render như ranh giới biển khi chưa có xác nhận của Uỷ ban Biên giới quốc gia" — **không ghi như khẳng định lịch sử**. Vịnh Bắc Bộ phân định bằng Hiệp định 2000.
 - ⛔ Cấm dùng con số "750 km² / ¾ châu Tụ Long" — chỉ có ở mirror Wikipedia và blog.
 
+✅ **Lớp phủ «Bản đồ cổ» mở 2026-08-25** (commit `80c7911`) — 19 tấm · 34 điểm neo · 15 địa điểm. Đây KHÔNG phải ranh giới: nó khớp **địa danh ghi trên mặt giấy bản đồ cổ** với vị trí thật ngày nay, tức là thứ làm được mà không phải vẽ đoán một đường biên nào. Bản gốc `media/ban-do-co.json`, lớp phủ sinh ra bằng `scripts/build_ban_do_co_overlay.mjs`, cổng chống lệch trong `validate_media.mjs`.
+- ⚠️ **KHÔNG CÓ BẢN ĐỒ NÀO TRƯỚC THẾ KỶ XV.** Nghề vẽ bản đồ nhà nước bắt đầu từ Hồng Đức bản đồ 1490. Ai hỏi «bản đồ 4000 năm» thì câu trả lời trung thực là: 4000 năm lịch sử nhưng chỉ ~530 năm bản đồ. Đừng lấp chỗ trống.
+- ⚠️ **Đừng sửa tay `overlays/ban-do-co.json`** — sửa bản gốc rồi chạy `npm run build:index`. Cổng sẽ bắt nếu quên.
+
 **Việc**
+- [ ] Bản đồ cổ: còn 2 tấm đáng bổ sung nhưng THIẾU siêu dữ liệu — bản đồ quân sự mặt trận Đà Nẵng chống Pháp (122×72 cm, luỹ cát + 108 làng xã, lưu tại Lưu trữ Quốc gia Pháp; **nguồn Nhân Dân không nêu năm vẽ lẫn người vẽ** nên chưa nạp) và Đồng Khánh địa dư chí (tra chưa ra nguồn nhà nước mô tả đủ). **S**
 - [ ] Polygon 602–1887 (Nam Việt, Bắc thuộc, Đại Cồ Việt, Đại Việt, Đại Nam) — ⛔ chặn bởi thiếu atlas đủ tin cậy. **L**
 - [ ] Lớp "15 bộ Văn Lang" — ⛔ chặn bởi nguồn (cần ĐVSKTT Ngoại kỷ bản dịch có chú giải, không phải blog). **M**
 - [ ] Animation morph ranh giới qua các thời kỳ. **L**
