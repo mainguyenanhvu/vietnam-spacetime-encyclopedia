@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Kho chiến dịch 2.122 di tích — cập nhật ca đêm 2026-08-11→12 (vét-leads, phân xử 5 hồ sơ, Wave 4 NA/Huế/TB/HN3). cho_toa_do = nguồn ĐẠT chỉ thiếu toạ độ; can_xac_minh = leads; khong_tim_thay = đóng hồ sơ có lý do.",
+  "ghi_chu": "Kho chiến dịch 2.122 di tích — cập nhật ca đêm 2026-08-11→12 (vét-leads, phân xử 5 hồ sơ, Wave 4 NA/Huế/TB/HN3). cho_toa_do = nguồn ĐẠT chỉ thiếu toạ độ; can_xac_minh = leads; khong_tim_thay = đóng hồ sơ có lý do. ── ĐỢT 2026-08-25 · VÁ LỖ HỔNG TÂY BẮC: đo bằng point-in-polygon trên 34 tỉnh, Lai Châu chỉ có 14 mục / 7 lớp và Sơn La 17 mục / 10 lớp, trong khi Hà Nội có 366 mục / 31 lớp — chênh 26 lần. Thêm 11 di tích quốc gia của Sơn La, Điện Biên, Lai Châu vào cho_toa_do: nguồn nhà nước ĐẠT (Cổng dữ liệu mở Sơn La, Bộ VHTTDL, Cổng TTĐT Lai Châu) và có địa chỉ cấp xã, chỉ thiếu toạ độ.",
   "cap_tinh": [],
   "cho_toa_do": [
     {
@@ -7823,6 +7823,138 @@
         "[WF-gov] svhttdl.tayninh (danh mục) + [WF] baotanglichsu.vn"
       ],
       "ly_do": "NGUỒN ĐẠT (w5 QN) — thiếu toạ độ"
+    },
+    {
+      "lo": "sonla",
+      "id": "bai-da-khac-co-khe-ho",
+      "ten": "Bãi đá khắc cổ Khe Hổ",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Hang Chú, huyện Bắc Yên, tỉnh Sơn La",
+      "xep_hang": "Di tích khảo cổ QG 2014 (QĐ 4107/QĐ-BVHTTDL)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Cổng dữ liệu mở tỉnh Sơn La — Di tích lịch sử, văn hoá, danh lam thắng cảnh đã được xếp hạng — https://data.sonla.gov.vn/detail_data/di-tich-lich-su-van-hoa-danh-lam-thang-canh-da-duoc-xep-hang-quoc-gia-dac-biet-quoc-gia"
+      ]
+    },
+    {
+      "lo": "sonla",
+      "id": "mai-da-ban-mon",
+      "ten": "Mái đá Bản Mòn",
+      "cap": "quoc-gia",
+      "dia_diem": "Bản Mòn, xã Thôm Mòn, huyện Thuận Châu, tỉnh Sơn La",
+      "xep_hang": "Di tích khảo cổ QG 2023 (QĐ 698/QĐ-BVHTTDL)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Cổng dữ liệu mở tỉnh Sơn La — Di tích lịch sử, văn hoá, danh lam thắng cảnh đã được xếp hạng — https://data.sonla.gov.vn/detail_data/di-tich-lich-su-van-hoa-danh-lam-thang-canh-da-duoc-xep-hang-quoc-gia-dac-biet-quoc-gia"
+      ]
+    },
+    {
+      "lo": "sonla",
+      "id": "tap-doan-cu-diem-na-san",
+      "ten": "Tập đoàn cứ điểm Nà Sản",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Chiềng Mung, huyện Mai Sơn, tỉnh Sơn La",
+      "xep_hang": "Di tích lịch sử QG 1998 (QĐ 95/QĐ-BVHTT)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Cổng dữ liệu mở tỉnh Sơn La — Di tích lịch sử, văn hoá, danh lam thắng cảnh đã được xếp hạng — https://data.sonla.gov.vn/detail_data/di-tich-lich-su-van-hoa-danh-lam-thang-canh-da-duoc-xep-hang-quoc-gia-dac-biet-quoc-gia"
+      ]
+    },
+    {
+      "lo": "dienbien",
+      "id": "hang-chua-ta",
+      "ten": "Hang Chua Ta",
+      "cap": "quoc-gia",
+      "dia_diem": "Huyện Điện Biên, tỉnh Điện Biên",
+      "xep_hang": "Di tích cấp quốc gia (danh mục 14 di tích QG của Điện Biên)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Bộ Văn hoá, Thể thao và Du lịch — «Điện Biên phê duyệt, công bố danh mục kiểm kê 49 di tích» (QĐ 418/QĐ-UBND, danh mục 14 di tích cấp quốc gia) — https://bvhttdl.gov.vn/dien-bien-phe-duyet-cong-bo-danh-muc-kiem-ke-49-di-tich-20220318143030047.htm"
+      ]
+    },
+    {
+      "lo": "dienbien",
+      "id": "hang-huoi-cang-huoi-dap",
+      "ten": "Hang Huổi Cang – Huổi Đáp",
+      "cap": "quoc-gia",
+      "dia_diem": "Huyện Mường Chà, tỉnh Điện Biên",
+      "xep_hang": "Di tích cấp quốc gia (danh mục 14 di tích QG của Điện Biên)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Bộ Văn hoá, Thể thao và Du lịch — «Điện Biên phê duyệt, công bố danh mục kiểm kê 49 di tích» (QĐ 418/QĐ-UBND, danh mục 14 di tích cấp quốc gia) — https://bvhttdl.gov.vn/dien-bien-phe-duyet-cong-bo-danh-muc-kiem-ke-49-di-tich-20220318143030047.htm"
+      ]
+    },
+    {
+      "lo": "dienbien",
+      "id": "hang-tham-khuong",
+      "ten": "Hang Thẩm Khương",
+      "cap": "quoc-gia",
+      "dia_diem": "Huyện Tuần Giáo, tỉnh Điện Biên",
+      "xep_hang": "Di tích cấp quốc gia (danh mục 14 di tích QG của Điện Biên)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Bộ Văn hoá, Thể thao và Du lịch — «Điện Biên phê duyệt, công bố danh mục kiểm kê 49 di tích» (QĐ 418/QĐ-UBND, danh mục 14 di tích cấp quốc gia) — https://bvhttdl.gov.vn/dien-bien-phe-duyet-cong-bo-danh-muc-kiem-ke-49-di-tich-20220318143030047.htm"
+      ]
+    },
+    {
+      "lo": "dienbien",
+      "id": "hang-ha-cho",
+      "ten": "Hang Há Chớ",
+      "cap": "quoc-gia",
+      "dia_diem": "Huyện Tuần Giáo, tỉnh Điện Biên",
+      "xep_hang": "Di tích cấp quốc gia (danh mục 14 di tích QG của Điện Biên)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Bộ Văn hoá, Thể thao và Du lịch — «Điện Biên phê duyệt, công bố danh mục kiểm kê 49 di tích» (QĐ 418/QĐ-UBND, danh mục 14 di tích cấp quốc gia) — https://bvhttdl.gov.vn/dien-bien-phe-duyet-cong-bo-danh-muc-kiem-ke-49-di-tich-20220318143030047.htm"
+      ]
+    },
+    {
+      "lo": "dienbien",
+      "id": "hang-xa-nhe",
+      "ten": "Hang Xá Nhè",
+      "cap": "quoc-gia",
+      "dia_diem": "Huyện Tủa Chùa, tỉnh Điện Biên",
+      "xep_hang": "Di tích cấp quốc gia (danh mục 14 di tích QG của Điện Biên)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Bộ Văn hoá, Thể thao và Du lịch — «Điện Biên phê duyệt, công bố danh mục kiểm kê 49 di tích» (QĐ 418/QĐ-UBND, danh mục 14 di tích cấp quốc gia) — https://bvhttdl.gov.vn/dien-bien-phe-duyet-cong-bo-danh-muc-kiem-ke-49-di-tich-20220318143030047.htm"
+      ]
+    },
+    {
+      "lo": "dienbien",
+      "id": "hang-kho-chua-la",
+      "ten": "Hang Khó Chua La",
+      "cap": "quoc-gia",
+      "dia_diem": "Huyện Tủa Chùa, tỉnh Điện Biên",
+      "xep_hang": "Di tích cấp quốc gia (danh mục 14 di tích QG của Điện Biên)",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Bộ Văn hoá, Thể thao và Du lịch — «Điện Biên phê duyệt, công bố danh mục kiểm kê 49 di tích» (QĐ 418/QĐ-UBND, danh mục 14 di tích cấp quốc gia) — https://bvhttdl.gov.vn/dien-bien-phe-duyet-cong-bo-danh-muc-kiem-ke-49-di-tich-20220318143030047.htm"
+      ]
+    },
+    {
+      "lo": "laichau",
+      "id": "bia-le-loi-nam-nhun",
+      "ten": "Bia Lê Lợi (Địa điểm lưu niệm Vua Lê Thái Tổ)",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Lê Lợi, huyện Nậm Nhùn, tỉnh Lai Châu",
+      "xep_hang": "Di tích lịch sử QG 1981; văn bia được công nhận Bảo vật quốc gia 2016. Bia khắc tháng Chạp năm Tân Hợi (1431) trên vách đá Pú Huổi Chỏ bờ bắc sông Đà, ghi việc Lê Thái Tổ thân chinh dẹp loạn giữ yên biên giới Tây Bắc.",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Cổng TTĐT tỉnh Lai Châu — «Lai Châu có 05 Di tích xếp hạng Quốc gia» — https://laichau.gov.vn/danh-muc/hoat-dong-trong-tinh/tin-ubnd/lai-chau-co-05-di-tich-xep-hang-quoc-gia.html"
+      ]
+    },
+    {
+      "lo": "laichau",
+      "id": "thac-cau-may-cong-troi",
+      "ten": "Thác Cầu Mây và Cổng Trời",
+      "cap": "quoc-gia",
+      "dia_diem": "Xã Sơn Bình, huyện Tam Đường, tỉnh Lai Châu (khu vực đèo Hoàng Liên)",
+      "xep_hang": "Danh lam thắng cảnh cấp quốc gia",
+      "ly_do": "Nguồn nhà nước xác nhận xếp hạng và địa chỉ cấp xã, nhưng KHÔNG tra được toạ độ: Nominatim trả rỗng cho tên di tích, và trong kho không có điểm nào đã có nguồn ở cùng xã để neo. Đặt tạm ở trung tâm huyện thì lệch tới vài chục km — sai số đó là một khẳng định địa lý sai, không phải làm tròn.",
+      "nguon": [
+        "[WF] Cổng TTĐT tỉnh Lai Châu — «Lai Châu có 05 Di tích xếp hạng Quốc gia» — https://laichau.gov.vn/danh-muc/hoat-dong-trong-tinh/tin-ubnd/lai-chau-co-05-di-tich-xep-hang-quoc-gia.html"
+      ]
     }
   ],
   "can_xac_minh": [

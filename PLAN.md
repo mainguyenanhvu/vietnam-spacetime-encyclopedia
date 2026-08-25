@@ -19,7 +19,7 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ## Trạng thái hiện tại — 2026-08-25
 
-**350 file dữ liệu · 5.658 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
+**351 file dữ liệu · 5.683 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
@@ -33,11 +33,42 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 | Cơ sở dữ liệu thống nhất + chỉ mục tĩnh | 🔄 đang làm |
 | Gom bảng "Muôn xã Muôn phường" | ⏸ chờ quyết định giấy phép |
 | Duyệt cổng §9 | ✅ 2026-08-11 nâng 1.413 (nguyên tắc chủ dự án); còn 16 giữ chủ ý + 155 video kênh ngoài nhà nước |
-| Ranh giới lịch sử 602–1887 | ⛔ chặn bởi nguồn |
+| Ranh giới lịch sử 602–1887 | ⛔ chặn bởi nguồn — nhưng xem mục 4: đã mở lối VÙNG thay cho ĐƯỜNG BIÊN |
+| Vá lỗ hổng Tây Bắc trong lớp phủ | 🔄 đang làm — chặn ở GEOCODE chứ không phải nguồn |
 
 ---
 
 ## 1. Giao diện — thiết kế lại 2 chế độ
+
+### ✅ 2026-08-25 — bốn việc đã xong, đều có số đo
+
+**Popup dựng lại theo khối (kiểu sách điện tử).** Mã cũ: 40 thẻ `<br/>` và 23 lần
+`style="color:#78716c"` gõ thẳng vào chuỗi TS — hex gõ thẳng KHÔNG đọc token nên
+popup hiện y hệt nhau ở hai chế độ, hai bảng màu dừng lại ở mép popup. Nay
+`src/popup-noi-dung.ts` dựng khối có nghĩa, mọi màu qua token (đo: tiêu đề người
+lớn rgb(43,35,32), trẻ em rgb(28,25,23)). **Nguồn RIÊNG của từng mục nay hiện ra**
+— 2.584/2.599 mục lớp phủ có `sources[]` mà popup cũ chỉ hiện nguồn cấp lớp.
+
+**Dấu « » không còn hiện nguyên hình.** 1.054 lần chỉ riêng lớp phủ. KHÔNG xoá
+khỏi dữ liệu (đó là dấu nháy đúng chính tả tiếng Việt) — `nhamNhay()` đổi «X»
+thành chữ nghiêng lúc dựng HTML. Bỏ lớp CSS ra là dấu quay lại nguyên vẹn.
+⚠️ Dòng phụ popup CỐ Ý không viết hoa toàn bộ: chữ Việt cỡ 0,72rem viết hoa thì
+dấu thanh chồng dấu mũ, mất đường viền trên mà mắt dùng để nhận dạng từ.
+
+**Mốc lịch sử bấm tới được.** 201 mốc chỉ chiếm 124 vị trí pixel trên rãnh 1136px,
+160/200 khoảng cách dưới 6px → phần lớn mốc không bấm được. Nay gom CỤM tối thiểu
+7px + ô chọn liệt kê mọi mốc của thời kỳ: **201/201 mốc chọn được**, 53 vạch cho
+52 kết quả khác nhau.
+
+**Note mốc thôi nói sai triều đại.** Thanh trượt 13 nấc mà kho 201 mốc → 83 mốc
+rơi vào nấc «Đại Việt», nên bấm Ngọc Hồi – Đống Đa (1789, Tây Sơn) mà nhãn hiện
+«Lê sơ — cương vực ~1490». Nay note tự tra `nien-hieu.json` ra triều đại THẬT của
+năm đó, và năm 1533 hiện CẢ HAI triều Mạc + Lê Trung Hưng kèm cảnh báo song song.
+
+**Thanh chip có dấu hiệu cuộn ngang.** `#chip-bar` khai `overflow-x: auto` rồi ẩn
+sạch thanh cuộn → hàng chip cắt cụt không dấu hiệu. Nay dải mờ (mask-image, không
+tô khối đặc lên nền chuyển sắc) + hai mũi tên 44px + lăn dọc thành cuộn ngang.
+
 
 **Đích**: chế độ **người lớn** (sang trọng, tinh tế, tối giản, học Material 3) và chế độ **trẻ em** (vui nhộn, hoạt hình, nhiều màu). Chuyển bằng `:root[data-che-do]`, **không tách 2 file CSS**.
 
@@ -118,6 +149,43 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 ---
 
 ## 3. Nội dung — làm đầy
+
+### 🔴 2026-08-25 — LỖ HỔNG TÂY BẮC, đo bằng point-in-polygon chứ không phải cảm nhận
+
+Gán từng mục lớp phủ có toạ độ vào 34 tỉnh bằng point-in-polygon (2.599 mục, 137
+rơi ngoài đất liền — biển/đảo). Kết quả:
+
+| Tỉnh | Số mục | Số lớp |
+|---|---|---|
+| **Lai Châu** | **14** | 7 |
+| **Sơn La** | **17** | 10 |
+| **Điện Biên** | **26** | 10 |
+| Khánh Hoà · Cà Mau · Lạng Sơn | 27–28 | 12–14 |
+| … | | |
+| TP HCM | 149 | 29 |
+| **Hà Nội** | **366** | 31 |
+
+**Chênh 26 lần giữa Lai Châu và Hà Nội.** Điện Biên chỉ 26 mục — với sức nặng
+lịch sử của nó thì đó là con số không chấp nhận được.
+
+🔴 **CHẶN Ở GEOCODE, KHÔNG PHẢI Ở NGUỒN.** Đi tra thì thấy 12/23 di tích quốc gia
+Tây Bắc ĐÃ NẰM SẴN trong `docs/backlog/wave1-ditich-cho-xu-ly.json → cho_toa_do`
+từ đợt w5, đều ghi «NGUỒN ĐẠT — thiếu toạ độ». Kho đó nay **610 mục**.
+
+Đã thử và KHÔNG dùng được:
+· **Nominatim** trả `[]` cho cả tên di tích lẫn tên xã («Xã Mường Và, Sốp Cộp,
+  Sơn La», «Xã Xa Dung, Điện Biên Đông»). Không phải sai truy vấn — rỗng sạch.
+· **Neo theo trung tâm huyện**: lệch tới vài chục km. Sai số đó là một khẳng định
+  địa lý SAI, không phải làm tròn — bất biến #6 cấm.
+
+✅ Chỉ nạp được 4 mục lên bản đồ, đúng những chỗ **xã/phường trùng khớp** với một
+điểm đã có nguồn trong kho: Đồn Mộc Lỵ · Di tích Trung đoàn Tây Tiến (cùng thị
+trấn Mộc Châu) · Thẳm Tát Tòng (phường Chiềng An) · Thành Sam Mứn (xã Sam Mứn).
+
+**Việc rẻ nhất còn lại của cả dự án**: tìm cho ra một nguồn toạ độ cấp xã dùng
+được, rồi mở khoá 610 mục đã đủ nguồn. Hướng chưa thử: dữ liệu ranh giới cấp xã
+của Tổng cục Thống kê / Bộ TN&MT; GeoNames; bộ shapefile VN cấp 3.
+
 
 ### Chặn bởi con người
 - [x] ~~**442 draft chờ cổng §9.**~~ **XỬ XONG 2026-08-11 — và con số 442 lỗi thời: đếm thật là 1.429.** Chủ dự án ra nguyên tắc «nguồn chính thống là được duyệt» + «làm hết»: nâng **1.413 → reviewed**; GIỮ draft đúng 16 mục = 2 khớp `section9-sensitive.json` + 14 `cong-trinh-ky-luc` (treo Q3). Cổng validate 13/13 + audit chủ quyền đạt sau nâng.
@@ -225,6 +293,48 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 ---
 
 ## 4. Ranh giới lịch sử
+
+### ✅ 2026-08-25 — LỐI RA cho bài toán «không có đường biên»: tô VÙNG thay vì vẽ ĐƯỜNG
+
+Chỉ thị: «phải dựa vào văn tịch để ánh xạ chính xác vào các tỉnh hiện tại, từ đó
+vẽ chính xác đường biên».
+
+Cách làm — và vì sao KHÔNG mâu thuẫn với đợt gỡ polygon hôm trước:
+· Hình học lấy nguyên từ ranh giới **63 tỉnh NGÀY NAY**. Lời khẳng định duy nhất
+  là «đơn vị xưa này phủ lên đất của những tỉnh nay đó» — câu CÓ trong văn tịch.
+  «Đường biên của nó chạy thế này» là câu chính sử KHÔNG chép, và dự án vẫn
+  không nói câu đó.
+· Đúng lối lớp «Pháp thuộc 1887–1945» sẵn có: tệp đó cũng là 63 tỉnh ngày nay,
+  gắn thêm thuộc tính `ky` rồi tô theo. **⚠️ Nhưng tệp đó KHÔNG CÓ NGUỒN NÀO** —
+  `catalog.json` ghi `truong_nguon_cap_muc: null`, `phu_nguon_cap_muc_pct: 0`.
+  Đó là lỗ bất biến #3 CÓ SẴN, phát hiện khi làm việc này. Cần vá.
+· Viền vẽ **nét đứt** — cảnh báo bằng hình. Nét liền đọc như ranh giới đã được
+  khẳng định.
+
+Cổng: `validate_don_vi_xua.mjs` điều 5 — `tinh_nay[]` phải có `nguon_anh_xa[]`
+RIÊNG (nguồn của mục chỉ chứng minh đơn vị CÓ THẬT, không chứng minh phạm vi),
+`khop` ∈ {gan-dung|mot-phan|toi-thieu}, tên tỉnh phải có thật, tệp dẫn xuất phải
+khớp byte. Thử ngược 4 lỗi → bắt đủ 4.
+
+**Đã tra được 10/54 đơn vị.** Nguồn: Cục Văn thư và Lưu trữ nhà nước · Trung tâm
+Lưu trữ quốc gia I · TTXVN/VietnamPlus · Báo Công Thương · Báo Thanh Niên.
+
+⚠️ **CÒN 44 ĐƠN VỊ CHƯA CÓ ÁNH XẠ — đừng đoán cho đủ.** Cụ thể:
+· **quận Giao Chỉ** — nguồn chỉ ghi «vùng Bắc Bộ», không liệt kê ra tỉnh được.
+· **11/13 thừa tuyên Hồng Đức** — chính sử chép TÊN và LỴ SỞ, không chép phạm vi.
+· **22/31 tỉnh Minh Mệnh** — chưa tra. Không nguồn nhà nước nào có BẢNG đối chiếu
+  đủ 31 tỉnh xưa → tỉnh nay; đã thử Cục Lưu trữ, Tuổi Trẻ, Dân trí: đều chỉ liệt
+  kê TÊN. Phải đi từng tỉnh một, qua cổng TTĐT tỉnh hoặc loạt «Lịch sử tỉnh X»
+  của TTXVN.
+· **Tỉnh Tuyên Quang 1831 — HAI NGUỒN NHÀ NƯỚC VÊNH NHAU, giữ cả hai, chưa tô.**
+  Báo Tuyên Quang loạt «700 năm danh xưng Tuyên Quang» có chỗ chép tỉnh này gồm
+  cả Hà Giang cùng vài huyện Yên Bái và Cao Bằng; có chỗ chỉ chép phủ Yên Bình
+  với 2 huyện Hàm Yên, Sơn Dương và châu Chiêm Hoá.
+· Ghi chú: Cục Lưu trữ chép 12 thừa tuyên năm 1466 theo tên CŨ (Bắc Giang, Nam
+  Sách, Quốc Oai, An Bang, Thiên Trường…), kho dự án dùng tên SAU đợt đổi 1469
+  (Kinh Bắc, Hải Dương, Sơn Tây, Yên Bang, Sơn Nam…). Cùng một tập đơn vị, hai
+  bộ tên — nên ghi cả hai chứ đừng tưởng nguồn mâu thuẫn.
+
 
 **Phán quyết nguồn** (chi tiết: `docs/ranh-gioi-1887-1895-phan-quyet.md`):
 

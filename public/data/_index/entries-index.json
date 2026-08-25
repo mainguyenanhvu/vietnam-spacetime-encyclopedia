@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5679,
-    "tong_co_toa_do": 2782,
+    "tong_muc": 5683,
+    "tong_co_toa_do": 2786,
     "so_nhom_trung_ten": 829,
-    "so_cap_trung_toa_do": 815,
+    "so_cap_trung_toa_do": 817,
     "ngay_sinh": "2026-08-25"
   },
   "entries": [
@@ -48602,6 +48602,58 @@
       "trang_thai": "draft"
     },
     {
+      "id": "don-moc-ly",
+      "slug": null,
+      "ten": "Đồn Mộc Lỵ",
+      "ten_chuan": "don moc ly",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.8493,
+      "lon": 104.6388,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "di-tich-trung-doan-tay-tien",
+      "slug": null,
+      "ten": "Di tích Trung đoàn Tây Tiến",
+      "ten_chuan": "di tich trung doan tay tien",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.8493,
+      "lon": 104.6388,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tham-tat-tong",
+      "slug": null,
+      "ten": "Thẳm Tát Tòng",
+      "ten_chuan": "tham tat tong",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "danh-thang",
+      "lat": 21.33,
+      "lon": 103.92,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thanh-sam-mun",
+      "slug": null,
+      "ten": "Thành Sam Mứn",
+      "ten_chuan": "thanh sam mun",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 21.35,
+      "lon": 103.03,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "kinh-duong-vuong",
       "slug": null,
       "ten": "Kinh Dương Vương (Lộc Tục)",
@@ -92186,6 +92238,19 @@
     {
       "a": {
         "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "pham-van-cuong",
+        "ten": "Phạm Văn Cường"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "thanh-sam-mun",
+        "ten": "Thành Sam Mứn"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
         "id": "dong-sy-nguyen",
         "ten": "Trung tướng Đồng Sĩ Nguyên"
       },
@@ -92284,6 +92349,19 @@
         "file": "overlays/thien-su-cao-tang.json",
         "id": "giac-hai",
         "ten": "Giác Hải"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "lo-van-gia",
+        "ten": "Anh hùng liệt sĩ Lò Văn Giá"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "tham-tat-tong",
+        "ten": "Thẳm Tát Tòng"
       },
       "khoang_cach_m": 0
     },
