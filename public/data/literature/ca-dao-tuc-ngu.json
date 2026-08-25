@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Ca dao & tục ngữ là sáng tác dân gian khuyết danh → public-domain, đăng toàn văn. Một số câu là mô-típ công thức được dân gian nhiều vùng dùng chung (vd. «gạo trắng nước trong») — đã ghi chú khi gặp. Nguồn tham chiếu chính: Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam (NXB Văn học); Nguyễn Xuân Kính (chủ biên) — Kho tàng ca dao người Việt (NXB Văn hóa Thông tin, 2001). Các câu dưới đây dựa trên tri thức văn học phổ thông đã được kiểm chứng nhiều lần qua SGK/tuyển tập — cần đối chiếu lại nếu dùng cho mục đích học thuật nghiêm ngặt. — Về SẤM: dự án hiện KHÔNG có mục sấm nào đạt chuẩn nguồn. Câu «Lê tồn Trịnh tại, Lê bại Trịnh vong» đã bị gỡ ngày 2026-07-27 sau khi tra Viện Nghiên cứu Hán Nôm, haiphong.gov.vn, dsvh.gov.vn, VnExpress, Dân Việt và tìm theo site:gov.vn đều không thấy: câu này chỉ lưu trong các kho sấm ký dân gian và blog, đều thuộc diện nguồn bị bác. Lưu ý dễ nhầm: giai thoại Nguyễn Bỉnh Khiêm khuyên Trịnh Kiểm «giữ chùa thờ Phật thì ăn oản» (có trong Đại Việt sử ký toàn thư) là MỘT CHUYỆN KHÁC, không phải dị bản của câu sấm trên.",
+  "ghi_chu": "Ca dao & tục ngữ là sáng tác dân gian khuyết danh → public-domain, đăng toàn văn. Một số câu là mô-típ công thức được dân gian nhiều vùng dùng chung (vd. «gạo trắng nước trong») — đã ghi chú khi gặp. Nguồn tham chiếu chính: Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam (NXB Văn học); Nguyễn Xuân Kính (chủ biên) — Kho tàng ca dao người Việt (NXB Văn hóa Thông tin, 2001). Các câu dưới đây dựa trên tri thức văn học phổ thông đã được kiểm chứng nhiều lần qua SGK/tuyển tập — cần đối chiếu lại nếu dùng cho mục đích học thuật nghiêm ngặt. — Về SẤM: dự án hiện KHÔNG có mục sấm nào đạt chuẩn nguồn. Câu «Lê tồn Trịnh tại, Lê bại Trịnh vong» đã bị gỡ ngày 2026-07-27 sau khi tra Viện Nghiên cứu Hán Nôm, haiphong.gov.vn, dsvh.gov.vn, VnExpress, Dân Việt và tìm theo site:gov.vn đều không thấy: câu này chỉ lưu trong các kho sấm ký dân gian và blog, đều thuộc diện nguồn bị bác. Lưu ý dễ nhầm: giai thoại Nguyễn Bỉnh Khiêm khuyên Trịnh Kiểm «giữ chùa thờ Phật thì ăn oản» (có trong Đại Việt sử ký toàn thư) là MỘT CHUYỆN KHÁC, không phải dị bản của câu sấm trên. ── BỔ SUNG 2026-08-25: thêm 48 THÀNH NGỮ. Trước đó kho chỉ có ca dao, tục ngữ và vè — thiếu hẳn loại người Việt dùng nhiều nhất trong lời nói hằng ngày. Thành ngữ là CỤM cố định chưa thành câu («ba chìm bảy nổi»), khác tục ngữ là câu trọn vẹn đúc kết bài học («có công mài sắt có ngày nên kim») — đã phân loại theo đúng ranh giới đó, không dồn chung cho tiện. Mỗi mục giải cả nghĩa đen lẫn nghĩa bóng, và có `giai_nghia[]` cho chữ khó (chữ Hán-Việt, từ cổ, điển tích) — không giải chữ thì đọc xong vẫn không hiểu vì sao cụm đó mang nghĩa đó.",
   "items": [
     {
       "id": "dong-dang-co-pho-ky-lua",
@@ -2485,6 +2485,871 @@
         "SGK Tiếng Việt / Ngữ văn — NXB Giáo dục Việt Nam"
       ],
       "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "mot-nang-hai-suong",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Một nắng hai sương"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: một buổi phơi nắng, hai buổi dầm sương — sáng sớm ra đồng lúc còn sương, trưa chiều đội nắng. Nghĩa bóng: chỉ cảnh lao động chân tay vất vả quanh năm, nhất là nhà nông.",
+      "giai_nghia": [
+        {
+          "tu": "sương",
+          "nghia": "hơi nước đọng thành hạt nhỏ trên cây cỏ lúc sáng sớm và đêm khuya"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "chan-lam-tay-bun",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Chân lấm tay bùn"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: chân dính bùn, tay lấm đất vì lội ruộng. Nghĩa bóng: chỉ người làm ruộng và nếp sống lam lũ của nhà nông.",
+      "giai_nghia": [
+        {
+          "tu": "lấm",
+          "nghia": "dính bẩn, vấy bùn đất"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "dau-tat-mat-toi",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Đầu tắt mặt tối"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: làm từ lúc trời chưa sáng tới lúc mặt trời đã tắt. Nghĩa bóng: làm lụng quần quật không lúc nào ngơi tay.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "ban-mat-cho-dat-ban-lung-cho-troi",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Bán mặt cho đất, bán lưng cho trời"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: cúi gập người cấy gặt, mặt hướng xuống đất, lưng phơi lên trời. Nghĩa bóng: nói cảnh cực nhọc của người làm ruộng.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "ba-chim-bay-noi",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Ba chìm bảy nổi"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: vật trôi trên nước, lúc chìm lúc nổi. Nghĩa bóng: cuộc đời long đong, lận đận, hết lên lại xuống. Hồ Xuân Hương mượn ý này trong bài «Bánh trôi nước»: «Bảy nổi ba chìm với nước non».",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "len-thac-xuong-ghenh",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Lên thác xuống ghềnh"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: ngược dòng vượt thác rồi lại xuôi qua ghềnh đá. Nghĩa bóng: trải qua hết gian nan này đến hiểm nguy khác.",
+      "giai_nghia": [
+        {
+          "tu": "thác",
+          "nghia": "chỗ dòng sông đổ dốc đứng, nước chảy xiết"
+        },
+        {
+          "tu": "ghềnh",
+          "nghia": "chỗ lòng sông nhiều đá ngầm nhô lên, nước xoáy, thuyền khó qua"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "nam-gai-nem-mat",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Nằm gai nếm mật"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: nằm trên gai, nếm mật đắng. Nghĩa bóng: chịu đựng gian khổ để nuôi chí lớn, chờ ngày báo thù hay dựng nghiệp. Gốc là điển Việt vương Câu Tiễn nước Việt thời Xuân Thu, sau khi thua nước Ngô thì nằm trên củi gai và treo mật đắng để tự nhắc mối nhục.",
+      "giai_nghia": [
+        {
+          "tu": "mật",
+          "nghia": "mật đắng của loài vật, ở đây là thứ treo trước chỗ nằm để nếm mà nhớ nhục"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "chan-cung-da-mem",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Chân cứng đá mềm"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Lời chúc người đi xa: mong chân được vững, đá dưới chân cũng như mềm ra — tức mong đi đường bình an, đủ sức vượt mọi trở ngại.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "gan-vang-da-sat",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Gan vàng dạ sắt"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: lá gan như vàng, bụng dạ như sắt. Nghĩa bóng: lòng dạ bền gan, trung thành, không gì lay chuyển được.",
+      "giai_nghia": [
+        {
+          "tu": "dạ",
+          "nghia": "bụng — theo lối nói cũ, chỉ tấm lòng, ý chí"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "vao-sinh-ra-tu",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Vào sinh ra tử"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: bước vào chỗ sống rồi lại ra chỗ chết. Nghĩa bóng: xông pha nơi nguy hiểm, nhiều phen suýt mất mạng — thường nói về người lính.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "dong-cam-cong-kho",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Đồng cam cộng khổ"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Cụm Hán-Việt: cùng hưởng ngọt, cùng chịu đắng. Nghĩa bóng: chung sướng chung khổ, không bỏ nhau lúc hoạn nạn.",
+      "giai_nghia": [
+        {
+          "tu": "đồng",
+          "nghia": "cùng nhau"
+        },
+        {
+          "tu": "cam",
+          "nghia": "ngọt"
+        },
+        {
+          "tu": "cộng",
+          "nghia": "chung, cùng chịu"
+        },
+        {
+          "tu": "khổ",
+          "nghia": "đắng; cũng có nghĩa cực nhọc"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "don-thuong-doc-ma",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Đơn thương độc mã"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Cụm Hán-Việt: một ngọn giáo, một con ngựa. Nghĩa bóng: một mình xông pha, không ai giúp sức.",
+      "giai_nghia": [
+        {
+          "tu": "đơn",
+          "nghia": "một, lẻ loi"
+        },
+        {
+          "tu": "thương",
+          "nghia": "cây giáo dài"
+        },
+        {
+          "tu": "độc",
+          "nghia": "một mình"
+        },
+        {
+          "tu": "mã",
+          "nghia": "ngựa"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "ech-ngoi-day-gieng",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Ếch ngồi đáy giếng"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: con ếch ở đáy giếng chỉ thấy khoảng trời bằng miệng giếng nên tưởng trời chỉ bé thế. Nghĩa bóng: chê người hiểu biết hạn hẹp mà tự cho là đã biết hết. Gốc từ một truyện ngụ ngôn quen thuộc.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "thay-boi-xem-voi",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Thầy bói xem voi"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: mấy ông thầy bói mù mỗi người sờ một bộ phận con voi rồi cãi nhau xem voi giống cái gì. Nghĩa bóng: chê lối nhìn phiến diện — chỉ biết một phần mà đã kết luận về toàn thể.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "cuoi-ngua-xem-hoa",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Cưỡi ngựa xem hoa"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: ngồi trên lưng ngựa đi ngang mà ngắm hoa, chỉ kịp thấy thoáng qua. Nghĩa bóng: xem xét qua loa, hời hợt, không đi vào thực chất.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "dan-gay-tai-trau",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Đàn gảy tai trâu"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: gảy đàn cho trâu nghe. Nghĩa bóng: nói điều hay lẽ phải với người không đủ hiểu biết hoặc không muốn nghe thì cũng vô ích.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "nuoc-do-la-khoai",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Nước đổ lá khoai"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: lá khoai có lớp phấn không thấm nước, đổ bao nhiêu cũng trôi tuột. Nghĩa bóng: khuyên bảo mà người nghe không tiếp thu chút nào. Câu «nước đổ đầu vịt» cùng nghĩa.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "nuoc-chay-da-mon",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Nước chảy đá mòn"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: dòng nước yếu nhưng chảy mãi thì đá cũng mòn. Nghĩa bóng: kiên trì bền bỉ thì việc khó mấy cũng thành.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "gop-gio-thanh-bao",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Góp gió thành bão"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: nhiều luồng gió nhỏ dồn lại thành cơn bão. Nghĩa bóng: nhiều sức nhỏ hợp lại thành sức mạnh lớn.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "tre-gia-mang-moc",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Tre già măng mọc"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: bụi tre già đi thì măng non mọc lên thay. Nghĩa bóng: lớp trước qua đi có lớp sau kế tục — nói về sự nối tiếp giữa các thế hệ.",
+      "giai_nghia": [
+        {
+          "tu": "măng",
+          "nghia": "mầm non của cây tre, mọc từ gốc"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "mau-chay-ruot-mem",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Máu chảy ruột mềm"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: nơi này chảy máu thì ruột gan cũng đau theo. Nghĩa bóng: người cùng máu mủ gặp hoạn nạn thì người thân đau xót — rộng ra là đồng bào thương nhau.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "moi-ho-rang-lanh",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Môi hở răng lạnh"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: mất môi che thì răng phải chịu lạnh. Nghĩa bóng: hai bên nương tựa nhau, bên này suy thì bên kia cũng thiệt.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "con-rong-chau-tien",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Con Rồng cháu Tiên"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Cách người Việt tự gọi mình, theo truyền thuyết Lạc Long Quân (dòng Rồng) và Âu Cơ (dòng Tiên) sinh bọc trăm trứng nở trăm con. Nghĩa bóng: nhắc chung một cội nguồn, một dòng giống.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "an-chao-da-bat",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Ăn cháo đá bát"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: ăn xong bát cháo rồi đá đổ cái bát. Nghĩa bóng: chê kẻ vô ơn, hưởng xong thì quay lưng phản lại người đã giúp mình.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "qua-cau-rut-van",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Qua cầu rút ván"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: đi qua cầu rồi thì rút tấm ván đi, người sau không qua được. Nghĩa bóng: chê kẻ đạt mục đích xong thì cắt đường của người khác, hoặc phủi ơn người đã giúp.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "duoc-voi-doi-tien",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Được voi đòi tiên"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: đã được con voi lại còn đòi cả nàng tiên. Nghĩa bóng: chê thói tham lam, được rồi vẫn chưa vừa, còn đòi hơn nữa.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "dung-nui-nay-trong-nui-no",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Đứng núi này trông núi nọ"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: đang đứng trên núi này lại ngóng sang núi khác, tưởng bên kia hơn. Nghĩa bóng: chê tính không yên với cái mình có, thấy chỗ khác lại muốn đổi.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "ha-mieng-cho-sung",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Há miệng chờ sung"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: nằm dưới gốc sung há miệng chờ quả rụng trúng. Nghĩa bóng: chê thói lười, chỉ ngồi trông may rủi chứ không chịu làm.",
+      "giai_nghia": [
+        {
+          "tu": "sung",
+          "nghia": "loài cây thân gỗ, quả mọc thành chùm sát thân, chín thì rụng"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "trau-buoc-ghet-trau-an",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Trâu buộc ghét trâu ăn"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: con trâu bị buộc nhìn con trâu được thả ăn cỏ mà tức. Nghĩa bóng: thói ganh ghét khi thấy người khác hơn mình.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "chin-nguoi-muoi-y",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Chín người mười ý"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: chín người mà có tới mười ý khác nhau. Nghĩa bóng: đông người thì lắm ý, khó thống nhất.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "trong-danh-xuoi-ken-thoi-nguoc",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Trống đánh xuôi, kèn thổi ngược"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: trong một phường bát âm, trống đi một nhịp mà kèn lại đi nhịp khác. Nghĩa bóng: mỗi người làm một phách, không ăn khớp với nhau.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "dau-voi-duoi-chuot",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Đầu voi đuôi chuột"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: mở đầu to như con voi, kết thúc bé tí như cái đuôi chuột. Nghĩa bóng: chê việc khởi sự rầm rộ mà kết thúc qua quýt.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "ve-ran-them-chan",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Vẽ rắn thêm chân"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: rắn vốn không chân, vẽ thêm chân là vẽ sai. Nghĩa bóng: làm thừa, thêm thắt vô ích khiến việc hỏng đi. Cụm Hán-Việt tương ứng là «hoạ xà thiêm túc».",
+      "giai_nghia": [
+        {
+          "tu": "hoạ",
+          "nghia": "vẽ"
+        },
+        {
+          "tu": "xà",
+          "nghia": "rắn"
+        },
+        {
+          "tu": "thiêm",
+          "nghia": "thêm vào"
+        },
+        {
+          "tu": "túc",
+          "nghia": "chân"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "ruoc-voi-ve-giay-ma-to",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Rước voi về giày mả tổ"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: dẫn voi về giẫm nát mồ mả tổ tiên nhà mình. Nghĩa bóng: chỉ kẻ đưa ngoại bang vào tàn phá đất nước mình. Dân gian thường gắn câu này với việc Lê Chiêu Thống cầu viện quân Thanh năm 1788.",
+      "giai_nghia": [
+        {
+          "tu": "giày",
+          "nghia": "giẫm đạp cho nát"
+        },
+        {
+          "tu": "mả",
+          "nghia": "mồ, nơi chôn người chết"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "noi-da-xao-thit",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Nồi da xáo thịt"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: lấy da con vật làm nồi để nấu chính thịt nó. Nghĩa bóng: người cùng một nhà, một nước hại lẫn nhau.",
+      "giai_nghia": [
+        {
+          "tu": "xáo",
+          "nghia": "nấu, đun cho nhừ"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "thuong-cang-chan-ha-cang-tay",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Thượng cẳng chân, hạ cẳng tay"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: chân giơ lên trên, tay đánh xuống dưới — tả cảnh đánh đấm túi bụi. Nghĩa bóng: nói việc hành hung, đánh đập người khác.",
+      "giai_nghia": [
+        {
+          "tu": "thượng",
+          "nghia": "trên"
+        },
+        {
+          "tu": "hạ",
+          "nghia": "dưới"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "vao-luon-ra-cui",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Vào luồn ra cúi"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: đi vào thì luồn, đi ra thì cúi. Nghĩa bóng: chê thói khúm núm, nịnh bợ kẻ có quyền để cầu lợi.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "but-sa-ga-chet",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Bút sa gà chết"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: ngòi bút vừa hạ xuống ký là con gà phải làm thịt để khoản đãi. Nghĩa bóng: nhắc phải cân nhắc thật kỹ trước khi đặt bút ký, vì ký rồi là ràng buộc, không rút lại được.",
+      "giai_nghia": [
+        {
+          "tu": "sa",
+          "nghia": "rơi xuống, hạ xuống"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "hoc-mot-biet-muoi",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Học một biết mười"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: học được một điều mà suy ra được mười điều. Nghĩa bóng: khen người thông minh, nhanh hiểu, biết suy rộng.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "an-voc-hoc-hay",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Ăn vóc học hay"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: ăn thì nên vóc dáng, học thì nên điều hay. Nghĩa bóng: có ăn mới lớn, có học mới nên người — nhắc cả nuôi lẫn dạy.",
+      "giai_nghia": [
+        {
+          "tu": "vóc",
+          "nghia": "vóc dáng, thân hình"
+        },
+        {
+          "tu": "hay",
+          "nghia": "điều tốt, điều giỏi — nghĩa cũ của chữ «hay»"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "dai-gio-dam-mua",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Dãi gió dầm mưa"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: phơi mình giữa gió, ngâm mình trong mưa. Nghĩa bóng: chịu đựng sương gió, làm lụng ngoài trời lâu ngày.",
+      "giai_nghia": [
+        {
+          "tu": "dãi",
+          "nghia": "phơi ra, để lộ ra chịu nắng gió"
+        },
+        {
+          "tu": "dầm",
+          "nghia": "ngâm lâu trong nước, trong mưa"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "mot-long-mot-da",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Một lòng một dạ"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: chỉ một tấm lòng, một bụng dạ. Nghĩa bóng: trung thành, dốc hết lòng, không hai lòng.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "tay-xach-nach-mang",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Tay xách nách mang"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: tay xách túi, nách kẹp gói. Nghĩa bóng: mang vác lỉnh kỉnh, nhiều thứ cùng lúc.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "chay-nguoc-chay-xuoi",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Chạy ngược chạy xuôi"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: chạy hết đầu này lại đầu kia. Nghĩa bóng: tất tả lo liệu khắp nơi cho xong một việc.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "an-com-nha-vac-tu-va-hang-tong",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Ăn cơm nhà vác tù và hàng tổng"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: ăn cơm nhà mình mà đi thổi tù và loan tin cho cả tổng. Nghĩa bóng: nói người bỏ công sức lo việc chung mà chẳng được gì cho mình — tuỳ giọng có thể là chê ôm đồm, có thể là khen vô tư.",
+      "giai_nghia": [
+        {
+          "tu": "tù và",
+          "nghia": "chiếc sừng trâu khoét rỗng, thổi lên để báo hiệu cho cả làng"
+        },
+        {
+          "tu": "tổng",
+          "nghia": "đơn vị hành chính cũ gồm nhiều xã, dưới huyện"
+        }
+      ],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "dau-xuoi-duoi-lot",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Đầu xuôi đuôi lọt"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: khúc đầu đã lọt thì khúc đuôi qua được. Nghĩa bóng: mở đầu suôn sẻ thì phần sau dễ trót lọt.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "nuoc-den-chan-moi-nhay",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Nước đến chân mới nhảy"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: nước ngập tới chân rồi mới chịu nhảy tránh. Nghĩa bóng: chê thói để việc đến sát hạn mới cuống lên làm.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
+    },
+    {
+      "id": "cha-truyen-con-noi",
+      "loai": "thanh-ngu",
+      "noi_dung": [
+        "Cha truyền con nối"
+      ],
+      "lien_quan_tinh": [],
+      "y_nghia": "Nghĩa đen: cha trao lại, con tiếp lấy. Nghĩa bóng: nghề nghiệp hay ngôi vị chuyển từ đời này sang đời khác trong một nhà.",
+      "giai_nghia": [],
+      "nguon": [
+        "Vũ Ngọc Phan — Tục ngữ, ca dao, dân ca Việt Nam, NXB Văn học",
+        "Hoàng Phê (chủ biên) — Từ điển tiếng Việt, Viện Ngôn ngữ học"
+      ],
+      "chu_de": "van-hoc-dan-gian"
     }
   ],
   "sources": [
@@ -2499,5 +3364,5 @@
     "Báo Gia Lai — https://baogialai.com.vn",
     "Báo Khánh Hoà — https://baokhanhhoa.vn"
   ],
-  "ngay_cap_nhat": "2026-08-24"
+  "ngay_cap_nhat": "2026-08-25"
 }

@@ -188,9 +188,11 @@ const parseHcmPoem = (raw: unknown): HcmPoem => {
 };
 
 interface CaDao {
+  /** Chữ khó trong câu — dùng chung khuôn với thơ SGK xưa. */
+  giai_nghia?: Array<{ tu: string; nghia: string }>;
   id: string;
   /** vè (kể chuyện có vần) và sấm (lời tiên tri) là hai thể riêng, không gộp. */
-  loai: "ca-dao" | "tuc-ngu" | "ve" | "sam";
+  loai: "ca-dao" | "tuc-ngu" | "ve" | "sam" | "thanh-ngu";
   noi_dung: string[];
   lien_quan_tinh: string[];
   chu_de: string;
@@ -202,7 +204,11 @@ const parseCaDao = (raw: unknown): CaDao => {
   const r = rec(raw);
   return {
     id: str(r.id),
-    loai: oneOf(r.loai, ["ca-dao", "tuc-ngu", "ve", "sam"] as const, "ca-dao"),
+    loai: oneOf(r.loai, ["ca-dao", "tuc-ngu", "ve", "sam", "thanh-ngu"] as const, "ca-dao"),
+    giai_nghia: arr(r.giai_nghia, (x) => {
+      const g = rec(x);
+      return { tu: str(g.tu), nghia: str(g.nghia) };
+    }),
     noi_dung: strs(r.noi_dung),
     lien_quan_tinh: strs(r.lien_quan_tinh),
     chu_de: str(r.chu_de),
@@ -507,6 +513,10 @@ const NHAN_LOAI_CA_DAO: Record<CaDao["loai"], string> = {
   "tuc-ngu": "Tục ngữ",
   ve: "Vè",
   sam: "Sấm",
+  // Thành ngữ là CỤM cố định chưa thành câu («ba chìm bảy nổi»); tục ngữ là
+  // câu trọn vẹn đúc kết bài học. Khác thể loại thật, không phải hai tên gọi
+  // của cùng một thứ — nên đứng riêng chứ không dồn vào «Tục ngữ» cho gọn.
+  "thanh-ngu": "Thành ngữ",
 };
 
 const NHAN_NHOM_BAN_DO: Record<BanDoCo["nhom"], string> = {
@@ -670,7 +680,14 @@ function mucTuCaDao(c: CaDao): Muc {
     nguon: c.nguon,
     than: () => `
       <blockquote class="lib-tho">${dong(c.noi_dung)}</blockquote>
-      ${c.y_nghia ? `<p class="lib-loi-binh">${escVan(c.y_nghia)}</p>` : ""}`,
+      ${
+        // Nhãn «Ý nghĩa» chứ không để một đoạn in nghiêng trơ ra: với ca dao,
+        // tục ngữ, thành ngữ thì LỜI GIẢI mới là thứ người ta mở mục để đọc,
+        // còn câu chữ thì hầu hết đã thuộc. Bỏ in nghiêng vì một đoạn dài in
+        // nghiêng tiếng Việt có dấu đọc mỏi mắt.
+        c.y_nghia ? `<p class="lib-y-nghia"><b>Ý nghĩa.</b> ${escVan(c.y_nghia)}</p>` : ""
+      }
+      ${giaiNghiaHtml(c.giai_nghia)}`,
   };
 }
 

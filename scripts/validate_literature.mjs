@@ -143,8 +143,13 @@ if (existsSync(cadaoPath)) {
     // «vè» và «sấm» là hai thể loại truyền miệng riêng, không phải ca dao hay
     // tục ngữ: vè kể chuyện có vần theo lối tự sự, sấm là lời tiên tri lưu
     // truyền. Cả hai đều dân gian nên vẫn public-domain như ca dao.
-    if (!["ca-dao", "tuc-ngu", "ve", "sam"].includes(c.loai))
-      fail(w, "loai phải là ca-dao|tuc-ngu|ve|sam");
+    if (!["ca-dao", "tuc-ngu", "ve", "sam", "thanh-ngu"].includes(c.loai))
+      fail(w, "loai phải là ca-dao|tuc-ngu|ve|sam|thanh-ngu");
+    // Mục nào cũng phải có lời giải: với văn học dân gian, câu chữ thì ai cũng
+    // thuộc, thứ kho này bù thêm được chính là NGHĨA.
+    if (!c.y_nghia) fail(w, "thiếu y_nghia — mục văn học dân gian không lời giải thì không ship");
+    for (const g of c.giai_nghia ?? [])
+      if (!g.tu || !g.nghia) fail(w, "giai_nghia phải đủ cả tu lẫn nghia");
     if (!Array.isArray(c.noi_dung) || c.noi_dung.length === 0)
       fail(w, "thiếu noi_dung[]");
     if (!Array.isArray(c.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");

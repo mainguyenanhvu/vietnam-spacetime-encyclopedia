@@ -728,3 +728,17 @@
 .lib-tinh-muc:last-child { border-bottom: none; }
 .lib-tinh-muc h4 { margin-bottom: 0.2rem; font-size: var(--co-md); }
 .lib-tinh-muc > * + * { margin-top: 0.6rem; }
+
+/* Lời giải nghĩa của ca dao · tục ngữ · thành ngữ.
+   Trước đây dùng chung .lib-loi-binh (in nghiêng, không nhãn). Với văn học
+   dân gian thì đây mới là khối người ta mở mục để đọc — câu chữ hầu hết đã
+   thuộc rồi. Nên: có nhãn, không in nghiêng (một đoạn dài in nghiêng tiếng
+   Việt có dấu đọc rất mỏi mắt), và tách khỏi câu trích bằng một khoảng thở. */
+.lib-y-nghia {
+  margin: 0.7em 0 0;
+  line-height: 1.62;
+}
+.lib-y-nghia > b {
+  color: var(--brand);
+  font-weight: var(--dam-manh);
+}
