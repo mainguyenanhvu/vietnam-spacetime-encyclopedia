@@ -19,7 +19,7 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ## Trạng thái hiện tại — 2026-08-25
 
-**348 file dữ liệu · 5.628 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **13/13 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
+**350 file dữ liệu · 5.658 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
@@ -239,6 +239,11 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 - Nội dung đường biên nằm ở **Điều 3** công ước 1887, không phải Điều 2. Kinh tuyến chạy qua **mũi đông đảo Trà Cổ**; **105°43′ Paris = 108°03′ Greenwich**.
 - ⚠️ Kinh tuyến 105°43′ ghi dạng "không render như ranh giới biển khi chưa có xác nhận của Uỷ ban Biên giới quốc gia" — **không ghi như khẳng định lịch sử**. Vịnh Bắc Bộ phân định bằng Hiệp định 2000.
 - ⛔ Cấm dùng con số "750 km² / ¾ châu Tụ Long" — chỉ có ở mirror Wikipedia và blog.
+
+✅ **ĐÃ GỠ 5 POLYGON CƯƠNG VỰC PHỎNG DỰNG 2026-08-26** (commit `b84a00d`) — Văn Lang, Âu Lạc, Vạn Xuân, Đại Việt 1490, Đại Nam 1838. Thay chỗ là lớp **«Đơn vị hành chính qua các thời kỳ»** (`geo/don-vi-hanh-chinh-xua.json`, 54 đơn vị / 9 thời kỳ): ĐIỂM tại lỵ sở, bấm ra hồ sơ, đổi theo thanh thời gian. Cổng riêng `validate_don_vi_xua.mjs`.
+- 🔴 **Mục «Polygon 602–1887» bên dưới coi như ĐÓNG THEO HƯỚNG KHÁC.** Không đi tìm atlas để vẽ vùng nữa: sử liệu ghi TÊN đơn vị và LỴ SỞ chứ không ghi đường biên, nên vẽ vùng là bịa độ chính xác. Muốn mở lại thì phải có atlas thật, không phải suy từ mô tả chữ.
+- ⚠️ **CHƯA TRA ĐƯỢC, đừng bịa**: tên đủ **12 châu** của An Nam đô hộ phủ (612) · tên **10 đạo** của Đại Cồ Việt (968) — chính sử chép SỐ LƯỢNG mà không chép đủ danh sách. **Nam Việt** (nhà Triệu) chưa có đơn vị nào; đây là thời kỳ có tranh luận sử học về việc có tính là triều đại Việt Nam hay không, làm thì phải trình bày chỗ vênh chứ đừng chọn một bên. **M**
+- ⚠️ **Hai bẫy đã vấp khi dựng lớp này, cả hai KHÔNG có lỗi console**: (1) `addSource` gọi từ `setPeriod` chạy TRƯỚC `map.on("load")` → MapLibre ném lỗi mà promise nuốt mất; (2) bản vá bằng `isStyleLoaded()` + `once("load")` có ĐUA TRANH — style xong đúng giữa hai lệnh thì promise treo vĩnh viễn. Lớp nào dựng lười cũng phải móc vào chính khối `load`, đừng đua.
 
 ✅ **Lớp phủ «Bản đồ cổ» mở 2026-08-25** (commit `80c7911`) — 19 tấm · 34 điểm neo · 15 địa điểm. Đây KHÔNG phải ranh giới: nó khớp **địa danh ghi trên mặt giấy bản đồ cổ** với vị trí thật ngày nay, tức là thứ làm được mà không phải vẽ đoán một đường biên nào. Bản gốc `media/ban-do-co.json`, lớp phủ sinh ra bằng `scripts/build_ban_do_co_overlay.mjs`, cổng chống lệch trong `validate_media.mjs`.
 - ⚠️ **KHÔNG CÓ BẢN ĐỒ NÀO TRƯỚC THẾ KỶ XV.** Nghề vẽ bản đồ nhà nước bắt đầu từ Hồng Đức bản đồ 1490. Ai hỏi «bản đồ 4000 năm» thì câu trả lời trung thực là: 4000 năm lịch sử nhưng chỉ ~530 năm bản đồ. Đừng lấp chỗ trống.
