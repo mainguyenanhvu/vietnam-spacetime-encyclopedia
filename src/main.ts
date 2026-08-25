@@ -686,6 +686,10 @@ interface DonViXua {
   ghi_chu: string;
   do_tin_cay: string;
   nguon: string[];
+  /** Tỉnh NGÀY NAY mà đơn vị này phủ lên — rỗng nghĩa là chưa tra được nguồn. */
+  tinh_nay: string[];
+  khop: string;
+  nguon_anh_xa: string[];
 }
 
 const parseDonViXua = (raw: unknown): DonViXua => {
@@ -703,7 +707,34 @@ const parseDonViXua = (raw: unknown): DonViXua => {
     ghi_chu: str(r.ghi_chu),
     do_tin_cay: str(r.do_tin_cay),
     nguon: strs(r.nguon),
+    tinh_nay: strs(goSerialize(r.tinh_nay)),
+    khop: str(r.khop),
+    nguon_anh_xa: strs(goSerialize(r.nguon_anh_xa)),
   };
+};
+
+/**
+ * Gỡ một vòng serialize của MapLibre.
+ *
+ * Mảng lồng trong `properties` bị chuỗi hoá thành JSON khi trả về từ sự kiện
+ * click, nên cùng một trường đi qua parse ở hai trạng thái khác nhau. Không gỡ
+ * thì `strs()` trả mảng rỗng, popup mất phần phạm vi — KHÔNG lỗi console,
+ * `tsc` vẫn xanh. Đã dính đúng bẫy này một lần với `ban_do_ghi`.
+ */
+function goSerialize(v: unknown): unknown {
+  if (typeof v !== "string") return v;
+  try {
+    return JSON.parse(v);
+  } catch {
+    return [];
+  }
+}
+
+/** Chữ giải thích mức khớp — hiện thẳng cho người đọc, không giấu trong mã. */
+const NHAN_KHOP: Record<string, string> = {
+  "gan-dung": "nguồn nói thẳng vùng tương ứng, sai số ở mức huyện",
+  "mot-phan": "nguồn chỉ chép MỘT PHẦN tỉnh đó thuộc đơn vị này",
+  "toi-thieu": "mới chắc được phần lõi; nguồn khác còn kể thêm đất chưa đối chiếu xong",
 };
 
 /** Màu theo CẤP đơn vị — nhìn màu là biết đang xem quận, thừa tuyên hay tỉnh. */
@@ -739,6 +770,7 @@ const donViXuaPopup = (o: DonViXua): string =>
     hang: [
       { icon: "🏛️", nhan: "Lỵ sở", gia_tri: o.ly_so },
       { icon: "📍", nhan: "Nay là", gia_tri: o.nay_la },
+      { icon: "🗺️", nhan: "Phủ lên", gia_tri: o.tinh_nay.join(" · ") },
     ],
     than: escVanKho(o.ghi_chu),
     canh_bao:
@@ -746,6 +778,33 @@ const donViXuaPopup = (o: DonViXua): string =>
         ? `⚠️ Vị trí độ tin cậy ${o.do_tin_cay} — lý do nêu trong ghi chú`
         : "",
     nguon: o.nguon.join(" · "),
+  });
+
+/**
+ * Popup khi bấm vào VÙNG tô.
+ *
+ * Câu đầu tiên phải nói rõ đang nhìn thấy cái gì. Người đọc thấy một mảng màu
+ * ôm trọn hình tỉnh thì phản xạ tự nhiên là hiểu «đường biên xưa nó thế» —
+ * mà đó đúng là điều dự án KHÔNG khẳng định.
+ */
+const vungXuaPopup = (
+  o: { don_vi_ten: string; cap: string; tinh_63: string; khop: string },
+  dv: DonViXua | undefined,
+): string =>
+  dungPopup({
+    ten: o.don_vi_ten,
+    meta: [o.cap, dv?.thoi_ky ?? ""],
+    hang: [
+      { icon: "🗺️", nhan: "Vùng này", gia_tri: `Đất tỉnh ${o.tinh_63} ngày nay` },
+      { icon: "🏛️", nhan: "Lỵ sở", gia_tri: dv?.ly_so ?? "" },
+    ],
+    than: escVanKho(dv?.ghi_chu ?? ""),
+    canh_bao:
+      "🔴 Đường viền bạn thấy là ranh giới tỉnh NGÀY NAY, không phải đường biên xưa. " +
+      "Chính sử chép tên đơn vị và lỵ sở, KHÔNG chép đường biên — dự án tô lên tỉnh nay " +
+      "để thấy phạm vi mà không bịa ra một mét ranh giới nào." +
+      (NHAN_KHOP[o.khop] ? ` Mức khớp «${o.khop}»: ${NHAN_KHOP[o.khop]}.` : ""),
+    nguon: (dv?.nguon_anh_xa ?? []).join(" · "),
   });
 
 function ensureDonViXua(): Promise<void> {
@@ -760,6 +819,69 @@ function ensureDonViXua(): Promise<void> {
       donViXuaDangNap = null;
       return;
     }
+    // 🔴 beforeId BẮT BUỘC. Lớp thêm sau chèn LÊN TRÊN và phủ mất nhãn Hoàng Sa
+    //    / Trường Sa — không lỗi console, không cổng dữ liệu nào bắt được, chỉ
+    //    `npm run verify:chuquyen` mới thấy. Xem bẫy landmarks3d.ts trong PLAN.
+    const duoiNhanChuQuyen = map.getLayer("chu-quyen-labels")
+      ? "chu-quyen-labels"
+      : undefined;
+
+    // Lớp VÙNG dựng TRƯỚC lớp điểm để điểm nằm đè lên và vẫn bấm được.
+    // Nạp hỏng thì bỏ qua vùng, KHÔNG kéo theo cả lớp điểm — lớp điểm mới là
+    // phần có nguồn cho cả 54 đơn vị, vùng chỉ có cho 10.
+    const vung = await fetch(`${import.meta.env.BASE_URL}data/geo/vung-don-vi-xua.geojson`)
+      .then((r) => (r.ok ? (r.json() as Promise<GeoJSON.FeatureCollection>) : null))
+      .catch(() => null);
+    if (vung) {
+      map.addSource("vung-don-vi-xua", { type: "geojson", data: vung });
+      map.addLayer(
+        {
+          id: "vung-don-vi-xua-nen",
+          type: "fill",
+          source: "vung-don-vi-xua",
+          filter: LOC_TAT_DON_VI as never,
+          paint: { "fill-color": MAU_CAP_DON_VI, "fill-opacity": 0.22 },
+        },
+        duoiNhanChuQuyen,
+      );
+      map.addLayer(
+        {
+          id: "vung-don-vi-xua-vien",
+          type: "line",
+          source: "vung-don-vi-xua",
+          filter: LOC_TAT_DON_VI as never,
+          paint: {
+            "line-color": MAU_CAP_DON_VI,
+            "line-width": 1.4,
+            // Nét ĐỨT là lời cảnh báo bằng hình: đường liền đọc như một ranh
+            // giới đã được khẳng định, mà đây là ranh giới của hôm nay đứng
+            // thay cho một phạm vi chỉ chép bằng chữ.
+            "line-dasharray": [3, 2],
+          },
+        },
+        duoiNhanChuQuyen,
+      );
+      map.on("click", "vung-don-vi-xua-nen", (e) => {
+        const f = e.features?.[0];
+        if (!f) return;
+        const p = rec(f.properties);
+        const dv = data.items.find((x) => x.id === str(p.don_vi_id));
+        moPopup(
+          map,
+          e.lngLat,
+          vungXuaPopup(
+            {
+              don_vi_ten: str(p.don_vi_ten),
+              cap: str(p.cap),
+              tinh_63: str(p.tinh_63),
+              khop: str(p.khop),
+            },
+            dv,
+          ),
+        );
+      });
+    }
+
     map.addSource("don-vi-xua", {
       type: "geojson",
       data: {
@@ -774,12 +896,6 @@ function ensureDonViXua(): Promise<void> {
         })),
       },
     });
-    // 🔴 beforeId BẮT BUỘC. Lớp thêm sau chèn LÊN TRÊN và phủ mất nhãn Hoàng Sa
-    //    / Trường Sa — không lỗi console, không cổng dữ liệu nào bắt được, chỉ
-    //    `npm run verify:chuquyen` mới thấy. Xem bẫy landmarks3d.ts trong PLAN.
-    const duoiNhanChuQuyen = map.getLayer("chu-quyen-labels")
-      ? "chu-quyen-labels"
-      : undefined;
     map.addLayer(
       {
         id: "don-vi-xua-diem",
@@ -844,7 +960,12 @@ let kyDonViXua = "";
 function apDonViXua(kyId: string): void {
   kyDonViXua = kyId;
   const loc = ["==", ["get", "ky_id"], kyId];
-  for (const id of ["don-vi-xua-diem", "don-vi-xua-nhan"])
+  for (const id of [
+    "vung-don-vi-xua-nen",
+    "vung-don-vi-xua-vien",
+    "don-vi-xua-diem",
+    "don-vi-xua-nhan",
+  ])
     if (map.getLayer(id)) map.setFilter(id, loc as never);
 }
 

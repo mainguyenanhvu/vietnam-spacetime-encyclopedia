@@ -1,6 +1,6 @@
 {
   "ghi_chu": "ĐƠN VỊ HÀNH CHÍNH QUA CÁC THỜI KỲ — quận · châu · phủ · lộ · trấn · thừa tuyên · tỉnh. Mỗi mục là MỘT ĐIỂM đặt tại LỴ SỞ (nơi đặt trị sở) của đơn vị đó, KHÔNG phải một vùng. Đây là quyết định sử liệu chứ không phải giới hạn kỹ thuật: chính sử và địa chí ghi rõ TÊN đơn vị, lỵ sở và vùng tương ứng ngày nay, nhưng KHÔNG ghi đường biên — vẽ vùng là bịa ra một độ chính xác không tồn tại (cùng nguyên tắc đã áp cho đường biên 1887, xem docs/ranh-gioi-1887-1895-phan-quyet.md). Trường `ky_id` nối mục với thời kỳ trên thanh thời gian; kéo thanh trượt thì lớp này đổi theo. Trường `do_tin_cay` nói rõ vì sao điểm đứng ở đó: `cao` = lỵ sở đã định vị bằng khảo cổ hoặc di tích còn tại chỗ · `trung` = neo về nơi cùng tên ngày nay · `thap` = chỉ biết vùng, chưa tra được lỵ sở. CHƯA TRA ĐƯỢC (để trống, KHÔNG bịa): tên 12 châu của An Nam đô hộ phủ (612), tên 10 đạo của Đại Cồ Việt (968) — chính sử chép số lượng mà không chép đủ danh sách.",
-  "ngay_cap_nhat": "2026-08-26",
+  "ngay_cap_nhat": "2026-08-25",
   "sources": [
     "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)",
     "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)",
@@ -44,6 +44,16 @@
       "nguon": [
         "Sở TT&TT Thanh Hoá — Nơi đặt quận trị, trấn lỵ, tỉnh lỵ Thanh Hoá (https://stttt.thanhhoa.gov.vn/NewsDetail.aspx?Id=5381)",
         "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)"
+      ],
+      "tinh_nay": [
+        "Thanh Hoá",
+        "Nghệ An",
+        "Hà Tĩnh"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Cục Văn thư và Lưu trữ nhà nước — «Kỳ I: Địa giới hành chính Việt Nam thời kỳ quân chủ»: đời Hán «nước ta thuộc các quận Giao Chỉ, Cửu Chân, Nhật Nam» — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/ky-i-dia-gioi-hanh-chinh-viet-nam-thoi-ky-quan-chu.htm",
+        "Đào Duy Anh — Đất nước Việt Nam qua các đời: quận Cửu Chân ứng với vùng Thanh Hoá và Nghệ – Tĩnh"
       ]
     },
     {
@@ -61,6 +71,18 @@
       "nguon": [
         "Báo Nhân Dân — Thời kỳ chống các tập đoàn phong kiến Bắc thuộc (https://nhandan.vn/thoi-ky-chong-cac-tap-doan-phong-kien-bac-thuoc-post522065.html)",
         "Cổng TTĐT tỉnh Quảng Bình — địa giới hành chính qua các thời kỳ (https://quangbinh.gov.vn/chi-tiet-tin/-/view-article/1/13794671512727/13883632201547)"
+      ],
+      "tinh_nay": [
+        "Quảng Bình",
+        "Quảng Trị",
+        "Huế",
+        "Đà Nẵng",
+        "Quảng Nam"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Cục Văn thư và Lưu trữ nhà nước — «Kỳ I: Địa giới hành chính Việt Nam thời kỳ quân chủ» — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/ky-i-dia-gioi-hanh-chinh-viet-nam-thoi-ky-quan-chu.htm",
+        "Đào Duy Anh — Đất nước Việt Nam qua các đời: quận Nhật Nam từ đèo Ngang trở vào nam, tới khoảng Quảng Nam – Đà Nẵng"
       ]
     },
     {
@@ -288,6 +310,14 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)"
+      ],
+      "tinh_nay": [
+        "Nghệ An",
+        "Hà Tĩnh"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Cục Văn thư và Lưu trữ nhà nước — «Khái lược quá trình từ trấn đến tỉnh của Nghệ An dưới triều Nguyễn»: Hà Tĩnh tách khỏi Nghệ An năm 1831, trước đó là một — https://www.archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/khai-luoc-qua-trinh-tu-tran-den-tinh-cua-nghe-an-duoi-trieu-nguyen.htm"
       ]
     },
     {
@@ -322,6 +352,15 @@
       "nguon": [
         "Cổng TTĐT thành phố Đà Nẵng — Về sự ra đời của danh xưng Quảng Nam (1471) (https://danang.gov.vn/w/ve-su-ra-doi-cua-danh-xung-quang-nam-1471-i)",
         "Bảo tàng Lịch sử Quốc gia — Xứ Quảng Nam xưa: Sự kiện lớn năm 1471 (https://baotanglichsu.vn/vi/Articles/3101/73267/xu-quang-nam-xua-su-kien-lon-nam-1471.html)"
+      ],
+      "tinh_nay": [
+        "Quảng Nam",
+        "Quảng Ngãi",
+        "Bình Định"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Báo Thanh Niên — «Xứ Quảng Nam xưa: Sự kiện lớn năm 1471»: thừa tuyên Quảng Nam gồm 3 phủ Thăng Hoa, Tư Nghĩa, Hoài Nhơn — https://thanhnien.vn/xu-quang-nam-xua-su-kien-lon-nam-1471-1851475633.htm"
       ]
     },
     {
@@ -370,6 +409,17 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Phú Thọ",
+        "Yên Bái",
+        "Tuyên Quang",
+        "Lai Châu",
+        "Sơn La"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "TTXVN/VietnamPlus — «Lịch sử tỉnh Phú Thọ»: năm Minh Mệnh 12 (1831) Hưng Hoá là tỉnh có 3 phủ, 5 huyện, 16 châu, «bao gồm phần lớn đất đai các tỉnh Phú Thọ, Yên Bái, Tuyên Quang, Lai Châu và Sơn La ngày nay» — https://www.vietnamplus.vn/lich-su-tinh-phu-tho-vung-dat-to-coi-nguon-cua-dan-toc-viet-nam-post1022725.vnp"
       ]
     },
     {
@@ -386,6 +436,14 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Thái Nguyên",
+        "Bắc Kạn"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Minh Mệnh thứ 12 (1831) đổi trấn Thái Nguyên thành tỉnh Thái Nguyên; năm 1890 chính quyền Pháp mới chia tỉnh Thái Nguyên thành hai tỉnh Thái Nguyên và Bắc Kạn — nên tỉnh 1831 phủ cả đất Bắc Kạn ngày nay."
       ]
     },
     {
@@ -434,6 +492,13 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Quảng Ninh"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Cục Văn thư và Lưu trữ nhà nước — «Kỳ I: Địa giới hành chính Việt Nam thời kỳ quân chủ»: Quảng Yên là 1 trong 13 tỉnh Bắc Kỳ năm 1831; tên tỉnh Quảng Ninh ghép Quảng Yên + Hồng Quảng năm 1963 — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/ky-i-dia-gioi-hanh-chinh-viet-nam-thoi-ky-quan-chu.htm"
       ]
     },
     {
@@ -578,6 +643,13 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Hà Tĩnh"
+      ],
+      "khop": "gan-dung",
+      "nguon_anh_xa": [
+        "Cục Văn thư và Lưu trữ nhà nước — «Hà Tĩnh, 190 năm hình thành và phát triển»: tỉnh Hà Tĩnh lập năm 1831 từ 2 phủ (6 huyện) tách khỏi trấn Nghệ An — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/ha-tinh-190-nam-hinh-thanh-va-phat-trien.htm"
       ]
     },
     {
@@ -722,6 +794,15 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "TP HCM",
+        "Tây Ninh"
+      ],
+      "khop": "mot-phan",
+      "nguon_anh_xa": [
+        "Báo Công Thương (Bộ Công Thương) — «Lịch sử sáp nhập tỉnh của Long An và Tây Ninh»: năm 1832 «vùng đất Tây Ninh thuộc tỉnh Phiên An» — https://congthuong.vn/lich-su-sap-nhap-tinh-cua-long-an-va-tay-ninh-381154.html",
+        "⚠️ CHƯA ĐƯA LONG AN VÀO: nguồn nói đất Long An thuộc phủ Tân An – Tân Bình của Gia Định VÀ một phần Định Tường, tức chia đôi giữa hai tỉnh; dự án chưa tra được ranh giới phần chia nên không tô."
       ]
     },
     {
@@ -802,6 +883,15 @@
       "do_tin_cay": "trung",
       "nguon": [
         "Bảo tàng Lịch sử Quốc gia — Tổ chức chính quyền địa phương thời Minh Mệnh (https://baotanglichsu.vn/vi/Articles/3096/11163/to-chuc-chinh-quyen-djia-phuong-thoi-minh-menh.html)"
+      ],
+      "tinh_nay": [
+        "Kiên Giang",
+        "Cà Mau",
+        "Bạc Liêu"
+      ],
+      "khop": "toi-thieu",
+      "nguon_anh_xa": [
+        "Trung tâm Lưu trữ quốc gia I — «Địa giới Kiên Giang dưới Triều Nguyễn»: năm 1832 Minh Mạng lập Nam Kỳ lục tỉnh, đất Kiên Giang – Cà Mau – Bạc Liêu ngày nay thuộc tỉnh Hà Tiên — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/dia-gioi-kien-giang-duoi-trieu-nguyen.htm"
       ]
     },
     {
@@ -888,5 +978,6 @@
         "Đào Duy Anh — Đất nước Việt Nam qua các đời"
       ]
     }
-  ]
+  ],
+  "ghi_chu_anh_xa": "ÁNH XẠ «đơn vị xưa → tỉnh ngày nay» (thêm 2026-08-25). Mỗi mục có `tinh_nay[]` sẽ được tô lên đúng những polygon tỉnh đó trong lớp «Vùng đơn vị hành chính xưa». 🔴 ĐÂY KHÔNG PHẢI ĐƯỜNG BIÊN XƯA. Đường vẽ ra là đường biên tỉnh NGÀY NAY; lời khẳng định duy nhất là «đơn vị xưa này phủ lên đất của những tỉnh nay đó», và lời đó phải có `nguon_anh_xa[]` riêng — nguồn của mục chỉ chứng minh đơn vị có thật, không chứng minh phạm vi. Đã tra được 10/54 đơn vị. ⚠️ CHƯA TRA ĐƯỢC, ĐỪNG ĐOÁN: quận Giao Chỉ (nguồn chỉ ghi «vùng Bắc Bộ», không liệt kê được ra tỉnh); 11/13 thừa tuyên Hồng Đức (chính sử chép TÊN và LỴ SỞ, không chép phạm vi); 22/31 tỉnh Minh Mệnh. ⚠️ TỈNH TUYÊN QUANG 1831 — HAI NGUỒN NHÀ NƯỚC VÊNH NHAU, chưa đối chiếu xong nên chưa tô: Báo Tuyên Quang loạt «700 năm danh xưng Tuyên Quang» có chỗ chép tỉnh này gồm cả Hà Giang cùng vài huyện của Yên Bái và Cao Bằng, có chỗ lại chỉ chép phủ Yên Bình với 2 huyện Hàm Yên, Sơn Dương và châu Chiêm Hoá."
 }
