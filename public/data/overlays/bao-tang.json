@@ -1,6 +1,6 @@
 {
-  "ghi_chu": "Bảo tàng lịch sử – văn hoá – nghệ thuật quan trọng của Việt Nam (thiết chế công lập). Ưu tiên bảo tàng giữ bảo vật quốc gia hoặc toà nhà có giá trị lịch sử. Bảo tàng là thực thể riêng, được phép trùng toạ độ với di tích/lễ hội đã có (vd Bảo tàng Quang Trung ↔ Lễ hội Đống Đa – Tây Sơn). KHÔNG dùng Wikipedia.",
-  "ngay_cap_nhat": "2026-07-25",
+  "ghi_chu": "Bảo tàng lịch sử – văn hoá – nghệ thuật quan trọng của Việt Nam (thiết chế công lập). Ưu tiên bảo tàng giữ bảo vật quốc gia hoặc toà nhà có giá trị lịch sử. Bảo tàng là thực thể riêng, được phép trùng toạ độ với di tích/lễ hội đã có (vd Bảo tàng Quang Trung ↔ Lễ hội Đống Đa – Tây Sơn). KHÔNG dùng Wikipedia. ── ĐỢT 2026-08-26: +7 bảo tàng. Danh sách lấy từ DANH BẠ BẢO TÀNG của Cục Di sản văn hoá (baotang.dsvh.gov.vn) cùng cổng TTĐT tỉnh và Bộ Quốc phòng. Toạ độ lấy từ POI tourism=museum của OpenStreetMap, qua hai cửa kiểm: tên bảo tàng phải khớp trong display_name, và điểm phải rơi ĐÚNG tỉnh (point-in-polygon trên vn-63-tinh-truoc-2025). Đo được 7/10 qua cửa — 3 tấm trượt để lại chứ không nới cửa.",
+  "ngay_cap_nhat": "2026-08-26",
   "sources": [
     "Website chính thức các bảo tàng công lập (.vn)",
     "Cục Di sản văn hóa (Bộ VHTTDL) — dsvh.gov.vn"
@@ -305,6 +305,111 @@
       "anh_nguon": "Wikimedia Commons — Baby x Boo · https://commons.wikimedia.org/wiki/File:C%E1%BB%9D_M%E1%BA%B7t_Tr%E1%BB%9Di_t%E1%BA%A1i_B%E1%BA%A3o_t%C3%A0ng_H%C3%A0_N%E1%BB%99i.jpg",
       "anh_giay_phep": "CC0",
       "anh_muc": "tu-lieu"
+    },
+    {
+      "id": "bao-tang-nam-dinh",
+      "ten": "Bảo tàng Nam Định",
+      "lon": 106.17409,
+      "lat": 20.42327,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập (danh bạ Cục Di sản văn hoá)",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, lưu giữ gần 20.000 tài liệu, hiện vật phản ánh lịch sử tự nhiên và xã hội của đất Nam Định: từ thời tiền – sơ sử, văn hoá Đông Sơn, thời Bắc thuộc, qua các triều Lý, Trần, Lê sơ – Mạc, Hậu Lê, Nguyễn – Pháp thuộc, tới thời kỳ kháng chiến chống Pháp và chống Mỹ. Nằm cạnh Cột cờ Nam Định.",
+      "dia_diem": "Đường Cột Cờ, thành phố Nam Định (nay thuộc tỉnh Ninh Bình)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Danh bạ bảo tàng Việt Nam, hồ sơ số 1 — http://baotang.dsvh.gov.vn/vi-VN/Detail/Index/1"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-dien-bien",
+      "ten": "Bảo tàng tỉnh Điện Biên",
+      "lon": 103.01519,
+      "lat": 21.38074,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập (danh bạ Cục Di sản văn hoá)",
+      "mo_ta": "Bảo tàng tổng hợp của tỉnh, năm phần trưng bày về «Điện Biên đất và người»: lịch sử địa phương, sự đa dạng văn hoá các dân tộc vùng Tây Bắc, quá trình phát triển hiện đại và các trưng bày chuyên đề. Khác với Bảo tàng Chiến thắng lịch sử Điện Biên Phủ vốn chỉ chuyên về chiến dịch 1954.",
+      "dia_diem": "Tổ dân phố 3, phường Điện Biên Phủ, thành phố Điện Biên Phủ, tỉnh Điện Biên",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Danh bạ bảo tàng Việt Nam, hồ sơ số 8 — http://baotang.dsvh.gov.vn/vi-VN/Detail/Index/8"
+      ]
+    },
+    {
+      "id": "bao-tang-thanh-pho-can-tho",
+      "ten": "Bảo tàng thành phố Cần Thơ",
+      "lon": 105.78684,
+      "lat": 10.03491,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập (danh bạ Cục Di sản văn hoá)",
+      "mo_ta": "Bảo tàng tổng hợp lớn nhất Đồng bằng sông Cửu Long, diện tích gần 3.000 m², trưng bày hơn 1.000 hiện vật và di vật quý về đất và người Cần Thơ qua các thời kỳ, cùng thành tựu kinh tế – văn hoá – xã hội của ba cộng đồng Kinh, Hoa, Khmer. Là một địa chỉ bảo tồn hiện vật văn hoá Óc Eo.",
+      "dia_diem": "Số 1 Đại lộ Hoà Bình, phường Tân An, quận Ninh Kiều, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng thành phố Cần Thơ (cổng .gov.vn) — Lịch sử hình thành — https://baotangtpcantho.cantho.gov.vn/article/lich-su-hinh-thanh/858.htm"
+      ]
+    },
+    {
+      "id": "bao-tang-lam-dong",
+      "ten": "Bảo tàng Lâm Đồng",
+      "lon": 108.4599,
+      "lat": 11.94058,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập (danh bạ Cục Di sản văn hoá)",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh đặt trong một dinh thự cũ trên đồi thông Đà Lạt, trưng bày về thiên nhiên Tây Nguyên, khảo cổ học Lâm Đồng (di chỉ Cát Tiên) và văn hoá các dân tộc bản địa Mạ, Cơ Ho, Chu Ru.",
+      "dia_diem": "Thành phố Đà Lạt, tỉnh Lâm Đồng",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Lâm Đồng — trang chính thức — https://baotanglamdong.com.vn/"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-thanh-hoa",
+      "ten": "Bảo tàng tỉnh Thanh Hoá",
+      "lon": 105.78039,
+      "lat": 19.81514,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập (danh bạ Cục Di sản văn hoá)",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, giữ hơn 30.000 hiện vật, trong đó hơn 2.000 hiện vật được chọn trưng bày theo tiến trình lịch sử, mở đầu là phòng «Thanh Hoá thời tiền sử – sơ sử». Ba bảo vật quốc gia đã được số hoá từ cuối năm 2022: kiếm ngắn núi Nưa, trống đồng Cẩm Giang và vạc đồng Cẩm Thuỷ.",
+      "dia_diem": "Đường Trường Thi, phường Trường Thi, thành phố Thanh Hoá, tỉnh Thanh Hoá",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Văn hoá, Thể thao và Du lịch — «Bảo tàng tỉnh Thanh Hoá: Số hoá để lan toả giá trị di sản» — https://bvhttdl.gov.vn/bao-tang-tinh-thanh-hoa-so-hoa-de-lan-toa-gia-tri-di-san-20240715164551302.htm"
+      ]
+    },
+    {
+      "id": "bao-tang-phong-khong-khong-quan",
+      "ten": "Bảo tàng Phòng không – Không quân",
+      "lon": 105.82924,
+      "lat": 20.99954,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập (danh bạ Cục Di sản văn hoá)",
+      "mo_ta": "Bảo tàng của Quân chủng Phòng không – Không quân. Khu di tích lịch sử văn hoá quân sự rộng hơn 4.000 m² gồm Nhà tưởng niệm Chủ tịch Hồ Chí Minh, Nhà bia liệt sĩ Phòng không – Không quân và di tích Sở Chỉ huy K18 — nơi chỉ huy chiến dịch «Điện Biên Phủ trên không» tháng 12/1972.",
+      "dia_diem": "Số 173C đường Trường Chinh, phường Khương Mai, quận Thanh Xuân, thành phố Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Quốc phòng (mod.gov.vn) — Bảo tàng Phòng không – Không quân — https://mod.gov.vn/home/intro/detailnews?urile=wcm:path:/mod/sa-mod-site/sa-ttk/sa-ttdv-vhtt/sa-ttk-vhtt-vh-tcvh/sa-ttk-vhtt-vh-tcvh-baotang/bb5d4f46-cb28-4032-8f11-59462d0b1a2e"
+      ]
+    },
+    {
+      "id": "bao-tang-ninh-binh",
+      "ten": "Bảo tàng Ninh Bình",
+      "lon": 105.98071,
+      "lat": 20.25879,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập (danh bạ Cục Di sản văn hoá)",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, trưng bày về vùng đất cố đô Hoa Lư: khảo cổ học, hiện vật thời Đinh – Tiền Lê, văn hoá và lịch sử đấu tranh của Ninh Bình.",
+      "dia_diem": "Thành phố Ninh Bình, tỉnh Ninh Bình",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng thông tin Bảo tàng Ninh Bình (baotangtinh.ninhbinh.gov.vn) — https://baotangtinh.ninhbinh.gov.vn/home.htm"
+      ]
     }
   ]
 }

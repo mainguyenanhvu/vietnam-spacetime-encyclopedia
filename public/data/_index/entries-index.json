@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5735,
-    "tong_co_toa_do": 2786,
+    "tong_muc": 5742,
+    "tong_co_toa_do": 2793,
     "so_nhom_trung_ten": 835,
-    "so_cap_trung_toa_do": 817,
+    "so_cap_trung_toa_do": 819,
     "ngay_sinh": "2026-08-25"
   },
   "entries": [
@@ -30621,6 +30621,97 @@
       "lon": 105.787,
       "so_nguon": 1,
       "trang_thai": "reviewed"
+    },
+    {
+      "id": "bao-tang-nam-dinh",
+      "slug": null,
+      "ten": "Bảo tàng Nam Định",
+      "ten_chuan": "bao tang nam dinh",
+      "file": "overlays/bao-tang.json",
+      "mien": "overlays",
+      "loai": "bao-tang",
+      "lat": 20.42327,
+      "lon": 106.17409,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-tang-tinh-dien-bien",
+      "slug": null,
+      "ten": "Bảo tàng tỉnh Điện Biên",
+      "ten_chuan": "bao tang tinh dien bien",
+      "file": "overlays/bao-tang.json",
+      "mien": "overlays",
+      "loai": "bao-tang",
+      "lat": 21.38074,
+      "lon": 103.01519,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-tang-thanh-pho-can-tho",
+      "slug": null,
+      "ten": "Bảo tàng thành phố Cần Thơ",
+      "ten_chuan": "bao tang thanh pho can tho",
+      "file": "overlays/bao-tang.json",
+      "mien": "overlays",
+      "loai": "bao-tang",
+      "lat": 10.03491,
+      "lon": 105.78684,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-tang-lam-dong",
+      "slug": null,
+      "ten": "Bảo tàng Lâm Đồng",
+      "ten_chuan": "bao tang lam dong",
+      "file": "overlays/bao-tang.json",
+      "mien": "overlays",
+      "loai": "bao-tang",
+      "lat": 11.94058,
+      "lon": 108.4599,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-tang-tinh-thanh-hoa",
+      "slug": null,
+      "ten": "Bảo tàng tỉnh Thanh Hoá",
+      "ten_chuan": "bao tang tinh thanh hoa",
+      "file": "overlays/bao-tang.json",
+      "mien": "overlays",
+      "loai": "bao-tang",
+      "lat": 19.81514,
+      "lon": 105.78039,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-tang-phong-khong-khong-quan",
+      "slug": null,
+      "ten": "Bảo tàng Phòng không – Không quân",
+      "ten_chuan": "bao tang phong khong khong quan",
+      "file": "overlays/bao-tang.json",
+      "mien": "overlays",
+      "loai": "bao-tang",
+      "lat": 20.99954,
+      "lon": 105.82924,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-tang-ninh-binh",
+      "slug": null,
+      "ten": "Bảo tàng Ninh Bình",
+      "ten_chuan": "bao tang ninh binh",
+      "file": "overlays/bao-tang.json",
+      "mien": "overlays",
+      "loai": "bao-tang",
+      "lat": 20.25879,
+      "lon": 105.98071,
+      "so_nguon": 1,
+      "trang_thai": "draft"
     },
     {
       "id": "trong-dong-ngoc-lu",
@@ -96777,6 +96868,19 @@
     },
     {
       "a": {
+        "file": "overlays/bao-tang.json",
+        "id": "bao-tang-lam-dong",
+        "ten": "Bảo tàng Lâm Đồng"
+      },
+      "b": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "tuong-quan-am-bac-binh",
+        "ten": "Tượng Quan Âm Bắc Bình"
+      },
+      "khoang_cach_m": 2
+    },
+    {
+      "a": {
         "file": "overlays/di-tich-quoc-gia.json",
         "id": "den-bao-ha",
         "ten": "Đền Bảo Hà"
@@ -99140,6 +99244,19 @@
         "ten": "Nhà Ngô kết thúc, mở đầu Loạn 12 sứ quân"
       },
       "khoang_cach_m": 65
+    },
+    {
+      "a": {
+        "file": "overlays/bao-tang.json",
+        "id": "bao-tang-ninh-binh",
+        "ten": "Bảo tàng Ninh Bình"
+      },
+      "b": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bo-chan-den-va-lu-huong-gom-men",
+        "ten": "Bộ chân đèn và lư hương gốm men"
+      },
+      "khoang_cach_m": 69
     },
     {
       "a": {
