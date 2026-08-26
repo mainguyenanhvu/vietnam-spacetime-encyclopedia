@@ -62,6 +62,10 @@ const loc = process.argv[2] ?? "";
 const chuan = (s) =>
   s.replace(/[«»“”„‟"']/g, "")
    .replace(/[–—‑-]/g, "-")
+   // ð (U+00F0) → đ (U+0111): nhandan.vn mã hoá chữ «đ» thành `&#240;`, tức
+   // sai thực thể ở phía toà soạn. Chữ họ ĐỊNH viết vẫn là «đ», nên gộp về
+   // một — nếu không, mọi trích dẫn từ nhandan có chữ đ đều báo lệch oan.
+   .replace(/ð/g, "đ").replace(/Ð/g, "Đ")
    .replace(/\(\[\d+\]\)|\[\d+\]/g, "")
    .replace(/\s+/g, " ")
    .trim()
@@ -117,10 +121,30 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith(".json") && !x.startsW
     // Không tách thì mọi trích thơ đều báo lệch, mà lỗi nằm ở phép đo chứ
     // không ở dữ liệu: Bình Ngô đại cáo, câu đối Kiếp Bạc, lời hiểu dụ Quang
     // Trung đều gãy đúng tại dấu «/» ngay sau vế đầu.
-    const manh = q.split(/\s*[/…]+\s*/).map(loiDau).filter((x) => x.length >= 15);
+    // `...` gõ bằng ba chấm ASCII cũng là dấu lược, y hệt «…» — bản đầu chỉ
+    // tách «…» nên bach-dang-981 và nam-ky-khoi-nghia-1940 báo lệch oan.
+    const manh = q.split(/\s*(?:[/…]+|\.{2,})\s*/).map(loiDau).filter((x) => x.length >= 15);
     if (manh.length > 1 && manh.every((m) => van.includes(m))) {
       dat++;
-      console.log(`✂️  ${d.id}[${i}] khớp trọn ${manh.length} vế (tách theo dấu / hoặc …)`);
+      console.log(`✂️  ${d.id}[${i}] khớp trọn ${manh.length} vế (tách theo dấu lược / xuống dòng)`);
+      continue;
+    }
+
+    /**
+     * Chốt cuối: tách theo CÂU rồi đòi mọi câu ≥25 ký tự phải có nguyên văn
+     * trên trang.
+     *
+     * Vì sao vẫn nghiêm: mỗi câu có nghĩa vẫn phải khớp từng chữ; thứ được
+     * tha chỉ là cách người soạn NỐI các câu lại — nhãn biên tập («Phiên âm:»,
+     * «Dịch thơ:»), chỗ lược, hay hai câu lấy cách nhau trong bài.
+     * Ca thật đã gặp: `ham-tu-chuong-duong-1285` ghép phiên âm Hán–Việt với
+     * bản dịch thơ trong một đoạn — cả bốn câu đều có trên trang cand.vn, chỉ
+     * là không nằm liền nhau.
+     */
+    const cau = q.split(/(?<=[.!?])\s+|\s*:\s*/).map(loiDau).filter((x) => x.length >= 25);
+    if (cau.length > 1 && cau.every((m) => van.includes(m))) {
+      dat++;
+      console.log(`📎 ${d.id}[${i}] khớp trọn ${cau.length} câu (đoạn ghép từ nhiều chỗ trong bài)`);
       continue;
     }
     // Trích dài hay bị cắt bởi một cụm chèn giữa (chú thích, ghi chú toà soạn).
