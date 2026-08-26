@@ -12,6 +12,204 @@
   ],
   "figure_id": "ngo-quyen",
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_kieu": "tong-quat",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          870,
+          140
+        ],
+        [
+          985,
+          205
+        ],
+        [
+          905,
+          370
+        ],
+        [
+          985,
+          540
+        ],
+        [
+          870,
+          600
+        ]
+      ],
+      "nhan": "Cửa biển"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          25,
+          355
+        ],
+        [
+          290,
+          345
+        ],
+        [
+          555,
+          365
+        ],
+        [
+          810,
+          388
+        ],
+        [
+          985,
+          402
+        ]
+      ],
+      "nhan": "Sông Bạch Đằng"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          120,
+          195
+        ],
+        [
+          300,
+          168
+        ],
+        [
+          480,
+          182
+        ],
+        [
+          655,
+          162
+        ],
+        [
+          800,
+          190
+        ]
+      ],
+      "nhan": "Rừng rậm hai bờ — nơi mai phục"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          120,
+          540
+        ],
+        [
+          300,
+          565
+        ],
+        [
+          480,
+          552
+        ],
+        [
+          655,
+          570
+        ],
+        [
+          800,
+          545
+        ]
+      ]
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "bai-coc",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 420,
+      "y": 372,
+      "nhan": "Bãi cọc ngầm bịt sắt"
+    },
+    {
+      "id": "quan-ta-bo-bac",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 235,
+      "y": 232,
+      "nhan": "Quân ta mai phục bờ bắc"
+    },
+    {
+      "id": "quan-ta-bo-nam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 235,
+      "y": 500,
+      "nhan": "Quân ta mai phục bờ nam"
+    },
+    {
+      "id": "thuyen-dich",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 855,
+      "y": 400,
+      "nhan": "Thuyền Lưu Hoằng Tháo"
+    },
+    {
+      "id": "mui-nhu-dich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        520,
+        318
+      ],
+      "den": [
+        800,
+        378
+      ],
+      "nhan": "Nhử địch qua bãi cọc"
+    },
+    {
+      "id": "thuyen-mac-can",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 690,
+      "y": 388,
+      "nhan": "Thuyền vướng cọc, mắc cạn"
+    },
+    {
+      "id": "mui-phan-cong-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        265,
+        272
+      ],
+      "den": [
+        640,
+        366
+      ],
+      "nhan": "Phản công từ bờ bắc"
+    },
+    {
+      "id": "mui-phan-cong-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        265,
+        460
+      ],
+      "den": [
+        640,
+        404
+      ],
+      "nhan": "Phản công từ bờ nam"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 205,
+      "nhan": "Toàn thắng — Lưu Hoằng Tháo tử trận"
+    }
+  ],
   "buoc": [
     {
       "id": 1,
@@ -19,9 +217,9 @@
       "mo_ta": "Ngô Quyền cho đóng hàng nghìn cọc gỗ nhọn bịt sắt xuống lòng sông Bạch Đằng, giấu dưới mặt nước khi triều lên; mai phục quân hai bên bờ.",
       "thuy_trieu": "len",
       "hien": [
-        "song",
-        "coc-ngam",
-        "quan-ta-mai-phuc"
+        "bai-coc",
+        "quan-ta-bo-bac",
+        "quan-ta-bo-nam"
       ]
     },
     {
@@ -30,8 +228,9 @@
       "mo_ta": "Khi thuỷ triều lên ngập cọc, Ngô Quyền cho thuyền nhẹ ra khiêu chiến rồi giả thua, nhử đoàn thuyền lớn của Lưu Hoằng Tháo tiến sâu qua bãi cọc.",
       "thuy_trieu": "len",
       "hien": [
-        "song",
-        "coc-ngam",
+        "bai-coc",
+        "quan-ta-bo-bac",
+        "quan-ta-bo-nam",
         "thuyen-dich",
         "mui-nhu-dich"
       ]
@@ -42,8 +241,7 @@
       "mo_ta": "Thuỷ triều bắt đầu rút nhanh; bãi cọc nhô dần lên, thuyền lớn quân Nam Hán bị vướng và va vào cọc, vỡ và mắc cạn.",
       "thuy_trieu": "xuong",
       "hien": [
-        "song",
-        "coc-lo",
+        "bai-coc",
         "thuyen-mac-can"
       ]
     },
@@ -53,11 +251,12 @@
       "mo_ta": "Ngô Quyền tung toàn lực từ hai bờ và thượng nguồn đánh xuống. Quân Nam Hán rối loạn, thuyền đắm, Lưu Hoằng Tháo tử trận.",
       "thuy_trieu": "xuong",
       "hien": [
-        "song",
-        "coc-lo",
+        "bai-coc",
         "thuyen-mac-can",
-        "mui-phan-cong-trai",
-        "mui-phan-cong-phai"
+        "quan-ta-bo-bac",
+        "quan-ta-bo-nam",
+        "mui-phan-cong-bac",
+        "mui-phan-cong-nam"
       ]
     },
     {
@@ -66,8 +265,7 @@
       "mo_ta": "Quân Nam Hán đại bại, vua Nam Hán phải rút quân. Chiến thắng Bạch Đằng chấm dứt hơn một nghìn năm Bắc thuộc, mở nền độc lập lâu dài.",
       "thuy_trieu": "xuong",
       "hien": [
-        "song",
-        "coc-lo",
+        "bai-coc",
         "co-thang"
       ]
     }

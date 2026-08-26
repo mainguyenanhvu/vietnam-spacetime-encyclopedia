@@ -17,18 +17,10 @@ type XungDot = "ngoai-xam" | "noi-chien";
 
 // Khoá nhóm phần tử SVG bật/tắt theo bước. KHÔNG còn là union cứng: với sa đồ
 // `sa_do_kieu: "tong-quat"` khoá chính là `phan_tu[].id` do dữ liệu quyết định,
-// nên soạn một sa đồ mới chỉ còn là viết JSON. Sa đồ Bạch Đằng 938 (không có
-// trường `sa_do_kieu`) vẫn dùng bộ khoá riêng chôn trong buildBachDangSvg().
+// nên soạn một sa đồ mới chỉ còn là viết JSON. 240/240 hồ sơ trận nay đều là
+// tong-quat — bản vẽ tay riêng của Bạch Đằng 938 đã gỡ ngày 2026-08-26.
 type LayerKey = string;
 
-// Mũi tên hành quân của RIÊNG sa đồ Bạch Đằng — được vẽ bằng hiệu ứng "đang
-// tiến" lần đầu hiện ra trong phiên xem, xem applyStep()/triggerArrowDraw().
-// Sa đồ tổng quát tự suy ra bộ này từ `phan_tu[].kieu === "mui-ten"`.
-const BACH_DANG_MUI_TEN: ReadonlySet<string> = new Set([
-  "mui-nhu-dich",
-  "mui-phan-cong-trai",
-  "mui-phan-cong-phai",
-]);
 // Animation stroke-dashoffset tốn paint (không compositor-only) — giới hạn
 // số mũi tên chạy đồng thời trong một lần chuyển bước.
 const ARROW_BUDGET_PER_TRANSITION = 2;
@@ -232,7 +224,7 @@ let eraFilter = "all";
 // hiện tại — chỉ chạy lần đầu hiện, tránh nhấp nháy khi bấm tới-lui nhiều lần.
 let arrowsAnimated = new Set<string>();
 // Bộ khoá mũi tên của trận đang mở, đặt một lần lúc dựng Màn B.
-let muiTenKeys: ReadonlySet<string> = BACH_DANG_MUI_TEN;
+let muiTenKeys: ReadonlySet<string> = new Set();
 // ── Trạng thái hiệu ứng «như phim/game» ──────────────────────────────────
 // Hẹn giờ tự phát các bước (nút ▶ Phát). Mọi thao tác tay đều dừng nó.
 let playTimer: number | null = null;
@@ -393,8 +385,8 @@ function nhamNhayVt(doan: string): string {
 //
 // Hoạ tiết + đầu mũi tên là kênh phân biệt phe KHÔNG PHẢI MÀU: cặp
 // --dung-chu/--sai-chu nhìn gần như một với người mù màu đỏ–lục. Bốn ký hiệu
-// đầu giữ NGUYÊN nội dung cũ của buildBachDangSvg(); hai ký hiệu cuối chỉ sa
-// đồ tổng quát dùng tới, thừa ra trong sa đồ Bạch Đằng cũng vô hại.
+// đầu vốn thuộc bản vẽ tay Bạch Đằng, giữ nguyên khi gỡ bản đó vì trình dựng
+// tổng quát dùng lại y hệt (hoạ tiết phe, đầu mũi tên, chuyển sắc chiều sâu).
 function saDoDefs(): string {
   return `<defs>
       <!-- Chiều sâu dựng bằng CHUYỂN SẮC, không bằng thêm chi tiết: hai đầu
@@ -448,120 +440,6 @@ function saDoDefs(): string {
         <line x1="4" y1="1" x2="4" y2="17" stroke="var(--sd-doi-chu)" stroke-width="4" stroke-linecap="round"/>
       </marker>
     </defs>`;
-}
-
-// ── Trình dựng SVG — Bạch Đằng 938 ───────────────────────────────────────
-
-const STAKE_XS = [360, 390, 420, 450, 480, 510, 540];
-
-function exposedStakes(): string {
-  return STAKE_XS.map(
-    (x) =>
-      `<g transform="translate(${x},0)"><line x1="0" y1="196" x2="0" y2="288" stroke="var(--luu-chu)" stroke-width="4" stroke-linecap="round"/><path d="M-7,202 L0,180 L7,202 Z" fill="var(--luu-chu)"/></g>`,
-  ).join("");
-}
-
-function submergedStakes(): string {
-  return STAKE_XS.map(
-    (x) =>
-      `<g transform="translate(${x},0)"><line x1="0" y1="252" x2="0" y2="286" stroke="var(--luu-chu)" stroke-width="4" stroke-linecap="round"/></g>`,
-  ).join("");
-}
-
-function boat(x: number, y: number, rot: number, broken: boolean): string {
-  return `<g transform="translate(${x},${y}) rotate(${rot})">
-    <path class="sd-hull" d="M-26,6 Q0,24 26,6 L20,-2 L-20,-2 Z" fill="var(--sd-doi-chu)"/>
-    <line class="sd-mast" x1="0" y1="-2" x2="0" y2="-26" stroke="var(--sd-doi-chu)" stroke-width="3"/>
-    <path class="sd-sail" d="M3,-24 L20,-6 L3,-6 Z" fill="var(--sd-nen-bo)"/>
-    ${broken ? `<path class="sd-crack" d="M-8,4 L-2,-2 L3,7 L8,-2" fill="none" stroke="var(--sd-doi-chu)" stroke-width="2"/>` : ""}
-  </g>`;
-}
-
-function troop(x: number, y: number): string {
-  return `<g transform="translate(${x},${y})"><circle cx="0" cy="0" r="6" fill="var(--sd-ta-chu)"/><line x1="7" y1="-12" x2="12" y2="9" stroke="var(--sd-ta-chu)" stroke-width="2.5" stroke-linecap="round"/></g>`;
-}
-
-/** Vùng kiểm soát — hoạ tiết gạch chéo (ta) / ca-rô (đối phương) là kênh
- *  phân biệt CHÍNH, không phải màu. Hai <rect> chồng: nền mờ (thông tin phụ,
- *  không tự thân mang nghĩa) + hoạ tiết (thông tin chính). */
-function zone(x: number, y: number, w: number, h: number, side: "ta" | "doi"): string {
-  const nen = side === "ta" ? "var(--sd-ta-nen)" : "var(--sd-doi-nen)";
-  const hatch = side === "ta" ? "url(#sd-hatch-ta)" : "url(#sd-hatch-doi)";
-  return `<g class="sd-zone" data-side="${side}" aria-hidden="true">
-    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="${nen}" opacity="0.4"/>
-    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="${hatch}"/>
-  </g>`;
-}
-
-function buildBachDangSvg(): string {
-  const fleet =
-    boat(630, 232, 0, false) + boat(712, 224, -5, false) + boat(792, 242, 4, false);
-  const stranded =
-    boat(398, 252, 26, true) + boat(464, 244, -20, true) + boat(432, 266, 44, true);
-  const topTroops = [120, 190, 260, 330].map((x) => troop(x, 118)).join("");
-  const botTroops = [120, 190, 260, 330].map((x) => troop(x, 352)).join("");
-
-  return `<svg class="sd-svg" viewBox="0 0 900 470" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Sa đồ minh hoạ trận Bạch Đằng 938">
-    ${saDoDefs()}
-
-    <rect class="sd-bank" x="0" y="0" width="900" height="175" fill="var(--sd-nen-bo)"/>
-    <rect class="sd-bank" x="0" y="295" width="900" height="175" fill="var(--sd-nen-bo)"/>
-    <text class="sd-geo-label" x="866" y="240" text-anchor="end" font-size="15" fill="var(--chu-mem)">Biển →</text>
-    <text class="sd-geo-label" x="20" y="240" font-size="15" fill="var(--chu-mem)">← Thượng nguồn</text>
-    <text class="sd-note" x="450" y="456" text-anchor="middle" font-size="13" fill="var(--chu-mem)">Sa đồ minh hoạ — không theo tỉ lệ</text>
-
-    <g class="sd-layer" data-key="song">
-      <rect class="sd-riverbed" x="0" y="175" width="900" height="120" fill="var(--sd-nen-song-sau)"/>
-      <rect id="battle-water" class="sd-water" x="0" y="175" width="900" height="120" fill="var(--sd-nen-song)" opacity="0.75"/>
-      <path class="sd-wave" d="M40,206 q24,-8 48,0 t48,0 t48,0" fill="none" stroke="var(--sd-nen-song-sau)" stroke-width="2" opacity="0.6"/>
-      <path class="sd-wave" d="M300,268 q24,-8 48,0 t48,0 t48,0" fill="none" stroke="var(--sd-nen-song-sau)" stroke-width="2" opacity="0.6"/>
-    </g>
-
-    <g class="sd-layer" data-key="coc-ngam" opacity="0.5">${submergedStakes()}</g>
-
-    <g class="sd-layer" data-key="coc-lo">${exposedStakes()}</g>
-
-    <g class="sd-layer" data-key="quan-ta-mai-phuc">
-      ${zone(60, 15, 330, 150, "ta")}
-      ${zone(60, 305, 330, 150, "ta")}
-      ${topTroops}${botTroops}
-      <text class="sd-caption" x="120" y="100" font-size="13" fill="var(--sd-ta-chu)">Quân ta mai phục</text>
-    </g>
-
-    <g class="sd-layer" data-key="thuyen-dich">
-      ${zone(560, 190, 310, 95, "doi")}
-      ${fleet}
-      <text class="sd-caption" x="712" y="200" text-anchor="middle" font-size="13" fill="var(--sd-doi-chu)">Thuyền Nam Hán</text>
-    </g>
-
-    <g class="sd-layer" data-key="mui-nhu-dich">
-      <path class="sd-arrow" d="M604,150 C544,176 502,200 482,216" fill="none" stroke="var(--sd-ta-chu)" stroke-width="4" marker-end="url(#sd-arrow-ta)"/>
-      <text class="sd-caption" x="560" y="140" text-anchor="middle" font-size="13" fill="var(--sd-ta-chu)">Nhử vào bãi cọc</text>
-    </g>
-
-    <g class="sd-layer" data-key="thuyen-mac-can">
-      ${zone(345, 215, 210, 65, "doi")}
-      ${stranded}
-      <text class="sd-caption" x="432" y="300" text-anchor="middle" font-size="13" fill="var(--sd-doi-chu)">Thuyền vỡ, mắc cạn</text>
-    </g>
-
-    <g class="sd-layer" data-key="mui-phan-cong-trai">
-      ${zone(60, 15, 400, 150, "ta")}
-      <path class="sd-arrow" d="M236,108 C300,150 360,200 412,232" fill="none" stroke="var(--sd-ta-chu)" stroke-width="5" marker-end="url(#sd-arrow-ta)"/>
-    </g>
-
-    <g class="sd-layer" data-key="mui-phan-cong-phai">
-      ${zone(60, 305, 400, 150, "ta")}
-      <path class="sd-arrow" d="M236,362 C300,320 360,272 412,250" fill="none" stroke="var(--sd-ta-chu)" stroke-width="5" marker-end="url(#sd-arrow-ta)"/>
-    </g>
-
-    <g class="sd-layer" data-key="co-thang" transform="translate(450,92)">
-      <line class="sd-pole" x1="0" y1="0" x2="0" y2="92" stroke="var(--luu-chu)" stroke-width="4"/>
-      <path class="sd-flag" d="M0,4 L54,4 L45,19 L54,34 L0,34 Z" fill="var(--sd-ta-chu)"/>
-      <path d="M22,10 l3,7 7,0 -5.5,4.5 2,7 -6.5,-4.5 -6.5,4.5 2,-7 -5.5,-4.5 7,0 z" fill="var(--nhan-sang)"/>
-      <text class="sd-caption" x="0" y="-8" text-anchor="middle" font-size="14" fill="var(--sd-ta-chu)">Toàn thắng</text>
-    </g>
-  </svg>`;
 }
 
 // ── Trình dựng SVG TỔNG QUÁT — chạy bằng dữ liệu ─────────────────────────
@@ -1194,19 +1072,15 @@ function applyStep(content: HTMLElement): void {
     }
   }
 
-  // Mực nước theo thuỷ triều: triều lên ngập cọc, triều xuống thì rút. Chỉ sa
-  // đồ sông nước khai `thuy_trieu`; sa đồ trên bộ bỏ trống và bỏ qua cả khối.
+  // Mực nước theo thuỷ triều: triều lên sông nở rộng ngập cọc, triều xuống thì
+  // rút. Chỉ sa đồ sông nước khai `thuy_trieu`; sa đồ trên bộ bỏ trống và bỏ
+  // qua cả khối. Bề rộng do CSS lo (`.sd-svg.tide-len/.tide-xuong .sd-song-*`),
+  // đo trên Chrome thật: mép sông 40px khi triều lên, 22px khi triều xuống.
   if (step.thuy_trieu) {
     const svg = content.querySelector(".sd-svg");
     if (svg) {
       svg.classList.toggle("tide-len", step.thuy_trieu === "len");
       svg.classList.toggle("tide-xuong", step.thuy_trieu === "xuong");
-    }
-    const water = content.querySelector<SVGRectElement>("#battle-water");
-    if (water) {
-      const len = step.thuy_trieu === "len";
-      water.setAttribute("y", len ? "175" : "214");
-      water.setAttribute("height", len ? "120" : "81");
     }
   }
 
@@ -1272,10 +1146,11 @@ function renderFullDetail(content: HTMLElement): void {
       : "";
   const xungDot: XungDot = b.loai_xung_dot === "noi-chien" ? "noi-chien" : "ngoai-xam";
 
-  const tongQuat = b.sa_do_kieu === "tong-quat";
-  muiTenKeys = tongQuat
-    ? new Set((b.phan_tu ?? []).filter((p) => p.kieu === "mui-ten").map((p) => p.id))
-    : BACH_DANG_MUI_TEN;
+  // Mọi sa đồ nay chạy bằng trình dựng tổng quát; `validate_battles.mjs` chặn
+  // hồ sơ nào không khai `sa_do_kieu: "tong-quat"` nên không còn nhánh rẽ.
+  muiTenKeys = new Set(
+    (b.phan_tu ?? []).filter((p) => p.kieu === "mui-ten").map((p) => p.id),
+  );
   const coThuyTrieu = b.buoc.some((s) => !!s.thuy_trieu);
 
   const stepRail = b.buoc
@@ -1302,7 +1177,7 @@ function renderFullDetail(content: HTMLElement): void {
     </header>
 
     <div class="sd-stage-wrap">
-      ${tongQuat ? buildTongQuatSvg(b) : buildBachDangSvg()}
+      ${buildTongQuatSvg(b)}
       <div class="sd-step-rail" role="tablist" aria-label="Các bước diễn biến">${stepRail}</div>
     </div>
 
@@ -1316,7 +1191,7 @@ function renderFullDetail(content: HTMLElement): void {
       <span id="battle-step-count" class="sd-step-count"></span>
       <button id="battle-next" type="button" class="sd-nav">Bước sau ▶</button>
       ${b.buoc.length > 1 ? `<button id="battle-play" type="button" class="sd-nav sd-play" aria-pressed="false" title="Tự chuyển bước 5 giây một lần">▶ Phát</button>` : ""}
-      ${tongQuat ? `<button id="battle-cam" type="button" class="sd-nav sd-cam-nut" aria-pressed="true" title="Camera tự thu phóng vào cụm diễn biến của bước">🎬 Thu phóng</button>` : ""}
+      <button id="battle-cam" type="button" class="sd-nav sd-cam-nut" aria-pressed="true" title="Camera tự thu phóng vào cụm diễn biến của bước">🎬 Thu phóng</button>
       ${coThuyTrieu ? `<span id="battle-tide" class="tide-indicator"></span>` : ""}
     </div>
 

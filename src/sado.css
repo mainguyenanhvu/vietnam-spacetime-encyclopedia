@@ -51,9 +51,9 @@
    quiz/olympia và --nhan cho badge, cả hai trên nền sáng hơn nên vẫn đạt.
    Hai tổ hợp còn lại (người lớn · ngoại xâm 5,06/4,91 — trẻ em · nội chiến
    4,97/4,67) đã đạt, để nguyên.
-   Halo ở .sd-caption giữ nguyên nhưng nay chỉ là lớp phụ: công thức tương phản
-   phẳng KHÔNG mô hình hoá được halo, nên lấy halo làm bằng chứng đạt ngưỡng là
-   sai — đợt trước đã mắc đúng lỗi đó.
+   Halo quanh chữ chỉ là lớp phụ: công thức tương phản phẳng KHÔNG mô hình hoá
+   được halo, nên lấy halo làm bằng chứng đạt ngưỡng là sai — đợt trước đã mắc
+   đúng lỗi đó.
    Quy tắc cascade ở đây: quy tắc nội chiến bên trên đặt biến trên .sd-detail
    nên thắng :root cho chế độ trẻ em; còn ca người lớn · nội chiến phải nâng
    riêng độ đặc hiệu mới đè được nó. */
@@ -225,17 +225,6 @@
   border-radius: var(--bo-nho);
   background: var(--sd-nen-song);
 }
-/* Halo nhãn — kỹ thuật bản đồ chuẩn cho chữ đè lên nền đổi màu theo chế độ.
-   Đo bằng công cụ (xem báo cáo): --sd-ta-chu trên --sd-nen-bo chỉ đạt 4,38:1
-   ở chế độ trẻ em (dưới ngưỡng 4,5:1 cho chữ, dù vẫn đạt 3:1 phi văn bản).
-   Viền --mat quanh glyph nâng tương phản thật khi hiển thị — không thay đổi
-   token màu ta/đối đang dùng nhất quán cho mũi tên/vùng/chú giải. */
-.sd-caption {
-  paint-order: stroke fill;
-  stroke: var(--mat);
-  stroke-width: 3px;
-  stroke-linejoin: round;
-}
 .sd-layer {
   transition: opacity var(--dur-vua) var(--ease);
 }
@@ -256,10 +245,10 @@
 }
 
 /* ── Sa đồ TỔNG QUÁT (sa_do_kieu: "tong-quat") ─────────────────────────────
-   Không class nào dưới đây trùng tên với class của sa đồ Bạch Đằng vẽ tay
-   (.sd-bank/.sd-water/.sd-wave/.sd-hull/.sd-sail/.sd-caption/.sd-note…) —
-   cố ý, để một luật CSS mới không lặng lẽ đè lên thuộc tính trình bày inline
-   của sa đồ cũ (attribute trình bày thua MỌI luật CSS). */
+   Trình dựng DUY NHẤT từ 2026-08-26: bản vẽ tay riêng của Bạch Đằng 938 đã gỡ
+   khỏi battle.ts, và các class chỉ nó dùng (.sd-bank/.sd-water/.sd-wave/
+   .sd-hull/.sd-sail/.sd-caption/#battle-water) gỡ theo. Hậu tố `-tq` giữ
+   nguyên: đổi tên là chạm vào mọi khoá dữ liệu và mọi phép đo đã ghi. */
 
 .sd-svg-tq {
   background: var(--sd-nen-bo);

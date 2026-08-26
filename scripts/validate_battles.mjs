@@ -38,11 +38,24 @@ for (const file of files) {
   if (!b.ten || !b.nam) fail(w, "thiếu ten/nam");
   if (!b.sa_do_ghi_chu || !/không theo tỉ lệ/i.test(b.sa_do_ghi_chu))
     fail(w, "sa_do_ghi_chu phải nêu rõ «minh hoạ, KHÔNG theo tỉ lệ địa lý»");
+  // Chỉ còn MỘT trình dựng. Bản vẽ tay riêng của bach-dang-938 đã gỡ khỏi
+  // battle.ts ngày 2026-08-26, nên hồ sơ thiếu trường này sẽ render RỖNG mà
+  // không có lỗi nào trong console — đúng loại hỏng câm mà cổng phải bắt.
+  if (b.sa_do_kieu !== "tong-quat")
+    fail(w, `sa_do_kieu phải là "tong-quat" (đang: ${JSON.stringify(b.sa_do_kieu)})`);
+  const phanTuIds = new Set((b.phan_tu ?? []).map((p) => p.id));
   if (!Array.isArray(b.buoc) || b.buoc.length === 0) fail(w, "thiếu buoc[]");
   else
     for (const s of b.buoc) {
       if (!s.tieu_de || !s.mo_ta) fail(w, `bước ${s.id}: thiếu tieu_de/mo_ta`);
       if (!Array.isArray(s.hien)) fail(w, `bước ${s.id}: thiếu hien[]`);
+      // Khoá trong `hien` trỏ vào `phan_tu[].id`. Gõ sai một khoá thì phần tử
+      // đó lặng lẽ không hiện: dữ liệu hợp lệ, không lỗi console, chỉ là một
+      // bước sa đồ thiếu quân. Không cổng nào bắt được cho tới lượt này.
+      else
+        for (const k of s.hien)
+          if (!phanTuIds.has(k))
+            fail(w, `bước ${s.id}: hien "${k}" không có trong phan_tu[]`);
     }
   if (Array.isArray(b.lien_quan_tinh))
     for (const s of b.lien_quan_tinh)
