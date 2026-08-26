@@ -23,6 +23,25 @@ import { execFileSync } from "node:child_process";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
+/**
+ * Bảng thực thể HTML có TÊN; thực thể SỐ (&#237; &#xED;) giải bằng công thức
+ * trong `tai()`.
+ *
+ * 🔴 Vì sao phải giải ĐỦ chứ không chỉ &nbsp;/&amp;: một số toà soạn mã hoá cả
+ * chữ có dấu (baochinhphu.vn, baocaobang.vn trả «N&ocirc;ng Văn V&acirc;n»).
+ * Không giải thì văn bản trang đọc ra là rác, và cổng báo «không thấy nguyên
+ * văn» cho một trích dẫn hoàn toàn trung thực — tố oan người soạn.
+ */
+const TEN = {
+  nbsp: " ", amp: "&", lt: "<", gt: ">", quot: '"', apos: "'",
+  ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’",
+  laquo: "«", raquo: "»", hellip: "…", ndash: "–", mdash: "—", deg: "°",
+  agrave: "à", aacute: "á", acirc: "â", atilde: "ã",
+  egrave: "è", eacute: "é", ecirc: "ê", igrave: "ì", iacute: "í",
+  ograve: "ò", oacute: "ó", ocirc: "ô", otilde: "õ",
+  ugrave: "ù", uacute: "ú", yacute: "ý", ntilde: "ñ", ccedil: "ç",
+};
+
 const GOC = new URL("..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
 const DIR = join(GOC, "public", "data", "battles");
 const loc = process.argv[2] ?? "";
@@ -70,8 +89,9 @@ function tai(url) {
     t = chuan(html.replace(/<script[\s\S]*?<\/script>/gi, " ")
       .replace(/<style[\s\S]*?<\/style>/gi, " ")
       .replace(/<[^>]+>/g, " ")
-      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"')
-      .replace(/&#39;|&apos;/g, "'").replace(/&ldquo;|&rdquo;/g, '"'));
+      .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+      .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+      .replace(/&([a-zA-Z]+);/g, (m, t) => TEN[t.toLowerCase()] ?? m));
   } catch { t = ""; }
   kho.set(url, t);
   return t;
