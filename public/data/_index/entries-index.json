@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 6042,
-    "tong_co_toa_do": 3041,
+    "tong_muc": 6047,
+    "tong_co_toa_do": 3046,
     "so_nhom_trung_ten": 835,
-    "so_cap_trung_toa_do": 886,
+    "so_cap_trung_toa_do": 887,
     "ngay_sinh": "2026-08-26"
   },
   "entries": [
@@ -34116,6 +34116,71 @@
       "loai": "ah-lao-dong",
       "lat": 9.6025,
       "lon": 105.98,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-truyen-nghe-an",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Truyện",
+      "ten_chuan": "me viet nam anh hung nguyen thi truyen",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 18.68,
+      "lon": 105.65,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dang-thi-thu-hoai-an",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Thu",
+      "ten_chuan": "me viet nam anh hung dang thi thu",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 14.35,
+      "lon": 108.02,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "le-thi-kinh-thanh-hoa",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Kính",
+      "ten_chuan": "me viet nam anh hung le thi kinh",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 19.75,
+      "lon": 105.65,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-tit-soc-son",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Tít",
+      "ten_chuan": "me viet nam anh hung nguyen thi tit",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 21.25,
+      "lon": 105.9,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "kieu-thi-lan-quoc-oai",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Kiều Thị Lạn",
+      "ten_chuan": "me viet nam anh hung kieu thi lan",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 20.98,
+      "lon": 105.55,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -97604,6 +97669,19 @@
         "file": "timeline/moc-lich-su.json",
         "id": "tran-ly-thuong-kiet-nam-chinh-1069",
         "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "le-thi-kinh-thanh-hoa",
+        "ten": "Mẹ Việt Nam Anh hùng Lê Thị Kính"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-nguyen-thanh-nguyen-ky-1379",
+        "ten": "Khởi nghĩa Nguyễn Thanh, Nguyễn Kỵ ở Thanh Hóa (1379)"
       },
       "khoang_cach_m": 0
     },
