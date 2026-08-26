@@ -294,6 +294,33 @@ Kết quả ở `docs/backlog/lo{1,2,3}-ket-qua.json` và `lo{1,2,3}-khong-tra-d
 
 ---
 
+### 3.x Soát lại nguồn — kết quả quét toàn kho 2026-08-26
+
+Đã quét **3.350 lượt dẫn nguồn** trong mọi lớp phủ, hỏi đúng một câu: **tên trong mục có xuất hiện trên trang nguồn không** (không phải «trang có tải được không» — xem bẫy 9).
+
+| Nhóm | Lượt dẫn | Xanh | Nghi | Không tải được |
+|---|---|---|---|---|
+| Lớp về **người** | 1.095 | **904 (83%)** | 67 | 124 |
+| Lớp **không phải người** | 2.255 | 1.391 (62%) | 549 | 315 |
+
+⚠️ **Con số của lớp không phải người gần như vô nghĩa** — phép đo là «tên NGƯỜI có trên trang không», mà mục ở đó là địa danh, lễ hội, di tích, trận đánh. `truyen-thuyet-dan-gian` ra 64/81 «nghi» chỉ vì tên truyền thuyết không phải tên người. **Đừng đọc con số đó như tỉ lệ lỗi.**
+
+**Lớp anh hùng** (408 lượt dẫn): 323 xanh · 22 nghi · 63 không tải được.
+- Trong 63 «không tải được», **39 là `qdnd.vn`** — nhánh chính bị chặn 302 lặp từ môi trường này (bẫy ở mục 6), **không phải nguồn chết**. Số còn lại rải rác.
+- Soi lại 22 «nghi» bằng phép bóc danh xưng LẶP: **6 là khuyết điểm phép đo** (danh xưng kép «Trung tướng, Anh hùng LLVTND …» chỉ bóc được một tầng; tên tập thể như «Đại đội nữ dân quân Ngư Thuỷ» thì hỏi tên người là vô nghĩa), **16 đáng xem thật**.
+
+**16 mục lớp anh hùng cần soát nguồn** — tất cả đều là mục CŨ, không phải mục thêm trong đợt 2026-08-26:
+
+- `ho-thi-cuc` (hatinh.gov.vn) và `sung-dung-lu` (tuyengiao.hagiang.gov.vn): trang trả về **gần như rỗng** (3 và 27 ký tự). Nguồn không đọc được, không phải tên sai.
+- `kpa-klong`: mục ghi tên dạng «Kơ Pa Kơ Lơng» còn nguồn viết **«Kpă Klơng»** — cùng người, khác cách phiên âm. Nên thống nhất theo nguồn nhà nước.
+- `tran-thi-sanh`, `le-thi-tam-trieu-phong`, `dang-thi-en`: cùng dẫn một trang `baotangphunu.com` (5.066 ký tự), **không tên nào có trên trang**. Nghi trang đã đổi nội dung — kiểm cả ba cùng lúc.
+- `nguyen-luu`, `nguyen-thanh-ut`: dẫn bài về **Tiểu đoàn 307** (đơn vị) chứ không phải bài về cá nhân — bài không nêu tên họ. Đây là điểm yếu nguồn thật: mục về người mà dẫn bài về đơn vị.
+- Còn lại: `nguyen-viet-ninh`, `pham-phi-hung`, `vo-bam`, `pham-huy-nghe`, `truong-muc`, `hoang-van-luong-kinh-phat`, `huynh-thi-tan-ma-tam` (2 nguồn).
+
+Dụng cụ ở scratchpad: `quet_toan_bo_nguon.mjs` (quét), `phan_tich_quet.mjs` (tách theo lớp), `soi_22.mjs` (lọc khuyết điểm phép đo). Chạy lại được sau mỗi đợt bổ sung.
+
+---
+
 ## 4. Ranh giới lịch sử
 
 ### ✅ 2026-08-25 — LỐI RA cho bài toán «không có đường biên»: tô VÙNG thay vì vẽ ĐƯỜNG
