@@ -538,10 +538,33 @@ có địa hình theo nguồn; vá class chết `.tide-len/.tide-xuong`. Nghiệ
 thật từng phần, ảnh chụp lưu scratchpad phiên.
 
 Còn lại:
-- [ ] **Trích văn tịch cho ~210 trận còn lại.** Mạch đã chứng minh với 30 trận
-  đầu; brief mẫu nằm ở lịch sử phiên 2026-08-25. Kỷ luật: sách không rõ ghi
-  «Không rõ» kèm chú thích, KHÔNG bịa tên sách/số quyển; đoạn chỉ thấy trên
-  nguồn cấm thì bỏ. **L**
+- [ ] **Trích văn tịch — 47/240 trận · 92 đoạn** (2026-08-26; đầu chiến dịch 30/60).
+  Kỷ luật: sách không rõ ghi «Không rõ» kèm chú thích, KHÔNG bịa tên sách/số
+  quyển; đoạn chỉ thấy trên nguồn cấm thì bỏ. **L**
+  
+  🔴 **MẠCH NGUỒN GÃY LÀM ĐÔI — đọc trước khi cử người làm tiếp.** Trước 1428,
+  `mocban.vn` (Trung tâm Lưu trữ quốc gia IV) và Bảo tàng Lịch sử quốc gia
+  **chép nguyên văn** chính sử, có cả *quyển* + *mặt khắc* — lấy trích rất nhanh.
+  Từ Trịnh–Nguyễn trở đi, báo nhà nước chuyển sang **thuật lại**, không đặt
+  nguyên văn trong ngoặc kép. Đo thật 2026-08-26: quét 4 hướng cho lô 1600–1801
+  (Nguyễn Huệ 1786 · Thị Nại 1801 · Luỹ Thầy–sông Gianh · các trận cửa Nhật Lệ)
+  ra **0 đoạn**. Muốn làm lô đó phải ĐỔI LOẠI NGUỒN: văn bia, sắc phong, hồ sơ
+  di tích của Cục Di sản — đừng quét báo điện tử thêm lần nữa.
+  
+  🔧 **Bộ đồ nghề đã có, đừng dựng lại**: `scripts/verify_trich_van_tich.mjs`
+  (cổng nguyên văn, cần mạng, CỐ Ý ngoài `npm run validate`). Ba công cụ tạm ở
+  scratchpad phiên 2026-08-26: `boc_trich.mjs` (bóc mọi đoạn trong ngoặc kép từ
+  HTML thô + ngữ cảnh), `nganhcanh.mjs` (tra đoạn đó thuộc sách nào),
+  `dodo.mjs` (dò điểm gãy khi cổng báo lệch).
+  
+  ⚠️ **10 đoạn CŨ chưa đối chiếu được** (thuộc 30 trận đợt 2026-08-25):
+  `kinh-thanh-hue-that-thu-1885` ×3 · `xo-viet-nghe-tinh-1930` ·
+  `ham-tu-chuong-duong-1285` · `dai-don-chi-hoa-1861` · `tran-cau-giay-1873` ·
+  `nam-ky-khoi-nghia-1940` · `dien-bien-phu-1954` · `bach-dang-981`.
+  Trang nguồn vẫn sống (200 + có nội dung), nên KHÔNG phải lỗi mạng. Đã chẩn
+  đoán 1 ca: `ham-tu-chuong-duong-1285` trích phần *phiên âm Hán–Việt* mà trang
+  danviet được trỏ tới chỉ có bản dịch — tức **URL «Dẫn theo» sai chỗ**, không
+  phải chép sai. Chín ca còn lại chưa dò. **S/M**
 - [x] ~~**`journey.ts` chưa phát `sado:mo-tran`**~~ **XONG 2026-08-26** (`ea2497c`)
   — nút «Xem sa đồ trận này» phát CustomEvent kèm `battle_id`; nghiệm thu Chrome
   thật mở đúng Màn B của `khoi-nghia-hai-ba-trung-40`.
