@@ -538,7 +538,7 @@ có địa hình theo nguồn; vá class chết `.tide-len/.tide-xuong`. Nghiệ
 thật từng phần, ảnh chụp lưu scratchpad phiên.
 
 Còn lại:
-- [ ] **Trích văn tịch — 52/240 trận · 102 đoạn** (2026-08-26; đầu chiến dịch 30/60).
+- [ ] **Trích văn tịch — 60/240 trận · 115 đoạn** (2026-08-26; đầu chiến dịch 30/60).
   Kỷ luật: sách không rõ ghi «Không rõ» kèm chú thích, KHÔNG bịa tên sách/số
   quyển; đoạn chỉ thấy trên nguồn cấm thì bỏ. **L**
   
@@ -562,11 +562,24 @@ Còn lại:
   scratchpad phiên 2026-08-26: `boc_trich.mjs` (bóc mọi đoạn trong ngoặc kép +
   ngữ cảnh), `nganhcanh.mjs` (đoạn đó thuộc sách nào), `dodo.mjs` (dò điểm gãy).
   
-  ⚠️ **5 đoạn cũ còn chưa đối chiếu được** (đợt 2026-08-25): `bach-dang-981` ·
-  `dien-bien-phu-1954` · `ham-tu-chuong-duong-1285` · `nam-ky-khoi-nghia-1940` ·
-  `xo-viet-nghe-tinh-1930`. Trang nguồn vẫn sống. Đã chẩn đoán 1 ca:
-  `ham-tu-chuong-duong-1285` trích *phiên âm Hán–Việt* mà trang danviet được trỏ
-  tới chỉ có bản dịch — **URL «Dẫn theo» sai chỗ**, không phải chép sai. **S**
+  ✅ **Đã đóng: 115/115 đoạn khớp nguyên văn, 0 lệch.** Không trích dẫn nào sai —
+  cả 10 đoạn từng bị báo «lệch» đều là trích dẫn thật, lỗi nằm ở cổng. Cổng đã
+  tự báo động giả **bốn** lần, mỗi lần suýt thành một kết luận sai: (1) trang trả
+  403 kèm body ~700 byte; (2) thực thể HTML không giải mã đủ; (3) dấu chú thích
+  `([1])` xen giữa câu; (4) dấu lược `...` ASCII và dấu `/` xuống dòng câu đối.
+  Tất cả đã vá và ghi lý do ngay trong `verify_trich_van_tich.mjs`.
+  
+  📌 **Mạch nguồn theo thời kỳ — đo thật, dùng để chọn cách tra:**
+  · **trước 1428** — `mocban.vn` + Bảo tàng Lịch sử quốc gia chép NGUYÊN VĂN
+    chính sử kèm *quyển* + *mặt khắc*. Năng suất cao nhất.
+  · **1428–1801** — trang có trích nhưng phần lớn không khớp bước nào của trận.
+    Nút thắt là KHỚP BƯỚC, không phải thiếu nguồn.
+  · **1802–1884** — `mocban.vn` có Đại Nam thực lục nhưng chỉ vài bài nhân vật
+    (Hoàng Diệu, Trương Định). Nhóm khởi nghĩa nội trị phải tra báo tỉnh từng trận.
+  · **1885–1944** — mạch TỐT: văn bản gốc của chính phong trào (dụ, hịch, truyền
+    đơn, thư, lời khai toà án, hồ sơ lưu trữ thuộc địa Pháp).
+  · **1945+ (110 trận, chưa chạm)** — dự kiến là điện, chỉ thị, nhật lệnh, hồi ký
+    tướng lĩnh, Văn kiện Đảng toàn tập. Chưa thử.
 - [x] ~~**`journey.ts` chưa phát `sado:mo-tran`**~~ **XONG 2026-08-26** (`ea2497c`)
   — nút «Xem sa đồ trận này» phát CustomEvent kèm `battle_id`; nghiệm thu Chrome
   thật mở đúng Màn B của `khoi-nghia-hai-ba-trung-40`.
