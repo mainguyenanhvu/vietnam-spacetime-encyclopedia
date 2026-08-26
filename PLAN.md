@@ -502,6 +502,24 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 10. **Bản chuyển đổi tệp `.doc` làm SAI TÊN NGƯỜI.** Danh sách Mẹ VNAH Quảng Bình: công cụ đọc `.doc` trả «Nguyễn Thị Tái / Trần Thị Tiểu / Lê Thị Bản», văn bản gốc là «Nguyễn Thị **Tôi** / Trần Thị **Tiệu** / Lê Thị **Bòn**»; tên xã «Vân Ninh / Vũ Ninh» thật ra là «**Vạn Ninh / Võ Ninh**». Sai tên người là lỗi nặng nhất trong lớp dữ liệu về người. **Cách đúng**: tải tệp về rồi giải mã **UTF-16LE** thẳng từ bản nhị phân (`.doc` cũ là Composite Document File). Chính tệp gốc cũng có hàng hỏng mã — bỏ hàng đó, đừng đoán.
 11. **Cổng dò tên người trên trang nguồn có bốn cách sai, đã trả giá đủ cả bốn**: (a) không giải mã **thực thể HTML có tên** (`&acirc;` `&ecirc;` `&ograve;` — cổng `.gov.vn` dùng đầy) thì chữ Việt thành vô nghĩa; (b) soi **tên hiển thị kèm danh xưng** («Mẹ Việt Nam Anh hùng X») mà nguồn không bao giờ viết liền như vậy; (c) `includes()` khớp **chuỗi con** — «nguyen thi be» nằm lọt trong «nguyen thi ben», hai người khác nhau; (d) phép phụ hỏi «họ có trên trang?» VÀ «tên cuối có trên trang?» rồi và lại — trang danh sách nhiều người thì cả hai đều có ở **hai chỗ khác nhau**. Cổng quá lỏng cho lọt đồ sai; **cổng quá nghiêm tố oan người soạn** — cả hai đều tai hại.
 12. **Bóc dấu tiếng Việt là con dao hai lưỡi.** Nó giúp khớp khi nguồn viết thiếu dấu, nhưng tiếng Việt phân biệt nghĩa BẰNG DẤU: «Tâm» và «Tám», «Tiệu» và «Tiểu» chập làm một sau khi bóc. Cổng dò trùng vì thế phải **báo cho người xét**, tuyệt đối không tự xoá.
+
+13. **Bản đồ sáp nhập tỉnh 2025 → tên miền báo còn sống.** Sau sáp nhập, báo tỉnh bị gộp thường **mất kho bài cũ** hoặc **đổi chủ tên miền** (bẫy 9). Bảng dưới là kết quả dò thật trong phiên 2026-08-26 — dùng luôn, đừng dò lại:
+
+    | Tỉnh cũ | Nay thuộc | Tên miền còn dùng được |
+    |---|---|---|
+    | Bến Tre · Trà Vinh · Vĩnh Long | **Vĩnh Long** | `baovinhlong.com.vn` · Bến Tre thêm `dongkhoi.baovinhlong.vn` |
+    | Kon Tum · Quảng Ngãi | **Quảng Ngãi** | `baoquangngai.vn` |
+    | Kiên Giang · An Giang | **An Giang** | `baoangiang.com.vn` · `congan.angiang.gov.vn` |
+    | Bà Rịa – Vũng Tàu · Bình Dương · TP.HCM | **TP. Hồ Chí Minh** | `sggp.org.vn` |
+    | Phú Yên · Đắk Lắk | **Đắk Lắk** | `phuyen.baodaklak.vn` |
+    | Quảng Nam · Đà Nẵng | **Đà Nẵng** | `baodanang.vn` |
+    | Bình Định · Gia Lai | **Gia Lai** | `baogialai.com.vn` |
+    | Bình Thuận · Lâm Đồng | **Lâm Đồng** | `baolamdong.vn` (tìm kèm «Bình Thuận (cũ)») |
+    | Hoà Bình · Phú Thọ | **Phú Thọ** | ⚠️ `baohoabinh.com.vn` ĐÃ ĐỔI CHỦ — xem mục 6 |
+    | Long An · Tây Ninh | **Tây Ninh** | `baotayninh.vn` · `congan.tayninh.gov.vn` (đăng chéo cả bài Long An) |
+    | Bạc Liêu · Cà Mau | **Cà Mau** | `baocamau.vn` · ⚠️ `congan.camau.gov.vn` phục vụ nội dung **Bạc Liêu** |
+
+    ⚠️ **Hệ quả cho toạ độ, không chỉ cho nguồn**: sau sáp nhập, **tên xã trùng nhau giữa hai nửa tỉnh**. «Tân Thạnh», «Hoà Hưng», «Vĩnh Hoà» ở tỉnh An Giang mới có thể thuộc An Giang cũ hoặc Kiên Giang cũ. Không xác định được thì **đặt toạ độ ở cấp tỉnh và ghi rõ**, đừng đoán xã — đoán sai là đặt người lên bản đồ ở chỗ họ chưa từng sống.
 9. **Overpass API**: `area["name"=...]` dễ 504, phải geocode trước. Dùng bbox + mirror `overpass.kumi.systems` ổn hơn. Một con đường thật = **nhiều** `way` segment, phải gộp theo tên + khu vực.
 10. 🔴 **Ba lần cổng kiểm tra tự nói sai trong một đợt.** (a) Đo byte GeoJSON lúc khởi động bỏ sót vì MapLibre nạp trong **web worker**, miền `Network` của CDP gắn vào page target không thấy. (b) Lọc chuỗi `/font/` lỗi thời sau khi tự host đổi path thành `/fonts/` — cổng mất tác dụng đúng lúc cần nhất. (c) Cờ `__tuNguyen` phân biệt nhả context sai vì three.js gọi `loseContext()` ngầm qua extension. **Một cổng xanh mà chưa tự chứng minh bằng một ca dương tính biết trước thì không đáng tin hơn việc không có cổng.**
 11. **Dedup tự thân của agent không đủ.** Luôn cần script gộp đối chiếu chéo toàn bộ file dry-run trước khi nạp — đã bắt được lỗi khác hoa/thường và trùng toạ độ khít mà 4 vòng tự kiểm của agent đều lọt.

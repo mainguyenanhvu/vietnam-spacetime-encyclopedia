@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 6076,
-    "tong_co_toa_do": 3075,
+    "tong_muc": 6081,
+    "tong_co_toa_do": 3080,
     "so_nhom_trung_ten": 835,
-    "so_cap_trung_toa_do": 894,
+    "so_cap_trung_toa_do": 898,
     "ngay_sinh": "2026-08-26"
   },
   "entries": [
@@ -34558,6 +34558,71 @@
       "loai": "me-vnah",
       "lat": 9.25,
       "lon": 105.15,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bui-thi-day-ba-ria",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Bùi Thị Đay",
+      "ten_chuan": "me viet nam anh hung bui thi day",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 10.5,
+      "lon": 107.17,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-huu-tai-tphcm",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hữu Tài",
+      "ten_chuan": "me viet nam anh hung nguyen thi huu tai",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 10.78,
+      "lon": 106.7,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-dao-tan-thanh-an-giang",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Đào",
+      "ten_chuan": "me viet nam anh hung nguyen thi dao",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 10.02,
+      "lon": 105.08,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-thi-hoa-hung",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Thi",
+      "ten_chuan": "me viet nam anh hung tran thi thi",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 10.02,
+      "lon": 105.08,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vo-thi-xung-vinh-hoa",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Võ Thị Xứng",
+      "ten_chuan": "me viet nam anh hung vo thi xung",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 10.02,
+      "lon": 105.08,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -98077,6 +98142,45 @@
     },
     {
       "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "nguyen-thi-dao-tan-thanh-an-giang",
+        "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Đào"
+      },
+      "b": {
+        "file": "overlays/nghe-nhan-di-san.json",
+        "id": "ly-van-ngoan-minh-ngoan",
+        "ten": "Lý Văn Ngoan (Minh Ngoan) — NNƯT Đờn ca tài tử"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-thi-thi-hoa-hung",
+        "ten": "Mẹ Việt Nam Anh hùng Trần Thị Thi"
+      },
+      "b": {
+        "file": "overlays/nghe-nhan-di-san.json",
+        "id": "ly-van-ngoan-minh-ngoan",
+        "ten": "Lý Văn Ngoan (Minh Ngoan) — NNƯT Đờn ca tài tử"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "vo-thi-xung-vinh-hoa",
+        "ten": "Mẹ Việt Nam Anh hùng Võ Thị Xứng"
+      },
+      "b": {
+        "file": "overlays/nghe-nhan-di-san.json",
+        "id": "ly-van-ngoan-minh-ngoan",
+        "ten": "Lý Văn Ngoan (Minh Ngoan) — NNƯT Đờn ca tài tử"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
         "file": "overlays/ban-do-co.json",
         "id": null,
         "ten": "Côn Đảo"
@@ -102916,6 +103020,19 @@
         "file": "overlays/anh-hung-can-hien-dai.json",
         "id": "le-thi-thu-nguyet-chim-sat",
         "ten": "Lê Thị Thu Nguyệt (Chim sắt)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "buu-dien-trung-tam-sai-gon",
+        "ten": "Bưu điện Trung tâm Sài Gòn"
+      },
+      "khoang_cach_m": 27
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "nguyen-thi-huu-tai-tphcm",
+        "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hữu Tài"
       },
       "b": {
         "file": "overlays/di-tich-quoc-gia.json",
