@@ -37,6 +37,7 @@ import {
   type OverlayConf,
 } from "./overlays-config";
 import { initChipBar } from "./chip-bar";
+import { initBanDoCo } from "./bandoco";
 import { initLienKetTrangThai } from "./lien-ket-trang-thai";
 import { initHuongDan } from "./huong-dan";
 import { initTuKho } from "./tu-kho-tre-em";
@@ -490,46 +491,13 @@ function initSongNui(): void {
 }
 
 // ---------------------------------------------------------------------------
-// #6 — Bản đồ cổ Taberd 1838 (overlay georef) + Animation Nam tiến
+// #6 — Bản đồ cổ georef + Animation Nam tiến
 // ---------------------------------------------------------------------------
 
-// Bản «An Nam Đại Quốc Họa Đồ» (Taberd 1838, phạm vi công cộng) — ghi rõ
-// "Paracel seu Cát Vàng" → giá trị chủ quyền. Phủ ảnh lên bản đồ tương tác qua
-// image source căn 4 góc theo lưới kinh–vĩ đọc từ bản scan (kinh tuyến
-// Greenwich; mốc 104°Đ ở rìa tây gần Vân Nam). Toạ độ góc là mức XẤP XỈ — nên
-// tinh chỉnh trên production (đối chiếu bờ biển thực). Chèn raster DƯỚI lớp nhãn
-// đầu tiên nên mọi nhãn tự render (tỉnh, sông–núi, chủ quyền) vẫn nằm trên cùng.
-const TABERD_URL =
-  "https://upload.wikimedia.org/wikipedia/commons/d/dd/An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg";
-// [Tây-Bắc, Đông-Bắc, Đông-Nam, Tây-Nam], mỗi góc = [lon, lat].
-const TABERD_CORNERS: [
-  [number, number],
-  [number, number],
-  [number, number],
-  [number, number],
-] = [
-  [101.6, 23.6],
-  [111.4, 23.6],
-  [111.4, 7.6],
-  [101.6, 7.6],
-];
-let taberdOpacity = 0.6;
-function applyTaberd(on: boolean): void {
-  if (on && !map.getSource("taberd")) {
-    map.addSource("taberd", { type: "image", url: TABERD_URL, coordinates: TABERD_CORNERS });
-    const beforeId = map.getLayer(`${ERAS[0].id}-label`) ? `${ERAS[0].id}-label` : undefined;
-    map.addLayer(
-      { id: "taberd", type: "raster", source: "taberd", paint: { "raster-opacity": taberdOpacity } },
-      beforeId,
-    );
-  }
-  if (map.getLayer("taberd"))
-    map.setLayoutProperty("taberd", "visibility", on ? "visible" : "none");
-}
-function setTaberdOpacity(v: number): void {
-  taberdOpacity = v;
-  if (map.getLayer("taberd")) map.setPaintProperty("taberd", "raster-opacity", v);
-}
+// Khối Taberd 1838 gắn cứng (URL + 4 góc là hằng TS) đã chuyển thành lớp
+// dữ liệu: tấm nào trong media/ban-do-co.json có khối `georef` là tự xuất
+// hiện trong bảng lớp — xem src/bandoco.ts. Vẫn giữ ràng buộc chèn raster
+// DƯỚI lớp nhãn era đầu tiên để nhãn chủ quyền nằm trên cùng.
 
 // --- Cương vực Việt cổ. Văn Lang / Âu Lạc / Vạn Xuân = POLYGON phỏng dựng học thuật
 // (phạm vi Đông Sơn + «15 bộ», Bắc Bộ → Đèo Ngang) — nét ĐỨT + tô mờ, nhấn «phỏng
@@ -2271,11 +2239,10 @@ function buildLayerControl(): void {
         <label><input type="checkbox" name="duong"/> Tên đường theo danh nhân <span class="lc-tag">HN·HCM·ĐN</span></label>
       </div>
     </details>
-    <details class="lc-sec">
+    <details class="lc-sec" id="lc-bdc">
       <summary>🗺️ ${ten("nhan:lc-ban-do-co", "Bản đồ cổ")}</summary>
-      <div class="group">
-        <label><input type="checkbox" name="taberd"/> Taberd 1838 «Cát Vàng» (xấp xỉ)</label>
-        <label class="taberd-op">Độ mờ <input type="range" name="taberd-opacity" min="0" max="1" step="0.05" value="0.6"/></label>
+      <div class="group" id="bdc-khu">
+        <p class="muted">Đang tải danh sách bản đồ cổ…</p>
       </div>
     </details>
     </div>`;
@@ -2299,13 +2266,10 @@ function buildLayerControl(): void {
     if (t.name === "labels") applyLabels(t.checked);
     if (t.name === "songnui") applySongNui(t.checked);
     if (t.name === "duong") void applyStreets(t.checked);
-    if (t.name === "taberd") applyTaberd(t.checked);
-  });
-  el.addEventListener("input", (e) => {
-    const t = e.target as HTMLInputElement;
-    if (t.name === "taberd-opacity") setTaberdOpacity(Number(t.value));
   });
   document.getElementById("app")?.appendChild(el);
+  // Bản đồ cổ georef — gắn SAU khi bảng lớp đã vào DOM (module tự nạp lười).
+  initBanDoCo(map);
   apTuVungTheoCheDo();
   document.addEventListener(SU_KIEN_DOI_CHE_DO, apTuVungTheoCheDo);
 }

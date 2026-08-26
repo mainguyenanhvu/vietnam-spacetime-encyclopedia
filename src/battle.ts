@@ -233,6 +233,13 @@ let eraFilter = "all";
 let arrowsAnimated = new Set<string>();
 // Bộ khoá mũi tên của trận đang mở, đặt một lần lúc dựng Màn B.
 let muiTenKeys: ReadonlySet<string> = BACH_DANG_MUI_TEN;
+// ── Trạng thái hiệu ứng «như phim/game» ──────────────────────────────────
+// Hẹn giờ tự phát các bước (nút ▶ Phát). Mọi thao tác tay đều dừng nó.
+let playTimer: number | null = null;
+// Camera thu phóng theo bước — tắt được bằng nút 🎬.
+let camTheoBuoc = true;
+// Khoá phần tử đã hiện ở bước trước — để biết ai MỚI xuất trận mà pop-in.
+let hienTruoc = new Set<string>();
 
 // ── Phân kỳ cho Màn A ────────────────────────────────────────────────────
 // Dữ liệu 168 mục không có trường thời-kỳ riêng, chỉ có `nam` (số) — suy ra
@@ -918,7 +925,10 @@ function muiTenSvg(p: PhanTu, m: BenMau): string {
   // thân mũi tên và không còn thấy mũi tên đâu nữa.
   const nx = (tu[0] + 2 * cx + den[0]) / 4 + nx0 * 26;
   const ny = (tu[1] + 2 * cy + den[1]) / 4 + ny0 * 26;
+  // Vạch hành quân: nét đứt sáng chạy DỌC THÂN mũi tên (CSS bật qua class
+  // .sd-dong-on, applyStep giới hạn 3 mũi/bước vì dashoffset tốn paint).
   return `<path class="sd-arrow" d="${d}" fill="none" stroke="${m.chu}" stroke-width="5.5" stroke-linecap="round" marker-end="url(#${dau})"${duoi}/>
+    <path class="sd-arrow-dong" d="${d}" fill="none" aria-hidden="true"/>
     ${p.nhan ? nhanSvg(nx, ny + 6, p.nhan) : ""}`;
 }
 
@@ -967,9 +977,10 @@ function buildTongQuatSvg(b: Battle): string {
     ${saDoDefs()}
     <rect class="sd-nen-dat" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}"/>
     <rect class="sd-nen-hat" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}" filter="url(#sd-f-giay)" aria-hidden="true"/>
-    <g class="sd-dia-hinh" aria-hidden="true">${diaHinh}</g>
-    <rect class="sd-nen-vien" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}" aria-hidden="true"/>
+    <g class="sd-cam"><g class="sd-dia-hinh" aria-hidden="true">${diaHinh}</g>
     ${phanTu}
+    <g class="sd-fx" aria-hidden="true"></g></g>
+    <rect class="sd-nen-vien" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}" aria-hidden="true"/>
     <text class="sd-note-tq" x="${TQ_RONG / 2}" y="${TQ_CAO - 12}" text-anchor="middle">Sa đồ minh hoạ — không theo tỉ lệ</text>
   </svg>`;
 }
@@ -999,6 +1010,132 @@ function triggerArrowDraw(g: SVGGElement): void {
   path.classList.add("sd-arrow-draw");
 }
 
+function giamChuyenDong(): boolean {
+  return !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+}
+
+/** Các điểm đại diện của một phần tử — nuôi camera và phép dò giao chiến. */
+function diemPhanTu(p: PhanTu): Diem[] {
+  if (p.kieu === "mui-ten") {
+    const tu = diemDon(p.tu);
+    const den = diemDon(p.den);
+    return [tu, den].filter((d): d is Diem => d !== null);
+  }
+  return [[so(p.x), so(p.y)]];
+}
+
+/**
+ * Camera «như phim tài liệu»: mỗi bước thu phóng vào cụm phần tử đang hiện.
+ * Chỉ là transform CSS trên <g class="sd-cam"> — toạ độ dữ liệu và thuật toán
+ * xếp nhãn (getBBox đo hệ toạ độ CỤC BỘ) không hề biết đến nó. Killswitch
+ * giảm-chuyển-động vô hiệu transition → nhảy thẳng, không bay lượn.
+ */
+function capNhatCamera(content: HTMLElement, step: BattleStep): void {
+  const cam = content.querySelector<SVGGElement>(".sd-cam");
+  if (!cam) return;
+  const b = currentBattle;
+  if (!b || !camTheoBuoc) {
+    cam.style.transform = "";
+    return;
+  }
+  const pts: Diem[] = [];
+  for (const p of b.phan_tu ?? [])
+    if ((step.hien as string[]).includes(p.id)) pts.push(...diemPhanTu(p));
+  if (pts.length < 2) {
+    cam.style.transform = "";
+    return;
+  }
+  const DEM = 90; // đệm quanh cụm — chừa chỗ cho nhãn và đầu mũi tên
+  const x0 = Math.min(...pts.map((d) => d[0])) - DEM;
+  const x1 = Math.max(...pts.map((d) => d[0])) + DEM;
+  const y0 = Math.min(...pts.map((d) => d[1])) - DEM;
+  const y1 = Math.max(...pts.map((d) => d[1])) + DEM;
+  // Sàn kích thước khung + trần hệ số: zoom quá sâu vào 2 phần tử sát nhau
+  // thì mất hết ngữ cảnh địa hình, chữ phóng to thô.
+  // Trần 1,5 đo bằng mắt trên ĐBP: 1,75 zoom sát tới mức nửa khung là đất
+  // trống và nhãn địa hình bị cắt — camera phim tài liệu lượn NHẸ thôi.
+  const w = Math.max(x1 - x0, 560);
+  const h = Math.max(y1 - y0, 336);
+  const k = Math.min(TQ_RONG / w, TQ_CAO / h, 1.5);
+  if (k <= 1.04) {
+    cam.style.transform = "";
+    return;
+  }
+  // Kẹp tâm để khung nhìn không trượt ra ngoài mép sa đồ.
+  const nuaW = TQ_RONG / k / 2;
+  const nuaH = TQ_CAO / k / 2;
+  const cx = Math.min(Math.max((x0 + x1) / 2, nuaW), TQ_RONG - nuaW);
+  const cy = Math.min(Math.max((y0 + y1) / 2, nuaH), TQ_CAO - nuaH);
+  cam.style.transform = `translate(${r1(TQ_RONG / 2 - k * cx)}px, ${r1(TQ_CAO / 2 - k * cy)}px) scale(${k.toFixed(3)})`;
+}
+
+/**
+ * Chớp giao chiến: mũi tên có phe cắm tới GẦN một phần tử phe kia đang hiện
+ * (≤95 đơn vị) thì nổ một vòng xung kích + tia lửa ở đầu mũi. Suy từ dữ liệu
+ * sẵn có, không thêm trường mới; ngưỡng khoảng cách là phép né ca «mũi tên
+ * rút lui» — rút thì không chĩa vào ai nên không nổ. Tối đa 3 chớp/bước.
+ * Trả về số chớp đã tạo (để quyết định rung khung).
+ */
+function capNhatVaCham(content: HTMLElement, step: BattleStep): number {
+  const fx = content.querySelector<SVGGElement>(".sd-fx");
+  const b = currentBattle;
+  if (!fx || !b) return 0;
+  fx.innerHTML = "";
+  if (giamChuyenDong()) return 0;
+  const hien = new Set(step.hien as string[]);
+  const khoi = (b.phan_tu ?? []).filter(
+    (q) => q.kieu !== "mui-ten" && q.ben && hien.has(q.id),
+  );
+  let dem = 0;
+  for (const p of b.phan_tu ?? []) {
+    if (dem >= 3) break;
+    if (p.kieu !== "mui-ten" || !p.ben || !hien.has(p.id)) continue;
+    const den = diemDon(p.den);
+    if (!den) continue;
+    const trung = khoi.some(
+      (q) => q.ben !== p.ben && Math.hypot(so(q.x) - den[0], so(q.y) - den[1]) < 95,
+    );
+    if (!trung) continue;
+    dem++;
+    fx.insertAdjacentHTML(
+      "beforeend",
+      `<g class="sd-no" transform="translate(${r1(den[0])},${r1(den[1])})"><circle class="sd-no-vong" r="12"/><path class="sd-no-tia" d="M0,-26 L5,-8 L22,-14 L9,0 L22,14 L5,8 L0,26 L-5,8 L-22,14 L-9,0 L-22,-14 L-5,-8 Z"/></g>`,
+    );
+  }
+  return dem;
+}
+
+/** Dừng tự phát — mọi thao tác tay (bấm bước, quay lại, mở trận khác) gọi nó. */
+function dungTuPhat(): void {
+  if (playTimer !== null) {
+    clearInterval(playTimer);
+    playTimer = null;
+  }
+  const nut = document.getElementById("battle-play");
+  if (nut) {
+    nut.textContent = "▶ Phát";
+    nut.setAttribute("aria-pressed", "false");
+  }
+}
+
+/** Tự phát các bước như xem phim — 5 giây một bước, hết trận tự dừng. */
+function batTuPhat(content: HTMLElement): void {
+  const nut = document.getElementById("battle-play");
+  if (!nut) return;
+  nut.textContent = "⏸ Dừng";
+  nut.setAttribute("aria-pressed", "true");
+  playTimer = window.setInterval(() => {
+    const b = currentBattle;
+    // Panel đã đóng / nội dung bị thay → hẹn giờ mồ côi, tự huỷ.
+    if (!b || !nut.isConnected || stepIdx >= b.buoc.length - 1) {
+      dungTuPhat();
+      return;
+    }
+    stepIdx++;
+    applyStep(content);
+  }, 5000);
+}
+
 /** Xếp lại nhãn của sa đồ trong `content` — an toàn khi gọi nhiều lần. */
 function xepLaiNhan(content: HTMLElement): void {
   const svg = content.querySelector<SVGSVGElement>(".sd-svg-tq");
@@ -1017,10 +1154,21 @@ function applyStep(content: HTMLElement): void {
   if (!step) return;
 
   let arrowsThisTransition = 0;
+  const yenTinh = giamChuyenDong();
+  let vachDong = 0; // vạch hành quân đang chạy — dashoffset tốn paint, tối đa 3
   content.querySelectorAll<SVGGElement>(".sd-layer").forEach((g) => {
     const key = g.dataset["key"] ?? "";
     const shouldShow = (step.hien as string[]).includes(key);
     g.classList.toggle("sd-layer-hidden", !shouldShow);
+    // Pop-in «xuất trận» cho phần tử MỚI hiện ở bước này (mũi tên đã có
+    // animation vẽ dần riêng, không chồng hai hiệu ứng).
+    g.classList.toggle(
+      "sd-moi",
+      shouldShow && !hienTruoc.has(key) && !muiTenKeys.has(key) && !yenTinh,
+    );
+    const dongChay = shouldShow && muiTenKeys.has(key) && !yenTinh && vachDong < 3;
+    if (dongChay) vachDong++;
+    g.classList.toggle("sd-dong-on", dongChay);
     if (
       shouldShow &&
       muiTenKeys.has(key) &&
@@ -1032,6 +1180,19 @@ function applyStep(content: HTMLElement): void {
       triggerArrowDraw(g);
     }
   });
+  hienTruoc = new Set(step.hien as string[]);
+
+  // Camera + chớp giao chiến + rung khung — cả ba chỉ có trên sa đồ tổng quát
+  // (Bạch Đằng vẽ tay không có .sd-cam/.sd-fx thì các hàm tự thoát).
+  capNhatCamera(content, step);
+  if (capNhatVaCham(content, step) > 0) {
+    const wrap = content.querySelector<HTMLElement>(".sd-stage-wrap");
+    if (wrap && !yenTinh) {
+      wrap.classList.remove("sd-rung");
+      void wrap.offsetWidth; // reflow để animation rung chạy lại được
+      wrap.classList.add("sd-rung");
+    }
+  }
 
   // Mực nước theo thuỷ triều: triều lên ngập cọc, triều xuống thì rút. Chỉ sa
   // đồ sông nước khai `thuy_trieu`; sa đồ trên bộ bỏ trống và bỏ qua cả khối.
@@ -1102,6 +1263,8 @@ function renderFullDetail(content: HTMLElement): void {
   const b = currentBattle;
   if (!b) return;
   stepIdx = 0;
+  dungTuPhat(); // hẹn giờ của trận trước (nếu còn) không được chạy sang trận này
+  hienTruoc = new Set();
 
   const draftBadge =
     b.trang_thai === "draft"
@@ -1152,6 +1315,8 @@ function renderFullDetail(content: HTMLElement): void {
       <button id="battle-prev" type="button" class="sd-nav">◀ Bước trước</button>
       <span id="battle-step-count" class="sd-step-count"></span>
       <button id="battle-next" type="button" class="sd-nav">Bước sau ▶</button>
+      ${b.buoc.length > 1 ? `<button id="battle-play" type="button" class="sd-nav sd-play" aria-pressed="false" title="Tự chuyển bước 5 giây một lần">▶ Phát</button>` : ""}
+      ${tongQuat ? `<button id="battle-cam" type="button" class="sd-nav sd-cam-nut" aria-pressed="true" title="Camera tự thu phóng vào cụm diễn biến của bước">🎬 Thu phóng</button>` : ""}
       ${coThuyTrieu ? `<span id="battle-tide" class="tide-indicator"></span>` : ""}
     </div>
 
@@ -1169,23 +1334,45 @@ function renderFullDetail(content: HTMLElement): void {
   </div>`;
 
   document.getElementById("sd-back")?.addEventListener("click", () => {
+    dungTuPhat();
     currentBattle = null;
     renderIndex(content);
   });
   document.getElementById("battle-prev")?.addEventListener("click", () => {
+    dungTuPhat();
     if (stepIdx > 0) {
       stepIdx--;
       applyStep(content);
     }
   });
   document.getElementById("battle-next")?.addEventListener("click", () => {
+    dungTuPhat();
     if (currentBattle && stepIdx < currentBattle.buoc.length - 1) {
       stepIdx++;
       applyStep(content);
     }
   });
+  document.getElementById("battle-play")?.addEventListener("click", () => {
+    if (playTimer !== null) {
+      dungTuPhat();
+      return;
+    }
+    // Đứng ở bước cuối mà bấm Phát → chiếu lại từ đầu, đúng thói quen video.
+    if (currentBattle && stepIdx >= currentBattle.buoc.length - 1) {
+      stepIdx = 0;
+      applyStep(content);
+    }
+    batTuPhat(content);
+  });
+  document.getElementById("battle-cam")?.addEventListener("click", (e) => {
+    camTheoBuoc = !camTheoBuoc;
+    (e.currentTarget as HTMLButtonElement).setAttribute("aria-pressed", String(camTheoBuoc));
+    const st = currentBattle?.buoc[stepIdx];
+    if (st) capNhatCamera(content, st);
+  });
   content.querySelectorAll<HTMLButtonElement>(".sd-step-dot").forEach((dot) => {
     dot.addEventListener("click", () => {
+      dungTuPhat();
       const idx = Number(dot.dataset["step"]);
       if (!Number.isNaN(idx)) {
         stepIdx = idx;
@@ -1315,12 +1502,9 @@ export function initBattle(): void {
     hidePanel("battle-panel");
   });
 
-  // Móc nối cho journey.ts: hiện tại journey.ts chỉ gọi
-  // `document.getElementById("battle-btn")?.click()` (không kèm battle_id) —
-  // nên nút "Xem sa đồ trận này" trong một chặng hành trình sẽ mở Màn A thay
-  // vì nhảy thẳng vào Màn B như đặc tả yêu cầu. Battle.ts đã sẵn sàng nhận
-  // CustomEvent này để nhảy thẳng; phần còn thiếu là journey.ts phát sự kiện
-  // — xem báo cáo cuối, KHÔNG tự sửa journey.ts (ngoài phạm vi sở hữu file).
+  // Móc nối cho journey.ts: nút «Xem sa đồ trận này» của một chặng hành trình
+  // phát CustomEvent kèm battle_id (journey.ts nối dây 2026-08-26) → nhảy
+  // thẳng Màn B; thiếu id thì mở Màn A.
   window.addEventListener("sado:mo-tran", (ev) => {
     const id = (ev as CustomEvent<{ id?: string }>).detail?.id;
     if (id) void openDetailById(id);

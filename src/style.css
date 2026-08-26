@@ -1251,7 +1251,7 @@ body.kid-mode #topbar {
 .tl-sources ul { margin: 0.25rem 0 0; padding-left: 1.1rem; color: var(--chu-mem); }
 /* === /Dòng thời gian === */
 
-/* === #6 Bản đồ cổ Taberd + Nam tiến === */
+/* === #6 Bản đồ cổ georef + Nam tiến === */
 #layer-control .taberd-op {
   display: flex;
   align-items: center;
@@ -1260,6 +1260,26 @@ body.kid-mode #topbar {
 }
 #layer-control .taberd-op input[type="range"] {
   flex: 1;
+}
+#layer-control .bdc-ghi-chu {
+  margin: 0.3rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+/* Popup điểm neo «tên xưa ↔ tên nay» của bản đồ cổ (bandoco.ts). */
+.bdc-popup p {
+  margin: 0 0 0.3rem;
+}
+.bdc-popup-xua {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.bdc-popup-ghi-chu {
+  color: var(--chu-mem);
+}
+.bdc-popup-nguon {
+  color: var(--chu-mem);
+  font-size: 0.72rem;
 }
 
 /* Neo bên TRÁI (đè lên Lào/biển, không che Việt Nam) để xem rõ vùng mở cõi

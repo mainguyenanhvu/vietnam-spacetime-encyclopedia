@@ -191,7 +191,30 @@
           "ghi_chu": "Ghi phía trên vĩ tuyến 16 — đồng nhất tên hàng hải quốc tế «Paracel» với địa danh Việt «Cát Vàng».",
           "do_tin_cay": "cao"
         }
-      ]
+      ],
+      "georef": {
+        "goc": [
+          [
+            101.6,
+            23.6
+          ],
+          [
+            111.4,
+            23.6
+          ],
+          [
+            111.4,
+            7.6
+          ],
+          [
+            101.6,
+            7.6
+          ]
+        ],
+        "do_chinh_xac": "xap-xi",
+        "can_cu": "Lưới kinh–vĩ đọc từ bản scan (kinh tuyến Greenwich; mốc 104°Đ ở rìa tây gần Vân Nam). Bộ toạ độ góc này chính là bộ đã dùng cho lớp phủ Taberd trong main.ts từ 2026-07, nay chuyển về dữ liệu.",
+        "ghi_chu": "Phủ XẤP XỈ — chỉ dùng để đối chiếu trực quan bờ biển xưa–nay, không phải căn chỉnh trắc địa."
+      }
     },
     {
       "id": "regnu-annam-alexandre-de-rhodes-1650",
@@ -557,7 +580,30 @@
       ],
       "anh": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Partie_de_la_Cochinchine._Asie_no._106._%28Dresse_par_Ph._Vandermaelen%2C_lithographie_par_H._Ode._Deuxieme_partie.-Asie._Bruxelles._%28IA_dr_partie-de-la-cochinchine-asie-no-106-dresse-par-ph-vandermaelen-litho-00994062%29.jpg",
       "anh_nguon": "Wikimedia Commons — bản số hoá David Rumsey Map Collection",
-      "anh_giay_phep": "Tác phẩm thuộc phạm vi công cộng do niên đại (1827)"
+      "anh_giay_phep": "Tác phẩm thuộc phạm vi công cộng do niên đại (1827)",
+      "georef": {
+        "goc": [
+          [
+            105.47,
+            19.41
+          ],
+          [
+            118.66,
+            19.41
+          ],
+          [
+            118.66,
+            10.93
+          ],
+          [
+            105.47,
+            10.93
+          ]
+        ],
+        "do_chinh_xac": "xap-xi",
+        "can_cu": "Lưới kinh–vĩ in trên tờ: kinh độ 106–114 theo kinh tuyến Paris (+2°20′14″ ≈ +2,337° so với Greenwich), vĩ độ 12–18. Đo vị trí pixel các vạch lưới trên bản scan 1536×1049 (vạch 106° ở x≈334px, 116,5px/độ; vạch 18° ở y≈174px, 123,7px/độ) rồi ngoại suy ra mép ảnh. Đối chiếu: Nha Trang trên tờ ≈109,24°Đ Greenwich (thực 109,19°).",
+        "ghi_chu": "Phủ XẤP XỈ — ảnh chụp trang sách còn nguyên gáy, mép giấy cong nhẹ nên rìa tờ lệch nhiều hơn vùng giữa. Chỉ dùng để đối chiếu trực quan."
+      }
     },
     {
       "id": "hoang-du-toan-lam-phan-tinh-do-1717",

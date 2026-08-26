@@ -746,6 +746,122 @@
   overflow-wrap: anywhere;
 }
 
+/* ── Hiệu ứng «như phim/game» 2026-08-26 ──────────────────────────────────
+   Bốn hiệu ứng, đều phái sinh token, đều tắt được bằng giảm-chuyển-động:
+   camera thu phóng theo bước · phần tử pop-in khi xuất trận · vạch hành quân
+   chạy dọc mũi tên · chớp giao chiến + rung khung. JS đã gác cổng
+   prefers-reduced-motion trước khi thêm class, CSS ở đây là lớp bảo vệ hai. */
+.sd-cam {
+  transition: transform 0.9s cubic-bezier(0.22, 0.9, 0.3, 1);
+  will-change: transform;
+}
+.sd-layer.sd-moi .sd-khoi {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: sd-xuat-tran 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes sd-xuat-tran {
+  from {
+    transform: scale(0.25);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Vạch hành quân: nét đứt màu mặt giấy chạy trên thân mũi tên — trạng thái
+   NGHỈ là ẩn, chỉ lớp .sd-dong-on (tối đa 3/bước, JS chia) mới bật. */
+.sd-arrow-dong {
+  stroke: var(--mat);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-dasharray: 3 16;
+  opacity: 0;
+}
+.sd-layer.sd-dong-on .sd-arrow-dong {
+  opacity: 0.85;
+  animation: sd-hanh-quan 0.8s linear infinite;
+}
+@keyframes sd-hanh-quan {
+  to {
+    stroke-dashoffset: -19;
+  }
+}
+/* Chớp giao chiến: vòng xung kích lan ra + tia lửa xoè. Trạng thái CUỐI của
+   cả hai là opacity 0 — killswitch ép duration 0.01ms thì chớp biến mất ngay
+   thay vì kẹt lại trên hình. Màu trộn từ CẢ hai phe: cú va là của chung. */
+.sd-no {
+  pointer-events: none;
+}
+.sd-no-vong {
+  fill: none;
+  stroke: color-mix(in srgb, var(--sd-ta-chu) 45%, var(--sd-doi-chu));
+  stroke-width: 4;
+  transform-box: fill-box;
+  transform-origin: center;
+  /* Trễ 0,55s cho khớp nhịp mũi tên vẽ dần (700ms) — nổ lúc quân TỚI,
+     không phải lúc bước vừa mở. Keyframe đầu opacity 0 vì fill `both`
+     giữ trạng thái from suốt thời gian trễ. */
+  animation: sd-no-vong 0.9s ease-out 0.55s both;
+}
+.sd-no-tia {
+  fill: color-mix(in srgb, var(--sd-doi-chu) 70%, var(--mat));
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: sd-no-tia 0.9s ease-out 0.55s both;
+}
+@keyframes sd-no-vong {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+@keyframes sd-no-tia {
+  0% {
+    transform: scale(0.4) rotate(-18deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.15) rotate(10deg);
+    opacity: 0;
+  }
+}
+.sd-rung {
+  animation: sd-rung 0.4s ease-in-out 0.6s 1;
+}
+@keyframes sd-rung {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-4px, 2px);
+  }
+  40% {
+    transform: translate(3px, -2px);
+  }
+  60% {
+    transform: translate(-2px, -1px);
+  }
+  80% {
+    transform: translate(2px, 1px);
+  }
+}
+.sd-play {
+  font-weight: 700;
+}
+
 /* Người dùng tắt hiệu ứng chuyển động: dòng chảy dừng hẳn (killswitch toàn
    cục của theme.css ép animation-duration 0.01ms, nhưng khai thẳng ở đây cho
    chắc), và phần tử hiện ngay không bung. */
@@ -764,5 +880,16 @@
   .sd-song-dong,
   .sd-vt-item {
     transition: none;
+  }
+  .sd-cam {
+    transition: none;
+  }
+  .sd-arrow-dong,
+  .sd-no {
+    display: none;
+  }
+  .sd-layer.sd-moi .sd-khoi,
+  .sd-rung {
+    animation: none;
   }
 }

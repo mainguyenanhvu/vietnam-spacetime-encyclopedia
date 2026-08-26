@@ -176,8 +176,11 @@ function wireControls(c: HTMLElement): void {
     }
   });
   c.querySelector<HTMLButtonElement>(".jn-cta-battle")?.addEventListener("click", () => {
+    const id = scenes?.[current]?.battle_id;
     closePanel(); // rời chế độ hành trình → dispose mô hình 3D
-    document.getElementById("battle-btn")?.click();
+    // Nhảy THẲNG vào Màn B của đúng trận (battle.ts lắng nghe sự kiện này);
+    // không có battle_id thì mở Màn A như cũ.
+    window.dispatchEvent(new CustomEvent("sado:mo-tran", { detail: { id } }));
   });
 }
 

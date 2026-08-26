@@ -95,6 +95,26 @@ if (existsSync(BAN_DO)) {
     if (!Array.isArray(b.nguon) || !b.nguon.length) fail(w, "thiếu nguon[]");
     else if (!b.nguon.some((s) => !isWiki(s)))
       fail(w, "cần ít nhất 1 nguồn NGOÀI Wikipedia");
+    // georef: 4 góc [lon,lat] để phủ ảnh lên bản đồ tương tác. Chỉ tấm CÓ ảnh
+    // mới georef được, và phải khai căn cứ đo + ghi chú «xấp xỉ» — một tấm phủ
+    // sai lệch âm thầm còn hại hơn không phủ.
+    if (b.georef) {
+      const g = b.georef;
+      if (!b.anh) fail(w, "georef mà không có anh — không có gì để phủ");
+      if (!Array.isArray(g.goc) || g.goc.length !== 4)
+        fail(w, "georef.goc phải là 4 góc [lon,lat] (TB, ĐB, ĐN, TN)");
+      else
+        for (const [i, c] of g.goc.entries()) {
+          if (!Array.isArray(c) || typeof c[0] !== "number" || typeof c[1] !== "number")
+            fail(w, `georef.goc[${i}] phải là [lon,lat] số`);
+          else if (c[0] < 95 || c[0] > 125 || c[1] < 0 || c[1] > 30)
+            fail(w, `georef.goc[${i}] (${c[0]}, ${c[1]}) ngoài khung Đông Nam Á mở rộng`);
+        }
+      if (g.do_chinh_xac !== "xap-xi")
+        fail(w, "georef.do_chinh_xac hiện chỉ chấp nhận 'xap-xi' — chưa tấm nào đạt mức trắc địa");
+      if (!g.can_cu) fail(w, "georef thiếu can_cu (đo lưới thế nào)");
+      if (!g.ghi_chu) fail(w, "georef thiếu ghi_chu cảnh báo độ chính xác");
+    }
   }
   console.log(`✅ ban-do-co.json: ${bd.length} bản đồ (${bd.filter((b) => b.anh).length} có ảnh)`);
 
