@@ -17,13 +17,15 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ---
 
-## Trạng thái hiện tại — 2026-08-25
+## Trạng thái hiện tại — 2026-08-26
 
 **351 file dữ liệu · 5.794 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
 **Sa đồ 240/241 trận** · **Hành trình lịch sử 22 chặng** (phân kỳ đủ 5 nhóm) · **22 mô hình nhân vật/hiện vật 3D**. Đợt 2026-08-25: mọi sa đồ kèm **bản đồ định vị** (silhouette 34 tỉnh + nhãn Hoàng Sa/Trường Sa + chấm vị trí trận) · **60 trích văn tịch nguyên văn / 30 trận** (khối «Văn tịch chép», sáng theo bước) · 22/24 trận nền trơn đã có địa hình theo nguồn · thuỷ triều sa đồ tổng quát hết là class chết.
+
+**Đợt 2026-08-26** (3 commit `ea2497c` · `c22179d` · `1c789b7`): sa đồ **diễn như phim** (camera thu phóng theo bước, nút ▶ Phát, vạch hành quân chạy dọc mũi tên, pop-in xuất trận, chớp giao chiến + rung khung — tất cả tắt sạch dưới `prefers-reduced-motion`) · **240/240 trận nay chung MỘT trình dựng**, bản vẽ tay Bạch Đằng 938 đã gỡ · **bản đồ cổ georef thành lớp dữ liệu** (`src/bandoco.ts`, 2 tấm phủ + điểm neo bấm ra popup) · hành trình bấm «Xem sa đồ» nhảy thẳng Màn B đúng trận · vùng chạm 44px **thật** ở 4 khối CSS (trước đó `2.75rem` = 41px ở sa đồ, hành trình, menu «Khám phá», ô chọn thời kỳ).
 
 ⚠️ Khối này lỗi thời rất nhanh. Số cũ ghi 4.531 mục / 34 lớp / 12 cổng, sai cả ba, và tôi đã có lần đề xuất làm lại một việc đã xong vì tin vào nó. **Đếm lại trước khi trích.**
 
@@ -540,17 +542,25 @@ Còn lại:
   đầu; brief mẫu nằm ở lịch sử phiên 2026-08-25. Kỷ luật: sách không rõ ghi
   «Không rõ» kèm chú thích, KHÔNG bịa tên sách/số quyển; đoạn chỉ thấy trên
   nguồn cấm thì bỏ. **L**
-- [ ] **`journey.ts` chưa phát `sado:mo-tran`** — nút «Xem sa đồ trận này» trong
-  chặng hành trình vẫn mở Màn A thay vì nhảy thẳng Màn B. battle.ts đã nghe sẵn
-  CustomEvent này (initBattle), chỉ thiếu bên phát. **S**
-- [ ] **Hợp nhất renderer `bach-dang-938` sang tong-quat** — nợ từ `225e0f6`:
-  bản vẽ tay thiếu cả 4 thủ pháp làm đẹp lẫn `veNenNhan()`; chuyển sang dữ liệu
-  tong-quat (nay đã có thuỷ triều sống) thì xoá được ~110 dòng. Đổi lại phải
-  dựng lại 8 lớp phần tử thành `phan_tu[]` và nghiệm thu đủ 5 bước. **M**
+- [x] ~~**`journey.ts` chưa phát `sado:mo-tran`**~~ **XONG 2026-08-26** (`ea2497c`)
+  — nút «Xem sa đồ trận này» phát CustomEvent kèm `battle_id`; nghiệm thu Chrome
+  thật mở đúng Màn B của `khoi-nghia-hai-ba-trung-40`.
+- [x] ~~**Hợp nhất renderer `bach-dang-938` sang tong-quat**~~ **XONG 2026-08-26**
+  (`c22179d`) — gỡ 133 dòng: `buildBachDangSvg` + 5 hàm chỉ nó dùng + hằng
+  `BACH_DANG_MUI_TEN` + nhánh rẽ theo `sa_do_kieu` + khối `#battle-water` đã chết.
+  Dữ liệu dựng lại thành 4 khối `dia_hinh` + 9 `phan_tu` theo đúng lối
+  `bach-dang-981`/`bach-dang-1288`. **«coc-ngam»/«coc-lo» gộp về MỘT bãi cọc** —
+  ngầm hay lộ là việc của con nước, không phải hai vật thể.
+  🔴 **Cổng thay thế, đừng gỡ**: `validate_battles.mjs` nay đòi `sa_do_kieu =
+  "tong-quat"` và đòi mọi khoá `buoc[].hien` có trong `phan_tu[]`. Hai luật này
+  bắt đúng loại hỏng CÂM mà việc gỡ trình dựng tạo ra: thiếu trường thì render
+  RỖNG, gõ sai khoá thì phần tử lặng lẽ không hiện — cả hai console đều sạch.
+  Đo lúc thêm cổng: 240 hồ sơ / 2.456 khoá `hien` — 0 lệch.
 - [ ] `dai-don-chi-hoa-1861` + 4 trận lô 2 còn khoảng thiếu trích đã ghi lý do
   trong `_khong_tra_duoc` (scratchpad phiên) — bổ sung khi có nguồn mới. **S**
 
-- [ ] **CSS mồ côi sau khi làm lại Hành trình** (`style.css` ~984–1052): `.journey-narration`, `.journey-scene`, `.journey-context`, `.journey-battle-btn` không còn mã nào phát ra. **CỐ Ý CHƯA XOÁ**: `.journey-counter` và `.journey-stage` VẪN dùng, và `.journey-controls` nằm chung bộ chọn với `.battle-controls` (dòng 983 và 1712) nên xoá chọn lọc dễ vỡ vùng chạm 44px của sa đồ. Xoá thì phải nghiệm thu lại cả hai màn. **S**
+- [x] ~~**CSS mồ côi sau khi làm lại Hành trình**~~ **XONG 2026-08-26** (`1c789b7`). Xoá 9 bộ chọn chết trong `style.css` (`.journey-controls` `.journey-counter` `.journey-scene` `.journey-narration` `.journey-context` `.journey-battle-btn` `.battle-controls` `.battle-step-count` `.battle-step`) — journey.ts nay chỉ phát `jn-*`, battle.ts chỉ phát `sd-*`. **Giữ lại đúng hai thứ PLAN đã cảnh báo**: `.journey-stage` (figures3d đọc kích thước container qua nó) và `.tide-indicator`.
+  Xoá xong lộ ra chuyện lớn hơn: **ba file khai lại khối vùng chạm bằng `rem` trần** nên nút của chúng chưa bao giờ đạt 44px — `sado.css` (nút sa đồ), `hanhtrinh.css` (◀ ▶ + «Toàn bộ lộ trình»), `theme.css` (menu «Khám phá», ô chọn thời kỳ). Đo Chrome thật: **41×41 → 44×44 ở cả bốn khối**. Nay không còn `min-height: 2.75rem` trần nào trong `src/*.css`.
 
 ✅ ~~**LỚP TRẬN ĐÁNH LỆCH NẶNG VỀ TK XX** — 1789–1858 chỉ 1 mục.~~ **Số liệu này ĐÃ LỖI THỜI và suýt gây cử agent trùng lần nữa (2026-08-11).** Đợt ≥60 mục đã chạy xong từ trước: agent đếm trực tiếp file được **34 mục 1785–1858** (đủ Phan Bá Vành ×3, Nông Văn Vân ×3, Lê Văn Khôi ×2, Cao Bá Quát ×3, Lê Duy Lương ×2, Tây Sơn cuối ×7, 3 cuộc chiến Việt–Xiêm…), TK1–6 cũng kín. Đợt 2026-08-11 nạp thêm 10 mục vỉa MỚI (chống cướp biển Tàu Ô 1802–1849 ×8 theo visithue.vn trích Đại Nam thực lục — đã fetch xác minh cả 8 sự kiện; Trường Lũy 1819; cứu Vạn Tượng 1827–28) → **251 mục**. Vỉa trận đánh cận đại coi như no; còn thiếu thì là TK7–9 và các trận lẻ Lê–Mạc.
 

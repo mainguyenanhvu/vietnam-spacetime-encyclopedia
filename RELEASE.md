@@ -8,6 +8,115 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-08-26 — Sa đồ diễn như phim · một trình dựng duy nhất · bản đồ cổ phủ được lên bản đồ
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Trận dùng trình dựng tổng quát | **240/240** (trước: 239) | `validate_battles.mjs` |
+| Dòng gỡ khỏi `battle.ts` | **−133** | `git diff --stat` |
+| Khoá `buoc[].hien` được cổng đối chiếu | **2.456** trên 240 hồ sơ · **0 lệch** | `validate_battles.mjs` |
+| Tấm bản đồ cổ phủ được lên bản đồ | **2** · **4 điểm neo** render | probe Chrome |
+| Nút dưới 44px (sa đồ · hành trình · topbar) | **15 → 0** | `getBoundingClientRect()` Chrome |
+| Cổng dữ liệu | **14/14 xanh** | `npm run validate` |
+| Chủ quyền hiển thị | **13/13 thời kỳ** | `npm run verify:chuquyen` |
+| Type check · build | **exit 0 · xanh** | `npx tsc --noEmit` · `npm run build` |
+
+### 1. `src/bandoco.ts` — bản đồ cổ georef thành LỚP DỮ LIỆU
+
+Trước: đúng một tấm Taberd 1838 gắn cứng trong `main.ts` — URL ảnh và 4 góc là
+hằng số TypeScript. Thêm tấm thứ hai nghĩa là sửa mã. Nay danh sách đọc từ
+`media/ban-do-co.json`: tấm nào mang khối `georef` là tự xuất hiện trong bảng lớp,
+**thêm tấm mới chỉ còn là việc dữ liệu**. Kèm điểm neo «tên xưa ↔ tên nay» bấm ra
+popup và thanh độ mờ riêng từng tấm. Nạp lười: chỉ fetch khi người dùng mở mục.
+
+Tấm thứ hai nạp trong đợt này — Vandermaelen 1827 «Partie de la Cochinchine» —
+phải quy đổi kinh tuyến: lưới in trên tờ theo **kinh tuyến Paris**, cộng 2,337° ra
+Greenwich. Đối chiếu kiểm tra: Nha Trang trên tờ ra 109,24°Đ, thực tế 109,19°.
+`validate_media.mjs` gác khối `georef` — 4 góc phải nằm trong khung Đông Nam Á,
+bắt buộc khai `can_cu` (đo lưới thế nào) và `ghi_chu` cảnh báo, và hiện chỉ chấp
+nhận `do_chinh_xac: "xap-xi"` vì chưa tấm nào đạt mức trắc địa.
+
+🔴 **Một lỗi chủ quyền THẬT bắt được bằng trình duyệt, không phải bằng đọc mã.**
+Bản đầu chèn raster trước `${ERAS[0].id}-label`. Lớp đó **sinh lười**: lúc mở trang
+chỉ `era-34` tồn tại, nên hàm trả `undefined` và MapLibre chèn ảnh scan **lên trên
+cùng** — phủ mất nhãn Hoàng Sa / Trường Sa. Đo được: raster @20–21 còn
+`chu-quyen-labels` @19. `tsc` xanh, console sạch, cổng dữ liệu xanh — không thứ nào
+thấy được. Chữa bằng `truocLopNhan()`: tra lớp **symbol đầu tiên của style hiện
+tại** ngay lúc bật tấm (nền bản đồ dự án không có nhãn nào, nên lớp symbol đầu tiên
+luôn là nhãn dự án tự vẽ). Đo lại: raster @5–6, `chu-quyen-labels` @21, hai quần đảo
+vẫn render khi bật cả hai tấm phủ.
+
+### 2. Sa đồ diễn như phim — 5 hiệu ứng, tất cả tắt được
+
+- **Camera thu phóng theo bước**: mỗi bước lượn vào cụm phần tử đang hiện. Chỉ là
+  `transform` CSS trên `<g class="sd-cam">` nên toạ độ dữ liệu và thuật toán xếp
+  nhãn (`getBBox` đo hệ toạ độ cục bộ) không hề biết đến nó. Trần hệ số **1,5** đo
+  bằng mắt trên Điện Biên Phủ: 1,75 zoom sát tới mức nửa khung là đất trống.
+- **Nút ▶ Phát** tự chuyển bước 5 giây/bước; mọi thao tác tay dừng nó; đứng ở bước
+  cuối mà bấm Phát thì chiếu lại từ đầu.
+- **Vạch hành quân** chạy dọc thân mũi tên — tối đa 3 mũi/bước vì `dashoffset` tốn
+  paint (không compositor-only).
+- **Pop-in «xuất trận»** cho phần tử MỚI hiện ở bước này (mũi tên đã có animation vẽ
+  dần riêng, không chồng hai hiệu ứng).
+- **Chớp giao chiến + rung khung** khi mũi tên có phe cắm tới gần (<95 đơn vị) một
+  khối phe kia đang hiện. Suy từ dữ liệu sẵn có, **không thêm trường mới**; ngưỡng
+  khoảng cách chính là phép né ca «mũi tên rút lui» — rút thì không chĩa vào ai.
+
+`prefers-reduced-motion: reduce` tắt sạch cả năm; camera nhảy thẳng, không bay lượn.
+
+### 3. Gỡ trình dựng vẽ tay — và dựng cổng thay chỗ nó
+
+`bach-dang-938` là hồ sơ cuối cùng còn dùng SVG vẽ tay riêng. Bản đó thiếu cả 4 thủ
+pháp làm đẹp lẫn `veNenNhan()`, và mọi hiệu ứng mới đều bỏ qua nó. Chuyển thành 4
+khối `dia_hinh` + 9 `phan_tu` theo đúng lối `bach-dang-981` và `bach-dang-1288` đã
+dùng cho cùng cốt truyện; **`coc-ngam`/`coc-lo` gộp về MỘT bãi cọc** — ngầm hay lộ
+là việc của con nước, không phải hai vật thể. Dải rừng hai bờ có căn cứ trong chính
+trích văn tịch của hồ sơ («cây cối um tùm che lấp bờ bến» — Cương mục). Nội dung 5
+bước, nguồn, trích văn tịch giữ nguyên từng ký tự.
+
+Gỡ được **133 dòng** `battle.ts`. Nhưng gỡ trình dựng tạo ra hai kiểu hỏng **CÂM**,
+nên `validate_battles.mjs` nhận hai luật mới thay chỗ:
+
+1. `sa_do_kieu` **phải** là `"tong-quat"` — thiếu trường thì render RỖNG, console sạch;
+2. mọi khoá `buoc[].hien` phải có trong `phan_tu[]` — gõ sai một khoá thì phần tử đó
+   lặng lẽ không hiện, dữ liệu vẫn hợp lệ hoàn toàn.
+
+Đo lúc thêm cổng: **240 hồ sơ / 2.456 khoá `hien` — 0 lệch.**
+
+**Vòng đo đầu bắt 2 cặp nhãn chồng nhau** vì nhãn «Bãi cọc vạt nhọn bịt sắt, đóng
+ngầm dưới lòng sông» dài ~500px trên khung 1000px. Rút gọn nhãn + nới bố cục, đo
+lại còn 0. Quét lô mẫu 18/240 trận trải đều năm 40→1288 (nạp lại trang mỗi 6 trận,
+theo bài học cũ về trang nặng dần): tất cả đúng số bước / số lớp, console sạch.
+
+### 4. Hành trình → Màn B đúng trận
+
+Nút «Xem sa đồ trận này» trong một chặng hành trình trước đây bấm hộ nút mở Màn A —
+người dùng rơi vào danh sách 240 trận và phải tự tìm. Nay `journey.ts` phát
+`CustomEvent("sado:mo-tran")` kèm `battle_id`; `battle.ts` đã nghe sẵn từ trước.
+
+### 5. CSS mồ côi — và cái nó làm lộ ra
+
+`journey.ts` nay chỉ phát class `jn-*`, `battle.ts` chỉ phát `sd-*`, nên 9 bộ chọn
+trong `style.css` không còn mã nào sinh ra. Xoá. **Giữ lại đúng hai thứ PLAN đã
+cảnh báo**: `.journey-stage` (figures3d đọc kích thước container qua nó — mất là
+canvas Three.js co về 0px) và `.tide-indicator`.
+
+🔴 Xoá xong lộ ra chuyện lớn hơn: **`2.75rem` không phải 44px.** `theme.css` đặt
+`html { font-size: 0.94rem }` nên 1rem = 15,04px và 2.75rem ra 41,4px. `style.css`
+đã sửa từ 2026-08-05, nhưng ba file khai LẠI khối vùng chạm bằng `rem` trần — mỗi
+file kèm một chú thích nói mình đang theo «luật 44px». Đo Chrome thật:
+
+| Khối | Trước | Sau |
+|---|---|---|
+| `sado.css` — 5 chấm bước + 4 nút điều khiển + nút quay lại | 41×41 (`min-height` 41,36px) | **44×44** |
+| `hanhtrinh.css` — ◀ ▶ | 41×41 | **44×44** |
+| `hanhtrinh.css` — «Toàn bộ lộ trình» | 422×41 | **422×44** |
+| `theme.css` — menu «Khám phá» | 101×41 | **101×44** |
+| `theme.css` — ô chọn thời kỳ | 249×41 | **249×44** |
+
+Nay không còn `min-height: 2.75rem` trần nào trong `src/*.css`.
+
+---
 ## 2026-08-25 — Chú giải từ khó cho trẻ em + lớp phủ «Bản đồ cổ»
 
 | Chỉ số | Giá trị | Đo bằng |
