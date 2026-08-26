@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 6017,
-    "tong_co_toa_do": 3016,
+    "tong_muc": 6040,
+    "tong_co_toa_do": 3039,
     "so_nhom_trung_ten": 835,
-    "so_cap_trung_toa_do": 866,
+    "so_cap_trung_toa_do": 885,
     "ngay_sinh": "2026-08-26"
   },
   "entries": [
@@ -33791,6 +33791,305 @@
       "loai": "anh-hung-llvt",
       "lat": 10.3167,
       "lon": 106.3333,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-teo-quang-ninh",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Tẻo",
+      "ten_chuan": "me viet nam anh hung tran thi teo",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 20.96,
+      "lon": 107.1,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dang-thi-van-quang-ninh",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Vân",
+      "ten_chuan": "me viet nam anh hung dang thi van",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 20.95,
+      "lon": 107.08,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "do-thi-tu-hung-yen",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Đỗ Thị Từ",
+      "ten_chuan": "me viet nam anh hung do thi tu",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 20.95,
+      "lon": 105.97,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dang-thi-em-can-duoc",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Em",
+      "ten_chuan": "me viet nam anh hung dang thi em",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 10.55,
+      "lon": 106.6,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-bau-bac-giang",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Bầu",
+      "ten_chuan": "me viet nam anh hung nguyen thi bau",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 21.33,
+      "lon": 106.15,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "le-thi-minh-thuy-khanh-hoa",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Minh Thủy",
+      "ten_chuan": "me viet nam anh hung le thi minh thuy",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 12.24,
+      "lon": 109.19,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chau-van-man",
+      "slug": null,
+      "ten": "Trung tướng Châu Văn Mẫn",
+      "ten_chuan": "trung tuong chau van man",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-cand",
+      "lat": 15.7667,
+      "lon": 108.3667,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phan-dinh-tuu",
+      "slug": null,
+      "ten": "Phan Đình Tựu",
+      "ten_chuan": "phan dinh tuu",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 8.6833,
+      "lon": 106.6083,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phan-van-nghiep-thuy-loi",
+      "slug": null,
+      "ten": "Phan Văn Nghiệp",
+      "ten_chuan": "phan van nghiep",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "ah-lao-dong",
+      "lat": 10.35,
+      "lon": 106.6667,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "le-van-viet-bd",
+      "slug": null,
+      "ten": "Lê Văn Việt",
+      "ten_chuan": "le van viet",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 10.8,
+      "lon": 106.8167,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "doan-thuy-ba",
+      "slug": null,
+      "ten": "Đoàn Thuý Ba (Đoàn Hồng Hoa)",
+      "ten_chuan": "doan thuy ba doan hong hoa",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "ah-lao-dong",
+      "lat": 10.1,
+      "lon": 106.3667,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngo-van-van-dai-su-quan-my",
+      "slug": null,
+      "ten": "Ngô Văn Vân",
+      "ten_chuan": "ngo van van",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "bieu-tuong-khang-chien",
+      "lat": 10.7817,
+      "lon": 106.7,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "to-hoai-thanh-dinh-doc-lap",
+      "slug": null,
+      "ten": "Tô Hoài Thanh (Ba Thanh)",
+      "ten_chuan": "to hoai thanh ba thanh",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "bieu-tuong-khang-chien",
+      "lat": 10.7772,
+      "lon": 106.6957,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-thi-so-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Đinh Thị Sở",
+      "ten_chuan": "me viet nam anh hung dinh thi so",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.22,
+      "lon": 106.78,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-gia-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Gia",
+      "ten_chuan": "me viet nam anh hung nguyen thi gia",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.22,
+      "lon": 106.78,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ho-thi-dang-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Hồ Thị Đằng",
+      "ten_chuan": "me viet nam anh hung ho thi dang",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.22,
+      "lon": 106.78,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "pham-thi-bot-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Phạm Thị Bót",
+      "ten_chuan": "me viet nam anh hung pham thi bot",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.22,
+      "lon": 106.78,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-yem-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Yêm",
+      "ten_chuan": "me viet nam anh hung tran thi yem",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.37,
+      "lon": 106.67,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-toi-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Tôi",
+      "ten_chuan": "me viet nam anh hung nguyen thi toi",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.37,
+      "lon": 106.67,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-tieu-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Tiệu",
+      "ten_chuan": "me viet nam anh hung tran thi tieu",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.37,
+      "lon": 106.67,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "le-thi-bon-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Bòn",
+      "ten_chuan": "me viet nam anh hung le thi bon",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.37,
+      "lon": 106.67,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dang-thi-chan-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Chấn",
+      "ten_chuan": "me viet nam anh hung dang thi chan",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.47,
+      "lon": 106.6,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "lai-thi-sen-qb",
+      "slug": null,
+      "ten": "Mẹ Việt Nam Anh hùng Lại Thị Sen",
+      "ten_chuan": "me viet nam anh hung lai thi sen",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "me-vnah",
+      "lat": 17.47,
+      "lon": 106.6,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -97193,6 +97492,97 @@
     },
     {
       "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "to-hoai-thanh-dinh-doc-lap",
+        "ten": "Tô Hoài Thanh (Ba Thanh)"
+      },
+      "b": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "nguyen-huu-thien-kts",
+        "ten": "Nguyễn Hữu Thiện"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "dang-thi-chan-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Chấn"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành (1069)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "dang-thi-chan-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Chấn"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "dtn-tnxp-c283-quang-binh",
+        "ten": "Khu tưởng niệm Đại đội Thanh niên xung phong C283"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "dang-thi-chan-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Chấn"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "lai-thi-sen-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Lại Thị Sen"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành (1069)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "lai-thi-sen-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Lại Thị Sen"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "dtn-tnxp-c283-quang-binh",
+        "ten": "Khu tưởng niệm Đại đội Thanh niên xung phong C283"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "lai-thi-sen-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Lại Thị Sen"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "tran-ly-thuong-kiet-nam-chinh-1069",
+        "ten": "Lý Thường Kiệt Nam chinh Chiêm Thành"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
         "file": "overlays/ban-do-co.json",
         "id": null,
         "ten": "Côn Đảo"
@@ -102081,6 +102471,19 @@
     },
     {
       "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "to-hoai-thanh-dinh-doc-lap",
+        "ten": "Tô Hoài Thanh (Ba Thanh)"
+      },
+      "b": {
+        "file": "overlays/di-tich-qgdb.json",
+        "id": "dinh-doc-lap",
+        "ten": "Dinh Độc Lập"
+      },
+      "khoang_cach_m": 30
+    },
+    {
+      "a": {
         "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
         "id": "to-ngoc-van",
         "ten": "Tô Ngọc Vân"
@@ -102143,6 +102546,45 @@
         "ten": "Ngô Bảo Châu"
       },
       "khoang_cach_m": 30
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "to-hoai-thanh-dinh-doc-lap",
+        "ten": "Tô Hoài Thanh (Ba Thanh)"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "chien-dich-hcm-1975",
+        "ten": "Chiến dịch Hồ Chí Minh 1975"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "to-hoai-thanh-dinh-doc-lap",
+        "ten": "Tô Hoài Thanh (Ba Thanh)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khang-chien-chong-my-1954-1975",
+        "ten": "Kháng chiến chống Mỹ, cứu nước"
+      },
+      "khoang_cach_m": 31
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "to-hoai-thanh-dinh-doc-lap",
+        "ten": "Tô Hoài Thanh (Ba Thanh)"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "chien-dich-ho-chi-minh-1975",
+        "ten": "Chiến dịch Hồ Chí Minh"
+      },
+      "khoang_cach_m": 31
     },
     {
       "a": {
@@ -102546,6 +102988,19 @@
         "ten": "Phong trào chống thuế Trung Kỳ"
       },
       "khoang_cach_m": 32
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "to-hoai-thanh-dinh-doc-lap",
+        "ten": "Tô Hoài Thanh (Ba Thanh)"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tong-tien-cong-mau-than-1968-sai-gon",
+        "ten": "Tổng tiến công và nổi dậy Mậu Thân 1968 tại Sài Gòn – Gia Định"
+      },
+      "khoang_cach_m": 35
     },
     {
       "a": {
@@ -104980,6 +105435,32 @@
     },
     {
       "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "dang-thi-chan-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Chấn"
+      },
+      "b": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "han-mac-tu",
+        "ten": "Nhà thơ Hàn Mặc Tử"
+      },
+      "khoang_cach_m": 115
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "lai-thi-sen-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Lại Thị Sen"
+      },
+      "b": {
+        "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
+        "id": "han-mac-tu",
+        "ten": "Nhà thơ Hàn Mặc Tử"
+      },
+      "khoang_cach_m": 115
+    },
+    {
+      "a": {
         "file": "overlays/chi-si-cach-mang.json",
         "id": "trinh-van-bo",
         "ten": "Trịnh Văn Bô"
@@ -105136,6 +105617,19 @@
     },
     {
       "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "ngo-van-van-dai-su-quan-my",
+        "ten": "Ngô Văn Vân"
+      },
+      "b": {
+        "file": "overlays/bao-vat-quoc-gia.json",
+        "id": "bvqg-so-truc-ban-cdhcm",
+        "ten": "Sổ trực ban Chiến dịch Hồ Chí Minh"
+      },
+      "khoang_cach_m": 119
+    },
+    {
+      "a": {
         "file": "overlays/chi-si-cach-mang.json",
         "id": "ho-tung-mau",
         "ten": "Hồ Tùng Mậu"
@@ -105224,6 +105718,32 @@
         "ten": "Văn Như Cương"
       },
       "khoang_cach_m": 120
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "dang-thi-chan-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Chấn"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-ninh-nhat-le-1672",
+        "ten": "Trận Trấn Ninh — Nhật Lệ (1672), kết thúc chiến tranh Trịnh-Nguyễn"
+      },
+      "khoang_cach_m": 122
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "lai-thi-sen-qb",
+        "ten": "Mẹ Việt Nam Anh hùng Lại Thị Sen"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "tran-ninh-nhat-le-1672",
+        "ten": "Trận Trấn Ninh — Nhật Lệ (1672), kết thúc chiến tranh Trịnh-Nguyễn"
+      },
+      "khoang_cach_m": 122
     },
     {
       "a": {
@@ -105815,6 +106335,19 @@
         "file": "overlays/anh-hung-can-hien-dai.json",
         "id": "luu-chi-hieu",
         "ten": "Lưu Chí Hiếu (Lưu Đình Tập)"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "phan-dinh-tuu",
+        "ten": "Phan Đình Tựu"
       },
       "b": {
         "file": "overlays/nghia-trang-liet-si.json",
@@ -106654,6 +107187,19 @@
         "ten": "Nguyễn Trọng Hợp"
       },
       "khoang_cach_m": 166
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "ngo-van-van-dai-su-quan-my",
+        "ten": "Ngô Văn Vân"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "biet-dong-sai-gon-dai-su-quan-my-1968",
+        "ten": "Biệt động Sài Gòn đánh Đại sứ quán Mỹ (Mậu Thân 1968)"
+      },
+      "khoang_cach_m": 167
     },
     {
       "a": {
