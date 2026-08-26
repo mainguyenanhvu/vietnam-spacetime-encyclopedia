@@ -105,11 +105,16 @@ class Cdp {
   }
   /** Chạy JS trong trang; NÉM nếu trang ném — không nuốt lỗi thành xanh giả. */
   async evaluate(expression) {
-    const r = await this.send("Runtime.evaluate", {
-      expression,
-      awaitPromise: true,
-      returnByValue: true,
-    });
+    // `?? {}` là bắt buộc: CDP có lúc trả gói KHÔNG kèm `result` (lệnh bị huỷ
+    // giữa chừng, hoặc trang đang dựng lại sau khi bật hàng chục lớp). Bản đầu
+    // đọc thẳng `r.result` nên ném «Cannot read properties of undefined» và
+    // giấu mất kết quả thật của phép đo — cổng đỏ vì công cụ, không vì dữ liệu.
+    const r =
+      (await this.send("Runtime.evaluate", {
+        expression,
+        awaitPromise: true,
+        returnByValue: true,
+      })) ?? {};
     const ex = r.result?.exceptionDetails ?? r.exceptionDetails;
     if (ex) throw new Error(`lỗi trong trang: ${ex.text} ${ex.exception?.description ?? ""}`);
     return r.result?.value;
@@ -265,6 +270,55 @@ async function main() {
         if (!ok1) console.log(`        V1 THIẾU: ${thieu.join(", ") || "(nhãn chủ quyền bị ẩn)"}`);
         if (!ok2) console.log(`        V2 lớp era đè nhãn: ${JSON.stringify(s.eras)} vs iCQ=${s.iCQ}`);
       }
+    }
+
+    // ── V4: BẬT HẾT LỚP PHỦ rồi hỏi nhãn còn ĐƯỢC VẼ không ──────────────
+    //
+    // Lỗ hổng V1–V3 bịt không tới: cả ba chỉ đo trạng thái MẶC ĐỊNH, khi chưa
+    // lớp phủ nào bật. Nhưng `toggleOverlay()` thêm lớp KHÔNG kèm beforeId, nên
+    // mỗi lớp phủ bật lên là hai lớp nữa nằm TRÊN `chu-quyen-labels` — bật đủ
+    // 35 lớp thì có 70 lớp nằm trên. Người dùng thật gần như luôn bật vài lớp.
+    //
+    // Và phải hỏi bằng `queryRenderedFeatures`, KHÔNG phải `querySourceFeatures`:
+    // nguồn còn dữ liệu không chứng minh nhãn còn hiện. MapLibre giải va chạm
+    // nhãn theo thứ tự vẽ, nhãn nằm dưới thua nhãn nằm trên và bị nuốt IM LẶNG.
+    //
+    // Đo 2026-08-26: bật đủ 35 lớp → 70 lớp nằm trên, nhãn VẪN được vẽ, vì lớp
+    // phủ chỉ khai `icon-image` chứ không khai `text-field` nên không tranh va
+    // chạm CHỮ với nhãn chủ quyền. Đó là lý do hiện tại nó an toàn — nhưng là
+    // một tính chất tình cờ, không phải ràng buộc có ai canh. Thêm một
+    // `text-field` vào lớp phủ là bất biến #1 vỡ mà không cổng nào kêu.
+    // Cổng này chính là chỗ canh điều đó.
+    await cdp.evaluate(`window.__map.jumpTo({center:{lng:112.5,lat:13.5},zoom:4.4})`);
+    await sleep(2000);
+    const soLop = await cdp.evaluate(
+      `(() => { let k = 0;
+        document.querySelectorAll('#layer-control input[type=checkbox]').forEach((c) => {
+          if (!c.checked && c.name === 'overlay') { c.checked = true;
+            c.dispatchEvent(new Event('change', { bubbles: true })); k++; } });
+        return k; })()`,
+    );
+    await sleep(9000);
+    await cdp.evaluate(`window.__map.jumpTo({center:{lng:112.5,lat:13.5},zoom:4.4})`);
+    await sleep(2500);
+    const veThat = await cdp.evaluate(
+      `(() => { const m = window.__map;
+        const ve = m.queryRenderedFeatures({ layers: ['chu-quyen-labels'] })
+          .map((f) => f.properties && f.properties.ten).filter(Boolean);
+        const ids = m.getStyle().layers.map((l) => l.id);
+        const iCQ = ids.indexOf('chu-quyen-labels');
+        return { ve: [...new Set(ve)], soLopNamTren: ids.length - 1 - iCQ }; })()`,
+    );
+    const thieu4 = DAO.filter((d) => !veThat.ve.some((t) => String(t).includes(d)));
+    if (!thieu4.length)
+      console.log(
+        `✅ V4 bật ${soLop} lớp phủ (${veThat.soLopNamTren} lớp nằm trên nhãn): nhãn chủ quyền VẪN ĐƯỢC VẼ`,
+      );
+    else {
+      loi++;
+      console.log(
+        `❌ V4 bật ${soLop} lớp phủ: nhãn chủ quyền BỊ NUỐT — thiếu ${thieu4.join(", ")}`,
+      );
     }
 
     console.log(loi === 0 ? "\n✅ Bất biến chủ quyền GIỮ ĐƯỢC ở mọi thời kỳ." : `\n❌ ${loi} lỗi.`);
