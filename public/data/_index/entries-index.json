@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 6047,
-    "tong_co_toa_do": 3046,
+    "tong_muc": 6053,
+    "tong_co_toa_do": 3052,
     "so_nhom_trung_ten": 835,
-    "so_cap_trung_toa_do": 887,
+    "so_cap_trung_toa_do": 893,
     "ngay_sinh": "2026-08-26"
   },
   "entries": [
@@ -34181,6 +34181,84 @@
       "loai": "me-vnah",
       "lat": 20.98,
       "lon": 105.55,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "cao-van-ngoc-con-dao",
+      "slug": null,
+      "ten": "Cao Văn Ngọc",
+      "ten_chuan": "cao van ngoc",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 8.6833,
+      "lon": 106.6083,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "pham-thanh-trung-cai-be",
+      "slug": null,
+      "ten": "Phạm Thành Trung (Phạm Văn Đua)",
+      "ten_chuan": "pham thanh trung pham van dua",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "liet-si-tieu-bieu",
+      "lat": 8.6833,
+      "lon": 106.6083,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoang-chat-con-dao",
+      "slug": null,
+      "ten": "Hoàng Chất",
+      "ten_chuan": "hoang chat",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "liet-si-tieu-bieu",
+      "lat": 8.6833,
+      "lon": 106.6083,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ngo-den-con-dao",
+      "slug": null,
+      "ten": "Ngô Đến",
+      "ten_chuan": "ngo den",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "liet-si-tieu-bieu",
+      "lat": 8.6833,
+      "lon": 106.6083,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-cong-toc-con-dao",
+      "slug": null,
+      "ten": "Nguyễn Công Tộc",
+      "ten_chuan": "nguyen cong toc",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "liet-si-tieu-bieu",
+      "lat": 8.6833,
+      "lon": 106.6083,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-thi-hoa-tran-thi-thanh",
+      "slug": null,
+      "ten": "Nguyễn Thị Hoa (Trần Thị Thanh)",
+      "ten_chuan": "nguyen thi hoa tran thi thanh",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 8.6833,
+      "lon": 106.6083,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -106465,6 +106543,84 @@
         "file": "overlays/anh-hung-can-hien-dai.json",
         "id": "ho-van-nam-con-dao",
         "ten": "Hồ Văn Năm (Năm Em, Năm Đen)"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "cao-van-ngoc-con-dao",
+        "ten": "Cao Văn Ngọc"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "pham-thanh-trung-cai-be",
+        "ten": "Phạm Thành Trung (Phạm Văn Đua)"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "hoang-chat-con-dao",
+        "ten": "Hoàng Chất"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "ngo-den-con-dao",
+        "ten": "Ngô Đến"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "nguyen-cong-toc-con-dao",
+        "ten": "Nguyễn Công Tộc"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "nguyen-thi-hoa-tran-thi-thanh",
+        "ten": "Nguyễn Thị Hoa (Trần Thị Thanh)"
       },
       "b": {
         "file": "overlays/nghia-trang-liet-si.json",
