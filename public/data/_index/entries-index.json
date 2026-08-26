@@ -1,7 +1,7 @@
 {
   "sinh_luc": {
-    "tong_muc": 5981,
-    "tong_co_toa_do": 2980,
+    "tong_muc": 5986,
+    "tong_co_toa_do": 2985,
     "so_nhom_trung_ten": 835,
     "so_cap_trung_toa_do": 864,
     "ngay_sinh": "2026-08-26"
@@ -33323,6 +33323,71 @@
       "loai": "liet-si-tieu-bieu",
       "lat": 20.58,
       "lon": 105.94,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-hien-truong-ty-ca-long-an",
+      "slug": null,
+      "ten": "Nguyễn Văn Hiển (Nguyễn Văn Chèo, Năm Trung)",
+      "ten_chuan": "nguyen van hien nguyen van cheo nam trung",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-cand",
+      "lat": 10.6167,
+      "lon": 106.4667,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-dep-an-ninh-duc-hoa",
+      "slug": null,
+      "ten": "Nguyễn Văn Đẹp",
+      "ten_chuan": "nguyen van dep",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-cand",
+      "lat": 10.8667,
+      "lon": 106.4833,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "le-van-cang-may-chem",
+      "slug": null,
+      "ten": "Lê Văn Cảng",
+      "ten_chuan": "le van cang",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 10.8667,
+      "lon": 106.4833,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vo-van-thanh-an-ninh-long-an",
+      "slug": null,
+      "ten": "Võ Văn Thành (An ninh Long An)",
+      "ten_chuan": "vo van thanh an ninh long an",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-cand",
+      "lat": 10.5333,
+      "lon": 106.5833,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "hoang-van-quyet",
+      "slug": null,
+      "ten": "Hoàng Văn Quyết",
+      "ten_chuan": "hoang van quyet",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 21.72,
+      "lon": 106.68,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
