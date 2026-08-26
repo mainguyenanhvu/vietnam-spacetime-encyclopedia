@@ -985,34 +985,6 @@ body.kid-mode #topbar {
   border-radius: var(--bo-nho);
   background: var(--tin-nen);
 }
-.battle-controls,
-.journey-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin: 0.6rem 0;
-}
-.battle-controls button,
-.journey-controls button {
-  border: 1px solid var(--nhan);
-  background: var(--nhan);
-  color: var(--mat);
-  border-radius: var(--bo-nho);
-  padding: 0.3rem 0.7rem;
-  cursor: pointer;
-  font-size: var(--co-md);
-}
-.battle-controls button:disabled,
-.journey-controls button:disabled {
-  background: var(--vien-ro);
-  border-color: var(--vien-ro);
-  cursor: default;
-}
-.battle-step-count,
-.journey-counter {
-  font-weight: 600;
-  color: var(--chu-mem);
-}
 .tide-indicator {
   display: inline-block;
   font-size: var(--co-sm);
@@ -1028,33 +1000,12 @@ body.kid-mode #topbar {
   background: var(--mat-3);
   color: var(--luu-chu);
 }
-.battle-step,
-.journey-scene {
-  margin: 0.4rem 0;
-}
-.journey-narration {
-  border-left: 4px solid var(--nhan);
-  background: var(--mat-2);
-  padding: 0.6rem 0.8rem;
-  margin: 0.5rem 0;
-  font-size: var(--co-lg);
-  line-height: 1.5;
-}
-.journey-context {
-  color: var(--chu-mem);
-  font-size: var(--co-sm);
-}
 .journey-stage {
   width: 100%;
   border-radius: var(--bo-nho);
   background: radial-gradient(circle at 50% 35%, var(--mat-chim), var(--vien-ro));
   overflow: hidden;
   touch-action: none;
-}
-.journey-battle-btn {
-  border: 1px solid var(--brand-dam) !important;
-  background: var(--brand-dam) !important;
-  color: var(--mat-3) !important;
 }
 /* === /R8 sa đồ chiến dịch + R6 hành trình lịch sử === */
 
@@ -1732,9 +1683,7 @@ input[type="range"] {
 .model3d-real-btn,
 .qg-tab,
 .tl-filter,
-.namtien-controls button,
-.battle-controls button,
-.journey-controls button {
+.namtien-controls button {
   /* max(…, 44px) chứ không phải 2.75rem trần: theme.css đặt
      html { font-size: 0.94rem } nên 1rem = 15,04px và 2.75rem chỉ ra 41,4px —
      đo trên Chrome được 41px. Cả khối này mang tên «vùng chạm tối thiểu 44px»

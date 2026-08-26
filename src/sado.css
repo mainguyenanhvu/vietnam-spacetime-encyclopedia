@@ -1,8 +1,7 @@
 /* Sa đồ chiến dịch — Màn A (danh sách) + Màn B (chi tiết). Chỉ battle.ts
-   (`src/battle.ts`) đọc các class dưới đây; không class nào ở đây trùng tên
-   với `.battle-*`/`.journey-*` cũ trong style.css (những rule đó nay là
-   phần tử chết vì battle.ts không còn phát ra class cũ — không xoá ở đây,
-   ngoài phạm vi sở hữu file của lượt việc này, xem báo cáo cuối).
+   (`src/battle.ts`) đọc các class dưới đây. Bộ `.battle-*`/`.journey-*` cũ
+   trong style.css đã chết hẳn và đã xoá ngày 2026-08-26 — không còn nguy cơ
+   trùng tên, và không còn hai khối vùng chạm 44px tranh nhau nữa.
 
    Mọi màu là BÍ DANH trỏ token có sẵn trong theme.css — không hex mới.
    `color-mix()` phái sinh từ token có sẵn (đúng cách theme.css đã dùng cho
@@ -475,18 +474,21 @@
   line-height: 1.5;
 }
 
-/* ── Vùng chạm tối thiểu 44×44px cho các phần tử bấm được MỚI ─────────────
-   style.css:1690-1716 đã có khối luật này cho .battle-controls/.journey-*
-   nhưng lượt việc này không được sửa style.css ngoài đúng một dòng @import,
-   nên khối tương đương phải sống ở đây. CẦN main gộp hai khối lại nếu muốn
-   một nguồn sự thật duy nhất — ghi trong báo cáo cuối. */
+/* ── Vùng chạm tối thiểu 44×44px ──────────────────────────────────────────
+   Khối .battle-controls/.journey-* trong style.css đã CHẾT (journey.ts nay
+   phát `jn-*`, battle.ts phát `sd-*`) và đã xoá ngày 2026-08-26 — khối này
+   là nguồn sự thật duy nhất cho sa đồ.
+   🔴 max(…, 44px) chứ KHÔNG phải 2.75rem trần: theme.css đặt
+   html { font-size: 0.94rem } nên 1rem = 15,04px và 2.75rem chỉ ra 41,4px.
+   Khối này ra đời với 2.75rem trần nên nút sa đồ chưa bao giờ đạt 44px —
+   đúng cái bẫy đã ghi ở PLAN mục 10. Đừng viết lại thành `rem` trần. */
 .sd-era-chip,
 .sd-card,
 .sd-step-dot,
 .sd-back,
 .sd-nav {
-  min-height: 2.75rem;
-  min-width: 2.75rem;
+  min-height: max(2.75rem, 44px);
+  min-width: max(2.75rem, 44px);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════

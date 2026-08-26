@@ -431,7 +431,7 @@ h4 {
   padding: 0.32rem 0.9rem;
   font-size: var(--co-sm);
   font-weight: var(--dam-vua);
-  min-height: 2.75rem;
+  min-height: max(2.75rem, 44px); /* 2.75rem = 41,4px, xem PLAN mục 10 */
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -503,7 +503,7 @@ h4 {
 }
 #lc-period {
   width: 100%;
-  min-height: 2.75rem;
+  min-height: max(2.75rem, 44px); /* 2.75rem = 41,4px, xem PLAN mục 10 */
   padding: 0.35rem 0.6rem;
   border: 1px solid var(--vien-ro);
   border-radius: var(--bo-nho);

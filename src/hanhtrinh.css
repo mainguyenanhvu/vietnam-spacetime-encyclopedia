@@ -314,13 +314,17 @@
   animation: jn-fade-in var(--dur-vua) var(--ease-nhan) both;
 }
 
-/* ── Vùng chạm tối thiểu — style.css:1707-1716 gom khối chung nhưng file đó
-   thuộc quyền sở hữu module khác trong nhiệm vụ này; khai lại riêng ở đây
-   cho đúng luật 2,75rem (44px) đã áp toàn dự án, vượt xa 24×24px WCAG 2.5.8. */
+/* ── Vùng chạm tối thiểu 44×44px ──────────────────────────────────────────
+   🔴 `2.75rem` KHÔNG bằng 44px, dù chú thích cũ ở đây viết «luật 2,75rem
+   (44px)». theme.css đặt html { font-size: 0.94rem } nên 1rem = 15,04px và
+   2.75rem ra 41,4px. Đo trên Chrome ngày 2026-08-26: ◀ ▶ của hành trình
+   41×41px, nút «Toàn bộ lộ trình» cao 41px — dưới ngưỡng suốt từ khi khối
+   này ra đời. Sửa như style.css và sado.css: max(2.75rem, 44px).
+   Đừng viết lại thành `rem` trần. */
 .jn-map-toggle,
 .jn-step,
 .jn-nav,
 .jn-cta-battle {
-  min-height: 2.75rem;
-  min-width: 2.75rem;
+  min-height: max(2.75rem, 44px);
+  min-width: max(2.75rem, 44px);
 }
