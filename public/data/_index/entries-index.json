@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 6040,
-    "tong_co_toa_do": 3039,
+    "tong_muc": 6042,
+    "tong_co_toa_do": 3041,
     "so_nhom_trung_ten": 835,
-    "so_cap_trung_toa_do": 885,
+    "so_cap_trung_toa_do": 886,
     "ngay_sinh": "2026-08-26"
   },
   "entries": [
@@ -8402,7 +8402,7 @@
       "loai": null,
       "lat": null,
       "lon": null,
-      "so_nguon": 1,
+      "so_nguon": 2,
       "trang_thai": "reviewed"
     },
     {
@@ -34090,6 +34090,32 @@
       "loai": "me-vnah",
       "lat": 17.47,
       "lon": 106.6,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ho-van-nam-con-dao",
+      "slug": null,
+      "ten": "Hồ Văn Năm (Năm Em, Năm Đen)",
+      "ten_chuan": "ho van nam nam em nam den",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 8.6833,
+      "lon": 106.6083,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ho-quang-cua",
+      "slug": null,
+      "ten": "Anh hùng Lao động Hồ Quang Cua",
+      "ten_chuan": "anh hung lao dong ho quang cua",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "ah-lao-dong",
+      "lat": 9.6025,
+      "lon": 105.98,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -106348,6 +106374,19 @@
         "file": "overlays/anh-hung-can-hien-dai.json",
         "id": "phan-dinh-tuu",
         "ten": "Phan Đình Tựu"
+      },
+      "b": {
+        "file": "overlays/nghia-trang-liet-si.json",
+        "id": "ntls-hang-duong",
+        "ten": "Nghĩa trang Hàng Dương (Côn Đảo)"
+      },
+      "khoang_cach_m": 148
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "ho-van-nam-con-dao",
+        "ten": "Hồ Văn Năm (Năm Em, Năm Đen)"
       },
       "b": {
         "file": "overlays/nghia-trang-liet-si.json",

@@ -6908,6 +6908,38 @@
         "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
       ],
       "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã."
+    },
+    {
+      "id": "ho-van-nam-con-dao",
+      "ten": "Hồ Văn Năm (Năm Em, Năm Đen)",
+      "lon": 106.6083,
+      "lat": 8.6833,
+      "loai": "anh-hung-llvt",
+      "nam_hien_thi": "?–1952",
+      "mo_ta": "Tham gia cách mạng chống Pháp từ rất trẻ, lập nhiều thành tích khiến địch khiếp sợ; bị bắt và bị tuyên án tử hình, hy sinh năm 1952 khi mới 18 tuổi. Truy tặng Anh hùng LLVTND năm 2014.",
+      "dia_diem": "Nghĩa trang Hàng Dương, Côn Đảo, tỉnh Bà Rịa – Vũng Tàu; quê tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Trung tâm Bảo tồn Di tích Quốc gia Côn Đảo — https://trungtambaotonditichquocgiacondao.vn/le-khanh-thanh-mo-ahllvtnd-viet-nam-ho-van-nam-tai-di-tich-nghia-trang-hang-duong-con-dao/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu xã/huyện tại Vĩnh Long, chỉ ghi tên tỉnh — chưa đủ chi tiết để đặt toạ độ ở quê, nên dùng Côn Đảo (nơi hy sinh, có mộ cụ thể). «Hồ Văn Năm» là tên phổ biến nên slug kèm địa danh. Năm sinh suy ra khoảng 1934 từ «18 tuổi năm 1952» — là phép tính, không phải dữ kiện nguồn nêu, nên không đưa vào mô tả."
+    },
+    {
+      "id": "ho-quang-cua",
+      "ten": "Anh hùng Lao động Hồ Quang Cua",
+      "lon": 105.98,
+      "lat": 9.6025,
+      "loai": "ah-lao-dong",
+      "nam_hien_thi": "phong tặng 2013",
+      "mo_ta": "Kỹ sư nông nghiệp, tốt nghiệp ngành trồng trọt năm 1978; từ thập niên 1990 cùng cộng sự lai tạo dòng lúa thơm mang thương hiệu ST của Sóc Trăng — ST3, ST5, ST10, ST20, ST24 — và sau hơn 20 năm kiên trì cho ra đời ST25, ba lần được công nhận gạo ngon nhất thế giới. Phong tặng Anh hùng Lao động năm 2013.",
+      "dia_diem": "Tỉnh Sóc Trăng (chưa rõ xã/huyện quê quán)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam — https://vov.gov.vn/anh-hung-ho-quang-cua-va-giac-mo-nang-tam-gao-viet-dtnew-1142368"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh (chỉ ghi «ngoài 70 tuổi») và không nêu xã/huyện quê quán — toạ độ ở mức tỉnh."
     }
   ]
 }
