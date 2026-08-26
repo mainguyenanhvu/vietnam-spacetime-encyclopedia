@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 5915,
-    "tong_co_toa_do": 2914,
+    "tong_muc": 5920,
+    "tong_co_toa_do": 2919,
     "so_nhom_trung_ten": 835,
-    "so_cap_trung_toa_do": 837,
+    "so_cap_trung_toa_do": 846,
     "ngay_sinh": "2026-08-26"
   },
   "entries": [
@@ -31897,19 +31897,6 @@
       "trang_thai": "draft"
     },
     {
-      "id": "duong-quang-dong",
-      "slug": null,
-      "ten": "Dương Quang Đông (Dung Văn Phúc, Năm Đông)",
-      "ten_chuan": "duong quang dong dung van phuc nam dong",
-      "file": "overlays/anh-hung-can-hien-dai.json",
-      "mien": "overlays",
-      "loai": "anh-hung-llvt",
-      "lat": 9.7333,
-      "lon": 106.1167,
-      "so_nguon": 1,
-      "trang_thai": "draft"
-    },
-    {
       "id": "tran-cong-bang-bac-lieu",
       "slug": null,
       "ten": "Trần Công Bằng",
@@ -32231,7 +32218,7 @@
       "loai": "anh-hung-llvt",
       "lat": 22.78,
       "lon": 106.52,
-      "so_nguon": 1,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -32268,8 +32255,8 @@
       "file": "overlays/anh-hung-can-hien-dai.json",
       "mien": "overlays",
       "loai": "ah-lao-dong",
-      "lat": 20.17,
-      "lon": 106.33,
+      "lat": 21.03,
+      "lon": 105.85,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -32465,6 +32452,84 @@
       "loai": "anh-hung-llvt",
       "lat": 13.28,
       "lon": 109.28,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-van-ngo-campuchia",
+      "slug": null,
+      "ten": "Nguyễn Văn Ngộ",
+      "ten_chuan": "nguyen van ngo",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 10.6333,
+      "lon": 106.2,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-duc-toan-tnxp",
+      "slug": null,
+      "ten": "Nguyễn Đức Toàn (Tư Dũng)",
+      "ten_chuan": "nguyen duc toan tu dung",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "bieu-tuong-khang-chien",
+      "lat": 9.6833,
+      "lon": 106.4667,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nguyen-phuoc-tan-an-ninh",
+      "slug": null,
+      "ten": "Nguyễn Phước Tân (Hai Tân)",
+      "ten_chuan": "nguyen phuoc tan hai tan",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-cand",
+      "lat": 10.3,
+      "lon": 105.7667,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "vo-hung-cuong-le-van-tam",
+      "slug": null,
+      "ten": "Võ Hùng Cường (Võ Văn Thuận)",
+      "ten_chuan": "vo hung cuong vo van thuan",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 9.6025,
+      "lon": 105.98,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tran-thi-tiet",
+      "slug": null,
+      "ten": "Trần Thị Tiết",
+      "ten_chuan": "tran thi tiet",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 9.9,
+      "lon": 106.6167,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dong-van-cong",
+      "slug": null,
+      "ten": "Trung tướng Đồng Văn Cống",
+      "ten_chuan": "trung tuong dong van cong",
+      "file": "overlays/anh-hung-can-hien-dai.json",
+      "mien": "overlays",
+      "loai": "anh-hung-llvt",
+      "lat": 10.1,
+      "lon": 106.4833,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -34571,7 +34636,7 @@
       "loai": "nha-cach-mang-tien-boi",
       "lat": 9.75,
       "lon": 106.15,
-      "so_nguon": 1,
+      "so_nguon": 2,
       "trang_thai": "reviewed"
     },
     {
@@ -95569,6 +95634,97 @@
     {
       "a": {
         "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh (819–820)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "overlays/chien-dich-tran-danh.json",
+        "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+        "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-an-nam-do-ho-phu-679",
+        "ten": "Nhà Đường lập An Nam đô hộ phủ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-ly-tu-tien-dinh-kien-687",
+        "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "khoi-nghia-duong-thanh-819",
+        "ten": "Khởi nghĩa Dương Thanh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "timeline/moc-lich-su.json",
+        "id": "su-kien-hoi-the-dong-quan-1427",
+        "ten": "Hội thề Đông Quan, quân Minh rút khỏi Đại Việt"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
         "id": "huynh-thi-phuong-lien",
         "ten": "Huỳnh Thị Phương Liên"
       },
@@ -102263,6 +102419,19 @@
     },
     {
       "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "nguyen-phuoc-tan-an-ninh",
+        "ten": "Nguyễn Phước Tân (Hai Tân)"
+      },
+      "b": {
+        "file": "overlays/nha-the-thao-lich-su.json",
+        "id": "dao-thien-hai",
+        "ten": "Đào Thiên Hải"
+      },
+      "khoang_cach_m": 90
+    },
+    {
+      "a": {
         "file": "overlays/di-san-phi-vat-the.json",
         "id": "nha-nhac-cung-dinh-hue",
         "ten": "Nhã nhạc – Âm nhạc cung đình Việt Nam"
@@ -105965,6 +106134,19 @@
         "ten": "Văn Miếu – Quốc Tử Giám"
       },
       "khoang_cach_m": 190
+    },
+    {
+      "a": {
+        "file": "overlays/anh-hung-can-hien-dai.json",
+        "id": "tran-ngoc-luong",
+        "ten": "Trần Ngọc Lương"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "thap-bao-thien",
+        "ten": "Tháp Báo Thiên — An Nam tứ đại khí"
+      },
+      "khoang_cach_m": 191
     },
     {
       "a": {
