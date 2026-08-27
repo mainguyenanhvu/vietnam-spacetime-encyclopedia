@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Ông tổ nghề (craft founders) và thành hoàng/danh thần bổ sung (chưa có trong CSDL). Toạ độ làng nghề/đền thờ ước lượng theo địa danh xã/huyện (mức 'trung'-'cao'). Nguồn: cổng nhà nước cấp xã/tỉnh (hanoi.gov.vn, sovhtt.hanoi.gov.vn, ninhbinh.gov.vn, bacninh.gov.vn, thanhhoa.gov.vn, hungyen.gov.vn, baochinhphu.vn, baonamdinh.vn), Cục Di sản văn hóa (dsvh.gov.vn), Uỷ ban Nhà nước về người Việt Nam ở nước ngoài (scov.gov.vn). KHÔNG dùng Wikipedia. [Phase 3 lô4: hợp nhất 2 lớp → nhóm «Tổ nghề · Nghệ nhân · Làng nghề truyền thống» (dedup exact).]",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Sở Văn hóa và Thể thao Hà Nội — sovhtt.hanoi.gov.vn",
     "UBND Thành phố Hà Nội và các xã/phường trực thuộc — hanoi.gov.vn",
@@ -21,7 +21,17 @@
     "Cổng TTĐT phường Nghĩa Đô, Hà Nội — nghiado.hanoi.gov.vn",
     "Bộ Văn hóa, Thể thao và Du lịch — bvhttdl.gov.vn",
     "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.gov.vn",
-    "Cổng TTĐT các phường/xã trực thuộc Hà Nội — hanoi.gov.vn"
+    "Cổng TTĐT các phường/xã trực thuộc Hà Nội — hanoi.gov.vn",
+    "VOV4 — vov4.vov.vn",
+    "VietnamPlus (TTXVN) — vietnamplus.vn",
+    "Hà Nội Mới — hanoimoi.vn",
+    "VOV — vov.vn",
+    "Báo Văn Hóa (Bộ VHTTDL) — baovanhoa.vn",
+    "Bộ Công Thương — moit.gov.vn",
+    "Báo Nhân Dân — nhandan.vn",
+    "Cổng TTĐT tỉnh Đồng Nai — dongnai.gov.vn",
+    "Báo ảnh Dân tộc và Miền núi (TTXVN) — dantocmiennui.baotintuc.vn",
+    "Cổng TTĐT huyện Lấp Vò, tỉnh Đồng Tháp — lapvo.dongthap.gov.vn"
   ],
   "items": [
     {
@@ -1116,6 +1126,297 @@
         "Báo Nhân Dân điện tử — Vĩnh Long: Nghề làm tàu hũ ky xã Mỹ Hòa được công nhận Di sản văn hóa quốc gia — https://nhandan.vn/vinh-long-nghe-lam-tau-hu-ky-xa-my-hoa-duoc-cong-nhan-di-san-van-hoa-quoc-gia-post746069.html"
       ],
       "xep_hang": "Di sản văn hóa phi vật thể quốc gia — đưa vào danh mục ngày 4/8/2022 (Bộ VHTTDL); số quyết định chưa xác minh được"
+    },
+    {
+      "id": "nghe-ren-nung-an-phuc-sen",
+      "ten": "Nghề rèn của người Nùng An — Phúc Sen",
+      "lon": 106.32,
+      "lat": 22.66,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia 2019; nghề có từ nhiều thế kỷ trước",
+      "mo_ta": "Nghề rèn thủ công của người Nùng An tạo khoảng 30 loại sản phẩm (dao, búa, rìu, cày, cuốc), thợ tôi thép hoàn toàn bằng kinh nghiệm quan sát màu sắt, không theo công thức viết. Theo thần tích địa phương, nghề có từ hai nguồn gốc khác nhau: hoặc do tổ tiên mang theo khi di cư, hoặc kế thừa lò rèn vũ khí thời nhà Mạc (thế kỷ XVI).",
+      "dia_diem": "Xã Phúc Sen, huyện Quảng Uyên, tỉnh Cao Bằng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hóa — Nghề rèn của người Nùng An — https://dsvh.gov.vn/nghe-ren-cua-nguoi-nung-an-3130"
+      ]
+    },
+    {
+      "id": "nghe-giay-ban-dao-do-lung-ot",
+      "ten": "Nghề làm giấy bản của người Dao Đỏ — Lũng Ót",
+      "lon": 105.95,
+      "lat": 22.65,
+      "loai": "lang-nghe",
+      "mo_ta": "Xóm 100% người Dao Đỏ, trên 90% hộ làm giấy bản thủ công từ cây trúc non (ngâm vôi 2 tháng, ngâm nước sạch 2 tháng, nghiền, tráng bằng nhựa cây). Mỗi hộ sản xuất khoảng 100–200 thếp giấy mỗi năm, dùng cho viết sắc, làm vàng mã và nghi lễ truyền thống.",
+      "dia_diem": "Xóm Lũng Ót, xã Yên Lạc, huyện Nguyên Bình, tỉnh Cao Bằng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VOV4 — Giữ nghề làm giấy bản truyền thống của người Dao Đỏ ở Cao Bằng — https://vov4.vov.vn/bao-ton-vh/giu-nghe-lam-giay-ban-truyen-thong-cua-nguoi-dao-do-o-cao-bang-446352.vov4"
+      ],
+      "ghi_chu_bien_tap": "Nguồn xác nhận nghề tồn tại và địa điểm chính xác nhưng không nêu đã được công nhận di sản văn hóa phi vật thể quốc gia hay làng nghề truyền thống chính thức — không ghi trạng thái công nhận để tránh suy đoán."
+    },
+    {
+      "id": "nghe-det-lanh-mong-lung-tam",
+      "ten": "Nghề dệt lanh của người Mông — Lùng Tám",
+      "lon": 104.98,
+      "lat": 23.12,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia 1/2016",
+      "mo_ta": "Kỹ thuật trồng lanh, xe sợi, dệt vải lanh của người Mông có từ lâu đời, tạo ví, khăn, trang phục, túi thổ cẩm hoàn toàn thủ công. Sản phẩm hợp tác xã Lùng Tám đã xuất khẩu sang hơn 20 nước.",
+      "dia_diem": "Xã Lùng Tám, huyện Quản Bạ, tỉnh Tuyên Quang (Hà Giang cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamPlus — Lùng Tám - ngôi làng dệt lanh lưu giữ hồn văn hóa người Mông — https://www.vietnamplus.vn/lung-tam-ngoi-lang-det-lanh-luu-giu-hon-van-hoa-nguoi-mong-giua-cao-nguyen-da-post1114609.vnp",
+        "Bộ Văn hóa, Thể thao và Du lịch — Công bố Danh mục di sản văn hóa phi vật thể quốc gia (QĐ 246/QĐ-BVHTTDL, 19/01/2016, mục 8: Kỹ thuật trồng lanh và dệt vải lanh của người Mông, Hà Giang) — https://bvhttdl.gov.vn/cong-bo-danh-muc-di-san-van-hoa-phi-vat-the-quoc-gia-7388.htm"
+      ]
+    },
+    {
+      "id": "nghe-ren-mong-sinh-phinh",
+      "ten": "Nghề rèn của người Mông — Sính Phình, Tủa Chùa",
+      "lon": 103.35,
+      "lat": 21.95,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "trao giấy chứng nhận Di sản văn hóa phi vật thể quốc gia ngày 21/10/2023 (tại Tuần Văn hóa, Thể thao và Du lịch huyện Tủa Chùa)",
+      "mo_ta": "Nghề rèn dao, cuốc, lưỡi cày phục vụ đời sống tự cung tự cấp của người Mông tỉnh Điện Biên. Thợ rèn có bí quyết riêng khi tôi thép — nhìn màu thép để chọn cách tôi bằng nước, nước chuối hoặc dầu để tạo độ sắc bền. Nghệ nhân tiêu biểu: Cứ A Khua, người xã Sính Phình.",
+      "dia_diem": "Xã Sính Phình, huyện Tủa Chùa, tỉnh Điện Biên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamPlus — Nghề rèn của người Mông ở Điện Biên là Di sản Phi vật thể Quốc gia — https://www.vietnamplus.vn/nghe-ren-cua-nguoi-mong-o-dien-bien-la-di-san-phi-vat-the-quoc-gia-post903490.vnp",
+        "Thông tấn xã Việt Nam — Đỏ lửa giữ nghề rèn của người Mông ở Điện Biên — https://nvsk.vnanet.vn/do-lua-giu-nghe-ren-cua-nguoi-mong-o-dien-bien-1-154388.vna"
+      ],
+      "ghi_chu_bien_tap": "Công nhận áp dụng chung cho nghề rèn người Mông toàn tỉnh Điện Biên (nhiều huyện), không riêng một bản/xã — đã tự WebFetch xác nhận trực tiếp, tránh chi tiết «bản Dê Dàng» xuất hiện trong tóm tắt WebSearch nhưng KHÔNG có trong trang gốc."
+    },
+    {
+      "id": "to-nghe-dan-co-te-nguyen-thao-lam",
+      "ten": "Nguyễn Thảo Lâm — Tổ nghề đan cỏ tế Phú Túc (Lưu Thượng)",
+      "lon": 105.85,
+      "lat": 20.71,
+      "loai": "to-nghe",
+      "nam_hien_thi": "theo gia phả làng Lưu Thượng: 1683 (thời Lê); công nhận làng nghề truyền thống 2001 và 2023",
+      "mo_ta": "Tương truyền cuối thế kỷ XVII, bà Nguyễn Thảo Lâm phát hiện cách xử lý cỏ tế (cây guột) để đan vật dụng, khai sinh nghề đan cỏ tế Lưu Thượng. UBND tỉnh Hà Tây (cũ) công nhận làng nghề truyền thống năm 2001, Hà Nội công nhận lại năm 2023; hiện cả 8 thôn của xã Phú Túc đều được công nhận làng nghề.",
+      "dia_diem": "Thôn Lưu Thượng, xã Phú Túc, huyện Phú Xuyên, TP. Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Hà Nội Mới — Phú Túc – sức sống hơn 300 năm của làng nghề cỏ tế giữa lòng Thủ đô — https://hanoimoi.vn/phu-tuc-suc-song-hon-300-nam-cua-lang-nghe-co-te-giua-long-thu-do-680527.html"
+      ]
+    },
+    {
+      "id": "lang-com-me-tri",
+      "ten": "Làng cốm Mễ Trì",
+      "lon": 105.78,
+      "lat": 21,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia 2019",
+      "mo_ta": "Làng cốm Mễ Trì phát triển vượt cốm làng Vòng (Cầu Giấy) về quy mô hiện nay; nghề làm cốm truyền thống của làng được đưa vào Danh mục di sản văn hóa phi vật thể quốc gia.",
+      "dia_diem": "Phường Mễ Trì, quận Nam Từ Liêm, TP. Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VOV — Hà Nội có thêm hai di sản văn hóa phi vật thể quốc gia — https://vov.vn/van-hoa-giai-tri/ha-noi-co-them-hai-di-san-van-hoa-phi-vat-the-quoc-gia-875952.vov"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu số quyết định cụ thể; một nguồn khác (về nghề rèn Phúc Sen) dẫn số QĐ 446/QĐ-BVHTTDL ngày 29/01/2019 cho một đợt công nhận khác — KHÔNG gán số quyết định này cho Mễ Trì vì chưa đối chiếu được văn bản gốc."
+    },
+    {
+      "id": "nghe-det-zeng-ta-oi-a-luoi",
+      "ten": "Nghề dệt Zèng của người Tà Ôi — A Lưới",
+      "lon": 107.28,
+      "lat": 16.22,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia 21/11/2016",
+      "mo_ta": "Nghề dệt truyền thống của người Tà Ôi, đặc trưng bởi kỹ thuật đưa cườm trực tiếp vào sợi dệt trong lúc dệt (không đính lên sau) — kỹ thuật riêng có trong hệ thống dệt thổ cẩm Việt Nam.",
+      "dia_diem": "Huyện A Lưới, TP. Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân trí — Nghề dệt Zèng Huế được công nhận Di sản văn hóa phi vật thể quốc gia — https://dantri.com.vn/van-hoa/nghe-det-zeng-hue-duoc-cong-nhan-di-san-van-hoa-phi-vat-the-quoc-gia-20170116180349608.htm"
+      ]
+    },
+    {
+      "id": "to-nghe-non-bai-tho-bui-quang-bac",
+      "ten": "Bùi Quang Bặc — Tổ nghề nón bài thơ Tây Hồ",
+      "lon": 107.68,
+      "lat": 16.45,
+      "loai": "to-nghe",
+      "nam_hien_thi": "sáng tạo nón bài thơ khoảng 1959–1960",
+      "mo_ta": "Nghề làm nón lá ở Tây Hồ có từ hàng trăm năm; khoảng năm 1959–1960, nghệ nhân Bùi Quang Bặc sáng tạo «nón bài thơ» — ép câu thơ giữa hai lớp lá nón, tạo dấu ấn riêng cho nón Huế. Hiện phần lớn hộ trong làng vẫn theo nghề.",
+      "dia_diem": "Làng Tây Hồ, xã Phú Hồ, huyện Phú Vang, TP. Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Công Thương — Nón Huế sản phẩm nổi tiếng của vùng đất cố đô — https://moit.gov.vn/tu-hao-hang-viet-nam/non-hue-san-pham-noi-tieng-cua-vung-dat-co-do.html"
+      ]
+    },
+    {
+      "id": "nghe-det-tho-cam-thai-ban-na",
+      "ten": "Nghề dệt thổ cẩm của người Thái — bản Na",
+      "lon": 104.15,
+      "lat": 19.55,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia 2025 (QĐ 1657/QĐ-BVHTTDL)",
+      "mo_ta": "Nghề dệt thổ cẩm gắn với đời sống vật chất và tinh thần người Thái ở Nghệ An — hoa văn quả trám, cây cối, chim muông xuất hiện trong lễ cưới, mừng nhà mới, cúng tổ tiên. Nghệ nhân tiêu biểu: bà Lô Thị Mai, trưởng làng nghề bản Na.",
+      "dia_diem": "Bản Na, xã Hữu Lập, huyện Kỳ Sơn, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Văn Hóa (Bộ VHTTDL) — Nghề dệt thổ cẩm người Thái được công nhận Di sản văn hóa phi vật thể quốc gia — https://baovanhoa.vn/dan-toc-ton-giao/nghe-det-tho-cam-nguoi-thai-duoc-cong-nhan-di-san-van-hoa-phi-vat-the-quoc-gia-142099.html"
+      ]
+    },
+    {
+      "id": "lang-non-ngua-phu-gia",
+      "ten": "Làng nghề nón ngựa Phú Gia",
+      "lon": 109.05,
+      "lat": 13.95,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "nghề hơn 200 năm; đón bằng di sản văn hóa phi vật thể quốc gia 12/9/2024",
+      "mo_ta": "Nón ngựa Phú Gia là sản phẩm thủ công thêu trên khung nón, trải qua nhiều công đoạn tỉ mỉ: chọn lá, ủi lá, cắt viền, làm khung, thêu, trang trí. Làng đã được công nhận làng nghề truyền thống trước khi lên di sản văn hóa phi vật thể quốc gia.",
+      "dia_diem": "Thôn Phú Gia, xã Cát Tường, huyện Phù Cát, tỉnh Gia Lai (Bình Định cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Chính phủ — Nghề chằm nón ngựa Phú Gia là di sản văn hóa phi vật thể quốc gia — https://baochinhphu.vn/nghe-cham-non-ngua-phu-gia-la-di-san-van-hoa-phi-vat-the-quoc-gia-102240912172135388.htm"
+      ]
+    },
+    {
+      "id": "nghe-det-co-tu-dhroong",
+      "ten": "Nghề dệt thổ cẩm của người Cơ Tu — Đhrôồng",
+      "lon": 107.85,
+      "lat": 15.9,
+      "loai": "lang-nghe",
+      "mo_ta": "Theo truyền thuyết, người Cơ Tu xưa phát hiện cây bông (kpay) mọc hoang trong rừng, đem về trồng và phát triển thành nghề dệt. Sản phẩm vừa là vật dụng, vừa là biểu tượng của cải, vừa mang giá trị nghệ thuật bản sắc dân tộc.",
+      "dia_diem": "Làng du lịch cộng đồng Đhrôồng, xã Đông Giang, TP. Đà Nẵng (Quảng Nam cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Văn Hóa — Trải nghiệm văn hóa Cơ Tu ở Đhrôồng — https://baovanhoa.vn/dan-toc-ton-giao/trai-nghiem-van-hoa-co-tu-o-dhroong-203382.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn xác nhận nghề đã được công nhận nhưng không nêu số quyết định/ngày công nhận cụ thể — không suy đoán."
+    },
+    {
+      "id": "nghe-det-ba-na-cheo-leo",
+      "ten": "Nghề dệt thủ công truyền thống của người Ba Na — Cheo Leo",
+      "lon": 108.05,
+      "lat": 14.35,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia (số quyết định chưa tự xác nhận được — xem ghi_chu_bien_tap)",
+      "mo_ta": "Nghề dệt thổ cẩm truyền thống của người Ba Na được duy trì tại làng Cheo Leo và vùng lân cận; nghệ nhân tiêu biểu Y Triêng. Nghề gắn với đời sống sinh hoạt, được xem là tiêu chuẩn đánh giá phẩm chất phụ nữ Ba Na, truyền từ thế hệ này sang thế hệ khác.",
+      "dia_diem": "Làng Cheo Leo, thị trấn Đắk Rve, huyện Kon Rẫy, tỉnh Quảng Ngãi (Kon Tum cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Nghề dệt thủ công truyền thống của người Ba Na — https://nhandan.vn/nghe-det-thu-cong-truyen-thong-cua-nguoi-ba-na-post796978.html"
+      ],
+      "ghi_chu_bien_tap": "Số Quyết định công nhận CHƯA xác nhận được: kontum.gov.vn (nơi công bố) không phân giải DNS qua cả WebFetch lẫn crawl4ai ngày 2026-08-27; nguồn nhandan.vn mở được nhưng không ghi số QĐ. KHÔNG ghi số để tránh bịa. Địa danh cấp tỉnh ĐÃ đối chiếu ngày 2026-08-27 với public/data/boundaries/vn-34-tinh-2025.geojson: Kon Tum cũ thuộc tỉnh Quảng Ngãi sau sáp nhập 2025 — đúng."
+    },
+    {
+      "id": "lang-gom-bien-hoa",
+      "ten": "Làng gốm Biên Hòa",
+      "lon": 106.82,
+      "lat": 10.95,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "UBND tỉnh Đồng Nai công nhận nghề truyền thống 26/6/2019; lò gốm đầu tiên xây năm 1878",
+      "mo_ta": "Gốm Biên Hòa hình thành từ Cù lao Phố (thế kỷ XVII), phát triển ở Tân Vạn cuối thế kỷ XIX. Năm 1903 người Pháp lập Trường Mỹ nghệ thực hành Biên Hòa — trường dạy nghề gốm đầu tiên ở Đông Dương, kết hợp ba dòng gốm Việt – Chăm – Hoa với kỹ thuật Pháp; từng xuất khẩu sang hơn 30 nước.",
+      "dia_diem": "Cụm công nghiệp gốm sứ Tân Hạnh, xã Tân Hạnh, TP. Biên Hòa, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Nai — Công nhận gốm Biên Hòa là nghề truyền thống — https://dongnai.gov.vn/vi/wcag/Chuong-trinh-Ke-hoach-phat-trien-KTXH/cong-nhan-gom-bien-hoa-la-nghe-truyen-thong-2616.html"
+      ]
+    },
+    {
+      "id": "nghe-det-stieng-soc-bom-bo",
+      "ten": "Nghề dệt thổ cẩm của người S'Tiêng — Sóc Bom Bo",
+      "lon": 107.15,
+      "lat": 11.75,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia 2024 (QĐ 375/QĐ-BVHTTDL)",
+      "mo_ta": "Nghề thủ công truyền thống của cộng đồng S'Tiêng quần cư quanh Sóc Bom Bo — địa danh gắn với bài hát «Tiếng chày trên sóc Bom Bo» thời kháng chiến — được đưa vào Danh mục di sản văn hóa phi vật thể quốc gia.",
+      "dia_diem": "Sóc Bom Bo, xã Bình Minh, huyện Bù Đăng, tỉnh Đồng Nai (Bình Phước cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo ảnh Dân tộc và Miền núi (TTXVN) — Nghề dệt thổ cẩm của người S'Tiêng tỉnh Bình Phước trở thành Di sản Văn hóa phi vật thể Quốc gia — https://dantocmiennui.baotintuc.vn/nghe-det-tho-cam-cua-nguoi-stieng-tinh-binh-phuoc-tro-thanh-di-san-van-hoa-phi-vat-the-quoc-gia-post346664.html"
+      ]
+    },
+    {
+      "id": "to-nghe-dong-xuong-ghe-pham-van-thuong",
+      "ten": "Phạm Văn Thuông — Tổ nghề đóng xuồng ghe Bà Đài",
+      "lon": 105.63,
+      "lat": 10.27,
+      "loai": "to-nghe",
+      "nam_hien_thi": "khoảng 1875–1945",
+      "mo_ta": "Ông Phạm Văn Thuông, tương truyền là «ông tổ» của làng nghề đóng xuồng ghe rạch Bà Đài, có biệt danh «Sáu Xuồng Cui» nhờ tài đóng xuồng cui nổi tiếng. Làng nghề tồn tại hơn 100 năm; thời hoàng kim (1978–2000) xuất bán hàng chục nghìn xuồng ghe mỗi năm, nay chỉ còn khoảng 50 hộ duy trì.",
+      "dia_diem": "Rạch Bà Đài, xã Long Hậu, huyện Lai Vung, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamPlus — Giữ lửa nghề đóng xuồng, ghe trăm tuổi rạch Bà Đài — https://www.vietnamplus.vn/giu-lua-nghe-dong-xuong-ghe-tram-tuoi-rach-ba-dai-post1006679.vnp"
+      ]
+    },
+    {
+      "id": "lang-chieu-dinh-yen",
+      "ten": "Làng chiếu Định Yên",
+      "lon": 105.53,
+      "lat": 10.36,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia 9/2013; làng hình thành hơn 100 năm",
+      "mo_ta": "Nổi tiếng với «chợ ma» — chợ chiếu họp lúc đêm khuya không cố định giờ giấc, mỗi phiên chỉ họp khoảng 2 giờ để thương lái tới lấy chiếu, đặc trưng vùng sông nước Tây Nam Bộ khi làng nghề còn phát đạt. Làng hiện có 620 máy dệt chiếu, 431 hộ hoạt động, sản lượng hơn 1,3 triệu chiếc chiếu/năm, doanh thu khoảng 80 tỷ đồng, sản phẩm xuất sang Campuchia, Thái Lan, Đài Loan.",
+      "dia_diem": "Xã Định Yên, huyện Lấp Vò, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Sống lại ký ức «Chợ ma» ở Làng chiếu Định Yên, Đồng Tháp — https://nhandan.vn/song-lai-ky-uc-cho-ma-o-lang-chieu-dinh-yen-dong-thap-post771345.html",
+        "Cổng TTĐT huyện Lấp Vò, tỉnh Đồng Tháp — Định Yên – làng chiếu 'trăm tuổi' — https://lapvo.dongthap.gov.vn/chi-tiet-bai-viet/-/asset_publisher/1mOzUrGkrdAE/content/id/442010"
+      ]
+    },
+    {
+      "id": "to-nghe-nem-lai-vung-nguyen-thi-man",
+      "ten": "Nguyễn Thị Mặn (Tư Mặn) — Tổ nghề nem Lai Vung",
+      "lon": 105.65,
+      "lat": 10.27,
+      "loai": "to-nghe",
+      "nam_hien_thi": "khoảng 1960",
+      "mo_ta": "Theo lời truyền lại, bà Nguyễn Thị Mặn (Tư Mặn) là người đầu tiên làm nem để cúng giỗ, Tết; bà con thấy ngon nên học nghề, dần hình thành cả làng nghề. Nem được gọi theo tên chợ Lai Vung nơi tiêu thụ ban đầu, sau lan khắp bến xe, bến phà miền Tây. Nghề làm nem Lai Vung được Bộ VHTTDL đưa vào danh mục di sản văn hóa phi vật thể quốc gia.",
+      "dia_diem": "Xã Tân Thành và thị trấn Lai Vung, huyện Lai Vung, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamPlus — Đồng Tháp: Nghề làm nem Lai Vung trở thành Di sản Văn hóa Phi vật thể Quốc gia — https://www.vietnamplus.vn/dong-thap-nghe-lam-nem-lai-vung-tro-thanh-di-san-van-hoa-phi-vat-the-quoc-gia-post923096.vnp"
+      ]
+    },
+    {
+      "id": "nghe-det-cham-chau-phong",
+      "ten": "Nghề dệt thổ cẩm của người Chăm — Châu Phong",
+      "lon": 105.13,
+      "lat": 10.83,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "công nhận Di sản văn hóa phi vật thể quốc gia (QĐ 480/QĐ-BVHTTDL, 6/3/2023)",
+      "mo_ta": "Nghề dệt thổ cẩm có lịch sử từ đầu thế kỷ XIX của cộng đồng Chăm theo Hồi giáo tại An Giang — khác dòng Chăm Bà-la-môn ở Ninh Thuận (làng Mỹ Nghiệp). Hoa văn đặc trưng sóng nước, vân mây, ô vuông, kẻ sọc; nghề truyền qua nhiều thế hệ trong gia đình nhưng đang mai một vì cạnh tranh dệt máy công nghiệp.",
+      "dia_diem": "Xã Châu Phong, thị xã Tân Châu, tỉnh An Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bảo tồn và phát huy nghề dệt thổ cẩm của đồng bào Chăm tại An Giang — https://nhandan.vn/bao-ton-va-phat-huy-nghe-det-tho-cam-cua-dong-bao-cham-tai-an-giang-post831836.html"
+      ]
+    },
+    {
+      "id": "nghe-duong-thot-not-khmer",
+      "ten": "Nghề làm đường thốt nốt của người Khmer",
+      "lon": 104.98,
+      "lat": 10.57,
+      "loai": "lang-nghe",
+      "nam_hien_thi": "lễ vinh danh 27/11/2024",
+      "mo_ta": "Nghề nấu đường thốt nốt của đồng bào Khmer vùng Bảy Núi — đặc sản trồng và chế biến truyền thống được người dân và du khách ưa chuộng. Bộ VHTTDL công nhận Di sản văn hóa phi vật thể quốc gia.",
+      "dia_diem": "Huyện Tri Tôn và thị xã Tịnh Biên, tỉnh An Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamPlus — Nghề làm đường thốt nốt được công nhận Di sản Văn hóa Phi vật thể Quốc gia — https://www.vietnamplus.vn/nghe-lam-duong-thot-not-duoc-cong-nhan-di-san-van-hoa-phi-vat-the-quoc-gia-post995931.vnp"
+      ]
     }
   ]
 }

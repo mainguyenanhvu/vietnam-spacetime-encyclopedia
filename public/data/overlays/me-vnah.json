@@ -1,13 +1,21 @@
 {
   "ghi_chu": "Mẹ Việt Nam Anh hùng — đại diện tiêu biểu + tượng đài tưởng niệm (cả nước ~140.000 Mẹ VNAH, chỉ chọn vài gương tiêu biểu qua nguồn chính thống). Anh hùng Lao động đã TÁCH sang anh-hung-lao-dong-khoa-hoc.json. KHÔNG dùng Wikipedia. Danh sách còn ít — sẽ mở rộng theo vùng miền.",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Cổng TTĐT Chính phủ — baochinhphu.vn",
     "Báo Quân đội nhân dân — qdnd.vn",
     "Cổng TTĐT Đoàn TNCS Hồ Chí Minh tỉnh Hà Tĩnh — dhtn.hatinh.gov.vn",
     "Bảo tàng Phụ nữ Nam Bộ — baotangphunu.com",
     "Cổng TTĐT tỉnh Quảng Nam",
-    "Khu di tích Địa đạo Củ Chi"
+    "Khu di tích Địa đạo Củ Chi",
+    "Sở Nội vụ tỉnh Điện Biên — snv.dienbien.gov.vn",
+    "Báo Tiền Phong — tienphong.vn",
+    "Báo Đắk Nông — baodaknong.vn",
+    "Báo Lai Châu — baolaichau.vn",
+    "Báo Cao Bằng — baocaobang.vn",
+    "Báo Lào Cai — baolaocai.vn",
+    "Cổng TTĐT liên kết Vĩnh Long – Bến Tre — tctph.vinhlong.gov.vn",
+    "Báo Sơn La — baosonla.vn"
   ],
   "items": [
     {
@@ -388,6 +396,467 @@
       "nguon": [
         "Đài Phát thanh - Truyền hình Bắc Ninh (baobacninhtv.vn) — Hai mẹ con - hai Mẹ Việt Nam Anh hùng — https://baobacninhtv.vn/hai-me-con-hai-me-viet-nam-anh-hung-postid226883.bbg"
       ]
+    },
+    {
+      "id": "nguyen-thi-quy-dien-bien",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Quy",
+      "lon": 103.0159,
+      "lat": 21.3891,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 13/8/2026",
+      "mo_ta": "Quê xã Bạch Đằng, huyện Đông Hưng, tỉnh Thái Bình (nay xã Tiên Hưng, tỉnh Hưng Yên); chồng là liệt sĩ Nguyễn Văn Hồng hy sinh trong kháng chiến chống Pháp, con gái là liệt sĩ Nguyễn Thị Yến hy sinh năm 1972 trong kháng chiến chống Mỹ. Ngày 13/8/2026, Phó Chủ tịch UBND tỉnh Điện Biên Nguyễn Minh Phú thay mặt Chủ tịch nước trao danh hiệu truy tặng tại Trung tâm hội nghị phường Mường Thanh.",
+      "dia_diem": "Phường Mường Thanh, TP Điện Biên Phủ, tỉnh Điện Biên (nơi đăng ký hộ khẩu)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Nội vụ tỉnh Điện Biên — Lễ truy tặng danh hiệu vinh dự Nhà nước 'Bà mẹ Việt Nam anh hùng' cho mẹ Nguyễn Thị Quy — https://snv.dienbien.gov.vn/vi/news/thi-dua-khen-thuong/le-truy-tang-danh-hieu-vinh-du-nha-nuoc-ba-me-viet-nam-anh-hung-cho-me-nguyen-thi-quy-1054.html"
+      ]
+    },
+    {
+      "id": "dinh-thi-gioi-dien-bien",
+      "ten": "Mẹ Việt Nam Anh hùng Đinh Thị Giổi",
+      "lon": 103.03,
+      "lat": 21.28,
+      "loai": "me-vnah",
+      "nam_hien_thi": "mất 1986; truy tặng 12/3/2024",
+      "mo_ta": "Quê xã Noong Luống, huyện Điện Biên, tỉnh Điện Biên; mất năm 1986. Ngày 12/3/2024, huyện Điện Biên tổ chức lễ truy tặng danh hiệu vinh dự Nhà nước «Bà mẹ Việt Nam anh hùng» tại Trung tâm hội nghị huyện; ông Bùi Văn Năm, con trai thứ ba của Mẹ, đại diện gia đình nhận danh hiệu.",
+      "dia_diem": "Xã Noong Luống, huyện Điện Biên, tỉnh Điện Biên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Nội vụ tỉnh Điện Biên — Lễ truy tặng danh hiệu vinh dự Nhà nước 'Bà mẹ Việt Nam anh hùng' cho mẹ Đinh Thị Giổi — https://snv.dienbien.gov.vn/vi/news/thi-dua-khen-thuong/le-truy-tang-danh-hieu-vinh-du-nha-nuoc-ba-me-viet-nam-anh-hung-cho-me-dinh-thi-gioi-383.html"
+      ]
+    },
+    {
+      "id": "tran-thi-thung-lam-dong",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Thung",
+      "lon": 108.4472,
+      "lat": 11.9333,
+      "loai": "me-vnah",
+      "nam_hien_thi": "2023",
+      "mo_ta": "Được Tỉnh đoàn Lâm Đồng phối hợp Hội Hoa Đà Lạt và Bệnh viện Y học cổ truyền tỉnh đến thăm hỏi, tặng quà nhân các hoạt động tri ân Mẹ Việt Nam Anh hùng và người có công với cách mạng tại thành phố Đà Lạt.",
+      "dia_diem": "TP Đà Lạt, tỉnh Lâm Đồng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tiền Phong — Nhiều hoạt động tri ân Mẹ Việt Nam anh hùng và người có công ở Lâm Đồng — https://tienphong.vn/nhieu-hoat-dong-tri-an-me-viet-nam-anh-hung-va-nguoi-co-cong-o-lam-dong-post1554787.tpo"
+      ],
+      "ghi_chu_bien_tap": "Thông tin về tuổi và hoàn cảnh gia đình Mẹ xuất hiện trên một số báo khác nhưng nguồn không đạt chuẩn của dự án nên không đưa vào; giữ lại phần đã xác nhận qua nguồn Tiền Phong."
+    },
+    {
+      "id": "nguyen-thi-xuan-lam-dong",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Xuân",
+      "lon": 107.5667,
+      "lat": 12.4667,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phụng dưỡng từ 4/2015",
+      "mo_ta": "Cư trú tại xã Đắk Lao. Từ tháng 4/2015, Báo Đắk Nông nhận phụng dưỡng suốt đời Mẹ, thường xuyên thăm hỏi, tặng quà nhân dịp Tết và Ngày Thương binh - Liệt sĩ 27/7 hằng năm.",
+      "dia_diem": "Xã Đắk Lao, tỉnh Lâm Đồng (nguyên huyện Đắk Mil, tỉnh Đắk Nông)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đắk Nông — Báo Đắk Nông thăm, tặng quà tết Mẹ Việt Nam Anh hùng Nguyễn Thị Xuân — https://baodaknong.vn/bao-dak-nong-tham-tang-qua-tet-me-viet-nam-anh-hung-nguyen-thi-xuan-240624.html"
+      ]
+    },
+    {
+      "id": "ly-kho-po-lai-chau",
+      "ten": "Mẹ Việt Nam Anh hùng Lý Khờ Pớ",
+      "lon": 102.75,
+      "lat": 22.77,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1921–16/1/2014",
+      "mo_ta": "Người dân tộc Hà Nhì, quê bản Lò Ma, xã Ka Lăng, huyện Mường Tè, tỉnh Lai Châu; sinh năm 1921, mất ngày 16/1/2014 khi vừa bước sang tuổi 93. Cuộc đời Mẹ gắn với những hy sinh thầm lặng của phụ nữ vùng biên giới Tây Bắc qua các cuộc kháng chiến.",
+      "dia_diem": "Bản Lò Ma, xã Ka Lăng, huyện Mường Tè, tỉnh Lai Châu",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lai Châu — Bà mẹ anh hùng trên đỉnh Ka Lăng — https://baolaichau.vn/guong-sang-ban-muong/ba-me-anh-hung-tren-dinh-ka-lang"
+      ]
+    },
+    {
+      "id": "be-thi-may-cao-bang",
+      "ten": "Mẹ Việt Nam Anh hùng Bế Thị Mầy",
+      "lon": 106.15,
+      "lat": 22.75,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1925",
+      "mo_ta": "Quê xóm Nà Pẳng, xã Đức Long, huyện Hòa An, tỉnh Cao Bằng; tham gia cách mạng từ năm 16 tuổi (1941), từng bị thực dân Pháp bắt tra khảo khi tiếp tế gạo cho bộ đội nhưng không khai báo. Chồng là liệt sĩ Nông Quang Đặng (sinh 1924, mất năm 1989, được công nhận liệt sĩ); con trai là liệt sĩ Nông Quang Vượng (sinh 1962, nhập ngũ 1982) hy sinh khi làm nhiệm vụ tại đồn biên phòng Đàm Thủy.",
+      "dia_diem": "Xóm Nà Pẳng, xã Đức Long, huyện Hòa An, tỉnh Cao Bằng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cao Bằng — Khúc ca về những Mẹ Việt Nam Anh hùng — https://baocaobang.vn/-30833.html"
+      ]
+    },
+    {
+      "id": "ha-thi-hao-lao-cai",
+      "ten": "Mẹ Việt Nam Anh hùng Hà Thị Hao",
+      "lon": 104.75,
+      "lat": 21.75,
+      "loai": "me-vnah",
+      "nam_hien_thi": "94 tuổi (2026)",
+      "mo_ta": "Người con trai duy nhất, liệt sĩ Hoàng Đình Muôn, hy sinh năm 1969 khi 18 tuổi trong kháng chiến chống Mỹ. Là một trong 3 Mẹ Việt Nam Anh hùng còn sống trên tổng số 377 Mẹ được phong tặng, truy tặng của địa phương.",
+      "dia_diem": "Xã Quy Mông, tỉnh Lào Cai (nguyên huyện Trấn Yên, tỉnh Yên Bái)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lào Cai — Nặng nghĩa tri ân với những Mẹ Việt Nam anh hùng — https://baolaocai.vn/nang-nghia-tri-an-voi-nhung-me-viet-nam-anh-hung-post904622.html"
+      ]
+    },
+    {
+      "id": "ly-seo-say-lao-cai",
+      "ten": "Mẹ Việt Nam Anh hùng Lý Seo Say",
+      "lon": 104,
+      "lat": 22.4667,
+      "loai": "me-vnah",
+      "nam_hien_thi": "2026",
+      "mo_ta": "Chồng là liệt sĩ Hà Văn Sặn (hy sinh 1979) và con trai là liệt sĩ Hà Quyết Thắng (hy sinh 2015). Là một trong 3 Mẹ Việt Nam Anh hùng còn sống của địa phương.",
+      "dia_diem": "Phường Cam Đường, tỉnh Lào Cai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lào Cai — Nặng nghĩa tri ân với những Mẹ Việt Nam anh hùng — https://baolaocai.vn/nang-nghia-tri-an-voi-nhung-me-viet-nam-anh-hung-post904622.html"
+      ]
+    },
+    {
+      "id": "nguyen-thi-hoa-lao-cai",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hòa",
+      "lon": 104.5833,
+      "lat": 21.55,
+      "loai": "me-vnah",
+      "nam_hien_thi": "2026",
+      "mo_ta": "Chồng mất năm 1953; con trai, liệt sĩ Vũ Văn Tuấn, hy sinh năm 1967 tại chiến trường Tây Nguyên khi 20 tuổi. Hằng tháng Mẹ nhận khoảng 13,493 triệu đồng tiền trợ cấp, chế độ, cùng sự chăm sóc thường xuyên từ ngân hàng và doanh nghiệp địa phương.",
+      "dia_diem": "Xã Thượng Bằng La, tỉnh Lào Cai (nguyên huyện Văn Chấn, tỉnh Yên Bái)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lào Cai — Nặng nghĩa tri ân với những Mẹ Việt Nam anh hùng — https://baolaocai.vn/nang-nghia-tri-an-voi-nhung-me-viet-nam-anh-hung-post904622.html"
+      ]
+    },
+    {
+      "id": "le-thi-mang-vinh-long",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Măng",
+      "lon": 106.35,
+      "lat": 10.1667,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1928; phong tặng 26/11/2014",
+      "mo_ta": "Chồng là cán bộ xã, bị địch sát hại năm 1969; cùng năm đó, con trai thứ ba là Cà Văn Dũng hy sinh khi làm trinh sát. Hai người con trai khác của Mẹ cũng qua đời sau ngày thống nhất vì di chứng chiến tranh. Được Chủ tịch nước phong tặng danh hiệu Bà mẹ Việt Nam Anh hùng ngày 26/11/2014 theo Quyết định số 3128 KT/CTN. Con trai còn sống, ông Cà Văn Đoàn, hiện là Chi hội trưởng Chi hội Cựu chiến binh ấp Thành Hóa I, cùng gia đình chăm sóc Mẹ.",
+      "dia_diem": "Xã Tân Thành Bình, huyện Mỏ Cày Bắc, tỉnh Vĩnh Long (nguyên tỉnh Bến Tre)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT liên kết Vĩnh Long – Bến Tre — Mẹ Việt Nam anh hùng của vùng đất anh hùng — https://tctph.vinhlong.gov.vn/bentre/me-viet-nam-anh-hung-cua-vung-dat-anh-hung"
+      ]
+    },
+    {
+      "id": "dinh-thi-lai-son-la",
+      "ten": "Mẹ Việt Nam Anh hùng Đinh Thị Lai",
+      "lon": 104.5,
+      "lat": 21.2,
+      "loai": "me-vnah",
+      "nam_hien_thi": "2022",
+      "mo_ta": "Cư trú tại bản Quế Sơn, xã Chiềng Sái, huyện Bắc Yên, tỉnh Sơn La. Được Sở Lao động, Thương binh và Xã hội tỉnh Sơn La phối hợp Bưu điện tỉnh đến thăm hỏi, tặng quà và trao tiền phụng dưỡng trọn đời.",
+      "dia_diem": "Bản Quế Sơn, xã Chiềng Sái, huyện Bắc Yên, tỉnh Sơn La",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Sơn La — Thăm, tặng quà Mẹ Việt Nam Anh hùng Đinh Thị Lai — https://baosonla.vn/vi/bai-viet/tham-tang-qua-me-viet-nam-anh-hung-dinh-thi-lai-52037"
+      ]
+    },
+    {
+      "id": "huynh-thi-le-dong-thap",
+      "ten": "Mẹ Việt Nam Anh hùng Huỳnh Thị Lệ",
+      "lon": 105.76,
+      "lat": 10.29,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 21/7/2026",
+      "mo_ta": "Quê xã Tân Phú Đông, tỉnh Đồng Tháp. Chồng và một người con trai đều hy sinh trong chiến tranh (nguồn không nêu tên/năm cụ thể). Được Nhà nước truy tặng danh hiệu Bà mẹ Việt Nam Anh hùng trong đợt lễ ngày 21/7/2026 tại Đồng Tháp (đợt 15 Mẹ, gồm 14 truy tặng và 1 phong tặng); con trai — ông Huỳnh Văn Hoàng — đại diện gia đình nhận danh hiệu.",
+      "dia_diem": "Xã Tân Phú Đông, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Tháp — Ấm lòng Lễ trao tặng, truy tặng danh hiệu «Bà mẹ Việt Nam Anh hùng» — https://baodongthap.vn/am-long-le-trao-tang-truy-tang-danh-hieu-ba-me-viet-nam-anh-hung--a243518.html"
+      ]
+    },
+    {
+      "id": "bui-thi-hai-ham-thuan-bac",
+      "ten": "Mẹ Việt Nam Anh hùng Bùi Thị Hải",
+      "lon": 108.05,
+      "lat": 11.03,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1908",
+      "mo_ta": "Quê xã Hàm Chính, huyện Hàm Thuận Bắc, tỉnh Bình Thuận cũ (nay tỉnh Lâm Đồng). Chồng và 4 người con đều là liệt sĩ. Là chị cả trong 3 chị em ruột — con gái cụ Bùi Văn Tố — đều được phong tặng danh hiệu Bà mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Hàm Chính, huyện Hàm Thuận Bắc cũ, tỉnh Bình Thuận cũ, nay tỉnh Lâm Đồng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân khu 7 — Những Bà mẹ Việt Nam Anh hùng — https://baoquankhu7.vn/nhung-ba-me-viet-nam-anh-hung--144350417-0015253s34010gs",
+        "Báo Đại biểu Nhân dân — Bài 1: Những Bà mẹ Việt Nam anh hùng — https://daibieunhandan.vn/van-hoa/Bai-1Nhung-Ba-me-Viet-Nam-anh-hungsup1sup-i169236/"
+      ]
+    },
+    {
+      "id": "bui-thi-tu-ham-thuan-bac",
+      "ten": "Mẹ Việt Nam Anh hùng Bùi Thị Tư",
+      "lon": 108.05,
+      "lat": 11.03,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1916",
+      "mo_ta": "Quê xã Hàm Chính, huyện Hàm Thuận Bắc, tỉnh Bình Thuận cũ (nay tỉnh Lâm Đồng). Có 3 người con là liệt sĩ. Em gái Mẹ Bùi Thị Hải, chị Mẹ Bùi Thị Nhỏ — 3 chị em ruột đều được phong tặng danh hiệu Bà mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Hàm Chính, huyện Hàm Thuận Bắc cũ, tỉnh Bình Thuận cũ, nay tỉnh Lâm Đồng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân khu 7 — Những Bà mẹ Việt Nam Anh hùng — https://baoquankhu7.vn/nhung-ba-me-viet-nam-anh-hung--144350417-0015253s34010gs",
+        "Báo Đại biểu Nhân dân — Bài 1: Những Bà mẹ Việt Nam anh hùng — https://daibieunhandan.vn/van-hoa/Bai-1Nhung-Ba-me-Viet-Nam-anh-hungsup1sup-i169236/"
+      ]
+    },
+    {
+      "id": "bui-thi-nho-ham-thuan-bac",
+      "ten": "Mẹ Việt Nam Anh hùng Bùi Thị Nhỏ",
+      "lon": 108.05,
+      "lat": 11.03,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1922",
+      "mo_ta": "Quê xã Hàm Chính, huyện Hàm Thuận Bắc, tỉnh Bình Thuận cũ (nay tỉnh Lâm Đồng). Có 4 người con là liệt sĩ. Em út trong 3 chị em ruột đều được phong tặng danh hiệu Bà mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Hàm Chính, huyện Hàm Thuận Bắc cũ, tỉnh Bình Thuận cũ, nay tỉnh Lâm Đồng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân khu 7 — Những Bà mẹ Việt Nam Anh hùng — https://baoquankhu7.vn/nhung-ba-me-viet-nam-anh-hung--144350417-0015253s34010gs",
+        "Báo Đại biểu Nhân dân — Bài 1: Những Bà mẹ Việt Nam anh hùng — https://daibieunhandan.vn/van-hoa/Bai-1Nhung-Ba-me-Viet-Nam-anh-hungsup1sup-i169236/"
+      ]
+    },
+    {
+      "id": "le-thi-so-quang-tri",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Sô",
+      "lon": 107.28,
+      "lat": 16.72,
+      "loai": "me-vnah",
+      "nam_hien_thi": "100 tuổi (2025)",
+      "mo_ta": "Quê thôn Trung Trường, xã Diên Sanh, huyện Hải Lăng cũ, tỉnh Quảng Trị. Chồng — liệt sĩ Võ Toàn — hy sinh ngày 11/9/1968; con trai — liệt sĩ Võ Dĩnh — hy sinh tháng 6/1972. Gia đình có 3 Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Diên Sanh, huyện Hải Lăng cũ, tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Trị điện tử — Chuyện về những Bà mẹ Việt Nam Anh hùng ở Diên Sanh — https://baoquangtri.vn/tam-diem/202507/chuyen-ve-nhung-ba-me-viet-nam-anh-hung-o-dien-sanh-dd808ab/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn dùng dạng viết tắt «Mẹ VNAH Lê Thị Sô» (tên ghép với danh hiệu, trong một bài chuyên đề về các Bà mẹ VNAH ở Diên Sanh) chứ không có câu riêng nêu ngày/quyết định phong tặng — chấp nhận vì đây là cách gọi chuẩn của báo nhà nước khi xác định người có danh hiệu, không phải suy diễn."
+    },
+    {
+      "id": "dang-thi-thi-quang-tri",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Thỉ",
+      "lon": 107.28,
+      "lat": 16.72,
+      "loai": "me-vnah",
+      "mo_ta": "Quê thôn Thiện Đông, xã Diên Sanh, huyện Hải Lăng cũ, tỉnh Quảng Trị. Chồng hy sinh năm 1968 (tên không nêu trong nguồn); con trai — liệt sĩ Lê Anh Tuấn, từng là Phó Công an xã — hy sinh tháng 1/1975 khi 23 tuổi.",
+      "dia_diem": "Xã Diên Sanh, huyện Hải Lăng cũ, tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Trị điện tử — Chuyện về những Bà mẹ Việt Nam Anh hùng ở Diên Sanh — https://baoquangtri.vn/tam-diem/202507/chuyen-ve-nhung-ba-me-viet-nam-anh-hung-o-dien-sanh-dd808ab/"
+      ],
+      "ghi_chu_bien_tap": "Cùng nguồn và cùng caveat như Lê Thị Sô — viết tắt «Mẹ VNAH» trong bài chuyên đề. Không có năm sinh trong nguồn nên để trống nam_hien_thi."
+    },
+    {
+      "id": "le-thi-lich-soc-trang",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Lích",
+      "lon": 105.97,
+      "lat": 9.52,
+      "loai": "me-vnah",
+      "nam_hien_thi": "88 tuổi (2024)",
+      "mo_ta": "Quê ấp Hoà Phuông, xã Hoà Tú 1, huyện Mỹ Xuyên, tỉnh Sóc Trăng. Chồng mất khi bà 20 tuổi. Con trai đầu xin mẹ đi bộ đội năm 14 tuổi và hy sinh, một người con khác cũng nhập ngũ sau đó.",
+      "dia_diem": "Xã Hoà Tú 1, huyện Mỹ Xuyên cũ, tỉnh Sóc Trăng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Sóc Trăng — Tấm lòng của những Bà mẹ Việt Nam anh hùng — https://baosoctrang.org.vn/van-hoa-the-thao-du-lich/202407/tam-long-cua-nhung-ba-me-viet-nam-anh-hung-442037e/"
+      ],
+      "ghi_chu_bien_tap": "Câu gắn trực tiếp tên bà chỉ là «mẹ Lê Thị Lích» trong bài có tiêu đề chung «Bà mẹ Việt Nam anh hùng»; không rõ chỉ 1 hay 2 con hy sinh, chỉ chắc chắn người con đầu."
+    },
+    {
+      "id": "tran-thi-hai-can-tho",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Hai",
+      "lon": 105.77,
+      "lat": 9.96,
+      "loai": "me-vnah",
+      "mo_ta": "Quê phường Phú Thứ, quận Cái Răng, TP Cần Thơ. Chồng — liệt sĩ Huỳnh Văn Sương (bí danh Huỳnh Khai) — hy sinh năm 1963. Hai con trai hy sinh: liệt sĩ Huỳnh Văn Đời tại trận đánh đồn Xẻo Lá (1969) và liệt sĩ Huỳnh Văn Cò tại trận Đìa Sài (1971). Bà từng nuôi giấu cán bộ và bị địch bắt, tra tấn.",
+      "dia_diem": "Phường Phú Thứ, quận Cái Răng, TP Cần Thơ",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cần Thơ — Chuyện về những người Mẹ Anh hùng — https://baocantho.com.vn/chuyen-ve-nhung-nguoi-me-anh-hung-a35953.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn dùng viết tắt «Mẹ VNAH Trần Thị Hai», bài đăng 2010."
+    },
+    {
+      "id": "pham-thi-nen-can-tho",
+      "ten": "Mẹ Việt Nam Anh hùng Phạm Thị Nén",
+      "lon": 105.74,
+      "lat": 10.07,
+      "loai": "me-vnah",
+      "mo_ta": "Quê khu vực Bình Nhựt, phường Long Hoà, quận Bình Thuỷ, TP Cần Thơ. Chồng — ông Võ Văn Bê — hy sinh năm 1961. Hai con trai hy sinh: anh Võ Văn De tại Cầu Xáng, Phụng Hiệp (tháng 5/1966) và anh Võ Văn Ly (1969).",
+      "dia_diem": "Phường Long Hoà, quận Bình Thuỷ, TP Cần Thơ",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cần Thơ — Chuyện về những người Mẹ Anh hùng — https://baocantho.com.vn/chuyen-ve-nhung-nguoi-me-anh-hung-a35953.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn dùng viết tắt «Mẹ VNAH», bài đăng 2010."
+    },
+    {
+      "id": "tran-thi-dinh-hue",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Đỉnh",
+      "lon": 107.71,
+      "lat": 16.48,
+      "loai": "me-vnah",
+      "mo_ta": "Quê xã Phú Đa, huyện Phú Vang, tỉnh Huế (nguyên Thừa Thiên Huế). Chồng và 5 người con đều là liệt sĩ. Gia đình có 3 thế hệ Mẹ Việt Nam Anh hùng (bà, con gái Vương Thị Lành, con dâu Phan Thị Thế) với tổng cộng 10 liệt sĩ.",
+      "dia_diem": "Xã Phú Đa, huyện Phú Vang cũ, tỉnh Huế",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đại biểu Nhân dân — Bài 1: Những Bà mẹ Việt Nam anh hùng — https://daibieunhandan.vn/van-hoa/Bai-1Nhung-Ba-me-Viet-Nam-anh-hungsup1sup-i169236/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn dùng viết tắt «BMVNAH». Bài đăng 2017 — nên đối chiếu thêm nguồn tỉnh nếu có."
+    },
+    {
+      "id": "vuong-thi-lanh-hue",
+      "ten": "Mẹ Việt Nam Anh hùng Vương Thị Lành",
+      "lon": 107.71,
+      "lat": 16.48,
+      "loai": "me-vnah",
+      "mo_ta": "Con gái Mẹ Trần Thị Đỉnh, quê xã Phú Đa, huyện Phú Vang, tỉnh Huế. Bản thân bà là liệt sĩ, được truy tặng danh hiệu Bà mẹ Việt Nam Anh hùng; có 3 người con là liệt sĩ.",
+      "dia_diem": "Xã Phú Đa, huyện Phú Vang cũ, tỉnh Huế",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đại biểu Nhân dân — Bài 1: Những Bà mẹ Việt Nam anh hùng — https://daibieunhandan.vn/van-hoa/Bai-1Nhung-Ba-me-Viet-Nam-anh-hungsup1sup-i169236/"
+      ],
+      "ghi_chu_bien_tap": "Trường hợp đặc biệt: bà vừa là liệt sĩ vừa được truy tặng danh hiệu MVNAH — nguồn dùng viết tắt «BMVNAH»."
+    },
+    {
+      "id": "phan-thi-the-hue",
+      "ten": "Mẹ Việt Nam Anh hùng Phan Thị Thế",
+      "lon": 107.71,
+      "lat": 16.48,
+      "loai": "me-vnah",
+      "mo_ta": "Con dâu Mẹ Trần Thị Đỉnh, Trung uý Công an, trú xã Phú Đa, huyện Phú Vang, tỉnh Huế. Có người con độc nhất là liệt sĩ.",
+      "dia_diem": "Xã Phú Đa, huyện Phú Vang cũ, tỉnh Huế",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đại biểu Nhân dân — Bài 1: Những Bà mẹ Việt Nam anh hùng — https://daibieunhandan.vn/van-hoa/Bai-1Nhung-Ba-me-Viet-Nam-anh-hungsup1sup-i169236/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn dùng viết tắt «BMVNAH»."
+    },
+    {
+      "id": "nguyen-thi-ngach-hai-duong",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Ngách",
+      "lon": 106.35,
+      "lat": 20.75,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 25/6/2014; 109 tuổi (2024)",
+      "mo_ta": "Quê thôn Hữu Chung, xã Hồng Quang, huyện Thanh Miện, tỉnh Hải Dương cũ. Hai con trai là liệt sĩ: Đặng Ngọc Thóc (sinh 1936, hy sinh năm 1970 tại Lâm Đồng) và Đặng Văn Bằng (sinh 1947, hy sinh năm 1966 tại Bình Phước). Được phong tặng danh hiệu Bà mẹ Việt Nam Anh hùng ngày 25/6/2014.",
+      "dia_diem": "Xã Hồng Quang, huyện Thanh Miện cũ, tỉnh Hải Dương cũ, nay TP Hải Phòng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietNamNet — Mẹ Việt Nam anh hùng 109 tuổi mỗi ngày vẫn mong con trở về để cùng ăn cơm — https://vietnamnet.vn/me-viet-nam-anh-hung-109-tuoi-moi-ngay-van-mong-con-tro-ve-de-cung-an-com-2305881.html"
+      ]
+    },
+    {
+      "id": "nguyen-thi-anh-hoa-binh",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Anh",
+      "lon": 105.34,
+      "lat": 20.82,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 12/2014, lúc 42 tuổi",
+      "mo_ta": "Trú phường Thịnh Lang, TP Hoà Bình cũ, tỉnh Hoà Bình. Con trai duy nhất — liệt sĩ Nguyễn Quý Dương (sinh 1989) — chiến sĩ Cảnh sát Phòng cháy chữa cháy, hy sinh năm 2010 khi làm nhiệm vụ chữa cháy tại Công ty Nguyên Minh (Yên Mông, TP Hoà Bình). Được phong tặng danh hiệu Bà mẹ Việt Nam Anh hùng tháng 12/2014 khi 42 tuổi — mẹ trẻ nhất trong hơn 140.000 Mẹ VNAH được phong tặng.",
+      "dia_diem": "Phường Thịnh Lang, tỉnh Phú Thọ (nguyên TP Hoà Bình, tỉnh Hoà Bình)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo điện tử Dân Việt — Bà mẹ Việt Nam anh hùng trẻ nhất nước Nguyễn Thị Anh: Nỗi đau mất con thời nào cũng thế — https://danviet.vn/ba-me-viet-nam-anh-hung-tre-nhat-nuoc-nguyen-thi-anh-noi-dau-mat-con-thoi-nao-cung-the-20210725233404965-d965901.html"
+      ]
+    },
+    {
+      "id": "nguyen-thi-phuoc-phu-tho",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Phước",
+      "lon": 105.4,
+      "lat": 21.28,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1916",
+      "mo_ta": "Trú phường Vân Phú, tỉnh Phú Thọ. Chồng — liệt sĩ Nguyễn Đình Gia — hy sinh năm 1950 trong kháng chiến chống Pháp; con trai — liệt sĩ Nguyễn Tiến Nghiệp — hy sinh năm 1972 tại Mặt trận phía Nam. Con gái là thương binh Nguyễn Thị Hữu. Mẹ chồng của bà — Nguyễn Thị Dương — cũng là Mẹ Việt Nam Anh hùng, hai thế hệ trong một gia đình.",
+      "dia_diem": "Phường Vân Phú, tỉnh Phú Thọ",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT Chính phủ — Thủ tướng tặng quà Mẹ Việt Nam anh hùng và dâng hương tưởng niệm các Anh hùng liệt sĩ tại Phú Thọ — https://baochinhphu.vn/thu-tuong-tang-qua-me-viet-nam-anh-hung-va-dang-huong-tuong-niem-cac-anh-hung-liet-si-tai-phu-tho-102260714143312167.htm"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không ghi năm phong tặng/truy tặng danh hiệu cụ thể — để trống, không suy diễn."
+    },
+    {
+      "id": "nguyen-thi-diem-ha-noi",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Điểm",
+      "lon": 105.91,
+      "lat": 20.84,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 2015; 101 tuổi (2026)",
+      "mo_ta": "Trú xã Chương Dương, TP Hà Nội. Hai con trai là liệt sĩ: Nguyễn Ngọc Lý (nhập ngũ 1969, hy sinh năm 1972 tại chiến trường Quảng Ngãi khi 20 tuổi) và Nguyễn Công Kỳ (hy sinh năm 1979 trong chiến tranh bảo vệ biên giới phía Bắc). Được phong tặng danh hiệu Bà mẹ Việt Nam Anh hùng năm 2015.",
+      "dia_diem": "Xã Chương Dương, TP Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân trí — Tia hy vọng của Mẹ Việt Nam Anh hùng 101 tuổi ôm nỗi khắc khoải hơn 50 năm — https://dantri.com.vn/noi-vu/tia-hy-vong-cua-me-viet-nam-anh-hung-101-tuoi-om-noi-khac-khoai-hon-50-nam-20260725143650705.htm"
+      ],
+      "ghi_chu_bien_tap": "Hà Nội có 2 địa danh «Chương Dương» (vùng Hoàn Kiếm cũ và vùng Thường Tín cũ) — nguồn không xác định rõ vùng nào, do_tin_cay_toa_do để thấp."
+    },
+    {
+      "id": "nguyen-thi-ngung-binh-phuoc",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Ngừng",
+      "lon": 106.59,
+      "lat": 11.44,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1925",
+      "mo_ta": "Trú phường Chơn Thành, tỉnh Đồng Nai (nguyên thị xã Chơn Thành, tỉnh Bình Phước). Hai con trai là liệt sĩ: Võ Văn Mộng (hy sinh năm 1968) và Võ Văn Thơ (hy sinh năm 1971).",
+      "dia_diem": "Phường Chơn Thành, tỉnh Đồng Nai (nguyên thị xã Chơn Thành, tỉnh Bình Phước)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT phường Chơn Thành, tỉnh Đồng Nai — Tuổi trẻ Chơn Thành thăm, tặng quà Mẹ Việt Nam Anh hùng và trao tặng ảnh liệt sĩ phục dựng — https://chonthanh.dongnai.gov.vn/vi/news/van-hoa-xa-hoi/tuoi-tre-chon-thanh-tham-tang-qua-me-viet-nam-anh-hung-va-trao-tang-anh-liet-si-duoc-phuc-dung-1123.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn gọi bà là «Mẹ Việt Nam Anh hùng» như danh xưng đi kèm tên, KHÔNG có câu riêng nêu số quyết định/năm phong tặng — chấp nhận theo cách gọi chuẩn của cổng nhà nước, nhưng nên bổ sung nguồn Sở Nội vụ trước khi chuyển trang_thai sang reviewed."
+    },
+    {
+      "id": "tran-thi-ruan-thai-nguyen",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Ruẩn",
+      "lon": 105.62,
+      "lat": 21.85,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1924",
+      "mo_ta": "Trú xã Bình Thành, huyện Định Hoá, tỉnh Thái Nguyên. Sinh 9 người con, trong đó hai con trai là liệt sĩ: Bùi Văn Ta và Bùi Văn Thắng. Được Báo Thái Nguyên nhận chăm sóc, thăm hỏi từ tháng 12/2014.",
+      "dia_diem": "Xã Bình Thành, huyện Định Hoá cũ, tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên — Báo Thái Nguyên thăm, tặng quà Mẹ Việt Nam Anh hùng — https://baothainguyen.vn/tin-moi/202407/bao-thai-nguyen-tham-tang-qua-me-viet-nam-anh-hung-c221bb8/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không dùng cụm «danh hiệu Bà mẹ Việt Nam anh hùng» khi giới thiệu tên bà (chỉ có trong tiêu đề chung của bài) — nên bổ sung nguồn Sở LĐTBXH Thái Nguyên xác nhận trước khi chuyển reviewed."
+    },
+    {
+      "id": "pham-thi-may-thai-nguyen",
+      "ten": "Mẹ Việt Nam Anh hùng Phạm Thị May",
+      "lon": 105.62,
+      "lat": 21.85,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1925",
+      "mo_ta": "Trú xã Bình Thành, huyện Định Hoá, tỉnh Thái Nguyên, cùng đợt thăm hỏi với Mẹ Trần Thị Ruẩn. Có hai con trai hy sinh trong kháng chiến chống Mỹ (nguồn không nêu tên/năm cụ thể).",
+      "dia_diem": "Xã Bình Thành, huyện Định Hoá cũ, tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên — Báo Thái Nguyên thăm, tặng quà Mẹ Việt Nam Anh hùng — https://baothainguyen.vn/tin-moi/202407/bao-thai-nguyen-tham-tang-qua-me-viet-nam-anh-hung-c221bb8/"
+      ],
+      "ghi_chu_bien_tap": "Cùng caveat như Trần Thị Ruẩn — nên bổ sung nguồn Sở LĐTBXH trước khi chuyển reviewed."
     }
   ]
 }

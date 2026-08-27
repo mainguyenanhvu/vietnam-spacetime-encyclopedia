@@ -1,7 +1,19 @@
 {
   "ghi_chu": "Vua/hoàng đế các triều đại (ngoài số đã có trong CSDL) — Lý, Hồ, Nguyễn. Toạ độ lăng/đền qua OpenStreetMap Nominatim đối chiếu địa danh trong nguồn; nội dung theo cổng thông tin di sản nhà nước (hueworldheritage.org.vn — Trung tâm Bảo tồn Di tích Cố đô Huế; thanhnhaho.vn — Trung tâm Bảo tồn Di sản Thành Nhà Hồ; mybacninh.vn — cổng du lịch Bắc Ninh). KHÔNG dùng Wikipedia. WebSearch không khả dụng trong phiên này nên chỉ thêm các vua tra cứu được qua WebFetch/crawl trực tiếp cổng nhà nước đã biết trước; các vua triều Trần, Lê sơ, Mạc, Lê trung hưng chưa tìm được trang cổng xác nhận trong phiên này nên tạm bỏ qua (xem báo cáo). [Phase 3: hợp nhất 3 lớp → nhóm «Vua · Chúa · Hoàng tộc».]",
-  "ngay_cap_nhat": "2026-07-27",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
+    "Báo Dân Việt — danviet.vn",
+    "Báo Quảng Ninh — baoquangninh.vn",
+    "Báo Thanh tra — thanhtra.com.vn",
+    "Báo Tiền Phong — tienphong.vn",
+    "Báo Văn hóa & Đời sống Thanh Hóa — vhds.baothanhhoa.vn",
+    "Báo Tuổi Trẻ — tuoitre.vn",
+    "Đài Truyền hình Việt Nam (VTV) — vtv.vn",
+    "Báo Dân trí — dantri.com.vn",
+    "Cổng TTĐT Hội Liên hiệp Phụ nữ Việt Nam — hoilhpn.org.vn",
+    "Báo Pháp luật TP.HCM — plo.vn",
+    "Khu di tích Lam Kinh — ditichlamkinh.vn",
+    "Báo Thanh Hóa — baothanhhoa.vn",
     "Trung tâm Bảo tồn Di tích Cố đô Huế — hueworldheritage.org.vn",
     "Trung tâm Bảo tồn Di sản Thành Nhà Hồ — thanhnhaho.vn",
     "Cổng du lịch Bắc Ninh (mybacninh.vn)",
@@ -1022,6 +1034,181 @@
       "nguon": [
         "Trung tâm Bảo tồn Di sản Thăng Long - Hà Nội (hoangthanhthanglong.vn) — https://hoangthanhthanglong.vn/ngo-xuong-van-nam-tan-vuong/",
         "Cục Di sản văn hóa (dsvh.gov.vn) — https://dsvh.gov.vn/di-tich-lich-su-kien-truc-nghe-thuat-va-khao-co-co-loa-2958"
+      ]
+    },
+    {
+      "id": "tran-nghe-tong",
+      "ten": "Trần Nghệ Tông",
+      "lon": 106.502308,
+      "lat": 21.1314405,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1321–1394, trị vì 1370–1372",
+      "mo_ta": "Con thứ ba vua Trần Minh Tông, lên ngôi năm 50 tuổi sau khi Dương Nhật Lễ cướp ngôi bị lật đổ. Ở ngôi 3 năm rồi nhường ngôi em là Trần Duệ Tông, lui làm Thái thượng hoàng nhưng vẫn nắm quyền nhiếp chính hơn 20 năm — giai đoạn quyền lực họ Hồ (Hồ Quý Ly) dần lấn át triều Trần. An táng tại Nguyên Lăng.",
+      "dia_diem": "Nguyên Lăng, khu Khe Nghệ, thôn Bãi Dài, phường An Sinh, thành phố Quảng Ninh (trước là thị xã Đông Triều) — thuộc Khu di tích lịch sử nhà Trần tại Đông Triều, di tích quốc gia đặc biệt",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Nguyên Lăng ở Đông Triều là lăng mộ của vị vua Trần nào? — https://danviet.vn/nguyen-lang-o-dong-trieu-la-lang-mo-cua-vi-vua-tran-nao-d1405283.html",
+        "Cục Di sản văn hoá — Khu di tích lịch sử nhà Trần tại Đông Triều — https://dsvh.gov.vn/khu-di-tich-lich-su-nha-tran-tai-dong-trieu-2972"
+      ]
+    },
+    {
+      "id": "tran-due-tong",
+      "ten": "Trần Duệ Tông",
+      "lon": 106.5183744,
+      "lat": 21.0802176,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1337–1377, trị vì 1372–1377",
+      "mo_ta": "Em vua Trần Nghệ Tông, được nhường ngôi năm 1372. Năm 1377 thân chinh đem quân đánh Chiêm Thành, tử trận tại thành Đồ Bàn (Vijaya). Theo «Đại Việt sử ký toàn thư», thi hài không tìm được, triều đình lập lăng ở Hy Lăng, dâng miếu hiệu Duệ Tông.",
+      "dia_diem": "Hy Lăng (Đồng Hy Lăng), núi Ngọc Thanh, xã Thủy An, thành phố Quảng Ninh (trước là thị xã Đông Triều) — thuộc Khu di tích lịch sử nhà Trần tại Đông Triều",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Ninh — Những bí ẩn khu lăng mộ các vua Trần ở Đông Triều — https://baoquangninh.vn/nhung-bi-an-khu-lang-mo-cac-vua-tran-o-dong-trieu-2144709.html",
+        "Cục Di sản văn hoá — Khu di tích lịch sử nhà Trần tại Đông Triều — https://dsvh.gov.vn/khu-di-tich-lich-su-nha-tran-tai-dong-trieu-2972"
+      ]
+    },
+    {
+      "id": "tran-thuan-tong",
+      "ten": "Trần Thuận Tông",
+      "lon": 106.5183744,
+      "lat": 21.0802176,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "?–1399, trị vì 1388–1398",
+      "mo_ta": "Con vua Trần Nghệ Tông, được lập lên ngôi năm 1388 khi Hồ Quý Ly đã nắm thực quyền triều chính. Năm 1398 bị Hồ Quý Ly ép nhường ngôi cho thái tử mới lên ba (Trần Thiếu Đế), xuất gia tu đạo; năm 1399 bị Hồ Quý Ly sát hại. Táng chung khu vực Hy Lăng với Trần Duệ Tông.",
+      "dia_diem": "Hy Lăng, núi Ngọc Thanh, xã Thủy An, thành phố Quảng Ninh (trước là thị xã Đông Triều) — thuộc Khu di tích lịch sử nhà Trần tại Đông Triều",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Ninh — Hệ thống lăng mộ nhà Trần ở Đông Triều — https://baoquangninh.vn/he-thong-lang-mo-nha-tran-o-dong-trieu-2177220.html",
+        "Cục Di sản văn hoá — Khu di tích lịch sử nhà Trần tại Đông Triều — https://dsvh.gov.vn/khu-di-tich-lich-su-nha-tran-tai-dong-trieu-2972"
+      ],
+      "ghi_chu_bien_tap": "Hy Lăng được nguồn xác nhận là nơi táng chung của hai vua Trần Duệ Tông và Trần Thuận Tông — không tách riêng khu mộ từng vị."
+    },
+    {
+      "id": "le-hien-tong-le-trung-hung",
+      "ten": "Lê Hiển Tông",
+      "lon": 105.5201075,
+      "lat": 19.9314713,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1717–1786, trị vì 1740–1786",
+      "mo_ta": "Vua áp chót thời Lê Trung Hưng, ở ngôi 46 năm trải qua bốn đời chúa Trịnh, chỉ giữ vai trò tượng trưng trong khi thực quyền nằm ở phủ chúa. Năm 1786, quân Tây Sơn do Nguyễn Huệ chỉ huy ra Bắc «phù Lê diệt Trịnh», ông mất cùng năm. Phần mộ được xác định tại làng Bàn Thạch nhờ dấu tích phát hiện khi đào đất; khu lăng mộ mới được nhân dân và dòng họ Hoàng góp hơn 3 tỷ đồng xây dựng lại.",
+      "dia_diem": "Khu lăng mộ làng Bàn Thạch, xã Xuân Quang cũ (nay thuộc xã Thọ Xuân), tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh tra — Thanh Hóa: Xây dựng quần thể lăng mộ vua Lê Hiển Tông — https://thanhtra.com.vn/xa-hoi/the-thao/Thanh-Hoa-Xay-dung-quan-the-lang-mo-vua-Le-Hien-Tong-26449.html",
+        "Báo Tiền Phong — Quanh ngôi mộ được coi là của vua Lê Hiển Tông — https://tienphong.vn/quanh-ngoi-mo-duoc-coi-la-cua-vua-le-hien-tong-post182199.tpo"
+      ],
+      "ghi_chu_bien_tap": "Nguồn Tiền Phong dùng cụm «được coi là» — vị trí phần mộ dựa trên khảo sát và ghi chép địa phương, chưa phải kết luận khảo cổ chính thức như trường hợp Lê Dụ Tông."
+    },
+    {
+      "id": "le-du-tong",
+      "ten": "Lê Dụ Tông",
+      "lon": 105.5201075,
+      "lat": 19.9314713,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1679–1731, trị vì 1705–1729",
+      "mo_ta": "Vua thời Lê Trung Hưng, ở ngôi 24 năm dưới quyền nhiếp chính chúa Trịnh Cương — giai đoạn Đàng Ngoài tương đối ổn định. Thoái vị năm 1729, mất năm 1731. Thi hài được khai quật nghiên cứu khảo cổ năm 1964 rồi lưu tại Viện Khảo cổ học, đến năm 2010 mới được đưa về an táng lại tại quê nhà sau 46 năm.",
+      "dia_diem": "Lăng vua Lê Dụ Tông, làng Bái Trạch, xã Thọ Xuân, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Văn hóa & Đời sống Thanh Hóa — Lăng, mộ vua Lê Dụ Tông và hành trình «hồi hương» sau 46 năm — https://vhds.baothanhhoa.vn/thanh-hoa-xua-va-nay-lang-mo-vua-le-du-tong-va-hanh-trinh-hoi-huong-nbsp-sau-46-nam-nbsp-43096.htm",
+        "Báo Tuổi Trẻ — Thi hài vua Lê Dụ Tông trở về Thanh Hóa — https://tuoitre.vn/thi-hai-vua-le-du-tong-tro-ve-thanh-hoa-360562.htm"
+      ]
+    },
+    {
+      "id": "thua-thien-cao-hoang-hau",
+      "ten": "Thừa Thiên Cao Hoàng hậu — Tống Thị Lan",
+      "lon": 107.5614416,
+      "lat": 16.4110946,
+      "loai": "hoang-hau-thai-hau",
+      "nam_hien_thi": "1762–1814",
+      "mo_ta": "Vợ đầu vua Gia Long, con gái Thái phó Tống Phúc Khuông. Bôn ba cùng chồng suốt thời kỳ gây dựng lại cơ đồ chúa Nguyễn trước khi lên ngôi. Mất năm 1814, an táng bên phải huyệt lăng Thiên Thọ (lăng Gia Long) — ngôi mộ song táng cùng vua, tượng trưng cho mối tình gắn bó suốt hoạn nạn. Năm 1820 vua Minh Mạng dâng thêm tôn thụy.",
+      "dia_diem": "Lăng Thiên Thọ Hữu (song táng cùng vua Gia Long), núi Thọ Sơn, xã Hương Thọ, thành phố Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo VnExpress — Cuộc đời trắc trở của hai hoàng hậu triều Nguyễn — https://vnexpress.net/cuoc-doi-trac-tro-cua-hai-hoang-hau-trieu-nguyen-3381879.html",
+        "Báo Pháp luật TP.HCM — Cuộc đời trắc trở của hai hoàng hậu triều Nguyễn — https://plo.vn/cuoc-doi-trac-tro-cua-hai-hoang-hau-trieu-nguyen-post385113.html"
+      ]
+    },
+    {
+      "id": "ngo-thi-ngoc-dao",
+      "ten": "Ngô Thị Ngọc Dao",
+      "lon": 105.4048721,
+      "lat": 19.9029455,
+      "loai": "hoang-hau-thai-hau",
+      "nam_hien_thi": "1420–1496",
+      "mo_ta": "Con gái Thái bảo Ngô Từ, phi tần vua Lê Thái Tông, mẹ vua Lê Thánh Tông — vị vua được xem là kiệt xuất bậc nhất thời phong kiến Việt Nam. Có ảnh hưởng lớn tới nhân cách, đức hạnh và sự nghiệp của con trai. Mất ngày 26 tháng 3 nhuận năm Bính Thìn (1496), thọ 76 tuổi; táng tại Sơn Lăng trong khu di tích Lam Kinh.",
+      "dia_diem": "Sơn Lăng, khu di tích Lam Kinh, xã Lam Sơn (trước là thị trấn Lam Sơn), huyện Thọ Xuân, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Khu di tích Lam Kinh — Hoàng Thái hậu Ngô Thị Ngọc Dao — https://ditichlamkinh.vn/m/vi/hoang-thai-hau-ngo-thi-ngoc-dao-3383F1656A605D6C9FF06488A8E22CEB.html",
+        "Báo Thanh Hóa — Khai mạc Lễ hội Phủ Nhì - Lễ thánh mẫu Hoàng Thái hậu Ngô Thị Ngọc Dao — https://baothanhhoa.vn/khai-mac-le-hoi-phu-nhi-le-thanh-mau-hoang-thai-hau-ngo-thi-ngoc-dao-246250.htm"
+      ]
+    },
+    {
+      "id": "ly-than-tong",
+      "ten": "Lý Thần Tông",
+      "lon": 105.9595,
+      "lat": 21.1068,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1116–1138, trị vì 1128–1138",
+      "mo_ta": "Cháu gọi vua Lý Nhân Tông bằng bác, được lập làm Hoàng thái tử rồi nối ngôi năm 1128 vì Lý Nhân Tông không có con trai — vị vua duy nhất nhà Lý lên ngôi không phải kế vị trực tiếp từ vua cha. Là một trong 8 vị vua triều Lý được thờ tại Đền Đô.",
+      "dia_diem": "Đền Đô (nơi thờ 8 vị vua triều Lý), phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo VnExpress — Đền Đô - nơi ghi dấu lịch sử 8 vị vua nhà Lý — https://vnexpress.net/den-do-noi-ghi-dau-lich-su-8-vi-vua-nha-ly-4649993.html",
+        "Báo VnExpress — Chính xác, Lý Thần Tông là vua duy nhất của nhà Lý kế vị ngai vàng không phải từ vua cha — https://vnexpress.net/tim-hieu-ong-vua-cam-con-quan-lay-chong-truoc-khi-sung-vao-hau-cung-3542245-p3.html"
+      ]
+    },
+    {
+      "id": "ly-anh-tong",
+      "ten": "Lý Anh Tông",
+      "lon": 105.9595,
+      "lat": 21.1068,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1136–1175, trị vì 1138–1175",
+      "mo_ta": "Con vua Lý Thần Tông, lên ngôi từ năm 2 tuổi, thời gian đầu do Đỗ Anh Vũ rồi Tô Hiến Thành phụ chính. Là một trong 8 vị vua triều Lý được thờ tại Đền Đô.",
+      "dia_diem": "Đền Đô (nơi thờ 8 vị vua triều Lý), phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo VnExpress — Đền Đô - nơi ghi dấu lịch sử 8 vị vua nhà Lý — https://vnexpress.net/den-do-noi-ghi-dau-lich-su-8-vi-vua-nha-ly-4649993.html"
+      ]
+    },
+    {
+      "id": "ly-cao-tong",
+      "ten": "Lý Cao Tông",
+      "lon": 105.9595,
+      "lat": 21.1068,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1173–1210, trị vì 1175–1210",
+      "mo_ta": "Con vua Lý Anh Tông, lên ngôi từ năm 2 tuổi nhờ công phò lập của Tô Hiến Thành. Triều đại ông chứng kiến nhà Lý suy yếu rõ rệt, loạn lạc nổi lên nhiều nơi. Là một trong 8 vị vua triều Lý được thờ tại Đền Đô.",
+      "dia_diem": "Đền Đô (nơi thờ 8 vị vua triều Lý), phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo VnExpress — Đền Đô - nơi ghi dấu lịch sử 8 vị vua nhà Lý — https://vnexpress.net/den-do-noi-ghi-dau-lich-su-8-vi-vua-nha-ly-4649993.html"
+      ]
+    },
+    {
+      "id": "ly-hue-tong",
+      "ten": "Lý Huệ Tông",
+      "lon": 105.9595,
+      "lat": 21.1068,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1194–1226, trị vì 1210–1224",
+      "mo_ta": "Con vua Lý Cao Tông, vị vua thứ 8 và là vua nam cuối cùng nhà Lý; cha của Lý Chiêu Hoàng. Năm 1224 nhường ngôi cho con gái rồi xuất gia; nhà Lý chấm dứt, mở đầu nhà Trần. Là một trong 8 vị vua triều Lý được thờ tại Đền Đô.",
+      "dia_diem": "Đền Đô (nơi thờ 8 vị vua triều Lý), phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo VnExpress — Đền Đô - nơi ghi dấu lịch sử 8 vị vua nhà Lý — https://vnexpress.net/den-do-noi-ghi-dau-lich-su-8-vi-vua-nha-ly-4649993.html"
       ]
     }
   ]

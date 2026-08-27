@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh nhân & anh hùng các dân tộc thiểu số Việt Nam — Sóng 10. Mọi mục draft, chờ kiểm sử §9. Toạ độ ở mức trung tâm huyện/xã (qua OpenStreetMap Nominatim) do phần lớn nguồn chỉ ghi rõ đến cấp xã/huyện — do_tin_cay_toa_do ghi rõ theo từng mục. [Phase 3: hợp nhất danh-nhan-mien-nui-phia-bac.json → nhóm «Danh nhân dân tộc thiểu số · Miền núi phía Bắc».]",
-  "ngay_cap_nhat": "2026-07-23",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Báo Quân đội nhân dân — qdnd.vn",
     "Báo Nhân Dân — nhandan.vn",
@@ -24,7 +24,16 @@
     "Báo Thái Nguyên điện tử — baothainguyen.vn",
     "Báo An ninh Thủ đô — anninhthudo.vn",
     "Báo Tuyên Quang điện tử — baotuyenquang.com.vn",
-    "Hội Nhà văn Việt Nam — vanvn.vn"
+    "Hội Nhà văn Việt Nam — vanvn.vn",
+    "Sở Nội vụ tỉnh Quảng Ngãi — snv.quangngai.gov.vn",
+    "Đoàn ĐBQH tỉnh Quảng Ngãi — dbnd.quangngai.gov.vn",
+    "Báo Kon Tum điện tử — baokontum.com.vn",
+    "Báo Đắk Lắk điện tử — baodaklak.vn",
+    "Báo Gia Lai điện tử — baogialai.com.vn",
+    "Báo Dân tộc và Phát triển — baodantoc.vn",
+    "VietnamNet (chuyên trang Dân tộc & Phát triển) — dantocphattrien.vietnamnet.vn",
+    "Cổng TTĐT Bộ VHTTDL (Cục Mỹ thuật, Nhiếp ảnh và Triển lãm) — scov.gov.vn",
+    "Báo Thanh tra điện tử — thanhtra.com.vn"
   ],
   "items": [
     {
@@ -888,6 +897,160 @@
       "nguon": [
         "Tiền Phong — Nghệ nhân ưu tú Danh Bê, người giữ lửa nghệ thuật Khmer — https://tienphong.vn/nghe-nhan-uu-tu-danh-be-nguoi-giu-lua-nghe-thuat-khmer-post1801689.tpo"
       ]
+    },
+    {
+      "id": "a-xau-gie-trieng",
+      "ten": "A Xâu",
+      "lon": 107.75,
+      "lat": 15.1,
+      "loai": "anh-hung-dtts",
+      "nam_hien_thi": "sinh 1944",
+      "mo_ta": "Anh hùng Lực lượng vũ trang nhân dân người dân tộc Gié Triêng, sinh năm 1944 tại xã Đăk Plô. Từ năm 14 tuổi tham gia du kích địa phương, là một trong những chiến sĩ đặc công gan dạ, mưu trí của Quân khu 5 trong kháng chiến chống Mỹ.",
+      "dia_diem": "Xã Đăk Plô, huyện Đăk Glei (địa bàn Kon Tum cũ)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Nội vụ tỉnh Quảng Ngãi — Phó Chủ tịch Thường trực UBND tỉnh Y Ngọc thăm Anh hùng Lực lượng vũ trang nhân dân A Xâu — https://snv.quangngai.gov.vn/ve-linh-vuc-nguoi-co-cong/pho-chu-tich-thuong-truc-ubnd-tinh-y-ngoc-tham-anh-hung-luc-luong-vu-trang-nhan-dan-a-xau.html"
+      ]
+    },
+    {
+      "id": "dinh-nup",
+      "ten": "Đinh Núp (Anh hùng Núp)",
+      "lon": 108.55,
+      "lat": 14.27,
+      "loai": "anh-hung-dtts",
+      "nam_hien_thi": "1914–1999",
+      "mo_ta": "Anh hùng Lực lượng vũ trang nhân dân người dân tộc Ba Na, sinh tại làng Stơr, xã Tơ Tung, huyện K'Bang, Gia Lai. Chỉ huy đội du kích làng Stơr đánh bại 10 cuộc càn của Pháp (1950–1951) bằng vũ khí thô sơ — chông, bẫy đá, cung nỏ; năm 1955 là người đầu tiên ở Tây Nguyên được phong Anh hùng Lực lượng vũ trang nhân dân. Làng Stơr là nguyên mẫu làng Kông Hoa trong tiểu thuyết «Đất nước đứng lên» của Nguyên Ngọc.",
+      "dia_diem": "Làng Stơr, xã Tơ Tung, huyện K'Bang, tỉnh Gia Lai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên điện tử — Trang sử mới trên quê hương Anh hùng Núp — https://baothainguyen.vn/phong-su-ghi-chep/202305/trang-su-moi-tren-que-huong-anh-hung-nup-39d329b/"
+      ]
+    },
+    {
+      "id": "lo-lai-suu",
+      "ten": "Lồ Lài Sửu",
+      "lon": 104.3667,
+      "lat": 22.5333,
+      "loai": "nghe-nhan-di-san",
+      "nam_hien_thi": "sinh 1963",
+      "mo_ta": "Nghệ nhân Ưu tú người dân tộc Bố Y, sinh năm 1963, tại thôn Lao Hầu, xã Thanh Bình, huyện Mường Khương, Lào Cai. Từ năm 1995 sưu tầm, ghi chép dân ca, phong tục, tri thức truyền thống của người Bố Y, sáng tác thêm lời mới theo làn điệu cổ và dàn dựng múa dân gian cho lớp trẻ; hiện thuộc và hát được khoảng 60 làn điệu dân ca Bố Y.",
+      "dia_diem": "Thôn Lao Hầu, xã Thanh Bình, huyện Mường Khương, tỉnh Lào Cai",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT Hội Liên hiệp Phụ nữ Việt Nam — Nghệ nhân bảo tồn văn hóa truyền thống dân tộc Bố Y — https://www.hoilhpn.org.vn/en/tin-chi-tiet/-/chi-tiet/nghe-nhan-bao-ton-van-hoa-truyen-thong-dan-toc-bo-y-31329-101.html"
+      ]
+    },
+    {
+      "id": "sin-van-doi",
+      "ten": "Sìn Văn Doi",
+      "lon": 103.1667,
+      "lat": 22.15,
+      "loai": "nghe-nhan-di-san",
+      "nam_hien_thi": "đang hoạt động — nghệ nhân dạy tiếng Mảng",
+      "mo_ta": "Nghệ nhân dân tộc Mảng, tham gia giảng dạy tiếng Mảng theo hình thức truyền khẩu tại các lớp học cộng đồng ở xã Nậm Pì, huyện Nậm Nhùn, Lai Châu — nỗ lực bảo tồn một trong những ngôn ngữ dân tộc thiểu số có nguy cơ mai một cao nhất Việt Nam (dân tộc Mảng chỉ khoảng 4.650 người theo điều tra 2019).",
+      "dia_diem": "Xã Nậm Pì, huyện Nậm Nhùn, tỉnh Lai Châu",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamNet (chuyên trang Dân tộc & Phát triển) — Nậm Nhùn (Lai Châu): Khai giảng dạy tiếng dân tộc Mảng theo hình thức truyền khẩu — https://dantocphattrien.vietnamnet.vn/nam-nhun-lai-chau-khai-giang-day-tieng-dan-toc-mang-theo-hinh-thuc-truyen-khau-65603.html"
+      ]
+    },
+    {
+      "id": "dieu-klung",
+      "ten": "Điểu Klung",
+      "lon": 107.8333,
+      "lat": 12.9167,
+      "loai": "nghe-nhan-di-san",
+      "nam_hien_thi": "đang hoạt động — nghệ nhân sử thi Ot N'rông",
+      "mo_ta": "Nghệ nhân sử thi (Ot N'rông) dân tộc Mnông, tỉnh Đắk Lắk. Là một trong số rất ít nghệ nhân còn sống thuộc và hát kể được sử thi Mnông, sau khi các nghệ nhân cùng thế hệ như Điểu Kâu, Điểu Klưk đã qua đời; được Sở Văn hóa - Thể thao và Du lịch Đắk Lắk lập hồ sơ đề nghị phong tặng Nghệ nhân Ưu tú.",
+      "dia_diem": "Tỉnh Đắk Lắk (địa chỉ xã/huyện cụ thể chưa xác nhận được qua nguồn)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đắk Lắk điện tử — Nhìn lại 30 năm nghiên cứu, sưu tầm, phổ biến sử thi M'nông — https://baodaklak.vn/channel/9803/201807/nhin-lai-30-nam-nghien-cuu-suu-tam-pho-bien-su-thi-mnong-5592199/"
+      ],
+      "ghi_chu_bien_tap": "Địa chỉ cụ thể (buôn/xã/huyện) và số lượng bộ sử thi thuộc — trước đây ghi 'buôn Tul A, xã Ea Wel, huyện Buôn Đôn' và 'hơn 100 bộ' — KHÔNG có trong nguồn đã mở trực tiếp (baodaklak.vn chỉ nói ông ở tỉnh Đắk Lắk, không nêu địa chỉ hay số lượng cụ thể). Đã gỡ bỏ, chỉ giữ lại tỉnh. Tra được nguồn xác nhận thì bổ sung (2026-08-27)."
+
+    },
+    {
+      "id": "a-jar",
+      "ten": "A Jar",
+      "lon": 107.9833,
+      "lat": 14.35,
+      "loai": "tri-thuc-dtts",
+      "nam_hien_thi": "đang hoạt động — dịch giả sử thi Tây Nguyên (74 tuổi theo bài viết)",
+      "mo_ta": "Nghệ nhân, dịch giả người Tơ Đrá (một nhánh dân tộc Xơ Đăng), trú tại làng Plei Đồn, phường Quang Trung, TP Kon Tum. Từ năm 2000 tham gia đề án của Viện Khoa học Xã hội Việt Nam sưu tầm, phiên âm, dịch kho tàng sử thi Tây Nguyên; đã hoàn thành biên dịch 30 bộ sử thi từ tiếng Ba Na và Xơ Đăng. Vợ ông, bà Y Pứk, quê làng Kon Jong Kơtu, huyện Đak Hà.",
+      "dia_diem": "Làng Plei Đồn, phường Quang Trung, TP Kon Tum, tỉnh Kon Tum",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân tộc và Phát triển — Nghệ nhân A Jar - Người biên dịch hơn 30 bộ sử thi Tây Nguyên — https://baodantoc.vn/nghe-nhan-a-jar-nguoi-bien-dich-hon-30-bo-su-thi-tay-nguyen-1637913451392.htm"
+      ]
+    },
+    {
+      "id": "siu-hkech",
+      "ten": "Siu H'Kéch",
+      "lon": 108.2167,
+      "lat": 13.5667,
+      "loai": "van-nghe-si-dan-toc",
+      "nam_hien_thi": "đang hoạt động — nghệ nhân hát kể sử thi",
+      "mo_ta": "Nghệ nhân hát kể sử thi (khan) dân tộc Gia Rai, tổ dân phố 12, thị trấn Phú Thiện, huyện Phú Thiện, Gia Lai — một trong số rất ít người ở huyện còn thuộc và hát kể được sử thi Jrai, hiện thuộc lòng hơn 10 bài sử thi. Từng tham gia du kích cùng chồng là Kpă Uit trong Tổng tiến công Mậu Thân 1968; ru con bằng chính những khúc sử thi này.",
+      "dia_diem": "Tổ dân phố 12, thị trấn Phú Thiện, huyện Phú Thiện, tỉnh Gia Lai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Gia Lai điện tử — Siu H'Kéch: «Báu vật» của buôn làng — https://baogialai.com.vn/siu-hkech-bau-vat-cua-buon-lang-post314303.html"
+      ]
+    },
+    {
+      "id": "ho-van-bien",
+      "ten": "Hồ Văn Biên",
+      "lon": 108.5167,
+      "lat": 15.2,
+      "loai": "nghe-nhan-di-san",
+      "nam_hien_thi": "sinh 1964",
+      "mo_ta": "Nghệ nhân Ưu tú dân tộc Cor, sinh năm 1964, xã Trà Sơn, huyện Trà Bồng, Quảng Ngãi. Thông thạo diễn tấu cồng chiêng và các loại nhạc cụ truyền thống, truyền dạy dân ca dân nhạc cho thế hệ trẻ, góp phần đưa nghệ thuật cồng chiêng của người Cor trở thành Di sản văn hóa phi vật thể quốc gia.",
+      "dia_diem": "Xã Trà Sơn, huyện Trà Bồng, tỉnh Quảng Ngãi",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo ảnh Dân tộc và Miền núi (TTXVN) — Nghệ nhân Ưu tú Hồ Văn Biên - Người giữ hồn chiêng, dân vũ nơi đại ngàn đất quế Trà Bồng — https://dantocmiennui.baotintuc.vn/nghe-nhan-uu-tu-ho-van-bien-nguoi-giu-hon-chieng-dan-vu-noi-dai-ngan-dat-que-tra-bong-post300639.html"
+      ]
+    },
+    {
+      "id": "ksor-hnao",
+      "ten": "Ksor Hnao",
+      "lon": 108,
+      "lat": 13.9833,
+      "loai": "nghe-nhan-di-san",
+      "nam_hien_thi": "sinh 1956",
+      "mo_ta": "Nghệ nhân Ưu tú dân tộc Gia Rai, sinh năm 1956, làng Kép, phường Đống Đa, TP Pleiku, Gia Lai. Là một trong số ít nghệ nhân còn tạc được tượng nhà mồ, biết chỉnh chiêng, chế tác nhạc cụ, ủ rượu ghè và thuộc các bài hát cổ Jrai; được phong tặng Nghệ nhân Ưu tú năm 2015, là người thầy đặc biệt của nhiều thế hệ học trò trong và ngoài nước yêu văn hóa Tây Nguyên.",
+      "dia_diem": "Làng Kép, phường Đống Đa, TP Pleiku, tỉnh Gia Lai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT Bộ VHTTDL (Cục Mỹ thuật, Nhiếp ảnh và Triển lãm) — Ksor H'nao, nghệ nhân tài hoa của dân tộc Gia Rai — https://scov.gov.vn/dat-nuoc-con-nguoi/ksor-h-nao-nghe-nhan-tai-hoa-cua-dan-toc-gia-rai.html",
+        "Báo Gia Lai điện tử — Nghệ nhân Ksor Hnao - người thầy đa tài — https://baogialai.com.vn/nguoi-thay-dac-biet-ksor-hnao-post229938.html"
+      ]
+    },
+    {
+      "id": "ro-cham-do",
+      "ten": "Rơ Châm Đo",
+      "lon": 107.9,
+      "lat": 14.1,
+      "loai": "nghe-nhan-di-san",
+      "nam_hien_thi": "đang hoạt động — già làng, nghệ nhân tạc tượng nhà mồ",
+      "mo_ta": "Già làng, nghệ nhân tạc tượng nhà mồ, làng Kép Ping, xã Ia Mnông, huyện Chư Păh, Gia Lai. Am hiểu sâu sắc nghệ thuật tạc tượng gỗ nhà mồ Tây Nguyên — những pho tượng mộc mạc mô tả cảnh lao động, săn bắt, sinh hoạt, tín ngưỡng, phản ánh đời sống tinh thần của các dân tộc Tây Nguyên.",
+      "dia_diem": "Làng Kép Ping, xã Ia Mnông, huyện Chư Păh, tỉnh Gia Lai",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh tra điện tử — Nghệ thuật tạc tượng gỗ nhà mồ độc đáo của đồng bào DTTS — https://thanhtra.com.vn/van-hoa-the-thao-BE2162E3A/nghe-thuat-tac-tuong-go-nha-mo-doc-dao-cua-dong-bao-dtts-443FC575.html"
+      ],
+      "ghi_chu_bien_tap": "Dân tộc CHƯA XÁC NHẬN qua nguồn: bài nguồn (thanhtra.com.vn) chỉ liệt kê Êđê, Ba Na, Jrai, Xê Đăng là các dân tộc thực hành nghệ thuật tạc tượng nhà mồ nói chung, không ghi rõ ông Rơ Châm Đo thuộc dân tộc nào. Họ \"Rơ Châm\" là họ mẫu hệ phổ biến của người Jrai (cùng mẫu hệ với nghệ nhân Rơ Châm Tih đã có trong kho), nên khả năng cao là Jrai — nhưng đây là suy luận, chưa có nguồn ghi trực tiếp. Đã bỏ khẳng định dân tộc khỏi mo_ta (2026-08-27)."
     }
   ]
 }

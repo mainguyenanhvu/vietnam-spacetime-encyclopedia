@@ -1,11 +1,16 @@
 {
   "ghi_chu": "Huyền sử khai quốc + Tứ bất tử + Hải đội Hoàng Sa. Mỗi nhân vật neo vào NƠI THỜ (đền/lăng/phủ/nhà trưng bày). Nguồn: kinh điển chính thống (Đại Việt Sử Ký Toàn Thư, Lĩnh Nam Chích Quái, Việt Điện U Linh, Phủ Biên Tạp Lục, Truyền Kỳ Tân Phả) + cổng di sản nhà nước (Cục Di sản Văn hoá dsvh.gov.vn, cổng tỉnh, quyết định xếp hạng di tích). KHÔNG mục nào lấy Wikipedia làm nguồn. Toạ độ soát 2026-07-19 (OSM Nominatim + đối chiếu tỉnh): 5 điểm độ tin cậy cao (reviewed), 4 trung + 1 thấp (draft). CẢNH BÁO: Phủ Dầy (mau-lieu-hanh) toạ độ ƯỚC LƯỢNG, chưa xác minh thực địa — cần soát lại bằng Google Maps / GIS Nam Định. Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực. Chủ quyền: Hoàng Sa/Trường Sa luôn tiếng Việt (Luật Đo đạc & bản đồ 2018).",
-  "ngay_cap_nhat": "2026-07-24",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên) — Ngoại kỷ, Kỷ Hồng Bàng thị, Kỷ nhà Thục",
     "Lĩnh Nam Chích Quái (Trần Thế Pháp)",
     "Việt Điện U Linh (Lý Tế Xuyên)",
-    "Cục Di sản Văn hoá — dsvh.gov.vn"
+    "Cục Di sản Văn hoá — dsvh.gov.vn",
+    "Báo Nhân Dân — nhandan.vn",
+    "Báo Pháp luật Việt Nam — baophapluat.vn",
+    "Cục Di sản văn hoá — dsvh.gov.vn",
+    "Sở Văn hoá, Thể thao tỉnh Ninh Bình — vhtt.ninhbinh.gov.vn",
+    "Báo Bắc Giang (nay baobacninhtv.vn) — baobacninhtv.vn"
   ],
   "items": [
     {
@@ -219,6 +224,206 @@
         "Cục Di sản Văn hoá (dsvh.gov.vn) — Âm Linh Tự và mộ lính Hoàng Sa, Di tích quốc gia; Châu bản triều Nguyễn"
       ],
       "trang_thai": "reviewed"
+    },
+    {
+      "id": "lang-lieu",
+      "ten": "Lang Liêu — Hoàng tử làm bánh chưng bánh giầy",
+      "lon": 105.4048,
+      "lat": 21.3396,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Họ Hồng Bàng — truyền thuyết, đời Hùng Vương thứ Sáu sang thứ Bảy",
+      "noi_tho": "Khu di tích lịch sử văn hoá thờ Hoàng tử Lang Liêu, phường Dữu Lâu, TP Việt Trì, tỉnh Phú Thọ",
+      "cong_trang": "Theo truyền thuyết, Lang Liêu là con trai thứ 18 của Hùng Vương thứ Sáu. Trong cuộc thi tìm lễ vật dâng vua cha, ông khéo dùng gạo nếp, đậu xanh, thịt lợn và lá dong làm ra bánh chưng vuông và bánh giầy tròn, tượng trưng «trời tròn, đất vuông», thể hiện lòng hiếu thảo — nhờ đó được vua Hùng truyền ngôi, trở thành Hùng Vương thứ Bảy.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Tổ chức Lễ dâng hương tưởng nhớ Hoàng tử Lang Liêu, tôn vinh văn hoá ẩm thực dân tộc — https://nhandan.vn/to-chuc-le-dang-huong-tuong-nho-hoang-tu-lang-lieu-ton-vinh-van-hoa-am-thuc-dan-toc-post877444.html"
+      ]
+    },
+    {
+      "id": "mai-an-tiem",
+      "ten": "Mai An Tiêm — sự tích dưa hấu",
+      "lon": 105.9982,
+      "lat": 19.9762,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Truyền thuyết, cuối thời Hùng Vương thứ 18",
+      "noi_tho": "Đền Mai An Tiêm, xã Nga An (Nga Phú cũ), huyện Nga Sơn, tỉnh Thanh Hoá — di tích lịch sử văn hoá cấp tỉnh",
+      "cong_trang": "Theo truyền thuyết, Mai An Tiêm là con nuôi vua Hùng, bị đày ra đảo hoang vì tội bất kính với vua cha. Vợ chồng ông tự lực trồng được vườn dưa hấu, khắc tên mình lên quả rồi thả trôi biển; nhờ đó được biết đến và đón về — biểu tượng ý chí tự lực tự cường.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT xã Nga An, tỉnh Thanh Hoá — Di tích đền Mai An Tiêm — https://ngaan.thanhhoa.gov.vn/lich-su-hinh-thanh/di-tich-den-mai-an-tiem-499356"
+      ]
+    },
+    {
+      "id": "ngoc-hoa-my-nuong",
+      "ten": "Ngọc Hoa công chúa — Mỵ Nương, vợ Tản Viên Sơn Thánh",
+      "lon": 105.2935,
+      "lat": 21.3584,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Truyền thuyết, đời Hùng Duệ Vương (Hùng Vương thứ 18)",
+      "noi_tho": "Gắn với lễ hội rước Chúa Gái, thị trấn Hùng Sơn, huyện Lâm Thao, tỉnh Phú Thọ",
+      "cong_trang": "Theo truyền thuyết, Ngọc Hoa là con gái Hùng Duệ Vương. Vua mở cuộc thi kén rể cho công chúa, Sơn Tinh (Tản Viên Sơn Thánh) thắng cuộc và rước nàng về núi Ba Vì. Lễ hội rước Chúa Gái hằng năm tái hiện đoàn rước dâu này; được đưa vào Danh mục Di sản văn hoá phi vật thể quốc gia (10/11/2023).",
+      "nhan_hinh_dung": "Không có chân dung xác thực; hình dung qua nghi lễ rước kiệu dân gian.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — Lễ hội rước Chúa Gái được đưa vào danh mục Di sản văn hoá phi vật thể Quốc gia — https://baophapluat.vn/le-hoi-ruoc-chua-gai-duoc-dua-vao-danh-muc-di-san-van-hoa-phi-vat-the-quoc-gia-post500180.html"
+      ],
+      "ghi_chu_bien_tap": "Không nhầm với hai nhân vật khác cùng tên «Ngọc Hoa» đã có trong cơ sở dữ liệu ở overlay khác (Phạm Tải – Ngọc Hoa; Ngọc Hoa công chúa Trần Ngọc Tường – tổ nghề thuốc Nam) — đây là Mỵ Nương thời Hùng Vương, vợ Tản Viên Sơn Thánh."
+    },
+    {
+      "id": "thanh-sam-nhi-vi",
+      "ten": "Nhị vị Thành hoàng Thanh Sầm — Hướng Thiện Ninh Quốc & Đạo Quang Vĩnh Yên Đại Vương",
+      "lon": 106.0302,
+      "lat": 20.7551,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, thời Hùng Vương (không rõ đời thứ mấy)",
+      "noi_tho": "Đình Thanh Sầm, xã Nghĩa Dân, huyện Kim Động, tỉnh Hưng Yên — di tích quốc gia (Quyết định 887/QĐ-BVHTTDL, 15/4/2022)",
+      "cong_trang": "Theo thần tích lưu tại đình, hai vị Hướng Thiện Ninh Quốc Đại Vương (Phạm Thiện) và Đạo Quang Vĩnh Yên Đại Vương (Phạm Quang) là nhị vị Thành hoàng làng Thanh Sầm thời Hùng Vương, được dân làng phụng thờ tại đình gồm 5 gian Đại bái, 5 gian Trung từ, 3 gian Hậu cung.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Đình Thanh Sầm, tỉnh Hưng Yên — https://dsvh.gov.vn/dinh-thanh-sam-tinh-hung-yen-22277"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu công trạng cụ thể của từng vị ngoài danh vị Thành hoàng — không suy diễn thêm chi tiết. Toạ độ ước lượng theo trung tâm huyện Kim Động (Nominatim không phân giải được xã Nghĩa Dân)."
+    },
+    {
+      "id": "tam-vi-ngo-dai-vuong",
+      "ten": "Tam vị Ngọ Đại Vương — đền Muỗm Quảng Hạ",
+      "lon": 105.9888,
+      "lat": 20.1707,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo truyền thuyết, thời Hùng Vương thứ 18",
+      "noi_tho": "Đền Muỗm Quảng Hạ, xã Yên Thắng, huyện Yên Mô, tỉnh Ninh Bình — di tích lịch sử văn hoá cấp tỉnh (27/11/2019)",
+      "cong_trang": "Theo truyền thuyết, ba vị Đệ nhất Ngọ Vị Chính trực Tôn thần, Đệ Nhị Ngọ Vị Trung chính Tôn thần, Đệ Tam Ngọ Vị Linh thông Tôn thần là tướng thời Hùng Vương thứ 18. Đền dựng kiểu «tiền Nhất hậu Đinh», còn lưu 16 đạo sắc phong thời Lê – Nguyễn.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao tỉnh Ninh Bình — Công tác lập hồ sơ xếp hạng di tích lịch sử văn hoá cấp tỉnh năm 2019 — https://vhtt.ninhbinh.gov.vn/vi/di-san-van-hoa/cong-tac-lap-ho-so-xep-hang-di-tich-lich-su-van-hoa-cap-tinh-nam-2019-440.html"
+      ]
+    },
+    {
+      "id": "hoang-cong-loi-cong",
+      "ten": "Hoàng Công Đại Vương & Lôi Công Đại Vương — đình Bùi",
+      "lon": 106.2811,
+      "lat": 20.6322,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, thời Hùng Vương thứ 18",
+      "noi_tho": "Đình Bùi, xã Duyên Hải, huyện Hưng Hà, tỉnh Thái Bình — di tích kiến trúc nghệ thuật quốc gia (Quyết định 3235/QĐ-BVHTTDL, 04/11/2020)",
+      "cong_trang": "Theo thần tích, hai vị Hoàng Công Đại Vương và Lôi Công Đại Vương là phụ tá cùng Tản Viên Sơn Thánh đánh giặc Thục vào thời vua Hùng Vương thứ 18; sau được dân làng lập đình phụng thờ.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Đình Bùi, tỉnh Thái Bình — https://dsvh.gov.vn/dinh-bui-tinh-thai-binh-3383"
+      ]
+    },
+    {
+      "id": "phan-tay-nhac",
+      "ten": "Tướng quân Phan Tây Nhạc — đình Thị Cấm",
+      "lon": 105.7555,
+      "lat": 21.0312,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, đời Hùng Vương thứ 18",
+      "noi_tho": "Đình Thị Cấm, phường Xuân Phương, quận Nam Từ Liêm, TP Hà Nội",
+      "cong_trang": "Theo thần tích, tướng quân Phan Tây Nhạc được vua Hùng giao thống lĩnh quân binh đi đánh giặc; khi qua vùng Hương Canh, ông tổ chức thi tuyển người giỏi việc hậu cần phục vụ quân binh. Sau chiến thắng, ông ở lại vùng đất này dạy dân cấy lúa, dệt vải; khi mất được dân tôn làm Thành hoàng làng. Hội thổi cơm thi Thị Cấm (mồng 8 tháng Giêng, tưởng nhớ ông) được ghi danh Di sản văn hoá phi vật thể quốc gia (Quyết định 827/QĐ-BVHTTDL, 09/3/2021).",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Hội thổi cơm thi Thị Cấm — https://dsvh.gov.vn/hoi-thoi-com-thi-thi-cam-3407"
+      ]
+    },
+    {
+      "id": "thach-linh-than-tuong",
+      "ten": "Thạch Linh Thần Tướng — đền Ao Miếu",
+      "lon": 106.0988,
+      "lat": 21.2737,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo truyền thuyết dân gian, thời các Vua Hùng (đời thứ mấy chưa xác nhận được qua nguồn)",
+      "noi_tho": "Đền Ao Miếu (Đền Thượng), thôn Hạ Lát, xã Tiên Sơn, thị xã Việt Yên, tỉnh Bắc Giang — di tích cấp quốc gia (2012)",
+      "cong_trang": "Theo truyền thuyết, một đêm mưa gió dữ dội ngày 10 tháng Giêng, phiến đá vỡ ra làm ba và có một đứa trẻ tướng mạo khác thường xuất hiện — được gia đình nông dân nuôi, đặt tên Thạch Công. Lớn lên, ông mang một con voi đá đi đánh giặc ngoại xâm giúp nước; sau khi thắng trận, ông cưỡi voi về Trang Tiên Lát thả voi rồi lên núi Phượng Hoàng, để lại áo mũ bay thẳng lên trời.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Bắc Giang (nay baobacninhtv.vn sau sáp nhập) — Bắc Giang: Về Hạ Lát nghe thần tích Thạch Tướng quân — https://baobacninhtv.vn/bg/van-hoa/327440/bac-giang-ve-ha-lat-nghe-than-tich-thach-tuong-quan.html"
+      ],
+      "ghi_chu_bien_tap": "Đời vua Hùng cụ thể chưa xác nhận được qua nguồn đã tự mở — một kết quả tìm kiếm khác nhắc tên hiệu «vua Hùng Tạo Vương» nhưng chưa tự đọc thấy trên trang gốc, không đưa vào. Toạ độ ước lượng theo trung tâm thị xã Việt Yên (Nominatim không phân giải được xã Tiên Sơn)."
+    },
+    {
+      "id": "le-rong",
+      "ten": "Tướng quân Lê Rộng — đình Nội",
+      "lon": 105.9719,
+      "lat": 20.2573,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, buổi đầu dựng nước thời Hùng Vương",
+      "noi_tho": "Đình Nội – chùa Phúc Khánh, tỉnh Ninh Bình (chưa xác nhận được xã/huyện cụ thể qua nguồn đã mở) — di tích kiến trúc nghệ thuật quốc gia (Quyết định 3236/QĐ-BVHTTDL, 09/9/2025)",
+      "cong_trang": "Theo thần tích, đình thờ Tướng quân Lê Rộng cùng các tướng khác đã từng giúp vua Hùng đánh giặc trong buổi đầu dựng nước. Đình dựng thời Hậu Lê, trùng tu lớn năm Thiệu Trị thứ 3 (1843).",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Đình Nội – chùa Phúc Khánh, tỉnh Ninh Bình — https://dsvh.gov.vn/dinh-noi-%E2%80%93-chua-phuc-khanh-tinh-ninh-binh-22287"
+      ],
+      "ghi_chu_bien_tap": "Địa chỉ cấp xã/huyện của đình chưa xác nhận được qua nguồn đã mở (dsvh.gov.vn chỉ ghi 'ở vị trí trung tâm của làng', không nêu tên xã); một kết quả tìm kiếm khác gợi ý 'xã Nam Xang' nhưng đây là suy diễn của công cụ tìm kiếm, KHÔNG có trong trang đã tự đọc — không dùng. Toạ độ tạm đặt ở trung tâm tỉnh Ninh Bình, cần soát lại địa chỉ cụ thể trước khi chuyển trạng thái reviewed."
+    },
+    {
+      "id": "dinh-thi-den",
+      "ten": "Đinh Thị Đen — Thân mẫu Tản Viên Sơn Thánh",
+      "lon": 105.245,
+      "lat": 21.033,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Đời Hùng Vương — trước khi sinh Tản Viên Sơn Thánh (truyền thuyết)",
+      "noi_tho": "Đền Lăng Sương, thôn Lăng Sương (khu 6), xã Trung Nghĩa, huyện Thanh Thuỷ, Phú Thọ",
+      "cong_trang": "Theo thần tích, Đinh Thị Đen là thân mẫu của Tản Viên Sơn Thánh (Sơn Tinh) — vị đứng đầu Tứ bất tử; sinh ông tại vùng Lăng Sương ven sông Đà rồi sớm qua đời. Đền Lăng Sương là nơi duy nhất cả nước thờ trọn gia đình Tản Viên: thân mẫu Đinh Thị Đen, dưỡng phụ Nguyễn Cao Hành, dưỡng mẫu Ma Thị Cao Sơn — được xếp hạng di tích quốc gia; lễ hội đền được công nhận Di sản văn hoá phi vật thể quốc gia năm 2018.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Lĩnh Nam Chích Quái — Truyện Tản Viên Sơn thần",
+        "Ban Tôn giáo Chính phủ (btgcp.gov.vn) — Đền Lăng Sương, tỉnh Phú Thọ thờ Đức Thánh Tản Viên Sơn Tinh, nơi linh thiêng cội nguồn của đất Việt — https://btgcp.gov.vn/pages/detail/9174/Den-Lang-Suong-tinh-Phu-Tho-tho-Duc-Thanh-Tan-Vien-Son-Tinh-noi-linh-thieng-coi-nguon-cua-dat-Viet.html",
+        "Sở Văn hoá, Thể thao và Du lịch tỉnh Phú Thọ (svhttdl.phutho.gov.vn) — Lễ đón bằng công nhận Lễ hội đền Lăng Sương là Di sản văn hoá phi vật thể quốc gia — http://svhttdl.phutho.gov.vn/tin/le-don-bang-cong-nhan-le-hoi-den-lang-suong-la-di-san-van-hoa-phi-vat-the-quoc-gia-va-khanh-thanh-cong-trinh-tu-bo-ton-tao-di-tich-quoc-gia-den-lang-suong-xa-trung-nghia-huyen-thanh-thuy_1005.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "tien-dung",
+      "ten": "Tiên Dung công chúa",
+      "lon": 106.315,
+      "lat": 20.938,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Đời Hùng Vương thứ 18 (truyền thuyết)",
+      "noi_tho": "Đền Bảo Sài (trong cụm di tích đình — đền — chùa Bảo Sài), phường Phạm Ngũ Lão, TP Hải Dương cũ — nay thuộc TP Hải Phòng",
+      "cong_trang": "Theo truyền thuyết «Chử Đồng Tử — Tiên Dung» trong Lĩnh Nam Chích Quái, Tiên Dung là con gái Hùng Vương thứ 18, du ngoạn trên sông rồi gặp và nên duyên cùng chàng trai nghèo Chử Đồng Tử. Đền Bảo Sài thờ riêng bà (tách khỏi đình Bảo Sài liền kề thờ một vị tướng khác thời Hai Bà Trưng) — cụm di tích được xếp hạng Di tích lịch sử văn hoá cấp quốc gia năm 1993.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Lĩnh Nam Chích Quái — Truyện Chử Đồng Tử – Tiên Dung",
+        "Báo Hải Phòng điện tử, tiền thân Báo Hải Dương (baohaiphong.vn) — Uy nghi cụm di tích đình, đền, chùa Bảo Sài — https://baohaiphong.vn/uy-nghi-cum-di-tich-dinh-den-chua-bao-sai-348261.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "bao-phuc-dai-vuong",
+      "ten": "Bảo Phúc Đại Vương",
+      "lon": 106.145,
+      "lat": 20.883,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Đời Hùng Vương thứ 18 (truyền thuyết)",
+      "noi_tho": "Đền Cậy, xã Long Xuyên, huyện Bình Giang cũ, tỉnh Hải Dương — nay thuộc TP Hải Phòng",
+      "cong_trang": "Theo thần tích, tên thật Phúc Công, sinh trong một gia đình làm nghề bốc thuốc cứu người; ông có công giúp Hùng Vương thứ 18 đánh lui quân xâm lấn, giữ yên bờ cõi, được phong Bảo Phúc Đại Vương và tôn làm thành hoàng. Đền Cậy còn lưu giữ 7 đạo sắc phong các triều Nguyễn (Tự Đức các năm 1854, 1858, 1880; Đồng Khánh 1887; Duy Tân 1909; Khải Định 1924), được xếp hạng Di tích lịch sử cấp quốc gia năm 1994.",
+      "nhan_hinh_dung": "Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Sắc phong các triều Nguyễn (Tự Đức, Đồng Khánh, Duy Tân, Khải Định) hiện lưu tại đền Cậy",
+        "Báo Hải Phòng điện tử, tiền thân Báo Hải Dương (baohaiphong.vn) — 5 di tích độc đáo thờ nhân vật thời Hùng Vương ở Hải Dương — https://baohaiphong.vn/5-di-tich-doc-dao-tho-nhan-vat-thoi-hung-vuong-o-hai-duong-248680.html"
+      ],
+      "trang_thai": "draft"
     }
   ]
 }

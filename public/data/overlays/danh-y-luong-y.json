@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Danh y & lương y lịch sử Việt Nam (y học cổ truyền) — Sóng 9. Mọi mục draft, chờ kiểm sử §9. Danh sách còn ít (8 mục) so với mục tiêu 15–25 vì WebSearch đã cạn phiên này và nhiều tra cứu DDG-lite/tên danh y triều Lê–Nguyễn khác (Lê Đức Toàn, Nguyễn Quang Tuân, Nguyễn Chỉ, Nguyễn Quý Thanh...) không tìm được nguồn báo chí/chính phủ xác thực (chỉ có mạng xã hội/Wikipedia hoặc bị CAPTCHA chặn) — không đưa vào để tránh bịa nguồn/toạ độ.",
-  "ngay_cap_nhat": "2026-07-27",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Báo Hải Phòng — baohaiphong.vn",
     "Cổng TTĐT Sở VHTT Hà Nội — sovhtt.hanoi.gov.vn",
@@ -9,7 +9,14 @@
     "Báo Sài Gòn Giải Phóng — sggp.org.vn",
     "Cổng TTĐT Bộ VHTTDL (Cục Mỹ thuật, Nhiếp ảnh và Triển lãm) — scov.gov.vn",
     "Tạp chí Người Hà Nội — nguoihanoi.vn",
-    "Viện Y Dược học dân tộc TP.HCM — vienydhdt.gov.vn"
+    "Viện Y Dược học dân tộc TP.HCM — vienydhdt.gov.vn",
+    "Báo Dân trí — dantri.com.vn",
+    "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — suckhoedoisong.vn",
+    "Cổng TTĐT TP Hải Phòng — haiphong.gov.vn",
+    "Báo Dân Việt — danviet.vn",
+    "Cổng TTĐT tỉnh Đồng Nai — dongnai.gov.vn",
+    "Báo Tuổi Trẻ — tuoitre.vn",
+    "Báo Hà Tĩnh điện tử — baohatinh.vn"
   ],
   "items": [
     {
@@ -262,6 +269,190 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Henriette Bùi Quang Chiêu, nữ bác sĩ đầu tiên của Việt Nam — https://suckhoedoisong.vn/henriette-bui-quang-chieu-nu-bac-si-dau-tien-cua-viet-nam-169141564.htm"
+      ]
+    },
+    {
+      "id": "dang-van-chung",
+      "ten": "Đặng Văn Chung",
+      "lon": 105.7594,
+      "lat": 10.2999,
+      "loai": "danh-y",
+      "nam_hien_thi": "1913–1999",
+      "mo_ta": "Giáo sư nội khoa, quê Sa Đéc (nay tỉnh Đồng Tháp), tốt nghiệp Y khoa Đông Dương năm 1937, nội trú Bệnh viện Bạch Mai. Năm 1954 được giao xây dựng Bộ môn Nội khoa Đại học Y Hà Nội, làm Chủ nhiệm Khoa Nội Bệnh viện Bạch Mai nhiều năm, đào tạo phần lớn các thế hệ bác sĩ nội khoa Việt Nam. Được truy tặng Giải thưởng Hồ Chí Minh năm 2000 cho cụm công trình nghiên cứu Nội khoa.",
+      "dia_diem": "Quê Sa Đéc, tỉnh Đồng Tháp; công tác tại Bệnh viện Bạch Mai và Đại học Y Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân trí — GS. Đặng Văn Chung - Người thầy lớn của nhiều thế hệ thầy thuốc — https://dantri.com.vn/suc-khoe/gs-dang-van-chung-nguoi-thay-lon-cua-nhieu-the-he-thay-thuoc-1385384259.htm"
+      ]
+    },
+    {
+      "id": "vu-dinh-tung",
+      "ten": "Vũ Đình Tụng",
+      "lon": 105.8542,
+      "lat": 21.0285,
+      "loai": "danh-y",
+      "nam_hien_thi": "~1895–1973",
+      "mo_ta": "Bác sĩ ngoại khoa, Giám đốc Nha Y tế Bắc Bộ khi Cách mạng Tháng Tám thành công. Năm 1947 được cử làm Bộ trưởng Bộ Thương binh — Cựu binh đầu tiên của nước Việt Nam Dân chủ Cộng hòa, giữ chức đến năm 1959. Có hai con trai hy sinh trong kháng chiến chống Pháp; Chủ tịch Hồ Chí Minh từng viết thư chia buồn riêng gửi ông.",
+      "dia_diem": "Công tác tại Nha Y tế Bắc Bộ, Hà Nội trước 1945; giữ chức Bộ trưởng Bộ Thương binh tại Việt Bắc rồi Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân điện tử — Những bức thư Bác gửi Bộ trưởng Bộ thương binh đầu tiên của Việt Nam — https://nhandan.vn/nhung-buc-thu-bac-gui-bo-truong-bo-thuong-binh-dau-tien-cua-viet-nam-post428292.html"
+      ]
+    },
+    {
+      "id": "nguyen-xuan-nguyen",
+      "ten": "Nguyễn Xuân Nguyên",
+      "lon": 105.8479,
+      "lat": 21.0169,
+      "loai": "danh-y",
+      "nam_hien_thi": "1907–1975",
+      "mo_ta": "Giáo sư nhãn khoa, sinh tại xã Quảng Giao, huyện Quảng Xương, Thanh Hóa. Tốt nghiệp bác sĩ y khoa năm 1935, chuyên sâu nghiên cứu phòng chống bệnh mắt hột — nguyên nhân gây mù phổ biến ở nông thôn thời bấy giờ. Sau Cách mạng Tháng Tám làm Chủ tịch Ủy ban Hành chính Hải Phòng, sau là Viện trưởng Viện Mắt; được truy tặng Giải thưởng Hồ Chí Minh năm 1996. Tượng đồng ông đặt tại khuôn viên Bệnh viện Mắt Trung ương, 85 Bà Triệu, Hà Nội.",
+      "dia_diem": "Tượng đài GS Nguyễn Xuân Nguyên, Bệnh viện Mắt Trung ương, 85 Bà Triệu, quận Hoàn Kiếm, Hà Nội; quê xã Quảng Giao (nay phường Nam Sầm Sơn), Thanh Hóa",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT TP Hải Phòng — Nguyễn Xuân Nguyên (1907-1975) — http://haiphong.gov.vn/danh-nhan/nguyen-xuan-nguyen-1907-1975-622056",
+        "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Giáo sư Nguyễn Xuân Nguyên: Người thầy của ngành mắt Việt Nam — https://suckhoedoisong.vn/giao-su-nguyen-xuan-nguyen-nguoi-thay-cua-nganh-mat-viet-nam-16972975.htm"
+      ]
+    },
+    {
+      "id": "do-xuan-hop",
+      "ten": "Đỗ Xuân Hợp",
+      "lon": 105.8511,
+      "lat": 21.0334,
+      "loai": "danh-y",
+      "nam_hien_thi": "1906–1985",
+      "mo_ta": "Thiếu tướng, Giáo sư giải phẫu học, sinh tại phố Hàng Đào, Hà Nội. Năm 1949 cùng GS Pierre Huard nhận Giải thưởng Testut của Viện Hàn lâm Y học Pháp — người Việt Nam đầu tiên nhận giải thưởng giải phẫu học quốc tế này. Làm Hiệu trưởng Học viện Quân y (1951–1979) kiêm Chủ nhiệm Bộ môn Giải phẫu Đại học Y Hà Nội, sáng lập Hội Hình thái học Việt Nam năm 1967; được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân và Giải thưởng Hồ Chí Minh năm 1996.",
+      "dia_diem": "Quê phố Hàng Đào, quận Hoàn Kiếm, Hà Nội; công tác tại Học viện Quân y",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Giáo sư Đỗ Xuân Hợp: Vị anh hùng quân y ngoài Đảng — https://danviet.vn/giao-su-do-xuan-hop-vi-anh-hung-quan-y-ngoai-dang-1081679-d160178.html",
+        "Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam (VUSTA) — Đỗ Xuân Hợp - Ông vua của ngành giải phẫu học — https://vusta.vn/do-xuan-hop-ong-vua-cua-nganh-giai-phau-hoc-p89022.html"
+      ]
+    },
+    {
+      "id": "vu-cong-hoe",
+      "ten": "Vũ Công Hòe",
+      "lon": 105.842,
+      "lat": 21.0022,
+      "loai": "danh-y",
+      "nam_hien_thi": "thế kỷ 20 (giảng dạy 1937–1989)",
+      "mo_ta": "Giáo sư, người đặt nền móng ngành Giải phẫu bệnh — Y pháp học Việt Nam. Tốt nghiệp Đại học Y Hà Nội năm 1937 và ở lại trường giảng dạy; sau 1954 cùng đồng nghiệp xây dựng Khoa Giải phẫu bệnh Bệnh viện Bạch Mai từ chỗ chỉ khám nghiệm 3–5 ca mỗi tháng lên hàng trăm ca mỗi năm. Chủ nhiệm Bộ môn Giải phẫu bệnh Đại học Y Hà Nội suốt hơn 50 năm (1937–1989), tác giả giáo trình Giải phẫu bệnh học tiếng Việt đầu tiên (1964).",
+      "dia_diem": "Bệnh viện Bạch Mai và Đại học Y Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Người thầy của ngành giải phẫu và y pháp Việt Nam — https://suckhoedoisong.vn/nguoi-thay-cua-nganh-giai-phau-va-y-phap-viet-nam-1695300.htm"
+      ],
+      "ghi_chu_bien_tap": "KHÔNG GHI năm sinh/mất là CHỦ Ý, không phải sót: nhiều bài lan truyền con số 1911–1994 (vietq.vn, meddom.org, pathologyvietnam.com — không mở được do lỗi SSL/không truy cập được) nhưng không nguồn nào trong số đã mở trực tiếp (suckhoedoisong.vn) xác nhận ngày sinh/mất — nghi ngờ các bài kia lấy số liệu từ Wikipedia. \"Giảng dạy 1937–1989\" trong nam_hien_thi là mốc DUY NHẤT xác nhận được qua bài đã đọc trực tiếp. Tra lại được nguồn nhà nước xác nhận ngày sinh/mất thì bổ sung (2026-08-27)."
+    },
+    {
+      "id": "tran-thi-trung-chien",
+      "ten": "Trần Thị Trung Chiến",
+      "lon": 106.3756,
+      "lat": 10.2433,
+      "loai": "danh-y",
+      "nam_hien_thi": "Bộ trưởng Y tế 2002–2007",
+      "mo_ta": "Thầy thuốc Nhân dân, nữ Bộ trưởng Bộ Y tế đầu tiên của Việt Nam sau ngày thống nhất, sinh tại Bến Tre. Từ giao liên thời chiến tranh trở thành y tá, y sĩ rồi bác sĩ, kinh qua các vị trí quản lý ngành y tế TP Hồ Chí Minh trước khi giữ chức Bộ trưởng Y tế năm 2002. Dưới sự chỉ đạo của bà, Việt Nam trở thành quốc gia đầu tiên trên thế giới khống chế thành công dịch SARS năm 2003.",
+      "dia_diem": "Sinh tại tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Thanh xuân và khát vọng của nữ Bộ trưởng Bộ Y tế đầu tiên tại Việt Nam — https://suckhoedoisong.vn/thanh-xuan-va-khat-vong-cua-nu-bo-truong-bo-y-te-dau-tien-tai-viet-nam-169260307223013802.htm"
+      ]
+    },
+    {
+      "id": "vu-van-dinh",
+      "ten": "Vũ Văn Đính",
+      "lon": 106.3145,
+      "lat": 20.9373,
+      "loai": "danh-y",
+      "nam_hien_thi": "1933–2026",
+      "mo_ta": "Giáo sư, Anh hùng Lao động, Thầy thuốc Nhân dân, sinh tại Hải Dương. Tốt nghiệp Đại học Y Hà Nội năm 1959, gắn bó hơn 60 năm với Khoa Hồi sức cấp cứu A9 Bệnh viện Bạch Mai — người đặt nền móng ngành Hồi sức cấp cứu và Chống độc Việt Nam, đưa các kỹ thuật sốc điện, tạo nhịp tim, thở máy, lọc máu vào điều trị trong nước. Mất ngày 29/7/2026, thọ 94 tuổi.",
+      "dia_diem": "Quê tỉnh Hải Dương; công tác tại Khoa Hồi sức cấp cứu A9, Bệnh viện Bạch Mai, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Tiếp bước người Thầy lớn – Viết tiếp trang sử vẻ vang của Bệnh viện Bạch Mai và nền y học Việt Nam — https://suckhoedoisong.vn/tiep-buoc-nguoi-thay-lon-viet-tiep-trang-su-ve-vang-cua-benh-vien-bach-mai-va-nen-y-hoc-viet-nam-169260731154228193.htm",
+        "Báo Nhân Dân điện tử — Người đặt nền móng cho chuyên ngành Hồi sức cấp cứu Việt Nam — https://nhandan.vn/nguoi-dat-nen-mong-cho-chuyen-nganh-hoi-suc-cap-cuu-viet-nam-post979136.html"
+      ]
+    },
+    {
+      "id": "nguyen-trinh-co",
+      "ten": "Nguyễn Trinh Cơ",
+      "lon": 105.8404,
+      "lat": 21.0038,
+      "loai": "danh-y",
+      "nam_hien_thi": "1915–1985",
+      "mo_ta": "Giáo sư ngoại khoa, sinh ngày 13/5/1915, mất ngày 24/3/1985. Lần lượt giữ các chức vụ Chủ nhiệm Bộ môn Ngoại bệnh lý, Phó Hiệu trưởng rồi Hiệu trưởng, Bí thư Đảng ủy Đại học Y Hà Nội; được phong Giáo sư y học năm 1980. Có công xây dựng phân hiệu đào tạo tại Hải Phòng và phát triển kỹ thuật ghép thận tại Việt Nam; trong kháng chiến chống Pháp từng viết 5 truyện ngắn.",
+      "dia_diem": "Công tác tại Đại học Y Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Người thầy của nhiều thế hệ thầy thuốc ngoại khoa — https://suckhoedoisong.vn/nguoi-thay-cua-nhieu-the-he-thay-thuoc-ngoai-khoa-16996649.htm"
+      ]
+    },
+    {
+      "id": "nguyen-tren",
+      "ten": "Nguyễn Trên",
+      "lon": 106.8243,
+      "lat": 10.9447,
+      "loai": "luong-y",
+      "nam_hien_thi": "đang hoạt động — lương y y dược cổ truyền",
+      "mo_ta": "Lương y y dược cổ truyền hành nghề tại khu phố 1, phường Tân Hòa, TP Biên Hòa, Đồng Nai. Nghiên cứu và bào chế các bài thuốc Nam chữa các bệnh khó như xơ gan, ung thư gan, bạch cầu, tai biến mạch máu não, zona thần kinh, thu hút bệnh nhân trong và ngoài tỉnh. Là thầy thuốc y dược cổ truyền duy nhất tại Đồng Nai được Liên hiệp các Hội UNESCO Việt Nam trao chứng nhận Di sản văn hóa nhân dân.",
+      "dia_diem": "Khu phố 1, phường Tân Hòa, TP Biên Hòa, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Nai — Một lương y được trao tặng chứng nhận Di sản văn hóa nhân dân — https://dongnai.gov.vn/vi/wcag/Chuong-trinh-Ke-hoach-phat-trien-KTXH/mot-luong-y-duoc-trao-tang-chung-nhan-di-san-van-hoa-nhan-dan-769.html"
+      ]
+    },
+    {
+      "id": "nguyen-dinh-hoi",
+      "ten": "Nguyễn Đình Hối",
+      "lon": 105.7764,
+      "lat": 19.8067,
+      "loai": "danh-y",
+      "nam_hien_thi": "1936–2026",
+      "mo_ta": "Giáo sư, Nhà giáo Nhân dân, sinh ngày 2/1/1936 tại Thanh Hóa. Nguyên Hiệu trưởng Đại học Y Dược TP Hồ Chí Minh và là Giám đốc đầu tiên của Bệnh viện Đại học Y Dược TP Hồ Chí Minh, người tiên phong xây dựng mô hình «Trường – Viện» gắn đào tạo với khám chữa bệnh tại Việt Nam. Đào tạo hàng trăm bác sĩ nội trú, chuyên khoa, thạc sĩ, tiến sĩ trong hơn nửa thế kỷ; mất ngày 29/6/2026, thọ 92 tuổi.",
+      "dia_diem": "Sinh tại tỉnh Thanh Hóa; công tác tại Đại học Y Dược TP Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tuổi Trẻ — Vĩnh biệt GS Nguyễn Đình Hối, người đặt nền móng mô hình Trường – Viện đầu tiên của Việt Nam — https://tuoitre.vn/plo/vinh-biet-gs-nguyen-dinh-hoi-nguoi-dat-nen-mong-mo-hinh-truong-vien-dau-tien-cua-viet-nam-109913297.htm"
+      ]
+    },
+    {
+      "id": "pham-gia-khai",
+      "ten": "Phạm Gia Khải",
+      "lon": 105.842,
+      "lat": 21.0022,
+      "loai": "danh-y",
+      "nam_hien_thi": "thế kỷ 20–21",
+      "mo_ta": "Giáo sư, một trong những người sáng lập chuyên ngành Tim mạch can thiệp Việt Nam. Nguyên Viện trưởng Viện Tim mạch Quốc gia, Chủ tịch Hội đồng chuyên môn Hội Tim mạch học Việt Nam và Chủ tịch Hội đồng chuyên môn Ban Bảo vệ sức khỏe cán bộ Trung ương. Từ những năm ngành tim mạch can thiệp Việt Nam còn sơ khai, ông đã mời nhiều đoàn chuyên gia tim mạch quốc tế sang đào tạo trực tiếp «cầm tay chỉ việc», đào tạo nhiều thế hệ bác sĩ tim mạch cho cả ba miền.",
+      "dia_diem": "Viện Tim mạch Quốc gia, Bệnh viện Bạch Mai, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Viện trưởng Viện Tim mạch Quốc gia: Nỗ lực không ngừng đưa Việt Nam ghi danh lên bản đồ tim mạch thế giới — https://suckhoedoisong.vn/vien-truong-vien-tim-mach-quoc-gia-no-luc-khong-ngung-dua-viet-nam-ghi-danh-len-ban-do-tim-mach-the-gioi-169230223144410023.htm"
+      ]
+    },
+    {
+      "id": "nguyen-kinh-chi",
+      "ten": "Nguyễn Kinh Chi",
+      "lon": 105.8069,
+      "lat": 18.4692,
+      "loai": "danh-y",
+      "nam_hien_thi": "Thứ trưởng Bộ Y tế thời kháng chiến chống Pháp",
+      "mo_ta": "Bác sĩ, giữ chức Thứ trưởng Bộ Y tế trong thời kỳ kháng chiến chống Pháp. Thuộc dòng họ Nguyễn Chi ở xã Ích Hậu (nay xã Lộc Hà), huyện Lộc Hà, Hà Tĩnh — dòng họ nổi tiếng về truyền thống yêu nước, văn chương và khoa bảng, sinh ra nhiều trí thức lớn như GS Nguyễn Đổng Chi, GS Nguyễn Từ Chi, GS Nguyễn Huệ Chi.",
+      "dia_diem": "Xã Ích Hậu (nay xã Lộc Hà), huyện Lộc Hà, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Tĩnh điện tử — Đất và người Ích Hậu — https://baohatinh.vn/van-hoa-giai-tri/dat-va-nguoi-ich-hau/60948.htm"
       ]
     }
   ]

@@ -1,10 +1,20 @@
 {
   "ghi_chu": "Danh nhân các triều đại · văn hoá · y học, neo vào NƠI THỜ / khu lưu niệm. Nội dung theo chính sử & trước tác gốc (Đại Việt Sử Ký Toàn Thư, Đại Nam Liệt Truyện, Truyện Kiều, Hải Thượng Y Tông Tâm Lĩnh, Nam Dược Thần Hiệu) + cổng di sản nhà nước. KHÔNG dùng Wikipedia làm nguồn nội dung. Toạ độ soát 2026-07-19 (OSM Nominatim + đối chiếu tỉnh): cao = khớp POI đền/khu di tích; trung/thấp = định vị theo xã/vùng, cần soát. Lê Thánh Tông tách khỏi toạ độ Lê Lợi (cùng quần thể Lam Kinh) về khu Chiêu Lăng để hai pin không chồng. Sáp nhập tỉnh 2025: toạ độ địa lý giữ nguyên. Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực. loai: vua, van-hoc, y-hoc, khai-pha.",
-  "ngay_cap_nhat": "2026-08-05",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên); Đại Nam Liệt Truyện",
     "Truyện Kiều (Nguyễn Du); Hải Thượng Y Tông Tâm Lĩnh (Lê Hữu Trác); Nam Dược Thần Hiệu (Tuệ Tĩnh)",
-    "Cục Di sản Văn hoá — dsvh.gov.vn"
+    "Cục Di sản Văn hoá — dsvh.gov.vn",
+    "Báo Thanh Niên — thanhnien.vn",
+    "Báo Văn hóa — baovanhoa.vn",
+    "Đài Tiếng nói Việt Nam (VOV) — vov.vn, vov.gov.vn, vovlive.vn",
+    "Báo Pháp luật Việt Nam — baophapluat.vn",
+    "Báo Hà Tĩnh — baohatinh.vn",
+    "Báo Nhân Dân — nhandan.vn",
+    "Báo Dân Việt — danviet.vn",
+    "Báo Giáo dục & Thời đại — giaoducthoidai.vn",
+    "Sở Văn hóa, Thể thao và Du lịch Thanh Hóa — svhttdl.thanhhoa.gov.vn",
+    "Cổng TTĐT xã Hoằng Lộc, huyện Hoằng Hóa, tỉnh Thanh Hóa — hoanghoa.gov.vn, hoangloc.hoanghoa.thanhhoa.gov.vn"
   ],
   "items": [
     {
@@ -259,6 +269,163 @@
       "nguon": [
         "Cổng TTĐT Ủy ban Nhà nước về người Việt Nam ở nước ngoài — scov.gov.vn (Phù Gia nữ học sĩ Ngô Chi Lan) — https://scov.gov.vn/van-hoc-nghe-thuat/giai-thoai-viet-nam/phu-gia-nu-hoc-si-ngo-chi-lan.html"
       ]
+    },
+    {
+      "id": "mac-thien-tich",
+      "ten": "Mạc Thiên Tích",
+      "lon": 104.4822344,
+      "lat": 10.3873396,
+      "loai": "khai-pha",
+      "nam_hien_thi": "thế kỷ 18",
+      "mo_ta": "Con trai Mạc Cửu, kế nghiệp cha cai quản trấn Hà Tiên từ năm 1735, giữ chức Tổng binh Đại đô đốc trấn Hà Tiên. Tết Nguyên tiêu năm Bính Thìn (1736), mở hội thơ, dựng cờ Tao đàn Chiêu Anh Các, quy tụ văn nhân sáng tác «Hà Tiên thập vịnh» — được xem là trung tâm văn học lớn thứ hai cả nước sau Tao đàn Hồng Đức của vua Lê Thánh Tông.",
+      "dia_diem": "Khu di tích núi Bình San (nơi có đền thờ và khu mộ họ Mạc), phường Hà Tiên, tỉnh An Giang (trước là thành phố Hà Tiên, tỉnh Kiên Giang)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Niên — Chiêu Anh các và sự ra đời của thi đàn Hà Tiên — https://thanhnien.vn/chieu-anh-cac-va-su-ra-doi-cua-thi-dan-ha-tien-185240318230107225.htm"
+      ],
+      "ghi_chu_bien_tap": "Năm sinh/mất 1706–1780 và tên gọi khác «Mạc Thiên Tứ» tra được ban đầu từ tóm tắt WebSearch không xác nhận được khi mở trực tiếp bài báo — đã bỏ khỏi mục. Vị trí đền thờ họ Mạc tại núi Bình San suy ra từ mục Mạc Cửu (cha ông) đã có sẵn trong CSDL, không phải xác nhận riêng cho Mạc Thiên Tích — hạ độ tin cậy xuống «trung»."
+    },
+    {
+      "id": "nguyen-huy-tu",
+      "ten": "Nguyễn Huy Tự",
+      "lon": 105.6715675,
+      "lat": 18.4430817,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1743–1790",
+      "mo_ta": "Con Thám hoa Nguyễn Huy Oánh, người làng Trường Lưu. Đỗ Hương cống năm 17 tuổi (1759), làm quan dưới triều Lê rồi theo Tây Sơn, giữ chức Hữu Tham tri Bộ Binh, phò vua Quang Trung đánh Trịnh, phá quân Thanh. Là tác giả truyện Nôm «Hoa Tiên truyện» nổi tiếng; cùng cha lập Thư viện Phúc Giang — trường tư thục lớn thứ hai cả nước sau Quốc Tử Giám thời phong kiến.",
+      "dia_diem": "Nhà thờ Nguyễn Huy Oánh và Nguyễn Huy Tự, làng Trường Lưu, xã Trường Lưu, tỉnh Hà Tĩnh — di tích lịch sử văn hóa cấp quốc gia",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Tĩnh — Trường học - Thư viện Phúc Giang và điểm sáng giáo dục Việt Nam thế kỷ XVIII — https://baohatinh.vn/truong-hoc-thu-vien-phuc-giang-va-diem-sang-giao-duc-viet-nam-the-ky-xviii-post250151.html",
+        "Báo Hà Tĩnh — Nguyễn Huy Tự (1743-1790) — https://baohatinh.vn/nguyen-huy-tu-1743-1790-post47582.html"
+      ]
+    },
+    {
+      "id": "phan-phu-tien",
+      "ten": "Phan Phu Tiên",
+      "lon": 105.7790822,
+      "lat": 21.0919754,
+      "loai": "van-hoc",
+      "nam_hien_thi": "?–thế kỷ 15 (thời Lê sơ)",
+      "mo_ta": "Người làng Kẻ Vẽ (Đông Ngạc), đỗ Thái học sinh cuối thời Trần — người đầu tiên của làng đỗ đại khoa. Năm 1455 vua Lê Nhân Tông giao ông biên soạn «Đại Việt sử ký tục biên» nối tiếp bộ sử của Lê Văn Hưu (nay đã thất truyền). Ông còn biên soạn sách thuốc «Bản thảo thực vật toát yếu», ghi chép hơn 400 loại cây cỏ, động vật dùng làm thuốc và thực phẩm trong nước.",
+      "dia_diem": "Nhà thờ họ Phan (thờ Phan Phu Tiên) trong khuôn viên Đình làng Vẽ, phường Đông Ngạc, thành phố Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Nhà sử học Phan Phu Tiên — https://nhandan.vn/nha-su-hoc-phan-phu-tien-post470328.html",
+        "Báo Dân Việt — Nhà thờ cổ 400 tuổi của dòng họ Phan ở Hà Nội — https://danviet.vn/chiem-nguong-nha-tho-co-400-tuoi-cua-dong-ho-phan-o-ha-noi-20220921155308718-d1044882.html"
+      ]
+    },
+    {
+      "id": "luong-dac-bang",
+      "ten": "Lương Đắc Bằng",
+      "lon": 105.8847774,
+      "lat": 19.80341,
+      "loai": "van-hoc",
+      "nam_hien_thi": "?–1522",
+      "mo_ta": "Đỗ Bảng nhãn khoa thi 1499, làm quan dưới triều Lê sơ, nổi tiếng ngay thẳng; là thầy dạy học của Trạng Trình Nguyễn Bỉnh Khiêm. Trước khi mất, ông dặn vợ đặt tên con trai chưa chào đời là Hữu Khánh; sáu tháng sau người con ấy ra đời, sau này cũng làm quan lớn — cha con được dân gian ví «hổ phụ sinh hổ tử».",
+      "dia_diem": "Đền thờ Lương Đắc Bằng – Lương Hữu Khánh, làng Hội Triều, xã Hoằng Phong cũ, huyện Hoằng Hóa, tỉnh Thanh Hóa — di tích lịch sử văn hóa cấp quốc gia (1994)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Giáo dục & Thời đại — «Hổ phụ sinh hổ tử» xứng hàng anh kiệt triều Lê — https://giaoducthoidai.vn/ho-phu-sinh-ho-tu-xung-hang-anh-kiet-trieu-le-post672979.html",
+        "Sở Văn hóa, Thể thao và Du lịch Thanh Hóa — Thành hoàng làng Chu Văn Lương — https://svhttdl.thanhhoa.gov.vn/van-hoa/thanh-hoang-lang-chu-van-luong-1009658"
+      ]
+    },
+    {
+      "id": "luong-huu-khanh",
+      "ten": "Lương Hữu Khánh",
+      "lon": 105.8847774,
+      "lat": 19.80341,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1520–?",
+      "mo_ta": "Con trai Bảng nhãn Lương Đắc Bằng, sinh sau khi cha mất sáu tháng. Theo học Trạng Trình Nguyễn Bỉnh Khiêm — người từng là học trò của cha ông — được thầy thương yêu như con đẻ. Làm quan thời Lê Trung Hưng chống nhà Mạc, lập nhiều chiến công, giữ chức Thượng thư Bộ Binh, tước Đạt Quận công.",
+      "dia_diem": "Đền thờ Lương Đắc Bằng – Lương Hữu Khánh, làng Hội Triều, xã Hoằng Phong cũ, huyện Hoằng Hóa, tỉnh Thanh Hóa — di tích lịch sử văn hóa cấp quốc gia (1994)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Giáo dục & Thời đại — «Hổ phụ sinh hổ tử» xứng hàng anh kiệt triều Lê — https://giaoducthoidai.vn/ho-phu-sinh-ho-tu-xung-hang-anh-kiet-trieu-le-post672979.html"
+      ]
+    },
+    {
+      "id": "nguyen-hy-quang",
+      "ten": "Nguyễn Hy Quang",
+      "lon": 105.8333406,
+      "lat": 21.0114403,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1634–1692",
+      "mo_ta": "Người làng Trung Tự, phường Đông Tác, huyện Thọ Xương, kinh thành Thăng Long, nhà giáo và quan lớn thời Lê Trung Hưng. Phụ đạo cho Thái phó Lương Mục công Trịnh Vịnh và dạy con trai của Thái phó là Trịnh Bính (Tấn Quang vương). Suốt 18 năm làm việc ở cung đình, ông đóng góp nhiều mưu lược cho triều đình.",
+      "dia_diem": "Làng Trung Tự xưa, nay thuộc phường Kim Liên, thành phố Hà Nội (trước là phường Phương Liên, quận Đống Đa) — quê hương Nguyễn Hy Quang",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam (VOV) — Nguyễn Hy Quang – một người thầy tài, đức — https://vovlive.vn/nguyen-hy-quang-mot-nguoi-thay-tai-duc-f23261.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn xác nhận năm sinh/mất, quê quán, vai trò dạy học nhưng KHÔNG nêu tên/vị trí một ngôi đền thờ cụ thể — bỏ khẳng định «Đền thờ Nguyễn Hy Quang» chưa xác minh được, chỉ giữ vị trí quê quán (do_tin_cay_toa_do hạ xuống «thấp»)."
+    },
+    {
+      "id": "dang-dinh-tuong",
+      "ten": "Đặng Đình Tướng",
+      "lon": 105.7153002,
+      "lat": 20.9038868,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1649–1735",
+      "mo_ta": "Người làng Lương Xá, hậu duệ Thái úy Đặng Huấn, phục vụ triều đình suốt 70 năm qua ba đời vua Lê. Giữ nhiều chức vụ quan trọng: Đốc đồng Kinh Bắc (1675), Hiến sát sứ Sơn Tây (1676), đi sứ nhà Thanh (1683), Đốc thị dẹp loạn vùng Tuyên Quang – Hưng Hóa (1687). Được tôn xưng Tiên Quốc lão.",
+      "dia_diem": "Đền Tiên Quốc lão (thờ Đặng Đình Tướng), xóm Ngõ Chỗ, thôn Trung Tiến, phường Chương Mỹ, thành phố Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam (VOV) — Danh nhân Đặng Đình Tướng - vị «công thần» thời Lê Trung hưng — https://vov.gov.vn/danh-nhan-dang-dinh-tuong-vi-cong-than-thoi-le-trung-hung-dtnew-282241"
+      ]
+    },
+    {
+      "id": "nguyen-quynh-trang-quynh",
+      "ten": "Nguyễn Quỳnh — Trạng Quỳnh",
+      "lon": 105.8573715,
+      "lat": 19.8639738,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1677–1748",
+      "mo_ta": "Người làng Bột Thượng (nay Hoằng Lộc), đỗ Hương cống dưới triều Lê Dụ Tông năm 20 tuổi. Là nguyên mẫu lịch sử của nhân vật dân gian Trạng Quỳnh — loạt giai thoại trào phúng, thông minh, bênh vực kẻ yếu được lưu truyền rộng rãi trong văn hóa dân gian Việt Nam.",
+      "dia_diem": "Nhà thờ Nguyễn Quỳnh, thôn Bái Đông, xã Hoằng Hóa (trước là xã Hoằng Lộc, huyện Hoằng Hóa), tỉnh Thanh Hóa — di tích lịch sử văn hóa cấp quốc gia (1990)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hóa, Thể thao và Du lịch Thanh Hóa — Trạng Quỳnh: Từ danh sĩ đất Bắc đến giai thoại dân gian — https://svhttdl.thanhhoa.gov.vn/van-hoa/trang-quynh-tu-danh-si-dat-bac-den-giai-thoai-dan-gian-1004530",
+        "Cổng TTĐT xã Hoằng Lộc, huyện Hoằng Hóa — Di tích lịch sử Nhà thờ Nguyễn Quỳnh xã Hoằng Lộc — http://hoanghoa.gov.vn/web/trang-chu/tin-tuc-su-kien/di-tich-danh-thang/di-tich-lich-su-nha-tho-nguyen-quynh-xa-hoang-loc.html"
+      ]
+    },
+    {
+      "id": "nguyen-su-lo",
+      "ten": "Nguyễn Sư Lộ",
+      "lon": 105.8573715,
+      "lat": 19.8639738,
+      "loai": "van-hoc",
+      "nam_hien_thi": "1519–?",
+      "mo_ta": "Người làng Bột Thái (nay Hoằng Lộc), đỗ Thám hoa khoa thi 1554, làm quan đến chức Hữu thị lang Bộ Lại, tước Đoan Túc hầu, được khắc tên trên bia Tiến sĩ Văn Miếu – Quốc Tử Giám (Hà Nội). Tương truyền trước khi hiển đạt ông từng dạy học ngay bên vệ đường; phiến đá nơi ông ngồi dạy chữ nay còn lưu giữ trong khuôn viên Bảng Môn Đình.",
+      "dia_diem": "Bảng Môn Đình, xã Hoằng Hóa (trước là xã Hoằng Lộc, huyện Hoằng Hóa), tỉnh Thanh Hóa — di tích lịch sử văn hóa cấp quốc gia",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Thám hoa Nguyễn Sư Lộ - «Người thầy dạy chữ ven đường» — https://danviet.vn/tham-hoa-nguyen-su-lo-nguoi-thay-day-chu-ven-duong-2023110417544248-d840007.html"
+      ]
+    },
+    {
+      "id": "bui-khac-nhat",
+      "ten": "Bùi Khắc Nhất",
+      "lon": 105.8573715,
+      "lat": 19.8639738,
+      "loai": "van-hoc",
+      "nam_hien_thi": "thời Lê Trung Hưng",
+      "mo_ta": "Bảng nhãn người làng Hoằng Lộc, một trong những vị đỗ đại khoa tiêu biểu của vùng đất khoa bảng này — cùng với Nguyễn Nhân Lễ, Nguyễn Sư Lộ, Nguyễn Cẩn. Lăng mộ ông hiện còn tại quê nhà.",
+      "dia_diem": "Lăng mộ Bùi Khắc Nhất, xã Hoằng Hóa (trước là xã Hoằng Lộc, huyện Hoằng Hóa), tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Hóa — Về miền quê kiểu mẫu Hoằng Lộc — https://baothanhhoa.vn/e-magazine-ve-mien-que-kieu-mau-hoang-loc-163390.htm"
+      ],
+      "ghi_chu_bien_tap": "URL gốc tra được (hoangloc.hoanghoa.thanhhoa.gov.vn) không phân giải được tên miền (kiểm bằng cả WebFetch lẫn crawl4ai đều lỗi ERR_NAME_NOT_RESOLVED) — đã thay bằng nguồn baothanhhoa.vn đã mở thành công. Các chi tiết cụ thể (tuổi đỗ 33, 44 năm làm quan, 6 bộ, xếp hạng năm 2000) tra được ban đầu từ tóm tắt WebSearch không xác nhận được ở bất kỳ trang nào đã mở trực tiếp — đã bỏ khỏi mô tả, chỉ giữ lại các dữ kiện xác nhận được (là Bảng nhãn, quê Hoằng Lộc, có lăng mộ tại quê)."
     }
   ]
 }

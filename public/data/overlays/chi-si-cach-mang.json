@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Chí sĩ yêu nước & nhà cách mạng tiền bối (cuối thế kỷ 19 – trước 1945): phong trào Duy Tân/Đông Du, Đông Kinh Nghĩa Thục, chí sĩ Nam Kỳ, Việt Nam Quốc dân Đảng, và các nhà cách mạng tiền bối của Đảng Cộng sản Đông Dương. Toạ độ ở mức xã/huyện (chưa có toạ độ đền/nhà lưu niệm chính xác trong nguồn đã fetch) — do_tin_cay_toa_do:'trung'. Nội dung theo khung sử chính thống (dangcongsan.vn/tuyengiao.vn/baotanglichsu.vn); mọi mục trang_thai:'draft' chờ kiểm sử. KHÔNG dùng Wikipedia. [Phase 3: hợp nhất doanh-nhan-yeu-nuoc.json → nhóm «Chí sĩ cách mạng · Doanh nhân yêu nước».]",
-  "ngay_cap_nhat": "2026-08-05",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Bảo tàng Lịch sử Quốc gia — baotanglichsu.vn",
     "Tư liệu văn kiện Đảng — tulieuvankien.dangcongsan.vn",
@@ -12,8 +12,16 @@
     "Báo Nghệ An — baonghean.vn",
     "Báo Lào Cai — baolaocai.vn",
     "Báo Thanh Niên — thanhnien.vn",
+    "Cổng TTĐT TP. Đà Nẵng — danang.gov.vn, cttdt.danangportal.gov.vn",
+    "Cổng TTĐT tỉnh Vĩnh Long — portal.vinhlong.gov.vn",
+    "Báo Nhân Dân — nhandan.vn",
+    "Báo Dân Việt — danviet.vn",
+    "Di tích Nhà tù Hỏa Lò — hoalo.vn",
+    "Tạp chí Cộng sản — tapchicongsan.org.vn",
     "Cổng TTĐT xã Buôn Hồ, Đắk Lắk — buonho.daklak.gov.vn",
     "Người Hà Nội (Hội LHVHNT Hà Nội) — nguoihanoi.vn",
+    "Báo Pháp luật Việt Nam — baophapluat.vn",
+    "Trường THPT Chuyên Lê Khiết, Quảng Ngãi — c3chuyenlekhiet.quangngai.edu.vn",
     "Đại học Tôn Đức Thắng — law.tdtu.edu.vn",
     "nhandan.vn",
     "baochinhphu.vn",
@@ -1079,6 +1087,232 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Cổng TTĐT Sở VHTT tỉnh Lào Cai (di sản văn hóa) — disanvanhoa.laocai.gov.vn — https://disanvanhoa.laocai.gov.vn/thuyet-minh/khai-quat-ve-dien-bien-cuoc-khoi-nghia-o-yen-bai-635977"
+      ]
+    },
+    {
+      "id": "dang-thuc-hua",
+      "ten": "Đặng Thúc Hứa",
+      "lon": 105.3,
+      "lat": 18.7,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1870–1931",
+      "mo_ta": "Nhà cách mạng quê làng Lương Điền, huyện Thanh Chương (Nghệ An); tham gia phong trào Duy Tân, Đông Du, Đông Kinh Nghĩa Thục từ đầu thế kỷ XX. Năm 1910, cùng Phan Bội Châu sang Xiêm (Thái Lan) xây dựng căn cứ cách mạng tại Bản Đông, huyện Phi Chịt; ngày 26/8/1926 lập Hội Việt kiều toàn Xiêm. Sau khi gặp Nguyễn Ái Quốc năm 1927, ông chuyển sang con đường cộng sản và trực tiếp đào tạo nhiều cán bộ như Hồ Tùng Mậu, Lê Hồng Sơn, Lê Hồng Phong, Phùng Chí Kiên. Mất ngày 12/2/1931 tại Xiêm.",
+      "dia_diem": "Làng Lương Điền (nay xã Thanh Xuân), huyện Thanh Chương, tỉnh Nghệ An — quê quán; hoạt động chính tại Xiêm (Thái Lan)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nghệ An — Đồng chí Đặng Thúc Hứa (1870-1931): Dấn thân cho cách mạng, một lòng hướng về Tổ quốc — https://baonghean.vn/dong-chi-dang-thuc-hua-1870-1931-dan-than-cho-cach-mang-mot-long-huong-ve-to-quoc-10284111.html"
+      ]
+    },
+    {
+      "id": "le-co",
+      "ten": "Lê Cơ",
+      "lon": 108.2833,
+      "lat": 15.4667,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1859–1916",
+      "mo_ta": "Chí sĩ phong trào Duy Tân, dân gian gọi «Cụ Xã Sáu»; làm lý trưởng làng Phú Lâm nhưng dồn sức cải cách ngay trong một làng theo phương châm «không làm được việc lớn cho thiên hạ thì làm điều phải trong một làng». Năm 1904 lập trường Phú Lâm — trường tân học đầu tiên ở Trung – Bắc Kỳ, có cả lớp nữ sinh do giáo viên nữ dạy, đi trước cả Đông Kinh Nghĩa Thục (1907); đến 1915 mạng lưới trường mở rộng thành 5 cơ sở với hơn 100 học sinh. Ông còn lập lò rèn, hội buôn để phát triển kinh tế làng xã. Bị bắt trong phong trào chống thuế 1908, tù 5 năm; tham gia khởi nghĩa 1916 rồi bị bắn chết tại nhà lao Lao Bảo, thọ 57 tuổi.",
+      "dia_diem": "Làng Phú Lâm (nay xã Tiên Sơn), huyện Tiên Phước, tỉnh Quảng Nam cũ (nay TP. Đà Nẵng)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT TP. Đà Nẵng — Lê Cơ (1859-1916) — https://danang.gov.vn/vi/w/le-co-1859-1916-i"
+      ]
+    },
+    {
+      "id": "phan-thuc-duyen",
+      "ten": "Phan Thúc Duyện",
+      "lon": 108.25,
+      "lat": 15.8833,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1873–1944",
+      "mo_ta": "Chí sĩ phong trào Duy Tân, hiệu Phong Thử, đỗ cử nhân khoa Nhâm Tý (1900) cùng khoa với Phan Châu Trinh, Huỳnh Thúc Kháng. Cùng nhóm sĩ phu Quảng Nam chủ trương «khai dân trí, chấn dân khí, hậu dân sinh»; lập Hội Thương Phong Thử, tổ chức khai hoang và các hội nông nghiệp trồng cây công nghiệp theo lối kinh doanh mới. Sau phong trào chống thuế 1908, bị đày Côn Đảo hơn 10 năm với tội danh «mưu phản»; được thả năm 1919 nhưng phải an trí tại Quảng Bình, đến 1930 mới về lại Quảng Nam.",
+      "dia_diem": "Làng Phong Thử (nay xã Điện Thọ), thị xã Điện Bàn, tỉnh Quảng Nam cũ (nay TP. Đà Nẵng)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT TP. Đà Nẵng — Phan Thúc Duyện (1873-1944) — https://danang.gov.vn/vi/w/phan-thuc-duyen-1873-1944-i"
+      ]
+    },
+    {
+      "id": "le-van-huan",
+      "ten": "Lê Văn Huân",
+      "lon": 105.5833,
+      "lat": 18.6167,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1876–1929",
+      "mo_ta": "Chí sĩ quê làng Trung Lễ, huyện Đức Thọ (Hà Tĩnh); tham gia Hội Duy Tân từ khoảng 1907, bị Pháp bắt năm 1908 vì hoạt động chống thuế, đày Côn Đảo 9 năm. Được tha năm 1917, ông tiếp tục hoạt động yêu nước: đồng sáng lập Hội Phục Việt (1925) tại núi Quyết, sau đổi thành Hội Hưng Nam rồi Tân Việt Cách mạng Đảng (1928), phụ trách Liên tỉnh bộ Nghệ Tĩnh. Ngày 13/9/1929 bị bắt đưa ra Vinh; trong nhà lao ông tuyệt thực phản đối và từ trần ngày 20/9/1929.",
+      "dia_diem": "Làng Trung Lễ (nay xã Trung Lễ), huyện Đức Thọ, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Tĩnh — Lê Văn Huân (1876-1929) — https://baohatinh.vn/le-van-huan-1876-1929-post47590.html"
+      ]
+    },
+    {
+      "id": "nguyen-than-hien",
+      "ten": "Nguyễn Thần Hiến",
+      "lon": 105.7833,
+      "lat": 10.0333,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "phong trào Đông Du, đầu thế kỷ XX",
+      "mo_ta": "Chí sĩ Nam Kỳ, cùng thời Phan Bội Châu và Phan Châu Trinh; quê Cần Thơ. Ông lập và điều hành Khuyến Du học hội tại Cần Thơ, qua đó vận động và hỗ trợ thanh niên Nam Kỳ sang Nhật Bản du học theo phong trào Đông Du. Năm 1913, phong trào liên đới đến vụ một nhóm học sinh Nam Kỳ (Huỳnh Hưng, Đặng Bỉnh Thành, Nguyễn Truyện, Lâm Tỷ, Lý Liễu...) bị bắt tại Hồng Kông khi tìm cách mua vũ khí, chế đạn dược cho phong trào cứu nước.",
+      "dia_diem": "Cần Thơ — nơi lập và hoạt động Khuyến Du học hội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Vĩnh Long — Vài nét về phong trào Đông Du ở Vĩnh Long — https://portal.vinhlong.gov.vn/portal/wpthuvientinh/thuvientinh/page/xemtin.cpx?item=60b843ef933250066cca595a"
+      ]
+    },
+    {
+      "id": "hoang-tang-bi",
+      "ten": "Hoàng Tăng Bí",
+      "lon": 105.7667,
+      "lat": 21.0833,
+      "loai": "dong-kinh-nghia-thuc",
+      "nam_hien_thi": "1883–1939",
+      "mo_ta": "Phó bảng, quê làng Đông Ngạc, huyện Từ Liêm (nay quận Bắc Từ Liêm, Hà Nội); một trong những người đồng sáng lập trường Đông Kinh Nghĩa Thục năm 1907 cùng Lương Văn Can, Phan Châu Trinh và các đồng chí. Ngoài dạy học, ông còn mở hiệu buôn Đông Thành Xương ở phố Hàng Gai, kinh doanh vải vóc và chè theo tinh thần «thực nghiệp cứu quốc» mà Đông Kinh Nghĩa Thục cổ suý.",
+      "dia_diem": "Làng Đông Ngạc (nay phường Đông Ngạc), quận Bắc Từ Liêm, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Hoàng Tăng Bí, Phó bảng đất Từ Liêm, cùng sáng lập trường Đông Kinh Nghĩa thục — https://danviet.vn/hoang-tang-bi-pho-bang-dat-tu-liem-cung-sang-lap-truong-dong-kinh-nghia-thuc-sang-danh-ho-hoang-20240821112433204.htm"
+      ]
+    },
+    {
+      "id": "cao-trieu-phat",
+      "ten": "Cao Triều Phát",
+      "lon": 105.7167,
+      "lat": 9.2833,
+      "loai": "nha-cach-mang-tien-boi",
+      "nam_hien_thi": "1889–1956",
+      "mo_ta": "Nhân sĩ Cao Đài, quê Bạc Liêu, xuất thân gia đình quan lại - địa chủ có thế lực. Từ 1933 gia nhập đạo Cao Đài, dần trở thành chức sắc cao cấp rồi lãnh đạo phái Cao Đài Hậu Giang, nổi tiếng với chủ trương «bàn thờ tôn giáo có nhiều nhưng bàn thờ Tổ quốc chỉ có một» và «hành đạo tức là kháng chiến, kháng chiến tức là hành đạo». Năm 1945 tham gia Mặt trận Việt Minh Bạc Liêu, hiến 5.000 hecta đất cho kháng chiến, giữ chức Chủ tịch Ủy ban Kháng chiến Hành chính tỉnh Bạc Liêu. Tháng 9/1947, Hồ Chí Minh gửi thư bày tỏ cảm phục; đầu năm 1955 sau khi tập kết ra Bắc, được Hồ Chí Minh đích thân đón tiếp. Mất năm 1956 tại Hà Nội.",
+      "dia_diem": "Bạc Liêu, tỉnh Bạc Liêu cũ (nay tỉnh Cà Mau)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bác Hồ với nhân sĩ Cao Triều Phát — https://nhandan.vn/bac-ho-voi-nhan-si-cao-trieu-phat-post183012.html"
+      ]
+    },
+    {
+      "id": "dao-nguyen-pho",
+      "ten": "Đào Nguyên Phổ",
+      "lon": 106.4,
+      "lat": 20.6,
+      "loai": "dong-kinh-nghia-thuc",
+      "nam_hien_thi": "1861–1907/1908 (nguồn vênh năm mất)",
+      "mo_ta": "Chí sĩ, nhà báo; tên khai sinh Đoàn Roãn Cung, sau đổi Đào Văn Mại rồi Đào Nguyên Phổ (năm 1895); quê xã Thượng Phán, huyện Quỳnh Côi, phủ Thái Ninh, tỉnh Thái Bình (nay thôn Thượng Phán, xã Quỳnh Hoàng, huyện Quỳnh Phụ). Đỗ Đình nguyên Hoàng giáp khoa thi Hội Mậu Tuất (1898), được bổ Hàn lâm viện thừa chỉ, nhưng từ quan để làm báo: chủ bút Đại Việt tân báo (1905), sau phụ trách phần Hán văn báo Đăng Cổ tùng báo (1907–1909, cùng Nguyễn Văn Vĩnh phụ trách phần quốc ngữ) — tham gia phong trào Duy Tân và Đông Kinh Nghĩa Thục. Tác giả «Việt sử tân ước», viết lời tựa cho «Truyện Kiều» (bản Kiều Oánh Mậu chú giải) và «Việt sử mông học». Về năm mất, tư liệu vênh nhau: nhan đề bài trên Báo Pháp luật Việt Nam ghi (1861-1908), nhưng bài lại dẫn nghiên cứu «Ba thế hệ trí thức người Việt» của GS Trịnh Văn Thảo ghi (1861-1907).",
+      "dia_diem": "Xã Thượng Phán (nay thôn Thượng Phán, xã Quỳnh Hoàng), huyện Quỳnh Phụ, tỉnh Thái Bình cũ (nay tỉnh Hưng Yên)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — Đời dâu bể của nhà báo tiên phong hô hào cách tân Đào Nguyên Phổ — https://baophapluat.vn/doi-dau-be-cua-nha-bao-tien-phong-ho-hao-cach-tan-dao-nguyen-pho-post232133.html"
+      ]
+    },
+    {
+      "id": "le-khiet",
+      "ten": "Lê Khiết (Lê Tựu Khiết)",
+      "lon": 108.75,
+      "lat": 15.05,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1857–1908",
+      "mo_ta": "Tên thật Lê Tựu Khiết, hiệu Dương Phong, tự Huy Thanh, quê làng An Ba, tổng Hành Cận (nay thôn An Ba, xã Hành Thịnh, huyện Nghĩa Hành, Quảng Ngãi); ông nội là tri phủ Kiến An thời Gia Long, cha từng làm tuần phủ dưới triều Thiệu Trị. Đỗ cử nhân khoa Canh Ngọ (1882) tại trường thi Bình Định, làm quan đến chức Cơ mật hành tẩu (1885), Án sát Quảng Nam (1894), Tán lý quân vụ 4 tỉnh Thanh – Nghệ – Tĩnh – Bình (1895) rồi bị giáng làm Bố chánh Nghệ An (1896, nên có biệt danh Bố Khiết). Đọc «Việt Nam vong quốc sử» của Phan Bội Châu, ông hối hận về quá khứ làm quan, từ quan năm 1897, được Phan Châu Trinh khuyến khích tham gia phong trào Duy Tân. Đầu 1908, ông lãnh đạo phong trào chống sưu thuế ở Quảng Ngãi; bị vu cáo «xúi giục bạo động» cùng Nguyễn Bá Loan, bị Pháp bắt và cùng Nguyễn Bá Loan, Trần Chót, Nguyễn Đến đem xử chém ngày 23/4/1908 (22/3 Mậu Thân) tại bãi nam sông Trà Khúc, làng Ba La, phủ Tư Nghĩa.",
+      "dia_diem": "Thôn An Ba, xã Hành Thịnh, huyện Nghĩa Hành, tỉnh Quảng Ngãi; hành hình tại bãi nam sông Trà Khúc, làng Ba La (nay TP. Quảng Ngãi)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Trường THPT Chuyên Lê Khiết, tỉnh Quảng Ngãi — Tiểu sử Lê Tựu Khiết (Lê Khiết) — https://c3chuyenlekhiet.quangngai.edu.vn/tieu-su-le-tuu-khiet-le-khiet"
+      ]
+    },
+    {
+      "id": "ong-ich-duong",
+      "ten": "Ông Ích Đường",
+      "lon": 108.2167,
+      "lat": 16.0167,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1890–1908",
+      "mo_ta": "Cháu nội danh tướng Ông Ích Khiêm, quê làng Phong Lệ (nay phường Hòa Thọ, quận Cẩm Lệ, Đà Nẵng). Năm Mậu Thân 1908, ông chỉ huy dân chúng Hòa Vang nổi dậy chống sưu thuế, vây bắt viên quan tham nhũng Lãnh Điềm trong phong trào chống thuế Trung Kỳ lan rộng từ Quảng Nam. Kế hoạch thất bại vì quân Pháp kịp đàn áp; ông bị truy nã, lánh tại nhà một người quen nhưng bị tố giác, bị bắt và bị chém đầu ngay giữa buổi chợ đông tại chợ Túy Loan ngày 16/4/1908 khi mới 18 tuổi, theo án của triều đình với tội danh «kích biến lương dân».",
+      "dia_diem": "Làng Phong Lệ Bắc (nay phường Hòa Thọ), quận Cẩm Lệ, TP. Đà Nẵng — quê quán; hành hình tại chợ Túy Loan, huyện Hòa Vang cũ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT TP. Đà Nẵng — Ông Ích Đường (1890-1908) — https://cttdt.danangportal.gov.vn/vi/w/ong-ich-duong-1890-1908-i",
+        "Báo Đà Nẵng — Những người tuẫn nạn năm 1908 — https://baodanang.vn/nhung-nguoi-tuan-nan-nam-1908-3000104.html"
+      ]
+    },
+    {
+      "id": "nguyen-hang-chi",
+      "ten": "Nguyễn Hàng Chi",
+      "lon": 105.7333,
+      "lat": 18.5333,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1886–1908",
+      "mo_ta": "Người cầm đầu phong trào chống thuế ở Hà Tĩnh năm 1908, quê làng Đông Thượng, xã Ích Hậu (nay huyện Lộc Hà, Hà Tĩnh). Sau chuyến vào Quảng Nam – Quảng Ngãi năm 1907 tiếp xúc phong trào Duy Tân, ông về quê soạn và phát tán thông tri, vè cổ động chống sưu thuế; tháng 5/1908 cải trang người buôn quế để liên lạc các hội viên Duy Tân. Ngày 23/5/1908, ông dẫn khoảng 600 người kéo lên huyện lỵ Can Lộc đòi giảm thuế, bị quân Pháp đàn áp và bắt giữ. Bị tra tấn, ông nhận hết trách nhiệm về mình và bị xử tử gần tỉnh lỵ Hà Tĩnh.",
+      "dia_diem": "Làng Đông Thượng, xã Ích Hậu, huyện Lộc Hà, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Tĩnh — Nguyễn Hàng Chi (1886-1908) — https://baohatinh.vn/nguyen-hang-chi-1886-1908-post47591.html"
+      ]
+    },
+    {
+      "id": "tran-thuyet",
+      "ten": "Trần Thuyết",
+      "lon": 108.45,
+      "lat": 15.55,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "1908 (phong trào chống thuế Trung Kỳ)",
+      "mo_ta": "Người phát động phong trào chống thuế ở Tam Kỳ (Quảng Nam) năm 1908, quê xã Phước Lợi (nay huyện Phú Ninh). Ông hô hào dân chúng với câu nói còn lưu truyền «Dân ta xin quan đề đốc cho dân ăn gan!», thể hiện thái độ quyết liệt trước chính sách sưu cao thuế nặng của chính quyền thực dân, trong phong trào chống sưu thuế Trung Kỳ lan khắp 10 tỉnh miền Trung. Ông bị bắt và xử chém tại cầu Tam Kỳ.",
+      "dia_diem": "Xã Phước Lợi, huyện Phú Ninh, tỉnh Quảng Nam cũ (nay TP. Đà Nẵng); hành hình tại cầu Tam Kỳ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đà Nẵng — Những người tuẫn nạn năm 1908 — https://baodanang.vn/nhung-nguoi-tuan-nan-nam-1908-3000104.html"
+      ]
+    },
+    {
+      "id": "trinh-khac-lap",
+      "ten": "Trịnh Khắc Lập",
+      "lon": 105.7667,
+      "lat": 18.6667,
+      "loai": "duy-tan-dong-du",
+      "nam_hien_thi": "?–1908",
+      "mo_ta": "Thủ lĩnh phong trào chống thuế của nhân dân huyện Nghi Xuân (Hà Tĩnh) năm 1908, quê xã Xuân Thành. Cùng với Nguyễn Hàng Chi (Can Lộc), ông là một trong hai người ở Hà Tĩnh bị triều đình Huế kết án tử hình vì vai trò cầm đầu phong trào chống sưu thuế Trung Kỳ lan đến Nghệ Tĩnh giữa năm 1908.",
+      "dia_diem": "Xã Xuân Thành, huyện Nghi Xuân, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Tĩnh — Nguyễn Hàng Chi (1886-1908) — https://baohatinh.vn/nguyen-hang-chi-1886-1908-post47591.html"
+      ]
+    },
+    {
+      "id": "11-liet-si-vnqdd-yen-bai-1930",
+      "ten": "11 liệt sĩ Việt Nam Quốc dân Đảng hy sinh cùng ngày với Nguyễn Thái Học tại Yên Bái",
+      "lon": 104.9,
+      "lat": 21.72,
+      "loai": "viet-nam-quoc-dan-dang",
+      "nam_hien_thi": "17/6/1930",
+      "mo_ta": "Sáng 17/6/1930, thực dân Pháp đưa 13 chiến sĩ Việt Nam Quốc dân Đảng lên đoạn đầu đài tại Yên Bái, trong đó có Nguyễn Thái Học và Phó Đức Chính (đã có mục riêng). 11 người còn lại là: Nguyễn Như Liên (20 tuổi), Bùi Tử Toàn (37 tuổi), Bùi Văn Chuẩn (35 tuổi), Nguyễn An (31 tuổi), Hồ Văn Lạo (25 tuổi), Đào Văn Nhít, Nguyễn Văn Du, Nguyễn Đức Thịnh, Nguyễn Văn Tiềm, Đỗ Văn Sứ và Bùi Văn Cửu. Hài cốt của những người hy sinh được chôn chung dưới một gò đất gần đền Tuần Quán, cách ga Yên Bái khoảng một cây số.",
+      "dia_diem": "Pháp trường Yên Bái, gần đền Tuần Quán, tỉnh Yên Bái cũ (nay tỉnh Lào Cai)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Di tích Nhà tù Hỏa Lò — Ngày lên đoạn đầu đài — https://hoalo.vn/Articles/12/9413/ngay-len-%C4%91oan-%C4%91au-%C4%91ai.html"
+      ]
+    },
+    {
+      "id": "nguyen-huu-cau",
+      "ten": "Nguyễn Hữu Cầu",
+      "lon": 105.8283,
+      "lat": 21.005,
+      "loai": "dong-kinh-nghia-thuc",
+      "nam_hien_thi": "Đông Kinh Nghĩa Thục, 1907",
+      "mo_ta": "Nhà nho tiến bộ xuất thân gia đình khoa bảng ở phường Đông Tác, kinh thành Thăng Long (nay quận Đống Đa, Hà Nội). Mang lòng yêu nước sâu sắc trước cảnh nước mất, ông cùng các đồng chí sáng lập trường Đông Kinh Nghĩa Thục năm 1907, trực tiếp hoạt động trong Ban Tu thư, tham gia soạn tài liệu và giảng dạy tại trường — góp phần vào cuộc cách mạng tư tưởng, văn hóa đưa phong trào giải phóng dân tộc ra khỏi tầm nhìn nho giáo và ý thức trung quân phong kiến. Cuộc đời và hoạt động của ông ít được ghi chép, đến năm 2018 mới có sách chuyên khảo tập hợp nghiên cứu về ông do GS. Chương Thâu và Hồ Anh Hải biên soạn.",
+      "dia_diem": "Phường Đông Tác, kinh thành Thăng Long (nay quận Đống Đa), Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Tạp chí Cộng sản — Nguyễn Hữu Cầu - chí sĩ yêu nước Đông Kinh Nghĩa Thục — https://www.tapchicongsan.org.vn/en/thong-tin-ly-luan/-/2018/8985/nguyen-huu-cau---chi-si-yeu-nuoc-dong-kinh-nghia-thuc.aspx"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Thành hoàng & danh thần có đền/đình thờ lớn (không trùng Tứ bất tử đã có ở lớp «Huyền sử khai quốc»). Toạ độ đền/đình thờ qua OSM Nominatim; nội dung theo cổng nhà nước/di sản (vietnamtourism.vn, quangninh.gov.vn, baotanglichsu.vn, sodulich.ninhbinh.gov.vn, baoangiang.com.vn, mybacninh.vn). KHÔNG dùng Wikipedia. [Phase 3 lô4: hợp nhất 1 lớp → nhóm «Thành hoàng · Danh thần · Tín ngưỡng vùng miền» (dedup exact).]",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Cục Du lịch Quốc gia Việt Nam — vietnamtourism.vn",
     "Cổng TTĐT tỉnh Quảng Ninh — quangninh.gov.vn",
@@ -34,7 +34,17 @@
     "Liên hiệp các Hội KH&KT Việt Nam — vusta.vn",
     "Thời Mới — thoimoi.vn",
     "Tủ sách Thanh Niên — tusachthanhnien.vn",
-    "nghethuatvietnam.vn"
+    "nghethuatvietnam.vn",
+    "Thành đoàn Hải Phòng — thanhdoanhaiphong.gov.vn",
+    "Báo Cao Bằng điện tử — baocaobang.vn",
+    "Báo Cần Thơ Online — baocantho.com.vn",
+    "Bộ Văn hóa, Thể thao và Du lịch — bvhttdl.gov.vn",
+    "Sở Du lịch Hưng Yên — dulich.hungyen.gov.vn",
+    "Báo Gia Lai điện tử — baogialai.com.vn",
+    "Báo Lâm Đồng điện tử — baolamdong.vn",
+    "Sở Văn hóa và Thể thao Hà Nội — sovhtt.hanoi.gov.vn",
+    "Hà Nội Mới — hanoimoi.vn",
+    "Báo Thái Nguyên điện tử — baothainguyen.vn"
   ],
   "items": [
     {
@@ -751,6 +761,237 @@
       "trang_thai": "reviewed",
       "nguon": [
         "vanhoatinnguong.vn (Đền thờ ông bà Đỗ Công Tường — Cao Lãnh — Đồng Tháp)"
+      ]
+    },
+    {
+      "id": "thien-y-a-na",
+      "ten": "Thiên Y A Na (Yang Pô Inư Nagar) — Tháp Bà Ponagar",
+      "lon": 109.1958,
+      "lat": 12.265,
+      "loai": "thanh-mau",
+      "nam_hien_thi": "người Chăm thờ từ khoảng thế kỷ VIII–XIII; người Việt tiếp nhận tín ngưỡng khi vào vùng Khánh Hòa",
+      "mo_ta": "Theo tư liệu bia khắc năm 1856 (Phan Thanh Giản biên soạn), nữ thần Pônagar (Yang Pô Inư Nagar) là «Mẹ xứ sở» của người Chăm; người Việt gọi là Thiên Y A Na Thánh Mẫu và được các vua Nguyễn sắc phong Thượng đẳng thần. Lễ hội Tháp Bà Ponagar (20–23/3 âm lịch) là Di sản văn hóa phi vật thể quốc gia (2012).",
+      "dia_diem": "Tháp Bà Ponagar, phường Vĩnh Phước, TP. Nha Trang, tỉnh Khánh Hòa — DT lịch sử-văn hóa quốc gia",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Lễ hội Tháp Bà Ponagar — https://dsvh.gov.vn/le-hoi-thap-ba-ponagar-3155"
+      ]
+    },
+    {
+      "id": "ba-ngu-hanh-long-thuong",
+      "ten": "Bà Ngũ Hành (Ngũ vị Thánh Phi) — Miếu Bà Ngũ Hành Long Thượng",
+      "lon": 106.63,
+      "lat": 10.58,
+      "loai": "thanh-mau",
+      "nam_hien_thi": "sắc phong năm Duy Tân thứ 8 (1914)",
+      "mo_ta": "Tín ngưỡng dân gian thờ năm vị phúc thần đại diện Kim – Mộc – Thủy – Hỏa – Thổ, được triều Nguyễn sắc phong Thánh Phi; miếu còn phối thờ Thần Thành Hoàng Bổn Cảnh, Quan Thánh Đế Quân, Tiền Hiền – Hậu Hiền. Lễ hội vía Bà (18–21 tháng Giêng) là Di sản văn hóa phi vật thể quốc gia (2014).",
+      "dia_diem": "Miếu Bà Ngũ Hành, xã Long Thượng, huyện Cần Giuộc, tỉnh Tây Ninh (Long An cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Lễ hội vía Bà Ngũ Hành — https://dsvh.gov.vn/le-hoi-via-ba-ngu-hanh-1159"
+      ]
+    },
+    {
+      "id": "ba-thuy-long-thanh-tung",
+      "ten": "Bà Thủy Long (Thủy Long Thần Nữ) — Miếu Bà Thủy Long Thanh Tùng",
+      "lon": 105.2,
+      "lat": 9.03,
+      "loai": "thanh-mau",
+      "nam_hien_thi": "miếu lập khoảng 124 năm trước (~1900)",
+      "mo_ta": "Nữ thần sông nước được thờ rộng rãi ở đồng bằng Nam Bộ, đặc biệt vùng Cà Mau. Miếu gắn với công lao khai phá của các bậc tiền nhân vùng đất Thanh Tùng. Lễ hội vía Bà (16–17/2 âm lịch) — «lễ hội dân gian lớn nhất xứ Đầm Dơi» — là Di sản văn hóa phi vật thể quốc gia (25/3/2024).",
+      "dia_diem": "Miếu Bà Thủy Long, xã Thanh Tùng, huyện Đầm Dơi, tỉnh Cà Mau",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cà Mau — Công bố Di sản văn hóa phi vật thể quốc gia Lễ hội vía Bà Thủy Long Thanh Tùng — https://baocamau.vn/cong-bo-di-san-van-hoa-phi-vat-the-quoc-gia-le-hoi-via-ba-thuy-long-thanh-tung-a31802.html"
+      ]
+    },
+    {
+      "id": "trung-a-dai-vuong-thai-khe",
+      "ten": "Trung Á Đại Vương — Đình Thái Khê",
+      "lon": 105.59,
+      "lat": 21.03,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "tương truyền tướng thời Hùng Duệ Vương (Hùng Vương thứ 18)",
+      "mo_ta": "Theo thần tích và 14 đạo sắc phong còn lưu tại đình, Trung Á Đại Vương là một vị tướng thời Hùng Vương thứ 18, được dân làng Hữu Quang tôn làm Thành hoàng. Đình còn gắn với phong trào cách mạng — nơi Tôn Đức Thắng thăm hỏi nhân dân năm 1947.",
+      "dia_diem": "Đình Thái Khê, thị trấn Quốc Oai, TP. Hà Nội — DT quốc gia (QĐ 3234/QĐ-BVHTTDL, 09/09/2025)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Đình Thái Khê — https://dsvh.gov.vn/dinh-thai-khe-22292"
+      ]
+    },
+    {
+      "id": "pho-ho-pho-do-dai-vuong-pha-le",
+      "ten": "Phổ Hộ Đại Vương – Phổ Độ Đại Vương — Miếu Thành Hoàng làng Phả Lễ",
+      "lon": 106.8,
+      "lat": 20.9,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "thời Trần, tương truyền từng phò trợ Hưng Đạo Đại Vương",
+      "mo_ta": "Hai vị Thành hoàng thời Trần, tương truyền từng phò trợ Hưng Đạo Đại vương, được thờ cùng thần Quý Minh Đại Vương (họ Cao, tướng thời Hùng Duệ Vương) tại một miếu; còn lưu 8 đạo sắc phong các triều Tự Đức–Khải Định.",
+      "dia_diem": "Miếu Thành Hoàng làng, xã Phả Lễ, huyện Thủy Nguyên, TP. Hải Phòng — DT cấp thành phố (2005)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Thành đoàn Hải Phòng — Di tích lịch sử Miếu Thành hoàng làng xã Phả Lễ, huyện Thủy Nguyên — https://thanhdoanhaiphong.gov.vn/di-tich-lich-su-mieu-thanh-hoang-lang-xa-pha-le-huyen-thuy-nguyen-nd23448.html"
+      ],
+      "ghi_chu_bien_tap": "Miếu còn thờ chung Quý Minh Đại Vương — không đưa Quý Minh vào tên mục vì trùng khái niệm với «Cao Sơn – Quý Minh Đại Vương» đã có trong file."
+    },
+    {
+      "id": "hoang-luc-an-bien-tuong-quan",
+      "ten": "Hoàng Lục — An Biên tướng quân — Đền Hoàng Lục",
+      "lon": 106.52,
+      "lat": 22.83,
+      "loai": "danh-than",
+      "nam_hien_thi": "thế kỷ XI, thời vua Lý Nhân Tông",
+      "mo_ta": "Tù trưởng người Tày ở Lũng Đinh (nay xã Đình Phong), tinh thông binh pháp và sử sách, được giao quản lý một vùng biên giới từ năm 18 tuổi. Nhân dân tôn kính lập đền thờ, tổ chức lễ hội hàng năm vào 28/2 âm lịch.",
+      "dia_diem": "Đền Hoàng Lục, xã Đình Phong, huyện Trùng Khánh, tỉnh Cao Bằng — DT lịch sử cấp tỉnh (2004)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cao Bằng điện tử — Độc đáo lễ hội Đền Hoàng Lục tại xã Đình Phong, Cao Bằng — https://baocaobang.vn/doc-dao-le-hoi-den-hoang-luc-tai-xa-dinh-phong-cao-bang-3187233.html"
+      ]
+    },
+    {
+      "id": "than-nam-hai-song-doc",
+      "ten": "Thần Nam Hải (cá Ông) — Lăng Ông Nam Hải Sông Đốc",
+      "lon": 104.8306,
+      "lat": 9.0378,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "xây 1925, dời 1943, dựng lại 1963",
+      "mo_ta": "Cá voi (cá Ông) được ngư dân xem là phúc thần của biển cả. Lăng thờ theo kiểu đình, miếu truyền thống Nam Bộ; lễ hội Nghinh Ông (14–16/2 âm lịch) tạ ơn biển cả và cầu mong những chuyến hải trình an toàn.",
+      "dia_diem": "Lăng Ông Nam Hải, khóm 2, thị trấn Sông Đốc, huyện Trần Văn Thời, tỉnh Cà Mau — DT cấp tỉnh (25/7/2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cần Thơ Online — Lăng Ông Nam Hải ở vùng Sông Đốc, Cà Mau — https://baocantho.com.vn/lang-ong-nam-hai-o-vung-song-doc-ca-mau-a161182.html"
+      ]
+    },
+    {
+      "id": "ma-doan-giao-bach-than",
+      "ten": "Ma Doãn Giảo — Đền Bách Thần",
+      "lon": 105.27,
+      "lat": 22.16,
+      "loai": "danh-than",
+      "nam_hien_thi": "cuối thế kỷ XIX",
+      "mo_ta": "Tướng quân có công dẹp loạn «giặc Cờ Đen»; đền còn thờ chung nhiều vị thần núi/sông khác (gọi chung «Bách Thần»). Đền tồn tại trước năm 1945.",
+      "dia_diem": "Đền Bách Thần, tổ dân phố Vĩnh Giang, thị trấn Vĩnh Lộc, huyện Chiêm Hóa, tỉnh Tuyên Quang — DT cấp tỉnh (2012)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Văn hóa, Thể thao và Du lịch — Tuyên Quang: Đền Bách Thần được công nhận là điểm du lịch — https://bvhttdl.gov.vn/tuyen-quang-den-bach-than-duoc-cong-nhan-la-diem-du-lich-20241107083534747.htm"
+      ],
+      "ghi_chu_bien_tap": "Nguồn chỉ xác nhận công trạng dẹp giặc Cờ Đen, không có thêm chi tiết thân thế — thông tin còn mỏng."
+    },
+    {
+      "id": "thanh-hoang-bon-canh-hoa-thuan",
+      "ten": "Thành Hoàng Bổn Cảnh — Đình thần Hòa Thuận",
+      "lon": 105.28,
+      "lat": 9.95,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "sắc phong 29/11/1852 (Tự Đức)",
+      "mo_ta": "Thần bảo hộ chung của làng (không có tên riêng cá nhân), được vua Tự Đức phong ấn «sắc thần Thành hoàng bổn cảnh». Đình xây đầu thế kỷ XIX, từng là nơi tập hợp lực lượng kháng chiến chống Pháp, xây lại năm 1993.",
+      "dia_diem": "Đình thần Hòa Thuận, xã Hòa Thuận, huyện Giồng Riềng, tỉnh An Giang (Kiên Giang cũ) — DT cấp tỉnh (QĐ 3467, 30/12/2024)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Văn Hóa Online — Kiên Giang xếp hạng di tích lịch sử-văn hóa Đình thần Hòa Thuận — https://baovanhoa.vn/van-hoa/kien-giang-xep-hang-di-tich-lich-su-van-hoa-dinh-than-hoa-thuan-127760.html"
+      ],
+      "ghi_chu_bien_tap": "Danh xưng «Thành Hoàng Bổn Cảnh» là mẫu chung, trùng tên gọi với mục «Bổn Cảnh Thành Hoàng — Đình Bình Thuỷ» đã có sẵn trong file (khác người, khác nơi thờ) — giữ tên đầy đủ kèm địa danh để phân biệt."
+    },
+    {
+      "id": "ba-chua-vuc-hung-yen",
+      "ten": "Bà Chúa Vực (Thiên Phi Linh Uyên Thánh Mẫu Thủy Cung) — Đền Bà Chúa Vực",
+      "lon": 106.06,
+      "lat": 20.65,
+      "loai": "thanh-mau",
+      "nam_hien_thi": "theo truyền thuyết, năm Ất Mão (niên đại không xác định)",
+      "mo_ta": "Theo truyền thuyết, là con gái Ngọc Hoàng Thượng Đế, giáng xuống giúp dân ngăn dòng nước lũ hung dữ. Đền được tái dựng năm 2004 theo kiến trúc nhà Lê; lễ hội tổ chức ngày 23/5 âm lịch hàng năm.",
+      "dia_diem": "Đền Bà Chúa Vực, phường Phố Hiến, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Du lịch Hưng Yên — Tham quan Đền Bà Chúa Vực — https://dulich.hungyen.gov.vn/vi/detailnews/?t=tham-quan-den-ba-chua-vuc&id=news_3997"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không xác nhận đền đã được xếp hạng di tích cấp nào — không ghi trạng thái xếp hạng để tránh suy đoán."
+    },
+    {
+      "id": "lang-lai-dai-tuong-quan-an-xuyen",
+      "ten": "Lang Lại Đại Tướng Quân — Miếu An Xuyên",
+      "lon": 108.658,
+      "lat": 13.958,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "công nhận di tích lịch sử cấp tỉnh 2025",
+      "mo_ta": "Lang Lại Đại Tướng Quân là danh xưng tôn phong dành cho rái cá được thần thánh hóa, thờ tại Miếu An Xuyên (miếu Bà) cùng Thủy Long Thần Nữ Nương Nương và Hà Bá. Đây là nơi duy nhất tại Gia Lai thờ thủy thần làm thần chủ.",
+      "dia_diem": "Miếu An Xuyên, phường Tây Sơn, thị xã An Khê, tỉnh Gia Lai — DT lịch sử cấp tỉnh (2025)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Gia Lai điện tử — Miếu An Xuyên và Đình Tân Tạo được xếp hạng di tích lịch sử cấp tỉnh — https://baogialai.com.vn/mieu-an-xuyen-va-dinh-tan-tao-duoc-xep-hang-di-tich-lich-su-cap-tinh-post302698.html"
+      ]
+    },
+    {
+      "id": "than-nam-hai-van-nam-nghia",
+      "ten": "Thần Nam Hải — Vạn Nam Nghĩa",
+      "lon": 108.1,
+      "lat": 10.93,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "vạn khởi dựng năm 1900; công nhận di tích cấp tỉnh 2025",
+      "mo_ta": "Vạn Nam Nghĩa khởi dựng năm 1900, thờ Thần Nam Hải (cá voi) — vị thần biển ngư dân tin bảo hộ đánh bắt và an toàn trên biển — đồng thời tôn vinh các tiền hiền có công lập nghề, lập làng. Hàng năm tổ chức hai kỳ tế lễ cầu ngư vào tháng 6 và tháng 8 âm lịch.",
+      "dia_diem": "Phường Lạc Đạo, TP. Phan Thiết, tỉnh Lâm Đồng (Bình Thuận cũ) — DT văn hóa cấp tỉnh (2025)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lâm Đồng điện tử — Vạn Nam Nghĩa, chỗ dựa tinh thần của ngư dân vùng biển — https://baolamdong.vn/bbt/van-nam-nghia-cho-dua-tinh-than-cua-ngu-dan-vung-bien-129073.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi công nhận «cuối tháng 3/2025» nhưng không nêu số quyết định cụ thể — không suy đoán số hiệu."
+    },
+    {
+      "id": "than-chau-tho-mieu-dieu-ba-duong-noi",
+      "ten": "Thần Châu Thổ — Miếu Diều làng Bá Dương Nội",
+      "lon": 105.68,
+      "lat": 21.13,
+      "loai": "thanh-hoang",
+      "nam_hien_thi": "theo truyền thuyết, miếu dựng trước thế kỷ X",
+      "mo_ta": "Theo truyền thuyết, miếu thờ thần Châu Thổ (dân gian gọi Miếu Diều) được xây dựng trước thế kỷ X. Hội thi thả diều truyền thống gắn liền với miếu — nét văn hoá độc nhất của làng Bá Dương Nội, tổ chức ngày 15/3 âm lịch với đầy đủ nghi thức tế lễ cổ truyền — được công nhận Di sản văn hóa phi vật thể quốc gia năm 2025.",
+      "dia_diem": "Miếu Diều, làng Bá Dương Nội, xã Hồng Hà, huyện Đan Phượng, TP. Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hóa và Thể thao Hà Nội — Độc đáo Hội thi thả diều truyền thống làng Bá Dương Nội — https://sovhtt.hanoi.gov.vn/doc-dao-hoi-thi-tha-dieu-truyen-thong-lang-ba-duong-noi/",
+        "Cổng Giao tiếp điện tử TP. Hà Nội — Hội Diều làng Bá Dương Nội đón nhận danh hiệu Di sản văn hóa phi vật thể Quốc gia (12/4/2025) — https://hanoi.gov.vn/tin-tuc-su-kien-noi-bat/hoi-dieu-lang-ba-duong-noi-don-nhan-danh-hieu-di-san-van-hoa-phi-vat-the-quoc-gia-4250412172446984.htm"
+      ]
+    },
+    {
+      "id": "nguyen-thi-ngoc-tu-den-ba-chua-linh-nam",
+      "ten": "Đức Bà Nguyễn Thị Ngọc Tú — Đền Bà Chúa Lĩnh Nam",
+      "lon": 105.89,
+      "lat": 20.96,
+      "loai": "danh-than",
+      "nam_hien_thi": "thế kỷ XVII (đền dựng thời Lê Trung Hưng); sắc phong 1889",
+      "mo_ta": "Hoàng nữ thứ hai của chúa Nguyễn Hoàng, chính phi của Thanh Đô Vương Trịnh Tráng. Bà có công xin quai đê lấn bãi mở hơn 200 mẫu đất canh tác, đào sông dẫn nước sản xuất, bắc cầu cho dân đi lại và dựng chùa Nghiêm Thắng Tự. Năm 1889 vua Thành Thái phong tước «Tây cung Chính phi Linh phủ Dực Bảo Trung Hưng tôn thần Công chúa».",
+      "dia_diem": "Đền Bà Chúa, phường Lĩnh Nam, TP. Hà Nội — DT lịch sử-văn hóa cấp thành phố (09/05/2026)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Hà Nội Mới — Đền Bà Chúa được công nhận Di tích cấp thành phố: Giữ hồn di sản trong lòng đô thị — https://hanoimoi.vn/den-ba-chua-duoc-cong-nhan-di-tich-cap-thanh-pho-giu-hon-di-san-trong-long-do-thi-749108.html"
+      ]
+    },
+    {
+      "id": "bach-ngoc-thuy-tinh-cong-chua-den-hich",
+      "ten": "Bạch Ngọc Thủy Tinh Công Chúa — Đền Hích",
+      "lon": 105.85,
+      "lat": 21.65,
+      "loai": "thanh-mau",
+      "nam_hien_thi": "đền dựng thời Nguyễn (cuối thế kỷ XIX – đầu thế kỷ XX)",
+      "mo_ta": "Nữ thần sông nước được thờ tại đền bên bờ sông Cầu; đền còn lưu giữ kiệu gỗ sơn son thiếp vàng, tượng thờ và các sắc phong triều Nguyễn.",
+      "dia_diem": "Đền Hích, xóm phố Hích, xã Hòa Bình, tỉnh Thái Nguyên — DT lịch sử-văn hóa cấp tỉnh (QĐ 369/QĐ-UBND, 28/02/2007)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên điện tử — Đền Long Giàn và Đền Hích - Di tích lịch sử, văn hóa cấp tỉnh — https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202107/den-long-gian-va-den-hich-di-tich-lich-su-van-hoa-cap-tinh-367F627/"
       ]
     }
   ]

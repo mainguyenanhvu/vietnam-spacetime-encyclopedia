@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Sứ thần & nhà ngoại giao lịch sử Việt Nam — Sóng 9. Mọi mục draft, chờ kiểm sử §9. Toạ độ quê quán qua OpenStreetMap Nominatim (mức xã/huyện khi không có toạ độ làng cụ thể).",
-  "ngay_cap_nhat": "2026-07-27",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Ủy ban Nhà nước về người Việt Nam ở nước ngoài — scov.gov.vn",
     "Bảo tàng Lịch sử Quốc gia — baotanglichsu.vn",
@@ -12,7 +12,14 @@
     "Ban Quản lý Khu di tích Nguyễn Du — nguyendu.com.vn",
     "Ủy ban Kiểm tra Trung ương — ubkttw.vn",
     "Tạp chí Người Hà Nội — nguoihanoi.vn",
-    "OpenStreetMap Nominatim (toạ độ)"
+    "OpenStreetMap Nominatim (toạ độ)",
+    "Cổng thông tin Bộ Ngoại giao — mofa.gov.vn",
+    "Báo Nghệ An điện tử — baonghean.vn",
+    "Báo Nam Định điện tử — baonamdinh.vn",
+    "Báo Cao Bằng điện tử — baocaobang.vn",
+    "Báo Công an Nhân dân điện tử — cand.vn",
+    "Văn phòng Chủ tịch nước — vpctn.gov.vn",
+    "Báo Dân Việt — danviet.vn"
   ],
   "items": [
     {
@@ -447,6 +454,237 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Cổng TTĐT tỉnh Hưng Yên — https://hungyen.gov.vn/dao-cong-soan-1376-1456-c27922.html"
+      ]
+    },
+    {
+      "id": "quach-dinh-bao",
+      "ten": "Quách Đình Bảo",
+      "lon": 106.55,
+      "lat": 20.55,
+      "loai": "su-than",
+      "nam_hien_thi": "1434–1507",
+      "mo_ta": "Đỗ Tiến sĩ, làm quan tới Đông các hiệu thư. Tháng 10 năm Mậu Tuất 1478, thời Lê Thánh Tông, làm chánh sứ sang nhà Minh; bài tấu trình việc người Minh sang mò trộm ngọc trai, cướp bóc dân biên giới được vua Minh khen vừa khôn khéo biện giải vừa «thông kim bác cổ». Sau này là người biên soạn danh sách tiến sĩ 10 khoa thi đầu thời Lê sơ để dựng bia ở Văn Miếu – Quốc Tử Giám.",
+      "dia_diem": "Làng Phúc Khê, xã Thái Phúc, huyện Thái Thụy, tỉnh Thái Bình cũ (nay thuộc tỉnh Hưng Yên sau sáp nhập 2025)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Dựng bia tiến sĩ ở Văn Miếu-Quốc Tử giám 10 khoa thi đầu tiên thời Lê sơ là một thám hoa quê Thái Bình — https://danviet.vn/dung-bia-tien-si-o-van-mieu-10-khoa-thi-dau-tien-thoi-le-so-la-mot-tham-hoa-que-thai-binh-20241218233345709.htm"
+      ],
+      "ghi_chu_bien_tap": "Một bài khác cùng loạt trên Dân Việt ghi năm sinh 1440 thay vì 1434 — chênh lệch nhỏ giữa các bài cùng chuỗi, chưa rõ nguyên do, giữ năm theo nguồn chính đã dùng. Câu khen «thông kim bác cổ» là lời thuật lại của báo Dân Việt (báo phổ thông, không phải trích trực tiếp chính sử) — chưa đối chiếu được với Đại Việt Sử Ký Toàn Thư/Đại Việt thông sử, cần coi là giai thoại lưu truyền cho đến khi tra được nguyên văn chính sử."
+    },
+    {
+      "id": "pham-hung-van",
+      "ten": "Phạm Hưng Văn",
+      "lon": 106.35,
+      "lat": 20.5,
+      "loai": "su-than",
+      "nam_hien_thi": "? – 1497",
+      "mo_ta": "Chánh sứ sang nhà Minh năm Đinh Tỵ 1497 để báo tang vua Lê Thánh Tông và xin sắc phong cho vua Lê Hiến Tông. Dẫn đầu phái đoàn cùng hai phó sứ cũng quê Thái Bình; cả ba được sĩ phu nhà Minh khen ngợi văn tài khi đối đáp, xướng hoạ. Về nước ông lâm bệnh, mất ngay sau chuyến đi.",
+      "dia_diem": "Xã Đông Vinh, huyện Đông Hưng, tỉnh Thái Bình cũ (nay thuộc tỉnh Hưng Yên sau sáp nhập 2025)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Sứ thần quê Thái Bình đi sứ Trung Quốc làm rạng danh Đại Việt, 2 người là Trạng nguyên, một người là bác học — https://danviet.vn/su-than-que-thai-binh-di-su-trung-quoc-ran-danh-dai-viet-2-nguoi-la-trang-nguyen-mot-la-bac-hoc-20250211124952577-d1210066.html"
+      ],
+      "ghi_chu_bien_tap": "Năm sinh không rõ; năm mất suy theo mốc chuyến đi sứ 1497, chưa có mốc chính xác trong nguồn."
+    },
+    {
+      "id": "nguyen-huy-nhuan",
+      "ten": "Nguyễn Huy Nhuận",
+      "lon": 105.9661,
+      "lat": 21.0175,
+      "loai": "su-than",
+      "nam_hien_thi": "1678–1758",
+      "mo_ta": "Phó sứ sang nhà Thanh năm 1723, về nước 1726. Năm 1728 cùng Nguyễn Công Thái hội đàm phân giới biên cương với quan nhà Thanh: khi quan Thanh định đánh tráo vị trí biên giới vùng Tụ Long, hai ông kiên quyết xác minh đúng sông Đỗ Chú, giữ được đất và mỏ đồng Tụ Long về cho Đại Việt, dựng bia mốc giới.",
+      "dia_diem": "Làng Sủi, xã Phú Thị, huyện Gia Lâm, TP Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Danh nhân Nguyễn Huy Nhuận quả cảm, quyết đoán thế nào trong việc hội đàm dựng bia với nhà Thanh? — https://danviet.vn/danh-nhan-nguyen-huy-nhuan-qua-cam-quyet-doan-the-nao-trong-viec-hoi-dam-dung-bia-voi-nha-thanh-d1366904.html"
+      ]
+    },
+    {
+      "id": "nguyen-cong-thai",
+      "ten": "Nguyễn Công Thái",
+      "lon": 105.8443,
+      "lat": 20.9835,
+      "loai": "su-than",
+      "nam_hien_thi": "1684–1758",
+      "mo_ta": "Năm Bảo Thái thứ 9 (1728), cùng Nguyễn Huy Nhuận hội đàm phân giới biên cương với nhà Thanh tại vùng núi Tụ Long, Tuyên Quang. Trực tiếp lăn lộn thực địa vùng lam chướng hiểm trở để xác minh đúng sông Đỗ Chú, đòi lại khoảng 40 dặm đất cùng các mỏ khoáng sản Tụ Long cho Đại Việt.",
+      "dia_diem": "Làng Kim Lũ, nay phường Đại Kim, quận Hoàng Mai, TP Hà Nội — đền thờ và lăng mộ xếp hạng di tích",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá (Bộ VHTTDL) — Đền thờ và Lăng mộ Nguyễn Công Thái, thành phố Hà Nội — https://dsvh.gov.vn/den-tho-va-lang-mo-nguyen-cong-thai-thanh-pho-ha-noi-3385"
+      ]
+    },
+    {
+      "id": "phan-huy-vinh",
+      "ten": "Phan Huy Vịnh",
+      "lon": 105.6531,
+      "lat": 21.0032,
+      "loai": "su-than",
+      "nam_hien_thi": "1800–1870",
+      "mo_ta": "Hai lần đi sứ nhà Thanh thời Nguyễn: 1841–1843 (báo tang vua Minh Mệnh, xin sắc phong cho vua Thiệu Trị) và 1852–1853. Cháu nội Phan Huy Ích, con Phan Huy Thực; làm đến Thượng thư Bộ Lễ. Ghi chép hai chuyến đi sứ thành hai tập thơ «Như Thanh sứ trình» và «Nhân trình tuỳ bút thi tập».",
+      "dia_diem": "Làng Sài Sơn, huyện Quốc Oai, TP Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Tạp chí Người Hà Nội — Phan Huy Vịnh – người con dòng văn Phan Huy với hai lần đi sứ — https://nguoihanoi.vn/phan-huy-vinh-nguoi-con-dong-van-phan-huy-voi-hai-lan-di-su-79217.html"
+      ]
+    },
+    {
+      "id": "bui-van-di",
+      "ten": "Bùi Văn Dị",
+      "lon": 105.9212,
+      "lat": 20.5464,
+      "loai": "su-than",
+      "nam_hien_thi": "1833–1895",
+      "mo_ta": "Chánh sứ sang nhà Thanh năm 1876, sứ đoàn hoạt động sang 1877 với tập thơ «Vạn lý hành ngâm» (khoảng 170 bài, in tại Trung Quốc năm 1877). Sau khi về nước, giữ chức Án sát Ninh Bình, trực tiếp chỉ huy trận đánh chặn quân Pháp (27–28/3/1883), và tham gia biên soạn quốc sử «Đại Nam thực lục chính biên đệ tứ kỷ».",
+      "dia_diem": "Xã Châu Cầu, huyện Kim Bảng, tỉnh Hà Nam cũ (nay thuộc TP Phủ Lý, tỉnh Ninh Bình sau sáp nhập 2025)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Các nhà khoa bảng Hà Nam — https://baotanglichsu.vn/vi/Articles/3096/6745/cac-nha-khoa-bang-ha-nam.html"
+      ]
+    },
+    {
+      "id": "hoang-minh-giam",
+      "ten": "Hoàng Minh Giám",
+      "lon": 105.7833,
+      "lat": 21.0916,
+      "loai": "ngoai-giao",
+      "nam_hien_thi": "1904–1995",
+      "mo_ta": "Bộ trưởng Ngoại giao đầu tiên do Đảng cử (03/1947–09/1954, kế nhiệm giai đoạn Hồ Chí Minh kiêm nhiệm). Trực tiếp trợ giúp Hồ Chí Minh đàm phán với Jean Sainteny, dẫn tới Hiệp định Sơ bộ 6/3/1946. Xây dựng bộ máy Bộ Ngoại giao và đào tạo cán bộ ngoại giao thời kỳ đầu kháng chiến chống Pháp.",
+      "dia_diem": "Thôn Đông Ngạc, phường Đông Ngạc, quận Bắc Từ Liêm, TP Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng thông tin Bộ Ngoại giao — Bộ trưởng Hoàng Minh Giám (từ 03/1947 đến 09/1954) — https://mofa.gov.vn/tin-chi-tiet/chi-tiet/bo-truong-hoang-minh-giam-tu-031947-den-091954--4901-167.html"
+      ]
+    },
+    {
+      "id": "nguyen-duy-trinh",
+      "ten": "Nguyễn Duy Trinh",
+      "lon": 105.5893,
+      "lat": 18.8088,
+      "loai": "ngoai-giao",
+      "nam_hien_thi": "1910–1985",
+      "mo_ta": "Bộ trưởng Ngoại giao (04/1965–02/1980). Ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hoà bình ở Việt Nam (27/1/1973) thay mặt Chính phủ Việt Nam Dân chủ Cộng hoà. Sau thống nhất, cùng Thủ tướng Phạm Văn Đồng chủ trương mở rộng quan hệ khu vực, góp phần đưa Việt Nam gia nhập Liên Hợp Quốc năm 1977.",
+      "dia_diem": "Xã Phúc Thọ (xã Nghi Thọ cũ), huyện Nghi Lộc, tỉnh Nghệ An — có khu lưu niệm",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nghệ An điện tử — Nguyễn Duy Trinh - người con ưu tú của quê hương Nghệ An — https://baonghean.vn/nguyen-duy-trinh-nguoi-con-uu-tu-cua-que-huong-nghe-an-10211007.html",
+        "Báo Nghệ An điện tử — Cần khẩn trương tu bổ nhà lưu niệm đồng chí Nguyễn Duy Trinh — https://baonghean.vn/can-khan-truong-tu-bo-nha-luu-niem-dong-chi-nguyen-duy-trinh-10281191.html"
+      ]
+    },
+    {
+      "id": "le-duc-tho",
+      "ten": "Lê Đức Thọ",
+      "lon": 106.1682,
+      "lat": 20.4243,
+      "loai": "ngoai-giao",
+      "nam_hien_thi": "1911–1990",
+      "mo_ta": "Cố vấn đặc biệt của đoàn đàm phán Chính phủ Việt Nam Dân chủ Cộng hoà tại Hội nghị Paris (từ 1968), trực tiếp đàm phán với Henry Kissinger gần 5 năm, dẫn tới Hiệp định Paris 27/1/1973. Được trao giải Nobel Hoà bình 1973 cùng Kissinger nhưng từ chối nhận vì hoà bình chưa thực sự lập lại ở Việt Nam.",
+      "dia_diem": "Xã Địch Lễ, huyện Mỹ Lộc cũ, nay xã Nam Vân, tỉnh Nam Định cũ (nay thuộc tỉnh Ninh Bình sau sáp nhập 2025)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nam Định điện tử — Cố vấn Lê Đức Thọ và cuộc đàm phán lịch sử — https://baonamdinh.vn/channel/5093/202109/huong-toi-ky-niem-110-nam-ngay-sinh-dong-chi-le-duc-tho-10-10-1911-10-10-2021-co-van-le-duc-tho-va-cuoc-dam-phan-lich-su-2546603/",
+        "Báo Cao Bằng điện tử — Đồng chí Lê Đức Thọ - một nhân vật lịch sử với những trọng trách lớn — https://baocaobang.vn/Dong-chi-Le-Duc-Tho-mot-nhan-vat-lich-su-voi-nhung-trong-trach-lon-3500.html"
+      ]
+    },
+    {
+      "id": "ha-van-lau",
+      "ten": "Hà Văn Lâu",
+      "lon": 107.723,
+      "lat": 16.2066,
+      "loai": "ngoai-giao",
+      "nam_hien_thi": "1918–2016",
+      "mo_ta": "Đại tá quân đội kiêm nhà ngoại giao. Tháp tùng Phạm Văn Đồng, Tạ Quang Bửu dự khai mạc Hội nghị Genève 1954. Phó trưởng đoàn đàm phán Việt Nam Dân chủ Cộng hoà tại Hội nghị Paris giai đoạn 1968–1970, người đề xuất và bảo vệ hình thức bàn tròn đảm bảo vị thế ngang nhau cho bốn bên đàm phán. Sau 1975 làm Đại sứ tại Cuba, Đại sứ tại Liên Hợp Quốc (1978–1982), Thứ trưởng Ngoại giao, Đại sứ tại Pháp (1984).",
+      "dia_diem": "Làng Sình (Lại Ân), xã Phú Mậu, huyện Phú Vang, tỉnh Thừa Thiên Huế cũ (nay TP Huế)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Công an Nhân dân điện tử — Chuyện ít biết về Đại sứ - Đại tá Hà Văn Lâu — https://cand.vn/chuyen-it-biet-ve-dai-su-dai-ta-ha-van-lau-post415317.html"
+      ]
+    },
+    {
+      "id": "nguyen-co-thach",
+      "ten": "Nguyễn Cơ Thạch",
+      "lon": 106.08,
+      "lat": 20.35,
+      "loai": "ngoai-giao",
+      "nam_hien_thi": "1921–1998",
+      "mo_ta": "Trợ lý cho Lê Đức Thọ tại đàm phán Paris (1968–1973). Bộ trưởng Ngoại giao (02/1980–07/1991), Phó Chủ tịch Hội đồng Bộ trưởng từ 1987. Giai đoạn 1989–1991, khi Đông Âu biến động, chỉ đạo Bộ Ngoại giao mở rộng quan hệ quốc tế thời kỳ đầu Đổi Mới.",
+      "dia_diem": "Xã Liên Minh, huyện Vụ Bản, tỉnh Nam Định cũ (nay thuộc tỉnh Ninh Bình sau sáp nhập 2025)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng thông tin Bộ Ngoại giao — Phó Thủ tướng, Bộ trưởng Nguyễn Cơ Thạch (từ 02/1980 đến 07/1991) — https://mofa.gov.vn/tin-chi-tiet/chi-tiet/pho-thu-tuong-bo-truong-nguyen-co-thach-tu-021980-den-071991--4906-167.html"
+      ],
+      "ghi_chu_bien_tap": "Bỏ mô tả 'kiến trúc sư phá thế bao vây cấm vận' vì đây là một cách gọi tổng kết chưa xác nhận được nguyên chữ trên trang nguồn mofa.gov.vn — theo luật xác minh, chỉ giữ vai trò/chức vụ/mốc thời gian đọc thấy trực tiếp."
+    },
+    {
+      "id": "nguyen-manh-cam",
+      "ten": "Nguyễn Mạnh Cầm",
+      "lon": 105.6991,
+      "lat": 18.681,
+      "loai": "ngoai-giao",
+      "nam_hien_thi": "sinh 1929",
+      "mo_ta": "Đại sứ tại Đức (1977–1981), Liên Xô (1987–1991). Bộ trưởng Ngoại giao (08/1991–02/2000). Ký Nghị định thư cùng Ngoại trưởng Mỹ Warren Christopher chính thức thiết lập quan hệ ngoại giao Việt–Mỹ tại Hà Nội ngày 5/8/1995, cùng năm Việt Nam gia nhập ASEAN (28/7/1995). Sau đó làm Phó Thủ tướng (07/2000–08/2002).",
+      "dia_diem": "Phường Hưng Dũng, TP Vinh, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng thông tin Bộ Ngoại giao — Phó Thủ tướng, Bộ trưởng Nguyễn Mạnh Cầm (từ 08/1991 đến 02/2000) — https://mofa.gov.vn/tin-chi-tiet/chi-tiet/pho-thu-tuong-bo-truong-nguyen-manh-cam-tu-081991-den-022000--4907-167.html"
+      ]
+    },
+    {
+      "id": "nguyen-thi-binh",
+      "ten": "Nguyễn Thị Bình",
+      "lon": 108.2184,
+      "lat": 15.9017,
+      "loai": "ngoai-giao",
+      "nam_hien_thi": "sinh 1927",
+      "mo_ta": "Trưởng đoàn đàm phán của Mặt trận Dân tộc Giải phóng miền Nam Việt Nam, sau là Bộ trưởng Ngoại giao Chính phủ Cách mạng lâm thời Cộng hoà miền Nam Việt Nam (1969–1976) tại Hội nghị Paris — người phụ nữ duy nhất đặt bút ký Hiệp định Paris 27/1/1973. Sau này là Phó Chủ tịch nước (1992–2002).",
+      "dia_diem": "Làng La Kham, xã Điện Quang, thị xã Điện Bàn, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Văn phòng Chủ tịch nước — Bà Nguyễn Thị Bình — https://vpctn.gov.vn/danh-muc-trang-chu/lanh-dao-nha-nuoc/chu-tich-pho-chu-tich-qua-cac-nhiem-ky/ba-nguyen-thi-binh.html"
+      ]
+    },
+    {
+      "id": "bui-moc-dac",
+      "ten": "Bùi Mộc Đạc",
+      "lon": 106.5942,
+      "lat": 20.4031,
+      "loai": "su-than",
+      "nam_hien_thi": "1264–1326",
+      "mo_ta": "Trung thị đại phu. Đại Việt Sử Ký Toàn Thư chép: năm Bính Ngọ 1306, «sai Hàn lâm học sĩ Lê Tông Nguyên, Trung thị đại phu Bùi Mộc Đạc sang Nguyên đáp lễ» — một trong những sứ thần thời Trần được chính sử ghi tên cụ thể, mốc sớm trong lịch sử ngoại giao Đại Việt với nhà Nguyên.",
+      "dia_diem": "Làng Tri Lai, tỉnh Thái Bình cũ (nay thuộc tỉnh Hưng Yên sau sáp nhập 2025) — vị trí cụ thể trong địa giới TP Thái Bình cũ chưa xác nhận được qua nguồn",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt (trích dẫn Đại Việt Sử Ký Toàn Thư) — Sứ thần quê Thái Bình đi sứ Trung Quốc làm rạng danh Đại Việt, 2 người là Trạng nguyên, một người là bác học — https://danviet.vn/su-than-que-thai-binh-di-su-trung-quoc-ran-danh-dai-viet-2-nguoi-la-trang-nguyen-mot-la-bac-hoc-20250211124952577-d1210066.html"
+      ]
+    },
+    {
+      "id": "lai-man",
+      "ten": "Lại Mẫn",
+      "lon": 106.3293,
+      "lat": 20.4771,
+      "loai": "su-than",
+      "nam_hien_thi": "sinh 1539",
+      "mo_ta": "Chánh sứ sang nhà Minh năm 1573 phúng viếng Minh Thế Tông. Theo giai thoại lưu truyền, vua Minh Mục Tông tiếp kiến, cảm tài đã ban tấm biển «Tiến sĩ Minh triều».",
+      "dia_diem": "Xã Tân Phong, huyện Vũ Thư, tỉnh Thái Bình cũ (nay thuộc tỉnh Hưng Yên sau sáp nhập 2025)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "ghi_chu_bien_tap": "Chi tiết «ban biển Tiến sĩ Minh triều» là giai thoại thuật lại trên báo Dân Việt (báo phổ thông), chưa đối chiếu được với chính sử (Đại Việt Sử Ký Toàn Thư/Đại Nam thực lục) — năm đi sứ 1573 và vai trò chánh sứ giữ nguyên vì có ghi trong cùng nguồn.",
+      "nguon": [
+        "Báo Dân Việt — Sứ thần quê Thái Bình đi sứ Trung Quốc làm rạng danh Đại Việt, 2 người là Trạng nguyên, một người là bác học — https://danviet.vn/su-than-que-thai-binh-di-su-trung-quoc-ran-danh-dai-viet-2-nguoi-la-trang-nguyen-mot-la-bac-hoc-20250211124952577-d1210066.html"
       ]
     }
   ]
