@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Lớp bản đồ Nghĩa trang liệt sĩ · Đài tưởng niệm · Đền thờ liệt sĩ toàn Việt Nam. Phạm vi: nghĩa trang liệt sĩ cấp quốc gia/tỉnh, đài tưởng niệm và tượng đài chiến thắng, đền thờ/nhà tưởng niệm liệt sĩ, khu tưởng niệm nạn nhân các vụ thảm sát trong hai cuộc kháng chiến, chiến tranh bảo vệ biên giới và chiến tranh bảo vệ Tổ quốc. Phương pháp toạ độ: ưu tiên vị trí trung tâm xã/phường/thị trấn nơi công trình toạ lạc khi không tra được toạ độ chính xác của công trình; do_tin_cay_toa_do='cao' cho các địa danh nổi tiếng có toạ độ xác nhận qua nhiều nguồn (VD: Khâm Thiên, Bắc Sơn, A1, Sơn Mỹ, Hàng Dương, đồi D1, Thành cổ Quảng Trị); 'trung' khi biết chính xác xã/phường nhưng không có địa chỉ công trình cụ thể; 'thap' khi chỉ biết huyện/vùng hoặc thông tin định vị mỏng. Giải thích các giá trị 'loai': nghia-trang-quoc-gia (nghĩa trang liệt sĩ cấp quốc gia), nghia-trang-tinh (cấp tỉnh/huyện), dai-tuong-niem (đài tưởng niệm liệt sĩ không gắn với một trận thắng cụ thể, gồm cả di tích lịch sử nơi có đài/bia tưởng niệm), tuong-dai-chien-thang (tượng đài kỷ niệm một chiến thắng/trận đánh cụ thể), den-tho-liet-si (đền thờ/nhà tưởng niệm liệt sĩ), khu-tuong-niem-nan-nhan (khu tưởng niệm/chứng tích các vụ thảm sát dân thường). Toàn bộ mục ở trạng thái draft, chờ chủ dự án soát và duyệt.",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Báo Nhân Dân — https://nhandan.vn",
     "Thông tấn xã Việt Nam / VietnamPlus — https://www.vietnamplus.vn",
@@ -29,7 +29,17 @@
     "Cổng thông tin điện tử xã Long Hưng, tỉnh Hưng Yên",
     "Báo Thanh Hóa — https://baothanhhoa.vn",
     "Báo Hải Phòng, ANHP — https://baohaiphong.vn, https://anhp.vn",
-    "Báo Hà Tĩnh — https://baohatinh.vn"
+    "Báo Hà Tĩnh — https://baohatinh.vn",
+    "Báo Khánh Hòa — https://baokhanhhoa.vn",
+    "VOH (Đài Tiếng nói Nhân dân TP.HCM) — https://voh.com.vn",
+    "Báo Nhân Dân — https://nhandan.vn",
+    "Cổng TTĐT du lịch tỉnh Hưng Yên — https://dulich.hungyen.gov.vn",
+    "Cổng TTĐT tỉnh Đồng Nai — https://dongnai.gov.vn",
+    "Báo Pháp luật Việt Nam — https://baophapluat.vn",
+    "Báo Tin Tức TTXVN — https://baotintuc.vn",
+    "Báo Sơn La — https://baosonla.vn",
+    "Đảng bộ tỉnh Khánh Hòa — https://tinhuykhanhhoa.vn",
+    "Cổng TTĐT TP Hải Phòng (phường Tân Hưng, phường Đằng Lâm) — https://haiphong.gov.vn, https://tanhung.haiphong.gov.vn"
   ],
   "items": [
     {
@@ -1695,6 +1705,277 @@
         "Cổng TTĐT tỉnh Quảng Nam — https://quangnam.gov.vn/pho-chu-tich-ubnd-tinh-tran-anh-tuan-kiem-tra-thuc-te-tien-do-thi-cong-cai-tao-nghia-trang-liet-si-tai-huyen-duy-xuyen-61074.html"
       ],
       "trang_thai": "reviewed"
+    },
+    {
+      "id": "ntls-hon-dung-khanh-hoa",
+      "ten": "Nghĩa trang liệt sĩ Hòn Dung",
+      "lon": 109.185,
+      "lat": 12.245,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Núi Hòn Dung, TP Nha Trang, tỉnh Khánh Hòa",
+      "quy_mo": "Diện tích hơn 35.000 m²; nơi an táng gần 1.000 liệt sĩ",
+      "mo_ta": "Xây dựng từ năm 1988, qua nhiều lần tu sửa; hiện có đền thờ liệt sĩ, đài tưởng niệm, bãi đỗ xe và hệ thống cây xanh. Là nơi lãnh đạo tỉnh Khánh Hòa và các đoàn thể thường xuyên dâng hương nhân các dịp lễ lớn.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Khánh Hòa — Nghĩa trang liệt sĩ Hòn Dung: Sẽ được nâng cấp khang trang — https://baokhanhhoa.vn/xa-hoi/202203/nghia-trang-liet-si-hon-dung-se-duoc-nang-cap-khang-trang-8244753/"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tinh-ba-ria-vung-tau",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Bà Rịa – Vũng Tàu",
+      "lon": 107.1687,
+      "lat": 10.4986,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Phước Hưng, TP Hồ Chí Minh (nguyên phường Phước Hưng, TP Bà Rịa, tỉnh Bà Rịa – Vũng Tàu)",
+      "quy_mo": "Nơi yên nghỉ của hơn 3.200 liệt sĩ",
+      "mo_ta": "Là nơi lãnh đạo TP Hồ Chí Minh (địa bàn Bà Rịa – Vũng Tàu cũ) và các đoàn đại biểu thường xuyên dâng hương, tưởng niệm nhân dịp 27/7 và các ngày lễ lớn.",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Nhiều nguồn nêu số liệu số liệt sĩ khác nhau (3.269 / gần 3.500 / hơn 3.200 tuỳ bài) — giữ số liệu đã xác nhận qua trang đã mở trực tiếp (voh.com.vn), không dùng các con số chỉ thấy qua tóm tắt tìm kiếm chưa mở được trang gốc.",
+      "nguon": [
+        "VOH — Lãnh đạo TP. Hồ Chí Minh dâng hương tưởng niệm các Anh hùng liệt sĩ tại Nghĩa trang Liệt sĩ Bà Rịa - Vũng Tàu — https://voh.com.vn/thoi-su/lanh-dao-tp-ho-chi-minh-dang-huong-tuong-niem-cac-anh-hung-liet-si-tai-nghia-trang-liet-si-ba-ria-vung-tau-661346.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-da-lat-lam-dong",
+      "ten": "Nghĩa trang liệt sĩ Đà Lạt",
+      "lon": 108.4472,
+      "lat": 11.9333,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Xuân Trường, TP Đà Lạt, tỉnh Lâm Đồng",
+      "mo_ta": "Nơi tiếp nhận, an táng các hài cốt liệt sĩ được tìm kiếm, quy tập trên địa bàn; lãnh đạo tỉnh thường xuyên dâng hương nhân dịp 30/4 và các ngày lễ lớn. Riêng đợt tìm kiếm tháng 8/2026 đã đưa về an táng thêm 7 hài cốt liệt sĩ chưa xác định danh tính.",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Một số bài tổng hợp có nêu số liệu chi tiết (1.789 mộ, gồm 1.086/419/284) nhưng chưa mở được trang gốc để xác nhận — không đưa số liệu đó vào quy_mo.",
+      "nguon": [
+        "Cổng TTĐT tỉnh Lâm Đồng — Lãnh đạo tỉnh Lâm Đồng viếng Nghĩa trang Liệt sĩ Đà Lạt nhân kỷ niệm 51 năm Ngày giải phóng miền Nam — https://lamdong.gov.vn/HOME/news/hotnews/SitePages/Lanh-dao-tinh-Lam-Dong-vieng-Nghia-trang-Liet-si-Da-Lat-nhan-ky-niem-51-nam-Ngay-giai-phong-mien-Nam-3041975---3042026.aspx",
+        "Báo Nhân Dân — Lâm Đồng: Tiếp tục đưa hài cốt liệt sĩ về quy tập tại Nghĩa trang liệt sĩ Đà Lạt — https://nhandan.vn/lam-dong-tiep-tuc-dua-hai-cot-liet-si-ve-quy-tap-tai-nghia-trang-liet-si-da-lat-post984105.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtls-den-tho-liet-si-thai-binh",
+      "ten": "Đền thờ liệt sĩ Thái Bình",
+      "lon": 106.3369,
+      "lat": 20.4463,
+      "loai": "den-tho-liet-si",
+      "dia_diem": "Vườn hoa An Tập, phường Trần Hưng Đạo, tỉnh Hưng Yên (nguyên TP Thái Bình, tỉnh Thái Bình)",
+      "quy_mo": "Khuôn viên gần 2 ha; ghi danh hơn 51.000 liệt sĩ quê Thái Bình",
+      "mo_ta": "Khánh thành ngày 22/12/2015, thiết kế theo mô hình đình làng truyền thống đồng bằng sông Hồng với mái cong, gồm công trình chính thờ liệt sĩ, sân hành lễ, nhà văn bia, cổng trụ biểu, hồ bán nguyệt và cầu vào đền. Ghi danh hơn 51.000 người con quê hương Thái Bình đã hy sinh qua các cuộc kháng chiến.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Cổng TTĐT du lịch tỉnh Hưng Yên — Đền thờ liệt sĩ Thái Bình — https://dulich.hungyen.gov.vn/vi/dentholietsithaibinh"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tinh-dong-nai",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Đồng Nai",
+      "lon": 106.8747,
+      "lat": 10.9333,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Long Bình, TP Biên Hòa, tỉnh Đồng Nai",
+      "mo_ta": "Là nơi lãnh đạo tỉnh Đồng Nai thường xuyên dâng hương, dâng hoa nhân các dịp kỷ niệm lớn (27/7, 2/9, thành lập Đảng, thành lập Quân đội Nhân dân Việt Nam), đặt hoa trước Tượng đài Tổ quốc ghi công.",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Một số nguồn từng thấy ghi nghĩa trang liệt sĩ tỉnh toạ lạc tại xã Đồng Tâm, khác với phường Long Bình trong nguồn chính ở đây — đã ĐỐI CHIẾU LẠI: phường Long Bình là đúng (nguồn trực tiếp của phường Long Bình tự xác nhận đây là nghĩa trang liệt sĩ TỈNH, không phải công trình thứ hai riêng biệt). Giữ lại lịch sử đối chiếu này để không phải tra lại từ đầu nếu có mâu thuẫn tương tự phát sinh.",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Nai — Đoàn đại biểu tỉnh Đồng Nai viếng Nghĩa trang liệt sĩ tỉnh tại phường Long Bình — https://longbinh.dongnai.gov.vn/vi/news/hoat-dong-chinh-quyen-nha-nuoc/doan-dai-bieu-tinh-dong-nai-vieng-nghia-trang-liet-si-tinh-tai-phuong-long-binh-213.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-quy-nhon-gia-lai",
+      "ten": "Nghĩa trang liệt sĩ TP Quy Nhơn",
+      "lon": 109.2233,
+      "lat": 13.7757,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "TP Quy Nhơn, tỉnh Gia Lai (nguyên tỉnh Bình Định)",
+      "mo_ta": "Là nơi lãnh đạo tỉnh (địa bàn Bình Định cũ) thường xuyên tổ chức lễ dâng hoa, thắp hương nhân dịp Tết Nguyên đán, 27/7 và các ngày lễ lớn.",
+      "do_tin_cay_toa_do": "thap",
+      "ghi_chu_bien_tap": "Nội dung trên đã xác nhận qua WebFetch mở trực tiếp baophapluat.vn (lễ viếng ngày 24/1/2025). Một số bài tổng hợp khác nêu số liệu 15.000 m², xây 1990, 680 liệt sĩ, đường Lê Lợi — nhưng nguồn gốc binhdinh.gov.vn/binhdinh.dcs.vn gặp lỗi hạ tầng (SSL hết hạn/timeout) không mở được để xác nhận — không phải lỗi nội dung, chỉ chưa xác nhận lại nên không đưa số liệu đó vào quy_mo.",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — Lãnh đạo tỉnh Bình Định viếng Nghĩa trang liệt sĩ thành phố Quy Nhơn nhân dịp Tết Nguyên đán Ất Tỵ — https://baophapluat.vn/lanh-dao-tinh-binh-dinh-vieng-nghia-trang-liet-si-thanh-pho-quy-nhon-nhan-dip-tet-nguyen-dan-at-ty-post538510.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtls-duong-1c-an-giang",
+      "ten": "Đền thờ Anh hùng liệt sĩ lực lượng vũ trang nhân dân và Thanh niên xung phong hy sinh trên tuyến đường 1C",
+      "lon": 104.95,
+      "lat": 10.5667,
+      "loai": "den-tho-liet-si",
+      "dia_diem": "Xã Tân Khánh Hòa, tỉnh An Giang (nguyên huyện Giang Thành, tỉnh Kiên Giang)",
+      "quy_mo": "Diện tích hơn 7.400 m²; kinh phí khoảng 50 tỷ đồng từ nguồn xã hội hoá",
+      "mo_ta": "Khánh thành ngày 27/4/2024, tưởng niệm khoảng 400 cán bộ, chiến sĩ lực lượng vũ trang và thanh niên xung phong hy sinh trên tuyến Đường 1C giai đoạn 1966–1975 — tuyến vận tải chiến lược chi viện chiến trường Tây Nam Bộ, đã vận chuyển hơn 13.000 tấn vũ khí, đạn dược, thuốc men và hơn 30.000 lượt cán bộ, chiến sĩ. Hơn 50 người hiện vẫn chưa tìm được hài cốt.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Tin Tức TTXVN — Khánh thành Đền thờ Anh hùng liệt sĩ hy sinh trên tuyến Đường 1C — https://baotintuc.vn/thoi-su/khanh-thanh-den-tho-anh-hung-liet-si-hy-sinh-tren-tuyen-duong-1c-20240427170457065.htm"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtls-deo-pha-din-son-la",
+      "ten": "Đền thờ liệt sĩ tại Khu lịch sử – văn hóa đèo Pha Đin",
+      "lon": 103.5167,
+      "lat": 21.5667,
+      "loai": "den-tho-liet-si",
+      "dia_diem": "Bản Ải Khôm, xã Mường É, huyện Thuận Châu, tỉnh Sơn La",
+      "mo_ta": "Khởi công 28/12/2023, khánh thành giai đoạn I ngày 26/4/2024. Đèo Pha Đin là nơi hàng nghìn dân công hoả tuyến ngày đêm mở đường, vận chuyển lương thực, vũ khí phục vụ Chiến dịch Điện Biên Phủ năm 1954; khu di tích được Bộ Văn hoá, Thể thao và Du lịch công nhận di tích lịch sử cấp quốc gia năm 2020. Giai đoạn II đang tiếp tục xây dựng để hoàn thiện quần thể.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Sơn La — Khánh thành Đền thờ liệt sĩ tại Khu lịch sử - văn hóa đèo Pha Đin — https://baosonla.vn/thoi-su-chinh-tri/khanh-thanh-den-tho-liet-si-tai-khu-lich-su-van-hoa-deo-pha-din-AFbBjhBIR.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtls-cam-ranh-khanh-hoa",
+      "ten": "Đền thờ liệt sĩ tại Nghĩa trang liệt sĩ Cam Ranh",
+      "lon": 109.1591,
+      "lat": 11.9214,
+      "loai": "den-tho-liet-si",
+      "dia_diem": "TP Cam Ranh, tỉnh Khánh Hòa",
+      "quy_mo": "Diện tích hơn 150 m²; kinh phí hơn 7,6 tỷ đồng",
+      "mo_ta": "Khởi công 24/4/2023, hoàn thành 30/9/2023, khánh thành 22/12/2023. Công trình theo kiến trúc truyền thống với ngói âm dương, cột gỗ, tường gạch, gồm gian thờ chính tưởng niệm Chủ tịch Hồ Chí Minh và khu vực phụ thờ các anh hùng liệt sĩ, phục vụ giáo dục truyền thống cách mạng cho thế hệ trẻ. Kinh phí từ nguồn Pháp lệnh Ưu đãi người có công năm 2023.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Đảng bộ tỉnh Khánh Hòa — Khánh thành Đền thờ liệt sĩ tại Nghĩa trang liệt sĩ Cam Ranh — https://tinhuykhanhhoa.vn/tin-bai/chinh-tri-xa-hoi/khanh-thanh-den-tho-liet-si-tai-nghia-trang-liet-si-cam-ranh-15703"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dtls-cong-vien-van-hoa-hai-duong",
+      "ten": "Đền thờ liệt sĩ và Công viên văn hóa Hải Dương",
+      "lon": 106.3147,
+      "lat": 20.9373,
+      "loai": "den-tho-liet-si",
+      "dia_diem": "Phường Tân Hưng, TP Hải Phòng (nguyên tỉnh Hải Dương)",
+      "quy_mo": "Diện tích tổng thể khoảng 2,5 ha, gồm đền thờ (~255 m²), 2 nhà bia (~41,5 m² mỗi nhà), đài tưởng niệm (~2.230 m²) và quảng trường (~1.100 m²); tổng mức đầu tư 200 tỷ đồng",
+      "mo_ta": "Công trình thờ phụng, ghi danh các anh hùng liệt sĩ, đồng thời tạo không gian văn hoá, sinh thái, tâm linh hiện đại cho cộng đồng địa phương; được tiếp tục triển khai sau khi tỉnh Hải Dương hợp nhất vào TP Hải Phòng, thực hiện trong giai đoạn 2025–2026.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Cổng TTĐT phường Tân Hưng, TP Hải Phòng — Đền thờ liệt sĩ và công viên văn hóa Hải Dương ở phường Tân Hưng - điểm nhấn văn hóa, tâm linh — https://tanhung.haiphong.gov.vn/trang-chu-66859/den-tho-liet-si-va-cong-vien-van-hoa-hai-duong-o-phuong-tan-hung-diem-nhan-van-hoa-tam-linh-855398"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-dang-lam-hai-phong",
+      "ten": "Nghĩa trang liệt sĩ phường Đằng Lâm",
+      "lon": 106.7264,
+      "lat": 20.8611,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Đằng Lâm, quận Hải An, TP Hải Phòng",
+      "quy_mo": "Diện tích 1.470 m²; 129 mộ anh hùng liệt sĩ; tổng mức đầu tư 11 tỷ đồng",
+      "mo_ta": "Khánh thành ngày 24/7/2024, hoàn thành sớm hơn 9 tháng so với kế hoạch. Công trình gồm kỳ đài với 2 nhà bia, nâng cấp các phần mộ, hệ thống điện chiếu sáng, cấp nước và âm thanh.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Cổng TTĐT TP Hải Phòng — Quận Hải An: Khánh thành Nghĩa trang liệt sỹ phường Đằng Lâm — https://haiphong.gov.vn/chinh-sach-uu-dai-cho-nguoi-co-cong/quan-hai-an-khanh-thanh-nghia-trang-liet-sy-phuong-dang-lam-700193"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tan-huong-hai-phong",
+      "ten": "Nghĩa trang liệt sĩ Tân Hương",
+      "lon": 106.31,
+      "lat": 20.75,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Xã Vĩnh Lại, TP Hải Phòng (nguyên tỉnh Hải Dương)",
+      "quy_mo": "244 liệt sĩ an táng; tổng mức đầu tư cải tạo, nâng cấp 6,85 tỷ đồng",
+      "mo_ta": "Công trình cải tạo, nâng cấp khởi công ngày 5/10/2025, khánh thành ngày 28/1/2026, do Tập đoàn Vạn Sơn tài trợ toàn bộ kinh phí.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Cổng TTĐT xã Vĩnh Lại, TP Hải Phòng — Lễ khánh thành công trình cải tạo, nâng cấp Nghĩa trang liệt sĩ Tân Hương — https://vinhlai.haiphong.gov.vn/tin-tuc-su-kien/le-khanh-thanh-cong-trinh-cai-tao-nang-cap-nghia-trang-liet-si-tan-huong-853097"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tinh-phu-yen-dak-lak",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Phú Yên",
+      "lon": 109.3,
+      "lat": 13.0833,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Phường Phú Đông, TP Tuy Hòa, tỉnh Đắk Lắk (nguyên tỉnh Phú Yên)",
+      "quy_mo": "Hơn 6.200 liệt sĩ quê Phú Yên và từ mọi miền đất nước an táng tại đây",
+      "mo_ta": "Nghĩa trang liệt sĩ chính của địa bàn Phú Yên cũ, nơi tổ chức các hoạt động viếng thăm, tưởng niệm tập trung nhân dịp Ngày Thương binh - Liệt sĩ 27/7 hằng năm.",
+      "do_tin_cay_toa_do": "trung",
+      "nguon": [
+        "Báo Đắk Lắk (ấn bản Phú Yên) — Tháng 7 ở Nghĩa trang liệt sĩ tỉnh — https://phuyen.baodaklak.vn/400/181365/thang-7-o-nghia-trang-liet-si-tinh/"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-huong-dien-hue",
+      "ten": "Nghĩa trang liệt sĩ Hương Điền",
+      "lon": 107.35,
+      "lat": 16.65,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Khu vực phường Phong Thái, phường Hương Trà, TP Huế",
+      "quy_mo": "3.601 phần mộ liệt sĩ",
+      "mo_ta": "Nghĩa trang liệt sĩ liên vùng phục vụ khu vực Phong Điền – Hương Trà, TP Huế; các phường liền kề thường xuyên tổ chức dâng hương, viếng thăm nhân các dịp lễ lớn.",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Một số nguồn khác mô tả đây là nghĩa trang liên huyện Phong Điền – Hương Điền – Hương Trà (địa giới trước sáp nhập); bài đã mở chỉ xác nhận liên quan hai phường Phong Thái và Hương Trà.",
+      "nguon": [
+        "Huế Ngày Nay — Dâng hương tại Nghĩa trang liệt sĩ Hương Điền — https://huengaynay.vn/chinh-tri-xa-hoi/dang-huong-tai-nghia-trang-liet-si-huong-dien-165193.html"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tinh-tien-giang",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Tiền Giang",
+      "lon": 106.36,
+      "lat": 10.36,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "TP Mỹ Tho, tỉnh Đồng Tháp (nguyên tỉnh Tiền Giang)",
+      "quy_mo": "Toàn địa bàn Tiền Giang cũ có 16.768 liệt sĩ hy sinh qua các thời kỳ chiến tranh; 20 nghĩa trang liệt sĩ với 20.416 mộ và 8.076 mộ liệt sĩ nằm ngoài nghĩa trang do gia đình quản lý",
+      "mo_ta": "Sở Lao động - Thương binh và Xã hội (cũ) từng quản lý 35.495 hồ sơ liệt sĩ trên toàn địa bàn. Ban Chỉ đạo 515 tỉnh (tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ) từng phối hợp huyện Tân Phước tổ chức lễ truy điệu, an táng một hài cốt liệt sĩ tìm thấy tại ấp Kênh 2, xã Phước Lập trong quá trình thi công cao tốc Trung Lương – Mỹ Thuận, đưa về Nghĩa trang Liệt sĩ tỉnh.",
+      "do_tin_cay_toa_do": "thap",
+      "nguon": [
+        "Bộ Quốc phòng — Tiền Giang đẩy mạnh công tác tìm kiếm, quy tập hài cốt liệt sĩ — https://mod.gov.vn/en/detail?current=true&urile=wcm%3Apath%3A%2Fmod%2Fsa-mod-site%2Fsa-cdcs%2Fsa-cdcs-tt%2F38dc1d28-05d1-48df-bb15-4b60c33b5194"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tinh-tra-vinh",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Trà Vinh",
+      "lon": 106.345,
+      "lat": 9.935,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "Ấp Vĩnh Hội, xã Long Đức, TP Trà Vinh, tỉnh Vĩnh Long (nguyên tỉnh Trà Vinh)",
+      "mo_ta": "Nằm cạnh Đền thờ Bác Hồ tỉnh Trà Vinh (xây dựng bí mật đêm 10/3/1970, cách trung tâm đầu não ngụy quyền tỉnh Vĩnh Bình cũ chưa đầy 4 km). Khu nghĩa trang được xây theo hình ngôi sao năm cánh, mỗi khu mộ liệt sĩ đặt trên một cánh sao. Chủ tịch Quốc hội Vương Đình Huệ cùng đoàn công tác đã dâng hoa, dâng hương tại đây ngày 30/4/2022 nhân kỷ niệm 47 năm giải phóng miền Nam.",
+      "do_tin_cay_toa_do": "cao",
+      "nguon": [
+        "Báo Quân đội nhân dân — Chủ tịch Quốc hội dâng hương tại Đền thờ Bác Hồ, viếng nghĩa trang liệt sĩ tỉnh Trà Vinh — https://www.qdnd.vn/chinh-tri/tin-tuc/chu-tich-quoc-hoi-dang-huong-tai-den-tho-bac-ho-vieng-nghia-trang-liet-si-tinh-tra-vinh-693069"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-tinh-ben-tre",
+      "ten": "Nghĩa trang liệt sĩ tỉnh Bến Tre",
+      "lon": 106.375,
+      "lat": 10.243,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "TP Bến Tre, tỉnh Vĩnh Long (nguyên tỉnh Bến Tre)",
+      "mo_ta": "Nghĩa trang liệt sĩ chính của địa bàn Bến Tre cũ, tiếp nhận an táng cả liệt sĩ quê miền Bắc hy sinh trên chiến trường miền Nam — phân biệt với Nghĩa trang liệt sĩ TP Mỹ Tho (Tiền Giang) lân cận.",
+      "do_tin_cay_toa_do": "thap",
+      "ghi_chu_bien_tap": "Nội dung trên đã xác nhận qua tải HTML thô (curl, không qua tóm tắt công cụ) ngày 2026-08-27 từ qdnd.vn. Địa chỉ cụ thể (số 7 Cách Mạng Tháng Tám, phường An Hội) từng thấy qua tóm tắt tìm kiếm nhưng nguồn gốc bentre.gov.vn gặp lỗi hạ tầng (connection timeout) không mở được để đối chiếu — không phải lỗi nội dung, chưa xác nhận lại chi tiết địa chỉ này nên tạm không đưa vào dia_diem.",
+      "nguon": [
+        "Báo Quân đội nhân dân — Danh sách liệt sĩ hiện an táng tại Nghĩa trang Liệt sĩ tỉnh Bến Tre và TP Mỹ Tho — https://www.qdnd.vn/ban-doc/tim-mo-liet-si/danh-sach-liet-si-hien-an-tang-tai-nghia-trang-liet-si-tinh-ben-tre-va-tp-my-tho-454681"
+      ],
+      "trang_thai": "draft"
+    },
+    {
+      "id": "ntls-chien-dich-hoa-binh",
+      "ten": "Nghĩa trang liệt sĩ Chiến dịch Hòa Bình",
+      "lon": 105.338,
+      "lat": 20.817,
+      "loai": "nghia-trang-tinh",
+      "dia_diem": "TP Hòa Bình, tỉnh Phú Thọ (nguyên tỉnh Hòa Bình)",
+      "mo_ta": "Nơi an táng các liệt sĩ hy sinh trong Chiến dịch Hòa Bình (đầu tháng 11/1951 đến tháng 2/1952), khi quân Pháp mở cuộc hành binh đánh chiếm thị xã Hòa Bình nhằm cắt đứt giao thông giữa căn cứ địa Việt Bắc với Liên khu 3, Liên khu 4. Nghĩa trang có Đài tưởng niệm; ngày 6/12/2021, đoàn công tác Bộ Quốc phòng cùng Bí thư Tỉnh ủy Hòa Bình đã dâng hương tại đây nhân 70 năm Chiến dịch Hòa Bình (10/12/1951–10/12/2021).",
+      "do_tin_cay_toa_do": "trung",
+      "ghi_chu_bien_tap": "Nội dung trên đã xác nhận qua tải HTML thô (curl, không qua tóm tắt công cụ) ngày 2026-08-27 từ qdnd.vn — nội dung có thật, khớp từng chữ. Nguồn gốc baohoabinh.com.vn (nêu địa chỉ 'phường Dân Chủ') từng gặp lỗi hạ tầng (connection reset/SSL) không mở được để đối chiếu thêm chi tiết đó — không phải lỗi nội dung, chỉ chưa xác nhận lại chi tiết phụ này.",
+      "nguon": [
+        "Báo Quân đội nhân dân — Đoàn công tác Bộ Quốc phòng dâng hương tưởng niệm tại nghĩa trang liệt sĩ Chiến dịch Hòa Bình — https://www.qdnd.vn/quoc-phong-an-ninh/tin-tuc/doan-cong-tac-bo-quoc-phong-dang-huong-tuong-niem-tai-nghia-trang-liet-si-chien-dich-hoa-binh-679687"
+      ],
+      "trang_thai": "draft"
     }
   ]
 }

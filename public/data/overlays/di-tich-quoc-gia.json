@@ -1,10 +1,14 @@
 {
   "ghi_chu": "Di tích cấp quốc gia (đền/chùa/thành/hang/khảo cổ) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23. Nguồn cổng nhà nước (dsvh.gov.vn, báo Đảng tỉnh). Đã gỡ ATK Chợ Đồn + Chiến thắng Chương Thiện (trùng di-tich-qgdb). Đền thờ Bác Hồ Lương Tâm gắn cách mạng — có thể tách sang di-tich-cach-mang khi duyệt.",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Cục Di sản văn hóa (dsvh.gov.vn)",
     "Báo Đảng các tỉnh",
-    "Cổng TTĐT tỉnh"
+    "Cổng TTĐT tỉnh",
+    "Báo Thanh Niên",
+    "Báo Tin Tức (TTXVN)",
+    "Báo Xây dựng",
+    "Cổng du lịch tỉnh"
   ],
   "items": [
     {
@@ -5888,6 +5892,308 @@
       "xep_hang": "Di tích lịch sử QG (danh mục 14 di tích QG của Điện Biên, QĐ 418/QĐ-UBND)",
       "nguon": [
         "Bộ Văn hoá, Thể thao và Du lịch — «Điện Biên phê duyệt, công bố danh mục kiểm kê 49 di tích»: 14 di tích cấp quốc gia gồm Thành Bản Phủ, Thành Sam Mứn, Động Pa Thơm, Hang Chua Ta (huyện Điện Biên)… — https://bvhttdl.gov.vn/dien-bien-phe-duyet-cong-bo-danh-muc-kiem-ke-49-di-tich-20220318143030047.htm"
+      ]
+    },
+    {
+      "id": "nguc-dak-glei",
+      "ten": "Ngục Đăk Glei",
+      "lon": 107.75,
+      "lat": 15.05,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 1991 (QĐ số 2307/QĐ-BT ngày 30/12/1991)",
+      "mo_ta": "Nhà ngục do thực dân Pháp xây dựng năm 1932 tại xã Đăk Choong, huyện Đăk Glei để giam giữ thường phạm rồi tù chính trị đưa lên làm đường 14. Khu di tích đang được trùng tu, tôn tạo, hệ thống đường giao thông tới di tích đã được đầu tư xây dựng.",
+      "dia_diem": "Xã Đăk Choong, huyện Đăk Glei, tỉnh Kon Tum (nay thuộc tỉnh Quảng Ngãi)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Gia Lai điện tử — Ngục Đăk Glei — https://baogialai.com.vn/nguc-dak-glei-post245828.html"
+      ]
+    },
+    {
+      "id": "di-tich-chien-thang-plei-kan",
+      "ten": "Di tích lịch sử Chiến thắng Plei Kần",
+      "lon": 107.67,
+      "lat": 14.7,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG (năm xếp hạng chưa xác nhận)",
+      "mo_ta": "Nhà bia tưởng niệm liệt sĩ tại địa điểm chiến thắng Plei Kần, xây dựng năm 1993. Dự án tôn tạo, xây mới nhà bia trên diện tích hơn 5.000 m², tổng vốn khoảng 14 tỷ đồng, được Bộ VHTTDL cho ý kiến tại Văn bản 883/BVHTTDL-DSVH ngày 6/3/2024.",
+      "dia_diem": "Xã Đăk Xú, huyện Ngọc Hồi, tỉnh Kon Tum (nay thuộc tỉnh Quảng Ngãi)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Niên — Vận chuyển đất dự án tôn tạo di tích quốc gia ra bên ngoài — https://thanhnien.vn/van-chuyen-dat-du-an-ton-tao-di-tich-quoc-gia-ra-ben-ngoai-18525021617054385.htm"
+      ]
+    },
+    {
+      "id": "di-tich-danh-thang-mang-den",
+      "ten": "Di tích lịch sử và danh thắng Măng Đen",
+      "lon": 108.23,
+      "lat": 14.82,
+      "loai": "danh-thang",
+      "nam_hien_thi": "Di tích QG 2000 (13/4/2000)",
+      "mo_ta": "Cao nguyên ở độ cao trên 1.000m, khí hậu mát quanh năm, rừng nguyên sinh che phủ trên 80% diện tích, gắn với chiến công của quân dân Kon Plông qua hai cuộc kháng chiến. Bộ VHTTDL từng điều chỉnh khoanh vùng bảo vệ di tích do hồ sơ gốc lập năm 1998 thiếu dữ liệu chính xác.",
+      "dia_diem": "Thị trấn Măng Đen, huyện Kon Plông, tỉnh Kon Tum (nay thuộc tỉnh Quảng Ngãi)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Điều chỉnh khoanh vùng bảo vệ di tích Măng Đen — https://nhandan.vn/dieu-chinh-khoanh-vung-bao-ve-di-tich-mang-den-post865909.html"
+      ]
+    },
+    {
+      "id": "di-tich-chien-thang-dak-pek-1974",
+      "ten": "Di tích lịch sử các địa điểm Chiến thắng Đăk Pek (1974)",
+      "lon": 107.73,
+      "lat": 15.07,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 2025 (QĐ số 1311/QĐ-BVHTTDL ngày 15/5/2025)",
+      "mo_ta": "Trận đánh diễn ra ngày 15–16/5/1974, quân giải phóng tấn công và chiếm căn cứ Đăk Pek do lực lượng đặc biệt Mỹ - chính quyền Sài Gòn kiểm soát, tiêu diệt và bắt 586 tên địch, giải phóng hơn 3.000 dân.",
+      "dia_diem": "Xã Đắk Pék, huyện Đăk Glei, tỉnh Kon Tum (nay thuộc tỉnh Quảng Ngãi)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Chiến thắng Đăk Pek (1974), tỉnh Kon Tum — https://dsvh.gov.vn/chien-thang-dak-pek-1974-tinh-kon-tum-22323"
+      ]
+    },
+    {
+      "id": "di-tich-chien-dich-tay-quang-duc",
+      "ten": "Di tích lịch sử Địa điểm chiến thắng Chiến dịch Tây Quảng Đức",
+      "lon": 107.5,
+      "lat": 12.13,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 2020 (7/1/2020)",
+      "mo_ta": "Ghi dấu trận đánh đêm 31/1 rạng sáng 1/2/1974 tiêu diệt chốt Đạo Trung, tiền đề tiến tới giải phóng Buôn Ma Thuột (10/3/1975) và Gia Nghĩa (23/3/1975).",
+      "dia_diem": "Chi khu Kiến Đức, thị trấn Kiến Đức, huyện Đắk R'Lấp, tỉnh Đắk Nông (nay thuộc tỉnh Lâm Đồng)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng du lịch tỉnh Đắk Nông — Di tích lịch sử địa điểm chiến thắng Chiến dịch Tây Quảng Đức — https://dulich.daknong.gov.vn/vi/place/details/di-tich-lich-su-dia-diem-chien-thang-chien-dich-tay-quang-duc-59"
+      ]
+    },
+    {
+      "id": "nha-nguc-dak-mil",
+      "ten": "Di tích lịch sử Nhà ngục Đắk Mil",
+      "lon": 107.6,
+      "lat": 12.48,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 2005 (nguồn vênh ngày: một nguồn ghi 17/3/2005, một nguồn ghi tháng 5/2005 — chưa xác minh được số quyết định)",
+      "mo_ta": "Pháp xây dựng đầu năm 1940 trong rừng già để giam đày chiến sĩ cộng sản, trại giam gồm 9 gian, vách gỗ mái tranh, có cùm chân xiềng tay.",
+      "dia_diem": "Thôn 9A, xã Đắk Lao, huyện Đắk Mil, tỉnh Đắk Nông (nay thuộc tỉnh Lâm Đồng)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng du lịch tỉnh Đắk Nông — Nhà ngục Đắk Mil — https://dulich.daknong.gov.vn/vi/place/details/nha-nguc-dak-mil-23",
+        "Báo Đắk Nông — Di tích Nhà ngục Đắk Mil toả sáng tinh thần đấu tranh cách mạng — https://baodaknong.vn/di-tich-nha-nguc-dak-mil-toa-sang-tinh-than-dau-tranh-cach-mang-100504.html"
+      ]
+    },
+    {
+      "id": "dia-diem-phong-trao-ntrang-long",
+      "ten": "Di tích lịch sử các địa điểm về phong trào đấu tranh chống thực dân Pháp của đồng bào M'Nông do N'Trang Lơng lãnh đạo",
+      "lon": 107.28,
+      "lat": 12.25,
+      "loai": "cach-mang",
+      "nam_hien_thi": "Di tích QG 2007 (QĐ số 04/2007/QĐ-BVHTTDL ngày 27/8/2007)",
+      "mo_ta": "Địa điểm N'Trang Lơng cùng nghĩa quân người M'Nông dùng kế \"kết minh\" tiêu diệt Henri Maitre và đoàn tùy tùng Pháp năm 1914; Bu Méra từng là trung tâm kiểm soát, áp bức người M'Nông thời Pháp thuộc.",
+      "dia_diem": "Đồn Bu Méra (bon Bu Boong, xã Đắk Búk So) và Đồn Bu Nor (bon Bu Nor B, xã Đắk R'tíh), huyện Tuy Đức, tỉnh Đắk Nông (nay thuộc tỉnh Lâm Đồng)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lâm Đồng (trước là Báo Đắk Nông) — Các di tích, danh thắng được xếp hạng di tích quốc gia trên địa bàn Đắk Nông — https://baolamdong.vn/cac-di-tich-danh-thang-duoc-xep-hang-di-tich-quoc-gia-tren-dia-ban-ak-nong-137915.html"
+      ]
+    },
+    {
+      "id": "di-tich-doi-722-dak-sak",
+      "ten": "Di tích lịch sử Đồi 722 - Đắk Sắk",
+      "lon": 107.58,
+      "lat": 12.45,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 2012 (24/10/2012)",
+      "mo_ta": "Nguyên là căn cứ biệt kích Mỹ - chính quyền Sài Gòn lập năm 1965; bộ đội chủ lực và lực lượng địa phương đánh chiếm căn cứ đêm 22–23/8/1968. Khu di tích rộng gần 4ha, phục dựng từ năm 2010.",
+      "dia_diem": "Thôn Thổ Hoàng 4, xã Đắk Sắk, huyện Đắk Mil, tỉnh Đắk Nông (nay thuộc tỉnh Lâm Đồng)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đắk Nông — Đồi 722 - Đắk Sắk — https://daknong.gov.vn/di-tich-lich-su/doi-722-dak-sak-353427",
+        "Báo Đắk Nông — Di tích Đồi 722 - Đắk Sắk, nơi giáo dục lòng yêu nước — https://baodaknong.vn/di-tich-doi-722-dak-sak-noi-giao-duc-long-yeu-nuoc-100352.html"
+      ]
+    },
+    {
+      "id": "diem-luu-niem-ntrang-guh",
+      "ten": "Điểm lưu niệm N'Trang Gưh",
+      "lon": 107.95,
+      "lat": 12.58,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 2012 (ngày công bố có nguồn vênh nhau, chưa xác minh số quyết định)",
+      "mo_ta": "Lưu giữ mộ, buôn làng, ruộng nương và căn cứ của N'Trang Gưh (tên thật Y Gưh H'Đớk, người Êđê Bih), người lãnh đạo hơn 600 nghĩa quân từ 20 buôn chống quân Xiêm (1884–1887) và chống Pháp (1900–1914), hy sinh sau 13 năm kháng chiến. Nguồn có vênh ngày công bố xếp hạng: một báo ghi 23/5/2012, một nguồn khác ghi 2/8/2011 — chưa xác minh được số quyết định chính thức.",
+      "dia_diem": "Buôn Choáh, xã Buôn Choáh, huyện Krông Nô, tỉnh Đắk Nông (nay thuộc tỉnh Lâm Đồng)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tin Tức (TTXVN) — Điểm lưu niệm N'Trang Gưh được xếp hạng di tích lịch sử cấp quốc gia — https://baotintuc.vn/dan-toc-mien-nui/diem-luu-niem-ntrang-guh-duoc-xep-hang-di-tich-lich-su-cap-quoc-gia-20120523090647343.htm"
+      ]
+    },
+    {
+      "id": "nui-lua-nam-blang",
+      "ten": "Danh thắng Núi lửa Nâm B'Lang",
+      "lon": 107.97,
+      "lat": 12.57,
+      "loai": "danh-thang",
+      "nam_hien_thi": "Danh thắng QG 2024 (QĐ số 611/QĐ-BVHTTDL ngày 12/3/2024)",
+      "mo_ta": "Núi lửa dạng nón cụt (còn gọi Chư B'Luk/Chư R'Luh), hình thành qua nhiều pha phun trào cách nay khoảng 0,61–0,20 triệu năm. Miệng núi hình phễu với khe thoát dòng dung nham về phía Tây Nam, chứa nhiều sản phẩm núi lửa điển hình như đá basalt, tro, bom lava.",
+      "dia_diem": "Xã Buôn Choah và xã Nam Đà, huyện Krông Nô, tỉnh Đắk Nông (nay thuộc tỉnh Lâm Đồng)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Núi lửa Nâm B'Lang, tỉnh Đắk Nông — https://dsvh.gov.vn/nui-lua-nam-b%E2%80%99lang-tinh-dak-nong-22319"
+      ]
+    },
+    {
+      "id": "hang-na-mo",
+      "ten": "Di tích khảo cổ học Hang Nà Mò",
+      "lon": 105.95,
+      "lat": 22.45,
+      "loai": "khao-co",
+      "nam_hien_thi": "Di tích khảo cổ QG 2020 (QĐ số 42/QĐ-BVHTTDL ngày 7/1/2020)",
+      "mo_ta": "Hang lớn trên sườn núi đá vôi, cửa hang cao khoảng 15m, gồm hai buồng trong-ngoài. Khai quật phát hiện 4 mộ táng, 3 bếp lửa, 272 hiện vật đá, 4 công cụ xương, 4 mảnh gốm; xếp vào giai đoạn muộn văn hóa Hòa Bình - Bắc Sơn, niên đại khoảng 6.000–5.000 năm cách nay.",
+      "dia_diem": "Thôn Nà Cà, xã Hương Nê, huyện Ngân Sơn, tỉnh Bắc Kạn (nay thuộc tỉnh Thái Nguyên)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Hang Nà Mò, tỉnh Bắc Kạn — https://dsvh.gov.vn/hang-na-mo-tinh-bac-kan-3461"
+      ]
+    },
+    {
+      "id": "di-tich-cach-mang-na-tu",
+      "ten": "Di tích lịch sử - truyền thống cách mạng Nà Tu",
+      "lon": 105.85,
+      "lat": 22.2,
+      "loai": "cach-mang",
+      "nam_hien_thi": "Di tích QG 1996 (18/3/1996 theo Cổng du lịch Thái Nguyên; chưa xác minh được số quyết định)",
+      "mo_ta": "Nơi Chủ tịch Hồ Chí Minh đến thăm Đội Thanh niên xung phong 312 làm nhiệm vụ bảo vệ đoạn đường Nà Cù - Phủ Thông, giữ mạch giao thông cho căn cứ Việt Bắc.",
+      "dia_diem": "Xã Cẩm Giàng, huyện Bạch Thông, tỉnh Bắc Kạn (nay thuộc tỉnh Thái Nguyên)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng du lịch tỉnh Thái Nguyên — Di tích lịch sử Quốc gia Nà Tu - Sáng mãi tinh thần Thanh niên Việt Nam — http://thainguyentourism.vn/vi/news/Tin-tuc/Di-tich-lich-su-Quoc-gia-Na-Tu-Sang-mai-tinh-than-Thanh-nien-Viet-Nam-1663.html"
+      ]
+    },
+    {
+      "id": "ben-au-lau",
+      "ten": "Di tích lịch sử Bến Âu Lâu",
+      "lon": 104.87,
+      "lat": 21.72,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 2012 (QĐ số 3027/QĐ-BVHTTDL ngày 7/8/2012)",
+      "mo_ta": "Bến sông Thao (sông Hồng), giai đoạn 1951–1954 là điểm trung chuyển hàng chục nghìn tấn vũ khí, đạn dược, lương thực và hàng trăm nghìn lượt người qua sông, góp phần vào chiến thắng Điện Biên Phủ. Dự án tu bổ khoảng 15 tỷ đồng nhân kỷ niệm 70 năm Điện Biên Phủ (2024).",
+      "dia_diem": "Xã Âu Lâu, thành phố Yên Bái, tỉnh Yên Bái (nay thuộc tỉnh Lào Cai)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Xây dựng — Yên Bái: công trình tu bổ di tích lịch sử Bến Âu Lâu chào mừng kỷ niệm 70 năm chiến thắng Điện Biên Phủ — https://baoxaydung.vn/yen-bai-cong-trinh-tu-bo-di-tich-lich-su-ben-au-lau-chao-mung-ky-niem-70-nam-chien-thang-dien-bien-phu-1926868374084.htm"
+      ]
+    },
+    {
+      "id": "dong-tien-ham-yen",
+      "ten": "Danh thắng Động Tiên",
+      "lon": 105.03,
+      "lat": 22.15,
+      "loai": "danh-thang",
+      "nam_hien_thi": "Di tích QG (năm chưa xác nhận — nguồn vênh 1991/2005)",
+      "mo_ta": "Quần thể hang động đá vôi gồm nhiều động nhỏ. Cổng TTĐT tỉnh xác nhận đây là \"Di tích danh thắng Quốc gia\" nhưng không nêu năm xếp hạng cụ thể; các nguồn khác đưa ra hai năm khác nhau (1991 và 2005) — chưa xác minh được năm/số quyết định chính xác.",
+      "dia_diem": "Xã Yên Phú, huyện Hàm Yên, tỉnh Tuyên Quang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Tuyên Quang — Khám phá Động Tiên, Hàm Yên — https://www.tuyenquang.gov.vn/vi/post/kham-pha-dong-tien-ham-yen?type=NEWS&id=32764"
+      ]
+    },
+    {
+      "id": "di-tich-nguom-slua",
+      "ten": "Di tích Ngườm Slưa",
+      "lon": 106.2,
+      "lat": 22.72,
+      "loai": "cach-mang",
+      "nam_hien_thi": "Di tích QG 1995",
+      "mo_ta": "Nơi in báo \"Cờ Đỏ\" (1932–1933), địa điểm hoạt động cách mạng giai đoạn 1932–1936 tại huyện Hòa An.",
+      "dia_diem": "Xã Hoàng Tung, huyện Hòa An, tỉnh Cao Bằng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cao Bằng — Khám phá những điểm dừng chân lý thú ở Hòa An — https://baocaobang.vn/Kham-pha-nhung-diem-dung-chan-ly-thu-o-Hoa-An-5376.html"
+      ]
+    },
+    {
+      "id": "di-tich-thanh-na-lu",
+      "ten": "Di tích Thành Nà Lữ",
+      "lon": 106.22,
+      "lat": 22.73,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 1995",
+      "mo_ta": "Kinh đô nhà Mạc thế kỷ 16–17 tại vùng Hòa An, Cao Bằng.",
+      "dia_diem": "Huyện Hòa An, tỉnh Cao Bằng (chưa xác định xã cụ thể)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cao Bằng — Khám phá những điểm dừng chân lý thú ở Hòa An — https://baocaobang.vn/Kham-pha-nhung-diem-dung-chan-ly-thu-o-Hoa-An-5376.html"
+      ]
+    },
+    {
+      "id": "di-tich-nguom-boc",
+      "ten": "Di tích Ngườm Bốc (Hang Khô)",
+      "lon": 106.15,
+      "lat": 22.68,
+      "loai": "cach-mang",
+      "nam_hien_thi": "Di tích QG 2004",
+      "mo_ta": "Hang gắn với hoạt động cách mạng của Chủ tịch Hồ Chí Minh năm 1942, đồng thời có dấu tích cư trú của người tiền sử niên đại khoảng 10.000 năm.",
+      "dia_diem": "Thôn Lam Sơn, xã Hồng Việt, huyện Hòa An, tỉnh Cao Bằng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cao Bằng — Khám phá những điểm dừng chân lý thú ở Hòa An — https://baocaobang.vn/Kham-pha-nhung-diem-dung-chan-ly-thu-o-Hoa-An-5376.html"
+      ]
+    },
+    {
+      "id": "khu-mo-den-tho-luong-van-chanh",
+      "ten": "Khu mộ và đền thờ Lương Văn Chánh",
+      "lon": 109.2,
+      "lat": 13.12,
+      "loai": "lich-su",
+      "nam_hien_thi": "Di tích QG 1996 (27/9/1996)",
+      "mo_ta": "Lương Văn Chánh có công khai khẩn, mở đất Phú Yên thời Nguyễn. Mộ và đền được nhân dân lập từ khoảng những năm 1630, hiện lưu giữ 12 đạo sắc phong từ 1689 đến 1909. Năm 2009 tỉnh triển khai dự án trùng tu, mở rộng.",
+      "dia_diem": "Thôn Long Phụng 1, xã Hòa Trị, huyện Phú Hòa, tỉnh Phú Yên (nay thuộc tỉnh Đắk Lắk)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Phú Yên (mirror Báo Đắk Lắk sau sáp nhập) — Danh nhân Lương Văn Chánh trong tâm thức người dân Phú Yên — https://phuyen.baodaklak.vn/94/281333/danh-nhan-luong-van-chanh-trong-tam-thuc-nguoi-dan-phu-yen.html"
+      ]
+    },
+    {
+      "id": "thac-cau-may-cong-troi",
+      "ten": "Thác Cầu Mây - Cổng Trời",
+      "lon": 103.58,
+      "lat": 22.42,
+      "loai": "danh-thang",
+      "nam_hien_thi": "Di tích QG (năm chưa xác nhận)",
+      "mo_ta": "Thác nước nằm trong khu vực đèo Hoàng Liên (Cổng Trời), giáp ranh Sa Pa.",
+      "dia_diem": "Xã Sơn Bình, huyện Tam Đường, tỉnh Lai Châu",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Lai Châu — Lai Châu có 05 Di tích xếp hạng Quốc gia — https://laichau.gov.vn/danh-muc/hoat-dong-trong-tinh/tin-ubnd/lai-chau-co-05-di-tich-xep-hang-quoc-gia.html"
+      ]
+    },
+    {
+      "id": "danh-thang-dray-sap-gia-long",
+      "ten": "Danh thắng Đray Sáp - Gia Long",
+      "lon": 107.99,
+      "lat": 12.58,
+      "loai": "danh-thang",
+      "nam_hien_thi": "Danh thắng QG (năm xếp hạng có nguồn vênh nhau: 1991/1999, chưa xác minh)",
+      "mo_ta": "Cụm thác trên sông Sêrêpốk, thác Đray Sáp cao khoảng 50m dài 100m; tên tiếng Êđê nghĩa là \"thác khói\". Nguồn tổng hợp của tỉnh xác nhận cụm thác nằm trong danh sách di tích quốc gia, nhưng năm xếp hạng cụ thể có nguồn vênh nhau (một nguồn ghi thác Đray Sáp 1991, thác Gia Long ở thượng nguồn xếp hạng riêng 1999) — chưa xác minh được đây là một quyết định gộp hay hai quyết định tách biệt.",
+      "dia_diem": "Xã Đắk Sôr, huyện Krông Nô, tỉnh Đắk Nông (nay thuộc tỉnh Lâm Đồng)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lâm Đồng (trước là Báo Đắk Nông) — Các di tích, danh thắng được xếp hạng di tích quốc gia trên địa bàn Đắk Nông — https://baolamdong.vn/cac-di-tich-danh-thang-duoc-xep-hang-di-tich-quoc-gia-tren-dia-ban-ak-nong-137915.html"
       ]
     }
   ]

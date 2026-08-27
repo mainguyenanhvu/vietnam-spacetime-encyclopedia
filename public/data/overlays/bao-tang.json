@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Bảo tàng lịch sử – văn hoá – nghệ thuật quan trọng của Việt Nam (thiết chế công lập). Ưu tiên bảo tàng giữ bảo vật quốc gia hoặc toà nhà có giá trị lịch sử. Bảo tàng là thực thể riêng, được phép trùng toạ độ với di tích/lễ hội đã có (vd Bảo tàng Quang Trung ↔ Lễ hội Đống Đa – Tây Sơn). KHÔNG dùng Wikipedia. ── ĐỢT 2026-08-26: +7 bảo tàng. Danh sách lấy từ DANH BẠ BẢO TÀNG của Cục Di sản văn hoá (baotang.dsvh.gov.vn) cùng cổng TTĐT tỉnh và Bộ Quốc phòng. Toạ độ lấy từ POI tourism=museum của OpenStreetMap, qua hai cửa kiểm: tên bảo tàng phải khớp trong display_name, và điểm phải rơi ĐÚNG tỉnh (point-in-polygon trên vn-63-tinh-truoc-2025). Đo được 7/10 qua cửa — 3 tấm trượt để lại chứ không nới cửa.",
-  "ngay_cap_nhat": "2026-08-26",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Website chính thức các bảo tàng công lập (.vn)",
     "Cục Di sản văn hóa (Bộ VHTTDL) — dsvh.gov.vn"
@@ -409,6 +409,231 @@
       "trang_thai": "draft",
       "nguon": [
         "Cổng thông tin Bảo tàng Ninh Bình (baotangtinh.ninhbinh.gov.vn) — https://baotangtinh.ninhbinh.gov.vn/home.htm"
+      ]
+    },
+    {
+      "id": "bao-tang-quang-ninh",
+      "ten": "Bảo tàng Quảng Ninh",
+      "lon": 107.06,
+      "lat": 20.953,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Hoàn thành tháng 10/2013",
+      "mo_ta": "Bảo tàng – Thư viện tỉnh Quảng Ninh, khối kiến trúc kính đen hình lập phương bên bờ vịnh Hạ Long tại phường Hồng Hải, TP Hạ Long, do kiến trúc sư Tây Ban Nha Salvador Perez Arroyo thiết kế lấy cảm hứng từ than đá — khoáng sản đặc trưng của vùng. Công trình hoàn thành tháng 10/2013, sử dụng 14.000 m2 kính bán cường lực chống nứt vỡ do thay đổi nhiệt độ, mặt kính phản chiếu như một tấm gương khổng lồ soi bóng di sản Vịnh Hạ Long. Từ năm 2015 đến nay bảo tàng đã đón hơn 1,2 triệu lượt khách trong và ngoài nước; đây cũng là bảo tàng tổng hợp cấp tỉnh đầu tiên trong cả nước chủ động nguồn thu và thực hiện cơ chế tự chủ tài chính 100%.",
+      "dia_diem": "Phường Hồng Hải, TP Hạ Long, tỉnh Quảng Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Quảng Ninh — Bảo tàng, Thư viện Quảng Ninh - kiệt tác bên bờ di sản — https://www.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=95482"
+      ]
+    },
+    {
+      "id": "bao-tang-da-nang",
+      "ten": "Bảo tàng Đà Nẵng",
+      "lon": 108.223,
+      "lat": 16.068,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Khánh thành 28/3/2025",
+      "mo_ta": "Bảo tàng Đà Nẵng khánh thành ngày 28/3/2025 tại các khối nhà số 42–44 Bạch Đằng và 31 Trần Phú — nguyên là Toà Đốc lý (Đà Nẵng) xây dựng cuối thập niên 1890 thời Pháp thuộc — với tổng mức đầu tư 504,9 tỷ đồng. Công trình kết hợp bảo tồn kiến trúc lịch sử với các khối xây mới theo ngôn ngữ hiện đại. Trưng bày gần 3.000 tài liệu, hiện vật chọn lọc từ 27.000 tài liệu, kết hợp công nghệ 3D Mapping và phim 3D, giới thiệu 9 chuyên đề từ lịch sử đô thị đến đa dạng văn hoá Đà Nẵng.",
+      "dia_diem": "42–44 Bạch Đằng và 31 Trần Phú, TP Đà Nẵng",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bảo tàng Đà Nẵng - biểu tượng của lịch sử và văn hóa Đà Nẵng — https://nhandan.vn/bao-tang-da-nang-bieu-tuong-cua-lich-su-va-van-hoa-da-nang-post868257.html"
+      ]
+    },
+    {
+      "id": "bao-tang-phu-nu-nam-bo",
+      "ten": "Bảo tàng Phụ nữ Nam Bộ",
+      "lon": 106.6934,
+      "lat": 10.7855,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 29/4/1985",
+      "mo_ta": "Bảo tàng chuyên đề về lịch sử, văn hoá và truyền thống đấu tranh của phụ nữ Nam Bộ. Tiền thân là Nhà truyền thống Phụ nữ Nam Bộ, do Tổ sử Phụ nữ Nam Bộ thành lập ngày 29/4/1985; các thành viên Tổ sử đã vận động quyên góp tư liệu, hình ảnh, hiện vật từ phụ nữ và các tổ chức khắp các tỉnh Nam Bộ để xây dựng ngôi nhà chung, sau phát triển thành Bảo tàng Phụ nữ Nam Bộ ngày nay.",
+      "dia_diem": "202 Võ Thị Sáu, phường Võ Thị Sáu (Quận 3 cũ), TP Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bảo tàng Phụ nữ Nam Bộ kỷ niệm 40 năm thành lập — https://nhandan.vn/bao-tang-phu-nu-nam-bo-ky-niem-40-nam-thanh-lap-post873476.html"
+      ]
+    },
+    {
+      "id": "bao-tang-ton-duc-thang",
+      "ten": "Bảo tàng Tôn Đức Thắng",
+      "lon": 106.7057,
+      "lat": 10.7822,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 1988; toà nhà mới khánh thành 3/1/2025",
+      "mo_ta": "Bảo tàng lưu niệm về cuộc đời và sự nghiệp Chủ tịch Tôn Đức Thắng, thành lập năm 1988 nhân kỷ niệm 100 năm ngày sinh của ông, ban đầu mang tên \"Nhà trưng bày cuộc đời và sự nghiệp Chủ tịch Tôn Đức Thắng\", đến năm 1990 được Bộ Văn hoá, Thể thao và Du lịch đổi tên chính thức thành Bảo tàng Tôn Đức Thắng. Ngày 30/10/2019, UBND TP Hồ Chí Minh phê duyệt dự án xây dựng toà nhà bảo tàng mới; công trình khánh thành và mở cửa đón khách ngày 3/1/2025, nhân kỷ niệm 50 năm ngày thống nhất đất nước, với khoảng 2.000 m2 không gian trưng bày qua nhiều tầng.",
+      "dia_diem": "5 Tôn Đức Thắng, phường Bến Nghé (Quận 1 cũ), TP Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Khánh thành công trình Bảo tàng Tôn Đức Thắng — https://nhandan.vn/khanh-thanh-cong-trinh-bao-tang-ton-duc-thang-post854019.html"
+      ]
+    },
+    {
+      "id": "bao-tang-biet-dong-sai-gon-gia-dinh",
+      "ten": "Bảo tàng Biệt động Sài Gòn – Gia Định",
+      "lon": 106.7025,
+      "lat": 10.789,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Chính thức thành lập 27/8/2023",
+      "mo_ta": "Bảo tàng ngoài công lập, ngày 27/8/2023 chính thức nhận quyết định trở thành bảo tàng ngoài công lập của Thành phố Hồ Chí Minh, chịu sự quản lý của Nhà nước và chính quyền địa phương, thuộc sở hữu của gia đình Anh hùng Lực lượng vũ trang nhân dân Trần Văn Lai. Địa điểm trước đây thuộc nghiệp đoàn Ngọc Quế, từng là cơ sở bí mật của lực lượng Biệt động Sài Gòn – Gia Định.",
+      "dia_diem": "Quận 1 cũ, TP Hồ Chí Minh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bảo tàng Biệt động Sài Gòn - Gia Định chính thức hoạt động — https://nhandan.vn/bao-tang-biet-dong-sai-gon-gia-dinh-chinh-thuc-hoat-dong-post769577.html"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-gia-lai",
+      "ten": "Bảo tàng tỉnh Gia Lai",
+      "lon": 108,
+      "lat": 13.9833,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Hợp nhất theo Quyết định 587/QĐ-UBND ngày 18/12/2018",
+      "mo_ta": "Bảo tàng tỉnh Gia Lai hiện nay được thành lập trên cơ sở hợp nhất Bảo tàng tỉnh với Bảo tàng Hồ Chí Minh chi nhánh Gia Lai – Kon Tum theo Quyết định số 587/QĐ-UBND ngày 18/12/2018 của UBND tỉnh Gia Lai. Bảo tàng Hồ Chí Minh chi nhánh Gia Lai – Kon Tum vốn ra đời từ ngày 19/5/1984 dưới hình thức nhà trưng bày về cuộc đời và hoạt động cách mạng của Chủ tịch Hồ Chí Minh, được công nhận chính thức năm 1988. Bảo tàng trưng bày hiện vật về văn hoá các dân tộc Tây Nguyên và lịch sử đấu tranh cách mạng vùng đất Gia Lai.",
+      "dia_diem": "TP Pleiku, tỉnh Gia Lai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Gia Lai điện tử (baogialai.com.vn) — Bảo tàng tỉnh Gia Lai — https://baogialai.com.vn/bao-tang-tinh-gia-lai-post192305.html"
+      ]
+    },
+    {
+      "id": "bao-tang-dia-chat-viet-nam",
+      "ten": "Bảo tàng Địa chất Việt Nam",
+      "lon": 105.8531,
+      "lat": 21.0287,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Xây dựng 1914; mở cửa công chúng 1919",
+      "mo_ta": "Bảo tàng chuyên ngành lưu giữ, trưng bày mẫu vật địa chất và khoáng sản Việt Nam, hiện thuộc hệ thống của Bộ Nông nghiệp và Môi trường tại số 6 Phạm Ngũ Lão, Hà Nội. Toà nhà bảo tàng được xây dựng năm 1914 (khi đó là một toà nhà một tầng diện tích 400 m2), chính thức mở cửa phục vụ công chúng từ năm 1919, sau này được nâng cấp lên 1.200 m2 với 3 tầng. Trong giai đoạn 1919–1928, bảo tàng thu thập được khoảng 5.000 mẫu vật khoáng vật, đá, cổ sinh vật (hoá thạch) và mẫu địa chất ứng dụng.",
+      "dia_diem": "6 Phạm Ngũ Lão, phường Phan Chu Trinh (Hoàn Kiếm cũ), TP Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Người Hà Nội (nguoihanoi.vn) — Bảo tàng Địa chất (quận Hoàn Kiếm) — https://nguoihanoi.vn/bao-tang-dia-chat-quan-hoan-kiem-78509.html"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-an-giang",
+      "ten": "Bảo tàng tỉnh An Giang",
+      "lon": 105.435,
+      "lat": 10.386,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Toà nhà xây 1911; công nhận di tích kiến trúc quốc gia 1990",
+      "mo_ta": "Bảo tàng tỉnh An Giang đặt trong một ngôi nhà cổ của địa chủ phong kiến, xây dựng năm 1911, diện tích khoảng 2.000 m2. Năm 1990, Bộ Văn hoá, Thể thao và Du lịch công nhận đây là di tích kiến trúc nghệ thuật cấp quốc gia. Bảo tàng hiện lưu giữ trên 22.000 hiện vật, hình ảnh, tư liệu, chia thành 6 chuyên đề trưng bày gồm văn hoá Óc Eo, lịch sử An Giang và hiện vật khai quật từ các tàu cổ bị đắm.",
+      "dia_diem": "TP Long Xuyên, tỉnh An Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo An Giang Online (baoangiang.com.vn) — Bảo tàng An Giang, nét xưa giữa phố — https://baoangiang.com.vn/bao-tang-an-giang-net-xua-giua-pho-a424938.html"
+      ]
+    },
+    {
+      "id": "bao-tang-tong-hop-binh-dinh",
+      "ten": "Bảo tàng Tổng hợp Bình Định",
+      "lon": 109.223,
+      "lat": 13.775,
+      "loai": "bao-tang",
+      "nam_hien_thi": "",
+      "mo_ta": "Bảo tàng tỉnh, diện tích trưng bày gần 1.000 m2 chia làm 5 phòng theo các chủ đề: văn hoá Bình Định, gốm Champa, điêu khắc Champa và các cuộc kháng chiến chống ngoại xâm, cùng khu trưng bày ngoài trời. Bảo tàng hiện lưu giữ khoảng 15.000 hiện vật; riêng năm 2017 đã sưu tầm thêm 119 hiện vật văn hoá nghệ thuật bài chòi và đón 17.431 lượt khách tham quan, trong đó 450 lượt khách quốc tế.",
+      "dia_diem": "TP Quy Nhơn, tỉnh Bình Định",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Văn hoá, Thể thao và Du lịch (bvhttdl.gov.vn) — Bảo tàng Tổng hợp tỉnh Bình Định sưu tầm hơn 100 hiện vật — https://bvhttdl.gov.vn/bao-tang-tong-hop-tinh-binh-dinh-suu-tam-hon-100-hien-vat-620156.htm"
+      ]
+    },
+    {
+      "id": "bao-tang-hai-phong",
+      "ten": "Bảo tàng Hải Phòng",
+      "lon": 106.684,
+      "lat": 20.858,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Xây dựng 1919",
+      "mo_ta": "Bảo tàng thành phố Hải Phòng, đặt trong công trình kiến trúc kiểu gôtích xây dựng từ năm 1919. Các phòng trưng bày giới thiệu thiên nhiên Hải Phòng, lịch sử từ thời tiền sử đến thế kỷ XIV, quá trình phát triển thành phố cảng, phong trào yêu nước và kháng chiến, giai đoạn thống nhất – đổi mới, cùng bản sắc văn hoá truyền thống địa phương. Hiện vật tiêu biểu gồm đồ gốm sứ cổ và hiện đại, súng thần công, bia ký, máy bay MIG-17 và tàu rà phá thuỷ lôi của Hải quân nhân dân Việt Nam.",
+      "dia_diem": "TP Hải Phòng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT TP Hải Phòng — Bảo tàng Hải Phòng — https://haiphong.gov.vn/Hai-Phong-Thanh-Pho-Toi-Yeu/Bao-tang-Hai-Phong-15660"
+      ]
+    },
+    {
+      "id": "bao-tang-hai-quan",
+      "ten": "Bảo tàng Hải quân",
+      "lon": 106.68,
+      "lat": 20.75,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 4/1/1975",
+      "mo_ta": "Bảo tàng chuyên ngành của Quân chủng Hải quân, thành lập ngày 4/1/1975, trưng bày lịch sử hình thành và chiến đấu của Hải quân nhân dân Việt Nam qua các thời kỳ, gồm hiện vật, vũ khí, mô hình tàu chiến và tư liệu về các chiến dịch, trận đánh trên biển.",
+      "dia_diem": "Km 0, đường 353, phường Anh Dũng (quận Dương Kinh cũ), TP Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT TP Hải Phòng — Bảo tàng Hải quân — https://lichsudangbo.haiphong.gov.vn/bao-tang--nha-truyen-thong/bao-tang-hai-quan-2953"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-son-la",
+      "ten": "Bảo tàng tỉnh Sơn La",
+      "lon": 103.9,
+      "lat": 21.327,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 2/3/1985",
+      "mo_ta": "Bảo tàng tỉnh Sơn La thành lập theo Quyết định số 124/QĐ-TC ngày 2/3/1985 của UBND tỉnh Sơn La, ban đầu gồm Ban Giám đốc, một phòng Tổ chức hành chính và năm tổ nghiệp vụ với 17 cán bộ, viên chức. Năm 2025 bảo tàng kỷ niệm 40 năm xây dựng và trưởng thành. Bảo tàng lưu giữ hiện vật về văn hoá các dân tộc Tây Bắc và lịch sử cách mạng gắn với vùng đất Sơn La.",
+      "dia_diem": "TP Sơn La, tỉnh Sơn La",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Sơn La (vhttdl.sonla.gov.vn) — Bảo tàng tỉnh Sơn La 40 năm xây dựng và trưởng thành — https://vhttdl.sonla.gov.vn/di-san/bao-tang-tinh-son-la-40-nam-xay-dung-va-truong-thanh-912013"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-lao-cai",
+      "ten": "Bảo tàng tỉnh Lào Cai",
+      "lon": 103.973,
+      "lat": 22.485,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Hoạt động tại trụ sở hiện nay từ 2016",
+      "mo_ta": "Bảo tàng tỉnh Lào Cai hoạt động tại toà nhà ở khu trung tâm hành chính tỉnh từ năm 2016. Bảo tàng đã hợp tác với các chuyên gia vùng Nouvelle-Aquitaine (Pháp) hiện đại hoá không gian trưng bày, tổ chức các hoạt động giáo dục trải nghiệm cho học sinh (như làm xôi ngũ sắc, viết chữ Dao), và thành lập phòng Giáo dục – Truyền thông năm 2021. Bảo tàng trưng bày các sưu tập về văn hoá các dân tộc thiểu số vùng biên giới Tây Bắc.",
+      "dia_diem": "TP Lào Cai, tỉnh Lào Cai",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lào Cai điện tử (baolaocai.vn) — Bảo tàng tỉnh và nỗ lực đổi mới — https://baolaocai.vn/bao-tang-tinh-va-no-luc-doi-moi-post384234.html"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-ba-ria-vung-tau",
+      "ten": "Bảo tàng – Thư viện tỉnh Bà Rịa – Vũng Tàu",
+      "lon": 107.084,
+      "lat": 10.346,
+      "loai": "bao-tang",
+      "nam_hien_thi": "",
+      "mo_ta": "Bảo tàng tỉnh Bà Rịa – Vũng Tàu, hoạt động cùng hệ thống thư viện tỉnh, có chi nhánh trưng bày tại Côn Đảo. Bảo tàng tổ chức nhiều triển lãm chuyên đề như \"Tổ quốc nhìn từ biển\" và phối hợp với các đơn vị văn hoá địa phương giới thiệu lịch sử, di tích và truyền thống đấu tranh cách mạng của tỉnh.",
+      "dia_diem": "Tỉnh Bà Rịa – Vũng Tàu",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa-Vũng Tàu, tin tức, hình ảnh — https://nhandan.vn/ba-ria-vung-tau-tag6932.html"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-khanh-hoa",
+      "ten": "Bảo tàng tỉnh Khánh Hoà",
+      "lon": 109.196,
+      "lat": 12.245,
+      "loai": "bao-tang",
+      "nam_hien_thi": "",
+      "mo_ta": "Bảo tàng tỉnh Khánh Hoà đặt tại số 16 Trần Phú, TP Nha Trang, trưng bày hiện vật, tư liệu về lịch sử, văn hoá và các dân tộc vùng duyên hải Nam Trung Bộ.",
+      "dia_diem": "16 Trần Phú, TP Nha Trang, tỉnh Khánh Hoà",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Khánh Hoà (dukhach.khanhhoa.gov.vn) — Bảo tàng tỉnh Khánh Hòa — https://dukhach.khanhhoa.gov.vn/vi/bao-tang-thu-vien/bao-tang-tinh-khanh-hoa"
       ]
     }
   ]

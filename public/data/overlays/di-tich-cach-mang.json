@@ -1,8 +1,22 @@
 {
   "ghi_chu": "Di tích lịch sử cách mạng · kháng chiến (nhà tù, căn cứ, địa đạo, bến bãi) chưa có trong CSDL — bổ sung ngoài các sự kiện/chiến dịch đã có (Điện Biên Phủ, Địa đạo Củ Chi, Pác Bó, Tân Trào, ATK Định Hóa, Côn Đảo, Sơn La, Phú Quốc, Hiền Lương, Kim Liên... đã có lớp khác). Toạ độ theo cấp xã/huyện nơi chưa xác định chính xác điểm di tích. KHÔNG dùng Wikipedia — chỉ dùng cổng nhà nước/tỉnh và Cục Di sản văn hóa (dsvh.gov.vn). [Tách lại 2026-07-26: 11 mục vuon-quoc-gia + 9 mục danh-thang lọt từ Phase 3 lô5 được chuyển sang danh-thang-thien-nhien.json — lớp này nay CHỈ còn di tích cách mạng/kháng chiến thuần (nhà tù, căn cứ, địa đạo, bến bãi).]",
-  "ngay_cap_nhat": "2026-07-26",
+  "ngay_cap_nhat": "2026-08-27",
   "sources": [
     "Cục Di sản văn hóa — dsvh.gov.vn",
+    "Báo Hưng Yên điện tử — baohungyen.vn",
+    "Báo Tuổi Trẻ — tuoitre.vn",
+    "Báo Thái Nguyên điện tử — baothainguyen.vn",
+    "Cổng TTĐT Đảng bộ tỉnh Vĩnh Long — vinhlong.dcs.vn",
+    "Báo Vĩnh Long (chuyên trang Trà Vinh) — travinh.baovinhlong.vn",
+    "Cổng TTĐT tỉnh Cà Mau — camau.gov.vn",
+    "Báo Nhân Dân — nhandan.vn",
+    "Báo Thanh Hóa điện tử — baothanhhoa.vn",
+    "Cổng TTĐT xã Xuân Hưng, tỉnh Ninh Bình — xuanhung.ninhbinh.gov.vn",
+    "Báo Quảng Ninh điện tử — baoquangninh.vn",
+    "Cổng TTĐT xã Tam Hải, TP. Đà Nẵng — tamhai.danang.gov.vn",
+    "Bảo tàng thành phố Cần Thơ — baotangtpcantho.cantho.gov.vn",
+    "Báo An Giang Online — baoangiang.com.vn",
+    "Báo Lạng Sơn điện tử — baolangson.vn",
     "Sở Văn hóa và Thể thao Hà Nội — sovhtt.hanoi.gov.vn",
     "Báo Hà Tĩnh — baohatinh.vn / Cổng TTĐT tỉnh Hà Tĩnh — hatinh.gov.vn",
     "Báo Nghệ An — baonghean.vn / Cổng TTĐT Công an Nghệ An — congan.nghean.gov.vn",
@@ -17,7 +31,19 @@
     "Cổng TTĐT tỉnh Đồng Nai — dongnai.gov.vn",
     "Cổng TTĐT tỉnh Bà Rịa - Vũng Tàu — baria-vungtau.gov.vn",
     "Cổng TTĐT tỉnh Đồng Tháp — dongthap.gov.vn",
-    "Cổng TTĐT tỉnh Cà Mau — camau.gov.vn"
+    "Cổng TTĐT tỉnh Cà Mau — camau.gov.vn",
+    "Báo Cao Bằng điện tử — baocaobang.vn",
+    "Báo Gia Lai điện tử — baogialai.com.vn",
+    "Báo Sơn La điện tử — baosonla.vn",
+    "Cổng TTĐT tỉnh Tuyên Quang — tuyenquang.gov.vn",
+    "Báo Cựu chiến binh Việt Nam — cuuchienbinh.vn",
+    "Cổng TTĐT tỉnh Lâm Đồng — lamdong.gov.vn",
+    "Bảo tàng tỉnh Hà Tĩnh — baotang.hatinh.gov.vn",
+    "Báo Công an nhân dân — cand.vn",
+    "VietnamPlus (TTXVN) — vietnamplus.vn",
+    "Báo Đắk Lắk điện tử — baodaklak.vn",
+    "Thành ủy Hà Nội — thanhuyhanoi.vn",
+    "Sở Ngoại vụ tỉnh Lào Cai — doingoailaocai.vn"
   ],
   "items": [
     {
@@ -510,6 +536,443 @@
       "nguon": [
         "Báo Nhân Dân — Nhân chứng lịch sử Trại Davis và chuyện thi hành Hiệp định Paris — https://nhandan.vn/nhan-chung-lich-su-trai-davis-va-chuyen-thi-hanh-hiep-dinh-paris-post749666.html"
       ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-5d-ham-long",
+      "ten": "Di tích 5D phố Hàm Long — nơi thành lập chi bộ cộng sản đầu tiên ở Việt Nam",
+      "lon": 105.8497,
+      "lat": 21.0245,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "3/1929 · xếp hạng 1964",
+      "mo_ta": "Ngôi nhà số 5D phố Hàm Long (Hà Nội), nơi một nhóm hội viên tiên tiến của Hội Việt Nam Cách mạng Thanh niên — gồm Ngô Gia Tự, Nguyễn Đức Cảnh, Trần Văn Cung (Bí thư), Trịnh Đình Cửu, Đỗ Ngọc Du, Nguyễn Phong Sắc, Dương Hạc Đính và Nguyễn Tuân — họp và lập ra chi bộ cộng sản đầu tiên ở Việt Nam vào một ngày cuối tháng 3/1929, mở đường cho sự ra đời của các tổ chức cộng sản và Đảng Cộng sản Việt Nam (1930). Bộ Văn hóa xếp hạng di tích quốc gia theo Quyết định số 29-VH/QĐ ngày 13/1/1964.",
+      "dia_diem": "Số 5D phố Hàm Long, quận Hoàn Kiếm, TP. Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích quốc gia — Quyết định số 29-VH/QĐ ngày 13/1/1964 (Bộ Văn hóa)",
+      "nguon": [
+        "Cục Di sản văn hóa — Di tích 5D phố Hàm Long, Hà Nội, nơi thành lập Chi bộ cộng sản đầu tiên ở Việt Nam — https://dsvh.gov.vn/di-tich-5d-pho-ham-long-ha-noi-noi-thanh-lap-chi-bo-cong-san-dau-tien-o-viet-nam-3169"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-sai-thi-hung-yen",
+      "ten": "Di tích nơi thành lập Chi bộ Đảng Cộng sản đầu tiên của tỉnh Hưng Yên (Sài Thị)",
+      "lon": 105.98,
+      "lat": 20.83,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "1929–1930",
+      "mo_ta": "Tại Sài Thị (chợ Giàn), xã Thuần Hưng, huyện Khoái Châu, một chi bộ Hội Việt Nam Cách mạng Thanh niên được lập năm 1928 dưới sự vận động của đồng chí Nguyễn Tiến Trạc; cuối năm 1929 chuyển thành Chi bộ Đông Dương Cộng sản Đảng — chi bộ cộng sản đầu tiên của tỉnh Hưng Yên, ban đầu có 7 đảng viên. Ngày 3/2/1930, chi bộ được đổi tên thành Chi bộ Đảng Cộng sản Đông Dương Sài Thị.",
+      "dia_diem": "Sài Thị (chợ Giàn), xã Thuần Hưng, huyện Khoái Châu, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hưng Yên điện tử — Thăm nơi thành lập chi bộ Đảng đầu tiên của Hưng Yên — https://baohungyen.vn/tham-noi-thanh-lap-chi-bo-dang-dau-tien-cua-hung-yen-2789.html"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-phu-yen",
+      "ten": "Di tích nơi thành lập Chi bộ Đảng Cộng sản đầu tiên của tỉnh Phú Yên",
+      "lon": 109.18,
+      "lat": 13.27,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "5/10/1930 · xếp hạng 1997",
+      "mo_ta": "Tại xóm Đồng Bé, thôn Phước Long, xã Xuân Long xưa (nay khu phố Long Bình, thị trấn La Hai, huyện Đồng Xuân), chi bộ Đảng Cộng sản đầu tiên của tỉnh Phú Yên ra đời ngày 5/10/1930 — chỉ 8 tháng sau khi Đảng Cộng sản Việt Nam thành lập — với 9 đảng viên sáng lập, do đồng chí Phan Lưu Thanh làm Bí thư. Di tích được xếp hạng cấp quốc gia ngày 18/6/1997.",
+      "dia_diem": "Khu phố Long Bình, thị trấn La Hai, huyện Đồng Xuân, tỉnh Phú Yên cũ (nay tỉnh Đắk Lắk)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — xếp hạng ngày 18/6/1997",
+      "nguon": [
+        "Báo Tuổi Trẻ — Tu bổ, tôn tạo di tích quốc gia Nơi thành lập Chi bộ Đảng đầu tiên ở Phú Yên — https://tuoitre.vn/tu-bo-ton-tao-di-tich-quoc-gia-noi-thanh-lap-chi-bo-dang-dau-tien-o-phu-yen-20241003133248093.htm"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-thai-nguyen",
+      "ten": "Di tích nơi thành lập cơ sở Đảng Cộng sản đầu tiên của tỉnh Thái Nguyên",
+      "lon": 105.62,
+      "lat": 21.62,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "cuối 1936",
+      "mo_ta": "Tại ngôi nhà lá ba gian giữa rừng lau sậy của gia đình đồng chí Đường Văn Hon (tức Nhất Quý) ở xóm Lau Sau, xã La Bằng, huyện Đại Từ, cuối năm 1936 các đồng chí Đường Văn Hon, Nông Văn Ái, Hoàng Văn Nghiệp, Đường Văn Ngân được kết nạp vào Đảng Cộng sản Đông Dương, lập nên cơ sở Đảng đầu tiên ở vùng rừng núi phía Tây châu Đại Từ và của tỉnh Thái Nguyên. Di tích được mở rộng gồm 5 khu vực: nơi công bố thành lập (nhà ông Đường Văn Hon), nơi hội họp bí mật (nhà ông Nông Văn Ái), nhà đón tiếp, khu lò rèn — cất giấu vũ khí, và bãi đỗ xe; công trình tôn tạo, mở rộng khánh thành ngày 1/2/2024.",
+      "dia_diem": "Xóm Lau Sau, xã La Bằng, huyện Đại Từ, tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thái Nguyên điện tử — Khánh thành công trình xây dựng, mở rộng, tôn tạo Di tích nơi thành lập cơ sở Đảng Cộng sản đầu tiên của tỉnh Thái Nguyên — https://baothainguyen.vn/thoi-su-thai-nguyen/202402/khanh-thanh-cong-trinh-ton-tao-di-tich-noi-thanh-lap-co-so-dang-dau-tien-cua-tinh-ff808e0/"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-nga-tu-long-ho",
+      "ten": "Di tích Chi bộ Ngã Tư — nơi ra đời chi bộ Đảng đầu tiên ở Vĩnh Long",
+      "lon": 105.97,
+      "lat": 10.25,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "đầu 1928",
+      "mo_ta": "Tại Ngã tư Long Hồ, nơi giao nhau của bốn nhánh sông thuộc huyện Long Hồ, đầu năm 1928 hình thành chi bộ Hội Việt Nam Cách mạng Thanh niên với 3 hội viên: Nguyễn Văn Thiệt (Bí thư), Nguyễn Hữu Đức, Nguyễn Trí. Tháng 8/1928, cả ba được đồng chí Châu Văn Liêm kết nạp vào An Nam Cộng sản Đảng; năm 1930, khi ba tổ chức cộng sản hợp nhất, chi bộ Ngã Tư chuyển thành chi bộ Đảng Cộng sản Việt Nam — chi bộ Đảng đầu tiên ở Vĩnh Long.",
+      "dia_diem": "Ngã tư Long Hồ, huyện Long Hồ, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT Đảng bộ tỉnh Vĩnh Long — Về nơi ra đời chi bộ Đảng đầu tiên ở Vĩnh Long — https://vinhlong.dcs.vn/ve-noi-ra-doi-chi-bo-dang-dau-tien-o-vinh-long-1004001.ngn"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-an-truong-cang-long",
+      "ten": "Di tích nơi thành lập Chi bộ Đảng Cộng sản Việt Nam đầu tiên tỉnh Trà Vinh (An Trường)",
+      "lon": 106.22,
+      "lat": 9.93,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "15/3/1930 · xếp hạng 2012",
+      "mo_ta": "Tại ngôi nhà dưới của ông Nguyễn Phát Diệm ở Ấp 3 (nay Ấp 3A, xã An Trường, huyện Càng Long), ngày 15/3/1930 các đồng chí Hà Huy Giáp và Ung Văn Khiêm từ đặc khu Hậu Giang trực tiếp về chủ trì thành lập Chi bộ Đảng Cộng sản Việt Nam đầu tiên của tỉnh Trà Vinh, gồm 5 đảng viên: Nguyễn Phát Đạt (Bí thư), Lê Quang Lộc, Đoàn Văn Quý, Mai Đăng Khóa, Dương Háo Học. Bộ Văn hóa, Thể thao và Du lịch xếp hạng di tích quốc gia theo Quyết định số 2632/QĐ-BVHTTDL ngày 18/7/2012.",
+      "dia_diem": "Ấp 3A, xã An Trường, huyện Càng Long, tỉnh Trà Vinh cũ (nay tỉnh Vĩnh Long)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích quốc gia — Quyết định số 2632/QĐ-BVHTTDL ngày 18/7/2012 (Bộ VHTTDL)",
+      "nguon": [
+        "Báo Vĩnh Long (chuyên trang Trà Vinh) — Di tích lịch sử cấp quốc gia - nơi thành lập Chi bộ An Trường Càng Long — https://travinh.baovinhlong.vn/chinh-tri/di-tich-lich-su-cap-quoc-gia-noi-thanh-lap-chi-bo-an-truong-cang-long-25913.html"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-phong-thanh-bac-lieu",
+      "ten": "Di tích nơi thành lập Chi bộ Đảng Cộng sản đầu tiên của tỉnh Bạc Liêu",
+      "lon": 105.55,
+      "lat": 9.35,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "2/1930 · xếp hạng 2011",
+      "mo_ta": "Tháng 2/1930, chi bộ Đảng Cộng sản đầu tiên của tỉnh Bạc Liêu được thành lập tại làng Phong Thạnh, huyện Giá Rai (nay thuộc xã Long Điền). Di tích được công nhận di tích lịch sử cấp tỉnh năm 2008, sau đó được Bộ Văn hóa, Thể thao và Du lịch xếp hạng di tích lịch sử cấp quốc gia năm 2011; khuôn viên rộng 2.305,5 m² gồm bia kỷ niệm, nhà trưng bày và khu dừa nước tái hiện quang cảnh xưa.",
+      "dia_diem": "Làng Phong Thạnh (nay xã Long Điền), tỉnh Bạc Liêu cũ (nay tỉnh Cà Mau)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — xếp hạng năm 2011 (Bộ VHTTDL)",
+      "nguon": [
+        "Cổng TTĐT tỉnh Cà Mau — Nơi thành lập Chi bộ Đảng đầu tiên tỉnh Bạc Liêu — https://www.camau.gov.vn/lich-su-van-hoa/noi-thanh-lap-chi-bo-dang-dau-tien-tinh-bac-lieu-286778"
+      ]
+    },
+    {
+      "id": "dia-diem-thanh-lap-chi-bo-phu-rieng",
+      "ten": "Di tích Địa điểm thành lập Chi bộ Đông Dương Cộng sản Đảng ở Phú Riềng",
+      "lon": 106.87,
+      "lat": 11.35,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "đêm 28 rạng 29/10/1929 · xếp hạng 1999",
+      "mo_ta": "Đêm 28 rạng sáng 29/10/1929, tại khu rừng ở Làng 3 thuộc đồn điền Thuận Lợi (nay ấp Làng 3, xã Thuận Phú, huyện Đồng Phú), Chi bộ Đông Dương Cộng sản Đảng được thành lập — chi bộ cộng sản đầu tiên ở miền Đông Nam Bộ. Dưới sự lãnh đạo của chi bộ, ngày 3/2/1930 hơn 5.000 phu cao su đã nổi dậy làm chủ đồn điền cao su Phú Riềng trong hơn một tuần, gây rúng động Nam Kỳ và vang tới tận Paris — sự kiện đi vào lịch sử với tên gọi «Phú Riềng Đỏ». Nơi thành lập chi bộ (nay thuộc Nông trường cao su Tân Thành) được công nhận di tích lịch sử - văn hóa cấp quốc gia năm 1999; nhân kỷ niệm 90 năm ngày thành lập, công trình được trùng tu mở rộng trên diện tích 0,8ha.",
+      "dia_diem": "Ấp Làng 3, xã Thuận Phú, huyện Đồng Phú, tỉnh Bình Phước cũ (nay tỉnh Đồng Nai)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử - văn hóa cấp quốc gia — xếp hạng năm 1999",
+      "nguon": [
+        "Báo Nhân Dân — Phát huy tinh thần Phú Riềng Đỏ dựng xây quê hương Bình Phước đẹp giàu — https://nhandan.vn/phat-huy-tinh-than-phu-rieng-do-dung-xay-que-huong-binh-phuoc-dep-giau-post771256.html"
+      ]
+    },
+    {
+      "id": "cum-di-tich-ham-ha-thanh-hoa",
+      "ten": "Cụm di tích lịch sử cách mạng Hàm Hạ — nơi thành lập Chi bộ Đảng đầu tiên của tỉnh Thanh Hóa",
+      "lon": 105.65,
+      "lat": 19.75,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "25/6/1930 · xếp hạng 1994",
+      "mo_ta": "Tại nhà ông Lê Oanh Kiều ở làng Hàm Hạ (nay tổ dân phố Hàm Hạ, thị trấn Rừng Thông, huyện Đông Sơn), ngày 25/6/1930, đồng chí Nguyễn Doãn Chấp — đảng viên được Xứ ủy Bắc Kỳ cử về Thanh Hóa — triệu tập hội nghị và tuyên bố thành lập Chi bộ Hàm Hạ, chi bộ Đảng Cộng sản đầu tiên tại Thanh Hóa. Cụm di tích gồm ba điểm — đình làng Hàm Hạ, nhà ông Lê Oanh Kiều và nhà ông Phạm Văn Huống — được công nhận di tích lịch sử cấp quốc gia năm 1994.",
+      "dia_diem": "Tổ dân phố Hàm Hạ, thị trấn Rừng Thông, huyện Đông Sơn, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — công nhận năm 1994",
+      "nguon": [
+        "Báo Thanh Hóa điện tử — Hàm Hạ - Chi bộ Đảng Cộng sản đầu tiên ở tỉnh Thanh Hóa — https://baothanhhoa.vn/ham-ha-chi-bo-dang-cong-san-dau-tien-o-tinh-thanh-hoa-178277.htm"
+      ]
+    },
+    {
+      "id": "den-chua-tu-lac-ninh-binh",
+      "ten": "Di tích lịch sử cách mạng Đền – Chùa Tự Lạc",
+      "lon": 106.33,
+      "lat": 20.25,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "6/1929 · xếp hạng 2003",
+      "mo_ta": "Chùa Tự Lạc (Thái An tự), dựng năm 1843, tại thôn Tự Lạc, xã Thọ Nghiệp cũ (nay xã Xuân Hưng). Giai đoạn 1927–1929, các thầy giáo Nguyễn Trường Thúy và Nguyễn Xuân Lầm lập Hội Việt Nam Cách mạng Thanh niên tại đây với 6 hội viên; tháng 6/1929 tổ chức này chuyển thành chi bộ Đông Dương Cộng sản Đảng gồm 3 đảng viên do Nguyễn Trường Thúy làm Bí thư — nơi thành lập chi bộ Đảng Cộng sản đầu tiên của ba huyện phía đông nam tỉnh Ninh Bình (Xuân Trường, Giao Thủy, Hải Hậu theo địa giới cũ). Sau Hội nghị hợp nhất Đảng do Hồ Chí Minh chủ trì (3/2/1930), chi bộ phát triển lên 14 đảng viên; ngày 20–21/8/1945, 51 đồng chí họp tại đây làm lễ treo cờ trước khi phát động khởi nghĩa giành chính quyền ở Xuân Trường, Giao Thủy. Di tích được công nhận di tích lịch sử - văn hóa ngày 26/2/2003.",
+      "dia_diem": "Thôn Tự Lạc, xã Xuân Hưng, tỉnh Ninh Bình",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử - văn hóa — công nhận ngày 26/2/2003",
+      "nguon": [
+        "Cổng TTĐT xã Xuân Hưng, tỉnh Ninh Bình — Di tích lịch sử cách mạng Đền Chùa Tự Lạc — nơi thành lập chi bộ Đảng cộng sản đầu tiên của ba huyện phía đông nam tỉnh Ninh Bình — https://xuanhung.ninhbinh.gov.vn/2025/07/13/di-tich-lich-su-cach-mang-den-chua-tu-lac-o-thon-tu-lac-tho-nghiep-xa-xuan-hung-tinh-ninh-binh-noi-thanh-lap-chi-bo-dang-cong-san-dau-tien-cua-ba-huyen-phia-dong-nam-tinh-ninh-binh-xuan-truon/"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-mao-khe",
+      "ten": "Di tích nơi thành lập Chi bộ Đảng Cộng sản đầu tiên ở Khu mỏ Quảng Ninh",
+      "lon": 106.53,
+      "lat": 21.05,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "23/2/1930",
+      "mo_ta": "Tại một ngôi nhà nhỏ cạnh xóm thợ phía nam mỏ Mạo Khê (nay khu Dân Chủ, phường Mạo Khê, thị xã Đông Triều), ngày 23/2/1930 chi bộ Đảng Cộng sản Việt Nam đầu tiên của Khu mỏ Quảng Ninh được thành lập với 5 đảng viên: Đặng Châu Tuệ (Bí thư), Vũ Thị Mai, Nguyễn Huy Sán, Bùi Văn Mạo, Bùi Đức Giao. Từ đây, đến tháng 4/1930 các chi bộ ở Hòn Gai, Cẩm Phả, Cửa Ông, Uông Bí – Vàng Danh lần lượt ra đời, tiến tới thành lập Đặc Khu ủy mỏ tháng 10/1930. Điểm di tích được khánh thành ngày 12/11/2017.",
+      "dia_diem": "Khu Dân Chủ, phường Mạo Khê, thị xã Đông Triều, tỉnh Quảng Ninh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Ninh điện tử — Chi bộ Đảng đầu tiên thành lập tại Khu mỏ — https://baoquangninh.vn/chi-bo-dang-dau-tien-thanh-lap-tai-khu-mo-3248198.html"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-chi-bo-quang-anh-minh",
+      "ten": "Di tích nơi thành lập chi bộ Đảng đầu tiên «Quang Ánh Minh» (Tam Hải)",
+      "lon": 108.53,
+      "lat": 15.32,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "2/12/1932",
+      "mo_ta": "Tại rừng dừa Đồng Dân, thôn Thuận An, xã Tam Hải (huyện Núi Thành), ngày 2/12/1932 ba đảng viên Võ Minh (Bí thư), Trần Học Giới và Lương Hợp Phố (Ngạt) thành lập chi bộ Đảng lấy tên «Quang Ánh Minh» — chi bộ Đảng đầu tiên của địa bàn huyện Núi Thành ngày nay, được công nhận chính thức tháng 4/1933. Di tích được xếp hạng di tích lịch sử cách mạng theo Điều 11, Nghị định số 98/2010/NĐ-CP; hiện do Hội Dừa Đồng Dân quản lý.",
+      "dia_diem": "Thôn Thuận An, xã Tam Hải, huyện Núi Thành, tỉnh Quảng Nam cũ (nay TP. Đà Nẵng)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT xã Tam Hải, TP. Đà Nẵng — Nơi thành lập chi bộ Đảng đầu tiên «Quang Ánh Minh» — https://tamhai.danang.gov.vn/noi-thanh-lap-chi-bo-dang-dau-tien-quang-anh-minh/"
+      ]
+    },
+    {
+      "id": "chi-bo-co-do-can-tho",
+      "ten": "Di tích nơi thành lập Chi bộ Cờ Đỏ — chi bộ Đảng đầu tiên của Cần Thơ",
+      "lon": 105.53,
+      "lat": 10.13,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "10/11/1929",
+      "mo_ta": "Tại đồn điền Cờ Đỏ, làng Thới Đông, quận Ô Môn xưa (nay huyện Cờ Đỏ), đêm 10/11/1929 Chi bộ Cờ Đỏ — chi bộ Đảng Cộng sản đầu tiên của Cần Thơ — được thành lập, do đồng chí Hà Huy Giáp làm Bí thư, đặt nền móng cho phong trào cách mạng của công nhân đồn điền và nông dân vùng đất này.",
+      "dia_diem": "Đồn điền Cờ Đỏ, làng Thới Đông, huyện Cờ Đỏ, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng thành phố Cần Thơ — Di tích lịch sử Cơ quan Đặc ủy An Nam Cộng sản Đảng Hậu Giang (1929–1930) — https://baotangtpcantho.cantho.gov.vn/article/di-tich-lich-su-co-quan-dac-uy-an-nam-cong-san-dang-hau-giang-1929---1930/1064.htm"
+      ]
+    },
+    {
+      "id": "cot-day-thep-an-giang",
+      "ten": "Di tích lịch sử Cột Dây Thép — nơi đánh dấu chi bộ Đảng đầu tiên ở An Giang",
+      "lon": 105.42,
+      "lat": 10.53,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "4/1930",
+      "mo_ta": "Cột dây thép do thực dân Pháp dựng cuối thế kỷ XIX làm hệ thống thông tin liên lạc, tại ấp Long Thuận, xã Long Điền A (huyện Chợ Mới) — cao hơn 30m, kết cấu 4 cột thép ghép hình chóp vuông. Tháng 4/1930, chi bộ Đảng Cộng sản đầu tiên của tỉnh Long Xuyên xưa (nay An Giang) được thành lập tại xã Long Điền với 3 đảng viên: Lưu Kim Phong, Bùi Trung Phẩm, Đoàn Thanh Thủy; lá cờ Đảng đầu tiên của An Giang được kéo lên đỉnh Cột Dây Thép để mừng sự kiện này.",
+      "dia_diem": "Ấp Long Thuận, xã Long Điền A, huyện Chợ Mới, tỉnh An Giang",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo An Giang Online — Sự đột phá ghi dấu ấn đổi mới tại nơi chi bộ Đảng đầu tiên của tỉnh An Giang ra đời — https://danviet.vn/doi-moi-noi-chi-bo-dang-dau-tien-cua-tinh-an-giang-ra-doi-20250202213959031-d1208681.html"
+      ]
+    },
+    {
+      "id": "dinh-hang-pai-lang-son",
+      "ten": "Di tích đình Háng Pài — nơi thành lập chi bộ Đảng đầu tiên của tỉnh Lạng Sơn",
+      "lon": 106.65,
+      "lat": 21.87,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "giữa 1933",
+      "mo_ta": "Được sự phân công của Đảng bộ Long Châu, giữa năm 1933 đồng chí Hoàng Văn Thụ (khi đó là Bí thư Đảng bộ Long Châu) cùng đồng chí Đoàn Viết Thọ (Đoàn Văn Thọ, Vi Đức Minh) từ Long Châu (Trung Quốc) trở về đình Háng Pài, xã Thụy Hùng, châu Văn Uyên xưa (nay huyện Cao Lộc), tổ chức thành lập chi bộ Đảng Cộng sản đầu tiên của tỉnh Lạng Sơn — kết quả một quá trình xây dựng cơ sở quần chúng và tuyên truyền cách mạng ở vùng biên giới Việt – Trung từ năm 1928.",
+      "dia_diem": "Đình Háng Pài, xã Thụy Hùng, huyện Cao Lộc, tỉnh Lạng Sơn",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Lạng Sơn điện tử — Một số di tích, di vật liên quan đến quá trình thành lập chi bộ đảng đầu tiên ở Lạng Sơn — https://baolangson.vn/mot-so-di-tich-di-vat-lien-quan-den-qua-trinh-thanh-lap-chi-bo-dang-dau-tien-o-lang-son-1589598.html"
+      ]
+    },
+    {
+      "id": "nam-lin-cao-bang",
+      "ten": "Khu di tích lịch sử Nặm Lìn — nơi thành lập Chi bộ Đảng đầu tiên tỉnh Cao Bằng",
+      "lon": 106.22,
+      "lat": 22.75,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "1/4/1930 (thành lập) — DTQG 13/2/1995",
+      "mo_ta": "Ngày 1/4/1930 tại suối Nặm Lìn, ba đồng chí Hoàng Văn Nọn, Lê Đoàn Chu, Nông Văn Đô thành lập Chi bộ Đảng Cộng sản đầu tiên của tỉnh Cao Bằng, do Hoàng Văn Nọn làm Bí thư. Bộ Văn hóa - Thông tin công nhận Di tích lịch sử cấp quốc gia ngày 13/2/1995.",
+      "dia_diem": "Thôn Hào Lịch, xã Hoàng Tung, huyện Hòa An, tỉnh Cao Bằng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — công nhận 13/2/1995",
+      "nguon": [
+        "Báo Cao Bằng điện tử — Phát huy giá trị Khu di tích lịch sử Nặm Lìn, nơi thành lập Chi bộ Đảng Cộng sản đầu tiên của tỉnh — https://baocaobang.vn/phat-huy-gia-tri-khu-di-tich-lich-su-nam-lin-noi-thanh-lap-chi-bo-dang-cong-san-dau-tien-cua-tinh-tr-3176255.html"
+      ]
+    },
+    {
+      "id": "chi-bo-cheo-reo-gia-lai",
+      "ten": "Địa điểm thành lập Chi bộ Đảng Cộng sản đầu tiên huyện Cheo Reo",
+      "lon": 108.65,
+      "lat": 13.2,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "10/8/1947 — DT cấp tỉnh",
+      "mo_ta": "Tại buôn Ma Hinh (nay buôn Đất Bằng, xã Phú Túc), ngày 10/8/1947 ba đảng viên Ksor Ní (Bí thư), Rơchơm Thép, Rơchơm But thành lập chi bộ Đảng đầu tiên của huyện Cheo Reo, Gia Lai. Được xếp hạng di tích lịch sử cấp tỉnh, là nơi giáo dục truyền thống cách mạng cho cán bộ, đảng viên và thế hệ trẻ.",
+      "dia_diem": "Buôn Đất Bằng, xã Phú Túc, tỉnh Gia Lai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh (số quyết định chưa tự xác nhận được)",
+      "nguon": [
+        "Báo Gia Lai điện tử — Dâng hương tại địa điểm thành lập Chi bộ Đảng đầu tiên huyện Cheo Reo — https://baogialai.com.vn/dang-huong-tai-dia-diem-thanh-lap-chi-bo-dang-dau-tien-huyen-cheo-reo-post594588.html"
+      ]
+    },
+    {
+      "id": "di-tich-cay-me-son-la",
+      "ten": "Di tích lịch sử Cây Me — nơi thành lập chi bộ đầu tiên của Đảng bộ tỉnh Sơn La",
+      "lon": 104.03,
+      "lat": 21.13,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "trung tuần 10/1946 — DT cấp tỉnh 2005",
+      "mo_ta": "Bên ngôi nhà sàn nhỏ cạnh cây me cổ, dưới sự chủ trì của đồng chí Trần Quyết (Bí thư Tỉnh ủy), hội nghị thành lập chi bộ đầu tiên của Đảng bộ tỉnh Sơn La được tổ chức trung tuần tháng 10/1946, gồm 8 đảng viên. UBND tỉnh Sơn La công nhận di tích lịch sử cấp tỉnh năm 2005.",
+      "dia_diem": "Xóm 2, tiểu khu 6, thị trấn Hát Lót, huyện Mai Sơn, tỉnh Sơn La",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — công nhận 2005",
+      "nguon": [
+        "Báo Sơn La điện tử — Nơi thành lập chi bộ đầu tiên của tỉnh Sơn La — https://baosonla.vn/nhan-vat-su-kien/noi-thanh-lap-chi-bo-dau-tien-cua-tinh-son-la-YMAxBRTHR.html"
+      ]
+    },
+    {
+      "id": "chi-bo-mo-than-tuyen-quang",
+      "ten": "Di tích địa điểm thành lập Chi bộ Mỏ Than — chi bộ Đảng đầu tiên của Tuyên Quang",
+      "lon": 105.21,
+      "lat": 21.82,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "chiều 20/3/1940",
+      "mo_ta": "Chiều 20/3/1940, Chi bộ Mỏ Than — chi bộ Đảng Cộng sản đầu tiên và duy nhất lãnh đạo phong trào cách mạng Tuyên Quang trước Cách mạng Tháng Tám — được thành lập tại nhà cụ Cả Kiến với sự công nhận của đồng chí Đào Duy Kỳ (đại diện Xứ ủy Bắc Kỳ), gồm 7 đảng viên do Vũ Mùi làm Bí thư. Giữa năm 1940, các cuộc họp chuyển về soi Hồng Lương để giữ bí mật.",
+      "dia_diem": "Tổ 40, phường Minh Xuân, TP. Tuyên Quang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Tuyên Quang — Chi bộ Mỏ Than - Chi bộ Đảng đầu tiên của Tuyên Quang — https://www.tuyenquang.gov.vn/vi/post/9883?id=9883&type=tintuc"
+      ]
+    },
+    {
+      "id": "tram-phau-thuat-tien-phuong-hue",
+      "ten": "Địa điểm Trạm phẫu thuật tiền phương",
+      "lon": 107.3,
+      "lat": 16.62,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "12/3/1975 — DTQG (QĐ 3242/QĐ-BVHTTDL, 9/9/2025)",
+      "mo_ta": "Trạm phẫu thuật tiền phương phục vụ Chiến dịch Xuân 1975 ở phía bắc Trị Thiên - Huế; ngày 12/3/1975 quân địch sát hại các thương binh không vũ khí tại đây. Bộ trưởng Bộ VHTTDL ban hành quyết định xếp hạng di tích lịch sử cấp quốc gia theo Quyết định số 3242/QĐ-BVHTTDL ngày 9/9/2025.",
+      "dia_diem": "Phường Phong Thái, TP. Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — QĐ 3242/QĐ-BVHTTDL, 9/9/2025",
+      "nguon": [
+        "Báo Cựu chiến binh Việt Nam — TP.Huế: Trạm phẫu thuật tiền phương và lăng mộ Đặng Văn Hoà trở thành di tích quốc gia — https://cuuchienbinh.vn/tp-hue-tram-phau-thuat-tien-phuong-va-lang-mo-dang-van-hoa-tro-thanh-di-tich-quoc-gia-d38628.html"
+      ]
+    },
+    {
+      "id": "can-cu-khu-vi-cat-tien-lam-dong",
+      "ten": "Khu di tích lịch sử Căn cứ kháng chiến Khu VI — Cát Tiên",
+      "lon": 107.35,
+      "lat": 11.55,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "1963–1966 (giai đoạn hoạt động chính)",
+      "mo_ta": "Căn cứ của Khu ủy và Quân khu VI trong kháng chiến chống Mỹ, nơi ba kỳ Đại hội Đảng bộ khu vực họp và phối hợp phong trào cách mạng miền Nam (chiến dịch Đồng Xoài 1965, đánh bại các cuộc phản công 1965–1968). Từ năm 2013, UBND tỉnh Lâm Đồng đầu tư hơn 92 tỷ đồng tôn tạo khu di tích rộng gần 50ha, gồm 23 hạng mục tái hiện cơ quan Khu ủy và Quân khu.",
+      "dia_diem": "Thôn 5, xã Đức Phổ, huyện Cát Tiên, tỉnh Lâm Đồng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Lâm Đồng — Căn cứ kháng chiến khu VI Cát Tiên - nơi giáo dục truyền thống cách mạng cho thế hệ trẻ — https://lamdong.gov.vn/sites/cattien/du-lich/danh-lam/SitePages/can-cu-khang-chien-khu-vi-cat-tien-noi-giao-duc-truyen-thong-cach-mang-cho-the-he-tre.aspx"
+      ]
+    },
+    {
+      "id": "lang-k130-ha-tinh",
+      "ten": "Di tích lịch sử Làng K130",
+      "lon": 105.75,
+      "lat": 18.55,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "đêm 13/8/1968 — DTQG (QĐ 57/2006/QĐ-BVHTT, 29/5/2006)",
+      "mo_ta": "Đêm 13/8/1968, người dân thôn Hạ Lội tự nguyện tháo dỡ 130 ngôi nhà để mở đường tránh cho xe vận tải chi viện miền Nam né Quốc lộ 1A bị bắn phá. Nơi này hứng gần 19.000 quả bom, 1.522 quả rocket trong 5 năm chiến đấu (1968–1973), làm 57 người chết, 151 người bị thương. Bộ Văn hóa – Thông tin xếp hạng di tích lịch sử quốc gia theo Quyết định số 57/2006/QĐ-BVHTT ngày 29/5/2006.",
+      "dia_diem": "Thị trấn Nghèn, huyện Can Lộc, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — QĐ 57/2006/QĐ-BVHTT, 29/5/2006",
+      "nguon": [
+        "Bảo tàng tỉnh Hà Tĩnh — Làng K130 trong kháng chiến chống Mỹ cứu nước — https://baotang.hatinh.gov.vn/lang-k130-trong-khang-chien-chong-my-cuu-nuoc-1689843961.html"
+      ]
+    },
+    {
+      "id": "ban-tuyen-huan-trung-uong-cuc-tay-ninh",
+      "ten": "Di tích lịch sử Ban Tuyên huấn Trung ương Cục miền Nam",
+      "lon": 106.1,
+      "lat": 11.65,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "1962–1975 (thành lập 23/11/1961)",
+      "mo_ta": "Ban Tuyên huấn Trung ương Cục miền Nam thành lập ngày 23/11/1961, chuyển trụ sở về Lò Gò năm 1962, phụ trách công tác tư tưởng - chính trị kháng chiến chống Mỹ đến 1975. Được công nhận Di tích lịch sử cấp quốc gia.",
+      "dia_diem": "Ấp Tân Nam, xã Tân Bình, huyện Tân Biên, tỉnh Tây Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia (số quyết định chưa tự xác nhận được)",
+      "nguon": [
+        "Báo Công an nhân dân — Di tích lịch sử Ban Tuyên huấn Trung ương Cục miền Nam được xếp hạng Di tích Quốc gia — https://cand.vn/chuyen-dong-van-hoa/di-tich-lich-su-ban-tuyen-huan-trung-uong-cuc-mien-nam-duoc-xep-hang-di-tich-quoc-gia-i720183/"
+      ],
+      "ghi_chu_bien_tap": "KHÔNG trùng với «Cơ sở Ban Tuyên huấn Xứ uỷ Nam Bộ» (đã có trong di-tich-quoc-gia.json, id co-so-ban-tuyen-huan-xu-uy-nam-bo) — đó là cơ sở bí mật nội thành Sài Gòn 1954–1957 của Xứ ủy Nam Bộ (tổ chức và giai đoạn khác), còn mục này là căn cứ rừng Tây Ninh 1962–1975 của Trung ương Cục miền Nam."
+    },
+    {
+      "id": "khu-luu-niem-chi-bo-an-nam-cs-dang-dong-thap",
+      "ten": "Khu lưu niệm Chi bộ An Nam Cộng sản Đảng (Đồng Tháp)",
+      "lon": 105.63,
+      "lat": 10.46,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "11/1929 (thành lập) — khu lưu niệm khánh thành 23/9/2025",
+      "mo_ta": "Tháng 11/1929 tại làng Hòa An, đồng chí Phạm Hữu Lầu — người đầu tiên của tỉnh Sa Đéc được kết nạp vào An Nam Cộng sản Đảng (10/1929) — làm Bí thư chi bộ. Khu lưu niệm mới khánh thành ngày 23/9/2025, rộng khoảng 5ha, vốn đầu tư hơn 145 tỷ đồng, gồm Nhà lưu niệm Chi bộ An Nam Cộng sản Đảng và Nhà truyền thống vùng đất Cao Lãnh.",
+      "dia_diem": "Làng Hòa An, TP. Cao Lãnh, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tuổi Trẻ — Đồng Tháp khánh thành Khu lưu niệm Chi bộ An Nam Cộng sản Đảng — https://tuoitre.vn/dong-thap-khanh-thanh-khu-luu-niem-chi-bo-an-nam-cong-san-dang-2025092311240877.htm"
+      ]
+    },
+    {
+      "id": "bia-dang-bo-dong-duong-cs-bac-ninh-bac-giang",
+      "ten": "Bia ghi dấu nơi thành lập Đảng bộ Đông Dương Cộng sản Đảng Bắc Ninh - Bắc Giang",
+      "lon": 106.03,
+      "lat": 21.12,
+      "loai": "luu-niem-cach-mang",
+      "nam_hien_thi": "4/8/1929 (thành lập) — bia khánh thành 2/8/2024",
+      "mo_ta": "Ngày 4/8/1929 tại núi Hồng Vân (núi Lim), dưới sự chỉ đạo của đồng chí Ngô Gia Tự, hơn 20 hội viên tiên tiến của Hội Việt Nam Cách mạng Thanh niên hai tỉnh Bắc Ninh - Bắc Giang họp thành lập Đảng bộ Đông Dương Cộng sản Đảng Bắc Ninh - Bắc Giang. Bia lưu niệm khánh thành sáng 2/8/2024 nhân kỷ niệm 95 năm sự kiện.",
+      "dia_diem": "Núi Hồng Vân (đồi Lim), huyện Tiên Du, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamPlus (TTXVN) — Bia ghi dấu nơi thành lập Đảng bộ Đông Dương Cộng sản Đảng Bắc Ninh - Bắc Giang — https://www.vietnamplus.vn/bia-ghi-dau-noi-thanh-lap-dang-bo-dong-duong-cong-san-dang-bac-ninh-bac-giang-post968360.vnp"
+      ]
+    },
+    {
+      "id": "can-cu-cu-ju-dlie-ya",
+      "ten": "Khu di tích lịch sử Căn cứ kháng chiến Cư Jŭ - Dliê Ya",
+      "lon": 108.62,
+      "lat": 13.25,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "kháng chiến chống Pháp và Mỹ; ba kỳ Đại hội Đảng bộ tỉnh Đắk Lắk (1960, 1963, 1973) — DTQG (QĐ 4242/QĐ-BVHTTDL, 29/12/2023)",
+      "mo_ta": "Căn cứ địa cách mạng của Đảng bộ tỉnh Đắk Lắk qua hai cuộc kháng chiến chống Pháp và Mỹ, nơi diễn ra ba kỳ Đại hội Đảng bộ tỉnh (1960, 1963, 1973), góp phần quan trọng vào Chiến thắng Buôn Ma Thuột 1975. Bộ VHTTDL xếp hạng Di tích quốc gia theo Quyết định số 4242/QĐ-BVHTTDL ngày 29/12/2023.",
+      "dia_diem": "Các xã Uar và Chư Drăng, huyện Krông Pa, tỉnh Gia Lai (địa bàn lịch sử gắn với tỉnh Đắk Lắk trước đây)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp quốc gia — QĐ 4242/QĐ-BVHTTDL, 29/12/2023",
+      "nguon": [
+        "Báo Đắk Lắk điện tử — Di tích lịch sử Khu căn cứ kháng chiến Cư Jŭ - Dliê Ya được xếp hạng lịch sử quốc gia — https://baodaklak.vn/chinh-tri/202402/di-tich-lich-su-khu-can-cu-khang-chien-cu-ju-dlie-yaduoc-xephanglich-su-quoc-gia-2391096/"
+      ]
+    },
+    {
+      "id": "chi-bo-dong-phu-ha-noi",
+      "ten": "Di tích Chi bộ Đông Phù — chi bộ Cộng sản đầu tiên ở ngoại thành Hà Nội",
+      "lon": 105.85,
+      "lat": 20.93,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "5/1930",
+      "mo_ta": "Chi bộ Cộng sản thành lập tháng 5/1930 tại nhà đồng chí Nguyễn Hữu Bằng, gồm 6 đảng viên (Phạm Gia, Phạm Thượng Trí, Phạm Chất, Nguyễn Hữu Bằng, Nguyễn Duy Tứ, Lê Ngọc Lượng) do Phạm Gia làm Bí thư — chi bộ Cộng sản đầu tiên ở ngoại thành Hà Nội.",
+      "dia_diem": "Thôn Đông Phù, xã Đông Mỹ, huyện Thanh Trì, TP. Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Thành ủy Hà Nội — Chi bộ Đông Phù - Chi bộ Cộng sản đầu tiên ngoại thành Hà Nội — https://thanhuyhanoi.vn/tin-tuc/90-nam-ngay-thanh-lap-dang-cong-san-viet-nam-90-nam-ngay-thanh-lap-dang-bo-thanh-pho-ha-noi/chi-bo-dong-phu-chi-bo-cong-san-dau-tien-ngoai-thanh-ha-noi-10003230.html"
+      ]
+    },
+    {
+      "id": "can-cu-cach-mang-cam-duong-lao-cai",
+      "ten": "Khu căn cứ cách mạng Cam Đường",
+      "lon": 104,
+      "lat": 22.42,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "kháng chiến chống Pháp (chi tiết năm thành lập chưa tự xác nhận được)",
+      "mo_ta": "Khu căn cứ cách mạng tại địa bàn Cam Đường, TP. Lào Cai, được xác nhận là di tích cấp quốc gia. Nguồn đã mở chỉ xác nhận trạng thái xếp hạng, không nêu chi tiết ngày thành lập chi bộ hay số quyết định.",
+      "dia_diem": "Phường/xã Cam Đường, TP. Lào Cai, tỉnh Lào Cai",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích cấp quốc gia (ngày công nhận, số quyết định chưa tự xác nhận được)",
+      "nguon": [
+        "Sở Ngoại vụ tỉnh Lào Cai — Bảo tồn và phát huy các giá trị di tích lịch sử, văn hóa — https://www.doingoailaocai.vn/vi/bai-viet/888"
+      ],
+      "ghi_chu_bien_tap": "Nhiều nguồn thứ cấp (chưa tự mở xác nhận) ghi ngày thành lập chi bộ Cam Đường là 10/10/1948 và số QĐ 1568/QĐ-VH 20/4/1995 — KHÔNG đưa vào vì chỉ có ở tóm tắt WebSearch, chưa đọc thấy trên trang đã mở. Cần crawl4ai hoặc mở lại bằng công cụ khác để xác nhận trước khi bổ sung chi tiết."
     }
   ]
 }
