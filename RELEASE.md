@@ -8,6 +8,61 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-08-27 — Mở rộng 16 agent song song, hai ca: +608 mục lớp phủ, sa đồ phủ kín 267/267, và một cổng bị bịt lỗ
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Mục lớp phủ | **2.903 → 3.511** (+608), chạm **32/35 lớp** | đếm `items[]` từng file |
+| File dữ liệu · tổng mục | **351 → 378** · **6.087 → 6.722** | `_index/catalog.json` |
+| Sa đồ chiến dịch | **240 → 267** (+27), **phủ kín 267/267** | `battles/_index.json` |
+| Trận trong lớp phủ THIẾU sa đồ | **14 → 0** | đối chiếu id lớp phủ ↔ `battles/` |
+| Trích văn tịch nguyên văn | **167 → 242 đoạn** / **90 → 153 trận** | `verify_trich_van_tich.mjs` |
+| Trích dẫn cổng KHÔNG đối chiếu được | **7 → 0** | `verify_trich_van_tich.mjs` |
+| Sa đồ còn nền trơn (thiếu `dia_hinh`) | **1 → 0** | quét `battles/*.json` |
+| id trùng xuyên 35 lớp | **0** | `validate_overlays.mjs` |
+| Cổng dữ liệu | **14/14 xanh** | `npm run validate` |
+| Chủ quyền Hoàng Sa – Trường Sa | **13/13 thời kỳ**, kể cả khi bật 35 lớp phủ | `verify_chu_quyen.mjs` (probe Chrome) |
+| Build | `tsc` exit 0 · `vite build` xanh | `npm run build` |
+
+**Lớp mở rộng mạnh nhất**: di sản phi vật thể +37 (27→64) · bảo vật quốc gia +36 · di tích cấp tỉnh +35 · Mẹ VNAH +30 · di tích cách mạng +28 · anh hùng cận-hiện đại +24 · danh nhân văn hoá +24 · công trình kỷ lục +22 (14→36, lớp mỏng nhất cũ) · nghệ nhân di sản +22 · nghĩa sĩ Cần Vương +22. **Ba lớp không chạm**: `ban-do-co` (cần ảnh quét, không phải việc tra cứu), `unesco` (đã đủ), `khoa-bang-danh-nhan` (167 mục, đã dày).
+
+**Sửa dữ liệu cũ có bằng chứng**: 5 di tích quốc gia đặc biệt bị gắn nhầm `dot: 10` → **`dot: 11`** (ATK II Hiệp Hòa, Căn cứ Cái Chanh, Đền An Xá, Đình Hạ Hiệp, Gành Đá Đĩa). Đối chiếu raw HTML `xaydungchinhsach.chinhphu.vn`: đợt 11 = QĐ 2280/QĐ-TTg 31/12/2020 đúng 7 di tích, đợt 10 = 7 di tích. Sau sửa: đợt 10 = 7, đợt 11 = 7, tổng lớp = 153 khớp danh sách chính thức. Mỗi mục có `ghi_chu_bien_tap` ghi rõ căn cứ.
+
+**Cổng `verify_trich_van_tich.mjs` bịt hai lỗ hổng** (`scripts/verify_trich_van_tich.mjs`):
+1. Toàn bộ trích dẫn nguồn `qdnd.vn` báo "không tải được" — CDN chống bot trả 302 trỏ về chính URL kèm `Set-Cookie` thử thách, `curl -L` không giữ cookie nên lặp tới trần 50 hop. **Và exit code vẫn 0** → cổng im lặng cho qua đúng thứ nó không với tới. Vá bằng cookie jar (`-b`/`-c`) + UA trình duyệt đầy đủ, cộng khối tổng kết cuối in riêng danh sách "CHƯA được máy đối chiếu".
+2. Sau khi (1) thông, lộ ra một báo động giả: bước `.replace(/<[^>]+>/g, " ")` biến thẻ đóng sát dấu câu (`…1968</a>, mũi…`) thành `1968 , mũi` — lệch khỏi trang thật, **tố oan một đoạn trích chính xác**. Vá bằng `.replace(/\s+([,.;:!?…])/g, "$1")` đặt trong `tai()` (dọn rác do chính bước lột thẻ tạo ra), **cố ý KHÔNG đặt trong `chuan()`** vì `chuan()` áp cho cả hai vế — thêm luật ở đó là nới tiêu chuẩn so khớp cho mọi đoạn trích.
+Kết quả sau vá: **213 khớp · 0 lệch · 0 không tải được**, kiểm hồi quy không ca nào tụt.
+
+**Phát hiện về chất lượng dữ liệu do agent sinh — đo được, không phải cảm tính.** Mọi agent tự soát lại việc mình vừa báo là xanh cả 4 cổng đều tìm ra lỗi thật: **22% · 23% · 31% · 31% · 38% · 67%**. Chi tiết cơ chế, hạng mục rủi ro xếp hạng, và các luật rút ra: xem khối đợt 2026-08-27 trong `PLAN.md`.
+
+**Ca chiều — soát chéo có hệ thống.** Ca sáng đo tỉ lệ sai bằng **tự soát**; ca chiều đổi sang **soát chéo**: mỗi agent soát việc của agent khác, theo một file luật chung (`LUAT-DOT2.md`, 13 mục) phát trước khi làm thay vì nhắc miệng giữa chừng. Tỉ lệ sai tụt rõ và tụt có lý do:
+
+| Khối soát chéo | Tỉ lệ sai | Ghi chú |
+|---|---|---|
+| 56 danh hiệu `anh-hung-can-hien-dai` | **1,8%** (1/56) | bậc 3 cho 20/24 mục |
+| 21 danh hiệu `danh-nhan-van-hoa` + `bao-tang` | **4,8%** (1/21) | lỗi duy nhất là một Giải thưởng Hồ Chí Minh không có thật |
+| 22 danh hiệu dtts · nghệ nhân · danh y | **13,6%** (3/22) | **0/17 lỗi ở danh hiệu**; cả 3 lỗi ở địa chỉ/số đo/tuổi |
+| 53 mục tín ngưỡng | **17%** (9/53) | |
+| 27 file sa đồ | **15%** (4/27) | gồm một ca bịa "Đặc khu Quảng Ninh 20/4/1979" |
+| 21 khẳng định `tri-thuc-khoa-hoc` | **~25%** | lỗi dồn ở tên cơ quan và số "hơn X" thổi phồng |
+| 43 mục quân sự · vua chúa (tự soát) | **46,5%** (20/43) | tự soát vẫn cao hơn soát chéo |
+
+**Kết luận đáng giữ: danh hiệu nhà nước hoá ra là hạng mục ĐÚNG nhất khi được soát bằng bậc 3, không phải sai nhất.** Ca sáng xếp nó rủi ro số 1 vì ba ca bịa; ca chiều soát 17 khẳng định danh hiệu ở một khối thì **đúng 17/17**, và lỗi rơi hết sang địa chỉ cấp thôn, số đo, tuổi — tức hạng mục #3–#4. Lý do: danh hiệu có **văn bản gốc kiểm được** (Quyết định Chủ tịch nước, Quyết định Bộ VHTTDL có danh sách tên đầy đủ), còn "thôn Dê Dàng" hay "86 tuổi" thì không có văn bản nào để đối chiếu. **Hạng mục nguy hiểm không phải hạng mục quan trọng nhất, mà là hạng mục KHÔNG CÓ NGUỒN ĐÓNG để đối chiếu.**
+
+**Bốn ca đáng ghi lại:**
+- `ha-quang-voc` — được gán "truy tặng Anh hùng LLVTND"; đọc toàn văn bài `nhandan.vn` thì chữ "Anh hùng" chỉ nằm trong tiêu đề mô tả **đơn vị** ("đặc công Rừng Sác Anh hùng"), không phải danh hiệu cá nhân. Và `ghi_chu_bien_tap` cũ **cũng đã bị nhiễm lỗi bịa** — nó tự khẳng định "nguồn xác nhận được truy tặng". Ghi chú biên tập không miễn nhiễm.
+- `le-van-cong` — mức tạ ghi 181kg, nguồn ghi 183kg. 181,5kg là kỷ lục Incheon 2014. **Con số có thật, gắn nhầm sự kiện** — không cổng nào bắt được.
+- `bui-hien` — năm sinh ghi 1919, nguồn ghi nguyên văn "(1909 – 2009)". Sai 10 năm.
+- `to-ngoc-thanh` — ghi "42 tập dân ca"; nguồn có "12 tập phổ biến" + "30 tập chuyên đề" và **không có số 42 nào**. Agent tự cộng rồi ghi như số đọc được.
+
+**Ba mục bị xoá theo một luật sai, cứu lại được cả ba.** Luật cũ "trang trống → xoá" bị bác sau ca `mod.gov.vn` (đặt cookie rồi `window.location.reload()`, curl thấy rỗng trong khi trang đầy đủ). Luật mới: chỉ xoá khi **NXDOMAIN xác nhận bằng cả `nslookup` lẫn `curl`**, hoặc **trang mở được nhưng không nhắc đối tượng**. Áp lại: `dao-nguyen-pho` (SSL hết hạn + nginx trả 404 giả cho non-browser — domain sống ở 27.71.228.229), `le-khiet` (404 một URL, domain sống), `nguyen-van-giap` (NXDOMAIN thật, nhưng tìm được nguồn thay của GS Đinh Xuân Lâm). Cả ba viết lại dày hơn bản cũ, và `dao-nguyen-pho` còn phát hiện **nguồn nhà nước tự vênh năm mất 1907/1908** — đã nêu cả hai theo bất biến #4.
+
+**Va chạm ghi song song — và cổng nào bắt được nó.** Ba file bị hai agent cùng ghi (`di-san-phi-vat-the`, `huyen-su-khai-quoc`, `nghe-nhan-di-san`) do phân việc chồng nhau. Các agent tự phát hiện và tự rút. Bài học kỹ thuật đáng giữ, do `khoabang-suthan` rút ra: **grep `entries-index.json` KHÔNG đủ khi nhiều agent chạy song song** — index là ảnh chụp cũ, không thấy file vừa bị sửa sống trên đĩa. `validate_overlays.mjs` quét file sống mới là cổng thật.
+
+**Quyết định của chủ dự án — tầng §9 mới.** 10 mục thiếu niên cứu người 2023–2026 (8/10 còn sống, ghi họ tên thật + lớp + trường) không khớp tầng nào trong T1–T5. Chủ dự án quyết **giữ nguyên, nêu tên thật, cho publish**. Đã nâng 10 mục `draft → reviewed` (lần nâng hợp lệ duy nhất của đợt — `docs/lich-su/four-track-plan.md` quy định việc nâng là của chủ dự án), mở **tầng T6 = trẻ vị thành niên còn sống, tên thật**, đăng ký 8 mục vào `docs/section9-sensitive.json` (181 → 192 dòng).
+
+---
+
 ## 2026-08-26 — Sa đồ diễn như phim · một trình dựng duy nhất · bản đồ cổ phủ được lên bản đồ
 
 | Chỉ số | Giá trị | Đo bằng |
