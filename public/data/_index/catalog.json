@@ -1,9 +1,9 @@
 {
   "tong": {
-    "so_file": 351,
-    "so_muc": 6087,
-    "so_byte": 11308478,
-    "ngay_sinh": "2026-08-26"
+    "so_file": 378,
+    "so_muc": 6722,
+    "so_byte": 12300481,
+    "ngay_sinh": "2026-08-27"
   },
   "files": [
     {
@@ -68,7 +68,7 @@
       "file": "battles/_index.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 8553,
+      "byte": 9593,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": null,
@@ -78,7 +78,7 @@
         "so_luong",
         "ids"
       ],
-      "sha256": "31e3fdb62e7411feadef4bff55cc371911d22bb7ed4e884257ad4a983c7ee41e",
+      "sha256": "710bbad73fc3a78dec8e0c873e10603123cdaa603c05f62a164125f1c5b7baa0",
       "mo_ta": "SINH TỰ ĐỘNG bởi scripts/build_sado_index.mjs — đừng sửa tay."
     },
     {
@@ -227,6 +227,64 @@
       "mo_ta": "Sa đồ khởi nghĩa Bãi Sậy 1883–1892 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/bao-ve-bien-gioi-hong-ngu-1977-1978.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 6069,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "1d464d1cdcf7b37b3286874069085c44e16931383b994b54b1bb3e5e3e93c798",
+      "mo_ta": "Sa đồ Chiến đấu bảo vệ biên giới Hồng Ngự, Đồng Tháp 1977–1978 — NỘI DUNG NHẠY CẢM (cùng chủ đề với các mục T2 đã liệt kê trong docs/section9-sensitive.json như bien-gioi-tay-nam-1978-1979, tham-sat-ba-chuc)."
+    },
+    {
+      "file": "battles/bao-ve-bien-gioi-quang-ninh-1979.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 6151,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "5125567447bee24fd5f93f4bd589f0b03bb9aa02b45ed966842f0cbe29b0180b",
+      "mo_ta": "Sa đồ Chiến đấu bảo vệ biên giới Quảng Ninh 1979 — NỘI DUNG NHẠY CẢM (cùng chủ đề với các mục T2 đã liệt kê trong docs/section9-sensitive.json như bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989, gac-ma-1988)."
+    },
+    {
       "file": "battles/bao-ve-cau-cam-nghe-an-1965-1968.json",
       "mien": "battles",
       "so_muc": 1,
@@ -317,7 +375,7 @@
       "file": "battles/bien-gioi-phia-bac-1979.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4815,
+      "byte": 5613,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -339,7 +397,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "0907ff1b58a568f69735ebd0973f4db4fd999c40599a18085f44b3864c0118d3",
+      "sha256": "62070e3013b078ff1584aebc67bea1574744305e8d116fdd517ed6c23669e750",
       "mo_ta": "Sa đồ Chiến tranh bảo vệ biên giới phía Bắc 1979 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json."
     },
     {
@@ -462,7 +520,7 @@
       "file": "battles/binh-do-400-lang-son-1981.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 7968,
+      "byte": 8815,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -484,7 +542,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "d471ffcdfcfdd49b104243338ac0e3739348bfdd9c69080722aeb79fb99b61c8",
+      "sha256": "779d902a2ad522901da418d52d865f56b07e3f94646ddc15405b5b6af0fa2713",
       "mo_ta": "Sa đồ Bình độ 400 (Cao Lộc, Lạng Sơn) 10–16/5/1981 — lô E."
     },
     {
@@ -636,7 +694,7 @@
       "file": "battles/che-bong-nga-danh-thang-long-1371.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4038,
+      "byte": 4798,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -658,14 +716,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "51c7cb0c5ee2d5fac6811c1b938b110e0869ed4abe49a553dc52b272422ad3e2",
+      "sha256": "71b69f700a8a74415f897b769834b26ded7edc03bd8eb9e169726c08aaa69751",
       "mo_ta": "Sa đồ Chế Bồng Nga đánh Thăng Long lần 1 (1371) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/che-bong-nga-danh-thang-long-1377.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 5187,
+      "byte": 6068,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -687,14 +745,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "2767ea22e78d35d4bbb3da4607f65a539238ee5c2ff044ffae051f01267e9c07",
+      "sha256": "80920c113f86bfa25e3b7facddea0aff512a2438792675bbaa53c0b4ef7cbc39",
       "mo_ta": "Sa đồ Chế Bồng Nga đánh phá Thăng Long 1377 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/che-bong-nga-danh-thang-long-1378.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 3490,
+      "byte": 4125,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -716,14 +774,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "e4e71e020dbf2a49d6985aa72e595360bb70611764b1a4dc8192caeb40631ff4",
+      "sha256": "0076d045fcaa342365c51dfc2a141fafc27719921d5c8fb512c3a209db62bb63",
       "mo_ta": "Sa đồ Chế Bồng Nga đánh Thăng Long lần 3 (1378) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/che-bong-nga-danh-thang-long-1383.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4084,
+      "byte": 4702,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -745,14 +803,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "2abf82b29df3ba52e71709148ef1710e9bda5468fc6812229b37ac46e6b29ac3",
+      "sha256": "b5f35f7a1866848b836a43aae8bc2d86b9c37b382c46905ed3c8abcf4e0eb79c",
       "mo_ta": "Sa đồ Chế Bồng Nga đánh Thăng Long lần 4 (1383) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/che-bong-nga-tu-tran-1390.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4393,
+      "byte": 5802,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -774,7 +832,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "b47745412eed1bfebb2586c35437052054e461d16c0c551a3fc01fdf7f5b3c6b",
+      "sha256": "c008a5a56702540e1397ede65548f1d9d57ff2aa670c273411a576357e0e3366",
       "mo_ta": "Sa đồ Chế Bồng Nga tử trận trên sông Hải Triều 1390 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -810,7 +868,7 @@
       "file": "battles/chien-dau-bao-ve-bien-gioi-cao-bang-1979.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 7601,
+      "byte": 8376,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -832,14 +890,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "c2f1f9a735433e49a0be1340c318eee63842a56ea6ca949af9e785787cbb1244",
+      "sha256": "d8a4143ffb575ef3a5b02bafa336066c389ae2621751c57ac264f030cb1d10d6",
       "mo_ta": "Sa đồ Chiến đấu bảo vệ biên giới Cao Bằng 1979 — lô E."
     },
     {
       "file": "battles/chien-dau-bao-ve-bien-gioi-ha-tien-1975-1979.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 7319,
+      "byte": 8010,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -861,14 +919,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "c2e3168d38d676bae278a65f5b31ab5d9d2c221299700df1411403c1a5277573",
+      "sha256": "269a6504e9884bf20dfd2a374a62ec6289a4781709c975fbd2fa561a7f9ea98d",
       "mo_ta": "Sa đồ Chiến đấu bảo vệ biên giới Hà Tiên (Kiên Giang) 1975–1979 — lô E."
     },
     {
       "file": "battles/chien-dau-bao-ve-bien-gioi-lang-son-1979.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 7569,
+      "byte": 8394,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -890,14 +948,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "9da3baaeec910d0ac85bdda169dd03f466179013ff0aafc423d99290aaad8b91",
+      "sha256": "ae36acfe5704e5aae71effe4cd696299d8539d629f23c2f3c1f46e727e5cbed8",
       "mo_ta": "Sa đồ Chiến đấu bảo vệ biên giới Lạng Sơn (Đồng Đăng) 1979 — lô E."
     },
     {
       "file": "battles/chien-dau-bao-ve-bien-gioi-lao-cai-1979.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 6311,
+      "byte": 7083,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -919,7 +977,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "24f5a2853b661ee7556f8991afc4084c33c15d50e8044d22b9d4a9665500e222",
+      "sha256": "e15d8ed9ffd8d9b699ddd4894cd52f7b14739abeef2fe548cf07daeb181bb1c3",
       "mo_ta": "Sa đồ Chiến đấu bảo vệ biên giới Lào Cai 1979 — lô E."
     },
     {
@@ -952,10 +1010,39 @@
       "mo_ta": "Sa đồ Chiến đấu bảo vệ biên giới Tây Ninh 1977 — lô E."
     },
     {
+      "file": "battles/chien-dich-an-khe-1953.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5479,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "75f87876fd839c94e43fa405ac5164b01ddcb09816ca13872a9f9d4c40002d6c",
+      "mo_ta": "Sa đồ Chiến dịch An Khê 13–28/1/1953 — bám sát nội dung đã tra từ TTXVN + Báo Bình Phước."
+    },
+    {
       "file": "battles/chien-dich-bac-tay-nguyen-1954.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4198,
+      "byte": 5289,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -977,7 +1064,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "ca4309435b397e00e75580cf518e867dff04220a8171245d16495b19f5b80147",
+      "sha256": "490571a9bad0ab3b3de589c1beabb85f8af44bd264d0561eb4b4a9ffc6e5d80d",
       "mo_ta": "Sa đồ Chiến dịch Bắc Tây Nguyên 1954 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -1068,10 +1155,39 @@
       "mo_ta": "Sa đồ Chiến dịch Buôn Ma Thuột 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/chien-dich-cau-ke-1949.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4282,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "4333cbd20c7835c29e3ceb0b0919198dec391c0f8460eb4ff3ba9a8e4518a2f7",
+      "mo_ta": "Sa đồ Chiến dịch Cầu Kè 12/1949 — bám sát nội dung đã tra từ baotravinh.vn."
+    },
+    {
       "file": "battles/chien-dich-dak-to-1967.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 3929,
+      "byte": 4817,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1093,14 +1209,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "d3638e3261f29cfb91b4181d56ead14123b96bed13c11a942eec23187df88782",
+      "sha256": "cbd930042e5944102fa9eb4dd27fd9ef262b6b212143020777a83ebb22fdaed8",
       "mo_ta": "Sa đồ Chiến dịch Đắk Tô I 1967 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/chien-dich-duong-14-phuoc-long-1974-1975.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4545,
+      "byte": 5722,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1122,8 +1238,37 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "6f15109416df7bfcafd0cd0584f61857c14e8226f78559f5400f98891bda78fd",
+      "sha256": "1194c7e230c66818768b2a4cf324ac93771b544516c9ef7e7adadb78ff9f870c",
       "mo_ta": "Sa đồ Chiến dịch Đường 14 – Phước Long 1974-1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/chien-dich-giai-phong-an-lao-1964.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5967,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "14222882ef459a3b4d75759667fc7bc5f8de6fcaa811fc21b863c36b9771171c",
+      "mo_ta": "Sa đồ Chiến dịch giải phóng An Lão 12/1964 — bám sát nội dung đã tra từ baogialai.com.vn."
     },
     {
       "file": "battles/chien-dich-hcm-1975.json",
@@ -1332,7 +1477,7 @@
       "file": "battles/chien-dich-thuong-lao-1953.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4263,
+      "byte": 5490,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1354,14 +1499,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "f6fff9344bce72734875c6ac43a02e688b570e0f0a0a707a7e70fa01b5ac808b",
+      "sha256": "bfbb165dc71a452005cb2a2ce7dc33377f7e63420b3ebfa386427cf78ba67772",
       "mo_ta": "Sa đồ Chiến dịch Thượng Lào 1953 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/chien-dich-tien-cong-giai-phong-quang-tri-1972.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4466,
+      "byte": 5209,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1383,7 +1528,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "35ce430139fb027b8ce505a425c24bacc07649fbd7d264445a7554db419c127c",
+      "sha256": "3c8ae06cbfc5e55637538f8a1cc21e13f3ea5a97ff198327bfafa1dfad343286",
       "mo_ta": "Sa đồ Chiến dịch tiến công giải phóng Quảng Trị (Xuân 1972) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
     },
     {
@@ -1419,7 +1564,7 @@
       "file": "battles/chien-dich-tran-hung-dao-trung-du-1950.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 5408,
+      "byte": 6157,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1441,7 +1586,7 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "4fd3cc7210faf3cb7c6a8db8a5e0a71d1dbd805a26a480675a2ee2dfa3213847",
+      "sha256": "9456549fd05ad41859dd39174c97f7bedbfaa66630271e93f5b4a6d9f0c3c2a4",
       "mo_ta": "Sa đồ Chiến dịch Trần Hưng Đạo (Chiến dịch Trung Du) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -1535,7 +1680,7 @@
       "file": "battles/chien-thang-ba-gia-1965.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4679,
+      "byte": 5567,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1557,14 +1702,14 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "5c94947fab2401736555e70f956bf1e43a2239c04a394abcb51c5aa66f2e010c",
+      "sha256": "f27fe181272654a41fce2252b76253161c2bc44cb885a7c686f236c38c562efe",
       "mo_ta": "Sa đồ Chiến thắng Ba Gia — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/chien-thang-chuong-thien-1973.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 6100,
+      "byte": 6951,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1586,14 +1731,14 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "fdab07ae438abf80d2aef667b1d64f8f43bddda6523d74324132bc3f38ed3e54",
+      "sha256": "1add7edea4973037a06f84a9d4e295b9b2cf661ae324f29ba4e5359e09e2be64",
       "mo_ta": "Sa đồ Chiến thắng Chương Thiện (75 lượt tiểu đoàn địch) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
     },
     {
       "file": "battles/chien-thang-dak-to-tan-canh-1972.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 5793,
+      "byte": 6681,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1615,7 +1760,7 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "1ecc7a8d9d6845a5191be43cae13598c1b7bfd48121fd0fe58bdc6e1f69fc4ea",
+      "sha256": "bcbf842cd4e91377f5546f840052b45dda47052f57e2fa0e63f9527beca20736",
       "mo_ta": "Sa đồ Chiến thắng Đắk Tô – Tân Cảnh (1972) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
     },
     {
@@ -1648,10 +1793,39 @@
       "mo_ta": "Sa đồ Chiến thắng Đèo Bông Lau — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/chien-thang-giong-dua-1947.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5877,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "9fb5216307717b65c290a8a161a2262816ba48603c73e0a6b70ebd20f7595210",
+      "mo_ta": "Sa đồ Chiến thắng Giồng Dứa 25/4/1947 — nguồn ban đầu (baoapbac.vn, tiengiang.gov.vn) KHÔNG mở được (DNS lỗi / chặn bot 403) nên đã THAY bằng baoangiang.com.vn (đăng lại bài gốc Báo Ấp Bắc, tác giả Hồng Lê) + doanthanhnien.vn, cả hai đã xác minh trực tiếp bằng crawl4ai (2026-08-27)."
+    },
+    {
       "file": "battles/chien-thang-song-lo-doan-hung-1947.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4085,
+      "byte": 4957,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1673,14 +1847,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "4665f52b77a7467769b95b59855594b327c16931641d822683655732c642ad38",
+      "sha256": "a48c7e8120ab9543c2da8e3d0929a09146c8b395fcee2e2c4d1aed73e1c7ca3e",
       "mo_ta": "Sa đồ Chiến thắng Sông Lô – Đoan Hùng — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/chien-thang-tam-vu-1946-1948.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4107,
+      "byte": 4913,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1702,7 +1876,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "bb3253478b419bee95d916958c0bfa5229722b2db8221057c4d2f359aea6edd3",
+      "sha256": "f2cdaa430038a875f9d874df2a773ea66dcc2c9565003c81c436a3b8da01dadd",
       "mo_ta": "Sa đồ Chiến thắng Tầm Vu (I – IV) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -1970,7 +2144,7 @@
       "file": "battles/dac-cong-rung-sac-kho-xang-nha-be-1973.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4622,
+      "byte": 5357,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -1992,14 +2166,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "725776830166e21f920f10ae9945900ee853b2d5c23c97139b83e24e30ee832c",
+      "sha256": "b1d4187654deaea46b9afc715d7ce2ceb72f5ad6f870faf48106fccfda447f98",
       "mo_ta": "Sa đồ Đặc công Rừng Sác đánh kho xăng Nhà Bè — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
     },
     {
       "file": "battles/dai-doi-nu-phao-binh-ngu-thuy-1967.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4656,
+      "byte": 5410,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2021,7 +2195,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "3f18678a27b03e008950a84ff3c1ebefc6ad9a91507fc9b8d3c8c405bd7866ad",
+      "sha256": "0c33889efba49e97490d4b9420d88f5d83ac5ea5fa91739f2af98c8fdeab3476",
       "mo_ta": "Sa đồ Đại đội nữ pháo binh Ngư Thủy — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
     },
     {
@@ -2083,6 +2257,35 @@
       "mo_ta": "Sa đồ trận Đại đồn Chí Hoà 1861 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/dai-nam-cuu-van-tuong-tran-ninh-1827.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 6438,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "62f35193355c394867b98eedd73d0f46711502c5c7554fa745fcaf92d495df4b",
+      "mo_ta": "Bám ket_qua + mo_ta đã duyệt trong chien-dich-tran-danh.json nguyên văn."
+    },
+    {
       "file": "battles/dai-nam-vay-oudong-hoa-uoc-1845.json",
       "mien": "battles",
       "so_muc": 1,
@@ -2115,7 +2318,7 @@
       "file": "battles/danh-bai-hanh-quan-junction-city-1967.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4313,
+      "byte": 5294,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2137,7 +2340,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "5da6ebe4355970096391c74f97f6325ef189096ecdcac7e5602083abf08a4cb3",
+      "sha256": "3e34ff6dff0f084539942e9106c695fb6a412ba3596102c5b45c4a3e852afa75",
       "mo_ta": "Sa đồ đánh bại cuộc hành quân Junction City 1967 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -2231,7 +2434,7 @@
       "file": "battles/diem-cao-1509-vi-xuyen.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 6201,
+      "byte": 6995,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2253,7 +2456,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "bdafa624503661896ccb7312ce30777f85f134076365588aedc322fe5adb9c42",
+      "sha256": "1bf0ed8a7bb483009b972596beeefc804514f4e5a8dabe6c3395d6bdd456aa33",
       "mo_ta": "Sa đồ Điểm cao 1509 (Vị Xuyên) 28/4/1984 — lô E."
     },
     {
@@ -2289,7 +2492,7 @@
       "file": "battles/diem-cao-772-vi-xuyen.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 6576,
+      "byte": 7215,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2311,7 +2514,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "94a1ab657b73f454c2db9c8df91e89b3084bf776bca3af72d33071192b86f441",
+      "sha256": "4462be410aac394c12b33638c358ff12fe476c231ba126c405748c1266c9b46c",
       "mo_ta": "Sa đồ Điểm cao 772 (Vị Xuyên) 12/7/1984 — lô E."
     },
     {
@@ -2492,7 +2695,7 @@
       "file": "battles/duong-9-khe-sanh-1968.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4657,
+      "byte": 5416,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2514,14 +2717,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "7e175418357ba1505c4724a2ff10340b585b86032096e0db528dc246c029e606",
+      "sha256": "1921478cc92c8dd5269140438943edc99bbf4a009d6fdc659d28dedc471f4e5e",
       "mo_ta": "Sa đồ Chiến dịch Đường 9 – Khe Sanh 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/duong-9-nam-lao-1971.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4608,
+      "byte": 5494,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2543,7 +2746,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "a6526a07241664cd2f51b16779d26f199bc0cd0ec78ddb826d48e90962067574",
+      "sha256": "1debecb14af1ac89042fdc388cfeb33a0c88ff95e0e2305c45595ff48bf9d0a1",
       "mo_ta": "Sa đồ Chiến dịch phản công Đường 9 – Nam Lào 1971 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -2666,7 +2869,7 @@
       "file": "battles/giai-phong-con-tien-doc-mieu-1972.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 6025,
+      "byte": 6702,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2688,8 +2891,37 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "3f30c2d83ab6703a5fb9c92ab1817d3eabb6f54b0443c3080fc5de323e418f10",
+      "sha256": "0310564c5d9e40321d8af200d6d33b626d5386f9494000fa666c052b586be032",
       "mo_ta": "Sa đồ Giải phóng Cồn Tiên – Dốc Miếu, phá vành đai điện tử McNamara — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
+    },
+    {
+      "file": "battles/giai-phong-nghe-an-dien-chau-tan-binh-thuan-hoa-1425.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 11364,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "47474409af2ab3eed9dc12febc728767da6832e46609985d5a9155dcc7fcf3b0",
+      "mo_ta": "Sa đồ Giải phóng Nghệ An – Diễn Châu – Tân Bình – Thuận Hóa 1424–1425 — dữ kiện chính lấy từ baothainguyen.vn (đã xác minh trực tiếp qua WebFetch, đợt sáng nay)."
     },
     {
       "file": "battles/giai-phong-phu-quoc-tho-chu-1975.json",
@@ -2811,7 +3043,7 @@
       "file": "battles/gianh-chinh-quyen-sai-gon-25-8-1945.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4175,
+      "byte": 4938,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2833,7 +3065,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "1ba0ccdbeaec1666da459c618980cb3284548b9c53d1b14467eae5fb7365f5e9",
+      "sha256": "fc52d3ab53f4dfe0cb15c571a0aa3dba852db8b777f107d80248157e48085177",
       "mo_ta": "Sa đồ giành chính quyền Sài Gòn 25/8/1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -2924,6 +3156,35 @@
       "mo_ta": "Sa đồ Hải chiến Hoàng Sa 1974 — chủ đề chủ quyền lãnh thổ nhạy cảm (không nằm trong docs/section9-sensitive.json chính thức nhưng áp kỷ luật T2 theo Bất biến #1 dự án)."
     },
     {
+      "file": "battles/hai-duong-quang-yen-dep-cuop-bien-1849.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4448,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "703dabf5afecace5836b1a1fde33310ded26d594fa84bdd78032edbedbcc4b71",
+      "mo_ta": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn."
+    },
+    {
       "file": "battles/ham-tu-chuong-duong-1285.json",
       "mien": "battles",
       "so_muc": 1,
@@ -2956,7 +3217,7 @@
       "file": "battles/hoa-binh-1951-1952.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4911,
+      "byte": 5717,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -2978,7 +3239,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "c3c534a6b045696033a911c54d50cf933d9cae28463cdf844564f8f2efb01c67",
+      "sha256": "0ff4b6f8745922998cca6d05df087f8e81cbff0d0724a1d4c44ad7b8c1c27762",
       "mo_ta": "Sa đồ Chiến dịch Hòa Bình 1951–1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -3272,6 +3533,64 @@
       "mo_ta": "Sa đồ khởi nghĩa 'chày vôi' của Đoàn Hữu Trưng tại Huế (1866) — MINH HOẠ theo diễn biến chính sử/tài liệu lưu trữ, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/khoi-nghia-doi-an-lang-son-1921.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 6342,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "fb1ddd1e7da7d28032f83f5f775b9ae8966600a06d3176209a539cf37c16065f",
+      "mo_ta": "Bám ket_qua đã duyệt trong chien-dich-tran-danh.json làm gốc, có nêu MÂU THUẪN NGUỒN chứ không tự ý chọn bản gọn hơn (bất biến #4 dự án): (1) NĂM — cổng Bộ VHTTDL (scov.gov.vn, nguồn overlay đã duyệt) ghi 1921, trong khi cổng Ban Tuyên giáo và Dân vận tỉnh Lạng Sơn ghi sự kiện xảy ra tháng 10/1920; giữ nam=1921 theo overlay/tên file đã giao, ghi rõ chênh lệch trong bước 1."
+    },
+    {
+      "file": "battles/khoi-nghia-duong-thanh-819.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4284,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "64334347ede512b7be03fc48cd170452a0d2e6ff3ab0a1f56e1796330b8c196f",
+      "mo_ta": "Bám ket_qua đã duyệt trong chien-dich-tran-danh.json nguyên văn."
+    },
+    {
       "file": "battles/khoi-nghia-hai-ba-trung-40.json",
       "mien": "battles",
       "so_muc": 1,
@@ -3391,7 +3710,7 @@
       "file": "battles/khoi-nghia-ngo-be-1344.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 3993,
+      "byte": 4545,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -3413,14 +3732,72 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "131f0bf2e36b355a3cab5533a9b3c15350a346248066f22b0ba6ece08fe8c87d",
+      "sha256": "55ced260d00b7b9001a863232fc3942b0f83ae5be813bd0a9138c80e67f0105f",
       "mo_ta": "Sa đồ khởi nghĩa Ngô Bệ 1344-1360 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/khoi-nghia-nguyen-danh-phuong-1740.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5275,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "d6192f946a0cb1a6f6efabc60a9bbb52f4e2b07af8c58531857bc25da1589743",
+      "mo_ta": "Sa đồ Khởi nghĩa Nguyễn Danh Phương 1740–1750 — nguồn vinhphuc.gov.vn dùng lúc đầu KHÔNG mở được (3 lần: WebFetch https + http đều lỗi kết nối/chứng chỉ, crawl4ai ECONNREFUSED) nên đã THAY bằng nguồn baothainguyen.vn đã xác minh trực tiếp bằng WebFetch (2026-08-27), theo đúng luật bổ sung của điều phối viên."
+    },
+    {
+      "file": "battles/khoi-nghia-nguyen-huu-cau-1741.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5845,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "562e508f63285ab3b81e953f0c8119e45069cc00a6117b25fb99fa986e250a66",
+      "mo_ta": "Sa đồ Khởi nghĩa Nguyễn Hữu Cầu 1741–1751 — nội dung ĐÃ XÁC MINH lại bằng WebFetch/crawl4ai trực tiếp mở hdnd.haiduong.gov.vn sau cảnh báo WebSearch có thể bịa chi tiết (2026-08-27): BỎ chi tiết '1743 giết thủy binh, tự xưng Đông Đạo Thống quốc Bảo dân Đại tướng quân', 'lan Kinh Bắc uy hiếp Thăng Long', 'kéo xuống Sơn Nam – Thanh Hóa – Nghệ An', 'hành hình tại Thăng Long tháng 3/1751' — KHÔNG có trong trang đã xác minh."
     },
     {
       "file": "battles/khoi-nghia-nguyen-thanh-nguyen-ky-1379.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4766,
+      "byte": 5400,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -3442,7 +3819,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "f389c4e15979ddb5984f4256d356637d1b31759aa29db835a9027c6dc882977c",
+      "sha256": "7748da1fbdb99a2f4ae12c7bb01cf922fe99ce0beb719a23cc4dd9e20387b88e",
       "mo_ta": "Sa đồ khởi nghĩa Nguyễn Thanh, Nguyễn Kỵ 1379 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -3884,7 +4261,7 @@
       "file": "battles/ly-thuong-kiet-nam-chinh-1069.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4485,
+      "byte": 5004,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -3906,14 +4283,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "7180db84dd53c87a61d8df04ca41944605674870b7afe44dcbd1ab5e938ef496",
+      "sha256": "bbc2a67e78d657cae4f5d3a53246bc7dfbe0010bbab0f08daca22b381e27dc93",
       "mo_ta": "Sa đồ Lý Thường Kiệt Nam chinh Chiêm Thành 1069 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
-      "file": "battles/mac-dang-dung-soan-ngoi-1527.json",
+      "file": "battles/ly-tu-tien-dinh-kien-687.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4183,
+      "byte": 4219,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -3929,13 +4306,42 @@
         "dia_diem",
         "lien_quan_tinh",
         "sa_do_ghi_chu",
+        "dia_hinh",
         "phan_tu",
         "buoc",
         "ket_qua",
-        "y_nghia",
-        "trang_thai"
+        "y_nghia"
       ],
-      "sha256": "f4df211d461813d017e41e1e4e53201520247893709b11c0990e1f5441c3edb3",
+      "sha256": "cbd8dd0987bb499b497c29e89379aea4b2748985c8aa63b7f4d2f2bafbe1ddb6",
+      "mo_ta": "Nguồn RẤT MỎNG — chỉ một dòng tóm tắt từ scov.gov.vn, giống hệt overlay đã duyệt (chien-dich-tran-danh.json)."
+    },
+    {
+      "file": "battles/mac-dang-dung-soan-ngoi-1527.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4390,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "385be8dcd6f794aded600c08e572a4695f918119bdd1f2e1ffb3f4df87b8afd5",
       "mo_ta": "Sa đồ Mạc Đăng Dung soán ngôi nhà Lê 1527 — sơ đồ diễn biến chính trị-quân sự, KHÔNG phải trận đánh."
     },
     {
@@ -4029,7 +4435,7 @@
       "file": "battles/mau-than-hue-1968.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4711,
+      "byte": 5389,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -4051,7 +4457,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "491ab36177f7b0394a87677382fd5669698f1dbf3f714e2003fd3af15630e8ca",
+      "sha256": "adf3161e39a245c7c97e70faa5ed2df4dd8b47735f67faa3c611b0a9338375aa",
       "mo_ta": "Sa đồ Tổng tiến công Mậu Thân tại Huế 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -4111,6 +4517,35 @@
       ],
       "sha256": "a1a69990148b4a5b4f185c872c09b6fc683621367a266c6b056fe5884a6db693",
       "mo_ta": "Sa đồ Nam Bộ kháng chiến 1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/nam-chieu-cao-bien-khoi-phuc-dai-la-863.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 6283,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "0ed63b79720234f45a8f854de8342e10654fc50dfd7826dfa631ebf44c91f30d",
+      "mo_ta": "Bám nguyên văn ket_qua/ghi_chu đã duyệt trong chien-dich-tran-danh.json (nguồn: scov.gov.vn — Việt Nam sử lược, Trần Trọng Kim)."
     },
     {
       "file": "battles/nam-ky-khoi-nghia-1940.json",
@@ -4290,7 +4725,7 @@
       "file": "battles/nguyen-anh-giu-thanh-dien-khanh-1794.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4014,
+      "byte": 5476,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -4312,14 +4747,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "238cb8143127e63d746afb56ae05102b515536a252ae46fc49e79698d993fa8b",
+      "sha256": "8767a0e9e953fc941716159273a56b9c0544d2600c387f7e81218afae09489fc",
       "mo_ta": "Sa đồ Nguyễn Ánh giữ thành Diên Khánh 1793-1794 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/nguyen-anh-ha-thanh-phu-xuan-1801.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 3737,
+      "byte": 4704,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -4341,14 +4776,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "dbf713e4c8cd54fd10bb6b601ca2adfee2f8621444c75afc1e65d0439cfb448b",
+      "sha256": "915135d43d13fe300f05f8020cabaecea167aa178f544ef6bc43f4157bb8144c",
       "mo_ta": "Sa đồ Nguyễn Ánh hạ thành Phú Xuân 1801 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/nguyen-anh-vay-thanh-binh-dinh-1799.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4297,
+      "byte": 4997,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -4370,7 +4805,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "65f0bf05bdfa03671a07c0cbe1891d7274f08c59e2e81d5db4788e92cfc929e6",
+      "sha256": "262abb7ab7e89447c96412559f166469433a99efbdf16b9c6bffc7c1268781c2",
       "mo_ta": "Sa đồ Nguyễn Ánh chiếm thành Bình Định 1799 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -4406,7 +4841,7 @@
       "file": "battles/nguyen-hue-diet-trinh-1786.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4612,
+      "byte": 5327,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -4428,7 +4863,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "48df90efce15c39fffbd6f4bc52e017e24d0a45f21114314445608c63844d2d4",
+      "sha256": "9048b1b534f62b1cac525b937f7e69a1ff8a1ab29e3521e3ca1cb0a24f520a2b",
       "mo_ta": "Sa đồ Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long 1786 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -4754,7 +5189,7 @@
       "file": "battles/quan-tinh-nguyen-vn-campuchia-1979-1989.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 8047,
+      "byte": 9334,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -4776,8 +5211,95 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "53986129b9adf4ce10a99b3373c5b3eb876d797fd56015d56f581cb4272722eb",
+      "sha256": "d5feabb42b0cb1782484ae6a409f6f35f5c0952f264b44bfe1e114c87949cb15",
       "mo_ta": "Sa đồ Quân tình nguyện Việt Nam làm nghĩa vụ quốc tế tại Campuchia 1979–1989 — lô E."
+    },
+    {
+      "file": "battles/quang-yen-dep-cuop-bien-1828.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 3420,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "e1831a34f9eedb18bf4e1697ab71167aa51759a2456a2a05abaae1a1097e6bc9",
+      "mo_ta": "Bám nguyên văn ket_qua/mo_ta đã duyệt trong chien-dich-tran-danh.json."
+    },
+    {
+      "file": "battles/quang-yen-dep-cuop-bien-1829.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 3327,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "2122a30a2ba164ab09327e1b5a2e4f678267012fc9959ca16bc7177e384394a2",
+      "mo_ta": "Bám nguyên văn ket_qua/mo_ta đã duyệt trong chien-dich-tran-danh.json."
+    },
+    {
+      "file": "battles/quang-yen-dep-cuop-bien-1844.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 3119,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "8438b119186f1a898e0f24b282e4a279e3dac1f7111e0118d69b0767c62923bf",
+      "mo_ta": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn."
     },
     {
       "file": "battles/rach-gam-xoai-mut-1785.json",
@@ -4928,7 +5450,7 @@
       "file": "battles/tau-235-hon-heo-1968.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 5296,
+      "byte": 6038,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -4950,7 +5472,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "b2775bf7e414f50909387dea06872c5f7fa017a57f2d75b49162e3d39d42d1c3",
+      "sha256": "da3c0ce787ca87b0369c73c2c61b9ac40113b6fbf065961068fb9d3611381d71",
       "mo_ta": "Sa đồ Tàu 235 tại vịnh Hòn Hèo (Tết Mậu Thân 1968) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
     },
     {
@@ -5073,7 +5595,7 @@
       "file": "battles/tham-sat-ba-chuc-1978.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 8126,
+      "byte": 8787,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5095,7 +5617,7 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "82a7a4c647ca08894d4d561cb96e655ae6a3592152ed665449d702bbab1d4e82",
+      "sha256": "3a96f20d426c2aeee0cb9ccc3ea3b0edb03d9113b59b073bb88de9990f902909",
       "mo_ta": "Sa đồ Thảm sát Ba Chúc 1978 — lô E."
     },
     {
@@ -5155,6 +5677,35 @@
       ],
       "sha256": "d95a40a89c19ca5bed575bb68a5bd37f60ba81b3731f2f9f4d32c91fadf45cd1",
       "mo_ta": "Sa đồ \"Tiếng sấm đường 5\" – đánh giao thông chống Pháp — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/tieu-ap-dep-cuop-bien-1835.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 3798,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "bc32777f4c442a2e7ff9e69d29d4d68a0da60d97b37db0b812baf7d6e04ce6d3",
+      "mo_ta": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn."
     },
     {
       "file": "battles/tieu-doan-ten-lua-57-ha-2-b52-1972.json",
@@ -5447,6 +5998,35 @@
       "mo_ta": "Sa đồ trận Bồ Đằng 1424 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/tran-cao-diem-doc-tra-my-1971.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4088,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "e07b5e53062311d05114c6a246d2d618d4e88b4db34f6267c330e00e1b9e1e8f",
+      "mo_ta": "Sa đồ Trận cao điểm Đốc, Trà My 27/3/1971 — bám sát nguyên văn nội dung đã tra từ nhandan.vn, không suy diễn thêm số hiệu đơn vị Mỹ hay thương vong ngoài nguồn."
+    },
+    {
       "file": "battles/tran-cau-giay-1873.json",
       "mien": "battles",
       "so_muc": 1,
@@ -5508,7 +6088,7 @@
       "file": "battles/tran-cau-rach-chiec-1975.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 6684,
+      "byte": 7440,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5530,7 +6110,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "3fee711b0f944ddf4de46112284a949027197be93cc64f681f472f59297dc419",
+      "sha256": "b1e81bdac484d0ee2c55cf26ff3234be9bdb20de121504327ae83ea6a948393a",
       "mo_ta": "Sa đồ Trận cầu Rạch Chiếc 1975 — lô E."
     },
     {
@@ -5621,6 +6201,64 @@
       "mo_ta": "Sa đồ trận Đà Nẵng 1858 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/tran-dak-po-1954.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5563,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "ec9353e06353145a06f12036de6604994c0ade3999998ffba01820cfb32de9e6",
+      "mo_ta": "Sa đồ Trận Đắk Pơ 24/6/1954 — nội dung ĐÃ XÁC MINH lại bằng WebFetch trực tiếp mở special.nhandan.vn sau cảnh báo WebSearch có thể bịa chi tiết (2026-08-27): bỏ chi tiết 'GM 100 vừa từ Triều Tiên chuyển sang' vì trang gốc KHÔNG xác nhận; thay bằng số liệu đã xác minh (1.900 địch loại khỏi vòng chiến, Đại tá Barroux bị bắt, 229 xe, 20 đại bác)."
+    },
+    {
+      "file": "battles/tran-dam-doi-cai-nuoc-cha-la-1963.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4644,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "1afa998ddae82f62e88008f20729facd02676a635777e61affff872ce806a43f",
+      "mo_ta": "Sa đồ Chiến thắng Đầm Dơi – Cái Nước – Chà Là 1963 — nội dung ĐÃ XÁC MINH lại bằng WebFetch trực tiếp mở baocamau.vn sau cảnh báo WebSearch có thể bịa chi tiết (2026-08-27): bỏ số tổng 'hơn 1.000 địch' chưa xác nhận được, thay bằng số liệu cụ thể tại Chà Là đã xác minh (bắt 30 tên, bắn rơi 19 máy bay, thu 500 dù)."
+    },
+    {
       "file": "battles/tran-dau-su-doan-320-1951.json",
       "mien": "battles",
       "so_muc": 1,
@@ -5682,7 +6320,7 @@
       "file": "battles/tran-do-ban-1377.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4499,
+      "byte": 5661,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5704,14 +6342,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "c579afafb52d0bcd9a9ef1ddca9c0c96a45363546d2a563f5009d7eb4b598926",
+      "sha256": "f6ef002b29be163a99ec2b93c1d9ce1f84d133f65fa81ea91b558f3ffc5f62ab",
       "mo_ta": "Sa đồ trận Đồ Bàn 1377 — vua Trần Duệ Tông tử trận — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/tran-doi-a-bia-1969.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4619,
+      "byte": 5467,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5733,14 +6371,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "800d1b867c79fcfb2d565ef16450b49651a314fa57fec7af42c8b3b7c9260171",
+      "sha256": "24cb488b3d6df011977748c83608b4bf99860f2698f19788db15fe34844382cf",
       "mo_ta": "Sa đồ trận đồi A Bia 1969 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/tran-ho-dien-triet-545.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 5362,
+      "byte": 6345,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5762,7 +6400,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "43c55d02dbcdabdb7df2873c5efd2e628996b2ea146d4a8bcd3c675b1ece2436",
+      "sha256": "d317d63841e11bfbfe86ac31b9329fdb55dd2af9bd6b3f85d68ecea10692ca76",
       "mo_ta": "Sa đồ trận hồ Điển Triệt 545 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -5798,7 +6436,7 @@
       "file": "battles/tran-lang-vay-1968.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4489,
+      "byte": 5356,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5820,7 +6458,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "2e8f61cf0a7d6f88c3cb61c91893f4d2e91dc8acf0aa4401e6798af1fc4e67cb",
+      "sha256": "2bba20e9b25418283cb9fcb8c49cee8b77dfa51ddd63300408a74d4f830a02a7",
       "mo_ta": "Sa đồ trận Làng Vây 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -5885,7 +6523,7 @@
       "file": "battles/tran-nhat-le-1627.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4888,
+      "byte": 5625,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5907,7 +6545,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "e124f01149b0437b522e2b4ed3bd117c773db0ea9f8412f4be2d31e734cc5550",
+      "sha256": "c09fa77936068c1c1ccfda5d8bbe087a9bb40dfa54480db34e86f4ed1dd14c4c",
       "mo_ta": "Sa đồ trận Nhật Lệ 1627 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -5943,7 +6581,7 @@
       "file": "battles/tran-ninh-nhat-le-1672.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4579,
+      "byte": 5781,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5965,14 +6603,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "6f9effe3641ec176bb9da10f2be4e371bd748c032538103a487ba7a7ccff16e2",
+      "sha256": "343fd7daece61d5c4d1570306114e09fcaf011e603c8e067c47ff43b21ce7761",
       "mo_ta": "Sa đồ trận Trấn Ninh — Nhật Lệ 1672 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/tran-phu-xuan-1786.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 3937,
+      "byte": 5571,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -5994,7 +6632,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "5888964e7979055956529578fc378e655815ad401e4921717f1587c77e1557ce",
+      "sha256": "ef8954c1ff6aa2fe985a39cbf95c9494e07b0a75444f8636a0e87f3bc32d2b4b",
       "mo_ta": "Sa đồ trận Phú Xuân 1786 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -6059,7 +6697,7 @@
       "file": "battles/tran-thanh-gia-dinh-1859.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 3533,
+      "byte": 5456,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6081,7 +6719,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "e9af567b366223adbc73e0c08d5521db1e5761e8baa4d1d3c15aa574a9455664",
+      "sha256": "3714f2ec80db274085ee64f74dfb17dafa142b02ef11557e8c496dd6748f7a46",
       "mo_ta": "Sa đồ trận thành Gia Định 1859 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -6172,6 +6810,35 @@
       "mo_ta": "Sa đồ Trận Thanh Hương – Mỹ Xuyên (ngày truyền thống Sư đoàn 325) — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/tran-thanh-tuyen-quang-1884-1885.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4704,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "id",
+        "ghi_chu",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "8488efe0e47f715045d64d747bd1d395c12fe6156ae9d91bdc6bb40f14b8d621",
+      "mo_ta": "Sa đồ Trận vây thành Tuyên Quang 1884–1885 — bám sát nội dung đã tra từ baotuyenquang.com.vn; KHÔNG nêu vai trò quân Cờ Đen do nguồn không xác nhận rõ (xem ghi_chu_bien_tap ở lớp phủ)."
+    },
+    {
       "file": "battles/tran-thanh-vinh-long-1867.json",
       "mien": "battles",
       "so_muc": 1,
@@ -6204,7 +6871,7 @@
       "file": "battles/tran-thi-nai-1792.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4195,
+      "byte": 5105,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6226,14 +6893,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "9f19b553d6f643b1dde1cdcbaf18845a74b6a09df806f31d98b40b563fe0f063",
+      "sha256": "24f7f6063f4b8199081a398ace905802899983ded6c7a23b5b81e2e7e921e2ce",
       "mo_ta": "Sa đồ Nguyễn Ánh đánh Thị Nại lần 1 (1792) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/tran-thi-nai-1801.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4132,
+      "byte": 5110,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6255,14 +6922,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "b0114604f745cd0ff4bdd87f304b79bda5098958d0a9ab00bff98d267f7d4f6e",
+      "sha256": "579467cb75fecc224d2b52352c0a383a143102a239c3184409ed32af842f3c1a",
       "mo_ta": "Sa đồ trận thủy chiến Thị Nại 1801 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/tran-thuan-an-1883.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 3960,
+      "byte": 5225,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6284,7 +6951,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "e8ae650a3fdb16921e016b8a504821008773e4c84c60145b68e2648f364f564a",
+      "sha256": "f0f4625079f5b4a9cc80d69eb376b0e9252412efdb40413f3c35858531715a63",
       "mo_ta": "Sa đồ trận cửa Thuận An (1883) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -6320,7 +6987,7 @@
       "file": "battles/tran-tua-hai-1960.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4979,
+      "byte": 5638,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6342,14 +7009,14 @@
         "y_nghia",
         "trang_thai"
       ],
-      "sha256": "8ed23c194479a1b120cb68bf66a2fe3ac2c9635f6f90e2e06184251702e0a6c3",
+      "sha256": "1dafcd044160e6d577dd819d4494df1937998cc9767d8433b7c5871efb16289f",
       "mo_ta": "Sa đồ Trận Tua Hai — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/tran-vam-nao-co-ho-1834.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4191,
+      "byte": 4702,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6371,7 +7038,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "21142c23af22fc115a5bf7ac8fb4860348c6996f0900f0c06c6fa4cb78c7f0ca",
+      "sha256": "8b9b3a394fe0ab77c38f5508d6c5c99dcf60bf595a3027015ee7a38716abd50d",
       "mo_ta": "Sa đồ trận Vàm Nao – Cổ Hộ (1834) — phần 2/2, tiếp theo xiem-chiem-ha-tien-chau-doc-1833 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -6552,7 +7219,7 @@
       "file": "battles/trinh-sam-chiem-phu-xuan-1774.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4106,
+      "byte": 5865,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6574,14 +7241,14 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "7b87f26495a24d0411fa36d30f79d54eae2b343be235ac30559ccaf14ad3672d",
+      "sha256": "6f9e356bb53b260ba6fa5e91f374c00503e81bfe633fc63007c07102467ba0dc",
       "mo_ta": "Sa đồ Trịnh Sâm chiếm Phú Xuân 1774 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
       "file": "battles/trong-diem-atp-duong-20-quyet-thang.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 5119,
+      "byte": 5695,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6603,7 +7270,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "1f9585ca539f58e53bc1a4ac2bd4b6d791fe1939b128085062eaeb51d17956ac",
+      "sha256": "2301e80995db3ccbdd62a2e74df4bd95d467347725c0489051380b0b0513c0b5",
       "mo_ta": "Sa đồ Trọng điểm ATP, đường 20 Quyết Thắng — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ."
     },
     {
@@ -6663,6 +7330,35 @@
       ],
       "sha256": "2ce5ce3ca68ec8a5ec04136635cd0a51c4f2c2649ae89bf4fe6ac4b8c5637383",
       "mo_ta": "Sa đồ Trung đội nữ du kích Củ Chi — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý."
+    },
+    {
+      "file": "battles/truong-luy-quang-ngai-1819.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 5399,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "dc6e57f226936f1c9d8de85c81004cb8857d530d42d601caec7e3e6006ae5511",
+      "mo_ta": "Bám mo_ta + ket_qua đã duyệt trong chien-dich-tran-danh.json nguyên văn."
     },
     {
       "file": "battles/truong-minh-giang-rut-quan-an-giang-1841.json",
@@ -6781,6 +7477,93 @@
       "mo_ta": "Sa đồ trận Vạn Kiếp 1285 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
+      "file": "battles/van-ninh-dep-cuop-bien-1843.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 3573,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "e1185133d08ff280f710cafe3f4b25bcd34ba718473984f7cbd15f03a1f02fd5",
+      "mo_ta": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn."
+    },
+    {
+      "file": "battles/van-ninh-dep-cuop-bien-trinh-that-1802.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 4166,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "492b65a298c875c8fb1826010f0fff03a43d94add12d5926e30f52a2df22f473",
+      "mo_ta": "Bám nguyên văn ket_qua/mo_ta đã duyệt trong chien-dich-tran-danh.json."
+    },
+    {
+      "file": "battles/van-ninh-giac-tau-o-dau-hang-1810.json",
+      "mien": "battles",
+      "so_muc": 1,
+      "byte": 3473,
+      "kieu_boc_ngoai": "ban-ghi-don",
+      "truong_nguon_cap_muc": "nguon",
+      "truong_nguon_cap_file": null,
+      "phu_nguon_cap_muc_pct": 100,
+      "truong_pho_bien": [
+        "ghi_chu",
+        "id",
+        "ten",
+        "nam",
+        "sa_do_kieu",
+        "chi_huy",
+        "doi_thu",
+        "dia_diem",
+        "lien_quan_tinh",
+        "sa_do_ghi_chu",
+        "dia_hinh",
+        "phan_tu",
+        "buoc",
+        "ket_qua",
+        "y_nghia"
+      ],
+      "sha256": "ce1d7ef78c3ecade0d862b6c3a7b0252c7c4c9c7e3defc9fa8aae13df63634a1",
+      "mo_ta": "Bám nguyên văn ket_qua/mo_ta đã duyệt trong chien-dich-tran-danh.json."
+    },
+    {
       "file": "battles/van-trung-ngoc-mao-nong-van-van-tu-thieu-1835.json",
       "mien": "battles",
       "so_muc": 1,
@@ -6871,7 +7654,7 @@
       "file": "battles/vo-tanh-ngo-tung-chau-tuan-tiet-1801.json",
       "mien": "battles",
       "so_muc": 1,
-      "byte": 4283,
+      "byte": 4833,
       "kieu_boc_ngoai": "ban-ghi-don",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -6893,7 +7676,7 @@
         "ket_qua",
         "y_nghia"
       ],
-      "sha256": "363455c96edf196cb16a50a3e5b73a6e8435e851f5aac89186c01ba63af466a6",
+      "sha256": "20f4932b01184ce7cf22795f73d6d9064cfee8dd09eed0f1f347dda029be9fee",
       "mo_ta": "Sa đồ Võ Tánh, Ngô Tùng Châu tuẫn tiết 1801 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý."
     },
     {
@@ -7778,8 +8561,8 @@
     {
       "file": "overlays/anh-hung-can-hien-dai.json",
       "mien": "overlays",
-      "so_muc": 470,
-      "byte": 530837,
+      "so_muc": 494,
+      "byte": 563055,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7797,7 +8580,7 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "c6476d8d0ed1c0d49735c2e14291aabbc18c4d39d60032437d5d6a191b09256a",
+      "sha256": "1545d1301892fffc97e457e937e922bd50df6fc9b8ae8183e7ccf023f9cf05e9",
       "mo_ta": "Anh hùng cận–hiện đại Việt Nam (thế kỷ 20–21): đại tướng QĐND, Anh hùng LLVTND, Mẹ Việt Nam Anh hùng, Anh hùng Lao động."
     },
     {
@@ -7827,8 +8610,8 @@
     {
       "file": "overlays/bao-tang.json",
       "mien": "overlays",
-      "so_muc": 23,
-      "byte": 47575,
+      "so_muc": 38,
+      "byte": 64429,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7846,14 +8629,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "a3760c3bb70adfddcdea3495dc36a5cfb5be45d62418df7a6bb6b7197ae7f63c",
+      "sha256": "97488f1c904ff9d1f6b76d8c3119c255d45dde11aeb264f56844d28fb9d9e9cb",
       "mo_ta": "Bảo tàng lịch sử – văn hoá – nghệ thuật quan trọng của Việt Nam (thiết chế công lập)."
     },
     {
       "file": "overlays/bao-vat-quoc-gia.json",
       "mien": "overlays",
-      "so_muc": 77,
-      "byte": 77480,
+      "so_muc": 113,
+      "byte": 115224,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "nguon_chinh",
@@ -7866,20 +8649,20 @@
         "lat",
         "mo_ta",
         "nguon",
-        "nam",
         "nam_hien_thi",
         "dia_diem",
         "do_tin_cay_toa_do",
-        "trang_thai"
+        "trang_thai",
+        "dot_cong_nhan"
       ],
-      "sha256": "bc6ebc9809c5052057c93201e217e3f5fa784431b52927ae817e912d2ba2f13f",
+      "sha256": "bc83dbc728de0506dc9f8feff31fe364ef91d8cf19654819027eb9cdc5cfd428",
       "mo_ta": "Vị trí pin = nơi hiện lưu giữ/trưng bày bảo vật (bảo tàng/di tích), không phải nơi phát hiện."
     },
     {
       "file": "overlays/chi-si-cach-mang.json",
       "mien": "overlays",
-      "so_muc": 60,
-      "byte": 74901,
+      "so_muc": 75,
+      "byte": 95077,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7895,20 +8678,16 @@
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon",
-        "anh",
-        "anh_nguon",
-        "anh_giay_phep",
-        "anh_muc"
+        "nguon"
       ],
-      "sha256": "13dd5f46f8941690743d1b02c83aa2c64d3872d1cb53ee108932a4bcfbe4443e",
+      "sha256": "4dea31f5b8aa2da93be585414ad230709d0aa751dab60c439646aac4d2af1939",
       "mo_ta": "Chí sĩ yêu nước & nhà cách mạng tiền bối (cuối thế kỷ 19 – trước 1945): phong trào Duy Tân/Đông Du, Đông Kinh Nghĩa Thục, chí sĩ Nam Kỳ, Việt Nam Quốc dân Đảng, và các nhà cách mạng tiền bối của Đảng Cộng sản Đông Dương."
     },
     {
       "file": "overlays/chien-dich-tran-danh.json",
       "mien": "overlays",
-      "so_muc": 254,
-      "byte": 399410,
+      "so_muc": 267,
+      "byte": 424979,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7926,17 +8705,17 @@
         "nguon",
         "trang_thai",
         "ket_qua",
-        "mo_ta",
-        "chi_huy"
+        "chi_huy",
+        "mo_ta"
       ],
-      "sha256": "7cba0787f6320e8f44f8aef6cb9156f5ba108ffc68a4b926fa877807c2d95d4d",
+      "sha256": "7f340988d495538c6563eda2d4ac8dd4721f10894795d1add57d590b672cdb56",
       "mo_ta": "Chiến dịch · trận đánh · khởi nghĩa tiêu biểu trong lịch sử giữ nước (938–1975), neo vào ĐỊA ĐIỂM diễn ra."
     },
     {
       "file": "overlays/cong-trinh-ky-luc.json",
       "mien": "overlays",
-      "so_muc": 14,
-      "byte": 31912,
+      "so_muc": 36,
+      "byte": 61113,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -7954,14 +8733,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "39e35b71a810fb6758a99bc11e8fdd5864ccad9f2b4104315ab77cb2e2276027",
+      "sha256": "d1b70592c5b74d4a53eb03d1b05deee3e4811c971d59f841bbe39b9f086df314",
       "mo_ta": "Lớp công trình kỷ lục hiện đại: cầu, hầm, cáp treo, thuỷ điện, đường dây tải điện — những công trình giữ kỷ lục Việt Nam/Đông Nam Á/thế giới tại thời điểm hoàn thành."
     },
     {
       "file": "overlays/danh-nhan-cac-trieu.json",
       "mien": "overlays",
-      "so_muc": 13,
-      "byte": 16714,
+      "so_muc": 23,
+      "byte": 30429,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -7975,22 +8754,18 @@
         "do_tin_cay_toa_do",
         "nguon",
         "trang_thai",
-        "thoi_ky",
-        "noi_tho",
-        "cong_trang",
-        "nhan_hinh_dung",
-        "anh",
-        "anh_nguon",
-        "anh_giay_phep"
+        "nam_hien_thi",
+        "mo_ta",
+        "dia_diem"
       ],
-      "sha256": "b55294b1a156fc39a7c9ce4359a9f1274f20a00fddb56bc7ca8976b600456d73",
+      "sha256": "ae1c1f828b17d9005f8d73438b939b204f56b80d3f97fd56b464dc7775be633b",
       "mo_ta": "Danh nhân các triều đại · văn hoá · y học, neo vào NƠI THỜ / khu lưu niệm."
     },
     {
       "file": "overlays/danh-nhan-dan-toc-thieu-so.json",
       "mien": "overlays",
-      "so_muc": 56,
-      "byte": 58757,
+      "so_muc": 66,
+      "byte": 71317,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8008,14 +8783,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "0fd6718af2ce21a9b1833fd4395c7e8f2a3e07781861972df14f939c23b55415",
+      "sha256": "a9cb7991d872b2754ea771b5687b403ce97821e50272bab63d5fd720a2113996",
       "mo_ta": "Danh nhân & anh hùng các dân tộc thiểu số Việt Nam — Sóng 10."
     },
     {
       "file": "overlays/danh-nhan-quan-su-co-trung-dai.json",
       "mien": "overlays",
-      "so_muc": 92,
-      "byte": 109037,
+      "so_muc": 108,
+      "byte": 133778,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8033,14 +8808,14 @@
         "mo_ta",
         "dia_diem"
       ],
-      "sha256": "1283db6db0e193583418f34bb56fe6114f900b4b825bf7f2206172f983c4486a",
+      "sha256": "aa9abd5ce700e86372f144d3b8dd35cd6de85809f86f9c78b5ce6127798df0c0",
       "mo_ta": "Danh nhân quân sự cổ–trung đại tiêu biểu (bổ sung) — tướng lĩnh/thổ tù có đền thờ/lăng/di tích, chưa có trong CSDL."
     },
     {
       "file": "overlays/danh-nhan-van-hoa-can-hien-dai.json",
       "mien": "overlays",
-      "so_muc": 106,
-      "byte": 120246,
+      "so_muc": 130,
+      "byte": 146029,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8058,14 +8833,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "b23e175f6c233eb0a34adde9668d867596679f0c619fcd1a6a76e55c3ea73d07",
+      "sha256": "11f8ba4c3a56439a144ecc98b65c3c0c7ff1043e05d52b08830c1cbe28614711",
       "mo_ta": "Danh nhân văn hoá – khoa học – chí sĩ yêu nước cận–hiện đại (TK 19–20)."
     },
     {
       "file": "overlays/danh-thang-thien-nhien.json",
       "mien": "overlays",
-      "so_muc": 147,
-      "byte": 229494,
+      "so_muc": 165,
+      "byte": 253717,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -8083,14 +8858,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "6263ed589ca36ae3daf1499116a4e3dec2361766041bf85be9aa9b2201a248d0",
+      "sha256": "b2d00aa9b3b2a11acb77204ac05a1d54f3810e55711a46c977b796c8de9c88dd",
       "mo_ta": "Lớp danh thắng thiên nhiên: đèo, thác, núi, hồ, vịnh, mũi, đảo — những địa danh tự nhiên nổi tiếng chưa thuộc bản ghi VQG/quần thể nào."
     },
     {
       "file": "overlays/danh-y-luong-y.json",
       "mien": "overlays",
-      "so_muc": 16,
-      "byte": 19372,
+      "so_muc": 28,
+      "byte": 35218,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8108,14 +8883,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "177b95de5a15a5a9d61eac88b51efb6e9d34da8678ed92f88a233ac72441d687",
+      "sha256": "15d5a6126af67e1f6237fccd8a7301063df4da237a882edc2927b61833e00f7e",
       "mo_ta": "Danh y & lương y lịch sử Việt Nam (y học cổ truyền) — Sóng 9."
     },
     {
       "file": "overlays/di-san-phi-vat-the.json",
       "mien": "overlays",
-      "so_muc": 27,
-      "byte": 51348,
+      "so_muc": 64,
+      "byte": 124242,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8131,16 +8906,17 @@
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon"
+        "nguon",
+        "xep_hang"
       ],
-      "sha256": "018ee09edfd4522ac9c1099f7e363713e0ef31ac6dbd4b45c941d43565e7f34c",
+      "sha256": "1a52931540fe11378b4eb679113e1ec7eb6e723254cc13d5f574286921b87efa",
       "mo_ta": "Di sản văn hoá phi vật thể của Việt Nam: các mục UNESCO ghi danh (Danh sách đại diện / cần bảo vệ khẩn cấp) và di sản văn hoá phi vật thể quốc gia tiêu biểu (Bộ VHTTDL)."
     },
     {
       "file": "overlays/di-tich-cach-mang.json",
       "mien": "overlays",
-      "so_muc": 30,
-      "byte": 41097,
+      "so_muc": 58,
+      "byte": 80485,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8158,14 +8934,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "55508c66c3cbaf4523c9213fb0f31315808b1dea02c1f0afe3d8ccb353e0613a",
+      "sha256": "961060a767aa36e34c8165e1e1644dfe5187c2b0259549cb4e09a9e2927fcf11",
       "mo_ta": "Di tích lịch sử cách mạng · kháng chiến (nhà tù, căn cứ, địa đạo, bến bãi) chưa có trong CSDL — bổ sung ngoài các sự kiện/chiến dịch đã có (Điện Biên Phủ, Địa đạo Củ Chi, Pác Bó, Tân Trào, ATK Định Hóa, Côn Đảo, Sơn La, Phú Quốc, Hiền Lương, Kim Liên..."
     },
     {
       "file": "overlays/di-tich-cap-tinh.json",
       "mien": "overlays",
-      "so_muc": 34,
-      "byte": 37843,
+      "so_muc": 69,
+      "byte": 78502,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": null,
@@ -8184,14 +8960,14 @@
         "nguon",
         "xep_hang"
       ],
-      "sha256": "0031a75fe8844212debec77219393f903d01dddefd84178780d3497c43d0645c",
+      "sha256": "bc169973b1d22f0f77e245d1d6a0cef973ce58b89f089c56737b0529c9ec12d4",
       "mo_ta": "Di tích xếp hạng CẤP TỈNH/THÀNH PHỐ (UBND tỉnh ký QĐ) — lớp mở 2026-08-11 theo quyết định chủ dự án (phương án A)."
     },
     {
       "file": "overlays/di-tich-qgdb.json",
       "mien": "overlays",
-      "so_muc": 152,
-      "byte": 268238,
+      "so_muc": 153,
+      "byte": 271153,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "nguon_chinh",
@@ -8211,14 +8987,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "c257e9fd65ac44c309d65948ec41dce8eec24c565a1a45d24b0d71e03c63a638",
+      "sha256": "c90d0a9f894755fd55b12c005bce7bcafba31c534fa42d444aebd63fdd5d7041",
       "mo_ta": "Dữ liệu miền «overlays» — tệp di-tich-qgdb."
     },
     {
       "file": "overlays/di-tich-quoc-gia.json",
       "mien": "overlays",
-      "so_muc": 361,
-      "byte": 500950,
+      "so_muc": 381,
+      "byte": 520579,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8236,14 +9012,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "3d240591b2f8c511600f9a36821b69534f22f53dc47871ac3511f597a16c59c7",
+      "sha256": "e49b60747254465121450ba2da9b364d1171114fd59a94ee79eb852ef969f103",
       "mo_ta": "Di tích cấp quốc gia (đền/chùa/thành/hang/khảo cổ) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23."
     },
     {
       "file": "overlays/huyen-su-khai-quoc.json",
       "mien": "overlays",
-      "so_muc": 10,
-      "byte": 15643,
+      "so_muc": 22,
+      "byte": 33565,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8260,12 +9036,9 @@
         "nhan_hinh_dung",
         "do_tin_cay_toa_do",
         "nguon",
-        "trang_thai",
-        "anh",
-        "anh_nguon",
-        "anh_giay_phep"
+        "trang_thai"
       ],
-      "sha256": "e0389aefe633d4d50f7e427b1d6349e2f78d6a718cd477bb3bd00a4c9176a64a",
+      "sha256": "d1498455771e6a0d7ed1d79d418688c14cafbea41b500a0d90abf1c2d8b2c1e1",
       "mo_ta": "Huyền sử khai quốc + Tứ bất tử + Hải đội Hoàng Sa."
     },
     {
@@ -8296,8 +9069,8 @@
     {
       "file": "overlays/le-hoi-truyen-thong.json",
       "mien": "overlays",
-      "so_muc": 64,
-      "byte": 76415,
+      "so_muc": 84,
+      "byte": 107491,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8315,14 +9088,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "21b34793de74fd24ab8eba4764647af0d9c06f90a01709469eccb1d080f5430b",
+      "sha256": "9607ec4fde28b19c3b285b8ef6fd736c8bc777f97e99e187509e577d148da9b8",
       "mo_ta": "Lễ hội truyền thống có địa điểm cố định, đa số là Di sản văn hóa phi vật thể quốc gia (Bộ VHTTDL công bố qua dsvh.gov.vn) hoặc đã được UNESCO ghi danh."
     },
     {
       "file": "overlays/me-vnah.json",
       "mien": "overlays",
-      "so_muc": 25,
-      "byte": 25532,
+      "so_muc": 55,
+      "byte": 57212,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8333,21 +9106,21 @@
         "lon",
         "lat",
         "loai",
-        "nam_hien_thi",
         "mo_ta",
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon"
+        "nguon",
+        "nam_hien_thi"
       ],
-      "sha256": "e41caf4a2e507c7721908e8cb95a87f9a91cb16607bdf8f418683e5b4df967d2",
+      "sha256": "275c07601f0a8622ae7cdc57a1ffbcea9753dfd214a26e67ad63b6858eb23c5d",
       "mo_ta": "Mẹ Việt Nam Anh hùng — đại diện tiêu biểu + tượng đài tưởng niệm (cả nước ~140.000 Mẹ VNAH, chỉ chọn vài gương tiêu biểu qua nguồn chính thống)."
     },
     {
       "file": "overlays/nghe-nhan-di-san.json",
       "mien": "overlays",
-      "so_muc": 105,
-      "byte": 95007,
+      "so_muc": 127,
+      "byte": 116445,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8365,14 +9138,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "9dd6ee5d9947b6be4c7b14ef57e2f24324727e47da3445d984f66cdcd4f9cd27",
+      "sha256": "8680ae030e144d422f7569f3a6934656cb891a90be0037b2cebbd2b8ae08b404",
       "mo_ta": "Ông tổ/danh nhân nghệ thuật truyền thống (chèo, tuồng, cải lương, ca trù, quan họ, xẩm, rối nước) và nghệ sĩ tiên phong có công khai sáng/gìn giữ di sản, chưa có trong CSDL."
     },
     {
       "file": "overlays/nghia-si-can-vuong.json",
       "mien": "overlays",
-      "so_muc": 48,
-      "byte": 57576,
+      "so_muc": 70,
+      "byte": 85097,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8390,14 +9163,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "3c19d05560b36594b30fa43ec7448cc7148c76805a38bcd6dc3d3c670faf8038",
+      "sha256": "1da0b07a2a9fdd19bb4365c1170beea9621173e728926327e4c3852541e8b239",
       "mo_ta": "Thủ lĩnh/nghĩa sĩ Cần Vương & Văn Thân chống Pháp (1858–1913) cấp tỉnh/địa phương còn thiếu trong CSDL (không trùng Phan Đình Phùng, Hoàng Hoa Thám, Nguyễn Thiện Thuật, Đinh Công Tráng, Tống Duy Tân, Phạm Bành, Cao Thắng, Nguyễn Trung Trực, Trịnh Phong, Lê Ninh, Trần Văn Dư..."
     },
     {
       "file": "overlays/nghia-trang-liet-si.json",
       "mien": "overlays",
-      "so_muc": 104,
-      "byte": 129075,
+      "so_muc": 122,
+      "byte": 152040,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8415,14 +9188,14 @@
         "trang_thai",
         "quy_mo"
       ],
-      "sha256": "9bae0bdfe24c227658209dfab68fbb4299d9ba4cedc7c269f884a6178bd46479",
+      "sha256": "59bea425f9e4044d250270231457f2462f12aab11df1c6790d142c0be4126989",
       "mo_ta": "Lớp bản đồ Nghĩa trang liệt sĩ · Đài tưởng niệm · Đền thờ liệt sĩ toàn Việt Nam."
     },
     {
       "file": "overlays/nha-the-thao-lich-su.json",
       "mien": "overlays",
-      "so_muc": 28,
-      "byte": 32168,
+      "so_muc": 40,
+      "byte": 46269,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8440,14 +9213,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "2c339bae7f13532bcb432d69d4edacf03d5c0732cbd540c50f5d3a1e5eb484d5",
+      "sha256": "b65270a942f026445c4b4efd69a79ac3ea023a9a1f8581dd2936321ec91b513a",
       "mo_ta": "Nhà thể thao lịch sử Việt Nam ( Gồm cả VĐV đương đại tiêu biểu (huy chương Olympic/ASIAD/thế giới)."
     },
     {
       "file": "overlays/su-than-ngoai-giao.json",
       "mien": "overlays",
-      "so_muc": 25,
-      "byte": 34213,
+      "so_muc": 40,
+      "byte": 52243,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8463,20 +9236,16 @@
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon",
-        "anh",
-        "anh_nguon",
-        "anh_giay_phep",
-        "anh_muc"
+        "nguon"
       ],
-      "sha256": "89e2ec4d909c3b5eae28d0642defc0b6997b6908cdcdba6238c3e04ad6d472fe",
+      "sha256": "643188cb32f5505e506a69a9164f17f3a156d2dae26eae7a189a5ddc72a53871",
       "mo_ta": "Sứ thần & nhà ngoại giao lịch sử Việt Nam — Sóng 9."
     },
     {
       "file": "overlays/thanh-hoang-danh-than.json",
       "mien": "overlays",
-      "so_muc": 46,
-      "byte": 56175,
+      "so_muc": 61,
+      "byte": 73886,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8494,14 +9263,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "9327dcc879fbd94d0d35e8179717e0b24a87ae15edbfb29af27ff223ccae1259",
+      "sha256": "65f94150c19a9639520aa79e5a80a8afb1fa69c91cc23322227f093acb86ca6d",
       "mo_ta": "Thành hoàng & danh thần có đền/đình thờ lớn (không trùng Tứ bất tử đã có ở lớp «Huyền sử khai quốc»)."
     },
     {
       "file": "overlays/thien-su-cao-tang.json",
       "mien": "overlays",
-      "so_muc": 26,
-      "byte": 29854,
+      "so_muc": 45,
+      "byte": 49820,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8512,21 +9281,21 @@
         "lon",
         "lat",
         "loai",
-        "nam_hien_thi",
         "mo_ta",
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon"
+        "nguon",
+        "nam_hien_thi"
       ],
-      "sha256": "7dce692b51c1acc03adae50a9f8b72730128cb51de06d5d5ecd924e05987a96b",
+      "sha256": "f4a16525e9e90df87279f0eb29df45b8b39f314920ff0727b5156db542981de4",
       "mo_ta": "Thiền sư · cao tăng · danh tăng Việt Nam qua các thời đại (đã viên tịch), có công với dân tộc/văn hoá/Phật giáo — từ các tổ Trúc Lâm, tổ sư khai sáng tông phái, đến chư tôn đức cận – hiện đại."
     },
     {
       "file": "overlays/thieu-nien-anh-hung.json",
       "mien": "overlays",
-      "so_muc": 22,
-      "byte": 21289,
+      "so_muc": 43,
+      "byte": 54385,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8544,14 +9313,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "03f9fa879385913067279ad3eaa798be251576f2e6e19b700546655fbe9205d6",
+      "sha256": "82136f9b15edf558d2dd9c76c5efd0eb5250ece5a9916c67fbc223215be442d7",
       "mo_ta": "Thiếu niên anh hùng Việt Nam — Sóng 10."
     },
     {
       "file": "overlays/to-nghe-danh-than.json",
       "mien": "overlays",
-      "so_muc": 68,
-      "byte": 94009,
+      "so_muc": 87,
+      "byte": 116769,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8562,21 +9331,21 @@
         "lon",
         "lat",
         "loai",
-        "nam_hien_thi",
         "mo_ta",
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon"
+        "nguon",
+        "nam_hien_thi"
       ],
-      "sha256": "c761f64bee7e5d5657e32047a7ba9f02b8b7e26fb8b7d11ec299eafcf2404cba",
+      "sha256": "41bc81dee622873ce1840296208fb1547f09fdf2bd4c239389e918845c05843c",
       "mo_ta": "Ông tổ nghề (craft founders) và thành hoàng/danh thần bổ sung (chưa có trong CSDL)."
     },
     {
       "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
       "mien": "overlays",
-      "so_muc": 92,
-      "byte": 110010,
+      "so_muc": 111,
+      "byte": 135422,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8594,14 +9363,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "312160cab3f0147f220381f8b6ed6682735f0293391698e100c0d309c95e6de8",
+      "sha256": "546ea23693f085f3af2fedd17ade5a4904434b93668a9794c350257519725521",
       "mo_ta": "Nhà khoa học & trí thức Việt Nam thế kỷ 20 (đã mất) — các chuyên ngành toán, lý, hoá, sinh, y, nông, sử, địa chất chưa có trong CSDL."
     },
     {
       "file": "overlays/truyen-thuyet-dan-gian.json",
       "mien": "overlays",
-      "so_muc": 59,
-      "byte": 85538,
+      "so_muc": 76,
+      "byte": 114015,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8616,9 +9385,10 @@
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon"
+        "nguon",
+        "nam_hien_thi"
       ],
-      "sha256": "afa3128be2bec02d286faa8325f7dfe80d6510faf4048c7a5e550b84de3abbcf",
+      "sha256": "51e625db036df2d0c5254e24168fd0eefd50ee674f5bf1ef7c1c86feb76e417f",
       "mo_ta": "Sóng 11: văn học dân gian gắn với địa danh cụ thể trên bản đồ — sự tích, truyền thuyết, thần thoại, cổ tích, ca dao, tục ngữ."
     },
     {
@@ -8651,8 +9421,8 @@
     {
       "file": "overlays/vua-hoang-de.json",
       "mien": "overlays",
-      "so_muc": 54,
-      "byte": 78038,
+      "so_muc": 65,
+      "byte": 91705,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -8674,7 +9444,7 @@
         "anh_giay_phep",
         "anh_muc"
       ],
-      "sha256": "269370f1bf2d1fb1c014f971480072fdf1016b9301bf8b44f6c08f262a1ce84b",
+      "sha256": "6460e71279df2381fee32f93fb7bb749b6d0eeadac2ee8e6db44ba4a8bed8c1c",
       "mo_ta": "Vua/hoàng đế các triều đại (ngoài số đã có trong CSDL) — Lý, Hồ, Nguyễn."
     },
     {
