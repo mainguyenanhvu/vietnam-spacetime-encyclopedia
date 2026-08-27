@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Bám ket_qua + mo_ta đã duyệt trong chien-dich-tran-danh.json nguyên văn. Chưa tra được số quyển Đại Nam thực lục — Chính biên, Đệ nhị kỷ (Minh Mạng) nên KHÔNG khai trich_van_tich (luật #9 — không tra được thì bỏ hẳn, không bịa nguyên văn). Năm Mậu Tí = 1828 đã đối chiếu khớp lịch can chi, không phải 1832 như một lượt tóm tắt nguồn từng bị sai (overlay đã cảnh báo việc này). lien_quan_tinh CHỈ gán nghe-an vì đó là nơi xuất phát quân viễn chinh có nguồn xác nhận ('quân Nghệ An'); chiến sự chính (Trấn Ninh, Vạn Tượng) diễn ra ngoài lãnh thổ Việt Nam hiện nay (Lào) nên KHÔNG gán loai_xung_dot, đúng lưu ý biên tập trong overlay rằng đây là quyết định chờ người duyệt.",
+  "id": "dai-nam-cuu-van-tuong-tran-ninh-1827",
+  "ten": "Đại Nam đưa quân cứu Vạn Tượng, giao tranh với Xiêm La tại Trấn Ninh (1827–1828)",
+  "nam": 1827,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Phan Văn Thúy (kinh lược biên vụ đại thần, phụng mệnh vua Minh Mạng); phối hợp vua Vạn Tượng A Nộ (Anouvong)",
+  "doi_thu": "Quân Xiêm La",
+  "dia_diem": "Trấn Ninh (nay tỉnh Xiêng Khoảng, Lào) và Vạn Tượng — Viêng Chăn (nay thủ đô Lào); quân viễn chinh Đại Nam xuất phát từ Nghệ An xưa (nay tỉnh Nghệ An)",
+  "lien_quan_tinh": ["nghe-an"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Toạ độ Trấn Ninh, Vạn Tượng chỉ mang tính minh hoạ vị trí tương đối, không phải bản đồ đo đạc.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [[350, 250], [450, 300], [560, 260]],
+      "nhan": "Cao nguyên Trấn Ninh (Xiêng Khoảng)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [[700, 520], [560, 420], [470, 330]],
+      "nhan": "Đường tiến quân Qui Hợp – Lạc Phàm"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-xiem",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 780,
+      "y": 150,
+      "nhan": "Quân Xiêm La"
+    },
+    {
+      "id": "dia-danh-van-tuong",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 180,
+      "nhan": "Vạn Tượng (Viêng Chăn) — bị Xiêm chiếm 9/1827"
+    },
+    {
+      "id": "quan-ta-a-no",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 220,
+      "y": 280,
+      "nhan": "Vua A Nộ (Anouvong) chạy sang Đại Nam cầu cứu"
+    },
+    {
+      "id": "mui-a-no-cau-cuu",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [220, 280],
+      "den": [650, 470],
+      "nhan": "A Nộ cầu cứu Đại Nam"
+    },
+    {
+      "id": "dia-danh-tran-ninh",
+      "kieu": "dia-danh",
+      "x": 450, "y": 300,
+      "nhan": "Trấn Ninh"
+    },
+    {
+      "id": "quan-ta-phan-van-thuy-1",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 650,
+      "y": 470,
+      "nhan": "Phan Văn Thúy đem quân Nghệ An (1827)"
+    },
+    {
+      "id": "mui-cuu-vien-1",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [650, 470],
+      "den": [470, 320],
+      "nhan": "Hai đường Qui Hợp – Lạc Phàm, bị Xiêm đánh lui"
+    },
+    {
+      "id": "quan-ta-phan-van-thuy-2",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 700,
+      "y": 540,
+      "nhan": "Phan Văn Thúy + A Nộ, 3.000 quân, 24 thớt voi (1828)"
+    },
+    {
+      "id": "mui-cuu-vien-2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [700, 540],
+      "den": [460, 310],
+      "nhan": "Phản công Trấn Ninh, thất bại"
+    },
+    {
+      "id": "co-bai-binh",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 800,
+      "y": 560,
+      "nhan": "Minh Mạng bãi binh, giữ phòng ngự biên giới"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Xiêm chiếm Vạn Tượng, vua A Nộ cầu cứu",
+      "mo_ta": "Tháng 9 năm Đinh Hợi (1827), quân Xiêm đánh chiếm Vạn Tượng, vua A Nộ chạy sang Đại Nam cầu cứu.",
+      "hien": ["quan-dich-xiem", "dia-danh-van-tuong", "quan-ta-a-no", "mui-a-no-cau-cuu"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Minh Mạng sai Phan Văn Thúy cứu viện, bị đánh lui (1827)",
+      "mo_ta": "Minh Mạng sai Phan Văn Thúy đem quân Nghệ An chia hai đường Qui Hợp – Lạc Phàm sang cứu nhưng bị quân Xiêm đánh lui.",
+      "hien": ["quan-ta-phan-van-thuy-1", "mui-cuu-vien-1", "dia-danh-tran-ninh", "quan-dich-xiem"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phan Văn Thúy đưa A Nộ phản công lần hai, thất bại (1828)",
+      "mo_ta": "Năm Mậu Tí (1828), Phan Văn Thúy đưa A Nộ cùng 3.000 quân, 24 thớt voi trở lại Trấn Ninh phản công nhưng lại thất bại.",
+      "hien": ["quan-ta-phan-van-thuy-2", "mui-cuu-vien-2", "dia-danh-tran-ninh", "quan-dich-xiem"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Minh Mạng bãi binh, A Nộ bị bắt nộp Xiêm",
+      "mo_ta": "Minh Mạng bãi binh, chỉ giữ phòng ngự biên giới; A Nộ sau đó bị Chiêu Nội bắt nộp cho Xiêm La.",
+      "hien": ["co-bai-binh", "quan-dich-xiem"]
+    }
+  ],
+  "ket_qua": "Tháng 9 năm Đinh Hợi (1827), quân Xiêm đánh chiếm Vạn Tượng, vua A Nộ chạy sang Đại Nam cầu cứu; Minh Mạng sai Phan Văn Thúy đem quân Nghệ An chia hai đường Qui Hợp – Lạc Phàm sang cứu nhưng bị quân Xiêm đánh lui. Năm Mậu Tí (1828), Phan Văn Thúy đưa A Nộ cùng 3.000 quân, 24 thớt voi trở lại Trấn Ninh phản công nhưng lại thất bại; Minh Mạng bãi binh, chỉ giữ phòng ngự biên giới. A Nộ sau đó bị Chiêu Nội bắt nộp cho Xiêm La.",
+  "y_nghia": "Minh Mạng hai lần đưa quân sang giúp nước chư hầu Vạn Tượng (Lào) chống Xiêm La xâm lấn nhưng đều thất bại; phản ánh quan hệ triều cống Việt–Lào và thế cạnh tranh ảnh hưởng Việt–Xiêm đầu thế kỷ 19.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ Văn hoá, Thể thao và Du lịch (Việt Nam sử lược — Trần Trọng Kim) — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/can-kim-thoi-dai-nha-nguyen.-chuong-iii.-thanh-to-phan-5-.html"
+  ]
+}

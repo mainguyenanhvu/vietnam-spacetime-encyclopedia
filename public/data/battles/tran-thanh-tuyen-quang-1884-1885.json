@@ -1,0 +1,150 @@
+{
+  "id": "tran-thanh-tuyen-quang-1884-1885",
+  "ghi_chu": "Sa đồ Trận vây thành Tuyên Quang 1884–1885 — bám sát nội dung đã tra từ baotuyenquang.com.vn; KHÔNG nêu vai trò quân Cờ Đen do nguồn không xác nhận rõ (xem ghi_chu_bien_tap ở lớp phủ). trang_thai=draft chờ soát §9.",
+  "ten": "Trận vây thành Tuyên Quang (1884–1885)",
+  "nam": 1884,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Hoàng Thủ Trung",
+  "doi_thu": "Quân đội Pháp (đồn trú do Dominé chỉ huy; đoàn giải vây do Giovanninelli chỉ huy)",
+  "dia_diem": "Thành Tuyên Quang, tỉnh Tuyên Quang",
+  "lien_quan_tinh": [
+    "tuyen-quang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          0,
+          200
+        ],
+        [
+          500,
+          180
+        ],
+        [
+          1000,
+          220
+        ]
+      ],
+      "nhan": "Sông Lô"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "thanh-tuyen-quang",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 500,
+      "y": 320,
+      "nhan": "Thành Tuyên Quang (Dominé đồn trú, 31/5/1884)"
+    },
+    {
+      "id": "quan-ta-vay",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 280,
+      "nhan": "Quân ta vây thành (~15.000 người)"
+    },
+    {
+      "id": "quan-ta-vay2",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Quân ta vây thành (mặt nam)"
+    },
+    {
+      "id": "doan-tiep-vien",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 180,
+      "nhan": "Đoàn tiếp viện Giovanninelli (3/3/1885)"
+    },
+    {
+      "id": "hoa-muc",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 230,
+      "nhan": "Trận đánh viện tại Hòa Mục"
+    },
+    {
+      "id": "mui-tiep-vien",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        800,
+        180
+      ],
+      "den": [
+        650,
+        230
+      ],
+      "nhan": "Tiến vào giải vây"
+    },
+    {
+      "id": "co-giai-vay",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 900,
+      "y": 100,
+      "nhan": "Pháp giải vây nhưng tổn thất nặng"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Pháp chiếm thành, để lại đồn trú nhỏ (31/5/1884)",
+      "mo_ta": "Quân Pháp chiếm thành Tuyên Quang rồi để lại một tiểu đoàn nhỏ dưới quyền Dominé đồn trú, rút phần lớn lực lượng về Hưng Hóa.",
+      "hien": [
+        "thanh-tuyen-quang"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân ta vây chặt thành khoảng 10 tháng",
+      "mo_ta": "Quân ta dưới quyền Hoàng Thủ Trung nhanh chóng tập hợp lực lượng — có lúc lên tới khoảng 15.000 người — bao vây chặt thành.",
+      "hien": [
+        "quan-ta-vay",
+        "quan-ta-vay2",
+        "thanh-tuyen-quang"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Pháp cử đoàn tiếp viện tới giải vây (3/3/1885)",
+      "mo_ta": "Pháp cử đoàn quân tiếp viện do Giovanninelli chỉ huy tiến vào giải vây cho lực lượng đồn trú.",
+      "hien": [
+        "doan-tiep-vien",
+        "mui-tiep-vien"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Trận đánh viện ác liệt tại Hòa Mục",
+      "mo_ta": "Xảy ra trận đánh viện ác liệt tại Hòa Mục, kéo dài nhiều tuần liên tiếp.",
+      "hien": [
+        "hoa-muc",
+        "doan-tiep-vien"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Pháp giải vây nhưng tổn thất nặng",
+      "mo_ta": "Pháp giải vây được cho lực lượng đồn trú nhưng tổn thất nặng nề: khoảng một nửa lực lượng trong thành bị tiêu diệt, cùng gần trăm quân tiếp viện thương vong.",
+      "hien": [
+        "co-giai-vay"
+      ]
+    }
+  ],
+  "ket_qua": "Pháp giải vây được lực lượng đồn trú sau gần 10 tháng bị bao vây, nhưng chịu tổn thất nặng nề cả trong thành lẫn đoàn quân tiếp viện.",
+  "y_nghia": "Một trong những cuộc bao vây kéo dài và ác liệt nhất của phong trào kháng Pháp ở miền núi phía Bắc giai đoạn 1884–1885.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Tuyên Quang điện tử (baotuyenquang.com.vn) — Tuyên Quang thời kỳ Pháp thuộc (1884 – 1945) — https://baotuyenquang.com.vn/tuyen-quang-thoi-ky-phap-thuoc-1884-%E2%80%93-1945!-196193.html"
+  ]
+}

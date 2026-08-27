@@ -1,0 +1,110 @@
+{
+  "ghi_chu": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn. Địa điểm nguồn ghi mơ hồ ('Hải Dương/Quảng Yên'), toạ độ và tỉnh liên quan tạm gán cả hai tỉnh nay (Hải Phòng, Quảng Ninh) — do_tin_cay_toa_do của overlay là 'thap'. TỰ SOÁT 2026-08-27: mở lại trực tiếp nguồn visithue.vn đã dẫn — xác nhận đúng câu 'chém đầu cắt lấy tai bắt sống, thu được thuyền, súng và khí giới vô kể. Tên phạm bắt được là bọn Trần Vãn 164 tên'; bổ sung số 164 tên và tên Trần Vãn thay vì 'nhiều tên' mơ hồ như bản trước.",
+  "id": "hai-duong-quang-yen-dep-cuop-bien-1849",
+  "ten": "Nguyễn Khoa Dục phá tan giặc biển vùng Hải Dương – Quảng Yên (1849)",
+  "nam": 1849,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Khoa Dục (Bố chính)",
+  "doi_thu": "Giặc biển (Tàu Ô)",
+  "dia_diem": "Vùng biển Hải Dương – Quảng Yên (nay Hải Phòng – Quảng Ninh)",
+  "lien_quan_tinh": [
+    "hai-phong",
+    "quang-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          0,
+          220
+        ],
+        [
+          500,
+          200
+        ],
+        [
+          1000,
+          230
+        ]
+      ],
+      "nhan": "Vùng biển Hải Dương – Quảng Yên"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "dich-hoat-dong-hdqy1849",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 750,
+      "y": 230,
+      "nhan": "Toán giặc biển hoạt động vùng biển Hải Dương – Quảng Yên"
+    },
+    {
+      "id": "ta-doc-quan-hdqy1849",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 420,
+      "nhan": "Bố chính Nguyễn Khoa Dục ra ngoài thành đốc quân"
+    },
+    {
+      "id": "mui-ta-danh-pha-hdqy1849",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        420
+      ],
+      "den": [
+        650,
+        270
+      ],
+      "nhan": "Đốc quân đánh phá"
+    },
+    {
+      "id": "dich-bi-diet-hdqy1849",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 680,
+      "y": 320,
+      "nhan": "Chém và bắt sống nhiều tên"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Toán giặc biển hoạt động vùng biển Hải Dương – Quảng Yên",
+      "mo_ta": "Sự kiện trấn áp cướp biển Tàu Ô vùng biên giới đông bắc dưới thời Tự Đức, một toán giặc biển hoạt động tại vùng biển Hải Dương – Quảng Yên.",
+      "hien": [
+        "dich-hoat-dong-hdqy1849"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bố chính Nguyễn Khoa Dục ra ngoài thành đốc quân",
+      "mo_ta": "Bố chính Nguyễn Khoa Dục ra ngoài thành đốc quân đánh phá toán giặc biển.",
+      "hien": [
+        "ta-doc-quan-hdqy1849",
+        "dich-hoat-dong-hdqy1849",
+        "mui-ta-danh-pha-hdqy1849"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phá tan toán giặc, chém và bắt sống nhiều tên",
+      "mo_ta": "Quân ta đánh phá tan toán giặc biển, chém đầu cắt tai, thu được thuyền, súng và khí giới vô kể; bắt được bọn cầm đầu Trần Vãn cùng 164 tên.",
+      "hien": [
+        "dich-bi-diet-hdqy1849",
+        "mui-ta-danh-pha-hdqy1849"
+      ]
+    }
+  ],
+  "ket_qua": "Bố chính Nguyễn Khoa Dục ra ngoài thành đốc quân đánh phá tan toán giặc biển hoạt động vùng biển Hải Dương – Quảng Yên, chém đầu cắt tai, thu thuyền súng khí giới vô kể, bắt được bọn cầm đầu Trần Vãn cùng 164 tên.",
+  "y_nghia": "Sự kiện trấn áp cướp biển Tàu Ô vùng biên giới đông bắc dưới thời Tự Đức.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Sở Du lịch thành phố Huế — Quan hệ hợp tác chống cướp biển của triều Nguyễn với nhà Thanh và vấn đề lãnh hải giai đoạn 1802–1883 — https://visithue.vn/QUAN-HE-HOP-TAC-CHONG-CUOP-BIEN-CUA-TRIEU-NGUYEN-VOI-NHA-THANH-VA-VAN-DE-LANH-HAI-GIAI-DOAN-1802-%e2%80%93-1883.html/?pid=MTc3MDl8Y3NkbGRs0"
+  ]
+}

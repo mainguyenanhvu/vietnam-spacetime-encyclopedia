@@ -1,0 +1,63 @@
+{
+  "ghi_chu": "Bám nguyên văn ket_qua/ghi_chu đã duyệt trong chien-dich-tran-danh.json (nguồn: scov.gov.vn — Việt Nam sử lược, Trần Trọng Kim). Hai mốc niên đại tách bạch: Nam Chiếu hạ phủ thành Tống Bình tháng Giêng năm Quý Mùi (863); Cao Biền khôi phục và đắp lại thành Đại La tháng 4 năm Bính Tuất (866) — KHÔNG gộp thành một năm. Đây là xung đột Nam Chiếu (Vân Nam) – nhà Đường tranh giành quyền kiểm soát Giao Châu, người Việt Giao Châu chịu thiệt hại nặng (hơn 15 vạn người chết); KHÔNG phải khởi nghĩa của người Việt chống đô hộ — giữ nguyên khung ngoại xâm như overlay đã gán. Tên tướng chỉ huy Nam Chiếu đánh chiếm đầu 863 nguồn không nêu, để trống; chỉ có tên tướng Đoàn Tù Thiên (866, bị giết khi Cao Biền khôi phục). Không tìm được đoạn nguyên văn Đại Việt sử ký toàn thư/Cương mục trên nguồn được phép (.gov.vn/NXB/Viện Sử học) trong thời gian cho phép nên bỏ trich_van_tich.",
+  "id": "nam-chieu-cao-bien-khoi-phuc-dai-la-863",
+  "ten": "Nam Chiếu đánh chiếm Giao Châu; Cao Biền khôi phục, xây thành Đại La (862–866)",
+  "nam": 863,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Thái Tập (863, tử trận); Cao Biền (864–866, khôi phục)",
+  "doi_thu": "Nam Chiếu",
+  "dia_diem": "Phủ thành Tống Bình – Đại La (nay Hà Nội)",
+  "lien_quan_tinh": ["ha-noi"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có.",
+  "dia_hinh": [
+    { "kieu": "song", "diem": [[350, 500], [500, 450], [650, 500]], "nhan": "Sông Tô Lịch" }
+  ],
+  "phan_tu": [
+    { "id": "thanh-tong-binh", "kieu": "thanh", "ben": "ta", "x": 500, "y": 300, "nhan": "Phủ thành Tống Bình (trị sở Giao Châu)" },
+    { "id": "quan-nam-chieu", "kieu": "quan", "ben": "dich", "x": 820, "y": 180, "nhan": "Quân Nam Chiếu (5 vạn, từ Vân Nam)" },
+    { "id": "mui-nam-chieu-tien-cong", "kieu": "mui-ten", "ben": "dich", "tu": [760, 200], "den": [560, 290], "nhan": "Tiến đánh phủ thành" },
+    { "id": "do-ho-thai-tap", "kieu": "quan", "ben": "ta", "x": 460, "y": 330, "nhan": "Đô hộ Thái Tập tự tử khi thành thất thủ (Giêng Quý Mùi, 863)" },
+    { "id": "quan-cao-bien", "kieu": "quan", "ben": "ta", "x": 160, "y": 230, "nhan": "Cao Biền đem quân sang đánh dẹp Nam Chiếu (864)" },
+    { "id": "mui-cao-bien-tien-cong", "kieu": "mui-ten", "ben": "ta", "tu": [220, 250], "den": [480, 290], "nhan": "Tiến đánh khôi phục phủ thành" },
+    { "id": "tuong-doan-tu-thien", "kieu": "quan", "ben": "dich", "x": 620, "y": 230, "nhan": "Tướng Nam Chiếu Đoàn Tù Thiên bị giết (tháng 4, 866)" },
+    { "id": "thanh-dai-la", "kieu": "thanh", "ben": "ta", "x": 500, "y": 300, "nhan": "Thành Đại La do Cao Biền đắp lại bên sông Tô Lịch (866)" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Nam Chiếu tiến đánh phủ thành Tống Bình",
+      "mo_ta": "Đầu năm 863, quân Nam Chiếu từ Vân Nam đem 5 vạn quân tiến đánh phủ thành Tống Bình, trị sở Giao Châu.",
+      "hien": ["thanh-tong-binh", "quan-nam-chieu", "mui-nam-chieu-tien-cong"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hạ phủ thành, đô hộ Thái Tập tử trận",
+      "mo_ta": "Tháng Giêng năm Quý Mùi (863), quân Nam Chiếu hạ được phủ thành, giết hại hơn 15 vạn người Giao Châu; Đô hộ Thái Tập tự tử, nhà Đường mất quyền kiểm soát Giao Châu hơn 3 năm.",
+      "hien": ["thanh-tong-binh", "quan-nam-chieu", "do-ho-thai-tap"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Nhà Đường sai Cao Biền đem quân sang đánh dẹp",
+      "mo_ta": "Mùa thu năm 864, nhà Đường sai Cao Biền đem quân sang đánh dẹp Nam Chiếu, giành lại quyền kiểm soát Giao Châu.",
+      "hien": ["quan-cao-bien", "quan-nam-chieu"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Cao Biền tiến đánh, khôi phục phủ thành",
+      "mo_ta": "Cao Biền tiến quân đánh phủ thành; đến tháng 4 năm Bính Tuất (866), hạ được thành, giết tướng Nam Chiếu Đoàn Tù Thiên, khôi phục quyền kiểm soát Giao Châu.",
+      "hien": ["quan-cao-bien", "mui-cao-bien-tien-cong", "tuong-doan-tu-thien", "thanh-tong-binh"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cao Biền đắp lại thành Đại La bên sông Tô Lịch",
+      "mo_ta": "Sau khi khôi phục, Cao Biền cho đắp lại thành Đại La bên bờ sông Tô Lịch, chu vi hơn 1.982 trượng, cao hơn 2 trượng, trong thành dân làm nhà hơn 40 vạn nóc.",
+      "hien": ["thanh-dai-la"]
+    }
+  ],
+  "ket_qua": "Tháng Giêng năm Quý Mùi (863), quân Nam Chiếu từ Vân Nam đem 5 vạn quân hạ phủ thành, giết hại hơn 15 vạn người Giao Châu; Đô hộ Thái Tập tự tử, nhà Đường mất quyền kiểm soát Giao Châu hơn 3 năm. Mùa thu 864, nhà Đường sai Cao Biền đem quân sang đánh dẹp Nam Chiếu; đến tháng 4 năm 866 Cao Biền hạ được thành, giết tướng Nam Chiếu Đoàn Tù Thiên, khôi phục quyền kiểm soát rồi cho đắp lại thành Đại La bên bờ sông Tô Lịch — chu vi hơn 1.982 trượng, cao hơn 2 trượng, trong thành dân làm nhà hơn 40 vạn nóc.",
+  "y_nghia": "Sự kiện phản ánh giai đoạn cuối thời Bắc thuộc: Giao Châu trở thành nơi tranh giành giữa Nam Chiếu và nhà Đường, chịu thiệt hại nặng nề (hơn 15 vạn người chết); thành Đại La do Cao Biền đắp lại năm 866 là công trình phòng thủ quy mô lớn tại trị sở Giao Châu.",
+  "trang_thai": "draft",
+  "nguon": [
+    "scov.gov.vn — Việt Nam sử lược (Trần Trọng Kim), Bắc thuộc thời đại – Chương V + VI — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/bac-thuoc-thoi-dai-chuong-v-vi.html"
+  ]
+}

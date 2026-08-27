@@ -1,0 +1,138 @@
+{
+  "id": "chien-thang-giong-dua-1947",
+  "ghi_chu": "Sa đồ Chiến thắng Giồng Dứa 25/4/1947 — nguồn ban đầu (baoapbac.vn, tiengiang.gov.vn) KHÔNG mở được (DNS lỗi / chặn bot 403) nên đã THAY bằng baoangiang.com.vn (đăng lại bài gốc Báo Ấp Bắc, tác giả Hồng Lê) + doanthanhnien.vn, cả hai đã xác minh trực tiếp bằng crawl4ai (2026-08-27). BỎ chi tiết 'diệt khoảng 80 tên, bắt sống 7 tên' vì KHÔNG có trong nguồn đã xác minh; SỬA năm công nhận di tích quốc gia 2004→2003 theo đúng nguồn. trang_thai=draft chờ soát §9.",
+  "ten": "Chiến thắng Giồng Dứa (25/4/1947)",
+  "nam": 1947,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Khu trưởng Khu 8 Trần Văn Trà (chỉ huy trực tiếp), Tham mưu trưởng Nguyễn Văn Quạn, Chi đội trưởng Chi đội 17 Phan Đình Lân",
+  "doi_thu": "Đoàn xe Chính phủ Lê Văn Hoạch (Nam Kỳ tự trị) và đoàn công-voa quân sự Pháp",
+  "dia_diem": "Giồng Dứa, làng Tam Hiệp (nay là ấp Đông, xã Long Định), huyện Châu Thành, tỉnh Đồng Tháp (trước 2025: tỉnh Tiền Giang)",
+  "lien_quan_tinh": [
+    "dong-thap"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          400,
+          290
+        ],
+        [
+          700,
+          285
+        ],
+        [
+          950,
+          280
+        ]
+      ],
+      "nhan": "Đường qua Giồng Dứa (Trung Lương – Long Định, dài 10km)"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-ta-phuc-kich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Quân dân Mỹ Tho, Trường Quân chính Khu 8, Chi đội 17 phục kích"
+    },
+    {
+      "id": "chan-vien-cai-lay",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 250,
+      "nhan": "Đại đội 2 (Chi đội 17) chặn viện hướng Cai Lậy"
+    },
+    {
+      "id": "chan-vien-trung-luong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 850,
+      "y": 250,
+      "nhan": "Đại đội 3 (Chi đội 17) chặn viện hướng Trung Lương"
+    },
+    {
+      "id": "doan-xe-dich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 280,
+      "nhan": "Đoàn xe Chính phủ Lê Văn Hoạch + công-voa quân sự Pháp"
+    },
+    {
+      "id": "mui-tan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        380
+      ],
+      "den": [
+        530,
+        290
+      ],
+      "nhan": "Nổ súng bất ngờ (10 giờ, 25/4/1947)"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 700,
+      "y": 180,
+      "nhan": "Diệt gọn đoàn xe 14 chiếc trong 10 phút"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bố trí trận địa phục kích dài 10km",
+      "mo_ta": "Dưới sự chỉ huy trực tiếp của Khu trưởng Trần Văn Trà, lực lượng quân dân Mỹ Tho, học viên Trường Quân chính Khu 8 phối hợp Chi đội 17 bố trí trận địa phục kích từ ngã ba Trung Lương đến cầu Long Định (Giồng Dứa); hai cánh quân chặn viện bố trí ở hướng Cai Lậy và Trung Lương.",
+      "hien": [
+        "quan-ta-phuc-kich",
+        "chan-vien-cai-lay",
+        "chan-vien-trung-luong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đoàn xe địch lọt vào trận địa (10 giờ, 25/4/1947)",
+      "mo_ta": "Đoàn xe của Chính phủ Lê Văn Hoạch (Nam Kỳ tự trị) đi cùng đoàn công-voa quân sự Pháp từ Sài Gòn xuống miền Tây di chuyển qua Giồng Dứa.",
+      "hien": [
+        "doan-xe-dich"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đồng loạt nổ súng — trận 'giao thông chiến'",
+      "mo_ta": "Một chiến sĩ giả nông dân đẩy xe bò chở đá cản đầu xe địch; tiếng tù và nổi lên làm hiệu lệnh, toàn trận địa đồng loạt nổ súng xung phong.",
+      "hien": [
+        "mui-tan-cong",
+        "doan-xe-dich"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Thắng lợi trong 10 phút",
+      "mo_ta": "Sau 10 phút nổ súng, quân ta diệt gọn đoàn xe 14 chiếc, đánh lui lực lượng chi viện từ Mỹ Tho, thu toàn bộ chiến lợi phẩm. Sau trận đánh, Pháp phải để quốc tang 7 ngày cho binh lính tử trận.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Diệt gọn đoàn xe 14 chiếc trong khoảng 10 phút giao chiến, đánh lui lực lượng chi viện từ Mỹ Tho, thu toàn bộ chiến lợi phẩm; Pháp phải để quốc tang 7 ngày cho binh lính tử trận.",
+  "y_nghia": "Cách đánh 'giao thông chiến' hình thành từ trận này sau đó được áp dụng rộng rãi trên các chiến trường trong kháng chiến chống Pháp; di tích được công nhận cấp quốc gia năm 2003.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo An Giang điện tử (baoangiang.com.vn, theo Hồng Lê — Báo Ấp Bắc) — Tiền Giang: Chiến thắng Giồng Dứa làm chấn động dư luận trong và ngoài nước — https://tintucmientay.baoangiang.com.vn/tien-giang-chien-thang-giong-dua-lam-chan-dong-du-luan-trong-va-ngoai-nuoc-a361124.html",
+    "Đoàn Thanh niên Cộng sản Hồ Chí Minh (doanthanhnien.vn) — Tiền Giang: Hội trại kỷ niệm 70 năm Ngày chiến thắng Giồng Dứa — https://doanthanhnien.vn/tin-tuc/cong-tac-tuyen-truyen-giao-duc/tien-giang-hoi-trai-ky-niem-70-nam-ngay-chien-thang-giong-dua"
+  ]
+}

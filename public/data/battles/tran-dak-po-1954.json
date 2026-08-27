@@ -1,0 +1,167 @@
+{
+  "id": "tran-dak-po-1954",
+  "ghi_chu": "Sa đồ Trận Đắk Pơ 24/6/1954 — nội dung ĐÃ XÁC MINH lại bằng WebFetch trực tiếp mở special.nhandan.vn sau cảnh báo WebSearch có thể bịa chi tiết (2026-08-27): bỏ chi tiết 'GM 100 vừa từ Triều Tiên chuyển sang' vì trang gốc KHÔNG xác nhận; thay bằng số liệu đã xác minh (1.900 địch loại khỏi vòng chiến, Đại tá Barroux bị bắt, 229 xe, 20 đại bác). trang_thai=draft chờ soát §9.",
+  "ten": "Trận Đắk Pơ (24/6/1954)",
+  "nam": 1954,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trung đoàn 96 (3 tiểu đoàn bộ binh 79, 40, 30), Trung đoàn trưởng Nguyễn Minh Châu, phối hợp Trung đoàn 120 Gia Lai",
+  "doi_thu": "Binh đoàn cơ động 100 (GM 100), tiểu đoàn khinh quân ngụy 520, tiểu đoàn pháo binh 105mm; Binh đoàn cơ động 42 (GM 42) ứng cứu",
+  "dia_diem": "Cầu Đắk Pơ — đèo Mang Yang, An Khê, tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          300
+        ],
+        [
+          400,
+          300
+        ],
+        [
+          700,
+          300
+        ],
+        [
+          900,
+          300
+        ]
+      ],
+      "nhan": "Đường số 19 qua cầu Đắk Pơ"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          80,
+          150
+        ],
+        [
+          500,
+          100
+        ],
+        [
+          920,
+          150
+        ]
+      ],
+      "nhan": "Vách núi phía bắc đường"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cau-dak-po",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 300,
+      "nhan": "Cầu Đắk Pơ"
+    },
+    {
+      "id": "doi-hinh-gm100",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 350,
+      "y": 300,
+      "nhan": "Lực lượng Pháp rút từ An Khê: GM 100, tiểu đoàn 520, pháo 105mm"
+    },
+    {
+      "id": "phuc-kich-bac",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 180,
+      "nhan": "Trung đoàn 96 phục kích (phía bắc, dọc vách núi)"
+    },
+    {
+      "id": "phuc-kich-nam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 420,
+      "nhan": "Trung đoàn 96 phục kích (phía nam, thung lũng sông Ba)"
+    },
+    {
+      "id": "mui-tan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        400,
+        200
+      ],
+      "den": [
+        500,
+        300
+      ],
+      "nhan": "Đồng loạt nổ súng dọc 1.200m trận địa"
+    },
+    {
+      "id": "gm42-ung-cuu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 400,
+      "nhan": "GM 42 ứng cứu — không kịp giải nguy"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 750,
+      "y": 200,
+      "nhan": "Loại 1.900 địch, bắt Đại tá Barroux, thu 229 xe, 20 đại bác"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bố trí trận địa phục kích dài 1.200m quanh cầu Đắk Pơ",
+      "mo_ta": "Trung đoàn 96 Liên khu 5 bố trí trận địa phục kích dọc đường số 19, từ 400m phía tây đến 800m phía đông cầu Đắk Pơ.",
+      "hien": [
+        "cau-dak-po",
+        "phuc-kich-bac",
+        "phuc-kich-nam"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lực lượng Pháp rút chạy từ An Khê lọt vào trận địa",
+      "mo_ta": "Binh đoàn cơ động 100 (GM 100) cùng tiểu đoàn khinh quân ngụy 520 và tiểu đoàn pháo binh 105mm rút chạy từ An Khê, hành quân qua khu vực cầu Đắk Pơ.",
+      "hien": [
+        "doi-hinh-gm100",
+        "cau-dak-po"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đồng loạt nổ súng, đánh tan đoàn quân Pháp (24/6/1954)",
+      "mo_ta": "Quân ta đồng loạt nổ súng từ hai phía trận địa; Binh đoàn cơ động 42 (GM 42) được điều tới ứng cứu nhưng không kịp giải nguy.",
+      "hien": [
+        "mui-tan-cong",
+        "doi-hinh-gm100",
+        "phuc-kich-bac",
+        "phuc-kich-nam",
+        "gm42-ung-cuu"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "'Điện Biên Phủ ở Liên khu 5'",
+      "mo_ta": "Loại khỏi vòng chiến khoảng 1.900 tên, trong đó Đại tá Barroux — chỉ huy GM 100 — bị bắt; thu 229 xe cơ giới, 20 đại bác, hơn 1.000 súng các loại. Chiến thắng được ví là 'Điện Biên Phủ ở Liên khu 5', trận đánh giao thông chiến lớn nhất trong hai cuộc kháng chiến trên chiến trường này.",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Loại khỏi vòng chiến khoảng 1.900 tên, Đại tá Barroux (chỉ huy GM 100) bị bắt; thu 229 xe cơ giới, 20 đại bác, hơn 1.000 súng các loại.",
+  "y_nghia": "Được ví là 'Điện Biên Phủ ở Liên khu 5', góp phần cùng chiến dịch Điện Biên Phủ buộc Pháp phải ký Hiệp định Genève.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Nhân Dân điện tử (special.nhandan.vn) — Trận Đắkpơ (6/1954): Trận phục kích điển hình của Liên khu 5 trong kháng chiến chống Pháp — https://special.nhandan.vn/tran-dakpo/index.html"
+  ]
+}

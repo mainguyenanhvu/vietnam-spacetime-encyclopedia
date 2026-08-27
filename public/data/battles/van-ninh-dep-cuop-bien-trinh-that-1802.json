@@ -1,0 +1,48 @@
+{
+  "ghi_chu": "Bám nguyên văn ket_qua/mo_ta đã duyệt trong chien-dich-tran-danh.json. Overlay còn ghi can_tra_them: cần tra số quyển Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Gia Long) năm 1802; danh tính 'Trịnh Thất' có trùng/liên quan hải tặc Trịnh Nhất (Zheng Yi) cùng thời hay là thủ lĩnh khác trùng tên — CHƯA xác minh được, giữ nguyên tên như nguồn, không suy diễn. Đã tìm nguồn nguyên văn Đại Nam thực lục trên trang được phép (.gov.vn/NXB/Viện Sử học) nhưng không tra được đoạn cụ thể trong thời gian cho phép, nên bỏ hẳn trich_van_tich thay vì bịa.",
+  "id": "van-ninh-dep-cuop-bien-trinh-that-1802",
+  "ten": "Tống Phước Lương – Nguyễn Văn Vân dẹp giặc biển, chém tướng cướp Trịnh Thất tại Vạn Ninh (1802)",
+  "nam": 1802,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Tống Phước Lương, Nguyễn Văn Vân",
+  "doi_thu": "Giặc biển gốc Thanh, tướng cướp Trịnh Thất",
+  "dia_diem": "Châu Vạn Ninh (nay phường Vạn Ninh, thành phố Móng Cái, tỉnh Quảng Ninh)",
+  "lien_quan_tinh": ["quang-ninh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có — nguồn chỉ chép vắn tắt vài dòng.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[0, 320], [500, 300], [1000, 330]], "nhan": "Vùng biển châu Vạn Ninh" }
+  ],
+  "phan_tu": [
+    { "id": "quan-ta-van-ninh-1802", "kieu": "quan", "ben": "ta", "x": 300, "y": 380, "nhan": "Tống Phước Lương, Nguyễn Văn Vân" },
+    { "id": "thuyen-dich-trinh-that", "kieu": "thuyen", "ben": "dich", "x": 680, "y": 260, "nhan": "Toán giặc biển gốc Thanh, tướng Trịnh Thất" },
+    { "id": "mui-ta-tan-cong-1802", "kieu": "mui-ten", "ben": "ta", "tu": [370, 360], "den": [600, 280], "nhan": "Đem quân đánh phá" },
+    { "id": "tuong-trinh-that-bi-chem", "kieu": "quan", "ben": "dich", "x": 700, "y": 220, "nhan": "Tướng giặc Trịnh Thất bị chém cùng nhiều đồng đảng" },
+    { "id": "tu-binh-truong-a-loc", "kieu": "quan", "ben": "dich", "x": 620, "y": 340, "nhan": "Trương Á Lộc cùng 11 người bị bắt sống" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tống Phước Lương – Nguyễn Văn Vân đem quân đánh phá",
+      "mo_ta": "Tống Phước Lương và Nguyễn Văn Vân đem quân đánh phá toán giặc biển (gốc Thanh) đang hoạt động tại châu Vạn Ninh.",
+      "hien": ["quan-ta-van-ninh-1802", "thuyen-dich-trinh-that", "mui-ta-tan-cong-1802"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chém tướng giặc Trịnh Thất cùng nhiều đồng đảng",
+      "mo_ta": "Quân ta chém được tướng giặc Trịnh Thất cùng nhiều đồng đảng.",
+      "hien": ["quan-ta-van-ninh-1802", "tuong-trinh-that-bi-chem"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bắt sống Trương Á Lộc cùng 11 người",
+      "mo_ta": "Quân ta bắt sống Trương Á Lộc cùng 11 người trong toán giặc.",
+      "hien": ["quan-ta-van-ninh-1802", "tu-binh-truong-a-loc"]
+    }
+  ],
+  "ket_qua": "Tống Phước Lương và Nguyễn Văn Vân đem quân đánh phá toán giặc biển (gốc Thanh) ở châu Vạn Ninh, chém được tướng giặc Trịnh Thất cùng nhiều đồng đảng, bắt sống Trương Á Lộc cùng 11 người.",
+  "y_nghia": "Trận mở đầu chuỗi đối phó của triều Nguyễn với giặc biển Tàu Ô dọc vùng biển Quảng Yên – Vạn Ninh đầu thời Gia Long.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Sở Du lịch thành phố Huế — Quan hệ hợp tác chống cướp biển của triều Nguyễn với nhà Thanh và vấn đề lãnh hải giai đoạn 1802–1883 — https://visithue.vn/QUAN-HE-HOP-TAC-CHONG-CUOP-BIEN-CUA-TRIEU-NGUYEN-VOI-NHA-THANH-VA-VAN-DE-LANH-HAI-GIAI-DOAN-1802-%e2%80%93-1883.html/?pid=MTc3MDl8Y3NkbGRs0"
+  ]
+}

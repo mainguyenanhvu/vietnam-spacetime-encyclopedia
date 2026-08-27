@@ -1,0 +1,188 @@
+{
+  "id": "chien-dich-an-khe-1953",
+  "ghi_chu": "Sa đồ Chiến dịch An Khê 13–28/1/1953 — bám sát nội dung đã tra từ TTXVN + Báo Bình Phước. trang_thai=draft chờ soát §9.",
+  "ten": "Chiến dịch An Khê (13–28/1/1953)",
+  "nam": 1953,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trung đoàn 108, Trung đoàn 803 (Liên khu 5), phối hợp Tiểu đoàn 40 và Trung đoàn 120 địa phương",
+  "doi_thu": "Quân đội Pháp (hệ thống cứ điểm đèo An Khê)",
+  "dia_diem": "Đèo An Khê — Tú Thủy, Cửu An, Eo Gió, Thượng An, Đầu Đèo, tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          80,
+          500
+        ],
+        [
+          300,
+          400
+        ],
+        [
+          550,
+          320
+        ],
+        [
+          800,
+          220
+        ]
+      ],
+      "nhan": "Đường số 19 qua đèo An Khê"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          50,
+          80
+        ],
+        [
+          500,
+          40
+        ],
+        [
+          950,
+          90
+        ]
+      ],
+      "nhan": "Rừng núi đèo An Khê"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cu-diem-tu-thuy",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 200,
+      "y": 420,
+      "nhan": "Cứ điểm Tú Thủy"
+    },
+    {
+      "id": "cu-diem-cuu-an",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 320,
+      "y": 380,
+      "nhan": "Cứ điểm Cửu An"
+    },
+    {
+      "id": "cu-diem-eo-gio",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 440,
+      "y": 340,
+      "nhan": "Cứ điểm Eo Gió"
+    },
+    {
+      "id": "quan-ta-108",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 260,
+      "y": 500,
+      "nhan": "Trung đoàn 108 tiến công (13/1)"
+    },
+    {
+      "id": "cu-diem-thuong-an",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 620,
+      "y": 280,
+      "nhan": "Cứ điểm Thượng An"
+    },
+    {
+      "id": "cu-diem-dau-deo",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 740,
+      "y": 250,
+      "nhan": "Cứ điểm Đầu Đèo"
+    },
+    {
+      "id": "quan-ta-803",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 600,
+      "y": 420,
+      "nhan": "Trung đoàn 803 tiến công (21/1)"
+    },
+    {
+      "id": "phuc-kich-24-25",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        500,
+        450
+      ],
+      "den": [
+        700,
+        380
+      ],
+      "nhan": "Phục kích trên đường số 19 (24–25/1)"
+    },
+    {
+      "id": "co-ket-thuc",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 880,
+      "y": 150,
+      "nhan": "Kết thúc chiến dịch (28/1): 6 vị trí bị đánh chiếm"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mở màn: đánh Tú Thủy – Cửu An – Eo Gió (13/1/1953)",
+      "mo_ta": "Trung đoàn 108 đồng loạt tiến công các cứ điểm Tú Thủy, Cửu An, Eo Gió trên đèo An Khê.",
+      "hien": [
+        "cu-diem-tu-thuy",
+        "cu-diem-cuu-an",
+        "cu-diem-eo-gio",
+        "quan-ta-108"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Trung đoàn 803 đánh Thượng An – Đầu Đèo (21/1)",
+      "mo_ta": "Trung đoàn 803 tiến công các cứ điểm Thượng An và Đầu Đèo, mở rộng thế trận.",
+      "hien": [
+        "cu-diem-thuong-an",
+        "cu-diem-dau-deo",
+        "quan-ta-803"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phục kích trên đường số 19 (24–25/1)",
+      "mo_ta": "Quân ta tiếp tục các trận phục kích thành công dọc đường số 19.",
+      "hien": [
+        "phuc-kich-24-25",
+        "quan-ta-803"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Kết thúc chiến dịch (28/1/1953)",
+      "mo_ta": "Chiến dịch kết thúc: quân ta đánh chiếm 6 vị trí, tiêu diệt và đánh thiệt hại nặng 7 đại đội, loại khỏi vòng chiến gần 900 địch (bắt 326 tên), thu gần 600 súng — chiến dịch lớn nhất trên chiến trường Nam Trung Bộ tính đến thời điểm đó.",
+      "hien": [
+        "co-ket-thuc",
+        "cu-diem-tu-thuy",
+        "cu-diem-cuu-an",
+        "cu-diem-eo-gio",
+        "cu-diem-thuong-an",
+        "cu-diem-dau-deo"
+      ]
+    }
+  ],
+  "ket_qua": "Đánh chiếm 6 vị trí, tiêu diệt và đánh thiệt hại nặng 7 đại đội, loại khỏi vòng chiến đấu gần 900 địch (bắt 326 tên), thu gần 600 súng các loại.",
+  "y_nghia": "Chiến dịch lớn nhất trên chiến trường Nam Trung Bộ tính đến thời điểm đó, thể hiện sự trưởng thành của lực lượng vũ trang Liên khu 5 trong tổ chức và chỉ huy chiến dịch quy mô.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Thông tấn xã Việt Nam (nvsk.vnanet.vn) — Chiến dịch An Khê (13-28/01/1953) — https://nvsk.vnanet.vn/chien-dich-an-khe-13-28-01-1953-1-34024.vna",
+    "Báo Bình Phước (baobinhphuoc.com.vn) — Chiến thắng An Khê - Bước trưởng thành của LLVT Liên khu 5 — https://baobinhphuoc.com.vn/news/1/12347/chien-thang-an-khe---buoc-truong-thanh-cua-llvt-lien-khu-5"
+  ]
+}

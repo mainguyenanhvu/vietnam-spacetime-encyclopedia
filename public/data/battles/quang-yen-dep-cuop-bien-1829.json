@@ -1,0 +1,47 @@
+{
+  "ghi_chu": "Bám nguyên văn ket_qua/mo_ta đã duyệt trong chien-dich-tran-danh.json. Overlay còn ghi can_tra_them: cần tra số quyển Đại Nam thực lục — Chính biên, Đệ nhị kỷ (Minh Mạng) năm 1829; toạ độ định vị theo trung tâm Quảng Yên ngày nay. Không tra được đoạn nguyên văn Đại Nam thực lục trên nguồn được phép (.gov.vn/NXB/Viện Sử học) trong thời gian cho phép nên bỏ hẳn trich_van_tich thay vì bịa.",
+  "id": "quang-yen-dep-cuop-bien-1829",
+  "ten": "Nguyễn Văn Đoái đánh cướp biển, thu 3 thuyền tại Quảng Yên (1829)",
+  "nam": 1829,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Văn Đoái",
+  "doi_thu": "Giặc biển",
+  "dia_diem": "Quảng Yên (nay tỉnh Quảng Ninh)",
+  "lien_quan_tinh": ["quang-ninh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có — nguồn chỉ chép vắn tắt vài dòng.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[0, 320], [500, 300], [1000, 330]], "nhan": "Vùng biển Quảng Yên" }
+  ],
+  "phan_tu": [
+    { "id": "quan-ta-nguyen-van-doai", "kieu": "quan", "ben": "ta", "x": 300, "y": 380, "nhan": "Nguyễn Văn Đoái thân hành đốc suất quan binh" },
+    { "id": "thuyen-dich-1829", "kieu": "thuyen", "ben": "dich", "x": 680, "y": 260, "nhan": "Giặc biển" },
+    { "id": "mui-ta-duoi-danh-1829", "kieu": "mui-ten", "ben": "ta", "tu": [370, 360], "den": [600, 280], "nhan": "Đuổi đánh" },
+    { "id": "thuyen-thu-lai-1829", "kieu": "thuyen", "ben": "ta", "x": 650, "y": 320, "nhan": "3 chiếc thuyền của giặc bị thu lại" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Văn Đoái thân hành đốc suất quan binh đuổi đánh",
+      "mo_ta": "Nguyễn Văn Đoái thân hành đốc suất quan binh đuổi đánh giặc biển tại Quảng Yên.",
+      "hien": ["quan-ta-nguyen-van-doai", "thuyen-dich-1829", "mui-ta-duoi-danh-1829"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Cướp lại được 3 chiếc thuyền của giặc",
+      "mo_ta": "Quân ta cướp lại được 3 chiếc thuyền của giặc.",
+      "hien": ["thuyen-thu-lai-1829"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chém hơn 10 đầu giặc",
+      "mo_ta": "Quân ta chém hơn 10 đầu giặc trong trận này.",
+      "hien": ["quan-ta-nguyen-van-doai", "thuyen-dich-1829"]
+    }
+  ],
+  "ket_qua": "Nguyễn Văn Đoái thân hành đốc suất quan binh đuổi đánh giặc biển tại Quảng Yên, cướp lại được 3 chiếc thuyền của giặc, chém hơn 10 đầu giặc.",
+  "y_nghia": "Một trong chuỗi các trận nhỏ chống cướp biển Tàu Ô dọc bờ biển Quảng Yên dưới thời Minh Mạng.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Sở Du lịch thành phố Huế — Quan hệ hợp tác chống cướp biển của triều Nguyễn với nhà Thanh và vấn đề lãnh hải giai đoạn 1802–1883 — https://visithue.vn/QUAN-HE-HOP-TAC-CHONG-CUOP-BIEN-CUA-TRIEU-NGUYEN-VOI-NHA-THANH-VA-VAN-DE-LANH-HAI-GIAI-DOAN-1802-%e2%80%93-1883.html/?pid=MTc3MDl8Y3NkbGRs0"
+  ]
+}

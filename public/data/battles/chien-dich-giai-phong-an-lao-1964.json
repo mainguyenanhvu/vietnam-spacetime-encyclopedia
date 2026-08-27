@@ -1,0 +1,164 @@
+{
+  "id": "chien-dich-giai-phong-an-lao-1964",
+  "ghi_chu": "Sa đồ Chiến dịch giải phóng An Lão 12/1964 — bám sát nội dung đã tra từ baogialai.com.vn. trang_thai=draft chờ soát §9.",
+  "ten": "Chiến dịch giải phóng An Lão (12/1964)",
+  "nam": 1964,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bộ Tư lệnh Quân khu 5; bộ đội chủ lực, bộ đội địa phương và dân quân du kích",
+  "doi_thu": "Quân đội Sài Gòn (chi khu quận lỵ An Lão)",
+  "dia_diem": "Thung lũng An Lão, tỉnh Gia Lai (trước 2025: tỉnh Bình Định)",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          500
+        ],
+        [
+          500,
+          460
+        ],
+        [
+          900,
+          500
+        ]
+      ],
+      "nhan": "Thung lũng An Lão bao quanh bởi núi"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cu-diem-chot-ap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 300,
+      "y": 320,
+      "nhan": "Các cứ điểm, chốt ấp"
+    },
+    {
+      "id": "quan-ta-buoc1",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 220,
+      "y": 400,
+      "nhan": "Bộ đội chủ lực, địa phương, du kích tiến công"
+    },
+    {
+      "id": "chi-khu-quan-ly",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 620,
+      "y": 280,
+      "nhan": "Chi khu quận lỵ An Lão (bị vây)"
+    },
+    {
+      "id": "quan-tiep-vien-khong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 780,
+      "y": 120,
+      "nhan": "Quân tiếp viện đường không"
+    },
+    {
+      "id": "quan-tiep-vien-bo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 780,
+      "y": 440,
+      "nhan": "Quân tiếp viện đường bộ"
+    },
+    {
+      "id": "mui-danh-vien-khong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        620,
+        280
+      ],
+      "den": [
+        770,
+        150
+      ],
+      "nhan": "Đánh quân tiếp viện đường không"
+    },
+    {
+      "id": "mui-danh-vien-bo",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        620,
+        300
+      ],
+      "den": [
+        770,
+        420
+      ],
+      "nhan": "Đánh quân tiếp viện đường bộ"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 250,
+      "nhan": "Làm chủ thung lũng An Lão"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bước 1: tiêu diệt cứ điểm, chốt ấp, bao vây chi khu quận lỵ",
+      "mo_ta": "Bộ đội chủ lực, bộ đội địa phương và dân quân du kích đồng loạt tiêu diệt các cứ điểm, chốt ấp và bao vây chi khu quận lỵ An Lão.",
+      "hien": [
+        "cu-diem-chot-ap",
+        "quan-ta-buoc1",
+        "chi-khu-quan-ly"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Bước 2: đánh quân tiếp viện đường không",
+      "mo_ta": "Quân ta tổ chức đánh quân tiếp viện của địch đổ bộ bằng đường không.",
+      "hien": [
+        "quan-tiep-vien-khong",
+        "mui-danh-vien-khong"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bước 3: đánh quân tiếp viện đường bộ",
+      "mo_ta": "Quân ta tiếp tục đánh quân tiếp viện tiến vào bằng đường bộ.",
+      "hien": [
+        "quan-tiep-vien-bo",
+        "mui-danh-vien-bo"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Làm chủ thung lũng An Lão (7–8/12/1964)",
+      "mo_ta": "Kế hoạch ban đầu dự kiến 5–7 ngày nhưng chiến dịch chỉ diễn ra trong 2 ngày đêm thần tốc; quân ta tiêu diệt toàn bộ các cứ điểm, điểm chốt, làm chủ hoàn toàn thung lũng An Lão (trừ quận lỵ).",
+      "hien": [
+        "co-thang"
+      ]
+    }
+  ],
+  "ket_qua": "Tiêu diệt toàn bộ các cứ điểm, điểm chốt, làm chủ hoàn toàn thung lũng An Lão (trừ quận lỵ) chỉ sau 2 ngày đêm chiến đấu.",
+  "y_nghia": "Phối hợp kịp thời với chiến thắng Bình Giã cùng thời điểm trên chiến trường Nam Bộ, mở rộng vùng giải phóng ở Liên khu 5.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Gia Lai điện tử (baogialai.com.vn) — Chiến trường Bình Định và những mốc son trên hành trình Thống nhất — https://baogialai.com.vn/chien-truong-binh-dinh-va-nhung-moc-son-tren-hanh-trinh-thong-nhat-post369677.html"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Báo Gia Lai điện tử (baogialai.com.vn) — bài 'Chiến trường Bình Định và những mốc son trên hành trình Thống nhất'",
+      "doan": "Theo kế hoạch ban đầu, chiến dịch sẽ diễn ra trong 5 - 7 ngày, nhưng thực tế chỉ diễn ra trong 2 ngày đêm thần tốc (ngày 7 và 8.12). Chiến dịch giải phóng huyện An Lão trải qua 3 bước. Bước 1, ta tiêu diệt 3 cứ điểm, 8 chốt ấp chiến lược; bao vây chi khu quận lỵ An Lão. Đến 1 giờ 5 phút ngày 7.12, các mũi tiến công đồng loạt nổ súng như vũ bão, chỉ trong một đêm đã tiêu diệt toàn bộ các cứ điểm, điểm chốt; truy bắt tàn quân, tề điệp, ác ôn, làm chủ toàn bộ thung lũng An Lão (trừ quận lỵ); hoàn thành một bước nhanh gọn, tạo điều kiện thuận lợi để triển khai lực lượng đánh quân chi viện.",
+      "nguon_trich": "baogialai.com.vn — Chiến trường Bình Định và những mốc son trên hành trình Thống nhất — https://baogialai.com.vn/chien-truong-binh-dinh-va-nhung-moc-son-tren-hanh-trinh-thong-nhat-post369677.html",
+      "buoc": 4
+    }
+  ]
+}

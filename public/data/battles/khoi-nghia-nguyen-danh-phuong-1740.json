@@ -1,0 +1,141 @@
+{
+  "id": "khoi-nghia-nguyen-danh-phuong-1740",
+  "ghi_chu": "Sa đồ Khởi nghĩa Nguyễn Danh Phương 1740–1750 — nguồn vinhphuc.gov.vn dùng lúc đầu KHÔNG mở được (3 lần: WebFetch https + http đều lỗi kết nối/chứng chỉ, crawl4ai ECONNREFUSED) nên đã THAY bằng nguồn baothainguyen.vn đã xác minh trực tiếp bằng WebFetch (2026-08-27), theo đúng luật bổ sung của điều phối viên. Nguồn mới đặt đồn Úc Kỳ và núi Độc Tôn ở Phú Bình/Phổ Yên (Thái Nguyên), KHÔNG phải Tam Dương/Bình Xuyên (Vĩnh Phúc) như bản nháp đầu — đã sửa toàn bộ nội dung theo nguồn đã kiểm chứng, nêu rõ dị biệt giữa các nguồn trong ghi_chu của mục lớp phủ. trang_thai=draft chờ soát §9.",
+  "ten": "Khởi nghĩa Nguyễn Danh Phương (Quận Hẻo) 1740–1750",
+  "nam": 1740,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Danh Phương (Quận Hẻo)",
+  "doi_thu": "Quân đội chúa Trịnh (tướng Nguyễn Phan, theo lệnh chúa Trịnh Doanh)",
+  "dia_diem": "Núi Tam Đảo (khởi binh), đồn Úc Kỳ (Phú Bình) và núi Độc Tôn (Phổ Yên), tỉnh Thái Nguyên",
+  "lien_quan_tinh": [
+    "thai-nguyen",
+    "phu-tho"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          100,
+          100
+        ],
+        [
+          400,
+          60
+        ],
+        [
+          700,
+          100
+        ]
+      ],
+      "nhan": "Dãy núi Tam Đảo"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "khoi-binh-tam-dao",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 180,
+      "nhan": "Tập hợp nghĩa quân, khởi binh tại núi Tam Đảo (1740)"
+    },
+    {
+      "id": "don-uc-ky",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 320,
+      "nhan": "Đồn Úc Kỳ (Phú Bình) — thành lũy kiên cố"
+    },
+    {
+      "id": "dai-ban-doanh-doc-ton",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 380,
+      "y": 450,
+      "nhan": "Đại bản doanh núi Độc Tôn (Phổ Yên)"
+    },
+    {
+      "id": "quan-trinh-nguyen-phan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 280,
+      "nhan": "Tướng Nguyễn Phan (lệnh chúa Trịnh Doanh) đem quân công phá"
+    },
+    {
+      "id": "mui-cong-pha",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        650,
+        280
+      ],
+      "den": [
+        470,
+        320
+      ],
+      "nhan": "Công phá đồn Úc Kỳ"
+    },
+    {
+      "id": "co-bi-bat",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 700,
+      "y": 420,
+      "nhan": "Đồn thất thủ, Nguyễn Danh Phương bị bắt (1750)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tập hợp nghĩa quân, khởi binh tại núi Tam Đảo (1740)",
+      "mo_ta": "Nguyễn Danh Phương tập hợp nghĩa quân, nổi dậy khởi nghĩa tại núi Tam Đảo.",
+      "hien": [
+        "khoi-binh-tam-dao"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Xây đồn Úc Kỳ kiên cố tại Phú Bình",
+      "mo_ta": "Ông xây đồn Úc Kỳ trên đồi thấp, có suối bao quanh phía bắc và sông sâu phía đông nam, cùng sân luyện tập, nhà ở, giếng nước — trở thành một thành lũy kiên cố.",
+      "hien": [
+        "don-uc-ky"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đặt đại bản doanh tại núi Độc Tôn",
+      "mo_ta": "Nguyễn Danh Phương đặt đại bản doanh tại núi Độc Tôn (Phổ Yên, Thái Nguyên), chỉ huy nghĩa quân từ đây.",
+      "hien": [
+        "dai-ban-doanh-doc-ton"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Triều đình cử tướng công phá đồn Úc Kỳ",
+      "mo_ta": "Năm 1750, triều đình Lê – Trịnh cử tướng Nguyễn Phan, theo lệnh chúa Trịnh Doanh, đem quân công phá đồn Úc Kỳ.",
+      "hien": [
+        "quan-trinh-nguyen-phan",
+        "mui-cong-pha",
+        "don-uc-ky"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đồn thất thủ, bị bắt (1750)",
+      "mo_ta": "Đồn Úc Kỳ thất thủ, Nguyễn Danh Phương bị bắt, cuộc khởi nghĩa kéo dài 10 năm tan rã. Phế tích đồn Úc Kỳ hiện vẫn còn ở Phú Bình.",
+      "hien": [
+        "co-bi-bat"
+      ]
+    }
+  ],
+  "ket_qua": "Cuộc khởi nghĩa kéo dài 10 năm (1740–1750), xây dựng được thành lũy kiên cố tại Úc Kỳ trước khi bị triều đình Lê – Trịnh đánh bại.",
+  "y_nghia": "Một trong những cuộc khởi nghĩa nông dân tiêu biểu vùng trung du Bắc Bộ giữa thế kỷ XVIII, cùng thời với khởi nghĩa Nguyễn Hữu Cầu.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Thái Nguyên điện tử (baothainguyen.vn) — Đồn Úc Kỳ và cuộc khởi nghĩa của Nguyễn Danh Phương — https://www.baothainguyen.vn/dat-va-nguoi-thai-nguyen/cac-mien-que/200906/don-uc-ky-va-cuoc-khoi-nghia-cua-nguyen-danh-phuong-367448B/"
+  ]
+}

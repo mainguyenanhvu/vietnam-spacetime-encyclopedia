@@ -1,0 +1,48 @@
+{
+  "ghi_chu": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn. Nominatim không định vị được 'Tiểu Áp'/'Cửa Lở' trực tiếp — toạ độ overlay tạm lấy theo xã Tam Anh lân cận, do_tin_cay_toa_do 'thap'. Cần tra thêm số quyển Đại Nam thực lục — Chính biên, Đệ nhị kỷ (Minh Mạng) năm 1835 (overlay đã ghi can_tra_them, chưa tra được). trang_thai=draft chờ soát §9.",
+  "id": "tieu-ap-dep-cuop-bien-1835",
+  "ten": "Nguyễn Văn Chất đánh cướp biển, bắt Lương Khai Phát tại Tiểu Áp (1835)",
+  "nam": 1835,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Văn Chất (Quản vệ, bộ biền Quảng Nam)",
+  "doi_thu": "Giặc biển (Lương Khai Phát cầm đầu)",
+  "dia_diem": "Cửa Tiểu Áp / Cửa Lở (nay xã Tam Anh, Núi Thành cũ, thành phố Đà Nẵng)",
+  "lien_quan_tinh": ["da-nang"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[0, 220], [500, 200], [1000, 230]], "nhan": "Cửa Tiểu Áp / Cửa Lở" }
+  ],
+  "phan_tu": [
+    { "id": "dich-cuop-bien-ta1835", "kieu": "thuyen", "ben": "dich", "x": 750, "y": 230, "nhan": "Giặc biển hoạt động tại cửa Tiểu Áp" },
+    { "id": "ta-quan-van-chat-ta1835", "kieu": "quan", "ben": "ta", "x": 300, "y": 420, "nhan": "Quản vệ Nguyễn Văn Chất đem quân" },
+    { "id": "mui-ta-danh-giac-ta1835", "kieu": "mui-ten", "ben": "ta", "tu": [300, 420], "den": [650, 270], "nhan": "Đem quân đánh giặc" },
+    { "id": "dich-thua-chay-ta1835", "kieu": "thuyen", "ben": "dich", "x": 850, "y": 150, "nhan": "Giặc thua chạy" },
+    { "id": "dich-bi-bat-ta1835", "kieu": "quan", "ben": "dich", "x": 680, "y": 330, "nhan": "Lương Khai Phát cùng 2 đồng bọn bị bắt" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Giặc biển hoạt động tại cửa Tiểu Áp",
+      "mo_ta": "Trận chống cướp biển hiếm hoi xảy ra ở miền Trung (Quảng Nam) thay vì cụm Quảng Yên – Vạn Ninh phía bắc, cho thấy phạm vi hoạt động của giặc Tàu Ô trải dọc bờ biển.",
+      "hien": ["dich-cuop-bien-ta1835"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quản vệ Nguyễn Văn Chất đem quân đánh giặc",
+      "mo_ta": "Quản vệ Nguyễn Văn Chất đem quân đánh giặc biển tại cửa Tiểu Áp.",
+      "hien": ["ta-quan-van-chat-ta1835", "dich-cuop-bien-ta1835", "mui-ta-danh-giac-ta1835"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Giặc thua chạy, bắt được Lương Khai Phát cùng 2 đồng bọn",
+      "mo_ta": "Giặc thua chạy, bắt được Lương Khai Phát cùng 2 đồng bọn.",
+      "hien": ["dich-thua-chay-ta1835", "dich-bi-bat-ta1835"]
+    }
+  ],
+  "ket_qua": "Quản vệ Nguyễn Văn Chất đem quân đánh giặc biển tại cửa Tiểu Áp, giặc thua chạy, bắt được Lương Khai Phát cùng 2 đồng bọn.",
+  "y_nghia": "Trận chống cướp biển hiếm hoi xảy ra ở miền Trung (Quảng Nam) thay vì cụm Quảng Yên – Vạn Ninh phía bắc, cho thấy phạm vi hoạt động của giặc Tàu Ô trải dọc bờ biển.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Sở Du lịch thành phố Huế — Quan hệ hợp tác chống cướp biển của triều Nguyễn với nhà Thanh và vấn đề lãnh hải giai đoạn 1802–1883 — https://visithue.vn/QUAN-HE-HOP-TAC-CHONG-CUOP-BIEN-CUA-TRIEU-NGUYEN-VOI-NHA-THANH-VA-VAN-DE-LANH-HAI-GIAI-DOAN-1802-%e2%80%93-1883.html/?pid=MTc3MDl8Y3NkbGRs0"
+  ]
+}

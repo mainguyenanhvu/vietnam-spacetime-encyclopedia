@@ -1,0 +1,88 @@
+{
+  "ghi_chu": "Bám ket_qua đã duyệt trong chien-dich-tran-danh.json làm gốc, có nêu MÂU THUẪN NGUỒN chứ không tự ý chọn bản gọn hơn (bất biến #4 dự án): (1) NĂM — cổng Bộ VHTTDL (scov.gov.vn, nguồn overlay đã duyệt) ghi 1921, trong khi cổng Ban Tuyên giáo và Dân vận tỉnh Lạng Sơn ghi sự kiện xảy ra tháng 10/1920; giữ nam=1921 theo overlay/tên file đã giao, ghi rõ chênh lệch trong bước 1. (2) TÍNH CHẤT LỰC LƯỢNG — mo_ta đã duyệt gọi đây là 'binh biến do binh lính người Việt trong quân đội Pháp nổi dậy', còn nguồn Ban Tuyên giáo Lạng Sơn mô tả là ~600 nghĩa quân người Nùng, Tày do Đội Ấn chỉ huy hành quân từ Cao Lâu, Xuất Lễ vào đánh — không xác nhận được đây có phải binh biến nội bộ hay là một cuộc tấn công từ bên ngoài; giữ nguyên hai cách mô tả, không gộp thành một diễn biến duy nhất. (3) ĐỊA ĐIỂM — overlay ghi 'Cao Lộc', nguồn mới cho biết lực lượng xuất phát từ Cao Lâu, Xuất Lễ (thuộc Cao Lộc) nhưng mục tiêu tấn công là phố Kỳ Lừa, Đông Kinh thuộc thị xã Lạng Sơn — không mâu thuẫn, chỉ là chi tiết hơn. Bước dập tắt (bước 3) giữ mức tổng quát đúng bằng câu chép đã duyệt vì không nguồn nào nêu ai/cách nào dập tắt.",
+  "id": "khoi-nghia-doi-an-lang-son-1921",
+  "ten": "Khởi nghĩa Đội Ấn — Lạng Sơn (1921)",
+  "nam": 1921,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đội Ấn",
+  "doi_thu": "Chính quyền thực dân Pháp tại Lạng Sơn",
+  "dia_diem": "Cao Lâu, Xuất Lễ (Cao Lộc) và phố Kỳ Lừa, Đông Kinh, thị xã Lạng Sơn xưa (nay đều thuộc tỉnh Lạng Sơn)",
+  "lien_quan_tinh": ["lang-son"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có — xem ghi_chu về mâu thuẫn nguồn.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [[180, 460], [400, 380], [680, 220]],
+      "nhan": "Đường hành quân qua Bản Sâm"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "co-ta-khoi-nghia",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 150,
+      "y": 420,
+      "nhan": "Cờ khởi nghĩa tại Cao Lâu, Xuất Lễ"
+    },
+    {
+      "id": "quan-ta-doi-an",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 180,
+      "y": 490,
+      "nhan": "Đội Ấn chỉ huy khoảng 600 nghĩa quân Nùng, Tày"
+    },
+    {
+      "id": "mui-tien-quan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [220, 460],
+      "den": [670, 230],
+      "nhan": "Đêm hành quân qua Bản Sâm, đột nhập phố Kỳ Lừa"
+    },
+    {
+      "id": "quan-dich-phap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 730,
+      "y": 200,
+      "nhan": "Trại lính Pháp tại Đông Kinh, thị xã Lạng Sơn"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đội Ấn tập hợp nghĩa quân, xuất phát",
+      "mo_ta": "Tháng 10 năm 1920 (theo cổng Ban Tuyên giáo và Dân vận tỉnh Lạng Sơn; cổng Bộ VHTTDL ghi năm 1921), Đội Ấn chỉ huy khoảng 600 nghĩa quân người Nùng, Tày xuất phát từ vùng Cao Lâu, Xuất Lễ (Cao Lộc) theo đường Bản Sâm.",
+      "hien": ["co-ta-khoi-nghia", "quan-ta-doi-an"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đột nhập phố Kỳ Lừa, đánh trại lính Pháp",
+      "mo_ta": "Đang đêm, nghĩa quân đột nhập phố Kỳ Lừa, đánh trại lính khố xanh Pháp tại Đông Kinh, thị xã Lạng Sơn, giết tuần phủ Cung Khắc Đản — một tay sai đắc lực của thực dân Pháp.",
+      "hien": ["mui-tien-quan", "quan-dich-phap", "quan-ta-doi-an"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bị dập tắt sau vài ngày",
+      "mo_ta": "Binh biến do Đội Ấn lãnh đạo bị dập tắt chỉ sau vài ngày — một trong chuỗi khởi nghĩa vũ trang lẻ tẻ giữa khởi nghĩa Thái Nguyên (1917) và Yên Bái (1930).",
+      "hien": ["quan-dich-phap"]
+    }
+  ],
+  "ket_qua": "Binh biến do Đội Ấn lãnh đạo binh lính người Việt trong quân đội Pháp nổi dậy tại Cao Lộc bị dập tắt chỉ sau vài ngày — một trong chuỗi khởi nghĩa vũ trang lẻ tẻ giữa khởi nghĩa Thái Nguyên (1917) và Yên Bái (1930).",
+  "y_nghia": "Một trong chuỗi các cuộc khởi nghĩa vũ trang lẻ tẻ chống thực dân Pháp ở miền núi phía Bắc đầu thế kỷ XX, giữa khởi nghĩa Thái Nguyên (1917) và khởi nghĩa Yên Bái (1930).",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Những cuộc khởi nghĩa chống thực dân Pháp trước khi Đảng Cộng sản Đông Dương ra đời — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/nhung-cuoc-khoi-nghia-chong-thuc-dan-phap-truoc-khi-dang-cong-san-dong-duong-ra-doi.html",
+    "Ban Tuyên giáo và Dân vận tỉnh Lạng Sơn — Tỉnh Lạng Sơn 192 năm xây dựng và phát triển — https://tuyengiaodanvanlangson.vn/tinh-lang-son-192-nam-xay-dung-va-phat-trien"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Ban Tuyên giáo và Dân vận tỉnh Lạng Sơn (tuyengiaodanvanlangson.vn) — bài 'Tỉnh Lạng Sơn 192 năm xây dựng và phát triển'",
+      "doan": "Tháng 10/1920, Đội Ấn ở đồn cảnh sát tỉnh Lạng Sơn chỉ huy 600 nghĩa quân người Nùng và Tày xuất phát từ vùng Cao Lâu, Xuất Lễ theo đường Bản Sâm, đang đêm đột nhập vào phố Kỳ Lừa và đánh trại lính khố xanh của Pháp ở Đông Kinh, thị xã Lạng Sơn, làm cho chúng hoảng loạn. Quân khởi nghĩa giết chết tên tuần phủ Cung Khắc Đản, một tên tay sai đắc lực của thực dân Pháp.",
+      "nguon_trich": "tuyengiaodanvanlangson.vn — Tỉnh Lạng Sơn 192 năm xây dựng và phát triển — https://tuyengiaodanvanlangson.vn/tinh-lang-son-192-nam-xay-dung-va-phat-trien",
+      "buoc": 2
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "ghi_chu": "Bám mo_ta + ket_qua đã duyệt trong chien-dich-tran-danh.json nguyên văn. Chưa tra được số quyển Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Gia Long) năm 1819 (overlay từng nêu 'can_tra_them' đúng việc này), nên KHÔNG khai trich_van_tich theo luật #9 — không tra được thì bỏ hẳn trường, không bịa nguyên văn. lien_quan_tinh gán cả quang-ngai và gia-lai vì Trường Lũy chạy từ Quảng Ngãi xưa sang Bình Định xưa; theo NQ sáp nhập tỉnh 2025, Bình Định nay thuộc tỉnh Gia Lai, Quảng Ngãi giữ nguyên tên (mở rộng thêm Kon Tum cũ).",
+  "id": "truong-luy-quang-ngai-1819",
+  "ten": "Lê Văn Duyệt xây Trường Lũy trấn áp nổi dậy Đá Vách (1819)",
+  "nam": 1819,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Văn Duyệt (phụng mệnh vua Gia Long)",
+  "doi_thu": "Người Đá Vách (Hrê) nổi dậy ở miền núi phía tây Quảng Ngãi",
+  "dia_diem": "Trà Bồng và dải núi phía tây tỉnh Quảng Ngãi xưa — lũy chạy qua Trà Bồng, Sơn Tịnh, Sơn Hà, Tư Nghĩa, Minh Long, Nghĩa Hành, Ba Tơ, Đức Phổ (nay tỉnh Quảng Ngãi) và sang tỉnh Bình Định xưa (nay tỉnh Gia Lai sau sáp nhập 2025)",
+  "lien_quan_tinh": ["quang-ngai", "gia-lai"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Trường Lũy dài ~127km, ở đây chỉ vẽ ba đoạn tiêu biểu để minh hoạ, không phải bản đồ đo đạc.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [[80, 460], [280, 500], [500, 470]],
+      "nhan": "Miền núi phía tây — nơi người Đá Vách sinh sống"
+    },
+    {
+      "kieu": "duong",
+      "diem": [[300, 230], [500, 330], [700, 400], [820, 500]],
+      "nhan": "Tuyến Trường Lũy dài khoảng 127km"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-doi-thu-da-vach",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 150,
+      "y": 500,
+      "nhan": "Người Đá Vách (Hrê) nổi dậy từ năm 1803"
+    },
+    {
+      "id": "quan-ta-le-van-duyet",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 120,
+      "nhan": "Lê Văn Duyệt phụng mệnh vua Gia Long"
+    },
+    {
+      "id": "cong-su-tra-bong",
+      "kieu": "cong-su",
+      "x": 320,
+      "y": 250,
+      "nhan": "Đoạn lũy qua Trà Bồng (Bắc)"
+    },
+    {
+      "id": "cong-su-ba-to",
+      "kieu": "cong-su",
+      "x": 560,
+      "y": 350,
+      "nhan": "Đoạn lũy qua Ba Tơ – Minh Long (giữa)"
+    },
+    {
+      "id": "cong-su-binh-dinh",
+      "kieu": "cong-su",
+      "x": 790,
+      "y": 470,
+      "nhan": "Đoạn lũy nối sang Bình Định (Nam)"
+    },
+    {
+      "id": "quan-ta-don-binh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 560,
+      "y": 450,
+      "nhan": "6 cơ binh trấn giữ dọc lũy"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Người Đá Vách nổi dậy ở miền tây Quảng Ngãi",
+      "mo_ta": "Từ năm 1803, người Đá Vách (Hrê) ở miền núi phía tây Quảng Ngãi nhiều lần nổi dậy chống chính quyền.",
+      "hien": ["quan-doi-thu-da-vach"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Gia Long giao Lê Văn Duyệt đắp Trường Lũy (1819)",
+      "mo_ta": "Năm 1819, vua Gia Long giao Lê Văn Duyệt đắp Trường Lũy (Lũy Bình Man) dài khoảng 127km, chạy từ Quảng Ngãi sang Bình Định, nhằm phân ranh đồng bằng với miền núi và kiểm soát các cuộc nổi dậy.",
+      "hien": ["quan-ta-le-van-duyet", "quan-doi-thu-da-vach", "cong-su-tra-bong"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đắp 37.497 trượng, đặt 6 cơ binh trấn giữ",
+      "mo_ta": "Lũy đắp dài 37.497 trượng, đặt 6 cơ binh trấn giữ dọc tuyến để kiểm soát các cuộc nổi dậy.",
+      "hien": ["cong-su-tra-bong", "cong-su-ba-to", "cong-su-binh-dinh", "quan-ta-don-binh"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Trường Lũy — công trình phòng thủ dài thứ nhì châu Á",
+      "mo_ta": "Trường Lũy — công trình phòng thủ dài thứ nhì châu Á sau Vạn Lý Trường Thành — nay là di tích quốc gia đặc biệt.",
+      "hien": ["cong-su-tra-bong", "cong-su-ba-to", "cong-su-binh-dinh"]
+    }
+  ],
+  "ket_qua": "Trước tình trạng người Đá Vách (Hrê) nổi dậy chống chính quyền từ năm 1803, vua Gia Long giao Lê Văn Duyệt đắp Trường Lũy (Lũy Bình Man) dài khoảng 127km từ Quảng Ngãi sang Bình Định, đắp 37.497 trượng, đặt 6 cơ binh trấn giữ để phân ranh đồng bằng với miền núi và kiểm soát các cuộc nổi dậy.",
+  "y_nghia": "Trường Lũy — công trình phòng thủ dài thứ nhì châu Á sau Vạn Lý Trường Thành — được Lê Văn Duyệt cho xây năm 1819 để đối phó các cuộc nổi dậy kéo dài của người Đá Vách (Hrê) ở miền tây Quảng Ngãi; nay là di tích quốc gia đặc biệt.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Cổng TTĐT xã Trường Giang, tỉnh Quảng Ngãi — https://truonggiang.quangngai.gov.vn/tin-tuc/di-tich-lich-su-van-hoa/di-tich-truong-luy-quang-ngai.html"
+  ]
+}

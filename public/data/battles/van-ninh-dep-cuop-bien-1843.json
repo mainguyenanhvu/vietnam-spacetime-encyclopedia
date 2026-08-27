@@ -1,0 +1,48 @@
+{
+  "ghi_chu": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn. Nguồn ghi 'khẩn sức dân phu lùng bắt' — tính chất truy bắt trên bộ nhiều hơn hải chiến, nên sa đồ thể hiện dạng lùng bắt trong địa bàn châu, không dựng cảnh hải chiến. Cần tra thêm số quyển Đại Nam thực lục — Chính biên, Đệ tam kỷ (Thiệu Trị) năm 1843 (overlay đã ghi can_tra_them, chưa tra được). trang_thai=draft chờ soát §9.",
+  "id": "van-ninh-dep-cuop-bien-1843",
+  "ten": "Trần Quang Giao dẹp giặc biển tại Vạn Ninh (1843)",
+  "nam": 1843,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trần Quang Giao (Tri châu Vạn Ninh)",
+  "doi_thu": "Giặc biển (Tàu Ô)",
+  "dia_diem": "Châu Vạn Ninh (nay phường Vạn Ninh, thành phố Móng Cái, tỉnh Quảng Ninh)",
+  "lien_quan_tinh": ["quang-ninh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[0, 200], [500, 180], [1000, 210]], "nhan": "Vùng biển ven châu Vạn Ninh" },
+    { "kieu": "duong", "diem": [[250, 420], [750, 400]], "nhan": "Địa bàn châu Vạn Ninh" }
+  ],
+  "phan_tu": [
+    { "id": "dich-xam-nhap-vn1843", "kieu": "quan", "ben": "dich", "x": 750, "y": 230, "nhan": "Giặc biển Tàu Ô xâm nhập châu Vạn Ninh" },
+    { "id": "ta-dan-phu-vn1843", "kieu": "quan", "ben": "ta", "x": 300, "y": 430, "nhan": "Trần Quang Giao khẩn sức dân phu" },
+    { "id": "mui-ta-lung-bat-vn1843", "kieu": "mui-ten", "ben": "ta", "tu": [300, 430], "den": [650, 280], "nhan": "Lùng bắt giặc biển" },
+    { "id": "dich-bi-bat-vn1843", "kieu": "quan", "ben": "dich", "x": 680, "y": 320, "nhan": "Chém 1 đầu giặc, bắt sống 24 tên" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Giặc biển Tàu Ô xâm nhập châu Vạn Ninh",
+      "mo_ta": "Một trong chuỗi sự kiện chống cướp biển Tàu Ô vùng biên giới đông bắc dưới thời Thiệu Trị, giặc biển xâm nhập địa bàn châu Vạn Ninh.",
+      "hien": ["dich-xam-nhap-vn1843"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tri châu Trần Quang Giao khẩn sức dân phu lùng bắt",
+      "mo_ta": "Tri châu Vạn Ninh Trần Quang Giao khẩn sức dân phu lùng bắt giặc biển tại châu Vạn Ninh.",
+      "hien": ["ta-dan-phu-vn1843", "dich-xam-nhap-vn1843", "mui-ta-lung-bat-vn1843"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chém 1 đầu giặc, bắt sống 24 tên",
+      "mo_ta": "Quân dân ta chém được 1 đầu giặc và bắt sống 24 tên.",
+      "hien": ["dich-bi-bat-vn1843", "mui-ta-lung-bat-vn1843"]
+    }
+  ],
+  "ket_qua": "Tri châu Vạn Ninh Trần Quang Giao khẩn sức dân phu lùng bắt giặc biển tại châu Vạn Ninh, chém 1 đầu giặc, bắt sống 24 tên.",
+  "y_nghia": "Một trong chuỗi sự kiện chống cướp biển Tàu Ô vùng biên giới đông bắc dưới thời Thiệu Trị.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Sở Du lịch thành phố Huế — Quan hệ hợp tác chống cướp biển của triều Nguyễn với nhà Thanh và vấn đề lãnh hải giai đoạn 1802–1883 — https://visithue.vn/QUAN-HE-HOP-TAC-CHONG-CUOP-BIEN-CUA-TRIEU-NGUYEN-VOI-NHA-THANH-VA-VAN-DE-LANH-HAI-GIAI-DOAN-1802-%e2%80%93-1883.html/?pid=MTc3MDl8Y3NkbGRs0"
+  ]
+}

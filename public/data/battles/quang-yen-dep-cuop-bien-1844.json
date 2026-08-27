@@ -1,0 +1,47 @@
+{
+  "ghi_chu": "Sa đồ dựng theo mo_ta ĐÃ DUYỆT trong chien-dich-tran-danh.json, KHÔNG suy diễn thêm diễn biến chiến thuật ngoài nguồn. Cần tra thêm số quyển Đại Nam thực lục — Chính biên, Đệ tam kỷ (Thiệu Trị) năm 1844 (overlay đã ghi can_tra_them, chưa tra được). trang_thai=draft chờ soát §9.",
+  "id": "quang-yen-dep-cuop-bien-1844",
+  "ten": "Nguyễn Đăng Tiếp đánh giặc biển tại Quảng Yên (1844)",
+  "nam": 1844,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Đăng Tiếp (Tri châu Vạn Ninh)",
+  "doi_thu": "Giặc biển (Tàu Ô)",
+  "dia_diem": "Quảng Yên (nay tỉnh Quảng Ninh)",
+  "lien_quan_tinh": ["quang-ninh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[0, 220], [500, 200], [1000, 230]], "nhan": "Vùng biển Quảng Yên" }
+  ],
+  "phan_tu": [
+    { "id": "dich-xam-nhap-qy1844", "kieu": "thuyen", "ben": "dich", "x": 750, "y": 230, "nhan": "Giặc biển xâm nhập vùng Quảng Yên" },
+    { "id": "ta-quan-dan-qy1844", "kieu": "quan", "ben": "ta", "x": 300, "y": 420, "nhan": "Nguyễn Đăng Tiếp đem quân dân" },
+    { "id": "mui-ta-don-danh-qy1844", "kieu": "mui-ten", "ben": "ta", "tu": [300, 420], "den": [650, 270], "nhan": "Đón đánh giặc biển" },
+    { "id": "dich-bi-bat-qy1844", "kieu": "thuyen", "ben": "dich", "x": 680, "y": 320, "nhan": "Bắt 3 tên, chém 2 đầu giặc" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Giặc biển xâm nhập vùng Quảng Yên",
+      "mo_ta": "Một trong chuỗi sự kiện chống cướp biển Tàu Ô vùng biên giới đông bắc dưới thời Thiệu Trị, giặc biển xâm nhập vùng Quảng Yên.",
+      "hien": ["dich-xam-nhap-qy1844"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tri châu Nguyễn Đăng Tiếp đem quân dân đón đánh",
+      "mo_ta": "Tri châu Vạn Ninh Nguyễn Đăng Tiếp đem quân dân đón đánh giặc biển.",
+      "hien": ["ta-quan-dan-qy1844", "dich-xam-nhap-qy1844", "mui-ta-don-danh-qy1844"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bắt 3 tên, chém 2 đầu giặc",
+      "mo_ta": "Quân dân ta bắt được 3 tên, chém 2 đầu giặc.",
+      "hien": ["dich-bi-bat-qy1844", "mui-ta-don-danh-qy1844"]
+    }
+  ],
+  "ket_qua": "Tri châu Vạn Ninh Nguyễn Đăng Tiếp đem quân dân đón đánh giặc biển, bắt được 3 tên, chém 2 đầu giặc.",
+  "y_nghia": "Một trong chuỗi sự kiện chống cướp biển Tàu Ô vùng biên giới đông bắc dưới thời Thiệu Trị.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Sở Du lịch thành phố Huế — Quan hệ hợp tác chống cướp biển của triều Nguyễn với nhà Thanh và vấn đề lãnh hải giai đoạn 1802–1883 — https://visithue.vn/QUAN-HE-HOP-TAC-CHONG-CUOP-BIEN-CUA-TRIEU-NGUYEN-VOI-NHA-THANH-VA-VAN-DE-LANH-HAI-GIAI-DOAN-1802-%e2%80%93-1883.html/?pid=MTc3MDl8Y3NkbGRs0"
+  ]
+}

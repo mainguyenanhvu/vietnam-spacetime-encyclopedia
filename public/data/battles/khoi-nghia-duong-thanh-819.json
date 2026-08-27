@@ -1,0 +1,90 @@
+{
+  "ghi_chu": "Bám ket_qua đã duyệt trong chien-dich-tran-danh.json nguyên văn. Bổ sung chi tiết quân số 'hơn 2.000 quân' và khung đánh giá ý nghĩa từ bài nghiên cứu của Phạm Lê Huy (2015) đăng trên Tạp chí Nghiên cứu Lịch sử (cơ quan của Viện Sử học, thuộc danh sách nguồn được phép), qua vjol.info.vn — đây là bài NGHIÊN CỨU hiện đại diễn giải chính sử, KHÔNG phải nguyên văn Đại Việt sử ký toàn thư, nên KHÔNG khai trich_van_tich (chưa tra được số quyển + nguyên văn Hán văn gốc, luật #9).",
+  "id": "khoi-nghia-duong-thanh-819",
+  "ten": "Khởi nghĩa Dương Thanh (819–820)",
+  "nam": 819,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Dương Thanh (thứ sử Hoan Châu)",
+  "doi_thu": "Nhà Đường (đô hộ sứ Lý Tượng Cổ)",
+  "dia_diem": "Phủ thành Tống Bình (Đại La, nay Hà Nội)",
+  "lien_quan_tinh": ["ha-noi"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [],
+  "phan_tu": [
+    {
+      "id": "thanh-tong-binh-2",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 500,
+      "y": 300,
+      "nhan": "Phủ thành Tống Bình (Đại La)"
+    },
+    {
+      "id": "quan-ta-duong-thanh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 430,
+      "nhan": "Dương Thanh, thứ sử Hoan Châu, hơn 2.000 quân"
+    },
+    {
+      "id": "mui-tap-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [240, 410],
+      "den": [470, 320],
+      "nhan": "Tập kích phủ thành, giết đô hộ sứ Lý Tượng Cổ"
+    },
+    {
+      "id": "co-ta-chiem-giu",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 500,
+      "y": 220,
+      "nhan": "Chiếm giữ phủ thành"
+    },
+    {
+      "id": "quan-dich-vien-binh-2",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 180,
+      "nhan": "Viện binh nhà Đường (820)"
+    },
+    {
+      "id": "mui-dich-tai-chiem",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [770, 200],
+      "den": [540, 290],
+      "nhan": "Tái chiếm phủ thành"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Dương Thanh tập kích, giết đô hộ sứ Lý Tượng Cổ",
+      "mo_ta": "Năm 819, Dương Thanh — thứ sử Hoan Châu người Việt — chỉ huy hơn 2.000 quân tập kích phủ thành Tống Bình, giết đô hộ sứ nhà Đường Lý Tượng Cổ.",
+      "hien": ["quan-ta-duong-thanh", "mui-tap-kich", "thanh-tong-binh-2"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiếm giữ phủ thành",
+      "mo_ta": "Dương Thanh chiếm giữ phủ thành Tống Bình.",
+      "hien": ["co-ta-chiem-giu", "thanh-tong-binh-2"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bị viện binh nhà Đường tái chiếm (820)",
+      "mo_ta": "Năm sau (820), Dương Thanh bị viện binh nhà Đường kéo sang tái chiếm phủ thành và giết chết.",
+      "hien": ["quan-dich-vien-binh-2", "mui-dich-tai-chiem", "thanh-tong-binh-2"]
+    }
+  ],
+  "ket_qua": "Dương Thanh — thứ sử Hoan Châu người Việt — tập kích giết đô hộ sứ nhà Đường Lý Tượng Cổ, chiếm giữ phủ thành; năm sau (820) bị viện binh nhà Đường tái chiếm thành và giết chết.",
+  "y_nghia": "Dù chỉ tồn tại chưa đầy một năm, cuộc khởi nghĩa được giới nghiên cứu sử học đánh giá là một mốc quan trọng cho thấy sự suy yếu của bộ máy cai trị nhà Đường ở An Nam, báo trước các biến động lớn dẫn tới nền tự chủ Việt Nam thế kỷ IX–X.",
+  "trang_thai": "draft",
+  "nguon": [
+    "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam, ch. VIII (603–939) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/viii.-thoi-ky-chong-phong-kien-phuong-bac-do-ho-lan-thu-ba-336-nam-603-939-.html",
+    "Phạm Lê Huy (2015), \"Khảo cứu lại khởi nghĩa Dương Thanh (819–820)\", Tạp chí Nghiên cứu Lịch sử (Viện Sử học) — https://vjol.info.vn/index.php/hists/article/view/21407"
+  ]
+}

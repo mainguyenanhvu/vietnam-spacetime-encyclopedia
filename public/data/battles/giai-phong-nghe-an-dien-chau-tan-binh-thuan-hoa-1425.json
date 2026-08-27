@@ -1,0 +1,261 @@
+{
+  "id": "giai-phong-nghe-an-dien-chau-tan-binh-thuan-hoa-1425",
+  "ghi_chu": "Sa đồ Giải phóng Nghệ An – Diễn Châu – Tân Bình – Thuận Hóa 1424–1425 — dữ kiện chính lấy từ baothainguyen.vn (đã xác minh trực tiếp qua WebFetch, đợt sáng nay). Bốn đoạn trích_van_tich lấy NGUYÊN VĂN từ mocban.vn (Trung tâm Lưu trữ Quốc gia IV — Mộc bản Triều Nguyễn), xác minh ở bậc cao nhất: curl tải HTML thô rồi tự lột thẻ bằng Node, đọc trực tiếp file .txt (KHÔNG qua WebFetch/WebSearch tóm tắt), theo đúng thang xác minh §4 luật đợt 2. Bỏ chi tiết 'Lê Chích đề xuất chiến lược' khỏi trích văn tịch dù có trong bài vì đoạn đó KHÔNG có tag 'sách X chép' rõ ràng đi kèm — chỉ giữ 4 đoạn có ghi rõ tên sách (và quyển/mặt khắc với Khâm định Việt sử thông giám cương mục). trang_thai=draft chờ soát §9.",
+  "ten": "Giải phóng Nghệ An – Diễn Châu – Tân Bình – Thuận Hóa (1424–1425)",
+  "nam": 1424,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Lợi (Bình Định Vương); các tướng Đinh Liệt, Trần Nguyên Hãn, Doãn Nỗ, Lê Đa Bồ, Lê Sát, Lưu Nhân Chú, Lê Ngân, Đinh Lễ",
+  "doi_thu": "Quân Minh (tướng Trần Trí, Phương Chính)",
+  "dia_diem": "Đồn Đa Căng, núi Bồ Lạp, châu Trà Long, ải Khả Lưu (Nghệ An), thành Diễn Châu, Tây Đô (Thanh Hóa), Tân Bình – Thuận Hóa",
+  "lien_quan_tinh": [
+    "nghe-an",
+    "thanh-hoa",
+    "quang-tri",
+    "hue"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          150,
+          100
+        ],
+        [
+          400,
+          60
+        ],
+        [
+          650,
+          120
+        ]
+      ],
+      "nhan": "Vùng núi Bồ Lạp — Khả Lưu (Nghệ An)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          500
+        ],
+        [
+          400,
+          450
+        ],
+        [
+          700,
+          350
+        ],
+        [
+          950,
+          200
+        ]
+      ],
+      "nhan": "Đường tiến quân Nghệ An → Diễn Châu → Tây Đô → Tân Bình – Thuận Hóa"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "don-da-can",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 150,
+      "y": 300,
+      "nhan": "Đồn Đa Căng"
+    },
+    {
+      "id": "nui-bo-lap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 280,
+      "y": 200,
+      "nhan": "Núi Bồ Lạp — quân Minh mai phục"
+    },
+    {
+      "id": "quan-ta-phuc-kich-bo-lap",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 260,
+      "nhan": "Vua Lê Lợi phục sẵn binh tướng trong rừng"
+    },
+    {
+      "id": "chau-tra-long",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 400,
+      "y": 250,
+      "nhan": "Châu Trà Long"
+    },
+    {
+      "id": "quan-minh-tran-tri",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 180,
+      "nhan": "Trần Trí rút chạy về thành Nghệ An"
+    },
+    {
+      "id": "ai-kha-luu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 450,
+      "y": 350,
+      "nhan": "Ải Khả Lưu — Trần Trí, Phương Chính kéo tới hòng chiếm lại Trà Lân"
+    },
+    {
+      "id": "mui-nghi-binh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        350,
+        420
+      ],
+      "den": [
+        470,
+        360
+      ],
+      "nhan": "Kế nghi binh — ngầm vượt sông mai phục"
+    },
+    {
+      "id": "co-ky-luat",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 300,
+      "y": 480,
+      "nhan": "Nghiêm cấm quân sĩ xâm phạm của dân dù lương cạn"
+    },
+    {
+      "id": "thanh-dien-chau",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 650,
+      "y": 250,
+      "nhan": "Thành Diễn Châu"
+    },
+    {
+      "id": "quan-ta-dinh-le",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 600,
+      "y": 300,
+      "nhan": "Tướng Đinh Lễ đánh thành Diễn Châu"
+    },
+    {
+      "id": "tay-do",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 780,
+      "y": 180,
+      "nhan": "Tây Đô — quân Minh rút về cố thủ"
+    },
+    {
+      "id": "tan-binh-thuan-hoa",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 900,
+      "y": 400,
+      "nhan": "Tân Bình – Thuận Hóa"
+    },
+    {
+      "id": "co-thang-loi-cuoi",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 920,
+      "y": 120,
+      "nhan": "Làm chủ Thanh Hóa – Hải Vân, mở đường ra Đông Quan"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Hạ đồn Đa Căng, phục kích núi Bồ Lạp (thu 1424)",
+      "mo_ta": "Nghĩa quân Lam Sơn bất ngờ tấn công đồn Đa Căng và giành thắng lợi. Khi qua núi Bồ Lạp, gặp quân Minh mai phục, Lê Lợi phục sẵn binh tướng trong rừng rồi tung quân đánh tan quân Minh, chém Đô ty Trần Trung và hơn 2.000 quân giặc, bắt hơn 100 ngựa.",
+      "hien": [
+        "don-da-can",
+        "nui-bo-lap",
+        "quan-ta-phuc-kich-bo-lap"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hạ châu Trà Long, Trần Trí rút chạy",
+      "mo_ta": "Hôm sau, nghĩa quân tiến đến châu Trà Long và chiến thắng một lần nữa. Tướng Minh Trần Trí phải rút chạy về thành Nghệ An.",
+      "hien": [
+        "chau-tra-long",
+        "quan-minh-tran-tri"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phá vây tại ải Khả Lưu bằng kế nghi binh",
+      "mo_ta": "Trần Trí và Phương Chính kéo quân đường bộ, đường thủy tới ải Khả Lưu hòng chiếm lại Trà Lân. Quân Lam Sơn dùng kế nghi binh — ban ngày phô trương cờ trống, ban đêm ngầm cho quân và voi lặng lẽ vượt sông mai phục — đánh tan đợt tiến quân của địch.",
+      "hien": [
+        "ai-kha-luu",
+        "mui-nghi-binh"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Nghiêm lệnh giữ dân dù lương cạn",
+      "mo_ta": "Dù lương thực đã cạn kiệt, Bình Định Vương vẫn hạ lệnh cho các tướng nghiêm cấm quân sĩ xâm phạm của dân ở những châu huyện đi qua.",
+      "hien": [
+        "co-ky-luat"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Hạ thành Diễn Châu, tiến chiếm Tân Bình – Thuận Hóa (1425)",
+      "mo_ta": "Đầu năm 1425, nghĩa quân cơ bản giải phóng vùng Nghệ An. Mùa hạ, tướng Đinh Lễ đánh hạ thành Diễn Châu, quân Minh rút chạy về Tây Đô cố thủ. Sau khi giải phóng Thanh Hóa, Bình Định Vương hạ lệnh cho các tướng tiến đánh Tân Bình và Thuận Hóa.",
+      "hien": [
+        "thanh-dien-chau",
+        "quan-ta-dinh-le",
+        "tay-do",
+        "tan-binh-thuan-hoa"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Làm chủ Thanh Hóa – Hải Vân, mở đường ra Đông Quan",
+      "mo_ta": "Đến cuối năm 1425, nghĩa quân Lam Sơn đã làm chủ toàn bộ dải đất từ Thanh Hóa đến đèo Hải Vân — tạo bàn đạp quyết định cho chiến dịch tiến ra giải phóng Đông Quan năm 1426–1427.",
+      "hien": [
+        "co-thang-loi-cuoi"
+      ]
+    }
+  ],
+  "ket_qua": "Nghĩa quân Lam Sơn hạ các thành Đa Căng, Trà Long, Diễn Châu, làm chủ Nghệ An – Thanh Hóa rồi mở rộng xuống Tân Bình – Thuận Hóa; đến cuối 1425 kiểm soát toàn bộ dải đất từ Thanh Hóa đến đèo Hải Vân.",
+  "y_nghia": "Chiến dịch giải phóng Nghệ An mở ra bước ngoặt chiến lược của khởi nghĩa Lam Sơn — chuyển từ thế phòng ngự cầm cự trên núi Chí Linh sang thế chủ động tiến công, tạo bàn đạp quyết định cho giai đoạn giải phóng Đông Quan 1426–1427.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Thái Nguyên điện tử (baothainguyen.vn) — Khởi nghĩa Lam Sơn - dấu son trong lịch sử giữ nước của dân tộc — https://baothainguyen.vn/chinh-tri/200809/khoi-nghia-lam-son-dau-son-trong-lich-su-giu-nuoc-cua-dan-toc-367AB67/",
+    "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Lê Lợi – Anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Đại Việt sử ký toàn thư (bản Mộc bản)",
+      "doan": "Trời sắp tối, vua bèn phục sẵn binh tướng trong rừng. Bọn Phương Chính đến, vua tung quân ra đánh. Quân Minh tan vỡ lớn. Ta chém được Đô ty Trần Trung và hơn hai nghìn thủ cấp quân giặc, bắt được hơn một trăm cỗ ngựa. Quân Minh tháo chạy.",
+      "nguon_trich": "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Lê Lợi – Anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 1
+    },
+    {
+      "sach": "Khâm định Việt sử thông giám cương mục, quyển 13, mặt khắc 19",
+      "doan": "Ban ngày cho quân mở cờ khua trống, ban đêm cho đốt lửa làm như thổi nấu, nhưng ngầm sai quân và voi lặng lẽ qua sông, mai phục. Mờ sớm hôm sau, địch tiến quân để bức bách ta, gặp quân mai phục nổi dậy, chúng thua thiệt nặng nề, phải lui giữ mạn hạ lưu.",
+      "nguon_trich": "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Lê Lợi – Anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 3
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư, quyển 10, mặt khắc 16",
+      "doan": "Dân chúng khổ về chính sách bạo ngược của giặc đã lâu rồi. Những châu huyện nào chúng ta đi tới, không được mảy may xâm phạm của dân. Nếu không phải là trâu bò, thóc lúa của bọn nguỵ quan, thì dẫu đói khát khốn khó đến đâu cũng không được lấy bậy.",
+      "nguon_trich": "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Lê Lợi – Anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 4
+    },
+    {
+      "sach": "Khâm định Việt sử thông giám cương mục",
+      "doan": "Vương liệu trước rằng Tân Bình, Thuận Hóa bị đứt liên lạc với Nghệ An và Đông Đô đã từ lâu, bèn dụ bảo các tướng: Người giỏi chiến trận thường bỏ chỗ kiên cố, đánh chỗ sơ hở, tránh chỗ vững chắc, đánh vào chỗ trống rỗng; Như thế thì chỉ dùng sức một phần mà thành công gấp bội.",
+      "nguon_trich": "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Lê Lợi – Anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 5
+    }
+  ]
+}

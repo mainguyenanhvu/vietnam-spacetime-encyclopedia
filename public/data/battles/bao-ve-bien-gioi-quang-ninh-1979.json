@@ -1,0 +1,154 @@
+{
+  "id": "bao-ve-bien-gioi-quang-ninh-1979",
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới Quảng Ninh 1979 — NỘI DUNG NHẠY CẢM (cùng chủ đề với các mục T2 đã liệt kê trong docs/section9-sensitive.json như bien-gioi-phia-bac-1979, mat-tran-vi-xuyen-1984-1989, gac-ma-1988). TỰ SOÁT 2026-08-27 (đợt 2): mở lại trực tiếp baoquangninh.vn — bước 1 (rạng sáng 17/2/1979, tiến công đồng loạt Pò Hèn – Thán Phún/Móng Cái, Đồng Văn, Hoành Mô/Bình Liêu, Quảng Đức/Hải Hà) ĐÚNG NGUYÊN VĂN, GIỮ NGUYÊN. Bước 4 bản gốc SAI: ghi 'Bộ Chính trị quyết định thành lập Đặc khu Quảng Ninh ngày 20/4/1979' nhưng nguồn KHÔNG hề nhắc tới việc thành lập đặc khu — chỉ có 'ngày 19 và 20/4/1979, Tỉnh ủy, UBND tỉnh tổ chức hội nghị mừng công đánh thắng quân xâm lược biên giới phía Bắc'. Đã sửa lại đúng nội dung xác nhận được, bỏ khẳng định về đặc khu. KHÔNG suy diễn tên chỉ huy cụ thể (nguồn chỉ ghi 'lực lượng công an vũ trang và dân quân địa phương'), KHÔNG mô tả đội hình/quân số phía đối phương ngoài nguồn. Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "ten": "Chiến đấu bảo vệ biên giới Quảng Ninh 1979",
+  "nam": 1979,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lực lượng công an vũ trang (bộ đội biên phòng) và dân quân địa phương tỉnh Quảng Ninh",
+  "doi_thu": "Quân xâm lược (biên giới phía Bắc, 1979)",
+  "dia_diem": "Hoành Mô (Bình Liêu), Quảng Đức (Hải Hà), Đồng Văn, tỉnh Quảng Ninh",
+  "lien_quan_tinh": [
+    "quang-ninh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          100,
+          500
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          700,
+          300
+        ]
+      ],
+      "nhan": "Tuyến biên giới Quảng Ninh"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-dich-tien-cong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 220,
+      "nhan": "Quân xâm lược tiến công đồng loạt nhiều hướng (17/2/1979)"
+    },
+    {
+      "id": "mui-tien-cong-hoanh-mo",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        650,
+        200
+      ],
+      "den": [
+        420,
+        260
+      ],
+      "nhan": "Hướng Hoành Mô (Bình Liêu)"
+    },
+    {
+      "id": "mui-tien-cong-quang-duc",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        650,
+        300
+      ],
+      "den": [
+        420,
+        340
+      ],
+      "nhan": "Hướng Quảng Đức (Hải Hà)"
+    },
+    {
+      "id": "mui-tien-cong-dong-van",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        650,
+        150
+      ],
+      "den": [
+        420,
+        190
+      ],
+      "nhan": "Hướng Đồng Văn"
+    },
+    {
+      "id": "quan-ta-cong-an-vu-trang",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 280,
+      "nhan": "Công an vũ trang, dân quân địa phương Quảng Ninh"
+    },
+    {
+      "id": "co-danh-lui",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 250,
+      "y": 150,
+      "nhan": "Đánh lui toàn bộ các đợt tiến công"
+    },
+    {
+      "id": "co-dac-khu",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 450,
+      "nhan": "Hội nghị mừng công (19–20/4/1979)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân xâm lược tiến công đồng loạt nhiều hướng (17/2/1979)",
+      "mo_ta": "Rạng sáng 17/2/1979, quân xâm lược tiến công đồng loạt vào các hướng Pò Hèn – Thán Phún (Móng Cái), Đồng Văn, Hoành Mô (Bình Liêu), Quảng Đức (Hải Hà).",
+      "hien": [
+        "quan-dich-tien-cong",
+        "mui-tien-cong-hoanh-mo",
+        "mui-tien-cong-quang-duc",
+        "mui-tien-cong-dong-van"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Quân dân Quảng Ninh chống trả dù lực lượng chênh lệch",
+      "mo_ta": "Dù lực lượng chênh lệch — phía ta chủ yếu chỉ có lực lượng công an vũ trang và dân quân địa phương — quân dân Quảng Ninh vẫn kiên cường chống trả.",
+      "hien": [
+        "quan-ta-cong-an-vu-trang"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh lui toàn bộ các đợt tiến công",
+      "mo_ta": "Quân dân Quảng Ninh đã đánh lui toàn bộ các đợt tiến công của quân xâm lược.",
+      "hien": [
+        "co-danh-lui"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Hội nghị mừng công (19–20/4/1979)",
+      "mo_ta": "Ngày 19–20/4/1979, Tỉnh ủy và UBND tỉnh Quảng Ninh tổ chức hội nghị mừng công đánh thắng quân xâm lược biên giới phía Bắc.",
+      "hien": [
+        "co-dac-khu"
+      ]
+    }
+  ],
+  "ket_qua": "Quân dân Quảng Ninh đã đánh lui toàn bộ các đợt tiến công của quân xâm lược; ngày 19–20/4/1979, Tỉnh ủy và UBND tỉnh tổ chức hội nghị mừng công.",
+  "y_nghia": "Một trong nhiều mặt trận của cuộc chiến đấu bảo vệ biên giới phía Bắc Tổ quốc năm 1979, thể hiện tinh thần chiến đấu của lực lượng vũ trang địa phương trước thế trận chênh lệch.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Báo Quảng Ninh điện tử (baoquangninh.vn) — Quân và dân Quảng Ninh chiến đấu bảo vệ biên giới — https://baoquangninh.vn/quan-va-dan-quang-ninh-chien-dau-bao-ve-bien-gioi-2422940.html",
+    "Cổng TTĐT thành phố Uông Bí (uongbi.gov.vn) — Quân và dân Quảng Ninh chiến đấu bảo vệ biên giới — https://uongbi.gov.vn/quan-va-dan-quang-ninh-chien-dau-bao-ve-bien-gioi-p13n35470.html"
+  ]
+}

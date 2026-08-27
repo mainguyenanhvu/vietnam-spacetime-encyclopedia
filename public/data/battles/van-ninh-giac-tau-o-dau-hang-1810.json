@@ -1,0 +1,47 @@
+{
+  "ghi_chu": "Bám nguyên văn ket_qua/mo_ta đã duyệt trong chien-dich-tran-danh.json. Overlay còn ghi can_tra_them: cần tra số quyển Đại Nam thực lục — Chính biên, Đệ nhất kỷ (Gia Long) năm 1810. Không tra được đoạn nguyên văn trên nguồn được phép (.gov.vn/NXB/Viện Sử học) trong thời gian cho phép nên bỏ hẳn trich_van_tich thay vì bịa.",
+  "id": "van-ninh-giac-tau-o-dau-hang-1810",
+  "ten": "Nguyễn Văn Hạnh dẹp giặc Tàu Ô, giặc xin đầu hàng tại Vạn Ninh (1810)",
+  "nam": 1810,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Văn Hạnh",
+  "doi_thu": "Giặc Tàu Ô",
+  "dia_diem": "Châu Vạn Ninh (nay phường Vạn Ninh, thành phố Móng Cái, tỉnh Quảng Ninh)",
+  "lien_quan_tinh": ["quang-ninh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có — nguồn chỉ chép vắn tắt vài dòng.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[0, 320], [500, 300], [1000, 330]], "nhan": "Vùng biển châu Vạn Ninh" }
+  ],
+  "phan_tu": [
+    { "id": "quan-ta-nguyen-van-hanh", "kieu": "quan", "ben": "ta", "x": 300, "y": 360, "nhan": "Nguyễn Văn Hạnh đem quân đón đánh" },
+    { "id": "thuyen-dich-tau-o-1810", "kieu": "thuyen", "ben": "dich", "x": 700, "y": 240, "nhan": "Giặc Tàu Ô trốn ngoài biển" },
+    { "id": "mui-ta-don-danh-1810", "kieu": "mui-ten", "ben": "ta", "tu": [380, 340], "den": [620, 270], "nhan": "Đón đánh tại Vạn Ninh" },
+    { "id": "co-dau-hang-1810", "kieu": "co", "ben": "dich", "x": 700, "y": 290, "nhan": "Đảng giặc xin đầu hàng" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Giặc Tàu Ô trốn ngoài biển, nhà Thanh nhờ phối hợp truy đuổi",
+      "mo_ta": "Giặc Tàu Ô trốn ngoài biển; quan Khâm Châu (nhà Thanh) gửi thư nhờ triều đình phối hợp truy đuổi.",
+      "hien": ["thuyen-dich-tau-o-1810"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Văn Hạnh đem quân đón đánh tại Vạn Ninh",
+      "mo_ta": "Nguyễn Văn Hạnh đem quân đón đánh toán giặc Tàu Ô tại Vạn Ninh.",
+      "hien": ["quan-ta-nguyen-van-hanh", "thuyen-dich-tau-o-1810", "mui-ta-don-danh-1810"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đảng giặc xin đầu hàng",
+      "mo_ta": "Trước sức đón đánh của quân triều đình, đảng giặc phải xin đầu hàng.",
+      "hien": ["quan-ta-nguyen-van-hanh", "co-dau-hang-1810"]
+    }
+  ],
+  "ket_qua": "Giặc Tàu Ô trốn ngoài biển bị quan Khâm Châu (nhà Thanh) gửi thư nhờ phối hợp truy đuổi; Nguyễn Văn Hạnh đem quân đón đánh tại Vạn Ninh, đảng giặc phải xin đầu hàng.",
+  "y_nghia": "Sự kiện tiêu biểu cho cơ chế phối hợp Việt–Thanh truy quét cướp biển Tàu Ô vùng biên giới đông bắc đầu thế kỷ 19.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Sở Du lịch thành phố Huế — Quan hệ hợp tác chống cướp biển của triều Nguyễn với nhà Thanh và vấn đề lãnh hải giai đoạn 1802–1883 — https://visithue.vn/QUAN-HE-HOP-TAC-CHONG-CUOP-BIEN-CUA-TRIEU-NGUYEN-VOI-NHA-THANH-VA-VAN-DE-LANH-HAI-GIAI-DOAN-1802-%e2%80%93-1883.html/?pid=MTc3MDl8Y3NkbGRs0"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "bao-ve-bien-gioi-hong-ngu-1977-1978",
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới Hồng Ngự, Đồng Tháp 1977–1978 — NỘI DUNG NHẠY CẢM (cùng chủ đề với các mục T2 đã liệt kê trong docs/section9-sensitive.json như bien-gioi-tay-nam-1978-1979, tham-sat-ba-chuc). TỰ SOÁT 2026-08-27 (đợt 2, sau cảnh báo mô hình tự điền số liệu quen thuộc): mở lại trực tiếp baotanglichsu.vn — bản gốc bước 1 SAI: ghi '9 sư đoàn... 25/9/1977... An Giang, Kiên Giang, Long An, Đồng Tháp' nhưng nguồn thực ghi '4 sư đoàn... Tân Biên, Bến Cầu, Châu Thành (Tây Ninh)' cho đúng ngày đó — SAI CẢ SỐ SƯ ĐOÀN LẪN TỈNH. Đã sửa bước 1 để không khẳng định chi tiết sai này, chỉ giữ khung thời gian chung đã xác nhận được (Khmer Đỏ mở rộng chiến tranh biên giới Tây Nam từ 9/1977). Bước 2 và ket_qua (2 sư đoàn đánh Hồng Ngự 13/12/1978; tổng tiến công cuối 1978 dùng 10/19 sư đoàn, 50.000–60.000 quân) ĐÃ xác nhận đúng nguyên văn qua cùng một lần mở trang, GIỮ NGUYÊN. Bám sát NGUYÊN VĂN ket_qua đã duyệt trong chien-dich-tran-danh.json (dựng theo mẫu gac-ma-1988.json) cho các phần còn lại: KHÔNG có tên chỉ huy cụ thể, KHÔNG có số liệu thương vong/đơn vị riêng tại Hồng Ngự vì nguồn chỉ mô tả trong khung cảnh toàn tuyến biên giới Tây Nam. Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "ten": "Chiến đấu bảo vệ biên giới Hồng Ngự, Đồng Tháp 1977–1978",
+  "nam": 1977,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lực lượng vũ trang Quân khu 9 và bộ đội địa phương, dân quân biên giới Đồng Tháp",
+  "doi_thu": "Quân Khmer Đỏ",
+  "dia_diem": "Huyện Hồng Ngự, tỉnh Đồng Tháp",
+  "lien_quan_tinh": [
+    "dong-thap"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          0,
+          350
+        ],
+        [
+          500,
+          380
+        ],
+        [
+          1000,
+          340
+        ]
+      ],
+      "nhan": "Tuyến biên giới Tây Nam khu vực Đồng Tháp"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "khmer-do-tien-cong-1977",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 250,
+      "y": 200,
+      "nhan": "Khmer Đỏ mở rộng tiến công dọc biên giới Tây Nam (từ 9/1977)"
+    },
+    {
+      "id": "cac-tinh-bi-tien-cong",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 300,
+      "y": 300,
+      "nhan": "An Giang, Kiên Giang, Long An, Đồng Tháp"
+    },
+    {
+      "id": "khmer-do-tien-cong-1978",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 220,
+      "nhan": "2 sư đoàn Khmer Đỏ đánh vào Hồng Ngự (13/12/1978)"
+    },
+    {
+      "id": "quan-ta-chong-tra",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 550,
+      "y": 400,
+      "nhan": "Quân dân ta chống trả quyết liệt"
+    },
+    {
+      "id": "co-chan-dung",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 780,
+      "y": 300,
+      "nhan": "Chặn đứng, tiêu hao lực lượng địch"
+    },
+    {
+      "id": "co-thang-loi",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 900,
+      "y": 180,
+      "nhan": "Góp phần thắng lợi chung (đầu 1979)"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Khmer Đỏ mở rộng chiến tranh biên giới Tây Nam (1977)",
+      "mo_ta": "Từ tháng 9/1977, Khmer Đỏ mở các đợt tiến công dọc biên giới Tây Nam (được nguồn xác nhận rõ nhất tại Tây Ninh, 25/9/1977, với 4 sư đoàn); chiến sự lan dần sang các tỉnh An Giang, Kiên Giang, Long An, Đồng Tháp trong những tháng sau đó.",
+      "hien": [
+        "khmer-do-tien-cong-1977",
+        "cac-tinh-bi-tien-cong"
+      ]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đỉnh điểm: 2 sư đoàn đánh vào Hồng Ngự (13/12/1978)",
+      "mo_ta": "Đỉnh điểm ngày 13/12/1978, trong đợt tổng tiến công quy mô lớn dùng khoảng 10 sư đoàn (50.000–60.000 quân) trên toàn tuyến biên giới Tây Nam, Khmer Đỏ đưa 2 sư đoàn đánh vào Hồng Ngự.",
+      "hien": [
+        "khmer-do-tien-cong-1978"
+      ]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân dân ta chống trả, chặn đứng địch",
+      "mo_ta": "Quân dân ta chống trả quyết liệt, chặn đứng và tiêu hao lực lượng địch, không để các mũi tiến công phát triển sâu vào nội địa.",
+      "hien": [
+        "quan-ta-chong-tra",
+        "co-chan-dung"
+      ]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Góp phần thắng lợi chung",
+      "mo_ta": "Góp phần vào thắng lợi chung của cuộc chiến tranh bảo vệ biên giới Tây Nam kết thúc đầu năm 1979.",
+      "hien": [
+        "co-thang-loi"
+      ]
+    }
+  ],
+  "ket_qua": "Quân dân ta chặn đứng và tiêu hao lực lượng Khmer Đỏ tại Hồng Ngự, không để các mũi tiến công phát triển sâu vào nội địa, góp phần vào thắng lợi chung của cuộc chiến tranh bảo vệ biên giới Tây Nam.",
+  "y_nghia": "Một mặt trận trong cuộc chiến tranh bảo vệ biên giới Tây Nam 1977–1979 của Việt Nam trước sự xâm lược của tập đoàn Khmer Đỏ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Bảo tàng Lịch sử Quân sự Việt Nam (baotanglichsu.vn) — Cuộc chiến đấu bảo vệ Tổ quốc trên biên giới Tây Nam của nhân dân Việt Nam (30/4/1977 – 7/1/1979) — https://baotanglichsu.vn/vi/Articles/3097/16234/cuoc-chien-djau-bao-ve-to-quoc-tren-bien-gioi-tay-nam-cua-nhan-dan-viet-nam-tu-ngay-30-4-1977-djen-7-1-1979.html"
+  ]
+}

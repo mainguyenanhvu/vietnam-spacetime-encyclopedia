@@ -1,0 +1,89 @@
+{
+  "ghi_chu": "Nguồn RẤT MỎNG — chỉ một dòng tóm tắt từ scov.gov.vn, giống hệt overlay đã duyệt (chien-dich-tran-danh.json). Không tra thêm được nguyên văn Đại Việt sử ký toàn thư (Ngoại kỷ) có ghi rõ quyển, nên KHÔNG khai trich_van_tich (luật #9 — không tra được thì bỏ hẳn, không bịa nguyên văn). Giữ sa đồ ở mức 3 bước tổng quát đúng bằng dòng chép đã duyệt, KHÔNG suy diễn quân số, ngày tháng cụ thể hay đội hình mà nguồn không nêu.",
+  "id": "ly-tu-tien-dinh-kien-687",
+  "ten": "Khởi nghĩa Lý Tự Tiên – Đinh Kiến (687)",
+  "nam": 687,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lý Tự Tiên; Đinh Kiến (tiếp tục sau khi Lý Tự Tiên bị giết)",
+  "doi_thu": "Nhà Đường (đô hộ phủ Tống Bình)",
+  "dia_diem": "Phủ thành Tống Bình (Đại La, nay Hà Nội)",
+  "lien_quan_tinh": ["ha-noi"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát vì nguồn hiện có chỉ có một dòng tóm tắt.",
+  "dia_hinh": [],
+  "phan_tu": [
+    {
+      "id": "thanh-tong-binh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 500,
+      "y": 300,
+      "nhan": "Phủ thành Tống Bình (Đại La)"
+    },
+    {
+      "id": "co-ta-ly-tu-tien",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 200,
+      "y": 400,
+      "nhan": "Lý Tự Tiên khởi binh chống sưu thuế hà khắc"
+    },
+    {
+      "id": "quan-ta-dinh-kien",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 460,
+      "nhan": "Đinh Kiến tiếp tục dấy quân"
+    },
+    {
+      "id": "mui-vay-thanh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [280, 430],
+      "den": [470, 320],
+      "nhan": "Vây chiếm phủ thành Tống Bình"
+    },
+    {
+      "id": "quan-dich-vien-binh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 200,
+      "nhan": "Viện binh nhà Đường kéo sang đàn áp"
+    },
+    {
+      "id": "mui-dich-danh",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [770, 220],
+      "den": [540, 290],
+      "nhan": "Viện binh phản công đàn áp"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Lý Tự Tiên khởi binh chống sưu thuế hà khắc",
+      "mo_ta": "Lý Tự Tiên khởi binh chống chính sách sưu thuế hà khắc của nhà Đường tại phủ thành Tống Bình.",
+      "hien": ["thanh-tong-binh", "co-ta-ly-tu-tien"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đinh Kiến tiếp tục, vây chiếm phủ thành",
+      "mo_ta": "Sau khi Lý Tự Tiên bị đô hộ sứ giết, Đinh Kiến tiếp tục dấy quân vây chiếm phủ thành Tống Bình, giữ thành một thời gian.",
+      "hien": ["quan-ta-dinh-kien", "mui-vay-thanh", "thanh-tong-binh"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Bị viện binh nhà Đường đàn áp",
+      "mo_ta": "Viện binh nhà Đường kéo sang đàn áp, cuộc khởi nghĩa thất bại.",
+      "hien": ["quan-dich-vien-binh", "mui-dich-danh", "thanh-tong-binh"]
+    }
+  ],
+  "ket_qua": "Lý Tự Tiên khởi binh chống chính sách sưu thuế hà khắc của nhà Đường; sau khi ông bị đô hộ sứ giết, Đinh Kiến tiếp tục dấy quân vây chiếm phủ thành Tống Bình, giữ thành một thời gian trước khi bị viện binh nhà Đường kéo sang đàn áp.",
+  "y_nghia": "Một trong chuỗi các cuộc khởi nghĩa chống ách đô hộ nhà Đường trong thời kỳ Bắc thuộc lần thứ ba (603–939), cùng nhóm với các cuộc nổi dậy sau này như khởi nghĩa Dương Thanh (819–820).",
+  "trang_thai": "draft",
+  "nguon": [
+    "scov.gov.vn — Tóm tắt niên biểu lịch sử Việt Nam, ch. VIII (Thời kỳ chống phong kiến phương Bắc đô hộ lần thứ ba, 603–939) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/viii.-thoi-ky-chong-phong-kien-phuong-bac-do-ho-lan-thu-ba-336-nam-603-939-.html"
+  ]
+}
