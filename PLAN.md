@@ -223,7 +223,11 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 
 ### Việc
 - [ ] **Chỉ mục tĩnh** `public/data/_index/catalog.json` (cấp file) + `entries-index.json` (cấp mục, ~4.500 phần tử phẳng) + `validate_catalog_freshness.mjs` chặn chỉ mục chết. Theo mô hình PageIndex: **cho agent đọc chỉ mục rút gọn trước, chỉ mở file gốc khi đã khoanh vùng**. 🔄 đang làm
-- [ ] Thống nhất tên trường nguồn. Hiện overlay dùng `nguon`, literature 6/8 file dùng `sources` còn 2/8 dùng `nguon`, `games` dùng `nguon` **kiểu chuỗi** thay vì mảng, `streets` `nguon` chuỗi cấp file. **M**
+- [ ] **Thống nhất tên trường nguồn — quét lại toàn kho 2026-08-28, việc NHỎ HƠN mô tả cũ nhiều.** Kho đã có sẵn một quy ước hai tầng và phần lớn file theo đúng:
+  · **cấp FILE = `sources[]`** — overlays 30/35, provinces 34/34, literature 6, geo, media.
+  · **cấp MỤC = `nguon[]`** — overlays 34/35, figures, journey, media, timeline.
+  Ngoại lệ thật chỉ còn bốn nhóm, đếm được: **2 file overlay** dùng `nguon_chinh[]` thay `sources[]` ở cấp file · **15 file literature** dùng `sources[]` ở cấp MỤC (ngược quy ước, 2 file khác dùng `nguon[]`) · `streets` để `nguon` **kiểu chuỗi** cấp file · 1 file `timeline` để `nguon` kiểu chuỗi cấp mục.
+  ⚠️ Mô tả cũ ở đây sai hai chỗ: nói «overlay dùng `nguon`» mà bỏ mất tầng file dùng `sources`, và ghi literature «6/8 file» trong khi nay là **19 file**. `games` không còn trường nguồn ở cấp nào để mà sai kiểu. **S** (nhỏ hơn ước lượng cũ)
 - [ ] Thống nhất tên khái niệm bị đặt nhiều tên: `do_tin_cay_toa_do` (overlay) ≡ `muc_do_tin_cay` (geo) · nguồn cấp file `sources[]` (32/34) vs `nguon_chinh[]` (2/34) · wrapper `items[]` vs `events` vs `features` vs `lien_ket` vs 4 mảng song song ở games. **M**
 - [ ] **Khoá GeoJSON có dấu cách.** `boundaries/*.geojson` nhóm tỉnh dùng `"Tỉnh thành mới"`, `"GRDP 2024 (tỷ VND)"`, `"Diện tích (km2)"` — không dùng trực tiếp làm tên thuộc tính JS/SQL được. Map lại tên. **M**
 - [x] ~~`di-tich-qgdb`/`unesco`/`bao-vat` thiếu `id`.~~ **XONG 2026-08-11** (`cebb209`+`dbecb25`): bao-vat hoá ra ĐÃ có id từ trước (số PLAN lỗi thời); thêm 152+13 id cho hai file kia. Bài học: 4 id mới va id cũ xuyên file (Văn Miếu, Côn Sơn–Kiếp Bạc, Phong Nha, Thành Nhà Hồ) — cổng validator bắt được; quy tắc «id mới nhường id cũ», unesco mang hậu tố `-unesco`.
