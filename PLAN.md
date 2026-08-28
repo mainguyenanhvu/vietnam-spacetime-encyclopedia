@@ -274,7 +274,51 @@ từ đợt w5, đều ghi «NGUỒN ĐẠT — thiếu toạ độ». Kho đó 
 trấn Mộc Châu) · Thẳm Tát Tòng (phường Chiềng An) · Thành Sam Mứn (xã Sam Mứn).
 
 **Việc rẻ nhất còn lại của cả dự án**: tìm cho ra một nguồn toạ độ cấp xã dùng
-được, rồi mở khoá 610 mục đã đủ nguồn. Hướng chưa thử: dữ liệu ranh giới cấp xã
+được, rồi mở khoá 610 mục đã đủ nguồn.
+
+### 🔴 2026-08-28 — ĐÃ CHẠY HẾT LỐI OSM. Câu «việc rẻ nhất còn lại của cả dự án» ở ngay trên KHÔNG còn đúng.
+
+Chạy trọn công thức Overpass mà PLAN đặt ra: **26 truy vấn, một truy vấn mỗi tỉnh,
+tải toàn bộ POI `historic` + `amenity=place_of_worship` trong bbox, so khớp cục bộ
+bằng code**. Ba mirror xoay vòng, nghỉ 6 s giữa nhịp — **không bị chặn lần nào**, tức
+phần công cụ chạy đúng như thiết kế.
+
+| | |
+|---|---|
+| Mục backlog có URL thật | **219** |
+| POI tải về, cả 26 tỉnh | **11.591** |
+| Mục có ứng viên khớp tên | **12** (5,5%) |
+| Nhận sau soát mắt | **9** (4,1%) |
+
+**Trần không nằm ở công cụ, nằm ở độ phủ TÊN của OSM Việt Nam.** Hai phép đo đóng
+đinh chuyện đó:
+· **Nới bộ lọc tag** trên Hà Nội (thêm `tourism`, `building=temple|church|…`,
+  `religion=*`) cho **1.204 → 1.542 POI (+338)** nhưng **thêm 0 mục khớp**. Không phải
+  truy vấn hẹp.
+· **Phân bố POI lệch theo mật độ người vẽ bản đồ, không theo mật độ di tích**:
+  TP HCM 2.633 · Đồng Nai 2.088 · Hà Nội 1.204 — trong khi **Sơn La 6** · Lạng Sơn 29 ·
+  **Nghệ An 35** · Hà Tĩnh 39 · Điện Biên 81.
+
+👉 **Hệ quả trực tiếp cho «lỗ hổng Tây Bắc» ở ngay trên: OSM KHÔNG đóng được nó.**
+Sơn La có **6** POI có tên trong cả tỉnh. Đừng cử đợt agent nào đi geocode Tây Bắc
+bằng OSM nữa — con số đã đo rồi. Lối còn lại vẫn là dữ liệu ranh giới cấp xã của cơ
+quan nhà nước, đúng như dòng «hướng chưa thử» ở trên.
+
+⚠️ **Soát mắt loại 3/12 — và mỗi ca loại vì một lý do khác nhau, không cái nào bị cổng bắt:**
+· `den-le-xa-mai-lam` — ba POI «Lê Xá» đều ở Gia Lâm/Bát Tràng, backlog ghi xã Đông Anh
+  **cách ~19 km**. Trùng tên LÀNG, không bộ lọc tag nào thấy.
+· `lang-mo-doan-van-cu` — OSM là «**Đền thờ**», backlog là «**Lăng mộ**»: hai công trình
+  khác nhau của cùng một nhân vật. Đúng bẫy «Đài Kỷ Niệm» đã ghi.
+· `chua-soc-xoai` — khớp tên hoàn hảo, nhưng **nguồn là `ditichlichsuvanhoa.com`, nằm
+  trong danh sách BÁC**. Nạp vào là đỏ cổng. Đây chính là cái bẫy nhãn `[WS]`/`[WF]`
+  trong backlog mà PLAN đã cảnh báo — **kiểm tên miền TRƯỚC khi bỏ công geocode**.
+
+✅ Hai luật «giữ dấu» và «cấm tên chung chung một từ» đã kiểm trên đúng hai ca thật PLAN
+ghi lại (`Hổ Lao` ↔ «Hồ», `Chùa Cồn` ↔ «Chùa Con Rùa»): **cả hai bị chặn**, còn cột đối
+chứng bỏ dấu thì khớp giả cả hai. Hai đối chứng dương vẫn khớp. Luật đúng, chỉ là mỏ cạn.
+
+⚠️ **Còn 344/563 mục backlog KHÔNG có URL thật** — với chúng thì geocode chưa phải việc
+cần làm, **phục hồi nguồn** mới là. Đó là việc tra lại từ đầu, ngân sách riêng. Hướng chưa thử: dữ liệu ranh giới cấp xã
 của Tổng cục Thống kê / Bộ TN&MT; GeoNames; bộ shapefile VN cấp 3.
 
 
@@ -299,7 +343,12 @@ của Tổng cục Thống kê / Bộ TN&MT; GeoNames; bộ shapefile VN cấp 3
   ⚠️ 17 giá trị `loai` chéo file còn lại **KHÔNG phải lỗi** — `kien-truc`/`lich-su`/`khao-co`/`danh-thang` xuất hiện ở cả `di-tich-quoc-gia` lẫn `di-tich-cap-tinh` là **đúng thiết kế**: hai lớp đó chia theo CẤP xếp hạng, không chia theo loại. Đừng đi «thống nhất» chúng.
   ⚠️ `ban-do-co` 15/15 mục không có trường `loai` — lớp này lược đồ khác hẳn (tấm bản đồ, không phải điểm), không phải thiếu sót.
 - [ ] Trùng người ↔ sự kiện: 4/8 mục `khoi-nghia-bac-thuoc` trùng bản sự kiện đầy đủ ở file khác · `thai-phien` ↔ `duy-tan-1916` · Không Lộ vs Nguyễn Minh Không (một hay hai người — cần tra sử) · ~8 di tích trùng `di-tich-qgdb` ↔ `unesco` (Hạ Long, **Phong Nha lệch ~18 km**, Huế, Hội An, Mỹ Sơn, Hoàng thành TL, Thành nhà Hồ, Tràng An) · Nữ TNXP Đồng Lộc ↔ Võ Thị Tần trùng marker. **M**
-- [ ] `di-tich-qgdb.json` header ghi toạ độ lấy từ Wikipedia/Wikidata — vi phạm nguyên tắc không-Wikipedia dù chỉ dùng cho toạ độ. Tái tính qua Nominatim / dsvh.gov.vn. **M**
+- [~] **`di-tich-qgdb` toạ độ Wikipedia/Wikidata — xử 2/5, còn 3. Và lộ ra một lỗ hổng cổng lớn hơn chính mục này.**
+  ✅ Đã thay: `chua-doi-son` và `den-cua-ong` — đổi sang node OSM xác nhận **độc lập** cách vị trí cũ **0,20 km** và **0,16 km**; nay số và trích dẫn cùng trỏ một nguồn. Header `nguon_chinh` thôi khai Wikipedia/Wikidata là nguồn toạ độ.
+  ⛔ Còn 3, **cố ý chưa gỡ**: `quan-the-huong-son-chua-huong` (OSM chỉ có **ba chùa trùng tên cách 20–46 km** — loại đúng), `dia-diem-ve-cuoc-khoi-nghia-ba-to`, `dia-diem-chien-thang-bien-gioi-nam-1950`. **Gỡ trích dẫn mà giữ nguyên con số là giấu xuất xứ** — để nguyên tới khi có nguồn thay.
+  🔴 **Lỗ hổng cổng: `wikidata.org` LỌT QUA CẢ 14 CỔNG từ trước tới nay.** `validate_nguon_cam` chỉ bác `wikipedia`/`wikisource`/`wikiwand`; `validate_overlays` chỉ đòi «≥1 nguồn ngoài Wikipedia» — nên một mục dẫn **thêm** Wikidata vẫn xanh sạch. Đã thêm luật ở tầng **cảnh báo** (không đỏ cổng, vì dùng cho một toạ độ hiển thị thì có đường bào chữa): 33 → **36** cảnh báo.
+  ⚠️ **Bẫy khi viết luật ấy, ghi để lần sau khỏi dính:** bản vá đầu ghi ra file một ký tự **BACKSPACE `0x08`** thay cho ``. Regex thành `/<BS>wikidata\.org/i` — **có mặt trong file, in ra trông y hệt luật đúng, và không bao giờ khớp**. Cổng chạy xanh, số cảnh báo không đổi, không ai biết. Chỉ phát hiện khi in mã ký tự từng con của dòng regex. 👉 **Với mọi luật cổng mới: bắt buộc kiểm số cảnh báo có TĂNG đúng số ca đã biết trước.** Cùng họ với bẫy CRLF đã ghi — vá mã trượt im lặng nguy hơn vá mã nổ.
+  ⚠️ **Và một mảng chưa xử, lớn hơn: `geo/song-nui.json` có 80 feature ghi `nguon: ["GeoNames.org","OpenStreetMap","Wikidata (geodata trung tính)"]` — ba tên dịch vụ trần, KHÔNG URL nào.** Cổng không bắt vì không có `.org` trong chuỗi Wikidata. Không đạt bất biến #3 (nguồn phải trỏ tới nguồn chính thống). Chưa đưa vào cảnh báo vì 80 dòng sẽ chôn mất 36 cảnh báo thật — cần quyết cách xử trước. **M**
 
 ### Lớp còn mỏng — đếm lại 2026-08-11, danh sách cũ SAI GẦN HẾT
 Số thật: `nghia-si-can-vuong` **48** · `thanh-hoang-danh-than` **46** · `nha-the-thao-lich-su` **28** (VĐV Olympic đã bổ sung đợt 2026-08-11) · `danh-y-luong-y` **16** (Tuệ Tĩnh + Hải Thượng Lãn Ông đã có mục riêng từ trước) · `khoa-bang-nam-trung-bo` + `dich-gia-ngon-ngu-hoc` **không tồn tại** (đã gộp Phase 3 vào khoa-bang-danh-nhan 167 / danh-nhan-van-hoa 106). Lớp mỏng cuối `me-vnah` **14 → 25** cùng ngày (agent bồi 11 Mẹ, nguồn Bộ Công an/CA tỉnh/đài tỉnh/SK&ĐS; 9 ứng viên bị loại vì nguồn yếu/mâu thuẫn — kỷ luật giữ nguyên). **KHÔNG còn lớp nào dưới ngưỡng 15.**
