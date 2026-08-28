@@ -60,7 +60,16 @@ Hạng mục rủi ro xếp theo thứ tự để định trọng tâm soát: (1
 · **362 mục (62%) KHÔNG có URL** — chỉ có nhãn tắt của pha thu thập cũ, dạng `["[WS] luhanhvietnam.com.vn"]` hoặc `["[WF-gov] baodongnai + danviet (URL sẵn)"]`. Nhãn **`[WS]` nghĩa là WebSearch-only — CHƯA TỪNG MỞ TRANG**, và vài nhãn còn trỏ về tên miền nằm trong danh sách nguồn bị bác. **Không đạt bất biến #3, không được xuất bản.**
 · `can_xac_minh` 540 mục thì chỉ 41 mục có URL thật.
 ⚠️ **Bài học điều phối:** tôi từng ghi vào chính PLAN này rằng «609/610 đã có nguồn xác minh» sau khi chỉ kiểm `Array.isArray(nguon) && nguon.length` — **đếm TRƯỜNG CÓ TỒN TẠI chứ không kiểm NỘI DUNG**. Một agent geocode phát hiện khi sắp ghi. **Kiểm nội dung trường, đừng kiểm sự tồn tại của trường.**
-👉 Việc đợt sau tách làm hai: (a) geocode 225 mục có URL — rẻ; (b) **phục hồi URL** cho 362 mục còn lại — đây là việc TRA NGUỒN LẠI TỪ ĐẦU, không phải việc geocode, và phải tính ngân sách riêng.
+👉 **Đo lại 2026-08-28 — cách chia việc ở trên SAI, và sai theo hướng bi quan.** Không phải «362 mục tra lại từ đầu». Đọc nhãn thu thập của **344 mục không URL** (số sau khi geocode 9 mục) thì chúng tách làm hai nhóm chi phí khác hẳn nhau:
+
+| Nhãn | Số mục | Nghĩa | Chi phí phục hồi |
+|---|---|---|---|
+| `[WF]` + `[WF-gov]` | **192** | **Đã MỞ trang thật rồi**, chỉ không ghi lại URL | Rẻ — biết tên miền, biết đối tượng, chỉ tìm lại bài |
+| `[WS-only]` + `[WS]` | **151** | Chưa từng mở trang, mới có kết quả tìm kiếm | Đắt — tra lại từ đầu, và phải mở trang theo bài học WebSearch bịa |
+
+**Chỉ 6/344 mục có nhãn trỏ về tên miền nằm trong danh sách bác, và đúng 1 mục chết hẳn** (mọi nhãn đều bị bác). Nỗi lo «vài nhãn trỏ về nguồn bị bác» ghi ở trên là có thật nhưng **quy mô nhỏ**, không phải rào cản.
+👉 Việc đợt sau tách làm ba, theo đơn giá tăng dần: (a) **geocode 210 mục còn URL thật** — nhưng xem kết luận OSM ở mục 3 trước, mỏ đó đã cạn; (b) **phục hồi URL cho 192 mục `[WF]`** — rẻ nhất trong ba, và là món nên làm trước; (c) **tra lại từ đầu 151 mục `[WS]`** — ngân sách riêng.
+⚠️ **Bản đếm đầu tiên của tôi ra «160 mục chết vì nguồn bị bác» — SAI, do bóc tên miền lấy nhầm chuỗi đầu tiên trông giống domain.** Số đúng là 6. Nhãn trong backlog viết tắt (`vov + baochinhphu`, `tuoitre + trungtamquanlyditich...`), không có giao thức, nhiều tên trên một dòng — **phải tách theo dấu `+` rồi mới đối chiếu**, đừng regex thẳng.
 ⚠️ **Geocode là nút thắt thật.** `overpass-api.de` chặn IP sau khi một agent bắn dồn dập dưới 9 giây. Và một dữ kiện mới đắt giá: chạy 24 mục HCM theo `addr:housenumber` cho **0/24 khớp** — **OSM Việt Nam thiếu tag địa chỉ cấp toà nhà cho di tích cũ**; ca «3 hội quán Chợ Lớn» của đợt trước nhiều khả năng khớp theo **tên riêng**. Đợt sau: tìm theo TÊN + bbox + lọc `historic`/`amenity=place_of_worship`. Nominatim **được dùng có rào** — chỉ địa chỉ số nhà + tên đường **nội thành cũ**, soát tay từng kết quả, tối đa `trung`.
 ⚠️ **SẬP DẤU THANH khi chuẩn hoá tên — nguồn khớp giả lớn nhất khi geocode.** Cảnh báo cũ ở PLAN chỉ nói bug Đ/đ (NFD không tách chữ Đ); đợt 2026-08-28 đo ra vấn đề **rộng hơn nhiều**: bỏ dấu làm sập **MỌI dấu thanh**, nên hai từ khác nghĩa hoàn toàn quy về cùng một chuỗi. Đã tái lập:
 ```

@@ -48,6 +48,22 @@ Quyết định 2026-08-27 của chủ dự án (trẻ vị thành niên còn s�
 
 `src/quocgia.ts` đổi từ `esc`/`escKho` sang `escVan`/`escVanKho` của `popup-noi-dung` ở 6 chỗ dựng thẻ (phim tài liệu, danh nhân, phim giáo dục, nhạc, địa danh). Trước đó hai cơ chế đã chạy ở popup lớp phủ và hồ sơ tỉnh nhưng **không** ở tab Quốc gia — nên cùng một chuỗi «X» hiện nghiêng ở chỗ này và hiện nguyên dấu ở chỗ kia.
 
+### Ca chốt sổ — geocode, một lỗ hổng cổng, và 94 Mẹ về đúng lớp
+
+**94 Mẹ VNAH đặt nhầm lớp — chủ dự án chọn phương án A, đã chuyển.** `anh-hung-can-hien-dai` **509 → 415**, `me-vnah` **65 → 159**. Các mục vốn đã mang `loai: "me-vnah"` và id tiền tố `me-vnah-` nhưng nằm ở lớp anh hùng, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ — lớp riêng nói dối người dùng suốt từ trước. Không trùng một người nào (0 trùng id, 0 trùng tên): đặt nhầm lớp, không phải nhân bản.
+
+Kiểm **trước** khi chuyển, vì đây là chỗ dễ vỡ âm thầm: hai lớp cùng lược đồ · 0 va id · 0 dòng sổ §9 trỏ tới 94 mục · 0 dòng `MIEN_TRU_CO_HO_SO` · 0 lần id xuất hiện ở tệp nào ngoài lớp nguồn · **cả 5 script có danh sách tệp cứng** (`gen_section9`, `gen_section9_tiers`, `promote_curated`, `commons_photos`, `validate_overlays`) **đều đã liệt `me-vnah.json`** — nếu thiếu thì 94 mục lặng lẽ rơi khỏi sàng §9. Màu không đổi: lớp đích dùng `#db2777` đúng bằng màu biểu thức `match` của lớp nguồn vốn gán; nhánh ấy nay là mã chết, đã gỡ.
+
+Nghiệm thu bằng **trình duyệt thật**, không chỉ `tsc`: probe CDP đếm điểm thật sự nạp vào nguồn — `overlay-me-vnah` **159**, `overlay-anh-hung-can-hien-dai` **415**, mục đã chuyển có mặt ở lớp đích, **0 sót**; `verify:chuquyen` 13/13 xanh khi bật cả 35 lớp.
+
+**`wikidata.org` lọt qua cả 14 cổng từ trước tới nay.** `validate_nguon_cam` chỉ bác `wikipedia`/`wikisource`/`wikiwand`; `validate_overlays` chỉ đòi «≥1 nguồn ngoài Wikipedia» — nên một mục dẫn **thêm** Wikidata vẫn xanh sạch. Thực tế đang ở tình trạng đó: 3 mục `di-tich-qgdb`, và chính `nguon_chinh` của lớp khai thẳng «Toạ độ: Wikipedia/Wikidata». Đã thêm luật ở **tầng cảnh báo** (không đỏ cổng — dùng cho một toạ độ hiển thị thì có đường bào chữa): **33 → 36** cảnh báo. Hai mục thay được nguồn: `chua-doi-son` và `den-cua-ong` đổi sang node OSM xác nhận độc lập cách vị trí cũ **0,20 km** và **0,16 km**. Ba mục còn lại **cố ý giữ Wikidata** vì chưa có nguồn thay — gỡ trích dẫn mà giữ nguyên con số là giấu xuất xứ.
+
+**Geocode 9 di tích quốc gia bằng OSM**, backlog `cho_toa_do` **563 → 554**. Chi tiết và kết luận «lối OSM đã cạn» ở `PLAN.md`.
+
+**Định nghĩa thang tầng §9 (T1–T6) chuyển ra `CLAUDE.md`** — trước đó chỉ nằm trong `docs/lich-su/four-track-plan.md`, một file đã bị thay thế, và một agent đã mất công tra mới thấy.
+
+⚠️ **Bẫy công cụ, ghi để lần sau khỏi mất buổi:** heredoc của shell trong môi trường này **thu `\\` thành `\`**, bất kể ngôn ngữ đích. Bản vá đầu cho luật Wikidata vì thế ghi ra file một ký tự **BACKSPACE 0x08** thay cho `\b`; regex thành `/<BS>wikidata.org/i` — **có mặt trong file, in ra trông y hệt luật đúng, và không bao giờ khớp**. Cổng chạy xanh, số cảnh báo không đổi, không ai biết. Dính ba lần trong một ca ở ba ngữ cảnh khác nhau, kể cả ở chuỗi neo dùng để tìm-thay-thế. **Luật rút ra: thêm một luật cổng thì phải kiểm số ca bắt được có TĂNG đúng số ca đã biết trước** — «luật có mặt trong file» không chứng minh luật chạy.
+
 ---
 
 ## 2026-08-27 — Mở rộng 16 agent song song, hai ca: +608 mục lớp phủ, sa đồ phủ kín 267/267, và một cổng bị bịt lỗ
