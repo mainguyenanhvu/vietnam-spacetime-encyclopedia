@@ -3,7 +3,7 @@
   "nguon_chinh": [
     "Cục Di sản văn hóa — danh mục di tích quốc gia đặc biệt (dsvh.gov.vn)",
     "Cổng TTĐT Chính phủ — các Quyết định xếp hạng của Thủ tướng (xaydungchinhsach.chinhphu.vn)",
-    "Toạ độ: Wikipedia/Wikidata & OpenStreetMap (Photon) — chỉ dùng cho vị trí hiển thị"
+    "Toạ độ: OpenStreetMap (Photon/Overpass) — chỉ dùng cho vị trí hiển thị. Ba mục còn dẫn Wikidata đang chờ nguồn thay, xem ghi_chu_toa_do."
   ],
   "items": [
     {
@@ -3135,8 +3135,8 @@
       "id": "chua-doi-son",
       "ten": "Chùa Đọi Sơn",
       "tinh_34": "Ninh Bình",
-      "lon": 105.975162,
-      "lat": 20.585676,
+      "lon": 105.974276,
+      "lat": 20.587233,
       "dot": 8,
       "nam": 2017,
       "loai": "lịch sử",
@@ -3146,19 +3146,20 @@
       "trang_thai": "reviewed",
       "nguon": [
         "https://dsvh.gov.vn/danh-muc-di-tich-quoc-gia-dac-biet-1752",
-        "https://www.wikidata.org/wiki/Q10748470"
+        "OpenStreetMap — Chùa Long Đọi Sơn — https://www.openstreetmap.org/node/13269808390"
       ],
       "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/DoiSon-HegoIV.jpg/330px-DoiSon-HegoIV.jpg",
       "anh_nguon": "Wikimedia Commons — VuThiAnh · https://commons.wikimedia.org/wiki/File:DoiSon-HegoIV.jpg",
       "anh_giay_phep": "Public domain",
-      "anh_muc": "tu-lieu"
+      "anh_muc": "tu-lieu",
+      "ghi_chu_bien_tap": "Toạ độ trước lấy từ Wikidata (20.585676,105.975162) — nguồn nằm ngoài danh sách được dùng của dự án. Thay 2026-08-28 bằng node OSM «Chùa Long Đọi Sơn» (node/13269808390), xác nhận độc lập cách vị trí cũ 0,20 km; nay số và trích dẫn cùng trỏ một nguồn. Nguồn xếp hạng dsvh.gov.vn giữ nguyên."
     },
     {
       "id": "den-cua-ong",
       "ten": "Đền Cửa Ông",
       "tinh_34": "Quảng Ninh",
-      "lon": 107.37,
-      "lat": 21.027,
+      "lon": 107.368992,
+      "lat": 21.028098,
       "dot": 8,
       "nam": 2017,
       "loai": "lịch sử",
@@ -3168,7 +3169,7 @@
       "trang_thai": "reviewed",
       "nguon": [
         "https://dsvh.gov.vn/danh-muc-di-tich-quoc-gia-dac-biet-1752",
-        "https://www.wikidata.org/wiki/Q10841674"
+        "OpenStreetMap — Đền Cửa Ông — https://www.openstreetmap.org/way/368583847"
       ],
       "ghi_chu": "Toạ độ Wikidata độ chính xác thấp (3 chữ số thập phân)",
       "anh": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cua_ong_2007_007.jpg/330px-Cua_ong_2007_007.jpg",
@@ -3189,7 +3190,8 @@
             "Cục Di sản văn hoá — https://dsvh.gov.vn/danh-muc-di-tich-quoc-gia-dac-biet-1752"
           ]
         }
-      ]
+      ],
+      "ghi_chu_bien_tap": "Toạ độ trước lấy từ Wikidata (21.027,107.37) — nguồn nằm ngoài danh sách được dùng của dự án. Thay 2026-08-28 bằng node OSM «Đền Cửa Ông» (way/368583847), xác nhận độc lập cách vị trí cũ 0,16 km; nay số và trích dẫn cùng trỏ một nguồn. Nguồn xếp hạng dsvh.gov.vn giữ nguyên."
     },
     {
       "id": "den-xua-chua-giam-den-bia",
@@ -4773,6 +4775,7 @@
       ]
     }
   ],
-  "ngay_cap_nhat": "2026-08-27",
-  "ghi_chu_diem_thanh_phan": "Trường `diem_thanh_phan[]` liệt kê các hạng mục thành phần của một cụm di tích được xếp hạng chung bằng MỘT quyết định. Chúng KHÔNG phải di tích được xếp hạng riêng — số quyết định ở `xep_hang`/`nam` của mục cha áp cho cả cụm. Đừng tách chúng thành mục riêng trong lớp này: lớp này là sổ đăng ký cấp xếp hạng. Lưu ý: `hang_muc` ở unesco.json là CHUỖI chỉ thể loại, khác hẳn trường này."
+  "ngay_cap_nhat": "2026-08-28",
+  "ghi_chu_diem_thanh_phan": "Trường `diem_thanh_phan[]` liệt kê các hạng mục thành phần của một cụm di tích được xếp hạng chung bằng MỘT quyết định. Chúng KHÔNG phải di tích được xếp hạng riêng — số quyết định ở `xep_hang`/`nam` của mục cha áp cho cả cụm. Đừng tách chúng thành mục riêng trong lớp này: lớp này là sổ đăng ký cấp xếp hạng. Lưu ý: `hang_muc` ở unesco.json là CHUỖI chỉ thể loại, khác hẳn trường này.",
+  "ghi_chu_toa_do": "Rà 2026-08-28: 5/153 mục dẫn Wikidata cho toạ độ. Hai mục đã thay bằng node OSM xác nhận độc lập (chua-doi-son, den-cua-ong). Ba mục còn lại giữ nguyên vì CHƯA có nguồn thay — quan-the-huong-son-chua-huong (OSM chỉ có ba chùa TRÙNG TÊN cách 20–46 km, loại), dia-diem-ve-cuoc-khoi-nghia-ba-to và dia-diem-chien-thang-bien-gioi-nam-1950 (chưa quét OSM tỉnh tương ứng). Gỡ trích dẫn mà giữ nguyên con số là giấu xuất xứ — đừng làm."
 }
