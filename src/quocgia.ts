@@ -71,7 +71,7 @@ interface NhacItem {
 interface NhacData { ghi_chu?: string; items: NhacItem[] }
 
 import { esc, sourcesHtml } from "./util/html";
-import { escKho } from "./tu-kho-tre-em";
+import { escVan, escVanKho } from "./popup-noi-dung";
 import { registerPanel, showOnly, hidePanel } from "./panels";
 
 const PHIM_URL = `${import.meta.env.BASE_URL}data/documentaries/phim-tai-lieu.json`;
@@ -147,7 +147,7 @@ function mapsEmbed(query: string, title: string): string {
 
 function phimCard(ten: string, vid: string, kenh_loai: string, draft: boolean): string {
   return `<article class="qg-card">
-    <h4>${esc(ten)}</h4>
+    <h4>${escVan(ten)}</h4>
     ${badge(kenh_loai, draft)}
     ${embed(vid, ten)}
   </article>`;
@@ -157,9 +157,9 @@ function danhNhanCard(d: DanhNhan): string {
   const hasVid = !!d.youtube_id && YT.test(d.youtube_id);
   const meta = [d.linh_vuc, d.que].filter(Boolean).map((x) => esc(x as string)).join(" · ");
   return `<article class="qg-card">
-    <h4>${esc(d.ten)}</h4>
+    <h4>${escVan(d.ten)}</h4>
     ${meta ? `<p class="qg-meta">${meta}</p>` : ""}
-    ${d.gioi_thieu ? `<p class="qg-bio">${esc(d.gioi_thieu)}</p>` : ""}
+    ${d.gioi_thieu ? `<p class="qg-bio">${escVanKho(d.gioi_thieu)}</p>` : ""}
     ${badge(d.kenh_loai ?? "khac", d.trang_thai === "draft")}
     ${hasVid ? embed(d.youtube_id as string, d.ten) : `<p class="qg-nophim">🎬 Chưa có phim tài liệu — đang tìm bổ sung.</p>`}
     ${sourcesHtml(d.nguon, "qg-sources")}
@@ -186,9 +186,9 @@ function giaoDucCard(v: PhimGiaoDuc): string {
   const linhVuc = (v.chu_de ?? []).slice(1).map((c) => LINH_VUC_TEN[c] ?? c);
   const meta = [v.kenh, ...linhVuc].filter(Boolean).join(" · ");
   return `<article class="qg-card">
-    <h4>${esc(v.ten)}</h4>
-    ${meta ? `<p class="qg-meta">${esc(meta)}</p>` : ""}
-    ${v.mo_ta ? `<p class="qg-bio">${escKho(v.mo_ta)}</p>` : ""}
+    <h4>${escVan(v.ten)}</h4>
+    ${meta ? `<p class="qg-meta">${escVan(meta)}</p>` : ""}
+    ${v.mo_ta ? `<p class="qg-bio">${escVanKho(v.mo_ta)}</p>` : ""}
     ${badge(v.kenh_loai, v.trang_thai === "draft")}
     ${embed(v.youtube_id, v.ten)}
   </article>`;
@@ -256,7 +256,7 @@ function renderPhimTab(host: HTMLElement): void {
 }
 
 function nhacCard(it: NhacItem): string {
-  const head = `<h4>${esc(it.ten)}${it.the_hien && it.the_hien !== "—" ? ` <span class="muted">— ${esc(it.the_hien)}</span>` : ""}</h4>`;
+  const head = `<h4>${escVan(it.ten)}${it.the_hien && it.the_hien !== "—" ? ` <span class="muted">— ${escVan(it.the_hien)}</span>` : ""}</h4>`;
   if (Array.isArray(it.phien_ban) && it.phien_ban.length) {
     const vers = it.phien_ban
       .filter((p) => YT.test(p.youtube_id))
@@ -299,7 +299,7 @@ function renderDiaDanhTab(host: HTMLElement): void {
     if (!sel.value) { content.innerHTML = `<p class="muted">Chọn một tỉnh để xem bản đồ địa danh.</p>`; return; }
     const list = ddByTinh?.get(sel.value) ?? [];
     content.innerHTML = `<div class="qg-grid">${list
-      .map((d) => `<article class="qg-card"><h4>${esc(d.ten)}</h4>${mapsEmbed(d.maps_query, d.ten)}</article>`)
+      .map((d) => `<article class="qg-card"><h4>${escVan(d.ten)}</h4>${mapsEmbed(d.maps_query, d.ten)}</article>`)
       .join("")}</div>`;
   });
 }
