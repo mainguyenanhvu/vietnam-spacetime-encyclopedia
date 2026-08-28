@@ -6949,6 +6949,150 @@
         "Báo Lào Cai — Linh thiêng đền Bắc Hà — https://baolaocai.vn/linh-thieng-den-bac-ha-post352163.html"
       ],
       "ghi_chu_bien_tap": "Chuyển từ kho cho_toa_do 2026-08-28. Geocode bằng Overpass (mail.ru mirror). POI khớp: node amenity=place_of_worship, name=\"Đền Bắc Hà\", name:en=\"Bac Ha Temple\" — đúng tên, đúng loại."
+    },
+    {
+      "id": "den-dong-nuoc",
+      "ten": "Đền Đống Nước",
+      "lon": 105.8235,
+      "lat": 21.03939,
+      "loai": "kien-truc",
+      "mo_ta": "Đền Đống Nước tại Ngõ 173/63 Hoàng Hoa Thám, phường Ngọc Hà, Hà Nội. Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Ngõ 173/63 Hoàng Hoa Thám, phường Ngọc Hà, Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Người Hà Nội (Hội Liên hiệp VHNT Hà Nội) — Đền Đống Nước, phường Ngọc Hà — https://nguoihanoi.vn/den-dong-nuoc-phuong-ngoc-ha-68896.html",
+        "OpenStreetMap — Đền Đống Nước — https://www.openstreetmap.org/way/697791079"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). Khớp tên đầy đủ với node OSM «Đền Đống Nước»; đối chiếu chéo: cách điểm đã có nguồn «hồ Hữu Tiệp, Ngọc Hà» 0,39 km và «Đình Ngọc Hà» 0,63 km — đúng phường ghi trong nguồn. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "chua-ong-that-phu-co-mieu",
+      "ten": "Chùa Ông (Thất Phủ Cổ Miếu)",
+      "lon": 106.8258,
+      "lat": 10.92989,
+      "loai": "kien-truc",
+      "mo_ta": "Chùa Ông (Thất Phủ Cổ Miếu) tại Nhị Hoà, Cù lao Phố, P. Trấn Biên, Biên Hoà. Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Nhị Hoà, Cù lao Phố, P. Trấn Biên, Biên Hoà",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND phường Trấn Biên, Đồng Nai — Chùa Ông (Thất Phủ Cổ Miếu) — https://tranbien.dongnai.gov.vn/vi/news/di-tich-ton-giao-tin-nguong/chua-ong-that-phu-co-mieu-dau-an-lich-su-hon-300-nam-ben-dong-song-dong-nai-472.html",
+        "OpenStreetMap — Chùa Ông - Thất Phủ Cổ Miếu — https://www.openstreetmap.org/node/11123066994"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). Khớp CẢ HAI tên trong node OSM «Chùa Ông - Thất Phủ Cổ Miếu» — tên kép nên gần như không thể trùng nhầm. Toạ độ nằm trên Cù lao Phố đúng như nguồn. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "den-phu-xa",
+      "ten": "Đền Phú Xá",
+      "lon": 106.72143,
+      "lat": 20.85179,
+      "loai": "kien-truc",
+      "mo_ta": "Đền Phú Xá tại Đông Hải 1, Hải An. Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Đông Hải 1, Hải An",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Lịch sử Đảng bộ Hải Phòng — Đền Phú Xá, quận Hải An — https://lichsudangbo.haiphong.gov.vn/di-tich-lsvh-quan-hai-an/DEN-PHU-XA-2953",
+        "OpenStreetMap — Đền Phú Xá — https://www.openstreetmap.org/way/241935606"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). Khớp tên đầy đủ với way OSM «Đền Phú Xá», toạ độ trong địa bàn Hải An đúng như nguồn. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "lang-mieu-trieu-tuong",
+      "ten": "Lăng miếu Triệu Tường",
+      "lon": 105.80522,
+      "lat": 20.08906,
+      "loai": "lich-su",
+      "mo_ta": "Lăng miếu Triệu Tường tại Gia Miêu, Hà Long, Hà Trung. Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Gia Miêu, Hà Long, Hà Trung",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở VHTTDL Thanh Hoá — Di tích Lăng miếu Triệu Tường — https://svhttdl.thanhhoa.gov.vn/di-san-van-hoa/di-tich-lang-mieu-trieu-tuong-dau-tich-ve-noi-khoi-phat-mot-vuong-trieu-1004227",
+        "OpenStreetMap — Lăng miếu Triệu Tường — https://www.openstreetmap.org/way/854048932"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). OSM có BA đối tượng cùng cụm: «Lăng miếu Triệu Tường» (historic=ruins), «Miếu Triệu Tường» cách 40 m, «Lăng Triệu Tường» cách 1,6 km. Chọn đối tượng khớp tên ĐẦY ĐỦ, không chọn hai cái khớp một phần — chúng là hạng mục khác trong cùng quần thể. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "den-pac-ta",
+      "ten": "Đền Pác Tạ",
+      "lon": 105.39789,
+      "lat": 22.38176,
+      "loai": "kien-truc",
+      "mo_ta": "Đền Pác Tạ tại Chân núi Pác Tạ, TT Na Hang cũ (nay xã Nà Hang). Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Chân núi Pác Tạ, TT Na Hang cũ (nay xã Nà Hang)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Tuyên Quang — Linh thiêng đền Pác Tạ — https://baotuyenquang.com.vn/linh-thieng-den-pac-ta-143313.html",
+        "OpenStreetMap — Đền Pác Tạ — https://www.openstreetmap.org/way/1184591041"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). Khớp tên đầy đủ, đúng tỉnh. Xếp `trung` chứ không `cao` vì trong bán kính 20 km không có điểm nào đã có nguồn trong kho để đối chiếu chéo. Tag `religion=shinto` của OSM là mapper gắn sai, không ảnh hưởng toạ độ. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "dinh-bo-ban",
+      "ten": "Đình Bồ Bản",
+      "lon": 108.15185,
+      "lat": 15.98791,
+      "loai": "kien-truc",
+      "mo_ta": "Đình Bồ Bản tại Hoà Phong cũ (nay Hoà Vang). Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Hoà Phong cũ (nay Hoà Vang)",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đà Nẵng — Đình Bồ Bản, biểu tượng của văn hoá làng Việt — https://baodanang.vn/channel/5414/202009/dinh-bo-ban-bieu-tuong-cua-van-hoa-lang-viet-3717953/",
+        "OpenStreetMap — Đình Bồ Bản — https://www.openstreetmap.org/way/597505233"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). Khớp tên đầy đủ với way OSM «Đình Bồ Bản», toạ độ trong địa bàn Hoà Vang đúng như nguồn. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "nha-xanh-bien-hoa",
+      "ten": "Nhà Xanh",
+      "lon": 106.83574,
+      "lat": 10.95363,
+      "loai": "lich-su",
+      "mo_ta": "Nhà Xanh tại Khuôn viên Trường CĐ Kỹ thuật Đồng Nai, P. Trấn Biên, Biên Hoà. Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Khuôn viên Trường CĐ Kỹ thuật Đồng Nai, P. Trấn Biên, Biên Hoà",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Nai — Dấu ấn di tích Nhà Xanh — https://dongnai.gov.vn/vi/news/chuong-trinh-ke-hoach-phat-trien-ktxh/dau-an-di-tich-nha-xanh-8456.html",
+        "OpenStreetMap — Di tích Nhà Xanh — https://www.openstreetmap.org/way/1413014729"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). Way OSM mang tên «Di tích Nhà Xanh» (thêm tiền tố «Di tích»), tag historic=building, nằm trong nội thành Biên Hoà đúng như nguồn. Xếp `trung` vì tên không khớp trọn và chưa đối chiếu được ranh khuôn viên trường. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "thap-tuong-long",
+      "ten": "Tháp Tường Long",
+      "lon": 106.77041,
+      "lat": 20.7144,
+      "loai": "kien-truc",
+      "mo_ta": "Tháp Tường Long tại Đỉnh núi Long Sơn, Ngọc Xuyên, Đồ Sơn. Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Đỉnh núi Long Sơn, Ngọc Xuyên, Đồ Sơn",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng thông tin điện tử TP Hải Phòng — Chùa Tháp Tường Long — https://haiphongnews.gov.vn/vn/du-lich/chua-thap-tuong-long-danh-thang-va-diem-den-tam-linh-hap-dan-tai-hai-phong-ct437.html",
+        "OpenStreetMap — Chùa Tháp Tường Long — https://www.openstreetmap.org/way/627899751"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). OSM ghi «Chùa Tháp Tường Long» — cùng quần thể trên núi Ngọc/Long Sơn, Đồ Sơn, nhưng ĐIỂM có thể là chùa chứ không phải chân tháp. Xếp `trung` vì lý do đó; đừng nâng lên `cao` khi chưa có nguồn toạ độ riêng cho tháp. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
+    },
+    {
+      "id": "dinh-chua-vinh-kieu",
+      "ten": "Đình và chùa Vĩnh Kiều",
+      "lon": 105.98092,
+      "lat": 21.12949,
+      "loai": "kien-truc",
+      "mo_ta": "Đình và chùa Vĩnh Kiều tại Đồng Nguyên, Từ Sơn, gần sông Tiêu Tương cũ. Di tích xếp hạng cấp quốc gia.",
+      "dia_diem": "Đồng Nguyên, Từ Sơn, gần sông Tiêu Tương cũ",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Bắc Ninh — Di tích lịch sử nghệ thuật quốc gia đình Vĩnh Kiều — https://bacninh.gov.vn/news/-/details/20182/di-tich-lich-su-nghe-thuat-quoc-gia-inh-vinh-kieu-67547223",
+        "OpenStreetMap — Chùa Vĩnh Kiều — https://www.openstreetmap.org/way/647396994"
+      ],
+      "ghi_chu_bien_tap": "Chuyển từ kho `cho_toa_do` 2026-08-28. Toạ độ lấy từ node/way OSM ghi trong nguồn, so khớp cục bộ trên toàn bộ POI `historic`+`place_of_worship` của bbox tỉnh (giữ nguyên dấu khi so tên). Mục gộp «đình VÀ chùa»; OSM chỉ có «Chùa Vĩnh Kiều». Toạ độ là của nửa CHÙA, đình nằm cùng thôn nhưng chưa có điểm riêng. Xếp `trung` vì lý do đó. MÔ TẢ CÒN THÔ — chưa ai đọc trang nguồn để viết nội dung, mới chỉ dùng nó làm căn cứ nguồn; giữ `draft` cho tới khi soạn."
     }
   ]
 }

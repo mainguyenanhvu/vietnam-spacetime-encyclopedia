@@ -1,8 +1,8 @@
 {
   "tong": {
     "so_file": 404,
-    "so_muc": 7402,
-    "so_byte": 13429451,
+    "so_muc": 7411,
+    "so_byte": 13443370,
     "ngay_sinh": "2026-08-28"
   },
   "files": [
@@ -9722,7 +9722,7 @@
       "file": "overlays/di-tich-qgdb.json",
       "mien": "overlays",
       "so_muc": 153,
-      "byte": 271182,
+      "byte": 272657,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "nguon_chinh",
@@ -9742,14 +9742,14 @@
         "trang_thai",
         "nguon"
       ],
-      "sha256": "5951f9a93294c7ddf0ad621436875cb8c7976b8d9887858fd84e967908616168",
+      "sha256": "0b35ccf804e5a19ac2749765a37b99bdc317f8ad406ff73199f888c2d80fbece",
       "mo_ta": "Dữ liệu miền «overlays» — tệp di-tich-qgdb."
     },
     {
       "file": "overlays/di-tich-quoc-gia.json",
       "mien": "overlays",
-      "so_muc": 426,
-      "byte": 589135,
+      "so_muc": 435,
+      "byte": 601579,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -9760,14 +9760,14 @@
         "lon",
         "lat",
         "loai",
-        "nam_hien_thi",
         "mo_ta",
         "dia_diem",
         "do_tin_cay_toa_do",
         "trang_thai",
-        "nguon"
+        "nguon",
+        "nam_hien_thi"
       ],
-      "sha256": "330857de39349c7d8c7f0b8036df19b015f36261f118e587f8790f88eeadde9b",
+      "sha256": "75998e1d9a6fee876cfee94211c1762969bd45ab0ee9ad43be9ed35df12f011b",
       "mo_ta": "Di tích cấp quốc gia (đền/chùa/thành/hang/khảo cổ) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23."
     },
     {

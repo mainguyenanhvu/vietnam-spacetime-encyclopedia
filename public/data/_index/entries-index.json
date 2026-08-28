@@ -1,9 +1,9 @@
 {
   "sinh_luc": {
-    "tong_muc": 7402,
-    "tong_co_toa_do": 4339,
+    "tong_muc": 7411,
+    "tong_co_toa_do": 4348,
     "so_nhom_trung_ten": 907,
-    "so_cap_trung_toa_do": 2036,
+    "so_cap_trung_toa_do": 2037,
     "ngay_sinh": "2026-08-28"
   },
   "entries": [
@@ -58190,8 +58190,8 @@
       "file": "overlays/di-tich-qgdb.json",
       "mien": "overlays",
       "loai": "lịch sử",
-      "lat": 20.585676,
-      "lon": 105.975162,
+      "lat": 20.587233,
+      "lon": 105.974276,
       "so_nguon": 2,
       "trang_thai": "reviewed"
     },
@@ -58203,8 +58203,8 @@
       "file": "overlays/di-tich-qgdb.json",
       "mien": "overlays",
       "loai": "lịch sử",
-      "lat": 21.027,
-      "lon": 107.37,
+      "lat": 21.028098,
+      "lon": 107.368992,
       "so_nguon": 2,
       "trang_thai": "reviewed"
     },
@@ -64602,6 +64602,123 @@
       "lat": 22.5349492,
       "lon": 104.2898959,
       "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-dong-nuoc",
+      "slug": null,
+      "ten": "Đền Đống Nước",
+      "ten_chuan": "den dong nuoc",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 21.03939,
+      "lon": 105.8235,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-ong-that-phu-co-mieu",
+      "slug": null,
+      "ten": "Chùa Ông (Thất Phủ Cổ Miếu)",
+      "ten_chuan": "chua ong that phu co mieu",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 10.92989,
+      "lon": 106.8258,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-phu-xa",
+      "slug": null,
+      "ten": "Đền Phú Xá",
+      "ten_chuan": "den phu xa",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 20.85179,
+      "lon": 106.72143,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "lang-mieu-trieu-tuong",
+      "slug": null,
+      "ten": "Lăng miếu Triệu Tường",
+      "ten_chuan": "lang mieu trieu tuong",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.08906,
+      "lon": 105.80522,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-pac-ta",
+      "slug": null,
+      "ten": "Đền Pác Tạ",
+      "ten_chuan": "den pac ta",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 22.38176,
+      "lon": 105.39789,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-bo-ban",
+      "slug": null,
+      "ten": "Đình Bồ Bản",
+      "ten_chuan": "dinh bo ban",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 15.98791,
+      "lon": 108.15185,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nha-xanh-bien-hoa",
+      "slug": null,
+      "ten": "Nhà Xanh",
+      "ten_chuan": "nha xanh",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 10.95363,
+      "lon": 106.83574,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "thap-tuong-long",
+      "slug": null,
+      "ten": "Tháp Tường Long",
+      "ten_chuan": "thap tuong long",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 20.7144,
+      "lon": 106.77041,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chua-vinh-kieu",
+      "slug": null,
+      "ten": "Đình và chùa Vĩnh Kiều",
+      "ten_chuan": "dinh va chua vinh kieu",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "kien-truc",
+      "lat": 21.12949,
+      "lon": 105.98092,
+      "so_nguon": 2,
       "trang_thai": "draft"
     },
     {
@@ -129744,6 +129861,19 @@
         "ten": "Lễ hội Óoc Om Bóc – Đua ghe Ngo Sóc Trăng"
       },
       "khoang_cach_m": 57
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "den-dong-nuoc",
+        "ten": "Đền Đống Nước"
+      },
+      "b": {
+        "file": "overlays/tri-thuc-khoa-hoc-tk20.json",
+        "id": "nguyen-manh-tuong",
+        "ten": "Nguyễn Mạnh Tường"
+      },
+      "khoang_cach_m": 58
     },
     {
       "a": {
