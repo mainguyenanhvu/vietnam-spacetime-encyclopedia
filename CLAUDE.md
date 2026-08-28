@@ -12,7 +12,20 @@
 2. **Legal compliance.** Content follows Vietnamese law, including **Luật Đo đạc và Bản đồ 2018**. Boundary rendering is a legal surface, not just a visual one.
 3. **Mandatory citation.** Every data entry carries a `sources[]` field pointing to an official source — Cổng TTĐT Chính phủ, Tổng cục Thống kê, NXB Chính trị quốc gia Sự thật, NXB Giáo dục, Viện Sử học. **An entry without `sources[]` does not ship.** Never invent a date, a decree number, or a population figure to fill a gap — leave it empty and flag it.
 4. **Historical accuracy over narrative appeal.** Where sources conflict (see `docs/ranh-gioi-1887-1895-phan-quyet.md`), present the conflict; do not silently pick the tidier version.
-5. **Sensitive entries** are tracked in `docs/section9-sensitive.json` — read it before editing anything it lists.
+5. **Sensitive entries** are tracked in `docs/section9-sensitive.json` — read it before editing anything it lists. The file is a flat array of `{file, id, ten, tang}`; `tang` is the sensitivity tier:
+
+   | Tầng | Nghĩa |
+   |---|---|
+   | **T1** | Mới mất (2024–2026) |
+   | **T2** | Chiến tranh · chính trị · nguyên lãnh đạo |
+   | **T3** | Bán-huyền sử · thần tích |
+   | **T4** | Đánh giá phức tạp (thuộc địa, án oan) |
+   | **T5** | Trùng tên, rủi ro nhận nhầm người |
+   | **T6** | Trẻ vị thành niên **còn sống**, nêu tên thật |
+
+   **T6 mở 2026-08-27 theo quyết định của chủ dự án** (lớp `thieu-nien-anh-hung`: học sinh còn sống, họ tên + trường + ngày + địa điểm — cho publish). Đó là **tiền lệ áp cho mọi lớp**: lớp nào sắp thêm người còn sống có định danh thì xếp T6 và trỏ về quyết định này, **đừng hỏi lại**.
+
+   T1–T5 vốn chỉ được định nghĩa trong `docs/lich-su/four-track-plan.md` — một file đã bị thay thế, và một agent đã mất công đi tra mới thấy. Chép về đây 2026-08-28 để định nghĩa nằm ở chỗ còn hiệu lực.
 
 ## Stack
 
