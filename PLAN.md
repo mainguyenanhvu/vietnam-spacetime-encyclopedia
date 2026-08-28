@@ -17,9 +17,9 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ---
 
-## Trạng thái hiện tại — 2026-08-27
+## Trạng thái hiện tại — 2026-08-28
 
-**378 file dữ liệu · 6.722 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ · 3.511 mục lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
+**404 file dữ liệu · 7.402 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ · 4.156 mục lớp phủ** · **290 sa đồ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh. Đo lại 2026-08-28 sau khi sinh lại chỉ mục.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
@@ -41,6 +41,55 @@ Hạng mục rủi ro xếp theo thứ tự để định trọng tâm soát: (1
 
 **Cổng `verify_trich_van_tich.mjs` đã mạnh hơn** (2026-08-27): trước đây "không tải được" TOÀN BỘ qdnd.vn mà vẫn **exit 0** — tức im lặng cho qua đúng thứ nó không với tới. Nay vá cookie jar + UA đầy đủ, cộng một bước dọn khoảng trắng thừa do chính bước lột thẻ để lại sát dấu câu (`\s+([,.;:!?…])` trong `tai()`, **không** trong `chuan()`). Kết quả: **213 khớp · 0 lệch · 0 không tải được**. Vẫn cần mạng, vẫn chạy tay, vẫn KHÔNG nằm trong `npm run validate`.
 🔎 **Lỗ hổng thứ ba đã biết, CỐ Ý chưa vá**: regex trên chỉ dọn khoảng trắng trước dấu *đóng* câu; thẻ mở ngay sau dấu *mở* ngoặc (`(<a>Tên</a>)`) sẽ để lại `( Tên )`. Chưa gặp ca thật nào (213/213 sạch) — vá theo giả thuyết không có ca hỏng để kiểm là cách sinh báo động giả mới. Nhìn lại khi đợt dữ liệu sau lộ ra ca thật.
+
+**Đợt 2026-08-28 — mở rộng 40 agent, một ca dài.** Lớp phủ **3.511 → 4.156 (+645)**, chạm **30/35 lớp**; sa đồ **267 → 290**, lớp chiến dịch 290 mục — khớp cặp 290 ↔ 290, lệch 0 cả hai chiều; mở chủ đề thư viện mới **«Toàn văn tác phẩm kinh điển»** (11 tác phẩm · 144 dòng nguyên văn); sổ §9 **192 → 238** (tầng T6 **8 → 53**); backlog chờ toạ độ **610 → 563**. Trích văn tịch **247 khớp nguyên văn / 0 lệch / 0 không tải được**. Chi tiết ở `RELEASE.md`.
+
+⚠️ **Con số +608 ghi ở bản nháp giữa đợt là SAI — đo lại khi chốt sổ cho +645.** Bản nháp viết trong lúc mấy agent cuối chưa hạ cánh. Cùng cơ chế với `cho_toa_do` 587 (thật: 563). **Đo lại vào lúc commit, đừng chép số của bản nháp giữa đợt.**
+
+🔴 **Kết luận lớn nhất của đợt: kho danh nhân ĐÃ TIỆM CẬN BÃO HOÀ ở tầng «tên có nguồn nhà nước mở được».** Sáu dữ kiện độc lập, đo trong cùng một đợt:
+· một agent tra 65 danh nhân triều Lý–Trần–Lê–Mạc–Nguyễn → **~50 (77%) đã có sẵn** ở file khác;
+· `di-tich-qgdb` **đầy đúng 153/153** — bằng tổng số di tích quốc gia đặc biệt cả nước sau đợt 19 (11/2/2026), lấy mẫu 3 đợt xếp hạng gần nhất thì 12/12 đều đã có;
+· `unesco` kiểm ra **đã đủ** (VN vẫn 9 Di sản Thế giới sau kỳ họp 48 Busan 7/2026; công viên địa chất Phú Yên mới làm hồ sơ);
+· `danh-y-luong-y` chỉ +3 vì các tên lớn TK20 **đã bị `tri-thuc-khoa-hoc-tk20` và `danh-nhan-van-hoa-can-hien-dai` vét trước**;
+· sáu agent hụt mốc với **cùng một cơ chế** — danh sách quyết định dễ tra đã vét sạch, phần còn lại nằm ở cổng tỉnh/huyện lẻ mà hôm nay hỏng hàng loạt;
+· phần lớn thời gian agent nay dồn vào **LOẠI ứng viên**, không phải viết mục.
+👉 **Hệ quả bắt buộc cho đợt sau: đo bằng «bao nhiêu mục được geocode và soát lại», KHÔNG phải «bao nhiêu mục thêm mới».** Đặt mốc số cho một kho đã bão hoà là ép agent hạ chuẩn.
+
+🔴 **Mỏ lớn nhất còn lại nằm TRONG REPO — nhưng NHỎ HƠN nhiều so với con số thô.** `docs/backlog/wave1-ditich-cho-xu-ly.json` khoá `cho_toa_do` có **563 mục** (đếm 2026-08-28 lúc chốt sổ; bản nháp giữa đợt ghi 587), nhưng đo lại nội dung `nguon[]` (không phải chỉ đếm trường có tồn tại) thì:
+· **225 mục (38%) có URL thật** → đây mới là phần *«chỉ kẹt toạ độ»*, dùng được ngay.
+· **362 mục (62%) KHÔNG có URL** — chỉ có nhãn tắt của pha thu thập cũ, dạng `["[WS] luhanhvietnam.com.vn"]` hoặc `["[WF-gov] baodongnai + danviet (URL sẵn)"]`. Nhãn **`[WS]` nghĩa là WebSearch-only — CHƯA TỪNG MỞ TRANG**, và vài nhãn còn trỏ về tên miền nằm trong danh sách nguồn bị bác. **Không đạt bất biến #3, không được xuất bản.**
+· `can_xac_minh` 540 mục thì chỉ 41 mục có URL thật.
+⚠️ **Bài học điều phối:** tôi từng ghi vào chính PLAN này rằng «609/610 đã có nguồn xác minh» sau khi chỉ kiểm `Array.isArray(nguon) && nguon.length` — **đếm TRƯỜNG CÓ TỒN TẠI chứ không kiểm NỘI DUNG**. Một agent geocode phát hiện khi sắp ghi. **Kiểm nội dung trường, đừng kiểm sự tồn tại của trường.**
+👉 Việc đợt sau tách làm hai: (a) geocode 225 mục có URL — rẻ; (b) **phục hồi URL** cho 362 mục còn lại — đây là việc TRA NGUỒN LẠI TỪ ĐẦU, không phải việc geocode, và phải tính ngân sách riêng.
+⚠️ **Geocode là nút thắt thật.** `overpass-api.de` chặn IP sau khi một agent bắn dồn dập dưới 9 giây. Và một dữ kiện mới đắt giá: chạy 24 mục HCM theo `addr:housenumber` cho **0/24 khớp** — **OSM Việt Nam thiếu tag địa chỉ cấp toà nhà cho di tích cũ**; ca «3 hội quán Chợ Lớn» của đợt trước nhiều khả năng khớp theo **tên riêng**. Đợt sau: tìm theo TÊN + bbox + lọc `historic`/`amenity=place_of_worship`. Nominatim **được dùng có rào** — chỉ địa chỉ số nhà + tên đường **nội thành cũ**, soát tay từng kết quả, tối đa `trung`.
+⚠️ **SẬP DẤU THANH khi chuẩn hoá tên — nguồn khớp giả lớn nhất khi geocode.** Cảnh báo cũ ở PLAN chỉ nói bug Đ/đ (NFD không tách chữ Đ); đợt 2026-08-28 đo ra vấn đề **rộng hơn nhiều**: bỏ dấu làm sập **MỌI dấu thanh**, nên hai từ khác nghĩa hoàn toàn quy về cùng một chuỗi. Đã tái lập:
+```
+Hổ → "ho"      Hồ → "ho"        (hổ báo  vs  mặt nước)
+Cồn → "con"    Con → "con"
+Đình → "dinh"  Đinh → "dinh"    (đình làng  vs  nhà Đinh / họ Đinh)
+Lê → "le"      Lễ → "le"        Bà → "ba"   Bá → "ba"
+```
+Ca thật: mục «Đình, chùa **Hổ** Lao» (Đông Triều) khớp giả **12 node `natural=water`** tên «**Hồ**»/«Ao» — sai hẳn loại đối tượng. Ca thứ hai ở cấp TỪ chứ không phải từ đơn: «Chùa **Cồn**» (Hải Hậu) khớp giả «Chùa **Con** Rùa» — **đúng loại POI** (`place_of_worship`), nên **không bộ lọc tag nào bắt được**; chỉ soát tay so hai tên đầy đủ mới thấy.
+👉 **Hệ quả:** so tên khi geocode phải **giữ dấu**, hoặc nếu bỏ dấu thì bắt buộc soát tay lại tên đầy đủ. Và **cấm khớp khi tên POI chỉ là một từ chung chung** đứng riêng («Hồ», «Ao», «Miếu», «Đình»). Áp hai luật này, 21 khớp thô co lại còn **10 khớp thật**.
+
+⚙️ **Cách gọi Overpass hiệu quả nhất, đã đo:** **tải TOÀN BỘ POI `historic=*` + `amenity=place_of_worship` trong bbox cả tỉnh bằng MỘT truy vấn** (3–30 s/tỉnh), rồi **so khớp cục bộ bằng code**. Đừng bắn regex `~` qua Overpass: regex **không có index** nên luôn chậm và hay 504 ở mọi mirror. Endpoint: `overpass-api.de` **nghẽn hoàn toàn** khi nhiều agent cùng bắn; hai mirror chạy tốt là `overpass.openstreetmap.fr` và `maps.mail.ru/osm/tools/overpass/api/interpreter`.
+⚠️ **Lọc tag chặn được rác, KHÔNG chặn được nhầm đối tượng.** Ca «Đài Kỷ Niệm» (Biên Hoà): hai POI cùng khớp tên, **cả hai đều mang tag hợp lệ** (`historic=memorial`, `historic=monument`) nhưng cả hai đều sai đối tượng — chỉ đối chiếu **ngữ cảnh lịch sử** mới thấy (Thích Quảng Đức tự thiêu 1963 ≠ đài trận vong thời Pháp thuộc). **Tên chung chung bắt buộc soát mắt.**
+
+⚠️ **45% mục mới có `do_tin_cay_toa_do: "thap"`** — trung thực (không bịa số thập phân) nhưng gần một nửa pin mới còn chờ soát vị trí.
+
+**Bốn cơ chế bắt lỗi mới, đưa vào brief đợt sau:**
+· **Assertion cứng số mục trước khi ghi file** (`items.length !== 35` → dừng) — bắt được một mục viết thiếu mà không cổng nào thấy.
+· **Tra tên TIẾNG VIỆT GỐC cho hiện vật/di sản** — bản dịch máy đổi cả nghĩa lẫn địa bàn: «Rain-Seeking Ritual» thật ra là **Lễ cầu MÙA**; «Định Hoá & Võ Nhai» thật ra **không có Định Hoá**.
+· **Bản tóm tắt của WebFetch cũng sai TÊN NGƯỜI THẬT** (không chỉ WebSearch): «Đặng Huy **Thứ**» = Đặng Huy Trứ; «Đỗ Lý **Nghiêm**» = Đỗ Lý Khiêm — bắt được bằng **đọc kỹ nội dung giai thoại**, không phải so tên.
+· **Trùng «cùng vị thần, khác ngôi đền»** — id khác, tên khác, toạ độ khác, mọi cổng xanh. Chỉ người đọc kỹ mới thấy.
+
+**Luật nguồn được sửa hai chỗ:** ✅ báo/tạp chí của **Hội, Liên hiệp hội, Viện, trường công lập** là **ĐẠT** (điều phối viên bác nhầm `arttimes.vn` làm một agent xoá mất một mục đúng — **tra cơ quan chủ quản trước khi bác**); ❌ thêm **trang luyện thi thương mại** vào danh sách cấm (`vietjack`, `loigiaihay`, `hoc247`, `vndoc`, `download.vn`). ⚠️ Và một bẫy mới: **tên miền `.edu.vn` KHÔNG bảo chứng nội dung** — `khcb.tnus.edu.vn/chi-tiet/4100` là **bản chép của loigiaihay.com** đăng lại trên domain trường công; phải kiểm watermark trong HTML thô từng bài. (4 trang `khcb.tnus.edu.vn` đang dùng đã tự kiểm lại: sạch.)
+
+⚠️ **Domain hỏng thì THỬ LẠI sau ~1 giờ** — `bacgiang.gov.vn` và `baolangson.vn` hồi phục, cứu **+7 mục** Cần Vương (có Cả Trọng, con trưởng Đề Thám). Phân biệt ba kiểu chết: DNS ra IP nhưng **TCP timeout** (đường mạng) · **trang chủ cũng 404** (chặn theo hành vi) · **NXDOMAIN cả www lẫn không** (chết thật). Chỉ kiểu thứ ba mới là nguồn chết.
+
+✅ **Lỗ hổng thứ ba của `verify_trich_van_tich` — ĐÃ VÁ, đúng điều kiện PLAN đặt ra.** Ca thật xuất hiện: `gianh-chinh-quyen-hoi-an-quang-nam-1945[1]` báo lệch 66%, mở trang thô ra thì **trích dẫn hoàn toàn đúng** — `hoianheritage.net` viết `An Điềm (<a>Đại Lộc</a>)`, bước lột thẻ để lại `( Đại Lộc )`. Chính cổng tạo ra chỗ vênh rồi tố oan người soạn. Vá trong `tai()` (không phải `chuan()`), **hai vế phải đi cùng nhau** vì dọn một bên thì `( X )` thành `(X )`. Kết quả **247 khớp · 0 lệch · 0 không tải được**. **Dữ liệu không đổi một byte.**
+
+⚠️ **Bẫy điều phối mới, ghi để đợt sau khỏi dính:** phát **19 agent cùng lúc → bị cắt sạch trong 2 phút** («session limit»). Mẻ 2 → 4 → 6 → 11 → 15 đều sống. **Bắt đầu nhỏ, tăng dần.** Và **phân vai theo NHÓM NHÂN VẬT, không chỉ theo file** — bốn mục nhóm Cai đội Hoàng Sa bị hai agent cùng dựng vì cùng một nhân vật hợp lệ ở nhiều lớp.
 
 ### Còn treo từ đợt 2026-08-27
 

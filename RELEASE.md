@@ -8,6 +8,48 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-08-28 — Mở rộng 40 agent một ca dài: +645 mục lớp phủ, sa đồ 290 khớp cặp tuyệt đối, và một cổng bản quyền mới
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Mục lớp phủ | **3.511 → 4.156** (+645), chạm **30/35 lớp** | đếm `items[]` từng file, đối chiếu `git show HEAD:` |
+| File dữ liệu · tổng mục | **378 → 404** · **6.722 → 7.402** | `_index/catalog.json` |
+| Sa đồ chiến dịch | **267 → 290** (+23) | `battles/_index.json` |
+| Khớp cặp lớp phủ ↔ sa đồ | **290 ↔ 290**, lệch **0** cả hai chiều | đối chiếu id `chien-dich-tran-danh` ↔ `battles/` |
+| Chủ đề thư viện | **14 → 15** — mới «Toàn văn tác phẩm kinh điển» | `literature/_chu-de.json` |
+| Toàn văn kinh điển | **11 tác phẩm · 144 dòng nguyên văn** | 3 tệp `toan-van-*.json` |
+| Sổ §9 | **192 → 238** (+46); tầng **T6 8 → 53** | `docs/section9-sensitive.json` |
+| Backlog chờ toạ độ | **610 → 563** (−47 đã geocode và nạp lên bản đồ) | `wave1-ditich-cho-xu-ly.json` |
+| Trích văn tịch nguyên văn | **247 khớp · 0 lệch · 0 không tải được** | `verify_trich_van_tich.mjs`, chạy tay 2026-08-28 |
+| Cổng dữ liệu | **14/14 xanh** | `npm run validate` |
+| Chủ quyền Hoàng Sa – Trường Sa | **13/13 thời kỳ**, kể cả khi bật 35 lớp phủ | `verify_chu_quyen.mjs` (probe Chrome) |
+| Build | `tsc` exit 0 · `vite build` xanh (46 module) | `npm run build` |
+
+**Lớp mở rộng mạnh nhất**: bảo vật quốc gia +83 (113→196) · di tích cấp tỉnh +61 · di sản phi vật thể +48 · di tích quốc gia +45 · lễ hội truyền thống +34 · danh thắng thiên nhiên +32 · truyền thuyết dân gian +24 · chiến dịch trận đánh +23 · danh nhân dân tộc thiểu số +22 · công trình kỷ lục +21.
+
+**Năm lớp không đổi số mục**: `ban-do-co` (15 — cần ảnh quét, không phải việc tra cứu) · `unesco` (13 — kiểm ra đã đủ, VN vẫn 9 Di sản Thế giới sau kỳ họp 48 Busan 7/2026) · `di-tich-qgdb` (153 — đầy đúng tổng số cả nước sau đợt 19) · `danh-nhan-van-hoa-can-hien-dai` (130) · `tri-thuc-khoa-hoc-tk20` (111). Ba lớp sau vẫn có sửa nội dung, chỉ không thêm mục.
+
+### Chủ đề thư viện mới — và cổng bản quyền đi kèm
+
+Chủ đề «Toàn văn tác phẩm kinh điển» là chỗ dự án chép **nhiều chữ của người khác nhất**, nên nó được mở cùng lúc với cổng chặn (`scripts/validate_literature.mjs`, +65 dòng). Cổng đứng trên hai rủi ro cụ thể:
+
+1. **Bản quyền bản DỊCH.** Sử thi dân gian và thơ văn trung đại tự thân đã hết bảo hộ, nhưng bản dịch/phiên âm sang tiếng Việt có bản quyền riêng của người dịch (Điều 27 Luật SHTT: đời tác giả + 50 năm). Nên `co_so_ban_quyen` là trường **bắt buộc** — không nói được vì sao một văn bản được đăng trọn vẹn thì không đăng. `ban_quyen` chỉ nhận `public-domain` hoặc `cited-excerpt`, và `cited-excerpt` bị chặn cứng ở **≤ 8 dòng**, đúng ngưỡng các tệp thư viện còn lại.
+2. **Chép từ trí nhớ mô hình.** Văn bản cổ là thứ mô hình ngôn ngữ sinh ra rất trôi chảy và rất sai. `nguon_toan_van` phải là URL — dấu vết để mọi lượt soát về sau đối chiếu từng dòng với trang gốc.
+
+Cổng này **cố ý không** kiểm chữ có đúng nguồn hay không; việc đó cần mạng và thuộc về `verify_trich_van_tich.mjs`. Nó chỉ bảo đảm rằng khi đi soát thì có đủ chỗ để bấu vào. 11 mục đầu đều giữ `trang_thai: draft` — chưa mục nào qua lượt xác minh nào.
+
+Trình đọc toàn văn nằm ở `src/thuvien.ts` (+352) và `src/thuvien.css` (+147): đọc được cả hai dạng lược đồ, `phan[].dong[]` cho tác phẩm chia chương và `nguyen_van[]` cho bài liền mạch.
+
+### Tầng T6 áp ở quy mô lớp — 8 → 53 mục
+
+Quyết định 2026-08-27 của chủ dự án (trẻ vị thành niên còn sống, tên thật, cho publish) đã là tiền lệ mở đường. Đợt này áp đúng như PLAN dặn — xếp T6 và trỏ về quyết định, **không hỏi lại** — cho 45 mục mới có định danh người còn sống. Sổ §9 lên 238 dòng; T1 thêm 1 mục.
+
+### Dấu « » và chú giải từ khó phủ nốt tab Quốc gia
+
+`src/quocgia.ts` đổi từ `esc`/`escKho` sang `escVan`/`escVanKho` của `popup-noi-dung` ở 6 chỗ dựng thẻ (phim tài liệu, danh nhân, phim giáo dục, nhạc, địa danh). Trước đó hai cơ chế đã chạy ở popup lớp phủ và hồ sơ tỉnh nhưng **không** ở tab Quốc gia — nên cùng một chuỗi «X» hiện nghiêng ở chỗ này và hiện nguyên dấu ở chỗ kia.
+
+---
+
 ## 2026-08-27 — Mở rộng 16 agent song song, hai ca: +608 mục lớp phủ, sa đồ phủ kín 267/267, và một cổng bị bịt lỗ
 
 | Chỉ số | Giá trị | Đo bằng |
