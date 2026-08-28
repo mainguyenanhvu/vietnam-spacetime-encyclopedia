@@ -742,3 +742,150 @@
   color: var(--brand);
   font-weight: var(--dam-manh);
 }
+
+
+/* ═══ Tác phẩm toàn văn: mục lục chương + tiến độ đọc ════════════════════════
+
+   Ba nền đọc (mặc định · ngà · tối) đã có ba bảng màu riêng, mỗi bảng khai
+   bằng một danh sách bộ chọn dài. Khối này CỐ Ý không nối vào ba danh sách đó
+   mà dựng màu từ `currentColor`: nền nào cũng có màu chữ đúng của nó, nên
+   viền và vạch tự bám theo mà không phải khai ba lần — và thêm một nền đọc
+   thứ tư sau này cũng không phải quay lại sửa chỗ này.
+
+   Giá trị đặc trước, `color-mix` sau: trình duyệt không hiểu `color-mix` bỏ
+   qua dòng thứ hai và vẫn có viền thật, không phải viền trong suốt. */
+
+.lib-muc-luc {
+  margin: 0.9em 0 0;
+  padding: 0.7em 0.9em;
+  border: 1px solid #9a8f86;
+  border-color: color-mix(in srgb, currentColor 24%, transparent);
+  border-radius: var(--bo-vua);
+}
+.lib-muc-luc-nhan {
+  margin: 0 0 0.5em;
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+.lib-muc-luc ol {
+  /* Số chương do CSS đếm, không do dữ liệu ghi: tiêu đề chương trong nguồn hay
+     đã mang sẵn chữ «Chương 3» hoặc «Khúc 3» theo cách gọi riêng của tác phẩm.
+     Đánh số cứng ở đây sẽ ra «3. Khúc 3». */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: chuong;
+  display: grid;
+  gap: 0.15em;
+}
+.lib-muc-luc li { counter-increment: chuong; }
+.lib-muc-luc button {
+  display: flex;
+  gap: 0.6em;
+  width: 100%;
+  min-height: var(--lib-cham);
+  align-items: baseline;
+  padding: 0.35em 0.4em;
+  border: none;
+  border-radius: var(--bo-nho);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: var(--co-sm);
+  text-align: left;
+  cursor: pointer;
+}
+.lib-muc-luc button::before {
+  content: counter(chuong);
+  min-width: 1.6em;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.55;
+}
+.lib-muc-luc button:hover,
+.lib-muc-luc button:focus-visible {
+  background: #0000000f;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+/* Đầu chương. Vạch kẻ TRÊN chứ không phải dưới: mắt đọc xong một chương cần
+   một khoảng nghỉ trước khi vào chương sau, và vạch nằm trên chính là khoảng
+   nghỉ đó. Vạch nằm dưới lại dính tiêu đề vào khối chữ theo sau nó. */
+.lib-chuong + .lib-chuong .lib-chuong-ten {
+  margin-top: 1.5em;
+  padding-top: 1.1em;
+  border-top: 1px solid #9a8f86;
+  border-top-color: color-mix(in srgb, currentColor 18%, transparent);
+}
+.lib-chuong-ten {
+  margin: 1em 0 0.4em;
+  font-size: var(--co-md);
+  font-weight: var(--dam-manh);
+  /* scroll-margin: mục lục nhảy tới bằng scrollIntoView, không có khoảng này
+     thì tiêu đề dính sát mép trên và trông như bị cắt. */
+  scroll-margin-top: 1rem;
+  scroll-margin-left: 1rem;
+}
+
+/* Vạch tiến độ. Dính đáy khung đọc để lúc nào cũng thấy còn bao xa —
+   đó là điểm khác giữa một trang web dài và một máy đọc sách. */
+.lib-tien-do {
+  position: sticky;
+  /* `bottom: 0` ghim vào mép HỘP NỘI DUNG của #library-panel, mà panel có
+     `padding: 1rem` — nên còn đúng 1rem bên dưới vạch là chữ của bài lộ ra,
+     đo trên Chrome thật: đáy vạch 646,7 · đáy panel 664,8. Ghim thấp thêm
+     đúng 1rem đó rồi đệm lại bằng padding: nền phủ kín tới mép panel, phần
+     nhìn thấy của vạch không xê dịch. Sửa `padding` của #library-panel thì
+     phải sửa cả hai số ở đây. */
+  bottom: -1rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-top: 1.2em;
+  padding: 0.5em 0 calc(1rem + 0.2em);
+  /* Nền phải ĐẶC. `inherit` cho ra trong suốt ở chế độ mặc định (chính
+     .lib-doc không tô nền, panel tô hộ) nên chữ của bài cuộn xuyên qua sau
+     con số phần trăm — đo trên Chrome thật, vach_bg = rgba(0,0,0,0).
+     Ba nền đọc đặt lại giá trị này ở khối riêng của chúng phía dưới. */
+  background: var(--mat);
+  border-top: 1px solid #9a8f86;
+  border-top-color: color-mix(in srgb, currentColor 14%, transparent);
+  font-size: var(--co-2xs);
+  font-variant-numeric: tabular-nums;
+}
+/* Đường ray là phần tử THẬT chứ không phải `::before`. Vạch chạy định vị
+   tuyệt đối theo phần trăm, nên nó phải đo theo bề rộng của chính đường ray —
+   đo theo cả khối .lib-tien-do thì 100% sẽ vượt qua cả ô số phần trăm. */
+.lib-tien-do-ray {
+  position: relative;
+  flex: 1;
+  height: 3px;
+  border-radius: 999px;
+  background: #0000001f;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+}
+.lib-tien-do-thanh {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.62;
+  transition: width 0.12s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lib-tien-do-thanh { transition: none; }
+}
+.lib-tien-do-so {
+  min-width: 2.6em;
+  text-align: right;
+  opacity: 0.62;
+}
+
+/* Vạch tiến độ theo ba nền đọc. Phải khai riêng vì nền của nó là nền ĐẶC —
+   xem chú thích ở .lib-tien-do. */
+.lib-doc[data-nen="nga"] .lib-tien-do { background: var(--doc-nga-nen); }
+.lib-doc[data-nen="toi"] .lib-tien-do { background: var(--doc-toi-nen); }

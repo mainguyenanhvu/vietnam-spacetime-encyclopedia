@@ -246,6 +246,71 @@ for (const file of ["sgk-xua-tho.json", "sach-hoc-xua.json"]) {
   console.log(`✅ ${file}: ${items.length} mục — public-domain, đúng chủ đề sach-hoc-xua`);
 }
 
+// --- Tác phẩm TOÀN VĂN (chủ đề «toan-van-kinh-dien»).
+//
+// Đây là chỗ dự án chép NHIỀU CHỮ NHẤT của người khác, nên cũng là chỗ hai
+// rủi ro lớn nhất gặp nhau:
+//
+//  1. Bản quyền bản DỊCH. Sử thi dân gian và thơ văn trung đại tự thân đã hết
+//     bảo hộ, nhưng bản dịch/phiên âm sang tiếng Việt có bản quyền riêng của
+//     người dịch (Điều 27 Luật SHTT: đời tác giả + 50 năm). Vì thế
+//     `co_so_ban_quyen` là trường BẮT BUỘC: không nói được vì sao một văn bản
+//     được đăng trọn vẹn thì không đăng.
+//  2. Chép từ trí nhớ mô hình. Văn bản cổ là thứ mô hình ngôn ngữ sinh ra rất
+//     trôi chảy và rất sai. `nguon_toan_van` phải là URL — dấu vết để mọi lượt
+//     soát về sau đối chiếu được từng dòng với trang gốc.
+//
+// Cổng này KHÔNG kiểm được chữ có đúng nguồn hay không (việc đó cần mạng, như
+// `verify_trich_van_tich.mjs`). Nó chỉ bảo đảm rằng KHI đi soát thì có đủ chỗ
+// để bấu vào.
+for (const file of ["toan-van-su-thi.json", "toan-van-trung-dai.json", "toan-van-dai-hoc.json"]) {
+  const tv = join(DIR, file);
+  if (!existsSync(tv)) {
+    console.log(`ℹ️ ${file} chưa có — bỏ qua.`);
+    continue;
+  }
+  const { items } = JSON.parse(readFileSync(tv, "utf8"));
+  for (const a of items) {
+    const w = `${file}/${a.id}`;
+    if (!a.id || !a.ten || !a.tac_gia) fail(w, "thiếu id/ten/tac_gia");
+    if (a.chu_de !== "toan-van-kinh-dien")
+      fail(w, `chu_de="${a.chu_de}" — phải là "toan-van-kinh-dien" thì tab thư viện mới gom vào`);
+    if (!["public-domain", "cited-excerpt"].includes(a.ban_quyen))
+      fail(w, "ban_quyen phải là public-domain|cited-excerpt");
+    if (!a.co_so_ban_quyen)
+      fail(w, "thiếu co_so_ban_quyen — không nói được vì sao được đăng toàn văn thì không đăng");
+
+    const chuong = Array.isArray(a.phan) ? a.phan : [];
+    const soDongChuong = chuong.reduce(
+      (t, c) => t + (Array.isArray(c.dong) ? c.dong.length : 0),
+      0,
+    );
+    const soDongPhang = Array.isArray(a.nguyen_van) ? a.nguyen_van.length : 0;
+    const tong = soDongChuong + soDongPhang;
+    if (!tong) fail(w, "không có phan[].dong lẫn nguyen_van[] — mục trống");
+    for (const c of chuong)
+      if (!c.tieu_de || !Array.isArray(c.dong) || !c.dong.length)
+        fail(w, "phan[] thiếu tieu_de hoặc dong[] rỗng");
+
+    // Tác phẩm còn bảo hộ mà chép trọn là rủi ro bản quyền THẬT. Ngưỡng 8 dòng
+    // giống hệt các tệp còn lại của thư viện.
+    if (a.ban_quyen === "cited-excerpt" && tong > 8)
+      fail(w, `trích ${tong} dòng — tác phẩm còn bản quyền chỉ được trích ngắn (≤8 dòng)`);
+
+    // Chỉ đòi nguồn toàn văn khi thật sự chép nhiều: một mục 8 dòng theo diện
+    // cited-excerpt đã có `sources` gánh phần dẫn nguồn.
+    const u = String(a.nguon_toan_van ?? "");
+    if (a.ban_quyen === "public-domain" && !(u.startsWith("http://") || u.startsWith("https://")))
+      fail(w, "nguon_toan_van phải là URL http(s) của trang đã mở để lấy văn bản");
+
+    if (!Array.isArray(a.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
+    for (const g of a.giai_nghia ?? [])
+      if (!g.tu || !g.nghia) fail(w, "giai_nghia thiếu tu/nghia");
+    checkSources(w, a.sources);
+  }
+  console.log(`✅ ${file}: ${items.length} tác phẩm toàn văn`);
+}
+
 if (errors) {
   console.error(`\n❌ ${errors} lỗi thư viện văn học.`);
   process.exit(1);

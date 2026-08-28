@@ -2467,11 +2467,32 @@ input[type="range"] {
   color: var(--chu-mem);
 }
 
-/* Tên tác phẩm / trích dẫn: in nghiêng thay cho « ». Xem nhamNhay() trong
-   popup-noi-dung.ts — dữ liệu vẫn giữ nguyên dấu, chỉ lớp trình bày đổi. */
+/* Tên tác phẩm: in nghiêng thay cho « ». Xem nhamNhay() trong
+   popup-noi-dung.ts — dữ liệu vẫn giữ nguyên dấu, chỉ lớp trình bày đổi.
+
+   `color: inherit` chứ KHÔNG `var(--chu)`: từ 2026-08-27 lớp này còn chạy
+   trong dòng phụ mờ của thư viện và trang tỉnh. Ghim màu chữ chính ở đó làm
+   tên tác phẩm sáng bật khỏi câu chứa nó — nhấn mạnh sai chỗ, và phá thang
+   tương phản đã đo của hai chế độ.
+
+   Chữ Việt in nghiêng hay dính vào chữ đứng liền sau: nét nghiêng cuối của
+   `Xuân` chạm nét đứng đầu của `của`. Bốn phần trăm em tách ra mà mắt không
+   đọc thành khoảng trắng thừa. */
 .pu-nhan {
   font-style: italic;
-  color: var(--chu);
+  color: inherit;
+  margin-right: 0.04em;
+}
+
+/* Nghiêng LỒNG trong nghiêng thì đảo về chữ đứng — quy ước typo có từ thời
+   sách in, và ở đây là chuyện đọc được hay không: .lib-loi-binh, .poem và
+   .lib-tho in nghiêng cả khối, nên tên tác phẩm nghiêng bên trong chúng trông
+   y hệt chữ xung quanh. Đo trên Chrome thật: cả hai cùng ra `italic`. */
+.lib-loi-binh .pu-nhan,
+.lib-tho .pu-nhan,
+.poem .pu-nhan,
+.lib-y-nghia em .pu-nhan {
+  font-style: normal;
 }
 
 .pu-canh-bao {
