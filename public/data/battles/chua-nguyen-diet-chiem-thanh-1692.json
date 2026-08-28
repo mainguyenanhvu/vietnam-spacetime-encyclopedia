@@ -1,0 +1,71 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch chúa Nguyễn Phúc Chu dẹp Chiêm Thành 1692-1693 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chua-nguyen-diet-chiem-thanh-1692",
+  "ten": "Chúa Nguyễn Phúc Chu dẹp Chiêm Thành, lập trấn Thuận Thành (1692–1693)",
+  "nam": 1692,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chúa Nguyễn Phúc Chu; Thống suất Nguyễn Hữu Cảnh",
+  "doi_thu": "Chiêm Thành (vua Bà Tranh)",
+  "dia_diem": "Phủ Diên Ninh (nay thành cổ Diên Khánh, Khánh Hòa) và vùng đất Chiêm Thành cũ (nay tỉnh Lâm Đồng — Bình Thuận cũ)",
+  "lien_quan_tinh": ["khanh-hoa", "lam-dong"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "song", "diem": [[500, 450], [600, 500], [700, 550]], "nhan": "Vùng sông giáp phủ Diên Ninh" },
+    { "kieu": "nui", "diem": [[600, 700], [700, 750], [800, 720]], "nhan": "Cao nguyên phía tây (nay Lâm Đồng)" }
+  ],
+  "phan_tu": [
+    { "id": "vua-cham-ba-tranh", "kieu": "quan", "ben": "dich", "x": 750, "y": 600, "nhan": "Vua Chiêm Bà Tranh" },
+    { "id": "quan-cham-tan-cong-dien-ninh", "kieu": "mui-ten", "ben": "dich", "tu": [750, 600], "den": [500, 400], "nhan": "Quân Chiêm tấn công phủ Diên Ninh" },
+    { "id": "phu-dien-ninh-bi-hai", "kieu": "cong-su", "ben": "ta", "x": 500, "y": 400, "nhan": "Phủ Diên Ninh bị tàn sát" },
+    { "id": "nguyen-huu-canh-xuat-quan", "kieu": "quan", "ben": "ta", "x": 300, "y": 200, "nhan": "Nguyễn Hữu Cảnh nhận lệnh đi đánh dẹp" },
+    { "id": "mui-danh-dep", "kieu": "mui-ten", "ben": "ta", "tu": [300, 200], "den": [750, 600], "nhan": "Đánh dẹp, truy bắt vua Chiêm" },
+    { "id": "ba-tranh-bi-bat", "kieu": "quan", "ben": "dich", "x": 780, "y": 650, "nhan": "Bà Tranh và Kế Bà Tử bị bắt, giải về Phú Xuân" },
+    { "id": "tran-thuan-thanh", "kieu": "co", "ben": "ta", "x": 700, "y": 720, "nhan": "Đất Chiêm Thành cũ đổi thành trấn Thuận Thành (1692)" },
+    { "id": "phu-binh-thuan", "kieu": "co", "ben": "ta", "x": 700, "y": 780, "nhan": "Đổi thành phủ Bình Thuận (1693)" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Vua Chiêm Bà Tranh đánh phủ Diên Ninh",
+      "mo_ta": "Năm 1692, vua Chiêm Thành Bà Tranh sai quân tấn công, giết hại cư dân ở phủ Diên Ninh.",
+      "hien": ["vua-cham-ba-tranh", "quan-cham-tan-cong-dien-ninh", "phu-dien-ninh-bi-hai"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Nguyễn Phúc Chu sai quân đánh dẹp",
+      "mo_ta": "Chúa Nguyễn Phúc Chu sai Thống suất Nguyễn Hữu Cảnh đem quân vào đánh dẹp.",
+      "hien": ["nguyen-huu-canh-xuat-quan"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Truy bắt vua Chiêm",
+      "mo_ta": "Quân chúa Nguyễn truy đánh, tiến sâu vào phần lãnh thổ Chiêm Thành còn lại.",
+      "hien": ["mui-danh-dep"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bắt sống Bà Tranh, giải về Phú Xuân",
+      "mo_ta": "Nguyễn Hữu Cảnh bắt được vua Bà Tranh cùng Kế Bà Tử và nhiều triều thần Chiêm Thành, đưa về Phú Xuân.",
+      "hien": ["ba-tranh-bi-bat"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đổi đất Chiêm Thành thành trấn Thuận Thành",
+      "mo_ta": "Đất Chiêm Thành còn lại được đổi thành trấn Thuận Thành.",
+      "hien": ["tran-thuan-thanh"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đổi thành phủ Bình Thuận (1693)",
+      "mo_ta": "Một năm sau, trấn Thuận Thành lại được đổi thành phủ Bình Thuận.",
+      "hien": ["phu-binh-thuan"]
+    }
+  ],
+  "ket_qua": "Vương quốc Chiêm Thành với tư cách một thực thể chính trị độc lập chấm dứt; đất đai được sáp nhập thành trấn Thuận Thành rồi phủ Bình Thuận của Đàng Trong.",
+  "y_nghia": "Đánh dấu bước cuối trong quá trình các chúa Nguyễn thu phục toàn bộ lãnh thổ Chiêm Thành cũ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "baotanglichsu.vn — Quốc chúa Nguyễn Phúc Chu và những bài thơ vịnh cảnh sắc vùng Thuận – Quảng trên đồ sứ ký kiểu",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

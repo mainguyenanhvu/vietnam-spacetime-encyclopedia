@@ -1,0 +1,123 @@
+{
+  "ghi_chu": "Sa đồ Bảo vệ cầu Hàm Rồng 1965-1972 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "bao-ve-cau-ham-rong-1965-1972",
+  "ten": "Bảo vệ cầu Hàm Rồng",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Trung đoàn 213 pháo cao xạ, Tiểu đoàn 14 (Sư đoàn 330 — Bộ Tư lệnh Phòng không)",
+  "doi_thu": "Không quân Mỹ",
+  "dia_diem": "Cầu Hàm Rồng, núi Hàm Rồng, bắc sông Mã, tỉnh Thanh Hoá",
+  "lien_quan_tinh": [
+    "thanh-hoa"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [50, 500],
+        [500, 480],
+        [950, 520]
+      ],
+      "nhan": "Sông Mã"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [400, 350],
+        [500, 300],
+        [600, 380]
+      ],
+      "nhan": "Núi Hàm Rồng"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cau-ham-rong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 500,
+      "y": 480,
+      "nhan": "Cầu Hàm Rồng — huyết mạch đường sắt, đường bộ Bắc–Nam"
+    },
+    {
+      "id": "tran-dia-phao-cao-xa",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 350,
+      "nhan": "Trận địa pháo cao xạ 37mm, Trung đoàn 213"
+    },
+    {
+      "id": "tieu-doan-14",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 550,
+      "y": 550,
+      "nhan": "Tiểu đoàn 14, Sư đoàn 330 tăng cường"
+    },
+    {
+      "id": "may-bay-my-tap-kich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 200,
+      "nhan": "Không quân Mỹ tập kích"
+    },
+    {
+      "id": "mui-tap-kich-cau",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [750, 250],
+      "den": [510, 470],
+      "nhan": "Đợt tập kích 3-4/4/1965"
+    },
+    {
+      "id": "mui-danh-tra",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [450, 380],
+      "den": [700, 230],
+      "nhan": "Lưới lửa phòng không đánh trả"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Một trong 94 trọng điểm cần phá huỷ",
+      "mo_ta": "Cầu Hàm Rồng bắc qua sông Mã là mạch máu đường sắt, đường bộ nối liền hai miền Bắc–Nam. Đầu năm 1965, không quân Mỹ đưa cầu vào danh sách 94 trọng điểm cần đánh phá để cắt tuyến chi viện.",
+      "hien": ["cau-ham-rong"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tăng cường lực lượng phòng không",
+      "mo_ta": "Đầu năm 1965, Bộ Tổng tư lệnh và Quân khu 3 điều Trung đoàn 213 pháo cao xạ 37mm về Thanh Hoá; tháng 3/1965, Bộ Tư lệnh Phòng không điều thêm Tiểu đoàn 14, Sư đoàn 330 tăng cường mặt trận Hàm Rồng.",
+      "hien": ["cau-ham-rong", "tran-dia-phao-cao-xa", "tieu-doan-14"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đợt tập kích lớn đầu tiên",
+      "mo_ta": "Ngày 3/4/1965, không quân Mỹ mở đợt tập kích quy mô lớn đầu tiên vào cầu Hàm Rồng, mở đầu hai ngày giao chiến ác liệt trên bầu trời Thanh Hoá.",
+      "hien": ["cau-ham-rong", "may-bay-my-tap-kich", "mui-tap-kich-cau"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "47 máy bay Mỹ bị bắn rơi trong hai ngày",
+      "mo_ta": "Trong hai ngày 3 và 4/4/1965, quân dân trận địa Hàm Rồng bắn rơi 47 máy bay Mỹ, bắt sống một số phi công, giữ cầu an toàn.",
+      "hien": ["tran-dia-phao-cao-xa", "tieu-doan-14", "mui-danh-tra"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tọa độ lửa suốt bảy năm",
+      "mo_ta": "Từ 1965 đến 1972, cầu Hàm Rồng tiếp tục là trọng điểm đánh phá của không quân Mỹ; quân dân Thanh Hoá duy trì thế trận phòng không nhiều tầng để bảo vệ cầu.",
+      "hien": ["cau-ham-rong", "tran-dia-phao-cao-xa", "may-bay-my-tap-kich"]
+    }
+  ],
+  "ket_qua": "Cầu Hàm Rồng được giữ vững qua nhiều năm bị đánh phá; riêng hai ngày 3-4/4/1965 quân dân Thanh Hoá bắn rơi 47 máy bay Mỹ.",
+  "y_nghia": "Trận Hàm Rồng 3-4/4/1965 mở đầu chuỗi chiến thắng phòng không trên miền Bắc, cầu Hàm Rồng trở thành biểu tượng ý chí giữ vững mạch máu giao thông Bắc–Nam trong chiến tranh phá hoại.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Chuẩn bị tốt các điều kiện cho lễ kỷ niệm 60 năm Hàm Rồng chiến thắng — Sở Văn hoá, Thể thao và Du lịch Thanh Hoá — https://svhttdl.thanhhoa.gov.vn/van-hoa/chuan-bi-tot-cac-dieu-kien-cho-le-ky-niem-60-nam-ham-rong-chien-thang-1009700"
+  ],
+  "ghi_chu_bien_tap": "Nguồn svhttdl.thanhhoa.gov.vn (cổng Sở VHTTDL Thanh Hoá, gov.vn) đã mở, xác nhận ngày 3-4/4/1965, số liệu 47 máy bay, việc điều Trung đoàn 213 và Tiểu đoàn 14. Diễn biến 1965-1972 (bước 5) khái quát theo mô tả chung của nguồn về giai đoạn 1965-1972 trong tiêu đề bài, chưa có mốc/trận cụ thể từng năm — cần bổ sung nếu tra thêm được nguồn chi tiết hơn."
+}

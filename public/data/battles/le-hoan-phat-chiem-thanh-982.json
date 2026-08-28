@@ -1,0 +1,64 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch Lê Hoàn phạt Chiêm Thành 982 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "le-hoan-phat-chiem-thanh-982",
+  "ten": "Lê Hoàn phạt Chiêm Thành (982)",
+  "nam": 982,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Lê Hoàn (Lê Đại Hành)",
+  "doi_thu": "Chiêm Thành (vua Parameshvaravarman)",
+  "dia_diem": "Kinh đô Indrapura — nay là Phật viện Đồng Dương, xã Bình Định Bắc, huyện Thăng Bình, tỉnh Quảng Nam (nay thuộc TP Đà Nẵng)",
+  "lien_quan_tinh": ["da-nang"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[850, 100], [880, 500], [850, 900]], "nhan": "Biển Đông, dọc bờ Chiêm Thành" },
+    { "kieu": "thanh", "diem": [[650, 450], [750, 450], [750, 550], [650, 550]], "nhan": "Kinh thành Indrapura" }
+  ],
+  "phan_tu": [
+    { "id": "su-gia-bi-giam", "kieu": "cong-su", "ben": "dich", "x": 700, "y": 450, "nhan": "Sứ giả Đại Việt (Từ Mục, Ngô Tử Canh) bị giam giữ" },
+    { "id": "quan-le-hoan-xuat-phat", "kieu": "quan", "ben": "ta", "x": 300, "y": 150, "nhan": "Lê Hoàn thân chinh, xuất quân từ Hoa Lư" },
+    { "id": "quan-le-hoan-tien-cong", "kieu": "quan", "ben": "ta", "x": 550, "y": 400, "nhan": "Đại quân Đại Cồ Việt áp sát Indrapura" },
+    { "id": "thanh-indrapura", "kieu": "cong-su", "ben": "dich", "x": 700, "y": 500, "nhan": "Kinh thành Indrapura" },
+    { "id": "mui-tien-cong-thanh", "kieu": "mui-ten", "ben": "ta", "tu": [550, 400], "den": [700, 500], "nhan": "Tổng công phá kinh thành" },
+    { "id": "vua-cham-tu-tran", "kieu": "quan", "ben": "dich", "x": 720, "y": 520, "nhan": "Vua Parameshvaravarman tử trận" },
+    { "id": "kinh-do-moi-vijaya", "kieu": "co", "ben": "dich", "x": 750, "y": 780, "nhan": "Kinh đô mới Vijaya (Bình Định ngày nay)" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Vua Chiêm giam sứ giả Đại Việt",
+      "mo_ta": "Năm 982, Lê Hoàn cử Từ Mục, Ngô Tử Canh sang Indrapura giao hảo, nhưng vua Chiêm Thành Parameshvaravarman bắt giam cả hai sứ giả.",
+      "hien": ["su-gia-bi-giam"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Lê Hoàn thân chinh nam tiến",
+      "mo_ta": "Trước hành động đó, Lê Hoàn tự làm tướng, đem quân tiến đánh Chiêm Thành.",
+      "hien": ["quan-le-hoan-xuat-phat"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đại quân áp sát kinh thành",
+      "mo_ta": "Quân Đại Cồ Việt tiến sâu vào lãnh thổ Chiêm Thành, áp sát kinh đô Indrapura.",
+      "hien": ["quan-le-hoan-tien-cong", "thanh-indrapura"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tổng công phá Indrapura",
+      "mo_ta": "Quân Đại Cồ Việt công phá kinh thành, giết vua Parameshvaravarman, san phẳng thành trì và tông miếu, thu vàng bạc châu báu.",
+      "hien": ["mui-tien-cong-thanh", "vua-cham-tu-tran"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Người Chăm dời đô về Vijaya",
+      "mo_ta": "Sau khi Indrapura bị tàn phá, người Chăm bỏ kinh đô cũ, dời trung tâm quyền lực về Vijaya, vùng Bình Định ngày nay.",
+      "hien": ["kinh-do-moi-vijaya"]
+    }
+  ],
+  "ket_qua": "Kinh đô Indrapura của Chiêm Thành bị san phẳng, vua Parameshvaravarman tử trận, người Chăm phải dời đô về Vijaya (Bình Định ngày nay).",
+  "y_nghia": "Chiến dịch mở đầu quá trình Nam tiến của Đại Việt, khẳng định thế lực Đại Cồ Việt ngay sau chiến thắng chống Tống, đặt tiền lệ cho các cuộc chinh phạt Chiêm Thành về sau.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Tiền Lê",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

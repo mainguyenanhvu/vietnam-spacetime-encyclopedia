@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Huyền sử khai quốc + Tứ bất tử + Hải đội Hoàng Sa. Mỗi nhân vật neo vào NƠI THỜ (đền/lăng/phủ/nhà trưng bày). Nguồn: kinh điển chính thống (Đại Việt Sử Ký Toàn Thư, Lĩnh Nam Chích Quái, Việt Điện U Linh, Phủ Biên Tạp Lục, Truyền Kỳ Tân Phả) + cổng di sản nhà nước (Cục Di sản Văn hoá dsvh.gov.vn, cổng tỉnh, quyết định xếp hạng di tích). KHÔNG mục nào lấy Wikipedia làm nguồn. Toạ độ soát 2026-07-19 (OSM Nominatim + đối chiếu tỉnh): 5 điểm độ tin cậy cao (reviewed), 4 trung + 1 thấp (draft). CẢNH BÁO: Phủ Dầy (mau-lieu-hanh) toạ độ ƯỚC LƯỢNG, chưa xác minh thực địa — cần soát lại bằng Google Maps / GIS Nam Định. Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực. Chủ quyền: Hoàng Sa/Trường Sa luôn tiếng Việt (Luật Đo đạc & bản đồ 2018).",
-  "ngay_cap_nhat": "2026-08-27",
+  "ngay_cap_nhat": "2026-08-28",
   "sources": [
     "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên) — Ngoại kỷ, Kỷ Hồng Bàng thị, Kỷ nhà Thục",
     "Lĩnh Nam Chích Quái (Trần Thế Pháp)",
@@ -424,6 +424,109 @@
         "Báo Hải Phòng điện tử, tiền thân Báo Hải Dương (baohaiphong.vn) — 5 di tích độc đáo thờ nhân vật thời Hùng Vương ở Hải Dương — https://baohaiphong.vn/5-di-tich-doc-dao-tho-nhan-vat-thoi-hung-vuong-o-hai-duong-248680.html"
       ],
       "trang_thai": "draft"
+    },
+    {
+      "id": "quan-dinh-nhu-than-khai-nguyen",
+      "ten": "Quán Đình Nhự (Thần Khai Nguyên) — đình Phú Gia",
+      "lon": 105.8,
+      "lat": 21.08,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, thời Hùng Vương thứ Sáu",
+      "noi_tho": "Đình Phú Gia (trước gọi đình Khai Nguyên, quán Già La), phường Phú Thượng, TP Hà Nội",
+      "cong_trang": "Theo thần tích, Quán Đình Nhự — tục gọi Thần Khai Nguyên — là vị tướng thời Hùng Vương thứ Sáu, có công giúp Thánh Gióng đánh giặc Ân. Đình còn phối thờ sáu vị Tôn Ông khác.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hóa — Đình Phú Gia, Thành phố Hà Nội — https://dsvh.gov.vn/dinh-phu-gia-thanh-pho-ha-noi-22274"
+      ],
+      "ghi_chu_bien_tap": "Xếp hạng di tích quốc gia theo Quyết định 53/2001/QĐ-BVHTT ngày 28/12/2001."
+    },
+    {
+      "id": "minh-lang-sat-hai-dong-ly",
+      "ten": "Minh Lang – Sát Hải đệ nhất công thần — đình Đồng Lý",
+      "lon": 106.05,
+      "lat": 20.75,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, đời vua Hùng (không rõ đời thứ mấy qua nguồn đã mở)",
+      "noi_tho": "Đình Đồng Lý, thị trấn Lương Bằng, huyện Kim Động cũ, tỉnh Hưng Yên",
+      "cong_trang": "Theo thần tích, Minh Lang – Sát Hải là công thần hàng đầu (đệ nhất công thần) đời vua Hùng, được đình phối thờ cùng ba nữ thần Quỳnh Hoa, Mai Hoa và Quế Hoa. Nguồn đã mở không nêu chi tiết công trạng cụ thể.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hóa — Đình Đồng Lý, tỉnh Hưng Yên — https://dsvh.gov.vn/dinh-dong-ly-tinh-hung-yen-3371"
+      ],
+      "ghi_chu_bien_tap": "Xếp hạng Di tích kiến trúc nghệ thuật quốc gia năm 2004. Không suy diễn công trạng cụ thể ngoài những gì nguồn đã ghi."
+    },
+    {
+      "id": "quan-lon-de-tam-lanh-giang",
+      "ten": "Quan lớn Đệ Tam (ba vị tướng thủy thần) — đền Lảnh Giang",
+      "lon": 105.95,
+      "lat": 20.58,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, thời Hùng Duệ Vương (Hùng Vương thứ 18)",
+      "noi_tho": "Đền Lảnh Giang, thôn Yên Lạc, xã Mộc Nam, tỉnh Hà Nam",
+      "cong_trang": "Theo thần tích, đền thờ ba vị tướng thủy thần thời Hùng Vương, được nhân dân tôn xưng Quan lớn Đệ Tam, có công phò tá Hùng Duệ Vương đánh tan quân Thục, giữ yên bờ cõi Văn Lang. Đền còn phối thờ vợ chồng công chúa Tiên Dung – Chử Đồng Tử.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hóa — Lễ hội Đền Lảnh Giang — https://dsvh.gov.vn/le-hoi-den-lanh-giang-1427"
+      ],
+      "ghi_chu_bien_tap": "Nhân vật Tiên Dung và Chử Đồng Tử đã có mục riêng trong CSDL (tien-dung, chu-dong-tu) — mục này chỉ ghi phần 'Quan lớn Đệ Tam', ba vị tướng thủy thần phối thờ tại đền, tránh trùng lặp nội dung với hai mục kia. Nguồn đã mở không nêu tên riêng từng vị trong ba tướng, không nêu huyện — toạ độ và tên huyện (Duy Tiên cũ) ước lượng theo địa danh đền Lảnh Giang đã biết, cần soát lại."
+    },
+    {
+      "id": "tay-sa-cong-chua",
+      "ten": "Tây Sa công chúa — nhị vị phu nhân Chử Đồng Tử",
+      "lon": 105.95,
+      "lat": 20.85,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Theo thần tích, đời Hùng Vương thứ 18",
+      "noi_tho": "Đình An Dân, xã Tân Dân, huyện Khoái Châu cũ, tỉnh Hưng Yên",
+      "cong_trang": "Theo thần tích lưu tại đình, Tây Sa công chúa là vị phu nhân thứ hai của Chử Đồng Tử, được thờ cùng Tiên Dung công chúa dưới danh xưng «nhị vị phu nhân» thời Hùng Vương thứ 18. Nguồn đã mở không nêu công trạng cụ thể riêng của bà. Đình được xếp hạng di tích kiến trúc — nghệ thuật quốc gia năm 2020.",
+      "nhan_hinh_dung": "Di tích thờ tự thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hóa — Đình An Dân, tỉnh Hưng Yên — https://dsvh.gov.vn/dinh-an-dan-tinh-hung-yen-3312"
+      ],
+      "ghi_chu_bien_tap": "Nhân vật Tiên Dung đã có mục riêng (id tien-dung) và Chử Đồng Tử ở lớp Tứ bất tử (id chu-dong-tu) — mục này bổ sung vị phu nhân thứ hai, tránh trùng lặp nội dung hai mục kia. Một đình khác (Tráng Vũ, cùng huyện) cũng thờ chung ba vị này — không tạo mục trùng, chỉ ghi một nơi thờ đại diện."
+    },
+    {
+      "id": "my-chau",
+      "ten": "Công chúa Mỵ Châu",
+      "lon": 105.872,
+      "lat": 21.104,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Nước Âu Lạc (~257–208 TCN)",
+      "noi_tho": "Am Mỵ Châu, trong Khu di tích Cổ Loa, xã Cổ Loa, Đông Anh, Hà Nội",
+      "cong_trang": "Con gái An Dương Vương, theo Lĩnh Nam Chích Quái nên duyên cùng Trọng Thủy — con trai Triệu Đà — trong mưu kế đánh chiếm Âu Lạc. Nàng vô tình để lộ bí mật nỏ thần, gián tiếp khiến thành Cổ Loa thất thủ; khi cha con chạy nạn, nàng rắc lông ngỗng trắng làm dấu cho Trọng Thủy, khiến An Dương Vương phát hiện và tự tay chém chết con gái trước khi gieo mình xuống biển. Am Mỵ Châu trong khu di tích còn giữ một pho tượng đá cụt đầu, dân gian tin là hóa thân của công chúa.",
+      "nhan_hinh_dung": "Tượng đá tự nhiên trong am, dân gian truyền tụng là hóa thân — không phải chân dung xác thực.",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Công an TP Đà Nẵng (cadn.com.vn) — Đến Cổ Loa nghe lại chuyện xưa Mỵ Châu — https://cadn.com.vn/den-co-loa-nghe-lai-chuyen-xua-my-chau-post325204.html",
+        "Lĩnh Nam Chích Quái — Truyện Rùa Vàng (Kim Quy)"
+      ],
+      "ghi_chu_bien_tap": "An Dương Vương đã có mục riêng trong CSDL (id an-duong-vuong, neo đền Thượng cùng khu di tích Cổ Loa) — mục này bổ sung nhân vật Mỵ Châu, neo cụ thể vào Am Mỵ Châu, tránh trùng lặp nội dung."
+    },
+    {
+      "id": "thanh-ban-phu-nam-cuong",
+      "ten": "Thành Bản Phủ — kinh đô Nam Bình, nước Nam Cương",
+      "lon": 106.28,
+      "lat": 22.68,
+      "loai": "huyen-su-khai-quoc",
+      "thoi_ky": "Trước khi lập nước Âu Lạc, truyền thuyết vùng Cao Bằng",
+      "noi_tho": "Di tích Thành Bản Phủ, xã Hưng Đạo, TP Cao Bằng, tỉnh Cao Bằng",
+      "cong_trang": "Theo truyền thuyết vùng Cao Bằng, đây là kinh đô Nam Bình của nước Nam Cương thời Thục Phán — giai đoạn trước khi Thục Phán đánh Hùng Vương thứ 18, lập nước Âu Lạc và xưng An Dương Vương, dời đô về Cổ Loa. Thành còn dấu tích hai lớp lũy đất; vùng lân cận còn lưu nhiều địa danh gắn với truyền thuyết Nam Cương như cánh đồng Tổng Chúp, Khau Lừa, núi thủng Phja Pjót.",
+      "nhan_hinh_dung": "Di tích khảo cổ — kiến trúc thực; không có chân dung xác thực.",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cao Bằng điện tử — Các địa danh, di tích, di vật liên quan đến nhân vật Thục Phán và nước Nam Cương — https://baocaobang.vn/cac-dia-danh-di-tich-di-vat-lien-quan-den-nhan-vat-thuc-phan-va-nuoc-nam-cuong-3176438.html"
+      ],
+      "ghi_chu_bien_tap": "An Dương Vương (Thục Phán) đã có mục riêng, neo đền Thượng Cổ Loa — mục này bổ sung giai đoạn TRƯỚC Âu Lạc, kinh đô Nam Cương ở Cao Bằng, một địa điểm hoàn toàn khác, không trùng lặp. Toạ độ ước lượng theo xã Hưng Đạo, chưa soát chính xác vị trí thành."
     }
   ]
 }

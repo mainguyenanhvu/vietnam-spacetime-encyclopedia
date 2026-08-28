@@ -1,0 +1,77 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa giành chính quyền Hải Dương 17/8/1945 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "gianh-chinh-quyen-hai-duong-1945",
+  "ten": "Giành chính quyền ở Hải Dương (17/8/1945)",
+  "nam": 1945,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Bí thư Tỉnh ủy Nguyễn Văn Kha; Việt Minh Hải Dương",
+  "doi_thu": "Chính quyền tay sai Nhật — chính phủ Trần Trọng Kim",
+  "dia_diem": "Vườn hoa Bảo Đại (nay là Quảng trường Độc Lập), thị xã Hải Dương — nay thuộc thành phố Hải Phòng",
+  "lien_quan_tinh": ["hai-phong"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "thanh", "diem": [[300, 300], [700, 300], [700, 650], [300, 650]], "nhan": "Thị xã Hải Dương" }
+  ],
+  "phan_tu": [
+    { "id": "hoi-nghi-thanh-tung", "kieu": "cong-su", "ben": "ta", "x": 150, "y": 150, "nhan": "Hội nghị cán bộ tại Thanh Tùng (Thanh Miện), 13–15/8" },
+    { "id": "cam-giang-khoi-nghia", "kieu": "co", "ben": "ta", "x": 200, "y": 400, "nhan": "Huyện Cẩm Giàng khởi nghĩa (17/8, mở đầu)" },
+    { "id": "kim-thanh-kinh-mon", "kieu": "co", "ben": "ta", "x": 250, "y": 500, "nhan": "Kim Thành, Kinh Môn nổi dậy cùng ngày" },
+    { "id": "mit-tinh-tran-trong-kim", "kieu": "quan", "ben": "dich", "x": 500, "y": 350, "nhan": "Cuộc mít tinh ủng hộ chính phủ Trần Trọng Kim" },
+    { "id": "co-do-sao-vang", "kieu": "co", "ben": "ta", "x": 520, "y": 360, "nhan": "Cờ đỏ sao vàng thay cờ quẻ ly" },
+    { "id": "vuon-hoa-bao-dai", "kieu": "cong-su", "ben": "ta", "x": 550, "y": 400, "nhan": "Mít tinh tại vườn hoa Bảo Đại" },
+    { "id": "chiem-cong-so", "kieu": "mui-ten", "ben": "ta", "tu": [550, 400], "den": [650, 450], "nhan": "Chiếm dinh Tổng đốc, trại lính Nhật, trại Bảo an binh" },
+    { "id": "pho-tinh-truong-dau-hang", "kieu": "quan", "ben": "dich", "x": 680, "y": 470, "nhan": "Phó Tỉnh trưởng Trần Văn Tuyên đầu hàng" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Hội nghị Thanh Tùng quyết định tổng khởi nghĩa",
+      "mo_ta": "Từ 13 đến 15/8/1945, Tỉnh ủy Hải Dương họp tại thôn Đông, xã Thanh Tùng (Thanh Miện) dưới sự chủ trì của Bí thư Nguyễn Văn Kha, quyết định phát động tổng khởi nghĩa khi có tin Nhật đầu hàng.",
+      "hien": ["hoi-nghi-thanh-tung"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Cẩm Giàng khởi nghĩa, mở đầu",
+      "mo_ta": "Ngày 17/8/1945, huyện Cẩm Giàng khởi nghĩa trước tiên, mở đầu cho tổng khởi nghĩa toàn tỉnh; cùng ngày Kim Thành, Kinh Môn cũng giành chính quyền.",
+      "hien": ["cam-giang-khoi-nghia", "kim-thanh-kinh-mon"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Biến cuộc mít tinh thân Nhật thành biểu tình cách mạng",
+      "mo_ta": "Chiều 17/8/1945 tại thị xã Hải Dương, lực lượng cách mạng trà trộn vào cuộc mít tinh ủng hộ chính phủ Trần Trọng Kim, hạ cờ quẻ ly xuống, giương cờ đỏ sao vàng, hô khẩu hiệu ủng hộ Việt Minh.",
+      "hien": ["mit-tinh-tran-trong-kim", "co-do-sao-vang"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Mít tinh tại vườn hoa Bảo Đại",
+      "mo_ta": "Đoàn biểu tình diễu hành qua các phố, dừng lại tổ chức mít tinh tại vườn hoa Bảo Đại, đại biểu Việt Minh công bố 10 chính sách cứu nước.",
+      "hien": ["vuon-hoa-bao-dai"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chiếm các công sở",
+      "mo_ta": "Đoàn quân khởi nghĩa chia nhau chiếm dinh Tổng đốc, trại lính Nhật và trại Bảo an binh.",
+      "hien": ["chiem-cong-so"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Chính quyền tay sai đầu hàng",
+      "mo_ta": "Tỉnh trưởng bỏ trốn; Phó Tỉnh trưởng Trần Văn Tuyên cùng các viên chức còn lại tuyên bố đầu hàng, bàn giao hồ sơ sổ sách cho cách mạng.",
+      "hien": ["pho-tinh-truong-dau-hang"]
+    }
+  ],
+  "ket_qua": "Cuộc khởi nghĩa giành chính quyền ở thị xã Hải Dương thắng lợi chiều 17/8/1945, đưa Hải Dương cùng Bắc Giang, Hà Tĩnh, Quảng Nam trở thành 4 tỉnh lỵ giành chính quyền sớm nhất cả nước; từ 18 đến 22/8/1945, các huyện còn lại trong tỉnh đều khởi nghĩa thắng lợi.",
+  "y_nghia": "Thắng lợi ở Hải Dương là một trong bốn mốc mở đầu làn sóng giành chính quyền cấp tỉnh trên cả nước trong Cách mạng Tháng Tám, trước cả thắng lợi ở Hà Nội (19/8/1945).",
+  "trang_thai": "draft",
+  "nguon": [
+    "baohaiphong.vn — Đảng bộ tỉnh Hải Dương 80 năm xây dựng và phát triển: Bài 2, Lãnh đạo nhân dân khởi nghĩa giành chính quyền (theo Lịch sử Đảng bộ tỉnh Hải Dương)"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Lịch sử Đảng bộ tỉnh Hải Dương",
+      "doan": "Cuộc khởi nghĩa giành chính quyền ở thị xã Hải Dương thắng lợi chiều 17.8.1945, đưa Hải Dương cùng với Bắc Giang, Hà Tĩnh và Quảng Nam là 4 tỉnh lỵ giành chính quyền thắng lợi đầu tiên trong cả nước.",
+      "nguon_trich": "Báo Hải Phòng — https://baohaiphong.vn/dang-bo-tinh-hai-duong-80-nam-xay-dung-va-phat-trien-bai-2-lanh-dao-nhan-dan-khoi-nghia-gianh-chinh-quyen-218937.html",
+      "buoc": 6
+    }
+  ]
+}

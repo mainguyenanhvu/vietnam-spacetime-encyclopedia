@@ -1,0 +1,123 @@
+{
+  "ghi_chu": "Sa đồ Biệt động Sài Gòn đánh Dinh Độc Lập 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "biet-dong-sai-gon-danh-dinh-doc-lap-1968",
+  "ten": "Biệt động Sài Gòn đánh Dinh Độc Lập",
+  "nam": 1968,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đội 5 Biệt động Sài Gòn — Gia Định, chỉ huy Tô Hoài Thanh (Ba Thanh)",
+  "doi_thu": "Lực lượng bảo vệ Dinh Độc Lập, quân đội Sài Gòn",
+  "dia_diem": "Dinh Độc Lập, số 135 Nam Kỳ Khởi Nghĩa, Sài Gòn (nay Quận 1, Thành phố Hồ Chí Minh)",
+  "lien_quan_tinh": [
+    "thanh-pho-ho-chi-minh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "thanh",
+      "diem": [
+        [400, 300],
+        [700, 300],
+        [700, 600],
+        [400, 600]
+      ],
+      "nhan": "Khuôn viên Dinh Độc Lập"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "can-cu-bi-mat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 100,
+      "y": 500,
+      "nhan": "Căn cứ bí mật nội thành — điểm xuất phát"
+    },
+    {
+      "id": "xe-tai-vu-khi",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 480,
+      "nhan": "3 xe tải nhỏ chở hơn 2 tấn vũ khí, 2 xe máy"
+    },
+    {
+      "id": "cong-dinh-doc-lap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 400,
+      "y": 450,
+      "nhan": "Cổng chính Dinh Độc Lập"
+    },
+    {
+      "id": "doi-5-biet-dong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 380,
+      "y": 470,
+      "nhan": "Đội 5 Biệt động, 15 chiến sĩ"
+    },
+    {
+      "id": "luc-luong-bao-ve-dinh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 400,
+      "nhan": "Lực lượng bảo vệ Dinh phản ứng"
+    },
+    {
+      "id": "tuong-rao-dinh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 420,
+      "y": 400,
+      "nhan": "Tường rào Dinh — nơi đội biệt động mắc kẹt"
+    },
+    {
+      "id": "mui-tien-cong-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [250, 480],
+      "den": [400, 450],
+      "nhan": "Tiến công cổng chính"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Xuất phát trong đêm giao thừa",
+      "mo_ta": "Đêm 30 rạng sáng 31/1/1968 (mùng 1 rạng mùng 2 Tết Mậu Thân), Đội 5 Biệt động Sài Gòn — Gia Định gồm 15 chiến sĩ do Tô Hoài Thanh chỉ huy, rời căn cứ bí mật nội thành trên 3 xe tải nhỏ và 2 xe máy, chở hơn 2 tấn vũ khí, tiến thẳng về Dinh Độc Lập.",
+      "hien": ["can-cu-bi-mat", "xe-tai-vu-khi"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Áp sát cổng chính",
+      "mo_ta": "Đội áp sát cổng chính Dinh Độc Lập, hạ gục lính gác để mở đường tiến công.",
+      "hien": ["xe-tai-vu-khi", "cong-dinh-doc-lap", "mui-tien-cong-cong"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Khối thuốc nổ không kích hoạt",
+      "mo_ta": "Khối thuốc nổ đặt để phá cổng không kích hoạt, đội biệt động bị mắc kẹt trước cổng Dinh; chỉ huy Ba Thanh chuyển sang dùng súng B40 bắn qua tường rào.",
+      "hien": ["cong-dinh-doc-lap", "doi-5-biet-dong", "tuong-rao-dinh"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Trèo tường công đánh vào bên trong",
+      "mo_ta": "Nhiều chiến sĩ trèo qua tường rào để công đánh vào bên trong Dinh, hy sinh ngay tại chỗ dưới hoả lực của lực lượng bảo vệ.",
+      "hien": ["doi-5-biet-dong", "tuong-rao-dinh", "luc-luong-bao-ve-dinh"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Giao tranh kéo dài hơn hai ngày",
+      "mo_ta": "Lực lượng bảo vệ Dinh phản ứng, giao tranh quanh khu vực kéo dài hơn hai ngày.",
+      "hien": ["luc-luong-bao-ve-dinh", "tuong-rao-dinh"]
+    }
+  ],
+  "ket_qua": "10 trong 15 chiến sĩ Đội 5 hy sinh; chỉ huy Tô Hoài Thanh bị thương nặng; một chiến sĩ bị bắt. Nữ chiến sĩ Vũ Minh Nghĩa (Chín Nghĩa) sống sót nhưng bị giam qua nhiều nhà tù, kể cả Côn Đảo.",
+  "y_nghia": "Trận đánh đưa chiến tranh vào ngay cơ quan đầu não của chính quyền Sài Gòn giữa lòng thủ đô của họ, là một trong loạt đòn tiến công gây chấn động của Biệt động Sài Gòn trong Tổng tiến công và nổi dậy Xuân Mậu Thân 1968.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Biệt động Sài Gòn - 'cú đấm thép' Xuân Mậu Thân 1968 - Bài 3: Những chiến công hiển hách — Báo Tin tức (Thông tấn xã Việt Nam) — https://baotintuc.vn/thoi-su/biet-dong-sai-gon-cu-dam-thep-xuan-mau-than-1968-bai-3-nhung-chien-cong-hien-hach-20230125082914315.htm"
+  ],
+  "ghi_chu_bien_tap": "Nguồn baotintuc.vn (Thông tấn xã Việt Nam, báo nhà nước) đã mở, xác nhận đội hình 15 chiến sĩ, chỉ huy Tô Hoài Thanh, thời điểm rạng sáng 31/1/1968, diễn biến khối thuốc nổ không kích hoạt, 10/15 hy sinh, Vũ Minh Nghĩa sống sót bị giam Côn Đảo. Không đưa trich_van_tich dù nguồn có câu nhận định trực tiếp, vì nội dung WebFetch trả về đã qua mô hình tóm tắt, không chắc khớp byte-for-byte với bản gốc."
+}

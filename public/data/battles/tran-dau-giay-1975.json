@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Sa đồ Trận Dầu Giây 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-dau-giay-1975",
+  "ten": "Trận Dầu Giây",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Sư đoàn 6 và Trung đoàn 95B, Quân đoàn 4",
+  "doi_thu": "Chiến đoàn 52, Sư đoàn 18 quân đội Sài Gòn",
+  "dia_diem": "Ngã ba Dầu Giây, huyện Thống Nhất cũ, nay tỉnh Đồng Nai",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [100, 500],
+        [500, 480],
+        [900, 460]
+      ],
+      "nhan": "Quốc lộ 1"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [500, 480],
+        [480, 150],
+        [450, 50]
+      ],
+      "nhan": "Đường 20 đi Đà Lạt"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "nga-ba-dau-giay",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 480,
+      "nhan": "Ngã ba Dầu Giây — điểm cuối đường 20"
+    },
+    {
+      "id": "san-bay-bien-hoa",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 800,
+      "y": 700,
+      "nhan": "Sân bay Biên Hoà — nguồn chi viện đường không"
+    },
+    {
+      "id": "phao-binh-ta",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 700,
+      "y": 550,
+      "nhan": "Pháo binh chiến dịch bắn phá sân bay Biên Hoà"
+    },
+    {
+      "id": "chien-doan-52-dich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 550,
+      "y": 450,
+      "nhan": "Chiến đoàn 52, Sư đoàn 18 phòng thủ Dầu Giây"
+    },
+    {
+      "id": "su-doan-6-95b-ta",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 500,
+      "nhan": "Sư đoàn 6 và Trung đoàn 95B tiến công"
+    },
+    {
+      "id": "xuan-loc-phia-dong",
+      "kieu": "dia-danh",
+      "x": 750,
+      "y": 300,
+      "nhan": "Thị xã Xuân Lộc, phía đông"
+    },
+    {
+      "id": "mui-tien-cong-dau-giay",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [350, 500],
+      "den": [500, 480],
+      "nhan": "Tiến công ngã ba Dầu Giây"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Mắt xích chi viện lên Xuân Lộc",
+      "mo_ta": "Trong Chiến dịch Xuân Lộc (9-21/4/1975), Dầu Giây — điểm cuối đường 20 từ Đà Lạt về, nối đường 56 đi Vũng Tàu — là mắt xích chi viện từ Biên Hoà lên Xuân Lộc.",
+      "hien": ["nga-ba-dau-giay", "xuan-loc-phia-dong"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Pháo kích tê liệt sân bay Biên Hoà",
+      "mo_ta": "Ngày 15/4/1975, pháo binh chiến dịch trút bão lửa xuống sân bay Biên Hoà, làm tê liệt khả năng chi viện đường không của quân đội Sài Gòn cho Xuân Lộc.",
+      "hien": ["phao-binh-ta", "san-bay-bien-hoa"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Sư đoàn 6 tiến công ngã ba Dầu Giây",
+      "mo_ta": "Cùng lúc, Sư đoàn 6 và Trung đoàn 95B tổ chức tiến công mãnh liệt vào ngã ba Dầu Giây, nơi Chiến đoàn 52 quân đội Sài Gòn đóng giữ.",
+      "hien": ["su-doan-6-95b-ta", "chien-doan-52-dich", "mui-tien-cong-dau-giay"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tiêu diệt Chiến đoàn 52",
+      "mo_ta": "Quân ta tiêu diệt Chiến đoàn 52 quân đội Sài Gòn tại khu vực Dầu Giây.",
+      "hien": ["chien-doan-52-dich", "nga-ba-dau-giay"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cắt đứt Quốc lộ 1 và đường 20",
+      "mo_ta": "Quốc lộ 1 và đường 20 bị cắt đứt tại Dầu Giây, cô lập hoàn toàn thị xã Xuân Lộc với hướng chi viện từ Biên Hoà và Đà Lạt.",
+      "hien": ["nga-ba-dau-giay", "xuan-loc-phia-dong"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Xuân Lộc mất đường tiếp viện",
+      "mo_ta": "Mất Dầu Giây, quân đội Sài Gòn không còn đường bộ tiếp viện, buộc phải rút bỏ tuyến phòng thủ Xuân Lộc.",
+      "hien": ["xuan-loc-phia-dong"]
+    }
+  ],
+  "ket_qua": "Quân ta tiêu diệt Chiến đoàn 52, làm chủ ngã ba Dầu Giây, cắt đứt Quốc lộ 1 và đường 20, cô lập hoàn toàn thị xã Xuân Lộc khỏi nguồn tiếp viện từ Biên Hoà.",
+  "y_nghia": "Trận Dầu Giây mở \"cánh cửa thép\" Xuân Lộc, tạo đường cho Quân đoàn 4 tiến về Sài Gòn trong Chiến dịch Hồ Chí Minh.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Bài cuối: Chiến dịch Xuân Lộc 1975 - Đỉnh cao nghệ thuật chuyển hoá thế trận — Báo Công an Thành phố Hồ Chí Minh — https://congan.com.vn/tin-chinh/bai-cuoi-chien-dich-xuan-loc-1975-dinh-cao-nghe-thuat-chuyen-hoa-the-tran_191361.html"
+  ],
+  "ghi_chu_bien_tap": "Nguồn congan.com.vn (báo Công an TP.HCM, báo nhà nước) đã mở, xác nhận mốc 15/4/1975 pháo kích sân bay Biên Hoà, Sư đoàn 6 và Trung đoàn 95B tiến công Dầu Giây, tiêu diệt Chiến đoàn 52, cắt Quốc lộ 1 và đường 20. Không đưa số liệu tổng kết toàn chiến dịch Xuân Lộc (2.056 địch bị diệt, 2.785 bị bắt — theo một nguồn khác) vào ket_qua vì đó là số liệu toàn chiến dịch 9-21/4, không riêng trận Dầu Giây 15/4."
+}

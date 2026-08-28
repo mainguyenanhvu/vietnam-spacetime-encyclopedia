@@ -1,0 +1,65 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch Tây Sơn diệt chúa Nguyễn tại Gia Định 1777 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tay-son-diet-chua-nguyen-gia-dinh-1777",
+  "ten": "Tây Sơn diệt chúa Nguyễn tại Gia Định (1777)",
+  "nam": 1777,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Huệ, Nguyễn Lữ",
+  "doi_thu": "Chúa Nguyễn (Thái thượng vương Nguyễn Phúc Thuần, Tân chính vương Nguyễn Phúc Dương)",
+  "dia_diem": "Gia Định (Sài Gòn xưa) — nay thuộc Thành phố Hồ Chí Minh",
+  "lien_quan_tinh": ["thanh-pho-ho-chi-minh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "song", "diem": [[500, 100], [550, 450], [500, 900]], "nhan": "Sông Sài Gòn" },
+    { "kieu": "thanh", "diem": [[600, 450], [700, 450], [700, 550], [600, 550]], "nhan": "Thành Gia Định — thủ phủ chúa Nguyễn" }
+  ],
+  "phan_tu": [
+    { "id": "quan-nguyen-hue", "kieu": "quan", "ben": "ta", "x": 300, "y": 200, "nhan": "Nguyễn Huệ chỉ huy đại quân Tây Sơn" },
+    { "id": "quan-nguyen-lu", "kieu": "quan", "ben": "ta", "x": 350, "y": 250, "nhan": "Nguyễn Lữ phối hợp tiến quân" },
+    { "id": "mui-tien-cong-gia-dinh", "kieu": "mui-ten", "ben": "ta", "tu": [325, 225], "den": [600, 500], "nhan": "Tiến đánh Gia Định lần thứ hai" },
+    { "id": "thanh-gia-dinh", "kieu": "cong-su", "ben": "dich", "x": 650, "y": 500, "nhan": "Thành Gia Định" },
+    { "id": "quan-nguyen-tan-vo", "kieu": "quan", "ben": "dich", "x": 680, "y": 550, "nhan": "Quân chúa Nguyễn tan vỡ" },
+    { "id": "nguyen-phuc-thuan-bi-bat", "kieu": "quan", "ben": "dich", "x": 720, "y": 600, "nhan": "Nguyễn Phúc Thuần (Thái thượng vương) bị bắt, bị giết" },
+    { "id": "nguyen-phuc-duong-bi-bat", "kieu": "quan", "ben": "dich", "x": 700, "y": 630, "nhan": "Nguyễn Phúc Dương (Tân chính vương) bị bắt, bị giết" },
+    { "id": "nguyen-anh-thoat", "kieu": "mui-ten", "ben": "dich", "tu": [720, 600], "den": [900, 850], "nhan": "Nguyễn Phúc Ánh chạy thoát" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nguyễn Huệ, Nguyễn Lữ tiến đánh Gia Định lần hai",
+      "mo_ta": "Đầu năm 1777, Nguyễn Nhạc cử Nguyễn Huệ và Nguyễn Lữ đem đại quân Tây Sơn tiến đánh Gia Định lần thứ hai.",
+      "hien": ["quan-nguyen-hue", "quan-nguyen-lu"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Áp sát thành Gia Định",
+      "mo_ta": "Quân Tây Sơn tiến sâu vào Gia Định, áp sát thủ phủ của chúa Nguyễn.",
+      "hien": ["mui-tien-cong-gia-dinh", "thanh-gia-dinh"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Quân chúa Nguyễn tan vỡ",
+      "mo_ta": "Quân Nguyễn bị đánh bại hoàn toàn, không còn khả năng chống cự.",
+      "hien": ["quan-nguyen-tan-vo"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bắt và giết hai chúa Nguyễn",
+      "mo_ta": "Thái thượng vương Nguyễn Phúc Thuần và Tân chính vương Nguyễn Phúc Dương đều bị quân Tây Sơn bắt và giết.",
+      "hien": ["nguyen-phuc-thuan-bi-bat", "nguyen-phuc-duong-bi-bat"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Người kế thừa duy nhất chạy thoát",
+      "mo_ta": "Nguyễn Phúc Ánh, cháu của dòng chúa Nguyễn, chạy thoát khỏi Gia Định.",
+      "hien": ["nguyen-anh-thoat"]
+    }
+  ],
+  "ket_qua": "Nền thống trị của chúa Nguyễn ở Đàng Trong sụp đổ hoàn toàn sau khi cả Thái thượng vương Nguyễn Phúc Thuần lẫn Tân chính vương Nguyễn Phúc Dương đều bị giết.",
+  "y_nghia": "Chấm dứt gần hai thế kỷ cai trị của các chúa Nguyễn ở Đàng Trong, mở đường cho Nguyễn Nhạc xưng đế năm 1778, đồng thời gieo mầm cuộc chiến kéo dài giữa Nguyễn Ánh và nhà Tây Sơn.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Hệ tri thức Việt số hoá (trithuc.itrithuc.vn) — 1777 (Đinh Dậu): Phong trào nông dân Tây Sơn đánh đổ chính quyền của chúa Nguyễn ở Đàng Trong",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

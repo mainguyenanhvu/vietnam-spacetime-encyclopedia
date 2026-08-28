@@ -1,0 +1,136 @@
+{
+  "ghi_chu": "Sa đồ Truy kích địch rút chạy trên đường số 7, 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "truy-kich-duong-7-1975",
+  "ten": "Truy kích địch rút chạy trên đường số 7",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Sư đoàn 320 — Tư lệnh Kim Tuấn, Chính uỷ Bùi Huy Bổng",
+  "doi_thu": "Quân đoàn 2 và địa phương quân Sài Gòn rút chạy khỏi Tây Nguyên",
+  "dia_diem": "Đường số 7 (tỉnh lộ 7B) từ Pleiku qua Cheo Reo, Phú Túc đến Củng Sơn, nay thuộc tỉnh Gia Lai",
+  "lien_quan_tinh": [
+    "gia-lai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [100, 100],
+        [400, 400],
+        [700, 600],
+        [900, 900]
+      ],
+      "nhan": "Đường số 7 (tỉnh lộ 7B)"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [300, 300],
+        [400, 250],
+        [480, 350]
+      ],
+      "nhan": "Đèo Tu Na"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "pleiku-dich-rut",
+      "kieu": "dia-danh",
+      "x": 100,
+      "y": 100,
+      "nhan": "Pleiku — điểm địch bắt đầu rút, 16/3/1975"
+    },
+    {
+      "id": "deo-tu-na-chan-dich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 300,
+      "nhan": "Tiểu đoàn 9, Trung đoàn 64 chặn địch tại đèo Tu Na"
+    },
+    {
+      "id": "cheo-reo-vay-diet",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 550,
+      "nhan": "Địch dồn ứ tại khu vực Cheo Reo"
+    },
+    {
+      "id": "su-doan-320-ta",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 450,
+      "nhan": "Sư đoàn 320 vây, chia cắt địch"
+    },
+    {
+      "id": "xe-co-gioi-dich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 650,
+      "y": 500,
+      "nhan": "Hơn 1.000 xe cơ giới địch ùn tắc"
+    },
+    {
+      "id": "phu-tuc-cung-son",
+      "kieu": "dia-danh",
+      "x": 850,
+      "y": 850,
+      "nhan": "Phú Túc — Củng Sơn, hướng truy kích tiếp"
+    },
+    {
+      "id": "mui-truy-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [600, 550],
+      "den": [850, 850],
+      "nhan": "Truy kích tàn quân"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "\"Triệt thoái chiến lược\" khỏi Tây Nguyên",
+      "mo_ta": "Sau khi Buôn Ma Thuột thất thủ ngày 14/3/1975, Tổng thống Việt Nam Cộng hoà Nguyễn Văn Thiệu ra lệnh rút toàn bộ Quân đoàn 2 khỏi Tây Nguyên về giữ đồng bằng ven biển.",
+      "hien": ["pleiku-dich-rut"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chọn con đường nhỏ ít ai ngờ tới",
+      "mo_ta": "Bộ Tư lệnh Quân đoàn 2 Sài Gòn chọn đường số 7 — con đường nhỏ, lâu ngày ít sử dụng — làm tuyến rút quân nhằm tạo bất ngờ.",
+      "hien": ["pleiku-dich-rut"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Phát hiện địch rút, quyết định chặn cắt",
+      "mo_ta": "Sáng 16/3/1975, quân ta phát hiện dấu hiệu địch rút khỏi Pleiku; Bộ Tư lệnh chiến dịch Tây Nguyên quyết định cơ động Sư đoàn 320 chặn cắt đội hình địch trên đường số 7.",
+      "hien": ["pleiku-dich-rut", "su-doan-320-ta"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chặn địch tại đèo Tu Na",
+      "mo_ta": "Sáng 17/3/1975, Tiểu đoàn 9, Trung đoàn 64 có mặt tại chân đèo Tu Na để chặn địch.",
+      "hien": ["deo-tu-na-chan-dich"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Vây, chia cắt và tiêu diệt tại Cheo Reo",
+      "mo_ta": "Từ 18 đến 24/3/1975, Sư đoàn 320 vây, chia cắt và tiêu diệt lực lượng địch — hơn một vạn quân và hơn 1.000 xe cơ giới các loại — tập trung tại khu vực Cheo Reo.",
+      "hien": ["su-doan-320-ta", "cheo-reo-vay-diet", "xe-co-gioi-dich"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Truy kích đến Phú Túc, Củng Sơn",
+      "mo_ta": "Quân ta tiếp tục đánh địch từ Phú Túc đến Củng Sơn, không cho tàn quân địch có cơ hội tập hợp lại.",
+      "hien": ["mui-truy-kich", "phu-tuc-cung-son"]
+    }
+  ],
+  "ket_qua": "Sư đoàn 320 tiêu diệt, bắt và làm tan rã toàn bộ các lực lượng chủ lực và địa phương quân còn lại của quân đội Sài Gòn ở Tây Nguyên trên đường số 7.",
+  "y_nghia": "Trận truy kích trên đường số 7 thể hiện trình độ chỉ huy trong nắm tình hình, tổ chức sử dụng lực lượng, chuyển thắng lợi chiến dịch thành thắng lợi chiến lược cho toàn bộ Chiến dịch Tây Nguyên.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Tổ chức đánh địch rút chạy trên đường số 7 — Báo Nhân Dân điện tử — https://special.nhandan.vn/tochucdanhdichrutchaytrenduongso7/index.html"
+  ],
+  "ghi_chu_bien_tap": "Nguồn special.nhandan.vn đã mở, xác nhận đơn vị Sư đoàn 320 (Tư lệnh Kim Tuấn, Chính uỷ Bùi Huy Bổng), mốc 16-24/3/1975, Tiểu đoàn 9/Trung đoàn 64 tại đèo Tu Na sáng 17/3, số liệu hơn 1 vạn quân/hơn 1.000 xe cơ giới, hướng truy kích Phú Túc — Củng Sơn. lien_quan_tinh dùng 'gia-lai' vì Cheo Reo (nay Ayun Pa) thuộc Gia Lai cũ, còn nguyên trong tỉnh Gia Lai sau khi hợp nhất thêm Bình Định theo NQ 202/2025/QH15."
+}

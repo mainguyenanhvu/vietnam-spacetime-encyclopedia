@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Di tích lịch sử cách mạng · kháng chiến (nhà tù, căn cứ, địa đạo, bến bãi) chưa có trong CSDL — bổ sung ngoài các sự kiện/chiến dịch đã có (Điện Biên Phủ, Địa đạo Củ Chi, Pác Bó, Tân Trào, ATK Định Hóa, Côn Đảo, Sơn La, Phú Quốc, Hiền Lương, Kim Liên... đã có lớp khác). Toạ độ theo cấp xã/huyện nơi chưa xác định chính xác điểm di tích. KHÔNG dùng Wikipedia — chỉ dùng cổng nhà nước/tỉnh và Cục Di sản văn hóa (dsvh.gov.vn). [Tách lại 2026-07-26: 11 mục vuon-quoc-gia + 9 mục danh-thang lọt từ Phase 3 lô5 được chuyển sang danh-thang-thien-nhien.json — lớp này nay CHỈ còn di tích cách mạng/kháng chiến thuần (nhà tù, căn cứ, địa đạo, bến bãi).]",
-  "ngay_cap_nhat": "2026-08-27",
+  "ngay_cap_nhat": "2026-08-28",
   "sources": [
     "Cục Di sản văn hóa — dsvh.gov.vn",
     "Báo Hưng Yên điện tử — baohungyen.vn",
@@ -973,6 +973,296 @@
         "Sở Ngoại vụ tỉnh Lào Cai — Bảo tồn và phát huy các giá trị di tích lịch sử, văn hóa — https://www.doingoailaocai.vn/vi/bai-viet/888"
       ],
       "ghi_chu_bien_tap": "Nhiều nguồn thứ cấp (chưa tự mở xác nhận) ghi ngày thành lập chi bộ Cam Đường là 10/10/1948 và số QĐ 1568/QĐ-VH 20/4/1995 — KHÔNG đưa vào vì chỉ có ở tóm tắt WebSearch, chưa đọc thấy trên trang đã mở. Cần crawl4ai hoặc mở lại bằng công cụ khác để xác nhận trước khi bổ sung chi tiết."
+    },
+    {
+      "id": "chien-thang-ong-hao-phong-dien",
+      "ten": "Chiến thắng Ông Hào",
+      "lon": 105.67,
+      "lat": 9.95,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "Di tích cấp thành phố — QĐ 2569/1998, 25/9/1998",
+      "mo_ta": "Địa điểm chiến thắng Ông Hào tại xã Trường Long, huyện Phong Điền, ghi dấu một trận đánh của lực lượng cách mạng Cần Thơ. UBND thành phố Cần Thơ (khi đó là tỉnh Cần Thơ) xếp hạng di tích lịch sử cấp thành phố theo Quyết định 2569/1998 ngày 25/9/1998.",
+      "dia_diem": "Xã Trường Long, huyện Phong Điền, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 2569/1998 ngày 25/9/1998",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "can-cu-bch-tong-tan-cong-mau-than-1968-binh-thuy",
+      "ten": "Căn cứ Ban chỉ huy Tổng tấn công Xuân Mậu Thân 1968",
+      "lon": 105.72,
+      "lat": 10.05,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "1968 — Di tích cấp thành phố, QĐ 3447/QĐ, 15/11/2004",
+      "mo_ta": "Nơi đặt Ban chỉ huy tổ chức cuộc Tổng tấn công và nổi dậy Xuân Mậu Thân 1968 tại phường Long Tuyền, quận Bình Thuỷ. UBND thành phố Cần Thơ xếp hạng di tích lịch sử cấp thành phố theo Quyết định 3447/QĐ ngày 15/11/2004.",
+      "dia_diem": "Phường Long Tuyền, quận Bình Thuỷ, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 3447/QĐ ngày 15/11/2004",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "dia-diem-chien-thang-tran-le-binh",
+      "ten": "Địa điểm chiến thắng trận Lê Bình",
+      "lon": 105.75,
+      "lat": 9.97,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "Di tích cấp thành phố — QĐ 1431/QĐ, 06/6/2006",
+      "mo_ta": "Địa điểm chiến thắng trận Lê Bình tại phường Lê Bình, quận Cái Răng. UBND thành phố Cần Thơ xếp hạng di tích lịch sử cấp thành phố theo Quyết định 1431/QĐ ngày 6/6/2006.",
+      "dia_diem": "Phường Lê Bình, quận Cái Răng, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 1431/QĐ ngày 6/6/2006",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "dia-diem-chien-thang-ong-dua-1960",
+      "ten": "Địa điểm chiến thắng Ông Đưa 1960",
+      "lon": 105.55,
+      "lat": 10.08,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "1960 — Di tích cấp thành phố, QĐ 1248/QĐ, 18/5/2011",
+      "mo_ta": "Địa điểm chiến thắng Ông Đưa năm 1960 tại huyện Thới Lai. UBND thành phố Cần Thơ xếp hạng di tích lịch sử cấp thành phố theo Quyết định 1248/QĐ ngày 18/5/2011.",
+      "dia_diem": "Huyện Thới Lai, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 1248/QĐ ngày 18/5/2011",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "dia-diem-thanh-lap-chi-bo-an-hoa-can-tho",
+      "ten": "Địa điểm thành lập Chi bộ An Hoà",
+      "lon": 105.79,
+      "lat": 10.03,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "Di tích cấp thành phố — QĐ 76/QĐ, 09/1/2013",
+      "mo_ta": "Nơi thành lập Chi bộ An Hoà tại phường An Hoà, quận Ninh Kiều — một trong những chi bộ Đảng sớm ở nội ô Cần Thơ. UBND thành phố Cần Thơ xếp hạng di tích lịch sử cấp thành phố theo Quyết định 76/QĐ ngày 9/1/2013.",
+      "dia_diem": "Phường An Hoà, quận Ninh Kiều, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 76/QĐ ngày 9/1/2013",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "dia-diem-chien-thang-td-tay-do-rach-ong-cuu-1968",
+      "ten": "Địa điểm chiến thắng Tiểu đoàn Tây Đô — Rạch Ông Cựu 1968",
+      "lon": 105.77,
+      "lat": 9.96,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "1968 — Di tích cấp thành phố, QĐ 3824/QĐ, 02/12/2013",
+      "mo_ta": "Địa điểm chiến thắng của Tiểu đoàn Tây Đô tại Rạch Ông Cựu năm 1968, phường Thường Thạnh, quận Cái Răng. UBND thành phố Cần Thơ xếp hạng di tích lịch sử cấp thành phố theo Quyết định 3824/QĐ ngày 2/12/2013.",
+      "dia_diem": "Phường Thường Thạnh, quận Cái Răng, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 3824/QĐ ngày 2/12/2013",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "can-cu-huyen-uy-o-mon-1971-1975",
+      "ten": "Địa điểm căn cứ Huyện uỷ Ô Môn (1971–1975)",
+      "lon": 105.55,
+      "lat": 10.09,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "1971–1975 — Di tích cấp thành phố, QĐ 2393/QĐ, 21/9/2018",
+      "mo_ta": "Căn cứ Huyện uỷ Ô Môn giai đoạn 1971–1975, thuộc địa bàn huyện Thới Lai ngày nay. UBND thành phố Cần Thơ xếp hạng di tích lịch sử cấp thành phố theo Quyết định 2393/QĐ ngày 21/9/2018.",
+      "dia_diem": "Huyện Thới Lai, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 2393/QĐ ngày 21/9/2018",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "dia-diem-tham-sat-cau-niem-1966",
+      "ten": "Địa điểm thảm sát Cầu Nhiếm 1966",
+      "lon": 105.66,
+      "lat": 9.94,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "1966 — Di tích cấp thành phố, QĐ 2374/QĐ, 04/10/2019",
+      "mo_ta": "Địa điểm xảy ra vụ thảm sát Cầu Nhiếm năm 1966 tại huyện Phong Điền. UBND thành phố Cần Thơ xếp hạng di tích lịch sử cấp thành phố theo Quyết định 2374/QĐ ngày 4/10/2019.",
+      "dia_diem": "Huyện Phong Điền, thành phố Cần Thơ",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp thành phố — QĐ 2374/QĐ ngày 4/10/2019",
+      "ghi_chu_bien_tap": "Chưa tra được diễn biến chi tiết vụ thảm sát qua nguồn đã fetch (chỉ có tên trong bảng danh mục).",
+      "nguon": [
+        "Trung tâm Phát triển Du lịch TP Cần Thơ (Sở VHTTDL Cần Thơ) — Danh mục di tích lịch sử — văn hoá quốc gia và cấp thành phố — https://canthotourism.vn/vi/detailnews/?t=danh-muc-di-tich-lich-su-van-hoa-quoc-gia-va-cap-thanh-pho&id=slogan_19"
+      ]
+    },
+    {
+      "id": "dia-diem-hy-sinh-8-nu-tnxp-c892",
+      "ten": "Địa điểm hy sinh của 8 nữ thanh niên xung phong C892",
+      "lon": 105.97,
+      "lat": 17.85,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "19/8/1972 — Di tích cấp tỉnh, 23/5/2024",
+      "mo_ta": "Nơi máy bay B-52 rải thảm bom ngày 19/8/1972 làm 8 nữ thanh niên xung phong quê Thái Bình thuộc đại đội C892 hy sinh, tại xã Hoá Hợp, huyện Minh Hoá. Bia tưởng niệm rộng 625m² được dựng tại đây ngày 16/8/2009. UBND tỉnh Quảng Bình xếp hạng di tích lịch sử cấp tỉnh ngày 23/5/2024, nghiêm cấm xây dựng, khai thác trong vùng khoanh vùng bảo vệ.",
+      "dia_diem": "Xã Hoá Hợp, huyện Minh Hoá (cũ), tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — QĐ 1376/QĐ-UBND hoặc 1377/QĐ-UBND ngày 23/5/2024 (UBND tỉnh Quảng Bình cũ, một trong hai quyết định ký cùng ngày; chưa xác định được quyết định nào ứng với di tích nào qua nguồn đã fetch)",
+      "nguon": [
+        "Thương hiệu Công luận — Quảng Bình xếp hạng 2 di tích lịch sử cấp tỉnh — https://thuonghieucongluan.com.vn/quang-binh-xep-hang-2-di-tich-lich-su-cap-tinh-a223009.html"
+      ]
+    },
+    {
+      "id": "can-cu-chien-dau-rao-tru",
+      "ten": "Căn cứ chiến đấu Rào Trù",
+      "lon": 106.55,
+      "lat": 17.35,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "Từ đầu 1947 — Di tích cấp tỉnh, 23/5/2024",
+      "mo_ta": "Căn cứ kháng chiến tại xã Trường Xuân, huyện Quảng Ninh, hình thành từ đầu năm 1947. Trong đợt Pháp càn quét tháng 7/1947, căn cứ chịu tổn thất 24 người hy sinh ngày 15/7 và 25 người ngày 24/7, đổi lại lực lượng ta cũng gây thiệt hại 14 lính Pháp tử trận. UBND tỉnh Quảng Bình xếp hạng di tích lịch sử cấp tỉnh ngày 23/5/2024.",
+      "dia_diem": "Xã Trường Xuân, huyện Quảng Ninh (cũ), tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — QĐ 1376/QĐ-UBND hoặc 1377/QĐ-UBND ngày 23/5/2024 (UBND tỉnh Quảng Bình cũ)",
+      "ghi_chu_bien_tap": "Huyện Quảng Ninh đây là đơn vị hành chính cũ của tỉnh Quảng Bình, không phải tỉnh Quảng Ninh — dễ nhầm lẫn, cần giữ nguyên như nguồn.",
+      "nguon": [
+        "Thương hiệu Công luận — Quảng Bình xếp hạng 2 di tích lịch sử cấp tỉnh — https://thuonghieucongluan.com.vn/quang-binh-xep-hang-2-di-tich-lich-su-cap-tinh-a223009.html"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-kho-quan-duoc-lien-khu-viet-bac",
+      "ten": "Nơi thành lập Kho Quân dược Liên khu Việt Bắc",
+      "lon": 105.75,
+      "lat": 21.75,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "Kháng chiến chống Pháp — Di tích cấp tỉnh, đầu 2025",
+      "mo_ta": "Địa điểm thành lập Kho Quân dược Liên khu Việt Bắc tại xã Yên Ninh, huyện Phú Lương — cơ sở hậu cần y tế phục vụ kháng chiến chống Pháp trên địa bàn Liên khu Việt Bắc. UBND tỉnh Thái Nguyên xếp hạng di tích lịch sử cấp tỉnh trong đợt công nhận đầu năm 2025.",
+      "dia_diem": "Xã Yên Ninh, huyện Phú Lương (cũ), tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — công nhận đầu 2025, số quyết định chưa xác minh được qua nguồn đã fetch",
+      "nguon": [
+        "Báo Thái Nguyên điện tử — Thái Nguyên: Thêm 6 di tích được xếp hạng cấp tỉnh — https://baothainguyen.vn/van-hoa/202502/thai-nguyen-them-6-di-tich-duoc-xep-hang-cap-tinh-6d714d3/"
+      ]
+    },
+    {
+      "id": "noi-thanh-lap-benh-vien-tw-yen-trach",
+      "ten": "Nơi thành lập Bệnh viện Trung ương Yên Trạch",
+      "lon": 105.7,
+      "lat": 21.78,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "Kháng chiến chống Pháp — Di tích cấp tỉnh, đầu 2025",
+      "mo_ta": "Địa điểm thành lập Bệnh viện Trung ương Yên Trạch tại xã Yên Trạch, huyện Phú Lương — cơ sở quân y phục vụ các cơ quan Trung ương đóng tại An toàn khu Việt Bắc thời kháng chiến chống Pháp. UBND tỉnh Thái Nguyên xếp hạng di tích lịch sử cấp tỉnh trong đợt công nhận đầu năm 2025.",
+      "dia_diem": "Xã Yên Trạch, huyện Phú Lương (cũ), tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — công nhận đầu 2025, số quyết định chưa xác minh được qua nguồn đã fetch",
+      "nguon": [
+        "Báo Thái Nguyên điện tử — Thái Nguyên: Thêm 6 di tích được xếp hạng cấp tỉnh — https://baothainguyen.vn/van-hoa/202502/thai-nguyen-them-6-di-tich-duoc-xep-hang-cap-tinh-6d714d3/"
+      ]
+    },
+    {
+      "id": "diem-di-tich-na-pau-atk-cho-don",
+      "ten": "Nà Pậu",
+      "lon": 105.5746862,
+      "lat": 22.1875681,
+      "loai": "luu-niem-cach-mang",
+      "nam_hien_thi": "Cuối 1950 — đầu 1951",
+      "mo_ta": "Nà Pậu, xã Lương Bằng, huyện Chợ Đồn, là nơi Chủ tịch Hồ Chí Minh ở và làm việc cuối năm 1950 đến đầu năm 1951 trong thời gian Người chỉ đạo kháng chiến từ An toàn khu Việt Bắc. Điểm di tích nằm trong quần thể An toàn khu (ATK) Chợ Đồn, đã được xếp hạng Di tích quốc gia đặc biệt năm 2016.",
+      "dia_diem": "Xã Lương Bằng, huyện Chợ Đồn (Bắc Kạn cũ), tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "ghi_chu_bien_tap": "Đây là một điểm cụ thể bên trong quần thể ATK Chợ Đồn (đã có mục riêng ghi nhận cấp Di tích quốc gia đặc biệt ở sổ đăng ký khác) — toạ độ tạm dùng chung điểm đại diện trung tâm huyện Chợ Đồn do chưa định vị riêng được toạ độ Nà Pậu.",
+      "nguon": [
+        "Đặc san 'Về địa chỉ đỏ An toàn khu Chợ Đồn' — Báo Nhân Dân điện tử — https://special.nhandan.vn/ve-dia-chi-do-An-toan-khu-Cho-Don/index.html"
+      ]
+    },
+    {
+      "id": "diem-di-tich-khuoi-linh-atk-cho-don",
+      "ten": "Khuổi Linh",
+      "lon": 105.5746862,
+      "lat": 22.1875681,
+      "loai": "luu-niem-cach-mang",
+      "nam_hien_thi": "1950–1951",
+      "mo_ta": "Khuổi Linh, xã Nghĩa Tá, huyện Chợ Đồn, là nơi Tổng Bí thư Trường Chinh cùng Văn phòng Trung ương Đảng đóng và làm việc giai đoạn 1950–1951 trong kháng chiến chống Pháp. Điểm di tích thuộc quần thể An toàn khu (ATK) Chợ Đồn, xếp hạng Di tích quốc gia đặc biệt năm 2016.",
+      "dia_diem": "Xã Nghĩa Tá, huyện Chợ Đồn (Bắc Kạn cũ), tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "ghi_chu_bien_tap": "Điểm cụ thể bên trong quần thể ATK Chợ Đồn — toạ độ tạm dùng điểm đại diện trung tâm huyện Chợ Đồn do chưa định vị riêng được toạ độ Khuổi Linh.",
+      "nguon": [
+        "Đặc san 'Về địa chỉ đỏ An toàn khu Chợ Đồn' — Báo Nhân Dân điện tử — https://special.nhandan.vn/ve-dia-chi-do-An-toan-khu-Cho-Don/index.html"
+      ]
+    },
+    {
+      "id": "diem-di-tich-phja-tac-atk-cho-don",
+      "ten": "Phja Tắc",
+      "lon": 105.5746862,
+      "lat": 22.1875681,
+      "loai": "luu-niem-cach-mang",
+      "nam_hien_thi": "1947–1951",
+      "mo_ta": "Phja Tắc, xã Bản Thi, huyện Chợ Đồn, là nơi đặt xưởng đúc tiền của Bộ Tài chính chính phủ kháng chiến giai đoạn 1947–1951 — cơ sở hậu cần tài chính phục vụ kháng chiến chống Pháp. Điểm di tích thuộc quần thể An toàn khu (ATK) Chợ Đồn, xếp hạng Di tích quốc gia đặc biệt năm 2016.",
+      "dia_diem": "Xã Bản Thi, huyện Chợ Đồn (Bắc Kạn cũ), tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "ghi_chu_bien_tap": "Điểm cụ thể bên trong quần thể ATK Chợ Đồn — toạ độ tạm dùng điểm đại diện trung tâm huyện Chợ Đồn do chưa định vị riêng được toạ độ Phja Tắc.",
+      "nguon": [
+        "Đặc san 'Về địa chỉ đỏ An toàn khu Chợ Đồn' — Báo Nhân Dân điện tử — https://special.nhandan.vn/ve-dia-chi-do-An-toan-khu-Cho-Don/index.html"
+      ]
+    },
+    {
+      "id": "dia-diem-chien-thang-dac-khu-khai-quang",
+      "ten": "Địa điểm chiến thắng Đặc khu Khai Quang",
+      "lon": 104.95,
+      "lat": 9.35,
+      "loai": "di-tich-cach-mang",
+      "nam_hien_thi": "2/11/1964 — Di tích cấp tỉnh",
+      "mo_ta": "Khu dồn Khai Quang được Mỹ - Diệm xây dựng cuối 1957 đầu 1958 làm mô hình quản lý kiểu mẫu ở vùng U Minh, đến tháng 3/1962 nâng cấp thành đặc khu. Ngày 2/11/1964, Tiểu đoàn U Minh phối hợp lực lượng huyện Trần Văn Thời và du kích các xã Khánh An, Nguyễn Phích, Khánh Lâm vây đánh liên tục, san bằng đặc khu Khai Quang; đài tưởng niệm tại xã Nguyễn Phích ghi danh 86 liệt sĩ hy sinh trong trận đánh. Chiến thắng góp phần làm phá sản kế hoạch bình định của Mỹ - Diệm tại vùng U Minh hạ. UBND tỉnh Cà Mau xếp hạng di tích lịch sử cấp tỉnh.",
+      "dia_diem": "Ấp 7, xã Nguyễn Phích, huyện U Minh (cũ), tỉnh Cà Mau",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — số quyết định và ngày công nhận chưa xác minh được qua nguồn đã fetch",
+      "nguon": [
+        "Báo Cà Mau — Địa điểm chiến thắng Đặc khu Khai Quang được xếp hạng di tích lịch sử cấp tỉnh — https://www.camau.gov.vn/wps/portal/?page=trangchitiet&urile=wcm:path:/camaulibrary/camauofsite/trangchu/tintucsukien/vanhoaxahoi/fdbere"
+      ]
+    },
+    {
+      "id": "can-cu-tinh-uy-xeo-duoc",
+      "ten": "Căn cứ Tỉnh uỷ Xẻo Đước",
+      "lon": 105.05,
+      "lat": 9.15,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "Từ 1960 — Di tích cấp tỉnh, công nhận 11/6/2007",
+      "mo_ta": "Khu căn cứ nằm bên đầm Thị Tường, ấp Xẻo Đước, xã Phú Mỹ, huyện Phú Tân. Từ năm 1960, trước yêu cầu của cuộc kháng chiến trường kỳ, Tỉnh uỷ Cà Mau chọn Xẻo Đước làm trung tâm căn cứ, lãnh đạo phong trào cách mạng địa phương suốt hai cuộc kháng chiến chống Pháp và chống Mỹ. UBND tỉnh Cà Mau công nhận di tích lịch sử cấp tỉnh ngày 11/6/2007.",
+      "dia_diem": "Ấp Xẻo Đước, xã Phú Mỹ, huyện Phú Tân (cũ), tỉnh Cà Mau",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — công nhận 11/6/2007, số quyết định chưa xác minh được qua nguồn đã fetch",
+      "nguon": [
+        "Cổng TTĐT tỉnh Cà Mau — Khu căn cứ Tỉnh uỷ tại Xẻo Đước — https://www.camau.gov.vn/diem-den/khu-can-cu-tinh-uy-tai-xeo-duoc-254289"
+      ]
+    },
+    {
+      "id": "rung-tram-ba-vu",
+      "ten": "Rừng Tràm Bà Vụ",
+      "lon": 106.45,
+      "lat": 10.65,
+      "loai": "can-cu-khang-chien",
+      "nam_hien_thi": "Di tích cấp tỉnh, công nhận 27/1/1994",
+      "mo_ta": "Rừng tràm tại ấp 1, xã Tân Hoà, thuộc vùng căn cứ Vườn Thơm — Bà Vụ, một trong những bàn đạp của lực lượng cách mạng tiến vào nội đô Sài Gòn trong cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân 1968. Khu di tích rộng khoảng 10.893m², được UBND tỉnh Long An công nhận di tích lịch sử cấp tỉnh ngày 27/1/1994.",
+      "dia_diem": "Ấp 1, xã Tân Hoà, tỉnh Tây Ninh (huyện Đức Hoà, Long An cũ)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "xep_hang": "Di tích lịch sử cấp tỉnh — công nhận 27/1/1994 (UBND tỉnh Long An cũ), số quyết định chưa xác minh được qua nguồn đã fetch",
+      "nguon": [
+        "Đảng bộ tỉnh Long An (Cổng TTĐT) — Di tích lịch sử Rừng Tràm Bà Vụ — https://longan.dcs.vn/wps/portal/chitiet/trangchitiet/"
+      ]
     }
   ]
 }

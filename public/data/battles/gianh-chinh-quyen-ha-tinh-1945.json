@@ -1,0 +1,82 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa giành chính quyền Hà Tĩnh 16-21/8/1945 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "gianh-chinh-quyen-ha-tinh-1945",
+  "ten": "Giành chính quyền ở Hà Tĩnh (16–21/8/1945)",
+  "nam": 1945,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Việt Minh liên tỉnh Nghệ Tĩnh; Ủy ban khởi nghĩa tỉnh Hà Tĩnh",
+  "doi_thu": "Chính quyền tay sai Nhật",
+  "dia_diem": "Thị xã Hà Tĩnh và các huyện Can Lộc, Thạch Hà, Cẩm Xuyên, Kỳ Anh, Đức Thọ, Hương Sơn, Nghi Xuân, Hương Khê — nay tỉnh Hà Tĩnh",
+  "lien_quan_tinh": ["ha-tinh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "nui", "diem": [[100, 700], [300, 600], [500, 750]], "nhan": "Vùng núi phía tây (Hương Khê, Hương Sơn)" },
+    { "kieu": "bien", "diem": [[900, 50], [950, 500], [900, 950]], "nhan": "Biển Đông (Nghi Xuân, Kỳ Anh)" }
+  ],
+  "phan_tu": [
+    { "id": "hoi-nghi-8-8", "kieu": "cong-su", "ben": "ta", "x": 200, "y": 150, "nhan": "Đại hội Việt Minh liên tỉnh chia 6 phân khu (8/8)" },
+    { "id": "hoi-nghi-13-8", "kieu": "cong-su", "ben": "ta", "x": 300, "y": 250, "nhan": "Hội nghị phân khu Nam Hà thành lập ủy ban khởi nghĩa (13/8)" },
+    { "id": "lenh-khoi-nghia-15-8", "kieu": "co", "ben": "ta", "x": 350, "y": 300, "nhan": "Lệnh khởi nghĩa (15/8)" },
+    { "id": "can-loc-16-8", "kieu": "co", "ben": "ta", "x": 400, "y": 500, "nhan": "Can Lộc khởi nghĩa thắng lợi (16/8, mở đầu)" },
+    { "id": "thach-ha-cam-xuyen-17-8", "kieu": "co", "ben": "ta", "x": 450, "y": 550, "nhan": "Thạch Hà, Cẩm Xuyên giành chính quyền (17/8)" },
+    { "id": "tinh-ly-ky-anh-duc-tho-18-8", "kieu": "co", "ben": "ta", "x": 500, "y": 600, "nhan": "Tỉnh lỵ Hà Tĩnh, Kỳ Anh, Đức Thọ (18/8)" },
+    { "id": "huong-son-nghi-xuan-19-8", "kieu": "co", "ben": "ta", "x": 600, "y": 500, "nhan": "Hương Sơn, Nghi Xuân (19/8)" },
+    { "id": "huong-khe-21-8", "kieu": "co", "ben": "ta", "x": 250, "y": 700, "nhan": "Hương Khê — huyện cuối cùng (21/8)" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Chia phân khu, chuẩn bị khởi nghĩa",
+      "mo_ta": "Ngày 8/8/1945, đại hội đại biểu Việt Minh liên tỉnh Nghệ Tĩnh chia hai tỉnh thành 6 phân khu để chuẩn bị tổng khởi nghĩa.",
+      "hien": ["hoi-nghi-8-8"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Thành lập ủy ban khởi nghĩa tỉnh",
+      "mo_ta": "Ngày 13/8/1945, cán bộ Việt Minh các huyện phân khu Nam Hà (Can Lộc, Thạch Hà, Cẩm Xuyên, Kỳ Anh, thị xã Hà Tĩnh) họp, thành lập ủy ban khởi nghĩa tỉnh.",
+      "hien": ["hoi-nghi-13-8"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Ban hành lệnh khởi nghĩa",
+      "mo_ta": "Ngày 15/8/1945, ủy ban khởi nghĩa liên tỉnh Nghệ Tĩnh chính thức ban hành lệnh tổng khởi nghĩa.",
+      "hien": ["lenh-khoi-nghia-15-8"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Can Lộc khởi nghĩa, mở đầu",
+      "mo_ta": "Ngày 16/8/1945, Can Lộc là huyện đầu tiên của Hà Tĩnh giành chính quyền thắng lợi.",
+      "hien": ["can-loc-16-8"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Lan rộng ra Thạch Hà, Cẩm Xuyên",
+      "mo_ta": "Ngày 17/8/1945, Thạch Hà và Cẩm Xuyên tiếp tục giành chính quyền.",
+      "hien": ["thach-ha-cam-xuyen-17-8"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tỉnh lỵ Hà Tĩnh giành chính quyền",
+      "mo_ta": "Ngày 18/8/1945, tỉnh lỵ Hà Tĩnh cùng các huyện Kỳ Anh, Đức Thọ giành chính quyền, cùng ngày với Bắc Giang, Hải Dương, Quảng Nam.",
+      "hien": ["tinh-ly-ky-anh-duc-tho-18-8"]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Hương Sơn, Nghi Xuân nổi dậy",
+      "mo_ta": "Ngày 19/8/1945, hai huyện Hương Sơn và Nghi Xuân tiếp tục khởi nghĩa thắng lợi.",
+      "hien": ["huong-son-nghi-xuan-19-8"]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Hương Khê — huyện cuối cùng",
+      "mo_ta": "Ngày 21/8/1945, Hương Khê là huyện cuối cùng của Hà Tĩnh giành chính quyền, hoàn tất tổng khởi nghĩa toàn tỉnh chỉ sau 5 ngày.",
+      "hien": ["huong-khe-21-8"]
+    }
+  ],
+  "ket_qua": "Chỉ trong 5 ngày (16–21/8/1945), toàn bộ các huyện và tỉnh lỵ Hà Tĩnh giành được chính quyền về tay Nhân dân; Hà Tĩnh là một trong 4 tỉnh giành chính quyền sớm nhất cả nước.",
+  "y_nghia": "Tốc độ và tính đồng loạt của cuộc khởi nghĩa ở Hà Tĩnh cho thấy sự chuẩn bị lực lượng Việt Minh từ trước, góp phần vào thắng lợi chung của Cách mạng Tháng Tám 1945.",
+  "trang_thai": "draft",
+  "nguon": [
+    "dhtn.hatinh.gov.vn (Cổng TTĐT tỉnh Hà Tĩnh) — Cách mạng Tháng Tám năm 1945, sự kiện vĩ đại trong lịch sử dân tộc Việt Nam"
+  ]
+}

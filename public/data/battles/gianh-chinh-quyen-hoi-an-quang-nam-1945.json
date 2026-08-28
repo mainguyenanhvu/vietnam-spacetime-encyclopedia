@@ -1,0 +1,93 @@
+{
+  "ghi_chu": "Sa đồ khởi nghĩa giành chính quyền Hội An - Quảng Nam 18/8/1945 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "gianh-chinh-quyen-hoi-an-quang-nam-1945",
+  "ten": "Giành chính quyền ở Hội An – Quảng Nam (18/8/1945)",
+  "nam": 1945,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Nguyễn Ưng (Trưởng ban khởi nghĩa); Hoàng Kim Ảnh; Võ Toàn; Phan Thị Nễ",
+  "doi_thu": "Tỉnh trưởng Tôn Thất Gián; lực lượng phản đế Hoàng Phê",
+  "dia_diem": "Tòa sứ (dinh tỉnh trưởng) và đồn lính Khố xanh, Hội An — nay thuộc thành phố Đà Nẵng",
+  "lien_quan_tinh": ["da-nang"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "song", "diem": [[100, 600], [500, 620], [900, 600]], "nhan": "Sông Hoài — Chùa Cầu" }
+  ],
+  "phan_tu": [
+    { "id": "hop-uy-ban-khoi-nghia", "kieu": "cong-su", "ben": "ta", "x": 150, "y": 150, "nhan": "Ủy ban khởi nghĩa họp tại nhà Hoàng Kim Ảnh (17/8)" },
+    { "id": "tin-doi-thu-tranh-gianh", "kieu": "quan", "ben": "dich", "x": 600, "y": 200, "nhan": "Lực lượng phản đế Hoàng Phê mít tinh tại rạp Phan Hương, có tỉnh trưởng Tôn Thất Gián" },
+    { "id": "thu-buoc-trao-quyen", "kieu": "mui-ten", "ben": "ta", "tu": [150, 150], "den": [600, 200], "nhan": "Thư buộc Tôn Thất Gián trao quyền" },
+    { "id": "xin-y-kien-tinh-uy", "kieu": "mui-ten", "ben": "ta", "tu": [150, 150], "den": [50, 350], "nhan": "Nguyễn Ưng lên Bích Trâm xin ý kiến Tỉnh ủy" },
+    { "id": "gian-am-muu-hoan-binh", "kieu": "quan", "ben": "dich", "x": 650, "y": 300, "nhan": "Tôn Thất Gián khoá súng vào kho, mưu hoãn binh" },
+    { "id": "doan-nguoi-xuat-phat-chua-cau", "kieu": "quan", "ben": "ta", "x": 300, "y": 500, "nhan": "Đoàn khởi nghĩa đổ xuống Chùa Cầu (3 giờ sáng 18/8)" },
+    { "id": "don-linh-kho-xanh", "kieu": "thanh", "ben": "dich", "x": 650, "y": 550, "nhan": "Đồn lính Khố xanh" },
+    { "id": "mui-tan-cong-don", "kieu": "mui-ten", "ben": "ta", "tu": [300, 500], "den": [650, 550], "nhan": "Tiến đánh đồn lính Khố xanh" },
+    { "id": "chiem-cong-so", "kieu": "mui-ten", "ben": "ta", "tu": [650, 550], "den": [750, 650], "nhan": "Chiếm Kho bạc, nhà lao, Sở mật thám, Nhà đèn, Sở cò" },
+    { "id": "toa-su", "kieu": "cong-su", "ben": "dich", "x": 800, "y": 400, "nhan": "Tòa sứ — dinh tỉnh trưởng" },
+    { "id": "gian-trao-chinh-quyen", "kieu": "co", "ben": "ta", "x": 800, "y": 420, "nhan": "Tôn Thất Gián trao chính quyền" },
+    { "id": "mit-tinh-toa-su", "kieu": "co", "ben": "ta", "x": 800, "y": 440, "nhan": "Mít tinh tại Tòa sứ, công bố chương trình 10 điểm" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Ủy ban khởi nghĩa họp khẩn (17/8)",
+      "mo_ta": "Tối 17/8/1945, Ủy ban khởi nghĩa Hội An họp tại nhà Hoàng Kim Ảnh, nhận tin lực lượng phản đế Hoàng Phê đang mít tinh tại rạp Phan Hương với sự tham dự của tỉnh trưởng Tôn Thất Gián, có ý định giành chính quyền trước Việt Minh.",
+      "hien": ["hop-uy-ban-khoi-nghia", "tin-doi-thu-tranh-gianh"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Gửi thư buộc trao quyền, xin ý kiến Tỉnh ủy",
+      "mo_ta": "Ủy ban khởi nghĩa đổi thành Ủy ban bạo động, một mặt gửi thư buộc Tôn Thất Gián trao quyền cho Việt Minh, một mặt cử Nguyễn Ưng lên Bích Trâm (Điện Bàn) xin ý kiến Tỉnh ủy cho Hội An khởi nghĩa trước.",
+      "hien": ["thu-buoc-trao-quyen", "xin-y-kien-tinh-uy"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tỉnh trưởng mưu hoãn binh",
+      "mo_ta": "Tôn Thất Gián ra lệnh cho lính mang hết súng vào kho khoá kỹ, tháo lưỡi lê của lính gác, tìm cách kéo dài thời gian chờ đối phó.",
+      "hien": ["gian-am-muu-hoan-binh"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Xuất phát trong đêm, đổ xuống Chùa Cầu",
+      "mo_ta": "3 giờ sáng 18/8/1945, đoàn khởi nghĩa được phiên chế thành đại đội, trung đội, tiểu đội với lực lượng tự vệ làm nòng cốt, lặng lẽ đổ xuống Chùa Cầu giữa tiếng trống, tiếng mõ.",
+      "hien": ["doan-nguoi-xuat-phat-chua-cau"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Đánh chiếm đồn lính Khố xanh",
+      "mo_ta": "Đoàn người tiến qua đường bờ sông, nhà dây thép, phá cổng, tràn vào đồn lính Khố xanh, thu được 125 khẩu súng.",
+      "hien": ["mui-tan-cong-don", "don-linh-kho-xanh"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Chiếm các công sở còn lại",
+      "mo_ta": "Lực lượng khởi nghĩa chia nhau chiếm nhà lao (giải phóng tù nhân), Kho bạc, nhà dây thép, Sở mật thám, Nhà đèn, Sở cò.",
+      "hien": ["chiem-cong-so"]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Tòa sứ trao chính quyền, mít tinh công bố",
+      "mo_ta": "Trước sức mạnh của lực lượng khởi nghĩa bao vây, Tôn Thất Gián trao lại chính quyền; một cuộc mít tinh với hàng vạn người được tổ chức ngay tại Tòa sứ, Nguyễn Ưng tuyên bố lật đổ chính quyền tay sai Pháp – Nhật và đọc chương trình 10 điểm của Việt Minh.",
+      "hien": ["toa-su", "gian-trao-chinh-quyen", "mit-tinh-toa-su"]
+    }
+  ],
+  "ket_qua": "Chính quyền tay sai ở Hội An — tỉnh lỵ Quảng Nam — sụp đổ ngay trong đêm 17 rạng 18/8/1945; Quảng Nam trở thành một trong 4 tỉnh giành chính quyền sớm nhất cả nước.",
+  "y_nghia": "Cuộc khởi nghĩa Hội An là ví dụ điển hình về việc chớp thời cơ: chỉ trong một đêm chuẩn bị, lực lượng cách mạng đã vượt qua âm mưu tranh giành quyền lực của phe phản đế thân Nhật để giành chính quyền về tay nhân dân.",
+  "trang_thai": "draft",
+  "nguon": [
+    "hoianheritage.net (Trung tâm Bảo tồn Di sản Văn hóa Thế giới Hội An) — 80 năm giành chính quyền ở Hội An qua tư liệu hồi cố của những người trong cuộc"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Hồi cố của đồng chí Nguyễn Ưng — Trưởng Ban khởi nghĩa Hội An",
+      "doan": "3 giờ sáng 18/8/1945 đoàn người được phiên chế thành đội ngũ từ đại đội, trung đội, tiểu đội do lực lượng tự vệ làm nòng cốt, lặng lẽ đổ xuống Chùa Cầu. Đến Chùa Cầu tức thì tiếng trống, tiếng mõ nổi lên inh ỏi.",
+      "nguon_trich": "Trung tâm Bảo tồn Di sản Văn hóa Thế giới Hội An — https://hoianheritage.net/vi/trao-doi-chuyen-nganh/chuyen-de-nghien-cuu-trao-doi/80-nam-gianh-chinh-quyen-o-hoi-an-qua-tu-lieu-hoi-co-cua-nhung-nguoi-trong-cuoc-1308.html",
+      "buoc": 4
+    },
+    {
+      "sach": "Hồi ký của đồng chí Hoàng Kim Ảnh — Ủy viên Ban khởi nghĩa Hội An",
+      "doan": "Theo báo cáo của cơ sở, số lính địch trong đồn có hơn 100 người và số súng khoảng hơn 110 cây. Nhưng trước đó mấy hôm, có đồn lính ở An Điềm (Đại Lộc) rút về, nên có tăng lên về số lượng người và súng khoảng 120 cây.",
+      "nguon_trich": "Trung tâm Bảo tồn Di sản Văn hóa Thế giới Hội An — https://hoianheritage.net/vi/trao-doi-chuyen-nganh/chuyen-de-nghien-cuu-trao-doi/80-nam-gianh-chinh-quyen-o-hoi-an-qua-tu-lieu-hoi-co-cua-nhung-nguoi-trong-cuoc-1308.html",
+      "buoc": 5
+    }
+  ]
+}

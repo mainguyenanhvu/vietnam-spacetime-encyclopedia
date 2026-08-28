@@ -1,0 +1,64 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch chúa Nguyễn Phúc Tần đánh Chân Lạp tại Mô Xoài 1658 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chua-nguyen-danh-chan-lap-mo-xoai-1658",
+  "ten": "Chúa Nguyễn Phúc Tần đánh Chân Lạp, bắt Nặc Ông Chân tại Mô Xoài (1658)",
+  "nam": 1658,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chúa Nguyễn Phúc Tần (chúa Hiền)",
+  "doi_thu": "Chân Lạp (vua Nặc Ông Chân)",
+  "dia_diem": "Thành Mô Xoài — nay thuộc Thành phố Hồ Chí Minh (Bà Rịa cũ)",
+  "lien_quan_tinh": ["thanh-pho-ho-chi-minh"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "song", "diem": [[300, 350], [500, 400], [700, 450]], "nhan": "Sông vùng Mô Xoài" },
+    { "kieu": "rung", "diem": [[600, 300], [750, 350], [700, 500]], "nhan": "Rừng biên giới Việt – Chân Lạp" }
+  ],
+  "phan_tu": [
+    { "id": "cu-dan-viet-mo-xoai", "kieu": "cong-su", "ben": "ta", "x": 400, "y": 400, "nhan": "Cư dân Việt khẩn hoang tại Mô Xoài" },
+    { "id": "de-doa-tu-chan-lap", "kieu": "quan", "ben": "dich", "x": 650, "y": 450, "nhan": "Lực lượng Chân Lạp đe doạ cư dân Việt" },
+    { "id": "quan-ta-2000", "kieu": "quan", "ben": "ta", "x": 250, "y": 200, "nhan": "2.000 quân chúa Nguyễn xuất phát" },
+    { "id": "mui-tien-cong-mo-xoai", "kieu": "mui-ten", "ben": "ta", "tu": [250, 200], "den": [650, 450], "nhan": "Tiến đánh thành Mô Xoài" },
+    { "id": "thanh-mo-xoai", "kieu": "cong-su", "ben": "dich", "x": 680, "y": 480, "nhan": "Thành Mô Xoài" },
+    { "id": "nac-ong-chan-bi-bat", "kieu": "quan", "ben": "dich", "x": 700, "y": 500, "nhan": "Vua Nặc Ông Chân bị bắt" },
+    { "id": "chan-lap-trieu-cong", "kieu": "co", "ben": "dich", "x": 750, "y": 620, "nhan": "Chân Lạp xin làm chư hầu, triều cống hàng năm" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Cư dân Việt khẩn hoang, bị đe doạ",
+      "mo_ta": "Từ đầu thế kỷ XVII, cư dân Việt vào khẩn hoang tại xứ Mô Xoài theo thoả thuận giữa hai triều đình; đến năm 1658, một sự cố khiến an toàn của họ bị đe doạ.",
+      "hien": ["cu-dan-viet-mo-xoai", "de-doa-tu-chan-lap"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chúa Hiền cử 2.000 quân",
+      "mo_ta": "Chúa Nguyễn Phúc Tần (chúa Hiền) đưa 2.000 quân vào Mô Xoài để bảo vệ cư dân Việt.",
+      "hien": ["quan-ta-2000"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiến đánh thành Mô Xoài",
+      "mo_ta": "Quân chúa Nguyễn tiến đánh thành Mô Xoài của Chân Lạp.",
+      "hien": ["mui-tien-cong-mo-xoai", "thanh-mo-xoai"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bắt vua Nặc Ông Chân",
+      "mo_ta": "Quân chúa Nguyễn đánh chiếm thành, bắt được vua Chân Lạp là Nặc Ông Chân.",
+      "hien": ["nac-ong-chan-bi-bat"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Chân Lạp xin thần phục",
+      "mo_ta": "Chân Lạp xin được làm chư hầu của chúa Nguyễn và triều cống hàng năm.",
+      "hien": ["chan-lap-trieu-cong"]
+    }
+  ],
+  "ket_qua": "Vua Nặc Ông Chân bị bắt, Chân Lạp phải thần phục và triều cống chúa Nguyễn hàng năm.",
+  "y_nghia": "Lần đầu tiên chúa Nguyễn can thiệp quân sự trực tiếp vào Chân Lạp để bảo vệ cộng đồng người Việt, mở đầu quá trình xác lập ảnh hưởng của Đàng Trong trên vùng đất Nam Bộ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "baotangbrvt.org.vn (Bảo tàng tỉnh Bà Rịa – Vũng Tàu) — Từ xứ Mô Xoài, địa đầu mở cõi đến tỉnh Bà Rịa – Vũng Tàu, quá trình hình thành và phát triển",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

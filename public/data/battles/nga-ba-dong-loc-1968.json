@@ -1,0 +1,146 @@
+{
+  "ghi_chu": "Sa đồ Ngã ba Đồng Lộc 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "nga-ba-dong-loc-1968",
+  "ten": "Ngã ba Đồng Lộc",
+  "nam": 1968,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Tiểu đội trưởng Võ Thị Tần — Tiểu đội 4, Đại đội 552, Tổng đội Thanh niên xung phong 55 Hà Tĩnh",
+  "doi_thu": "Không quân Mỹ",
+  "dia_diem": "Ngã ba Đồng Lộc, xã Đồng Lộc, huyện Can Lộc, tỉnh Hà Tĩnh — giao điểm quốc lộ 15A và tỉnh lộ 2",
+  "lien_quan_tinh": [
+    "ha-tinh"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [50, 500],
+        [500, 480],
+        [950, 460]
+      ],
+      "nhan": "Quốc lộ 15A"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [500, 100],
+        [500, 480],
+        [520, 900]
+      ],
+      "nhan": "Tỉnh lộ 2"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [100, 100],
+        [400, 60],
+        [700, 120]
+      ],
+      "nhan": "Đồi núi bao quanh Đồng Lộc"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "giao-diem-ql15a-tl2",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 480,
+      "nhan": "Ngã ba Đồng Lộc — huyết mạch độc đạo"
+    },
+    {
+      "id": "may-bay-my-oanh-tac",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 200,
+      "nhan": "Không quân Mỹ oanh tạc liên tục"
+    },
+    {
+      "id": "ho-bom",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 550,
+      "y": 400,
+      "nhan": "Hố bom trên mặt đường"
+    },
+    {
+      "id": "tieu-doi-4-c552",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 470,
+      "y": 550,
+      "nhan": "Tiểu đội 4, Đại đội 552 san lấp hố bom"
+    },
+    {
+      "id": "ham-tru-an",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 430,
+      "y": 600,
+      "nhan": "Hầm trú ẩn của Tiểu đội 4"
+    },
+    {
+      "id": "mui-bom-trung-ham",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [700, 250],
+      "den": [440, 590],
+      "nhan": "Đợt bom thứ 15 trong ngày đánh trúng cửa hầm"
+    },
+    {
+      "id": "doan-xe-cho-thong-duong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 500,
+      "nhan": "Đoàn xe quân sự chờ thông đường"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Yết hầu trên tuyến chi viện",
+      "mo_ta": "Ngã ba Đồng Lộc là giao điểm quốc lộ 15A và tỉnh lộ 2, đoạn đường độc đạo bắt buộc mọi đoàn xe từ Bắc vào tuyến lửa Vĩnh Linh, Quảng Trị phải đi qua.",
+      "hien": ["giao-diem-ql15a-tl2"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hơn 50.000 quả bom trong sáu tháng",
+      "mo_ta": "Từ tháng 4 đến tháng 10/1968, không quân Mỹ trút xuống khu vực Đồng Lộc hơn 50.000 quả bom và tên lửa các loại, biến nơi đây thành trọng điểm đánh phá ác liệt.",
+      "hien": ["giao-diem-ql15a-tl2", "may-bay-my-oanh-tac"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tiểu đội 4 ngày đêm san lấp hố bom",
+      "mo_ta": "Tiểu đội 4, Đại đội 552 thuộc Tổng đội Thanh niên xung phong 55 Hà Tĩnh, do Võ Thị Tần làm tiểu đội trưởng, đảm nhận san lấp hố bom, giữ mạch đường thông suốt cho xe qua.",
+      "hien": ["ho-bom", "tieu-doi-4-c552"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Đợt bom thứ 15 trong ngày, chiều 24/7/1968",
+      "mo_ta": "Khoảng 16 giờ ngày 24/7/1968, trong đợt ném bom thứ 15 của không quân Mỹ trong ngày, một quả bom rơi trúng khu vực miệng hầm trú ẩn nơi Tiểu đội 4 đang trú tránh giữa hai đợt bom.",
+      "hien": ["tieu-doi-4-c552", "ham-tru-an", "mui-bom-trung-ham"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Cả tiểu đội mười người hy sinh",
+      "mo_ta": "Toàn bộ 10 nữ thanh niên xung phong của Tiểu đội 4 hy sinh tại chỗ — người trẻ nhất Võ Thị Hà 17 tuổi, người lớn tuổi nhất là ba đội viên cùng 24 tuổi trong đó có tiểu đội trưởng Võ Thị Tần.",
+      "hien": ["ham-tru-an"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Mạch đường không đứt",
+      "mo_ta": "Ngay trong đêm, các đơn vị thanh niên xung phong khác tiếp tục san lấp hố bom, giữ cho đoàn xe quân sự qua ngã ba an toàn.",
+      "hien": ["ho-bom", "doan-xe-cho-thong-duong"]
+    }
+  ],
+  "ket_qua": "Toàn bộ 10 nữ thanh niên xung phong Tiểu đội 4, Đại đội 552 hy sinh tại ngã ba Đồng Lộc chiều 24/7/1968; tuyến đường vẫn được giữ thông suốt phục vụ vận tải chi viện chiến trường miền Nam.",
+  "y_nghia": "Sự hy sinh của mười cô gái Đồng Lộc trở thành biểu tượng của lực lượng thanh niên xung phong trên tuyến lửa Trường Sơn; năm 2013 khu di tích được xếp hạng Di tích quốc gia đặc biệt.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Ngày 24-7-1968: 10 nữ thanh niên xung phong hy sinh ở Ngã ba Đồng Lộc — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-24-7-1968-10-nu-thanh-nien-xung-phong-hy-sinh-o-nga-ba-dong-loc-699576",
+    "Ngã ba Đồng Lộc - bản hùng ca bất tử của chủ nghĩa anh hùng cách mạng Việt Nam — Cổng TTĐT UBND xã An Lộc, tỉnh Đồng Nai — https://anloc.dongnai.gov.vn/vi/news/van-hoa-xa-hoi/nga-ba-dong-loc-ban-hung-ca-bat-tu-cua-chu-nghia-anh-hung-cach-mang-viet-nam-1047.html"
+  ],
+  "ghi_chu_bien_tap": "Tên và tuổi 10 TNXP, đơn vị (Tiểu đội 4, Đại đội 552, Tổng đội 55) lấy từ anloc.dongnai.gov.vn (cổng UBND xã, gov.vn) — đã mở trang xác nhận. Số liệu 'đợt bom thứ 15 trong ngày' và '50.000 quả bom 4-10/1968' cùng nguồn. Không đưa trường trich_van_tich dù nguồn có trích thư Võ Thị Tần, vì nội dung WebFetch trả về đã qua xử lý của mô hình tóm tắt, không chắc khớp byte-for-byte với bản gốc để qua cổng verify_trich_van_tich.mjs."
+}
