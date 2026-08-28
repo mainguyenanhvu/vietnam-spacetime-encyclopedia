@@ -70,6 +70,42 @@ Hạng mục rủi ro xếp theo thứ tự để định trọng tâm soát: (1
 **Chỉ 6/344 mục có nhãn trỏ về tên miền nằm trong danh sách bác, và đúng 1 mục chết hẳn** (mọi nhãn đều bị bác). Nỗi lo «vài nhãn trỏ về nguồn bị bác» ghi ở trên là có thật nhưng **quy mô nhỏ**, không phải rào cản.
 👉 Việc đợt sau tách làm ba, theo đơn giá tăng dần: (a) **geocode 210 mục còn URL thật** — nhưng xem kết luận OSM ở mục 3 trước, mỏ đó đã cạn; (b) **phục hồi URL cho 192 mục `[WF]`** — rẻ nhất trong ba, và là món nên làm trước; (c) **tra lại từ đầu 151 mục `[WS]`** — ngân sách riêng.
 ⚠️ **Bản đếm đầu tiên của tôi ra «160 mục chết vì nguồn bị bác» — SAI, do bóc tên miền lấy nhầm chuỗi đầu tiên trông giống domain.** Số đúng là 6. Nhãn trong backlog viết tắt (`vov + baochinhphu`, `tuoitre + trungtamquanlyditich...`), không có giao thức, nhiều tên trên một dòng — **phải tách theo dấu `+` rồi mới đối chiếu**, đừng regex thẳng.
+
+### ✅ 2026-08-28 — PHỤC HỒI NGUỒN: 27 mục trong 6 lượt gọi, bằng lối «duyệt sổ đăng ký»
+
+Làm thử trên nhóm rẻ nhất và **đơn giá thấp hơn hẳn dự tính**: backlog `cho_toa_do` có URL thật **210 → 237**, chưa có **344 → 317**.
+
+**Cách làm — không tra theo từng mục:** 30 mục thuộc địa bàn TP HCM đều trỏ về `svhtt.hochiminhcity.gov.vn`. Thay vì tìm 30 bài, mở **một trang sổ đăng ký** — «Danh sách các công trình, địa điểm đã được quyết định xếp hạng di tích trên địa bàn TP Hồ Chí Minh (đến hết 10/2022)» — rồi đối chiếu **nguyên văn** từng dòng theo lô 6–8 tên.
+
+| | |
+|---|---|
+| Lượt gọi công cụ | **6** (1 WebSearch + 5 WebFetch, 1 trong đó 404) |
+| Mục lấy được nguồn | **27** |
+| Đơn giá | **~0,22 lượt/mục** |
+
+Đây là bản sao của kết luận đã ghi ở trên (*duyệt-nguồn-trước ~20% vs tra-theo-trận ~2%*), nay đo được ở mức mạnh hơn nhiều. 👉 **Luật: gom mục theo CƠ QUAN QUẢN LÝ rồi mở sổ đăng ký của cơ quan đó, đừng đi tìm bài cho từng di tích.**
+
+**Sổ đăng ký còn xác nhận CHÉO được ba thứ mà tra lẻ không thấy:**
+· `chua-thien-phuoc-q8` — bảng của Sở có **hai** chùa Thiên Phước (Trường Thọ QĐ 24/2005 · Phạm Thế Hiển P6 QĐ 1763/2009). Cảnh báo trùng tên vốn có trong kho nay **được nguồn gốc xác nhận**, và bản kho chọn đúng bản Q8.
+· `dinh-tan-hoi-q12` — bảng ghi «Số 1517/QĐ-UBND» **không kèm ngày**, đúng như ghi chú «ngày thiếu trong nguồn». **Thiếu là thiếu THẬT ở văn bản gốc — đừng tra bù.**
+· `den-tho-nguyen-anh-thu` — bảng của Sở chép «Nguyễn **Ánh** Thủ», kho ghi «Nguyễn **Ảnh** Thủ». Giữ chữ của kho (trùng cách viết tên đường ở TP HCM), **nêu cả hai**, chưa kết luận bên nào sai.
+
+⚠️ **Hai mục KHÔNG có trong bảng, đã ghi vào `ly_do` để đợt sau khỏi tra lại vòng nữa**: `chua-phap-hoa-phu-nhuan` và `chua-long-thanh-binh-tan` (mục sau kho vẫn ghi QĐ 185/2005 — cần nguồn khác để đối chiếu).
+
+⚠️ **Và WebSearch lại bịa đúng như đã ghi**: bản tóm tắt nói Chùa Sắc tứ Trường Thọ ở **791 Phan Văn Trị**; mở bảng gốc ra là **53/524 Phan Văn Trị** — trùng khít con số kho đang giữ. **Kho đúng, tóm tắt sai.** Thêm một lần khẳng định: chỉ tính khi đã MỞ trang.
+
+**Hàng đợi cho đợt sau — cú thắng HCM KHÔNG lặp lại được ở quy mô đó.** 317 mục còn lại nằm rải **47 tỉnh**, 10 tỉnh lớn nhất chỉ phủ **42%**; gom theo tên miền trong nhãn thì 10 cụm lớn nhất chỉ phủ 41/317. Tức phần còn lại là **đuôi dài, ~47 sổ đăng ký cấp tỉnh**. Ưu tiên các tỉnh mà phần lớn mục mang nhãn `[WF]` (trang **đã từng mở**, chỉ mất URL) — rẻ nhất:
+
+| Tỉnh | Mục | `[WF]` đã mở | Có sẵn số QĐ |
+|---|---|---|---|
+| Quảng Ninh | 13 | 12 | 7 |
+| Bà Rịa–Vũng Tàu | 10 | 10 | 1 |
+| Bình Định | 9 | 9 | 2 |
+| Phú Thọ | 9 | 8 | 2 |
+| Thái Nguyên | 8 | 8 | 1 |
+| Long An | 8 | 8 | 7 |
+
+Ngược lại, Hải Dương (17 mục, **0** `[WF]`), Huế (15, 0), Thái Bình (11, 0) toàn `[WS]` — chưa trang nào từng được mở, phải tra lại từ đầu, để sau.
 ⚠️ **Geocode là nút thắt thật.** `overpass-api.de` chặn IP sau khi một agent bắn dồn dập dưới 9 giây. Và một dữ kiện mới đắt giá: chạy 24 mục HCM theo `addr:housenumber` cho **0/24 khớp** — **OSM Việt Nam thiếu tag địa chỉ cấp toà nhà cho di tích cũ**; ca «3 hội quán Chợ Lớn» của đợt trước nhiều khả năng khớp theo **tên riêng**. Đợt sau: tìm theo TÊN + bbox + lọc `historic`/`amenity=place_of_worship`. Nominatim **được dùng có rào** — chỉ địa chỉ số nhà + tên đường **nội thành cũ**, soát tay từng kết quả, tối đa `trung`.
 ⚠️ **SẬP DẤU THANH khi chuẩn hoá tên — nguồn khớp giả lớn nhất khi geocode.** Cảnh báo cũ ở PLAN chỉ nói bug Đ/đ (NFD không tách chữ Đ); đợt 2026-08-28 đo ra vấn đề **rộng hơn nhiều**: bỏ dấu làm sập **MỌI dấu thanh**, nên hai từ khác nghĩa hoàn toàn quy về cùng một chuỗi. Đã tái lập:
 ```
