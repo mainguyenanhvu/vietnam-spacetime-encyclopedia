@@ -389,7 +389,8 @@ export const OVERLAYS: OverlayConf[] = [
       // theo loai đếm thiếu. Màu không đổi: cả ba vốn đã rơi vào cùng giá trị
       // vì nhánh này trùng đúng màu mặc định ở cuối.
       "anh-hung-llvt", "#dc2626",
-      "me-vnah", "#db2777",
+      // Nhanh "me-vnah" da go 2026-08-28: 94 muc Me VNAH chuyen sang lop
+      // me-vnah rieng, lop nay khong con muc nao mang loai do.
       "ah-lao-dong", "#0d9488",
       "#dc2626",
     ],
