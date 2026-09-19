@@ -611,6 +611,19 @@ với truy vấn dạng `(gallica all "paracels") and (dc.type all "carte")`. Tr
 | `btv1b532333019` · `btv1b53233302r` · `btv1b53233293j` · `btv1b532276828` | 4 hải đồ khác trong nhóm kết quả «paracels» (1742 · 1791 · 1798 · 1799) | 🔶 chưa xét |
 | `btv1b84590393` · `btv1b8446698t` | «Royaume d'Annam … désigné par les Pères de la Compagnie de Jésus» (TK 17) | 🔶 chưa xét — có thể trùng mục de Rhodes 1650 đã có |
 
+🔎 **ĐẦU MỐI NGOÀI GALLICA — đã xét, CHƯA nạp, kèm lý do** (2026-09-19).
+
+| Ứng viên | Trạng thái |
+|---|---|
+| **Selden Map of China** (~1608–1624), Bodleian Library | 🔶 **đã mở ảnh Commons `File:SeldenMap1624.jpg` (PD, `Credit` trỏ về chính `seldenmap.bodleian.ox.ac.uk`) và ĐÃ XEM — KHÔNG NẠP**: ảnh chỉ 1600×2260 cho một tấm dài ~1,6 m thật, nhãn địa danh **không đọc nổi**. Nạp một mục chủ quyền mà không đọc được bằng chứng trên mặt giấy là đúng thứ dự án cấm. Muốn nạp thì lấy bản phóng to ở trang Bodleian trước. |
+| **Mao Khôn đồ** 武備志 / 鄭和航海圖 (~1621–1628) | 🔶 Commons có cả loạt `File:MAO KUN MAP-*.jpg` + các mảnh đã cắt theo vùng (Malacca, Singapore, Sumatra…). Chưa xét mảnh nào phủ bờ Việt Nam. |
+| 大清萬年一統天下全圖 bản **1814**, Brown University | ⛔ **Không cần** — BnF đã có bản **1818** và đã nạp (`btv1b7200281h`). Dùng bản BnF thì không phải mở thêm host trong CSP. |
+| 皇朝一統輿地全圖 (1832), LOC / Sinica Digital Atlas | 🔶 chưa xét. Sinica có mục 授權與使用規範 chưa đọc; LOC chặn 403. |
+
+⛔ **HAI KHO ĐÓNG VỚI CÔNG CỤ, đừng cử agent vào lại nếu không đổi cách truy cập**: **Library of Congress** trả **403 Forbidden** mọi lượt (kể cả `?fo=json`, kể cả qua web.archive.org) · **Harvard-Yenching** (`curiosity.lib.harvard.edu`) trả **429 Too Many Requests** cả 4 lượt. Đây là triệu chứng CÔNG CỤ — **không** phải bằng chứng kho rỗng.
+
+⚠️ **«Public domain» trên Commons KHÔNG bảo chứng xuất xứ ảnh.** Thẻ đó chỉ nói tác phẩm gốc hết hạn bảo hộ. Phải đọc riêng trường `Credit`: đợt này bắt được nhiều ca ảnh thực chất dẫn về **blog cá nhân** (`blog.daum.net`, `duonghanoi.wordpress.com`) chứ không phải kho gốc. Ngược lại, chính trường `Credit` là thứ cứu hai tấm đã nạp — nó trỏ về `biengioilanhtho.gov.vn` và `seldenmap.bodleian.ox.ac.uk`.
+
 **Việc**
 - [ ] Bản đồ cổ: còn 2 tấm đáng bổ sung nhưng THIẾU siêu dữ liệu — bản đồ quân sự mặt trận Đà Nẵng chống Pháp (122×72 cm, luỹ cát + 108 làng xã, lưu tại Lưu trữ Quốc gia Pháp; **nguồn Nhân Dân không nêu năm vẽ lẫn người vẽ** nên chưa nạp) và Đồng Khánh địa dư chí (tra chưa ra nguồn nhà nước mô tả đủ). **S**
 - [ ] Polygon 602–1887 (Nam Việt, Bắc thuộc, Đại Cồ Việt, Đại Việt, Đại Nam) — ⛔ chặn bởi thiếu atlas đủ tin cậy. **L**
