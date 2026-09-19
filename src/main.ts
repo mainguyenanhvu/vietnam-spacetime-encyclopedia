@@ -1948,6 +1948,76 @@ function setEra(index: number): void {
     map.setLayoutProperty(`${era.id}-3d`, "visibility", active && is3D ? "visible" : "none");
     map.setLayoutProperty(`${era.id}-label`, "visibility", active && !dio && showLabels ? "visible" : "none");
   });
+  capNhatDoiChieu();
+}
+
+// ── ĐỐI CHIẾU hai thời kỳ ranh giới ─────────────────────────────────────────
+//
+// Câu người dùng hỏi nhiều nhất về đợt sáp nhập 2025 là «tỉnh cũ của tôi giờ
+// nằm trong tỉnh nào». Panel tỉnh đã trả lời bằng CHỮ (dải «Hợp nhất A + B —
+// Nghị quyết 202/2025/QH15»). Khối này trả lời bằng HÌNH: vẽ ranh giới của một
+// thời kỳ KHÁC đè lên thời kỳ đang xem, nét đứt — nhìn thấy đường biên cũ nằm
+// gọn bên trong tỉnh mới.
+//
+// VÌ SAO NÉT ĐỨT: nét liền đọc như một ranh giới đang có hiệu lực. Thời kỳ đối
+// chiếu là thứ ĐÃ QUA, nên phải khác kiểu nét, không chỉ khác màu.
+//
+// VÌ SAO LỚP RIÊNG chứ không bật `${era.id}-line` của thời kỳ kia: `setEra`
+// nắm quyền bật/tắt đúng ba lớp đó theo thời kỳ đang chọn. Mượn lại là hai chủ
+// cùng ghi một thuộc tính, và bên thua luôn là bên chạy sau.
+
+const LOP_DOI_CHIEU = "doi-chieu-line";
+
+/**
+ * Lớp NHÃN đầu tiên của style — chèn TRƯỚC nó thì mọi nhãn nằm trên đường kẻ.
+ *
+ * 🔴 KHÔNG hỏi đích danh `chu-quyen-labels` rồi bỏ qua nếu chưa có: `beforeId`
+ * là `undefined` thì MapLibre chèn LÊN TRÊN CÙNG, phủ mất nhãn Hoàng Sa /
+ * Trường Sa. Đúng bẫy đã vấp thật một lần ở `bandoco.ts` — bốn cổng đều xanh,
+ * chỉ probe Chrome mới thấy. Đây là bất biến #1, không phải thứ tự vẽ cho đẹp.
+ */
+function truocLopNhanDoiChieu(): string | undefined {
+  for (const l of map.getStyle().layers ?? []) if (l.type === "symbol") return l.id;
+  return map.getLayer("chu-quyen-labels") ? "chu-quyen-labels" : undefined;
+}
+
+/** Ở tầm diorama không có nền bản đồ nên đường kẻ phẳng là nhiễu — theo đúng
+ *  cách `setEra` xử ba lớp phẳng. */
+function capNhatDoiChieu(): void {
+  if (!map.getLayer(LOP_DOI_CHIEU)) return;
+  map.setLayoutProperty(LOP_DOI_CHIEU, "visibility", dangDiorama() ? "none" : "visible");
+}
+
+function datDoiChieu(eraId: string): void {
+  if (map.getLayer(LOP_DOI_CHIEU)) map.removeLayer(LOP_DOI_CHIEU);
+  const ghi = document.getElementById("lc-doi-chieu-ghi-chu");
+  const era = ERAS.find((e) => e.id === eraId);
+  if (!era) {
+    if (ghi) ghi.textContent = "";
+    return;
+  }
+  ensureEra(era);
+  map.addLayer(
+    {
+      id: LOP_DOI_CHIEU,
+      type: "line",
+      source: era.id,
+      // Trọng lượng thị giác CỐ Ý nhẹ hơn `${era.id}-line` của thời kỳ đang xem
+      // (nâu #92400e, dày 1, đục hoàn toàn). Bản đầu đặt dày 1,6 / đục 0,85 và
+      // nhìn thật ở zoom 7,4 vùng đồng bằng Bắc Bộ thì lớp ĐỐI CHIẾU lấn át lớp
+      // CHÍNH — đảo ngược đúng thứ bậc mà tính năng này cần. Khoảng hở rộng hơn
+      // nét (2/3) để đọc ra «nét đứt» ngay cả khi thu nhỏ.
+      paint: {
+        "line-color": "#1d4ed8",
+        "line-width": 1,
+        "line-dasharray": [2, 3],
+        "line-opacity": 0.55,
+      },
+    },
+    truocLopNhanDoiChieu(),
+  );
+  capNhatDoiChieu();
+  if (ghi) ghi.textContent = `Nét đứt xanh = ranh giới ${era.label}. Nét liền = thời kỳ đang xem.`;
 }
 
 // Chọn 1 thời kỳ trong DÒNG THỜI GIAN HỢP NHẤT: hiện đúng lớp địa lý (cương vực
@@ -2417,6 +2487,12 @@ function buildLayerControl(): void {
         ).join("")}
       </select>
       <p class="lc-note" id="lc-ghi-chu"></p>
+      <label class="lc-nhan-chon" for="lc-doi-chieu">${ten("nhan:lc-nhan-doi-chieu", "Đối chiếu với")}</label>
+      <select id="lc-doi-chieu" name="doi-chieu">
+        <option value="">— không —</option>
+        ${ERAS.map((e) => `<option value="${e.id}">${e.label}</option>`).join("")}
+      </select>
+      <p class="lc-note" id="lc-doi-chieu-ghi-chu"></p>
     </div>
     <details class="lc-sec" open>
       <summary>📌 ${ten("nhan:lc-lop-phu", "Lớp phủ")} <span class="lc-badge">${OVERLAYS.length}</span></summary>
@@ -2474,6 +2550,7 @@ function buildLayerControl(): void {
       daDoiThoiKy = true;
       setPeriod(Number(t.value));
     }
+    if (t.name === "doi-chieu") datDoiChieu(t.value);
     if (t.name === "overlay") void toggleOverlay(t.value, t.checked);
     if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
     if (t.name === "labels") applyLabels(t.checked);
