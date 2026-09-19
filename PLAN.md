@@ -19,7 +19,7 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ## Trạng thái hiện tại — 2026-08-28
 
-**404 file dữ liệu · 7.402 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ · 4.156 mục lớp phủ** · **290 sa đồ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh. Đo lại 2026-08-28 sau khi sinh lại chỉ mục.
+**404 file dữ liệu · 7.428 mục** *(đếm lại 2026-09-19)* · ~~7.402 mục~~ (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ · 4.156 mục lớp phủ** · **290 sa đồ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh. Đo lại 2026-08-28 sau khi sinh lại chỉ mục.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
@@ -595,6 +595,21 @@ kinh-đô/lăng (ĐIỂM, không cần vùng) và 5 đơn vị bí nguồn:
 ✅ **Lớp phủ «Bản đồ cổ» mở 2026-08-25** (commit `80c7911`) — 19 tấm · 34 điểm neo · 15 địa điểm. Đây KHÔNG phải ranh giới: nó khớp **địa danh ghi trên mặt giấy bản đồ cổ** với vị trí thật ngày nay, tức là thứ làm được mà không phải vẽ đoán một đường biên nào. Bản gốc `media/ban-do-co.json`, lớp phủ sinh ra bằng `scripts/build_ban_do_co_overlay.mjs`, cổng chống lệch trong `validate_media.mjs`.
 - ⚠️ **KHÔNG CÓ BẢN ĐỒ NÀO TRƯỚC THẾ KỶ XV.** Nghề vẽ bản đồ nhà nước bắt đầu từ Hồng Đức bản đồ 1490. Ai hỏi «bản đồ 4000 năm» thì câu trả lời trung thực là: 4000 năm lịch sử nhưng chỉ ~530 năm bản đồ. Đừng lấp chỗ trống.
 - ⚠️ **Đừng sửa tay `overlays/ban-do-co.json`** — sửa bản gốc rồi chạy `npm run build:index`. Cổng sẽ bắt nếu quên.
+
+🔎 **ĐẦU MỐI GALLICA CHƯA KHAI THÁC HẾT — đã tra được ark, đừng tìm lại từ đầu** (quét SRU 2026-09-19).
+Cách quét: `curl` + User-Agent trình duyệt tới
+`https://gallica.bnf.fr/SRU?operation=searchRetrieve&version=1.2&maximumRecords=20&query=<truy vấn>`
+với truy vấn dạng `(gallica all "paracels") and (dc.type all "carte")`. Truy vấn `paracels` cho **11 kết quả, đúng chủ đề cả 11**.
+
+| Ark | Tấm | Trạng thái |
+|---|---|---|
+| `btv1b53119398b` | Hải đồ Pháp 1737 «Banc du Pracel» | ✅ **ĐÃ NẠP** — xem mục mới trong `media/ban-do-co.json` |
+| `btv1b550095891` | 大清萬年一統地理全圖 (1806–09), thác bản 132×235 cm, 1 view, `GE A-1096 (RES)` | 🔶 **đã xem, chưa nạp** — đã cắt vùng đông-nam: thấy rõ đất liền nhà Thanh kết thúc rồi chuyển sang biển vẽ vân sóng có đảo nhỏ, nhưng **chữ quá nhỏ để đọc nhãn đảo ở mức 3000px**. Muốn nạp thì phải kéo ảnh lớn hơn rồi đọc nhãn — **đừng khẳng định «dừng ở Hải Nam» khi chưa đọc được chữ**. |
+| `btv1b7200281h` | 大清萬年一統天下全圖 / Chu Tích Linh (1818), 3 tờ chụp thành **21 view**, `GE C-5353` | 🔶 **đã dò một phần** — f16 là khung nhan đề; **f1 = vùng châu Âu/Tây Á** (荷蘭國, 英咭唎國界); **f18 = vùng biển Nhật Bản–Triều Tiên** (對馬郡北至高麗 · 五島 · 長崎 · 肥前 · 薩馬峒). Mảnh Biển Đông **chưa tìm ra**, còn f17 · f19 · f20 · f21 chưa mở. |
+| `btv1b53158017b` | «Tabula geographica imperii Anamitici», bản in lại 1863 | ⛔ **KHÔNG phải mục mới** — mặt giấy ghi «AN NAM ĐẠI QUỐC HỌA ĐỒ … 1838», tức bản in lại của tấm Taberd **đã có trong kho**. Dùng được làm ảnh thay thế nguồn BnF nếu muốn. |
+| `btv1b53158013j` | Hải đồ bờ biển Đàng Trong – Chân Lạp, **J. M. Dayot, «mandarin à la cour de Cochinchine», 1807** | 🔶 chưa xét — người Pháp làm quan triều Nguyễn, đáng xem |
+| `btv1b532333019` · `btv1b53233302r` · `btv1b53233293j` · `btv1b532276828` | 4 hải đồ khác trong nhóm kết quả «paracels» (1742 · 1791 · 1798 · 1799) | 🔶 chưa xét |
+| `btv1b84590393` · `btv1b8446698t` | «Royaume d'Annam … désigné par les Pères de la Compagnie de Jésus» (TK 17) | 🔶 chưa xét — có thể trùng mục de Rhodes 1650 đã có |
 
 **Việc**
 - [ ] Bản đồ cổ: còn 2 tấm đáng bổ sung nhưng THIẾU siêu dữ liệu — bản đồ quân sự mặt trận Đà Nẵng chống Pháp (122×72 cm, luỹ cát + 108 làng xã, lưu tại Lưu trữ Quốc gia Pháp; **nguồn Nhân Dân không nêu năm vẽ lẫn người vẽ** nên chưa nạp) và Đồng Khánh địa dư chí (tra chưa ra nguồn nhà nước mô tả đủ). **S**
