@@ -1,8 +1,8 @@
 {
   "tong": {
     "so_file": 404,
-    "so_muc": 7429,
-    "so_byte": 14819739,
+    "so_muc": 7430,
+    "so_byte": 14827573,
     "ngay_sinh": "2026-09-19"
   },
   "files": [
@@ -9230,8 +9230,8 @@
     {
       "file": "media/ban-do-co.json",
       "mien": "media",
-      "so_muc": 21,
-      "byte": 68567,
+      "so_muc": 22,
+      "byte": 74627,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": "nguon",
       "truong_nguon_cap_file": "sources",
@@ -9253,7 +9253,7 @@
         "anh",
         "anh_nguon"
       ],
-      "sha256": "54798e48070ea8e60cdc7e5fbeb88084a687cb1ba256d647bfef1eaf6462cfe8",
+      "sha256": "2f1708247cb58e5bad808e94570bfa6fd7e0d6fbe49046a8d31d967f8ef2ec06",
       "mo_ta": "Bản đồ cổ về lãnh thổ Việt Nam qua các thời kỳ."
     },
     {
@@ -9348,7 +9348,7 @@
       "file": "overlays/ban-do-co.json",
       "mien": "overlays",
       "so_muc": 15,
-      "byte": 26712,
+      "byte": 28486,
       "kieu_boc_ngoai": "items[]",
       "truong_nguon_cap_muc": null,
       "truong_nguon_cap_file": "sources",
@@ -9365,7 +9365,7 @@
         "ban_do_ghi",
         "do_tin_cay_toa_do"
       ],
-      "sha256": "bfebcdeef6285107efa41dfd8166e0c88f39a1ca5f85b7702ecb0f91972279d9",
+      "sha256": "e9b0ab0af3b9c2e6a2decf3ec5a6c5de8accee44c0aaa8ff5531878967d87534",
       "mo_ta": "SINH TỰ ĐỘNG từ media/ban-do-co.json bởi scripts/build_ban_do_co_overlay.mjs — ĐỪNG SỬA TAY, sửa bản gốc rồi chạy lại."
     },
     {
