@@ -8,6 +8,38 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-09-19 — Học hai nguồn ngoài, mở khoá lớp bản đồ cổ, và một chế độ đối chiếu thời kỳ
+
+Chủ dự án gửi hai nguồn để học: `soiqualang/vietnam_map_history` và `maparchive.vn`.
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Bản đồ cổ **có ảnh quét** | **5 → 9 / 19 tấm** | `validate_media.mjs` |
+| Địa điểm trên bản đồ **hiện được bản quét** | **0 → 10** | đếm `ban_do_ghi[].anh` trong lớp phủ sinh ra |
+| Tấm bản đồ ghi tên **Quần đảo Hoàng Sa** có ảnh | **7** | popup thật trên Chrome |
+| Host ảnh được phép | **1 → 2** (thêm `gallica.bnf.fr`) | CSP `index.html` + cổng |
+| Nguồn ngoài đã thẩm định và ghi sổ | **22** | `docs/references/links-nguoi-dung.md` |
+| Cổng dữ liệu | **14/14 xanh** | `npm run validate` |
+| Build | `tsc` exit 0 · `vite` xanh | `npm run build` |
+
+**Phán quyết hai nguồn được gửi — cả hai KHÔNG dùng được dữ liệu:**
+- `soiqualang/vietnam_map_history`: `license: null` (tự gọi API xác nhận) → không được tái sử dụng. Không phải bộ vector ranh giới theo thời kỳ như tên gọi gợi ý, mà là 1 geojson ranh giới tỉnh **ngày nay** (không năm, không nguồn) + 72 ảnh atlas phục vụ qua GeoServer WMS. **Thiếu hẳn Hoàng Sa – Trường Sa** → trượt bất biến #1. Bỏ hoang từ 2021-02-23, demo chết.
+- `maparchive.vn`: dự án tình nguyện cá nhân → không đủ tư cách `sources[]`. **Không có một tư liệu Hoàng Sa/Trường Sa nào** (kiểm ba đường độc lập, kể cả gọi thẳng API tìm kiếm). Giá trị thật: nó trỏ về **bốn kho có định danh** — BnF Gallica, Humazur, David Rumsey, Library of Congress. Đó mới là mỏ.
+
+**Ba việc đã làm:**
+1. **Ảnh bản đồ cổ hiện ngay trên bản đồ** (`d8c5662`) — trước đây tư liệu chủ quyền chỉ đọc được ở Thư viện, người xem bản đồ không bao giờ thấy mặt giấy. Kèm hai lỗi tự bắt được: ảnh gốc 10100×6906 (vá bằng bản thu nhỏ 960px, 5 ảnh = 1,76 MB) và ảnh tràn khung do grid `max-content`.
+2. **Chế độ «Đối chiếu với»** (`f9cab82`) — vẽ ranh giới một thời kỳ khác đè lên thời kỳ đang xem, nét đứt. Trả lời bằng hình câu «tỉnh cũ của tôi giờ nằm đâu». Học mô hình Layer Stack của maparchive nhưng làm bằng dữ liệu sẵn có, không thêm phụ thuộc.
+3. **Mở khoá BnF Gallica** (`bd52ea8`) — nút thắt thật của 12 tấm còn lại là **CSP**, không phải giấy phép. Thêm một host, kèm cổng ép chuỗi ghi công BnF; thử ngược 3 lỗi cố tình, cổng bắt đủ 3/3.
+
+**Hai chỗ vênh niên đại được nêu ra chứ không lặng lẽ chọn** (bất biến #4):
+- **Blaeu**: BnF giữ ba bản khắc đề 1635 · 1638 · 1640, **không bản nào 1645** như nguồn Việt chép; Willem Blaeu mất 1638. Giữ nguyên `nam` = 1645, ghi rõ ảnh là lần in 1638.
+- **d'Anville**: bản khắc đề **M DCC XXXIV = 1734**, tập atlas đề **1737**. Hai năm đều đúng — năm khắc tấm và năm ra tập.
+- **Hoàng triều trực tỉnh địa dư toàn đồ**: đối chiếu thẳng manifest BnF cho **Date = 1879**, không phải 1904. Xác nhận quyết định «cố ý không gắn» của 2026-08-26 là đúng.
+
+**Ba tấm bị loại sau đối chiếu**: Hải Quốc Đồ Chí (file Commons là quyển 3/1852, không phải quyển 9/1842) · Hồng Đức bản đồ (nguồn ảnh là blog, nghi vẽ lại) · Giáp Ngọ Bình Nam đồ (ảnh báo, bản quyền).
+
+---
+
 ## 2026-08-28 — Mở rộng 40 agent một ca dài: +645 mục lớp phủ, sa đồ 290 khớp cặp tuyệt đối, và một cổng bản quyền mới
 
 | Chỉ số | Giá trị | Đo bằng |
