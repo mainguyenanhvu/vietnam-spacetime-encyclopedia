@@ -259,7 +259,7 @@ function mocTrongKy(ky: number): number[] {
 function dongBanDo(): string {
   const ten = tenKy[kyHienTai];
   if (!ten) return "";
-  return `<p class="moc-ban-do">🗺️ Bản đồ đang hiện: ${esc(ten)}</p>`;
+  return `<p class="moc-ban-do">🗺️ Bản đồ đang hiện: ${escVan(ten)}</p>`;
 }
 
 function veNote(hien: boolean): void {
@@ -285,14 +285,14 @@ function veNote(hien: boolean): void {
           (j, k) =>
             `<option value="${k}"${k === chiSoTrongKy ? " selected" : ""}>${esc(
               DS[j].nam_hien_thi,
-            )} — ${esc(DS[j].ten)}</option>`,
+            )} — ${escVan(DS[j].ten)}</option>`,
         )
         .join("")}</select>`
     : "";
   note.innerHTML = `
     <div class="moc-dau">
       <span class="moc-chip" data-loai="${esc(m.loai)}">${esc(NHAN_LOAI[m.loai])}</span>
-      <span class="moc-nam">${esc(m.nam_hien_thi)}</span>
+      <span class="moc-nam">${escVan(m.nam_hien_thi)}</span>
       ${
         nhieu
           ? `<span class="moc-dieu-huong">
@@ -305,7 +305,7 @@ function veNote(hien: boolean): void {
       <button type="button" class="moc-dong" aria-label="Đóng giới thiệu mốc">×</button>
     </div>
     ${oChon}
-    <p class="moc-ten">${esc(m.ten)}</p>
+    <p class="moc-ten">${escVan(m.ten)}</p>
     ${dongTrieuDai(m.nam)}
     ${m.mo_ta ? `<p class="moc-mo-ta">${escVan(m.mo_ta)}</p>` : ""}
     ${
@@ -313,7 +313,7 @@ function veNote(hien: boolean): void {
       // phải HIỆN RA cho người đọc, không phải ghi chú nội bộ (quy tắc #4).
       m.ghi_chu ? `<p class="moc-venh">⚠️ ${escVan(m.ghi_chu)}</p>` : ""
     }
-    ${m.nguon ? `<p class="moc-nguon">${esc(m.nguon)}</p>` : ""}
+    ${m.nguon ? `<p class="moc-nguon">${escVan(m.nguon)}</p>` : ""}
     ${dongBanDo()}`;
   danhDauVachDangChon(iMoc);
 }

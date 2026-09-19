@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Tổng tiến công Mậu Thân 1968 tại Sài Gòn – Gia Định — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ đợt tiến công của biệt động Sài Gòn – Gia Định đêm 30 rạng 31/1/1968 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "tong-tien-cong-mau-than-1968-sai-gon",
   "ten": "Tổng tiến công và nổi dậy Mậu Thân 1968 tại Sài Gòn – Gia Định",
   "nam": 1968,
@@ -13,123 +13,342 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "rung",
+      "diem": [
+        [
+          80,
+          80
+        ],
+        [
+          200,
+          68
+        ],
+        [
+          330,
+          95
+        ]
+      ],
+      "nhan": "Vùng căn cứ Củ Chi – Trảng Bàng"
+    },
+    {
       "kieu": "duong",
       "diem": [
         [
-          200,
-          400
+          80,
+          120
+        ],
+        [
+          240,
+          190
+        ],
+        [
+          400,
+          250
+        ]
+      ],
+      "nhan": "Hành lang từ căn cứ vào nội thành"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          230,
+          330
         ],
         [
           500,
-          380
+          300
+        ],
+        [
+          790,
+          340
+        ]
+      ],
+      "nhan": "Vành đai vùng ven Sài Gòn – Gia Định"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          700,
+          120
         ],
         [
           800,
-          360
+          200
+        ],
+        [
+          880,
+          300
         ]
       ],
-      "nhan": "Trung tâm Sài Gòn – Gia Định"
+      "nhan": "Trục các mục tiêu ven đô ở Gò Vấp"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-phe-duyet-1967",
-      "kieu": "dia-danh",
-      "x": 150,
-      "y": 480,
-      "nhan": "Bộ Chính trị phê duyệt (28/12/1967)"
+      "id": "so-chi-huy-7-yen-do",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 170,
+      "y": 250,
+      "nhan": "Sở chỉ huy số 7 Yên Đổ (tiệm phở Bình) — nơi phát lệnh nổ súng"
     },
     {
-      "id": "quan-ta-dong-loat-1968",
+      "id": "doi-5",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 420,
-      "nhan": "Đồng loạt nổ súng đêm Giao thừa"
+      "x": 250,
+      "y": 180,
+      "nhan": "15 chiến sĩ, cố thủ ở 56 Thủ Khoa Huân rồi 108 Gia Long",
+      "quy_mo": "Đội 5"
     },
     {
-      "id": "dinh-doc-lap-mt",
+      "id": "tieu-doan-268",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 170,
+      "y": 400,
+      "nhan": "2 giờ sáng 31/1 — 8 quả cối 82 mm vào Tân Sơn Nhất làm hiệu lệnh",
+      "quy_mo": "Tiểu đoàn 268, Phân khu 2"
+    },
+    {
+      "id": "tan-son-nhat",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 380,
+      "y": 430,
+      "nhan": "Sân bay Tân Sơn Nhất"
+    },
+    {
+      "id": "su-quan-my",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 450,
-      "y": 350,
+      "x": 560,
+      "y": 140,
+      "nhan": "Toà đại sứ Mỹ"
+    },
+    {
+      "id": "doi-11",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 780,
+      "y": 90,
+      "nhan": "17 đội viên chia 4 tổ, đánh thủng tường trên đường Mạc Đĩnh Chi, chiếm giữ 7 giờ",
+      "quy_mo": "Đội biệt động 11"
+    },
+    {
+      "id": "dinh-doc-lap",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 480,
+      "y": 250,
       "nhan": "Dinh Độc Lập"
     },
     {
-      "id": "toa-dai-su-my-mt",
-      "kieu": "thanh",
-      "ben": "dich",
-      "x": 550,
-      "y": 320,
-      "nhan": "Toà Đại sứ Mỹ"
-    },
-    {
-      "id": "bo-tong-tham-muu-mt",
+      "id": "bo-tong-tham-muu",
       "kieu": "thanh",
       "ben": "dich",
       "x": 650,
-      "y": 280,
-      "nhan": "Bộ Tổng tham mưu, Đài phát thanh, Tân Sơn Nhất"
+      "y": 250,
+      "nhan": "Bộ Tổng tham mưu — cổng số 5 và cổng Phi Long"
     },
     {
-      "id": "co-chan-dong-my",
+      "id": "cum-679",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 880,
+      "y": 300,
+      "nhan": "27 chiến đấu viên, hai mũi vào cổng số 5 và cổng Phi Long",
+      "quy_mo": "Cụm biệt động 679"
+    },
+    {
+      "id": "dai-phat-thanh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 430,
+      "y": 340,
+      "nhan": "Đài phát thanh Sài Gòn"
+    },
+    {
+      "id": "cum-345",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 680,
+      "y": 400,
+      "nhan": "12 chiến sĩ chiếm giữ đài, 10 đồng chí hy sinh",
+      "quy_mo": "Cụm biệt động 345"
+    },
+    {
+      "id": "bo-tu-lenh-hai-quan",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 520,
+      "y": 520,
+      "nhan": "Bộ tư lệnh Hải quân"
+    },
+    {
+      "id": "doi-3",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 280,
+      "y": 560,
+      "nhan": "16 chiến sĩ cơ động bằng ô tô, 14 người hy sinh",
+      "quy_mo": "Đội biệt động 3 (Cụm 345)"
+    },
+    {
+      "id": "muc-tieu-ven-do",
+      "kieu": "dia-danh",
+      "x": 850,
+      "y": 480,
+      "nhan": "Tổng kho Hạnh Thông Tây · căn cứ pháo binh Cổ Loa · căn cứ thiết giáp Phù Đổng"
+    },
+    {
+      "id": "lom-chinh-tri",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 100,
+      "y": 500,
+      "nhan": "19 lõm chính trị · 400 điểm ém quân · 13 cơ sở hầm chứa vũ khí"
+    },
+    {
+      "id": "co-mau-than",
       "kieu": "co",
       "ben": "ta",
-      "x": 600,
-      "y": 200,
-      "nhan": "Gây chấn động dư luận Mỹ"
+      "x": 880,
+      "y": 180,
+      "nhan": "Đêm 30 rạng 31/1/1968"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Bộ Chính trị phê duyệt kế hoạch (28/12/1967)",
-      "mo_ta": "Bộ Chính trị phê duyệt kế hoạch Tổng tiến công từ phiên họp đặc biệt ngày 28/12/1967.",
+      "tieu_de": "Tháng 10/1967 — «Nghị quyết Quang Trung», hướng chủ yếu là Sài Gòn",
+      "thoi_gian": "Tháng 10 – 12/1967",
+      "dia_danh": "Miền Đông Nam Bộ · Sài Gòn – Gia Định",
+      "mo_ta": "Trên cơ sở nắm chắc tình hình và so sánh tương quan lực lượng, tháng 10/1967 có quyết định bất ngờ và đồng loạt đánh mạnh vào các đô thị trên toàn miền Nam, nhằm tạo bước ngoặt buộc phía Mỹ ngồi vào bàn đàm phán. Thực hiện chủ trương đó, Trung ương Cục miền Nam ban hành «Nghị quyết Quang Trung», lấy miền Đông Nam Bộ và Sài Gòn – Gia Định làm trọng điểm cho cuộc tổng công kích – tổng khởi nghĩa, hướng tiến công chủ yếu là Sài Gòn.",
       "hien": [
-        "co-phe-duyet-1967"
+        "so-chi-huy-7-yen-do",
+        "lom-chinh-tri"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đồng loạt nổ súng đêm Giao thừa (30/1/1968)",
-      "mo_ta": "Đêm 30 rạng 31/1/1968, lực lượng biệt động và bộ đội chủ lực đồng loạt nổ súng tiến công.",
+      "tieu_de": "Chuẩn bị trong lòng thành phố — 19 lõm chính trị, 10 tấn thuốc nổ",
+      "thoi_gian": "Đến cuối năm 1967",
+      "dia_danh": "Nội đô Sài Gòn · Thái Mỹ (Củ Chi) · Trảng Bàng (Tây Ninh)",
+      "mo_ta": "Đến cuối năm 1967, trong nội đô Sài Gòn, lực lượng biệt động đã xây dựng được 19 lõm chính trị gồm 325 gia đình, 11 cơ sở ém vũ khí và phương tiện cơ động, 400 điểm ém quân, 13 cơ sở có hầm chứa vũ khí và 4 cơ sở đặt sở chỉ huy, trong đó có số 7 Yên Đổ tức tiệm phở Bình, nuôi giấu 13 cán bộ. Qua hai bàn đạp Thái Mỹ và Trảng Bàng, lực lượng bảo đảm đã vận chuyển 10 tấn thuốc nổ, súng đạn và trang bị vào cất giấu tại những cơ sở kề cận các mục tiêu quan trọng.",
       "hien": [
-        "co-phe-duyet-1967",
-        "quan-ta-dong-loat-1968"
+        "lom-chinh-tri",
+        "so-chi-huy-7-yen-do"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Tiến công Dinh Độc Lập, Toà Đại sứ Mỹ",
-      "mo_ta": "Các mũi tiến công đánh vào Dinh Độc Lập, Toà Đại sứ Mỹ.",
+      "tieu_de": "23 giờ 30 ngày 30/1 — phát lệnh; 2 giờ sáng 31/1 — hiệu lệnh nổ súng",
+      "thoi_gian": "23 giờ 30 ngày 30/1 – 2 giờ ngày 31/1/1968",
+      "dia_danh": "Số 7 Yên Đổ · Sân bay Tân Sơn Nhất",
+      "mo_ta": "23 giờ 30 phút ngày 30/1/1968, tại Sở chỉ huy số 7 Yên Đổ, đồng chí Võ Văn Thạnh, Chính uỷ Phân khu 6, đọc lời hiệu triệu của Uỷ ban Trung ương Mặt trận Dân tộc Giải phóng miền Nam Việt Nam, phổ biến giờ nổ súng và phát lệnh cho các cụm biệt động. Để giữ bí mật, giờ nổ súng chỉ được phổ biến trước 48 giờ cho chỉ huy trưởng các phân khu và cụm. 2 giờ sáng 31/1, Tiểu đoàn 268 thuộc Phân khu 2 bắn 8 quả cối 82 mm vào sân bay Tân Sơn Nhất, tạo hiệu lệnh tấn công cho toàn mặt trận.",
       "hien": [
-        "quan-ta-dong-loat-1968",
-        "dinh-doc-lap-mt",
-        "toa-dai-su-my-mt"
+        "so-chi-huy-7-yen-do",
+        "tieu-doan-268",
+        "tan-son-nhat",
+        "co-mau-than"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tiến công Bộ Tổng tham mưu, Đài phát thanh, Tân Sơn Nhất",
-      "mo_ta": "Đồng thời tiến công Bộ Tổng tham mưu, Đài phát thanh Sài Gòn, sân bay Tân Sơn Nhất.",
+      "tieu_de": "Dinh Độc Lập — Đội 5 chiến đấu trên đường Nguyễn Du",
+      "thoi_gian": "31/1 – 3 giờ sáng 1/2/1968",
+      "dia_danh": "Dinh Độc Lập · 56 Thủ Khoa Huân · 108 Gia Long",
+      "mo_ta": "Tại Dinh Độc Lập, Đội 5 gồm 15 chiến sĩ, trong đó có một nữ, dùng ô tô tiếp cận mục tiêu với ý định đánh sập cổng để tiến vào bên trong, nhưng bộc phá không nổ nên đơn vị triển khai chiến đấu trên đường Nguyễn Du. Đội đã bắn cháy nhiều xe chở lính, sau đó rút vào cố thủ và tiếp tục chiến đấu trong toà nhà 56 Thủ Khoa Huân, rồi toà nhà 108 Gia Long cho đến khi bị bắt vào lúc 3 giờ sáng ngày 1/2. Đối phương chết và bị thương gần 100, 3 xe Jeep bị phá huỷ.",
       "hien": [
-        "dinh-doc-lap-mt",
-        "bo-tong-tham-muu-mt"
+        "doi-5",
+        "dinh-doc-lap"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Gây chấn động dư luận Mỹ",
-      "mo_ta": "Cuộc tiến công đồng loạt vào các mục tiêu đầu não ngay giữa trung tâm Sài Gòn gây chấn động dư luận Mỹ, làm lung lay ý chí leo thang chiến tranh của Washington.",
+      "tieu_de": "Bộ Tổng tham mưu — Cụm 679 giữ hai cổng suốt một ngày",
+      "thoi_gian": "31/1 – 14 giờ ngày 1/2/1968",
+      "dia_danh": "Cổng số 5 · cổng Phi Long",
+      "mo_ta": "Tại Bộ Tổng tham mưu quân đội Sài Gòn, Cụm biệt động 679 gồm 27 chiến đấu viên chia thành hai mũi tiến công vào cổng số 5 và cổng Phi Long. Sau 15 phút chiến đấu, ta chiếm được hai cổng, nhưng bất lợi về lực lượng nên không phát triển vào bên trong, phải trụ lại dọc bờ rào và các ngôi nhà kế cận. Bị chia cắt đội hình và phản kích quyết liệt, một bộ phận rời khỏi trận địa, số khác trụ lại chiến đấu đến viên đạn cuối cùng. Đến 14 giờ ngày 1/2, các đơn vị hết đạn, chỉ huy cho phân tán lực lượng.",
       "hien": [
-        "co-chan-dong-my"
+        "cum-679",
+        "bo-tong-tham-muu"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Toà đại sứ Mỹ — Đội biệt động 11 chiếm giữ 7 giờ",
+      "thoi_gian": "2 giờ – 9 giờ sáng 31/1/1968",
+      "dia_danh": "Toà đại sứ Mỹ · đường Mạc Đĩnh Chi",
+      "mo_ta": "2 giờ sáng ngày 31/1, Đội biệt động 11 gồm 17 đội viên chia làm 4 tổ, tiến công cổng chính và dùng bộc phá đánh thủng một mảng tường trên đường Mạc Đĩnh Chi để đột nhập, lần lượt đánh chiếm tầng trệt, lầu 1 rồi lầu 2. Để cứu vị trí này, phía Mỹ điều thêm một đơn vị thuộc Sư đoàn dù đổ xuống sân thượng, dùng hoả lực và vũ khí hoá học đánh xuống, phối hợp với quân từ nhà Đại sứ Pháp đánh sang. Đến 9 giờ sáng, đối phương tràn ngập sứ quán; toàn đội chỉ còn một mình chỉ huy trưởng Ba Đen bị thương và bị bắt. Sau 7 giờ chiếm giữ, đội đã tiêu diệt 27 và làm bị thương 124 quân đối phương.",
+      "hien": [
+        "doi-11",
+        "su-quan-my"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đài phát thanh, Bộ tư lệnh Hải quân và các mục tiêu ven đô",
+      "thoi_gian": "31/1/1968",
+      "dia_danh": "Đài phát thanh Sài Gòn · Bộ tư lệnh Hải quân · Gò Vấp",
+      "mo_ta": "Tại Đài phát thanh Sài Gòn, Cụm biệt động 345 dùng 12 chiến sĩ tiếp cận mục tiêu, diệt lực lượng bảo vệ và chiếm giữ đài để chờ kỹ thuật viên vào phát sóng, nhưng không có lực lượng tiếp ứng và kỹ thuật viên cũng không đến; các chiến sĩ phá huỷ đài rồi tiếp tục chiến đấu, 10 đồng chí hy sinh. Tại Bộ tư lệnh Hải quân, Đội biệt động 3 thuộc Cụm 345 có 16 chiến sĩ cơ động bằng ô tô, diệt lính gác rồi lao vào bên trong; 14 chiến sĩ ta hy sinh. Các mục tiêu ven đô như Tổng kho Hạnh Thông Tây, căn cứ pháo binh Cổ Loa, căn cứ thiết giáp Phù Đổng và sân bay Tân Sơn Nhất cũng bị đặc công, biệt động tập kích.",
+      "hien": [
+        "cum-345",
+        "dai-phat-thanh",
+        "doi-3",
+        "bo-tu-lenh-hai-quan",
+        "muc-tieu-ven-do",
+        "tan-son-nhat"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Kết quả đợt tiến công và vị trí trong toàn cuộc Mậu Thân",
+      "thoi_gian": "31/1 – 25/2/1968",
+      "dia_danh": "Sài Gòn – Gia Định · toàn miền Nam",
+      "mo_ta": "Với 88 người của 5 đội, lực lượng biệt động Sài Gòn đã đánh 5 mục tiêu trọng yếu trong nội thành; 60 đội viên hy sinh, 12 người bị bắt. Trên toàn miền, quân và dân ta tiến công kết hợp nổi dậy ở 4 thành phố, 37 thị xã và hàng trăm quận lỵ, thị trấn, làm chủ cố đô Huế 25 ngày. Cùng bài báo dẫn một thống kê khác từ tài liệu của các nhà báo Mỹ: lực lượng ước chừng 84.000 người đột nhập đồng thời vào 5 trong 6 thành phố, 36 trên 44 thị xã, 36 trên 242 huyện lỵ và 25 sân bay — hai cách đếm khác nhau, không quy về một.",
+      "hien": [
+        "co-mau-than",
+        "doi-11",
+        "cum-679",
+        "doi-5"
+      ],
+      "nguon": [
+        "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483",
+        "Tổng tiến công và nổi dậy xuân Mậu Thân năm 1968 diễn ra như thế nào — Báo Quân đội nhân dân — https://media.qdnd.vn/long-form/tong-tien-cong-va-noi-day-xuan-mau-than-nam-1968-dien-ra-nhu-the-nao-56416"
       ]
     }
   ],
-  "ket_qua": "Biệt động và bộ đội chủ lực đồng loạt tiến công Dinh Độc Lập, Đại sứ quán Mỹ, Bộ Tổng tham mưu, Đài phát thanh và nhiều mục tiêu đầu não khác ngay giữa trung tâm Sài Gòn, gây chấn động dư luận Mỹ.",
-  "y_nghia": "Mũi tiến công trọng điểm của Tổng tiến công và nổi dậy Xuân Mậu Thân 1968, làm lung lay ý chí tiếp tục leo thang chiến tranh của Mỹ.",
+  "ket_qua": "Lực lượng biệt động Sài Gòn – Gia Định đột nhập và đánh chiếm được vị trí ở cả 5 mục tiêu được phân công trong nội thành; 60 trong 88 đội viên hy sinh, 12 người bị bắt. Trên toàn miền Nam, đợt 1 loại khỏi vòng chiến đấu 147.000 quân đối phương, trong đó 43.000 lính Mỹ (Báo Quân đội nhân dân).",
+  "y_nghia": "Đòn đánh vào các cơ quan đầu não giữa nội đô tạo bất ngờ lớn về khả năng đánh vào đô thị của lực lượng cách mạng và gây chấn động dư luận Mỹ. Sau Tết Mậu Thân, ngày 31/3/1968 Tổng thống Mỹ tuyên bố ngừng ném bom miền Bắc và cử đại biểu thương lượng với Hà Nội. Kết quả toàn cuộc không đạt như mong muốn, và chính tài liệu của Đảng đã chỉ ra khuyết điểm chủ quan trong đánh giá tình hình ở các đợt sau.",
   "trang_thai": "draft",
   "nguon": [
+    "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483",
+    "Tổng tiến công và nổi dậy xuân Mậu Thân năm 1968 diễn ra như thế nào — Báo Quân đội nhân dân — https://media.qdnd.vn/long-form/tong-tien-cong-va-noi-day-xuan-mau-than-nam-1968-dien-ra-nhu-the-nao-56416",
     "Báo QĐND — Nét đặc sắc của Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 tại Sài Gòn-Gia Định",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
@@ -146,5 +365,39 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/muctieuchienluoc_dontiencong_Tetmauthan/index.html",
       "buoc": 5
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "TRẬN KHÓ PHÂN ĐỊNH loai_xung_dot — cần người soát §9 quyết. Đã khai noi-chien theo quy ước giai đoạn 1954–1975 của dự án, vì năm trong sáu mục tiêu biệt động đánh (Dinh Độc Lập, Bộ Tổng tham mưu, Đài phát thanh, Bộ tư lệnh Hải quân, Biệt khu thủ đô) đều là cơ quan của chính quyền Sài Gòn. NHƯNG ở mục tiêu toà đại sứ Mỹ, quân Mỹ trực tiếp tham chiến: nguồn ghi Mỹ điều thêm một đơn vị thuộc Sư đoàn dù đổ xuống sân thượng toà nhà. Nếu người soát thấy nên đổi sang ngoai-xam thì đổi, lý do đã ghi ở đây. Diễn biến từng mục tiêu lấy theo bài hồ sơ tư liệu của Báo Quân đội nhân dân; số liệu tương quan lực lượng toàn miền lấy theo bài long-form cùng báo. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "Đêm 30 rạng 31/1/1968 – 1/2/1968 (đợt 1 kéo dài đến 25/2/1968)",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "88 đội viên của 5 đội biệt động, đánh 5 mục tiêu trọng yếu trong nội thành",
+      "don_vi": [
+        "Đội 5 — Dinh Độc Lập",
+        "Cụm biệt động 679 — Bộ Tổng tham mưu",
+        "Đội biệt động 11 — toà đại sứ Mỹ",
+        "Cụm biệt động 345 — Đài phát thanh Sài Gòn",
+        "Đội biệt động 3 (Cụm 345) — Bộ tư lệnh Hải quân",
+        "Tiểu đoàn 268, Phân khu 2 — bắn hiệu lệnh"
+      ],
+      "vu_khi": [
+        "Vũ khí bộ binh thông thường",
+        "10 tấn thuốc nổ, súng đạn và trang bị chuyển vào cất giấu tại các cơ sở kề mục tiêu"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Trên toàn miền Nam hơn 1 triệu 200 nghìn quân — quân Mỹ 542.000, quân các nước thân Mỹ 57.800, quân đội Sài Gòn 650.000"
+    },
+    "nguon": [
+      "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483",
+      "Tổng tiến công và nổi dậy xuân Mậu Thân năm 1968 diễn ra như thế nào — Báo Quân đội nhân dân — https://media.qdnd.vn/long-form/tong-tien-cong-va-noi-day-xuan-mau-than-nam-1968-dien-ra-nhu-the-nao-56416"
+    ]
+  },
+  "ton_that": {
+    "ta": "60 trong tổng số 88 đội viên biệt động của 5 đội hy sinh, 12 người bị bắt; riêng ở Đài phát thanh 10 đồng chí hy sinh, ở Bộ tư lệnh Hải quân 14 chiến sĩ hy sinh",
+    "doi_thu": "Ở Dinh Độc Lập gần 100 quân chết và bị thương, 3 xe Jeep bị phá huỷ; ở Bộ Tổng tham mưu gần 100 quân chết và bị thương, hỏng 2 xe bọc thép; ở toà đại sứ Mỹ 27 quân bị tiêu diệt và 124 bị thương",
+    "nguon": [
+      "Biệt động Sài Gòn – Gia Định trong Tổng tiến công và nổi dậy Tết Mậu Thân 1968 — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
+    ]
+  }
 }

@@ -2574,3 +2574,204 @@ input[type="range"] {
   display: block;
   color: var(--chu-nhat);
 }
+
+/* ── Trường dữ liệu vốn nằm im trong JSON, nay hiện ra (2026-08-28) ────────
+   Mọi màu ở đây đi qua token của theme.css. Gõ thẳng hex là cách hai bảng màu
+   người lớn / trẻ em dừng lại ở mép popup, lỗi mà file này vừa mới đi chữa. */
+
+/* `ghi_chu` — dòng phụ khép lại thân bài. Nằm TRONG <p class="pu-than"> nên
+   phải là <span> chuyển display:block, không được là <p>. */
+.pu-ghi-chu {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: var(--co-2xs);
+  line-height: 1.5;
+  color: var(--chu-nhat);
+}
+
+/* `loi_trich` — ca dao, câu sử. In nghiêng và lùi vào để mắt đọc ra ngay đây
+   là lời của người khác chứ không phải câu do trang viết. */
+.pu-trich {
+  margin: 0.6rem 0 0;
+  padding: 0.1rem 0 0.1rem 0.7rem;
+  border-left: 2px solid var(--vien-nhan);
+  font-size: var(--co-sm);
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--chu-mem);
+}
+
+/* `can_tra_them` — dải cảnh báo. Nền vàng chứ không phải viền mảnh như
+   .pu-canh-bao: hai thứ nói hai chuyện khác nhau (một bên là toạ độ chưa
+   chắc, một bên là NỘI DUNG chưa soát xong) nên không được trông giống nhau. */
+.pu-can-tra {
+  margin: 0.55rem 0 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--bo-nho);
+  background: var(--luu-nen);
+  color: var(--luu-chu);
+  font-size: var(--co-2xs);
+  line-height: 1.5;
+}
+
+/* `diem_thanh_phan` — khối gập, dùng lại bộ xương .pu-ds của lớp bản đồ cổ;
+   `.pu-tp` là phạm vi, giữ bốn luật dưới đây không rơi sang khối gập khác. */
+.pu-tp .pu-tp-luu-y {
+  margin: 0.45rem 0 0;
+  padding: 0.35rem 0.55rem;
+  border-radius: var(--bo-nho);
+  background: var(--mat-chim);
+  color: var(--chu-mem);
+  line-height: 1.5;
+}
+.pu-tp .pu-tp-ten {
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  color: var(--chu);
+}
+/* Nhãn «trùng UNESCO»: không xuống dòng giữa biểu tượng và chữ. */
+.pu-tp .pu-tp-co {
+  margin-left: 0.4em;
+  color: var(--tin-chu);
+  white-space: nowrap;
+}
+.pu-tp .pu-tp-mo-ta {
+  display: block;
+  margin-top: 0.2rem;
+  line-height: 1.55;
+  color: var(--chu-mem);
+}
+
+/* «Bạn có nhớ?» — câu hỏi sinh từ chính mục vừa đọc, đáp án nằm sau một cú bấm
+   (docs/research/trinh-bay-de-nho.md, bảng D mục 2).
+
+   Nền brand rất nhạt để mắt nhận ra đây là chỗ MỜI làm gì đó, khác hẳn khối
+   nguồn im tiếng ngay dưới. Không viền dày, không đổ bóng: nó đứng gần cuối
+   popup và người chỉ muốn đọc phải lướt qua được mà không bị chặn. */
+.pu-nho {
+  margin: 0.6rem 0 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--bo-nho);
+  background: var(--lop-brand-nhe);
+  font-size: var(--co-xs);
+  line-height: 1.5;
+}
+.pu-nho > summary {
+  cursor: pointer;
+  color: var(--chu-mem);
+  list-style: none;
+}
+.pu-nho > summary::-webkit-details-marker {
+  display: none;
+}
+.pu-nho > summary::after {
+  content: " ▸";
+  color: var(--chu-nhat);
+}
+.pu-nho[open] > summary::after {
+  content: " ▾";
+}
+.pu-nho .pu-nho-nhan {
+  font-weight: var(--dam-manh);
+  color: var(--brand);
+}
+/* Đáp án: đủ tương phản để đọc ngay khi vừa mở, vì đây là lúc người ta đối
+   chiếu với thứ mình vừa nhớ ra. */
+.pu-nho > p {
+  margin: 0.35rem 0 0;
+  color: var(--chu);
+}
+
+/* ── NHIỀU MỤC CHỒNG KHÍT MỘT ĐIỂM ────────────────────────────────────────
+   526 mục cùng lớp tụ ở 185 điểm (gộp mọi lớp: 988 mục / 368 điểm). Popup cũ
+   lấy đúng feature đầu, nên ở điểm 16 bảo vật Hoàng thành thì 15 mục không có
+   cách nào bấm tới. Danh sách này là đường vào của 15 mục đó. */
+.pu-nh > .pu-nh-vi-sao {
+  margin: 0.35rem 0 0;
+  padding: 0.4rem 0.55rem;
+  border-radius: var(--bo-nho);
+  background: var(--mat-chim);
+  font-size: var(--co-2xs);
+  line-height: 1.5;
+  color: var(--chu-mem);
+}
+.pu-nh > .pu-nh-ds {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1px;
+}
+
+/* Dòng bấm được. `min-height: 44px` là số TUYỆT ĐỐI chứ không rem: đây là kích
+   thước ngón tay, không phải kích thước chữ, nên nó không được co theo cỡ chữ
+   của chế độ xem. */
+.pu-nh-muc > summary {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.3rem 0.45rem;
+  border-radius: var(--bo-nho);
+  cursor: pointer;
+  list-style: none;
+  /* DÍNH ở mép trên khung cuộn của popup: mở một mục ra thì thân bài dài hơn
+     màn hình, mà đây là đường DUY NHẤT để thu lại và quay về danh sách (không
+     có JS thì không đặt được nút «quay lại» ở cuối). Nền phải đục, nếu không
+     chữ bên dưới chạy xuyên qua. */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--mat);
+}
+.pu-nh-muc > summary::-webkit-details-marker {
+  display: none;
+}
+/* Hai trạng thái dưới đây phải CHỒNG màu nhấn lên nền đục, không thay nền.
+   `--lop-hover` và `--lop-brand-nhe` đều là màu TRONG SUỐT (rgba / color-mix
+   với transparent). Gán thẳng chúng vào `background` của một dòng đang dính thì
+   dòng mất nền đục và chữ thân bài chạy xuyên qua — đo được trên ảnh chụp thật
+   lúc cuộn 300px, không cổng nào bắt. Lớp gradient đặc chỉ để làm nền màu. */
+.pu-nh-muc > summary:hover {
+  background:
+    linear-gradient(var(--lop-hover), var(--lop-hover)),
+    var(--mat);
+}
+.pu-nh-muc[open] > summary {
+  background:
+    linear-gradient(var(--lop-brand-nhe), var(--lop-brand-nhe)),
+    var(--mat);
+}
+.pu-nh-muc > summary::after {
+  content: "▸";
+  margin-left: auto;
+  color: var(--chu-nhat);
+}
+.pu-nh-muc[open] > summary::after {
+  content: "▾";
+}
+.pu-nh-icon {
+  flex: none;
+}
+.pu-nh-chu {
+  min-width: 0;
+}
+.pu-nh-ten {
+  display: block;
+  font-size: var(--co-sm);
+  font-weight: var(--dam-manh);
+  line-height: 1.3;
+  color: var(--chu);
+}
+.pu-nh-phu {
+  display: block;
+  font-size: var(--co-2xs);
+  line-height: 1.35;
+  color: var(--chu-nhat);
+}
+/* Popup đầy đủ của mục đang mở, thụt vào để thấy rõ nó thuộc dòng nào. */
+.pu-nh-day {
+  margin: 0.3rem 0 0.5rem 0.6rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--vien-nhan);
+}

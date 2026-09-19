@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến tranh bảo vệ biên giới Tây Nam 1978–1979 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nội dung bám sát các mục đã duyệt trong chien-dich-tran-danh.json (bien-gioi-tay-nam-1978-1979 + tham-sat-ba-chuc-1978), không suy diễn thêm diễn biến quân sự ngoài nguồn. trang_thai=draft.",
+  "ghi_chu": "Sa đồ chiến tranh bảo vệ biên giới Tây Nam (5/1975 – 7/1/1979) — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "bien-gioi-tay-nam-1978-1979",
   "ten": "Chiến tranh bảo vệ biên giới Tây Nam 1978–1979",
   "nam": 1977,
@@ -16,143 +16,382 @@
       "kieu": "duong",
       "diem": [
         [
-          600,
-          50
+          100,
+          130
         ],
         [
-          500,
+          320,
+          200
+        ],
+        [
+          560,
           300
         ],
         [
-          400,
-          550
+          790,
+          400
+        ],
+        [
+          950,
+          500
         ]
       ],
-      "nhan": "Biên giới Việt Nam – Campuchia"
+      "nhan": "Đường biên giới Việt Nam – Campuchia"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          620,
+          160
+        ],
+        [
+          760,
+          220
+        ],
+        [
+          900,
+          300
+        ]
+      ],
+      "nhan": "Đường số 1 · Đường số 7 · Đường số 13 — các trục phản công"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          80,
+          400
+        ],
+        [
+          110,
+          500
+        ],
+        [
+          90,
+          580
+        ]
+      ],
+      "nhan": "Vùng biển Tây Nam — đảo Phú Quốc, Thổ Chu"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          220,
+          340
+        ],
+        [
+          360,
+          420
+        ],
+        [
+          500,
+          470
+        ]
+      ],
+      "nhan": "Kênh Vĩnh Tế (An Giang)"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-khmer-do",
+      "id": "sa-thay",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 90,
+      "nhan": "Sa Thầy (Kon Tum) — bị xâm nhập sâu trên 10 km"
+    },
+    {
+      "id": "buprang-duc-lap",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 560,
+      "y": 110,
+      "nhan": "Khu vực BuPrăng – Đức Lập",
+      "quy_mo": "Trung đoàn 29 · Tiểu đoàn 304 · Đại đội 17"
+    },
+    {
+      "id": "pol-pot-tien-cong",
       "kieu": "quan",
       "ben": "dich",
-      "x": 450,
-      "y": 150,
-      "nhan": "Quân Khmer Đỏ xâm phạm biên giới"
+      "x": 800,
+      "y": 90,
+      "nhan": "23/12/1978 — 10 trong 19 sư đoàn mở cuộc tiến công trên toàn tuyến"
     },
     {
-      "id": "ba-chuc",
-      "kieu": "dia-danh",
-      "x": 350,
-      "y": 400,
-      "nhan": "Xã Ba Chúc, Tri Tôn, An Giang"
-    },
-    {
-      "id": "co-tuong-niem",
-      "kieu": "co",
-      "x": 420,
-      "y": 460,
-      "nhan": "Thảm sát hơn 3.000 thường dân"
-    },
-    {
-      "id": "quan-ta-phan-cong",
+      "id": "e270-e141",
       "kieu": "quan",
       "ben": "ta",
-      "x": 550,
-      "y": 350,
-      "nhan": "Quân đội Việt Nam phản công (23/12/1978)"
+      "x": 140,
+      "y": 180,
+      "nhan": "Tăng cường cho Hà Tiên và An Giang",
+      "quy_mo": "Trung đoàn 270 · Trung đoàn 141 · Trung đoàn Pháo binh 210"
     },
     {
-      "id": "mui-tien-sau",
+      "id": "tay-ninh",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 560,
+      "y": 250,
+      "nhan": "Tây Ninh — Tân Biên, Bến Cầu"
+    },
+    {
+      "id": "qd3-qd4",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 830,
+      "y": 250,
+      "nhan": "Phản công trên các hướng Đường 7, Đường 1, Đường 13",
+      "quy_mo": "Quân đoàn 3 · Quân đoàn 4"
+    },
+    {
+      "id": "ha-tien",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 300,
+      "nhan": "Hà Tiên · Châu Đốc"
+    },
+    {
+      "id": "tong-phan-cong",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        500,
-        300
+        420,
+        330
       ],
       "den": [
-        250,
-        150
+        700,
+        330
       ],
-      "nhan": "Tiến sâu, phối hợp lực lượng cách mạng Campuchia"
+      "nhan": "Tổng phản công – tiến công chiến lược cuối tháng 12/1978"
+    },
+    {
+      "id": "an-giang",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 330,
+      "y": 390,
+      "nhan": "An Giang — Tri Tôn, Ba Chúc"
+    },
+    {
+      "id": "thu-hoi-31-12",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 830,
+      "y": 430,
+      "nhan": "31/12/1978 — thu hồi phần đất cuối cùng bị lấn chiếm"
+    },
+    {
+      "id": "phu-quoc-tho-chu",
+      "kieu": "dia-danh",
+      "x": 120,
+      "y": 470,
+      "nhan": "Đảo Phú Quốc, Thổ Chu bị xâm chiếm tháng 5/1975"
+    },
+    {
+      "id": "ta-lon",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 470,
+      "nhan": "Tà Lơn — Lữ đoàn Hải quân đánh bộ 126 đổ bộ ngày 6/1/1979"
     },
     {
       "id": "phnom-penh",
       "kieu": "thanh",
-      "x": 150,
-      "y": 100,
-      "nhan": "Phnom Penh"
+      "ben": "dich",
+      "x": 780,
+      "y": 560,
+      "nhan": "Phnôm Pênh — giải phóng trưa 7/1/1979"
     },
     {
-      "id": "co-thang",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 220,
-      "y": 150,
-      "nhan": "Giải phóng Phnom Penh (7/1/1979)"
+      "id": "ba-chuc",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 560,
+      "nhan": "Ba Chúc (An Giang) — 3.157 người bị giết hại"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Khmer Đỏ liên tục xâm phạm biên giới (1975–1978)",
-      "mo_ta": "Từ sau 30/4/1975, quân Khmer Đỏ nhiều lần vượt biên giới Tây Nam tiến công, tàn sát dân thường tại nhiều địa phương.",
+      "tieu_de": "Tháng 5/1975 — xâm chiếm Phú Quốc, Thổ Chu, lấn chiếm biên giới",
+      "thoi_gian": "Tháng 5/1975",
+      "dia_danh": "Phú Quốc · Thổ Chu · Tây Ninh · Kon Tum · Đắk Lắk",
+      "mo_ta": "Sau khi lên nắm chính quyền tháng 4/1975, tập đoàn Pôn Pốt – Iêngxari phản bội sự nghiệp cách mạng của nhân dân Campuchia, thi hành chính sách diệt chủng trong nước và coi Việt Nam là «kẻ thù truyền kiếp». Tháng 5/1975, ngay sau khi Việt Nam thống nhất, quân Pôn Pốt cho quân xâm chiếm đảo Phú Quốc, Thổ Chu, giết hơn 500 dân thường, khiêu khích bộ đội biên phòng và lấn chiếm biên giới các tỉnh Tây Ninh, Kon Tum, Đắk Lắk.",
       "hien": [
-        "quan-dich-khmer-do"
+        "phu-quoc-tho-chu",
+        "tay-ninh",
+        "sa-thay"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Thảm sát Ba Chúc (tháng 4/1978)",
-      "mo_ta": "Quân Khmer Đỏ tràn vào xã Ba Chúc (Tri Tôn, An Giang), chiếm đóng 12 ngày, thảm sát hơn 3.000 thường dân, chỉ còn 3 người sống sót.",
+      "tieu_de": "Cuối 1975 – 1976 — xâm nhập sâu và ráo riết chuẩn bị chiến tranh",
+      "thoi_gian": "Cuối 1975 – 1976",
+      "dia_danh": "Sa Thầy (Kon Tum) · các Quân khu 5, 7, 9",
+      "mo_ta": "Cuối năm 1975 đầu năm 1976, quân Pôn Pốt bất ngờ xâm nhập vào sâu lãnh thổ nước ta, có nơi trên 10 km như ở Sa Thầy (Kon Tum), gây nhiều tội ác với nhân dân. Họ tăng cường khiêu khích, lấn chiếm biên giới trên địa bàn các Quân khu 5, 7, 9, ráo riết chuẩn bị chiến tranh: phát triển quân chủ lực từ 7 sư đoàn khi giải phóng lên 12 sư đoàn chính quy với đầy đủ các binh chủng cùng hàng vạn quân địa phương, điều động 41% quân số, vũ khí, trang bị áp sát biên giới nước ta.",
       "hien": [
-        "ba-chuc",
-        "co-tuong-niem"
+        "sa-thay",
+        "tay-ninh",
+        "ha-tien"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Việt Nam mở phản công quy mô lớn (23/12/1978)",
-      "mo_ta": "Trước hành động xâm lược và tội ác diệt chủng, Việt Nam mở cuộc phản công quy mô lớn trên toàn tuyến biên giới Tây Nam.",
+      "tieu_de": "Đêm 30/4/1977 — tiến công toàn tuyến biên giới An Giang",
+      "thoi_gian": "30/4 – 23/5/1977",
+      "dia_danh": "An Giang",
+      "mo_ta": "Đêm 30/4/1977, lợi dụng lúc quân và dân ta kỷ niệm 2 năm ngày giải phóng hoàn toàn miền Nam, tập đoàn Pôn Pốt mở cuộc tiến công trên toàn tuyến biên giới tỉnh An Giang, chính thức bắt đầu cuộc chiến tranh xâm lược biên giới Tây Nam. Ngày 23/5/1977, Quân uỷ Trung ương ra chỉ thị cho lực lượng vũ trang phía Nam kiên quyết bảo vệ chủ quyền lãnh thổ, không dung thứ bất cứ sự xâm lấn nào, đồng thời tôn trọng chủ quyền lãnh thổ Campuchia.",
       "hien": [
-        "quan-ta-phan-cong"
+        "an-giang",
+        "ha-tien"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Phối hợp lực lượng cách mạng Campuchia",
-      "mo_ta": "Quân đội Việt Nam phối hợp với lực lượng cách mạng Campuchia tiến sâu vào lãnh thổ, đánh đổ chính quyền Khmer Đỏ.",
+      "tieu_de": "Điều chỉnh lực lượng, tổ chức phòng thủ tuyến biên giới",
+      "thoi_gian": "1977",
+      "dia_danh": "BuPrăng – Đức Lập · Hà Tiên · Châu Đốc · Tây Ninh",
+      "mo_ta": "Giai đoạn đầu ta bị động, đối phó lúng túng vì chưa dự kiến các tình huống chiến tranh. Ngay sau đó, ta chỉ đạo các tỉnh, huyện và lực lượng Công an vũ trang điều chỉnh biên chế, bổ sung lực lượng, tăng khả năng phòng thủ. Trên hướng Quân khu 5, ta điều Tiểu đoàn 304 tỉnh Gia Lai – Kon Tum và Đại đội 17 huyện Đắc Tô kết hợp với Trung đoàn 29, Tiểu đoàn 1 của Trung đoàn 95 đứng chân ở khu vực BuPrăng – Đức Lập. Bộ Tổng Tham mưu điều Trung đoàn 64 và Sư đoàn 10 của Quân đoàn 3 thay lực lượng Quân khu 7; điều Trung đoàn 270 tác chiến ở Hà Tiên, Trung đoàn 141 và Trung đoàn Pháo binh 210 xuống An Giang.",
       "hien": [
-        "quan-ta-phan-cong",
-        "mui-tien-sau"
+        "buprang-duc-lap",
+        "e270-e141",
+        "ha-tien",
+        "an-giang",
+        "tay-ninh"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Giải phóng Phnom Penh (7/1/1979)",
-      "mo_ta": "Liên quân tiến vào giải phóng thủ đô Phnom Penh, chấm dứt chế độ diệt chủng Pol Pot.",
+      "tieu_de": "Tháng 7/1977 — cuộc tiến công lớn thứ hai, tàn sát dân thường Tây Ninh",
+      "thoi_gian": "Tháng 7 – 11/1977",
+      "dia_danh": "An Giang · Kiên Giang · Long An · Đồng Tháp · Tây Ninh",
+      "mo_ta": "Tháng 7/1977, quân Pôn Pốt mở cuộc tiến công lớn thứ hai đánh sang địa bàn các tỉnh An Giang, Kiên Giang, Long An, Đồng Tháp rồi phát triển lên hướng Tây Ninh, tàn sát hơn 1.000 dân thường thuộc huyện Tân Biên và Bến Cầu. Trong điều kiện chưa tổ chức được tuyến phòng thủ vững chắc, Bộ Tổng Tham mưu dùng lực lượng cơ động chủ lực đánh lui các cuộc tiến công ở nhiều khu vực: Quân đoàn 4 phối hợp với lực lượng Quân khu 7 tiến công trên hướng Đường số 1; cụm Sư đoàn 10 và Sư đoàn 5 tiến công trên hướng Xa Mát.",
       "hien": [
-        "phnom-penh",
-        "mui-tien-sau"
+        "tay-ninh",
+        "an-giang",
+        "qd3-qd4"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Bảo vệ vững chắc biên giới Tây Nam",
-      "mo_ta": "Chiến thắng bảo vệ vững chắc biên giới Tây Nam của Tổ quốc, đồng thời giúp nhân dân Campuchia thoát khỏi thảm hoạ diệt chủng.",
+      "tieu_de": "Tháng 11/1977 — phản công trên ba trục, truy kích sâu 20 – 30 km",
+      "thoi_gian": "Tháng 11/1977",
+      "dia_danh": "Đường số 7 · Đường số 1 · Đường số 13 · Mimốt · vùng Mỏ Vẹt",
+      "mo_ta": "Phát hiện ta lui quân về phía sau, tháng 11/1977 quân Pôn Pốt mở cuộc tiến công mới nhằm đánh chiếm thị xã Tây Ninh. Bộ Tổng Tham mưu dùng lực lượng cơ động chiến lược của Bộ gồm Quân đoàn 3 và Quân đoàn 4 phối hợp với các sư đoàn chủ lực của Quân khu 7 và Quân khu 9, tổng cộng 8 sư đoàn, mở đợt phản công đồng thời trên các hướng Đường số 7, Đường số 1 và Đường số 13, đuổi quân Pôn Pốt ra khỏi biên giới và truy kích sâu vào đất Campuchia 20 đến 30 km, đánh chiếm các bàn đạp tiến công của đối phương rồi dừng lại ở Mimốt, một số điểm trên Đường số 7 và vùng Mỏ Vẹt trên Đường số 1, đánh thiệt hại 5 sư đoàn.",
       "hien": [
+        "qd3-qd4",
+        "tay-ninh",
+        "tong-phan-cong"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "1978 — vụ thảm sát Ba Chúc và cuộc tiến công 23/12/1978",
+      "thoi_gian": "1978 – 31/12/1978",
+      "dia_danh": "Ba Chúc (Tri Tôn, An Giang) · toàn tuyến biên giới",
+      "mo_ta": "Từ tháng 5/1975 đến tháng 12/1978, quân Pôn Pốt liên tục gây ra các vụ xâm chiếm trên toàn tuyến biên giới Tây Nam, trong đó có vụ thảm sát ở Ba Chúc (An Giang) giết hại 3.157 người. Cuối năm 1978, Pôn Pốt tổ chức 5 sư đoàn và 4 trung đoàn chuẩn bị tiến công Tây Ninh. Nắm được ý định tổng phản công của ta, ngày 23/12/1978 quân Pôn Pốt huy động 10 trong số 19 sư đoàn đang bố trí ở biên giới, mở cuộc tiến công trên toàn tuyến. Ta mở cuộc tổng phản công – tiến công quyết định, dùng cả lục quân, không quân, hải quân; ngày 31/12/1978 thu hồi phần đất cuối cùng của Tổ quốc bị lấn chiếm.",
+      "hien": [
+        "ba-chuc",
+        "pol-pot-tien-cong",
+        "tong-phan-cong",
+        "thu-hoi-31-12"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html",
+        "Chiến tranh bảo vệ biên giới Tây Nam — Cục Văn thư và Lưu trữ nhà nước — https://luutru.gov.vn/chien-tranh-bao-ve-bien-gioi-tay-nam.htm"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "6 – 7/1/1979 — Tà Lơn và giải phóng Phnôm Pênh",
+      "thoi_gian": "6 – 7/1/1979",
+      "dia_danh": "Tà Lơn · Phnôm Pênh",
+      "mo_ta": "Ngày 6/1/1979, Lữ đoàn Hải quân đánh bộ 126 thuộc Quân chủng Hải quân đổ bộ tấn công quân Pôn Pốt ở Tà Lơn. Các cánh quân chọc thủng tuyến phòng thủ vòng ngoài, tiêu diệt ba cụm quân chủ lực Pôn Pốt — mỗi cụm 4 đến 5 sư đoàn — án ngữ các trục đường số 1, số 7, số 2, rồi tiến về Phnôm Pênh. Trưa 7/1/1979, các lực lượng vũ trang cách mạng Campuchia cùng Quân tình nguyện Việt Nam tiến vào giải phóng thủ đô Phnôm Pênh, kết thúc cuộc chiến tranh bảo vệ Tổ quốc ở biên giới Tây Nam.",
+      "hien": [
+        "ta-lon",
         "phnom-penh",
-        "co-thang"
+        "qd3-qd4",
+        "thu-hoi-31-12"
+      ],
+      "nguon": [
+        "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html",
+        "Chiến tranh bảo vệ biên giới Tây Nam — bài học bảo vệ Tổ quốc — Báo Nhân Dân — https://nhandan.vn/special/chientranhbiengioitaynam_baihocbaovetoquoc/index.html",
+        "Chiến tranh bảo vệ biên giới Tây Nam — Cục Văn thư và Lưu trữ nhà nước — https://luutru.gov.vn/chien-tranh-bao-ve-bien-gioi-tay-nam.htm"
       ]
     }
   ],
-  "ket_qua": "Việt Nam phối hợp lực lượng cách mạng Campuchia giải phóng Phnom Penh (7/1/1979), chấm dứt chế độ diệt chủng Pol Pot, bảo vệ vững chắc biên giới Tây Nam.",
-  "y_nghia": "Vừa bảo vệ chủ quyền lãnh thổ trước hành động xâm lược, vừa giúp nhân dân Campuchia thoát khỏi thảm hoạ diệt chủng Khmer Đỏ.",
+  "ket_qua": "Ta và lực lượng vũ trang cách mạng Campuchia tiêu diệt và làm tan rã 18 sư đoàn quân Pôn Pốt, trong đó xoá sổ 5 sư đoàn, diệt 12.000 và bắt sống 8.800; ngày 31/12/1978 thu hồi phần đất cuối cùng của Tổ quốc bị lấn chiếm; trưa 7/1/1979 giải phóng thủ đô Phnôm Pênh, giải phóng 4 triệu dân Campuchia và đập tan bộ máy thống trị của tập đoàn Pôn Pốt (Tạp chí Quốc phòng toàn dân).",
+  "y_nghia": "Cuộc chiến tranh bảo vệ biên giới Tây Nam là hành động tự vệ chính đáng, bảo vệ chủ quyền và toàn vẹn lãnh thổ, đồng thời góp phần đưa nhân dân Campuchia thoát khỏi hoạ diệt chủng. Bài học nổi lên là về cảnh giác và xác định đúng đối tượng tác chiến — giai đoạn đầu ta còn bị động vì chưa đánh giá đúng bản chất và ý đồ của đối phương — cùng nghệ thuật kết hợp lực lượng tại chỗ với lực lượng cơ động chiến dịch, chiến lược.",
   "trang_thai": "draft",
   "nguon": [
+    "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html",
+    "Chiến tranh bảo vệ biên giới Tây Nam — Cục Văn thư và Lưu trữ nhà nước — https://luutru.gov.vn/chien-tranh-bao-ve-bien-gioi-tay-nam.htm",
+    "Chiến tranh bảo vệ biên giới Tây Nam — bài học bảo vệ Tổ quốc — Báo Nhân Dân — https://nhandan.vn/special/chientranhbiengioitaynam_baihocbaovetoquoc/index.html",
     "Bảo tàng Lịch sử Quốc gia — Cuộc chiến đấu bảo vệ Tổ quốc trên biên giới Tây Nam (baotanglichsu.vn)",
-    "Báo Nhân Dân — Chiến thắng chiến tranh bảo vệ Tổ quốc ở biên giới Tây Nam (nhandan.vn)",
     "Báo An Giang — Lễ tưởng niệm những nạn nhân bị sát hại trong chiến tranh biên giới Tây Nam (baoangiang.com.vn)",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+  ],
+  "ghi_chu_bien_tap": "Diễn biến và cách dùng lực lượng theo Tạp chí Quốc phòng toàn dân; số liệu vụ Ba Chúc theo Cục Văn thư và Lưu trữ nhà nước; mốc 23/12/1978 và 7/1/1979 có ở cả ba nguồn. Khối ton_that.ta là thiệt hại DÂN THƯỜNG theo đúng cách các nguồn nêu; không tìm được số liệu chính thức về tổn thất bộ đội nên không khai. Trường nam của hồ sơ đang là 1977 (năm chiến tranh chính thức bắt đầu theo Tạp chí Quốc phòng toàn dân) — giữ nguyên. Không khai loai_xung_dot: đối thủ là quân Pôn Pốt nên mặc định ngoai-xam là đúng. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "thoi_gian": "Tháng 5/1975 – 7/1/1979",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Quân đoàn 3 và Quân đoàn 4 — lực lượng cơ động chiến lược của Bộ",
+        "Các sư đoàn chủ lực Quân khu 5, Quân khu 7, Quân khu 9",
+        "Trung đoàn 270 và Trung đoàn 141, Trung đoàn Pháo binh 210",
+        "Trung đoàn 64 (Sư đoàn 320) và Sư đoàn 10 (Quân đoàn 3)",
+        "Lữ đoàn Hải quân đánh bộ 126",
+        "Bộ đội địa phương, công an vũ trang, dân quân tự vệ xã, ấp, buôn làng"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Quân chủ lực phát triển từ 7 sư đoàn khi giải phóng lên 12 sư đoàn chính quy cùng hàng vạn quân địa phương; điều động 41% quân số, vũ khí, trang bị áp sát biên giới Việt Nam; đến 23/12/1978 huy động 10 trong số 19 sư đoàn bố trí ở biên giới"
+    },
+    "nguon": [
+      "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
+    ]
+  },
+  "ton_that": {
+    "ta": [
+      {
+        "so": "Vụ thảm sát ở Ba Chúc (An Giang) giết hại 3.157 người dân",
+        "nguon": "Chiến tranh bảo vệ biên giới Tây Nam — Cục Văn thư và Lưu trữ nhà nước — https://luutru.gov.vn/chien-tranh-bao-ve-bien-gioi-tay-nam.htm"
+      },
+      {
+        "so": "Hơn 1.000 dân thường ở huyện Tân Biên và Bến Cầu (Tây Ninh) bị tàn sát tháng 7/1977; hơn 500 dân thường bị giết khi quân Pôn Pốt xâm chiếm đảo Phú Quốc, Thổ Chu tháng 5/1975",
+        "nguon": "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
+      }
+    ],
+    "doi_thu": "18 sư đoàn quân Pôn Pốt bị tiêu diệt và làm tan rã, trong đó 5 sư đoàn bị xoá sổ; 12.000 bị diệt, 8.800 bị bắt sống",
+    "nguon": [
+      "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html"
+    ]
+  },
+  "trich_van_tich": [
+    {
+      "sach": "Chỉ thị của Quân uỷ Trung ương cho lực lượng vũ trang phía Nam, ngày 23/5/1977",
+      "doan": "Kiên quyết bảo vệ chủ quyền lãnh thổ của nước ta, không dung thứ bất cứ sự xâm lấn nào của lực lượng khiêu khích phản động Campuchia vào lãnh thổ ta; đồng thời, tôn trọng chủ quyền lãnh thổ Campuchia. Tìm mọi cách làm nhụt tinh thần của bọn khiêu khích,... đập tan âm mưu chia rẽ các nước anh em trên bán đảo Đông Dương",
+      "nguon_trich": "Nghệ thuật sử dụng lực lượng trong cuộc chiến tranh bảo vệ biên giới Tây Nam — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tim-hieu-truyen-thong-quan-su/nghe-thuat-su-dung-luc-luong-trong-cuoc-chien-tranh-bao-ve-bien-gioi-tay-nam-16445.html",
+      "buoc": 3
+    }
   ]
 }

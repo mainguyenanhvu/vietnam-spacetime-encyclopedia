@@ -1,0 +1,809 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   TRÌNH ĐỌC TOÀN VĂN — lớp phủ toàn màn hình (src/doc-sach.ts)
+   ═══════════════════════════════════════════════════════════════════════
+
+   Kéo vào bằng `import "./doc-sach.css"` ngay trong doc-sach.ts, KHÔNG bằng
+   @import trong style.css: file này chỉ có nghĩa khi module kia được nạp, và
+   style.css không nằm trong phạm vi sửa của đợt này.
+
+   🔴 KHÔNG @keyframes, KHÔNG backdrop-filter — cùng hai lý do đã ghi ở đầu
+   thuvien.css: luật giảm-chuyển-động toàn cục ép `animation-duration: .01ms`
+   nên hiệu ứng bắt đầu từ `opacity: 0` sẽ kẹt vô hình, và blur trên một vùng
+   đang cuộn là đúng cái lag dự án đã đo được.
+
+   🔴 Ba nền đọc khai bằng BIẾN CỤC BỘ trên .ds-hop chứ không phải ba danh sách
+   bộ chọn. thuvien.css phải liệt kê ~20 selector cho mỗi nền vì nó ra đời
+   trước; ở đây mỗi thành phần đọc `var(--ds-*)` đúng một lần, và thêm nền thứ
+   tư chỉ là thêm một khối 9 dòng.
+
+   Mọi tỉ lệ tương phản trích dưới đây đã được đo ở thuvien.css khi bộ token
+   `--doc-nga-*` / `--doc-toi-*` ra đời — dùng lại nguyên cặp, không đổi giá trị. */
+
+/* Khoá cuộn nền khi trình đọc mở. Lớp phủ che kín màn hình nên trang phía sau
+   không được cuộn theo cú lăn chuột lọt ra ngoài mép hộp. */
+.ds-khoa-cuon,
+.ds-khoa-cuon body {
+  overflow: hidden;
+}
+
+.ds-lop {
+  position: fixed;
+  inset: 0;
+  /* Trên panel (20) và topbar (30), trên cả lớp «cầm tay chỉ việc» (60/61),
+     dưới link «bỏ qua tới bản đồ» (100) — link đó phải luôn chạm tới được. */
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--hd-mo);
+}
+
+.ds-hop {
+  /* ── Bảng màu theo nền đọc. Mặc định = nền SÁNG. ────────────────────── */
+  --ds-nen: var(--mat);
+  --ds-chu: var(--chu);
+  --ds-mo: var(--chu-mem);
+  --ds-tat: var(--chu-nhat);
+  --ds-vien: var(--lib-vien);
+  --ds-nut-nen: var(--mat);
+  --ds-chon-nen: var(--lib-tab-chon-nen);
+  --ds-chon-chu: var(--mat);
+  --ds-focus: var(--focus);
+
+  /* ── Nấc cỡ chữ · giãn dòng · bề rộng cột ───────────────────────────── */
+  /* Gốc nhích hơn thân trang 15%: đây là màn hình dành riêng cho việc đọc,
+     và nhân theo --co-md nên chế độ trẻ em vẫn to hơn theo thang chữ của nó. */
+  --ds-goc: calc(var(--co-md) * 1.15);
+  --ds-co: var(--doc-co-b3);
+  --ds-dong: var(--doc-dong-rong);
+  --ds-cot: var(--ds-cot-vua);
+
+  /* Bề rộng cột riêng của trình đọc, KHÔNG dùng lại --doc-cot-* của khung đọc
+     trong panel: ở đó cột nằm trong một hộp hẹp và font không chân, ở đây
+     font có chân và không có gì giới hạn bề ngang ngoài chính con số này.
+     Đơn vị `ch` theo WCAG 1.4.10 Reflow; khoảng đọc dễ là 45–75 ký tự/dòng.
+
+     Ba số này ĐO RA chứ không ước: `ch` là bề ngang chữ số 0, mà chữ Việt
+     thường hẹp hơn thế, nên số ký tự thật LỚN HƠN số `ch`. Đo trên Chrome
+     1280×900, cỡ b3 (18,7px), phông Constantia, bằng chính câu chữ của tác
+     phẩm: 1ch = 10,06px và một ký tự trung bình 8,67px, nên 62ch ra 72 ký tự
+     — quá khoảng 60–70. 57ch ra 574px ≈ 66 ký tự, đúng giữa khoảng. */
+  --ds-cot-hep: 46ch;
+  --ds-cot-vua: 57ch;
+  --ds-cot-rong: 72ch;
+
+  /* 🔴 KHÔNG dùng --doc-serif của thuvien.css: nó mở đầu bằng Georgia, và
+     Georgia trên Windows KHÔNG có glyph dựng sẵn cho nguyên âm Việt hai dấu.
+     Đo bằng canvas measureText("ấ") ở 26px: Georgia 26,1px — đúng gấp đôi,
+     tức trình duyệt phải ghép chữ cái với hai dấu rời — trong khi Constantia
+     12,48 · Cambria 12,70 · Times New Roman 11,54. Trên màn hình nó hiện ra
+     thành «mâ ́t», «triê ̀u»: chữ và dấu tách rời. Constantia đứng đầu vì nó
+     là phông có chân Microsoft thiết kế riêng cho đọc trên màn hình. */
+  --ds-serif: Constantia, Cambria, "Noto Serif", "Times New Roman", Times, serif;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* Màn siêu rộng: chừa nền hai bên thay vì kéo thanh công cụ dài 3 m. */
+  max-width: 1400px;
+  background: var(--ds-nen);
+  color: var(--ds-chu);
+}
+
+.ds-hop[data-nen="nga"] {
+  --ds-nen: var(--doc-nga-nen);
+  --ds-chu: var(--doc-nga-chu); /* 11,12:1 */
+  --ds-mo: var(--doc-nga-mo); /*  5,80:1 */
+  --ds-tat: var(--doc-nga-tat); /*  3,79:1 trên nền nút */
+  --ds-vien: var(--doc-nga-vien);
+  --ds-nut-nen: var(--doc-nga-nut); /* chữ chính trên đây: 9,44:1 */
+  --ds-chon-nen: var(--doc-nga-chon-nen);
+  --ds-chon-chu: var(--doc-nga-chon-chu); /*  7,29:1 */
+  --ds-focus: var(--doc-nga-focus); /*  5,41:1 */
+}
+
+.ds-hop[data-nen="toi"] {
+  --ds-nen: var(--doc-toi-nen);
+  --ds-chu: var(--doc-toi-chu); /* 13,97:1 */
+  --ds-mo: var(--doc-toi-mo); /*  7,54:1 */
+  --ds-tat: var(--doc-toi-tat); /*  3,86:1 trên nền nút */
+  --ds-vien: var(--doc-toi-vien);
+  --ds-nut-nen: var(--doc-toi-nut); /* chữ chính trên đây: 11,65:1 */
+  --ds-chon-nen: var(--doc-toi-chon-nen);
+  --ds-chon-chu: var(--doc-toi-chon-chu); /* 10,41:1 */
+  --ds-focus: var(--doc-toi-focus); /* 10,41:1 */
+}
+
+.ds-hop :focus-visible {
+  outline: 2px solid var(--ds-focus);
+  outline-offset: 2px;
+}
+
+/* ═══ Nút dùng chung ═══════════════════════════════════════════════════════
+   `--lib-cham` = max(2.75rem, 44px). KHÔNG viết 2.75rem trần: theme.css đặt
+   `html { font-size: var(--co-md) }` nên 1rem chỉ còn 15,04px ở chế độ người
+   lớn và 2.75rem ra 41,4px — thiếu 3px so với chuẩn. Xem chú thích gốc ở
+   thuvien.css. */
+
+.ds-nut {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: var(--lib-cham);
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--ds-vien);
+  border-radius: var(--bo-nho);
+  background: var(--ds-nut-nen);
+  color: var(--ds-chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+  font-weight: var(--dam-vua);
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.ds-nut:hover:not(:disabled) {
+  background: var(--ds-chon-nen);
+  color: var(--ds-chon-chu);
+}
+
+.ds-nut:disabled {
+  color: var(--ds-tat);
+  cursor: default;
+}
+
+.ds-chon,
+.ds-chon:hover {
+  background: var(--ds-chon-nen);
+  border-color: var(--ds-chon-nen);
+  color: var(--ds-chon-chu);
+}
+
+/* Nút chỉ có một ký hiệu — phải vuông ≥ 44px cả hai chiều, không chỉ chiều cao. */
+.ds-dong,
+.ds-truoc,
+.ds-sau {
+  min-width: var(--lib-cham);
+  padding: 0.35rem;
+  font-size: var(--co-xl);
+}
+
+/* ═══ Thanh đầu ═══════════════════════════════════════════════════════════ */
+
+.ds-dau {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--ds-vien);
+}
+
+.ds-danh {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.ds-ten {
+  margin: 0;
+  font-size: var(--co-lg);
+  /* Tên tác phẩm dài hơn thanh đầu thì cắt bằng "…" chứ không đẩy nút xuống. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ds-meta {
+  margin: 0.1rem 0 0;
+  color: var(--ds-mo);
+  font-size: var(--co-xs);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ds-nut-dau {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+/* ── Bảng tuỳ chỉnh ─────────────────────────────────────────────────────── */
+
+.ds-tc {
+  position: relative;
+}
+
+.ds-tc > summary {
+  list-style: none;
+}
+
+.ds-tc > summary::-webkit-details-marker {
+  display: none;
+}
+
+.ds-tc > summary::after {
+  content: "▾";
+  font-size: 0.75em;
+}
+
+.ds-tc[open] > summary::after {
+  content: "▴";
+}
+
+.ds-tc-than {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  z-index: 2;
+  display: grid;
+  gap: var(--s-3);
+  width: max(16rem, 92vw - 2rem);
+  max-width: 22rem;
+  max-height: min(70vh, 32rem);
+  overflow-y: auto;
+  padding: var(--s-3);
+  border: 1px solid var(--ds-vien);
+  border-radius: var(--bo-vua);
+  background: var(--ds-nen);
+  box-shadow: var(--bong-2);
+}
+
+.ds-tc-nhom {
+  border: none;
+}
+
+.ds-tc-nhom legend {
+  padding: 0 0 0.25rem;
+  color: var(--ds-mo);
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+}
+
+.ds-tc-nut {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* min-width, không chỉ min-height: nhãn ngắn («Gọn», «Vừa») đo được 41,1×44px
+   trên Chrome — cao đủ mà rộng thiếu 3px. Vùng chạm phải đủ CẢ HAI chiều. */
+.ds-tc-btn {
+  min-width: var(--lib-cham);
+  font-size: var(--co-xs);
+}
+
+/* ═══ Thân: mục lục + cột chữ ═════════════════════════════════════════════ */
+
+.ds-giua {
+  position: relative;
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  /* min-height: 0 — nếu không, con cuộn được trong grid sẽ tự kéo cao bằng
+     nội dung và cả trình đọc mất thanh cuộn riêng. */
+  min-height: 0;
+}
+
+.ds-ml {
+  width: 17rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--s-3);
+  border-right: 1px solid var(--ds-vien);
+}
+
+.ds-hop[data-muc-luc="an"] .ds-ml {
+  display: none;
+}
+
+.ds-ml-nhan {
+  margin: 0 0 var(--s-2);
+  color: var(--ds-mo);
+  font-size: var(--co-2xs);
+  font-weight: var(--dam-manh);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ds-ml-ds {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Số phần do CSS đếm, không do dữ liệu ghi: tiêu đề trong nguồn hay đã mang
+     sẵn chữ «Khúc 3» theo cách gọi riêng của tác phẩm — đánh số cứng sẽ ra
+     «3. Khúc 3». Cùng lý do đã ghi ở .lib-muc-luc trong thuvien.css. */
+  counter-reset: phan;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.ds-ml-ds li {
+  counter-increment: phan;
+}
+
+.ds-ml-btn {
+  display: flex;
+  gap: 0.6em;
+  align-items: baseline;
+  width: 100%;
+  min-height: var(--lib-cham);
+  padding: 0.4rem 0.5rem;
+  border: none;
+  border-radius: var(--bo-nho);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: var(--co-sm);
+  text-align: left;
+  cursor: pointer;
+}
+
+.ds-ml-btn::before {
+  content: counter(phan);
+  min-width: 1.6em;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.55;
+}
+
+.ds-ml-btn:hover {
+  background: var(--ds-nut-nen);
+}
+
+/* Chương đang đọc. Vạch dọc bên trái chứ không phải nền đặc: nền đặc trong
+   một danh sách dài đọc như một nút đang được bấm giữ. */
+.ds-ml-nay {
+  box-shadow: inset 3px 0 0 var(--ds-chon-nen);
+  background: var(--ds-nut-nen);
+  font-weight: var(--dam-manh);
+}
+
+.ds-doc {
+  overflow-y: auto;
+  /* Cuộn hết bài không được lôi trang phía sau cuộn theo. */
+  overscroll-behavior: contain;
+  padding: var(--s-6) var(--s-4) var(--s-8);
+  font-size: calc(var(--ds-goc) * var(--ds-co));
+  line-height: var(--ds-dong);
+}
+
+.ds-trang {
+  /* 🔴 BIẾN SỐ QUYẾT ĐỊNH NHẤT của việc đọc dài. Dòng chạy hết bề ngang màn
+     hình là thứ làm mắt lạc dòng khi xuống hàng. */
+  max-width: var(--ds-cot);
+  margin: 0 auto;
+}
+
+.ds-hop[data-cot="hep"] {
+  --ds-cot: var(--ds-cot-hep);
+}
+.ds-hop[data-cot="vua"] {
+  --ds-cot: var(--ds-cot-vua);
+}
+.ds-hop[data-cot="rong"] {
+  --ds-cot: var(--ds-cot-rong);
+}
+
+.ds-hop[data-co-chu="b1"] {
+  --ds-co: var(--doc-co-b1);
+}
+.ds-hop[data-co-chu="b2"] {
+  --ds-co: var(--doc-co-b2);
+}
+.ds-hop[data-co-chu="b3"] {
+  --ds-co: var(--doc-co-b3);
+}
+.ds-hop[data-co-chu="b4"] {
+  --ds-co: var(--doc-co-b4);
+}
+.ds-hop[data-co-chu="b5"] {
+  --ds-co: var(--doc-co-b5);
+}
+
+.ds-hop[data-giai-dong="gon"] {
+  --ds-dong: var(--doc-dong-gon);
+}
+.ds-hop[data-giai-dong="vua"] {
+  --ds-dong: var(--doc-dong-vua);
+}
+.ds-hop[data-giai-dong="rong"] {
+  --ds-dong: var(--doc-dong-rong);
+}
+.ds-hop[data-giai-dong="rat-rong"] {
+  --ds-dong: var(--doc-dong-rat-rong);
+}
+
+/* Chữ có chân là MẶC ĐỊNH của thân bài — Georgia/Noto Serif/Times, tất cả đều
+   là phông hệ thống. CSP của trang (index.html) chặn mọi host phông ngoài, nên
+   ở đây không có @font-face và cũng không được thêm. */
+.ds-hop[data-phong="co-chan"] .ds-doc {
+  font-family: var(--ds-serif);
+}
+
+.ds-hop[data-phong="khong-chan"] .ds-doc {
+  font-family: var(--font);
+}
+
+.ds-tac-gia {
+  margin: 0 0 var(--s-2);
+  color: var(--ds-mo);
+  font-size: 0.92em;
+}
+
+.ds-loi-binh {
+  margin: 0 0 var(--s-5);
+  padding-bottom: var(--s-4);
+  border-bottom: 1px solid var(--ds-vien);
+  font-style: italic;
+}
+
+/* ── Chương ─────────────────────────────────────────────────────────────── */
+
+.ds-chuong-ten {
+  margin: 0 0 0.7em;
+  font-size: 1.08em;
+  /* scroll-margin: mục lục nhảy tới bằng scrollIntoView; không có khoảng này
+     thì tiêu đề dính sát mép trên và trông như bị cắt. */
+  scroll-margin-top: var(--s-4);
+}
+
+/* Vạch kẻ TRÊN đầu chương chứ không phải dưới: mắt đọc xong một chương cần
+   một khoảng nghỉ trước khi vào chương sau. */
+.ds-chuong + .ds-chuong {
+  margin-top: 2.2em;
+  padding-top: 1.6em;
+  border-top: 1px solid var(--ds-vien);
+}
+
+.ds-khoi {
+  margin: 0;
+}
+
+.ds-cau {
+  margin: 0;
+}
+
+/* Thơ: các câu dính liền thành khổ; câu dài tràn dòng thì THỤT VÀO, để dòng
+   tràn không bị đọc nhầm thành một câu mới. */
+.ds-khoi[data-kieu="tho"] .ds-cau {
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+}
+
+/* Văn xuôi: mỗi phần tử là một đoạn, nên phải có khoảng thở giữa các đoạn. */
+.ds-khoi[data-kieu="van"] .ds-cau + .ds-cau {
+  margin-top: 0.9em;
+}
+
+.ds-khoi[data-kieu="van"] .ds-cau {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* ── Song ngữ ───────────────────────────────────────────────────────────── */
+
+.ds-nhan-khoi {
+  margin: 0 0 0.5em;
+  color: var(--ds-mo);
+  font-size: var(--co-2xs);
+  font-weight: var(--dam-manh);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ds-song {
+  display: grid;
+  gap: var(--s-5);
+}
+
+/* Mặc định XẾP CHỒNG, hai cột chỉ bật lên ở màn rộng (cuối file). Ép hai cột
+   vào 390px thì mỗi cột còn chừng 20 ký tự — tệ hơn hẳn xếp chồng. */
+.ds-hop[data-song-ngu="song"] .ds-song {
+  grid-template-columns: 1fr;
+}
+
+.ds-hop[data-song-ngu="nguyen"] .ds-cot-dich,
+.ds-hop[data-song-ngu="dich"] .ds-cot-nguyen {
+  display: none;
+}
+
+/* Chỉ một khối hiện thì nhãn «Nguyên văn»/«Bản dịch» thành thừa. */
+.ds-hop[data-song-ngu="nguyen"] .ds-cot-nguyen .ds-nhan-khoi,
+.ds-hop[data-song-ngu="dich"] .ds-cot-dich .ds-nhan-khoi {
+  display: none;
+}
+
+.ds-ghi-chu {
+  margin: var(--s-5) 0 0;
+  color: var(--ds-mo);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+}
+
+/* ── Từ điển của tác phẩm ───────────────────────────────────────────────── */
+
+.ds-tudien {
+  margin: 0 0 var(--s-5);
+  border: 1px solid var(--ds-vien);
+  border-radius: var(--bo-vua);
+}
+
+.ds-tudien > summary {
+  min-height: var(--lib-cham);
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.7rem;
+  font-size: var(--co-sm);
+  font-weight: var(--dam-vua);
+  cursor: pointer;
+}
+
+.ds-tudien dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem 0.8rem;
+  margin: 0;
+  padding: 0 0.7rem 0.7rem;
+  font-size: var(--co-sm);
+}
+
+.ds-tudien dt {
+  font-weight: var(--dam-manh);
+}
+
+.ds-tudien dd {
+  margin: 0;
+  color: var(--ds-mo);
+}
+
+/* ── Bản quyền & nguồn ──────────────────────────────────────────────────── */
+
+/* CỐ Ý không gập lại được: bất biến #3 của dự án là mọi mục phải nói được văn
+   bản lấy ở đâu. Giấu nó sau một cú bấm là giấu đúng thứ phải hiện. */
+.ds-bq {
+  margin-top: var(--s-8);
+  padding: var(--s-4);
+  border: 1px solid var(--ds-vien);
+  border-radius: var(--bo-vua);
+  font-size: var(--co-sm);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+.ds-bq h3 {
+  margin: 0 0 var(--s-3);
+  font-size: var(--co-md);
+}
+
+.ds-bq h4 {
+  margin: var(--s-4) 0 var(--s-2);
+  color: var(--ds-mo);
+  font-size: var(--co-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ds-bq-bang {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.9rem;
+  margin: 0;
+}
+
+.ds-bq-bang dt {
+  color: var(--ds-mo);
+  white-space: nowrap;
+}
+
+.ds-bq-bang dd {
+  margin: 0;
+}
+
+.ds-nguon {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.ds-nguon li {
+  word-break: break-word;
+}
+
+/* ═══ Thanh chân: tiến độ + lật trang + ghi chú phím ══════════════════════ */
+
+.ds-chan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-2) var(--s-4);
+  border-top: 1px solid var(--ds-vien);
+}
+
+.ds-tien-do {
+  flex: 1 1 10rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--co-2xs);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Đường ray là phần tử THẬT chứ không phải `::before`: vạch chạy định vị theo
+   phần trăm nên nó phải đo theo bề rộng của chính đường ray, không phải của cả
+   khối (khối còn chứa ô phần trăm). */
+.ds-ray {
+  position: relative;
+  flex: 1;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--ds-vien);
+}
+
+.ds-thanh {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 999px;
+  background: var(--ds-chu);
+  opacity: 0.7;
+  transition: width 0.12s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-thanh {
+    transition: none;
+  }
+}
+
+.ds-phan-tram {
+  min-width: 2.8em;
+  text-align: right;
+  color: var(--ds-mo);
+}
+
+.ds-lat {
+  display: flex;
+  gap: var(--s-2);
+}
+
+.ds-phim {
+  flex: 1 1 100%;
+  margin: 0;
+  color: var(--ds-mo);
+  font-size: var(--co-2xs);
+}
+
+/* ═══ Chú giải từ khó bên trong trình đọc ═════════════════════════════════
+   Widget do `tu-kho-tre-em.ts` sinh (.tk-boc/.tk-tu/.tk-nghia) và style gốc
+   của nó ở style.css dùng --brand/--mat-2/--chu-mem — toàn màu của nền SÁNG.
+   Đặt nguyên lên nền «tối» thì hộp chú giải thành một mảng trắng chói giữa
+   trang đen. Chỉ đổi màu, giữ nguyên hình dáng và mọi hành vi. */
+
+.ds-lop .tk-tu {
+  border-bottom-color: currentColor;
+}
+
+.ds-lop .tk-tu::after {
+  color: currentColor;
+}
+
+.ds-lop .tk-tu:hover,
+.ds-lop .tk-tu:focus-visible,
+.ds-lop .tk-tu[aria-expanded="true"] {
+  background: var(--ds-nut-nen);
+}
+
+/* ═══ Khung video trong trình đọc ═════════════════════════════════════════
+   Markup do `videoThoHtml()` bên thuvien.ts dựng, nên nó mang class của
+   thuvien.css. `.lib-yt` dùng --nen-khung-video (đen, cố định xuyên chế độ)
+   nên chạy đúng trên cả ba nền đọc. Hai class còn lại thì không: `.lib-phu`
+   lấy --chu-mem và `.lib-canh-bao` lấy cặp --luu-nen/--luu-chu — toàn màu
+   cho nền SÁNG, đặt nguyên lên nền tối là một mảng vàng chói. */
+
+.ds-video {
+  margin: 0 0 var(--s-5);
+}
+
+.ds-video .lib-phu {
+  margin: 0 0 0.4rem;
+  color: var(--ds-mo);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+}
+
+.ds-trang .lib-canh-bao {
+  border-color: var(--ds-vien);
+  background: var(--ds-nut-nen);
+  color: var(--ds-chu);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+}
+
+.ds-lop .tk-nghia {
+  border-left-color: var(--ds-chon-nen);
+  background: var(--ds-nut-nen);
+  color: var(--ds-chu);
+  font-family: var(--font);
+}
+
+/* ═══ Màn hẹp ═════════════════════════════════════════════════════════════ */
+
+/* Dưới 900px mục lục thành NGĂN KÉO đè lên chữ thay vì một cột chia đôi bề
+   ngang. Cột chữ ở đây chỉ còn ~50 ký tự; cắt thêm 17rem nữa là hỏng. */
+@media (max-width: 899px) {
+  .ds-giua {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-ml {
+    position: absolute;
+    inset: 0 auto 0 0;
+    z-index: 3;
+    width: min(20rem, 84%);
+    background: var(--ds-nen);
+    box-shadow: var(--bong-2);
+  }
+}
+
+@media (max-width: 560px) {
+  .ds-dau {
+    gap: var(--s-2);
+    padding: var(--s-2) var(--s-3);
+  }
+
+  .ds-danh {
+    /* Tên chiếm trọn hàng đầu, hàng nút xuống dưới — 390px không đủ cho cả hai. */
+    flex-basis: 100%;
+  }
+
+  .ds-doc {
+    padding: var(--s-4) var(--s-3) var(--s-6);
+  }
+
+  .ds-bq-bang,
+  .ds-tudien dl {
+    /* Hai cột thành hai dòng; giá trị thụt vào cho thấy nó thuộc về nhãn trên. */
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .ds-bq-bang dd,
+  .ds-tudien dd {
+    margin-bottom: 0.5rem;
+    padding-left: 0.8rem;
+  }
+}
+
+/* Còn chỗ cho hai cột chữ thì bày song ngữ cạnh nhau.
+
+   🔴 `[data-co-dich="1"]` là ĐIỀU KIỆN BẮT BUỘC, không phải chi tiết thừa.
+   Bỏ nó ra thì mọi tác phẩm KHÔNG có bản dịch cũng bị nới cột gấp đôi, vì lựa
+   chọn «song song» vẫn còn nằm trong localStorage. Đo được: một bài không có
+   bản dịch hiện ra 976px ≈ 111 ký tự một dòng — gấp rưỡi khoảng đọc dễ. */
+@media (min-width: 1100px) {
+  .ds-hop[data-co-dich="1"][data-song-ngu="song"][data-cot="hep"] .ds-song,
+  .ds-hop[data-co-dich="1"][data-song-ngu="song"][data-cot="vua"] .ds-song {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Song song thì cột chữ phải nới ra gấp đôi, nếu không hai cột chen trong
+     bề rộng vốn dành cho một. */
+  .ds-hop[data-co-dich="1"][data-song-ngu="song"][data-cot="hep"] .ds-trang,
+  .ds-hop[data-co-dich="1"][data-song-ngu="song"][data-cot="vua"] .ds-trang {
+    max-width: calc(var(--ds-cot) * 2 + var(--s-5));
+  }
+}
+
+@media (min-width: 1500px) {
+  .ds-hop[data-co-dich="1"][data-song-ngu="song"] .ds-song {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ds-hop[data-co-dich="1"][data-song-ngu="song"] .ds-trang {
+    max-width: calc(var(--ds-cot) * 2 + var(--s-5));
+  }
+}

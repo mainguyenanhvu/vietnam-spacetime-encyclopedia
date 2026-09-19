@@ -155,7 +155,7 @@ function phimCard(ten: string, vid: string, kenh_loai: string, draft: boolean): 
 
 function danhNhanCard(d: DanhNhan): string {
   const hasVid = !!d.youtube_id && YT.test(d.youtube_id);
-  const meta = [d.linh_vuc, d.que].filter(Boolean).map((x) => esc(x as string)).join(" · ");
+  const meta = [d.linh_vuc, d.que].filter(Boolean).map((x) => escVan(x as string)).join(" · ");
   return `<article class="qg-card">
     <h4>${escVan(d.ten)}</h4>
     ${meta ? `<p class="qg-meta">${meta}</p>` : ""}
@@ -260,7 +260,7 @@ function nhacCard(it: NhacItem): string {
   if (Array.isArray(it.phien_ban) && it.phien_ban.length) {
     const vers = it.phien_ban
       .filter((p) => YT.test(p.youtube_id))
-      .map((p) => `<div class="qg-version">${badge(p.kenh_loai)}<p class="qg-version-by">${esc(p.the_hien)}</p>${embed(p.youtube_id, it.ten + " — " + p.the_hien)}</div>`)
+      .map((p) => `<div class="qg-version">${badge(p.kenh_loai)}<p class="qg-version-by">${escVan(p.the_hien)}</p>${embed(p.youtube_id, it.ten + " — " + p.the_hien)}</div>`)
       .join("");
     return `<article class="qg-card qg-card-multi">${head}<p class="qg-multi-note">${it.phien_ban.length} phiên bản</p>${vers}</article>`;
   }

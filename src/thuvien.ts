@@ -21,10 +21,22 @@ import { escVan } from "./popup-noi-dung";
 import { fetchJson } from "./util/fetch";
 import { str, num, strs, oneOf, rec, arr, itemsOf } from "./types/parse";
 import { showOnly } from "./panels";
+// Trình đọc toàn văn — lớp phủ riêng, KHÔNG phải panel. Xem đầu doc-sach.ts
+// giải thích vì sao nó không đi qua sổ đăng ký panel.
+import { moTrinhDoc, dangDaiSach, type SachDoc } from "./doc-sach";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // 1. Kiểu dữ liệu nguồn + parser (chuyển nguyên từ main.ts)
 // ═══════════════════════════════════════════════════════════════════════════
+
+/**
+ * Boolean thật hoặc `undefined`. Không có trong `types/parse.ts` vì tới giờ
+ * chưa lược đồ nào cần — `kenh_chinh_chu` là trường boolean đầu tiên của kho
+ * văn học. Giữ `undefined` khi trường vắng mặt chứ không rơi về `false`: hai
+ * trạng thái đó khác nhau ở chỗ dùng (xem `khungVideoHtml`).
+ */
+const bool = (v: unknown): boolean | undefined =>
+  typeof v === "boolean" ? v : undefined;
 
 interface Poem {
   id: string;
@@ -48,6 +60,27 @@ interface Poem {
   nguyen_van: string[];
   ban_dich?: string[];
   ghi_chu_dich?: string;
+  /**
+   * Ba trường bản quyền của tác phẩm ĐĂNG TOÀN VĂN. Trước nay chỉ `ToanVan`
+   * khai chúng, nhưng các file `tho-yeu-nuoc` / `tac-pham-ho-chi-minh` cũng
+   * đang được nạp thêm nguyên văn, và luật biên tập bắt mọi bản toàn văn phải
+   * nói được VÌ SAO được chép. Không khai ở đây thì parser nuốt mất và trình
+   * đọc không có gì để hiện ở khối bản quyền.
+   */
+  co_so_ban_quyen?: string;
+  nguon_toan_van?: string;
+  nguoi_dich?: string;
+  /**
+   * Bản ghi của chính bài thơ này trên YouTube — ngâm, phổ nhạc, hoặc giọng
+   * đọc gốc của tác giả. Cùng bộ trường với `BaiHat` và đi qua CÙNG một cổng
+   * nhúng; xem `khungVideoHtml()`. Đo 2026-08-28: 17 mục thơ đã có `youtube_id`
+   * mà `parsePoem` chưa hề đọc tới, nên 17 video không hiện ở đâu cả.
+   */
+  youtube_id?: string;
+  kenh_youtube?: string;
+  kenh_chinh_chu?: boolean;
+  nguoi_trinh_bay?: string;
+  loai_video?: string;
   /** CỐ Ý KHÔNG render — chữ dặn người sửa dữ liệu, không phải chữ cho bạn đọc. */
   ghi_chu_bien_tap?: string;
   nhom?: "nktt" | "chuc-tet" | "trung-thu" | "tho" | "van" | "ton-nghi";
@@ -81,6 +114,14 @@ const parsePoem = (raw: unknown): Poem => {
     nguyen_van: strs(r.nguyen_van),
     ban_dich: strs(r.ban_dich),
     ghi_chu_dich: str(r.ghi_chu_dich),
+    co_so_ban_quyen: str(r.co_so_ban_quyen),
+    nguon_toan_van: str(r.nguon_toan_van),
+    nguoi_dich: str(r.nguoi_dich) || str(r.nguoi_suu_tam_dich),
+    youtube_id: str(r.youtube_id),
+    kenh_youtube: str(r.kenh_youtube),
+    kenh_chinh_chu: bool(r.kenh_chinh_chu),
+    nguoi_trinh_bay: str(r.nguoi_trinh_bay),
+    loai_video: str(r.loai_video),
     ghi_chu_bien_tap: str(r.ghi_chu_bien_tap),
     nhom: oneOf(r.nhom, ["nktt", "chuc-tet", "trung-thu", "tho", "van", "ton-nghi"] as const, "tho"),
     sach_xua: str(r.sach_xua),
@@ -228,6 +269,9 @@ interface BaiHat {
   chu_de: string;
   youtube_id: string;
   kenh_youtube?: string;
+  /** Kênh đăng có phải bên GIỮ quyền không. `false` = bên khai thác quyền hoặc
+   *  kênh tuyển tập → không được nhúng. Đo 2026-08-28: 11/32 bài mang cờ này. */
+  kenh_chinh_chu?: boolean;
   gioi_thieu?: string;
   ban_quyen?: string;
   nguon: string[];
@@ -246,6 +290,7 @@ const parseBaiHat = (raw: unknown): BaiHat => {
     chu_de: str(r.chu_de),
     youtube_id: str(r.youtube_id),
     kenh_youtube: str(r.kenh_youtube),
+    kenh_chinh_chu: bool(r.kenh_chinh_chu),
     gioi_thieu: str(r.gioi_thieu),
     ban_quyen: str(r.ban_quyen),
     nguon: strs(r.nguon),
@@ -497,6 +542,16 @@ interface Muc {
   nguon: string[];
   /** Dựng lười: 605 thân bài dựng sẵn là ~1 MB chuỗi cho thứ đọc từng cái một. */
   than: () => string;
+  /**
+   * Tác phẩm ở dạng ĐỌC ĐƯỢC, cho trình đọc toàn văn. Khác `than()` ở chỗ nó
+   * không phải HTML mà là cấu trúc — trình đọc cần chương, bản dịch và khối
+   * bản quyền như những thứ riêng biệt để chia cột và dựng mục lục.
+   *
+   * Không dựng lười: đây là một object trỏ vào chính các mảng đã có, không
+   * nhân bản chuỗi nào, nên 605 lần dựng không đáng kể. Chỉ những lược đồ CÓ
+   * nguyên văn mới gán — ca dao, giai thoại, bản đồ cổ để `undefined`.
+   */
+  sach?: SachDoc;
 }
 
 // ── Suy khoá năm ────────────────────────────────────────────────────────────
@@ -657,6 +712,77 @@ const banQuyenHtml = (bq: string, dai = false): string =>
       }</p>`
     : "";
 
+/**
+ * Nối các mảnh dòng phụ, bỏ mảnh rỗng VÀ bỏ mảnh trùng.
+ *
+ * Bỏ trùng là bắt buộc chứ không phải cho gọn: `the_loai` và nhãn của `nhom`
+ * hay là đúng một chữ. Đo tận mắt trên «Tuyên ngôn Độc lập» — cả hai đều ra
+ * «Văn chính luận», nên dòng phụ của trình đọc in nó hai lần.
+ */
+const gomMeta = (...phan: Array<string | undefined>): string =>
+  [...new Set(phan.filter((s): s is string => !!s))].join(" · ");
+
+// ── Nhúng YouTube: MỘT cổng cho cả bài hát lẫn thơ ──────────────────────────
+
+const NHAN_LOAI_VIDEO: Record<string, string> = {
+  "ngam-tho": "Ngâm thơ",
+  "pho-nhac": "Phổ nhạc",
+  hat: "Trình bày",
+  "doc-dien-cam": "Bản ghi",
+};
+
+/**
+ * Khung nhúng, hoặc lời giải thích vì sao không nhúng.
+ *
+ * BA lớp chặn, cả ba đều có lý do đo được, đừng nới lớp nào:
+ *
+ *  1. `youtube-nocookie.com`. CSP ở `index.html` chỉ mở `frame-src` cho đúng
+ *     host này. Đổi sang `youtube.com` thì iframe câm lặng — không khung, và
+ *     cũng không lỗi nào nổ ra để biết mà sửa.
+ *  2. Id phải khớp đúng 11 ký tự `[A-Za-z0-9_-]`. Chặn chuỗi giữ chỗ kiểu
+ *     «chưa xác thực» lọt vào thành URL.
+ *  3. `kenh_chinh_chu === true`. Đây là luật bản quyền chứ không phải sở
+ *     thích: kênh khai thác quyền hay kênh tuyển tập KHÔNG phải bên giữ
+ *     quyền. Đo 2026-08-28: 11/32 bài hát mang cờ `false` — và tới trước bản
+ *     này cả 11 vẫn được nhúng, vì `parseBaiHat` chưa hề đọc trường đó.
+ *
+ * Vắng trường (`undefined`) cũng KHÔNG nhúng, cùng hướng hỏng an toàn với
+ * lớp 2: thà thiếu một khung video còn hơn nhúng một kênh chưa ai soát. Hôm
+ * nay không mục nào rơi vào nhánh này — 49/49 mục có `youtube_id` đều đã khai
+ * `kenh_chinh_chu`.
+ */
+function khungVideoHtml(ten: string, youtubeId: string, chinhChu?: boolean): string {
+  if (!youtubeId) return "";
+  return /^[A-Za-z0-9_-]{11}$/.test(youtubeId) && chinhChu === true
+    ? `<div class="lib-yt"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(
+        youtubeId,
+      )}" title="${esc(
+        ten,
+      )}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`
+    : canhBaoHtml(
+        "Chưa xác thực video từ kênh chính chủ — chưa nhúng để tránh vi phạm bản quyền.",
+      );
+}
+
+/** Dòng ghi công dưới khung video của một bài THƠ. `loai_video` quyết định
+ *  nhãn; không nhận ra loại nào thì gọi trung tính là «Video» chứ không đoán. */
+function nhanVideoHtml(p: Poem): string {
+  const nhan = [
+    NHAN_LOAI_VIDEO[p.loai_video ?? ""] ?? "Video",
+    p.nguoi_trinh_bay,
+    p.kenh_youtube ? `Kênh: ${p.kenh_youtube}` : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  return `<p class="lib-phu">🎬 ${escVan(nhan)}</p>`;
+}
+
+/** Khối video của một bài thơ: ghi công + khung. Rỗng khi mục không có video. */
+function videoThoHtml(p: Poem): string {
+  if (!p.youtube_id) return "";
+  return `${nhanVideoHtml(p)}${khungVideoHtml(p.ten, p.youtube_id, p.kenh_chinh_chu)}`;
+}
+
 // ── Chuyển từng lược đồ sang Muc ────────────────────────────────────────────
 
 function mucTuPoem(p: Poem, chuDeMacDinh?: string): Muc {
@@ -678,6 +804,8 @@ function mucTuPoem(p: Poem, chuDeMacDinh?: string): Muc {
       ${p.sach_xua ? `<p class="lib-sach-xua">📕 In trong: ${escVan(p.sach_xua)}</p>` : ""}
       ${p.loi_binh ? `<p class="lib-loi-binh">${escVan(p.loi_binh)}</p>` : ""}
       ${p.vi_sao_hay ? `<p class="lib-loi-binh"><b>Vì sao được xếp hạng cao:</b> ${escVan(p.vi_sao_hay)}</p>` : ""}
+      ${/* Video ĐỨNG TRƯỚC nguyên văn: người đọc bật nghe rồi đọc theo. */ ""}
+      ${videoThoHtml(p)}
       ${p.nguyen_van.length ? `<blockquote class="lib-tho">${dong(p.nguyen_van)}</blockquote>` : ""}
       ${
         p.ban_dich?.length
@@ -687,6 +815,24 @@ function mucTuPoem(p: Poem, chuDeMacDinh?: string): Muc {
       ${p.ghi_chu_dich ? `<p class="lib-phu">${escVan(p.ghi_chu_dich)}</p>` : ""}
       ${giaiNghiaHtml(p.giai_nghia)}
       ${banQuyenHtml(p.ban_quyen)}`,
+    sach: {
+      id: p.id,
+      ten: p.ten,
+      tacGia: p.tac_gia,
+      meta: gomMeta(p.thoi_ky, p.the_loai, p.nhom && p.nhom !== "tho" ? NHAN_NHOM_HCM[p.nhom] : ""),
+      loiBinh: p.loi_binh,
+      videoHtml: videoThoHtml(p),
+      // Một khổ duy nhất, không tiêu đề: thơ lẻ không chia chương. `ban_dich`
+      // đi kèm CHÍNH khổ đó để trình đọc bày phiên âm ↔ bản dịch cạnh nhau.
+      chuong: [{ tieu_de: "", dong: p.nguyen_van, ban_dich: p.ban_dich }],
+      ghiChu: p.ghi_chu_dich,
+      giaiNghia: p.giai_nghia ?? [],
+      banQuyen: p.ban_quyen,
+      coSoBanQuyen: p.co_so_ban_quyen,
+      nguoiDich: p.nguoi_dich,
+      nguonToanVan: p.nguon_toan_van,
+      nguon: p.sources,
+    },
   };
 }
 
@@ -785,9 +931,6 @@ function mucTuBaiHat(b: BaiHat): Muc {
   ]
     .filter(Boolean)
     .join(" · ");
-  // Chỉ nhúng khi youtube_id đúng dạng 11 ký tự hợp lệ (chặn placeholder
-  // "chưa xác thực"). youtube-nocookie để bảo vệ quyền riêng tư.
-  const nhungDuoc = /^[A-Za-z0-9_-]{11}$/.test(b.youtube_id);
   return {
     id: b.id,
     chuDe: b.chu_de,
@@ -803,17 +946,7 @@ function mucTuBaiHat(b: BaiHat): Muc {
     than: () => `
       ${tacGia ? `<p class="lib-phu">${esc(tacGia)}${b.kenh_youtube ? ` · Kênh: ${esc(b.kenh_youtube)}` : ""}</p>` : ""}
       ${b.gioi_thieu ? `<p class="lib-loi-binh">${escVan(b.gioi_thieu)}</p>` : ""}
-      ${
-        nhungDuoc
-          ? `<div class="lib-yt"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(
-              b.youtube_id,
-            )}" title="${esc(
-              b.ten,
-            )}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`
-          : canhBaoHtml(
-              "Chưa xác thực video từ kênh chính chủ — chưa nhúng để tránh vi phạm bản quyền.",
-            )
-      }
+      ${khungVideoHtml(b.ten, b.youtube_id, b.kenh_chinh_chu)}
       ${b.ban_quyen ? `<p class="lib-ban-quyen">Bản quyền: ${esc(b.ban_quyen)} — chỉ nhúng, không chép lời.</p>` : ""}`,
   };
 }
@@ -923,6 +1056,28 @@ function mucTuToanVan(t: ToanVan): Muc {
           : ""
       }
       ${banQuyenHtml(t.ban_quyen)}`,
+    sach: {
+      id: t.id,
+      ten: t.ten,
+      tacGia: t.tac_gia,
+      meta: gomMeta(t.thoi_ky, t.the_loai, t.dan_toc ? `Dân tộc ${t.dan_toc}` : ""),
+      loiBinh: t.loi_binh,
+      // `nguyen_van` là lối dùng cho tác phẩm KHÔNG chia chương. Nếu một mục
+      // mai này khai cả hai thì phần không chia chương đi cuối, tiêu đề để
+      // rỗng — thà một mục lục đánh số «Phần 4» còn hơn bịa một cái tên chương
+      // mà nguồn không hề đặt.
+      chuong: [
+        ...chuong.map((c) => ({ tieu_de: c.tieu_de, dong: c.dong })),
+        ...(t.nguyen_van.length ? [{ tieu_de: "", dong: t.nguyen_van }] : []),
+      ],
+      giaiNghia: t.giai_nghia,
+      banQuyen: t.ban_quyen,
+      coSoBanQuyen: t.co_so_ban_quyen,
+      nguoiDich: t.nguoi_dich,
+      banTheo: t.ban_theo,
+      nguonToanVan: t.nguon_toan_van,
+      nguon: t.sources,
+    },
   };
 }
 
@@ -949,6 +1104,31 @@ function mucTuHcmPoem(h: HcmPoem): Muc {
              ${h.chu_thich ? `<p class="lib-phu">${escVan(h.chu_thich)}</p>` : ""}`
           : ""
       }`,
+    sach: {
+      id: "lich-su-nuoc-ta",
+      ten: h.ten,
+      tacGia: h.tac_gia,
+      meta: gomMeta(h.nam, "Diễn ca lịch sử"),
+      loiBinh: h.gioi_thieu,
+      // Phụ lục là một PHẦN riêng, không phải phần đuôi của bài diễn ca: nó
+      // là bảng niên đại in kèm ở bản gốc. Tách ra thì mục lục có hai mục và
+      // người đọc nhảy thẳng tới bảng được.
+      chuong: [
+        { tieu_de: "Toàn văn", dong: h.cau_tho },
+        ...(h.nhung_nam_quan_trong?.length
+          ? [
+              {
+                tieu_de: "Những năm quan trọng (phụ lục nguyên bản)",
+                dong: h.nhung_nam_quan_trong,
+              },
+            ]
+          : []),
+      ],
+      ghiChu: h.chu_thich,
+      giaiNghia: [],
+      banQuyen: h.ban_quyen,
+      nguon: h.sources,
+    },
   };
 }
 
@@ -1266,6 +1446,18 @@ function dungKhoiChuDe(lib: ThuVienData): KhoiChuDe[] {
 
 // ── Danh sách ───────────────────────────────────────────────────────────────
 
+/**
+ * Nút mở trình đọc toàn văn. Chỉ hiện với tác phẩm đủ dài — ngưỡng và lý do
+ * của nó nằm ở `NGUONG_DONG` trong doc-sach.ts. Cùng một nút xuất hiện ở hai
+ * chỗ (hàng danh sách và đầu khung đọc) để tác phẩm dài mở được bằng một cú
+ * bấm, chứ không phải mở khung hẹp trước rồi mới mở tiếp.
+ */
+function nutDocHtml(m: Muc): string {
+  return m.sach && dangDaiSach(m.sach)
+    ? `<button type="button" class="lib-mo-doc" data-doc-sach="${esc(m.id)}">📖 Đọc toàn văn</button>`
+    : "";
+}
+
 function hangHtml(m: Muc, i: number): string {
   const tinh = m.tinh
     .map(
@@ -1297,6 +1489,7 @@ function hangHtml(m: Muc, i: number): string {
         }</span>
       </span>
     </button>
+    ${nutDocHtml(m)}
     ${tinh ? `<span class="lib-hang-tinh"><span class="lib-hang-tinh-nhan">Vùng đất:</span>${tinh}</span>` : ""}
   </li>`;
 }
@@ -1403,6 +1596,7 @@ function khungDocHtml(m: Muc): string {
          data-cot="${esc(tuyChinh.cotRong)}" data-che-do-doc="${esc(tuyChinh.cheDoDoc)}">
       <header class="lib-doc-dau">
         <button type="button" class="lib-doc-ve">← Quay lại danh sách</button>
+        ${nutDocHtml(m)}
         <div class="lib-doc-mode" role="group" aria-label="Chế độ đọc">
           <button type="button" class="lib-mode-btn${tuyChinh.cheDoDoc === "cuon" ? " lib-mode-chon" : ""}"
             data-mode="cuon" aria-pressed="${tuyChinh.cheDoDoc === "cuon"}">Cuộn</button>
@@ -1741,6 +1935,15 @@ function noiSuKien(goc: HTMLElement): void {
   goc.addEventListener("click", (e) => {
     const t = e.target as HTMLElement | null;
     if (!t) return;
+
+    // Đứng TRƯỚC nhánh [data-muc]: nút này nằm trong cùng thẻ <li> với nút mở
+    // mục, và đổi chỗ hai nhánh là biến «Đọc toàn văn» thành «mở khung hẹp».
+    const sach = t.closest<HTMLElement>("[data-doc-sach]");
+    if (sach?.dataset.docSach) {
+      const m = khoiChuDe.flatMap((k) => k.muc).find((x) => x.id === sach.dataset.docSach);
+      if (m?.sach) moTrinhDoc(m.sach, sach);
+      return;
+    }
 
     const tinh = t.closest<HTMLElement>("[data-jump-tinh]");
     if (tinh?.dataset.jumpTinh) {

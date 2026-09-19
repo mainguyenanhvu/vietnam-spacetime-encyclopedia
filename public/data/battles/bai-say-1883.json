@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Bãi Sậy 1883–1892 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Bãi Sậy 1883–1892 — MINH HOẠ theo tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mốc kết thúc chép khác nhau: Bách khoa toàn thư Quân sự Việt Nam lấy 1892 (trận Ngô Phần 11/4/1892), Báo Hưng Yên chép cuộc khởi nghĩa kéo dài đến 1890 — nêu cả hai ở bước 8.",
   "id": "bai-say-1883",
   "ten": "Khởi nghĩa Bãi Sậy 1883–1892",
   "nam": 1883,
@@ -7,138 +7,384 @@
   "chi_huy": "Nguyễn Thiện Thuật",
   "doi_thu": "Pháp",
   "dia_diem": "Vùng lau sậy Khoái Châu – Ân Thi, Hưng Yên",
+  "thoi_gian": "Tháng 4/1883 – tháng 4/1892",
   "lien_quan_tinh": [
     "hung-yen"
   ],
-  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
       "kieu": "rung",
       "diem": [
-        [
-          200,
-          300
-        ],
-        [
-          500,
-          260
-        ],
-        [
-          800,
-          320
-        ]
+        [180, 250],
+        [400, 200],
+        [560, 262],
+        [520, 430],
+        [300, 468],
+        [160, 380]
       ],
-      "nhan": "Vùng lau sậy Khoái Châu – Ân Thi"
+      "nhan": "Vùng đầm lầy lau sậy Bãi Sậy"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [60, 120],
+        [220, 210],
+        [380, 320],
+        [520, 452],
+        [640, 566]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [700, 120],
+        [782, 250],
+        [846, 386],
+        [886, 520]
+      ],
+      "nhan": "Sông Kinh Thầy — sông Đá Bạc"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [230, 96],
+        [430, 130],
+        [640, 168],
+        [850, 200]
+      ],
+      "nhan": "Đường Hà Nội – Hải Dương"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-nguyen-thien-thuat",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 150,
-      "y": 450,
-      "nhan": "Nguyễn Thiện Thuật lãnh đạo"
-    },
-    {
-      "id": "can-cu-bai-say",
+      "id": "tho-binh",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 450,
-      "y": 350,
-      "nhan": "Căn cứ Bãi Sậy"
+      "x": 350,
+      "y": 322,
+      "nhan": "Làng Thọ Bình — căn cứ giữa vùng đầm lầy Bãi Sậy"
     },
     {
-      "id": "quan-ta-du-kich",
+      "id": "dinh-gia-que",
       "kieu": "quan",
       "ben": "ta",
-      "x": 550,
-      "y": 420,
-      "nhan": "Nghĩa quân đánh du kích"
+      "x": 176,
+      "y": 300,
+      "nhan": "Đinh Gia Quế — tự xưng Đổng quân vụ, mộ quân đánh Pháp"
     },
     {
-      "id": "quan-dich-can-quet",
+      "id": "dia-ban-goc",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 262,
+      "nhan": "Văn Giang (Bắc Ninh) · Đông Yên · Mỹ Hào (Hưng Yên)"
+    },
+    {
+      "id": "don-tap-kich",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 604,
+      "y": 340,
+      "nhan": "Đồn Bình Phú, Lực Điền, Thuỵ Lân, Thuỵ Lôi, Bần Yên Nhân; phủ đường Ân Thi"
+    },
+    {
+      "id": "mui-tap-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [470, 320],
+      "den": [576, 336],
+      "nhan": "Tập kích đồn lẻ, phục kích toán tuần tiễu"
+    },
+    {
+      "id": "thanh-tri",
+      "kieu": "dia-danh",
+      "x": 148,
+      "y": 168,
+      "nhan": "Thanh Trì — tháng 8/1885 nghĩa quân vượt sông Hồng, bị phục kích"
+    },
+    {
+      "id": "nguyen-thien-thuat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 480,
+      "nhan": "Nguyễn Thiện Thuật — Bắc Kỳ hiệp thống Quân vụ đại thần"
+    },
+    {
+      "id": "binh-dan",
+      "kieu": "dia-danh",
+      "x": 420,
+      "y": 512,
+      "nhan": "Xã Bình Dân — nơi làm lễ tế cờ, khôi phục phong trào"
+    },
+    {
+      "id": "thu-linh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 640,
+      "y": 480,
+      "nhan": "Nguyễn Thiện Kế · Nguyễn Thiện Dương · Lưu Kì · Đội Văn · Đốc Cọp · Đốc Sung · Đề Vinh"
+    },
+    {
+      "id": "can-cu-hai-song",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 800,
+      "y": 320,
+      "nhan": "Căn cứ Hai Sông — giữa sông Kinh Thầy và sông Đá Bạc, do Đốc Tít chỉ huy"
+    },
+    {
+      "id": "trai-son",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 880,
+      "y": 430,
+      "nhan": "Trại Sơn — trung tâm căn cứ Hai Sông"
+    },
+    {
+      "id": "xuong-vu-khi",
+      "kieu": "dia-danh",
+      "x": 706,
+      "y": 546,
+      "nhan": "Xưởng sản xuất vũ khí, chế cả súng trường theo kiểu của Pháp"
+    },
+    {
+      "id": "tran-1886",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 96,
+      "nhan": "Tập kích đồn Cầu Đuống 26/6/1886 · Đông Triều 9/7/1886 · Quỳnh Côi 23/10/1886"
+    },
+    {
+      "id": "lieu-trung",
+      "kieu": "dia-danh",
+      "x": 470,
+      "y": 128,
+      "nhan": "Liêu Trung (Mỹ Hào) — phục kích giết Giám binh Louis Ney"
+    },
+    {
+      "id": "hoang-cao-khai",
       "kieu": "quan",
       "ben": "dich",
-      "x": 750,
-      "y": 250,
-      "nhan": "Pháp càn quét"
+      "x": 906,
+      "y": 116,
+      "nhan": "Đạo quân bình định do Hoàng Cao Khải chỉ huy, phối hợp quân Pháp"
     },
     {
-      "id": "mui-dich-can",
+      "id": "mui-cang-quet",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        700,
-        320
-      ],
-      "den": [
-        560,
-        380
-      ],
-      "nhan": "Nhiều cuộc càn quét không dứt điểm"
+      "tu": [860, 172],
+      "den": [640, 268],
+      "nhan": "Năm 1889 — càn quét quy mô lớn vào Hưng Yên, Hải Dương, Hải Phòng"
     },
     {
-      "id": "co-thang-bai-say",
+      "id": "vay-hai-song",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [900, 240],
+      "den": [828, 300],
+      "nhan": "Ngày 14/7/1889 bao vây căn cứ Hai Sông"
+    },
+    {
+      "id": "ngo-phan",
+      "kieu": "dia-danh",
+      "x": 156,
+      "y": 92,
+      "nhan": "Làng Ngô Phần (Lương Tài) — trận đánh lớn cuối cùng, 11/4/1892"
+    },
+    {
+      "id": "nam-ninh",
       "kieu": "co",
       "ben": "ta",
-      "x": 450,
-      "y": 480,
-      "nhan": "Cầm chân Pháp gần mười năm"
+      "x": 100,
+      "y": 420,
+      "nhan": "Nguyễn Thiện Thuật mất tại Nam Ninh, Quảng Tây, ngày 26/5/1926"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Nguyễn Thiện Thuật lãnh đạo khởi nghĩa",
-      "mo_ta": "Nguyễn Thiện Thuật đứng ra lãnh đạo nghĩa quân vùng đồng bằng Khoái Châu – Ân Thi (Hưng Yên).",
+      "tieu_de": "Tháng 4/1883 — Đinh Gia Quế dựng cờ ở Bãi Sậy",
+      "thoi_gian": "Khoảng tháng 4/1883",
+      "dia_danh": "Làng Thọ Bình — Văn Giang, Đông Yên, Mỹ Hào",
+      "mo_ta": "Sau khi Pháp hạ thành Hà Nội ngày 25/4/1882 rồi lần lượt đánh chiếm Hòn Gai, Nam Định, Hưng Yên trong tháng 3/1883, một số quan lại và sĩ phu yêu nước cùng nhân dân địa phương nổi dậy. Khoảng tháng 4/1883, Đinh Gia Quế, chánh tuần huyện Đông Yên, xin từ quan về quê, tự xưng là Đổng quân vụ nên còn gọi là Đổng Quế, mộ quân đánh Pháp và lập căn cứ tại làng Thọ Bình — trung tâm của vùng đầm lầy Bãi Sậy rộng lớn thuộc các huyện Văn Giang, Đông Yên và Mỹ Hào.",
       "hien": [
-        "co-ta-nguyen-thien-thuat"
+        "dinh-gia-que",
+        "tho-binh",
+        "dia-ban-goc"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Xây dựng căn cứ trong vùng lau sậy",
-      "mo_ta": "Nghĩa quân tận dụng địa hình đầm lầy lau sậy rậm rạp làm căn cứ ẩn náu, khó cho quân Pháp truy quét.",
+      "tieu_de": "Phân tán trong dân, đánh du kích",
+      "thoi_gian": "1883 – 1885",
+      "dia_danh": "Bình Phú · Lực Điền · Thuỵ Lân · Thuỵ Lôi · Bần Yên Nhân · Ân Thi",
+      "mo_ta": "Với phương thức hoạt động phân tán trong dân và cách đánh du kích, nghĩa quân tiến hành nhiều trận chống càn vào căn cứ, tập kích các đồn Bình Phú, Lực Điền, Thuỵ Lân ở Yên Mỹ, Thuỵ Lôi ở Tiên Lữ, Bần Yên Nhân ở Mỹ Hào và phủ đường Ân Thi; đồng thời phục kích các toán tuần tiễu trên đường Hà Nội – Hải Dương, Hưng Yên – Thái Bình. Cách đánh ấy phù hợp với địa hình đầm lầy lau sậy: không có tuyến nào để đối phương công phá, cũng không có mục tiêu cố định để pháo binh nhắm vào.",
       "hien": [
-        "co-ta-nguyen-thien-thuat",
-        "can-cu-bai-say"
+        "mui-tap-kich",
+        "don-tap-kich",
+        "tho-binh"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đánh du kích, quấy rối liên tục",
-      "mo_ta": "Nghĩa quân tổ chức đánh du kích, phục kích các toán lính Pháp và tay sai đi càn.",
+      "tieu_de": "Đinh Gia Quế qua đời, Nguyễn Thiện Thuật tiếp nhận phong trào",
+      "thoi_gian": "Tháng 8/1885 – tháng 12/1885",
+      "dia_danh": "Thanh Trì — ấp Dương Trạch — xã Bình Dân",
+      "mo_ta": "Tháng 8/1885, trong trận vượt sông Hồng đánh sang vùng Thanh Trì, nghĩa quân bị quân Pháp phục kích gây tổn thất nặng; Đinh Gia Quế phải lánh về ấp Dương Trạch rồi lâm bệnh nặng và qua đời tháng 12/1885. Nguyễn Thiện Thuật — người thuộc phái chủ chiến, không chấp hành lệnh bãi binh của triều đình, được vua Hàm Nghi phong Bắc Kỳ hiệp thống Quân vụ đại thần — cùng các cử nhân Ngô Quang Huy, Nguyễn Hữu Đức về xã Bình Dân làm lễ tế cờ và tổ chức hội nghị bàn việc khôi phục phong trào.",
       "hien": [
-        "can-cu-bai-say",
-        "quan-ta-du-kich"
+        "thanh-tri",
+        "dinh-gia-que",
+        "nguyen-thien-thuat",
+        "binh-dan"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna",
+        "Báo Công an Nhân dân — https://cand.vn/tu-lieu-antg/tim-ve-noi-khoi-phat-cuoc-khoi-nghia-bai-say-i663066/"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Pháp nhiều lần càn quét không dứt điểm được",
-      "mo_ta": "Quân Pháp nhiều lần tổ chức càn quét quy mô lớn nhưng không thể dứt điểm căn cứ giữa vùng đầm lầy.",
+      "tieu_de": "Mở rộng địa bàn, dựng thêm căn cứ Hai Sông",
+      "thoi_gian": "Từ cuối 1885",
+      "dia_danh": "Hưng Yên · Hải Dương · Bắc Ninh · Hải Phòng · Quảng Yên",
+      "mo_ta": "Dưới sự lãnh đạo của Nguyễn Thiện Thuật, thanh thế và địa bàn hoạt động mở rộng khắp hai tỉnh Hưng Yên, Hải Dương và một phần Bắc Ninh, Hải Phòng, Quảng Yên, đưa Bãi Sậy thành một trong những trung tâm chống Pháp lớn ở Bắc Kỳ. Bên cạnh căn cứ chính, nghĩa quân dựng căn cứ Hai Sông ở vùng đất giữa sông Kinh Thầy và sông Đá Bạc do Đốc Tít chỉ huy. Tại các căn cứ, ngoài phòng thủ và chống càn, nghĩa quân còn khai hoang trồng trọt để tự túc một phần lương thực và lập xưởng sản xuất vũ khí, kể cả chế tạo súng trường theo kiểu của Pháp.",
       "hien": [
-        "quan-ta-du-kich",
-        "quan-dich-can-quet",
-        "mui-dich-can"
+        "can-cu-hai-song",
+        "trai-son",
+        "xuong-vu-khi",
+        "thu-linh"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Cầm chân quân Pháp gần mười năm",
-      "mo_ta": "Cuộc khởi nghĩa kéo dài từ 1883 đến 1892, là một trong những phong trào Cần Vương đồng bằng bền bỉ nhất.",
+      "tieu_de": "Hai năm 1885–1886 — đánh mạnh và rộng khắp",
+      "thoi_gian": "1885 – 1886",
+      "dia_danh": "Cầu Đuống · Đông Triều · Quỳnh Côi · sông Đá Bạc · sông Kinh Thầy · sông Luộc",
+      "mo_ta": "Lực lượng nghĩa quân được chia thành các toán nhỏ, xuất phát từ các căn cứ toả đi khắp nơi. Trong hai năm 1885–1886, nghĩa quân đẩy lui nhiều đợt càn quét lớn vào Bãi Sậy và Trại Sơn; tập kích các đồn Cầu Đuống ngày 26/6/1886, Đông Triều ngày 9/7/1886, Quỳnh Côi ngày 23/10/1886, và nhiều lần phục kích tàu thuyền địch trên sông Đá Bạc, sông Kinh Thầy, sông Luộc — gây nhiều khó khăn cho quân Pháp trong việc bình định vùng đồng bằng Bắc Bộ.",
       "hien": [
-        "co-thang-bai-say"
+        "tran-1886",
+        "trai-son",
+        "can-cu-hai-song",
+        "tho-binh"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Năm 1888 — chuỗi trận đánh và trận phục kích Liêu Trung",
+      "thoi_gian": "Năm 1888",
+      "dia_danh": "Ghênh · Bần Yên Nhân · Bình Phú · Đa Phúc · Uông Bí · Lang Tài · Liêu Trung",
+      "mo_ta": "Năm 1887 Pháp càn quét liên tục và khủng bố nhân dân, nhưng sang năm 1888 hoạt động của nghĩa quân lại rộng khắp: tập kích đồn Ghênh và Bần Yên Nhân ngày 10/2 để trả thù cho Lãnh Giang vừa bị sát hại; diệt đồn Bình Phú ngày 26/3; tiến công Đa Phúc ngày 26/4, Uông Bí ngày 12/8, Lang Tài ngày 10/10, Tứ Kỳ và Yên Phương ngày 2/12. Trận phục kích ở Liêu Trung, huyện Mỹ Hào, giết Giám binh Louis Ney và Bang tá tỉnh Hải Dương Nguyễn Hữu Hào.",
+      "hien": [
+        "lieu-trung",
+        "don-tap-kich",
+        "mui-tap-kich",
+        "thu-linh"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Năm 1889 — Hoàng Cao Khải càn quét, Hai Sông thất thủ",
+      "thoi_gian": "Ngày 14/7/1889",
+      "dia_danh": "Hưng Yên · Hải Dương · Hải Phòng · căn cứ Hai Sông",
+      "mo_ta": "Năm 1889, Pháp tăng cường lực lượng, thiết lập hệ thống đồn bốt dày đặc và tổ chức đạo quân bình định người Việt do Hoàng Cao Khải chỉ huy, phối hợp với quân Pháp do Thiếu tướng Negrier cùng Trung tá Donnier và Trung tá Godart chỉ huy, liên tục mở các đợt càn quét quy mô lớn. Ngày 14/7/1889, quân Pháp phối hợp với đạo quân Hoàng Cao Khải bao vây tiến công nghĩa quân Đốc Tít ở căn cứ Hai Sông; sau gần một tháng chống trả quyết liệt, do hết đạn và lương thực, Đốc Tít buộc phải ra hàng và bị đày đi Algérie.",
+      "hien": [
+        "hoang-cao-khai",
+        "mui-cang-quet",
+        "vay-hai-song",
+        "can-cu-hai-song"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Nguyễn Thiện Thuật sang Trung Quốc, phong trào tàn dần",
+      "thoi_gian": "Cuối 1889 – 11/4/1892",
+      "dia_danh": "Bãi Sậy — Ngô Phần — Nam Ninh",
+      "mo_ta": "Cuối 1889 đầu 1890, Nguyễn Thiện Thuật giao lại binh quyền cho em là Nguyễn Thiện Kế để sang Trung Quốc tìm gặp Tôn Thất Thuyết bàn cách tăng viện; việc không thành do biên giới bị phong toả, ông ở lại và mất tại Nam Ninh, tỉnh Quảng Tây ngày 26/5/1926. Trận đánh lớn cuối cùng diễn ra ngày 11/4/1892 tại làng Ngô Phần, huyện Lương Tài, nơi Đề Vinh tử trận. Về mốc kết thúc, Bách khoa toàn thư Quân sự Việt Nam lấy năm 1892, còn Báo Hưng Yên chép cuộc khởi nghĩa kéo dài từ 1883 đến 1890.",
+      "hien": [
+        "nguyen-thien-thuat",
+        "ngo-phan",
+        "nam-ninh",
+        "thu-linh"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna",
+        "Báo Hưng Yên — https://baohungyen.vn/dang-huong-tuong-niem-136-nam-ngay-tuong-quan-nguyen-thien-thuat-giuong-co-khoi-nghia-8884.html"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Nghĩa quân chia thành các toán nhỏ, xuất phát từ các căn cứ toả đi chiến đấu",
+        "Căn cứ chính Bãi Sậy (làng Thọ Bình) và căn cứ Hai Sông do Đốc Tít chỉ huy",
+        "Các thủ lĩnh: Nguyễn Thiện Kế, Nguyễn Thiện Dương, Đề đốc Lưu Kì, Đội Văn, Đốc Cọp, Đốc Sung, Đề Vinh, Đề Tính, Đồ Ban, Lãnh Điển"
+      ],
+      "vu_khi": [
+        "Xưởng tự sản xuất vũ khí trong căn cứ, chế cả súng trường theo kiểu của Pháp"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Quân Pháp do Thiếu tướng Negrier, Trung tá Donnier và Trung tá Godart chỉ huy",
+        "Đạo quân bình định người Việt do Hoàng Cao Khải chỉ huy"
+      ]
+    },
+    "nguon": [
+      "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna"
+    ]
+  },
   "ket_qua": "Cầm chân quân Pháp gần mười năm bằng lối đánh du kích trong vùng đầm lầy lau sậy, là một trong những phong trào Cần Vương đồng bằng bền bỉ nhất.",
   "y_nghia": "Minh chứng cho khả năng vận dụng địa hình đồng bằng sông nước vào chiến tranh du kích, khác biệt với các căn cứ miền núi cùng thời.",
   "trang_thai": "draft",
   "nguon": [
     "Lịch sử Việt Nam (Viện Sử học) — phong trào Cần Vương",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "Sở VHTTDL Hưng Yên — di tích Bãi Sậy"
+    "Sở VHTTDL Hưng Yên — di tích Bãi Sậy",
+    "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna",
+    "Báo Công an Nhân dân — https://cand.vn/tu-lieu-antg/tim-ve-noi-khoi-phat-cuoc-khoi-nghia-bai-say-i663066/",
+    "Báo Hưng Yên — https://baohungyen.vn/dang-huong-tuong-niem-136-nam-ngay-tuong-quan-nguyen-thien-thuat-giuong-co-khoi-nghia-8884.html",
+    "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/chan-dung-thu-linh-cua-cac-cuoc-khoi-nghia-chong-phap-o-hai-duong-va-hung-yen.htm"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Bách khoa toàn thư Quân sự Việt Nam, quyển 1: Lịch sử Quân sự (NXB Quân đội nhân dân, 2015) — mục Khởi nghĩa Bãi Sậy",
+      "doan": "Khoảng tháng 4.1883, Đinh Gia Quế chánh tuần huyện Đông Yên xin từ quan về quê, tự xưng là Đổng quân vụ (nên còn gọi là Đổng Quế) mộ quân đánh Pháp, lập căn cứ tại làng Thọ Bình, trung tâm của vùng đầm lầy Bãi Sậy rộng lớn",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna",
+      "buoc": 1
+    },
+    {
+      "sach": "Bách khoa toàn thư Quân sự Việt Nam, quyển 1: Lịch sử Quân sự (NXB Quân đội nhân dân, 2015) — mục Khởi nghĩa Bãi Sậy",
+      "doan": "ngày 14.7.1889, quân Pháp phối hợp với đạo quân Hoàng Cao Khải bao vây tiến công nghĩa quân Đốc Tít ở căn cứ Hai Sông. Sau gần một tháng chống trả quyết liệt, do hết đạn và lương thực, Đốc Tít buộc phải ra hàng, bị Pháp đày đi Angiêri.",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-bai-say-1883-1892-1-34908.vna",
+      "buoc": 7
+    },
+    {
+      "sach": "Báo Công an Nhân dân — bài «Tìm về nơi khởi phát cuộc khởi nghĩa Bãi Sậy»",
+      "doan": "Chính tại Văn chỉ này, một ngày đầu tháng 4 năm 1883 đã diễn ra Lễ tế cờ khởi nghĩa của ông Đinh Gia Quế.",
+      "nguon_trich": "Báo Công an Nhân dân — https://cand.vn/tu-lieu-antg/tim-ve-noi-khoi-phat-cuoc-khoi-nghia-bai-say-i663066/",
+      "buoc": 1
+    }
   ]
 }

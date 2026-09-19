@@ -1623,7 +1623,7 @@
         "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
         "Lịch sử Việt Nam (Viện Sử học)"
       ],
-      "ghi_chu": "Số người bị xử tử tại thành Phiên An do chính sử Nguyễn chép lại (một số công trình hiện đại ghi khoảng 1.800 người); cần đối chiếu thêm, không đưa số liệu cụ thể vào ket_qua để tránh sai lệch.",
+      "ghi_chu": "Số người bị xử tử tại thành Phiên An do chính sử Nguyễn chép lại (một số công trình hiện đại ghi khoảng 1.800 người); cần đối chiếu thêm, chưa đưa con số cụ thể vào phần kết quả để tránh sai lệch.",
       "can_tra_them": "Cần tra số quyển Đại Nam thực lục tương ứng và số liệu người bị xử tử.",
       "trang_thai": "reviewed"
     },
@@ -1689,7 +1689,7 @@
         "Đại Nam thực lục — Chính biên, kỷ Minh Mạng",
         "Lịch sử Việt Nam (Viện Sử học)"
       ],
-      "can_tra_them": "Cần tra số quyển Đại Nam thực lục; sự kiện diễn ra trên đất Chân Lạp nên không gắn lien_quan_tinh.",
+      "can_tra_them": "Cần tra số quyển Đại Nam thực lục. Sự kiện diễn ra trên đất Chân Lạp nên không gắn với tỉnh nào.",
       "trang_thai": "reviewed"
     },
     {
@@ -1755,7 +1755,7 @@
         "Đại Nam thực lục — Chính biên, kỷ Thiệu Trị",
         "Lịch sử Việt Nam (Viện Sử học)"
       ],
-      "can_tra_them": "Cần tra số quyển Đại Nam thực lục; sự kiện diễn ra trên đất Chân Lạp nên không gắn lien_quan_tinh.",
+      "can_tra_them": "Cần tra số quyển Đại Nam thực lục. Sự kiện diễn ra trên đất Chân Lạp nên không gắn với tỉnh nào.",
       "trang_thai": "reviewed"
     },
     {
@@ -4683,7 +4683,7 @@
       ],
       "trang_thai": "reviewed",
       "mo_ta": "Minh Mạng hai lần đưa quân sang giúp nước chư hầu Vạn Tượng (Lào) chống Xiêm La xâm lấn nhưng đều thất bại; phản ánh quan hệ triều cống Việt–Lào và thế cạnh tranh ảnh hưởng Việt–Xiêm đầu thế kỷ 19.",
-      "can_tra_them": "Toạ độ chỉ định vị theo tỉnh Xiêng Khoảng hiện nay, nguồn đã đọc không cho địa điểm trận đánh cụ thể. Cần tra Đại Nam thực lục — Chính biên, Đệ nhị kỷ (Minh Mạng). Người soát cần đối chiếu lại năm Mậu Tí = 1828 (một lượt đọc nguồn từng bị tóm tắt sai thành 1832). KHÔNG gán loai_xung_dot: chiến sự diễn ra ngoài lãnh thổ, phân loại là quyết định biên tập chờ người duyệt."
+      "can_tra_them": "Toạ độ chỉ định vị theo tỉnh Xiêng Khoảng hiện nay, nguồn đã đọc không cho địa điểm trận đánh cụ thể. Cần tra Đại Nam thực lục — Chính biên, Đệ nhị kỷ (Minh Mạng). Người soát cần đối chiếu lại năm Mậu Tí = 1828 (một lượt đọc nguồn từng bị tóm tắt sai thành 1832). KHÔNG gán loại xung đột: chiến sự diễn ra ngoài lãnh thổ, phân loại là quyết định biên tập chờ người duyệt."
     },
     {
       "id": "van-ninh-dep-cuop-bien-trinh-that-1802",

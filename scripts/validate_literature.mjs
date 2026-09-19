@@ -33,6 +33,21 @@ const checkSources = (where, sources) => {
     );
 };
 
+// Trần KÝ TỰ cho trích dẫn tác phẩm còn bảo hộ. Vì sao cần cả hai trần: luật
+// «≤8 dòng» đếm số phần tử mảng, nên văn xuôi nhét cả đoạn vào một phần tử thì
+// 8 «dòng» có thể thành hàng nghìn chữ mà cổng vẫn xanh. Đã gặp thật: hai mục
+// 1.045 và 1.099 ký tự trong 3–5 phần tử.
+const TRAN_KY_TU_TRICH = 900;
+const kiemDoDaiTrich = (where, dong) => {
+  const kt = (dong ?? []).join("").length;
+  if (kt > TRAN_KY_TU_TRICH)
+    fail(
+      where,
+      `trích ${kt} ký tự — tác phẩm còn bản quyền chỉ được trích ngắn (≤${TRAN_KY_TU_TRICH} ký tự). ` +
+        "Đếm dòng KHÔNG đủ: một đoạn văn xuôi nằm trong một phần tử mảng vẫn là «1 dòng».",
+    );
+};
+
 // --- Các tuyển tập dạng "poem" (chung schema)
 // `sgk-xua-tho.json` dùng chung lược đồ poem. Ràng buộc riêng của nó — toàn bộ
 // phải là public-domain — kiểm ở khối «Sách học ngày xưa» phía dưới.
@@ -53,6 +68,7 @@ for (const file of POEM_FILES) {
       fail(w, "ban_quyen phải là public-domain|cited-excerpt");
     if (!Array.isArray(p.nguyen_van) || p.nguyen_van.length === 0)
       fail(w, "thiếu nguyen_van");
+    if (p.ban_quyen === "cited-excerpt") kiemDoDaiTrich(w, p.nguyen_van);
     if (p.ban_quyen === "cited-excerpt" && p.nguyen_van.length > 8)
       fail(w, `trích ${p.nguyen_van.length} dòng — tác phẩm còn bản quyền chỉ được trích ngắn (≤8 dòng)`);
     if (!Array.isArray(p.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
@@ -76,6 +92,7 @@ if (existsSync(tuLieuPath)) {
       fail(w, "ban_quyen phải là public-domain|cited-excerpt");
     if (!Array.isArray(t.nguyen_van)) fail(w, "nguyen_van phải là mảng");
     else {
+      if (t.ban_quyen === "cited-excerpt") kiemDoDaiTrich(w, t.nguyen_van);
       if (t.ban_quyen === "cited-excerpt" && t.nguyen_van.length > 8)
         fail(w, `trích ${t.nguyen_van.length} dòng — tác phẩm còn bản quyền chỉ được trích ngắn (≤8 dòng)`);
       if (t.nguyen_van.length === 0 && !t.loi_binh)
@@ -207,6 +224,7 @@ for (const file of GIOI_THIEU_FILES) {
       fail(w, "không có nguyên văn thì phải có gioi_thieu/tom_tat/loi_binh");
     if (!Array.isArray(a.lien_quan_tinh)) fail(w, "thiếu lien_quan_tinh[]");
     // Tác phẩm còn bảo hộ mà lại chép nguyên văn là rủi ro bản quyền thật.
+    if (a.ban_quyen === "cited-excerpt") kiemDoDaiTrich(w, a.nguyen_van);
     if (a.ban_quyen === "cited-excerpt" && Array.isArray(a.nguyen_van) && a.nguyen_van.length > 8)
       fail(w, `trích ${a.nguyen_van.length} dòng — tác phẩm còn bản quyền chỉ được trích ngắn (≤8 dòng)`);
     checkSources(w, a.sources);
@@ -294,6 +312,8 @@ for (const file of ["toan-van-su-thi.json", "toan-van-trung-dai.json", "toan-van
 
     // Tác phẩm còn bảo hộ mà chép trọn là rủi ro bản quyền THẬT. Ngưỡng 8 dòng
     // giống hệt các tệp còn lại của thư viện.
+    if (a.ban_quyen === "cited-excerpt")
+      kiemDoDaiTrich(w, [...chuong.flatMap((c) => c.dong ?? []), ...(a.nguyen_van ?? [])]);
     if (a.ban_quyen === "cited-excerpt" && tong > 8)
       fail(w, `trích ${tong} dòng — tác phẩm còn bản quyền chỉ được trích ngắn (≤8 dòng)`);
 

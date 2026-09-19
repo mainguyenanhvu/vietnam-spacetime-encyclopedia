@@ -1,11 +1,13 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Hòa Bình 1951–1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json — bám sát mo_ta đã duyệt. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Hòa Bình 1951–1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Mục T2 theo docs/section9-sensitive.json. Hai chỗ hai nguồn nhà nước chép khác nhau, GIỮ CẢ HAI theo bất biến #4, ĐỪNG SỬA: diện tích giải phóng (khoảng 2.000km² theo bài Chiến dịch Hoà Bình 10-12-1951 – 25-2-1952 · trên 1.000km² với hơn 20.000 dân theo bài Đưa thắng lợi nhỏ thành thắng lợi lớn). Con số 6.000 và 22.000 KHÔNG mâu thuẫn: 6.000 là riêng mặt trận Hoà Bình, 22.000 là tính cả mặt trận sau lưng địch. Bài «Đưa thắng lợi nhỏ thành thắng lợi lớn» ghi ngày địch rút là «chiều 22-12-1952», mốc đó vênh với chính ngày kết thúc chiến dịch 25/2/1952 mà bài nêu, nên bản ghi này KHÔNG chép ngày đó.",
   "id": "hoa-binh-1951-1952",
   "ten": "Chiến dịch Hòa Bình 1951–1952",
   "nam": 1951,
+  "thoi_gian": "10/12/1951 – 25/2/1952",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Bộ Tổng chỉ huy (Võ Nguyên Giáp)",
-  "doi_thu": "Quân đội Pháp (Kế hoạch Đờ Lát đờ Tátxinhi)",
+  "doi_thu": "Quân đội Pháp (tướng De Lattre)",
   "dia_diem": "Thị xã Hòa Bình và vùng sông Đà (nay tỉnh Phú Thọ)",
   "lien_quan_tinh": [
     "phu-tho"
@@ -15,166 +17,466 @@
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          1000,
-          320
-        ]
+        [200, 40],
+        [270, 160],
+        [330, 290],
+        [420, 400],
+        [520, 500],
+        [640, 570]
       ],
       "nhan": "Sông Đà"
     },
     {
       "kieu": "duong",
       "diem": [
-        [
-          100,
-          450
-        ],
-        [
-          500,
-          400
-        ],
-        [
-          900,
-          380
-        ]
+        [880, 250],
+        [760, 300],
+        [640, 350],
+        [500, 400],
+        [440, 425]
       ],
-      "nhan": "Đường số 6"
+      "nhan": "Đường số 6 — Hà Nội đi Hòa Bình"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [300, 130],
+        [370, 210],
+        [430, 290]
+      ],
+      "nhan": "Đường số 87"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [430, 290],
+        [500, 275],
+        [570, 300],
+        [545, 350]
+      ],
+      "nhan": "Dãy Ba Vì"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [700, 470],
+        [850, 460],
+        [900, 530],
+        [720, 545]
+      ],
+      "nhan": "Vùng trung du và đồng bằng Bắc Bộ sau lưng địch"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-chiem-dong-hb",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 500,
-      "y": 250,
-      "nhan": "Pháp chiếm đóng Hòa Bình"
-    },
-    {
-      "id": "quan-ta-phan-cong-hb",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 300,
-      "y": 350,
-      "nhan": "Quân ta mở chiến dịch phản công"
-    },
-    {
-      "id": "cu-diem-tu-vu",
+      "id": "phong-tuyen-song-da",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 600,
-      "y": 300,
-      "nhan": "Cứ điểm Tu Vũ"
+      "x": 250,
+      "y": 90,
+      "nhan": "Phòng tuyến sông Đà"
     },
     {
-      "id": "mui-cong-tu-vu",
-      "kieu": "mui-ten",
+      "id": "nui-che",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 370,
+      "y": 168,
+      "nhan": "Núi Chẹ"
+    },
+    {
+      "id": "dan-the-la-phu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 490,
+      "y": 180,
+      "nhan": "Cụm cứ điểm Đan Thê – La Phù"
+    },
+    {
+      "id": "trung-doan-88",
+      "kieu": "quan",
       "ben": "ta",
-      "tu": [
-        350,
-        340
-      ],
-      "den": [
-        570,
-        310
-      ],
-      "nhan": "Đợt 1: tiến công Tu Vũ"
+      "x": 180,
+      "y": 175,
+      "nhan": "Trung đoàn 88 (Đại đoàn 308)",
+      "quy_mo": "Sau trận Tu Vũ mang tên truyền thống Trung đoàn Tu Vũ"
     },
     {
-      "id": "mui-phuc-kich-duong6",
-      "kieu": "mui-ten",
+      "id": "ha-noi",
+      "kieu": "dia-danh",
+      "x": 890,
+      "y": 220,
+      "nhan": "Hà Nội — cách Hòa Bình 76km"
+    },
+    {
+      "id": "tu-vu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 295,
+      "y": 232,
+      "nhan": "Cứ điểm Tu Vũ",
+      "quy_mo": "1 tiểu đoàn Âu – Phi · 1 đại đội người địa phương · 3 xe tăng"
+    },
+    {
+      "id": "da-chong",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 425,
+      "y": 252,
+      "nhan": "Đá Chông"
+    },
+    {
+      "id": "tieu-doan-29",
+      "kieu": "quan",
       "ben": "ta",
-      "tu": [
-        300,
-        420
-      ],
-      "den": [
-        600,
-        400
-      ],
-      "nhan": "Đợt 2: phục kích đường số 6"
+      "x": 140,
+      "y": 262,
+      "nhan": "Tiểu đoàn 29",
+      "quy_mo": "Hướng chủ yếu — khu A"
     },
     {
-      "id": "co-tong-phan-cong",
+      "id": "diem-cao-400",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 250,
+      "y": 320,
+      "nhan": "Điểm cao 400"
+    },
+    {
+      "id": "diem-cao-600",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 352,
+      "y": 330,
+      "nhan": "Điểm cao 600"
+    },
+    {
+      "id": "ba-vi",
+      "kieu": "dia-danh",
+      "x": 505,
+      "y": 320,
+      "nhan": "Ba Vì"
+    },
+    {
+      "id": "duong-so-6",
+      "kieu": "dia-danh",
+      "x": 645,
+      "y": 335,
+      "nhan": "Đường số 6 — Pháp phải dùng 16 tiểu đoàn để bảo vệ"
+    },
+    {
+      "id": "tieu-doan-23",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 90,
+      "y": 342,
+      "nhan": "Tiểu đoàn 23",
+      "quy_mo": "Hướng thứ yếu — khu B"
+    },
+    {
+      "id": "cho-ben",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 720,
+      "y": 400,
+      "nhan": "Chợ Bến"
+    },
+    {
+      "id": "tieu-doan-322",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 418,
+      "nhan": "Tiểu đoàn 322",
+      "quy_mo": "Hướng phối hợp — khu C"
+    },
+    {
+      "id": "thi-xa-hoa-binh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 430,
+      "y": 425,
+      "nhan": "Thị xã Hòa Bình"
+    },
+    {
+      "id": "hanh-lang-tiep-te",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 235,
+      "y": 490,
+      "nhan": "Hành lang tiếp tế từ hậu phương ra mặt trận"
+    },
+    {
+      "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
       "x": 500,
-      "y": 200,
-      "nhan": "Đợt 3: tổng phản công"
+      "y": 520,
+      "nhan": "Pháp phải bỏ Hòa Bình"
     },
     {
-      "id": "co-thang-hb",
-      "kieu": "co",
+      "id": "mat-tran-sau-lung",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 500,
-      "y": 150,
-      "nhan": "Pháp rút khỏi Hòa Bình"
+      "x": 810,
+      "y": 500,
+      "nhan": "Mặt trận sau lưng địch",
+      "quy_mo": "Trung du và đồng bằng Bắc Bộ"
+    },
+    {
+      "id": "mui-phap-nhay-du",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [830, 248],
+      "den": [468, 408],
+      "nhan": "Ba tiểu đoàn dù xuống thị xã Hòa Bình ngày 14/11/1951"
+    },
+    {
+      "id": "mui-dot1",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [212, 212],
+      "den": [278, 226],
+      "nhan": "Đợt 1 — đột phá khu phòng ngự sông Đà"
+    },
+    {
+      "id": "mui-dot2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [185, 322],
+      "den": [325, 328],
+      "nhan": "Đợt 2 — đập vỡ phòng tuyến sông Đà"
+    },
+    {
+      "id": "mui-dot3",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [325, 430],
+      "den": [408, 426],
+      "nhan": "Đợt 3 — tiến công thị xã Hòa Bình"
+    },
+    {
+      "id": "mui-phap-rut",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [458, 442],
+      "den": [700, 428],
+      "nhan": "5 tiểu đoàn địch rút khỏi thị xã Hòa Bình"
     }
   ],
+  "luc_luong": {
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "3 tiểu đoàn dù xuống thị xã Hòa Bình ngày 14/11/1951; riêng đường số 6 phải dùng tới 16 tiểu đoàn để bảo vệ",
+          "nguon": "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn"
+        }
+      ],
+      "don_vi": [
+        "Hai tuyến phòng ngự dọc đường 6 và dọc sông Đà",
+        "Cứ điểm Tu Vũ: 1 tiểu đoàn Âu – Phi, 1 đại đội người địa phương, 3 xe tăng, phòng ngự thành 3 khu A, B, C"
+      ],
+      "vu_khi": [
+        "Pháo binh ở Chẹ, Đá Chông, Thủ Pháp yểm trợ cứ điểm Tu Vũ",
+        "Công sự gỗ đất và 4 hàng rào kẽm gai quanh Tu Vũ"
+      ]
+    },
+    "ta": {
+      "don_vi": [
+        "Trung đoàn 88 (Đại đoàn 308) được tăng cường một tiểu đoàn bộ binh",
+        "Tiểu đoàn 29 — hướng chủ yếu",
+        "Tiểu đoàn 23 — hướng thứ yếu",
+        "Tiểu đoàn 322 — hướng phối hợp",
+        "Tiểu đoàn pháo binh 80 (thiếu) làm đội dự bị"
+      ],
+      "vu_khi": [
+        "8 khẩu sơn pháo 75mm",
+        "Một đại đội súng phòng không 12,7mm",
+        "ĐKZ 57mm, ba-dô-ca, cối 82mm, đại liên"
+      ]
+    },
+    "nguon": [
+      "Báo Quân đội nhân dân — Trận công kiên then chốt mở màn Chiến dịch Hòa Bình — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/tran-cong-kien-then-chot-mo-man-chien-dich-hoa-binh-439437",
+      "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "hơn 6.000 tên trên mặt trận Hòa Bình — diệt hơn 5.000, bắt gần 700; thu 24 khẩu pháo các cỡ, 788 súng các loại, 98 máy vô tuyến điện; phá huỷ 12 khẩu pháo và 246 xe quân sự, bắn rơi 9 máy bay, bắn chìm và bắn cháy 17 ca nô, tàu, xuồng",
+        "nguon": "Báo Quân đội nhân dân — Chiến dịch Hòa Bình (10-12-1951 – 25-2-1952)"
+      },
+      {
+        "so": "khoảng 22.000 tên nếu tính cả hai mặt trận, bức hàng và bức rút hơn 1.000 đồn bốt",
+        "nguon": "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn"
+      }
+    ],
+    "nguon": [
+      "Báo Quân đội nhân dân — Chiến dịch Hòa Bình (10-12-1951 – 25-2-1952), đánh bại âm mưu giành lại quyền chủ động của thực dân Pháp — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-hoa-binh-10-12-1951-25-2-1952-danh-bai-am-muu-gianh-lai-quyen-chu-dong-cua-thuc-dan-phap-796815",
+      "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Pháp chiếm đóng Hòa Bình",
-      "mo_ta": "Cuối 1951, Pháp đưa quân chiếm đóng thị xã Hòa Bình và vùng sông Đà, nhằm cắt đường liên lạc Việt Bắc – Liên khu 3, 4.",
+      "tieu_de": "De Lattre chọn Hòa Bình làm nơi «buộc Việt Minh phải xuất trận»",
+      "thoi_gian": "10 – 15/11/1951",
+      "dia_danh": "Chợ Bến · thị xã Hòa Bình",
+      "mo_ta": "Bị đánh đau ở Chiến dịch Biên giới 1950 rồi lại bị du kích đánh mạnh ở đồng bằng Bắc Bộ, quân Pháp lâm vào thế phòng ngự bị động. Cuối tháng 10/1951, Pháp đưa tướng De Lattre trở lại Hà Nội nắm quyền; ông ta tuyên bố đã tới lúc giành lại chủ động trên chiến trường, buộc đối phương phải tiếp nhận chiến đấu trên một địa điểm do Pháp lựa chọn. De Lattre chọn Hòa Bình, địa bàn chỉ cách Hà Nội 76km, nằm trong tầm hoạt động của máy bay ném bom Pháp, là nút giao thông thuỷ bộ nối liền Việt Bắc với đồng bằng và miền Trung. Ngày 10/11/1951, Pháp bất ngờ đánh chiếm Chợ Bến để cắt đường di chuyển chủ lực của ta từ Việt Bắc xuống đồng bằng. Ngày 14/11/1951, ba tiểu đoàn nhảy dù xuống thị xã Hòa Bình. Chiều 15/11, De Lattre họp báo ở Hà Nội thông báo «chiến thắng Hòa Bình». Sau khi chiếm đóng, quân Pháp xây hệ thống cứ điểm mạnh, hình thành hai tuyến phòng ngự dọc đường 6 và dọc sông Đà.",
       "hien": [
-        "quan-dich-chiem-dong-hb"
+        "cho-ben",
+        "thi-xa-hoa-binh",
+        "mui-phap-nhay-du",
+        "ha-noi",
+        "duong-so-6",
+        "phong-tuyen-song-da",
+        "tu-vu",
+        "nui-che"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Ta mở chiến dịch phản công (10/12/1951)",
-      "mo_ta": "Quân ta mở chiến dịch phản công nhằm phá kế hoạch chiếm đóng, buộc Pháp phân tán lực lượng.",
+      "tieu_de": "«Một cơ hội hiếm có» — quyết định mở chiến dịch",
+      "thoi_gian": "15 – 23/11/1951",
+      "dia_danh": "Hội nghị Quân uỷ Trung ương",
+      "mo_ta": "Ngày 15/11/1951, Đại tướng Võ Nguyên Giáp triệu tập Hội nghị Quân uỷ Trung ương. Hội nghị nhận định việc Pháp chiếm thị xã Hòa Bình là một cơ hội hiếm có để ta tiêu diệt nhiều sinh lực địch: đánh ra Hòa Bình, địch phải phân tán lực lượng cơ động và lực lượng tinh nhuệ trên một mặt trận rộng lớn, núi rừng hiểm trở, địa hình đột xuất, công sự chưa vững chắc; mặt khác vì phải dồn phần lớn quân cơ động ra Hòa Bình nên lực lượng địch ở đồng bằng bị dàn mỏng, các vùng từ hữu ngạn, tả ngạn Liên khu 3 đến trung du đều sơ hở hơn trước. Quân uỷ Trung ương đề nghị mở chiến dịch, chuyển từ hoạt động thụ động sang tiến công địch ở nơi chúng mới chiếm đóng, mục đích là tiêu diệt sinh lực địch và phát triển chiến tranh du kích. Ngày 23/11/1951, Hội nghị Bộ Chính trị đồng ý, nhấn mạnh phải hết sức tranh thủ thời gian, góp phần đưa thắng lợi nhỏ thành thắng lợi lớn.",
       "hien": [
-        "quan-dich-chiem-dong-hb",
-        "quan-ta-phan-cong-hb"
+        "thi-xa-hoa-binh",
+        "phong-tuyen-song-da",
+        "duong-so-6",
+        "mat-tran-sau-lung",
+        "trung-doan-88",
+        "hanh-lang-tiep-te"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đợt 1: tiến công Tu Vũ",
-      "mo_ta": "Quân ta tiến công cụm cứ điểm Tu Vũ, mở màn chiến dịch.",
+      "tieu_de": "Trận then chốt mở màn: Tu Vũ",
+      "thoi_gian": "17 giờ ngày 10/12 – 3 giờ 30 phút ngày 11/12/1951",
+      "dia_danh": "Cứ điểm Tu Vũ trên sông Đà",
+      "mo_ta": "Kế hoạch tác chiến xác định tập trung binh hoả lực đột phá khu phòng ngự sông Đà, lấy Tu Vũ làm trận mở màn quyết định nhằm triệt đường tiếp tế chủ yếu trên sông của địch và mở rộng đường vận chuyển của ta. Tu Vũ thuộc phân khu Sông Đà – Ba Vì, ở thế tương đối yếu vì bị sông ngăn cách và xa các căn cứ Sơn Tây, Trung Hà; muốn ứng cứu, địch chỉ có đường bộ theo trục 87 và đường thuỷ theo sông Đà. Địch bố trí ở đây một tiểu đoàn Âu – Phi, một đại đội người địa phương, phòng ngự thành ba khu A, B, C với ba xe tăng, công sự gỗ đất, bốn hàng rào kẽm gai, được pháo binh ở Chẹ, Đá Chông, Thủ Pháp yểm trợ. Ta dùng Trung đoàn 88 được tăng cường một tiểu đoàn bộ binh, 8 khẩu sơn pháo 75mm và một đại đội súng phòng không 12,7mm, chia ba hướng: Tiểu đoàn 29 đánh khu A, Tiểu đoàn 23 đánh khu B, Tiểu đoàn 322 đánh khu C. Địch bắn gần 5.000 quả đạn pháo ngăn chặn; ta tổ chức sáu mũi đột phá cùng lúc. 3 giờ 30 phút ngày 11/12/1951, quân ta làm chủ hoàn toàn trận địa.",
       "hien": [
-        "cu-diem-tu-vu",
-        "mui-cong-tu-vu"
+        "tu-vu",
+        "trung-doan-88",
+        "tieu-doan-29",
+        "tieu-doan-23",
+        "tieu-doan-322",
+        "mui-dot1",
+        "da-chong",
+        "nui-che"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Trận công kiên then chốt mở màn Chiến dịch Hòa Bình — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/tran-cong-kien-then-chot-mo-man-chien-dich-hoa-binh-439437"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đợt 2: đánh trên đường 6",
-      "mo_ta": "Quân ta tổ chức phục kích, cắt đứt và gây thiệt hại nặng cho các đoàn tiếp viện trên đường 6.",
+      "tieu_de": "Đợt 1: cắt đứt tuyến sông Đà",
+      "thoi_gian": "10 – 26/12/1951",
+      "dia_danh": "Tu Vũ · Núi Chẹ",
+      "mo_ta": "Trong đợt 1, ta cắt đứt tuyến sông Đà, tiến công tiêu diệt các cứ điểm Tu Vũ và Núi Chẹ. Trung đoàn 88 tiêu diệt hoàn toàn cứ điểm Tu Vũ, một cứ điểm lớn được bảo vệ nghiêm ngặt; địch chi viện 5.000 trái pháo yểm trợ nhưng không ngăn nổi. Sau trận này, Trung đoàn 88 được gọi tên truyền thống là Trung đoàn Tu Vũ. Thắng lợi Tu Vũ mở ra khả năng một trung đoàn bộ binh ta đủ sức đánh thắng một tiểu đoàn tăng cường của địch có xe tăng, thiết giáp, phòng ngự trong cứ điểm công sự vững chắc với hoả lực pháo binh chi viện mạnh. Đây là trận đánh công kiên điển hình quy mô trung đoàn tiêu diệt cứ điểm độc lập cấp tiểu đoàn ở địa bàn trung du – đồng bằng, nơi địch có ưu thế về hoả lực và sức cơ động.",
       "hien": [
-        "mui-phuc-kich-duong6"
+        "tu-vu",
+        "nui-che",
+        "trung-doan-88",
+        "phong-tuyen-song-da",
+        "hanh-lang-tiep-te",
+        "mui-dot1"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482",
+        "Báo Quân đội nhân dân — Trận công kiên then chốt mở màn Chiến dịch Hòa Bình — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/tran-cong-kien-then-chot-mo-man-chien-dich-hoa-binh-439437"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đợt 3: tổng phản công",
-      "mo_ta": "Quân ta tổng phản công trên toàn mặt trận, loại khỏi vòng chiến khoảng 22.000 quân địch.",
+      "tieu_de": "Đợt 2: phòng tuyến sông Đà vỡ, Pháp rút bỏ",
+      "thoi_gian": "27 – 31/12/1951",
+      "dia_danh": "Điểm cao 400 và 600 · Đá Chông · Chẹ · đường 87 · Ba Vì · Mỹ Khê",
+      "mo_ta": "Bước sang đợt 2, ta tiếp tục đập vỡ phòng tuyến sông Đà, tiêu diệt các điểm cao 400, 600, Đá Chông, Chẹ, đồng thời chặn đánh các cánh quân viện trên các trục đường 87, Ba Vì, Mỹ Khê. Quân Pháp nhận thấy không đủ lực lượng bảo vệ phòng tuyến sông Đà nên rút lui toàn bộ, chỉ để lại cụm cứ điểm Đan Thê – La Phù gần Trung Hà thuộc Sơn Tây. Địch dự định tăng cường phòng ngự tuyến đường số 6 và thị xã Hòa Bình, nhưng ý định đó chưa kịp thành thì quân ta đã nổ súng tiến công thị xã. Mất tuyến sông Đà là mất đường tiếp tế thuỷ chủ yếu, đồng thời mở rộng hành lang vận chuyển của ta từ hậu phương ra mặt trận.",
       "hien": [
-        "co-tong-phan-cong"
+        "diem-cao-400",
+        "diem-cao-600",
+        "da-chong",
+        "ba-vi",
+        "dan-the-la-phu",
+        "mui-dot2",
+        "phong-tuyen-song-da",
+        "hanh-lang-tiep-te"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Pháp buộc rút khỏi Hòa Bình (23/2/1952)",
-      "mo_ta": "Pháp buộc phải rút khỏi Hòa Bình, đánh dấu thất bại của Kế hoạch Đờ Lát đờ Tátxinhi.",
+      "tieu_de": "Đợt 3: «công đồn đả viện» trên đường số 6",
+      "thoi_gian": "7/1 – 25/2/1952",
+      "dia_danh": "Đường số 6 · thị xã Hòa Bình",
+      "mo_ta": "Trong đợt 3, ta tiếp tục dùng chiến thuật «công đồn đả viện» và thường xuyên uy hiếp các đường tiếp tế thuỷ, bộ để cầm chân một số lớn lính Pháp. Riêng trên đường số 6, Pháp phải dùng tới 16 tiểu đoàn để bảo vệ. Quân Pháp phải rải quân ra nhiều nơi và cạn hết quân dự trữ; bộ chỉ huy Pháp lúng túng đối phó trong khi chiến phí ngày càng quá sức chịu đựng khiến nội tình nước Pháp rối bời. Chiến dịch Hòa Bình thành công trên các mặt tổ chức lực lượng lớn, giải quyết hiệp đồng giữa các lực lượng và các hình thức hoạt động, hình thành thế bao vây chia cắt để tiêu diệt địch, kết hợp hoạt động giữa Mặt trận Hòa Bình với mặt trận vùng sau lưng địch.",
       "hien": [
-        "co-thang-hb"
+        "duong-so-6",
+        "thi-xa-hoa-binh",
+        "mui-dot3",
+        "cho-ben",
+        "ba-vi",
+        "hanh-lang-tiep-te"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482",
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình (10-12-1951 – 25-2-1952) — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-hoa-binh-10-12-1951-25-2-1952-danh-bai-am-muu-gianh-lai-quyen-chu-dong-cua-thuc-dan-phap-796815"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Mặt trận sau lưng địch ở trung du và đồng bằng",
+      "thoi_gian": "Song song với mặt trận Hòa Bình",
+      "dia_danh": "Trung du · đồng bằng Bắc Bộ",
+      "mo_ta": "Trên hướng phối hợp, ta tiến sâu vào vùng địch tạm chiếm ở trung du và đồng bằng Bắc Bộ, liên tục tiến công địch, góp phần vào thắng lợi của mặt trận chính. Đây chính là chỗ Quân uỷ Trung ương đã tính từ đầu: vì phải tập trung phần lớn quân cơ động ra Hòa Bình, lực lượng địch ở đồng bằng bị dàn mỏng, các vùng từ hữu ngạn, tả ngạn Liên khu 3 đến trung du đều sơ hở hơn trước. Kết hợp hoạt động của hai mặt trận là một trong những thành công lớn nhất của chiến dịch, đưa tổng số địch bị loại khỏi vòng chiến đấu lên khoảng 22.000 tên và bức hàng, bức rút hơn 1.000 đồn bốt, mở rộng các căn cứ du kích.",
+      "hien": [
+        "mat-tran-sau-lung",
+        "ha-noi",
+        "cho-ben",
+        "duong-so-6",
+        "thi-xa-hoa-binh"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "25/2/1952: Pháp bỏ Hòa Bình",
+      "thoi_gian": "25/2/1952",
+      "dia_danh": "Thị xã Hòa Bình · sông Đà",
+      "mo_ta": "Tổng Quân uỷ nhận định rằng theo thế chung thì muốn hay không muốn, địch cũng phải rút khỏi Hòa Bình. Năm tiểu đoàn địch lặng lẽ rút chạy khỏi thị xã; Pháp dùng ba vạn viên đạn pháo yểm trợ cho cuộc rút lui với hy vọng giảm thiểu thiệt hại. Trên đường rút chạy, địch bị chủ lực ta đón đánh, rồi bộ đội địa phương và du kích tiếp tục truy kích, chặn đánh gây tổn thất nặng nề. Ngày 25/2/1952, chiến dịch giành thắng lợi sau ba đợt tiến công và 2,5 tháng chiến đấu liên tục. Riêng mặt trận Hòa Bình, ta tiêu diệt hơn 6.000 tên địch gồm diệt hơn 5.000 và bắt gần 700, thu 24 khẩu pháo các cỡ, 788 súng các loại, 98 máy vô tuyến điện, phá huỷ 12 khẩu pháo và 246 xe quân sự, bắn rơi 9 máy bay, bắn chìm và bắn cháy 17 ca nô, tàu, xuồng. Diện tích giải phóng được chép hai cách: khoảng 2.000km², hoặc trên 1.000km² với hơn 20.000 dân.",
+      "hien": [
+        "thi-xa-hoa-binh",
+        "mui-phap-rut",
+        "co-thang",
+        "duong-so-6",
+        "phong-tuyen-song-da",
+        "mat-tran-sau-lung"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình (10-12-1951 – 25-2-1952) — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-hoa-binh-10-12-1951-25-2-1952-danh-bai-am-muu-gianh-lai-quyen-chu-dong-cua-thuc-dan-phap-796815",
+        "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482"
       ]
     }
   ],
-  "ket_qua": "Loại khỏi vòng chiến khoảng 22.000 quân địch qua 3 đợt tiến công, buộc Pháp rút khỏi Hòa Bình ngày 23/2/1952.",
-  "y_nghia": "Đánh dấu thất bại của Kế hoạch Đờ Lát đờ Tátxinhi, giữ vững tuyến liên lạc giữa Việt Bắc và các liên khu.",
+  "ket_qua": "Riêng mặt trận Hòa Bình tiêu diệt hơn 6.000 quân địch, tính cả mặt trận sau lưng địch là khoảng 22.000; phá kế hoạch chiếm đóng Hòa Bình, buộc Pháp rút khỏi thị xã ngày 25/2/1952.",
+  "y_nghia": "Đánh dấu thất bại của Kế hoạch Đờ Lát đờ Tátxinhi, giữ vững tuyến liên lạc giữa Việt Bắc và các liên khu, đưa quân đội ta lên bước tiến mới về khả năng chiến đấu liên tục dài ngày trên hai mặt trận.",
   "trang_thai": "draft",
   "nguon": [
+    "Báo Quân đội nhân dân — Chiến dịch Hòa Bình (10-12-1951 – 25-2-1952), đánh bại âm mưu giành lại quyền chủ động của thực dân Pháp — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-hoa-binh-10-12-1951-25-2-1952-danh-bai-am-muu-gianh-lai-quyen-chu-dong-cua-thuc-dan-phap-796815",
+    "Báo Quân đội nhân dân — Trận công kiên then chốt mở màn Chiến dịch Hòa Bình — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/tran-cong-kien-then-chot-mo-man-chien-dich-hoa-binh-439437",
+    "Báo Quân đội nhân dân — Chiến dịch Hòa Bình: đưa thắng lợi nhỏ thành thắng lợi lớn — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482",
     "Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn) — Chiến dịch Hòa Bình",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
     "Lịch sử Việt Nam (Viện Sử học)"
@@ -184,7 +486,13 @@
       "sach": "Hồ Chí Minh biên niên sự kiện quân sự (1919-1969) — Nxb Quân đội nhân dân",
       "doan": "So với những thắng lợi trước, thắng lợi lần này là khá to. Thắng lợi lần này đã đánh dấu một bước tiến bộ mới của bộ đội ta, và đã làm cho địch phải thất bại nhục nhã trong âm mưu củng cố phòng ngự chuyển lên tiến công...",
       "nguon_trich": "Báo Quân đội nhân dân (qdnd.vn) — Chiến dịch Hòa Bình (10-12-1951 - 25-2-1952) — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-hoa-binh-10-12-1951-25-2-1952-danh-bai-am-muu-gianh-lai-quyen-chu-dong-cua-thuc-dan-phap-796815",
-      "buoc": 6
+      "buoc": 8
+    },
+    {
+      "sach": "Tuyên bố của tướng De Lattre khi trở lại Hà Nội, cuối tháng 10/1951",
+      "doan": "Đã tới lúc giành lại chủ động trên chiến trường, buộc Việt Minh phải tiếp nhận chiến đấu trên một địa điểm do Pháp lựa chọn",
+      "nguon_trich": "Báo Quân đội nhân dân — https://www.qdnd.vn/ho-so-su-kien/70-nam-quan-doi-nhan-dan-viet-nam-anh-hung/chien-dich-hoa-binh-dua-thang-loi-nho-thanh-thang-loi-lon-261482",
+      "buoc": 1
     }
   ]
 }

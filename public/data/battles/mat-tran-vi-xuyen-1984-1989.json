@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Mặt trận Vị Xuyên 1984–1989 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nguồn hiện có (mo_ta trong chien-dich-tran-danh.json) chỉ mô tả TỔNG QUÁT 5 năm mặt trận, KHÔNG có ngày tháng/đơn vị/diễn biến từng trận cụ thể — sa đồ giữ đúng mức độ tổng quát này, KHÔNG suy diễn thêm ngày tháng hay diễn biến chi tiết từng cao điểm. Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "ghi_chu": "Sa đồ Mặt trận Vị Xuyên 1984 – 1989 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "mat-tran-vi-xuyen-1984-1989",
   "ten": "Mặt trận Vị Xuyên 1984–1989",
   "nam": 1984,
@@ -13,140 +13,358 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác. Nội dung CỐ Ý giữ mức tổng quát đúng bằng nguồn hiện có.",
   "dia_hinh": [
     {
+      "kieu": "duong",
+      "diem": [
+        [
+          120,
+          90
+        ],
+        [
+          350,
+          78
+        ],
+        [
+          600,
+          85
+        ],
+        [
+          880,
+          105
+        ]
+      ],
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc, chính diện khoảng 20 km"
+    },
+    {
       "kieu": "nui",
       "diem": [
         [
-          50,
-          50
+          160,
+          200
         ],
         [
-          500,
-          20
+          400,
+          185
         ],
         [
-          950,
-          60
+          640,
+          195
+        ],
+        [
+          880,
+          215
         ]
       ],
-      "nhan": "Dãy núi biên giới Vị Xuyên, Hà Giang"
+      "nhan": "Vùng núi đá Vị Xuyên — cao từ biên giới, thấp dần vào nội địa"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          200,
+          330
+        ],
+        [
+          420,
+          350
+        ],
+        [
+          660,
+          335
+        ],
+        [
+          880,
+          320
+        ]
+      ],
+      "nhan": "Suối Thanh Thuỷ"
     },
     {
       "kieu": "duong",
       "diem": [
         [
-          100,
-          150
+          760,
+          470
         ],
         [
-          500,
-          120
+          700,
+          540
         ],
         [
-          900,
-          160
+          640,
+          590
         ]
       ],
-      "nhan": "Đường biên giới Việt – Trung"
+      "nhan": "Quốc lộ số 2 — đường độc đạo từ thị xã Hà Giang về Hà Nội"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-lan-chiem-vx",
+      "id": "phao-binh-tq",
       "kieu": "quan",
       "ben": "dich",
-      "x": 500,
-      "y": 100,
-      "nhan": "Trung Quốc lấn chiếm các cao điểm"
+      "x": 850,
+      "y": 60,
+      "nhan": "Hơn 1,8 triệu viên đại bác bắn vào mặt trận trong 5 năm"
     },
     {
-      "id": "quan-ta-phong-ngu-vx",
+      "id": "diem-cao-1509",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 250,
+      "y": 140,
+      "nhan": "Điểm cao 1509"
+    },
+    {
+      "id": "diem-cao-1100",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 450,
+      "y": 130,
+      "nhan": "Điểm cao 1100"
+    },
+    {
+      "id": "diem-cao-772",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 150,
+      "nhan": "Điểm cao 772"
+    },
+    {
+      "id": "diem-cao-685",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 850,
+      "y": 175,
+      "nhan": "Điểm cao 685"
+    },
+    {
+      "id": "lan-chiem",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        160,
+        240
+      ],
+      "den": [
+        220,
+        180
+      ],
+      "nhan": "Lấn tới bắc suối Thanh Thuỷ, sâu vào đất Việt Nam khoảng 5 km"
+    },
+    {
+      "id": "doi-dai-co-ich",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 560,
+      "y": 250,
+      "nhan": "Đồi Đài · Cô Ích"
+    },
+    {
+      "id": "suoi-thanh-thuy",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 290,
+      "nhan": "Suối Thanh Thuỷ"
+    },
+    {
+      "id": "xa-thanh-thuy",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 300,
+      "y": 400,
+      "nhan": "Xã Thanh Thuỷ · Minh Tân · Thanh Đức (Vị Xuyên)"
+    },
+    {
+      "id": "yen-minh",
+      "kieu": "dia-danh",
+      "x": 570,
+      "y": 400,
+      "nhan": "Xã Bạch Đích · Phú Lũng (Yên Minh)"
+    },
+    {
+      "id": "bo-doi-vn",
       "kieu": "quan",
       "ben": "ta",
-      "x": 400,
-      "y": 350,
-      "nhan": "Bộ đội ta phòng ngự"
+      "x": 830,
+      "y": 370,
+      "nhan": "Hàng chục sư đoàn chủ lực luân phiên chiến đấu, cùng bộ binh địa phương, đặc công, pháo binh, công binh, hoá học"
     },
     {
-      "id": "cac-cao-diem",
+      "id": "lo-voi-the-ky",
       "kieu": "dia-danh",
-      "x": 550,
-      "y": 250,
-      "nhan": "Các cao điểm 685, 1509, 772"
+      "x": 470,
+      "y": 500,
+      "nhan": "«Lò vôi thế kỷ» — có ngọn núi bị đánh bạt hơn 3 m"
     },
     {
-      "id": "co-hy-sinh-vx",
-      "kieu": "co",
+      "id": "dan-quan",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 450,
-      "nhan": "Hơn 4.000 cán bộ, chiến sĩ hy sinh"
-    },
-    {
-      "id": "nghia-trang-vi-xuyen",
-      "kieu": "dia-danh",
-      "x": 600,
+      "x": 150,
       "y": 480,
-      "nhan": "Nghĩa trang liệt sĩ quốc gia Vị Xuyên"
+      "nhan": "Hàng vạn dân quân, du kích; hàng chục vạn thanh niên xung phong, dân công hoả tuyến"
     },
     {
-      "id": "dai-huong-468",
+      "id": "thi-xa-ha-giang",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 790,
+      "y": 500,
+      "nhan": "Thị xã Hà Giang"
+    },
+    {
+      "id": "hy-sinh",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 580,
+      "nhan": "Hơn 4.000 cán bộ, chiến sĩ, đồng bào hy sinh"
+    },
+    {
+      "id": "rut-quan-vx",
       "kieu": "co",
       "ben": "ta",
-      "x": 680,
-      "y": 430,
-      "nhan": "Đài hương 468"
+      "x": 890,
+      "y": 575,
+      "nhan": "15/5/1989 ngừng bắn · tháng 10/1989 rút hết quân"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Trung Quốc liên tục lấn chiếm biên giới Hà Giang (từ 1984)",
-      "mo_ta": "Từ năm 1984, Trung Quốc liên tục tiến công lấn chiếm các cao điểm biên giới khu vực Vị Xuyên, Hà Giang.",
+      "tieu_de": "Sau 17/2/1979 — biên giới vẫn căng thẳng, tiếp tục lấn chiếm",
+      "thoi_gian": "1979 – 1984",
+      "dia_danh": "Toàn tuyến biên giới phía Bắc",
+      "mo_ta": "Sau khi cuộc tấn công đưa hơn 60 vạn quân tràn vào 6 tỉnh biên giới phía Bắc rạng sáng 17/2/1979 thất bại, phía Trung Quốc vẫn duy trì 12 sư đoàn và hàng chục trung đoàn độc lập áp sát biên giới Việt Nam, thường xuyên gây căng thẳng và tiếp tục lấn chiếm lãnh thổ ở mọi quy mô. Họ thường dùng pháo, cối bắn vào lãnh thổ Việt Nam, có nơi đưa lực lượng biên phòng hoặc bộ đội địa phương tấn công vào một số đồn biên phòng và trận địa phòng ngự của ta.",
       "hien": [
-        "quan-dich-lan-chiem-vx"
+        "phao-binh-tq",
+        "diem-cao-1509",
+        "diem-cao-1100"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Bộ đội ta kiên cường phòng ngự các cao điểm",
-      "mo_ta": "Quân và dân ta kiên cường tổ chức phòng ngự, giành giật quyết liệt từng cao điểm suốt nhiều năm.",
+      "tieu_de": "28/4/1984 — mở cuộc tấn công lấn chiếm biên giới Vị Xuyên",
+      "thoi_gian": "28/4/1984",
+      "dia_danh": "Huyện Vị Xuyên, tỉnh Hà Tuyên",
+      "mo_ta": "Sau nhiều ngày dùng pháo binh bắn phá ác liệt vào các tỉnh biên giới, ngày 28/4/1984 phía Trung Quốc mở cuộc tấn công xâm lược lấn chiếm biên giới Việt Nam. Từ năm 1984 đến 1989 họ lần lượt huy động khoảng 50 vạn quân từ 8 trong 10 đại quân khu, với hơn 20 sư đoàn bộ binh, 171 trung đoàn và tiểu đoàn bộ binh, 3 sư đoàn pháo binh cùng các đơn vị pháo binh của các sư đoàn bộ binh — tổng cộng hơn 400 khẩu pháo lớn các loại — và trên 1.000 xe cơ giới phục vụ chiến đấu, tiến công toàn diện vào Vị Xuyên.",
       "hien": [
-        "quan-dich-lan-chiem-vx",
-        "quan-ta-phong-ngu-vx",
-        "cac-cao-diem"
+        "phao-binh-tq",
+        "lan-chiem",
+        "diem-cao-1509"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Chiến trường ác liệt nhất biên giới phía Bắc",
-      "mo_ta": "Mặt trận Vị Xuyên trở thành chiến trường ác liệt nhất trong toàn bộ cuộc chiến đấu bảo vệ biên giới phía Bắc.",
+      "tieu_de": "Vì sao chọn Vị Xuyên",
+      "thoi_gian": "1984",
+      "dia_danh": "Hà Tuyên (nay là Hà Giang và Tuyên Quang)",
+      "mo_ta": "Biên giới huyện Vị Xuyên tỉnh Hà Tuyên là địa bàn hẻo lánh, cách Hà Nội hơn 300 km và chỉ có một quốc lộ số 2 chạy từ thị xã Hà Giang về Hà Nội. Khu vực Vị Xuyên phần lớn là núi đá, cao từ biên giới rồi thấp dần vào nội địa Việt Nam; địa hình phía bên kia là vùng núi cao nguyên rộng, thuận lợi cho triển khai đội hình lớn, còn phía Việt Nam rất khó triển khai đội hình phòng thủ và khó vận chuyển, chi viện từ phía sau lên. Mục đích của phía tấn công là thu hút càng nhiều càng tốt binh lực Việt Nam trên tuyến biên giới, tác động tới công cuộc tái thiết kinh tế.",
       "hien": [
-        "cac-cao-diem",
-        "quan-ta-phong-ngu-vx"
+        "thi-xa-ha-giang",
+        "suoi-thanh-thuy",
+        "xa-thanh-thuy"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Hơn 4.000 cán bộ, chiến sĩ hy sinh",
-      "mo_ta": "Trong 5 năm chiến đấu (1984–1989), hơn 4.000 cán bộ, chiến sĩ đã anh dũng hy sinh để bảo vệ biên cương.",
+      "tieu_de": "Chính diện 20 km, sâu 10 km — mục tiêu vẽ lại đường biên",
+      "thoi_gian": "1984 – 1989",
+      "dia_danh": "Bắc suối Thanh Thuỷ",
+      "mo_ta": "Lần này phía Trung Quốc không tấn công trên chính diện rộng mà tập trung lấn chiếm một phần đất ở khu vực biên giới huyện Vị Xuyên, với chính diện khoảng 20 km và chiều sâu khoảng 10 km. Mục tiêu là lấn tới bắc suối Thanh Thuỷ để vẽ lại đường biên giới sâu vào đất Việt Nam khoảng 5 km. Từ một địa bàn được xác định là thứ yếu, Vị Xuyên nhanh chóng trở thành mặt trận trọng điểm trong chính sách «gặm nhấm» biên giới.",
       "hien": [
-        "co-hy-sinh-vx"
+        "lan-chiem",
+        "suoi-thanh-thuy",
+        "diem-cao-1509",
+        "diem-cao-1100",
+        "diem-cao-772"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Nghĩa trang Vị Xuyên và Đài hương 468 tôn vinh liệt sĩ",
-      "mo_ta": "Nghĩa trang liệt sĩ quốc gia Vị Xuyên hiện an táng 1.863 liệt sĩ; Đài hương 468 trên cao điểm 468 tôn vinh những người đã ngã xuống.",
+      "tieu_de": "Lực lượng ta và địa bàn chiến sự",
+      "thoi_gian": "1984 – 1989",
+      "dia_danh": "Thanh Thuỷ · Minh Tân · Thanh Đức · Bạch Đích · Phú Lũng",
+      "mo_ta": "Trong 5 năm từ 1984 đến 1989, Việt Nam lần lượt huy động hàng chục sư đoàn chủ lực, các trung đoàn bộ binh địa phương và đặc công, một số trung đoàn, lữ đoàn pháo binh, công binh, hoá học, cùng hàng vạn dân quân, du kích tham gia chiến đấu, và hàng chục vạn thanh niên xung phong, dân công hoả tuyến phục vụ mặt trận. Chiến sự diễn ra ác liệt ở các xã Thanh Thuỷ, Minh Tân, Thanh Đức thuộc huyện Vị Xuyên và các xã Bạch Đích, Phú Lũng thuộc huyện Yên Minh. Hơn một chục sư đoàn bộ binh luân phiên tham gia, giành giật với đối phương từng chiến hào, từng cao điểm.",
       "hien": [
-        "nghia-trang-vi-xuyen",
-        "dai-huong-468"
+        "bo-doi-vn",
+        "dan-quan",
+        "xa-thanh-thuy",
+        "yen-minh"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "«Lò vôi thế kỷ» — các cao điểm 1509, 1100, 772, 685, Đồi Đài, Cô Ích",
+      "thoi_gian": "1984 – 1989",
+      "dia_danh": "Các cao điểm biên giới Vị Xuyên",
+      "mo_ta": "Từ sau ngày 18/3/1979, gần chục năm ròng chưa khi nào Vị Xuyên ngớt tiếng pháo, đạn, súng cối từ bên kia biên giới rót sang. Có đợt chỉ trong 3 ngày, đối phương bắn hơn 100.000 quả đạn pháo vào khu vực Vị Xuyên về đến thị xã Hà Giang; cả 5 năm là hơn 1,8 triệu viên đại bác. Sau khi kết thúc, đo lại có ngọn núi bị đánh bạt đi hơn 3 m — mức ác liệt khiến anh em gọi nơi đây là «lò vôi thế kỷ». Nhiều trận giành, giữ đất diễn ra quyết liệt trên các cao điểm 1509, 1100, 772, 685, Đồi Đài, Cô Ích.",
+      "hien": [
+        "lo-voi-the-ky",
+        "diem-cao-1509",
+        "diem-cao-1100",
+        "diem-cao-772",
+        "diem-cao-685",
+        "doi-dai-co-ich",
+        "phao-binh-tq"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Tổn thất — hơn 4.000 người hy sinh",
+      "thoi_gian": "1984 – 1989",
+      "dia_danh": "Mặt trận Vị Xuyên",
+      "mo_ta": "Quân và dân ta tiêu diệt và làm bị thương hàng vạn quân đối phương, buộc họ phải rút quân về bên kia biên giới. Tổn thất của ta cũng rất lớn: hơn 4.000 cán bộ, chiến sĩ và đồng bào đã hy sinh mà phần lớn mới trên dưới 20 tuổi; hàng ngàn người bị thương; hàng trăm thôn bản bị xoá sạch; hàng ngàn héc-ta ruộng vườn, đồi núi bị cày xới, đầy bom mìn và vật nổ. Đến nay vẫn còn hàng ngàn liệt sĩ nằm rải rác trên khắp chiến trường Vị Xuyên chưa tìm được hài cốt, nhiều mộ liệt sĩ chưa có tên trong nghĩa trang.",
+      "hien": [
+        "hy-sinh",
+        "bo-doi-vn",
+        "xa-thanh-thuy",
+        "lo-voi-the-ky"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "15/5/1989 ngừng bắn, tháng 10/1989 rút hết quân",
+      "thoi_gian": "15/5/1989 – tháng 10/1989",
+      "dia_danh": "Cao điểm 233 và các điểm cao biên giới Vị Xuyên",
+      "mo_ta": "Năm 1989, phía Trung Quốc ngừng bắn pháo vào mặt trận Vị Xuyên. Từ 7 giờ sáng ngày 15/5/1989, họ cho nổ mìn đồng loạt phá bỏ hơn 20 căn hầm kiên cố ở một số điểm cao đang chiếm giữ trên lãnh thổ Việt Nam thuộc tuyến biên giới huyện Vị Xuyên, bắt đầu rút quân; cũng từ ngày đó, hai bên ngừng bắn trên toàn tuyến biên giới phía Bắc. Đến tháng 10/1989, Trung Quốc rút hết quân khỏi đất Việt Nam, kết thúc 5 năm lấn chiếm biên giới Vị Xuyên và 10 năm tấn công xâm lược Việt Nam tính từ tháng 2/1979.",
+      "hien": [
+        "rut-quan-vx",
+        "diem-cao-685",
+        "doi-dai-co-ich",
+        "xa-thanh-thuy"
+      ],
+      "nguon": [
+        "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
       ]
     }
   ],
-  "ket_qua": "Hơn 4.000 cán bộ, chiến sĩ hy sinh trong 5 năm chiến đấu (1984–1989) để bảo vệ vững chắc biên cương tại Vị Xuyên, Hà Giang.",
-  "y_nghia": "Chiến trường ác liệt nhất trong cuộc chiến đấu bảo vệ biên giới phía Bắc, biểu tượng cho ý chí kiên cường bảo vệ biên cương Tổ quốc.",
+  "ket_qua": "Quân và dân ta giữ vững trận địa, tiêu diệt và làm bị thương hàng vạn quân đối phương, buộc họ rút quân về bên kia biên giới; hơn 4.000 cán bộ, chiến sĩ và đồng bào hy sinh. Từ 15/5/1989 hai bên ngừng bắn trên toàn tuyến; đến tháng 10/1989 Trung Quốc rút hết quân khỏi đất Việt Nam (VOV, trích «Hồi ức chiến tranh Vị Xuyên» của Thiếu tướng Nguyễn Đức Huy).",
+  "y_nghia": "Vị Xuyên là mặt trận ác liệt và kéo dài nhất trên tuyến biên giới phía Bắc sau năm 1979, nơi bộ đội và nhân dân giữ từng chiến hào, từng cao điểm suốt nhiều năm trong điều kiện tiếp tế cực khó. Đây cũng là địa bàn còn nhiều liệt sĩ chưa tìm được hài cốt, nên công tác tìm kiếm, quy tập vẫn tiếp tục đến nay.",
   "trang_thai": "draft",
   "nguon": [
+    "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov",
     "Báo Nhân Dân (nhandan.vn) — Trở lại Vị Xuyên",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
@@ -157,5 +375,36 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/song-bam-da-danh-giac-chet-hoa-da-bat-tu-post655397.html",
       "buoc": 2
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến, số liệu lực lượng và tổn thất theo bài của Đài Tiếng nói Việt Nam trích đăng cuốn «Hồi ức chiến tranh Vị Xuyên» của Thiếu tướng Nguyễn Đức Huy — người trực tiếp chỉ huy chiến đấu ở chiến trường Vị Xuyên – Hà Tuyên các năm 1985 – 1989, khi đó là Tham mưu trưởng mặt trận kiêm Phó Tư lệnh – Tham mưu trưởng Quân khu 2. Bài nêu hai cách tính khoảng thời gian: «suốt 10 năm (1979 – 1989)» cho toàn mặt trận và «5 năm» cho giai đoạn lấn chiếm từ 28/4/1984; trường thoi_gian ghi theo giai đoạn 1984 – 1989 đúng với tên hồ sơ, phần 10 năm nêu trong bước diễn biến. Không khai loai_xung_dot: mặc định ngoai-xam là đúng. Mục trich_van_tich vốn có được giữ nguyên văn cùng nguon_trich của nó; đợt này không mở lại URL đó nên chưa tự đối chiếu được.",
+  "thoi_gian": "28/4/1984 – tháng 10/1989",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Hàng chục sư đoàn chủ lực luân phiên tham gia; hàng vạn dân quân, du kích; hàng chục vạn thanh niên xung phong, dân công hoả tuyến phục vụ mặt trận",
+      "don_vi": [
+        "Các sư đoàn bộ binh chủ lực luân phiên chiến đấu",
+        "Các trung đoàn bộ binh địa phương và đặc công",
+        "Một số trung đoàn, lữ đoàn pháo binh, công binh, hoá học",
+        "Bộ đội địa phương, dân quân tự vệ Hà Tuyên"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Khoảng 50 vạn quân huy động lần lượt từ 8 trong 10 đại quân khu, với hơn 20 sư đoàn bộ binh, 171 trung đoàn và tiểu đoàn bộ binh, 3 sư đoàn pháo binh",
+      "vu_khi": [
+        "Hơn 400 khẩu pháo lớn các loại",
+        "Trên 1.000 xe cơ giới phục vụ chiến đấu",
+        "Hơn 1,8 triệu viên đại bác bắn vào mặt trận trong 5 năm"
+      ]
+    },
+    "nguon": [
+      "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
+    ]
+  },
+  "ton_that": {
+    "ta": "Hơn 4.000 cán bộ, chiến sĩ và đồng bào hy sinh, phần lớn mới trên dưới 20 tuổi; hàng ngàn người bị thương; hàng trăm thôn bản bị xoá sạch; hàng ngàn héc-ta ruộng vườn, đồi núi bị cày xới, đầy bom mìn, vật nổ. Đến nay vẫn còn hàng ngàn liệt sĩ nằm rải rác trên chiến trường chưa tìm được hài cốt, nhiều mộ liệt sĩ chưa có tên trong nghĩa trang",
+    "doi_thu": "Hàng vạn quân đối phương bị tiêu diệt và bị thương",
+    "nguon": [
+      "1984-1989: Mặt trận Vị Xuyên được ví như «lò vôi thế kỷ» — Đài Tiếng nói Việt Nam (VOV) — https://vov.vn/chinh-tri/1984-1989-mat-tran-vi-xuyen-duoc-vi-nhu-lo-voi-the-ky-post924667.vov"
+    ]
+  }
 }

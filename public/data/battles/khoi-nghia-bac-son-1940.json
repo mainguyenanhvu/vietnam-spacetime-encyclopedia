@@ -1,10 +1,12 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Bắc Sơn 1940 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Bắc Sơn 1940 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Quy mô đoàn quân khởi nghĩa được hai nguồn nhà nước chép theo hai cách bổ sung nhau, KHÔNG mâu thuẫn: đề cương tuyên truyền của Ban Tuyên giáo Tỉnh uỷ Lạng Sơn liệt kê vũ khí (gươm, giáo, dao, gậy, 20 súng trường, 8 súng kíp, 30 hòm đạn) mà không nêu quân số; bài của Báo QĐND dẫn David Marr nêu «khoảng 600 người». Giữ cả hai, ĐỪNG gộp thành một câu như thể cùng một nguồn.",
   "id": "khoi-nghia-bac-son-1940",
   "ten": "Khởi nghĩa Bắc Sơn",
   "nam": 1940,
+  "thoi_gian": "27/9/1940 – tháng 11/1940",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Đảng bộ Bắc Sơn",
+  "chi_huy": "Ban Chỉ huy khởi nghĩa — Chỉ huy trưởng Hoàng Văn Hán; từ tháng 10/1940 có Trần Đăng Ninh trực tiếp chỉ đạo",
   "doi_thu": "Pháp",
   "dia_diem": "Huyện Bắc Sơn, Lạng Sơn",
   "lien_quan_tinh": [
@@ -15,111 +17,446 @@
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          100
-        ],
-        [
-          500,
-          60
-        ],
-        [
-          900,
-          120
-        ]
+        [70, 150],
+        [200, 110],
+        [340, 130],
+        [450, 180]
       ],
-      "nhan": "Vùng núi Bắc Sơn, Lạng Sơn"
+      "nhan": "Núi đá vôi Bắc Sơn"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [560, 430],
+        [660, 460],
+        [760, 480],
+        [860, 520]
+      ],
+      "nhan": "Vùng núi Võ Nhai"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [860, 140],
+        [700, 190],
+        [540, 245],
+        [400, 290],
+        [300, 320]
+      ],
+      "nhan": "Đường Lạng Sơn – Điềm He – Bình Gia – Bắc Sơn"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [310, 330],
+        [450, 400],
+        [620, 470],
+        [800, 500]
+      ],
+      "nhan": "Đường Bắc Sơn đi Thái Nguyên"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [80, 250],
+        [190, 265],
+        [200, 340],
+        [85, 325]
+      ],
+      "nhan": "Rừng sâu — nơi du kích rút vào hoạt động bí mật"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-nhat-danh-phap",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 700,
-      "y": 150,
-      "nhan": "Nhật đánh Pháp, Pháp tan rã rút chạy"
+      "id": "trang-dinh",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 60,
+      "nhan": "Tràng Định"
     },
     {
-      "id": "co-ta-nhan-dan-noi-day",
-      "kieu": "co",
+      "id": "na-sam",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 70,
+      "nhan": "Na Sầm"
+    },
+    {
+      "id": "dong-dang",
+      "kieu": "dia-danh",
+      "x": 762,
+      "y": 60,
+      "nhan": "Đồng Đăng"
+    },
+    {
+      "id": "lang-son",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 840,
+      "y": 122,
+      "nhan": "Lạng Sơn"
+    },
+    {
+      "id": "quan-khoi-nghia",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 400,
-      "nhan": "Nhân dân các dân tộc Bắc Sơn nổi dậy"
+      "x": 350,
+      "y": 165,
+      "nhan": "Quân khởi nghĩa",
+      "quy_mo": "Gươm, giáo, dao, gậy · 20 súng trường · 8 súng kíp · 30 hòm đạn"
+    },
+    {
+      "id": "diem-he",
+      "kieu": "dia-danh",
+      "x": 665,
+      "y": 182,
+      "nhan": "Điềm He"
+    },
+    {
+      "id": "na-tau",
+      "kieu": "dia-danh",
+      "x": 110,
+      "y": 220,
+      "nhan": "Nà Tấu · Mỏ Tát · Bản Ne · Nam Nhi — khu căn cứ du kích"
+    },
+    {
+      "id": "dinh-nong-luc",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 222,
+      "nhan": "Đình Nông Lục, xã Hưng Vũ"
+    },
+    {
+      "id": "binh-gia",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 232,
+      "nhan": "Bình Gia"
+    },
+    {
+      "id": "quan-nhat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 900,
+      "y": 242,
+      "nhan": "Quân Nhật vượt biên giới Quảng Tây"
+    },
+    {
+      "id": "sa-khao",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 302,
+      "nhan": "Sa Khao, xã Vũ Lăng"
     },
     {
       "id": "don-mo-nhai",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 550,
-      "y": 300,
-      "nhan": "Đồn Mỏ Nhài"
+      "x": 330,
+      "y": 302,
+      "nhan": "Đồn Mỏ Nhài — châu lỵ Bắc Sơn"
     },
     {
-      "id": "mui-danh-don-mo-nhai",
+      "id": "quan-phap-rut",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 750,
+      "y": 302,
+      "nhan": "Quân Pháp rút chạy về Thái Nguyên"
+    },
+    {
+      "id": "deo-canh-gian",
+      "kieu": "dia-danh",
+      "x": 455,
+      "y": 342,
+      "nhan": "Đèo Canh Giàn — tri châu bỏ chạy sang Bằng Mạc"
+    },
+    {
+      "id": "deo-canh-tiem",
+      "kieu": "dia-danh",
+      "x": 180,
+      "y": 372,
+      "nhan": "Đèo Canh Tiếm, xã Chiến Thắng"
+    },
+    {
+      "id": "deo-dap-di",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 402,
+      "nhan": "Đèo Dập Dị, xã Vũ Lăng"
+    },
+    {
+      "id": "doi-du-kich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 625,
+      "y": 400,
+      "nhan": "Đội du kích Bắc Sơn",
+      "quy_mo": "200 đội viên · 20 súng trường · 200 súng kíp"
+    },
+    {
+      "id": "thai-nguyen",
+      "kieu": "dia-danh",
+      "x": 885,
+      "y": 458,
+      "nhan": "Thái Nguyên"
+    },
+    {
+      "id": "don-uy",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 462,
+      "nhan": "Đon Úy, xã Vũ Lăng — nơi tuyên bố thành lập Đội du kích"
+    },
+    {
+      "id": "truong-vu-lang",
+      "kieu": "dia-danh",
+      "x": 425,
+      "y": 482,
+      "nhan": "Trường Vũ Lăng — mít tinh ngày 28/10/1940"
+    },
+    {
+      "id": "vo-nhai",
+      "kieu": "dia-danh",
+      "x": 730,
+      "y": 520,
+      "nhan": "Võ Nhai — căn cứ địa Bắc Sơn – Võ Nhai"
+    },
+    {
+      "id": "na-pan",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 522,
+      "nhan": "Thôn Nà Pán, xã Vũ Lăng"
+    },
+    {
+      "id": "mui-khoi-nghia",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        380,
-        380
-      ],
-      "den": [
-        520,
-        320
-      ],
-      "nhan": "Đánh đồn Mỏ Nhài"
+      "tu": [342, 202],
+      "den": [334, 275],
+      "nhan": "Ba hướng tấn công đồn Mỏ Nhài"
     },
     {
-      "id": "doi-du-kich-bac-son",
-      "kieu": "co",
+      "id": "mui-phap-rut",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [820, 172],
+      "den": [700, 262],
+      "nhan": "Pháp rút qua Điềm He, Bình Gia, Bắc Sơn"
+    },
+    {
+      "id": "mui-phap-chiem-lai",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [560, 292],
+      "den": [372, 300],
+      "nhan": "Pháp đưa quân lên chiếm lại châu lỵ"
+    },
+    {
+      "id": "mui-rut-vao-rung",
+      "kieu": "mui-ten",
       "ben": "ta",
-      "x": 500,
-      "y": 230,
-      "nhan": "Đội du kích Bắc Sơn ra đời"
+      "tu": [300, 328],
+      "den": [172, 268],
+      "nhan": "Rút vào rừng sâu hoạt động bí mật"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "khoảng 600 người trang bị súng tước được của Pháp cùng mã tấu, gậy gộc",
+          "nguon": "David Marr, Vietnam 1945: The Quest for Power, dẫn trên Sự kiện & Nhân chứng — Báo Quân đội nhân dân"
+        },
+        {
+          "so": "Đội du kích Bắc Sơn cuối tháng 10/1940 có 200 đội viên, tổ chức thành các tiểu đội 10 người",
+          "nguon": "Đề cương tuyên truyền của Ban Tuyên giáo và Dân vận Tỉnh uỷ Lạng Sơn"
+        }
+      ],
+      "don_vi": [
+        "Nhân dân các xã Bắc Sơn, Hưng Vũ, Chiêu Vũ, Trấn Yên, Ngư Viễn",
+        "Một số nguyên tổng đoàn, xã đoàn, lính dõng và lính khố đỏ hưởng ứng",
+        "Đội du kích Bắc Sơn — đội du kích đầu tiên do Đảng thành lập và trực tiếp chỉ huy"
+      ],
+      "vu_khi": [
+        "Gươm, giáo, dao, gậy gộc",
+        "20 súng trường, 8 súng kíp và 30 hòm đạn trong đêm khởi nghĩa",
+        "Đội du kích cuối tháng 10/1940: 20 khẩu súng trường và 200 súng kíp"
+      ]
+    },
+    "nguon": [
+      "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn (27/9/1940 – 27/9/2025), Ban Tuyên giáo và Dân vận Tỉnh uỷ Lạng Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html",
+      "Sự kiện & Nhân chứng, Báo Quân đội nhân dân — Vang mãi «Tiếng súng Bắc Sơn» — http://sknc.qdnd.vn/ho-so-tu-lieu/vang-mai-tieng-sung-bac-son-500297"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Trong hai ngày 27 và 28/9/1940, quân khởi nghĩa tiêu diệt 7 lính Pháp ở đèo Canh Tiếm và bắn chết 1 sĩ quan cùng 4 lính Pháp ở đèo Dập Dị; thu 17 súng, 1 máy chữ cùng toàn bộ giấy tờ và triện đồng ở đồn Mỏ Nhài",
+    "nguon": [
+      "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn, Ban Tuyên giáo và Dân vận Tỉnh uỷ Lạng Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Nhật đánh Pháp qua biên giới Lạng Sơn",
-      "mo_ta": "Trong bối cảnh Nhật tiến vào Đông Dương, quân Pháp ở Lạng Sơn tan rã, rút chạy qua Bắc Sơn.",
+      "tieu_de": "22/9/1940: Nhật đánh Lạng Sơn, chính quyền Pháp tan rã",
+      "thoi_gian": "22/9/1940 và những ngày sau",
+      "dia_danh": "Lạng Sơn · Điềm He · Bình Gia · Bắc Sơn",
+      "mo_ta": "Ngày 22/9/1940, Nhật kéo quân từ Quảng Tây vượt biên giới tấn công Pháp ở Lạng Sơn. Sau vài trận chống cự yếu ớt, quân Pháp rút chạy qua Điềm He, Bình Gia, Bắc Sơn về Thái Nguyên. Chính quyền địch ở những vùng này tan rã, các viên tri châu Điềm He, Tràng Định, Na Sầm chạy trốn. Sự hoảng loạn của thực dân Pháp và chính quyền tay sai tạo thời cơ thuận lợi cho Đảng bộ và quần chúng cách mạng ở Bắc Sơn nổi dậy. Đây là điểm mấu chốt của cả cuộc khởi nghĩa: bộ máy cai trị ở châu lỵ mất chỗ dựa quân sự trước khi bất cứ tiếng súng nào của quân khởi nghĩa nổ ra.",
       "hien": [
-        "quan-dich-nhat-danh-phap"
+        "lang-son",
+        "dong-dang",
+        "na-sam",
+        "trang-dinh",
+        "diem-he",
+        "binh-gia",
+        "quan-nhat",
+        "quan-phap-rut",
+        "mui-phap-rut",
+        "don-mo-nhai"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nhân dân các dân tộc Bắc Sơn nổi dậy",
-      "mo_ta": "Nhân dân các dân tộc Tày, Nùng, Dao, Kinh ở Bắc Sơn nổi dậy đánh đồn Mỏ Nhài ngày 27/9/1940.",
+      "tieu_de": "Những người vượt ngục trở về Nông Lục",
+      "thoi_gian": "25 – 26/9/1940",
+      "dia_danh": "Thôn Nông Lục, xã Hưng Vũ",
+      "mo_ta": "Ngày 25/9/1940, một số đảng viên vừa thoát khỏi nhà tù Lạng Sơn về tới châu Bắc Sơn, trong đó có các đồng chí Nông Văn Cún tức Nông Thái Long, Hoàng Đình Ruệ và Đường Văn Thức. Tối 26/9/1940, các đồng chí này họp cùng Dương Công Bình và Hoàng Văn Hán tại thôn Nông Lục, xã Hưng Vũ để nhận định tình hình và thời cơ cách mạng, thảo luận phương án phát động quần chúng nổi dậy khởi nghĩa vũ trang. Cùng thời gian, khi lính bộ binh Pháp rút chạy qua Lạng Sơn, những người dân miền núi thuộc dân tộc Tày, Nùng, Dao đã tước vũ khí của một số tàn binh, vận động các toán lính khác bỏ ngũ và thu hàng trăm vũ khí — nguồn trang bị đầu tiên cho cuộc khởi nghĩa.",
       "hien": [
-        "co-ta-nhan-dan-noi-day"
+        "dinh-nong-luc",
+        "don-mo-nhai",
+        "quan-khoi-nghia",
+        "quan-phap-rut",
+        "lang-son",
+        "binh-gia"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html",
+        "Sự kiện & Nhân chứng, Báo Quân đội nhân dân — Vang mãi «Tiếng súng Bắc Sơn» — http://sknc.qdnd.vn/ho-so-tu-lieu/vang-mai-tieng-sung-bac-son-500297"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Chiếm đồn Mỏ Nhài",
-      "mo_ta": "Nghĩa quân chiếm được đồn Mỏ Nhài.",
+      "tieu_de": "Sáng 27/9: cuộc họp ở đình Nông Lục quyết định giờ nổ súng",
+      "thoi_gian": "Sáng 27/9/1940",
+      "dia_danh": "Đình Nông Lục, xã Hưng Vũ",
+      "mo_ta": "Sáng 27/9/1940, Ban Cán sự Châu uỷ Bắc Sơn triệu tập cuộc họp tại đình Nông Lục, xã Hưng Vũ, quyết định phát động khởi nghĩa vũ trang giành chính quyền ngay trong ngày. Giờ khởi nghĩa được chọn vào khoảng từ 19 giờ 30 phút đến 20 giờ. Ban Chỉ huy cuộc khởi nghĩa được thành lập gồm các đồng chí Hoàng Văn Hán, Dương Công Bình, Hoàng Đình Ruệ, Đường Văn Thức và Nông Văn Cún, do đồng chí Hoàng Văn Hán làm Chỉ huy trưởng. Mục tiêu tấn công đầu tiên được xác định là đánh chiếm đồn Mỏ Nhài, châu lỵ Bắc Sơn — nơi đặt bộ máy cai trị của tri châu và lực lượng binh lính còn lại.",
       "hien": [
-        "co-ta-nhan-dan-noi-day",
+        "dinh-nong-luc",
         "don-mo-nhai",
-        "mui-danh-don-mo-nhai"
+        "quan-khoi-nghia",
+        "sa-khao",
+        "na-tau",
+        "mui-khoi-nghia"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Hình thành đội du kích Bắc Sơn",
-      "mo_ta": "Sau khởi nghĩa, đội du kích Bắc Sơn được hình thành, trở thành tiền thân lực lượng vũ trang cách mạng Việt Nam.",
+      "tieu_de": "20 giờ 27/9/1940: ba hướng đánh vào đồn Mỏ Nhài",
+      "thoi_gian": "Khoảng 20 giờ ngày 27/9/1940",
+      "dia_danh": "Đồn Mỏ Nhài · châu lỵ Bắc Sơn · đèo Canh Giàn",
+      "mo_ta": "Khoảng 20 giờ ngày 27/9/1940, nhân dân các xã Bắc Sơn, Hưng Vũ, Chiêu Vũ, Trấn Yên, Ngư Viễn với vũ khí gồm gươm, giáo, dao, gậy gộc, 20 súng trường, 8 súng kíp và 30 hòm đạn đồng loạt nổ súng tấn công đồn Mỏ Nhài. Hưởng ứng cuộc khởi nghĩa, ngoài quần chúng cách mạng còn có một số người nguyên là tổng đoàn, xã đoàn, lính dõng và lính khố đỏ. Ban Chỉ huy chia đoàn quân khởi nghĩa làm ba bộ phận theo ba hướng tấn công. Trước khí thế của quân khởi nghĩa, tri châu Hoàng Văn Sỹ và binh lính bỏ chạy qua đèo Canh Giàn sang châu Bằng Mạc. Quân khởi nghĩa thu được 17 súng, 1 máy chữ và toàn bộ giấy tờ, triện đồng; sau đó giải phóng hoàn toàn châu lỵ Bắc Sơn và tuyên bố xoá bỏ chính quyền thực dân cùng tay sai. Đây là cuộc khởi nghĩa vũ trang đầu tiên dưới sự lãnh đạo của Đảng giành được thắng lợi.",
       "hien": [
-        "doi-du-kich-bac-son"
+        "don-mo-nhai",
+        "quan-khoi-nghia",
+        "mui-khoi-nghia",
+        "deo-canh-gian",
+        "dinh-nong-luc",
+        "binh-gia"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html",
+        "Sự kiện & Nhân chứng, Báo Quân đội nhân dân — Vang mãi «Tiếng súng Bắc Sơn» — http://sknc.qdnd.vn/ho-so-tu-lieu/vang-mai-tieng-sung-bac-son-500297"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Phục kích ở đèo Canh Tiếm và đèo Dập Dị",
+      "thoi_gian": "27 – 28/9/1940",
+      "dia_danh": "Đèo Canh Tiếm · đèo Dập Dị",
+      "mo_ta": "Cũng trong hai ngày 27 và 28/9/1940, quân khởi nghĩa đón đánh và tiêu diệt được 7 lính Pháp ở đèo Canh Tiếm thuộc xã Chiến Thắng, nay thuộc xã Vũ Lễ; đồng thời phục kích bắn chết 1 sĩ quan và 4 lính Pháp ở đèo Dập Dị thuộc xã Vũ Lăng. Hai trận phục kích trên hai con đèo cho thấy quân khởi nghĩa không dừng ở việc chiếm châu lỵ mà đã chủ động đánh vào các toán quân Pháp đang di chuyển qua địa bàn — bước chuyển từ nổi dậy giành chính quyền sang tác chiến du kích trên địa hình rừng núi quen thuộc.",
+      "hien": [
+        "deo-canh-tiem",
+        "deo-dap-di",
+        "don-mo-nhai",
+        "quan-khoi-nghia",
+        "quan-phap-rut",
+        "deo-canh-gian"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Pháp và Nhật thoả hiệp, đàn áp châu lỵ",
+      "thoi_gian": "Cuối tháng 9 – đầu tháng 10/1940",
+      "dia_danh": "Châu lỵ Bắc Sơn",
+      "mo_ta": "Trước tình thế đó, Pháp và Nhật thoả hiệp với nhau để tập trung đàn áp cuộc khởi nghĩa. Thực dân Pháp đưa quân lên chiếm lại đồn Mỏ Nhài, châu lỵ Bắc Sơn và đàn áp nhân dân dữ dội. Tuy nhiên, địch vẫn không dập tắt được tinh thần chiến đấu của nhân dân; phong trào cách mạng, tổ chức quần chúng và khí thế khởi nghĩa ở Bắc Sơn vẫn được duy trì. Đầu tháng 10/1940, Xứ uỷ Bắc Kỳ cử đồng chí Trần Đăng Ninh, Uỷ viên Xứ uỷ, đến Bắc Sơn trực tiếp chỉ đạo cuộc khởi nghĩa — đưa phong trào tự phát của một châu miền núi vào quỹ đạo chỉ đạo có tổ chức của Đảng.",
+      "hien": [
+        "don-mo-nhai",
+        "mui-phap-chiem-lai",
+        "quan-nhat",
+        "quan-phap-rut",
+        "lang-son",
+        "sa-khao"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "14/10/1940: hội nghị Sa Khao và Đội du kích Bắc Sơn ra đời",
+      "thoi_gian": "14 – cuối tháng 10/1940",
+      "dia_danh": "Sa Khao · Đon Úy · Nà Tấu · Mỏ Tát · Bản Ne · Nam Nhi",
+      "mo_ta": "Ngày 14/10/1940, đồng chí Trần Đăng Ninh triệu tập cuộc họp với các đảng viên ở Sa Khao, xã Vũ Lăng, bàn biện pháp xây dựng phong trào cách mạng Bắc Sơn. Hội nghị quyết định tập trung đảng viên và một số quần chúng tích cực, thu thập vũ khí để thành lập Đội du kích Bắc Sơn, đồng thời xây dựng vùng Nà Tấu, Sa Khao, Mỏ Tát, Bản Ne, Nam Nhi thành khu căn cứ du kích. Thực hiện quyết định đó, Ban Chỉ huy tổ chức mít tinh, diễn thuyết tại Đon Úy, xã Vũ Lăng với hơn 1.000 đảng viên và quần chúng tham gia; thay mặt Ban Chỉ huy, đồng chí Trần Đăng Ninh tuyên bố thành lập Đội du kích Bắc Sơn. Đến cuối tháng 10/1940, Đội đã có 200 đội viên tổ chức thành các tiểu đội mười người, trang bị 20 khẩu súng trường và 200 súng kíp. Đây là đội du kích đầu tiên do Đảng ta thành lập và trực tiếp chỉ huy.",
+      "hien": [
+        "sa-khao",
+        "don-uy",
+        "na-tau",
+        "doi-du-kich",
+        "don-mo-nhai",
+        "deo-dap-di"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Vũ Lăng bị tập kích, du kích rút vào rừng, căn cứ Bắc Sơn – Võ Nhai hình thành",
+      "thoi_gian": "28/10 – tháng 11/1940",
+      "dia_danh": "Trường Vũ Lăng · thôn Nà Pán · Võ Nhai",
+      "mo_ta": "Ban Chỉ huy Đội du kích quyết định tập trung lực lượng đánh chiếm lại đồn Mỏ Nhài. Trước khi tiến công, ngày 28/10/1940 Ban Chỉ huy tổ chức một cuộc mít tinh lớn với hơn 1.000 quần chúng tại trường Vũ Lăng để vận động và biểu dương lực lượng. Giữa lúc quần chúng đang dự mít tinh, quân Pháp và tay sai huy động lực lượng tập kích bất ngờ, làm lực lượng của ta bị phân tán; cuộc khởi nghĩa bị khủng bố và đàn áp khốc liệt. Ngày 29/10/1940, đồng chí Trần Đăng Ninh triệu tập cuộc họp các đảng viên trung kiên tại thôn Nà Pán, xã Vũ Lăng và quyết định rút toàn bộ cán bộ, đảng viên đã bị lộ cùng du kích vào rừng sâu hoạt động bí mật, còn những người chưa bị lộ thì bám lấy quần chúng để giữ vững cơ sở. Hội nghị Trung ương Đảng sau đó quyết định duy trì Đội du kích Bắc Sơn làm cơ sở xây dựng lực lượng cách mạng và thành lập căn cứ địa Bắc Sơn – Võ Nhai.",
+      "hien": [
+        "truong-vu-lang",
+        "na-pan",
+        "doi-du-kich",
+        "mui-rut-vao-rung",
+        "vo-nhai",
+        "thai-nguyen",
+        "na-tau",
+        "don-mo-nhai"
+      ],
+      "nguon": [
+        "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html"
       ]
     }
   ],
-  "ket_qua": "Nhân dân các dân tộc Bắc Sơn nổi dậy đánh chiếm đồn Mỏ Nhài, hình thành đội du kích Bắc Sơn.",
-  "y_nghia": "Đội du kích Bắc Sơn trở thành tiền thân của lực lượng vũ trang cách mạng Việt Nam, đặt nền móng cho sự ra đời của Quân đội nhân dân Việt Nam sau này.",
+  "ket_qua": "Nhân dân các dân tộc Bắc Sơn đánh chiếm đồn Mỏ Nhài, giải phóng châu lỵ, xoá bỏ chính quyền thực dân và tay sai; sau khi bị đàn áp, lực lượng chuyển vào rừng và hình thành Đội du kích Bắc Sơn cùng căn cứ địa Bắc Sơn – Võ Nhai.",
+  "y_nghia": "Cuộc khởi nghĩa vũ trang đầu tiên dưới sự lãnh đạo của Đảng giành được thắng lợi; Đội du kích Bắc Sơn trở thành tiền thân của lực lượng vũ trang cách mạng Việt Nam.",
   "trang_thai": "draft",
   "nguon": [
-    "sknc.qdnd.vn — Vang mãi tiếng súng Bắc Sơn",
+    "Đề cương tuyên truyền kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn (27/9/1940 – 27/9/2025), Ban Tuyên giáo và Dân vận Tỉnh uỷ Lạng Sơn — https://trile.langson.gov.vn/thong-tin-tuyen-truyen/dinh-huong-tuyen-truyen/de-cuong-tuyen-truyen-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-kem-theo-cong-van-so-cv-btgdvtu-ngay-8-.html",
+    "Cổng Thông tin điện tử tỉnh Lạng Sơn — Chương trình kỷ niệm 85 năm Ngày Khởi nghĩa Bắc Sơn — https://langson.gov.vn/tin-moi/chuong-trinh-ky-niem-85-nam-ngay-khoi-nghia-bac-son-27-9-1940-27-9-2025-.html",
+    "Sự kiện & Nhân chứng, Báo Quân đội nhân dân — Vang mãi «Tiếng súng Bắc Sơn» — http://sknc.qdnd.vn/ho-so-tu-lieu/vang-mai-tieng-sung-bac-son-500297",
     "baotanglichsu.vn — Khởi nghĩa Bắc Sơn",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
@@ -140,7 +477,7 @@
       "sach": "Vietnam 1945: The Quest for Power (David Marr, xuất bản năm 1997 tại Mỹ, trang 158)",
       "doan": "Đêm 27-9, khoảng 600 người trang bị súng tước được của Pháp và mã tấu, gậy gộc đã tiến về chiếm huyện lỵ Bắc Sơn…",
       "nguon_trich": "Vang mãi \"Tiếng súng Bắc Sơn\" — Sự kiện & Nhân chứng, Báo Quân đội nhân dân — http://sknc.qdnd.vn/ho-so-tu-lieu/vang-mai-tieng-sung-bac-son-500297",
-      "buoc": 3
+      "buoc": 4
     }
   ]
 }

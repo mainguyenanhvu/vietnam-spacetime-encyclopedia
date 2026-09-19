@@ -3,6 +3,7 @@
   "id": "ham-tu-chuong-duong-1285",
   "ten": "Hàm Tử – Chương Dương 1285",
   "nam": 1285,
+  "thoi_gian": "Tháng Chạp năm Giáp Thân (1284) – tháng 6 năm Ất Dậu (1285)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Trần Nhật Duật, Trần Quang Khải",
   "doi_thu": "Quân Nguyên (Toa Đô, Ô Mã Nhi, Thoát Hoan)",
@@ -12,151 +13,374 @@
     "ha-noi"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "5 vạn quân phục kích ở khu vực bến Hàm Tử",
+      "don_vi": [
+        "Chiêu Văn Vương Trần Nhật Duật làm tướng chỉ huy trận Hàm Tử, Trần Quốc Toản làm phó tướng, cùng tướng quân Nguyễn Khoái",
+        "Triệu Trung — tướng nhà Tống đầu quân trong đạo quân Trần Nhật Duật",
+        "Chiêu Minh Vương Trần Quang Khải cùng Hoài Văn hầu Trần Quốc Toản đánh Chương Dương",
+        "Quân binh các lộ do Trần Thông, Nguyễn Khả Lạp, Nguyễn Tuyền chỉ huy phối hợp với quân triều đình"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "60 vạn quân tinh nhuệ do Trấn Nam Vương Thoát Hoan chỉ huy trong toàn cuộc xâm lược lần thứ hai",
+          "nguon": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+        }
+      ],
+      "don_vi": [
+        "Đại quân Thoát Hoan đóng ở Thăng Long, chiến thuyền đóng ở bến Chương Dương",
+        "Cánh quân Toa Đô từ Chiêm Thành đánh ngược ra, có Ô Mã Nhi đi cùng"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+      "Bảo tàng Lịch sử Quốc gia — Chiêu Minh Vương Trần Quang Khải — http://baotanglichsu.vn/vi/Articles/3098/17651/chieu-minh-vuong-tran-quang-khai.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Ở Hàm Tử, quân Nguyên bị đánh úp bất ngờ, hoảng loạn nhảy xuống sông và thiệt hại rất nặng; số còn lại theo Toa Đô rút ra cửa biển Thiên Trường. Ở Chương Dương, giặc đạp lên nhau chạy lên bờ trốn về thành Thăng Long, bị quân ta truy sát tới sát chân thành, rồi phải bỏ thành chạy qua sông Hồng.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          500
-        ],
-        [
-          500,
-          420
-        ],
-        [
-          1000,
-          380
-        ]
+        [120, 108],
+        [300, 190],
+        [470, 278],
+        [640, 368],
+        [820, 458],
+        [950, 518]
       ],
       "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [640, 368],
+        [772, 340],
+        [900, 328]
+      ],
+      "nhan": "Sông Luộc"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [548, 424],
+        [692, 400],
+        [762, 454],
+        [636, 490],
+        [532, 472]
+      ],
+      "nhan": "Lau sậy hai bên bờ Hàm Tử"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [198, 138],
+        [322, 88],
+        [482, 68],
+        [640, 78]
+      ],
+      "nhan": "Đường rút sang Kinh Bắc"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 498],
+        [928, 538],
+        [948, 594],
+        [1000, 594]
+      ],
+      "nhan": "Cửa biển"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-ta-rut-lui",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 300,
-      "y": 460,
-      "nhan": "Quân Trần rút lui bảo toàn lực lượng"
-    },
-    {
-      "id": "cua-ham-tu",
-      "kieu": "dia-danh",
-      "x": 250,
-      "y": 540,
-      "nhan": "Cửa Hàm Tử"
-    },
-    {
-      "id": "quan-ta-tran-nhat-duat",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 220,
-      "y": 480,
-      "nhan": "Trần Nhật Duật đại phá giặc"
-    },
-    {
-      "id": "quan-dich-toa-do",
-      "kieu": "quan",
+      "id": "thang-long",
+      "kieu": "thanh",
       "ben": "dich",
-      "x": 150,
-      "y": 560,
-      "nhan": "Toa Đô – Ô Mã Nhi"
+      "x": 128,
+      "y": 90,
+      "nhan": "Thăng Long",
+      "quy_mo": "Thoát Hoan chiếm đóng"
+    },
+    {
+      "id": "thuy-trai-chuong-duong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 306,
+      "y": 232,
+      "nhan": "Thuỷ trại Chương Dương"
     },
     {
       "id": "ben-chuong-duong",
       "kieu": "dia-danh",
-      "x": 550,
-      "y": 530,
+      "x": 196,
+      "y": 302,
       "nhan": "Bến Chương Dương"
     },
     {
-      "id": "quan-ta-tran-quang-khai",
+      "id": "quan-quang-khai",
       "kieu": "quan",
       "ben": "ta",
-      "x": 620,
-      "y": 520,
-      "nhan": "Trần Quang Khải cướp giáo giặc"
+      "x": 316,
+      "y": 388,
+      "nhan": "Trần Quang Khải",
+      "quy_mo": "Cùng Hoài Văn hầu Trần Quốc Toản"
     },
     {
-      "id": "thanh-thang-long",
-      "kieu": "thanh",
-      "ben": "dich",
-      "x": 800,
-      "y": 260,
-      "nhan": "Thăng Long (quân Nguyên chiếm giữ)"
+      "id": "dan-binh-cac-lo",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 146,
+      "y": 444,
+      "nhan": "Dân binh các lộ",
+      "quy_mo": "Trần Thông · Nguyễn Khả Lạp · Nguyễn Tuyền"
     },
     {
-      "id": "mui-tien-thang-long",
+      "id": "mui-danh-chuong-duong",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        550,
-        440
-      ],
-      "den": [
-        780,
-        280
-      ],
-      "nhan": "Tiến công giải phóng Thăng Long"
+      "tu": [308, 348],
+      "den": [296, 264],
+      "nhan": "Đánh úp thuỷ trại"
+    },
+    {
+      "id": "mui-giai-phong-thang-long",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [248, 242],
+      "den": [158, 132],
+      "nhan": "Tiến vào giải phóng Thăng Long"
+    },
+    {
+      "id": "mui-thoat-hoan-rut",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [204, 106],
+      "den": [430, 80],
+      "nhan": "Bỏ thành, chạy sang Kinh Bắc"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 870,
-      "y": 210,
-      "nhan": "Giải phóng Thăng Long"
+      "x": 428,
+      "y": 172,
+      "nhan": "Thăng Long được giải phóng"
+    },
+    {
+      "id": "ba-da-mac",
+      "kieu": "dia-danh",
+      "x": 452,
+      "y": 254,
+      "nhan": "Bãi Đà Mạc"
+    },
+    {
+      "id": "tran-binh-trong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 470,
+      "y": 330,
+      "nhan": "Trần Bình Trọng chặn hậu"
+    },
+    {
+      "id": "ham-tu-quan",
+      "kieu": "dia-danh",
+      "x": 616,
+      "y": 424,
+      "nhan": "Cửa Hàm Tử"
+    },
+    {
+      "id": "quan-nhat-duat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 700,
+      "y": 502,
+      "nhan": "Trần Nhật Duật",
+      "quy_mo": "5 vạn quân · Trần Quốc Toản, Nguyễn Khoái"
+    },
+    {
+      "id": "quan-trieu-trung",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 848,
+      "y": 452,
+      "nhan": "Triệu Trung"
+    },
+    {
+      "id": "thuyen-toa-do",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 716,
+      "y": 372,
+      "nhan": "Thuyền chiến Toa Đô"
+    },
+    {
+      "id": "mui-vay-ham-tu",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [702, 468],
+      "den": [716, 402],
+      "nhan": "Bổ vây từ nhiều phía"
+    },
+    {
+      "id": "mui-toa-do-rut",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [762, 366],
+      "den": [906, 478],
+      "nhan": "Rút ra cửa biển Thiên Trường"
+    },
+    {
+      "id": "a-lo",
+      "kieu": "dia-danh",
+      "x": 886,
+      "y": 348,
+      "nhan": "A Lỗ"
+    },
+    {
+      "id": "dai-ban-doanh-tran",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 500,
+      "y": 548,
+      "nhan": "Hưng Đạo Vương",
+      "quy_mo": "Chỉ huy chung cuộc phản công"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Trần rút lui bảo toàn lực lượng",
-      "mo_ta": "Trước thế mạnh ban đầu của Thoát Hoan, triều Trần chủ động rút khỏi Thăng Long, chờ thời cơ phản công.",
+      "tieu_de": "Rút lui bảo toàn lực lượng, vườn không nhà trống",
+      "thoi_gian": "Cuối năm 1284 – tháng 2 năm 1285",
+      "dia_danh": "Lạng Sơn · Vạn Kiếp · Thăng Long · Thiên Trường",
+      "mo_ta": "Cuối năm 1284 Thoát Hoan tiến quân vào nước ta theo hai mũi Tuyên Quang và Lạng Sơn. Quân ta chủ động chặn giặc ở Lạng Sơn rồi lui về khu vực Lạng Giang và Vạn Kiếp. Thoát Hoan chia quân làm ba mũi định vây chặt quân ta để tiêu diệt, nhưng Trần Quốc Tuấn nhận định quân Nguyên khí nhuệ đang hưng, đánh gấp chẳng bằng kiên thủ chờ suy. Ngày 13 tháng Giêng (19-2-1285) quân Nguyên tiến vào kinh thành Thăng Long đã bỏ trống; dân trong thành theo kế thanh dã, đại quân rút về hai hướng Thăng Long – Thiên Trường.",
       "hien": [
-        "quan-ta-rut-lui",
-        "thanh-thang-long"
+        "thang-long",
+        "dai-ban-doanh-tran"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Trần Nhật Duật đánh tan giặc ở Hàm Tử",
-      "mo_ta": "Dùng mưu kế phối hợp với tướng Tống lưu vong Triệu Trung, quân Trần đại phá cánh quân Toa Đô – Ô Mã Nhi tại cửa Hàm Tử.",
+      "tieu_de": "Trần Bình Trọng chặn hậu ở bãi Đà Mạc",
+      "thoi_gian": "Tháng 2 năm 1285",
+      "dia_danh": "Bãi Đà Mạc (Hưng Yên)",
+      "mo_ta": "Tháng 2-1285, địch cho quân tiến xuống Hưng Yên, Hà Nam, Thiên Trường truy kích đại quân của vua Trần. Tại bãi Đà Mạc, Trần Bình Trọng được lệnh chặn quân truy đuổi để vua và đại quân kịp di chuyển về Thiên Trường, Thanh Hoá. Khi đại quân Nguyên tới, ông tả xung hữu đột chiến đấu, nhưng địch đông ta ít nên cuối cùng sa vào tay giặc. Thoát Hoan dụ hàng, hỏi có muốn làm vương đất Bắc không; ông quát trả lời rồi bị đem chém. Vua quan quân triều đình nghe tin ông tử tiết ai cũng thương xót.",
       "hien": [
-        "cua-ham-tu",
-        "quan-ta-tran-nhat-duat",
-        "quan-dich-toa-do"
+        "ba-da-mac",
+        "tran-binh-trong",
+        "thang-long"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Trần Quang Khải cướp giáo giặc ở Chương Dương",
-      "mo_ta": "Cùng thời điểm, quân Trần đánh chiếm bến Chương Dương, mở đường tiến về Thăng Long — \"Chương Dương cướp giáo giặc, Hàm Tử bắt quân thù\".",
+      "tieu_de": "Giặc thiếu lương, hai cánh quân không hợp được với nhau",
+      "thoi_gian": "Tháng 3 – tháng 4 năm 1285",
+      "dia_danh": "Thăng Long · Thanh Hoá – Nghệ An",
+      "mo_ta": "Đi đôi với kế vườn không nhà trống, dân binh khắp nơi kết hợp với quân triều đình đánh úp, đánh tỉa, phục kích các toán quân địch đi sục sạo cướp lương thảo. Chủ quan tưởng thắng nhanh nên quân Nguyên không tải theo nhiều lương thực, bị thiếu ăn, lòng quân hoang mang. Hai mũi Thoát Hoan và Toa Đô lại không kết hợp được: cánh Toa Đô đánh nhau với Trần Quang Khải ở Thanh Hoá, Nghệ An mãi không thắng, lương thực ngày một kiệt, nhận lệnh phải ra Bắc hội quân nên cùng Ô Mã Nhi xuống thuyền vượt biển ra Thăng Long.",
       "hien": [
-        "ben-chuong-duong",
-        "quan-ta-tran-quang-khai"
+        "thang-long",
+        "thuyen-toa-do",
+        "dai-ban-doanh-tran"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tiến công giải phóng Thăng Long",
-      "mo_ta": "Thừa thắng, quân Trần từ hai hướng Hàm Tử và Chương Dương hội quân, đánh chiếm lại kinh thành.",
+      "tieu_de": "Vượt vùng chiếm đóng, hạ A Lỗ, mở màn phản công",
+      "thoi_gian": "Tháng 4 âm lịch năm Ất Dậu (1285)",
+      "dia_danh": "A Lỗ — chỗ sông Hồng gặp sông Luộc",
+      "mo_ta": "Vua Trần và Trần Quốc Tuấn chủ trương không để giặc hội quân, nên khi thời cơ đến thì mở phản công. Trần Quốc Tuấn, Trần Quang Khải, Trần Nhật Duật cùng các tướng đem binh thuyền vượt qua vùng chiếm đóng của giặc, đóng cọc trên sông Hồng đoạn vùng Hưng Yên. Mở đầu, Trần Quốc Tuấn hạ vùng A Lỗ, nơi sông Hồng gặp sông Luộc — cắt đứt mối liên hệ đường sông giữa hai cánh quân địch và mở lối cho các trận kế tiếp.",
       "hien": [
-        "cua-ham-tu",
-        "ben-chuong-duong",
-        "mui-tien-thang-long",
-        "thanh-thang-long"
+        "a-lo",
+        "dai-ban-doanh-tran",
+        "thuyen-toa-do"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Chiêu Minh Vương Trần Quang Khải — http://baotanglichsu.vn/vi/Articles/3098/17651/chieu-minh-vuong-tran-quang-khai.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Quân Nguyên tháo chạy",
-      "mo_ta": "Thoát Hoan phải bỏ Thăng Long rút quân, kết thúc thắng lợi giai đoạn phản công then chốt của kháng chiến chống Nguyên lần II.",
+      "tieu_de": "Hàm Tử — phục kích trong lau sậy, đánh tan thuyền Toa Đô",
+      "thoi_gian": "Tháng 4 âm lịch năm Ất Dậu (1285)",
+      "dia_danh": "Bến Hàm Tử (Đông An, Hưng Yên)",
+      "mo_ta": "Chiêu Văn Vương Trần Nhật Duật làm tướng chỉ huy, Trần Quốc Toản làm phó tướng cùng tướng quân Nguyễn Khoái đem 5 vạn quân phục kích ở khu vực bến Hàm Tử, dựa vào lau sậy mọc um tùm hai bên bờ sông để đón đánh thuyền giặc. Trận địa vừa xong thì thuyền chiến của Toa Đô tới. Quân ta từ nhiều phía bổ vây. Trong đội quân Trần Nhật Duật còn có Triệu Trung — tướng nhà Tống đầu quân — mặc áo, đeo cung tên như quân Tống, chiến đấu rất dũng mãnh. Bị đánh úp bất ngờ, quân Nguyên hoảng loạn nhảy xuống sông, thiệt hại rất nặng.",
       "hien": [
-        "thanh-thang-long",
-        "co-thang"
+        "ham-tu-quan",
+        "quan-nhat-duat",
+        "quan-trieu-trung",
+        "thuyen-toa-do",
+        "mui-vay-ham-tu",
+        "mui-toa-do-rut"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Chương Dương — đánh úp thuỷ trại, giặc đạp lên nhau mà chạy",
+      "thoi_gian": "Tháng 4 – tháng 5 âm lịch năm Ất Dậu (1285)",
+      "dia_danh": "Bến Chương Dương (Thường Tín)",
+      "mo_ta": "Thừa thắng Hàm Tử, Chiêu Minh Vương Trần Quang Khải cùng Hoài Văn hầu Trần Quốc Toản và các tướng được lệnh đánh Chương Dương — nơi chiến thuyền giặc đóng — rồi tiến vào thành Thăng Long. Phối hợp với quân chủ lực triều đình có các đạo quân binh các lộ do Trần Thông, Nguyễn Khả Lạp, Nguyễn Tuyền chỉ huy; đây là trận quân ta phối hợp tốt giữa quân địa phương, dân binh với quân triều đình. Quân ta bí mật áp sát rồi đánh úp thuỷ trại; bị bất ngờ, giặc đạp lên nhau chạy lên bờ để trốn về thành, bị truy sát tới sát chân thành.",
+      "hien": [
+        "ben-chuong-duong",
+        "thuy-trai-chuong-duong",
+        "quan-quang-khai",
+        "dan-binh-cac-lo",
+        "mui-danh-chuong-duong"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+        "Bảo tàng Lịch sử Quốc gia — Chiêu Minh Vương Trần Quang Khải — http://baotanglichsu.vn/vi/Articles/3098/17651/chieu-minh-vuong-tran-quang-khai.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Thoát Hoan bỏ Thăng Long, chạy sang Kinh Bắc",
+      "thoi_gian": "Tháng 5 âm lịch năm Ất Dậu (1285)",
+      "dia_danh": "Thăng Long · Kinh Bắc",
+      "mo_ta": "Thoát Hoan vội đem đại quân ra tấn công, quân ta giả vờ thua chạy; địch đuổi theo liền bị phục binh của Trần Quang Khải đổ ra đánh. Quân Nguyên phải bỏ thành Thăng Long, chạy qua sông Hồng rồi đóng quân ở vùng Kinh Bắc. Tài liệu thời Nguyên chép lại cảnh quân Nguyên bị vây đánh khốn đốn, thiếu thốn lương thực, khí giới đều hết. Chiến thắng Chương Dương tiêu diệt cứ điểm trọng yếu cuối cùng của địch trên sông Hồng, mở ra thời kỳ phản công trên khắp các mặt trận.",
+      "hien": [
+        "thang-long",
+        "mui-giai-phong-thang-long",
+        "mui-thoat-hoan-rut",
+        "quan-quang-khai"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Hai vua trở lại kinh đô — «Chương Dương cướp giáo giặc»",
+      "thoi_gian": "Ngày 6 tháng 6 năm Ất Dậu (1285)",
+      "dia_danh": "Thăng Long",
+      "mo_ta": "Ngày 6 tháng 6 năm Ất Dậu, khi những tên lính xâm lược cuối cùng rời khỏi nước ta, Thượng hoàng Trần Thánh Tông và vua Trần Nhân Tông trở lại kinh thành Thăng Long đã hoàn toàn giải phóng. Trong dịp này Trần Quang Khải viết bài Tụng giá hoàn kinh sư — theo xa giá về kinh đô — bốn câu ngắn ghi lại hai chiến công Chương Dương và Hàm Tử rồi nhắc đời sau rằng thái bình phải gắng sức mới giữ được non nước muôn thu. Năm ấy ông 44 tuổi.",
+      "hien": [
+        "co-thang",
+        "thang-long",
+        "quan-quang-khai"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Chiêu Minh Vương Trần Quang Khải — http://baotanglichsu.vn/vi/Articles/3098/17651/chieu-minh-vuong-tran-quang-khai.html"
       ]
     }
   ],
@@ -166,20 +390,46 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Sở VHTTDL Hưng Yên — di tích bến Hàm Tử, Khoái Châu"
+    "Sở VHTTDL Hưng Yên — di tích bến Hàm Tử, Khoái Châu",
+    "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+    "Bảo tàng Lịch sử Quốc gia — Chiêu Minh Vương Trần Quang Khải — http://baotanglichsu.vn/vi/Articles/3098/17651/chieu-minh-vuong-tran-quang-khai.html"
   ],
   "trich_van_tich": [
     {
-      "sach": "Tụng giá hoàn kinh sư — thơ Trần Quang Khải (dịch thơ: Trần Trọng Kim)",
-      "doan": "Phiên âm: Đoạt sáo Chương Dương độ, Cầm Hồ Hàm Tử Quan. Thái bình tu trí lực, Vạn cổ cựu giang san. — Dịch thơ: Chương Dương cướp giáo giặc, Hàm Tử bắt quân thù. Thái bình nên gắng sức, Non nước ấy ngàn thu.",
-      "nguon_trich": "Báo Công an Nhân dân — https://cand.vn/tu-lieu-van-hoa/tung-gia-hoan-kinh-su-cua-tran-quang-khai-van-con-nguyen-gia-tri-i664806/",
-      "buoc": 3
+      "sach": "Nhận định của Trần Quốc Tuấn khi Thoát Hoan chia ba mũi vây — dẫn trong bài của Bảo tàng Lịch sử Quốc gia",
+      "doan": "Nguyên binh khí nhuệ đang hưng, kíp đánh chẳng bằng kiên thủ chờ suy",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+      "buoc": 1
+    },
+    {
+      "sach": "Hịch tướng sĩ — Trần Quốc Tuấn",
+      "doan": "Giặc Mông Thát với ta là kẻ thù không đội trời chung, mà các ngươi cứ điềm nhiên không muốn rửa nhục, không lo trừ hung, lại không dạy quân sĩ, chẳng khác nào quay mũi giáo mà chịu đầu hàng, giơ tay không mà chịu thua giặc.",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+      "buoc": 1
+    },
+    {
+      "sach": "Lời Trần Bình Trọng đáp Thoát Hoan — dẫn trong bài của Bảo tàng Lịch sử Quốc gia",
+      "doan": "Ta thà làm quỷ nước Nam, chứ không thèm làm vương đất Bắc",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư",
+      "doan": "Ngày 10 tháng 3 năm Ất Dậu (tức ngày 14 tháng 6 năm 1285) có người từ chỗ giặc trốn về đến chỗ vua, tâu rằng Thượng tướng Quang Khải, Hoài Văn hầu Quốc Toản và Trần Thông Nguyễn Khả Lạp với em là Nguyễn Truyền đem dân binh các lộ đánh bại giặc ở các nơi như kinh thành, Chương Dương",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3098/17651/chieu-minh-vuong-tran-quang-khai.html",
+      "buoc": 6
     },
     {
       "sach": "Nguyên sử (chính sử Trung Quốc, ghi theo góc nhìn quân Nguyên)",
       "doan": "Thủy lục đến đánh vào đại doanh, vây thành mấy vòng, quan quân (chỉ quân Nguyên) sớm tối đánh khốn đốn, thiếu thốn lương thực, khí giới đều hết.",
       "nguon_trich": "Báo Dân Việt — https://danviet.vn/dai-chien-chuong-duong-ham-tu-dai-viet-day-lui-500000-quan-nguyen-7777990616-d737019.html",
-      "buoc": 4
+      "buoc": 7
+    },
+    {
+      "sach": "Tụng giá hoàn kinh sư — thơ Trần Quang Khải (dịch thơ: Trần Trọng Kim)",
+      "doan": "Phiên âm: Đoạt sáo Chương Dương độ, Cầm Hồ Hàm Tử Quan. Thái bình tu trí lực, Vạn cổ cựu giang san. — Dịch thơ: Chương Dương cướp giáo giặc, Hàm Tử bắt quân thù. Thái bình nên gắng sức, Non nước ấy ngàn thu.",
+      "nguon_trich": "Báo Công an Nhân dân — https://cand.vn/tu-lieu-van-hoa/tung-gia-hoan-kinh-su-cua-tran-quang-khai-van-con-nguyen-gia-tri-i664806/",
+      "buoc": 8
     }
   ]
 }

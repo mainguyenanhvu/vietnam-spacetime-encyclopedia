@@ -4,6 +4,7 @@
 
 import { registerPanel, showOnly, hidePanel } from "./panels";
 import { esc } from "./util/html";
+import { escVan } from "./popup-noi-dung";
 
 interface Chapter {
   slug: string;
@@ -54,10 +55,10 @@ function shuffle<T>(arr: T[]): T[] {
 
 function speakerHtml(line: string): string {
   const m = line.match(/^(Lạc|Âu|Người kể):\s*(.*)$/);
-  if (!m) return `<p class="story-line">${esc(line)}</p>`;
+  if (!m) return `<p class="story-line">${escVan(line)}</p>`;
   const cls = m[1] === "Lạc" ? "lac" : m[1] === "Âu" ? "au" : "nguoi-ke";
   const icon = m[1] === "Lạc" ? "👦" : m[1] === "Âu" ? "👧" : "📖";
-  return `<p class="story-line story-${cls}"><b>${icon} ${esc(m[1])}:</b> ${esc(m[2])}</p>`;
+  return `<p class="story-line story-${cls}"><b>${icon} ${escVan(m[1])}:</b> ${escVan(m[2])}</p>`;
 }
 
 function renderList(): void {
@@ -66,15 +67,15 @@ function renderList(): void {
   const got = gems();
   content.innerHTML = `
     <h2>🐉 Hành trình Con Rồng Cháu Tiên</h2>
-    <p class="story-line">${esc(story.gioi_thieu)}</p>
+    <p class="story-line">${escVan(story.gioi_thieu)}</p>
     <div class="story-cast">${story.nhan_vat
-      .map((n) => `<span>${n.ten === "Lạc" ? "👦" : "👧"} <b>${esc(n.ten)}</b> — ${esc(n.mo_ta)}</span>`)
+      .map((n) => `<span>${n.ten === "Lạc" ? "👦" : "👧"} <b>${escVan(n.ten)}</b> — ${escVan(n.mo_ta)}</span>`)
       .join("")}</div>
     <p class="story-gems">💎 Ngọc đã thu thập: <b>${got.length}/${story.chapters.length}</b></p>
     <div class="story-chapters">${story.chapters
       .map(
         (c) => `<button type="button" class="story-chapter" data-slug="${esc(c.slug)}">
-          ${got.includes(c.slug) ? "✅" : "⭕"} ${esc(c.tieu_de)}</button>`,
+          ${got.includes(c.slug) ? "✅" : "⭕"} ${escVan(c.tieu_de)}</button>`,
       )
       .join("")}</div>`;
   content.querySelectorAll<HTMLButtonElement>(".story-chapter").forEach((btn) =>
@@ -88,12 +89,12 @@ function renderChapter(slug: string): void {
   if (!content || !chapter) return;
   content.innerHTML = `
     <button type="button" id="story-back">← Về hành trình</button>
-    <h2>${esc(chapter.tieu_de)}</h2>
+    <h2>${escVan(chapter.tieu_de)}</h2>
     ${chapter.loi_ke.map(speakerHtml).join("")}
     <div class="story-quiz">
-      <p><b>⭐ Thử thách:</b> ${esc(chapter.thu_thach.cau_hoi)}</p>
+      <p><b>⭐ Thử thách:</b> ${escVan(chapter.thu_thach.cau_hoi)}</p>
       <div class="story-options">${shuffle(chapter.thu_thach.dap_an)
-        .map((d) => `<button type="button" class="story-option" data-v="${esc(d)}">${esc(d)}</button>`)
+        .map((d) => `<button type="button" class="story-option" data-v="${esc(d)}">${escVan(d)}</button>`)
         .join("")}</div>
       <div id="story-feedback" aria-live="polite"></div>
     </div>`;
@@ -105,7 +106,7 @@ function renderChapter(slug: string): void {
       if (ok) {
         addGem(chapter.slug);
         if (fb)
-          fb.innerHTML = `<p class="story-win">🎉 Giỏi quá! Bạn nhận được <b>${esc(chapter.ngoc)}</b>!</p>
+          fb.innerHTML = `<p class="story-win">🎉 Giỏi quá! Bạn nhận được <b>${escVan(chapter.ngoc)}</b>!</p>
             <button type="button" id="story-continue">Tiếp tục hành trình →</button>`;
         document.getElementById("story-continue")?.addEventListener("click", renderList);
       } else if (fb) {

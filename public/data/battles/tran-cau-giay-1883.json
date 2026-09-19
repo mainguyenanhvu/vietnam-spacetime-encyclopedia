@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ trận Cầu Giấy lần 2 (1883) — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Cầu Giấy lần 2 (1883) — MINH HOẠ theo tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Ý đồ của Rivière ngày 19/5/1883 được hai nguồn nhà nước chép khác nhau — Hànộimới chép ông kéo quân đi đánh về phủ Hoài Đức, tài liệu lưu trữ Pháp do Cục Văn thư và Lưu trữ Nhà nước công bố chép ông rút lui theo đường Sơn Tây; nêu cả hai ở bước 2, không chọn một.",
   "id": "tran-cau-giay-1883",
   "ten": "Trận Cầu Giấy (lần 2)",
   "nam": 1883,
@@ -7,139 +7,329 @@
   "chi_huy": "Lưu Vĩnh Phúc (Cờ Đen)",
   "doi_thu": "Pháp (Henri Rivière)",
   "dia_diem": "Cầu Giấy, Hà Nội",
+  "thoi_gian": "Ngày 19/5/1883",
   "lien_quan_tinh": [
     "ha-noi"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "song",
+      "diem": [
+        [782, 56],
+        [832, 240],
+        [862, 430],
+        [842, 572]
+      ],
+      "nhan": "Sông Nhị Hà"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [300, 140],
+        [342, 300],
+        [382, 458]
+      ],
+      "nhan": "Sông Tô Lịch — chảy qua Cầu Giấy"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          650,
-          250
-        ],
-        [
-          450,
-          320
-        ],
-        [
-          300,
-          380
-        ]
+        [634, 250],
+        [508, 276],
+        [398, 302]
       ],
-      "nhan": "Đường Rivière ra Cầu Giấy"
+      "nhan": "Đường Trường Thi"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [372, 296],
+        [238, 258],
+        [106, 218]
+      ],
+      "nhan": "Đường đi Sơn Tây"
     }
   ],
   "phan_tu": [
     {
-      "id": "thanh-ha-noi-2",
+      "id": "thanh-ha-noi",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 700,
-      "y": 230,
-      "nhan": "Thành Hà Nội (Rivière chiếm giữ)"
+      "x": 688,
+      "y": 256,
+      "nhan": "Thành Hà Nội — quân Pháp chiếm từ 25/4/1882"
     },
     {
-      "id": "quan-ta-co-den-2",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 250,
-      "y": 420,
-      "nhan": "Lưu Vĩnh Phúc — quân Cờ Đen"
-    },
-    {
-      "id": "dia-diem-cau-giay-2",
-      "kieu": "dia-danh",
-      "x": 350,
-      "y": 400,
-      "nhan": "Cầu Giấy"
-    },
-    {
-      "id": "quan-dich-riviere",
+      "id": "riviere",
       "kieu": "quan",
       "ben": "dich",
-      "x": 550,
-      "y": 300,
-      "nhan": "Rivière đem quân ứng cứu"
+      "x": 604,
+      "y": 328,
+      "nhan": "Đại tá Henri Rivière",
+      "quy_mo": "chỉ huy 500 quân"
     },
     {
-      "id": "mui-phuc-kich-2",
+      "id": "mui-riviere",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [592, 292],
+      "den": [424, 306],
+      "nhan": "Rạng sáng 19/5/1883 kéo quân theo đường Trường Thi"
+    },
+    {
+      "id": "phu-hoai-duc",
+      "kieu": "dia-danh",
+      "x": 186,
+      "y": 372,
+      "nhan": "Phủ Hoài Đức — nơi quân triều đình đóng"
+    },
+    {
+      "id": "hoang-ke-viem",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 138,
+      "y": 456,
+      "nhan": "Hoàng Kế Viêm",
+      "quy_mo": "4.000 quân"
+    },
+    {
+      "id": "luu-vinh-phuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 282,
+      "y": 512,
+      "nhan": "Cánh quân Cờ Đen của Lưu Vĩnh Phúc"
+    },
+    {
+      "id": "mui-tien-ve-ha-noi",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        300,
-        450
-      ],
-      "den": [
-        540,
-        310
-      ],
-      "nhan": "Đánh úp bất ngờ"
+      "tu": [242, 414],
+      "den": [430, 344],
+      "nhan": "4.000 quân từ phủ Hoài Đức tiến về Hà Nội"
     },
     {
-      "id": "co-thang-2",
+      "id": "cau-giay",
+      "kieu": "dia-danh",
+      "x": 372,
+      "y": 296,
+      "nhan": "Ô Cầu Giấy"
+    },
+    {
+      "id": "ha-yen-quyet",
+      "kieu": "dia-danh",
+      "x": 336,
+      "y": 402,
+      "nhan": "Hạ Yên Quyết — một đầu ổ phục kích"
+    },
+    {
+      "id": "trung-thon",
+      "kieu": "dia-danh",
+      "x": 294,
+      "y": 206,
+      "nhan": "Trung Thôn — đầu kia ổ phục kích"
+    },
+    {
+      "id": "mui-mai-phuc",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [284, 400],
+      "den": [364, 328],
+      "nhan": "Quân mai phục xung phong đồng loạt"
+    },
+    {
+      "id": "riviere-tu-tran",
       "kieu": "co",
       "ben": "ta",
-      "x": 450,
-      "y": 460,
-      "nhan": "Rivière tử trận"
+      "x": 446,
+      "y": 196,
+      "nhan": "Henri Rivière tử trận tại Cầu Giấy, ngày 19/5/1883"
+    },
+    {
+      "id": "courbet",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 884,
+      "y": 372,
+      "nhan": "Đô đốc Amédée Courbet và Jules Harmand"
+    },
+    {
+      "id": "thuan-an",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 828,
+      "y": 556,
+      "nhan": "Cửa Thuận An — Pháp tiến công ngày 18–20/8/1883"
+    },
+    {
+      "id": "hoa-uoc",
+      "kieu": "dia-danh",
+      "x": 652,
+      "y": 502,
+      "nhan": "Hoà ước Harmand, còn gọi Hoà ước Quý Mùi"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Rivière đánh chiếm thành Hà Nội lần 2",
-      "mo_ta": "Đầu 1882-1883, Henri Rivière đem quân Pháp tái chiếm thành Hà Nội, mở rộng đánh chiếm Bắc Kỳ lần thứ hai.",
+      "tieu_de": "Sau khi mất thành Hà Nội, quân triều đình đóng ở phủ Hoài Đức",
+      "thoi_gian": "Từ 25/4/1882",
+      "dia_danh": "Thành Hà Nội — phủ Hoài Đức",
+      "mo_ta": "Sau khi Henri Rivière hạ thành Hà Nội ngày 25/4/1882, lực lượng của ông chiếm giữ toà thành nhưng không kiểm soát được vùng ngoại vi. Quân triều đình do Hoàng Kế Viêm chỉ huy đóng ở phủ Hoài Đức, phía tây kinh thành, phối hợp với cánh quân Cờ Đen của Lưu Vĩnh Phúc — cùng đội hình đã chém đầu Francis Garnier tại chính vùng Cầu Giấy này vào giữa trưa ngày 21/12/1873, mười năm trước đó.",
       "hien": [
-        "thanh-ha-noi-2"
+        "thanh-ha-noi",
+        "phu-hoai-duc",
+        "hoang-ke-viem",
+        "luu-vinh-phuc"
+      ],
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html",
+        "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/them-thong-tin-luu-tru-ve-nhung-tran-danh-thanh-ha-noi.htm"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Quân Cờ Đen phối hợp phục kích",
-      "mo_ta": "Lưu Vĩnh Phúc chỉ huy quân Cờ Đen phối hợp quan quân triều đình bố trí trận địa phục kích tại khu vực Cầu Giấy.",
+      "tieu_de": "Ngày 19/5/1883 — Rivière đem 500 quân ra khỏi thành",
+      "thoi_gian": "4 giờ ngày 19/5/1883",
+      "dia_danh": "Đường Trường Thi",
+      "mo_ta": "Lúc 4 giờ ngày 19/5/1883, Henri Rivière chỉ huy 500 quân theo đường Trường Thi kéo quân về phủ Hoài Đức — đó là cách Báo Hànộimới chép, tức một cuộc tiến quân. Tài liệu lưu trữ Pháp do Cục Văn thư và Lưu trữ Nhà nước công bố lại chép rằng ngày 19/5/1883, lo sợ bị quân Cờ Đen bao vây, Rivière thực hiện cuộc rút lui theo đường Sơn Tây. Hai cách chép trái ngược nhau về ý đồ, nhưng thống nhất ở chỗ đoàn quân của ông rời khỏi thành và đi về hướng tây.",
       "hien": [
-        "thanh-ha-noi-2",
-        "quan-ta-co-den-2"
+        "riviere",
+        "mui-riviere",
+        "thanh-ha-noi",
+        "cau-giay"
+      ],
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html",
+        "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/them-thong-tin-luu-tru-ve-nhung-tran-danh-thanh-ha-noi.htm"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Rivière đem quân ra ứng cứu đồn",
-      "mo_ta": "Ngày 19/5/1883, trước tin đồn bị vây, Rivière đem quân ra khỏi thành ứng cứu, lọt vào ổ phục kích.",
+      "tieu_de": "Hoàng Kế Viêm đưa 4.000 quân tiến về Hà Nội",
+      "dia_danh": "Phủ Hoài Đức — Hà Nội",
+      "mo_ta": "Hoàng Kế Viêm cho 4.000 quân từ phủ Hoài Đức tiến về Hà Nội, tấn công một số căn cứ của đối phương ở trong thành. Cách đánh này kéo lực lượng Pháp ra khỏi công sự: giữ trong thành thì họ có tường và pháo, nhưng khi phải cơ động trên đường làng phía tây thì ưu thế ấy mất, và đoàn quân 500 người trở thành một đội hình dài chạy giữa vùng đồng ruộng mà đối phương thuộc từng bờ tre.",
       "hien": [
-        "dia-diem-cau-giay-2",
-        "quan-dich-riviere",
-        "thanh-ha-noi-2"
+        "mui-tien-ve-ha-noi",
+        "hoang-ke-viem",
+        "phu-hoai-duc",
+        "thanh-ha-noi"
+      ],
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Quân Cờ Đen đánh úp",
-      "mo_ta": "Quân Cờ Đen bất ngờ đánh úp, giao chiến ác liệt tại Cầu Giấy.",
+      "tieu_de": "Quân Pháp lọt vào ổ phục kích Hạ Yên Quyết – Trung Thôn",
+      "dia_danh": "Hạ Yên Quyết · Trung Thôn",
+      "mo_ta": "Trên đường hành quân, quân Pháp lọt vào ổ phục kích ở Hạ Yên Quyết và Trung Thôn — hai làng nằm hai bên trục đường qua Cầu Giấy. Tài liệu lưu trữ Pháp tả rõ cách bố trí: sau khi vượt qua đê nơi Francis Garnier tử nạn mười năm trước, đội quân đi qua cây cầu nhỏ bằng gạch mang tên Cầu Giấy, theo tên ngôi làng làm giấy gần đó; quân Cờ Đen núp sau rặng tre của làng bên phải, đợi cho quân Pháp qua cầu và đi dọc trên đường Sơn Tây mới lộ diện.",
       "hien": [
-        "dia-diem-cau-giay-2",
-        "quan-dich-riviere",
-        "mui-phuc-kich-2"
+        "ha-yen-quyet",
+        "trung-thon",
+        "cau-giay",
+        "riviere"
+      ],
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Rivière tử trận",
-      "mo_ta": "Rivière bị giết tại trận; Pháp lấy cớ đẩy mạnh xâm lược, buộc triều đình ký Hòa ước Harmand 1883.",
+      "tieu_de": "Quân Cờ Đen phối hợp, Rivière tử trận",
+      "thoi_gian": "Ngày 19/5/1883",
+      "dia_danh": "Cầu Giấy",
+      "mo_ta": "Hoàng Kế Viêm lệnh cho cánh quân Lưu Vĩnh Phúc phối hợp với quân triều đình. Quân mai phục xung phong đồng loạt và Henri Rivière bị chém đầu. Tài liệu lưu trữ Pháp cũng ghi tại Cầu Giấy quân Cờ Đen phục kích và pháo kích, đại tá Rivière tử trận tại đây cùng ngày. Đây là lần thứ hai trong mười năm một viên chỉ huy quân Pháp ở Bắc Kỳ bỏ mạng tại chính vùng đất này.",
       "hien": [
-        "dia-diem-cau-giay-2",
-        "co-thang-2"
+        "luu-vinh-phuc",
+        "mui-mai-phuc",
+        "riviere-tu-tran",
+        "cau-giay"
+      ],
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html",
+        "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/them-thong-tin-luu-tru-ve-nhung-tran-danh-thanh-ha-noi.htm"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Pháp chuyển hướng, đánh thẳng cửa Thuận An",
+      "thoi_gian": "Ngày 18 – 20/8/1883",
+      "dia_danh": "Cửa Thuận An",
+      "mo_ta": "Thay vì tiếp tục giằng co ở Bắc Kỳ, Pháp đánh thẳng vào cửa ngõ kinh đô. Đô đốc Amédée Courbet chỉ huy hải quân, Jules Harmand làm đại diện ngoại giao. Lúc 4 giờ 30 phút sáng ngày 18/8, lệnh khai hoả được đưa ra; 5 giờ 30 sáng 20/8 quân Pháp tiếp tục tấn công, 6 giờ 10 lính Pháp đổ bộ và quân triều đình Huế từ dưới hào luỹ xông lên chiến đấu quyết tâm đẩy lùi họ; 8 giờ sáng toàn bộ quân Pháp đã lên bờ và đến 9 giờ 5 phút cờ Pháp bay trên các công sự. 600 quân triều đình Huế bị chết. Đại Nam thực lục chép các quan giữ cửa biển là Lê Sỹ, Lê Chuẩn, Lâm Hoành và Nguyễn Trung đều chết trận.",
+      "hien": [
+        "courbet",
+        "thuan-an"
+      ],
+      "nguon": [
+        "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/cuoc-tan-cong-cua-thuan-an-ngay-16-8-1883.htm"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Hoà ước Harmand — Hoà ước Quý Mùi",
+      "thoi_gian": "Từ ngày 22/8/1883",
+      "dia_danh": "Huế",
+      "mo_ta": "Hai bên ngừng giao chiến trong vòng 48 giờ bắt đầu từ ngày 22/8. Harmand tuyên bố chỉ ký tại nơi ở của phái đoàn Pháp ở Huế và chính ông ta áp đặt các điều khoản, không một nhân vật ngoại giao Pháp nào được tham vấn; hoà ước được ký chóng vánh trong vòng vài ngày. Điều kiện đặt ra: triều đình Huế phải rút quân hoàn toàn khỏi 12 đồn luỹ dựng dọc sông từ Thuận An đến Huế, tháo dỡ pháo, vứt súng đạn xuống sông và trả lại hai tàu chiến D'Entrecasteaux và Scorpion mà Pháp tặng vua Tự Đức năm 1874. Chiến thắng Cầu Giấy lần thứ hai vì thế không ngăn được Pháp áp đặt bảo hộ.",
+      "hien": [
+        "hoa-uoc",
+        "thuan-an",
+        "courbet"
+      ],
+      "nguon": [
+        "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/cuoc-tan-cong-cua-thuan-an-ngay-16-8-1883.htm"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": "4.000 quân từ phủ Hoài Đức",
+      "don_vi": [
+        "Quân triều đình do Hoàng Kế Viêm chỉ huy",
+        "Cánh quân Cờ Đen của Lưu Vĩnh Phúc"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "500 quân do Henri Rivière chỉ huy",
+      "don_vi": [
+        "Lực lượng Pháp đồn trú trong thành Hà Nội"
+      ]
+    },
+    "nguon": [
+      "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Đại tá Henri Rivière tử trận tại Cầu Giấy ngày 19/5/1883",
+    "nguon": [
+      "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html",
+      "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/them-thong-tin-luu-tru-ve-nhung-tran-danh-thanh-ha-noi.htm"
+    ]
+  },
   "ket_qua": "Rivière tử trận; Pháp lấy cớ đẩy mạnh xâm lược, buộc triều đình ký Hòa ước Harmand 1883.",
   "y_nghia": "Lặp lại chiến công Cầu Giấy 1873, tiếp tục chứng minh sức mạnh của quân Cờ Đen phối hợp triều đình, dù không ngăn được Pháp tiến tới áp đặt bảo hộ toàn Bắc Kỳ.",
   "trang_thai": "draft",
   "nguon": [
     "Đại Nam thực lục — Chính biên",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "baotanglichsu.vn — Phát hiện bia mộ một sĩ quan Pháp chết năm 1883"
+    "baotanglichsu.vn — Phát hiện bia mộ một sĩ quan Pháp chết năm 1883",
+    "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html",
+    "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/them-thong-tin-luu-tru-ve-nhung-tran-danh-thanh-ha-noi.htm",
+    "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/cuoc-tan-cong-cua-thuan-an-ngay-16-8-1883.htm"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Báo Hànộimới — bài «Hoàng Kế Viêm với chiến thắng Ô Cầu Giấy»",
+      "doan": "4 giờ ngày19-5-1883, H. Riviere chỉ huy 500 quân theo đường Trường Thi kéo quân về Phủ Hoài Đức.",
+      "nguon_trich": "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Báo Hànộimới — bài «Hoàng Kế Viêm với chiến thắng Ô Cầu Giấy»",
+      "doan": "Quân mai phục xung phong đồng loạt và H. Riviere bị chém đầu.",
+      "nguon_trich": "Báo Hànộimới — https://hanoimoi.vn/hoang-ke-viem-voi-chien-thang-o-cau-giay-189222.html",
+      "buoc": 5
+    }
   ]
 }

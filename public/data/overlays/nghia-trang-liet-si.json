@@ -297,14 +297,17 @@
       "lon": 106.85,
       "lat": 11.35,
       "loai": "nghia-trang-tinh",
-      "dia_diem": "Xã Đồng Tâm, huyện Đồng Phú, tỉnh Bình Phước",
+      "dia_diem": "Xã Đồng Tâm, huyện Đồng Phú, tỉnh Bình Phước (Trung tâm Bảo trợ xã hội tỉnh ghi địa chỉ Quốc lộ 14, ấp Cầu 2, xã Đồng Tiến, huyện Đồng Phú)",
       "mo_ta": "Nghĩa trang liệt sĩ tỉnh Bình Phước là địa chỉ đỏ nơi lãnh đạo tỉnh và Quân khu 7 thường xuyên đến dâng hương, đặt hoa nhân các ngày lễ lớn và kỷ niệm ngày giải phóng Bình Phước (23/3/1975), đồng thời tổ chức thay hoa mới định kỳ tại các phần mộ liệt sĩ.",
       "do_tin_cay_toa_do": "thap",
       "nguon": [
         "Cổng TTĐT tỉnh Bình Phước — https://binhphuoc.gov.vn/vi/news/tin-tuc-su-kien-421/lanh-dao-tinh-vieng-nghia-trang-liet-si-nhan-ky-niem-50-nam-giai-phong-binh-phuoc-41141.html",
-        "Báo Quân khu 7 — https://baoquankhu7.vn/tinh-binh-phuoc-thay-hoa-moi-cac-nghia-trang-liet-si-512576024-0023305s34010gs"
+        "Báo Quân khu 7 — https://baoquankhu7.vn/tinh-binh-phuoc-thay-hoa-moi-cac-nghia-trang-liet-si-512576024-0023305s34010gs",
+        "Trung tâm Bảo trợ xã hội tỉnh Bình Phước — https://ttbtxh.binhphuoc.gov.vn/tin-tuc/cham-nghia-trang-liet-si-thong-diep-cua-su-tri-an-65.html"
       ],
-      "trang_thai": "reviewed"
+      "trang_thai": "reviewed",
+      "quy_mo": "Nơi yên nghỉ của 4.858 anh hùng liệt sĩ.",
+      "ghi_chu_bien_tap": "Con số 4.858 mộ lấy từ trang Trung tâm Bảo trợ xã hội tỉnh Bình Phước — đơn vị trực tiếp quản lý nghĩa trang. Hai cổng nhà nước ghi XÃ KHÁC NHAU: bản ghi này vốn ghi xã Đồng Tâm (theo cổng tỉnh), còn trang đơn vị quản lý ghi ấp Cầu 2, xã Đồng Tiến. Nêu cả hai thay vì chọn một: cổng tỉnh binhphuoc.gov.vn từ chối kết nối lúc soát (2026-08-28) nên chưa đối chiếu lại được vế thứ nhất."
     },
     {
       "id": "ntls-long-an",
@@ -387,16 +390,19 @@
     {
       "id": "ntls-doc-ba-dac",
       "ten": "Nghĩa trang liệt sĩ Dốc Bà Đắc",
-      "lon": 104.9,
-      "lat": 10.45,
+      "lon": 104.95,
+      "lat": 10.62,
       "loai": "nghia-trang-tinh",
-      "dia_diem": "Khu vực Dốc Bà Đắc, tỉnh An Giang (vùng Tri Tôn)",
+      "dia_diem": "Phường Thới Sơn, tỉnh An Giang (khu vực Dốc Bà Đắc, nguyên huyện Tịnh Biên)",
       "mo_ta": "Nghĩa trang liệt sĩ Dốc Bà Đắc là một trong các nghĩa trang liệt sĩ của tỉnh An Giang, nơi còn nhiều ngôi mộ vô danh chưa xác định được danh tính liệt sĩ, thường được lãnh đạo tỉnh đến viếng và dâng hương cùng dịp với Nghĩa trang liệt sĩ tỉnh An Giang.",
       "do_tin_cay_toa_do": "thap",
       "nguon": [
-        "Báo Nhân Dân — https://nhandan.vn/nghia-trang-liet-si-doc-ba-dac-xot-long-nhung-ngoi-mo-vo-danh-post707386.html"
+        "Báo Nhân Dân — https://nhandan.vn/nghia-trang-liet-si-doc-ba-dac-xot-long-nhung-ngoi-mo-vo-danh-post707386.html",
+        "Báo An Giang — https://baoangiang.com.vn/khao-sat-thuc-trang-mo-liet-si-chua-xac-dinh-thong-tin-tai-nghia-trang-liet-si-doc-ba-dac-a475297.html"
       ],
-      "trang_thai": "reviewed"
+      "trang_thai": "reviewed",
+      "quy_mo": "Quản lý 9.182 mộ liệt sĩ, trong đó 3.621 mộ có đầy đủ hoặc một phần thông tin và 5.561 mộ chưa xác định được thông tin.",
+      "ghi_chu_bien_tap": "Sửa địa chỉ cấp xã 2026-08-28: bản trước ghi «vùng Tri Tôn», nhưng Báo An Giang đặt nghĩa trang ở phường Thới Sơn (nguyên huyện Tịnh Biên) — hai huyện khác nhau. Toạ độ dời từ 104.9/10.45 về 104.95/10.62 cho khớp phường Thới Sơn, lấy theo bản ghi «Mẹ Việt Nam Anh hùng Nguyễn Thị Hến» (me-vnah.json) vốn đã neo ở phường này; giữ do_tin_cay_toa_do «thap» vì đây là tâm phường chứ không phải toạ độ nghĩa trang."
     },
     {
       "id": "ntls-vinh-long",

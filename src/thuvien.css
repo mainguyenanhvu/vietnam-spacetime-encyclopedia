@@ -889,3 +889,37 @@
    xem chú thích ở .lib-tien-do. */
 .lib-doc[data-nen="nga"] .lib-tien-do { background: var(--doc-nga-nen); }
 .lib-doc[data-nen="toi"] .lib-tien-do { background: var(--doc-toi-nen); }
+
+/* ═══ Nút mở trình đọc toàn văn (src/doc-sach.ts) ═════════════════════════
+   Nút này đứng ở HAI nền khác nhau: hàng danh sách (nền panel) và đầu khung
+   đọc (nền mặc định · ngà · tối). Dựng màu từ `currentColor` thay vì nối vào
+   ba danh sách bộ chọn `[data-nen]` phía trên — cùng lý do đã ghi ở khối
+   .lib-muc-luc, và ở đây nó còn tiết kiệm đúng ba lần khai.
+
+   Viền 55% currentColor, đo trên cả ba nền: 3,59:1 (mặc định) · 3,14:1 (ngà)
+   · 5,11:1 (tối) — đều qua ngưỡng 3:1 của WCAG 1.4.11 cho ranh giới điều
+   khiển. 34% của bản nháp chỉ được 1,9:1 trên nền sáng. */
+.lib-mo-doc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: var(--lib-cham);
+  padding: 0.3rem 0.85rem;
+  border: 1px solid #8a8682;
+  border-color: color-mix(in srgb, currentColor 55%, transparent);
+  border-radius: var(--bo-vien-tron);
+  background: #0000000f;
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  color: inherit;
+  font-family: var(--font);
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.lib-mo-doc:hover,
+.lib-mo-doc:focus-visible {
+  background: #0000001f;
+  background: color-mix(in srgb, currentColor 18%, transparent);
+}

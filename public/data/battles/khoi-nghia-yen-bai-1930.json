@@ -1,10 +1,12 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Yên Bái 1930 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Yên Bái 1930 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Số người bị xử chém có hai cách chép trong nguồn nhà nước: bản ghi cũ của dự án nêu «Nguyễn Thái Học cùng 12 đồng chí, ngày 17/6/1930», còn Báo Nhân Dân nêu «Nguyễn Thái Học cùng 17 chiến sĩ, xử chém vào ngày 8-5 và 17-6-1930». GIỮ CẢ HAI theo bất biến #4, ĐỪNG SỬA thành một. Bài của Báo QĐND là tham luận của Viện Sử học, dẫn nhiều tư liệu Pháp (Sở mật thám Đông Dương, Louis Roubaud, Patric Morlat) — mọi câu dẫn tư liệu Pháp trong bản ghi này đều nêu rõ đó là lời phía Pháp.",
   "id": "khoi-nghia-yen-bai-1930",
   "ten": "Khởi nghĩa Yên Bái",
   "nam": 1930,
+  "thoi_gian": "Đêm 9, rạng sáng 10/2/1930 – 16/2/1930",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Nguyễn Thái Học",
+  "chi_huy": "Nguyễn Thái Học · Nguyễn Khắc Nhu · Phó Đức Chính (Việt Nam Quốc dân đảng)",
   "doi_thu": "Pháp",
   "dia_diem": "Thị xã Yên Bái, nay tỉnh Lào Cai",
   "lien_quan_tinh": [
@@ -13,114 +15,429 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "nui",
+      "diem": [
+        [60, 130],
+        [200, 60],
+        [340, 40],
+        [470, 80]
+      ],
+      "nhan": "Núi rừng tây bắc Bắc Bộ"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [120, 40],
+        [280, 200],
+        [430, 330],
+        [590, 420],
+        [760, 490],
+        [960, 545]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          200,
-          350
-        ],
-        [
-          500,
-          330
-        ],
-        [
-          800,
-          310
-        ]
+        [160, 90],
+        [320, 210],
+        [480, 330],
+        [640, 430],
+        [740, 490]
       ],
-      "nhan": "Thị xã Yên Bái"
+      "nhan": "Đường sắt Hà Nội – Yên Bái – Lào Cai"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [470, 360],
+        [510, 420],
+        [545, 470]
+      ],
+      "nhan": "Đường hội quân dự định qua sông Trung Hà sang Sơn Tây"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [110, 250],
+        [200, 265],
+        [210, 330],
+        [115, 320]
+      ],
+      "nhan": "Rừng núi quanh thị xã Yên Bái"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-vnqdd",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 250,
-      "y": 450,
-      "nhan": "Việt Nam Quốc dân Đảng chuẩn bị"
+      "id": "lao-cai",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 70,
+      "nhan": "Lào Cai"
     },
     {
-      "id": "don-binh-yen-bai",
-      "kieu": "cong-su",
-      "ben": "dich",
-      "x": 550,
-      "y": 350,
-      "nhan": "Đồn binh Pháp tại Yên Bái"
-    },
-    {
-      "id": "mui-danh-don",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        350,
-        420
-      ],
-      "den": [
-        520,
-        360
-      ],
-      "nhan": "Đánh đồn binh"
-    },
-    {
-      "id": "quan-dich-dap-tat",
+      "id": "phap-phan-cong",
       "kieu": "quan",
       "ben": "dich",
-      "x": 700,
-      "y": 250,
-      "nhan": "Pháp dập tắt khởi nghĩa"
+      "x": 460,
+      "y": 100,
+      "nhan": "Quân Pháp phản công",
+      "quy_mo": "Từ đồn Cao, phối hợp lính khố xanh"
     },
     {
-      "id": "co-xu-chem",
-      "kieu": "co",
+      "id": "nguyen-thai-hoc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 770,
+      "y": 130,
+      "nhan": "Nguyễn Thái Học",
+      "quy_mo": "Phụ trách khởi nghĩa các tỉnh miền xuôi"
+    },
+    {
+      "id": "binh-linh-khoi-nghia",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 168,
+      "nhan": "Binh lính khố đỏ phản chiến"
+    },
+    {
+      "id": "yen-bai",
+      "kieu": "thanh",
       "ben": "dich",
-      "x": 500,
-      "y": 200,
-      "nhan": "Nguyễn Thái Học bị xử chém (17/6/1930)"
+      "x": 335,
+      "y": 168,
+      "nhan": "Thị xã Yên Bái"
+    },
+    {
+      "id": "don-thap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 245,
+      "y": 232,
+      "nhan": "Đồn Thấp"
+    },
+    {
+      "id": "don-cao",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 405,
+      "y": 242,
+      "nhan": "Đồn Cao"
+    },
+    {
+      "id": "nha-day-thep",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 302,
+      "nhan": "Nhà dây thép và nhà ga Yên Bái"
+    },
+    {
+      "id": "lam-thao",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 565,
+      "y": 300,
+      "nhan": "Phủ Lâm Thao"
+    },
+    {
+      "id": "hung-hoa",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 452,
+      "y": 352,
+      "nhan": "Đồn Hưng Hoá"
+    },
+    {
+      "id": "phu-tho",
+      "kieu": "dia-danh",
+      "x": 630,
+      "y": 382,
+      "nhan": "Phú Thọ"
+    },
+    {
+      "id": "nguyen-khac-nhu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 330,
+      "y": 430,
+      "nhan": "Nguyễn Khắc Nhu",
+      "quy_mo": "Chỉ huy khu tây bắc Bắc Bộ"
+    },
+    {
+      "id": "bac-ninh",
+      "kieu": "dia-danh",
+      "x": 800,
+      "y": 430,
+      "nhan": "Bắc Ninh · Đáp Cầu"
+    },
+    {
+      "id": "don-thong",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 522,
+      "y": 462,
+      "nhan": "Đồn Thông (Sơn Tây)"
+    },
+    {
+      "id": "vinh-bao",
+      "kieu": "dia-danh",
+      "x": 962,
+      "y": 470,
+      "nhan": "Vĩnh Bảo"
+    },
+    {
+      "id": "ha-noi",
+      "kieu": "dia-danh",
+      "x": 690,
+      "y": 500,
+      "nhan": "Hà Nội"
+    },
+    {
+      "id": "hai-duong",
+      "kieu": "dia-danh",
+      "x": 872,
+      "y": 500,
+      "nhan": "Hải Dương · Hải Phòng · Kiến An"
+    },
+    {
+      "id": "mo-nguyen-thai-hoc",
+      "kieu": "dia-danh",
+      "x": 180,
+      "y": 520,
+      "nhan": "Mộ Nguyễn Thái Học và các chiến sĩ hy sinh"
+    },
+    {
+      "id": "pho-duc-chinh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 610,
+      "y": 548,
+      "nhan": "Phó Đức Chính",
+      "quy_mo": "Phụ trách đánh đồn Thông"
+    },
+    {
+      "id": "phu-duc",
+      "kieu": "dia-danh",
+      "x": 930,
+      "y": 562,
+      "nhan": "Phụ Dực (Thái Bình)"
+    },
+    {
+      "id": "mui-yen-bai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [180, 198],
+      "den": [238, 216],
+      "nhan": "Nghĩa quân đánh vào đồn Thấp"
+    },
+    {
+      "id": "mui-hoi-quan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [470, 332],
+      "den": [528, 448],
+      "nhan": "Dự định hợp binh đánh đồn Thông"
+    },
+    {
+      "id": "mui-phap-truy-lung",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [440, 128],
+      "den": [355, 190],
+      "nhan": "Pháp phản công và truy lùng"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "Đầu năm 1929, Việt Nam Quốc dân đảng tổ chức được 120 chi bộ hoạt động ở Bắc Kỳ, quy tụ 1.500 đảng viên, trong đó 120 người là binh lính",
+          "nguon": "Tham luận Viện Sử học đăng trên Báo Quân đội nhân dân, dẫn tư liệu về Việt Nam Quốc dân đảng"
+        },
+        {
+          "so": "Ở Phụ Dực đêm 15 rạng 16/2/1930, một toán quân từ 40 đến 50 người mang dao rựa, gậy gộc và một vài quả bom — theo tài liệu của phía Pháp",
+          "nguon": "Tham luận Viện Sử học đăng trên Báo Quân đội nhân dân"
+        }
+      ],
+      "don_vi": [
+        "Việt Nam Quốc dân đảng, thành lập ngày 25/12/1927, Nguyễn Thái Học làm Chủ tịch",
+        "Binh lính khố đỏ người Việt trong quân đội Pháp ở Yên Bái phản chiến"
+      ],
+      "vu_khi": [
+        "Dao rựa, gậy gộc, bom tự chế",
+        "Súng lấy được trong kho vũ khí đồn Thấp"
+      ]
+    },
+    "nguon": [
+      "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái (10-2-1930 – 10-2-2025): Nguyễn Thái Học, Phó Đức Chính và các đồng sự trong Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Việt Nam Quốc dân Đảng chuẩn bị khởi nghĩa",
-      "mo_ta": "Việt Nam Quốc dân Đảng do Nguyễn Thái Học lãnh đạo bí mật chuẩn bị khởi nghĩa vũ trang.",
+      "tieu_de": "Một chính đảng chưa kịp đi hết ba thời kỳ của chính mình",
+      "thoi_gian": "25/12/1927 – đầu năm 1929",
+      "dia_danh": "Hà Nội · Nam Đồng thư xã",
+      "mo_ta": "Việt Nam Quốc dân đảng là một tổ chức theo xu hướng cách mạng dân chủ tư sản, thành lập ngày 25/12/1927 trên cơ sở Nam Đồng thư xã, do Nguyễn Thái Học đứng đầu, bên cạnh là Nguyễn Thế Nghiệp, Phó Đức Chính, Nguyễn Khắc Nhu; Tổng bộ lâm thời gồm 15 người. Chương trình hành động duyệt trong hội nghị thành lập vạch ra ba thời kỳ trước khi khởi nghĩa: thời kỳ phôi thai tổ chức chi bộ và xây dựng cơ sở, thời kỳ dự bị tổ chức các hội quần chúng và phái người du học quân sự, rồi mới đến thời kỳ công khai khởi nghĩa. Đến đầu năm 1929, đảng chưa vượt qua thời kỳ thứ nhất. Đảng được tổ chức theo bốn cấp Tổng bộ, kỳ bộ, tỉnh bộ và chi bộ nhưng chưa bao giờ thành hệ thống trong cả nước; địa bàn chỉ bó hẹp ở một số địa phương Bắc Kỳ, cơ sở trong quần chúng rất ít. Chủ trương là tiến hành cách mạng bằng bạo lực, lấy binh lính người Việt trong quân đội Pháp được giác ngộ làm lực lượng chủ lực.",
       "hien": [
-        "co-ta-vnqdd"
+        "ha-noi",
+        "nguyen-thai-hoc",
+        "pho-duc-chinh",
+        "nguyen-khac-nhu",
+        "yen-bai",
+        "bac-ninh",
+        "hai-duong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đánh đồn binh Pháp tại Yên Bái",
-      "mo_ta": "Đêm 9 rạng 10/2/1930, nghĩa quân đánh đồn binh Pháp tại thị xã Yên Bái.",
+      "tieu_de": "Vụ Bazin và làn sóng bắt bớ",
+      "thoi_gian": "9/2/1929 – cuối năm 1929",
+      "dia_danh": "Hà Nội · Mỹ Điền · Bảy Chùa · Nội Viên · Thái Hà",
+      "mo_ta": "Tháng 2/1929, Việt Nam Quốc dân đảng tổ chức ám sát Bazin, người điều khiển tại Hà Nội một sở mộ phu Bắc Kỳ gửi đến các đồn điền ở miền Nam Đông Dương. Nhân sự kiện này, thực dân Pháp tiến hành một cuộc khủng bố dã man, nhân dịp đàn áp cả các đảng phái khác: bắt bớ hàng loạt, án tử hình, giam cầm, tra tấn. Trong một thời gian ngắn, hầu hết đảng viên từ Trung ương đến các cấp địa phương bị bắt, hệ thống của đảng bị đứt đoạn. Tháng 9/1929, tại Hội nghị Võng La xảy ra sự phản bội của Phạm Thành Dương, làm lực lượng khởi nghĩa tổn thương thêm một lần nữa. Những vụ nổ do chế tạo bom cũng làm Pháp lần ra manh mối: theo tài liệu phía Pháp, ngày 3/9/1929 ba người chết vì chế bom bị nổ ở Mỹ Điền, ngày 20/11 khám phá 150 quả bom gần Bảy Chùa, ngày 23/12 lại tìm thấy 150 quả ở Nội Viên và ngày 26 cùng tháng là 290 quả ở Thái Hà.",
       "hien": [
-        "co-ta-vnqdd",
-        "don-binh-yen-bai",
-        "mui-danh-don"
+        "ha-noi",
+        "nguyen-thai-hoc",
+        "nguyen-khac-nhu",
+        "bac-ninh",
+        "hai-duong",
+        "mui-phap-truy-lung"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Khởi nghĩa thất bại",
-      "mo_ta": "Do lực lượng chênh lệch và thiếu chuẩn bị đồng bộ, cuộc khởi nghĩa nhanh chóng thất bại.",
+      "tieu_de": "Hội nghị Lạc Đạo: phái bạo động thắng thế",
+      "thoi_gian": "Cuối năm 1929",
+      "dia_danh": "Lạc Đạo",
+      "mo_ta": "Bị động trước tình thế, những nhà lãnh đạo chủ chốt quyết định dốc hết lực lượng thực hiện cuộc bạo động cuối cùng. Tại Hội nghị Lạc Đạo có hai chủ trương khác nhau: phái bạo động do Nguyễn Thái Học và Nguyễn Khắc Nhu đại diện chủ trương khởi nghĩa ngay; phái cải tổ do Lê Hữu Cảnh và Trần Văn Huân đại diện muốn theo đường lối đã vạch từ trước, tổ chức lại đảng và chưa nên bạo động. Kết quả, phái bạo động áp đảo và chủ trương bạo động thành quyết nghị của đảng. Phái bạo động dựa vào một số nhân sĩ, kỳ hào, phú nông ở các tỉnh trung du và hạ du, đặc biệt là Hải Dương, Kiến An, Phú Thọ, cùng một số binh lính trong hàng ngũ Pháp ở Yên Bái, Sơn Tây, Kiến An và Hải Phòng. Trái với dự định ban đầu là một cuộc tổng khởi nghĩa toàn quốc, việc chuẩn bị cuối cùng chỉ còn hạn chế ở mấy địa bàn nơi đảng còn ít nhiều thế lực.",
       "hien": [
-        "don-binh-yen-bai",
-        "quan-dich-dap-tat"
+        "nguyen-thai-hoc",
+        "nguyen-khac-nhu",
+        "pho-duc-chinh",
+        "yen-bai",
+        "hai-duong",
+        "phu-tho",
+        "don-thong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Nguyễn Thái Học cùng 12 đồng chí bị xử chém",
-      "mo_ta": "Nguyễn Thái Học cùng 12 đồng chí bị bắt và xử chém ngày 17/6/1930.",
+      "tieu_de": "Phân công kế hoạch cho đêm 10/2/1930",
+      "thoi_gian": "Đầu năm 1930",
+      "dia_danh": "Yên Bái · Hưng Hoá · Lâm Thao · Sơn Tây · Bắc Ninh · Hải Dương",
+      "mo_ta": "Đầu năm 1930, ngày khởi nghĩa được ấn định. Nguyễn Thái Học nhận trách nhiệm chỉ huy các cuộc khởi nghĩa ở mấy tỉnh miền xuôi như Hải Phòng, Kiến An, Hải Dương, Phả Lại; Nguyễn Khắc Nhu chỉ huy cuộc vũ trang khởi nghĩa ở khu tây bắc Bắc Bộ gồm các yếu điểm Yên Bái, Hưng Hoá thuộc Phú Thọ và Lâm Thao; riêng Phó Đức Chính phụ trách đánh vào đồn Thông, một đại bản doanh quân sự của Pháp ở Sơn Tây. Tài liệu của Sở mật thám Đông Dương chép kế hoạch tấn công như sau: Nguyễn Thế Nghiệp phải chiếm Lào Cai, Nguyễn Khắc Nhu và Phó Đức Chính phải đánh Yên Bái, Hưng Hoá, Lâm Thao và Sơn Tây, Nguyễn Thái Học phải gây ra cuộc khởi nghĩa ở Bắc Ninh, Đáp Cầu, Hải Dương. Trong lúc đó Nguyễn Ái Quốc đang hoạt động ở Xiêm; nghe tin, Người nhận xét cuộc bạo động nổ ra lúc này là quá sớm và khó thành công, muốn gặp các lãnh tụ Việt Nam Quốc dân đảng để bàn lại kế hoạch nhưng không thực hiện được.",
       "hien": [
-        "co-xu-chem"
+        "nguyen-thai-hoc",
+        "nguyen-khac-nhu",
+        "pho-duc-chinh",
+        "lao-cai",
+        "yen-bai",
+        "hung-hoa",
+        "lam-thao",
+        "don-thong",
+        "bac-ninh",
+        "hai-duong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "1 giờ sáng 10/2/1930: đồn Thấp đổ, đồn Cao đứng vững",
+      "thoi_gian": "1 giờ sáng ngày 10/2/1930",
+      "dia_danh": "Đồn Thấp · đồn Cao · nhà dây thép · nhà ga Yên Bái",
+      "mo_ta": "Cuộc khởi nghĩa Yên Bái nổ ra vào lúc 1 giờ sáng ngày 10/2/1930. Quân khởi nghĩa chủ yếu dựa vào binh lính khố đỏ, chiếm được đồn Thấp cùng kho vũ khí, diệt và làm bị thương hơn chục sĩ quan, binh sĩ Pháp trong đó có quan ba Jourdan, quan hai Robert và viên quản Cunéo. Nghĩa quân chiếm được nhà dây thép, nhà ga, phát truyền đơn hô hào quần chúng và binh lính hưởng ứng. Nhưng những vị trí quyết định thì không chiếm được: đồn Cao do một quan tư Pháp chỉ huy vẫn đứng vững, trại lính khố xanh không lấy được, viên Tuần phủ Yên Bái chạy thoát. Nhân dân thị xã Yên Bái bị bất ngờ, không có hoạt động gì ủng hộ quân khởi nghĩa. Khi trời sáng, quân Pháp từ đồn Cao phối hợp với đơn vị lính khố xanh phản công, quân khởi nghĩa tan rã. Cùng đêm đó, khởi nghĩa nổ ra ở Phú Thọ, Sơn Tây, sau đó là Hải Dương, Thái Bình; ở Hà Nội cũng có đánh bom phối hợp.",
+      "hien": [
+        "don-thap",
+        "don-cao",
+        "nha-day-thep",
+        "yen-bai",
+        "binh-linh-khoi-nghia",
+        "mui-yen-bai",
+        "phap-phan-cong",
+        "mui-phap-truy-lung"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Hưng Hoá và Lâm Thao — Nguyễn Khắc Nhu tự sát ba lần",
+      "thoi_gian": "Đêm 9 rạng 10/2/1930 và ngày hôm sau",
+      "dia_danh": "Đồn Hưng Hoá · phủ Lâm Thao",
+      "mo_ta": "Cùng một đêm với Yên Bái, quân khởi nghĩa đánh đồn Hưng Hoá và chiếm phủ Lâm Thao. Theo kế hoạch, một khi Yên Bái đắc thắng thì những toán quân này sẽ hội quân ở Hưng Hoá, qua sông Trung Hà đánh vào đồn Thông ở Sơn Tây và hợp với toán quân của Phó Đức Chính. Nguyễn Khắc Nhu trực tiếp chỉ huy đánh đồn Hưng Hoá, nhưng vì vũ khí kém và không có nội ứng, toán quân này không chiếm được đồn, phải rút về Lâm Thao. Tại Lâm Thao, nghĩa quân do Phạm Nhận chỉ huy đánh chiếm được phủ và hợp với toán quân từ Hưng Hoá kéo về. Quân đội Pháp từ Phú Thọ kéo đến phản công; Nguyễn Khắc Nhu bị thương và bị bắt, cắn lưỡi chết — chỉ trong một ngày, ông đã tự tử ba lần để khỏi đội trời chung với quân thù.",
+      "hien": [
+        "hung-hoa",
+        "lam-thao",
+        "nguyen-khac-nhu",
+        "phu-tho",
+        "mui-hoi-quan",
+        "don-thong",
+        "pho-duc-chinh"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đồn Thông không nổ ra, Phụ Dực và Vĩnh Bảo muộn màng",
+      "thoi_gian": "10 – 16/2/1930",
+      "dia_danh": "Đồn Thông · Phụ Dực · Vĩnh Bảo",
+      "mo_ta": "Dự định hợp binh đánh sang Sơn Tây không thực hiện được. Tại Sơn Tây, cuộc chuẩn bị khởi nghĩa cũng bị lộ, thực dân Pháp hết sức đề phòng; thêm ảnh hưởng thất bại của quân khởi nghĩa tại Yên Bái và Phú Thọ, kế hoạch đánh chiếm đồn Thông không thực hiện được và ít ngày sau Phó Đức Chính bị bắt. Ở Thái Bình, đêm 15 rạng ngày 16/2/1930, huyện Phụ Dực bị đánh chiếm cùng lúc với huyện Vĩnh Bảo. Theo tài liệu của phía Pháp, vào 9 giờ tối, một toán quân từ 40 đến 50 người mang dao rựa, gậy gộc và một vài quả bom đột nhập nha môn của quan huyện, ở lại khoảng hai tiếng đồng hồ, đốt các hồ sơ và nổ nhiều bom; Toà sứ Thái Bình chỉ nhận được tin vào 4 giờ sáng. Ngoài Yên Bái, các tỉnh khác đều nổ ra chậm và muộn hơn, quy mô nhỏ, không chiếm được vị trí then chốt.",
+      "hien": [
+        "don-thong",
+        "pho-duc-chinh",
+        "phu-duc",
+        "vinh-bao",
+        "hai-duong",
+        "ha-noi",
+        "mui-hoi-quan"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Máy chém và tiếng hô «Việt Nam vạn tuế»",
+      "thoi_gian": "8/5 và 17/6/1930",
+      "dia_danh": "Yên Bái",
+      "mo_ta": "Khởi sự với phương châm «Không thành công cũng thành nhân», cuộc khởi nghĩa thất bại; các nghĩa sĩ Việt Nam Quốc dân đảng bị thực dân Pháp truy nã và hành hình. Số người bị xử chém được chép hai cách: Nguyễn Thái Học cùng 12 đồng chí ngày 17/6/1930, hoặc Nguyễn Thái Học cùng 17 chiến sĩ bị xử chém vào hai ngày 8/5 và 17/6/1930. Trước giây phút hy sinh trên lưỡi máy chém, Nguyễn Thái Học và các đồng sự vẫn hô vang «Việt Nam, Việt Nam vạn tuế!». Nguồn nhà nước nêu rõ nguyên nhân thất bại: tương quan lực lượng chênh lệch, sự lãnh đạo còn non yếu, lực lượng vũ trang không đủ bảo đảm thắng lợi và cuộc khởi nghĩa không dựa được vào sự ủng hộ của nhân dân. Khu di tích Mộ Nguyễn Thái Học và các chiến sĩ hy sinh trong cuộc khởi nghĩa Yên Bái đã được công nhận là Di tích lịch sử cấp quốc gia.",
+      "hien": [
+        "mo-nguyen-thai-hoc",
+        "nguyen-thai-hoc",
+        "pho-duc-chinh",
+        "nguyen-khac-nhu",
+        "yen-bai",
+        "don-cao",
+        "phap-phan-cong"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Kỷ niệm 89 năm cuộc khởi nghĩa Yên Bái — https://nhandan.vn/ky-niem-89-nam-cuoc-khoi-nghia-yen-bai-post348254.html",
+        "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945"
       ]
     }
   ],
-  "ket_qua": "Khởi nghĩa thất bại; Nguyễn Thái Học cùng 12 đồng chí bị xử chém ngày 17/6/1930.",
-  "y_nghia": "Cuộc khởi nghĩa vũ trang theo khuynh hướng dân tộc tư sản cuối cùng, thất bại của nó cho thấy con đường cứu nước cần một tổ chức và đường lối cách mạng triệt để hơn.",
+  "ket_qua": "Khởi nghĩa thất bại sau một ngày ở Yên Bái và trong vòng một tuần ở các nơi khác; Nguyễn Khắc Nhu tự sát khi bị bắt, Nguyễn Thái Học và các đồng sự bị xử chém năm 1930.",
+  "y_nghia": "Cuộc khởi nghĩa vũ trang theo khuynh hướng dân tộc tư sản cuối cùng; thất bại của nó cho thấy con đường cứu nước cần một tổ chức và đường lối cách mạng triệt để hơn.",
   "trang_thai": "draft",
   "nguon": [
-    "qdnd.vn — 95 năm Khởi nghĩa Yên Bái",
+    "Báo Quân đội nhân dân — 95 năm Khởi nghĩa Yên Bái (10-2-1930 – 10-2-2025): Nguyễn Thái Học, Phó Đức Chính và các đồng sự trong Khởi nghĩa Yên Bái — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945",
+    "Báo Nhân Dân — Kỷ niệm 89 năm cuộc khởi nghĩa Yên Bái — https://nhandan.vn/ky-niem-89-nam-cuoc-khoi-nghia-yen-bai-post348254.html",
+    "Cổng Thông tin điện tử Chính phủ — Dâng hương tưởng niệm nhà yêu nước Nguyễn Thái Học và các chiến sĩ hy sinh trong khởi nghĩa Yên Bái — https://baochinhphu.vn/dang-huong-tuong-niem-nha-yeu-nuoc-nguyen-thai-hoc-va-cac-chien-si-hy-sinh-trong-khoi-nghia-yen-bai-102230715170624371.htm",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
@@ -128,7 +445,19 @@
       "sach": "Lời khẩu hiệu của Nguyễn Thái Học và Nguyễn Khắc Nhu trước khởi nghĩa Yên Bái",
       "doan": "Không thành công cũng thành nhân",
       "nguon_trich": "Cổng TTĐT tỉnh Lai Châu (đăng lại bài Báo Quân đội nhân dân) — https://laichau.gov.vn/tin-tuc-su-kien/chuyen-de/tin-trong-nuoc/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai.html",
-      "buoc": 2
+      "buoc": 3
+    },
+    {
+      "sach": "Nhận xét của Nguyễn Ái Quốc khi đang hoạt động ở Xiêm, đầu năm 1930",
+      "doan": "Cuộc bạo động nổ ra lúc này là quá sớm, và khó thành công",
+      "nguon_trich": "Báo Quân đội nhân dân — https://www.qdnd.vn/chinh-tri/cac-van-de/95-nam-khoi-nghia-yen-bai-10-2-1930-10-2-2025-nguyen-thai-hoc-pho-duc-chinh-va-cac-dong-su-trong-khoi-nghia-yen-bai-814945",
+      "buoc": 4
+    },
+    {
+      "sach": "Khẩu hiệu của Nguyễn Thái Học và các đồng sự trước lưỡi máy chém",
+      "doan": "Việt Nam, Việt Nam vạn tuế!",
+      "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ky-niem-89-nam-cuoc-khoi-nghia-yen-bai-post348254.html",
+      "buoc": 8
     }
   ]
 }

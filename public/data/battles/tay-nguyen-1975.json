@@ -1,10 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Tây Nguyên 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Tây Nguyên 1975 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh) theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
   "id": "tay-nguyen-1975",
   "ten": "Chiến dịch Tây Nguyên 1975",
   "nam": 1975,
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Bộ Tư lệnh Chiến dịch Tây Nguyên (Văn Tiến Dũng)",
+  "chi_huy": "Bộ Tư lệnh Chiến dịch Tây Nguyên — Tư lệnh Trung tướng Hoàng Minh Thảo, Chính uỷ Đại tá Đặng Vũ Hiệp",
   "doi_thu": "Quân lực Việt Nam Cộng hòa",
   "dia_diem": "Đắk Lắk, Gia Lai, Kon Tum, Phú Yên (Tây Nguyên)",
   "lien_quan_tinh": [
@@ -17,143 +17,372 @@
       "kieu": "duong",
       "diem": [
         [
-          600,
-          100
+          430,
+          60
         ],
         [
-          500,
-          300
+          420,
+          250
         ],
         [
-          400,
-          500
+          380,
+          430
+        ],
+        [
+          340,
+          560
         ]
       ],
-      "nhan": "Đường số 7 (Cheo Reo – Phú Bổn)"
+      "nhan": "Đường số 14 (bắc – nam Tây Nguyên)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          470,
+          180
+        ],
+        [
+          700,
+          195
+        ],
+        [
+          930,
+          215
+        ]
+      ],
+      "nhan": "Đường số 19 (Tây Nguyên – duyên hải)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          400,
+          400
+        ],
+        [
+          640,
+          420
+        ],
+        [
+          900,
+          440
+        ]
+      ],
+      "nhan": "Đường số 21 (Buôn Ma Thuột – Nha Trang)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          500,
+          130
+        ],
+        [
+          660,
+          250
+        ],
+        [
+          800,
+          360
+        ],
+        [
+          900,
+          470
+        ]
+      ],
+      "nhan": "Đường số 7 (Cheo Reo – Củng Sơn)"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          120,
+          200
+        ],
+        [
+          300,
+          185
+        ],
+        [
+          520,
+          195
+        ],
+        [
+          720,
+          210
+        ]
+      ],
+      "nhan": "Cao nguyên Tây Nguyên"
     }
   ],
   "phan_tu": [
     {
-      "id": "buon-ma-thuot",
-      "kieu": "thanh",
-      "ben": "dich",
-      "x": 300,
-      "y": 250,
-      "nhan": "Thị xã Buôn Ma Thuột"
+      "id": "sd-968",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 90,
+      "nhan": "Nghi binh ở bắc Tây Nguyên",
+      "quy_mo": "Sư đoàn 968"
     },
     {
-      "id": "mui-danh-chiem-bmt",
+      "id": "kon-tum",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 430,
+      "y": 60,
+      "nhan": "Kon Tum"
+    },
+    {
+      "id": "pleiku",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 430,
+      "y": 150,
+      "nhan": "Plây Cu"
+    },
+    {
+      "id": "cat-duong-19",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        150,
-        280
+        640,
+        120
       ],
       "den": [
-        280,
-        260
+        700,
+        185
+      ],
+      "nhan": "Cắt đường số 19"
+    },
+    {
+      "id": "cat-duong-21",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        660,
+        500
+      ],
+      "den": [
+        700,
+        430
+      ],
+      "nhan": "Cắt đường số 21"
+    },
+    {
+      "id": "thuan-man",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 300,
+      "y": 230,
+      "nhan": "Quận lỵ Thuần Mẫn"
+    },
+    {
+      "id": "duc-lap",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 140,
+      "y": 330,
+      "nhan": "Quận lỵ Đức Lập"
+    },
+    {
+      "id": "buon-ma-thuot",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 330,
+      "y": 420,
+      "nhan": "Thị xã Buôn Ma Thuột"
+    },
+    {
+      "id": "mui-danh-bmt",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        120,
+        500
+      ],
+      "den": [
+        275,
+        450
       ],
       "nhan": "Đòn đột phá then chốt"
     },
     {
-      "id": "quan-dich-rung-chuyen",
+      "id": "sd-23-phan-kich",
       "kieu": "quan",
       "ben": "dich",
-      "x": 500,
-      "y": 200,
-      "nhan": "Tuyến phòng thủ rung chuyển"
+      "x": 560,
+      "y": 330,
+      "nhan": "Phản kích ở Nông Trại – Chư Cúc",
+      "quy_mo": "Sư đoàn 23"
     },
     {
-      "id": "quan-dich-rut-chay",
+      "id": "dich-rut-duong-7",
       "kieu": "quan",
       "ben": "dich",
-      "x": 550,
-      "y": 350,
-      "nhan": "Địch rút chạy trên đường số 7"
+      "x": 620,
+      "y": 90,
+      "nhan": "Rút khỏi Kon Tum, Plây Cu theo đường số 7"
     },
     {
-      "id": "quan-ta-truy-kich-tn",
-      "kieu": "quan",
+      "id": "truy-kich-d7",
+      "kieu": "mui-ten",
       "ben": "ta",
-      "x": 400,
-      "y": 400,
-      "nhan": "Quân ta truy kích"
+      "tu": [
+        520,
+        200
+      ],
+      "den": [
+        740,
+        320
+      ],
+      "nhan": "Truy kích trên đường số 7"
     },
     {
-      "id": "dia-danh-5-tinh",
+      "id": "cheo-reo",
       "kieu": "dia-danh",
-      "x": 350,
-      "y": 150,
-      "nhan": "5 tỉnh Tây Nguyên"
+      "x": 790,
+      "y": 250,
+      "nhan": "Cheo Reo"
     },
     {
-      "id": "co-thang-tn",
+      "id": "cung-son",
+      "kieu": "dia-danh",
+      "x": 860,
+      "y": 350,
+      "nhan": "Củng Sơn"
+    },
+    {
+      "id": "duyen-hai",
+      "kieu": "dia-danh",
+      "x": 830,
+      "y": 520,
+      "nhan": "Phú Yên · Khánh Hoà"
+    },
+    {
+      "id": "co-ket-thuc",
       "kieu": "co",
       "ben": "ta",
-      "x": 300,
-      "y": 100,
-      "nhan": "Bước ngoặt quyết định"
+      "x": 130,
+      "y": 550,
+      "nhan": "Kết thúc chiến dịch 3/4/1975"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Mở màn: đánh chiếm thị xã Buôn Ma Thuột (10-11/3/1975)",
-      "mo_ta": "Chiến dịch Tây Nguyên (mật danh A275) mở màn bằng đòn đột phá then chốt đánh chiếm thị xã Buôn Ma Thuột.",
+      "tieu_de": "Đầu tháng 3/1975 — nghi binh ở bắc Tây Nguyên",
+      "thoi_gian": "Đầu tháng 3/1975",
+      "dia_danh": "Kon Tum · Plây Cu",
+      "mo_ta": "Tháng 1/1975, Thường trực Quân uỷ Trung ương quyết định mở Chiến dịch Tây Nguyên, mật danh A 275, nhằm tiêu diệt một bộ phận quan trọng sinh lực đối phương, giải phóng các tỉnh nam Tây Nguyên là Đắk Lắk, Phú Bổn, Quảng Đức, chia cắt chiến lược và tạo thế mới trên toàn miền Nam. Ngay từ đầu tháng 3, Bộ Tư lệnh chiến dịch dùng Sư đoàn 968 hoạt động nghi binh ở khu vực bắc Tây Nguyên, khiến Sư đoàn 23 phải chuyển một bộ phận lực lượng từ Buôn Ma Thuột lên Kon Tum và Plây Cu đối phó.",
       "hien": [
-        "buon-ma-thuot",
-        "mui-danh-chiem-bmt"
+        "sd-968",
+        "kon-tum",
+        "pleiku"
+      ],
+      "nguon": [
+        "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Quân đội Sài Gòn bất ngờ, không kịp ứng cứu",
-      "mo_ta": "Đòn đánh bất ngờ khiến quân đội Sài Gòn không kịp điều quân ứng cứu, tuyến phòng thủ Tây Nguyên rung chuyển.",
+      "tieu_de": "4 – 9/3 — cắt giao thông, cô lập Buôn Ma Thuột",
+      "thoi_gian": "4 – 9/3/1975",
+      "dia_danh": "Đường 19 · Đường 21 · Đường 14 · Thuần Mẫn · Đức Lập",
+      "mo_ta": "Theo kế hoạch, ngày 4/3 bộ đội nổ súng mở chiến dịch. Từ ngày 4 đến 9/3, quân ta đánh cắt giao thông trên đường số 19 và số 21 để cô lập Tây Nguyên với vùng duyên hải miền Trung, chia cắt đường số 14 nhằm tách bắc Tây Nguyên khỏi nam Tây Nguyên, rồi lần lượt đánh chiếm quận lỵ Thuần Mẫn ngày 8/3 và Đức Lập ngày 9/3. Đến đây thị xã Buôn Ma Thuột bị cô lập triệt để, đối phương mất khả năng tiếp viện bằng đường bộ.",
       "hien": [
-        "buon-ma-thuot",
-        "quan-dich-rung-chuyen"
+        "cat-duong-19",
+        "cat-duong-21",
+        "thuan-man",
+        "duc-lap",
+        "buon-ma-thuot"
+      ],
+      "nguon": [
+        "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Địch rút chạy trên đường số 7",
-      "mo_ta": "Trước nguy cơ bị chia cắt, quân đội Sài Gòn quyết định rút bỏ Tây Nguyên theo đường số 7 (Cheo Reo – Phú Bổn).",
+      "tieu_de": "10 – 11/3 — trận then chốt thứ nhất: đánh chiếm thị xã Buôn Ma Thuột",
+      "thoi_gian": "10 – 11/3/1975",
+      "dia_danh": "Thị xã Buôn Ma Thuột",
+      "mo_ta": "Trong hai ngày 10 và 11/3, quân ta tiến công thị xã Buôn Ma Thuột và giành thắng lợi ở trận then chốt thứ nhất của chiến dịch. Đây vừa là hướng chủ yếu vừa là mục tiêu chủ yếu đã chọn: nam Tây Nguyên là nơi đối phương bố trí lực lượng mỏng hơn và coi như hậu phương. Riêng ở mục tiêu này, ta tập trung lực lượng gấp năm lần đối phương, tạo thế bao vây, chia cắt và cô lập để tiêu diệt từng cứ điểm, làm đảo lộn toàn bộ thế phòng thủ Tây Nguyên.",
       "hien": [
-        "quan-dich-rut-chay"
+        "buon-ma-thuot",
+        "mui-danh-bmt"
+      ],
+      "nguon": [
+        "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Quân ta truy kích tiêu diệt đoàn rút chạy",
-      "mo_ta": "Quân ta tổ chức truy kích quyết liệt trên đường số 7, gây thiệt hại nặng cho đoàn quân rút chạy.",
+      "tieu_de": "14 – 18/3 — trận then chốt thứ hai: đập tan phản kích của Sư đoàn 23",
+      "thoi_gian": "14 – 18/3/1975",
+      "dia_danh": "Nông Trại · Chư Cúc",
+      "mo_ta": "Mất thị xã, đối phương đưa Sư đoàn 23 phản kích hòng chiếm lại Buôn Ma Thuột. Từ ngày 14 đến 18/3, quân ta đập tan cuộc phản kích này trong trận Nông Trại – Chư Cúc, thực hiện thắng lợi trận then chốt thứ hai. Ở trận này lực lượng ta chỉ gần bằng đối phương, nhưng thế trận đã hình thành từ hai bước trước nên vẫn giành được thắng lợi, kéo được lực lượng còn lại ra ngoài công sự kiên cố để tiếp tục tiêu diệt.",
       "hien": [
-        "quan-dich-rut-chay",
-        "quan-ta-truy-kich-tn"
+        "sd-23-phan-kich",
+        "buon-ma-thuot"
+      ],
+      "nguon": [
+        "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Giải phóng 5 tỉnh Tây Nguyên",
-      "mo_ta": "Quân ta tiếp tục tiến công, giải phóng hoàn toàn 5 tỉnh Tây Nguyên và một phần duyên hải Nam Trung Bộ.",
+      "tieu_de": "Từ 15/3 — đối phương rút khỏi Kon Tum, Plây Cu theo đường số 7",
+      "thoi_gian": "Từ 15/3/1975",
+      "dia_danh": "Kon Tum · Plây Cu · Đường số 7",
+      "mo_ta": "Bị thất bại ở Buôn Ma Thuột và trước sức uy hiếp của quân ta, từ ngày 15/3 đối phương rút khỏi Kon Tum và Plây Cu theo đường số 7, hòng co cụm về vùng đồng bằng ven biển Khu 5. Đường số 7 là trục đường cũ, chật và nhiều đoạn hư hỏng, trong khi đội hình rút chạy kéo dài và mất tổ chức, nên cuộc lui quân nhanh chóng trở thành sơ hở lớn nhất của đối phương trong toàn chiến dịch.",
       "hien": [
-        "dia-danh-5-tinh",
-        "buon-ma-thuot"
+        "dich-rut-duong-7",
+        "kon-tum",
+        "pleiku"
+      ],
+      "nguon": [
+        "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Tạo bước ngoặt quyết định cho cục diện chiến tranh",
-      "mo_ta": "Chiến dịch loại khỏi vòng chiến hơn 28.000 địch, tạo bước ngoặt quyết định, mở đầu Tổng tiến công và nổi dậy mùa Xuân 1975.",
+      "tieu_de": "17 – 24/3 — trận then chốt thứ ba: truy kích trên đường số 7",
+      "thoi_gian": "17 – 24/3/1975",
+      "dia_danh": "Cheo Reo · Củng Sơn",
+      "mo_ta": "Không bỏ lỡ thời cơ, bộ đội ta kịp thời truy kích và tiêu diệt gần hết lực lượng rút chạy trên đường số 7, với trận Cheo Reo từ ngày 17 đến 19/3 và trận Củng Sơn ngày 24/3, giành thắng lợi ở trận then chốt thứ ba. Đây là trận mà lực lượng ta ít hơn đối phương, nhưng thế trận đã hơn hẳn nên vẫn đánh thắng — điểm được nêu như nét riêng của cách đánh chiến dịch này.",
       "hien": [
-        "co-thang-tn"
+        "truy-kich-d7",
+        "cheo-reo",
+        "cung-son",
+        "dich-rut-duong-7"
+      ],
+      "nguon": [
+        "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đến 3/4/1975 — phát triển xuống duyên hải, kết thúc chiến dịch",
+      "thoi_gian": "Sau 24/3 – 3/4/1975",
+      "dia_danh": "Phú Yên · Khánh Hoà",
+      "mo_ta": "Sau đó quân ta phát triển chiến đấu xuống vùng duyên hải Nam Trung Bộ, phối hợp với quân và dân địa phương lần lượt giải phóng Phú Yên, Khánh Hoà, kết thúc chiến dịch ngày 3/4/1975. Kết quả, Quân đoàn 2 – Quân khu 2 bị tiêu diệt và tan rã, hơn 28.000 quân bị loại khỏi vòng chiến đấu, ta thu và phá huỷ 154 máy bay cùng 1.096 xe quân sự, giải phóng năm tỉnh Kon Tum, Gia Lai, Đắk Lắk, Phú Bổn, Quảng Đức.",
+      "hien": [
+        "duyen-hai",
+        "co-ket-thuc",
+        "buon-ma-thuot"
+      ],
+      "nguon": [
+        "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
       ]
     }
   ],
-  "ket_qua": "Loại khỏi vòng chiến hơn 28.000 địch, giải phóng 5 tỉnh Tây Nguyên và một phần duyên hải Nam Trung Bộ, tạo bước ngoặt quyết định cho cục diện chiến tranh.",
-  "y_nghia": "Đòn mở đầu Tổng tiến công và nổi dậy mùa Xuân 1975, thể hiện nghệ thuật nghi binh và đột phá chiến lược chính xác.",
+  "ket_qua": "Tiêu diệt và làm tan rã Quân đoàn 2 – Quân khu 2 của quân đội Sài Gòn, loại khỏi vòng chiến đấu hơn 28.000 quân, thu và phá huỷ 154 máy bay cùng 1.096 xe quân sự; giải phóng năm tỉnh Kon Tum, Gia Lai, Đắk Lắk, Phú Bổn, Quảng Đức và một số tỉnh duyên hải Nam Trung Bộ (Báo Nhân Dân).",
+  "y_nghia": "Chiến dịch mở đầu cuộc Tổng tiến công và nổi dậy mùa Xuân 1975, làm thay đổi căn bản so sánh lực lượng và thế chiến lược trên toàn miền Nam. Cách đánh gồm ba trận then chốt nối nhau — đánh thị xã, đánh phản kích, đánh quân rút chạy — cùng đòn nghi binh của Sư đoàn 968 ở bắc Tây Nguyên là phần được các tài liệu quân sự phân tích nhiều nhất.",
   "trang_thai": "draft",
   "nguon": [
-    "Báo QĐND — Chiến dịch Tây Nguyên: Thắng lợi mở đầu cuộc Tổng tiến công và nổi dậy Xuân 1975",
+    "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html",
+    "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
     "Lịch sử Việt Nam (Viện Sử học)"
   ],
@@ -170,5 +399,42 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/quyettammochiendichtaynguyen/index.html",
       "buoc": 6
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Làm dày diễn biến theo bài của Đại tá, PGS, TS KHQS Trần Nam Chuân đăng Báo Nhân Dân ngày 07/04/2015 (bản chuyên đề special.nhandan.vn). Trường chi_huy trước ghi «Văn Tiến Dũng»; nguồn này ghi rõ Bộ Tư lệnh chiến dịch do Trung tướng Hoàng Minh Thảo làm Tư lệnh, Đại tá Đặng Vũ Hiệp làm Chính uỷ, nên đã sửa lại theo nguồn. Không tìm được số liệu chính thức về tổn thất phía ta trong chiến dịch nên khối ton_that chỉ khai phía đối thủ. loai_xung_dot=noi-chien: hai bên tham chiến đều là người Việt, quân Mỹ đã rút theo Hiệp định Paris 1973. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "4/3/1975 – 3/4/1975",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "14 tiểu đoàn bộ binh chủ lực của Bộ tăng cường, 10 tiểu đoàn chủ lực Quân khu 5 và Đông Nam Bộ, 28 tiểu đoàn bộ binh lực lượng vũ trang địa phương",
+      "don_vi": [
+        "Sư đoàn bộ binh 10",
+        "Sư đoàn bộ binh 320",
+        "Sư đoàn bộ binh 316",
+        "Sư đoàn bộ binh 3",
+        "Sư đoàn bộ binh 968",
+        "Trung đoàn Tăng – Thiết giáp 273",
+        "Trung đoàn pháo binh 40 và 675",
+        "Trung đoàn phòng không 232, 234, 593",
+        "Trung đoàn công binh 7 và 575",
+        "Trung đoàn thông tin 29",
+        "Tiểu đoàn đặc công 14 và 27"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Sư đoàn bộ binh 23, 7 tiểu đoàn biệt động quân, 36 tiểu đoàn bảo an, 4 thiết đoàn thuộc Quân đoàn 2 – Quân khu 2",
+      "vu_khi": [
+        "230 khẩu pháo",
+        "150 máy bay"
+      ]
+    },
+    "nguon": [
+      "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Hơn 28.000 quân bị loại khỏi vòng chiến đấu; 154 máy bay và 1.096 xe quân sự bị thu và phá huỷ",
+    "nguon": [
+      "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html"
+    ]
+  }
 }

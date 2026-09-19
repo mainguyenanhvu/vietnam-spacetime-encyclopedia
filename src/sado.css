@@ -853,10 +853,434 @@
   font-weight: 700;
 }
 
+/* ═══════════════════════════════════════════════════════════════════════
+   SA ĐỒ DÀY — LƯỢC ĐỒ MỞ RỘNG (2026-08-28)
+
+   Nền cũ: trung bình 4,9 bước · 6,2 phần tử · 1,3 địa hình mỗi trận. Trần
+   phải chịu được từ đây: 12 bước · 24 phần tử · 6 địa hình.
+
+   Bốn khối mới, mọi trường dữ liệu đều TÙY CHỌN nên 290 hồ sơ cũ không đổi:
+     · dòng thời gian bấm được (buoc[].thoi_gian + dia_danh);
+     · tương quan lực lượng và tổn thất hai cột;
+     · chú giải ký hiệu sinh từ chính các hàm vẽ;
+     · nhãn phụ quy_mo thành dòng hai của nhãn chính.
+   Không hex mới: mọi màu là token hoặc color-mix phái sinh token.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* Ở bề ngang điện thoại, khung 1000×600 co xuống ~340px nên nhãn 17–20 đơn vị
+   chỉ còn 6–7px trên màn hình — đọc được cỡ chữ, không đọc được sa đồ. Cho
+   RIÊNG khung vẽ cuộn ngang trong hộp của nó (dải bước vẫn xuống dòng bình
+   thường, không bị kéo theo), sàn 600px giữ nhãn quanh 10–12px. Trang không
+   cuộn ngang: hộp này tự nuốt phần thừa. */
+.sd-svg-cuon {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+@media (max-width: 620px) {
+  .sd-svg-cuon > .sd-svg-tq {
+    min-width: 600px;
+  }
+}
+
+/* Vạch nối nhãn về chỗ gốc, do veNenNhan() chèn khi phải đẩy nhãn quá một
+   dòng chữ. Nét chấm mảnh, màu trung tính — nó là chỉ dẫn, không phải một nét
+   địa hình, nên cố ý nhạt hơn mọi thứ khác trên khung. */
+.sd-nhan-noi {
+  stroke: var(--chu-mem);
+  stroke-width: 1.5;
+  stroke-dasharray: 2 4;
+  opacity: 0.7;
+}
+
+/* Nhãn phụ «Đại đoàn 312» — tspan dòng hai của chính nhãn chính, nên nó dùng
+   chung tấm nền và không bao giờ trôi khỏi thứ nó chú thích. */
+.sd-nhan-quy-mo {
+  fill: var(--chu-mem);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Sa đồ quá 14 phần tử: hạ cỡ chữ một nấc. Chữ 20px trên khung 1000×600 với
+   24 phần tử chiếm hết chỗ trống, thuật toán gỡ chồng hết ứng viên và đành
+   chọn chỗ ít đè nhất. 17px lấy lại đủ khoảng thở, vẫn to hơn ghi chú 16px ở
+   chân khung. Ngưỡng không mang ý nghĩa tương phản: nhãn nằm trên nền --mat
+   riêng, tỉ lệ 15,14:1 / 17,49:1 không đổi theo cỡ chữ. */
+.sd-svg-tq.sd-day .sd-nhan {
+  font-size: 17px;
+}
+.sd-svg-tq.sd-day .sd-nhan-quy-mo {
+  font-size: 14px;
+}
+.sd-svg-tq.sd-day .sd-nhan-phu {
+  font-size: 16px;
+}
+
+/* ── Dòng thời gian của diễn biến ─────────────────────────────────────────
+   Chỉ bật khi hồ sơ khai buoc[].thoi_gian / dia_danh. Không khai thì dải bước
+   vẫn là dải chấm tròn cũ, không một dòng CSS nào dưới đây chạm tới. */
+.sd-step-rail-moc {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  gap: 0;
+  padding-bottom: 6px;
+}
+.sd-step-moc {
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: var(--bo-nho);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 0 6px 4px;
+  max-width: 190px;
+  scroll-snap-align: center;
+  background: transparent;
+  border: none;
+}
+/* Base .sd-step-dot tô nền vàng đặc cho bước đã qua — đúng với chấm tròn, sai
+   với thẻ mốc: cả thẻ sẽ thành một mảng vàng. Ở chế độ mốc chỉ CHẤM SỐ đổi
+   màu, thẻ giữ nền trong suốt. */
+.sd-step-moc.sd-step-done,
+.sd-step-moc.sd-step-upcoming {
+  background: transparent;
+  color: var(--chu-mem);
+}
+/* Vạch nối giữa các mốc, ghép từ hai nửa của chính mỗi thẻ nên tự khít với
+   mọi bề rộng thẻ; hai đầu dải cắt nửa thừa. */
+.sd-step-moc::before,
+.sd-step-moc::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  height: 2px;
+  background: var(--vien-ro);
+}
+.sd-step-moc::before {
+  left: 0;
+  right: calc(50% + 15px);
+}
+.sd-step-moc::after {
+  left: calc(50% + 15px);
+  right: 0;
+}
+.sd-step-moc:first-child::before,
+.sd-step-moc:last-child::after {
+  display: none;
+}
+.sd-step-moc .sd-step-so {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--vien-ro);
+  background: var(--mat);
+  color: var(--chu-mem);
+  font-weight: 700;
+  font-size: var(--co-sm);
+  flex: 0 0 auto;
+}
+.sd-step-moc.sd-step-done .sd-step-so {
+  background: var(--nhan);
+  border-color: var(--nhan);
+  color: var(--mat);
+}
+.sd-step-moc.sd-step-current .sd-step-so {
+  border-color: var(--nhan);
+  border-width: 3px;
+  color: var(--nhan);
+  background: var(--mat);
+}
+/* Mốc đang xem SÁNG LÊN — nền + viền, không chỉ đổi màu chữ: trên một dải 12
+   mốc, đổi mỗi màu chữ thì không tìm ra mình đang ở đâu. */
+.sd-step-moc.sd-step-current {
+  background: var(--nhan-mo);
+  border-radius: var(--bo-nho);
+}
+.sd-moc-thoi,
+.sd-moc-dia {
+  display: block;
+  text-align: center;
+  line-height: 1.25;
+  max-width: 178px;
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+.sd-moc-thoi {
+  font-size: var(--co-xs);
+  color: var(--chu);
+  margin-top: 2px;
+}
+.sd-moc-dia {
+  font-size: var(--co-2xs);
+  color: var(--chu-mem);
+  font-weight: 400;
+}
+.sd-step-moc.sd-step-current .sd-moc-thoi {
+  font-weight: 700;
+}
+
+/* Mốc thời gian + địa danh của bước đang xem, ngay dưới tiêu đề bước. */
+.sd-buoc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+  margin: 0 0 0.35rem;
+  font-size: var(--co-sm);
+  color: var(--chu-mem);
+  font-weight: 600;
+}
+.sd-buoc-nguon {
+  margin-top: 0.4rem;
+}
+.sd-buoc-nguon > summary {
+  font-size: var(--co-xs);
+}
+
+/* ── Thẻ đoán trước bước cuối ──────────────────────────────────────────────
+   Nằm trong khối tường thuật, KHÔNG chặn nút «Bước sau». Ba lựa chọn đều là
+   tiêu đề bước có thật của chính trận đó. */
+.sd-doan {
+  margin: 0.6rem 0 0;
+  padding: 0.6rem 0.75rem;
+  border: 1px dashed var(--nhan);
+  border-radius: var(--bo-nho);
+  background: var(--nhan-mo);
+}
+.sd-doan-hoi {
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  font-size: var(--co-sm);
+}
+.sd-doan-ds {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+.sd-doan-nut {
+  width: 100%;
+  min-height: max(2.75rem, 44px);
+  text-align: left;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-nho);
+  background: var(--mat);
+  color: var(--chu);
+  padding: 0.45rem 0.7rem;
+  font-size: var(--co-sm);
+  line-height: 1.35;
+  cursor: pointer;
+}
+.sd-doan-nut:hover:not(:disabled) {
+  border-color: var(--brand-dam);
+}
+.sd-doan-nut:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+.sd-doan-dung {
+  border-color: var(--dung-vien);
+  background: var(--dung-nen);
+}
+.sd-doan-sai {
+  border-color: var(--sai-vien);
+  background: var(--sai-nen);
+}
+.sd-doan-loi {
+  margin: 0.45rem 0 0;
+  font-size: var(--co-sm);
+  line-height: 1.4;
+}
+
+/* ── Chú giải ký hiệu ─────────────────────────────────────────────────────
+   .sd-legend gốc là flex hàng ngang cho hai ô màu; bản ký hiệu là khối có
+   tiêu đề nên phải gỡ flex ra, không kế thừa. */
+.sd-legend-ky-hieu {
+  display: block;
+}
+.sd-lg-title {
+  font-size: var(--co-md);
+  margin: 0 0 0.4rem;
+}
+.sd-lg-ds {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.35rem 0.9rem;
+}
+.sd-lg-muc {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 34px;
+}
+.sd-lg-hinh {
+  flex: 0 0 46px;
+  width: 46px;
+  height: 32px;
+}
+.sd-lg-chu {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  min-width: 0;
+}
+.sd-lg-ben {
+  font-size: var(--co-xs);
+  overflow-wrap: anywhere;
+}
+
+/* ── Tương quan lực lượng · tổn thất ──────────────────────────────────────
+   Hai cột. Màu phe chỉ nằm ở VIỀN và ô vuông đầu tiêu đề, chữ giữ --chu —
+   cùng lý do đã ghi ở nhãn sa đồ: --nhan/--dung-chu trên --mat trượt ngưỡng
+   4,5:1 của WCAG 1.4.3 khi dùng làm màu chữ. */
+.sd-luc-luong,
+.sd-ton-that {
+  margin: 0.7rem 0;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-nho);
+  background: var(--mat-2);
+}
+.sd-ll-title,
+.sd-tt-title {
+  font-size: var(--co-md);
+  margin: 0 0 0.5rem;
+}
+.sd-ll-bang,
+.sd-tt-bang {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.6rem;
+}
+.sd-ll-cot,
+.sd-tt-cot {
+  border-left: 4px solid var(--vien-ro);
+  padding: 0.1rem 0 0.1rem 0.6rem;
+  min-width: 0;
+}
+.sd-ll-ta,
+.sd-tt-ta {
+  border-left-color: var(--sd-ta-chu);
+}
+.sd-ll-doi,
+.sd-tt-doi {
+  border-left-color: var(--sd-doi-chu);
+}
+.sd-ll-ten,
+.sd-tt-ten {
+  margin: 0 0 0.25rem;
+  font-size: var(--co-sm);
+  color: var(--chu);
+  overflow-wrap: anywhere;
+}
+.sd-ll-quan-so .sd-so-lieu,
+.sd-tt-cot .sd-so-lieu {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+  font-size: var(--co-md);
+}
+/* Nhiều con số vênh nhau: mỗi con số một dòng, nguồn của NÓ nằm ngay dưới —
+   bất biến #4, không quy hai nguồn về một con số. */
+.sd-so-lieu-ds {
+  list-style: none;
+  margin: 0 0 0.3rem;
+  padding: 0;
+  display: grid;
+  gap: 0.3rem;
+}
+.sd-so-lieu-ds > li {
+  border-left: 2px dotted var(--vien-ro);
+  padding-left: 0.5rem;
+}
+.sd-so {
+  display: block;
+  font-weight: 700;
+  font-size: var(--co-sm);
+}
+/* Ô số liệu dài hơn 60 ký tự là một đoạn giải thích chỗ vênh, không phải con
+   số — trả về cỡ chữ và độ đậm của văn bản thường. */
+.sd-so-dai,
+.sd-ll-quan-so .sd-so-lieu.sd-so-dai,
+.sd-tt-cot .sd-so-lieu.sd-so-dai {
+  font-weight: 400;
+  font-size: var(--co-sm);
+  line-height: 1.5;
+}
+.sd-so-nguon {
+  display: block;
+  font-size: var(--co-xs);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+.sd-ll-dl {
+  margin: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+.sd-ll-muc > dt {
+  font-size: var(--co-xs);
+  font-weight: 700;
+  color: var(--chu-mem);
+  margin: 0;
+}
+.sd-ll-muc > dd {
+  margin: 0;
+}
+.sd-ll-muc ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: var(--co-sm);
+  line-height: 1.4;
+}
+.sd-tt-venh {
+  margin: 0.45rem 0 0;
+  font-size: var(--co-xs);
+  line-height: 1.4;
+}
+.sd-ll-nguon,
+.sd-tt-nguon {
+  margin-top: 0.5rem;
+}
+.sd-ll-nguon > summary,
+.sd-tt-nguon > summary {
+  font-size: var(--co-xs);
+}
+
+/* 390px: dải mốc vẫn cuộn ngang được, hai cột xếp chồng (auto-fit minmax lo),
+   mốc hẹp lại để một mốc không chiếm trọn bề ngang. */
+@media (max-width: 430px) {
+  .sd-step-moc {
+    max-width: 148px;
+  }
+  .sd-moc-thoi,
+  .sd-moc-dia {
+    max-width: 136px;
+  }
+  .sd-lg-ds {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Người dùng tắt hiệu ứng chuyển động: dòng chảy dừng hẳn (killswitch toàn
    cục của theme.css ép animation-duration 0.01ms, nhưng khai thẳng ở đây cho
    chắc), và phần tử hiện ngay không bung. */
 @media (prefers-reduced-motion: reduce) {
+  /* Cuộn dải mốc: applyStep đã truyền behavior "auto" khi bật giảm chuyển
+     động, khai thêm ở đây phòng ca CSS scroll-behavior kế thừa từ nơi khác. */
+  .sd-step-rail-moc {
+    scroll-behavior: auto;
+  }
   .sd-song-dong {
     animation: none;
   }

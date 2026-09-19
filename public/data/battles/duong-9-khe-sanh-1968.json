@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Đường 9 – Khe Sanh 1968 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Đường 9 – Khe Sanh 1968 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "duong-9-khe-sanh-1968",
   "ten": "Chiến dịch Đường 9 – Khe Sanh 1968",
   "nam": 1968,
@@ -13,143 +13,365 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "duong",
+      "diem": [
+        [
+          80,
+          470
+        ],
+        [
+          300,
+          450
+        ],
+        [
+          520,
+          430
+        ],
+        [
+          740,
+          415
+        ],
+        [
+          950,
+          400
+        ]
+      ],
+      "nhan": "Đường số 9 (Cửa Việt – Đông Hà – Cam Lộ – Lao Bảo)"
+    },
+    {
       "kieu": "nui",
       "diem": [
         [
-          100,
-          80
+          330,
+          240
         ],
         [
           500,
-          40
+          225
         ],
         [
-          900,
-          100
+          680,
+          245
         ]
       ],
-      "nhan": "Vùng núi Hướng Hóa"
+      "nhan": "Thung lũng Khe Sanh — cao nguyên mỗi bề gần mười km"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          120,
+          180
+        ],
+        [
+          350,
+          145
+        ],
+        [
+          600,
+          140
+        ],
+        [
+          850,
+          165
+        ]
+      ],
+      "nhan": "Phòng tuyến McNamara (hàng rào điện tử)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          150,
+          545
+        ],
+        [
+          330,
+          528
+        ],
+        [
+          500,
+          520
+        ]
+      ],
+      "nhan": "Đoạn đường 9 từ Ku Bốc đến Rào Quán bị đánh cắt"
     }
   ],
   "phan_tu": [
     {
-      "id": "cu-diem-khe-sanh",
+      "id": "ta-con",
       "kieu": "cong-su",
       "ben": "dich",
       "x": 500,
-      "y": 300,
-      "nhan": "Cụm cứ điểm Tà Cơn – Khe Sanh"
+      "y": 280,
+      "nhan": "Cụm cứ điểm Tà Cơn — trung tâm thung lũng Khe Sanh"
     },
     {
-      "id": "quan-ta-vay-ham-ks",
+      "id": "san-bay-ta-con",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 680,
+      "y": 210,
+      "nhan": "Sân bay Tà Cơn — nơi tiếp nhận hậu cần bằng đường không"
+    },
+    {
+      "id": "huong-hoa",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 250,
+      "y": 170,
+      "nhan": "Quận lỵ Hướng Hoá — đêm 20/1/1968"
+    },
+    {
+      "id": "huoi-san",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 180,
+      "y": 300,
+      "nhan": "Huội San"
+    },
+    {
+      "id": "lang-vay",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 250,
+      "y": 430,
+      "nhan": "Cứ điểm Làng Vây"
+    },
+    {
+      "id": "cam-lo",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 850,
+      "y": 430,
+      "nhan": "Chi khu Cam Lộ"
+    },
+    {
+      "id": "sd-325",
       "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 380,
-      "nhan": "Quân ta vây hãm"
+      "x": 430,
+      "y": 90,
+      "nhan": "Bao vây hướng Bắc và Tây Bắc Tà Cơn",
+      "quy_mo": "Sư đoàn 325"
     },
     {
-      "id": "mui-cat-tiep-te",
+      "id": "sd-304",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 430,
+      "y": 470,
+      "nhan": "Bao vây hướng Nam Tà Cơn",
+      "quy_mo": "Sư đoàn 304"
+    },
+    {
+      "id": "e9-vay-lan",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
         380,
-        360
+        380
       ],
       "den": [
-        460,
-        320
+        470,
+        310
       ],
-      "nhan": "Cắt đường tiếp tế"
+      "nhan": "Trung đoàn 9 luân phiên vây lấn vào sát hàng rào"
     },
     {
-      "id": "may-bay-tiep-te-my",
+      "id": "e24-e66",
       "kieu": "quan",
-      "ben": "dich",
+      "ben": "ta",
       "x": 650,
-      "y": 180,
-      "nhan": "Mỹ tiếp tế bằng đường không"
+      "y": 490,
+      "nhan": "Sẵn sàng đánh địch ứng cứu ở phía Nam và Tây Nam",
+      "quy_mo": "Trung đoàn 24 · Trung đoàn 66"
     },
     {
-      "id": "quan-dich-tang-vien",
+      "id": "ky-binh-khong-van",
       "kieu": "quan",
       "ben": "dich",
-      "x": 700,
-      "y": 280,
-      "nhan": "Mỹ tăng viện, phản công"
+      "x": 830,
+      "y": 100,
+      "nhan": "Ứng cứu, giải toả bằng đổ bộ đường không",
+      "quy_mo": "Sư đoàn Kỵ binh không vận số 1"
     },
     {
-      "id": "co-thang-ks",
+      "id": "do-bo-duong-khong",
+      "kieu": "dia-danh",
+      "x": 830,
+      "y": 300,
+      "nhan": "Tà Ri · Tà Quan · Pa Trang · Húc Cốt"
+    },
+    {
+      "id": "sd-308",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 600,
+      "y": 370,
+      "nhan": "Lực lượng cơ động chiến dịch, tiến công quân đổ bộ đường không",
+      "quy_mo": "Sư đoàn 308"
+    },
+    {
+      "id": "cat-duong-9",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        120,
+        540
+      ],
+      "den": [
+        330,
+        520
+      ],
+      "nhan": "Đánh cắt giao thông đoạn Ku Bốc – Rào Quán"
+    },
+    {
+      "id": "rut-bo-khe-sanh",
       "kieu": "co",
       "ben": "ta",
-      "x": 400,
-      "y": 450,
-      "nhan": "Giải phóng Hướng Hóa"
+      "x": 900,
+      "y": 560,
+      "nhan": "Tháng 6/1968 — Mỹ rút bỏ Khe Sanh sau 177 ngày đêm"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Mở màn vây hãm Khe Sanh (20/1/1968)",
-      "mo_ta": "Đêm 20/1/1968, quân ta mở chiến dịch vây hãm cụm cứ điểm Tà Cơn – Khe Sanh.",
+      "tieu_de": "Khe Sanh trong thế phòng thủ của Mỹ trên đường 9",
+      "thoi_gian": "Cuối 1967 – đầu 1968",
+      "dia_danh": "Cửa Việt – Đông Hà – Cam Lộ – Lao Bảo",
+      "mo_ta": "Khe Sanh nằm ở miền núi phía tây tỉnh Quảng Trị, trên một cao nguyên mỗi bề gần mười km, là khu vực phía tây phòng tuyến McNamara. Với phía Mỹ, đây là căn cứ tuần tra ngăn chặn thâm nhập từ Lào theo trục đường 9, bàn đạp đánh phá căn cứ của ta trên đất Lào, sân bay phục vụ trinh sát đường không tuyến vận tải Trường Sơn và cái mỏ neo phía tây cho toàn bộ hệ thống phòng thủ phía nam khu phi quân sự. Trên đường 9 từ Cửa Việt đến Lao Bảo, Bộ chỉ huy quân sự Mỹ tập trung 45 nghìn quân, trong đó 28 nghìn quân Mỹ; riêng căn cứ Khe Sanh có hơn 6.000 quân Mỹ đồn trú.",
       "hien": [
-        "cu-diem-khe-sanh"
+        "ta-con",
+        "san-bay-ta-con",
+        "cam-lo"
+      ],
+      "nguon": [
+        "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nghi binh chiến lược, giam chân quân Mỹ",
-      "mo_ta": "Mục tiêu chiến dịch là thu hút, giam chân lực lượng cơ động Mỹ, phối hợp cho Tổng tiến công Mậu Thân.",
+      "tieu_de": "Ý định của ta — đòn nghi binh chiến lược cho Tết Mậu Thân",
+      "thoi_gian": "Giữa 1966 – tháng 1/1968",
+      "dia_danh": "Mặt trận Đường 9 – bắc Quảng Trị",
+      "mo_ta": "Từ giữa năm 1966, Bộ Chính trị và Quân uỷ Trung ương đã quyết định thành lập Quân khu Trị Thiên, mở mặt trận Đường 9 – bắc Quảng Trị để thu hút và ghìm chân một bộ phận binh lực đối phương. Trong kế hoạch Tổng tiến công và nổi dậy Xuân Mậu Thân 1968, khu vực Đường 9 – Khe Sanh được xác định là hướng tiến công và đòn chính của bộ đội chủ lực nhằm nghi binh, lừa địch, kéo ra và ghìm chặt lực lượng cơ động chiến lược của quân Mỹ. Ta tập trung vào chiến dịch bốn sư đoàn bộ binh, một đoàn và năm đại đội đặc công, năm trung đoàn pháo binh, ba trung đoàn cao xạ, một trung đoàn và hai tiểu đoàn công binh, bốn đại đội xe tăng cùng một đội súng phun lửa. Đây là lần đầu ta tổ chức một chiến dịch tập trung quy mô lớn trên chiến trường miền Nam.",
       "hien": [
-        "cu-diem-khe-sanh",
-        "quan-ta-vay-ham-ks"
+        "sd-325",
+        "sd-304",
+        "sd-308"
+      ],
+      "nguon": [
+        "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Vây ép, cắt tiếp tế cứ điểm",
-      "mo_ta": "Quân ta siết chặt vòng vây, cắt đường tiếp tế đường bộ, buộc Mỹ phải tiếp tế hoàn toàn bằng đường không.",
+      "tieu_de": "Đêm 20/1/1968 — nổ súng ở Hướng Hoá, tạo bàn đạp bao vây Tà Cơn",
+      "thoi_gian": "Từ đêm 20/1/1968",
+      "dia_danh": "Hướng Hoá · Huội San · Làng Vây · Chi khu Cam Lộ",
+      "mo_ta": "Đêm 20/1/1968, quân ta nổ súng tiến công quận lỵ Hướng Hoá. Những ngày tiếp sau, ta tiến công Huội San, Chi khu Cam Lộ, đánh chiếm cứ điểm Làng Vây bằng sức mạnh hiệp đồng binh chủng, dồn ép lực lượng đối phương về khu vực Tà Cơn và chặn đánh quyết liệt các lực lượng ứng cứu. Cùng lúc, ta dùng hoả lực pháo binh khống chế sân bay Tà Cơn và đẩy mạnh đánh cắt giao thông dọc đường số 9 đoạn từ Ku Bốc đến Rào Quán, cô lập hoàn toàn Tà Cơn về đường bộ.",
       "hien": [
-        "cu-diem-khe-sanh",
-        "quan-ta-vay-ham-ks",
-        "mui-cat-tiep-te"
+        "huong-hoa",
+        "huoi-san",
+        "lang-vay",
+        "cam-lo",
+        "cat-duong-9",
+        "san-bay-ta-con"
+      ],
+      "nguon": [
+        "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html",
+        "Chiến dịch Đường 9 – Khe Sanh năm 1968 – nét đặc sắc của nghệ thuật bao vây, chia cắt — Tạp chí Quốc phòng toàn dân — https://tapchiqptd.vn/vi/lich-su-quan-su-viet-nam/chien-dich-duong-9-khe-sanh-nam-1968-net-dac-sac-cua-nghe-thuat-bao-vay-chia-cat/20539.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Mỹ tăng viện, tổ chức phản công",
-      "mo_ta": "Mỹ tăng cường lực lượng, dùng hỏa lực không quân, pháo binh mạnh mẽ hòng giải vây.",
+      "tieu_de": "Bao vây Tà Cơn — từ vây hãm chuyển sang vây lấn",
+      "thoi_gian": "Đợt 2 của chiến dịch",
+      "dia_danh": "Bắc, Tây Bắc và Nam Tà Cơn",
+      "mo_ta": "Ta sử dụng Sư đoàn 325 bao vây ở hướng Bắc và Tây Bắc, Sư đoàn 304 bao vây ở hướng Nam Tà Cơn. Nét riêng là ta không tạo thế trận đối xứng, cũng không tập trung lực lượng lớn để bao vây: các sư đoàn chỉ dùng lực lượng cấp tiểu đoàn, đại đội, chia nhỏ đội hình kết hợp hoả lực, tạo thế cài răng lược, rồi chuyển từ vây hãm sang vây lấn vào sát hàng rào, có nơi xuyên qua hàng rào, sát tiền duyên phòng ngự. Sư đoàn 304 dùng Trung đoàn 9 tổ chức các tiểu đoàn luân phiên vào vây lấn; Trung đoàn 24 và Trung đoàn 66 sẵn sàng đánh địch ứng cứu ở phía Nam và Tây Nam.",
       "hien": [
-        "cu-diem-khe-sanh",
-        "may-bay-tiep-te-my",
-        "quan-dich-tang-vien"
+        "sd-325",
+        "sd-304",
+        "e9-vay-lan",
+        "ta-con",
+        "e24-e66"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Khe Sanh năm 1968 – nét đặc sắc của nghệ thuật bao vây, chia cắt — Tạp chí Quốc phòng toàn dân — https://tapchiqptd.vn/vi/lich-su-quan-su-viet-nam/chien-dich-duong-9-khe-sanh-nam-1968-net-dac-sac-cua-nghe-thuat-bao-vay-chia-cat/20539.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Vây hãm hơn 170 ngày đêm",
-      "mo_ta": "Chiến dịch kéo dài hơn 170 ngày đêm, quân ta loại khỏi vòng chiến gần 12.000 địch.",
+      "tieu_de": "Khe Sanh thu hút tâm trí và binh lực của phía Mỹ",
+      "thoi_gian": "Cuối tháng 1 – tháng 3/1968",
+      "dia_danh": "Vùng 1 chiến thuật",
+      "mo_ta": "Chiến dịch vừa nổ ra đã thu hút tâm trí giới lãnh đạo Washington. Tổng thống Johnson chỉ thị lập phòng «tình hình đặc biệt» tại Nhà Trắng và đích thân theo dõi diễn biến Khe Sanh từng giờ, lệnh cho tham mưu trưởng liên quân cam kết giữ vững Khe Sanh bằng mọi giá và yêu cầu Westmoreland báo cáo chi tiết hằng ngày. Westmoreland thành lập Sở chỉ huy tiền phương của bộ chỉ huy quân sự Mỹ tại vùng 1 chiến thuật; đến cuối tháng 1/1968, lực lượng ở mặt trận phía bắc lên tới 40% số tiểu đoàn bộ binh và thiết giáp mà Bộ chỉ huy quân sự Mỹ có trong tay. Trong khi đó, cuộc tổng tiến công và nổi dậy nổ ra ở các đô thị trên toàn miền Nam.",
       "hien": [
-        "quan-ta-vay-ham-ks",
-        "cu-diem-khe-sanh"
+        "ta-con",
+        "ky-binh-khong-van"
+      ],
+      "nguon": [
+        "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Giải phóng Hướng Hóa, đập tan 'Điện Biên Phủ đảo ngược'",
-      "mo_ta": "Quân ta giải phóng huyện Hướng Hóa, đập tan mưu đồ dựng 'Điện Biên Phủ đảo ngược' của Mỹ.",
+      "tieu_de": "Đánh quân ứng cứu, giải toả — «vây điểm, diệt viện»",
+      "thoi_gian": "Đợt 2 và đợt 3 của chiến dịch",
+      "dia_danh": "Tà Ri · Tà Quan · Pa Trang · Húc Cốt",
+      "mo_ta": "Bị bao vây chặt, lực lượng ở Tà Cơn tổ chức bốn lần phản kích nhưng đều bị đánh bại; phía Mỹ liên tục tổ chức ứng cứu, giải toả bằng đường bộ và đổ bộ đường không quanh Tà Cơn, thậm chí phải dùng cả Sư đoàn Kỵ binh không vận số 1. Khi lực lượng bên trong cứ điểm nống lấn ra phía Tây Tà Cơn để nới lỏng vòng vây, Trung đoàn 66 bất ngờ tập kích vào đội hình, diệt gọn một đại đội lính thuỷ đánh bộ. Sư đoàn 308 — lực lượng cơ động của chiến dịch — phối hợp với pháo binh và lực lượng vũ trang địa phương tiến công tiêu diệt quân đổ bộ đường không ở Tà Ri, Tà Quan, Pa Trang, Húc Cốt.",
       "hien": [
-        "co-thang-ks"
+        "ky-binh-khong-van",
+        "do-bo-duong-khong",
+        "sd-308",
+        "e24-e66",
+        "ta-con"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Khe Sanh năm 1968 – nét đặc sắc của nghệ thuật bao vây, chia cắt — Tạp chí Quốc phòng toàn dân — https://tapchiqptd.vn/vi/lich-su-quan-su-viet-nam/chien-dich-duong-9-khe-sanh-nam-1968-net-dac-sac-cua-nghe-thuat-bao-vay-chia-cat/20539.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Hoả lực Mỹ dội xuống Khe Sanh, 20/1 – 31/3/1968",
+      "thoi_gian": "20/1 – 31/3/1968",
+      "dia_danh": "Khu vực Khe Sanh",
+      "mo_ta": "Chỉ tính riêng từ ngày 20/1 đến ngày 31/3/1968, phía Mỹ đã sử dụng 24.000 lần chiếc máy bay chiến thuật và 2.700 lần chiếc «pháo đài bay B-52», dội xuống khu vực Khe Sanh 100.000 tấn bom; các trận địa pháo bắn tới 150.000 quả đạn. Không quân và pháo binh được huy động tối đa để chi viện hoả lực cho quân đồn trú và quân giải cứu. Bộ đội ta vẫn kiên trì trụ bám trận địa, đẩy lùi các đợt phản kích, chặn đánh lực lượng ứng cứu và siết chặt vòng vây quanh căn cứ Tà Cơn.",
+      "hien": [
+        "ta-con",
+        "san-bay-ta-con",
+        "e9-vay-lan"
+      ],
+      "nguon": [
+        "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Tháng 6/1968 — Mỹ rút bỏ Khe Sanh",
+      "thoi_gian": "Tháng 6/1968",
+      "dia_danh": "Khe Sanh · Đường số 9",
+      "mo_ta": "Trước tình hình đó, tháng 6/1968, Bộ chỉ huy quân sự Mỹ buộc phải rút bỏ Khe Sanh nhằm bảo toàn lực lượng còn lại, sau 177 ngày đêm bị vây hãm và tiến công, và sau khi đã hao tổn 17.000 quân cùng hàng trăm máy bay. Tuyến phòng thủ Đường 9 bị đập vỡ một khâu trọng yếu. Bình luận của Đài BBC ngày 30/6/1968 cho rằng việc rút lui khỏi Khe Sanh không đơn giản chỉ là bỏ rơi một yếu điểm, mà còn là rời bỏ một ảo tưởng và một chính sách.",
+      "hien": [
+        "rut-bo-khe-sanh",
+        "ta-con",
+        "cam-lo"
+      ],
+      "nguon": [
+        "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html"
       ]
     }
   ],
-  "ket_qua": "Loại khỏi vòng chiến gần 12.000 địch sau hơn 170 ngày đêm, giải phóng huyện Hướng Hóa, đập tan mưu đồ dựng 'Điện Biên Phủ đảo ngược' của Mỹ.",
-  "y_nghia": "Đòn nghi binh chiến lược quy mô lớn, giam chân lực lượng cơ động Mỹ, phối hợp trực tiếp cho thắng lợi của Tổng tiến công Xuân Mậu Thân 1968.",
+  "ket_qua": "Tháng 6/1968, Bộ chỉ huy quân sự Mỹ rút bỏ Khe Sanh sau 177 ngày đêm bị vây hãm, tiến công, đã hao tổn 17.000 quân cùng hàng trăm máy bay; tuyến phòng thủ Đường 9 bị đập vỡ một khâu trọng yếu (Báo Nhân Dân).",
+  "y_nghia": "Chiến dịch thực hiện đòn nghi binh chiến lược cho cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân 1968, thu hút và ghìm chân lực lượng cơ động chiến lược của quân Mỹ về hướng đường số 9. Về nghệ thuật quân sự, đây là mẫu «vây điểm, diệt viện»: chọn Tà Cơn làm điểm bao vây, chia nhỏ đội hình vây lấn để hạn chế ưu thế hoả lực, còn lực lượng chủ yếu bố trí bên ngoài để đánh quân ứng cứu ngoài công sự.",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html",
+    "Chiến dịch Đường 9 – Khe Sanh năm 1968 – nét đặc sắc của nghệ thuật bao vây, chia cắt — Tạp chí Quốc phòng toàn dân — https://tapchiqptd.vn/vi/lich-su-quan-su-viet-nam/chien-dich-duong-9-khe-sanh-nam-1968-net-dac-sac-cua-nghe-thuat-bao-vay-chia-cat/20539.html",
     "Báo QĐND — Chiến dịch Đường 9 - Khe Sanh: Đòn nghi binh chiến lược",
-    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
-    "Lịch sử Việt Nam (Viện Sử học)"
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
     {
@@ -158,5 +380,34 @@
       "nguon_trich": "Báo Nhân Dân (special.nhandan.vn) — Chiến thắng Đường 9-Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html",
       "buoc": 6
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến theo bài chuyên đề của Báo Nhân Dân; phần nghệ thuật bao vây, chia cắt theo Tạp chí Quốc phòng toàn dân. loai_xung_dot=ngoai-xam (khai tường minh): đối thủ trong chiến dịch này là quân đội Mỹ đồn trú ở Tà Cơn và các đơn vị Mỹ ứng cứu, không phải hai bên người Việt. Nguồn ghi Mỹ rút bỏ Khe Sanh «tháng 6/1968» sau «177 ngày đêm bị vây hãm» — không tự quy ra một ngày cụ thể. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "ngoai-xam",
+  "thoi_gian": "20/1/1968 – tháng 6/1968 (177 ngày đêm vây hãm)",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "4 sư đoàn bộ binh, 1 đoàn và 5 đại đội đặc công, 5 trung đoàn pháo binh, 3 trung đoàn cao xạ, 1 trung đoàn và 2 tiểu đoàn công binh, 4 đại đội xe tăng, 1 đội súng phun lửa",
+      "don_vi": [
+        "Sư đoàn 325 — bao vây hướng Bắc và Tây Bắc Tà Cơn",
+        "Sư đoàn 304 — bao vây hướng Nam Tà Cơn (Trung đoàn 9 vây lấn; Trung đoàn 24, 66 đánh quân ứng cứu)",
+        "Sư đoàn 308 — lực lượng cơ động chiến dịch"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "45 nghìn quân trên đường 9 từ Cửa Việt đến Lao Bảo, trong đó 28 nghìn quân Mỹ; riêng căn cứ Khe Sanh có hơn 6.000 quân Mỹ đồn trú vào cuối 1967 đầu 1968",
+      "don_vi": [
+        "Sư đoàn Kỵ binh không vận số 1",
+        "Sư đoàn thuỷ quân lục chiến số 3"
+      ]
+    },
+    "nguon": [
+      "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "17.000 quân hao tổn cùng hàng trăm máy bay trong 177 ngày đêm bị vây hãm và tiến công",
+    "nguon": [
+      "Chiến thắng Đường 9 – Khe Sanh: Trận đánh góp phần làm nên chiến công bất tử Tết Mậu Thân 1968 — Báo Nhân Dân — https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html"
+    ]
+  }
 }

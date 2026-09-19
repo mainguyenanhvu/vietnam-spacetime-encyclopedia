@@ -1,9 +1,11 @@
 {
-  "ghi_chu": "Sa đồ Đinh Bộ Lĩnh dẹp loạn 12 sứ quân 966–968 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Đinh Bộ Lĩnh dẹp loạn 12 sứ quân 966–968 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Đây là xung đột trong nước nên loai_xung_dot=noi-chien, sa đồ không dùng cặp màu đúng/sai. trang_thai=draft chờ soát §9.",
   "id": "dinh-bo-linh-966",
   "ten": "Đinh Bộ Lĩnh dẹp loạn 12 sứ quân 966–968",
   "nam": 966,
+  "thoi_gian": "Từ sau năm 965 đến năm Mậu Thìn (968)",
   "sa_do_kieu": "tong-quat",
+  "loai_xung_dot": "noi-chien",
   "chi_huy": "Đinh Bộ Lĩnh",
   "doi_thu": "12 sứ quân cát cứ",
   "dia_diem": "Căn cứ Hoa Lư, Gia Viễn, Ninh Bình",
@@ -11,125 +13,375 @@
     "ninh-binh"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "Sau khi lên ngôi, Đinh Tiên Hoàng chia binh lính ra đạo, quân, lữ, tốt, ngũ: mỗi đạo 10 quân, 1 quân 10 lữ, 1 lữ 10 tốt, 1 tốt 10 ngũ, 1 ngũ 10 người. Đây là biên chế danh nghĩa, không phải quân số thực đếm được",
+          "nguon": "Mộc bản triều Nguyễn — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
+        },
+        {
+          "so": "Tính theo đúng phép nhân của biên chế ấy thì một đạo là 100.000 người và nhà Đinh có 10 đạo, tức 1.000.000 người — con số suy ra từ biên chế, cần đọc như vậy",
+          "nguon": "Mộc bản triều Nguyễn — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
+        }
+      ],
+      "don_vi": [
+        "Lực lượng do Đinh Bộ Lĩnh gây dựng ở động Hoa Lư, châu Đại Hoàng",
+        "Binh quyền của sứ quân Trần Lãm ở Bố Hải Khẩu, giao lại cho Đinh Bộ Lĩnh",
+        "Dân làng và hào kiệt các nơi theo về"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Ngô Nhật Khánh chiếm Đường Lâm; Ngô Xương Xí chiếm Bình Kiều — đều là con cháu Ngô Vương",
+        "Đỗ Cảnh Thạc chiếm vùng Đỗ Đông Giang, có cung thành chắc chắn và hào sâu bao quanh",
+        "Nguyễn Siêu chiếm Tây Phù Liệt",
+        "Kiều Công Hãn, Kiều Thuận, Nguyễn Thủ Tiệp, Phạm Bạch Hổ và các sứ quân khác"
+      ]
+    },
+    "nguon": [
+      "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          80
-        ],
-        [
-          500,
-          40
-        ],
-        [
-          900,
-          90
-        ]
+        [118, 252],
+        [210, 224],
+        [302, 252]
       ],
-      "nhan": "Vùng núi đá Hoa Lư"
+      "nhan": "Núi non động Hoa Lư"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [108, 362],
+        [282, 346],
+        [452, 362]
+      ],
+      "nhan": "Sông Hoàng Long"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [420, 138],
+        [582, 200],
+        [742, 270],
+        [882, 332]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [246, 328],
+        [402, 292],
+        [562, 250],
+        [700, 212]
+      ],
+      "nhan": "Hướng tiến quân dẹp loạn"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 298],
+        [902, 340],
+        [922, 590],
+        [1000, 592]
+      ],
+      "nhan": "Biển"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-cac-su-quan",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 700,
-      "y": 200,
-      "nhan": "Các sứ quân cát cứ"
-    },
-    {
-      "id": "can-cu-hoa-lu",
-      "kieu": "cong-su",
+      "id": "hoa-lu",
+      "kieu": "thanh",
       "ben": "ta",
-      "x": 350,
-      "y": 350,
-      "nhan": "Căn cứ Hoa Lư"
+      "x": 196,
+      "y": 352,
+      "nhan": "Động Hoa Lư",
+      "quy_mo": "Căn cứ ban đầu, sau thành kinh đô Đại Cồ Việt"
     },
     {
-      "id": "quan-ta-dinh-bo-linh",
+      "id": "dinh-bo-linh",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 400,
-      "nhan": "Đinh Bộ Lĩnh xây dựng lực lượng"
+      "x": 306,
+      "y": 424,
+      "nhan": "Đinh Bộ Lĩnh",
+      "quy_mo": "Được tôn là Vạn Thắng Vương"
     },
     {
-      "id": "mui-danh-dep",
+      "id": "bo-hai-khau",
+      "kieu": "dia-danh",
+      "x": 626,
+      "y": 402,
+      "nhan": "Bố Hải Khẩu"
+    },
+    {
+      "id": "tran-lam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 716,
+      "y": 462,
+      "nhan": "Trần Lãm (Trần Minh Công)",
+      "quy_mo": "Trao binh quyền cho Đinh Bộ Lĩnh"
+    },
+    {
+      "id": "mui-ve-hoa-lu",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        400,
-        380
-      ],
-      "den": [
-        650,
-        250
-      ],
-      "nhan": "Vừa đánh vừa liên kết"
+      "tu": [656, 420],
+      "den": [268, 378],
+      "nhan": "Đem quân về giữ Hoa Lư"
     },
     {
-      "id": "co-dep-yen",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 600,
-      "y": 180,
-      "nhan": "Dẹp yên 12 sứ quân"
+      "id": "ngo-nhat-khanh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 206,
+      "y": 148,
+      "nhan": "Ngô Nhật Khánh — Đường Lâm"
     },
     {
-      "id": "co-vua-966",
+      "id": "mui-dung-muu",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [276, 392],
+      "den": [224, 186],
+      "nhan": "Dùng mưu hàng phục"
+    },
+    {
+      "id": "ngo-xuong-xi",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 152,
+      "y": 524,
+      "nhan": "Ngô Xương Xí — Bình Kiều"
+    },
+    {
+      "id": "do-canh-thac",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 428,
+      "y": 178,
+      "nhan": "Đỗ Cảnh Thạc — Đỗ Đông Giang",
+      "quy_mo": "Cung thành chắc chắn, hào sâu bao quanh"
+    },
+    {
+      "id": "mui-vay-bon-mat",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [372, 300],
+      "den": [424, 216],
+      "nhan": "Vây bốn mặt, đánh bất ngờ ban đêm"
+    },
+    {
+      "id": "nguyen-sieu",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 654,
+      "y": 152,
+      "nhan": "Nguyễn Siêu — Tây Phù Liệt"
+    },
+    {
+      "id": "mui-dot-doanh-trai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [556, 232],
+      "den": [640, 186],
+      "nhan": "Nửa đêm phóng lửa đốt doanh trại"
+    },
+    {
+      "id": "cac-su-quan-khac",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 832,
+      "y": 196,
+      "nhan": "Kiều Công Hãn · Kiều Thuận · Nguyễn Thủ Tiệp · Phạm Bạch Hổ"
+    },
+    {
+      "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 350,
-      "y": 280,
-      "nhan": "Lên ngôi, lập Đại Cồ Việt"
+      "x": 372,
+      "y": 486,
+      "nhan": "Đất nước thống nhất"
+    },
+    {
+      "id": "trieu-nghi",
+      "kieu": "cong-su",
+      "x": 126,
+      "y": 432,
+      "nhan": "Xây cung điện, chế triều nghi"
+    },
+    {
+      "id": "vac-dau-ho-bao",
+      "kieu": "cong-su",
+      "x": 486,
+      "y": 512,
+      "nhan": "Vạc dầu, chuồng hổ trước điện"
+    },
+    {
+      "id": "quan-doi-muoi-dao",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 664,
+      "y": 546,
+      "nhan": "Quân đội chia đạo, quân, lữ, tốt, ngũ",
+      "quy_mo": "10 đạo"
+    },
+    {
+      "id": "su-sang-tong",
+      "kieu": "dia-danh",
+      "x": 862,
+      "y": 468,
+      "nhan": "Sai sứ sang Tống, năm 972"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Loạn 12 sứ quân",
-      "mo_ta": "Giữa thế kỷ 10, đất nước rơi vào cảnh 'Thập nhị sứ quân' cát cứ, không ai chịu thần phục ai.",
+      "tieu_de": "Ngô Quyền mất — uy tín nhà Ngô giảm sút",
+      "thoi_gian": "Năm 944 – năm 950",
+      "dia_danh": "Cổ Loa",
+      "mo_ta": "Năm 944, Ngô Quyền mất. Các phe phái nổi lên khắp nơi, đất nước lâm vào tình trạng không ổn định. Năm 950, Ngô Xương Văn được sự ủng hộ của các tướng lĩnh đã lật đổ Dương Tam Kha, giành lại ngôi vua và mời anh về cùng nhau trông coi việc nước. Song do mâu thuẫn nội bộ, uy tín nhà Ngô giảm sút, chính quyền trung ương không còn đủ sức ràng buộc các thế lực địa phương.",
       "hien": [
-        "co-cac-su-quan"
+        "ngo-nhat-khanh",
+        "ngo-xuong-xi"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đinh Bộ Lĩnh xây dựng lực lượng tại Hoa Lư",
-      "mo_ta": "Từ căn cứ Hoa Lư, Đinh Bộ Lĩnh xây dựng lực lượng, chiêu tập hào kiệt.",
+      "tieu_de": "Năm 965 — «loạn 12 sứ quân»",
+      "thoi_gian": "Từ năm 965",
+      "dia_danh": "Khắp các vùng đồng bằng Bắc Bộ",
+      "mo_ta": "Năm 965, Ngô Xương Văn chết. Cuộc tranh chấp giữa các thế lực cát cứ, thổ hào địa phương vẫn tiếp diễn. Đất nước rơi vào tình trạng chia cắt, hỗn loạn bởi 12 tướng lĩnh chiếm cứ các vùng địa phương và đánh lẫn nhau; sử cũ gọi là loạn 12 sứ quân. Ngô Nhật Khánh chiếm Đường Lâm, Ngô Xương Xí chiếm Bình Kiều, Đỗ Cảnh Thạc chiếm Đỗ Đông Giang, Nguyễn Siêu chiếm Tây Phù Liệt, Trần Lãm chiếm Bố Hải Khẩu.",
       "hien": [
-        "can-cu-hoa-lu",
-        "quan-ta-dinh-bo-linh"
+        "ngo-nhat-khanh",
+        "ngo-xuong-xi",
+        "do-canh-thac",
+        "nguyen-sieu",
+        "cac-su-quan-khac",
+        "tran-lam"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Vừa đánh vừa liên kết các sứ quân",
-      "mo_ta": "Đinh Bộ Lĩnh dùng kế sách vừa đánh vừa liên kết, lần lượt khuất phục các sứ quân.",
+      "tieu_de": "Người động Hoa Lư — từ trò cờ lau đến chí lớn",
+      "thoi_gian": "Trước năm 965",
+      "dia_danh": "Động Hoa Lư, châu Đại Hoàng (Gia Viễn, Ninh Bình)",
+      "mo_ta": "Đinh Bộ Lĩnh (924–979) là người động Hoa Lư, châu Đại Hoàng. Cha là Đinh Công Trứ làm nha tướng của Dương Đình Nghệ, giữ chức Thứ sử Châu Hoan. Cha mất sớm, ông theo mẹ về quê, thường đi chơi với trẻ chăn trâu, bắt chúng khoanh tay làm kiệu để ngồi cho rước và lấy bông lau làm cờ bày trận đánh nhau. Đến tuổi trưởng thành, ông là người khí phách phi thường, có tài thao lược, nung nấu ước mong lập nghiệp lớn; dân làng theo ông rất đông.",
       "hien": [
-        "quan-ta-dinh-bo-linh",
-        "mui-danh-dep",
-        "co-cac-su-quan"
+        "hoa-lu",
+        "dinh-bo-linh"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Dẹp yên loạn 12 sứ quân",
-      "mo_ta": "Sau nhiều năm chinh chiến, Đinh Bộ Lĩnh dẹp yên toàn bộ các sứ quân, thống nhất đất nước.",
+      "tieu_de": "Sang Bố Hải Khẩu, được Trần Lãm trao binh quyền",
+      "thoi_gian": "Trước năm 967",
+      "dia_danh": "Bố Hải Khẩu (phủ Kiến Xương, Thái Bình)",
+      "mo_ta": "Vốn là con quan đứng đầu một châu, có uy thế lại thu phục được nhân tâm bằng tài năng của mình, nhưng vì bất hoà với chú, Đinh Bộ Lĩnh cùng con là Đinh Liễn sang ở với sứ quân Trần Minh Công ở Bố Hải Khẩu. Trần Lãm là một trong những sứ quân mạnh về kinh tế, lại chiếm giữ vùng đất quan trọng này; thấy ông khôi ngô, có chí khí, Trần Lãm đem lòng yêu mến và cho được giữ binh quyền.",
       "hien": [
-        "co-dep-yen"
+        "bo-hai-khau",
+        "tran-lam",
+        "dinh-bo-linh"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Lên ngôi hoàng đế, lập Đại Cồ Việt (968)",
-      "mo_ta": "Đinh Bộ Lĩnh lên ngôi hoàng đế, đặt quốc hiệu Đại Cồ Việt, đóng đô ở Hoa Lư.",
+      "tieu_de": "Về giữ Hoa Lư — Vạn Thắng Vương",
+      "thoi_gian": "Sau khi Trần Lãm mất",
+      "dia_danh": "Động Hoa Lư",
+      "mo_ta": "Đến khi Trần Lãm mất, Đinh Bộ Lĩnh đem quân về giữ Hoa Lư, chiêu mộ người hào kiệt, hùng cứ một phương. Địa bàn hoạt động được mở rộng, quân số và binh lương ngày càng lớn mạnh. Được sự ủng hộ của nhân dân, ông đánh đâu thắng đó nên được gọi là Vạn Thắng Vương — cái tên vừa là danh hiệu vừa là lời tổng kết về chuỗi thắng lợi liên tiếp trước các sứ quân.",
       "hien": [
-        "can-cu-hoa-lu",
-        "co-vua-966"
+        "hoa-lu",
+        "dinh-bo-linh",
+        "mui-ve-hoa-lu",
+        "bo-hai-khau"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Dùng mưu hàng phục con cháu Ngô Vương",
+      "thoi_gian": "Năm 966 – 967",
+      "dia_danh": "Đường Lâm · Bình Kiều",
+      "mo_ta": "Hai sứ quân Ngô Nhật Khánh chiếm giữ Đường Lâm và Ngô Xương Xí chiếm Bình Kiều đều là con cháu Ngô Vương. Với hai người này, Đinh Bộ Lĩnh không dùng binh lực mà dùng mưu: ông hàng phục được Ngô Nhật Khánh, rồi hàng phục được cả Ngô Xương Xí. Cách làm ấy vừa tránh đổ máu, vừa tước đi của các sứ quân còn lại chỗ dựa chính danh mà dòng dõi họ Ngô đại diện.",
+      "hien": [
+        "ngo-nhat-khanh",
+        "ngo-xuong-xi",
+        "mui-dung-muu",
+        "dinh-bo-linh"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Cung kiếm kết hợp mưu lược — hạ các sứ quân mạnh",
+      "thoi_gian": "Năm 967",
+      "dia_danh": "Đỗ Đông Giang · Tây Phù Liệt",
+      "mo_ta": "Với những sứ quân mạnh, Đinh Bộ Lĩnh dùng cung kiếm tiến quân kết hợp mưu lược. Đỗ Cảnh Thạc chiếm Đỗ Đông Giang có cung thành chắc chắn và hào sâu bao quanh, lại là người trí dũng mưu lược nên phải bàn mưu tính kế mà đánh: ban đêm, Đinh Bộ Lĩnh cho quân bao vây bốn mặt thành và tiến đánh bất ngờ; quân tướng địch không ứng cứu được nhau, Đỗ Cảnh Thạc bỏ thành chạy, giao tranh hơn một năm sau thì thua. Nguyễn Siêu ở Tây Phù Liệt thua trận, ngầm qua sông xin cứu viện sứ quân khác; Đinh Bộ Lĩnh biết tin, sai võ sĩ nửa đêm phóng lửa đốt doanh trại, quân Nguyễn Siêu tan.",
+      "hien": [
+        "do-canh-thac",
+        "mui-vay-bon-mat",
+        "nguyen-sieu",
+        "mui-dot-doanh-trai",
+        "cac-su-quan-khac"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Năm Mậu Thìn 968 — lên ngôi, đặt quốc hiệu Đại Cồ Việt",
+      "thoi_gian": "Năm Mậu Thìn (968)",
+      "dia_danh": "Hoa Lư",
+      "mo_ta": "Các sứ quân Kiều Công Hãn, Kiều Thuận, Nguyễn Thủ Tiệp, Phạm Bạch Hổ đã thất bại ngay từ trận đánh đầu của Đinh Bộ Lĩnh; loạn 12 sứ quân dẹp xong, đất nước thống nhất. Năm Mậu Thìn (968), Vạn Thắng Vương lên ngôi Hoàng đế lấy hiệu là Tiên Hoàng đế, đặt quốc hiệu là Đại Cồ Việt — nước Việt lớn — và đóng đô ở Hoa Lư. Nhà sử học Lê Văn Hưu bình rằng một phen cất quân mà mười hai sứ quân phục hết.",
+      "hien": [
+        "co-thang",
+        "hoa-lu",
+        "cac-su-quan-khac",
+        "dinh-bo-linh"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Dựng chế độ — triều nghi, tiền tệ, quân đội, bang giao",
+      "thoi_gian": "Năm 968 – 972",
+      "dia_danh": "Hoa Lư",
+      "mo_ta": "Đinh Tiên Hoàng cho xây cung điện, chế triều nghi, định phẩm hàm quan văn quan võ, đúc tiền để tiêu dùng trong nước; đặt vạc dầu trước điện và nuôi hổ báo trong vườn để răn đe kẻ phản loạn. Ông phong vương cho các con, cử Nguyễn Bặc làm Định Quốc công, Lê Hoàn làm Thập đạo tướng quân, phong Đinh Liễn là Nam Việt vương. Binh lính phân ra đạo, quân, lữ, tốt, ngũ. Về ngoại giao, năm Nhâm Thân (972) ông sai Đinh Liễn mang đồ vật sang cống nhà Tống; vua Tống sai sứ sang phong cho ông làm Giao Chỉ Quận vương.",
+      "hien": [
+        "trieu-nghi",
+        "vac-dau-ho-bao",
+        "quan-doi-muoi-dao",
+        "su-sang-tong",
+        "hoa-lu"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
       ]
     }
   ],
@@ -139,26 +391,33 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ nhà Đinh",
     "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
-    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Những phương thức khắc phục loạn 'Thập nhị sứ quân'"
+    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Những phương thức khắc phục loạn 'Thập nhị sứ quân'",
+    "Mộc bản triều Nguyễn — Đinh Tiên Hoàng đế và công cuộc dẹp loạn 12 sứ quân — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/"
   ],
   "trich_van_tich": [
     {
       "sach": "Đại Việt sử ký toàn thư, quyển 1, mặt khắc 1 — bản mộc bản triều Nguyễn",
       "doan": "Đứa bé này khí lượng như thế ắt làm nên sự nghiệp, bọn ta nếu không theo về, ngày sau hối thì đã muộn",
       "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/",
-      "buoc": 2
+      "buoc": 3
     },
     {
       "sach": "Ngự chế Việt sử tổng vịnh tập, quyển 1, mặt khắc 19, 20 — bản mộc bản triều Nguyễn",
       "doan": "mười hai sứ quân mạnh ai kẻ ấy tự xưng là hùng trưởng và tự cắt đất đai để chiếm cứ, Bộ Lĩnh chỉ một phen cất quân mà bình định được cả đất nước",
       "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/",
-      "buoc": 4
+      "buoc": 7
+    },
+    {
+      "sach": "Lời bàn của nhà sử học Lê Văn Hưu",
+      "doan": "Tiên Hoàng nhờ có tài năng sáng suốt hơn người, dũng cảm mưu lược nhất đời, đương lúc nước Việt ta không có chủ, các hùng trưởng cát cứ, một phen cất quân mà mười hai sứ quân phục hết.",
+      "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/",
+      "buoc": 8
     },
     {
       "sach": "Đại Việt sử ký toàn thư, quyển 1, mặt khắc 1 — bản mộc bản triều Nguyễn",
       "doan": "Vua lên ngôi, đặt quốc hiệu là Đại Cồ Việt, dời Kinh ấp về động Hoa Lư, bắt đầu dựng đô mới, đắp thành đào hào, xây cung điện, đặt triều nghi. Bầy tôi dâng tôn hiệu là Đại Thắng Minh Hoàng Đế",
       "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/dinh-tien-hoang-de-va-cong-cuoc-dep-loan-12-su-quan/",
-      "buoc": 5
+      "buoc": 8
     }
   ]
 }

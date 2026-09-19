@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ trận Vạn Tường 1965 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Vạn Tường 18/8/1965 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "tran-van-tuong-1965",
   "ten": "Trận Vạn Tường",
   "nam": 1965,
@@ -16,136 +16,321 @@
       "kieu": "bien",
       "diem": [
         [
-          700,
-          50
+          880,
+          80
         ],
         [
-          1000,
-          50
-        ],
-        [
-          1000,
+          935,
           300
         ],
         [
-          750,
-          250
+          890,
+          545
         ]
       ],
-      "nhan": "Biển Đông"
+      "nhan": "Biển Đông — hạm đội Mỹ ngoài khơi"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          100,
+          140
+        ],
+        [
+          330,
+          178
+        ],
+        [
+          560,
+          160
+        ]
+      ],
+      "nhan": "Sông Trà Bồng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          220,
+          90
+        ],
+        [
+          420,
+          220
+        ],
+        [
+          620,
+          330
+        ]
+      ],
+      "nhan": "Đường từ căn cứ Chu Lai vào Vạn Tường (khoảng 17 km về phía Đông Nam)"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          430,
+          380
+        ],
+        [
+          560,
+          365
+        ],
+        [
+          690,
+          385
+        ]
+      ],
+      "nhan": "Các cao điểm quanh thôn Vạn Tường"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-do-bo",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 850,
-      "y": 150,
-      "nhan": "Lính thủy đánh bộ Mỹ đổ bộ"
-    },
-    {
-      "id": "quan-dich-truc-thang",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 600,
-      "y": 120,
-      "nhan": "Đổ quân bằng trực thăng"
-    },
-    {
-      "id": "quan-ta-tran-dia",
+      "id": "chu-lai",
       "kieu": "cong-su",
-      "ben": "ta",
-      "x": 470,
-      "y": 350,
-      "nhan": "Trận địa quân dân ta"
+      "ben": "dich",
+      "x": 180,
+      "y": 90,
+      "nhan": "Căn cứ Chu Lai",
+      "quy_mo": "Sư đoàn 3 lính thuỷ đánh bộ Mỹ"
     },
     {
-      "id": "quan-ta-chu-luc",
+      "id": "vanh-dai-diet-my",
+      "kieu": "dia-danh",
+      "x": 120,
+      "y": 200,
+      "nhan": "«Vành đai diệt Mỹ» huyện Bình Sơn"
+    },
+    {
+      "id": "van-tuong",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 560,
+      "y": 300,
+      "nhan": "Thôn Vạn Tường, xã Bình Hải, huyện Bình Sơn"
+    },
+    {
+      "id": "e1",
       "kieu": "quan",
       "ben": "ta",
       "x": 350,
-      "y": 420,
-      "nhan": "Bộ đội chủ lực Quân khu 5"
+      "y": 430,
+      "nhan": "Đóng quân ở khu vực Vạn Tường sau chiến thắng Ba Gia",
+      "quy_mo": "Trung đoàn 1 bộ binh chủ lực Quân khu 5"
     },
     {
-      "id": "mui-danh-bat",
+      "id": "tau-chien",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 860,
+      "y": 170,
+      "nhan": "Hơn chục tàu chiến bắn đại bác vào Vạn Tường đêm 17/8"
+    },
+    {
+      "id": "huong-bac",
       "kieu": "mui-ten",
-      "ben": "ta",
+      "ben": "dich",
       "tu": [
-        400,
-        380
+        520,
+        120
       ],
       "den": [
-        600,
-        200
+        550,
+        250
       ],
-      "nhan": "Đánh bật các mũi đổ bộ"
+      "nhan": "Cánh quân hướng Bắc"
     },
     {
-      "id": "co-thang",
+      "id": "huong-dong-nam",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        780,
+        430
+      ],
+      "den": [
+        630,
+        340
+      ],
+      "nhan": "Cánh quân hướng Đông Nam"
+    },
+    {
+      "id": "do-bo-duong-khong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        330,
+        540
+      ],
+      "den": [
+        450,
+        450
+      ],
+      "nhan": "Cánh quân đổ bộ bằng đường không ở hướng Tây Nam"
+    },
+    {
+      "id": "bai-min-ho-chong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 250,
+      "y": 300,
+      "nhan": "Bãi mìn, hố chông, vật cản làm dồn ứ đội hình"
+    },
+    {
+      "id": "dai-doi-31",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 130,
+      "y": 430,
+      "nhan": "Bộ đội địa phương phối hợp",
+      "quy_mo": "Đại đội 31"
+    },
+    {
+      "id": "du-kich",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 120,
+      "y": 550,
+      "nhan": "Dân quân du kích các xã Bình Phú, Bình Trị, Bình Hoà, Bình Hải"
+    },
+    {
+      "id": "truc-thang-du-bi",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 760,
+      "y": 545,
+      "nhan": "Máy bay lên thẳng chở lực lượng dự bị từ hạm đội đổ xuống"
+    },
+    {
+      "id": "ket-qua-vt",
       "kieu": "co",
       "ben": "ta",
-      "x": 400,
-      "y": 280,
-      "nhan": "Bẻ gãy cuộc hành quân"
+      "x": 880,
+      "y": 440,
+      "nhan": "Đánh bại cuộc hành quân «Ánh sáng sao»"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Mỹ đổ bộ, mở cuộc hành quân \"tìm diệt\"",
-      "mo_ta": "Ngày 18/8/1965, lính thủy đánh bộ Mỹ đổ bộ đường biển kết hợp trực thăng vận, mở cuộc hành quân càn quét quy mô lớn vào thôn Vạn Tường.",
+      "tieu_de": "Mùa hè 1965 — «vành đai diệt Mỹ» Bình Sơn và bước chuyển chiến lược của Mỹ",
+      "thoi_gian": "Tháng 7 – 8/1965",
+      "dia_danh": "Huyện Bình Sơn, Quảng Ngãi",
+      "mo_ta": "Sau trận tiêu diệt quân Mỹ ở bến Tân Hy, cục diện chiến trường Quảng Ngãi chuyển theo hướng có lợi cho ta. Tháng 7/1965, lực lượng vũ trang trên «vành đai diệt Mỹ» huyện Bình Sơn liên tiếp đánh bại 5 cuộc càn quét khi đối phương vượt sông Trà Bồng sang vùng giải phóng. Cùng thời gian, với các chiến thắng Bình Giã, Ba Gia, Đồng Xoài, chiến lược «Chiến tranh đặc biệt» thất bại; Mỹ chuyển sang «Chiến tranh cục bộ», trực tiếp đưa quân viễn chinh vào miền Nam và mở ngay các cuộc hành quân «tìm diệt».",
       "hien": [
-        "quan-dich-do-bo",
-        "quan-dich-truc-thang"
+        "vanh-dai-diet-my",
+        "chu-lai"
+      ],
+      "nguon": [
+        "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Quân dân ta bố trí trận địa đón đánh",
-      "mo_ta": "Bộ đội chủ lực Quân khu 5 cùng dân quân du kích địa phương đã bố trí công sự, trận địa đón đánh từ trước.",
+      "tieu_de": "Mỹ chuẩn bị cuộc hành quân «Ánh sáng sao»",
+      "thoi_gian": "Trước 17/8/1965",
+      "dia_danh": "Căn cứ Chu Lai · thôn Vạn Tường",
+      "mo_ta": "Lực lượng trinh sát của Sư đoàn 3 lính thuỷ đánh bộ Mỹ đóng ở căn cứ Chu Lai phát hiện có đơn vị quân giải phóng đóng tại thôn Vạn Tường, xã Bình Hải, huyện Bình Sơn, cách căn cứ khoảng 17 km về phía Đông Nam. Phía Mỹ coi đây là thời cơ cho cuộc xuất quân «tìm diệt» quy mô lớn đầu tiên có phối hợp hải, lục, không quân, nên Bộ Tư lệnh lính thuỷ đánh bộ quyết định mở cuộc hành quân mang tên «Ánh sáng sao» với 8.000 quân, 70 máy bay chiến đấu, 150 máy bay lên thẳng, 6 tàu đổ bộ, 5 pháo hạm và gần 50 khẩu pháo các loại cùng hàng trăm xe tăng, xe bọc thép.",
       "hien": [
-        "quan-ta-tran-dia",
-        "quan-ta-chu-luc"
+        "chu-lai",
+        "van-tuong",
+        "tau-chien"
+      ],
+      "nguon": [
+        "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đánh bật các mũi đổ bộ",
-      "mo_ta": "Quân ta đánh trả quyết liệt các mũi đổ bộ đường biển và đổ quân bằng trực thăng của địch.",
+      "tieu_de": "Đêm 17/8 — tàu chiến bắn đại bác vào Vạn Tường",
+      "thoi_gian": "Đêm 17/8/1965",
+      "dia_danh": "Thôn Vạn Tường và các cao điểm xung quanh",
+      "mo_ta": "Đêm 17/8/1965, hơn chục tàu chiến Mỹ từ ngoài khơi liên tục bắn đại bác vào thôn Vạn Tường và các cao điểm xung quanh, dọn đường cho cuộc đổ bộ hôm sau. Về phía ta, Trung đoàn 1 bộ binh chủ lực Quân khu 5 — đơn vị vừa chuyển về đóng quân ở khu vực Vạn Tường sau chiến thắng Ba Gia — đã triển khai xong công tác chuẩn bị, cùng quân dân địa phương bày sẵn kế hoạch và phương án sẵn sàng chiến đấu.",
       "hien": [
-        "quan-ta-tran-dia",
-        "quan-dich-do-bo",
-        "quan-dich-truc-thang",
-        "mui-danh-bat"
+        "tau-chien",
+        "van-tuong",
+        "e1"
+      ],
+      "nguon": [
+        "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Bẻ gãy cuộc hành quân càn quét",
-      "mo_ta": "Sau một ngày chiến đấu ác liệt, quân ta bẻ gãy cuộc hành quân, gây thiệt hại nặng cho quân Mỹ.",
+      "tieu_de": "Sáng 18/8 — quân Mỹ tiến vào Vạn Tường từ bốn hướng",
+      "thoi_gian": "Sáng 18/8/1965",
+      "dia_danh": "Vạn Tường",
+      "mo_ta": "Sáng 18/8/1965, sau các đợt pháo kích và ném bom dữ dội, lực lượng lớn quân Mỹ gồm 4 tiểu đoàn lính thuỷ đánh bộ, 1 tiểu đoàn xe tăng và xe bọc thép, 2 tiểu đoàn pháo 105 ly, 6 tàu đổ bộ và pháo hạm cùng hàng trăm máy bay chiến đấu ồ ạt từ 4 hướng tiến quân vào Vạn Tường, với ý định tiêu diệt toàn bộ lực lượng của ta trong thời gian ngắn nhất.",
       "hien": [
-        "quan-ta-tran-dia",
-        "co-thang"
+        "huong-bac",
+        "huong-dong-nam",
+        "do-bo-duong-khong",
+        "van-tuong"
+      ],
+      "nguon": [
+        "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Mở phong trào \"tìm Mỹ mà đánh\"",
-      "mo_ta": "Chiến thắng Vạn Tường chứng minh khả năng đánh thắng quân viễn chinh Mỹ ngay từ trận đầu, mở ra phong trào thi đua \"tìm Mỹ mà đánh, tìm ngụy mà diệt\" trên khắp miền Nam.",
+      "tieu_de": "Kế hoạch tác chiến của Trung đoàn 1 — dồn trọng tâm về hướng Tây Nam",
+      "thoi_gian": "Sáng 18/8/1965",
+      "dia_danh": "Hướng Bắc · Đông Nam · Tây Nam Vạn Tường",
+      "mo_ta": "Kế hoạch tác chiến của Trung đoàn 1 là cản chậm bước tiến của các cánh quân hướng Bắc và Đông Nam, tập trung lực lượng ở hướng Tây Nam, dựa vào các hầm sâu và các vị trí chiến đấu nguỵ trang kín đáo để diệt cánh quân đổ bộ bằng đường không. Toàn đơn vị phối hợp chặt chẽ với dân quân du kích đánh trả; từ chỗ bị bất ngờ, ta giành được thế chủ động tiến công.",
       "hien": [
-        "co-thang"
+        "e1",
+        "do-bo-duong-khong",
+        "huong-bac",
+        "huong-dong-nam",
+        "du-kich"
+      ],
+      "nguon": [
+        "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đội hình Mỹ dồn ứ trước bãi mìn, hố chông",
+      "thoi_gian": "Ngày 18/8/1965",
+      "dia_danh": "Vạn Tường",
+      "mo_ta": "Các mũi tiến công của quân Mỹ đều vấp phải hệ thống bãi mìn, hố chông và vật cản khiến đội hình bị dồn ứ, rồi bị bộ đội ta vận động tới đánh hoặc dùng hoả lực tiêu diệt. Trận đánh kéo dài đến chiều tối ngày 18, đối phương bị đánh thiệt hại 4 đại đội. Lính thuỷ đánh bộ Mỹ không hợp điểm được tại thôn Vạn Tường theo ý định ban đầu và có nguy cơ bị sa lầy. Hải quân Mỹ pháo kích dữ dội và dùng máy bay lên thẳng chở lực lượng dự bị từ hạm đội ngoài khơi đổ xuống Vạn Tường.",
+      "hien": [
+        "bai-min-ho-chong",
+        "e1",
+        "dai-doi-31",
+        "truc-thang-du-bi"
+      ],
+      "nguon": [
+        "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Kết thúc sau một ngày đêm — đánh bại cuộc hành quân «Ánh sáng sao»",
+      "thoi_gian": "Tối 18/8/1965",
+      "dia_danh": "Vạn Tường",
+      "mo_ta": "Ta tiếp tục tiến công cho đến khi màn đêm buông xuống thì trận đánh kết thúc. Suốt một ngày đêm chiến đấu, quân và dân Quảng Ngãi phối hợp với Trung đoàn 1, Đại đội 31 địa phương và lực lượng dân quân du kích các xã Bình Phú, Bình Trị, Bình Hoà, Bình Hải đánh bại hoàn toàn cuộc hành quân «Ánh sáng sao». Quân ta tiêu diệt 919 lính Mỹ, bắn cháy 22 xe tăng và xe bọc thép, bắn rơi 13 máy bay và phá huỷ nhiều phương tiện chiến tranh.",
+      "hien": [
+        "ket-qua-vt",
+        "e1",
+        "dai-doi-31",
+        "du-kich",
+        "van-tuong"
+      ],
+      "nguon": [
+        "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
       ]
     }
   ],
-  "ket_qua": "Chứng minh khả năng đánh thắng quân Mỹ, mở phong trào 'tìm Mỹ mà đánh'.",
-  "y_nghia": "Trận đánh lớn đầu tiên trực diện quân viễn chinh Mỹ, đặt nền tảng tinh thần và chiến thuật cho giai đoạn đánh Mỹ trên chiến trường miền Nam.",
+  "ket_qua": "Sau một ngày đêm chiến đấu, quân và dân ta đánh bại hoàn toàn cuộc hành quân «Ánh sáng sao»: tiêu diệt 919 lính Mỹ, bắn cháy 22 xe tăng và xe bọc thép, bắn rơi 13 máy bay và phá huỷ nhiều phương tiện chiến tranh (Bảo tàng Lịch sử quốc gia).",
+  "y_nghia": "Trận Vạn Tường là đòn đánh phủ đầu vào lính thuỷ đánh bộ Mỹ ngay khi quân viễn chinh mở cuộc hành quân «tìm diệt» quy mô lớn đầu tiên. Nếu chiến thắng Ấp Bắc mở đầu cao trào diệt quân đội Sài Gòn thì Vạn Tường mở đầu cao trào diệt quân Mỹ, đồng thời để lại bài học về kết hợp bộ đội chủ lực với lực lượng vũ trang địa phương và về dùng vật cản để phá thế cơ động của đối phương.",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html",
+    "qdnd.vn — Chiến thắng Vạn Tường, đòn phủ đầu quân viễn chinh Mỹ",
     "Lịch sử Việt Nam (Viện Sử học)",
-    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
-    "qdnd.vn — Chiến thắng Vạn Tường, đòn phủ đầu quân viễn chinh Mỹ"
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
     {
@@ -160,5 +345,42 @@
       "nguon_trich": "Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html",
       "buoc": 4
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến theo bài của Bảo tàng Lịch sử quốc gia. loai_xung_dot=ngoai-xam (khai tường minh): lực lượng mở cuộc hành quân «Ánh sáng sao» là Sư đoàn 3 lính thuỷ đánh bộ Mỹ, không phải hai bên người Việt. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "ngoai-xam",
+  "thoi_gian": "Đêm 17/8/1965 – 18/8/1965",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Trung đoàn 1 bộ binh chủ lực Quân khu 5",
+        "Đại đội 31 bộ đội địa phương",
+        "Dân quân du kích các xã Bình Phú, Bình Trị, Bình Hoà, Bình Hải"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "8.000 quân Mỹ",
+      "don_vi": [
+        "4 tiểu đoàn lính thuỷ đánh bộ",
+        "1 tiểu đoàn xe tăng và xe bọc thép",
+        "2 tiểu đoàn pháo 105 ly"
+      ],
+      "vu_khi": [
+        "70 máy bay chiến đấu",
+        "150 máy bay lên thẳng",
+        "6 tàu đổ bộ",
+        "5 pháo hạm",
+        "Gần 50 khẩu pháo các loại",
+        "Hàng trăm xe tăng, xe bọc thép"
+      ]
+    },
+    "nguon": [
+      "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "919 lính Mỹ bị tiêu diệt; 22 xe tăng, xe bọc thép bị bắn cháy; 13 máy bay bị bắn rơi",
+    "nguon": [
+      "Chiến thắng Vạn Tường mùa hè năm 1965 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19973/chien-thang-van-tuong-mua-he-nam-1965.html"
+    ]
+  }
 }

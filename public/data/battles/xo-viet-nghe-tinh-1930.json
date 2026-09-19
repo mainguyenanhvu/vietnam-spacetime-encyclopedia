@@ -1,8 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Xô Viết Nghệ Tĩnh 1930–1931 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Xô Viết Nghệ Tĩnh 1930–1931 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Số người dự cuộc biểu tình Hưng Nguyên 12/9/1930 được cổng Nghệ An chép theo hai mốc trong cùng một câu — «khoảng 8.000 nông dân ban đầu, sau đó tăng lên tới hơn 30.000 người». Đó là hai thời điểm của một cuộc, KHÔNG phải hai nguồn vênh nhau; giữ nguyên cả hai con số và cách diễn đạt, ĐỪNG rút còn một số.",
   "id": "xo-viet-nghe-tinh-1930",
   "ten": "Xô Viết Nghệ Tĩnh",
   "nam": 1930,
+  "thoi_gian": "1/5/1930 – năm 1931",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Xứ ủy Trung Kỳ (Đảng Cộng sản Đông Dương)",
   "doi_thu": "Pháp",
@@ -14,115 +16,393 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "nui",
+      "diem": [
+        [60, 120],
+        [130, 230],
+        [110, 350],
+        [150, 470],
+        [200, 570]
+      ],
+      "nhan": "Dãy Trường Sơn phía tây"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [140, 210],
+        [300, 275],
+        [450, 320],
+        [570, 345],
+        [700, 340],
+        [830, 320]
+      ],
+      "nhan": "Sông Lam"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [900, 60],
+        [930, 220],
+        [905, 380],
+        [880, 520],
+        [990, 560],
+        [990, 60]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          200,
-          400
-        ],
-        [
-          500,
-          380
-        ],
-        [
-          800,
-          360
-        ]
+        [660, 60],
+        [640, 180],
+        [640, 300],
+        [660, 430],
+        [700, 560]
       ],
-      "nhan": "Đường tuần hành Hưng Nguyên"
+      "nhan": "Đường thiên lý Bắc – Nam qua Vinh"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [180, 130],
+        [280, 145],
+        [285, 205],
+        [180, 195]
+      ],
+      "nhan": "Vùng rừng núi phía tây Nghệ An"
     }
   ],
   "phan_tu": [
     {
-      "id": "boi-canh-khung-hoang",
+      "id": "dien-chau",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 128,
+      "nhan": "Diễn Châu"
+    },
+    {
+      "id": "do-luong",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 150,
+      "nhan": "Đô Lương"
+    },
+    {
+      "id": "may-bay-phap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 490,
+      "y": 170,
+      "nhan": "Máy bay Pháp ném bom đoàn biểu tình"
+    },
+    {
+      "id": "anh-son",
+      "kieu": "dia-danh",
+      "x": 230,
+      "y": 190,
+      "nhan": "Anh Sơn"
+    },
+    {
+      "id": "nghi-loc",
+      "kieu": "dia-danh",
+      "x": 600,
+      "y": 212,
+      "nhan": "Nghi Lộc"
+    },
+    {
+      "id": "hanh-lam",
       "kieu": "dia-danh",
       "x": 150,
-      "y": 500,
-      "nhan": "Khủng hoảng kinh tế, đời sống cùng cực"
+      "y": 252,
+      "nhan": "Hạnh Lâm"
     },
     {
-      "id": "co-ta-xu-uy",
-      "kieu": "co",
+      "id": "thanh-chuong",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 252,
+      "nhan": "Huyện lỵ Thanh Chương"
+    },
+    {
+      "id": "nha-may-truong-thi",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 760,
+      "y": 250,
+      "nhan": "Công nhân nhà máy Diêm, Cưa, Trường Thi, cảng Bến Thuỷ",
+      "quy_mo": "Hơn 1.000 người đình công đồng loạt ngày 27/6/1930"
+    },
+    {
+      "id": "vo-liet",
+      "kieu": "dia-danh",
+      "x": 245,
+      "y": 322,
+      "nhan": "Xã Võ Liệt — chính quyền Xô viết đầu tiên"
+    },
+    {
+      "id": "nam-dan",
+      "kieu": "dia-danh",
+      "x": 430,
+      "y": 302,
+      "nhan": "Nam Đàn"
+    },
+    {
+      "id": "vinh-ben-thuy",
+      "kieu": "dia-danh",
+      "x": 625,
+      "y": 302,
+      "nhan": "Vinh – Bến Thuỷ"
+    },
+    {
+      "id": "hung-nguyen",
+      "kieu": "dia-danh",
+      "x": 520,
+      "y": 362,
+      "nhan": "Phủ Hưng Nguyên"
+    },
+    {
+      "id": "linh-kho-xanh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 830,
+      "y": 382,
+      "nhan": "Lính khố xanh, khố đỏ, lê dương càn quét"
+    },
+    {
+      "id": "tu-ve-do",
+      "kieu": "quan",
       "ben": "ta",
       "x": 300,
-      "y": 450,
-      "nhan": "Xứ ủy Trung Kỳ lãnh đạo"
+      "y": 402,
+      "nhan": "Đội Tự vệ đỏ"
     },
     {
-      "id": "quan-ta-bieu-tinh-hung-nguyen",
+      "id": "can-loc",
+      "kieu": "dia-danh",
+      "x": 640,
+      "y": 432,
+      "nhan": "Can Lộc"
+    },
+    {
+      "id": "loc-chau-loc-hai",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 442,
+      "nhan": "Hai làng Lộc Châu, Lộc Hải bị xoá sổ"
+    },
+    {
+      "id": "nong-hoi-do",
       "kieu": "quan",
       "ben": "ta",
-      "x": 500,
-      "y": 400,
-      "nhan": "Biểu tình Hưng Nguyên (12/9/1930)"
+      "x": 180,
+      "y": 472,
+      "nhan": "Nông hội đỏ · Công hội · Đoàn Thanh niên"
     },
     {
-      "id": "co-xo-viet",
-      "kieu": "co",
+      "id": "thach-ha",
+      "kieu": "dia-danh",
+      "x": 730,
+      "y": 502,
+      "nhan": "Thạch Hà"
+    },
+    {
+      "id": "dong-xuan",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 532,
+      "nhan": "Đông Xuân (Nam Đàn) — Đại hội Đảng bộ Nghệ An lần thứ nhất"
+    },
+    {
+      "id": "con-dao",
+      "kieu": "dia-danh",
+      "x": 880,
+      "y": 552,
+      "nhan": "Đày ra Côn Đảo, Buôn Ma Thuột"
+    },
+    {
+      "id": "mui-1-5",
+      "kieu": "mui-ten",
       "ben": "ta",
-      "x": 650,
-      "y": 350,
-      "nhan": "Chính quyền Xô viết ở nhiều làng xã"
+      "tu": [718, 272],
+      "den": [652, 292],
+      "nhan": "Biểu tình 1/5/1930 ở Vinh – Bến Thuỷ"
     },
     {
-      "id": "quan-dich-dan-ap",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 750,
-      "y": 250,
-      "nhan": "Pháp đàn áp"
+      "id": "mui-bieu-tinh-12-9",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [528, 342],
+      "den": [608, 318],
+      "nhan": "Đoàn biểu tình Hưng Nguyên kéo về Vinh ngày 12/9/1930"
     },
     {
-      "id": "co-tan-ra-1931",
-      "kieu": "co",
+      "id": "mui-khung-bo",
+      "kieu": "mui-ten",
       "ben": "dich",
-      "x": 650,
-      "y": 280,
-      "nhan": "Chính quyền Xô viết tan rã (1931)"
+      "tu": [800, 372],
+      "den": [665, 340],
+      "nhan": "Khủng bố trắng từ tháng 10/1930"
     }
   ],
+  "ton_that": {
+    "ta": "Riêng cuộc biểu tình Hưng Nguyên ngày 12/9/1930: 217 người bị giết hại, 125 người bị thương, 177 ngôi nhà bị thiêu rụi, hai làng Lộc Châu và Lộc Hải bị xoá sổ. Cuộc biểu tình ngày 1/5/1930 ở Vinh – Bến Thuỷ: 6 người hy sinh, 18 người bị thương.",
+    "nguon": [
+      "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Khủng hoảng kinh tế, đời sống công nông cùng cực",
-      "mo_ta": "Khủng hoảng kinh tế 1929-1933 khiến đời sống công nông Nghệ An - Hà Tĩnh vô cùng cùng cực.",
+      "tieu_de": "Nghệ Tĩnh trước cơn khủng hoảng 1929–1933",
+      "thoi_gian": "Đầu thế kỷ XX – tháng 2/1930",
+      "dia_danh": "Vinh – Bến Thuỷ · nông thôn Nghệ An, Hà Tĩnh",
+      "mo_ta": "Thực dân Pháp đẩy mạnh khai thác thuộc địa lần thứ hai; nông dân bị bóc lột bởi sưu cao thuế nặng và nạn cường hào lý dịch, công nhân trong các nhà máy, hầm mỏ, đồn điền bị bóc lột nặng nề. Cuộc khủng hoảng kinh tế thế giới 1929–1933 khiến giá nông sản sụt giảm, thị trường đình trệ, sản xuất tê liệt, hàng vạn người lao động mất việc. Sự hình thành của giai cấp công nhân ở Vinh – Bến Thuỷ cùng sự bần cùng hoá của nông dân tạo ra nền tảng xã hội cho liên minh công – nông: công nhân các nhà máy Diêm, Cưa, Trường Thi và cảng Bến Thuỷ vốn xuất thân từ nông dân nghèo, sớm có ý thức giai cấp và trở thành lực lượng tiên phong. Khi Đảng Cộng sản Việt Nam ra đời tháng 2/1930, tư tưởng cách mạng nhanh chóng bén rễ trong quần chúng ở vùng đất vốn có truyền thống Duy Tân, Đông Du, Đông Kinh Nghĩa Thục.",
       "hien": [
-        "boi-canh-khung-hoang"
+        "vinh-ben-thuy",
+        "nha-may-truong-thi",
+        "thanh-chuong",
+        "nam-dan",
+        "anh-son",
+        "hung-nguyen",
+        "can-loc",
+        "thach-ha"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đảng Cộng sản Đông Dương lãnh đạo biểu tình",
-      "mo_ta": "Xứ ủy Trung Kỳ lãnh đạo công nông biểu tình vũ trang đòi quyền lợi.",
+      "tieu_de": "1/5/1930: ngày Quốc tế Lao động đầu tiên ở Vinh – Bến Thuỷ",
+      "thoi_gian": "1/5/1930",
+      "dia_danh": "Khu công nghiệp Vinh – Bến Thuỷ · Thanh Chương · Hạnh Lâm · Diễn Châu",
+      "mo_ta": "Ngày 1/5/1930 là Ngày Quốc tế Lao động đầu tiên được công nhân, nông dân Việt Nam tổ chức kỷ niệm dưới sự lãnh đạo của Đảng. Tại khu công nghiệp Vinh – Bến Thuỷ, hơn 1.200 công nhân và nông dân các vùng phụ cận phối hợp biểu tình, nêu yêu sách tăng lương, giảm giờ làm, xoá bỏ sưu thuế và phản đối khủng bố. Cuộc biểu tình bị đàn áp: 6 người hy sinh, 18 người bị thương. Nhưng sự kiện đã chứng minh khả năng tập hợp công – nông, khẳng định sự lãnh đạo trực tiếp của Đảng và mở màn cho làn sóng đấu tranh ở Nghệ Tĩnh. Cùng thời gian, ở Thanh Chương, Hạnh Lâm, Diễn Châu, nông dân cũng xuống đường đòi chia ruộng đất, trừng trị cường hào và ủng hộ công nhân. Phong trào từ tự phát bắt đầu chuyển sang có tổ chức.",
       "hien": [
-        "co-ta-xu-uy"
+        "vinh-ben-thuy",
+        "nha-may-truong-thi",
+        "mui-1-5",
+        "thanh-chuong",
+        "hanh-lam",
+        "dien-chau"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đỉnh cao biểu tình Hưng Nguyên (12/9/1930)",
-      "mo_ta": "Đỉnh cao là cuộc biểu tình lớn tại Hưng Nguyên ngày 12/9/1930, hàng vạn nông dân tuần hành.",
+      "tieu_de": "Tháng 6 đến tháng 8: từ tự phát sang tự giác",
+      "thoi_gian": "Tháng 6 – tháng 8/1930",
+      "dia_danh": "Thanh Chương · Anh Sơn · Nghi Lộc · Nam Đàn · Đô Lương · Phủ Diễn",
+      "mo_ta": "Làn sóng đấu tranh lan rộng. Công nhân các nhà máy Diêm, Cưa, Trường Thi và cảng Bến Thuỷ liên tục bãi công; ngày 27/6, hơn 1.000 công nhân Vinh – Bến Thuỷ đình công đồng loạt. Nông dân ở Thanh Chương, Anh Sơn, Nghi Lộc, Nam Đàn, Diễn Châu đồng loạt biểu tình, có nơi lên tới hàng nghìn người. Ngày 1/6/1930, hơn 3.000 nông dân Thanh Chương, có cả học sinh và phụ nữ, xuống đường đòi ruộng đất; ngày 2/6, hơn 2.000 nông dân Anh Sơn và 500 nông dân Nghi Lộc cùng biểu tình. Giữa tháng 6, hàng loạt cuộc đấu tranh nổ ra ở Nam Đàn, Đô Lương, Phủ Diễn. Khẩu hiệu, đội ngũ và tổ chức tự vệ ngày càng rõ ràng, cho thấy phong trào đã chuyển từ tự phát sang tự giác, từ đòi hỏi kinh tế sang mục tiêu chính trị.",
       "hien": [
-        "co-ta-xu-uy",
-        "quan-ta-bieu-tinh-hung-nguyen"
+        "nha-may-truong-thi",
+        "vinh-ben-thuy",
+        "thanh-chuong",
+        "anh-son",
+        "nghi-loc",
+        "nam-dan",
+        "do-luong",
+        "dien-chau",
+        "tu-ve-do"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Lập chính quyền Xô viết ở nhiều làng xã",
-      "mo_ta": "Chính quyền cách mạng kiểu Xô viết được lập ở nhiều làng xã Nghệ An - Hà Tĩnh.",
+      "tieu_de": "1/9/1930: Võ Liệt — chính quyền Xô viết đầu tiên",
+      "thoi_gian": "1/9/1930",
+      "dia_danh": "Huyện lỵ Thanh Chương · xã Võ Liệt",
+      "mo_ta": "Sang tháng 9/1930, phong trào cách mạng Nghệ Tĩnh đạt đến đỉnh cao. Ngày 1/9 tại Thanh Chương, hơn 20.000 nông dân kéo đến huyện lỵ, có tổ chức chặt chẽ và đội ngũ trật tự; họ phá nhà lao, thả tù chính trị, trừng trị quan lại phản động. Tại xã Võ Liệt, chính quyền cách mạng sơ khai ra đời: ruộng đất công được chia lại, nợ nần được xoá bỏ, đội Tự vệ đỏ được thành lập bảo vệ làng xã. Đây là lần đầu tiên chính quyền Xô viết xuất hiện dưới hình thức sơ khai ở nông thôn Việt Nam — nghĩa là quyền điều hành làng xã chuyển hẳn từ bộ máy lý dịch sang các tổ chức của người lao động, chứ không chỉ là một cuộc biểu tình đòi yêu sách.",
       "hien": [
-        "quan-ta-bieu-tinh-hung-nguyen",
-        "co-xo-viet"
+        "thanh-chuong",
+        "vo-liet",
+        "tu-ve-do",
+        "nong-hoi-do",
+        "hanh-lam",
+        "anh-son"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Pháp đàn áp cuối 1931",
-      "mo_ta": "Pháp huy động lực lượng đàn áp dữ dội, chính quyền Xô viết tan rã cuối 1931, để lại bài học cho Cách mạng Tháng Tám.",
+      "tieu_de": "Anh Sơn, Can Lộc, Diễn Châu — bộ máy tay sai tan rã",
+      "thoi_gian": "5 – 7/9/1930",
+      "dia_danh": "Anh Sơn · Can Lộc · Diễn Châu",
+      "mo_ta": "Ngày 5/9, hàng nghìn nông dân Anh Sơn biểu tình với các khẩu hiệu «Bãi bỏ thuế thân», «Chia lại ruộng đất». Ngày 7/9, tại Can Lộc thuộc Hà Tĩnh và Diễn Châu thuộc Nghệ An, hàng nghìn nông dân kéo đến huyện đường, xử lý cường hào và làm tan rã bộ máy tay sai. Chính quyền thực dân – phong kiến ở nhiều nơi bị tê liệt, quyền điều hành rơi vào tay nhân dân. Chuỗi ngày đầu tháng 9 này cho thấy phong trào không còn giới hạn ở một huyện: nó lan qua cả hai tỉnh và đánh vào đúng cấp chính quyền cơ sở mà thực dân dựa vào để thu thuế và bắt phu.",
       "hien": [
-        "quan-dich-dan-ap",
-        "co-tan-ra-1931"
+        "anh-son",
+        "can-loc",
+        "dien-chau",
+        "thanh-chuong",
+        "vo-liet",
+        "thach-ha",
+        "tu-ve-do"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "12/9/1930: Hưng Nguyên dưới bom máy bay",
+      "thoi_gian": "12/9/1930",
+      "dia_danh": "Phủ Hưng Nguyên · đường về Vinh",
+      "mo_ta": "Đỉnh cao phong trào là ngày 12/9/1930 tại Hưng Nguyên. Khoảng 8.000 nông dân từ nhiều tổng ban đầu kéo về Vinh, sau đó số lượng tăng lên tới hơn 30.000 người. Đoàn biểu tình có đội Tự vệ bảo vệ, giương cao cờ đỏ búa liềm, hô vang khẩu hiệu «Đả đảo đế quốc!», «Chia lại ruộng đất!». Thực dân Pháp đàn áp bằng súng máy và bom từ máy bay. Kết quả: 217 người bị giết hại, 125 người bị thương, 177 ngôi nhà bị thiêu rụi, hai làng Lộc Châu và Lộc Hải bị xoá sổ. Đây là cuộc thảm sát dã man nhất của cả phong trào, để lại nỗi đau lớn nhưng cũng thúc đẩy phong trào lan rộng mạnh mẽ hơn.",
+      "hien": [
+        "hung-nguyen",
+        "mui-bieu-tinh-12-9",
+        "vinh-ben-thuy",
+        "may-bay-phap",
+        "loc-chau-loc-hai",
+        "tu-ve-do"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Vùng «Nghệ Tĩnh đỏ» — nông dân tự điều hành làng xã",
+      "thoi_gian": "Tháng 9 – tháng 10/1930",
+      "dia_danh": "Các làng xã Nghệ An và Hà Tĩnh",
+      "mo_ta": "Sau cao trào tháng 9, khắp Nghệ An và Hà Tĩnh chính quyền thực dân – phong kiến gần như tê liệt: quan lại bỏ trốn, cường hào bị xử lý, ruộng đất được chia lại. Các chi bộ Đảng và Nông hội đỏ đứng ra điều hành xã hội, thành lập Công hội, Nông hội, Đoàn Thanh niên và đội Tự vệ đỏ. Các chính sách tiến bộ được thực thi: bãi bỏ sưu thuế, giảm tô, xoá nợ, mở lớp dạy chữ quốc ngữ, thực hiện quyền tự do hội họp, bài trừ hủ tục. Vùng Nghệ Tĩnh đỏ được hình thành — lần đầu tiên công nông dưới sự lãnh đạo của Đảng giành quyền làm chủ trên một vùng lãnh thổ rộng lớn, một thực nghiệm về chính quyền dân chủ nhân dân sơ khai ở Việt Nam.",
+      "hien": [
+        "nong-hoi-do",
+        "tu-ve-do",
+        "vo-liet",
+        "thanh-chuong",
+        "nam-dan",
+        "can-loc",
+        "thach-ha",
+        "anh-son"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Khủng bố trắng và thoái trào",
+      "thoi_gian": "Tháng 10/1930 – năm 1931",
+      "dia_danh": "Nghệ An · Hà Tĩnh · Côn Đảo · Buôn Ma Thuột",
+      "mo_ta": "Từ tháng 10/1930, thực dân Pháp phát động cuộc phản công quy mô lớn, huy động binh lính khố xanh, khố đỏ, lê dương, dùng máy bay và pháo binh càn quét, đốt phá, giết hại nhân dân. Chiến dịch «khủng bố trắng» khiến hàng nghìn người bị giết, hàng trăm cán bộ và đảng viên bị bắt, nhiều người bị đày ra Côn Đảo, Buôn Ma Thuột. Giữa lúc đó, Đảng bộ Nghệ An vẫn tổ chức được Đại hội đại biểu lần thứ nhất tại Đông Xuân thuộc Nam Đàn, bầu Ban Chấp hành mới do Nguyễn Tiềm làm Bí thư; Trung ương Đảng ra chỉ thị «Ủng hộ Nghệ – Tĩnh đỏ», biến phong trào địa phương thành vấn đề có tính chất toàn quốc. Sang năm 1931, phần lớn các Xô viết bị phá vỡ, nhiều cơ sở Đảng tan rã. Phong trào để lại một khối liên minh công – nông – trí thức và một cuộc tổng diễn tập chuẩn bị cho Cách mạng Tháng Tám 1945.",
+      "hien": [
+        "linh-kho-xanh",
+        "mui-khung-bo",
+        "may-bay-phap",
+        "con-dao",
+        "dong-xuan",
+        "nam-dan",
+        "vinh-ben-thuy",
+        "nong-hoi-do"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931 — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960"
       ]
     }
   ],
@@ -130,6 +410,8 @@
   "y_nghia": "Cuộc tổng diễn tập đầu tiên của quần chúng dưới sự lãnh đạo của Đảng, để lại bài học kinh nghiệm quý báu cho Cách mạng Tháng Tám 1945.",
   "trang_thai": "draft",
   "nguon": [
+    "Cổng Thông tin điện tử xã An Châu, tỉnh Nghệ An — Phong trào Xô viết Nghệ Tĩnh 1930–1931, bản anh hùng ca của liên minh công nông dưới ngọn cờ Đảng — https://anchau.nghean.gov.vn/thong-tin-tuyen-truyen/phong-trao-xo-viet-nghe-tinh-1930-1931-ban-anh-hung-ca-cua-lien-minh-cong-nong-duoi-ngon-co-dang-972960",
+    "Công an tỉnh Hà Tĩnh — Xô viết Nghệ Tĩnh, ngọn lửa hồng đượm mãi — https://congan.hatinh.gov.vn/tin-tuc-su-kien/tin-tong-hop/xo-viet-nghe-tinh-ngon-lua-hong-duom-mai-1757576511.caht",
     "qdnd.vn — Bài học vận động quần chúng trong Xô viết Nghệ Tĩnh",
     "dangcongsan.vn — Xô viết Nghệ Tĩnh",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
@@ -139,13 +421,13 @@
       "sach": "Truyền đơn của Đảng Cộng sản phản đối thực dân Pháp chém hại cán bộ Nông hội Nghệ An (khoảng tháng 3/1930)",
       "doan": "Anh em dân cày! Đế quốc Pháp tàn hại anh em đã lắm rồi! Sưu cao, thuế nặng, bóc lột đủ đường. Nay nó lại bắt anh em canh giờ nghiêm khắc, cực khổ, bắt lập đoàn phu xã như thế để làm gì? Đó là một cách của nó, cốt để bài trừ đảng Cộng sản là đảng bênh vực quyền lợi cho anh em, cốt để ngăn cản phong trào tranh đấu của nông dân, thiệt là một cách bắt nông dân giết hại nông dân! Độc ác thay!",
       "nguon_trich": "Báo Nghệ An — https://baonghean.vn/bao-chi-truyen-don-tuyen-truyen-co-dong-cua-dang-o-nghe-an-thoi-ky-1930-1931-10283533.html",
-      "buoc": 2
+      "buoc": 1
     },
     {
       "sach": "Khẩu hiệu đoàn biểu tình phủ Hưng Nguyên, Nghệ An",
       "doan": "đả đảo chủ nghĩa đế quốc, đả đảo phong kiến, bỏ sưu giảm thuế, chia ruộng đất",
       "nguon_trich": "Báo Nghệ An — https://baonghean.vn/cuoc-bieu-tinh-ngay-12-9-1930-cua-nong-dan-phu-hung-nguyen-nghe-an-10283558.html",
-      "buoc": 3
+      "buoc": 6
     }
   ]
 }

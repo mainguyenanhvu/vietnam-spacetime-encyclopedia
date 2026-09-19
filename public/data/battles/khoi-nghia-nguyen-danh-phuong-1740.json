@@ -1,141 +1,355 @@
 {
+  "ghi_chu": "Sa đồ Khởi nghĩa Nguyễn Danh Phương 1740–1751 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Đây là NỘI CHIẾN giữa nông dân Đàng Ngoài và chính quyền Lê – Trịnh, nên khai loai_xung_dot=noi-chien. Ghi chú nội bộ về nguồn: bản trước dùng baothainguyen.vn (đã xác minh 2026-08-27) đặt đồn Úc Kỳ và núi Độc Tôn ở Phú Bình / Phổ Yên, tỉnh Thái Nguyên. Nay mở thêm được Bách khoa toàn thư Quân sự Việt Nam (NXB Quân đội nhân dân, 2015) trên Ngân hàng dữ liệu Thông tấn xã Việt Nam, bộ này đặt núi Ngọc Bội giữa hai huyện Tam Dương – Bình Xuyên và núi Độc Tôn ở Tam Dương, tỉnh Vĩnh Phúc. Hai nguồn nhà nước vênh nhau về địa điểm — nêu CẢ HAI ở bước 6 và bước 8, KHÔNG chọn một.",
   "id": "khoi-nghia-nguyen-danh-phuong-1740",
-  "ghi_chu": "Sa đồ Khởi nghĩa Nguyễn Danh Phương 1740–1750 — nguồn vinhphuc.gov.vn dùng lúc đầu KHÔNG mở được (3 lần: WebFetch https + http đều lỗi kết nối/chứng chỉ, crawl4ai ECONNREFUSED) nên đã THAY bằng nguồn baothainguyen.vn đã xác minh trực tiếp bằng WebFetch (2026-08-27), theo đúng luật bổ sung của điều phối viên. Nguồn mới đặt đồn Úc Kỳ và núi Độc Tôn ở Phú Bình/Phổ Yên (Thái Nguyên), KHÔNG phải Tam Dương/Bình Xuyên (Vĩnh Phúc) như bản nháp đầu — đã sửa toàn bộ nội dung theo nguồn đã kiểm chứng, nêu rõ dị biệt giữa các nguồn trong ghi_chu của mục lớp phủ. trang_thai=draft chờ soát §9.",
   "ten": "Khởi nghĩa Nguyễn Danh Phương (Quận Hẻo) 1740–1750",
   "nam": 1740,
   "sa_do_kieu": "tong-quat",
+  "loai_xung_dot": "noi-chien",
   "chi_huy": "Nguyễn Danh Phương (Quận Hẻo)",
   "doi_thu": "Quân đội chúa Trịnh (tướng Nguyễn Phan, theo lệnh chúa Trịnh Doanh)",
   "dia_diem": "Núi Tam Đảo (khởi binh), đồn Úc Kỳ (Phú Bình) và núi Độc Tôn (Phổ Yên), tỉnh Thái Nguyên",
+  "thoi_gian": "1740 – tháng 3/1751",
   "lien_quan_tinh": [
     "thai-nguyen",
     "phu-tho"
   ],
-  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          100
-        ],
-        [
-          400,
-          60
-        ],
-        [
-          700,
-          100
-        ]
+        [120, 148],
+        [300, 72],
+        [478, 132],
+        [640, 82],
+        [800, 152]
       ],
-      "nhan": "Dãy núi Tam Đảo"
+      "nhan": "Dãy Tam Đảo"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [258, 204],
+        [438, 180],
+        [560, 250],
+        [420, 342],
+        [268, 312]
+      ],
+      "nhan": "Vùng rừng núi Ngọc Bội"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [826, 118],
+        [762, 282],
+        [702, 440],
+        [660, 572]
+      ],
+      "nhan": "Sông Cầu — phía Thái Nguyên"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [890, 220],
+        [770, 332],
+        [648, 424]
+      ],
+      "nhan": "Đường từ Thái Nguyên xuống Hà Châu"
     }
   ],
   "phan_tu": [
     {
-      "id": "khoi-binh-tam-dao",
-      "kieu": "co",
+      "id": "tien-son",
+      "kieu": "dia-danh",
+      "x": 132,
+      "y": 478,
+      "nhan": "Xã Tiên Sơn, huyện Yên Lạc, trấn Sơn Tây — quê Nguyễn Danh Phương"
+    },
+    {
+      "id": "thu-linh-te",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 200,
-      "y": 180,
-      "nhan": "Tập hợp nghĩa quân, khởi binh tại núi Tam Đảo (1740)"
+      "x": 310,
+      "y": 528,
+      "nhan": "Khởi nghĩa của hai thủ lĩnh Tế và Bồng ở Sơn Tây, thất bại năm 1740"
+    },
+    {
+      "id": "nguyen-danh-phuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 300,
+      "y": 404,
+      "nhan": "Nguyễn Danh Phương — Quận Hẻo"
+    },
+    {
+      "id": "tam-dao",
+      "kieu": "dia-danh",
+      "x": 328,
+      "y": 128,
+      "nhan": "Núi Tam Đảo — nơi kéo nghĩa binh về xây dựng căn cứ"
+    },
+    {
+      "id": "dai-don-ngoc-boi",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 414,
+      "y": 250,
+      "nhan": "Đại Đồn — căn cứ trung tâm ở núi Ngọc Bội",
+      "quy_mo": "năm 1744 số nghĩa binh đã lên đến trên 10 nghìn người"
+    },
+    {
+      "id": "don-ai",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 552,
+      "y": 344,
+      "nhan": "Nhiều đồn ải bảo vệ xung quanh Đại Đồn"
+    },
+    {
+      "id": "trieu-dinh-rieng",
+      "kieu": "dia-danh",
+      "x": 190,
+      "y": 250,
+      "nhan": "Tự xưng Thuận Thiên khải vận đại nhân, đặt quan lại, xây nhà điện"
+    },
+    {
+      "id": "dia-ban",
+      "kieu": "dia-danh",
+      "x": 632,
+      "y": 186,
+      "nhan": "Tam Đái · Lâm Thao · Đà Dương (Sơn Tây) và một số huyện Thái Nguyên, Tuyên Quang"
     },
     {
       "id": "don-uc-ky",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 450,
-      "y": 320,
-      "nhan": "Đồn Úc Kỳ (Phú Bình) — thành lũy kiên cố"
+      "x": 808,
+      "y": 424,
+      "nhan": "Đồn Úc Kỳ — trên quả đồi thấp án ngữ đường từ Thái Nguyên xuống Hà Châu"
     },
     {
-      "id": "dai-ban-doanh-doc-ton",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 380,
-      "y": 450,
-      "nhan": "Đại bản doanh núi Độc Tôn (Phổ Yên)"
-    },
-    {
-      "id": "quan-trinh-nguyen-phan",
+      "id": "trinh-doanh",
       "kieu": "quan",
       "ben": "dich",
-      "x": 650,
-      "y": 280,
-      "nhan": "Tướng Nguyễn Phan (lệnh chúa Trịnh Doanh) đem quân công phá"
+      "x": 880,
+      "y": 546,
+      "nhan": "Chúa Trịnh Doanh cưỡi trên mình voi trao kiếm cho Nguyễn Phan"
     },
     {
-      "id": "mui-cong-pha",
+      "id": "hoang-ngu-phuc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 772,
+      "y": 78,
+      "nhan": "Hoàng Ngũ Phúc, Nguyễn Nghiễm, Đoàn Chú chỉ huy bốn đạo quân lớn"
+    },
+    {
+      "id": "mui-vong-thai-nguyen",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        650,
-        280
-      ],
-      "den": [
-        470,
-        320
-      ],
-      "nhan": "Công phá đồn Úc Kỳ"
+      "tu": [782, 118],
+      "den": [580, 214],
+      "nhan": "Đi vòng lên đường Thái Nguyên, bất ngờ đánh úp các đồn ngoại vi"
     },
     {
-      "id": "co-bi-bat",
-      "kieu": "co",
+      "id": "mui-vay-ngoc-boi",
+      "kieu": "mui-ten",
       "ben": "dich",
-      "x": 700,
-      "y": 420,
-      "nhan": "Đồn thất thủ, Nguyễn Danh Phương bị bắt (1750)"
+      "tu": [540, 276],
+      "den": [452, 262],
+      "nhan": "Bao vây đại đồn Ngọc Bội"
+    },
+    {
+      "id": "doc-ton",
+      "kieu": "dia-danh",
+      "x": 168,
+      "y": 348,
+      "nhan": "Núi Độc Tôn — nơi rút quân sau khi mất Đại Đồn"
+    },
+    {
+      "id": "tinh-luyen",
+      "kieu": "dia-danh",
+      "x": 116,
+      "y": 190,
+      "nhan": "Xã Tĩnh Luyện, huyện Lập Thạch — nơi bị bắt theo Bách khoa toàn thư Quân sự"
+    },
+    {
+      "id": "thang-long",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 106,
+      "y": 92,
+      "nhan": "Thăng Long — nơi bị xử tử tháng 3/1751"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Tập hợp nghĩa quân, khởi binh tại núi Tam Đảo (1740)",
-      "mo_ta": "Nguyễn Danh Phương tập hợp nghĩa quân, nổi dậy khởi nghĩa tại núi Tam Đảo.",
+      "tieu_de": "Từ cuộc khởi nghĩa của hai thủ lĩnh Tế và Bồng",
+      "thoi_gian": "Năm 1740",
+      "dia_danh": "Trấn Sơn Tây",
+      "mo_ta": "Nguyễn Danh Phương, tục gọi Quận Hẻo, người xã Tiên Sơn huyện Yên Lạc trấn Sơn Tây, nay thuộc tỉnh Vĩnh Phúc, vốn là một trí thức phong kiến nghèo. Ông tham gia cuộc khởi nghĩa do thủ lĩnh Tế lãnh đạo ở Sơn Tây — cuộc khởi nghĩa khá lớn của hai thủ lĩnh Tế và Bồng, thất bại năm 1740. Khi thủ lĩnh bị giết, Nguyễn Danh Phương vẫn tiếp tục giương cao ngọn cờ, phát triển thành một cuộc đấu tranh rộng lớn ở vùng Sơn Tây cho đến năm 1751.",
       "hien": [
-        "khoi-binh-tam-dao"
+        "tien-son",
+        "thu-linh-te",
+        "nguyen-danh-phuong"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Xây đồn Úc Kỳ kiên cố tại Phú Bình",
-      "mo_ta": "Ông xây đồn Úc Kỳ trên đồi thấp, có suối bao quanh phía bắc và sông sâu phía đông nam, cùng sân luyện tập, nhà ở, giếng nước — trở thành một thành lũy kiên cố.",
+      "tieu_de": "Kéo nghĩa binh về núi Tam Đảo xây dựng căn cứ",
+      "dia_danh": "Núi Tam Đảo",
+      "mo_ta": "Sau khi thủ lĩnh Tế bị giết, Nguyễn Danh Phương kéo nghĩa binh về núi Tam Đảo xây dựng căn cứ. Đây là vùng núi cao nằm ngay sát trục đồng bằng phía bắc kinh thành, đủ hiểm để giữ mà cũng đủ gần để toả quân xuống các phủ huyện — thế đứng ấy giải thích vì sao lực lượng của ông lớn nhanh trong vài năm và trụ được suốt mười năm trước các cuộc hành quân của họ Trịnh.",
       "hien": [
-        "don-uc-ky"
+        "tam-dao",
+        "nguyen-danh-phuong"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đặt đại bản doanh tại núi Độc Tôn",
-      "mo_ta": "Nguyễn Danh Phương đặt đại bản doanh tại núi Độc Tôn (Phổ Yên, Thái Nguyên), chỉ huy nghĩa quân từ đây.",
+      "tieu_de": "Năm 1744 — dựng Đại Đồn ở núi Ngọc Bội",
+      "thoi_gian": "Năm 1744",
+      "dia_danh": "Núi Ngọc Bội",
+      "mo_ta": "Năm 1744, số nghĩa binh đã lên đến trên 10 nghìn người và nhiều lần đánh bại quân Trịnh. Nguyễn Danh Phương xây dựng một căn cứ trung tâm ở núi Ngọc Bội gọi là Đại Đồn, với nhiều đồn ải bảo vệ xung quanh. Nghĩa quân vừa hoạt động vừa sản xuất để xây dựng căn cứ, tích trữ của cải làm kế lâu dài — cách làm khiến căn cứ không phụ thuộc vào tiếp tế từ bên ngoài, thứ mà đối phương luôn tìm cách cắt đứt.",
       "hien": [
-        "dai-ban-doanh-doc-ton"
+        "dai-don-ngoc-boi",
+        "don-ai",
+        "tam-dao"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Triều đình cử tướng công phá đồn Úc Kỳ",
-      "mo_ta": "Năm 1750, triều đình Lê – Trịnh cử tướng Nguyễn Phan, theo lệnh chúa Trịnh Doanh, đem quân công phá đồn Úc Kỳ.",
+      "tieu_de": "Xưng Thuận Thiên khải vận đại nhân, lập bộ máy riêng",
+      "dia_danh": "Đại Đồn Ngọc Bội",
+      "mo_ta": "Tại Đại Đồn, Nguyễn Danh Phương tự xưng là Thuận Thiên khải vận đại nhân, đặt quan lại và xây nhà điện như một triều đình riêng. Việc lập bộ máy hành chính song song với chính quyền Lê – Trịnh cho thấy cuộc khởi nghĩa đã vượt khỏi khuôn khổ một cuộc nổi dậy vũ trang thuần tuý, chuyển thành một chính quyền thực tế trên phần lãnh thổ mà nghĩa quân kiểm soát.",
       "hien": [
-        "quan-trinh-nguyen-phan",
-        "mui-cong-pha",
-        "don-uc-ky"
+        "trieu-dinh-rieng",
+        "dai-don-ngoc-boi",
+        "nguyen-danh-phuong"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đồn thất thủ, bị bắt (1750)",
-      "mo_ta": "Đồn Úc Kỳ thất thủ, Nguyễn Danh Phương bị bắt, cuộc khởi nghĩa kéo dài 10 năm tan rã. Phế tích đồn Úc Kỳ hiện vẫn còn ở Phú Bình.",
+      "tieu_de": "Toả quân đánh phá cơ sở chính quyền họ Trịnh",
+      "dia_danh": "Tam Đái · Lâm Thao · Đà Dương · Thái Nguyên · Tuyên Quang",
+      "mo_ta": "Hầu hết các huyện thuộc các phủ Tam Đái, Lâm Thao, Đà Dương trấn Sơn Tây và một số huyện thuộc trấn Thái Nguyên, Tuyên Quang đều nằm trong khu vực hoạt động của nghĩa quân. Sau khi đã có căn cứ vững chắc, quân khởi nghĩa toả đi đánh phá các cơ sở chính quyền họ Trịnh ở vùng Tam Đái, Lâm Thao, Đà Dương; thanh thế ngày càng lớn, buộc họ Trịnh phải lo tập trung quân lính để đàn áp.",
       "hien": [
-        "co-bi-bat"
+        "dia-ban",
+        "dai-don-ngoc-boi",
+        "don-ai"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đồn Úc Kỳ — cứ điểm án ngữ đường Thái Nguyên",
+      "dia_danh": "Úc Kỳ, Phú Bình, Thái Nguyên",
+      "mo_ta": "Đồn Úc Kỳ được xây dựng trên một quả đồi thấp, nằm án ngữ con đường từ Thái Nguyên xuống Hà Châu; đồn tiếp giáp nhiều cánh đồng màu mỡ của huyện Đại Từ nên có thể cung cấp sức người, sức của cho nghĩa quân. Trong đồn có sân rộng để luyện tập, một dãy nhà ở và một số giếng nước; phía bắc có con suối lớn, khi nước đầy trở thành hào bảo vệ, phía đông nam có khúc sông sâu làm tăng thêm sự kiên cố. Cần lưu ý hai nguồn nhà nước không đặt hệ thống đồn ở cùng một vùng: Báo Thái Nguyên đặt đại bản doanh ở núi Độc Tôn, Phổ Yên và đồn Úc Kỳ ở Phú Bình, tỉnh Thái Nguyên; Bách khoa toàn thư Quân sự Việt Nam đặt Đại Đồn ở núi Ngọc Bội giữa hai huyện Tam Dương – Bình Xuyên và núi Độc Tôn ở Tam Dương, tỉnh Vĩnh Phúc.",
+      "hien": [
+        "don-uc-ky",
+        "don-ai",
+        "dai-don-ngoc-boi"
+      ],
+      "nguon": [
+        "Báo Thái Nguyên điện tử — https://www.baothainguyen.vn/dat-va-nguoi-thai-nguyen/cac-mien-que/200906/don-uc-ky-va-cuoc-khoi-nghia-cua-nguyen-danh-phuong-367448B/",
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Cuối 1750 — bốn đạo quân Trịnh, Đại Đồn thất thủ",
+      "thoi_gian": "Cuối năm 1750 đầu năm 1751",
+      "dia_danh": "Đường Thái Nguyên — Ngọc Bội",
+      "mo_ta": "Năm 1749, sau khi đã dẹp xong các cuộc khởi nghĩa khác trong nước, triều đình Lê – Trịnh quyết định tập trung lực lượng công phá đồn Úc Kỳ. Khoảng cuối năm 1750 đầu năm 1751, Trịnh Doanh cử các tướng Hoàng Ngũ Phúc, Nguyễn Nghiễm, Đoàn Chú chỉ huy bốn đạo quân lớn; quân Trịnh đi vòng lên đường Thái Nguyên rồi bất ngờ đánh úp các đồn ngoại vi và bao vây đồn Ngọc Bội. Báo Thái Nguyên chép quân triều đình chia làm 4 đạo tiến đánh đồn Úc Kỳ và đích thân chúa Trịnh Doanh cưỡi trên mình voi trao kiếm cho Nguyễn Phan, một tướng dày dạn kinh nghiệm, hạ lệnh phải tiêu diệt bằng được đồn ấy. Đồn Úc Kỳ bị công phá và đại đồn Ngọc Bội thất thủ.",
+      "hien": [
+        "hoang-ngu-phuc",
+        "mui-vong-thai-nguyen",
+        "mui-vay-ngoc-boi",
+        "trinh-doanh",
+        "don-uc-ky"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+        "Báo Thái Nguyên điện tử — https://www.baothainguyen.vn/dat-va-nguoi-thai-nguyen/cac-mien-que/200906/don-uc-ky-va-cuoc-khoi-nghia-cua-nguyen-danh-phuong-367448B/"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Rút về núi Độc Tôn, bị bắt và xử tử tháng 3/1751",
+      "thoi_gian": "Tháng 3/1751",
+      "dia_danh": "Núi Độc Tôn — Tĩnh Luyện — Thăng Long",
+      "mo_ta": "Mất Đại Đồn, Nguyễn Danh Phương phải dẫn quân rút về núi Độc Tôn. Về nơi ông bị bắt, các nguồn nhà nước chép khác nhau: Bách khoa toàn thư Quân sự Việt Nam ghi ông bị bắt tại xã Tĩnh Luyện, huyện Lập Thạch, tỉnh Vĩnh Phúc; Bảo tàng Lịch sử Quốc gia ghi tháng hai năm Tân Mùi ông thua trận và bị bắt ở thành Ngọc Bội gần Hương Canh. Cả hai nguồn thống nhất ở kết cục: tháng 3/1751 ông bị xử tử cùng với Nguyễn Hữu Cầu tại Thăng Long.",
+      "hien": [
+        "doc-ton",
+        "tinh-luyen",
+        "thang-long",
+        "nguyen-danh-phuong"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": "năm 1744 số nghĩa binh đã lên đến trên 10 nghìn người",
+      "don_vi": [
+        "Đại Đồn ở núi Ngọc Bội cùng nhiều đồn ải bảo vệ xung quanh",
+        "Đồn Úc Kỳ án ngữ đường từ Thái Nguyên xuống Hà Châu"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Bốn đạo quân lớn do Hoàng Ngũ Phúc, Nguyễn Nghiễm, Đoàn Chú chỉ huy",
+        "Tướng Nguyễn Phan, được chúa Trịnh Doanh trao kiếm để phá đồn Úc Kỳ"
+      ]
+    },
+    "nguon": [
+      "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+      "Báo Thái Nguyên điện tử — https://www.baothainguyen.vn/dat-va-nguoi-thai-nguyen/cac-mien-que/200906/don-uc-ky-va-cuoc-khoi-nghia-cua-nguyen-danh-phuong-367448B/"
+    ]
+  },
   "ket_qua": "Cuộc khởi nghĩa kéo dài 10 năm (1740–1750), xây dựng được thành lũy kiên cố tại Úc Kỳ trước khi bị triều đình Lê – Trịnh đánh bại.",
   "y_nghia": "Một trong những cuộc khởi nghĩa nông dân tiêu biểu vùng trung du Bắc Bộ giữa thế kỷ XVIII, cùng thời với khởi nghĩa Nguyễn Hữu Cầu.",
   "trang_thai": "draft",
   "nguon": [
-    "Báo Thái Nguyên điện tử (baothainguyen.vn) — Đồn Úc Kỳ và cuộc khởi nghĩa của Nguyễn Danh Phương — https://www.baothainguyen.vn/dat-va-nguoi-thai-nguyen/cac-mien-que/200906/don-uc-ky-va-cuoc-khoi-nghia-cua-nguyen-danh-phuong-367448B/"
+    "Báo Thái Nguyên điện tử (baothainguyen.vn) — Đồn Úc Kỳ và cuộc khởi nghĩa của Nguyễn Danh Phương — https://www.baothainguyen.vn/dat-va-nguoi-thai-nguyen/cac-mien-que/200906/don-uc-ky-va-cuoc-khoi-nghia-cua-nguyen-danh-phuong-367448B/",
+    "Ngân hàng dữ liệu Thông tấn xã Việt Nam — Khởi nghĩa nông dân thế kỉ 18 — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+    "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Bách khoa toàn thư Quân sự Việt Nam, quyển 1: Lịch sử Quân sự (NXB Quân đội nhân dân, 2015) — mục Khởi nghĩa nông dân thế kỉ 18",
+      "doan": "năm 1744 số nghĩa binh đã lên đến trên 10 nghìn người và nhiều lần đánh bại quân Trịnh, xây dựng một căn cứ trung tâm ở núi Ngọc Bội (giữa hai huyện Tam Dương và Bình Xuyên, tỉnh Vĩnh Phúc ngày nay), gọi là Đại Đồn",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+      "buoc": 3
+    },
+    {
+      "sach": "Báo Thái Nguyên điện tử — bài «Đồn Úc Kỳ và cuộc khởi nghĩa của Nguyễn Danh Phương»",
+      "doan": "Đồn Úc Kỳ được xây dựng trên một quả đồi thấp, nằm án ngữ con đường từ Thái Nguyên xuống Hà Châu, đồn tiếp giáp với nhiều cánh đồng màu mỡ của huyện Đại Từ do đó có thể cung cấp sức người, sức của cho nghĩa quân.",
+      "nguon_trich": "Báo Thái Nguyên điện tử — https://www.baothainguyen.vn/dat-va-nguoi-thai-nguyen/cac-mien-que/200906/don-uc-ky-va-cuoc-khoi-nghia-cua-nguyen-danh-phuong-367448B/",
+      "buoc": 6
+    },
+    {
+      "sach": "Bảo tàng Lịch sử Quốc gia — bài «Hoàng Công Chất và một chiến thắng Điện Biên Phủ khác»",
+      "doan": "Tháng giêng năm Tân Mùi (1751), Nguyễn Hữu Cầu thất thủ ở Nghệ An, tháng hai, Nguyễn Danh Phương thua trận và bị bắt ở thành Ngọc Bội gần Hương Canh…",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html",
+      "buoc": 8
+    }
   ]
 }

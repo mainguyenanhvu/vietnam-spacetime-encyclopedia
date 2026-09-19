@@ -1,10 +1,12 @@
 {
-  "ghi_chu": "Sa đồ giành chính quyền Hà Nội 19/8/1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ giành chính quyền Hà Nội 19/8/1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Tên cơ quan đầu não của chính quyền bù nhìn ở Hà Nội được hai bài nhà nước gọi khác nhau: chuyên đề của Báo Nhân Dân chép «Phủ Khâm sai» và «Bắc Bộ phủ», bài của Báo QĐND chép «Phủ khâm sứ». Bản ghi này dùng «Phủ Khâm sai (Bắc Bộ phủ)» theo Báo Nhân Dân vì đó là tên đúng của cơ quan ở Bắc Kỳ; chỗ vênh giữ lại ở đây để không ai đi sửa ngược.",
   "id": "gianh-chinh-quyen-ha-noi-1945",
   "ten": "Giành chính quyền Hà Nội (19/8/1945)",
   "nam": 1945,
+  "thoi_gian": "17/8/1945 – 20/8/1945",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Việt Minh (Xứ ủy Bắc Kỳ)",
+  "chi_huy": "Việt Minh (Xứ ủy Bắc Kỳ và Thành uỷ Hà Nội)",
   "doi_thu": "Chính quyền bù nhìn Nhật",
   "dia_diem": "Quảng trường Nhà hát Lớn — Bắc Bộ phủ, Hà Nội",
   "lien_quan_tinh": [
@@ -13,105 +15,386 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "song",
+      "diem": [
+        [900, 60],
+        [820, 180],
+        [760, 320],
+        [780, 460],
+        [850, 570]
+      ],
+      "nhan": "Sông Hồng"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          200,
-          350
-        ],
-        [
-          500,
-          330
-        ],
-        [
-          800,
-          310
-        ]
+        [120, 480],
+        [280, 450],
+        [430, 400],
+        [520, 350],
+        [560, 315]
       ],
-      "nhan": "Trung tâm Hà Nội"
+      "nhan": "Các ngả đường từ ngoại thành về quảng trường"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [480, 200],
+        [560, 175],
+        [640, 195],
+        [660, 260]
+      ],
+      "nhan": "Trục phố quanh hồ Hoàn Kiếm"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [160, 90],
+        [230, 160],
+        [280, 230]
+      ],
+      "nhan": "Đường từ chiến khu Việt Bắc về Hà Nội"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [110, 300],
+        [200, 315],
+        [205, 375],
+        [115, 360]
+      ],
+      "nhan": "Vùng ngoại thành và các tỉnh lân cận"
     }
   ],
   "phan_tu": [
     {
+      "id": "tan-trao",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 60,
+      "nhan": "Tân Trào — Quốc dân Đại hội chọn Hà Nội làm Thủ đô"
+    },
+    {
+      "id": "tong-hoi-vien-chuc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 275,
+      "y": 100,
+      "nhan": "Tổng hội viên chức chính quyền bù nhìn"
+    },
+    {
+      "id": "xu-uy-bac-ky",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 170,
+      "y": 155,
+      "nhan": "Xứ uỷ Bắc Kỳ và Thành uỷ Hà Nội"
+    },
+    {
+      "id": "quan-nhat",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 830,
+      "y": 170,
+      "nhan": "Quân Nhật ở Hà Nội"
+    },
+    {
+      "id": "ho-hoan-kiem",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 190,
+      "nhan": "Hồ Hoàn Kiếm"
+    },
+    {
+      "id": "phu-kham-sai",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 430,
+      "y": 222,
+      "nhan": "Phủ Khâm sai (Bắc Bộ phủ)"
+    },
+    {
+      "id": "cot-co-ha-noi",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 242,
+      "nhan": "Cột cờ Hà Nội"
+    },
+    {
+      "id": "toa-thi-chinh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 700,
+      "y": 252,
+      "nhan": "Toà Thị chính"
+    },
+    {
       "id": "nha-hat-lon",
       "kieu": "dia-danh",
-      "x": 300,
-      "y": 400,
+      "x": 560,
+      "y": 302,
       "nhan": "Quảng trường Nhà hát Lớn"
     },
     {
-      "id": "quan-ta-quan-chung",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 400,
-      "y": 350,
-      "nhan": "Hàng vạn quần chúng dưới lãnh đạo Việt Minh"
-    },
-    {
-      "id": "bac-bo-phu",
-      "kieu": "thanh",
-      "ben": "dich",
-      "x": 600,
-      "y": 280,
-      "nhan": "Bắc Bộ phủ"
-    },
-    {
-      "id": "mui-tien-chiem-bbp",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        450,
-        330
-      ],
-      "den": [
-        570,
-        290
-      ],
-      "nhan": "Tiến chiếm Bắc Bộ phủ"
-    },
-    {
-      "id": "co-thang-hn-1945",
+      "id": "co-do-sao-vang",
       "kieu": "co",
       "ben": "ta",
+      "x": 835,
+      "y": 302,
+      "nhan": "Rừng cờ đỏ sao vàng"
+    },
+    {
+      "id": "trai-bao-an-binh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 330,
+      "y": 322,
+      "nhan": "Trại lính Bảo an"
+    },
+    {
+      "id": "lang-lan-can",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 382,
+      "nhan": "Nhân dân các tỉnh lân cận kéo về"
+    },
+    {
+      "id": "so-canh-sat",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 450,
+      "y": 402,
+      "nhan": "Sở Cảnh sát"
+    },
+    {
+      "id": "so-buu-dien",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 625,
+      "y": 402,
+      "nhan": "Sở Bưu điện"
+    },
+    {
+      "id": "viet-minh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 780,
+      "y": 402,
+      "nhan": "Mặt trận Việt Minh",
+      "quy_mo": "Uỷ ban quân sự cách mạng"
+    },
+    {
+      "id": "tu-ve-chien-dau",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 330,
+      "y": 472,
+      "nhan": "Các đội tự vệ chiến đấu dẫn đầu đoàn biểu tình"
+    },
+    {
+      "id": "uy-ban-nhan-dan-cach-mang",
+      "kieu": "dia-danh",
+      "x": 880,
+      "y": 500,
+      "nhan": "Uỷ ban Nhân dân cách mạng Bắc Bộ và Hà Nội"
+    },
+    {
+      "id": "quan-chung",
+      "kieu": "quan",
+      "ben": "ta",
       "x": 600,
-      "y": 220,
-      "nhan": "Giành chính quyền, mở đường Tuyên ngôn Độc lập"
+      "y": 522,
+      "nhan": "Hàng chục vạn người",
+      "quy_mo": "Từ Hà Nội và các tỉnh lân cận theo các ngả đường kéo về"
+    },
+    {
+      "id": "mui-mit-tinh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [588, 498],
+      "den": [566, 332],
+      "nhan": "Các ngả đường đổ về quảng trường Nhà hát Lớn"
+    },
+    {
+      "id": "mui-chiem-phu-kham-sai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [528, 288],
+      "den": [462, 238],
+      "nhan": "Biểu tình vũ trang tiến chiếm Phủ Khâm sai"
+    },
+    {
+      "id": "mui-chiem-trai-bao-an",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [520, 315],
+      "den": [372, 320],
+      "nhan": "Tiến chiếm Trại lính Bảo an"
+    },
+    {
+      "id": "mui-chiem-so-canh-sat",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [530, 340],
+      "den": [478, 388],
+      "nhan": "Tiến chiếm Sở Cảnh sát và Sở Bưu điện"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Việt Minh phát động mít tinh tại Nhà hát Lớn",
-      "mo_ta": "Ngày 19/8/1945, Việt Minh phát động mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội.",
+      "tieu_de": "Nhật đầu hàng, thời cơ xuất hiện",
+      "thoi_gian": "9/8/1945 – trước ngày 17/8",
+      "dia_danh": "Tân Trào · Hà Nội",
+      "mo_ta": "Ngày 9/8/1945, Hồng quân Liên Xô tiến công quân Nhật; trong vòng không đầy một tuần, quân đội Liên Xô đánh tan gần một triệu quân Nhật tại Mãn Châu, buộc quân Nhật đầu hàng. Quân lính Nhật ở Đông Dương tan rã, mất tinh thần, hàng ngũ chỉ huy chia rẽ đến cực điểm, bọn Việt gian thân Nhật hoảng sợ. Theo thoả thuận của các nước Đồng minh, sau khi Nhật đầu hàng thì quân đội Anh và Tưởng sẽ vào nước ta để giải giáp quân Nhật. Từ nhận định đó, Hội nghị đi đến quyết định phát động toàn dân nổi dậy khởi nghĩa giành chính quyền trước khi quân Anh và quân Tưởng vào Đông Dương tước khí giới quân Nhật, và trước khi thực dân Pháp kịp tập hợp lực lượng điều quân sang xâm lược nước ta lần nữa. Quốc dân Đại hội Tân Trào chọn Hà Nội làm Thủ đô của nước Việt Nam một khi độc lập.",
       "hien": [
+        "tan-trao",
+        "quan-nhat",
+        "xu-uy-bac-ky",
+        "phu-kham-sai",
+        "trai-bao-an-binh",
+        "toa-thi-chinh",
         "nha-hat-lon"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Cách mạng tháng Tám 1945, thắng lợi của ý chí độc lập dân tộc Việt Nam — https://special.nhandan.vn/Cach-mang-thang-Tam-1945-thang-loi-cua-y-chi-doc-lap-dan-toc-Viet-Nam/index.html",
+        "Báo Nhân Dân — Một quảng trường lịch sử — https://special.nhandan.vn/motquangtruonglichsu/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Hàng vạn quần chúng tham gia",
-      "mo_ta": "Hàng vạn quần chúng dưới sự lãnh đạo Việt Minh tham gia mít tinh, biến thành cuộc biểu dương lực lượng.",
+      "tieu_de": "17/8/1945: Việt Minh chiếm diễn đàn cuộc mít tinh của đối phương",
+      "thoi_gian": "17/8/1945",
+      "dia_danh": "Quảng trường Nhà hát Lớn",
+      "mo_ta": "Ngày 17/8, Tổng hội viên chức của chính quyền bù nhìn tổ chức một cuộc mít tinh lớn tại Quảng trường Nhà hát Lớn, có hàng vạn người tham gia, để ủng hộ chính phủ Trần Trọng Kim vừa được Nhật «trao trả độc lập». Ngay trong buổi mít tinh đó, dưới sự lãnh đạo của Xứ uỷ Bắc Kỳ và Thành uỷ Hà Nội, quần chúng cách mạng giương cao lá cờ đỏ sao vàng và chiếm lấy diễn đàn. Cán bộ Việt Minh diễn thuyết báo tin cho đồng bào biết quân Nhật đã đầu hàng, giới thiệu chủ trương đường lối cứu nước của Việt Minh và kêu gọi nhân dân đánh đổ chính quyền bù nhìn thân Nhật. Cuộc mít tinh biến thành cuộc biểu tình, tuần hành thị uy, bắt đầu từ quảng trường nhà hát thành phố rồi nhanh chóng lan ra khắp các phố phường Hà Nội.",
       "hien": [
         "nha-hat-lon",
-        "quan-ta-quan-chung"
+        "tong-hoi-vien-chuc",
+        "xu-uy-bac-ky",
+        "co-do-sao-vang",
+        "quan-chung",
+        "viet-minh",
+        "ho-hoan-kiem"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168",
+        "Báo Nhân Dân — Một quảng trường lịch sử — https://special.nhandan.vn/motquangtruonglichsu/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Chiếm Bắc Bộ phủ",
-      "mo_ta": "Quần chúng cách mạng tiến chiếm Bắc Bộ phủ, cơ quan đầu não chính quyền bù nhìn.",
+      "tieu_de": "«Ủy ban chính trị» xin điều đình, Việt Minh bác bỏ",
+      "thoi_gian": "Giữa ngày 17/8 và ngày 19/8/1945",
+      "dia_danh": "Hà Nội",
+      "mo_ta": "Nguỵ quyền cực kỳ bối rối hoang mang. Chúng dựng lên cái gọi là «Uỷ ban chính trị» và đề nghị với Việt Minh rằng đằng nào các ông cũng thắng, nhưng để điều đình với Đồng minh sắp vào Đông Dương giải giáp quân Nhật thì đề nghị vùng nông thôn cách thành phố 15km thuộc quyền Việt Minh, còn thành phố cần có nhân sĩ, trí thức đứng ra giao dịch với Đồng minh. Đại biểu Việt Minh trả lời dứt khoát rằng giao dịch với Đồng minh lúc này, ngoài Việt Minh không ai có thể có lực lượng và danh nghĩa cả. Việc từ chối chia đôi quyền lực giữa nông thôn và thành phố là điều kiện để chỉ hai ngày sau, chính quyền ở Thủ đô chuyển hẳn về tay nhân dân chứ không phải một thoả hiệp nửa vời.",
       "hien": [
-        "quan-ta-quan-chung",
-        "bac-bo-phu",
-        "mui-tien-chiem-bbp"
+        "viet-minh",
+        "tong-hoi-vien-chuc",
+        "phu-kham-sai",
+        "toa-thi-chinh",
+        "xu-uy-bac-ky",
+        "quan-nhat"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Giành chính quyền gần như không đổ máu",
-      "mo_ta": "Chính quyền về tay nhân dân gần như không đổ máu, mở đường Tổng khởi nghĩa và Tuyên ngôn Độc lập 2/9/1945.",
+      "tieu_de": "Tinh mơ 19/8: hàng chục vạn người đổ về Nhà hát Lớn",
+      "thoi_gian": "Tinh mơ sáng 19/8/1945",
+      "dia_danh": "Các ngả đường về Quảng trường Nhà hát Lớn",
+      "mo_ta": "Tinh mơ sáng ngày 19/8, hàng chục vạn người dân ở Hà Nội và các tỉnh lân cận theo các ngả đường kéo về quảng trường Nhà hát Lớn Hà Nội. Theo lời kêu gọi của Việt Minh, cả Hà Nội vùng dậy dưới rừng cờ đỏ sao vàng, xuống đường tiến thẳng về trung tâm Nhà hát Lớn để dự mít tinh. Đây là điểm khác biệt so với ngày 17/8: lần này quần chúng không đến để giành lấy một diễn đàn của người khác, mà đến theo lệnh của chính tổ chức mình, với các đội tự vệ chiến đấu dẫn đầu và một kế hoạch chiếm công sở đã định sẵn.",
       "hien": [
-        "co-thang-hn-1945"
+        "quan-chung",
+        "mui-mit-tinh",
+        "nha-hat-lon",
+        "co-do-sao-vang",
+        "tu-ve-chien-dau",
+        "lang-lan-can",
+        "viet-minh"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Địa danh Hà Nội trong Cách mạng Tháng Tám — https://special.nhandan.vn/diadanhhanoi/index.html",
+        "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Loạt súng chào cờ và lời hiệu triệu",
+      "thoi_gian": "Sáng 19/8/1945",
+      "dia_danh": "Quảng trường Nhà hát Lớn",
+      "mo_ta": "Sau loạt súng chào cờ và bài «Tiến quân ca», đại biểu Uỷ ban quân sự cách mạng đọc lời hiệu triệu của Việt Minh trước hàng chục vạn người có mặt trên quảng trường. Nghi thức ấy — cờ, quốc ca, lời hiệu triệu của một cơ quan quân sự — đánh dấu thời khắc cuộc mít tinh chuyển hẳn sang một hành động giành chính quyền có tổ chức. Quảng trường trước cửa Nhà hát Lớn từ đó mang tên Quảng trường Cách mạng Tháng Tám, và suốt những tháng độc lập đầu tiên từ tháng 9/1945 đến tháng 12/1946, nơi này trở thành chỗ diễn ra nhiều sự kiện lớn của cả nước.",
+      "hien": [
+        "nha-hat-lon",
+        "quan-chung",
+        "viet-minh",
+        "co-do-sao-vang",
+        "tu-ve-chien-dau",
+        "ho-hoan-kiem"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168",
+        "Báo Nhân Dân — Một quảng trường lịch sử — https://special.nhandan.vn/motquangtruonglichsu/index.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Mít tinh thành biểu tình vũ trang, chiếm Phủ Khâm sai",
+      "thoi_gian": "Trưa và chiều 19/8/1945",
+      "dia_danh": "Phủ Khâm sai (Bắc Bộ phủ)",
+      "mo_ta": "Cuộc mít tinh trở thành cuộc biểu tình vũ trang tiến vào chiếm các cơ sở của chính phủ bù nhìn. Dòng người chia thành nhiều ngả, có các đội tự vệ chiến đấu dẫn đầu, đi chiếm các công sở và chiếm lĩnh các vị trí xung yếu. Trong Cách mạng Tháng Tám, lực lượng Việt Minh cùng nhân dân Hà Nội đã tiến công và chiếm giữ Bắc Bộ phủ — cơ quan đầu não của chính quyền tay sai ở Bắc Bộ — ngay trong ngày 19/8/1945. Bài viết của Báo Quân đội nhân dân chép tên cơ quan này là «Phủ khâm sứ», còn chuyên đề của Báo Nhân Dân chép «Phủ Khâm sai» và «Bắc Bộ phủ»; cả hai cùng nói về một mục tiêu tiến công.",
+      "hien": [
+        "phu-kham-sai",
+        "mui-chiem-phu-kham-sai",
+        "tu-ve-chien-dau",
+        "quan-chung",
+        "nha-hat-lon",
+        "co-do-sao-vang"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Địa danh Hà Nội trong Cách mạng Tháng Tám — https://special.nhandan.vn/diadanhhanoi/index.html",
+        "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Trại Bảo an, Sở Cảnh sát, Sở Bưu điện",
+      "thoi_gian": "Chiều 19/8/1945",
+      "dia_danh": "Trại lính Bảo an · Sở Cảnh sát · Sở Bưu điện",
+      "mo_ta": "Cùng với Phủ Khâm sai, đoàn biểu tình vũ trang tiến vào chiếm Trại lính Bảo an và các cơ sở khác của chính phủ bù nhìn; các đội tự vệ chiến đấu dẫn đầu đi chiếm những vị trí xung yếu như Phủ Khâm sai, Sở Bưu điện và Sở Cảnh sát. Chiếm được bưu điện là cắt đứt khả năng liên lạc của bộ máy cũ, chiếm được trại Bảo an và Sở Cảnh sát là lấy đi lực lượng vũ trang cuối cùng còn trong tay chính quyền bù nhìn. Cuộc khởi nghĩa ở Hà Nội thành công mà không phải nổ ra một trận đánh lớn nào.",
+      "hien": [
+        "trai-bao-an-binh",
+        "so-canh-sat",
+        "so-buu-dien",
+        "mui-chiem-trai-bao-an",
+        "mui-chiem-so-canh-sat",
+        "tu-ve-chien-dau",
+        "quan-chung",
+        "cot-co-ha-noi"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Địa danh Hà Nội trong Cách mạng Tháng Tám — https://special.nhandan.vn/diadanhhanoi/index.html",
+        "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "20/8/1945: chính quyền cách mạng ra mắt",
+      "thoi_gian": "20/8/1945",
+      "dia_danh": "Hà Nội",
+      "mo_ta": "Ngày 20/8, Uỷ ban Nhân dân cách mạng Bắc Bộ và Hà Nội chính thức thành lập. Từ Hà Nội, làn sóng cách mạng toả đi khắp nơi, cả nước vùng dậy đấu tranh giành chính quyền và liên tiếp giành thắng lợi. Cuộc khởi nghĩa giành chính quyền của nhân dân Hà Nội thành công có ý nghĩa đặc biệt quan trọng, vì trong lịch sử nghìn năm của mình, Hà Nội luôn chiếm giữ vị trí chiến lược đặc biệt về chính trị, kinh tế, văn hoá và quân sự của cả nước; thành công của Hà Nội đã cổ vũ, động viên nhân dân cả nước vùng dậy phá tan xích xiềng nô lệ.",
+      "hien": [
+        "uy-ban-nhan-dan-cach-mang",
+        "phu-kham-sai",
+        "nha-hat-lon",
+        "co-do-sao-vang",
+        "viet-minh",
+        "quan-chung",
+        "lang-lan-can"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168"
       ]
     }
   ],
@@ -119,8 +402,11 @@
   "y_nghia": "Một trong ba thắng lợi quyết định của Cách mạng Tháng Tám (cùng Huế 23/8, Sài Gòn 25/8), giành chính quyền tại Thủ đô — trung tâm chính trị cả nước.",
   "trang_thai": "draft",
   "nguon": [
+    "Báo Quân đội nhân dân — Ngày 19-8-1945: Khởi nghĩa giành chính quyền ở Hà Nội — https://www.qdnd.vn/chinh-tri/tin-tuc/ngay-19-8-1945-khoi-nghia-gianh-chinh-quyen-o-ha-noi-419168",
+    "Báo Nhân Dân — Địa danh Hà Nội trong Cách mạng Tháng Tám — https://special.nhandan.vn/diadanhhanoi/index.html",
+    "Báo Nhân Dân — Một quảng trường lịch sử — https://special.nhandan.vn/motquangtruonglichsu/index.html",
+    "Báo Nhân Dân — Cách mạng tháng Tám 1945, thắng lợi của ý chí độc lập dân tộc Việt Nam — https://special.nhandan.vn/Cach-mang-thang-Tam-1945-thang-loi-cua-y-chi-doc-lap-dan-toc-Viet-Nam/index.html",
     "sknc.qdnd.vn — Tổng khởi nghĩa 19/8/1945 ở Hà Nội",
-    "qdnd.vn — Ngày 19-8-1945 khởi nghĩa giành chính quyền Hà Nội",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [

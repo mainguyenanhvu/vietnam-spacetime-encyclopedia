@@ -3,6 +3,7 @@
   "id": "bach-dang-1288",
   "ten": "Trận Bạch Đằng 1288",
   "nam": 1288,
+  "thoi_gian": "30-3-1288 – 9-4-1288 (chiến dịch 10 ngày đêm)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Hưng Đạo Đại Vương Trần Quốc Tuấn",
   "doi_thu": "Quân Nguyên (Ô Mã Nhi, Thoát Hoan)",
@@ -12,192 +13,447 @@
     "hai-phong"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Lực lượng tham chiến chỉ bằng nửa quân giặc",
+      "don_vi": [
+        "Bộ chỉ huy chiến dịch do Trần Hưng Đạo đứng đầu, chỉ huy sở đặt ở căn cứ Trúc Động cuối sông Giá",
+        "Thượng hoàng Trần Thánh Tông và vua Trần Nhân Tông chỉ huy lực lượng mở màn, chỉ huy sở ở khu vực núi Kính Chủ (Kinh Môn, Hải Dương)",
+        "Đạo quân tuyển mộ từ hai lộ Hồng và Khoái do tướng quân Nguyễn Khoái chỉ huy",
+        "Cấm quân của vua Trần đánh vào mé sau đội hình giặc",
+        "Thuỷ binh, bộ binh và dân binh mai phục trong các nhánh sông và rừng cây hai bờ"
+      ],
+      "vu_khi": [
+        "Trận địa cọc hàng nghìn thân cây, chủ yếu là lim đẽo nhọn đầu, đóng ngầm khắp hạ lưu Bạch Đằng và cửa vào sông Chanh",
+        "Rặng đá ngầm Ghềnh Cốc chắn từ bờ phải ra giữa dòng",
+        "Bè cỏ tẩm dầu thả trôi để hoả công",
+        "Đoàn khinh chu — thuyền nhẹ — dùng khiêu chiến, nhử địch"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "Đoàn chiến thuyền hơn 400 chiếc",
+          "nguon": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930"
+        },
+        {
+          "so": "Sách An Nam chí lược nói gọn một lần là 500 chiếc",
+          "nguon": "An Nam chí lược, dẫn trong Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930"
+        }
+      ],
+      "don_vi": [
+        "Đạo thuỷ quân do Ô Mã Nhi, Phàn Tiếp, Trương Ngọc chỉ huy, có thân vương Tích Lệ Cơ đi cùng",
+        "Đội kỵ bộ hộ tống trên đường bộ do Trình Bằng Phi và A Truật chỉ huy",
+        "Trấn Nam vương Thoát Hoan cầm cánh kỵ bộ rút sau, theo đường Lạng Sơn"
+      ],
+      "vu_khi": [
+        "Chiến thuyền đóng từ hai trung tâm Phúc Kiến và Quảng Đông"
+      ]
+    },
+    "nguon": [
+      "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+      "Báo Quân đội nhân dân — Đánh vào chỗ yếu của giặc trong trận Bạch Đằng (4-1288) — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/danh-vao-cho-yeu-cua-giac-trong-tran-bach-dang-4-1288-438616"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Hai bài của Báo Quân đội nhân dân chép hai con số, nêu cả hai. Bài về chiến dịch Bạch Đằng chép toàn bộ cánh quân thuỷ bị tiêu diệt, không một chiếc thuyền nào chạy thoát về nước, 5 vạn quân thuỷ cùng toàn bộ tướng lĩnh đầu sỏ Ô Mã Nhi, Phàn Tiếp, Trương Ngọc và thân vương Tích Lệ Cơ đều bị giết hoặc bị bắt. Bài dẫn «Bách khoa tri thức Quốc phòng toàn dân» chép toàn bộ 8 vạn quân địch bị tiêu diệt và bắt sống, 400 thuyền chiến bị đắm và bị ta chiếm.",
+    "nguon": [
+      "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+      "Báo Quân đội nhân dân — Trận Bạch Đằng (1288) — https://ct.qdnd.vn/clb-chien-si/tran-bach-dang-1288-529330"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          420
-        ],
-        [
-          500,
-          400
-        ],
-        [
-          1000,
-          440
-        ]
+        [110, 118],
+        [250, 148],
+        [388, 188],
+        [500, 230]
       ],
-      "nhan": "Sông Bạch Đằng"
+      "nhan": "Sông Kinh Thầy"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [500, 230],
+        [618, 288],
+        [738, 348],
+        [858, 418],
+        [952, 468]
+      ],
+      "nhan": "Sông Đá Bạc – Bạch Đằng"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [500, 230],
+        [522, 338],
+        [562, 438]
+      ],
+      "nhan": "Sông Giá"
     },
     {
       "kieu": "duong",
       "diem": [
-        [
-          100,
-          60
-        ],
-        [
-          350,
-          150
-        ],
-        [
-          550,
-          260
-        ]
+        [130, 178],
+        [280, 228],
+        [428, 288],
+        [560, 358],
+        [690, 428]
       ],
-      "nhan": "Đường rút bộ binh Thoát Hoan"
+      "nhan": "Đường bộ hộ tống ra biển"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [648, 486],
+        [788, 462],
+        [872, 516],
+        [742, 556],
+        [628, 544]
+      ],
+      "nhan": "Rừng hai bờ Bạch Đằng"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 398],
+        [952, 438],
+        [972, 590],
+        [1000, 592]
+      ],
+      "nhan": "Biển"
     }
   ],
   "phan_tu": [
     {
-      "id": "coc-yen-giang",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 450,
-      "y": 440,
-      "nhan": "Bãi cọc Yên Giang"
+      "id": "van-kiep",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 104,
+      "y": 86,
+      "nhan": "Vạn Kiếp",
+      "quy_mo": "Thoát Hoan co cụm"
     },
     {
-      "id": "quan-ta-mai-phuc",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 380,
-      "y": 500,
-      "nhan": "Quân Trần Quốc Tuấn mai phục"
-    },
-    {
-      "id": "thuyen-dich-om-nhi",
+      "id": "doan-thuyen-nguyen",
       "kieu": "thuyen",
       "ben": "dich",
-      "x": 880,
-      "y": 380,
-      "nhan": "Thuỷ binh Ô Mã Nhi"
+      "x": 252,
+      "y": 114,
+      "nhan": "Đoàn chiến thuyền Nguyên",
+      "quy_mo": "Hơn 400 chiếc — Ô Mã Nhi, Phàn Tiếp"
+    },
+    {
+      "id": "ky-bo-ho-tong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 162,
+      "y": 218,
+      "nhan": "Kỵ bộ hộ tống",
+      "quy_mo": "Trình Bằng Phi · A Truật"
+    },
+    {
+      "id": "chi-huy-so-hai-vua",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 336,
+      "y": 60,
+      "nhan": "Chỉ huy sở hai vua",
+      "quy_mo": "Núi Kính Chủ, Kinh Môn"
+    },
+    {
+      "id": "mui-danh-mo-man",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [332, 92],
+      "den": [274, 140],
+      "nhan": "Phục kích mở màn"
+    },
+    {
+      "id": "pha-cau-duong",
+      "kieu": "cong-su",
+      "x": 428,
+      "y": 322,
+      "nhan": "Phá sập cầu đường",
+      "quy_mo": "Ở Đông Triều, ngày 4-4"
+    },
+    {
+      "id": "nga-ba-dun",
+      "kieu": "dia-danh",
+      "x": 508,
+      "y": 196,
+      "nhan": "Ngã ba Đụn"
+    },
+    {
+      "id": "truc-dong",
+      "kieu": "cong-su",
+      "x": 570,
+      "y": 396,
+      "nhan": "Căn cứ Trúc Động",
+      "quy_mo": "Chỉ huy sở Trần Hưng Đạo"
+    },
+    {
+      "id": "mui-tien-quan-song-gia",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [512, 252],
+      "den": [540, 356],
+      "nhan": "Tiền quân rẽ vào sông Giá"
+    },
+    {
+      "id": "mui-xua-khoi-song-gia",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [572, 356],
+      "den": [524, 258],
+      "nhan": "Đánh bật khỏi sông Giá"
+    },
+    {
+      "id": "cam-quan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 618,
+      "y": 200,
+      "nhan": "Cấm quân của vua Trần"
+    },
+    {
+      "id": "mui-chan-hau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [640, 232],
+      "den": [746, 336],
+      "nhan": "Chẹn đường lộn về Vạn Kiếp"
+    },
+    {
+      "id": "khinh-chu",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 704,
+      "y": 286,
+      "nhan": "Đoàn khinh chu khiêu chiến"
     },
     {
       "id": "mui-nhu-dich",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        520,
-        460
-      ],
-      "den": [
-        800,
-        390
-      ],
-      "nhan": "Nhử địch vào bãi cọc lúc triều lên"
+      "tu": [724, 314],
+      "den": [802, 376],
+      "nhan": "Nhử địch vào bãi cọc"
     },
     {
-      "id": "thuyen-dich-mac-can",
+      "id": "bai-coc",
+      "kieu": "cong-su",
+      "x": 806,
+      "y": 402,
+      "nhan": "Trận địa cọc Bạch Đằng",
+      "quy_mo": "Hàng nghìn thân lim đóng ngầm"
+    },
+    {
+      "id": "be-co-tam-dau",
       "kieu": "thuyen",
-      "ben": "dich",
-      "x": 630,
-      "y": 450,
-      "nhan": "Thuyền địch mắc cọc, vỡ"
+      "ben": "ta",
+      "x": 616,
+      "y": 478,
+      "nhan": "Bè cỏ tẩm dầu"
     },
     {
-      "id": "mui-phan-cong",
+      "id": "mui-hoa-cong",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        380,
-        490
-      ],
-      "den": [
-        620,
-        445
-      ],
-      "nhan": "Tổng phản công"
+      "tu": [664, 462],
+      "den": [780, 420],
+      "nhan": "Thả bè lửa xuôi dòng"
     },
     {
-      "id": "om-nhi-bi-bat",
+      "id": "quan-nguyen-khoai",
       "kieu": "quan",
-      "ben": "dich",
-      "x": 700,
-      "y": 500,
-      "nhan": "Ô Mã Nhi bị bắt sống"
+      "ben": "ta",
+      "x": 884,
+      "y": 322,
+      "nhan": "Nguyễn Khoái",
+      "quy_mo": "Quân hai lộ Hồng và Khoái"
     },
     {
-      "id": "quan-dich-bo-rut",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 250,
-      "y": 130,
-      "nhan": "Thoát Hoan rút bộ binh qua Lạng Sơn"
+      "id": "ghenh-coc",
+      "kieu": "cong-su",
+      "x": 946,
+      "y": 418,
+      "nhan": "Ghềnh Cốc"
+    },
+    {
+      "id": "cua-song-chanh",
+      "kieu": "dia-danh",
+      "x": 902,
+      "y": 520,
+      "nhan": "Cửa sông Chanh"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 500,
-      "y": 330,
-      "nhan": "Toàn thắng, kết thúc kháng chiến lần III"
+      "x": 196,
+      "y": 404,
+      "nhan": "Toàn thắng 9-4-1288"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Dự đoán đường rút, đóng lại bãi cọc",
-      "mo_ta": "Trần Quốc Tuấn tiên liệu quân Nguyên sẽ rút qua sông Bạch Đằng, cho đóng cọc gỗ đầu bịt sắt xuống lòng sông khu vực Yên Giang.",
-      "thuy_trieu": "len",
+      "tieu_de": "Quân Nguyên co cụm ở Vạn Kiếp, quyết rút về nước",
+      "thoi_gian": "Đầu tháng 3-1288",
+      "dia_danh": "Vạn Kiếp",
+      "mo_ta": "Sau hơn hai tháng làm cuộc chiến tranh xâm lược lần thứ ba, cục diện chiến trường dồn thế bất lợi về phía quân Nguyên, buộc chúng thu tất cả lực lượng thuỷ bộ về co cụm ở vùng Vạn Kiếp. Tháng 2-1288, tin đoàn thuyền lương của Trương Văn Hổ bị tiêu diệt gọn khiến các đồn trại quân Nguyên trên đất Đại Việt xôn xao; gián điệp Thoát Hoan phái đi cầu lương không ra nổi khỏi biên giới. Các bộ tướng bàn với Thoát Hoan rằng không có thành trì kiên cố, kho tàng đã cạn khô, chỗ hiểm yếu thì quân Việt chiếm cả rồi, chi bằng rút quân về.",
       "hien": [
-        "coc-yen-giang",
-        "quan-dich-bo-rut"
+        "van-kiep",
+        "doan-thuyen-nguyen",
+        "ky-bo-ho-tong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+        "Báo Quân đội nhân dân — Đánh vào chỗ yếu của giặc trong trận Bạch Đằng (4-1288) — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/danh-vao-cho-yeu-cua-giac-trong-tran-bach-dang-4-1288-438616"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Bố trí phục binh hai bên bờ",
-      "mo_ta": "Quân Trần mai phục ở các nhánh sông, chờ đoàn thuyền của Ô Mã Nhi lọt vào trận địa.",
-      "thuy_trieu": "len",
+      "tieu_de": "Giặc chọn bảo toàn hạm thuyền — ta chọn ngay nó làm mục tiêu",
+      "thoi_gian": "Tháng 3-1288",
+      "dia_danh": "Vạn Kiếp",
+      "mo_ta": "Bộ chỉ huy giặc bàn hai chủ trương cho hơn 400 chiến thuyền: phá huỷ tại chỗ, hay bảo toàn đưa về. Chúng chọn phương án hai — vừa giữ đoàn thuyền đã tốn rất nhiều công của để chế tạo, vừa giao thêm nhiệm vụ chuyên chở của cải cướp được theo đường sông ra biển. Từ đó thành hình mục tiêu chiến lược của Bộ chỉ huy nhà Trần: tiêu diệt toàn bộ đạo quân thuỷ của giặc ngay trên đường rút chạy. Đạo quân thuỷ được chọn đánh trước vì số lượng ít hơn bộ binh chủ lực, không giỏi chiến đấu bằng, mà lại tốn nhiều công sức xây dựng.",
       "hien": [
-        "coc-yen-giang",
-        "quan-ta-mai-phuc"
+        "van-kiep",
+        "doan-thuyen-nguyen",
+        "truc-dong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+        "Báo Quân đội nhân dân — Trận Bạch Đằng (1288) — https://ct.qdnd.vn/clb-chien-si/tran-bach-dang-1288-529330"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Nhử địch vào bãi cọc lúc triều lên",
-      "mo_ta": "Thuyền nhẹ ra khiêu chiến rồi giả thua, dẫn dụ đoàn thuyền chiến của Ô Mã Nhi tiến sâu qua khu vực cắm cọc.",
-      "thuy_trieu": "len",
+      "tieu_de": "30-3: thuỷ quân rời Vạn Kiếp, bị chặn đánh ngay từ đầu",
+      "thoi_gian": "30-3-1288 – 7-4-1288",
+      "dia_danh": "Vạn Kiếp · sông Kinh Thầy · núi Kính Chủ",
+      "mo_ta": "Ngày 30-3-1288 đoàn chiến thuyền rời Vạn Kiếp; lực lượng mở màn chiến dịch là bộ phận quân dân nhà Trần do chính Thượng hoàng Trần Thánh Tông và vua Trần Nhân Tông chỉ huy, đóng chỉ huy sở ở khu vực núi Kính Chủ bên bờ phải sông Kinh Thầy. Những trận phục kích và đánh tỉa liên tục nhằm ba mục đích: tiêu hao địch, cầm chân chúng để có thêm thời gian bố trí chiến trường Bạch Đằng, và phá thế nương tựa lẫn nhau giữa cánh quân thuỷ với đội kỵ bộ hộ tống. Quãng đường thường chỉ đi chưa hết một ngày, giặc phải mất hơn một tuần lễ mới tới nơi.",
       "hien": [
-        "coc-yen-giang",
-        "quan-ta-mai-phuc",
-        "thuyen-dich-om-nhi",
-        "mui-nhu-dich"
+        "doan-thuyen-nguyen",
+        "chi-huy-so-hai-vua",
+        "mui-danh-mo-man",
+        "ky-bo-ho-tong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Triều rút, cọc lộ, thuyền địch mắc kẹt",
-      "mo_ta": "Nước rút nhanh, bãi cọc nhô lên đâm thủng, làm vỡ và mắc cạn hàng loạt thuyền chiến quân Nguyên.",
-      "thuy_trieu": "xuong",
+      "tieu_de": "4-4: phá cầu đường ở Đông Triều, tách kỵ bộ khỏi thuỷ quân",
+      "thoi_gian": "4-4-1288",
+      "dia_danh": "Đông Triều",
+      "mo_ta": "Đội kỵ bộ hộ tống đi song song với cánh quân thuỷ, cách khoảng hai đến ba cây số. Sau năm ngày hành quân trên cung đường chỉ khoảng 30 km, đến ngày 4-4 chúng mới tới được Đông Triều thì vừa bị quân dân nhà Trần chặn đánh, vừa mất cả đường lẫn cầu sang sông vì trận phá sập cầu đường. Trình Bằng Phi và A Truật đành cho quân quay về Vạn Kiếp, bỏ mặc cánh quân thuỷ tự lo liệu. Thế ỷ giốc giữa hai cánh quân giặc bị cắt đứt hoàn toàn.",
       "hien": [
-        "coc-yen-giang",
-        "thuyen-dich-mac-can"
+        "ky-bo-ho-tong",
+        "pha-cau-duong",
+        "doan-thuyen-nguyen",
+        "van-kiep"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+        "Báo Quân đội nhân dân — Trận Bạch Đằng (1288) — https://ct.qdnd.vn/clb-chien-si/tran-bach-dang-1288-529330"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Tổng phản công, bắt sống Ô Mã Nhi",
-      "mo_ta": "Quân Trần từ hai bờ và thượng nguồn đánh ập xuống, tiêu diệt phần lớn đạo thủy binh, bắt sống chủ tướng Ô Mã Nhi.",
-      "thuy_trieu": "xuong",
+      "tieu_de": "8-4: xua giặc khỏi thuỷ đạo sông Giá",
+      "thoi_gian": "7-4 – 8-4-1288",
+      "dia_danh": "Ngã ba Đụn · sông Giá · căn cứ Trúc Động",
+      "mo_ta": "Tới Ngã ba Đụn ngày 7-4, giặc còn một lựa chọn nguy hiểm: ngoài sông Đá Bạc còn dòng sông Giá, mà cuối sông Giá chính là căn cứ Trúc Động — chỉ huy sở chiến dịch và là trận địa mai phục của một lực lượng lớn. Hai bài báo chép hai tên tướng dẫn tiền quân rẽ vào sông Giá ngày 8-4: một bài chép Lưu Khuê, một bài chép Phàn Tiếp được lệnh đem một bộ phận tiền quân vào làm cánh phải. Cả hai đều chép kết cục giống nhau: quân ta đánh bật tiền quân giặc trở ra, rồi nghi binh bằng cách thả mo cau đầy mặt nước lối vào, khiến chúng bỏ hẳn đường sông Giá mà theo sông Đá Bạc.",
       "hien": [
-        "thuyen-dich-mac-can",
-        "mui-phan-cong",
-        "om-nhi-bi-bat"
+        "nga-ba-dun",
+        "mui-tien-quan-song-gia",
+        "truc-dong",
+        "mui-xua-khoi-song-gia",
+        "doan-thuyen-nguyen"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+        "Báo Quân đội nhân dân — Trận Bạch Đằng (1288) — https://ct.qdnd.vn/clb-chien-si/tran-bach-dang-1288-529330"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Toàn thắng, kết thúc kháng chiến lần III",
-      "mo_ta": "Chiến thắng Bạch Đằng buộc Thoát Hoan phải rút toàn bộ quân Nguyên về nước, chấm dứt âm mưu xâm lược Đại Việt lần thứ ba.",
+      "tieu_de": "Bố trí xong trận địa Bạch Đằng",
+      "thoi_gian": "Tuần cuối tháng 3 đến đầu tháng 4-1288",
+      "dia_danh": "Hạ lưu Bạch Đằng · cửa sông Chanh · Ghềnh Cốc",
+      "mo_ta": "Trận địa cọc gồm hàng nghìn thân cây, chủ yếu là lim đẽo nhọn đầu, đóng ngầm đầy hạ lưu Bạch Đằng và cửa vào sông Chanh, chờ đến giờ triều xuống thì đội nước nhô lên: vừa đâm thủng thuyền giặc, vừa gây ùn tắc rối loạn đội hình, và bịt kín lối thoát ra biển theo sông Chanh. Lối thoát theo cửa Bạch Đằng thì có đạo quân hai lộ Hồng và Khoái của tướng Nguyễn Khoái dàn sẵn, kết hợp sức cản của rặng đá ngầm Ghềnh Cốc giăng từ bờ phải ra giữa dòng. Thuỷ binh, bộ binh và dân binh mai phục đầy trong các nhánh sông và rừng cây hai bờ; bè cỏ tẩm dầu giấu kỹ ở thượng nguồn.",
+      "hien": [
+        "bai-coc",
+        "ghenh-coc",
+        "cua-song-chanh",
+        "quan-nguyen-khoai",
+        "be-co-tam-dau",
+        "truc-dong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Sáng 9-4: khinh chu khiêu chiến, nhử địch lúc triều lên",
+      "thoi_gian": "Tảng sáng 9-4-1288",
+      "dia_danh": "Cửa sông Bạch Đằng",
+      "thuy_trieu": "len",
+      "mo_ta": "Chiến thuyền của Ô Mã Nhi đến sông Bạch Đằng thì gặp những thuyền chiến nhẹ của thuỷ binh Đại Việt ra khiêu chiến. Ô Mã Nhi thúc quân tiến đánh, thuyền ta giả thua quay đầu chạy nhử. Lúc bấy giờ vào tảng sáng, nước thuỷ triều đang lên, cả vùng sông nước mênh mông khiến chiến thuyền giặc bám theo sát nút, càng ham diệt gọn đối phương. Đoàn khinh chu dụ giặc lao nhanh theo dòng, đúng nhịp mà bộ chỉ huy chiến dịch đã tính trước.",
+      "hien": [
+        "khinh-chu",
+        "mui-nhu-dich",
+        "doan-thuyen-nguyen",
+        "bai-coc"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Đánh vào chỗ yếu của giặc trong trận Bạch Đằng (4-1288) — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/danh-vao-cho-yeu-cua-giac-trong-tran-bach-dang-4-1288-438616",
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Triều rút — tổng công kích, hoả công, bắt sống chủ tướng",
+      "thoi_gian": "Từ giữa trưa đến chập tối 9-4-1288",
+      "dia_danh": "Hạ lưu Bạch Đằng",
       "thuy_trieu": "xuong",
+      "mo_ta": "Khi nước triều bắt đầu rút, thuyền của Nguyễn Khoái quay trở lại, thuỷ quân và bộ binh phục sẵn bên các nhánh sông và hai bờ đồng loạt công kích. Chiến thuyền địch quay đầu tìm đường ra biển nhưng trận địa cọc ngầm đã đâm thủng thuyền, dồn ứ đội hình lại; bè cỏ tẩm dầu thả trôi xuống táp vào đoàn thuyền mà đốt phá; cấm quân của vua Trần đánh vào mé sau, chẹn không cho chúng chạy lộn về Vạn Kiếp. Nguyễn Khoái dẫn quân dũng nghĩa Thánh dực bắt được Bình chương Áo Lỗ Xích; hai vua đem quân tiếp đến, tung quân đại chiến.",
+      "hien": [
+        "bai-coc",
+        "quan-nguyen-khoai",
+        "be-co-tam-dau",
+        "mui-hoa-cong",
+        "cam-quan",
+        "mui-chan-hau",
+        "ghenh-coc"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Đánh vào chỗ yếu của giặc trong trận Bạch Đằng (4-1288) — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/danh-vao-cho-yeu-cua-giac-trong-tran-bach-dang-4-1288-438616",
+        "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Toàn thắng — kết thúc kháng chiến lần thứ ba",
+      "thoi_gian": "Chiều tối 9-4-1288",
+      "dia_danh": "Bạch Đằng · cửa sông Chanh",
+      "mo_ta": "Cuộc chiến đấu diễn ra từ sáng sớm đến chập tối ngày 9-4-1288 thì kết thúc. Toàn bộ đạo quân giặc rút theo đường thuỷ bị tiêu diệt và bị bắt, không một chiếc thuyền nào chạy thoát được về nước; Ô Mã Nhi, Phàn Tiếp, Tích Lệ Cơ đều bị tóm sống. Trên bộ, đạo quân của Phạm Ngũ Lão cùng vương hầu, hương binh các làng xã và thổ binh các động bản chặn đánh cánh rút theo đường bộ về ải Tư Minh. Đòn Bạch Đằng tháng 4-1288 góp phần quyết định thắng lợi cuộc kháng chiến lần thứ ba.",
       "hien": [
         "co-thang",
-        "quan-dich-bo-rut"
+        "cua-song-chanh",
+        "bai-coc",
+        "van-kiep"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Đánh vào chỗ yếu của giặc trong trận Bạch Đằng (4-1288) — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/danh-vao-cho-yeu-cua-giac-trong-tran-bach-dang-4-1288-438616"
       ]
     }
   ],
@@ -207,7 +463,10 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Cục Di sản Văn hoá (dsvh.gov.vn) — Bãi cọc Yên Giang, DTQG đặc biệt Bạch Đằng"
+    "Cục Di sản Văn hoá (dsvh.gov.vn) — Bãi cọc Yên Giang, DTQG đặc biệt Bạch Đằng",
+    "Báo Quân đội nhân dân — Chiến dịch Bạch Đằng năm 1288 đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+    "Báo Quân đội nhân dân — Đánh vào chỗ yếu của giặc trong trận Bạch Đằng (4-1288) — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/danh-vao-cho-yeu-cua-giac-trong-tran-bach-dang-4-1288-438616",
+    "Báo Quân đội nhân dân — Trận Bạch Đằng (1288) — https://ct.qdnd.vn/clb-chien-si/tran-bach-dang-1288-529330"
   ],
   "trich_van_tich": [
     {
@@ -217,10 +476,22 @@
       "buoc": 1
     },
     {
+      "sach": "Lời các bộ tướng bàn với Thoát Hoan — dẫn trong bài của Báo Quân đội nhân dân",
+      "doan": "Quân ta đóng ở đây không có thành trì kiên cố, kho tàng thì đã cạn khô, vả lại tiết xuân sang hạ, khí trời nóng lực khó chịu, mà những chỗ hiểm yếu thì bị quân Việt chiếm lấy cả rồi, chi bằng hãy rút quân về rồi sau sẽ liệu kế khác",
+      "nguon_trich": "Báo Quân đội nhân dân — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/danh-vao-cho-yeu-cua-giac-trong-tran-bach-dang-4-1288-438616",
+      "buoc": 1
+    },
+    {
+      "sach": "Vũ bị chế thắng chí",
+      "doan": "Lấy thuyền Phúc Kiến (to lớn) mà đánh thuyền Nhật Bản (nhỏ bé) thì như lấy xe mà nghiền bọ ngựa",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/chien-dich-bach-dang-nam-1288-da-dien-ra-nhu-the-nao-500930",
+      "buoc": 2
+    },
+    {
       "sach": "Đại Việt sử ký toàn thư",
       "doan": "Nguyễn Khoái dẫn quân dũng nghĩa Thánh dực đánh nhau với giặc, bắt được Bình chương Áo Lỗ Xích. Hai vua đem quân tiếp đến, tung quân đại chiến. Quân Nguyên chết đuối nhiều không kể xiết. Nước sông vì thế đỏ cả. Quân ta bắt được hơn bốn trăm thuyền, Nội minh tự Đỗ Hành bắt được Ô Mã Nhi, Tích Lệ Cơ dâng lên Thượng hoàng...",
       "nguon_trich": "Báo Quảng Ninh — https://baoquangninh.vn/tran-thuy-chien-lon-nhat-lich-su-viet-nam-3231888.html",
-      "buoc": 5
+      "buoc": 8
     }
   ]
 }

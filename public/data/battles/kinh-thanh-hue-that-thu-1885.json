@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Kinh thành Huế thất thủ 1885 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Nội dung bám sát mo_ta đã duyệt trong chien-dich-tran-danh.json, không suy diễn thêm. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Kinh thành Huế thất thủ 1885 — MINH HOẠ theo diễn biến chính sử và tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Ngày tháng thời Nguyễn chép theo âm lịch: đêm 22 rạng 23 tháng 5 năm Ất Dậu ứng với đêm 4 rạng 5/7/1885 dương lịch — trong dữ liệu ghi cả hai.",
   "id": "kinh-thanh-hue-that-thu-1885",
   "ten": "Kinh thành Huế thất thủ (1885)",
   "nam": 1885,
@@ -7,224 +7,384 @@
   "chi_huy": "Tôn Thất Thuyết, Tôn Thất Lệ",
   "doi_thu": "Pháp (Roussel de Courcy)",
   "dia_diem": "Kinh thành Huế — đồn Mang Cá và Toà Khâm sứ Pháp",
+  "thoi_gian": "Đêm 4 rạng sáng 5/7/1885 (đêm 22 rạng 23 tháng 5 năm Ất Dậu)",
   "lien_quan_tinh": [
     "hue"
   ],
-  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          200,
-          350
-        ],
-        [
-          500,
-          330
-        ],
-        [
-          800,
-          370
-        ]
+        [56, 336],
+        [300, 312],
+        [560, 302],
+        [906, 334]
       ],
       "nhan": "Sông Hương"
     },
     {
       "kieu": "duong",
       "diem": [
-        [
-          500,
-          250
-        ],
-        [
-          650,
-          150
-        ],
-        [
-          850,
-          80
-        ]
+        [312, 236],
+        [196, 158],
+        [92, 104]
       ],
-      "nhan": "Đường ra sơn phòng Tân Sở"
+      "nhan": "Đường ra Quảng Trị — Tân Sở"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [36, 78],
+        [148, 36],
+        [262, 88]
+      ],
+      "nhan": "Dãy Trường Sơn phía tây"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [330, 118],
+        [702, 118],
+        [702, 268],
+        [330, 268],
+        [330, 118]
+      ],
+      "nhan": "Vòng tường Kinh thành Huế"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-de-courcy",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 670,
-      "y": 400,
-      "nhan": "De Courcy đòi vào chầu có vũ trang"
-    },
-    {
-      "id": "quan-ta-ton-that-thuyet",
-      "kieu": "quan",
+      "id": "kinh-thanh",
+      "kieu": "thanh",
       "ben": "ta",
-      "x": 300,
-      "y": 400,
-      "nhan": "Tôn Thất Thuyết quyết định ra tay trước"
+      "x": 462,
+      "y": 176,
+      "nhan": "Kinh thành Huế"
     },
     {
       "id": "don-mang-ca",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 250,
-      "y": 460,
-      "nhan": "Đồn Mang Cá"
+      "x": 664,
+      "y": 144,
+      "nhan": "Đồn Mang Cá — quân Pháp chiếm giữ từ năm 1884"
     },
     {
       "id": "toa-kham-su",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 550,
-      "y": 460,
-      "nhan": "Toà Khâm sứ Pháp"
+      "x": 604,
+      "y": 416,
+      "nhan": "Toà Khâm sứ Pháp — bờ nam sông Hương"
     },
     {
-      "id": "mui-tap-kich",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        300,
-        420
-      ],
-      "den": [
-        500,
-        450
-      ],
-      "nhan": "Tập kích hai mũi"
-    },
-    {
-      "id": "mui-dich-phan-cong",
-      "kieu": "mui-ten",
+      "id": "de-courcy",
+      "kieu": "quan",
       "ben": "dich",
-      "tu": [
-        600,
-        420
-      ],
-      "den": [
-        400,
-        380
-      ],
-      "nhan": "Pháp phản công"
+      "x": 806,
+      "y": 462,
+      "nhan": "Thống tướng De Courcy",
+      "quy_mo": "ngày 27/6/1885 đưa 4 đại đội lính thuỷ đánh bộ và hai tàu chiến từ Hải Phòng vào Huế"
     },
     {
-      "id": "kinh-thanh-hue",
-      "kieu": "thanh",
-      "x": 450,
-      "y": 330,
-      "nhan": "Kinh thành Huế"
-    },
-    {
-      "id": "vua-ham-nghi",
+      "id": "ton-that-thuyet",
       "kieu": "quan",
       "ben": "ta",
-      "x": 650,
-      "y": 180,
-      "nhan": "Vua Hàm Nghi ra Tân Sở"
+      "x": 356,
+      "y": 190,
+      "nhan": "Tôn Thất Thuyết — phái chủ chiến trong triều"
     },
     {
-      "id": "dia-diem-tan-so",
+      "id": "dai-bac",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 526,
+      "y": 244,
+      "nhan": "Đại bác đặt hướng về Toà Khâm sứ và đồn Mang Cá"
+    },
+    {
+      "id": "ton-that-le",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 414,
+      "y": 336,
+      "nhan": "Đạo quân Tôn Thất Lệ vượt sông Hương lúc nửa đêm"
+    },
+    {
+      "id": "thuy-binh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 224,
+      "y": 386,
+      "nhan": "Thuỷ binh triều đình phối hợp",
+      "quy_mo": "5.000 người"
+    },
+    {
+      "id": "mui-danh-kham-su",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [436, 354],
+      "den": [578, 400],
+      "nhan": "Đánh úp Toà Khâm sứ"
+    },
+    {
+      "id": "mui-danh-mang-ca",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [538, 208],
+      "den": [640, 156],
+      "nhan": "Đánh trại lính Pháp ở Mang Cá"
+    },
+    {
+      "id": "mui-phap-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [648, 300],
+      "den": [498, 216],
+      "nhan": "Sáng 5/7 quân Pháp phản công vào Kinh thành"
+    },
+    {
+      "id": "ton-that-nhan-dan",
       "kieu": "dia-danh",
-      "x": 850,
-      "y": 100,
-      "nhan": "Sơn phòng Tân Sở"
+      "x": 560,
+      "y": 74,
+      "nhan": "Hơn 1.500 người dân và binh lính ngã xuống trong đêm"
     },
     {
-      "id": "co-can-vuong",
+      "id": "ham-nghi-xuat-cung",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [402, 158],
+      "den": [232, 118],
+      "nhan": "Rước vua Hàm Nghi xuất cung, ra Quảng Trị"
+    },
+    {
+      "id": "tan-so",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 84,
+      "y": 84,
+      "nhan": "Thành Tân Sở — Cam Lộ, Quảng Trị"
+    },
+    {
+      "id": "chieu-can-vuong",
       "kieu": "co",
       "ben": "ta",
-      "x": 910,
-      "y": 150,
-      "nhan": "Chiếu Cần Vương"
+      "x": 148,
+      "y": 212,
+      "nhan": "Ngày 13/7/1885 — Dụ Cần Vương ban tại Tân Sở"
+    },
+    {
+      "id": "that-thu-kinh-do",
+      "kieu": "dia-danh",
+      "x": 840,
+      "y": 168,
+      "nhan": "Ngày 23 tháng 5 âm lịch — ngày thất thủ kinh đô"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Pháp ép triều đình, De Courcy đòi vào chầu có vũ trang",
-      "mo_ta": "Tháng 7/1885, tướng Pháp Roussel de Courcy gây sức ép, đòi vào điện làm lễ trình quốc thư với đội quân vũ trang hộ tống, khiến triều đình lo ngại âm mưu khống chế.",
+      "tieu_de": "Pháp quyết loại trừ phái chủ chiến khỏi triều đình Huế",
+      "thoi_gian": "Ngày 31/5/1885",
+      "dia_danh": "Paris — Huế",
+      "mo_ta": "Ngày 31/5/1885, Bộ trưởng Ngoại giao nước Pháp điện sang cho Lemaire phải tìm cách loại trừ Tôn Thất Thuyết khỏi triều đình Huế. Cùng hôm đó, Nội các Pháp còn cử tướng De Courcy sang Việt Nam nắm toàn quyền quân sự và chính trị. Trước đó, vì thấy phái chủ chiến có ý kháng cự, quân Pháp đã chiếm giữ Mang Cá ở thành Huế và bắt bỏ súng đại bác trên thành đi.",
       "hien": [
-        "kinh-thanh-hue",
-        "quan-dich-de-courcy"
+        "kinh-thanh",
+        "don-mang-ca",
+        "ton-that-thuyet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Tôn Thất Thuyết quyết định ra tay trước",
-      "mo_ta": "Nhận thấy nguy cơ, Thượng thư Tôn Thất Thuyết quyết định chủ động tấn công trước, chia quân triều đình làm hai mũi.",
+      "tieu_de": "De Courcy đưa quân thẳng vào Huế",
+      "thoi_gian": "Ngày 27/6/1885",
+      "dia_danh": "Hải Phòng — cửa Thuận An — Huế",
+      "mo_ta": "Ngày 27/6, De Courcy đưa 4 đại đội lính thuỷ đánh bộ và hai tàu chiến đi thẳng từ Hải Phòng vào Huế. Đến nơi, ông ta đòi mở cửa chính của Kinh thành cho cả quan Pháp lẫn quân lính cùng đi vào khi vào yết kiến vua Hàm Nghi. Triều đình thấy điều ấy trái quốc lễ, xin để thống tướng đi cửa giữa còn quân lính đi cửa hai bên; thống tướng nhất định không chịu, cũng không tiếp các quan Cơ mật viện sang bàn.",
       "hien": [
-        "kinh-thanh-hue",
-        "quan-ta-ton-that-thuyet"
+        "de-courcy",
+        "toa-kham-su",
+        "kinh-thanh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html",
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/can-kim-thoi-dai-nha-nguyen.-chuong-xiv.-loan-1-o-trung-ky.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Tập kích đồn Mang Cá và Toà Khâm sứ (đêm 22 rạng 23/5 Ất Dậu)",
-      "mo_ta": "Một mũi đánh đồn Mang Cá, mũi kia do Tôn Thất Lệ vượt sông Hương đánh Toà Khâm sứ Pháp, gây thiệt hại nặng ban đầu.",
+      "tieu_de": "Đêm 4/7/1885 — đặt đại bác, chia quân làm hai đạo",
+      "thoi_gian": "Ngày 4/7/1885, tức 22 tháng 5 âm lịch",
+      "dia_danh": "Kinh thành Huế — bờ bắc sông Hương",
+      "mo_ta": "Ngày 4/7/1885, tức 22 tháng 5 âm lịch, Tôn Thất Thuyết lệnh cho binh sĩ đặt đại bác hướng về phía Toà Khâm sứ và đồn Mang Cá, là hai địa điểm đóng quân của địch. Gần tối, Trần Xuân Soạn lần lượt cho đóng hết các cửa thành và đặt thêm súng thần công ở phía trên. Đêm đó, ông bí mật chia quân ở các dinh vệ làm hai đạo: một đạo do em trai ông là Tôn Thất Lệ chỉ huy, nửa đêm vượt sông Hương sang hợp với quân của Đề đốc thuỷ sư và Hiệp lý để đánh úp Toà Khâm sứ; bản thân ông cùng Trần Xuân Soạn ở bên này sông chỉ huy đánh vào trấn Bình Đài, lại cử một toán mai phục ở cầu Thanh Long để đánh úp Đại tá Pernot, chỉ huy đồn Mang Cá.",
       "hien": [
-        "don-mang-ca",
-        "toa-kham-su",
-        "mui-tap-kich"
+        "dai-bac",
+        "ton-that-thuyet",
+        "ton-that-le",
+        "thuy-binh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Pháp phản công, kinh thành thất thủ",
-      "mo_ta": "Khoảng 4 giờ sáng quân Pháp phản công; đến 9 giờ sáng 5/7/1885 kinh thành thất thủ, quân Pháp tràn vào Đại Nội.",
+      "tieu_de": "Nửa đêm nổ súng, đánh cùng lúc hai mục tiêu",
+      "thoi_gian": "1 giờ sáng ngày 5/7/1885",
+      "dia_danh": "Trấn Bình Đài · Toà Khâm sứ · đồn Mang Cá",
+      "mo_ta": "Đêm mùng 4 rạng sáng 5/7/1885, lúc quân Pháp đang khao thưởng quân đội, thì 1 giờ sáng Tôn Thất Thuyết và Trần Xuân Soạn cho bắn một phát đại bác làm hiệu lệnh để nhất tề tấn công vào trấn Bình Đài; đồng thời cánh quân của Tôn Thất Lệ ở bên kia sông cũng đồng loạt tấn công vào toà Khâm sứ và sứ quán Pháp, phối hợp cùng 5.000 thuỷ binh của triều đình. Bác sĩ quân y Pháp Hocquard ghi lại rằng quãng nửa đêm quân An Nam tấn công dữ dội trại lính của tiểu đoàn Zouaves, trong khi đại bác từ thành bắn từng loạt vào toà Khâm sứ nằm bên kia sông. Quân Pháp bị bất ngờ, chỉ yên lặng mà chống giữ.",
       "hien": [
-        "kinh-thanh-hue",
-        "mui-dich-phan-cong",
-        "quan-dich-de-courcy"
+        "mui-danh-kham-su",
+        "mui-danh-mang-ca",
+        "toa-kham-su",
+        "don-mang-ca"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html",
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/can-kim-thoi-dai-nha-nguyen.-chuong-xiv.-loan-1-o-trung-ky.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Tôn Thất Thuyết đưa vua Hàm Nghi ra sơn phòng Tân Sở",
-      "mo_ta": "Tôn Thất Thuyết hộ giá vua Hàm Nghi rời kinh thành, ra sơn phòng Tân Sở (Quảng Trị) lánh nạn.",
+      "tieu_de": "Sáng 5/7 quân Pháp phản công, Kinh thành thất thủ",
+      "thoi_gian": "Sáng 5/7/1885, tức 23 tháng 5 âm lịch",
+      "dia_danh": "Trong Kinh thành Huế",
+      "mo_ta": "Đến sáng ngày 23 tháng 5 âm lịch, quân Pháp phản công. Cả hai đạo quân của triều đình ở bên trong và bên ngoài chống không nổi, tan vỡ, tháo chạy về phía Lục Bộ và tràn ra cửa Đông Ba, tại đó bị một toán quân Pháp từ phía Cửa Trài tiến lên bao vây. Cuộc giết chóc tàn bạo chưa từng có đã xảy ra: hơn 1.500 người dân và binh lính triều đình ngã xuống trong đêm hôm đó vì trúng đạn của Pháp, hay do chen lấn giẫm đạp lên nhau khi cố vượt ra khỏi Kinh thành. Quân Nam hy sinh tới 1.200 – 1.500 người, trong khi quân Pháp chỉ chết 16 người và 80 bị thương; đối phương thu 812 súng thần công và 16.000 súng hoả mai.",
       "hien": [
-        "vua-ham-nghi",
-        "dia-diem-tan-so"
+        "mui-phap-phan-cong",
+        "ton-that-nhan-dan",
+        "kinh-thanh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Chiếu Cần Vương",
-      "mo_ta": "8 ngày sau, vua Hàm Nghi ban chiếu Cần Vương tại Tân Sở, mở đầu phong trào kháng Pháp có tổ chức khắp Trung – Bắc Kỳ.",
+      "tieu_de": "Rước vua Hàm Nghi rời Kinh thành ra Tân Sở",
+      "thoi_gian": "Sáng 5/7/1885",
+      "dia_danh": "Huế — Quảng Trị — Tân Sở",
+      "mo_ta": "Vua Hàm Nghi đã kịp xuất cung; Tôn Thất Thuyết đưa vua chạy ra Tân Sở trong sự truy nã của quân Pháp. Các đại thần Tôn Thất Thuyết, Nguyễn Văn Tường cùng vị vua trẻ tuổi rời kinh thành Huế trong sáng 5/7/1885, ra căn cứ Tân Sở đã được xây dựng trước đó ở gần Cam Lộ, tỉnh Quảng Trị, để tiếp tục lãnh đạo nhân dân kháng chiến.",
       "hien": [
-        "dia-diem-tan-so",
-        "co-can-vuong"
+        "ham-nghi-xuat-cung",
+        "tan-so",
+        "ton-that-thuyet"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — https://nhandan.vn/phat-huy-gia-tri-di-tich-thanh-tan-so-o-quang-tri-post738318.html",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Ngày 13/7/1885 — ban Dụ Cần Vương tại Tân Sở",
+      "thoi_gian": "Ngày 13/7/1885",
+      "dia_danh": "Thành Tân Sở, Cam Lộ, Quảng Trị",
+      "mo_ta": "Ngày 13/7/1885, tại Tân Sở, vua ra Dụ Cần Vương, kêu gọi toàn quốc kháng chiến chống giặc ngoại xâm, mong chuyển loạn thành trị, chuyển nguy thành an, khôi phục lại bờ cõi. Thành Tân Sở trở thành nơi nhen nhóm và thổi bùng ngọn lửa của phong trào yêu nước chống thực dân Pháp những năm cuối thế kỷ 19; từ tỉnh Bình Thuận trở ra, chỗ nào cũng có người nổi lên hưởng ứng.",
+      "hien": [
+        "chieu-can-vuong",
+        "tan-so"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — https://nhandan.vn/ky-niem-140-nam-ngay-vua-ham-nghi-ban-chieu-can-vuong-post893453.html",
+        "Báo Nhân Dân — https://nhandan.vn/phat-huy-gia-tri-di-tich-thanh-tan-so-o-quang-tri-post738318.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Ngày thất thủ kinh đô trong ký ức người Huế",
+      "thoi_gian": "23 tháng 5 âm lịch hằng năm",
+      "dia_danh": "Thành phố Huế",
+      "mo_ta": "Ngày 23 tháng 5 âm lịch đi vào đời sống Huế như ngày giỗ chung của cả một thành phố. Hơn 130 năm sau, người Huế vẫn cúng và thắp hương vào ngày này cho những người ngã xuống trong đêm ấy. Ký ức về biến cố còn được lưu truyền qua các bài vè dân gian; học giả Hoàng Trọng Thược đã sưu tầm khoảng 1.770 câu vè bằng chữ Nôm và chữ Quốc ngữ về sự kiện này.",
+      "hien": [
+        "that-thu-kinh-do",
+        "kinh-thanh",
+        "ton-that-nhan-dan"
+      ],
+      "nguon": [
+        "Báo Huế ngày nay — https://huengaynay.vn/van-hoa-nghe-thuat/that-thu-kinh-do-hue-qua-nhung-dieu-ve-58809.html"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": "5.000 thuỷ binh của triều đình phối hợp cùng quân các dinh vệ",
+      "don_vi": [
+        "Đạo quân do Tôn Thất Lệ chỉ huy, vượt sông Hương đánh Toà Khâm sứ",
+        "Đạo quân đánh trại lính Pháp ở Mang Cá",
+        "Quân của Đề đốc thuỷ sư và Hiệp lý"
+      ],
+      "vu_khi": [
+        "Đại bác đặt trên thành, hướng về Toà Khâm sứ và đồn Mang Cá"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "4 đại đội lính thuỷ đánh bộ và hai tàu chiến do De Courcy đưa vào Huế ngày 27/6/1885",
+        "Trại lính tiểu đoàn Zouaves ở Mang Cá"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html"
+    ]
+  },
+  "ton_that": {
+    "ta": [
+      {
+        "so": "hơn 1.500 người dân và binh lính triều đình ngã xuống trong đêm",
+        "nguon": "Bảo tàng Lịch sử Quốc gia"
+      },
+      {
+        "so": "quân Nam hy sinh tới 1.200 – 1.500 người",
+        "nguon": "Bảo tàng Lịch sử Quốc gia"
+      }
+    ],
+    "doi_thu": "quân Pháp chết 16 người và 80 bị thương",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html"
+    ]
+  },
   "ket_qua": "Tập kích ban đầu gây thiệt hại cho Pháp nhưng kinh thành thất thủ; vua Hàm Nghi ra Tân Sở ban chiếu Cần Vương.",
   "y_nghia": "Mở đầu phong trào Cần Vương — giai đoạn kháng chiến có tổ chức rộng khắp Trung – Bắc Kỳ, dù thất bại về quân sự trước mắt.",
   "trang_thai": "draft",
   "nguon": [
     "Đại Nam Thực Lục — Chính biên Đệ lục kỷ phụ biên",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "Cổng TTĐT tỉnh Thừa Thiên Huế — Thừa Thiên Huế đấu tranh chống thực dân Pháp (1885-1916)"
+    "Cổng TTĐT tỉnh Thừa Thiên Huế — Thừa Thiên Huế đấu tranh chống thực dân Pháp (1885-1916)",
+    "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html",
+    "Báo Nhân Dân — https://nhandan.vn/phat-huy-gia-tri-di-tich-thanh-tan-so-o-quang-tri-post738318.html",
+    "Báo Nhân Dân — https://nhandan.vn/ky-niem-140-nam-ngay-vua-ham-nghi-ban-chieu-can-vuong-post893453.html",
+    "Báo Huế ngày nay — https://huengaynay.vn/van-hoa-nghe-thuat/that-thu-kinh-do-hue-qua-nhung-dieu-ve-58809.html",
+    "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/can-kim-thoi-dai-nha-nguyen.-chuong-xiv.-loan-1-o-trung-ky.html"
   ],
   "trich_van_tich": [
     {
       "sach": "Một chiến dịch ở Bắc kỳ — hồi ký của bác sĩ quân y Pháp Charles-Édouard Hocquard",
       "doan": "Quãng nửa đêm, quân An Nam tấn công dữ dội trại lính của tiểu đoàn (Zouaves), trong khi đó đại bác từ thành bắn từng loạt vào tòa Khâm sứ Pháp nằm bên kia sông.",
       "nguon_trich": "Thanh Niên — Chuyện về cuộc phục kích năm 1885 ở kinh đô Huế, vua Hàm Nghi bỏ chạy lên núi — https://thanhnien.vn/chuyen-ve-cuoc-phuc-kich-nam-1885-o-kinh-do-hue-vua-ham-nghi-bo-chay-len-nui-185967224.htm",
-      "buoc": 3
+      "buoc": 4
     },
     {
       "sach": "Một chiến dịch ở Bắc kỳ — hồi ký của bác sĩ quân y Pháp Charles-Édouard Hocquard",
       "doan": "Họ bị nhốt giữa những bức tường cao như một bẫy chuột, ai dám chắc những người lính tội nghiệp đó không bị tiêu diệt bằng sạch?",
       "nguon_trich": "Thanh Niên — Chuyện về cuộc phục kích năm 1885 ở kinh đô Huế, vua Hàm Nghi bỏ chạy lên núi — https://thanhnien.vn/chuyen-ve-cuoc-phuc-kich-nam-1885-o-kinh-do-hue-vua-ham-nghi-bo-chay-len-nui-185967224.htm",
-      "buoc": 4
+      "buoc": 5
     },
     {
       "sach": "Dụ Cần Vương của vua Hàm Nghi (Tôn Thất Thuyết thảo, ban tại Tân Sở, 13/7/1885)",
       "doan": "… Trẫm đức mỏng, gặp phải biến cố này, không thể hết sức chống giữ, để Kinh thành bị hãm, Từ cung phải lên xe lánh nạn, tội ở mình trẫm cả, hổ thẹn vô cùng. Nhưng mối luân thường quan hệ, trăm quan khanh sĩ không kể lớn nhỏ, chắc không nỡ xa bỏ trẫm, người trí giúp mưu, người dũng giúp sức, người giàu xuất của để giúp quân nhu, cùng nhau đoàn kết, chẳng ngại gian hiểm…",
       "nguon_trich": "Thanh Niên — Vua Hàm Nghi hạ chiếu Cần Vương — https://thanhnien.vn/vua-ham-nghi-ha-chieu-can-vuong-185251221212607982.htm",
-      "buoc": 6
+      "buoc": 7
+    },
+    {
+      "sach": "Bảo tàng Lịch sử Quốc gia — bài «5/7/1885: Cuộc tấn công vào toà Khâm sứ Pháp tại kinh thành Huế»",
+      "doan": "Ngày 4/7/1885 (tức 22 tháng 5 âm lịch), Tôn Thất Thuyết lệnh cho binh sĩ đặt đại bác hướng về phía tòa Khâm sứ và đồn Mang Cá, là hai địa điểm đóng quân của địch.",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/19333/5-7-1885-cuoc-tan-cong-vao-toa-kham-su-phap-tai-kinh-thanh-hue.html",
+      "buoc": 3
     }
   ]
 }

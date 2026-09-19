@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Ba Đình 1886–1887 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Ba Đình 1886–1887 — MINH HOẠ theo tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Ba chỗ các nguồn nhà nước chép khác nhau đều được nêu song song, KHÔNG chọn một: số quân Pháp đợt đầu (500 hay 517); số ngày cầm cự (Bách khoa toàn thư Quân sự cho mốc 6/1–21/1/1887, Báo Thanh Hoá chép «32 ngày đêm»); cách rút quân («bí mật rút lui an toàn» hay «mở đường máu»); và ngày Đinh Công Tráng hy sinh (5/10 hay 6/10/1887).",
   "id": "ba-dinh-1886",
   "ten": "Khởi nghĩa Ba Đình 1886–1887",
   "nam": 1886,
@@ -7,139 +7,397 @@
   "chi_huy": "Đinh Công Tráng, Phạm Bành",
   "doi_thu": "Pháp",
   "dia_diem": "Căn cứ Ba Đình, Nga Sơn, Thanh Hoá",
+  "thoi_gian": "Tháng 2/1886 – đêm 20 rạng 21/1/1887",
   "lien_quan_tinh": [
     "thanh-hoa"
   ],
-  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
+    {
+      "kieu": "rung",
+      "diem": [
+        [296, 176],
+        [560, 146],
+        [724, 250],
+        [660, 434],
+        [418, 472],
+        [276, 358]
+      ],
+      "nhan": "Vòng luỹ tre bao ngoài cùng"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [348, 220],
+        [540, 194],
+        [666, 272],
+        [616, 406],
+        [428, 434],
+        [328, 346]
+      ],
+      "nhan": "Hào sâu 3–4 m vòng quanh ba làng"
+    },
     {
       "kieu": "duong",
       "diem": [
-        [
-          300,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          700,
-          320
-        ]
+        [906, 496],
+        [806, 428],
+        [722, 382]
       ],
-      "nhan": "Ba làng Mậu Thịnh – Thượng Thọ – Mỹ Khê"
+      "nhan": "Đường từ tỉnh lỵ Thanh Hoá lên Nga Sơn"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [66, 124],
+        [178, 68],
+        [292, 130]
+      ],
+      "nhan": "Vùng Mã Cao — hướng rút quân"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-can-vuong-ba-dinh",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 200,
-      "y": 450,
-      "nhan": "Hưởng ứng chiếu Cần Vương"
+      "id": "mau-thinh",
+      "kieu": "dia-danh",
+      "x": 386,
+      "y": 250,
+      "nhan": "Làng Mậu Thịnh"
     },
     {
-      "id": "can-cu-ba-dinh",
+      "id": "thuong-tho",
+      "kieu": "dia-danh",
+      "x": 566,
+      "y": 232,
+      "nhan": "Làng Thượng Thọ"
+    },
+    {
+      "id": "my-khe",
+      "kieu": "dia-danh",
+      "x": 474,
+      "y": 384,
+      "nhan": "Làng Mỹ Khê"
+    },
+    {
+      "id": "luy-tre",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 500,
-      "y": 350,
-      "nhan": "Căn cứ Ba Đình"
+      "x": 292,
+      "y": 154,
+      "nhan": "Luỹ tre — cổng ba làng cải tạo thành chốt gác"
     },
     {
-      "id": "quan-ta-chi-huy",
+      "id": "hao-sau",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 686,
+      "y": 178,
+      "nhan": "Hào sâu 3–4 m và các bãi chông"
+    },
+    {
+      "id": "thanh-dat",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 240,
+      "y": 442,
+      "nhan": "Thành đất trong cùng",
+      "quy_mo": "cao 3 m, chân rộng 8–10 m, mặt thành đi lại được"
+    },
+    {
+      "id": "nghia-quan",
       "kieu": "quan",
+      "ben": "ta",
+      "x": 616,
+      "y": 486,
+      "nhan": "Nghĩa quân Ba Đình",
+      "quy_mo": "lúc đầu khoảng 300 người, chia làm 10 toán, mỗi toán một hiệp quản chỉ huy"
+    },
+    {
+      "id": "don-thuong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 556,
+      "y": 300,
+      "nhan": "Đồn Thượng — Nguyễn Viết Toại chỉ huy"
+    },
+    {
+      "id": "don-trung",
+      "kieu": "cong-su",
       "ben": "ta",
       "x": 420,
-      "y": 420,
-      "nhan": "Đinh Công Tráng, Phạm Bành"
+      "y": 314,
+      "nhan": "Đồn Trung — Đinh Công Tráng chỉ huy"
     },
     {
-      "id": "quan-dich-tan-cong",
+      "id": "don-ha",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 490,
+      "y": 436,
+      "nhan": "Đồn Hạ — Phạm Bành và Nguyễn Khế chỉ huy"
+    },
+    {
+      "id": "chi-huy",
       "kieu": "quan",
-      "ben": "dich",
-      "x": 750,
-      "y": 250,
-      "nhan": "Pháp tấn công nhiều lần"
+      "ben": "ta",
+      "x": 158,
+      "y": 296,
+      "nhan": "Tán lý Phạm Bành · Tham tán Hoàng Bật Đạt · Lãnh binh Đinh Công Tráng · Nguyễn Viết Toại · Đề đốc Nguyễn Khế"
     },
     {
-      "id": "mui-dich-vay",
+      "id": "dot-tan-cong-1",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        700,
-        320
-      ],
-      "den": [
-        560,
-        340
-      ],
-      "nhan": "Pháp bao vây, pháo kích"
+      "tu": [886, 470],
+      "den": [706, 402],
+      "nhan": "Cuối năm 1886 — đợt tiến công đầu tiên"
     },
     {
-      "id": "co-that-thu",
-      "kieu": "co",
+      "id": "brissaud",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 892,
+      "y": 296,
+      "nhan": "Đại tá Brissaud",
+      "quy_mo": "ngày 6/1/1887 chia quân làm ba mũi"
+    },
+    {
+      "id": "mui-cong-1",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [834, 244],
+      "den": [706, 236],
+      "nhan": "Mũi thứ nhất"
+    },
+    {
+      "id": "mui-cong-2",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [834, 338],
+      "den": [700, 330],
+      "nhan": "Mũi thứ hai"
+    },
+    {
+      "id": "mui-cong-3",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [830, 428],
+      "den": [692, 410],
+      "nhan": "Mũi thứ ba"
+    },
+    {
+      "id": "voi-phun-dau",
+      "kieu": "dia-danh",
+      "x": 776,
+      "y": 122,
+      "nhan": "Công binh dùng vòi phun dầu đốt cháy luỹ tre"
+    },
+    {
+      "id": "mui-mo-duong-mau",
+      "kieu": "mui-ten",
       "ben": "ta",
-      "x": 500,
-      "y": 480,
-      "nhan": "Căn cứ thất thủ"
+      "tu": [332, 246],
+      "den": [176, 178],
+      "nhan": "Đêm 20 rạng 21/1/1887 mở đường máu rút lui"
+    },
+    {
+      "id": "ma-cao",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 104,
+      "y": 116,
+      "nhan": "Căn cứ Mã Cao"
+    },
+    {
+      "id": "tang-yen",
+      "kieu": "dia-danh",
+      "x": 118,
+      "y": 528,
+      "nhan": "Làng Tang Yên, huyện Đô Lương — nơi Đinh Công Tráng hy sinh"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Hưởng ứng chiếu Cần Vương",
-      "mo_ta": "Đinh Công Tráng, Phạm Bành đứng ra tổ chức nghĩa quân tại Nga Sơn (Thanh Hoá), hưởng ứng chiếu Cần Vương.",
+      "tieu_de": "Tháng 2/1886 — dựng căn cứ giữa ba làng",
+      "thoi_gian": "Tháng 2/1886",
+      "dia_danh": "Mỹ Khê · Mậu Thịnh · Thượng Thọ, huyện Nga Sơn",
+      "mo_ta": "Tháng 2/1886, căn cứ Ba Đình được xây dựng trên địa phận các làng Mỹ Khê, Mậu Thịnh, Thượng Thọ thuộc huyện Nga Sơn, cách tỉnh lỵ Thanh Hoá 40 km. Đinh Công Tráng cùng Trần Xuân Soạn và các văn thân, thổ hào lập chiến khu kháng chiến ở đây. Ba làng nằm giữa vùng chiêm trũng, mùa nước nổi thành ba ốc đảo — một địa thế cho phép biến làng mạc thành công sự mà không phải đắp thành từ đầu.",
       "hien": [
-        "co-can-vuong-ba-dinh"
+        "mau-thinh",
+        "thuong-tho",
+        "my-khe"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Xây căn cứ kiên cố giữa ba làng",
-      "mo_ta": "Nghĩa quân xây dựng hệ thống luỹ đất, hào sâu kiên cố nối liền ba làng Mậu Thịnh, Thượng Thọ, Mỹ Khê.",
+      "tieu_de": "Bốn lớp phòng thủ từ ngoài vào trong",
+      "dia_danh": "Căn cứ Ba Đình",
+      "mo_ta": "Vòng ngoài cùng là luỹ tre, các cổng của ba làng được cải tạo thành những chốt gác; phía trong là hào sâu 3–4 m; tiếp đến các bãi chông; trong cùng là thành đất dày 8–10 m, trên mặt thành xếp nhiều vật chắn đạn bằng rọ tre đựng bùn trộn rơm rạ xen kẽ nhau. Bảo tàng Lịch sử Quốc gia mô tả lớp đất ấy cao 3 m, chân rộng từ 8 m đến 10 m, mặt thành có thể đi lại được. Trong căn cứ có ba đồn lớn là đồn Thượng, đồn Trung và đồn Hạ, bố trí liên hoàn với nhau, có hệ thống giao thông hào để nghĩa quân di chuyển thuận lợi.",
       "hien": [
-        "can-cu-ba-dinh",
-        "quan-ta-chi-huy"
+        "luy-tre",
+        "hao-sau",
+        "thanh-dat",
+        "don-thuong",
+        "don-trung",
+        "don-ha"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Pháp nhiều lần tấn công không hạ được",
-      "mo_ta": "Quân Pháp nhiều lần tổ chức tấn công quy mô lớn vào căn cứ nhưng đều bị đẩy lui.",
+      "tieu_de": "Lực lượng nghĩa quân và ban chỉ huy",
+      "dia_danh": "Hậu Lộc · Nga Sơn · Hà Trung",
+      "mo_ta": "Lực lượng nghĩa quân Ba Đình lúc đầu khoảng 300 người, tuyển lựa ở các huyện Hậu Lộc, Nga Sơn, Hà Trung, sau được bổ sung thanh niên các địa phương khác; trong hàng ngũ có người Kinh, người Thái, người Mường, gồm cả nam và nữ. Lực lượng chia làm 10 toán, mỗi toán do một hiệp quản chỉ huy; vũ khí chủ yếu là súng hoả mai, chông tre, giáo, mác, cung, nỏ và một số súng thần công. Về danh nghĩa Phạm Bành là chỉ huy cao nhất, nhưng quyền chỉ huy trực tiếp về quân sự thuộc về Đinh Công Tráng — người từng chiến đấu trong đội quân Hoàng Tá Viêm và phối hợp với Lưu Vĩnh Phúc đánh Pháp ở Bắc Kỳ.",
       "hien": [
-        "can-cu-ba-dinh",
-        "quan-dich-tan-cong"
+        "nghia-quan",
+        "chi-huy",
+        "don-thuong",
+        "don-ha"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Pháp bao vây, dùng hoả lực mạnh san phẳng luỹ",
-      "mo_ta": "Pháp tăng cường vây chặt, dùng đại bác bắn phá liên tục để san phẳng hệ thống phòng thủ.",
+      "tieu_de": "Cuối năm 1886 — đợt tiến công đầu tiên thất bại",
+      "thoi_gian": "Cuối năm 1886",
+      "dia_danh": "Vành ngoài căn cứ Ba Đình",
+      "mo_ta": "Cuối năm 1886, quân Pháp mở đợt tiến công đầu tiên. Thông tấn xã Việt Nam chép họ sử dụng 517 quân, có một khẩu đại bác 80 mm yểm trợ, chia làm hai mũi: mũi thứ nhất gồm 167 lính do Trung tá Metzinger, Tư lệnh vùng Thanh Hoá chỉ huy; mũi thứ hai gồm 350 lính do Trung tá Dodds chỉ huy. Bảo tàng Lịch sử Quốc gia chép lực lượng khá mạnh với 500 quân, có đại bác yểm hộ. Nghĩa quân đợi đối phương đến gần mới nổ súng, giết và làm bị thương nhiều địch; qua nhiều đợt liên tiếp bị chặn lại và tổn thất lớn, Metzinger và Dodds buộc phải lệnh lui quân để chờ viện binh.",
       "hien": [
-        "can-cu-ba-dinh",
-        "quan-dich-tan-cong",
-        "mui-dich-vay"
+        "dot-tan-cong-1",
+        "luy-tre",
+        "hao-sau",
+        "nghia-quan"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Căn cứ thất thủ sau nhiều tháng kháng cự",
-      "mo_ta": "Sau nhiều tháng kháng cự ngoan cường, căn cứ Ba Đình thất thủ; nghĩa quân rút lui, để lại biểu tượng tiêu biểu của phong trào Cần Vương.",
+      "tieu_de": "Ngày 6/1/1887 — Brissaud mở tổng công kích ba mũi",
+      "thoi_gian": "Ngày 6/1/1887",
+      "dia_danh": "Ba mặt căn cứ Ba Đình",
+      "mo_ta": "Sau thất bại của Metzinger và Dodds, Pháp cử Đại tá Brissaud — người từng tham gia chỉ huy công phá thành Puebla ở Mexico năm 1863 — sang trực tiếp đảm nhiệm việc đánh phá Ba Đình. Ngày 6/1/1887, với một lực lượng lớn gần 2.500 quân thuộc nhiều binh chủng, Brissaud chia quân làm ba mũi có pháo binh yểm trợ đánh vào căn cứ. Trước sự chống trả quyết liệt của nghĩa quân, quân Pháp bị tổn thất 4 sĩ quan cùng nhiều binh lính và bị chặn lại ở hàng rào tre vòng ngoài, buộc phải tạm thời kết thúc tiến công.",
       "hien": [
-        "co-that-thu"
+        "brissaud",
+        "mui-cong-1",
+        "mui-cong-2",
+        "mui-cong-3"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tăng viện lên 3.500 quân, dùng vòi phun dầu đốt luỹ tre",
+      "dia_danh": "Vành luỹ tre",
+      "mo_ta": "Không phá nổi vòng ngoài, quân Pháp tăng viện lên tới 3.500 quân, trong đó có 78 sĩ quan cùng nhiều vũ khí. Brissaud chia quân làm nhiều mũi, dùng pháo binh bắn phá dữ dội hơn trước, chế áp được hoả lực nghĩa quân và phá vỡ nhiều công sự bên trong. Sau 5 ngày chiến đấu trong thế giằng co, ngày 20/1/1887 quân Pháp mới tiến gần đến tuyến phòng ngự thứ nhất; Brissaud liền cho công binh dùng vòi phun dầu đốt cháy luỹ tre, đồng thời tập trung hoả lực đại bác bắn dồn dập yểm trợ cho bộ binh tiến sát căn cứ.",
+      "hien": [
+        "voi-phun-dau",
+        "luy-tre",
+        "brissaud"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đêm 20 rạng 21/1/1887 — rút quân về Mã Cao",
+      "thoi_gian": "Đêm 20 rạng sáng 21/1/1887",
+      "dia_danh": "Ba Đình — Mã Cao",
+      "mo_ta": "Để bảo toàn lực lượng chiến đấu lâu dài, đêm 20 rạng sáng ngày 21/1, Phạm Bành và Đinh Công Tráng cùng Hoàng Bật Đạt, Nguyễn Khế, Nguyễn Viết Toại thống nhất cho rút quân về căn cứ Mã Cao. Hai nguồn nhà nước tả cách rút khác nhau: Bách khoa toàn thư Quân sự Việt Nam chép nghĩa quân bí mật rút lui an toàn, quân Pháp chỉ đánh chiếm được căn cứ vài giờ sau đó; Báo Thanh Hoá chép nghĩa quân mở đường máu rút lên Mã Cao sau 32 ngày đêm chiến đấu. Con số 32 ngày cũng vênh với mốc 6/1 – 21/1/1887 của bộ Bách khoa. Sau khi chiếm căn cứ, Pháp triệt hạ ba làng rồi ép triều đình Huế xoá tên ba làng ấy.",
+      "hien": [
+        "mui-mo-duong-mau",
+        "ma-cao",
+        "chi-huy"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+        "Báo Thanh Hoá — Văn hoá & Đời sống — https://vhds.baothanhhoa.vn/thanh-hoa-xua-va-nay-ba-dinh-khuc-trang-ca-bat-tu-43735.htm"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Mã Cao thất thủ, kết cục các thủ lĩnh Ba Đình",
+      "thoi_gian": "Ngày 2/2/1887 — 5 hoặc 6/10/1887",
+      "dia_danh": "Mã Cao — Ngọc Lặc — Đô Lương",
+      "mo_ta": "Ngày 2/2/1887, với gần 3.300 quân có 63 sĩ quan và hơn 1.700 dân phu, Brissaud khép vòng vây quanh Mã Cao. Nghĩa quân rút vào pháo đài chính là Bãi Xưa, chống trả đến chiều tối rồi phải rút lên Thung Voi, Thung Khoai và sau đó về vùng rừng núi Ngọc Lặc. Một số thủ lĩnh như Phạm Bành, Hà Văn Mao hy sinh hoặc tự sát, người khác chuyển sang lực lượng khởi nghĩa khác như Trần Xuân Soạn. Chỉ còn Đinh Công Tráng tiếp tục gây dựng lại phong trào; về ngày ông hy sinh, Thông tấn xã Việt Nam ghi 5/10/1887, Bảo tàng Lịch sử Quốc gia ghi ngày 6/10/1887 tại làng Tang Yên, huyện Đô Lương.",
+      "hien": [
+        "tang-yen",
+        "ma-cao",
+        "chi-huy"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": "lúc đầu khoảng 300 người",
+      "don_vi": [
+        "Nghĩa quân tuyển lựa ở các huyện Hậu Lộc, Nga Sơn, Hà Trung",
+        "Ban chỉ huy: Phạm Bành, Hoàng Bật Đạt, Đinh Công Tráng, Nguyễn Viết Toại, Nguyễn Khế"
+      ],
+      "vu_khi": [
+        "Bốn lớp phòng thủ: luỹ tre, hào sâu 3–4 m, bãi chông, thành đất dày 8–10 m"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "517 quân, có 1 khẩu đại bác 80 mm (đợt cuối 1886)",
+          "nguon": "Ngân hàng dữ liệu Thông tấn xã Việt Nam"
+        },
+        {
+          "so": "500 quân, có đại bác yểm hộ (đợt cuối 1886)",
+          "nguon": "Bảo tàng Lịch sử Quốc gia"
+        },
+        {
+          "so": "gần 2.500 quân ngày 6/1/1887, sau tăng viện lên 3.500 quân trong đó có 78 sĩ quan",
+          "nguon": "Ngân hàng dữ liệu Thông tấn xã Việt Nam"
+        }
+      ],
+      "don_vi": [
+        "Lực lượng do Đại tá Brissaud chỉ huy, chia làm ba mũi",
+        "Công binh dùng vòi phun dầu đốt luỹ tre"
+      ],
+      "vu_khi": [
+        "Pháo binh yểm trợ",
+        "Vòi phun dầu"
+      ]
+    },
+    "nguon": [
+      "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+      "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html"
+    ]
+  },
   "ket_qua": "Xây căn cứ phòng thủ kiên cố giữa ba làng, kháng cự quyết liệt nhiều tháng trước khi thất thủ trước hoả lực mạnh của Pháp.",
   "y_nghia": "Biểu tượng tiêu biểu của phong trào Cần Vương về nghệ thuật xây dựng căn cứ phòng ngự kiên cố dựa vào thế trận nhân dân.",
   "trang_thai": "draft",
   "nguon": [
     "Lịch sử Việt Nam (Viện Sử học) — khởi nghĩa Ba Đình",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "Sở VHTTDL Thanh Hoá — di tích Ba Đình, Nga Sơn"
+    "Sở VHTTDL Thanh Hoá — di tích Ba Đình, Nga Sơn",
+    "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+    "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html",
+    "Báo Thanh Hoá — Văn hoá & Đời sống — https://vhds.baothanhhoa.vn/thanh-hoa-xua-va-nay-ba-dinh-khuc-trang-ca-bat-tu-43735.htm"
   ],
   "trich_van_tich": [
     {
@@ -147,6 +405,12 @@
       "doan": "Ông là người có trật tự, trọng kỷ luật, cương trực hay nghiêm trị những thủ hạ quấy nhiễu dân, có chí nhẫn nại, biết mình, biết người không bao giờ hành binh cẩu thả, giỏi lập trận thế",
       "nguon_trich": "Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3098/15545/djinh-cong-trang-1842-1887-lanh-tu-cuoc-khoi-nghia-ba-djinh-trong-phong-trao-can-vuong-chong-phap-cuoi-the-ky-xix.html",
       "buoc": 3
+    },
+    {
+      "sach": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — mục «Khởi nghĩa Ba Đình (1886-87)»",
+      "doan": "vòng ngoài cùng là lũy tre, các cổng của 3 làng được cải tạo thành những chốt gác, phía trong là hào sâu 3-4 m, tiếp đến các bãi chông, trong cùng là thành đất dày 8-10 m",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-ba-dinh-1886-87-1-34872.vna",
+      "buoc": 2
     }
   ]
 }

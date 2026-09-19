@@ -1,10 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch giải phóng quần đảo Trường Sa 1975 — Mục T2 theo docs/section9-sensitive.json (chủ quyền biển đảo). MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ chiến dịch giải phóng quần đảo Trường Sa của Việt Nam, tháng 4/1975 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "giai-phong-truong-sa-1975",
   "ten": "Chiến dịch giải phóng quần đảo Trường Sa 1975",
   "nam": 1975,
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Hải quân nhân dân Việt Nam",
+  "chi_huy": "Bộ Tư lệnh Hải quân phối hợp Quân khu 5 — trực tiếp chỉ huy lực lượng đổ bộ: Đoàn trưởng Đoàn 126 Mai Năng",
   "doi_thu": "Quân lực Việt Nam Cộng hòa",
   "dia_diem": "Đảo Song Tử Tây và các đảo thuộc quần đảo Trường Sa, tỉnh Khánh Hòa",
   "lien_quan_tinh": [
@@ -16,108 +16,360 @@
       "kieu": "bien",
       "diem": [
         [
-          0,
-          300
+          80,
+          60
         ],
         [
           500,
-          280
+          45
         ],
         [
-          1000,
-          320
+          940,
+          70
+        ],
+        [
+          940,
+          570
+        ],
+        [
+          80,
+          560
+        ],
+        [
+          80,
+          60
         ]
       ],
-      "nhan": "Vùng biển quần đảo Trường Sa"
+      "nhan": "Vùng biển quần đảo Trường Sa của Việt Nam"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          130,
+          130
+        ],
+        [
+          260,
+          200
+        ],
+        [
+          380,
+          260
+        ]
+      ],
+      "nhan": "Đường cơ động của các tàu 673, 674, 675 từ đất liền ra quần đảo"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          400,
+          125
+        ],
+        [
+          430,
+          135
+        ],
+        [
+          460,
+          122
+        ]
+      ],
+      "nhan": "Cụm đảo phía Bắc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          650,
+          335
+        ],
+        [
+          680,
+          345
+        ],
+        [
+          710,
+          332
+        ]
+      ],
+      "nhan": "Cụm đảo giữa"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          530,
+          485
+        ],
+        [
+          560,
+          495
+        ],
+        [
+          590,
+          482
+        ]
+      ],
+      "nhan": "Đảo Trường Sa — đảo xa nhất phía Nam của quần đảo"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-ta-phuong-cham",
-      "kieu": "thuyen",
+      "id": "so-chi-huy-tien-phuong",
+      "kieu": "cong-su",
       "ben": "ta",
-      "x": 250,
-      "y": 400,
-      "nhan": "Phương châm 'thần tốc, táo bạo, bất ngờ'"
+      "x": 120,
+      "y": 90,
+      "nhan": "Sở Chỉ huy tiền phương của Bộ Tư lệnh Hải quân đặt tại Đà Nẵng"
     },
     {
-      "id": "dao-song-tu-tay",
-      "kieu": "dia-danh",
-      "x": 450,
-      "y": 350,
-      "nhan": "Đảo Song Tử Tây"
-    },
-    {
-      "id": "co-thang-song-tu-tay",
-      "kieu": "co",
+      "id": "doan-126",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 450,
-      "y": 290,
-      "nhan": "Giải phóng Song Tử Tây (14/4/1975)"
+      "x": 140,
+      "y": 230,
+      "nhan": "Chỉ huy: Đoàn trưởng Mai Năng",
+      "quy_mo": "Đội 1 Đoàn 126 đặc công"
     },
     {
-      "id": "mui-tiep-tuc-giai-phong",
+      "id": "huong-do-bo",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        500,
-        320
+        240,
+        300
       ],
       "den": [
-        750,
-        250
+        400,
+        140
       ],
-      "nhan": "Tiếp tục giải phóng các đảo còn lại"
+      "nhan": "Bí mật đổ bộ trong khoảng từ 0 đến 2 giờ sáng"
     },
     {
-      "id": "co-thang-truong-sa",
+      "id": "tieu-doan-471",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 140,
+      "y": 360,
+      "nhan": "Một bộ phận hoả lực",
+      "quy_mo": "Tiểu đoàn 471, Quân khu 5"
+    },
+    {
+      "id": "tau-125",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 140,
+      "y": 470,
+      "nhan": "Các tàu vận tải 673, 674, 675",
+      "quy_mo": "Đoàn 125"
+    },
+    {
+      "id": "song-tu-tay",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 430,
+      "y": 110,
+      "nhan": "Đảo Song Tử Tây — 4 giờ 30 phút ngày 14/4/1975"
+    },
+    {
+      "id": "son-ca",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 690,
+      "y": 140,
+      "nhan": "Đảo Sơn Ca — ngày 25/4/1975"
+    },
+    {
+      "id": "dien-9-4",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 890,
+      "y": 80,
+      "nhan": "Điện «tối khẩn» của Quân uỷ Trung ương ngày 9/4/1975"
+    },
+    {
+      "id": "dien-10-4",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 890,
+      "y": 230,
+      "nhan": "Điện của Bí thư Quân uỷ Trung ương Võ Nguyên Giáp ngày 10/4/1975"
+    },
+    {
+      "id": "nam-yet",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 430,
+      "y": 300,
+      "nhan": "Đảo Nam Yết — ngày 27/4/1975"
+    },
+    {
+      "id": "sinh-ton",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 690,
+      "y": 330,
+      "nhan": "Đảo Sinh Tồn — ngày 27/4/1975"
+    },
+    {
+      "id": "truong-sa-lon",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 560,
+      "y": 470,
+      "nhan": "Đảo Trường Sa — 16 giờ ngày 28/4 xuất phát, sáng 29/4 làm chủ"
+    },
+    {
+      "id": "co-truong-sa",
       "kieu": "co",
       "ben": "ta",
-      "x": 800,
-      "y": 180,
-      "nhan": "Toàn bộ Trường Sa được giải phóng (29/4/1975)"
+      "x": 890,
+      "y": 470,
+      "nhan": "Lá cờ Tổ quốc trên quần đảo Trường Sa của Việt Nam"
+    },
+    {
+      "id": "dao-khac",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 560,
+      "nhan": "Cù lao Xanh (1/4) · Hòn Tre (từ 10/4) · Cù lao Thu (27/4) · Cù lao Chàm, Cù lao Ré (30/4) · Côn Đảo (18 giờ ngày 1/5)"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Phương châm 'thần tốc, táo bạo, bất ngờ'",
-      "mo_ta": "Hải quân nhân dân Việt Nam đề ra phương châm 'thần tốc, táo bạo, bất ngờ' cho chiến dịch giải phóng Trường Sa.",
+      "tieu_de": "25/3/1975 — chủ trương giải phóng các đảo và quần đảo",
+      "thoi_gian": "25 – 30/3/1975",
+      "dia_danh": "Hà Nội · Quân khu 5",
+      "mo_ta": "Ngay sau chiến thắng Buôn Ma Thuột, Quân uỷ Trung ương kiến nghị với Bộ Chính trị vừa chuẩn bị cho trận quyết chiến chiến lược cuối cùng, vừa tiến hành giải phóng các đảo và quần đảo đang bị quân đội Sài Gòn chiếm giữ; kiến nghị này được ghi trong Nghị quyết Bộ Chính trị ngày 25/3/1975. Ngày 30/3/1975, Quân uỷ Trung ương điện cho các đồng chí Chu Huy Mân và Võ Chí Công, giao Khu uỷ và Bộ Tư lệnh B1 nghiên cứu, chỉ đạo thực hiện gấp rút, nhằm thời cơ thuận lợi nhất để đánh chiếm các đảo do quân đội Sài Gòn chiếm đóng thuộc quần đảo Trường Sa.",
       "hien": [
-        "quan-ta-phuong-cham"
+        "so-chi-huy-tien-phuong",
+        "doan-126"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Giải phóng đảo Song Tử Tây (14/4/1975)",
-      "mo_ta": "Sáng 14/4/1975, Hải quân nhân dân Việt Nam giải phóng đảo Song Tử Tây — chiến thắng đầu tiên tại quần đảo Trường Sa.",
+      "tieu_de": "Đầu tháng 4 — Sở Chỉ huy tiền phương vào Đà Nẵng",
+      "thoi_gian": "Đầu tháng 4/1975",
+      "dia_danh": "Đà Nẵng",
+      "mo_ta": "Triển khai chủ trương chiến lược đó, đồng chí Hoàng Trà, Chính uỷ Quân chủng Hải quân, được Quân uỷ điều động về làm việc cạnh Bộ Tổng tham mưu để theo dõi tình hình trên biển và đề xuất nhiệm vụ của hải quân. Bộ Tổng tham mưu quyết định đưa Sở Chỉ huy tiền phương của Bộ Tư lệnh Hải quân vào Đà Nẵng, xúc tiến công tác chuẩn bị giải phóng khu vực biển, đảo phía nam Tổ quốc. Từ đầu tháng 4/1975, Bộ Tư lệnh Hải quân sử dụng ngay Đoàn 125 vừa vận chuyển lực lượng, vũ khí đạn dược cho Nam Bộ vừa chuẩn bị sẵn sàng đánh chiếm các đảo khi thời cơ đến.",
       "hien": [
-        "dao-song-tu-tay",
-        "co-thang-song-tu-tay"
+        "so-chi-huy-tien-phuong",
+        "tau-125"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Tiếp tục giải phóng các đảo còn lại",
-      "mo_ta": "Lực lượng tiếp tục tiến công giải phóng các đảo còn lại thuộc quần đảo Trường Sa.",
+      "tieu_de": "Lực lượng và phương án tác chiến",
+      "thoi_gian": "Đầu tháng 4/1975",
+      "dia_danh": "Song Tử Tây · Nam Yết · Sơn Ca · Sinh Tồn · Trường Sa",
+      "mo_ta": "Lực lượng tham gia giải phóng quần đảo Trường Sa gồm Đội 1 Đoàn 126 đặc công, một bộ phận hoả lực thuộc Tiểu đoàn 471 Quân khu 5 và các tàu vận tải 673, 674, 675 của Đoàn 125, dưới sự chỉ huy của đồng chí Mai Năng, Đoàn trưởng Đoàn 126. Theo phương án tác chiến, mục tiêu là các đảo Song Tử Tây, Nam Yết, Sơn Ca, Sinh Tồn, Trường Sa; phương châm tác chiến là bí mật, bất ngờ tiến công. Thời cơ đánh chiếm đảo được xác định từ 0 đến 2 giờ sáng, là lúc có thể lợi dụng yếu tố thuỷ văn để bí mật đổ quân lên đảo.",
       "hien": [
-        "co-thang-song-tu-tay",
-        "mui-tiep-tuc-giai-phong"
+        "doan-126",
+        "tieu-doan-471",
+        "tau-125",
+        "huong-do-bo",
+        "song-tu-tay",
+        "nam-yet",
+        "son-ca",
+        "sinh-ton",
+        "truong-sa-lon"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Toàn bộ quần đảo Trường Sa được giải phóng (29/4/1975)",
-      "mo_ta": "Đến ngày 29/4/1975, toàn bộ quần đảo Trường Sa được giải phóng, góp phần khẳng định và bảo vệ chủ quyền biển đảo.",
+      "tieu_de": "9 và 10/4/1975 — hai bức điện thúc hành động",
+      "thoi_gian": "9 – 10/4/1975",
+      "dia_danh": "Quân khu 5 · Bộ Tư lệnh Hải quân",
+      "mo_ta": "Ngày 9/4/1975, Quân uỷ Trung ương điện «tối khẩn» cho các đồng chí Võ Chí Công, Chu Huy Mân và Hoàng Hữu Thái, Phó Tư lệnh Hải quân, chỉ thị cho các lực lượng hành động kịp thời theo phương án đã định, vì nếu để chậm có thể quân nước ngoài chiếm trước. Ngày 10/4, Bí thư Quân uỷ Trung ương Võ Nguyên Giáp lại điện tiếp cho Quân khu 5, nêu rõ thời cơ đánh các đảo lúc này rất thuận lợi, chỉ đánh các đảo quân đội Sài Gòn chiếm đóng, và ra lệnh đánh chiếm ngay, theo dõi đôn đốc kiểm tra chặt chẽ, thường xuyên báo cáo về Bộ.",
       "hien": [
-        "co-thang-truong-sa"
+        "dien-9-4",
+        "dien-10-4"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
+      ]
+    },
+    {
+      "id": 5,
+      "tieu_de": "4 giờ 30 phút ngày 14/4 — giải phóng đảo Song Tử Tây",
+      "thoi_gian": "14/4/1975",
+      "dia_danh": "Đảo Song Tử Tây",
+      "mo_ta": "Chấp hành mệnh lệnh, các lực lượng vũ trang lập tức hành động. 4 giờ 30 phút ngày 14/4, quân ta nổ súng giải phóng đảo Song Tử Tây. Sau hơn một giờ chiến đấu, ta làm chủ hoàn toàn trận địa; lá cờ Tổ quốc được treo ngay lên cột cờ ở phía đông đảo. Kết quả, ta diệt và bắt sống toàn bộ quân đóng giữ, thu hai đại liên, một ĐKZ, hai cối 60, hai trung liên và một số súng bộ binh các loại. Song Tử Tây là đảo đầu tiên trong quần đảo Trường Sa của Việt Nam được giải phóng.",
+      "hien": [
+        "song-tu-tay",
+        "huong-do-bo",
+        "doan-126"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "25 và 27/4 — Sơn Ca, Nam Yết, Sinh Tồn",
+      "thoi_gian": "25 – 27/4/1975",
+      "dia_danh": "Đảo Sơn Ca · Nam Yết · Sinh Tồn",
+      "mo_ta": "Tiếp đó, quân ta nhanh chóng phát triển giải phóng các đảo còn lại: đảo Sơn Ca ngày 25/4, đảo Nam Yết và đảo Sinh Tồn ngày 27/4. Ba đảo này nằm ở cụm giữa và cụm phía bắc của quần đảo; việc giải phóng nối tiếp nhau trong ba ngày khiến lực lượng đóng giữ ở các đảo còn lại mất chỗ dựa. Cách đánh vẫn giữ đúng phương châm bí mật, bất ngờ, đổ bộ vào khoảng thời gian thuỷ văn thuận lợi trong đêm.",
+      "hien": [
+        "son-ca",
+        "nam-yet",
+        "sinh-ton",
+        "tau-125"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "28 – 29/4 — làm chủ đảo Trường Sa",
+      "thoi_gian": "16 giờ ngày 28/4 – sáng 29/4/1975",
+      "dia_danh": "Đảo Trường Sa",
+      "mo_ta": "16 giờ ngày 28/4, bộ đội ta tiếp tục đi giải phóng đảo Trường Sa, đảo xa nhất nằm ở phía nam của quần đảo. Về thời điểm làm chủ đảo, hai nguồn nhà nước ghi hai mốc giờ khác nhau: Báo Nhân Dân ghi «9 giờ 30 phút, ta làm chủ đảo Trường Sa», còn Báo Quân đội nhân dân ghi «9 giờ ngày 29-4-1975, Quần đảo Trường Sa được hoàn toàn giải phóng». Đến đây, nhiệm vụ đặc biệt quan trọng mà Quân uỷ Trung ương giao cho Quân chủng Hải quân đã hoàn thành.",
+      "hien": [
+        "truong-sa-lon",
+        "co-truong-sa",
+        "tau-125"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html",
+        "9 giờ ngày 29-4-1975, Quần đảo Trường Sa được hoàn toàn giải phóng — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/9-gio-ngay-29-4-1975-quan-dao-truong-sa-duoc-hoan-toan-giai-phong-692098"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Cùng thời gian — các đảo khác trên Biển Đông",
+      "thoi_gian": "1/4 – 1/5/1975",
+      "dia_danh": "Cù lao Xanh · Hòn Tre · Cù lao Thu · Cù lao Chàm · Cù lao Ré · Côn Đảo",
+      "mo_ta": "Cùng với giải phóng quần đảo Trường Sa, Bộ Tư lệnh Quân khu 5 chỉ đạo lực lượng vũ trang phối hợp với du kích và nhân dân tiến công, nổi dậy giải phóng Cù lao Xanh ngày 1/4, Cù lao Chàm và Cù lao Ré ngày 30/4. Từ ngày 10/4/1975, bộ đội đặc công tỉnh Khánh Hoà cùng một tiểu đoàn của Trung đoàn 19 Sư đoàn 968 giải phóng đảo Hòn Tre. Hải quân nhân dân Việt Nam phối hợp các lực lượng khác tiến đánh Cù lao Thu và một số đảo lớn thuộc địa bàn cực Nam Trung Bộ ngày 27/4; 18 giờ ngày 1/5, ta hoàn toàn làm chủ Côn Đảo.",
+      "hien": [
+        "dao-khac",
+        "tau-125",
+        "co-truong-sa"
+      ],
+      "nguon": [
+        "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
       ]
     }
   ],
-  "ket_qua": "Sáng 14/4/1975 Hải quân nhân dân Việt Nam giải phóng đảo Song Tử Tây — chiến thắng đầu tiên tại quần đảo Trường Sa; đến ngày 29/4/1975, toàn bộ quần đảo Trường Sa được giải phóng.",
-  "y_nghia": "Chiến dịch góp phần khẳng định và bảo vệ chủ quyền biển đảo thiêng liêng của Tổ quốc, hoàn thành ngay trước khi Chiến dịch Hồ Chí Minh kết thúc thắng lợi.",
+  "ket_qua": "Trong nửa tháng, ta giải phóng lần lượt các đảo Song Tử Tây (14/4), Sơn Ca (25/4), Nam Yết và Sinh Tồn (27/4), Trường Sa (29/4) thuộc quần đảo Trường Sa của Việt Nam. Về thời điểm làm chủ đảo Trường Sa, Báo Nhân Dân ghi 9 giờ 30 phút, Báo Quân đội nhân dân ghi 9 giờ ngày 29/4/1975. Riêng ở Song Tử Tây, ta diệt và bắt sống toàn bộ quân đóng giữ, thu hai đại liên, một ĐKZ, hai cối 60, hai trung liên cùng một số súng bộ binh.",
+  "y_nghia": "Việc kịp thời giải phóng các đảo và quần đảo trên Biển Đông có ý nghĩa chiến lược, góp phần vào thắng lợi chung của cuộc Tổng tiến công và nổi dậy mùa Xuân 1975. Hai bức điện ngày 9 và 10/4/1975 cho thấy yêu cầu hành động sớm để không nước ngoài nào chiếm trước các đảo thuộc chủ quyền Việt Nam.",
   "trang_thai": "draft",
   "nguon": [
+    "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html",
+    "9 giờ ngày 29-4-1975, Quần đảo Trường Sa được hoàn toàn giải phóng — Báo Quân đội nhân dân — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/9-gio-ngay-29-4-1975-quan-dao-truong-sa-duoc-hoan-toan-giai-phong-692098",
     "Báo QĐND — Ngày 14-4-1975: Song Tử Tây - đảo đầu tiên được giải phóng ở quần đảo Trường Sa",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
@@ -134,5 +386,26 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/giai-phong-Truong-Sa-mua-Xuan-nam-1975/index.html",
       "buoc": 4
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Bất biến #1 của dự án: quần đảo Trường Sa là lãnh thổ Việt Nam — mọi nhãn trên sa đồ nêu rõ điều đó. Hai nguồn nhà nước ghi hai mốc giờ khác nhau cho việc làm chủ đảo Trường Sa: Báo Nhân Dân ghi «9 giờ 30 phút, ta làm chủ đảo Trường Sa», Báo Quân đội nhân dân ghi «9 giờ ngày 29-4-1975, Quần đảo Trường Sa được hoàn toàn giải phóng». Nêu cả hai kèm nguồn, không chọn một. loai_xung_dot=noi-chien: lực lượng đóng giữ các đảo lúc đó là quân đội Sài Gòn; mệnh lệnh của Bí thư Quân uỷ Trung ương ngày 10/4/1975 ghi rõ «chỉ đánh các đảo quân ngụy miền nam chiếm đóng». Hai mục trich_van_tich vốn có được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại URL đó nên chưa tự đối chiếu được.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "14/4/1975 – 29/4/1975",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Đội 1 Đoàn 126 đặc công",
+        "Một bộ phận hoả lực thuộc Tiểu đoàn 471, Quân khu 5",
+        "Các tàu vận tải 673, 674, 675 của Đoàn 125"
+      ]
+    },
+    "nguon": [
+      "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Tại đảo Song Tử Tây, ta diệt và bắt sống toàn bộ quân đóng giữ, thu hai đại liên, một ĐKZ, hai cối 60, hai trung liên và một số súng bộ binh các loại",
+    "nguon": [
+      "Giải phóng quần đảo Trường Sa và các đảo trên Biển Đông — Báo Nhân Dân — https://special.nhandan.vn/giai-phong-quan-dao-Truong-Sa/index.html"
+    ]
+  }
 }

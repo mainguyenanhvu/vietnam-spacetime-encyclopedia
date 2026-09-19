@@ -1,10 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Buôn Ma Thuột 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Buôn Ma Thuột 10 – 11/3/1975 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "chien-dich-buon-ma-thuot-1975",
   "ten": "Chiến dịch Buôn Ma Thuột",
   "nam": 1975,
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Bộ Tư lệnh Chiến dịch Tây Nguyên (Văn Tiến Dũng)",
+  "chi_huy": "Bộ Tư lệnh Chiến dịch Tây Nguyên — Tư lệnh Trung tướng Hoàng Minh Thảo, Chính uỷ kiêm Bí thư Đảng uỷ chiến dịch Đại tá Đặng Vũ Hiệp",
   "doi_thu": "Quân lực Việt Nam Cộng hòa",
   "dia_diem": "Buôn Ma Thuột, Đắk Lắk",
   "lien_quan_tinh": [
@@ -16,133 +16,338 @@
       "kieu": "duong",
       "diem": [
         [
-          200,
-          400
+          120,
+          470
         ],
         [
-          500,
-          380
+          330,
+          430
+        ],
+        [
+          520,
+          360
+        ],
+        [
+          700,
+          300
+        ]
+      ],
+      "nhan": "Đường số 14 (Đức Lập – Buôn Ma Thuột)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          560,
+          330
+        ],
+        [
+          760,
+          300
+        ],
+        [
+          950,
+          280
+        ]
+      ],
+      "nhan": "Đường số 21 (đi Nha Trang)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          600,
+          120
         ],
         [
           800,
-          360
+          105
+        ],
+        [
+          960,
+          100
         ]
       ],
-      "nhan": "Buôn Ma Thuột, Đắk Lắk"
+      "nhan": "Đường số 19 (bị cắt, chia cắt Tây Nguyên với đồng bằng)"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          100,
+          180
+        ],
+        [
+          300,
+          165
+        ],
+        [
+          520,
+          175
+        ],
+        [
+          740,
+          190
+        ]
+      ],
+      "nhan": "Rừng núi Tây Nguyên"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-mo-man-tn",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 150,
-      "y": 480,
-      "nhan": "Đòn mở màn Chiến dịch Tây Nguyên"
-    },
-    {
-      "id": "mui-nghi-binh",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        600,
-        450
-      ],
-      "den": [
-        750,
-        420
-      ],
-      "nhan": "Nghi binh về hướng Pleiku, Kon Tum"
-    },
-    {
       "id": "thi-xa-bmt",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 400,
-      "y": 350,
+      "x": 490,
+      "y": 300,
       "nhan": "Thị xã Buôn Ma Thuột"
     },
     {
-      "id": "mui-tien-cong-bmt",
+      "id": "su-bo-23",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 400,
+      "nhan": "Căn cứ Sư đoàn bộ 23",
+      "quy_mo": "Sư đoàn 23"
+    },
+    {
+      "id": "san-bay-thi-xa",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 300,
+      "y": 210,
+      "nhan": "Sân bay thị xã"
+    },
+    {
+      "id": "kho-mai-hac-de",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 220,
+      "y": 300,
+      "nhan": "Khu kho Mai Hắc Đế"
+    },
+    {
+      "id": "san-bay-hoa-binh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 690,
+      "y": 490,
+      "nhan": "Sân bay Hoà Bình · quận lỵ Hoà Bình"
+    },
+    {
+      "id": "dac-cong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 120,
+      "y": 120,
+      "nhan": "Đặc công đánh sân bay thị xã và khu kho"
+    },
+    {
+      "id": "hoa-luc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 800,
+      "y": 190,
+      "nhan": "Hoả tiễn H12, ĐKB và các cụm pháo"
+    },
+    {
+      "id": "huong-bac",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        250,
-        420
+        520,
+        130
       ],
       "den": [
-        370,
-        370
+        500,
+        250
       ],
-      "nhan": "Bất ngờ tiến công (10-11/3)"
+      "nhan": "Hướng Bắc — Ngã Sáu, Tiểu khu"
     },
     {
-      "id": "tuyen-phong-ngu-qlvnch",
-      "kieu": "cong-su",
+      "id": "huong-tay-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        230,
+        240
+      ],
+      "den": [
+        400,
+        280
+      ],
+      "nhan": "Hướng Tây Bắc — Cư Êbur, Cư Dluê"
+    },
+    {
+      "id": "huong-tay",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        230,
+        380
+      ],
+      "den": [
+        420,
+        350
+      ],
+      "nhan": "Hướng Tây — doanh trại Tiểu đoàn Quân y"
+    },
+    {
+      "id": "huong-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        520,
+        540
+      ],
+      "den": [
+        510,
+        440
+      ],
+      "nhan": "Hướng Nam — khu Hành chính, Khu Tiếp vận"
+    },
+    {
+      "id": "nga-sau",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 240,
+      "nhan": "Ngã Sáu · Tiểu khu Buôn Ma Thuột"
+    },
+    {
+      "id": "duc-lap",
+      "kieu": "thanh",
       "ben": "dich",
-      "x": 550,
-      "y": 280,
-      "nhan": "Tuyến phòng ngự then chốt QLVNCH"
+      "x": 120,
+      "y": 470,
+      "nhan": "Quận lỵ Đức Lập"
     },
     {
-      "id": "co-thang-bmt",
+      "id": "co-lam-chu",
       "kieu": "co",
       "ben": "ta",
-      "x": 600,
-      "y": 200,
-      "nhan": "Mở đầu sụp đổ dây chuyền"
+      "x": 830,
+      "y": 420,
+      "nhan": "11/3 — làm chủ hoàn toàn thị xã"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Đòn mở màn Chiến dịch Tây Nguyên",
-      "mo_ta": "Chiến dịch Buôn Ma Thuột là đòn mở màn của Chiến dịch Tây Nguyên, đòn đột phá then chốt.",
+      "tieu_de": "9/3/1975 — cài xong thế trận, bao vây cô lập thị xã",
+      "thoi_gian": "9/3/1975",
+      "dia_danh": "Đức Lập · Đường 19 · Plây Cu · Kon Tum",
+      "mo_ta": "Ngày 9/3/1975, ta đã triển khai lực lượng và cài xong thế chiến lược lẫn thế chiến dịch. Trong ngày, quân ta đánh quận lỵ Đức Lập, đồng thời nghi binh bao vây đánh vào Plây Cu và Kon Tum, cắt đường 19 để chia cắt Tây Nguyên với đồng bằng và tách phía Nam khỏi phía Bắc. Thị xã Buôn Ma Thuột bị bao vây, cô lập hoàn toàn trước giờ nổ súng. Mục tiêu then chốt được xác định là thị xã cùng ba quận lỵ Đức Lập, Cẩm Ga, Kiến Đức.",
       "hien": [
-        "co-mo-man-tn"
+        "duc-lap",
+        "thi-xa-bmt"
+      ],
+      "nguon": [
+        "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nghi binh, đánh lạc hướng địch về Pleiku, Kon Tum",
-      "mo_ta": "Quân ta tổ chức nghi binh, khiến địch phán đoán sai hướng tiến công chính.",
+      "tieu_de": "2 giờ 03 phút ngày 10/3 — nổ súng tiến công",
+      "thoi_gian": "2 giờ 03 phút, 10/3/1975",
+      "dia_danh": "Sân bay thị xã · Khu kho Mai Hắc Đế · Sân bay Hoà Bình",
+      "mo_ta": "Đúng 2 giờ 03 phút sáng 10/3/1975, từ các hướng, quân ta nổ súng tiến công vào thị xã Buôn Ma Thuột. Mở đầu, bộ đội đặc công đánh sân bay thị xã và khu kho Mai Hắc Đế; lực lượng bộ binh đánh sân bay Hoà Bình. Cùng thời gian này, hoả tiễn H12, ĐKB và các cụm pháo tập trung bắn vào Sư đoàn bộ 23 — cơ quan chỉ huy đầu não của đối phương trong thị xã, khiến hệ thống chỉ huy rối loạn ngay từ giờ đầu.",
       "hien": [
-        "mui-nghi-binh"
+        "dac-cong",
+        "san-bay-thi-xa",
+        "kho-mai-hac-de",
+        "san-bay-hoa-binh",
+        "hoa-luc",
+        "su-bo-23"
+      ],
+      "nguon": [
+        "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Bất ngờ tiến công thị xã Buôn Ma Thuột (10-11/3/1975)",
-      "mo_ta": "Quân ta bất ngờ tiến công thị xã Buôn Ma Thuột.",
+      "tieu_de": "Sáng 10/3, hướng Bắc — đánh Ngã Sáu, chiếm Tiểu khu",
+      "thoi_gian": "Sáng 10/3/1975",
+      "dia_danh": "Ngã Sáu · Tiểu khu Buôn Ma Thuột",
+      "mo_ta": "Sáng 10/3/1975, ở hướng Bắc, bộ binh ta có xe tăng phối hợp đánh vào Ngã Sáu rồi đánh chiếm Tiểu khu Buôn Ma Thuột. Ngã Sáu là nút giao thông trung tâm thị xã, mất nút này thì các cụm phòng ngự còn lại bị chia cắt và không còn đường cơ động ứng cứu lẫn nhau. Việc chiếm Tiểu khu — cơ quan chỉ huy quân sự cấp tỉnh — cắt luôn đầu mối điều hành lực lượng bảo an và dân vệ trong thị xã.",
       "hien": [
-        "thi-xa-bmt",
-        "mui-tien-cong-bmt"
+        "huong-bac",
+        "nga-sau",
+        "thi-xa-bmt"
+      ],
+      "nguon": [
+        "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đánh sập tuyến phòng ngự then chốt của QLVNCH ở Tây Nguyên",
-      "mo_ta": "Trận đánh đánh sập tuyến phòng ngự then chốt của quân đội Sài Gòn ở Tây Nguyên.",
+      "tieu_de": "Sáng 10/3, hướng Tây Bắc — phá hệ thống cứ điểm vòng ngoài",
+      "thoi_gian": "Sáng 10/3/1975",
+      "dia_danh": "Khu kho Mai Hắc Đế · Cư Êbur · Cư Dluê",
+      "mo_ta": "Cũng trong sáng 10/3, ở hướng Tây Bắc, lực lượng ta tiêu diệt Sở chỉ huy khu kho Mai Hắc Đế, đánh chiếm các cứ điểm Cư Êbur, Cư Dluê và phá hệ thống cứ điểm án ngữ vòng ngoài thị xã. Đây là tuyến bảo vệ hướng tây bắc, nơi đối phương dựa vào các điểm cao và khu kho để chặn đường tiếp cận; tuyến này vỡ thì các mũi tiến công phía tây và tây bắc vào được thẳng khu trung tâm.",
       "hien": [
-        "thi-xa-bmt",
-        "tuyen-phong-ngu-qlvnch"
+        "huong-tay-bac",
+        "kho-mai-hac-de",
+        "thi-xa-bmt"
+      ],
+      "nguon": [
+        "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Mở đầu sự sụp đổ dây chuyền",
-      "mo_ta": "Chiến thắng mở đầu sự sụp đổ dây chuyền của QLVNCH, tiền đề cho Chiến dịch Hồ Chí Minh.",
+      "tieu_de": "Sáng 10/3, hướng Tây và hướng Nam — khép vòng vây quanh Sư đoàn bộ 23",
+      "thoi_gian": "Sáng 10/3/1975",
+      "dia_danh": "Doanh trại Tiểu đoàn Quân y · khu Hành chính · quận lỵ Hoà Bình",
+      "mo_ta": "Ở hướng Tây, quân ta đánh chiếm doanh trại Tiểu đoàn Quân y rồi áp sát căn cứ Sư đoàn bộ 23. Ở hướng Nam, ta đánh vào khu Hành chính, Khu Tiếp vận, Sở Thú y, Ty Ngân khố, khu cư xá sĩ quan và đánh chiếm quận lỵ Hoà Bình. Bốn hướng tiến công khép lại quanh Sư đoàn bộ 23, mục tiêu cuối cùng của trận đánh, đồng thời cắt hết các khu hậu cần, tài chính và hành chính của đối phương trong thị xã.",
       "hien": [
-        "co-thang-bmt"
+        "huong-tay",
+        "huong-nam",
+        "san-bay-hoa-binh",
+        "su-bo-23"
+      ],
+      "nguon": [
+        "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "11/3 — đánh vào Sư đoàn bộ 23, 10 giờ làm chủ thị xã",
+      "thoi_gian": "11/3/1975",
+      "dia_danh": "Căn cứ Sư đoàn bộ 23",
+      "mo_ta": "Ngày 11/3/1975, bộ binh, xe tăng và trọng pháo của ta tập trung đánh vào Sư đoàn bộ 23. Đối phương chống trả quyết liệt, nhưng đến 10 giờ quân ta đã làm chủ các mục tiêu và chiếm lĩnh căn cứ Sư đoàn bộ 23, giải phóng và làm chủ hoàn toàn thị xã Buôn Ma Thuột. Trận đánh khép lại sau khoảng 32 giờ kể từ loạt đạn đầu tiên lúc 2 giờ 03 phút ngày 10/3.",
+      "hien": [
+        "su-bo-23",
+        "thi-xa-bmt",
+        "co-lam-chu"
+      ],
+      "nguon": [
+        "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Vị trí của trận đánh trong Chiến dịch Tây Nguyên",
+      "thoi_gian": "Sau 11/3/1975",
+      "dia_danh": "Tây Nguyên",
+      "mo_ta": "Chiến thắng Buôn Ma Thuột là trận then chốt mở màn, buộc đối phương phải rút bỏ Tây Nguyên và làm cho lực lượng rút chạy sau đó bị tiêu diệt. Theo Thượng tướng Hoàng Minh Thảo, Tư lệnh chiến dịch, điều quan trọng là trận đánh đã tạo ra sự thay đổi cơ bản về tinh thần, tư tưởng, về so sánh lực lượng và về thế chiến lược giữa hai bên, mở đầu cuộc tiến công và nổi dậy mùa Xuân 1975.",
+      "hien": [
+        "thi-xa-bmt",
+        "co-lam-chu",
+        "duc-lap"
+      ],
+      "nguon": [
+        "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
       ]
     }
   ],
-  "ket_qua": "Đòn mở đầu Tổng tiến công và nổi dậy mùa Xuân 1975: đánh chiếm thị xã Buôn Ma Thuột ngày 10-11/3/1975, đánh sập tuyến phòng ngự then chốt của QLVNCH ở Tây Nguyên.",
-  "y_nghia": "Mở đầu sự sụp đổ dây chuyền của QLVNCH, tiền đề cho Chiến dịch Hồ Chí Minh.",
+  "ket_qua": "Sau khoảng 32 giờ chiến đấu, quân ta làm chủ các mục tiêu, chiếm lĩnh căn cứ Sư đoàn bộ 23 và giải phóng hoàn toàn thị xã Buôn Ma Thuột lúc 10 giờ ngày 11/3/1975 (Bảo tàng Đắk Lắk).",
+  "y_nghia": "Trận then chốt mở màn Chiến dịch Tây Nguyên, buộc đối phương rút bỏ Tây Nguyên và làm tiền đề cho Chiến dịch Hồ Chí Minh. Cách đánh — nghi binh ở bắc Tây Nguyên, cô lập thị xã bằng cắt đường, rồi đột phá đồng thời từ bốn hướng vào cơ quan đầu não — được các hội thảo khoa học quân sự phân tích như một mẫu tiến công thị xã bằng binh chủng hợp thành.",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975",
     "qdnd.vn — Những đòn đánh quyết định trong Chiến dịch Tây Nguyên",
-    "daklakmuseum.vn — Chiến thắng Buôn Ma Thuột 10/3/1975",
+    "Chiến dịch Tây Nguyên, bài học độc đáo về nghệ thuật mở đầu cuộc Tổng tiến công chiến lược mùa xuân 1975 — Báo Nhân Dân — https://special.nhandan.vn/chiendichtaynguyen_baihoc/index.html",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
@@ -151,6 +356,33 @@
       "doan": "Nếu thời cơ đến vào đầu năm hoặc cuối năm 1975 thì lập tức giải phóng miền Nam trong năm 1975",
       "nguon_trich": "Báo Đắk Lắk điện tử — Chiến thắng Buôn Ma Thuột tạo thời cơ chiến lược mở Chiến dịch Hồ Chí Minh — https://baodaklak.vn/chinh-tri/lich-su-truyen-thong/202203/chien-thang-buon-ma-thuot-tao-thoi-co-chien-luoc-mo-chien-dich-ho-chi-minh-dbc3c87/",
       "buoc": 1
+    },
+    {
+      "sach": "Chiến dịch Tây Nguyên đại thắng — Thượng tướng, GS Hoàng Minh Thảo, NXB Quân đội nhân dân, 2004",
+      "doan": "Chiến thắng Buôn Ma Thuột đã giáng đòn điểm huyệt choáng váng, buộc quân địch phải rút bỏ Tây Nguyên, lực lượng tàn quân tháo chạy cũng bị tiêu diệt gọn. Chiến thắng Tây Nguyên mở đầu cuộc tiến công nổi dậy mùa Xuân năm 1975 đã tạo sức mạnh toàn diện mới. Điều quan trọng là nó đã tạo ra sự thay đổi cơ bản về tinh thần, tư tưởng về so sánh lực lượng, về thế chiến lược giữa ta và địch",
+      "nguon_trich": "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975",
+      "buoc": 7
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến bốn hướng tiến công lấy nguyên theo bài của Bảo tàng Đắk Lắk (dẫn nguồn: Phạm Huy Dương – Phạm Bá Toàn chủ biên, «Chiến dịch Hồ Chí Minh trang sử vàng qua các trận đánh», NXB Quân đội nhân dân, 2005; kỷ yếu hội thảo khoa học Chiến thắng Buôn Ma Thuột 2003). Bài của Bảo tàng Đắk Lắk ghi Bí thư Tỉnh uỷ Đắk Lắk là «Huỳnh Văn Cần», trong khi chú thích ảnh của Báo Nhân Dân ghi «Huỳnh Văn Mẫn (tức Chín Cần)» — hai nguồn nhà nước vênh nhau nên không đưa tên này vào sa đồ. loai_xung_dot=noi-chien: hai bên đều là người Việt. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "9/3/1975 – 11/3/1975",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Bộ đội đặc công",
+        "Bộ binh có xe tăng phối hợp",
+        "Pháo binh và hoả tiễn H12, ĐKB"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Sư đoàn bộ binh 23",
+        "Tiểu khu Buôn Ma Thuột"
+      ]
+    },
+    "nguon": [
+      "Chiến thắng Buôn Ma Thuột ngày 10/3/1975 — Bảo tàng Đắk Lắk — https://www.daklakmuseum.vn/tin-tuc-su-kien/bai-viet/chien-thang-buon-ma-thuot-ngay-1031975"
+    ]
+  }
 }

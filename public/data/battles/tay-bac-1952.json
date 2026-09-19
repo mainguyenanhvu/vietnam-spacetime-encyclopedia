@@ -1,11 +1,13 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Tây Bắc 1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json — bám sát mo_ta đã duyệt. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Tây Bắc 1952 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Mục T2 theo docs/section9-sensitive.json. Chiến dịch KHÔNG đạt mục tiêu tiêu diệt tập đoàn cứ điểm Nà Sản — nguồn nhà nước nêu thẳng chỗ này, bản ghi giữ nguyên, ĐỪNG BỎ đi cho gọn.",
   "id": "tay-bac-1952",
   "ten": "Chiến dịch Tây Bắc 1952",
   "nam": 1952,
+  "thoi_gian": "14/10/1952 – 10/12/1952",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Đại đoàn 308 (Bộ Tổng chỉ huy)",
-  "doi_thu": "Quân đội Pháp",
+  "chi_huy": "Chỉ huy trưởng Võ Nguyên Giáp · Tham mưu trưởng Hoàng Văn Thái · Chủ nhiệm Chính trị Nguyễn Chí Thanh · Chủ nhiệm Cung cấp Trần Đăng Ninh",
+  "doi_thu": "Quân đội Pháp (khu tự trị Tây Bắc ZANO)",
   "dia_diem": "Nghĩa Lộ (nay Lào Cai) và vùng Tây Bắc (Sơn La, Lai Châu)",
   "lien_quan_tinh": [
     "lao-cai",
@@ -16,127 +18,488 @@
     {
       "kieu": "nui",
       "diem": [
-        [
-          50,
-          50
-        ],
-        [
-          500,
-          20
-        ],
-        [
-          950,
-          60
-        ]
+        [60, 60],
+        [280, 40],
+        [560, 55],
+        [820, 90],
+        [960, 130]
       ],
-      "nhan": "Vùng núi Tây Bắc"
+      "nhan": "Núi rừng Tây Bắc"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [430, 90],
+        [470, 240],
+        [545, 380],
+        [650, 500],
+        [760, 580]
+      ],
+      "nhan": "Sông Đà"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [840, 150],
+        [870, 300],
+        [900, 440],
+        [930, 570]
+      ],
+      "nhan": "Sông Thao"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [160, 120],
+        [260, 200],
+        [340, 265],
+        [420, 320]
+      ],
+      "nhan": "Đường 41 — Sơn La qua Thuận Châu, Tuần Giáo lên Lai Châu"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [660, 190],
+        [770, 200],
+        [790, 270],
+        [665, 265]
+      ],
+      "nhan": "Rừng núi Nghĩa Lộ"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-mo-man-tb",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 200,
-      "y": 500,
-      "nhan": "Mở chiến dịch tiến công Tây Bắc"
+      "id": "lai-chau",
+      "kieu": "dia-danh",
+      "x": 170,
+      "y": 90,
+      "nhan": "Lai Châu"
     },
     {
-      "id": "cu-diem-nghia-lo",
-      "kieu": "cong-su",
-      "ben": "dich",
-      "x": 400,
-      "y": 350,
-      "nhan": "Cứ điểm Nghĩa Lộ"
-    },
-    {
-      "id": "quan-ta-dai-doan-308",
+      "id": "dd312",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 420,
-      "nhan": "Đại đoàn 308 tiến công"
+      "x": 480,
+      "y": 120,
+      "nhan": "Đại đoàn 312",
+      "quy_mo": "Trung đoàn 141 · Trung đoàn 165"
     },
     {
-      "id": "mui-truy-kich-tb",
-      "kieu": "mui-ten",
+      "id": "dd308",
+      "kieu": "quan",
       "ben": "ta",
-      "tu": [
-        460,
-        300
-      ],
-      "den": [
-        650,
-        250
-      ],
-      "nhan": "Truy kích, mở rộng vùng giải phóng"
+      "x": 625,
+      "y": 122,
+      "nhan": "Đại đoàn 308",
+      "quy_mo": "Trung đoàn 102 · 88 · 36"
     },
     {
-      "id": "dia-danh-son-la",
+      "id": "pu-chang",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 790,
+      "y": 165,
+      "nhan": "Pú Chạng"
+    },
+    {
+      "id": "tuan-giao",
+      "kieu": "dia-danh",
+      "x": 270,
+      "y": 178,
+      "nhan": "Tuần Giáo"
+    },
+    {
+      "id": "nghia-lo",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 700,
+      "y": 212,
+      "nhan": "Nghĩa Lộ đồi · Nghĩa Lộ phố"
+    },
+    {
+      "id": "dien-bien-phu",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 222,
+      "nhan": "Điện Biên Phủ"
+    },
+    {
+      "id": "thuan-chau",
+      "kieu": "dia-danh",
+      "x": 335,
+      "y": 248,
+      "nhan": "Thuận Châu"
+    },
+    {
+      "id": "ca-vinh",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 858,
+      "y": 252,
+      "nhan": "Ca Vịnh"
+    },
+    {
+      "id": "son-la",
+      "kieu": "dia-danh",
+      "x": 420,
+      "y": 300,
+      "nhan": "Thị xã Sơn La"
+    },
+    {
+      "id": "dd316",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 620,
+      "y": 300,
+      "nhan": "Đại đoàn 316 (thiếu)",
+      "quy_mo": "Trung đoàn 174 · Trung đoàn 98"
+    },
+    {
+      "id": "sai-luong",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 790,
+      "y": 322,
+      "nhan": "Sài Lương"
+    },
+    {
+      "id": "na-san",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 372,
+      "nhan": "Tập đoàn cứ điểm Nà Sản",
+      "quy_mo": "17 cứ điểm · 10.000 quân · 2 vành đai phòng ngự"
+    },
+    {
+      "id": "cua-nhi",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 880,
+      "y": 382,
+      "nhan": "Đồn Cửa Nhì"
+    },
+    {
+      "id": "phu-yen",
       "kieu": "dia-danh",
       "x": 700,
-      "y": 200,
-      "nhan": "Sơn La, Lai Châu"
+      "y": 402,
+      "nhan": "Phù Yên"
     },
     {
-      "id": "co-thang-tb",
+      "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 750,
-      "y": 150,
-      "nhan": "Giải phóng phần lớn Tây Bắc"
+      "x": 250,
+      "y": 440,
+      "nhan": "Giải phóng phần lớn vùng Tây Bắc"
+    },
+    {
+      "id": "moc-chau",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 600,
+      "y": 442,
+      "nhan": "Cứ điểm Mộc Châu"
+    },
+    {
+      "id": "thuong-bang-la",
+      "kieu": "dia-danh",
+      "x": 900,
+      "y": 462,
+      "nhan": "Thượng Bằng La · Ba Khe"
+    },
+    {
+      "id": "gia-phu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 755,
+      "y": 482,
+      "nhan": "Vị trí Gia Phù"
+    },
+    {
+      "id": "phu-tho",
+      "kieu": "dia-danh",
+      "x": 890,
+      "y": 542,
+      "nhan": "Phú Thọ — hướng cuộc hành binh Lorraine"
+    },
+    {
+      "id": "trung-doan-36-phu-tho",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 745,
+      "y": 556,
+      "nhan": "Trung đoàn 36 về Phú Thọ",
+      "quy_mo": "Chặn cuộc hành binh Lorraine"
+    },
+    {
+      "id": "mui-dot1",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [880, 300],
+      "den": [735, 235],
+      "nhan": "Đợt 1 — đập vỡ khu phòng ngự Nghĩa Lộ"
+    },
+    {
+      "id": "mui-dot2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [660, 255],
+      "den": [468, 300],
+      "nhan": "Đợt 2 — vượt sông Đà vào Sơn La"
+    },
+    {
+      "id": "mui-vu-hoi",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [432, 152],
+      "den": [275, 195],
+      "nhan": "Trung đoàn 165 vu hồi đông nam Lai Châu"
+    },
+    {
+      "id": "mui-lorraine",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [975, 572],
+      "den": [912, 555],
+      "nhan": "Cuộc hành binh Lorraine đánh vào Phú Thọ"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Đại đoàn 308",
+        "Đại đoàn 312",
+        "Đại đoàn 316 (thiếu)",
+        "Tiểu đoàn 910 (Trung đoàn 148)",
+        "1 trung đoàn công binh",
+        "11 đại đội bộ đội địa phương cùng dân quân, du kích"
+      ],
+      "vu_khi": [
+        "6 đại đội sơn pháo 75mm",
+        "3 đại đội súng cối 120mm"
+      ],
+      "quan_so": [
+        {
+          "so": "huy động hàng trăm nghìn lượt dân công phục vụ tiền tuyến; các địa phương cung cấp hàng chục nghìn tấn lương thực, thực phẩm, vũ khí đạn dược",
+          "nguon": "Báo Nhân Dân — Chiến thắng Tây Bắc 1952"
+        }
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "8 tiểu đoàn và 41 đại đội trước chiến dịch, đóng phân tán trên 144 cứ điểm",
+          "nguon": "Báo Quân đội nhân dân — Chiến dịch Tây Bắc"
+        },
+        {
+          "so": "tăng thêm 8 tiểu đoàn trong đợt 2, nâng tổng số lên 16 tiểu đoàn",
+          "nguon": "Báo Quân đội nhân dân — Chiến dịch Tây Bắc"
+        },
+        {
+          "so": "10.000 quân dồn về tập đoàn cứ điểm Nà Sản trong đợt 3",
+          "nguon": "Báo Quân đội nhân dân — Chiến dịch Tây Bắc"
+        }
+      ],
+      "don_vi": [
+        "Khu tự trị Tây Bắc ZANO gồm 4 phân khu Nghĩa Lộ, Sông Đà, Sơn La, Lai Châu",
+        "3 tiểu khu độc lập Tuần Giáo, Thuận Châu, Phù Yên"
+      ],
+      "vu_khi": [
+        "Chỉ 40 trên 144 cứ điểm có từ 1 đến 2 đại đội, công sự phần lớn chưa kiên cố",
+        "Nà Sản: sân bay, sở chỉ huy, trận địa pháo binh, hệ thống hầm ngầm, lô cốt nối bằng hào giao thông"
+      ]
+    },
+    "nguon": [
+      "Báo Quân đội nhân dân — Chiến dịch Tây Bắc: tầm nhìn chiến lược của Đảng và bước trưởng thành vượt bậc của Quân đội nhân dân Việt Nam — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040",
+      "Báo Nhân Dân — Chiến thắng Tây Bắc 1952 — https://special.nhandan.vn/chien-thang-tay-bac-1952/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "hơn 6.000 quân bị loại khỏi vòng chiến đấu; nhiều tiểu đoàn, đại đội thuộc các binh đoàn cơ động bị xoá sổ",
+        "nguon": "Báo Nhân Dân · Báo Quân đội nhân dân"
+      }
+    ],
+    "ta": "Riêng ngày 2/12/1952 ở Nà Sản, máy bay và pháo binh Pháp bắn vào đội hình quân ta gây thương vong hơn 1.200 cán bộ, chiến sĩ",
+    "nguon": [
+      "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040",
+      "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Mở chiến dịch tiến công Tây Bắc (14/10/1952)",
-      "mo_ta": "Quân đội ta mở chiến dịch tiến công nhằm giải phóng vùng Tây Bắc còn bị Pháp chiếm đóng.",
+      "tieu_de": "ZANO và âm mưu «Xứ Thái tự trị»",
+      "thoi_gian": "Từ tháng 8/1945 đến năm 1952",
+      "dia_danh": "Lai Châu · Sơn La · Lào Cai · Yên Bái",
+      "mo_ta": "Tây Bắc gồm bốn tỉnh Lai Châu, Sơn La, Lào Cai, Yên Bái, nối liền với căn cứ địa Việt Bắc và tiếp giáp biên giới vùng Thượng Lào cùng Vân Nam. Lợi dụng địa hình rừng núi hiểm trở, dân cư thưa, kinh tế chậm phát triển, cơ sở chính trị và chính quyền cách mạng còn non yếu, tháng 8/1945 thực dân Pháp đưa quân từ Trung Quốc xuống thiết lập các căn cứ chiếm đóng, dựa vào quân Tưởng và các thế lực phản động địa phương thực hiện âm mưu xây dựng «Xứ Thái tự trị». Sau khi chiếm Tây Bắc, quân Pháp tổ chức thành khu tự trị Tây Bắc gọi tắt là ZANO, gồm bốn phân khu Nghĩa Lộ, Sông Đà, Sơn La, Lai Châu và ba tiểu khu độc lập Tuần Giáo, Thuận Châu, Phù Yên. Năm 1952, chúng tăng cường lực lượng và mở rộng phạm vi chiếm đóng nhằm khống chế, cắt đứt liên lạc của ta giữa Việt Bắc với Liên khu 3, đồng thời che chở cho vùng Thượng Lào.",
       "hien": [
-        "co-ta-mo-man-tb"
+        "lai-chau",
+        "son-la",
+        "nghia-lo",
+        "tuan-giao",
+        "thuan-chau",
+        "phu-yen",
+        "dien-bien-phu",
+        "moc-chau"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đợt 1: tiêu diệt cứ điểm Nghĩa Lộ",
-      "mo_ta": "Đại đoàn 308 tiến công tiêu diệt cứ điểm Nghĩa Lộ, mở toang tuyến phòng thủ của Pháp.",
+      "tieu_de": "«Tránh chỗ mạnh, đánh chỗ yếu» — quyết định mở chiến dịch",
+      "thoi_gian": "Tháng 9/1952, Bộ Chỉ huy lập ngày 9/9/1952",
+      "dia_danh": "Bộ Chỉ huy chiến dịch",
+      "mo_ta": "Lực lượng địch ở Tây Bắc có 8 tiểu đoàn và 41 đại đội đóng phân tán trên 144 cứ điểm, trong đó chỉ 40 cứ điểm có từ một đến hai đại đội, công sự phần lớn chưa kiên cố. So với đồng bằng Bắc Bộ, đây là nơi địch yếu hơn: lính Âu – Phi không nhiều, địa hình rừng núi hạn chế hoạt động của máy bay và pháo binh, tiếp tế đường không không dễ vì thiếu sân bay lớn và nhiều sương mù, tiếp tế đường bộ khó gấp bội. Với phương châm «tránh chỗ mạnh, đánh chỗ yếu, tìm nơi sơ hở của địch mà đánh», tháng 9/1952 Ban Chấp hành Trung ương Đảng và Tổng Quân uỷ quyết định mở chiến dịch tiến công trên chiến trường Tây Bắc. Ngày 9/9/1952, Trung ương Đảng quyết định thành lập Bộ Chỉ huy chiến dịch: đồng chí Võ Nguyên Giáp làm Chỉ huy trưởng, Hoàng Văn Thái làm Tham mưu trưởng, Nguyễn Chí Thanh làm Chủ nhiệm Chính trị, Trần Đăng Ninh làm Chủ nhiệm Cung cấp.",
       "hien": [
-        "cu-diem-nghia-lo",
-        "quan-ta-dai-doan-308"
+        "dd308",
+        "dd312",
+        "dd316",
+        "nghia-lo",
+        "son-la",
+        "lai-chau",
+        "phu-yen"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040",
+        "Báo Nhân Dân — Chiến dịch Tây Bắc 1952 — https://special.nhandan.vn/chien-dich-tay-bac-1952/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Truy kích, mở rộng vùng giải phóng",
-      "mo_ta": "Quân ta truy kích quân Pháp rút chạy, tiếp tục mở rộng vùng giải phóng qua các đợt tiếp theo.",
+      "tieu_de": "Đợt 1 mở màn: Ca Vịnh, Sài Lương, Gia Phù",
+      "thoi_gian": "Từ ngày 14/10/1952",
+      "dia_danh": "Ca Vịnh · Sài Lương · Gia Phù · Thượng Bằng La · Ba Khe",
+      "mo_ta": "Ngày 14/10/1952, bộ đội ta nổ súng mở màn chiến dịch. Trên hướng chủ yếu, Trung đoàn 174 của Đại đoàn 316 tiến công Ca Vịnh, Trung đoàn 141 của Đại đoàn 312 tiến công Sài Lương. Ta cũng tiêu diệt vị trí Gia Phù. Trước áp lực tiến công, địch ở các vị trí Thượng Bằng La, Ba Khe và nhiều vị trí khác bỏ đồn rút chạy. Cách đánh này khớp với nhận định ban đầu: hệ thống 144 cứ điểm của địch quá phân tán, phần lớn công sự chưa kiên cố, nên mỗi cứ điểm bị đánh gãy lại kéo theo một chuỗi vị trí lân cận tự bỏ chạy mà ta không phải nổ súng.",
       "hien": [
-        "cu-diem-nghia-lo",
-        "mui-truy-kich-tb"
+        "ca-vinh",
+        "sai-luong",
+        "gia-phu",
+        "thuong-bang-la",
+        "dd316",
+        "dd312",
+        "mui-dot1"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Giải phóng phần lớn khu Tây Bắc",
-      "mo_ta": "Sau 3 đợt tiến công, quân ta giải phóng phần lớn khu Tây Bắc (Sơn La, Lai Châu).",
+      "tieu_de": "Nghĩa Lộ đổ, tả ngạn sông Đà được giải phóng",
+      "thoi_gian": "17 – 23/10/1952",
+      "dia_danh": "Nghĩa Lộ đồi · Nghĩa Lộ phố · Pú Chạng · Cửa Nhì",
+      "mo_ta": "Ngày 17 và 18/10/1952, các cánh quân của Đại đoàn 308 lần lượt tấn công và tiêu diệt hoàn toàn hai vị trí Nghĩa Lộ đồi và Nghĩa Lộ phố. Trung đoàn 102 của Đại đoàn 308 tiến công Pú Chạng, Trung đoàn 88 tiến công Nghĩa Lộ, Trung đoàn 36 bao vây và diệt đồn Cửa Nhì. Kết quả đợt 1, ta đập vỡ khu vực phòng ngự Nghĩa Lộ và Phù Yên, giải phóng vùng tả ngạn sông Đà. Mất Nghĩa Lộ, phân khu quan trọng nhất phía đông của khu tự trị ZANO, hệ thống kìm kẹp của Pháp ở Tây Bắc bắt đầu rạn vỡ và con đường vượt sông Đà vào Sơn La mở ra trước mặt các đại đoàn chủ lực.",
       "hien": [
-        "dia-danh-son-la",
-        "mui-truy-kich-tb"
+        "nghia-lo",
+        "pu-chang",
+        "cua-nhi",
+        "dd308",
+        "phu-yen",
+        "mui-dot1",
+        "gia-phu"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Tây Bắc 1952 — https://special.nhandan.vn/chien-thang-tay-bac-1952/index.html",
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Bước trưởng thành về nghệ thuật chiến dịch",
-      "mo_ta": "Chiến dịch Tây Bắc đánh dấu bước trưởng thành vượt bậc về nghệ thuật chiến dịch của quân đội ta, chuẩn bị cho các chiến dịch lớn hơn.",
+      "tieu_de": "Pháp tăng 8 tiểu đoàn và mở hành binh Lorraine đánh Phú Thọ",
+      "thoi_gian": "Đầu tháng 11/1952",
+      "dia_danh": "Phú Thọ · Lai Châu · Nà Sản",
+      "mo_ta": "Để đối phó với cuộc tiến công của ta, địch tăng cường cho Tây Bắc thêm 8 tiểu đoàn, cùng lực lượng còn lại lên tổng số 16 tiểu đoàn; đồng thời mở cuộc hành binh Lorraine đánh vào Phú Thọ nhằm phá hậu phương kháng chiến và thu hút chủ lực ta về hướng này. Bộ chỉ huy chiến dịch quyết định điều chỉnh lực lượng: một mặt đưa Trung đoàn 36 của Đại đoàn 308 về Phú Thọ phối hợp với lực lượng vũ trang địa phương ngăn chặn Lorraine; mặt khác tổ chức thêm hướng vu hồi, sử dụng Trung đoàn 165 của Đại đoàn 312 đánh vào đông nam Lai Châu, làm cho địch lầm tưởng đó là hướng tiến công chủ yếu nên vội tăng cường lực lượng cho Lai Châu và Nà Sản.",
       "hien": [
-        "co-thang-tb"
+        "phu-tho",
+        "trung-doan-36-phu-tho",
+        "mui-lorraine",
+        "mui-vu-hoi",
+        "lai-chau",
+        "na-san",
+        "dd312"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đợt 2: Mộc Châu, Thuận Châu, Tuần Giáo, Điện Biên Phủ",
+      "thoi_gian": "7 – 22/11/1952",
+      "dia_danh": "Mộc Châu · Thuận Châu · Tuần Giáo · Điện Biên Phủ · thị xã Sơn La",
+      "mo_ta": "Trong đợt 2, Trung đoàn 174 và Trung đoàn 98 của Đại đoàn 316 tiến công cứ điểm Mộc Châu, trong khi hướng vu hồi Trung đoàn 165 kéo địch về phía Lai Châu. Kết quả đợt 2, ta giải phóng Thuận Châu, Tuần Giáo, Điện Biên Phủ và buộc địch ở thị xã Sơn La rút chạy về Nà Sản. Ta đã xác định chính xác hướng tiến công chủ yếu và thứ yếu, phối hợp chặt chẽ giữa các lực lượng trên các hướng, sử dụng nhiều cách đánh hiểm là vu hồi, luồn sâu, chia cắt và nghi binh, đồng thời thực hiện tốt phương châm «đánh điểm diệt viện» trên chiến trường rừng núi.",
+      "hien": [
+        "moc-chau",
+        "thuan-chau",
+        "tuan-giao",
+        "dien-bien-phu",
+        "son-la",
+        "na-san",
+        "dd316",
+        "mui-dot2",
+        "mui-vu-hoi"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đợt 3: bốn trận trước Nà Sản không thành",
+      "thoi_gian": "30/11 – 10/12/1952",
+      "dia_danh": "Pú Hồng · Bản Vây · Bản Hời · Nà Si",
+      "mo_ta": "Địch dồn lực lượng về Nà Sản, xây dựng một tập đoàn cứ điểm với 17 cứ điểm, tổng binh lực lên tới 10.000 quân, hình thành hai vành đai phòng ngự có sân bay, sở chỉ huy, trận địa pháo binh, hệ thống hầm ngầm và lô cốt nối bằng hào giao thông, bao quanh là hàng rào thép gai. Ta tập trung tới 12 tiểu đoàn của ba đại đoàn chủ lực, liên tiếp tiến công Pú Hồng, Bản Vây, Bản Hời, Nà Si trong nhiều ngày nhưng không thành công. Đêm 30/11 và 1/12, Đại đoàn 308 chiếm được Bản Hời sau 7 giờ chiến đấu nhưng bị thương vong nhiều, hôm sau địch dùng máy bay ném bom và pháo binh chi viện bộ binh xung phong chiếm lại. Ngày 2/12/1952, máy bay và pháo binh Pháp bắn vào đội hình quân ta gây thương vong hơn 1.200 cán bộ, chiến sĩ. Bộ chỉ huy chiến dịch nhận thấy tiếp tục tiến công Nà Sản không có lợi nên quyết định kết thúc chiến dịch ngày 10/12/1952.",
+      "hien": [
+        "na-san",
+        "dd308",
+        "dd312",
+        "dd316",
+        "son-la",
+        "thuan-chau",
+        "mui-dot2"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040",
+        "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "10/12/1952: thắng lợi lớn, một mục tiêu còn dở dang",
+      "thoi_gian": "10/12/1952",
+      "dia_danh": "Toàn vùng Tây Bắc",
+      "mo_ta": "Trải qua gần hai tháng với ba đợt tác chiến dài ngày, ác liệt, trên một địa bàn rộng lớn và hiểm trở, quân và dân ta giành thắng lợi to lớn: loại khỏi vòng chiến đấu hơn 6.000 quân địch, nhiều tiểu đoàn và đại đội thuộc các binh đoàn cơ động bị xoá sổ, giải phóng một vùng khoảng 30.000km² với 250.000 dân, làm tan rã hệ thống kìm kẹp của Pháp ở Tây Bắc, đập tan âm mưu lập «Xứ Thái tự trị», «Xứ Mường tự trị», «Xứ Nùng tự trị», nối liền vùng giải phóng Tây Bắc với căn cứ địa Việt Bắc và phá vỡ «bình phong» che chở cho địch ở Thượng Lào. Nguồn nhà nước cũng nêu thẳng phần chưa đạt: ta chưa tiêu diệt được tập đoàn cứ điểm Nà Sản và chưa giải phóng hoàn toàn vùng Tây Bắc, còn một số hạn chế trong chỉ huy tác chiến và nắm địch. Bài học từ bốn trận đánh trước Nà Sản chính là thứ được đem ra dùng ở Điện Biên Phủ hai năm sau.",
+      "hien": [
+        "co-thang",
+        "na-san",
+        "nghia-lo",
+        "son-la",
+        "lai-chau",
+        "dien-bien-phu",
+        "moc-chau",
+        "phu-yen"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến dịch Tây Bắc — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040",
+        "Báo Nhân Dân — Chiến thắng Tây Bắc 1952 — https://special.nhandan.vn/chien-thang-tay-bac-1952/index.html"
       ]
     }
   ],
-  "ket_qua": "Sau 3 đợt tiến công, quân ta giải phóng phần lớn khu Tây Bắc, đánh dấu bước trưởng thành vượt bậc về nghệ thuật chiến dịch.",
-  "y_nghia": "Mở rộng vùng giải phóng, tạo bàn đạp chiến lược quan trọng hướng tới chiến dịch Điện Biên Phủ hai năm sau.",
+  "ket_qua": "Loại khỏi vòng chiến đấu hơn 6.000 quân địch, giải phóng khoảng 30.000km² với 250.000 dân, làm tan rã hệ thống kìm kẹp của Pháp ở Tây Bắc; chưa tiêu diệt được tập đoàn cứ điểm Nà Sản.",
+  "y_nghia": "Đập tan âm mưu lập «Xứ Thái tự trị», nối liền vùng giải phóng Tây Bắc với căn cứ địa Việt Bắc, phá vỡ bình phong che chở cho địch ở Thượng Lào và tạo bàn đạp chiến lược cho Điện Biên Phủ hai năm sau.",
   "trang_thai": "draft",
   "nguon": [
-    "Báo QĐND — Chiến thắng Tây Bắc năm 1952",
+    "Báo Quân đội nhân dân — Chiến dịch Tây Bắc: tầm nhìn chiến lược của Đảng và bước trưởng thành vượt bậc của Quân đội nhân dân Việt Nam — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-tay-bac-tam-nhin-chien-luoc-cua-dang-va-buoc-truong-thanh-vuot-bac-cua-quan-doi-nhan-dan-viet-nam-798040",
+    "Báo Nhân Dân — Chiến thắng Tây Bắc 1952 — https://special.nhandan.vn/chien-thang-tay-bac-1952/index.html",
+    "Báo Nhân Dân — Chiến dịch Tây Bắc 1952 — https://special.nhandan.vn/chien-dich-tay-bac-1952/index.html",
+    "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
     "Lịch sử Việt Nam (Viện Sử học)"
   ],
@@ -145,13 +508,13 @@
       "sach": "Lời căn dặn của Chủ tịch Hồ Chí Minh với cán bộ, chiến sĩ trước Chiến dịch Tây Bắc",
       "doan": "Trung ương Đảng và Tổng Quân ủy đã cân nhắc chỗ dễ và chỗ khó của chiến trường sắp đến và quyết tâm là chiến dịch này phải đánh cho thắng lợi. Quyết tâm của Trung ương chưa đủ, mà phải làm cho quyết tâm đó xuống đến mọi người chiến sĩ... Quyết tâm đó phải thành một khối thống nhất từ trên xuống dưới và từ dưới lên trên",
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/chien-dich-tay-bac-1952/index.html",
-      "buoc": 1
+      "buoc": 2
     },
     {
       "sach": "Mục tiêu Trung ương Đảng đặt ra khi quyết định mở Chiến dịch Tây Bắc, tháng 9/1952",
       "doan": "tiêu diệt sinh lực địch, tranh thủ nhân dân, giải phóng một bộ phận đất đai có tính chất quan trọng về chiến lược",
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/chien-dich-tay-bac-1952/index.html",
-      "buoc": 1
+      "buoc": 2
     }
   ]
 }

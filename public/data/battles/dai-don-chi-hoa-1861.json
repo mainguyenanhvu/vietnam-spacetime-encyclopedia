@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ trận Đại đồn Chí Hoà 1861 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Đại đồn Chí Hoà 1861 — MINH HOẠ theo diễn biến chính sử và tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Hai bài cùng của Báo Tuổi Trẻ chép con số quân chính quy và quân nghĩa dõng ĐẢO NGƯỢC nhau — nêu cả hai ở khối luc_luong, không chọn một.",
   "id": "dai-don-chi-hoa-1861",
   "ten": "Trận Đại đồn Chí Hoà (Kỳ Hoà) 1861",
   "nam": 1861,
@@ -7,172 +7,369 @@
   "chi_huy": "Nguyễn Tri Phương, Phạm Thế Hiển",
   "doi_thu": "Pháp (Léonard Charner)",
   "dia_diem": "Đại đồn Chí Hoà, nay thuộc Thành phố Hồ Chí Minh",
+  "thoi_gian": "24 – 25/2/1861 (đại đồn khởi dựng từ sau 14/2/1859)",
   "lien_quan_tinh": [
     "thanh-pho-ho-chi-minh"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "duong",
+      "diem": [
+        [846, 520],
+        [716, 456],
+        [592, 406]
+      ],
+      "nhan": "Đường từ Sài Gòn lên Chí Hoà"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [116, 126],
+        [300, 88],
+        [426, 140],
+        [304, 194],
+        [148, 184]
+      ],
+      "nhan": "Vùng Gò Cát — Bà Quẹo"
+    },
+    {
       "kieu": "song",
       "diem": [
-        [
-          700,
-          50
-        ],
-        [
-          750,
-          300
-        ],
-        [
-          800,
-          550
-        ]
+        [906, 596],
+        [884, 468],
+        [902, 338]
       ],
-      "nhan": "Sông Sài Gòn"
+      "nhan": "Rạch Bến Nghé — sông Sài Gòn"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [296, 296],
+        [440, 288],
+        [582, 300],
+        [702, 332]
+      ],
+      "nhan": "Mặt chính tuyến luỹ đại đồn"
     }
   ],
   "phan_tu": [
     {
-      "id": "don-chi-hoa",
+      "id": "thanh-gia-dinh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 862,
+      "y": 546,
+      "nhan": "Thành Gia Định — thất thủ ngày 14/2/1859"
+    },
+    {
+      "id": "dai-don",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 400,
-      "y": 300,
-      "nhan": "Đại đồn Chí Hoà"
+      "x": 460,
+      "y": 366,
+      "nhan": "Đại đồn Chí Hoà",
+      "quy_mo": "riêng khu vực chính gần 3 km², tức 300 ha"
     },
     {
-      "id": "quan-ta-nguyen-tri-phuong",
+      "id": "don-tien",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 656,
+      "y": 314,
+      "nhan": "Đồn Tiền — mặt hướng về Sài Gòn"
+    },
+    {
+      "id": "hau-don",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 288,
+      "y": 408,
+      "nhan": "Hậu đồn — mặt sau đại đồn"
+    },
+    {
+      "id": "fort-des-mandarins",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 444,
+      "y": 486,
+      "nhan": "Đồn chỉ huy — bản đồ quân sự Pháp ghi là fort des Mandarins"
+    },
+    {
+      "id": "nguyen-tri-phuong",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 350,
-      "nhan": "Nguyễn Tri Phương, Phạm Thế Hiển"
+      "x": 168,
+      "y": 336,
+      "nhan": "Nguyễn Tri Phương chỉ huy toàn tuyến"
     },
     {
-      "id": "ham-doi-phap",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 750,
-      "y": 150,
-      "nhan": "Hạm đội Charner (70 tàu)"
-    },
-    {
-      "id": "quan-dich-bo",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 620,
-      "y": 200,
-      "nhan": "3.500 quân bộ Pháp"
-    },
-    {
-      "id": "mui-tien-cong",
-      "kieu": "mui-ten",
-      "ben": "dich",
-      "tu": [
-        560,
-        260
-      ],
-      "den": [
-        430,
-        290
-      ],
-      "nhan": "Tiến công Đại đồn"
-    },
-    {
-      "id": "quan-ta-bi-thuong",
+      "id": "nguyen-duy",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 420,
-      "nhan": "Nguyễn Tri Phương bị thương, rút về Biên Hoà"
+      "x": 216,
+      "y": 496,
+      "nhan": "Tán lý Nguyễn Duy"
     },
     {
-      "id": "mui-mo-rong",
+      "id": "don-cay-mai",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 784,
+      "y": 442,
+      "nhan": "Đồn Cây Mai — cứ điểm liên quân bị vây ép"
+    },
+    {
+      "id": "mui-ham-cay-mai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [700, 404],
+      "den": [760, 432],
+      "nhan": "Quân ta liều chết dưới mưa đạn để hãm đồn Cây Mai"
+    },
+    {
+      "id": "charner",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 884,
+      "y": 288,
+      "nhan": "Tướng Charner chỉ huy liên quân Pháp – Tây Ban Nha"
+    },
+    {
+      "id": "khinh-khi-cau",
+      "kieu": "dia-danh",
+      "x": 768,
+      "y": 176,
+      "nhan": "Khinh khí cầu trinh sát bao quát hình thể đại đồn"
+    },
+    {
+      "id": "mui-cong-24",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        600,
-        300
-      ],
-      "den": [
-        200,
-        480
-      ],
-      "nhan": "Pháp mở rộng chiếm Nam Kỳ"
+      "tu": [826, 330],
+      "den": [700, 318],
+      "nhan": "Sáng sớm 24/2/1861 phát lệnh tấn công"
+    },
+    {
+      "id": "go-cat",
+      "kieu": "dia-danh",
+      "x": 168,
+      "y": 106,
+      "nhan": "Gò Cát"
+    },
+    {
+      "id": "ba-queo",
+      "kieu": "dia-danh",
+      "x": 252,
+      "y": 212,
+      "nhan": "Bà Quẹo"
+    },
+    {
+      "id": "mui-cong-25",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [232, 250],
+      "den": [286, 376],
+      "nhan": "Sáng 25/2 vòng xuống đánh vào hậu đồn"
+    },
+    {
+      "id": "co-dich",
+      "kieu": "co",
+      "ben": "dich",
+      "x": 700,
+      "y": 552,
+      "nhan": "Pháp thừa thắng chiếm Định Tường, Biên Hoà, Vĩnh Long"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Xây dựng Đại đồn Chí Hoà (1860)",
-      "mo_ta": "Nguyễn Tri Phương và Phạm Thế Hiển xây dựng Đại đồn Chí Hoà nhằm cầm chân quân Pháp tại Gia Định.",
+      "tieu_de": "Sau khi thành Gia Định thất thủ, dựng đại đồn",
+      "thoi_gian": "Từ sau 14/2/1859",
+      "dia_danh": "Chí Hoà — Gia Định",
+      "mo_ta": "Những đồn luỹ đầu tiên của đại đồn được xây dựng ngay sau khi thành Gia Định thất thủ ngày 14/2/1859. Trên vùng đất phía tây bắc Sài Gòn, quân triều đình dựng dần một cụm công sự liên hoàn nhằm khoá đường tiến sâu vào nội địa của liên quân, đồng thời làm bàn đạp để vây ép lực lượng chiếm đóng đang co cụm quanh khu vực thành cũ.",
       "hien": [
-        "don-chi-hoa",
-        "quan-ta-nguyen-tri-phuong"
+        "thanh-gia-dinh",
+        "dai-don",
+        "don-tien"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-chien-luy-vi-dai-giua-sai-gon-xua-1216876.htm"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Charner đưa đại quân tới Gia Định",
-      "mo_ta": "Đầu 1861, Trung tướng Charner đưa 70 chiến thuyền và 3.500 quân bộ tới Gia Định, chuẩn bị tiến đánh đồn.",
+      "tieu_de": "Quy mô đại đồn và tương quan lực lượng",
+      "dia_danh": "Đại đồn Chí Hoà",
+      "mo_ta": "Cụm đồn luỹ Chí Hoà, chỉ tính riêng khu vực chính là đại đồn, đã rộng gần 3 km², tức 300 ha — trong khi thành Gia Định thất thủ năm 1859 vuông vức mỗi cạnh khoảng 450 m, tổng diện tích chỉ hơn 0,2 km². Về quân số, hai bài cùng của Báo Tuổi Trẻ chép hai cách đảo ngược nhau: một bài dẫn tư liệu Pháp ghi khoảng 21.000 quân chính quy và 10.000 quân dân dũng, bài kia ghi 10.000 quân chánh quy và hơn 20.000 quân nghĩa dõng. Bản đồ quân sự của Léopold Pallu ghi fort des Mandarins, tức đồn chỉ huy, ở khu vực cuối cùng của đại đồn.",
       "hien": [
-        "don-chi-hoa",
-        "ham-doi-phap",
-        "quan-dich-bo"
+        "dai-don",
+        "fort-des-mandarins",
+        "nguyen-tri-phuong",
+        "hau-don"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-chien-luy-vi-dai-giua-sai-gon-xua-1216876.htm",
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Vây đánh Đại đồn sau 20 ngày chuẩn bị",
-      "mo_ta": "Sau 20 ngày áp sát, quân Pháp tổ chức tiến công đồn Kỳ Hoà.",
+      "tieu_de": "Vây ép lực lượng chiếm đóng suốt năm 1860",
+      "thoi_gian": "Năm 1860",
+      "dia_danh": "Đồn Cây Mai — vành đai Sài Gòn",
+      "mo_ta": "Quân Pháp – Tây Ban Nha lúc cao điểm chỉ có khoảng 800 quân, bị vây chặt tới nỗi sáu, bảy tháng liền không nhận được tin tức gì từ phía Pháp. Sau khi bao vây, Nguyễn Tri Phương cho quân liều chết dưới mưa đạn để hãm đồn Cây Mai. Trong suốt năm 1860, thế trận ở Gia Định là thế của một lực lượng chiếm đóng nhỏ bị khoá chặt trong vành đai do đại đồn dựng nên.",
       "hien": [
-        "don-chi-hoa",
-        "quan-dich-bo",
-        "mui-tien-cong"
+        "don-cay-mai",
+        "mui-ham-cay-mai",
+        "dai-don"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-chien-luy-vi-dai-giua-sai-gon-xua-1216876.htm"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Hai ngày giao chiến ác liệt (24-25/2/1861)",
-      "mo_ta": "Hai bên giao chiến ác liệt suốt hai ngày; Pháp thiệt hại hơn 300 quân nhưng hoả lực vượt trội áp đảo phòng tuyến.",
+      "tieu_de": "Trận đêm 3 và 4/7/1860 — chiếm một đồn luỹ của địch",
+      "thoi_gian": "Đêm 3 và 4/7/1860",
+      "dia_danh": "Vành đai Sài Gòn",
+      "mo_ta": "Trong đêm 3 và 4/7/1860, 3.000 quân của Nguyễn Tri Phương đã anh dũng chiếm được một đồn luỹ do đại uý người Tây Ban Nha Fernandez chỉ huy với 100 lính Tây Ban Nha và 60 lính Pháp. Trận đánh cho thấy vành đai vây ép không chỉ là thế thủ: quân triều đình có thể chọn điểm mà đánh chiếm từng cứ điểm lẻ của đối phương khi lực lượng chiếm đóng còn mỏng.",
       "hien": [
-        "don-chi-hoa",
-        "quan-ta-nguyen-tri-phuong",
-        "mui-tien-cong"
+        "don-cay-mai",
+        "nguyen-tri-phuong",
+        "thanh-gia-dinh"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-chien-luy-vi-dai-giua-sai-gon-xua-1216876.htm"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đại đồn thất thủ, Nguyễn Tri Phương bị thương",
-      "mo_ta": "Quân ta bỏ đồn rút về Biên Hoà; Nguyễn Tri Phương bị thương nặng, em trai ông Nguyễn Duy tử trận.",
+      "tieu_de": "Charner tập trung quân, dùng khinh khí cầu trinh sát",
+      "thoi_gian": "Đầu năm 1861",
+      "dia_danh": "Sài Gòn",
+      "mo_ta": "Chiến tranh ở Trung Quốc kết thúc, viện binh đổ về Sài Gòn và cán cân đảo chiều. Trước khi mở trận, Charner sử dụng một phương tiện hiện đại thời bấy giờ là khinh khí cầu để nắm được bao quát hình thể đại đồn — nhờ đó lần đầu tiên phía tấn công biết chính xác hình dạng, chiều sâu và các mặt yếu của một công trình mà họ đã đứng bên ngoài suốt hai năm.",
       "hien": [
-        "quan-ta-bi-thuong",
-        "don-chi-hoa"
+        "charner",
+        "khinh-khi-cau",
+        "dai-don"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Pháp thừa thắng mở rộng chiếm Nam Kỳ",
-      "mo_ta": "Pháp thừa thắng chiếm Thủ Dầu Một, Tây Ninh, Mỹ Tho, mở đường tới Hoà ước Nhâm Tuất 1862.",
+      "tieu_de": "Sáng sớm 24/2/1861 — đồn Tiền thất thủ sau ba giờ",
+      "thoi_gian": "Sáng sớm 24/2/1861",
+      "dia_danh": "Đồn Tiền — mặt chính đại đồn",
+      "mo_ta": "Sáng sớm 24/2/1861, tướng Charner, chỉ huy liên quân Pháp – Tây Ban Nha tại Sài Gòn, đã phát lệnh tấn công đại đồn Chí Hoà. Sau ba giờ tấn công, đồn Tiền thất thủ. Liên quân nã đại bác vào đại đồn và tấn công vào mặt chánh của đồn. Ưu thế pháo binh cùng bản đồ trinh sát từ trên cao cho phép đối phương dồn hoả lực đúng vào những đoạn luỹ mỏng nhất.",
       "hien": [
-        "mui-mo-rong"
+        "mui-cong-24",
+        "don-tien",
+        "dai-don",
+        "charner"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Sáng 25/2 — đánh vào hậu đồn, Nguyễn Duy tử trận",
+      "thoi_gian": "Ngày 25/2/1861",
+      "dia_danh": "Gò Cát — Bà Quẹo — hậu đồn",
+      "mo_ta": "Sáng hôm sau, từ Gò Cát, tức khu vực nhà hoả táng Bình Hưng Hoà ngày nay, quân Pháp kéo xuống Bà Quẹo và tấn công vào hậu đồn. Đại đồn bị đánh cả hai mặt trước sau. Tán lý Nguyễn Duy chết trận, tướng Nguyễn Tri Phương bị thương nơi tay, quân lính thì bị thương và chết vô số. Trận chiến chấm dứt bằng một cảnh thảm sát cuối cùng khi quân Pháp tràn vào đồn Chí Hoà.",
+      "hien": [
+        "go-cat",
+        "ba-queo",
+        "mui-cong-25",
+        "hau-don",
+        "nguyen-duy"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Mất đại đồn, Pháp mở rộng chiếm Nam Kỳ",
+      "thoi_gian": "Từ 1861",
+      "dia_danh": "Định Tường — Biên Hoà — Vĩnh Long",
+      "mo_ta": "Quân ta bại trận với gần 10.000 người chết và bị thương, chưa kể khí tài và tiền của. Mất tuyến phòng ngự duy nhất ở Gia Định, triều đình không còn lực lượng tập trung nào chặn được bước tiến của liên quân: Pháp lần lượt đánh chiếm Định Tường, Biên Hoà rồi Vĩnh Long, dẫn tới Hoà ước Nhâm Tuất năm 1862 — cột mốc đầu tiên Việt Nam mất đất vào tay thực dân Pháp.",
+      "hien": [
+        "co-dich",
+        "thanh-gia-dinh",
+        "dai-don"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "khoảng 21.000 quân chính quy và 10.000 quân dân dũng (theo tư liệu của người Pháp)",
+          "nguon": "Báo Tuổi Trẻ — «Đại đồn Chí Hòa, chiến lũy vĩ đại giữa Sài Gòn xưa»"
+        },
+        {
+          "so": "10.000 quân chánh quy và hơn 20.000 quân nghĩa dõng",
+          "nguon": "Báo Tuổi Trẻ — «Đại đồn Chí Hòa - kỳ 1»"
+        }
+      ],
+      "don_vi": [
+        "Quân thứ Gia Định do Nguyễn Tri Phương thống lĩnh, Phạm Thế Hiển tham tán",
+        "Tán lý Nguyễn Duy giữ mặt hậu đồn"
+      ],
+      "vu_khi": [
+        "Cụm đồn luỹ liên hoàn rộng gần 3 km² ở khu vực chính"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Lúc cao điểm trước khi có viện binh chỉ khoảng 800 quân",
+      "don_vi": [
+        "Liên quân Pháp – Tây Ban Nha tại Sài Gòn do tướng Charner chỉ huy"
+      ],
+      "vu_khi": [
+        "Pháo binh hạng nặng",
+        "Khinh khí cầu trinh sát"
+      ]
+    },
+    "nguon": [
+      "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-chien-luy-vi-dai-giua-sai-gon-xua-1216876.htm",
+      "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
+    ]
+  },
+  "ton_that": {
+    "ta": "Gần 10.000 người chết và bị thương; Tán lý Nguyễn Duy tử trận, Nguyễn Tri Phương bị thương nơi tay",
+    "nguon": [
+      "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
+    ]
+  },
   "ket_qua": "Quân Pháp hạ được Đại đồn Chí Hoà sau hai ngày giao chiến ác liệt; Nguyễn Tri Phương bị thương nặng, Pháp thừa thắng mở rộng chiếm Nam Kỳ.",
   "y_nghia": "Thất thủ Đại đồn Chí Hoà mở đường cho Pháp mở rộng chiếm Nam Kỳ, dẫn tới Hoà ước Nhâm Tuất 1862 — cột mốc đầu tiên Việt Nam mất đất vào tay thực dân Pháp.",
   "trang_thai": "draft",
   "nguon": [
     "Đại Nam Thực Lục — Đệ tứ kỷ",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Việt Nam sử lược, Nhà Nguyễn, Chương VII"
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Việt Nam sử lược, Nhà Nguyễn, Chương VII",
+    "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-chien-luy-vi-dai-giua-sai-gon-xua-1216876.htm",
+    "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm"
   ],
   "trich_van_tich": [
     {
       "sach": "Lời khen của một tướng Pháp về tài dụng binh của Nguyễn Tri Phương, dẫn theo sách của Phan Trần Chúc",
       "doan": "Thấy phương pháp dụng binh của Nguyễn Tri Phương, người ta phải tin rằng vị nguyên soái anh hùng của nước Nam đã biết phương lược xây dựng lối pháo đài tạm thời như Totleben ở Sébastopol, Denfert Rochereau ở Belfort, Osman Pacha trong trận Plevna.",
       "nguon_trich": "Tuổi Trẻ — Đại đồn Chí Hòa, chiến lũy vĩ đại giữa Sài Gòn xưa — https://tuoitre.vn/dai-don-chi-hoa-chien-luy-vi-dai-giua-sai-gon-xua-1216876.htm",
-      "buoc": 1
+      "buoc": 2
+    },
+    {
+      "sach": "Báo Tuổi Trẻ — «Đại đồn Chí Hòa - kỳ 1: Trận chiến không thể quên» (tác giả Trần Nhật Vy)",
+      "doan": "Sáng sớm 24-2-1861, tướng Charner, chỉ huy liên quân Pháp - Tây Ban Nha tại Sài Gòn, đã phát lệnh tấn công đại đồn Chí Hòa.",
+      "nguon_trich": "Báo Tuổi Trẻ — https://tuoitre.vn/dai-don-chi-hoa-ky-1-tran-chien-khong-the-quen-20190220083907359.htm",
+      "buoc": 6
     }
   ]
 }

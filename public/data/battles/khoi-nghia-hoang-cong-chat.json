@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Hoàng Công Chất 1739–1769 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Hoàng Công Chất 1739–1769 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Cuộc khởi nghĩa có hai mặt: giai đoạn Sơn Nam là nổi dậy chống chính quyền Lê – Trịnh, giai đoạn Tây Bắc là đánh giặc Phẻ từ phương Bắc tràn xuống; trường doi_thu của hồ sơ này khai «Giặc Phẻ» nên giữ loai_xung_dot mặc định. Hai chỗ vênh giữa các nguồn nhà nước được nêu song song ở bước 8: năm ông mất (1767 hay 1769) và tên toà thành ở Noong Hẹt (Bản Phủ hay Xám Mứn / Tam Vạn).",
   "id": "khoi-nghia-hoang-cong-chat",
   "ten": "Khởi nghĩa Hoàng Công Chất (1739–1769)",
   "nam": 1739,
@@ -7,156 +7,369 @@
   "chi_huy": "Hoàng Công Chất",
   "doi_thu": "Giặc Phẻ",
   "dia_diem": "Thành Bản Phủ, Điện Biên",
+  "thoi_gian": "1739 – 1767 theo Cục Di sản văn hoá; 1739 – 1769 theo Bách khoa toàn thư Quân sự Việt Nam",
   "lien_quan_tinh": [
     "dien-bien"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
-      "kieu": "duong",
-      "diem": [
-        [
-          100,
-          500
-        ],
-        [
-          400,
-          350
-        ],
-        [
-          700,
-          200
-        ]
-      ],
-      "nhan": "Đường từ Sơn Nam lên Tây Bắc"
-    },
-    {
       "kieu": "nui",
       "diem": [
-        [
-          500,
-          80
-        ],
-        [
-          750,
-          50
-        ],
-        [
-          950,
-          100
-        ]
+        [70, 122],
+        [258, 60],
+        [440, 122],
+        [620, 68],
+        [806, 132]
       ],
-      "nhan": "Vùng Mường Thanh, Điện Biên"
+      "nhan": "Vùng núi cao Tây Bắc"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [376, 202],
+        [428, 320],
+        [468, 450],
+        [498, 572]
+      ],
+      "nhan": "Sông Nậm Rốm"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [296, 282],
+        [520, 250],
+        [644, 330],
+        [500, 432],
+        [318, 402]
+      ],
+      "nhan": "Cánh đồng Mường Thanh"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [758, 418],
+        [840, 480],
+        [904, 552]
+      ],
+      "nhan": "Vùng sông lạch, đầm lầy Sơn Nam"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [862, 520],
+        [700, 442],
+        [540, 344],
+        [400, 262]
+      ],
+      "nhan": "Đường rút từ Sơn Nam lên Thanh Hoá, thượng Lào rồi Tây Bắc"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-day-binh-hcc",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 150,
-      "y": 520,
-      "nhan": "Hoàng Công Chất dấy binh tại Sơn Nam"
+      "id": "nguyen-xa",
+      "kieu": "dia-danh",
+      "x": 886,
+      "y": 566,
+      "nhan": "Làng Hoàng Xá, huyện Thư Trì, Sơn Nam Hạ — nay là Nguyên Xá, Vũ Thư, Thái Bình"
     },
     {
-      "id": "quan-ta-tien-len-tb",
+      "id": "hoang-cong-chat",
       "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 380,
-      "nhan": "Nghĩa quân tiến lên Tây Bắc"
+      "x": 738,
+      "y": 506,
+      "nhan": "Hoàng Công Chất — tên thật Hoàng Công Thư, sinh năm 1706"
     },
     {
-      "id": "tuong-ngai-khanh",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 600,
-      "y": 250,
-      "nhan": "Tướng Ngải, tướng Khanh phối hợp"
+      "id": "song-dai-lan",
+      "kieu": "dia-danh",
+      "x": 902,
+      "y": 434,
+      "nhan": "Bến sông Đai Lan — trận thắng đầu, giữ bình yên cho dân ăn Tết Canh Thân 1740"
     },
     {
-      "id": "quan-dich-giac-phe",
+      "id": "son-nam",
+      "kieu": "dia-danh",
+      "x": 792,
+      "y": 358,
+      "nhan": "Vùng Sơn Nam — đánh du kích, thường không xây căn cứ cố định"
+    },
+    {
+      "id": "khoai-chau",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 292,
+      "nhan": "Phủ lỵ Khoái Châu — giả vờ đầu hàng rồi bất thần đánh chiếm, năm 1743"
+    },
+    {
+      "id": "hoang-cong-ki",
       "kieu": "quan",
       "ben": "dich",
-      "x": 750,
-      "y": 150,
-      "nhan": "Giặc Phẻ quấy nhiễu Mường Thanh"
+      "x": 616,
+      "y": 412,
+      "nhan": "Trấn thủ Sơn Nam Hoàng Công Kì bị bắt sống, đầu năm 1746"
     },
     {
-      "id": "mui-danh-giac-phe",
+      "id": "thanh-hoa",
+      "kieu": "dia-danh",
+      "x": 562,
+      "y": 534,
+      "nhan": "Thượng du Thanh Hoá — liên kết với phong trào Lê Duy Mật"
+    },
+    {
+      "id": "thuong-lao",
+      "kieu": "dia-danh",
+      "x": 322,
+      "y": 546,
+      "nhan": "Mường Ét · Mường Xằm · Mường Xon · Mường Pở · Mường Cảu — nay thuộc Hủa Phăn, Lào"
+    },
+    {
+      "id": "ngai-khanh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 186,
+      "y": 462,
+      "nhan": "Hai thủ lĩnh người Thái Lò Văn Ngải và Lò Văn Khanh"
+    },
+    {
+      "id": "muong-loi",
+      "kieu": "dia-danh",
+      "x": 130,
+      "y": 306,
+      "nhan": "Mường Lói · Mường Lèo — nơi nghĩa quân từ đỉnh núi cao đổ xuống lòng chảo"
+    },
+    {
+      "id": "thanh-sam-mun",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 468,
+      "y": 252,
+      "nhan": "Thành Sam Mứn — nơi giặc Phẻ đóng quân"
+    },
+    {
+      "id": "chau-pha",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 606,
+      "y": 176,
+      "nhan": "Chẩu Phạ Tín Toòng — đại bản doanh trên đồi Pu Văng, nay là đồi Độc Lập"
+    },
+    {
+      "id": "mui-tra-hang",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        620,
-        220
-      ],
-      "den": [
-        730,
-        170
-      ],
-      "nhan": "Đánh bại giặc Phẻ"
+      "tu": [240, 400],
+      "den": [430, 292],
+      "nhan": "Ngải và Khanh trá hàng, nghĩa sĩ Thái, Lào, Khơ Mú, Lự cài vào hàng ngũ giặc"
+    },
+    {
+      "id": "mui-cong-1754",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [216, 254],
+      "den": [418, 240],
+      "nhan": "Ngày 10/5/1754 tấn công phía tây sông Nậm Rốm"
+    },
+    {
+      "id": "tong-khao",
+      "kieu": "dia-danh",
+      "x": 706,
+      "y": 244,
+      "nhan": "Cánh đồng Tông Khao — nơi đem tướng giặc ra xử chém"
     },
     {
       "id": "thanh-ban-phu",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 800,
-      "y": 100,
-      "nhan": "Thành Bản Phủ (căn cứ 1758-1762)"
+      "x": 292,
+      "y": 178,
+      "nhan": "Toà thành ở xã Noong Hẹt",
+      "quy_mo": "Cục Di sản văn hoá gọi là thành Bản Phủ, xây năm 1758; Bách khoa toàn thư Quân sự gọi là thành Xám Mứn (Tam Vạn)"
+    },
+    {
+      "id": "thap-chau",
+      "kieu": "dia-danh",
+      "x": 112,
+      "y": 156,
+      "nhan": "Thập Châu thuộc phủ An Tây — đánh chiếm lại trong các năm 1754–1767"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 842,
+      "y": 152,
+      "nhan": "Mường Thanh và toàn bộ vùng Tây Bắc được giải phóng"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Khởi nghĩa từ Sơn Nam",
-      "mo_ta": "Hoàng Công Chất dấy binh khởi nghĩa từ vùng Sơn Nam.",
+      "tieu_de": "Khởi nghĩa ở Sơn Nam, trận đầu ở bến sông Đai Lan",
+      "thoi_gian": "1739 – Tết Canh Thân 1740",
+      "dia_danh": "Sơn Nam — bến sông Đai Lan",
+      "mo_ta": "Hoàng Công Chất, tên thật Hoàng Công Thư, sinh năm 1706 tại làng Hoàng Xá, huyện Thư Trì, Sơn Nam Hạ, nay là Nguyên Xá, huyện Vũ Thư, tỉnh Thái Bình. Từ năm 1739 ông lãnh đạo nghĩa quân hoạt động mạnh mẽ ở vùng Sơn Nam. Xuất trận lần đầu, nghĩa quân của ông đánh tan quân triều đình Lê – Trịnh tại bến sông Đai Lan, giữ được bình yên cho nhân dân ăn Tết Canh Thân năm 1740. Cuối năm 1740, khi cuộc khởi nghĩa của Nguyễn Tuyển, Nguyễn Cừ và Võ Trác Oánh tan vỡ, ông tập hợp được hàng ngàn nông dân tiếp tục hoạt động.",
       "hien": [
-        "co-ta-day-binh-hcc"
+        "nguyen-xa",
+        "hoang-cong-chat",
+        "song-dai-lan"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/le-hoi-den-hoang-cong-chat-1222",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Tiến lên Tây Bắc",
-      "mo_ta": "Nghĩa quân tiến lên vùng Tây Bắc, phối hợp cùng các thủ lĩnh địa phương.",
+      "tieu_de": "Lối đánh du kích trên vùng sông lạch, đầm lầy",
+      "thoi_gian": "Năm 1743",
+      "dia_danh": "Phủ lỵ Khoái Châu",
+      "mo_ta": "Nghĩa quân Hoàng Công Chất rất giỏi thuỷ chiến, sở trường về lối đánh du kích, chiến đấu linh hoạt và thường không xây dựng căn cứ cố định. Họ dùng thuyền nhỏ ra vào nơi cỏ rậm, bùn lầy để chiến đấu ở vùng đồng bằng nhiều sông lạch và đầm lầy; quân Trịnh nhiều lần tiến đánh nhưng không dẹp nổi. Năm 1743, nghĩa quân giả vờ đầu hàng rồi bất thần đánh chiếm và làm chủ hoàn toàn phủ lỵ Khoái Châu.",
       "hien": [
-        "co-ta-day-binh-hcc",
-        "quan-ta-tien-len-tb"
+        "son-nam",
+        "khoai-chau",
+        "hoang-cong-chat"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Phối hợp tướng Ngải, tướng Khanh đánh giặc Phẻ",
-      "mo_ta": "Nghĩa quân phối hợp cùng tướng Ngải, tướng Khanh đánh bại giặc Phẻ đang quấy nhiễu vùng Mường Thanh.",
+      "tieu_de": "Năm 1746 bắt sống Trấn thủ Sơn Nam, 1748 phối hợp Nguyễn Hữu Cầu",
+      "thoi_gian": "Đầu năm 1746 – cuối năm 1748",
+      "dia_danh": "Sơn Nam",
+      "mo_ta": "Đầu năm 1746, nghĩa quân mai phục đánh tan đạo quân đàn áp của chúa Trịnh và bắt sống Trấn thủ Sơn Nam là Hoàng Công Kì — thắng lợi lớn nhất của cuộc khởi nghĩa ở giai đoạn đồng bằng. Cuối năm 1748, Hoàng Công Chất phối hợp hoạt động với nghĩa quân của Nguyễn Hữu Cầu, hai lực lượng nông dân lớn nhất Đàng Ngoài lúc bấy giờ cùng đứng chung trên một địa bàn.",
       "hien": [
-        "quan-ta-tien-len-tb",
-        "tuong-ngai-khanh",
-        "quan-dich-giac-phe",
-        "mui-danh-giac-phe"
+        "hoang-cong-ki",
+        "son-nam",
+        "hoang-cong-chat"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Giải phóng Mường Thanh",
-      "mo_ta": "Nghĩa quân giải phóng hoàn toàn vùng Mường Thanh.",
+      "tieu_de": "Năm 1751 rút vào Thanh Hoá rồi lên Tây Bắc",
+      "thoi_gian": "Năm 1748 – 1752",
+      "dia_danh": "Thượng du Thanh Hoá — thượng Lào — Mường Thanh",
+      "mo_ta": "Sau mấy lần thất bại liên tiếp, năm 1751 Nguyễn Hữu Cầu chạy vào Nghệ An còn Hoàng Công Chất chạy vào Thanh Hoá, liên kết với phong trào của Lê Duy Mật. Cục Di sản văn hoá chép ông lui tạm vào vùng thượng du Thanh Hoá rồi tiến sang vùng thượng Lào hoạt động. Khi các cuộc khởi nghĩa lớn ở đồng bằng lần lượt tan rã, ông rút lên Tây Bắc lập căn cứ tại Mường Thanh; năm 1752 nghĩa quân làm chủ được Mường Ét, Mường Xằm, Mường Xon, Mường Pở, Mường Cảu, nay thuộc tỉnh Hủa Phăn của Lào.",
       "hien": [
-        "mui-danh-giac-phe",
-        "quan-dich-giac-phe"
+        "thanh-hoa",
+        "thuong-lao",
+        "hoang-cong-chat"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/le-hoi-den-hoang-cong-chat-1222",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Xây thành Bản Phủ làm căn cứ (1758-1762)",
-      "mo_ta": "Hoàng Công Chất cho xây thành Bản Phủ làm căn cứ lâu dài, cai quản vùng Tây Bắc.",
+      "tieu_de": "Giặc Phẻ chiếm Mường Thanh",
+      "dia_danh": "Mường Thanh — thành Sam Mứn — đồi Pu Văng",
+      "mo_ta": "Đầu thế kỷ 18, tại Mường Thanh xuất hiện giặc Phẻ từ phương Bắc tràn xuống, cướp phá và giết hại dân lành. Đầu những năm 40 của thế kỷ 18, giặc Phẻ chiếm được Mường Thanh và đóng quân trong thành Sam Mứn — vốn là thành của người Lự — rồi cướp phá khắp nơi đến tận Thuận Châu, Sơn La. Tướng Phẻ là Chẩu Phạ Tín Toòng đóng đại bản doanh tại quả đồi Pu Văng, nay gọi là đồi Độc Lập; dưới chân đồi là cánh đồng Tông Khao, nghĩa là đồng trắng, nơi giặc dìm trẻ em và đàn bà chửa phơi xác trắng cả cánh đồng.",
       "hien": [
-        "thanh-ban-phu"
+        "thanh-sam-mun",
+        "chau-pha",
+        "tong-khao"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Liên kết với hai thủ lĩnh người Thái Ngải và Khanh",
+      "thoi_gian": "Năm 1752 – 1754",
+      "dia_danh": "Mường Lói · Mường Lèo · lòng chảo Mường Thanh",
+      "mo_ta": "Các thủ lĩnh người Thái là Lò Văn Ngải và Lò Văn Khanh từng đứng lên lãnh đạo dân Mường Thanh chống giặc nhưng lực còn yếu, phải rút lên vùng núi cao. Năm 1752, tại vùng thượng Lào, Hoàng Công Chất tiếp xúc với những người Thái lánh nạn giặc Phẻ trong đó có hai tướng Ngải và Khanh; hai bên liên kết để cùng chống giặc. Trong các năm 1751–1754, nghĩa quân từ Mường Lói, Mường Lèo trên đỉnh núi cao đổ ập xuống góc phía tây lòng chảo, nhiều lần đánh thành Sam Mứn nhưng thành xây kiên cố nên không hạ được.",
+      "hien": [
+        "ngai-khanh",
+        "muong-loi",
+        "thanh-sam-mun",
+        "thuong-lao"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Ngày 10/5/1754 — trận quyết định giải phóng Mường Thanh",
+      "thoi_gian": "Ngày 10/5/1754",
+      "dia_danh": "Phía tây sông Nậm Rốm — Pú Văng — Tông Khao",
+      "mo_ta": "Không hạ được thành bằng sức, Hoàng Công Chất lập mưu để tướng Ngải và Khanh trá hàng; Chẩu Phạ Tín Toòng thấy hai người Thái phản lại chủ tướng người Kinh nên chấp thuận, đồng thời nghĩa quân cài các nghĩa sĩ người Thái, Lào, Khơ Mú, Lự vào hàng ngũ giặc. Ngày 10/5/1754, Hoàng Công Chất chỉ huy nghĩa quân mở trận tấn công phía tây sông Nậm Rốm, phối hợp với các tướng Ngải, Khanh đánh ra, tiêu diệt hơn 2.000 quân giặc. Chẩu Pạ Tin Toòng bỏ thành chạy đến Pú Văng thì bị bắt sống và bị đem ra cánh đồng Tông Khao xử chém.",
+      "hien": [
+        "mui-tra-hang",
+        "mui-cong-1754",
+        "thanh-sam-mun",
+        "chau-pha",
+        "tong-khao",
+        "co-thang"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html",
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/le-hoi-den-hoang-cong-chat-1222"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Giữ vùng Tây Bắc, dựng thành ở Noong Hẹt",
+      "thoi_gian": "1754 – 1767 hoặc 1769",
+      "dia_danh": "Noong Hẹt · Thập Châu · Lai Châu · Sơn La · Nghĩa Lộ",
+      "mo_ta": "Từ 1754 đến 1767, nghĩa quân đánh chiếm lại vùng Thập Châu thuộc phủ An Tây, nay thuộc Lai Châu, bị quan lại Vân Nam chiếm; phối hợp với nghĩa quân Lê Duy Mật kiểm soát toàn bộ vùng Lai Châu, Sơn La, Nghĩa Lộ và bắc Hoà Bình. Về toà thành ông dựng ở xã Noong Hẹt, hai nguồn gọi khác nhau: Cục Di sản văn hoá chép ông xây thành Bản Phủ năm 1758, còn Bách khoa toàn thư Quân sự Việt Nam chép ông xây thành Xám Mứn, tức Tam Vạn. Năm mất cũng vênh: Cục Di sản văn hoá ghi ngày 25 tháng Hai năm 1767, Bách khoa toàn thư Quân sự ghi năm 1769.",
+      "hien": [
+        "thanh-ban-phu",
+        "thap-chau",
+        "hoang-cong-chat",
+        "co-thang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/le-hoi-den-hoang-cong-chat-1222"
       ]
     }
   ],
+  "ton_that": {
+    "doi_thu": "Trận ngày 10/5/1754 tiêu diệt hơn 2.000 quân giặc Phẻ; tướng Chẩu Pạ Tin Toòng bị bắt sống",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
+    ]
+  },
   "ket_qua": "Nghĩa quân từ Sơn Nam tiến lên Tây Bắc, phối hợp cùng tướng Ngải, tướng Khanh đánh bại giặc Phẻ, giải phóng Mường Thanh, xây thành Bản Phủ làm căn cứ (1758–1762).",
   "y_nghia": "Cuộc khởi nghĩa nông dân kéo dài 30 năm, bảo vệ vùng biên cương Tây Bắc, để lại di tích thành Bản Phủ được thờ phụng đến ngày nay.",
   "trang_thai": "draft",
   "nguon": [
     "Cổng TTĐT Sở VHTTDL tỉnh Điện Biên (svhttdl.dienbien.gov.vn)",
-    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Cục Di sản văn hoá — https://dsvh.gov.vn/le-hoi-den-hoang-cong-chat-1222",
+    "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html",
+    "Ngân hàng dữ liệu Thông tấn xã Việt Nam — Khởi nghĩa nông dân thế kỉ 18 — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Bảo tàng Lịch sử Quốc gia — bài «Hoàng Công Chất và một chiến thắng Điện Biên Phủ khác»",
+      "doan": "Ngày 10/5/1754, Hoàng Công Chất chỉ huy nghĩa quân mở trận tấn công phía tây sông Nậm Rốn, phối hợp với các tướng Ngải, Khanh đánh ra, tiêu diệt hơn 2000 quân giặc.",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html",
+      "buoc": 7
+    },
+    {
+      "sach": "Bảo tàng Lịch sử Quốc gia — bài «Hoàng Công Chất và một chiến thắng Điện Biên Phủ khác»",
+      "doan": "Năm 1743, nghĩa quân giả vờ đầu hàng rồi bất thần đánh chiếm và làm chủ hoàn toàn phủ lỵ Khoái Châu.",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Bách khoa toàn thư Quân sự Việt Nam, quyển 1: Lịch sử Quân sự (NXB Quân đội nhân dân, 2015) — mục Khởi nghĩa nông dân thế kỉ 18",
+      "doan": "Đầu năm 1746, nghĩa quân mai phục đánh tan đạo quân đàn áp của chúa Trịnh, bắt sống Trấn thủ Sơn Nam Hoàng Công Kì.",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+      "buoc": 3
+    }
   ]
 }

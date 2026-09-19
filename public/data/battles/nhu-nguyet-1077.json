@@ -3,6 +3,7 @@
   "id": "nhu-nguyet-1077",
   "ten": "Phòng tuyến Như Nguyệt 1077",
   "nam": 1077,
+  "thoi_gian": "Tháng 7 âm lịch năm Bính Thìn (1076) – tháng 2 năm 1077",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Lý Thường Kiệt",
   "doi_thu": "Nhà Tống (Quách Quỳ, Triệu Tiết)",
@@ -11,161 +12,379 @@
     "bac-ninh"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Trên 6 vạn quân thuỷ bộ chủ lực trên chiến tuyến Như Nguyệt",
+      "don_vi": [
+        "Đại quân do Lý Thường Kiệt trực tiếp chỉ huy, đóng phía sau chiến luỹ vùng Từ Sơn",
+        "Thuỷ binh chủ lực đóng ở Vạn Xuân, cơ động đánh địch trên các hướng",
+        "Đạo quân trấn giữ duyên hải đông bắc do Lý Kế Nguyên chỉ huy",
+        "Quân địa phương, thổ binh và hương binh vùng núi phía bắc; đạo quân phò mã Thân Cảnh Phúc ở vùng động Giáp"
+      ],
+      "vu_khi": [
+        "Phòng tuyến bờ nam sông Cầu: luỹ đất cao, nhiều tầng cọc tre và rào tre làm bãi chướng ngại, chạy dài trên 200 dặm từ chân núi Tam Đảo đến sông Lục Đầu"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "30 vạn bộ binh và kỵ binh, trong đó có 1 vạn kỵ binh, cùng một đạo thuỷ quân",
+          "nguon": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
+        },
+        {
+          "so": "Cùng bài viết trên tách con số ấy thành 10 vạn quân chiến đấu và 20 vạn phu — hai cách đếm cho cùng một đạo quân",
+          "nguon": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
+        }
+      ],
+      "don_vi": [
+        "Quách Quỳ làm chủ tướng, Triệu Tiết làm phó tướng",
+        "Cánh quân Triệu Tiết đóng ở thôn Mai Thượng, xã Mai Đình (Hiệp Hoà, Bắc Giang ngày nay)",
+        "Đạo thuỷ quân tiến theo đường biển đông bắc"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Ba con số vênh nhau, nêu cả ba. Bảo tàng Lịch sử Quốc gia chép: tính từ trận đột kích Ung Châu đến trận tập kích Như Nguyệt, 30 vạn lính và phu nhà Tống bị tiêu diệt; riêng lần xuất chinh 1076–1077 thì 10 vạn quân ra đi, khi về còn hơn 2 vạn (23.400), 8 trong số 20 vạn phu bỏ mạng. Mộc bản triều Nguyễn dẫn sử cũ chép Quách Quỳ án binh 40 ngày, tám vạn quân sĩ chết mất quá nửa.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/tran-chien-tren-phong-tuyen-nhu-nguyet/"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          1000,
-          320
-        ]
+        [60, 302],
+        [270, 288],
+        [480, 300],
+        [700, 286],
+        [960, 300]
       ],
       "nhan": "Sông Như Nguyệt (sông Cầu)"
     },
     {
+      "kieu": "nui",
+      "diem": [
+        [88, 118],
+        [186, 94],
+        [286, 118]
+      ],
+      "nhan": "Dãy Tam Đảo"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [822, 148],
+        [900, 126],
+        [972, 150]
+      ],
+      "nhan": "Núi Nham Biền"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          850,
-          60
-        ],
-        [
-          600,
-          180
-        ],
-        [
-          500,
-          270
-        ]
+        [905, 58],
+        [700, 148],
+        [432, 232],
+        [232, 382],
+        [118, 468]
       ],
-      "nhan": "Đường tiến quân Tống từ biên giới"
+      "nhan": "Đường tiến quân về Thăng Long"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 428],
+        [896, 452],
+        [900, 584],
+        [1000, 592]
+      ],
+      "nhan": "Vùng biển đông bắc"
     }
   ],
   "phan_tu": [
     {
-      "id": "luy-ta-bo-nam",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 520,
-      "y": 420,
-      "nhan": "Phòng tuyến luỹ đất bờ nam"
-    },
-    {
-      "id": "quan-ta-phong-thu",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 300,
-      "y": 470,
-      "nhan": "Quân Lý Thường Kiệt phòng thủ"
-    },
-    {
-      "id": "quan-dich-bo-bac",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 620,
-      "y": 160,
-      "nhan": "Đại quân Quách Quỳ, Triệu Tiết"
-    },
-    {
-      "id": "mui-dich-vuot-song",
-      "kieu": "mui-ten",
-      "ben": "dich",
-      "tu": [
-        550,
-        190
-      ],
-      "den": [
-        480,
-        290
-      ],
-      "nhan": "Nhiều lần vượt sông không thành"
-    },
-    {
-      "id": "den-truong-hong-hat",
+      "id": "ai-nam-quan",
       "kieu": "dia-danh",
-      "x": 200,
-      "y": 350,
-      "nhan": "Đền thờ Trương Hống – Trương Hát"
+      "x": 946,
+      "y": 62,
+      "nhan": "Ải Nam Quan"
     },
     {
-      "id": "mui-ta-phan-cong",
+      "id": "dai-quan-quach-quy",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 618,
+      "y": 188,
+      "nhan": "Đại quân Quách Quỳ",
+      "quy_mo": "Đóng bờ bắc, cách Thăng Long khoảng 20 km"
+    },
+    {
+      "id": "quan-trieu-tiet",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 838,
+      "y": 216,
+      "nhan": "Triệu Tiết ở Mai Thượng"
+    },
+    {
+      "id": "cau-phao",
+      "kieu": "cong-su",
+      "x": 546,
+      "y": 256,
+      "nhan": "Cầu phao bến Như Nguyệt"
+    },
+    {
+      "id": "be-lon",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 706,
+      "y": 258,
+      "nhan": "Bè lớn chở quân",
+      "quy_mo": "Mỗi bè 500 quân"
+    },
+    {
+      "id": "mui-vuot-song-1",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [548, 232],
+      "den": [512, 338],
+      "nhan": "Vượt sông lần thứ nhất"
+    },
+    {
+      "id": "mui-vuot-song-2",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [708, 236],
+      "den": [668, 336],
+      "nhan": "Vượt sông lần thứ hai"
+    },
+    {
+      "id": "phong-tuyen",
+      "kieu": "cong-su",
+      "x": 420,
+      "y": 362,
+      "nhan": "Phòng tuyến bờ nam",
+      "quy_mo": "Luỹ đất, rào tre, dài trên 200 dặm"
+    },
+    {
+      "id": "den-truong-tuong-quan",
+      "kieu": "dia-danh",
+      "x": 316,
+      "y": 320,
+      "nhan": "Đền Trương tướng quân"
+    },
+    {
+      "id": "yen-phu-thuy-loi",
+      "kieu": "dia-danh",
+      "x": 486,
+      "y": 448,
+      "nhan": "Yên Phụ – Thuỵ Lôi"
+    },
+    {
+      "id": "mui-diet-mieu-ly",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        420,
-        410
-      ],
-      "den": [
-        560,
-        220
-      ],
-      "nhan": "Bất ngờ vượt sông phản công"
+      "tu": [452, 412],
+      "den": [538, 322],
+      "nhan": "Chặn đánh, cắt cầu phao"
+    },
+    {
+      "id": "ly-thuong-kiet",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 248,
+      "y": 408,
+      "nhan": "Lý Thường Kiệt",
+      "quy_mo": "Đại quân đóng vùng Từ Sơn"
+    },
+    {
+      "id": "thuy-binh-van-xuan",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 130,
+      "y": 306,
+      "nhan": "Thuỷ binh Vạn Xuân"
+    },
+    {
+      "id": "mui-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [706, 396],
+      "den": [832, 272],
+      "nhan": "Phản công vượt sông"
+    },
+    {
+      "id": "thuy-quan-tong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 812,
+      "y": 528,
+      "nhan": "Thuỷ quân Tống",
+      "quy_mo": "Bị chặn ở Vĩnh An"
+    },
+    {
+      "id": "ly-ke-nguyen",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 946,
+      "y": 490,
+      "nhan": "Lý Kế Nguyên"
+    },
+    {
+      "id": "thang-long",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 116,
+      "y": 528,
+      "nhan": "Thăng Long"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 700,
-      "y": 150,
-      "nhan": "Giảng hoà, quân Tống rút"
+      "x": 196,
+      "y": 200,
+      "nhan": "Giảng hoà trên thế thắng"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Lập phòng tuyến bờ nam sông Như Nguyệt",
-      "mo_ta": "Lý Thường Kiệt cho đắp luỹ đất dọc bờ nam sông Cầu, chặn con đường bộ duy nhất từ biên giới về Thăng Long.",
+      "tieu_de": "Dựng phòng tuyến bờ nam sông Như Nguyệt",
+      "thoi_gian": "Sau tháng 4 năm 1076",
+      "dia_danh": "Bờ nam sông Cầu, từ chân Tam Đảo đến sông Lục Đầu",
+      "mo_ta": "Rút quân khỏi đất Tống, Lý Thường Kiệt đoán chắc giặc sẽ vào theo hướng bắc và đông bắc rồi nhắm thẳng Thăng Long, nên dựng phòng tuyến chính dựa vào bờ nam sông Như Nguyệt. Phía trước là dòng sông rộng, ven bờ nhiều tầng cọc tre và rào tre tạo thành bãi chướng ngại; trên bờ đắp luỹ đất cao, có binh lính trực chiến ngày đêm. Chiến luỹ chạy dài trên 200 dặm từ chân núi Tam Đảo đến sông Lục Đầu.",
       "hien": [
-        "luy-ta-bo-nam",
-        "quan-ta-phong-thu"
+        "phong-tuyen",
+        "ly-thuong-kiet",
+        "thuy-binh-van-xuan",
+        "thang-long"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Quân Tống nhiều lần vượt sông không thành",
-      "mo_ta": "Quách Quỳ, Triệu Tiết đưa đại quân đến bờ bắc, nhiều lần bắc cầu phao, đóng bè vượt sông đều bị đánh lui.",
+      "tieu_de": "Quân Tống vượt biên giới, bị chặn trước sông",
+      "thoi_gian": "8-1-1077 – 18-1-1077",
+      "dia_danh": "Ải Nam Quan · Lạng Sơn · bờ bắc sông Cầu",
+      "mo_ta": "Ngày 8-1-1077, đại quân do Quách Quỳ chỉ huy vượt Ải Nam Quan vào Lạng Sơn. Ngày 18-1-1077 các mũi tiến công đến bờ bắc sông Cầu và bị chặn đứng đúng như dự kiến của Lý Thường Kiệt, trước chướng ngại tự nhiên là dòng sông và chiến tuyến bờ nam. Quân Tống rải quân trên trận tuyến dài 30 km từ bến đò Như Nguyệt đến chân núi Nham Biền; đến đây chúng chỉ còn cách Thăng Long khoảng 20 km mà không sao qua được sông.",
       "hien": [
-        "luy-ta-bo-nam",
-        "quan-ta-phong-thu",
-        "quan-dich-bo-bac",
-        "mui-dich-vuot-song"
+        "ai-nam-quan",
+        "dai-quan-quach-quy",
+        "quan-trieu-tiet",
+        "phong-tuyen",
+        "ly-thuong-kiet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Như Nguyệt, nơi gắn liền những chiến công hiển hách — https://baotanglichsu.vn/vi/Articles/3096/11236/nhu-nguyet-noi-gan-lien-nhung-chien-cong-hien-hach.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đọc thơ thần \"Nam quốc sơn hà\"",
-      "mo_ta": "Đêm khuya, quân ta cho người vào đền bên sông ngâm vang bài thơ khẳng định chủ quyền, khích lệ tướng sĩ, làm quân Tống hoang mang.",
+      "tieu_de": "Thuỷ quân Tống bị đánh tan, gọng kìm gãy một bên",
+      "thoi_gian": "Đầu năm 1077",
+      "dia_danh": "Vĩnh An (Móng Cái) · sông Đông Kênh · Bạch Đằng",
+      "mo_ta": "Quân thuỷ nhà Tống bị ta chặn đánh ở Vĩnh An. Chúng cố mở đường theo sông Đông Kênh để tiến vào sông Bạch Đằng nhưng mười trận đều bị quân ta đánh bại; đạo thuỷ quân đến bờ biển Quảng Ninh thì bị thuỷ quân ta do tướng Lý Kế Nguyên chỉ huy đánh cho tan tác, số tàn quân phải nằm lại ngoài đảo. Chưa thấy thuỷ quân tới để hiệp đồng vượt sông, Quách Quỳ đành đóng quân lại phía bắc sông Như Nguyệt.",
       "hien": [
-        "luy-ta-bo-nam",
-        "quan-ta-phong-thu",
-        "den-truong-hong-hat"
+        "thuy-quan-tong",
+        "ly-ke-nguyen",
+        "dai-quan-quach-quy"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Như Nguyệt, nơi gắn liền những chiến công hiển hách — https://baotanglichsu.vn/vi/Articles/3096/11236/nhu-nguyet-noi-gan-lien-nhung-chien-cong-hien-hach.html",
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Phản công bất ngờ vượt sông",
-      "mo_ta": "Lý Thường Kiệt bất ngờ cho quân vượt sông đánh thẳng vào doanh trại Tống, gây tổn thất nặng cho địch.",
+      "tieu_de": "Cuộc vượt sông thứ nhất — cầu phao bị cắt",
+      "thoi_gian": "Đầu năm 1077",
+      "dia_danh": "Bến Như Nguyệt · Yên Phụ, Thuỵ Lôi (Đông Anh)",
+      "mo_ta": "Tướng Miêu Ly ở Như Nguyệt báo rằng quân ta đã rút đi, Vương Tiến liền được lệnh bắc cầu phao qua bến sông để sang. Đội quân Miêu Ly vừa tới vùng Yên Phụ, Thuỵ Lôi, cách Như Nguyệt khoảng 6 km, thì bất ngờ bị quân ta đổ ra chặn đánh quyết liệt: Lý Thường Kiệt dùng một bộ phận chủ lực, lợi dụng địa hình vừa chặn phía trước vừa chẹn đường rút phía sau. Số sống sót chạy về đến nơi thì cầu phao đã bị cắt; bên kia sông địch cho bè sang cứu nhưng không kết quả, hầu hết đội quân Miêu Ly bị tiêu diệt.",
       "hien": [
-        "luy-ta-bo-nam",
-        "quan-dich-bo-bac",
-        "mui-ta-phan-cong"
+        "cau-phao",
+        "mui-vuot-song-1",
+        "yen-phu-thuy-loi",
+        "mui-diet-mieu-ly",
+        "phong-tuyen"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Như Nguyệt, nơi gắn liền những chiến công hiển hách — https://baotanglichsu.vn/vi/Articles/3096/11236/nhu-nguyet-noi-gan-lien-nhung-chien-cong-hien-hach.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Chủ động giảng hòa",
-      "mo_ta": "Dù đang ở thế thắng, Lý Thường Kiệt đề nghị giảng hòa để tránh hao binh tổn tướng lâu dài; quân Tống rút về nước, giữ vững nền độc lập nhà Lý.",
+      "tieu_de": "Cuộc vượt sông thứ hai — bè lớn cũng không phá nổi rào tre",
+      "thoi_gian": "Đầu năm 1077",
+      "dia_danh": "Bờ nam sông Như Nguyệt",
+      "mo_ta": "Chờ thuỷ binh không thấy, Quách Quỳ ra lệnh tiến công lần thứ hai với lực lượng lớn hơn, đóng bè lớn chở quân qua sông, mỗi bè 500 người. Hết lớp này đến lớp khác đổ bộ sang bờ nam, chặt và đốt hàng rào tre nhưng không phá được. Trước chiến tuyến kiên cố và sức phản công mãnh liệt của quân ta, quân Tống đổ bộ đợt nào bị tiêu diệt đợt đó. Thất bại, Quách Quỳ ra lệnh không vượt sông nữa, cố thủ chờ viện binh, trong khi phía sau lưng chúng các đội quân thượng du và dân binh liên tục chặn đánh những đoàn phu tải lương.",
       "hien": [
-        "quan-dich-bo-bac",
-        "co-thang"
+        "be-lon",
+        "mui-vuot-song-2",
+        "phong-tuyen",
+        "ly-thuong-kiet",
+        "dai-quan-quach-quy"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Như Nguyệt, nơi gắn liền những chiến công hiển hách — https://baotanglichsu.vn/vi/Articles/3096/11236/nhu-nguyet-noi-gan-lien-nhung-chien-cong-hien-hach.html",
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Bài thơ thần vang lên trong đền Trương tướng quân",
+      "thoi_gian": "Trong những đêm cầm cự trên phòng tuyến",
+      "dia_danh": "Đền Trương tướng quân, bờ nam sông Như Nguyệt",
+      "mo_ta": "Đại Việt sử ký toàn thư chép rằng một đêm, quân sĩ ta chợt nghe trong đền Trương tướng quân có tiếng đọc to bốn câu khẳng định sông núi nước Nam là của vua Nam, phận đã định rõ ở sách trời. Bài thơ thần — tương truyền của Lý Thường Kiệt — biến tinh thần yêu nước thành sức mạnh chiến đấu trực tiếp và được coi như bản tuyên ngôn độc lập đầu tiên của dân tộc. Nguyên văn bốn câu ghi ở khối «Văn tịch chép» bên dưới.",
+      "hien": [
+        "den-truong-tuong-quan",
+        "phong-tuyen",
+        "ly-thuong-kiet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+        "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/tran-chien-tren-phong-tuyen-nhu-nguyet/"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Phản công chiến lược — diệt quá nửa cánh quân Triệu Tiết",
+      "thoi_gian": "Tháng 2 năm 1077",
+      "dia_danh": "Nham Biền · doanh trại Triệu Tiết",
+      "mo_ta": "Tháng 2-1077, Lý Thường Kiệt chuyển sang phản công. Thuỷ quân ta vượt sông đánh mạnh vào trận địa ở Nham Biền, vừa tiêu diệt một bộ phận quân địch vừa nghi binh thu hút địch chú ý về hướng đó rồi rút. Cùng lúc, đại quân do ông trực tiếp chỉ huy vượt sông bất ngờ đánh vào cánh quân Triệu Tiết, tiêu diệt quá nửa số quân Tống ở đây, ước tính vài vạn. Sau trận này quân Tống quẫn bách, tướng sĩ đều mỏi mệt, tinh thần sa sút.",
+      "hien": [
+        "mui-phan-cong",
+        "quan-trieu-tiet",
+        "ly-thuong-kiet",
+        "phong-tuyen"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Chủ động giảng hoà, mở lối cho địch rút",
+      "thoi_gian": "Năm 1077",
+      "dia_danh": "Chiến tuyến Như Nguyệt",
+      "mo_ta": "Nắm được tình hình quẫn bách của địch, Lý Thường Kiệt chủ trương kết thúc chiến tranh để không nhọc tướng tá, khỏi tốn xương máu mà bảo toàn được tôn miếu. Ông chủ động điều đình, mở lối thoát cho quân Tống; cuộc thương lượng giảng hoà để chúng rút về nước nhanh chóng được hai bên thoả thuận. Ý chí xâm lược của nhà Tống tiêu tan; triều đại này còn tồn tại lâu về sau nhưng không dám nói đến việc đánh nước ta thêm một lần nữa.",
+      "hien": [
+        "co-thang",
+        "ly-thuong-kiet",
+        "dai-quan-quach-quy",
+        "thang-long"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
       ]
     }
   ],
@@ -175,20 +394,46 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
     "Việt sử lược",
-    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Bảo tàng Lịch sử Quốc gia — Như Nguyệt, nơi gắn liền những chiến công hiển hách — https://baotanglichsu.vn/vi/Articles/3096/11236/nhu-nguyet-noi-gan-lien-nhung-chien-cong-hien-hach.html",
+    "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
   ],
   "trich_van_tich": [
     {
-      "sach": "Sử cũ (theo dẫn của mocban.vn, không nêu tên bộ sử cụ thể)",
-      "doan": "Quách Quỳ án binh 40 ngày, lương thảo không chở đến được… tám vạn quân sĩ chết mất quá nửa.",
-      "nguon_trich": "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/tran-chien-tren-phong-tuyen-nhu-nguyet/",
-      "buoc": 2
+      "sach": "Đại Việt sử ký toàn thư",
+      "doan": "Một đêm, quân sĩ (của ta), chợt nghe ở trong đền Trương tướng quân có tiếng đọc to rằng:",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "buoc": 6
     },
     {
       "sach": "Đại Việt sử ký toàn thư, quyển 3",
       "doan": "Nam quốc sơn hà Nam đế cư,\nTiệt nhiên phân định tại thiên thư.\nNhư hà nghịch lỗ lai xâm phạm,\nNhữ đẳng hành khan thủ bại hư.",
       "nguon_trich": "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/tran-chien-tren-phong-tuyen-nhu-nguyet/",
-      "buoc": 3
+      "buoc": 6
+    },
+    {
+      "sach": "Đại Việt sử ký, dẫn lại sách Quế Hải chí",
+      "doan": "Viên tri châu quan lang là phò mã bị thua, bèn trốn vào trong bụi cỏ, thấy quân Tống đi lẻ loi thì giết chết hoặc bắt về... Người ta cho là một vị thiên thần",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "buoc": 5
+    },
+    {
+      "sach": "Lệnh của Quách Quỳ sau hai lần vượt sông thất bại — dẫn trong bài của Bảo tàng Lịch sử Quốc gia",
+      "doan": "Ai bàn đánh sẽ bị chém",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "buoc": 5
+    },
+    {
+      "sach": "Sử cũ (theo dẫn của mocban.vn, không nêu tên bộ sử cụ thể)",
+      "doan": "Quách Quỳ án binh 40 ngày, lương thảo không chở đến được… tám vạn quân sĩ chết mất quá nửa.",
+      "nguon_trich": "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/tran-chien-tren-phong-tuyen-nhu-nguyet/",
+      "buoc": 5
+    },
+    {
+      "sach": "Chủ trương kết thúc chiến tranh của Lý Thường Kiệt — dẫn trong bài của Bảo tàng Lịch sử Quốc gia",
+      "doan": "không nhọc tướng tá, khỏi tốn xương máu mà bảo toàn được tôn miếu",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "buoc": 8
     }
   ]
 }

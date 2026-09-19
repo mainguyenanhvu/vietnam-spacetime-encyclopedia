@@ -1,0 +1,589 @@
+/* === Chế độ dòng thời gian (dong-thoi-gian.ts) ============================
+   Lớp phủ toàn màn hình, cuộn dọc, 201 mốc lịch sử đọc thành một mạch.
+
+   Mọi màu đi qua token của theme.css. KHÔNG gõ hex thẳng: hex không đọc biến
+   theme nên hai bảng màu người-lớn / trẻ-em sẽ dừng lại ở mép lớp phủ — đúng
+   lỗi mà popup-noi-dung.ts đã phải đi vá (23 lần `style="color:#78716c"`).
+
+   Sáu loại sự kiện phân biệt bằng HÌNH DẠNG (sao · tam giác · khiên · thoi ·
+   tròn · vuông), không chỉ bằng màu. Ở chế độ người lớn cả sáu token màu đều
+   là sắc đỏ–nâu của một điểm nhấn, nên hình dạng là kênh phân biệt DUY NHẤT
+   đáng tin; ở chế độ trẻ em nó là kênh thứ hai cho ~8% nam giới mù màu. Tên
+   loại luôn được ghi bằng CHỮ trên chip (WCAG 1.4.1). */
+
+.dtg-khoa-cuon,
+.dtg-khoa-cuon body {
+  overflow: hidden;
+}
+
+.dtg-lop {
+  position: fixed;
+  inset: 0;
+  /* Trên panel (20) và topbar (30), trên lớp «cầm tay chỉ việc» (60/61), dưới
+     trình đọc toàn văn (70) và link «bỏ qua tới bản đồ» (100). */
+  z-index: 66;
+  display: flex;
+  justify-content: center;
+  background: var(--hd-mo);
+}
+
+.dtg-hop {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 64rem);
+  height: 100%;
+  background: var(--nen-app);
+  color: var(--chu);
+  box-shadow: var(--bong-2);
+}
+
+/* ── Đầu trang: tiêu đề, dải mật độ, bộ lọc ────────────────────────────── */
+
+.dtg-dau {
+  flex: 0 0 auto;
+  padding: var(--s-3) var(--s-4) var(--s-2);
+  border-bottom: 1px solid var(--vien);
+  background: var(--mat);
+}
+
+.dtg-dau-hang {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  flex-wrap: wrap;
+}
+
+.dtg-tieu-de {
+  margin: 0;
+  font-size: var(--co-xl);
+}
+
+.dtg-dem {
+  margin: 0;
+  color: var(--chu-mem);
+  font-size: var(--co-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.dtg-dong {
+  margin-left: auto;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vua);
+  background: var(--mat-3);
+  color: var(--chu);
+  font-size: var(--co-xl);
+  line-height: 1;
+  cursor: pointer;
+}
+.dtg-dong:hover {
+  background: var(--nhan-mo);
+}
+
+.dtg-phim {
+  margin: var(--s-1) 0 0;
+  color: var(--chu-mem);
+  font-size: var(--co-2xs);
+}
+.dtg-phim kbd {
+  padding: 0 0.3em;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-nho);
+  background: var(--mat-2);
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+/* Dải mật độ theo thế kỷ. Đồ hoạ thuần: bố cục theo THỨ TỰ nên trục không còn
+   tỉ lệ với thời gian, dải này trả lại hình dạng thật của kho — cột cao nhất
+   42 mốc (thế kỷ XX), 27/50 thế kỷ trống trơn.
+   `aria-hidden` và không bấm được là CỐ Ý: bộ điều khiển tương đương là ô
+   «Thời kỳ» ngay bên dưới, đi được bằng bàn phím và trình đọc màn hình. */
+.dtg-matdo {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+}
+.dtg-matdo-nhan {
+  color: var(--chu-nhat);
+  font-size: var(--co-2xs);
+  white-space: nowrap;
+}
+.dtg-matdo-cot {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  flex: 1;
+  height: 26px;
+  min-width: 0;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--vien-ro);
+}
+.dtg-cot {
+  flex: 1;
+  min-width: 2px;
+  height: var(--cao, 0%);
+  border-radius: 1px 1px 0 0;
+  background: var(--nhan-sang);
+}
+
+/* ── Bộ lọc ────────────────────────────────────────────────────────────── */
+
+.dtg-loc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+}
+
+.dtg-loc-loai,
+.dtg-loc-o {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  align-items: center;
+}
+
+.dtg-chip-loc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  padding: 0 0.7rem;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-vien-tron);
+  background: var(--mat-2);
+  color: var(--chu-mem);
+  font-family: var(--font);
+  font-size: var(--co-xs);
+  font-weight: var(--dam-vua);
+  cursor: pointer;
+}
+.dtg-chip-loc[aria-pressed="true"] {
+  background: var(--mat-3);
+  border-color: var(--nhan);
+  color: var(--chu);
+}
+/* Loại đang TẮT: hình dạng nhạt đi, và một gạch chéo nói rõ "đang ẩn" — không
+   dựa vào riêng độ đậm nhạt của màu để báo trạng thái. */
+.dtg-chip-loc[aria-pressed="false"] .dtg-hinh {
+  opacity: 0.35;
+}
+.dtg-chip-loc[aria-pressed="false"] .dtg-chip-dem {
+  text-decoration: line-through;
+}
+.dtg-chip-dem {
+  color: var(--chu-nhat);
+  font-variant-numeric: tabular-nums;
+}
+
+.dtg-nhan-o {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--chu-mem);
+  font-size: var(--co-xs);
+}
+.dtg-o {
+  min-height: 44px;
+  max-width: 15rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-vua);
+  background: var(--mat-2);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-xs);
+  cursor: pointer;
+}
+/* `dtg-nut-phu` là móc KIỂU DÁNG; `dtg-xoa-loc` và `dtg-doan-bat` là móc HÀNH
+   VI. Tách ra vì lúc đầu tôi cho nút «đoán năm» dùng chung class với nút «bỏ
+   lọc», và handler `closest(".dtg-xoa-loc")` bắt luôn cả hai — chỉ đúng nhờ
+   thứ tự hai nhánh if, tức là chờ người sau đảo thứ tự là hỏng. */
+.dtg-nut-phu {
+  min-height: 44px;
+  padding: 0 0.8rem;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-vua);
+  background: var(--mat-2);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-xs);
+  cursor: pointer;
+}
+.dtg-nut-phu:hover,
+.dtg-chip-loc:hover {
+  background: var(--nhan-mo);
+}
+.dtg-doan-bat[aria-pressed="true"] {
+  background: var(--mat-3);
+  border-color: var(--nhan);
+  font-weight: var(--dam-vua);
+}
+
+/* ── Thân: danh sách cuộn ──────────────────────────────────────────────── */
+
+.dtg-than {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 var(--s-4) var(--s-8);
+}
+.dtg-than:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: -3px;
+}
+
+.dtg-rong {
+  margin: var(--s-8) 0;
+  color: var(--chu-mem);
+  text-align: center;
+}
+
+/* Một nhóm = một chữ ký triều đại liên tiếp. Tiêu đề DÍNH ĐỈNH: đây là thứ
+   giữ cho người đọc luôn biết đang ở triều nào — chính là điều thanh trượt 13
+   nấc nói sai và moc-lich-su.ts đã phải đi chữa. */
+.dtg-nhom {
+  position: relative;
+}
+
+.dtg-nhom-dau {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin: 0;
+  padding: var(--s-2) var(--s-2) var(--s-2) 0;
+  background: var(--nen-app);
+  border-bottom: 1px solid var(--vien);
+  font-size: var(--co-sm);
+}
+.dtg-nhom-ten {
+  color: var(--chu);
+}
+.dtg-nhom-nam {
+  color: var(--chu-mem);
+  font-weight: var(--dam-thuong);
+  font-size: var(--co-2xs);
+  font-variant-numeric: tabular-nums;
+}
+.dtg-nhom-song {
+  color: var(--luu-chu);
+  background: var(--luu-nen);
+  border-radius: var(--bo-nho);
+  padding: 0 0.4rem;
+  font-weight: var(--dam-thuong);
+  font-size: var(--co-2xs);
+}
+
+/* Dải triều đại chạy dọc trục: viền trái của danh sách trong nhóm. Nó KHÔNG
+   mang thông tin bằng màu — tên triều nằm ở tiêu đề dính đỉnh phía trên. */
+.dtg-ds {
+  list-style: none;
+  margin: 0 0 0 10px;
+  padding: var(--s-2) 0 var(--s-4);
+  border-left: 3px solid var(--vien-nhan);
+}
+
+/* ── Một mốc ───────────────────────────────────────────────────────────── */
+
+.dtg-muc {
+  position: relative;
+  display: flex;
+  gap: var(--s-3);
+  padding: var(--s-2) 0 var(--s-2) var(--s-4);
+  scroll-margin: var(--s-8) 0;
+}
+.dtg-muc:focus {
+  outline: none;
+}
+.dtg-muc:focus-visible .dtg-the,
+.dtg-muc.dang-chon .dtg-the {
+  border-color: var(--nhan);
+  box-shadow: 0 0 0 2px var(--glow-nhan);
+}
+
+/* Nút trên trục — hình dạng theo loại, đặt đè lên dải triều đại.
+   Quầng nền nằm ở .dtg-neo chứ không phải viền của chính hình: `clip-path`
+   cắt luôn cả `outline` lẫn `box-shadow`, nên bốn hình có clip-path sẽ không
+   có quầng còn tròn/vuông thì có — sáu nút trông như hai bộ khác nhau. */
+.dtg-neo {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 3px;
+  border-radius: 50%;
+  background: var(--nen-app);
+}
+
+.dtg-hinh {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  background: var(--the-mau, var(--the-6));
+}
+.dtg-hinh[data-loai="trieu-dai"] {
+  --the-mau: var(--the-1);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.dtg-hinh[data-loai="khoi-nghia"] {
+  --the-mau: var(--the-2);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+.dtg-hinh[data-loai="khang-chien"] {
+  --the-mau: var(--the-3);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 58%, 50% 100%, 0% 58%);
+}
+.dtg-hinh[data-loai="tran-danh"] {
+  --the-mau: var(--the-4);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.dtg-hinh[data-loai="tac-pham"] {
+  --the-mau: var(--the-5);
+  border-radius: 50%;
+}
+.dtg-hinh[data-loai="su-kien"] {
+  --the-mau: var(--the-6);
+  border-radius: 2px;
+}
+
+.dtg-the {
+  flex: 1;
+  min-width: 0;
+  padding: var(--s-3) var(--s-4);
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-lon);
+  background: var(--mat);
+  box-shadow: var(--bong-1);
+}
+
+.dtg-the-dau {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin: 0 0 var(--s-1);
+}
+
+.dtg-nam {
+  font-weight: var(--dam-manh);
+  font-size: var(--co-lg);
+  font-variant-numeric: tabular-nums;
+  color: var(--brand);
+}
+
+/* Ô «năm ?» của chế độ đoán năm — trông như một chỗ trống phải điền, không
+   như một con số. Đặt SAU `.dtg-nam` vì nút mang cả hai class và hai khối có
+   cùng độ đặc hiệu: khối sau thắng. */
+.dtg-doan {
+  min-height: 44px;
+  padding: 0 0.7rem;
+  border: 2px dashed var(--vien-ro);
+  border-radius: var(--bo-vua);
+  background: var(--mat-2);
+  color: var(--chu-mem);
+  font-family: var(--font);
+  font-size: var(--co-sm);
+  font-weight: var(--dam-vua);
+  cursor: pointer;
+}
+.dtg-doan:hover {
+  border-color: var(--nhan);
+  color: var(--chu);
+}
+
+.dtg-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--bo-vien-tron);
+  background: var(--the-nen, var(--the-6));
+  color: var(--the-chu);
+  font-size: var(--co-2xs);
+  font-weight: var(--dam-manh);
+}
+.dtg-chip[data-loai="trieu-dai"] { --the-nen: var(--the-1); }
+.dtg-chip[data-loai="khoi-nghia"] { --the-nen: var(--the-2); }
+.dtg-chip[data-loai="khang-chien"] { --the-nen: var(--the-3); }
+.dtg-chip[data-loai="tran-danh"] { --the-nen: var(--the-4); }
+.dtg-chip[data-loai="tac-pham"] { --the-nen: var(--the-5); }
+.dtg-chip[data-loai="su-kien"] { --the-nen: var(--the-6); }
+/* Hình trong chip nằm trên nền chính màu của nó — tô sáng cho nổi. */
+.dtg-chip .dtg-hinh {
+  width: 11px;
+  height: 11px;
+  --the-mau: var(--the-chu);
+}
+
+.dtg-tinh {
+  color: var(--chu-mem);
+  font-size: var(--co-2xs);
+}
+
+.dtg-ten {
+  margin: 0;
+  font-size: var(--co-lg);
+}
+
+.dtg-nam-day {
+  margin: 0.15rem 0 0;
+  color: var(--chu-mem);
+  font-size: var(--co-2xs);
+}
+
+/* 🔴 Lỗi CÓ SẴN của src/style.css, không phải của lớp phủ này.
+   `tu-kho-tre-em.ts` dựng hộp nghĩa là `<span class="tk-nghia" hidden>` rồi
+   bật/tắt bằng thuộc tính `hidden`, nhưng style.css:2276 khai
+   `.tk-nghia { display: block }` mà KHÔNG khai lại `[hidden]`, nên display của
+   tác giả đè mất `[hidden] { display: none }` của trình duyệt. Kết quả: ở chế
+   độ trẻ em mọi lời giải nghĩa bung sẵn, nút «?» bấm vào không đổi gì.
+   Đo được: 178 nút chú giải trong 201 thẻ ở đây đều bung.
+   Chính style.css:2127 đã ghi đúng cái bẫy này cho `.chip` rồi vá — chỉ sót
+   `.tk-nghia`. Đợt này tôi không được ghi style.css nên vá TẠI CHỖ, phạm vi
+   trong lớp phủ. Chữa gốc ở style.css thì dòng này thành thừa mà vô hại. */
+.dtg-lop .tk-nghia[hidden] {
+  display: none;
+}
+
+.dtg-mo-ta {
+  margin: var(--s-2) 0 0;
+  color: var(--chu);
+  font-size: var(--co-sm);
+}
+
+.dtg-venh {
+  margin: var(--s-2) 0 0;
+  padding: var(--s-2) var(--s-3);
+  border-left: 3px solid var(--brand);
+  border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
+  background: var(--mat-3);
+  color: var(--chu);
+  font-size: var(--co-xs);
+}
+
+.dtg-hang-nut {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+}
+.dtg-nut {
+  min-height: 44px;
+  padding: 0 0.8rem;
+  border: 1px solid var(--vien-ro);
+  border-radius: var(--bo-vua);
+  background: var(--mat-2);
+  color: var(--chu);
+  font-family: var(--font);
+  font-size: var(--co-xs);
+  font-weight: var(--dam-vua);
+  cursor: pointer;
+}
+.dtg-nut:hover {
+  background: var(--nhan-mo);
+}
+
+.dtg-nguon {
+  margin-top: var(--s-2);
+  font-size: var(--co-2xs);
+  color: var(--chu-mem);
+}
+.dtg-nguon > summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+}
+.dtg-nguon ul {
+  margin: 0 0 0 1.1rem;
+  padding: 0;
+}
+.dtg-nguon li {
+  overflow-wrap: anywhere;
+}
+
+/* Khoảng trống thời gian — thứ mà bố cục theo thứ tự làm mất, trả lại bằng
+   con số thật. 16 chỗ trong kho có hai mốc liền nhau cách nhau ≥ 50 năm. */
+.dtg-trong {
+  padding: var(--s-2) 0 var(--s-2) var(--s-4);
+  color: var(--chu-nhat);
+  font-size: var(--co-2xs);
+  font-style: italic;
+}
+
+/* ── Tiêu điểm nhìn thấy được ──────────────────────────────────────────── */
+
+.dtg-lop button:focus-visible,
+.dtg-lop select:focus-visible,
+.dtg-lop summary:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ── Màn hẹp ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .dtg-dau {
+    padding: var(--s-2) var(--s-3);
+  }
+  .dtg-than {
+    padding: 0 var(--s-3) var(--s-8);
+  }
+  .dtg-the {
+    padding: var(--s-2) var(--s-3);
+  }
+  .dtg-muc {
+    padding-left: var(--s-3);
+  }
+  /* Đầu trang phải nhường chỗ cho DANH SÁCH. Đo ở 390×844: bản chưa nén, đầu
+     trang chiếm 385px = 46% màn hình, người đọc thấy đúng một thẻ rưỡi. Ba
+     phép cắt dưới đây kéo nó xuống còn ~215px. */
+  .dtg-phim {
+    display: none; /* mẹo bàn phím vô nghĩa trên màn cảm ứng */
+  }
+  .dtg-o {
+    max-width: 100%;
+    flex: 1;
+    min-width: 0;
+  }
+  .dtg-nhan-o {
+    flex: 1 1 42%; /* hai ô chọn nằm cùng một hàng */
+    min-width: 0;
+  }
+  .dtg-chip-loc {
+    flex: 1 1 40%;
+    padding: 0 0.5rem;
+  }
+  /* Dải mật độ là thứ đầu tiên bỏ đi khi hẹp: nó là đồ hoạ phụ, còn bộ lọc và
+     danh sách thì không. */
+  .dtg-matdo {
+    display: none;
+  }
+}
+
+/* ── Tôn trọng người tắt hiệu ứng ──────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  /* toiMoc() đã truyền behavior "auto" khi bật giảm chuyển động; khai thêm ở
+     đây phòng ca scroll-behavior kế thừa từ nơi khác. */
+  .dtg-than {
+    scroll-behavior: auto;
+  }
+  .dtg-lop *,
+  .dtg-lop *::before,
+  .dtg-lop *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

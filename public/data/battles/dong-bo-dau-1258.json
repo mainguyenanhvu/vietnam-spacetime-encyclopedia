@@ -1,8 +1,10 @@
 {
   "ghi_chu": "Sa đồ trận Đông Bộ Đầu 1258 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu_bien_tap": "Hai bài của Bảo tàng Lịch sử Quốc gia đều chép cánh quân thuỷ đánh Đông Bộ Đầu do Trần Khánh Dư chỉ huy. Tôi CỐ Ý không đưa tên ông vào mo_ta: Trần Khánh Dư được phong Phó đô tướng quân ở hội nghị Bình Than năm 1282 và hoạt động trong hai cuộc kháng chiến 1285, 1288 — cách trận này 24 năm. Hai bài cùng một cơ quan nên không phải hai nguồn độc lập. Sa đồ chỉ ghi «cánh quân thuỷ», chờ người kiểm sử quyết. ĐỪNG tự thêm tên tướng vào đây nếu chưa có nguồn thứ hai độc lập.",
   "id": "dong-bo-dau-1258",
   "ten": "Trận Đông Bộ Đầu 1258",
   "nam": 1258,
+  "thoi_gian": "Tháng 1 năm 1258 — trận quyết chiến đêm 28 rạng 29-1-1258",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Trần Thái Tông, Trần Thủ Độ",
   "doi_thu": "Quân Mông Cổ (Ngột Lương Hợp Thai)",
@@ -11,153 +13,359 @@
     "ha-noi"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Vua Trần Thái Tông và thái tử Trần Hoảng trực tiếp chỉ huy quân thuỷ bộ ngược sông Hồng",
+        "Cánh quân thuỷ bí mật đổ bộ lên bến Đông Bộ Đầu từ phía đông",
+        "Cánh quân bộ chia hai mũi đánh thọc vào đại bản doanh giặc từ phía nam và phía tây",
+        "Dân binh các làng xã lấy làng xã làm pháo đài, chặn đánh các toán giặc đi cướp phá",
+        "Dân binh trại Quy Hoá do chủ trại Hà Bổng chỉ huy"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "3 vạn quân Nguyên Mông bị quét sạch khỏi Thăng Long",
+          "nguon": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/2001/66246/djong-bo-djau-ben-song-lam-giac-phuong-bac-khiep-via.html"
+        },
+        {
+          "so": "Khoảng 4 vạn kỵ binh do Ngột Lương Hợp Thai chỉ huy kéo từ Đại Lý sang",
+          "nguon": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
+        }
+      ],
+      "don_vi": [
+        "Kỵ binh và bộ chỉ huy đầu não của Ngột Lương Hợp Thai tập kết ở bến Đông Bộ Đầu"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html",
+      "Bảo tàng Lịch sử Quốc gia — Đông Bộ Đầu, bến sông làm giặc phương Bắc khiếp vía — https://baotanglichsu.vn/vi/Articles/2001/66246/djong-bo-djau-ben-song-lam-giac-phuong-bac-khiep-via.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Kỵ binh Mông Cổ bị tập kích bất ngờ, chống đỡ yếu ớt rồi tan vỡ, bị đánh bật khỏi kinh thành; trên đường chạy về Vân Nam còn bị dân binh trại Quy Hoá chặn đánh, tổn thất nặng nề về người, vũ khí và quân trang. Chỉ sau 9 ngày chiếm đóng Thăng Long, chúng đã thất bại thảm hại.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          380
-        ],
-        [
-          500,
-          350
-        ],
-        [
-          1000,
-          400
-        ]
+        [150, 130],
+        [330, 220],
+        [510, 310],
+        [690, 400],
+        [900, 490]
       ],
       "nhan": "Sông Hồng"
     },
     {
+      "kieu": "song",
+      "diem": [
+        [180, 300],
+        [300, 330],
+        [420, 372]
+      ],
+      "nhan": "Sông Tô Lịch"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [712, 130],
+        [812, 104],
+        [912, 130]
+      ],
+      "nhan": "Vùng núi Quy Hoá"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          500,
-          150
-        ],
-        [
-          750,
-          80
-        ],
-        [
-          950,
-          40
-        ]
+        [420, 208],
+        [560, 158],
+        [700, 120],
+        [880, 92]
       ],
       "nhan": "Đường rút chạy về Vân Nam"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [636, 470],
+        [770, 448],
+        [830, 506],
+        [700, 542],
+        [614, 518]
+      ],
+      "nhan": "Bãi bồi vùng Thiên Mạc"
     }
   ],
   "phan_tu": [
     {
-      "id": "kinh-thanh-bo-trong",
+      "id": "thang-long",
       "kieu": "thanh",
-      "ben": "ta",
-      "x": 480,
-      "y": 460,
-      "nhan": "Thăng Long — vườn không nhà trống"
-    },
-    {
-      "id": "quan-dich-chiem-dong",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 541,
-      "y": 415,
-      "nhan": "Quân Mông Cổ chiếm đóng, thiếu lương"
-    },
-    {
-      "id": "quan-ta-tran-thu-do",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 250,
-      "y": 520,
-      "nhan": "Trần Thủ Độ giữ vững ý chí kháng chiến"
+      "x": 292,
+      "y": 148,
+      "nhan": "Thăng Long",
+      "quy_mo": "Thành bỏ trống, vườn không nhà trống"
     },
     {
       "id": "ben-dong-bo-dau",
       "kieu": "dia-danh",
-      "x": 560,
-      "y": 320,
+      "x": 404,
+      "y": 252,
       "nhan": "Bến Đông Bộ Đầu"
     },
     {
-      "id": "mui-phan-cong",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        300,
-        490
-      ],
-      "den": [
-        520,
-        340
-      ],
-      "nhan": "Ngược sông phản công"
-    },
-    {
-      "id": "quan-dich-thao-chay",
+      "id": "dai-ban-doanh-giac",
       "kieu": "quan",
       "ben": "dich",
-      "x": 780,
-      "y": 140,
-      "nhan": "Quân Mông Cổ tháo chạy"
+      "x": 462,
+      "y": 186,
+      "nhan": "Đại bản doanh Ngột Lương Hợp Thai",
+      "quy_mo": "Kỵ binh và bộ chỉ huy đầu não"
+    },
+    {
+      "id": "co-so",
+      "kieu": "dia-danh",
+      "x": 156,
+      "y": 226,
+      "nhan": "Cổ Sở (Yên Sở, Hoài Đức)"
+    },
+    {
+      "id": "dan-binh-lang-xa",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 130,
+      "y": 372,
+      "nhan": "Dân binh các làng xã",
+      "quy_mo": "Lấy làng xã làm pháo đài"
+    },
+    {
+      "id": "thien-mac",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 566,
+      "nhan": "Khúc sông Thiên Mạc"
+    },
+    {
+      "id": "dai-quan-tran",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 826,
+      "y": 528,
+      "nhan": "Đại quân và triều đình",
+      "quy_mo": "Củng cố lực lượng ở Thiên Mạc"
+    },
+    {
+      "id": "thuyen-nguoc-song",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 606,
+      "y": 400,
+      "nhan": "Binh thuyền ngược sông Hồng",
+      "quy_mo": "Vua Trần Thái Tông và thái tử Trần Hoảng"
+    },
+    {
+      "id": "mui-thuy-do-bo",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [566, 372],
+      "den": [438, 276],
+      "nhan": "Cánh thuỷ đổ bộ từ phía đông"
+    },
+    {
+      "id": "mui-bo-phia-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [372, 400],
+      "den": [432, 240],
+      "nhan": "Mũi bộ binh từ phía nam"
+    },
+    {
+      "id": "mui-bo-phia-tay",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [222, 240],
+      "den": [400, 200],
+      "nhan": "Mũi bộ binh từ phía tây"
+    },
+    {
+      "id": "giac-tan-vo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 528,
+      "y": 132,
+      "nhan": "Giặc tan vỡ, tháo chạy"
+    },
+    {
+      "id": "mui-thao-chay",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [560, 128],
+      "den": [742, 100],
+      "nhan": "Chạy về hướng Vân Nam"
+    },
+    {
+      "id": "trai-quy-hoa",
+      "kieu": "dia-danh",
+      "x": 856,
+      "y": 174,
+      "nhan": "Trại Quy Hoá"
+    },
+    {
+      "id": "dan-binh-ha-bong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 900,
+      "y": 258,
+      "nhan": "Dân binh Hà Bổng chặn đánh"
+    },
+    {
+      "id": "mui-ha-bong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [880, 226],
+      "den": [820, 122],
+      "nhan": "Đổ ra tập kích"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 480,
-      "y": 260,
-      "nhan": "Quét sạch quân Mông Cổ khỏi Thăng Long"
+      "x": 216,
+      "y": 108,
+      "nhan": "Giải phóng kinh thành"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Vua Trần rút khỏi Thăng Long, \"vườn không nhà trống\"",
-      "mo_ta": "Sau trận Bình Lệ Nguyên, triều đình cho dân sơ tán, bỏ trống kinh thành; quân Mông Cổ tiến vào không thu được lương thực.",
+      "tieu_de": "Vườn không nhà trống — rút khỏi Thăng Long",
+      "thoi_gian": "Sau ngày 17-1-1258",
+      "dia_danh": "Thăng Long",
+      "mo_ta": "Sau khi chặn giặc quyết liệt ở Bình Lệ Nguyên và Phù Lỗ, trước thế tiến công ồ ạt của quân Mông Cổ, vua Trần Thái Tông thực hiện kế vườn không nhà trống, rút khỏi kinh đô để bảo toàn lực lượng, đẩy địch vào tình thế khó khăn rồi phát động chiến tranh nhân dân làm tiêu hao sinh lực chúng. Cuộc rút lui chiến lược được tổ chức chu đáo; nhân dân Thăng Long cùng rời kinh đô, tản cư về vùng nông thôn.",
       "hien": [
-        "kinh-thanh-bo-trong"
+        "thang-long",
+        "dan-binh-lang-xa"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Trần Thủ Độ giữ vững ý chí kháng chiến",
-      "mo_ta": "Trước ý định cầu hòa, Trần Thủ Độ tâu: \"Đầu thần chưa rơi xuống đất, xin bệ hạ đừng lo\", củng cố quyết tâm chống giặc của triều đình.",
+      "tieu_de": "Giặc vào một toà thành trống rỗng",
+      "thoi_gian": "Từ ngày 21-1-1258",
+      "dia_danh": "Thăng Long · Đông Bộ Đầu",
+      "mo_ta": "Quân giặc vào được thành Thăng Long nhưng là một toà thành trống rỗng, không người, không lương thực. Chúng tàn phá kinh thành nhưng không dám tiến công tiếp vì không biết quân chủ lực của ta ở đâu, mà mở rộng chiếm đóng thì quân số có hạn. Lương thực mang theo đã hết, nguồn tiếp tế vốn không được phòng bị cho cách đánh nhanh thắng nhanh, trông vào cướp lương thì không có. Muốn trấn giữ vị trí trọng yếu của Thăng Long, Ngột Lương Hợp Thai chiếm bến Đông Bộ Đầu làm nơi tập kết.",
       "hien": [
-        "kinh-thanh-bo-trong",
-        "quan-ta-tran-thu-do"
+        "thang-long",
+        "ben-dong-bo-dau",
+        "dai-ban-doanh-giac"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html",
+        "Bảo tàng Lịch sử Quốc gia — Đông Bộ Đầu, bến sông làm giặc phương Bắc khiếp vía — https://baotanglichsu.vn/vi/Articles/2001/66246/djong-bo-djau-ben-song-lam-giac-phuong-bac-khiep-via.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Quân Mông Cổ suy yếu vì thiếu lương",
-      "mo_ta": "Đóng quân giữa kinh thành trống rỗng, không quen thủy thổ, quân Mông Cổ dần kiệt sức, tinh thần sa sút.",
+      "tieu_de": "Làng xã thành pháo đài — giặc đi cướp phá đâu cũng bị đánh",
+      "thoi_gian": "Tháng 1 năm 1258",
+      "dia_danh": "Cổ Sở (Yên Sở, Hoài Đức) và các làng quanh Thăng Long",
+      "mo_ta": "Chúng mở rộng các cuộc hành quân cướp phá ra vùng quanh Thăng Long, nhưng ở đâu cũng gặp sức chống trả quyết liệt của nhân dân làng xã. Khi quân Mông Cổ tiến đến Cổ Sở, nhân dân ở đây đoàn kết chiến đấu, đánh cho chúng một trận tơi bời: xác giặc ngổn ngang, ngựa sập hầm, trúng chông què. Cách đánh ấy lấy làng xã làm pháo đài, lấy đội dân binh làm nòng cốt với sự tham gia của đông đảo dân làng, làm quân xâm lược suy yếu và tạo thời cơ cho quân triều đình phản công.",
       "hien": [
-        "kinh-thanh-bo-trong",
-        "quan-dich-chiem-dong"
+        "co-so",
+        "dan-binh-lang-xa",
+        "dai-ban-doanh-giac"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Phản công tại bến Đông Bộ Đầu (29/1/1258)",
-      "mo_ta": "Vua Trần Thái Tông đích thân chỉ huy đại quân ngược sông Hồng, bất ngờ đánh úp doanh trại địch.",
+      "tieu_de": "Củng cố lực lượng ở khúc sông Thiên Mạc",
+      "thoi_gian": "Tháng 1 năm 1258",
+      "dia_danh": "Khúc sông Thiên Mạc",
+      "mo_ta": "Đại quân và triều đình theo sông Hồng rút về xuôi, đóng dọc khúc sông Thiên Mạc. Quân ta dùng thuyền rút theo đường sông nên kỵ binh Mông Cổ nếu truy kích sẽ gặp khó khăn; mặt khác địch không rõ tình hình và ý định của ta nên không dám đuổi theo. Tại vùng Thiên Mạc, quân ta nhanh chóng củng cố, tăng cường lực lượng; khi thời cơ đến, binh thuyền có thể nhanh chóng theo sông Hồng tiến về Thăng Long phản công.",
       "hien": [
-        "kinh-thanh-bo-trong",
-        "quan-dich-chiem-dong",
-        "ben-dong-bo-dau",
-        "mui-phan-cong"
+        "thien-mac",
+        "dai-quan-tran",
+        "thuyen-nguoc-song"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Quét sạch quân Mông Cổ khỏi Thăng Long",
-      "mo_ta": "Quân Mông Cổ tan vỡ, tháo chạy về Vân Nam; trên đường rút còn bị quân dân Quy Hóa tập kích thêm, kết thúc kháng chiến lần thứ nhất.",
+      "tieu_de": "«Nhân cơ đánh úp giặc» — ngược sông Hồng tiến về Thăng Long",
+      "thoi_gian": "Cuối tháng 1 năm 1258",
+      "dia_danh": "Sông Hồng · bến Đông Bộ Đầu",
+      "mo_ta": "Vua Trần Thái Tông và tể tướng Trần Thủ Độ họp bàn với các tướng, quyết định kế hoạch nhân cơ đánh úp giặc. Cuối tháng 1-1258, vua cùng thái tử Trần Hoảng trực tiếp chỉ huy quân thuỷ bộ ngược sông Hồng tiến về Thăng Long. Quân Trần đã được bảo toàn, củng cố, đang hết sức hăng hái, mở cuộc tiến công mạnh vào Đông Bộ Đầu — nơi tập kết hầu như toàn bộ kỵ binh và bộ chỉ huy đầu não của quân giặc.",
       "hien": [
+        "thuyen-nguoc-song",
         "ben-dong-bo-dau",
-        "quan-dich-thao-chay",
+        "dai-ban-doanh-giac",
+        "dai-quan-tran"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Ba mũi đánh vào đại bản doanh giặc",
+      "thoi_gian": "Nửa đêm 28 rạng 29-1-1258",
+      "dia_danh": "Bến Đông Bộ Đầu",
+      "mo_ta": "Quân Trần tiến đánh theo hai cánh: cánh quân thuỷ từ sông Hồng bí mật đổ bộ lên bến Đông Bộ Đầu từ phía đông, cánh quân bộ chia làm hai mũi từ phía nam và phía tây đánh thọc vào đại bản doanh. Hai bài viết chép hai mốc sát nhau cho cùng trận này: một bài ghi quân ta được lệnh tiến công nửa đêm ngày 28-1-1258, bài kia ghi ngày 29-1-1258 — sa đồ nêu cả hai. Bị tập kích bất ngờ, kỵ binh Mông Cổ bàng hoàng, chống đỡ yếu ớt, rối loạn rồi nhanh chóng tan vỡ.",
+      "hien": [
+        "mui-thuy-do-bo",
+        "mui-bo-phia-nam",
+        "mui-bo-phia-tay",
+        "dai-ban-doanh-giac",
+        "ben-dong-bo-dau"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html",
+        "Bảo tàng Lịch sử Quốc gia — Đông Bộ Đầu, bến sông làm giặc phương Bắc khiếp vía — https://baotanglichsu.vn/vi/Articles/2001/66246/djong-bo-djau-ben-song-lam-giac-phuong-bac-khiep-via.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Giặc bị đánh bật khỏi kinh thành, chạy về Vân Nam",
+      "thoi_gian": "Ngày 29-1-1258",
+      "dia_danh": "Thăng Long · đường về Vân Nam",
+      "mo_ta": "Quân Mông Cổ bị đánh bật ra khỏi kinh thành Thăng Long, theo đường bộ chạy về hướng Vân Nam. Khác hẳn thái độ nghênh ngang khi mới vượt biên giới sang, chúng bị đánh tan tác, mạnh ai nấy chạy, không còn dám nghĩ đến chuyện cướp bóc, đốt phá như lúc mới sang. Người đương thời gọi chúng bằng cái tên mỉa mai là «giặc Phật». Chỉ sau chín ngày chiếm đóng Thăng Long, đạo quân ấy đã thất bại thảm hại.",
+      "hien": [
+        "giac-tan-vo",
+        "mui-thao-chay",
+        "thang-long",
         "co-thang"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html",
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Hà Bổng chặn đánh ở trại Quy Hoá",
+      "thoi_gian": "Cuối tháng Giêng năm 1258",
+      "dia_danh": "Trại Quy Hoá",
+      "mo_ta": "Đến trại Quy Hoá, tàn quân Mông Cổ bị dân binh dưới sự chỉ huy của chủ trại Hà Bổng đổ ra chặn đánh. Bị tập kích bất ngờ lần nữa, địch tổn thất nặng nề về người, vũ khí và quân trang, phải chạy một mạch về bên kia biên giới. Cuối tháng Giêng năm 1258, chúng rút hết khỏi nước ta. Chiến thắng Đông Bộ Đầu là lần đầu tiên vương triều Trần lãnh đạo nhân dân đánh thắng đội quân mạnh nhất thế giới lúc bấy giờ.",
+      "hien": [
+        "trai-quy-hoa",
+        "dan-binh-ha-bong",
+        "mui-ha-bong",
+        "co-thang"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
       ]
     }
   ],
@@ -167,20 +375,28 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
     "Lịch sử Việt Nam (Viện Sử học) — kháng chiến chống Mông – Nguyên lần I",
-    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html",
+    "Bảo tàng Lịch sử Quốc gia — Đông Bộ Đầu, bến sông làm giặc phương Bắc khiếp vía — https://baotanglichsu.vn/vi/Articles/2001/66246/djong-bo-djau-ben-song-lam-giac-phuong-bac-khiep-via.html"
   ],
   "trich_van_tich": [
     {
       "sach": "Đại Việt sử ký toàn thư, Tập II",
       "doan": "Đầu thần chưa rơi xuống đất, xin Bệ Hạ đừng lo.",
       "nguon_trich": "Báo Dân Việt — https://danviet.vn/thai-su-tran-thu-do-dau-than-chua-roi-xuong-dat-xin-be-ha-dung-lo-d1426741.html",
-      "buoc": 2
+      "buoc": 1
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư",
+      "doan": "Khoảng niên hiệu Nguyên Phong (1251-1258) đời Trần, người Thát Đát vào cướp, đi đến địa phương này, ngựa khuỵu gục chân không đi được, người trong thôn dẫn dân chúng ra chống đánh, chém được đầu giặc. Quân giặc tan chạy",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html",
+      "buoc": 3
     },
     {
       "sach": "Đại Việt sử ký toàn thư, Tập II",
       "doan": "người không kịp mặc giáp, ngựa không kịp đóng yên",
       "nguon_trich": "Báo Giáo dục Việt Nam — https://giaoduc.net.vn/tran-dong-bo-dau-chien-cong-hien-hach-cua-quan-dan-ta-thoi-nha-tran-post184152.gd",
-      "buoc": 4
+      "buoc": 6
     }
   ]
 }

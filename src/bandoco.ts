@@ -17,6 +17,7 @@ import { FONT_LABEL, textFont } from "./map-fonts";
 import { esc } from "./util/html";
 import { fetchJson } from "./util/fetch";
 import { str, num, arr, rec } from "./types/parse";
+import { escVan } from "./popup-noi-dung";
 
 interface DiemNeo {
   ten_xua: string;
@@ -219,10 +220,10 @@ function capNhatNeo(): void {
         map,
         e.lngLat,
         `<div class="bdc-popup">
-          <p class="bdc-popup-xua">«${esc(str(p["ten_xua"]))}»</p>
-          <p class="bdc-popup-nay">nay là <b>${esc(str(p["ten_nay"]))}</b></p>
-          <p class="bdc-popup-ghi-chu">${esc(str(p["ghi_chu"]))}</p>
-          <p class="bdc-popup-nguon">Ghi trên: ${esc(str(p["ban_do"]))} (${esc(str(p["nam"]))}) · ${esc(TIN_CAY_CHU[tinCay] ?? tinCay)}</p>
+          <p class="bdc-popup-xua">${escVan(`«${str(p["ten_xua"])}»`)}</p>
+          <p class="bdc-popup-nay">nay là <b>${escVan(str(p["ten_nay"]))}</b></p>
+          <p class="bdc-popup-ghi-chu">${escVan(str(p["ghi_chu"]))}</p>
+          <p class="bdc-popup-nguon">Ghi trên: ${escVan(str(p["ban_do"]))} (${esc(str(p["nam"]))}) · ${esc(TIN_CAY_CHU[tinCay] ?? tinCay)}</p>
         </div>`,
       );
     });
@@ -243,7 +244,7 @@ function capNhatNeo(): void {
 // ── UI trong bảng lớp ────────────────────────────────────────────────────
 
 function dungHang(t: TamGeoref): string {
-  return `<label><input type="checkbox" data-bdc="${esc(t.id)}"/> ${esc(t.ten)} — ${esc(t.nam_hien_thi)} (xấp xỉ)</label>
+  return `<label><input type="checkbox" data-bdc="${esc(t.id)}"/> ${escVan(t.ten)} — ${escVan(t.nam_hien_thi)} (xấp xỉ)</label>
     <label class="taberd-op bdc-op" data-bdc-op-cua="${esc(t.id)}" hidden>Độ mờ <input type="range" data-bdc-op="${esc(t.id)}" min="0" max="1" step="0.05" value="${DO_MO_MAC_DINH}"/></label>`;
 }
 

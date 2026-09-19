@@ -1,8 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Nam Bộ kháng chiến 1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Nam Bộ kháng chiến 1945 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Tên đường và cầu giữ đúng tên năm 1945 kèm tên nay theo nguồn (Cây Mai nay là Nguyễn Trãi · Kitchner nay là Nguyễn Thái Học · cầu Marc Mahon nay là cầu Nguyễn Văn Trỗi · dinh Đốc Lý nay là trụ sở UBND Thành phố). ĐỪNG đổi sang tên hiện nay trong phần diễn biến — nguồn chép tên cũ.",
   "id": "nam-bo-khang-chien-1945",
   "ten": "Nam Bộ kháng chiến",
   "nam": 1945,
+  "thoi_gian": "0 giờ ngày 23/9/1945 và những tuần sau đó",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Trần Văn Giàu (Chủ tịch Ủy ban Kháng chiến Nam Bộ)",
   "doi_thu": "Pháp",
@@ -13,115 +15,436 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "song",
+      "diem": [
+        [640, 40],
+        [660, 170],
+        [680, 300],
+        [720, 420],
+        [790, 540]
+      ],
+      "nhan": "Sông Sài Gòn"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [300, 450],
+        [430, 435],
+        [560, 430],
+        [670, 425]
+      ],
+      "nhan": "Rạch Bến Nghé"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          200,
-          350
-        ],
-        [
-          500,
-          330
-        ],
-        [
-          800,
-          310
-        ]
+        [120, 320],
+        [260, 305],
+        [400, 290],
+        [520, 275]
       ],
-      "nhan": "Sài Gòn – Chợ Lớn"
+      "nhan": "Đường vào Chợ Lớn"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [270, 170],
+        [400, 140],
+        [545, 110],
+        [690, 140]
+      ],
+      "nhan": "Tuyến cầu Bông – cầu Kiệu – cầu Thị Nghè"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [120, 520],
+        [260, 535],
+        [270, 585],
+        [125, 575]
+      ],
+      "nhan": "Rừng cao su miền Đông · rừng đước U Minh · rừng tràm Đồng Tháp Mười"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-danh-chiem-ubkc",
+      "id": "cau-thi-nghe",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 90,
+      "nhan": "Cầu Thị Nghè"
+    },
+    {
+      "id": "cau-kieu",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 120,
+      "nhan": "Cầu Kiệu"
+    },
+    {
+      "id": "quan-anh",
       "kieu": "quan",
       "ben": "dich",
-      "x": 300,
-      "y": 400,
-      "nhan": "Pháp bất ngờ đánh chiếm trụ sở Ủy ban Kháng chiến"
+      "x": 880,
+      "y": 130,
+      "nhan": "Phái bộ Anh"
     },
     {
-      "id": "co-loi-keu-goi",
-      "kieu": "co",
+      "id": "cau-bong",
+      "kieu": "dia-danh",
+      "x": 280,
+      "y": 152,
+      "nhan": "Cầu Bông"
+    },
+    {
+      "id": "cau-mac-mahon",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 152,
+      "nhan": "Cầu Marc Mahon"
+    },
+    {
+      "id": "dinh-doc-ly",
+      "kieu": "cong-su",
       "ben": "ta",
+      "x": 600,
+      "y": 202,
+      "nhan": "Dinh Đốc Lý"
+    },
+    {
+      "id": "tong-cong-doan",
+      "kieu": "dia-danh",
+      "x": 170,
+      "y": 222,
+      "nhan": "Tổng Công đoàn Nam Bộ — 171 đường Kitchner"
+    },
+    {
+      "id": "quan-phap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 875,
+      "y": 252,
+      "nhan": "Quân Pháp",
+      "quy_mo": "Nổ súng lúc 0 giờ ngày 23/9/1945"
+    },
+    {
+      "id": "ga-xe-lua",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 262,
+      "nhan": "Ga xe lửa"
+    },
+    {
+      "id": "uy-ban-nhan-dan-nam-bo",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 480,
+      "y": 252,
+      "nhan": "Trụ sở Uỷ ban Nhân dân Nam Bộ"
+    },
+    {
+      "id": "duong-cay-mai",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 302,
+      "nhan": "Số 629 đường Cây Mai — nơi họp Hội nghị sáng 23/9"
+    },
+    {
+      "id": "cho-ben-thanh",
+      "kieu": "dia-danh",
       "x": 450,
-      "y": 350,
-      "nhan": "Lời kêu gọi 'Cuộc kháng chiến bắt đầu'"
+      "y": 332,
+      "nhan": "Chợ Bến Thành"
     },
     {
-      "id": "quan-ta-tong-dinh-cong",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 550,
-      "y": 300,
-      "nhan": "Sài Gòn tổng bãi công, bãi thị"
-    },
-    {
-      "id": "quan-ta-tu-ve",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 650,
-      "y": 250,
-      "nhan": "Tự vệ, công nhân chặn quân Pháp"
-    },
-    {
-      "id": "co-mo-dau-khang-chien",
+      "id": "cot-co-thu-ngu",
       "kieu": "co",
       "ben": "ta",
-      "x": 750,
-      "y": 180,
-      "nhan": "Mở đầu kháng chiến chống Pháp lần hai"
+      "x": 625,
+      "y": 352,
+      "nhan": "Cột cờ Thủ Ngữ"
+    },
+    {
+      "id": "duong-verdun",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 382,
+      "nhan": "Đường Verdun"
+    },
+    {
+      "id": "cau-ong-lanh",
+      "kieu": "dia-danh",
+      "x": 540,
+      "y": 422,
+      "nhan": "Cầu Ông Lãnh"
+    },
+    {
+      "id": "bot-thuong-khau",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 825,
+      "y": 432,
+      "nhan": "Bót Thương Khẩu · bót số 6 đường Jean Eudel"
+    },
+    {
+      "id": "vong-vay-ngoai",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 462,
+      "nhan": "Lực lượng vũ trang xiết chặt vòng vây bên ngoài"
+    },
+    {
+      "id": "khanh-hoi",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 472,
+      "nhan": "Khánh Hội"
+    },
+    {
+      "id": "tu-ve-sai-gon",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 355,
+      "y": 502,
+      "nhan": "Gần 350 đội tự vệ trong Thành phố",
+      "quy_mo": "Tầm vông vạt nhọn, giáo mác, gậy gộc"
+    },
+    {
+      "id": "rung-can-cu",
+      "kieu": "dia-danh",
+      "x": 195,
+      "y": 560,
+      "nhan": "Rừng miền Đông · U Minh · Đồng Tháp Mười"
+    },
+    {
+      "id": "nam-tien",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 830,
+      "y": 560,
+      "nhan": "Các chi đội Nam tiến",
+      "quy_mo": "Chi đội Nam Long chi viện Nam Bộ"
+    },
+    {
+      "id": "mui-phap-tan-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [830, 262],
+      "den": [645, 252],
+      "nhan": "Pháp đánh chiếm các cơ quan đầu não"
+    },
+    {
+      "id": "mui-chan-cau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [430, 195],
+      "den": [470, 132],
+      "nhan": "Chặn quân Pháp vượt cầu ra khỏi Sài Gòn"
+    },
+    {
+      "id": "mui-khanh-hoi",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [725, 495],
+      "den": [800, 452],
+      "nhan": "Quân dân Khánh Hội diệt bót Thương Khẩu"
+    },
+    {
+      "id": "mui-so-tan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [330, 442],
+      "den": [205, 520],
+      "nhan": "Cơ quan và nhân dân sơ tán về nông thôn"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "Bên trong Thành phố gần 350 đội tự vệ bám sát các vị trí chiến đấu",
+          "nguon": "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết»"
+        }
+      ],
+      "don_vi": [
+        "Ủy ban Kháng chiến Nam Bộ do Trần Văn Giàu làm Chủ tịch",
+        "Ủy ban Kháng chiến Sài Gòn – Chợ Lớn do Nguyễn Văn Tư làm Chủ tịch, Huỳnh Đình Hai và Từ Văn Ri làm Uỷ viên",
+        "Các đội Xung phong Công đoàn",
+        "Các chi đội Nam tiến từ miền Bắc và miền Trung"
+      ],
+      "vu_khi": [
+        "Tầm vông vạt nhọn, giáo mác, gậy gộc",
+        "Chiếc nóp và các loại vũ khí thô sơ có sẵn trong tay"
+      ]
+    },
+    "doi_thu": {
+      "vu_khi": [
+        "Tàu chiến, máy bay, xe tăng của lực lượng viễn chinh"
+      ]
+    },
+    "nguon": [
+      "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Pháp bất ngờ đánh chiếm trụ sở Ủy ban Kháng chiến",
-      "mo_ta": "Rạng sáng 23/9/1945, quân Pháp bất ngờ đánh chiếm trụ sở Ủy ban Kháng chiến Nam Bộ và các công sở tại Sài Gòn.",
+      "tieu_de": "Lời thề «Độc lập hay là chết»",
+      "thoi_gian": "2/9/1945",
+      "dia_danh": "Sài Gòn",
+      "mo_ta": "Trong ngày lễ Độc lập ở Sài Gòn, đồng chí Trần Văn Giàu đại diện cho Xứ uỷ đã ứng khẩu một bài diễn văn, và chính trong buổi lễ đó đã vang lên lời thề sắt son của đồng bào Nam Bộ: «Độc lập hay là chết». Lời thề ấy trở thành sợi chỉ xuyên suốt mọi quyết định của ba tuần sau đó, khi Sài Gòn chỉ được hưởng 21 ngày độc lập trước lúc tiếng súng tái chiếm nổ ra. Nó cũng là căn cứ mà Uỷ ban Kháng chiến Nam Bộ viện dẫn khi kêu gọi toàn dân cầm vũ khí, thay vì chờ lệnh từ Trung ương.",
       "hien": [
-        "quan-dich-danh-chiem-ubkc"
+        "uy-ban-nhan-dan-nam-bo",
+        "dinh-doc-ly",
+        "cot-co-thu-ngu",
+        "cho-ben-thanh",
+        "tong-cong-doan",
+        "tu-ve-sai-gon"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Xứ ủy họp, ra Lời kêu gọi kháng chiến",
-      "mo_ta": "Ngay sáng đó, Xứ ủy và Ủy ban Kháng chiến Nam Bộ họp, ra lời kêu gọi 'Cuộc kháng chiến bắt đầu'.",
+      "tieu_de": "Quân Anh bật đèn xanh, Pháp khiêu khích",
+      "thoi_gian": "3 – 22/9/1945",
+      "dia_danh": "Sài Gòn · Tổng Công đoàn Nam Bộ",
+      "mo_ta": "Quân Anh và Pháp lục tục vào Sài Gòn ngày càng đông. Được quân Anh bật đèn xanh, bọn phản động Pháp vừa khiêu khích, kích động, vừa gây rối để tạo điều kiện cho phái bộ Anh vu cáo chính quyền cách mạng không giữ được trật tự, trị an; đồng thời ra lệnh cho lính Nhật tước vũ khí, đòi chính quyền cách mạng giải tán các đơn vị tự vệ, đòi quân cách mạng rút hết khỏi Thành phố, trao lại các bốt cảnh sát và rời trụ sở Uỷ ban Nhân dân Nam Bộ cho quân Pháp. Sáng 3/9/1945, Uỷ ban Hành chánh Nam Bộ ra thông cáo vạch tội bọn thực dân Pháp gây ra vụ khiêu khích hôm trước. Đêm 4/9, công nhân Thành phố kéo đến Tổng Công đoàn Nam Bộ ở số 171 đường Kitchner biểu dương lực lượng và tuyên thệ. Uỷ ban Nhân dân Nam Bộ giữ thái độ tự kiềm chế và nhân nhượng với Phái bộ Đồng minh Anh trên nguyên tắc giữ vững chủ quyền, vừa để tỏ thiện chí hoà bình vừa để tranh thủ thời gian chuẩn bị chiến đấu.",
       "hien": [
-        "co-loi-keu-goi"
+        "quan-anh",
+        "quan-phap",
+        "tong-cong-doan",
+        "uy-ban-nhan-dan-nam-bo",
+        "dinh-doc-ly",
+        "tu-ve-sai-gon"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Sài Gòn tổng bãi công, bãi thị",
-      "mo_ta": "Chiều 23/9, Sài Gòn tổng đình công, các cơ sở kinh doanh đóng cửa, xe cộ ngừng chạy để phản kháng.",
+      "tieu_de": "0 giờ ngày 23/9/1945: Pháp nổ súng",
+      "thoi_gian": "0 giờ ngày 23/9/1945",
+      "dia_danh": "Trụ sở Uỷ ban Nhân dân Nam Bộ · đài phát thanh · bưu điện",
+      "mo_ta": "0 giờ ngày 23/9/1945, Pháp chính thức nổ súng tấn công Sài Gòn, bắt đầu cuộc tái chiếm khi người dân Thành phố vừa hưởng không khí độc lập 21 ngày. Quân Pháp tràn vào đánh chiếm trụ sở của Uỷ ban Nhân dân Nam Bộ, sau đó đánh vào trụ sở Quốc gia tự vệ cuộc, đài phát thanh, bưu điện và các bốt cảnh sát ở trung tâm. Nơi nào quân Pháp nổ súng đánh chiếm cũng đều bị quân ta nhất loạt đứng lên chống trả quyết liệt bằng vũ khí có sẵn trong tay, dù chỉ là vũ khí thô sơ. Trong Thành phố và vùng giáp ranh, ta dựng chướng ngại vật và tổ chức vây hãm quân Pháp ngay trong trung tâm.",
       "hien": [
-        "co-loi-keu-goi",
-        "quan-ta-tong-dinh-cong"
+        "mui-phap-tan-cong",
+        "quan-phap",
+        "uy-ban-nhan-dan-nam-bo",
+        "dinh-doc-ly",
+        "tu-ve-sai-gon",
+        "cho-ben-thanh"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/",
+        "Báo Quân đội nhân dân — Ngày 23-9-1945: Ngày Nam Bộ kháng chiến — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-23-9-1945-ngay-nam-bo-khang-chien-705705"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tự vệ, công nhân dùng vũ khí tự tạo chặn Pháp",
-      "mo_ta": "Các lực lượng tự vệ và công nhân dùng vũ khí tự tạo chặn quân Pháp tại nhiều điểm nội đô.",
+      "tieu_de": "Hội nghị đường Cây Mai lập Uỷ ban Kháng chiến Nam Bộ",
+      "thoi_gian": "Sáng 23/9/1945",
+      "dia_danh": "Số 629 đường Cây Mai",
+      "mo_ta": "Ngay sáng 23/9/1945, một hội nghị được triệu tập khẩn cấp tại số nhà 629 đường Cây Mai, nay là đường Nguyễn Trãi. Dự hội nghị có các đồng chí Ung Văn Khiêm, Trần Văn Giàu, Nguyễn Văn Nguyễn, Phạm Ngọc Thạch, Huỳnh Văn Tiểng; đồng chí Hoàng Quốc Việt thay mặt Thường vụ Trung ương Đảng và Tổng bộ Việt Minh vừa đến Sài Gòn ngày 27/8 cũng được mời tham dự. Một luồng ý kiến cho rằng tuy Pháp đã có âm mưu và hành động xâm lược nhưng chưa nên hạ lệnh kháng chiến, mà hãy ra lệnh tổng bãi công, bãi thị, không hợp tác với địch rồi điện ra Trung ương xin ý kiến. Hội nghị quyết định thành lập Uỷ ban Kháng chiến Nam Bộ do đồng chí Trần Văn Giàu làm Chủ tịch; sau đó Uỷ ban chỉ đạo lập Uỷ ban Kháng chiến Sài Gòn – Chợ Lớn do Nguyễn Văn Tư làm Chủ tịch, Huỳnh Đình Hai và Từ Văn Ri làm Uỷ viên.",
       "hien": [
-        "quan-ta-tong-dinh-cong",
-        "quan-ta-tu-ve"
+        "duong-cay-mai",
+        "uy-ban-nhan-dan-nam-bo",
+        "tong-cong-doan",
+        "ga-xe-lua",
+        "tu-ve-sai-gon",
+        "quan-phap"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Mở đầu cuộc kháng chiến chống Pháp lần hai",
-      "mo_ta": "Sự kiện mở đầu cuộc kháng chiến chống Pháp lần thứ hai của cả nước.",
+      "tieu_de": "Tổng bãi công, bãi thị và các trận trong nội đô",
+      "thoi_gian": "Ngày 23/9/1945",
+      "dia_danh": "Dinh Đốc Lý · đường Verdun · ga xe lửa · cầu Ông Lãnh · chợ Bến Thành · cầu Marc Mahon",
+      "mo_ta": "Theo lệnh của Uỷ ban Kháng chiến Nam Bộ, nhân dân Sài Gòn – Chợ Lớn – Gia Định lập tức tổng bãi công, bãi khoá, bãi thị, tản cư ra khỏi Thành phố và triệt phá các đường tiếp tế lương thực của địch. Ngày 23/9/1945, giặc Pháp vấp phải những trận chiến đấu của quân dân ta ở dinh Đốc Lý — nay là trụ sở Uỷ ban nhân dân Thành phố — đường Verdun, ga xe lửa, cầu Ông Lãnh, chợ Bến Thành và cầu Marc Mahon, nay là cầu Nguyễn Văn Trỗi. Những cây tầm vông vạt nhọn xuất hiện khắp các ngả đường, xóm làng, phố chợ; ngọn tầm vông và chiếc nóp đã đi vào lịch sử như biểu tượng tinh thần quyết chiến của nhân dân Nam Bộ.",
       "hien": [
-        "co-mo-dau-khang-chien"
+        "dinh-doc-ly",
+        "duong-verdun",
+        "ga-xe-lua",
+        "cau-ong-lanh",
+        "cho-ben-thanh",
+        "cau-mac-mahon",
+        "tu-ve-sai-gon"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Cột cờ Thủ Ngữ — trận đầu bảo vệ lá cờ độc lập",
+      "thoi_gian": "Sáng 23/9/1945",
+      "dia_danh": "Cột cờ Thủ Ngữ",
+      "mo_ta": "Sáng 23/9, một đại đội quân Anh đến định hạ lá cờ đỏ sao vàng xuống và kéo lá cờ tam tài lên, nhưng bị các chiến sĩ cảm tử của ta dùng hoả lực cản lại. Viên chỉ huy người Anh, dù là một võ quan thực dân, đã cho đại đội sắp hàng bồng súng chào những người anh hùng của đối phương đã ngã xuống dưới chân cột cờ. Không ai trong tiểu đội bảo vệ cột cờ Thủ Ngữ để lại một di vật nào để từ đó có thể tìm ra tên tuổi, gia đình; các anh trở thành tập thể chiến sĩ vô danh. Đây là trận chiến đầu tiên bảo vệ lá cờ độc lập ở Sài Gòn.",
+      "hien": [
+        "cot-co-thu-ngu",
+        "quan-anh",
+        "quan-phap",
+        "cau-ong-lanh",
+        "tu-ve-sai-gon",
+        "cho-ben-thanh"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đêm 23/9: chặn các cầu, diệt bót ở Khánh Hội",
+      "thoi_gian": "Tối và đêm 23/9/1945",
+      "dia_danh": "Cầu Bông · cầu Kiệu · cầu Thị Nghè · Khánh Hội",
+      "mo_ta": "Tối 23/9, quân Pháp nhiều lần theo gót quân Anh định vượt cầu Bông, cầu Kiệu, cầu Thị Nghè ra khỏi Sài Gòn nhưng đều bị quân ta chặn lại. Trong đêm 23/9, quân dân Khánh Hội tiến công diệt bót Thương Khẩu và bót số 6 trên đường Jean Eudel, bắt tù binh và giải thoát nhiều thanh niên bị Pháp giam ở đây; đây là trận đánh lớn nhất của quân và dân Sài Gòn – Chợ Lớn trong ngày mở màn cuộc kháng chiến Nam Bộ. Cách đánh này lặp lại cùng một logic ở cả ba cây cầu và ở Khánh Hội: giữ chân đối phương trong lòng thành phố thay vì đối đầu ngoài trống trải, nơi tầm vông không địch nổi xe tăng.",
+      "hien": [
+        "cau-bong",
+        "cau-kieu",
+        "cau-thi-nghe",
+        "mui-chan-cau",
+        "khanh-hoi",
+        "bot-thuong-khau",
+        "mui-khanh-hoi",
+        "quan-phap"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "«Trong đánh ngoài vây», Nam tiến, rồi phòng tuyến vỡ",
+      "thoi_gian": "Cuối tháng 9 – cuối năm 1945",
+      "dia_danh": "Sài Gòn – Chợ Lớn · các tỉnh phụ cận · rừng miền Đông, U Minh, Đồng Tháp Mười",
+      "mo_ta": "Xứ uỷ và Uỷ ban Kháng chiến Nam Bộ chỉ đạo các đơn vị vũ trang kìm chân quân địch trong một thời gian, không cho chúng ra khỏi Thành phố, tạo điều kiện cho các cơ quan lãnh đạo Đảng, chính quyền, đoàn thể và quần chúng sơ tán về nông thôn. Bên trong Thành phố gần 350 đội tự vệ bám sát các vị trí chiến đấu; bên ngoài, lực lượng vũ trang cách mạng xiết chặt vòng vây, Đảng bộ các tỉnh phụ cận khẩn trương chi viện cho Mặt trận Sài Gòn – Chợ Lớn. Chỉ bằng vũ khí thô sơ, quân dân Nam Bộ thực hiện tiêu thổ kháng chiến, trong đánh ngoài vây, khiến cả một lực lượng viễn chinh với tàu chiến, máy bay, xe tăng bị giam chân hơn một tháng trong một thành phố không điện, không nước, không lương thực. Ngày 26/9/1945, Chủ tịch Hồ Chí Minh gửi lời tới đồng bào Nam Bộ trên làn sóng Đài Tiếng nói Việt Nam; ít ngày sau, các chi đội Nam tiến đầu tiên vào tới chiến trường. Nhưng trước sự tăng viện mạnh mẽ của thực dân Pháp, các mặt trận liên tục bị vỡ và địch dần làm chủ Nam Bộ; các chiến sĩ cách mạng chuyển vào rừng cao su miền Đông, rừng đước U Minh, rừng tràm Đồng Tháp Mười để kháng chiến lâu dài.",
+      "hien": [
+        "tu-ve-sai-gon",
+        "vong-vay-ngoai",
+        "mui-so-tan",
+        "rung-can-cu",
+        "nam-tien",
+        "quan-phap",
+        "uy-ban-nhan-dan-nam-bo"
+      ],
+      "nguon": [
+        "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/"
       ]
     }
   ],
-  "ket_qua": "Sài Gòn tổng bãi công, bãi thị; các lực lượng tự vệ và công nhân dùng vũ khí tự tạo chặn quân Pháp tại nhiều điểm nội đô, mở đầu cuộc kháng chiến chống Pháp lần thứ hai của cả nước.",
+  "ket_qua": "Sài Gòn tổng bãi công, bãi thị; gần 350 đội tự vệ cùng lực lượng bên ngoài giam chân quân Pháp hơn một tháng trong thành phố không điện, không nước, không lương thực, mở đầu cuộc kháng chiến chống Pháp của cả nước.",
   "y_nghia": "Chưa đầy một tháng sau ngày độc lập, Nam Bộ đã phải cầm súng chiến đấu bảo vệ thành quả cách mạng, mở đầu 9 năm kháng chiến chống Pháp.",
   "trang_thai": "draft",
   "nguon": [
-    "Báo Quân đội nhân dân — Ngày 23-9-1945: Ngày Nam Bộ kháng chiến",
+    "Trang tin Thành đoàn TP Hồ Chí Minh — Nam Bộ kháng chiến, sắt son lời thề «Độc lập hay là chết» — https://thanhnien.hochiminhcity.gov.vn/nam-bo-khang-chien-son-sat-loi-the-doc-lap-hay-la-chet/",
+    "Báo Quân đội nhân dân — Ngày 23-9-1945: Ngày Nam Bộ kháng chiến — https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-23-9-1945-ngay-nam-bo-khang-chien-705705",
+    "Trung tâm Báo chí TP Hồ Chí Minh — Kỷ niệm Ngày Nam Bộ kháng chiến 23/9/1945 — https://ttbc-hcm.gov.vn/ky-niem-78-nam-ngay-nam-bo-khang-chien-23-9-1945-_-23-9-2023-vang-mai-nhip-quan-hanh-nam-tien-1003248.html",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
@@ -129,19 +452,19 @@
       "sach": "Bài hát «Nam Bộ kháng chiến» — Tạ Thanh Sơn, viết ngày 25/9/1945",
       "doan": "Mùa thu rồi ngày hăm ba ta đi theo tiếng kêu sơn hà nguy biến…",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/song-mai-tinh-than-doc-lap-tu-do-hay-la-chet-post618118.html",
-      "buoc": 2
+      "buoc": 3
     },
     {
       "sach": "Huấn lệnh của Chính phủ lâm thời nước Việt Nam Dân chủ Cộng hòa gửi quân và dân Nam Bộ, ngày 24/9/1945",
       "doan": "Lòng kiên quyết dũng cảm của nhân dân Nam Bộ chống lại quân đội xâm lược chẳng những làm cho đồng bào cả nước khâm phục, mà lại còn chứng tỏ cho cả thế giới đều biết các quyền độc lập của nhân dân Nam Bộ… Đồng bào phải cương quyết giữ vững lòng tin ở tương lai và lập tức thi hành triệt để những lời thề quả quyết trong ngày Độc lập",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/song-mai-tinh-than-doc-lap-tu-do-hay-la-chet-post618118.html",
-      "buoc": 5
+      "buoc": 8
     },
     {
       "sach": "Lời một nhà báo có mặt tại Sài Gòn những ngày đầu kháng chiến, chép trong «Lịch sử Nam Bộ kháng chiến» tập 1 (1945–1954)",
       "doan": "Dân quân đã bắt đầu dùng chiến thuật du kích, lúc ẩn khi hiện, đột nhập thình lình để phá hoại chớp nhoáng và lập tức rút lui trong im lặng. Người ta có thể ví lối đánh này là một chiến thuật xuất quỷ nhập thần. Chẳng những thường dân Pháp phải kinh sợ ngày đêm, bởi không thể đoán được Việt quân sẽ xuất hiện giờ nào và chỗ nào, mà cả đến quân đội Pháp, Anh - Ấn cũng không thể ngăn ngừa được",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/song-mai-tinh-than-doc-lap-tu-do-hay-la-chet-post618118.html",
-      "buoc": 4
+      "buoc": 7
     }
   ]
 }

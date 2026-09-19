@@ -1,8 +1,10 @@
 {
-  "ghi_chu": "Sa đồ binh biến Đô Lương 1941 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ binh biến Đô Lương 1941 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Bài của Bảo tàng Lịch sử quốc gia có kèm ảnh chú thích «Nguồn: Internet» cho chân dung Đội Cung — bản ghi này KHÔNG lấy gì từ chú thích ảnh đó, mọi dữ kiện đều từ phần chữ có dẫn nguồn sách (Lương Ninh, Lịch sử Việt Nam giản yếu; Đinh Xuân Lâm, Từ điển nhân vật lịch sử Việt Nam).",
   "id": "binh-bien-do-luong-1941",
   "ten": "Binh biến Đô Lương (1941)",
   "nam": 1941,
+  "thoi_gian": "20 giờ 30 phút ngày 13/1 – 4 giờ ngày 14/1/1941",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Đội Cung (Nguyễn Văn Cung)",
   "doi_thu": "Pháp",
@@ -13,123 +15,434 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "nui",
+      "diem": [
+        [70, 90],
+        [150, 60],
+        [250, 75],
+        [330, 120]
+      ],
+      "nhan": "Vùng núi phía tây Nghệ An"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [110, 230],
+        [280, 290],
+        [450, 345],
+        [620, 385],
+        [790, 430],
+        [930, 470]
+      ],
+      "nhan": "Sông Lam"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          200,
-          450
-        ],
-        [
-          450,
-          380
-        ],
-        [
-          700,
-          300
-        ]
+        [290, 235],
+        [450, 235],
+        [600, 265],
+        [720, 330],
+        [820, 385]
       ],
-      "nhan": "Đường từ Đô Lương về Vinh"
+      "nhan": "Đường Chợ Rạng – Đô Lương – cầu Cấm – Vinh"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [930, 200],
+        [960, 350],
+        [945, 500],
+        [990, 560],
+        [990, 190]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [95, 380],
+        [190, 395],
+        [200, 460],
+        [100, 445]
+      ],
+      "nhan": "Hang núi — nơi Đội Cung ẩn náu gần một tháng"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-ta-doi-cung",
+      "id": "don-kim-nhan",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 180,
+      "y": 100,
+      "nhan": "Đồn Kim Nhan, huyện Anh Sơn"
+    },
+    {
+      "id": "thanh-chuong",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 182,
+      "nhan": "Huyện Thanh Chương"
+    },
+    {
+      "id": "do-luong",
+      "kieu": "dia-danh",
+      "x": 430,
+      "y": 182,
+      "nhan": "Phủ Anh Sơn — thị trấn Đô Lương"
+    },
+    {
+      "id": "phu-duong",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 605,
+      "y": 192,
+      "nhan": "Phủ đường"
+    },
+    {
+      "id": "linh-au-phi",
       "kieu": "quan",
-      "ben": "ta",
-      "x": 150,
-      "y": 480,
-      "nhan": "Đội Cung nhậm chức đại đội trưởng"
+      "ben": "dich",
+      "x": 870,
+      "y": 222,
+      "nhan": "Lính Âu Phi và mật thám lùng sục"
     },
     {
       "id": "don-cho-rang",
       "kieu": "cong-su",
       "ben": "dich",
       "x": 300,
-      "y": 400,
+      "y": 252,
       "nhan": "Đồn Chợ Rạng"
     },
     {
       "id": "don-do-luong",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 450,
-      "y": 350,
+      "x": 500,
+      "y": 252,
       "nhan": "Đồn Đô Lương"
     },
     {
-      "id": "mui-keo-ve-vinh",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        480,
-        340
-      ],
-      "den": [
-        680,
-        270
-      ],
-      "nhan": "Kéo quân về hướng Vinh"
+      "id": "cau-cam",
+      "kieu": "dia-danh",
+      "x": 705,
+      "y": 300,
+      "nhan": "Cầu Cấm"
     },
     {
-      "id": "co-bi-dap-tat",
-      "kieu": "co",
+      "id": "doi-cung",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 175,
+      "y": 320,
+      "nhan": "Đội Cung (Nguyễn Văn Cung)",
+      "quy_mo": "Đội trưởng đồn Chợ Rạng từ ngày 8/1/1941"
+    },
+    {
+      "id": "san-chua",
+      "kieu": "dia-danh",
+      "x": 430,
+      "y": 322,
+      "nhan": "Sân Chùa — nơi tuyên bố khởi nghĩa"
+    },
+    {
+      "id": "buu-dien",
+      "kieu": "dia-danh",
+      "x": 565,
+      "y": 332,
+      "nhan": "Bưu điện Đô Lương — cắt đường dây liên lạc"
+    },
+    {
+      "id": "cai-a",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 900,
+      "y": 320,
+      "nhan": "Cai Á"
+    },
+    {
+      "id": "nghia-binh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 330,
+      "y": 402,
+      "nhan": "Nghĩa binh",
+      "quy_mo": "25 binh sĩ về Vinh trên ba ô tô"
+    },
+    {
+      "id": "thanh-vinh",
+      "kieu": "thanh",
       "ben": "dich",
+      "x": 830,
+      "y": 400,
+      "nhan": "Thành Vinh"
+    },
+    {
+      "id": "giam-binh-derioux",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 905,
+      "y": 430,
+      "nhan": "Giám binh Derioux"
+    },
+    {
+      "id": "truong-quoc-hoc-vinh",
+      "kieu": "dia-danh",
       "x": 700,
-      "y": 220,
-      "nhan": "Bị Pháp dập tắt"
+      "y": 442,
+      "nhan": "Trường Quốc học Vinh — nơi tập hợp lúc 4 giờ ngày 14/1"
+    },
+    {
+      "id": "ha-noi",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 500,
+      "nhan": "Hà Nội — Toà án binh ngày 20/2/1941"
+    },
+    {
+      "id": "chua-diec",
+      "kieu": "dia-danh",
+      "x": 865,
+      "y": 502,
+      "nhan": "Chùa Diệc"
+    },
+    {
+      "id": "cai-vi",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 560,
+      "y": 502,
+      "nhan": "Cai Vị",
+      "quy_mo": "Dẫn lính ra phía sau thành chờ"
+    },
+    {
+      "id": "cong-chot",
+      "kieu": "dia-danh",
+      "x": 720,
+      "y": 545,
+      "nhan": "Cổng Chốt — nơi Đội Cung bị bắt ngày 11/2/1941"
+    },
+    {
+      "id": "mui-len-do-luong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [330, 242],
+      "den": [420, 208],
+      "nhan": "Đội Cung kéo quân lên Đô Lương"
+    },
+    {
+      "id": "mui-ve-vinh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [530, 300],
+      "den": [690, 412],
+      "nhan": "Kéo quân về Vinh trên ba ô tô"
+    },
+    {
+      "id": "mui-vuot-thanh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [826, 432],
+      "den": [788, 482],
+      "nhan": "Đội Cung vượt tường thành thoát ra"
+    },
+    {
+      "id": "mui-lung-suc",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [862, 258],
+      "den": [832, 370],
+      "nhan": "Pháp lùng sục khắp nội, ngoại thành Vinh"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "25 binh sĩ kéo về Vinh, thu nạp thêm 5 binh lính ở cầu Cấm",
+          "nguon": "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941)"
+        }
+      ],
+      "don_vi": [
+        "Binh lính khố xanh đồn Chợ Rạng (Thanh Chương)",
+        "Binh lính đồn Đô Lương",
+        "Binh lính thu nạp thêm ở cầu Cấm"
+      ],
+      "vu_khi": [
+        "Ô tô của viên đồn trưởng kiểm lâm cùng hai ô tô tư nhân",
+        "Vũ khí trang bị của lính khố xanh"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
+    ]
+  },
+  "ton_that": {
+    "ta": "Toà án binh ngày 20/2/1941 tại Hà Nội kết án tử hình Đội Cung cùng 10 đồng chí, 12 người án chung thân, 2 người 20 năm tù khổ sai, 7 án 15 năm tù và 1 án 12 năm tù. Ngày 25/4/1941, Pháp thi hành án tử hình tại ba địa điểm Vinh, Chợ Rạng và Đô Lương. Cai Á bị bắt nhưng không khai báo, đã tự sát.",
+    "nguon": [
+      "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Đội Cung nhậm chức đại đội trưởng",
-      "mo_ta": "Nguyễn Văn Cung (Đội Cung) vừa nhậm chức đại đội trưởng trong quân đội thuộc địa Pháp.",
+      "tieu_de": "Binh lính người Việt bị đưa sang Lào làm bia đỡ đạn",
+      "thoi_gian": "Đầu năm 1940 – cuối năm 1940",
+      "dia_danh": "Nghệ An · đồn Chợ Rạng",
+      "mo_ta": "Từ đầu năm 1940, dưới sự lãnh đạo của Đảng Cộng sản Đông Dương, phong trào cách mạng của quần chúng ngày càng lan rộng và có ảnh hưởng đến tinh thần các binh lính người Việt trong quân đội Pháp. Tại Nghệ An, binh lính rất bất bình vì bị bắt sang Lào làm bia đỡ đạn cho thực dân Pháp trong cuộc chiến với Thái Lan, nên đã hình thành sự phản kháng trong hàng ngũ một số tầng lớp binh lính, nổi bật nhất là binh lính đồn Chợ Rạng thuộc huyện Thanh Chương. Đây là điểm khác biệt của Đô Lương so với Bắc Sơn và Nam Kỳ: lực lượng nổi dậy không phải quần chúng cầm vũ khí thô sơ mà chính là những người lính có súng trong tay của bộ máy đàn áp.",
       "hien": [
-        "quan-ta-doi-cung"
+        "don-cho-rang",
+        "thanh-chuong",
+        "don-do-luong",
+        "do-luong",
+        "doi-cung",
+        "thanh-vinh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Chỉ huy binh lính nổi dậy tại đồn Chợ Rạng",
-      "mo_ta": "Chỉ 5 ngày sau khi nhậm chức, đêm 13/1/1941 ông chỉ huy binh lính đồn Chợ Rạng nổi dậy.",
+      "tieu_de": "Đội Cung — từ Bỉm Sơn qua Kim Nhan về Vinh",
+      "thoi_gian": "1926 – 1940",
+      "dia_danh": "Bỉm Sơn · đồn Kim Nhan (Anh Sơn) · thành Vinh",
+      "mo_ta": "Thủ lĩnh cuộc binh biến là ông Nguyễn Văn Cung, quê gốc ở huyện Kỳ Anh, tỉnh Hà Tĩnh, một viên đội khố xanh nên thường được gọi là Đội Cung. Vốn họ Trần, ông được người cậu ruột quê ở huyện Đông Sơn, Thanh Hoá nhận làm con nuôi và đưa về quê ngoại nên lấy theo họ bên ngoại. Năm 1926, Nguyễn Văn Cung bị bắt đi lính khố xanh, đóng ở đồn Bỉm Sơn, tỉnh Thanh Hoá. Những năm 1930–1931, để đàn áp cao trào Xô viết Nghệ Tĩnh, đơn vị của ông được điều từ Thanh Hoá về đóng ở đồn Kim Nhan, huyện Anh Sơn. Sau phong trào Xô viết Nghệ Tĩnh, Đội Cung được điều về đóng ở Vinh để bảo vệ nội thành. Ông sống cương trực, chân thành, hay bênh vực đồng đội và những người gặp khó khăn, hoạn nạn nên rất được anh em kính nể — chính uy tín đó về sau cho phép ông tập hợp binh sĩ chỉ trong một buổi tối.",
       "hien": [
-        "quan-ta-doi-cung",
-        "don-cho-rang"
+        "doi-cung",
+        "don-kim-nhan",
+        "thanh-vinh",
+        "don-cho-rang",
+        "thanh-chuong",
+        "truong-quoc-hoc-vinh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Chiếm đồn Chợ Rạng rồi Đô Lương",
-      "mo_ta": "Nghĩa quân chiếm đồn Chợ Rạng rồi tiếp tục chiếm đồn Đô Lương.",
+      "tieu_de": "8/1/1941: nhậm chức đội trưởng đồn Chợ Rạng",
+      "thoi_gian": "8 – 13/1/1941",
+      "dia_danh": "Đồn Chợ Rạng",
+      "mo_ta": "Ngày 8/1/1941, thời cơ đến khi Nguyễn Văn Cung được cất nhắc làm đội trưởng thay viên đồn trưởng người Pháp là Alôngdô, đóng ở đồn Chợ Rạng thuộc địa phận huyện Thanh Chương, có trách nhiệm kiểm soát cả hai huyện Thanh Chương và Đô Lương. Sau khi nhậm chức được 5 ngày, ông chớp lấy thời cơ, kéo quân lên Đô Lương lấy cớ kiểm tra rồi tuyên bố khởi nghĩa. Việc nắm quyền chỉ huy hai huyện là điều kiện then chốt: nó cho phép ông đưa cả một toán lính vũ trang di chuyển giữa hai đồn mà không ai nghi ngờ.",
       "hien": [
         "don-cho-rang",
-        "don-do-luong"
+        "doi-cung",
+        "mui-len-do-luong",
+        "do-luong",
+        "don-do-luong",
+        "thanh-chuong"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Kéo quân về hướng Vinh",
-      "mo_ta": "Dùng xe tải, nghĩa quân kéo về hướng Vinh nhằm phối hợp lính đồn trong thành phố nổi dậy.",
+      "tieu_de": "20 giờ 30 phút 13/1/1941: tờ giấy trong túi áo ngực",
+      "thoi_gian": "20 giờ 30 phút ngày 13/1/1941",
+      "dia_danh": "Phủ Anh Sơn · sân Chùa",
+      "mo_ta": "Vào lúc 20 giờ 30 phút ngày 13/1/1941, Nguyễn Văn Cung và binh sĩ đến phủ Anh Sơn, tức thị trấn huyện Đô Lương bấy giờ. Sau khi cho anh em ăn tối xong, Đội Cung tập hợp binh sĩ tại sân Chùa. Nội dung và lý do cuộc khởi nghĩa đã được ông chuẩn bị từ trước, ghi vào một tờ giấy để trong túi áo ngực; khi tập hợp đông đủ anh em, ông mới rút tờ giấy ra đọc, tuyên bố khởi nghĩa và giao nhiệm vụ cho binh sĩ. Kế hoạch là nghĩa binh sẽ giết tên Bạch, đồn trưởng Đô Lương, sau đó lên ô tô kéo về thành Vinh giết những viên thực dân Pháp khét tiếng tàn ác nắm các cương vị chủ chốt như Thanh tra, Công sứ, Phó sứ.",
       "hien": [
+        "san-chua",
+        "do-luong",
+        "doi-cung",
+        "nghia-binh",
         "don-do-luong",
-        "mui-keo-ve-vinh"
+        "thanh-vinh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Thiếu ủng hộ quần chúng, bị Pháp dập tắt",
-      "mo_ta": "Do không huy động được sự ủng hộ rộng rãi của quần chúng, cuộc binh biến nhanh chóng bị Pháp dập tắt.",
+      "tieu_de": "Cắt dây liên lạc, hai nhóm hành động ở Đô Lương",
+      "thoi_gian": "Đêm 13/1/1941",
+      "dia_danh": "Đồn Đô Lương · bưu điện · phủ đường",
+      "mo_ta": "Tại Đô Lương, Đội Cung cho cắt tất cả đường dây liên lạc ở bưu điện, phá máy điện thoại và điện báo, rồi chia lực lượng thành hai nhóm. Nhóm thứ nhất do Đội Cung chỉ huy đi giết viên đồn trưởng Bạch. Nhóm thứ hai chịu trách nhiệm giết viên đồn trưởng Rôsai, sau đó vào phủ đường giết tri phủ. Việc cắt liên lạc trước khi nổ súng cho thấy cuộc binh biến được tính toán như một hành động quân sự chứ không phải nổi dậy tự phát: mục tiêu là không để Vinh nhận được tin cho tới khi nghĩa binh đã có mặt ở đó.",
       "hien": [
-        "co-bi-dap-tat"
+        "don-do-luong",
+        "buu-dien",
+        "phu-duong",
+        "doi-cung",
+        "nghia-binh",
+        "do-luong"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Ba chiếc ô tô chạy về Vinh trong đêm",
+      "thoi_gian": "Đêm 13 rạng 14/1/1941",
+      "dia_danh": "Đồn Rạng · cầu Cấm",
+      "mo_ta": "Đội Cung trở về đồn Rạng để giết viên đồn kiểm lâm người Pháp là Lôđagia, sau đó cho 25 binh sĩ về Vinh, lấy ô tô của viên đồn trưởng kiểm lâm cùng hai ô tô tư nhân kéo quân đi. Khi đi qua cầu Cấm, ông ra lệnh cho binh sĩ cắt tất cả dây điện thoại bắc qua cầu và thu nạp thêm 5 binh lính ở đây lên ô tô cùng đi, với mục đích về giải phóng thành Vinh. Đoàn xe chạy suốt đêm trên quãng đường từ Đô Lương xuống thành phố, mỗi cây cầu đi qua lại thêm một đoạn dây liên lạc bị cắt.",
+      "hien": [
+        "don-cho-rang",
+        "cau-cam",
+        "nghia-binh",
+        "mui-ve-vinh",
+        "doi-cung",
+        "thanh-vinh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "4 giờ ngày 14/1: một tiếng súng làm hỏng cả kế hoạch",
+      "thoi_gian": "4 giờ ngày 14/1/1941",
+      "dia_danh": "Trường Quốc học Vinh · thành Vinh · chùa Diệc",
+      "mo_ta": "Binh sĩ đến Vinh vào lúc 4 giờ ngày 14/1/1941, tập hợp trước cửa Trường Quốc học Vinh. Đội Cung phân công các mũi tiến quân: Cai Vị dẫn lính ra phía sau thành chờ, còn Đội Cung và Cai Á dùng ô tô tiến thẳng vào thành. Đội Cung nói với trạm trưởng trực ban rằng xin vào gặp giám binh Derioux để báo cáo hai đồn Chợ Rạng và Đô Lương đã bị cộng sản cướp; người thường trực cho ông vào và giữ Cai Á ở lại. Thông thạo đường đi lối lại, Đội Cung đi thẳng vào phòng ngủ đánh thức anh em binh sĩ, báo tin lực lượng của ông đã vây thành và kêu gọi anh em giết viên giám binh. Công việc đang tiến hành thì phía ngoài có tiếng súng làm Derioux tỉnh dậy khi Đội Cung chưa kịp hành động. Thấy tình hình bất lợi, ông vượt tường thành ra ngoài; Cai Vị thấy động bèn dẫn binh sĩ trốn vào chùa Diệc.",
+      "hien": [
+        "truong-quoc-hoc-vinh",
+        "thanh-vinh",
+        "giam-binh-derioux",
+        "cai-vi",
+        "cai-a",
+        "chua-diec",
+        "mui-vuot-thanh",
+        "doi-cung"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Cổng Chốt, toà án binh và ba pháp trường",
+      "thoi_gian": "11/2 – 25/4/1941",
+      "dia_danh": "Cổng Chốt · Hà Nội · Vinh · Chợ Rạng · Đô Lương",
+      "mo_ta": "Thực dân Pháp điều lính Âu Phi và tung mật thám lùng sục khắp nội, ngoại thành Vinh, bắt được toàn bộ binh sĩ. Riêng Cai Á sau khi bị bắt không chịu khuất phục, không khai báo và đã tự sát. Đội Cung vượt thành trốn thoát, ẩn náu ở hang núi gần một tháng; ngày 11/2/1941 ông quay lại khu vực ngoại thành để nắm tình hình và bị bắt khi vừa vào nhà Tống Gia Liêm ở khu vực Cổng Chốt, do có kẻ phản bội. Ngày 20/2/1941 tại Hà Nội, Pháp mở Toà án binh xét xử: Đội Cung và 10 đồng chí bị kết án tử hình, 12 người án chung thân, 2 người 20 năm tù khổ sai, 7 án 15 năm tù, 1 án 12 năm tù. Ngày 25/4/1941, án tử hình được thi hành tại ba địa điểm Vinh, Chợ Rạng và Đô Lương. Cũng như Bắc Sơn và Nam Kỳ, cuộc binh biến nổ ra khi kẻ thù còn mạnh và lực lượng chưa được tổ chức, chuẩn bị kỹ lưỡng nên thất bại.",
+      "hien": [
+        "cong-chot",
+        "linh-au-phi",
+        "mui-lung-suc",
+        "cai-a",
+        "doi-cung",
+        "ha-noi",
+        "don-cho-rang",
+        "don-do-luong",
+        "thanh-vinh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử quốc gia — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html"
       ]
     }
   ],
-  "ket_qua": "Binh lính người Việt dưới chỉ huy Đội Cung chiếm đồn Chợ Rạng và Đô Lương, kéo về hướng Vinh nhưng do thiếu sự tham gia rộng rãi của quần chúng nên nhanh chóng bị Pháp dập tắt.",
+  "ket_qua": "Binh lính người Việt dưới chỉ huy Đội Cung chiếm đồn Chợ Rạng và Đô Lương, kéo về thành Vinh nhưng kế hoạch đổ vỡ ngay trong đêm; toàn bộ binh sĩ bị bắt, Đội Cung cùng 10 đồng chí bị xử tử ngày 25/4/1941.",
   "y_nghia": "Một trong ba cuộc nổi dậy mở đầu cao trào cách mạng 1940-1945 (cùng Bắc Sơn, Nam Kỳ), cho thấy cần kết hợp đấu tranh vũ trang với vận động quần chúng.",
   "trang_thai": "draft",
   "nguon": [
-    "Bảo tàng Lịch sử Quốc gia (baotanglichsu.vn) — Đội Cung (Nguyễn Văn Cung) và cuộc binh biến Đô Lương",
-    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Đội Cung và cuộc binh biến Đô Lương",
+    "Bảo tàng Lịch sử quốc gia (baotanglichsu.vn) — Binh biến Đô Lương (13-1-1941) — https://baotanglichsu.vn/vi/Articles/3097/19701/binh-bien-djo-luong-13-1-1941.html",
+    "Sự kiện & Nhân chứng — Báo Quân đội nhân dân — Đội Cung và cuộc binh biến Đô Lương — http://sknc.qdnd.vn/chuyen-xua-nay/doi-cung-va-cuoc-binh-bien-do-luong-502238",
+    "Cổng Thông tin điện tử huyện Đô Lương, Nghệ An — https://doluong.gov.vn/?p=7652",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
@@ -137,13 +450,13 @@
       "sach": "Lời khai của Đội Cung tại toà án đại hình",
       "doan": "Ngày 13 tháng Giêng, mới 8 giờ sáng, tôi có ý định làm một cuộc tuần tra và chọn những binh lính khỏe mạnh nhất để tiến hành công việc đạt kết quả tốt. Vậy nên ngay sáng ấy, tôi bảo viên cai Lê Văn Vỵ chuẩn bị các bao đạn và nạp đầy các ổ lắp đạn. Để làm việc đó, tôi đã tự tay mở thùng đạn. Tôi lấy cớ tập báo động. Chỉ đến lúc 19 giờ 45 phút, tôi mới nói với các lính mà tôi đã chọn rằng họ phải theo tôi đi tuần tra",
       "nguon_trich": "Sự kiện & Nhân chứng — Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/doi-cung-va-cuoc-binh-bien-do-luong-502238",
-      "buoc": 2
+      "buoc": 4
     },
     {
       "sach": "Văn kiện Đảng toàn tập, NXB Chính trị Quốc gia, H.2000, tập 7 (1940–1945), tr.109",
       "doan": "Đó là những tiếng súng báo hiệu cho cuộc khởi nghĩa toàn quốc, là bước đầu tranh đấu bằng võ lực...",
       "nguon_trich": "Sự kiện & Nhân chứng — Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/doi-cung-va-cuoc-binh-bien-do-luong-502238",
-      "buoc": 5
+      "buoc": 8
     }
   ]
 }

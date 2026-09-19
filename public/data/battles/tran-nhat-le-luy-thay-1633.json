@@ -1,58 +1,311 @@
 {
-  "ghi_chu": "Sa đồ chiến dịch Trịnh Tráng đánh Nhật Lệ, thất bại trước Lũy Thầy 1633 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ chiến dịch Trịnh Tráng đánh Nhật Lệ, thất bại trước Luỹ Thầy 1633 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Đây là NỘI CHIẾN giữa hai thế lực người Việt, nên khai loai_xung_dot=noi-chien. Tên viên tướng chúa Nguyễn cử ra chống cự được hai nguồn chép hai cách — nêu cả hai ở bước 4.",
   "id": "tran-nhat-le-luy-thay-1633",
   "ten": "Trịnh Tráng đánh Nhật Lệ, thất bại trước Lũy Thầy (1633)",
   "nam": 1633,
   "sa_do_kieu": "tong-quat",
+  "loai_xung_dot": "noi-chien",
   "chi_huy": "Chúa Nguyễn Phúc Nguyên; Đào Duy Từ (thiết kế phòng tuyến)",
   "doi_thu": "Chúa Trịnh Tráng (Đàng Ngoài)",
   "dia_diem": "Cửa sông Nhật Lệ, Lũy Thầy — nay thuộc TP Đồng Hới, tỉnh Quảng Trị (Quảng Bình cũ)",
-  "lien_quan_tinh": ["quang-tri"],
+  "thoi_gian": "Mùa đông năm Quý Dậu (1633)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
-    { "kieu": "song", "diem": [[600, 100], [650, 500], [700, 900]], "nhan": "Sông Nhật Lệ" },
-    { "kieu": "thanh", "diem": [[300, 500], [500, 540], [650, 580]], "nhan": "Hệ thống Lũy Thầy (Trường Dục – Đầu Mâu – Nhật Lệ)" }
+    {
+      "kieu": "bien",
+      "diem": [
+        [862, 40],
+        [900, 200],
+        [912, 380],
+        [878, 566]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [300, 476],
+        [480, 422],
+        [640, 332],
+        [792, 250]
+      ],
+      "nhan": "Sông Nhật Lệ đổ ra cửa biển"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [116, 300],
+        [206, 246],
+        [300, 312]
+      ],
+      "nhan": "Núi Đầu Mâu"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [78, 528],
+        [168, 472],
+        [262, 532]
+      ],
+      "nhan": "Núi Thần Đinh"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [228, 268],
+        [380, 302],
+        [540, 328],
+        [682, 300],
+        [792, 260]
+      ],
+      "nhan": "Luỹ Nhật Lệ — từ núi Đầu Mâu qua Cầu Dài ra cửa Nhật Lệ"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [180, 492],
+        [332, 518],
+        [472, 542],
+        [604, 558]
+      ],
+      "nhan": "Luỹ Trường Dục — từ núi Thần Đinh ra đầu phá Hạc Hải"
+    }
   ],
   "phan_tu": [
-    { "id": "luy-truong-duc", "kieu": "cong-su", "ben": "ta", "x": 300, "y": 500, "nhan": "Lũy Trường Dục (đắp 1630)" },
-    { "id": "luy-dau-mau", "kieu": "cong-su", "ben": "ta", "x": 500, "y": 550, "nhan": "Lũy Đầu Mâu" },
-    { "id": "luy-nhat-le", "kieu": "cong-su", "ben": "ta", "x": 650, "y": 580, "nhan": "Lũy Nhật Lệ (Trấn Ninh)" },
-    { "id": "quan-trinh-trang-tien", "kieu": "quan", "ben": "dich", "x": 800, "y": 200, "nhan": "Trịnh Tráng đem quân vào cửa Nhật Lệ" },
-    { "id": "mui-tien-cong-trinh", "kieu": "mui-ten", "ben": "dich", "tu": [800, 200], "den": [650, 580], "nhan": "Quân Trịnh tiến đánh cửa sông Nhật Lệ" },
-    { "id": "quan-ta-danh-up", "kieu": "quan", "ben": "ta", "x": 600, "y": 600, "nhan": "Quân Đàng Trong đánh úp" },
-    { "id": "mui-danh-up", "kieu": "mui-ten", "ben": "ta", "tu": [600, 600], "den": [750, 300], "nhan": "Đánh úp, chặn đường quân Trịnh" },
-    { "id": "quan-trinh-rut-lui", "kieu": "mui-ten", "ben": "dich", "tu": [750, 300], "den": [900, 100], "nhan": "Quân Trịnh tháo lui gấp" }
+    {
+      "id": "nui-dau-mau",
+      "kieu": "dia-danh",
+      "x": 172,
+      "y": 232,
+      "nhan": "Núi Đầu Mâu — đầu phía tây luỹ Nhật Lệ"
+    },
+    {
+      "id": "luy-nhat-le",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 498,
+      "y": 344,
+      "nhan": "Luỹ Nhật Lệ — tức Luỹ Thầy",
+      "quy_mo": "cao 1 trượng 5 thước (6 m), dài hơn 3.000 trượng (12 km), ngoài đóng cọc gỗ lim"
+    },
+    {
+      "id": "luy-truong-duc",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 386,
+      "y": 560,
+      "nhan": "Luỹ Trường Dục",
+      "quy_mo": "đắp bằng đất sét, dài 10 km, cao 3 m, chân luỹ rộng 6 m"
+    },
+    {
+      "id": "pha-hac-hai",
+      "kieu": "dia-danh",
+      "x": 660,
+      "y": 572,
+      "nhan": "Phá Hạc Hải"
+    },
+    {
+      "id": "cua-nhat-le",
+      "kieu": "dia-danh",
+      "x": 812,
+      "y": 232,
+      "nhan": "Cửa biển Nhật Lệ"
+    },
+    {
+      "id": "coc-go",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 704,
+      "y": 398,
+      "nhan": "Cọc gỗ đóng ở cửa biển để chặn thuyền địch"
+    },
+    {
+      "id": "quan-trinh-thuy",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 872,
+      "y": 108,
+      "nhan": "Đại quân thuỷ bộ của Trịnh Tráng, dẫn theo vua Lê"
+    },
+    {
+      "id": "mui-trinh-vao",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [852, 152],
+      "den": [806, 218],
+      "nhan": "Tiến thẳng vào cửa biển Nhật Lệ"
+    },
+    {
+      "id": "nguyen-phuc-anh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 214,
+      "y": 132,
+      "nhan": "Nguyễn Phúc Anh — Trấn thủ Quảng Nam, hẹn làm nội ứng"
+    },
+    {
+      "id": "quan-nguyen",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 560,
+      "y": 186,
+      "nhan": "Quân chúa Nguyễn ra chống cự, giữ mặt luỹ"
+    },
+    {
+      "id": "phao-hieu",
+      "kieu": "dia-danh",
+      "x": 762,
+      "y": 316,
+      "nhan": "Pháo hiệu gọi nội ứng — bắn mà không thấy ai đáp"
+    },
+    {
+      "id": "trinh-lui-quan",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [792, 268],
+      "den": [860, 196],
+      "nhan": "Trịnh Tráng sinh nghi, lui quân ra xa dinh trại để chờ"
+    },
+    {
+      "id": "mui-danh-up",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [636, 322],
+      "den": [800, 244],
+      "nhan": "Quân Nguyễn xông ra đánh tới tấp"
+    },
+    {
+      "id": "quan-trinh-tan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 882,
+      "y": 336,
+      "nhan": "Quân Trịnh tan vỡ, vứt bỏ xe pháo mà chạy"
+    },
+    {
+      "id": "bac-bo-chinh",
+      "kieu": "dia-danh",
+      "x": 148,
+      "y": 72,
+      "nhan": "Bắc Bố Chính — Nguyễn Khắc Liệt ở lại giữ"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 604,
+      "y": 116,
+      "nhan": "Luỹ Thầy đứng vững, chưa bao giờ thất thủ"
+    }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Xây lũy Trường Dục (1630)",
-      "mo_ta": "Sau trận Nhật Lệ 1627, Đào Duy Từ đệ trình kế hoạch xây lũy Trường Dục để phòng thủ; lũy hoàn thành mùa thu năm Canh Ngọ 1630, dài khoảng 9km.",
-      "hien": ["luy-truong-duc"]
+      "tieu_de": "Đào Duy Từ hiến kế đắp luỹ Trường Dục",
+      "thoi_gian": "Năm 1630",
+      "dia_danh": "Núi Thần Đinh — phá Hạc Hải",
+      "mo_ta": "Đào Duy Từ, người xã Hoa Trai huyện Tĩnh Gia, Thanh Hoá, được chúa Nguyễn Phúc Nguyên phong tước Lộc Khê hầu, chức Nha uý Nội tán. Ông hiến kế đắp luỹ để phòng ngự. Luỹ Trường Dục xây năm 1630, bắt đầu từ núi Thần Đinh, men theo bờ sông Long Đại, qua các làng Xuân Dục, Trường Dục, Cổ Hiền, vòng xuống làng Bình Thôn, Quảng Xá rồi băng ra đến đầu phá Hạc Hải. Luỹ đắp bằng đất sét, dài 10 km, cao 3 m, chân luỹ rộng 6 m, xây theo kiến trúc chữ Hồi.",
+      "hien": [
+        "luy-truong-duc",
+        "pha-hac-hai"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html"
+      ]
     },
     {
       "id": 2,
-      "tieu_de": "Mở rộng hệ thống lũy Đầu Mâu, Nhật Lệ",
-      "mo_ta": "Chúa Nguyễn tiếp tục cho đắp lũy Đầu Mâu và lũy Nhật Lệ (Trấn Ninh), nối thành hệ thống phòng tuyến liên hoàn.",
-      "hien": ["luy-dau-mau", "luy-nhat-le"]
+      "tieu_de": "Đắp tiếp luỹ Nhật Lệ — tuyến luỹ mang tên Luỹ Thầy",
+      "thoi_gian": "Năm 1631",
+      "dia_danh": "Núi Đầu Mâu — Cầu Dài — cửa Nhật Lệ",
+      "mo_ta": "Sau khi đắp xong luỹ Trường Dục, năm 1631 chúa Nguyễn cho xây tiếp luỹ Nhật Lệ. Luỹ cao 1 trượng 5 thước, tức 6 m, dài hơn 3.000 trượng, tức 12 km, ngoài được đóng cọc bằng gỗ lim. Luỹ chia làm hai đoạn: đoạn thứ nhất chạy từ núi Đầu Mâu về Cầu Dài, thiết lập ở bờ nam sông Long Đại; đoạn thứ hai từ Cầu Dài chạy về đến cửa Nhật Lệ. Trên chiều dài ấy đặt ba cửa, trong đó có Quảng Bình Quan còn lại tới nay.",
+      "hien": [
+        "nui-dau-mau",
+        "luy-nhat-le",
+        "cua-nhat-le"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html"
+      ]
     },
     {
       "id": 3,
-      "tieu_de": "Trịnh Tráng đem quân vào cửa Nhật Lệ",
-      "mo_ta": "Năm 1633, chúa Trịnh Tráng đem quân tiến vào tới cửa sông Nhật Lệ, mở cuộc tấn công Đàng Trong.",
-      "hien": ["quan-trinh-trang-tien", "mui-tien-cong-trinh"]
+      "tieu_de": "Nguyễn Phúc Anh hẹn làm nội ứng, Trịnh Tráng thân chinh",
+      "thoi_gian": "Năm Quý Dậu (1633)",
+      "dia_danh": "Quảng Nam — Thăng Long",
+      "mo_ta": "Con thứ ba của Nguyễn Phúc Nguyên là Nguyễn Phúc Anh, đang làm Trấn thủ xứ Quảng Nam, ngầm nuôi lòng bội nghịch, bí mật viết thư hẹn với Trịnh Tráng đem quân vào: hễ nghe có tiếng pháo nổ là Anh lập tức làm kẻ nội ứng từ bên trong. Trịnh Tráng tin lời, liền tự mình thống lĩnh đại quân, dẫn theo vua Lê, tiến thẳng vào cửa biển Nhật Lệ. Cuộc ác chiến lần thứ nhất năm 1627 vừa kết thúc được sáu năm thì hai họ lại xua quân đánh nhau lần thứ hai.",
+      "hien": [
+        "nguyen-phuc-anh",
+        "quan-trinh-thuy",
+        "mui-trinh-vao"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/cuoc-ac-chien-lan-thu-hai-giua-ho-trinh-va-ho-nguyen.html"
+      ]
     },
     {
       "id": 4,
-      "tieu_de": "Quân Đàng Trong đánh úp",
-      "mo_ta": "Dựa vào thế hiểm của hệ thống lũy, quân chúa Nguyễn đánh úp quân Trịnh ngay tại cửa sông.",
-      "hien": ["quan-ta-danh-up", "mui-danh-up"]
+      "tieu_de": "Quân Trịnh vào cửa Nhật Lệ, quân Nguyễn ra chống cự",
+      "dia_danh": "Cửa biển Nhật Lệ",
+      "mo_ta": "Chúa Nguyễn Phúc Nguyên hạ lệnh cho tướng đem quân ra chống cự, quân sĩ hai bên dinh luỹ đối nhau. Về tên viên tướng cầm quân, các nguồn chép khác nhau: Khâm định Việt sử thông giám cương mục chép «bọn Nguyễn Văn Thắng và Nguyễn Hữu Dật», còn Báo Tuổi Trẻ dẫn tư liệu địa phương chép chúa cử Nguyễn Mỹ Thắng làm đại tướng. Trấn thủ Nguyễn Phúc Kiều xin đóng cọc gỗ ở cửa biển để chặn quân địch, khiến thuyền lớn của Đàng Ngoài không áp sát được mặt luỹ.",
+      "hien": [
+        "quan-nguyen",
+        "coc-go",
+        "luy-nhat-le",
+        "quan-trinh-thuy"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/cuoc-ac-chien-lan-thu-hai-giua-ho-trinh-va-ho-nguyen.html",
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thang-tram-cua-bien-mien-trung-chien-truong-khoc-liet-196241002082215875.htm"
+      ]
     },
     {
       "id": 5,
-      "tieu_de": "Quân Trịnh tháo lui",
-      "mo_ta": "Bị đánh bất ngờ, quân Trịnh Tráng phải cấp tập rút lui khỏi cửa sông Nhật Lệ.",
-      "hien": ["quan-trinh-rut-lui"]
+      "tieu_de": "Bắn pháo hiệu không thấy nội ứng, quân Trịnh chờ hơn mười ngày",
+      "dia_danh": "Ngoài dinh trại cửa Nhật Lệ",
+      "mo_ta": "Quân Trịnh bắn pháo ra hiệu nhưng không thấy bọn Nguyễn Phúc Anh đâu cả. Trịnh Tráng sinh nghi, bèn lui quân ra xa dinh trại để chờ. Hơn một tuần, tức hơn mười ngày, trôi qua trong thế đóng quân bất động; quân Trịnh vì thế mà sinh ra trễ biếng. Kế nội ứng đổ vỡ đã biến ưu thế quân số của Đàng Ngoài thành một đám đông nằm phơi ngoài bãi biển, ngay trước mặt một tuyến luỹ còn nguyên vẹn.",
+      "hien": [
+        "phao-hieu",
+        "trinh-lui-quan",
+        "luy-nhat-le",
+        "quan-nguyen"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/cuoc-ac-chien-lan-thu-hai-giua-ho-trinh-va-ho-nguyen.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Quân Nguyễn đánh úp, quân Trịnh tan vỡ",
+      "dia_danh": "Bãi biển Nhật Lệ",
+      "mo_ta": "Chớp đúng lúc đối phương lơi lỏng, quân chúa Nguyễn từ sau luỹ xông ra đánh tới tấp. Quân Trịnh tan vỡ bỏ chạy, bị giết hơn một nửa theo Khâm định Việt sử thông giám cương mục; tài liệu tỉnh Quảng Bình chép quân Trịnh vứt bỏ xe pháo mà chạy, không dám ngoái đầu lại. Trịnh Tráng cho Nguyễn Khắc Liệt ở lại giữ Bắc Bố Chính rồi dẫn quân về.",
+      "hien": [
+        "mui-danh-up",
+        "quan-trinh-tan",
+        "bac-bo-chinh"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/cuoc-ac-chien-lan-thu-hai-giua-ho-trinh-va-ho-nguyen.html",
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Luỹ Thầy đứng vững suốt cuộc nội chiến",
+      "thoi_gian": "1633 – 1672",
+      "dia_danh": "Đồng Hới — Quảng Ninh",
+      "mo_ta": "Trong suốt cuộc nội chiến Trịnh – Nguyễn, luỹ Đào Duy Từ phải chống đỡ rất nhiều cuộc tấn công của quân Trịnh nhưng chưa bao giờ bị thất thủ, mà ngược lại đã giáng cho quân Trịnh nhiều đòn đau. Năm 1648 quân Trịnh đánh luỹ Trường Dục và chịu thiệt hại nặng; năm 1672 quân Trịnh sáu lần liên tục tấn công mặt luỹ Nhật Lệ mà vẫn không hạ được. Với giá trị lịch sử và kiến trúc quân sự, luỹ Đào Duy Từ đã được Nhà nước công nhận là di tích quốc gia.",
+      "hien": [
+        "luy-nhat-le",
+        "luy-truong-duc",
+        "co-thang"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html"
+      ]
     }
   ],
   "ket_qua": "Quân Trịnh Tráng bị đánh úp, phải tháo lui khỏi cửa sông Nhật Lệ; hệ thống Lũy Thầy tiếp tục chặn đứng các đợt tấn công của Đàng Ngoài cho tới năm 1672.",
@@ -60,7 +313,10 @@
   "trang_thai": "draft",
   "nguon": [
     "danviet.vn (Báo Quảng Bình) — Lũy Thầy ở đâu, liên quan đến cuộc chiến ác liệt nào trong lịch sử Việt Nam?",
-    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html",
+    "scov.gov.vn — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/cuoc-ac-chien-lan-thu-hai-giua-ho-trinh-va-ho-nguyen.html",
+    "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thang-tram-cua-bien-mien-trung-chien-truong-khoc-liet-196241002082215875.htm"
   ],
   "trich_van_tich": [
     {
@@ -74,6 +330,18 @@
       "doan": "Lũy cao 1 trượng 5 thước, ngoài đóng gỗ lim, trong đắp đất, làm năm bực, voi ngựa đi được, dựa núi men khe, dài hơn 3.000 trượng, mỗi trượng đặt một khẩu súng quá sơn, cách 3 hoặc 5 trượng lập một pháo đài, đặt một khẩu súng nòng lớn. Thuốc đạn chứa như núi. Mấy tháng đắp xong lũy, thành một nơi ngăn chặn chia hẳn hai miền Nam Bắc…",
       "nguon_trich": "Báo Quảng Bình, qua Dân Việt — https://danviet.vn/luy-thay-o-dau-lien-quan-den-cuoc-chien-ac-liet-nao-trong-lich-su-viet-nam-20220813235233794-d1037204.html",
       "buoc": 2
+    },
+    {
+      "sach": "Khâm định Việt sử thông giám cương mục — Chính biên, quyển 31, tờ 28",
+      "doan": "Quân Trịnh bắn pháo ra hiệu nhưng không thấy bọn Anh đâu cả. Trịnh Tráng sinh nghi bèn lui quân ra xa dinh trại để chờ, hơn một tuần (tức hơn mười ngày- ND), quân Trịnh vì thế mà sinh ra trễ biếng.",
+      "nguon_trich": "scov.gov.vn — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/cuoc-ac-chien-lan-thu-hai-giua-ho-trinh-va-ho-nguyen.html",
+      "buoc": 5
+    },
+    {
+      "sach": "Khâm định Việt sử thông giám cương mục — Chính biên, quyển 31, tờ 28",
+      "doan": "Quân ta (chỉ quân của chúa Nguyễn - ND) xông ra đánh tới tấp, quân Trịnh tan vỡ bỏ chạy, bị giết hơn một nửa. Tráng cho Nguyễn Khắc Liệt ở lại giữ Bắc Bố Chính (Quảng Bình - ND) rồi dẫn quân về",
+      "nguon_trich": "scov.gov.vn — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/cuoc-ac-chien-lan-thu-hai-giua-ho-trinh-va-ho-nguyen.html",
+      "buoc": 6
     }
   ]
 }

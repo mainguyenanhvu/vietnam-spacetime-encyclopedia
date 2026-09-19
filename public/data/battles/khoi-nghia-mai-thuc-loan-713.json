@@ -1,8 +1,9 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Mai Thúc Loan 713–722 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Truyền thuyết dân gian về nguyên nhân khởi nghĩa (gánh vải cống nạp) chưa được chính sử xác nhận rõ ràng — mo_ta KHÔNG dùng chi tiết này. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Mai Thúc Loan 713–722 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Truyền thuyết dân gian về nguyên nhân khởi nghĩa (gánh vải cống nạp) chưa được chính sử xác nhận rõ ràng — mo_ta KHÔNG dùng chi tiết này. Con số quân Lâm Ấp và Chân Lạp sang giúp là do Việt điện u linh chép, đã nêu rõ xuất xứ trong mo_ta. trang_thai=draft chờ soát §9.",
   "id": "khoi-nghia-mai-thuc-loan-713",
   "ten": "Khởi nghĩa Mai Thúc Loan (Hoan Châu) 713–722",
   "nam": 713,
+  "thoi_gian": "Năm Quý Sửu (713) – năm 722 (một nguồn chép tới năm 723)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Mai Thúc Loan (Mai Hắc Đế)",
   "doi_thu": "Nhà Đường (tướng Dương Tư Húc)",
@@ -11,135 +12,375 @@
     "nghe-an"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "Tập hợp được dân chúng ở 32 châu, số lượng lên tới 40 vạn người",
+          "nguon": "Tân Đường thư, quyển 207, truyện Dương Tư Húc — dẫn trong bài của Bảo tàng Lịch sử Quốc gia: http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html"
+        }
+      ],
+      "don_vi": [
+        "Nghĩa quân Hoan Châu do Mai Thúc Loan lãnh đạo, được nhân dân lưu vực sông Lam và các châu quanh vùng ủng hộ",
+        "Theo Việt điện u linh: vua Lâm Ấp Phạm Hồ Dĩnh sai tướng Chư Hương An đem 10 vạn quân sang giúp",
+        "Theo Việt điện u linh: vua Chân Lạp Hề A Khiêm sai tướng Tham Ninh Na đem 10 vạn quân sang giúp",
+        "Bà Phạm Thị Uyển cùng hoàng tử Mai Bảo Sơn chỉ đạo nghĩa quân chiến đấu trên sông Tô Lịch"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Bộ máy thống trị nhà Đường ở Hoan Châu và quan quân ở phủ thành Tống Bình",
+        "Đại quân do Dương Tư Húc chỉ huy, điều sang trấn áp sau khi nhà Đường dẹp xong các thế lực nổi loạn trong nước"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+      "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu (713 - 2023) — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688"
+    ]
+  },
+  "ton_that": {
+    "ta": "Năm 722, khi nhà Đường tập trung được lực lượng và điều quân tràn sang trấn áp khốc liệt, khởi nghĩa Hoan Châu bị đàn áp và vương triều họ Mai kết thúc. Bà Phạm Thị Uyển cùng hoàng tử Mai Bảo Sơn trực tiếp chiến đấu với quân của Dương Tư Húc trên sông Tô Lịch.",
+    "doi_thu": "Bộ máy thống trị nhà Đường ở Hoan Châu nhanh chóng bị lật đổ; khi nghĩa quân hạ phủ thành Tống Bình, quan quân nhà Đường ở đây phải tháo chạy về nước.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+      "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu (713 - 2023) — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688"
+    ]
+  },
   "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [300, 202],
+        [400, 174],
+        [500, 202]
+      ],
+      "nhan": "Núi Đụn"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [148, 322],
+        [332, 302],
+        [512, 322],
+        [692, 302]
+      ],
+      "nhan": "Sông Lam"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [560, 92],
+        [662, 66],
+        [762, 94]
+      ],
+      "nhan": "Vùng Ái Châu"
+    },
     {
       "kieu": "duong",
       "diem": [
-        [
-          200,
-          500
-        ],
-        [
-          450,
-          350
-        ],
-        [
-          750,
-          150
-        ]
+        [420, 272],
+        [562, 222],
+        [700, 182],
+        [842, 152]
       ],
-      "nhan": "Đường tiến quân ra Tống Bình"
+      "nhan": "Đường tiến quân ra Bắc"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 78],
+        [902, 120],
+        [922, 560],
+        [1000, 570]
+      ],
+      "nhan": "Biển Đông"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-hoan-chau",
+      "id": "mai-phu",
+      "kieu": "dia-danh",
+      "x": 186,
+      "y": 476,
+      "nhan": "Mai Phụ, Thiên Lộc — quê gốc"
+    },
+    {
+      "id": "ngoc-trung",
+      "kieu": "dia-danh",
+      "x": 232,
+      "y": 250,
+      "nhan": "Ngọc Trừng, Nam Đường — nơi dấy nghiệp"
+    },
+    {
+      "id": "mai-thuc-loan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 348,
+      "y": 336,
+      "nhan": "Mai Thúc Loan",
+      "quy_mo": "Xưng Mai Hắc Đế"
+    },
+    {
+      "id": "co-mai-hac-de",
       "kieu": "co",
       "ben": "ta",
-      "x": 180,
-      "y": 540,
-      "nhan": "Dấy binh tại Hoan Châu"
+      "x": 172,
+      "y": 178,
+      "nhan": "Vương triều họ Mai"
+    },
+    {
+      "id": "hoan-chau",
+      "kieu": "dia-danh",
+      "x": 286,
+      "y": 402,
+      "nhan": "Hoan Châu"
     },
     {
       "id": "thanh-van-an",
       "kieu": "thanh",
       "ben": "ta",
-      "x": 300,
-      "y": 460,
-      "nhan": "Thành Vạn An (Sa Nam)"
+      "x": 432,
+      "y": 412,
+      "nhan": "Thành Vạn An",
+      "quy_mo": "Quốc đô của vương triều họ Mai"
     },
     {
-      "id": "co-vua",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 350,
-      "y": 400,
-      "nhan": "Mai Thúc Loan xưng đế"
-    },
-    {
-      "id": "quan-ta-tien-bac",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 500,
-      "y": 300,
-      "nhan": "Nghĩa quân tiến ra Bắc"
-    },
-    {
-      "id": "thanh-tong-binh",
+      "id": "bo-may-do-ho",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 820,
-      "y": 130,
+      "x": 572,
+      "y": 356,
+      "nhan": "Bộ máy đô hộ nhà Đường ở Hoan Châu"
+    },
+    {
+      "id": "mui-lat-do",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [400, 348],
+      "den": [528, 352],
+      "nhan": "Nhanh chóng lật đổ"
+    },
+    {
+      "id": "ai-chau",
+      "kieu": "dia-danh",
+      "x": 656,
+      "y": 108,
+      "nhan": "Ái Châu"
+    },
+    {
+      "id": "mui-giai-phong-ai-chau",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [470, 292],
+      "den": [624, 138],
+      "nhan": "Giải phóng Ái Châu"
+    },
+    {
+      "id": "tong-binh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 856,
+      "y": 122,
       "nhan": "Phủ thành Tống Bình"
     },
     {
-      "id": "quan-dich-duong",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 920,
-      "y": 200,
-      "nhan": "Dương Tư Húc đem đại quân đàn áp"
+      "id": "mui-ra-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [700, 122],
+      "den": [816, 122],
+      "nhan": "Bao vây, tiến công, hạ Tống Bình"
     },
     {
-      "id": "mui-dich-danh",
+      "id": "quan-lam-ap",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 660,
+      "y": 508,
+      "nhan": "Quân Lâm Ấp",
+      "quy_mo": "Tướng Chư Hương An"
+    },
+    {
+      "id": "quan-chan-lap",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 842,
+      "y": 462,
+      "nhan": "Quân Chân Lạp",
+      "quy_mo": "Tướng Tham Ninh Na"
+    },
+    {
+      "id": "mui-vien-tro",
       "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [796, 448],
+      "den": [500, 428],
+      "nhan": "Sang giúp Mai Hắc Đế"
+    },
+    {
+      "id": "ba-muoi-hai-chau",
+      "kieu": "dia-danh",
+      "x": 470,
+      "y": 546,
+      "nhan": "32 châu — 40 vạn người"
+    },
+    {
+      "id": "song-to-lich",
+      "kieu": "dia-danh",
+      "x": 778,
+      "y": 216,
+      "nhan": "Sông Tô Lịch"
+    },
+    {
+      "id": "pham-thi-uyen",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 742,
+      "y": 296,
+      "nhan": "Phạm Thị Uyển · Mai Bảo Sơn",
+      "quy_mo": "Chiến đấu trên sông Tô Lịch"
+    },
+    {
+      "id": "duong-tu-huc",
+      "kieu": "quan",
       "ben": "dich",
-      "tu": [
-        850,
-        220
-      ],
-      "den": [
-        600,
-        300
-      ],
-      "nhan": "Nhà Đường phản công"
+      "x": 946,
+      "y": 262,
+      "nhan": "Dương Tư Húc",
+      "quy_mo": "Đại quân nhà Đường tràn sang"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Dấy binh khởi nghĩa tại Hoan Châu",
-      "mo_ta": "Mai Thúc Loan dấy binh chống ách đô hộ nhà Đường ngay tại quê nhà, được nhân dân Hoan Châu hưởng ứng.",
+      "tieu_de": "Thân thế và chí lớn",
+      "thoi_gian": "Trước năm 713",
+      "dia_danh": "Mai Phụ (Thiên Lộc) · Ngọc Trừng (Nam Đường)",
+      "mo_ta": "Mai Thúc Loan quê gốc ở Mai Phụ, Thiên Lộc xưa — nay thuộc Lộc Hà, Hà Tĩnh — nhưng sinh ra, lớn lên và dấy nghiệp ở Ngọc Trừng, Nam Đường, nay là Nam Thái, Nam Đàn, Nghệ An. Cha là Mai Sinh, mẹ là Vương Thị, đều là những người hiền đức. Lên mười tuổi thì cha mẹ lần lượt qua đời, ông được Đinh Thế — một người bạn của Mai Sinh — nhận làm con nuôi rồi gả con gái là Ngọc Tô. Nhờ người vợ hiền thục lại tài giỏi việc canh tác, gia sản ngày một nhiều, môn hạ ngày càng đông.",
       "hien": [
-        "co-ta-hoan-chau"
+        "mai-phu",
+        "ngoc-trung",
+        "mai-thuc-loan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Xây thành Vạn An làm căn cứ",
-      "mo_ta": "Nghĩa quân xây dựng thành Vạn An (Sa Nam, Nam Đàn) làm căn cứ, liên kết lực lượng nhiều châu.",
+      "tieu_de": "Đi khắp trong ngoài giao kết với hào kiệt bốn phương",
+      "thoi_gian": "Trước năm 713",
+      "dia_danh": "Hoan Châu và các vùng lân cận",
+      "mo_ta": "Chứng kiến cảnh nhân dân lầm than dưới ách thống trị ngoại bang, khát vọng giành lại độc lập tự chủ ở Mai Thúc Loan ngày càng rực cháy. Trước khi lên đường tìm bạn tâm giao chuẩn bị sự nghiệp lớn, ông dặn vợ ở nhà nuôi dạy các con, chăm lo việc nông trang và tích trữ lương thảo để chờ lúc lâm thời dùng đến — một sự chuẩn bị có tính toán về cả lực lượng lẫn hậu cần, chứ không phải một cuộc nổi dậy bột phát.",
       "hien": [
-        "co-ta-hoan-chau",
-        "thanh-van-an"
+        "mai-thuc-loan",
+        "ngoc-trung",
+        "hoan-chau"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Xưng đế, lập nước Vạn An",
-      "mo_ta": "Mai Thúc Loan xưng đế, sử sách gọi là Mai Hắc Đế, lập nước Vạn An.",
+      "tieu_de": "Năm Quý Sửu 713 — phất cờ ở Hoan Châu",
+      "thoi_gian": "Năm Quý Sửu (713)",
+      "dia_danh": "Hoan Châu — lưu vực sông Lam",
+      "mo_ta": "Năm Quý Sửu 713, ở đất Hoan Châu — thuộc Nghệ An và Hà Tĩnh ngày nay — Mai Thúc Loan phất cờ khởi nghĩa. Được sự ủng hộ của nhân dân ở lưu vực sông Lam và các châu quanh vùng, ông cùng ba quân tướng sĩ nhanh chóng lật đổ bộ máy thống trị do nhà Đường thiết lập ở Hoan Châu. Cuộc khởi nghĩa giành thắng lợi ngay từ đầu nhờ quá trình chuẩn bị lực lượng từ trước và nhờ thời cơ vương triều Đường đang phải tập trung giải quyết tranh chấp nội bộ.",
       "hien": [
-        "thanh-van-an",
-        "co-vua"
+        "hoan-chau",
+        "mai-thuc-loan",
+        "bo-may-do-ho",
+        "mui-lat-do"
+      ],
+      "nguon": [
+        "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688",
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tiến quân ra Bắc, đánh chiếm phủ thành Tống Bình",
-      "mo_ta": "Nghĩa quân tiến ra Bắc, đánh đuổi quan quân đô hộ, làm chủ đất nước trong khoảng một thập niên.",
+      "tieu_de": "Xưng Mai Hắc Đế, lấy thành Vạn An làm quốc đô",
+      "thoi_gian": "Năm 713",
+      "dia_danh": "Thành Vạn An (Nam Đàn)",
+      "mo_ta": "Trên cơ sở thắng lợi ban đầu, Mai Thúc Loan thiết lập vương triều, xưng Mai Hắc Đế, xây dựng bộ máy chính quyền tự chủ và tiếp tục chiêu tập binh sĩ nhằm mở rộng phạm vi khởi nghĩa. Đất Hoan Châu xuất hiện vương triều tự chủ của người Việt với thành Vạn An, thuộc Nam Đàn ngày nay, được xem là quốc đô. Ông ban hành nhiều chính lệnh quan trọng nhằm xây dựng, củng cố và duy trì nền độc lập tự chủ.",
       "hien": [
-        "co-vua",
-        "quan-ta-tien-bac",
-        "thanh-tong-binh"
+        "thanh-van-an",
+        "co-mai-hac-de",
+        "mai-thuc-loan",
+        "hoan-chau"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+        "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Nhà Đường cử đại quân đàn áp",
-      "mo_ta": "Nhà Đường cử tướng Dương Tư Húc đem đại quân sang đàn áp; cuộc khởi nghĩa cuối cùng thất bại nhưng để lại dấu ấn lớn trong lịch sử chống Bắc thuộc.",
+      "tieu_de": "Liên kết với Lâm Ấp và Chân Lạp",
+      "thoi_gian": "Sau năm 713",
+      "dia_danh": "Lâm Ấp · Chân Lạp",
+      "mo_ta": "Theo Việt điện u linh của Lí Tế Xuyên, Mai Hắc Đế ra chỉ dụ cho Tiết Công và Hoắc Đan sang chiêu dụ Chân Lạp, Lâm Ấp và đã nhận được sự hưởng ứng nhiệt tình của hai nước này: vua Lâm Ấp Phạm Hồ Dĩnh sai tướng Chư Hương An đem sang 10 vạn quân, vua Chân Lạp Hề A Khiêm sai tướng Tham Ninh Na đem 10 vạn quân sang giúp. Đây là con số do Việt điện u linh chép, không phải ghi chép của chính sử biên niên.",
       "hien": [
-        "thanh-tong-binh",
-        "quan-dich-duong",
-        "mui-dich-danh"
+        "quan-lam-ap",
+        "quan-chan-lap",
+        "mui-vien-tro",
+        "thanh-van-an"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Giải phóng Ái Châu, tiến ra đồng bằng Bắc Bộ",
+      "thoi_gian": "Sau năm 713",
+      "dia_danh": "Ái Châu (Thanh Hoá)",
+      "mo_ta": "Chớp thời cơ thuận lợi, Mai Thúc Loan dẫn đại quân giải phóng toàn bộ Ái Châu — Thanh Hoá ngày nay — rồi thẳng tiến ra đồng bằng Bắc Bộ. Việc chiêu tập đông đảo binh sĩ, xây dựng thêm căn cứ và ổn định tình hình ở Hoan Châu đã hoàn tất trước khi ông đưa quân ra Bắc, nên cuộc tiến công không phải là một đợt đột kích mà là bước mở rộng của một chính quyền đã đứng vững ở phía nam.",
+      "hien": [
+        "ai-chau",
+        "mui-giai-phong-ai-chau",
+        "mai-thuc-loan",
+        "thanh-van-an"
+      ],
+      "nguon": [
+        "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Hạ phủ thành Tống Bình — 32 châu theo về",
+      "thoi_gian": "Sau năm 713",
+      "dia_danh": "Phủ thành Tống Bình (Hà Nội ngày nay)",
+      "mo_ta": "Nghĩa quân bao vây, tiến công và hạ phủ thành Tống Bình, làm cho quan quân nhà Đường ở đây phải tháo chạy về nước. Cuộc khởi nghĩa từ Hoan Châu dần mở rộng phạm vi và phát triển về lực lượng, không chỉ lôi cuốn nhân dân trong vùng mà còn liên kết với nhiều địa phương khác. Tân Đường thư chép Mai Hắc Đế tập hợp được dân chúng ở 32 châu, số lượng lên tới 40 vạn người; nhân dân ta giành được độc lập trong khoảng mười năm.",
+      "hien": [
+        "tong-binh",
+        "mui-ra-bac",
+        "ba-muoi-hai-chau",
+        "mai-thuc-loan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+        "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Nhà Đường điều Dương Tư Húc sang trấn áp",
+      "thoi_gian": "Năm 722 — một nguồn chép vương triều họ Mai kéo dài tới năm 723",
+      "dia_danh": "Sông Tô Lịch · Hoan Châu",
+      "mo_ta": "Đến năm 722, khi nhà Đường dẹp xong các thế lực nổi loạn trong nước, chúng có điều kiện tập trung lực lượng và điều quân tràn sang trấn áp khốc liệt; khởi nghĩa Hoan Châu bị đàn áp, vương triều họ Mai kết thúc. Cổng TTĐT tỉnh Nghệ An lại chép nền độc lập ấy kéo dài hơn mười năm, từ 713 đến 723 — sa đồ nêu cả hai mốc. Bà Phạm Thị Uyển cùng hoàng tử Mai Bảo Sơn đã chỉ đạo nghĩa quân trực tiếp chiến đấu với quân của Dương Tư Húc trên sông Tô Lịch. Một nguyên nhân thất bại được nêu là hệ thống phòng ngự đặt ở Hoan Châu quá xa Tống Bình nên không hỗ trợ tác chiến kịp thời.",
+      "hien": [
+        "duong-tu-huc",
+        "song-to-lich",
+        "pham-thi-uyen",
+        "tong-binh",
+        "thanh-van-an"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+        "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688"
       ]
     }
   ],
@@ -149,7 +390,9 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Ngoại kỷ",
     "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
-    "Báo Nghệ An — Đền thờ Vua Mai Hắc Đế, di tích lịch sử quốc gia đặc biệt"
+    "Báo Nghệ An — Đền thờ Vua Mai Hắc Đế, di tích lịch sử quốc gia đặc biệt",
+    "Bảo tàng Lịch sử Quốc gia — Khởi nghĩa Mai Thúc Loan, một di sản quý báu — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+    "Cổng TTĐT tỉnh Nghệ An — Lễ kỷ niệm 1310 năm khởi nghĩa Hoan Châu (713 - 2023) — https://www.nghean.gov.vn/tin-noi-bat/le-ky-niem-1310-nam-khoi-nghia-hoan-chau-713-2023-546688"
   ],
   "trich_van_tich": [
     {
@@ -157,6 +400,18 @@
       "doan": "Mai Thúc Loan là một nam nhi khỏe mạnh, có chí lớn, đầu hổ, mắt rồng, tay vượn, dũng cảm, đa tài.",
       "nguon_trich": "Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
       "buoc": 1
+    },
+    {
+      "sach": "Việt điện u linh — chép về cơ nghiệp gia đình Mai Thúc Loan",
+      "doan": "gia sản ngày một nhiều, môn hạ ngày càng đông",
+      "nguon_trich": "Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+      "buoc": 1
+    },
+    {
+      "sach": "Lời Mai Thúc Loan dặn vợ trước khi lên đường — dẫn trong bài của Bảo tàng Lịch sử Quốc gia",
+      "doan": "Kẻ nam nhi sinh không hợp thời, gặp nhiều vận bĩ. Ngày tháng trôi qua nhanh như bánh xe, thật đáng tiếc. Nay ta vốn có chí khí bình định thiên hạ, đi khắp trong ngoài để giao kết với hào kiệt bốn phương cùng lập sự nghiệp. Nàng ở nhà nuôi dạy các con, chăm lo việc nông trang, tích trữ lương thảo để chờ lúc lâm thời dùng đến.",
+      "nguon_trich": "Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13699/khoi-nghia-mai-thuc-loan-mot-di-san-quy-bau.html",
+      "buoc": 2
     }
   ]
 }

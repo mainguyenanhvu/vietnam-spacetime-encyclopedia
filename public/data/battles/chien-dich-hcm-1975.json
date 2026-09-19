@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Hồ Chí Minh 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Nội dung bám sát cách trình bày của SGK và cổng nhà nước theo yêu cầu chủ dự án về nội dung nhạy cảm 1945–1975. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Hồ Chí Minh 26 – 30/4/1975 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "chien-dich-hcm-1975",
   "ten": "Chiến dịch Hồ Chí Minh 1975",
   "nam": 1975,
@@ -16,161 +16,358 @@
       "kieu": "duong",
       "diem": [
         [
-          100,
-          100
+          190,
+          175
         ],
         [
           500,
+          148
+        ],
+        [
+          810,
+          188
+        ]
+      ],
+      "nhan": "Tuyến phòng thủ vòng ngoài của đối phương"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          250,
           300
         ],
         [
-          900,
-          120
+          500,
+          278
+        ],
+        [
+          760,
+          312
         ]
       ],
-      "nhan": "Các hướng tiến quân hội tụ về Sài Gòn"
+      "nhan": "Vành đai vùng ven Sài Gòn – Gia Định"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [
+          880,
+          380
+        ],
+        [
+          935,
+          470
+        ],
+        [
+          900,
+          565
+        ]
+      ],
+      "nhan": "Vùng biển phía Bà Rịa"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          350,
+          425
+        ],
+        [
+          500,
+          452
+        ],
+        [
+          650,
+          432
+        ]
+      ],
+      "nhan": "Các cầu vào nội đô do đặc công chiếm giữ"
     }
   ],
   "phan_tu": [
     {
-      "id": "canh-quan-bac",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 350,
-      "y": 120,
-      "nhan": "Hướng Bắc – Tây Bắc"
-    },
-    {
-      "id": "canh-quan-dong",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 750,
-      "y": 150,
-      "nhan": "Hướng Đông – Đông Nam"
-    },
-    {
-      "id": "canh-quan-tay-nam",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 300,
-      "y": 480,
-      "nhan": "Hướng Tây Nam"
-    },
-    {
-      "id": "san-bay-tan-son-nhat",
-      "kieu": "cong-su",
-      "ben": "dich",
-      "x": 550,
-      "y": 280,
-      "nhan": "Sân bay Tân Sơn Nhất"
-    },
-    {
-      "id": "mui-tien-vao-noi-do",
+      "id": "huong-bac",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        400,
-        200
+        430,
+        60
       ],
       "den": [
-        520,
+        470,
+        190
+      ],
+      "nhan": "Hướng bắc"
+    },
+    {
+      "id": "huong-tay-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        200,
+        90
+      ],
+      "den": [
+        350,
+        200
+      ],
+      "nhan": "Hướng tây bắc"
+    },
+    {
+      "id": "huong-dong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        880,
+        140
+      ],
+      "den": [
+        720,
+        230
+      ],
+      "nhan": "Hướng đông"
+    },
+    {
+      "id": "huong-dong-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        900,
+        420
+      ],
+      "den": [
+        720,
         340
       ],
-      "nhan": "Tiến vào nội đô"
+      "nhan": "Hướng đông nam"
+    },
+    {
+      "id": "huong-tay-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        150,
+        470
+      ],
+      "den": [
+        350,
+        390
+      ],
+      "nhan": "Hướng tây nam"
+    },
+    {
+      "id": "long-thanh-bien-hoa",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 700,
+      "y": 110,
+      "nhan": "Long Thành · Biên Hoà · Đức Thạnh"
+    },
+    {
+      "id": "ba-ria",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 900,
+      "y": 270,
+      "nhan": "Thị xã Bà Rịa · Long Điền · Đất Đỏ"
+    },
+    {
+      "id": "dac-cong-cau",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 480,
+      "y": 470,
+      "nhan": "Đặc công chiếm giữ các cầu"
+    },
+    {
+      "id": "sai-gon",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 520,
+      "y": 310,
+      "nhan": "Nội đô Sài Gòn"
+    },
+    {
+      "id": "tan-son-nhat",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 330,
+      "y": 250,
+      "nhan": "Sân bay Tân Sơn Nhất"
+    },
+    {
+      "id": "dai-phat-thanh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 250,
+      "y": 330,
+      "nhan": "Đài phát thanh Sài Gòn"
+    },
+    {
+      "id": "phi-doi-quyet-thang",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 115,
+      "y": 185,
+      "nhan": "5 máy bay A-37 cất cánh từ sân bay Thành Sơn ném bom Tân Sơn Nhất",
+      "quy_mo": "Phi đội Quyết Thắng"
+    },
+    {
+      "id": "so-chi-huy-qd3",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 660,
+      "y": 440,
+      "nhan": "Sở chỉ huy Quân đoàn 3 rút chạy về Gò Vấp, chiều 28/4"
     },
     {
       "id": "dinh-doc-lap",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 550,
-      "y": 420,
+      "x": 520,
+      "y": 530,
       "nhan": "Dinh Độc Lập"
     },
     {
-      "id": "mui-xe-tang",
+      "id": "thoc-sau-qd2",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        500,
-        360
+        230,
+        520
       ],
       "den": [
-        545,
-        415
+        400,
+        545
       ],
-      "nhan": "Xe tăng húc đổ cổng Dinh Độc Lập"
+      "nhan": "Lực lượng thọc sâu Quân đoàn 2 đánh chiếm Dinh Độc Lập"
     },
     {
-      "id": "co-thang",
+      "id": "co-doc-lap",
       "kieu": "co",
       "ben": "ta",
-      "x": 650,
-      "y": 400,
-      "nhan": "Toàn thắng — thống nhất đất nước"
+      "x": 800,
+      "y": 540,
+      "nhan": "11 giờ 30 ngày 30/4 — cờ trên nóc Dinh Độc Lập"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Bộ Chính trị quyết định mở Chiến dịch Hồ Chí Minh",
-      "mo_ta": "Sau các thắng lợi liên tiếp ở Tây Nguyên và Huế – Đà Nẵng, ngày 14/4/1975 Bộ Chính trị chuẩn y kế hoạch giải phóng Sài Gòn – Gia Định, lấy tên Chiến dịch Hồ Chí Minh.",
+      "tieu_de": "31/3/1975 — Bộ Chính trị nhận định thời cơ đã chín muồi",
+      "thoi_gian": "31/3/1975",
+      "dia_danh": "Hà Nội",
+      "mo_ta": "Sau hơn một tháng tổng tiến công, ta đã giành thắng lợi qua các Chiến dịch Tây Nguyên (4/3 – 3/4/1975), Trị Thiên – Huế (5 – 26/3/1975) và Đà Nẵng (26 – 29/3/1975), giải phóng hơn một nửa đất đai và một nửa số dân toàn miền Nam, làm tan rã toàn bộ hệ thống chính quyền và quân đội Sài Gòn ở hai quân khu 1 và 2. Hội nghị Bộ Chính trị ngày 31/3/1975 nhận định thời cơ mở tổng tiến công và nổi dậy tại Sài Gòn – Gia Định đã chín muồi.",
       "hien": [
-        "dinh-doc-lap"
+        "sai-gon"
+      ],
+      "nguon": [
+        "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Năm cánh quân bao vây Sài Gòn (26/4/1975)",
-      "mo_ta": "Quân ta đồng loạt tiến công từ nhiều hướng, phá vỡ tuyến phòng thủ vòng ngoài của quân đội Sài Gòn.",
+      "tieu_de": "Đầu tháng 4 — hành quân thần tốc, đặt tên Chiến dịch Hồ Chí Minh",
+      "thoi_gian": "Đầu tháng 4 – 14/4/1975",
+      "dia_danh": "Năm hướng vào Sài Gòn",
+      "mo_ta": "Đầu tháng 4, hàng trăm nghìn ô tô, hàng trăm đoàn thuyền, hàng chục tàu biển và đoàn tàu hoả, hàng trăm lần chiếc máy bay vận tải nối nhau ra tiền tuyến. Các binh đoàn chiến lược binh chủng hợp thành vừa đánh, vừa mở đường, vừa hành quân vào mặt trận Sài Gòn trên cả năm hướng bắc, tây bắc, đông, đông nam, tây nam. Ngày 8/4, Bộ Chính trị và Quân uỷ Trung ương quyết định thành lập Bộ Chỉ huy chiến dịch; ngày 14/4, Bộ Chính trị phê chuẩn tên gọi Chiến dịch Hồ Chí Minh.",
       "hien": [
-        "canh-quan-bac",
-        "canh-quan-dong",
-        "canh-quan-tay-nam",
-        "dinh-doc-lap"
+        "huong-bac",
+        "huong-tay-bac",
+        "huong-dong",
+        "huong-dong-nam",
+        "huong-tay-nam"
+      ],
+      "nguon": [
+        "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đánh chiếm các mục tiêu then chốt vòng ngoài",
-      "mo_ta": "Các cánh quân lần lượt đánh chiếm các căn cứ và tuyến phòng thủ vòng ngoài, áp sát nội đô từ nhiều phía.",
+      "tieu_de": "17 giờ ngày 26/4 — chiến dịch nổ súng",
+      "thoi_gian": "17 giờ, 26/4/1975",
+      "dia_danh": "Vòng ngoài Sài Gòn",
+      "mo_ta": "Ngày 22/4, trước những diễn biến nhanh của tình hình, Bộ Chính trị gửi điện cho Bộ Tư lệnh chiến dịch chỉ rõ thời cơ tiến công về quân sự và chính trị vào Sài Gòn đã chín muồi, cần tranh thủ từng ngày. Theo kế hoạch, đúng 17 giờ ngày 26/4/1975 Chiến dịch Hồ Chí Minh bắt đầu nổ súng. Từ năm hướng, các binh đoàn thọc sâu có xe tăng dẫn đầu đánh vào khu vực phòng thủ vòng ngoài.",
       "hien": [
-        "canh-quan-bac",
-        "canh-quan-dong",
-        "canh-quan-tay-nam"
+        "huong-bac",
+        "huong-dong",
+        "huong-tay-nam",
+        "sai-gon"
+      ],
+      "nguon": [
+        "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tiến vào nội đô, chiếm sân bay Tân Sơn Nhất (29/4/1975)",
-      "mo_ta": "Quân ta đánh chiếm sân bay Tân Sơn Nhất, Bộ Tổng tham mưu quân đội Sài Gòn, siết chặt vòng vây trung tâm thành phố.",
+      "tieu_de": "26 – 28/4 — đột phá vòng ngoài, bao vây cô lập Sài Gòn",
+      "thoi_gian": "26 – 28/4/1975",
+      "dia_danh": "Long Thành · Biên Hoà · Đức Thạnh · Bà Rịa · Long Điền · Đất Đỏ",
+      "mo_ta": "Từ ngày 26 đến 28/4/1975, các cánh quân liên tục đột phá tuyến phòng thủ vòng ngoài, đánh chiếm nhiều mục tiêu quan trọng ở Long Thành, Biên Hoà, Đức Thạnh, thị xã Bà Rịa, huyện Long Điền, Đất Đỏ; đặc công chiếm một số cầu, ngăn chủ lực đối phương ở vòng ngoài, bao vây cô lập Sài Gòn. Chiều 28/4, Sở chỉ huy Quân đoàn 3 phải rút chạy về Gò Vấp; chiều cùng ngày Tổng thống Trần Văn Hương từ chức, Dương Văn Minh lên thay.",
       "hien": [
-        "san-bay-tan-son-nhat",
-        "mui-tien-vao-noi-do"
+        "long-thanh-bien-hoa",
+        "ba-ria",
+        "dac-cong-cau",
+        "so-chi-huy-qd3"
+      ],
+      "nguon": [
+        "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Xe tăng húc đổ cổng Dinh Độc Lập (30/4/1975)",
-      "mo_ta": "Xe tăng Quân Giải phóng tiến thẳng vào Dinh Độc Lập, bắt giữ Tổng thống Dương Văn Minh cùng nội các chính quyền Sài Gòn.",
+      "tieu_de": "16 giờ 25 ngày 28/4 — Phi đội Quyết Thắng ném bom Tân Sơn Nhất",
+      "thoi_gian": "16 giờ 25 phút, 28/4/1975",
+      "dia_danh": "Sân bay Tân Sơn Nhất",
+      "mo_ta": "16 giờ 25 phút ngày 28/4/1975, Phi đội Quyết Thắng dùng 5 máy bay chiến đấu A-37 cất cánh từ sân bay Thành Sơn (Phan Rang) ném bom sân bay Tân Sơn Nhất, phá huỷ nhiều máy bay. Trận đánh diễn ra bất ngờ, làm tê liệt cầu hàng không di tản của Mỹ, khiến tình hình ở Sài Gòn thêm rối loạn. Tối 28/4, Bộ Tư lệnh chiến dịch lệnh cho các hướng tiếp tục tiến công để sáng 29/4 toàn mặt trận tổng tiến công theo kế hoạch.",
       "hien": [
-        "dinh-doc-lap",
-        "mui-xe-tang"
+        "phi-doi-quyet-thang",
+        "tan-son-nhat",
+        "sai-gon"
+      ],
+      "nguon": [
+        "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Toàn thắng, thống nhất đất nước",
-      "mo_ta": "Trưa 30/4/1975, cờ giải phóng tung bay trên nóc Dinh Độc Lập; Dương Văn Minh tuyên bố đầu hàng vô điều kiện, kết thúc chiến tranh, miền Nam hoàn toàn giải phóng.",
+      "tieu_de": "5 giờ sáng 29/4 — tổng công kích trên toàn mặt trận",
+      "thoi_gian": "5 giờ, 29/4/1975",
+      "dia_danh": "Vùng ven Sài Gòn – Gia Định",
+      "mo_ta": "5 giờ sáng 29/4, các cánh quân được lệnh tổng công kích đồng loạt trên toàn mặt trận, tiếp tục ngăn chặn và tiêu diệt các lực lượng chủ lực chủ yếu ở vòng ngoài, đồng thời phát triển thọc sâu, phối hợp với lực lượng tại chỗ đánh chiếm những địa bàn quan trọng ở vùng ven để chuẩn bị tiến công vào nội đô. Nắm chắc tình hình đối phương đang tan rã, Bộ Tư lệnh chiến dịch quyết định chớp thời cơ, tập trung lực lượng đánh chiếm các cơ quan đầu não.",
       "hien": [
+        "dac-cong-cau",
+        "sai-gon",
+        "huong-dong-nam",
+        "huong-tay-bac"
+      ],
+      "nguon": [
+        "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "30/4 — đánh chiếm Dinh Độc Lập, 11 giờ 30 cắm cờ",
+      "thoi_gian": "30/4/1975",
+      "dia_danh": "Nội đô Sài Gòn · Dinh Độc Lập · Đài phát thanh Sài Gòn",
+      "mo_ta": "Sáng 30/4/1975, toàn bộ các cánh quân lớn từ bốn hướng đồng loạt tổng công kích vào nội đô Sài Gòn. 9 giờ 30 phút, Tổng thống Dương Văn Minh tuyên bố trên Đài phát thanh Sài Gòn kêu gọi đơn phương ngừng bắn để bàn giao chính quyền; các cánh quân vẫn tiến công theo kế hoạch. 10 giờ 45 phút, đại đội xe tăng thuộc lực lượng thọc sâu của Quân đoàn 2 do Đại đội trưởng Bùi Quang Thận chỉ huy dẫn đầu đội hình đánh chiếm Dinh Độc Lập. 11 giờ 30 phút, lá cờ Quân giải phóng được cắm trên nóc Dinh.",
+      "hien": [
+        "thoc-sau-qd2",
         "dinh-doc-lap",
-        "co-thang"
+        "dai-phat-thanh",
+        "co-doc-lap"
+      ],
+      "nguon": [
+        "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
       ]
     }
   ],
-  "ket_qua": "Xe tăng tiến vào Dinh Độc Lập trưa 30/4/1975, Tổng thống Dương Văn Minh tuyên bố đầu hàng vô điều kiện, miền Nam hoàn toàn giải phóng, thống nhất đất nước.",
-  "y_nghia": "Chiến dịch quyết chiến chiến lược kết thúc cuộc kháng chiến chống Mỹ, giải phóng hoàn toàn miền Nam, thống nhất đất nước.",
+  "ket_qua": "11 giờ 30 phút ngày 30/4/1975, lá cờ Quân giải phóng được cắm trên nóc Dinh Độc Lập; toàn bộ nội các chính quyền Sài Gòn bị bắt, Tổng thống Dương Văn Minh tuyên bố đầu hàng không điều kiện. Miền Nam được giải phóng, đất nước thống nhất (Báo Nhân Dân).",
+  "y_nghia": "Trận quyết chiến chiến lược cuối cùng của cuộc kháng chiến chống Mỹ, cứu nước. Chiến dịch là điển hình về tác chiến hiệp đồng giữa các quân chủng, binh chủng, kết hợp tiến công quân sự quy mô lớn với nổi dậy của quần chúng, và về nghệ thuật nắm thời cơ chiến lược để kết thúc chiến tranh trong thời gian ngắn nhất.",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html",
     "Lịch sử Việt Nam (Viện Sử học) — Tổng tiến công và nổi dậy mùa Xuân 1975",
     "Cục Di sản Văn hoá (dsvh.gov.vn) — Dinh Độc Lập, DTQG đặc biệt",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
@@ -180,7 +377,7 @@
       "sach": "Điện số 37/TK của đồng chí Lê Duẩn gửi Bộ Chỉ huy Chiến dịch, 14/4/1975",
       "doan": "đồng ý chiến dịch Sài Gòn lấy tên là Chiến dịch Hồ Chí Minh",
       "nguon_trich": "Cổng TTĐT tỉnh Lai Châu — https://laichau.gov.vn/tin-tuc-su-kien/chuyen-de/tin-trong-nuoc/chien-dich-giai-phong-sai-gon-gia-dinh-mang-ten-chu-tich-ho-chi-minh-duoc-quyet-dinh-vao-thoi-diem-nao-.html",
-      "buoc": 1
+      "buoc": 2
     },
     {
       "sach": "Mệnh lệnh của Đại tướng Võ Nguyên Giáp (Điện số 157-HĐKTK), 7/4/1975",
@@ -191,8 +388,29 @@
     {
       "sach": "Điện của Bộ Chính trị, 22/4/1975",
       "doan": "Thời cơ để mở cuộc tiến công về quân sự và chính trị vào Sài Gòn đã chín muồi. Ta cần tranh thủ từng ngày để kịp thời phát động tiến công.",
-      "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html",
+      "nguon_trich": "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html",
       "buoc": 3
+    },
+    {
+      "sach": "Nhận định của Hội nghị Bộ Chính trị ngày 31/3/1975",
+      "doan": "Cuộc chiến tranh cách mạng ở miền Nam không những đã bước vào giai đoạn phát triển nhảy vọt, mà thời cơ để mở tổng tiến công và nổi dậy tại Sài Gòn - Gia Định đã chín muồi. Từ giờ phút này, trận quyết chiến chiến lược cuối cùng của quân và dân ta đã bắt đầu",
+      "nguon_trich": "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html",
+      "buoc": 1
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến bám bài chuyên đề «Chiến dịch Hồ Chí Minh» của Báo Nhân Dân (dẫn Bộ Quốc phòng, Bách khoa toàn thư quân sự Việt Nam, NXB Quân đội nhân dân, 2015). loai_xung_dot=noi-chien: quân Mỹ đã rút theo Hiệp định Paris 1973, hai bên tham chiến đều là người Việt. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "26/4/1975 – 30/4/1975",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Các binh đoàn chiến lược binh chủng hợp thành tiến vào mặt trận Sài Gòn trên 5 hướng: bắc, tây bắc, đông, đông nam, tây nam",
+        "Các binh đoàn thọc sâu có xe tăng dẫn đầu",
+        "Phi đội Quyết Thắng (5 máy bay A-37)"
+      ]
+    },
+    "nguon": [
+      "Chiến dịch Hồ Chí Minh — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-ho-chi-minh/index.html"
+    ]
+  }
 }
