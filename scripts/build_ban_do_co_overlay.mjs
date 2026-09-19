@@ -41,14 +41,22 @@ export function dungItems(goc) {
     for (const n of b.diem_neo ?? []) {
       const khoa = `${n.lat},${n.lon}`;
       if (!cum.has(khoa)) cum.set(khoa, { ten_nay: n.ten_nay, lat: n.lat, lon: n.lon, ghi: [] });
-      cum.get(khoa).ghi.push({
+      // Ảnh quét gắn theo TỪNG TẤM chứ không theo điểm: một địa điểm được
+      // nhiều tấm ghi tên, mà chỉ vài tấm có bản quét dùng được. Gắn cấp điểm
+      // thì phải chọn bừa một tấm làm đại diện — chọn bừa là thứ bất biến #4 cấm.
+      const g = {
         nam: String(b.nam ?? ""),
         ten_ban_do: tenNgan(b.ten),
         dia_danh_xua: n.ten_xua,
         nhom: b.nhom ?? "",
         ghi_chu: n.ghi_chu ?? "",
         do_tin_cay: n.do_tin_cay ?? "trung",
-      });
+      };
+      // Khoá rỗng bị bỏ HẲN, không đặt `anh: ""` — cùng lý do với `bo0` ở trên:
+      // validate_no_html coi khoá rỗng là có mặt và làm đỏ cổng.
+      if (b.anh) g.anh = b.anh;
+      if (b.anh_nguon) g.anh_nguon = b.anh_nguon;
+      cum.get(khoa).ghi.push(g);
     }
   }
 

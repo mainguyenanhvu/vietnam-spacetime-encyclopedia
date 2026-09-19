@@ -2559,6 +2559,11 @@ input[type="range"] {
   padding-left: 0;
   list-style: none;
   display: grid;
+  /* Cột PHẢI khai minmax(0, 1fr). Cột `auto` mặc định co theo max-content, mà
+     max-content của <li> bị ẢNH kéo ra: đo thật 2026-09-19 trong popup Hoàng Sa
+     — popup rộng 360px, <ul> 314px, nhưng <li> phình 892px vì ảnh nội tại 960px.
+     Ảnh tràn ngang khỏi khung và bị cắt. Không lỗi console, tsc vẫn xanh. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.45rem;
 }
 .pu-ds li {
@@ -2570,6 +2575,16 @@ input[type="range"] {
   font-weight: var(--dam-manh);
   font-variant-numeric: tabular-nums;
 }
+.pu-ds .pu-ds-anh {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin: 0.4rem 0 0.15rem;
+  border-radius: 4px;
+  background: var(--pu-anh-nen, rgba(0, 0, 0, 0.04));
+}
+
 .pu-ds .pu-ds-phu {
   display: block;
   color: var(--chu-nhat);

@@ -11,6 +11,7 @@
 import type { ExpressionSpecification } from "maplibre-gl";
 import { dungPopup, escVan, escVanKho } from "./popup-noi-dung";
 import { str, num, oneOf, rec, arr, strs } from "./types/parse";
+import { esc, anhCommonsNho } from "./util/html";
 
 /**
  * Dải cảnh báo khi toạ độ chưa được xác minh ở mức "cao".
@@ -143,6 +144,9 @@ export interface OverlayItem {
     nhom: string;
     ghi_chu: string;
     do_tin_cay: string;
+    /** Bản quét của chính tấm này. Rỗng = tấm chưa có ảnh dùng được. */
+    anh: string;
+    anh_nguon: string;
   }>;
 }
 
@@ -232,6 +236,8 @@ export function parseOverlayItem(raw: unknown): OverlayItem {
         nhom: str(g.nhom),
         ghi_chu: str(g.ghi_chu),
         do_tin_cay: str(g.do_tin_cay),
+        anh: str(g.anh),
+        anh_nguon: str(g.anh_nguon),
       };
     }),
   };
@@ -513,6 +519,24 @@ const KY_HIEU_NHOM: Record<string, string> = {
   "trung-quoc": "📜",
 };
 
+/**
+ * Bản quét của một tấm, hiện ngay dưới dòng liệt kê nó.
+ *
+ * VÌ SAO Ở ĐÂY chứ không cấp điểm: tư liệu chủ quyền vốn chỉ đọc được ở Thư
+ * viện → 🗺️ Bản đồ cổ, tức người xem bản đồ không bao giờ thấy mặt giấy. Đặt
+ * ảnh cạnh đúng dòng «năm — tên tấm» thì câu khẳng định và bằng chứng của nó
+ * nằm kề nhau, đúng nguyên tắc đặt chữ kề hình của docs/research/trinh-bay-de-nho.md.
+ *
+ * `loading="lazy"` là bắt buộc: khối này nằm trong <details> đóng sẵn, không
+ * lười thì mỗi popup kéo về vài MB ảnh người xem chưa hề mở ra.
+ * `referrerpolicy="no-referrer"` theo đúng lối `pu-anh` của popup-noi-dung.ts.
+ */
+const anhTam = (g: OverlayItem["ban_do_ghi"][number]): string =>
+  g.anh
+    ? `<img class="pu-ds-anh" src="${esc(anhCommonsNho(g.anh, 960))}" alt="${escVan(g.ten_ban_do)}" loading="lazy" referrerpolicy="no-referrer"/>` +
+      (g.anh_nguon ? `<span class="pu-ds-phu">${escVan(g.anh_nguon)}</span>` : "")
+    : "";
+
 const banDoCoPopup = (p: OverlayItem, nguonLop: string): string => {
   const o = p;
   const dong = (g: OverlayItem["ban_do_ghi"][number]): string =>
@@ -524,7 +548,7 @@ const banDoCoPopup = (p: OverlayItem, nguonLop: string): string => {
       // Cùng bốn slug với `do_tin_cay_toa_do` (đo: cao 27 · trung 4 · thap 3),
       // nên cùng đi qua bảng tra chứ không in slug ra màn hình.
       g.do_tin_cay !== "cao" ? ` ⚠️ Khớp vị trí độ tin cậy ${escVan(mucTinCay(g.do_tin_cay))}` : ""
-    }</span></li>`;
+    }</span>${anhTam(g)}</li>`;
   return dungPopup({
     ten: o.ten,
     meta: ["Bản đồ cổ", o.nam_hien_thi],

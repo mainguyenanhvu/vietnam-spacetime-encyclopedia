@@ -16,7 +16,7 @@
 //   .lib-doc     — khung đọc MỘT tác phẩm, phóng to được, có bộ tuỳ chỉnh
 //   .lib-cong-cu — tra cứu niên hiệu (không phải tác phẩm, không sắp xếp)
 
-import { esc } from "./util/html";
+import { esc, anhCommonsNho } from "./util/html";
 import { escVan } from "./popup-noi-dung";
 import { fetchJson } from "./util/fetch";
 import { str, num, strs, oneOf, rec, arr, itemsOf } from "./types/parse";
@@ -969,7 +969,7 @@ function mucTuBanDo(b: BanDoCo): Muc {
       ${b.y_nghia_chu_quyen ? `<p class="lib-loi-binh"><b>Ý nghĩa chủ quyền:</b> ${escVan(b.y_nghia_chu_quyen)}</p>` : ""}
       ${
         b.anh
-          ? `<img class="lib-ban-do-anh" loading="lazy" alt="${esc(b.ten)}" src="${esc(b.anh)}" />
+          ? `<img class="lib-ban-do-anh" loading="lazy" alt="${esc(b.ten)}" src="${esc(anhCommonsNho(b.anh, 960))}" />
              <p class="lib-phu">${esc(b.anh_giay_phep ?? "")}${b.anh_nguon ? ` · ${esc(b.anh_nguon)}` : ""}</p>`
           : `<p class="lib-phu">Chưa có bản scan dùng được.${b.anh_ghi_chu ? ` ${esc(b.anh_ghi_chu)}` : ""}</p>`
       }
