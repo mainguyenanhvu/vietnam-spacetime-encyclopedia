@@ -14,9 +14,13 @@ Chủ dự án gửi hai nguồn để học: `soiqualang/vietnam_map_history` v
 
 | Chỉ số | Giá trị | Đo bằng |
 |---|---|---|
-| Bản đồ cổ **có ảnh quét** | **5 → 9 / 19 tấm** | `validate_media.mjs` |
+| Bản đồ cổ trong kho | **19 → 22 tấm** (+3 tấm MỚI, lần đầu kể từ khi lớp này mở) | `validate_media.mjs` |
+| Bản đồ cổ **có ảnh quét** | **5 → 12** | `validate_media.mjs` |
+| Điểm neo «tên xưa ↔ tên nay» | **34 → 39** | lớp phủ sinh ra |
 | Địa điểm trên bản đồ **hiện được bản quét** | **0 → 10** | đếm `ban_do_ghi[].anh` trong lớp phủ sinh ra |
-| Tấm bản đồ ghi tên **Quần đảo Hoàng Sa** có ảnh | **7** | popup thật trên Chrome |
+| Tấm bản đồ ghi tên **Quần đảo Hoàng Sa** có ảnh | **9 / 14** (trải 1613 → 1838) | đọc thẳng nguồn lớp phủ trên Chrome |
+| Cổng chủ quyền | **13/13 thời kỳ**, kể cả khi bật 35 lớp phủ | `verify_chu_quyen.mjs` |
+| Trích văn tịch nguyên văn | **332 khớp · 0 lệch · 2 không tải được** | `verify_trich_van_tich.mjs` |
 | Host ảnh được phép | **1 → 2** (thêm `gallica.bnf.fr`) | CSP `index.html` + cổng |
 | Nguồn ngoài đã thẩm định và ghi sổ | **22** | `docs/references/links-nguoi-dung.md` |
 | Cổng dữ liệu | **14/14 xanh** | `npm run validate` |
@@ -30,6 +34,17 @@ Chủ dự án gửi hai nguồn để học: `soiqualang/vietnam_map_history` v
 1. **Ảnh bản đồ cổ hiện ngay trên bản đồ** (`d8c5662`) — trước đây tư liệu chủ quyền chỉ đọc được ở Thư viện, người xem bản đồ không bao giờ thấy mặt giấy. Kèm hai lỗi tự bắt được: ảnh gốc 10100×6906 (vá bằng bản thu nhỏ 960px, 5 ảnh = 1,76 MB) và ảnh tràn khung do grid `max-content`.
 2. **Chế độ «Đối chiếu với»** (`f9cab82`) — vẽ ranh giới một thời kỳ khác đè lên thời kỳ đang xem, nét đứt. Trả lời bằng hình câu «tỉnh cũ của tôi giờ nằm đâu». Học mô hình Layer Stack của maparchive nhưng làm bằng dữ liệu sẵn có, không thêm phụ thuộc.
 3. **Mở khoá BnF Gallica** (`bd52ea8`) — nút thắt thật của 12 tấm còn lại là **CSP**, không phải giấy phép. Thêm một host, kèm cổng ép chuỗi ghi công BnF; thử ngược 3 lỗi cố tình, cổng bắt đủ 3/3.
+
+**Ba tấm bản đồ MỚI, tìm bằng cách quét SRU kho bản đồ BnF** — đều đã mở ảnh ra đọc từng chữ trước khi soạn mục:
+1. **Hải đồ Pháp 1737 «Banc du Pracel»** (`GE C-11224`) — trên giấy: «TONQUIN ROYAUME» · «ROY.me DE COCHINCHINE» · «GOLFE DE COCHINCHINE» · «ISLE D'HAINAN» vẽ riêng · «Banc du Pracel» là dải chấm lớn ngoài khơi bờ Cochinchine, tách hẳn khỏi Hải Nam.
+2. **Hải đồ nhà nước Pháp 1799 của Phó Đô đốc Rosily** (`GE SH 18 PF 182 P 11/1`) — xuất bản bởi Dépôt des cartes et plans de la Marine theo lệnh Bộ trưởng. Đọc được «PARACELS» chạy dọc chuỗi đảo · «l'Amphitrite» · «Lincoln» · «Maccleesfied»; bờ đối diện ghi «QUANG…», «Cham-Collao» (Cù Lao Chàm).
+3. **大清萬年一統天下全圖 — bản đồ chính thức nhà Thanh 1818** (`GE C-5353`) — «安南國» ghi như MỘT NƯỚC RIÊNG kèm đoạn chú về ba đường triều cống; quanh đó 占城 · 真臘 · 順化巷 · 清華; ngoài khơi 外羅山 (Cù Lao Ré – Lý Sơn) · 玳瑁洲 · 崑崙嶼; Hải Nam nằm trong khối màu tỉnh (瓊州 · 崖州 · 黎母山). ⚠️ Mục **không** khẳng định «không vẽ Hoàng Sa» vì mới mở 9/21 view.
+
+**Hai nghi vấn được gắn cờ, KHÔNG tự sửa, KHÔNG xoá**: «Đại Nam toàn đồ» đời Thiệu Trị ngờ trùng với «Đại Nam nhất thống toàn đồ» đã có · con số 1904 của «Hoàng triều trực tỉnh địa dư toàn đồ» cần nguồn chỉ đích danh **lần in**, không chỉ cái tên.
+
+**Hai cổng nặng chạy tay**: `verify:chuquyen` ✅ 13/13 thời kỳ, phép V4 bật 35 lớp phủ (70 lớp nằm trên nhãn) vẫn vẽ được nhãn chủ quyền · `verify_trich_van_tich` ✅ 332 khớp nguyên văn, 0 lệch, 2 không tải được (công cụ tự gắn cờ, không coi là đã kiểm).
+
+**Hai kho ĐÓNG với công cụ**: Library of Congress trả **403** mọi lượt, Harvard-Yenching trả **429** mọi lượt — ghi là «không mở được», KHÔNG kết luận kho rỗng.
 
 **Hai chỗ vênh niên đại được nêu ra chứ không lặng lẽ chọn** (bất biến #4):
 - **Blaeu**: BnF giữ ba bản khắc đề 1635 · 1638 · 1640, **không bản nào 1645** như nguồn Việt chép; Willem Blaeu mất 1638. Giữ nguyên `nam` = 1645, ghi rõ ảnh là lần in 1638.
