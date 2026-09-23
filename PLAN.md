@@ -223,12 +223,14 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 - [ ] **Chế độ trẻ em: phần KHUNG xong, phần CHỮ chưa.** 🔄 **Thu hẹp 2026-08-24** — mảng «không ai chỉ đường» đã đóng bằng `src/huong-dan.ts` (cầm tay chỉ việc 10 bước + sổ tay 17 nhiệm vụ, xem `RELEASE.md`). Phần CÒN LẠI vẫn nguyên và vẫn là việc **nội dung**, không phải CSS: giảm mật độ chữ trong hồ sơ tỉnh, minh hoạ thay khối chữ dài, ngôn ngữ đơn giản hơn cho `mo_ta`. **L**
   ✅ **Mảng NGÔN NGỮ đã đóng 2026-08-25** bằng `src/tu-kho-tre-em.ts` — 187 cụm từ khó, chú giải bấm-ra-xem, phủ 16 sink (popup lớp phủ + hồ sơ tỉnh + Nam tiến). Xem `RELEASE.md`. **CÒN LẠI hai mảng, đều KHÔNG phải chữ**: giảm mật độ chữ trong hồ sơ tỉnh (chia nhỏ, gập bớt) và minh hoạ thay khối chữ dài.
   ⚠️ **Đừng nới ba luật chọn từ** ghi ở đầu `tu-kho-tre-em.ts`. Lượt soát đầu tiên đã bắt ba lỗi tên riêng bị chú giải như từ chung («Nguyễn Thế Kỷ», «châu Nam Bố Chính», «Vân Nam tiến đánh») — thêm từ mới thì phải chạy lại phép soát khớp giả trên dữ liệu thật, không đoán.
-- [ ] **Audit tương phản phần còn lại.** Mới đo topbar và nút. Chưa đo: 11 panel nổi, badge, popup MapLibre, khung quiz/olympia ở chế độ trẻ em. **M**
+- [x] ~~**Audit tương phản phần còn lại.**~~ **XONG 2026-09-23** — cổng `npm run verify:tuongphan` đo mọi chữ đang hiện ở 14 trạng thái × 3 chế độ; ~100 nhóm trượt → 0. Xem `RELEASE.md`. **Còn hở**: chữ SVG (sa đồ), tương phản hình khối 1.4.11, hover/focus — cổng không đo ba thứ này.
 - [x] ~~**4 mã hex chưa lên token.**~~ **XONG 2026-08-11** (commit `99e4fac`) — 4 token mới trong `theme.css` (`--truyen-au-lac-nen`, `--story-retry-chu`, `--qg-badge-khac-nen`, `--nhan-huyen-su`), style.css hết hex giá trị.
 - [x] ~~**`body.kid-mode` chồng lấn `data-che-do`.**~~ **QUYẾT 2026-08-11: GIỮ CẢ HAI.** Chúng KHÔNG cùng nghĩa: `data-che-do` là chế độ toàn cục người dùng chọn; `body.kid-mode` là trạng thái CỤC BỘ khi panel truyện đang mở (story.ts bật lúc mở, tắt lúc đóng — kể cả người lớn mở truyện vẫn được khung truyện thiếu nhi). Hợp nhất sẽ làm mất ca "người lớn đọc truyện cho con". Đừng mở lại trừ khi đổi UX truyện.
 - [ ] Icon riêng cho mỗi lớp phủ thay chấm tròn `circle`. 6 icon đã đặc tả ở `docs/image-generation-spec.xml` (I01–I06). **M** — ⚠️ phạm vi thu hẹp từ 2026-08-04: ở chế độ 3D icon phẳng đã được thay bằng mô hình khối, việc này giờ chỉ còn cho chế độ 2D.
 - [x] ~~Thanh trượt dòng thời gian, cụm control MapLibre, đầu bảng lớp còn dáng mặc định.~~ Xong 2026-08-04 — xem khối "ĐẠI TU HÌNH THỨC" cuối `style.css`.
-- [ ] **Chế độ tối** — hệ token sẵn sàng. **Yêu cầu ĐÃ CÓ** (chỉ thị «làm hết» 2026-08-11) nhưng cố ý chưa ship trong phiên đó: mọi chế độ của dự án đều đã qua audit tương phản đo thật từng cặp màu, một palette tối chưa đo mà ship là phá kỷ luật đó. Việc gồm: bảng token tối + đổi nút chuyển thành chu kỳ 3 chế độ + đo tương phản như hai chế độ kia. **M**
+- [x] ~~**Chế độ tối**~~ **XONG 2026-09-23** — chế độ «ban đêm», xoay vòng 3 chế độ, 0 trượt / 42 trạng thái. Bản đồ CỐ Ý giữ nền giấy (lý do ở đầu khối `[data-che-do="toi"]` trong theme.css). Việc nối tiếp nếu muốn: tối hoá bản đồ nền — phải chỉnh lại màu mọi lớp dữ liệu + nhãn chủ quyền, qua `verify:chuquyen`. **L**
+  *Ghi chú gốc 2026-08-11, giữ để hiểu vì sao hoãn:* **Yêu cầu ĐÃ CÓ** (chỉ thị «làm hết» 2026-08-11) nhưng cố ý chưa ship trong phiên đó: mọi chế độ của dự án đều đã qua audit tương phản đo thật từng cặp màu, một palette tối chưa đo mà ship là phá kỷ luật đó. Việc gồm: bảng token tối + đổi nút chuyển thành chu kỳ 3 chế độ + đo tương phản như hai chế độ kia. **M**
+- [ ] Ô chọn «Đối chiếu với» (`#lc-period` kế bên) còn là `<select>` gốc trình duyệt, bị ép hẹp, chưa tạo kiểu — ở CẢ ba chế độ, thấy trên ảnh chụp 2026-09-23. **S**
 
 ### Không đụng vào khi redesign
 `panels.ts` (sổ đăng ký 11 panel, học từ bug rò WebGL thật) · cơ chế `--topbar-h` đồng bộ động (`main.ts:210-218`) · ràng buộc chủ quyền trong style bản đồ (nền không nhãn, glyph tự host) · ARIA combobox của `search.ts`.
@@ -782,7 +784,11 @@ npm run build            # tsc + vite build
 node scripts/audit_sovereignty.mjs   # chủ quyền mức DỮ LIỆU — CI chạy riêng, bắt buộc
 npm run verify:chuquyen  # chủ quyền mức HIỂN THỊ, 13 thời kỳ (cần Chrome) — CI chặn
 npm run smoke            # 10 kịch bản qua CDP (cần Chrome) — CI chặn
+npm run verify:tuongphan # WCAG 1.4.3, mọi chữ đang hiện, 14 trạng thái × 3 chế độ (cần Chrome, ~15 phút)
+                         # TP_CHI=<tên trạng thái> đo một phần · TP_ANH=<thư mục> chụp ảnh từng trạng thái
 ```
+
+⚠️ Đừng chạy `verify:tuongphan` song song với `smoke`: tranh CPU làm S7 hỏng giả.
 
 **Một build xanh KHÔNG chứng minh bản đồ đúng.** Đụng bản đồ hay ranh giới thì phải **mở trình duyệt, nhìn bằng mắt, xác nhận Hoàng Sa + Trường Sa còn hiện**. Đụng cảnh 3D thì render, xem console sạch và khung hình không tụt trên laptop tầm trung.
 

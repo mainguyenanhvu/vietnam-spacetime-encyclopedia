@@ -69,6 +69,7 @@ Both are generated: `node scripts/build_catalog.mjs && node scripts/build_entrie
 | Map / boundary rendering | Open the map at that period and **visually confirm Hoàng Sa + Trường Sa are present**. A passing build proves nothing here. |
 | 3D scene | Render it; check the console is clean and it does not tank frame rate on a mid laptop. |
 | Any build | `npm run build` — this runs `tsc`, so a type error fails the build. |
+| CSS colour / theme token | `npm run verify:tuongphan` (all three modes), then look at its screenshots (`TP_ANH=<dir>`) — the gate reads text only, not icons or SVG. |
 
 Per the global rule: a green `tsc` is not evidence the map is correct. Look at it.
 

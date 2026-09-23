@@ -8,6 +8,40 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-09-23 — Chế độ ban đêm + cổng đo tương phản toàn trang
+
+Mục treo từ 2026-08-11 («chế độ tối — yêu cầu ĐÃ CÓ nhưng cố ý chưa ship vì chưa đo được»). Nút thắt thật là **không có cách đo lại cả trang** mỗi lần đổi token, nên làm cổng đo trước, bảng màu sau.
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Chế độ xem | **2 → 3** (người lớn · trẻ em · **ban đêm**), nút xoay vòng; chưa chọn lần nào thì theo `prefers-color-scheme` của máy | `src/chedo.ts` |
+| Trạng thái giao diện được đo | **14 / chế độ × 3 chế độ = 42** (mặc định, hồ sơ tỉnh, 10 panel, sa đồ chi tiết, popup lớp phủ) | `npm run verify:tuongphan` |
+| Nhóm chữ trượt WCAG 1.4.3 ở **hai chế độ CŨ** | **~100 → 0** (lượt đầu: 72 nhóm người lớn trên 8 trạng thái; mở rộng lên 14 trạng thái lộ thêm 30) | như trên |
+| Nhóm chữ trượt ở chế độ ban đêm | **0 / 42 trạng thái** | như trên |
+| Chủ quyền | **13/13 thời kỳ**, V4 bật 35 lớp phủ vẫn vẽ nhãn | `verify:chuquyen` |
+| Smoke | **9 đạt · 0 hỏng** (chạy riêng; chạy song song với cổng tương phản thì S7 hỏng vì tranh CPU — đúng loại phi tất định PLAN đã ghi) | `npm run smoke` |
+| Cổng dữ liệu · build | **14/14** · `tsc` exit 0 · `vite` xanh | `validate` · `build` |
+
+**Lỗi tương phản CÓ SẴN mà cổng bắt được — đều là số đo, không phải cảm nhận:**
+- Topbar lúc mở **truyện thiếu nhi**: chữ vàng trên gradient vàng **1,49:1** — gần như vô hình. Gốc: `body.kid-mode #topbar` đi từ `--nhan-sang`.
+- Nút topbar người lớn **4,18:1**: số 4,74 ghi trong theme.css là đo trên nền đỏ TRẦN, chưa tính lớp phủ `--nen-mat-mo` (làm SÁNG nền). Nay làm TỐI: 5,50.
+- **Vàng thếp `--nhan` #b3791f trượt cả hai chiều**: làm chữ 3,52–3,64, làm nền dưới chữ sáng 3,64 (tab quốc gia, nút sa đồ, Nam tiến, chip thời kỳ). Hạ về **#94620f** — tông vàng gần nhất đạt cả hai (4,70–5,14).
+- **Ghi chú pháp lý cương vực** `#lc-ghi-chu` **3,12:1** — thứ cuối cùng được phép khó đọc. Nay `--luu-chu` 6,00.
+- Chữ xám `--chu-nhat` trên popup trắng **3,99** (nguồn, tên tỉnh, chú thích ảnh) → #766a61, 5,24.
+- Chế độ trẻ em: tên lớp + badge lớp màu cam `--brand` **3,55 / 3,06** → token mới `--brand-chu`; dải màu `--the-*` với chữ trắng thường tới **2,94** → hạ một bậc cả sáu sắc.
+- Số đếm sa đồ mang màu `.muted` trên dải màu đặc: **1,11–1,70**. Thanh điểm Olympia: **1,44–1,93**.
+
+**Ba token mới, vì ban đêm phá vỡ các giả định ngầm của hai chế độ sáng:**
+- `--chu-tren-dac` — chữ trên nền màu đặc. 16 chỗ từng viết `color: var(--mat)`, tức «chữ màu mặt giấy», chỉ đúng khi mặt giấy sáng.
+- `--brand-chu` — màu thương hiệu khi làm CHỮ. 12 chỗ.
+- `--tieu-de-tren-nghich` — tên sản phẩm trên topbar (topbar tối ở cả ba chế độ).
+
+**Quyết định: ban đêm GIỮ bản đồ nền giấy.** Mọi lớp dữ liệu và nhãn Hoàng Sa/Trường Sa (chữ đỏ, quầng trắng) được chỉnh màu cho nền sáng (`main.ts`, `MAU_NEN_DAT`). Tối hoá bản đồ là đụng bề mặt pháp lý — việc riêng, phải qua `verify:chuquyen` và mắt người. Đã nhìn ảnh chụp: nhãn chủ quyền hiện rõ ở ban đêm.
+
+**Cổng này KHÔNG đo:** chữ trong SVG (sa đồ vẽ bằng SVG, nhãn trên bản đồ canvas), tương phản hình khối 1.4.11 (icon nút thu phóng ban đêm bị chìm — bắt bằng MẮT qua ảnh chụp `TP_ANH=<thư mục>`, không phải bằng cổng), trạng thái hover/focus, chữ trên nền ảnh (đếm riêng, hiện 0).
+
+---
+
 ## 2026-09-19 — Học hai nguồn ngoài, mở khoá lớp bản đồ cổ, và một chế độ đối chiếu thời kỳ
 
 Chủ dự án gửi hai nguồn để học: `soiqualang/vietnam_map_history` và `maparchive.vn`.
