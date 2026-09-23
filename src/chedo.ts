@@ -1,6 +1,11 @@
-﻿// Chế độ xem: «người lớn» (sang trọng, tối giản) và «trẻ em» (vui nhộn, nhiều
-// màu). Toàn bộ khác biệt nằm ở biến CSS trong theme.css — module này chỉ đặt
-// thuộc tính `data-che-do` trên <html> và ghi nhớ lựa chọn.
+﻿// Chế độ xem: «người lớn» (sang trọng, tối giản), «trẻ em» (vui nhộn, nhiều
+// màu) và «ban đêm» (người lớn trên nền tối). Toàn bộ khác biệt nằm ở biến CSS
+// trong theme.css — module này chỉ đặt thuộc tính `data-che-do` trên <html> và
+// ghi nhớ lựa chọn.
+//
+// «Ban đêm» là chế độ NGƯỜI LỚN về lời văn: mọi chỗ đổi câu chữ theo chế độ
+// hỏi `laTreEm()`, không so bằng "nguoi-lon" — so bằng "nguoi-lon" là ban đêm
+// rơi nhầm sang lời văn trẻ em.
 //
 // Phải chạy TRƯỚC khi vẽ khung hình đầu tiên, nếu không trang sẽ nháy sang chế
 // độ mặc định rồi mới đổi.
@@ -14,14 +19,22 @@ const KHOA = "bkvn.che-do";
  */
 export const SU_KIEN_DOI_CHE_DO = "bkvn:doi-che-do";
 
-export type CheDo = "nguoi-lon" | "tre-em";
+export type CheDo = "nguoi-lon" | "tre-em" | "toi";
 
-const HOP_LE: readonly CheDo[] = ["nguoi-lon", "tre-em"] as const;
+/** Thứ tự cũng là thứ tự nút xoay vòng. */
+const HOP_LE: readonly CheDo[] = ["nguoi-lon", "tre-em", "toi"] as const;
+
+const TEN: Record<CheDo, string> = {
+  "nguoi-lon": "người lớn",
+  "tre-em": "trẻ em",
+  toi: "ban đêm",
+};
 
 /** Màu thanh trình duyệt trên di động — phải khớp topbar của từng chế độ. */
 const MAU_THANH: Record<CheDo, string> = {
   "nguoi-lon": "#b02020", // khớp điểm đầu của --mat-nghich
   "tre-em": "#ea580c",
+  toi: "#3d0e0e", // khớp điểm cuối của --mat-nghich chế độ tối
 };
 
 function doc(): CheDo {
@@ -30,6 +43,13 @@ function doc(): CheDo {
     if (v && (HOP_LE as readonly string[]).includes(v)) return v as CheDo;
   } catch {
     // localStorage bị chặn (chế độ riêng tư, cookie bị khoá) — dùng mặc định.
+  }
+  // Chưa chọn bao giờ thì theo hệ điều hành. Chỉ đọc MỘT lần lúc chưa có lựa
+  // chọn: người đã bấm nút thì lựa chọn của họ thắng cài đặt máy.
+  try {
+    if (matchMedia("(prefers-color-scheme: dark)").matches) return "toi";
+  } catch {
+    // Trình duyệt cổ không có matchMedia — bỏ qua.
   }
   return "nguoi-lon";
 }
@@ -81,6 +101,15 @@ export function cheDoHienTai(): CheDo {
   return doc();
 }
 
+/** Lời văn trẻ em hay người lớn. Ban đêm đọc lời văn người lớn. */
+export function laTreEm(che: CheDo = doc()): boolean {
+  return che === "tre-em";
+}
+
+function keTiep(che: CheDo): CheDo {
+  return HOP_LE[(HOP_LE.indexOf(che) + 1) % HOP_LE.length];
+}
+
 /** Dựng nút chuyển chế độ, chèn vào ĐẦU #topbar-nav. */
 export function initCheDo(): void {
   if (document.getElementById("che-do-btn")) return; // chống khởi tạo 2 lần
@@ -97,15 +126,14 @@ export function initCheDo(): void {
 
   const capNhatNhan = (): void => {
     const che = doc();
-    const sang: CheDo = che === "tre-em" ? "nguoi-lon" : "tre-em";
-    const tenSang = sang === "tre-em" ? "trẻ em" : "người lớn";
-    btn.title = `Đang ở chế độ ${che === "tre-em" ? "trẻ em" : "người lớn"} — bấm để chuyển sang chế độ ${tenSang}`;
+    // Không dùng aria-pressed: nút ba trạng thái không phải nút bật/tắt, đọc
+    // «đã nhấn» ở chế độ ban đêm là nói sai. Nhãn đã nêu đủ trạng thái.
+    btn.title = `Đang ở chế độ ${TEN[che]} — bấm để chuyển sang chế độ ${TEN[keTiep(che)]}`;
     btn.setAttribute("aria-label", btn.title);
-    btn.setAttribute("aria-pressed", String(che === "tre-em"));
   };
 
   btn.addEventListener("click", () => {
-    const moi: CheDo = doc() === "tre-em" ? "nguoi-lon" : "tre-em";
+    const moi = keTiep(doc());
     ghi(moi);
     ap(moi, true);
     capNhatNhan();

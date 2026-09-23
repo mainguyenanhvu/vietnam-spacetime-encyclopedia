@@ -261,7 +261,7 @@ export function initSearch(
       map,
       [item.lon, item.lat],
       `<strong>${esc(item.overlayIcon)} ${escVan(item.ten)}</strong><br/>` +
-        `<span style="font-size:0.82em;color:#57534e">${escVan(item.diaDiem)}</span>`,
+        `<span style="font-size:0.82em;color:var(--chu-mem)">${escVan(item.diaDiem)}</span>`,
       { maxWidth: "280px" },
     );
   }

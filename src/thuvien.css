@@ -101,6 +101,15 @@
   --lib-badge-nen: var(--brand-dam);
 }
 
+/* Ban đêm: viền phải SÁNG hơn nền mới thấy — #8a8378 là giá trị đã đo cho
+   chế độ đọc tối của chính thư viện (4,63:1). Nền tab chọn và badge đi theo
+   điểm nhấn sáng, chữ trên đó là --chu-tren-dac. */
+:root[data-che-do="toi"] {
+  --lib-vien: #8a8378;
+  --lib-tab-chon-nen: var(--brand);
+  --lib-badge-nen: var(--nhan);
+}
+
 /* ── Kích cỡ cửa sổ ──────────────────────────────────────────────────────
    Bộ chọn thuộc tính thắng rule gốc `#library-panel { width: min(520px,94vw) }`
    ở style.css mà không phải sửa rule đó.
@@ -187,14 +196,13 @@
 .lib-tab-chon {
   background: var(--lib-tab-chon-nen);
   border-color: var(--lib-tab-chon-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   font-weight: var(--dam-manh);
 }
 
 .lib-tab-so {
   font-size: var(--co-2xs);
   font-variant-numeric: tabular-nums;
-  opacity: 0.85;
 }
 
 .lib-chu-de-mo-ta {
@@ -264,7 +272,7 @@
   padding: 0 0.4rem;
   border-radius: var(--bo-vua);
   background: var(--lib-badge-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   font-size: var(--co-2xs);
   font-weight: var(--dam-manh);
 }
@@ -308,7 +316,7 @@
 .lib-tp-tinh:hover {
   background: var(--lib-tab-chon-nen);
   border-color: var(--lib-tab-chon-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 
 /* ═══ Khung đọc ═══════════════════════════════════════════════════════════ */
@@ -368,7 +376,7 @@
 .lib-tc-chon {
   background: var(--lib-tab-chon-nen);
   border-color: var(--lib-tab-chon-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   font-weight: var(--dam-manh);
 }
 
@@ -477,7 +485,7 @@
 
 .lib-giai-nghia dt {
   font-weight: 700;
-  color: var(--brand);
+  color: var(--brand-chu);
 }
 
 .lib-giai-nghia dd {
@@ -739,7 +747,7 @@
   line-height: 1.62;
 }
 .lib-y-nghia > b {
-  color: var(--brand);
+  color: var(--brand-chu);
   font-weight: var(--dam-manh);
 }
 

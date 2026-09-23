@@ -59,7 +59,8 @@
 :root[data-che-do="tre-em"] {
   --sd-ta-chu: var(--sd-ta-chu-ngoai-xam);
 }
-:root[data-che-do="nguoi-lon"] .sd-detail[data-xung-dot="noi-chien"] {
+:root[data-che-do="nguoi-lon"] .sd-detail[data-xung-dot="noi-chien"],
+:root[data-che-do="toi"] .sd-detail[data-xung-dot="noi-chien"] {
   --sd-ta-chu: var(--sd-ta-chu-noi-chien);
 }
 
@@ -89,7 +90,7 @@
 }
 .sd-era-chip.active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 .sd-era-group {
   margin-bottom: 1.1rem;
@@ -111,10 +112,12 @@
 .sd-era-heading.the-4 { background: var(--the-4); }
 .sd-era-heading.the-5 { background: var(--the-5); }
 .sd-era-heading.the-6 { background: var(--the-6); }
-.sd-era-count {
+/* Hai lớp class để thắng `.muted` (cùng độ đặc hiệu, nạp sau) — trước đây
+   số đếm mang màu xám của .muted trên dải màu đặc: 1,11–1,70:1. Bỏ opacity
+   vì dải --the-* chỉ vừa đủ ngưỡng với chữ đục. */
+.sd-era-heading .sd-era-count {
   font-weight: 400;
   color: inherit;
-  opacity: 0.85;
 }
 .sd-card-list {
   list-style: none;
@@ -384,7 +387,7 @@
 .sd-step-dot.sd-step-done {
   background: var(--nhan);
   border-color: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 .sd-step-dot.sd-step-current {
   border-color: var(--nhan);
@@ -445,7 +448,7 @@
 .sd-nav {
   border: 1px solid var(--nhan);
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   border-radius: var(--bo-nho);
   padding: 0.3rem 0.7rem;
   cursor: pointer;
@@ -990,7 +993,7 @@
 .sd-step-moc.sd-step-done .sd-step-so {
   background: var(--nhan);
   border-color: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 .sd-step-moc.sd-step-current .sd-step-so {
   border-color: var(--nhan);
@@ -1003,6 +1006,13 @@
 .sd-step-moc.sd-step-current {
   background: var(--nhan-mo);
   border-radius: var(--bo-nho);
+}
+/* Nền --nhan-mo sáng ở CẢ ba chế độ, nên chữ trên đó phải tối ở cả ba —
+   cùng cặp với chip đang chọn trên topbar. --chu-mem chỉ 4,28:1 ở đây, và
+   ban đêm --chu (ngà) thành 1,17:1. */
+.sd-step-moc.sd-step-current .sd-moc-thoi,
+.sd-step-moc.sd-step-current .sd-moc-dia {
+  color: var(--brand-sau);
 }
 .sd-moc-thoi,
 .sd-moc-dia {

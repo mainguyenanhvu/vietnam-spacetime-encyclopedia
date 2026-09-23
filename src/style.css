@@ -63,13 +63,14 @@
   font-size: var(--co-lg);
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: var(--mat);
+  color: var(--tieu-de-tren-nghich);
 }
 
 #topbar .subtitle {
   font-weight: 400;
   font-size: var(--co-sm);
-  opacity: 0.88;
+  /* Không hạ opacity: 0.88 kéo 4,74:1 xuống 3,97:1 (người lớn) và 4,35:1
+     (trẻ em). Thứ bậc với tên sản phẩm đã có nhờ cỡ, độ đậm và màu. */
   color: var(--chu-tren-nghich);
 }
 
@@ -444,8 +445,12 @@
   cursor: pointer;
 }
 
+/* Khung truyện thiếu nhi đổi topbar sang dải đậm. Bản cũ đi từ --nhan-sang
+   (vàng sáng) nên chữ vàng nhạt trên đó chỉ 1,49:1 — gần như vô hình
+   (verify_tuong_phan 2026-09-23). Dải này: người lớn 8,27:1 trở lên, trẻ em
+   (chữ trắng) 5,18:1 trở lên. */
 body.kid-mode #topbar {
-  background: linear-gradient(90deg, var(--nhan-sang), var(--brand));
+  background: linear-gradient(90deg, var(--brand-sau), var(--brand-dam));
 }
 
 .story-line {
@@ -570,7 +575,7 @@ body.kid-mode #topbar {
      #b45309 (đã dùng sẵn trong bảng màu ở nơi khác) để đạt 4.84:1.
      Giá trị đã lên token: #b45309 → var(--nhan), #fffbeb → var(--mat). */
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   border-radius: var(--bo-vua);
   padding: 0 0.4rem;
   font-size: var(--co-xs);
@@ -621,9 +626,12 @@ body.kid-mode #topbar {
   cursor: pointer;
 }
 
+.ol-scorebar .muted {
+  color: inherit; /* .muted xám trên dải màu đặc: 1,44–1,93:1 */
+}
 .ol-scorebar {
   background: var(--brand-dam);
-  color: var(--mat-3);
+  color: var(--chu-tren-dac);
   border-radius: var(--bo-nho);
   padding: 0.35rem 0.6rem;
   font-size: var(--co-md);
@@ -830,7 +838,7 @@ body.kid-mode #topbar {
 .panel-actions button:hover,
 .panel-actions button.active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 
 .model3d-gallery {
@@ -854,7 +862,7 @@ body.kid-mode #topbar {
 .model3d-gallery button.active {
   background: var(--nhan);
   border-color: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 .model3d-stage {
   width: 100%;
@@ -863,6 +871,12 @@ body.kid-mode #topbar {
   background: radial-gradient(circle at 50% 35%, var(--mat-chim), var(--vien-ro));
   overflow: hidden;
   touch-action: none;
+}
+/* Chữ «Đang tải mô hình…» nằm trên gradient tới --vien-ro: --chu-mem chỉ
+   4,15:1 ở đầu tối của gradient. */
+.model3d-stage .muted,
+.journey-stage .muted {
+  color: var(--chu);
 }
 .model3d-stage canvas {
   display: block;
@@ -1051,7 +1065,7 @@ body.kid-mode #topbar {
 }
 .qg-tab.active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 .qg-note {
   font-size: var(--co-xs);
@@ -1131,7 +1145,7 @@ body.kid-mode #topbar {
   border: 1px solid var(--vien-ro);
 }
 .qg-badge-state { background: var(--dung-nen); color: var(--dung-chu); border-color: var(--dung-vien); }
-.qg-badge-khac { background: var(--qg-badge-khac-nen); color: var(--brand); border-color: var(--sai-vien); }
+.qg-badge-khac { background: var(--qg-badge-khac-nen); color: var(--brand-chu); border-color: var(--sai-vien); }
 .qg-draft { background: var(--mat-3); color: var(--luu-chu); border-color: var(--nhan-mo); }
 .qg-card-multi .qg-version { margin-top: 0.5rem; }
 .qg-version-by { font-size: var(--co-sm); font-weight: 600; margin: 0.2rem 0; color: var(--chu-mem); }
@@ -1178,7 +1192,7 @@ body.kid-mode #topbar {
 .tl-note { font-size: var(--co-xs); color: var(--luu-chu); background: var(--mat-3); border: 1px solid var(--nhan-mo); border-radius: var(--bo-nho); padding: 0.4rem 0.6rem; margin: 0 0 0.7rem; }
 .tl-filters { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.9rem; }
 .tl-filter { border: 1px solid var(--nhan); background: var(--mat-2); color: var(--nhan); border-radius: var(--bo-vien-tron); padding: 0.25rem 0.7rem; cursor: pointer; font-size: var(--co-sm); font-weight: 600; }
-.tl-filter.active { background: var(--nhan); color: var(--mat); }
+.tl-filter.active { background: var(--nhan); color: var(--chu-tren-dac); }
 .tl-list { list-style: none; margin: 0; padding: 0; border-left: 3px solid var(--nhan-mo); }
 .tl-item { position: relative; padding: 0 0 1rem 1.1rem; }
 .tl-item::before { content: ""; position: absolute; left: -0.5rem; top: 0.35rem; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--nhan); border: 2px solid var(--mat); }
@@ -1375,7 +1389,7 @@ body.kid-mode #topbar {
 #olympia-close:hover,
 #namtien-close:hover {
   background: var(--lop-brand-vua);
-  color: var(--brand);
+  color: var(--brand-chu);
   transform: rotate(90deg);
 }
 
@@ -1409,7 +1423,7 @@ body.kid-mode #topbar {
   margin-bottom: 0.5rem;
 }
 #layer-control strong {
-  color: var(--brand);
+  color: var(--brand-chu);
   font-size: var(--co-md);
   letter-spacing: 0.2px;
 }
@@ -1426,7 +1440,7 @@ body.kid-mode #topbar {
   gap: 0.4rem;
   padding: 0.4rem 0.15rem;
   font-weight: 600;
-  color: var(--brand);
+  color: var(--brand-chu);
   user-select: none;
 }
 #layer-control .lc-sec > summary::-webkit-details-marker {
@@ -1444,7 +1458,7 @@ body.kid-mode #topbar {
 #layer-control .lc-badge {
   margin-left: auto;
   background: var(--lop-brand-vua);
-  color: var(--brand);
+  color: var(--brand-chu);
   border-radius: var(--bo-vien-tron);
   padding: 0.05rem 0.5rem;
   font-size: var(--co-2xs);
@@ -1488,7 +1502,9 @@ body.kid-mode #topbar {
    thành callout: cùng lượng chữ nhưng mắt biết ngay đây là chú thích. */
 #layer-control .lc-note {
   font-size: var(--co-2xs);
-  color: var(--nhan);
+  /* --nhan chỉ 3,12:1 trên nền callout. Đây là ghi chú PHÁP LÝ về cương vực
+     — thứ cuối cùng được phép khó đọc. --luu-chu: 6,00:1. */
+  color: var(--luu-chu);
   line-height: 1.45;
   margin: 0.5rem 0 0.15rem;
   padding: 0.45rem 0.6rem;
@@ -1606,6 +1622,8 @@ input[type="range"] {
 
 /* Popup MapLibre — bo tròn, bóng mềm, mũi nhọn ăn theo nền */
 .maplibregl-popup-content {
+  /* CSS gốc của MapLibre tô #fff cứng — ban đêm thành chữ ngà trên nền trắng. */
+  background: var(--mat);
   border-radius: var(--bo-nho) !important;
   box-shadow: var(--bong-2) !important;
   padding: 0.7rem 0.85rem !important;
@@ -1631,7 +1649,7 @@ input[type="range"] {
 
 /* Panel Nam tiến — nhấn tiến trình bằng dải màu Bắc→Nam ở tiêu đề */
 #namtien-content h2 {
-  color: var(--brand);
+  color: var(--brand-chu);
 }
 .namtien-controls button {
   border-radius: var(--bo-vien-tron) !important;
@@ -1990,6 +2008,12 @@ input[type="range"] {
 .maplibregl-ctrl-group button:hover {
   background: var(--lop-brand-vua) !important;
 }
+/* Icon +/−/la bàn là SVG data-URI màu đen của MapLibre, không đọc var() được.
+   Ban đêm nền nhóm nút đã tối nên icon chìm hẳn — đảo sáng icon, giữ nguyên
+   sắc (hue-rotate bù lại phép đảo cho mũi kim la bàn đỏ). */
+:root[data-che-do="toi"] .maplibregl-ctrl-group .maplibregl-ctrl-icon {
+  filter: invert(1) hue-rotate(180deg);
+}
 .maplibregl-ctrl-scale {
   background: var(--mat-kinh) !important;
   border-color: var(--vien-ro) !important;
@@ -2084,7 +2108,7 @@ input[type="range"] {
 .hcm-nhom {
   margin: 1rem 0 0.4rem;
   font-size: var(--co-md);
-  color: var(--brand);
+  color: var(--brand-chu);
   border-bottom: 1px dashed var(--vien);
   padding-bottom: 0.25rem;
 }
@@ -2177,7 +2201,7 @@ input[type="range"] {
 }
 :root[data-che-do="tre-em"] .chip.chip-active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   border-color: var(--nhan);
 }
 
@@ -2261,7 +2285,7 @@ input[type="range"] {
   content: "?";
   font-size: 0.68em;
   font-weight: 700;
-  color: var(--brand);
+  color: var(--brand-chu);
   vertical-align: super;
   margin-left: 0.08em;
 }
@@ -2688,7 +2712,7 @@ input[type="range"] {
 }
 .pu-nho .pu-nho-nhan {
   font-weight: var(--dam-manh);
-  color: var(--brand);
+  color: var(--brand-chu);
 }
 /* Đáp án: đủ tương phản để đọc ngay khi vừa mở, vì đây là lúc người ta đối
    chiếu với thứ mình vừa nhớ ra. */

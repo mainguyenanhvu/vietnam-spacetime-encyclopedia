@@ -14,7 +14,8 @@
     "build:index": "node scripts/build_sado_index.mjs && node scripts/build_ban_do_co_overlay.mjs && node scripts/build_vung_don_vi_xua.mjs && node scripts/build_catalog.mjs && node scripts/build_entries_index.mjs",
     "validate": "node scripts/run_validators.mjs",
     "smoke": "node --experimental-websocket scripts/smoke.mjs",
-    "verify:chuquyen": "node --experimental-websocket scripts/verify_chu_quyen.mjs"
+    "verify:chuquyen": "node --experimental-websocket scripts/verify_chu_quyen.mjs",
+    "verify:tuongphan": "node --experimental-websocket scripts/verify_tuong_phan.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^4.7.1",

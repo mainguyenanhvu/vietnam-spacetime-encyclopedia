@@ -2,8 +2,15 @@
    HỆ THIẾT KẾ — hai chế độ xem
    ═══════════════════════════════════════════════════════════════════════
 
-   Chế độ đặt trên <html data-che-do="nguoi-lon" | "tre-em">, mặc định
-   "nguoi-lon". main.ts đọc localStorage rồi gán trước khi vẽ khung đầu tiên.
+   Chế độ đặt trên <html data-che-do="nguoi-lon" | "tre-em" | "toi">, mặc
+   định "nguoi-lon" (hoặc "toi" nếu hệ điều hành đang tối và người dùng chưa
+   chọn lần nào).
+
+   «toi» (ban đêm) KHÔNG có khối selector riêng cho mọi thứ: nó khớp `:root`
+   nên thừa hưởng toàn bộ chế độ người lớn, rồi chỉ đè màu. Các rule viết cho
+   `[data-che-do="tre-em"]` tự nhiên không áp. Ngoại lệ phải nhớ: rule nào viết
+   RIÊNG cho `[data-che-do="nguoi-lon"]` (không kèm `:root,`) thì phải thêm
+   `[data-che-do="toi"]` vào — hiện có một chỗ, ở sado.css. main.ts đọc localStorage rồi gán trước khi vẽ khung đầu tiên.
 
    Vì sao biến CSS chứ không phải hai file: 11 panel + control đã tham chiếu
    var(--*). Tách hai file sẽ nhân đôi 1.864 dòng và mọi bugfix layout phải sửa
@@ -65,7 +72,21 @@
   --vien-nhan: color-mix(in srgb, var(--nhan-sang) 52%, transparent);
   --vien-nhan-ro: color-mix(in srgb, var(--nhan-mo) 55%, transparent);
   --glow-nhan: color-mix(in srgb, var(--nhan-sang) 45%, transparent);
-  --nen-mat-mo: color-mix(in srgb, var(--mat) 8%, transparent);
+  /* Nền nút trên topbar. Trước 2026-09-23 là --mat 8% — tức LÀM SÁNG nền đỏ
+     — và chữ --chu-tren-nghich trên đó chỉ còn 4,18:1 (verify_tuong_phan đo
+     trên nút thật; số 4,74:1 ghi ở --mat-nghich là đo trên nền TRẦN, chưa
+     tính lớp phủ). Làm TỐI đi thay vì làm sáng: 5,50:1, viên thuốc vẫn tách
+     khỏi nền. Chế độ trẻ em không dùng — nút của nó là viên thuốc trắng đặc. */
+  --nen-mat-mo: color-mix(in srgb, var(--brand-sau) 18%, transparent);
+
+  /* Chữ đặt trên nền màu ĐẶC (--nhan, --brand, badge thư viện). Hai chế độ
+     sáng dùng chính --mat; chế độ tối có điểm nhấn SÁNG nên chữ trên đó phải
+     TỐI. Trước khi có token này, 18 chỗ viết `color: var(--mat)` — ở chế độ
+     tối sẽ thành chữ tối trên nền tối. */
+  --chu-tren-dac: var(--mat);
+  /* Tên sản phẩm trên topbar. Cùng lý do: topbar tối ở cả ba chế độ nên chữ
+     phải sáng ở cả ba, không thể đi theo --mat. */
+  --tieu-de-tren-nghich: var(--mat);
   --bong-topbar: color-mix(in srgb, var(--brand-sau) 35%, transparent);
 
   /* Nền khung video/iframe. CỐ Ý cố định xuyên chế độ: letterbox tối là quy ước
@@ -79,7 +100,9 @@
   --truyen-au-lac-nen: #fce7f3; /* nền nhân vật Âu Lạc trong truyện */
   --story-retry-chu: #a84d08; /* chữ .story-retry — 4,52:1 trên nền #fde68a, KHÔNG phải --luu-chu */
   --qg-badge-khac-nen: #fef2f2; /* badge «chưa rõ chính chủ» — sát --sai-nen nhưng cố ý không gộp */
-  --nhan-huyen-su: #7c3aed; /* nhãn «huyền sử» .lc-tag */
+  /* nhãn «huyền sử» .lc-tag. #7c3aed cũ đo 4,48:1 trên nền tím nhạt của
+     chính nhãn — hụt 0,02. Bản này 5,59:1. */
+  --nhan-huyen-su: #6d28d9;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -98,8 +121,13 @@
   --brand: #8b1a1a;
   --brand-nhat: #a52222;
 
-  /* Điểm nhấn — thếp vàng */
-  --nhan: #b3791f;
+  /* Điểm nhấn — thếp vàng. #b3791f cũ trượt CẢ HAI chiều nó được dùng:
+     làm chữ trên mặt sáng 3,52–3,64:1, làm nền dưới chữ sáng 3,64:1
+     (verify_tuong_phan 2026-09-23: tab quốc gia, nút sa đồ, chip thời kỳ,
+     Nam tiến). Bản này là tông vàng gần nhất đạt cả hai: 5,14:1 với --mat,
+     4,98 với --mat-2, 4,70 với --mat-3. --focus giữ #b3791f — đó là hình
+     khối (ngưỡng 3:1), đã đo riêng. */
+  --nhan: #94620f;
   --nhan-sang: #d4a24e;
   --nhan-mo: #f2d399;
 
@@ -129,8 +157,14 @@
   /* Chữ */
   --chu: #2b2320;
   --chu-mem: #6b5f57;
-  --chu-nhat: #8a7d73;
+  /* #8a7d73 cũ chỉ 3,99:1 trên nền trắng của popup (nguồn, tỉnh, chú thích
+     ảnh — verify_tuong_phan 2026-09-23). Bản này 5,24:1 trên trắng, 4,71:1
+     trên --mat-3. */
+  --chu-nhat: #766a61;
   --chu-tren-nghich: #f2d399;
+  /* Màu thương hiệu khi làm CHỮ trên mặt sáng. Người lớn: chính --brand
+     (9,13:1). Tách token vì --brand của trẻ em (#ea580c) chỉ 3,55:1 làm chữ. */
+  --brand-chu: var(--brand);
 
   /* Đường viền */
   --vien: rgba(120, 90, 60, 0.18);
@@ -230,6 +264,8 @@
   --chu-mem: #57534e;
   --chu-nhat: #78716c;
   --chu-tren-nghich: #ffffff;
+  /* 7,29:1 trên trắng, 6,30:1 trên nền badge cam nhạt. */
+  --brand-chu: var(--brand-sau);
 
   --vien: rgba(234, 88, 12, 0.28);
   --vien-ro: #fdba74;
@@ -243,7 +279,9 @@
   --tin-nen: #dbeafe;
   --tin-chu: #1d4ed8;
   --luu-nen: #fef9c3;
-  --luu-chu: #a16207;
+  /* #a16207 cũ: 4,47:1 trên callout ghi chú cương vực. Bản này 5,65:1 ở đó,
+     5,79:1 trên --luu-nen. */
+  --luu-chu: #8f5207;
 
   /* Chữ phe "ta" của sa đồ ở chế độ NGOẠI XÂM. --dung-chu (#15803d) chỉ đạt
      4,38:1 trên nền bờ và 4,11:1 trên nền sông — hỏng 4,5:1 của WCAG 1.4.3.
@@ -306,7 +344,7 @@
 
 :root[data-che-do="tre-em"] #topbar-nav button.active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   border-color: var(--nhan);
 }
 
@@ -319,19 +357,115 @@
   --the-2: #8b1a1a;
   --the-3: #a52222;
   --the-4: #92400e;
-  --the-5: #b3791f;
+  --the-5: #94620f; /* theo --nhan; #b3791f cũ chỉ 3,64:1 với --the-chu */
   --the-6: #6b5f57;
   --the-chu: #fffdf7;
 }
 
 :root[data-che-do="tre-em"] {
   --the-1: #dc2626;
-  --the-2: #ea580c;
-  --the-3: #ca8a04;
-  --the-4: #16a34a;
-  --the-5: #0284c7;
+  /* Sáu sắc giữ nguyên họ màu, chỉ hạ một bậc để chữ trắng cỡ THƯỜNG đạt
+     4,5:1 — badge dùng chữ 0,72rem. Đo: 4,83 · 5,18 · 4,92 · 5,02 · 5,93 · 5,38. */
+  --the-2: #c2410c;
+  --the-3: #a16207; /* #ca8a04 cũ: chữ trắng 2,94:1, hụt cả ngưỡng chữ lớn */
+  --the-4: #15803d;
+  --the-5: #0369a1;
   --the-6: #9333ea;
   --the-chu: #ffffff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   CHẾ ĐỘ BAN ĐÊM — sơn mài dưới đèn: nền than ấm, chữ ngà, điểm nhấn sáng
+   ═══════════════════════════════════════════════════════════════════════
+
+   Người lớn về lời văn và bố cục; chỉ đổi màu. Theo mô hình «on-primary»
+   của Material: điểm nhấn chuyển sang tông SÁNG (đỏ san hô, vàng thếp sáng)
+   và chữ đặt trên chúng chuyển sang TỐI (--chu-tren-dac). Giữ đỏ sơn mài
+   đậm cho topbar — đó là bản sắc, và chữ vàng trên đó đạt 9,30:1.
+
+   BẢN ĐỒ GIỮ NỀN GIẤY. Cố ý: mọi lớp dữ liệu và nhãn chủ quyền Hoàng Sa /
+   Trường Sa (chữ đỏ, quầng trắng) được chỉnh màu cho nền sáng — main.ts ghi
+   rõ ở MAU_NEN_DAT. Tối hoá bản đồ là đụng vào bề mặt pháp lý, phải qua
+   verify:chuquyen và mắt người, không làm kèm một đợt đổi màu khung.
+
+   Số đo (tính từ token, đã kiểm lại bằng verify_tuong_phan trên trang thật):
+     --chu / --mat 14,08 · --chu-mem / --mat 8,93 · --chu-nhat / --mat-3 5,40
+     --brand-chu / --mat 7,30 · --chu-tren-dac / --brand 7,57 · / --nhan 8,75
+     trạng thái: đúng 10,19 · sai 8,58 · tin 8,91 · lưu 9,60 */
+:root[data-che-do="toi"] {
+  --che-do: "toi";
+  color-scheme: dark; /* thanh cuộn, ô chọn, lịch của trình duyệt cũng tối theo */
+
+  --brand-sau: #2a0808;
+  --brand-dam: #e0806f;
+  --brand: #ec8f7e;
+  --brand-nhat: #f2a596;
+  --brand-chu: var(--brand);
+
+  --nhan: #deac5c;
+  --nhan-sang: #e8bf74;
+  --nhan-mo: #f2d399;
+
+  --nen-app: #15110f;
+  --mat: #1e1916;
+  --mat-2: #262019;
+  --mat-3: #30271d;
+  --mat-chim: #1a1613;
+  --mat-kinh: rgba(30, 25, 22, 0.9);
+  --vien-kinh: rgba(255, 240, 220, 0.08);
+  --mat-nghich: linear-gradient(135deg, #5c1414 0%, #3d0e0e 100%);
+  --hd-mo: rgba(0, 0, 0, 0.62);
+
+  --chu: #efe6d8;
+  --chu-mem: #c4b8a8;
+  --chu-nhat: #a89b8e;
+  --chu-tren-nghich: #f2d399;
+  --chu-tren-dac: #1f1408;
+  --tieu-de-tren-nghich: #fdf6e8;
+
+  --vien: rgba(242, 211, 153, 0.14);
+  --vien-ro: #4a3f36;
+
+  --dung-nen: #12301f;
+  --dung-chu: #86efac;
+  --dung-vien: #1f5135;
+  --sai-nen: #3a1414;
+  --sai-chu: #fca5a5;
+  --sai-vien: #6b2323;
+  --tin-nen: #0c2a3d;
+  --tin-chu: #7dd3fc;
+  --luu-nen: #3a2a0c;
+  --luu-chu: #fcd34d;
+  --sd-ta-chu-noi-chien: #fcd34d;
+
+  --focus: #e8bf74; /* 10,06:1 trên --mat */
+
+  --lop-hover: rgba(255, 255, 255, 0.06);
+  --lop-nhan: rgba(255, 255, 255, 0.11);
+  --bong-1: 0 1px 2px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.4);
+  --bong-2: 0 4px 12px -2px rgba(0, 0, 0, 0.5), 0 12px 32px -8px rgba(0, 0, 0, 0.6);
+
+  /* Bốn màu ngữ nghĩa bất biến ở hai chế độ sáng — ở đây phải đổi, vì đều
+     là nền pastel hoặc chữ đậm chỉ đọc được trên nền sáng. */
+  --truyen-au-lac-nen: #3b1a2e;
+  --story-retry-chu: #fbbf77;
+  --qg-badge-khac-nen: #3a1414;
+  --nhan-huyen-su: #c4b5fd;
+}
+
+/* Hai mặt ở style.css tô bằng var(--chu) — «thanh tối trên trang sáng» — và
+   khung truyện thiếu nhi tô topbar bằng --brand-dam. Ở ban đêm cả hai thành
+   SÁNG (1,17:1 và 2,61:1, verify_tuong_phan 2026-09-23). Đè bằng sơn mài của
+   topbar. Độ đặc hiệu (1,2,0)+ thắng rule gốc (1,0,0) ở style.css dù file
+   này được @import trước. */
+:root[data-che-do="toi"] #timeline-bar,
+:root[data-che-do="toi"] body.kid-mode #topbar {
+  background: var(--mat-nghich);
+}
+/* Thanh thời gian còn tô chữ bằng --vien-ro (màu VIỀN, sáng ở hai chế độ
+   kia) — ban đêm nó là nâu tối: 1,26:1. */
+:root[data-che-do="toi"] #timeline-bar {
+  color: var(--chu-tren-nghich);
 }
 
 /* ── Nền tảng dùng chung ────────────────────────────────────────────── */
@@ -382,6 +516,10 @@ h4 {
 
 #che-do-btn .che-do-nhan::before {
   content: "🎩 Người lớn";
+}
+
+:root[data-che-do="toi"] #che-do-btn .che-do-nhan::before {
+  content: "🌙 Ban đêm";
 }
 
 :root[data-che-do="tre-em"] #che-do-btn .che-do-nhan::before {

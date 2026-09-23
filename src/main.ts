@@ -729,7 +729,7 @@ function initCuongVuc(): void {
         moPopup(
           map,
           e.lngLat,
-          `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Phỏng dựng học thuật có nguồn — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+          `<strong>${esc(p.ten)}</strong><br/><span style="color:var(--chu-nhat)">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:var(--chu-mem);font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:var(--luu-chu);font-size:0.72rem">⚠️ Phỏng dựng học thuật có nguồn — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:var(--chu-nhat);font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
         );
       });
       // Popup cho điểm huyền sử (Xích Quỷ) — nhấn rõ KHÔNG phải sử thật.
@@ -747,7 +747,7 @@ function initCuongVuc(): void {
         moPopup(
           map,
           e.lngLat,
-          `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Huyền sử / biểu tượng — KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+          `<strong>${esc(p.ten)}</strong><br/><span style="color:var(--chu-nhat)">${esc(p.nien_dai)}</span><br/>🏛️ ${esc(p.kinh_do)}<br/><span style="color:var(--chu-mem);font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:var(--luu-chu);font-size:0.72rem">⚠️ Huyền sử / biểu tượng — KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:var(--chu-nhat);font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
         );
       });
       for (const lyr of ["cuong-vuc-fill", "cuong-vuc-diem"]) {
@@ -2425,15 +2425,15 @@ async function applyStreets(on: boolean): Promise<void> {
     const p = f.properties as Record<string, unknown>;
     const sai =
       Number(p.osm_sai_dau) === 1
-        ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠ OSM gõ sai dấu — đã nối theo nguồn đã xác minh</span>`
+        ? `<br/><span style="color:var(--luu-chu);font-size:0.72rem">⚠ OSM gõ sai dấu — đã nối theo nguồn đã xác minh</span>`
         : "";
     moPopup(
       map,
       e.lngLat,
       `<strong>Đường ${esc(str(p.ten_duong))}</strong><br/>` +
         `Đặt theo danh nhân: <b>${esc(str(p.danh_nhan))}</b><br/>` +
-        `<span style="color:#57534e;font-size:0.8rem">${esc(str(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
-        `<span style="color:#78716c;font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
+        `<span style="color:var(--chu-mem);font-size:0.8rem">${esc(str(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
+        `<span style="color:var(--chu-nhat);font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
       { maxWidth: "300px" },
     );
   };
@@ -2595,9 +2595,11 @@ function apTuVungTheoCheDo(): void {
 // ("phỏng dựng xấp xỉ", "bản đồ chủ quyền") — trẻ em đọc không ra nghĩa gì, mà
 // đây lại là câu KHÔNG được phép hiểu sai. Nên viết hẳn hai bản, giữ nguyên hai
 // điều bắt buộc: đây là phỏng dựng, và nó KHÔNG phải bản đồ chủ quyền.
+const GHI_CHU_CUONG_VUC_NGUOI_LON =
+  "⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).";
 const GHI_CHU_CUONG_VUC: Record<CheDo, string> = {
-  "nguoi-lon":
-    "⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).",
+  "nguoi-lon": GHI_CHU_CUONG_VUC_NGUOI_LON,
+  toi: GHI_CHU_CUONG_VUC_NGUOI_LON,
   "tre-em":
     "⚠️ Hình nước ta thời xưa chỉ là bản vẽ phỏng đoán cho dễ hình dung, KHÔNG phải bản đồ biên giới chính thức. Từ Nam Việt đến Đại Nam mới có tên nước thôi — đường biên giới thật thế nào thì các nhà sử học vẫn đang tra cứu.",
 };

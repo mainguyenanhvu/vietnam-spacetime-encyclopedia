@@ -425,9 +425,9 @@ const VIEC: Viec[] = [
   {
     id: "doi-che-do",
     icon: "🎨",
-    nhan: "Đổi qua lại hai chế độ xem",
-    loiBe: "Nút ở góc trái đổi giữa chế độ trẻ em và chế độ người lớn. Thử xem trang đổi kiểu thế nào!",
-    loiNguoiLon: "Chuyển giữa chế độ người lớn và chế độ trẻ em.",
+    nhan: "Đổi chế độ xem",
+    loiBe: "Nút ở góc trái đổi lần lượt qua chế độ người lớn, trẻ em và ban đêm. Thử xem trang đổi kiểu thế nào!",
+    loiNguoiLon: "Xoay vòng ba chế độ: người lớn, trẻ em, ban đêm (nền tối, dễ chịu cho mắt lúc tối trời).",
     goiY: "Nút đầu tiên bên trái trong thanh nút trên cùng.",
     trongTour: false,
     neo: neoNut("che-do-btn"),
