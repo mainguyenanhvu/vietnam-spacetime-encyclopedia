@@ -1512,6 +1512,11 @@ body.kid-mode #topbar {
   border-left: 3px solid var(--brand-nhat);
   border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
 }
+/* Ghi chú đối chiếu rỗng khi chưa chọn gì — không có :empty thì còn trơ lại
+   vạch viền đỏ không chữ. */
+#layer-control .lc-note:empty {
+  display: none;
+}
 #layer-control label {
   display: flex;
   /* Neo lên ĐẦU, không phải giữa: tên lớp dài xuống 2–3 dòng (rõ nhất ở chế
@@ -2047,8 +2052,13 @@ input[type="range"] {
   text-transform: uppercase;
   color: var(--chu-mem);
   margin-bottom: 0.3rem;
+  /* `#layer-control label` ép 44px cho dòng checkbox. Nhãn này chỉ đứng trên
+     ô chọn — ô chọn đã 44px, ép thêm ở đây chỉ đẻ khoảng trống lớn. */
+  min-height: 0;
+  padding: 0;
 }
-#layer-control #lc-period {
+#layer-control #lc-period,
+#layer-control #lc-doi-chieu {
   width: 100%;
   padding: 0.42rem 0.6rem;
   border-radius: var(--bo-nho);
@@ -2059,7 +2069,8 @@ input[type="range"] {
   font-size: var(--co-sm);
   cursor: pointer;
 }
-#layer-control #lc-period:hover {
+#layer-control #lc-period:hover,
+#layer-control #lc-doi-chieu:hover {
   border-color: var(--brand-nhat);
 }
 

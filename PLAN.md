@@ -230,7 +230,7 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 - [x] ~~Thanh trượt dòng thời gian, cụm control MapLibre, đầu bảng lớp còn dáng mặc định.~~ Xong 2026-08-04 — xem khối "ĐẠI TU HÌNH THỨC" cuối `style.css`.
 - [x] ~~**Chế độ tối**~~ **XONG 2026-09-23** — chế độ «ban đêm», xoay vòng 3 chế độ, 0 trượt / 42 trạng thái. Bản đồ CỐ Ý giữ nền giấy (lý do ở đầu khối `[data-che-do="toi"]` trong theme.css). Việc nối tiếp nếu muốn: tối hoá bản đồ nền — phải chỉnh lại màu mọi lớp dữ liệu + nhãn chủ quyền, qua `verify:chuquyen`. **L**
   *Ghi chú gốc 2026-08-11, giữ để hiểu vì sao hoãn:* **Yêu cầu ĐÃ CÓ** (chỉ thị «làm hết» 2026-08-11) nhưng cố ý chưa ship trong phiên đó: mọi chế độ của dự án đều đã qua audit tương phản đo thật từng cặp màu, một palette tối chưa đo mà ship là phá kỷ luật đó. Việc gồm: bảng token tối + đổi nút chuyển thành chu kỳ 3 chế độ + đo tương phản như hai chế độ kia. **M**
-- [ ] Ô chọn «Đối chiếu với» (`#lc-period` kế bên) còn là `<select>` gốc trình duyệt, bị ép hẹp, chưa tạo kiểu — ở CẢ ba chế độ, thấy trên ảnh chụp 2026-09-23. **S**
+- [x] Ô chọn «Đối chiếu với» dùng chung kiểu với `#lc-period` (2026-09-23). Cùng đợt: nhãn trên ô chọn bị `#layer-control label` ép 44px (khoảng trống lớn), và ghi chú đối chiếu rỗng vẫn vẽ vạch viền — sửa cả hai, bảng lớp gọn ~85px.
 
 ### Không đụng vào khi redesign
 `panels.ts` (sổ đăng ký 11 panel, học từ bug rò WebGL thật) · cơ chế `--topbar-h` đồng bộ động (`main.ts:210-218`) · ràng buộc chủ quyền trong style bản đồ (nền không nhãn, glyph tự host) · ARIA combobox của `search.ts`.

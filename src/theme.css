@@ -639,7 +639,8 @@ h4 {
   font-size: var(--co-sm);
   color: var(--chu-mem);
 }
-#lc-period {
+#lc-period,
+#lc-doi-chieu {
   width: 100%;
   min-height: max(2.75rem, 44px); /* 2.75rem = 41,4px, xem PLAN mục 10 */
   padding: 0.35rem 0.6rem;
@@ -724,7 +725,8 @@ h4 {
 }
 
 /* Tên thời kỳ dài hơn bề ngang panel — cắt bằng "…" thay vì đè lên mũi tên. */
-#lc-period {
+#lc-period,
+#lc-doi-chieu {
   text-overflow: ellipsis;
 }
 
