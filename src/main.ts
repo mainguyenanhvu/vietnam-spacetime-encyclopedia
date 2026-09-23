@@ -1692,11 +1692,14 @@ function capNhatMoHinhDiem(): void {
     // (chỉ còn là bóng đổ dưới chân mô hình), phần VIỀN mảnh vẽ đúng chân đế.
     // Vùng bấm của MapLibre tính theo bán kính, không theo độ trong — nên đích
     // vẫn là 24 px dù mắt chỉ thấy một vòng nhạt.
-    const ban = is3D ? 12 : 5;
-    if (map.getPaintProperty(`overlay-${id}`, "circle-radius") !== ban) {
+    //
+    // Ở 2D, điểm neo TÂM XÃ giữ kiểu đĩa mờ rộng của nó — hàm này chạy mỗi lần
+    // dời bản đồ, ghi hằng số ở đây là xoá mất kiểu đặt lúc tạo lớp.
+    const ban: number | ExpressionSpecification = is3D ? 12 : ["case", LA_TAM_XA, 15, 5];
+    if (JSON.stringify(map.getPaintProperty(`overlay-${id}`, "circle-radius")) !== JSON.stringify(ban)) {
       map.setPaintProperty(`overlay-${id}`, "circle-radius", ban);
       map.setPaintProperty(`overlay-${id}`, "circle-stroke-width", is3D ? 1.5 : 2);
-      map.setPaintProperty(`overlay-${id}`, "circle-opacity", is3D ? 0.18 : 1);
+      map.setPaintProperty(`overlay-${id}`, "circle-opacity", is3D ? 0.18 : ["case", LA_TAM_XA, 0.3, 1]);
       map.setPaintProperty(`overlay-${id}`, "circle-stroke-opacity", is3D ? 0.55 : 1);
     }
   }
@@ -2236,6 +2239,9 @@ function tachDiemTrung(lon: number, lat: number): [number, number] {
 // 9,5 icon nào chồng lấn sẽ tự ẩn (vòng tròn màu vẫn vẽ, vùng bấm vẫn còn);
 // từ 9,5 trở lên hiện đủ 100% như trước. Trước đây allow-overlap:true nghĩa
 // là 2.300+ icon vẽ đè nhau thành một đám rối ở mức zoom toàn quốc.
+/** Mục neo ở tâm xã/phường — xem `phuong_phap_toa_do` trong overlays-config.ts. */
+const LA_TAM_XA: ExpressionSpecification = ["==", ["get", "phuong_phap_toa_do"], "tam-xa"];
+
 const ICON_VA_CHAM_THEO_ZOOM: ExpressionSpecification = [
   "step",
   ["zoom"],
@@ -2287,11 +2293,13 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
     paint: {
       // Bán kính co lại một chút & giảm nhẹ opacity vì icon phủ lên trên —
       // vòng tròn giờ chỉ còn vai trò halo màu theo chủ đề + giữ vùng bấm.
-      "circle-radius": 5,
+      // Điểm neo TÂM XÃ (không phải vị trí thật) thành một đĩa mờ rộng viền
+      // cùng màu: đọc ra «ở đâu đó quanh đây» thay vì một chấm khẳng định.
+      "circle-radius": ["case", LA_TAM_XA, 15, 5],
       "circle-color": conf.circleColor,
-      "circle-opacity": 0.85,
-      "circle-stroke-width": 2,
-      "circle-stroke-color": "#ffffff",
+      "circle-opacity": ["case", LA_TAM_XA, 0.3, 0.85],
+      "circle-stroke-width": ["case", LA_TAM_XA, 2, 2],
+      "circle-stroke-color": ["case", LA_TAM_XA, conf.circleColor, "#ffffff"],
     },
   });
   map.addLayer({
@@ -2304,6 +2312,7 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
       "icon-allow-overlap": ICON_VA_CHAM_THEO_ZOOM,
       "icon-ignore-placement": ICON_VA_CHAM_THEO_ZOOM,
     },
+    paint: { "icon-opacity": ["case", LA_TAM_XA, 0.7, 1] },
   });
   bindOverlayInteractions(layerId, conf);
   bindOverlayInteractions(iconLayerId, conf);

@@ -77,6 +77,14 @@ export interface OverlayItem {
   chi_huy: string;
   trang_thai: string;
   do_tin_cay_toa_do: string;
+  /**
+   * `"tam-xa"`: toạ độ là tâm đơn vị cấp xã (`don_vi_neo`), không phải vị trí
+   * thật — chủ dự án duyệt 2026-09-23 cho mục đủ nguồn mà thiếu toạ độ, BẮT
+   * BUỘC kèm nhãn. Trường riêng chứ không dựa `do_tin_cay_toa_do: "thap"`:
+   * 832 mục cũ mang «thap» với toạ độ thật, đổi kiểu theo nó là đổi nhầm.
+   */
+  phuong_phap_toa_do: string;
+  don_vi_neo: string;
   // ── Trường nằm im trong dữ liệu, không lớp nào đọc tới (rà 2026-08-28) ────
   // 13 trường dưới đây có thật trong `public/data/overlays/*.json` nhưng `grep`
   // cả `src/` ra 0 lần nhắc tên chúng: không phải render sai, mà là chưa bao
@@ -195,6 +203,8 @@ export function parseOverlayItem(raw: unknown): OverlayItem {
     chi_huy: str(r.chi_huy),
     trang_thai: str(r.trang_thai),
     do_tin_cay_toa_do: str(r.do_tin_cay_toa_do),
+    phuong_phap_toa_do: str(r.phuong_phap_toa_do),
+    don_vi_neo: str(r.don_vi_neo),
     xep_hang: str(r.xep_hang),
     nhan_hinh_dung: str(r.nhan_hinh_dung),
     dot_cong_nhan: str(r.dot_cong_nhan),
@@ -501,7 +511,10 @@ const popupChung = (o: OverlayItem, nguonLop: string, nhanToaDo = "Toạ độ")
       { icon: "🎨", nhan: "Hình dung", gia_tri: o.nhan_hinh_dung },
     ],
     than: escVanKho(o.mo_ta || o.cong_trang) + dongGhiChu(o),
-    canh_bao: canhBaoToaDo(o.do_tin_cay_toa_do, nhanToaDo),
+    canh_bao:
+      o.phuong_phap_toa_do === "tam-xa"
+        ? `📍 Vị trí gần đúng — đặt ở tâm ${o.don_vi_neo || "xã/phường"}, chưa có toạ độ chính xác`
+        : canhBaoToaDo(o.do_tin_cay_toa_do, nhanToaDo),
     them: khoiTrich(o) + khoiCanTra(o) + khoiChoTrong(o) + nhoChung(o),
     nguon: o.nguon.join(" · ") || nguonLop,
   });
