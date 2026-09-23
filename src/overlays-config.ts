@@ -609,6 +609,13 @@ const khoaDiem = (o: OverlayItem): string =>
  */
 const viSaoChungDiem = (ds: MucTaiDiem[]): string => {
   const n = ds.length;
+  // Neo tâm xã: vị trí KHÔNG có thật, chồng nhau vì cùng xã — nói đúng điều đó,
+  // đừng để câu «đang soát» ngụ ý sắp có toạ độ riêng.
+  const tamXa = ds.filter(({ muc }) => muc.phuong_phap_toa_do === "tam-xa");
+  if (tamXa.length === n) {
+    const xa = [...new Set(tamXa.map(({ muc }) => muc.don_vi_neo).filter(Boolean))];
+    return `📍 Cả ${n} mục chưa có toạ độ chính xác, được đặt ở tâm ${xa.length === 1 ? xa[0] : "xã/phường"} — vị trí gần đúng, không phải nơi di tích đứng.`;
+  }
   const noi = ds.map(({ muc }) => muc.dia_diem || muc.noi_tho || muc.noi_luu_giu);
   // Chỉ nói «cùng ghi một địa điểm» khi MỌI mục đều có chữ đó và giống hệt nhau.
   const chung = noi.every((v) => v && v === noi[0]) ? noi[0] : "";

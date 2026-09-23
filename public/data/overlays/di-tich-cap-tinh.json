@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Di tích xếp hạng CẤP TỈNH/THÀNH PHỐ (UBND tỉnh ký QĐ) — lớp mở 2026-08-11 theo quyết định chủ dự án (phương án A). Khác hai sổ đăng ký cấp quốc gia (di-tich-qgdb, di-tich-quoc-gia). Mục mới mặc định draft chờ cổng §9; xep_hang chỉ ghi thông tin nguồn nêu, không bịa số quyết định.",
-  "ngay_cap_nhat": "2026-08-28",
+  "ngay_cap_nhat": "2026-09-23",
   "items": [
     {
       "id": "truong-thanh-nien-tien-tuyen-hue",
@@ -2111,6 +2111,91 @@
         "Sở Văn hóa, Thể thao TP.HCM — Danh sách công trình, địa điểm đã quyết định xếp hạng di tích trên địa bàn TP.HCM — https://svhtt.hochiminhcity.gov.vn/tin-chi-tiet/-/chi-tiet/danh-sach-cac-cong-trinh-dia-diem-da-duoc-quyet-dinh-xep-hang-di-tich-tren-dia-ban-thanh-pho-ho-chi-minh-tinh-den-het-thang-10-nam-2022--21236-201.html"
       ],
       "ghi_chu_bien_tap": "Geocode Nominatim theo tên POI — khớp chính xác tên «Đình Cầu Sơn», phường Bình Thạnh (Hẻm 549/14 Xô Viết Nghệ Tĩnh, khác số nhà 218/1 trong dia_diem gốc — dia_diem gốc có thể ghi theo mặt tiền đường chính, còn đình nằm sâu trong hẻm; cùng một đình, tên khớp chính xác)."
+    },
+    {
+      "id": "dinh-cau-ca-chua-uy-nhu",
+      "ten": "Đình Cầu Cả - Chùa Uy Như",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Đình thờ An Dương Vương làm Thành hoàng, dời về vị trí hiện nay 1923; chùa Uy Như tự xây thế kỷ XIX, trùng tu 2018-2020.",
+      "dia_diem": "Thôn Cầu Cả, xã Cổ Loa cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Cấp TP — QĐ 1652/QĐ-UB ngày 25/3/2003 (checklist ghi QGĐB SAI)",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/dinh-cau-ca"
+      ]
+    },
+    {
+      "id": "dinh-thu-cuu",
+      "ten": "Đình Thư Cưu",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Một trong «Bát xã Cổ Loa» phụng thờ An Dương Vương; bia đá 1719; đình bị phá 1962, phục dựng 1992-2008.",
+      "dia_diem": "Thôn Thư Cưu, xã Cổ Loa cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Cấp TP — QĐ 2458/QĐ-UBND ngày 1/6/2011 (checklist ghi QGĐB SAI)",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/dinh-thu-cuu"
+      ]
+    },
+    {
+      "id": "den-chua-to-uy-no",
+      "ten": "Đền - Chùa Tó (Khánh Sơn Tự)",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Thờ An Dương Vương và Triệu Việt Vương; bia đá niên hiệu Cảnh Thịnh (1800); lễ hội làng Tó mùng 4-10 tháng Giêng.",
+      "dia_diem": "Cạnh chợ Tó, xã Uy Nỗ cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Cấp TP 1999",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/den-chua-to-huyen-dong-anh-74397.html"
+      ]
+    },
+    {
+      "id": "dinh-uoc-le",
+      "ten": "Đình Ước Lễ",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Thờ Tể tướng Lữ Gia, sát cổng làng cổ Ước Lễ (làng nghề giò chả); đình có từ thế kỷ XVII.",
+      "dia_diem": "Làng Ước Lễ, xã Tân Ước cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "Cấp tỉnh (Hà Tây cũ) 2004",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-uoc-le-huyen-thanh-oai-74615.html"
+      ]
+    },
+    {
+      "id": "dinh-chua-huong-tao",
+      "ten": "Đình Chùa Hương Tảo",
+      "lon": 105.6228,
+      "lat": 21.08962,
+      "mo_ta": "Thờ Chử Đồng Tử, Tiên Dung và Triệu Quang Phục.",
+      "dia_diem": "Thôn Hương Tảo, xã Ngọc Tảo cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "Cấp tỉnh (Hà Tây cũ) 2005",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "09772",
+      "don_vi_neo": "Xã Hát Môn, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-huong-tao-huyen-phuc-tho-69122.html"
+      ]
     }
   ]
 }

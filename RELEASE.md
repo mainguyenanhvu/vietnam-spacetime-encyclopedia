@@ -8,6 +8,14 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-09-23 (đợt 3) — Neo tâm xã: 34 di tích đủ nguồn lên bản đồ
+
+- **Quyết định chủ dự án (PLAN §7.17)**: mục đủ nguồn mà thiếu toạ độ được đặt ở tâm xã/phường 2025, bắt buộc kèm nhãn. Neo tâm huyện vẫn cấm.
+- **Bảng `docs/research/tam-xa-2025.json`** — 3.321 đơn vị (đủ tổng cấp xã), hình học của NXB Tài nguyên Môi trường và Bản đồ Việt Nam (Bộ NN&MT, sapnhap.bando.com.vn), mã QĐ 19/2025/QĐ-TTg. Kiểm độc lập: 0 điểm ngoài xã của nó. Hai đặc khu quần đảo cấm neo tâm.
+- **Cổng thứ 15 `validate_tam_xa`** chặn nhãn bị lạm dụng (thiếu nguồn · toạ độ tự đặt · mã xã lạ · neo quần đảo). Kiểm đỏ 4/4.
+- **Bản đồ**: đĩa mờ rộng viền cùng màu + icon nhạt cho điểm tâm xã; popup ghi «vị trí gần đúng — đặt ở tâm …». Sửa kèm: `capNhatMoHinhDiem` ghi đè bán kính hằng số mỗi lần dời bản đồ.
+- **34 mục** lên lớp di tích (31 quốc gia, 3+… cấp tỉnh), toàn `draft`, nội dung chép nguyên văn từ kho.
+
 ## 2026-09-23 (đợt 2) — Icon vẽ tay cho 15 lớp, hồ sơ tỉnh gọn 33 lần, smoke hết mù
 
 | Việc | Trước | Sau |

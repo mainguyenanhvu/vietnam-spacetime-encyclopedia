@@ -328,6 +328,7 @@ trấn Mộc Châu) · Thẳm Tát Tòng (phường Chiềng An) · Thành Sam M
 ### ✅ 2026-09-23 — LỐI RA cho 541 mục `cho_toa_do`: TÂM XÃ (quyết định §7.17)
 
 Bảng `docs/research/tam-xa-2025.json`: **3.321 đơn vị = đúng tổng cấp xã 2025**, 0 lỗi. Kiểm bằng dữ liệu độc lập: **0/3.321 điểm nằm ngoài xã của nó** (28 xã lõm dùng đoạn cắt ngang thay trọng tâm) · đối chiếu ranh 34 tỉnh của dự án: **1 lệch thật** (xã Bát Tràng rơi sang Hưng Yên — ranh 34 tỉnh cộng đồng giản lược bờ sông Hồng, bảng đúng) · 23 điểm ven biển/đảo nằm ngoài đa giác tỉnh giản lược. Đặc khu Hoàng Sa + Trường Sa: `khong_neo` — «tâm» Trường Sa rơi vào vùng bãi Tư Chính.
+**Lượt đầu 2026-09-23: 34 mục lên bản đồ** — đúng nhóm chắc nhất: `dia_diem` tự ghi «nay xã/phường X» + nguồn có URL + X có trong bảng đúng tỉnh (40 ứng viên → 36 đạt → 2 thiếu `mo_ta` giữ lại kho). `di-tich-quoc-gia` 437→466 · `di-tich-cap-tinh` 130→135 · kho `cho_toa_do` 541→507. Gần hết là Hà Nội (Đông Anh 13, Dân Hoà 9…) — Tây Bắc CHƯA chạm. Popup nhiều mục ghi rõ «đặt ở tâm Xã Đông Anh — vị trí gần đúng».
 **Việc còn lại là ÁNH XẠ, không phải toạ độ**: `dia_diem` trong kho phần lớn ghi tên xã CŨ (trước sắp xếp) — mỗi mục phải tra nghị quyết sắp xếp xã của tỉnh để ra xã MỚI. Không ánh xạ chắc được thì để lại, đừng đoán.
 
 ### 🔴 2026-08-28 — ĐÃ CHẠY HẾT LỐI OSM. Câu «việc rẻ nhất còn lại của cả dự án» ở ngay trên KHÔNG còn đúng.

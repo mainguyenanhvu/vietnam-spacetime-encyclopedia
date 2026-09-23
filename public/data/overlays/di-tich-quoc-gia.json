@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Di tích cấp quốc gia (đền/chùa/thành/hang/khảo cổ) ở các tỉnh mỏng dữ liệu, thu thập 2026-07-23. Nguồn cổng nhà nước (dsvh.gov.vn, báo Đảng tỉnh). Đã gỡ ATK Chợ Đồn + Chiến thắng Chương Thiện (trùng di-tich-qgdb). Đền thờ Bác Hồ Lương Tâm gắn cách mạng — có thể tách sang di-tich-cach-mang khi duyệt.",
-  "ngay_cap_nhat": "2026-08-28",
+  "ngay_cap_nhat": "2026-09-23",
   "sources": [
     "Cục Di sản văn hóa (dsvh.gov.vn)",
     "Báo Đảng các tỉnh",
@@ -7135,6 +7135,507 @@
         "Báo điện tử VietnamPlus (Thông tấn xã Việt Nam) — Nơi ở của Nhà tình báo chiến lược trở thành Di tích cấp quốc gia — https://www.vietnamplus.vn/noi-o-cua-nha-tinh-bao-chien-luoc-tro-thanh-di-tich-cap-quoc-gia-post340798.vnp"
       ],
       "ghi_chu_bien_tap": "Toạ độ mức đường phố: đường Hùng Vương, phường An Hội (Nominatim/OSM) — chưa định vị được đúng số nhà 146. Nguồn năm 2015 ghi «phường 3»; tên đơn vị hiện hành là phường An Hội — giữ cả hai, không san bằng."
+    },
+    {
+      "id": "mieu-chua-dinh-lai-da",
+      "ten": "Miếu, Chùa, Đình Lại Đà",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Cụm đình – chùa (Cảnh Phúc tự) – miếu thờ Thành hoàng Nguyễn Hiền (Trạng nguyên đầu tiên triều Trần, đỗ 1247) và công chúa Tiên Dung. Đình dựng thời Lê, trùng tu 1853, còn 20 đạo sắc phong 1652–1924.",
+      "dia_diem": "Thôn Lại Đà, xã Đông Hội cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "QG 1989, số QĐ chưa rõ",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] Sở VHTT Hà Nội — https://sovhtt.hanoi.gov.vn/doc-dao-di-tich-quoc-gia-dinh-lai-da/"
+      ]
+    },
+    {
+      "id": "dinh-chua-dong-tru",
+      "ten": "Đình Chùa Đông Trù",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Cụm đình - chùa bên bờ sông Đuống, trùng tu theo kiến trúc gốc năm 2006; gắn với bến đò Đông Trù thời kháng chiến, nay là vị trí cầu Đông Trù.",
+      "dia_diem": "Thôn Đông Trù, xã Đông Hội cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "QG 1995, số QĐ chưa rõ",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-chua-dong-tru-68481.html"
+      ]
+    },
+    {
+      "id": "dinh-den-hoi-phu-chua-a-phai",
+      "ten": "Đình - Đền Hội Phụ và Chùa Hội Phụ (A Phái Tự)",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "loai": "lich-su",
+      "mo_ta": "Hội Phụ xưa là làng Cói/Cối Giang. Di tích còn 4 đạo sắc phong (1842–1887), thần phả về Đào Kỳ - Phương Dung và Triệu Việt Vương.",
+      "dia_diem": "Thôn Hội Phụ, xã Đông Hội cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử + KTNT QG 1996",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/dinh---den-hoi-phu"
+      ]
+    },
+    {
+      "id": "dinh-chua-mach-trang",
+      "ten": "Đình - Chùa Mạch Tràng",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Đình hậu cung thờ An Dương Vương; Mạch Tràng xưa là nơi tích trữ lương thảo cho quân Âu Lạc. Chùa Quang Linh tự liền kề.",
+      "dia_diem": "Thôn Mạch Tràng, xã Cổ Loa cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "QG 1997 (KHÔNG phải QGĐB — chỉ nằm trong vùng Khu DTQGĐB Cổ Loa)",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-mach-trang-huyen-dong-anh-71401.html",
+        "[WF-gov] dsvh.gov.vn — https://dsvh.gov.vn/di-tich-lich-su-kien-truc-nghe-thuat-va-khao-co-co-loa-2958"
+      ]
+    },
+    {
+      "id": "dinh-chua-phuc-hau",
+      "ten": "Đình, Chùa Phúc Hậu",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Đình thờ Tam Lang đại vương, dựng khoảng thế kỷ XVII, còn bát hương đá Hậu Lê; nơi chứng kiến khởi nghĩa 23/8/1945, làm kho quân nhu kháng chiến.",
+      "dia_diem": "Thôn Phúc Hậu, xã Dục Tú cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "KTNT QG 1994",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-phuc-hau-66127.html"
+      ]
+    },
+    {
+      "id": "den-le-xa-mai-lam",
+      "ten": "Đền Lê Xá",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Đền thờ Đào Kỳ và Phương Dung, hai tướng khởi nghĩa Hai Bà Trưng, được phong Thượng đẳng phúc thần. Kiến trúc phong cách thế kỷ XIX.",
+      "dia_diem": "Thôn Lê Xá, xã Mai Lâm cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "KTNT QG 1992",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/den-le-xa-huyen-dong-anh-70226.html"
+      ]
+    },
+    {
+      "id": "dinh-thai-binh-chua-dien-phuc",
+      "ten": "Đình Thái Bình - Chùa Diên Phúc",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "loai": "lich-su",
+      "mo_ta": "Chùa Diên Phúc tương truyền dựng thế kỷ XI, thờ bà Phạm Thị — mẹ vua Lý Công Uẩn; chuông «Diên Phúc Tự Chung» đúc năm Minh Mệnh 2 (1821).",
+      "dia_diem": "Thôn Thái Bình (Thái Đường), xã Mai Lâm cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử + KTNT QG 1992",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-thai-binh-chua-dien-phuc-66101.html"
+      ]
+    },
+    {
+      "id": "nha-tho-ho-trinh-mai-lam",
+      "ten": "Nhà thờ họ Trịnh",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "loai": "lich-su",
+      "mo_ta": "Nhà thờ dòng họ định cư hơn 500 năm; bia đá gia phả dựng 1696 (Chính Hòa) cao 1,5 m cùng ngai thờ, bát hương đá thế kỷ XIX.",
+      "dia_diem": "Thôn Thái Đường, xã Mai Lâm cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử + KTNT QG 1997",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/nha-tho-ho-trinh-huyen-dong-anh-74603.html"
+      ]
+    },
+    {
+      "id": "dinh-xuan-canh-chua-quan-am",
+      "ten": "Đình Xuân Canh - Chùa Quan Âm",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "mo_ta": "Đình Thượng Lão thờ Cao Sơn và Linh Lang, sắc phong sớm nhất Cảnh Hưng 4 (1743). Chùa Quan Âm xây từ thời Lý, còn 41 pho tượng tròn.",
+      "dia_diem": "Thôn Xuân Canh, xã Xuân Canh cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "KTNT QG — đình 2000; chùa 2000-2002 (nguồn không thống nhất)",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-xuan-canh-huyen-dong-anh-74749.html"
+      ]
+    },
+    {
+      "id": "phao-dai-xuan-canh-chua-van-hoach",
+      "ten": "Pháo đài Xuân Canh - Chùa Vân Hoạch",
+      "lon": 105.87161,
+      "lat": 21.11009,
+      "loai": "lich-su",
+      "mo_ta": "Pháo đài kháng chiến chống Pháp giai đoạn 12/1946 – đầu 1947; quân dân Xuân Canh được phong Anh hùng LLVTND 15/8/2003.",
+      "dia_diem": "Chùa Vân Hoạch, thôn Xuân Canh, xã Xuân Canh cũ (nay xã Đông Anh), Hà Nội",
+      "xep_hang": "Lịch sử cách mạng QG — QĐ 69/2004/QĐ-BVHTT ngày 10/8/2004",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "00454",
+      "don_vi_neo": "Xã Đông Anh, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] donganh360.vn — https://donganh360.vn/di-tich/phao-dai-xuan-canh-tai-chua-van-hoach"
+      ]
+    },
+    {
+      "id": "chua-xuyen-duong",
+      "ten": "Chùa Xuyên Dương (Bạch Dương am)",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Dấu tích cổ nhất là bia đá năm Xương Phù 3 (1379); còn bảo tháp đất nung thời Mạc và bia đá Cảnh Hưng 1752.",
+      "dia_diem": "Thôn Xuyên Dương, xã Xuân Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "KTNT QG 2008",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/chua-xuyen-duong-huyen-thanh-oai-77036.html"
+      ]
+    },
+    {
+      "id": "nha-luu-niem-bac-ho-xuyen-duong",
+      "ten": "Nhà lưu niệm Bác Hồ tại Xuyên Dương",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "loai": "lich-su",
+      "mo_ta": "Nhà gia đình ông Nguyễn Huy Chức, nơi Chủ tịch Hồ Chí Minh ở và làm việc 19/12/1946 – 13/1/1947 sau Lời kêu gọi toàn quốc kháng chiến.",
+      "dia_diem": "Thôn Xuyên Dương, xã Xuân Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "Lịch sử QG 1996",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/nha-luu-niem-bac-ho-o-xa-xuan-duong-huyen-thanh-oai-77298.html"
+      ]
+    },
+    {
+      "id": "dinh-truong-xuan",
+      "ten": "Đình Trường Xuân",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Thờ ba con trai Hùng Nghị Vương cùng công chúa Tiên Dung, có công trấn giữ vùng Trường Xuân - Thị Nguyên thời Văn Lang.",
+      "dia_diem": "Thôn Trường Xuân, xã Xuân Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "KTNT QG 1989",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-truong-xuan-huyen-thanh-oai-74605.html"
+      ]
+    },
+    {
+      "id": "dinh-tu-chau",
+      "ten": "Đình Từ Châu",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Thờ Lỗ Cầu Đại Vương, tướng thời Hùng Duệ Vương. Còn 14 đạo sắc phong và kiệu bát cống hơn 400 năm tuổi.",
+      "dia_diem": "Thôn Từ Châu, xã Liên Châu cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG — QĐ 28/VHQĐ ngày 18/1/1988",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] Cổng xã Liên Châu — https://lienchau.thanhoai.hanoi.gov.vn/tin-chi-tiet/-/chi-tiet/-inh-tu-chau-di-tich-lich-su-cap-quoc-gia-2011-137.html"
+      ]
+    },
+    {
+      "id": "dinh-chau-mai",
+      "ten": "Đình Châu Mai",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Thờ Phù Tế Minh Lang Phù thần Đại Tướng Quân, giúp Trần Hưng Đạo chống Nguyên Mông thế kỷ XIII.",
+      "dia_diem": "Thôn Châu Mai, xã Liên Châu cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG — QĐ 65-QĐ/BT ngày 16/1/1995",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] Cổng xã Liên Châu — https://lienchau.thanhoai.hanoi.gov.vn/tin-chi-tiet/-/chi-tiet/-inh-chau-mai-di-tich-lich-su-cap-quoc-gia-1583-100.html"
+      ]
+    },
+    {
+      "id": "dinh-tao-duong",
+      "ten": "Đình Tảo Dương",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Đình sàn cổ trên khu đất gần 4.000 m², chạm khắc phong cách nghệ thuật thời Mạc.",
+      "dia_diem": "Thôn Tảo Dương, xã Hồng Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "Di tích kiến trúc – nghệ thuật quốc gia (1982); di tích lịch sử quốc gia (1985) — hai QĐ cho hai loại hình, không phải xung đột",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] Nhịp sống Hà Nội — https://nhipsonghanoi.hanoimoi.vn/dinh-tao-duong-627134.html"
+      ]
+    },
+    {
+      "id": "dinh-ang-phao",
+      "ten": "Đình Áng Phao",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Đình dựng khoảng thế kỷ XVIII, thờ Tam vị Đức Thượng Đẳng; kiến trúc 5 gian 2 dĩ, cột gỗ lim.",
+      "dia_diem": "Thôn Áng Phao, xã Cao Dương cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG 1991",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] Cổng xã Cao Dương — https://caoduong.thanhoai.hanoi.gov.vn/en/tin-chi-tiet/-/chi-tiet/-inh-ang-phao-noi-luu-giu-gia-tri-lich-su-van-hoa-dan-toc-1552-42.html"
+      ]
+    },
+    {
+      "id": "dinh-phuc-thuy",
+      "ten": "Đình Phúc Thụy",
+      "lon": 105.79212,
+      "lat": 20.8096,
+      "mo_ta": "Đình chung của hai làng Phúc Lâm và Phượng Thụy, xây lại năm 1907 kiểu chữ Công.",
+      "dia_diem": "Làng Phúc Lâm - Phượng Thụy, xã Tân Ước cũ (nay xã Dân Hòa), Thanh Oai, Hà Nội",
+      "xep_hang": "QG 1992",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10180",
+      "don_vi_neo": "Xã Dân Hoà, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-phuc-thuy-huyen-thanh-oai-71911.html"
+      ]
+    },
+    {
+      "id": "chua-ba-te-hiep-thuan",
+      "ten": "Chùa Bà Tề (Đại Bi tự)",
+      "lon": 105.6228,
+      "lat": 21.08962,
+      "mo_ta": "Hiện vật cổ nhất khoảng thế kỷ XVII; lưu giữ khoảng 70 pho tượng.",
+      "dia_diem": "Xã Hiệp Thuận cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1993",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "09772",
+      "don_vi_neo": "Xã Hát Môn, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] Nhịp sống Hà Nội — https://nhipsonghanoi.hanoimoi.vn/chua-ba-te-636107.html"
+      ]
+    },
+    {
+      "id": "dinh-hiep-loc",
+      "ten": "Đình Hiệp Lộc",
+      "lon": 105.6228,
+      "lat": 21.08962,
+      "mo_ta": "Thờ Hoàng Đạo Thượng Sĩ Đại tướng quân, giúp Hai Bà Trưng đánh Tô Định.",
+      "dia_diem": "Thôn Hiệp Lộc, xã Hiệp Thuận cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1997",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "09772",
+      "don_vi_neo": "Xã Hát Môn, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-hiep-loc-huyen-phuc-tho-69116.html"
+      ]
+    },
+    {
+      "id": "dinh-mieu-giao-ha",
+      "ten": "Đình - Miếu Giáo Hạ",
+      "lon": 105.6228,
+      "lat": 21.08962,
+      "mo_ta": "Đình và miếu cùng thờ Ả Lã Nương Đê, nữ tướng giúp Hai Bà Trưng.",
+      "dia_diem": "Xóm Giáo Hạ, xã Ngọc Tảo cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1990",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "09772",
+      "don_vi_neo": "Xã Hát Môn, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-giao-ha-huyen-phuc-tho-68990.html"
+      ]
+    },
+    {
+      "id": "dinh-chua-mieu-ngoc-tao",
+      "ten": "Đình Chùa Miếu Ngọc Tảo",
+      "lon": 105.6228,
+      "lat": 21.08962,
+      "mo_ta": "Đình dựng từ thế kỷ XVI, thờ Vi Ngọc Quang — tướng thời Hùng Vương; còn 17 đạo sắc phong.",
+      "dia_diem": "Thôn Ngọc Tảo, xã Ngọc Tảo cũ (nay xã Hát Môn), Phúc Thọ, Hà Nội",
+      "xep_hang": "QG 1990",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "09772",
+      "don_vi_neo": "Xã Hát Môn, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-ngoc-tao-huyen-phuc-tho-71446.html"
+      ]
+    },
+    {
+      "id": "dinh-ha-thai",
+      "ten": "Đình Hạ Thái",
+      "lon": 105.88781,
+      "lat": 20.87983,
+      "mo_ta": "Đình gắn với làng nghề sơn mài Hạ Thái nổi tiếng của Thường Tín.",
+      "dia_diem": "Làng nghề sơn mài Hạ Thái, xã Duyên Thái cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "KTNT QG 2017",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10210",
+      "don_vi_neo": "Xã Hồng Vân, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] Sở VHTT Hà Nội — https://sovhtt.hanoi.gov.vn/dinh-ha-thai-thuong-tin-ha-noi-duoc-xep-hang-di-tich-quoc-gia/"
+      ]
+    },
+    {
+      "id": "lang-da-quan-cong-do-ba-pham",
+      "ten": "Lăng đá Quận công Đỗ Bá Phẩm (Lăng đá Quận Vân)",
+      "lon": 105.88781,
+      "lat": 20.87983,
+      "mo_ta": "Lăng mộ đá xây năm 1733 bằng đá chở từ Đông Triều; một trong những lăng đá lớn nhất cả nước còn nguyên vẹn kiến trúc thế kỷ XVIII, phát hiện lại năm 1985.",
+      "dia_diem": "Thôn Nỏ Bạn, xã Vân Tảo cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "QG 2003",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10210",
+      "don_vi_neo": "Xã Hồng Vân, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/lang-da-quan-van-huyen-thuong-tin-71978.html"
+      ]
+    },
+    {
+      "id": "dinh-den-chua-ninh-xa-thuong-tin",
+      "ten": "Đình Đền Chùa Ninh Xá (Thường Tín)",
+      "lon": 105.88781,
+      "lat": 20.87983,
+      "mo_ta": "Đình Ninh Xá thờ Pháp Công đại vương; thần phả soạn năm Phúc Thái 2 (1644) còn lưu cùng 20 đạo sắc phong Lê–Nguyễn.",
+      "dia_diem": "Xã Ninh Sở cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "KTNT QG 1993",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10210",
+      "don_vi_neo": "Xã Hồng Vân, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] nguoihanoi.vn — https://nguoihanoi.vn/dinh-ninh-xa-66198.html"
+      ]
+    },
+    {
+      "id": "dinh-chua-khe-hoi",
+      "ten": "Đình Chùa Khê Hồi",
+      "lon": 105.88781,
+      "lat": 20.87983,
+      "mo_ta": "Đình xây thế kỷ XVIII, thờ Cao Sơn Đại Vương; lễ hội làng 14-17 tháng Ba âm lịch.",
+      "dia_diem": "Làng Khê Hồi, xã Hà Hồi cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "QG 2000",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10210",
+      "don_vi_neo": "Xã Hồng Vân, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF] Nhịp sống Hà Nội — https://nhipsonghanoi.hanoimoi.vn/dinh-khe-hoi-net-thoi-gian-noi-lang-que-624563.html"
+      ]
+    },
+    {
+      "id": "dinh-bach-lien-thuong-tin",
+      "ten": "Đình Bạch Liên (Thường Tín)",
+      "lon": 105.88781,
+      "lat": 20.87983,
+      "mo_ta": "Đình làng Bạch Liên, xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia năm 2013.",
+      "dia_diem": "Xã Liên Phương cũ (nay xã Hồng Vân), Thường Tín, Hà Nội",
+      "xep_hang": "KTNT QG — QĐ 673/QĐ-BVHTTDL ngày 7/2/2013",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "10210",
+      "don_vi_neo": "Xã Hồng Vân, Hà Nội",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] Bộ VHTTDL — https://bvhttdl.gov.vn/van-ban-quan-ly/1379.htm"
+      ]
+    },
+    {
+      "id": "roc-con",
+      "ten": "Rộc Cồn (kèm đền Cây Chay)",
+      "lon": 105.58409,
+      "lat": 18.16252,
+      "loai": "lich-su",
+      "mo_ta": "Nơi diễn ra cuộc biểu tình Xô Viết Nghệ Tĩnh 1930-1931 của nhân dân Hương Khê; đền Cây Chay là nơi in truyền đơn, họp bí mật của Huyện uỷ.",
+      "dia_diem": "Phú Phong xưa (nay xã Hương Khê), Hương Khê",
+      "xep_hang": "Lịch sử cách mạng QG — xếp hạng 09/11/1994",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "18496",
+      "don_vi_neo": "Xã Hương Khê, Hà Tĩnh",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] huongkhe.hatinh.gov.vn — http://huongkhe.hatinh.gov.vn/doi-moi-tren-que-huong-cach-mang-roc-con-phu-phong-1599012146.html"
+      ]
+    },
+    {
+      "id": "di-tich-chien-thang-binh-gia",
+      "ten": "Di tích Chiến thắng Bình Giã (tượng đài 26 m)",
+      "lon": 107.21315,
+      "lat": 10.62077,
+      "loai": "lich-su",
+      "mo_ta": "Kỷ niệm chiến dịch Bình Giã mở màn 2/12/1964 — liên kết chéo battle Bình Giã (DB có).",
+      "dia_diem": "TT Ngãi Giao cũ (nay xã Ngãi Giao) — tượng đài ở Ngãi Giao, KHÔNG phải xã Bình Giã mới",
+      "xep_hang": "Lịch sử QG — QĐ 2754-QĐ/BT 15/10/1994 (⚠️ CÙNG số+ngày điện Ngọc Hoàng HCM — QĐ đợt lần nữa; số từ search chưa fetch)",
+      "do_tin_cay_toa_do": "thap",
+      "phuong_phap_toa_do": "tam-xa",
+      "ma_xa": "26575",
+      "don_vi_neo": "Xã Ngãi Giao, Hồ Chí Minh",
+      "trang_thai": "draft",
+      "nguon": [
+        "[WF-gov] baotangbrvt — https://www.baotangbrvt.org.vn/tinh-ba-ria-vung-tau-voi-cong-tac-trung-tu-ton-tao-va-phat-huy-gia-tri-di-tich-lich-su-chien-thang-binh-gia/"
+      ]
     }
   ]
 }

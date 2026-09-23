@@ -1,10 +1,10 @@
 {
   "sinh_luc": {
-    "tong_muc": 7430,
-    "tong_co_toa_do": 4353,
+    "tong_muc": 7464,
+    "tong_co_toa_do": 4387,
     "so_nhom_trung_ten": 906,
-    "so_cap_trung_toa_do": 2052,
-    "ngay_sinh": "2026-09-19"
+    "so_cap_trung_toa_do": 2094,
+    "ngay_sinh": "2026-09-23"
   },
   "entries": [
     {
@@ -56038,6 +56038,71 @@
       "trang_thai": "draft"
     },
     {
+      "id": "dinh-cau-ca-chua-uy-nhu",
+      "slug": null,
+      "ten": "Đình Cầu Cả - Chùa Uy Như",
+      "ten_chuan": "dinh cau ca chua uy nhu",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-thu-cuu",
+      "slug": null,
+      "ten": "Đình Thư Cưu",
+      "ten_chuan": "dinh thu cuu",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-chua-to-uy-no",
+      "slug": null,
+      "ten": "Đền - Chùa Tó (Khánh Sơn Tự)",
+      "ten_chuan": "den chua to khanh son tu",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-uoc-le",
+      "slug": null,
+      "ten": "Đình Ước Lễ",
+      "ten_chuan": "dinh uoc le",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chua-huong-tao",
+      "slug": null,
+      "ten": "Đình Chùa Hương Tảo",
+      "ten_chuan": "dinh chua huong tao",
+      "file": "overlays/di-tich-cap-tinh.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.08962,
+      "lon": 105.6228,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
       "id": "chien-truong-dien-bien-phu",
       "slug": null,
       "ten": "Chiến trường Điện Biên Phủ",
@@ -63704,6 +63769,383 @@
       "loai": "cach-mang",
       "lat": 10.2344606,
       "lon": 106.3755691,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "mieu-chua-dinh-lai-da",
+      "slug": null,
+      "ten": "Miếu, Chùa, Đình Lại Đà",
+      "ten_chuan": "mieu chua dinh lai da",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chua-dong-tru",
+      "slug": null,
+      "ten": "Đình Chùa Đông Trù",
+      "ten_chuan": "dinh chua dong tru",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-den-hoi-phu-chua-a-phai",
+      "slug": null,
+      "ten": "Đình - Đền Hội Phụ và Chùa Hội Phụ (A Phái Tự)",
+      "ten_chuan": "dinh den hoi phu va chua hoi phu a phai tu",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chua-mach-trang",
+      "slug": null,
+      "ten": "Đình - Chùa Mạch Tràng",
+      "ten_chuan": "dinh chua mach trang",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 2,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chua-phuc-hau",
+      "slug": null,
+      "ten": "Đình, Chùa Phúc Hậu",
+      "ten_chuan": "dinh chua phuc hau",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "den-le-xa-mai-lam",
+      "slug": null,
+      "ten": "Đền Lê Xá",
+      "ten_chuan": "den le xa",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-thai-binh-chua-dien-phuc",
+      "slug": null,
+      "ten": "Đình Thái Bình - Chùa Diên Phúc",
+      "ten_chuan": "dinh thai binh chua dien phuc",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nha-tho-ho-trinh-mai-lam",
+      "slug": null,
+      "ten": "Nhà thờ họ Trịnh",
+      "ten_chuan": "nha tho ho trinh",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-xuan-canh-chua-quan-am",
+      "slug": null,
+      "ten": "Đình Xuân Canh - Chùa Quan Âm",
+      "ten_chuan": "dinh xuan canh chua quan am",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "phao-dai-xuan-canh-chua-van-hoach",
+      "slug": null,
+      "ten": "Pháo đài Xuân Canh - Chùa Vân Hoạch",
+      "ten_chuan": "phao dai xuan canh chua van hoach",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 21.11009,
+      "lon": 105.87161,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-xuyen-duong",
+      "slug": null,
+      "ten": "Chùa Xuyên Dương (Bạch Dương am)",
+      "ten_chuan": "chua xuyen duong bach duong am",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "nha-luu-niem-bac-ho-xuyen-duong",
+      "slug": null,
+      "ten": "Nhà lưu niệm Bác Hồ tại Xuyên Dương",
+      "ten_chuan": "nha luu niem bac ho tai xuyen duong",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-truong-xuan",
+      "slug": null,
+      "ten": "Đình Trường Xuân",
+      "ten_chuan": "dinh truong xuan",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-tu-chau",
+      "slug": null,
+      "ten": "Đình Từ Châu",
+      "ten_chuan": "dinh tu chau",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chau-mai",
+      "slug": null,
+      "ten": "Đình Châu Mai",
+      "ten_chuan": "dinh chau mai",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-tao-duong",
+      "slug": null,
+      "ten": "Đình Tảo Dương",
+      "ten_chuan": "dinh tao duong",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-ang-phao",
+      "slug": null,
+      "ten": "Đình Áng Phao",
+      "ten_chuan": "dinh ang phao",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-phuc-thuy",
+      "slug": null,
+      "ten": "Đình Phúc Thụy",
+      "ten_chuan": "dinh phuc thuy",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.8096,
+      "lon": 105.79212,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "chua-ba-te-hiep-thuan",
+      "slug": null,
+      "ten": "Chùa Bà Tề (Đại Bi tự)",
+      "ten_chuan": "chua ba te dai bi tu",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.08962,
+      "lon": 105.6228,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-hiep-loc",
+      "slug": null,
+      "ten": "Đình Hiệp Lộc",
+      "ten_chuan": "dinh hiep loc",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.08962,
+      "lon": 105.6228,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-mieu-giao-ha",
+      "slug": null,
+      "ten": "Đình - Miếu Giáo Hạ",
+      "ten_chuan": "dinh mieu giao ha",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.08962,
+      "lon": 105.6228,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chua-mieu-ngoc-tao",
+      "slug": null,
+      "ten": "Đình Chùa Miếu Ngọc Tảo",
+      "ten_chuan": "dinh chua mieu ngoc tao",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 21.08962,
+      "lon": 105.6228,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-ha-thai",
+      "slug": null,
+      "ten": "Đình Hạ Thái",
+      "ten_chuan": "dinh ha thai",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.87983,
+      "lon": 105.88781,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "lang-da-quan-cong-do-ba-pham",
+      "slug": null,
+      "ten": "Lăng đá Quận công Đỗ Bá Phẩm (Lăng đá Quận Vân)",
+      "ten_chuan": "lang da quan cong do ba pham lang da quan van",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.87983,
+      "lon": 105.88781,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-den-chua-ninh-xa-thuong-tin",
+      "slug": null,
+      "ten": "Đình Đền Chùa Ninh Xá (Thường Tín)",
+      "ten_chuan": "dinh den chua ninh xa thuong tin",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.87983,
+      "lon": 105.88781,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-chua-khe-hoi",
+      "slug": null,
+      "ten": "Đình Chùa Khê Hồi",
+      "ten_chuan": "dinh chua khe hoi",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.87983,
+      "lon": 105.88781,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "dinh-bach-lien-thuong-tin",
+      "slug": null,
+      "ten": "Đình Bạch Liên (Thường Tín)",
+      "ten_chuan": "dinh bach lien thuong tin",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": null,
+      "lat": 20.87983,
+      "lon": 105.88781,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "roc-con",
+      "slug": null,
+      "ten": "Rộc Cồn (kèm đền Cây Chay)",
+      "ten_chuan": "roc con kem den cay chay",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 18.16252,
+      "lon": 105.58409,
+      "so_nguon": 1,
+      "trang_thai": "draft"
+    },
+    {
+      "id": "di-tich-chien-thang-binh-gia",
+      "slug": null,
+      "ten": "Di tích Chiến thắng Bình Giã (tượng đài 26 m)",
+      "ten_chuan": "di tich chien thang binh gia tuong dai 26 m",
+      "file": "overlays/di-tich-quoc-gia.json",
+      "mien": "overlays",
+      "loai": "lich-su",
+      "lat": 10.62077,
+      "lon": 107.21315,
       "so_nguon": 1,
       "trang_thai": "draft"
     },
@@ -124431,6 +124873,552 @@
         "file": "overlays/nghe-nhan-di-san.json",
         "id": "danh-xa-ram",
         "ten": "Danh Xà Rậm — Nghệ nhân Ưu tú đàn Cha'Pây đoong Vêng"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "mieu-chua-dinh-lai-da",
+        "ten": "Miếu, Chùa, Đình Lại Đà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-dong-tru",
+        "ten": "Đình Chùa Đông Trù"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-den-hoi-phu-chua-a-phai",
+        "ten": "Đình - Đền Hội Phụ và Chùa Hội Phụ (A Phái Tự)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-mach-trang",
+        "ten": "Đình - Chùa Mạch Tràng"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-phuc-hau",
+        "ten": "Đình, Chùa Phúc Hậu"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "den-le-xa-mai-lam",
+        "ten": "Đền Lê Xá"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-thai-binh-chua-dien-phuc",
+        "ten": "Đình Thái Bình - Chùa Diên Phúc"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "nha-tho-ho-trinh-mai-lam",
+        "ten": "Nhà thờ họ Trịnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-xuan-canh-chua-quan-am",
+        "ten": "Đình Xuân Canh - Chùa Quan Âm"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-cau-ca-chua-uy-nhu",
+        "ten": "Đình Cầu Cả - Chùa Uy Như"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "phao-dai-xuan-canh-chua-van-hoach",
+        "ten": "Pháo đài Xuân Canh - Chùa Vân Hoạch"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "mieu-chua-dinh-lai-da",
+        "ten": "Miếu, Chùa, Đình Lại Đà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-dong-tru",
+        "ten": "Đình Chùa Đông Trù"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-den-hoi-phu-chua-a-phai",
+        "ten": "Đình - Đền Hội Phụ và Chùa Hội Phụ (A Phái Tự)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-mach-trang",
+        "ten": "Đình - Chùa Mạch Tràng"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-phuc-hau",
+        "ten": "Đình, Chùa Phúc Hậu"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "den-le-xa-mai-lam",
+        "ten": "Đền Lê Xá"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-thai-binh-chua-dien-phuc",
+        "ten": "Đình Thái Bình - Chùa Diên Phúc"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "nha-tho-ho-trinh-mai-lam",
+        "ten": "Nhà thờ họ Trịnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-xuan-canh-chua-quan-am",
+        "ten": "Đình Xuân Canh - Chùa Quan Âm"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-thu-cuu",
+        "ten": "Đình Thư Cưu"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "phao-dai-xuan-canh-chua-van-hoach",
+        "ten": "Pháo đài Xuân Canh - Chùa Vân Hoạch"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "mieu-chua-dinh-lai-da",
+        "ten": "Miếu, Chùa, Đình Lại Đà"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-dong-tru",
+        "ten": "Đình Chùa Đông Trù"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-den-hoi-phu-chua-a-phai",
+        "ten": "Đình - Đền Hội Phụ và Chùa Hội Phụ (A Phái Tự)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-mach-trang",
+        "ten": "Đình - Chùa Mạch Tràng"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-phuc-hau",
+        "ten": "Đình, Chùa Phúc Hậu"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "den-le-xa-mai-lam",
+        "ten": "Đền Lê Xá"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-thai-binh-chua-dien-phuc",
+        "ten": "Đình Thái Bình - Chùa Diên Phúc"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "nha-tho-ho-trinh-mai-lam",
+        "ten": "Nhà thờ họ Trịnh"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-xuan-canh-chua-quan-am",
+        "ten": "Đình Xuân Canh - Chùa Quan Âm"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "den-chua-to-uy-no",
+        "ten": "Đền - Chùa Tó (Khánh Sơn Tự)"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "phao-dai-xuan-canh-chua-van-hoach",
+        "ten": "Pháo đài Xuân Canh - Chùa Vân Hoạch"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "chua-xuyen-duong",
+        "ten": "Chùa Xuyên Dương (Bạch Dương am)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "nha-luu-niem-bac-ho-xuyen-duong",
+        "ten": "Nhà lưu niệm Bác Hồ tại Xuyên Dương"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-truong-xuan",
+        "ten": "Đình Trường Xuân"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-tu-chau",
+        "ten": "Đình Từ Châu"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chau-mai",
+        "ten": "Đình Châu Mai"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-tao-duong",
+        "ten": "Đình Tảo Dương"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-ang-phao",
+        "ten": "Đình Áng Phao"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-uoc-le",
+        "ten": "Đình Ước Lễ"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-phuc-thuy",
+        "ten": "Đình Phúc Thụy"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-chua-huong-tao",
+        "ten": "Đình Chùa Hương Tảo"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "chua-ba-te-hiep-thuan",
+        "ten": "Chùa Bà Tề (Đại Bi tự)"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-chua-huong-tao",
+        "ten": "Đình Chùa Hương Tảo"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-hiep-loc",
+        "ten": "Đình Hiệp Lộc"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-chua-huong-tao",
+        "ten": "Đình Chùa Hương Tảo"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-mieu-giao-ha",
+        "ten": "Đình - Miếu Giáo Hạ"
+      },
+      "khoang_cach_m": 0
+    },
+    {
+      "a": {
+        "file": "overlays/di-tich-cap-tinh.json",
+        "id": "dinh-chua-huong-tao",
+        "ten": "Đình Chùa Hương Tảo"
+      },
+      "b": {
+        "file": "overlays/di-tich-quoc-gia.json",
+        "id": "dinh-chua-mieu-ngoc-tao",
+        "ten": "Đình Chùa Miếu Ngọc Tảo"
       },
       "khoang_cach_m": 0
     },
