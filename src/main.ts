@@ -2311,9 +2311,21 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   // Lớp phủ vừa thêm nằm TRÊN lớp landmark 3D (thêm sau thì vẽ sau), nên vòng
   // tròn phẳng sẽ đè lên chân mô hình. Đẩy lớp 3D lên trên cùng lần nữa.
   if (map.getLayer("landmarks-3d")) map.moveLayer("landmarks-3d");
+  nhanChuQuyenLenTren();
   // Lớp mới bật thì mô hình 3D của nó phải dựng ngay, không đợi tới lần người
   // dùng dời bản đồ (moveend là chỗ gọi còn lại).
   capNhatMoHinhDiem();
+}
+
+/**
+ * Nhãn Hoàng Sa · Trường Sa lên TRÊN CÙNG, trên cả lớp 3D. Gọi sau mọi
+ * `addLayer` không kèm beforeId. Trước 2026-09-23 lớp phủ thêm sau nằm đè lên
+ * nhãn: điểm «Quần đảo Hoàng Sa» (bản đồ cổ), «Hải chiến Hoàng Sa 1974» và
+ * «Sự kiện Gạc Ma» che mất chữ — nhãn vẫn được vẽ nên V4 cũ vẫn xanh.
+ * verify:chuquyen V4 giờ báo đỏ khi có lớp phủ nào nằm trên nhãn.
+ */
+function nhanChuQuyenLenTren(): void {
+  if (map.getLayer("chu-quyen-labels")) map.moveLayer("chu-quyen-labels");
 }
 
 // --- Lớp «Tên đường theo danh nhân» (thí điểm HN·HCM·ĐN) ---------------------
@@ -2424,6 +2436,7 @@ async function applyStreets(on: boolean): Promise<void> {
       "icon-ignore-placement": ICON_VA_CHAM_THEO_ZOOM,
     },
   });
+  nhanChuQuyenLenTren();
   const onStreetClick = (e: MapLayerMouseEvent) => {
     const f = e.features?.[0];
     if (!f) return;

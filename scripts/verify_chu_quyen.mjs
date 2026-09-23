@@ -285,10 +285,9 @@ async function main() {
     //
     // Đo 2026-08-26: bật đủ 35 lớp → 70 lớp nằm trên, nhãn VẪN được vẽ, vì lớp
     // phủ chỉ khai `icon-image` chứ không khai `text-field` nên không tranh va
-    // chạm CHỮ với nhãn chủ quyền. Đó là lý do hiện tại nó an toàn — nhưng là
-    // một tính chất tình cờ, không phải ràng buộc có ai canh. Thêm một
-    // `text-field` vào lớp phủ là bất biến #1 vỡ mà không cổng nào kêu.
-    // Cổng này chính là chỗ canh điều đó.
+    // chạm CHỮ với nhãn chủ quyền. Nhưng «được vẽ» không phải «đọc được»: vòng
+    // tròn và icon vẫn vẽ ĐÈ lên chữ (thấy trên ảnh 2026-09-23). Từ đó
+    // toggleOverlay() đẩy nhãn lên trên cùng, và cổng đòi 0 lớp nằm trên.
     await cdp.evaluate(`window.__map.jumpTo({center:{lng:112.5,lat:13.5},zoom:4.4})`);
     await sleep(2000);
     const soLop = await cdp.evaluate(
@@ -307,12 +306,20 @@ async function main() {
           .map((f) => f.properties && f.properties.ten).filter(Boolean);
         const ids = m.getStyle().layers.map((l) => l.id);
         const iCQ = ids.indexOf('chu-quyen-labels');
-        return { ve: [...new Set(ve)], soLopNamTren: ids.length - 1 - iCQ }; })()`,
+        return { ve: [...new Set(ve)], soLopNamTren: ids.length - 1 - iCQ, lopTren: ids.slice(iCQ + 1, iCQ + 6) }; })()`,
     );
     const thieu4 = DAO.filter((d) => !veThat.ve.some((t) => String(t).includes(d)));
-    if (!thieu4.length)
+    // «Được vẽ» chưa đủ: 2026-09-23 đo được điểm lớp phủ nằm ĐÈ lên chữ «Hoàng»
+    // và «Trường Sa» (Hải chiến Hoàng Sa 1974, Gạc Ma, bản đồ cổ) trong khi
+    // queryRenderedFeatures vẫn trả đủ nhãn. Nhãn phải là lớp TRÊN CÙNG.
+    if (veThat.soLopNamTren > 0) {
+      loi++;
       console.log(
-        `✅ V4 bật ${soLop} lớp phủ (${veThat.soLopNamTren} lớp nằm trên nhãn): nhãn chủ quyền VẪN ĐƯỢC VẼ`,
+        `❌ V4: ${veThat.soLopNamTren} lớp nằm TRÊN nhãn chủ quyền, có thể vẽ đè lên chữ — ${veThat.lopTren.join(", ")}…`,
+      );
+    } else if (!thieu4.length)
+      console.log(
+        `✅ V4 bật ${soLop} lớp phủ: nhãn chủ quyền được vẽ và nằm TRÊN CÙNG (0 lớp đè lên)`,
       );
     else {
       loi++;
