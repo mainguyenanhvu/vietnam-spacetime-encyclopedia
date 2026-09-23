@@ -21,6 +21,9 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 - **Icon vẽ tay** (`src/icon-ve-tay.ts`): path SVG vẽ bằng `Path2D`, đồng bộ — không có lúc lớp đòi ảnh chưa giải mã. 7 lớp nhân vật (đặc tả I01–I06, rút gọn cho 16px) + 8 lớp di sản · di tích · lễ hội. Nhãn chữ vẫn là emoji.
 - **Smoke S7**: nguyên nhân là `sleep(7000)` cố định trong khi trang giờ cần ~12s mới sẵn sàng; đo trước khi trang fetch gì. Đổi sang chờ điều kiện, trần 60s.
 - **Ô «Đối chiếu với»** cùng kiểu ô «Thời kỳ»; nhãn trên ô chọn hết bị ép 44px; ghi chú rỗng hết vẽ vạch.
+- **🔴 Nhãn chủ quyền bị lớp phủ vẽ đè** — điểm «Hải chiến Hoàng Sa 1974», «Sự kiện Gạc Ma», «Quần đảo Hoàng Sa» (bản đồ cổ) che chữ trong nhãn. `verify:chuquyen` V4 cũ vẫn xanh vì nhãn *được vẽ*. Nay nhãn luôn lên trên cùng sau mỗi lần thêm lớp, và V4 đỏ khi có lớp nào nằm trên nhãn (kiểm đỏ: bỏ bản sửa → 70 lớp nằm trên).
+- **Cổng tương phản mở rộng**: đo thêm chữ SVG (quầng = nền), hover + focus mọi kiểu điều khiển (`CSS.forcePseudoState`), và vòng focus (≥3:1, hoặc VÔ HÌNH). Kiểm đỏ bằng 3 lỗi cài giả. Bắt 7 lỗi thật — vòng focus trên topbar/thanh thời gian 1,03–2,46:1, tab thư viện đang chọn khi hover 1,10:1 — sửa hết, 0/42.
+- **Icon vẽ tay cho đủ 35 lớp phủ** (tổng hợp): 7 nhân vật + 8 di sản + 5 lớp từng chung emoji + 15 lớp còn lại. Hai bản vẽ bị loại khi soát bảng icon: kiếm giữa khiên đọc thành thánh giá, mũ cánh chuồn quá dẹt.
 
 ## 2026-09-23 — Chế độ ban đêm + cổng đo tương phản toàn trang
 
