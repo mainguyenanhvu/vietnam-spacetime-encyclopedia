@@ -40,6 +40,7 @@ import {
   type OverlayConf,
   type MucTaiDiem,
 } from "./overlays-config";
+import { ICON_VE_TAY, tenIconVe, veIconLop } from "./icon-ve-tay";
 import { initChipBar } from "./chip-bar";
 import { initBanDoCo } from "./bandoco";
 import { initLienKetTrangThai } from "./lien-ket-trang-thai";
@@ -2107,6 +2108,10 @@ function registerOverlayIcons(): void {
     if (map.hasImage(emoji)) continue;
     map.addImage(emoji, emojiToImageData(emoji), { pixelRatio: 2 });
   }
+  for (const [lopId, ve] of Object.entries(ICON_VE_TAY)) {
+    const ten = tenIconVe(lopId);
+    if (!map.hasImage(ten)) map.addImage(ten, veIconLop(ve), { pixelRatio: 2 });
+  }
 }
 
 const overlayLoaded = new Set<string>();
@@ -2294,7 +2299,7 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
     type: "symbol",
     source: layerId,
     layout: {
-      "icon-image": conf.icon,
+      "icon-image": ICON_VE_TAY[id] ? tenIconVe(id) : conf.icon,
       "icon-size": 0.5,
       "icon-allow-overlap": ICON_VA_CHAM_THEO_ZOOM,
       "icon-ignore-placement": ICON_VA_CHAM_THEO_ZOOM,
