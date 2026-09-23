@@ -731,10 +731,13 @@
 
 /* ═══ Khối văn thơ trong TRANG TỈNH ═══════════════════════════════════════ */
 
-.lib-tinh-ds { display: grid; gap: var(--s-4); }
-.lib-tinh-muc { padding-bottom: var(--s-3); border-bottom: 1px solid var(--vien); }
+.lib-tinh-ds { display: grid; gap: var(--s-2); margin-top: var(--s-2); }
+.lib-tinh-muc { padding-bottom: var(--s-2); border-bottom: 1px solid var(--vien); }
 .lib-tinh-muc:last-child { border-bottom: none; }
-.lib-tinh-muc h4 { margin-bottom: 0.2rem; font-size: var(--co-md); }
+/* Dòng gập của từng bài: tên đậm, tác giả · năm · thể loại nhạt bên dưới. */
+.lib-tinh-muc > summary { font-weight: normal; }
+.lib-tinh-muc > summary .lib-tinh-ten { font-weight: 600; font-size: var(--co-md); }
+.lib-tinh-muc > summary .lib-phu { display: block; margin-top: 0.1rem; }
 .lib-tinh-muc > * + * { margin-top: 0.6rem; }
 
 /* Lời giải nghĩa của ca dao · tục ngữ · thành ngữ.

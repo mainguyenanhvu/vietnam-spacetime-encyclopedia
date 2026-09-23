@@ -1371,15 +1371,18 @@ function noiCongCu(goc: HTMLElement): void {
 export function htmlVanThoTinh(lib: ThuVienData, slug: string): string {
   const muc = gomMuc(lib).filter((m) => m.chuDe !== CHU_DE_BAN_DO && m.tinh.includes(slug));
   if (!muc.length) return "";
-  return `<details class="profile-section" open><summary>📖 Văn thơ, ca dao & bài hát gắn với vùng đất này (${muc.length})</summary>
+  // GẬP cả khối lẫn từng bài. Trước 2026-09-23 khối này mở sẵn và in toàn văn
+  // mọi bài: hồ sơ Hà Nội cao 109.193px ở chế độ trẻ em (60.468px người lớn),
+  // 98% số chữ đang hiện nằm ở đây. Mọi mục khác của hồ sơ vốn đã gập.
+  return `<details class="profile-section"><summary>📖 Văn thơ, ca dao & bài hát gắn với vùng đất này (${muc.length})</summary>
     <div class="lib-tinh-ds">${sapXep(muc, "thoi-gian")
       .map(
-        (m) => `<article class="lib-tinh-muc">
-          <h4>${escVan(m.ten)}</h4>
-          <p class="lib-phu">${[m.tacGia, m.namNhan, m.theLoai].filter(Boolean).map(escVan).join(" · ")}</p>
+        (m) => `<details class="lib-tinh-muc">
+          <summary><span class="lib-tinh-ten">${escVan(m.ten)}</span>
+            <span class="lib-phu">${[m.tacGia, m.namNhan, m.theLoai].filter(Boolean).map(escVan).join(" · ")}</span></summary>
           ${m.than()}
           ${nguonHtml(m.nguon)}
-        </article>`,
+        </details>`,
       )
       .join("")}</div>
   </details>`;

@@ -8,6 +8,20 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-09-23 (đợt 2) — Icon vẽ tay cho 15 lớp, hồ sơ tỉnh gọn 33 lần, smoke hết mù
+
+| Việc | Trước | Sau |
+|---|---|---|
+| Hồ sơ Hà Nội, chế độ trẻ em | cao 109.193px, 115.479 ký tự đang hiện | 3.270px, 2.084 ký tự |
+| Hồ sơ Hà Nội, người lớn | 60.468px | 2.245px |
+| Icon lớp phủ trên bản đồ 2D | emoji; UNESCO · di tích QG · danh nhân chung 🏛️ | 15 lớp vẽ tay, mỗi lớp một hình |
+| Smoke S7 | 0 request bắt được → hỏng giả | 7 request · 0,51 MB, 9/0 |
+
+- **Hồ sơ tỉnh**: khối «Văn thơ, ca dao & bài hát» mở sẵn và in toàn văn mọi bài (Hà Nội 117 bài) — 98% chữ của hồ sơ. Giờ gập cả khối lẫn từng bài. Không bỏ chữ nào.
+- **Icon vẽ tay** (`src/icon-ve-tay.ts`): path SVG vẽ bằng `Path2D`, đồng bộ — không có lúc lớp đòi ảnh chưa giải mã. 7 lớp nhân vật (đặc tả I01–I06, rút gọn cho 16px) + 8 lớp di sản · di tích · lễ hội. Nhãn chữ vẫn là emoji.
+- **Smoke S7**: nguyên nhân là `sleep(7000)` cố định trong khi trang giờ cần ~12s mới sẵn sàng; đo trước khi trang fetch gì. Đổi sang chờ điều kiện, trần 60s.
+- **Ô «Đối chiếu với»** cùng kiểu ô «Thời kỳ»; nhãn trên ô chọn hết bị ép 44px; ghi chú rỗng hết vẽ vạch.
+
 ## 2026-09-23 — Chế độ ban đêm + cổng đo tương phản toàn trang
 
 Mục treo từ 2026-08-11 («chế độ tối — yêu cầu ĐÃ CÓ nhưng cố ý chưa ship vì chưa đo được»). Nút thắt thật là **không có cách đo lại cả trang** mỗi lần đổi token, nên làm cổng đo trước, bảng màu sau.
