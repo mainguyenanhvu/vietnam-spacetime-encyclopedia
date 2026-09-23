@@ -325,6 +325,11 @@ trấn Mộc Châu) · Thẳm Tát Tòng (phường Chiềng An) · Thành Sam M
 **Việc rẻ nhất còn lại của cả dự án**: tìm cho ra một nguồn toạ độ cấp xã dùng
 được, rồi mở khoá 610 mục đã đủ nguồn.
 
+### ✅ 2026-09-23 — LỐI RA cho 541 mục `cho_toa_do`: TÂM XÃ (quyết định §7.17)
+
+Bảng `docs/research/tam-xa-2025.json`: **3.321 đơn vị = đúng tổng cấp xã 2025**, 0 lỗi. Kiểm bằng dữ liệu độc lập: **0/3.321 điểm nằm ngoài xã của nó** (28 xã lõm dùng đoạn cắt ngang thay trọng tâm) · đối chiếu ranh 34 tỉnh của dự án: **1 lệch thật** (xã Bát Tràng rơi sang Hưng Yên — ranh 34 tỉnh cộng đồng giản lược bờ sông Hồng, bảng đúng) · 23 điểm ven biển/đảo nằm ngoài đa giác tỉnh giản lược. Đặc khu Hoàng Sa + Trường Sa: `khong_neo` — «tâm» Trường Sa rơi vào vùng bãi Tư Chính.
+**Việc còn lại là ÁNH XẠ, không phải toạ độ**: `dia_diem` trong kho phần lớn ghi tên xã CŨ (trước sắp xếp) — mỗi mục phải tra nghị quyết sắp xếp xã của tỉnh để ra xã MỚI. Không ánh xạ chắc được thì để lại, đừng đoán.
+
 ### 🔴 2026-08-28 — ĐÃ CHẠY HẾT LỐI OSM. Câu «việc rẻ nhất còn lại của cả dự án» ở ngay trên KHÔNG còn đúng.
 
 Chạy trọn công thức Overpass mà PLAN đặt ra: **26 truy vấn, một truy vấn mỗi tỉnh,
@@ -710,6 +715,7 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 13. Phim tài liệu: chỉ nhúng `youtube-nocookie` đã kiểm oEmbed = 200. Kênh nhà nước (`kenh_loai=state`) auto `reviewed`, còn lại chờ người duyệt.
 14. Tên đường: **Phương án A** — bảng liên kết tĩnh + centroid qua Overpass. Không vẽ hình học đầy đủ ở v1.
 15. Cương vực Việt cổ chỉ mang tính minh hoạ giáo dục, **không** dùng làm căn cứ yêu sách lãnh thổ hiện đại. Không đặt cạnh lớp chủ quyền Hoàng Sa–Trường Sa theo cách gây hiểu lầm hai loại "ranh giới" tương đương.
+17. **Neo TÂM XÃ cho mục đủ nguồn mà thiếu toạ độ — chủ dự án duyệt 2026-09-23 (phương án A).** Ghi `phuong_phap_toa_do: "tam-xa"` + `ma_xa` (mã QĐ 19/2025) + `don_vi_neo`; toạ độ lấy ĐÚNG điểm trong `docs/research/tam-xa-2025.json` (sinh bởi `scripts/build_tam_xa.mjs` — hình học của NXB TN-MT&BĐ VN / sapnhap.bando.com.vn). Bản đồ vẽ đĩa mờ rộng, popup ghi «vị trí gần đúng». Cổng `validate_tam_xa` chặn: thiếu nguồn, toạ độ tự đặt, mã xã lạ, neo đặc khu quần đảo. Neo tâm HUYỆN vẫn cấm. Sai số trung vị: Sơn La 7,5 km · Lai Châu 8,8 · HN 2,8 · HCM 2,4.
 16. **Static JSON/GeoJSON in-repo, không backend.** Đây là thứ giữ cho hosting miễn phí. Không thêm phụ thuộc server mà không nói rõ.
 
 ---
