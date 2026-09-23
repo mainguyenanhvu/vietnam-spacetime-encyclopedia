@@ -661,6 +661,11 @@ body.kid-mode #topbar {
 #olympia-content button:hover:not(:disabled) {
   background: var(--brand);
 }
+/* --brand trẻ em (#ea580c) SÁNG hơn --brand-dam: hover làm chữ kem tụt còn
+   3,11:1. Trẻ em thì hover đi về phía tối. */
+:root[data-che-do="tre-em"] #olympia-content button:hover:not(:disabled) {
+  background: var(--brand-sau);
+}
 
 .ol-question {
   font-weight: 600;
@@ -1560,6 +1565,14 @@ input[type="range"] {
   outline-offset: 2px;
   border-radius: 4px;
 }
+/* --focus đo trên nền SÁNG. Topbar đỏ và thanh dòng thời gian đen là nền SẪM:
+   vàng #b3791f trên topbar chỉ 1,85:1, tím chế độ trẻ em 1,10:1, tím trên
+   thanh đen 2,46:1 (verify:tuongphan lượt hover/focus, 2026-09-23). Ở đây
+   vòng focus là màu chữ tiêu đề trên nền đặc — sáng ở cả ba chế độ. */
+#topbar,
+#timeline-bar {
+  --focus: var(--tieu-de-tren-nghich);
+}
 
 /* Thanh cuộn mảnh trong panel */
 #province-panel,
@@ -2184,8 +2197,11 @@ input[type="range"] {
   transition: transform var(--dur-nhanh) var(--ease),
     box-shadow var(--dur-nhanh) var(--ease);
 }
+/* Hover làm TỐI nền, không làm sáng: vàng pha lên đỏ đẩy nền về #b83d2a,
+   chữ --chu-tren-nghich chỉ còn 3,88:1. Chế độ trẻ em có quy tắc .chip riêng
+   (nền --mat) đứng sau, nên không bị dòng này chạm tới. */
 .chip:hover {
-  background: var(--vien-nhan-nhe);
+  background: color-mix(in srgb, var(--brand-sau) 34%, transparent);
   transform: translateY(-1px);
 }
 .chip.chip-active {
@@ -2202,8 +2218,8 @@ input[type="range"] {
   padding: 0 0.4rem;
 }
 .chip-tat {
+  /* Không hạ opacity: lúc hover chữ còn 3,52:1. Nét đứt đã đủ phân biệt. */
   border-style: dashed;
-  opacity: 0.92;
 }
 :root[data-che-do="tre-em"] .chip {
   background: var(--mat);
@@ -2394,7 +2410,7 @@ input[type="range"] {
   background: var(--nhan-mo);
 }
 .chip-mui:focus-visible {
-  outline: 3px solid var(--nhan);
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 

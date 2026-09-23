@@ -130,8 +130,12 @@ async function doiMap(cdp, timeoutMs = 60000) {
   return false;
 }
 
-// Chạy TRONG trang. Trả danh sách phép đo của mọi chữ đang hiện.
-const DO_TRANG = `(() => {
+// Chạy TRONG trang: cài `window.__tp` với ba hàm —
+//   do(goc)   đo mọi chữ đang hiện bên trong `goc` (cả chữ SVG),
+//   kieu(el)  chụp các thuộc tính có thể làm chỉ báo focus,
+//   vien(el)  tỉ lệ tương phản của vòng outline so với nền xung quanh.
+// Cài lại sau mỗi lần nạp trang.
+const CAI_DAT = `(() => {
   const cv = document.createElement("canvas"); cv.width = cv.height = 1;
   const cx = cv.getContext("2d", { willReadFrequently: true });
   const bo = new Map();
@@ -186,15 +190,67 @@ const DO_TRANG = `(() => {
     return (cha ? "#" + cha.id + " " : "") + s;
   };
 
+  const hex = (c) => "#" + c.slice(0, 3).map((v) => Math.round(v).toString(16).padStart(2, "0")).join("");
+
+  // Chữ SVG: màu là fill, không phải color. Nền là QUẦNG nếu chữ có viền vẽ
+  // trước (paint-order: stroke) rộng ≥2px thật — kỹ thuật nhãn bản đồ của sa
+  // đồ. Không quầng thì lấy hình nằm ngay dưới tâm chữ; không có hình thì nền
+  // HTML chứa SVG. Chỉ lấy MỘT điểm (tâm) — đánh dấu xấp xỉ.
+  const doSvg = (el, cs, op, mt0) => {
+    const ctm = el.getScreenCTM();
+    const tile_ = ctm ? Math.hypot(ctm.a, ctm.b) : 1;
+    const co = parseFloat(cs.fontSize) * tile_, dam = Number(cs.fontWeight) || 400;
+    const nguong = co >= 24 || (co >= 18.66 && dam >= 700) ? 3 : 4.5;
+    const mt = { ...mt0, co: Math.round(co), nguong, svg: true };
+    if (/url\\(/.test(cs.fill) || cs.fill === "none") return { ...mt, anh: true };
+    const fg = [...mau(cs.fill)]; fg[3] *= Number(cs.fillOpacity);
+    let ungVien = null, quang = false, xapXi = true, nenTu = "";
+    const sw = parseFloat(cs.strokeWidth) * tile_;
+    if (cs.stroke !== "none" && !/url\\(/.test(cs.stroke) && /^\\s*stroke/.test(cs.paintOrder) && sw >= 2) {
+      const s = [...mau(cs.stroke)]; s[3] *= Number(cs.strokeOpacity);
+      if (s[3] >= 0.99) { ungVien = [s]; quang = true; xapXi = false; }
+    }
+    if (!ungVien) {
+      const r = el.getBoundingClientRect();
+      const duoi = document.elementsFromPoint(r.left + r.width / 2, r.top + r.height / 2)
+        .find((e) => e !== el && !e.contains(el) && !el.contains(e));
+      const cha = duoi ?? el;
+      const b = nen(cha);
+      if (b.anh) return { ...mt, anh: true };
+      ungVien = b.ungVien;
+      if (duoi instanceof SVGGeometryElement) {
+        const dc = getComputedStyle(duoi);
+        if (dc.fill !== "none" && !/url\\(/.test(dc.fill)) {
+          const f = [...mau(dc.fill)]; f[3] *= Number(dc.fillOpacity) * Number(dc.opacity);
+          ungVien = f[3] >= 0.99 ? [f] : ungVien.map((u) => tron(f, u));
+          nenTu = ten(duoi);
+        }
+      } else if (b.chuNen) nenTu = ten(b.chuNen);
+    }
+    let toiNhat = Infinity, bgToi = null;
+    for (const bg of ungVien) {
+      let f = fg[3] < 1 ? tron(fg, bg) : fg;
+      if (op < 1) f = tron([f[0], f[1], f[2], op], bg);
+      const t = tile(f, bg);
+      if (t < toiNhat) { toiNhat = t; bgToi = bg; }
+    }
+    return { ...mt, tile: Math.round(toiNhat * 100) / 100, fg: hex(fg), bg: hex(bgToi), xapXi, nenTu: quang ? "quầng" : nenTu };
+  };
+
+  const doChu = (goc) => {
   const kq = [];
-  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const walker = document.createTreeWalker(goc, NodeFilter.SHOW_TEXT);
   const daXet = new Set();
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
     if (!/[\\p{L}\\p{N}]/u.test(n.nodeValue)) continue;
     const el = n.parentElement;
     if (!el || daXet.has(el)) continue;
     daXet.add(el);
-    if (el.closest("svg, canvas, script, style, noscript, [hidden]")) continue;
+    if (el.closest("canvas, script, style, noscript, [hidden]")) continue;
+    // Trong SVG chỉ đo phần tử chữ (<title>/<desc> không vẽ ra). HTML trong
+    // <foreignObject> đi đường thường.
+    const laSvgChu = el instanceof SVGTextContentElement;
+    if (el.closest("svg") && !laSvgChu && !el.closest("foreignObject")) continue;
     if (el.closest(":disabled, [aria-disabled=true]")) continue;
     const cs = getComputedStyle(el);
     if (cs.visibility !== "visible" || cs.display === "none") continue;
@@ -209,6 +265,7 @@ const DO_TRANG = `(() => {
     }
     if (anDi || op < 0.05) continue;
     // Chữ tàng hình cho screen reader (clip 1px) đã bị lọc bởi kích thước ở trên.
+    if (laSvgChu) { kq.push(doSvg(el, cs, op, { chon: ten(el), chu: n.nodeValue.trim().slice(0, 40) })); continue; }
     const b = nen(el);
     const co = parseFloat(cs.fontSize), dam = Number(cs.fontWeight) || 400;
     const lon = co >= 24 || (co >= 18.66 && dam >= 700);
@@ -223,11 +280,97 @@ const DO_TRANG = `(() => {
       const t = tile(f, bg);
       if (t < toiNhat) { toiNhat = t; bgToi = bg; }
     }
-    const hex = (c) => "#" + c.slice(0, 3).map((v) => Math.round(v).toString(16).padStart(2, "0")).join("");
     kq.push({ ...mt, tile: Math.round(toiNhat * 100) / 100, fg: hex(fg), bg: hex(bgToi), xapXi: b.xapXi, nenTu: b.chuNen && b.chuNen !== el ? ten(b.chuNen) : "" });
   }
   return kq;
+  };
+
+  // Thuộc tính có thể làm chỉ báo focus. So trước/sau khi ép :focus-visible —
+  // không đổi gì cả là focus VÔ HÌNH (WCAG 2.4.7).
+  const kieu = (el) => {
+    const c = getComputedStyle(el);
+    return [c.outlineStyle, c.outlineWidth, c.outlineColor, c.boxShadow, c.borderColor, c.backgroundColor, c.color, c.textDecorationLine].join("|");
+  };
+  // Vòng outline so với nền NGOÀI phần tử (outline vẽ ra ngoài viền). WCAG
+  // 1.4.11: chỉ báo không phải chữ cần 3:1 với màu kề bên.
+  const vien = (el) => {
+    const c = getComputedStyle(el);
+    if (c.outlineStyle === "none" || parseFloat(c.outlineWidth) < 1) return null;
+    const o = mau(c.outlineColor);
+    const b = nen(el.parentElement ?? document.body);
+    if (b.anh) return null;
+    let t = Infinity, bg = null;
+    for (const u of b.ungVien) { const f = o[3] < 1 ? tron(o, u) : o; const x = tile(f, u); if (x < t) { t = x; bg = u; } }
+    return { tile: Math.round(t * 100) / 100, fg: hex(o), bg: hex(bg), nenTu: b.chuNen ? ten(b.chuNen) : "" };
+  };
+
+  // Chọn MỘT phần tử đại diện cho mỗi kiểu điều khiển (thẻ + class + khu vực
+  // có id): 35 checkbox lớp phủ giống hệt nhau chỉ cần đo một cái.
+  const chonTuongTac = (tran) => {
+    for (const e of document.querySelectorAll("[data-tp-i]")) e.removeAttribute("data-tp-i");
+    const daCo = new Set(); let i = 0;
+    for (const e of document.querySelectorAll("button, a[href], summary, select, input, [role=button], [role=tab], [tabindex='0']")) {
+      if (e.matches(":disabled, [aria-disabled=true]") || e.closest("[hidden]")) continue;
+      if (!e.checkVisibility({ opacityProperty: true, visibilityProperty: true })) continue;
+      const r = e.getBoundingClientRect(); if (r.width < 2 || r.height < 2) continue;
+      const k = e.tagName + "." + [...e.classList].sort().join(".") + "|" + (e.parentElement?.closest("[id]")?.id ?? "");
+      if (daCo.has(k)) continue;
+      daCo.add(k); e.setAttribute("data-tp-i", String(i++));
+      if (i >= tran) break;
+    }
+    return i;
+  };
+
+  window.__tp = { do: doChu, kieu, vien, chonTuongTac, ten };
+  return 1;
 })()`;
+const DO_TRANG = `__tp.do(document.body)`;
+
+/**
+ * Đo hover và focus của các phần tử điều khiển đại diện. Ép trạng thái bằng
+ * `CSS.forcePseudoState` — chuột ảo của CDP chỉ hover được một chỗ một lúc và
+ * không bao giờ tạo :focus-visible.
+ *
+ * Trả danh sách mục trượt cùng định dạng với lượt đo chữ, `chon` mang tiền tố
+ * [hover]/[focus] để người đọc biết trạng thái nào.
+ */
+async function doTuongTac(cdp) {
+  const TRAN = Number(process.env.TP_TRAN_TUONG_TAC ?? 60);
+  const so = await cdp.evaluate(`__tp.chonTuongTac(${TRAN})`);
+  // Tắt chuyển tiếp: đo giữa lúc màu đang nội suy là đo rác. Trang có tôn
+  // trọng prefers-reduced-motion hay không thì cũng không phụ thuộc vào đó.
+  await cdp.evaluate(`(() => { const st = document.createElement("style"); st.id = "tp-tat-chuyen";
+    st.textContent = "*, *::before, *::after { transition: none !important; animation: none !important; }";
+    document.head.append(st); return 1; })()`);
+  const { root } = await cdp.send("DOM.getDocument", { depth: 0 });
+  const truot = [];
+  let coDo = 0;
+  for (let i = 0; i < so; i++) {
+    const { nodeId } = (await cdp.send("DOM.querySelector", { nodeId: root.nodeId, selector: `[data-tp-i="${i}"]` })) ?? {};
+    if (!nodeId) continue;
+    coDo++;
+    const EL = `document.querySelector('[data-tp-i="${i}"]')`;
+    for (const tt of ["hover", "focus"]) {
+      const truoc = tt === "focus" ? await cdp.evaluate(`__tp.kieu(${EL})`) : null;
+      await cdp.send("CSS.forcePseudoState", {
+        nodeId,
+        forcedPseudoClasses: tt === "hover" ? ["hover"] : ["focus", "focus-visible"],
+      });
+      const kq = await cdp.evaluate(`__tp.do(${EL})`);
+      for (const t of kq) if (!t.anh && t.tile < t.nguong) truot.push({ ...t, chon: `[${tt}] ${t.chon}` });
+      if (tt === "focus") {
+        const sau = await cdp.evaluate(`__tp.kieu(${EL})`);
+        const v = await cdp.evaluate(`__tp.vien(${EL})`);
+        const chon = `[focus] ${await cdp.evaluate(`__tp.ten(${EL})`)}`;
+        if (v && v.tile < 3) truot.push({ ...v, chon, chu: "(vòng focus)", nguong: 3 });
+        else if (!v && sau === truoc) truot.push({ chon, chu: "(focus VÔ HÌNH — không thuộc tính nào đổi)", tile: 1, nguong: 3, fg: "-", bg: "-" });
+      }
+      await cdp.send("CSS.forcePseudoState", { nodeId, forcedPseudoClasses: [] });
+    }
+  }
+  await cdp.evaluate(`(document.getElementById("tp-tat-chuyen")?.remove(), 1)`);
+  return { truot, coDo };
+}
 
 /** Các trạng thái giao diện cần đo. Mỗi bước trả về false nếu dựng hỏng. */
 const TRANG_THAI = [
@@ -356,6 +499,8 @@ async function main() {
     const cdp = new Cdp(ws);
     await cdp.send("Runtime.enable");
     await cdp.send("Page.enable");
+    await cdp.send("DOM.enable");
+    await cdp.send("CSS.enable");
     // Tắt chuyển động: panel đang trượt vào thì màu đang nội suy, đo là đo rác.
     await cdp.send("Emulation.setEmulatedMedia", {
       features: [{ name: "prefers-reduced-motion", value: "reduce" }],
@@ -389,9 +534,12 @@ async function main() {
           const { data } = await cdp.send("Page.captureScreenshot", { format: "png" });
           writeFileSync(path.join(ANH, `${che}-${tt.ten.replace(/\s+/g, "-")}.png`), Buffer.from(data, "base64"));
         }
+        await cdp.evaluate(CAI_DAT);
         const kq = await cdp.evaluate(DO_TRANG);
         const anh = kq.filter((x) => x.anh).length;
-        const truot = kq.filter((x) => !x.anh && x.tile < x.nguong);
+        const soSvg = kq.filter((x) => x.svg && !x.anh).length;
+        const tuongTac = await doTuongTac(cdp);
+        const truot = [...kq.filter((x) => !x.anh && x.tile < x.nguong), ...tuongTac.truot];
         // Gộp theo (bộ chọn, cặp màu) — một danh sách 40 mục giống nhau không ai đọc.
         const nhom = new Map();
         for (const t of truot) {
@@ -400,15 +548,21 @@ async function main() {
           nhom.get(k).n++;
         }
         const dau = nhom.size ? "❌" : "✅";
-        console.log(`  ${dau} [${tt.ten}] ${kq.length - anh} chữ đo được · ${truot.length} trượt · ${anh} trên nền ảnh (không đo)`);
+        console.log(
+          `  ${dau} [${tt.ten}] ${kq.length - anh} chữ đo được (${soSvg} SVG) · ${tuongTac.coDo} điều khiển × hover/focus · ${truot.length} trượt · ${anh} trên nền ảnh (không đo)`,
+        );
         for (const t of [...nhom.values()].sort((a, b) => a.tile - b.tile))
           console.log(
-            `      ${t.tile.toFixed(2)}:1 < ${t.nguong}  ${t.chon}  ${t.fg} trên ${t.bg}${t.nenTu ? " [nền: " + t.nenTu + "]" : ""}${t.xapXi ? " (trôi trên bản đồ, xấp xỉ)" : ""}  ×${t.n}  «${t.chu}»`,
+            `      ${t.tile.toFixed(2)}:1 < ${t.nguong}  ${t.chon}  ${t.fg} trên ${t.bg}${t.nenTu ? " [nền: " + t.nenTu + "]" : ""}${t.xapXi ? (t.svg ? " (SVG, lấy mẫu tâm chữ)" : " (trôi trên bản đồ, xấp xỉ)") : ""}  ×${t.n}  «${t.chu}»`,
           );
         loi += nhom.size;
       }
     }
-    console.log(loi === 0 ? "\n✅ Mọi chữ đo được đều đạt ngưỡng WCAG 1.4.3." : `\n❌ ${loi} nhóm chữ trượt ngưỡng.`);
+    console.log(
+      loi === 0
+        ? "\n✅ Đạt: chữ HTML + SVG (WCAG 1.4.3), cả lúc hover/focus; chỉ báo focus thấy được và đạt 3:1 (2.4.7 · 1.4.11)."
+        : `\n❌ ${loi} nhóm trượt ngưỡng.`,
+    );
   } catch (e) {
     console.error("❌", e.message);
     loi++;

@@ -193,7 +193,10 @@
 
 .lib-tab:hover { background: var(--lop-brand-nhe); }
 
-.lib-tab-chon {
+/* :hover đi kèm vì .lib-tab:hover (0,2,0) thắng .lib-tab-chon (0,1,0): tab
+   đang chọn mất nền đậm khi rê chuột, chữ sáng còn 1,10:1. */
+.lib-tab-chon,
+.lib-tab-chon:hover {
   background: var(--lib-tab-chon-nen);
   border-color: var(--lib-tab-chon-nen);
   color: var(--chu-tren-dac);

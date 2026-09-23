@@ -724,6 +724,13 @@ h4 {
   fill: var(--brand);
 }
 
+/* Nút điều khiển của MapLibre vẫn nền TRẮNG ở chế độ ban đêm (chỉ đảo màu
+   icon). --focus ban đêm là vàng sáng — trên trắng chỉ 1,73:1. Dùng lại vàng
+   sẫm của chế độ ngày cho riêng cụm này. */
+:root[data-che-do="toi"] .maplibregl-ctrl {
+  --focus: #94620f;
+}
+
 /* Tên thời kỳ dài hơn bề ngang panel — cắt bằng "…" thay vì đè lên mũi tên. */
 #lc-period,
 #lc-doi-chieu {
