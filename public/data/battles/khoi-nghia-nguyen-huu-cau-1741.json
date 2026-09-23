@@ -1,148 +1,372 @@
 {
+  "ghi_chu": "Sa đồ khởi nghĩa Nguyễn Hữu Cầu 1741–1751 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Đây là NỘI CHIẾN giữa nông dân Đàng Ngoài và chính quyền Lê – Trịnh, nên khai loai_xung_dot=noi-chien. Ghi chú nội bộ về nguồn: bản trước đã bỏ các chi tiết «Đông đạo Tổng quốc bảo dân Đại tướng quân», «đánh Kinh Bắc», «xử tử tại Thăng Long tháng 3/1751» vì trang hdnd.haiduong.gov.vn — nguồn duy nhất khi đó — KHÔNG chép chúng. Nay các chi tiết ấy được nạp lại vì đã mở được một nguồn KHÁC có chép: Bách khoa toàn thư Quân sự Việt Nam (NXB Quân đội nhân dân, 2015) đăng trên Ngân hàng dữ liệu Thông tấn xã Việt Nam. Trang hdnd.haiduong.gov.vn vẫn giữ nguyên vai trò nguồn cho phần hoả ngưu trận.",
   "id": "khoi-nghia-nguyen-huu-cau-1741",
-  "ghi_chu": "Sa đồ Khởi nghĩa Nguyễn Hữu Cầu 1741–1751 — nội dung ĐÃ XÁC MINH lại bằng WebFetch/crawl4ai trực tiếp mở hdnd.haiduong.gov.vn sau cảnh báo WebSearch có thể bịa chi tiết (2026-08-27): BỎ chi tiết '1743 giết thủy binh, tự xưng Đông Đạo Thống quốc Bảo dân Đại tướng quân', 'lan Kinh Bắc uy hiếp Thăng Long', 'kéo xuống Sơn Nam – Thanh Hóa – Nghệ An', 'hành hình tại Thăng Long tháng 3/1751' — KHÔNG có trong trang đã xác minh. Thay bằng nội dung đúng nguyên văn: gia nhập khởi nghĩa Nguyễn Cừ, hỏa ngưu trận (nguồn dẫn Binh thư yếu lược), năm 1751 bị bắt hành hình (không nêu tháng/địa điểm cụ thể). trang_thai=draft chờ soát §9.",
   "ten": "Khởi nghĩa Nguyễn Hữu Cầu (Quận He) 1741–1751",
   "nam": 1741,
   "sa_do_kieu": "tong-quat",
+  "loai_xung_dot": "noi-chien",
   "chi_huy": "Nguyễn Hữu Cầu (Quận He)",
   "doi_thu": "Quân đội chúa Trịnh (Đàng Ngoài)",
   "dia_diem": "Căn cứ Đồ Sơn (nay thuộc thành phố Hải Phòng)",
+  "thoi_gian": "1741 – tháng 3/1751",
   "lien_quan_tinh": [
     "hai-phong"
   ],
-  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
       "kieu": "bien",
       "diem": [
-        [
-          0,
-          500
-        ],
-        [
-          200,
-          480
-        ],
-        [
-          400,
-          500
-        ]
+        [886, 116],
+        [916, 300],
+        [892, 486]
       ],
-      "nhan": "Vùng biển Đồ Sơn"
+      "nhan": "Vịnh Bắc Bộ"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [196, 186],
+        [378, 264],
+        [560, 344],
+        [724, 424]
+      ],
+      "nhan": "Hệ sông lạch vùng Hải Dương — Yên Quảng"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [300, 384],
+        [500, 350],
+        [622, 412],
+        [478, 484],
+        [318, 462]
+      ],
+      "nhan": "Vùng cỏ rậm, bùn lầy — nơi thuyền nhỏ ra vào"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [236, 84],
+        [378, 126],
+        [502, 168]
+      ],
+      "nhan": "Sông Thọ Xương — phần sông Thương thuộc huyện Lạng Giang"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [520, 300],
+        [400, 244],
+        [296, 204]
+      ],
+      "nhan": "Đường hành quân cấp tốc về Bồ Đề"
     }
   ],
   "phan_tu": [
     {
-      "id": "khoi-nghia-nguyen-cu",
-      "kieu": "co",
+      "id": "nguyen-cu",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 120,
-      "y": 500,
-      "nhan": "Gia nhập khởi nghĩa Nguyễn Cừ, được gả con gái"
+      "x": 604,
+      "y": 512,
+      "nhan": "Nguyễn Cừ — thủ lĩnh Nguyễn Hữu Cầu theo, bị bắt năm 1741"
     },
     {
-      "id": "can-cu-do-son",
+      "id": "nguyen-huu-cau",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 704,
+      "y": 428,
+      "nhan": "Nguyễn Hữu Cầu — Quận He",
+      "quy_mo": "1712–1751, quê xã Lôi Dương, huyện Thanh Hà, Hải Dương"
+    },
+    {
+      "id": "do-son",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 200,
-      "y": 420,
-      "nhan": "Kế thừa lãnh đạo, lập căn cứ Đồ Sơn (hàng vạn quân)"
+      "x": 812,
+      "y": 336,
+      "nhan": "Căn cứ Đồ Sơn — làm chủ cả vùng bờ biển và hải đảo xung quanh"
     },
     {
-      "id": "quan-ta-vay",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 220,
-      "y": 330,
-      "nhan": "Nghĩa quân bị quân Trịnh vây bốn phía"
+      "id": "danh-hieu",
+      "kieu": "dia-danh",
+      "x": 862,
+      "y": 474,
+      "nhan": "Tự xưng Đông đạo Tổng quốc bảo dân Đại tướng quân"
     },
     {
-      "id": "quan-trinh-vay",
+      "id": "trinh-bang",
       "kieu": "quan",
       "ben": "dich",
-      "x": 380,
-      "y": 330,
-      "nhan": "Quân Trịnh vây chặt, bắc loa dụ hàng"
+      "x": 186,
+      "y": 306,
+      "nhan": "Trịnh Bảng và Đặng Đình Mật — cuộc tiến công lớn 1742–1743"
     },
     {
-      "id": "mui-hoa-nguu",
+      "id": "hoa-nguu-tran",
+      "kieu": "dia-danh",
+      "x": 458,
+      "y": 428,
+      "nhan": "Hoả ngưu trận — lao nhọn buộc vào sừng, đuôi trâu tẩm nhựa thông đốt lửa"
+    },
+    {
+      "id": "mui-pha-vay",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        220,
-        330
-      ],
-      "den": [
-        380,
-        320
-      ],
-      "nhan": "'Hỏa ngưu trận' — trâu buộc lao nhọn, đốt lửa lao vào phá vòng vây"
+      "tu": [412, 402],
+      "den": [244, 336],
+      "nhan": "Đàn trâu lao thẳng vào hàng ngũ đối phương, phá vòng vây"
     },
     {
-      "id": "phan-cong",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 550,
-      "y": 250,
-      "nhan": "Tung quân chủ lực phản công, quân Trịnh tan vỡ"
-    },
-    {
-      "id": "co-bi-bat",
-      "kieu": "co",
+      "id": "kinh-bac",
+      "kieu": "thanh",
       "ben": "dich",
-      "x": 800,
-      "y": 300,
-      "nhan": "Thất bại, bị bắt và hành hình (1751)"
+      "x": 320,
+      "y": 136,
+      "nhan": "Trấn thành Kinh Bắc — nghĩa quân chiếm năm 1744"
+    },
+    {
+      "id": "ngoc-lam",
+      "kieu": "dia-danh",
+      "x": 486,
+      "y": 104,
+      "nhan": "Xã Ngọc Lâm, huyện Yên Dũng — mai phục đánh bại Trương Khuông và Hoàng Ngũ Phúc"
+    },
+    {
+      "id": "cam-giang",
+      "kieu": "dia-danh",
+      "x": 592,
+      "y": 244,
+      "nhan": "Cẩm Giàng (Hải Dương) — trận thua cuối năm 1748"
+    },
+    {
+      "id": "bo-de",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 236,
+      "nhan": "Bồ Đề (Gia Lâm) — điểm xuất phát cuộc hành quân cấp tốc"
+    },
+    {
+      "id": "mui-danh-thang-long",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [296, 216],
+      "den": [196, 188],
+      "nhan": "Vượt sông tiến công thành Thăng Long"
+    },
+    {
+      "id": "thang-long",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 148,
+      "y": 168,
+      "nhan": "Thành Thăng Long"
+    },
+    {
+      "id": "son-nam",
+      "kieu": "dia-danh",
+      "x": 654,
+      "y": 546,
+      "nhan": "Sơn Nam — rút về phối hợp với nghĩa quân Hoàng Công Chất"
+    },
+    {
+      "id": "pham-dinh-trong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 288,
+      "y": 556,
+      "nhan": "Phạm Đình Trọng đuổi theo vào Thanh Hoá – Nghệ An"
+    },
+    {
+      "id": "hoang-mai",
+      "kieu": "dia-danh",
+      "x": 116,
+      "y": 502,
+      "nhan": "Núi Hoàng Mai, huyện Quỳnh Lưu, Nghệ An — nơi bị bắt"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Gia nhập khởi nghĩa Nguyễn Cừ, kế thừa lãnh đạo",
-      "mo_ta": "Nguyễn Hữu Cầu, quê Thanh Hà (Hải Dương, nay thuộc Hải Phòng), gia nhập cuộc khởi nghĩa của Nguyễn Cừ và được Nguyễn Cừ gả con gái; sau khi Nguyễn Cừ bị bắt, ông thay lãnh đạo nghĩa quân.",
+      "tieu_de": "Từ nghĩa quân Nguyễn Cừ đến người cầm quân",
+      "thoi_gian": "Năm 1741",
+      "dia_danh": "Thanh Hà — Hải Dương",
+      "mo_ta": "Nguyễn Hữu Cầu, tục gọi Quận He theo tên một loài cá biển, sinh năm 1712 trong gia đình nông dân nghèo ở huyện Thanh Hà, tỉnh Hải Dương; nguồn của Thông tấn xã Việt Nam ghi rõ quê ông là xã Lôi Dương. Thuở nhỏ ông giỏi văn võ, lại thạo bơi lội. Lớn lên ông gia nhập cuộc khởi nghĩa của Nguyễn Cừ và được người này quý mến, gả con gái cho. Năm 1741, khi Nguyễn Cừ bị bắt, Nguyễn Hữu Cầu thay cha vợ chỉ huy nghĩa quân, tiếp tục duy trì và phát triển lực lượng.",
       "hien": [
-        "khoi-nghia-nguyen-cu"
+        "nguyen-cu",
+        "nguyen-huu-cau"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+        "Cổng TTĐT HĐND tỉnh Hải Dương — https://hdnd.haiduong.gov.vn/danh-nhan/vi-tuong-nguoi-hai-duong-dung-trau-lua-pha-vong-vay-danh-bai-doi-quan-chua-trinh-n1654.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Lập căn cứ Đồ Sơn với hàng vạn quân",
-      "mo_ta": "Ông lập căn cứ tại Đồ Sơn, đội quân có tới hàng vạn người; quân Trịnh nhiều lần tấn công nhưng đều thất bại.",
+      "tieu_de": "Năm 1742 — chiếm Đồ Sơn, xưng danh hiệu",
+      "thoi_gian": "Năm 1742",
+      "dia_danh": "Đồ Sơn — Hải Dương — Yên Quảng — Kinh Bắc",
+      "mo_ta": "Năm 1742, nghĩa quân chiếm Đồ Sơn làm căn cứ, làm chủ cả một vùng bờ biển và hải đảo xung quanh. Nguyễn Hữu Cầu tự xưng là Đông đạo Tổng quốc bảo dân Đại tướng quân, lấy mục tiêu đấu tranh bảo vệ quyền lợi của người nghèo, nhờ đó lôi cuốn hàng chục nghìn nông dân nghèo đói và lưu vong từ Đồ Sơn đến Hải Dương, Yên Quảng, Kinh Bắc. Đội quân của ông có đến hàng vạn người; quân chúa Trịnh nhiều lần tấn công nhưng đều thất bại.",
       "hien": [
-        "can-cu-do-son"
+        "do-son",
+        "danh-hieu",
+        "nguyen-huu-cau"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+        "Cổng TTĐT HĐND tỉnh Hải Dương — https://hdnd.haiduong.gov.vn/danh-nhan/vi-tuong-nguoi-hai-duong-dung-trau-lua-pha-vong-vay-danh-bai-doi-quan-chua-trinh-n1654.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Bị vây bốn phía, dùng kế 'hỏa ngưu trận'",
-      "mo_ta": "Trong một lần giao tranh, nghĩa quân bị quân Trịnh bao vây bốn phía, không còn đường thoát. Theo sách Binh thư yếu lược, Nguyễn Hữu Cầu cho buộc mũi lao nhọn vào sừng và hai bên sườn từng con trâu, buộc giẻ tẩm nhựa thông vào đuôi rồi châm lửa đốt đồng loạt.",
+      "tieu_de": "Phá cuộc tiến công lớn của Trịnh Bảng và Đặng Đình Mật",
+      "thoi_gian": "1742 – 1743",
+      "dia_danh": "Vùng ven biển Hải Dương",
+      "mo_ta": "Năm 1742–1743, nghĩa quân đã phá được cuộc tiến công lớn của quân Trịnh do Trịnh Bảng và Đặng Đình Mật chỉ huy. Lợi thế của nghĩa quân nằm ở vùng sông lạch và đầm lầy ven biển: thuyền nhỏ ra vào nơi cỏ rậm bùn lầy được, còn đội hình lớn của đối phương thì không triển khai nổi. Đó cũng là lý do các cuộc hành quân đàn áp quy mô lớn liên tiếp không đạt kết quả trong suốt mấy năm đầu.",
       "hien": [
-        "quan-ta-vay",
-        "quan-trinh-vay",
-        "mui-hoa-nguu"
+        "trinh-bang",
+        "do-son",
+        "nguyen-huu-cau"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đàn trâu lửa phá vỡ đội hình, phản công thắng lợi",
-      "mo_ta": "Đàn trâu bị nóng, điên cuồng lao thẳng vào hàng ngũ quân Trịnh, húc và dẫm đạp làm rối loạn đối phương; Nguyễn Hữu Cầu lợi dụng thời cơ tung quân chủ lực đánh khiến quân Trịnh tan vỡ.",
+      "tieu_de": "Hoả ngưu trận phá vòng vây",
+      "dia_danh": "Chiến trường vùng Hải Dương",
+      "mo_ta": "Trong một lần giao tranh, nghĩa quân bị bao vây bốn phía, không còn đường thoát; quân Trịnh tin chắc sẽ bắt được ông liền bắc loa dụ hàng. Nguyễn Hữu Cầu quyết định dùng hoả ngưu trận: theo sách Binh thư yếu lược, ông cho buộc những mũi lao nhọn vào sừng và hai bên sườn từng con trâu, rồi buộc giẻ tẩm nhựa thông vào đuôi và châm lửa đốt đồng loạt. Bị nóng, đàn trâu điên cuồng lao thẳng vào hàng ngũ quân Trịnh, húc và giẫm đạp dữ dội làm rối loạn đối phương; nhân thời cơ ấy ông tung quân chủ lực ra đánh khiến quân Trịnh tan vỡ.",
       "hien": [
-        "phan-cong"
+        "hoa-nguu-tran",
+        "mui-pha-vay",
+        "trinh-bang"
+      ],
+      "nguon": [
+        "Cổng TTĐT HĐND tỉnh Hải Dương — https://hdnd.haiduong.gov.vn/danh-nhan/vi-tuong-nguoi-hai-duong-dung-trau-lua-pha-vong-vay-danh-bai-doi-quan-chua-trinh-n1654.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Thất bại, bị bắt và hành hình (1751)",
-      "mo_ta": "Năm 1751, Nguyễn Hữu Cầu thất bại trước quân Trịnh, bị bắt và đem đi hành hình.",
+      "tieu_de": "Năm 1744 — tiến về Kinh Bắc, mai phục ở Ngọc Lâm",
+      "thoi_gian": "Năm 1744",
+      "dia_danh": "Kinh Bắc — sông Thọ Xương — Ngọc Lâm",
+      "mo_ta": "Năm 1744, nghĩa quân tiến về Kinh Bắc, tức Bắc Ninh và Bắc Giang ngày nay, làm chủ vùng sông Thọ Xương — phần sông Thương thuộc huyện Lạng Giang — và chiếm được trấn thành Kinh Bắc. Tại xã Ngọc Lâm, huyện Yên Dũng, nghĩa quân dùng kế mai phục đánh bại quân Trịnh do Trương Khuông và Hoàng Ngũ Phúc chỉ huy. Đây là thời điểm phong trào lên cao nhất, uy hiếp trực tiếp vùng phụ cận kinh thành.",
       "hien": [
-        "co-bi-bat"
+        "kinh-bac",
+        "ngoc-lam",
+        "nguyen-huu-cau"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "1745 – 1746 — tổn thất rồi giả hàng",
+      "thoi_gian": "Mùa thu 1745 – năm 1746",
+      "dia_danh": "Vùng ven biển Hải Dương",
+      "mo_ta": "Mùa thu năm 1745, nghĩa quân trở về Hải Dương hoạt động ở vùng ven biển nhưng bị quân Trịnh đánh dồn, chịu nhiều tổn thất, lực lượng suy giảm. Năm 1746, trước tình thế khó khăn, Nguyễn Hữu Cầu giả hàng và được Trịnh Doanh phong tước Hương Nghĩa Hầu, nhưng vẫn ngầm hoạt động. Việc nhận tước của đối phương ở đây là một nước cờ giữ lực lượng, không phải chấm dứt khởi nghĩa.",
+      "hien": [
+        "do-son",
+        "nguyen-huu-cau",
+        "cam-giang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Cuối 1748 — hành quân cấp tốc từ Bồ Đề đánh Thăng Long",
+      "thoi_gian": "Cuối năm 1748",
+      "dia_danh": "Cẩm Giàng — Bồ Đề — Thăng Long",
+      "mo_ta": "Cuối năm 1748, sau thất bại trong trận chiến ở Cẩm Giàng, Nguyễn Hữu Cầu lợi dụng sự chủ quan của quân Trịnh, tương kế tựu kế, mở một cuộc hành quân cấp tốc về Bồ Đề thuộc Gia Lâm rồi tiến công thành Thăng Long. Khi nghĩa quân vừa sang sông thì trời sáng, quân Trịnh kịp dồn hết lực lượng ra chống cự; nghĩa quân bị tổn thất nhiều, phải rút về Sơn Nam phối hợp với nghĩa quân của Hoàng Công Chất.",
+      "hien": [
+        "cam-giang",
+        "bo-de",
+        "mui-danh-thang-long",
+        "thang-long",
+        "son-nam"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Năm 1751 — bị bắt ở núi Hoàng Mai",
+      "thoi_gian": "Năm 1751, xử tử tháng 3/1751",
+      "dia_danh": "Bình Lục — Quang Dục — Lộng Khê — núi Hoàng Mai",
+      "mo_ta": "Trong năm 1751, nghĩa quân thất bại nhiều trận liên tiếp ở Bình Lục thuộc Hà Nam, Quang Dục thuộc Hải Dương, Lộng Khê thuộc Thái Bình; lực lượng hao tổn nhiều. Nguyễn Hữu Cầu cùng một số bộ tướng chạy vào Thanh Hoá, Nghệ An, dựa vào lực lượng của Nguyễn Diên. Phạm Đình Trọng đuổi theo và bắt được ông ở núi Hoàng Mai, huyện Quỳnh Lưu, tỉnh Nghệ An; tháng 3/1751 ông bị xử tử cùng với Nguyễn Danh Phương tại thành Thăng Long.",
+      "hien": [
+        "pham-dinh-trong",
+        "hoang-mai",
+        "son-nam",
+        "thang-long"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "hàng chục nghìn nông dân nghèo đói và lưu vong từ Đồ Sơn đến Hải Dương, Yên Quảng, Kinh Bắc",
+          "nguon": "Bách khoa toàn thư Quân sự Việt Nam, qua Thông tấn xã Việt Nam"
+        },
+        {
+          "so": "đội quân có đến hàng vạn người",
+          "nguon": "Cổng TTĐT HĐND tỉnh Hải Dương"
+        }
+      ],
+      "vu_khi": [
+        "Thuyền nhỏ ra vào nơi cỏ rậm, bùn lầy",
+        "Hoả ngưu trận — trâu buộc lao nhọn, đuôi tẩm nhựa thông đốt lửa"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Quân Trịnh do Trịnh Bảng và Đặng Đình Mật chỉ huy (1742–1743)",
+        "Quân Trịnh do Trương Khuông và Hoàng Ngũ Phúc chỉ huy (1744)",
+        "Phạm Đình Trọng truy kích vào Thanh Hoá, Nghệ An (1751)"
+      ]
+    },
+    "nguon": [
+      "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+      "Cổng TTĐT HĐND tỉnh Hải Dương — https://hdnd.haiduong.gov.vn/danh-nhan/vi-tuong-nguoi-hai-duong-dung-trau-lua-pha-vong-vay-danh-bai-doi-quan-chua-trinh-n1654.html"
+    ]
+  },
   "ket_qua": "Nghĩa quân giữ vững căn cứ Đồ Sơn nhiều năm, nhiều lần đánh bại quân Trịnh, trước khi thất bại và bị bắt năm 1751.",
   "y_nghia": "Một trong những cuộc khởi nghĩa nông dân tiêu biểu Đàng Ngoài giữa thế kỷ XVIII; giai thoại dân gian Đồ Sơn cho rằng hội chọi trâu nổi tiếng của vùng đất này bắt nguồn từ cuộc khởi nghĩa của ông.",
   "trang_thai": "draft",
   "nguon": [
-    "Cổng TTĐT HĐND tỉnh Hải Dương (hdnd.haiduong.gov.vn) — Vị tướng người Hải Dương dùng 'trâu lửa' phá vòng vây, đánh bại đội quân chúa Trịnh — https://hdnd.haiduong.gov.vn/danh-nhan/vi-tuong-nguoi-hai-duong-dung-trau-lua-pha-vong-vay-danh-bai-doi-quan-chua-trinh-n1654.html"
+    "Cổng TTĐT HĐND tỉnh Hải Dương (hdnd.haiduong.gov.vn) — Vị tướng người Hải Dương dùng 'trâu lửa' phá vòng vây, đánh bại đội quân chúa Trịnh — https://hdnd.haiduong.gov.vn/danh-nhan/vi-tuong-nguoi-hai-duong-dung-trau-lua-pha-vong-vay-danh-bai-doi-quan-chua-trinh-n1654.html",
+    "Ngân hàng dữ liệu Thông tấn xã Việt Nam — Khởi nghĩa nông dân thế kỉ 18 — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+    "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3096/16106/hoang-cong-chat-va-mot-chien-thang-djien-bien-phu-khac.html"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Cổng TTĐT HĐND tỉnh Hải Dương — bài về hoả ngưu trận của Nguyễn Hữu Cầu, dẫn theo sách Binh thư yếu lược",
+      "doan": "Theo sách Binh thư yếu lược, ông cho buộc những mũi lao nhọn vào sừng và hai bên sườn từng con trâu. Sau đó, đuôi trâu được buộc giẻ tẩm nhựa thông và châm lửa đốt đồng loạt.",
+      "nguon_trich": "Cổng TTĐT HĐND tỉnh Hải Dương — https://hdnd.haiduong.gov.vn/danh-nhan/vi-tuong-nguoi-hai-duong-dung-trau-lua-pha-vong-vay-danh-bai-doi-quan-chua-trinh-n1654.html",
+      "buoc": 4
+    },
+    {
+      "sach": "Bách khoa toàn thư Quân sự Việt Nam, quyển 1: Lịch sử Quân sự (NXB Quân đội nhân dân, 2015) — mục Khởi nghĩa nông dân thế kỉ 18",
+      "doan": "Năm 1742, nghĩa quân chiếm Đồ Sơn làm căn cứ, làm chủ cả một vùng bờ biển và hải đảo xung quanh; tự xưng là “Đông đạo Tổng quốc bảo dân Đại tướng quân’’, với mục tiêu đấu tranh bảo vệ quyền lợi của người nghèo",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+      "buoc": 2
+    },
+    {
+      "sach": "Bách khoa toàn thư Quân sự Việt Nam, quyển 1: Lịch sử Quân sự (NXB Quân đội nhân dân, 2015) — mục Khởi nghĩa nông dân thế kỉ 18",
+      "doan": "Phạm Đình Trọng (quân Nhà Trịnh) đuổi theo bắt được Nguyễn Hữu Cầu ở núi Hoàng Mai (huyện Quỳnh Lưu, tỉnh Nghệ An); tháng 3.1751, Nguyễn Hữu Cầu bị xử tử cùng với Nguyễn Danh Phương tại thành Thăng Long.",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-nong-dan-the-ki-18-1-39040.vna",
+      "buoc": 8
+    }
   ]
 }

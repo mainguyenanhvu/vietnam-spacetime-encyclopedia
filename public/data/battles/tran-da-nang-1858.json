@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ trận Đà Nẵng 1858 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Đà Nẵng 1858–1860 — MINH HOẠ theo diễn biến chính sử và tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Số tàu chiến của liên quân và ngày Pháp rút hết quân được hai cổng nhà nước chép khác nhau — nêu cả hai, không chọn một.",
   "id": "tran-da-nang-1858",
   "ten": "Trận Đà Nẵng (mở đầu chống Pháp)",
   "nam": 1858,
@@ -7,6 +7,7 @@
   "chi_huy": "Nguyễn Tri Phương",
   "doi_thu": "Liên quân Pháp – Tây Ban Nha (Rigault de Genouilly)",
   "dia_diem": "Cửa biển Đà Nẵng — bán đảo Sơn Trà",
+  "thoi_gian": "1/9/1858 – 23/3/1860 (Tạp chí Sự kiện & Nhân chứng chép lính bộ binh Pháp cuối cùng rút ngày 22/3/1860)",
   "lien_quan_tinh": [
     "da-nang"
   ],
@@ -15,186 +16,391 @@
     {
       "kieu": "bien",
       "diem": [
-        [
-          700,
-          50
-        ],
-        [
-          1000,
-          50
-        ],
-        [
-          1000,
-          300
-        ],
-        [
-          750,
-          250
-        ]
+        [906, 56],
+        [830, 210],
+        [772, 366],
+        [806, 552]
       ],
-      "nhan": "Biển Đông"
+      "nhan": "Vịnh Đà Nẵng — Biển Đông"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [696, 116],
+        [790, 62],
+        [886, 118]
+      ],
+      "nhan": "Bán đảo Sơn Trà"
     },
     {
       "kieu": "song",
       "diem": [
-        [
-          500,
-          200
-        ],
-        [
-          650,
-          280
-        ],
-        [
-          750,
-          350
-        ]
+        [442, 96],
+        [472, 262],
+        [500, 434],
+        [524, 578]
       ],
       "nhan": "Sông Hàn"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [56, 96],
+        [176, 48],
+        [298, 112]
+      ],
+      "nhan": "Dãy Hải Vân — chắn đường ra kinh đô Huế"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [296, 330],
+        [358, 402],
+        [420, 472],
+        [472, 542]
+      ],
+      "nhan": "Tuyến luỹ Liên Trì – Hải Châu – Phước Ninh"
     }
   ],
   "phan_tu": [
     {
-      "id": "ham-doi-phap",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 940,
-      "y": 150,
-      "nhan": "Hạm đội Rigault de Genouilly"
+      "id": "hue",
+      "kieu": "dia-danh",
+      "x": 116,
+      "y": 58,
+      "nhan": "Kinh đô Huế — mục tiêu của kế hoạch «giáng một đòn quyết định»"
     },
     {
-      "id": "ban-dao-son-tra",
+      "id": "son-tra",
       "kieu": "dia-danh",
-      "x": 780,
-      "y": 280,
+      "x": 800,
+      "y": 82,
       "nhan": "Bán đảo Sơn Trà"
     },
     {
-      "id": "don-an-hai",
-      "kieu": "cong-su",
+      "id": "ham-doi-lien-quan",
+      "kieu": "thuyen",
       "ben": "dich",
-      "x": 650,
-      "y": 350,
-      "nhan": "Đồn An Hải"
+      "x": 852,
+      "y": 268,
+      "nhan": "Hạm đội liên quân Pháp – Tây Ban Nha",
+      "quy_mo": "13 tàu theo Bảo tàng Lịch sử Quốc gia · 16 tàu theo Cổng TTĐT Đà Nẵng · hơn 3.500 quân"
     },
     {
-      "id": "don-dien-hai",
-      "kieu": "cong-su",
-      "ben": "dich",
-      "x": 480,
-      "y": 400,
-      "nhan": "Đồn Điện Hải"
-    },
-    {
-      "id": "luy-nguyen-tri-phuong",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 280,
-      "y": 430,
-      "nhan": "Phòng tuyến Nguyễn Tri Phương"
-    },
-    {
-      "id": "quan-ta-vay-ham",
+      "id": "genouilly",
       "kieu": "quan",
-      "ben": "ta",
-      "x": 220,
-      "y": 490,
-      "nhan": "Quân triều đình bao vây, cầm chân"
+      "ben": "dich",
+      "x": 890,
+      "y": 404,
+      "nhan": "Phó đô đốc Rigault de Genouilly và Đại tá Lanzarotte"
     },
     {
-      "id": "mui-dich-chuyen-huong",
+      "id": "thanh-dien-hai",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 344,
+      "y": 272,
+      "nhan": "Thành Điện Hải — người Pháp gọi là Fort de l'Ouest",
+      "quy_mo": "kiểu Vauban, cao hơn 5 m, chu vi 556 m, hào sâu hơn 3 m"
+    },
+    {
+      "id": "thanh-an-hai",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 610,
+      "y": 246,
+      "nhan": "Thành An Hải — bờ đông sông Hàn"
+    },
+    {
+      "id": "mui-na-dai-bac",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        870,
-        180
-      ],
-      "den": [
-        400,
-        550
-      ],
-      "nhan": "Chuyển hướng vào Gia Định (đầu 1859)"
+      "tu": [806, 226],
+      "den": [664, 244],
+      "nhan": "Nã đại bác rạng sáng 1/9/1858"
+    },
+    {
+      "id": "mui-danh-dien-hai",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [576, 278],
+      "den": [396, 282],
+      "nhan": "Vây đánh hai thành An Hải và Điện Hải"
+    },
+    {
+      "id": "le-dinh-ly",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 262,
+      "y": 176,
+      "nhan": "Tổng đốc Lê Đình Lý trúng đạn trọng thương rồi hy sinh"
+    },
+    {
+      "id": "chu-phuc-minh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 128,
+      "y": 262,
+      "nhan": "Thống chế Chu Phúc Minh lên làm Tổng đốc"
+    },
+    {
+      "id": "nguyen-tri-phuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 252,
+      "y": 422,
+      "nhan": "Nguyễn Tri Phương làm Tổng thống quân thứ Quảng Nam"
+    },
+    {
+      "id": "tuyen-luy",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 414,
+      "y": 486,
+      "nhan": "Tuyến luỹ chặn địch, dựng tới đâu chắn tới đó"
+    },
+    {
+      "id": "vuon-khong-nha-trong",
+      "kieu": "dia-danh",
+      "x": 132,
+      "y": 490,
+      "nhan": "Vườn không nhà trống, bao vây chặn địch ngoài mé biển"
+    },
+    {
+      "id": "dich-benh",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 470,
+      "nhan": "Dịch tả trong doanh trại liên quân",
+      "quy_mo": "từ 1 đến 20/6/1859 có 200 lính Pháp chết vì bệnh tả"
+    },
+    {
+      "id": "mui-vao-gia-dinh",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [826, 476],
+      "den": [648, 574],
+      "nhan": "Chuyển hướng tiến công vào Gia Định, tháng 2/1859"
+    },
+    {
+      "id": "rut-quan",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [790, 156],
+      "den": [908, 84],
+      "nhan": "Rút hết quân khỏi Đà Nẵng, tháng 3/1860"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 280,
-      "y": 370,
-      "nhan": "Cầm chân địch gần 5 tháng"
+      "x": 546,
+      "y": 128,
+      "nhan": "Kế hoạch đánh nhanh thắng nhanh phá sản"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Liên quân Pháp – Tây Ban Nha nổ súng, đổ bộ Sơn Trà",
-      "mo_ta": "Ngày 1/9/1858, hạm đội do Rigault de Genouilly chỉ huy bắn phá rồi đổ bộ chiếm bán đảo Sơn Trà, mở đầu cuộc xâm lược.",
+      "tieu_de": "Đà Nẵng — cửa biển «yết hầu» gần kinh đô Huế",
+      "thoi_gian": "Trước tháng 9/1858",
+      "dia_danh": "Cửa biển Đà Nẵng — sông Hàn",
+      "mo_ta": "Đà Nẵng là cửa biển có vị trí chiến lược quan trọng, được xem là «yết hầu» gần kinh đô Huế. Ngay khi lên ngôi năm 1802, vua Gia Long đã lo tổ chức canh phòng vùng đất này, cho xây dựng nhiều đồn luỹ ở bán đảo Sơn Trà và dọc hai bên bờ sông Hàn: ngoài thành Điện Hải và An Hải còn có Trấn Dương Thất Bảo cùng các đồn Mỹ Thị, Hải Châu, Liên Trì, Phước Ninh, Hoá Khuê, nhưng quan trọng nhất là thành Điện Hải.",
       "hien": [
-        "ham-doi-phap",
-        "ban-dao-son-tra"
+        "hue",
+        "son-tra",
+        "thanh-dien-hai",
+        "thanh-an-hai"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/thanh-dien-hai-3281",
+        "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/ho-so-tu-lieu/vi-sao-la-da-nang-501132"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Hạ đồn An Hải, Điện Hải",
-      "mo_ta": "Trong những ngày đầu, quân Pháp – Tây Ban Nha nhanh chóng chiếm các đồn phòng thủ ven biển của triều đình.",
+      "tieu_de": "Rạng sáng 1/9/1858, liên quân nổ súng",
+      "thoi_gian": "Rạng sáng 1/9/1858",
+      "dia_danh": "Cửa biển Đà Nẵng",
+      "mo_ta": "Ngày 1/9/1858, liên quân Pháp – Tây Ban Nha nổ súng vào thành Đà Nẵng, mở đầu cuộc chiến tranh xâm lược Việt Nam. Bảo tàng Lịch sử Quốc gia chép có tới 13 chiến thuyền và hơn 3.500 quân, trong đó có tàu trang bị khoảng 50 đại bác, do Phó đô đốc Pháp Rigault de Genouilly và Đại tá người Tây Ban Nha Lanzarotte dàn trận ở cửa biển; Cổng TTĐT thành phố Đà Nẵng chép 16 tàu chiến. Rạng sáng hôm ấy, không chờ quân triều đình trả lời tối hậu thư, quân Pháp nã đại bác bắn phá hệ thống đồn luỹ.",
       "hien": [
-        "ham-doi-phap",
-        "don-an-hai",
-        "don-dien-hai"
+        "ham-doi-lien-quan",
+        "genouilly",
+        "mui-na-dai-bac"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/12567/ngay-1-9-1858-lien-quan-phap-tay-ban-nha-no-sung-vao-thanh-dja-nang.html",
+        "Cổng TTĐT thành phố Đà Nẵng — https://danang.gov.vn/vi/w/cuoc-khang-chien-chong-xam-luoc-phap-dau-tien-cua-quan-va-dan-ta-o-mat-tran-da-nang-nam-1858-i"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Nguyễn Tri Phương lập phòng tuyến bao vây",
-      "mo_ta": "Được cử làm Tổng thống quân vụ, Nguyễn Tri Phương chủ trương không quyết chiến trực diện mà đắp lũy dài bao vây, kìm chân địch, cắt đường tiếp tế vào sâu nội địa.",
+      "tieu_de": "Hai thành An Hải, Điện Hải bị vây; địch chiếm bán đảo Sơn Trà",
+      "dia_danh": "Thành An Hải · thành Điện Hải · Sơn Trà",
+      "mo_ta": "Sau loạt đạn mở màn, liên quân vây đánh hai thành An Hải và Điện Hải, chiếm bán đảo Sơn Trà. Thành Điện Hải nằm ở tả ngạn phía tây sông Hàn nên người Pháp gọi là Fort de l'Ouest — Pháo đài phía Tây. Thành do vua Gia Long cho xây bằng đất năm 1813, đến năm 1823 vua Minh Mạng cho xây lại bằng gạch và lùi sâu vào đất liền, theo kiểu Vauban, hình vuông với bốn góc lồi hình cung tròn, cao hơn 5 m, chu vi 556 m, hào sâu hơn 3 m và có hai cửa.",
       "hien": [
-        "don-an-hai",
-        "don-dien-hai",
-        "luy-nguyen-tri-phuong",
-        "quan-ta-vay-ham"
+        "thanh-an-hai",
+        "thanh-dien-hai",
+        "mui-danh-dien-hai",
+        "son-tra"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/12567/ngay-1-9-1858-lien-quan-phap-tay-ban-nha-no-sung-vao-thanh-dja-nang.html",
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/thanh-dien-hai-3281"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Cầm chân địch gần 5 tháng",
-      "mo_ta": "Chiến thuật phòng thủ kiên trì khiến liên quân xâm lược không thể mở rộng vùng chiếm đóng, hao mòn lực lượng vì bệnh dịch và thiếu tiếp tế.",
+      "tieu_de": "Tổng đốc Lê Đình Lý hy sinh, triều đình đổi tướng",
+      "dia_danh": "Mặt trận Đà Nẵng",
+      "mo_ta": "Sau khi Tổng đốc Lê Đình Lý bị trúng đạn trọng thương rồi hy sinh, vua Tự Đức đã cử Thống chế Chu Phúc Minh lên làm Tổng đốc. Nhân dân ta ngay từ đầu đã anh dũng chống trả quyết liệt các cuộc tấn công của quân xâm lược để bảo vệ Tổ quốc, nhưng việc mất liên tiếp người chỉ huy cao nhất trong những tuần đầu khiến mặt trận cần một viên tướng đủ tầm để tổ chức lại toàn bộ thế trận.",
       "hien": [
-        "luy-nguyen-tri-phuong",
-        "quan-ta-vay-ham",
-        "co-thang"
+        "le-dinh-ly",
+        "chu-phuc-minh",
+        "thanh-dien-hai"
+      ],
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — https://danang.gov.vn/vi/w/cuoc-khang-chien-chong-xam-luoc-phap-dau-tien-cua-quan-va-dan-ta-o-mat-tran-da-nang-nam-1858-i",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/12567/ngay-1-9-1858-lien-quan-phap-tay-ban-nha-no-sung-vao-thanh-dja-nang.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Pháp – Tây Ban Nha bỏ dở kế hoạch, chuyển hướng vào Gia Định",
-      "mo_ta": "Đầu 1859, không đạt được mục tiêu tại Đà Nẵng, liên quân rút phần lớn lực lượng, chuyển hướng tấn công thành Gia Định.",
+      "tieu_de": "Nguyễn Tri Phương ra mặt trận, đổi hẳn cách đánh",
+      "dia_danh": "Quảng Nam — Đà Nẵng",
+      "mo_ta": "Vua Tự Đức điều Nguyễn Tri Phương, võ tướng số một của ta lúc đó, đang làm Kinh lược sứ Nam Kỳ ra làm Tổng thống quân thứ Quảng Nam. Ông chủ trương không tiến công địch chính diện để tránh sức mạnh hoả lực của địch, mà bao vây chặn địch ngoài mé biển, liên tục phục kích tiêu hao. Cách đánh ấy đảo ngược thế trận: ưu thế pháo hạm của liên quân chỉ phát huy được ở mép nước, còn sâu vào trong thì vô dụng.",
       "hien": [
-        "ham-doi-phap",
-        "mui-dich-chuyen-huong"
+        "nguyen-tri-phuong",
+        "vuon-khong-nha-trong",
+        "genouilly"
+      ],
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — https://www.danang.gov.vn/vi/web/dng/w/nguyen-tri-phuong-1800-1873-i"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Luỹ dựng tới đâu chắn tới đó, địch không mở rộng được địa bàn",
+      "thoi_gian": "Cuối năm 1858",
+      "dia_danh": "Liên Trì — Hải Châu — Phước Ninh",
+      "mo_ta": "Quân triều đình đắp liên tiếp các tuyến luỹ chặn mọi lối ra khỏi vành đai ven biển, đồng thời thực hiện vườn không nhà trống để địch không lấy được lương thực tại chỗ. Chính sĩ quan liên quân về sau thừa nhận thành luỹ của Nguyễn Tri Phương dựng mau như nấm mọc, hễ chỗ nào có lối đi là có ngay chiến luỹ ngăn cản. Cho đến hết năm 1858, quân địch vẫn không sao mở rộng được địa bàn chiếm đóng, phá vỡ thế phòng thủ của ta.",
+      "hien": [
+        "tuyen-luy",
+        "nguyen-tri-phuong",
+        "vuon-khong-nha-trong"
+      ],
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — https://danang.gov.vn/vi/w/cuoc-khang-chien-chong-xam-luoc-phap-dau-tien-cua-quan-va-dan-ta-o-mat-tran-da-nang-nam-1858-i"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Phục kích và dịch bệnh bào mòn quân viễn chinh",
+      "thoi_gian": "1859",
+      "dia_danh": "Vành đai chiếm đóng ven biển",
+      "mo_ta": "Trong vòng 6 tháng, quân Pháp đã mất hàng trăm mạng người do bị phục kích và do dịch bệnh. Riêng từ ngày 1 đến 20/6/1859 đã có 200 lính Pháp chết vì bệnh tả ở Đà Nẵng. Tính chung từ cuối năm 1858 đến 1862, khoảng 1.000 lính Pháp đã chôn thây ở Việt Nam, chủ yếu do bệnh. Sĩ quan liên quân ghi lại rằng người An Nam đã đạt được tiến bộ lớn trong nghệ thuật chiến tranh, đẩy đuổi được họ vài trăm thước thì họ đã lui về ẩn mình trong một phòng tuyến mới ngay trước mặt.",
+      "hien": [
+        "dich-benh",
+        "tuyen-luy",
+        "ham-doi-lien-quan"
+      ],
+      "nguon": [
+        "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/thu-nhat-ki-chien-tranh/manh-dat-vui-thay-quan-vien-chinh-phap-501133"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Chuyển hướng vào Gia Định rồi rút hẳn khỏi Đà Nẵng",
+      "thoi_gian": "Tháng 2/1859 — tháng 3/1860",
+      "dia_danh": "Đà Nẵng — Gia Định",
+      "mo_ta": "Rigault de Genouilly, lúc này được phong làm Đô đốc, quyết định chuyển hướng tấn công vào Gia Định. Đầu tháng 2/1859, quân Pháp chỉ để lại ở Đà Nẵng một lực lượng chiếm đóng gồm một đại đội và vài chiếc chiến hạm nhỏ. Sau 18 tháng đánh chiếm Đà Nẵng, tính từ 1/9/1858, Page rút hết quân ra khỏi Đà Nẵng ngày 23/3/1860 theo Cổng TTĐT thành phố Đà Nẵng, còn Tạp chí Sự kiện và Nhân chứng chép những lính bộ binh Pháp cuối cùng rút ngày 22/3/1860. Kế hoạch giáng cho Huế một đòn quyết định coi như thất bại.",
+      "hien": [
+        "mui-vao-gia-dinh",
+        "rut-quan",
+        "co-thang"
+      ],
+      "nguon": [
+        "Cổng TTĐT thành phố Đà Nẵng — https://danang.gov.vn/vi/w/cuoc-khang-chien-chong-xam-luoc-phap-dau-tien-cua-quan-va-dan-ta-o-mat-tran-da-nang-nam-1858-i",
+        "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/thu-nhat-ki-chien-tranh/manh-dat-vui-thay-quan-vien-chinh-phap-501133",
+        "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/ho-so-tu-lieu/vi-sao-la-da-nang-501132"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Quân thứ Quảng Nam — Tổng đốc Lê Đình Lý, sau là Thống chế Chu Phúc Minh",
+        "Nguyễn Tri Phương làm Tổng thống quân thứ Quảng Nam từ cuối 1858",
+        "Nhân dân địa phương thực hiện vườn không nhà trống"
+      ],
+      "vu_khi": [
+        "Hệ thống thành Điện Hải, An Hải, Trấn Dương Thất Bảo và các đồn Mỹ Thị, Hải Châu, Liên Trì, Phước Ninh, Hoá Khuê"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "13 chiến thuyền, hơn 3.500 quân",
+          "nguon": "Bảo tàng Lịch sử Quốc gia"
+        },
+        {
+          "so": "16 tàu chiến",
+          "nguon": "Cổng TTĐT thành phố Đà Nẵng"
+        }
+      ],
+      "don_vi": [
+        "Liên quân Pháp – Tây Ban Nha do Phó đô đốc Rigault de Genouilly chỉ huy",
+        "Quân Tây Ban Nha do Đại tá Lanzarotte chỉ huy"
+      ],
+      "vu_khi": [
+        "Có tàu trang bị khoảng 50 đại bác"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/12567/ngay-1-9-1858-lien-quan-phap-tay-ban-nha-no-sung-vao-thanh-dja-nang.html",
+      "Cổng TTĐT thành phố Đà Nẵng — https://danang.gov.vn/vi/w/cuoc-khang-chien-chong-xam-luoc-phap-dau-tien-cua-quan-va-dan-ta-o-mat-tran-da-nang-nam-1858-i"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "Từ 1 đến 20/6/1859 có 200 lính Pháp chết vì bệnh tả ở Đà Nẵng",
+        "nguon": "Tạp chí Sự kiện và Nhân chứng"
+      },
+      {
+        "so": "Khoảng 1.000 lính Pháp chôn thây ở Việt Nam từ cuối 1858 đến 1862, chủ yếu do bệnh",
+        "nguon": "Tạp chí Sự kiện và Nhân chứng"
+      }
+    ],
+    "nguon": [
+      "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/thu-nhat-ki-chien-tranh/manh-dat-vui-thay-quan-vien-chinh-phap-501133"
+    ]
+  },
   "ket_qua": "Pháp không chiếm được Đà Nẵng sau gần 5 tháng bao vây, buộc phải chuyển hướng đưa quân vào đánh chiếm thành Gia Định.",
   "y_nghia": "Trận đánh mở đầu công cuộc chống Pháp xâm lược, làm phá sản kế hoạch 'đánh nhanh thắng nhanh' ban đầu của thực dân Pháp.",
   "trang_thai": "draft",
   "nguon": [
     "Đại Nam thực lục — Chính biên",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "sknc.qdnd.vn — Vì sao là Đà Nẵng"
+    "sknc.qdnd.vn — Vì sao là Đà Nẵng",
+    "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/12567/ngay-1-9-1858-lien-quan-phap-tay-ban-nha-no-sung-vao-thanh-dja-nang.html",
+    "Cổng TTĐT thành phố Đà Nẵng — https://danang.gov.vn/vi/w/cuoc-khang-chien-chong-xam-luoc-phap-dau-tien-cua-quan-va-dan-ta-o-mat-tran-da-nang-nam-1858-i",
+    "Cổng TTĐT thành phố Đà Nẵng — https://www.danang.gov.vn/vi/web/dng/w/nguyen-tri-phuong-1800-1873-i",
+    "Cục Di sản văn hoá — https://dsvh.gov.vn/thanh-dien-hai-3281",
+    "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/thu-nhat-ki-chien-tranh/manh-dat-vui-thay-quan-vien-chinh-phap-501133"
   ],
   "trich_van_tich": [
     {
       "sach": "Nhận định của sĩ quan liên quân Pháp – Tây Ban Nha về phòng tuyến Nguyễn Tri Phương tại Đà Nẵng (không rõ tên tác giả cụ thể)",
       "doan": "Thành lũy của Nguyễn Tri Phương dựng mau như nấm mọc, hễ chỗ nào có lối đi là có ngay chiến lũy ngăn cản.",
       "nguon_trich": "ANTV — Danh tướng Nguyễn Tri Phương - Khí phách muôn đời — https://antv.gov.vn/van-hoa-6/danh-tuong-nguyen-tri-phuong-khi-phach-muon-doi-BFD992B3E.html",
-      "buoc": 3
+      "buoc": 6
     },
     {
       "sach": "Nhận định của sĩ quan liên quân Pháp – Tây Ban Nha về sức kháng cự của quân triều đình tại Đà Nẵng (không rõ tên tác giả cụ thể)",
       "doan": "Những người An Nam đã đạt được tiến bộ lớn trong nghệ thuật chiến tranh. Chúng tôi chỉ đẩy đuổi được quân địch vài trăm thước, họ đã lui về ẩn mình trong một phòng tuyến mới ngay trước mặt.",
       "nguon_trich": "ANTV — Danh tướng Nguyễn Tri Phương - Khí phách muôn đời — https://antv.gov.vn/van-hoa-6/danh-tuong-nguyen-tri-phuong-khi-phach-muon-doi-BFD992B3E.html",
-      "buoc": 4
+      "buoc": 7
     }
   ]
 }

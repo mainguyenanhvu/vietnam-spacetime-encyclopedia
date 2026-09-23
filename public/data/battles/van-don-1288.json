@@ -3,6 +3,7 @@
   "id": "van-don-1288",
   "ten": "Trận Vân Đồn 1288",
   "nam": 1288,
+  "thoi_gian": "Cuối tháng 12-1287 – tháng 1-1288",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Trần Khánh Dư",
   "doi_thu": "Quân Nguyên (đoàn thuyền lương Trương Văn Hổ)",
@@ -11,128 +12,360 @@
     "quang-ninh"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Quân Bình Hải gồm 30 đô, mỗi đô 80 người, tổng quân số hơn 2.000 người; khoảng 30 thuyền trực chiến, mỗi thuyền chừng 30 tay chèo",
+      "don_vi": [
+        "Quân Bình Hải — đơn vị riêng của trấn Vân Đồn, do Trần Khánh Dư tổ chức và mở rộng",
+        "Quân các trang (chư trang quân) hình thành từ thời Lý",
+        "Đạo thuỷ quân phòng giữ vùng biển Đông Bắc do Phó đô tướng quân Trần Khánh Dư chỉ huy"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Cánh quân thuỷ 500 chiến thuyền hộ tống, cùng đoàn thuyền lương 70 chiếc chở 170.000 thạch lương",
+      "don_vi": [
+        "Ô Mã Nhi, Phàn Tiếp, Trương Ngọc thống lĩnh cánh thuỷ đi trước",
+        "Trương Văn Hổ chỉ huy đoàn thuyền lương đi sau"
+      ]
+    },
+    "nguon": [
+      "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Thuỷ quân ta tiêu diệt và bắt sống phần lớn đoàn thuyền lương; địch phải đổ cả lương thực, vũ khí xuống biển để rút chạy. Bảo tàng Lịch sử Quốc gia chép 170.000 thạch lương chìm hết ở Vân Đồn. Trương Văn Hổ dùng thuyền nhẹ chạy thoát về Quỳnh Châu (Hải Nam).",
+    "nguon": [
+      "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+      "Bảo tàng Lịch sử Quốc gia — Danh tướng trận hải chiến Vân Đồn — https://baotanglichsu.vn/vi/Articles/3098/16587/danh-tuong-tran-hai-chien-van-djon.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "bien",
       "diem": [
-        [
-          0,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          1000,
-          320
-        ]
+        [962, 56],
+        [520, 50],
+        [300, 68],
+        [68, 546],
+        [962, 542]
       ],
-      "nhan": "Vùng biển Vân Đồn"
+      "nhan": "Vùng biển Đông Bắc"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [930, 108],
+        [790, 172],
+        [560, 262],
+        [420, 342],
+        [300, 412]
+      ],
+      "nhan": "Hải trình đoàn thuyền lương"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [600, 342],
+        [690, 316],
+        [780, 342]
+      ],
+      "nhan": "Đảo Quan Lạn – Vân Đồn"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [232, 424],
+        [322, 400],
+        [412, 426]
+      ],
+      "nhan": "Núi ven bờ Cửa Lục"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-ho-tong",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 250,
-      "y": 250,
-      "nhan": "Đoàn chiến thuyền hộ tống đi trước"
+      "id": "kham-chau",
+      "kieu": "dia-danh",
+      "x": 950,
+      "y": 86,
+      "nhan": "Khâm Châu"
     },
     {
-      "id": "quan-ta-mai-phuc",
+      "id": "thuy-binh-o-ma-nhi",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 856,
+      "y": 148,
+      "nhan": "Thuỷ binh Ô Mã Nhi",
+      "quy_mo": "500 chiến thuyền"
+    },
+    {
+      "id": "doan-thuyen-luong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 902,
+      "y": 254,
+      "nhan": "Đoàn thuyền lương",
+      "quy_mo": "70 chiếc, 170.000 thạch"
+    },
+    {
+      "id": "mui-ngoc",
+      "kieu": "dia-danh",
+      "x": 762,
+      "y": 112,
+      "nhan": "Mũi Ngọc (Vạn Ninh)"
+    },
+    {
+      "id": "phuc-kich-mui-ngoc",
       "kieu": "quan",
       "ben": "ta",
-      "x": 520,
-      "y": 380,
-      "nhan": "Trần Khánh Dư mai phục"
+      "x": 690,
+      "y": 168,
+      "nhan": "Phục kích tuyến ngoài"
     },
     {
-      "id": "thuyen-dich-luong",
-      "kieu": "thuyen",
+      "id": "cua-an-bang",
+      "kieu": "dia-danh",
+      "x": 548,
+      "y": 168,
+      "nhan": "Cửa An Bang"
+    },
+    {
+      "id": "mui-o-ma-nhi-vuot",
+      "kieu": "mui-ten",
       "ben": "dich",
-      "x": 700,
-      "y": 270,
-      "nhan": "Đoàn thuyền lương Trương Văn Hổ"
+      "tu": [700, 208],
+      "den": [500, 250],
+      "nhan": "Ô Mã Nhi vượt qua, vào Bạch Đằng"
+    },
+    {
+      "id": "huong-bach-dang",
+      "kieu": "dia-danh",
+      "x": 430,
+      "y": 216,
+      "nhan": "Hướng sông Bạch Đằng"
+    },
+    {
+      "id": "tran-van-don",
+      "kieu": "cong-su",
+      "x": 622,
+      "y": 396,
+      "nhan": "Căn cứ thuỷ quân Vân Đồn",
+      "quy_mo": "Quân Bình Hải — 30 đô, hơn 2.000 người"
+    },
+    {
+      "id": "tran-khanh-du",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 452,
+      "y": 402,
+      "nhan": "Trần Khánh Dư",
+      "quy_mo": "Phó đô tướng quân"
+    },
+    {
+      "id": "tran-dia-mai-phuc",
+      "kieu": "cong-su",
+      "x": 520,
+      "y": 300,
+      "nhan": "Trận địa phục kích",
+      "quy_mo": "Trải từ Vân Đồn tới Cửa Lục"
     },
     {
       "id": "mui-danh-up",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        450,
-        360
-      ],
-      "den": [
-        680,
-        290
-      ],
-      "nhan": "Bất ngờ đánh úp"
+      "tu": [566, 336],
+      "den": [686, 274],
+      "nhan": "Đánh úp đoàn thuyền lương"
     },
     {
-      "id": "thuyen-dich-chim",
+      "id": "mui-thuyen-luong-chay",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [640, 306],
+      "den": [418, 372],
+      "nhan": "Thuyền lương tháo chạy"
+    },
+    {
+      "id": "cua-luc",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 476,
+      "nhan": "Cửa Lục (Hòn Gai)"
+    },
+    {
+      "id": "tran-cuoi-cua-luc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 198,
+      "y": 428,
+      "nhan": "Đánh mạnh ở Cửa Lục"
+    },
+    {
+      "id": "luong-thao-thu-duoc",
+      "kieu": "cong-su",
+      "x": 252,
+      "y": 306,
+      "nhan": "Quân lương, khí giới thu được"
+    },
+    {
+      "id": "truong-van-ho-chay",
       "kieu": "thuyen",
       "ben": "dich",
-      "x": 800,
-      "y": 200,
-      "nhan": "Thuyền lương bị đánh chìm, bắt sống"
+      "x": 140,
+      "y": 178,
+      "nhan": "Trương Văn Hổ chạy thoát",
+      "quy_mo": "Thuyền nhẹ về Quỳnh Châu"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 900,
-      "y": 150,
-      "nhan": "Cắt đứt tiếp tế quân Nguyên"
+      "x": 120,
+      "y": 322,
+      "nhan": "Chiến thắng Vân Đồn"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Nguyên cần lương thực tiếp tế",
-      "mo_ta": "Đầu 1288, quân Nguyên do Thoát Hoan chỉ huy lâm vào thế thiếu lương, trông chờ đoàn thuyền lương do Trương Văn Hổ hộ tống từ Quỳnh Châu (Hải Nam) sang.",
+      "tieu_de": "Vân Đồn thành căn cứ thuỷ quân của nhà Trần",
+      "thoi_gian": "Tháng 10-1282 – cuối năm 1287",
+      "dia_danh": "Bình Than · trấn Vân Đồn",
+      "mo_ta": "Tháng 10-1282, tại hội nghị Bình Than, Trần Khánh Dư được phong Phó đô tướng quân. Cuối năm 1287 ông được cử chỉ huy đạo thuỷ quân phòng giữ vùng biển Đông Bắc, đóng ở Vân Đồn — một trấn có đặt quan trấn, quan lộ và sát hải sư. Ông tổ chức, mở rộng quân Bình Hải thành 30 đô, mỗi đô 80 người, tổng hơn 2.000 quân, cùng khoảng 30 thuyền trực chiến; nhiệm vụ của đơn vị này được ông tuyên bố rõ là đóng ở Vân Đồn để ngăn giặc Hồ.",
       "hien": [
-        "quan-dich-ho-tong"
+        "tran-van-don",
+        "tran-khanh-du"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+        "Bảo tàng Lịch sử Quốc gia — Danh tướng trận hải chiến Vân Đồn — https://baotanglichsu.vn/vi/Articles/3098/16587/danh-tuong-tran-hai-chien-van-djon.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Trần Khánh Dư mai phục tại Vân Đồn",
-      "mo_ta": "Phó đô tướng quân Trần Khánh Dư bố trí quân dân mai phục dọc vùng biển đảo Vân Đồn, đón đường đoàn thuyền lương.",
+      "tieu_de": "Quân Nguyên mở thêm cánh thuỷ, thuyền lương đi sau",
+      "thoi_gian": "Tháng 12-1287",
+      "dia_danh": "Khâm Châu · vùng biển Vạn Ninh (Móng Cái)",
+      "mo_ta": "Khác hai lần trước, lần thứ ba quân Nguyên mở thêm một cánh tiến công bằng đường thuỷ, xuất phát từ Khâm Châu vượt biển vào nước ta theo đường sông Bạch Đằng. Cánh quân này gồm 500 chiến thuyền do Ô Mã Nhi — một người quen thuỷ chiến — cùng Phàn Tiếp, Trương Ngọc thống lĩnh đi trước hộ tống đoàn thuyền lương 70 chiếc chở 170.000 thạch lương của Trương Văn Hổ. Đích đến là Vạn Kiếp, nơi chúng dự kiến dựng một căn cứ quân sự lớn.",
       "hien": [
-        "quan-dich-ho-tong",
-        "quan-ta-mai-phuc"
+        "kham-chau",
+        "thuy-binh-o-ma-nhi",
+        "doan-thuyen-luong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đợi đoàn thuyền lương lọt qua tuyến ngoài",
-      "mo_ta": "Quân ta để mặc đoàn chiến thuyền hộ tống của địch đi qua trước, chờ đúng thời điểm đoàn thuyền lương nặng nề đến sau.",
+      "tieu_de": "Đánh chặn tuyến ngoài ở Mũi Ngọc",
+      "thoi_gian": "Cuối tháng 12-1287",
+      "dia_danh": "Ngọc Sơn — Mũi Ngọc",
+      "mo_ta": "Nắm được kế hoạch tiến công của địch, triều Trần giao cho Trần Khánh Dư chỉ huy quân trấn Vân Đồn đánh chặn, tiêu diệt lực lượng hộ tống và đoàn thuyền lương ngay tại đây, không cho chúng tiến sâu vào nội địa để bắt tay với hai cánh quân bộ của Thoát Hoan. Một bộ phận thuỷ quân ta phục kích chờ địch đến Ngọc Sơn thì đánh chặn, nhưng tương quan lực lượng quá chênh lệch nên chỉ tiêu diệt được đội thuyền đi sau, diệt và bắt một số quân địch.",
       "hien": [
-        "quan-dich-ho-tong",
-        "quan-ta-mai-phuc",
-        "thuyen-dich-luong"
+        "mui-ngoc",
+        "phuc-kich-mui-ngoc",
+        "thuy-binh-o-ma-nhi",
+        "doan-thuyen-luong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đánh úp đoàn thuyền lương",
-      "mo_ta": "Quân ta bất ngờ đánh úp đoàn thuyền lương 70 chiếc, tiêu diệt và bắt sống phần lớn, Trương Văn Hổ phải đổ lương thực xuống biển bỏ chạy.",
+      "tieu_de": "Ô Mã Nhi vượt được cửa An Bang, Trần Khánh Dư bị triệu về trị tội",
+      "thoi_gian": "Cuối tháng 12-1287 – đầu tháng 1-1288",
+      "dia_danh": "Cửa An Bang · sông Bạch Đằng",
+      "mo_ta": "Vượt qua Mũi Ngọc, thuỷ binh Ô Mã Nhi tiến qua vùng biển Vân Đồn rồi vào cửa An Bang. Tại đây một lực lượng lớn thuỷ quân do Trần Khánh Dư chỉ huy chiến đấu quyết liệt nhưng không ngăn cản được, đành để đạo quân Ô Mã Nhi, Phàn Tiếp ngược sông Bạch Đằng tiến vào Vạn Kiếp hội với cánh Thoát Hoan. Được tin thuỷ quân ta không thắng, Thượng hoàng Trần Thánh Tông nổi giận, sai Trung sứ tới Vân Đồn triệu Trần Khánh Dư về kinh trị tội, dù ông là thân vương rất được trọng dụng.",
       "hien": [
-        "quan-ta-mai-phuc",
-        "thuyen-dich-luong",
-        "mui-danh-up",
-        "thuyen-dich-chim"
+        "cua-an-bang",
+        "mui-o-ma-nhi-vuot",
+        "huong-bach-dang",
+        "thuy-binh-o-ma-nhi",
+        "tran-khanh-du"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Cắt đứt nguồn tiếp tế của quân Nguyên",
-      "mo_ta": "Chiến thắng Vân Đồn cắt đứt nguồn tiếp tế, góp phần quyết định vào đại thắng Bạch Đằng cùng năm.",
+      "tieu_de": "Xin khất vài ngày để lập công chuộc tội",
+      "thoi_gian": "Đầu tháng 1-1288",
+      "dia_danh": "Trấn Vân Đồn",
+      "mo_ta": "Trần Khánh Dư nhận tội trước triều đình nhưng xin Trung sứ hoãn hai, ba ngày để lập công chuộc tội rồi chịu búa rìu cũng chưa muộn. Ông bình tĩnh vì đã phán đoán được đoàn thuyền lương của Trương Văn Hổ đang ở phía sau và không có quân hộ tống, nên ta có thể chặn đánh, tiêu diệt. Sử liệu cũ không ghi lực lượng của ông là bao nhiêu và đội hình bố trí ra sao, nhưng tương quan giữa hai bên ở thời điểm này đã khác hẳn trước: thuỷ quân nhà Trần tinh nhuệ, quyết chiến cao, đã có kinh nghiệm đánh thuỷ binh Mông – Nguyên.",
       "hien": [
-        "thuyen-dich-chim",
-        "co-thang"
+        "tran-khanh-du",
+        "tran-van-don"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Dựng trận địa phục kích từ Vân Đồn tới Cửa Lục",
+      "thoi_gian": "Tháng 1-1288",
+      "dia_danh": "Vân Đồn (Cẩm Phả) – Cửa Lục (Hòn Gai)",
+      "mo_ta": "Trần Khánh Dư gấp rút chấn chỉnh lực lượng, xây dựng trận địa phục kích trải suốt chặng từ Vân Đồn tới Cửa Lục, quyết tâm tiêu diệt toàn bộ đoàn thuyền lương của địch. Thế trận không dồn vào một điểm mà kéo dài trên cả chặng đường địch phải đi, để đoàn thuyền nặng nề, cơ động kém không có chỗ nào thoát khỏi tầm đánh. Đây là cách đánh dựa hẳn vào chỗ yếu của địch: thuyền lương chở nặng, chậm chạp, lại không có lực lượng thiện chiến bảo vệ.",
+      "hien": [
+        "tran-dia-mai-phuc",
+        "tran-khanh-du",
+        "tran-van-don",
+        "cua-luc"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đánh úp đoàn thuyền lương",
+      "thoi_gian": "Tháng 1-1288",
+      "dia_danh": "Cửa biển Vân Đồn",
+      "mo_ta": "Tháng 1-1288, đoàn thuyền lương nặng nề của Trương Văn Hổ tiến vào cửa biển Vân Đồn trong thế rất chủ quan, tin rằng thuỷ binh Ô Mã Nhi đi trước đã dọn đường. Khi đoàn thuyền lọt vào thế trận phục kích, lực lượng thuỷ quân của Trần Khánh Dư được lệnh bất ngờ từ các hướng xông ra tiến công mạnh vào giữa đội hình địch. Quân Trương Văn Hổ vừa chống đỡ vừa cố tiến nhanh về phía cửa sông Bạch Đằng với hy vọng được thuỷ binh Ô Mã Nhi ứng cứu.",
+      "hien": [
+        "doan-thuyen-luong",
+        "mui-danh-up",
+        "tran-dia-mai-phuc",
+        "mui-thuyen-luong-chay"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Cửa Lục — đổ lương xuống biển mà chạy",
+      "thoi_gian": "Tháng 1-1288",
+      "dia_danh": "Cửa Lục (Hòn Gai)",
+      "mo_ta": "Đoàn thuyền chở nặng, sức cơ động kém, không thể đối phó với thuỷ quân thiện chiến của Đại Việt trên suốt chặng đường dài. Đến Cửa Lục, bị lực lượng đông đảo của ta đánh mạnh, quân Nguyên hoảng loạn, mất hết tinh thần chiến đấu, buộc phải đổ cả lương thực và vũ khí xuống biển để rút chạy nhưng cũng không tránh khỏi bị tiêu diệt. Trận đánh diễn ra nhanh gọn; riêng Trương Văn Hổ thoát chết nhờ dùng chiếc thuyền nhẹ chạy trốn về Quỳnh Châu. Trần Khánh Dư bắt được quân lương, khí giới và tù binh của địch nhiều không kể xiết.",
+      "hien": [
+        "cua-luc",
+        "tran-cuoi-cua-luc",
+        "truong-van-ho-chay",
+        "luong-thao-thu-duoc"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+        "Bảo tàng Lịch sử Quốc gia — Danh tướng trận hải chiến Vân Đồn — https://baotanglichsu.vn/vi/Articles/3098/16587/danh-tuong-tran-hai-chien-van-djon.html"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Giặc đói — tiền đề cho đại thắng Bạch Đằng",
+      "thoi_gian": "Tháng 2 – tháng 4 năm 1288",
+      "dia_danh": "Đại Bàng · Tháp Sơn · An Bang",
+      "mo_ta": "Ba đường tiến công thuỷ bộ của giặc đều phụ thuộc vào thuyền lương vận tải đường biển. Đại quân đã vào sâu đất Đại Việt mà thuyền lương mãi không thấy: Thoát Hoan năm lần bảy lượt sai Ô Mã Nhi ra cửa Đại Bàng, rồi Tháp Sơn, rồi An Bang đón mà không gặp. Lương thực không có, đồng nội cũng không cướp bóc được gì, tướng sĩ căm phẫn: ép chiến đấu thì trả lời ốm đau không đánh được, dụ ở lại thì trả lời lương hết không thể ở lại. Từ đó chúng quyết rút, mở ra trận Bạch Đằng tháng 4-1288.",
+      "hien": [
+        "co-thang",
+        "luong-thao-thu-duoc",
+        "huong-bach-dang"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Danh tướng trận hải chiến Vân Đồn — https://baotanglichsu.vn/vi/Articles/3098/16587/danh-tuong-tran-hai-chien-van-djon.html"
       ]
     }
   ],
@@ -142,14 +375,52 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Cục Di sản văn hoá (dsvh.gov.vn) — Quần thể Thương cảng Vân Đồn"
+    "Cục Di sản văn hoá (dsvh.gov.vn) — Quần thể Thương cảng Vân Đồn",
+    "Báo Quân đội nhân dân — Phó đô tướng quân và trận Vân Đồn — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+    "Bảo tàng Lịch sử Quốc gia — Danh tướng trận hải chiến Vân Đồn — https://baotanglichsu.vn/vi/Articles/3098/16587/danh-tuong-tran-hai-chien-van-djon.html"
   ],
   "trich_van_tich": [
+    {
+      "sach": "Đại Việt sử ký toàn thư",
+      "doan": "mùa đông, tháng mười năm Nhâm Ngọ (1282) vua ngự ra Bình Than đóng ở vùng Trần Xá, họp các vương hầu và trăm quan, bàn kế sách đánh giữ và chia đi đóng giữ những nơi hiểm yếu. Cho Nhân Huệ Vương Trần Khánh Dư làm phó đô tướng quân",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/16587/danh-tuong-tran-hai-chien-van-djon.html",
+      "buoc": 1
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư, NXB Khoa học xã hội, H. 1998, tập II, tr.61 — lời Trần Khánh Dư",
+      "doan": "Quân đóng ở Vân Đồn là để ngăn giặc Hồ (tức quân Mông-Nguyên)",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+      "buoc": 1
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư, NXB Khoa học xã hội, H. 1998, tập II, tr.60 — lời Trần Khánh Dư nói với Trung sứ",
+      "doan": "Lấy quân luật mà xử, tôi cam chịu tội, nhưng xin khất hai, ba ngày để lập công chuộc tội, rồi sẽ chịu búa rìu cũng chưa muộn",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+      "buoc": 5
+    },
     {
       "sach": "Không rõ (Báo Quảng Ninh dẫn lại lời Trần Khánh Dư, không nêu tên bộ sử cụ thể)",
       "doan": "Lấy quân luật mà xử, tôi xin chịu tội; nhưng xin hoãn vài ba ngày để tôi lập công chuộc tội rồi sẽ chịu búa rìu cũng chưa muộn!",
       "nguon_trich": "Báo Quảng Ninh — https://baoquangninh.vn/chien-thang-van-don-cua-luc-720-nam-truoc-2105269.html",
-      "buoc": 3
+      "buoc": 5
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư",
+      "doan": "Khánh Dư biết quân giặc đã qua, thuyền vận tải ắt theo sau, nên thu thập tàn binh đợi chúng. Chẳng bao lâu thuyền tải quả nhiên đến, (Khánh Dư) đánh bại chúng, bắt được quân lương khí giới của giặc nhiều không kể xiết, (ông) lập tức sai chạy ngựa mang thư về báo. Thượng hoàng tha cho tội trước, không hỏi đến nữa",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+      "buoc": 7
+    },
+    {
+      "sach": "Việt sử tiêu án — Ngô Thì Sĩ",
+      "doan": "Tướng nhà Nguyên là Trương Văn Hổ chở thuyền lương tới, Khánh Dư đón đánh, quân giặc đại bại. Đến biển Lục Thủy lại đánh bại quân giặc. Thuyền lương đều bị chìm xuống biển...",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/16587/danh-tuong-tran-hai-chien-van-djon.html",
+      "buoc": 8
+    },
+    {
+      "sach": "Lời bàn của sử thần Ngô Thì Sĩ",
+      "doan": "Trận thắng ở Vân Đồn rất kỳ diệu và là căn bản của thắng lợi sau đó. Trận thắng ở Vân Đồn là chẹt con hổ mà cướp lấy mồi... Mưu tính hiệu và công thắng địch của Trần Khánh Dư cũng vĩ đại thay",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/pho-do-tuong-quan-va-tran-van-don-503030",
+      "buoc": 9
     }
   ]
 }

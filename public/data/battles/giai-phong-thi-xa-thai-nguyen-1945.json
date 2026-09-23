@@ -1,0 +1,77 @@
+{
+  "ghi_chu": "Sa đồ giải phóng thị xã Thái Nguyên 20/8/1945 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "giai-phong-thi-xa-thai-nguyen-1945",
+  "ten": "Giải phóng thị xã Thái Nguyên (20/8/1945)",
+  "nam": 1945,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Võ Nguyên Giáp, Trần Đăng Ninh",
+  "doi_thu": "Quân Nhật; lính bảo an tay sai",
+  "dia_diem": "Thị xã Thái Nguyên — nay thuộc tỉnh Thái Nguyên",
+  "lien_quan_tinh": ["thai-nguyen"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "song", "diem": [[100, 700], [500, 750], [900, 720]], "nhan": "Sông Cầu qua thị xã Thái Nguyên" }
+  ],
+  "phan_tu": [
+    { "id": "xuat-phat-tan-trao", "kieu": "quan", "ben": "ta", "x": 100, "y": 100, "nhan": "Giải phóng quân xuất phát từ Tân Trào (chiều 16/8)" },
+    { "id": "tap-ket-thinh-dan", "kieu": "quan", "ben": "ta", "x": 250, "y": 300, "nhan": "Tập kết tại Thịnh Đán (13 giờ 19/8)" },
+    { "id": "don-keple", "kieu": "cong-su", "ben": "dich", "x": 400, "y": 400, "nhan": "Đồn Képle — nơi triển khai đội hình" },
+    { "id": "danh-chiem-nha-may-nuoc", "kieu": "quan", "ben": "ta", "x": 350, "y": 450, "nhan": "Đánh chiếm Nhà máy nước, bắt 5 lính bảo an (2 giờ 20/8)" },
+    { "id": "bao-vay-dinh-tinh-truong", "kieu": "mui-ten", "ben": "ta", "tu": [400, 400], "den": [600, 350], "nhan": "Bao vây dinh Tỉnh trưởng, dinh Huyện trưởng Đồng Hỷ" },
+    { "id": "bao-vay-trai-bao-an", "kieu": "mui-ten", "ben": "ta", "tu": [400, 400], "den": [650, 450], "nhan": "Bao vây trại lính bảo an" },
+    { "id": "toi-hau-thu", "kieu": "co", "ben": "ta", "x": 600, "y": 360, "nhan": "Tối hậu thư buộc đầu hàng (5 giờ 30)" },
+    { "id": "linh-bao-an-ha-vu-khi", "kieu": "quan", "ben": "dich", "x": 680, "y": 440, "nhan": "Lính bảo an hạ vũ khí" },
+    { "id": "tan-cong-quan-nhat", "kieu": "mui-ten", "ben": "ta", "tu": [600, 400], "den": [750, 420], "nhan": "Tấn công các vị trí quân Nhật (7 giờ 30 – 15 giờ)" },
+    { "id": "san-van-dong-tuyen-bo", "kieu": "co", "ben": "ta", "x": 500, "y": 600, "nhan": "Sân vận động Thái Nguyên — tuyên bố xoá bỏ chính quyền địch (chiều 20/8)" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Xuất phát từ Tân Trào",
+      "mo_ta": "Chiều 16/8/1945, đơn vị Giải phóng quân do Võ Nguyên Giáp và Trần Đăng Ninh chỉ huy xuất phát từ Tân Trào (Sơn Dương, Tuyên Quang) tiến về đánh Nhật ở thị xã Thái Nguyên.",
+      "hien": ["xuat-phat-tan-trao"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Tập kết, triển khai đội hình",
+      "mo_ta": "13 giờ ngày 19/8, đơn vị tập kết tại xã Thịnh Đán; đêm 19 rạng 20/8, quân Giải phóng tiến vào chiếm lĩnh trận địa, dừng ở đồn Képle để triển khai ba đại đội bao vây các mục tiêu quanh thị xã.",
+      "hien": ["tap-ket-thinh-dan", "don-keple"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh chiếm Nhà máy nước",
+      "mo_ta": "2 giờ sáng 20/8, tự vệ Thái Nguyên do Đoàn Sáp dẫn đầu đánh chiếm Nhà máy nước, bắt sống 5 lính bảo an, thu 5 súng.",
+      "hien": ["danh-chiem-nha-may-nuoc"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bao vây dinh Tỉnh trưởng và trại lính bảo an",
+      "mo_ta": "Các đại đội hoàn tất bao vây dinh Tỉnh trưởng, dinh Huyện trưởng Đồng Hỷ và trại lính bảo an trước 4 giờ sáng.",
+      "hien": ["bao-vay-dinh-tinh-truong", "bao-vay-trai-bao-an"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tối hậu thư buộc đầu hàng",
+      "mo_ta": "5 giờ 30 phút, quân Giải phóng gửi tối hậu thư buộc Tỉnh trưởng và Huyện trưởng Đồng Hỷ đầu hàng; cả hai ra lệnh cho lính bảo an hạ vũ khí.",
+      "hien": ["toi-hau-thu", "linh-bao-an-ha-vu-khi"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Tấn công quân Nhật",
+      "mo_ta": "Sau khi bức hàng lính bảo an, quân ta tiếp tục nổ súng tấn công các vị trí quân Nhật từ 7 giờ 30 đến 15 giờ, có sự phối hợp của nhân dân Thái Nguyên.",
+      "hien": ["tan-cong-quan-nhat"]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Tuyên bố xoá bỏ chính quyền địch",
+      "mo_ta": "Chiều 20/8/1945, tại sân vận động Thái Nguyên, Võ Nguyên Giáp thay mặt Ủy ban Khởi nghĩa toàn quốc tuyên bố xoá bỏ chính quyền địch, thành lập Ủy ban Nhân dân cách mạng lâm thời tỉnh do Lê Trung Đình làm Chủ tịch.",
+      "hien": ["san-van-dong-tuyen-bo"]
+    }
+  ],
+  "ket_qua": "Thị xã Thái Nguyên được giải phóng chiều 20/8/1945; chính quyền tay sai bị xoá bỏ, Ủy ban Nhân dân cách mạng lâm thời tỉnh Thái Nguyên ra đời do Lê Trung Đình làm Chủ tịch.",
+  "y_nghia": "Là trận đánh có tổ chức quân sự bài bản hiếm hoi trong Cách mạng Tháng Tám, mở đường cho Giải phóng quân và các cơ quan lãnh đạo cách mạng tiến về Hà Nội.",
+  "trang_thai": "draft",
+  "nguon": [
+    "baothainguyen.vn (Báo Thái Nguyên) — Nhân dân Thái Nguyên nổi dậy giành chính quyền trong Cách mạng Tháng Tám"
+  ]
+}

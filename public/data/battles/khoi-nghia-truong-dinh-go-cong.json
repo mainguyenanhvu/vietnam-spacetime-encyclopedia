@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Trương Định 1862–1864 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Trương Định 1859–1864 — MINH HOẠ theo mộc bản triều Nguyễn và tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
   "id": "khoi-nghia-truong-dinh-go-cong",
   "ten": "Khởi nghĩa Trương Định",
   "nam": 1862,
@@ -7,136 +7,304 @@
   "chi_huy": "Trương Định",
   "doi_thu": "Pháp",
   "dia_diem": "Gò Công (nay tỉnh Đồng Tháp)",
+  "thoi_gian": "1859 – 20/8/1864",
   "lien_quan_tinh": [
     "dong-thap"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "bien",
+      "diem": [
+        [886, 116],
+        [910, 300],
+        [892, 484]
+      ],
+      "nhan": "Biển Đông — cửa Tiểu, cửa Đại"
+    },
+    {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          350
-        ],
-        [
-          500,
-          330
-        ],
-        [
-          1000,
-          370
-        ]
+        [214, 116],
+        [400, 220],
+        [562, 330],
+        [706, 430]
       ],
-      "nhan": "Vùng sông rạch Gò Công"
+      "nhan": "Hệ sông rạch Gò Công"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [378, 428],
+        [520, 398],
+        [644, 440],
+        [560, 512],
+        [408, 500]
+      ],
+      "nhan": "Đám lá tối trời — rừng dừa nước rậm"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [120, 92],
+        [300, 180],
+        [480, 282],
+        [640, 382]
+      ],
+      "nhan": "Đường từ Gia Định xuống Gò Công"
     }
   ],
   "phan_tu": [
     {
-      "id": "lenh-bai-binh",
+      "id": "gia-dinh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 118,
+      "y": 76,
+      "nhan": "Thành Gia Định — quân Pháp đánh chiếm năm Kỷ Mùi 1859"
+    },
+    {
+      "id": "thuan-kieu",
       "kieu": "dia-danh",
-      "x": 200,
-      "y": 200,
-      "nhan": "Lệnh bãi binh của triều đình"
+      "x": 250,
+      "y": 142,
+      "nhan": "Thuận Kiều — nơi đóng nghĩa binh chặn giặc"
     },
     {
-      "id": "co-ta-khong-tuan-lenh",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 350,
-      "y": 250,
-      "nhan": "Trương Định không tuân lệnh"
+      "id": "hoa-uoc-1862",
+      "kieu": "dia-danh",
+      "x": 106,
+      "y": 212,
+      "nhan": "Hoà ước Nhâm Tuất 1862 — nhường ba tỉnh miền Đông"
     },
     {
-      "id": "can-cu-go-cong",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 450,
-      "y": 400,
-      "nhan": "Căn cứ Gò Công"
-    },
-    {
-      "id": "quan-ta-truong-dinh",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 400,
-      "y": 450,
-      "nhan": "Bình Tây Đại nguyên soái Trương Định"
-    },
-    {
-      "id": "don-phap",
+      "id": "don-rach-tra",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 700,
-      "y": 350,
-      "nhan": "Đồn Pháp bị tập kích"
+      "x": 168,
+      "y": 322,
+      "nhan": "Đồn Rạch Tra, Tây Ninh"
+    },
+    {
+      "id": "long-thanh",
+      "kieu": "dia-danh",
+      "x": 340,
+      "y": 232,
+      "nhan": "Long Thành, Biên Hoà"
+    },
+    {
+      "id": "ben-luc",
+      "kieu": "dia-danh",
+      "x": 246,
+      "y": 428,
+      "nhan": "Bến Lức — tập kích hai chiếc Lorcha"
+    },
+    {
+      "id": "muc-tieu-tap-kich",
+      "kieu": "dia-danh",
+      "x": 160,
+      "y": 522,
+      "nhan": "Pháo thuyền Alarne và trận địa pháo trên rạch Gò Công"
+    },
+    {
+      "id": "nghia-quan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 410,
+      "y": 336,
+      "nhan": "Nghĩa binh do Trương Định chiêu mộ"
     },
     {
       "id": "mui-tap-kich",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        520,
-        440
-      ],
-      "den": [
-        670,
-        360
-      ],
-      "nhan": "Đánh nhiều đồn Pháp"
+      "tu": [386, 356],
+      "den": [226, 330],
+      "nhan": "Các trận tập kích đồn, tàu và trận địa pháo"
     },
     {
-      "id": "co-tuan-tiet",
+      "id": "binh-tay",
       "kieu": "co",
       "ben": "ta",
-      "x": 450,
-      "y": 500,
-      "nhan": "Trương Định tuẫn tiết"
+      "x": 566,
+      "y": 236,
+      "nhan": "Nhân dân và nghĩa quân tôn làm Bình Tây Đại Nguyên soái"
+    },
+    {
+      "id": "gia-thuan",
+      "kieu": "dia-danh",
+      "x": 716,
+      "y": 296,
+      "nhan": "Gia Thuận — ấp do Trương Định chiêu dân khai hoang lập nên"
+    },
+    {
+      "id": "dam-la-toi-troi",
+      "kieu": "dia-danh",
+      "x": 496,
+      "y": 462,
+      "nhan": "Đám lá tối trời — nơi lập căn cứ và viết hịch kêu gọi kháng chiến"
+    },
+    {
+      "id": "luy-phao-dai",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 762,
+      "y": 466,
+      "nhan": "Luỹ Pháo Đài — căn cứ hình lục giác, dựng lại từ đồn cũ năm 1834"
+    },
+    {
+      "id": "tan-hoa",
+      "kieu": "dia-danh",
+      "x": 618,
+      "y": 548,
+      "nhan": "Tân Hoà — Gò Công, vùng đại bản doanh"
+    },
+    {
+      "id": "mui-danh-up",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [872, 396],
+      "den": [726, 468],
+      "nhan": "Ngày 19/8/1864 Pháp bất ngờ bao vây đánh úp đại bản doanh"
+    },
+    {
+      "id": "ao-dinh",
+      "kieu": "dia-danh",
+      "x": 856,
+      "y": 556,
+      "nhan": "Ao Dinh — nơi Trương Định hy sinh ngày 20/8/1864"
+    },
+    {
+      "id": "mo-den-tho",
+      "kieu": "dia-danh",
+      "x": 872,
+      "y": 172,
+      "nhan": "Mộ và đền thờ Trương Định ở Gò Công"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Triều đình ký hoà ước, ra lệnh bãi binh",
-      "mo_ta": "Sau Hoà ước Nhâm Tuất 1862, triều đình Huế ra lệnh Trương Định bãi binh, rút quân.",
+      "tieu_de": "Từ Quảng Ngãi vào Gò Công, chiêu dân lập ấp",
+      "thoi_gian": "1844 – 1850",
+      "dia_danh": "Gò Công — Gia Thuận",
+      "mo_ta": "Trương Định, còn có tên gọi là Trương Công Định, người làng Tư Cung, phủ Bình Sơn, tỉnh Quảng Ngãi, sinh trong gia đình có cha là viên Lãnh binh Trương Cầm nên sớm được làm quen với binh thư đồ lược và tinh thông võ nghệ. Năm Giáp Thìn 1844 ông theo cha vào Nam lập nghiệp ở huyện Gò Công. Năm Canh Tuất 1850, hưởng ứng chính sách đồn điền của Nguyễn Tri Phương, ông ra sức chiêu mộ dân nghèo khai hoang, vỡ đất, lập ấp ở Gia Thuận; nhờ công lao ấy ông được bổ làm Phó quản cơ rồi cất nhắc lên Quản cơ.",
       "hien": [
-        "lenh-bai-binh"
+        "gia-thuan",
+        "tan-hoa"
+      ],
+      "nguon": [
+        "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Trương Định không tuân lệnh, ở lại kháng chiến",
-      "mo_ta": "Trước sự thúc giục của nhân dân, Trương Định không tuân lệnh triều đình, quyết ở lại cùng nghĩa quân kháng chiến.",
+      "tieu_de": "Pháp chiếm thành Gia Định, nghĩa binh đóng ở Thuận Kiều",
+      "thoi_gian": "Năm Kỷ Mùi (1859)",
+      "dia_danh": "Gia Định — Thuận Kiều",
+      "mo_ta": "Năm Kỷ Mùi 1859, quân Pháp đánh chiếm thành Gia Định. Trương Định tập hợp nghĩa binh, đóng ở Thuận Kiều để chặn giặc. Ông đem nghĩa binh của mình lên đóng quân ở Gia Định ngay khi mặt trận vừa mở, trở thành một trong những người đầu tiên ở Nam Kỳ dựng lực lượng vũ trang riêng bên cạnh quân triều đình.",
       "hien": [
-        "lenh-bai-binh",
-        "co-ta-khong-tuan-lenh"
+        "gia-dinh",
+        "thuan-kieu",
+        "nghia-quan"
+      ],
+      "nguon": [
+        "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/15047/thang-9-1861-truong-djinh-truong-cong-djinh-khoi-nghia-chong-phap-o-gia-djinh.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Xây căn cứ Gò Công",
-      "mo_ta": "Nghĩa quân xây dựng căn cứ kháng chiến tại Gò Công, được nhân dân suy tôn Bình Tây Đại nguyên soái.",
+      "tieu_de": "Những trận tập kích đầu tiên",
+      "dia_danh": "Rạch Tra · Long Thành · Bến Lức · rạch Gò Công",
+      "mo_ta": "Trương Định hăng hái đứng đầu các phong trào đấu tranh chống Pháp và đã lập được nhiều chiến công lớn: tập kích đồn Rạch Tra ở Tây Ninh, đánh Long Thành ở Biên Hoà, tấn công hai chiếc Lorcha tại Bến Lức, đánh pháo thuyền Alarne và trận địa pháo trên rạch Gò Công. Lối đánh của nghĩa binh là đánh vào cứ điểm lẻ và tàu thuyền trên sông rạch, tránh đối đầu trực diện với các đơn vị lớn.",
       "hien": [
-        "can-cu-go-cong",
-        "quan-ta-truong-dinh"
+        "don-rach-tra",
+        "long-thanh",
+        "ben-luc",
+        "muc-tieu-tap-kich",
+        "mui-tap-kich"
+      ],
+      "nguon": [
+        "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đánh nhiều đồn Pháp",
-      "mo_ta": "Nghĩa quân liên tục tập kích, đánh nhiều đồn bốt của quân Pháp trong vùng.",
+      "tieu_de": "Nhân dân suy tôn Bình Tây Đại Nguyên soái",
+      "thoi_gian": "Từ tháng 9/1861",
+      "dia_danh": "Gia Định — Gò Công",
+      "mo_ta": "Trong các cuộc khởi nghĩa nổ ra ở Nam Kỳ sau khi Pháp chiếm Gia Định, cuộc khởi nghĩa của Trương Định là lớn nhất lúc đó. Chính nhân dân và nghĩa quân đã tôn Trương Định làm Bình Tây Đại Nguyên soái — một danh hiệu không do triều đình phong, mà do những người cầm vũ khí và những làng nuôi quân đặt cho người chỉ huy của mình.",
       "hien": [
-        "can-cu-go-cong",
-        "don-phap",
-        "mui-tap-kich"
+        "binh-tay",
+        "nghia-quan",
+        "tan-hoa"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/15047/thang-9-1861-truong-djinh-truong-cong-djinh-khoi-nghia-chong-phap-o-gia-djinh.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Trương Định tuẫn tiết (1864)",
-      "mo_ta": "Bị chỉ điểm, căn cứ bị bao vây; Trương Định tuẫn tiết để giữ khí tiết, kết thúc cuộc kháng chiến kéo dài hơn hai năm.",
+      "tieu_de": "Hoà ước 1862 — khước từ chiếu chỉ, ở lại kháng chiến",
+      "thoi_gian": "Năm Nhâm Tuất (1862)",
+      "dia_danh": "Gò Công",
+      "mo_ta": "Năm Nhâm Tuất 1862, triều đình Nguyễn ký hoà ước dâng cho thực dân Pháp đảo Côn Lôn và ba tỉnh miền Đông Nam Kỳ là Biên Hoà, Gia Định và Định Tường. Khi hoà ước thành, vua Tự Đức lệnh cho Trương Định đổi bổ về Phú Yên nhận chức. Để chiều theo lòng dân và quân sĩ, ông đã khước từ chiếu chỉ, ở lại lãnh đạo nhân dân tiếp tục cuộc chiến chống giặc Pháp. Vì việc này, Trương Định bị cách chức.",
       "hien": [
-        "co-tuan-tiet"
+        "hoa-uoc-1862",
+        "binh-tay",
+        "tan-hoa"
+      ],
+      "nguon": [
+        "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Căn cứ Gò Công — Đám lá tối trời và Luỹ Pháo Đài",
+      "dia_danh": "Tân Hoà — Gia Thuận",
+      "mo_ta": "Mất chỗ dựa của triều đình, nghĩa quân lấy vùng Gò Công làm căn cứ. Đám lá tối trời — dải rừng dừa nước rậm rịt — là nơi Trương Định lập căn cứ và viết hịch kêu gọi kháng chiến. Luỹ Pháo Đài, căn cứ kháng Pháp hình lục giác dựng lại từ một đồn cũ có từ năm 1834, giữ mặt hướng biển. Địa thế sông rạch chằng chịt cho phép nghĩa quân phân tán rồi tập trung nhanh, khiến các cuộc càn của đối phương nhiều lần đánh vào chỗ trống.",
+      "hien": [
+        "dam-la-toi-troi",
+        "luy-phao-dai",
+        "gia-thuan",
+        "nghia-quan"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-khoi-nghia-truong-dinh-tinh-tien-giang-22181"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Ngày 19–20/8/1864, Pháp đánh úp; Trương Định tuẫn tiết",
+      "thoi_gian": "19 – rạng sáng 20/8/1864",
+      "dia_danh": "Ao Dinh — Gò Công",
+      "mo_ta": "Ngày 19/8/1864, Pháp bất ngờ bao vây đánh úp nghĩa quân tại đại bản doanh; Trương Định bị trọng thương — Bảo tàng Lịch sử Quốc gia chép ông bị bắn gãy xương sống. Giữ vững khí tiết, không để rơi vào tay giặc, ông rút gươm tự sát vào rạng sáng ngày 20/8/1864, khi mới 44 tuổi. Hay tin ông mất, vua Tự Đức truy tặng phẩm hàm, còn vợ ông là bà Lê Thị Thưởng được chuẩn cấp đến hết đời mỗi tháng 20 quan tiền và gạo.",
+      "hien": [
+        "mui-danh-up",
+        "ao-dinh",
+        "luy-phao-dai"
+      ],
+      "nguon": [
+        "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/15047/thang-9-1861-truong-djinh-truong-cong-djinh-khoi-nghia-chong-phap-o-gia-djinh.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Di tích khởi nghĩa Trương Định hôm nay",
+      "thoi_gian": "1987 — 2024",
+      "dia_danh": "Gò Công · Gia Thuận · Tân Phú Đông",
+      "mo_ta": "Thi hài ông được gia đình và nhân dân mang về an táng ở Gò Công. Di tích mộ và đền thờ Trương Định được công nhận là di tích cấp quốc gia ngày 30/8/1987; đền thờ ở xã Gia Thuận được công nhận năm 2004. Cụm Di tích Khởi nghĩa Trương Định gồm năm điểm — mộ và đền thờ, Luỹ Pháo Đài, đền thờ tại Gia Thuận, Đám lá tối trời, Ao Dinh — được Thủ tướng Chính phủ xếp hạng di tích quốc gia đặc biệt theo Quyết định số 694/QĐ-TTg ngày 18/7/2024.",
+      "hien": [
+        "mo-den-tho",
+        "dam-la-toi-troi",
+        "ao-dinh",
+        "gia-thuan"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-khoi-nghia-truong-dinh-tinh-tien-giang-22181",
+        "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/"
       ]
     }
   ],
@@ -146,7 +314,10 @@
   "nguon": [
     "sknc.qdnd.vn — Bình Tây Đại nguyên soái Trương Định",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "dsvh.gov.vn — Di tích khởi nghĩa Trương Định"
+    "dsvh.gov.vn — Di tích khởi nghĩa Trương Định",
+    "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/",
+    "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/3097/15047/thang-9-1861-truong-djinh-truong-cong-djinh-khoi-nghia-chong-phap-o-gia-djinh.html",
+    "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-khoi-nghia-truong-dinh-tinh-tien-giang-22181"
   ],
   "trich_van_tich": [
     {
@@ -154,6 +325,12 @@
       "doan": "Phó quản cơ Gia Định là Trương Định (người huyện Bình Sơn, tỉnh Quảng Ngãi, con viên Lãnh binh Trương Cầm) chiêu mộ những thủ dõng, có nhiều người đi theo. Thường cùng quân Tây dương chống đánh nhau đắc lực, thự Tuần phủ là Đỗ Quang đem việc tâu lên. Vua cất nhắc cho làm Quản cơ, rồi lĩnh chức Phó lãnh binh",
       "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/",
       "buoc": 1
+    },
+    {
+      "sach": "Trung tâm Lưu trữ quốc gia IV — bài «160 năm ngày mất anh hùng dân tộc Trương Định»",
+      "doan": "Tuy nhiên, để chiều theo lòng dân và quân sĩ, ông đã khước từ chiếu chỉ, ở lại lãnh đạo nhân dân tiếp tục cuộc chiến chống giặc Pháp.",
+      "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/160-nam-ngay-mat-cua-anh-hung-truong-dinh/",
+      "buoc": 5
     }
   ]
 }

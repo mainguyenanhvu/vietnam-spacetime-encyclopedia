@@ -3,6 +3,7 @@
   "id": "binh-le-nguyen-1258",
   "ten": "Trận Bình Lệ Nguyên (1258)",
   "nam": 1258,
+  "thoi_gian": "Tháng chạp năm Đinh Tỵ – ngày 17-1-1258",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Trần Thái Tông",
   "doi_thu": "Quân Mông Cổ (Ngột Lương Hợp Thai)",
@@ -11,150 +12,350 @@
     "phu-tho"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Vua Trần Thái Tông trực tiếp chỉ huy chiến đấu, tự làm tướng đốc chiến đi trước xông pha tên đạn",
+        "Tướng Lê Tần — cũng chép là Lê Phụ Trần — một mình một ngựa ra vào trận giặc",
+        "Đội thuyền chiến bố trí ven sông Cà Lồ"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "Khoảng ba vạn người, gồm kỵ binh người Mông Cổ và quân Thoán Bặc",
+          "nguon": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html"
+        },
+        {
+          "so": "Khoảng 4 vạn kỵ binh kéo từ Đại Lý sang",
+          "nguon": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
+        }
+      ],
+      "don_vi": [
+        "Ngột Lương Hợp Thai tổng chỉ huy, chia quân làm ba đội",
+        "Triệt Triệt Đô làm tiên phong qua sông trước",
+        "Phò mã Hoài Đô theo sau cắt hậu quân ta",
+        "A Truật, con Ngột Lương Hợp Thai, đi tiếp viện và dò xét tình hình"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html",
+      "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
+    ]
+  },
+  "ton_that": {
+    "ta": "Quân ta rút lui an toàn, các đội thuyền vẫn vẹn nguyên — âm mưu cướp thuyền của Ngột Lương Hợp Thai hoàn toàn thất bại.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          350
-        ],
-        [
-          500,
-          330
-        ],
-        [
-          1000,
-          370
-        ]
+        [120, 332],
+        [320, 300],
+        [520, 310],
+        [720, 292],
+        [930, 302]
       ],
       "nhan": "Sông Cà Lồ"
     },
     {
-      "kieu": "duong",
+      "kieu": "song",
       "diem": [
-        [
-          400,
-          400
-        ],
-        [
-          650,
-          450
-        ],
-        [
-          900,
-          470
-        ]
+        [880, 118],
+        [720, 180],
+        [560, 230],
+        [420, 268]
       ],
-      "nhan": "Đường rút về Phù Lỗ"
+      "nhan": "Sông Thao – sông Hồng"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [962, 78],
+        [862, 140],
+        [762, 196]
+      ],
+      "nhan": "Sông Chảy"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [238, 142],
+        [348, 114],
+        [458, 142]
+      ],
+      "nhan": "Dãy Tam Đảo"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [696, 384],
+        [836, 360],
+        [898, 422],
+        [768, 458],
+        [676, 432]
+      ],
+      "nhan": "Rừng núi Quy Hoá"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-mong-co",
+      "id": "chau-thu-vat",
+      "kieu": "dia-danh",
+      "x": 952,
+      "y": 60,
+      "nhan": "Châu Thu Vật"
+    },
+    {
+      "id": "dao-quan-song-chay",
       "kieu": "quan",
       "ben": "dich",
-      "x": 370,
-      "y": 180,
-      "nhan": "Kỵ binh Ngột Lương Hợp Thai"
+      "x": 898,
+      "y": 142,
+      "nhan": "Đạo quân theo sông Chảy"
     },
     {
-      "id": "quan-ta-tran-thai-tong",
+      "id": "dao-quan-huu-ngan",
       "kieu": "quan",
-      "ben": "ta",
-      "x": 365,
-      "y": 481,
-      "nhan": "Trần Thái Tông dàn quân voi – kỵ – bộ"
+      "ben": "dich",
+      "x": 792,
+      "y": 252,
+      "nhan": "Đạo quân theo hữu ngạn sông Hồng"
     },
     {
-      "id": "mui-dich-tien-cong",
+      "id": "quy-hoa",
+      "kieu": "dia-danh",
+      "x": 828,
+      "y": 434,
+      "nhan": "Quy Hoá"
+    },
+    {
+      "id": "a-truat-do-tham",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 566,
+      "y": 176,
+      "nhan": "A Truật đi do thám"
+    },
+    {
+      "id": "viet-tri",
+      "kieu": "dia-danh",
+      "x": 654,
+      "y": 244,
+      "nhan": "Việt Trì — hai đạo hợp quân"
+    },
+    {
+      "id": "triet-triet-do",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 526,
+      "y": 262,
+      "nhan": "Triệt Triệt Đô",
+      "quy_mo": "Tiên phong qua sông trước"
+    },
+    {
+      "id": "mui-qua-song",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        300,
-        220
-      ],
-      "den": [
-        420,
-        400
-      ],
-      "nhan": "Kỵ binh Mông Cổ tiến công mãnh liệt"
+      "tu": [522, 286],
+      "den": [452, 334],
+      "nhan": "Vượt sông, xông vào đánh ngay"
     },
     {
-      "id": "thuyen-ta-yem-tro",
+      "id": "hoai-do",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 648,
+      "y": 352,
+      "nhan": "Phò mã Hoài Đô",
+      "quy_mo": "Cắt hậu quân, rình cướp thuyền"
+    },
+    {
+      "id": "binh-le-nguyen",
+      "kieu": "dia-danh",
+      "x": 428,
+      "y": 356,
+      "nhan": "Bình Lệ Nguyên"
+    },
+    {
+      "id": "tran-tuyen-ta",
+      "kieu": "cong-su",
+      "x": 372,
+      "y": 442,
+      "nhan": "Trận tuyến bên này sông"
+    },
+    {
+      "id": "vua-tran-thai-tong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 296,
+      "y": 394,
+      "nhan": "Trần Thái Tông",
+      "quy_mo": "Thân chinh đốc chiến"
+    },
+    {
+      "id": "le-tan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 182,
+      "y": 466,
+      "nhan": "Lê Tần (Lê Phụ Trần)",
+      "quy_mo": "Khuyên vua tạm rút"
+    },
+    {
+      "id": "doi-thuyen",
       "kieu": "thuyen",
       "ben": "ta",
-      "x": 750,
-      "y": 400,
-      "nhan": "Thuỷ quân yểm trợ đường rút"
+      "x": 196,
+      "y": 330,
+      "nhan": "Đội thuyền của ta"
     },
     {
       "id": "mui-rut-lui",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        420,
-        430
-      ],
-      "den": [
-        750,
-        460
-      ],
-      "nhan": "Chủ động rút về Phù Lỗ"
+      "tu": [292, 430],
+      "den": [156, 388],
+      "nhan": "Rút lui an toàn về sông Lô"
     },
     {
-      "id": "dia-danh-phu-lo",
-      "kieu": "dia-danh",
-      "x": 900,
-      "y": 480,
-      "nhan": "Phù Lỗ"
+      "id": "tran-thu-do",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 106,
+      "y": 222,
+      "nhan": "Trần Thủ Độ"
+    },
+    {
+      "id": "thang-long",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 108,
+      "y": 118,
+      "nhan": "Thăng Long"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Mông Cổ tiến vào biên giới Đại Việt",
-      "mo_ta": "Cuối 1257, đội quân viễn chinh của Ngột Lương Hợp Thai từ Vân Nam tiến đánh Đại Việt, mở đầu ba lần kháng chiến chống Mông – Nguyên.",
+      "tieu_de": "Dụ hàng bất thành — sứ giả Mông Cổ bị tống giam",
+      "thoi_gian": "Cuối năm 1257",
+      "dia_danh": "Thăng Long",
+      "mo_ta": "Cuộc tiến quân xâm lược Đại Việt lần thứ nhất của đế chế Nguyên Mông nhằm dùng Đại Việt làm bàn đạp tiến công vào Nam Tống, chiếm lĩnh toàn bộ miền Nam Trung Quốc. Trước khi tiến quân vào biên giới, Ngột Lương Hợp Thai nhiều lần sai sứ sang dụ hàng Trần Thái Tông; tất cả sứ giả đều bị tống giam. Chờ mãi không thấy sứ về, y quyết định xâm lược Đại Việt bằng quân sự. Vua Trần đã xuống chiếu cử Trần Quốc Tuấn chỉ huy các tướng đem quân thuỷ bộ lên phòng ngự ở biên giới.",
       "hien": [
-        "quan-dich-mong-co"
+        "thang-long",
+        "tran-thu-do",
+        "vua-tran-thai-tong"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html",
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 755 năm chiến thắng quân Nguyên Mông lần thứ nhất — https://baotanglichsu.vn/vi/Articles/3097/15525/ky-niem-755-chien-thang-quan-nguyen-mong-lan-thu-nhat.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Vua Trần Thái Tông thân chinh đốc chiến",
-      "mo_ta": "Vua Trần dàn quân voi – kỵ – bộ dọc bờ sông Cà Lồ tại Bình Lệ Nguyên, đích thân chỉ huy nghênh chiến.",
+      "tieu_de": "Hai đạo quân vào theo hai hướng, hợp nhau ở Việt Trì",
+      "thoi_gian": "Tháng chạp năm Đinh Tỵ (1257)",
+      "dia_danh": "Quy Hoá · châu Thu Vật · Việt Trì",
+      "mo_ta": "Quân Nguyên chia làm hai hướng tiến vào nước ta: một theo hữu ngạn sông Hồng qua Quy Hoá, hướng thứ hai theo sông Chảy qua châu Thu Vật (Yên Bình, Lục Yên, Yên Bái). Viên tướng trẻ A Truật, mười tám tuổi, con của Ngột Lương Hợp Thai, được phái đi tiếp viện cho các đạo quân đi trước, đồng thời dò xét tình hình phòng ngự của quân ta. Thấy quân ta rất đông, đã dàn trận sẵn sàng, A Truật vội sai người về báo; Ngột Lương Hợp Thai liền tiến binh xuống gấp. Tháng chạp năm Đinh Tỵ, hai đạo quân Mông Cổ gặp nhau ở Việt Trì.",
       "hien": [
-        "quan-dich-mong-co",
-        "quan-ta-tran-thai-tong"
+        "quy-hoa",
+        "chau-thu-vat",
+        "dao-quan-huu-ngan",
+        "dao-quan-song-chay",
+        "a-truat-do-tham",
+        "viet-tri"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Kỵ binh Mông Cổ đánh bật thế trận",
-      "mo_ta": "Trước sức tiến công mãnh liệt của kỵ binh thảo nguyên, thế trận ban đầu của quân Trần bị đánh bật.",
+      "tieu_de": "17-1-1258: đến Bình Lệ Nguyên, vua thân chinh bày trận",
+      "thoi_gian": "Ngày 12 tháng chạp, tức 17-1-1258",
+      "dia_danh": "Bình Lệ Nguyên, bên sông Cà Lồ",
+      "mo_ta": "Ngày 12 tháng chạp, tức 17-1-1258, Ngột Lương Hợp Thai kéo quân đến Bình Lệ Nguyên — vùng đất rộng lớn, bằng phẳng do các dòng sông Phan, sông Cánh, sông Cầu Bòn bắt nguồn từ dãy Tam Đảo tạo nên, nay thuộc huyện Bình Xuyên. Vua Trần Thái Tông trực tiếp chỉ huy chiến đấu, cho bày trận bên này sông đợi giặc, tự làm tướng đốc chiến đi trước xông pha tên đạn. Bên kia sông, Ngột Lương Hợp Thai chia quân làm ba đội.",
       "hien": [
-        "quan-dich-mong-co",
-        "quan-ta-tran-thai-tong",
-        "mui-dich-tien-cong"
+        "binh-le-nguyen",
+        "vua-tran-thai-tong",
+        "tran-tuyen-ta",
+        "doi-thuyen",
+        "dao-quan-huu-ngan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Chủ động rút lui, bảo toàn lực lượng",
-      "mo_ta": "Thay vì tử chiến, vua Trần quyết định rút quân về Phù Lỗ nhờ thuỷ quân yểm trợ, tránh tổn thất lớn.",
+      "tieu_de": "Kế cướp thuyền của Ngột Lương Hợp Thai",
+      "thoi_gian": "Ngày 17-1-1258",
+      "dia_danh": "Bờ bắc sông Cà Lồ",
+      "mo_ta": "Ngột Lương Hợp Thai cho Triệt Triệt Đô làm tiên phong qua sông trước và vạch sẵn kế hoạch: qua sông rồi thì đừng đánh vội, để quân ta tất phải kéo đến chống lại, khi ấy phò mã Hoài Đô theo sau cắt hậu quân, còn Triệt Triệt Đô rình cướp lấy thuyền. Mục tiêu thật của y không phải là thắng một trận đối đầu mà là đoạt bằng được đội thuyền — thứ mà kỵ binh Mông Cổ không có và cũng là thứ giữ cho quân ta khả năng cơ động trên sông nước.",
       "hien": [
-        "quan-ta-tran-thai-tong",
-        "thuyen-ta-yem-tro",
-        "mui-rut-lui"
+        "triet-triet-do",
+        "hoai-do",
+        "doi-thuyen",
+        "tran-tuyen-ta"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Mở đường cho đại thắng Đông Bộ Đầu",
-      "mo_ta": "Quyết định rút lui bảo toàn lực lượng tạo tiền đề cho cuộc phản công thắng lợi tại Đông Bộ Đầu 12 ngày sau.",
+      "tieu_de": "Triệt Triệt Đô phá kế, xông vào đánh ngay",
+      "thoi_gian": "Ngày 17-1-1258",
+      "dia_danh": "Bờ nam sông Cà Lồ",
+      "mo_ta": "Triệt Triệt Đô không theo kế hoạch đã vạch: vừa lên tới bờ sông y liền cho quân xông vào trận đánh, và gặp ngay sức chiến đấu mạnh mẽ của quân ta. Tướng Lê Phụ Trần một mình một ngựa ra vào trận giặc, sắc mặt như thường. Chính vì viên tiên phong nôn nóng đánh sớm mà toàn bộ kế hoạch phối hợp ba mũi để cướp thuyền không còn cơ hội triển khai.",
       "hien": [
-        "dia-danh-phu-lo",
-        "mui-rut-lui"
+        "triet-triet-do",
+        "mui-qua-song",
+        "tran-tuyen-ta",
+        "vua-tran-thai-tong",
+        "le-tan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html",
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Lê Tần khuyên vua tạm rút — thuyền giữ được vẹn nguyên",
+      "thoi_gian": "Ngày 17-1-1258",
+      "dia_danh": "Bình Lệ Nguyên",
+      "mo_ta": "Trước tình thế quân giặc quá mạnh, tướng Lê Tần khuyên vua hãy tạm rút lui để bảo toàn lực lượng. Quân ta rút lui an toàn, các đội thuyền vẫn vẹn nguyên; âm mưu cướp thuyền của Ngột Lương Hợp Thai hoàn toàn thất bại. Bình Lệ Nguyên là trận đánh lớn đầu tiên của quân dân Đại Việt chống quân xâm lược Nguyên Mông: không chặn được giặc, nhưng phá được đúng cái mưu mà chúng đặt vào trận này.",
+      "hien": [
+        "le-tan",
+        "vua-tran-thai-tong",
+        "mui-rut-lui",
+        "doi-thuyen",
+        "binh-le-nguyen"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Lui về giữ sông Lô — «Đầu tôi chưa rơi xuống đất»",
+      "thoi_gian": "Sau ngày 17-1-1258",
+      "dia_danh": "Sông Lô · Thăng Long",
+      "mo_ta": "Thế giặc mạnh, quân ta lui về giữ ở sông Lô. Giặc bắn tên như mưa xuống thuyền của vua; tướng Lê Phụ Trần liền lấy ván thuyền chắn tên cho vua. Trước sự hung hãn của quân giặc, vua Trần dời thuyền đến hỏi Thái sư Trần Thủ Độ, và nhận được câu trả lời đã đi vào chính sử. Từ chỗ dựa tinh thần ấy, triều đình giữ được thế trận, để lại chỉ mười một ngày sau mở cuộc phản công ở Đông Bộ Đầu.",
+      "hien": [
+        "tran-thu-do",
+        "vua-tran-thai-tong",
+        "thang-long",
+        "doi-thuyen"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     }
   ],
@@ -164,14 +365,34 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Trần Thái Tông mở nghiệp nhà Trần"
+    "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Trần Thái Tông mở nghiệp nhà Trần",
+    "Bảo tàng Lịch sử Quốc gia — Từ Bình Lệ Nguyên đến Đông Bộ Đầu — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html",
+    "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
   ],
   "trich_van_tich": [
+    {
+      "sach": "Nguyên sử — quyển 209, phần An Nam truyện",
+      "doan": "Thấy sứ giả không trở về Ngột Lương Hợp Đài bèn sai bọn Triệt Triệt Đô đem 1000 người chia đường mà tiến đến trên sông Thao ở Kinh Bắc nước An Nam. Lại sai con là A Truật sang giúp và nhòm ngó tình hình. Người Giao (Chỉ) cũng bày nhiều binh vệ. A Truật trở về báo Ngột Lương Hợp Đài để tiến gấp. Sai Triệt Triệt Đô làm tiên phong, A Truật đi sau. Tháng 12, hai quân hợp nhau",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Kế hoạch tấn công Ngột Lương Hợp Thai vạch cho Triệt Triệt Đô — dẫn trong bài của Bảo tàng Lịch sử Quốc gia",
+      "doan": "Quân ngươi khi đã qua sông, đừng đánh vội, chúng tất đến chống lại ta, phò mã Hoài Đô theo sau cắt hậu quân của chúng, ngươi rình cướp lấy thuyền...",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/11373/tu-binh-le-nguyen-djen-djong-bo-djau.html",
+      "buoc": 4
+    },
     {
       "sach": "Đại Việt sử ký toàn thư, Tập II",
       "doan": "Như nay chỉ là bệ hạ dốc túi đánh nước cuối cùng thôi. Nên lánh đi, chớ nên nhẹ dạ tin người ta.",
       "nguon_trich": "Báo Giáo dục Việt Nam — https://giaoduc.net.vn/tran-dong-bo-dau-chien-cong-hien-hach-cua-quan-dan-ta-thoi-nha-tran-post184152.gd",
-      "buoc": 4
+      "buoc": 6
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư — lời Thái sư Trần Thủ Độ",
+      "doan": "Đầu tôi chưa rơi xuống đất thì bệ hạ không cần lo ngại gì cả",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+      "buoc": 7
     }
   ]
 }

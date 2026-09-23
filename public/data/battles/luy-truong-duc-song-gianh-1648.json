@@ -1,12 +1,14 @@
 {
-  "ghi_chu": "Sa đồ trận Lũy Trường Dục — sông Gianh 1648 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Overlay có nhắc con số '3.000 quân Trịnh bị bắt, 3 tướng' từ nguồn du lịch tỉnh, CHƯA đối chiếu chính sử — KHÔNG đưa số liệu này vào nội dung, chỉ giữ diễn biến đã xác nhận qua Đại Nam Thực Lục. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Luỹ Trường Dục — sông Gianh 1648 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Đây là NỘI CHIẾN giữa hai thế lực người Việt, nên khai loai_xung_dot=noi-chien. Số tù binh quân Trịnh được hai nguồn nhà nước chép hai con số cách nhau mười lần — nêu cả hai ở bước 6, KHÔNG chọn một.",
   "id": "luy-truong-duc-song-gianh-1648",
   "ten": "Trận Lũy Trường Dục — sông Gianh (1648)",
   "nam": 1648,
   "sa_do_kieu": "tong-quat",
+  "loai_xung_dot": "noi-chien",
   "chi_huy": "Nguyễn Phúc Tần",
   "doi_thu": "Chúa Trịnh (Trịnh Tráng)",
   "dia_diem": "Lũy Trường Dục và sông Gianh, Quảng Ninh, Quảng Bình (nay tỉnh Quảng Trị)",
+  "thoi_gian": "Đầu năm Mậu Tý (1648)",
   "lien_quan_tinh": [
     "quang-tri"
   ],
@@ -15,136 +17,321 @@
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          1000,
-          320
-        ]
+        [70, 182],
+        [300, 212],
+        [520, 198],
+        [762, 168]
       ],
-      "nhan": "Sông Gianh"
+      "nhan": "Sông Gianh (Linh Giang) — giới tuyến hai Đàng"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [884, 56],
+        [914, 240],
+        [920, 424],
+        [890, 572]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [316, 476],
+        [520, 422],
+        [700, 344],
+        [822, 288]
+      ],
+      "nhan": "Sông Nhật Lệ"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [206, 522],
+        [358, 542],
+        [512, 558],
+        [644, 568]
+      ],
+      "nhan": "Luỹ Trường Dục"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [96, 474],
+        [188, 418],
+        [288, 480]
+      ],
+      "nhan": "Núi Thần Đinh — Đầu Mâu"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-trinh-nam-chinh",
+      "id": "nam-bo-chinh",
+      "kieu": "dia-danh",
+      "x": 272,
+      "y": 144,
+      "nhan": "Nam Bố Chính — nơi bộ binh Đàng Ngoài đóng"
+    },
+    {
+      "id": "bo-binh-trinh",
       "kieu": "quan",
       "ben": "dich",
-      "x": 700,
-      "y": 150,
-      "nhan": "Chúa Trịnh nam chinh hai đường thủy bộ"
+      "x": 434,
+      "y": 112,
+      "nhan": "Bộ binh Đàng Ngoài"
+    },
+    {
+      "id": "thuy-binh-trinh",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 874,
+      "y": 190,
+      "nhan": "Thuỷ binh Đàng Ngoài"
+    },
+    {
+      "id": "mui-thuy-trinh",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [856, 236],
+      "den": [828, 292],
+      "nhan": "Thuỷ binh tiến đánh cửa Nhật Lệ"
+    },
+    {
+      "id": "cua-nhat-le",
+      "kieu": "dia-danh",
+      "x": 828,
+      "y": 326,
+      "nhan": "Cửa Nhật Lệ"
     },
     {
       "id": "luy-truong-duc",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 450,
-      "y": 350,
-      "nhan": "Lũy Trường Dục"
+      "x": 398,
+      "y": 572,
+      "nhan": "Luỹ Trường Dục"
     },
     {
-      "id": "quan-ta-nguyen-phuc-tan",
+      "id": "nguyen-phuc-lan",
       "kieu": "quan",
       "ben": "ta",
-      "x": 400,
-      "y": 400,
-      "nhan": "Nguyễn Phúc Tần chỉ huy phòng ngự"
+      "x": 244,
+      "y": 336,
+      "nhan": "Chúa Nguyễn Phúc Lan tự cầm quân đánh lại"
     },
     {
-      "id": "mui-cong-thanh-dich",
+      "id": "nguyen-phuc-tan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 470,
+      "y": 300,
+      "nhan": "Thế tử Nguyễn Phúc Tần — tiết chế chủ quân",
+      "quy_mo": "29 tuổi, tấn phong năm Mậu Tý 1648"
+    },
+    {
+      "id": "nguyen-huu-dat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 616,
+      "y": 234,
+      "nhan": "Tướng Nguyễn Hữu Dật cùng chỉ huy"
+    },
+    {
+      "id": "tuong-binh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 656,
+      "y": 428,
+      "nhan": "Nguyễn Hữu Tiến dẫn đạo tượng binh tiên phong",
+      "quy_mo": "100 thớt voi"
+    },
+    {
+      "id": "mui-phan-cong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [700, 384],
+      "den": [830, 256],
+      "nhan": "Phản công bất ngờ vào đội hình quân Trịnh"
+    },
+    {
+      "id": "tu-binh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 740,
+      "y": 128,
+      "nhan": "Tù binh quân Trịnh bị bắt sống"
+    },
+    {
+      "id": "quan-trinh-thao-chay",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        650,
-        200
-      ],
-      "den": [
-        480,
-        330
-      ],
-      "nhan": "Quân Trịnh công thành"
+      "tu": [830, 180],
+      "den": [700, 96],
+      "nhan": "Quân Trịnh đại bại, rút về Bắc"
     },
     {
-      "id": "mui-phan-cong-ta",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        420,
-        380
-      ],
-      "den": [
-        650,
-        250
-      ],
-      "nhan": "Phản công đánh bật"
+      "id": "pha-tam-giang",
+      "kieu": "dia-danh",
+      "x": 140,
+      "y": 262,
+      "nhan": "Phá Tam Giang — nơi chúa Nguyễn Phúc Lan mất trên đường về"
     },
     {
-      "id": "co-thang-truong-duc",
+      "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 700,
-      "y": 180,
-      "nhan": "Quân Trịnh rút qua sông Gianh"
+      "x": 546,
+      "y": 166,
+      "nhan": "Sử nhà Nguyễn gọi là võ công bậc nhất"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Chúa Trịnh mở nam chinh quy mô lớn",
-      "mo_ta": "Đầu 1648, chúa Trịnh mở nam chinh quy mô lớn theo hai đường thủy bộ hòng hạ hệ thống lũy phòng thủ Đàng Trong.",
+      "tieu_de": "Quân Trịnh đánh vào Nam lần thứ tư",
+      "thoi_gian": "Đầu năm 1648",
+      "dia_danh": "Nam Bố Chính — cửa Nhật Lệ",
+      "mo_ta": "Năm 1648, Trịnh Tráng cho các đạo quân thuỷ bộ đánh vào miền Nam. Bộ binh đóng ở đất Nam Bố Chính, còn thuỷ binh thì tiến đánh vào cửa Nhật Lệ. Đây là lần giao tranh lớn thứ tư giữa hai họ kể từ năm 1627, và cũng là lần đầu tiên cả hai gọng thuỷ và bộ cùng nhắm vào tuyến luỹ do Đào Duy Từ để lại. Bên phía Đàng Trong, chúa Nguyễn Phúc Lan phải tự cầm quân đánh lại.",
       "hien": [
-        "quan-dich-trinh-nam-chinh"
+        "nam-bo-chinh",
+        "bo-binh-trinh",
+        "thuy-binh-trinh",
+        "mui-thuy-trinh",
+        "cua-nhat-le"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-2-.html",
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thang-tram-cua-bien-mien-trung-chien-truong-khoc-liet-196241002082215875.htm"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nguyễn Phúc Tần trực tiếp chỉ huy phòng ngự",
-      "mo_ta": "Nguyễn Phúc Tần trực tiếp chỉ huy phòng ngự tại Lũy Trường Dục.",
+      "tieu_de": "Chúa Nguyễn Phúc Lan trao binh quyền cho thế tử",
+      "dia_danh": "Doanh trại Đàng Trong",
+      "mo_ta": "Cầm quân được một thời gian, Nguyễn Phúc Lan thấy trong người không được khoẻ, mới trao binh quyền cho con trai là Nguyễn Phúc Tần và tướng Nguyễn Hữu Dật chỉ huy, còn mình thì rút về. Nguyễn Phúc Tần sinh năm Canh Thìn 1620, lúc đầu được phong Phó tướng Dũng Lễ hầu, từng đánh giặc ở cửa biển và được chúa Phúc Lan khen ngợi; năm Mậu Tý 1648 ông được tấn phong tiết chế chủ quân, thay Phúc Lan phá quân Trịnh ở sông Gianh, bấy giờ 29 tuổi.",
       "hien": [
-        "luy-truong-duc",
-        "quan-ta-nguyen-phuc-tan"
+        "nguyen-phuc-lan",
+        "nguyen-phuc-tan",
+        "nguyen-huu-dat"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-2-.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Quân Trịnh công thành không hạ được",
-      "mo_ta": "Quân Trịnh tổ chức công thành nhưng không hạ được Lũy Trường Dục.",
+      "tieu_de": "Dựa vào luỹ Trường Dục để cầm chân quân Trịnh",
+      "dia_danh": "Luỹ Trường Dục",
+      "mo_ta": "Quân Đàng Trong lấy tuyến luỹ Trường Dục làm chỗ dựa. Đây là tuyến luỹ đắp năm 1630 bằng đất sét, dài 10 km, cao 3 m, chân luỹ rộng 6 m, chạy từ núi Thần Đinh men bờ sông Long Đại ra đến đầu phá Hạc Hải. Quân Trịnh tấn công vào tuyến luỹ này nhưng chẳng những không đạt được mục đích của mình mà còn chịu thiệt hại nghiêm trọng, trong khi phía Đàng Trong giữ nguyên được đội hình phía sau luỹ.",
       "hien": [
         "luy-truong-duc",
-        "mui-cong-thanh-dich",
-        "quan-dich-trinh-nam-chinh"
+        "bo-binh-trinh",
+        "nguyen-phuc-tan"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Nguyễn Phúc Tần phản công",
-      "mo_ta": "Nguyễn Phúc Tần tổ chức phản công đánh bật quân Trịnh.",
+      "tieu_de": "Nguyễn Hữu Tiến dẫn tượng binh làm tiên phong",
+      "dia_danh": "Trước mặt luỹ",
+      "mo_ta": "Nguyễn Hữu Tiến, hiệu Thuận Nghĩa, người làng Văn Trai huyện Ngọc Sơn phủ Tĩnh Gia trấn Thanh Hoa, sinh năm Nhâm Dần 1602, được giao nhiệm vụ tiên phong, dẫn đạo tượng binh gồm 100 thớt voi xung trận. Trước đó, trong lần chiến tranh năm 1633, chính ông là người chuyên trách việc đắp luỹ thềm Trường Sa, tức Động Cát, nên thuộc từng thước đất của chiến trường này.",
       "hien": [
-        "quan-ta-nguyen-phuc-tan",
-        "mui-phan-cong-ta"
+        "tuong-binh",
+        "luy-truong-duc",
+        "nguyen-phuc-tan"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thoi-su/nhung-nguoi-giu-dat-danh-tuong-nguyen-huu-tien-20230211201941558.htm"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Quân Trịnh rút qua sông Gianh",
-      "mo_ta": "Quân Trịnh bị đánh bật, buộc phải rút lui qua bờ bắc sông Gianh.",
+      "tieu_de": "Phản công bất ngờ, quân Trịnh tháo chạy",
+      "dia_danh": "Cửa Nhật Lệ",
+      "mo_ta": "Đóng lâu ngày trước một tuyến luỹ không hạ nổi, quân Trịnh chủ quan không phòng bị. Quân Nguyễn phản công bất ngờ, dùng đạo tượng binh mở đường, buộc đối phương phải tháo chạy. Quân Trịnh đại bại, phải rút về Bắc; toàn bộ thế trận thuỷ bộ mà Đàng Ngoài dựng lên từ đầu năm sụp trong một trận, không giữ nổi một tấc đất nào ở phía nam sông Gianh.",
       "hien": [
-        "co-thang-truong-duc"
+        "mui-phan-cong",
+        "tuong-binh",
+        "quan-trinh-thao-chay"
+      ],
+      "nguon": [
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thang-tram-cua-bien-mien-trung-chien-truong-khoc-liet-196241002082215875.htm",
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thoi-su/nhung-nguoi-giu-dat-danh-tuong-nguyen-huu-tien-20230211201941558.htm"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Số tù binh bị bắt — hai nguồn chép hai con số",
+      "dia_danh": "Chiến trường Nhật Lệ — Trường Dục",
+      "mo_ta": "Về số tù binh, hai nguồn nhà nước chép khác nhau và chênh nhau tới mười lần. Tài liệu do Cổng thông tin scov.gov.vn đăng chép quân Trịnh bị bắt 3.000 lính cùng 3 tướng lĩnh cao cấp. Báo Tuổi Trẻ, dẫn theo sử nhà Nguyễn trong bài về danh tướng Nguyễn Hữu Tiến, chép quân Nguyễn bắt sống được cả tướng lẫn quân là 3 vạn người. Cả hai con số đều được nêu ở đây vì chưa có nguồn nào phân xử được chỗ vênh này.",
+      "hien": [
+        "tu-binh",
+        "quan-trinh-thao-chay",
+        "nguyen-phuc-tan"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html",
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thoi-su/nhung-nguoi-giu-dat-danh-tuong-nguyen-huu-tien-20230211201941558.htm"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Chúa Nguyễn Phúc Lan mất trên đường về; sử gọi là võ công bậc nhất",
+      "dia_danh": "Phá Tam Giang",
+      "mo_ta": "Trên đường rút về, đến phá Tam Giang thì chúa Nguyễn Phúc Lan mất, thọ 48 tuổi, ở ngôi chúa 13 năm; triều Nguyễn sau này truy tôn là Thần Tông Hiếu Chiêu Hoàng đế. Bầy tôi tôn Nguyễn Phúc Tần lên ngôi chúa, tức chúa Hiền. Sử nhà Nguyễn về sau gọi trận này là võ công đệ nhất trong cuộc Trịnh – Nguyễn phân tranh.",
+      "hien": [
+        "pha-tam-giang",
+        "nguyen-phuc-lan",
+        "co-thang"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-2-.html",
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thoi-su/nhung-nguoi-giu-dat-danh-tuong-nguyen-huu-tien-20230211201941558.htm"
       ]
     }
   ],
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "3.000 lính cùng 3 tướng lĩnh cao cấp bị bắt làm tù binh",
+        "nguon": "scov.gov.vn — bài «Lũy Thầy»"
+      },
+      {
+        "so": "bắt sống được cả tướng lẫn quân là 3 vạn người",
+        "nguon": "Báo Tuổi Trẻ, dẫn sử nhà Nguyễn"
+      }
+    ],
+    "nguon": [
+      "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html",
+      "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thoi-su/nhung-nguoi-giu-dat-danh-tuong-nguyen-huu-tien-20230211201941558.htm"
+    ]
+  },
   "ket_qua": "Quân Trịnh tiến hai đường thủy bộ đánh Lũy Trường Dục nhưng không hạ được, bị Nguyễn Phúc Tần phản công đánh bật về bờ bắc sông Gianh.",
   "y_nghia": "Một trong bảy lần giao chiến lớn của chiến tranh Trịnh-Nguyễn (1627–1672), khẳng định vai trò phòng thủ then chốt của hệ thống lũy Đàng Trong.",
   "trang_thai": "draft",
   "nguon": [
     "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 1)",
     "Đại Nam Thực Lục — Tiền biên",
-    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-2-.html",
+    "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html",
+    "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thoi-su/nhung-nguoi-giu-dat-danh-tuong-nguyen-huu-tien-20230211201941558.htm",
+    "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thang-tram-cua-bien-mien-trung-chien-truong-khoc-liet-196241002082215875.htm"
+  ],
+  "trich_van_tich": [
+    {
+      "sach": "Tóm tắt biên niên sử Việt Nam — Thời kỳ Trịnh – Nguyễn phân tranh (phần 2)",
+      "doan": "Năm 1648, Trịnh Tráng cho các đạo quân thuỷ bộ đánh vào miền Nam. Bộ binh đóng ở đất Nam Bố Chính, còn thuỷ quân thì đánh vào cửa Nhật Lệ. Nguyễn Phúc Lan phải tự cầm quân đánh lại.",
+      "nguon_trich": "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-2-.html",
+      "buoc": 1
+    },
+    {
+      "sach": "Tóm tắt biên niên sử Việt Nam — Thời kỳ Trịnh – Nguyễn phân tranh (phần 2)",
+      "doan": "Năm Mậu Tý - 1648 được tấn phong là tiết chế chủ quân, thay Phúc Lan phá quân Trịnh ở sông Gianh. Bấy giờ ông 29 tuổi.",
+      "nguon_trich": "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-2-.html",
+      "buoc": 2
+    }
   ]
 }

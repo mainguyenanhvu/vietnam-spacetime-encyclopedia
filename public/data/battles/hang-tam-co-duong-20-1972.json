@@ -1,0 +1,129 @@
+{
+  "ghi_chu": "Sa đồ Hang Tám Cô, đường 20 Quyết Thắng 1972 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "hang-tam-co-duong-20-1972",
+  "ten": "Hang Tám Cô, đường 20 Quyết Thắng",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đại đội Thanh niên xung phong 217 (Đội TNXP 25, Ban Xây dựng 67, Đoàn 559)",
+  "doi_thu": "Không quân Mỹ",
+  "dia_diem": "Km 16+200 đường 20 Quyết Thắng, xã Tân Trạch, huyện Bố Trạch cũ (nay thuộc tỉnh Quảng Trị)",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [100, 500],
+        [500, 480],
+        [900, 460]
+      ],
+      "nhan": "Đường 20 Quyết Thắng — Phong Nha sang Lào"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [350, 200],
+        [550, 150],
+        [700, 250]
+      ],
+      "nhan": "Núi đá vôi Trường Sơn"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "km16-200",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 480,
+      "nhan": "Km 16+200 — điểm sạt lở cần khôi phục"
+    },
+    {
+      "id": "doi-tnxp-217",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 470,
+      "y": 500,
+      "nhan": "Đại đội TNXP 217 và pháo binh đơn vị 5043"
+    },
+    {
+      "id": "may-bay-my-oanh-tac-2",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Không quân Mỹ oanh tạc, 14/11/1972"
+    },
+    {
+      "id": "hang-da-tru-bom",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 350,
+      "nhan": "Hang đá bên đường — nơi trú bom"
+    },
+    {
+      "id": "mui-bom-sap-hang",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [680, 250],
+      "den": [460, 340],
+      "nhan": "Bom làm tảng đá lớn sập xuống"
+    },
+    {
+      "id": "dong-doi-cuu-ho",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 450,
+      "nhan": "Đồng đội đào bới, tiếp tế suốt 8 ngày"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Tọa độ lửa trên tuyến chi viện chiến lược",
+      "mo_ta": "Đường 20 Quyết Thắng dài 125km nối Phong Nha sang Lào là tuyến vận tải chi viện chiến lược, bị không quân Mỹ đánh phá ác liệt suốt cuộc kháng chiến chống Mỹ.",
+      "hien": ["km16-200"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Khôi phục mặt đường tại km 16+200",
+      "mo_ta": "Ngày 14/11/1972, Đại đội Thanh niên xung phong 217 cùng năm chiến sĩ pháo binh đơn vị 5043 đang khôi phục mặt đường tại km 16+200 để thông xe cho đoàn xe quân sự.",
+      "hien": ["km16-200", "doi-tnxp-217"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Máy bay Mỹ oanh tạc, tám người trú vào hang",
+      "mo_ta": "Máy bay Mỹ oanh tạc khu vực; tám thanh niên xung phong — bốn nam, bốn nữ — rút vào hang đá bên đường để trú bom.",
+      "hien": ["doi-tnxp-217", "may-bay-my-oanh-tac-2", "hang-da-tru-bom"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Tảng đá lớn lấp kín cửa hang",
+      "mo_ta": "Một quả bom làm một tảng đá lớn sập xuống, lấp kín cửa hang; tám người mắc kẹt bên trong.",
+      "hien": ["hang-da-tru-bom", "mui-bom-sap-hang"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Tám ngày tìm cách giải cứu",
+      "mo_ta": "Đồng đội tìm cách khoan lỗ tiếp nước, đào bới giải cứu suốt 8 ngày nhưng không thể phá được khối đá lấp cửa hang.",
+      "hien": ["hang-da-tru-bom", "dong-doi-cuu-ho"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Cả tám người hy sinh trong hang",
+      "mo_ta": "Cả tám thanh niên xung phong hy sinh trong hang đá; nơi đó về sau được gọi là Hang Tám Cô.",
+      "hien": ["hang-da-tru-bom"]
+    }
+  ],
+  "ket_qua": "Tám thanh niên xung phong Đại đội 217 cùng chiến sĩ pháo binh đơn vị 5043 hy sinh trong hang đá tại km 16+200 đường 20 Quyết Thắng sau tám ngày mắc kẹt.",
+  "y_nghia": "Năm 2009, tám liệt sĩ được truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân; Hang Tám Cô trở thành một điểm trong quần thể Di tích quốc gia đặc biệt đường Trường Sơn — đường Hồ Chí Minh.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Khúc bi hùng \"Đường 20 Quyết thắng\" — Hội Cựu Thanh niên xung phong Việt Nam — https://cuutnxpvietnam.org.vn/khuc-bi-hung-duong-20-quyet-thang/",
+    "Đường 20 quyết thắng - Nơi mỗi cây số đều thấm máu, mồ hôi và nước mắt — Báo Pháp luật Việt Nam — https://baophapluat.vn/duong-20-quyet-thang-noi-moi-cay-so-deu-tham-mau-mo-hoi-va-nuoc-mat-post547018.html"
+  ],
+  "ghi_chu_bien_tap": "Nguồn chính cuutnxpvietnam.org.vn (Hội Cựu Thanh niên xung phong Việt Nam — hội có tư cách pháp nhân, đăng ký tại Bộ Nội vụ, cùng loại 'báo/tạp chí của các hội, liên hiệp hội' mà LUẬT ĐỢT 3 §1 xác nhận ĐẠT) đã mở, cho tên 8 liệt sĩ, đơn vị (Đại đội 217, Đội 25, Ban 67, Đoàn 559), ngày 14/11/1972, diễn biến tảng đá lấp cửa hang, danh hiệu Anh hùng LLVTND năm 2009. baophapluat.vn (báo Bộ Tư pháp) chỉ xác nhận Hang Tám Cô là 1 trong 6 di tích quốc gia đặc biệt trên đường 20, dùng làm nguồn phụ củng cố vị trí — không có chi tiết sự kiện. lien_quan_tinh dùng 'quang-tri' vì Quảng Bình cũ đã hợp nhất vào Quảng Trị theo NQ 202/2025/QH15 (không còn file tỉnh Quảng Bình riêng trong public/data/provinces/). Địa danh cấp thôn/km cụ thể (km16+200, xã Tân Trạch) là hạng mục rủi ro bậc 1 theo LUẬT §2 — đã đối chiếu 2 nguồn độc lập cùng khớp con số 8 người, 14/11/1972."
+}

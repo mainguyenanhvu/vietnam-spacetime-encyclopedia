@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ sự kiện Gạc Ma 14/3/1988 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nội dung bám sát NGUYÊN VĂN mo_ta đã duyệt trong chien-dich-tran-danh.json, không suy diễn thêm diễn biến chiến thuật ngoài nguồn (không có tên chỉ huy cụ thể, không có mô tả đội hình tàu Trung Quốc). Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "ghi_chu": "Sa đồ cuộc chiến đấu bảo vệ chủ quyền tại Gạc Ma – Cô Lin – Len Đao ngày 14/3/1988, quần đảo Trường Sa của Việt Nam — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "gac-ma-1988",
   "ten": "Sự kiện Gạc Ma ngày 14/3/1988",
   "nam": 1988,
@@ -16,137 +16,358 @@
       "kieu": "bien",
       "diem": [
         [
-          0,
-          300
+          80,
+          60
         ],
         [
           500,
+          40
+        ],
+        [
+          940,
+          70
+        ],
+        [
+          940,
+          580
+        ],
+        [
+          80,
+          570
+        ],
+        [
+          80,
+          60
+        ]
+      ],
+      "nhan": "Vùng biển quần đảo Trường Sa của Việt Nam"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          270,
+          390
+        ],
+        [
+          330,
+          405
+        ],
+        [
+          390,
+          390
+        ]
+      ],
+      "nhan": "Bãi đá Gạc Ma"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          640,
+          390
+        ],
+        [
+          700,
+          405
+        ],
+        [
+          760,
+          390
+        ]
+      ],
+      "nhan": "Bãi đá Cô Lin"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          830,
           280
         ],
         [
-          1000,
-          320
+          880,
+          295
+        ],
+        [
+          930,
+          280
         ]
       ],
-      "nhan": "Vùng biển đá Gạc Ma – Cô Lin – Len Đao"
+      "nhan": "Bãi đá Len Đao"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          930,
+          180
+        ],
+        [
+          900,
+          230
+        ],
+        [
+          885,
+          280
+        ]
+      ],
+      "nhan": "Hướng cơ động từ đảo Đá Đông về Len Đao"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-ta-xay-dung-gm",
+      "id": "xuong-nhom-dich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 330,
+      "y": 90,
+      "nhan": "6 giờ ngày 14/3 — ba xuồng nhôm chở 40 lính đổ bộ lên bãi đá Gạc Ma"
+    },
+    {
+      "id": "tau-chien-dich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 640,
+      "y": 70,
+      "nhan": "Tàu chiến nã pháo bắn thẳng vào tàu HQ-604 và HQ-605"
+    },
+    {
+      "id": "hq605",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 880,
+      "y": 140,
+      "nhan": "Tàu HQ-605 — từ đảo Đá Đông về Len Đao nhận nhiệm vụ chốt giữ"
+    },
+    {
+      "id": "vu-phi-tru",
       "kieu": "quan",
       "ben": "ta",
-      "x": 400,
-      "y": 350,
-      "nhan": "Bộ đội Hải quân làm nhiệm vụ xây dựng, bảo vệ chủ quyền"
+      "x": 150,
+      "y": 180,
+      "nhan": "Thuyền trưởng Vũ Phi Trừ chỉ huy chiến đấu tự vệ và cứu chữa tàu, đã hy sinh"
     },
     {
-      "id": "tau-hq604",
+      "id": "hq604",
       "kieu": "thuyen",
       "ben": "ta",
-      "x": 350,
-      "y": 400,
-      "nhan": "Tàu HQ-604"
+      "x": 340,
+      "y": 250,
+      "nhan": "Tàu HQ-604 chở cán bộ, chiến sĩ Trung đoàn Công binh 83 cùng vật tư xây dựng"
     },
     {
-      "id": "tau-dich-tq",
+      "id": "hq505",
       "kieu": "thuyen",
-      "ben": "dich",
-      "x": 700,
-      "y": 200,
-      "nhan": "Tàu chiến Trung Quốc"
+      "ben": "ta",
+      "x": 690,
+      "y": 240,
+      "nhan": "Tàu HQ-505 — Thiếu tá thuyền trưởng Vũ Huy Lễ"
     },
     {
-      "id": "mui-dich-tien-cong-gm",
+      "id": "len-dao",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 880,
+      "y": 300,
+      "nhan": "Bãi đá Len Đao — cắm hai lá cờ Tổ quốc"
+    },
+    {
+      "id": "dao-sinh-ton",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 310,
+      "nhan": "Đảo Sinh Tồn — nơi chuyển thương binh về"
+    },
+    {
+      "id": "ui-bai-co-lin",
       "kieu": "mui-ten",
-      "ben": "dich",
+      "ben": "ta",
       "tu": [
-        630,
-        250
+        690,
+        300
       ],
       "den": [
-        420,
-        330
+        700,
+        375
       ],
-      "nhan": "Bất ngờ tiến công"
+      "nhan": "Mở hết tốc độ lao lên bãi đá Cô Lin"
     },
     {
-      "id": "co-quyet-tu",
+      "id": "gac-ma",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 330,
+      "y": 410,
+      "nhan": "Bãi đá Gạc Ma"
+    },
+    {
+      "id": "co-lin",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 700,
+      "y": 415,
+      "nhan": "Bãi đá Cô Lin — cắm hai lá cờ Tổ quốc"
+    },
+    {
+      "id": "tran-van-phuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 140,
+      "y": 420,
+      "nhan": "Thiếu uý Trần Văn Phương, Phó Chỉ huy đảo Gạc Ma — hy sinh khi giữ cờ",
+      "quy_mo": "Lữ đoàn 146, Vùng 4 Hải quân"
+    },
+    {
+      "id": "cot-moc-hq505",
       "kieu": "co",
       "ben": "ta",
-      "x": 450,
-      "y": 300,
-      "nhan": "Kiên cường bảo vệ lá cờ Tổ quốc"
+      "x": 890,
+      "y": 470,
+      "nhan": "Tàu HQ-505 thành cột mốc khẳng định chủ quyền trên bãi đá Cô Lin"
     },
     {
-      "id": "tau-hq604-chim",
-      "kieu": "thuyen",
+      "id": "nguyen-van-lanh",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 450,
-      "nhan": "Tàu HQ-604 bị bắn chìm"
+      "x": 150,
+      "y": 530,
+      "nhan": "Chiến sĩ công binh Nguyễn Văn Lanh — bị đâm lê vào vai, hai tay vẫn ôm chặt cột cờ"
     },
     {
-      "id": "co-tuong-niem-gm",
+      "id": "64-liet-si",
       "kieu": "co",
       "ben": "ta",
-      "x": 600,
-      "y": 450,
-      "nhan": "Biểu tượng ý chí quyết tử bảo vệ chủ quyền"
+      "x": 520,
+      "y": 550,
+      "nhan": "64 cán bộ, chiến sĩ Hải quân nhân dân Việt Nam hy sinh"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Bộ đội Hải quân làm nhiệm vụ xây dựng, bảo vệ chủ quyền",
-      "mo_ta": "Bộ đội Hải quân nhân dân Việt Nam đang làm nhiệm vụ xây dựng, bảo vệ chủ quyền tại khu vực đá Gạc Ma – Cô Lin – Len Đao.",
+      "tieu_de": "16 giờ ngày 13/3/1988 — hai tàu đến vị trí, thả neo an toàn",
+      "thoi_gian": "16 giờ ngày 13/3/1988",
+      "dia_danh": "Bãi đá Gạc Ma · bãi đá Cô Lin",
+      "mo_ta": "16 giờ ngày 13/3/1988, tàu HQ-604 và HQ-505 cơ động đến vị trí quy định ở hai bãi đá Gạc Ma và Cô Lin thuộc quần đảo Trường Sa của Việt Nam, thả neo an toàn. Trên tàu HQ-604 lúc đó có cán bộ, chiến sĩ Trung đoàn Công binh 83, nay là Lữ đoàn Công binh 83, cùng nhiều vật tư, vật liệu xây dựng để triển khai công trình trên bãi đá. Lực lượng của ta chủ yếu là cán bộ, chiến sĩ hải quân trên các tàu vận tải và công binh xây dựng đảo, trong tay chỉ có cuốc, xẻng, xà beng và một số súng bộ binh để tự vệ.",
       "hien": [
-        "quan-ta-xay-dung-gm",
-        "tau-hq604"
+        "hq604",
+        "hq505",
+        "gac-ma",
+        "co-lin"
+      ],
+      "nguon": [
+        "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html",
+        "38 năm – Vang vọng lời thề giữ đảo — Báo Hải quân Việt Nam — https://baohaiquanvietnam.vn/tin-tuc/38-nam-vang-vong-loi-the-giu-dao"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Tàu chiến Trung Quốc bất ngờ tiến công (14/3/1988)",
-      "mo_ta": "Tàu chiến Trung Quốc bất ngờ tiến công lực lượng ta đang làm nhiệm vụ trên đá Gạc Ma.",
+      "tieu_de": "Sáng sớm 14/3 — chuyển vật tư lên Gạc Ma, tàu chiến đối phương uy hiếp",
+      "thoi_gian": "Sáng sớm 14/3/1988",
+      "dia_danh": "Bãi đá Gạc Ma",
+      "mo_ta": "Sáng sớm ngày 14/3, lực lượng trên tàu bắt đầu chuyển vật tư lên bãi đá Gạc Ma để xây dựng công trình bảo vệ đảo. Khi công việc đang triển khai thì nhiều tàu chiến của đối phương xuất hiện, tiến sát khu vực và quay pháo uy hiếp; từ loa phát thanh trên tàu, họ liên tục yêu cầu lực lượng Việt Nam rời khỏi khu vực. Dù bị uy hiếp, cán bộ, chiến sĩ ta vẫn bình tĩnh, kiềm chế tối đa, chấp hành nghiêm luật pháp quốc tế và đối sách trên biển, tiếp tục thực hiện nhiệm vụ.",
       "hien": [
-        "tau-dich-tq",
-        "mui-dich-tien-cong-gm",
-        "quan-ta-xay-dung-gm"
+        "hq604",
+        "gac-ma",
+        "tau-chien-dich"
+      ],
+      "nguon": [
+        "38 năm – Vang vọng lời thề giữ đảo — Báo Hải quân Việt Nam — https://baohaiquanvietnam.vn/tin-tuc/38-nam-vang-vong-loi-the-giu-dao",
+        "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Chiến sĩ chỉ có cuốc, xẻng và vũ khí thô sơ vẫn kiên cường bảo vệ cờ Tổ quốc",
-      "mo_ta": "Trước hỏa lực áp đảo, các chiến sĩ ta chỉ có cuốc, xẻng và vũ khí thô sơ nhưng vẫn kiên cường đứng vững bảo vệ lá cờ Tổ quốc trên đảo.",
+      "tieu_de": "6 giờ ngày 14/3 — giằng co giữ cờ trên bãi đá Gạc Ma",
+      "thoi_gian": "6 giờ ngày 14/3/1988",
+      "dia_danh": "Bãi đá Gạc Ma",
+      "mo_ta": "6 giờ ngày 14/3, tàu đối phương cho ba xuồng nhôm chở 40 lính cùng vũ khí, trang bị đổ bộ lên bãi đá Gạc Ma nơi đang có lực lượng của ta. Thiếu uý Trần Văn Phương, Phó Chỉ huy đảo Gạc Ma thuộc Lữ đoàn 146, Vùng 4 Hải quân, chỉ huy các chiến sĩ và công binh xây dựng kiên quyết đấu tranh để bảo vệ cờ, bảo vệ chủ quyền của Tổ quốc và đã anh dũng hy sinh. Chiến sĩ công binh Nguyễn Văn Lanh lập tức xông vào giữ cờ, cùng đồng đội quây quanh bảo vệ; bị đâm lê vào vai, đồng chí Lanh ngã xuống nhưng hai tay vẫn ôm chặt cột cờ giữ cho lá cờ Tổ quốc tiếp tục tung bay.",
       "hien": [
-        "quan-ta-xay-dung-gm",
-        "co-quyet-tu"
+        "xuong-nhom-dich",
+        "gac-ma",
+        "tran-van-phuong",
+        "nguyen-van-lanh"
+      ],
+      "nguon": [
+        "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html",
+        "38 năm – Vang vọng lời thề giữ đảo — Báo Hải quân Việt Nam — https://baohaiquanvietnam.vn/tin-tuc/38-nam-vang-vong-loi-the-giu-dao"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tàu HQ-604 bị bắn chìm, 64 cán bộ chiến sĩ hy sinh",
-      "mo_ta": "Tàu HQ-604 bị bắn chìm; 64 cán bộ, chiến sĩ đã anh dũng hy sinh trong trận chiến không cân sức.",
+      "tieu_de": "Tàu HQ-604 bị bắn cháy và chìm",
+      "thoi_gian": "Sáng 14/3/1988",
+      "dia_danh": "Bãi đá Gạc Ma",
+      "mo_ta": "Không uy hiếp được bộ đội ta rút khỏi bãi đá, đối phương nã pháo bắn thẳng vào tàu HQ-604 và vào bộ đội ta đang làm nhiệm vụ xây dựng, bảo vệ đảo. Tàu HQ-604 bị hỏng nặng, không thể nhổ neo ủi bãi; một số cán bộ, chiến sĩ hy sinh và bị thương. Mặc cho đạn pháo bắn xối xả về phía tàu, thuyền trưởng Vũ Phi Trừ vẫn bình tĩnh chỉ huy, động viên mọi người trên tàu vừa chiến đấu tự vệ vừa cấp cứu và cứu chữa tàu. Tàu HQ-604 bị cháy rồi chìm xuống biển; thuyền trưởng Vũ Phi Trừ và nhiều cán bộ, chiến sĩ trên tàu đã anh dũng hy sinh.",
       "hien": [
-        "tau-hq604-chim",
-        "co-quyet-tu"
+        "hq604",
+        "vu-phi-tru",
+        "tau-chien-dich",
+        "gac-ma"
+      ],
+      "nguon": [
+        "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Biểu tượng ý chí quyết tử bảo vệ chủ quyền biển đảo",
-      "mo_ta": "Sự kiện Gạc Ma được ghi nhớ như biểu tượng ý chí quyết tử bảo vệ chủ quyền biển đảo của Tổ quốc.",
+      "tieu_de": "Bãi đá Cô Lin — HQ-505 lao lên bãi, thành cột mốc chủ quyền",
+      "thoi_gian": "Sáng 14/3/1988",
+      "dia_danh": "Bãi đá Cô Lin",
+      "mo_ta": "Ở bãi đá Cô Lin, tàu HQ-505 do Thiếu tá thuyền trưởng Vũ Huy Lễ và thuyền phó Chính trị Thượng uý Võ Tá Du chỉ huy đưa bộ đội lên cắm hai lá cờ Tổ quốc trên bãi đá. Sau khi phát hiện tàu HQ-604 và lực lượng của ta ở Gạc Ma bị bắn pháo, Thiếu tá Lễ cho tàu nhổ neo. Hai tàu chiến của đối phương nã pháo vào HQ-505; ngay lập tức Thiếu tá Lễ lệnh cho chiến sĩ hàng hải hướng mũi vào bãi đá Cô Lin và mở hết tốc độ lao lên bãi. Tàu HQ-505 đã trở thành một cột mốc vững chắc khẳng định chủ quyền của Tổ quốc trên bãi đá Cô Lin.",
       "hien": [
-        "co-tuong-niem-gm"
+        "hq505",
+        "ui-bai-co-lin",
+        "co-lin",
+        "cot-moc-hq505",
+        "tau-chien-dich"
+      ],
+      "nguon": [
+        "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Bãi đá Len Đao — HQ-605 bốc cháy, bộ đội bơi vào giữ đảo",
+      "thoi_gian": "Hơn 8 giờ ngày 14/3/1988",
+      "dia_danh": "Bãi đá Len Đao · đảo Đá Đông · đảo Sinh Tồn",
+      "mo_ta": "Tàu HQ-605 sau khi làm nhiệm vụ tại đảo Đá Đông được lệnh cơ động về đảo Len Đao nhận nhiệm vụ chốt giữ. Sáng sớm 14/3, chỉ huy tàu cho anh em hạ xuồng xuống cắm hai lá cờ Tổ quốc tại Len Đao. Sau đó, hơn 8 giờ sáng cùng ngày, tàu của đối phương từ hướng đảo Gạc Ma kéo đến nã pháo trực tiếp vào ca-bin tàu HQ-605 và nhiều phát đạn vào mạn tàu. Khi tàu bốc cháy, cán bộ, chiến sĩ dập lửa nhưng không cứu được; thuyền trưởng lệnh cho anh em rời tàu bơi vào đảo để băng bó thương binh và bảo vệ đảo Len Đao, rồi tiếp tục vận chuyển thương binh về đảo Sinh Tồn.",
+      "hien": [
+        "hq605",
+        "len-dao",
+        "dao-sinh-ton",
+        "tau-chien-dich"
+      ],
+      "nguon": [
+        "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Kết quả và sự ghi nhận",
+      "thoi_gian": "14/3/1988 và năm 1989",
+      "dia_danh": "Gạc Ma · Cô Lin · Len Đao",
+      "mo_ta": "Đối phương bắn chìm, bắn cháy ba tàu vận tải và đánh chiếm một số đảo đá ngầm của ta; 64 cán bộ, chiến sĩ Hải quân nhân dân Việt Nam anh dũng hy sinh, nằm lại giữa biển khơi. Năm 1989, Chủ tịch nước phong tặng và truy tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân cho tập thể cán bộ, chiến sĩ tàu HQ-505 cùng Trung tá Trần Đức Thông, Đại uý Vũ Phi Trừ, Thiếu tá Vũ Huy Lễ, Thiếu uý Trần Văn Phương và Hạ sĩ Nguyễn Văn Lanh. Những ngôi mộ của các liệt sĩ hy sinh trong trận chiến bảo vệ Gạc Ma, Cô Lin và Len Đao được đặt trên đảo Sinh Tồn.",
+      "hien": [
+        "64-liet-si",
+        "cot-moc-hq505",
+        "dao-sinh-ton",
+        "gac-ma",
+        "co-lin",
+        "len-dao"
+      ],
+      "nguon": [
+        "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html"
       ]
     }
   ],
-  "ket_qua": "Tàu HQ-604 bị bắn chìm, 64 cán bộ, chiến sĩ hy sinh; các chiến sĩ chỉ có cuốc, xẻng và vũ khí thô sơ nhưng vẫn kiên cường bảo vệ lá cờ Tổ quốc.",
-  "y_nghia": "Biểu tượng ý chí quyết tử bảo vệ chủ quyền biển đảo của Tổ quốc, khắc sâu trong ký ức dân tộc về sự hy sinh của những người lính giữ đảo.",
+  "ket_qua": "Ba tàu vận tải HQ-604, HQ-605, HQ-505 bị bắn chìm và bắn cháy; 64 cán bộ, chiến sĩ Hải quân nhân dân Việt Nam hy sinh. Tàu HQ-505 lao lên bãi đá Cô Lin và trở thành cột mốc khẳng định chủ quyền của Tổ quốc trên bãi đá này; hai lá cờ Tổ quốc được cắm ở Cô Lin và hai lá ở Len Đao (Báo Nhân Dân; Báo Hải quân Việt Nam).",
+  "y_nghia": "Cuộc chiến đấu ngày 14/3/1988 ở cụm đảo Gạc Ma – Cô Lin – Len Đao thuộc quần đảo Trường Sa của Việt Nam diễn ra trong điều kiện lực lượng, phương tiện và vũ khí của ta hạn chế, trước đối phương có tàu chiến và vũ khí hạng nặng. Sự kiện là mốc nhắc nhở về nhiệm vụ bảo vệ chủ quyền biển, đảo; Khu tưởng niệm chiến sĩ Gạc Ma tại xã Cam Hải Đông, huyện Cam Lâm, tỉnh Khánh Hoà có hồ nước «Vòng tròn bất tử» với 64 đoá hoa tượng trưng cho 64 người đã ngã xuống.",
   "trang_thai": "draft",
   "nguon": [
-    "Báo Hải quân Việt Nam (baohaiquanvietnam.vn) — 38 năm vang vọng lời thề giữ đảo",
+    "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html",
+    "38 năm – Vang vọng lời thề giữ đảo — Báo Hải quân Việt Nam — https://baohaiquanvietnam.vn/tin-tuc/38-nam-vang-vong-loi-the-giu-dao",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
@@ -156,5 +377,38 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html",
       "buoc": 3
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến ba bãi đá theo Báo Nhân Dân và Báo Hải quân Việt Nam. Bất biến #1 của dự án: quần đảo Trường Sa là lãnh thổ Việt Nam — mọi nhãn trên sa đồ đều nêu rõ điều đó. Hai nguồn nêu thứ tự hai bãi đá khác nhau khi mô tả cùng một việc (Báo Hải quân: «HQ-604 và HQ-505 cơ động đến vị trí tại hai bãi đá Gạc Ma và Cô Lin»; Báo Nhân Dân: «tàu HQ 604, HQ 505 cơ động đến vị trí quy định ở hai bãi đá Cô Lin và Gạc Ma») — nội dung như nhau, chỉ khác trật tự liệt kê. Nguồn không nêu số liệu tổn thất phía đối phương nên khối ton_that chỉ khai phía ta. Không khai loai_xung_dot: mặc định ngoai-xam là đúng. Mục trich_van_tich vốn có được giữ nguyên văn và đã đối chiếu khớp với nguyên văn bài của Báo Nhân Dân mở trong đợt này.",
+  "thoi_gian": "16 giờ ngày 13/3/1988 – 14/3/1988",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Cán bộ, chiến sĩ hải quân trên các tàu vận tải và lực lượng công binh làm nhiệm vụ xây dựng đảo",
+      "don_vi": [
+        "Tàu HQ-604 — thuyền trưởng Đại uý Vũ Phi Trừ",
+        "Tàu HQ-505 — thuyền trưởng Thiếu tá Vũ Huy Lễ, thuyền phó Chính trị Thượng uý Võ Tá Du",
+        "Tàu HQ-605",
+        "Trung đoàn Công binh 83 (nay là Lữ đoàn Công binh 83)",
+        "Lữ đoàn 146, Vùng 4 Hải quân"
+      ],
+      "vu_khi": [
+        "Cuốc, xẻng, xà beng và một số súng bộ binh để tự vệ"
+      ]
+    },
+    "doi_thu": {
+      "vu_khi": [
+        "Tàu chiến và vũ khí hạng nặng"
+      ]
+    },
+    "nguon": [
+      "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html",
+      "38 năm – Vang vọng lời thề giữ đảo — Báo Hải quân Việt Nam — https://baohaiquanvietnam.vn/tin-tuc/38-nam-vang-vong-loi-the-giu-dao"
+    ]
+  },
+  "ton_that": {
+    "ta": "64 cán bộ, chiến sĩ Hải quân nhân dân Việt Nam hy sinh, nhiều người nằm lại giữa lòng biển sâu; ba tàu vận tải bị bắn chìm, bắn cháy",
+    "nguon": [
+      "38 năm vang mãi lời thề giữa đảo — Báo Nhân Dân — https://nhandan.vn/38-nam-vang-mai-loi-the-giua-dao-post948109.html",
+      "38 năm – Vang vọng lời thề giữ đảo — Báo Hải quân Việt Nam — https://baohaiquanvietnam.vn/tin-tuc/38-nam-vang-vong-loi-the-giu-dao"
+    ]
+  }
 }

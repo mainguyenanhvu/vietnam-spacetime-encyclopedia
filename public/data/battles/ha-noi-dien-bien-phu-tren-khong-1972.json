@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ «Điện Biên Phủ trên không» 1972 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Số liệu máy bay/B-52 bị bắn rơi có dị bản nhỏ giữa các nguồn — mo_ta không đưa con số cụ thể, chỉ nêu định tính. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ chiến dịch phòng không 12 ngày đêm cuối tháng 12/1972 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "ha-noi-dien-bien-phu-tren-khong-1972",
   "ten": "«Điện Biên Phủ trên không» 1972",
   "nam": 1972,
@@ -13,139 +13,346 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
-      "kieu": "song",
+      "kieu": "duong",
       "diem": [
         [
-          0,
-          450
+          200,
+          250
         ],
         [
-          500,
-          430
+          340,
+          160
         ],
         [
-          1000,
-          470
+          560,
+          150
+        ],
+        [
+          740,
+          240
+        ],
+        [
+          700,
+          400
+        ],
+        [
+          460,
+          480
+        ],
+        [
+          250,
+          400
+        ],
+        [
+          200,
+          250
         ]
       ],
-      "nhan": "Sông Hồng"
+      "nhan": "Vành đai trận địa tên lửa quanh Hà Nội (cách trung tâm 40 – 50 km)"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          820,
+          90
+        ],
+        [
+          880,
+          70
+        ],
+        [
+          940,
+          95
+        ]
+      ],
+      "nhan": "Dãy Tam Đảo"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          760,
+          200
+        ],
+        [
+          860,
+          300
+        ],
+        [
+          930,
+          430
+        ]
+      ],
+      "nhan": "Trục đánh phá Hải Phòng – Thái Nguyên – Bắc Giang"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          820,
+          100
+        ],
+        [
+          700,
+          150
+        ],
+        [
+          580,
+          190
+        ]
+      ],
+      "nhan": "Đường bay của B-52 từ hướng Tam Đảo vào Hà Nội"
     }
   ],
   "phan_tu": [
     {
-      "id": "may-bay-b52",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 300,
-      "y": 120,
-      "nhan": "B-52 ném bom rải thảm"
+      "id": "ha-noi",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 470,
+      "y": 300,
+      "nhan": "Nội thành Hà Nội"
     },
     {
-      "id": "tran-dia-ten-lua",
+      "id": "noi-bai",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 535,
-      "y": 411,
-      "nhan": "Trận địa tên lửa, pháo cao xạ"
+      "x": 400,
+      "y": 140,
+      "nhan": "Sân bay Nội Bài"
     },
     {
-      "id": "quan-ta-danh-tra",
+      "id": "dong-anh-co-loa",
+      "kieu": "dia-danh",
+      "x": 570,
+      "y": 180,
+      "nhan": "Đông Anh · Cổ Loa · Yên Viên · Gia Lâm"
+    },
+    {
+      "id": "td-78",
       "kieu": "quan",
       "ben": "ta",
-      "x": 620,
-      "y": 300,
-      "nhan": "Bộ đội Phòng không – Không quân đánh trả"
+      "x": 150,
+      "y": 230,
+      "nhan": "Quả đạn tên lửa đầu tiên, 19 giờ 44 ngày 18/12",
+      "quy_mo": "Tiểu đoàn 78, Trung đoàn Tên lửa 257"
     },
     {
-      "id": "mui-ban-ha",
-      "kieu": "mui-ten",
+      "id": "td-59",
+      "kieu": "quan",
       "ben": "ta",
+      "x": 150,
+      "y": 340,
+      "nhan": "Hạ tại chỗ chiếc B-52 đầu tiên trên bầu trời Hà Nội",
+      "quy_mo": "Tiểu đoàn 59, Trung đoàn Tên lửa 261"
+    },
+    {
+      "id": "b52",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 60,
+      "nhan": "Các tốp B-52, mỗi tốp 3 chiếc"
+    },
+    {
+      "id": "huong-tam-dao",
+      "kieu": "mui-ten",
+      "ben": "dich",
       "tu": [
-        520,
-        330
+        850,
+        120
       ],
       "den": [
-        350,
-        180
+        660,
+        250
       ],
-      "nhan": "Bắn rơi B-52"
+      "nhan": "Hướng Tam Đảo vào Hà Nội"
     },
     {
-      "id": "ho-huu-tiep",
+      "id": "ga-hang-co",
       "kieu": "dia-danh",
-      "x": 400,
-      "y": 420,
-      "nhan": "Hồ Hữu Tiệp (Ngọc Hà) — xác B-52"
+      "x": 300,
+      "y": 385,
+      "nhan": "Ga Hàng Cỏ bị phá huỷ trưa 21/12"
     },
     {
-      "id": "co-thang",
+      "id": "bach-mai",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 480,
+      "y": 425,
+      "nhan": "Bệnh viện Bạch Mai bị ném bom rạng sáng 22/12"
+    },
+    {
+      "id": "kham-thien",
+      "kieu": "dia-danh",
+      "x": 700,
+      "y": 380,
+      "nhan": "Khu phố Khâm Thiên · Hai Bà Trưng, đêm 26/12"
+    },
+    {
+      "id": "tu-ve-3-nha-may",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 480,
+      "nhan": "19 viên đạn 14,5 mm bắn rơi 1 chiếc F-111",
+      "quy_mo": "Tự vệ Cơ khí Mai Động, Gỗ Hà Nội, Cơ khí Lương Yên"
+    },
+    {
+      "id": "e252",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 880,
+      "y": 240,
+      "nhan": "Lần đầu bắn rơi B-52 bằng pháo cao xạ 100 mm",
+      "quy_mo": "Trung đoàn 252, Quân khu Việt Bắc"
+    },
+    {
+      "id": "vu-xuan-thieu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 830,
+      "y": 500,
+      "nhan": "Phi công Vũ Xuân Thiều lái MiG-21 tiêu diệt B-52 và hy sinh, 21 giờ 45 ngày 28/12"
+    },
+    {
+      "id": "vong-ngoai",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 120,
+      "y": 560,
+      "nhan": "Phòng không vòng ngoài, trận kết thúc 29/12",
+      "quy_mo": "Tiểu đoàn 72, 78, 79"
+    },
+    {
+      "id": "ket-thuc",
       "kieu": "co",
       "ben": "ta",
-      "x": 700,
-      "y": 200,
-      "nhan": "Buộc Mỹ ký Hiệp định Paris"
+      "x": 470,
+      "y": 560,
+      "nhan": "7 giờ ngày 30/12 — Mỹ chấm dứt tập kích"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Mỹ mở chiến dịch Linebacker II",
-      "mo_ta": "Cuối 12/1972, đàm phán Paris bế tắc, Tổng thống Nixon ra lệnh dùng máy bay B-52 ném bom rải thảm Hà Nội, Hải Phòng nhằm gây sức ép trên bàn đàm phán.",
+      "tieu_de": "17 – 18/12/1972 — chuẩn bị đón đánh cuộc tập kích",
+      "thoi_gian": "17 – 18/12/1972",
+      "dia_danh": "Hà Nội · Hải Phòng",
+      "mo_ta": "10 giờ 30 phút ngày 17/12/1972, Tổng thống Mỹ Richard Nixon ra lệnh mở cuộc tập kích bằng không quân vào Hà Nội, Hải Phòng và một số thành phố, thị xã trên miền Bắc. Sáng 18/12, Phủ Thủ tướng điện chỉ đạo các bộ, cơ quan và địa phương thực hiện tốt kế hoạch sơ tán nhân dân; Bộ Tổng Tham mưu điện chỉ đạo các binh chủng pháo cao xạ, tên lửa, ra-đa, không quân, pháo binh sẵn sàng chiến đấu. 18 giờ 50 phút, Quân chủng Phòng không – Không quân chuyển trạng thái sẵn sàng chiến đấu cấp 1; 19 giờ 15 phút, Trung đoàn 291 phát hiện và báo cáo «B-52 đang vào miền Bắc».",
       "hien": [
-        "may-bay-b52"
+        "ha-noi",
+        "b52",
+        "huong-tam-dao"
+      ],
+      "nguon": [
+        "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Quân dân ta đã chuẩn bị từ trước",
-      "mo_ta": "Quân chủng Phòng không – Không quân cùng quân dân Thủ đô đã có sự chuẩn bị chiến lược từ trước, bố trí trận địa tên lửa, pháo cao xạ quanh Hà Nội.",
+      "tieu_de": "Đêm 18 rạng 19/12 — chiếc B-52 đầu tiên rơi tại chỗ",
+      "thoi_gian": "Đêm 18 rạng ngày 19/12/1972",
+      "dia_danh": "Nội Bài · Đông Anh · Cổ Loa · Yên Viên · Gia Lâm",
+      "mo_ta": "Từ 19 giờ 25 phút đến 20 giờ 18 phút ngày 18/12, nhiều tốp B-52 liên tiếp dội bom xuống khu vực sân bay Nội Bài, Đông Anh, Yên Viên, Gia Lâm. 19 giờ 44 phút, quả đạn tên lửa đầu tiên của Tiểu đoàn 78 thuộc Trung đoàn Tên lửa 257 được phóng lên, mở đầu cuộc chiến đấu 12 ngày đêm. Một kíp chiến đấu của Tiểu đoàn 59 phóng 2 quả đạn hạ 1 máy bay B-52 — chiếc B-52 đầu tiên bị bắn rơi tại chỗ trên bầu trời Hà Nội, cách trận địa chưa đầy 10 km. Đêm đó Mỹ huy động 90 lần chiếc B-52, ném khoảng 6.600 quả bom xuống 135 địa điểm, làm chết 300 người; ta bắn rơi 6 máy bay, trong đó 3 chiếc B-52.",
       "hien": [
-        "tran-dia-ten-lua",
-        "quan-ta-danh-tra"
+        "td-78",
+        "td-59",
+        "b52",
+        "noi-bai",
+        "dong-anh-co-loa"
+      ],
+      "nguon": [
+        "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "B-52 ồ ạt ném bom rải thảm",
-      "mo_ta": "Đêm 18/12/1972, hàng loạt tốp B-52 ồ ạt ném bom rải thảm xuống Hà Nội, Hải Phòng, mở đầu 12 ngày đêm ác liệt.",
+      "tieu_de": "Đêm 20/12 — 35 quả đạn hạ 7 chiếc B-52",
+      "thoi_gian": "Đêm 20/12/1972",
+      "dia_danh": "Hà Nội · Hải Phòng · Thái Nguyên",
+      "mo_ta": "Đêm 20/12, bắt đầu từ 19 giờ 27 phút, phía Mỹ sử dụng 93 lần chiếc B-52 và hơn 100 lần chiếc máy bay cường kích đánh phá Hà Nội cùng một số mục tiêu ở Hải Phòng, Thái Nguyên. Rút kinh nghiệm các trận trước, chỉ với 35 quả đạn quân và dân ta bắn rơi 7 chiếc B-52, trong đó 5 chiếc rơi tại chỗ. Đại đội tự vệ của ba nhà máy Cơ khí Mai Động, Gỗ Hà Nội và Cơ khí Lương Yên bằng 19 viên đạn 14,5 mm bắn rơi 1 máy bay F-111.",
       "hien": [
-        "may-bay-b52",
-        "tran-dia-ten-lua"
+        "tu-ve-3-nha-may",
+        "b52",
+        "ha-noi"
+      ],
+      "nguon": [
+        "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tên lửa, pháo cao xạ đánh trả quyết liệt",
-      "mo_ta": "Bộ đội tên lửa, pháo cao xạ, không quân ta đánh trả quyết liệt suốt 12 ngày đêm, liên tục bắn rơi máy bay địch.",
+      "tieu_de": "21 – 24/12 — Ga Hàng Cỏ, Bệnh viện Bạch Mai trúng bom",
+      "thoi_gian": "21 – 24/12/1972",
+      "dia_danh": "Ga Hàng Cỏ · Bệnh viện Bạch Mai · Bắc Giang · Lạng Sơn",
+      "mo_ta": "Ngày 21/12, phía Mỹ dùng 180 lần chiếc máy bay chiến thuật ban ngày và 24 lần chiếc B-52 ban đêm; ta bắn rơi 11 máy bay, trong đó 3 chiếc B-52. Trưa 21/12, Ga Hàng Cỏ bị ném bom phá huỷ. Rạng sáng 22/12, bom B-52 dội xuống Bệnh viện Bạch Mai — bệnh viện lớn nhất miền Bắc — làm 28 bác sĩ, y tá, nhân viên phục vụ và người bệnh chết và bị thương. Ngày 23 và 24/12 ta bắn rơi thêm 9 máy bay, trong đó 3 chiếc B-52. Đến 24 giờ ngày 24/12, lấy cớ nghỉ lễ Noel, phía Mỹ tạm ngừng tập kích.",
       "hien": [
-        "tran-dia-ten-lua",
-        "quan-ta-danh-tra",
-        "mui-ban-ha",
-        "may-bay-b52"
+        "ga-hang-co",
+        "bach-mai",
+        "ha-noi",
+        "b52"
+      ],
+      "nguon": [
+        "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Bắn rơi B-52 ngay trên bầu trời Hà Nội",
-      "mo_ta": "Nhiều \"pháo đài bay\" B-52 bị bắn rơi tại chỗ, trong đó có xác máy bay rơi xuống hồ Hữu Tiệp (Ngọc Hà) còn lưu giữ đến nay.",
+      "tieu_de": "Đêm 26/12 — trận then chốt, Khâm Thiên bị rải thảm",
+      "thoi_gian": "26/12/1972",
+      "dia_danh": "Khâm Thiên · Hai Bà Trưng · Đông Anh",
+      "mo_ta": "Từ 22 giờ 05 phút đến 23 giờ 20 phút ngày 26/12, phía Mỹ sử dụng 105 lần chiếc B-52 và 110 lần chiếc máy bay chiến thuật hộ tống, ném bom rải thảm nội và ngoại thành Hà Nội, đặc biệt là khu phố Khâm Thiên và khu phố Hai Bà Trưng. Hàng nghìn quả bom trút xuống Khâm Thiên, san bằng hàng trăm ngôi nhà, phá tan cả dãy phố dài gần 1 km và ăn sâu vào hai bên tới 300 m. Trong hơn một giờ chiến đấu, lực lượng phòng không ba thứ quân của Hà Nội, Hải Phòng, Thái Nguyên bắn rơi 8 máy bay B-52 và 10 máy bay chiến thuật. Đây là trận bắn rơi nhiều B-52 nhất; lần đầu tiên Trung đoàn 252, Quân khu Việt Bắc bắn rơi 1 chiếc B-52 bằng pháo cao xạ 100 mm.",
       "hien": [
-        "ho-huu-tiep",
-        "mui-ban-ha"
+        "kham-thien",
+        "e252",
+        "b52",
+        "ha-noi"
+      ],
+      "nguon": [
+        "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Buộc Mỹ ký Hiệp định Paris",
-      "mo_ta": "Sau 12 ngày đêm, Mỹ buộc phải ngừng ném bom, nối lại đàm phán và ký Hiệp định Paris ngày 27/1/1973.",
+      "tieu_de": "27 – 28/12 — MiG-21 hạ B-52, phi công Vũ Xuân Thiều hy sinh",
+      "thoi_gian": "27 – 28/12/1972",
+      "dia_danh": "Bầu trời Hà Nội · Tây Bắc",
+      "mo_ta": "Ngày và đêm 27/12, quân và dân miền Bắc bắn rơi 14 máy bay, trong đó 5 chiếc B-52. Ngày 28/12, ban ngày phía Mỹ huy động 131 lần chiếc máy bay chiến thuật, ban đêm khoảng 60 lần chiếc B-52 đánh vào nội và ngoại thành Hà Nội; ta bắn rơi 3 máy bay, trong đó 2 chiếc B-52. Đúng 21 giờ 45 phút ngày 28/12, phi công Vũ Xuân Thiều lái chiếc MiG-21 ở độ cao 11 nghìn mét đã tiếp cận và tiêu diệt một chiếc B-52; trên màn hình ra-đa, hai vệt sáng của MiG và B-52 chập lại thành một chấm sáng lớn rồi toé ra rơi xuống. Anh đã hy sinh.",
       "hien": [
-        "co-thang"
+        "vu-xuan-thieu",
+        "b52",
+        "ha-noi"
+      ],
+      "nguon": [
+        "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "29 – 30/12 — trận kết thúc và tổng kết chiến dịch",
+      "thoi_gian": "29 – 30/12/1972",
+      "dia_danh": "Thái Nguyên · Lạng Sơn · Vĩnh Phú · Thanh Hoá · Quảng Ninh",
+      "mo_ta": "Ngày 29/12, do bị tổn thất nặng trong 11 ngày liên tiếp, B-52 chỉ đánh một số địa phương vòng ngoài, không tập trung vào Hà Nội nữa. Các đơn vị phòng không vòng ngoài — Tiểu đoàn 72, 78, 79 — bắn rơi 2 máy bay, trong đó 1 chiếc B-52; đây là trận kết thúc thắng lợi 12 ngày đêm. 7 giờ sáng ngày 30/12/1972, Richard Nixon tuyên bố chấm dứt cuộc tập kích đường không chiến lược, ngừng ném bom từ Vĩ tuyến 20 trở ra và đề nghị tiếp tục đàm phán, ký kết Hiệp định Paris. Tổng kết 12 ngày đêm, quân và dân miền Bắc bắn rơi 81 máy bay, trong đó 34 chiếc B-52.",
+      "hien": [
+        "vong-ngoai",
+        "ket-thuc",
+        "b52"
+      ],
+      "nguon": [
+        "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html",
+        "Kỳ tích bắn rơi B52, bảo vệ bình yên bầu trời Hà Nội — Báo Điện tử Chính phủ — https://baochinhphu.vn/ky-tich-ban-roi-b52-bao-ve-binh-yen-bau-troi-ha-noi-102221212110615781.htm"
       ]
     }
   ],
-  "ket_qua": "12 ngày đêm bắn rơi hàng loạt 'pháo đài bay' B-52 của Mỹ, buộc đối phương ký Hiệp định Paris 1973.",
-  "y_nghia": "Chiến thắng phòng không quy mô lớn hiếm có trong lịch sử chiến tranh hiện đại, mang tính quyết định buộc Mỹ chấm dứt ném bom miền Bắc và ký Hiệp định Paris.",
+  "ket_qua": "Sau 12 ngày đêm, quân và dân miền Bắc bắn rơi 81 máy bay, trong đó 34 chiếc B-52; riêng Quân chủng Phòng không – Không quân bắn rơi 53 máy bay, có 32 chiếc B-52 với 16 chiếc rơi tại chỗ. 7 giờ sáng ngày 30/12/1972, phía Mỹ tuyên bố chấm dứt cuộc tập kích đường không chiến lược vào Hà Nội, Hải Phòng (Báo Điện tử Chính phủ).",
+  "y_nghia": "Chiến thắng buộc phía Mỹ trở lại bàn đàm phán và ký Hiệp định Paris tháng 1/1973, tạo tiền đề cho cuộc Tổng tiến công mùa Xuân 1975. Về cách đánh, không quân đánh vòng ngoài để uy hiếp và tiêu diệt B-52 từ xa, tên lửa đánh vòng trong từ vành đai cách Hà Nội 40 – 50 km, pháo phòng không và tự vệ đánh ban ngày bảo vệ trận địa tên lửa.",
   "trang_thai": "draft",
   "nguon": [
+    "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html",
+    "Kỳ tích bắn rơi B52, bảo vệ bình yên bầu trời Hà Nội — Báo Điện tử Chính phủ — https://baochinhphu.vn/ky-tich-ban-roi-b52-bao-ve-binh-yen-bau-troi-ha-noi-102221212110615781.htm",
     "Lịch sử Việt Nam (Viện Sử học) — chiến dịch phòng không 1972",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
     "Bảo tàng Chiến thắng B-52, Hà Nội"
@@ -155,7 +362,47 @@
       "sach": "Lệnh của Hội đồng phòng không thành phố Hà Nội, đọc trên Đài phát thanh đêm 18/12/1972",
       "doan": "Đồng bào chú ý, giặc Mỹ có âm mưu điên cuồng đánh phá Hà Nội. Khi có báo động mọi người nhất thiết phải xuống hầm, không ai được đi lại đứng ngồi trên mặt đất",
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/TengoiDienBienPhutrenkhong/index.html",
-      "buoc": 3
+      "buoc": 1
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến từng ngày lấy theo bài chuyên đề «Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt» của Báo Nhân Dân (nguồn tư liệu bài nêu: Quân chủng Phòng không – Không quân, Bảo tàng Chiến thắng B-52, Báo Nhân Dân, website Bộ Công an, Lịch sử Đảng bộ thành phố Hà Nội 1930–2000). Con số tổng kết 81 máy bay / 34 B-52 lấy từ Báo Điện tử Chính phủ vì bài của Báo Nhân Dân không có phần tổng kết. Bài của Báo Nhân Dân có một lỗi in «cuối tháng 12/9172», không chép lại. Khối ton_that.ta ghi thiệt hại DÂN THƯỜNG theo đúng cách nguồn nêu, không phải tổn thất bộ đội — không tìm được số liệu chính thức về tổn thất bộ đội trong chiến dịch. Không khai loai_xung_dot: đối thủ là không quân Mỹ nên mặc định ngoai-xam là đúng. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở. Gỡ 2026-08-28 một đoạn trích gán cho «Điện chỉ đạo của Bộ Tổng Tham mưu ngày 18/12/1972»: văn bản KHÔNG có trên trang được dẫn (special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem). Kiểm bốn đường đều âm tính — cổng verify_trich_van_tich khớp 1%, curl raw 874 KB không có vế nào, Chrome dựng thật (12.184 ký tự) không có vế nào, tìm trên 8 tên miền nhà nước không ra nguyên văn. Bức điện có thể có thật, nhưng chưa tìm được nguồn đăng nguyên văn — muốn dùng lại thì phải dẫn đúng nơi đăng, KHÔNG cắt xén cho vừa một trang khác.",
+  "thoi_gian": "18/12/1972 – 29/12/1972",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Quân chủng Phòng không – Không quân",
+        "Trung đoàn Tên lửa 257 (Tiểu đoàn 78)",
+        "Trung đoàn Tên lửa 261 (Tiểu đoàn 59)",
+        "Trung đoàn ra-đa 291",
+        "Trung đoàn Không quân 927",
+        "Trung đoàn 252, Quân khu Việt Bắc",
+        "Lực lượng phòng không ba thứ quân của Hà Nội, Hải Phòng, Thái Nguyên"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "193 máy bay chiến lược B-52, hơn 1.077 máy bay chiến thuật các loại, 50 máy bay tiếp dầu KC-135, 6 tàu sân bay",
+      "vu_khi": [
+        "Hơn 20.000 tấn bom đạn rải xuống miền Bắc trong 12 ngày đêm"
+      ]
+    },
+    "nguon": [
+      "Kỳ tích bắn rơi B52, bảo vệ bình yên bầu trời Hà Nội — Báo Điện tử Chính phủ — https://baochinhphu.vn/ky-tich-ban-roi-b52-bao-ve-binh-yen-bau-troi-ha-noi-102221212110615781.htm"
+    ]
+  },
+  "ton_that": {
+    "ta": [
+      {
+        "so": "300 người chết ở Thủ đô Hà Nội trong đêm 18 rạng ngày 19/12/1972 (thiệt hại dân thường)",
+        "nguon": "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
+      },
+      {
+        "so": "28 bác sĩ, y tá, nhân viên phục vụ và người bệnh chết và bị thương khi B-52 ném bom Bệnh viện Bạch Mai rạng sáng 22/12/1972",
+        "nguon": "Hà Nội – Điện Biên Phủ trên không: 12 ngày đêm oanh liệt — Báo Nhân Dân — https://special.nhandan.vn/HaNoi_DienBienPhutrenkhong_12ngaydem/index.html"
+      }
+    ],
+    "doi_thu": "81 máy bay bị bắn rơi, trong đó 34 chiếc B-52; riêng Quân chủng Phòng không – Không quân bắn rơi 53 máy bay, có 32 chiếc B-52 (16 chiếc rơi tại chỗ)",
+    "nguon": [
+      "Kỳ tích bắn rơi B52, bảo vệ bình yên bầu trời Hà Nội — Báo Điện tử Chính phủ — https://baochinhphu.vn/ky-tich-ban-roi-b52-bao-ve-binh-yen-bau-troi-ha-noi-102221212110615781.htm"
+    ]
+  }
 }

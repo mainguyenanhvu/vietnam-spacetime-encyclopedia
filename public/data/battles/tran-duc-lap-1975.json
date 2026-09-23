@@ -1,0 +1,145 @@
+{
+  "ghi_chu": "Sa đồ Trận Đức Lập 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-duc-lap-1975",
+  "ten": "Trận Đức Lập",
+  "nam": 1975,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Sư đoàn 10 và Sư đoàn 316, Quân Giải phóng",
+  "doi_thu": "Sư đoàn 23 quân đội Sài Gòn",
+  "dia_diem": "Chi khu quận lỵ Đức Lập, tỉnh Quảng Đức cũ, nay huyện Đắk Mil (tỉnh Lâm Đồng)",
+  "lien_quan_tinh": [
+    "lam-dong"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [100, 500],
+        [500, 480],
+        [900, 500]
+      ],
+      "nhan": "Hành lang chiến lược Bắc–Nam"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [400, 200],
+        [550, 150],
+        [650, 250]
+      ],
+      "nhan": "Cứ điểm Núi Lửa"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "cu-diem-nui-lua",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 200,
+      "nhan": "Cứ điểm Núi Lửa"
+    },
+    {
+      "id": "quan-ly-duc-lap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 450,
+      "nhan": "Quận lỵ Đức Lập, hệ thống lô cốt, hầm ngầm"
+    },
+    {
+      "id": "so-chi-huy-sd23-dich",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 600,
+      "y": 350,
+      "nhan": "Sở Chỉ huy hành quân Sư đoàn 23 quân đội Sài Gòn"
+    },
+    {
+      "id": "trung-doan-28-ta",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 250,
+      "nhan": "Trung đoàn 28 tiến công Núi Lửa"
+    },
+    {
+      "id": "trung-doan-66-ta",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 400,
+      "nhan": "Trung đoàn 66 tiến công Sở Chỉ huy Sư đoàn 23"
+    },
+    {
+      "id": "can-cu-dak-sak",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 650,
+      "y": 550,
+      "nhan": "Căn cứ Đắk Sắk"
+    },
+    {
+      "id": "can-cu-dak-song",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 700,
+      "y": 650,
+      "nhan": "Đắk Song"
+    },
+    {
+      "id": "mui-tien-cong-ta",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [450, 400],
+      "den": [650, 550],
+      "nhan": "Đánh chiếm Đắk Sắk, Đắk Song"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đức Lập — mắt xích phá vỡ tuyến phòng thủ Buôn Ma Thuột",
+      "mo_ta": "Đầu tháng 3/1975, Bộ Tư lệnh chiến dịch Tây Nguyên xác định đánh chiếm Đức Lập nhằm phá vỡ tuyến phòng thủ phía tây nam Buôn Ma Thuột, mở đường cho đòn quyết định vào thị xã.",
+      "hien": ["cu-diem-nui-lua", "quan-ly-duc-lap"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Đồng loạt nổ súng lúc 5 giờ 55 phút",
+      "mo_ta": "5 giờ 55 phút ngày 9/3/1975, Sư đoàn 10 và Sư đoàn 316 đồng loạt nổ súng tiến công cứ điểm Núi Lửa và quận lỵ Đức Lập.",
+      "hien": ["trung-doan-28-ta", "cu-diem-nui-lua", "quan-ly-duc-lap"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chiếm Núi Lửa và Sở Chỉ huy Sư đoàn 23 trong ba giờ",
+      "mo_ta": "Trong khoảng ba giờ đầu, Trung đoàn 28 chiếm cứ điểm Núi Lửa; Trung đoàn 66 đánh chiếm Sở Chỉ huy hành quân của Sư đoàn 23 quân đội Sài Gòn.",
+      "hien": ["trung-doan-28-ta", "cu-diem-nui-lua", "trung-doan-66-ta", "so-chi-huy-sd23-dich"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Chống trả quyết liệt từ lô cốt, hầm ngầm",
+      "mo_ta": "Tại khu vực trung tâm quận lỵ, quân đội Sài Gòn chống trả quyết liệt từ hệ thống lô cốt, hầm ngầm; quân ta phải đưa pháo hạng nặng vào gần, tổ chức nhiều đợt tiến công liên tiếp.",
+      "hien": ["quan-ly-duc-lap", "trung-doan-66-ta"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Làm chủ quận lỵ Đức Lập",
+      "mo_ta": "8 giờ 30 phút ngày 10/3/1975, quân ta làm chủ hoàn toàn quận lỵ Đức Lập.",
+      "hien": ["quan-ly-duc-lap"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đánh chiếm Đắk Sắk, Đắk Song, tuyến phòng thủ sụp đổ",
+      "mo_ta": "Cùng ngày 10/3, Sư đoàn 10 tiếp tục đánh chiếm căn cứ Đắk Sắk và Đắk Song; tuyến phòng thủ phía tây của quân đội Sài Gòn sụp đổ hoàn toàn.",
+      "hien": ["can-cu-dak-sak", "can-cu-dak-song", "mui-tien-cong-ta"]
+    }
+  ],
+  "ket_qua": "Quân ta làm chủ hoàn toàn quận lỵ Đức Lập lúc 8 giờ 30 phút ngày 10/3/1975, tiếp đó đánh chiếm căn cứ Đắk Sắk và Đắk Song, xoá sổ tuyến phòng thủ phía tây nam Buôn Ma Thuột.",
+  "y_nghia": "Chiến thắng Đức Lập phá vỡ tuyến phòng thủ phía tây thị xã Buôn Ma Thuột, góp phần trực tiếp vào chiến thắng Buôn Ma Thuột cùng ngày 10/3/1975, mở đầu bước ngoặt chiến lược của Chiến dịch Tây Nguyên.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Chiến thắng Đức Lập, giải phóng Gia Nghĩa - Mấu chốt quan trọng của chiến dịch Tây Nguyên — Báo Lâm Đồng điện tử — https://baolamdong.vn/chien-thang-duc-lap-giai-phong-gia-nghia-mau-chot-quan-trong-cua-chien-dich-tay-nguyen-210079.html"
+  ],
+  "ghi_chu_bien_tap": "Nguồn baolamdong.vn (báo đảng bộ tỉnh Lâm Đồng, tỉnh hiện quản lý địa bàn Đức Lập cũ sau sáp nhập) đã mở (URL gốc baodaknong.vn tự động chuyển hướng 301 sang baolamdong.vn do Đắk Nông hợp nhất vào Lâm Đồng theo NQ 202/2025/QH15), xác nhận giờ 5h55' ngày 9/3/1975, Trung đoàn 28 chiếm Núi Lửa, Trung đoàn 66 chiếm Sở Chỉ huy Sư đoàn 23, làm chủ quận lỵ 8h30' ngày 10/3, đánh chiếm Đắk Sắk/Đắk Song cùng ngày."
+}

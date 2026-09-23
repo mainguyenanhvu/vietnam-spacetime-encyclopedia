@@ -1,0 +1,64 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch chúa Nguyễn Phúc Tần lập dinh Thái Khang 1653 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chua-nguyen-lap-dinh-thai-khang-1653",
+  "ten": "Chúa Nguyễn Phúc Tần lập dinh Thái Khang (1653)",
+  "nam": 1653,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chúa Nguyễn Phúc Tần (chúa Hiền)",
+  "doi_thu": "Chiêm Thành (vua Bà Tấm / Po Nrop)",
+  "dia_diem": "Vùng đất từ sông Phan Rang đến Phú Yên — nay thuộc thành cổ Diên Khánh, tỉnh Khánh Hòa",
+  "lien_quan_tinh": ["khanh-hoa"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "song", "diem": [[600, 650], [700, 660], [800, 640]], "nhan": "Sông Phan Rang — ranh giới mới" },
+    { "kieu": "nui", "diem": [[200, 700], [300, 750], [400, 720]], "nhan": "Vùng núi phía tây Khánh Hòa" }
+  ],
+  "phan_tu": [
+    { "id": "vua-cham-ba-tam", "kieu": "quan", "ben": "dich", "x": 750, "y": 700, "nhan": "Vua Chiêm Bà Tấm (Po Nrop)" },
+    { "id": "quan-cham-danh-phu-yen", "kieu": "mui-ten", "ben": "dich", "tu": [750, 700], "den": [500, 300], "nhan": "Quân Chiêm đánh Phú Yên (1653)" },
+    { "id": "quan-ta-cuu-vien", "kieu": "quan", "ben": "ta", "x": 400, "y": 250, "nhan": "Quân chúa Nguyễn cứu viện Phú Yên" },
+    { "id": "mui-danh-lui", "kieu": "mui-ten", "ben": "ta", "tu": [400, 250], "den": [650, 600], "nhan": "Đánh lui quân Chiêm về nam" },
+    { "id": "song-phan-rang-ranh-gioi", "kieu": "co", "ben": "ta", "x": 650, "y": 650, "nhan": "Ranh giới mới: sông Phan Rang" },
+    { "id": "phu-thai-khang", "kieu": "cong-su", "ben": "ta", "x": 500, "y": 500, "nhan": "Phủ Thái Khang (sau đổi Bình Khang)" },
+    { "id": "phu-dien-ninh", "kieu": "cong-su", "ben": "ta", "x": 520, "y": 560, "nhan": "Phủ Diên Ninh (sau đổi Diên Khánh)" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Bà Tấm lên ngôi, đánh Phú Yên",
+      "mo_ta": "Năm 1652, Bà Tấm lên ngôi vua Chiêm Thành; một năm sau đem quân đánh phá Phú Yên, đất cực nam của Đàng Trong lúc đó.",
+      "hien": ["vua-cham-ba-tam", "quan-cham-danh-phu-yen"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chúa Nguyễn Phúc Tần cử quân cứu viện",
+      "mo_ta": "Chúa Hiền Nguyễn Phúc Tần sai quân vào Phú Yên chống lại cuộc tấn công.",
+      "hien": ["quan-ta-cuu-vien"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Đánh lui quân Chiêm",
+      "mo_ta": "Quân chúa Nguyễn đánh bật quân Chiêm Thành lui về phía nam.",
+      "hien": ["mui-danh-lui"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Lấy đất tới sông Phan Rang",
+      "mo_ta": "Chúa Nguyễn lấy toàn bộ đất Chiêm Thành từ phía đông sông Phan Rang đến Phú Yên, đẩy ranh giới Đàng Trong xuống sông Phan Rang.",
+      "hien": ["song-phan-rang-ranh-gioi"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Lập phủ Thái Khang, Diên Ninh",
+      "mo_ta": "Vùng đất mới được chia thành hai phủ Thái Khang và Diên Ninh, gọi chung là dinh Thái Khang.",
+      "hien": ["phu-thai-khang", "phu-dien-ninh"]
+    }
+  ],
+  "ket_qua": "Đàng Trong mở thêm dinh Thái Khang gồm hai phủ Thái Khang và Diên Ninh, đẩy ranh giới với Chiêm Thành xuống sông Phan Rang.",
+  "y_nghia": "Một bước Nam tiến của chúa Nguyễn, đặt nền hành chính đầu tiên cho vùng đất Khánh Hòa ngày nay.",
+  "trang_thai": "draft",
+  "nguon": [
+    "archives.org.vn (Cục Văn thư và Lưu trữ nhà nước) — Địa giới hành chính Việt Nam thời kỳ quân chủ",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

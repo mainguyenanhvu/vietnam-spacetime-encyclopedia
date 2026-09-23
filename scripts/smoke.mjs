@@ -631,7 +631,20 @@ async function main() {
     const glScript = await cdp.send("Page.addScriptToEvaluateOnNewDocument", { source: GL_PROBE });
     cdp.reset();
     await cdp.send("Page.navigate", { url: ORIGIN });
-    await sleep(7000);
+    // Chờ ĐIỀU KIỆN, không chờ cứng: trước đây là sleep(7000), đủ lúc viết
+    // nhưng trang lớn dần tới ~12s (vite dev nguội + swiftshader). Lúc đó S7
+    // đo trước khi trang kịp fetch /data/ nào → 0 byte → hỏng, trông như lỗi
+    // tải dữ liệu trong khi thật ra là bộ đo mù (2026-09-23).
+    const hanChot = Date.now() + 60000;
+    let sanSang = false;
+    while (!sanSang && Date.now() < hanChot) {
+      sanSang = await cdp
+        .evaluate(`!!(window.__map && __map.isStyleLoaded() && __map.getLayer("chu-quyen-labels"))`)
+        .catch(() => false);
+      if (!sanSang) await sleep(500);
+    }
+    if (!sanSang) throw new Error("MapLibre không sẵn sàng sau 60s — dừng, mọi kịch bản sau sẽ đo rác");
+    await sleep(1500);
 
     console.log("\n──────── LƯỢT A (ngày thật) ────────");
     await s1(cdp);

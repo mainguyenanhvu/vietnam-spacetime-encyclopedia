@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Bảo tàng lịch sử – văn hoá – nghệ thuật quan trọng của Việt Nam (thiết chế công lập). Ưu tiên bảo tàng giữ bảo vật quốc gia hoặc toà nhà có giá trị lịch sử. Bảo tàng là thực thể riêng, được phép trùng toạ độ với di tích/lễ hội đã có (vd Bảo tàng Quang Trung ↔ Lễ hội Đống Đa – Tây Sơn). KHÔNG dùng Wikipedia. ── ĐỢT 2026-08-26: +7 bảo tàng. Danh sách lấy từ DANH BẠ BẢO TÀNG của Cục Di sản văn hoá (baotang.dsvh.gov.vn) cùng cổng TTĐT tỉnh và Bộ Quốc phòng. Toạ độ lấy từ POI tourism=museum của OpenStreetMap, qua hai cửa kiểm: tên bảo tàng phải khớp trong display_name, và điểm phải rơi ĐÚNG tỉnh (point-in-polygon trên vn-63-tinh-truoc-2025). Đo được 7/10 qua cửa — 3 tấm trượt để lại chứ không nới cửa.",
-  "ngay_cap_nhat": "2026-08-27",
+  "ngay_cap_nhat": "2026-08-28",
   "sources": [
     "Website chính thức các bảo tàng công lập (.vn)",
     "Cục Di sản văn hóa (Bộ VHTTDL) — dsvh.gov.vn"
@@ -181,7 +181,7 @@
       "lat": 13.9239,
       "loai": "bao-tang",
       "nam_hien_thi": "Khánh thành 1978 trên nền nhà cũ của ba anh em Tây Sơn; Điện thờ Tây Sơn Tam Kiệt dựng từ 1958–1960",
-      "mo_ta": "Bảo tàng danh nhân lớn nhất Việt Nam, dựng ngay trên nền nhà cũ của ba anh em Nguyễn Nhạc – Nguyễn Huệ – Nguyễn Lữ tại làng Kiên Mỹ, quê hương phong trào Tây Sơn. Khu di tích ôm quanh Điện thờ Tây Sơn Tam Kiệt cùng hai chứng tích gốc còn lại của khu vườn xưa: giếng nước đá ong mà gia đình Tây Sơn từng dùng và cây me cổ thụ hơn 200 năm tuổi gắn với thuở thiếu thời ba anh em. Nhà trưng bày kiến trúc mô phỏng đình làng Việt thế kỷ 18 với mái ngói âm dương, gồm 9 phòng giới thiệu hơn 11.000 tài liệu, hiện vật về khởi nghĩa Tây Sơn, các chiến dịch Rạch Gầm – Xoài Mút, Ngọc Hồi – Đống Đa và triều đại Quang Trung. Bảo tàng cũng là nơi bảo tồn nhạc võ Tây Sơn với bộ 12 trống trận tượng trưng 12 con giáp và võ cổ truyền Bình Định. Ghi chú: lễ hội Đống Đa – Tây Sơn (mùng 4–5 tháng Giêng) tổ chức tại chính khuôn viên này, đã có mục riêng trong dữ liệu lễ hội.",
+      "mo_ta": "Bảo tàng danh nhân lớn nhất Việt Nam, dựng ngay trên nền nhà cũ của ba anh em Nguyễn Nhạc – Nguyễn Huệ – Nguyễn Lữ tại làng Kiên Mỹ, quê hương phong trào Tây Sơn. Khu di tích ôm quanh Điện thờ Tây Sơn Tam Kiệt cùng hai chứng tích gốc còn lại của khu vườn xưa: giếng nước đá ong mà gia đình Tây Sơn từng dùng và cây me cổ thụ hơn 200 năm tuổi gắn với thuở thiếu thời ba anh em. Nhà trưng bày kiến trúc mô phỏng đình làng Việt thế kỷ 18 với mái ngói âm dương, gồm 9 phòng giới thiệu hơn 11.000 tài liệu, hiện vật về khởi nghĩa Tây Sơn, các chiến dịch Rạch Gầm – Xoài Mút, Ngọc Hồi – Đống Đa và triều đại Quang Trung. Bảo tàng cũng là nơi bảo tồn nhạc võ Tây Sơn với bộ 12 trống trận tượng trưng 12 con giáp và võ cổ truyền Bình Định. Lễ hội Đống Đa – Tây Sơn (mùng 4–5 tháng Giêng) tổ chức ngay trong khuôn viên bảo tàng.",
       "dia_diem": "Quốc lộ 19B, thị trấn Phú Phong cũ, xã Tây Sơn (huyện Tây Sơn, tỉnh Bình Định cũ), tỉnh Gia Lai",
       "do_tin_cay_toa_do": "cao",
       "trang_thai": "reviewed",
@@ -634,6 +634,312 @@
       "trang_thai": "draft",
       "nguon": [
         "Cổng TTĐT tỉnh Khánh Hoà (dukhach.khanhhoa.gov.vn) — Bảo tàng tỉnh Khánh Hòa — https://dukhach.khanhhoa.gov.vn/vi/bao-tang-thu-vien/bao-tang-tinh-khanh-hoa"
+      ]
+    },
+    {
+      "id": "bao-tang-nghe-an-xo-viet-nghe-tinh",
+      "ten": "Bảo tàng Nghệ An – Xô Viết Nghệ Tĩnh",
+      "lon": 105.6813,
+      "lat": 18.6733,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 15/1/1960; khánh thành và mở cửa 12/9/1963 (kỷ niệm 33 năm Xô Viết Nghệ Tĩnh)",
+      "mo_ta": "Một trong ba bảo tàng thành lập sớm nhất trong hệ thống bảo tàng Việt Nam, dựng trên nền nhà lao Vinh cũ — nơi giam giữ hàng nghìn chiến sĩ cách mạng thời kỳ Xô Viết Nghệ Tĩnh 1930–1931. Trưng bày tái hiện toàn bộ diễn biến phong trào Xô Viết Nghệ Tĩnh. Hiện lưu giữ sưu tập trống đồng khai quật tại di chỉ Làng Vạc, được công nhận bảo vật quốc gia đợt 14 (2025).",
+      "dia_diem": "Số 10 đường Đào Tấn, phường Cửa Nam, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Xô Viết Nghệ Tĩnh — Giới thiệu lịch sử hình thành — http://btxvnt.org.vn/chi-tiet-bai-viet/gioi-thieu-lich-su-hinh-thanh-bao-tang-xo-viet-nghe-tinh",
+        "Báo Chính phủ — Công nhận 30 bảo vật quốc gia — https://baochinhphu.vn/cong-nhan-30-bao-vat-quoc-gia-102260204111522133.htm"
+      ]
+    },
+    {
+      "id": "bao-tang-hoang-gia-nam-hong",
+      "ten": "Bảo tàng Hoàng gia Nam Hồng",
+      "lon": 105.9505,
+      "lat": 21.1214,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 2017",
+      "mo_ta": "Bảo tàng tư nhân do nhà sưu tập Nguyễn Thế Hồng (Chủ tịch Hội Nghiên cứu và Sưu tầm cổ vật Kinh Bắc) sáng lập tại Từ Sơn, tỉnh Bắc Ninh. Lưu giữ hơn 5.000 hiện vật đồng, gốm trải từ văn hoá Đông Sơn, Sa Huỳnh, Champa tới các triều đại phong kiến Việt Nam, Trung Quốc, Nhật Bản. Là đơn vị tư nhân đang lưu giữ ấn vàng \"Hoàng đế chi bảo\" — bảo vật quốc gia hồi hương từ Pháp, công nhận đợt 13 (2024).",
+      "dia_diem": "Phường Từ Sơn, tỉnh Bắc Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "VOV — Chiêm ngưỡng Ấn vàng 'Hoàng đế chi bảo' tại Bảo tàng Hoàng gia Nam Hồng — https://vov.vn/van-hoa/di-san/chiem-nguong-an-vang-hoang-de-chi-bao-tai-bao-tang-hoang-gia-nam-hong-post1060302.vov",
+        "Báo Bắc Ninh (Đài PT-TH Bắc Ninh) — Công nhận Bảo tàng Hoàng gia Nam Hồng là điểm du lịch cấp tỉnh — https://baobacninhtv.vn/cong-nhan-bao-tang-hoang-gia-nam-hong-la-diem-du-lich-cap-tinh-postid440756.bbg"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-dak-nong",
+      "ten": "Bảo tàng tỉnh Đắk Nông",
+      "lon": 107.6879,
+      "lat": 12.0045,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng công lập cấp tỉnh",
+      "mo_ta": "Bảo tàng tổng hợp, hiện lưu giữ sưu tập đàn đá Đắk Sơn — 16 thanh đá thời tiền sử niên đại khoảng 3.500–3.000 năm, phát hiện năm 2014 tại thôn Đắk Sơn, xã Nam Xuân, huyện Krông Nô. Đây là bảo vật quốc gia đầu tiên của tỉnh Đắk Nông (cũ), công nhận đợt 13 (2024).",
+      "dia_diem": "Thành phố Gia Nghĩa, tỉnh Lâm Đồng (Đắk Nông cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đắk Lắk — Sưu tập đàn đá Đắk Sơn – bảo vật quốc gia đầu tiên ở Đắk Nông — https://www.baodaklak.vn/van-hoa-du-lich-van-hoc-nghe-thuat/202501/suu-tap-dan-da-dak-son-bao-vat-quoc-gia-dau-tien-o-dak-nong-4cd1a77/",
+        "Báo Nhân Dân — Công nhận Bảo vật quốc gia Đàn đá Đắk Sơn lịch sử — https://nhandan.vn/cong-bo-quyet-dinh-cong-nhan-bao-vat-quoc-gia-dan-da-dak-son-post907651.html"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-binh-thuan",
+      "ten": "Bảo tàng tỉnh Bình Thuận",
+      "lon": 108.1022,
+      "lat": 10.9333,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 10/6/1998 (Quyết định 29/1998/QĐ/CTUBBT)",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, lưu giữ hơn 24.000 hiện vật gốc, trưng bày theo bảy chuyên đề: văn hoá Đa Kai, văn hoá Sa Huỳnh, văn hoá Chăm, văn hoá các dân tộc thiểu số, văn hoá Việt, cùng sưu tập cổ vật trục vớt từ các tàu đắm ngoài khơi Bình Thuận và Cà Mau.",
+      "dia_diem": "Số 4 Bà Triệu, thành phố Phan Thiết, tỉnh Lâm Đồng (Bình Thuận cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng tỉnh Bình Thuận — Giới thiệu — http://baotangbinhthuan.com/index.php/about/"
+      ]
+    },
+    {
+      "id": "bao-tang-van-hoa-dan-toc-khmer-tra-vinh",
+      "ten": "Bảo tàng Văn hoá dân tộc Khmer",
+      "lon": 106.3327,
+      "lat": 9.9347,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Xây dựng 1995, đưa vào sử dụng 1997",
+      "mo_ta": "Bảo tàng chuyên đề về văn hoá dân tộc Khmer Nam Bộ, nằm trong quần thể khu di tích Ao Bà Om và chùa Âng ở thành phố Trà Vinh. Trưng bày trang phục, nhạc cụ, nghề thủ công và đời sống tín ngưỡng của cộng đồng người Khmer vùng đồng bằng sông Cửu Long.",
+      "dia_diem": "Khóm 4, phường 8, tỉnh Vĩnh Long (Trà Vinh cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Bảo tàng văn hóa dân tộc Khmer tỉnh Trà Vinh — http://baotanglichsu.vn/vi/Articles/3096/16337/bao-tang-van-hoa-dan-toc-khmer-tinh-tra-vinh.html"
+      ]
+    },
+    {
+      "id": "bao-tang-van-hoa-sa-huynh-hoi-an",
+      "ten": "Bảo tàng Văn hoá Sa Huỳnh",
+      "lon": 108.3286,
+      "lat": 15.8763,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 1994",
+      "mo_ta": "Bảo tàng chuyên đề trong khu phố cổ Hội An, trưng bày 946 hiện vật của cư dân văn hoá Sa Huỳnh — lớp cư dân bản địa có mặt tại vùng cửa sông Thu Bồn trước khi hình thành thương cảng Hội An, niên đại khoảng 2.000 năm.",
+      "dia_diem": "Số 149 Trần Phú, thành phố Hội An, thành phố Đà Nẵng (Quảng Nam cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Hội An Heritage — Bảo tàng văn hóa Sa Huỳnh ở Hội An — https://hoianheritage.net/vi/baotang/Van-hoa-Sa-Huynh/BAO-TANG-VAN-HOA-SA-HUYNH-O-HOI-AN-35.html"
+      ]
+    },
+    {
+      "id": "bao-tang-gom-thoi-dung-nuoc",
+      "ten": "Bảo tàng Gốm thời dựng nước",
+      "lon": 106.7419,
+      "lat": 10.8014,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Bảo tàng tư nhân",
+      "mo_ta": "Bảo tàng tư nhân do nhà sưu tập Phạm Gia Chi Bảo làm giám đốc, chuyên về gốm cổ Việt Nam từ thời đại kim khí. Hiện lưu giữ bát bồng gốm văn hoá Hoa Lộc, niên đại khoảng 4.000–3.800 năm, được công nhận bảo vật quốc gia đợt 14 (2025).",
+      "dia_diem": "Phường An Khánh, Thành phố Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Bảo vật quốc gia: 2 di sản quý hiếm Bát bồng gốm văn hóa Hoa Lộc và bộ tượng Tam quan Đại đế — https://danviet.vn/bao-vat-quoc-gia-2-di-san-quy-hiem-bat-bong-gom-van-hoa-hoa-loc-va-bo-tuong-tam-quan-dai-de-d1405873.html"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ ước lượng khu vực phường An Khánh (TP Thủ Đức cũ), chưa định vị chính xác địa chỉ."
+    },
+    {
+      "id": "bao-tang-tinh-dong-thap",
+      "ten": "Bảo tàng tỉnh Đồng Tháp",
+      "lon": 105.6314,
+      "lat": 10.4593,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Quyết định thành lập 1978; nhà trưng bày khánh thành 29/12/2000",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh với không gian trưng bày văn hoá Óc Eo rộng khoảng 650m², giới thiệu hiện vật gốc khai quật tại khu di tích Gò Tháp — khuôn trang sức đá và gốm, khuyên tai, trâm cài, chỉ vàng, nhẫn vàng, vòng đồng — niên đại gần 2.000 năm.",
+      "dia_diem": "Số 226 Nguyễn Thái Học, phường 4, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT tỉnh Đồng Tháp — Nhà trưng bày Xứ ủy Nam Bộ và Văn hóa Óc Eo — https://dongthap.gov.vn/web/dong-thap/chi-tiet-bai-viet/-/asset_publisher/1mOzUrGkrdAE/content/id/20732604"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-hai-duong",
+      "ten": "Bảo tàng tỉnh Hải Dương",
+      "lon": 106.3147,
+      "lat": 20.9373,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 25/7/1987 (khi còn tỉnh Hải Hưng); phòng trưng bày chính khánh thành 2/9/1990",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, tiền thân trực thuộc tỉnh Hải Hưng trước khi tách tỉnh năm 1997. Trưng bày lịch sử tự nhiên và xã hội vùng đất Hải Dương, trong đó có sưu tập gốm và bia đá thời Trần, Lê.",
+      "dia_diem": "Số 11 Hồng Quang, phường Nguyễn Trãi, thành phố Hải Phòng (Hải Dương cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Bảo tàng tỉnh Hải Dương kỷ niệm 30 năm xây dựng và phát triển — https://dsvh.gov.vn/bao-tang-tinh-hai-duong-ky-niem-30-xay-dung-va-phat-trien-1988-2018"
+      ]
+    },
+    {
+      "id": "bao-tang-dong-nai",
+      "ten": "Bảo tàng Đồng Nai",
+      "lon": 106.8362,
+      "lat": 10.95,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 1976",
+      "mo_ta": "Bảo tàng khảo cứu địa phương, nghiên cứu lịch sử tự nhiên, lịch sử xã hội và văn hoá bản địa vùng Đồng Nai. Văn hoá Óc Eo — gắn với sự tồn tại của vương quốc Phù Nam — là một nội dung trưng bày quan trọng.",
+      "dia_diem": "Số 1 Nguyễn Ái Quốc, phường Tân Phong, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng Du lịch Việt Nam — Bảo tàng Đồng Nai: Nơi bảo tồn và phát huy giá trị di sản văn hóa — https://dulichvietnam.com.vn/bao-tang-dong-nai.html"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-ninh-thuan",
+      "ten": "Bảo tàng tỉnh Ninh Thuận",
+      "lon": 108.9899,
+      "lat": 11.5673,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Quyết định thành lập 26/4/1993; toà nhà mới xây từ 2007, mở cửa 21/2/2012",
+      "mo_ta": "Bảo tàng cấp tỉnh nằm trong quần thể quảng trường 16 Tháng Tư, thành phố Phan Rang – Tháp Chàm. Trưng bày hiện vật về lịch sử, văn hoá và đời sống cộng đồng người Chăm qua các thời kỳ, phản ánh vùng đất từng là trung tâm của Vương quốc Chăm Pa.",
+      "dia_diem": "Quảng trường 16 Tháng Tư, phường Tấn Tài, tỉnh Khánh Hoà (Ninh Thuận cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng thông tin Bảo tàng Ninh Thuận (Sở VHTTDL) — https://baotang.ninhthuan.gov.vn/",
+        "Cơ sở dữ liệu Du lịch Việt Nam (Cục Du lịch Quốc gia) — Bảo tàng Ninh Thuận — https://csdl.vietnamtourism.gov.vn/dest/?item=892"
+      ]
+    },
+    {
+      "id": "bao-tang-ao-dai-viet-nam",
+      "ten": "Bảo tàng Áo dài Việt Nam",
+      "lon": 106.8264,
+      "lat": 10.8425,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Khánh thành 22/1/2014",
+      "mo_ta": "Bảo tàng tư nhân chuyên đề về áo dài, hình thành từ tâm huyết mười năm của hoạ sĩ, nhà thiết kế Sĩ Hoàng. Trưng bày các bộ sưu tập áo dài qua từng thời kỳ cùng không gian kiến trúc, vườn cảnh mang phong cách làng quê Nam Bộ.",
+      "dia_diem": "Số 206/19/30 Long Thuận, phường Long Phước, Thành phố Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Niên — Bảo tàng ở TP.HCM: Bảo tàng Áo dài ở cù lao Long Phước — https://thanhnien.vn/bao-tang-o-tphcm-bao-tang-ao-dai-o-cu-lao-long-phuoc-185250413144045227.htm"
+      ]
+    },
+    {
+      "id": "bao-tang-con-dao",
+      "ten": "Bảo tàng Côn Đảo",
+      "lon": 106.6067,
+      "lat": 8.6833,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 1982 (một số nguồn ghi mốc tổ chức lại năm 2009)",
+      "mo_ta": "Bảo tàng trực thuộc hệ thống di tích lịch sử Nhà tù Côn Đảo — khu di tích xếp hạng quốc gia đặc biệt năm 1979 gồm 17 điểm di tích thành phần (hệ thống nhà tù và các nghĩa trang liên quan). Trưng bày hiện vật, tư liệu về gần 113 năm lịch sử nhà tù Côn Đảo qua các thời Pháp thuộc và Mỹ – nguỵ.",
+      "dia_diem": "Đường Nguyễn Huệ, thị trấn Côn Đảo, Thành phố Hồ Chí Minh (Bà Rịa – Vũng Tàu cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Di sản văn hoá — Di tích lịch sử Nhà tù Côn Đảo — https://dsvh.gov.vn/di-tich-lich-su-nha-tu-con-dao-2956"
+      ],
+      "ghi_chu_bien_tap": "Nguồn vênh nhau về năm thành lập bảo tàng (1982 so với 2009) — nêu cả hai, không tự chọn."
+    },
+    {
+      "id": "bao-tang-tinh-binh-duong",
+      "ten": "Bảo tàng tỉnh Bình Dương",
+      "lon": 106.6602,
+      "lat": 11.0031,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 1997",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, lưu giữ hiện vật khảo cổ di tích Dốc Chùa (huyện Tân Uyên cũ), trong đó có tượng động vật đồng Dốc Chùa — một trong các bảo vật quốc gia của vùng đất Bình Dương (cũ).",
+      "dia_diem": "Số 565 Đại lộ Bình Dương, phường Hiệp Thành, Thành phố Hồ Chí Minh (Bình Dương cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch Bình Dương (lưu trữ) — Bảo tàng tỉnh — https://sovhttdl.binhduong.gov.vn/bao-tang-tinh"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-quang-tri",
+      "ten": "Bảo tàng tỉnh Quảng Trị",
+      "lon": 107.0954,
+      "lat": 16.8163,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Khởi công 2000, khánh thành 1/5/2008",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh tại thành phố Đông Hà, trưng bày lịch sử, văn hoá vùng đất Quảng Trị — nơi từng là tuyến lửa và giới tuyến quân sự tạm thời 1954–1975.",
+      "dia_diem": "Số 8 đường Nguyễn Huệ, thành phố Đông Hà, tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở VHTTDL Quảng Trị (Trung tâm Quản lý Di tích và Bảo tàng) — Giới thiệu chung về Bảo tàng Quảng Trị — https://trungtamquanlyditichvabaotangquangtri.vn/CacBQLDT/baiviet/gioi-thieu-chung-ve-bao-tang-quang-tri/214"
+      ]
+    },
+    {
+      "id": "bao-tang-tong-hop-quang-ngai",
+      "ten": "Bảo tàng Tổng hợp tỉnh Quảng Ngãi",
+      "lon": 108.8,
+      "lat": 15.1214,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 1989 (tách từ Bảo tàng tỉnh Nghĩa Bình)",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, nơi trưng bày nhiều bảo vật quốc gia thuộc văn hoá Sa Huỳnh và Champa: tượng tu sĩ Champa Phú Hưng, bộ trang sức vàng Trà Veo 3 và Lâm Thượng, sưu tập bình gốm Long Thạnh — khai quật tại các di chỉ Long Thạnh, Phú Khương, Thạnh Đức, đầm An Khê.",
+      "dia_diem": "Đường Lê Trung Đình, phường Trần Hưng Đạo, tỉnh Quảng Ngãi",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Niên — Nhà trưng bày Bảo tàng Tổng hợp tỉnh Quảng Ngãi xuống cấp nghiêm trọng — https://thanhnien.vn/nha-trung-bay-bao-tang-tong-hop-tinh-quang-ngai-xuong-cap-nghiem-trong-185230812181343198.htm"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-vinh-long",
+      "ten": "Bảo tàng tỉnh Vĩnh Long",
+      "lon": 105.9722,
+      "lat": 10.2537,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 6/9/1993 (Quyết định 716/QĐ-UBT)",
+      "mo_ta": "Bảo tàng tổng hợp cấp tỉnh, nghiên cứu và trưng bày di sản văn hoá, lịch sử vùng đất Vĩnh Long và Nam Bộ.",
+      "dia_diem": "Số 1 Phan Bội Châu, phường 1, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Vĩnh Long — Lịch sử hình thành — https://www.baotangvinhlong.vn/lich-su-hinh-thanh"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-bac-lieu",
+      "ten": "Bảo tàng tỉnh Bạc Liêu",
+      "lon": 105.7244,
+      "lat": 9.2851,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Khánh thành 15/10/2010",
+      "mo_ta": "Bảo tàng cấp tỉnh, trưng bày lịch sử, di sản văn hoá và quá trình phát triển của vùng đất Bạc Liêu (cũ).",
+      "dia_diem": "Số 25 Hai Bà Trưng, phường 3, tỉnh Cà Mau (Bạc Liêu cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bách khoa Toàn thư Việt Nam — Bảo tàng tỉnh Bạc Liêu — https://bktt.vn/B%E1%BA%A3o_t%C3%A0ng_t%E1%BB%89nh_B%E1%BA%A1c_Li%C3%AAu"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-hung-yen",
+      "ten": "Bảo tàng tỉnh Hưng Yên",
+      "lon": 106.0417,
+      "lat": 20.6464,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 1997",
+      "mo_ta": "Bảo tàng cấp tỉnh, trụ sở chính đặt tại phường Phố Hiến — thương cảng cổ nổi tiếng \"thứ nhất Kinh Kỳ, thứ nhì Phố Hiến\". Bảo tồn và trưng bày di sản văn hoá, lịch sử vùng đất Hưng Yên qua các thời kỳ.",
+      "dia_diem": "Đường Phạm Bạch Hổ, phường Phố Hiến, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Hưng Yên — Lịch sử hình thành — https://www.baotanghungyen.vn/pages/lich-su-hinh-thanh"
+      ]
+    },
+    {
+      "id": "bao-tang-tinh-lang-son",
+      "ten": "Bảo tàng tỉnh Lạng Sơn",
+      "lon": 106.7615,
+      "lat": 21.8537,
+      "loai": "bao-tang",
+      "nam_hien_thi": "Thành lập 24/6/1993 (Quyết định 441/QĐ-UB); khánh thành khu trưng bày 2003",
+      "mo_ta": "Bảo tàng cấp tỉnh trên khuôn viên gần 3.000m², gồm nhà trưng bày, kho hiện vật và khu làm việc. Giới thiệu lịch sử, văn hoá các dân tộc tỉnh Lạng Sơn — vùng biên ải phía Bắc gắn với nhiều bia ma nhai và di tích thời Lê, Nguyễn.",
+      "dia_diem": "Số 2 đường Hùng Vương, phường Chi Lăng, thành phố Lạng Sơn, tỉnh Lạng Sơn",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Trang tin điện tử Bảo tàng tỉnh Lạng Sơn — Giới thiệu chung — http://baotanglangson.vn/gioi-thieu/gioi-thieu-chung"
       ]
     }
   ]

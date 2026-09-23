@@ -1,143 +1,327 @@
 {
-  "ghi_chu": "Sa đồ trận Tây Kết 1285 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Chỉ huy cụ thể trận này chưa được nguồn hiện có nêu tên tướng riêng (khác Hàm Tử – Chương Dương đã có tên Trần Nhật Duật, Trần Quang Khải) — để 'Quân Trần' chung, không suy diễn thêm tên. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Tây Kết 1285 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Bản trước để chỉ huy là «Quân Trần» chung vì nguồn khi ấy chưa nêu tên tướng riêng; nay bài của Bảo tàng Lịch sử Quốc gia chép Hưng Đạo Vương đem binh đến Tây Kết, chia quân đánh trại và đặt phục binh, nên ghi lại theo nguồn đó. trang_thai=draft chờ soát §9.",
   "id": "tay-ket-1285",
   "ten": "Trận Tây Kết 1285",
   "nam": 1285,
+  "thoi_gian": "Tháng 5 năm 1285",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Quân Trần (phối hợp các cánh Hàm Tử – Chương Dương)",
+  "chi_huy": "Hưng Đạo Đại Vương Trần Quốc Tuấn (Trần Nhật Duật, Trần Quang Khải chặn các ngả)",
   "doi_thu": "Quân Nguyên (Toa Đô)",
   "dia_diem": "Tây Kết, Khoái Châu, Hưng Yên",
   "lien_quan_tinh": [
     "hung-yen"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Hưng Đạo Vương đem binh đến Tây Kết, chia quân đánh trại và đặt phục binh",
+        "Trần Nhật Duật và Trần Quang Khải chia quân chặn các ngả đường, không cho Thoát Hoan và Toa Đô thông tin với nhau"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "8 vạn quân của Toa Đô",
+      "don_vi": [
+        "Cánh quân Toa Đô đóng ở Thiên Trường, cách Thoát Hoan hơn 200 dặm",
+        "Ô Mã Nhi đi cùng cánh quân này"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Toàn bộ 8 vạn quân của Toa Đô bị tiêu diệt, trong đó hơn 5 vạn quân Nguyên bị bắt sống cùng hàng trăm chiến thuyền và nhiều khí giới; Toa Đô bị chém rơi đầu, Ô Mã Nhi một mình liều chết chạy ra biển trốn về Trung Quốc.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          400
-        ],
-        [
-          500,
-          380
-        ],
-        [
-          1000,
-          420
-        ]
+        [140, 118],
+        [330, 208],
+        [520, 298],
+        [700, 388],
+        [900, 468]
       ],
       "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [520, 298],
+        [604, 222],
+        [702, 172]
+      ],
+      "nhan": "Sông Thiên Mạc"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [426, 382],
+        [556, 358],
+        [622, 412],
+        [498, 452],
+        [406, 430]
+      ],
+      "nhan": "Bãi Mạn Trù"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 418],
+        [928, 454],
+        [948, 592],
+        [1000, 592]
+      ],
+      "nhan": "Cửa biển"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-toa-do-rut",
+      "id": "thang-long",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 132,
+      "y": 92,
+      "nhan": "Thăng Long đã giải phóng"
+    },
+    {
+      "id": "quan-thoat-hoan",
       "kieu": "quan",
       "ben": "dich",
-      "x": 800,
-      "y": 180,
-      "nhan": "Toa Đô rút chạy về phía bắc"
+      "x": 336,
+      "y": 96,
+      "nhan": "Thoát Hoan",
+      "quy_mo": "Đã bại trận, chạy về Bắc Giang"
     },
     {
-      "id": "quan-ta-truy-kich",
+      "id": "chan-cac-nga-duong",
       "kieu": "quan",
       "ben": "ta",
-      "x": 620,
-      "y": 250,
-      "nhan": "Quân Trần truy kích"
-    },
-    {
-      "id": "mui-truy-kich",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        650,
-        220
-      ],
-      "den": [
-        420,
-        420
-      ],
-      "nhan": "Truy kích đường rút"
-    },
-    {
-      "id": "tay-ket",
-      "kieu": "dia-danh",
-      "x": 350,
-      "y": 420,
-      "nhan": "Tây Kết"
-    },
-    {
-      "id": "quan-ta-chan-danh",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 420,
-      "y": 470,
-      "nhan": "Quân Trần chặn đường"
-    },
-    {
-      "id": "quan-dich-tan-vo",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 280,
-      "y": 500,
-      "nhan": "Toa Đô tử trận"
+      "x": 470,
+      "y": 186,
+      "nhan": "Trần Nhật Duật · Trần Quang Khải",
+      "quy_mo": "Chặn các ngả đường"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 700,
-      "y": 150,
-      "nhan": "Góp phần giải phóng Thăng Long"
+      "x": 232,
+      "y": 248,
+      "nhan": "Toàn thắng"
+    },
+    {
+      "id": "thien-truong",
+      "kieu": "dia-danh",
+      "x": 872,
+      "y": 396,
+      "nhan": "Thiên Trường"
+    },
+    {
+      "id": "quan-toa-do",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 776,
+      "y": 322,
+      "nhan": "Toa Đô",
+      "quy_mo": "8 vạn quân, cách Thoát Hoan hơn 200 dặm"
+    },
+    {
+      "id": "mui-toa-do-tien",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [800, 356],
+      "den": [664, 296],
+      "nhan": "Tiến về sông Thiên Mạc hòng hợp quân"
+    },
+    {
+      "id": "tay-ket",
+      "kieu": "dia-danh",
+      "x": 552,
+      "y": 476,
+      "nhan": "Tây Kết"
+    },
+    {
+      "id": "trai-quan-nguyen",
+      "kieu": "cong-su",
+      "x": 676,
+      "y": 468,
+      "nhan": "Trại quân Nguyên"
+    },
+    {
+      "id": "hung-dao-vuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 386,
+      "y": 524,
+      "nhan": "Hưng Đạo Vương",
+      "quy_mo": "Chia quân đánh trại"
+    },
+    {
+      "id": "phuc-binh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 236,
+      "y": 434,
+      "nhan": "Phục binh đón bắt Toa Đô"
+    },
+    {
+      "id": "mui-danh-trai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [438, 508],
+      "den": [622, 476],
+      "nhan": "Đánh trại"
+    },
+    {
+      "id": "mui-chan-duong-bo",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [292, 452],
+      "den": [512, 462],
+      "nhan": "Chẹn đường bộ ra biển"
+    },
+    {
+      "id": "noi-toa-do-tu-tran",
+      "kieu": "dia-danh",
+      "x": 712,
+      "y": 534,
+      "nhan": "Nơi Toa Đô tử trận"
+    },
+    {
+      "id": "chien-thuyen-thu-duoc",
+      "kieu": "cong-su",
+      "x": 862,
+      "y": 520,
+      "nhan": "Hàng trăm chiến thuyền bị thu"
+    },
+    {
+      "id": "o-ma-nhi-chay",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 176,
+      "y": 560,
+      "nhan": "Ô Mã Nhi chạy vào Thanh Hoá"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Nguyên rút chạy sau đại bại Hàm Tử – Chương Dương",
-      "mo_ta": "Cùng thời điểm chiến thắng Hàm Tử – Chương Dương, cánh quân Toa Đô từ phía nam rút chạy nhằm hội quân với Thoát Hoan.",
+      "tieu_de": "Toa Đô lui về Tây Kết sau đại bại Hàm Tử – Chương Dương",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Thiên Trường · sông Thiên Mạc · Tây Kết",
+      "mo_ta": "Toa Đô đóng quân ở Thiên Trường, cách Thoát Hoan hơn 200 dặm và không biết Thoát Hoan đã thua trận, thoát chạy về Bắc Giang. Ông ta cho quân tiến về sông Thiên Mạc với ý đồ hợp quân với Thoát Hoan. Khi được tin đại quân Thoát Hoan đã bại trận, Toa Đô liền rút quân về đóng ở Tây Kết rồi cho người đi dò tin tức — nhưng lúc ấy các ngả đường liên lạc giữa hai cánh quân giặc đã bị cắt.",
       "hien": [
-        "quan-dich-toa-do-rut"
+        "thien-truong",
+        "quan-toa-do",
+        "mui-toa-do-tien",
+        "quan-thoat-hoan",
+        "tay-ket"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Quân Trần truy kích trên đường rút",
-      "mo_ta": "Các cánh quân Trần phối hợp truy kích ráo riết đường rút lui của Toa Đô.",
+      "tieu_de": "Chặn các ngả, cắt liên lạc giữa hai cánh quân giặc",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Các ngả đường quanh Thăng Long – Thiên Trường",
+      "mo_ta": "Sau chiến thắng Hàm Tử và Chương Dương, Trần Hưng Đạo cho các tướng Trần Nhật Duật, Trần Quang Khải chia quân chặn các ngả đường, không cho Thoát Hoan và Toa Đô thông tin được với nhau. Hai cánh quân địch mỗi cánh một nơi, không hay biết tình hình của nhau, mất hẳn khả năng phối hợp — điều kiện để quân ta đánh dứt điểm từng cánh một thay vì phải đối đầu với cả hai cùng lúc.",
       "hien": [
-        "quan-dich-toa-do-rut",
-        "quan-ta-truy-kich",
-        "mui-truy-kich"
+        "chan-cac-nga-duong",
+        "quan-thoat-hoan",
+        "quan-toa-do",
+        "thang-long"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Chặn đường tại Tây Kết",
-      "mo_ta": "Quân Trần chặn đánh cánh quân Toa Đô tại Tây Kết (Khoái Châu, Hưng Yên).",
+      "tieu_de": "Đem binh đến Tây Kết, chia quân đánh trại và đặt phục binh",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Tây Kết (gần bãi Mạn Trù, Khoái Châu)",
+      "mo_ta": "Hưng Đạo Vương đem binh đến Tây Kết, chia quân đánh trại quân Nguyên và đồng thời đặt phục binh để bắt Toa Đô. Thế trận gồm hai lớp: một lớp đánh thẳng vào doanh trại để dồn địch ra khỏi công sự, một lớp mai phục chờ sẵn trên đường chúng buộc phải chạy. Bãi Mạn Trù và vùng lau sậy ven sông cho quân ta chỗ giấu lực lượng ngay sát trại giặc.",
       "hien": [
         "tay-ket",
-        "quan-ta-chan-danh"
+        "trai-quan-nguyen",
+        "hung-dao-vuong",
+        "phuc-binh",
+        "mui-danh-trai"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Toa Đô tử trận",
-      "mo_ta": "Sau giao chiến ác liệt, quân Nguyên tan vỡ, chủ tướng Toa Đô tử trận.",
+      "tieu_de": "Quân Nguyên vỡ trận, bỏ thuyền chạy lên bờ",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Tây Kết",
+      "mo_ta": "Quân ta càng đánh càng hăng, quân Nguyên địch không nổi. Toa Đô và Ô Mã Nhi đem tàn quân bỏ thuyền chạy lên bờ tìm đường bộ ra biển, nhưng đúng vào lối ấy thì bị phục binh của ta vây đánh. Lối thoát đường thuỷ đã mất, lối thoát đường bộ bị chẹn — cánh quân từng đánh vòng lên từ Chiêm Thành nay bị dồn gọn giữa cánh đồng ven sông Hồng.",
       "hien": [
-        "tay-ket",
-        "quan-ta-chan-danh",
-        "quan-dich-tan-vo"
+        "trai-quan-nguyen",
+        "phuc-binh",
+        "mui-chan-duong-bo",
+        "quan-toa-do",
+        "hung-dao-vuong"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Góp phần giải phóng Thăng Long",
-      "mo_ta": "Chiến thắng Tây Kết cùng Hàm Tử – Chương Dương tạo đà giải phóng hoàn toàn kinh thành, kết thúc thắng lợi kháng chiến chống Nguyên lần II.",
+      "tieu_de": "Toa Đô tử trận, Ô Mã Nhi một mình chạy ra biển",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Tây Kết · Thanh Hoá",
+      "mo_ta": "Toa Đô bị chém rơi đầu ngay tại trận; tương truyền chính tướng quân Nguyễn Khoái đã bắn chết ông ta, song nguồn chép rõ đó là lời truyền chứ không phải ghi chép chắc chắn. Ô Mã Nhi tìm đường chạy vào Thanh Hoá; khi bị quân ta truy đuổi, y vội xuống thuyền, một mình liều chết chạy ra biển trốn về Trung Quốc. Toàn bộ 8 vạn quân của Toa Đô bị tiêu diệt, trong đó hơn 5 vạn bị bắt sống cùng hàng trăm chiến thuyền và nhiều khí giới.",
       "hien": [
-        "co-thang"
+        "noi-toa-do-tu-tran",
+        "o-ma-nhi-chay",
+        "chien-thuyen-thu-duoc",
+        "phuc-binh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Vua Trần cởi áo ngự đắp cho thủ cấp tướng địch",
+      "thoi_gian": "Sau trận Tây Kết, tháng 5 năm 1285",
+      "dia_danh": "Hành tại của vua Trần",
+      "mo_ta": "Thấy thủ cấp Toa Đô, vua Trần Nhân Tông nói người làm tôi phải nên như thế, rồi cởi áo ngự đắp cho, sai người khâm liệm và làm lễ mai táng chu đáo. Sử thần đời sau bình rằng đó thực là câu nói của bậc đế vương, nói rõ đại nghĩa để bề tôi muôn đời biết trung với vua, chết vì phận sự là vinh; làm vậy còn khích lệ được sĩ khí để trừ giặc mạnh.",
+      "hien": [
+        "noi-toa-do-tu-tran",
+        "co-thang",
+        "thang-long"
+      ],
+      "nguon": [
+        "Báo Giáo dục & Thời đại — https://giaoducthoidai.vn/chuyen-vua-tran-nhan-tong-coi-ao-dap-cho-thu-cap-tuong-dich-post694423.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Thoát Hoan mất chỗ dựa, bàn cách chuồn về nước",
+      "thoi_gian": "Tháng 5 – tháng 6 năm 1285",
+      "dia_danh": "Bắc Giang · Vạn Kiếp",
+      "mo_ta": "Tin Toa Đô bị chém, Ô Mã Nhi bỏ chạy ra biển làm cho Thoát Hoan và tướng sĩ Nguyên đều hoảng sợ, bàn cách chuồn về nước. Cùng với Hàm Tử và Chương Dương, chiến thắng Tây Kết khép lại thế gọng kìm mà nhà Nguyên dựng lên từ hai đầu Nam – Bắc, đưa cuộc kháng chiến lần thứ hai sang giai đoạn truy kích đạo quân Thoát Hoan trên đường tháo chạy về biên giới.",
+      "hien": [
+        "quan-thoat-hoan",
+        "co-thang",
+        "chan-cac-nga-duong",
+        "thang-long"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     }
   ],
@@ -147,20 +331,21 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Báo Quân đội nhân dân — Di sản nghệ thuật quân sự của tổ tiên"
+    "Báo Quân đội nhân dân — Di sản nghệ thuật quân sự của tổ tiên",
+    "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
   ],
   "trich_van_tich": [
     {
       "sach": "Đại Việt sử ký toàn thư",
       "doan": "Người làm tôi phải nên như thế này.",
       "nguon_trich": "Báo Giáo dục & Thời đại — https://giaoducthoidai.vn/chuyen-vua-tran-nhan-tong-coi-ao-dap-cho-thu-cap-tuong-dich-post694423.html",
-      "buoc": 4
+      "buoc": 6
     },
     {
       "sach": "Đại Việt sử ký toàn thư",
       "doan": "Thực là câu nói của bậc đế vương. Nói rõ đại nghĩa để người bề tôi muôn đời biết rằng trung với vua, chết vì phận sự là vinh, tuy chết mà bất hủ, mối quan hệ lớn lắm vậy. Huống chi lại cởi áo ngự, sai người liệm chôn nữa. Làm vậy có thể khích lệ sĩ khí để trừ giặc mạnh là phải lắm.",
       "nguon_trich": "Báo Giáo dục & Thời đại — https://giaoducthoidai.vn/chuyen-vua-tran-nhan-tong-coi-ao-dap-cho-thu-cap-tuong-dich-post694423.html",
-      "buoc": 4
+      "buoc": 6
     }
   ]
 }

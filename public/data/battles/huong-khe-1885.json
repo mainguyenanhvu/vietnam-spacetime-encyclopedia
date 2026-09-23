@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Hương Khê 1885–1896 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Hương Khê 1885–1896 — MINH HOẠ theo tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Hai chỗ vênh giữa các nguồn được nêu song song: nơi đặt xưởng chế súng (Bách khoa toàn thư Quân sự chép căn cứ Thượng Bồng – Hạ Bồng, Báo Hà Tĩnh chép Trường Sim) và mốc chia giai đoạn (1889–1895 hay 1888–1896).",
   "id": "huong-khe-1885",
   "ten": "Khởi nghĩa Hương Khê 1885–1896",
   "nam": 1885,
@@ -7,175 +7,438 @@
   "chi_huy": "Phan Đình Phùng, Cao Thắng",
   "doi_thu": "Pháp",
   "dia_diem": "Căn cứ Ngàn Trươi – Vũ Quang, Hương Khê, Hà Tĩnh",
+  "thoi_gian": "1885 – 1896 (Phan Đình Phùng hy sinh ngày 28/12/1895)",
   "lien_quan_tinh": [
     "ha-tinh"
   ],
-  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          80
-        ],
-        [
-          500,
-          40
-        ],
-        [
-          900,
-          90
-        ]
+        [60, 150],
+        [230, 74],
+        [420, 132],
+        [610, 78],
+        [800, 140]
       ],
-      "nhan": "Vùng núi Ngàn Trươi – Vũ Quang"
+      "nhan": "Dãy Trường Sơn — vùng rừng núi Hương Sơn, Hương Khê, Vũ Quang"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [258, 200],
+        [352, 320],
+        [430, 448],
+        [486, 570]
+      ],
+      "nhan": "Sông Ngàn Trươi"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [640, 268],
+        [716, 372],
+        [788, 486],
+        [842, 578]
+      ],
+      "nhan": "Sông Ngàn Sâu"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [166, 232],
+        [352, 200],
+        [478, 274],
+        [372, 402],
+        [200, 372]
+      ],
+      "nhan": "Rừng Vụ Quang"
     },
     {
       "kieu": "duong",
       "diem": [
-        [
-          300,
-          450
-        ],
-        [
-          500,
-          350
-        ],
-        [
-          750,
-          300
-        ]
+        [886, 76],
+        [806, 230],
+        [746, 404],
+        [700, 570]
       ],
-      "nhan": "Các tuyến tập kích đồn Pháp"
+      "nhan": "Trục Thanh Hoá – Nghệ An – Hà Tĩnh – Quảng Bình"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-can-vuong-ha-tinh",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 150,
-      "y": 500,
-      "nhan": "Hưởng ứng chiếu Cần Vương"
-    },
-    {
-      "id": "can-cu-ngan-truoi",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 450,
-      "y": 200,
-      "nhan": "Căn cứ Ngàn Trươi – Vũ Quang"
-    },
-    {
-      "id": "xuong-che-sung",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 350,
-      "y": 260,
-      "nhan": "Xưởng chế tạo súng trường (Cao Thắng)"
-    },
-    {
-      "id": "quan-ta-nghia-quan",
+      "id": "phan-dinh-phung",
       "kieu": "quan",
       "ben": "ta",
-      "x": 620,
-      "y": 380,
-      "nhan": "Nghĩa quân tổ chức chính quy"
+      "x": 142,
+      "y": 300,
+      "nhan": "Phan Đình Phùng — Thống đốc Quân vụ đại thần bốn tỉnh Bắc Trung Kỳ"
     },
     {
-      "id": "don-phap",
+      "id": "dong-thai",
+      "kieu": "dia-danh",
+      "x": 468,
+      "y": 156,
+      "nhan": "Làng Đông Thái — nơi phát động khởi nghĩa, dựng thành làng chiến đấu"
+    },
+    {
+      "id": "le-ninh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 636,
+      "y": 152,
+      "nhan": "Nghĩa quân Lê Ninh ở làng Trung Lễ, huyện Đức Thọ"
+    },
+    {
+      "id": "mong-ga",
+      "kieu": "dia-danh",
+      "x": 296,
+      "y": 130,
+      "nhan": "Núi Mồng Gà (Hương Sơn) — nơi lui quân đầu năm 1886"
+    },
+    {
+      "id": "cao-thang",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 214,
+      "y": 434,
+      "nhan": "Cao Thắng — Tổng chỉ huy quân đội nghĩa quân"
+    },
+    {
+      "id": "con-chua",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 606,
+      "y": 424,
+      "nhan": "Căn cứ Cồn Chùa — cất giấu lương thực, vũ khí"
+    },
+    {
+      "id": "thuong-bong-ha-bong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 782,
+      "y": 322,
+      "nhan": "Căn cứ Thượng Bồng – Hạ Bồng, tả ngạn sông Ngàn Sâu",
+      "quy_mo": "phòng thủ vòng trong và vòng ngoài với gần 10 đồn tiền tiêu"
+    },
+    {
+      "id": "xuong-vu-khi",
+      "kieu": "dia-danh",
+      "x": 872,
+      "y": 452,
+      "nhan": "Xưởng chế tạo vũ khí — thợ rèn Trung Lương, Văn Chàng, Đông Thái; thợ mộc Thái Yên, Xa Lang"
+    },
+    {
+      "id": "sung-1874",
+      "kieu": "dia-danh",
+      "x": 748,
+      "y": 546,
+      "nhan": "Súng trường tự chế theo mẫu 1874 của Pháp",
+      "quy_mo": "350 khẩu súng bộ binh cùng hàng vạn viên đạn đồng"
+    },
+    {
+      "id": "trung-khe-tri-khe",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 396,
+      "y": 262,
+      "nhan": "Căn cứ Trùng Khê – Trí Khê"
+    },
+    {
+      "id": "vu-quang",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 246,
+      "y": 246,
+      "nhan": "Đại bản doanh Vụ Quang – Ngàn Trươi",
+      "quy_mo": "khoảng 500 quân; Phan Đình Phùng có đội cận vệ 20 người"
+    },
+    {
+      "id": "quan-thu-ha-tinh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 540,
+      "y": 314,
+      "nhan": "Hà Tĩnh — 10 quân thứ: Khê, Thạch, Cẩm, Nghi, Kì, Can, Lại, Diệm, Lễ, Hương"
+    },
+    {
+      "id": "quan-thu-nghe-an",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 668,
+      "y": 62,
+      "nhan": "Nghệ An — 2 quân thứ: Anh thứ, Diễn thứ"
+    },
+    {
+      "id": "quan-thu-quang-binh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 866,
+      "y": 224,
+      "nhan": "Quảng Bình — 2 quân thứ: Bình thứ, Lệ thứ"
+    },
+    {
+      "id": "quan-thu-thanh-hoa",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 852,
+      "y": 62,
+      "nhan": "Thanh Hoá — 1 quân thứ: Thanh thứ, do Cầm Bá Thước chỉ huy"
+    },
+    {
+      "id": "he-thong-don-phap",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 800,
-      "y": 280,
-      "nhan": "Đồn Pháp bị tập kích"
+      "x": 92,
+      "y": 152,
+      "nhan": "Hệ thống đồn bốt Pháp bao vây khu căn cứ",
+      "quy_mo": "riêng ở Hương Sơn hơn 20 đồn, mỗi đồn ít nhất 30 lính khố xanh"
     },
     {
-      "id": "mui-tap-kich",
+      "id": "don-nu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 706,
+      "y": 460,
+      "nhan": "Đồn Nu, xã Thanh Xuân, huyện Thanh Chương, Nghệ An"
+    },
+    {
+      "id": "mui-danh-don-nu",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        550,
-        360
-      ],
-      "den": [
-        770,
-        290
-      ],
-      "nhan": "Tập kích, phục kích"
+      "tu": [560, 464],
+      "den": [676, 462],
+      "nhan": "Tháng 10/1893 đánh ra Nghệ An — Cao Thắng trúng đạn ở đồn Nu"
     },
     {
-      "id": "co-hy-sinh",
+      "id": "dap-nuoc",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 348,
+      "y": 470,
+      "nhan": "Đập nước lớn kè trên dòng suối Vụ Quang"
+    },
+    {
+      "id": "khuc-go",
+      "kieu": "dia-danh",
+      "x": 476,
+      "y": 528,
+      "nhan": "Hàng trăm khúc gỗ thả nổi trên dòng suối"
+    },
+    {
+      "id": "mui-quan-phap",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [604, 560],
+      "den": [430, 508],
+      "nhan": "Quân Pháp ngược theo dòng suối truy kích"
+    },
+    {
+      "id": "sa-nang-ung-thuy",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [352, 492],
+      "den": [522, 552],
+      "nhan": "Phá đập — dòng nước cuốn gỗ lao xuống, phục binh hai bên bờ nổ súng"
+    },
+    {
+      "id": "nguyen-than",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 92,
+      "y": 448,
+      "nhan": "Từ tháng 8/1895, Nguyễn Thân đem quân triều đình ra phối hợp đàn áp"
+    },
+    {
+      "id": "nui-quat",
       "kieu": "co",
       "ben": "ta",
-      "x": 500,
-      "y": 450,
-      "nhan": "Cao Thắng, Phan Đình Phùng hy sinh"
+      "x": 108,
+      "y": 552,
+      "nhan": "Núi Quạt — Phan Đình Phùng hy sinh ngày 28/12/1895"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Hưởng ứng chiếu Cần Vương",
-      "mo_ta": "Phan Đình Phùng, nguyên quan Ngự sử, đứng ra lãnh đạo phong trào kháng chiến tại Hà Tĩnh, hưởng ứng chiếu Cần Vương của vua Hàm Nghi.",
+      "tieu_de": "Giai đoạn thứ nhất — phát động khởi nghĩa ở Đông Thái",
+      "thoi_gian": "Tháng 9/1885 – đầu 1886",
+      "dia_danh": "Đông Thái · Trung Lễ · núi Mồng Gà · Phụng Công",
+      "mo_ta": "Tháng 9/1885, biết tin vua Hàm Nghi ra sơn phòng Hương Khê, Phan Đình Phùng xin yết kiến và được phong Thống đốc Quân vụ đại thần, phụ trách phong trào Cần Vương trên bốn tỉnh Thanh Hoá, Nghệ An, Hà Tĩnh, Quảng Bình. Ông trở về làng Đông Thái phát động khởi nghĩa, xây thành làng chiến đấu có chốt canh gác, giao thông hào và công sự, phối hợp đầu tiên với nghĩa quân Lê Ninh ở làng Trung Lễ. Đầu năm 1886, khi quân Pháp đánh vào Đông Thái, ông đưa quân về núi Mồng Gà rồi trở lại Phụng Công, dùng cách đánh du kích và quy tụ được lực lượng của Cao Thắng.",
       "hien": [
-        "co-can-vuong-ha-tinh"
+        "phan-dinh-phung",
+        "dong-thai",
+        "le-ninh",
+        "mong-ga",
+        "cao-thang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Xây dựng căn cứ Ngàn Trươi – Vũ Quang",
-      "mo_ta": "Nghĩa quân xây dựng hệ thống căn cứ liên hoàn tại vùng rừng núi Ngàn Trươi – Vũ Quang (Hương Khê, Hà Tĩnh).",
+      "tieu_de": "Cao Thắng cầm quân, dựng hai căn cứ đầu tiên",
+      "thoi_gian": "1887 – 1888",
+      "dia_danh": "Cồn Chùa · Thượng Bồng – Hạ Bồng",
+      "mo_ta": "Năm 1887, thấy lực lượng còn non yếu, Phan Đình Phùng trao quyền chỉ huy cho Cao Thắng rồi ra Bắc vận động văn thân sĩ phu và liên lạc với các lãnh tụ Cần Vương. Cao Thắng cùng các tướng Cao Nữu, Cao Đạt, Nguyễn Niên vừa chống càn vừa củng cố lực lượng. Năm 1888 nghĩa quân dựng được hai khu căn cứ đầu tiên: Cồn Chùa chủ yếu để cất giấu lương thực, vũ khí và tạm tránh khủng bố; Thượng Bồng – Hạ Bồng ở tả ngạn sông Ngàn Sâu được xây khá hoàn chỉnh, gồm hệ thống phòng thủ vòng trong và vòng ngoài với gần 10 đồn tiền tiêu.",
       "hien": [
-        "co-can-vuong-ha-tinh",
-        "can-cu-ngan-truoi"
+        "cao-thang",
+        "con-chua",
+        "thuong-bong-ha-bong"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Cao Thắng chế tạo súng trường kiểu Pháp",
-      "mo_ta": "Cao Thắng nghiên cứu, chế tạo thành công súng trường mô phỏng kiểu Pháp, trang bị cho nghĩa quân — thành tựu kỹ thuật quân sự hiếm có của phong trào Cần Vương.",
+      "tieu_de": "Chế súng trường theo mẫu 1874 của Pháp",
+      "dia_danh": "Trung Lương · Văn Chàng · Đông Thái · Thái Yên · Xa Lang",
+      "mo_ta": "Cao Thắng cho nghĩa quân tháo tung toàn bộ các bộ phận của một khẩu súng chiến lợi phẩm ra xem rồi chế lại theo đúng mẫu súng trường kiểu 1874 của Pháp. Nghĩa quân huy động hàng trăm thợ rèn ở Trung Lương, Văn Chàng, Đông Thái cùng thợ mộc Thái Yên, Xa Lang, thợ đúc đồng và thợ bạc Can Lộc, Thạch Hà lập xưởng chế tạo vũ khí. Về nơi đặt xưởng, hai nguồn chép khác nhau: Bách khoa toàn thư Quân sự Việt Nam ghi là căn cứ Thượng Bồng – Hạ Bồng, Báo Hà Tĩnh ghi là Trường Sim. Kết quả là 350 khẩu súng bộ binh cùng hàng vạn viên đạn đồng.",
       "hien": [
-        "can-cu-ngan-truoi",
-        "xuong-che-sung"
+        "cao-thang",
+        "xuong-vu-khi",
+        "sung-1874",
+        "thuong-bong-ha-bong"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna",
+        "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/1002/13780/sung-truong-do-cao-thang-che-tao-trong-cuoc-khoi-nghia-huong-khe-1885-1896.html",
+        "Báo Hà Tĩnh — https://baohatinh.vn/cao-thang-1864-1893-post47589.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tổ chức quân đội chính quy, đánh nhiều trận lớn",
-      "mo_ta": "Nghĩa quân được tổ chức thành nhiều thứ quân theo lối chính quy, liên tục tập kích, phục kích gây tổn thất cho quân Pháp.",
+      "tieu_de": "Đầu 1889 — Phan Đình Phùng trở về, lập căn cứ Vụ Quang",
+      "thoi_gian": "Đầu năm 1889",
+      "dia_danh": "Trùng Khê – Trí Khê · Vụ Quang – Ngàn Trươi",
+      "mo_ta": "Đầu năm 1889, Cao Thắng cử người ra Bắc đón Phan Đình Phùng về căn cứ tiếp tục lãnh đạo; lúc này nghĩa quân đã có khoảng 1 nghìn quân và hơn 500 súng. Ông ra lời kêu gọi các tầng lớp nhân dân hợp lực chống Pháp, đồng thời tận dụng địa hình rừng núi hiểm trở vùng tiếp giáp Hương Khê và Hương Sơn để xây thêm hai căn cứ mới là Trùng Khê – Trí Khê và Vụ Quang – Ngàn Trươi, với hệ thống đồn luỹ kiên cố vừa phòng thủ được vừa có thể tiến công.",
       "hien": [
-        "can-cu-ngan-truoi",
-        "quan-ta-nghia-quan",
-        "don-phap",
-        "mui-tap-kich"
+        "phan-dinh-phung",
+        "trung-khe-tri-khe",
+        "vu-quang",
+        "cao-thang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna",
+        "Báo Hà Tĩnh — https://baohatinh.vn/am-vang-ngan-truoi-post61811.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Cầm cự suốt 10 năm",
-      "mo_ta": "Cuộc khởi nghĩa kéo dài từ 1885 đến 1896, trở thành cuộc khởi nghĩa quy mô và bền bỉ nhất phong trào Cần Vương.",
+      "tieu_de": "Tổ chức 15 quân thứ trên bốn tỉnh",
+      "dia_danh": "Hà Tĩnh · Nghệ An · Quảng Bình · Thanh Hoá",
+      "mo_ta": "Để đánh lâu dài trên địa bàn rộng, Phan Đình Phùng tổ chức lực lượng thành 15 quân thứ gọi theo tên địa phương, quân số mỗi quân thứ từ 100 đến 500 người. Hà Tĩnh có 10 quân thứ: Khê, Thạch, Cẩm, Nghi, Kì, Can, Lại, Diệm, Lễ, Hương. Nghệ An có Anh thứ và Diễn thứ; Quảng Bình có Bình thứ và Lệ thứ; Thanh Hoá có Thanh thứ do Cầm Bá Thước chỉ huy. Đây là hình thức tổ chức vừa chiến đấu vừa hành chính, xây dựng theo hệ thống từ tỉnh, phủ đến huyện, tổng, do Phan Đình Phùng lãnh đạo chung và Cao Thắng nắm quyền tổng chỉ huy quân đội. Đại bản doanh tại Vụ Quang có khoảng 500 quân.",
       "hien": [
-        "quan-ta-nghia-quan",
-        "don-phap"
+        "quan-thu-ha-tinh",
+        "quan-thu-nghe-an",
+        "quan-thu-quang-binh",
+        "quan-thu-thanh-hoa",
+        "vu-quang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Phan Đình Phùng, Cao Thắng lần lượt hy sinh",
-      "mo_ta": "Cao Thắng hy sinh năm 1893, Phan Đình Phùng mất năm 1895; nghĩa quân tan rã không lâu sau đó nhưng để lại tấm gương bất khuất.",
+      "tieu_de": "Pháp bủa đồn bốt bao vây; trận đồn Nu, Cao Thắng hy sinh",
+      "thoi_gian": "Tháng 11/1889 – 21/11/1893",
+      "dia_danh": "Hương Sơn — Thanh Chương — Nam Đàn",
+      "mo_ta": "Tháng 11/1889, Pháp giao việc đàn áp cho lính khố xanh Trung Kỳ và thiết lập hệ thống đồn bốt bao vây khu căn cứ — riêng ở Hương Sơn xây hơn 20 đồn, mỗi đồn ít nhất 30 lính đóng giữ — nhằm triệt đường tiếp tế. Nghĩa quân dựa vào rừng núi và công sự, phân tán lực lượng, dùng cả hầm chông cạm bẫy để phục kích, chặn đánh giao thông, tập kích đồn lẻ. Tháng 10/1893, Cao Thắng cùng Cao Nữu và Nguyễn Niên chỉ huy khoảng 1 nghìn nghĩa quân đánh ra Nghệ An; trong trận đánh đồn Nu ngày 21/11/1893 ông trúng đạn và hy sinh khi quay về căn cứ, lúc mới 29 tuổi.",
       "hien": [
-        "co-hy-sinh"
+        "he-thong-don-phap",
+        "mui-danh-don-nu",
+        "don-nu",
+        "cao-thang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna",
+        "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/chuyen-xua-nay/cao-thang-nguoi-thu-linh-nong-dan-502292",
+        "Báo Hà Tĩnh — https://baohatinh.vn/cao-thang-1864-1893-post47589.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Trận Vụ Quang — kế «sa nang úng thuỷ»",
+      "thoi_gian": "Ngày 26/10/1894",
+      "dia_danh": "Suối Vụ Quang",
+      "mo_ta": "Tháng 10/1894, sau trận chống càn kéo dài nửa tháng ở núi Đại Hàm, nghĩa quân rút lên chốt giữ vùng núi gần suối Vụ Quang. Tại đây Phan Đình Phùng dùng kế «sa nang úng thuỷ»: cho chặt nhiều khúc gỗ thả nổi trên dòng suối đã được kè thành đập nước lớn. Ngày 26/10/1894, khi lực lượng lớn quân Pháp ngược theo dòng suối lọt vào vị trí đã chuẩn bị trước, nghĩa quân phá đập tạo thành dòng nước mạnh cuốn theo hàng trăm khúc gỗ lao xuống, kết hợp với lực lượng phục kích hai bên bờ đồng loạt nổ súng, diệt hơn 100 địch và thu 50 súng.",
+      "hien": [
+        "mui-quan-phap",
+        "dap-nuoc",
+        "khuc-go",
+        "sa-nang-ung-thuy",
+        "vu-quang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna",
+        "Báo Hà Tĩnh — https://baohatinh.vn/am-vang-ngan-truoi-post61811.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Vòng vây khép lại, Phan Đình Phùng hy sinh ở núi Quạt",
+      "thoi_gian": "Tháng 8/1895 – 28/12/1895",
+      "dia_danh": "Vụ Quang — núi Quạt",
+      "mo_ta": "Đầu năm 1895 Phan Đình Phùng dự định đem quân đánh vào sông Gianh và phát triển lực lượng về phía nam nhưng không đủ sức. Từ tháng 8/1895, triều đình Huế cử Nguyễn Thân đem quân ra phối hợp đàn áp; quân Pháp cùng quân triều đình khoá chặt mọi đường giao thông và nguồn tiếp tế, liên tục càn quét dài ngày vào căn cứ. Phan Đình Phùng hy sinh ngày 28/12/1895 tại khu vực núi Quạt; cuộc khởi nghĩa chỉ tồn tại thêm vài tháng rồi bị dập tắt, khép lại mười năm lãnh đạo chống Pháp của tầng lớp sĩ phu phong kiến.",
+      "hien": [
+        "nguyen-than",
+        "nui-quat",
+        "phan-dinh-phung",
+        "vu-quang"
+      ],
+      "nguon": [
+        "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": "đầu năm 1889 khoảng 1 nghìn quân và hơn 500 súng; đại bản doanh Vụ Quang khoảng 500 quân; mỗi quân thứ từ 100 đến 500 người",
+      "don_vi": [
+        "Hà Tĩnh: Khê thứ, Thạch thứ, Cẩm thứ, Nghi thứ, Kì thứ, Can thứ, Lại thứ, Diệm thứ, Lễ thứ, Hương thứ",
+        "Nghệ An: Anh thứ, Diễn thứ",
+        "Quảng Bình: Bình thứ, Lệ thứ",
+        "Thanh Hoá: Thanh thứ do Cầm Bá Thước chỉ huy"
+      ],
+      "vu_khi": [
+        "350 khẩu súng trường tự chế theo mẫu 1874 của Pháp cùng hàng vạn viên đạn đồng",
+        "Hầm chông, cạm bẫy"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Lính khố xanh Trung Kỳ được giao việc đàn áp từ tháng 11/1889",
+        "Riêng ở Hương Sơn hơn 20 đồn, mỗi đồn ít nhất 30 lính khố xanh",
+        "Từ tháng 8/1895 có thêm quân triều đình do Nguyễn Thân chỉ huy"
+      ]
+    },
+    "nguon": [
+      "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna",
+      "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/1002/13780/sung-truong-do-cao-thang-che-tao-trong-cuoc-khoi-nghia-huong-khe-1885-1896.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Trận Vụ Quang ngày 26/10/1894 diệt hơn 100 địch, thu 50 súng",
+    "nguon": [
+      "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna"
+    ]
+  },
   "ket_qua": "Cuộc khởi nghĩa quy mô và bền bỉ nhất phong trào Cần Vương, cầm cự suốt 10 năm với vũ khí tự chế.",
   "y_nghia": "Đỉnh cao về tổ chức quân sự và kỹ thuật chế tạo vũ khí của phong trào Cần Vương, để lại tấm gương kiên trung của Phan Đình Phùng, Cao Thắng.",
   "trang_thai": "draft",
   "nguon": [
     "Lịch sử Việt Nam (Viện Sử học) — khởi nghĩa Hương Khê",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "Sở VHTTDL Hà Tĩnh — di tích Vũ Quang – Hương Khê"
+    "Sở VHTTDL Hà Tĩnh — di tích Vũ Quang – Hương Khê",
+    "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna",
+    "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/1002/13780/sung-truong-do-cao-thang-che-tao-trong-cuoc-khoi-nghia-huong-khe-1885-1896.html",
+    "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/chuyen-xua-nay/cao-thang-nguoi-thu-linh-nong-dan-502292",
+    "Báo Hà Tĩnh — https://baohatinh.vn/cao-thang-1864-1893-post47589.html",
+    "Báo Hà Tĩnh — https://baohatinh.vn/am-vang-ngan-truoi-post61811.html"
   ],
   "trich_van_tich": [
     {
@@ -183,6 +446,18 @@
       "doan": "Tôi đã đem nhiều khẩu súng đó về tận bên nước tây; xem nó giống đủ mọi vế như khẩu súng của các công binh xưởng nước ta chế tạo, đến nỗi tôi đưa cho các quan binh pháo thủ ta xem, các ông ấy phải sửng sốt lạ lùng",
       "nguon_trich": "Bảo tàng Lịch sử Quốc gia — http://baotanglichsu.vn/vi/Articles/1002/13780/sung-truong-do-cao-thang-che-tao-trong-cuoc-khoi-nghia-huong-khe-1885-1896.html",
       "buoc": 3
+    },
+    {
+      "sach": "Bách khoa toàn thư Quân sự Việt Nam, quyển 1: Lịch sử Quân sự (NXB Quân đội nhân dân, 2015) — mục Khởi nghĩa Hương Khê",
+      "doan": "ngày 26.10.1894, khi lực lượng lớn quân Pháp ngược theo dòng suối lọt vào vị trí đã chuẩn bị trước, nghĩa quân phá đập tạo thành dòng nước mạnh cuốn theo hàng trăm khúc gỗ lao xuống, kết hợp với lực lượng phục kích ở hai bên bờ đồng loạt nổ súng diệt hơn 100 địch, thu 50 súng",
+      "nguon_trich": "Ngân hàng dữ liệu Thông tấn xã Việt Nam — https://nvsk.vnanet.vn/khoi-nghia-huong-khe-khoi-nghia-phan-dinh-phung-khoi-nghia-huong-son-1885-95-1-34968.vna",
+      "buoc": 7
+    },
+    {
+      "sach": "Tạp chí Sự kiện và Nhân chứng — bài «Cao Thắng - người thủ lĩnh nông dân»",
+      "doan": "trút hơi thở cuối cùng vào ngày 14-10 năm Quý Tỵ (tức ngày 21-11-1893), khi vừa mới 29 tuổi.",
+      "nguon_trich": "Tạp chí Sự kiện và Nhân chứng — http://sknc.qdnd.vn/chuyen-xua-nay/cao-thang-nguoi-thu-linh-nong-dan-502292",
+      "buoc": 6
     }
   ]
 }

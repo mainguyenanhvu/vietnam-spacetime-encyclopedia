@@ -1,12 +1,13 @@
 {
-  "ghi_chu": "Sa đồ Ngọc Hồi – Đống Đa 1789 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Con số '29 vạn quân Thanh' theo cách chép truyền thống (Hoàng Lê nhất thống chí), mang tính ước lệ — cần tra thêm nếu muốn đối chiếu số liệu hiện đại. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Ngọc Hồi – Đống Đa 1789 — MINH HOẠ theo diễn biến chính sử và tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Con số 29 vạn quân Thanh là con số Báo điện tử Chính phủ và Báo Nhân Dân cùng chép.",
   "id": "ngoc-hoi-dong-da-1789",
   "ten": "Ngọc Hồi – Đống Đa 1789",
   "nam": 1789,
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Hoàng đế Quang Trung – Nguyễn Huệ",
   "doi_thu": "Nhà Thanh (Tôn Sĩ Nghị)",
-  "dia_diem": "Ngọc Hồi – gò Đống Đa (Hà Nội)",
+  "dia_diem": "Ngọc Hồi – Khương Thượng, gò Đống Đa (Hà Nội)",
+  "thoi_gian": "Đêm 30 Tết đến trưa mùng 5 Tết Kỷ Dậu (25 – 30/1/1789)",
   "lien_quan_tinh": [
     "ha-noi"
   ],
@@ -15,216 +16,383 @@
     {
       "kieu": "duong",
       "diem": [
-        [
-          80,
-          550
-        ],
-        [
-          300,
-          420
-        ],
-        [
-          500,
-          300
-        ]
+        [60, 566],
+        [200, 508],
+        [330, 438],
+        [470, 356]
       ],
-      "nhan": "Đường hành quân thần tốc từ Phú Xuân"
+      "nhan": "Đường hành quân thần tốc từ Phú Xuân ra Bắc"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [40, 540],
+        [150, 476],
+        [268, 512]
+      ],
+      "nhan": "Dãy Tam Điệp — nơi hội quân"
     },
     {
       "kieu": "song",
       "diem": [
-        [
-          500,
-          60
-        ],
-        [
-          750,
-          90
-        ],
-        [
-          1000,
-          140
-        ]
+        [470, 56],
+        [700, 84],
+        [1000, 140]
       ],
       "nhan": "Sông Nhị Hà"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [400, 356],
+        [500, 306],
+        [598, 266],
+        [660, 214]
+      ],
+      "nhan": "Đường thiên lý phía nam Thăng Long — trục đồn luỹ quân Thanh"
     }
   ],
   "phan_tu": [
     {
-      "id": "xuat-phat-phu-xuan",
+      "id": "phu-xuan",
       "kieu": "dia-danh",
-      "x": 100,
-      "y": 560,
-      "nhan": "Xuất phát từ Phú Xuân"
+      "x": 76,
+      "y": 572,
+      "nhan": "Phú Xuân — nơi lên ngôi và xuất quân",
+      "quy_mo": "25 tháng 11 năm Mậu Thân, tức 22/12/1788"
     },
     {
-      "id": "quan-ta-hanh-quan",
+      "id": "tam-diep",
+      "kieu": "dia-danh",
+      "x": 196,
+      "y": 490,
+      "nhan": "Tam Điệp — hội quân",
+      "quy_mo": "10 vạn quân · vài trăm voi chiến"
+    },
+    {
+      "id": "dai-quan-tay-son",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 460,
-      "nhan": "Đại quân Quang Trung hành quân thần tốc"
+      "x": 306,
+      "y": 414,
+      "nhan": "Đạo chủ lực do Quang Trung trực tiếp chỉ huy"
+    },
+    {
+      "id": "don-tien-tieu",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 396,
+      "y": 350,
+      "nhan": "Đồn tiền tiêu Gián Khẩu, Thanh Quyết, Nhật Tảo"
+    },
+    {
+      "id": "don-ha-hoi",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 492,
+      "y": 300,
+      "nhan": "Đồn Hà Hồi",
+      "quy_mo": "cách Thăng Long khoảng 20 km"
     },
     {
       "id": "don-ngoc-hoi",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 560,
-      "y": 280,
-      "nhan": "Đồn Ngọc Hồi"
+      "x": 592,
+      "y": 258,
+      "nhan": "Đồn Ngọc Hồi — Hứa Thế Hanh",
+      "quy_mo": "khoảng 3 vạn quân Thanh"
+    },
+    {
+      "id": "dai-ang",
+      "kieu": "dia-danh",
+      "x": 458,
+      "y": 196,
+      "nhan": "Đại Áng (Thường Tín) — hướng Đô đốc Bảo"
     },
     {
       "id": "don-dong-da",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 420,
-      "y": 230,
-      "nhan": "Đồn Khương Thượng – Đống Đa"
+      "x": 370,
+      "y": 158,
+      "nhan": "Đồn Khương Thượng – Đống Đa — Sầm Nghi Đống"
+    },
+    {
+      "id": "thanh-thang-long",
+      "kieu": "thanh",
+      "x": 552,
+      "y": 116,
+      "nhan": "Kinh thành Thăng Long"
+    },
+    {
+      "id": "cung-tay-long",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 664,
+      "y": 186,
+      "nhan": "Cung Tây Long — đại bản doanh Tôn Sĩ Nghị"
     },
     {
       "id": "mui-cong-ngoc-hoi",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        350,
-        410
-      ],
-      "den": [
-        545,
-        290
-      ],
-      "nhan": "Công phá đồn Ngọc Hồi"
+      "tu": [400, 388],
+      "den": [570, 274],
+      "nhan": "Tượng binh và mộc chắn tẩm rơm ướt đánh mặt nam Ngọc Hồi"
     },
     {
-      "id": "mui-cong-dong-da",
+      "id": "mui-do-doc-bao",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        300,
-        400
-      ],
-      "den": [
-        420,
-        250
-      ],
-      "nhan": "Đánh úp đồn Đống Đa"
+      "tu": [352, 302],
+      "den": [446, 214],
+      "nhan": "Đô đốc Bảo tiến ra Đại Áng yểm trợ"
     },
     {
-      "id": "tuong-dich-chay",
+      "id": "mui-do-doc-long",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [282, 322],
+      "den": [358, 180],
+      "nhan": "Đô đốc Long đánh úp đồn Đống Đa"
+    },
+    {
+      "id": "mui-thoc-tay-long",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [396, 146],
+      "den": [640, 176],
+      "nhan": "Thọc sâu vào cung Tây Long"
+    },
+    {
+      "id": "do-doc-tuyet",
       "kieu": "quan",
-      "ben": "dich",
-      "x": 851,
-      "y": 185,
-      "nhan": "Tôn Sĩ Nghị tháo chạy"
+      "ben": "ta",
+      "x": 884,
+      "y": 306,
+      "nhan": "Đô đốc Tuyết vượt biển đánh vào Hải Dương"
+    },
+    {
+      "id": "do-doc-loc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 856,
+      "y": 84,
+      "nhan": "Đô đốc Lộc — mũi bao vây chặn đường rút lui"
+    },
+    {
+      "id": "cau-phao",
+      "kieu": "dia-danh",
+      "x": 748,
+      "y": 108,
+      "nhan": "Cầu phao sông Nhị Hà"
     },
     {
       "id": "mui-dich-chay",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        720,
-        150
-      ],
-      "den": [
-        900,
-        90
-      ],
-      "nhan": "Chạy qua sông Nhị Hà, cầu phao đứt"
-    },
-    {
-      "id": "thanh-thang-long",
-      "kieu": "thanh",
-      "x": 560,
-      "y": 160,
-      "nhan": "Thăng Long"
+      "tu": [692, 154],
+      "den": [900, 66],
+      "nhan": "Tôn Sĩ Nghị vượt cầu phao chạy về phương Bắc"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 630,
-      "y": 200,
-      "nhan": "Giải phóng Thăng Long"
+      "x": 724,
+      "y": 264,
+      "nhan": "Trưa mùng 5 Tết — đại quân vào Kinh thành"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quang Trung lên ngôi, hành quân thần tốc ra Bắc",
-      "mo_ta": "Cuối 1788, trước việc quân Thanh chiếm Thăng Long theo lời cầu viện của Lê Chiêu Thống, Nguyễn Huệ lên ngôi hoàng đế lấy hiệu Quang Trung, lập tức đưa đại quân hành quân thần tốc từ Phú Xuân ra Bắc.",
+      "tieu_de": "Quân Thanh kéo vào, Nguyễn Huệ lên ngôi hoàng đế",
+      "thoi_gian": "22/11/1788 — 22/12/1788",
+      "dia_danh": "Thăng Long · Phú Xuân",
+      "mo_ta": "Cuối năm 1788, Tổng đốc Lưỡng Quảng là Tôn Sĩ Nghị theo lệnh vua Càn Long đem 29 vạn quân từ các hướng Lưỡng Quảng, Vân Nam và Quý Châu kéo vào xâm lược nước ta, chia làm bốn đạo và chiếm Thăng Long. Ngày 25 tháng 11 năm Mậu Thân, tức ngày 22/12/1788, Nguyễn Huệ lên ngôi Hoàng đế ở Phú Xuân, lấy niên hiệu Quang Trung, rồi lập tức xuất quân ra Bắc.",
       "hien": [
-        "xuat-phat-phu-xuan",
-        "quan-ta-hanh-quan"
+        "phu-xuan",
+        "thanh-thang-long",
+        "cung-tay-long"
+      ],
+      "nguon": [
+        "Báo điện tử Chính phủ — https://baochinhphu.vn/dai-pha-quan-thanh-giai-phong-thang-long-10230972.htm",
+        "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-ngoc-hoi-dong-da-nam-1789-post195246.gd"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Bí mật áp sát, nghi binh đêm Giao thừa",
-      "mo_ta": "Quân Tây Sơn hành quân cấp tốc, giữ bí mật để quân Thanh không kịp đề phòng, chuẩn bị tổng công kích ngay dịp Tết.",
+      "tieu_de": "Hành quân thần tốc, hội quân ở Tam Điệp",
+      "thoi_gian": "Ngày 15/1/1789",
+      "dia_danh": "Phú Xuân — Nghệ An — Thanh Hoá — Tam Điệp",
+      "mo_ta": "Ngày 15/1/1789, Hoàng đế Quang Trung cùng đại quân, sau khi đã tăng quân số lên đến 10 vạn người, và một đội tượng binh lớn gồm vài trăm voi chiến đã ra đến Tam Điệp. Tốc độ hành quân trên chặng đường từ Phú Xuân qua Nghệ An, Thanh Hoá ra tới phòng tuyến Tam Điệp là điều quân Thanh không lường được, nên đến sát ngày Tết chúng vẫn tin rằng chưa có mối nguy nào ở phía nam.",
       "hien": [
-        "quan-ta-hanh-quan",
-        "don-ngoc-hoi",
-        "don-dong-da"
+        "phu-xuan",
+        "tam-diep",
+        "dai-quan-tay-son"
+      ],
+      "nguon": [
+        "Báo điện tử Chính phủ — https://baochinhphu.vn/chien-thang-hien-hach-trong-lich-su-chong-ngoai-xam-102138325.htm"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Công phá đồn Ngọc Hồi",
-      "mo_ta": "Mùng 5 Tết Kỷ Dậu, quân Tây Sơn dùng ván gỗ ghép thành mộc bài tẩm rơm ướt chắn đạn, kết hợp tượng binh xông thẳng vào đồn Ngọc Hồi kiên cố nhất của quân Thanh.",
+      "tieu_de": "Chia quân làm năm đạo, mỗi đạo một nhiệm vụ",
+      "dia_danh": "Tam Điệp — Đại Áng — Hải Dương",
+      "mo_ta": "Quang Trung chia quân làm năm đạo. Đạo chủ lực do chính ông chỉ huy, đánh thẳng vào hệ thống phòng ngự chủ yếu của địch ở phía nam Thăng Long, có Đại tư mã Ngô Văn Sở và Nội hầu Phan Văn Lân chỉ huy tiên phong. Đạo thứ hai do Đô đốc Bảo tiến ra Đại Áng, Thường Tín để yểm trợ và phối hợp với đạo chủ lực. Đạo thứ ba do Đô đốc Long tiêu diệt đồn Đống Đa rồi thọc sâu vào cung Tây Long, nơi địch không ngờ tới. Đạo thứ tư do Đô đốc Tuyết vượt biển đánh vào Hải Dương. Đạo thứ năm do Đô đốc Lộc là mũi bao vây chiến lược chặn đường rút lui của quân Thanh.",
       "hien": [
-        "don-ngoc-hoi",
-        "mui-cong-ngoc-hoi"
+        "dai-quan-tay-son",
+        "dai-ang",
+        "do-doc-tuyet",
+        "do-doc-loc",
+        "don-dong-da"
+      ],
+      "nguon": [
+        "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-ngoc-hoi-dong-da-nam-1789-post195246.gd",
+        "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đánh úp đồn Đống Đa",
-      "mo_ta": "Cùng lúc, một cánh quân Tây Sơn đánh úp đồn Khương Thượng – gò Đống Đa; tướng Sầm Nghi Đống thế cùng phải thắt cổ tự vẫn.",
+      "tieu_de": "Hạ các đồn tiền tiêu, vây đồn Hà Hồi đêm mùng 3 Tết",
+      "thoi_gian": "Đêm 30 Tết — nửa đêm mùng 3 Tết Kỷ Dậu (28/1/1789)",
+      "dia_danh": "Gián Khẩu · Thanh Quyết · Nhật Tảo · Hà Hồi",
+      "mo_ta": "Các đồn tiền tiêu của địch như Gián Khẩu, Thanh Quyết, Nhật Tảo lần lượt bị hạ ngay từ đêm 30 Tết, không để một toán quân nào chạy thoát về báo tin. Nửa đêm mùng 3 Tết Kỷ Dậu, tức ngày 28/1/1789, quân Tây Sơn bí mật bao vây đồn Hà Hồi, cách Thăng Long khoảng 20 km, uy hiếp địch và bắt sống hàng vạn quân Thanh mà không phải giao chiến lớn.",
       "hien": [
-        "don-dong-da",
-        "mui-cong-dong-da"
+        "don-tien-tieu",
+        "don-ha-hoi",
+        "dai-quan-tay-son"
+      ],
+      "nguon": [
+        "Báo điện tử Chính phủ — https://baochinhphu.vn/chien-thang-hien-hach-trong-lich-su-chong-ngoai-xam-102138325.htm"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Tôn Sĩ Nghị tháo chạy hỗn loạn",
-      "mo_ta": "Chủ tướng Tôn Sĩ Nghị hoảng loạn bỏ chạy không kịp mặc giáp; cầu phao qua sông Nhị Hà bị đứt khiến rất nhiều quân Thanh chết đuối.",
+      "tieu_de": "Rạng sáng mùng 5 Tết — công phá đồn Ngọc Hồi",
+      "thoi_gian": "Sáng mùng 5 Tết Kỷ Dậu (30/1/1789), lúc trời còn tối",
+      "dia_danh": "Đồn Ngọc Hồi",
+      "mo_ta": "Sáng mùng 5 Tết Kỷ Dậu, lúc trời còn tối, quân Tây Sơn bất ngờ tấn công mãnh liệt vào mặt nam đồn Ngọc Hồi — cứ điểm kiên cố nhất, do Hứa Thế Hanh giữ với khoảng 3 vạn quân. Quang Trung tung đội tượng binh gồm hơn 100 voi chiến ra trận, kết hợp voi chiến và hoả hổ với những tấm mộc quấn các bện rơm tẩm ướt che chở cho các đội dũng sĩ xung kích khi tiếp cận. Cánh quân chủ lực cộng với cánh quân của Đô đốc Bảo có quân số khoảng từ 6 đến 7 vạn.",
       "hien": [
-        "tuong-dich-chay",
-        "mui-dich-chay"
+        "don-ngoc-hoi",
+        "mui-cong-ngoc-hoi",
+        "mui-do-doc-bao",
+        "dai-ang"
+      ],
+      "nguon": [
+        "Báo điện tử Chính phủ — https://baochinhphu.vn/chien-thang-hien-hach-trong-lich-su-chong-ngoai-xam-102138325.htm",
+        "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Giải phóng Thăng Long",
-      "mo_ta": "Chỉ trong 5 ngày Tết, quân Tây Sơn đại phá toàn bộ quân Thanh, giải phóng kinh thành, kết thúc thắng lợi cuộc kháng chiến.",
+      "tieu_de": "Đô đốc Long đánh úp Đống Đa, Sầm Nghi Đống tự tử",
+      "thoi_gian": "Cùng ngày mùng 5 Tết",
+      "dia_danh": "Khương Thượng — gò Đống Đa",
+      "mo_ta": "Cùng lúc với trận Ngọc Hồi, đạo quân của Đô đốc Long bất ngờ tiêu diệt đồn Đống Đa rồi thọc sâu vào cung Tây Long, nơi địch không ngờ tới. Trước thế cùng, lực kiệt, tướng Thanh giữ đồn là Sầm Nghi Đống đã phải thắt cổ tự tử ngay tại sở chỉ huy. Hai mũi đánh cùng một lúc ở hai đầu nam và tây nam kinh thành khiến hệ thống phòng ngự của quân Thanh vỡ đồng thời, không kịp điều quân ứng cứu cho nhau.",
+      "hien": [
+        "don-dong-da",
+        "mui-do-doc-long",
+        "mui-thoc-tay-long",
+        "cung-tay-long"
+      ],
+      "nguon": [
+        "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-ngoc-hoi-dong-da-nam-1789-post195246.gd",
+        "Báo điện tử Chính phủ — https://baochinhphu.vn/chien-thang-hien-hach-trong-lich-su-chong-ngoai-xam-102138325.htm"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Tôn Sĩ Nghị bỏ chạy, cầu phao sông Nhị Hà vỡ",
+      "dia_danh": "Cung Tây Long — bến sông Nhị Hà",
+      "mo_ta": "Đang ở cung Tây Long, Tôn Sĩ Nghị vô cùng hoảng hốt, ngựa không kịp đóng yên, vội vàng qua cầu phao nhằm hướng Bắc chạy trốn. Đám tàn quân xô nhau tràn lên cây cầu phao bắc qua sông Nhị Hà; cầu không chịu nổi, quân Thanh chết đuối rất nhiều. Đạo quân của Đô đốc Lộc chặn sẵn đường rút khiến số chạy thoát về được bên kia biên giới còn lại rất ít.",
+      "hien": [
+        "cung-tay-long",
+        "cau-phao",
+        "mui-dich-chay",
+        "do-doc-loc"
+      ],
+      "nguon": [
+        "Báo điện tử Chính phủ — https://baochinhphu.vn/chien-thang-hien-hach-trong-lich-su-chong-ngoai-xam-102138325.htm",
+        "Báo Hànộimới — https://hanoimoi.vn/234-nam-chien-thang-ngoc-hoi-dong-da-am-vang-truyen-thong-hao-hung-7200.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Trưa mùng 5 Tết — Quang Trung dẫn đại quân vào Kinh thành",
+      "thoi_gian": "Trưa mùng 5 Tết Kỷ Dậu (30/1/1789)",
+      "dia_danh": "Kinh thành Thăng Long",
+      "mo_ta": "Trưa mùng 5 Tết, Quang Trung dẫn đầu đại quân vào Kinh thành. Toàn bộ đạo quân Thanh sang xâm lược nước ta đã bị tiêu diệt gọn trong những trận đánh thực sự chỉ diễn ra trong vòng hơn hai ngày: mồng ba, mồng bốn và sáng mồng năm Tết Kỷ Dậu. Cuộc hành quân bắt đầu từ Phú Xuân ngày 22/12/1788 kết thúc bằng việc giải phóng kinh thành đúng dịp Tết, sớm hơn cả lời hẹn khao quân mà Quang Trung đã nói với tướng sĩ.",
       "hien": [
         "thanh-thang-long",
-        "co-thang"
+        "co-thang",
+        "dai-quan-tay-son"
+      ],
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/234-nam-chien-thang-ngoc-hoi-dong-da-am-vang-truyen-thong-hao-hung-7200.html",
+        "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html"
       ]
     }
   ],
-  "ket_qua": "Đại phá 29 vạn quân Thanh trong 5 ngày Tết Kỷ Dậu, giải phóng Thăng Long, Tôn Sĩ Nghị và Lê Chiêu Thống bỏ chạy sang Trung Quốc.",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "khoảng 10 vạn quân",
+      "don_vi": [
+        "Đạo chủ lực do Quang Trung chỉ huy — Ngô Văn Sở, Phan Văn Lân tiên phong",
+        "Đạo Đô đốc Bảo — Đại Áng, Thường Tín",
+        "Đạo Đô đốc Long — Đống Đa, cung Tây Long",
+        "Đạo Đô đốc Tuyết — vượt biển đánh Hải Dương",
+        "Đạo Đô đốc Lộc — bao vây chặn đường rút"
+      ],
+      "vu_khi": [
+        "Hơn 100 voi chiến",
+        "Hoả hổ",
+        "Mộc quấn bện rơm tẩm ướt che cho đội xung kích"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "29 vạn quân, chia làm bốn đạo",
+      "don_vi": [
+        "Quân Thanh từ Lưỡng Quảng, Vân Nam và Quý Châu do Tôn Sĩ Nghị thống lĩnh",
+        "Đồn Ngọc Hồi do Hứa Thế Hanh giữ, khoảng 3 vạn quân",
+        "Đồn Khương Thượng – Đống Đa do Sầm Nghi Đống giữ"
+      ]
+    },
+    "nguon": [
+      "Báo điện tử Chính phủ — https://baochinhphu.vn/dai-pha-quan-thanh-giai-phong-thang-long-10230972.htm",
+      "Báo điện tử Chính phủ — https://baochinhphu.vn/chien-thang-hien-hach-trong-lich-su-chong-ngoai-xam-102138325.htm",
+      "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html",
+      "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-ngoc-hoi-dong-da-nam-1789-post195246.gd"
+    ]
+  },
+  "ket_qua": "Đại phá 29 vạn quân Thanh trong 5 ngày Tết Kỷ Dậu, giải phóng Thăng Long trưa mùng 5 Tết; Sầm Nghi Đống tự tử, Tôn Sĩ Nghị và Lê Chiêu Thống bỏ chạy sang Trung Quốc.",
   "y_nghia": "Chiến công quân sự thần tốc bậc nhất lịch sử, đánh bại đại quân xâm lược nhà Thanh chỉ trong 5 ngày Tết, giữ vững nền độc lập dân tộc.",
   "trang_thai": "draft",
   "nguon": [
     "Hoàng Lê nhất thống chí",
     "Đại Nam chính biên liệt truyện",
     "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
-    "Cục Di sản Văn hoá (dsvh.gov.vn) — Gò Đống Đa, DTQG đặc biệt"
+    "Cục Di sản Văn hoá (dsvh.gov.vn) — Gò Đống Đa, DTQG đặc biệt",
+    "Báo điện tử Chính phủ — https://baochinhphu.vn/chien-thang-hien-hach-trong-lich-su-chong-ngoai-xam-102138325.htm",
+    "Báo điện tử Chính phủ — https://baochinhphu.vn/dai-pha-quan-thanh-giai-phong-thang-long-10230972.htm",
+    "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html",
+    "Báo Hànộimới — https://hanoimoi.vn/234-nam-chien-thang-ngoc-hoi-dong-da-am-vang-truyen-thong-hao-hung-7200.html",
+    "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-ngoc-hoi-dong-da-nam-1789-post195246.gd"
   ],
   "trich_van_tich": [
     {
       "sach": "Lời hiểu dụ tướng sĩ của vua Quang Trung (đọc tại lễ Thệ sư, Thọ Hạc — Thanh Hóa, năm 1788; không rõ bộ sử gốc theo nguồn dẫn)",
       "doan": "Đánh cho để dài tóc / Đánh cho để đen răng / Đánh cho chúng chích luân bất phản / Đánh cho chúng phiến giáp bất hoàn / Đánh cho sử tri Nam Quốc anh hùng chi hữu chủ",
       "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12071/cuoc-tan-cong-than-toc-nhat-lich-su-viet.html",
-      "buoc": 1
+      "buoc": 2
     },
     {
       "sach": "Lê Quý kỷ sự — Nguyễn Thu",
       "doan": "bớ chư quân, phàm ai bằng lòng chiến đấu thì hãy vì ta giết sạch quân giặc. Nếu ai không muốn thì hãy xem ta giết vài vạn tên trong một trận, đó không phải là chuyện hiếm lạ đâu",
       "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12071/cuoc-tan-cong-than-toc-nhat-lich-su-viet.html",
-      "buoc": 1
+      "buoc": 2
     }
   ]
 }

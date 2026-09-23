@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Bộ chủ đề của thư viện. Mọi mục trong literature/*.json mang một `chu_de` trỏ về `id` ở đây. Soạn 2026-08-05.",
-  "ngay_cap_nhat": "2026-08-24",
+  "ngay_cap_nhat": "2026-08-27",
   "items": [
     {
       "id": "van-hoc-dan-gian",
@@ -21,6 +21,11 @@
       "id": "tho-van-trung-dai",
       "ten": "Thơ văn trung đại",
       "mo_ta": "Thơ văn chữ Hán/Nôm thế kỷ XI–XIX, trước khi Pháp xâm lược 1858."
+    },
+    {
+      "id": "toan-van-kinh-dien",
+      "ten": "Toàn văn tác phẩm kinh điển",
+      "mo_ta": "Tác phẩm in NGUYÊN VĂN trọn vẹn, đọc được từ đầu đến cuối trong khung đọc: sử thi các dân tộc, truyện thơ Nôm, ngâm khúc, phú và các văn kiện lớn. Mỗi tác phẩm ghi rõ theo bản nào, ai dịch, và vì sao được đăng toàn văn."
     },
     {
       "id": "can-dai-khang-phap",

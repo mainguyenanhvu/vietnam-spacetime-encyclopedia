@@ -1,12 +1,14 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Điện Biên Phủ 1954 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Điện Biên Phủ 1954 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Chưa tìm được con số tổn thất của quân ta trên một trang nhà nước mở được, nên khối ton_that chỉ có phía đối thủ. Mốc bắt sống Đờ Cát-xtơ-ri và mốc làm chủ đồi A1 mỗi mốc có hai con số trong cùng một bài của Báo Nhân Dân — giữ cả hai theo bất biến #4, ĐỪNG SỬA thành một.",
   "id": "dien-bien-phu-1954",
   "ten": "Chiến dịch Điện Biên Phủ 1954",
   "nam": 1954,
+  "thoi_gian": "13/3/1954 – 7/5/1954",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Đại tướng Võ Nguyên Giáp",
-  "doi_thu": "Quân đội Pháp (Tướng De Castries)",
-  "dia_diem": "Lòng chảo Điện Biên (đồi A1), Điện Biên",
+  "chi_huy": "Đại tướng Võ Nguyên Giáp — Chỉ huy trưởng kiêm Bí thư Đảng uỷ mặt trận",
+  "doi_thu": "Quân đội Pháp (Thiếu tướng Đờ Cát-xtơ-ri)",
+  "dia_diem": "Lòng chảo Mường Thanh, Điện Biên",
   "lien_quan_tinh": [
     "dien-bien"
   ],
@@ -15,215 +17,750 @@
     {
       "kieu": "nui",
       "diem": [
-        [
-          0,
-          50
-        ],
-        [
-          500,
-          20
-        ],
-        [
-          1000,
-          60
-        ]
+        [0, 60],
+        [250, 20],
+        [560, 10],
+        [820, 35],
+        [1000, 70]
       ],
-      "nhan": "Dãy núi bao quanh lòng chảo Điện Biên"
+      "nhan": "Vòng cung núi phía bắc lòng chảo"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [40, 80],
+        [20, 260],
+        [45, 430],
+        [90, 580]
+      ],
+      "nhan": "Dãy núi phía tây"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [975, 90],
+        [990, 280],
+        [960, 450],
+        [920, 585]
+      ],
+      "nhan": "Dãy núi phía đông — hướng Mường Phăng"
     },
     {
       "kieu": "song",
       "diem": [
-        [
-          500,
-          80
-        ],
-        [
-          520,
-          300
-        ],
-        [
-          540,
-          550
-        ]
+        [520, 60],
+        [500, 200],
+        [520, 340],
+        [560, 470],
+        [600, 590]
       ],
       "nhan": "Sông Nậm Rốm"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [1000, 150],
+        [830, 140],
+        [700, 160],
+        [560, 230],
+        [470, 320]
+      ],
+      "nhan": "Đường 41 từ Tuần Giáo vào"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [330, 570],
+        [200, 585],
+        [70, 575]
+      ],
+      "nhan": "Đường sang Tây Trang — hướng Thượng Lào"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [860, 165],
+        [935, 190],
+        [950, 250],
+        [880, 265]
+      ],
+      "nhan": "Rừng Mường Phăng"
     }
   ],
   "phan_tu": [
     {
-      "id": "phan-khu-bac",
+      "id": "him-lam",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 420,
-      "y": 180,
-      "nhan": "Phân khu Bắc (Him Lam, Độc Lập, Bản Kéo)"
+      "x": 720,
+      "y": 125,
+      "nhan": "Him Lam (Béatrice)",
+      "quy_mo": "Tiểu đoàn 3 Bán lữ đoàn 13 Lê dương — 750 quân"
     },
     {
-      "id": "quan-ta-dot1",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 280,
-      "y": 150,
-      "nhan": "Quân ta tiến công đợt 1"
+      "id": "doc-lap",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 85,
+      "nhan": "Đồi Độc Lập (Gabriel)",
+      "quy_mo": "Tiểu đoàn 5 Trung đoàn 7 Angiêri"
+    },
+    {
+      "id": "ban-keo",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 265,
+      "y": 120,
+      "nhan": "Bản Kéo",
+      "quy_mo": "Tiểu đoàn nguỵ Thái số 3"
+    },
+    {
+      "id": "cu-diem-105",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 355,
+      "y": 175,
+      "nhan": "Cứ điểm 105 (Huguette 6) — bắc sân bay"
+    },
+    {
+      "id": "san-bay-muong-thanh",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 258,
+      "nhan": "Sân bay Mường Thanh"
+    },
+    {
+      "id": "doi-e1",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 700,
+      "y": 192,
+      "nhan": "Cứ điểm E (Dominique 1)"
+    },
+    {
+      "id": "doi-d1",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 640,
+      "y": 248,
+      "nhan": "Đồi D1 (Dominique 2)"
+    },
+    {
+      "id": "doi-c1",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 682,
+      "y": 308,
+      "nhan": "Đồi C1 (Eliane 1)"
+    },
+    {
+      "id": "doi-c2",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 790,
+      "y": 352,
+      "nhan": "Đồi C2 (Eliane 4)"
     },
     {
       "id": "doi-a1",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 620,
-      "y": 320,
-      "nhan": "Đồi A1, C1, D1, E1"
+      "x": 660,
+      "y": 402,
+      "nhan": "Đồi A1 (Eliane 2)"
     },
     {
-      "id": "quan-ta-dao-hao",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 430,
-      "y": 350,
-      "nhan": "Đào hào siết vòng vây (đợt 2)"
-    },
-    {
-      "id": "san-bay-muong-thanh",
-      "kieu": "dia-danh",
-      "x": 560,
-      "y": 400,
-      "nhan": "Sân bay Mường Thanh"
+      "id": "cu-diem-311a",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 215,
+      "y": 332,
+      "nhan": "Cứ điểm 311A (Huguette 5)"
     },
     {
       "id": "ham-de-castries",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 560,
-      "y": 460,
-      "nhan": "Hầm chỉ huy De Castries"
+      "x": 450,
+      "y": 396,
+      "nhan": "Hầm chỉ huy Đờ Cát-xtơ-ri"
     },
     {
-      "id": "mui-tong-cong-kich",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        430,
-        370
-      ],
-      "den": [
-        550,
-        450
-      ],
-      "nhan": "Tổng công kích đợt 3"
-    },
-    {
-      "id": "phan-khu-nam",
+      "id": "cu-diem-507",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 650,
-      "y": 540,
-      "nhan": "Phân khu Nam (Hồng Cúm)"
+      "x": 530,
+      "y": 462,
+      "nhan": "Cứ điểm 507 — cầu Mường Thanh"
+    },
+    {
+      "id": "hong-cum",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 430,
+      "y": 548,
+      "nhan": "Phân khu Nam — Hồng Cúm"
+    },
+    {
+      "id": "dd312-him-lam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 890,
+      "y": 72,
+      "nhan": "Đại đoàn 312",
+      "quy_mo": "Trung đoàn 141 · Trung đoàn 209 · Trung đoàn 165"
+    },
+    {
+      "id": "dd308-doc-lap",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 520,
+      "y": 28,
+      "nhan": "Đại đoàn 308",
+      "quy_mo": "Trung đoàn 88 · Trung đoàn 102"
+    },
+    {
+      "id": "trung-doan-36",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 140,
+      "y": 212,
+      "nhan": "Trung đoàn 36",
+      "quy_mo": "Đại đoàn 308"
+    },
+    {
+      "id": "dd316-dong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 898,
+      "y": 302,
+      "nhan": "Đại đoàn 316",
+      "quy_mo": "Trung đoàn 174 · Trung đoàn 98"
+    },
+    {
+      "id": "dd351-phao",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 890,
+      "y": 425,
+      "nhan": "Đại đoàn công – pháo 351",
+      "quy_mo": "Trung đoàn pháo binh 367 · Trung đoàn công binh 151"
+    },
+    {
+      "id": "dd304-nam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 175,
+      "y": 522,
+      "nhan": "Đại đoàn 304 (thiếu)",
+      "quy_mo": "Trung đoàn 57"
+    },
+    {
+      "id": "so-chi-huy-muong-phang",
+      "kieu": "dia-danh",
+      "x": 900,
+      "y": 215,
+      "nhan": "Sở Chỉ huy chiến dịch — Mường Phăng"
+    },
+    {
+      "id": "hao-vay-lan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 340,
+      "y": 300,
+      "nhan": "Trận địa hào vây lấn",
+      "quy_mo": "Có nơi cách lô cốt địch 15–30m"
+    },
+    {
+      "id": "duong-ham-a1",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 640,
+      "y": 468,
+      "nhan": "Đường hầm 49m trong lòng đồi A1",
+      "quy_mo": "Khối thuốc nổ gần 1.000kg, 49 gói"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 780,
-      "y": 460,
-      "nhan": "Bắt sống De Castries — toàn thắng"
+      "x": 320,
+      "y": 405,
+      "nhan": "Cờ «Quyết chiến quyết thắng» trên nóc hầm Đờ Cát-xtơ-ri"
+    },
+    {
+      "id": "mui-dot1-him-lam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [860, 88],
+      "den": [762, 118],
+      "nhan": "Trận mở màn 13/3"
+    },
+    {
+      "id": "mui-dot1-doc-lap",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [530, 48],
+      "den": [508, 72],
+      "nhan": "Đánh Độc Lập rạng sáng 15/3"
+    },
+    {
+      "id": "mui-dot2-dong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [862, 306],
+      "den": [712, 320],
+      "nhan": "Đợt 2 — dãy cao điểm phía đông"
+    },
+    {
+      "id": "mui-tong-cong-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [600, 345],
+      "den": [482, 392],
+      "nhan": "Tổng công kích chiều 7/5"
+    },
+    {
+      "id": "mui-chan-tay-trang",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [370, 558],
+      "den": [180, 570],
+      "nhan": "Trung đoàn 102 chặn đường rút sang Tây Trang"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "khoảng 40.000 bộ đội chủ lực",
+          "nguon": "Viện Lịch sử quân sự Việt Nam, tham luận đăng trên Báo Nhân Dân"
+        },
+        {
+          "so": "55.000 người nếu tính cả tuyến hai",
+          "nguon": "Viện Lịch sử quân sự Việt Nam, tham luận đăng trên Báo Nhân Dân"
+        },
+        {
+          "so": "hơn 261.500 người phục vụ chiến dịch",
+          "nguon": "Viện Lịch sử quân sự Việt Nam, tham luận đăng trên Báo Nhân Dân"
+        }
+      ],
+      "don_vi": [
+        "Đại đoàn bộ binh 308",
+        "Đại đoàn bộ binh 312",
+        "Đại đoàn bộ binh 316",
+        "Đại đoàn bộ binh 304 (thiếu)",
+        "Đại đoàn công – pháo 351",
+        "Trung đoàn pháo binh 367",
+        "Trung đoàn công binh 151"
+      ],
+      "vu_khi": [
+        "Lựu pháo 105mm",
+        "Sơn pháo 75mm",
+        "Súng cối 120mm và 82mm",
+        "628 ô-tô vận tải",
+        "21.000 xe đạp thồ"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "hơn 16.000 quân lúc cao điểm",
+          "nguon": "Viện Lịch sử quân sự Việt Nam, tham luận đăng trên Báo Nhân Dân"
+        }
+      ],
+      "don_vi": [
+        "12 tiểu đoàn bộ binh và lính dù trước ngày mở màn",
+        "2 tiểu đoàn pháo 105mm",
+        "1 đại đội pháo 155mm",
+        "2 tiểu đoàn súng cối 120mm",
+        "1 đại đội xe tăng 18 tấn",
+        "1 phi đội không quân"
+      ],
+      "vu_khi": [
+        "24 khẩu pháo 105mm",
+        "4 khẩu pháo 155mm",
+        "20 khẩu súng cối 120mm",
+        "10 xe tăng 18 tấn",
+        "17 máy bay: 7 khu trục, 5 trinh sát, 4 vận tải, 1 trực thăng"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm (tham luận Viện Lịch sử quân sự Việt Nam) — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html",
+      "Báo Nhân Dân — Ngày 13/3/1954: Chiến dịch Điện Biên Phủ mở màn — https://special.nhandan.vn/ngay13_3_1954_chiendichdienbienphu_moman/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "16.200 tên bị loại khỏi vòng chiến đấu và bắt làm tù binh, trong đó 1.766 sĩ quan và hạ sĩ quan; 57 máy bay bị bắn rơi, phá huỷ tại mặt trận và 5 chiếc trên tuyến cung cấp",
+        "nguon": "Báo Nhân Dân — Ngày 7/5/1954: Chiến dịch Điện Biên Phủ toàn thắng"
+      },
+      {
+        "so": "bắn rơi 62 máy bay",
+        "nguon": "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt"
+      },
+      {
+        "so": "khoảng 16 nghìn người, trong đó 1.500 chết và 4.000 bị thương — theo hồi ký Tổng chỉ huy Nava",
+        "nguon": "Henri Navarre, Thời điểm của những sự thật, dẫn trên Báo Nhân Dân"
+      }
+    ],
+    "nguon": [
+      "Báo Nhân Dân — Ngày 7/5/1954: Chiến dịch Điện Biên Phủ toàn thắng — https://special.nhandan.vn/ngay-7-5-1954-chien-dich-Dien-Bien-Phu/index.html",
+      "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt — https://baochinhphu.vn/chien-dich-dien-bien-phu-3-dot-tan-cong-ac-liet-10224050209051285.htm"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Pháp xây dựng \"tập đoàn cứ điểm bất khả xâm phạm\"",
-      "mo_ta": "Cuối 1953, thực dân Pháp cho xây dựng ở Điện Biên Phủ hệ thống nhiều cứ điểm chia thành 3 phân khu, coi đây là \"pháo đài không thể công phá\" trong kế hoạch Nava.",
+      "tieu_de": "Pháp nhảy dù xuống lòng chảo, dựng tập đoàn cứ điểm mạnh nhất Đông Dương",
+      "thoi_gian": "Giữa tháng 11/1953 – tháng 3/1954",
+      "dia_danh": "Lòng chảo Mường Thanh",
+      "mo_ta": "Giữa tháng 11/1953, phát hiện chủ lực ta tiến lên Tây Bắc, Pháp mở cuộc hành quân Caxto, đổ 6 tiểu đoàn Âu – Phi tinh nhuệ đánh chiếm Điện Biên Phủ rồi dồn phương tiện biến lòng chảo thành tập đoàn cứ điểm mạnh nhất Đông Dương. Đến Đông Xuân 1953–1954, nơi đây có 49 cứ điểm tổ chức thành 8 cụm cứ điểm liên hoàn, liên kết lại thành 3 phân khu Bắc, Trung tâm và Nam. Phân khu Trung tâm gồm 5 cụm bao bọc cơ quan chỉ huy, các căn cứ hoả lực và hậu cần; hai sân bay Mường Thanh và Hồng Cúm bảo đảm tiếp tế đường không. Tướng lĩnh Pháp và Mỹ gọi nó là «một Vécđoong ở châu Á», «Nà Sản luỹ thừa 10», «pháo đài bất khả xâm phạm».",
       "hien": [
-        "phan-khu-bac",
+        "him-lam",
+        "doc-lap",
+        "ban-keo",
+        "cu-diem-105",
+        "san-bay-muong-thanh",
+        "doi-e1",
+        "doi-d1",
+        "doi-c1",
+        "doi-c2",
         "doi-a1",
-        "phan-khu-nam",
-        "ham-de-castries"
+        "cu-diem-311a",
+        "ham-de-castries",
+        "hong-cum"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html",
+        "Báo Nhân Dân — Ngày 13/3/1954: Chiến dịch Điện Biên Phủ mở màn — https://special.nhandan.vn/ngay13_3_1954_chiendichdienbienphu_moman/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Ta chuyển phương châm \"đánh chắc, tiến chắc\"",
-      "mo_ta": "Đại tướng Võ Nguyên Giáp quyết định hoãn kế hoạch \"đánh nhanh thắng nhanh\", kéo pháo ra, chuẩn bị lại theo phương châm đánh chắc thắng.",
+      "tieu_de": "Bộ Chính trị quyết định mở chiến dịch",
+      "thoi_gian": "6/12/1953",
+      "dia_danh": "Việt Bắc · Sở Chỉ huy Mường Phăng",
+      "mo_ta": "Xác định quân Pháp đưa quân chiếm giữ Điện Biên Phủ là có lợi cho ta, ngày 6/12/1953 Bộ Chính trị họp thông qua kế hoạch tác chiến và quyết định mở Chiến dịch Điện Biên Phủ; đồng chí Võ Nguyên Giáp làm Chỉ huy trưởng kiêm Bí thư Đảng uỷ mặt trận. Ta huy động 5 trong tổng số 7 đại đoàn hiện có: bốn đại đoàn bộ binh 308, 312, 316, 304 (thiếu) và một đại đoàn công – pháo 351. Bộ đội chủ lực khoảng 40.000 người, tính cả tuyến hai lên tới 55.000 người; lực lượng phục vụ chiến dịch hơn 261.500 người với 628 ô-tô vận tải, 21.000 xe đạp thồ cùng nhiều tàu, thuyền, ngựa. Riêng tuyến hậu cần chiến dịch có 33.500 người phục vụ và nhân dân đóng góp 27.400 tấn gạo.",
       "hien": [
-        "phan-khu-bac",
-        "doi-a1",
-        "phan-khu-nam"
+        "so-chi-huy-muong-phang",
+        "dd312-him-lam",
+        "dd308-doc-lap",
+        "dd316-dong",
+        "dd304-nam",
+        "dd351-phao",
+        "him-lam",
+        "doc-lap",
+        "ban-keo",
+        "ham-de-castries",
+        "hong-cum"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 13/3/1954: Chiến dịch Điện Biên Phủ mở màn — https://special.nhandan.vn/ngay13_3_1954_chiendichdienbienphu_moman/index.html",
+        "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đợt 1: tiêu diệt phân khu Bắc (13–17/3/1954)",
-      "mo_ta": "Quân ta tiến công tiêu diệt các cứ điểm Him Lam, Độc Lập, Bản Kéo, phá vỡ cửa ngõ phía bắc tập đoàn cứ điểm.",
+      "tieu_de": "Kéo pháo ra, đổi sang «đánh chắc, tiến chắc»",
+      "thoi_gian": "14/1 – 12/3/1954",
+      "dia_danh": "Đường kéo pháo · trận địa xuất phát xung phong",
+      "mo_ta": "Ngày 14/1/1954, Bộ Chỉ huy chiến dịch quyết định đánh theo phương châm «đánh nhanh, giải quyết nhanh» trong 2 ngày 3 đêm. Ngày dự kiến nổ súng được hai nguồn nhà nước chép khác nhau: tham luận của Viện Lịch sử quân sự nêu 26/1/1954, chuyên đề của Báo Nhân Dân nêu 25/1/1954 với kế hoạch đầu tiên là 20/1/1954. Theo dõi tình hình thấy địch tăng thêm binh lực, củng cố hệ thống phòng ngự vững chắc, việc đưa pháo vào trận địa và tổ chức hiệp đồng bộ binh – pháo binh chưa hoàn tất, Bộ Chỉ huy sửa đổi kế hoạch, tiếp tục chuẩn bị mọi mặt và chuyển sang «đánh chắc, tiến chắc», dùng cách đánh vây hãm tiến công, đột phá lần lượt để tiêu diệt tập đoàn cứ điểm. Đêm 11/3, các đơn vị bắt đầu xây dựng trận địa xuất phát xung phong.",
       "hien": [
-        "phan-khu-bac",
-        "quan-ta-dot1"
+        "so-chi-huy-muong-phang",
+        "dd351-phao",
+        "him-lam",
+        "doc-lap",
+        "ban-keo",
+        "ham-de-castries",
+        "hong-cum"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 13/3/1954: Chiến dịch Điện Biên Phủ mở màn — https://special.nhandan.vn/ngay13_3_1954_chiendichdienbienphu_moman/index.html",
+        "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đợt 2: chiếm dãy đồi phía đông, siết vòng vây (30/3–30/4/1954)",
-      "mo_ta": "Quân ta đánh chiếm các cao điểm then chốt như đồi A1, C1, D1, E1, đào hào áp sát, cắt đường tiếp tế qua sân bay Mường Thanh.",
+      "tieu_de": "Đợt 1 mở màn: đánh sập Him Lam",
+      "thoi_gian": "17 giờ 5 phút – 23 giờ 30 phút ngày 13/3/1954",
+      "dia_danh": "Cụm cứ điểm Him Lam (Béatrice)",
+      "mo_ta": "Him Lam nằm ở đông bắc thuộc Phân khu Bắc, trên đường 41 từ Tuần Giáo vào, cách trung tâm Mường Thanh 2,5km, gồm 3 cứ điểm trên 5 điểm cao, vòng ngoài 4 đến 6 hàng rào dây thép gai, do Tiểu đoàn 3 Bán lữ đoàn 13 Lê dương với 750 quân phòng giữ. Đại đoàn 312 đánh trận mở màn: Trung đoàn 141 với Tiểu đoàn 11 chủ công hướng bắc diệt cứ điểm 102, Tiểu đoàn 428 trợ công hướng đông bắc diệt 101A; Trung đoàn 209 dùng Tiểu đoàn 130 đánh 101B từ đông nam. 17 giờ 5 phút ngày 13/3, pháo chiến dịch giáng đòn phủ đầu, đánh trúng vị trí chỉ huy địch; Trung tá Gôsê chỉ huy Phân khu Bắc tử trận. Tiểu đội trưởng Phan Đình Giót lấy thân lấp lỗ châu mai mở đường cho đơn vị xung phong ở 101A. Đến 23 giờ 30 phút, Đại đoàn 312 làm chủ hoàn toàn Him Lam, diệt 300 tên, bắt 200 tên, xoá sổ Tiểu đoàn 3/13 DBLE.",
       "hien": [
-        "doi-a1",
-        "quan-ta-dao-hao",
-        "san-bay-muong-thanh"
+        "him-lam",
+        "dd312-him-lam",
+        "mui-dot1-him-lam",
+        "san-bay-muong-thanh",
+        "dd351-phao",
+        "ham-de-castries"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 13/3/1954: Chiến dịch Điện Biên Phủ mở màn — https://special.nhandan.vn/ngay13_3_1954_chiendichdienbienphu_moman/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đợt 3: tổng công kích khu trung tâm (1–7/5/1954)",
-      "mo_ta": "Quân ta đồng loạt tiến công các cứ điểm còn lại, đánh chiếm đồi A1 sau nhiều ngày giằng co ác liệt.",
+      "tieu_de": "Đồi Độc Lập và cái chết của viên chỉ huy pháo binh Pháp",
+      "thoi_gian": "Chiều 14/3 – 12 giờ 45 phút ngày 15/3/1954",
+      "dia_danh": "Cụm cứ điểm Độc Lập (Gabriel)",
+      "mo_ta": "Đồi Độc Lập dài khoảng 500m, rộng 200m, cách trung tâm Mường Thanh 4km về phía bắc, là cụm cứ điểm duy nhất có hai tuyến phòng ngự hoàn chỉnh, do Tiểu đoàn 5 Trung đoàn 7 Angiêri cùng một đại đội lính người Thái và trận địa cối 120mm phòng giữ. Trung đoàn 165 của Đại đoàn 312 đánh hướng chủ yếu từ đông nam, Trung đoàn 88 của Đại đoàn 308 đánh hướng thứ yếu từ đông bắc; Đại đoàn trưởng Vương Thừa Vũ chỉ huy trận đánh. 6 giờ 30 phút ngày 15/3 ta hoàn toàn làm chủ đồi Độc Lập, diệt hơn 400 tên và bắt sống gần 200 tên. Đợt phản kích có xe tăng và tiểu đoàn dù bị Đại đội 213 Trung đoàn 88 chặn đứng, 7 giờ 30 phút phải quay đầu chạy về Mường Thanh, bỏ lại một xe tăng bắn hỏng. 12 giờ 45 phút cùng ngày, Trung tá Pirốt — chỉ huy pháo binh tập đoàn cứ điểm, người từng tuyên bố «Tôi có nhiều đại bác hơn số tôi cần» — tự sát bằng một quả lựu đạn ngay trong hầm chỉ huy.",
       "hien": [
-        "doi-a1",
-        "mui-tong-cong-kich",
+        "doc-lap",
+        "dd308-doc-lap",
+        "mui-dot1-doc-lap",
+        "dd312-him-lam",
+        "him-lam",
         "ham-de-castries"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 15/3/1954: Ta chiếm lĩnh cụm cứ điểm Độc Lập — https://special.nhandan.vn/ngay-15-3-1954-ta-chiem-linh-cum-cu-diem-doc-lap/index.html",
+        "Báo Nhân Dân — Chiến dịch Điện Biên Phủ ngày 17/3/1954 — https://special.nhandan.vn/Chien-dich-Dien-Bien-Phu-ngay-17-03-1954/index.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Bắt sống tướng De Castries",
-      "mo_ta": "Chiều 7/5/1954, quân ta đánh chiếm hầm chỉ huy của tập đoàn cứ điểm, bắt sống tướng chỉ huy De Castries cùng toàn bộ Bộ Tham mưu.",
+      "tieu_de": "Bức hàng Bản Kéo, khép lại đợt 1",
+      "thoi_gian": "15 – 17/3/1954",
+      "dia_danh": "Bản Kéo · các ngọn đồi bắc sân bay",
+      "mo_ta": "Him Lam và Độc Lập bị san phẳng làm binh lính Tiểu đoàn nguỵ Thái số 3 giữ Bản Kéo suy sụp. Bộ Chỉ huy chiến dịch bỏ kế hoạch đánh, chuyển sang dùng hoả lực pháo uy hiếp kết hợp tiến công địch vận, gọi hàng. Sáng 15/3, viên chỉ huy Bản Kéo nhận một bức thư viết tay của ta do một lính Angiêri bị thương mang tới. Ngày 17/3, binh lính bỏ đồn chạy về phía khu rừng đang vang tiếng loa gọi; địch bắn pháo cản đường và cho xe tăng đuổi theo nhưng không giữ nổi. Bộ đội đón được 241 người ra hàng; Trung đoàn 36 không cần nổ súng vẫn chiếm được Bản Kéo rồi thừa thắng tiến vào chiếm các ngọn đồi phía bắc sân bay. Trong 5 ngày, ta xoá sổ phân khu Bắc, tiêu diệt gọn hai tiểu đoàn tinh nhuệ bậc nhất của địch và làm tan rã một tiểu đoàn khác. Cổng Thông tin điện tử Chính phủ chép tổng kết đợt 1 là diệt và bắt sống trên 2.000 tên địch, phá huỷ 25 máy bay, xoá sổ 1 trung đoàn.",
       "hien": [
-        "ham-de-castries",
-        "co-thang"
+        "ban-keo",
+        "trung-doan-36",
+        "doc-lap",
+        "him-lam",
+        "san-bay-muong-thanh",
+        "cu-diem-105"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Điện Biên Phủ ngày 17/3/1954 — https://special.nhandan.vn/Chien-dich-Dien-Bien-Phu-ngay-17-03-1954/index.html",
+        "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt — https://baochinhphu.vn/chien-dich-dien-bien-phu-3-dot-tan-cong-ac-liet-10224050209051285.htm"
       ]
     },
     {
       "id": 7,
-      "tieu_de": "Toàn thắng — \"lừng lẫy năm châu, chấn động địa cầu\"",
-      "mo_ta": "Toàn bộ tập đoàn cứ điểm Điện Biên Phủ đầu hàng, kết thúc thắng lợi cuộc kháng chiến chống Pháp, dẫn tới Hiệp định Genève 1954.",
+      "tieu_de": "Vây lấn, bóp nghẹt sân bay Mường Thanh",
+      "thoi_gian": "18/3 – 30/3/1954",
+      "dia_danh": "Vành đai Mường Thanh",
+      "mo_ta": "Sau đợt 1, các đại đoàn đào một hệ thống giao thông hào vòng quanh khu trung tâm Mường Thanh, ngày càng tiến sát trung tâm chỉ huy của địch. Ta đẩy mạnh các hoạt động nhỏ, đẩy lùi mọi đợt phản công từ Mường Thanh ra, phá huỷ 6 xe, 3 máy bay khu trục, hạ 2 máy bay vận tải, bắn cháy 2 chiếc trên đường băng; 450 tên địch chết và bị thương. Từ ngày 27/3 trở đi, sân bay Mường Thanh không dùng được nữa: bị hoả lực pháo binh và cao xạ khống chế, không một máy bay nào dám hạ cánh, địch chỉ còn cách thả dù — biện pháp tốn kém và bấp bênh vì vấp hoả lực đánh chặn quyết liệt. Cũng ngày 27/3 địch lập thêm cứ điểm Opéra ở phía đông sân bay. Tổng Quân uỷ xác định chủ trương tác chiến của đợt tiến công thứ hai và giao nhiệm vụ cho các Đại đoàn 312, 316, 308, 304, Đại đoàn công pháo 351 và Trung đoàn pháo binh 367.",
       "hien": [
+        "san-bay-muong-thanh",
+        "hao-vay-lan",
+        "trung-doan-36",
+        "cu-diem-105",
+        "so-chi-huy-muong-phang",
+        "dd351-phao"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 27/3/1954: Sân bay Mường Thanh tê liệt — https://special.nhandan.vn/sanbaymuongthanhteliet-ngay27031954/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Đợt 2 mở màn: năm cao điểm phía đông",
+      "thoi_gian": "18 giờ ngày 30/3 – sáng 31/3/1954",
+      "dia_danh": "C1 · D1 · E1 · A1",
+      "mo_ta": "18 giờ ngày 30/3/1954, đợt tiến công thứ hai bắt đầu. Pháo binh chiến dịch dồn dập bắn vào Sở chỉ huy Đờ Cát-xtơ-ri, các điểm cao C1, D1, E1, các trận địa pháo và khu vực cơ động của địch ở Mường Thanh, Hồng Cúm; ngay trong đợt pháo kích đầu tiên, 1 khẩu 155mm và 4 khẩu 105mm bị phá huỷ ngay trong hầm đặt pháo. Ở C1, Trung đoàn 98 dưới sự chỉ huy của Trung đoàn trưởng Vũ Lăng dọn xong cửa mở qua 7 lần rào thép gai chỉ sau 15 phút; tiểu đội trưởng mũi nhọn Nguyễn Thiện Cải cắm lá cờ «Quyết chiến, quyết thắng» lên nóc sở chỉ huy địch; trận đánh kết thúc trong 45 phút, diệt và bắt toàn bộ một đại đội 140 tên thuộc tiểu đoàn 1 trung đoàn 4 Marốc, ta thương vong 10 người. Trung đoàn 141 chiếm cứ điểm E sau một giờ, Trung đoàn 209 chiếm D1. Riêng ở A1, Trung đoàn 174 mất liên lạc với Đại đoàn ngay từ đầu, mở cửa mất hơn một giờ, cuộc chiến đấu giằng co tới sáng 31/3.",
+      "hien": [
+        "doi-c1",
+        "doi-d1",
+        "doi-e1",
+        "doi-a1",
+        "dd316-dong",
+        "mui-dot2-dong",
+        "ham-de-castries",
+        "dd351-phao",
+        "hong-cum"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Đợt tiến công thứ 2 vào Tập đoàn cứ điểm Điện Biên Phủ — https://special.nhandan.vn/dot-tien-cong-thu-2-Dien-Bien-Phu/index.html"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Giằng co trên A1 và C1, đào hào áp sát",
+      "thoi_gian": "31/3 – giữa tháng 4/1954",
+      "dia_danh": "Dãy cao điểm phía đông",
+      "mo_ta": "Đợt 2 là đợt tiến công dai dẳng, dài ngày nhất và quyết liệt nhất: ta và địch giành giật nhau từng tấc đất, từng đoạn giao thông hào. Đồi C1 giằng co 20 ngày, đồi A1 giằng co 30 ngày. Bộ đội tiếp tục đào hào vây lấn vào sát lô cốt địch, nhiều nơi chỉ cách 15–30m. Từ các điểm cao đã chiếm được, ta dùng hoả lực bắn thẳng bằng ĐKZ và badôka bắn sập từng lô cốt, còn các tổ bắn tỉa diệt những tên ra sửa công sự hoặc đi lại trong đồn. Hàng rào địch gồm nhiều lớp, có chỗ dày 50–100m, mỗi đêm ta cắt một ít hoặc dùng bộc phá phá một đoạn. Khi «con cúi» hết tác dụng ở cự ly gần và còn làm lộ vị trí, các chiến sĩ tân binh vốn là du kích ở địch hậu đề nghị đào dũi — khoét ngầm dưới mặt đất vào tới lô cốt địch. Cách này vừa giảm thương vong vừa giữ được bí mật và đào được cả ban ngày.",
+      "hien": [
+        "doi-a1",
+        "doi-c1",
+        "doi-c2",
+        "dd316-dong",
+        "hao-vay-lan",
+        "san-bay-muong-thanh"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Bộ đội đào hào vây lấn, tiêu diệt cứ điểm 105 — https://special.nhandan.vn/quan-ta-tieu-diet-cu-diem-105/index.html",
+        "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt — https://baochinhphu.vn/chien-dich-dien-bien-phu-3-dot-tan-cong-ac-liet-10224050209051285.htm"
+      ]
+    },
+    {
+      "id": 10,
+      "tieu_de": "Cắt đôi sân bay, diệt các cứ điểm che chở",
+      "thoi_gian": "18 – 30/4/1954",
+      "dia_danh": "Bắc sân bay Mường Thanh · Huguette 1, 6, 7",
+      "mo_ta": "Đến ngày 18/4, đồn bắc sân bay không còn một hàng rào nào. Quân địch giữ đồn hoảng sợ tìm cách rút lui, ta chặn đánh tiêu diệt hơn 100 tên và bắt 30 tên; 8 giờ sáng 18/4 ta làm chủ đồn phía bắc — một cứ điểm quan trọng bảo vệ sân bay — và đẩy trận địa tiến thêm 700m về phía Mường Thanh. Khi địch điều xe tăng ra lấp chiến hào, chiến sĩ ĐKZ Trần Đình Hùng thuộc Trung đoàn 36 Đại đoàn 308 bị hỏng máy ngắm đã bình tĩnh ngắm mục tiêu qua nòng súng, bắn cháy một chiếc, buộc địch bỏ việc lấp đường hào. Mất Huguette 7 và Huguette 6, cứ điểm Huguette 1 trở thành vị trí đột xuất ở phía bắc khu trung tâm; mất nó là mất sân bay nên Đờ Cát-xtơ-ri phải điều hai trung đội bộ binh, hai xe tăng và một trung đội lê dương ra ứng cứu. Ngày kết thúc đợt 2 được hai nguồn nhà nước chép khác nhau: 26/4 và 30/4/1954.",
+      "hien": [
+        "cu-diem-105",
+        "san-bay-muong-thanh",
+        "trung-doan-36",
+        "hao-vay-lan",
+        "cu-diem-311a",
+        "ham-de-castries"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Bộ đội đào hào vây lấn, tiêu diệt cứ điểm 105 — https://special.nhandan.vn/quan-ta-tieu-diet-cu-diem-105/index.html",
+        "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt — https://baochinhphu.vn/chien-dich-dien-bien-phu-3-dot-tan-cong-ac-liet-10224050209051285.htm",
+        "Học viện Cảnh sát nhân dân — Chiến thắng Điện Biên Phủ, phần II: Diễn biến, kết quả của chiến dịch — https://hvcsnd.edu.vn/chien-thang-dien-bien-phu-suc-manh-viet-nam-tam-voc-thoi-dai-phan-ii-dien-bien-ket-qua-cua-chien-dich-12266"
+      ]
+    },
+    {
+      "id": 11,
+      "tieu_de": "49 mét đường hầm trong lòng đồi A1",
+      "thoi_gian": "20/4 – 4/5/1954",
+      "dia_danh": "Đồi A1 (Eliane 2)",
+      "mo_ta": "A1 giằng co suốt 30 ngày mà chưa dứt điểm được, nên phân đội công binh nhận nhiệm vụ đào một đường hầm xuyên vào lòng đồi để đánh sập hầm ngầm của địch. Sau 15 ngày đêm kiên cường, bền bỉ, đường hầm dài 49m hoàn thành. Chiều và đêm ngày 4/5/1954, khối thuốc nổ gần 1.000kg chia làm 49 gói, do đồng chí Nguyễn Điệt thiết kế, được đưa vào buồng nổ cuối đường hầm cùng 6 đường dây chuyền nổ nối vào nụ xoè, dây cháy chậm và 1 đường dây điểm hoả bằng điện. Tổ điều khiển cho bộc phá nổ khi có lệnh gồm Nguyễn Phú Xuyên Khung chỉ huy, cùng Nguyễn Điệt, Lưu Viết Thoảng và Nguyễn Văn Bạch. Cũng trong ngày 4/5, Đờ Cát-xtơ-ri họp các sĩ quan cao cấp tại Mường Thanh phổ biến kế hoạch rút chạy Albatros theo ba cánh quân, dự kiến thực hiện vào 20 giờ ngày 7/5/1954.",
+      "hien": [
+        "doi-a1",
+        "duong-ham-a1",
+        "dd316-dong",
+        "ham-de-castries"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiếm thành công đồi A1 — https://special.nhandan.vn/chiem-thanh-cong-doi-a1/index.html",
+        "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt — https://baochinhphu.vn/chien-dich-dien-bien-phu-3-dot-tan-cong-ac-liet-10224050209051285.htm"
+      ]
+    },
+    {
+      "id": 12,
+      "tieu_de": "Đợt 3 mở màn, siết vòng vây cuối cùng",
+      "thoi_gian": "17 giờ ngày 1/5/1954",
+      "dia_danh": "C1 · 505 và 505A · 311A · Hồng Cúm",
+      "mo_ta": "17 giờ ngày 1/5/1954, các trận địa pháo của ta bắn phá mãnh liệt vào nhiều khu vực còn lại của tập đoàn cứ điểm. Cụm pháo địch ở Hồng Cúm tê liệt hoàn toàn, một kho đạn bị phá huỷ với 3.000 viên, một kho lương thực thực phẩm bốc cháy. Đợt pháo kích kéo dài gần một giờ đồng hồ, sau đó bộ đội ta đồng loạt tiến đánh nhiều vị trí. Trên dãy đồi phía đông, Trung đoàn 98 của Đại đoàn 316 nhanh chóng tiêu diệt hoàn toàn cứ điểm C1 rồi thừa thắng vây lấn, chuẩn bị tiêu diệt C2. Trên bờ phía đông sông Nậm Rốm, Trung đoàn 209 của Đại đoàn 312 tiến công các cứ điểm 505 và 505A, tiêu diệt một đại đội lính Angiêri. Ở phía tây, Trung đoàn 88 của Đại đoàn 308 tiêu diệt gọn một đại đội bộ binh lê dương và chiếm lĩnh cứ điểm 311A. Ở phía nam, Trung đoàn 57 của Đại đoàn 304 tiêu diệt một bộ phận địch tại khu C trong cụm cứ điểm Hồng Cúm.",
+      "hien": [
+        "doi-c1",
+        "doi-c2",
+        "cu-diem-311a",
+        "hong-cum",
+        "dd304-nam",
+        "dd351-phao",
+        "doi-a1",
+        "dd316-dong",
+        "dd308-doc-lap"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Đợt tiến công thứ 3 của chiến dịch bắt đầu — https://special.nhandan.vn/dottiencongthu3-chiendichbatdau/index.html"
+      ]
+    },
+    {
+      "id": 13,
+      "tieu_de": "Làm chủ A1 và C2 — cửa vào Mường Thanh mở toang",
+      "thoi_gian": "Rạng sáng – 9 giờ ngày 7/5/1954",
+      "dia_danh": "A1 · C2 · cứ điểm 506 · cứ điểm 310 Nà Noọng",
+      "mo_ta": "Đợt tiến công cuối cùng lên đồi A1 — điểm cao đã cầm chân ta suốt một tháng — kết thúc lúc 4 giờ sáng ngày 7/5/1954 khi Trung đoàn 174 hoàn toàn làm chủ cứ điểm. Cùng bài viết đó, lời của Tư lệnh Binh chủng Thông tin liên lạc lại chép mốc 4 giờ 30 phút; hai con số cùng nằm trong một nguồn nhà nước nên giữ nguyên cả hai. 9 giờ cùng ngày, Trung đoàn 98 tiến công tiêu diệt hoàn toàn cứ điểm C2, bắt 600 tên địch. Trung đoàn 165 hoàn thành nhiệm vụ tiêu diệt cứ điểm 506 ở phía bắc Mường Thanh. Ở phía tây, Đại đoàn 308 giải quyết xong cứ điểm 310 còn gọi Nà Noọng, đưa trận địa tiến công của đơn vị áp sát cách sở chỉ huy Đờ Cát-xtơ-ri khoảng 300m. Đến 9 giờ sáng, các đơn vị đã hoàn thành nhiệm vụ được giao, sẵn sàng chuyển sang tổng công kích.",
+      "hien": [
+        "doi-a1",
+        "duong-ham-a1",
+        "doi-c2",
+        "dd316-dong",
+        "dd308-doc-lap",
+        "ham-de-castries",
+        "san-bay-muong-thanh"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 7/5/1954: Chiến dịch Điện Biên Phủ toàn thắng — https://special.nhandan.vn/ngay-7-5-1954-chien-dich-Dien-Bien-Phu/index.html"
+      ]
+    },
+    {
+      "id": 14,
+      "tieu_de": "Tổng công kích, bắt sống Đờ Cát-xtơ-ri",
+      "thoi_gian": "10 giờ – 17 giờ 30 phút ngày 7/5/1954",
+      "dia_danh": "Cứ điểm 507, 508, 509 · hầm chỉ huy tập đoàn cứ điểm",
+      "mo_ta": "10 giờ sáng 7/5, cơ quan quân báo mặt trận phát hiện máy bay địch chở vũ khí, đạn dược được lệnh quay về Hà Nội; dưới mặt đất, các đài quan sát thấy địch quẳng súng đạn xuống sông Nậm Rốm. Bộ Chỉ huy chiến dịch ra lệnh cho các đơn vị chuyển ngay sang tổng công kích, không chờ đến tối như dự kiến. 14 giờ, Trung đoàn 209 mở cuộc tiến công cứ điểm 507 ở gần cầu Mường Thanh, địch kéo cờ trắng ra hàng; thừa thắng, Đại đoàn 312 tiến công tiếp hai cứ điểm 508 và 509 ở tả ngạn sông Nậm Rốm. Từ hướng đông, Trung đoàn 209 tiến thẳng vào Mường Thanh, tiếp sau là các trung đoàn 98 và 174; phía tây, Trung đoàn 36 và Trung đoàn 88 mở đường qua sân bay. Đến 17 giờ 15 phút, một cánh quân của Đại đoàn 312 tiến sát sở chỉ huy địch; Đại đội trưởng Tạ Quốc Luật cùng bốn chiến sĩ Hoàng Đăng Vinh, Bùi Văn Nhỏ, Nguyễn Văn Lam và Đào Văn Hiếu tiến vào hầm bắt tướng Đờ Cát-xtơ-ri cùng toàn bộ Bộ Tham mưu. Mốc bắt sống được chép hai cách: 17 giờ 15 phút và 17 giờ 30 phút.",
+      "hien": [
+        "cu-diem-507",
+        "ham-de-castries",
+        "mui-tong-cong-kich",
+        "dd312-him-lam",
         "co-thang",
-        "phan-khu-nam"
+        "san-bay-muong-thanh",
+        "trung-doan-36"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 7/5/1954: Chiến dịch Điện Biên Phủ toàn thắng — https://special.nhandan.vn/ngay-7-5-1954-chien-dich-Dien-Bien-Phu/index.html",
+        "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt — https://baochinhphu.vn/chien-dich-dien-bien-phu-3-dot-tan-cong-ac-liet-10224050209051285.htm"
+      ]
+    },
+    {
+      "id": 15,
+      "tieu_de": "Truy kích ở Hồng Cúm — toàn thắng sau 56 ngày đêm",
+      "thoi_gian": "Đêm 7/5/1954, đến 22 giờ",
+      "dia_danh": "Hồng Cúm · Tây Trang",
+      "mo_ta": "Đờ Cát-xtơ-ri đã bị bắt nhưng trên hướng Hồng Cúm địch vẫn chống cự. Đêm 7/5/1954, lợi dụng trời tối, quân địch ở đây tổ chức rút chạy về hướng Thượng Lào. Bộ Chỉ huy chiến dịch lệnh cho Đại đoàn 304 tích cực truy lùng, đồng thời lệnh cho Trung đoàn 102 hành quân gấp sang Tây Trang chặn đường rút của địch; đến 22 giờ, Đại đoàn 304 bao vây và bắt gọn toàn bộ số quân địch thoát ra. Sau 56 ngày đêm chiến đấu, ta loại khỏi vòng chiến đấu và bắt làm tù binh 16.200 tên, trong đó 1.766 sĩ quan và hạ sĩ quan gồm 1 thiếu tướng, 16 đại tá và trung tá, 353 sĩ quan từ thiếu uý đến thiếu tá; bắn rơi và phá huỷ 57 máy bay ngay tại mặt trận cùng 5 chiếc trên tuyến cung cấp; thu 28 khẩu pháo lớn, 64 xe và 5.915 khẩu súng các loại. 17 giờ ngày 7/5 tại Paris, Thủ tướng Lanien báo cáo trước Quốc hội Pháp: Điện Biên Phủ đã bị mất.",
+      "hien": [
+        "hong-cum",
+        "dd304-nam",
+        "mui-chan-tay-trang",
+        "co-thang",
+        "ham-de-castries"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Ngày 7/5/1954: Chiến dịch Điện Biên Phủ toàn thắng — https://special.nhandan.vn/ngay-7-5-1954-chien-dich-Dien-Bien-Phu/index.html"
       ]
     }
   ],
-  "ket_qua": "Tiêu diệt hoàn toàn tập đoàn cứ điểm, bắt sống tướng De Castries cùng toàn bộ Bộ Tham mưu, kết thúc kháng chiến chống Pháp, dẫn tới Hiệp định Genève 1954.",
+  "ket_qua": "Tiêu diệt hoàn toàn tập đoàn cứ điểm, bắt sống tướng Đờ Cát-xtơ-ri cùng toàn bộ Bộ Tham mưu, loại khỏi vòng chiến đấu và bắt làm tù binh 16.200 quân Pháp, kết thúc kháng chiến chống Pháp, dẫn tới Hiệp định Genève 1954.",
   "y_nghia": "Chiến thắng quyết định kết thúc chín năm kháng chiến chống Pháp, dẫn tới Hiệp định Genève, mở đầu thời kỳ sụp đổ hệ thống thuộc địa trên thế giới.",
   "trang_thai": "draft",
   "nguon": [
     "Lịch sử Việt Nam (Viện Sử học) — chiến dịch Điện Biên Phủ",
     "Cục Di sản Văn hoá (dsvh.gov.vn) — Chiến trường Điện Biên Phủ, DTQG đặc biệt",
-    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
+    "Báo Nhân Dân — Ngày 13/3/1954: Chiến dịch Điện Biên Phủ mở màn — https://special.nhandan.vn/ngay13_3_1954_chiendichdienbienphu_moman/index.html",
+    "Báo Nhân Dân — Ngày 15/3/1954: Ta chiếm lĩnh cụm cứ điểm Độc Lập — https://special.nhandan.vn/ngay-15-3-1954-ta-chiem-linh-cum-cu-diem-doc-lap/index.html",
+    "Báo Nhân Dân — Chiến dịch Điện Biên Phủ ngày 17/3/1954 — https://special.nhandan.vn/Chien-dich-Dien-Bien-Phu-ngay-17-03-1954/index.html",
+    "Báo Nhân Dân — Ngày 27/3/1954: Sân bay Mường Thanh tê liệt — https://special.nhandan.vn/sanbaymuongthanhteliet-ngay27031954/index.html",
+    "Báo Nhân Dân — Đợt tiến công thứ 2 vào Tập đoàn cứ điểm Điện Biên Phủ — https://special.nhandan.vn/dot-tien-cong-thu-2-Dien-Bien-Phu/index.html",
+    "Báo Nhân Dân — Bộ đội đào hào vây lấn, tiêu diệt cứ điểm 105 — https://special.nhandan.vn/quan-ta-tieu-diet-cu-diem-105/index.html",
+    "Báo Nhân Dân — Chiếm thành công đồi A1 — https://special.nhandan.vn/chiem-thanh-cong-doi-a1/index.html",
+    "Báo Nhân Dân — Đợt tiến công thứ 3 của chiến dịch bắt đầu — https://special.nhandan.vn/dottiencongthu3-chiendichbatdau/index.html",
+    "Báo Nhân Dân — Ngày 7/5/1954: Chiến dịch Điện Biên Phủ toàn thắng — https://special.nhandan.vn/ngay-7-5-1954-chien-dich-Dien-Bien-Phu/index.html",
+    "Báo Nhân Dân — Chiến thắng Điện Biên Phủ, bước hoàn thiện cách đánh tập đoàn cứ điểm (tham luận Viện Lịch sử quân sự Việt Nam) — https://special.nhandan.vn/chien-thang-Dien-Bien-Phu-buoc-hoan-thien-cach-danh-tap-doan-cu-diem/index.html",
+    "Cổng Thông tin điện tử Chính phủ — Chiến dịch Điện Biên Phủ: 3 đợt tấn công ác liệt — https://baochinhphu.vn/chien-dich-dien-bien-phu-3-dot-tan-cong-ac-liet-10224050209051285.htm",
+    "Học viện Cảnh sát nhân dân — Chiến thắng Điện Biên Phủ, phần II: Diễn biến, kết quả của chiến dịch — https://hvcsnd.edu.vn/chien-thang-dien-bien-phu-suc-manh-viet-nam-tam-voc-thoi-dai-phan-ii-dien-bien-ket-qua-cua-chien-dich-12266"
   ],
   "trich_van_tich": [
     {
       "sach": "Võ Nguyên Giáp — Điện Biên Phủ điểm hẹn lịch sử",
       "doan": "Vô luận rồi đây địch tình thay đổi thế nào, địch nhảy dù xuống Điện Biên Phủ căn bản là có lợi cho ta",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/dai-tuong-tong-tu-lenh-vo-nguyen-giap-trong-chien-dich-dien-bien-phu-post805823.html",
-      "buoc": 1
+      "buoc": 2
     },
     {
       "sach": "Hồ Chí Minh — tư tưởng chỉ đạo, dẫn trong hồi ký Võ Nguyên Giáp \"Điện Biên Phủ điểm hẹn lịch sử\"",
       "doan": "Chỉ được thắng không được bại, vì bại thì hết vốn",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/dai-tuong-tong-tu-lenh-vo-nguyen-giap-trong-chien-dich-dien-bien-phu-post805823.html",
-      "buoc": 2
+      "buoc": 3
     },
     {
       "sach": "Thư của Chủ tịch Hồ Chí Minh gửi cán bộ, chiến sĩ ở Mặt trận Điện Biên Phủ, 14/3/1954",
       "doan": "Thân ái gửi toàn thể cán bộ và chiến sĩ ở mặt trận. Các chú sắp ra mặt trận. Nhiệm vụ các chú lần này rất to lớn, khó khăn, nhưng rất vinh quang. Các chú vừa được chỉnh huấn chính trị và quân sự và đã thu được nhiều thắng lợi về tư tưởng, về chiến thuật, kỹ thuật.",
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/thu-cua-Chu-tich-Ho-Chi-Minh-14-03-1954/index.html",
-      "buoc": 3
+      "buoc": 5
+    },
+    {
+      "sach": "Báo cáo kết luận Hội nghị cán bộ chiến dịch Điện Biên Phủ, Tổng Quân uỷ",
+      "doan": "Tập trung tuyệt đối ưu thế binh hỏa lực, tiêu diệt toàn bộ khu vực miền đông Điện Biên Phủ",
+      "nguon_trich": "Báo Nhân Dân — https://special.nhandan.vn/sanbaymuongthanhteliet-ngay27031954/index.html",
+      "buoc": 7
+    },
+    {
+      "sach": "Henri Navarre — Thời điểm của những sự thật (hồi ký), Nguyễn Huy Cầu dịch, NXB Công an nhân dân – Viện Lịch sử Quân sự Việt Nam",
+      "doan": "Chúng ta mất khoảng 16 nghìn người, trong đó 1.500 chết và 4.000 bị thương",
+      "nguon_trich": "Báo Nhân Dân — https://special.nhandan.vn/ngay-7-5-1954-chien-dich-Dien-Bien-Phu/index.html",
+      "buoc": 15
     }
   ]
 }

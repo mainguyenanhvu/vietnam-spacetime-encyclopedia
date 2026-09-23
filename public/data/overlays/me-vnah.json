@@ -1,6 +1,6 @@
 {
-  "ghi_chu": "Mẹ Việt Nam Anh hùng — đại diện tiêu biểu + tượng đài tưởng niệm (cả nước ~140.000 Mẹ VNAH, chỉ chọn vài gương tiêu biểu qua nguồn chính thống). Anh hùng Lao động đã TÁCH sang anh-hung-lao-dong-khoa-hoc.json. KHÔNG dùng Wikipedia. Danh sách còn ít — sẽ mở rộng theo vùng miền.",
-  "ngay_cap_nhat": "2026-08-27",
+  "ghi_chu": "Mẹ Việt Nam Anh hùng — đại diện tiêu biểu + tượng đài tưởng niệm (cả nước ~140.000 Mẹ VNAH, chỉ chọn vài gương tiêu biểu qua nguồn chính thống). Anh hùng Lao động đã TÁCH sang anh-hung-lao-dong-khoa-hoc.json. KHÔNG dùng Wikipedia. Nhận về 94 Mẹ vốn đặt nhầm ở anh-hung-can-hien-dai.json (2026-08-28) — nay 159 mục, là lớp duy nhất chứa Mẹ VNAH. Nguồn cấp file của hai lớp KHÔNG trộn: mỗi mục đã mang nguon[] riêng, nên danh mục cấp file để nguyên bên nào của bên ấy.",
+  "ngay_cap_nhat": "2026-08-28",
   "sources": [
     "Cổng TTĐT Chính phủ — baochinhphu.vn",
     "Báo Quân đội nhân dân — qdnd.vn",
@@ -857,6 +857,1681 @@
         "Báo Thái Nguyên — Báo Thái Nguyên thăm, tặng quà Mẹ Việt Nam Anh hùng — https://baothainguyen.vn/tin-moi/202407/bao-thai-nguyen-tham-tang-qua-me-viet-nam-anh-hung-c221bb8/"
       ],
       "ghi_chu_bien_tap": "Cùng caveat như Trần Thị Ruẩn — nên bổ sung nguồn Sở LĐTBXH trước khi chuyển reviewed."
+    },
+    {
+      "id": "cao-thi-mau-khanh-hoa",
+      "ten": "Mẹ Việt Nam Anh hùng Cao Thị Mau",
+      "lon": 109.1228,
+      "lat": 12.4889,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1933",
+      "mo_ta": "Sinh năm 1933 tại xã Đức Lợi, huyện Mộ Đức, tỉnh Quảng Ngãi (nay xã Long Phụng), sau theo chồng về xã Ninh Thọ, huyện Ninh Hòa (nay xã Bắc Ninh Hòa, tỉnh Khánh Hòa) sinh sống. Chồng là liệt sĩ Bùi Hữu Định (sinh 1930, cán bộ đội công tác xã Ninh Thọ) hy sinh dịp Tết Mậu Thân 1968; con trai cả liệt sĩ Bùi Hữu Tính hy sinh năm 1969 khi 16 tuổi; con gái liệt sĩ Bùi Thị Qua hy sinh tháng 11/1974 khi 19 tuổi. Mẹ bị địch bắt giam, tra tấn 5 lần, một mình nuôi 5 người con còn lại nên người.",
+      "cong_trang": "Từ năm 19 tuổi đã theo cách mạng đào hầm, phá ấp chiến lược, vót chông tre chống địch càn quét và gom góp từng bát gạo, cân muối tiếp tế cho bộ đội ngoài căn cứ; giữ vững khí tiết qua 5 lần bị địch bắt giam, lần cuối năm 1973.",
+      "dia_diem": "Xã Bắc Ninh Hòa, tỉnh Khánh Hòa (nơi sinh sống)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Bà mẹ Việt Nam anh hùng Cao Thị Mau: điểm tựa tinh thần vững chãi cho thế hệ hôm nay — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-cao-thi-mau-diem-tua-tinh-than-vung-chai-cho-the-he-hom-nay-1053561"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: cong_trang bản trước ghi \"Đào hầm NUÔI GIẤU CÁN BỘ\", nguồn https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-cao-thi-mau-diem-tua-tinh-than-vung-chai-cho-the-he-hom-nay-1053561 chỉ nói \"đào hầm, phá ấp chiến lược, vót chông tre chống địch càn quét\" và tiếp tế gạo muối — không nói bà nuôi giấu cán bộ → đã sửa về đúng nguồn. Tên bài trong nguon bản trước ghi \"Trái ngọt từ sự hy sinh thầm lặng\", đó chỉ là một tiểu mục trong bài; tiêu đề thật là \"Bà mẹ Việt Nam anh hùng Cao Thị Mau: điểm tựa tinh thần vững chãi cho thế hệ hôm nay\" → đã sửa. Ghi chú cũ dẫn toạ độ \"theo Wikipedia ga Ninh Hòa\" — Wikipedia là nguồn bị bác theo luật dự án và chính ghi_chu của file này (\"KHÔNG dùng Wikipedia\") → đã bỏ dẫn nguồn đó. Toạ độ vẫn đặt ở trung tâm thị xã Ninh Hòa cũ, chưa có nguồn hợp lệ cho toạ độ xã Bắc Ninh Hòa nên cần tra lại. Bài xác nhận mẹ 93 tuổi, sinh năm 1933."
+    },
+    {
+      "id": "ho-thi-tu-nghe-an",
+      "ten": "Mẹ Việt Nam Anh hùng Hồ Thị Tứ",
+      "lon": 105.5008,
+      "lat": 18.6972,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1928",
+      "mo_ta": "Sinh năm 1928, trú tại xã Đại Huệ, tỉnh Nghệ An; sinh 11 người con, 5 người tham gia quân đội. Hai con trai là liệt sĩ Lưu Phi Hường (hy sinh năm 1973 tại chiến trường Đông Nam Bộ) và liệt sĩ Lưu Phi Vinh (hy sinh năm 1972 tại chiến trường Quảng Trị). Hài cốt anh Hường được gia đình tìm và quy tập năm 1989; hài cốt anh Vinh đến nay chưa xác định được, gia đình đã cung cấp mẫu sinh phẩm cho Chiến dịch 500 ngày đêm tìm kiếm, quy tập hài cốt liệt sĩ.",
+      "cong_trang": "Tiễn hai con trai lên đường nhập ngũ, cả hai lần lượt hy sinh trong hai năm liền kề.",
+      "dia_diem": "Xã Đại Huệ, tỉnh Nghệ An (nơi cư trú)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Bà mẹ Việt Nam anh hùng Hồ Thị Tứ, cho con qua những mùa thương nhớ — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-ho-thi-tu-cho-con-qua-nhung-mua-thuong-nho-1053370"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: dia_diem bản trước ghi \"xã Đại Huệ, HUYỆN NAM ĐÀN (cũ), tỉnh Nghệ An\"; nguồn https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-ho-thi-tu-cho-con-qua-nhung-mua-thuong-nho-1053370 chỉ nói \"trú tại xã Đại Huệ, tỉnh Nghệ An\" — cấp huyện là do người viết tự thêm → đã bỏ. Toạ độ hiện đặt theo giả định Nam Đàn nên có thể lệch; giữ do_tin_cay \"thap\" và cần tra lại bằng nguồn nhà nước. Đã đối chiếu và xác nhận đúng nguồn: sinh 1928, 11 người con, 5 người tham gia Quân đội, liệt sĩ Lưu Phi Hường hy sinh 1973 ở Đông Nam Bộ (quy tập năm 1989 từ tỉnh Long An cũ, nay Tây Ninh), liệt sĩ Lưu Phi Vinh hy sinh 1972 ở Quảng Trị chưa tìm được mộ, và việc thu nhận mẫu sinh phẩm trong «Chiến dịch 500 ngày đêm đẩy mạnh tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ». Bài còn cho biết giấy báo tử của hai anh gửi về cùng một lúc dù hai người hy sinh cách nhau một năm."
+    },
+    {
+      "id": "nguyen-thi-cai-quang-ngai",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Cái",
+      "lon": 108.867,
+      "lat": 15.167,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1919–1994",
+      "mo_ta": "Sinh năm 1919, quê xã Tịnh Minh, huyện Sơn Tịnh (nay xã Trường Giang), tỉnh Quảng Ngãi; đảng viên, Hội trưởng Hội Phụ nữ xã Tịnh Minh từ năm 1970. Chồng là thương binh Lê Bình; ba người con lần lượt hy sinh: liệt sĩ Lê Văn Điệp (tiểu đội trưởng, hy sinh 20/3/1969 tại Tây Nguyên), liệt sĩ Lê Thị Hòa (tiểu đội phó, hy sinh 8/2/1969 khi 19 tuổi) và liệt sĩ Lê Ngọc Tư (cán bộ Huyện đội Sơn Tịnh, hy sinh năm 1973). Chủ tịch nước Lê Đức Anh ký quyết định truy tặng danh hiệu ngày 17/12/1994; mẹ mất cùng năm tại vùng kinh tế mới Sa Thầy, Kon Tum (cũ), nơi gia đình chuyển đến từ 1979.",
+      "cong_trang": "Bám dân, bám làng đấu tranh chính trị và bảo vệ cơ sở cách mạng tại xã Tịnh Minh — địa phương được phong Anh hùng LLVTND năm 1978.",
+      "dia_diem": "Xã Trường Giang (xã Tịnh Minh cũ), huyện Sơn Tịnh, tỉnh Quảng Ngãi",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Mẹ Việt Nam anh hùng Nguyễn Thị Cái: Ba lần khóc thầm lặng lẽ — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-viet-nam-anh-hung-nguyen-thi-cai-ba-lan-khoc-tham-lang-le-1041203"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ đặt ở tâm huyện Sơn Tịnh cũ (15.167, 108.867), không tra ra toạ độ xã Trường Giang cụ thể hơn; mẹ qua đời tại Sa Thầy, Kon Tum nhưng bài viết không nêu địa chỉ cụ thể ở đó nên neo theo quê quán."
+    },
+    {
+      "id": "nguyen-thi-chi-ha-noi",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Chỉ",
+      "lon": 105.834,
+      "lat": 21.036,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1909",
+      "mo_ta": "Sinh năm 1909 tại Gia Quất, Gia Lâm, Hà Nội; kết hôn với thầy đồ Lưu Văn Tý quê làng Vân Đình, Ứng Hòa. Mẹ sinh con muộn, 31 tuổi mới có người con trai đầu lòng và duy nhất là Lưu Đắc Hiếu; chồng mất năm 1953, mẹ một mình nuôi con ăn học. Dù là con một, năm 1964 anh Hiếu vẫn xin trở lại quân ngũ đi chiến trường khi con gái chưa đầy 3 tháng tuổi. Anh hy sinh ngày 31/3/1972 khi đang là Tham mưu phó Trung đoàn 6, Quân khu Trị Thiên; thi hài được đơn vị an táng tại sườn đồi điểm cao 351, khu vực A Sầm, A Lưới (Huế). Bài báo dẫn hai lời kể khác nhau về trường hợp hy sinh: một lời kể nói anh dẫn đầu đội hình đi trinh sát thực địa thì bị pháo địch bắn trúng và hy sinh sau khi được đưa về trạm xá; ông Bùi Ngọc Tuấn, đồng đội của anh, thì cho biết anh trúng bom, bị thương mất hai chân và hy sinh vào trưa cùng ngày. Đến cuối tháng 9/2010, ở tuổi 101, mẹ vẫn chưa tìm được hài cốt con. Những năm sau chiến tranh mẹ tích cực tham gia công tác tổ dân phố, tổ phụ nữ và hội chữ thập đỏ tại phường Ngọc Hà, quận Ba Đình (cũ); năm 80 tuổi mẹ vẫn còn làm Tổ phó tổ dân phố.",
+      "cong_trang": "Một mình nuôi con dâu và cháu gái trong thời gian con trai ở chiến trường; giữ vững hậu phương suốt cuộc kháng chiến chống Mỹ.",
+      "dia_diem": "Số 265 Hoàng Hoa Thám, phường Ngọc Hà (cũ), quận Ba Đình, Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Mong ước của mẹ Nguyễn Thị Chỉ — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/mong-uoc-cua-me-nguyen-thi-chi-1054737"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: mo_ta bản trước chỉ chọn MỘT trong hai lời kể về cái chết của liệt sĩ Lưu Đắc Hiếu (\"bị pháo địch bắn trúng\") rồi ghép liền với chi tiết an táng lấy từ lời kể còn lại. Nguồn https://www.qdnd.vn/ba-me-viet-nam-anh-hung/mong-uoc-cua-me-nguyen-thi-chi-1054737 chứa cả hai và không hòa giải chúng: bản trong bài nói trúng pháo, được đưa về trạm xá; bản của ông Bùi Ngọc Tuấn nói trúng bom, mất hai chân, hy sinh vào trưa 31-3-1972 → đã nêu cả hai theo bất biến #4, không chọn bản gọn hơn. Bổ sung chi tiết anh Hiếu là con MỘT của mẹ — đây là căn cứ của danh hiệu, bản trước bỏ sót. Tên bài trong nguon bản trước ghi \"Nguyện ước của mẹ Nguyễn Thị Chỉ\"; tiêu đề thật là \"Mong ước của mẹ Nguyễn Thị Chỉ\" → đã sửa. LƯU Ý: bài hai lần dùng cụm \"khi còn sống\" khi nói về mẹ, tức mẹ ĐÃ QUA ĐỜI; bài không nêu năm mất nên không suy đoán, nhưng đừng viết như thể mẹ còn sống. Toạ độ đặt gần khu vực phường Ngọc Hà cũ, chưa xác định được vị trí chính xác số nhà 265 Hoàng Hoa Thám."
+    },
+    {
+      "id": "nguyen-thi-duan-nghe-an",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Duân",
+      "lon": 105.583,
+      "lat": 18.833,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1923",
+      "mo_ta": "Sinh năm 1923, quê xã Nghi Mỹ, huyện Nghi Lộc (nay xã Phúc Thọ), tỉnh Nghệ An, trong một gia đình thuần nông nghèo; mẹ sinh được 7 người con (5 trai, 2 gái). Con trai đầu Nguyễn Huy Vẹn nhập ngũ năm 1967, tháng 10/1971 được về phép 20 ngày để cưới vợ, rồi hy sinh ngày 4/7/1972 tại chiến trường Quảng Trị khi chưa kịp có con. Người con trai thứ sáu Nguyễn Huy Đình nhập ngũ năm 1980 vào Đại đội 21, Trung đoàn 10, Sư đoàn 339, Quân khu 9, làm nhiệm vụ quốc tế tại chiến trường Campuchia và hy sinh ngày 25/12/1982, khi đang chuẩn bị được về phép với những món quà đã dành dụm cho gia đình. Mẹ được tặng Huy chương Kháng chiến hạng Ba; ngày 8/10/2014, Chủ tịch nước tặng danh hiệu Bà mẹ Việt Nam anh hùng.",
+      "cong_trang": "Ngôi nhà của mẹ được Ủy ban nhân dân xã Nghi Mỹ mượn làm nơi làm việc và liên lạc của địa phương, đồng thời là điểm dừng chân của nhiều lượt bộ đội hành quân qua địa bàn; những căn hầm chữ A đào quanh nhà nhiều lần thành nơi trú ẩn cho cán bộ, bộ đội và người dân. Mẹ dành dụm thức ăn cho bộ đội và cùng chồng chặt tre, dựng lán cho các chiến sĩ nghỉ chân.",
+      "dia_diem": "Xã Phúc Thọ (xã Nghi Mỹ cũ), huyện Nghi Lộc, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Mẹ Việt Nam anh hùng Nguyễn Thị Duân: Ký ức còn mãi với thời gian — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-viet-nam-anh-hung-nguyen-thi-duan-ky-uc-con-mai-voi-thoi-gian-1042364"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: cong_trang bản trước chỉ ghi mẹ \"là chỗ dựa cho chồng và các con\", bỏ trắng toàn bộ đóng góp thật mà nguồn https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-viet-nam-anh-hung-nguyen-thi-duan-ky-uc-con-mai-voi-thoi-gian-1042364 mô tả (nhà mẹ làm trụ sở làm việc và liên lạc của xã Nghi Mỹ, hầm chữ A, nuôi bộ đội, dựng lán) → đã bổ sung. mo_ta bản trước ghi liệt sĩ Nguyễn Huy Đình \"hy sinh ngày 25/12/1982\" mà không nói ông hy sinh khi LÀM NHIỆM VỤ QUỐC TẾ TẠI CAMPUCHIA thuộc Sư đoàn 339, Quân khu 9 → đã bổ sung. Ngày phong 8-10-2014 và Huy chương Kháng chiến hạng Ba đã xác nhận nguyên văn. Bài cho biết mẹ mừng thọ 102 tuổi năm 2025, khớp với năm sinh 1923. Toạ độ đặt ở tâm huyện Nghi Lộc cũ, chưa tra ra toạ độ xã Phúc Thọ cụ thể hơn."
+    },
+    {
+      "id": "ngo-thi-lang-da-nang",
+      "ten": "Mẹ Việt Nam Anh hùng Ngô Thị Lang",
+      "lon": 108.335,
+      "lat": 15.8794,
+      "loai": "me-vnah",
+      "nam_hien_thi": "khoảng sinh 1921",
+      "mo_ta": "Sinh sống tại phường Hội An Tây, TP Đà Nẵng; chồng là liệt sĩ Huỳnh Kinh Nhi hy sinh năm 1950 trong kháng chiến chống Pháp. Mẹ một mình nuôi ba con, đồng thời nuôi giấu cán bộ cách mạng trong hầm bí mật dưới bếp. Con trai Huỳnh Quang Thợ (sinh 1946) hy sinh năm 1965 khi 19 tuổi trong trận Núi Thành — trận đánh Mỹ đầu tiên thắng lợi của quân dân ta. Do chưa tìm được hài cốt, gia đình lập một ngôi mộ gió tại quê nhà để có nơi thắp hương; nhiều nguồn tin cho biết anh được an táng tại Nghĩa trang liệt sĩ xã Tam Nghĩa (Núi Thành, Quảng Nam cũ) nhưng nơi đây còn nhiều phần mộ chưa xác định được thông tin. Năm 2014 mẹ được phong tặng danh hiệu Bà mẹ Việt Nam anh hùng; năm 2024 mẹ ra Hà Nội dự Lễ ra mắt Ngân hàng gen liệt sĩ chưa xác định thông tin và được lấy mẫu giám định ADN.",
+      "cong_trang": "Nuôi giấu cán bộ cách mạng ngay trong nhà suốt thời kỳ kháng chiến chống Mỹ.",
+      "dia_diem": "Phường Hội An Tây, TP Đà Nẵng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Mẹ Lang và ngôi mộ gió — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-lang-va-ngoi-mo-gio-1053208"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: đã đối chiếu toàn mục với https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-lang-va-ngoi-mo-gio-1053208: năm phong 2014, trận Núi Thành 1965, liệt sĩ Huỳnh Kinh Nhi hy sinh 1950, Huỳnh Quang Thợ sinh 1946 và việc lấy mẫu ADN năm 2024 đều đúng nguồn. Đã bổ sung chi tiết NGÔI MỘ GIÓ — hình ảnh trung tâm của bài mà bản trước bỏ sót — và nói rõ bối cảnh lấy mẫu ADN là Lễ ra mắt Ngân hàng gen liệt sĩ. Bài không nêu năm sinh cụ thể, chỉ ghi mẹ 105 tuổi tính đến bài viết (2026) → suy ra khoảng 1921, không khẳng định chắc chắn. Toạ độ đặt tại trung tâm Hội An cũ; phường Hội An Tây là đơn vị hành chính mới sau sáp nhập 2025."
+    },
+    {
+      "id": "doan-thi-diep-son-la",
+      "ten": "Mẹ Việt Nam Anh hùng Đoàn Thị Diệp",
+      "lon": 103.921,
+      "lat": 21.3273,
+      "loai": "me-vnah",
+      "nam_hien_thi": "khoảng 1918–2025",
+      "mo_ta": "Sống tại Tổ 10 Quyết Thắng, phường Tô Hiệu, tỉnh Sơn La. Mẹ lập gia đình với ông Hà Đồng Hùng ở thôn Phúc Tiền, xã Thái Phúc, huyện Thái Thụy, tỉnh Thái Bình (nay thuộc tỉnh Hưng Yên); ông hy sinh ngày 3/10/1951 khi mới 33 tuổi trong kháng chiến chống Pháp, để mẹ một mình nuôi ba con thơ. Năm 1966, mẹ tiễn hai con trai là Hà Ngọc Hoàng và Hà Đình Khuông vào Nam chiến đấu. Ngày 12/5/1968 mẹ nhận giấy báo tử của anh Hà Ngọc Hoàng; chỉ 6 ngày sau lại nhận tin anh Hà Đình Khuông nằm lại chiến trường miền Nam. Mẹ được phong tặng danh hiệu Bà mẹ Việt Nam anh hùng năm 2010, qua đời tháng 3/2025, thọ 107 tuổi.",
+      "cong_trang": "Một mình nuôi ba con thơ từ khi chồng hy sinh năm 1951, giữ gìn hậu phương suốt hai cuộc kháng chiến.",
+      "dia_diem": "Tổ 10 Quyết Thắng, phường Tô Hiệu, tỉnh Sơn La",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Mẹ Việt Nam anh hùng Đoàn Thị Diệp: Trọn đời son sắt với Tổ quốc — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-viet-nam-anh-hung-doan-thi-diep-tron-doi-son-sat-voi-to-quoc-1038856"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: ghi chú cũ khẳng định \"bài báo không nêu tên hai người con trai liệt sĩ, chỉ ghi hai người con liệt sĩ\" — SAI. Nguồn https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-viet-nam-anh-hung-doan-thi-diep-tron-doi-son-sat-voi-to-quoc-1038856 nêu đích danh Hà Ngọc Hoàng và Hà Đình Khuông, kèm ngày nhận giấy báo tử 12-5-1968 và chi tiết \"chỉ 6 ngày sau\" nhận tin người thứ hai → đã bổ sung. mo_ta bản trước còn ghi \"đến nay gia đình vẫn chưa tìm được phần mộ của cả ba\" — bài KHÔNG hề nói về phần mộ hay hài cốt → đã bỏ vì không có nguồn. Năm phong 2010 đã xác nhận đúng (\"danh hiệu cao quý Bà mẹ Việt Nam Anh hùng được phong tặng mẹ năm 2010\"); lưu ý bài còn một mốc 2010 khác là năm Công ty Điện lực Sơn La nhận phụng dưỡng mẹ, đừng lẫn hai mốc này. Bài nói mẹ lập gia đình với ông Hà Đồng Hùng \"ở thôn Phúc Tiền\" mà không nói rõ đó là quê của ai, nên bản trước ghi \"quê gốc\" của mẹ là suy đoán → đã viết lại theo đúng cách nguồn diễn đạt. Năm sinh suy từ \"từ trần tháng 3-2025, hưởng thọ 107 tuổi\" (~1918), không khẳng định chắc chắn."
+    },
+    {
+      "id": "le-thi-hue-dak-lak",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Huệ",
+      "lon": 109.2547,
+      "lat": 12.7529,
+      "loai": "me-vnah",
+      "nam_hien_thi": "khoảng sinh 1928",
+      "mo_ta": "Sống tại xã Tây Hòa, tỉnh Đắk Lắk; quê gốc Phú Yên. Nhà mẹ ở Phú Yên là cơ sở nuôi giấu cán bộ; bản thân mẹ là phụ nữ trẻ năng nổ, đứng đầu nhiều phong trào ở địa phương, vừa tăng gia sản xuất vừa làm giao liên, tiếp tế cho cách mạng. Năm 1955, chồng mẹ là ông Phùng Kim Khánh (sinh 1927) tập kết ra Bắc, để lại mẹ một mình nuôi con gái Phùng Thị Tuyết Siêm khi ấy mới tròn hai tuổi và giữ vững mạch giao liên; ông trở về đoàn tụ năm 1976. Năm 1971, khi vừa tròn 18 tuổi, chị Tuyết Siêm nhập ngũ làm y tá tại Bệnh xá Hồ Tây (huyện Sơn Hòa, tỉnh Phú Yên trước đây) và hy sinh ngày 11/7/1974 tại Quảng Ngãi — là con duy nhất của mẹ. Bên ngoại mẹ còn có 3 liệt sĩ khác (hai em trai và một em dâu). Chủ tịch nước ký quyết định phong tặng danh hiệu Bà mẹ Việt Nam anh hùng ngày 17/12/1994.",
+      "cong_trang": "Làm giao liên, tiếp tế cho cách mạng và nuôi giấu cán bộ tại cơ sở cách mạng của gia đình từ khi còn là một phụ nữ trẻ.",
+      "dia_diem": "Xã Tây Hòa, tỉnh Đắk Lắk",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Bà mẹ Việt Nam anh hùng Lê Thị Huệ: Lặng thầm một khúc tráng ca — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-le-thi-hue-lang-tham-mot-khuc-trang-ca-1042995"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: mo_ta bản trước ghi xã Tây Hòa \"trước 2025 thuộc HUYỆN SƠN HÒA, tỉnh Phú Yên\". Nguồn https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-le-thi-hue-lang-tham-mot-khuc-trang-ca-1042995 không nói vậy: \"huyện Sơn Hòa\" trong bài là địa chỉ của BỆNH XÁ HỒ TÂY nơi con gái mẹ công tác, bị gán nhầm sang nơi ở của mẹ; Tây Hòa vốn là một huyện riêng của Phú Yên, không thuộc Sơn Hòa → đã bỏ. do_tin_cay_toa_do hạ từ \"trung\" xuống \"thap\" vì điểm hiện tại đặt theo giả định sai đó và chưa có nguồn cho toạ độ xã Tây Hòa. Đã bổ sung đóng góp của chính mẹ (cơ sở nuôi giấu cán bộ, giao liên, đứng đầu phong trào địa phương) mà bản trước để mờ. Năm sinh suy từ \"ở tuổi 98\" (bài đầu tháng 6-2026) → khoảng 1928, không khẳng định chắc chắn. Ngày phong 17-12-1994 đã xác nhận nguyên văn. Con gái mẹ an táng tại Nghĩa trang Liệt sĩ tỉnh Phú Yên (nay thuộc Đắk Lắk) — chi tiết này có trong bài."
+    },
+    {
+      "id": "nguyen-thi-le-hue",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Lé",
+      "lon": 107.3641,
+      "lat": 16.5833,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1919",
+      "mo_ta": "Sinh năm 1919 trong một gia đình thuần nông tại thôn chùa Thiềm Thượng, xã Phong Hòa, huyện Phong Điền, tỉnh Thừa Thiên Huế (nay phường Phong Dinh, TP Huế); sinh 7 người con (4 trai, 3 gái). Con trai Ngô Văn Đạo (sinh 1947) nhập ngũ 1965, Trung đội trưởng Huyện đội Phong Điền, hy sinh tháng 8/1969 khi 24 tuổi tại thôn Đức Phú, xã Phong Hòa. Con gái Ngô Thị Ngãi (sinh 1950) nhập ngũ năm 17 tuổi, thuộc Ban Kinh tế Quân khu Trị Thiên, hy sinh ngày 25/12/1969 khi vận chuyển hàng tiếp tế qua chiến trường A Lưới, cách anh trai chỉ 4 tháng. Được Chủ tịch nước Trường Chinh tặng Huân chương Kháng chiến chống Mỹ hạng Nhất; năm 2014 Chủ tịch nước Trương Tấn Sang phong tặng danh hiệu Bà mẹ Việt Nam anh hùng.",
+      "cong_trang": "Bám đất, bám làng, nuôi giấu cán bộ và tiếp tế lương thực cho bộ đội sau khi hai con lần lượt hy sinh trong vòng 4 tháng.",
+      "dia_diem": "Phường Phong Dinh (xã Phong Hòa cũ), huyện Phong Điền, TP Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Bà mẹ Việt Nam anh hùng và ký ức về hai người con liệt sĩ — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-va-ky-uc-ve-hai-nguoi-con-liet-si-1032599"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ đặt tại thị trấn Phong Điền cũ (16.5833, 107.3641), không tra ra toạ độ thôn chùa Thiềm Thượng cụ thể hơn."
+    },
+    {
+      "id": "nguyen-thi-thanh-xuan-hue",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Thanh Xuân",
+      "lon": 107.5867,
+      "lat": 16.4639,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1950",
+      "mo_ta": "Sinh năm 1950, thường trú Tổ dân phố Long Hồ Hạ 2, phường Kim Long, TP Huế. Năm 1964, khi mới 14 tuổi, mẹ vào du kích chiến đấu tại xã Hương Thọ (huyện Hương Trà, tỉnh Thừa Thiên Huế), làm liên lạc, tiếp tế, vót chông và làm cạm bẫy. Tháng 1/1965 mẹ được giao làm Xã đội phó kiêm tổ trưởng sản xuất vũ khí tự tạo; khoảng giữa năm 1966, tại thôn La Khê, mẹ cùng đồng đội mật phục bên bờ sông Hương, đánh chìm một sà lan tự hành chở lực lượng và vũ khí của Mỹ, tiêu diệt gọn 30 tên. Những năm 1967–1968, trên cương vị Chủ tịch phụ nữ xã kiêm Đội trưởng đội Binh địch vận, mẹ cùng chị em vận động được 12 binh lính đối phương ở Đồn khe Kẹm, quận Nam Hòa quay về với cách mạng. Trong một trận địch bao vây tập kích, mẹ bị mảnh đạn xuyên vào phía sau cột sống dẫn tới liệt hai chân, tỷ lệ tổn thương cơ thể 81%, lại bị nhiễm chất độc da cam. Con trai mẹ là Thượng tá Trần Minh Hải (sinh 1979), Phó Tham mưu trưởng Bộ CHQS tỉnh Thừa Thiên Huế, hy sinh ngày 13/10/2020 khi thực hiện nhiệm vụ cứu dân tại Thủy điện Rào Trăng 3.",
+      "cong_trang": "Vào Đảng khi mới 16 tuổi, mẹ được Chủ tịch nước tặng Huân chương Kháng chiến chống Mỹ, cứu nước hạng Nhì. Chồng mẹ cũng là thương binh 4/4, cùng tuổi, cùng quê và cùng tham gia kháng chiến tại địa phương.",
+      "dia_diem": "Tổ dân phố Long Hồ Hạ 2, phường Kim Long, TP Huế",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quân đội nhân dân — Mẹ Việt Nam Anh hùng Nguyễn Thị Thanh Xuân: Trọn đời với nước non — https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-viet-nam-anh-hung-nguyen-thi-thanh-xuan-tron-doi-voi-nuoc-non-1031256"
+      ],
+      "ghi_chu_bien_tap": "Soát chéo 2026-08-28: NGUỒN CŨ KHÔNG NÓI VỀ NHÂN VẬT NÀY. Bản trước dẫn https://www.qdnd.vn/ba-me-viet-nam-anh-hung/ba-me-viet-nam-anh-hung-va-ky-uc-ve-hai-nguoi-con-liet-si-1032599 — đó là bài về Mẹ VNAH Nguyễn Thị Lé, mở toàn văn không có một lần nào nhắc tên Nguyễn Thị Thanh Xuân, Trần Minh Hải hay Rào Trăng 3. Ghi chú cũ tự nhận thông tin lấy từ \"đoạn giới thiệu bài liên quan trên cùng trang\". Bài riêng về mẹ có thật và nằm ngay trong khối tin liên quan đó → đã thay bằng https://www.qdnd.vn/ba-me-viet-nam-anh-hung/me-viet-nam-anh-hung-nguyen-thi-thanh-xuan-tron-doi-voi-nuoc-non-1031256. HAI CHI TIẾT BỊ BỎ vì không có trong bất kỳ nguồn nào đã mở: \"sạt lở tại Trạm Kiểm lâm 67\" và \"một trong 13 cán bộ, chiến sĩ hy sinh\" — nguồn chỉ nói ông \"hy sinh ngày 13-10-2020 khi thực hiện nhiệm vụ cứu dân tại Thủy điện Rào Trăng 3\". cong_trang bản trước rút gọn mẹ thành người \"nuôi dạy con trai trưởng thành trong quân ngũ\", bỏ mất việc mẹ là THƯƠNG BINH NẶNG 81%, liệt hai chân, nhiễm chất độc da cam và là cán bộ chỉ huy du kích từ năm 14 tuổi → đã viết lại theo nguồn. VÊNH TÊN TRONG CHÍNH NGUỒN: bài ghi tên chồng mẹ là \"Trần Thiên Cường\" ở đoạn đầu và \"Trần Thiện Cường\" ở đoạn sau — chưa chọn bản nào, cần nguồn thứ hai. Toạ độ đặt tại trung tâm TP Huế do chưa tra ra toạ độ phường Kim Long, giữ do_tin_cay \"thap\"."
+    },
+    {
+      "id": "me-vnah-nguyen-thi-ba-tay-ninh",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Ba",
+      "lon": 106.11,
+      "lat": 11.31,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1931",
+      "mo_ta": "Có hai con là liệt sĩ: Trần Thị Đào (hy sinh năm 1969) và Trần Văn Tiên (hy sinh năm 1980).",
+      "dia_diem": "Trú tại phường Long An, tỉnh Tây Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo và phát thanh, truyền hình Tây Ninh — Hội Phụ nữ Công an tỉnh thăm Bà mẹ Việt Nam Anh hùng — https://baotayninh.vn/hoi-phu-nu-cong-an-tinh-tham-ba-me-viet-nam-anh-hung-136468.html"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-le-thi-hai-tay-ninh",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Hai",
+      "lon": 106.11,
+      "lat": 11.31,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh khoảng 1932",
+      "mo_ta": "Chồng là ông Phạm Văn Sưa và con trai Phạm Văn Dân đều là liệt sĩ.",
+      "dia_diem": "Trú tại phường Tân Ninh, tỉnh Tây Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Phụ nữ Việt Nam — Lãnh đạo Hội LHPNVN và phụ nữ Công an nhân dân thăm hỏi, tri ân 13 Mẹ Việt Nam Anh hùng ở Tây Ninh — https://phunuvietnam.vn/lanh-dao-hoi-lhpnvn-va-phu-nu-cong-an-nhan-dan-tham-hoi-tri-an-13-me-viet-nam-anh-hung-o-tay-ninh-20250721210651777.htm"
+      ],
+      "ghi_chu_bien_tap": "Năm sinh là ước tính (bài đăng 21/7/2025 ghi «mẹ 93 tuổi»), không phải năm sinh chính thức nêu trong nguồn. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-le-thi-dau-ben-tre",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Đấu",
+      "lon": 106.48,
+      "lat": 10.18,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh khoảng 1931",
+      "mo_ta": "Người tiên phong hiến đất, hoa màu và tiền của để cùng Nhà nước làm đường giao thông nông thôn tại Giồng Trôm, tạo phong trào lan rộng trong ấp.",
+      "dia_diem": "Ấp Bình An, xã Châu Bình, huyện Giồng Trôm, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Thông tấn xã Việt Nam (vnanet.vn) — Bến Tre: Mẹ Việt Nam Anh hùng Lê Thị Đấu cả cuộc đời tâm huyết xây dựng quê hương — https://vnanet.vn/vi/anh/anh-thoi-su-trong-nuoc-1014/ben-tre-me-viet-nam-anh-hung-le-thi-dau-ca-cuoc-doi-tam-huyet-xay-dung-que-huong-5042073.html"
+      ],
+      "ghi_chu_bien_tap": "Năm sinh ước tính (ảnh đăng 2020 ghi «89 tuổi»); nguồn không nêu rõ số con/chồng hy sinh, chỉ ghi nhận danh hiệu Mẹ VNAH và thành tích hiến đất làm đường. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-ho-thi-neng",
+      "ten": "Mẹ Việt Nam Anh hùng Hồ Thị Neng",
+      "lon": 106.55,
+      "lat": 16.68,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 2024",
+      "mo_ta": "Là mẹ duy nhất còn sống trong đợt 22 Mẹ Việt Nam Anh hùng được tỉnh Quảng Trị trao và truy tặng danh hiệu dịp kỷ niệm 94 năm thành lập Đảng Cộng sản Việt Nam, tháng 1/2024.",
+      "dia_diem": "Xã A Dơi, huyện Hướng Hóa, tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Quảng Trị trao tặng, truy tặng danh hiệu cao quý «Bà mẹ Việt Nam Anh hùng» — https://nhandan.vn/quang-tri-trao-tang-truy-tang-danh-hieu-cao-quy-ba-me-viet-nam-anh-hung-post794749.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh và số con/chồng hy sinh cụ thể — chỉ ghi nhận bà thuộc diện được phong tặng/truy tặng đợt này và còn sống tại thời điểm đăng bài. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-nguyen-thi-ngot",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Ngọt",
+      "lon": 105.97,
+      "lat": 10.08,
+      "loai": "me-vnah",
+      "nam_hien_thi": "khánh thành tượng 2018",
+      "mo_ta": "Chồng và sáu người con hy sinh trong hai cuộc kháng chiến chống Pháp và chống Mỹ; tượng đài đá hoa cương xanh cao 2,2m, rộng 1,2m khánh thành ngày 20/12/2018 tại xã Phú Lộc.",
+      "dia_diem": "Ấp Long Công, xã Phú Lộc, huyện Tam Bình, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Khánh thành tượng Mẹ Việt Nam Anh hùng Nguyễn Thị Ngọt — https://nhandan.vn/khanh-thanh-tuong-me-viet-nam-anh-hung-nguyen-thi-ngot-post344467.html"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-pham-thi-ninh-cu-chi",
+      "ten": "Mẹ Việt Nam Anh hùng, liệt sĩ Phạm Thị Nính",
+      "lon": 106.495,
+      "lat": 10.947,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1916–1954",
+      "mo_ta": "Dẫn đầu cuộc biểu tình đấu tranh với thực dân Pháp tại quê nhà; hy sinh ngày 10/7/1954 ở tuổi 38.",
+      "dia_diem": "Ấp Chánh (nay là ấp Trung), xã Tân Thông Hội, huyện Củ Chi, TP. Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Phụ nữ Nam Bộ — Những Bà mẹ Việt Nam Anh hùng là liệt sĩ — https://baotangphunu.com/nhung-ba-me-viet-nam-anh-hung-la-liet-si/"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-nguyen-thi-tua-cu-chi",
+      "ten": "Mẹ Việt Nam Anh hùng, liệt sĩ Nguyễn Thị Tua",
+      "lon": 106.52,
+      "lat": 10.98,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1915–1950",
+      "mo_ta": "Làm cán bộ tiếp tế lương thực cho bộ đội; hy sinh ngày 2/10/1950 ở tuổi 35.",
+      "dia_diem": "Quê xã Định Hòa, thị xã Thủ Dầu Một, Bình Dương; trú tại ấp Bốn Phú, xã Trung An, huyện Củ Chi, TP. Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Phụ nữ Nam Bộ — Những Bà mẹ Việt Nam Anh hùng là liệt sĩ — https://baotangphunu.com/nhung-ba-me-viet-nam-anh-hung-la-liet-si/"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-nguyen-thi-xen-cu-chi",
+      "ten": "Mẹ Việt Nam Anh hùng, liệt sĩ Nguyễn Thị Xền",
+      "lon": 106.495,
+      "lat": 10.947,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1916–1948",
+      "mo_ta": "Hoạt động trong Hội Phụ nữ, cung cấp lương thực cho Chi đội 12; hy sinh năm 1948 ở tuổi 32.",
+      "dia_diem": "Ấp Tiền, xã Tân Thông Hội, huyện Củ Chi, TP. Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Phụ nữ Nam Bộ — Những Bà mẹ Việt Nam Anh hùng là liệt sĩ — https://baotangphunu.com/nhung-ba-me-viet-nam-anh-hung-la-liet-si/"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-bui-thi-he-cu-chi",
+      "ten": "Mẹ Việt Nam Anh hùng, liệt sĩ Bùi Thị He",
+      "lon": 106.47,
+      "lat": 11,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1921–1963",
+      "mo_ta": "Trưởng ban cán bộ phụ nữ, dẫn đầu cuộc biểu tình tại chợ Phú Hòa Đông; hy sinh ngày 6/9/1963 ở tuổi 42.",
+      "dia_diem": "Ấp Xóm Bưng, xã Nhuận Đức, huyện Củ Chi, TP. Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Phụ nữ Nam Bộ — Những Bà mẹ Việt Nam Anh hùng là liệt sĩ — https://baotangphunu.com/nhung-ba-me-viet-nam-anh-hung-la-liet-si/"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "me-vnah-nguyen-thi-ru-cu-chi",
+      "ten": "Mẹ Việt Nam Anh hùng, liệt sĩ Nguyễn Thị Rư",
+      "lon": 106.5,
+      "lat": 11.05,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1929–1969",
+      "mo_ta": "Tham gia hoạt động cách mạng và chăm sóc thương binh tại địa phương; hy sinh ngày 29/2/1969 ở tuổi 40.",
+      "dia_diem": "Ấp Gia Bẹ, xã Trung Lập Hạ, huyện Củ Chi, TP. Hồ Chí Minh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bảo tàng Phụ nữ Nam Bộ — Những Bà mẹ Việt Nam Anh hùng là liệt sĩ — https://baotangphunu.com/nhung-ba-me-viet-nam-anh-hung-la-liet-si/"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-nuoi-ho-dac-kien",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Nuôi",
+      "lon": 105.9,
+      "lat": 9.68,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 23/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 23/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Hồ Đắc Kiện, TP. Cần Thơ (nguyên huyện Châu Thành, tỉnh Sóc Trăng cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "lam-thi-loi-ho-dac-kien",
+      "ten": "Mẹ Việt Nam Anh hùng Lâm Thị Lợi",
+      "lon": 105.9,
+      "lat": 9.68,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 23/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 23/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Hồ Đắc Kiện, TP. Cần Thơ (nguyên huyện Châu Thành, tỉnh Sóc Trăng cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "truong-thi-thanh-dai-hai",
+      "ten": "Mẹ Việt Nam Anh hùng Trương Thị Thanh",
+      "lon": 105.95,
+      "lat": 9.72,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 23/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 23/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Đại Hải, TP. Cần Thơ (nguyên huyện Kế Sách, tỉnh Sóc Trăng cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-hoi-dai-hai",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hợi",
+      "lon": 105.95,
+      "lat": 9.72,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 23/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 23/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Đại Hải, TP. Cần Thơ (nguyên huyện Kế Sách, tỉnh Sóc Trăng cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-mai-vi-thanh-1",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Mai",
+      "lon": 105.47,
+      "lat": 9.78,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 24/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 24/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Vị Thanh 1, TP. Cần Thơ (nguyên tỉnh Hậu Giang cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-ngan-vi-thanh-1",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Ngàn",
+      "lon": 105.47,
+      "lat": 9.78,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 24/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 24/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Vị Thanh 1, TP. Cần Thơ (nguyên tỉnh Hậu Giang cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-chinh-vi-thanh-1",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Chính",
+      "lon": 105.47,
+      "lat": 9.78,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 24/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 24/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Vị Thanh 1, TP. Cần Thơ (nguyên tỉnh Hậu Giang cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "bui-thi-nhan-vi-thanh-1",
+      "ten": "Mẹ Việt Nam Anh hùng Bùi Thị Nhạn",
+      "lon": 105.47,
+      "lat": 9.78,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 24/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 24/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Vị Thanh 1, TP. Cần Thơ (nguyên tỉnh Hậu Giang cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-xuong-vi-thanh-1",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Xương",
+      "lon": 105.47,
+      "lat": 9.78,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 24/4/2026",
+      "mo_ta": "Được Phòng An ninh đối ngoại, Công an TP. Cần Thơ đến thăm hỏi, tặng quà ngày 24/4/2026 nhân dịp tri ân Mẹ Việt Nam Anh hùng.",
+      "dia_diem": "Xã Vị Thanh 1, TP. Cần Thơ (nguyên tỉnh Hậu Giang cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an TP. Cần Thơ — Phòng An ninh đối ngoại, Công an thành phố Cần Thơ tổ chức thăm, tặng quà Mẹ Việt Nam Anh hùng — https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/phong-an-ninh-doi-ngoai-cong-an-thanh-pho-can-tho-to-chuc-tham-tang-qua-me-viet-nam-anh-hung-6956.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "huynh-thi-nhieu-dat-do",
+      "ten": "Mẹ Việt Nam Anh hùng Huỳnh Thị Nhiều",
+      "lon": 107.2,
+      "lat": 10.5,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "Huyện Đất Đỏ, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "vo-thi-bay-dat-do",
+      "ten": "Mẹ Việt Nam Anh hùng Võ Thị Bảy",
+      "lon": 107.2,
+      "lat": 10.5,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "Huyện Đất Đỏ, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-dau-long-dien",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Đâu",
+      "lon": 107.25,
+      "lat": 10.42,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "Huyện Long Điền, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dang-thi-dinh-long-dien",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Đính",
+      "lon": 107.25,
+      "lat": 10.42,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "Huyện Long Điền, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dang-thi-hai-long-dien",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Hai",
+      "lon": 107.25,
+      "lat": 10.42,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "Huyện Long Điền, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-phep-ba-ria",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Phép",
+      "lon": 107.17,
+      "lat": 10.5,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "TP. Bà Rịa, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "do-thi-thoi-ba-ria",
+      "ten": "Mẹ Việt Nam Anh hùng Đỗ Thị Thôi",
+      "lon": 107.17,
+      "lat": 10.5,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "TP. Bà Rịa, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-nghia-xuyen-moc",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Nghĩa",
+      "lon": 107.45,
+      "lat": 10.57,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 1/2/2018",
+      "mo_ta": "Một trong 8 Mẹ được tỉnh Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 1/2/2018, dịp kỷ niệm 50 năm Tổng tiến công Xuân Mậu Thân 1968.",
+      "dia_diem": "Huyện Xuyên Mộc, tỉnh Bà Rịa - Vũng Tàu (địa giới năm 2018)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — Bà Rịa - Vũng Tàu truy tặng danh hiệu Mẹ Việt Nam Anh hùng — https://nhandan.vn/ba-ria-vung-tau-truy-tang-danh-hieu-me-viet-nam-anh-hung-post315600.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn nhà nước duy nhất tìm được chỉ là danh sách thăm hỏi/truy tặng, nêu tên và nơi cư trú — KHÔNG nêu năm sinh, tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn thêm. Toạ độ là trung tâm xã/huyện cư trú. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "quan-thi-nhon-hai-phong",
+      "ten": "Mẹ Việt Nam Anh hùng Quản Thị Nhớn",
+      "lon": 106.6,
+      "lat": 20.83,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1909",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Xã Quốc Tuấn, huyện An Dương, TP. Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-be-hai-phong",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Bé",
+      "lon": 106.6,
+      "lat": 20.83,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1921",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Xã Quốc Tuấn, huyện An Dương, TP. Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "do-thi-man-hai-phong",
+      "ten": "Mẹ Việt Nam Anh hùng Đỗ Thị Mẫn",
+      "lon": 106.62,
+      "lat": 20.84,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1915",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Xã Đặng Cương, huyện An Dương, TP. Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-tiep-hai-phong",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Tiệp",
+      "lon": 106.58,
+      "lat": 20.85,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1923",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Xã Lê Lợi, huyện An Dương, TP. Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-nuoi-hai-phong",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Nuôi (Hải Phòng)",
+      "lon": 106.63,
+      "lat": 20.86,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1921",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Xã Hồng Thái, huyện An Dương, TP. Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. TRÙNG TÊN, KHÁC NGƯỜI: Mẹ VNAH Lê Thị Nuôi ở xã Hồ Đắc Kiện, TP. Cần Thơ đã có trong kho là người khác — người này sinh 1921 tại Hồng Thái, An Dương, Hải Phòng. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "bui-thi-cam-hai-phong",
+      "ten": "Mẹ Việt Nam Anh hùng Bùi Thị Cam",
+      "lon": 106.68,
+      "lat": 20.83,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1922",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Phường Vĩnh Niệm, quận Lê Chân, TP. Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "hoang-thi-vay-hai-duong",
+      "ten": "Mẹ Việt Nam Anh hùng Hoàng Thị Vậy",
+      "lon": 106.53,
+      "lat": 20.9,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1926",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Xã Kim Xuyên, huyện Kim Thành, TP. Hải Phòng (nguyên tỉnh Hải Dương)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "ngo-thi-nhoan-hai-phong",
+      "ten": "Mẹ Việt Nam Anh hùng Ngô Thị Nhoạn",
+      "lon": 106.6,
+      "lat": 20.65,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1922",
+      "mo_ta": "Có tên trong danh sách chính thức các Mẹ Việt Nam Anh hùng của TP. Hải Phòng do Bộ Chỉ huy Quân sự thành phố công bố.",
+      "dia_diem": "Xã Cộng Hiền, huyện Vĩnh Bảo, TP. Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Chỉ huy Quân sự TP. Hải Phòng — Danh sách Mẹ Việt Nam anh hùng của thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Che-do---Chinh-sach/Danh-sach-Me-Viet-Nam-anh-hung-cua-thanh-pho-Hai-Phong-123378.html"
+      ],
+      "ghi_chu_bien_tap": "MỤC MỎNG CÓ CHỦ Ý: nguồn là danh sách chính thức chỉ gồm tên, năm sinh và xã cư trú — KHÔNG nêu tên chồng hay số con liệt sĩ. Giữ đúng chừng đó, không suy diễn. Toạ độ là trung tâm xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-hen-an-giang",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hến",
+      "lon": 104.95,
+      "lat": 10.62,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1937",
+      "mo_ta": "Chồng đầu — liệt sĩ Nguyễn Văn Huyền — bị địch bắt và xử bắn; con trai Lê Văn Óc (Quang) hy sinh năm 1974 tại Tịnh Biên và con trai Lê Văn Đại hy sinh năm 1972 tại xã Khánh Bình. Chồng sau, ông Lê Văn Đáng, từng bị địch bắt tù đày nhưng sống sót.",
+      "dia_diem": "Tổ 6, khóm Thới Thuận, phường Thới Sơn, tỉnh An Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đảng bộ tỉnh An Giang — https://noibo.angiang.dcs.vn/tim-hieu-lich-su-dia-phuong/me-viet-nam-anh-hung-nguyen-thi-hen-596.html",
+        "Báo An Giang — https://baoangiang.com.vn/trao-nha-tinh-nghia-cho-me-viet-nam-anh-hung-nguyen-thi-hen-a464746.html"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-ba-nhut-ninh",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Ba (Nhựt Ninh)",
+      "lon": 106.42,
+      "lat": 10.53,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2022",
+      "mo_ta": "Được Hội Phụ nữ Công an tỉnh thăm, tặng quà nhân kỷ niệm 75 năm Ngày Thương binh - Liệt sĩ (27/7/2022); có con hy sinh trong chiến tranh bảo vệ Tổ quốc.",
+      "dia_diem": "Xã Nhựt Ninh, huyện Tân Trụ, tỉnh Long An (nay thuộc tỉnh Tây Ninh)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an tỉnh Tây Ninh — https://congan.tayninh.gov.vn/vi/chi-tiet-tin-tuc?Id=21122"
+      ],
+      "ghi_chu_bien_tap": "TRÙNG TÊN, KHÁC NGƯỜI: Mẹ VNAH Nguyễn Thị Ba ở phường Long An, tỉnh Tây Ninh (sinh 1931, con là Trần Thị Đào và Trần Văn Tiên) đã có trong kho là người khác. Nguồn không nêu tên con/chồng hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "huynh-thi-trinh-dong-thap",
+      "ten": "Mẹ Việt Nam Anh hùng Huỳnh Thị Trinh",
+      "lon": 105.63,
+      "lat": 10.47,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2026",
+      "mo_ta": "Chồng và con trai đều là liệt sĩ, hy sinh trong kháng chiến chống Mỹ; được lãnh đạo Công an tỉnh Đồng Tháp đến thăm hỏi, tặng quà ngày 25/7/2026 nhân kỷ niệm 79 năm Ngày Thương binh - Liệt sĩ.",
+      "dia_diem": "Phường Mỹ Ngãi, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Nhân Dân — https://nhandan.vn/dong-thap-tham-tang-qua-me-viet-nam-anh-hung-post977823.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu tên cụ thể chồng và con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-dieu-tay-ninh",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Điểu",
+      "lon": 105.75,
+      "lat": 10.83,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2026",
+      "mo_ta": "Được Công an xã Vĩnh Châu đến thăm hỏi, tặng quà ngày 11/2/2026 trong chương trình «Xuân tình nguyện năm 2026» nhân dịp Tết Nguyên đán Bính Ngọ.",
+      "dia_diem": "Ấp 5, xã Vĩnh Châu, tỉnh Tây Ninh (nguyên huyện Tân Hưng, tỉnh Long An cũ)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an tỉnh Tây Ninh — https://congan.tayninh.gov.vn/vi/chi-tiet-tin-tuc?Id=267702"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-tam-ca-mau",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Tám (Má Tám)",
+      "lon": 105.15,
+      "lat": 9.05,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1911–2003",
+      "mo_ta": "Chồng, ông Trần Ngọc Quang, mất do bị tra tấn tù đày; ba người con trai cùng hai cháu gái hy sinh cùng một ngày trong trận phục kích năm 1970, một người con khác hy sinh năm 1972 tại chiến trường Đông Nam Bộ. Con trai bà là Đại tá Trần Phương Thế (Tám Thậm), nguyên Phó Giám đốc Công an tỉnh Cà Mau, Anh hùng LLVTND.",
+      "dia_diem": "Ấp Bến Bàu, xã Quách Phẩm Bắc, huyện Đầm Dơi, tỉnh Cà Mau",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Công an nhân dân — https://cand.vn/Phong-su-tu-lieu/Ky-niem-ve-nguoi-Me-Viet-Nam-Anh-hung-i98251/"
+      ],
+      "ghi_chu_bien_tap": "TRÙNG BIỆT DANH «Má Tám» với Anh hùng LLVTND, Mẹ VNAH Huỳnh Thị Tân (Má Tám) đã có trong kho — hai người khác nhau, tên thật khác nhau. CHẶN OAN ĐÃ GỠ: cổng dò trùng chập mục này với liệt sĩ Nguyễn Thị TÂM (Truông Bồn, 1946–1968) vì bóc dấu làm «Tám» và «Tâm» thành một chuỗi. Hai người khác tên, khác thời đại, khác địa bàn — đưa vào có chủ ý. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-teo-quang-ninh",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Tẻo",
+      "lon": 107.1,
+      "lat": 20.96,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2009",
+      "mo_ta": "Có một con trai là liệt sĩ. Được Đoàn Thanh niên Toà án nhân dân Tối cao và Toà án nhân dân tỉnh Quảng Ninh đến thăm hỏi, tặng quà nhân kỷ niệm 62 năm Ngày Thương binh - Liệt sĩ.",
+      "dia_diem": "Tổ 16, khu 9, phường Hồng Hà, TP. Hạ Long, tỉnh Quảng Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Ninh — https://baoquangninh.vn/tham-tang-qua-me-viet-nam-anh-hung-o-quang-ninh-2125939.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng chứ không ghi năm sinh, và không nêu tên con liệt sĩ — mô tả giữ đúng chừng đó. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dang-thi-van-quang-ninh",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Vân",
+      "lon": 107.08,
+      "lat": 20.95,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2009",
+      "mo_ta": "Có một con trai là liệt sĩ. Được Đoàn Thanh niên Toà án nhân dân Tối cao và Toà án nhân dân tỉnh Quảng Ninh đến thăm hỏi, tặng quà nhân kỷ niệm 62 năm Ngày Thương binh - Liệt sĩ.",
+      "dia_diem": "Tổ 3, khu 6, phường Hà Lầm, TP. Hạ Long, tỉnh Quảng Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Ninh — https://baoquangninh.vn/tham-tang-qua-me-viet-nam-anh-hung-o-quang-ninh-2125939.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng chứ không ghi năm sinh, và không nêu tên con liệt sĩ. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "do-thi-tu-hung-yen",
+      "ten": "Mẹ Việt Nam Anh hùng Đỗ Thị Từ",
+      "lon": 105.97,
+      "lat": 20.95,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1927",
+      "mo_ta": "Có hai người con là liệt sĩ; hiện sống một mình. Được Bộ Chỉ huy Quân sự tỉnh Hưng Yên đến thăm hỏi, tri ân.",
+      "dia_diem": "Thôn Trần Phú, xã Long Hưng, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT xã Long Hưng, tỉnh Hưng Yên — https://longhung.hungyen.gov.vn/bo-chqs-tinh-hung-yen-tri-an-me-viet-nam-anh-hung-tren-dia-ban-xa-long-hung/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu tên con liệt sĩ. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dang-thi-em-can-duoc",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Em",
+      "lon": 106.6,
+      "lat": 10.55,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2023",
+      "mo_ta": "Được Chi đoàn Công an huyện Cần Đước phối hợp Đoàn TNCS Hồ Chí Minh huyện chăm sóc theo mô hình «Người con hiếu thảo» — dọn nhà, chăm sóc bàn thờ, thăm khám sức khoẻ nhân kỷ niệm 76 năm Ngày Thương binh - Liệt sĩ.",
+      "dia_diem": "Ấp 6, xã Phước Tuy, huyện Cần Đước, tỉnh Long An (nay thuộc tỉnh Tây Ninh)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Công an tỉnh Tây Ninh — https://congan.tayninh.gov.vn/vi/chi-tiet-tin-tuc?Id=92567"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-bau-bac-giang",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Bầu",
+      "lon": 106.15,
+      "lat": 21.33,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1928",
+      "mo_ta": "Nuôi bảy người con trai, hai người hy sinh: Nguyễn Văn Nghìn (sinh 1949, hy sinh trong Tổng tiến công Xuân Mậu Thân 1968) và Nguyễn Trọng Tải (sinh 1955, hy sinh đầu năm 1979 tại chiến trường Campuchia). Chồng bà là ông Nguyễn Văn Chất.",
+      "dia_diem": "Thôn Lãn Tranh 1, xã Liên Chung, huyện Tân Yên, tỉnh Bắc Giang",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đài Phát thanh - Truyền hình Bắc Ninh — https://baobacninhtv.vn/bg/tan-yen/tin-tuc-su-kien/295420/me-viet-nam-anh-hung-nguyen-thi-bau-mot-doi-lang-le-hy-sinh.htm"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-minh-thuy-khanh-hoa",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Minh Thủy",
+      "lon": 109.19,
+      "lat": 12.24,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 2018",
+      "mo_ta": "Chồng là Thượng tá phi công Dương Văn Thanh, hy sinh ngày 29/5/2005 khi máy bay gặp sự cố trong chuyến bay huấn luyện — ông đã lái máy bay hướng ra biển để tránh khu dân cư. Con trai là Thiếu tá phi công Dương Lê Minh, sinh năm 1984, hy sinh ngày 18/10/2016 cũng trong một chuyến bay huấn luyện gặp trục trặc kỹ thuật. Được phong tặng danh hiệu Mẹ Việt Nam Anh hùng năm 2018.",
+      "dia_diem": "Phường Nha Trang, tỉnh Khánh Hòa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Sức khỏe & Đời sống — https://suckhoedoisong.vn/me-viet-nam-anh-hung-le-minh-thuy-to-quoc-mai-xanh-tuoi-169220726174513447.htm"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi bà là Mẹ VNAH trẻ nhất nước tại thời điểm phong tặng — không đưa vào mô tả vì «trẻ nhất» là so sánh có thể thay đổi theo thời gian. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dinh-thi-so-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Đinh Thị Sở",
+      "lon": 106.78,
+      "lat": 17.22,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1924",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Tân Hòa, xã Tân Thủy, huyện Lệ Thủy, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-gia-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Gia",
+      "lon": 106.78,
+      "lat": 17.22,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1925",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Bình Minh, xã Dương Thủy, huyện Lệ Thủy, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "ho-thi-dang-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Hồ Thị Đằng",
+      "lon": 106.78,
+      "lat": 17.22,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1922",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Tổ dân phố 6, thị trấn Kiến Giang, huyện Lệ Thủy, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "pham-thi-bot-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Phạm Thị Bót",
+      "lon": 106.78,
+      "lat": 17.22,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1928",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Mỹ Hà, xã Mỹ Thủy, huyện Lệ Thủy, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-yem-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Yêm",
+      "lon": 106.67,
+      "lat": 17.37,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1917",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Đồn, xã Vạn Ninh, huyện Quảng Ninh, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-toi-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Tôi",
+      "lon": 106.67,
+      "lat": 17.37,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1923",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Nguyệt Áng, xã Tân Ninh, huyện Quảng Ninh, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-tieu-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Tiệu",
+      "lon": 106.67,
+      "lat": 17.37,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1924",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Trung, xã Võ Ninh, huyện Quảng Ninh, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-bon-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Bòn",
+      "lon": 106.67,
+      "lat": 17.37,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1920",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Phú Ninh, xã Duy Ninh, huyện Quảng Ninh, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dang-thi-chan-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Chấn",
+      "lon": 106.6,
+      "lat": 17.47,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1927",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Đức Hoa, xã Đức Ninh, TP Đồng Hới, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "lai-thi-sen-qb",
+      "ten": "Mẹ Việt Nam Anh hùng Lại Thị Sen",
+      "lon": 106.6,
+      "lat": 17.47,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1926",
+      "mo_ta": "Có tên trong «Danh sách Mẹ Việt Nam Anh hùng còn sống» do UBND tỉnh Quảng Bình công bố kèm Công văn số 1108/UBND/VX ngày 17/9/2015.",
+      "dia_diem": "Thôn Sa Động, xã Bảo Ninh, TP Đồng Hới, tỉnh Quảng Bình",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND tỉnh Quảng Bình — Danh sách Mẹ Việt Nam Anh hùng còn sống, kèm Công văn số 1108/UBND/VX ngày 17/9/2015 — https://quangbinh.gov.vn/3cms/upload/qbportal/File/VBPQ/2015/09/CV-1108-UBND-VX-DS.doc"
+      ],
+      "ghi_chu_bien_tap": "Đọc thẳng từ tệp .doc gốc trên cổng UBND tỉnh (giải mã UTF-16LE), KHÔNG qua bản chuyển đổi của công cụ — bản chuyển đổi làm sai cả tên người lẫn tên xã. Danh sách chỉ có họ tên, năm sinh và địa chỉ; không nêu chồng/con hy sinh. Toạ độ đặt ở TÂM HUYỆN vì chưa tra được toạ độ thôn/xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-truyen-nghe-an",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Truyện",
+      "lon": 105.65,
+      "lat": 18.68,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 2014",
+      "mo_ta": "Có hai con trai là liệt sĩ: Nguyễn Văn Nguyệt hy sinh năm 1965 và Nguyễn Văn Vương hy sinh giai đoạn 1970–1972 tại chiến trường miền Nam. Được phong tặng danh hiệu Mẹ Việt Nam Anh hùng năm 2014.",
+      "dia_diem": "Xóm 1, xã Hưng Thịnh, huyện Hưng Nguyên, tỉnh Nghệ An",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT huyện Hưng Nguyên, Nghệ An — https://hungnguyen.nghean.gov.vn/van-hoa-xa-ho/chuyen-ve-nhung-nguoi-me-viet-nam-anh-hung-576850"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh chính xác — mô tả không nêu. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dang-thi-thu-hoai-an",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Thu",
+      "lon": 108.02,
+      "lat": 14.35,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1930",
+      "mo_ta": "Chồng và con đều là liệt sĩ, hy sinh trong kháng chiến chống Mỹ cứu nước.",
+      "dia_diem": "Phường Đăk Cấm; quê gốc xã Ân Tường, huyện Hoài Ân, tỉnh Bình Định cũ (nay thuộc tỉnh Gia Lai)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Quảng Ngãi — https://baoquangngai.vn/tham-tang-qua-me-viet-nam-anh-hung-dang-thi-thu-4066152.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-kinh-thanh-hoa",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Kính",
+      "lon": 105.65,
+      "lat": 19.75,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 2021",
+      "mo_ta": "Được UBND tỉnh Thanh Hóa tổ chức lễ trao tặng danh hiệu Mẹ Việt Nam Anh hùng tại hội trường UBND xã Tân Khang ngày 1/6/2021.",
+      "dia_diem": "Xã Tân Khang, huyện Nông Cống, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Hóa — https://baothanhhoa.vn/phong-tang-danh-hieu-ba-me-viet-nam-anh-hung-cho-me-le-thi-kinh-137523.htm"
+      ],
+      "ghi_chu_bien_tap": "Nguồn chỉ xác nhận lễ trao tặng, không nêu năm sinh hay tên con/chồng hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-tit-soc-son",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Tít",
+      "lon": 105.9,
+      "lat": 21.25,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1895–1975",
+      "mo_ta": "Sinh chín người con, trong đó hai con trai là liệt sĩ — Nguyễn Xuân Minh (1928–1952, hy sinh tại trận Chân Mộng - Trạm Thản) và Nguyễn Minh Hoàng (1942–1969, hy sinh ở mặt trận phía Nam); gia đình còn có một con rể và một cháu cũng hy sinh. Được truy tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 8/11/2023.",
+      "dia_diem": "Xã Hồng Kỳ, huyện Sóc Sơn, TP. Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/huyen-soc-son-truy-tang-danh-hieu-ba-me-viet-nam-anh-hung-cho-me-nguyen-thi-tit-647337.html"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "kieu-thi-lan-quoc-oai",
+      "ten": "Mẹ Việt Nam Anh hùng Kiều Thị Lạn",
+      "lon": 105.55,
+      "lat": 20.98,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1922",
+      "mo_ta": "Sinh bảy con trai và một con gái, trong đó ba con trai là liệt sĩ.",
+      "dia_diem": "Thôn Vĩnh Phúc, xã Liệp Tuyết, huyện Quốc Oai, TP. Hà Nội",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hànộimới — https://hanoimoi.vn/tri-an-ba-me-viet-nam-anh-hung-nu-benh-binh-tai-huyen-dan-phuong-quoc-oai-672740.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi bà là Mẹ VNAH cao tuổi nhất TP Hà Nội tính đến tháng 7/2024 — không đưa vào mô tả vì «cao tuổi nhất» là so sánh thay đổi theo thời gian. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-ngoc-anh-dong-nai",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Ngọc Anh",
+      "lon": 107.16,
+      "lat": 10.93,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 2022",
+      "mo_ta": "Chồng là liệt sĩ Nguyễn Bá và con trai duy nhất là liệt sĩ Nguyễn Thiệu, đều hy sinh trong kháng chiến chống Mỹ cứu nước. Được trao tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 25/1/2022.",
+      "dia_diem": "Khu phố Trần Cao Vân, thị trấn Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai — https://baodongnai.com.vn/tintuc/202201/trao-tang-danh-hieu-ba-me-viet-nam-anh-hung-cho-ba-tran-thi-ngoc-anh-3100666/"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "ho-thi-vang-dong-nai",
+      "ten": "Mẹ Việt Nam Anh hùng Hồ Thị Vàng",
+      "lon": 106.82,
+      "lat": 10.93,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2026",
+      "mo_ta": "Chồng và con đều là liệt sĩ, hy sinh vì sự nghiệp đấu tranh giải phóng dân tộc. Được đoàn thanh niên tổ chức bữa cơm tri ân tại nhà nhân kỷ niệm 79 năm Ngày Thương binh - Liệt sĩ.",
+      "dia_diem": "Khu phố Bình Thạnh, phường Tân Triều, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai — https://baodongnai.com.vn/chinh-tri/doan-the/202607/am-tinh-bua-com-tri-an-tai-gia-dinh-me-viet-nam-anh-hung-ho-thi-vang-1961b77/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng chứ không nêu năm sinh, và không nêu tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-truc-long-khanh",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Trúc",
+      "lon": 107.25,
+      "lat": 10.95,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 25/9/2024",
+      "mo_ta": "Được tỉnh Đồng Nai truy tặng danh hiệu Bà mẹ Việt Nam Anh hùng ngày 25/9/2024, cùng đợt với hai mẹ Lê Thị Xinh và Nguyễn Thị Hai.",
+      "dia_diem": "Phường Xuân Tân, TP. Long Khánh, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai — https://baodongnai.com.vn/chinh-tri/202409/cham-soc-tot-hon-cac-me-viet-nam-anh-hung-58d0a07/"
+      ],
+      "ghi_chu_bien_tap": "ĐÍNH CHÍNH NĂM: bản nộp ghi 25/9/2026 — bài đăng ngày 25/09/2024 và viết «Sáng nay 25-9… Lễ Trao tặng… năm 2024». Ngày 25/9/2026 còn ở TƯƠNG LAI so với lúc soạn mục này, nên không thể là ngày đã diễn ra lễ. Nguồn không nêu tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-xinh-nhon-trach",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Xinh",
+      "lon": 106.85,
+      "lat": 10.68,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 25/9/2024",
+      "mo_ta": "Được tỉnh Đồng Nai truy tặng danh hiệu Bà mẹ Việt Nam Anh hùng ngày 25/9/2024, cùng đợt với hai mẹ Nguyễn Thị Trúc và Nguyễn Thị Hai.",
+      "dia_diem": "Xã Phước Khánh, huyện Nhơn Trạch, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai — https://baodongnai.com.vn/chinh-tri/202409/cham-soc-tot-hon-cac-me-viet-nam-anh-hung-58d0a07/"
+      ],
+      "ghi_chu_bien_tap": "ĐÍNH CHÍNH NĂM: bản nộp ghi 2026, bài đăng 25/09/2024 và nêu rõ «năm 2024». Nguồn không nêu tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-hai-phu-hoi",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hai (Phú Hội)",
+      "lon": 106.9,
+      "lat": 10.7,
+      "loai": "me-vnah",
+      "nam_hien_thi": "truy tặng 25/9/2024",
+      "mo_ta": "Được tỉnh Đồng Nai truy tặng danh hiệu Bà mẹ Việt Nam Anh hùng ngày 25/9/2024, cùng đợt với hai mẹ Nguyễn Thị Trúc và Lê Thị Xinh.",
+      "dia_diem": "Ấp Đất Mới, xã Phú Hội, huyện Nhơn Trạch, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai — https://baodongnai.com.vn/chinh-tri/202409/cham-soc-tot-hon-cac-me-viet-nam-anh-hung-58d0a07/"
+      ],
+      "ghi_chu_bien_tap": "ĐÍNH CHÍNH NĂM: bản nộp ghi 2026, bài đăng 25/09/2024. «Nguyễn Thị Hai» là tên phổ biến nên slug kèm địa danh. Nguồn không nêu tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "do-thi-gam-mang-thit",
+      "ten": "Mẹ Việt Nam Anh hùng Đỗ Thị Gấm",
+      "lon": 106.05,
+      "lat": 10.2,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2014",
+      "mo_ta": "Chồng và các con đều hy sinh trong kháng chiến.",
+      "dia_diem": "Xã Chánh An, huyện Mang Thít, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Vĩnh Long — https://baovinhlong.com.vn/thoi-su/201408/nhung-nguoi-me-anh-hung-cua-dan-toc-anh-hung-2537914/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng (2014) chứ không nêu năm sinh, và không nêu tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-phi-mang-thit",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Phi",
+      "lon": 106.05,
+      "lat": 10.2,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2014",
+      "mo_ta": "Chồng đầu là liệt sĩ Tô Văn Sữa, hy sinh trong kháng chiến chống Pháp khi con thứ hai mới 2 tuổi và bà đang mang thai hơn 3 tháng. Chồng sau là liệt sĩ Phùng Văn Quốc cũng hy sinh; con trai Phùng Văn Vĩnh mất trong tù Côn Đảo.",
+      "dia_diem": "Xã Chánh An, huyện Mang Thít, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Vĩnh Long — https://baovinhlong.com.vn/thoi-su/201408/nhung-nguoi-me-anh-hung-cua-dan-toc-anh-hung-2537914/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng (2014) chứ không nêu năm sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "pham-thi-be-hoa-thanh",
+      "ten": "Mẹ Việt Nam Anh hùng Phạm Thị Bé",
+      "lon": 106.13,
+      "lat": 11.28,
+      "loai": "me-vnah",
+      "nam_hien_thi": "kháng chiến chống Mỹ",
+      "mo_ta": "Chồng là liệt sĩ Phan Văn Rành; chồng và con đều hy sinh trong kháng chiến chống Mỹ cứu nước.",
+      "dia_diem": "Ấp Năm Trại, xã Trường Đông, thị xã Hòa Thành, tỉnh Tây Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo và phát thanh, truyền hình Tây Ninh — https://baotayninh.vn/bai-1-nhung-nguoi-me-mang-hinh-hai-dat-nuoc-a187118.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay năm phong tặng. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-mia-duong-minh-chau",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Mỉa",
+      "lon": 106.25,
+      "lat": 11.35,
+      "loai": "me-vnah",
+      "nam_hien_thi": "kháng chiến chống Mỹ",
+      "mo_ta": "Chồng là liệt sĩ Cao Văn Nở và con trai là liệt sĩ Cao Văn Khọn, đều hy sinh trong kháng chiến chống Mỹ cứu nước.",
+      "dia_diem": "Xã Bàu Năng, huyện Dương Minh Châu, tỉnh Tây Ninh",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo và phát thanh, truyền hình Tây Ninh — https://baotayninh.vn/bai-1-nhung-nguoi-me-mang-hinh-hai-dat-nuoc-a187118.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay năm phong tặng. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "huynh-thi-tao-phu-my",
+      "ten": "Mẹ Việt Nam Anh hùng Huỳnh Thị Tào",
+      "lon": 109.05,
+      "lat": 14.15,
+      "loai": "me-vnah",
+      "nam_hien_thi": "phong tặng 12/2014",
+      "mo_ta": "Sinh ra trong gia đình nông dân nghèo tại xã Mỹ Hiệp. Chồng là liệt sĩ Nguyễn Sách; con trai cả là liệt sĩ Nguyễn Quyên, hy sinh năm 1963 tại đồi 10, huyện Hoài Nhơn; con trai thứ hai Nguyễn Thanh Ba cũng tham gia hoạt động cách mạng. Được phong tặng danh hiệu Mẹ Việt Nam Anh hùng giữa tháng 12/2014.",
+      "dia_diem": "Thôn An Trinh, xã Mỹ Hiệp, huyện Phù Mỹ, tỉnh Bình Định cũ (nay thuộc tỉnh Gia Lai)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Gia Lai — https://baogialai.com.vn/chuyen-cua-me-viet-nam-anh-hung-huynh-thi-tao-post528609.html"
+      ],
+      "ghi_chu_bien_tap": "Năm sinh khoảng 1922 chỉ suy từ tuổi nêu trong bài — là phép tính, không phải dữ kiện nguồn nêu thẳng, nên không đưa vào. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "ho-thi-dat-kon-gang",
+      "ten": "Mẹ Việt Nam Anh hùng Hồ Thị Đạt",
+      "lon": 108.15,
+      "lat": 14.15,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1937",
+      "mo_ta": "Chồng và con trai đều là liệt sĩ, hy sinh vì sự nghiệp giải phóng dân tộc. Được Công ty Cảng Quy Nhơn nhận chăm sóc, phụng dưỡng nhân kỷ niệm 79 năm Ngày Thương binh - Liệt sĩ.",
+      "dia_diem": "Xã Kon Gang, tỉnh Gia Lai",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Gia Lai — https://baogialai.com.vn/cang-quy-nhon-nhan-phung-duong-me-viet-nam-anh-hung-ho-thi-dat-post593476.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu tên chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-toi-vung-liem",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Tới",
+      "lon": 106.15,
+      "lat": 10.1,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2014",
+      "mo_ta": "Hai con trai là liệt sĩ Huỳnh Văn Muôn và liệt sĩ Huỳnh Văn Đen, đều hy sinh và đến nay chưa tìm được phần mộ.",
+      "dia_diem": "Xã Thanh Bình, huyện Vũng Liêm, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Vĩnh Long — https://baovinhlong.com.vn/thoi-su/201408/nhung-nguoi-me-anh-hung-cua-dan-toc-anh-hung-2537914/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng (2014) chứ không nêu năm sinh. CHẶN OAN ĐÃ GỠ: cổng dò trùng chập mục này với Mẹ VNAH Nguyễn Thị TÔI (Tân Ninh, Quảng Bình) vì bóc dấu làm «Tới» và «Tôi» thành một chuỗi. Hai tên khác nhau, hai tỉnh khác nhau. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "huynh-thi-toan-tam-ky",
+      "ten": "Mẹ Việt Nam Anh hùng Huỳnh Thị Toàn",
+      "lon": 108.47,
+      "lat": 15.57,
+      "loai": "me-vnah",
+      "nam_hien_thi": "vẽ chân dung 2010",
+      "mo_ta": "Được hoạ sĩ Đặng Ái Việt vẽ chân dung trong hành trình vẽ các Mẹ Việt Nam Anh hùng cả nước năm 2010.",
+      "dia_diem": "Phường Tân Thạnh, TP. Tam Kỳ, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đà Nẵng — Câu chuyện của mẹ — https://baodanang.vn/cau-chuyen-cua-me-3151335.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn chỉ ghi nhận là Mẹ VNAH được vẽ chân dung, không nêu năm sinh hay chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "dang-thi-so-tam-ky",
+      "ten": "Mẹ Việt Nam Anh hùng Đặng Thị Sở",
+      "lon": 108.48,
+      "lat": 15.58,
+      "loai": "me-vnah",
+      "nam_hien_thi": "vẽ chân dung 2010",
+      "mo_ta": "Được hoạ sĩ Đặng Ái Việt vẽ chân dung trong hành trình vẽ các Mẹ Việt Nam Anh hùng cả nước năm 2010.",
+      "dia_diem": "Phường An Xuân, TP. Tam Kỳ, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đà Nẵng — Câu chuyện của mẹ — https://baodanang.vn/cau-chuyen-cua-me-3151335.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "quach-thi-dich-tam-ky",
+      "ten": "Mẹ Việt Nam Anh hùng Quách Thị Địch",
+      "lon": 108.49,
+      "lat": 15.56,
+      "loai": "me-vnah",
+      "nam_hien_thi": "vẽ chân dung 2010",
+      "mo_ta": "Được hoạ sĩ Đặng Ái Việt vẽ chân dung trong hành trình vẽ các Mẹ Việt Nam Anh hùng cả nước năm 2010.",
+      "dia_diem": "Phường An Mỹ, TP. Tam Kỳ, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đà Nẵng — Câu chuyện của mẹ — https://baodanang.vn/cau-chuyen-cua-me-3151335.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay chồng/con hy sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "vo-thi-nhieu-tam-thang",
+      "ten": "Mẹ Việt Nam Anh hùng Võ Thị Nhiều",
+      "lon": 108.45,
+      "lat": 15.61,
+      "loai": "me-vnah",
+      "nam_hien_thi": "kháng chiến chống Mỹ",
+      "mo_ta": "Con trai là liệt sĩ Phạm Hàng, hy sinh trong kháng chiến chống Mỹ; các di vật hoạt động cách mạng của anh đã được gia đình hiến tặng bảo tàng.",
+      "dia_diem": "Xã Tam Thăng, TP. Tam Kỳ, tỉnh Quảng Nam",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đà Nẵng — Câu chuyện của mẹ — https://baodanang.vn/cau-chuyen-cua-me-3151335.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-tin-tuy-hoa",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Tin",
+      "lon": 109.28,
+      "lat": 13.1,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1907",
+      "mo_ta": "Ba người con là liệt sĩ: Đỗ Trị, Đỗ Tấn Bích và Đỗ Tấn Tân. Con gái bà — Đỗ Thị An — cũng là Mẹ Việt Nam Anh hùng; gia đình qua ba thế hệ có sáu liệt sĩ. Truy tặng năm 1994.",
+      "dia_diem": "Thôn Thượng Phú, xã Bình Kiến, TP. Tuy Hòa, tỉnh Phú Yên (nay thuộc tỉnh Đắk Lắk)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Phú Yên (Báo Đắk Lắk) — Hai mẹ con, hai Bà mẹ Việt Nam anh hùng — https://phuyen.baodaklak.vn/94/319663/hai-me-con-hai-ba-me-viet-nam-anh-hung.html"
+      ],
+      "ghi_chu_bien_tap": "Hai mẹ con cùng là Mẹ VNAH — trường hợp hiếm, xem mục đi kèm do-thi-an-tuy-hoa. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "do-thi-an-tuy-hoa",
+      "ten": "Mẹ Việt Nam Anh hùng Đỗ Thị An",
+      "lon": 109.28,
+      "lat": 13.1,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1928",
+      "mo_ta": "Chồng là liệt sĩ Đoàn Trịnh và hai con gái là liệt sĩ Đoàn Thị Ninh, liệt sĩ Đoàn Thị Mỹ Linh, đều hy sinh. Bà là con gái của Mẹ Việt Nam Anh hùng Nguyễn Thị Tin; gia đình qua ba thế hệ có sáu liệt sĩ. Truy tặng năm 1995.",
+      "dia_diem": "Thôn Thượng Phú, xã Bình Kiến, TP. Tuy Hòa, tỉnh Phú Yên (nay thuộc tỉnh Đắk Lắk)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Phú Yên (Báo Đắk Lắk) — Hai mẹ con, hai Bà mẹ Việt Nam anh hùng — https://phuyen.baodaklak.vn/94/319663/hai-me-con-hai-ba-me-viet-nam-anh-hung.html"
+      ],
+      "ghi_chu_bien_tap": "Hai mẹ con cùng là Mẹ VNAH — trường hợp hiếm, xem mục đi kèm nguyen-thi-tin-tuy-hoa. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "duong-thi-quyt-tuy-an",
+      "ten": "Mẹ Việt Nam Anh hùng Dương Thị Quýt",
+      "lon": 109.22,
+      "lat": 13.28,
+      "loai": "me-vnah",
+      "nam_hien_thi": "chồng hy sinh 1966",
+      "mo_ta": "Chồng hy sinh năm 1966; hai con trai là liệt sĩ Nguyễn Thanh Hồng (hy sinh 1972) và liệt sĩ Nguyễn Dương Lành (hy sinh 1971), đều tham gia cách mạng và anh dũng hy sinh.",
+      "dia_diem": "Thôn Hòa Đa, xã An Mỹ, huyện Tuy An, tỉnh Phú Yên (nay thuộc tỉnh Đắk Lắk)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Phú Yên (Báo Đắk Lắk) — https://phuyen.baodaklak.vn/400/181358/sang-ngoi-tam-guong-nguoi-me-viet-nam-anh-hung/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng chứ không nêu năm sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "huynh-thi-sen-chau-thoi",
+      "ten": "Mẹ Việt Nam Anh hùng Huỳnh Thị Sến",
+      "lon": 105.55,
+      "lat": 9.35,
+      "loai": "me-vnah",
+      "nam_hien_thi": "hai con hy sinh 1972",
+      "mo_ta": "Hai con là liệt sĩ, cùng hy sinh năm 1972. Con gái là liệt sĩ Trần Thị Cúc Nương, diễn viên Đoàn Văn công tỉnh Bạc Liêu, hy sinh ngay trên sân khấu khi đang biểu diễn vai nữ anh hùng Võ Thị Sáu trong một trận không kích; con trai là liệt sĩ Trần Hùng Dũng. Bản thân bà có 66 năm tuổi Đảng, từng là Uỷ viên Ban Chấp hành xã Minh Diệu.",
+      "dia_diem": "Ấp Thanh Hưng 2, xã Châu Thới, tỉnh Cà Mau (nguyên tỉnh Bạc Liêu)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cà Mau — Ký ức những người mẹ anh hùng — https://baocamau.vn/ky-uc-nhung-nguoi-me-anh-hung-a123741.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng (97 tuổi) chứ không nêu năm sinh — mô tả cố ý không suy ngược ra năm sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-ba-my-tu",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Ba",
+      "lon": 105.9,
+      "lat": 9.68,
+      "loai": "me-vnah",
+      "nam_hien_thi": "kháng chiến chống Mỹ",
+      "mo_ta": "Chồng là ông Nguyễn Văn Văn cùng hai người con đều hy sinh trong kháng chiến chống Mỹ; một người con khác trở về mang thương tật.",
+      "dia_diem": "Ấp Phước Thới B, xã Mỹ Phước, huyện Mỹ Tú, tỉnh Sóc Trăng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Sóc Trăng — Tấm lòng của những Bà mẹ Việt Nam anh hùng — https://baosoctrang.org.vn/van-hoa-the-thao-du-lich/202407/tam-long-cua-nhung-ba-me-viet-nam-anh-hung-442037e/"
+      ],
+      "ghi_chu_bien_tap": "Nguồn gọi các con bằng thứ bậc trong nhà («Anh Hai», «Chị Ba», «Anh Năm») chứ không nêu tên riêng — mô tả giữ đúng chừng đó, không đặt tên thay nguồn. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-le-phuoc-long-ca-mau",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Lê",
+      "lon": 105.15,
+      "lat": 9.25,
+      "loai": "me-vnah",
+      "nam_hien_thi": "hơn 65 năm tuổi Đảng",
+      "mo_ta": "Chồng là liệt sĩ Võ Văn Nầy, hy sinh năm 1972; con trai duy nhất là liệt sĩ Võ Văn Rọi, hy sinh năm 1973. Bà có hơn 65 năm tuổi Đảng.",
+      "dia_diem": "Ấp Long Thành, xã Phước Long, tỉnh Cà Mau",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cà Mau — Ký ức những người mẹ anh hùng — https://baocamau.vn/ky-uc-nhung-nguoi-me-anh-hung-a123741.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng chứ không nêu năm sinh. CHAN OAN DA GO: cong do trung chap muc nay voi Anh hung LLVTND Nguyen Thi LE («Nu ho tuong», Duc Hoa, Long An, 1929-1974) vi boc dau lam «Le» va «Le» thanh mot chuoi. Hai ten khac nhau, hai tinh khac nhau, hai loai danh hieu khac nhau. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "bui-thi-day-ba-ria",
+      "ten": "Mẹ Việt Nam Anh hùng Bùi Thị Đay",
+      "lon": 107.17,
+      "lat": 10.5,
+      "loai": "me-vnah",
+      "nam_hien_thi": "chồng hy sinh 1966",
+      "mo_ta": "Chồng là liệt sĩ Trần Cao Chí, hy sinh năm 1966 trong kháng chiến chống Mỹ; con trai là liệt sĩ Trần Cao Ái, hy sinh năm 1975 tại Bình Định, đến nay chưa tìm được hài cốt. Gia đình gần đây được lấy mẫu ADN để tiếp tục tìm kiếm.",
+      "dia_diem": "Phường Bà Rịa, TP. Hồ Chí Minh (nguyên TP. Bà Rịa, tỉnh Bà Rịa - Vũng Tàu)",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Sài Gòn Giải Phóng — Luôn ở bên mẹ — https://www.sggp.org.vn/luon-o-ben-me-post864147.html"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-huu-tai-tphcm",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hữu Tài",
+      "lon": 106.7,
+      "lat": 10.78,
+      "loai": "me-vnah",
+      "nam_hien_thi": "chồng hy sinh 1967",
+      "mo_ta": "Chồng hy sinh năm 1967 trong chiến đấu; con trai hy sinh khi làm nhiệm vụ quốc tế tại Campuchia. Bà dành tâm sức làm công tác thiện nguyện — trao học bổng, hỗ trợ quỹ cựu chiến binh.",
+      "dia_diem": "TP. Hồ Chí Minh (nguồn không nêu phường/xã)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Sài Gòn Giải Phóng — Luôn ở bên mẹ — https://www.sggp.org.vn/luon-o-ben-me-post864147.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu phường/xã cụ thể — toạ độ đặt tại trung tâm thành phố, độ tin cậy thấp. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-dao-tan-thanh-an-giang",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Đào",
+      "lon": 105.08,
+      "lat": 10.02,
+      "loai": "me-vnah",
+      "nam_hien_thi": "ghi nhận 2026",
+      "mo_ta": "Chồng là liệt sĩ Trần Văn Sủi, ra chiến trường để lại vợ con nhỏ; con trai cả là liệt sĩ Trần Văn Sủng, bí mật tham gia cách mạng từ năm 13 tuổi và hy sinh năm 23 tuổi, đến nay chưa tìm được hài cốt. Bản thân bà bị địch bắt, tra khảo bốn lần vẫn giữ im lặng không khai nơi ở của con.",
+      "dia_diem": "Xã Tân Thạnh, tỉnh An Giang",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo An Giang — Niềm tự hào của Mẹ Việt Nam Anh hùng — https://baoangiang.com.vn/niem-tu-hao-cua-me-viet-nam-anh-hung-a494346.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn ghi tuổi tại thời điểm đăng chứ không nêu năm sinh. Tên xã «Tân Thạnh» trùng ở nhiều nơi vùng Đồng bằng sông Cửu Long và chưa xác định được thuộc địa bàn An Giang cũ hay Kiên Giang cũ sau sáp nhập 2025 — toạ độ đặt ở TRUNG TÂM TỈNH mới, không phải toạ độ xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-thi-hoa-hung",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Thi",
+      "lon": 105.08,
+      "lat": 10.02,
+      "loai": "me-vnah",
+      "nam_hien_thi": "được phụng dưỡng",
+      "mo_ta": "Được Công đoàn cơ sở Báo và Phát thanh - Truyền hình An Giang nhận phụng dưỡng, thăm hỏi.",
+      "dia_diem": "Xã Hòa Hưng, tỉnh An Giang",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo An Giang — https://baoangiang.com.vn/bao-va-phat-thanh-truyen-hinh-an-giang-phung-duong-2-me-viet-nam-anh-hung-a493576.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay chồng/con hy sinh. Tên xã «Hòa Hưng» chưa xác định được thuộc An Giang cũ hay Kiên Giang cũ — toạ độ đặt ở TRUNG TÂM TỈNH mới, không phải toạ độ xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "vo-thi-xung-vinh-hoa",
+      "ten": "Mẹ Việt Nam Anh hùng Võ Thị Xứng",
+      "lon": 105.08,
+      "lat": 10.02,
+      "loai": "me-vnah",
+      "nam_hien_thi": "được phụng dưỡng",
+      "mo_ta": "Được Công đoàn cơ sở Báo và Phát thanh - Truyền hình An Giang nhận phụng dưỡng, thăm hỏi.",
+      "dia_diem": "Xã Vĩnh Hòa, tỉnh An Giang",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo An Giang — https://baoangiang.com.vn/bao-va-phat-thanh-truyen-hinh-an-giang-phung-duong-2-me-viet-nam-anh-hung-a493576.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh hay chồng/con hy sinh. Tên xã «Vĩnh Hòa» chưa xác định được thuộc An Giang cũ hay Kiên Giang cũ — toạ độ đặt ở TRUNG TÂM TỈNH mới, không phải toạ độ xã. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "vo-thi-bien-chau-thanh-bt",
+      "ten": "Mẹ Việt Nam Anh hùng Võ Thị Biện",
+      "lon": 106.42,
+      "lat": 10.28,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1905",
+      "mo_ta": "Chồng là ông Nguyễn Văn Cơ theo Việt Minh; gia đình có chín người hy sinh gồm chồng, bảy con trai và một con rể.",
+      "dia_diem": "Xã Quới Sơn, huyện Châu Thành, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Khởi — Người mẹ Việt Nam anh hùng của quê hương Đồng Khởi — https://dongkhoi.baovinhlong.vn/nguoi-me-viet-nam-anh-hung-cua-que-huong-dong-khoi-23042025-a145642.html"
+      ],
+      "ghi_chu_bien_tap": " Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "le-thi-doi-thanh-phu",
+      "ten": "Mẹ Việt Nam Anh hùng Lê Thị Dơi",
+      "lon": 106.55,
+      "lat": 9.95,
+      "loai": "me-vnah",
+      "nam_hien_thi": "bốn con hy sinh 1967–1970",
+      "mo_ta": "Bốn con trai đều tham gia cách mạng và lần lượt hy sinh trong giai đoạn 1967–1970.",
+      "dia_diem": "Xã Thới Thạnh, huyện Thạnh Phú, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Khởi — Người mẹ Việt Nam anh hùng của quê hương Đồng Khởi — https://dongkhoi.baovinhlong.vn/nguoi-me-viet-nam-anh-hung-cua-que-huong-dong-khoi-23042025-a145642.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "tran-thi-anh-son-dinh",
+      "ten": "Mẹ Việt Nam Anh hùng Trần Thị Anh",
+      "lon": 106.15,
+      "lat": 10.2,
+      "loai": "me-vnah",
+      "nam_hien_thi": "kháng chiến chống Mỹ",
+      "mo_ta": "Chồng là ông Nguyễn Văn Bèo, du kích, bị địch xử tử; trong năm người con trai, ít nhất ba người hy sinh trong chiến đấu.",
+      "dia_diem": "Ấp Long Lân, xã Sơn Định, huyện Chợ Lách, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Khởi — Người mẹ Việt Nam anh hùng của quê hương Đồng Khởi — https://dongkhoi.baovinhlong.vn/nguoi-me-viet-nam-anh-hung-cua-que-huong-dong-khoi-23042025-a145642.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn nêu «ít nhất ba» trong năm con trai hy sinh — giữ đúng cách diễn đạt đó, không chốt con số. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-nam-huong-my-mo-cay",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Năm (Hương Mỹ)",
+      "lon": 106.35,
+      "lat": 10.1,
+      "loai": "me-vnah",
+      "nam_hien_thi": "sinh 1918",
+      "mo_ta": "Chồng là ông Trần Văn Mười. Trong bảy người con trai, sáu người tham gia kháng chiến chống Mỹ cứu nước.",
+      "dia_diem": "Ấp Mỹ Đức, xã Hương Mỹ, huyện Mỏ Cày (nay Mỏ Cày Nam), tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Khởi — Người mẹ Việt Nam anh hùng của quê hương Đồng Khởi — https://dongkhoi.baovinhlong.vn/nguoi-me-viet-nam-anh-hung-cua-que-huong-dong-khoi-23042025-a145642.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn chỉ nêu SỐ CON THAM GIA kháng chiến, không nêu bao nhiêu người hy sinh — mô tả giữ đúng chừng đó, không suy diễn. «Nguyễn Thị Năm» là tên phổ biến nên slug kèm địa danh. TRÙNG TÊN, KHÁC NGƯỜI: Mẹ VNAH Nguyễn Thị Năm (Đại Đồng, Thanh Chương, Nghệ An) ở lớp me-vnah là người khác. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-sang-an-hiep-ba-tri",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Sẳng (Má Mười Hạnh)",
+      "lon": 106.55,
+      "lat": 10.1,
+      "loai": "me-vnah",
+      "nam_hien_thi": "chồng hy sinh 1961",
+      "mo_ta": "Chồng là ông Cao Văn Cây, hy sinh năm 1961; bốn người con trai đều hy sinh trong chiến đấu.",
+      "dia_diem": "Ấp 9, xã An Hiệp, huyện Ba Tri, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Khởi — Người mẹ Việt Nam anh hùng của quê hương Đồng Khởi — https://dongkhoi.baovinhlong.vn/nguoi-me-viet-nam-anh-hung-cua-que-huong-dong-khoi-23042025-a145642.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không nêu năm sinh. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
+    },
+    {
+      "id": "nguyen-thi-hai-ben-tre",
+      "ten": "Mẹ Việt Nam Anh hùng Nguyễn Thị Hai (Bến Tre)",
+      "lon": 106.3,
+      "lat": 10.2,
+      "loai": "me-vnah",
+      "nam_hien_thi": "1918–2011",
+      "mo_ta": "Chồng là ông Trịnh Thi Ân (1917–1957), Bí thư Chi bộ, bị địch bí mật xử tử tháng 5/1957. Trong bảy người con, ba con trai hy sinh và một con gái là thương binh. Trường THCS Phước Mỹ Trung được đổi tên thành Trường THCS Nguyễn Thị Hai theo quyết định của tỉnh ngày 10/9/2021. Phong tặng danh hiệu Mẹ Việt Nam Anh hùng ngày 17/12/1994.",
+      "dia_diem": "Ấp Phước Hậu, xã Phước Mỹ Trung, huyện Mỏ Cày Bắc, tỉnh Bến Tre",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Khởi — Ngôi trường mang tên Mẹ Việt Nam anh hùng Nguyễn Thị Hai — https://dongkhoi.baovinhlong.vn/ngoi-truong-mang-ten-me-viet-nam-anh-hung-nguyen-thi-hai-22102021-a92437.html"
+      ],
+      "ghi_chu_bien_tap": "TRÙNG TÊN, KHÁC NGƯỜI: Mẹ VNAH Nguyễn Thị Hai (Phú Hội, Đồng Nai, truy tặng 2024) đã có trong kho là người khác — bà này ở Bến Tre, mất năm 2011, có trường học mang tên. Chuyển từ lớp `anh-hung-can-hien-dai` sang `me-vnah` ngày 2026-08-28: mục vốn đã mang `loai: \"me-vnah\"` và id tiền tố `me-vnah-` nhưng nằm sai lớp, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ. Nội dung, toạ độ và nguồn giữ nguyên từng byte; chỉ đổi lớp chứa."
     }
   ]
 }

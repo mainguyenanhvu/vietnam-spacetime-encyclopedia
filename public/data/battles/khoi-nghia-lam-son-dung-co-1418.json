@@ -1,8 +1,9 @@
 {
-  "ghi_chu": "Sa đồ khởi nghĩa Lam Sơn dựng cờ 1418 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Nguồn overlay chỉ có ket_qua ngắn gọn — các bước dựng theo trình tự chuẩn được SGK và Lam Sơn thực lục ghi nhận rộng rãi, không thêm chi tiết ngày tháng cụ thể không chắc chắn. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ khởi nghĩa Lam Sơn dựng cờ 1418 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Các bước dựng theo Mộc bản triều Nguyễn (Đại Việt sử ký toàn thư, Khâm định Việt sử thông giám cương mục) và cổng TTĐT huyện Lam Sơn, Thanh Hoá. trang_thai=draft chờ soát §9.",
   "id": "khoi-nghia-lam-son-dung-co-1418",
   "ten": "Khởi nghĩa Lam Sơn dựng cờ 1418",
   "nam": 1418,
+  "thoi_gian": "Mùa xuân 1416 (Hội thề Lũng Nhai) – mùa thu 1424 (chuyển hướng vào Nghệ An)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Lê Lợi",
   "doi_thu": "Nhà Minh",
@@ -11,109 +12,369 @@
     "thanh-hoa"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Lê Lợi cùng 18 người đồng chí làm lễ thề ở Lũng Nhai mùa xuân năm 1416",
+        "Nguyễn Chích, Nguyễn Trãi, Trần Nguyên Hãn cùng hào kiệt bốn phương kéo về sau khi Lê Lợi dựng cờ",
+        "Lê Lai cùng quân và voi trong trận đóng giả chủ tướng để phá vây"
+      ],
+      "vu_khi": [
+        "Voi chiến — khi hết lương, vua giết 4 con voi và cả ngựa của mình cưỡi để nuôi quân sĩ"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Quân Minh do Lý Bân, Phương Chính, Trần Trí chỉ huy trong giai đoạn đầu",
+        "Quân Ai Lao tiếp tay với quân Minh năm Tân Sửu (1421)"
+      ]
+    },
+    "nguon": [
+      "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+    ]
+  },
+  "ton_that": {
+    "ta": "Nghĩa quân hai lần phải rút lên núi Chí Linh. Cuối năm 1422, bị vây suốt hơn hai tháng, quân lính hết lương, chỉ ăn rau củ và măng tre. Lê Lai bị quân Minh bắt và giết chết trong trận đóng giả chủ tướng để phá vây.",
+    "doi_thu": "Mùa hạ 1419 nghĩa quân đánh đồn Nga Lạc, bắt được viên chỉ huy quân Minh. Tháng 10 năm Canh Tý (1420), Lê Lợi dùng kế phục binh thắng quân Lý Bân, Phương Chính ở Chi Lăng rồi tiến đánh giặc ở Ba Lầm thuộc Lỗi Giang. Năm Tân Sửu (1421), quân Lam Sơn phá quân Trần Trí và đánh đuổi quân Ai Lao.",
+    "nguon": [
+      "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          100
-        ],
-        [
-          500,
-          60
-        ],
-        [
-          900,
-          120
-        ]
+        [148, 202],
+        [250, 174],
+        [352, 202]
       ],
-      "nhan": "Vùng núi Lam Sơn, Thọ Xuân"
+      "nhan": "Núi rừng Lam Sơn"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [520, 182],
+        [622, 152],
+        [722, 182]
+      ],
+      "nhan": "Núi Chí Linh"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [118, 332],
+        [300, 316],
+        [480, 332],
+        [660, 320]
+      ],
+      "nhan": "Sông Chu"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [178, 402],
+        [318, 380],
+        [382, 442],
+        [248, 480],
+        [158, 452]
+      ],
+      "nhan": "Rừng Lũng Nhai"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [700, 380],
+        [822, 442],
+        [922, 512]
+      ],
+      "nhan": "Đường vào Nghệ An"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-ta-le-loi-an-nhan",
+      "id": "lam-son",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 216,
+      "y": 254,
+      "nhan": "Lam Sơn",
+      "quy_mo": "Làng Lam Sơn, huyện Lương Giang, Thanh Hoá"
+    },
+    {
+      "id": "lung-nhai",
+      "kieu": "cong-su",
+      "x": 246,
+      "y": 434,
+      "nhan": "Lũng Nhai",
+      "quy_mo": "Hội thề mùa xuân 1416 — Lê Lợi và 18 người đồng chí"
+    },
+    {
+      "id": "le-loi",
       "kieu": "quan",
       "ben": "ta",
+      "x": 386,
+      "y": 306,
+      "nhan": "Lê Lợi",
+      "quy_mo": "Xưng Bình Định Vương đầu năm 1418"
+    },
+    {
+      "id": "co-binh-dinh-vuong",
+      "kieu": "co",
+      "ben": "ta",
       "x": 300,
-      "y": 400,
-      "nhan": "Lê Lợi ẩn nhẫn chờ thời"
+      "y": 128,
+      "nhan": "Cờ Bình Định Vương"
     },
     {
-      "id": "can-cu-lam-son",
+      "id": "hao-kiet-tu-phuong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 142,
+      "y": 330,
+      "nhan": "Hào kiệt bốn phương kéo về"
+    },
+    {
+      "id": "cac-dai-bieu-uu-tu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 126,
+      "y": 178,
+      "nhan": "Nguyễn Chích · Nguyễn Trãi · Trần Nguyên Hãn"
+    },
+    {
+      "id": "don-nga-lac",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 466,
+      "y": 250,
+      "nhan": "Đồn Nga Lạc"
+    },
+    {
+      "id": "mui-danh-nga-lac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [412, 278],
+      "den": [452, 262],
+      "nhan": "Đánh đồn Nga Lạc, mùa hạ 1419"
+    },
+    {
+      "id": "chi-linh",
       "kieu": "cong-su",
+      "x": 618,
+      "y": 232,
+      "nhan": "Núi Chí Linh",
+      "quy_mo": "Nhiều lần rút lên cố thủ"
+    },
+    {
+      "id": "mui-rut-chi-linh",
+      "kieu": "mui-ten",
       "ben": "ta",
-      "x": 400,
-      "y": 350,
-      "nhan": "Căn cứ Lam Sơn"
+      "tu": [438, 272],
+      "den": [586, 242],
+      "nhan": "Rút lên Chí Linh"
     },
     {
-      "id": "co-ta-dung-co",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 450,
-      "y": 280,
-      "nhan": "Dựng cờ khởi nghĩa, xưng Bình Định vương"
-    },
-    {
-      "id": "nui-chi-linh",
-      "kieu": "dia-danh",
-      "x": 600,
-      "y": 450,
-      "nhan": "Núi Chí Linh — nhiều lần bị vây khốn"
-    },
-    {
-      "id": "co-thang-1427",
-      "kieu": "co",
+      "id": "le-lai",
+      "kieu": "quan",
       "ben": "ta",
       "x": 700,
-      "y": 200,
-      "nhan": "Kết thúc thắng lợi 1427, lập nhà Hậu Lê"
+      "y": 306,
+      "nhan": "Lê Lai",
+      "quy_mo": "Giả làm chủ tướng, đem quân và voi khiêu chiến"
+    },
+    {
+      "id": "mui-le-lai",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [724, 280],
+      "den": [812, 254],
+      "nhan": "Hướng ra phía địch, chia đường khiêu chiến"
+    },
+    {
+      "id": "quan-minh-vay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 842,
+      "y": 238,
+      "nhan": "Quân Minh vây núi"
+    },
+    {
+      "id": "tay-do",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 908,
+      "y": 148,
+      "nhan": "Tây Đô",
+      "quy_mo": "Địch rút quân về"
+    },
+    {
+      "id": "chi-lang-1420",
+      "kieu": "dia-danh",
+      "x": 542,
+      "y": 96,
+      "nhan": "Chi Lăng — kế phục binh tháng 10-1420"
+    },
+    {
+      "id": "hoa-hoan",
+      "kieu": "cong-su",
+      "x": 478,
+      "y": 386,
+      "nhan": "Hoà hoãn khoảng một năm",
+      "quy_mo": "Đẩy mạnh sản xuất, tích trữ lương thực, chiêu mộ binh sĩ"
+    },
+    {
+      "id": "don-da-cang",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 706,
+      "y": 456,
+      "nhan": "Đồn Đa Căng"
+    },
+    {
+      "id": "mui-vao-nghe-an",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [630, 400],
+      "den": [862, 502],
+      "nhan": "Chuyển hướng vào Nghệ An, 1424"
+    },
+    {
+      "id": "nghe-an",
+      "kieu": "dia-danh",
+      "x": 906,
+      "y": 528,
+      "nhan": "Nghệ An"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Lê Lợi ẩn nhẫn chờ thời tại Lam Sơn",
-      "mo_ta": "Trước cảnh nước mất vào tay giặc Minh, hào trưởng Lê Lợi lui về quê nhà Lam Sơn, âm thầm chuẩn bị lực lượng.",
+      "tieu_de": "Hội thề Lũng Nhai, mùa xuân 1416",
+      "thoi_gian": "Mùa xuân năm 1416",
+      "dia_danh": "Lũng Nhai, gần núi rừng Lam Sơn",
+      "mo_ta": "Đại Việt sử ký toàn thư chép Lê Lợi là người làng Lam Sơn, huyện Lương Giang, thuộc Thanh Hoá — nay là xã Xuân Lam, huyện Thọ Xuân. Mùa xuân năm 1416, tại vùng Lũng Nhai cách núi rừng Lam Sơn không xa, Lê Lợi cùng 18 người đồng chí làm lễ thề đánh giặc giữ yên quê hương. Sự kiện ấy về sau được gọi là Hội thề Lũng Nhai, đặt nền cho tổ chức lãnh đạo của cuộc khởi nghĩa hai năm trước khi cờ nghĩa chính thức phất lên.",
       "hien": [
-        "quan-ta-le-loi-an-nhan"
+        "lam-son",
+        "lung-nhai",
+        "le-loi"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Chiêu tập hào kiệt, nuôi chí lớn",
-      "mo_ta": "Lê Lợi chiêu tập hào kiệt khắp nơi, chuẩn bị binh lương cho cuộc khởi nghĩa.",
+      "tieu_de": "Đầu năm 1418: xưng Bình Định Vương, phất cờ khởi nghĩa",
+      "thoi_gian": "Đầu năm 1418",
+      "dia_danh": "Lam Sơn",
+      "mo_ta": "Đầu năm 1418, Lê Lợi xưng là Bình Định Vương, chính thức phất cờ khởi nghĩa, hịch truyền đi khắp nơi kêu gọi nhân dân đứng lên đánh giặc cứu nước. Ông từng nói với mọi người rằng mình cất quân đánh giặc không phải vì ham muốn phú quý, mà để ngàn năm về sau người đời biết ông không chịu làm tôi tớ cho bọn giặc tàn ngược — câu nói đặt cuộc khởi nghĩa lên nền một mục tiêu dài hơn cả đời người dựng cờ.",
       "hien": [
-        "quan-ta-le-loi-an-nhan",
-        "can-cu-lam-son"
+        "co-binh-dinh-vuong",
+        "le-loi",
+        "lam-son"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Dựng cờ khởi nghĩa, xưng Bình Định vương",
-      "mo_ta": "Lê Lợi dựng cờ khởi nghĩa tại Lam Sơn, tự xưng Bình Định vương.",
+      "tieu_de": "Đất Lam Sơn thành nơi tụ nghĩa",
+      "thoi_gian": "Năm 1416 – 1418",
+      "dia_danh": "Lam Sơn",
+      "mo_ta": "Sau khi được tin Lê Lợi dựng cờ khởi nghĩa và chiêu mộ người hiền tài, các anh hùng hào kiệt từ bốn phương kéo về; đất Lam Sơn trở thành nơi tụ nghĩa. Các tầng lớp nhân dân với nhiều đại biểu ưu tú đã tụ về tham gia nghĩa quân như Nguyễn Chích, Nguyễn Trãi, Trần Nguyên Hãn. Chính lớp người này về sau đưa ra những quyết sách xoay chuyển cục diện, từ kế chuyển hướng vào Nghệ An đến đường lối tâm công vây thành diệt viện.",
       "hien": [
-        "can-cu-lam-son",
-        "co-ta-dung-co"
+        "hao-kiet-tu-phuong",
+        "cac-dai-bieu-uu-tu",
+        "lam-son",
+        "le-loi"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Buổi đầu gian khổ, nhiều lần bị vây khốn",
-      "mo_ta": "Những năm đầu khởi nghĩa gặp muôn vàn khó khăn, nhiều lần nghĩa quân bị vây khốn ở núi Chí Linh.",
+      "tieu_de": "Mùa hạ 1419: đánh đồn Nga Lạc rồi rút lên Chí Linh",
+      "thoi_gian": "Mùa hạ năm 1419",
+      "dia_danh": "Đồn Nga Lạc · núi Chí Linh",
+      "mo_ta": "Mùa hạ năm 1419, nghĩa quân Lam Sơn tấn công đồn Nga Lạc và bắt được viên chỉ huy của quân Minh. Nhưng trước thế giặc mạnh, quân Lam Sơn lại phải rút lên núi Chí Linh lần thứ hai. Buổi đầu của cuộc khởi nghĩa là chuỗi những lần lấy rừng núi làm chỗ dựa: đánh được một đòn rồi lui, giữ lấy lực lượng thay vì đọ sức trực diện với đạo quân đông và trang bị hơn hẳn.",
       "hien": [
-        "can-cu-lam-son",
-        "nui-chi-linh"
+        "don-nga-lac",
+        "mui-danh-nga-lac",
+        "mui-rut-chi-linh",
+        "chi-linh",
+        "le-loi"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Mở đầu 10 năm kháng chiến, lập nhà Hậu Lê",
-      "mo_ta": "Cuộc khởi nghĩa Lam Sơn mở đầu 10 năm kháng chiến đánh đuổi giặc Minh, kết thúc thắng lợi năm 1427, lập ra nhà Hậu Lê.",
+      "tieu_de": "Lê Lai liều mình cứu chúa",
+      "thoi_gian": "Năm 1419",
+      "dia_danh": "Núi Chí Linh",
+      "mo_ta": "Trước tình thế khó khăn, tướng Lê Lai xin nhận nhiệm vụ giả đóng làm chủ tướng Lê Lợi xuống núi để đánh lạc hướng quân Minh. Khâm định Việt sử thông giám cương mục chép ông cho sắp xếp nghi trượng chỉnh tề, chính mình đem quân và voi hướng ra phía địch, chỉ huy các tướng chia đường khiêu chiến. Tướng Minh lấy thêm quân bao vây; Lê Lai chiến đấu kiệt sức, bị bắt và giết chết. Địch rút quân về Tây Đô, nhờ thế nghĩa quân an toàn rút lui.",
       "hien": [
-        "co-thang-1427"
+        "le-lai",
+        "mui-le-lai",
+        "quan-minh-vay",
+        "chi-linh",
+        "tay-do"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "1420 – 1421: kế phục binh ở Chi Lăng, phá quân Trần Trí",
+      "thoi_gian": "Tháng 10 năm Canh Tý (1420) – năm Tân Sửu (1421)",
+      "dia_danh": "Chi Lăng · Ba Lầm (Lỗi Giang)",
+      "mo_ta": "Tháng 10 năm Canh Tý (1420), Lê Lợi dùng kế phục binh giành chiến thắng trước quân Lý Bân và Phương Chính tại Chi Lăng, rồi tiến đánh giặc ở Ba Lầm thuộc Lỗi Giang. Trong giai đoạn này ông thu dùng được Nguyễn Trãi làm tham mưu quân sự. Năm Tân Sửu (1421), quân Lam Sơn phá quân Trần Trí và đánh đuổi quân Ai Lao đang tiếp tay với quân Minh, giữ được thế đứng ở vùng thượng du Thanh Hoá.",
+      "hien": [
+        "chi-lang-1420",
+        "le-loi",
+        "cac-dai-bieu-uu-tu",
+        "quan-minh-vay"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Cuối 1422: hết lương trên Chí Linh, buộc phải hoà hoãn",
+      "thoi_gian": "Cuối năm 1422 – năm 1423",
+      "dia_danh": "Núi Chí Linh",
+      "mo_ta": "Cuối năm 1422, nghĩa quân Lam Sơn một lần nữa phải về đóng ở núi Chí Linh. Suốt hơn hai tháng bị bao vây, họ sống trong cảnh thiếu thốn lương thực: Đại Việt sử ký toàn thư chép quân lính hết lương, chỉ ăn rau củ và măng tre, vua phải giết 4 con voi và cả ngựa của mình cưỡi để nuôi quân sĩ. Trước tình thế đó, Bình Định Vương bất đắc dĩ phải hoà hoãn với giặc để yên lòng quân; trong khoảng một năm hoà hoãn, nghĩa quân đẩy mạnh sản xuất, tích trữ lương thực và chiêu mộ binh sĩ.",
+      "hien": [
+        "chi-linh",
+        "quan-minh-vay",
+        "hoa-hoan",
+        "le-loi"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Mùa thu 1424: theo kế Nguyễn Chích, chuyển hướng vào Nghệ An",
+      "thoi_gian": "Mùa thu năm 1424",
+      "dia_danh": "Đồn Đa Căng · núi Bồ Lạp · châu Trà Long",
+      "mo_ta": "Mùa thu năm 1424, tướng Lê Chích — tức Nguyễn Chích — đề xuất nghĩa quân chiếm lấy Nghệ An, nơi đất rộng người đông và hiểm yếu, để làm chỗ đứng chân rồi dựa vào đấy mà lấy tiền tài sức lực, sau sẽ quay cờ trẩy ra Đông Đô. Bình Định Vương khen kế ấy và quyết định tiến hành chiến dịch. Trận đầu tiên là cuộc tấn công bất ngờ vào đồn Đa Căng; tiếp đó ở núi Bồ Lạp, vua phục sẵn binh tướng trong rừng, tung quân đánh tan quân Phương Chính. Từ đây cuộc khởi nghĩa bước ra khỏi thế phòng ngự ở rừng núi Thanh Hoá.",
+      "hien": [
+        "don-da-cang",
+        "mui-vao-nghe-an",
+        "nghe-an",
+        "le-loi",
+        "cac-dai-bieu-uu-tu"
+      ],
+      "nguon": [
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
       ]
     }
   ],
@@ -124,7 +385,8 @@
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lê",
     "Lam Sơn thực lục",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Cục Di sản văn hóa — Khu di tích Lam Kinh (dsvh.gov.vn)"
+    "Cục Di sản văn hóa — Khu di tích Lam Kinh (dsvh.gov.vn)",
+    "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
   ],
   "trich_van_tich": [
     {
@@ -134,16 +396,34 @@
       "buoc": 1
     },
     {
+      "sach": "Lời Lê Lợi nói với mọi người khi dựng cờ — dẫn trong bài của Mộc bản triều Nguyễn",
+      "doan": "Ta cất quân đánh giặc, không phải là có lòng ham muốn phú quý, mà chính vì muốn để ngàn năm về sau, người đời biết ta không chịu làm tôi tớ cho bọn giặc tàn ngược",
+      "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 2
+    },
+    {
       "sach": "Khâm định Việt sử thông giám cương mục — bản mộc bản triều Nguyễn, chép việc Lê Lai liều mình cứu chúa",
       "doan": "Lê Lai liền cho sắp xếp nghi trượng chỉnh tề, chính mình đem quân và voi, hướng ra phía địch, chỉ huy các tướng chia đường khiêu chiến. Tướng Minh lấy thêm quân bao vây Lê Lai. Lê Lai chiến đấu kiệt sức, bị người Minh bắt và giết chết. Địch bèn rút quân về Tây Đô",
       "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
-      "buoc": 4
+      "buoc": 5
     },
     {
       "sach": "Đại Việt sử ký toàn thư — bản mộc bản triều Nguyễn",
       "doan": "Quân lính hết lương, hơn hai tháng, chỉ ăn rau củ và măng tre mà thôi. Vua giết 4 con voi và cả ngựa của mình cưỡi để nuôi quân sĩ.",
       "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
-      "buoc": 4
+      "buoc": 7
+    },
+    {
+      "sach": "Kế chuyển hướng vào Nghệ An của tướng Lê Chích — dẫn trong bài của Mộc bản triều Nguyễn",
+      "doan": "Nghệ An là nơi hiểm yếu: đất rộng, người đông, tôi đã từng qua lại Nghệ An, nên rất thông thuộc đường đất. Nay ta nên trước hãy nên đánh lấy Trà Long, chiếm giữ bình định cho được Nghệ An để làm chỗ đất đứng chân, rồi dựa vào đấy mà lấy tiền tài sức lực, sau sẽ quay cờ trẩy ra Đông Đô thì có thể tính xong được việc dẹp yên thiên hạ",
+      "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 8
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư, quyển 10, mặt khắc 16 — bản mộc bản triều Nguyễn",
+      "doan": "Trời sắp tối, vua bèn phục sẵn binh tướng trong rừng. Bọn Phương Chính đến, vua tung quân ra đánh. Quân Minh tan vỡ lớn. Ta chém được Đô ty Trần Trung và hơn hai nghìn thủ cấp quân giặc, bắt được hơn một trăm cỗ ngựa. Quân Minh tháo chạy",
+      "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 8
     }
   ]
 }

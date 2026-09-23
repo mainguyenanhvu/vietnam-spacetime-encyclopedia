@@ -3,6 +3,7 @@
   "id": "khoi-nghia-hai-ba-trung-40",
   "ten": "Khởi nghĩa Hai Bà Trưng",
   "nam": 40,
+  "thoi_gian": "Tháng 2 năm Canh Tý (năm 40) – tháng 11 năm 43",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Trưng Trắc, Trưng Nhị",
   "doi_thu": "Nhà Đông Hán (Thái thú Tô Định)",
@@ -11,166 +12,361 @@
     "ha-noi"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Trưng Trắc và Trưng Nhị lãnh đạo, xuất phát từ cửa sông Hát",
+        "Hào kiệt bốn phương tụ nghĩa ở Mê Linh",
+        "Nhân dân các quận Giao Chỉ, Cửu Chân, Nhật Nam cùng các dân tộc Mán, Lý ở Cửu Chân, Nhật Nam, Hợp Phố hưởng ứng",
+        "Ở Cửu Chân, một bộ phận nghĩa quân do Đô Dương chỉ huy tiếp tục chiến đấu sau khi Hai Bà mất"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Năm 40: Thái thú Tô Định cùng bộ máy đô hộ nhà Đông Hán ở Giao Chỉ",
+        "Năm 42: Phục ba tướng quân Mã Viện và Lâu thuyền tướng quân Đoàn Chí, đem quân từ các miền Quế Dương, Linh Lăng, Thương Ngô"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng (năm 40 - 43 sau Công nguyên) — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
+    ]
+  },
+  "ton_that": {
+    "ta": "Ở Lãng Bạc, quân của Trưng Vương chiến đấu rất dũng cảm song thế yếu nên bị thua, phải lui về Cấm Khê. Sau gần một năm chống địch, quân ta tan vỡ. Tháng 11 năm 43, Mã Viện mở đường qua Tạc Khẩu tiến vào Cửu Chân đàn áp; hàng trăm thủ lĩnh và hàng ngàn nghĩa quân bị tàn sát.",
+    "doi_thu": "Nghĩa quân đi đến đâu, chính quyền và quân đội nhà Đông Hán tan vỡ đến đấy. Tô Định cùng các Thứ sử, Thái thú đều hoảng sợ, theo nhau bỏ chạy về Trung Quốc; ách đô hộ hà khắc của nhà Đông Hán chấm dứt trên toàn bộ 65 huyện thành.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng (năm 40 - 43 sau Công nguyên) — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          80,
-          120
-        ],
-        [
-          400,
-          300
-        ],
-        [
-          950,
-          480
-        ]
+        [118, 342],
+        [282, 320],
+        [420, 300]
+      ],
+      "nhan": "Sông Hát"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [300, 180],
+        [482, 242],
+        [660, 302],
+        [840, 362]
       ],
       "nhan": "Sông Hồng"
     },
     {
-      "kieu": "duong",
+      "kieu": "nui",
       "diem": [
-        [
-          120,
-          520
-        ],
-        [
-          430,
-          430
-        ],
-        [
-          820,
-          220
-        ]
+        [128, 182],
+        [220, 156],
+        [312, 184]
       ],
-      "nhan": "Đường tiến quân nghĩa quân"
+      "nhan": "Núi Ba Vì"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [700, 150],
+        [792, 126],
+        [882, 152]
+      ],
+      "nhan": "Vùng Tiên Du"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 398],
+        [932, 430],
+        [952, 590],
+        [1000, 592]
+      ],
+      "nhan": "Biển"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-hat-mon",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 120,
-      "y": 540,
-      "nhan": "Cờ khởi nghĩa tại Hát Môn"
+      "id": "hat-mon",
+      "kieu": "dia-danh",
+      "x": 196,
+      "y": 302,
+      "nhan": "Cửa sông Hát — nơi dựng cờ"
     },
     {
-      "id": "quan-ta-tap-hop",
+      "id": "hai-ba-trung",
       "kieu": "quan",
       "ben": "ta",
-      "x": 335,
-      "y": 531,
-      "nhan": "Hào kiệt bốn quận tụ nghĩa"
+      "x": 302,
+      "y": 386,
+      "nhan": "Trưng Trắc · Trưng Nhị"
     },
     {
-      "id": "dia-danh-me-linh",
-      "kieu": "dia-danh",
-      "x": 480,
-      "y": 380,
-      "nhan": "Mê Linh"
+      "id": "hao-kiet",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 168,
+      "y": 446,
+      "nhan": "Hào kiệt bốn phương tụ nghĩa"
     },
     {
-      "id": "mui-tien-cong-luy-lau",
+      "id": "me-linh",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 342,
+      "y": 202,
+      "nhan": "Mê Linh",
+      "quy_mo": "Đô kỳ của Trưng Vương"
+    },
+    {
+      "id": "co-trung-vuong",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 232,
+      "y": 128,
+      "nhan": "Trưng Trắc xưng vương"
+    },
+    {
+      "id": "mui-tien-xuoi",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        330,
-        450
-      ],
-      "den": [
-        760,
-        240
-      ],
-      "nhan": "Tiến đánh Luy Lâu"
+      "tu": [378, 236],
+      "den": [576, 222],
+      "nhan": "Tiến về xuôi"
     },
     {
-      "id": "thanh-luy-lau",
+      "id": "luy-lau",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 900,
-      "y": 180,
-      "nhan": "Trị sở Luy Lâu (Tô Định)"
+      "x": 620,
+      "y": 218,
+      "nhan": "Luy Lâu",
+      "quy_mo": "Thủ phủ đô hộ ở Giao Chỉ"
     },
     {
-      "id": "quan-dich-tan-vo",
+      "id": "to-dinh-bo-chay",
       "kieu": "quan",
       "ben": "dich",
-      "x": 760,
-      "y": 260,
-      "nhan": "Quân Tô Định tan vỡ"
+      "x": 876,
+      "y": 108,
+      "nhan": "Tô Định bỏ chạy về nước"
     },
     {
-      "id": "mui-dich-chay",
+      "id": "sau-muoi-lam-huyen-thanh",
+      "kieu": "dia-danh",
+      "x": 494,
+      "y": 442,
+      "nhan": "65 huyện thành được thu lại"
+    },
+    {
+      "id": "cuu-chan-nhat-nam",
+      "kieu": "dia-danh",
+      "x": 288,
+      "y": 534,
+      "nhan": "Cửu Chân · Nhật Nam · Hợp Phố hưởng ứng"
+    },
+    {
+      "id": "hop-pho",
+      "kieu": "dia-danh",
+      "x": 956,
+      "y": 214,
+      "nhan": "Hợp Phố"
+    },
+    {
+      "id": "ma-vien",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 940,
+      "y": 322,
+      "nhan": "Mã Viện",
+      "quy_mo": "Phục ba tướng quân, cùng Đoàn Chí"
+    },
+    {
+      "id": "mui-ma-vien-tien",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        830,
-        180
-      ],
-      "den": [
-        940,
-        80
-      ],
-      "nhan": "Tô Định trốn về Nam Hải"
+      "tu": [912, 300],
+      "den": [828, 206],
+      "nhan": "Ngược Bạch Đằng vào Lục Đầu"
     },
     {
-      "id": "co-thang",
-      "kieu": "co",
+      "id": "lang-bac",
+      "kieu": "dia-danh",
+      "x": 790,
+      "y": 182,
+      "nhan": "Lãng Bạc"
+    },
+    {
+      "id": "tran-lang-bac",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 500,
-      "y": 300,
-      "nhan": "Trưng Trắc xưng vương"
+      "x": 700,
+      "y": 314,
+      "nhan": "Trưng Vương đem quân từ Mê Linh nghênh chiến"
+    },
+    {
+      "id": "mui-lui-cam-khe",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [648, 336],
+      "den": [430, 372],
+      "nhan": "Lui về Cấm Khê"
+    },
+    {
+      "id": "cam-khe",
+      "kieu": "cong-su",
+      "x": 386,
+      "y": 424,
+      "nhan": "Cẩm Khê (Yên Lạc – Vĩnh Phúc)",
+      "quy_mo": "Chống địch gần một năm"
+    },
+    {
+      "id": "do-duong",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 470,
+      "y": 552,
+      "nhan": "Đô Dương — cũng chép Đô Đương — tiếp tục chiến đấu ở Cửu Chân"
+    },
+    {
+      "id": "tac-khau",
+      "kieu": "dia-danh",
+      "x": 664,
+      "y": 500,
+      "nhan": "Tạc Khẩu"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Dựng cờ khởi nghĩa ở Hát Môn",
-      "mo_ta": "Mùa xuân năm 40, Trưng Trắc cùng em là Trưng Nhị tế cờ khởi nghĩa tại Hát Môn, kêu gọi hào kiệt khắp nơi đứng lên chống ách đô hộ.",
+      "tieu_de": "Ách đô hộ Đông Hán — Tô Định giết Thi Sách",
+      "thoi_gian": "Trước năm 40",
+      "dia_danh": "Mê Linh · Chu Diên",
+      "mo_ta": "Trưng Trắc, Trưng Nhị là con gái quan Lạc tướng Mê Linh, thuộc dòng dõi Hùng Vương; mẹ là bà Man Thiện dạy các con nghề trồng dâu nuôi tằm, lòng yêu nước, rèn sức khoẻ và võ nghệ. Chồng Trưng Trắc là Thi Sách, con trai quan Lạc tướng huyện Chu Diên, thuộc một gia đình yêu nước có thế lực. Cuộc hôn nhân ấy làm thế lực đối lập với chính quyền đô hộ càng lớn mạnh, nên Thái thú Tô Định tìm cách giết Thi Sách. Hành vi ấy không làm Trưng Trắc sờn lòng mà càng khiến bà quyết tâm khởi nghĩa để đền nợ nước, trả thù nhà.",
       "hien": [
-        "co-ta-hat-mon"
+        "me-linh",
+        "hai-ba-trung",
+        "luy-lau"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Hào kiệt các quận hưởng ứng",
-      "mo_ta": "Nghĩa quân được hào kiệt các quận Giao Chỉ, Cửu Chân, Nhật Nam, Hợp Phố hưởng ứng, kéo về tụ nghĩa ngày một đông.",
+      "tieu_de": "Tháng 2 năm Canh Tý — dựng cờ ở cửa sông Hát",
+      "thoi_gian": "Tháng 2 năm Canh Tý (năm 40)",
+      "dia_danh": "Cửa sông Hát (Phúc Thọ, Hà Nội)",
+      "mo_ta": "Tháng 2 năm Canh Tý, Trưng Trắc cùng em gái là Trưng Nhị phát động khởi nghĩa ở cửa sông Hát. Trên đàn thề trước ba quân, bà nêu rõ bốn mục tiêu của cuộc khởi nghĩa — rửa sạch nước thù, đem lại nghiệp xưa họ Hùng, giải nỗi oan ức lòng chồng, và giữ trọn công lênh này. Ghi chép về ngày xuất quân còn để lại hình ảnh cờ xí dậy đất, chiêng trống vang trời, tướng nam lẫm liệt, tướng nữ lạnh lùng.",
       "hien": [
-        "co-ta-hat-mon",
-        "quan-ta-tap-hop"
+        "hat-mon",
+        "hai-ba-trung",
+        "hao-kiet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html",
+        "Báo Nhân Dân — Cuộc khởi nghĩa Hai Bà Trưng là trang sử vàng trong lịch sử dân tộc Việt Nam — https://nhandan.vn/cuoc-khoi-nghia-hai-ba-trung-la-trang-su-vang-trong-lich-su-dan-toc-viet-nam-post226019.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đánh chiếm Luy Lâu",
-      "mo_ta": "Nghĩa quân tiến đánh Luy Lâu — trị sở chính quyền đô hộ; quân Tô Định không chống nổi.",
+      "tieu_de": "Hào kiệt bốn phương tụ nghĩa ở Mê Linh",
+      "thoi_gian": "Năm 40",
+      "dia_danh": "Mê Linh",
+      "mo_ta": "Những người yêu nước khắp nơi rầm rập kéo về tụ nghĩa ở Mê Linh. Từ lâu người Việt và các tộc người khác ở quận Giao Chỉ, quận Cửu Chân — nay là Thanh Hoá, Nghệ An, Hà Tĩnh — và quận Nhật Nam — miền đất từ dãy Hoành Sơn đến Quảng Nam — đã vô cùng căm giận chế độ áp bức, bóc lột tàn tệ của nhà Đông Hán. Dưới sự lãnh đạo của Hai Bà, các cuộc khởi nghĩa địa phương được thống nhất thành một phong trào nổi dậy rộng lớn từ miền xuôi đến miền ngược.",
       "hien": [
-        "quan-ta-tap-hop",
-        "mui-tien-cong-luy-lau",
-        "thanh-luy-lau"
+        "me-linh",
+        "hao-kiet",
+        "cuu-chan-nhat-nam",
+        "hai-ba-trung"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tô Định bỏ chạy",
-      "mo_ta": "Thái thú Tô Định phải cải trang, cắt tóc cạo râu trốn về quận Nam Hải (Trung Quốc).",
+      "tieu_de": "Đánh chiếm Luy Lâu — Tô Định bỏ chạy",
+      "thoi_gian": "Năm 40",
+      "dia_danh": "Luy Lâu (Thuận Thành, Bắc Ninh)",
+      "mo_ta": "Từ Mê Linh, nghĩa quân tiến về xuôi, đánh Luy Lâu — thủ phủ của chính quyền nhà Đông Hán ở Giao Chỉ. Chế độ áp bức của nhà Hán bị quật đổ, Luy Lâu được giải phóng. Khi chính quyền đô hộ bị đánh đổ ở đây thì nhân dân các quận hào hứng cầm vũ khí chống lại lũ quan lại và quân lính nhà Đông Hán; các dân tộc Mán, Lý ở Cửu Chân, Nhật Nam, Hợp Phố đều hưởng ứng. Tô Định cùng các Thứ sử, Thái thú thấy nghĩa quân nổi lên như vũ bão, đều hoảng sợ bỏ chạy về Trung Quốc.",
       "hien": [
-        "thanh-luy-lau",
-        "quan-dich-tan-vo",
-        "mui-dich-chay"
+        "mui-tien-xuoi",
+        "luy-lau",
+        "to-dinh-bo-chay",
+        "cuu-chan-nhat-nam"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Trưng Trắc xưng vương",
-      "mo_ta": "Nghĩa quân thu phục 65 thành, Trưng Trắc xưng vương, đóng đô ở Mê Linh, giữ nền độc lập trong 3 năm (40–43) trước khi Mã Viện đem quân sang đàn áp.",
+      "tieu_de": "Thu lại 65 huyện thành — Trưng Trắc xưng vương",
+      "thoi_gian": "Năm 40",
+      "dia_danh": "Mê Linh",
+      "mo_ta": "Chỉ trong một thời gian ngắn, Hai Bà Trưng giải phóng được 65 huyện thành, tức toàn bộ lãnh thổ nước Việt hồi đó. Cuộc khởi nghĩa thành công, đất nước hoàn toàn độc lập; Trưng Trắc được suy tôn làm vua, hiệu Trưng Nữ Vương, đóng đô ở Mê Linh. Tuy chỉ trong thời gian ngắn, Trưng Vương đã có những quyết sách quan trọng: ra lệnh miễn thuế khoá cho nhân dân trong hai năm, xoá bỏ chế độ lao dịch và binh pháp cũ. Nền độc lập, quyền tự chủ dân tộc được giữ vững gần ba năm.",
       "hien": [
-        "dia-danh-me-linh",
-        "co-thang"
+        "co-trung-vuong",
+        "me-linh",
+        "sau-muoi-lam-huyen-thanh",
+        "hai-ba-trung"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Năm 42: Mã Viện và Đoàn Chí đem quân sang",
+      "thoi_gian": "Năm 42",
+      "dia_danh": "Hợp Phố · Hồng Quảng · sông Bạch Đằng · Lục Đầu",
+      "mo_ta": "Tin Hai Bà lật nhào chính quyền nhà Đông Hán ở Giao Chỉ và Cửu Chân đưa về triều đình nhà Hán. Năm 42, vua Quang Vũ sai Phục ba tướng quân Mã Viện và Lâu thuyền tướng quân Đoàn Chí đem quân ở các miền Quế Dương, Linh Lăng, Thương Ngô sang đánh Trưng Vương. Bộ binh của Mã Viện và thuỷ binh của Đoàn Chí gặp nhau ở Hợp Phố; tại đây Đoàn Chí mắc bệnh rồi chết, Mã Viện thống suất cả thuỷ binh, men theo bờ biển tiến vào, rồi từ Hồng Quảng ngược sông Bạch Đằng đến Lục Đầu, tiến vào Lãng Bạc.",
+      "hien": [
+        "hop-pho",
+        "ma-vien",
+        "mui-ma-vien-tien",
+        "lang-bac"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Trận Lãng Bạc — lui về Cấm Khê",
+      "thoi_gian": "Năm 42 – 43",
+      "dia_danh": "Lãng Bạc (Tiên Du) · Cấm Khê",
+      "mo_ta": "Được tin quân xâm lược tiến vào Lãng Bạc, Trưng Vương cùng em là Trưng Nhị đem quân từ Mê Linh ra đánh Mã Viện. Tại đây đã diễn ra một cuộc chiến đấu ác liệt: quân của Trưng Vương chiến đấu rất dũng cảm, song do thế yếu nên bị thua, phải lui về Cẩm Khê thuộc vùng Yên Lạc, Vĩnh Phúc. Mã Viện đem quân đuổi theo; sau gần một năm anh dũng chống địch, cuối cùng vì sức yếu, quân ta tan vỡ.",
+      "hien": [
+        "lang-bac",
+        "tran-lang-bac",
+        "ma-vien",
+        "mui-lui-cam-khe",
+        "cam-khe"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Hát Môn — và cuộc chiến còn tiếp ở Cửu Chân",
+      "thoi_gian": "Năm 43 – tháng 11 năm 43",
+      "dia_danh": "Hát Môn · Tạc Khẩu · Cửu Chân",
+      "mo_ta": "Hai Bà Trưng về Hát Môn rồi gieo mình xuống dòng Hát giang tự tận. Cuộc kháng chiến do Hai Bà lãnh đạo về căn bản đã thất bại, nhưng ở nhiều nơi nhân dân và nghĩa quân vẫn tiếp tục chống giặc: ở quận Cửu Chân, một bộ phận nghĩa quân do vị thủ lĩnh mà Báo Công an Nhân dân chép là Đô Dương, còn Bảo tàng Lịch sử Quốc gia chép là Đô Đương, vẫn tiếp tục chiến đấu. Tháng 11 năm 43, Mã Viện mở đường qua Tạc Khẩu tiến vào Cửu Chân đàn áp; hàng trăm thủ lĩnh và hàng ngàn nghĩa quân bị tàn sát, đất nước lại mất quyền độc lập.",
+      "hien": [
+        "hat-mon",
+        "do-duong",
+        "tac-khau",
+        "ma-vien"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html",
+        "Báo Công an Nhân dân — Khởi nghĩa Hai Bà Trưng: Thức tỉnh tinh thần dân tộc — https://cand.com.vn/Phong-su-Tieu-diem/Khoi-nghia-Hai-Ba-Trung-Thuc-tinh-tinh-than-dan-toc-i551370/"
       ]
     }
   ],
@@ -180,14 +376,34 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ Trưng Nữ Vương",
     "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
-    "Cục Di sản văn hóa — Di tích Đền Hát Môn (dsvh.gov.vn)"
+    "Cục Di sản văn hóa — Di tích Đền Hát Môn (dsvh.gov.vn)",
+    "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa Hai Bà Trưng (năm 40 - 43 sau Công nguyên) — https://baotanglichsu.vn/vi/Articles/3098/13485/cuoc-khoi-nghia-hai-ba-trung-nam-40-43-sau-cong-nguyen.html",
+    "Báo Nhân Dân — Cuộc khởi nghĩa Hai Bà Trưng là trang sử vàng trong lịch sử dân tộc Việt Nam — https://nhandan.vn/cuoc-khoi-nghia-hai-ba-trung-la-trang-su-vang-trong-lich-su-dan-toc-viet-nam-post226019.html"
   ],
   "trich_van_tich": [
     {
       "sach": "Thiên Nam ngữ lục (diễn ca chữ Nôm đời sau, không phải chính sử — nguồn nêu rõ xuất xứ)",
       "doan": "Một xin rửa sạch nước thù / Hai xin dựng lại nghiệp xưa họ Hùng / Ba kêu oan ức lòng chồng / Bốn xin vẻn vẹn sở công lênh này",
       "nguon_trich": "Báo Công an Nhân dân — https://cand.com.vn/Phong-su-Tieu-diem/Khoi-nghia-Hai-Ba-Trung-Thuc-tinh-tinh-than-dan-toc-i551370/",
-      "buoc": 1
+      "buoc": 2
+    },
+    {
+      "sach": "Lời thề trong ngày xuất quân — bản dẫn trong diễn văn Lễ kỷ niệm 1975 năm khởi nghĩa Hai Bà Trưng",
+      "doan": "Một xin rửa sạch nước thù. Hai xin đem lại nghiệp xưa họ Hùng. Ba kẻo oan ức lòng chồng. Bốn xin vẻn vẹn sở công lênh này.",
+      "nguon_trich": "Báo Nhân Dân — https://nhandan.vn/cuoc-khoi-nghia-hai-ba-trung-la-trang-su-vang-trong-lich-su-dan-toc-viet-nam-post226019.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Mô tả ngày xuất quân của Hai Bà Trưng — dẫn trong diễn văn Lễ kỷ niệm 1975 năm khởi nghĩa Hai Bà Trưng",
+      "doan": "cờ xí dậy đất, chiêng trống vang trời, tướng nam lẫm liệt, tướng nữ lạnh lùng",
+      "nguon_trich": "Báo Nhân Dân — https://nhandan.vn/cuoc-khoi-nghia-hai-ba-trung-la-trang-su-vang-trong-lich-su-dan-toc-viet-nam-post226019.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Câu ca về Trưng Vương định đô ở Mê Linh — dẫn trong diễn văn Lễ kỷ niệm 1975 năm khởi nghĩa Hai Bà Trưng",
+      "doan": "Đô kỳ đóng cõi Mê Linh, Lĩnh Nam riêng một triều đình nước ta",
+      "nguon_trich": "Báo Nhân Dân — https://nhandan.vn/cuoc-khoi-nghia-hai-ba-trung-la-trang-su-vang-trong-lich-su-dan-toc-viet-nam-post226019.html",
+      "buoc": 5
     }
   ]
 }

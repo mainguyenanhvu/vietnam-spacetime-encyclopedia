@@ -1,10 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Trị Thiên – Huế và Đà Nẵng 1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Huế – Đà Nẵng 1975 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "hue-da-nang-1975",
   "ten": "Chiến dịch Trị Thiên – Huế và Đà Nẵng 1975",
   "nam": 1975,
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Bộ Tư lệnh Chiến dịch",
+  "chi_huy": "Bộ Tổng tư lệnh trực tiếp chỉ huy — Tư lệnh Trung tướng Lê Trọng Tấn, Chính uỷ Thượng tướng Chu Huy Mân",
   "doi_thu": "Quân đoàn 1 – Quân khu 1 (Quân lực Việt Nam Cộng hòa)",
   "dia_diem": "Thừa Thiên Huế và thành phố Đà Nẵng",
   "lien_quan_tinh": [
@@ -14,171 +14,426 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "nui",
+      "diem": [
+        [
+          430,
+          150
+        ],
+        [
+          490,
+          178
+        ],
+        [
+          550,
+          158
+        ]
+      ],
+      "nhan": "Đèo Hải Vân"
+    },
+    {
       "kieu": "bien",
       "diem": [
         [
-          700,
-          50
+          930,
+          60
         ],
         [
-          1000,
-          50
-        ],
-        [
-          1000,
+          955,
           300
         ],
         [
-          750,
-          250
+          930,
+          560
         ]
       ],
       "nhan": "Biển Đông"
     },
     {
+      "kieu": "nui",
+      "diem": [
+        [
+          760,
+          218
+        ],
+        [
+          810,
+          228
+        ],
+        [
+          865,
+          216
+        ]
+      ],
+      "nhan": "Bán đảo Sơn Trà"
+    },
+    {
       "kieu": "duong",
       "diem": [
         [
-          100,
-          100
+          110,
+          55
         ],
         [
-          400,
+          300,
+          128
+        ],
+        [
+          440,
+          162
+        ]
+      ],
+      "nhan": "Tuyến phòng ngự Bắc đèo Hải Vân (Quảng Trị – Thừa Thiên)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          540,
           200
         ],
         [
-          650,
-          250
+          700,
+          345
+        ],
+        [
+          825,
+          505
         ]
       ],
-      "nhan": "Đường tiến quân từ Huế vào Đà Nẵng"
+      "nhan": "Tuyến phòng ngự Nam đèo Hải Vân (Đà Nẵng – Quảng Ngãi)"
     }
   ],
   "phan_tu": [
     {
-      "id": "tri-thien-hue-giai-phong",
+      "id": "quang-tri",
       "kieu": "dia-danh",
       "x": 150,
-      "y": 150,
-      "nhan": "Trị Thiên – Huế giải phóng"
+      "y": 70,
+      "nhan": "Quảng Trị"
     },
     {
-      "id": "quan-dich-co-cum",
+      "id": "quan-doan-1",
       "kieu": "quan",
       "ben": "dich",
-      "x": 600,
-      "y": 300,
-      "nhan": "Quân đoàn 1 co cụm tại Quảng Đà"
+      "x": 560,
+      "y": 70,
+      "nhan": "Tập đoàn phòng ngự hai bên đèo Hải Vân",
+      "quy_mo": "Quân đoàn I – Quân khu 1"
     },
     {
-      "id": "quan-ta-nhieu-huong",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 400,
-      "y": 250,
-      "nhan": "Quân ta tiến công nhiều hướng"
-    },
-    {
-      "id": "mui-bao-vay-dn",
+      "id": "huong-bac",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        480,
-        210
+        130,
+        120
+      ],
+      "den": [
+        250,
+        185
+      ],
+      "nhan": "Hướng Bắc"
+    },
+    {
+      "id": "phu-van-lau",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 330,
+      "y": 110,
+      "nhan": "10 giờ 30 ngày 25/3 — cắm cờ trên Phu Văn Lâu"
+    },
+    {
+      "id": "hue",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 300,
+      "y": 200,
+      "nhan": "Thành phố Huế"
+    },
+    {
+      "id": "huong-tay",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        120,
+        290
+      ],
+      "den": [
+        250,
+        225
+      ],
+      "nhan": "Hướng Tây"
+    },
+    {
+      "id": "huong-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        340,
+        360
+      ],
+      "den": [
+        320,
+        255
+      ],
+      "nhan": "Hướng Nam"
+    },
+    {
+      "id": "tr-101",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 120,
+      "y": 390,
+      "nhan": "Tiến về Huế sáng 25/3",
+      "quy_mo": "Trung đoàn 101, Sư đoàn 325"
+    },
+    {
+      "id": "tr-3",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 120,
+      "y": 470,
+      "nhan": "Tiến về Huế sáng 25/3",
+      "quy_mo": "Trung đoàn 3, Sư đoàn 324"
+    },
+    {
+      "id": "quan-doan-2",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 330,
+      "y": 430,
+      "nhan": "Các cánh quân vây kín bốn phía Huế",
+      "quy_mo": "Quân đoàn 2"
+    },
+    {
+      "id": "deo-hai-van",
+      "kieu": "dia-danh",
+      "x": 480,
+      "y": 180,
+      "nhan": "Đèo Hải Vân"
+    },
+    {
+      "id": "da-nang",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 620,
+      "y": 300,
+      "nhan": "Căn cứ liên hợp Đà Nẵng"
+    },
+    {
+      "id": "son-tra",
+      "kieu": "dia-danh",
+      "x": 800,
+      "y": 240,
+      "nhan": "Bán đảo Sơn Trà"
+    },
+    {
+      "id": "tong-cong-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        470,
+        400
       ],
       "den": [
         580,
-        290
+        330
       ],
-      "nhan": "Chia cắt, bao vây"
+      "nhan": "Tổng công kích Đà Nẵng, sáng 29/3"
     },
     {
-      "id": "thanh-da-nang",
+      "id": "tam-ky",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 650,
-      "y": 350,
-      "nhan": "Thành phố Đà Nẵng"
+      "x": 730,
+      "y": 470,
+      "nhan": "Thị xã Tam Kỳ"
     },
     {
-      "id": "co-thang-dn",
+      "id": "sd-2-ld-12",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 900,
+      "y": 400,
+      "nhan": "Bị xoá sổ ngày 24/3",
+      "quy_mo": "Sư đoàn 2 · Liên đoàn 12 biệt động quân"
+    },
+    {
+      "id": "co-da-nang",
       "kieu": "co",
       "ben": "ta",
-      "x": 720,
-      "y": 420,
-      "nhan": "Giải phóng hoàn toàn Đà Nẵng"
+      "x": 850,
+      "y": 120,
+      "nhan": "17 giờ ngày 29/3 — giải phóng Đà Nẵng"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Thắng lợi chiến dịch Trị Thiên – Huế",
-      "mo_ta": "Tiếp theo chiến thắng Tây Nguyên, quân ta giải phóng Trị Thiên – Huế, tạo đà cho chiến dịch tiếp theo.",
+      "tieu_de": "Sau Tây Nguyên — quyết định mở «Mặt trận 475»",
+      "thoi_gian": "Giữa tháng 3/1975",
+      "dia_danh": "Trị – Thiên · Quảng Nam · Quảng Ngãi",
+      "mo_ta": "Mất Tây Nguyên, thế phòng thủ chiến lược của quân đội Sài Gòn bị rung chuyển. Bộ Chính trị và Quân uỷ Trung ương quyết định mở chiến dịch Huế – Đà Nẵng, lấy tên là «Mặt trận 475». Lực lượng đối phương trên địa bàn chiến dịch là Quân đoàn I – Quân khu 1, bố trí thành hai khu vực phòng ngự: Bắc đèo Hải Vân gồm Quảng Trị – Thừa Thiên, và Nam đèo Hải Vân gồm Đà Nẵng – Quảng Ngãi.",
       "hien": [
-        "tri-thien-hue-giai-phong"
+        "quan-doan-1",
+        "deo-hai-van",
+        "quang-tri",
+        "hue",
+        "da-nang"
+      ],
+      "nguon": [
+        "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Mở Chiến dịch Đà Nẵng (26/3/1975)",
-      "mo_ta": "Quân ta mở Chiến dịch Đà Nẵng, tiến công tiêu diệt Quân đoàn 1 – Quân khu 1 quân đội Sài Gòn đang co cụm tại Quảng Đà.",
+      "tieu_de": "15/3 và 18/3 — đối phương điều quân, Bộ Chính trị hạ quyết tâm",
+      "thoi_gian": "15 – 18/3/1975",
+      "dia_danh": "Quảng Trị · Quảng Nam – Đà Nẵng",
+      "mo_ta": "Ngày 15/3, Bộ Tổng tham mưu quân đội Sài Gòn đưa Liên đoàn 14 biệt động quân từ Quảng Ngãi ra Quảng Trị thay Lữ đoàn 369, đưa Lữ đoàn 258 lính thuỷ đánh bộ vào Quảng Nam – Đà Nẵng để rút Sư đoàn dù về giữ Sài Gòn; cuộc điều quân này càng làm đội hình dễ vỡ. Ngày 18/3, Bộ Chính trị họp, hạ quyết tâm hoàn thành giải phóng miền Nam trong năm 1975, nhiệm vụ trước mắt là tiêu diệt Quân đoàn I, không cho rút về Sài Gòn.",
       "hien": [
-        "quan-dich-co-cum",
-        "thanh-da-nang"
+        "quan-doan-1",
+        "quang-tri",
+        "da-nang"
+      ],
+      "nguon": [
+        "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Quân đội Sài Gòn co cụm phòng thủ",
-      "mo_ta": "Khoảng 75.000 quân đối phương co cụm tại Quảng Đà, tổ chức phòng thủ hòng cố thủ thành phố.",
+      "tieu_de": "21/3 — mở màn, ba hướng đồng loạt tiến công Huế",
+      "thoi_gian": "21/3/1975",
+      "dia_danh": "Huế",
+      "mo_ta": "Ngày 21/3/1975 chiến dịch mở ra, nhằm tiêu diệt tập đoàn phòng ngự mạnh của quân đội Sài Gòn ở Trị – Thiên, Huế, Đà Nẵng và giải phóng các tỉnh miền Trung. Ngay trong ngày, từ ba hướng Bắc, Tây và Nam, quân ta đồng loạt tiến công, hình thành nhiều mũi bao vây, mở màn cuộc tiến công Huế. Chiến dịch được thực hiện làm hai đợt: đợt một từ 21 đến 25/3, đợt hai từ 26 đến 29/3.",
       "hien": [
-        "quan-dich-co-cum",
-        "thanh-da-nang"
+        "huong-bac",
+        "huong-tay",
+        "huong-nam",
+        "hue"
+      ],
+      "nguon": [
+        "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Quân ta tiến công từ nhiều hướng",
-      "mo_ta": "Quân ta đồng loạt tiến công từ nhiều hướng, chia cắt và bao vây lực lượng đối phương.",
+      "tieu_de": "24/3 — vây chặt Huế, xoá sổ Sư đoàn 2 ở Tam Kỳ",
+      "thoi_gian": "24/3/1975",
+      "dia_danh": "Huế · Thị xã Tam Kỳ",
+      "mo_ta": "Đến ngày 24/3, quân ta đã bao vây chặt toàn bộ tập đoàn phòng ngự ở Huế. Cũng trong ngày 24/3, ở phía nam đèo Hải Vân, quân ta đập tan tuyến phòng thủ tại Tam Kỳ, xoá sổ Sư đoàn 2 và Liên đoàn 12 biệt động quân, giải phóng hoàn toàn thị xã Tam Kỳ. Hai đòn cùng ngày ở hai đầu chiến dịch khiến Đà Nẵng ở giữa mất cả chỗ dựa phía bắc lẫn phía nam.",
       "hien": [
-        "quan-ta-nhieu-huong",
-        "mui-bao-vay-dn",
-        "quan-dich-co-cum"
+        "hue",
+        "tam-ky",
+        "sd-2-ld-12",
+        "quan-doan-2"
+      ],
+      "nguon": [
+        "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Tiêu diệt toàn bộ lực lượng phòng thủ",
-      "mo_ta": "Trong hơn 3 ngày, quân ta loại khỏi vòng chiến 90.000 địch, tiêu diệt và làm tan rã toàn bộ Quân đoàn 1.",
+      "tieu_de": "25/3 — giải phóng Huế, cắm cờ trên Phu Văn Lâu",
+      "thoi_gian": "25/3/1975",
+      "dia_danh": "Huế · Phu Văn Lâu",
+      "mo_ta": "Sáng 25/3/1975, Trung đoàn 101 thuộc Sư đoàn 325, Trung đoàn 3 thuộc Sư đoàn 324, các đơn vị của Quân khu Trị – Thiên và các cánh quân của Quân đoàn 2 từ các hướng tiến về Huế. Quân ta vây kín cả bốn phía rồi tiến vào trung tâm thành phố. Đến 10 giờ 30 phút ngày 25/3/1975, quân giải phóng cắm cờ trên đỉnh Phu Văn Lâu; thành phố Huế được giải phóng.",
       "hien": [
-        "quan-dich-co-cum",
-        "thanh-da-nang"
+        "tr-101",
+        "tr-3",
+        "quan-doan-2",
+        "hue",
+        "phu-van-lau"
+      ],
+      "nguon": [
+        "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Giải phóng hoàn toàn Đà Nẵng (29/3/1975)",
-      "mo_ta": "Quân ta giải phóng hoàn toàn Đà Nẵng, mở ra thời cơ cho chiến dịch giải phóng Sài Gòn và quần đảo Trường Sa.",
+      "tieu_de": "Đợt 2 từ 26/3 — Đà Nẵng bị cô lập, đối phương tuyên bố «tử thủ»",
+      "thoi_gian": "Đợt 2 của chiến dịch, từ 26/3/1975",
+      "dia_danh": "Đà Nẵng",
+      "mo_ta": "Đà Nẵng là căn cứ quân sự liên hợp hải, lục, không quân vào loại mạnh nhất ở miền Nam; mất Huế rồi mất Tam Kỳ, lực lượng ở đây tuy còn lớn nhưng đã hoàn toàn bị cô lập. Nguyễn Văn Thiệu tuyên bố «tử thủ» Đà Nẵng bằng mọi giá. Bộ Tổng tư lệnh với phương châm «nhanh nhất, kịp thời nhất, táo bạo nhất, nhưng chắc thắng» quyết định tập trung lực lượng tiến công vào Đà Nẵng.",
       "hien": [
-        "thanh-da-nang",
-        "co-thang-dn"
+        "da-nang",
+        "quan-doan-1",
+        "son-tra"
+      ],
+      "nguon": [
+        "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "29/3 — tổng công kích, 17 giờ giải phóng Đà Nẵng",
+      "thoi_gian": "29/3/1975",
+      "dia_danh": "Đà Nẵng · Bán đảo Sơn Trà",
+      "mo_ta": "Sáng 29/3, các cánh quân đồng loạt tiến đánh Đà Nẵng. Đến 15 giờ ngày 29/3, quân ta chiếm lĩnh toàn bộ căn cứ liên hợp Đà Nẵng và bán đảo Sơn Trà; 17 giờ, thành phố Đà Nẵng được giải phóng, kết thúc chiến dịch. Kết quả toàn chiến dịch, 120.000 quân bị loại khỏi vòng chiến đấu, 130.000 phòng vệ dân sự tan rã; ta giải phóng năm tỉnh Quảng Trị, Thừa Thiên, Quảng Nam, Quảng Đà, Quảng Ngãi.",
+      "hien": [
+        "tong-cong-kich",
+        "da-nang",
+        "son-tra",
+        "co-da-nang"
+      ],
+      "nguon": [
+        "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
       ]
     }
   ],
-  "ket_qua": "Trong hơn 3 ngày, ta loại khỏi vòng chiến 90.000 địch, giải phóng hoàn toàn Đà Nẵng ngày 29/3/1975, mở ra thời cơ cho chiến dịch giải phóng Sài Gòn và quần đảo Trường Sa.",
-  "y_nghia": "Tiêu diệt toàn bộ một quân đoàn chủ lực đối phương chỉ trong vài ngày, đẩy nhanh tốc độ sụp đổ của chính quyền Sài Gòn.",
+  "ket_qua": "Loại khỏi vòng chiến đấu 120.000 quân, làm tan rã 130.000 phòng vệ dân sự; tiêu diệt và làm tan rã 3 sư đoàn bộ binh của Quân đoàn I, sư đoàn thuỷ quân lục chiến, 4 liên đoàn biệt động quân, 4 thiết đoàn và 1 sư đoàn không quân; thu 129 máy bay, 179 xe tăng, 327 khẩu pháo, hơn 1.100 xe quân sự và tàu, xuồng; giải phóng năm tỉnh Quảng Trị, Thừa Thiên, Quảng Nam, Quảng Đà, Quảng Ngãi (Bảo tàng Lịch sử quốc gia).",
+  "y_nghia": "Chiến dịch đập tan ý đồ co cụm chiến lược của quân đội Sài Gòn ở miền Trung, làm thay đổi hẳn so sánh lực lượng về mặt chiến lược và tạo vùng hậu phương liền mạch để tăng cường lực lượng, bổ sung vật chất cho Chiến dịch Hồ Chí Minh ngay sau đó (Bảo tàng Lịch sử quốc gia; Tạp chí Quốc phòng toàn dân).",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html",
+    "Diễn biến Chiến dịch Huế – Đà Nẵng năm 1975 — Tạp chí Quốc phòng toàn dân — https://m.tapchiqptd.vn/vi/tu-lieu/dien-bien-chien-dich-hue-da-nang-nam-1975-7176.html",
     "Báo QĐND — Chiến dịch giải phóng Đà Nẵng Xuân 1975",
-    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
-    "Lịch sử Việt Nam (Viện Sử học)"
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
     {
       "sach": "Phương châm tác chiến Bộ Tư lệnh xác định cho chiến dịch",
       "doan": "Kịp thời nhất, nhanh chóng nhất, táo bạo nhất, nhưng chắc thắng",
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/giai-phong-Hue-Da-Nang/index.html",
+      "buoc": 6
+    },
+    {
+      "sach": "Nhận định của Bộ Chính trị tại cuộc họp ngày 18/3/1975",
+      "doan": "Thắng lợi to lớn có ý nghĩa chiến lược của chiến dịch Tây Nguyên đánh dấu một bước rất mới trong cục diện chung, một bước suy sụp của Mỹ - ngụy. Địch đang thực hiện co cụm chiến lược, có thể co cụm ở Đà Nẵng và Cam Ranh…",
+      "nguon_trich": "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html",
       "buoc": 2
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Hai nguồn nhà nước vênh nhau về mốc mở đầu: Bảo tàng Lịch sử quốc gia ghi chiến dịch mở ra ngày 21/3/1975, còn Tạp chí Quốc phòng toàn dân tính từ 5/3/1975 và gộp ba chiến dịch nhỏ (Trị Thiên – Huế 5–26/3, Nam Ngãi 10–26/3, Đà Nẵng 26–29/3). Nêu cả hai trong trường thoi_gian, không chọn bản gọn hơn. Bài của Bảo tàng Lịch sử quốc gia có chỗ tự mâu thuẫn — một đoạn ghi «Tam Kỳ (Quảng Ngãi)», đoạn sau ghi «Tam Kỳ (Quảng Nam)» — nên sa đồ chỉ ghi «thị xã Tam Kỳ», không kèm tên tỉnh. loai_xung_dot=noi-chien: hai bên tham chiến đều là người Việt, quân Mỹ đã rút theo Hiệp định Paris 1973. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "21/3/1975 – 29/3/1975 (Tạp chí Quốc phòng toàn dân tính chiến dịch từ 5/3/1975, gồm ba chiến dịch nhỏ)",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Quân đoàn 2",
+        "Sư đoàn 325 (Trung đoàn 101)",
+        "Sư đoàn 324 (Trung đoàn 3)",
+        "Các đơn vị Quân khu Trị – Thiên"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Quân đoàn I – Quân khu 1 với 6 sư đoàn (2 sư đoàn tổng dự bị, 4 sư đoàn biệt động quân), 24 tiểu đoàn và 10 đại đội bảo an",
+      "vu_khi": [
+        "21 tiểu đoàn pháo binh (418 khẩu)",
+        "4 thiết đoàn và 10 chi đoàn tăng – thiết giáp (trên 400 xe)",
+        "165 tàu hải quân",
+        "1 sư đoàn không quân (96 máy bay chiến đấu)"
+      ]
+    },
+    "nguon": [
+      "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "120.000 quân bị loại khỏi vòng chiến đấu, 130.000 phòng vệ dân sự tan rã; 3 sư đoàn bộ binh, sư đoàn thuỷ quân lục chiến, 4 liên đoàn biệt động quân, 4 thiết đoàn và 1 sư đoàn không quân bị tiêu diệt hoặc tan rã; ta thu 129 máy bay, 179 xe tăng, 327 khẩu pháo và hơn 1.100 xe quân sự, tàu, xuồng",
+    "nguon": [
+      "Chiến dịch Huế – Đà Nẵng (21-3 đến 29-3-1975) — Bảo tàng Lịch sử quốc gia — http://baotanglichsu.vn/vi/Articles/3097/13899/chien-dich-hue-dja-nang-21-3-djen-29-3-1975.html"
+    ]
+  }
 }

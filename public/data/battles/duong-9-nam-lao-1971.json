@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch phản công Đường 9 – Nam Lào 1971 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 theo docs/section9-sensitive.json. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch phản công Đường 9 – Nam Lào (8/2 – 23/3/1971) — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "duong-9-nam-lao-1971",
   "ten": "Chiến dịch phản công Đường 9 – Nam Lào 1971",
   "nam": 1971,
@@ -16,134 +16,355 @@
       "kieu": "duong",
       "diem": [
         [
-          100,
+          80,
           300
         ],
         [
-          500,
+          300,
+          290
+        ],
+        [
+          520,
+          300
+        ],
+        [
+          740,
+          310
+        ],
+        [
+          940,
           320
+        ]
+      ],
+      "nhan": "Đường số 9 (Đông Hà – Lao Bảo – Bản Đông – Sê Pôn – Mường Phìn)"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          500,
+          360
+        ],
+        [
+          700,
+          378
         ],
         [
           900,
-          300
+          392
         ]
       ],
-      "nhan": "Đường 9"
+      "nhan": "Sông Sê Pôn"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          300,
+          180
+        ],
+        [
+          520,
+          165
+        ],
+        [
+          740,
+          182
+        ]
+      ],
+      "nhan": "Các dãy núi cao 500 – 800 m phía bắc đường 9"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          350,
+          450
+        ],
+        [
+          560,
+          465
+        ],
+        [
+          780,
+          450
+        ]
+      ],
+      "nhan": "Dãy núi phía nam đường 9"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-lam-son-719",
+      "id": "dong-ha",
+      "kieu": "dia-danh",
+      "x": 110,
+      "y": 250,
+      "nhan": "Đông Hà · Cửa Việt"
+    },
+    {
+      "id": "lao-bao",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 250,
+      "nhan": "Lao Bảo"
+    },
+    {
+      "id": "ban-dong",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 560,
+      "y": 250,
+      "nhan": "Tập đoàn cứ điểm Bản Đông"
+    },
+    {
+      "id": "se-pon",
+      "kieu": "dia-danh",
+      "x": 790,
+      "y": 250,
+      "nhan": "Sê Pôn"
+    },
+    {
+      "id": "muong-phin",
+      "kieu": "dia-danh",
+      "x": 940,
+      "y": 180,
+      "nhan": "Mường Phìn · Pha Lan"
+    },
+    {
+      "id": "lam-son-719",
       "kieu": "quan",
       "ben": "dich",
-      "x": 300,
-      "y": 250,
-      "nhan": "Quân Sài Gòn mở hành quân Lam Sơn 719"
+      "x": 180,
+      "y": 80,
+      "nhan": "Cuộc hành quân «Lam Sơn 719» mở màn ngày 8/2/1971"
     },
     {
-      "id": "duong-mon-hcm",
-      "kieu": "dia-danh",
-      "x": 700,
-      "y": 250,
-      "nhan": "Đường mòn Hồ Chí Minh"
-    },
-    {
-      "id": "quan-ta-chan-danh-d9",
+      "id": "e64",
       "kieu": "quan",
       "ben": "ta",
-      "x": 450,
-      "y": 400,
-      "nhan": "Quân ta chặn đánh"
+      "x": 290,
+      "y": 130,
+      "nhan": "Vây lấn rồi làm chủ căn cứ 31 trưa 25/2",
+      "quy_mo": "Trung đoàn 64, Sư đoàn 320"
     },
     {
-      "id": "mui-be-gay-canh-quan",
+      "id": "can-cu-31",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 500,
+      "y": 130,
+      "nhan": "Căn cứ 31 (điểm cao 543), bắc Bản Đông 7 km"
+    },
+    {
+      "id": "diem-cao-500",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 730,
+      "y": 120,
+      "nhan": "Điểm cao 500 — vị trí then chốt bảo vệ phía bắc"
+    },
+    {
+      "id": "e102",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 890,
+      "y": 60,
+      "nhan": "Tiêu diệt gọn Tiểu đoàn 39 biệt động quân, 16 – 20/2",
+      "quy_mo": "Trung đoàn 102, Sư đoàn 308"
+    },
+    {
+      "id": "truy-quet",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        530,
-        360
+        520,
+        200
       ],
       "den": [
-        350,
+        370,
+        195
+      ],
+      "nhan": "18/3 — truy quét trên đoạn Bản Đông – Lao Bảo"
+    },
+    {
+      "id": "vay-ban-dong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        560,
+        420
+      ],
+      "den": [
+        560,
         300
       ],
-      "nhan": "Bẻ gãy các cánh quân"
+      "nhan": "12 – 17/3 — tiến công dồn dập tập đoàn cứ điểm Bản Đông"
     },
     {
-      "id": "quan-dich-bo-chay",
+      "id": "chot-chan-d9",
       "kieu": "quan",
-      "ben": "dich",
-      "x": 250,
-      "y": 200,
-      "nhan": "Địch bỏ xe pháo tháo chạy"
+      "ben": "ta",
+      "x": 330,
+      "y": 390,
+      "nhan": "Chốt chặn đường 9 giữa Bản Đông và Lao Bảo",
+      "quy_mo": "Trung đoàn 24, Sư đoàn 304"
     },
     {
-      "id": "co-thang-d9",
+      "id": "huong-nam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 470,
+      "nhan": "Chặn đánh các mũi tiến công ở nam và tây nam đường 9",
+      "quy_mo": "Sư đoàn 304 · 324 · 2"
+    },
+    {
+      "id": "doan-559",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 560,
+      "y": 470,
+      "nhan": "Bắn rơi 50 máy bay lên thẳng trong hai ngày 8 và 9/2",
+      "quy_mo": "Bộ đội Đoàn 559"
+    },
+    {
+      "id": "co-ket-thuc",
       "kieu": "co",
       "ben": "ta",
-      "x": 600,
-      "y": 450,
-      "nhan": "Đánh bại hoàn toàn Lam Sơn 719"
+      "x": 120,
+      "y": 560,
+      "nhan": "23/3/1971 — kết thúc chiến dịch"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Mỹ - quân Sài Gòn mở hành quân Lam Sơn 719 (30/1/1971)",
-      "mo_ta": "Được Mỹ yểm trợ hỏa lực và không quân, quân đội Sài Gòn mở cuộc hành quân Lam Sơn 719 đánh ra Đường 9 – Nam Lào.",
+      "tieu_de": "Đầu tháng 2/1971 — đánh địch ngay từ khi chúng ra chiến trường",
+      "thoi_gian": "25/1 – 7/2/1971",
+      "dia_danh": "Tân Lâm · Sa Mưu · Đầu Mầu · Pha Lan · Mường Phìn",
+      "mo_ta": "Chiến dịch diễn ra trên địa bàn rộng, dài 140 km theo hướng đông – tây từ Cửa Việt, Đông Hà tới Mường Phìn, Pha Lan, rộng khoảng 60 km theo hướng bắc – nam. Từ ngày 1 đến 5/2/1971, trên hướng phối hợp đông đường 9, các tiểu đoàn của ta tiến công chế áp địch ở Tân Lâm, Sa Mưu, tập kích tây Đầu Mầu, đánh cắt giao thông từ Bồng Kho đi Rào Quán. Ngày 6 và 7/2, Tiểu đoàn 3 thuộc Trung đoàn 84 pháo binh bắn 200 viên đạn pháo vào căn cứ Đông Hà và Sở chỉ huy tiền phương Sư đoàn 1 ở điểm cao 241. Trên hướng tây, Trung đoàn 48 phối hợp với Quân Giải phóng nhân dân Lào đánh thiệt hại nặng Tiểu đoàn đặc nhiệm ở Pha Lan.",
       "hien": [
-        "quan-dich-lam-son-719"
+        "dong-ha",
+        "muong-phin",
+        "lam-son-719"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Mục tiêu cắt đường mòn Hồ Chí Minh",
-      "mo_ta": "Mục tiêu của cuộc hành quân là cắt đứt tuyến chi viện chiến lược đường mòn Hồ Chí Minh.",
+      "tieu_de": "8 – 9/2 — địch mở màn «Lam Sơn 719», ta bắn rơi 50 máy bay lên thẳng",
+      "thoi_gian": "8 – 9/2/1971",
+      "dia_danh": "Biên giới Việt – Lào · chốt 351 cầu Cha Kỵ · Làng Sen",
+      "mo_ta": "Ngày 8/2/1971, Bộ chỉ huy quân Mỹ và quân đội Sài Gòn ở vùng 1 chiến thuật phát lệnh tiến công khu vực Đường 9 – Nam Lào, cho hàng chục trận địa pháo với hàng trăm khẩu từ 105 mm tới 175 mm bố trí dọc biên giới trên chính diện 30 km cùng hàng chục tốp máy bay phản lực đánh phá dữ dội, mở màn cuộc hành quân Lam Sơn 719. Trong hai ngày 8 và 9/2, bộ đội pháo cao xạ, bộ binh, công binh, vận tải Đoàn 559 và các đơn vị chủ lực cơ động chặn đánh nhiều mũi tiến công, bắn rơi 50 máy bay lên thẳng. Sáng 9/2, Trung đoàn 24 đánh bại 5 đợt tiến công của chiến đoàn đặc nhiệm dù tại chốt 351 cầu Cha Kỵ.",
       "hien": [
-        "quan-dich-lam-son-719",
-        "duong-mon-hcm"
+        "lam-son-719",
+        "doan-559",
+        "chot-chan-d9"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đợt 1: quân ta chặn đánh các mũi tiến",
-      "mo_ta": "Quân ta tổ chức chặn đánh quyết liệt các mũi tiến công ngay từ đầu chiến dịch.",
+      "tieu_de": "10 – 13/2 — vây hãm Bản Đông, đánh ở điểm cao 456 và đồi Không tên",
+      "thoi_gian": "10 – 13/2/1971",
+      "dia_danh": "Bản Đông · bắc Sê Num · điểm cao 456 · đồi Không tên",
+      "mo_ta": "Chiều 10/2, khi mũi tiến công chủ yếu của đối phương đặt chân lên Bản Đông, quân ta lập tức vây hãm từ nhiều phía, quyết không cho theo đường 9 tiến lên Sê Pôn. Đêm 11/2, Tiểu đoàn 4 thuộc Trung đoàn 88 và Tiểu đoàn 7 thuộc Trung đoàn 64 tập kích Tiểu đoàn 2 dù ở bắc Sê Num. Từ ngày 11 đến 13/2, Trung đoàn 64 thuộc Sư đoàn 320 liên tiếp đánh thắng hai trận ở khu vực điểm cao 456 và đồi Không tên, tiêu diệt 3 đại đội của Tiểu đoàn 3 và Tiểu đoàn 6 thuộc Lữ đoàn dù 3 chốt giữ căn cứ 31.",
       "hien": [
-        "quan-ta-chan-danh-d9",
-        "quan-dich-lam-son-719"
+        "ban-dong",
+        "se-pon",
+        "e64",
+        "can-cu-31"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đợt 2: bẻ gãy các cánh quân",
-      "mo_ta": "Quân ta tiếp tục phản công, bẻ gãy các cánh quân của đối phương.",
+      "tieu_de": "16 – 20/2 — tiêu diệt Tiểu đoàn 39 biệt động quân ở điểm cao 500",
+      "thoi_gian": "16 – 20/2/1971",
+      "dia_danh": "Điểm cao 500, bắc đường 9",
+      "mo_ta": "Trung tuần tháng 2, sau khi tạo lập được thế trận mới, Bộ Tư lệnh chiến dịch chỉ thị các đơn vị Binh đoàn 70 trên hướng chủ yếu chuyển sang tiến công. Ở hướng bắc, Sư đoàn 308 dùng Trung đoàn 102 cùng các lực lượng tăng cường tiến công điểm cao 500 — một trong hai vị trí then chốt bảo vệ phía bắc cuộc hành quân, do Tiểu đoàn 39 thuộc Liên đoàn 21 biệt động quân chiếm giữ. Sau bốn ngày chiến đấu từ 16 đến 20/2, bất chấp các đợt đánh phá của máy bay chiến lược B-52 và pháo binh, Trung đoàn 102 tiêu diệt gọn Tiểu đoàn 39 và bắn rơi 10 máy bay.",
       "hien": [
-        "quan-ta-chan-danh-d9",
-        "mui-be-gay-canh-quan"
+        "e102",
+        "diem-cao-500"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đợt 3: tổng phản công, địch bỏ chạy",
-      "mo_ta": "Quân ta tổng phản công, buộc địch phải bỏ lại xe pháo tháo chạy.",
+      "tieu_de": "21 – 25/2 — vây lấn và làm chủ căn cứ 31",
+      "thoi_gian": "21 – 25/2/1971",
+      "dia_danh": "Căn cứ 31 (điểm cao 543)",
+      "mo_ta": "Ngày 21/2, Bộ chỉ huy chiến dịch chỉ đạo Trung đoàn 64 thuộc Sư đoàn 320 bao vây tiến công căn cứ 31, vị trí then chốt thứ hai ở phía bắc. Bằng chiến thuật vây lấn, từ ngày 21 đến 24/2 các đơn vị của trung đoàn lần lượt tiêu diệt các trận địa hoả lực và trận địa phòng ngự vòng ngoài, cắt đường bộ từ Bản Đông lên căn cứ 31. Trưa 25/2, bằng trận tiến công hiệp đồng binh chủng, Trung đoàn 64 làm chủ căn cứ 31, tiêu diệt Tiểu đoàn 3 dù, bắt sống đại tá Lữ đoàn trưởng Nguyễn Văn Thọ và toàn bộ Ban tham mưu lữ đoàn.",
       "hien": [
-        "quan-dich-bo-chay",
-        "mui-be-gay-canh-quan"
+        "e64",
+        "can-cu-31",
+        "ban-dong"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Đánh bại hoàn toàn cuộc hành quân",
-      "mo_ta": "Chiến dịch đánh bại hoàn toàn cuộc hành quân Lam Sơn 719, làm phá sản một bước cơ bản chiến lược 'Việt Nam hoá chiến tranh'.",
+      "tieu_de": "26/2 – đầu tháng 3 — hướng nam và thất bại của thê đội 2 ở cửa ngõ Sê Pôn",
+      "thoi_gian": "26/2 – đầu tháng 3/1971",
+      "dia_danh": "Nam và tây nam đường 9 · Sê Pôn",
+      "mo_ta": "Từ ngày 26 đến 28/2, các Sư đoàn 304, 324 và 2 ở hướng nam và tây nam đường 9, được các đơn vị tại chỗ của Đoàn 559 hỗ trợ, chuyển từ chốt chặn sang tiến công, đánh thiệt hại nặng 3 trung đoàn của Sư đoàn 1 và sư đoàn lính thuỷ đánh bộ, phá tan các đợt «nhảy cóc» lùng sục đánh phá kho tàng. Cuối tháng 2 đầu tháng 3, đối phương đưa thê đội 2 gồm Lữ đoàn dù 2, Trung đoàn 147 và 258 lính thuỷ đánh bộ vào nhằm đánh chiếm Sê Pôn, nhưng mọi cố gắng đều thất bại ở cửa ngõ Sê Pôn.",
       "hien": [
-        "co-thang-d9"
+        "huong-nam",
+        "se-pon",
+        "doan-559"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "2 – 17/3 — tập trung tiêu diệt tập đoàn cứ điểm Bản Đông",
+      "thoi_gian": "2 – 17/3/1971",
+      "dia_danh": "Bản Đông · đường 9 giữa Bản Đông và Lao Bảo",
+      "mo_ta": "Ngày 2/3/1971, Quân uỷ Trung ương chỉ thị Đảng uỷ và Bộ Tư lệnh chiến dịch tập trung tiêu diệt địch trong khu vực Bản Đông càng nhanh càng tốt. Bộ Tư lệnh chiến dịch quyết định tập trung Sư đoàn 308 cùng Trung đoàn 64 và Trung đoàn 66 bao vây tiến công tập đoàn cứ điểm Bản Đông; Sư đoàn 2 kìm chân hai trung đoàn của Sư đoàn 1 ở hướng nam; Trung đoàn 24 và một số tiểu đoàn chốt chặn đường 9 giữa Bản Đông và Lao Bảo. Từ ngày 12 đến 17/3, các trung đoàn 36, 64, 66 cùng xe tăng, pháo binh, pháo cao xạ tiến công dồn dập Bản Đông do 1 lữ đoàn dù và 2 thiết đoàn đóng giữ.",
+      "hien": [
+        "vay-ban-dong",
+        "ban-dong",
+        "chot-chan-d9",
+        "huong-nam"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "18 – 23/3 — địch bỏ Bản Đông, ta truy quét và kết thúc chiến dịch",
+      "thoi_gian": "18 – 23/3/1971",
+      "dia_danh": "Bản Đông · Lao Bảo",
+      "mo_ta": "Trước nguy cơ bị tiêu diệt, ngày 18/3 quân đội Sài Gòn phải bỏ Bản Đông tháo chạy. Bộ đội ta chuyển sang truy quét. Trên đoạn đường 9 từ Bản Đông về Lao Bảo, hơn 100 xe tăng và xe thiết giáp bị chặn đánh; hàng trăm binh sĩ vứt bỏ súng đạn chạy cắt rừng và bị bắt. Ngày 20/3, khu vực Bản Đông — nơi được chọn làm khu vực đánh trận then chốt — hoàn toàn giải phóng. Ngày 23/3/1971, Chiến dịch Đường 9 – Nam Lào kết thúc sau gần 50 ngày đêm chiến đấu liên tục.",
+      "hien": [
+        "truy-quet",
+        "lao-bao",
+        "ban-dong",
+        "co-ket-thuc"
+      ],
+      "nguon": [
+        "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
       ]
     }
   ],
-  "ket_qua": "Bẻ gãy các cánh quân, buộc địch bỏ xe pháo tháo chạy — đánh bại hoàn toàn cuộc hành quân Lam Sơn 719.",
-  "y_nghia": "Làm phá sản một bước cơ bản chiến lược 'Việt Nam hoá chiến tranh' của Mỹ, bảo vệ vững chắc tuyến chi viện chiến lược đường mòn Hồ Chí Minh.",
+  "ket_qua": "Sau gần 50 ngày đêm từ 8/2 đến 23/3/1971, hơn hai vạn quân đối phương bị loại khỏi vòng chiến đấu, gồm 6 trung đoàn, lữ đoàn và 13 tiểu đoàn bộ binh, pháo binh; ba sư đoàn dự bị chiến lược — sư đoàn dù, sư đoàn lính thuỷ đánh bộ và Sư đoàn 1 — bị đánh thiệt hại nặng; lực lượng không quân và tăng thiết giáp cũng tổn thất lớn (Báo Nhân Dân).",
+  "y_nghia": "Chiến dịch đánh bại quân chủ lực Sài Gòn có sự yểm trợ của hoả lực Mỹ, chấm dứt các cuộc hành quân lớn đánh ra vòng ngoài, và đánh dấu bước thất bại nghiêm trọng của chiến lược «Việt Nam hoá chiến tranh». Về nghệ thuật chiến dịch, đây là lần đầu ta tổ chức phản công quy mô lớn với các trận vây lấn tiêu diệt gọn cứ điểm cấp tiểu đoàn và bắt sống chỉ huy cấp lữ đoàn.",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html",
     "Báo QĐND — Chiến thắng Đường 9 - Nam Lào 1971",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
     "Lịch sử Việt Nam (Viện Sử học)"
@@ -155,5 +376,45 @@
       "nguon_trich": "Báo Quân đội nhân dân (qdnd.vn) — Chiến thắng Đường 9 - Nam Lào 1971 — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-duong-9-nam-lao-1971-pha-san-mot-buoc-co-ban-chien-luoc-viet-nam-hoa-chien-tranh-cua-my-803354",
       "buoc": 5
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến theo bài chuyên đề của Báo Nhân Dân. loai_xung_dot=noi-chien: lực lượng bộ binh thực hành cuộc hành quân Lam Sơn 719 là quân đội Sài Gòn; phía Mỹ yểm trợ hoả lực, không quân và cử cố vấn nhưng không đưa bộ binh sang phần đất Lào trong chiến dịch này theo mô tả của nguồn. Đây là ca ở ranh giới, người soát §9 có thể quyết khác. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "8/2/1971 – 23/3/1971",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Binh đoàn 70 — hướng chủ yếu Bản Đông – Sê Pôn",
+        "Sư đoàn 308",
+        "Sư đoàn 320",
+        "Sư đoàn 304",
+        "Sư đoàn 324",
+        "Sư đoàn 2 (Quân khu 5)",
+        "Bộ đội Đoàn 559",
+        "Mặt trận Đường 9 – bắc Quảng Trị"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Sư đoàn dù",
+        "Sư đoàn lính thuỷ đánh bộ",
+        "Sư đoàn 1 bộ binh",
+        "Liên đoàn 21 biệt động quân",
+        "Lữ đoàn dù 2 và 3",
+        "Trung đoàn 147 và 258 lính thuỷ đánh bộ"
+      ],
+      "vu_khi": [
+        "Hàng chục trận địa pháo với hàng trăm khẩu từ 105 mm tới 175 mm bố trí dọc biên giới trên chính diện 30 km",
+        "Không quân Mỹ yểm trợ, gồm máy bay chiến lược B-52"
+      ]
+    },
+    "nguon": [
+      "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Hơn hai vạn quân bị loại khỏi vòng chiến đấu, gồm 6 trung đoàn, lữ đoàn và 13 tiểu đoàn bộ binh, pháo binh; ba sư đoàn dự bị chiến lược — sư đoàn dù, sư đoàn lính thuỷ đánh bộ và Sư đoàn 1 — bị đánh thiệt hại nặng",
+    "nguon": [
+      "Chiến dịch Đường 9 – Nam Lào — Báo Nhân Dân — https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
+    ]
+  }
 }

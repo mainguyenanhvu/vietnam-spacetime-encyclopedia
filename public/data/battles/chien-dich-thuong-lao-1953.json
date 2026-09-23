@@ -1,10 +1,12 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Thượng Lào 1953 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Toàn bộ địa bàn tác chiến trên đất Lào — không gắn tỉnh Việt Nam cụ thể để tránh suy diễn. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Thượng Lào 1953 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Toàn bộ địa bàn tác chiến trên đất Lào — không gắn tỉnh Việt Nam cụ thể để tránh suy diễn.",
+  "ghi_chu_bien_tap": "Diện tích giải phóng có hai con số trong hai bài nhà nước — «trên khoảng 4.000km²» (Báo Nhân Dân) và «khoảng 40 nghìn km²» (media.qdnd.vn). GIỮ CẢ HAI theo bất biến #4, ĐỪNG SỬA thành một; chênh đúng một bậc mười nên rất có thể là lỗi ấn loát ở một trong hai bài, nhưng chọn hộ là việc của chủ dự án.",
   "id": "chien-dich-thuong-lao-1953",
   "ten": "Chiến dịch Thượng Lào 1953",
   "nam": 1953,
+  "thoi_gian": "13/4/1953 – 3/5/1953",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Đại tướng Võ Nguyên Giáp (phối hợp Pathet Lào)",
+  "chi_huy": "Đại tướng Võ Nguyên Giáp — Chỉ huy trưởng; phía Lào có Hoàng thân Xuphanuvông và đồng chí Cayxỏn Phômvihản tham gia chỉ đạo",
   "doi_thu": "Quân đội Pháp",
   "dia_diem": "Sầm Nưa – Xiêng Khoảng (Thượng Lào)",
   "lien_quan_tinh": [],
@@ -13,120 +15,478 @@
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          80
-        ],
-        [
-          500,
-          50
-        ],
-        [
-          900,
-          100
-        ]
+        [60, 200],
+        [250, 150],
+        [500, 130],
+        [740, 90],
+        [960, 70]
       ],
-      "nhan": "Sầm Nưa – Xiêng Khoảng (Thượng Lào)"
+      "nhan": "Dãy núi biên giới Việt – Lào"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [140, 130],
+        [200, 250],
+        [265, 360],
+        [230, 470],
+        [180, 560]
+      ],
+      "nhan": "Sông Nậm Hu"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [960, 90],
+        [830, 130],
+        [720, 155],
+        [640, 172]
+      ],
+      "nhan": "Đường số 6 — từ Tây Bắc sang Sầm Nưa"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [975, 520],
+        [880, 535],
+        [790, 530],
+        [700, 500]
+      ],
+      "nhan": "Đường số 7 — từ Nghệ An lên Xiêng Khoảng"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [430, 250],
+        [560, 285],
+        [545, 380],
+        [420, 350]
+      ],
+      "nhan": "Rừng núi Thượng Lào"
     }
   ],
   "phan_tu": [
     {
-      "id": "cu-diem-sam-nua",
-      "kieu": "cong-su",
-      "ben": "dich",
-      "x": 400,
-      "y": 300,
-      "nhan": "Cứ điểm Sầm Nưa kiểu Nà Sản"
-    },
-    {
-      "id": "quan-ta-viet-lao",
+      "id": "dd308-312-316",
       "kieu": "quan",
       "ben": "ta",
-      "x": 250,
-      "y": 400,
-      "nhan": "Liên quân Việt – Lào tiến công"
+      "x": 830,
+      "y": 110,
+      "nhan": "Đại đoàn 308 · 312 · 316",
+      "quy_mo": "Hướng chủ yếu — theo Đường số 6 sang Sầm Nưa"
     },
     {
-      "id": "co-thang-sam-nua",
+      "id": "na-thong",
+      "kieu": "dia-danh",
+      "x": 725,
+      "y": 118,
+      "nhan": "Sân bay dã chiến Nà Thông"
+    },
+    {
+      "id": "trung-doan-148",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 150,
+      "y": 130,
+      "nhan": "Trung đoàn 148",
+      "quy_mo": "Hướng phối hợp — lưu vực sông Nậm Hu"
+    },
+    {
+      "id": "sam-nua",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 615,
+      "y": 172,
+      "nhan": "Sầm Nưa",
+      "quy_mo": "Tập đoàn cứ điểm 11 vị trí · 3 tiểu đoàn"
+    },
+    {
+      "id": "dien-bien-phu",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 70,
+      "nhan": "Điện Biên Phủ — nơi Trung đoàn 148 xuất phát"
+    },
+    {
+      "id": "na-vieng",
+      "kieu": "dia-danh",
+      "x": 748,
+      "y": 218,
+      "nhan": "Bãi nhảy dù Nà Viêng"
+    },
+    {
+      "id": "bo-chi-huy",
+      "kieu": "dia-danh",
+      "x": 900,
+      "y": 250,
+      "nhan": "Bộ Chỉ huy chiến dịch Việt – Lào"
+    },
+    {
+      "id": "muong-ngoi",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 268,
+      "y": 232,
+      "nhan": "Mường Ngòi"
+    },
+    {
+      "id": "muong-ham",
+      "kieu": "dia-danh",
+      "x": 555,
+      "y": 262,
+      "nhan": "Mường Hàm"
+    },
+    {
+      "id": "pac-sang",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 198,
+      "y": 302,
+      "nhan": "Pắc Sàng"
+    },
+    {
+      "id": "na-noong",
+      "kieu": "dia-danh",
+      "x": 498,
+      "y": 332,
+      "nhan": "Bản Nà Noọng"
+    },
+    {
+      "id": "nam-bac",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 302,
+      "y": 342,
+      "nhan": "Nậm Bạc"
+    },
+    {
+      "id": "hua-muong",
+      "kieu": "dia-danh",
+      "x": 558,
+      "y": 402,
+      "nhan": "Hứa Mường"
+    },
+    {
+      "id": "dd304",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 900,
+      "y": 400,
+      "nhan": "Đại đoàn 304",
+      "quy_mo": "Hướng thứ yếu — theo Đường 7 lên Xiêng Khoảng"
+    },
+    {
+      "id": "luang-prabang",
+      "kieu": "dia-danh",
+      "x": 178,
+      "y": 422,
+      "nhan": "Luông Pha Băng"
+    },
+    {
+      "id": "xieng-khoang",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 762,
+      "y": 468,
+      "nhan": "Thị xã Xiêng Khoảng"
+    },
+    {
+      "id": "canh-dong-chum",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 618,
+      "y": 482,
+      "nhan": "Cánh Đồng Chum"
+    },
+    {
+      "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 450,
-      "y": 230,
-      "nhan": "Giải phóng tỉnh Sầm Nưa"
+      "x": 400,
+      "y": 490,
+      "nhan": "Giải phóng toàn bộ tỉnh Sầm Nưa"
     },
     {
-      "id": "mui-mo-rong-xieng-khoang",
+      "id": "noong-het",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 862,
+      "y": 542,
+      "nhan": "Noọng Hét"
+    },
+    {
+      "id": "ban-ban",
+      "kieu": "dia-danh",
+      "x": 742,
+      "y": 548,
+      "nhan": "Bản Ban"
+    },
+    {
+      "id": "khang-khay",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 558,
+      "nhan": "Khăng Khay"
+    },
+    {
+      "id": "mui-chu-yeu",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        500,
-        260
-      ],
-      "den": [
-        700,
-        200
-      ],
-      "nhan": "Mở rộng sang Xiêng Khoảng"
+      "tu": [800, 128],
+      "den": [662, 162],
+      "nhan": "Hướng chủ yếu tiến vào Sầm Nưa"
     },
     {
-      "id": "co-thang-thuong-lao",
-      "kieu": "co",
+      "id": "mui-dich-rut",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [645, 205],
+      "den": [630, 450],
+      "nhan": "Địch rút khỏi Sầm Nưa đêm 12/4"
+    },
+    {
+      "id": "mui-truy-kich",
+      "kieu": "mui-ten",
       "ben": "ta",
-      "x": 750,
-      "y": 150,
-      "nhan": "Buộc Pháp phân tán lực lượng"
+      "tu": [598, 205],
+      "den": [530, 392],
+      "nhan": "Truy kích Mường Hàm – Nà Noọng – Hứa Mường"
+    },
+    {
+      "id": "mui-nam-hu",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [180, 172],
+      "den": [252, 312],
+      "nhan": "Hướng sông Nậm Hu, uy hiếp Luông Pha Băng"
+    },
+    {
+      "id": "mui-304",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [880, 428],
+      "den": [795, 458],
+      "nhan": "Đại đoàn 304 áp sát Xiêng Khoảng"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Đại đoàn 308 (3 trung đoàn)",
+        "Đại đoàn 312 (2 trung đoàn)",
+        "Đại đoàn 316 (1 trung đoàn)",
+        "Đại đoàn 304 (3 trung đoàn)",
+        "Trung đoàn 148",
+        "Các đoàn Quân tình nguyện Việt Nam đang hoạt động tại Thượng Lào",
+        "Lực lượng vũ trang cách mạng Lào: 5 đại đội và hàng nghìn quân du kích"
+      ],
+      "quan_so": [
+        {
+          "so": "Riêng tỉnh Sầm Nưa đóng góp 220 tấn gạo và 3.000 dân công cho bộ đội Việt Nam",
+          "nguon": "Báo Nhân Dân — Chiến thắng Thượng Lào 1953"
+        }
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "3 tiểu đoàn ở Sầm Nưa, tăng thêm 1 tiểu đoàn nguỵ Lào ở Xiêng Khoảng",
+          "nguon": "Báo Nhân Dân — Chiến thắng Thượng Lào 1953"
+        }
+      ],
+      "don_vi": [
+        "Tập đoàn cứ điểm nhỏ ở Sầm Nưa gồm 11 vị trí",
+        "Chiến trường Thượng Lào chia thành hai khu vực phòng thủ Mê Kông và Trấn Ninh"
+      ],
+      "vu_khi": [
+        "Sân bay dã chiến Nà Thông",
+        "Bãi nhảy dù Nà Viêng"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html",
+      "media.qdnd.vn — Kỷ niệm 70 năm Chiến thắng Thượng Lào (1953-2023), Bài 1 — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "2.800 tên bị loại khỏi vòng chiến đấu, chiếm 1/5 tổng số lực lượng địch ở Lào — diệt 500, bắt 1.800, làm tan rã 500; đánh tan 3 tiểu đoàn và 3 đại đội ở Sầm Nưa, 8 đại đội hướng sông Nậm Hu",
+        "nguon": "Báo Nhân Dân — Chiến thắng Thượng Lào 1953"
+      }
+    ],
+    "nguon": [
+      "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html",
+      "media.qdnd.vn — Kỷ niệm 70 năm Chiến thắng Thượng Lào (1953-2023), Bài 1 — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Pháp xây dựng Sầm Nưa thành cứ điểm mạnh",
-      "mo_ta": "Đầu 1953, tướng Pháp R. Salan xây dựng Sầm Nưa thành cứ điểm mạnh kiểu Nà Sản.",
+      "tieu_de": "Salan dựng Sầm Nưa thành «một Nà Sản thứ hai»",
+      "thoi_gian": "Đầu năm 1953",
+      "dia_danh": "Sầm Nưa · Xiêng Khoảng",
+      "mo_ta": "Thượng Lào là địa bàn chiến lược quan trọng, được coi là hậu phương an toàn của thực dân Pháp. Sau thắng lợi Tây Bắc 1952, vùng giải phóng của cách mạng Việt Nam mở rộng tới sát Thượng Lào; hai nước dễ dàng chi viện sức người, sức của cho nhau, các căn cứ du kích vùng Thượng Lào có được thế dựa vững chắc vào cả một vùng giải phóng rộng lớn. Nhận thấy nguy cơ có thể mất Thượng Lào, đầu năm 1953 tướng Salan đặt Thượng Lào dưới quyền chỉ huy của Bộ chỉ huy quân đội Pháp ở Bắc Đông Dương, chia chiến trường thành hai khu vực phòng thủ Mê Kông và Trấn Ninh, tập trung xây dựng Sầm Nưa thành một tập đoàn cứ điểm kiên cố tương tự Nà Sản ở Tây Bắc. Tại Sầm Nưa, quân Pháp dựng tập đoàn cứ điểm nhỏ gồm 11 vị trí, có sân bay dã chiến Nà Thông, bãi nhảy dù Nà Viêng và lực lượng lên tới 3 tiểu đoàn; tại Xiêng Khoảng, Pháp tăng thêm một tiểu đoàn nguỵ Lào.",
       "hien": [
-        "cu-diem-sam-nua"
+        "sam-nua",
+        "na-thong",
+        "na-vieng",
+        "xieng-khoang",
+        "canh-dong-chum",
+        "luang-prabang",
+        "dien-bien-phu"
+      ],
+      "nguon": [
+        "media.qdnd.vn — Kỷ niệm 70 năm Chiến thắng Thượng Lào (1953-2023), Bài 1 — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843",
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Liên quân Việt-Lào mở chiến dịch tiến công",
-      "mo_ta": "Từ 13/4/1953, bộ đội chủ lực Việt Nam phối hợp lực lượng Pathet Lào mở chiến dịch tiến công.",
+      "tieu_de": "Hai Chính phủ quyết định phối hợp mở chiến dịch",
+      "thoi_gian": "Cuối tháng 1 – 3/2/1953",
+      "dia_danh": "Hội nghị Trung ương lần thứ 4",
+      "mo_ta": "Cuối tháng 1/1953, Hội nghị lần thứ 4 Ban Chấp hành Trung ương Đảng Lao động Việt Nam đánh giá rằng dù địch đã tăng cường phòng thủ, vùng Thượng Lào vẫn là chỗ yếu và sơ hở: ở xa, khả năng tăng viện và tiếp tế khó khăn, dễ bị chia cắt. Tổng Quân uỷ nhận định Thượng Lào có ý nghĩa lớn về chiến lược, vừa phù hợp với trình độ tác chiến của ta, vừa làm mất chỗ dựa phía sau Nà Sản, vừa mở được căn cứ cho Bạn đứng chân. Ngày 3/2/1953, Chính phủ nước Việt Nam Dân chủ Cộng hoà và Chính phủ Kháng chiến Lào quyết định phối hợp mở Chiến dịch Thượng Lào. Bộ chỉ huy chiến dịch phía Việt Nam gồm Đại tướng Võ Nguyên Giáp làm Chỉ huy trưởng, Nguyễn Chí Thanh làm Chủ nhiệm Chính trị, Hoàng Văn Thái làm Tham mưu trưởng, Trần Đăng Ninh làm Chủ nhiệm Cung cấp; phía Lào có Hoàng thân Xuphanuvông và đồng chí Cayxỏn Phômvihản.",
       "hien": [
-        "cu-diem-sam-nua",
-        "quan-ta-viet-lao"
+        "bo-chi-huy",
+        "sam-nua",
+        "xieng-khoang",
+        "dd308-312-316",
+        "dd304",
+        "trung-doan-148"
+      ],
+      "nguon": [
+        "media.qdnd.vn — Kỷ niệm 70 năm Chiến thắng Thượng Lào (1953-2023), Bài 1 — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843",
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Giải phóng tỉnh Sầm Nưa",
-      "mo_ta": "Liên quân tiến công tiêu diệt một bộ phận quân Pháp, giải phóng toàn bộ tỉnh Sầm Nưa.",
+      "tieu_de": "9/4/1953: ba hướng cùng tiến sang Lào",
+      "thoi_gian": "9 – 12/4/1953",
+      "dia_danh": "Đường số 6 · Đường số 7 · lưu vực sông Nậm Hu",
+      "mo_ta": "Ngày 9/4/1953, các đơn vị chủ lực Việt Nam tiến sang Lào theo ba hướng. Hướng chủ yếu gồm các đại đoàn 308, 312, 316 theo Đường số 6 sang Sầm Nưa; đồng chí Võ Nguyên Giáp và Hoàng thân Xuphanuvông cùng hành quân với các đơn vị trên hướng này. Hướng thứ hai gồm Đại đoàn 304 từ Nghệ An theo Đường 7 lên Xiêng Khoảng, chặn đường rút lui của địch từ Sầm Nưa xuống. Hướng thứ ba là Trung đoàn 148 từ Điện Biên Phủ tiến xuống phía bắc Sầm Nưa, uy hiếp Luông Pha Băng. Phát hiện chủ lực ta tiến về Thượng Lào từ nhiều ngả, chỉ huy phân khu Sầm Nưa hốt hoảng báo về rằng chủ lực đối phương đang tiến về ào ạt; tướng Salan nhận thấy để ba tiểu đoàn cố thủ Sầm Nưa trước ưu thế áp đảo chẳng khác nào lấy trứng chọi đá.",
       "hien": [
-        "quan-ta-viet-lao",
-        "co-thang-sam-nua"
+        "dd308-312-316",
+        "dd304",
+        "trung-doan-148",
+        "mui-chu-yeu",
+        "mui-304",
+        "mui-nam-hu",
+        "sam-nua",
+        "dien-bien-phu",
+        "xieng-khoang"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Mở rộng vùng giải phóng sang Xiêng Khoảng",
-      "mo_ta": "Liên quân tiếp tục mở rộng vùng giải phóng sang một phần Xiêng Khoảng.",
+      "tieu_de": "Địch bỏ chạy trước khi ta tới, ta chuyển sang truy kích",
+      "thoi_gian": "Đêm 12/4 – trưa 13/4/1953",
+      "dia_danh": "Sầm Nưa",
+      "mo_ta": "Để tránh bị tiêu diệt, ngay trong đêm 12/4, Salan ra lệnh cho quân ở Sầm Nưa rút về phía nam. Tình huống chiến dịch thay đổi hoàn toàn: ta dự kiến đánh địch trong công sự vững chắc, nhưng địch lại rút chạy trước khi ta đến. Khoảng 10 giờ ngày 13/4, khi bộ phận cuối cùng của địch rút khỏi Sầm Nưa, các đơn vị đi đầu của ta còn cách thị xã từ 5 đến 10km. Trưa 13/4, nhận được tin, Bộ chỉ huy chiến dịch hạ quyết tâm truy kích địch đến cùng, tiêu diệt toàn bộ quân địch rút lui, chỉ thị cho các đơn vị tập trung mọi lực lượng động viên bộ đội, không cho địch chạy thoát về Cánh Đồng Chum. Các đơn vị nhanh chóng tổ chức thành những bộ phận gọn nhẹ để đuổi bám.",
       "hien": [
-        "co-thang-sam-nua",
-        "mui-mo-rong-xieng-khoang"
+        "sam-nua",
+        "mui-dich-rut",
+        "mui-truy-kich",
+        "canh-dong-chum",
+        "dd308-312-316",
+        "na-thong",
+        "na-vieng"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Buộc Pháp phân tán lực lượng trước Điện Biên Phủ",
-      "mo_ta": "Chiến dịch buộc Pháp phải điều lực lượng đối phó nhiều hướng, tạo bàn đạp cho các chiến dịch phối hợp Đông Xuân 1953-1954.",
+      "tieu_de": "Truy kích: Mường Hàm, Nà Noọng, Hứa Mường",
+      "thoi_gian": "Đêm 13/4 – 4 giờ sáng 17/4/1953",
+      "dia_danh": "Mường Hàm · bản Nà Noọng · Hứa Mường",
+      "mo_ta": "Tiểu đoàn 888 Trung đoàn 176 Đại đoàn 316, Tiểu đoàn 23 Trung đoàn 88 Đại đoàn 308, Tiểu đoàn 79 Trung đoàn 209 Đại đoàn 312 và hai đại đội trực thuộc Trung đoàn 165 Đại đoàn 312 dẫn đầu đội hình truy kích. Đêm 13/4, Tiểu đoàn 888 đuổi kịp và tiêu diệt bộ phận cuối của địch ở Mường Hàm, bắt toàn bộ lực lượng cầm đầu nguỵ quyền tỉnh Sầm Nưa cùng hơn 40 lính dõng. Cùng thời điểm, Trung đoàn 98 lần theo dấu vết rút chạy để truy đuổi; đến 9 giờ ngày 14/4, bộ phận đi đầu phát hiện địch đang ở chân dốc trước bản Nà Noọng, lập tức hình thành ba bộ phận vừa chặn đầu vừa đánh thẳng vào đội hình, loại khỏi vòng chiến đấu gần 300 tên. Trên hướng Trung đoàn 102 và 209, 4 giờ sáng ngày 17/4 các đơn vị đuổi kịp địch ở Hứa Mường và tiêu diệt khoảng một đại đội, trong đó có 40 lính Âu – Phi; số tàn binh còn lại khoảng 200 tên chạy theo ba hướng Xốp Ó, Xốp Khoa, Bản Ban về Cánh Đồng Chum.",
       "hien": [
-        "co-thang-thuong-lao"
+        "muong-ham",
+        "na-noong",
+        "hua-muong",
+        "mui-truy-kich",
+        "ban-ban",
+        "canh-dong-chum",
+        "dd308-312-316",
+        "sam-nua"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Hướng Xiêng Khoảng: Đại đoàn 304 ép địch về Cánh Đồng Chum",
+      "thoi_gian": "15 – 18/4/1953",
+      "dia_danh": "Noọng Hét · Bản Ban · Khăng Khay · thị xã Xiêng Khoảng",
+      "mo_ta": "Trên hướng thứ yếu, được tin Đại đoàn 304 tiến sát biên giới, ngày 15/4 địch tổ chức rút khỏi Noọng Hét và Bản Ban. Các Trung đoàn 66 và Trung đoàn 9 của Đại đoàn 304 nhanh chóng ổn định địa bàn; sau đó một bộ phận của Trung đoàn 9 tiến về Sầm Nưa phối hợp với hướng chủ yếu, bộ phận còn lại tiến vào Khăng Khay. Ngày 18/4, Trung đoàn 57 của Đại đoàn 304 áp sát thị xã Xiêng Khoảng; địch ở đây hoảng sợ, vội rút về Cánh Đồng Chum cố thủ. Phối hợp với bộ đội Việt Nam, nhân dân các bộ tộc Lào thuộc các tỉnh Sầm Nưa, Xiêng Khoảng, Luông Pha Băng huy động hàng nghìn dân công và hàng trăm tấn lương thực, làm công tác dẫn đường, giữ bí mật, tiếp tế và cùng bộ đội lùng bắt tàn binh.",
+      "hien": [
+        "noong-het",
+        "ban-ban",
+        "khang-khay",
+        "xieng-khoang",
+        "canh-dong-chum",
+        "dd304",
+        "mui-304"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Hướng sông Nậm Hu — Luông Pha Băng bị uy hiếp trực tiếp",
+      "thoi_gian": "21 – 27/4/1953",
+      "dia_danh": "Mường Ngòi · Pắc Sàng · Nậm Bạc",
+      "mo_ta": "Để tiếp tục tiêu diệt địch và mở rộng vùng giải phóng cho Bạn, Bộ Chỉ huy chiến dịch quyết định tiến công vào khu vực sông Nậm Hu. Các vị trí Mường Ngòi ngày 21/4, Pắc Sàng ngày 26/4 và Nậm Bạc ngày 27/4 lần lượt bị tiêu diệt, đẩy mũi tiến công tới sát Luông Pha Băng. Cố đô của Lào bị uy hiếp trực tiếp, Bộ Chỉ huy quân Pháp ở Đông Dương buộc phải lệnh cho Bộ Chỉ huy quân viễn chinh Pháp ở Bắc Bộ đưa lực lượng từ Bắc Việt Nam sang Lào, gấp rút xây dựng phòng tuyến bảo vệ Luông Pha Băng và Cánh Đồng Chum. Đúng như tính toán ban đầu của Tổng Quân uỷ, địch bị buộc phải phân tán lực lượng đối phó trên nhiều hướng.",
+      "hien": [
+        "muong-ngoi",
+        "pac-sang",
+        "nam-bac",
+        "luang-prabang",
+        "trung-doan-148",
+        "mui-nam-hu",
+        "canh-dong-chum"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "3/5/1953: thắng lợi vượt mức dự kiến",
+      "thoi_gian": "3/5/1953",
+      "dia_danh": "Sầm Nưa · Xiêng Khoảng · Phông Xa Lỳ",
+      "mo_ta": "Ngày 3/5/1953, chiến dịch kết thúc. Bộ Chỉ huy quyết định phân tán một bộ phận lực lượng kết hợp cùng bộ đội Lào truy quét tàn binh và xây dựng cơ sở, còn đại bộ phận rút quân về nước. Sau ba tuần vận động tiến công và truy kích, ta loại khỏi vòng chiến đấu 2.800 tên, chiếm một phần năm tổng số lực lượng địch ở Lào, trong đó diệt 500, bắt 1.800, làm tan rã 500 gồm hầu hết bộ máy nguỵ quyền tỉnh Sầm Nưa; đánh tan 3 tiểu đoàn và 3 đại đội ở Sầm Nưa, 8 đại đội hướng sông Nậm Hu và hàng trăm địch ở mặt trận Đường số 7 – Xiêng Khoảng. Ta tiêu diệt 5 vị trí là Mường Ngòi, Nậm Bạc, Mường Kho, Pắc Sàng, Noọng Hét và bức rút 25 vị trí khác. Diện tích giải phóng được chép hai cách: trên khoảng 4.000km², hoặc khoảng 40 nghìn km²; vùng đó gồm toàn bộ tỉnh Sầm Nưa, một phần tỉnh Xiêng Khoảng và một số huyện dọc sông Nậm Hu thuộc Luông Pha Băng và Phông Xa Lỳ.",
+      "hien": [
+        "co-thang",
+        "sam-nua",
+        "xieng-khoang",
+        "muong-ngoi",
+        "nam-bac",
+        "pac-sang",
+        "noong-het",
+        "luang-prabang"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html",
+        "media.qdnd.vn — Kỷ niệm 70 năm Chiến thắng Thượng Lào (1953-2023), Bài 1 — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843"
       ]
     }
   ],
-  "ket_qua": "Liên quân Việt–Lào giải phóng toàn bộ tỉnh Sầm Nưa và một phần Xiêng Khoảng, buộc Pháp phải phân tán lực lượng đối phó nhiều hướng trước Điện Biên Phủ.",
-  "y_nghia": "Biểu tượng của liên minh chiến đấu đặc biệt Việt–Lào, tạo bàn đạp cho các chiến dịch phối hợp tiếp theo trong Đông Xuân 1953–1954.",
+  "ket_qua": "Loại khỏi vòng chiến đấu 2.800 quân địch — một phần năm tổng số quân địch ở Lào, tiêu diệt 5 vị trí và bức rút 25 vị trí, giải phóng toàn bộ tỉnh Sầm Nưa cùng một phần Xiêng Khoảng và các huyện dọc sông Nậm Hu.",
+  "y_nghia": "Biểu tượng của liên minh chiến đấu đặc biệt Việt – Lào, mở rộng địa bàn đứng chân cho lực lượng kháng chiến Lào và tạo thế chiến lược có lợi trước Đông Xuân 1953–1954.",
   "trang_thai": "draft",
   "nguon": [
-    "Báo Quân đội nhân dân — Chiến dịch Thượng Lào - Một biểu tượng của liên minh chiến đấu Việt – Lào",
+    "Báo Nhân Dân — Chiến thắng Thượng Lào 1953 — https://special.nhandan.vn/chien-thang-thuong-lao-1953/index.html",
+    "media.qdnd.vn — Kỷ niệm 70 năm Chiến thắng Thượng Lào (1953-2023), Bài 1: Chiến thắng Thượng Lào 1953 — thế tiến công chiến lược của ta được phát triển — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843",
+    "Báo Quân đội nhân dân — Hội thảo khoa học «Chiến thắng Thượng Lào 1953 — biểu tượng của tình đoàn kết chiến đấu Việt – Lào» — https://www.qdnd.vn/quoc-phong-an-ninh/tin-tuc/hoi-thao-khoa-hoc-chien-thang-thuong-lao-1953-bieu-tuong-cua-tinh-doan-ket-chien-dau-viet-lao-724801",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
@@ -135,6 +495,12 @@
       "doan": "đầu năm 1953, tướng R.Salan, Tư lệnh quân Pháp ở Đông Dương quyết định đặt Thượng Lào dưới quyền chỉ huy của Bộ chỉ huy quân đội Pháp ở Bắc Đông Dương, chia chiến trường Thượng Lào thành hai khu vực phòng thủ là Mê Kông và Trấn Ninh, trong đó tập trung xây dựng Sầm Nưa thành một tập đoàn cứ điểm kiên cố, tương tự tập đoàn cứ điểm Nà Sản ở Tây Bắc Việt Nam, coi đó là khu vực quan trọng trong hệ thống phòng thủ nhằm ngăn chặn hoạt động phối hợp của cách mạng hai nước Việt Nam, Lào.",
       "nguon_trich": "media.qdnd.vn — Kỷ niệm 70 năm Chiến thắng Thượng Lào (1953-2023) - Bài 1 — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843",
       "buoc": 1
+    },
+    {
+      "sach": "Lời Chủ tịch Hồ Chí Minh tại Hội nghị lần thứ 4 Ban Chấp hành Trung ương Đảng Lao động Việt Nam, cuối tháng 1/1953",
+      "doan": "Cho đến nay, chúng ta giúp kháng chiến Miên-Lào chưa đúng mức. Từ nay chúng ta phải cố gắng giúp hơn nữa",
+      "nguon_trich": "media.qdnd.vn — https://media.qdnd.vn/long-form/ky-niem-70-nam-chien-thang-thuong-lao-1953-2023-bai-1-chien-thang-thuong-lao-1953-the-tien-cong-chien-luoc-cua-ta-duoc-phat-trien-56843",
+      "buoc": 2
     }
   ]
 }

@@ -1,0 +1,70 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch chúa Nguyễn lập phủ Phú Yên 1611 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chua-nguyen-lap-phu-phu-yen-1611",
+  "ten": "Chúa Nguyễn lập phủ Phú Yên (1611)",
+  "nam": 1611,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Chúa Nguyễn Hoàng; Lương Văn Chánh",
+  "doi_thu": "Tàn dư Chiêm Thành vùng Cù Mông – Đèo Cả",
+  "dia_diem": "Vùng đất từ Cù Mông đến Đèo Cả — nay là đền thờ Lương Văn Chánh, xã Hòa Trị, tỉnh Đắk Lắk (Phú Yên cũ)",
+  "lien_quan_tinh": ["dak-lak"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "nui", "diem": [[500, 800], [600, 850], [700, 780]], "nhan": "Đèo Cả — ranh giới phía nam" },
+    { "kieu": "song", "diem": [[300, 400], [450, 500], [550, 600]], "nhan": "Sông Đà Diễn (sông Ba)" }
+  ],
+  "phan_tu": [
+    { "id": "thanh-ho-1578", "kieu": "cong-su", "ben": "dich", "x": 600, "y": 200, "nhan": "Hồ thành — cứ điểm Chiêm Thành" },
+    { "id": "luong-van-chanh-danh-thanh", "kieu": "quan", "ben": "ta", "x": 500, "y": 220, "nhan": "Lương Văn Chánh đánh chiếm Hồ thành (1578)" },
+    { "id": "mui-di-dan", "kieu": "mui-ten", "ben": "ta", "tu": [350, 100], "den": [450, 450], "nhan": "Dòng lưu dân từ Thuận – Quảng vào Nam (từ 1597)" },
+    { "id": "khan-hoang-cu-mong", "kieu": "cong-su", "ben": "ta", "x": 400, "y": 400, "nhan": "Khẩn hoang vùng Cù Mông" },
+    { "id": "khan-hoang-ba-dai", "kieu": "cong-su", "ben": "ta", "x": 480, "y": 550, "nhan": "Khẩn hoang Bà Đài (Xuân Đài)" },
+    { "id": "khan-hoang-deo-ca", "kieu": "cong-su", "ben": "ta", "x": 550, "y": 800, "nhan": "Ranh giới nam mở tới Đèo Cả" },
+    { "id": "phu-phu-yen-1611", "kieu": "co", "ben": "ta", "x": 480, "y": 500, "nhan": "Phủ Phú Yên thành lập (1611)" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đánh chiếm Hồ thành (1578)",
+      "mo_ta": "Lương Văn Chánh theo lệnh chúa Nguyễn Hoàng đánh chiếm Hồ thành, cứ điểm cuối cùng của Chiêm Thành ở vùng này.",
+      "hien": ["thanh-ho-1578", "luong-van-chanh-danh-thanh"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiêu tập lưu dân khẩn hoang (từ 1597)",
+      "mo_ta": "Chúa Nguyễn Hoàng giao Lương Văn Chánh đưa dân từ Thuận – Quảng vào khai khẩn vùng Cù Mông, Bà Đài, Bà Diễn, Bà Nông.",
+      "hien": ["mui-di-dan", "khan-hoang-cu-mong"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Mở rộng khẩn hoang tới Bà Đài",
+      "mo_ta": "Vùng đất ven sông Đà Diễn, Bà Đài (Xuân Đài) dần thành làng ấp có dân cư ổn định.",
+      "hien": ["khan-hoang-ba-dai"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Xác lập ranh giới tới Đèo Cả",
+      "mo_ta": "Đất khai khẩn trải dài tới Đèo Cả, giáp phần đất Chiêm Thành còn lại phía nam.",
+      "hien": ["khan-hoang-deo-ca"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Lập phủ Phú Yên (1611)",
+      "mo_ta": "Năm Tân Hợi 1611, chúa Nguyễn Hoàng chính thức lập phủ Phú Yên gồm hai huyện Đồng Xuân, Tuy Hòa.",
+      "hien": ["phu-phu-yen-1611"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Lương Văn Chánh qua đời cùng năm",
+      "mo_ta": "Lương Văn Chánh mất ngày 19 tháng 9 âm lịch năm 1611, được dân lập đền thờ, tôn làm Thành hoàng vùng đất mới.",
+      "hien": ["phu-phu-yen-1611"]
+    }
+  ],
+  "ket_qua": "Phủ Phú Yên hình thành với hai huyện Đồng Xuân, Tuy Hòa, mở rộng lãnh thổ Đàng Trong tới Đèo Cả.",
+  "y_nghia": "Đánh dấu bước Nam tiến qua con đường khẩn hoang do dân thay vì thuần tuý chinh phạt, đặt nền cho vùng đất Phú Yên về sau.",
+  "trang_thai": "draft",
+  "nguon": [
+    "mocban.vn — Lương Văn Chánh, người có công khai hoang vùng đất Phú Yên",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

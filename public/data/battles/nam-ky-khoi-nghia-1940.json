@@ -1,8 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Nam Kỳ khởi nghĩa 1940 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Nam Kỳ khởi nghĩa 1940 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Nơi lá cờ đỏ sao vàng xuất hiện lần đầu: Báo Nhân Dân nêu «trước trụ sở của Ban khởi nghĩa tỉnh Mỹ Tho tại đình Long Hưng, ở Chợ Lớn và một số tỉnh khác» — tức nhiều nơi cùng lúc, KHÔNG phải riêng đình Long Hưng. Giữ đúng cách diễn đạt đó, đừng rút gọn thành một địa điểm.",
   "id": "nam-ky-khoi-nghia-1940",
   "ten": "Nam Kỳ khởi nghĩa",
   "nam": 1940,
+  "thoi_gian": "Đêm 22 rạng sáng 23/11/1940 – đầu năm 1941",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Xứ ủy Nam Kỳ (Đảng Cộng sản Đông Dương)",
   "doi_thu": "Pháp",
@@ -13,115 +15,430 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
-      "kieu": "duong",
+      "kieu": "song",
       "diem": [
-        [
-          200,
-          350
-        ],
-        [
-          500,
-          330
-        ],
-        [
-          800,
-          310
-        ]
+        [700, 60],
+        [660, 170],
+        [615, 280],
+        [640, 380],
+        [700, 470]
       ],
-      "nhan": "Hóc Môn – Bà Điểm"
+      "nhan": "Sông Sài Gòn – Đồng Nai"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [120, 330],
+        [270, 375],
+        [420, 415],
+        [560, 450],
+        [700, 500]
+      ],
+      "nhan": "Sông Tiền"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [110, 470],
+        [260, 505],
+        [420, 540],
+        [580, 578]
+      ],
+      "nhan": "Sông Hậu"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [780, 480],
+        [880, 540],
+        [960, 590],
+        [990, 590],
+        [990, 470]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [90, 210],
+        [200, 225],
+        [210, 300],
+        [95, 285]
+      ],
+      "nhan": "Đồng Tháp Mười · U Minh — vùng căn cứ"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-xu-uy-nam-ky",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 250,
-      "y": 450,
-      "nhan": "Xứ ủy Nam Kỳ phát động khởi nghĩa"
+      "id": "tay-ninh",
+      "kieu": "dia-danh",
+      "x": 320,
+      "y": 60,
+      "nhan": "Tây Ninh · Truông Mít"
     },
     {
-      "id": "quan-ta-hoc-mon",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 450,
-      "y": 380,
-      "nhan": "Nổi dậy mạnh nhất tại Hóc Môn – Bà Điểm"
+      "id": "thu-dau-mot",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 60,
+      "nhan": "Thủ Dầu Một"
     },
     {
-      "id": "co-do-sao-vang",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 550,
-      "y": 300,
-      "nhan": "Cờ đỏ sao vàng xuất hiện lần đầu"
+      "id": "xuan-thoi-dong",
+      "kieu": "dia-danh",
+      "x": 405,
+      "y": 95,
+      "nhan": "Làng Xuân Thới Đông — nơi họp Xứ uỷ Nam Kỳ"
     },
     {
-      "id": "quan-dich-dan-ap-nk",
-      "kieu": "quan",
+      "id": "bien-hoa",
+      "kieu": "dia-danh",
+      "x": 835,
+      "y": 130,
+      "nhan": "Biên Hoà"
+    },
+    {
+      "id": "ba-diem",
+      "kieu": "dia-danh",
+      "x": 400,
+      "y": 145,
+      "nhan": "Bà Điểm"
+    },
+    {
+      "id": "gia-dinh",
+      "kieu": "dia-danh",
+      "x": 705,
+      "y": 160,
+      "nhan": "Gia Định · Gò Vấp"
+    },
+    {
+      "id": "hoc-mon",
+      "kieu": "cong-su",
       "ben": "dich",
-      "x": 750,
+      "x": 522,
+      "y": 182,
+      "nhan": "Dinh quận và đồn Hóc Môn"
+    },
+    {
+      "id": "sai-gon-cho-lon",
+      "kieu": "dia-danh",
+      "x": 640,
+      "y": 252,
+      "nhan": "Sài Gòn – Chợ Lớn"
+    },
+    {
+      "id": "lang-cha-ca",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 780,
       "y": 250,
-      "nhan": "Pháp đàn áp dữ dội"
+      "nhan": "Bốt Lăng Cha Cả · vườn Tiêu · ngã năm Vĩnh Lộc"
     },
     {
-      "id": "co-xu-ban",
-      "kieu": "co",
-      "ben": "dich",
+      "id": "dong-thap-muoi",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 250,
+      "nhan": "Đồng Tháp Mười · U Minh — nơi du kích rút về"
+    },
+    {
+      "id": "cau-bong",
+      "kieu": "dia-danh",
       "x": 600,
-      "y": 200,
-      "nhan": "Nhiều cán bộ bị xử bắn"
+      "y": 322,
+      "nhan": "Cầu Bông · cầu Rạch Tra"
+    },
+    {
+      "id": "tan-an",
+      "kieu": "dia-danh",
+      "x": 450,
+      "y": 322,
+      "nhan": "Tân An"
+    },
+    {
+      "id": "phap-dan-ap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 885,
+      "y": 330,
+      "nhan": "Pháp đàn áp quy mô lớn"
+    },
+    {
+      "id": "dinh-long-hung",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 362,
+      "nhan": "Đình Long Hưng — trụ sở Ban khởi nghĩa tỉnh Mỹ Tho"
+    },
+    {
+      "id": "my-tho",
+      "kieu": "dia-danh",
+      "x": 405,
+      "y": 402,
+      "nhan": "Mỹ Tho",
+      "quy_mo": "75 trên 114 xã nổi dậy diệt tề"
+    },
+    {
+      "id": "du-kich-nam-ky",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 765,
+      "y": 400,
+      "nhan": "Du kích Nam Kỳ",
+      "quy_mo": "18 trên 21 tỉnh, thành tổ chức được đội du kích, tự vệ"
+    },
+    {
+      "id": "vinh-long",
+      "kieu": "dia-danh",
+      "x": 335,
+      "y": 482,
+      "nhan": "Vĩnh Long · Cái Ngang (Tam Bình)"
+    },
+    {
+      "id": "vung-liem",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 200,
+      "y": 502,
+      "nhan": "Quận lỵ và đồn Vũng Liêm"
+    },
+    {
+      "id": "xu-uy-nam-ky",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 870,
+      "y": 500,
+      "nhan": "Xứ uỷ Nam Kỳ"
+    },
+    {
+      "id": "can-tho",
+      "kieu": "dia-danh",
+      "x": 455,
+      "y": 542,
+      "nhan": "Cần Thơ · Long Xuyên · Châu Đốc · Rạch Giá"
+    },
+    {
+      "id": "soc-trang",
+      "kieu": "dia-danh",
+      "x": 630,
+      "y": 562,
+      "nhan": "Sóc Trăng · Bến Tre · Sa Đéc"
+    },
+    {
+      "id": "mui-hoc-mon",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [432, 188],
+      "den": [492, 184],
+      "nhan": "Bốn cánh quân đánh dinh quận Hóc Môn"
+    },
+    {
+      "id": "mui-vung-liem",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [305, 472],
+      "den": [230, 494],
+      "nhan": "Du kích Vĩnh Long đánh chiếm Vũng Liêm"
+    },
+    {
+      "id": "mui-rut-can-cu",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [330, 330],
+      "den": [185, 272],
+      "nhan": "Du kích phân tán, rút vào vùng căn cứ"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "Đến giữa tháng 11/1940, trong số 21 tỉnh, thành phố của Nam Kỳ có 18 địa phương tổ chức được các đội du kích, tự vệ; có đội quân số hàng trăm người",
+          "nguon": "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ"
+        }
+      ],
+      "don_vi": [
+        "Các đội du kích, tự vệ tổ chức theo tam tam chế: 3 người một tổ, 3 tổ một tiểu đội, 3 tiểu đội một trung đội",
+        "Đội viên tuyển từ Nông hội, Công hội, Đoàn Thanh niên phản đế",
+        "Mỗi đơn vị có đảng viên hoặc quần chúng tích cực chỉ huy, có đại biểu Đảng tham gia lãnh đạo"
+      ],
+      "vu_khi": [
+        "Chủ yếu vũ khí thô sơ, tự tạo: súng săn, giáo, mác, bom, mìn"
+      ]
+    },
+    "nguon": [
+      "Báo điện tử Đảng Cộng sản Việt Nam — Kỷ niệm 85 năm Ngày Nam Kỳ khởi nghĩa: Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Xứ ủy Nam Kỳ phát động khởi nghĩa vũ trang",
-      "mo_ta": "Đêm 22 rạng 23/11/1940, Xứ ủy Nam Kỳ phát động khởi nghĩa vũ trang trên toàn Nam Kỳ.",
+      "tieu_de": "«Đề cương cách mạng Nam Kỳ» — thực chất là đề cương khởi nghĩa vũ trang",
+      "thoi_gian": "Tháng 11/1939 – tháng 3/1940",
+      "dia_danh": "Nam Kỳ",
+      "mo_ta": "Trước diễn biến căng thẳng của tình hình thế giới và âm mưu Nhật – Pháp tranh giành quyền lợi ở Đông Dương, Hội nghị Trung ương Đảng lần thứ 6 tháng 11/1939 chủ trương chuẩn bị khởi nghĩa vũ trang. Quán triệt tinh thần hội nghị, tháng 3/1940 Xứ uỷ Nam Kỳ thông qua «Đề cương cách mạng Nam Kỳ» — thực chất là đề cương khởi nghĩa vũ trang, trong đó xác định thành lập các đội du kích, tự vệ làm nòng cốt khởi nghĩa. Đây là điểm khác biệt căn bản so với các phong trào trước: cuộc nổi dậy được chuẩn bị từ trước bằng một lực lượng vũ trang có tổ chức, chứ không trông vào khí thế quần chúng nhất thời.",
       "hien": [
-        "co-ta-xu-uy-nam-ky"
+        "sai-gon-cho-lon",
+        "hoc-mon",
+        "my-tho",
+        "vinh-long",
+        "can-tho",
+        "tay-ninh",
+        "bien-hoa",
+        "xu-uy-nam-ky"
+      ],
+      "nguon": [
+        "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nổi dậy mạnh nhất tại Hóc Môn – Bà Điểm",
-      "mo_ta": "Cuộc nổi dậy mạnh nhất diễn ra tại Hóc Môn – Bà Điểm, ngoại thành Sài Gòn.",
+      "tieu_de": "Du kích tam tam chế: 18 trên 21 tỉnh có đội",
+      "thoi_gian": "Tháng 7 – giữa tháng 11/1940",
+      "dia_danh": "Các tỉnh, thành Nam Kỳ",
+      "mo_ta": "Việc xây dựng lực lượng du kích, tự vệ lúc đầu triển khai chậm và có biểu hiện lệch lạc. Nắm bắt kịp thời tình hình, Xứ uỷ Nam Kỳ tổ chức hội nghị tháng 7/1940 đề ra các nhiệm vụ cần kíp: xúc tiến xây dựng các đội du kích, tự vệ, mua sắm vũ khí, luyện tập quân sự. Các địa phương lựa chọn đội viên từ Nông hội, Công hội, Đoàn Thanh niên phản đế, tổ chức theo tam tam chế — ba người thành một tổ, ba tổ thành một tiểu đội, ba tiểu đội thành một trung đội — có đảng viên hoặc quần chúng tích cực chỉ huy và có đại biểu Đảng tham gia lãnh đạo. Đến giữa tháng 11/1940, trong số 21 tỉnh, thành phố của Nam Kỳ có 18 địa phương tổ chức được đội du kích, tự vệ, có đội quân số hàng trăm người, trang bị chủ yếu là súng săn, giáo, mác, bom, mìn tự tạo. Cấp uỷ các địa phương bí mật đưa lực lượng ra căn cứ huấn luyện cách đánh du kích trong thành phố, đánh đồn, phục kích và đánh giao thông.",
       "hien": [
-        "co-ta-xu-uy-nam-ky",
-        "quan-ta-hoc-mon"
+        "du-kich-nam-ky",
+        "xu-uy-nam-ky",
+        "my-tho",
+        "vinh-long",
+        "tan-an",
+        "gia-dinh",
+        "thu-dau-mot",
+        "soc-trang"
+      ],
+      "nguon": [
+        "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Lá cờ đỏ sao vàng xuất hiện lần đầu",
-      "mo_ta": "Lá cờ đỏ sao vàng xuất hiện lần đầu tiên trong cuộc khởi nghĩa này.",
+      "tieu_de": "Hội nghị Xứ uỷ ở Xuân Thới Đông: «thời cơ đã đến»",
+      "thoi_gian": "21 – 23/9/1940",
+      "dia_danh": "Làng Xuân Thới Đông, Hóc Môn – Bà Điểm",
+      "mo_ta": "Tháng 9/1940, phát-xít Nhật đánh vào Lạng Sơn, quân Pháp nhanh chóng đầu hàng Nhật. Trước tình hình đó, từ ngày 21 đến 23/9/1940, Xứ uỷ Nam Kỳ triệu tập hội nghị tại nhà bà Nguyễn Thị Hương ở làng Xuân Thới Đông thuộc vùng Hóc Môn – Bà Điểm, cái nôi của cuộc Khởi nghĩa Nam Kỳ. Hội nghị nhận định Pháp gặp nhiều khó khăn, lung lay và hỗn độn, tinh thần suy sụp; còn quân Nhật thì mới vào đặt chân chưa vững. Về phía ta, tổ chức chưa củng cố và phong trào chưa đủ mạnh, nhưng vì Nhật và Pháp đang đánh nhau nên hội nghị cho rằng thời cơ đã đến, nhất là khi tình hình quần chúng đang sôi sục đòi hỏi phải khởi nghĩa. Hội nghị quyết định tích cực chuẩn bị khởi nghĩa và trao cho Thường vụ quyền ra lệnh khởi nghĩa sớm.",
       "hien": [
-        "quan-ta-hoc-mon",
-        "co-do-sao-vang"
+        "xuan-thoi-dong",
+        "ba-diem",
+        "hoc-mon",
+        "xu-uy-nam-ky",
+        "du-kich-nam-ky",
+        "sai-gon-cho-lon"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Sáng mãi hào khí Khởi nghĩa Nam Kỳ — https://nhandan.vn/sang-mai-hao-khi-khoi-nghia-nam-ky-post925159.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Pháp đàn áp dữ dội",
-      "mo_ta": "Pháp huy động lực lượng đàn áp dữ dội trên toàn Nam Kỳ.",
+      "tieu_de": "Kế hoạch bị lộ, lệnh hoãn không kịp về tới cơ sở",
+      "thoi_gian": "Tháng 11/1940",
+      "dia_danh": "Sài Gòn – Chợ Lớn · các tỉnh Nam Kỳ",
+      "mo_ta": "Kế hoạch khởi nghĩa bị lộ do nội gián. Quân Pháp ráo riết đề phòng, vây bắt cơ quan lãnh đạo khởi nghĩa, trong khi mệnh lệnh hoãn khởi nghĩa của Trung ương Đảng chưa kịp phổ biến tới cơ sở. Nhưng đúng thời gian quy định, cuộc khởi nghĩa vẫn diễn ra ở Nam Kỳ. Đây là chỗ quyết định số phận của cuộc khởi nghĩa: lực lượng du kích đã sẵn sàng ở 18 trên 21 tỉnh và mệnh lệnh nổ súng đã truyền xuống tận thôn xã, nên khi lệnh hoãn không đến kịp, hàng loạt địa phương vẫn đồng loạt nổi dậy trước một đối phương đã được báo trước.",
       "hien": [
-        "quan-dich-dan-ap-nk"
+        "xu-uy-nam-ky",
+        "du-kich-nam-ky",
+        "sai-gon-cho-lon",
+        "hoc-mon",
+        "phap-dan-ap",
+        "my-tho",
+        "vinh-long"
+      ],
+      "nguon": [
+        "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html",
+        "Cổng Thông tin điện tử Chính phủ — 71 năm Nam Kỳ khởi nghĩa — https://baochinhphu.vn/71-nam-nam-ky-khoi-nghia-ban-hung-ca-bi-trang-trong-lich-su-dau-tranh-cach-mang-102110620.htm"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Nhiều cán bộ lãnh đạo bị xử bắn",
-      "mo_ta": "Nhiều cán bộ lãnh đạo như Nguyễn Văn Cừ, Hà Huy Tập, Nguyễn Thị Minh Khai bị bắt và xử bắn.",
+      "tieu_de": "0 giờ ngày 23/11/1940: bốn cánh quân đánh dinh quận Hóc Môn",
+      "thoi_gian": "Đêm 22 rạng sáng 23/11/1940",
+      "dia_danh": "Hóc Môn · Gò Vấp · cầu Bông · cầu Rạch Tra · Lăng Cha Cả",
+      "mo_ta": "Trong đêm 22 rạng sáng 23/11, cuộc khởi nghĩa nổ ra ở hầu hết các tỉnh Nam Kỳ, từ Gia Định, Chợ Lớn đến Tân An, Mỹ Tho, Vĩnh Long, Cần Thơ, Sóc Trăng, Tây Ninh, Biên Hoà. Tại Hóc Môn, đúng 0 giờ ngày 23/11/1940, Uỷ ban Khởi nghĩa của quận phát lệnh tấn công; quân khởi nghĩa chia thành bốn cánh quân trang bị vũ khí thô sơ, cùng quần chúng nhân dân đánh thẳng vào dinh quận. Nổi bật là lực lượng du kích do đồng chí Mười Đen, Xứ uỷ viên, chỉ huy tiến công dinh quận và đồn Hóc Môn, phá cầu Bông và cầu Rạch Tra; tiếp đó hạ các bốt ở Lăng Cha Cả, vườn Tiêu và ngã năm Vĩnh Lộc thuộc Gò Vấp, Gia Định.",
       "hien": [
-        "co-xu-ban"
+        "hoc-mon",
+        "mui-hoc-mon",
+        "gia-dinh",
+        "cau-bong",
+        "lang-cha-ca",
+        "sai-gon-cho-lon",
+        "du-kich-nam-ky",
+        "ba-diem"
+      ],
+      "nguon": [
+        "Cổng Thông tin điện tử Chính phủ — 71 năm Nam Kỳ khởi nghĩa — https://baochinhphu.vn/71-nam-nam-ky-khoi-nghia-ban-hung-ca-bi-trang-trong-lich-su-dau-tranh-cach-mang-102110620.htm",
+        "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Lá cờ đỏ sao vàng năm cánh xuất hiện lần đầu",
+      "thoi_gian": "23/11/1940 và một tuần sau đó",
+      "dia_danh": "Đình Long Hưng (Mỹ Tho) · Chợ Lớn",
+      "mo_ta": "Khởi nghĩa Nam Kỳ đi vào lịch sử với sự kiện lần đầu tiên xuất hiện lá cờ đỏ sao vàng năm cánh — trước trụ sở của Ban khởi nghĩa tỉnh Mỹ Tho tại đình Long Hưng, ở Chợ Lớn và một số tỉnh khác. Các đội du kích ở tỉnh Mỹ Tho hỗ trợ quần chúng ở 75 trong 114 xã nổi dậy diệt tề; sau một tuần, ta làm chủ vùng nông thôn rộng lớn. Đây là địa phương mà cuộc khởi nghĩa đạt kết quả rõ rệt nhất: chính quyền cơ sở của thực dân bị xoá bỏ trên gần hai phần ba số xã của cả tỉnh, và lá cờ về sau trở thành quốc kỳ Việt Nam đã bay lần đầu ở chính nơi đó.",
+      "hien": [
+        "dinh-long-hung",
+        "my-tho",
+        "sai-gon-cho-lon",
+        "du-kich-nam-ky",
+        "tan-an",
+        "dong-thap-muoi"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Sáng mãi hào khí Khởi nghĩa Nam Kỳ — https://nhandan.vn/sang-mai-hao-khi-khoi-nghia-nam-ky-post925159.html",
+        "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Vũng Liêm và các tỉnh miền Tây",
+      "thoi_gian": "23/11/1940 và những ngày sau",
+      "dia_danh": "Vũng Liêm · Cái Ngang (Tam Bình) · Long Xuyên · Châu Đốc · Rạch Giá · Bến Tre · Sa Đéc",
+      "mo_ta": "Lực lượng du kích tỉnh Vĩnh Long tiến công đánh chiếm quận lỵ và đồn Vũng Liêm, hỗ trợ quần chúng nổi dậy giành quyền làm chủ ở Cái Ngang thuộc Tam Bình. Ở các tỉnh Long Xuyên, Châu Đốc, Rạch Giá, Bến Tre, Sa Đéc, Tây Ninh, Thủ Dầu Một, Biên Hoà, quân du kích cũng hỗ trợ nhân dân nổi dậy ở một vài địa phương vùng nông thôn, gây cho địch một số thiệt hại. Thực hiện lệnh khởi nghĩa của Xứ uỷ, các đội du kích Nam Kỳ tiến công vào hệ thống chính quyền địch ở thôn, xã và một số quận, huyện lỵ, phá tề, trừ gian, triệt hạ đồn bốt, phá hoại giao thông liên lạc và xoá bỏ chính quyền địch ở nhiều làng xã.",
+      "hien": [
+        "vung-liem",
+        "vinh-long",
+        "mui-vung-liem",
+        "can-tho",
+        "soc-trang",
+        "tay-ninh",
+        "thu-dau-mot",
+        "bien-hoa",
+        "du-kich-nam-ky"
+      ],
+      "nguon": [
+        "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Đàn áp đẫm máu, du kích rút vào Đồng Tháp Mười và U Minh",
+      "thoi_gian": "Cuối năm 1940 – đầu năm 1941",
+      "dia_danh": "Nam Kỳ · Đồng Tháp Mười · U Minh · Truông Mít · Biên Hoà",
+      "mo_ta": "Do điều kiện khách quan và chủ quan chưa thuận lợi, lực lượng du kích Nam Kỳ còn non yếu, nhất là ở thành thị, trang bị vũ khí thô sơ nên ngày càng gặp khó khăn. Đầu năm 1941, thực dân Pháp tập trung lực lượng đàn áp, quyết triệt hạ bằng được quân du kích và dập tắt cuộc khởi nghĩa; toàn bộ Xứ uỷ Nam Kỳ bị bắt trước khi chủ trương duy trì và phát triển lực lượng du kích kịp phổ biến tới các cơ sở. Pháp nhân cơ hội xử bắn nhiều cán bộ, chiến sĩ kiên trung của Đảng, trong đó có Tổng Bí thư Nguyễn Văn Cừ khi mới 29 tuổi, Tổng Bí thư Hà Huy Tập 35 tuổi, Bí thư Xứ uỷ Sài Gòn – Chợ Lớn Nguyễn Thị Minh Khai 31 tuổi, cùng các đồng chí Phan Đăng Lưu, Võ Văn Tần, Nguyễn Hữu Tiến. Để bảo toàn lực lượng, các đội du kích phải phân tán, bí mật rút vào các vùng căn cứ ở Đồng Tháp Mười, U Minh, Truông Mít thuộc Tây Ninh và Biên Hoà, duy trì hoạt động đến ngày Tổng khởi nghĩa Tháng Tám năm 1945.",
+      "hien": [
+        "phap-dan-ap",
+        "xu-uy-nam-ky",
+        "mui-rut-can-cu",
+        "dong-thap-muoi",
+        "tay-ninh",
+        "bien-hoa",
+        "du-kich-nam-ky",
+        "sai-gon-cho-lon"
+      ],
+      "nguon": [
+        "Báo điện tử Đảng Cộng sản Việt Nam — Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html",
+        "Báo Nhân Dân — Sáng mãi hào khí Khởi nghĩa Nam Kỳ — https://nhandan.vn/sang-mai-hao-khi-khoi-nghia-nam-ky-post925159.html"
       ]
     }
   ],
-  "ket_qua": "Khởi nghĩa bị đàn áp; nhiều cán bộ lãnh đạo (Nguyễn Văn Cừ, Hà Huy Tập, Nguyễn Thị Minh Khai) bị xử bắn.",
-  "y_nghia": "Lá cờ đỏ sao vàng xuất hiện lần đầu trong cuộc khởi nghĩa này, sau trở thành quốc kỳ Việt Nam.",
+  "ket_qua": "Khởi nghĩa nổ ra ở hầu hết các tỉnh Nam Kỳ, xoá bỏ chính quyền địch ở nhiều làng xã, riêng Mỹ Tho làm chủ 75 trên 114 xã; sau đó bị đàn áp, toàn bộ Xứ uỷ Nam Kỳ bị bắt và nhiều cán bộ lãnh đạo bị xử bắn.",
+  "y_nghia": "Lá cờ đỏ sao vàng xuất hiện lần đầu trong cuộc khởi nghĩa này, sau trở thành quốc kỳ Việt Nam; cùng Bắc Sơn và Đô Lương, đây là tiếng súng báo hiệu thời kỳ đấu tranh giải phóng dân tộc.",
   "trang_thai": "draft",
   "nguon": [
-    "nhandan.vn — Hào khí Khởi nghĩa Nam Kỳ",
+    "Báo Nhân Dân — Sáng mãi hào khí Khởi nghĩa Nam Kỳ — https://nhandan.vn/sang-mai-hao-khi-khoi-nghia-nam-ky-post925159.html",
+    "Báo điện tử Đảng Cộng sản Việt Nam — Kỷ niệm 85 năm Ngày Nam Kỳ khởi nghĩa: Xây dựng và sử dụng du kích trong Khởi nghĩa Nam Kỳ — https://dangcongsan.vn/tphochiminh/tin-tuc-hoat-dong/ky-niem-85-nam-ngay-nam-ky-khoi-nghia-23-11-1940-23-11-2025-xay-dung-va-su-dung-du-kich-trong-khoi-nghia-nam-ky.html",
+    "Cổng Thông tin điện tử Chính phủ — 71 năm Nam Kỳ khởi nghĩa, bản hùng ca bi tráng trong lịch sử đấu tranh cách mạng — https://baochinhphu.vn/71-nam-nam-ky-khoi-nghia-ban-hung-ca-bi-trang-trong-lich-su-dau-tranh-cach-mang-102110620.htm",
     "sknc.qdnd.vn — Ngọn lửa đỏ từ Nam Kỳ khởi nghĩa",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
@@ -130,7 +447,7 @@
       "sach": "Hồi ký của Thượng tướng Trần Văn Trà",
       "doan": "Chúng tôi luôn kiên định niềm tin, còn một người cộng sản thì Đảng còn, còn nhân dân thì cách mạng còn. Người trước ngã xuống, người sau đứng lên nối nhau viết tiếp trang sử hào hùng của dân tộc.",
       "nguon_trich": "Ngọn lửa đỏ từ Nam Kỳ khởi nghĩa — Sự kiện & Nhân chứng, Báo Quân đội nhân dân — https://sknc.qdnd.vn/theo-dong-su-kien/ngon-lua-do-tu-nam-ky-khoi-nghia-504000",
-      "buoc": 4
+      "buoc": 8
     }
   ]
 }

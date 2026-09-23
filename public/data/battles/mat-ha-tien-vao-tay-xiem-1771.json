@@ -1,0 +1,63 @@
+{
+  "ghi_chu": "Sa đồ chiến dịch Hà Tiên rơi vào tay quân Xiêm 1771 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "mat-ha-tien-vao-tay-xiem-1771",
+  "ten": "Hà Tiên rơi vào tay quân Xiêm (1771)",
+  "nam": 1771,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Mạc Thiên Tứ",
+  "doi_thu": "Xiêm La",
+  "dia_diem": "Trấn Hà Tiên — nay thuộc thành phố Hà Tiên, tỉnh An Giang (Kiên Giang cũ)",
+  "lien_quan_tinh": ["an-giang"],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    { "kieu": "bien", "diem": [[100, 100], [150, 500], [100, 900]], "nhan": "Vịnh Thái Lan" },
+    { "kieu": "song", "diem": [[300, 600], [500, 650], [700, 680]], "nhan": "Đường rút về Trấn Giang (Cần Thơ)" }
+  ],
+  "phan_tu": [
+    { "id": "tran-ha-tien", "kieu": "cong-su", "ben": "ta", "x": 400, "y": 400, "nhan": "Trấn Hà Tiên — thủ phủ của Mạc Thiên Tứ" },
+    { "id": "quan-xiem-tan-cong", "kieu": "mui-ten", "ben": "dich", "tu": [700, 150], "den": [400, 400], "nhan": "Quân Xiêm tấn công Hà Tiên (1771)" },
+    { "id": "ha-tien-that-thu", "kieu": "co", "ben": "dich", "x": 420, "y": 420, "nhan": "Hà Tiên thất thủ" },
+    { "id": "mac-thien-tu-rut-quan", "kieu": "mui-ten", "ben": "ta", "tu": [400, 400], "den": [550, 650], "nhan": "Mạc Thiên Tứ rút quân" },
+    { "id": "tran-giang", "kieu": "cong-su", "ben": "ta", "x": 570, "y": 680, "nhan": "Trấn Giang (Cần Thơ) — thủ phủ tạm thời" },
+    { "id": "quan-chua-nguyen-tiep-vien", "kieu": "quan", "ben": "ta", "x": 300, "y": 800, "nhan": "Quân chúa Nguyễn tiếp viện, cùng đóng giữ Trấn Giang" }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Quân Xiêm tấn công Hà Tiên",
+      "mo_ta": "Năm 1771, trong bối cảnh biến động ở Xiêm La, quân Xiêm tiến đánh trấn Hà Tiên.",
+      "hien": ["tran-ha-tien", "quan-xiem-tan-cong"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Hà Tiên thất thủ",
+      "mo_ta": "Trấn Hà Tiên bị quân Xiêm chiếm đóng.",
+      "hien": ["ha-tien-that-thu"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Mạc Thiên Tứ rút về Trấn Giang",
+      "mo_ta": "Mạc Thiên Tứ cùng lực lượng của mình rút khỏi Hà Tiên, lui về Trấn Giang, nay là Cần Thơ.",
+      "hien": ["mac-thien-tu-rut-quan"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Trấn Giang thành thủ phủ chống giặc",
+      "mo_ta": "Trấn Giang được xây dựng thành thủ phủ tạm thời để tổ chức chống lại quân Xiêm.",
+      "hien": ["tran-giang"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Quân chúa Nguyễn cùng đóng giữ",
+      "mo_ta": "Quân của chúa Nguyễn phối hợp cùng Mạc Thiên Tứ đóng giữ Trấn Giang, chuẩn bị giành lại Hà Tiên.",
+      "hien": ["quan-chua-nguyen-tiep-vien", "tran-giang"]
+    }
+  ],
+  "ket_qua": "Hà Tiên rơi vào tay quân Xiêm; Mạc Thiên Tứ cùng quân chúa Nguyễn lập căn cứ ở Trấn Giang (Cần Thơ) để tổ chức kháng cự, mở đầu giai đoạn xáo động 1771–1787 của vùng đất này.",
+  "y_nghia": "Sự kiện khởi đầu cuộc chiến tranh Việt – Xiêm, đồng thời khẳng định vai trò chiến lược của Trấn Giang như hậu cứ an toàn cho Hà Tiên trước các cuộc xâm lấn của Xiêm và Chân Lạp.",
+  "trang_thai": "draft",
+  "nguon": [
+    "luutru.gov.vn (Cục Văn thư và Lưu trữ nhà nước) — Đôi nét về Trấn Giang, vùng đất Cần Thơ ngày nay",
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+  ]
+}

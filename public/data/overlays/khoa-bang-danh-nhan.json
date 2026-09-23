@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Khoa bảng – thầy giáo – quan thanh liêm (thế kỷ 11–19). Mỗi danh nhân neo vào NƠI THỜ (đền/từ đường/khu di tích/Văn Miếu). Nguồn nội dung: chính sử & kinh điển (Đại Việt Sử Ký Toàn Thư, Đại Nam Thực Lục, Phủ Biên Tạp Lục, Quốc triều hương khoa lục…) + cổng nhà nước (dsvh.gov.vn, vanmieu.gov.vn, cổng tỉnh/thành). KHÔNG mục nào lấy Wikipedia làm nguồn (theo cảnh báo dùng nguồn chính thống). Toạ độ soát 2026-07-19 (OSM Nominatim + đối chiếu tỉnh): 3 reviewed (cao), 6 draft (trung/thấp). ĐÃ SỬA: Mạc Đĩnh Chi (agent trả 20.986 lệch ~13km nam → sửa về khu Nam Tân/Long Động, Nam Sách; vẫn thấp, cần soát POI). Lưu ý sáp nhập 2025: Hải Dương→Hải Phòng, Thái Bình→Hưng Yên, Hà Nam→Ninh Bình (địa chỉ hành chính đổi, toạ độ giữ). Tượng/ảnh thờ là hình dung nghệ thuật, KHÔNG phải chân dung xác thực. [Phase 3 lô4: hợp nhất 10 lớp → nhóm «Khoa bảng · Trạng nguyên · Tiến sĩ · Quan lại» (dedup core).]",
-  "ngay_cap_nhat": "2026-07-27",
+  "ngay_cap_nhat": "2026-08-28",
   "sources": [
     "Đại Việt Sử Ký Toàn Thư (Ngô Sĩ Liên)",
     "Đại Nam Thực Lục; Đại Nam Liệt Truyện (Quốc sử quán triều Nguyễn)",
@@ -2922,6 +2922,327 @@
       "anh_nguon": "Wikimedia Commons — Albert Sallet (1877–1948). · https://commons.wikimedia.org/wiki/File:AAVH_AP0451_Sallet_%E2%80%93_Hu%C3%A9,_1929_%E2%80%93_Portrait_de_S.E._Nguyen_Dinh_Ho%C3%A9,_directeur_de_l%E2%80%99%C3%A9cole_des_Hau_Bo,_acteur_essentiel_de_l%E2%80%99AAVH_et_grand_ami_de_Sallet.jpg",
       "anh_giay_phep": "Public domain",
       "anh_muc": "chan-dung"
+    },
+    {
+      "id": "pham-nhu-xuong",
+      "ten": "Phạm Như Xương — Đình nguyên Hoàng giáp",
+      "lon": 108.28,
+      "lat": 15.9,
+      "loai": "hoang-giap",
+      "nam_hien_thi": "1844–1917",
+      "mo_ta": "Người làng Ngân Câu, tổng Thanh Quýt, huyện Diên Phước, phủ Điện Bàn (nay xã Điện Ngọc, thị xã Điện Bàn, Quảng Nam). Đỗ Cử nhân khoa Mậu Thìn (1868) rồi đỗ Đình nguyên Hoàng giáp khoa Ất Hợi (1875) — người đỗ đại khoa cao nhất trong lịch sử khoa bảng đất Quảng Nam thời Nguyễn. Làm Bố chánh Phú Yên, Tri phủ Anh Sơn (Nghệ An); năm 1885 tham gia phong trào Cần Vương, soạn «Hịch Văn thân Quảng Nam» kêu gọi kháng Pháp, về sau làm cố vấn Việt Nam Quang phục Hội.",
+      "dia_diem": "Nhà thờ họ Phạm Như, làng Ngân Câu, xã Điện Ngọc, thị xã Điện Bàn, Quảng Nam",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Phạm Như Xương, nhà khoa bảng đỗ cao nhất của xứ Quảng xưa — https://danviet.vn/pham-nhu-xuong-nha-khoa-bang-do-cao-nhat-cua-xu-quang-xua-20240911234753214.htm"
+      ],
+      "ghi_chu_bien_tap": "Một nguồn khác (baonghean.vn, bài «Di văn của Hoàng giáp Phạm Như Xương») ghi năm sinh mâu thuẫn («Đinh Hợi 1887») — không dùng vì không khớp với việc ông đã hoạt động từ 1885; giữ theo danviet.vn (1844–1917), nhất quán với các chi tiết khác trong nguồn. Toạ độ ước lượng theo vị trí xã Điện Ngọc (giáp Hội An/Đà Nẵng), chưa tra định vị chính xác nhà thờ họ, cần soát lại."
+    },
+    {
+      "id": "vu-tuan-chieu",
+      "ten": "Vũ Tuấn Chiêu — Trạng nguyên đỗ khi gần 50 tuổi",
+      "lon": 106.19,
+      "lat": 20.312,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1425, đỗ Trạng nguyên 1475",
+      "mo_ta": "Sinh năm 1425, mồ côi cha từ nhỏ, quê gốc vùng Nhật Tân (nay quận Tây Hồ, Hà Nội). Đỗ Trạng nguyên khoa Ất Mùi (1475) đời Lê Thánh Tông khi đã gần 50 tuổi — một trong ba người đỗ đại khoa muộn nhất trong lịch sử khoa bảng, cùng Nguyễn Đức Lượng (1514) và Nguyễn Xuân Chính (1637). Làm quan tới Lại bộ Tả thị lang, tước Đặc tiến Kim tử vinh lộc đại phu. Đền thờ chính tại phường Nam Hùng, huyện Nam Trực, Nam Định còn giữ bia đá ghi công trạng cùng 17 đôi câu đối ca ngợi ông.",
+      "dia_diem": "Đền thờ Vũ Tuấn Chiêu, phường Nam Hùng, huyện Nam Trực, Nam Định",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Znews.vn (báo điện tử, thuộc hệ thống Báo VietNamNet) — Chuyện đỗ trạng nguyên khi gần 50 tuổi nhờ câu nói của vợ — https://znews.vn/chuyen-do-trang-nguyen-khi-gan-50-tuoi-nho-cau-noi-cua-vo-post873547.html"
+      ],
+      "ghi_chu_bien_tap": "Quê gốc (Tây Hồ, Hà Nội) và nơi thờ chính (Nam Trực, Nam Định) khác nhau — neo toạ độ theo đền thờ chính vì có địa chỉ cụ thể hơn. Không rõ năm mất. Toạ độ ước lượng, độ tin cậy thấp."
+    },
+    {
+      "id": "nguyen-phong-dy",
+      "ten": "Nguyễn Phong Dy — Đình nguyên Tiến sĩ cuối cùng",
+      "lon": 105.8178664,
+      "lat": 19.8230104,
+      "loai": "tien-si",
+      "nam_hien_thi": "1883–1923",
+      "mo_ta": "Người làng Nguyệt Viên, xã Hoằng Quang, huyện Hoằng Hóa (nay phường Nguyệt Viên, TP Thanh Hóa). Là một trong bảy người đỗ Tiến sĩ khoa thi Hội cuối cùng năm Kỷ Mùi (1919), xếp Đình nguyên — vị Đình nguyên Tiến sĩ cuối cùng của nền khoa cử Nho học Việt Nam sau 844 năm kể từ khoa thi đầu tiên (1075). Từng là một trong nhóm thanh niên đầu tiên được Phan Bội Châu đưa sang Nhật Bản theo phong trào Đông Du (1904) và có thời gian hoạt động cùng cách mạng Trung Quốc, trước khi về nước học chữ Pháp rồi ra làm quan, mất tại kinh đô Huế.",
+      "dia_diem": "Làng Nguyệt Viên, phường Nguyệt Viên, TP Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Hóa (chuyên trang Văn hoá – Đời sống) — vhds.baothanhhoa.vn — Nguyễn Phong Dy, từ chí sĩ đến Đình nguyên tiến sĩ — https://vhds.baothanhhoa.vn/nguyen-phong-dy-nbsp-tu-chi-si-den-dinh-nguyen-tien-si-39107.htm"
+      ],
+      "ghi_chu_bien_tap": "Nguồn có hai dị bản năm sinh (1883/1889) — dùng 1883 theo mốc thời gian nhất quán với việc đi Đông Du năm 1904 (21 tuổi). Toạ độ dùng chung điểm neo với mục nguyen-trat (cùng làng Nguyệt Viên, đã soát trước đó) — độ tin cậy trung bình."
+    },
+    {
+      "id": "dinh-duy-tu",
+      "ten": "Đinh Duy Tự",
+      "lon": 108.75,
+      "lat": 15.203,
+      "loai": "thay-giao",
+      "nam_hien_thi": "1807–1888",
+      "mo_ta": "Người Trà Bình Trại, phủ Bình Sơn (nay xã Tịnh Trà, huyện Sơn Tịnh, Quảng Ngãi). Nổi tiếng hay chữ, được quan tỉnh tiến cử lên vua Thiệu Trị, làm việc trong cung đến năm 50 tuổi rồi về quê mở trường dạy học. Lập «đồng môn điền» — ruộng học giúp trò nghèo có phương tiện theo đuổi chữ nghĩa; có công phục hồi đập Ông Cá, dựng hệ thống dẫn nước tưới ruộng cho dân làng. Môn đồ và dân làng dựng nhà thờ ông năm Canh Tuất (1910), còn giữ bia đá khắc «Đinh Gia Yển Ký».",
+      "dia_diem": "Mộ tại Đồi Gò Mức, thôn Trà Bình, xã Tịnh Trà; nhà thờ tại thôn Thạch An (nay xã Bình Mỹ), Quảng Ngãi",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Bộ Văn hoá, Thể thao và Du lịch — bvhttdl.gov.vn — Quảng Ngãi: Đón nhận Bằng xếp hạng di tích lịch sử cấp tỉnh Mộ, nhà thờ Đinh Duy Tự — https://bvhttdl.gov.vn/quang-ngai-don-nhan-bang-xep-hang-di-tich-lich-su-cap-tinh-mo-nha-tho-dinh-duy-tu-2019031807405975.htm"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ ước lượng theo trung tâm xã Tịnh Trà, huyện Sơn Tịnh, Quảng Ngãi — chưa tra định vị chính xác vị trí mộ tại Đồi Gò Mức, cần soát lại."
+    },
+    {
+      "id": "tran-quoc-lac",
+      "ten": "Trần Quốc Lặc — Trạng nguyên đầu tiên đất Hải Dương",
+      "lon": 106.351,
+      "lat": 20.947,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1230, đỗ Trạng nguyên 1256",
+      "mo_ta": "Người làng Uông Hạ, huyện Thanh Lâm, châu Thượng Hồng (nay thôn Uông Hạ, xã Minh Tân, huyện Nam Sách, Hải Dương). Đỗ Kinh Trạng nguyên khoa Bính Thìn (1256) đời Trần Thái Tông — khoa thi hiếm hoi lấy hai Trạng nguyên trong một kỳ, cùng với Trại Trạng nguyên Trương Xán. Được vua gả công chúa Bình Lương, phong tước hầu, từng làm Đạo Thừa Chánh sứ sang nhà Tống. Làng lập đền thờ ông làm Thành hoàng, nay là vị trí đình Tả.",
+      "dia_diem": "Đình Tả, xã Minh Tân, huyện Nam Sách, Hải Dương — nơi thờ Trần Quốc Lặc",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Đây là Trạng nguyên đầu tiên đất Hải Dương, được vua Trần gả công chúa, cử chánh sứ sang nhà Tống — https://danviet.vn/trang-nguyen-dau-tien-o-hai-duong-duoc-vua-tran-ga-cong-chua-lam-chanh-su-sang-nha-tong-20231220234449628-d1135857.html"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ ước lượng theo trung tâm xã Minh Tân, huyện Nam Sách — chưa tra định vị chính xác vị trí đình Tả, cần soát lại."
+    },
+    {
+      "id": "truong-xan",
+      "ten": "Trương Xán — Trại Trạng nguyên",
+      "lon": 106.43,
+      "lat": 17.757,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1227, đỗ Trạng nguyên 1256",
+      "mo_ta": "Người vùng Hoành Bồ, châu Bố Chính (nay huyện Quảng Trạch, Quảng Bình). Đỗ Trại Trạng nguyên khoa Bính Thìn (1256) đời Trần Thái Tông — lần đầu tiên khoa cử Việt Nam lấy hai Trạng nguyên trong một kỳ thi, phân theo vùng Kinh (gần kinh đô) và Trại (từ Thanh Hóa trở vào), cùng khoa với Kinh Trạng nguyên Trần Quốc Lặc. Làm quan tới Hàn lâm học sĩ. Nhiều làng chài ven biển lập đền thờ ông như một vị phúc thần phù hộ người đi biển.",
+      "dia_diem": "Vùng Quảng Trạch, Quảng Bình (quê quán — vị trí đền thờ làng chài cụ thể chưa xác định)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Kỳ thi nào của Việt Nam lấy đỗ 2 Trạng nguyên, vì sao nhà Trần lấy đỗ 2 Trạng nguyên cùng một kỳ thi? — https://danviet.vn/ky-thi-nao-cua-viet-nam-lay-do-2-trang-nguyen-sao-nha-tran-lay-do-2-trang-nguyen-o-1-ky-thi-2024042415504363-d843034.html"
+      ],
+      "ghi_chu_bien_tap": "Không xác định được xã/thôn cụ thể theo địa giới hiện nay — nguồn chỉ ghi tên gọi thời Trần, có thể không còn giữ nguyên tên. Toạ độ đặt tạm theo trung tâm huyện Quảng Trạch, độ tin cậy thấp, cần soát lại."
+    },
+    {
+      "id": "dao-tieu",
+      "ten": "Đào Tiêu — Trạng nguyên khai khoa xứ Nghệ",
+      "lon": 105.626,
+      "lat": 18.552,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "đỗ Trạng nguyên 1275",
+      "mo_ta": "Đỗ Trạng nguyên khoa Ất Hợi (1275) đời Trần Thánh Tông, quê nay thuộc xã Yên Hồ, huyện Đức Thọ, Hà Tĩnh. Là người đầu tiên của vùng Nam Châu Hoan (Nghệ An – Hà Tĩnh) đỗ đại khoa, mở đầu truyền thống khoa bảng của vùng đất này sau 200 năm không ai đỗ đạt kể từ khoa thi đầu tiên thời Lý (1075). Được thờ tại nhà thờ họ Đào ở Yên Hồ, giỗ hàng năm vào 24 tháng 3 âm lịch.",
+      "dia_diem": "Nhà thờ họ Đào, xã Yên Hồ, huyện Đức Thọ, Hà Tĩnh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Tĩnh — baohatinh.vn — Linh khí Yên Hồ — https://baohatinh.vn/khac/linh-khi-yen-ho/96871.htm"
+      ],
+      "ghi_chu_bien_tap": "Sử liệu về Đào Tiêu còn rất ít — nguồn đã mở chỉ xác nhận năm đỗ và quê quán, không có năm sinh/mất hay chức quan cụ thể; giữ mo_ta ngắn, không suy diễn thêm. Toạ độ ước lượng theo trung tâm xã Yên Hồ, độ tin cậy thấp."
+    },
+    {
+      "id": "nguyen-gian-thanh",
+      "ten": "Nguyễn Giản Thanh — Trạng Me",
+      "lon": 105.95,
+      "lat": 21.129,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1482, đỗ Trạng nguyên 1508",
+      "mo_ta": "Tự Cự Nguyên, hiệu Phác Hiên, sinh năm Nhâm Dần (1482) tại làng Ông Mặc (làng Me), huyện Đông Ngàn, trấn Kinh Bắc (nay thị xã Từ Sơn, Bắc Ninh), con Tiến sĩ Nguyễn Giản Liên. Đỗ Trạng nguyên khoa Mậu Thìn, niên hiệu Đoan Khánh 4 (1508) đời Lê Uy Mục, dân gian gọi «Trạng Me». Trải qua hai triều Lê — Mạc, giữ chức Hàn lâm viện Thị thư kiêm Đông các Đại học sĩ rồi Thượng thư Bộ Lễ; từng đi sứ nhà Minh xin cầu phong cho Mạc Đăng Dung.",
+      "dia_diem": "Làng Hương Mạc (làng Me), thị xã Từ Sơn, Bắc Ninh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Người Hà Nội — nguoihanoi.vn — Nguyễn Giản Thanh – sứ thần, thi nhân — https://nguoihanoi.vn/nguyen-gian-thanh-su-than-thi-nhan-79706.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không ghi năm mất. Toạ độ ước lượng theo làng Hương Mạc, Từ Sơn — chưa tra định vị chính xác nhà thờ, cần soát lại."
+    },
+    {
+      "id": "nguyen-quang-bat",
+      "ten": "Nguyễn Quang Bật — bán nước bên cầu Khoai thuở hàn vi",
+      "lon": 106.128,
+      "lat": 21.035,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1464, đỗ Trạng nguyên 1484",
+      "mo_ta": "Sinh năm Giáp Thân (1464) tại làng Bình Ngô, huyện Gia Định (nay thôn Thượng Vũ, xã An Bình, huyện Thuận Thành, Bắc Ninh). Nhà nghèo, thuở nhỏ phải bán nước bên cầu Khoai kiếm sống nhưng học rất chăm. Năm 21 tuổi đỗ đầu (Trạng nguyên) khoa Giáp Thìn, Hồng Đức 15 (1484) đời Lê Thánh Tông, được sung vào Đông các làm Hàn lâm viện Hiệu lý kiêm Sử quán, là một trong 28 thành viên hội Tao Đàn Nhị thập bát tú, tham gia biên soạn «Quỳnh uyển cửu ca».",
+      "dia_diem": "Thôn Thượng Vũ, xã An Bình, huyện Thuận Thành, Bắc Ninh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Bắc Ninh — baobacninh.com.vn — Danh nhân khoa cử - Trạng nguyên Nguyễn Quang Bật — https://baobacninh.com.vn/chi-tiet-dang-voi-nhan-dan/-/details/20182/danh-nhan-khoa-cu-trang-nguyen-nguyen-quang-bat"
+      ],
+      "ghi_chu_bien_tap": "CHƯA MỞ ĐƯỢC TRANG GỐC — không mở trực tiếp được trang baobacninh.com.vn (DNS không phân giải qua cả WebFetch lẫn crawl4ai — ERR_NAME_NOT_RESOLVED; nslookup xác nhận lại lần hai: 'Non-existent domain' — tên miền không còn tồn tại, không phải lỗi mạng tạm thời) và bản sao trên honguyenvietnam.vn (lỗi chứng chỉ SSL sai tên miền). Nội dung dựng từ ba bản tóm tắt tìm kiếm độc lập cùng khớp chi tiết cụ thể (bán nước cầu Khoai, tuổi 21, thành viên Tao Đàn, «Quỳnh uyển cửu ca») — nhưng CHƯA đạt chuẩn 'trang đã mở' của luật đợt này; ba tóm tắt khớp nhau không phải bằng chứng độc lập nếu cùng chia một nguồn. Đã thử lại theo yêu cầu điều phối viên (2026-08-28): curl -k trực tiếp domain → exit code 6 'Couldn't resolve host'; nslookup xác nhận 'Non-existent domain'; web.archive.org bị chặn với công cụ hiện có; thử URL khác trên chính bacninh.gov.vn (cổng tỉnh, vẫn còn sống) cho bài 'Danh nhân lịch sử - văn hóa tiêu biểu người Bắc Ninh thời Lê - Mạc' cũng không tải được nội dung (CMS Liferay trả về trang chủ, id bài viết không ổn định). LEAD MỚI CHƯA XÁC NHẬN: một tìm kiếm khác dẫn cùng nguồn bacninh.gov.vn cho biết Nguyễn Quang Bật cùng Đàm Văn Lễ bị Lê Uy Mục ép tự vẫn năm 1505 sau khi ủng hộ Lê Túc Tông lên ngôi — CHƯA đưa vào mo_ta vì chưa mở được trang xác nhận trực tiếp, để lại đây cho agent sau tra tiếp. Toạ độ ước lượng, độ tin cậy thấp."
+    },
+    {
+      "id": "tran-sung-dinh",
+      "ten": "Trần Sùng Dĩnh",
+      "lon": 106.33,
+      "lat": 20.95,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1465, đỗ Trạng nguyên 1487",
+      "mo_ta": "Người làng Đông Khê, huyện Thanh Lâm, châu Thượng Hồng (nay thôn Đông Khê, xã An Lâm, huyện Nam Sách, Hải Dương). Học trò của thầy giáo Trần Ích Phát, đỗ Trạng nguyên khoa Đinh Mùi, niên hiệu Hồng Đức 18 (1487) đời Lê Thánh Tông. Làm quan tới Đô ngự sử rồi Hộ bộ Thượng thư (1514); tác phẩm còn chép trong «Toàn Việt thi lục». Sau khi mất được truy tôn Phúc thần, dân làng lập đền thờ.",
+      "dia_diem": "Thôn Đông Khê, xã An Lâm, huyện Nam Sách, Hải Dương",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Nhà sư phạm nước Việt thọ 100 tuổi, giữ kỷ lục về số lượng học trò đỗ trạng nguyên, bảng nhãn — https://danviet.vn/nha-su-pham-nuoc-viet-tho-100-tuoi-giu-ky-luc-ve-so-luong-hoc-tro-do-trang-nguyen-bang-nhan-d1415080.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không ghi năm mất, không ghi rõ vị trí đền thờ. Toạ độ ước lượng theo xã An Lâm, huyện Nam Sách — chưa tra định vị chính xác, cần soát lại."
+    },
+    {
+      "id": "nguyen-xuan-chinh",
+      "ten": "Nguyễn Xuân Chính — Trạng nguyên đỗ ở tuổi 50 sau 9 lần lều chõng",
+      "lon": 105.95,
+      "lat": 21.1,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "1588–1647",
+      "mo_ta": "Sinh trưởng tại làng Phù Chẩn, nay phường Phù Chẩn, thị xã Từ Sơn, Bắc Ninh. Sau 9 lần đi thi, năm 50 tuổi đỗ Trạng nguyên khoa Đinh Sửu, niên hiệu Dương Hòa 3 (1637) đời Lê Thần Tông — một trong những người đỗ đại khoa muộn nhất trong lịch sử khoa bảng. Trải nhiều chức quan dưới triều Lê — Trịnh, nổi tiếng thanh liêm, chính trực. Đền thờ ông tại khu Đợi Sóc, phường Phù Chẩn được xếp hạng di tích lịch sử cấp quốc gia.",
+      "dia_diem": "Đền thờ Nguyễn Xuân Chính, khu Đợi Sóc, phường Phù Chẩn, thị xã Từ Sơn, Bắc Ninh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân tộc và Phát triển — baodantoc.vn — Bắc Ninh: Hội thảo khoa học «Trạng nguyên Nguyễn Xuân Chính - Danh nhân khoa bảng thời Lê Trung Hưng» — https://baodantoc.vn/bac-ninh-hoi-thao-khoa-hoc-trang-nguyen-nguyen-xuan-chinh-danh-nhan-khoa-bang-thoi-le-trung-hung-1661919575421.htm"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ ước lượng theo phường Phù Chẩn, thị xã Từ Sơn — chưa tra định vị chính xác đền thờ, cần soát lại."
+    },
+    {
+      "id": "nghiem-vien",
+      "ten": "Nghiêm Viện (Nghiêm Hoãn)",
+      "lon": 106.15,
+      "lat": 21.15,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "đỗ Trạng nguyên 1496",
+      "mo_ta": "Người làng Bồng Lai, huyện Quế Dương (nay huyện Quế Võ, Bắc Ninh). Đỗ Trạng nguyên khoa Bính Thìn, Hồng Đức 25 (1496) đời Lê Thánh Tông — khoa thi có sự kiện hiếm gặp: 43 người báo đỗ nhưng vào thi Đình, vua xét dung mạo từng người rồi chỉ lấy đỗ 30, loại 13. Theo «Khâm định Việt sử thông giám cương mục», sau khi đỗ ông được vua gả công chúa nhưng khi về quê bị chính vợ đầu độc chết — vua bèn đổi tên ông từ Nghiêm Viện thành Nghiêm Hoãn.",
+      "dia_diem": "Làng Bồng Lai, huyện Quế Võ, Bắc Ninh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Quyết định lạ tại khoa thi năm Bính Thìn (1496) — https://danviet.vn/quyet-dinh-la-tai-khoa-thi-nam-binh-thin-40149641-7777436366-d318723.html"
+      ],
+      "ghi_chu_bien_tap": "Không rõ năm sinh/mất, không rõ chức quan sau khi đỗ, không rõ nơi thờ hiện nay — chính sử chỉ ghi giai thoại kết cục bi kịch của ông. Toạ độ ước lượng theo trung tâm làng Bồng Lai/huyện Quế Võ, độ tin cậy thấp."
+    },
+    {
+      "id": "nguyen-ky-trang-nguyen",
+      "ten": "Nguyễn Kỳ — thần đồng thuộc kinh Phật từ năm 4 tuổi",
+      "lon": 106.045,
+      "lat": 20.802,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1518, đỗ Trạng nguyên 1541",
+      "mo_ta": "Tên thuở nhỏ Nguyễn Thời Lượng, sinh năm 1518 tại xã Bình Dân, huyện Đông Yên (nay xã Tân Dân, huyện Khoái Châu, Hưng Yên). Cha mẹ gửi vào chùa từ nhỏ, mới 4 tuổi đã thuộc lòng nhiều kinh Phật do nghe sư tụng. Năm 24 tuổi đỗ đầu (Trạng nguyên) khoa Tân Sửu, niên hiệu Quảng Hòa 1 (1541) đời Mạc Phúc Hải, làm quan tới Hàn lâm viện Thị thư. Tên ông còn khắc trên bia đá tại Văn chỉ Bình Dân, Văn Miếu Xích Đằng (Hưng Yên) và Văn Miếu Quốc Tử Giám Thăng Long.",
+      "dia_diem": "Xã Bình Dân, nay xã Tân Dân, huyện Khoái Châu, Hưng Yên",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Trạng nguyên đất Việt thuộc làu kinh Phật khi 4 tuổi, được lưu danh ở Văn Miếu là ai? — https://danviet.vn/trang-nguyen-dat-viet-thuoc-lau-kinh-phat-khi-4-tuoi-duoc-luu-danh-o-van-mieu-la-ai-20241103080639153-d1192998.html"
+      ],
+      "ghi_chu_bien_tap": "Id đặt hậu tố '-trang-nguyen' để tránh nhầm với các nhân vật trùng tên 'Nguyễn Kỳ' khác có thể xuất hiện ở lớp khác. Không rõ năm mất. Toạ độ ước lượng theo xã Tân Dân, huyện Khoái Châu, độ tin cậy thấp."
+    },
+    {
+      "id": "vu-gioi",
+      "ten": "Vũ Giới",
+      "lon": 106.25,
+      "lat": 21.05,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "1541–1593",
+      "mo_ta": "Người làng Lương Xá, huyện Gia Lương (nay xã Trung Chính, huyện Lương Tài, Bắc Ninh). Đỗ Trạng nguyên khoa Đinh Sửu, niên hiệu Sùng Khang (1577) đời Mạc Mậu Hợp. Làm quan tới Thượng thư Bộ Lại, từng giữ chức Hữu Thị lang Bộ Hộ và Hàn lâm viện Thị giảng, được dân gian tôn xưng «Hòa An tiên sinh đạo học tôn sư». Mất năm 1593, khi Trịnh Tùng đem quân đánh nhà Mạc, khôi phục nhà Lê.",
+      "dia_diem": "Làng Lương Xá, xã Trung Chính, huyện Lương Tài, Bắc Ninh",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Trạng nguyên Vũ Giới quê Bắc Ninh, một đứa trẻ làng tư chất thông minh thiên kinh vạn quyển thi đỗ Trạng nguyên vương triều nhà Mạc — https://danviet.vn/que-bac-ninh-mot-dua-tre-lang-tu-chat-thong-minh-thien-kinh-van-quyen-thi-do-trang-nguyen-vuong-trieu-nha-mac-d1423636.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn đã mở ghi năm đỗ là niên hiệu Sùng Khang thứ 12; quy đổi theo lịch sử chuẩn niên hiệu Sùng Khang 12 = 1577 (khoa Đinh Sửu), khớp với danh sách 46 Trạng nguyên tổng hợp — dùng 1577. Toạ độ ước lượng theo xã Trung Chính, huyện Lương Tài, độ tin cậy thấp."
+    },
+    {
+      "id": "pham-tran-trang-nguyen",
+      "ten": "Phạm Trấn",
+      "lon": 106.276,
+      "lat": 20.856,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1523, đỗ Trạng nguyên 1556",
+      "mo_ta": "Người làng Lâm Kiều (nay thôn Lâm Cầu, xã Phạm Trấn, huyện Gia Lộc, Hải Dương) — xã Phạm Trấn ngày nay mang tên ông. Năm 34 tuổi đỗ đầu (Trạng nguyên) khoa Bính Thìn, niên hiệu Quang Bảo 2 (1556) đời Mạc Tuyên Tông. Ra làm quan dưới triều Mạc; sau khi nhà Mạc sụp đổ, ông không ra phục vụ triều Lê Trung hưng.",
+      "dia_diem": "Xã Phạm Trấn, huyện Gia Lộc, Hải Dương (xã mang tên ông)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cổng TTĐT xã Phạm Trấn, huyện Gia Lộc, Hải Dương — phamtran.gialoc.haiduong.gov.vn (xã đặt theo tên Trạng nguyên Phạm Trấn); tổng hợp thêm từ tìm kiếm chưa mở được trực tiếp trang chi tiết do lỗi kết nối máy chủ"
+      ],
+      "ghi_chu_bien_tap": "Id đặt hậu tố '-trang-nguyen' để tránh nhầm với địa danh xã Phạm Trấn nếu xuất hiện ở lớp khác. Trang chi tiết lịch sử của cổng xã (phamtran.gialoc.haiduong.gov.vn) bị lỗi kết nối máy chủ (ECONNREFUSED) khi thử mở cả bằng WebFetch — đây là triệu chứng công cụ (máy chủ xã nhỏ), không phải bằng chứng nội dung sai; đã xác nhận được sự tồn tại và tên xã qua kết quả tìm kiếm dẫn từ chính cổng này. Đề nghị soát lại khi máy chủ xã hoạt động ổn định. Toạ độ ước lượng theo trung tâm xã Phạm Trấn, độ tin cậy thấp."
+    },
+    {
+      "id": "luu-danh-cong",
+      "ten": "Lưu Danh Công",
+      "lon": 105.83,
+      "lat": 20.99,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "1644–1676",
+      "mo_ta": "Người làng Phương Liệt, huyện Thanh Trì, phủ Thường Tín, trấn Sơn Nam (nay phường Phương Liệt, quận Thanh Xuân, Hà Nội). Năm 27 tuổi đỗ đầu (Trạng nguyên) khoa Canh Tuất, niên hiệu Cảnh Trị 8 (1670) đời Lê Huyền Tông; tên được khắc vào văn bia Văn Miếu – Quốc Tử Giám cùng năm. Được vua gả một cung nữ họ Trịnh người Phương Liệt, ban ruộng «Cánh đồng bà Chúa», ở lại quê vợ. Làm quan chỉ sáu năm rồi mất; đền thờ tại làng Phương Liệt, giỗ vào 4 tháng 4 âm lịch, đã được xếp hạng di tích lịch sử – văn hóa.",
+      "dia_diem": "Đền thờ Lưu Danh Công, phường Phương Liệt, quận Thanh Xuân, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Hà Nội mới — hanoimoi.vn — Ông Trạng nguyên người Phương Liệt — https://hanoimoi.vn/ong-trang-nguyen-nguoi-phuong-liet-68468.html"
+      ],
+      "ghi_chu_bien_tap": "Một nguồn khác ghi năm sinh/mất là 1643-1645 hoặc 1644-1675 (chênh 1 năm so với bản dùng) — sai khác điển hình do quy đổi âm/dương lịch, giữ theo hanoimoi.vn (1644-1676) vì là trang đã mở trực tiếp. Toạ độ ước lượng theo phường Phương Liệt, độ tin cậy thấp."
+    },
+    {
+      "id": "nguyen-thien-trang-nguyen",
+      "ten": "Nguyễn Thiến — viễn tổ dòng họ Nguyễn Tiên Điền",
+      "lon": 105.75,
+      "lat": 20.845,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "1495–1557",
+      "mo_ta": "Quê nội làng Tảo Dương, quê ngoại làng Canh Hoạch, huyện Thanh Oai (nay xã Dân Hòa, huyện Thanh Oai, Hà Nội); học với cậu ruột là Trạng nguyên Nguyễn Đức Lượng. Đỗ Trạng nguyên khoa Nhâm Thìn, niên hiệu Đại Chính 3 (1532) đời Mạc Thái Tông. Giữ chức Thượng thư Bộ Lễ triều Mạc, sau về hàng triều Lê Trung hưng; con là danh tướng Nguyễn Quyện. Được xác định là viễn tổ đời thứ 8 của Đại thi hào Nguyễn Du qua cháu ngoại Nam Dương hầu Nguyễn Nhiệm — tổ dòng họ Nguyễn Tiên Điền. Thờ tại đình Vác (đình Đụn), làng Canh Hoạch.",
+      "dia_diem": "Đình Vác (đình Đụn), làng Canh Hoạch, xã Dân Hòa, huyện Thanh Oai, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Vị Trạng nguyên viễn tổ của Đại thi hào Nguyễn Du — https://danviet.vn/vi-trang-nguyen-vien-to-cua-dai-thi-hao-nguyen-du-20221229091103541.htm"
+      ],
+      "ghi_chu_bien_tap": "Id đặt hậu tố '-trang-nguyen' để tránh nhầm lẫn nếu có nhân vật trùng tên khác trong kho. Toạ độ ước lượng theo xã Dân Hòa, huyện Thanh Oai, độ tin cậy thấp."
+    },
+    {
+      "id": "tran-tat-van",
+      "ten": "Trần Tất Văn — Trạng nguyên cuối cùng triều Lê sơ",
+      "lon": 106.556,
+      "lat": 20.782,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh khoảng 1496, đỗ Trạng nguyên 1526",
+      "mo_ta": "Người làng Nguyệt Áng, nay xã Thái Sơn, huyện An Lão, Hải Phòng. Đỗ Trạng nguyên khoa Bính Tuất, niên hiệu Thống Nguyên 5 (1526) đời Lê Cung Hoàng — vị Trạng nguyên cuối cùng của triều Lê sơ trước khi nhà Mạc thay thế. Ra làm quan dưới triều Mạc, giữ chức Thượng thư, tước Hàn Xuyên bá; từng đi sứ nhà Minh. Đền thờ ông cùng đình Nguyệt Áng tại xã Thái Sơn đã được xếp hạng di tích lịch sử cấp quốc gia.",
+      "dia_diem": "Đền thờ Trần Tất Văn và đình Nguyệt Áng, xã Thái Sơn, huyện An Lão, Hải Phòng",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Trường Tiểu học Nguyễn Đốc Tín (Hải Phòng) — thnguyendoctin.haiphong.edu.vn — Tìm hiểu về thân thế và công lao của Trạng Nguyên Trần Tất Văn - Nguyệt Áng - Thái Sơn - An Lão - Hải Phòng — https://thnguyendoctin.haiphong.edu.vn/tin-video/tim-hieu-ve-than-the-va-cong-lao-cua-trang-nguyen-tran-tat-van-nguyet-ang-thai/ctmb/13533/23466"
+      ],
+      "ghi_chu_bien_tap": "Nguồn không ghi năm sinh/mất chính xác; năm sinh 'khoảng 1496' suy từ tuổi đỗ theo thông lệ so sánh các trạng nguyên cùng thời — cần soát lại bằng nguồn chuyên khảo. Toạ độ ước lượng theo xã Thái Sơn, huyện An Lão, độ tin cậy thấp."
+    },
+    {
+      "id": "nguyen-duc-luong",
+      "ten": "Nguyễn Đức Lượng",
+      "lon": 105.75,
+      "lat": 20.845,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1465, đỗ Trạng nguyên 1514",
+      "mo_ta": "Người làng Canh Hoạch, huyện Thanh Oai (nay xã Dân Hòa, huyện Thanh Oai, Hà Nội), tên khai sinh là Hề, được vua cho đổi thành Đức Lượng. Năm 50 tuổi đỗ đầu (Trạng nguyên) khoa Giáp Tuất, niên hiệu Hồng Thuận 6 (1514) đời Lê Tương Dực. Giữ chức Tả Thị lang Bộ Lễ, sau truy tặng Thượng thư; từng đi sứ phương Bắc. Là cậu ruột và thầy dạy chữ của Trạng nguyên Nguyễn Thiến (cháu, đỗ sau năm 1532) — dân gian gọi hai người là «cậu Trạng, cháu Trạng» cùng làng. Khu lăng mộ tại Canh Hoạch được khánh thành lại năm 2021.",
+      "dia_diem": "Khu lăng mộ Nguyễn Đức Lượng, làng Canh Hoạch, xã Dân Hòa, huyện Thanh Oai, Hà Nội",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Trang tin Di sản Tôn giáo — disantongiao.vn — Lễ khánh thành khu lăng mộ Trạng nguyên Nguyễn Đức Lượng (1465-?) — https://disantongiao.vn/le-khanh-thanh-khu-lang-mo-trang-nguyen-nguyen-duc-luong-1465.html",
+        "Báo Dân Việt — danviet.vn — Vị Trạng nguyên viễn tổ của Đại thi hào Nguyễn Du — https://danviet.vn/vi-trang-nguyen-vien-to-cua-dai-thi-hao-nguyen-du-20221229091103541.htm"
+      ],
+      "ghi_chu_bien_tap": "Cùng làng Canh Hoạch với Nguyễn Thiến (nguyen-thien-trang-nguyen) — hai mục khác nhau, có quan hệ cậu-cháu, đã đối chiếu kỹ để không trùng lặp. Toạ độ dùng chung điểm neo làng Canh Hoạch với mục Nguyễn Thiến, độ tin cậy thấp."
+    },
+    {
+      "id": "pham-duy-quyet",
+      "ten": "Phạm Duy Quyết",
+      "lon": 106.42,
+      "lat": 21.13,
+      "loai": "trang-nguyen",
+      "nam_hien_thi": "sinh 1521, đỗ Trạng nguyên 1562",
+      "mo_ta": "Người vùng Chí Linh, Hải Dương (một số nguồn ghi làng Kim Khê, một số ghi làng Xác Khê — chưa thống nhất tên làng cụ thể). Năm 42 tuổi đỗ đầu (Trạng nguyên) khoa Nhâm Tuất, niên hiệu Thuần Phúc 1 (1562) đời Mạc Phúc Nguyên. Làm quan tới Tả Thị lang, kiêm Đông các Đại học sĩ, được phong tước Kim Khê hầu.",
+      "dia_diem": "Vùng Chí Linh, Hải Dương (tên làng cụ thể chưa thống nhất giữa các nguồn)",
+      "do_tin_cay_toa_do": "thap",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — danviet.vn — Lưỡng quốc trạng nguyên và câu đối chết người — https://danviet.vn/luong-quoc-trang-nguyen-va-cau-doi-chet-nguoi-7777796255-d544621.html"
+      ],
+      "ghi_chu_bien_tap": "TÊN LÀNG VÊNH GIỮA NGUỒN: một bản ghi «làng Kim Khê», một bản ghi «làng Xác Khê», cùng huyện Chí Linh — chưa xác định bản nào đúng, nêu cả hai theo đúng nguyên tắc không tự chọn bản gọn hơn, không dùng tên làng cụ thể trong dia_diem. Toạ độ đặt tạm theo trung tâm TP Chí Linh, độ tin cậy thấp — cần soát lại kỹ trước khi nâng trang_thai."
     }
   ]
 }

@@ -1,0 +1,136 @@
+{
+  "ghi_chu": "Sa đồ Vĩnh Linh — tuyến lửa giới tuyến 1965-1972 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "vinh-linh-tuyen-lua-1965-1972",
+  "ten": "Vĩnh Linh — tuyến lửa giới tuyến",
+  "nam": 1965,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đảng bộ và lực lượng vũ trang Đặc khu Vĩnh Linh",
+  "doi_thu": "Không quân, hải quân Mỹ",
+  "dia_diem": "Đặc khu Vĩnh Linh, bờ bắc sông Bến Hải, nay thuộc tỉnh Quảng Trị",
+  "lien_quan_tinh": [
+    "quang-tri"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "song",
+      "diem": [
+        [50, 700],
+        [500, 720],
+        [950, 700]
+      ],
+      "nhan": "Sông Bến Hải — giới tuyến quân sự tạm thời"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [850, 50],
+        [900, 400],
+        [850, 750]
+      ],
+      "nhan": "Biển Đông"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "dia-dao-vinh-linh",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 450,
+      "y": 500,
+      "nhan": "Hệ thống địa đạo, hầm hào Vĩnh Linh"
+    },
+    {
+      "id": "tran-dia-phao-cao-xa-vl",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 400,
+      "nhan": "Trận địa phòng không, hải pháo Vĩnh Linh"
+    },
+    {
+      "id": "may-bay-my-danh-pha",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 200,
+      "nhan": "Không quân Mỹ đánh phá — chiến dịch Sấm Rền"
+    },
+    {
+      "id": "tau-chien-my",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 850,
+      "y": 300,
+      "nhan": "Tàu chiến Mỹ ngoài khơi"
+    },
+    {
+      "id": "dan-so-tan-k8",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 550,
+      "nhan": "Dân sơ tán theo kế hoạch K8, K10"
+    },
+    {
+      "id": "dao-con-co",
+      "kieu": "dia-danh",
+      "x": 880,
+      "y": 500,
+      "nhan": "Đảo Cồn Cỏ — tiền đồn trên biển"
+    },
+    {
+      "id": "tuyen-van-chuyen-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [450, 550],
+      "den": [500, 700],
+      "nhan": "Chi viện người, của qua giới tuyến vào Nam"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đầu cầu giới tuyến, hậu phương trực tiếp",
+      "mo_ta": "Vĩnh Linh nằm sát giới tuyến quân sự tạm thời tại sông Bến Hải, là đầu cầu của miền Bắc xã hội chủ nghĩa, hậu phương trực tiếp và cửa ngõ chi viện cho chiến trường Bắc Quảng Trị.",
+      "hien": ["dia-dao-vinh-linh"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chiến dịch \"Sấm Rền\" mở màn chiến tranh phá hoại",
+      "mo_ta": "Ngày 8/2/1965, Mỹ mở chiến dịch \"Sấm Rền\" (Rolling Thunder), huy động hàng trăm lượt máy bay đánh phá hàng trăm mục tiêu từ Vĩnh Linh đến Quảng Bình.",
+      "hien": ["dia-dao-vinh-linh", "may-bay-my-danh-pha"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "841 trận đánh trong ba năm đầu",
+      "mo_ta": "Từ 1965 đến 1967, quân dân Vĩnh Linh đánh 841 trận, bắn rơi 48 máy bay, bắn cháy và bắn chìm 17 tàu chiến Mỹ.",
+      "hien": ["tran-dia-phao-cao-xa-vl", "may-bay-my-danh-pha", "tau-chien-my"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Pháo đài trong lòng đất",
+      "mo_ta": "Trong giai đoạn 1965-1972, quân dân Vĩnh Linh đào 91.840 hầm hào các loại, 2.098 km giao thông hào và 114 hệ thống địa đạo để trụ vững dưới bom đạn.",
+      "hien": ["dia-dao-vinh-linh"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Sơ tán dân theo kế hoạch K8, K10",
+      "mo_ta": "Từ tháng 8/1966 (kế hoạch K8) và tháng 10/1967 (kế hoạch K10), Trung ương tổ chức sơ tán dân ra khỏi vùng tuyến lửa để giảm thương vong, bảo toàn lực lượng cho nhiệm vụ chi viện lâu dài.",
+      "hien": ["dan-so-tan-k8"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Chi viện chiến dịch giải phóng Trị Thiên 1972",
+      "mo_ta": "Trong chiến dịch giải phóng Trị Thiên năm 1972, quân dân Vĩnh Linh huy động 112.179 ngày công, đào đắp 175.669 mét khối đất chi viện cho chiến dịch.",
+      "hien": ["tuyen-van-chuyen-nam", "dao-con-co"]
+    }
+  ],
+  "ket_qua": "Quân dân Vĩnh Linh giữ vững tuyến lửa giới tuyến suốt các năm 1965-1972, đánh hàng trăm trận, bắn rơi hàng chục máy bay, bắn chìm nhiều tàu chiến Mỹ, đồng thời hoàn thành vai trò hậu phương trực tiếp chi viện chiến trường Quảng Trị.",
+  "y_nghia": "Vĩnh Linh cùng đảo Cồn Cỏ giữ vai trò tiền đồn chiến lược trên tuyến vận chuyển Bắc–Nam, góp phần chi viện sức người, sức của cho chiến dịch giải phóng tỉnh Quảng Trị năm 1972.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Vị trí quân sự của Khu vực Vĩnh Linh trong cuộc kháng chiến chống Mỹ, cứu nước — Cổng TTĐT huyện Vĩnh Linh, tỉnh Quảng Trị — https://vinhlinh.quangtri.gov.vn/chi-tiet/-/view-article/1/1647698331609/1724031200561"
+  ],
+  "ghi_chu_bien_tap": "Nguồn vinhlinh.quangtri.gov.vn (cổng huyện, gov.vn) đã mở, xác nhận vai trò 'đầu cầu giới tuyến — hậu phương trực tiếp', ngày 8/2/1965 mở chiến dịch Sấm Rền, số liệu 841 trận/48 máy bay/17 tàu chiến (1965-1967), số liệu hầm hào/địa đạo và ngày công 1972 (giai đoạn 1965-1972). Kế hoạch K8/K10 và vai trò đảo Cồn Cỏ cùng nguồn."
+}

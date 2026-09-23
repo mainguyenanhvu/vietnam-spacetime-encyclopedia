@@ -5,6 +5,7 @@
 
 import { registerPanel, showOnly, hidePanel } from "./panels";
 import { esc } from "./util/html";
+import { escVan } from "./popup-noi-dung";
 
 interface MCQuestion {
   id: string;
@@ -100,7 +101,7 @@ function scoreBar(extra = ""): string {
 }
 
 function sourceNote(giai_thich: string, nguon: string): string {
-  return `<p class="ol-explain">💡 ${esc(giai_thich)}</p><p class="ol-source">📚 Nguồn: ${esc(nguon)}</p>`;
+  return `<p class="ol-explain">💡 ${escVan(giai_thich)}</p><p class="ol-source">📚 Nguồn: ${escVan(nguon)}</p>`;
 }
 
 // ── Màn chào ────────────────────────────────────────────────────────────────
@@ -147,9 +148,9 @@ function renderKhoiDong(): void {
     <h2>🔔 Vòng 1 · Khởi động <span class="muted">câu ${kdIndex + 1}/${kdList.length}</span></h2>
     ${scoreBar()}
     <div class="ol-timer"><div id="ol-timer-fill" class="ol-timer-fill"></div><span id="ol-timer-text">${KHOI_DONG_SECONDS}s</span></div>
-    <p class="ol-question">${esc(q.cau_hoi)}</p>
+    <p class="ol-question">${escVan(q.cau_hoi)}</p>
     <div class="ol-options">${options
-      .map((o) => `<button type="button" class="ol-option" data-v="${esc(o)}">${esc(o)}</button>`)
+      .map((o) => `<button type="button" class="ol-option" data-v="${esc(o)}">${escVan(o)}</button>`)
       .join("")}</div>
     <div id="ol-feedback" aria-live="polite"></div>`;
 
@@ -189,8 +190,8 @@ function answerKhoiDong(value: string | null, q: MCQuestion): void {
       ok
         ? "✅ Chính xác! +10 điểm"
         : value === null
-          ? `⏰ Hết giờ! Đáp án: <b>${esc(q.dap_an)}</b>`
-          : `❌ Sai rồi. Đáp án: <b>${esc(q.dap_an)}</b>`
+          ? `⏰ Hết giờ! Đáp án: <b>${escVan(q.dap_an)}</b>`
+          : `❌ Sai rồi. Đáp án: <b>${escVan(q.dap_an)}</b>`
     }</p>${sourceNote(q.giai_thich, q.nguon)}
       <button id="ol-next" type="button">Câu tiếp theo →</button>`;
   document.getElementById("ol-next")?.addEventListener("click", () => {
@@ -220,7 +221,7 @@ function startVcnv(): void {
           <span class="ol-row-no">${i + 1}</span>
           ${
             isOpen
-              ? `<span class="ol-row-clue">${esc(h.goi_y)}</span> <b class="ol-row-ans">→ ${esc(h.dap_an)}</b>`
+              ? `<span class="ol-row-clue">${escVan(h.goi_y)}</span> <b class="ol-row-ans">→ ${escVan(h.dap_an)}</b>`
               : `<span class="ol-row-clue muted">Hàng ngang chưa mở</span>`
           }
         </li>`;
@@ -253,7 +254,7 @@ function startVcnv(): void {
       solved = true;
       const fb = document.getElementById("ol-feedback");
       if (fb)
-        fb.innerHTML = `<p class="ol-verdict">Từ khoá là: <b>${esc(puzzle.tu_khoa)}</b></p>${sourceNote(puzzle.giai_thich, puzzle.nguon)}`;
+        fb.innerHTML = `<p class="ol-verdict">Từ khoá là: <b>${escVan(puzzle.tu_khoa)}</b></p>${sourceNote(puzzle.giai_thich, puzzle.nguon)}`;
       startTangToc();
     });
 
@@ -274,7 +275,7 @@ function startVcnv(): void {
         const points = opened <= 1 ? 80 : opened === 2 ? 60 : opened === 3 ? 40 : 20;
         totalScore += points;
         if (fb)
-          fb.innerHTML = `<p class="ol-verdict">✅ Chính xác! Từ khoá: <b>${esc(puzzle.tu_khoa)}</b> · +${points} điểm</p>
+          fb.innerHTML = `<p class="ol-verdict">✅ Chính xác! Từ khoá: <b>${escVan(puzzle.tu_khoa)}</b> · +${points} điểm</p>
             ${sourceNote(puzzle.giai_thich, puzzle.nguon)}
             <button id="ol-next" type="button">Sang vòng Tăng tốc →</button>`;
         document.getElementById("ol-next")?.addEventListener("click", startTangToc);
@@ -322,9 +323,9 @@ function renderTangToc(): void {
     ${scoreBar()}
     <div class="ol-timer"><div id="ol-timer-fill" class="ol-timer-fill"></div><span id="ol-timer-text">${TANG_TOC_SECONDS}s</span></div>
     <p class="muted">Trả lời càng nhanh, điểm càng cao (tối đa ${10 + TANG_TOC_SECONDS} điểm).</p>
-    <p class="ol-question">${esc(q.cau_hoi)}</p>
+    <p class="ol-question">${escVan(q.cau_hoi)}</p>
     <div class="ol-options">${options
-      .map((o) => `<button type="button" class="ol-option" data-v="${esc(o)}">${esc(o)}</button>`)
+      .map((o) => `<button type="button" class="ol-option" data-v="${esc(o)}">${escVan(o)}</button>`)
       .join("")}</div>
     <div id="ol-feedback" aria-live="polite"></div>`;
 
@@ -365,8 +366,8 @@ function answerTangToc(value: string | null, q: MCQuestion, timeLeft: number): v
       ok
         ? `✅ Chính xác! +${points} điểm`
         : value === null
-          ? `⏰ Hết giờ! Đáp án: <b>${esc(q.dap_an)}</b>`
-          : `❌ Sai. Đáp án: <b>${esc(q.dap_an)}</b>`
+          ? `⏰ Hết giờ! Đáp án: <b>${escVan(q.dap_an)}</b>`
+          : `❌ Sai. Đáp án: <b>${escVan(q.dap_an)}</b>`
     }</p>${sourceNote(q.giai_thich, q.nguon)}
       <button id="ol-next" type="button">Câu tiếp theo →</button>`;
   document.getElementById("ol-next")?.addEventListener("click", () => {
@@ -415,9 +416,9 @@ function renderVeDichQuestion(): void {
   c.innerHTML = `
     <h2>🏁 Vòng 4 · Về đích <span class="muted">câu ${vdIndex + 1}/${vdList.length} · gói ${vdStake} điểm</span></h2>
     ${scoreBar()}
-    <p class="ol-question">${esc(q.cau_hoi)}</p>
+    <p class="ol-question">${escVan(q.cau_hoi)}</p>
     <div class="ol-options">${options
-      .map((o) => `<button type="button" class="ol-option" data-v="${esc(o)}">${esc(o)}</button>`)
+      .map((o) => `<button type="button" class="ol-option" data-v="${esc(o)}">${escVan(o)}</button>`)
       .join("")}</div>
     <div id="ol-feedback" aria-live="polite"></div>`;
   c.querySelectorAll<HTMLButtonElement>(".ol-option").forEach((btn) =>
@@ -439,7 +440,7 @@ function answerVeDich(value: string | null, q: MCQuestion): void {
   const fb = document.getElementById("ol-feedback");
   if (fb)
     fb.innerHTML = `<p class="ol-verdict">${
-      ok ? `✅ Chính xác! +${vdStake} điểm` : `❌ Sai. Đáp án: <b>${esc(q.dap_an)}</b> · ${delta} điểm`
+      ok ? `✅ Chính xác! +${vdStake} điểm` : `❌ Sai. Đáp án: <b>${escVan(q.dap_an)}</b> · ${delta} điểm`
     }</p>${sourceNote(q.giai_thich, q.nguon)}
       <button id="ol-next" type="button">${vdIndex + 1 < vdList.length ? "Câu tiếp theo →" : "Xem kết quả →"}</button>`;
   document.getElementById("ol-next")?.addEventListener("click", () => {

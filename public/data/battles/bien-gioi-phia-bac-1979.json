@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ Chiến tranh bảo vệ biên giới phía Bắc 1979 — Mục T2 NHẠY CẢM theo docs/section9-sensitive.json. Nội dung bám sát NGUYÊN VĂN mo_ta đã duyệt trong chien-dich-tran-danh.json (nguồn: Cổng TTĐT TP Móng Cái), KHÔNG bổ sung suy diễn về diễn biến quân sự chi tiết trên các hướng khác (Lạng Sơn, Cao Bằng, Lào Cai...) vì nguồn hiện có chỉ chi tiết hoá trận Pò Hèn. Cần người có thẩm quyền soát trước khi publish. trang_thai=draft.",
+  "ghi_chu": "Sa đồ cuộc chiến đấu bảo vệ biên giới phía Bắc từ 17/2/1979 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "bien-gioi-phia-bac-1979",
   "ten": "Chiến tranh bảo vệ biên giới phía Bắc 1979",
   "nam": 1979,
@@ -18,120 +18,317 @@
       "kieu": "duong",
       "diem": [
         [
-          0,
-          150
+          90,
+          130
         ],
         [
-          500,
+          300,
+          110
+        ],
+        [
+          520,
+          105
+        ],
+        [
+          740,
           120
         ],
         [
-          1000,
-          160
+          950,
+          150
         ]
       ],
-      "nhan": "Đường biên giới Việt – Trung"
+      "nhan": "Đường biên giới Việt Nam – Trung Quốc dài hơn 1.400 km"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          150,
+          240
+        ],
+        [
+          400,
+          225
+        ],
+        [
+          650,
+          235
+        ],
+        [
+          880,
+          250
+        ]
+      ],
+      "nhan": "Vùng núi biên giới sáu tỉnh phía Bắc"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          640,
+          200
+        ],
+        [
+          700,
+          300
+        ],
+        [
+          760,
+          420
+        ]
+      ],
+      "nhan": "Hướng tiến công chủ yếu: Lạng Sơn – Cao Bằng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          300,
+          210
+        ],
+        [
+          280,
+          320
+        ],
+        [
+          300,
+          430
+        ]
+      ],
+      "nhan": "Hướng quan trọng: Lào Cai (Hoàng Liên Sơn)"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-trung-quoc",
+      "id": "xe-tang-phao",
       "kieu": "quan",
       "ben": "dich",
-      "x": 500,
-      "y": 100,
-      "nhan": "Quân đội Trung Quốc tiến công toàn tuyến"
+      "x": 180,
+      "y": 70,
+      "nhan": "32 sư đoàn · hơn 500 xe tăng, xe bọc thép · khoảng 2.000 khẩu pháo"
     },
     {
-      "id": "don-po-hen",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 650,
-      "y": 280,
-      "nhan": "Đồn biên phòng Pò Hèn"
-    },
-    {
-      "id": "quan-ta-po-hen",
+      "id": "quan-tq",
       "kieu": "quan",
-      "ben": "ta",
-      "x": 600,
-      "y": 340,
-      "nhan": "45 cán bộ, chiến sĩ và dân quân"
+      "ben": "dich",
+      "x": 560,
+      "y": 60,
+      "nhan": "3 giờ 30 rạng sáng 17/2/1979 — 600.000 quân tiến công toàn tuyến"
     },
     {
-      "id": "co-hy-sinh",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 700,
-      "y": 340,
-      "nhan": "Hoàng Thị Hồng Chiêm và đồng đội hy sinh"
+      "id": "lai-chau",
+      "kieu": "dia-danh",
+      "x": 120,
+      "y": 170,
+      "nhan": "Phong Thổ (Lai Châu) — hướng phối hợp"
     },
     {
-      "id": "quan-ta-toan-tuyen",
+      "id": "lao-cai",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 300,
+      "y": 180,
+      "nhan": "Lào Cai (Hoàng Liên Sơn) — hướng quan trọng"
+    },
+    {
+      "id": "ha-tuyen",
+      "kieu": "dia-danh",
+      "x": 470,
+      "y": 180,
+      "nhan": "Hà Tuyên — hướng nghi binh"
+    },
+    {
+      "id": "cao-bang",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 640,
+      "y": 180,
+      "nhan": "Cao Bằng — hướng chủ yếu"
+    },
+    {
+      "id": "lang-son",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 810,
+      "y": 180,
+      "nhan": "Lạng Sơn — hướng chủ yếu"
+    },
+    {
+      "id": "quang-ninh",
+      "kieu": "dia-danh",
+      "x": 940,
+      "y": 280,
+      "nhan": "Quảng Ninh — hướng nghi binh"
+    },
+    {
+      "id": "luc-luong-ta",
       "kieu": "quan",
       "ben": "ta",
       "x": 300,
       "y": 350,
-      "nhan": "Quân và dân các tỉnh biên giới kiên cường chiến đấu"
+      "nhan": "Ngày 17/2 chỉ có công an vũ trang, dân quân địa phương và 7 sư đoàn, khoảng 7 vạn quân"
     },
     {
-      "id": "co-thang",
+      "id": "loi-keu-goi",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 630,
+      "y": 330,
+      "nhan": "4/3 — lời kêu gọi của Ban Chấp hành Trung ương Đảng; 5/3 — bản tin đặc biệt trên Đài Tiếng nói Việt Nam"
+    },
+    {
+      "id": "tong-dong-vien",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 880,
+      "y": 400,
+      "nhan": "5/3/1979 — Quyết định và Lệnh tổng động viên, đăng trang nhất báo Nhân Dân ngày 6/3"
+    },
+    {
+      "id": "chan-dung",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        300,
+        470
+      ],
+      "den": [
+        560,
+        440
+      ],
+      "nhan": "Chặn đứng bước tiến của đội quân đông hơn gấp bội"
+    },
+    {
+      "id": "rut-quan",
       "kieu": "co",
       "ben": "ta",
-      "x": 500,
-      "y": 400,
-      "nhan": "Đối phương rút quân (18/3/1979)"
+      "x": 880,
+      "y": 520,
+      "nhan": "6/3/1979 — Trung Quốc buộc phải rút quân"
+    },
+    {
+      "id": "thiet-hai",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 560,
+      "nhan": "320 xã, 735 trường học, 41 nông trường, 81 xí nghiệp, hầm mỏ và 38 lâm trường bị tàn phá"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Trung Quốc tiến công trên toàn tuyến biên giới (17/2/1979)",
-      "mo_ta": "Rạng sáng 17/2/1979, Trung Quốc huy động lực lượng lớn đồng loạt tiến công trên toàn tuyến biên giới phía Bắc, từ Lai Châu đến Quảng Ninh.",
+      "tieu_de": "Cuối 1978 — điều động lực lượng áp sát biên giới",
+      "thoi_gian": "Cuối 1978 – tháng 1/1979",
+      "dia_danh": "Toàn tuyến biên giới phía Bắc",
+      "mo_ta": "Ngay từ cuối năm 1978, với luận điệu «dạy cho Việt Nam một bài học», phía Trung Quốc âm thầm lựa chọn, điều động lực lượng binh lực cùng số lượng lớn trang thiết bị vũ khí áp sát trên toàn tuyến biên giới với Việt Nam. Từ tháng 1/1979, họ bắt đầu đẩy mạnh các hoạt động trinh sát vũ trang để chuẩn bị cho chiến dịch xâm chiếm dọc biên giới.",
       "hien": [
-        "quan-dich-trung-quoc"
+        "xe-tang-phao",
+        "quan-tq"
+      ],
+      "nguon": [
+        "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đồn biên phòng Pò Hèn chiến đấu ngay ngày đầu",
-      "mo_ta": "Tại đồn biên phòng Pò Hèn (Quảng Ninh), 45 cán bộ, chiến sĩ cùng dân quân chiến đấu quyết liệt ngay trong ngày đầu cuộc chiến.",
+      "tieu_de": "Trung tuần tháng 2/1979 — 32 sư đoàn vào vị trí",
+      "thoi_gian": "Trung tuần tháng 2/1979",
+      "dia_danh": "Toàn tuyến biên giới phía Bắc",
+      "mo_ta": "Đến trung tuần tháng 2/1979, phía Trung Quốc đã điều động tổng cộng 9 quân đoàn chủ lực và một số sư đoàn bộ binh độc lập với tổng số 32 sư đoàn, 6 trung đoàn xe tăng với hơn 500 xe tăng, 4 sư đoàn và nhiều trung đoàn pháo binh, phòng không với khoảng 2.000 khẩu pháo. Bên cạnh đó, hơn 200 tàu chiến của hạm đội Nam Hải và hơn 900 máy bay được đặt trong tình trạng báo động cao độ.",
       "hien": [
-        "don-po-hen",
-        "quan-ta-po-hen"
+        "xe-tang-phao",
+        "quan-tq"
+      ],
+      "nguon": [
+        "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Nữ liệt sĩ Hoàng Thị Hồng Chiêm và đồng đội anh dũng hy sinh",
-      "mo_ta": "Trong trận chiến đấu bảo vệ đồn, nữ liệt sĩ Hoàng Thị Hồng Chiêm cùng nhiều cán bộ, chiến sĩ đã anh dũng hy sinh.",
+      "tieu_de": "3 giờ 30 rạng sáng 17/2/1979 — tiến công toàn tuyến",
+      "thoi_gian": "3 giờ 30 phút ngày 17/2/1979",
+      "dia_danh": "Tuyến biên giới dài hơn 1.400 km",
+      "mo_ta": "Vào 3 giờ 30 phút rạng sáng 17/2/1979, quân Trung Quốc sử dụng pháo binh bắn phá một số mục tiêu trong lãnh thổ nước ta, sau đó huy động 600.000 quân, hơn 500 xe tăng, xe bọc thép và hàng nghìn khẩu pháo các loại tấn công toàn tuyến biên giới Việt Nam dài hơn 1.400 km. Do tập trung quân đông, họ cùng một lúc tấn công nhiều hướng, ồ ạt đánh liên tiếp đợt này đến đợt khác với phương châm «lấy thịt đè người», không ngại thương vong.",
       "hien": [
-        "quan-ta-po-hen",
-        "co-hy-sinh"
+        "quan-tq",
+        "lao-cai",
+        "cao-bang",
+        "lang-son"
+      ],
+      "nguon": [
+        "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Quân và dân ta kiên cường chiến đấu trên toàn tuyến",
-      "mo_ta": "Trên khắp các tỉnh biên giới, quân và dân ta kiên cường chiến đấu bảo vệ từng tấc đất biên cương.",
+      "tieu_de": "Bố trí các hướng tiến công",
+      "thoi_gian": "Từ 17/2/1979",
+      "dia_danh": "Lạng Sơn · Cao Bằng · Lào Cai · Phong Thổ · Quảng Ninh · Hà Tuyên",
+      "mo_ta": "Hướng tấn công chủ yếu của quân Trung Quốc là Lạng Sơn và Cao Bằng; hướng quan trọng là Lào Cai, khi đó thuộc tỉnh Hoàng Liên Sơn; hướng phối hợp là Phong Thổ thuộc Lai Châu; hướng nghi binh nhằm thu hút lực lượng ta là Quảng Ninh và Hà Tuyên. Cách bố trí này cho thấy trọng tâm đặt vào hai tỉnh nằm trên trục đường ngắn nhất xuống đồng bằng Bắc Bộ, trong khi hai hướng hai đầu tuyến biên giới chỉ giữ vai trò kéo giãn lực lượng phòng thủ.",
       "hien": [
-        "quan-ta-toan-tuyen",
-        "don-po-hen"
+        "lang-son",
+        "cao-bang",
+        "lao-cai",
+        "lai-chau",
+        "quang-ninh",
+        "ha-tuyen"
+      ],
+      "nguon": [
+        "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đối phương rút quân (18/3/1979)",
-      "mo_ta": "Sau gần một tháng chiến đấu, đối phương buộc phải tuyên bố rút quân từ ngày 18/3/1979.",
+      "tieu_de": "Tương quan lực lượng ngày đầu — khoảng 7 vạn chống 60 vạn",
+      "thoi_gian": "17/2/1979",
+      "dia_danh": "Sáu tỉnh biên giới phía Bắc",
+      "mo_ta": "Đối mặt với đội quân tấn công đông tới 60 vạn người cùng hàng nghìn xe tăng và pháo hạng nặng, Việt Nam vào ngày 17/2/1979 chỉ có lực lượng công an vũ trang, dân quân địa phương và 7 sư đoàn với tổng số quân khoảng 7 vạn người. Sự chênh lệch về lực lượng và vũ khí trang bị là rất lớn. Thời điểm đó đất nước vừa ra khỏi chiến tranh, đang hàn gắn vết thương chiến tranh và giúp nhân dân Campuchia thoát khỏi thảm hoạ diệt chủng.",
       "hien": [
-        "co-thang"
+        "luc-luong-ta",
+        "chan-dung",
+        "quan-tq"
+      ],
+      "nguon": [
+        "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "4 – 5/3/1979 — lời kêu gọi và lệnh tổng động viên",
+      "thoi_gian": "4 – 6/3/1979",
+      "dia_danh": "Cả nước",
+      "mo_ta": "Ngày 4/3/1979, Ban Chấp hành Trung ương Đảng ra lời kêu gọi đồng bào và chiến sĩ cả nước nhất tề đứng lên bảo vệ Tổ quốc. Sáng 5/3/1979, chương trình phát thanh 90 phút của Đài Tiếng nói Việt Nam phát bản tin đặc biệt kêu gọi toàn thể đồng bào các dân tộc anh em trong cả nước phát huy truyền thống Diên Hồng, triệu người như một, nhất tề đứng lên bảo vệ Tổ quốc. Cùng ngày 5/3/1979, Quyết định tổng động viên của Uỷ ban Thường vụ Quốc hội và Lệnh tổng động viên của Chủ tịch nước được ban hành, đăng trên trang nhất báo Nhân Dân ngày 6/3/1979.",
+      "hien": [
+        "loi-keu-goi",
+        "tong-dong-vien"
+      ],
+      "nguon": [
+        "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "6/3/1979 — rút quân, và những tổn thất để lại",
+      "thoi_gian": "Từ 6/3/1979",
+      "dia_danh": "Sáu tỉnh biên giới phía Bắc",
+      "mo_ta": "Lực lượng ít hơn hàng chục lần nhưng quân và dân biên giới đã chiến đấu ngoan cường, chặn đứng bước tiến của đội quân đông hơn gấp bội và gây thiệt hại nặng cho phía tiến công. Thiệt hại nặng nề trên chiến trường và bị dư luận thế giới lên án, Trung Quốc buộc phải rút quân vào ngày 6/3/1979. Phía Việt Nam chịu tổn thất lớn: hơn 30.000 cán bộ, chiến sĩ thương vong; hàng chục nghìn dân thường thiệt mạng; các thị xã Cao Bằng, Lạng Sơn, Cam Đường, Lào Cai gần như bị phá huỷ hoàn toàn; 320 xã, 735 trường học, 41 nông trường, 81 xí nghiệp, hầm mỏ và 38 lâm trường bị tàn phá; khoảng 50% trong tổng số 3,5 triệu người ở 6 tỉnh biên giới mất nhà cửa và phương tiện sinh sống.",
+      "hien": [
+        "chan-dung",
+        "rut-quan",
+        "thiet-hai",
+        "luc-luong-ta"
+      ],
+      "nguon": [
+        "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
       ]
     }
   ],
-  "ket_qua": "Quân và dân ta kiên cường chiến đấu bảo vệ biên cương, buộc đối phương rút quân từ 18/3/1979.",
-  "y_nghia": "Khẳng định quyết tâm bảo vệ chủ quyền, toàn vẹn lãnh thổ; sự hy sinh của các cán bộ, chiến sĩ như tại đồn Pò Hèn là tấm gương bảo vệ biên cương Tổ quốc.",
+  "ket_qua": "Quân và dân sáu tỉnh biên giới chặn đứng bước tiến của đội quân đông hơn gấp bội; thiệt hại nặng trên chiến trường và bị dư luận thế giới lên án, Trung Quốc buộc phải rút quân từ ngày 6/3/1979. Phía Việt Nam chịu hơn 30.000 cán bộ, chiến sĩ thương vong cùng hàng chục nghìn dân thường thiệt mạng; bốn thị xã Cao Bằng, Lạng Sơn, Cam Đường, Lào Cai gần như bị phá huỷ hoàn toàn (Báo Quân khu 4).",
+  "y_nghia": "Cuộc chiến đấu bảo vệ biên giới phía Bắc năm 1979 khẳng định ý chí và sức bền của nhân dân Việt Nam trong bảo vệ độc lập, chủ quyền và toàn vẹn lãnh thổ, trong hoàn cảnh đất nước vừa ra khỏi chiến tranh và đang làm nhiệm vụ quốc tế ở biên giới Tây Nam. Ngày nay Việt Nam và Trung Quốc phát triển quan hệ hợp tác trên cơ sở «Láng giềng hữu nghị, hợp tác toàn diện, ổn định lâu dài, hướng tới tương lai».",
   "trang_thai": "draft",
   "nguon": [
+    "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html",
     "Cổng TTĐT thành phố Móng Cái — Đài tưởng niệm Pò Hèn (mongcai.gov.vn)",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
@@ -141,6 +338,41 @@
       "doan": "Sáng sớm 17/2/1979, quân xâm lược tràn sang, với khẩu CKC và 2 quả lựu đạn, người con gái hiền hậu, thùy mị của đất Bình Ngọc đã yểm trợ cho mọi người ở cửa hàng rút về phía sau. Ngay sau đó, chị Chiêm không về tuyến sau mà chạy ngược lên chốt cùng chiến đấu với cán bộ, chiến sĩ Đồn Pò Hèn.",
       "nguon_trich": "mongcai.gov.vn — Hoàng Thị Hồng Chiêm: Tên chị đã thành bài ca — https://mongcai.gov.vn/vi-vn/tin/hoang-thi-hong-chiem--ten-chi-da-thanh-bai-ca/0-0-95987",
       "buoc": 3
+    },
+    {
+      "sach": "Bản tin đặc biệt của Đài Tiếng nói Việt Nam, sáng 5/3/1979",
+      "doan": "Hỡi đồng bào và chiến sĩ yêu quý! Quân thù đang giày xéo non sông, đất nước ta... Toàn thể đồng bào các dân tộc anh em trong cả nước, các tôn giáo, các đảng phái, già, trẻ, gái, trai hãy phát huy truyền thống Diên Hồng, triệu người như một, nhất tề đứng lên bảo vệ tổ quốc",
+      "nguon_trich": "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html",
+      "buoc": 6
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến, tương quan lực lượng và số liệu thiệt hại theo Báo Quân khu 4. Nguồn này ghi Trung Quốc «buộc phải rút quân vào ngày 06/3/1979»; hồ sơ chien-dau-bao-ve-bien-gioi-cao-bang-1979 trong kho lại ghi mốc hoàn tất rút quân là 18/3/1979 theo Báo Cao Bằng — đợt này không mở trang Báo Cao Bằng nên chỉ ghi mốc 6/3 kèm nguồn, không tự chốt một ngày kết thúc. Nguồn không nêu số liệu tổn thất phía đối phương nên khối ton_that chỉ khai phía ta. Không khai loai_xung_dot: mặc định ngoai-xam là đúng. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "thoi_gian": "Từ 3 giờ 30 phút ngày 17/2/1979; Trung Quốc rút quân từ ngày 6/3/1979",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Khoảng 7 vạn quân vào ngày 17/2/1979",
+      "don_vi": [
+        "Lực lượng công an vũ trang",
+        "Dân quân địa phương sáu tỉnh biên giới",
+        "7 sư đoàn"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "600.000 quân; 9 quân đoàn chủ lực và một số sư đoàn bộ binh độc lập, tổng số 32 sư đoàn",
+      "vu_khi": [
+        "6 trung đoàn xe tăng với hơn 500 xe tăng, xe bọc thép",
+        "4 sư đoàn và nhiều trung đoàn pháo binh, phòng không với khoảng 2.000 khẩu pháo",
+        "Hơn 200 tàu chiến của hạm đội Nam Hải và hơn 900 máy bay đặt trong tình trạng báo động cao độ"
+      ]
+    },
+    "nguon": [
+      "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
+    ]
+  },
+  "ton_that": {
+    "ta": "Hơn 30.000 cán bộ, chiến sĩ thương vong; hàng chục nghìn dân thường thiệt mạng; các thị xã Cao Bằng, Lạng Sơn, Cam Đường, Lào Cai gần như bị phá huỷ hoàn toàn; 320 xã, 735 trường học, 41 nông trường, 81 xí nghiệp, hầm mỏ và 38 lâm trường bị tàn phá; 400 nghìn gia súc bị giết, bị cướp; khoảng 50% trong tổng số 3,5 triệu người ở 6 tỉnh biên giới mất nhà cửa, tài sản và phương tiện sinh sống",
+    "nguon": [
+      "Bảo vệ biên giới phía Bắc 1979 – 45 năm cuộc chiến đấu chính nghĩa của nhân dân Việt Nam — Báo Quân khu 4 — https://baoquankhu4.com.vn/chinh-tri/bao-ve-bien-gioi-phia-bac-1979-45-nam-cuoc-chien-dau-chinh-nghia-cua-nhan-dan-viet-nam.html"
+    ]
+  }
 }

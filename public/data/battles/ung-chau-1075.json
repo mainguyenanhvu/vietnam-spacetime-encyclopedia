@@ -3,6 +3,7 @@
   "id": "ung-chau-1075",
   "ten": "Chiến dịch tiến công Ung – Khâm – Liêm Châu 1075–1076",
   "nam": 1075,
+  "thoi_gian": "Tháng 10-1075 – tháng 4-1076",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Lý Thường Kiệt, Tông Đản",
   "doi_thu": "Nhà Tống (Tô Giám — tri châu Ung Châu)",
@@ -11,193 +12,366 @@
     "lang-son"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác. Toàn bộ diễn biến xảy ra trên đất Tống (nay Quảng Tây, Trung Quốc).",
-  "dia_hinh": [
-    {
-      "kieu": "duong",
-      "diem": [
-        [
-          450,
-          520
-        ],
-        [
-          280,
-          300
-        ],
-        [
-          180,
-          140
-        ]
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Hơn 10 vạn quân, chia làm hai đạo thuỷ – bộ",
+      "don_vi": [
+        "Đạo quân bộ gồm binh lính địa phương vùng biên giới, do các tướng lĩnh người dân tộc thiểu số Tông Đản, Lưu Kỷ, Hoàng Kim Mãn, Thân Cảnh Phúc, Vi Thủ An chỉ huy",
+        "Đạo quân chủ lực do Lý Thường Kiệt chỉ huy, tập trung ở Vĩnh An (Móng Cái) rồi dùng thuyền vượt biển"
       ],
-      "nhan": "Đường bộ Tông Đản tiến đánh Ung Châu"
+      "vu_khi": [
+        "Thuyền vượt biển đánh thẳng vào cảng Khâm Châu, Liêm Châu",
+        "Phép công thành chồng bao đất trèo lên tường thành Ung Châu"
+      ]
     },
+    "doi_thu": {
+      "don_vi": [
+        "Tô Giám — tri châu Ung Châu, cố thủ không hàng",
+        "Một vạn quân Tống được điều xuống ứng cứu Ung Châu"
+      ],
+      "vu_khi": [
+        "Hệ thống căn cứ quân sự và hậu cứ lớn tại ba châu Ung, Khâm, Liêm, dựng làm nơi xuất phát cho các đạo quân xâm lược"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+      "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Thành Ung Châu bị hạ sau 42 ngày vây hãm, quân địch bị tiêu diệt và bắt sống nhiều; tri châu Tô Giám cho gia thuộc 36 người chết trước rồi châm lửa tự đốt. Một vạn quân cứu viện bị mai phục tiêu diệt ở ải Côn Lôn. Các thành luỹ lớn nhỏ bị san bằng, kho tàng lương thực và vũ khí bị tiêu huỷ.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/quan-doi-dai-viet-voi-chien-dich-tan-cong-vao-dat-tong-de-phong-ve-trong-cuoc-khang-chien-chong-quan-xam-luoc-tong-1075-1077/"
+    ]
+  },
+  "dia_hinh": [
     {
       "kieu": "bien",
       "diem": [
-        [
-          500,
-          520
-        ],
-        [
-          750,
-          300
-        ],
-        [
-          850,
-          120
-        ]
+        [1000, 298],
+        [862, 340],
+        [840, 590],
+        [1000, 592]
       ],
-      "nhan": "Đường biển Lý Thường Kiệt"
+      "nhan": "Biển"
     },
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          480
-        ],
-        [
-          500,
-          540
-        ],
-        [
-          900,
-          470
-        ]
+        [178, 302],
+        [300, 272],
+        [420, 298],
+        [540, 270]
       ],
-      "nhan": "Dãy núi biên giới Việt – Trung"
+      "nhan": "Vùng núi biên giới"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [560, 152],
+        [702, 182],
+        [842, 160]
+      ],
+      "nhan": "Sông Tả Giang"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [200, 472],
+        [402, 482],
+        [620, 452],
+        [800, 402]
+      ],
+      "nhan": "Đường thuỷ vượt biển từ Vĩnh An"
     }
   ],
   "phan_tu": [
     {
-      "id": "xuat-phat-lang-son",
-      "kieu": "dia-danh",
-      "x": 480,
-      "y": 540,
-      "nhan": "Xuất phát từ biên giới Lạng Sơn"
+      "id": "thang-long",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 96,
+      "y": 196,
+      "nhan": "Thăng Long"
     },
     {
-      "id": "quan-ta-tong-dan",
+      "id": "bo-cao-phat-tong",
+      "kieu": "dia-danh",
+      "x": 322,
+      "y": 158,
+      "nhan": "Yết Phạt Tống lộ bố văn"
+    },
+    {
+      "id": "dao-quan-bo",
       "kieu": "quan",
       "ben": "ta",
-      "x": 420,
-      "y": 380,
-      "nhan": "Tông Đản — đường bộ"
+      "x": 244,
+      "y": 306,
+      "nhan": "Đạo quân bộ",
+      "quy_mo": "Tông Đản · Lưu Kỷ · Hoàng Kim Mãn · Thân Cảnh Phúc · Vi Thủ An"
     },
     {
-      "id": "quan-ta-ly-thuong-kiet",
-      "kieu": "thuyen",
-      "ben": "ta",
-      "x": 720,
-      "y": 380,
-      "nhan": "Lý Thường Kiệt — đường thủy"
+      "id": "don-trai-bien-gioi",
+      "kieu": "cong-su",
+      "x": 428,
+      "y": 336,
+      "nhan": "Đồn trại Tống ở biên giới"
     },
     {
-      "id": "thanh-ung-chau",
-      "kieu": "thanh",
-      "ben": "dich",
-      "x": 160,
-      "y": 100,
-      "nhan": "Thành Ung Châu (Tô Giám cố thủ)"
-    },
-    {
-      "id": "thanh-kham-lien",
-      "kieu": "thanh",
-      "ben": "dich",
-      "x": 830,
-      "y": 90,
-      "nhan": "Khâm Châu – Liêm Châu"
-    },
-    {
-      "id": "mui-cong-ung-chau",
+      "id": "mui-bo-tien",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        350,
-        360
-      ],
-      "den": [
-        190,
-        130
-      ],
-      "nhan": "Vây đánh Ung Châu"
+      "tu": [300, 288],
+      "den": [530, 234],
+      "nhan": "Tiến về Ung Châu"
     },
     {
-      "id": "mui-cong-kham-lien",
+      "id": "ly-thuong-kiet",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 178,
+      "y": 452,
+      "nhan": "Lý Thường Kiệt",
+      "quy_mo": "Đạo chủ lực, hơn 10 vạn quân"
+    },
+    {
+      "id": "vinh-an",
+      "kieu": "dia-danh",
+      "x": 208,
+      "y": 534,
+      "nhan": "Vĩnh An (Móng Cái)"
+    },
+    {
+      "id": "mui-vuot-bien",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        650,
-        360
-      ],
-      "den": [
-        810,
-        110
-      ],
-      "nhan": "Hạ Khâm Châu, Liêm Châu"
+      "tu": [300, 504],
+      "den": [736, 474],
+      "nhan": "Vượt biển đánh Khâm, Liêm"
     },
     {
-      "id": "thanh-ung-chau-sup-do",
+      "id": "kham-chau",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 160,
-      "y": 100,
-      "nhan": "Ung Châu thất thủ, Tô Giám tự thiêu"
+      "x": 782,
+      "y": 486,
+      "nhan": "Khâm Châu"
     },
     {
-      "id": "co-thang",
-      "kieu": "co",
+      "id": "liem-chau",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 916,
+      "y": 396,
+      "nhan": "Liêm Châu"
+    },
+    {
+      "id": "mui-hop-quan",
+      "kieu": "mui-ten",
       "ben": "ta",
-      "x": 500,
-      "y": 250,
-      "nhan": "Phá xong kho lương, chủ động rút quân"
+      "tu": [800, 424],
+      "den": [688, 174],
+      "nhan": "Hợp quân vây Ung Châu"
+    },
+    {
+      "id": "ung-chau",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 636,
+      "y": 116,
+      "nhan": "Thành Ung Châu",
+      "quy_mo": "Tô Giám cố thủ"
+    },
+    {
+      "id": "vay-ham",
+      "kieu": "cong-su",
+      "x": 548,
+      "y": 200,
+      "nhan": "Vây hãm 42 ngày",
+      "quy_mo": "Chồng bao đất trèo lên thành"
+    },
+    {
+      "id": "ai-con-lon",
+      "kieu": "dia-danh",
+      "x": 848,
+      "y": 76,
+      "nhan": "Ải Côn Lôn"
+    },
+    {
+      "id": "mai-phuc-con-lon",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 740,
+      "y": 58,
+      "nhan": "Mai phục ải Côn Lôn"
+    },
+    {
+      "id": "vien-binh-tong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 950,
+      "y": 128,
+      "nhan": "Viện binh Tống",
+      "quy_mo": "Một vạn quân"
+    },
+    {
+      "id": "mui-diet-vien",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [792, 76],
+      "den": [910, 116],
+      "nhan": "Diệt viện binh"
+    },
+    {
+      "id": "pha-kho-tang",
+      "kieu": "cong-su",
+      "x": 458,
+      "y": 84,
+      "nhan": "Đốt kho tàng, phá thành luỹ"
+    },
+    {
+      "id": "mui-rut-quan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [530, 126],
+      "den": [244, 218],
+      "nhan": "Chủ động rút quân về nước"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Chủ trương \"tiên phát chế nhân\"",
-      "mo_ta": "Trước nguy cơ nhà Tống ráo riết chuẩn bị xâm lược, Lý Thường Kiệt chủ trương chủ động đem quân đánh trước để phá thế chuẩn bị của địch.",
+      "tieu_de": "Nhà Tống dựng căn cứ ở Ung, Khâm, Liêm để chuẩn bị xâm lược",
+      "thoi_gian": "Từ năm 1072",
+      "dia_danh": "Ung Châu · Khâm Châu · Liêm Châu",
+      "mo_ta": "Năm 1072, Lý Thánh Tông từ trần, Lý Nhân Tông lên nối ngôi khi mới bảy tuổi. Chính quyền phương Bắc xem đây là cơ hội tốt để ráo riết chuẩn bị xâm lược nước ta. Tại ba châu Ung, Khâm, Liêm — nay thuộc Quảng Đông, Quảng Tây — chúng xây dựng những căn cứ quân sự và hậu cứ to lớn làm nơi xuất phát trực tiếp cho các đạo quân xâm lược, đồng thời thường xuyên xâm nhập biên giới quấy nhiễu và do thám.",
       "hien": [
-        "xuat-phat-lang-son"
+        "ung-chau",
+        "kham-chau",
+        "liem-chau",
+        "don-trai-bien-gioi"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Tông Đản vây đánh Ung Châu",
-      "mo_ta": "Cánh quân bộ do Tông Đản chỉ huy vượt biên giới, tiến đánh châu Ung; tri châu Tô Giám cố thủ trong thành.",
+      "tieu_de": "«Ngồi yên đợi giặc không bằng đem quân ra trước»",
+      "thoi_gian": "Năm 1075",
+      "dia_danh": "Thăng Long",
+      "mo_ta": "Đứng trước âm mưu và hành động công khai của địch, Lý Thường Kiệt chủ trương tiến công để tự vệ: xuất quân tập kích tiêu diệt các căn cứ xâm lược trên đất Tống rồi nhanh chóng rút quân về tổ chức phòng thủ đất nước. Triều đình tán thành. Trước đó nhà Lý đã đập tan sự uy hiếp từ phía nam bằng cách chủ động tấn công Chăm-pa, và liên kết các tù trưởng tộc người thiểu số vùng rừng núi phía bắc cùng phối hợp chống giặc.",
       "hien": [
-        "xuat-phat-lang-son",
-        "quan-ta-tong-dan",
-        "mui-cong-ung-chau",
-        "thanh-ung-chau"
+        "thang-long",
+        "ly-thuong-kiet",
+        "dao-quan-bo"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Lý Thường Kiệt hạ Khâm Châu, Liêm Châu",
-      "mo_ta": "Cánh thủy quân do Lý Thường Kiệt chỉ huy nhanh chóng đánh chiếm hai châu ven biển, phá kho lương, cắt hậu cần chuẩn bị xâm lược của địch.",
+      "tieu_de": "Phạt Tống lộ bố văn — nêu rõ vì sao đem quân sang",
+      "thoi_gian": "Năm 1075",
+      "dia_danh": "Dọc đường tiến quân trên đất Tống",
+      "mo_ta": "Với danh nghĩa chỉ đánh Tống để giữ nước, đưa quân tới là để cứu dân, Lý Thường Kiệt viết bài hịch Phạt Tống lộ bố văn — bài văn công bố đánh giặc Tống — rồi cho yết bảng ở khắp nơi quân đội ta đi qua. Bài hịch nhắm thẳng vào các phép «thanh miêu», «trợ dịch» của Vương An Thạch đang làm trăm họ mệt nhọc lầm than. Hiệu quả rất lớn: quân đội của ông tiến đến đâu cũng được nhân dân Trung Hoa ở đó hoan nghênh, hưởng ứng.",
       "hien": [
-        "xuat-phat-lang-son",
-        "quan-ta-ly-thuong-kiet",
-        "mui-cong-kham-lien",
-        "thanh-kham-lien"
+        "bo-cao-phat-tong",
+        "dao-quan-bo",
+        "ly-thuong-kiet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Hạ thành Ung Châu sau 42 ngày vây hãm",
-      "mo_ta": "Quân ta công phá thành sau 42 ngày vây hãm; Tô Giám cùng đường phải tự thiêu.",
+      "tieu_de": "Hai đạo quân vượt biên giới — hai nguồn chép hai mốc ngày",
+      "thoi_gian": "Tháng 10-1075",
+      "dia_danh": "Biên giới Lạng Sơn · Vĩnh An",
+      "mo_ta": "Hơn 10 vạn quân Đại Việt chia làm hai đạo bất ngờ vượt biên giới đánh vào đất Tống. Hai bài của Bảo tàng Lịch sử Quốc gia chép hai mốc ngày khác nhau cho cùng sự kiện này — một bài ghi ngày 17-10-1075, bài kia ghi quân Việt bắt đầu tiến công từ ngày 27 tháng 10 năm 1075 — sa đồ nêu cả hai. Đạo quân bộ gồm binh lính địa phương vùng biên do các tướng lĩnh người dân tộc thiểu số chỉ huy, tiến công các đồn trại quân Tống ở biên giới rồi tiến về Ung Châu.",
       "hien": [
-        "thanh-ung-chau-sup-do",
-        "mui-cong-ung-chau"
+        "dao-quan-bo",
+        "don-trai-bien-gioi",
+        "mui-bo-tien",
+        "vinh-an",
+        "ly-thuong-kiet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Chủ động rút quân về nước",
-      "mo_ta": "Đầu năm 1076, sau khi đạt mục tiêu làm chậm và suy yếu bước tiến của Tống, quân ta rút về nước, chuẩn bị phòng tuyến sông Như Nguyệt.",
+      "tieu_de": "Vượt biển hạ Khâm Châu, Liêm Châu",
+      "thoi_gian": "Cuối năm 1075",
+      "dia_danh": "Khâm Châu · Liêm Châu",
+      "mo_ta": "Đạo quân chủ lực do Lý Thường Kiệt chỉ huy tập trung ở Vĩnh An, dùng thuyền vượt biển đánh chiếm Khâm Châu và Liêm Châu. Quân Việt phá huỷ một loạt đồn trại biên giới, rồi lần lượt đổ bộ lên cảng và đánh chiếm hai thành này, sau đó tiến sâu vào đất địch để hợp quân với đạo đi đường bộ, cùng vây đánh thành Ung Châu — căn cứ quan trọng nhất trong những căn cứ địch dùng cho cuộc viễn chinh vào Đại Việt.",
       "hien": [
-        "co-thang"
+        "mui-vuot-bien",
+        "kham-chau",
+        "liem-chau",
+        "mui-hop-quan",
+        "ly-thuong-kiet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Diệt viện binh Tống ở ải Côn Lôn",
+      "thoi_gian": "Đầu năm 1076",
+      "dia_danh": "Ải Côn Lôn, phía bắc Ung Châu",
+      "mo_ta": "Đến lúc này triều Tống mới được tin báo, vội cho một vạn quân xuống ứng cứu Ung Châu. Nhưng đến ải Côn Lôn ở phía bắc thành, đạo viện binh ấy đã bị quân Đại Việt do Lý Thường Kiệt mai phục sẵn tiêu diệt. Thành Ung Châu mất chỗ trông cậy duy nhất, còn vòng vây bên ngoài thì không bị đe doạ từ phía sau nữa — điều kiện để quân ta rảnh tay công thành.",
+      "hien": [
+        "ai-con-lon",
+        "mai-phuc-con-lon",
+        "vien-binh-tong",
+        "mui-diet-vien",
+        "ung-chau"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "42 ngày vây hãm — hạ thành Ung Châu",
+      "thoi_gian": "18-1-1076 – 1-3-1076",
+      "dia_danh": "Thành Ung Châu",
+      "mo_ta": "Ngày 18 tháng 1 năm 1076 quân ta áp sát thành Ung. Tri Ung châu là Tô Giám cố thủ không hàng. Quân ta đánh hơn 40 ngày, chồng bao đất trèo lên thành; sau 42 ngày vây hãm và tấn công quyết liệt, ngày 1-3-1076 thành bị hạ, quân địch bị tiêu diệt và bắt sống nhiều. Tô Giám cho gia thuộc 36 người chết trước, chôn xác vào hố, rồi châm lửa tự đốt chết; người trong thành cảm ân nghĩa của ông ta, không một người nào chịu hàng.",
+      "hien": [
+        "ung-chau",
+        "vay-ham",
+        "mui-hop-quan",
+        "ly-thuong-kiet"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+        "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/quan-doi-dai-viet-voi-chien-dich-tan-cong-vao-dat-tong-de-phong-ve-trong-cuoc-khang-chien-chong-quan-xam-luoc-tong-1075-1077/"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Phá kho tàng rồi chủ động rút quân",
+      "thoi_gian": "Tháng 3 – tháng 4 năm 1076",
+      "dia_danh": "Ung Châu · biên giới Đại Việt",
+      "mo_ta": "Theo chủ trương đã định, quân ta san bằng các thành luỹ lớn nhỏ, tiêu huỷ kho tàng lương thực và vũ khí, lấy đá lấp sông để ngăn đường thuỷ của địch, làm tổn thất nghiêm trọng cơ sở vật chất và phương tiện chiến tranh mà nhà Tống đã dồn nhiều năm chuẩn bị. Đạt xong mục tiêu, tháng 4 năm 1076 Lý Thường Kiệt rút nhanh quân về nước — vừa bảo toàn lực lượng, vừa phá kế hiểm của giặc định lẻn sang đánh úp Đại Việt lúc đại quân còn ở bên đất chúng.",
+      "hien": [
+        "pha-kho-tang",
+        "mui-rut-quan",
+        "ung-chau",
+        "thang-long"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+        "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
       ]
     }
   ],
@@ -207,25 +381,46 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lý",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Quân đội Đại Việt với chiến dịch tấn công vào đất Tống 1075–1077"
+    "Trung tâm Lưu trữ Quốc gia IV (mocban.vn) — Quân đội Đại Việt với chiến dịch tấn công vào đất Tống 1075–1077",
+    "Bảo tàng Lịch sử Quốc gia — Lý Thường Kiệt, nỗi kinh hoàng của quân Tống — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+    "Bảo tàng Lịch sử Quốc gia — Kỷ niệm 937 năm cuộc kháng chiến chống quân Tống lần thứ hai thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html"
   ],
   "trich_van_tich": [
     {
+      "sach": "Chủ trương của Lý Thường Kiệt — dẫn trong bài của Bảo tàng Lịch sử Quốc gia",
+      "doan": "Ngồi yên đợi giặc không bằng đem quân ra trước, chặn thế mạnh của giặc",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Cùng chủ trương ấy, bản dẫn khác của Bảo tàng Lịch sử Quốc gia",
+      "doan": "Ngồi yên đợi giặc không bằng đem quân ra trước để chặn mũi nhọn của chúng",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3097/16199/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html",
+      "buoc": 2
+    },
+    {
       "sach": "Phạt Tống lộ bố văn — hịch của Lý Thường Kiệt (bản dịch Trần Văn Giáp, in trong Thơ văn Lý Trần, tập 1)",
       "doan": "Trời sinh ra dân chúng, vua hiền ắt hòa mục. Đạo làm chủ dân, cốt ở nuôi dân. Nay nghe vua Tống ngu hèn, chẳng tuân theo khuôn phép thánh nhân, lại tin kế tham tà của Vương An Thạch, bày những phép \"thanh miêu\", \"trợ dịch\", khiến trăm họ mệt nhọc lầm than mà riêng thỏa cái mưu nuôi mình béo mập.",
-      "nguon_trich": "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/quan-doi-dai-viet-voi-chien-dich-tan-cong-vao-dat-tong-de-phong-ve-trong-cuoc-khang-chien-chong-quan-xam-luoc-tong-1075-1077/"
+      "nguon_trich": "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/quan-doi-dai-viet-voi-chien-dich-tan-cong-vao-dat-tong-de-phong-ve-trong-cuoc-khang-chien-chong-quan-xam-luoc-tong-1075-1077/",
+      "buoc": 3
     },
     {
       "sach": "Đại Việt sử ký toàn thư",
       "doan": "Lý Thường Kiệt, Tông Đản đem hơn 10 vạn binh đi đánh. Quân thủy, quân bộ đều tiến. Thường Kiệt đánh các châu Khâm, Liêm; Đản vây châu Ung.",
       "nguon_trich": "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/quan-doi-dai-viet-voi-chien-dich-tan-cong-vao-dat-tong-de-phong-ve-trong-cuoc-khang-chien-chong-quan-xam-luoc-tong-1075-1077/",
-      "buoc": 2
+      "buoc": 4
     },
     {
       "sach": "Đại Việt sử ký toàn thư",
       "doan": "Tri Ung châu là Tô Giám cố thủ không hàng. Quân ta đánh đến hơn 40 ngày, chồng bao đất trèo lên thành. Thành bèn bị hạ. Giám cho gia thuộc 36 người chết trước, chôn xác vào hố, rồi châm lửa tự đốt chết. Người trong thành cảm ân nghĩa của Giám, không một người nào chịu hàng.",
       "nguon_trich": "Mộc bản triều Nguyễn — Trung tâm Lưu trữ Quốc gia IV — https://mocban.vn/quan-doi-dai-viet-voi-chien-dich-tan-cong-vao-dat-tong-de-phong-ve-trong-cuoc-khang-chien-chong-quan-xam-luoc-tong-1075-1077/",
-      "buoc": 4
+      "buoc": 7
+    },
+    {
+      "sach": "Việt sử tiêu án — Ngô Thì Sĩ",
+      "doan": "bày trận đường đường, kéo cờ chính chính, mười vạn thẳng sâu vào đất khách, phá quân ba châu như chẻ trúc, lúc tới còn không ai dám địch, lúc rút quân còn không ai dám đuổi, dụng binh như thế, chẳng phải nước ta chưa từng có bao giờ",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/8270/ly-thuong-kiet-noi-kinh-hoang-cua-quan-tong.html",
+      "buoc": 8
     }
   ]
 }

@@ -3,6 +3,7 @@
   "id": "tot-dong-chuc-dong-1426",
   "ten": "Tốt Động – Chúc Động 1426",
   "nam": 1426,
+  "thoi_gian": "Đầu tháng 11-1426 – ngày 7-11-1426",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Lê Lợi, Nguyễn Trãi",
   "doi_thu": "Nhà Minh (Vương Thông)",
@@ -11,169 +12,385 @@
     "ha-noi"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Hơn 9.000 quân do 8 danh tướng chỉ huy, chia thành ba đạo tiến ra Bắc",
+      "don_vi": [
+        "Đạo 3.000 quân do Phạm Văn Xảo, Lý Triện, Đỗ Bí, Trịnh Khả chỉ huy",
+        "Đạo 4.000 quân do Lưu Nhân Chú và Bùi Bị dẫn đầu",
+        "Đạo 2.000 quân tinh nhuệ và voi chiến do Đinh Lễ và Nguyễn Xí chỉ huy"
+      ],
+      "vu_khi": [
+        "Voi chiến đi cùng đạo quân tinh nhuệ",
+        "Pháo hiệu bắn từ Đồng Gàn, trống và kèn phát lệnh thúc quân từ gò Trống, gò Kèn"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "10 vạn quân do Tổng binh Vương Thông trực tiếp chỉ huy",
+          "nguon": "Báo Hànộimới — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
+        },
+        {
+          "so": "Khâm định Việt sử thông giám cương mục tách làm hai mốc: Vương Thông đem 5 vạn quân sang cứu viện Đông Quan, rồi khi tới nơi điều động tất cả mười vạn quân chia làm ba đường",
+          "nguon": "Khâm định Việt sử thông giám cương mục, quyển 13, mặt khắc 27 — dẫn trong Mộc bản triều Nguyễn: https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+        }
+      ],
+      "don_vi": [
+        "Thái tử Thái bảo Thành Sơn hầu Vương Thông trực tiếp làm Tổng binh"
+      ]
+    },
+    "nguon": [
+      "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html",
+      "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Hơn sáu vạn quân Minh bị tiêu diệt và bắt sống ở Ninh Kiều và Tốt Động trong hai ngày 6 và 7-11-1426; cùng bài viết còn ghi con số 6,2 vạn cho trận này. Sau trận, dân làng thu dọn hài cốt giặc chết trận đem chôn ở gò cao — nay còn các địa danh bãi Mả Dù, bãi Ma Hè và đồng Mồ.",
+    "nguon": [
+      "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
+    ]
+  },
   "dia_hinh": [
     {
-      "kieu": "duong",
+      "kieu": "song",
       "diem": [
-        [
-          750,
-          150
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          300,
-          380
-        ]
+        [200, 150],
+        [400, 176],
+        [620, 158],
+        [820, 186]
       ],
-      "nhan": "Đường tiến quân Vương Thông"
+      "nhan": "Suối Ninh Kiều"
     },
     {
       "kieu": "song",
       "diem": [
-        [
-          100,
-          450
-        ],
-        [
-          450,
-          470
-        ],
-        [
-          800,
-          440
-        ]
+        [178, 202],
+        [212, 350],
+        [252, 522]
       ],
-      "nhan": "Vùng lầy Tốt Động – Chúc Động (ven sông Đáy)"
+      "nhan": "Sông Bùi"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [330, 302],
+        [422, 276],
+        [512, 302]
+      ],
+      "nhan": "Gò Trống, gò Kèn"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [556, 424],
+        [758, 400],
+        [842, 470],
+        [658, 520],
+        [536, 492]
+      ],
+      "nhan": "Cánh đồng lầy thụt"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [906, 88],
+        [742, 130],
+        [600, 190],
+        [480, 250]
+      ],
+      "nhan": "Đường tiến quân từ Đông Quan"
     }
   ],
   "phan_tu": [
     {
-      "id": "thanh-dong-quan",
+      "id": "dong-quan",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 850,
-      "y": 120,
+      "x": 942,
+      "y": 66,
       "nhan": "Thành Đông Quan"
     },
     {
-      "id": "quan-dich-vuong-thong",
+      "id": "vuong-thong",
       "kieu": "quan",
       "ben": "dich",
-      "x": 650,
-      "y": 220,
-      "nhan": "Viện binh Vương Thông"
+      "x": 806,
+      "y": 138,
+      "nhan": "Vương Thông",
+      "quy_mo": "Tổng binh, 10 vạn quân"
     },
     {
-      "id": "quan-ta-mai-phuc",
+      "id": "mui-tien-cong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [764, 168],
+      "den": [604, 240],
+      "nhan": "Tiến vào Chương Mỹ"
+    },
+    {
+      "id": "ninh-kieu",
+      "kieu": "dia-danh",
+      "x": 616,
+      "y": 122,
+      "nhan": "Ninh Kiều"
+    },
+    {
+      "id": "chuc-dong",
+      "kieu": "dia-danh",
+      "x": 784,
+      "y": 298,
+      "nhan": "Chúc Động"
+    },
+    {
+      "id": "tot-dong",
+      "kieu": "dia-danh",
+      "x": 566,
+      "y": 300,
+      "nhan": "Tốt Động (làng Rét)"
+    },
+    {
+      "id": "ban-doanh-gia",
+      "kieu": "cong-su",
+      "x": 466,
+      "y": 358,
+      "nhan": "Bản doanh giả ở gò Đồng Giả"
+    },
+    {
+      "id": "dong-gan",
+      "kieu": "dia-danh",
+      "x": 386,
+      "y": 406,
+      "nhan": "Đồng Gàn — bắn pháo hiệu"
+    },
+    {
+      "id": "dao-1",
       "kieu": "quan",
       "ben": "ta",
-      "x": 230,
-      "y": 420,
-      "nhan": "Nguyễn Trãi, Lý Triện, Đinh Lễ mai phục"
+      "x": 146,
+      "y": 300,
+      "nhan": "Phạm Văn Xảo · Lý Triện · Đỗ Bí · Trịnh Khả",
+      "quy_mo": "3.000 quân"
+    },
+    {
+      "id": "dao-2",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 136,
+      "y": 434,
+      "nhan": "Lưu Nhân Chú · Bùi Bị",
+      "quy_mo": "4.000 quân"
+    },
+    {
+      "id": "dao-3",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 296,
+      "y": 552,
+      "nhan": "Đinh Lễ · Nguyễn Xí",
+      "quy_mo": "2.000 quân tinh nhuệ và voi chiến"
     },
     {
       "id": "mui-nhu-dich",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        350,
-        400
-      ],
-      "den": [
-        600,
-        260
-      ],
-      "nhan": "Nhử địch vào vùng lầy"
+      "tu": [556, 274],
+      "den": [478, 342],
+      "nhan": "Nhử địch vào tử địa"
     },
     {
-      "id": "vung-lay",
-      "kieu": "dia-danh",
-      "x": 480,
-      "y": 500,
-      "nhan": "Tốt Động – Chúc Động"
-    },
-    {
-      "id": "mui-phuc-kich",
+      "id": "mui-phuc-1",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        300,
-        440
-      ],
-      "den": [
-        500,
-        320
-      ],
-      "nhan": "Phục binh đổ ra đánh úp"
+      "tu": [244, 336],
+      "den": [428, 330],
+      "nhan": "Phục binh đổ ra"
     },
     {
-      "id": "quan-dich-tan-vo",
+      "id": "mui-phuc-2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [336, 512],
+      "den": [502, 424],
+      "nhan": "Đánh tạt sườn"
+    },
+    {
+      "id": "dong-vo",
+      "kieu": "dia-danh",
+      "x": 662,
+      "y": 356,
+      "nhan": "Đồng Vỡ"
+    },
+    {
+      "id": "mui-truy-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [618, 302],
+      "den": [772, 252],
+      "nhan": "Truy kích về Ninh Kiều"
+    },
+    {
+      "id": "ma-du-ma-he",
+      "kieu": "cong-su",
+      "x": 706,
+      "y": 452,
+      "nhan": "Bãi Mả Dù · bãi Ma Hè"
+    },
+    {
+      "id": "dong-gao",
+      "kieu": "dia-danh",
+      "x": 512,
+      "y": 496,
+      "nhan": "Đồng Gạo — cất lương thảo thu được"
+    },
+    {
+      "id": "vay-dong-quan",
       "kieu": "quan",
-      "ben": "dich",
-      "x": 550,
-      "y": 340,
-      "nhan": "Quân Minh rối loạn, Trần Hiệp tử trận"
+      "ben": "ta",
+      "x": 890,
+      "y": 246,
+      "nhan": "Áp sát vây hãm Đông Quan"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 400,
-      "y": 250,
-      "nhan": "Đại phá quân Minh"
+      "x": 196,
+      "y": 196,
+      "nhan": "Đại thắng 7-11-1426"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Vương Thông đem viện binh cứu Đông Quan",
-      "mo_ta": "Cuối 1426, nhà Minh sai Vương Thông đưa viện binh hợp cùng quân đồn trú, tổ chức phản công hòng giải vây và đẩy lùi nghĩa quân Lam Sơn.",
+      "tieu_de": "Ba đạo quân Lam Sơn tiến ra Bắc",
+      "thoi_gian": "Đầu tháng 11-1426",
+      "dia_danh": "Thanh Hoá – Chương Mỹ",
+      "mo_ta": "Đại Việt sử ký toàn thư chép rằng đầu tháng 11-1426, hơn 9.000 quân Lam Sơn do 8 danh tướng chỉ huy, chia thành ba đạo tiến ra Bắc. Một đạo do các tướng Phạm Văn Xảo, Lý Triện, Đỗ Bí, Trịnh Khả chỉ huy gồm ba nghìn quân; một đạo gồm 4.000 người do hai tướng Lưu Nhân Chú và Bùi Bị dẫn đầu; đạo thứ ba với 2.000 quân tinh nhuệ và voi chiến do hai tướng Đinh Lễ và Nguyễn Xí chỉ huy.",
       "hien": [
-        "thanh-dong-quan",
-        "quan-dich-vuong-thong"
+        "dao-1",
+        "dao-2",
+        "dao-3"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nguyễn Trãi cùng các tướng bày trận mai phục",
-      "mo_ta": "Lợi dụng địa hình đầm lầy Tốt Động, Chúc Động, các tướng Lý Triện, Đinh Lễ, Nguyễn Xí bố trí quân mai phục đón đường tiến quân Minh.",
+      "tieu_de": "Vương Thông mở chiến dịch lớn với 10 vạn quân",
+      "thoi_gian": "Tháng 11-1426",
+      "dia_danh": "Thành Đông Quan · Chương Mỹ",
+      "mo_ta": "Tướng Minh là Thái tử Thái bảo Thành Sơn hầu Vương Thông trực tiếp làm Tổng binh, mở chiến dịch lớn với 10 vạn quân, thực hiện kế hoạch khép gọng kìm theo phép «dĩ chính hợp, dĩ kỳ thắng» — chính binh đánh vỗ mặt đối phương, kỳ binh từ phía sau bất ngờ đánh úp — nhằm dọn sạch quân Lam Sơn ở Chương Mỹ rồi thẳng tiến vào Thanh Hoá, hòng bóp chết toàn bộ nghĩa quân. Khâm định Việt sử thông giám cương mục tách con số ấy làm hai mốc: mùa đông năm 1426 vua Minh sai Vương Thông đem 5 vạn quân sang cứu viện Đông Quan, và khi mới tới nơi thì ông ta điều động tất cả mười vạn quân, chia làm ba đường đồng thời xuất phát.",
       "hien": [
-        "quan-ta-mai-phuc",
-        "vung-lay"
+        "dong-quan",
+        "vuong-thong",
+        "mui-tien-cong"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html",
+        "Mộc bản triều Nguyễn — Lê Lợi, anh hùng khởi nghĩa Lam Sơn (kỳ 1) — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Nhử địch vào vùng lầy",
-      "mo_ta": "Nghĩa quân nhử quân Vương Thông hành quân qua khu vực lầy lội, khó triển khai đội hình.",
+      "tieu_de": "Chọn Tốt Động làm trận địa — đồng lầy và gò nổi",
+      "thoi_gian": "Trước ngày 5-11-1426",
+      "dia_danh": "Tốt Động (làng Tụy Động, tên Nôm làng Rét), Chương Mỹ",
+      "mo_ta": "Theo phương châm lấy ít địch nhiều, mai phục nhử chúng đến rồi tập trung đánh dập đầu tiền quân của chính binh địch, trận mai phục của nghĩa quân đặt chủ yếu ở Tốt Động — vùng rốn chảo của Chương Mỹ, một nơi chiêm khê mùa thối có nhiều đồi gò nổi. Trung tâm trận địa là Đồng Giả, phía bắc là suối Ninh Kiều, phía tây giáp sông Bùi, phía đông và nam là cánh đồng lầy thụt. Địa hình ấy vô hiệu hoá ưu thế quân đông của đối phương.",
       "hien": [
-        "quan-ta-mai-phuc",
-        "vung-lay",
-        "mui-nhu-dich",
-        "quan-dich-vuong-thong"
+        "tot-dong",
+        "ninh-kieu",
+        "dao-1",
+        "dao-2",
+        "dao-3"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Phục binh đổ ra đánh úp",
-      "mo_ta": "Quân mai phục bất ngờ đánh ập từ nhiều phía; quân Minh rối loạn trong vùng đầm lầy không kịp trở tay.",
+      "tieu_de": "Bản doanh giả ở gò Đồng Giả",
+      "thoi_gian": "Trước ngày 6-11-1426",
+      "dia_danh": "Gò Đồng Giả",
+      "mo_ta": "Nghĩa quân dựng một bản doanh giả trên gò Đồng Giả để nhử địch vào tử địa. Cùng với đó, Đồng Gàn được chọn làm nơi bắn pháo hiệu của Bộ chỉ huy, còn gò Trống và gò Kèn là nơi phát lệnh thúc quân. Tên đồng, tên đất trong vùng đến nay vẫn giữ dấu vết của thế trận ấy — bản doanh giả, hiệu lệnh và hướng đánh đều được đặt sẵn trước khi quân Minh kịp bước vào.",
       "hien": [
-        "vung-lay",
-        "mui-phuc-kich",
-        "quan-dich-tan-vo"
+        "ban-doanh-gia",
+        "dong-gan",
+        "tot-dong",
+        "mui-nhu-dich"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đại phá quân Minh, Vương Thông tháo chạy",
-      "mo_ta": "Thượng thư Trần Hiệp, tướng Lý Lượng tử trận, quân Minh thiệt hại nặng; Vương Thông bị thương phải rút chạy về cố thủ trong thành Đông Quan.",
+      "tieu_de": "Ngày 6-11: đại quân Vương Thông sa vào trận địa",
+      "thoi_gian": "Ngày 6-11-1426",
+      "dia_danh": "Tốt Động · Chúc Động",
+      "mo_ta": "Ngày 6-11-1426, đạo quân của Vương Thông sa vào trận địa của quân Lam Sơn. Từ sân đình Tốt Động nhìn ra cánh đồng mênh mông phía trước chính là nơi nghĩa quân quần quân Minh suốt ba ngày đêm, từ ngày 5 đến ngày 7-11-1426. Đội hình đông đảo của địch bị kéo giãn trên vùng lầy thụt, không triển khai nổi thế gọng kìm mà Vương Thông đã tính.",
       "hien": [
-        "quan-dich-tan-vo",
-        "co-thang",
-        "thanh-dong-quan"
+        "vuong-thong",
+        "mui-tien-cong",
+        "tot-dong",
+        "chuc-dong",
+        "ban-doanh-gia"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Pháo hiệu nổ — phục binh đổ ra bốn phía",
+      "thoi_gian": "Ngày 6 – 7-11-1426",
+      "dia_danh": "Đồng Gàn · gò Trống · gò Kèn · Đồng Vỡ",
+      "mo_ta": "Pháo hiệu bắn lên từ Đồng Gàn, trống và kèn từ hai gò phát lệnh thúc quân, phục binh đổ ra đánh từ nhiều hướng vào đội hình địch đã sa lầy. Tên đất còn ghi lại kết cục: đồng Vỡ là nơi quân giặc vỡ trận như ong vỡ tổ, đồng Gạo là nơi nhân dân cất giữ lương thảo thu được của giặc. Nghĩa quân vừa đánh chính diện vừa tạt sườn, không cho địch co cụm lại thành khối.",
+      "hien": [
+        "dong-gan",
+        "mui-phuc-1",
+        "mui-phuc-2",
+        "dong-vo",
+        "dong-gao",
+        "dao-3"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Ngày 7-11: hơn sáu vạn giặc bị diệt và bắt sống",
+      "thoi_gian": "Ngày 7-11-1426",
+      "dia_danh": "Ninh Kiều · Tốt Động",
+      "mo_ta": "Đến ngày 7-11-1426, hơn sáu vạn quân giặc bị tiêu diệt và bị bắt sống ở Ninh Kiều và Tốt Động. Dấu vết còn lại trên đất Chương Mỹ: bãi Mả Dù là mồ chôn thây giặc chết trận Ninh Kiều, bãi Ma Hè là mồ chôn giặc chết trận Tốt Động. Theo sách chỉ của nhà vua, sau trận chiến nhân dân đã thu dọn hài cốt giặc Minh chết trận đem chôn ở gò cao và xây tường bao chung ở đồng Mồ; hằng năm ngày 24 tháng Chạp dân làng vẫn tổ chức lễ tế nghĩa chủng cho các vong hồn.",
+      "hien": [
+        "ninh-kieu",
+        "tot-dong",
+        "ma-du-ma-he",
+        "mui-truy-kich",
+        "co-thang"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Thừa thắng áp sát, vây hãm thành Đông Quan",
+      "thoi_gian": "Từ ngày 22-11-1426",
+      "dia_danh": "Thành Đông Quan · Tây Phù Liệt",
+      "mo_ta": "Sau chiến thắng Tốt Động – Chúc Động tháng 11-1426, các tướng Lý Triện, Đinh Lễ thừa thắng kéo luôn một bộ phận nghĩa quân áp sát và vây hãm thành Đông Quan. Ngày 22-11, đại bản doanh của nghĩa quân Lam Sơn chuyển từ Thanh Hoá ra đóng tại toà thành đất ở Tây Phù Liệt, cách thành Đông Quan độ 10 km về phía nam. Từ thế phòng ngự, cuộc khởi nghĩa chuyển hẳn sang phản công chiến lược.",
+      "hien": [
+        "vay-dong-quan",
+        "dong-quan",
+        "co-thang"
+      ],
+      "nguon": [
+        "Báo Hànộimới — Người Thăng Long trong chiến dịch giải phóng thành Đông Quan — https://hanoimoi.vn/nguoi-thang-long-trong-chien-dich-giai-phong-thanh-dong-quan-160872.html"
       ]
     }
   ],
@@ -184,14 +401,34 @@
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Lê",
     "Lam Sơn thực lục",
     "Bình Ngô đại cáo (nguyên tác)",
-    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
+    "Báo Hànộimới — Đừng quên Tốt Động — https://hanoimoi.vn/dung-quen-tot-dong-250665.html",
+    "Báo Hànộimới — Người Thăng Long trong chiến dịch giải phóng thành Đông Quan — https://hanoimoi.vn/nguoi-thang-long-trong-chien-dich-giai-phong-thanh-dong-quan-160872.html"
   ],
   "trich_van_tich": [
+    {
+      "sach": "Kế hoạch tác chiến của Vương Thông — dẫn trong bài của Báo Hànộimới",
+      "doan": "dĩ chính hợp, dĩ kỳ thắng",
+      "nguon_trich": "Báo Hànộimới — https://hanoimoi.vn/dung-quen-tot-dong-250665.html",
+      "buoc": 2
+    },
+    {
+      "sach": "Khâm định Việt sử thông giám cương mục, quyển 13, mặt khắc 27 — bản mộc bản triều Nguyễn",
+      "doan": "Thông mới đến, tinh thần rất hăng, điều động tất cả mười vạn quân, cùng bọn Hiệp chia làm ba đường, đồng thời xuất phát",
+      "nguon_trich": "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn — https://mocban.vn/le-loi-anh-hung-khoi-nghia-lam-son-ky-1/",
+      "buoc": 2
+    },
+    {
+      "sach": "Bình Ngô đại cáo — Nguyễn Trãi",
+      "doan": "Ninh Kiều máu chảy thành sông, hôi tanh muôn dặm/Tốt Động thây phơi đầy nội, nhơ để nghìn thu…",
+      "nguon_trich": "Báo Hànộimới — https://hanoimoi.vn/dung-quen-tot-dong-250665.html",
+      "buoc": 7
+    },
     {
       "sach": "Bình Ngô đại cáo — Nguyễn Trãi",
       "doan": "Ninh Kiều máu chảy thành sông tanh trôi vạn dặm / Tốt Động thây chất đầy nội nhơ để ngàn năm",
       "nguon_trich": "Báo Thanh Hóa (vhds.baothanhhoa.vn) — https://vhds.baothanhhoa.vn/den-tot-dong-hieu-them-ve-ke-nghi-binh-cua-nghia-quan-lam-son-25105.htm",
-      "buoc": 5
+      "buoc": 7
     }
   ]
 }

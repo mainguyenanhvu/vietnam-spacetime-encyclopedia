@@ -1,11 +1,13 @@
 {
-  "ghi_chu": "Sa đồ 60 ngày đêm khói lửa Hà Nội 1946-1947 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ 60 ngày đêm khói lửa Hà Nội 1946-1947 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Mốc rút quân được hai chuyên đề của Báo Nhân Dân chép hơi khác nhau: «18 giờ 30 phút ngày 17/2/1947» và «đêm 17, rạng sáng 18/2/1947». GIỮ CẢ HAI theo bất biến #4, ĐỪNG SỬA thành một — nhiều khả năng là mốc bắt đầu rút và mốc vượt sông xong, nhưng hai bài không nói rõ nên không suy diễn hộ.",
   "id": "60-ngay-dem-ha-noi-1946-1947",
   "ten": "60 ngày đêm khói lửa Hà Nội",
   "nam": 1946,
+  "thoi_gian": "19/12/1946 – 17/2/1947",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Vương Thừa Vũ, Trần Độ",
-  "doi_thu": "Pháp",
+  "doi_thu": "Quân đội Pháp ở Hà Nội",
   "dia_diem": "Liên khu 1 nội thành Hà Nội (nay Hoàn Kiếm)",
   "lien_quan_tinh": [
     "ha-noi"
@@ -15,145 +17,511 @@
     {
       "kieu": "song",
       "diem": [
-        [
-          700,
-          50
-        ],
-        [
-          750,
-          300
-        ],
-        [
-          800,
-          550
-        ]
+        [880, 40],
+        [770, 120],
+        [660, 200],
+        [600, 320],
+        [640, 450],
+        [720, 570]
       ],
-      "nhan": "Sông Hồng — cầu Long Biên"
+      "nhan": "Sông Hồng"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [960, 130],
+        [880, 160],
+        [800, 175]
+      ],
+      "nhan": "Sông Đuống"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [870, 210],
+        [930, 250],
+        [990, 300]
+      ],
+      "nhan": "Đường số 5 đi Hải Phòng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [120, 300],
+        [200, 420],
+        [330, 500],
+        [500, 540],
+        [640, 510]
+      ],
+      "nhan": "Vành đai vòng cung các cửa ô"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [110, 350],
+        [50, 420],
+        [20, 500]
+      ],
+      "nhan": "Đường đi Hà Đông, Sơn Tây"
     }
   ],
   "phan_tu": [
     {
-      "id": "phao-dai-lang",
-      "kieu": "cong-su",
+      "id": "nhat-tan",
+      "kieu": "dia-danh",
+      "x": 390,
+      "y": 55,
+      "nhan": "Nhật Tân"
+    },
+    {
+      "id": "xuan-tao",
+      "kieu": "quan",
       "ben": "ta",
       "x": 200,
-      "y": 450,
-      "nhan": "Pháo đài Láng nổ súng"
+      "y": 60,
+      "nhan": "Pháo đài Xuân Tảo"
+    },
+    {
+      "id": "xuan-canh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 790,
+      "y": 90,
+      "nhan": "Pháo đài Xuân Canh"
+    },
+    {
+      "id": "truong-buoi",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 240,
+      "y": 122,
+      "nhan": "Trường Bưởi"
+    },
+    {
+      "id": "phu-toan-quyen",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 380,
+      "y": 132,
+      "nhan": "Phủ Toàn quyền"
+    },
+    {
+      "id": "nha-may-dien-yen-phu",
+      "kieu": "dia-danh",
+      "x": 490,
+      "y": 128,
+      "nhan": "Nhà máy điện Yên Phụ"
+    },
+    {
+      "id": "cau-long-bien",
+      "kieu": "dia-danh",
+      "x": 625,
+      "y": 175,
+      "nhan": "Cầu Long Biên"
+    },
+    {
+      "id": "san-bay-gia-lam",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 855,
+      "y": 190,
+      "nhan": "Sân bay Gia Lâm"
+    },
+    {
+      "id": "thanh-ha-noi",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 325,
+      "y": 212,
+      "nhan": "Thành Hà Nội"
     },
     {
       "id": "lien-khu-1",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 400,
-      "y": 350,
-      "nhan": "Liên khu 1 — khu phố cổ"
-    },
-    {
-      "id": "quan-ta-ve-quoc-doan",
       "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 400,
-      "nhan": "Vệ quốc đoàn, tự vệ thành"
+      "x": 535,
+      "y": 252,
+      "nhan": "Liên khu 1",
+      "quy_mo": "Tiểu đoàn 101 làm nòng cốt Trung đoàn Thủ Đô"
     },
     {
-      "id": "quan-dich-phap-hien-dai",
+      "id": "o-cau-giay",
+      "kieu": "dia-danh",
+      "x": 118,
+      "y": 282,
+      "nhan": "Ô Cầu Giấy"
+    },
+    {
+      "id": "nha-hat-lon",
+      "kieu": "dia-danh",
+      "x": 645,
+      "y": 300,
+      "nhan": "Nhà hát Lớn"
+    },
+    {
+      "id": "quan-phap",
       "kieu": "quan",
       "ben": "dich",
-      "x": 550,
-      "y": 300,
-      "nhan": "Quân Pháp trang bị hiện đại"
+      "x": 880,
+      "y": 320,
+      "nhan": "Quân Pháp ở Hà Nội",
+      "quy_mo": "6.500 quân · 22 xe tăng · 40 thiết giáp · 52 điểm đóng chốt"
     },
     {
-      "id": "co-kim-chan-60-ngay",
-      "kieu": "co",
+      "id": "bac-bo-phu",
+      "kieu": "cong-su",
       "ben": "ta",
-      "x": 450,
-      "y": 280,
-      "nhan": "Kìm chân địch 60 ngày đêm"
+      "x": 558,
+      "y": 332,
+      "nhan": "Bắc Bộ phủ"
     },
     {
-      "id": "co-quan-dau-nao-rut",
+      "id": "giang-vo",
+      "kieu": "dia-danh",
+      "x": 230,
+      "y": 342,
+      "nhan": "Giảng Võ"
+    },
+    {
+      "id": "don-thuy",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 702,
+      "y": 400,
+      "nhan": "Khu Đồn Thuỷ"
+    },
+    {
+      "id": "phao-dai-lang",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 200,
-      "nhan": "Cơ quan đầu não rút lên Việt Bắc"
+      "x": 148,
+      "y": 402,
+      "nhan": "Pháo đài Láng"
     },
     {
-      "id": "mui-rut-qua-cau",
+      "id": "o-cho-dua",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 470,
+      "nhan": "Ô Chợ Dừa"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 862,
+      "y": 460,
+      "nhan": "Giam chân địch 60 ngày đêm"
+    },
+    {
+      "id": "o-cau-den",
+      "kieu": "dia-danh",
+      "x": 600,
+      "y": 480,
+      "nhan": "Ô Cầu Dền"
+    },
+    {
+      "id": "vinh-tuy",
+      "kieu": "dia-danh",
+      "x": 732,
+      "y": 522,
+      "nhan": "Vĩnh Tuy"
+    },
+    {
+      "id": "tu-ve-thanh",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 400,
+      "y": 552,
+      "nhan": "Tự vệ thành Hoàng Diệu",
+      "quy_mo": "Khoảng 8.500 người trong nội thành"
+    },
+    {
+      "id": "mui-rut-quan",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        400,
-        330
-      ],
-      "den": [
-        700,
-        250
-      ],
-      "nhan": "Rút quân qua gầm cầu Long Biên"
+      "tu": [572, 212],
+      "den": [700, 142],
+      "nhan": "Rút qua gầm cầu Long Biên, vượt sông Hồng"
+    },
+    {
+      "id": "mui-phap-danh-ra",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [365, 245],
+      "den": [305, 440],
+      "nhan": "Pháp đánh ra các cửa ô"
+    },
+    {
+      "id": "mui-phap-vong-cung",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [700, 432],
+      "den": [755, 500],
+      "nhan": "Pháp mở đường vòng cung bao quanh thành phố"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "Vệ quốc đoàn 2.516 người",
+          "nguon": "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu"
+        },
+        {
+          "so": "tự vệ thành Hà Nội khoảng 8.500 người, tự vệ chiến đấu cứu quốc Hoàng Diệu khoảng 300 người, tự vệ chiến đấu ngoại thành khoảng 20.000 người",
+          "nguon": "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu"
+        }
+      ],
+      "don_vi": [
+        "5 tiểu đoàn bộ binh: 101, 77, 212, 145, 523",
+        "1 đại đội cảnh vệ",
+        "4 trung đội pháo cao xạ ở pháo đài Láng, Xuân Canh, Thủ Khối, Xuân Tảo",
+        "13 đội quyết tử đánh xe tăng và 36 tổ du kích đặc biệt",
+        "Đảng bộ Hà Nội khoảng 400 đảng viên"
+      ],
+      "vu_khi": [
+        "1.516 súng trường, 3 trung liên, 1 đại liên, 1 badôka 60 ly",
+        "1.000 quả lựu đạn, 80 quả bom ba càng, 200 chai răng cơ-rếp",
+        "7 khẩu pháo cao xạ, 1 khẩu sơn pháo 75 ly, 1 khẩu pháo 25 ly, 2 khẩu cối 60 ly",
+        "Lực lượng tự vệ: khoảng 600 súng trường, 2 trung liên, còn lại giáo mác, kiếm, dao găm"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "khoảng 4.220 quân trước ngày 19/12/1946, được tăng viện từ Hải Phòng lên 6.500; thêm 4.000 tù binh Pháp được thả và trang bị vũ khí, cùng 13.000 Pháp kiều",
+          "nguon": "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu"
+        }
+      ],
+      "don_vi": [
+        "Đóng chốt tại 52 điểm trong thành phố",
+        "Tại Thành Hà Nội, Trường Bưởi, Trường An-be Xa-rô, Phủ Toàn quyền, khu Đồn Thuỷ, sân bay Gia Lâm có từ 1 đến 2 tiểu đoàn cơ động"
+      ],
+      "vu_khi": [
+        "Khoảng 5.000 súng trường, 600 súng tiểu liên, 150 trung liên và đại liên",
+        "42 khẩu pháo các loại",
+        "22 xe tăng, 40 thiết giáp",
+        "30 máy bay và một số tàu chiến trên sông"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "Riêng 15 ngày Pháp tập trung làm chủ vành đai thứ nhất bao quanh Hà Nội: thêm khoảng 630 tên bị loại khỏi vòng chiến đấu, 5 xe tăng, 5 xe vận tải, 2 xe Jeep bị phá và một ca nô bị đánh chìm",
+        "nguon": "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu"
+      }
+    ],
+    "nguon": [
+      "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Pháo đài Láng nổ súng, mở đầu Toàn quốc kháng chiến",
-      "mo_ta": "Đêm 19/12/1946, pháo đài Láng nổ những phát súng đầu tiên hưởng ứng Lời kêu gọi Toàn quốc kháng chiến của Hồ Chí Minh.",
+      "tieu_de": "Từ Hiệp định Sơ bộ đến tối hậu thư",
+      "thoi_gian": "6/3/1946 – 19/12/1946",
+      "dia_danh": "Hà Nội · Hải Phòng · Lạng Sơn",
+      "mo_ta": "Ngày 6/3/1946, Chủ tịch Hồ Chí Minh thay mặt Chính phủ ký hiệp định sơ bộ với đại diện Chính phủ Pháp; hiệp định cho Pháp đóng 15.000 quân ở nhiều thành phố và thị xã miền Bắc, và ngày 18/3/1946, 1.200 quân Pháp vào Hà Nội. Ngày 14/9/1946, Chủ tịch Hồ Chí Minh ký bản Tạm ước, nhưng Tạm ước ký chưa ráo mực đã bị thực dân Pháp vi phạm. Tháng 11/1946, Pháp đánh chiếm Hải Phòng, Lạng Sơn, tăng thêm quân đổ bộ lên Đà Nẵng, Đồ Sơn. Trong các ngày 15 và 16/12/1946, chúng liên tục khiêu khích, nổ súng, ném lựu đạn nhiều nơi ở Hà Nội làm chết nhiều thường dân, bộ đội và công an; trưa 17/12 cho xe ủi phá công sự của ta ở phố Lò Đúc và gây vụ thảm sát ở phố Hàng Bún, Yên Ninh. Hai ngày 18 và 19/12/1946, Pháp liên tiếp gửi tối hậu thư buộc Chính phủ ta giải tán lực lượng tự vệ và giao quyền kiểm soát Thủ đô.",
       "hien": [
-        "phao-dai-lang"
+        "thanh-ha-noi",
+        "phu-toan-quyen",
+        "truong-buoi",
+        "don-thuy",
+        "san-bay-gia-lam",
+        "quan-phap",
+        "cau-long-bien"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html",
+        "Báo Nhân Dân — Hà Nội kháng chiến 60 ngày đêm — https://special.nhandan.vn/hanoi_khangchien_60ngaydem/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Chiến đấu giành từng ngôi nhà, góc phố",
-      "mo_ta": "Quân dân Hà Nội chiến đấu giành từng ngôi nhà, từng góc phố trong Liên khu 1.",
+      "tieu_de": "Tương quan lực lượng và thế trận chuẩn bị",
+      "thoi_gian": "Tháng 11 – 18/12/1946",
+      "dia_danh": "Nội thành và ngoại thành Hà Nội",
+      "mo_ta": "Quân Pháp ở Hà Nội có khoảng 4.220 tên, được tăng viện từ Hải Phòng lên 6.500, cùng 4.000 tù binh Pháp được thả và trang bị vũ khí và 13.000 Pháp kiều sống tập trung thành một dải rộng cắt đôi thành phố. Chúng có khoảng 5.000 súng trường, 600 tiểu liên, 150 trung liên và đại liên, 42 khẩu pháo, 22 xe tăng, 40 thiết giáp, 30 máy bay và một số tàu chiến, đóng chốt tại 52 điểm tạo thành thế bao vây chia cắt nội thành. Về phía ta, lực lượng vũ trang có 5 tiểu đoàn bộ binh 101, 77, 212, 145, 523, một đại đội cảnh vệ và 4 trung đội pháo cao xạ ở pháo đài Láng, Xuân Canh, Thủ Khối, Xuân Tảo, tổng quân số 2.516 người với 1.516 súng trường, 1 badôka 60 ly, 80 quả bom ba càng và 7 khẩu pháo cao xạ. Tự vệ thành Hà Nội khoảng 8.500 người, tự vệ ngoại thành khoảng 20.000 người. Mặt trận Hà Nội tổ chức 13 đội quyết tử đánh xe tăng và 36 tổ du kích đặc biệt; nhân dân đục tường tạo đường cơ động giữa các nhà và tích trữ gạo, thuốc men để đánh dài ngày.",
       "hien": [
+        "quan-phap",
         "lien-khu-1",
-        "quan-ta-ve-quoc-doan"
+        "tu-ve-thanh",
+        "phao-dai-lang",
+        "xuan-canh",
+        "xuan-tao",
+        "thanh-ha-noi",
+        "bac-bo-phu"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Vũ khí thô sơ đối chọi trang bị hiện đại",
-      "mo_ta": "Vũ khí thô sơ của Vệ quốc đoàn và tự vệ thành đối chọi với quân Pháp trang bị hiện đại.",
+      "tieu_de": "20 giờ 3 phút ngày 19/12/1946: đèn tắt, súng nổ",
+      "thoi_gian": "20 giờ 3 phút ngày 19/12/1946",
+      "dia_danh": "Nhà máy điện Yên Phụ · pháo đài Láng, Xuân Canh, Xuân Tảo",
+      "mo_ta": "Ngày 18 và 19/12/1946, Ban Thường vụ Trung ương Đảng họp ra quyết định lịch sử phát động toàn quốc kháng chiến; đêm 19/12, Chủ tịch Hồ Chí Minh thay mặt Trung ương Đảng và Chính phủ ra Lời kêu gọi toàn quốc kháng chiến. 20 giờ 3 phút ngày 19/12, công nhân Nhà máy điện Yên Phụ cho nổ mìn phá máy điện, phát tín hiệu tiến công trong toàn thành phố. Điện phụt tắt; từ các pháo đài Láng, Xuân Canh, Xuân Tảo, pháo binh bắn vào các vị trí địch trong Thành. Nhân dân xếp bàn, ghế, hòm xiểng, cánh cửa, sập gụ, bao cát ra đường; công nhân hoả xa và xe điện đẩy các toa tàu chặn các ngã tư, ngã năm; chiến luỹ mọc lên khắp những đường phố. Chỉ trong vài giờ đầu, các chiến sĩ Vệ quốc đoàn cùng tự vệ tiêu diệt phần lớn các ổ chiến đấu của quân Pháp ở phía tây và khu trung tâm; các vị trí đầu cầu Long Biên, Nhà máy điện, Nhà máy nước Yên Phụ, Nhà máy đèn Bờ Hồ, rạp Ma-giét-tích nhanh chóng bị ta làm chủ.",
       "hien": [
-        "quan-ta-ve-quoc-doan",
-        "quan-dich-phap-hien-dai"
+        "nha-may-dien-yen-phu",
+        "phao-dai-lang",
+        "xuan-canh",
+        "xuan-tao",
+        "cau-long-bien",
+        "thanh-ha-noi",
+        "lien-khu-1",
+        "tu-ve-thanh"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html",
+        "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Kìm chân địch 60 ngày đêm",
-      "mo_ta": "Quân dân Hà Nội kìm chân quân Pháp 60 ngày đêm trong lòng thành phố, đánh bại chiến thuật 'đánh nhanh thắng nhanh'.",
+      "tieu_de": "Bắc Bộ phủ và những trận đầu",
+      "thoi_gian": "19 – 22/12/1946",
+      "dia_danh": "Bắc Bộ phủ · Nhà bưu điện · Toà thị chính · Cửa Nam",
+      "mo_ta": "Trận Bắc Bộ phủ diễn ra quyết liệt. Quân Pháp tập trung tới 300 lính lê dương với 8 xe tăng, 10 xe thiết giáp, 2 khẩu pháo 75 ly, nhiều súng cối và một số xe Jeep gắn đại liên tiến công liên tục. Ta bố trí Tiểu đoàn 101 tại đây, cùng trận địa đã tổ chức sẵn, chiến đấu anh dũng và liên tục đẩy lùi nhiều cuộc tiến công. Tại các vị trí khác như Nhà bưu điện, Toà thị chính, nhiều cuộc tiến đánh của quân Pháp cũng không thành. Tự vệ khu Đông Thành tập kích vào Cửa Đông đốt cháy một kho xăng và vũ khí; tại khu Cửa Nam, tự vệ tiến đánh ở phố Hàng Bông, Thợ Nhuộm và tập kích đoàn xe vận tải chở lính Pháp. Cùng đêm 19/12, quân dân các thành phố Hải Dương, Bắc Giang, Bắc Ninh, Nam Định, Vinh, Huế, Đà Nẵng nhất loạt tiến công địch. Trong các ngày 20, 21 và 22/12, ta ghìm chặt địch trong thành phố, vừa giữ vững vị trí vừa chủ động tập kích, phục kích, đồng thời nhanh chóng sơ tán người già và trẻ em ra khỏi thành phố.",
       "hien": [
+        "bac-bo-phu",
         "lien-khu-1",
-        "co-kim-chan-60-ngay"
+        "nha-hat-lon",
+        "tu-ve-thanh",
+        "quan-phap",
+        "thanh-ha-noi"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Cơ quan đầu não rút an toàn lên Việt Bắc",
-      "mo_ta": "Thời gian kìm chân tạo điều kiện để cơ quan đầu não Đảng, Chính phủ rút an toàn lên chiến khu Việt Bắc.",
+      "tieu_de": "Thế trận «trong đánh, ngoài vây» hình thành",
+      "thoi_gian": "24/12 – cuối tháng 12/1946",
+      "dia_danh": "Ô Cầu Dền · phố Hàng Bè · Cầu Gỗ",
+      "mo_ta": "Từ ngày 24/12, quân Pháp tập trung lực lượng đánh chiếm các vị trí còn lại trong nội thành để mở đường đánh ra các cửa ô. Quân ta vừa chặn đánh vừa kiên cường bám trụ, thực hiện trong ngoài cùng đánh. Đêm 25/12, Bộ Chỉ huy Mặt trận lệnh cho lực lượng cả ba liên khu đồng loạt tập kích các vị trí địch, gây cho chúng nhiều tổn thất. Phối hợp với cuộc chiến đấu ở Liên khu 1, lực lượng ta từ các cửa ô đột nhập nội thành quấy rối, tập kích. Liên tiếp trong các ngày 26 và 27/12, quân Pháp tiến đánh Ô Cầu Dền, phố Lê Bình, phố Minh Khai; các đợt tiến công đều bị bẻ gãy, nhưng trận địa phòng ngự của ta bị tàn phá nặng, phải lui về các phố Hàng Bè và Cầu Gỗ. Đến những ngày cuối tháng 12/1946, trận địa của ta thu hẹp thêm và thế trận trong đánh, ngoài vây hình thành rõ rệt. Từ ngày 19 đến 29/12/1946 đã diễn ra 47 trận đánh quyết liệt.",
       "hien": [
-        "co-quan-dau-nao-rut"
+        "lien-khu-1",
+        "o-cau-den",
+        "bac-bo-phu",
+        "mui-phap-danh-ra",
+        "quan-phap",
+        "tu-ve-thanh"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html",
+        "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Rút quân an toàn qua gầm cầu Long Biên (17/2/1947)",
-      "mo_ta": "Lực lượng ta rút khỏi thành phố an toàn qua gầm cầu Long Biên, hoàn thành nhiệm vụ giam chân địch.",
+      "tieu_de": "Giành giật từng tấc đất ở năm cửa ô",
+      "thoi_gian": "30/12/1946 – 6/1/1947",
+      "dia_danh": "Ô Chợ Dừa · Kim Liên · Vĩnh Tuy · Giảng Võ",
+      "mo_ta": "Nhằm thoát khỏi thế bị vây hãm, quân Pháp tập trung đánh ra các cửa ô. Ngày 3/1/1947, sau khi chiếm được Ô Chợ Dừa và Kim Liên, chúng chia thành ba cánh quân đánh sang hướng tây trên các đường Thuỵ Khuê, Hoàng Hoa Thám và Đội Cấn; một cánh khác đánh từ Lò Lợn ra Vĩnh Tuy, Thanh Nhàn. Ngày 6/1, địch bao vây Giảng Võ. Quân ta đánh trả nhiều cuộc tiến công, giành đi giật lại từng tấc đất trên vành đai bao quanh thành phố: Ô Chợ Dừa ngày 30/12/1946, Vĩnh Tuy ngày 3/1/1947, Giảng Võ ngày 6/1/1947. Năm cửa ô tạo thành vành đai tiêu hao, tiêu diệt, vây hãm quân Pháp, đồng thời là bàn đạp đánh vào nội đô. Ở ngoại thành, tự vệ các khu Lãng Bạc, Đại La, Đống Đa, Mê Linh, Đề Thám tập trung thành từng đại đội xung phong chiến đấu trên các cửa ô Cầu Giấy, Bưởi, Yên Phụ, Kim Mã; nhân dân các làng xã thực hiện «vườn không nhà trống» và tiêu thổ kháng chiến.",
+      "hien": [
+        "o-cho-dua",
+        "vinh-tuy",
+        "giang-vo",
+        "o-cau-giay",
+        "mui-phap-danh-ra",
+        "lien-khu-1",
+        "tu-ve-thanh"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html",
+        "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Trung đoàn Thủ Đô ra đời và lời thề «Quyết tử»",
+      "thoi_gian": "6/1 – 14/1/1947",
+      "dia_danh": "Liên khu 1 · Chúc Sơn · rạp Tố Như",
+      "mo_ta": "Trong khói lửa chiến đấu, ngày 6/1/1947 các lực lượng vũ trang đang chốt giữ Liên khu 1 thống nhất lại, lấy Tiểu đoàn 101 Vệ quốc quân làm nòng cốt, thành lập Trung đoàn Liên khu 1 do đồng chí Lê Trung Toản, Phó bí thư Đảng uỷ Liên khu 1, trực tiếp làm Chính uỷ. Ngày 12/1/1947, Hội nghị quân sự toàn quốc họp tại Chúc Sơn thuộc Chương Mỹ quyết định đặt tên trung đoàn này là Trung đoàn Thủ Đô. Ngày 14/1/1947, đại đội quyết tử của Trung đoàn Thủ Đô được thành lập và làm lễ tuyên thệ «Quyết tử» tại rạp Tố Như, nay là rạp Chuông Vàng, trước khi bước vào đợt chiến đấu mới. Hình ảnh chiến sĩ cảm tử quân, đoàn viên Thanh niên cứu quốc Hoàng Diệu ôm bom ba càng sẵn sàng tiêu diệt xe tăng địch trên đường phố Hà Nội ngày 23/12/1946 trở thành biểu tượng của cuộc chiến tranh nhân dân.",
       "hien": [
         "lien-khu-1",
-        "mui-rut-qua-cau"
+        "nha-hat-lon",
+        "bac-bo-phu",
+        "tu-ve-thanh",
+        "cau-long-bien"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Pháp làm chủ vành đai vòng cung",
+      "thoi_gian": "15 – 25/1/1947",
+      "dia_danh": "Vĩnh Tuy · Ngã Tư Trung Hiền · Ngã Tư Vọng · Ngã Tư Sở · Ô Cầu Giấy · Nhật Tân",
+      "mo_ta": "Tháng 1/1947, sau khi đánh thông Đường số 5, quân Pháp có thêm quân từ Hải Phòng chi viện nên quyết tiêu diệt lực lượng ta ở Hà Nội. Từ ngày 15/1/1947, địch liên tiếp mở những đợt tiến công mới trên con đường vòng cung Vĩnh Tuy, Ngã Tư Trung Hiền, Ngã Tư Vọng, Ngã Tư Sở, Ô Cầu Giấy. Đến ngày 25/1/1947, chiếm được Nhật Tân, địch kiểm soát được con đường vòng cung bao quanh thành phố. Nhưng qua 15 ngày tập trung cao độ để làm chủ vành đai thứ nhất, chúng không tiêu diệt được «Việt Minh trong vành đai sắt» như đã huênh hoang tuyên bố, mà bị tổn thất nghiêm trọng: thêm khoảng 630 tên bị loại khỏi vòng chiến đấu, 5 xe tăng, 5 xe vận tải, 2 xe Jeep bị phá và một ca nô bị đánh chìm.",
+      "hien": [
+        "vinh-tuy",
+        "o-cau-giay",
+        "nhat-tan",
+        "mui-phap-vong-cung",
+        "quan-phap",
+        "lien-khu-1",
+        "san-bay-gia-lam"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html",
+        "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Thư Bác Hồ gửi Trung đoàn Thủ Đô, tháng 2 chặn địch ở ngoại thành",
+      "thoi_gian": "27/1 – 15/2/1947",
+      "dia_danh": "Cần Kiệm · Nam Dư Thượng · Yên Duyên · Cổ Nhuế · Chèm · phủ Hoài Đức",
+      "mo_ta": "Theo dõi từng ngày diễn biến cuộc kháng chiến của quân dân Thủ đô, ngày 27/1/1947 tại Cần Kiệm thuộc Thạch Thất, Chủ tịch Hồ Chí Minh gửi thư cho các chiến sĩ Trung đoàn Thủ Đô để biểu dương và động viên. Tháng 2/1947, bộ đội địa phương và tự vệ chiến đấu dũng cảm, chặn đánh địch ở Nam Dư Thượng, Yên Duyên, Cổ Nhuế, Chèm và phủ Hoài Đức. Đến giữa tháng 2, quân Pháp mở các đợt tiến công mới. Quân và dân ta đã hoàn thành nhiệm vụ tiêu hao, tiêu diệt, vây hãm và giam chân địch dài ngày, nhưng ngày càng xuất hiện những khó khăn phải giải quyết. Ngày 15/2/1947, để bảo toàn lực lượng kháng chiến lâu dài, theo chỉ thị của Chủ tịch Hồ Chí Minh, Bộ Tổng chỉ huy ra lệnh cho các lực lượng vũ trang Liên khu 1 rút khỏi Hà Nội.",
+      "hien": [
+        "lien-khu-1",
+        "o-cau-giay",
+        "nhat-tan",
+        "tu-ve-thanh",
+        "cau-long-bien",
+        "quan-phap"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html",
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html"
+      ]
+    },
+    {
+      "id": 10,
+      "tieu_de": "Rút qua gầm cầu Long Biên, khép lại 60 ngày đêm",
+      "thoi_gian": "17 – 18/2/1947",
+      "dia_danh": "Gầm cầu Long Biên · sông Hồng · sông Đuống",
+      "mo_ta": "Lực lượng của Trung đoàn Thủ Đô chia thành từng đơn vị nhỏ, cùng nhân dân Liên khu phố 1 lặng lẽ đi dưới gầm cầu Long Biên, vượt sông Hồng và sông Đuống, bí mật vượt qua vòng vây an toàn lên chiến khu. Hai chuyên đề của Báo Nhân Dân chép mốc rút quân hơi khác nhau: 18 giờ 30 phút ngày 17/2/1947, và đêm 17 rạng sáng 18/2/1947. Trải qua 60 ngày đêm chiến đấu, quân và dân Hà Nội đã đánh gần 200 trận, tiêu diệt một phần quan trọng sinh lực địch, giam chân chúng trong thành phố vượt thời gian dự kiến ban đầu, tạo khoảng thời gian chiến lược để cả nước chuyển vào thời chiến, bảo vệ các cơ quan đầu não của Đảng, Chính phủ, Mặt trận di chuyển về căn cứ an toàn và bảo vệ hàng chục vạn đồng bào Thủ đô rời thành phố.",
+      "hien": [
+        "mui-rut-quan",
+        "cau-long-bien",
+        "lien-khu-1",
+        "co-thang",
+        "xuan-canh",
+        "quan-phap"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html",
+        "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html"
       ]
     }
   ],
-  "ket_qua": "Quân dân Hà Nội kìm chân quân Pháp 60 ngày đêm trong lòng thành phố, đánh bại chiến thuật 'đánh nhanh thắng nhanh', tạo điều kiện để cơ quan đầu não Đảng, Chính phủ rút an toàn lên chiến khu Việt Bắc.",
-  "y_nghia": "Trận đánh mở đầu 9 năm kháng chiến chống Pháp, thể hiện tinh thần 'Quyết tử để Tổ quốc quyết sinh' của quân dân Thủ đô.",
+  "ket_qua": "Quân dân Hà Nội đánh gần 200 trận, giam chân quân Pháp 60 ngày đêm trong lòng thành phố, đánh bại chiến thuật «đánh nhanh thắng nhanh», tạo điều kiện để cơ quan đầu não Đảng, Chính phủ rút an toàn lên chiến khu Việt Bắc.",
+  "y_nghia": "Trận đánh mở đầu 9 năm kháng chiến chống Pháp, thể hiện tinh thần «Quyết tử để Tổ quốc quyết sinh» của quân dân Thủ đô.",
   "trang_thai": "draft",
   "nguon": [
-    "nhandan.vn — Hà Nội 60 ngày đêm khói lửa",
+    "Báo Nhân Dân — Hà Nội 60 ngày đêm chiến đấu — https://special.nhandan.vn/ha-noi-60-ngay-dem-chien-dau/index.html",
+    "Báo Nhân Dân — Quyết tử để Tổ quốc quyết sinh — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html",
+    "Báo Nhân Dân — Hà Nội kháng chiến 60 ngày đêm — https://special.nhandan.vn/hanoi_khangchien_60ngaydem/index.html",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
@@ -161,13 +529,13 @@
       "sach": "Nhiệm vụ Trung ương Đảng và Bộ Tổng chỉ huy giao cho Hà Nội",
       "doan": "Là chiến trường chính trong trận tổng giao chiến đấu tiên. Trận đánh ở Thủ đô nước Việt Nam dân chủ cộng hòa phải tiêu biểu cho tinh thần kháng chiến của cả nước. Hà Nội cần giam chân địch ít nhất là một tháng tạo điều kiện cho cả nước chuyển sang chiến tranh",
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html",
-      "buoc": 1
+      "buoc": 2
     },
     {
       "sach": "Thư của Chủ tịch Hồ Chí Minh gửi các chiến sĩ Trung đoàn Thủ Đô, viết tại Cần Kiệm (Thạch Thất) ngày 27/1/1947",
       "doan": "Các em cảm tử cho Tổ quốc quyết sinh. Các em là đại biểu các tinh thần tự tôn, tự lập của dân tộc ta mấy ngàn năm để lại... Nay các em gan góc các tinh thần bất diệt đó, để truyền lại cho nòi giống muôn đời về sau",
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/Quyet-tu-de-To-quoc-quyet-sinh/index.html",
-      "buoc": 4
+      "buoc": 9
     }
   ]
 }

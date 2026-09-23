@@ -138,6 +138,18 @@ function tai(url) {
       // liệt kê rõ bốn khác biệt nó cố ý bỏ qua; thêm luật vào đó là nới tiêu
       // chuẩn so khớp cho mọi đoạn trích, không phải thứ cần ở đây.
       .replace(/\s+([,.;:!?…])/g, "$1")
+      // LỖ HỔNG THỨ BA, vá 2026-08-28 khi ca thật xuất hiện (PLAN.md đã ghi
+      // trước là cố ý chưa vá cho tới lúc có ca kiểm được).
+      // Luật trên chỉ dọn khoảng trắng trước dấu ĐÓNG CÂU. Nhưng thẻ cũng hay
+      // ôm trọn phần trong ngoặc: hoianheritage.net viết `An Điềm (<a>Đại
+      // Lộc</a>)` — thẻ mở sát sau `(`, thẻ đóng sát trước `)`. Bước lột thẻ
+      // để lại `( Đại Lộc )` trong khi trang người đọc thấy là `(Đại Lộc)`,
+      // và cổng tố oan một đoạn trích hoàn toàn đúng
+      // (gianh-chinh-quyen-hoi-an-quang-nam-1945[1], khớp 66%).
+      // Hai vế phải đi cùng nhau: chỉ dọn một bên là đổi `( X )` thành
+      // `(X )` hoặc `( X)` — vẫn lệch, chỉ lệch chỗ khác.
+      .replace(/([([{])\s+/g, "$1")
+      .replace(/\s+([)\]}])/g, "$1")
       .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
       .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
       .replace(/&([a-zA-Z]+);/g, (m, t) => TEN[t.toLowerCase()] ?? m));

@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ 81 ngày đêm bảo vệ Thành cổ Quảng Trị 1972 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ 81 ngày đêm bảo vệ Thành cổ Quảng Trị (28/6 – 16/9/1972) — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "81-ngay-dem-thanh-co-quang-tri-1972",
   "ten": "81 ngày đêm bảo vệ Thành cổ Quảng Trị",
   "nam": 1972,
@@ -16,155 +16,359 @@
       "kieu": "song",
       "diem": [
         [
-          0,
-          350
+          120,
+          520
         ],
         [
-          500,
-          330
+          380,
+          472
         ],
         [
-          1000,
-          370
+          650,
+          445
+        ],
+        [
+          900,
+          425
         ]
       ],
       "nhan": "Sông Thạch Hãn"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          690,
+          575
+        ],
+        [
+          850,
+          552
+        ],
+        [
+          960,
+          532
+        ]
+      ],
+      "nhan": "Sông Mỹ Chánh"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          430,
+          560
+        ],
+        [
+          560,
+          500
+        ],
+        [
+          720,
+          430
+        ],
+        [
+          880,
+          350
+        ]
+      ],
+      "nhan": "Quốc lộ 1A qua ngã ba Long Hưng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          350,
+          210
+        ],
+        [
+          520,
+          205
+        ],
+        [
+          520,
+          330
+        ],
+        [
+          350,
+          335
+        ],
+        [
+          350,
+          210
+        ]
+      ],
+      "nhan": "Tường thành và hào thành Thành cổ (khu di tích 25 ha)"
     }
   ],
   "phan_tu": [
     {
-      "id": "thi-xa-quang-tri-giai-phong",
-      "kieu": "dia-danh",
-      "x": 300,
-      "y": 250,
-      "nhan": "Quảng Trị được giải phóng (1/5/1972)"
-    },
-    {
-      "id": "quan-dich-phan-kich-qt",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 700,
-      "y": 200,
-      "nhan": "Đối phương dồn lực phản kích"
-    },
-    {
-      "id": "thanh-co-quang-tri",
+      "id": "thanh-co",
       "kieu": "thanh",
       "ben": "ta",
-      "x": 450,
-      "y": 300,
+      "x": 430,
+      "y": 270,
       "nhan": "Thành cổ Quảng Trị"
     },
     {
-      "id": "quan-ta-bam-tru",
-      "kieu": "quan",
+      "id": "bac-mon",
+      "kieu": "cong-su",
       "ben": "ta",
-      "x": 400,
-      "y": 380,
-      "nhan": "Bộ đội ta bám trụ"
+      "x": 430,
+      "y": 180,
+      "nhan": "Bắc môn (cổng hậu)"
     },
     {
-      "id": "mui-bom-dan",
+      "id": "thi-xa",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 230,
+      "nhan": "Thị xã Quảng Trị"
+    },
+    {
+      "id": "truong-bo-de",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 270,
+      "y": 120,
+      "nhan": "Trường Bồ Đề — trận địa chốt"
+    },
+    {
+      "id": "nha-tho-tri-buu",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 640,
+      "y": 140,
+      "nhan": "Nhà thờ Tri Bưu — chốt hướng Đông Bắc"
+    },
+    {
+      "id": "quang-truong-giai-phong",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 190,
+      "y": 300,
+      "nhan": "Quảng trường Giải phóng — Sở chỉ huy Trung đoàn 48, Trạm phẫu thuật tiền phương"
+    },
+    {
+      "id": "chot-long-quang",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 780,
+      "y": 300,
+      "nhan": "Chốt Long Quang — cánh Đông"
+    },
+    {
+      "id": "chot-ngo-xa-tay",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 830,
+      "y": 390,
+      "nhan": "Chốt Ngô Xá Tây"
+    },
+    {
+      "id": "nga-ba-long-hung",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 470,
+      "nhan": "Ngã ba Long Hưng · nhà thờ Long Hưng — hướng Nam"
+    },
+    {
+      "id": "ben-thach-han",
+      "kieu": "dia-danh",
+      "x": 120,
+      "y": 545,
+      "nhan": "Bến sông Thạch Hãn — cửa ngõ tiếp tế"
+    },
+    {
+      "id": "vuot-song",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        170,
+        540
+      ],
+      "den": [
+        350,
+        400
+      ],
+      "nhan": "Mỗi ngày một đại đội vượt sông tiếp viện"
+    },
+    {
+      "id": "lam-son-72",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 540,
+      "nhan": "Cuộc hành quân «Lam Sơn 72» vượt sông Mỹ Chánh"
+    },
+    {
+      "id": "mui-phan-kich",
       "kieu": "mui-ten",
       "ben": "dich",
       "tu": [
-        650,
-        270
+        750,
+        500
       ],
       "den": [
-        480,
-        290
+        560,
+        330
       ],
-      "nhan": "Bom đạn khốc liệt"
+      "nhan": "Các đợt phản kích tái chiếm Thành cổ"
     },
     {
-      "id": "quan-ta-cong-binh",
+      "id": "bom-dan",
       "kieu": "quan",
-      "ben": "ta",
-      "x": 350,
-      "y": 430,
-      "nhan": "Công binh, thông tin, quân y cầm súng"
+      "ben": "dich",
+      "x": 110,
+      "y": 80,
+      "nhan": "328.000 tấn bom đạn dội xuống Thành cổ và thị xã"
     },
     {
-      "id": "co-giu-vung",
+      "id": "rut-khoi-thanh-co",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        430,
+        320
+      ],
+      "den": [
+        520,
+        420
+      ],
+      "nhan": "16/9 — chủ động rút khỏi Thành cổ"
+    },
+    {
+      "id": "co-81-ngay",
       "kieu": "co",
       "ben": "ta",
-      "x": 450,
-      "y": 450,
-      "nhan": "Giữ vững trận địa đến khi có lệnh rút"
+      "x": 900,
+      "y": 120,
+      "nhan": "81 ngày đêm: 28/6 – 16/9/1972"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quảng Trị được giải phóng (1/5/1972)",
-      "mo_ta": "Đầu tháng 5/1972, tuyến phòng thủ Quảng Trị của quân đội Sài Gòn bị chọc thủng, đối phương phải rút khỏi thị xã.",
+      "tieu_de": "1/5/1972 — Quảng Trị là tỉnh đầu tiên ở miền Nam được giải phóng",
+      "thoi_gian": "1/5/1972",
+      "dia_danh": "Thị xã Quảng Trị",
+      "mo_ta": "Trong cuộc kháng chiến chống Mỹ, tuyến phòng thủ Quảng Trị được phía Mỹ và chính quyền Sài Gòn coi là «con đê ngăn chặn» vững chắc nhất ở miền Nam. Phòng tuyến đó bị quân ta chọc thủng ngày 1/5/1972, buộc đối phương rút khỏi thị xã Quảng Trị. Quảng Trị trở thành tỉnh đầu tiên ở miền Nam được hoàn toàn giải phóng, với hơn 10 vạn dân. Thành cổ Quảng Trị nằm giữa trung tâm thị xã, vừa là công trình thành luỹ cổ vừa là lỵ sở hành chính – chính trị của tỉnh.",
       "hien": [
-        "thi-xa-quang-tri-giai-phong"
+        "thanh-co",
+        "thi-xa",
+        "bac-mon"
+      ],
+      "nguon": [
+        "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đối phương dồn lực phản kích tái chiếm",
-      "mo_ta": "Chính quyền Sài Gòn với sự chi viện tối đa của Mỹ dồn toàn lực phản kích, lấy Thành cổ làm mục tiêu chính.",
+      "tieu_de": "13/6/1972 — quyết định mở cuộc hành quân «Lam Sơn 72»",
+      "thoi_gian": "13 – 14/6/1972",
+      "dia_danh": "Quân khu 1 · Quân đoàn 1 (quân đội Sài Gòn)",
+      "mo_ta": "Không chấp nhận mất Quảng Trị, chính quyền Sài Gòn dốc lực lượng mở cuộc phản kích tái chiếm, mục tiêu số một là chiếm lại Thành cổ. Ngày 13/6/1972, Nguyễn Văn Thiệu quyết định mở cuộc hành quân mang mật danh «Lam Sơn 72», huy động 4 sư đoàn mạnh nhất trong đó có toàn bộ sư đoàn dù và sư đoàn lính thuỷ đánh bộ, lực lượng tương đương 13 trung đoàn bộ binh, 17 tiểu đoàn pháo binh, 5 thiết đoàn, và điều Trung tướng Ngô Quang Trưởng làm Tư lệnh Quân khu 1, Quân đoàn 1. Ngày 14/6 cuộc hành quân bắt đầu.",
       "hien": [
-        "thi-xa-quang-tri-giai-phong",
-        "quan-dich-phan-kich-qt"
+        "lam-son-72",
+        "mui-phan-kich",
+        "thi-xa"
+      ],
+      "nguon": [
+        "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Bộ đội ta bám trụ trong Thành cổ (từ 28/6/1972)",
-      "mo_ta": "Bộ đội ta bám trụ kiên cường trong Thành cổ giữa mưa bom bão đạn chưa từng có.",
+      "tieu_de": "28/6/1972 — mở màn 81 ngày đêm, vượt sông Mỹ Chánh",
+      "thoi_gian": "28/6/1972",
+      "dia_danh": "Bờ bắc sông Mỹ Chánh",
+      "mo_ta": "Mở màn cuộc hành quân «Lam Sơn 72», sáng 28/6/1972, dưới sự chi viện của không quân và hải quân Mỹ, các sư đoàn chủ lực của quân đội Sài Gòn ồ ạt tiến công sang bờ bắc sông Mỹ Chánh, thực hiện cuộc hành quân «tái chiếm lãnh thổ». Từ ngày này bắt đầu 81 ngày đêm chiến đấu bảo vệ Thành cổ và thị xã Quảng Trị, kéo dài đến 16/9/1972, diễn ra ác liệt suốt cả ngày lẫn đêm.",
       "hien": [
-        "thanh-co-quang-tri",
-        "quan-ta-bam-tru"
+        "lam-son-72",
+        "mui-phan-kich",
+        "co-81-ngay"
+      ],
+      "nguon": [
+        "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Chịu đựng cường độ bom đạn khốc liệt",
-      "mo_ta": "Trong 81 ngày đêm, Thành cổ hứng chịu 328.000 tấn bom đạn, bình quân mỗi chiến sĩ chịu 100 quả bom và 200 viên đạn pháo.",
+      "tieu_de": "Giằng co từng mét đất trên các chốt quanh Thành cổ",
+      "thoi_gian": "28/6 – 16/9/1972",
+      "dia_danh": "Long Quang · Tri Bưu · Ngã ba Long Hưng · Ngã ba Cầu Ga",
+      "mo_ta": "Hai bên giằng co từng mét đất, từng ngôi nhà. Bom đạn phá huỷ hoàn toàn thị xã Quảng Trị, Thành cổ cũng bị phá nát. Các chốt quan trọng như Long Quang, nhà thờ Tri Bưu, ngã ba Long Hưng, ngã ba Cầu Ga là những nơi quân giải phóng đập tan các đợt phản kích; có ngày ta phải đương đầu với 5 đợt tấn công bằng bộ binh, xe tăng và phi pháo. Chốt Long Quang là chốt trọng yếu của mặt trận cánh Đông, dựng trên hệ thống đê chắn cát của dân địa phương.",
       "hien": [
-        "thanh-co-quang-tri",
-        "quan-dich-phan-kich-qt",
-        "mui-bom-dan"
+        "chot-long-quang",
+        "chot-ngo-xa-tay",
+        "nha-tho-tri-buu",
+        "nga-ba-long-hung",
+        "mui-phan-kich"
+      ],
+      "nguon": [
+        "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
+        "Di tích lịch sử Thành cổ Quảng Trị và những địa điểm lưu niệm sự kiện 81 ngày đêm năm 1972 — Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-thanh-co-quang-tri-va-nhung-dia-diem-luu-niem-su-kien-81-ngay-dem-nam-1972-2975"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Mọi lực lượng đều cầm súng chiến đấu",
-      "mo_ta": "Bộ đội công binh, thông tin, quân y đều trực tiếp cầm súng chiến đấu để giữ trận địa.",
+      "tieu_de": "Bến sông Thạch Hãn — mỗi ngày một đại đội vượt sông",
+      "thoi_gian": "28/6 – 16/9/1972",
+      "dia_danh": "Bến sông Thạch Hãn",
+      "mo_ta": "Bến sông Thạch Hãn là cửa ngõ để tiếp tế vũ khí, lương thực vào chiến trường và là nơi diễn ra trận quyết chiến suốt 81 ngày đêm. Trong 81 ngày đêm, Thành cổ hứng chịu 328.000 tấn bom đạn; trung bình mỗi chiến sĩ phải hứng 100 quả bom và 200 quả đạn pháo. Báo Quân đội nhân dân số ra ngày 9/8/1972 viết rằng mỗi ngày có một đại đội vượt dòng Thạch Hãn để tiếp viện quân số, nhưng đêm nay một đại đội tiến vào thì ngày mai chỉ còn lại vài người sống sót.",
       "hien": [
-        "quan-ta-bam-tru",
-        "quan-ta-cong-binh"
+        "ben-thach-han",
+        "vuot-song",
+        "bom-dan",
+        "thanh-co"
+      ],
+      "nguon": [
+        "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
+        "Khúc tráng ca 81 ngày đêm bảo vệ Thành cổ Quảng Trị — Cổng TTĐT Bộ Quốc phòng — https://mod.gov.vn/vn/noi-dung/sa-cdcs/sa-cdcs-tt/83466d2f-7c27-40ec-abd1-57e8ca4ee610"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Giữ vững trận địa đến khi có lệnh rút",
-      "mo_ta": "Bộ đội ta giữ vững một phần trận địa đến khi có lệnh rút, làm thất bại một phần kế hoạch tái chiếm toàn bộ Quảng Trị của đối phương.",
+      "tieu_de": "Sở chỉ huy và trạm phẫu thuật tiền phương trong lòng thị xã",
+      "thoi_gian": "28/6 – 16/9/1972",
+      "dia_danh": "Quảng trường Giải phóng · Trường Bồ Đề",
+      "mo_ta": "Quảng trường Giải phóng — vốn là nơi làm việc của bộ máy cai trị ở Quảng Trị — trong 81 ngày đêm là nơi đặt Sở Chỉ huy của Trung đoàn 48 và Trạm Phẫu thuật tiền phương, để chuyển tiếp thương binh, tử sĩ sang bờ Bắc sông Thạch Hãn. Trường Bồ Đề, xây năm 1959, là một trong những trận địa chốt vững của quân ta và là một trong số ít công trình còn sót lại chưa bị bom đạn phá huỷ hoàn toàn. Cách đánh ở đây vượt khỏi quy ước thông thường: bộ binh, công binh, thông tin, quân y đều cầm súng.",
       "hien": [
-        "thanh-co-quang-tri",
-        "co-giu-vung"
+        "quang-truong-giai-phong",
+        "truong-bo-de",
+        "thanh-co"
+      ],
+      "nguon": [
+        "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
+        "Di tích lịch sử Thành cổ Quảng Trị và những địa điểm lưu niệm sự kiện 81 ngày đêm năm 1972 — Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-thanh-co-quang-tri-va-nhung-dia-diem-luu-niem-su-kien-81-ngay-dem-nam-1972-2975"
       ]
     },
     {
       "id": 7,
-      "tieu_de": "Một trong những trận phòng ngự bi tráng nhất",
-      "mo_ta": "Cuộc chiến đấu 81 ngày đêm trở thành một trong những trận phòng ngự ác liệt và bi tráng nhất của cuộc kháng chiến chống Mỹ.",
+      "tieu_de": "16/9/1972 — chủ động rút khỏi Thành cổ",
+      "thoi_gian": "16/9/1972",
+      "dia_danh": "Thành cổ Quảng Trị",
+      "mo_ta": "Ngày 16/9/1972, quân ta chủ động rút khỏi Thành cổ sau khi đã gây tổn thất nặng cho đối phương: 2 sư đoàn cơ động chiến lược bị tiêu diệt, 26.000 quân bị diệt, 71 bị bắt sống, 19 tiểu đoàn bị đánh thiệt hại nặng, 349 xe quân sự bị phá hỏng trong đó có 200 xe tăng và thiết giáp, 205 máy bay bị bắn rơi, thu 500 súng các loại. Thành cổ bị phá huỷ gần hết, chỉ còn lại một số đoạn tường gạch loang lổ vết đạn cùng hai cổng tiền và hậu chưa sụp đổ.",
       "hien": [
-        "co-giu-vung"
+        "rut-khoi-thanh-co",
+        "thanh-co",
+        "co-81-ngay"
+      ],
+      "nguon": [
+        "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
+        "Di tích lịch sử Thành cổ Quảng Trị và những địa điểm lưu niệm sự kiện 81 ngày đêm năm 1972 — Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-thanh-co-quang-tri-va-nhung-dia-diem-luu-niem-su-kien-81-ngay-dem-nam-1972-2975"
       ]
     }
   ],
-  "ket_qua": "Bộ đội ta bám trụ, giữ vững một phần trận địa suốt 81 ngày đêm dưới mưa bom bão đạn, làm thất bại một phần kế hoạch tái chiếm toàn bộ Quảng Trị của đối phương.",
-  "y_nghia": "Một trong những trận phòng ngự ác liệt và bi tráng nhất cuộc kháng chiến chống Mỹ, biểu tượng cho ý chí kiên cường bảo vệ từng tấc đất.",
+  "ket_qua": "Sau 81 ngày đêm, ngày 16/9/1972 quân ta chủ động rút khỏi Thành cổ. Theo Báo Nhân Dân, ta tiêu diệt 2 sư đoàn cơ động chiến lược, diệt 26.000 quân, bắt sống 71, đánh thiệt hại nặng 19 tiểu đoàn, phá hỏng 349 xe quân sự (có 200 xe tăng và thiết giáp), bắn rơi 205 máy bay và thu 500 súng các loại. Tổn thất phía ta: Báo Nhân Dân ghi «hàng nghìn người con ưu tú đã ngã xuống»; Cục Di sản văn hoá ghi ở bến sông Thạch Hãn «hàng vạn chiến sỹ đã hy sinh, nằm lại trên mảnh đất này».",
+  "y_nghia": "Cuộc chiến đấu 81 ngày đêm góp phần làm thay đổi cục diện chiến tranh, buộc phía Mỹ nối lại đàm phán và đi đến ký Hiệp định Paris. Thành cổ Quảng Trị cùng các địa điểm lưu niệm sự kiện 81 ngày đêm được xếp hạng di tích quốc gia đặc biệt theo Quyết định số 2383/QĐ-TTg ngày 09/12/2013.",
   "trang_thai": "draft",
   "nguon": [
+    "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
+    "Di tích lịch sử Thành cổ Quảng Trị và những địa điểm lưu niệm sự kiện 81 ngày đêm năm 1972 — Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-thanh-co-quang-tri-va-nhung-dia-diem-luu-niem-su-kien-81-ngay-dem-nam-1972-2975",
+    "Khúc tráng ca 81 ngày đêm bảo vệ Thành cổ Quảng Trị — Cổng TTĐT Bộ Quốc phòng — https://mod.gov.vn/vn/noi-dung/sa-cdcs/sa-cdcs-tt/83466d2f-7c27-40ec-abd1-57e8ca4ee610",
     "Báo QĐND — 81 ngày đêm rực lửa tại Thành Cổ Quảng Trị năm 1972 (Bài 1)",
-    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
-    "Lịch sử Việt Nam (Viện Sử học)"
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
     {
@@ -179,5 +383,35 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
       "buoc": 7
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Tổn thất phía ta: hai nguồn nhà nước ghi hai mức khác nhau — Báo Nhân Dân viết «hàng nghìn người con ưu tú của Tổ quốc đã ngã xuống», Cục Di sản văn hoá viết ở bến sông Thạch Hãn «hàng vạn chiến sỹ đã hy sinh, nằm lại trên mảnh đất này». Theo bất biến #4 của dự án, nêu cả hai kèm hai nguồn, không chọn bản gọn hơn và không tự quy ra một con số. Vị trí các chốt và địa điểm lưu niệm lấy theo hồ sơ di tích quốc gia đặc biệt của Cục Di sản văn hoá (Quyết định 2383/QĐ-TTg ngày 09/12/2013). loai_xung_dot=noi-chien: lực lượng bộ binh hai bên đều là người Việt; hoả lực không quân và hải quân Mỹ chi viện cho bên phản kích nhưng không phải lực lượng bộ binh trực tiếp giành giật Thành cổ. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "28/6/1972 – 16/9/1972",
+  "luc_luong": {
+    "doi_thu": {
+      "quan_so": "4 sư đoàn mạnh nhất, trong đó có toàn bộ sư đoàn dù và sư đoàn lính thuỷ đánh bộ thuộc lực lượng cơ động chiến lược; lực lượng tham gia tương đương 13 trung đoàn bộ binh, 17 tiểu đoàn pháo binh, 5 thiết đoàn",
+      "vu_khi": [
+        "Nhiều đơn vị không quân và pháo hạm của Mỹ chi viện"
+      ]
+    },
+    "nguon": [
+      "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html"
+    ]
+  },
+  "ton_that": {
+    "ta": [
+      {
+        "so": "Hàng nghìn người con ưu tú của Tổ quốc đã ngã xuống",
+        "nguon": "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html"
+      },
+      {
+        "so": "Hàng vạn chiến sĩ đã hy sinh, nằm lại ở bến sông Thạch Hãn",
+        "nguon": "Di tích lịch sử Thành cổ Quảng Trị và những địa điểm lưu niệm sự kiện 81 ngày đêm năm 1972 — Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-thanh-co-quang-tri-va-nhung-dia-diem-luu-niem-su-kien-81-ngay-dem-nam-1972-2975"
+      }
+    ],
+    "doi_thu": "2 sư đoàn cơ động chiến lược bị tiêu diệt, 26.000 quân bị diệt, 71 bị bắt sống, 19 tiểu đoàn bị đánh thiệt hại nặng; 349 xe quân sự bị phá hỏng (trong đó 200 xe tăng và thiết giáp), 205 máy bay bị bắn rơi, ta thu 500 súng các loại",
+    "nguon": [
+      "81 ngày đêm bảo vệ Thành cổ Quảng Trị — Báo Nhân Dân — https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html"
+    ]
+  }
 }

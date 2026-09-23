@@ -101,6 +101,15 @@
   --lib-badge-nen: var(--brand-dam);
 }
 
+/* Ban đêm: viền phải SÁNG hơn nền mới thấy — #8a8378 là giá trị đã đo cho
+   chế độ đọc tối của chính thư viện (4,63:1). Nền tab chọn và badge đi theo
+   điểm nhấn sáng, chữ trên đó là --chu-tren-dac. */
+:root[data-che-do="toi"] {
+  --lib-vien: #8a8378;
+  --lib-tab-chon-nen: var(--brand);
+  --lib-badge-nen: var(--nhan);
+}
+
 /* ── Kích cỡ cửa sổ ──────────────────────────────────────────────────────
    Bộ chọn thuộc tính thắng rule gốc `#library-panel { width: min(520px,94vw) }`
    ở style.css mà không phải sửa rule đó.
@@ -184,17 +193,19 @@
 
 .lib-tab:hover { background: var(--lop-brand-nhe); }
 
-.lib-tab-chon {
+/* :hover đi kèm vì .lib-tab:hover (0,2,0) thắng .lib-tab-chon (0,1,0): tab
+   đang chọn mất nền đậm khi rê chuột, chữ sáng còn 1,10:1. */
+.lib-tab-chon,
+.lib-tab-chon:hover {
   background: var(--lib-tab-chon-nen);
   border-color: var(--lib-tab-chon-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   font-weight: var(--dam-manh);
 }
 
 .lib-tab-so {
   font-size: var(--co-2xs);
   font-variant-numeric: tabular-nums;
-  opacity: 0.85;
 }
 
 .lib-chu-de-mo-ta {
@@ -264,7 +275,7 @@
   padding: 0 0.4rem;
   border-radius: var(--bo-vua);
   background: var(--lib-badge-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   font-size: var(--co-2xs);
   font-weight: var(--dam-manh);
 }
@@ -308,7 +319,7 @@
 .lib-tp-tinh:hover {
   background: var(--lib-tab-chon-nen);
   border-color: var(--lib-tab-chon-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 
 /* ═══ Khung đọc ═══════════════════════════════════════════════════════════ */
@@ -368,7 +379,7 @@
 .lib-tc-chon {
   background: var(--lib-tab-chon-nen);
   border-color: var(--lib-tab-chon-nen);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   font-weight: var(--dam-manh);
 }
 
@@ -477,7 +488,7 @@
 
 .lib-giai-nghia dt {
   font-weight: 700;
-  color: var(--brand);
+  color: var(--brand-chu);
 }
 
 .lib-giai-nghia dd {
@@ -723,10 +734,13 @@
 
 /* ═══ Khối văn thơ trong TRANG TỈNH ═══════════════════════════════════════ */
 
-.lib-tinh-ds { display: grid; gap: var(--s-4); }
-.lib-tinh-muc { padding-bottom: var(--s-3); border-bottom: 1px solid var(--vien); }
+.lib-tinh-ds { display: grid; gap: var(--s-2); margin-top: var(--s-2); }
+.lib-tinh-muc { padding-bottom: var(--s-2); border-bottom: 1px solid var(--vien); }
 .lib-tinh-muc:last-child { border-bottom: none; }
-.lib-tinh-muc h4 { margin-bottom: 0.2rem; font-size: var(--co-md); }
+/* Dòng gập của từng bài: tên đậm, tác giả · năm · thể loại nhạt bên dưới. */
+.lib-tinh-muc > summary { font-weight: normal; }
+.lib-tinh-muc > summary .lib-tinh-ten { font-weight: 600; font-size: var(--co-md); }
+.lib-tinh-muc > summary .lib-phu { display: block; margin-top: 0.1rem; }
 .lib-tinh-muc > * + * { margin-top: 0.6rem; }
 
 /* Lời giải nghĩa của ca dao · tục ngữ · thành ngữ.
@@ -739,6 +753,187 @@
   line-height: 1.62;
 }
 .lib-y-nghia > b {
-  color: var(--brand);
+  color: var(--brand-chu);
   font-weight: var(--dam-manh);
+}
+
+
+/* ═══ Tác phẩm toàn văn: mục lục chương + tiến độ đọc ════════════════════════
+
+   Ba nền đọc (mặc định · ngà · tối) đã có ba bảng màu riêng, mỗi bảng khai
+   bằng một danh sách bộ chọn dài. Khối này CỐ Ý không nối vào ba danh sách đó
+   mà dựng màu từ `currentColor`: nền nào cũng có màu chữ đúng của nó, nên
+   viền và vạch tự bám theo mà không phải khai ba lần — và thêm một nền đọc
+   thứ tư sau này cũng không phải quay lại sửa chỗ này.
+
+   Giá trị đặc trước, `color-mix` sau: trình duyệt không hiểu `color-mix` bỏ
+   qua dòng thứ hai và vẫn có viền thật, không phải viền trong suốt. */
+
+.lib-muc-luc {
+  margin: 0.9em 0 0;
+  padding: 0.7em 0.9em;
+  border: 1px solid #9a8f86;
+  border-color: color-mix(in srgb, currentColor 24%, transparent);
+  border-radius: var(--bo-vua);
+}
+.lib-muc-luc-nhan {
+  margin: 0 0 0.5em;
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+.lib-muc-luc ol {
+  /* Số chương do CSS đếm, không do dữ liệu ghi: tiêu đề chương trong nguồn hay
+     đã mang sẵn chữ «Chương 3» hoặc «Khúc 3» theo cách gọi riêng của tác phẩm.
+     Đánh số cứng ở đây sẽ ra «3. Khúc 3». */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: chuong;
+  display: grid;
+  gap: 0.15em;
+}
+.lib-muc-luc li { counter-increment: chuong; }
+.lib-muc-luc button {
+  display: flex;
+  gap: 0.6em;
+  width: 100%;
+  min-height: var(--lib-cham);
+  align-items: baseline;
+  padding: 0.35em 0.4em;
+  border: none;
+  border-radius: var(--bo-nho);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: var(--co-sm);
+  text-align: left;
+  cursor: pointer;
+}
+.lib-muc-luc button::before {
+  content: counter(chuong);
+  min-width: 1.6em;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.55;
+}
+.lib-muc-luc button:hover,
+.lib-muc-luc button:focus-visible {
+  background: #0000000f;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+/* Đầu chương. Vạch kẻ TRÊN chứ không phải dưới: mắt đọc xong một chương cần
+   một khoảng nghỉ trước khi vào chương sau, và vạch nằm trên chính là khoảng
+   nghỉ đó. Vạch nằm dưới lại dính tiêu đề vào khối chữ theo sau nó. */
+.lib-chuong + .lib-chuong .lib-chuong-ten {
+  margin-top: 1.5em;
+  padding-top: 1.1em;
+  border-top: 1px solid #9a8f86;
+  border-top-color: color-mix(in srgb, currentColor 18%, transparent);
+}
+.lib-chuong-ten {
+  margin: 1em 0 0.4em;
+  font-size: var(--co-md);
+  font-weight: var(--dam-manh);
+  /* scroll-margin: mục lục nhảy tới bằng scrollIntoView, không có khoảng này
+     thì tiêu đề dính sát mép trên và trông như bị cắt. */
+  scroll-margin-top: 1rem;
+  scroll-margin-left: 1rem;
+}
+
+/* Vạch tiến độ. Dính đáy khung đọc để lúc nào cũng thấy còn bao xa —
+   đó là điểm khác giữa một trang web dài và một máy đọc sách. */
+.lib-tien-do {
+  position: sticky;
+  /* `bottom: 0` ghim vào mép HỘP NỘI DUNG của #library-panel, mà panel có
+     `padding: 1rem` — nên còn đúng 1rem bên dưới vạch là chữ của bài lộ ra,
+     đo trên Chrome thật: đáy vạch 646,7 · đáy panel 664,8. Ghim thấp thêm
+     đúng 1rem đó rồi đệm lại bằng padding: nền phủ kín tới mép panel, phần
+     nhìn thấy của vạch không xê dịch. Sửa `padding` của #library-panel thì
+     phải sửa cả hai số ở đây. */
+  bottom: -1rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-top: 1.2em;
+  padding: 0.5em 0 calc(1rem + 0.2em);
+  /* Nền phải ĐẶC. `inherit` cho ra trong suốt ở chế độ mặc định (chính
+     .lib-doc không tô nền, panel tô hộ) nên chữ của bài cuộn xuyên qua sau
+     con số phần trăm — đo trên Chrome thật, vach_bg = rgba(0,0,0,0).
+     Ba nền đọc đặt lại giá trị này ở khối riêng của chúng phía dưới. */
+  background: var(--mat);
+  border-top: 1px solid #9a8f86;
+  border-top-color: color-mix(in srgb, currentColor 14%, transparent);
+  font-size: var(--co-2xs);
+  font-variant-numeric: tabular-nums;
+}
+/* Đường ray là phần tử THẬT chứ không phải `::before`. Vạch chạy định vị
+   tuyệt đối theo phần trăm, nên nó phải đo theo bề rộng của chính đường ray —
+   đo theo cả khối .lib-tien-do thì 100% sẽ vượt qua cả ô số phần trăm. */
+.lib-tien-do-ray {
+  position: relative;
+  flex: 1;
+  height: 3px;
+  border-radius: 999px;
+  background: #0000001f;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+}
+.lib-tien-do-thanh {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.62;
+  transition: width 0.12s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lib-tien-do-thanh { transition: none; }
+}
+.lib-tien-do-so {
+  min-width: 2.6em;
+  text-align: right;
+  opacity: 0.62;
+}
+
+/* Vạch tiến độ theo ba nền đọc. Phải khai riêng vì nền của nó là nền ĐẶC —
+   xem chú thích ở .lib-tien-do. */
+.lib-doc[data-nen="nga"] .lib-tien-do { background: var(--doc-nga-nen); }
+.lib-doc[data-nen="toi"] .lib-tien-do { background: var(--doc-toi-nen); }
+
+/* ═══ Nút mở trình đọc toàn văn (src/doc-sach.ts) ═════════════════════════
+   Nút này đứng ở HAI nền khác nhau: hàng danh sách (nền panel) và đầu khung
+   đọc (nền mặc định · ngà · tối). Dựng màu từ `currentColor` thay vì nối vào
+   ba danh sách bộ chọn `[data-nen]` phía trên — cùng lý do đã ghi ở khối
+   .lib-muc-luc, và ở đây nó còn tiết kiệm đúng ba lần khai.
+
+   Viền 55% currentColor, đo trên cả ba nền: 3,59:1 (mặc định) · 3,14:1 (ngà)
+   · 5,11:1 (tối) — đều qua ngưỡng 3:1 của WCAG 1.4.11 cho ranh giới điều
+   khiển. 34% của bản nháp chỉ được 1,9:1 trên nền sáng. */
+.lib-mo-doc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: var(--lib-cham);
+  padding: 0.3rem 0.85rem;
+  border: 1px solid #8a8682;
+  border-color: color-mix(in srgb, currentColor 55%, transparent);
+  border-radius: var(--bo-vien-tron);
+  background: #0000000f;
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  color: inherit;
+  font-family: var(--font);
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.lib-mo-doc:hover,
+.lib-mo-doc:focus-visible {
+  background: #0000001f;
+  background: color-mix(in srgb, currentColor 18%, transparent);
 }

@@ -8,6 +8,162 @@ Tổng hợp từ 17 file kế hoạch rời rạc của các phiên 2026-07-17 
 
 ---
 
+## 2026-09-23 (đợt 2) — Icon vẽ tay cho 15 lớp, hồ sơ tỉnh gọn 33 lần, smoke hết mù
+
+| Việc | Trước | Sau |
+|---|---|---|
+| Hồ sơ Hà Nội, chế độ trẻ em | cao 109.193px, 115.479 ký tự đang hiện | 3.270px, 2.084 ký tự |
+| Hồ sơ Hà Nội, người lớn | 60.468px | 2.245px |
+| Icon lớp phủ trên bản đồ 2D | emoji; UNESCO · di tích QG · danh nhân chung 🏛️ | 15 lớp vẽ tay, mỗi lớp một hình |
+| Smoke S7 | 0 request bắt được → hỏng giả | 7 request · 0,51 MB, 9/0 |
+
+- **Hồ sơ tỉnh**: khối «Văn thơ, ca dao & bài hát» mở sẵn và in toàn văn mọi bài (Hà Nội 117 bài) — 98% chữ của hồ sơ. Giờ gập cả khối lẫn từng bài. Không bỏ chữ nào.
+- **Icon vẽ tay** (`src/icon-ve-tay.ts`): path SVG vẽ bằng `Path2D`, đồng bộ — không có lúc lớp đòi ảnh chưa giải mã. 7 lớp nhân vật (đặc tả I01–I06, rút gọn cho 16px) + 8 lớp di sản · di tích · lễ hội. Nhãn chữ vẫn là emoji.
+- **Smoke S7**: nguyên nhân là `sleep(7000)` cố định trong khi trang giờ cần ~12s mới sẵn sàng; đo trước khi trang fetch gì. Đổi sang chờ điều kiện, trần 60s.
+- **Ô «Đối chiếu với»** cùng kiểu ô «Thời kỳ»; nhãn trên ô chọn hết bị ép 44px; ghi chú rỗng hết vẽ vạch.
+- **🔴 Nhãn chủ quyền bị lớp phủ vẽ đè** — điểm «Hải chiến Hoàng Sa 1974», «Sự kiện Gạc Ma», «Quần đảo Hoàng Sa» (bản đồ cổ) che chữ trong nhãn. `verify:chuquyen` V4 cũ vẫn xanh vì nhãn *được vẽ*. Nay nhãn luôn lên trên cùng sau mỗi lần thêm lớp, và V4 đỏ khi có lớp nào nằm trên nhãn (kiểm đỏ: bỏ bản sửa → 70 lớp nằm trên).
+- **Cổng tương phản mở rộng**: đo thêm chữ SVG (quầng = nền), hover + focus mọi kiểu điều khiển (`CSS.forcePseudoState`), và vòng focus (≥3:1, hoặc VÔ HÌNH). Kiểm đỏ bằng 3 lỗi cài giả. Bắt 7 lỗi thật — vòng focus trên topbar/thanh thời gian 1,03–2,46:1, tab thư viện đang chọn khi hover 1,10:1 — sửa hết, 0/42.
+- **Icon vẽ tay cho đủ 35 lớp phủ** (tổng hợp): 7 nhân vật + 8 di sản + 5 lớp từng chung emoji + 15 lớp còn lại. Hai bản vẽ bị loại khi soát bảng icon: kiếm giữa khiên đọc thành thánh giá, mũ cánh chuồn quá dẹt.
+
+## 2026-09-23 — Chế độ ban đêm + cổng đo tương phản toàn trang
+
+Mục treo từ 2026-08-11 («chế độ tối — yêu cầu ĐÃ CÓ nhưng cố ý chưa ship vì chưa đo được»). Nút thắt thật là **không có cách đo lại cả trang** mỗi lần đổi token, nên làm cổng đo trước, bảng màu sau.
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Chế độ xem | **2 → 3** (người lớn · trẻ em · **ban đêm**), nút xoay vòng; chưa chọn lần nào thì theo `prefers-color-scheme` của máy | `src/chedo.ts` |
+| Trạng thái giao diện được đo | **14 / chế độ × 3 chế độ = 42** (mặc định, hồ sơ tỉnh, 10 panel, sa đồ chi tiết, popup lớp phủ) | `npm run verify:tuongphan` |
+| Nhóm chữ trượt WCAG 1.4.3 ở **hai chế độ CŨ** | **~100 → 0** (lượt đầu: 72 nhóm người lớn trên 8 trạng thái; mở rộng lên 14 trạng thái lộ thêm 30) | như trên |
+| Nhóm chữ trượt ở chế độ ban đêm | **0 / 42 trạng thái** | như trên |
+| Chủ quyền | **13/13 thời kỳ**, V4 bật 35 lớp phủ vẫn vẽ nhãn | `verify:chuquyen` |
+| Smoke | **9 đạt · 0 hỏng** (chạy riêng; chạy song song với cổng tương phản thì S7 hỏng vì tranh CPU — đúng loại phi tất định PLAN đã ghi) | `npm run smoke` |
+| Cổng dữ liệu · build | **14/14** · `tsc` exit 0 · `vite` xanh | `validate` · `build` |
+
+**Lỗi tương phản CÓ SẴN mà cổng bắt được — đều là số đo, không phải cảm nhận:**
+- Topbar lúc mở **truyện thiếu nhi**: chữ vàng trên gradient vàng **1,49:1** — gần như vô hình. Gốc: `body.kid-mode #topbar` đi từ `--nhan-sang`.
+- Nút topbar người lớn **4,18:1**: số 4,74 ghi trong theme.css là đo trên nền đỏ TRẦN, chưa tính lớp phủ `--nen-mat-mo` (làm SÁNG nền). Nay làm TỐI: 5,50.
+- **Vàng thếp `--nhan` #b3791f trượt cả hai chiều**: làm chữ 3,52–3,64, làm nền dưới chữ sáng 3,64 (tab quốc gia, nút sa đồ, Nam tiến, chip thời kỳ). Hạ về **#94620f** — tông vàng gần nhất đạt cả hai (4,70–5,14).
+- **Ghi chú pháp lý cương vực** `#lc-ghi-chu` **3,12:1** — thứ cuối cùng được phép khó đọc. Nay `--luu-chu` 6,00.
+- Chữ xám `--chu-nhat` trên popup trắng **3,99** (nguồn, tên tỉnh, chú thích ảnh) → #766a61, 5,24.
+- Chế độ trẻ em: tên lớp + badge lớp màu cam `--brand` **3,55 / 3,06** → token mới `--brand-chu`; dải màu `--the-*` với chữ trắng thường tới **2,94** → hạ một bậc cả sáu sắc.
+- Số đếm sa đồ mang màu `.muted` trên dải màu đặc: **1,11–1,70**. Thanh điểm Olympia: **1,44–1,93**.
+
+**Ba token mới, vì ban đêm phá vỡ các giả định ngầm của hai chế độ sáng:**
+- `--chu-tren-dac` — chữ trên nền màu đặc. 16 chỗ từng viết `color: var(--mat)`, tức «chữ màu mặt giấy», chỉ đúng khi mặt giấy sáng.
+- `--brand-chu` — màu thương hiệu khi làm CHỮ. 12 chỗ.
+- `--tieu-de-tren-nghich` — tên sản phẩm trên topbar (topbar tối ở cả ba chế độ).
+
+**Quyết định: ban đêm GIỮ bản đồ nền giấy.** Mọi lớp dữ liệu và nhãn Hoàng Sa/Trường Sa (chữ đỏ, quầng trắng) được chỉnh màu cho nền sáng (`main.ts`, `MAU_NEN_DAT`). Tối hoá bản đồ là đụng bề mặt pháp lý — việc riêng, phải qua `verify:chuquyen` và mắt người. Đã nhìn ảnh chụp: nhãn chủ quyền hiện rõ ở ban đêm.
+
+**Cổng này KHÔNG đo:** chữ trong SVG (sa đồ vẽ bằng SVG, nhãn trên bản đồ canvas), tương phản hình khối 1.4.11 (icon nút thu phóng ban đêm bị chìm — bắt bằng MẮT qua ảnh chụp `TP_ANH=<thư mục>`, không phải bằng cổng), trạng thái hover/focus, chữ trên nền ảnh (đếm riêng, hiện 0).
+
+---
+
+## 2026-09-19 — Học hai nguồn ngoài, mở khoá lớp bản đồ cổ, và một chế độ đối chiếu thời kỳ
+
+Chủ dự án gửi hai nguồn để học: `soiqualang/vietnam_map_history` và `maparchive.vn`.
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Bản đồ cổ trong kho | **19 → 22 tấm** (+3 tấm MỚI, lần đầu kể từ khi lớp này mở) | `validate_media.mjs` |
+| Bản đồ cổ **có ảnh quét** | **5 → 12** | `validate_media.mjs` |
+| Điểm neo «tên xưa ↔ tên nay» | **34 → 39** | lớp phủ sinh ra |
+| Địa điểm trên bản đồ **hiện được bản quét** | **0 → 10** | đếm `ban_do_ghi[].anh` trong lớp phủ sinh ra |
+| Tấm bản đồ ghi tên **Quần đảo Hoàng Sa** có ảnh | **9 / 14** (trải 1613 → 1838) | đọc thẳng nguồn lớp phủ trên Chrome |
+| Cổng chủ quyền | **13/13 thời kỳ**, kể cả khi bật 35 lớp phủ | `verify_chu_quyen.mjs` |
+| Trích văn tịch nguyên văn | **332 khớp · 0 lệch · 2 không tải được** | `verify_trich_van_tich.mjs` |
+| Host ảnh được phép | **1 → 2** (thêm `gallica.bnf.fr`) | CSP `index.html` + cổng |
+| Nguồn ngoài đã thẩm định và ghi sổ | **22** | `docs/references/links-nguoi-dung.md` |
+| Cổng dữ liệu | **14/14 xanh** | `npm run validate` |
+| Build | `tsc` exit 0 · `vite` xanh | `npm run build` |
+
+**Phán quyết hai nguồn được gửi — cả hai KHÔNG dùng được dữ liệu:**
+- `soiqualang/vietnam_map_history`: `license: null` (tự gọi API xác nhận) → không được tái sử dụng. Không phải bộ vector ranh giới theo thời kỳ như tên gọi gợi ý, mà là 1 geojson ranh giới tỉnh **ngày nay** (không năm, không nguồn) + 72 ảnh atlas phục vụ qua GeoServer WMS. **Thiếu hẳn Hoàng Sa – Trường Sa** → trượt bất biến #1. Bỏ hoang từ 2021-02-23, demo chết.
+- `maparchive.vn`: dự án tình nguyện cá nhân → không đủ tư cách `sources[]`. **Không có một tư liệu Hoàng Sa/Trường Sa nào** (kiểm ba đường độc lập, kể cả gọi thẳng API tìm kiếm). Giá trị thật: nó trỏ về **bốn kho có định danh** — BnF Gallica, Humazur, David Rumsey, Library of Congress. Đó mới là mỏ.
+
+**Ba việc đã làm:**
+1. **Ảnh bản đồ cổ hiện ngay trên bản đồ** (`d8c5662`) — trước đây tư liệu chủ quyền chỉ đọc được ở Thư viện, người xem bản đồ không bao giờ thấy mặt giấy. Kèm hai lỗi tự bắt được: ảnh gốc 10100×6906 (vá bằng bản thu nhỏ 960px, 5 ảnh = 1,76 MB) và ảnh tràn khung do grid `max-content`.
+2. **Chế độ «Đối chiếu với»** (`f9cab82`) — vẽ ranh giới một thời kỳ khác đè lên thời kỳ đang xem, nét đứt. Trả lời bằng hình câu «tỉnh cũ của tôi giờ nằm đâu». Học mô hình Layer Stack của maparchive nhưng làm bằng dữ liệu sẵn có, không thêm phụ thuộc.
+3. **Mở khoá BnF Gallica** (`bd52ea8`) — nút thắt thật của 12 tấm còn lại là **CSP**, không phải giấy phép. Thêm một host, kèm cổng ép chuỗi ghi công BnF; thử ngược 3 lỗi cố tình, cổng bắt đủ 3/3.
+
+**Ba tấm bản đồ MỚI, tìm bằng cách quét SRU kho bản đồ BnF** — đều đã mở ảnh ra đọc từng chữ trước khi soạn mục:
+1. **Hải đồ Pháp 1737 «Banc du Pracel»** (`GE C-11224`) — trên giấy: «TONQUIN ROYAUME» · «ROY.me DE COCHINCHINE» · «GOLFE DE COCHINCHINE» · «ISLE D'HAINAN» vẽ riêng · «Banc du Pracel» là dải chấm lớn ngoài khơi bờ Cochinchine, tách hẳn khỏi Hải Nam.
+2. **Hải đồ nhà nước Pháp 1799 của Phó Đô đốc Rosily** (`GE SH 18 PF 182 P 11/1`) — xuất bản bởi Dépôt des cartes et plans de la Marine theo lệnh Bộ trưởng. Đọc được «PARACELS» chạy dọc chuỗi đảo · «l'Amphitrite» · «Lincoln» · «Maccleesfied»; bờ đối diện ghi «QUANG…», «Cham-Collao» (Cù Lao Chàm).
+3. **大清萬年一統天下全圖 — bản đồ chính thức nhà Thanh 1818** (`GE C-5353`) — «安南國» ghi như MỘT NƯỚC RIÊNG kèm đoạn chú về ba đường triều cống; quanh đó 占城 · 真臘 · 順化巷 · 清華; ngoài khơi 外羅山 (Cù Lao Ré – Lý Sơn) · 玳瑁洲 · 崑崙嶼; Hải Nam nằm trong khối màu tỉnh (瓊州 · 崖州 · 黎母山). ⚠️ Mục **không** khẳng định «không vẽ Hoàng Sa» vì mới mở 9/21 view.
+
+**Hai nghi vấn được gắn cờ, KHÔNG tự sửa, KHÔNG xoá**: «Đại Nam toàn đồ» đời Thiệu Trị ngờ trùng với «Đại Nam nhất thống toàn đồ» đã có · con số 1904 của «Hoàng triều trực tỉnh địa dư toàn đồ» cần nguồn chỉ đích danh **lần in**, không chỉ cái tên.
+
+**Hai cổng nặng chạy tay**: `verify:chuquyen` ✅ 13/13 thời kỳ, phép V4 bật 35 lớp phủ (70 lớp nằm trên nhãn) vẫn vẽ được nhãn chủ quyền · `verify_trich_van_tich` ✅ 332 khớp nguyên văn, 0 lệch, 2 không tải được (công cụ tự gắn cờ, không coi là đã kiểm).
+
+**Hai kho ĐÓNG với công cụ**: Library of Congress trả **403** mọi lượt, Harvard-Yenching trả **429** mọi lượt — ghi là «không mở được», KHÔNG kết luận kho rỗng.
+
+**Hai chỗ vênh niên đại được nêu ra chứ không lặng lẽ chọn** (bất biến #4):
+- **Blaeu**: BnF giữ ba bản khắc đề 1635 · 1638 · 1640, **không bản nào 1645** như nguồn Việt chép; Willem Blaeu mất 1638. Giữ nguyên `nam` = 1645, ghi rõ ảnh là lần in 1638.
+- **d'Anville**: bản khắc đề **M DCC XXXIV = 1734**, tập atlas đề **1737**. Hai năm đều đúng — năm khắc tấm và năm ra tập.
+- **Hoàng triều trực tỉnh địa dư toàn đồ**: đối chiếu thẳng manifest BnF cho **Date = 1879**, không phải 1904. Xác nhận quyết định «cố ý không gắn» của 2026-08-26 là đúng.
+
+**Ba tấm bị loại sau đối chiếu**: Hải Quốc Đồ Chí (file Commons là quyển 3/1852, không phải quyển 9/1842) · Hồng Đức bản đồ (nguồn ảnh là blog, nghi vẽ lại) · Giáp Ngọ Bình Nam đồ (ảnh báo, bản quyền).
+
+---
+
+## 2026-08-28 — Mở rộng 40 agent một ca dài: +645 mục lớp phủ, sa đồ 290 khớp cặp tuyệt đối, và một cổng bản quyền mới
+
+| Chỉ số | Giá trị | Đo bằng |
+|---|---|---|
+| Mục lớp phủ | **3.511 → 4.156** (+645), chạm **30/35 lớp** | đếm `items[]` từng file, đối chiếu `git show HEAD:` |
+| File dữ liệu · tổng mục | **378 → 404** · **6.722 → 7.402** | `_index/catalog.json` |
+| Sa đồ chiến dịch | **267 → 290** (+23) | `battles/_index.json` |
+| Khớp cặp lớp phủ ↔ sa đồ | **290 ↔ 290**, lệch **0** cả hai chiều | đối chiếu id `chien-dich-tran-danh` ↔ `battles/` |
+| Chủ đề thư viện | **14 → 15** — mới «Toàn văn tác phẩm kinh điển» | `literature/_chu-de.json` |
+| Toàn văn kinh điển | **11 tác phẩm · 144 dòng nguyên văn** | 3 tệp `toan-van-*.json` |
+| Sổ §9 | **192 → 238** (+46); tầng **T6 8 → 53** | `docs/section9-sensitive.json` |
+| Backlog chờ toạ độ | **610 → 563** (−47 đã geocode và nạp lên bản đồ) | `wave1-ditich-cho-xu-ly.json` |
+| Trích văn tịch nguyên văn | **247 khớp · 0 lệch · 0 không tải được** | `verify_trich_van_tich.mjs`, chạy tay 2026-08-28 |
+| Cổng dữ liệu | **14/14 xanh** | `npm run validate` |
+| Chủ quyền Hoàng Sa – Trường Sa | **13/13 thời kỳ**, kể cả khi bật 35 lớp phủ | `verify_chu_quyen.mjs` (probe Chrome) |
+| Build | `tsc` exit 0 · `vite build` xanh (46 module) | `npm run build` |
+
+**Lớp mở rộng mạnh nhất**: bảo vật quốc gia +83 (113→196) · di tích cấp tỉnh +61 · di sản phi vật thể +48 · di tích quốc gia +45 · lễ hội truyền thống +34 · danh thắng thiên nhiên +32 · truyền thuyết dân gian +24 · chiến dịch trận đánh +23 · danh nhân dân tộc thiểu số +22 · công trình kỷ lục +21.
+
+**Năm lớp không đổi số mục**: `ban-do-co` (15 — cần ảnh quét, không phải việc tra cứu) · `unesco` (13 — kiểm ra đã đủ, VN vẫn 9 Di sản Thế giới sau kỳ họp 48 Busan 7/2026) · `di-tich-qgdb` (153 — đầy đúng tổng số cả nước sau đợt 19) · `danh-nhan-van-hoa-can-hien-dai` (130) · `tri-thuc-khoa-hoc-tk20` (111). Ba lớp sau vẫn có sửa nội dung, chỉ không thêm mục.
+
+### Chủ đề thư viện mới — và cổng bản quyền đi kèm
+
+Chủ đề «Toàn văn tác phẩm kinh điển» là chỗ dự án chép **nhiều chữ của người khác nhất**, nên nó được mở cùng lúc với cổng chặn (`scripts/validate_literature.mjs`, +65 dòng). Cổng đứng trên hai rủi ro cụ thể:
+
+1. **Bản quyền bản DỊCH.** Sử thi dân gian và thơ văn trung đại tự thân đã hết bảo hộ, nhưng bản dịch/phiên âm sang tiếng Việt có bản quyền riêng của người dịch (Điều 27 Luật SHTT: đời tác giả + 50 năm). Nên `co_so_ban_quyen` là trường **bắt buộc** — không nói được vì sao một văn bản được đăng trọn vẹn thì không đăng. `ban_quyen` chỉ nhận `public-domain` hoặc `cited-excerpt`, và `cited-excerpt` bị chặn cứng ở **≤ 8 dòng**, đúng ngưỡng các tệp thư viện còn lại.
+2. **Chép từ trí nhớ mô hình.** Văn bản cổ là thứ mô hình ngôn ngữ sinh ra rất trôi chảy và rất sai. `nguon_toan_van` phải là URL — dấu vết để mọi lượt soát về sau đối chiếu từng dòng với trang gốc.
+
+Cổng này **cố ý không** kiểm chữ có đúng nguồn hay không; việc đó cần mạng và thuộc về `verify_trich_van_tich.mjs`. Nó chỉ bảo đảm rằng khi đi soát thì có đủ chỗ để bấu vào. 11 mục đầu đều giữ `trang_thai: draft` — chưa mục nào qua lượt xác minh nào.
+
+Trình đọc toàn văn nằm ở `src/thuvien.ts` (+352) và `src/thuvien.css` (+147): đọc được cả hai dạng lược đồ, `phan[].dong[]` cho tác phẩm chia chương và `nguyen_van[]` cho bài liền mạch.
+
+### Tầng T6 áp ở quy mô lớp — 8 → 53 mục
+
+Quyết định 2026-08-27 của chủ dự án (trẻ vị thành niên còn sống, tên thật, cho publish) đã là tiền lệ mở đường. Đợt này áp đúng như PLAN dặn — xếp T6 và trỏ về quyết định, **không hỏi lại** — cho 45 mục mới có định danh người còn sống. Sổ §9 lên 238 dòng; T1 thêm 1 mục.
+
+### Dấu « » và chú giải từ khó phủ nốt tab Quốc gia
+
+`src/quocgia.ts` đổi từ `esc`/`escKho` sang `escVan`/`escVanKho` của `popup-noi-dung` ở 6 chỗ dựng thẻ (phim tài liệu, danh nhân, phim giáo dục, nhạc, địa danh). Trước đó hai cơ chế đã chạy ở popup lớp phủ và hồ sơ tỉnh nhưng **không** ở tab Quốc gia — nên cùng một chuỗi «X» hiện nghiêng ở chỗ này và hiện nguyên dấu ở chỗ kia.
+
+### Ca chốt sổ — geocode, một lỗ hổng cổng, và 94 Mẹ về đúng lớp
+
+**94 Mẹ VNAH đặt nhầm lớp — chủ dự án chọn phương án A, đã chuyển.** `anh-hung-can-hien-dai` **509 → 415**, `me-vnah` **65 → 159**. Các mục vốn đã mang `loai: "me-vnah"` và id tiền tố `me-vnah-` nhưng nằm ở lớp anh hùng, nên bật lớp «Mẹ Việt Nam Anh hùng» chỉ ra 65/159 Mẹ — lớp riêng nói dối người dùng suốt từ trước. Không trùng một người nào (0 trùng id, 0 trùng tên): đặt nhầm lớp, không phải nhân bản.
+
+Kiểm **trước** khi chuyển, vì đây là chỗ dễ vỡ âm thầm: hai lớp cùng lược đồ · 0 va id · 0 dòng sổ §9 trỏ tới 94 mục · 0 dòng `MIEN_TRU_CO_HO_SO` · 0 lần id xuất hiện ở tệp nào ngoài lớp nguồn · **cả 5 script có danh sách tệp cứng** (`gen_section9`, `gen_section9_tiers`, `promote_curated`, `commons_photos`, `validate_overlays`) **đều đã liệt `me-vnah.json`** — nếu thiếu thì 94 mục lặng lẽ rơi khỏi sàng §9. Màu không đổi: lớp đích dùng `#db2777` đúng bằng màu biểu thức `match` của lớp nguồn vốn gán; nhánh ấy nay là mã chết, đã gỡ.
+
+Nghiệm thu bằng **trình duyệt thật**, không chỉ `tsc`: probe CDP đếm điểm thật sự nạp vào nguồn — `overlay-me-vnah` **159**, `overlay-anh-hung-can-hien-dai` **415**, mục đã chuyển có mặt ở lớp đích, **0 sót**; `verify:chuquyen` 13/13 xanh khi bật cả 35 lớp.
+
+**`wikidata.org` lọt qua cả 14 cổng từ trước tới nay.** `validate_nguon_cam` chỉ bác `wikipedia`/`wikisource`/`wikiwand`; `validate_overlays` chỉ đòi «≥1 nguồn ngoài Wikipedia» — nên một mục dẫn **thêm** Wikidata vẫn xanh sạch. Thực tế đang ở tình trạng đó: 3 mục `di-tich-qgdb`, và chính `nguon_chinh` của lớp khai thẳng «Toạ độ: Wikipedia/Wikidata». Đã thêm luật ở **tầng cảnh báo** (không đỏ cổng — dùng cho một toạ độ hiển thị thì có đường bào chữa): **33 → 36** cảnh báo. Hai mục thay được nguồn: `chua-doi-son` và `den-cua-ong` đổi sang node OSM xác nhận độc lập cách vị trí cũ **0,20 km** và **0,16 km**. Ba mục còn lại **cố ý giữ Wikidata** vì chưa có nguồn thay — gỡ trích dẫn mà giữ nguyên con số là giấu xuất xứ.
+
+**Geocode 9 di tích quốc gia bằng OSM**, backlog `cho_toa_do` **563 → 554**. Chi tiết và kết luận «lối OSM đã cạn» ở `PLAN.md`.
+
+**Định nghĩa thang tầng §9 (T1–T6) chuyển ra `CLAUDE.md`** — trước đó chỉ nằm trong `docs/lich-su/four-track-plan.md`, một file đã bị thay thế, và một agent đã mất công tra mới thấy.
+
+⚠️ **Bẫy công cụ, ghi để lần sau khỏi mất buổi:** heredoc của shell trong môi trường này **thu `\\` thành `\`**, bất kể ngôn ngữ đích. Bản vá đầu cho luật Wikidata vì thế ghi ra file một ký tự **BACKSPACE 0x08** thay cho `\b`; regex thành `/<BS>wikidata.org/i` — **có mặt trong file, in ra trông y hệt luật đúng, và không bao giờ khớp**. Cổng chạy xanh, số cảnh báo không đổi, không ai biết. Dính ba lần trong một ca ở ba ngữ cảnh khác nhau, kể cả ở chuỗi neo dùng để tìm-thay-thế. **Luật rút ra: thêm một luật cổng thì phải kiểm số ca bắt được có TĂNG đúng số ca đã biết trước** — «luật có mặt trong file» không chứng minh luật chạy.
+
+---
+
 ## 2026-08-27 — Mở rộng 16 agent song song, hai ca: +608 mục lớp phủ, sa đồ phủ kín 267/267, và một cổng bị bịt lỗ
 
 | Chỉ số | Giá trị | Đo bằng |

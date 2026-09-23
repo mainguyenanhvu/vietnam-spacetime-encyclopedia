@@ -534,7 +534,7 @@
       "lat": 16.44,
       "loai": "chua-nguyen",
       "nam_hien_thi": "1697–1738, ở ngôi chúa 1725–1738",
-      "mo_ta": "Chúa Nguyễn thứ bảy, tước Ninh Vương, con Nguyễn Phúc Chu. Tiếp tục việc mở mang đất đai phương Nam (vùng Hà Tiên, Long Hồ). An táng tại lăng Trường Phong, thôn Định Môn — không nhầm với Nguyễn Phúc Chu (chúa thứ sáu, Minh Vương) đã có trong CSDL.",
+      "mo_ta": "Chúa Nguyễn thứ bảy, tước Ninh Vương, con Nguyễn Phúc Chu. Tiếp tục việc mở mang đất đai phương Nam (vùng Hà Tiên, Long Hồ). An táng tại lăng Trường Phong, thôn Định Môn. Tên gần giống Nguyễn Phúc Chu — chúa thứ sáu, Minh Vương — nhưng là hai người, cha và con.",
       "dia_diem": "Lăng Trường Phong, thôn Định Môn, xã Hương Thọ, thành phố Huế",
       "do_tin_cay_toa_do": "trung",
       "trang_thai": "reviewed",
@@ -1210,6 +1210,265 @@
       "nguon": [
         "Báo VnExpress — Đền Đô - nơi ghi dấu lịch sử 8 vị vua nhà Lý — https://vnexpress.net/den-do-noi-ghi-dau-lich-su-8-vi-vua-nha-ly-4649993.html"
       ]
+    },
+    {
+      "id": "nguyen-hoang",
+      "ten": "Nguyễn Hoàng — Chúa Tiên",
+      "lon": 107.4759005,
+      "lat": 16.5237448,
+      "loai": "vua-chua",
+      "nam_hien_thi": "1525–1613, cai quản Thuận Hóa – Quảng Nam từ 1558 đến khi mất (chúa Nguyễn đầu tiên)",
+      "mo_ta": "Con thứ của An Thành hầu Nguyễn Kim, xin vào trấn thủ Thuận Hóa năm 1558 để tránh sự nghi kỵ của anh rể Trịnh Kiểm, đặt nền móng cơ nghiệp 9 đời chúa Nguyễn ở Đàng Trong. Từ căn cứ ban đầu, ông từng bước mở mang về phía Nam, lập phủ Phú Yên năm 1611. Lăng mộ ban đầu táng tại núi Thạch Hãn (Quảng Trị), sau cải táng về Huế; năm 1808 vua Gia Long — hậu duệ nhiều đời của ông — cho xây lại quy mô, đặt tên lăng Trường Cơ.",
+      "dia_diem": "Lăng Trường Cơ, thôn La Khê Trẹm, xã Hương Thọ (nay phường Hương Trà), thành phố Huế",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Cục Văn thư và Lưu trữ nhà nước — archives.org.vn (Khởi công dự án bảo tồn tu bổ và tôn tạo di tích lăng Trường Cơ) — https://www.archives.org.vn/tin-tong-hop/khoi-cong-du-an-bao-ton-tu-bo-va-ton-tao-di-tich-lang-truong-co.htm"
+      ],
+      "ghi_chu_bien_tap": "Tự soát: bản nháp đầu ghi Gia Long là 'cháu bốn đời' của Nguyễn Hoàng — sai, vì giữa hai người còn 9 đời chúa Nguyễn (đã nêu ngay trong cùng câu). Đã sửa thành 'hậu duệ nhiều đời' để không đưa số cụ thể chưa kiểm chứng."
+    },
+    {
+      "id": "mac-dang-doanh",
+      "ten": "Mạc Đăng Doanh",
+      "lon": 106.6687155,
+      "lat": 20.7508299,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "?–1540, trị vì 1530–1540",
+      "mo_ta": "Con Mạc Đăng Dung, được cha nhường ngôi năm 1530 dù Đăng Dung vẫn nắm thực quyền với danh nghĩa Thái thượng hoàng. Đóng đô tại Dương Kinh (Cổ Trai, nay Kiến Thụy, Hải Phòng) — kinh đô hướng biển đầu tiên của nước ta, xây dựng cung điện, trường học, đền chùa quy mô lớn. Cung điện, lăng tẩm nhà Mạc tại Dương Kinh bị quân Lê – Trịnh phá huỷ năm 1592, nay chỉ còn dấu tích.",
+      "dia_diem": "Khu tưởng niệm Vương triều Mạc, làng Cổ Trai, xã Kiến Thụy, thành phố Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND thành phố Hải Phòng — haiphongnews.gov.vn (Vương triều nhà Mạc - Dấu tích kinh đô đầu tiên trên đất Hải Phòng) — https://haiphongnews.gov.vn/vn/du-lich/vuong-trieu-nha-mac-dau-tich-kinh-do-dau-tien-tren-dat-hai-phong-ct463.html"
+      ],
+      "ghi_chu_bien_tap": "Chưa tra được năm sinh cụ thể qua trang đã mở — dùng dấu '?' theo quy ước đã có trong file (xem mục Hồ Quý Ly)."
+    },
+    {
+      "id": "mac-phuc-hai",
+      "ten": "Mạc Phúc Hải",
+      "lon": 106.6687155,
+      "lat": 20.7508299,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì 1541–1546",
+      "mo_ta": "Con Mạc Đăng Doanh, nối ngôi năm 1541, tiếp tục chính sách của các vua Mạc trước tại kinh đô Dương Kinh. Sử liệu nhà Mạc về giai đoạn này còn lại khá ít do bị nhà Lê – Trịnh phá huỷ tư liệu sau khi giành lại Thăng Long.",
+      "dia_diem": "Khu tưởng niệm Vương triều Mạc, làng Cổ Trai, xã Kiến Thụy, thành phố Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND thành phố Hải Phòng — haiphongnews.gov.vn (Vương triều nhà Mạc - Dấu tích kinh đô đầu tiên trên đất Hải Phòng) — https://haiphongnews.gov.vn/vn/du-lich/vuong-trieu-nha-mac-dau-tich-kinh-do-dau-tien-tren-dat-hai-phong-ct463.html"
+      ],
+      "ghi_chu_bien_tap": "Quan hệ cha con giữa các vua Mạc (Đăng Dung – Đăng Doanh – Phúc Hải – Phúc Nguyên) là kiến thức phổ thông, không có trong nguồn haiphongnews.gov.vn đã mở (nguồn này chỉ liệt kê tên và năm trị vì) — bỏ chữ 'trưởng' (con cả) vì không kiểm chứng được ngôi thứ, chỉ giữ quan hệ cha con."
+    },
+    {
+      "id": "mac-phuc-nguyen",
+      "ten": "Mạc Phúc Nguyên",
+      "lon": 106.6687155,
+      "lat": 20.7508299,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì 1547–1561",
+      "mo_ta": "Con Mạc Phúc Hải, lên ngôi khi còn nhỏ tuổi (1547), việc triều chính do các đại thần như Mạc Kính Điển phụ chính. Giai đoạn này nhà Mạc phải đối phó ngày càng gay gắt với lực lượng Lê Trung Hưng do Nguyễn Kim rồi Trịnh Kiểm gây dựng ở Thanh Hóa.",
+      "dia_diem": "Khu tưởng niệm Vương triều Mạc, làng Cổ Trai, xã Kiến Thụy, thành phố Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND thành phố Hải Phòng — haiphongnews.gov.vn (Vương triều nhà Mạc - Dấu tích kinh đô đầu tiên trên đất Hải Phòng) — https://haiphongnews.gov.vn/vn/du-lich/vuong-trieu-nha-mac-dau-tich-kinh-do-dau-tien-tren-dat-hai-phong-ct463.html"
+      ]
+    },
+    {
+      "id": "mac-mau-hop",
+      "ten": "Mạc Mậu Hợp",
+      "lon": 106.6687155,
+      "lat": 20.7508299,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "?–1592, trị vì 1562–1592 (vua cuối cùng nhà Mạc chính thống)",
+      "mo_ta": "Lên ngôi từ nhỏ (1562), là vị vua cuối cùng của nhà Mạc thời kỳ đóng đô Thăng Long — Dương Kinh. Năm 1592, quân Lê – Trịnh do Trịnh Tùng chỉ huy đánh chiếm Thăng Long và phá huỷ kinh đô Dương Kinh, chấm dứt 65 năm nhà Mạc chính thống; con cháu họ Mạc sau đó lui lên cát cứ Cao Bằng thêm gần một thế kỷ.",
+      "dia_diem": "Khu tưởng niệm Vương triều Mạc, làng Cổ Trai, xã Kiến Thụy, thành phố Hải Phòng",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "UBND thành phố Hải Phòng — haiphongnews.gov.vn (Vương triều nhà Mạc - Dấu tích kinh đô đầu tiên trên đất Hải Phòng) — https://haiphongnews.gov.vn/vn/du-lich/vuong-trieu-nha-mac-dau-tich-kinh-do-dau-tien-tren-dat-hai-phong-ct463.html"
+      ]
+    },
+    {
+      "id": "le-trang-tong",
+      "ten": "Lê Trang Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1514–1548, trị vì 1533–1548 (vua đầu tiên nhà Lê Trung Hưng)",
+      "mo_ta": "Tên thật Lê Duy Ninh, được cựu thần Nguyễn Kim tìm thấy và tôn lên ngôi tại Ai Lao năm 1533 với thân phận dòng dõi nhà Lê, mở đầu thời kỳ Lê Trung Hưng đối lập với nhà Mạc ở Thăng Long — khởi đầu cục diện Nam – Bắc triều kéo dài suốt thế kỷ 16.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ (thôn Kiều Đại, làng Bố Vệ cũ), thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html",
+        "Khu di tích Lam Kinh — ditichlamkinh.vn (Triều đại Hậu Lê – Lê Trung Hưng 1533-1788) — https://ditichlamkinh.vn/m/vi/trieu-dai-hau-le-le-trung-hung-1533---1788--AAE7D4C3727B50CDB072EFD1BC60838F.html",
+        "TP Thanh Hóa — tpthanhhoa.thanhhoa.gov.vn (Thái miếu nhà Hậu Lê) — https://tpthanhhoa.thanhhoa.gov.vn/web/trang-chu/gioi-thieu/di-tich-danh-thang/thai-mieu-nha-hau-le(1).html"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ neo tại Thái miếu nhà Hậu Lê (Bố Vệ) — nơi nguồn xác nhận thờ 27 vị hoàng đế thời Hậu Lê; đây là nơi thờ chung của cả dòng Lê Trung Hưng, không phải lăng mộ riêng từng vị. | Tự soát: bản nháp đầu ghi thẳng 'con vua Lê Chiêu Tông' — quan hệ huyết thống chính xác của Lê Trang Tông với các vua Lê trước là điểm nhiều sách sử tranh luận (ông được Nguyễn Kim 'tìm thấy' ở Ai Lao khi đã lớn), không xuất hiện rõ trong hai trang đã mở — đã sửa thành 'thân phận dòng dõi nhà Lê' để không khẳng định một quan hệ cha con chưa chắc chắn."
+    },
+    {
+      "id": "le-trung-tong",
+      "ten": "Lê Trung Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì 1548–1556",
+      "mo_ta": "Con trưởng Lê Trang Tông, lên ngôi năm 15 tuổi sau khi cha mất, tiếp tục cuộc chiến Nam – Bắc triều chống nhà Mạc dưới sự phò tá của Trịnh Kiểm. Mất sớm, không có con nối dõi trực hệ.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html",
+        "Khu di tích Lam Kinh — ditichlamkinh.vn (Triều đại Hậu Lê – Lê Trung Hưng 1533-1788) — https://ditichlamkinh.vn/m/vi/trieu-dai-hau-le-le-trung-hung-1533---1788--AAE7D4C3727B50CDB072EFD1BC60838F.html"
+      ],
+      "ghi_chu_bien_tap": "Nguồn scov.gov.vn ghi sinh 1533/mất 1556 nhưng số tuổi thọ nêu (22) không khớp phép trừ hai năm này (tính ra 23) — không đưa năm sinh vào mô tả để tránh sai số, chỉ giữ năm trị vì đã đối chiếu khớp giữa hai nguồn."
+    },
+    {
+      "id": "le-anh-tong",
+      "ten": "Lê Anh Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1531–1573, trị vì 1556–1573",
+      "mo_ta": "Lên ngôi sau khi Lê Trung Tông mất sớm, giữa lúc quyền lực triều đình nằm trong tay Trịnh Kiểm rồi các con Trịnh Kiểm. Triều đại ông tiếp tục cuộc chiến Nam – Bắc triều; về cuối đời bị Trịnh Tùng ép phải rời kinh rồi qua đời.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html",
+        "Khu di tích Lam Kinh — ditichlamkinh.vn (Triều đại Hậu Lê – Lê Trung Hưng 1533-1788) — https://ditichlamkinh.vn/m/vi/trieu-dai-hau-le-le-trung-hung-1533---1788--AAE7D4C3727B50CDB072EFD1BC60838F.html"
+      ],
+      "ghi_chu_bien_tap": "Bỏ chi tiết 'Trung Tông không con nối dõi' và 'bỏ trốn' (bản nháp đầu) vì không xác nhận được qua hai trang đã mở, chỉ giữ trình tự lên ngôi và bối cảnh quyền lực đã xác nhận."
+    },
+    {
+      "id": "le-the-tong",
+      "ten": "Lê Thế Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì 1573–1599",
+      "mo_ta": "Lên ngôi năm 1573, dưới thời ông quân Lê – Trịnh giành lại Thăng Long từ nhà Mạc năm 1592, kết thúc 65 năm Nam – Bắc triều. Từ đây bắt đầu cục diện vua Lê ở ngôi trên danh nghĩa còn thực quyền nằm trong tay chúa Trịnh, kéo dài suốt hơn 200 năm sau.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html",
+        "Khu di tích Lam Kinh — ditichlamkinh.vn (Triều đại Hậu Lê – Lê Trung Hưng 1533-1788) — https://ditichlamkinh.vn/m/vi/trieu-dai-hau-le-le-trung-hung-1533---1788--AAE7D4C3727B50CDB072EFD1BC60838F.html"
+      ]
+    },
+    {
+      "id": "le-kinh-tong",
+      "ten": "Lê Kính Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì 1600–1619",
+      "mo_ta": "Lên ngôi năm 1600 sau một giai đoạn biến động ngắn của nhà Lê Trung Hưng, dưới quyền chi phối của chúa Trịnh Tùng. Ở ngôi 19 năm, một trong những đời vua Lê Trung Hưng đầu tiên hoàn toàn không còn thực quyền chính sự trước phủ chúa Trịnh.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html",
+        "Khu di tích Lam Kinh — ditichlamkinh.vn (Triều đại Hậu Lê – Lê Trung Hưng 1533-1788) — https://ditichlamkinh.vn/m/vi/trieu-dai-hau-le-le-trung-hung-1533---1788--AAE7D4C3727B50CDB072EFD1BC60838F.html"
+      ],
+      "ghi_chu_bien_tap": "Bản nháp đầu có chi tiết 'bị ép thắt cổ 1619, âm mưu lật đổ Trịnh Tùng cùng Trịnh Xuân' lấy từ kiến thức nền, KHÔNG xuất hiện trong hai trang đã mở (chỉ xác nhận năm trị vì 1600-1619) — đã xoá khỏi mo_ta khi tự soát, chỉ giữ phần đã xác minh."
+    },
+    {
+      "id": "le-than-tong",
+      "ten": "Lê Thần Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì hai lần: 1619–1643 và 1649–1662",
+      "mo_ta": "Vị vua hiếm hoi trong sử Việt hai lần lên ngôi: lần đầu 1619–1643 rồi nhường ngôi cho con là Lê Chân Tông, lần hai 1649–1662 sau khi Chân Tông mất sớm. Trong số các hoàng hậu, phi tần của ông có cả người gốc Hà Lan (Orona) — chi tiết hiếm trong lịch sử cung đình Việt Nam.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html",
+        "TP Thanh Hóa — tpthanhhoa.thanhhoa.gov.vn (Thái miếu nhà Hậu Lê — sáu pho tượng vua Thần Tông cùng năm bà phi) — https://tpthanhhoa.thanhhoa.gov.vn/web/trang-chu/gioi-thieu/di-tich-danh-thang/thai-mieu-nha-hau-le(1).html"
+      ]
+    },
+    {
+      "id": "le-chan-tong",
+      "ten": "Lê Chân Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1629–1649, trị vì 1643–1649",
+      "mo_ta": "Con Lê Thần Tông, được cha nhường ngôi năm 1643. Mất sớm ở tuổi 20, phụ vương Lê Thần Tông trở lại ngôi vua lần thứ hai — trường hợp hiếm có trong lịch sử các triều đại Việt Nam.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html"
+      ]
+    },
+    {
+      "id": "le-huyen-tong",
+      "ten": "Lê Huyền Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "1653–1671, trị vì 1663–1671",
+      "mo_ta": "Con Lê Thần Tông, lên ngôi năm 9 tuổi (1663) dưới quyền phụ chính của chúa Trịnh Tạc. Mất năm 18 tuổi — một trong những đời vua Lê Trung Hưng hoàn toàn không nắm thực quyền chính sự trước phủ chúa Trịnh.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html"
+      ]
+    },
+    {
+      "id": "le-gia-tong",
+      "ten": "Lê Gia Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì 1672–1675",
+      "mo_ta": "Lên ngôi sau khi anh là Lê Huyền Tông mất, dưới quyền chi phối của chúa Trịnh Tạc rồi Trịnh Căn. Ở ngôi vỏn vẹn 3 năm rồi mất khi còn rất trẻ.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html"
+      ],
+      "ghi_chu_bien_tap": "Bỏ chi tiết 'không con nối dõi' (bản nháp đầu) vì không xác nhận được qua nguồn đã mở."
+    },
+    {
+      "id": "le-hy-tong",
+      "ten": "Lê Hy Tông",
+      "lon": 105.7781927,
+      "lat": 19.7901373,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "trị vì 1675–1705",
+      "mo_ta": "Lên ngôi sau khi em là Lê Gia Tông mất, dưới quyền chi phối của chúa Trịnh Tạc rồi Trịnh Căn, sau nhường ngôi cho con là Lê Dụ Tông năm 1705. Là một trong những đời vua Lê Trung Hưng trị vì lâu nhất.",
+      "dia_diem": "Thái miếu nhà Hậu Lê (đền Lê Bố Vệ), phường Đông Vệ, thành phố Thanh Hóa",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Tóm tắt Biên niên sử Việt Nam: XX. Nhà Lê trung hưng) — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/xx.-nha-le-trung-hung-255-nam-1533-1788-.html",
+        "Khu di tích Lam Kinh — ditichlamkinh.vn (Triều đại Hậu Lê – Lê Trung Hưng 1533-1788) — https://ditichlamkinh.vn/m/vi/trieu-dai-hau-le-le-trung-hung-1533---1788--AAE7D4C3727B50CDB072EFD1BC60838F.html"
+      ],
+      "ghi_chu_bien_tap": "Năm lên ngôi vênh nhau giữa hai nguồn đã mở: scov.gov.vn ghi 1675, ditichlamkinh.vn ghi 1676 — nêu cả hai theo đúng quy tắc, chọn 1675 làm mốc chính vì đây là trang có bảng năm sinh/mất chi tiết hơn. | Tự soát: bản nháp đầu còn ghi 'chúa Trịnh Bính (Trịnh Vĩnh)' — tên chưa kiểm chứng được và không khớp với chuỗi chúa Trịnh đã có trong chính file này (trinh-tac 1657–1682, trinh-can 1682–1709). Đã sửa lại thành Trịnh Tạc rồi Trịnh Căn cho khớp niên đại trị vì của Hy Tông (1675–1705) với hai mục chúa Trịnh đã có sẵn trong kho."
+    },
+    {
+      "id": "ho-han-thuong",
+      "ten": "Hồ Hán Thương",
+      "lon": 105.6045,
+      "lat": 20.078,
+      "loai": "vua-hoang-de",
+      "nam_hien_thi": "?–1407, trị vì 1401–1407 (vua thứ hai, cuối cùng nhà Hồ)",
+      "mo_ta": "Con Hồ Quý Ly, được cha nhường ngôi năm 1401 trong khi Hồ Quý Ly giữ danh nghĩa Thái thượng hoàng và vẫn nắm quyền quyết định. Năm 1402 đánh Chiêm Thành thắng lợi, buộc vua Chiêm cắt đất Chiêm Động, Cổ Lũy (nay Quảng Nam và bắc Quảng Ngãi). Năm 1407, cùng cha chống quân Minh xâm lược nhưng thất bại, bị bắt tại Kỳ La (Kỳ Anh, Hà Tĩnh) vào tháng 6 âm lịch, nhà Hồ diệt vong sau 7 năm tồn tại.",
+      "dia_diem": "Thành Nhà Hồ, xã Tây Đô (Vĩnh Lộc cũ), tỉnh Thanh Hóa — Di sản Văn hóa Thế giới",
+      "do_tin_cay_toa_do": "trung",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hoá, Thể thao và Du lịch — scov.gov.vn (Hồ Hán Thương 1401-1407) — https://scov.gov.vn/dat-nuoc-con-nguoi/con-nguoi-viet-nam/ho-han-thuong-1401-1407-.html",
+        "Báo Dân Việt — Hồ Hán Thương dự đoán nhà Hồ chỉ tồn tại 6 năm? — https://danviet.vn/ho-han-thuong-du-doan-nha-ho-chi-ton-tai-6-nam-20220716205240961.htm"
+      ],
+      "ghi_chu_bien_tap": "Toạ độ dùng chung Thành Nhà Hồ như mục Hồ Quý Ly (cha) trong file — không có đền/lăng riêng cho Hồ Hán Thương được tìm thấy qua nguồn đã mở, ông bị bắt và mất tại Trung Quốc sau 1407. Bỏ chữ 'thứ' (con thứ) khỏi quan hệ cha con vì thứ tự sinh không xuất hiện rõ trong trang scov.gov.vn đã mở trực tiếp, chỉ xác nhận được là con Hồ Quý Ly."
     }
   ]
 }

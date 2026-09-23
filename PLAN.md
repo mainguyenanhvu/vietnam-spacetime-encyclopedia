@@ -17,9 +17,9 @@ Gộp từ 17 file kế hoạch rời của các phiên 2026-07-17 → 2026-07-2
 
 ---
 
-## Trạng thái hiện tại — 2026-08-27
+## Trạng thái hiện tại — 2026-08-28
 
-**378 file dữ liệu · 6.722 mục** (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ · 3.511 mục lớp phủ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh.
+**404 file dữ liệu · 7.428 mục** *(đếm lại 2026-09-19)* · ~~7.402 mục~~ (đếm từ `_index/catalog.json`, không phải trí nhớ) · **35 lớp phủ · 4.156 mục lớp phủ** · **290 sa đồ** · **14/14 cổng dữ liệu xanh** · chủ quyền 13/13 thời kỳ · `tsc` exit 0 · `npm run build` xanh. Đo lại 2026-08-28 sau khi sinh lại chỉ mục.
 
 ⚠️ **smoke: S7 lỏng lẻo, không phải lỗi.** Ba lượt chạy 2026-08-24 cho hỏng/hỏng/đạt. Lượt đạt in ra `0,22 MB qua 4 request`, không có `vn-34-tinh-2025.geojson` — tức điều S7 sinh ra để chứng minh thì vẫn đúng. Hai lượt hỏng đều là `tong === 0`: probe đo trước khi request kịp về. Đúng loại phi tất định đã ghi ở mục 10. **Đừng đi sửa Nam tiến vì con số này.**
 
@@ -42,12 +42,106 @@ Hạng mục rủi ro xếp theo thứ tự để định trọng tâm soát: (1
 **Cổng `verify_trich_van_tich.mjs` đã mạnh hơn** (2026-08-27): trước đây "không tải được" TOÀN BỘ qdnd.vn mà vẫn **exit 0** — tức im lặng cho qua đúng thứ nó không với tới. Nay vá cookie jar + UA đầy đủ, cộng một bước dọn khoảng trắng thừa do chính bước lột thẻ để lại sát dấu câu (`\s+([,.;:!?…])` trong `tai()`, **không** trong `chuan()`). Kết quả: **213 khớp · 0 lệch · 0 không tải được**. Vẫn cần mạng, vẫn chạy tay, vẫn KHÔNG nằm trong `npm run validate`.
 🔎 **Lỗ hổng thứ ba đã biết, CỐ Ý chưa vá**: regex trên chỉ dọn khoảng trắng trước dấu *đóng* câu; thẻ mở ngay sau dấu *mở* ngoặc (`(<a>Tên</a>)`) sẽ để lại `( Tên )`. Chưa gặp ca thật nào (213/213 sạch) — vá theo giả thuyết không có ca hỏng để kiểm là cách sinh báo động giả mới. Nhìn lại khi đợt dữ liệu sau lộ ra ca thật.
 
+**Đợt 2026-08-28 — mở rộng 40 agent, một ca dài.** Lớp phủ **3.511 → 4.156 (+645)**, chạm **30/35 lớp**; sa đồ **267 → 290**, lớp chiến dịch 290 mục — khớp cặp 290 ↔ 290, lệch 0 cả hai chiều; mở chủ đề thư viện mới **«Toàn văn tác phẩm kinh điển»** (11 tác phẩm · 144 dòng nguyên văn); sổ §9 **192 → 238** (tầng T6 **8 → 53**); backlog chờ toạ độ **610 → 563**. Trích văn tịch **247 khớp nguyên văn / 0 lệch / 0 không tải được**. Chi tiết ở `RELEASE.md`.
+
+⚠️ **Con số +608 ghi ở bản nháp giữa đợt là SAI — đo lại khi chốt sổ cho +645.** Bản nháp viết trong lúc mấy agent cuối chưa hạ cánh. Cùng cơ chế với `cho_toa_do` 587 (thật: 563). **Đo lại vào lúc commit, đừng chép số của bản nháp giữa đợt.**
+
+🔴 **Kết luận lớn nhất của đợt: kho danh nhân ĐÃ TIỆM CẬN BÃO HOÀ ở tầng «tên có nguồn nhà nước mở được».** Sáu dữ kiện độc lập, đo trong cùng một đợt:
+· một agent tra 65 danh nhân triều Lý–Trần–Lê–Mạc–Nguyễn → **~50 (77%) đã có sẵn** ở file khác;
+· `di-tich-qgdb` **đầy đúng 153/153** — bằng tổng số di tích quốc gia đặc biệt cả nước sau đợt 19 (11/2/2026), lấy mẫu 3 đợt xếp hạng gần nhất thì 12/12 đều đã có;
+· `unesco` kiểm ra **đã đủ** (VN vẫn 9 Di sản Thế giới sau kỳ họp 48 Busan 7/2026; công viên địa chất Phú Yên mới làm hồ sơ);
+· `danh-y-luong-y` chỉ +3 vì các tên lớn TK20 **đã bị `tri-thuc-khoa-hoc-tk20` và `danh-nhan-van-hoa-can-hien-dai` vét trước**;
+· sáu agent hụt mốc với **cùng một cơ chế** — danh sách quyết định dễ tra đã vét sạch, phần còn lại nằm ở cổng tỉnh/huyện lẻ mà hôm nay hỏng hàng loạt;
+· phần lớn thời gian agent nay dồn vào **LOẠI ứng viên**, không phải viết mục.
+👉 **Hệ quả bắt buộc cho đợt sau: đo bằng «bao nhiêu mục được geocode và soát lại», KHÔNG phải «bao nhiêu mục thêm mới».** Đặt mốc số cho một kho đã bão hoà là ép agent hạ chuẩn.
+
+🔴 **Mỏ lớn nhất còn lại nằm TRONG REPO — nhưng NHỎ HƠN nhiều so với con số thô.** `docs/backlog/wave1-ditich-cho-xu-ly.json` khoá `cho_toa_do` có **563 mục** (đếm 2026-08-28 lúc chốt sổ; bản nháp giữa đợt ghi 587), nhưng đo lại nội dung `nguon[]` (không phải chỉ đếm trường có tồn tại) thì:
+· **225 mục (38%) có URL thật** → đây mới là phần *«chỉ kẹt toạ độ»*, dùng được ngay.
+· **362 mục (62%) KHÔNG có URL** — chỉ có nhãn tắt của pha thu thập cũ, dạng `["[WS] luhanhvietnam.com.vn"]` hoặc `["[WF-gov] baodongnai + danviet (URL sẵn)"]`. Nhãn **`[WS]` nghĩa là WebSearch-only — CHƯA TỪNG MỞ TRANG**, và vài nhãn còn trỏ về tên miền nằm trong danh sách nguồn bị bác. **Không đạt bất biến #3, không được xuất bản.**
+· `can_xac_minh` 540 mục thì chỉ 41 mục có URL thật.
+⚠️ **Bài học điều phối:** tôi từng ghi vào chính PLAN này rằng «609/610 đã có nguồn xác minh» sau khi chỉ kiểm `Array.isArray(nguon) && nguon.length` — **đếm TRƯỜNG CÓ TỒN TẠI chứ không kiểm NỘI DUNG**. Một agent geocode phát hiện khi sắp ghi. **Kiểm nội dung trường, đừng kiểm sự tồn tại của trường.**
+👉 **Đo lại 2026-08-28 — cách chia việc ở trên SAI, và sai theo hướng bi quan.** Không phải «362 mục tra lại từ đầu». Đọc nhãn thu thập của **344 mục không URL** (số sau khi geocode 9 mục) thì chúng tách làm hai nhóm chi phí khác hẳn nhau:
+
+| Nhãn | Số mục | Nghĩa | Chi phí phục hồi |
+|---|---|---|---|
+| `[WF]` + `[WF-gov]` | **192** | **Đã MỞ trang thật rồi**, chỉ không ghi lại URL | Rẻ — biết tên miền, biết đối tượng, chỉ tìm lại bài |
+| `[WS-only]` + `[WS]` | **151** | Chưa từng mở trang, mới có kết quả tìm kiếm | Đắt — tra lại từ đầu, và phải mở trang theo bài học WebSearch bịa |
+
+**Chỉ 6/344 mục có nhãn trỏ về tên miền nằm trong danh sách bác, và đúng 1 mục chết hẳn** (mọi nhãn đều bị bác). Nỗi lo «vài nhãn trỏ về nguồn bị bác» ghi ở trên là có thật nhưng **quy mô nhỏ**, không phải rào cản.
+👉 Việc đợt sau tách làm ba, theo đơn giá tăng dần: (a) **geocode 210 mục còn URL thật** — nhưng xem kết luận OSM ở mục 3 trước, mỏ đó đã cạn; (b) **phục hồi URL cho 192 mục `[WF]`** — rẻ nhất trong ba, và là món nên làm trước; (c) **tra lại từ đầu 151 mục `[WS]`** — ngân sách riêng.
+⚠️ **Bản đếm đầu tiên của tôi ra «160 mục chết vì nguồn bị bác» — SAI, do bóc tên miền lấy nhầm chuỗi đầu tiên trông giống domain.** Số đúng là 6. Nhãn trong backlog viết tắt (`vov + baochinhphu`, `tuoitre + trungtamquanlyditich...`), không có giao thức, nhiều tên trên một dòng — **phải tách theo dấu `+` rồi mới đối chiếu**, đừng regex thẳng.
+
+### ✅ 2026-08-28 — PHỤC HỒI NGUỒN: 27 mục trong 6 lượt gọi, bằng lối «duyệt sổ đăng ký»
+
+Làm thử trên nhóm rẻ nhất và **đơn giá thấp hơn hẳn dự tính**: backlog `cho_toa_do` có URL thật **210 → 237**, chưa có **344 → 317**.
+
+**Cách làm — không tra theo từng mục:** 30 mục thuộc địa bàn TP HCM đều trỏ về `svhtt.hochiminhcity.gov.vn`. Thay vì tìm 30 bài, mở **một trang sổ đăng ký** — «Danh sách các công trình, địa điểm đã được quyết định xếp hạng di tích trên địa bàn TP Hồ Chí Minh (đến hết 10/2022)» — rồi đối chiếu **nguyên văn** từng dòng theo lô 6–8 tên.
+
+| | |
+|---|---|
+| Lượt gọi công cụ | **6** (1 WebSearch + 5 WebFetch, 1 trong đó 404) |
+| Mục lấy được nguồn | **27** |
+| Đơn giá | **~0,22 lượt/mục** |
+
+Đây là bản sao của kết luận đã ghi ở trên (*duyệt-nguồn-trước ~20% vs tra-theo-trận ~2%*), nay đo được ở mức mạnh hơn nhiều. 👉 **Luật: gom mục theo CƠ QUAN QUẢN LÝ rồi mở sổ đăng ký của cơ quan đó, đừng đi tìm bài cho từng di tích.**
+
+**Sổ đăng ký còn xác nhận CHÉO được ba thứ mà tra lẻ không thấy:**
+· `chua-thien-phuoc-q8` — bảng của Sở có **hai** chùa Thiên Phước (Trường Thọ QĐ 24/2005 · Phạm Thế Hiển P6 QĐ 1763/2009). Cảnh báo trùng tên vốn có trong kho nay **được nguồn gốc xác nhận**, và bản kho chọn đúng bản Q8.
+· `dinh-tan-hoi-q12` — bảng ghi «Số 1517/QĐ-UBND» **không kèm ngày**, đúng như ghi chú «ngày thiếu trong nguồn». **Thiếu là thiếu THẬT ở văn bản gốc — đừng tra bù.**
+· `den-tho-nguyen-anh-thu` — bảng của Sở chép «Nguyễn **Ánh** Thủ», kho ghi «Nguyễn **Ảnh** Thủ». Giữ chữ của kho (trùng cách viết tên đường ở TP HCM), **nêu cả hai**, chưa kết luận bên nào sai.
+
+⚠️ **Hai mục KHÔNG có trong bảng, đã ghi vào `ly_do` để đợt sau khỏi tra lại vòng nữa**: `chua-phap-hoa-phu-nhuan` và `chua-long-thanh-binh-tan` (mục sau kho vẫn ghi QĐ 185/2005 — cần nguồn khác để đối chiếu).
+
+⚠️ **Và WebSearch lại bịa đúng như đã ghi**: bản tóm tắt nói Chùa Sắc tứ Trường Thọ ở **791 Phan Văn Trị**; mở bảng gốc ra là **53/524 Phan Văn Trị** — trùng khít con số kho đang giữ. **Kho đúng, tóm tắt sai.** Thêm một lần khẳng định: chỉ tính khi đã MỞ trang.
+
+**Hàng đợi cho đợt sau — cú thắng HCM KHÔNG lặp lại được ở quy mô đó.** 317 mục còn lại nằm rải **47 tỉnh**, 10 tỉnh lớn nhất chỉ phủ **42%**; gom theo tên miền trong nhãn thì 10 cụm lớn nhất chỉ phủ 41/317. Tức phần còn lại là **đuôi dài, ~47 sổ đăng ký cấp tỉnh**. Ưu tiên các tỉnh mà phần lớn mục mang nhãn `[WF]` (trang **đã từng mở**, chỉ mất URL) — rẻ nhất:
+
+| Tỉnh | Mục | `[WF]` đã mở | Có sẵn số QĐ |
+|---|---|---|---|
+| Quảng Ninh | 13 | 12 | 7 |
+| Bà Rịa–Vũng Tàu | 10 | 10 | 1 |
+| Bình Định | 9 | 9 | 2 |
+| Phú Thọ | 9 | 8 | 2 |
+| Thái Nguyên | 8 | 8 | 1 |
+| Long An | 8 | 8 | 7 |
+
+Ngược lại, Hải Dương (17 mục, **0** `[WF]`), Huế (15, 0), Thái Bình (11, 0) toàn `[WS]` — chưa trang nào từng được mở, phải tra lại từ đầu, để sau.
+⚠️ **Geocode là nút thắt thật.** `overpass-api.de` chặn IP sau khi một agent bắn dồn dập dưới 9 giây. Và một dữ kiện mới đắt giá: chạy 24 mục HCM theo `addr:housenumber` cho **0/24 khớp** — **OSM Việt Nam thiếu tag địa chỉ cấp toà nhà cho di tích cũ**; ca «3 hội quán Chợ Lớn» của đợt trước nhiều khả năng khớp theo **tên riêng**. Đợt sau: tìm theo TÊN + bbox + lọc `historic`/`amenity=place_of_worship`. Nominatim **được dùng có rào** — chỉ địa chỉ số nhà + tên đường **nội thành cũ**, soát tay từng kết quả, tối đa `trung`.
+⚠️ **SẬP DẤU THANH khi chuẩn hoá tên — nguồn khớp giả lớn nhất khi geocode.** Cảnh báo cũ ở PLAN chỉ nói bug Đ/đ (NFD không tách chữ Đ); đợt 2026-08-28 đo ra vấn đề **rộng hơn nhiều**: bỏ dấu làm sập **MỌI dấu thanh**, nên hai từ khác nghĩa hoàn toàn quy về cùng một chuỗi. Đã tái lập:
+```
+Hổ → "ho"      Hồ → "ho"        (hổ báo  vs  mặt nước)
+Cồn → "con"    Con → "con"
+Đình → "dinh"  Đinh → "dinh"    (đình làng  vs  nhà Đinh / họ Đinh)
+Lê → "le"      Lễ → "le"        Bà → "ba"   Bá → "ba"
+```
+Ca thật: mục «Đình, chùa **Hổ** Lao» (Đông Triều) khớp giả **12 node `natural=water`** tên «**Hồ**»/«Ao» — sai hẳn loại đối tượng. Ca thứ hai ở cấp TỪ chứ không phải từ đơn: «Chùa **Cồn**» (Hải Hậu) khớp giả «Chùa **Con** Rùa» — **đúng loại POI** (`place_of_worship`), nên **không bộ lọc tag nào bắt được**; chỉ soát tay so hai tên đầy đủ mới thấy.
+👉 **Hệ quả:** so tên khi geocode phải **giữ dấu**, hoặc nếu bỏ dấu thì bắt buộc soát tay lại tên đầy đủ. Và **cấm khớp khi tên POI chỉ là một từ chung chung** đứng riêng («Hồ», «Ao», «Miếu», «Đình»). Áp hai luật này, 21 khớp thô co lại còn **10 khớp thật**.
+
+⚙️ **Cách gọi Overpass hiệu quả nhất, đã đo:** **tải TOÀN BỘ POI `historic=*` + `amenity=place_of_worship` trong bbox cả tỉnh bằng MỘT truy vấn** (3–30 s/tỉnh), rồi **so khớp cục bộ bằng code**. Đừng bắn regex `~` qua Overpass: regex **không có index** nên luôn chậm và hay 504 ở mọi mirror. Endpoint: `overpass-api.de` **nghẽn hoàn toàn** khi nhiều agent cùng bắn; hai mirror chạy tốt là `overpass.openstreetmap.fr` và `maps.mail.ru/osm/tools/overpass/api/interpreter`.
+⚠️ **Lọc tag chặn được rác, KHÔNG chặn được nhầm đối tượng.** Ca «Đài Kỷ Niệm» (Biên Hoà): hai POI cùng khớp tên, **cả hai đều mang tag hợp lệ** (`historic=memorial`, `historic=monument`) nhưng cả hai đều sai đối tượng — chỉ đối chiếu **ngữ cảnh lịch sử** mới thấy (Thích Quảng Đức tự thiêu 1963 ≠ đài trận vong thời Pháp thuộc). **Tên chung chung bắt buộc soát mắt.**
+
+⚠️ **45% mục mới có `do_tin_cay_toa_do: "thap"`** — trung thực (không bịa số thập phân) nhưng gần một nửa pin mới còn chờ soát vị trí.
+
+**Bốn cơ chế bắt lỗi mới, đưa vào brief đợt sau:**
+· **Assertion cứng số mục trước khi ghi file** (`items.length !== 35` → dừng) — bắt được một mục viết thiếu mà không cổng nào thấy.
+· **Tra tên TIẾNG VIỆT GỐC cho hiện vật/di sản** — bản dịch máy đổi cả nghĩa lẫn địa bàn: «Rain-Seeking Ritual» thật ra là **Lễ cầu MÙA**; «Định Hoá & Võ Nhai» thật ra **không có Định Hoá**.
+· **Bản tóm tắt của WebFetch cũng sai TÊN NGƯỜI THẬT** (không chỉ WebSearch): «Đặng Huy **Thứ**» = Đặng Huy Trứ; «Đỗ Lý **Nghiêm**» = Đỗ Lý Khiêm — bắt được bằng **đọc kỹ nội dung giai thoại**, không phải so tên.
+· **Trùng «cùng vị thần, khác ngôi đền»** — id khác, tên khác, toạ độ khác, mọi cổng xanh. Chỉ người đọc kỹ mới thấy.
+
+**Luật nguồn được sửa hai chỗ:** ✅ báo/tạp chí của **Hội, Liên hiệp hội, Viện, trường công lập** là **ĐẠT** (điều phối viên bác nhầm `arttimes.vn` làm một agent xoá mất một mục đúng — **tra cơ quan chủ quản trước khi bác**); ❌ thêm **trang luyện thi thương mại** vào danh sách cấm (`vietjack`, `loigiaihay`, `hoc247`, `vndoc`, `download.vn`). ⚠️ Và một bẫy mới: **tên miền `.edu.vn` KHÔNG bảo chứng nội dung** — `khcb.tnus.edu.vn/chi-tiet/4100` là **bản chép của loigiaihay.com** đăng lại trên domain trường công; phải kiểm watermark trong HTML thô từng bài. (4 trang `khcb.tnus.edu.vn` đang dùng đã tự kiểm lại: sạch.)
+
+⚠️ **Domain hỏng thì THỬ LẠI sau ~1 giờ** — `bacgiang.gov.vn` và `baolangson.vn` hồi phục, cứu **+7 mục** Cần Vương (có Cả Trọng, con trưởng Đề Thám). Phân biệt ba kiểu chết: DNS ra IP nhưng **TCP timeout** (đường mạng) · **trang chủ cũng 404** (chặn theo hành vi) · **NXDOMAIN cả www lẫn không** (chết thật). Chỉ kiểu thứ ba mới là nguồn chết.
+
+✅ **Lỗ hổng thứ ba của `verify_trich_van_tich` — ĐÃ VÁ, đúng điều kiện PLAN đặt ra.** Ca thật xuất hiện: `gianh-chinh-quyen-hoi-an-quang-nam-1945[1]` báo lệch 66%, mở trang thô ra thì **trích dẫn hoàn toàn đúng** — `hoianheritage.net` viết `An Điềm (<a>Đại Lộc</a>)`, bước lột thẻ để lại `( Đại Lộc )`. Chính cổng tạo ra chỗ vênh rồi tố oan người soạn. Vá trong `tai()` (không phải `chuan()`), **hai vế phải đi cùng nhau** vì dọn một bên thì `( X )` thành `(X )`. Kết quả **247 khớp · 0 lệch · 0 không tải được**. **Dữ liệu không đổi một byte.**
+
+⚠️ **Bẫy điều phối mới, ghi để đợt sau khỏi dính:** phát **19 agent cùng lúc → bị cắt sạch trong 2 phút** («session limit»). Mẻ 2 → 4 → 6 → 11 → 15 đều sống. **Bắt đầu nhỏ, tăng dần.** Và **phân vai theo NHÓM NHÂN VẬT, không chỉ theo file** — bốn mục nhóm Cai đội Hoàng Sa bị hai agent cùng dựng vì cùng một nhân vật hợp lệ ở nhiều lớp.
+
 ### Còn treo từ đợt 2026-08-27
 
 - [x] ✅ **Thiếu niên cứu người 2023–2026 — CHỦ DỰ ÁN ĐÃ QUYẾT 2026-08-27: giữ nguyên, nêu tên thật, cho publish.** Bối cảnh đã trình bày trước khi quyết: lớp `thieu-nien-anh-hung` vốn chỉ chứa 22 thiếu niên thời chiến **đã hy sinh** (1930–1971); 10 mục mới là học sinh, 8/10 **còn sống**, ghi đủ họ tên thật + lớp + tên trường + ngày + địa điểm (có em lớp 4). Không mục nào khớp T1–T5, và `anhhung-thieunien-mevnah` đã từ chối xếp bừa — đúng cách.
   **Đã thi hành:** gỡ cờ chờ-quyết, nâng 10 mục `draft → reviewed`, ghi quyết định vào `ghi_chu_bien_tap` từng mục. Mở **tầng T6 = trẻ vị thành niên còn sống, tên thật**; đăng ký 8 mục vào `docs/section9-sensitive.json` (184 → 192 dòng); 2 mục đã hy sinh (`le-thi-quynh-chi-nghe-an`, `nguyen-viet-long-nguyen-tri-cong-phu-tho`) giữ **T1** vì khớp nghĩa đen "mới mất 2024–2026".
   ⚠️ **T6 là tiền lệ MỞ ĐƯỜNG cho mọi lớp khác.** Lớp nào sắp thêm người còn sống có định danh (tên + nơi học/làm) thì xếp T6 và trỏ về quyết định này, đừng hỏi lại.
-  ⚠️ Định nghĩa T1–T5 hiện **chỉ nằm trong `docs/lich-su/four-track-plan.md`** — một file đã bị thay thế. Một agent mất công tra mới thấy. Cần chuyển định nghĩa thang tầng ra chỗ còn hiệu lực.
+  ✅ **Định nghĩa thang tầng đã chuyển ra chỗ còn hiệu lực 2026-08-28** — bảng T1–T6 nay nằm ở bất biến #5 trong `CLAUDE.md`, tức file agent đọc đầu tiên. Trước đó chỉ có trong `docs/lich-su/four-track-plan.md`, một file đã bị thay thế.
 - [ ] **11 mục thiếu niên thêm sau quyết định vẫn `draft`, chờ soát.** `vanhoa-trithuc` thêm tiếp trong lúc tôi đang hỏi (lớp 32 → 43). 5 mục thời chiến + 6 mục hiện đại. Quyết định của chủ dự án phủ **loại nội dung**, nhưng 11 mục này chưa qua lượt xác minh nào — giữ `draft` cho tới khi soát xong như mọi mục mới khác, rồi nâng theo cùng luật T6.
 - [ ] 🤔 **Nguyễn Thị Năm (Cát Hanh Long) — CHỜ CHỦ DỰ ÁN QUYẾT.** Ứng viên `chi-si-cach-mang`, khớp `loai: tu-san-dan-toc` xét theo đóng góp vật chất cho cách mạng. Kho hiện **không có mục nào về Cải cách ruộng đất** (grep toàn kho, chỉ một trích dẫn trong `literature/tac-pham-ho-chi-minh.json`) → không có tiền lệ để suy mặc định, đây là quyết định MỞ ĐƯỜNG. Viết mà bỏ đoạn kết là «chọn bản gọn hơn» mà bất biến #4 cấm; viết cả đoạn kết là quyết định biên tập chính trị. Mặc định hiện tại: **không thêm**.
 - [x] ✅ **129 khẳng định danh hiệu nhà nước — ĐÃ SOÁT CHÉO XONG 2026-08-27 chiều.** Kết quả: 56 mục anh-hung 1,8% sai · 30 mục danh-nhan-van-hoa + bao-tang 4,8% · 22 mục dtts/nghệ nhân/danh y 13,6% (0/17 lỗi ở danh hiệu) · 21 khẳng định tri-thuc-khoa-hoc ~25%. **Không cần soát lại 3.000 mục cũ** — tỉ lệ ở hạng mục có văn bản gốc đủ thấp. Bốn ca sửa thật: `ha-quang-voc` (gỡ danh hiệu không có trong nguồn), `nguyen-minh-chau` (gỡ Giải thưởng HCM bịa), `le-van-cong` (181→183kg), `bui-hien` (1919→1909). Chi tiết ở `RELEASE.md`.
@@ -59,7 +153,7 @@ Hạng mục rủi ro xếp theo thứ tự để định trọng tâm soát: (1
 - [ ] **Vùng cạn nguồn trực tuyến, cần người tra bản in** (kết luận có bằng chứng, tra bằng hai lối tiếp cận độc lập cho cùng kết quả): trích văn tịch cho khởi nghĩa nông dân 1821–1854, Nam Kỳ 1861–1867, Cần Vương Nam Trung Bộ 1885–1887. `mocban.vn` phủ tốt Bạch Đằng/Chi Lăng/Lam Sơn nhưng **không có bài riêng** cho các mảng trên; `archives.org.vn` (Cục Văn thư và Lưu trữ nhà nước) là nguồn mạnh nhất cho triều Nguyễn — **duyệt-nguồn-trước trúng ~20%, tra-theo-trận trúng ~2%**.
 - [x] ✅ **`nghe-nhan-di-san` — 105 → 127 (+22)**, đúng bằng lối duyệt Quyết định theo đợt. Còn treo: 5 tên Hà Nội chưa có số quyết định (bài tường thuật lễ trao ≠ quyết định) — leo thêm một bậc lên Quyết định Chủ tịch nước là đủ bằng chứng bậc 3.
 - [~] **(cũ) mô tả gốc:** `nghe-nhan-di-san` mới +5/15 — lối tra đúng là **duyệt danh sách phong NNND/NNƯT theo từng đợt** (Quyết định Chủ tịch nước, có danh sách tên đầy đủ) rồi lọc tên chưa có, KHÔNG tra theo từng tên.
-- [ ] `ban-do-co` (15 tấm) là lớp DUY NHẤT không chạm đợt này — mở rộng cần ảnh quét bản đồ thật + điểm neo toạ độ, không phải việc tra cứu văn bản.
+- [x] ~~`ban-do-co` (15 tấm) là lớp DUY NHẤT không chạm đợt này — mở rộng cần ảnh quét bản đồ thật + điểm neo toạ độ.~~ **ĐÃ CHẠM 2026-09-19: ảnh 5 → 9 / 19 tấm.** Chốt thật không phải «tìm không ra ảnh» mà là **CSP** — cổng `validate_media.mjs` ép `anh` nằm trên `upload.wikimedia.org`. Mở thêm đúng một host `gallica.bnf.fr` là gỡ được hai tấm đã bí từ 2026-08-26. Chi tiết ở `RELEASE.md` mục 2026-09-19.
 
 ⚠️ **Thứ tự sinh lại chỉ mục — sai là cổng freshness đỏ.** `build_sado_index.mjs` **TRƯỚC**, rồi `build_catalog.mjs`, rồi `build_entries_index.mjs`. Vì catalog có chụp sha256 của `battles/_index.json`, chạy sado-index sau catalog là catalog chết ngay. (`npm run build` cũng tự chạy `build_sado_index` — biết để khỏi tưởng có ai sửa tay.)
 
@@ -128,13 +222,17 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 ### Còn lại
 - [ ] **Chế độ trẻ em: phần KHUNG xong, phần CHỮ chưa.** 🔄 **Thu hẹp 2026-08-24** — mảng «không ai chỉ đường» đã đóng bằng `src/huong-dan.ts` (cầm tay chỉ việc 10 bước + sổ tay 17 nhiệm vụ, xem `RELEASE.md`). Phần CÒN LẠI vẫn nguyên và vẫn là việc **nội dung**, không phải CSS: giảm mật độ chữ trong hồ sơ tỉnh, minh hoạ thay khối chữ dài, ngôn ngữ đơn giản hơn cho `mo_ta`. **L**
   ✅ **Mảng NGÔN NGỮ đã đóng 2026-08-25** bằng `src/tu-kho-tre-em.ts` — 187 cụm từ khó, chú giải bấm-ra-xem, phủ 16 sink (popup lớp phủ + hồ sơ tỉnh + Nam tiến). Xem `RELEASE.md`. **CÒN LẠI hai mảng, đều KHÔNG phải chữ**: giảm mật độ chữ trong hồ sơ tỉnh (chia nhỏ, gập bớt) và minh hoạ thay khối chữ dài.
+  ✅ **Mảng MẬT ĐỘ đóng phần lớn 2026-09-23**: đo hồ sơ Hà Nội thì 98% chữ đang hiện (113.450/115.479 ký tự) nằm ở MỘT khối — «Văn thơ, ca dao & bài hát», mở sẵn, in toàn văn 117 bài. Gập khối + gập từng bài (tên · tác giả hiện, bấm mới ra toàn văn): cao 109.193 → 3.270px (trẻ em), 60.468 → 2.245px (người lớn). **Còn lại**: minh hoạ thay khối chữ dài — việc nội dung/ảnh.
   ⚠️ **Đừng nới ba luật chọn từ** ghi ở đầu `tu-kho-tre-em.ts`. Lượt soát đầu tiên đã bắt ba lỗi tên riêng bị chú giải như từ chung («Nguyễn Thế Kỷ», «châu Nam Bố Chính», «Vân Nam tiến đánh») — thêm từ mới thì phải chạy lại phép soát khớp giả trên dữ liệu thật, không đoán.
-- [ ] **Audit tương phản phần còn lại.** Mới đo topbar và nút. Chưa đo: 11 panel nổi, badge, popup MapLibre, khung quiz/olympia ở chế độ trẻ em. **M**
+- [x] ~~**Audit tương phản phần còn lại.**~~ **XONG 2026-09-23** — cổng `npm run verify:tuongphan` đo mọi chữ đang hiện ở 14 trạng thái × 3 chế độ; ~100 nhóm trượt → 0. Xem `RELEASE.md`. **Mở rộng 2026-09-23 (đợt 2)**: cổng đo thêm chữ SVG (quầng `paint-order: stroke` = nền), hover + focus của mọi kiểu điều khiển (ép bằng `CSS.forcePseudoState`), và chỉ báo focus (vòng outline ≥3:1 với nền ngoài; không có gì đổi khi focus = VÔ HÌNH). Kiểm đỏ bằng 3 lỗi cài giả: bắt đủ cả 3 loại. Lượt đầu bắt 7 lỗi thật (vòng focus trên topbar/thanh thời gian 1,03–2,46:1; tab thư viện đang chọn khi hover 1,10:1; chip · Tắt hết · nút Olympia hover 3,11–3,88:1) → sửa → 0/42. **Còn hở**: icon và hình khối không phải vòng focus (1.4.11 phần còn lại).
 - [x] ~~**4 mã hex chưa lên token.**~~ **XONG 2026-08-11** (commit `99e4fac`) — 4 token mới trong `theme.css` (`--truyen-au-lac-nen`, `--story-retry-chu`, `--qg-badge-khac-nen`, `--nhan-huyen-su`), style.css hết hex giá trị.
 - [x] ~~**`body.kid-mode` chồng lấn `data-che-do`.**~~ **QUYẾT 2026-08-11: GIỮ CẢ HAI.** Chúng KHÔNG cùng nghĩa: `data-che-do` là chế độ toàn cục người dùng chọn; `body.kid-mode` là trạng thái CỤC BỘ khi panel truyện đang mở (story.ts bật lúc mở, tắt lúc đóng — kể cả người lớn mở truyện vẫn được khung truyện thiếu nhi). Hợp nhất sẽ làm mất ca "người lớn đọc truyện cho con". Đừng mở lại trừ khi đổi UX truyện.
-- [ ] Icon riêng cho mỗi lớp phủ thay chấm tròn `circle`. 6 icon đã đặc tả ở `docs/image-generation-spec.xml` (I01–I06). **M** — ⚠️ phạm vi thu hẹp từ 2026-08-04: ở chế độ 3D icon phẳng đã được thay bằng mô hình khối, việc này giờ chỉ còn cho chế độ 2D.
+- [x] Icon vẽ tay I01–I06 cho 7 lớp nhân vật ở chế độ 2D (2026-09-23), `src/icon-ve-tay.ts`: path SVG vẽ bằng `Path2D`, đồng bộ nên không có lúc lớp đòi ảnh chưa giải mã. Rút gọn so với đặc tả vì icon chỉ 16px: vương miện bỏ rồng, sao bỏ bóng súng. Nhãn chữ ở bảng lớp/popup vẫn là emoji. Cùng ngày thêm 8 lớp: cả nhóm Di sản & Di tích (UNESCO · QGĐB · quốc gia · cấp tỉnh · bảo vật · cách mạng), lễ hội, phi vật thể — ba lớp trước đó dùng chung emoji 🏛️. Thêm 5 lớp từng dùng chung emoji (⚔️ ×3: chiến dịch · danh tướng · Cần Vương; 🐉 ×2: huyền sử · truyền thuyết). Cùng ngày vẽ nốt 15 lớp còn lại → **cả 35 lớp phủ đều có icon vẽ**; lớp mới thì thêm một khoá vào `ICON_VE_TAY` (thiếu khoá thì rơi về emoji). Bài học: kiếm dựng giữa khiên đọc thành thánh giá ở 16px — soát bảng icon trước khi commit.
+- [x] Smoke S7 bắt 0 request `/data/` (2026-09-23): smoke chờ cứng 7s sau khi mở trang, trang giờ cần ~12s mới sẵn sàng → đo trước khi trang kịp fetch. Đổi sang chờ điều kiện map sẵn sàng (trần 60s, quá trần thì dừng hẳn). Sau sửa: 7 request · 0,51 MB, smoke 9/0 hai lần liền.
 - [x] ~~Thanh trượt dòng thời gian, cụm control MapLibre, đầu bảng lớp còn dáng mặc định.~~ Xong 2026-08-04 — xem khối "ĐẠI TU HÌNH THỨC" cuối `style.css`.
-- [ ] **Chế độ tối** — hệ token sẵn sàng. **Yêu cầu ĐÃ CÓ** (chỉ thị «làm hết» 2026-08-11) nhưng cố ý chưa ship trong phiên đó: mọi chế độ của dự án đều đã qua audit tương phản đo thật từng cặp màu, một palette tối chưa đo mà ship là phá kỷ luật đó. Việc gồm: bảng token tối + đổi nút chuyển thành chu kỳ 3 chế độ + đo tương phản như hai chế độ kia. **M**
+- [x] ~~**Chế độ tối**~~ **XONG 2026-09-23** — chế độ «ban đêm», xoay vòng 3 chế độ, 0 trượt / 42 trạng thái. Bản đồ CỐ Ý giữ nền giấy (lý do ở đầu khối `[data-che-do="toi"]` trong theme.css). Việc nối tiếp nếu muốn: tối hoá bản đồ nền — phải chỉnh lại màu mọi lớp dữ liệu + nhãn chủ quyền, qua `verify:chuquyen`. **L**
+  *Ghi chú gốc 2026-08-11, giữ để hiểu vì sao hoãn:* **Yêu cầu ĐÃ CÓ** (chỉ thị «làm hết» 2026-08-11) nhưng cố ý chưa ship trong phiên đó: mọi chế độ của dự án đều đã qua audit tương phản đo thật từng cặp màu, một palette tối chưa đo mà ship là phá kỷ luật đó. Việc gồm: bảng token tối + đổi nút chuyển thành chu kỳ 3 chế độ + đo tương phản như hai chế độ kia. **M**
+- [x] Ô chọn «Đối chiếu với» dùng chung kiểu với `#lc-period` (2026-09-23). Cùng đợt: nhãn trên ô chọn bị `#layer-control label` ép 44px (khoảng trống lớn), và ghi chú đối chiếu rỗng vẫn vẽ vạch viền — sửa cả hai, bảng lớp gọn ~85px.
 
 ### Không đụng vào khi redesign
 `panels.ts` (sổ đăng ký 11 panel, học từ bug rò WebGL thật) · cơ chế `--topbar-h` đồng bộ động (`main.ts:210-218`) · ràng buộc chủ quyền trong style bản đồ (nền không nhãn, glyph tự host) · ARIA combobox của `search.ts`.
@@ -174,7 +272,11 @@ Chi phí cấu trúc còn lại (34 nguồn + 68 lớp) chỉ chữa được b�
 
 ### Việc
 - [ ] **Chỉ mục tĩnh** `public/data/_index/catalog.json` (cấp file) + `entries-index.json` (cấp mục, ~4.500 phần tử phẳng) + `validate_catalog_freshness.mjs` chặn chỉ mục chết. Theo mô hình PageIndex: **cho agent đọc chỉ mục rút gọn trước, chỉ mở file gốc khi đã khoanh vùng**. 🔄 đang làm
-- [ ] Thống nhất tên trường nguồn. Hiện overlay dùng `nguon`, literature 6/8 file dùng `sources` còn 2/8 dùng `nguon`, `games` dùng `nguon` **kiểu chuỗi** thay vì mảng, `streets` `nguon` chuỗi cấp file. **M**
+- [ ] **Thống nhất tên trường nguồn — quét lại toàn kho 2026-08-28, việc NHỎ HƠN mô tả cũ nhiều.** Kho đã có sẵn một quy ước hai tầng và phần lớn file theo đúng:
+  · **cấp FILE = `sources[]`** — overlays 30/35, provinces 34/34, literature 6, geo, media.
+  · **cấp MỤC = `nguon[]`** — overlays 34/35, figures, journey, media, timeline.
+  Ngoại lệ thật chỉ còn bốn nhóm, đếm được: **2 file overlay** dùng `nguon_chinh[]` thay `sources[]` ở cấp file · **15 file literature** dùng `sources[]` ở cấp MỤC (ngược quy ước, 2 file khác dùng `nguon[]`) · `streets` để `nguon` **kiểu chuỗi** cấp file · 1 file `timeline` để `nguon` kiểu chuỗi cấp mục.
+  ⚠️ Mô tả cũ ở đây sai hai chỗ: nói «overlay dùng `nguon`» mà bỏ mất tầng file dùng `sources`, và ghi literature «6/8 file» trong khi nay là **19 file**. `games` không còn trường nguồn ở cấp nào để mà sai kiểu. **S** (nhỏ hơn ước lượng cũ)
 - [ ] Thống nhất tên khái niệm bị đặt nhiều tên: `do_tin_cay_toa_do` (overlay) ≡ `muc_do_tin_cay` (geo) · nguồn cấp file `sources[]` (32/34) vs `nguon_chinh[]` (2/34) · wrapper `items[]` vs `events` vs `features` vs `lien_ket` vs 4 mảng song song ở games. **M**
 - [ ] **Khoá GeoJSON có dấu cách.** `boundaries/*.geojson` nhóm tỉnh dùng `"Tỉnh thành mới"`, `"GRDP 2024 (tỷ VND)"`, `"Diện tích (km2)"` — không dùng trực tiếp làm tên thuộc tính JS/SQL được. Map lại tên. **M**
 - [x] ~~`di-tich-qgdb`/`unesco`/`bao-vat` thiếu `id`.~~ **XONG 2026-08-11** (`cebb209`+`dbecb25`): bao-vat hoá ra ĐÃ có id từ trước (số PLAN lỗi thời); thêm 152+13 id cho hai file kia. Bài học: 4 id mới va id cũ xuyên file (Văn Miếu, Côn Sơn–Kiếp Bạc, Phong Nha, Thành Nhà Hồ) — cổng validator bắt được; quy tắc «id mới nhường id cũ», unesco mang hậu tố `-unesco`.
@@ -221,7 +323,51 @@ từ đợt w5, đều ghi «NGUỒN ĐẠT — thiếu toạ độ». Kho đó 
 trấn Mộc Châu) · Thẳm Tát Tòng (phường Chiềng An) · Thành Sam Mứn (xã Sam Mứn).
 
 **Việc rẻ nhất còn lại của cả dự án**: tìm cho ra một nguồn toạ độ cấp xã dùng
-được, rồi mở khoá 610 mục đã đủ nguồn. Hướng chưa thử: dữ liệu ranh giới cấp xã
+được, rồi mở khoá 610 mục đã đủ nguồn.
+
+### 🔴 2026-08-28 — ĐÃ CHẠY HẾT LỐI OSM. Câu «việc rẻ nhất còn lại của cả dự án» ở ngay trên KHÔNG còn đúng.
+
+Chạy trọn công thức Overpass mà PLAN đặt ra: **26 truy vấn, một truy vấn mỗi tỉnh,
+tải toàn bộ POI `historic` + `amenity=place_of_worship` trong bbox, so khớp cục bộ
+bằng code**. Ba mirror xoay vòng, nghỉ 6 s giữa nhịp — **không bị chặn lần nào**, tức
+phần công cụ chạy đúng như thiết kế.
+
+| | |
+|---|---|
+| Mục backlog có URL thật | **219** |
+| POI tải về, cả 26 tỉnh | **11.591** |
+| Mục có ứng viên khớp tên | **12** (5,5%) |
+| Nhận sau soát mắt | **9** (4,1%) |
+
+**Trần không nằm ở công cụ, nằm ở độ phủ TÊN của OSM Việt Nam.** Hai phép đo đóng
+đinh chuyện đó:
+· **Nới bộ lọc tag** trên Hà Nội (thêm `tourism`, `building=temple|church|…`,
+  `religion=*`) cho **1.204 → 1.542 POI (+338)** nhưng **thêm 0 mục khớp**. Không phải
+  truy vấn hẹp.
+· **Phân bố POI lệch theo mật độ người vẽ bản đồ, không theo mật độ di tích**:
+  TP HCM 2.633 · Đồng Nai 2.088 · Hà Nội 1.204 — trong khi **Sơn La 6** · Lạng Sơn 29 ·
+  **Nghệ An 35** · Hà Tĩnh 39 · Điện Biên 81.
+
+👉 **Hệ quả trực tiếp cho «lỗ hổng Tây Bắc» ở ngay trên: OSM KHÔNG đóng được nó.**
+Sơn La có **6** POI có tên trong cả tỉnh. Đừng cử đợt agent nào đi geocode Tây Bắc
+bằng OSM nữa — con số đã đo rồi. Lối còn lại vẫn là dữ liệu ranh giới cấp xã của cơ
+quan nhà nước, đúng như dòng «hướng chưa thử» ở trên.
+
+⚠️ **Soát mắt loại 3/12 — và mỗi ca loại vì một lý do khác nhau, không cái nào bị cổng bắt:**
+· `den-le-xa-mai-lam` — ba POI «Lê Xá» đều ở Gia Lâm/Bát Tràng, backlog ghi xã Đông Anh
+  **cách ~19 km**. Trùng tên LÀNG, không bộ lọc tag nào thấy.
+· `lang-mo-doan-van-cu` — OSM là «**Đền thờ**», backlog là «**Lăng mộ**»: hai công trình
+  khác nhau của cùng một nhân vật. Đúng bẫy «Đài Kỷ Niệm» đã ghi.
+· `chua-soc-xoai` — khớp tên hoàn hảo, nhưng **nguồn là `ditichlichsuvanhoa.com`, nằm
+  trong danh sách BÁC**. Nạp vào là đỏ cổng. Đây chính là cái bẫy nhãn `[WS]`/`[WF]`
+  trong backlog mà PLAN đã cảnh báo — **kiểm tên miền TRƯỚC khi bỏ công geocode**.
+
+✅ Hai luật «giữ dấu» và «cấm tên chung chung một từ» đã kiểm trên đúng hai ca thật PLAN
+ghi lại (`Hổ Lao` ↔ «Hồ», `Chùa Cồn` ↔ «Chùa Con Rùa»): **cả hai bị chặn**, còn cột đối
+chứng bỏ dấu thì khớp giả cả hai. Hai đối chứng dương vẫn khớp. Luật đúng, chỉ là mỏ cạn.
+
+⚠️ **Còn 344/563 mục backlog KHÔNG có URL thật** — với chúng thì geocode chưa phải việc
+cần làm, **phục hồi nguồn** mới là. Đó là việc tra lại từ đầu, ngân sách riêng. Hướng chưa thử: dữ liệu ranh giới cấp xã
 của Tổng cục Thống kê / Bộ TN&MT; GeoNames; bộ shapefile VN cấp 3.
 
 
@@ -238,10 +384,24 @@ của Tổng cục Thống kê / Bộ TN&MT; GeoNames; bộ shapefile VN cấp 3
 - [x] ~~Phong Nha lệch ~18 km giữa `di-tich-qgdb` và `unesco`~~ → sửa về đúng toạ độ **đã có nguồn** trong `unesco.json` (106.283, 17.53), không bịa số mới. **Bảy cặp trùng còn lại lệch lớn nhất 1,9 km (Tràng An), phần lớn dưới 500 m — KHÔNG phải lỗi, đừng "sửa".**
 - [x] ~~Không Lộ vs Nguyễn Minh Không~~ → tranh luận sử học **chưa ngã ngũ**, ngay nguồn nhà nước cũng không kết luận. Giữ hai mục tách riêng theo phe «hai người» (căn cứ niên đại + đời vua phục vụ) và thêm `ghi_chu_bien_tap` ở cả hai. **Đừng gộp mà cũng đừng coi là đã kết luận.**
 - [x] ~~Nữ TNXP Đồng Lộc ↔ Võ Thị Tần trùng marker~~ → đã tự giải quyết sau đợt bỏ mục gộp, cách nhau 3,75 km.
-- [ ] ⚠️ Phát hiện phụ chưa xử: **9 nữ TNXP Đồng Lộc còn lại dùng chung một toạ độ giữ chỗ**, lệch 1,6–2 km khỏi cụm thật. Không khẩn, nêu để người duyệt §9 biết. **S**
-- [ ] ~10 mục lệch `loai`/file. ⚠️ Nhiều file nguồn **đã bị gộp ở Phase 3** — kiểm lại tên file/id sau merge trước khi áp, có thể một phần đã tự giải quyết. **S/M**
+- [x] ✅ **Tra 2026-08-28 — KHÔNG phải toạ độ giữ chỗ, và mô tả cũ ở đây sai bản chất.** Cả 9 mục ghi `dia_diem: "Quê: huyện Can Lộc, tỉnh Hà Tĩnh"`. `18.4, 105.77` là **tâm huyện quê, có chủ ý**, đúng như trường `dia_diem` tự khai — không phải số giữ chỗ để ai đó đi «sửa» về cụm hy sinh. Đúng dạng bẫy đã ghi: *số vênh nhau thường là hai thứ khác nhau được đo, không phải lỗi.*
+- [ ] ⚠️ **Nhưng lộ ra một chỗ vênh THẬT: cùng Tiểu đội 4, cùng ngày hy sinh, hai quy ước ghim khác nhau.** `vo-thi-tan` (tiểu đội trưởng) ghim tại **nơi hy sinh** — `dia_diem: "Ngã ba Đồng Lộc…"`, 18.399 / 105.7551, `cao`. Chín đồng đội ghim tại **quê**, `trung`. Mười người, một sự kiện, hai quy ước — nên trên bản đồ cụm Đồng Lộc chỉ hiện 1/10 cô. Đây mới là lỗi, và nó **không** sửa được bằng cách đổi toạ độ: phải chốt quy ước «ghim người theo quê hay theo nơi làm nên tên tuổi» rồi áp nhất quán. Quy ước đó ảnh hưởng toàn kho nhân vật chứ không riêng 9 mục này. **QUYẾT ĐỊNH CỦA CHỦ DỰ ÁN.** **M**
+- [ ] ⚠️ **Và một chỗ vênh thứ hai, cùng vùng, cả hai đều `cao`:** `di-tich-cach-mang/nga-ba-dong-loc` ghi 18.4275 / 105.7361, `anh-hung-can-hien-dai/vo-thi-tan` ghi 18.399 / 105.7551 — **cách nhau 3,4 km cho cùng một địa điểm**. Một trong hai sai, hoặc hai mục đang trỏ hai điểm khác nhau trong quần thể mà không nói ra. Cần một nguồn toạ độ để phân xử; đừng chọn bừa cái nào. **S**
+- [x] ✅ **94 Mẹ VNAH đặt nhầm lớp — CHỦ DỰ ÁN CHỌN PHƯƠNG ÁN A, ĐÃ CHUYỂN 2026-08-28.** `anh-hung-can-hien-dai` **509 → 415**, `me-vnah` **65 → 159**. Kho không mất mục nào; nội dung, toạ độ, nguồn giữ nguyên từng byte — chỉ đổi lớp chứa.
+  **Vì sao an toàn, đã kiểm trước khi chuyển chứ không sau:** hai lớp **cùng lược đồ** (cùng wrapper `ghi_chu/ngay_cap_nhat/sources/items`, cùng bộ trường) · **0 va id** · **0 dòng sổ §9** trỏ tới 94 mục · **0 dòng `MIEN_TRU_CO_HO_SO`** · **0 lần id xuất hiện ở bất kỳ tệp nào ngoài lớp nguồn** · cả **5 script có danh sách tệp cứng** (`gen_section9`, `gen_section9_tiers`, `promote_curated`, `commons_photos`, `validate_overlays`) **đều đã liệt `me-vnah.json`** — nếu thiếu thì 94 mục sẽ lặng lẽ rơi khỏi sàng §9. **Đây là chỗ phải kiểm đầu tiên khi chuyển mục giữa hai lớp.**
+  Màu không đổi: lớp đích dùng `circleColor: "#db2777"` đúng bằng màu mà biểu thức `match` của lớp nguồn vốn gán cho `loai: me-vnah`. Nhánh ấy nay là mã chết, đã gỡ khỏi `overlays-config.ts`.
+  **Nghiệm thu bằng trình duyệt thật, không chỉ bằng `tsc`:** probe CDP đếm điểm THẬT SỰ nạp vào hai nguồn — `overlay-me-vnah` **159**, `overlay-anh-hung-can-hien-dai` **415**, mục đã chuyển có mặt ở lớp đích, **0 sót** `loai=me-vnah` ở lớp cũ; `verify:chuquyen` 13/13 vẫn xanh khi bật cả 35 lớp.
+  ⚠️ **Phát hiện phụ trong lúc probe: `properties` của feature trên bản đồ KHÔNG mang trường `id`.** Danh sách trường được chiếu sang GeoJSON có `ten`, `loai`, `nguon`… nhưng không có `id`. Nên **mọi probe định danh mục theo `f.properties.id` sẽ luôn trả rỗng** — phải dò theo `ten`. Không phải lỗi, nhưng đủ để làm hỏng một phép kiểm và khiến người viết tưởng dữ liệu sai.
+  ⚠️ Nguồn cấp file của hai lớp **cố ý KHÔNG trộn** (43 vs 14 mục): mỗi mục đã mang `nguon[]` riêng nên danh mục cấp file chỉ là thư mục chung; trộn vào là đoán xem nguồn nào thuộc về ai.
+  ⚠️ **17 giá trị `loai` chéo file còn lại KHÔNG phải lỗi** — `kien-truc`/`lich-su`/`khao-co`/`danh-thang` có ở cả `di-tich-quoc-gia` lẫn `di-tich-cap-tinh` là **đúng thiết kế**: hai lớp đó chia theo CẤP xếp hạng, không theo loại. Đừng đi «thống nhất» chúng.
+  ⚠️ `ban-do-co` 15/15 mục không có trường `loai` — lược đồ khác hẳn (tấm bản đồ, không phải điểm), không phải thiếu sót.
 - [ ] Trùng người ↔ sự kiện: 4/8 mục `khoi-nghia-bac-thuoc` trùng bản sự kiện đầy đủ ở file khác · `thai-phien` ↔ `duy-tan-1916` · Không Lộ vs Nguyễn Minh Không (một hay hai người — cần tra sử) · ~8 di tích trùng `di-tich-qgdb` ↔ `unesco` (Hạ Long, **Phong Nha lệch ~18 km**, Huế, Hội An, Mỹ Sơn, Hoàng thành TL, Thành nhà Hồ, Tràng An) · Nữ TNXP Đồng Lộc ↔ Võ Thị Tần trùng marker. **M**
-- [ ] `di-tich-qgdb.json` header ghi toạ độ lấy từ Wikipedia/Wikidata — vi phạm nguyên tắc không-Wikipedia dù chỉ dùng cho toạ độ. Tái tính qua Nominatim / dsvh.gov.vn. **M**
+- [~] **`di-tich-qgdb` toạ độ Wikipedia/Wikidata — xử 2/5, còn 3. Và lộ ra một lỗ hổng cổng lớn hơn chính mục này.**
+  ✅ Đã thay: `chua-doi-son` và `den-cua-ong` — đổi sang node OSM xác nhận **độc lập** cách vị trí cũ **0,20 km** và **0,16 km**; nay số và trích dẫn cùng trỏ một nguồn. Header `nguon_chinh` thôi khai Wikipedia/Wikidata là nguồn toạ độ.
+  ⛔ Còn 3, **cố ý chưa gỡ**: `quan-the-huong-son-chua-huong` (OSM chỉ có **ba chùa trùng tên cách 20–46 km** — loại đúng), `dia-diem-ve-cuoc-khoi-nghia-ba-to`, `dia-diem-chien-thang-bien-gioi-nam-1950`. **Gỡ trích dẫn mà giữ nguyên con số là giấu xuất xứ** — để nguyên tới khi có nguồn thay.
+  🔴 **Lỗ hổng cổng: `wikidata.org` LỌT QUA CẢ 14 CỔNG từ trước tới nay.** `validate_nguon_cam` chỉ bác `wikipedia`/`wikisource`/`wikiwand`; `validate_overlays` chỉ đòi «≥1 nguồn ngoài Wikipedia» — nên một mục dẫn **thêm** Wikidata vẫn xanh sạch. Đã thêm luật ở tầng **cảnh báo** (không đỏ cổng, vì dùng cho một toạ độ hiển thị thì có đường bào chữa): 33 → **36** cảnh báo.
+  ⚠️ **Bẫy khi viết luật ấy, ghi để lần sau khỏi dính:** bản vá đầu ghi ra file một ký tự **BACKSPACE `0x08`** thay cho `\b`. **Cơ chế: heredoc của shell trong môi trường này THU `\\` thành `\`**, nên chuỗi Python nhận được đã là `'\b'` = byte 8 trước khi Python kịp diễn giải — không phải lỗi Python. Tái lập được ngay: chính đoạn ghi chú NÀY lúc đầu cũng dính đúng con bọ nó đang mô tả, phải viết dấu gạch chéo bằng `chr(92)` mới thoát. Regex thành `/<BS>wikidata\.org/i` — **có mặt trong file, in ra trông y hệt luật đúng, và không bao giờ khớp**. Cổng chạy xanh, số cảnh báo không đổi, không ai biết. Chỉ phát hiện khi in mã ký tự từng con của dòng regex. 👉 **Với mọi luật cổng mới: bắt buộc kiểm số cảnh báo có TĂNG đúng số ca đã biết trước.** Cùng họ với bẫy CRLF đã ghi — vá mã trượt im lặng nguy hơn vá mã nổ.
+  ⚠️ **Và một mảng chưa xử, lớn hơn: `geo/song-nui.json` có 80 feature ghi `nguon: ["GeoNames.org","OpenStreetMap","Wikidata (geodata trung tính)"]` — ba tên dịch vụ trần, KHÔNG URL nào.** Cổng không bắt vì không có `.org` trong chuỗi Wikidata. Không đạt bất biến #3 (nguồn phải trỏ tới nguồn chính thống). Chưa đưa vào cảnh báo vì 80 dòng sẽ chôn mất 36 cảnh báo thật — cần quyết cách xử trước. **M**
 
 ### Lớp còn mỏng — đếm lại 2026-08-11, danh sách cũ SAI GẦN HẾT
 Số thật: `nghia-si-can-vuong` **48** · `thanh-hoang-danh-than` **46** · `nha-the-thao-lich-su` **28** (VĐV Olympic đã bổ sung đợt 2026-08-11) · `danh-y-luong-y` **16** (Tuệ Tĩnh + Hải Thượng Lãn Ông đã có mục riêng từ trước) · `khoa-bang-nam-trung-bo` + `dich-gia-ngon-ngu-hoc` **không tồn tại** (đã gộp Phase 3 vào khoa-bang-danh-nhan 167 / danh-nhan-van-hoa 106). Lớp mỏng cuối `me-vnah` **14 → 25** cùng ngày (agent bồi 11 Mẹ, nguồn Bộ Công an/CA tỉnh/đài tỉnh/SK&ĐS; 9 ứng viên bị loại vì nguồn yếu/mâu thuẫn — kỷ luật giữ nguyên). **KHÔNG còn lớp nào dưới ngưỡng 15.**
@@ -434,9 +594,39 @@ kinh-đô/lăng (ĐIỂM, không cần vùng) và 5 đơn vị bí nguồn:
 - ⚠️ **CHƯA TRA ĐƯỢC, đừng bịa**: tên đủ **12 châu** của An Nam đô hộ phủ (612) · tên **10 đạo** của Đại Cồ Việt (968) — chính sử chép SỐ LƯỢNG mà không chép đủ danh sách. **Nam Việt** (nhà Triệu) chưa có đơn vị nào; đây là thời kỳ có tranh luận sử học về việc có tính là triều đại Việt Nam hay không, làm thì phải trình bày chỗ vênh chứ đừng chọn một bên. **M**
 - ⚠️ **Hai bẫy đã vấp khi dựng lớp này, cả hai KHÔNG có lỗi console**: (1) `addSource` gọi từ `setPeriod` chạy TRƯỚC `map.on("load")` → MapLibre ném lỗi mà promise nuốt mất; (2) bản vá bằng `isStyleLoaded()` + `once("load")` có ĐUA TRANH — style xong đúng giữa hai lệnh thì promise treo vĩnh viễn. Lớp nào dựng lười cũng phải móc vào chính khối `load`, đừng đua.
 
+✅ **Bản đồ cổ nay HIỆN TRÊN BẢN ĐỒ, không chỉ trong thư viện** (2026-09-19, commit `d8c5662` + `bd52ea8`) — mỗi dòng trong khối «N tấm bản đồ từng ghi tên nơi này» mang bản quét của chính tấm đó. **10 địa điểm có ảnh; riêng Quần đảo Hoàng Sa có 7 tấm** (1613 Hondius · 1645 Blaeu · 1686 Đỗ Bá · 1737 d'Anville · 1827 Vandermaelen · 1838 Đại Nam nhất thống toàn đồ · 1838 Taberd).
+
 ✅ **Lớp phủ «Bản đồ cổ» mở 2026-08-25** (commit `80c7911`) — 19 tấm · 34 điểm neo · 15 địa điểm. Đây KHÔNG phải ranh giới: nó khớp **địa danh ghi trên mặt giấy bản đồ cổ** với vị trí thật ngày nay, tức là thứ làm được mà không phải vẽ đoán một đường biên nào. Bản gốc `media/ban-do-co.json`, lớp phủ sinh ra bằng `scripts/build_ban_do_co_overlay.mjs`, cổng chống lệch trong `validate_media.mjs`.
 - ⚠️ **KHÔNG CÓ BẢN ĐỒ NÀO TRƯỚC THẾ KỶ XV.** Nghề vẽ bản đồ nhà nước bắt đầu từ Hồng Đức bản đồ 1490. Ai hỏi «bản đồ 4000 năm» thì câu trả lời trung thực là: 4000 năm lịch sử nhưng chỉ ~530 năm bản đồ. Đừng lấp chỗ trống.
 - ⚠️ **Đừng sửa tay `overlays/ban-do-co.json`** — sửa bản gốc rồi chạy `npm run build:index`. Cổng sẽ bắt nếu quên.
+
+🔎 **ĐẦU MỐI GALLICA CHƯA KHAI THÁC HẾT — đã tra được ark, đừng tìm lại từ đầu** (quét SRU 2026-09-19).
+Cách quét: `curl` + User-Agent trình duyệt tới
+`https://gallica.bnf.fr/SRU?operation=searchRetrieve&version=1.2&maximumRecords=20&query=<truy vấn>`
+với truy vấn dạng `(gallica all "paracels") and (dc.type all "carte")`. Truy vấn `paracels` cho **11 kết quả, đúng chủ đề cả 11**.
+
+| Ark | Tấm | Trạng thái |
+|---|---|---|
+| `btv1b53119398b` | Hải đồ Pháp 1737 «Banc du Pracel» | ✅ **ĐÃ NẠP** — xem mục mới trong `media/ban-do-co.json` |
+| `btv1b550095891` | 大清萬年一統地理全圖 (1806–09), thác bản 132×235 cm, 1 view, `GE A-1096 (RES)` | 🔶 **đã xem, chưa nạp** — đã cắt vùng đông-nam: thấy rõ đất liền nhà Thanh kết thúc rồi chuyển sang biển vẽ vân sóng có đảo nhỏ, nhưng **chữ quá nhỏ để đọc nhãn đảo ở mức 3000px**. Muốn nạp thì phải kéo ảnh lớn hơn rồi đọc nhãn — **đừng khẳng định «dừng ở Hải Nam» khi chưa đọc được chữ**. |
+| `btv1b7200281h` | 大清萬年一統天下全圖 / Chu Tích Linh (1818), 3 tờ chụp thành **21 view**, `GE C-5353` | 🔶 **đã dò một phần** — f16 là khung nhan đề; **f1 = vùng châu Âu/Tây Á** (荷蘭國, 英咭唎國界); **f18 = vùng biển Nhật Bản–Triều Tiên** (對馬郡北至高麗 · 五島 · 長崎 · 肥前 · 薩馬峒). Mảnh Biển Đông **chưa tìm ra**, còn f17 · f19 · f20 · f21 chưa mở. |
+| `btv1b53158017b` | «Tabula geographica imperii Anamitici», bản in lại 1863 | ⛔ **KHÔNG phải mục mới** — mặt giấy ghi «AN NAM ĐẠI QUỐC HỌA ĐỒ … 1838», tức bản in lại của tấm Taberd **đã có trong kho**. Dùng được làm ảnh thay thế nguồn BnF nếu muốn. |
+| `btv1b53158013j` | Hải đồ bờ biển Đàng Trong – Chân Lạp, **J. M. Dayot, «mandarin à la cour de Cochinchine», 1807** | 🔶 chưa xét — người Pháp làm quan triều Nguyễn, đáng xem |
+| `btv1b532333019` · `btv1b53233302r` · `btv1b53233293j` · `btv1b532276828` | 4 hải đồ khác trong nhóm kết quả «paracels» (1742 · 1791 · 1798 · 1799) | 🔶 chưa xét |
+| `btv1b84590393` · `btv1b8446698t` | «Royaume d'Annam … désigné par les Pères de la Compagnie de Jésus» (TK 17) | 🔶 chưa xét — có thể trùng mục de Rhodes 1650 đã có |
+
+🔎 **ĐẦU MỐI NGOÀI GALLICA — đã xét, CHƯA nạp, kèm lý do** (2026-09-19).
+
+| Ứng viên | Trạng thái |
+|---|---|
+| **Selden Map of China** (~1608–1624), Bodleian Library | 🔶 **đã mở ảnh Commons `File:SeldenMap1624.jpg` (PD, `Credit` trỏ về chính `seldenmap.bodleian.ox.ac.uk`) và ĐÃ XEM — KHÔNG NẠP**: ảnh chỉ 1600×2260 cho một tấm dài ~1,6 m thật, nhãn địa danh **không đọc nổi**. Nạp một mục chủ quyền mà không đọc được bằng chứng trên mặt giấy là đúng thứ dự án cấm. Muốn nạp thì lấy bản phóng to ở trang Bodleian trước. |
+| **Mao Khôn đồ** 武備志 / 鄭和航海圖 (~1621–1628) | 🔶 Commons có cả loạt `File:MAO KUN MAP-*.jpg` + các mảnh đã cắt theo vùng (Malacca, Singapore, Sumatra…). Chưa xét mảnh nào phủ bờ Việt Nam. |
+| 大清萬年一統天下全圖 bản **1814**, Brown University | ⛔ **Không cần** — BnF đã có bản **1818** và đã nạp (`btv1b7200281h`). Dùng bản BnF thì không phải mở thêm host trong CSP. |
+| 皇朝一統輿地全圖 (1832), LOC / Sinica Digital Atlas | 🔶 chưa xét. Sinica có mục 授權與使用規範 chưa đọc; LOC chặn 403. |
+
+⛔ **HAI KHO ĐÓNG VỚI CÔNG CỤ, đừng cử agent vào lại nếu không đổi cách truy cập**: **Library of Congress** trả **403 Forbidden** mọi lượt (kể cả `?fo=json`, kể cả qua web.archive.org) · **Harvard-Yenching** (`curiosity.lib.harvard.edu`) trả **429 Too Many Requests** cả 4 lượt. Đây là triệu chứng CÔNG CỤ — **không** phải bằng chứng kho rỗng.
+
+⚠️ **«Public domain» trên Commons KHÔNG bảo chứng xuất xứ ảnh.** Thẻ đó chỉ nói tác phẩm gốc hết hạn bảo hộ. Phải đọc riêng trường `Credit`: đợt này bắt được nhiều ca ảnh thực chất dẫn về **blog cá nhân** (`blog.daum.net`, `duonghanoi.wordpress.com`) chứ không phải kho gốc. Ngược lại, chính trường `Credit` là thứ cứu hai tấm đã nạp — nó trỏ về `biengioilanhtho.gov.vn` và `seldenmap.bodleian.ox.ac.uk`.
 
 **Việc**
 - [ ] Bản đồ cổ: còn 2 tấm đáng bổ sung nhưng THIẾU siêu dữ liệu — bản đồ quân sự mặt trận Đà Nẵng chống Pháp (122×72 cm, luỹ cát + 108 làng xã, lưu tại Lưu trữ Quốc gia Pháp; **nguồn Nhân Dân không nêu năm vẽ lẫn người vẽ** nên chưa nạp) và Đồng Khánh địa dư chí (tra chưa ra nguồn nhà nước mô tả đủ). **S**
@@ -537,6 +727,13 @@ Chrome headless riêng (swiftshader, WebGL thật), không phụ thuộc cửa s
 9. **HTTP 200 KHÔNG chứng minh nội dung còn đó.** Tên miền báo tỉnh bị đổi chủ sau sáp nhập 2025 vẫn trả 200 kèm hàng chục KB — của tờ báo KHÁC. Phép kiểm duy nhất đứng vững: **tên người có xuất hiện trên trang không**. Đừng bao giờ kết luận «nguồn còn sống» chỉ từ mã HTTP.
 10. **Bản chuyển đổi tệp `.doc` làm SAI TÊN NGƯỜI.** Danh sách Mẹ VNAH Quảng Bình: công cụ đọc `.doc` trả «Nguyễn Thị Tái / Trần Thị Tiểu / Lê Thị Bản», văn bản gốc là «Nguyễn Thị **Tôi** / Trần Thị **Tiệu** / Lê Thị **Bòn**»; tên xã «Vân Ninh / Vũ Ninh» thật ra là «**Vạn Ninh / Võ Ninh**». Sai tên người là lỗi nặng nhất trong lớp dữ liệu về người. **Cách đúng**: tải tệp về rồi giải mã **UTF-16LE** thẳng từ bản nhị phân (`.doc` cũ là Composite Document File). Chính tệp gốc cũng có hàng hỏng mã — bỏ hàng đó, đừng đoán.
 11. **Cổng dò tên người trên trang nguồn có bốn cách sai, đã trả giá đủ cả bốn**: (a) không giải mã **thực thể HTML có tên** (`&acirc;` `&ecirc;` `&ograve;` — cổng `.gov.vn` dùng đầy) thì chữ Việt thành vô nghĩa; (b) soi **tên hiển thị kèm danh xưng** («Mẹ Việt Nam Anh hùng X») mà nguồn không bao giờ viết liền như vậy; (c) `includes()` khớp **chuỗi con** — «nguyen thi be» nằm lọt trong «nguyen thi ben», hai người khác nhau; (d) phép phụ hỏi «họ có trên trang?» VÀ «tên cuối có trên trang?» rồi và lại — trang danh sách nhiều người thì cả hai đều có ở **hai chỗ khác nhau**. Cổng quá lỏng cho lọt đồ sai; **cổng quá nghiêm tố oan người soạn** — cả hai đều tai hại.
+12b. **Ảnh Wikimedia Commons chỉ có bản thu nhỏ ở MỘT SỐ MỐC BỀ RỘNG** (đo 2026-09-19 trên 7 tấm bản đồ cổ): **960 và 1280 nạp được 7/7**, còn 320 · 480 · 640 · 800 · 1024 **hỏng 7/7**. Mốc ngoài danh sách trả lỗi chứ Wikimedia không tự dựng. Suy một con số «nghe hợp lý» là ra ô ảnh vỡ, không lỗi console. Ghi chú cũ của mục Blaeu nói «URL thumbnail Commons trả HTTP 400» chính là ca này, nay đã có lời giải.
+    ⚠️ **Đừng đo bằng `curl`**: tầng chống bot của Wikimedia trả 400/429 cho MỌI mốc, kể cả mốc đúng. Phép đo duy nhất tin được là `new Image()` trong trình duyệt thật.
+
+12c. **`gallica.bnf.fr` trả 403 với WebFetch nhưng mở bình thường bằng `curl` kèm User-Agent trình duyệt.** Đã có hai agent kết luận «Gallica không mở được» — đó là triệu chứng CÔNG CỤ. Gallica còn cho **hotlink** (gọi kèm Referer từ tên miền khác vẫn trả 200) và IIIF cho khai bề rộng tuỳ ý (`/full/1200,/0/native.jpg` = 300 KB thay vì 5–10 MB bản full). Điều khoản: tái sử dụng **phi thương mại tự do**, **bắt buộc** giữ chuỗi ghi công `Source gallica.bnf.fr / Bibliothèque nationale de France` — cổng `validate_media.mjs` nay ép chuỗi này.
+
+12d. **Grid có cột `auto` thì co theo `max-content` — một tấm ảnh nội tại 960px sẽ kéo phình cả hàng.** Đo thật 2026-09-19: popup rộng 360px, `<ul>` 314px, nhưng `<li>` phình **892px**, ảnh tràn ra ngoài và bị cắt. Không lỗi console, `tsc` vẫn xanh. Vá bằng `grid-template-columns: minmax(0, 1fr)`. Áp cho mọi grid sắp nhận nội dung có kích thước nội tại.
+
 12. **Bóc dấu tiếng Việt là con dao hai lưỡi.** Nó giúp khớp khi nguồn viết thiếu dấu, nhưng tiếng Việt phân biệt nghĩa BẰNG DẤU: «Tâm» và «Tám», «Tiệu» và «Tiểu» chập làm một sau khi bóc. Cổng dò trùng vì thế phải **báo cho người xét**, tuyệt đối không tự xoá.
 
 13. **Bản đồ sáp nhập tỉnh 2025 → tên miền báo còn sống.** Sau sáp nhập, báo tỉnh bị gộp thường **mất kho bài cũ** hoặc **đổi chủ tên miền** (bẫy 9). Bảng dưới là kết quả dò thật trong phiên 2026-08-26 — dùng luôn, đừng dò lại:
@@ -589,7 +786,11 @@ npm run build            # tsc + vite build
 node scripts/audit_sovereignty.mjs   # chủ quyền mức DỮ LIỆU — CI chạy riêng, bắt buộc
 npm run verify:chuquyen  # chủ quyền mức HIỂN THỊ, 13 thời kỳ (cần Chrome) — CI chặn
 npm run smoke            # 10 kịch bản qua CDP (cần Chrome) — CI chặn
+npm run verify:tuongphan # WCAG 1.4.3, mọi chữ đang hiện, 14 trạng thái × 3 chế độ (cần Chrome, ~15 phút)
+                         # TP_CHI=<tên trạng thái> đo một phần · TP_ANH=<thư mục> chụp ảnh từng trạng thái
 ```
+
+⚠️ Đừng chạy `verify:tuongphan` song song với `smoke`: tranh CPU làm S7 hỏng giả.
 
 **Một build xanh KHÔNG chứng minh bản đồ đúng.** Đụng bản đồ hay ranh giới thì phải **mở trình duyệt, nhìn bằng mắt, xác nhận Hoàng Sa + Trường Sa còn hiện**. Đụng cảnh 3D thì render, xem console sạch và khung hình không tụt trên laptop tầm trung.
 

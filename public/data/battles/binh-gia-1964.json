@@ -1,10 +1,10 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Bình Giã 1964 — Mục T2 theo docs/section9-sensitive.json. MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Bình Giã (2/12/1964 – 3/1/1965) — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "binh-gia-1964",
   "ten": "Chiến dịch Bình Giã",
   "nam": 1964,
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Quân Giải phóng miền Nam",
+  "chi_huy": "Bộ Chỉ huy Chiến dịch — Chỉ huy trưởng Trần Đình Xu, Chính uỷ Lê Văn Tưởng, Phó Chính uỷ Lê Xuân Lựu, Chỉ huy phó Nguyễn Hồng Lâm (Hai Bứa) và Chỉ huy phó kiêm Tham mưu trưởng Nguyễn Hoà",
   "doi_thu": "Quân đội Sài Gòn",
   "dia_diem": "Bình Giã, nay tỉnh Đồng Nai",
   "lien_quan_tinh": [
@@ -16,112 +16,350 @@
       "kieu": "duong",
       "diem": [
         [
-          200,
+          240,
+          520
+        ],
+        [
+          420,
           400
         ],
         [
-          500,
-          380
+          560,
+          280
         ],
         [
-          800,
-          360
+          660,
+          180
         ]
       ],
-      "nhan": "Khu vực Bình Giã, miền Đông Nam Bộ"
+      "nhan": "Đường số 2 (Bà Rịa – Đức Thạnh)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          140,
+          470
+        ],
+        [
+          330,
+          520
+        ],
+        [
+          520,
+          560
+        ]
+      ],
+      "nhan": "Đường số 15 (Vũng Tàu – Sài Gòn)"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [
+          120,
+          240
+        ],
+        [
+          260,
+          225
+        ],
+        [
+          400,
+          240
+        ]
+      ],
+      "nhan": "Căn cứ Hắt Dịch nối liền Chiến khu Đ"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [
+          390,
+          130
+        ],
+        [
+          450,
+          118
+        ],
+        [
+          510,
+          132
+        ]
+      ],
+      "nhan": "Núi Nghệ"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-ta-chu-luc-1964",
+      "id": "binh-gia",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 440,
+      "y": 280,
+      "nhan": "Ấp chiến lược Bình Giã — điểm khơi ngòi chiến dịch"
+    },
+    {
+      "id": "duc-thanh",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 640,
+      "y": 200,
+      "nhan": "Chi khu quân sự Đức Thạnh"
+    },
+    {
+      "id": "dat-do",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 640,
+      "y": 430,
+      "nhan": "Chi khu quân sự Đất Đỏ"
+    },
+    {
+      "id": "xuyen-moc",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 850,
+      "y": 330,
+      "nhan": "Chi khu Xuyên Mộc · căn cứ huấn luyện biệt kích Vạn Kiếp"
+    },
+    {
+      "id": "c445",
       "kieu": "quan",
       "ben": "ta",
-      "x": 250,
-      "y": 450,
-      "nhan": "Quân Giải phóng mở chiến dịch chủ lực đầu tiên"
+      "x": 230,
+      "y": 280,
+      "nhan": "Đêm 2/12 và đêm 7/12 tiến công ấp Bình Giã",
+      "quy_mo": "Đại đội 445 bộ đội tỉnh Bà Rịa"
     },
     {
-      "id": "td-33-bdq",
+      "id": "e761",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 160,
+      "nhan": "Bao vây kiềm chế Đức Thạnh; đánh Quảng Giới ngày 31/12",
+      "quy_mo": "Trung đoàn 761"
+    },
+    {
+      "id": "e762",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 200,
+      "y": 430,
+      "nhan": "Diệt Chi đoàn 3 thiết giáp 13/12; phục kích Cóc Tiên 1/1",
+      "quy_mo": "Trung đoàn 762"
+    },
+    {
+      "id": "nui-nghe",
+      "kieu": "dia-danh",
+      "x": 440,
+      "y": 150,
+      "nhan": "Núi Nghệ — nơi Trung đoàn 762 ém quân chờ thời cơ"
+    },
+    {
+      "id": "phuc-kich-d2",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [
+        380,
+        380
+      ],
+      "den": [
+        560,
+        340
+      ],
+      "nhan": "Phục kích trên đường số 2"
+    },
+    {
+      "id": "tieu-doan-38",
       "kieu": "quan",
       "ben": "dich",
-      "x": 450,
-      "y": 380,
-      "nhan": "Tiểu đoàn biệt động quân 33"
+      "x": 760,
+      "y": 90,
+      "nhan": "Đổ bộ bằng trực thăng giải vây cho Bình Giã ngày 2/12",
+      "quy_mo": "Tiểu đoàn 38 Biệt động quân"
     },
     {
-      "id": "td-4-tqlc",
+      "id": "me-pu",
+      "kieu": "dia-danh",
+      "x": 920,
+      "y": 190,
+      "nhan": "Hoài Đức – Tánh Linh: Mê Pu, Sùng Nhơn, Đậm Rim, Tà Bao"
+    },
+    {
+      "id": "tieu-doan-30",
       "kieu": "quan",
       "ben": "dich",
-      "x": 600,
-      "y": 330,
-      "nhan": "Tiểu đoàn thuỷ quân lục chiến 4"
+      "x": 300,
+      "y": 520,
+      "nhan": "Đổ bộ xuống Trảng Trống, bị chặn đánh phải rút về ấp La Vân (28/12)",
+      "quy_mo": "Tiểu đoàn 30 Biệt động quân"
     },
     {
-      "id": "ap-chien-luoc",
-      "kieu": "cong-su",
+      "id": "tieu-doan-33",
+      "kieu": "quan",
       "ben": "dich",
-      "x": 750,
-      "y": 270,
-      "nhan": "Ấp chiến lược bị phá vỡ"
+      "x": 560,
+      "y": 530,
+      "nhan": "Đổ xuống đông bắc Bình Giã, bị tiêu diệt phần lớn (28/12)",
+      "quy_mo": "Tiểu đoàn 33 Biệt động quân"
     },
     {
-      "id": "co-thang-binh-gia",
+      "id": "tieu-doan-4-tqlc",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 820,
+      "y": 530,
+      "nhan": "Bị diệt gần 600 quân ở Quảng Giới ngày 31/12",
+      "quy_mo": "Tiểu đoàn 4 Thuỷ quân lục chiến"
+    },
+    {
+      "id": "co-binh-gia",
       "kieu": "co",
       "ben": "ta",
-      "x": 600,
-      "y": 200,
-      "nhan": "Góp phần phá sản 'Chiến tranh đặc biệt'"
+      "x": 120,
+      "y": 560,
+      "nhan": "3/1/1965 — kết thúc chiến dịch"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Giải phóng mở chiến dịch tiến công đầu tiên bằng chủ lực",
-      "mo_ta": "Từ 2/12/1964, Quân Giải phóng miền Nam mở chiến dịch tiến công đầu tiên bằng lực lượng chủ lực trên chiến trường miền Đông Nam Bộ.",
+      "tieu_de": "Tháng 10/1964 — chọn Bình Giã làm điểm quyết chiến chiến dịch",
+      "thoi_gian": "11/10 – cuối tháng 10/1964",
+      "dia_danh": "Miền Đông Nam Bộ · tỉnh Bà Rịa",
+      "mo_ta": "Ngày 11/10/1964, Quân uỷ Trung ương và Bộ Tổng Tư lệnh chỉ thị các chiến trường mở đợt hoạt động quân sự trên toàn miền Nam nhằm tiêu diệt một bộ phận chủ lực quân đội Sài Gòn, đẩy mạnh phá ấp chiến lược và mở rộng vùng giải phóng trước khi Mỹ tăng cường lực lượng. Cuối tháng 10/1964, Đảng uỷ và Bộ Tư lệnh Miền vạch kế hoạch mùa khô 1964 – 1965, chủ trương tập trung phần lớn lực lượng chủ lực Miền mở chiến dịch tiến công tại miền Đông Nam Bộ, lấy Bình Giã làm điểm quyết chiến chiến dịch.",
       "hien": [
-        "quan-ta-chu-luc-1964"
+        "binh-gia",
+        "e761",
+        "e762"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Diệt gọn Tiểu đoàn biệt động quân 33",
-      "mo_ta": "Quân ta diệt gọn Tiểu đoàn biệt động quân 33 của quân đội Sài Gòn.",
+      "tieu_de": "Thế bố trí của hai bên trên hướng chủ yếu Bà Rịa",
+      "thoi_gian": "Trước 2/12/1964",
+      "dia_danh": "Đức Thạnh · Long Điền · Đất Đỏ · Xuyên Mộc",
+      "mo_ta": "Hướng chủ yếu của chiến dịch nằm trên địa bàn tỉnh Bà Rịa; hai hướng thứ yếu là Nhơn Trạch, Long Thành thuộc Biên Hoà và Hoài Đức, Tánh Linh thuộc Bình Thuận. Ở Bà Rịa, đối phương có 4 chi khu quân sự Đức Thạnh, Long Điền, Đất Đỏ, Xuyên Mộc, mỗi chi khu bố trí từ một đại đội đến một tiểu đoàn bảo an, ngoài ra còn tăng cường 1 tiểu đoàn biệt động quân, 1 chi đội cơ giới, 2 trung đội pháo 105 mm, và lực lượng cơ động của Quân đoàn 3 sẵn sàng ứng cứu. Phương thức tác chiến của ta chủ yếu là đánh địch ngoài công sự.",
       "hien": [
-        "quan-ta-chu-luc-1964",
-        "td-33-bdq"
+        "duc-thanh",
+        "dat-do",
+        "xuyen-moc",
+        "binh-gia"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Diệt gọn Tiểu đoàn thuỷ quân lục chiến 4",
-      "mo_ta": "Quân ta tiếp tục diệt gọn Tiểu đoàn thuỷ quân lục chiến 4.",
+      "tieu_de": "Đêm 2/12 — trận mở màn không thành công",
+      "thoi_gian": "Đêm 2/12/1964",
+      "dia_danh": "Ấp Bình Giã · chi khu Đức Thạnh",
+      "mo_ta": "Theo kế hoạch, đêm 2/12/1964, Đại đội 445 bộ đội tỉnh Bà Rịa tiến công ấp Bình Giã; cùng lúc pháo binh Miền và Trung đoàn 761 bao vây, kiềm chế chi khu quân sự Đức Thạnh. Đối phương vội dùng máy bay lên thẳng chở Tiểu đoàn 38 Biệt động quân xuống giải vây cho Bình Giã. Lực lượng tiến công của ta ít, đối phương phản kích quyết liệt nên trận đánh mở màn không thành công. Bộ Chỉ huy chiến dịch vẫn quyết định tiếp tục tiến công Bình Giã để tạo áp lực, buộc đối phương ra giải toả cho ta tiêu diệt.",
       "hien": [
-        "td-33-bdq",
-        "td-4-tqlc"
+        "c445",
+        "binh-gia",
+        "duc-thanh",
+        "e761",
+        "tieu-doan-38"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Phá vỡ nhiều ấp chiến lược",
-      "mo_ta": "Chiến dịch phá vỡ nhiều ấp chiến lược trong vùng.",
+      "tieu_de": "Đêm 7/12 — đánh Bình Giã lần thứ hai và các chi khu",
+      "thoi_gian": "Đêm 7/12/1964",
+      "dia_danh": "Bình Giã · Đất Đỏ · Xuyên Mộc · Vạn Kiếp",
+      "mo_ta": "Đêm 7/12, Đại đội 445 và một đại đội của Trung đoàn 762 tiến công Bình Giã lần thứ hai; Tiểu đoàn 3 của Trung đoàn 761 và Tiểu đoàn 5 của Trung đoàn 762 đánh thẳng vào chi khu quân sự Đất Đỏ; lực lượng pháo binh Miền tập kích hoả lực vào các chi khu Xuyên Mộc, Đức Thạnh và căn cứ huấn luyện biệt kích Vạn Kiếp. Áp lực ở khu vực Bình Giã – Đức Thạnh tăng lên từng ngày, đúng như ý định kéo đối phương ra ngoài công sự.",
       "hien": [
-        "td-4-tqlc",
-        "ap-chien-luoc"
+        "c445",
+        "binh-gia",
+        "dat-do",
+        "xuyen-moc",
+        "duc-thanh"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Góp phần phá sản 'Chiến tranh đặc biệt'",
-      "mo_ta": "Chiến thắng loại khỏi vòng chiến hơn 1.700 địch, góp phần làm phá sản chiến lược 'Chiến tranh đặc biệt' của Mỹ.",
+      "tieu_de": "9 – 13/12 — ém quân ở núi Nghệ, diệt gọn Chi đoàn 3 thiết giáp",
+      "thoi_gian": "9 – 13/12/1964",
+      "dia_danh": "Đường số 2 · núi Nghệ",
+      "mo_ta": "Ngày 9/12, đối phương dùng Chi đoàn 3 thiết giáp thuộc Thiết đoàn 1 có không quân yểm trợ mở cuộc hành quân «Bình Tuy 33» càn quét dọc đường 2, đoạn từ Bà Rịa lên Đức Thạnh. Trung đoàn 762 đã bố trí sẵn trận địa phục kích nhưng đối phương không hành quân như dự kiến, nên trung đoàn kịp thời cơ động về phía đông núi Nghệ, cách đường 2 khoảng 4 km, ém quân chờ đợi. Ngày 13/12, khi đoàn xe chở quân từ Đức Thạnh trở về lọt vào trận địa, trung đoàn nổ súng; sau gần 1 giờ chiến đấu đã diệt gọn Chi đoàn 3 thiết giáp, phá huỷ 14 xe M113, bắn cháy 4 máy bay trực thăng, diệt hơn 100 quân trong đó có 9 cố vấn Mỹ, thu 79 súng các loại.",
       "hien": [
-        "co-thang-binh-gia"
+        "e762",
+        "nui-nghe",
+        "phuc-kich-d2",
+        "duc-thanh"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "27 – 28/12 — chốt giữ Bình Giã, diệt Tiểu đoàn 33 Biệt động quân",
+      "thoi_gian": "27 – 28/12/1964",
+      "dia_danh": "Bình Giã · Trảng Trống · ấp La Vân",
+      "mo_ta": "Bước vào đợt 2, Trung đoàn 761 dùng 2 đại đội phối hợp với Đại đội 445 đánh chiếm và tổ chức chốt giữ ấp chiến lược Bình Giã, đồng thời dùng hoả lực bắn phá chi khu Đức Thạnh. Sáng 28/12, đối phương cho Tiểu đoàn 30 Biệt động quân đổ bộ bằng trực thăng xuống khu vực Trảng Trống, tây nam Đức Thạnh, rồi chia ba mũi tiến vào Bình Giã nhưng bị chặn đánh, phải rút về ấp La Vân. Trưa cùng ngày, Tiểu đoàn 33 Biệt động quân từ Biên Hoà đổ xuống đông bắc Bình Giã, bị hoả lực phòng không chế áp phải chuyển hướng xuống cánh đồng trũng phía đông nam; Trung đoàn 761 xuất kích bao vây tiêu diệt phần lớn, làm chủ hoàn toàn trận địa.",
+      "hien": [
+        "e761",
+        "c445",
+        "binh-gia",
+        "tieu-doan-30",
+        "tieu-doan-33"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "30 – 31/12 — trận Quảng Giới, diệt gần 600 quân",
+      "thoi_gian": "30 – 31/12/1964",
+      "dia_danh": "Ấp La Vân · Quảng Giới",
+      "mo_ta": "Ngày 30/12, đối phương cho trực thăng chở Tiểu đoàn 4 Thuỷ quân lục chiến thuộc lực lượng tổng dự bị chiến lược đổ bộ xuống đông nam ấp La Vân, phối hợp cùng Tiểu đoàn 30 Biệt động quân phản kích chiếm lại Bình Giã. 18 giờ cùng ngày, ta bắn rơi 1 trực thăng ở Quảng Giới, diệt một số quân trong đó có 4 lính Mỹ. Nhận định đối phương sẽ quay lại tìm xác lính Mỹ, Bộ Chỉ huy chiến dịch lệnh cho Trung đoàn 761 bố trí trận địa phục kích. Đúng như dự kiến, 14 giờ 30 phút ngày 31/12, khi Tiểu đoàn 4 Thuỷ quân lục chiến đến Quảng Giới, Trung đoàn 761 nổ súng, bao vây chia cắt, tiêu diệt từng bộ phận, diệt gần 600 quân và thu toàn bộ vũ khí.",
+      "hien": [
+        "tieu-doan-4-tqlc",
+        "tieu-doan-30",
+        "e761",
+        "binh-gia"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "1 – 3/1/1965 — đánh bại «Hùng Vương 2», kết thúc chiến dịch",
+      "thoi_gian": "1 – 3/1/1965",
+      "dia_danh": "Cóc Tiên · đường số 15 · đường số 2 · Hoài Đức – Tánh Linh",
+      "mo_ta": "Để cứu nguy cho Đức Thạnh và chiếm lại Bình Giã, ngày 1/1/1965 đối phương huy động khoảng 2 nghìn quân mở cuộc hành quân giải toả «Hùng Vương 2». Phán đoán chính xác hướng hành quân, Trung đoàn 762 phục kích tại khu vực Cóc Tiên, diệt gọn đoàn xe 10 chiếc và 1 đại đội trên đường 15 từ Vũng Tàu về Sài Gòn. Ngày 3/1, trung đoàn tiếp tục phục kích trên đường 2 từ Bà Rịa lên Đức Thạnh, diệt đoàn xe 16 chiếc có 2 xe tăng và 2 xe M113, đánh thiệt hại nặng Tiểu đoàn 35 Biệt động quân. Cùng ngày, Tiểu đoàn 800 Quân khu 7 tập kích trại biệt kích Bình Sơn; trên hướng Hoài Đức – Tánh Linh, ta bao vây chi khu Hoài Đức và đánh chiếm các ấp chiến lược Mê Pu, Sùng Nhơn, Đậm Rim, Tà Bao.",
+      "hien": [
+        "e762",
+        "phuc-kich-d2",
+        "me-pu",
+        "co-binh-gia",
+        "duc-thanh"
+      ],
+      "nguon": [
+        "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
       ]
     }
   ],
-  "ket_qua": "Loại khỏi vòng chiến hơn 1.700 địch, diệt gọn Tiểu đoàn biệt động quân 33 và Tiểu đoàn thuỷ quân lục chiến 4, phá vỡ nhiều ấp chiến lược, góp phần làm phá sản chiến lược 'Chiến tranh đặc biệt' của Mỹ.",
-  "y_nghia": "Chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền Nam, chứng minh khả năng đánh tiêu diệt gọn từng đơn vị quân đội Sài Gòn.",
+  "ket_qua": "Sau hơn một tháng chiến đấu, ta loại khỏi vòng chiến đấu hơn 1.700 quân (bắt 293), tiêu diệt Tiểu đoàn 33 Biệt động quân, Tiểu đoàn 4 Thuỷ quân lục chiến và 1 chi đoàn thiết giáp M113, đánh thiệt hại 3 tiểu đoàn biệt động quân và 7 đại đội bảo an; phá huỷ và phá hỏng 45 xe quân sự, bắn rơi và bắn cháy 56 máy bay, thu hơn 1 nghìn súng; phá vỡ hàng loạt ấp chiến lược ven đường số 2 và số 15, giải phóng vùng ven Hàm Tân và toàn bộ huyện Hoài Đức, mở rộng căn cứ Hắt Dịch nối liền Chiến khu Đ và căn cứ Bình Thuận (Báo Nhân Dân).",
+  "y_nghia": "Bình Giã là chiến dịch tiến công đầu tiên giành thắng lợi của bộ đội chủ lực Miền trên chiến trường miền Nam, cho thấy chủ lực Miền đã có bước tiến về tổ chức chỉ huy và thực hành chiến dịch. Nét riêng của nghệ thuật chiến dịch là lừa đối phương ra ngoài công sự, nhử vào nơi đã bố trí sẵn thế trận rồi tiêu diệt bằng tiến công vận động.",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html",
     "Báo QĐND — Chiến dịch Bình Giã - Chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền Nam",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
@@ -138,5 +376,36 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html",
       "buoc": 5
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến theo bài chuyên đề của Báo Nhân Dân. loai_xung_dot=noi-chien: lực lượng đối phương là quân đội Sài Gòn; nguồn có nêu 9 cố vấn Mỹ bị diệt trong trận 13/12 và 4 lính Mỹ trong trận bắn rơi trực thăng ngày 30/12, nhưng bộ binh Mỹ chưa tham chiến ở chiến dịch này. Trường dia_diem của hồ sơ ghi «Bình Giã, nay tỉnh Đồng Nai» — giữ nguyên, không sửa vì nằm ngoài phần diễn biến; nguồn gọi địa bàn là tỉnh Bà Rịa theo tên gọi năm 1964. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "2/12/1964 – 3/1/1965",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Quy mô tương đương cấp sư đoàn",
+      "don_vi": [
+        "Trung đoàn bộ binh Q761",
+        "Trung đoàn bộ binh Q762",
+        "4 tiểu đoàn pháo của bộ đội chủ lực Miền",
+        "Tiểu đoàn 500 và Tiểu đoàn 800 chủ lực Quân khu miền Đông",
+        "Tiểu đoàn 186 của Quân khu VI",
+        "Đại đội 445 bộ đội tỉnh Bà Rịa và du kích các xã"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "4 chi khu quân sự Đức Thạnh, Long Điền, Đất Đỏ, Xuyên Mộc, mỗi chi khu từ một đại đội đến một tiểu đoàn bảo an; tăng cường 1 tiểu đoàn biệt động quân, 1 chi đội cơ giới, 2 trung đội pháo 105 mm",
+      "vu_khi": [
+        "Lực lượng cơ động của Quân đoàn 3 sẵn sàng chi viện ứng cứu"
+      ]
+    },
+    "nguon": [
+      "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Hơn 1.700 quân bị loại khỏi vòng chiến đấu (bắt 293); Tiểu đoàn 33 Biệt động quân, Tiểu đoàn 4 Thuỷ quân lục chiến và 1 chi đoàn thiết giáp M113 bị tiêu diệt; 3 tiểu đoàn biệt động quân 30, 35, 38 và 7 đại đội bảo an bị đánh thiệt hại; 45 xe quân sự bị phá huỷ và phá hỏng, 56 máy bay bị bắn rơi, bắn cháy; ta thu hơn 1 nghìn súng và gần 100 máy thông tin",
+    "nguon": [
+      "Chiến dịch Bình Giã – chiến dịch đầu tiên của bộ đội chủ lực trên chiến trường miền nam — Báo Nhân Dân — https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html"
+    ]
+  }
 }

@@ -3,6 +3,7 @@
   "id": "ly-bi-542",
   "ten": "Khởi nghĩa Lý Bí 542–544",
   "nam": 542,
+  "thoi_gian": "Tháng Giêng năm 542 – tháng Giêng năm Giáp Tý (544)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Lý Bí (Lý Nam Đế)",
   "doi_thu": "Nhà Lương (Thứ sử Tiêu Tư)",
@@ -11,161 +12,386 @@
     "bac-ninh"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Lý Bí liên kết với hào kiệt các châu thuộc Giao Châu cùng nổi dậy",
+        "Triệu Túc — thủ lĩnh đất Chu Diên — cùng con là Triệu Quang Phục đem quân theo trước tiên",
+        "Phạm Tu, người làng Thanh Liệt, là tướng tài từ buổi đầu khởi nghĩa",
+        "Tinh Thiều, giỏi văn chương, cùng Lý Bí mưu tính việc khởi nghĩa và chiêu tập hiền tài"
+      ],
+      "vu_khi": [
+        "Các căn cứ vừa luyện quân vừa sản xuất vũ khí, dựng dưới dạng chùa ở làng Lưu Xá khi đó còn là rừng rậm"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Tiêu Tư — Thứ sử Giao Châu của nhà Lương",
+        "Đợt phản kích tháng 4 năm 542: thứ sử Việt Châu Trần Hầu, thứ sử La Châu Nịnh Cư, thứ sử An Châu Lý Trí, thứ sử Ái Châu Nguyễn Hán, đánh từ hai phía bắc và nam",
+        "Đợt phản kích năm 543: thứ sử Cao Châu Tôn Quýnh và thứ sử Tân Châu Lư Tử Hùng",
+        "Tháng 5 năm 543: quân Lâm Ấp đánh vào quận Nhật Nam rồi quận Cửu Đức"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
+      "Bảo tàng Lịch sử Quốc gia — Tháng 2/544: Lý Nam Đế tuyên bố dựng nước độc lập, quốc hiệu Vạn Xuân — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Trận Hợp Phố đầu năm 543: quân giặc mười phần chết tới bảy, tám phần, số sống sót đều tan vỡ, tướng sĩ ngăn cấm cũng không được. Tôn Quýnh và Lư Tử Hùng dẫn tàn binh về Quảng Châu rồi bị Lương Vũ Đế xuống chiếu bắt tội chết. Quân Lâm Ấp bị Phạm Tu đánh bại ở Cửu Đức, phải chạy trốn về nước.",
+    "nguon": [
+      "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
+      "Bảo tàng Lịch sử Quốc gia — Tháng 2/544 — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          350
-        ],
-        [
-          500,
-          320
-        ],
-        [
-          1000,
-          380
-        ]
+        [120, 300],
+        [300, 268],
+        [480, 288],
+        [660, 262]
       ],
       "nhan": "Sông Hồng"
     },
     {
-      "kieu": "duong",
+      "kieu": "song",
       "diem": [
-        [
-          900,
-          60
-        ],
-        [
-          650,
-          180
-        ],
-        [
-          500,
-          300
-        ]
+        [246, 320],
+        [286, 420],
+        [320, 528]
       ],
-      "nhan": "Đường quân Lương đàn áp"
+      "nhan": "Sông Tô Lịch"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [130, 380],
+        [244, 356],
+        [300, 416],
+        [186, 452],
+        [112, 424]
+      ],
+      "nhan": "Rừng rậm Lưu Xá"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 120],
+        [880, 156],
+        [900, 470],
+        [1000, 486]
+      ],
+      "nhan": "Biển"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [420, 520],
+        [520, 494],
+        [620, 520]
+      ],
+      "nhan": "Dãy Hoành Sơn — Đèo Ngang"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-khoi-nghia",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 150,
-      "y": 480,
-      "nhan": "Lý Bí phất cờ khởi nghĩa"
-    },
-    {
-      "id": "quan-ta-tien-cong",
+      "id": "ly-bi",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 430,
-      "nhan": "Nghĩa quân tiến đánh Long Biên"
+      "x": 196,
+      "y": 300,
+      "nhan": "Lý Bí",
+      "quy_mo": "Chiêu tập nhân dân và các hào trưởng địa phương"
     },
     {
-      "id": "thanh-long-bien",
+      "id": "luu-xa",
+      "kieu": "cong-su",
+      "x": 176,
+      "y": 412,
+      "nhan": "Căn cứ Lưu Xá",
+      "quy_mo": "Luyện quân, sản xuất vũ khí, mở hội võ kén tướng"
+    },
+    {
+      "id": "trieu-tuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 350,
+      "y": 372,
+      "nhan": "Triệu Túc · Triệu Quang Phục",
+      "quy_mo": "Thủ lĩnh đất Chu Diên, theo về trước tiên"
+    },
+    {
+      "id": "pham-tu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 470,
+      "y": 420,
+      "nhan": "Phạm Tu",
+      "quy_mo": "Tướng võ, người làng Thanh Liệt"
+    },
+    {
+      "id": "tinh-thieu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 128,
+      "y": 190,
+      "nhan": "Tinh Thiều",
+      "quy_mo": "Tướng văn"
+    },
+    {
+      "id": "long-bien",
       "kieu": "thanh",
       "ben": "dich",
-      "x": 550,
-      "y": 280,
-      "nhan": "Thành Long Biên"
+      "x": 566,
+      "y": 210,
+      "nhan": "Châu thành Long Biên"
     },
     {
-      "id": "quan-dich-tieu-tu",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 600,
-      "y": 230,
-      "nhan": "Tiêu Tư bỏ chạy"
-    },
-    {
-      "id": "quan-dich-luong",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 750,
-      "y": 150,
-      "nhan": "Quân Lương sang đàn áp"
-    },
-    {
-      "id": "mui-danh-bai",
+      "id": "mui-danh-long-bien",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        300,
-        410
-      ],
-      "den": [
-        600,
-        220
-      ],
-      "nhan": "Đánh bại quân Lương"
+      "tu": [268, 286],
+      "den": [520, 226],
+      "nhan": "Chưa đầy 3 tháng chiếm được Long Biên"
     },
     {
-      "id": "co-vua",
+      "id": "tieu-tu-chay",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 782,
+      "y": 168,
+      "nhan": "Tiêu Tư bỏ chạy",
+      "quy_mo": "Về Việt Châu và Quảng Châu"
+    },
+    {
+      "id": "phan-kich-bac",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 96,
+      "nhan": "Phản kích từ phía bắc",
+      "quy_mo": "Trần Hầu · Nịnh Cư · Lý Trí, tháng 4-542"
+    },
+    {
+      "id": "phan-kich-nam",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 616,
+      "y": 462,
+      "nhan": "Phản kích từ phía nam",
+      "quy_mo": "Nguyễn Hán, thứ sử Ái Châu"
+    },
+    {
+      "id": "hop-pho",
+      "kieu": "dia-danh",
+      "x": 830,
+      "y": 262,
+      "nhan": "Hợp Phố"
+    },
+    {
+      "id": "mui-danh-hop-pho",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [620, 250],
+      "den": [796, 258],
+      "nhan": "Chủ động đánh lớn ở Hợp Phố, năm 543"
+    },
+    {
+      "id": "quan-ton-quynh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 930,
+      "y": 320,
+      "nhan": "Tôn Quýnh · Lư Tử Hùng"
+    },
+    {
+      "id": "lam-ap",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 690,
+      "y": 552,
+      "nhan": "Quân Lâm Ấp",
+      "quy_mo": "Đánh Nhật Nam rồi Cửu Đức, tháng 5-543"
+    },
+    {
+      "id": "mui-pham-tu-nam-tien",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [492, 448],
+      "den": [648, 534],
+      "nhan": "Phạm Tu vào trấn áp, thắng ở Cửu Đức"
+    },
+    {
+      "id": "cua-song-to-lich",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 300,
+      "y": 470,
+      "nhan": "Kinh đô cửa sông Tô Lịch",
+      "quy_mo": "Nhà nước Vạn Xuân, năm 544"
+    },
+    {
+      "id": "chua-khai-quoc",
+      "kieu": "dia-danh",
+      "x": 176,
+      "y": 512,
+      "nhan": "Chùa Khai Quốc — chùa Mở Nước"
+    },
+    {
+      "id": "co-van-xuan",
       "kieu": "co",
       "ben": "ta",
-      "x": 620,
-      "y": 330,
-      "nhan": "Lý Bí lên ngôi Lý Nam Đế"
-    },
-    {
-      "id": "dia-danh-van-xuan",
-      "kieu": "dia-danh",
-      "x": 550,
-      "y": 380,
+      "x": 246,
+      "y": 130,
       "nhan": "Quốc hiệu Vạn Xuân"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Phất cờ khởi nghĩa (đầu 542)",
-      "mo_ta": "Lý Bí dấy binh chống ách đô hộ tàn bạo của nhà Lương, được hào kiệt khắp nơi hưởng ứng.",
+      "tieu_de": "Ách cai trị của Tiêu Tư — hàng trăm thứ thuế",
+      "thoi_gian": "Từ năm 502 đến trước năm 542",
+      "dia_danh": "Giao Châu",
+      "mo_ta": "Năm 502, Tiêu Diễn cướp ngôi nhà Tề lập ra nhà Lương, rồi sai Lâm Vũ hầu Tiêu Tư sang làm thứ sử Giao Châu. Y vô cùng tham lam, tàn bạo, đặt ra hàng trăm loại thứ thuế, kể cả bán vợ đợ con cũng phải nộp thuế. Nhân dân khổ cực trăm bề, khắp nơi sôi sục chuẩn bị khởi nghĩa. Mở đầu là cuộc khởi nghĩa của Lý Tông Hiến năm 516, tuy sớm thất bại nhưng là màn khởi đầu cho cao trào khởi nghĩa của nhân dân ta.",
       "hien": [
-        "co-ta-khoi-nghia"
+        "long-bien",
+        "tieu-tu-chay"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tháng 2/544 — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Đánh chiếm thành Long Biên",
-      "mo_ta": "Chưa đầy 3 tháng, nghĩa quân quét sạch chính quyền đô hộ, thứ sử Tiêu Tư phải bỏ chạy về Quảng Châu.",
+      "tieu_de": "Bỏ quan về quê, dựng căn cứ, chiêu tập hiền tài",
+      "thoi_gian": "Trước năm 542",
+      "dia_danh": "Thái Bình · làng Lưu Xá",
+      "mo_ta": "Lý Bí xuất thân hào trưởng địa phương, từng ra làm việc với chính quyền đô hộ, nhận chức giám quận ở Cửu Đức, Đức Châu, nhưng bất bình với bè lũ đô hộ nên sớm bỏ quan về quê ở Thái Bình. Cùng quê ông có Tinh Thiều, giỏi văn chương, sang kinh đô nhà Lương xin bổ một chức quan nhưng bị Lại bộ thượng thư Sái Tôn cho là hàn môn, chỉ cho làm chân canh cổng thành phía tây; Tinh Thiều lấy làm xấu hổ, không nhận chức, về quê cùng Lý Bí mưu tính việc khởi nghĩa. Lý Bí đóng quân ở làng Lưu Xá khi đó còn là rừng rậm, xây căn cứ dưới dạng chùa để luyện quân, sản xuất vũ khí, mở hội võ vật kén tướng.",
       "hien": [
-        "co-ta-khoi-nghia",
-        "quan-ta-tien-cong",
-        "thanh-long-bien",
-        "quan-dich-tieu-tu"
+        "ly-bi",
+        "tinh-thieu",
+        "luu-xa"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tháng 2/544 — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html",
+        "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đánh bại hai lần quân Lương sang đàn áp",
-      "mo_ta": "Đầu năm 543, quân Lương hai lần đưa quân sang đàn áp đều bị nghĩa quân đánh bại.",
+      "tieu_de": "Tháng Giêng 542 — khởi nghĩa bùng nổ, hào kiệt các châu cùng nổi dậy",
+      "thoi_gian": "Tháng Giêng năm 542",
+      "dia_danh": "Chu Diên · Thanh Liệt · các châu Giao Châu",
+      "mo_ta": "Tháng giêng năm 542, cuộc khởi nghĩa toàn dân do Lý Bí lãnh đạo bùng nổ. Ông nhân lòng oán hận của dân, liên kết với hào kiệt các châu thuộc Giao Châu cùng đồng thời nổi dậy chống Lương. Thủ lĩnh Chu Diên là Triệu Túc và con là Triệu Quang Phục phục tài đức Lý Bí, đã đem quân theo trước tiên; Phạm Tu, người làng Thanh Liệt, cũng là một tướng tài của Lý Bí từ buổi đầu khởi nghĩa.",
       "hien": [
-        "thanh-long-bien",
-        "quan-dich-luong",
-        "mui-danh-bai"
+        "ly-bi",
+        "trieu-tuc",
+        "pham-tu",
+        "tinh-thieu",
+        "luu-xa"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Lý Bí lên ngôi hoàng đế",
-      "mo_ta": "Đầu năm 544, Lý Bí lên ngôi, xưng là Lý Nam Đế.",
+      "tieu_de": "Chưa đầy ba tháng — chiếm châu thành Long Biên",
+      "thoi_gian": "Tháng Giêng – tháng 3 năm 542",
+      "dia_danh": "Châu thành Long Biên",
+      "mo_ta": "Cuộc khởi nghĩa thành công nhanh. Đứng trước cuộc nổi dậy lớn có sự liên kết giữa các địa phương, Tiêu Tư — thứ sử Giao Châu — khiếp hãi, không dám chống cự, chạy trốn về Việt Châu ở bắc Hợp Phố rồi về Quảng Châu. Nổi dậy từ tháng 1 năm 542, không quá ba tháng nghĩa quân đã chiếm được châu thành Long Biên; bè lũ đô hộ nhà Lương bị quét sạch khỏi Giao Châu.",
       "hien": [
-        "thanh-long-bien",
-        "co-vua"
+        "mui-danh-long-bien",
+        "long-bien",
+        "tieu-tu-chay",
+        "ly-bi"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
+        "Bảo tàng Lịch sử Quốc gia — Tháng 2/544 — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đặt quốc hiệu Vạn Xuân",
-      "mo_ta": "Lập nhà nước độc lập có quốc hiệu đầu tiên của người Việt sau hơn 500 năm Bắc thuộc.",
+      "tieu_de": "Tháng 4-542 — đập tan cuộc phản kích hai gọng bắc – nam",
+      "thoi_gian": "Tháng 4 năm 542",
+      "dia_danh": "Bắc và nam Giao Châu",
+      "mo_ta": "Sau những giờ phút kinh hoàng buổi đầu, chính quyền nhà Lương lập tức đối phó. Tháng 4 năm 542, vua Lương sai thứ sử Việt Châu là Trần Hầu, thứ sử La Châu là Nịnh Cư, thứ sử An Châu là Lý Trí và thứ sử Ái Châu là Nguyễn Hán, từ hai phía bắc nam Giao Châu cùng tiến đánh nghĩa quân. Cuộc phản kích này hoàn toàn thất bại: nghĩa quân thắng lớn và nắm quyền làm chủ đất nước, từ đồng bằng Bắc Bộ kiểm soát tới vùng Đức Châu ở phía nam và bán đảo Hợp Phố ở phía bắc.",
       "hien": [
-        "co-vua",
-        "dia-danh-van-xuan"
+        "phan-kich-bac",
+        "phan-kich-nam",
+        "ly-bi",
+        "long-bien"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đầu năm 543 — chủ động đánh lớn ở Hợp Phố",
+      "thoi_gian": "Tháng 1 năm 543",
+      "dia_danh": "Hợp Phố",
+      "mo_ta": "Thua đau, vua Lương lại sai thứ sử Cao Châu là Tôn Quýnh và thứ sử Tân Châu là Lư Tử Hùng điều binh mã đi đánh. Bọn này dùng dằng không chịu tiến quân, lấy cớ mùa xuân lam chướng xin đợi mùa thu, song vẫn bất đắc dĩ phải động binh tháng 1 năm 543. Nghĩa quân chủ động tổ chức một trận tiêu diệt lớn ngay trên miền cực bắc Châu Giao: cuộc chiến diễn ra ở Hợp Phố, quân giặc mười phần chết tới bảy, tám phần. Tôn Quýnh và Lư Tử Hùng dẫn tàn binh về Quảng Châu, sau bị Lương Vũ Đế xuống chiếu bắt tội chết.",
+      "hien": [
+        "mui-danh-hop-pho",
+        "hop-pho",
+        "quan-ton-quynh",
+        "ly-bi"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Tháng 5-543 — Phạm Tu đánh bại quân Lâm Ấp ở Cửu Đức",
+      "thoi_gian": "Tháng 5 năm 543",
+      "dia_danh": "Nhật Nam · Cửu Đức",
+      "mo_ta": "Trong khi đối phó với nhà Lương ở phía bắc thì ở phía nam, vua Lâm Ấp định tấn công Giao Châu. Tháng 5 năm 543, quân Lâm Ấp xâm chiếm quận Nhật Nam rồi tiếp đến đánh phá quận Cửu Đức. Lý Bí cử tướng Phạm Tu đem quân vào trấn áp; ông đánh bại quân Lâm Ấp tại Cửu Đức, giặc phải chạy trốn về nước. Cả hai tuyến biên giới nam và bắc đều được tạm yên — điều kiện để dựng một nhà nước mới.",
+      "hien": [
+        "lam-ap",
+        "mui-pham-tu-nam-tien",
+        "pham-tu"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Tháng 2/544 — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Tháng Giêng 544 — dựng nước Vạn Xuân",
+      "thoi_gian": "Mùa xuân, tháng Giêng năm Giáp Tý (544)",
+      "dia_danh": "Cửa sông Tô Lịch",
+      "mo_ta": "Trên đà chiến thắng cả hai chiến trường biên giới, mùa xuân tháng Giêng năm 544, Lý Bí dựng lên một nước mới với quốc hiệu Vạn Xuân, đóng đô ở miền cửa sông Tô Lịch. Ông là người Việt Nam đầu tiên tự xưng hoàng đế, bãi bỏ lịch của Trung Quốc và đặt niên hiệu riêng; hai bộ sử chép hai cách gọi — sử Bắc ghi Việt đế với niên hiệu Đại Đức, sử Nam ghi Nam đế với niên hiệu Thiên Đức, và khảo cổ học đã tìm thấy những đồng tiền Thiên Đức đúc thời Lý Nam Đế.",
+      "hien": [
+        "co-van-xuan",
+        "cua-song-to-lich",
+        "ly-bi"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Triều đình hai ban văn võ và chùa Mở Nước",
+      "thoi_gian": "Năm 544",
+      "dia_danh": "Cửa sông Tô Lịch",
+      "mo_ta": "Cơ cấu triều đình mới còn sơ sài nhưng ngoài hoàng đế đứng đầu đã có hai ban văn võ: Tinh Thiều làm tướng văn, Phạm Tu làm tướng võ, Triệu Túc làm thái phó, Lý Phục Man coi giữ một miền biên cảnh từ Đỗ Động đến Đường Lâm. Hai nguồn chép hai tên cho nơi bá quan triều hội — Báo Nhân Dân ghi đài Vạn Xuân, Bảo tàng Lịch sử Quốc gia ghi điện Vạn Thọ. Nhà nước Vạn Xuân dù mới dựng cũng bỏ tiền xây chùa Khai Quốc — chùa Mở Nước — tiền thân của chùa Trấn Quốc ở Hà Nội ngày nay.",
+      "hien": [
+        "cua-song-to-lich",
+        "tinh-thieu",
+        "pham-tu",
+        "trieu-tuc",
+        "chua-khai-quoc"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
+        "Bảo tàng Lịch sử Quốc gia — Tháng 2/544 — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html"
       ]
     }
   ],
@@ -175,20 +401,27 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ nhà Tiền Lý",
     "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
-    "Báo Nhân Dân điện tử — Lý Bí và Nhà nước Vạn Xuân"
+    "Báo Nhân Dân điện tử — Lý Bí và Nhà nước Vạn Xuân — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
+    "Bảo tàng Lịch sử Quốc gia — Tháng 2/544: Lý Nam Đế tuyên bố dựng nước độc lập, quốc hiệu Vạn Xuân — https://baotanglichsu.vn/vi/Articles/3097/15798/thang-2-544-ly-nam-dje-tuyen-bo-dung-nuoc-djoc-lap-quoc-hieu-van-xuan.html"
   ],
   "trich_van_tich": [
     {
       "sach": "Tờ khải của Tiêu Tư dâng về triều Lương, vu cho hai tướng bại trận",
       "doan": "giao thông với giặc, dùng dằng không tiến quân",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
-      "buoc": 3
+      "buoc": 6
     },
     {
       "sach": "Sử cũ (Đại Việt sử ký) bình về quốc hiệu Vạn Xuân",
       "doan": "ý mong xã tắc được bền vững muôn đời",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
-      "buoc": 5
+      "buoc": 8
+    },
+    {
+      "sach": "Nhiệm vụ Lý Nam Đế giao cho Lý Phục Man ở miền biên cảnh — dẫn trong bài của Báo Nhân Dân",
+      "doan": "để phòng ngừa Di Lão",
+      "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ly-bi-va-nha-nuoc-van-xuan-post484754.html",
+      "buoc": 9
     }
   ]
 }

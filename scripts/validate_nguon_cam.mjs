@@ -61,6 +61,15 @@ const CANH_BAO = [
     "trang dòng họ tự lập — gia phả tự công bố, nên truy về thần phả/văn bia/hồ sơ di tích"],
   [/\b(?:baomoi\.com|soha\.vn|znews\.vn|kienthuc\.net\.vn|nguoiduatin\.vn)/i,
     "trang đăng lại tin — nên truy về bài gốc trên báo nhà nước"],
+  // wikidata.org lot qua MOI cong cho toi 2026-08-28: BAC chi chan
+  // wikipedia/wikisource/wikiwand, con validate_overlays thi chi doi "co >=1
+  // nguon ngoai Wikipedia" — nen mot muc dan THEM Wikidata van xanh sach.
+  // Cung ho cong dong sua duoc, cung khong co ban bien tap chiu trach nhiem.
+  // De o CANH_BAO chu KHONG o BAC vi no CO duong bao chua: dung cho MOT toa
+  // do hien thi thi yeu hon han dung lam nguon cho cau chu, va ba muc dang
+  // dinh deu la ca do. Cong dem va in, khong tu xu.
+  [/wikidata\.org/i,
+    "Wikidata — cùng họ cộng đồng sửa được như Wikipedia; chỉ tạm chấp nhận cho toạ độ hiển thị, nên truy về hồ sơ di tích hoặc node OSM"],
 ];
 
 // commons/upload.wikimedia.org là KHO MEDIA, đã được duyệt riêng: nó tách khỏi

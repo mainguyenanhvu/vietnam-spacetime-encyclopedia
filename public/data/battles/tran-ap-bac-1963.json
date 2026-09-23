@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "Sa đồ trận Ấp Bắc 1963 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Ấp Bắc ngày 2/1/1963 — MINH HOẠ, KHÔNG theo tỉ lệ địa lý. Mục T2 (chiến tranh). trang_thai=draft chờ soát §9.",
   "id": "tran-ap-bac-1963",
   "ten": "Trận Ấp Bắc",
   "nam": 1963,
@@ -16,145 +16,348 @@
       "kieu": "song",
       "diem": [
         [
-          0,
-          350
+          400,
+          100
         ],
         [
-          500,
-          330
+          430,
+          280
         ],
         [
-          1000,
-          370
+          460,
+          470
+        ],
+        [
+          480,
+          570
         ]
       ],
-      "nhan": "Vùng kênh rạch Ấp Bắc"
+      "nhan": "Rạch Ấp Bắc"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [
+          250,
+          250
+        ],
+        [
+          400,
+          240
+        ],
+        [
+          560,
+          245
+        ]
+      ],
+      "nhan": "Kênh tưới — nơi bố trí trận địa"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          560,
+          150
+        ],
+        [
+          700,
+          230
+        ],
+        [
+          820,
+          330
+        ]
+      ],
+      "nhan": "Lộ đất Dưỡng Điềm (thẻ 24)"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [
+          830,
+          130
+        ],
+        [
+          750,
+          250
+        ],
+        [
+          700,
+          400
+        ]
+      ],
+      "nhan": "Đường từ sân bay Thân Cửu Nghĩa (Chi khu Tân Hiệp)"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-can-quet-ab",
-      "kieu": "quan",
+      "id": "san-bay-than-cuu-nghia",
+      "kieu": "cong-su",
       "ben": "dich",
-      "x": 700,
-      "y": 200,
-      "nhan": "Quân đội Sài Gòn mở cuộc càn"
+      "x": 830,
+      "y": 90,
+      "nhan": "Sân bay Thân Cửu Nghĩa (Chi khu Tân Hiệp) — Tổng chỉ huy hành quân, Đại tá Bùi Đình Đạm"
     },
     {
-      "id": "truc-thang-dich",
+      "id": "l19",
       "kieu": "quan",
       "ben": "dich",
       "x": 600,
-      "y": 150,
-      "nhan": "Trực thăng đổ quân"
+      "y": 90,
+      "nhan": "5 giờ 30 sáng — máy bay trinh sát L19 đảo nhiều vòng trên Ấp Bắc"
     },
     {
-      "id": "quan-ta-tran-dia-ab",
-      "kieu": "cong-su",
+      "id": "truc-thang-do-quan",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [
+        760,
+        150
+      ],
+      "den": [
+        560,
+        230
+      ],
+      "nhan": "15 trực thăng đổ quân, có L19 dẫn đường và 2 khu trục yểm trợ"
+    },
+    {
+      "id": "my-thanh",
+      "kieu": "dia-danh",
+      "x": 470,
+      "y": 180,
+      "nhan": "Ấp Mỹ Thành, xã Phước Mỹ — đồng trống Bà Kỳ và kinh Đào"
+    },
+    {
+      "id": "tan-thoi",
+      "kieu": "thanh",
       "ben": "ta",
-      "x": 400,
-      "y": 380,
-      "nhan": "Trận địa LLVT địa phương Mỹ Tho"
+      "x": 280,
+      "y": 140,
+      "nhan": "Ấp Tân Thới"
     },
     {
-      "id": "mui-ban-ha-truc-thang",
+      "id": "ap-bac",
+      "kieu": "thanh",
+      "ben": "ta",
+      "x": 330,
+      "y": 300,
+      "nhan": "Ấp Bắc, xã Tân Phú, huyện Cai Lậy, tỉnh Mỹ Tho"
+    },
+    {
+      "id": "ban-truc-thang",
       "kieu": "mui-ten",
       "ben": "ta",
       "tu": [
-        460,
-        320
+        430,
+        250
       ],
       "den": [
-        580,
-        180
+        560,
+        215
       ],
-      "nhan": "Bắn hạ trực thăng"
+      "nhan": "Chờ trực thăng tới gần rồi khai hoả từ kênh tưới"
     },
     {
-      "id": "xe-m113",
+      "id": "d261-c1",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 140,
+      "y": 380,
+      "nhan": "Đại đội 1, Trung đội trợ chiến và 2 tiểu đội đặc công",
+      "quy_mo": "Tiểu đoàn 261, Quân khu 8"
+    },
+    {
+      "id": "d514-c1",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 140,
+      "y": 480,
+      "nhan": "Đại đội 1",
+      "quy_mo": "Tiểu đoàn 514 của tỉnh"
+    },
+    {
+      "id": "du-kich-ab",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 380,
+      "y": 470,
+      "nhan": "15 du kích xã và trung đội địa phương quân huyện Châu Thành"
+    },
+    {
+      "id": "xom-chua-thay-lo",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 330,
+      "nhan": "Xóm chùa Thầy Lơ — cánh quân phía Đông rạch Ấp Bắc"
+    },
+    {
+      "id": "xom-hang-xao",
+      "kieu": "dia-danh",
+      "x": 560,
+      "y": 430,
+      "nhan": "Xóm Hàng Xáo · xóm Hội đồng Vàng — cánh quân phía Tây rạch Ấp Bắc"
+    },
+    {
+      "id": "m113",
       "kieu": "quan",
       "ben": "dich",
-      "x": 750,
-      "y": 350,
-      "nhan": "Xe thiết giáp M113"
+      "x": 760,
+      "y": 300,
+      "nhan": "13 xe lội nước tiến trên đồng ruộng từ trước 13 giờ",
+      "quy_mo": "Thiết giáp M113"
     },
     {
-      "id": "mui-danh-bat-m113",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        480,
-        420
-      ],
-      "den": [
-        700,
-        360
-      ],
-      "nhan": "Đánh bật xe M113"
+      "id": "linh-du",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 800,
+      "y": 430,
+      "nhan": "Tiểu đoàn lính dù nhảy xuống ấp Tân Thới cuối ngày"
     },
     {
-      "id": "co-thang-ab",
+      "id": "ket-qua-ab",
       "kieu": "co",
       "ben": "ta",
-      "x": 400,
-      "y": 450,
-      "nhan": "Đánh bại 'trực thăng vận, thiết xa vận'"
+      "x": 850,
+      "y": 540,
+      "nhan": "Đánh bại «trực thăng vận», «thiết xa vận»"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân đội Sài Gòn mở cuộc càn có Mỹ yểm trợ",
-      "mo_ta": "Ngày 2/1/1963, quân đội Sài Gòn mở cuộc càn quét vào Ấp Bắc, có trực thăng, xe thiết giáp M113 và cố vấn Mỹ yểm trợ.",
+      "tieu_de": "1961 – 1962 — kế hoạch Staley – Taylor và các chiến thuật «tân kỳ»",
+      "thoi_gian": "1961 – 1962",
+      "dia_danh": "Chiến trường miền Nam",
+      "mo_ta": "Với phương tiện tạo sức cơ động nhanh và sức tấn công ác liệt, trong hai năm 1961 – 1962 phía Mỹ và chính quyền Sài Gòn giành thế chủ động trên một số chiến trường bằng các chiến thuật «trực thăng vận», «thiết xa vận», «bủa lưới phóng lao», «phượng hoàng vồ mồi». Suốt năm 1962 họ gấp rút triển khai kế hoạch Staley – Taylor nhằm giành toàn thắng trong vòng 18 tháng, với hai biện pháp chủ yếu là lập ấp chiến lược dồn dân và dùng vũ khí tối tân càn quét tiêu diệt lực lượng vũ trang, đặc biệt là du kích.",
       "hien": [
-        "quan-dich-can-quet-ab",
-        "truc-thang-dich"
+        "ap-bac",
+        "tan-thoi"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "LLVT địa phương bố trí trận địa đón đánh",
-      "mo_ta": "Lực lượng vũ trang địa phương Mỹ Tho cùng nhân dân đã bố trí công sự, trận địa đón đánh từ trước.",
+      "tieu_de": "Cuối 1962 — ta chuẩn bị cách đánh trực thăng và M113",
+      "thoi_gian": "Cuối năm 1962",
+      "dia_danh": "Ấp Bắc, xã Tân Phú, huyện Cai Lậy, tỉnh Mỹ Tho",
+      "mo_ta": "Cuối năm 1962, quân giải phóng đã hiểu được các loại vũ khí mới và các chiến thuật mới của đối phương, dự định được cách đánh có hiệu quả, rồi tổ chức huấn luyện, xây dựng chiến thuật cá nhân và đơn vị, cách bắn trực thăng và phá xe M113. Lực lượng ta ở Ấp Bắc gồm Đại đội 1 của Tiểu đoàn 261 thuộc Quân khu 8, Đại đội 1 của Tiểu đoàn 514 của tỉnh, một trung đội trợ chiến và hai tiểu đội đặc công. Chỉ huy trưởng là đồng chí Hai Hoàng, Tiểu đoàn trưởng Tiểu đoàn 261.",
       "hien": [
-        "quan-ta-tran-dia-ab"
+        "d261-c1",
+        "d514-c1",
+        "du-kich-ab",
+        "ap-bac"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Bắn hạ trực thăng đổ quân",
-      "mo_ta": "Quân ta tập trung hỏa lực bắn hạ nhiều trực thăng khi đối phương đổ quân.",
+      "tieu_de": "5 giờ 30 sáng 2/1/1963 — trinh sát L19 và đợt đổ quân đầu tiên",
+      "thoi_gian": "5 giờ 30 – sáng 2/1/1963",
+      "dia_danh": "Ấp Mỹ Thành, xã Phước Mỹ",
+      "mo_ta": "Khoảng 5 giờ 30 phút sáng 2/1/1963, một máy bay trinh sát L19 từ sân bay Thân Cửu Nghĩa bay lên đảo nhiều vòng trên vùng trời Ấp Bắc. Sau đó, cũng từ Thân Cửu Nghĩa, 15 máy bay trực thăng có máy bay trinh sát dẫn đường và 2 máy bay khu trục yểm trợ đổ quân. Tại ấp Mỹ Thành, xã Phước Mỹ, khoảng đồng trống Bà Kỳ và kinh Đào, họ đổ hơn 1 đại đội bộ binh thuộc tiểu đoàn 2, trung đoàn 11, sư đoàn 7.",
       "hien": [
-        "quan-ta-tran-dia-ab",
-        "truc-thang-dich",
-        "mui-ban-ha-truc-thang"
+        "san-bay-than-cuu-nghia",
+        "l19",
+        "truc-thang-do-quan",
+        "my-thanh"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đánh bật xe thiết giáp M113",
-      "mo_ta": "Quân ta đánh bật các đợt tiến công của xe thiết giáp M113, gây thiệt hại nặng cho đối phương.",
+      "tieu_de": "Hai cánh quân từ lộ đất Dưỡng Điềm siết vào Ấp Bắc",
+      "thoi_gian": "Sáng 2/1/1963",
+      "dia_danh": "Lộ đất Dưỡng Điềm · xóm chùa Thầy Lơ · xóm Hàng Xáo · xóm Hội đồng Vàng",
+      "mo_ta": "Phía lộ đất Dưỡng Điềm (thẻ 24) có hai cánh quân: một cánh toả xuống phía Đông rạch Ấp Bắc kéo vào xóm chùa Thầy Lơ, một cánh kéo vào phía Tây rạch Ấp Bắc vào xóm Hàng Xáo rồi chia làm 4 tuyến vào xóm Hội đồng Vàng thuộc Ấp Bắc, Tân Phú. Cùng lúc đó, chuyến trực thăng thứ hai đến đổ hơn 1 đại đội ngay chỗ chuyến thứ nhất, nâng quân số ở đây lên 3 đại đội. Trước trận địa trung đội 3 của Đại đội 1, Tiểu đoàn 261 có 15 du kích xã và một số thanh niên; trung đội địa phương quân huyện Châu Thành rút vào, bố trí tiếp giáp để cùng chiến đấu.",
       "hien": [
-        "quan-ta-tran-dia-ab",
-        "xe-m113",
-        "mui-danh-bat-m113"
+        "xom-chua-thay-lo",
+        "xom-hang-xao",
+        "ap-bac",
+        "du-kich-ab",
+        "truc-thang-do-quan"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Đánh bại chiến thuật 'trực thăng vận, thiết xa vận'",
-      "mo_ta": "Chiến thắng Ấp Bắc đánh bại hai chiến thuật chủ lực của Mỹ, mở đầu phá sản chiến lược 'chiến tranh đặc biệt'.",
+      "tieu_de": "Đánh trực thăng — không bắn máy bay quan sát, chờ tới gần mới khai hoả",
+      "thoi_gian": "Sáng đến trưa 2/1/1963",
+      "dia_danh": "Kênh tưới Ấp Bắc",
+      "mo_ta": "Quân giải phóng áp dụng nguyên tắc không bắn máy bay quan sát và chờ xem điều gì xảy ra tiếp theo. Lần lượt ba chiếc trực thăng chiến đấu xuất hiện, bắt đầu bắn súng máy và rốc két. Chờ trực thăng tới gần, quân giải phóng khai hoả hàng loạt súng tự động và súng trường từ kênh tưới. Bằng cách đánh phục kích đó, đến trưa ta loại khỏi vòng chiến đấu 5 chiếc trực thăng. Các toán quân của Sư đoàn 7 tiến vào ấp từ phía Bắc đã không quay lại để cứu đại đội dự phòng và các tổ lái trực thăng.",
       "hien": [
-        "co-thang-ab"
+        "ban-truc-thang",
+        "truc-thang-do-quan",
+        "ap-bac"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Đánh xe M113 bằng vũ khí nhẹ và lựu đạn",
+      "thoi_gian": "12 giờ 15 – chiều 2/1/1963",
+      "dia_danh": "Ấp Tân Thới · cánh đồng Ấp Bắc",
+      "mo_ta": "Đến 12 giờ 15, tiểu đoàn của quân đội Sài Gòn mới tới Tân Thới. Trước 13 giờ, những chiếc thiết giáp M113 tiến dần trên đồng ruộng. Quân giải phóng không có vũ khí chống tăng nên không thể chống xe bọc thép hiệu quả; các huấn luyện viên đã lên danh sách điểm yếu của xe: người bắn súng máy trên đỉnh đứng sau giá súng để lộ từ thắt lưng trở lên, có thể bắn trúng lái xe qua khe ngắm, và có thể tiếp cận ném lựu đạn lên nóc xe. Chỉ huy truyền cho chiến sĩ tập trung bắn vào M113 như đã bắn máy bay: mỗi tiểu đội hoặc trung đội chọn chiếc xe gần nhất rồi bắn tập trung, không để hoả lực bị phân tán.",
+      "hien": [
+        "m113",
+        "tan-thoi",
+        "d261-c1",
+        "ap-bac"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Năm đợt tiến công bị đẩy lùi — kết quả trận đánh",
+      "thoi_gian": "6 giờ sáng – 8 giờ tối 2/1/1963",
+      "dia_danh": "Ấp Bắc · Tân Thới",
+      "mo_ta": "Trận đánh kéo dài suốt 14 tiếng đồng hồ, ta chủ động mở 5 đợt tiến công: đánh bộ binh, đánh trực thăng, đánh bộ binh ở ấp Tân Thới, đánh xe lội nước tại Ấp Bắc và đánh quân nhảy dù ở ấp Tân Thới. Cả 5 đợt tấn công của đối phương bằng thiết xa vận, trực thăng vận, bủa lưới phóng lao từ nhiều hướng, kể cả đổ bộ đường không bằng nhảy dù, đều bị đẩy lùi. Đối phương chết và bị thương 450, trong đó 3 cố vấn Mỹ chết và 16 phi công Mỹ bị thương; phía ta 12 đồng chí hy sinh, 13 bị thương; 11 người dân chết, 14 người bị thương.",
+      "hien": [
+        "linh-du",
+        "m113",
+        "ket-qua-ab",
+        "tan-thoi"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Ngay trong đêm — rút quân an toàn và đấu tranh chính trị",
+      "thoi_gian": "Đêm 2/1 và những ngày sau",
+      "dia_danh": "Ấp Bắc · quận Cai Lậy",
+      "mo_ta": "Phối hợp với đấu tranh vũ trang, ngay trong đêm quân giải phóng rút khỏi Ấp Bắc an toàn, nhân dân Ấp Bắc cùng một số xã lân cận kéo lên quận Cai Lậy đấu tranh chính trị, phản đối việc ném bom, bắn phá xóm làng và đòi nhà cầm quyền ngăn chặn các cuộc khủng bố để dân được yên ổn. Ấp Bắc là trận chống càn thắng lợi lớn đối với phong trào chính trị, vũ trang và binh vận toàn miền Trung – Nam Bộ, đánh dấu sự trưởng thành của lực lượng vũ trang ba thứ quân.",
+      "hien": [
+        "ap-bac",
+        "du-kich-ab",
+        "d514-c1",
+        "ket-qua-ab"
+      ],
+      "nguon": [
+        "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
       ]
     }
   ],
-  "ket_qua": "Đánh bại chiến thuật 'trực thăng vận, thiết xa vận', mở đầu phá sản chiến lược 'chiến tranh đặc biệt' của Mỹ.",
-  "y_nghia": "Chiến thắng đầu tiên của lực lượng vũ trang cách mạng trước vũ khí, phương tiện hiện đại do Mỹ trang bị, cổ vũ phong trào 'thi đua Ấp Bắc, giết giặc lập công'.",
+  "ket_qua": "Sau 14 giờ chiến đấu, ta đẩy lùi cả 5 đợt tiến công. Đối phương chết và bị thương 450, trong đó 3 cố vấn Mỹ chết và 16 phi công Mỹ bị thương; 3 xe M113 hư hỏng nặng, 8 trực thăng bị bắn rơi, 1 tàu bị chìm và 2 chiếc bị hỏng. Phía ta 12 đồng chí hy sinh, 13 bị thương; 11 người dân chết, 14 người bị thương, 29 nhà bị cháy hoặc hư sập (Bảo tàng Lịch sử quốc gia).",
+  "y_nghia": "Ấp Bắc là trận đầu đánh bại chiến thuật «trực thăng vận» và «thiết xa vận», mở đường cho cao trào tiêu diệt sinh lực đối phương trong càn quét, bắn máy bay, đánh thiết giáp và đẩy phong trào phá ấp chiến lược lên cao. Đây cũng là trận mở đầu cho sự khủng hoảng chiến thuật và dấu hiệu phá sản của chiến lược «Chiến tranh đặc biệt».",
   "trang_thai": "draft",
   "nguon": [
+    "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html",
     "qdnd.vn — Chiến thắng Ấp Bắc",
-    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
-    "baotanglichsu.vn — Chiến thắng Ấp Bắc 2-1-1963"
+    "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
   ],
   "trich_van_tich": [
     {
@@ -163,5 +366,37 @@
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/chien-thang-ap-bac-bieu-tuong-suc-manh-chien-tranh-nhan-dan-viet-nam-post732936.html",
       "buoc": 5
     }
-  ]
+  ],
+  "ghi_chu_bien_tap": "Diễn biến và số liệu hai bên theo bài của Bảo tàng Lịch sử quốc gia. loai_xung_dot=noi-chien: lực lượng mở cuộc càn là quân đội Sài Gòn; phía Mỹ có cố vấn và phi công trực tiếp tham gia (nguồn ghi 3 cố vấn Mỹ chết và 16 phi công Mỹ bị thương) nhưng không phải lực lượng bộ binh chủ công. Đây là ca ở ranh giới, người soát §9 có thể quyết khác. Số liệu tổn thất phía ta gồm cả thiệt hại của dân thường và nhà cửa, giữ nguyên cách nguồn nêu, không làm tròn. Các mục trich_van_tich vốn có của hồ sơ được giữ nguyên văn cùng nguon_trich của chúng; đợt này không mở lại các URL đó nên chưa tự đối chiếu được, chỉ những mục trích MỚI thêm mới đối chiếu với nguyên văn trang đã mở.",
+  "loai_xung_dot": "noi-chien",
+  "thoi_gian": "2/1/1963 — từ 6 giờ sáng đến 8 giờ tối",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "2 đại đội bộ binh, 1 trung đội trợ chiến, 2 tiểu đội đặc công, cùng 15 du kích xã và 1 trung đội địa phương quân huyện Châu Thành",
+      "don_vi": [
+        "Đại đội 1, Tiểu đoàn 261, Quân khu 8",
+        "Đại đội 1, Tiểu đoàn 514 của tỉnh",
+        "Trung đội trợ chiến và 2 tiểu đội đặc công (Đại đội 3, Tiểu đoàn 261)"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "3 tiểu đoàn của Sư đoàn 7, 2 đại đội biệt động quân, 4 đại đội bảo an biệt kích, 4 đại đội bảo an tỉnh, 3 đại đội dân vệ biệt kích, 1 tiểu đoàn lính dù",
+      "vu_khi": [
+        "13 tàu FOM, LCVP, LCM",
+        "13 xe lội nước M113",
+        "20 trực thăng (10 chiếc H21, 5 chiếc H34, 5 chiếc HU1A)",
+        "2 máy bay ném bom B26, 6 khu trục, 4 trinh sát L19, 7 vận tải C47"
+      ]
+    },
+    "nguon": [
+      "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
+    ]
+  },
+  "ton_that": {
+    "ta": "12 đồng chí hy sinh, trong đó có 1 tiểu đội trưởng, 1 tiểu đội phó, 1 cứu thương; 13 đồng chí bị thương, có 1 trung đội phó; 11 người dân chết, 14 người bị thương; 29 nhà bị cháy hoặc hư sập",
+    "doi_thu": "450 chết và bị thương, trong đó 3 cố vấn Mỹ chết và 16 phi công Mỹ bị thương; 3 xe lội nước M113 hư hỏng nặng; 8 máy bay trực thăng bị bắn rơi (tại mặt trận 3 chiếc, các nơi khác 5 chiếc); 1 tàu bị chìm, 2 chiếc bị hỏng",
+    "nguon": [
+      "Chiến thắng Ấp Bắc ngày 2-1-1963 — Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3097/19685/chien-thang-ap-bac-ngay-2-1-1963.html"
+    ]
+  }
 }

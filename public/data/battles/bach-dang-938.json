@@ -3,6 +3,7 @@
   "id": "bach-dang-938",
   "ten": "Trận Bạch Đằng năm 938",
   "nam": 938,
+  "thoi_gian": "Cuối đông năm Mậu Tuất (938) — trận quyết chiến diễn ra gọn trong một ngày",
   "chi_huy": "Ngô Quyền",
   "doi_thu": "Quân Nam Hán (chủ tướng Lưu Hoằng Tháo)",
   "dia_diem": "Cửa sông Bạch Đằng (nay thuộc địa phận Hải Phòng – Quảng Ninh)",
@@ -13,260 +14,352 @@
   "figure_id": "ngo-quyen",
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "sa_do_kieu": "tong-quat",
-  "dia_hinh": [
-    {
-      "kieu": "bien",
-      "diem": [
-        [
-          870,
-          140
-        ],
-        [
-          985,
-          205
-        ],
-        [
-          905,
-          370
-        ],
-        [
-          985,
-          540
-        ],
-        [
-          870,
-          600
-        ]
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Thuỷ binh và bộ binh do Ngô Quyền trực tiếp chỉ huy",
+        "Dân binh các làng ven sông",
+        "Đội thuyền nhẹ khiêu chiến do Nguyễn Tất Tố, người Gia Viện, chỉ huy"
       ],
-      "nhan": "Cửa biển"
+      "vu_khi": [
+        "Bãi cọc gỗ vót nhọn, bịt sắt — hơn ba nghìn cây, đóng trên quãng sông dài ba dặm",
+        "Thuyền nhẹ cơ động dùng để nhử địch"
+      ]
     },
+    "doi_thu": {
+      "don_vi": [
+        "Thuỷ quân Nam Hán do Thái tử Giao Vương Lưu Hoằng Tháo thống lĩnh",
+        "Đạo quân của vua Nam Hán Lưu Cung áp sát biên giới để tiếp ứng"
+      ],
+      "vu_khi": [
+        "Binh thuyền lớn vượt biển vào cửa An Bang"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html",
+      "Bộ CHQS thành phố Hải Phòng — Ngô Quyền đánh tan quân Nam Hán năm 938 — https://quansu.haiphong.gov.vn/Lich-su-truyen-thong/Nhung-chien-cong-tieu-bieu/Ngo-Quyen-danh-tan-quan-Nam-Han-nam-938-121420.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Thuyền va vào cọc nhọn bịt sắt, chìm đắm gần hết; quân chết đuối quá nửa; chủ tướng Lưu Hoằng Tháo bị giáo đâm, ngã xuống nước chết tại trận.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
+    ]
+  },
+  "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          25,
-          355
-        ],
-        [
-          290,
-          345
-        ],
-        [
-          555,
-          365
-        ],
-        [
-          810,
-          388
-        ],
-        [
-          985,
-          402
-        ]
+        [60, 300],
+        [240, 288],
+        [430, 305],
+        [620, 298],
+        [800, 318],
+        [930, 330]
       ],
       "nhan": "Sông Bạch Đằng"
     },
     {
-      "kieu": "rung",
+      "kieu": "bien",
       "diem": [
-        [
-          120,
-          195
-        ],
-        [
-          300,
-          168
-        ],
-        [
-          480,
-          182
-        ],
-        [
-          655,
-          162
-        ],
-        [
-          800,
-          190
-        ]
+        [1000, 100],
+        [860, 128],
+        [855, 548],
+        [1000, 560]
       ],
-      "nhan": "Rừng rậm hai bờ — nơi mai phục"
+      "nhan": "Cửa biển An Bang"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [300, 122],
+        [420, 96],
+        [545, 112],
+        [665, 92]
+      ],
+      "nhan": "Núi non tả ngạn"
     },
     {
       "kieu": "rung",
       "diem": [
-        [
-          120,
-          540
-        ],
-        [
-          300,
-          565
-        ],
-        [
-          480,
-          552
-        ],
-        [
-          655,
-          570
-        ],
-        [
-          800,
-          545
-        ]
-      ]
+        [250, 472],
+        [430, 450],
+        [600, 470],
+        [560, 545],
+        [300, 548]
+      ],
+      "nhan": "Rừng rậm hữu ngạn"
     }
   ],
   "phan_tu": [
     {
-      "id": "bai-coc",
-      "kieu": "cong-su",
-      "ben": "ta",
-      "x": 420,
-      "y": 372,
-      "nhan": "Bãi cọc ngầm bịt sắt"
+      "id": "thanh-dai-la",
+      "kieu": "thanh",
+      "x": 95,
+      "y": 470,
+      "nhan": "Đại La",
+      "quy_mo": "Kiều Công Tiễn chiếm giữ"
     },
     {
-      "id": "quan-ta-bo-bac",
+      "id": "dai-ban-doanh",
       "kieu": "quan",
       "ben": "ta",
-      "x": 235,
-      "y": 232,
-      "nhan": "Quân ta mai phục bờ bắc"
-    },
-    {
-      "id": "quan-ta-bo-nam",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 235,
-      "y": 500,
-      "nhan": "Quân ta mai phục bờ nam"
-    },
-    {
-      "id": "thuyen-dich",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 855,
-      "y": 400,
-      "nhan": "Thuyền Lưu Hoằng Tháo"
-    },
-    {
-      "id": "mui-nhu-dich",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        520,
-        318
-      ],
-      "den": [
-        800,
-        378
-      ],
-      "nhan": "Nhử địch qua bãi cọc"
-    },
-    {
-      "id": "thuyen-mac-can",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 690,
-      "y": 388,
-      "nhan": "Thuyền vướng cọc, mắc cạn"
-    },
-    {
-      "id": "mui-phan-cong-bac",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        265,
-        272
-      ],
-      "den": [
-        640,
-        366
-      ],
-      "nhan": "Phản công từ bờ bắc"
-    },
-    {
-      "id": "mui-phan-cong-nam",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        265,
-        460
-      ],
-      "den": [
-        640,
-        404
-      ],
-      "nhan": "Phản công từ bờ nam"
+      "x": 150,
+      "y": 300,
+      "nhan": "Ngô Quyền",
+      "quy_mo": "Đại quân thuỷ bộ"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 500,
-      "y": 205,
-      "nhan": "Toàn thắng — Lưu Hoằng Tháo tử trận"
+      "x": 250,
+      "y": 178,
+      "nhan": "Toàn thắng"
+    },
+    {
+      "id": "mai-phuc-nhanh-song",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 430,
+      "y": 180,
+      "nhan": "Mai phục trong các nhánh sông"
+    },
+    {
+      "id": "mai-phuc-huu-ngan",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 470,
+      "y": 432,
+      "nhan": "Mai phục hữu ngạn"
+    },
+    {
+      "id": "mui-phan-cong-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [452, 218],
+      "den": [578, 285],
+      "nhan": "Phản công từ tả ngạn"
+    },
+    {
+      "id": "mui-phan-cong-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [492, 400],
+      "den": [592, 322],
+      "nhan": "Phản công từ hữu ngạn"
+    },
+    {
+      "id": "thuyen-dam",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 632,
+      "y": 372,
+      "nhan": "Thuyền giặc vỡ, đắm"
+    },
+    {
+      "id": "bai-coc",
+      "kieu": "cong-su",
+      "x": 692,
+      "y": 300,
+      "nhan": "Bãi cọc bịt sắt",
+      "quy_mo": "Hơn 3.000 cọc, dài ba dặm"
+    },
+    {
+      "id": "thuyen-nhe-khieu-chien",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 748,
+      "y": 218,
+      "nhan": "Thuyền nhẹ khiêu chiến",
+      "quy_mo": "Nguyễn Tất Tố chỉ huy"
+    },
+    {
+      "id": "mui-nhu-dich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [772, 244],
+      "den": [618, 282],
+      "nhan": "Giả thua, nhử địch"
+    },
+    {
+      "id": "mui-dich-duoi",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [822, 322],
+      "den": [668, 316],
+      "nhan": "Hoằng Tháo thúc quân đuổi"
+    },
+    {
+      "id": "mui-chan-duong-rut",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [800, 418],
+      "den": [706, 336],
+      "nhan": "Khoá đường rút ra biển"
+    },
+    {
+      "id": "thuyen-nam-han",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 862,
+      "y": 300,
+      "nhan": "Binh thuyền Nam Hán",
+      "quy_mo": "Lưu Hoằng Tháo thống lĩnh"
+    },
+    {
+      "id": "quan-luu-cung",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 880,
+      "y": 500,
+      "nhan": "Lưu Cung đóng ở biên giới",
+      "quy_mo": "Quân tiếp ứng"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Đóng cọc, bố trí trận địa",
-      "mo_ta": "Ngô Quyền cho đóng hàng nghìn cọc gỗ nhọn bịt sắt xuống lòng sông Bạch Đằng, giấu dưới mặt nước khi triều lên; mai phục quân hai bên bờ.",
-      "thuy_trieu": "len",
+      "tieu_de": "Kiều Công Tiễn giết chủ, cầu cứu Nam Hán",
+      "thoi_gian": "Năm 937 – đầu năm 938",
+      "dia_danh": "Đại La · Phiên Ngung",
+      "mo_ta": "Năm 937, Dương Đình Nghệ bị nha tướng Kiều Công Tiễn ám hại để đoạt chức Tiết độ sứ. Ngô Quyền khi ấy đang trấn giữ châu Ái, nghe tin liền kéo quân ra hỏi tội. Kiều Công Tiễn hoảng sợ, cho người sang cầu cứu vua Nam Hán. Trước đó, năm 930, Nam Hán từng đánh bại chính quyền họ Khúc và chiếm phủ thành Đại La, đến năm 931 bị Dương Đình Nghệ quét sạch; nay chúng nắm lấy cơ hội để phát động cuộc xâm lược lần thứ hai.",
       "hien": [
-        "bai-coc",
-        "quan-ta-bo-bac",
-        "quan-ta-bo-nam"
+        "thanh-dai-la",
+        "dai-ban-doanh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nhử địch vào bãi cọc",
-      "mo_ta": "Khi thuỷ triều lên ngập cọc, Ngô Quyền cho thuyền nhẹ ra khiêu chiến rồi giả thua, nhử đoàn thuyền lớn của Lưu Hoằng Tháo tiến sâu qua bãi cọc.",
-      "thuy_trieu": "len",
+      "tieu_de": "Nam Hán cử Lưu Hoằng Tháo vượt biển, vua thân đem quân tiếp ứng",
+      "thoi_gian": "Năm 938",
+      "dia_danh": "Cửa biển An Bang",
+      "mo_ta": "Vua Nam Hán sai con trai là Thái tử Giao Vương Lưu Hoằng Tháo thống lĩnh quân thuỷ vượt biển tiến vào nước ta. Bản thân vua Nam Hán đích thân đem quân áp sát biên giới để yểm trợ, gây thanh thế cho con và sẵn sàng tiếp ứng khi cần. Kế hoạch của chúng dựa vào hai chỗ dựa: sức mạnh của binh thuyền lớn vượt biển, và nội ứng là Kiều Công Tiễn đang cố thủ trong phủ thành Đại La.",
       "hien": [
-        "bai-coc",
-        "quan-ta-bo-bac",
-        "quan-ta-bo-nam",
-        "thuyen-dich",
-        "mui-nhu-dich"
+        "thanh-dai-la",
+        "thuyen-nam-han",
+        "quan-luu-cung"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Nước triều rút",
-      "mo_ta": "Thuỷ triều bắt đầu rút nhanh; bãi cọc nhô dần lên, thuyền lớn quân Nam Hán bị vướng và va vào cọc, vỡ và mắc cạn.",
-      "thuy_trieu": "xuong",
+      "tieu_de": "Diệt nội phản trước khi giặc tới",
+      "thoi_gian": "Tháng 10 năm 938",
+      "dia_danh": "Đại La",
+      "mo_ta": "Tháng 10 năm 938, Ngô Quyền từ vùng châu Ái đem quân ra đánh Kiều Công Tiễn, trừ mối hoạ bên trong và làm hỏng ngay từ đầu âm mưu dùng nội ứng của Nam Hán. Giặc chưa vào tới cửa biển đã mất chỗ dựa quan trọng nhất trên đất liền. Sau đó ông huy động nhân dân cả nước khẩn trương bước vào cuộc kháng chiến, phân tích chỗ mạnh chỗ yếu của hai bên rồi bày một thế trận chủ động để phá tan quân giặc.",
       "hien": [
-        "bai-coc",
-        "thuyen-mac-can"
+        "thanh-dai-la",
+        "dai-ban-doanh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tổng phản công",
-      "mo_ta": "Ngô Quyền tung toàn lực từ hai bờ và thượng nguồn đánh xuống. Quân Nam Hán rối loạn, thuyền đắm, Lưu Hoằng Tháo tử trận.",
-      "thuy_trieu": "xuong",
+      "tieu_de": "Đóng bãi cọc bịt sắt ở cửa sông",
+      "thoi_gian": "Trước khi giặc tới, cuối năm 938",
+      "dia_danh": "Cửa sông Bạch Đằng",
+      "mo_ta": "Ngô Quyền chọn Bạch Đằng — cửa ngõ đông bắc, nơi thuỷ triều lên xuống mạnh — làm nơi quyết chiến, và là người biết lợi dụng thuỷ triều sớm nhất trong lịch sử quân sự nước ta. Ông huy động nhân dân đẵn gỗ, vót nhọn, bịt sắt rồi đóng thành một bãi cọc ở cửa sông: hơn ba nghìn cây gỗ, trên một quãng sông dài ba dặm. Triều lên thì cả bãi cọc chìm khuất dưới mặt nước, triều xuống thì hàng cọc nhô lên cản trở thuyền qua lại.",
       "hien": [
         "bai-coc",
-        "thuyen-mac-can",
-        "quan-ta-bo-bac",
-        "quan-ta-bo-nam",
-        "mui-phan-cong-bac",
-        "mui-phan-cong-nam"
+        "dai-ban-doanh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html",
+        "Bộ CHQS thành phố Hải Phòng — Ngô Quyền đánh tan quân Nam Hán năm 938 — https://quansu.haiphong.gov.vn/Lich-su-truyen-thong/Nhung-chien-cong-tieu-bieu/Ngo-Quyen-danh-tan-quan-Nam-Han-nam-938-121420.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Toàn thắng",
-      "mo_ta": "Quân Nam Hán đại bại, vua Nam Hán phải rút quân. Chiến thắng Bạch Đằng chấm dứt hơn một nghìn năm Bắc thuộc, mở nền độc lập lâu dài.",
-      "thuy_trieu": "xuong",
+      "tieu_de": "Ém quân mai phục phía trong bãi cọc",
+      "thoi_gian": "Cuối đông 938",
+      "dia_danh": "Hạ lưu Bạch Đằng · hữu ngạn · các nhánh sông",
+      "mo_ta": "Quân thuỷ bộ cùng các lực lượng dân binh bố trí mai phục sẵn ở phía trong bãi cọc, vùng hạ lưu sông Bạch Đằng. Ngô Quyền trực tiếp chỉ huy cánh quân này, giấu quân trong các nhánh sông và bên hữu ngạn, nơi cây cối um tùm che lấp bờ bến. Trong thế trận của ông, trận địa mai phục bên trong giữ vai trò quyết định — chặn đứng đoàn thuyền địch; còn trận địa cọc giữ vai trò khoá đường tháo chạy, để bao vây tiêu diệt triệt để.",
       "hien": [
         "bai-coc",
-        "co-thang"
+        "mai-phuc-huu-ngan",
+        "mai-phuc-nhanh-song",
+        "dai-ban-doanh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Triều lên — thuyền nhẹ khiêu chiến, giả thua nhử địch qua bãi cọc",
+      "thoi_gian": "Buổi sáng ngày quyết chiến, lúc nước triều lên",
+      "dia_danh": "Cửa biển An Bang · cửa ngõ Bạch Đằng",
+      "thuy_trieu": "len",
+      "mo_ta": "Khi binh đoàn thuyền lớn của Hoằng Tháo ào ạt vượt cửa biển An Bang tiến vào cửa ngõ Bạch Đằng, Ngô Quyền cho bộ phận tiên phong dùng thuyền nhẹ ra đón đánh từ xa để nghi binh dụ địch. Đội thuyền này do Nguyễn Tất Tố — người Gia Viện, giỏi bơi lội và quen sông nước — chỉ huy. Đúng lúc thuỷ triều lên to ngập kín trận địa cọc, họ giả thua rút chạy. Hoằng Tháo cậy quân đông, thúc đại quân đuổi gấp, vượt qua bãi cọc ngầm mà không hay biết.",
+      "hien": [
+        "thuyen-nam-han",
+        "thuyen-nhe-khieu-chien",
+        "mui-nhu-dich",
+        "mui-dich-duoi",
+        "bai-coc"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Triều rút, cọc nhô — tổng phản công từ hai bờ",
+      "thoi_gian": "Cùng ngày, lúc nước triều rút",
+      "dia_danh": "Hạ lưu sông Bạch Đằng",
+      "thuy_trieu": "xuong",
+      "mo_ta": "Ngô Quyền đợi thuỷ triều xuống mới cho quân mai phục đổ ra bao vây thuyền địch. Hàng cọc nhô lên chặn ngang dòng nước; thuyền giặc va vào cọc nhọn bịt sắt bị đâm thủng, chìm đắm gần hết, quân chết đuối quá nửa. Quân ta từ tả ngạn, từ các nhánh sông và từ hữu ngạn đồng loạt đánh vào giữa đội hình đã rối loạn của địch. Toàn bộ trận đánh chỉ diễn ra trong phạm vi một ngày.",
+      "hien": [
+        "bai-coc",
+        "thuyen-dam",
+        "mui-phan-cong-bac",
+        "mui-phan-cong-nam",
+        "mai-phuc-huu-ngan",
+        "mai-phuc-nhanh-song"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Khoá cửa biển — Hoằng Tháo tử trận",
+      "thoi_gian": "Chiều ngày quyết chiến",
+      "dia_danh": "Cửa sông Bạch Đằng",
+      "mo_ta": "Trận địa cọc khoá chặt đường tháo chạy ra biển, thuyền giặc dồn ứ lại không thoát được. Hoằng Tháo bị giáo đâm, lăn xuống nước chết tại trận. Quân ta giết và bắt sống hầu hết quân Nam Hán. Chiến thắng đến nhanh và bất ngờ tới mức vua Nam Hán đang cầm quân tiếp ứng đóng ở biên giới mà không kịp trở tay đối phó, đành thu nhặt số quân còn sót lại mà rút lui; từ đó nhà Nam Hán bỏ hẳn mộng xâm lược nước ta.",
+      "hien": [
+        "mui-chan-duong-rut",
+        "thuyen-dam",
+        "bai-coc",
+        "quan-luu-cung"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html",
+        "Bộ CHQS thành phố Hải Phòng — Ngô Quyền đánh tan quân Nam Hán năm 938 — https://quansu.haiphong.gov.vn/Lich-su-truyen-thong/Nhung-chien-cong-tieu-bieu/Ngo-Quyen-danh-tan-quan-Nam-Han-nam-938-121420.html"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Xưng vương, đóng đô Cổ Loa",
+      "thoi_gian": "Mùa xuân năm Kỷ Hợi (939)",
+      "dia_danh": "Cổ Loa",
+      "mo_ta": "Mùa xuân năm Kỷ Hợi (939), Ngô Quyền bỏ chức Tiết độ sứ, tự xưng vương, lập một vương quốc độc lập. Ông chọn kinh đô cũ của Âu Lạc là Cổ Loa làm kinh đô nước Việt để tỏ ý nối tiếp truyền thống của các vua Hùng, vua Thục. Chiến thắng Bạch Đằng phá bỏ nền thống trị hơn một nghìn năm của phong kiến phương Bắc, mở ra thời kỳ độc lập thực sự và lâu dài của dân tộc.",
+      "hien": [
+        "co-thang",
+        "dai-ban-doanh",
+        "thanh-dai-la"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html"
       ]
     }
   ],
@@ -276,25 +369,40 @@
   "nguon": [
     "Đại Việt sử ký toàn thư (ngoại kỷ, quyển V)",
     "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
-    "Ngô Sĩ Liên và các sử thần triều Lê — bản dịch Viện Sử học"
+    "Ngô Sĩ Liên và các sử thần triều Lê — bản dịch Viện Sử học",
+    "Bảo tàng Lịch sử Quốc gia — Ngô Quyền và chiến thắng Bạch Đằng năm 938 — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html",
+    "Bộ CHQS thành phố Hải Phòng — Ngô Quyền đánh tan quân Nam Hán năm 938 — https://quansu.haiphong.gov.vn/Lich-su-truyen-thong/Nhung-chien-cong-tieu-bieu/Ngo-Quyen-danh-tan-quan-Nam-Han-nam-938-121420.html"
   ],
   "trich_van_tich": [
     {
       "sach": "Đại Việt sử ký toàn thư — Ngoại kỷ, quyển 5",
       "doan": "Nếu ta sai người đem cọc lớn đóng ngầm ở cửa biển trước, vạt nhọn đầu mà bịt sắt, thuyền của chúng nhân khi nước triều lên, tiến vào bên trong hàng cọc, bấy giờ ta sẽ dễ bề chế ngự. Không kế gì hay hơn kế ấy cả.",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ngo-quyen-va-chien-thang-bach-dang-lich-su-post484767.html",
-      "buoc": 1
+      "buoc": 4
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư — Ngoại kỷ, quyển 5 (bản dịch khác, dẫn trên cổng Bộ CHQS thành phố Hải Phòng)",
+      "doan": "Nếu sai người đem cọc nhọn, đầu bịt sắt cắm ngầm trước cửa biển, thuyền của bọn chúng theo nước triều lên vào trong hàng cọc thì sau đó ta dễ bề chế ngự, không cho chiếc nào thoát",
+      "nguon_trich": "Bộ CHQS thành phố Hải Phòng — https://quansu.haiphong.gov.vn/Lich-su-truyen-thong/Nhung-chien-cong-tieu-bieu/Ngo-Quyen-danh-tan-quan-Nam-Han-nam-938-121420.html",
+      "buoc": 4
     },
     {
       "sach": "Khâm định Việt sử thông giám cương mục",
       "doan": "Sông rộng hơn hai dặm, ở đó có núi cao ngất, nhiều nhánh sông đổ lại, sóng cồn man mác giáp tận chân trời, cây cối um tùm che lấp bờ bến.",
-      "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ngo-quyen-va-chien-thang-bach-dang-lich-su-post484767.html"
-    },
-    {
-      "sach": "Đại Việt sử ký toàn thư",
-      "doan": "Tiền Ngô Vương có thể lấy quân mới họp của đất Việt ta mà phá được trăm vạn quân của Lưu Hoằng Tháo, mở nước xưng vương, làm cho người phương Bắc không dám lại sang nữa. Có thể nói là một cơn giận mà yên được dân, mưu giỏi mà đánh cũng giỏi vậy.",
       "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ngo-quyen-va-chien-thang-bach-dang-lich-su-post484767.html",
       "buoc": 5
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư — Ngoại kỷ, quyển 5",
+      "doan": "thương khóc thu nhặt quân còn sót lại mà rút lui",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3098/13934/ngo-quyen-va-chien-thang-bach-djang-nam-938.html",
+      "buoc": 8
+    },
+    {
+      "sach": "Đại Việt sử ký toàn thư — lời bàn của Lê Văn Hưu",
+      "doan": "Tiền Ngô Vương có thể lấy quân mới họp của đất Việt ta mà phá được trăm vạn quân của Lưu Hoằng Tháo, mở nước xưng vương, làm cho người phương Bắc không dám lại sang nữa. Có thể nói là một cơn giận mà yên được dân, mưu giỏi mà đánh cũng giỏi vậy.",
+      "nguon_trich": "Báo Nhân Dân điện tử — https://nhandan.vn/ngo-quyen-va-chien-thang-bach-dang-lich-su-post484767.html",
+      "buoc": 9
     }
   ]
 }

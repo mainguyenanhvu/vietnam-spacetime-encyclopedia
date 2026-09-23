@@ -1,6 +1,6 @@
 {
   "ghi_chu": "SINH TỰ ĐỘNG từ media/ban-do-co.json bởi scripts/build_ban_do_co_overlay.mjs — ĐỪNG SỬA TAY, sửa bản gốc rồi chạy lại. Mỗi mục là MỘT ĐỊA ĐIỂM có thật ngày nay, mang danh sách mọi bản đồ cổ từng ghi tên nơi đó (ban_do_ghi[]). Gom theo địa điểm chứ không theo bản đồ, vì nhiều tấm cùng gọi tên một chỗ — để riêng thì các điểm chồng khít, bấm không tới.",
-  "ngay_cap_nhat": "2026-08-26",
+  "ngay_cap_nhat": "2026-09-19",
   "sources": [
     "Cục Di sản Văn hoá, Bộ Ngoại giao, Ủy ban Biên giới quốc gia, VOV, Tuổi Trẻ, Dân trí, báo Đà Nẵng, Tạp chí Xây dựng Đảng, Mộc Bản Triều Nguyễn — Trung tâm Lưu trữ quốc gia IV"
   ],
@@ -29,7 +29,9 @@
           "dia_danh_xua": "Kecio",
           "nhom": "phuong-tay",
           "ghi_chu": "Kẻ Chợ — địa danh DUY NHẤT mang ký hiệu thành phố trên bản A (1650, Rome).",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Old_map_of_Vietnam.jpg",
+          "anh_nguon": "Wikimedia Commons, chú thích 'Early Western Map of Tonkin (1651)' · https://commons.wikimedia.org/wiki/File:Old_map_of_Vietnam.jpg"
         },
         {
           "nam": "1771",
@@ -79,7 +81,9 @@
           "dia_danh_xua": "Pulo Condor",
           "nhom": "phuong-tay",
           "ghi_chu": "Vẽ tách biệt khỏi chuỗi đảo ven bờ.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/8/84/Insulae_Indiae_orientalis._%28to_accompany%29_Atlas_minor_Gerardi_Mercatoris._%28IA_dr_insulae-indiae-orientalis-to-accompany-atlas-minor-gerardi-mercatoris-11201443%29.jpg",
+          "anh_nguon": "Wikimedia Commons — bản số hoá David Rumsey Map Collection"
         }
       ],
       "do_tin_cay_toa_do": "cao"
@@ -100,7 +104,9 @@
           "dia_danh_xua": "Pulo Cici",
           "nhom": "phuong-tay",
           "ghi_chu": "Định danh theo nguồn dẫn của mục này.",
-          "do_tin_cay": "trung"
+          "do_tin_cay": "trung",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/8/84/Insulae_Indiae_orientalis._%28to_accompany%29_Atlas_minor_Gerardi_Mercatoris._%28IA_dr_insulae-indiae-orientalis-to-accompany-atlas-minor-gerardi-mercatoris-11201443%29.jpg",
+          "anh_nguon": "Wikimedia Commons — bản số hoá David Rumsey Map Collection"
         }
       ],
       "do_tin_cay_toa_do": "trung"
@@ -109,11 +115,11 @@
       "ten": "Quần đảo Hoàng Sa",
       "lat": 16.5,
       "lon": 112,
-      "dia_danh_xua": "Paracels · Paracel · Bãi Cát Vàng · Hoàng Sa · Paracel seu Cát Vàng · Quần đảo ngoài khơi miền Trung · Vạn Lý Trường Sa · Hoàng Sa chử",
+      "dia_danh_xua": "Paracels · Paracel · Bãi Cát Vàng · Banc du Pracel · PARACELS · l'Amphitrite · Lincoln · Paracel seu Cát Vàng · Hoàng Sa · Quần đảo ngoài khơi miền Trung · Vạn Lý Trường Sa · Hoàng Sa chử",
       "nhom_ban_do": "nhieu",
       "nam": "1613",
       "nam_hien_thi": "1613 – 1881",
-      "mo_ta": "12 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1613.",
+      "mo_ta": "14 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1613.",
       "ban_do_ghi": [
         {
           "nam": "1613",
@@ -121,7 +127,9 @@
           "dia_danh_xua": "Paracels",
           "nhom": "phuong-tay",
           "ghi_chu": "Vẽ trong hệ thống đảo ven bờ Việt Nam, phân biệt với các đảo khác trong khu vực.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/8/84/Insulae_Indiae_orientalis._%28to_accompany%29_Atlas_minor_Gerardi_Mercatoris._%28IA_dr_insulae-indiae-orientalis-to-accompany-atlas-minor-gerardi-mercatoris-11201443%29.jpg",
+          "anh_nguon": "Wikimedia Commons — bản số hoá David Rumsey Map Collection"
         },
         {
           "nam": "1645",
@@ -129,7 +137,9 @@
           "dia_danh_xua": "Paracel",
           "nhom": "phuong-tay",
           "ghi_chu": "Vẽ nối liền với chuỗi đảo ven bờ chứ không phải thực thể biển khơi tách biệt.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53179335c/f1/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — Willem Janszoon Blaeu, «India quae orientalis dicitur, et Insulae adjacentes» · ký hiệu Arsenal EST-1502 (90) · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53179335c"
         },
         {
           "nam": "1686",
@@ -137,7 +147,9 @@
           "dia_danh_xua": "Bãi Cát Vàng",
           "nhom": "viet-nam",
           "ghi_chu": "Ghi bằng chữ Nôm — bản đồ đầu tiên còn lưu khẳng định Bãi Cát Vàng thuộc Đại Việt.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/6/61/Thi%C3%AAn_Nam_t%E1%BB%A9_ch%C3%AD_l%E1%BB%99_%C4%91%E1%BB%93_th%C6%B0.jpg",
+          "anh_nguon": "Wikimedia Commons — Đỗ Bá Công · https://commons.wikimedia.org/wiki/File:Thi%C3%AAn_Nam_t%E1%BB%A9_ch%C3%AD_l%E1%BB%99_%C4%91%E1%BB%93_th%C6%B0.jpg"
         },
         {
           "nam": "1737",
@@ -145,7 +157,19 @@
           "dia_danh_xua": "Paracel",
           "nhom": "phuong-tay",
           "ghi_chu": "Ghi riêng biệt ở khoảng vĩ tuyến 16–17°B, TÁCH khỏi phần lãnh thổ Trung Quốc.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53096745m/f18/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — Jean-Baptiste d'Anville, «Nouvel Atlas de la Chine», tờ f18 · ký hiệu GE DD-2035 (RES) · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53096745m"
+        },
+        {
+          "nam": "1737",
+          "ten_ban_do": "Carte pour la navigation des mers entre les côtes de Chine et du Banc Le Paracel et de celles du golfe de Cochinchine",
+          "dia_danh_xua": "Banc du Pracel",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Vẽ thành dải chấm lớn kéo dài bắc–nam ngoài khơi bờ Cochinchine, tách hẳn khỏi Hải Nam. Hình dạng và phạm vi phóng đại nhiều so với quần đảo thật — thông lệ của hải đồ thế kỷ 18.",
+          "do_tin_cay": "trung",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53119398b/f1/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — hải đồ GE C-11224 · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53119398b"
         },
         {
           "nam": "1771",
@@ -164,20 +188,24 @@
           "do_tin_cay": "cao"
         },
         {
+          "nam": "1799",
+          "ten_ban_do": "Carte d'une partie de la Mer de Chine (hải đồ Rosily)",
+          "dia_danh_xua": "PARACELS · l'Amphitrite · Lincoln",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Vẽ chi tiết từng đảo nhỏ, chữ «PARACELS» chạy dọc chuỗi đảo; nhóm phía bắc ghi «l'Amphitrite» — tên con tàu Pháp, nay là nhóm An Vĩnh; một đảo ghi «Lincoln» — nay là đảo Linh Côn.",
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53233302r/f1/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — hải đồ GE SH 18 PF 182 P 11/1 · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53233302r"
+        },
+        {
           "nam": "1827",
           "ten_ban_do": "Atlas Universel — \"Partie de la Cochinchine\" (bản đồ số 106) của Philippe Vandermaelen",
           "dia_danh_xua": "Paracels",
           "nhom": "phuong-tay",
           "ghi_chu": "Vẽ trong khoảng vĩ tuyến 16–17°, kinh tuyến 109–111°, kèm ghi chú thuộc «Empire of Annam».",
-          "do_tin_cay": "cao"
-        },
-        {
-          "nam": "1838",
-          "ten_ban_do": "Đại Nam nhất thống toàn đồ",
-          "dia_danh_xua": "Hoàng Sa",
-          "nhom": "viet-nam",
-          "ghi_chu": "Ghi bằng chữ Hán trong vùng biển thuộc lãnh thổ Việt Nam — Bộ Ngoại giao viện dẫn làm căn cứ chính thức.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Partie_de_la_Cochinchine._Asie_no._106._%28Dresse_par_Ph._Vandermaelen%2C_lithographie_par_H._Ode._Deuxieme_partie.-Asie._Bruxelles._%28IA_dr_partie-de-la-cochinchine-asie-no-106-dresse-par-ph-vandermaelen-litho-00994062%29.jpg",
+          "anh_nguon": "Wikimedia Commons — bản số hoá David Rumsey Map Collection"
         },
         {
           "nam": "1838",
@@ -185,7 +213,19 @@
           "dia_danh_xua": "Paracel seu Cát Vàng",
           "nhom": "phuong-tay",
           "ghi_chu": "Ghi phía trên vĩ tuyến 16 — đồng nhất tên hàng hải quốc tế «Paracel» với địa danh Việt «Cát Vàng».",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/d/dd/An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg",
+          "anh_nguon": "Wikimedia Commons — nguồn gốc Bibliothèque nationale de France · https://commons.wikimedia.org/wiki/File:An_Nam_Dai_Quoc_Hoa_Do_by_Jean_Louis_Taberd_1838.jpg"
+        },
+        {
+          "nam": "1838",
+          "ten_ban_do": "Đại Nam nhất thống toàn đồ",
+          "dia_danh_xua": "Hoàng Sa",
+          "nhom": "viet-nam",
+          "ghi_chu": "Ghi bằng chữ Hán trong vùng biển thuộc lãnh thổ Việt Nam — Bộ Ngoại giao viện dẫn làm căn cứ chính thức.",
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/3/33/DaiNamNhatThongToanDo_1834-1838.jpg",
+          "anh_nguon": "Wikimedia Commons · https://commons.wikimedia.org/wiki/File:DaiNamNhatThongToanDo_1834-1838.jpg"
         },
         {
           "nam": "1841",
@@ -218,11 +258,11 @@
       "ten": "Đảo Hải Nam (Trung Quốc) — mũi cực nam",
       "lat": 18.25,
       "lon": 109.5,
-      "dia_danh_xua": "Cực nam lãnh thổ · Ranh giới đông nam · Cực nam lãnh thổ Trung Quốc",
+      "dia_danh_xua": "Cực nam lãnh thổ · Ranh giới đông nam · Cực nam lãnh thổ Trung Quốc · Isle d'Hainan · 瓊州 · 崖州 — Quỳnh Châu · Nhai Châu",
       "nhom_ban_do": "nhieu",
       "nam": "1635",
       "nam_hien_thi": "1635 – 1905",
-      "mo_ta": "5 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1635.",
+      "mo_ta": "7 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1635.",
       "ban_do_ghi": [
         {
           "nam": "1635",
@@ -246,7 +286,29 @@
           "dia_danh_xua": "Cực nam lãnh thổ Trung Quốc",
           "nhom": "phuong-tay",
           "ghi_chu": "Ranh giới phía nam của Trung Quốc trên bản đồ dừng lại ở đảo Hải Nam.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53096745m/f18/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — Jean-Baptiste d'Anville, «Nouvel Atlas de la Chine», tờ f18 · ký hiệu GE DD-2035 (RES) · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53096745m"
+        },
+        {
+          "nam": "1737",
+          "ten_ban_do": "Carte pour la navigation des mers entre les côtes de Chine et du Banc Le Paracel et de celles du golfe de Cochinchine",
+          "dia_danh_xua": "Isle d'Hainan",
+          "nhom": "phuong-tay",
+          "ghi_chu": "Vẽ và ghi tên như một hòn đảo riêng, nằm tách khỏi «Banc du Pracel» trên cùng một tờ.",
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53119398b/f1/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — hải đồ GE C-11224 · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53119398b"
+        },
+        {
+          "nam": "1818",
+          "ten_ban_do": "Đại Thanh vạn niên nhất thống thiên hạ toàn đồ (大清萬年一統天下全圖)",
+          "dia_danh_xua": "瓊州 · 崖州 — Quỳnh Châu · Nhai Châu",
+          "nhom": "trung-quoc",
+          "ghi_chu": "Hải Nam nằm TRONG khối màu tỉnh của nhà Thanh, với Nhai Châu ở mũi nam. Đây là phần đất phía nam cùng được tô màu tỉnh trên các mảnh đã mở.",
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b7200281h/f14/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — 大清萬年一統天下全圖, GE C-5353 (1-3 RES), ảnh chụp mảnh phía nam (view f14) · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b7200281h"
         },
         {
           "nam": "1904",
@@ -262,7 +324,9 @@
           "dia_danh_xua": "Cực nam lãnh thổ",
           "nhom": "trung-quoc",
           "ghi_chu": "Trùng khớp bản đồ 1904 — không phải trường hợp cá biệt.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/c/cb/%E5%A4%A7%E6%B8%85%E5%B8%9D%E5%9B%BD%E5%85%A8%E5%9B%BE.png",
+          "anh_nguon": "Wikimedia Commons — Thương vụ ấn thư quán Thượng Hải (上海商務印書館) biên in · https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%B8%85%E5%B8%9D%E5%9B%BD%E5%85%A8%E5%9B%BE.png"
         }
       ],
       "do_tin_cay_toa_do": "cao"
@@ -271,11 +335,11 @@
       "ten": "Đảo Lý Sơn (Quảng Ngãi)",
       "lat": 15.3833,
       "lon": 109.1167,
-      "dia_danh_xua": "Pulo Canton · Cù Lao Ré",
+      "dia_danh_xua": "Pulo Canton · Cù Lao Ré · 外羅山 — Ngoại La Sơn",
       "nhom_ban_do": "nhieu",
       "nam": "1645",
-      "nam_hien_thi": "1645 – 1774",
-      "mo_ta": "2 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1645.",
+      "nam_hien_thi": "1645 – 1818",
+      "mo_ta": "3 tấm bản đồ cổ ghi tên nơi này, sớm nhất năm 1645.",
       "ban_do_ghi": [
         {
           "nam": "1645",
@@ -283,7 +347,9 @@
           "dia_danh_xua": "Pulo Canton",
           "nhom": "phuong-tay",
           "ghi_chu": "Một mắt của chuỗi đảo.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53179335c/f1/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — Willem Janszoon Blaeu, «India quae orientalis dicitur, et Insulae adjacentes» · ký hiệu Arsenal EST-1502 (90) · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53179335c"
         },
         {
           "nam": "1774",
@@ -292,6 +358,16 @@
           "nhom": "viet-nam",
           "ghi_chu": "Vẽ như một đỉnh núi, làm mốc phía nam.",
           "do_tin_cay": "cao"
+        },
+        {
+          "nam": "1818",
+          "ten_ban_do": "Đại Thanh vạn niên nhất thống thiên hạ toàn đồ (大清萬年一統天下全圖)",
+          "dia_danh_xua": "外羅山 — Ngoại La Sơn",
+          "nhom": "trung-quoc",
+          "ghi_chu": "Tên Hán quen dùng cho Cù Lao Ré, đảo mà Đội Hoàng Sa xuất phát. Ghi trên tờ phía nam, nằm ngoài khối màu tỉnh của nhà Thanh.",
+          "do_tin_cay": "trung",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b7200281h/f14/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — 大清萬年一統天下全圖, GE C-5353 (1-3 RES), ảnh chụp mảnh phía nam (view f14) · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b7200281h"
         }
       ],
       "do_tin_cay_toa_do": "cao"
@@ -312,7 +388,9 @@
           "dia_danh_xua": "Pulo Secca de Mare",
           "nhom": "phuong-tay",
           "ghi_chu": "Một mắt của chuỗi đảo.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53179335c/f1/full/1200,/0/native.jpg",
+          "anh_nguon": "BnF Gallica — Willem Janszoon Blaeu, «India quae orientalis dicitur, et Insulae adjacentes» · ký hiệu Arsenal EST-1502 (90) · Source gallica.bnf.fr / Bibliothèque nationale de France · https://gallica.bnf.fr/ark:/12148/btv1b53179335c"
         }
       ],
       "do_tin_cay_toa_do": "cao"
@@ -333,7 +411,9 @@
           "dia_danh_xua": "Cửa Đại Chiêm",
           "nhom": "viet-nam",
           "ghi_chu": "Đầu phía bắc của dải cát theo mô tả trên bản đồ.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/6/61/Thi%C3%AAn_Nam_t%E1%BB%A9_ch%C3%AD_l%E1%BB%99_%C4%91%E1%BB%93_th%C6%B0.jpg",
+          "anh_nguon": "Wikimedia Commons — Đỗ Bá Công · https://commons.wikimedia.org/wiki/File:Thi%C3%AAn_Nam_t%E1%BB%A9_ch%C3%AD_l%E1%BB%99_%C4%91%E1%BB%93_th%C6%B0.jpg"
         }
       ],
       "do_tin_cay_toa_do": "cao"
@@ -354,7 +434,9 @@
           "dia_danh_xua": "Cửa Sa Kỳ",
           "nhom": "viet-nam",
           "ghi_chu": "Đầu phía nam của dải cát theo mô tả trên bản đồ.",
-          "do_tin_cay": "cao"
+          "do_tin_cay": "cao",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/6/61/Thi%C3%AAn_Nam_t%E1%BB%A9_ch%C3%AD_l%E1%BB%99_%C4%91%E1%BB%93_th%C6%B0.jpg",
+          "anh_nguon": "Wikimedia Commons — Đỗ Bá Công · https://commons.wikimedia.org/wiki/File:Thi%C3%AAn_Nam_t%E1%BB%A9_ch%C3%AD_l%E1%BB%99_%C4%91%E1%BB%93_th%C6%B0.jpg"
         }
       ],
       "do_tin_cay_toa_do": "cao"
@@ -417,7 +499,9 @@
           "dia_danh_xua": "Vạn Lý Trường Sa",
           "nhom": "viet-nam",
           "ghi_chu": "Trên bản đồ vẽ thành một dải dài chứ không phải một điểm; neo về đảo Trường Sa Lớn để đối chiếu vị trí.",
-          "do_tin_cay": "trung"
+          "do_tin_cay": "trung",
+          "anh": "https://upload.wikimedia.org/wikipedia/commons/3/33/DaiNamNhatThongToanDo_1834-1838.jpg",
+          "anh_nguon": "Wikimedia Commons · https://commons.wikimedia.org/wiki/File:DaiNamNhatThongToanDo_1834-1838.jpg"
         },
         {
           "nam": "1842",

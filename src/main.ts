@@ -1,6 +1,7 @@
 import maplibregl from "maplibre-gl";
 import type {
   ExpressionSpecification,
+  LayerSpecification,
   MapGeoJSONFeature,
   MapLayerMouseEvent,
 } from "maplibre-gl";
@@ -26,6 +27,7 @@ import { initJourney } from "./journey";
 import { initQuocGia } from "./quocgia";
 import { initTimeline } from "./timeline";
 import { initMocLichSu, capNhatMoc } from "./moc-lich-su";
+import { initDongThoiGian } from "./dong-thoi-gian";
 import { initThuVien, loadLiterature, htmlVanThoTinh } from "./thuvien";
 import { esc } from "./util/html";
 import { fetchJson } from "./util/fetch";
@@ -34,8 +36,11 @@ import {
   OVERLAYS,
   OVERLAY_GROUPS,
   parseOverlayItem,
+  dungPopupNhieuMuc,
   type OverlayConf,
+  type MucTaiDiem,
 } from "./overlays-config";
+import { ICON_VE_TAY, tenIconVe, veIconLop } from "./icon-ve-tay";
 import { initChipBar } from "./chip-bar";
 import { initBanDoCo } from "./bandoco";
 import { initLienKetTrangThai } from "./lien-ket-trang-thai";
@@ -229,9 +234,143 @@ const NGUON_DU_LIEU = [
   "Quần đảo Hoàng Sa & Trường Sa: Free-GIS-Data — github.com/nguyenduy1133/Free-GIS-Data",
   "Danh sách sáp nhập: Nghị quyết 202/2025/QH15 — chinhphu.vn",
   "Phân chia Bắc–Trung–Nam Kỳ: Hiệp ước Patenôtre 1884; Hoàng Sa thuộc Thừa Thiên (Dụ số 10/1938); Trường Sa thuộc Bà Rịa (Nghị định 21/12/1933) — dhannd.bocongan.gov.vn",
-  "Nền bản đồ (không nhãn để bảo đảm chủ quyền): © OpenStreetMap contributors, © CARTO",
+  "Nền bản đồ (không nhãn để bảo đảm chủ quyền): © OpenStreetMap contributors, © OpenMapTiles, © OpenFreeMap",
   "Hiệu ứng biển động (chế độ 3D): shader nước của Lâm Ngọc Khương — github.com/lamngockhuong/vietnam-3d-map (MIT)",
 ];
+
+// ── Nền bản đồ, dựng thủ công từ vector tile ────────────────────────────
+// Mỗi lớp ở đây là một lớp HÌNH, không lớp nào là lớp CHỮ — đó là điều kiện
+// chủ quyền, không phải lựa chọn thẩm mỹ. Danh sách lớp chữ cố ý bỏ trống ghi
+// ở khối chú thích của `sources.basemap` bên dưới.
+//
+// Bảng màu bám sát nền cũ (CARTO Positron) để mọi lớp dữ liệu của dự án —
+// vốn chọn màu theo nền sáng đó — không phải chỉnh lại.
+const MAU_NEN_DAT = "#f4f2ed";
+const MAU_NUOC = "#cfe0ea";
+
+/** `to-string` trả "" khi trường vắng mặt, nên so chuỗi không nổ kiểu như
+ *  `["<=", ["get","admin_level"], 4]` vẫn nổ trên feature thiếu trường. */
+const laCo = (truong: string): ExpressionSpecification => [
+  "==",
+  ["to-string", ["get", truong]],
+  "1",
+];
+
+const NEN_LAYERS: LayerSpecification[] = [
+  { id: "nen-dat", type: "background", paint: { "background-color": MAU_NEN_DAT } },
+  {
+    id: "nen-tham-phu",
+    type: "fill",
+    source: "basemap",
+    "source-layer": "landcover",
+    paint: {
+      "fill-color": [
+        "match",
+        ["get", "class"],
+        "wood",
+        "#e2e9db",
+        "grass",
+        "#e9eee2",
+        "sand",
+        "#f6f1e0",
+        "ice",
+        "#f1f5f8",
+        "#e9ede5",
+      ],
+      "fill-opacity": 0.8,
+    },
+  },
+  {
+    id: "nen-cong-vien",
+    type: "fill",
+    source: "basemap",
+    "source-layer": "park",
+    paint: { "fill-color": "#e1eadb", "fill-opacity": 0.5 },
+  },
+  {
+    id: "nen-dan-cu",
+    type: "fill",
+    source: "basemap",
+    "source-layer": "landuse",
+    filter: [
+      "match",
+      ["get", "class"],
+      ["residential", "suburb", "quarter", "neighbourhood"],
+      true,
+      false,
+    ],
+    paint: { "fill-color": "#eae6df" },
+  },
+  {
+    id: "nen-nuoc",
+    type: "fill",
+    source: "basemap",
+    "source-layer": "water",
+    filter: ["!=", ["to-string", ["get", "brunnel"]], "tunnel"],
+    paint: { "fill-color": MAU_NUOC },
+  },
+  {
+    id: "nen-song",
+    type: "line",
+    source: "basemap",
+    "source-layer": "waterway",
+    paint: {
+      "line-color": MAU_NUOC,
+      "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.4, 14, 2.4],
+    },
+  },
+  // Đường sá chỉ để mắt có chỗ bám khi phóng sâu — nền toàn quốc không cần.
+  {
+    id: "nen-duong",
+    type: "line",
+    source: "basemap",
+    "source-layer": "transportation",
+    minzoom: 6,
+    filter: [
+      "match",
+      ["get", "class"],
+      ["motorway", "trunk", "primary", "secondary"],
+      true,
+      false,
+    ],
+    paint: {
+      "line-color": "#e3ded5",
+      "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.4, 12, 1.8, 16, 4],
+    },
+  },
+  // 🔴 Bất biến #1 và #2 nằm ở HAI mệnh đề loại trừ dưới đây, đừng gỡ:
+  // `maritime` loại mọi nét ranh giới trên biển của bên thứ ba, `disputed`
+  // loại mọi nét đang tranh chấp. Nền chỉ còn ranh giới ĐẤT LIỀN làm bối cảnh.
+  {
+    id: "nen-ranh-gioi",
+    type: "line",
+    source: "basemap",
+    "source-layer": "boundary",
+    filter: [
+      "all",
+      ["match", ["to-string", ["get", "admin_level"]], ["2", "3", "4"], true, false],
+      ["!", laCo("maritime")],
+      ["!", laCo("disputed")],
+    ],
+    paint: {
+      "line-color": "#d3cec4",
+      "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.5, 10, 1.2],
+      "line-dasharray": [3, 2],
+    },
+  },
+  {
+    id: "nen-nha",
+    type: "fill",
+    source: "basemap",
+    "source-layer": "building",
+    minzoom: 14,
+    paint: { "fill-color": "#e5e0d7" },
+  },
+];
+
+/** Id mọi lớp nền — chế độ diorama tắt cả cụm để lộ `sky`. Trước đây chỉ có
+ *  một lớp raster tên "basemap" nên chỗ tắt cũng chỉ nhắc đúng một id. */
+const NEN_LAYER_IDS = NEN_LAYERS.map((l) => l.id);
 
 // Khung nhìn bao trọn lãnh thổ Việt Nam, bao gồm hai quần đảo
 // Hoàng Sa và Trường Sa (chủ quyền Việt Nam) trên Biển Đông.
@@ -257,35 +396,48 @@ const map = new maplibregl.Map({
     // nó đỏ nếu có bất kỳ request /font/ nào trả ≥400.
     glyphs: `${import.meta.env.BASE_URL}fonts/{fontstack}/{range}.pbf`,
     sources: {
-      // Nền KHÔNG NHÃN (CARTO light_nolabels). Bắt buộc: nền có nhãn của bên
-      // thứ ba (OSM mặc định...) hiển thị địa danh phi pháp do nước ngoài đặt
-      // trên Biển Đông (vd. «Tam Sa»), vi phạm chủ quyền Việt Nam và Luật Đo
-      // đạc và bản đồ 2018. Nhãn chủ quyền tiếng Việt do dự án tự render.
+      // Nền KHÔNG NHÃN. Bắt buộc: nền có nhãn của bên thứ ba (OSM mặc định...)
+      // hiển thị địa danh phi pháp do nước ngoài đặt trên Biển Đông (vd. «Tam
+      // Sa»), vi phạm chủ quyền Việt Nam và Luật Đo đạc và bản đồ 2018. Nhãn
+      // chủ quyền tiếng Việt do dự án tự render.
+      //
+      // 🔴 2026-08-28 — BỎ CARTO. Tile `basemaps.cartocdn.com/light_nolabels`
+      // vẫn trả HTTP 200 và vẫn là PNG hợp lệ, nhưng CARTO đã ĐÓNG DẤU dòng
+      // chữ «API KEY REQUIRED · carto.com/basemaps/apikey» chéo mặt tile. Không
+      // request nào hỏng, console sạch, `tsc` xanh — chỉ nhìn bản đồ mới thấy.
+      // Đúng loại lỗi mà bảng «Xác minh» của CLAUDE.md nói build xanh không
+      // chứng minh được.
+      //
+      // Thay bằng VECTOR tile của OpenFreeMap (lược đồ OpenMapTiles, dữ liệu
+      // OSM): không khoá API, không hạn mức, và — điểm quan trọng hơn cả — nền
+      // vector cho dự án TỰ CHỌN lớp nào được vẽ. Nhờ đó nay chặn được ở gốc ba
+      // thứ mà tile raster nướng sẵn không bao giờ gỡ ra được:
+      //   · mọi lớp chữ (`place`, `poi`, `water_name`, `transportation_name`,
+      //     `mountain_peak`, `aerodrome_label`) — không khai thì không có địa
+      //     danh nước ngoài nào lọt lên Biển Đông;
+      //   · đường ranh giới BIỂN (`maritime = 1`) — tức mọi nét vẽ yêu sách
+      //     trên biển của bên thứ ba;
+      //   · ranh giới đang tranh chấp (`disputed = 1`).
+      // Ranh giới đất liền còn lại vẽ mờ làm bối cảnh; ranh giới Việt Nam thì
+      // dự án vẫn tự vẽ từ GeoJSON của mình như trước.
       basemap: {
-        type: "raster",
-        tiles: [
-          "https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-          "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-          "https://c.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-          "https://d.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-        ],
-        tileSize: 256,
-        attribution: "© OpenStreetMap contributors © CARTO",
+        type: "vector",
+        url: "https://tiles.openfreemap.org/planet",
+        attribution: "© OpenStreetMap contributors © OpenMapTiles © OpenFreeMap",
       },
     },
-    // Nền dưới cùng (màu biển sâu) — bị basemap che ở chế độ 2D; lộ ra làm
-    // phông biển/trời khi ẩn basemap ở chế độ 3D diorama.
+    // Nền dưới cùng (màu biển sâu) — bị nền bản đồ che ở chế độ 2D; lộ ra làm
+    // phông biển/trời khi ẩn nền ở chế độ 3D diorama.
     layers: [
       { id: "sky", type: "background", paint: { "background-color": "#0a3248" } },
-      { id: "basemap", type: "raster", source: "basemap" },
+      ...NEN_LAYERS,
     ],
   },
   bounds: VIETNAM_BOUNDS,
   fitBoundsOptions: { padding: 24 },
-  // Ghi công thu gọn: mặc định MapLibre trải nguyên câu «© OpenStreetMap
-  // contributors © CARTO» dọc mép dưới, luôn nằm đó suốt phiên. Dạng compact
-  // rút về một nút ⓘ, bấm ra vẫn đủ chữ — đây là dạng ODbL/CARTO chấp nhận,
-  // KHÔNG được bỏ hẳn ghi công.
+  // Ghi công thu gọn: mặc định MapLibre trải nguyên câu ghi công dọc mép dưới,
+  // luôn nằm đó suốt phiên. Dạng compact rút về một nút ⓘ, bấm ra vẫn đủ chữ —
+  // đây là dạng ODbL chấp nhận, KHÔNG được bỏ hẳn ghi công.
   attributionControl: { compact: true },
 });
 
@@ -578,7 +730,7 @@ function initCuongVuc(): void {
         moPopup(
           map,
           e.lngLat,
-          `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Phỏng dựng học thuật có nguồn — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+          `<strong>${esc(p.ten)}</strong><br/><span style="color:var(--chu-nhat)">${esc(p.nien_dai)}</span><br/>🏛️ Kinh đô: ${esc(p.kinh_do)}<br/><span style="color:var(--chu-mem);font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:var(--luu-chu);font-size:0.72rem">⚠️ Phỏng dựng học thuật có nguồn — KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:var(--chu-nhat);font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
         );
       });
       // Popup cho điểm huyền sử (Xích Quỷ) — nhấn rõ KHÔNG phải sử thật.
@@ -596,7 +748,7 @@ function initCuongVuc(): void {
         moPopup(
           map,
           e.lngLat,
-          `<strong>${esc(p.ten)}</strong><br/><span style="color:#78716c">${esc(p.nien_dai)}</span><br/>🏛️ ${esc(p.kinh_do)}<br/><span style="color:#57534e;font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:#b45309;font-size:0.72rem">⚠️ Huyền sử / biểu tượng — KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:#78716c;font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
+          `<strong>${esc(p.ten)}</strong><br/><span style="color:var(--chu-nhat)">${esc(p.nien_dai)}</span><br/>🏛️ ${esc(p.kinh_do)}<br/><span style="color:var(--chu-mem);font-size:0.8rem">${esc(p.ghi_chu)}</span><br/><span style="color:var(--luu-chu);font-size:0.72rem">⚠️ Huyền sử / biểu tượng — KHÔNG phải sử thật, KHÔNG phải bản đồ chủ quyền</span><br/><span style="color:var(--chu-nhat);font-size:0.72rem">Nguồn: ${esc(nguon)}</span>`,
         );
       });
       for (const lyr of ["cuong-vuc-fill", "cuong-vuc-diem"]) {
@@ -1360,7 +1512,7 @@ map.on("load", () => {
   });
 
   // MapLibre mở sẵn ghi công ở dạng compact rồi mới thu lại khi người dùng chạm
-  // vào bản đồ lần đầu. Nghĩa là câu «© OpenStreetMap contributors © CARTO» vẫn
+  // vào bản đồ lần đầu. Nghĩa là câu «© OpenStreetMap contributors …» vẫn
   // nằm chình ình suốt lúc xem — thu ngay để chỉ còn nút ⓘ. Ghi công KHÔNG mất:
   // bấm ⓘ ra đủ chữ, và NGUON_DU_LIEU trong hồ sơ tỉnh cũng liệt kê lại nguồn nền.
   document
@@ -1465,10 +1617,11 @@ let dioramaTruoc = false;
  */
 function capNhatNenBanDo(): void {
   const dio = dangDiorama();
-  if (map.getLayer("basemap")) {
-    const dang = map.getLayoutProperty("basemap", "visibility") ?? "visible";
-    const moi = dio ? "none" : "visible";
-    if (dang !== moi) map.setLayoutProperty("basemap", "visibility", moi);
+  const moi = dio ? "none" : "visible";
+  for (const id of NEN_LAYER_IDS) {
+    if (!map.getLayer(id)) continue;
+    const dang = map.getLayoutProperty(id, "visibility") ?? "visible";
+    if (dang !== moi) map.setLayoutProperty(id, "visibility", moi);
   }
   // Mặt biển đi CÙNG cảnh diorama: bật đúng lúc nền bản đồ tắt. Để nó sống khi
   // đã phóng sâu thì mặt phẳng nước phủ kín cả khung nhìn (xem setBienHien).
@@ -1742,6 +1895,19 @@ initBattle();
 initJourney();
 initQuocGia();
 initTimeline();
+// Chế độ đọc 201 mốc lịch sử. Dùng lại đúng bảng chia đoạn NAM_MOC_KY của thanh
+// trượt để «xem trên bản đồ» kéo thời kỳ về đúng chỗ; triều đại thì nó tự tra
+// từ nien-hieu.json chứ không lấy theo nấc thanh trượt.
+initDongThoiGian({
+  namKy: NAM_MOC_KY,
+  tenKy: PERIODS.map((p) => p.nhan),
+  datPeriod: (i) => {
+    daDoiThoiKy = true;
+    setPeriod(i);
+  },
+  bayToi: (lon, lat, tucThi) =>
+    map.flyTo({ center: [lon, lat], zoom: 7.5, duration: tucThi ? 0 : 1600 }),
+});
 // Ba panel này khai trong index.html và không có tài nguyên phải dọn nên chưa
 // module nào đăng ký. Vẫn phải đăng ký: sổ đăng ký giờ còn gắn ngữ nghĩa hộp
 // thoại và phím Esc, không riêng việc dọn tài nguyên nữa.
@@ -1783,6 +1949,76 @@ function setEra(index: number): void {
     map.setLayoutProperty(`${era.id}-3d`, "visibility", active && is3D ? "visible" : "none");
     map.setLayoutProperty(`${era.id}-label`, "visibility", active && !dio && showLabels ? "visible" : "none");
   });
+  capNhatDoiChieu();
+}
+
+// ── ĐỐI CHIẾU hai thời kỳ ranh giới ─────────────────────────────────────────
+//
+// Câu người dùng hỏi nhiều nhất về đợt sáp nhập 2025 là «tỉnh cũ của tôi giờ
+// nằm trong tỉnh nào». Panel tỉnh đã trả lời bằng CHỮ (dải «Hợp nhất A + B —
+// Nghị quyết 202/2025/QH15»). Khối này trả lời bằng HÌNH: vẽ ranh giới của một
+// thời kỳ KHÁC đè lên thời kỳ đang xem, nét đứt — nhìn thấy đường biên cũ nằm
+// gọn bên trong tỉnh mới.
+//
+// VÌ SAO NÉT ĐỨT: nét liền đọc như một ranh giới đang có hiệu lực. Thời kỳ đối
+// chiếu là thứ ĐÃ QUA, nên phải khác kiểu nét, không chỉ khác màu.
+//
+// VÌ SAO LỚP RIÊNG chứ không bật `${era.id}-line` của thời kỳ kia: `setEra`
+// nắm quyền bật/tắt đúng ba lớp đó theo thời kỳ đang chọn. Mượn lại là hai chủ
+// cùng ghi một thuộc tính, và bên thua luôn là bên chạy sau.
+
+const LOP_DOI_CHIEU = "doi-chieu-line";
+
+/**
+ * Lớp NHÃN đầu tiên của style — chèn TRƯỚC nó thì mọi nhãn nằm trên đường kẻ.
+ *
+ * 🔴 KHÔNG hỏi đích danh `chu-quyen-labels` rồi bỏ qua nếu chưa có: `beforeId`
+ * là `undefined` thì MapLibre chèn LÊN TRÊN CÙNG, phủ mất nhãn Hoàng Sa /
+ * Trường Sa. Đúng bẫy đã vấp thật một lần ở `bandoco.ts` — bốn cổng đều xanh,
+ * chỉ probe Chrome mới thấy. Đây là bất biến #1, không phải thứ tự vẽ cho đẹp.
+ */
+function truocLopNhanDoiChieu(): string | undefined {
+  for (const l of map.getStyle().layers ?? []) if (l.type === "symbol") return l.id;
+  return map.getLayer("chu-quyen-labels") ? "chu-quyen-labels" : undefined;
+}
+
+/** Ở tầm diorama không có nền bản đồ nên đường kẻ phẳng là nhiễu — theo đúng
+ *  cách `setEra` xử ba lớp phẳng. */
+function capNhatDoiChieu(): void {
+  if (!map.getLayer(LOP_DOI_CHIEU)) return;
+  map.setLayoutProperty(LOP_DOI_CHIEU, "visibility", dangDiorama() ? "none" : "visible");
+}
+
+function datDoiChieu(eraId: string): void {
+  if (map.getLayer(LOP_DOI_CHIEU)) map.removeLayer(LOP_DOI_CHIEU);
+  const ghi = document.getElementById("lc-doi-chieu-ghi-chu");
+  const era = ERAS.find((e) => e.id === eraId);
+  if (!era) {
+    if (ghi) ghi.textContent = "";
+    return;
+  }
+  ensureEra(era);
+  map.addLayer(
+    {
+      id: LOP_DOI_CHIEU,
+      type: "line",
+      source: era.id,
+      // Trọng lượng thị giác CỐ Ý nhẹ hơn `${era.id}-line` của thời kỳ đang xem
+      // (nâu #92400e, dày 1, đục hoàn toàn). Bản đầu đặt dày 1,6 / đục 0,85 và
+      // nhìn thật ở zoom 7,4 vùng đồng bằng Bắc Bộ thì lớp ĐỐI CHIẾU lấn át lớp
+      // CHÍNH — đảo ngược đúng thứ bậc mà tính năng này cần. Khoảng hở rộng hơn
+      // nét (2/3) để đọc ra «nét đứt» ngay cả khi thu nhỏ.
+      paint: {
+        "line-color": "#1d4ed8",
+        "line-width": 1,
+        "line-dasharray": [2, 3],
+        "line-opacity": 0.55,
+      },
+    },
+    truocLopNhanDoiChieu(),
+  );
+  capNhatDoiChieu();
+  if (ghi) ghi.textContent = `Nét đứt xanh = ranh giới ${era.label}. Nét liền = thời kỳ đang xem.`;
 }
 
 // Chọn 1 thời kỳ trong DÒNG THỜI GIAN HỢP NHẤT: hiện đúng lớp địa lý (cương vực
@@ -1872,24 +2108,80 @@ function registerOverlayIcons(): void {
     if (map.hasImage(emoji)) continue;
     map.addImage(emoji, emojiToImageData(emoji), { pixelRatio: 2 });
   }
+  for (const [lopId, ve] of Object.entries(ICON_VE_TAY)) {
+    const ten = tenIconVe(lopId);
+    if (!map.hasImage(ten)) map.addImage(ten, veIconLop(ve), { pixelRatio: 2 });
+  }
 }
 
 const overlayLoaded = new Set<string>();
 
 // Gắn cùng 1 bộ handler click/hover cho cả lớp circle (halo) lẫn lớp icon của
 // 1 lớp phủ — để bấm trúng emoji hay trúng vòng tròn màu đều mở popup như nhau.
-function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
-  map.on("click", layerId, (e) => {
-    const f = e.features?.[0];
-    if (!f) return;
+/** Lớp phủ ĐANG HIỆN trên bản đồ — cả vòng tròn lẫn lớp icon của nó. */
+function lopPhuDangHien(): string[] {
+  const lop: string[] = [];
+  for (const id of overlayLoaded) {
+    for (const l of [`overlay-${id}`, `overlay-${id}-icon`])
+      if (map.getLayer(l) && map.getLayoutProperty(l, "visibility") !== "none") lop.push(l);
+  }
+  return lop;
+}
+
+/** layer id → cấu hình lớp phủ sinh ra nó, ghi lúc đăng ký handler. */
+const confTheoLop = new Map<string, OverlayConf>();
+
+/**
+ * Mọi mục lớp phủ nằm dưới một điểm màn hình, đã khử trùng.
+ *
+ * Truy vấn MỌI lớp đang hiện chứ không riêng lớp bắt được cú bấm: đo trên dữ
+ * liệu sống, 241/376 điểm chồng nhau trộn mục của từ hai lớp trở lên, nên gom
+ * theo một lớp là vẫn bỏ sót.
+ *
+ * Thứ tự trả về là thứ tự vẽ (trên xuống dưới) — tức là mục người dùng NHÌN
+ * THẤY trên cùng đứng đầu danh sách. `dungPopupNhieuMuc` không sắp lại.
+ */
+function mucTaiDiem(e: MapLayerMouseEvent): MucTaiDiem[] {
+  const lop = lopPhuDangHien();
+  if (!lop.length) return [];
+  const ra: MucTaiDiem[] = [];
+  const daCo = new Set<string>();
+  for (const f of map.queryRenderedFeatures(e.point, { layers: lop })) {
+    const conf = confTheoLop.get(f.layer.id);
+    if (!conf) continue;
     // Parse LẠI ở đây chứ không cast: properties do MapLibre trả về đã đi qua
     // một vòng serialize, và cast chỉ là lời khai. parse thì có ép kiểu thật.
-    const p = parseOverlayItem(f.properties);
-    // Nguồn cấp LỚP đi vào trong popup chứ không nối đuôi vào sau nữa. Lối cũ
-    // vừa nhét một dòng xám không cấp bậc xuống cuối mọi popup, vừa chèn
-    // `conf.nguon` vào HTML KHÔNG escape. Nay nó là tham số, và mục nào có
-    // `sources[]` riêng thì nguồn riêng thắng — 2.584/2.599 mục có.
-    moPopup(map, e.lngLat, conf.popup(p, conf.nguon), { maxWidth: "360px" });
+    const muc = parseOverlayItem(f.properties);
+    // 🔴 queryRenderedFeatures trả TRÙNG một feature khi mục nằm vắt qua mép
+    // tile. Không lọc thì tiêu đề popup đếm sai — «17 mục» trong khi có 16.
+    const khoa = `${muc.ten}|${muc.lon}|${muc.lat}`;
+    if (daCo.has(khoa)) continue;
+    daCo.add(khoa);
+    ra.push({ muc, conf });
+  }
+  return ra;
+}
+
+/** Cú bấm chuột đã dựng popup xong — xem giải thích trong handler. */
+let cuBamDaXuLy: MouseEvent | null = null;
+
+function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
+  confTheoLop.set(layerId, conf);
+  map.on("click", layerId, (e) => {
+    // Mỗi lớp phủ đăng ký HAI handler (vòng tròn + icon), tối đa 33 lớp. Bấm
+    // trúng chỗ hai lớp chồng nhau thì nhiều handler cùng chạy với CÙNG một
+    // MouseEvent gốc. Trước đây chúng dựng lại cùng một popup một mục nên
+    // không ai thấy; nay mỗi lượt là dựng lại cả danh sách 17 mục. Chốt theo
+    // sự kiện gốc: chỉ lượt đầu tiên làm việc.
+    if (e.originalEvent === cuBamDaXuLy) return;
+    cuBamDaXuLy = e.originalEvent;
+    const ds = mucTaiDiem(e);
+    if (!ds.length) return;
+    // `dungPopupNhieuMuc` với ĐÚNG MỘT mục trả về nguyên `conf.popup(muc,
+    // conf.nguon)` cũ, không đổi một byte — nên gọi thẳng cho mọi cú bấm,
+    // không rẽ nhánh. Nguồn cấp LỚP vẫn đi vào trong popup như trước, và mục
+    // nào có `sources[]` riêng thì nguồn riêng thắng.
+    moPopup(map, e.lngLat, dungPopupNhieuMuc(ds), { maxWidth: "360px" });
   });
   // CỐ Ý KHÔNG gắn mouseenter/mouseleave theo từng lớp ở đây — xem
   // `troChuotTrenLopPhu` bên dưới.
@@ -1909,11 +2201,7 @@ function bindOverlayInteractions(layerId: string, conf: OverlayConf): void {
 // rê chuột, và nó cần `conf` riêng của lớp để dựng popup.
 function troChuotTrenLopPhu(): void {
   map.on("mousemove", (e) => {
-    const lop: string[] = [];
-    for (const id of overlayLoaded) {
-      for (const l of [`overlay-${id}`, `overlay-${id}-icon`])
-        if (map.getLayer(l) && map.getLayoutProperty(l, "visibility") !== "none") lop.push(l);
-    }
+    const lop = lopPhuDangHien();
     if (!lop.length) return;
     const co = map.queryRenderedFeatures(e.point, { layers: lop }).length > 0;
     const canvas = map.getCanvas();
@@ -2011,7 +2299,7 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
     type: "symbol",
     source: layerId,
     layout: {
-      "icon-image": conf.icon,
+      "icon-image": ICON_VE_TAY[id] ? tenIconVe(id) : conf.icon,
       "icon-size": 0.5,
       "icon-allow-overlap": ICON_VA_CHAM_THEO_ZOOM,
       "icon-ignore-placement": ICON_VA_CHAM_THEO_ZOOM,
@@ -2023,9 +2311,21 @@ async function toggleOverlay(id: string, on: boolean): Promise<void> {
   // Lớp phủ vừa thêm nằm TRÊN lớp landmark 3D (thêm sau thì vẽ sau), nên vòng
   // tròn phẳng sẽ đè lên chân mô hình. Đẩy lớp 3D lên trên cùng lần nữa.
   if (map.getLayer("landmarks-3d")) map.moveLayer("landmarks-3d");
+  nhanChuQuyenLenTren();
   // Lớp mới bật thì mô hình 3D của nó phải dựng ngay, không đợi tới lần người
   // dùng dời bản đồ (moveend là chỗ gọi còn lại).
   capNhatMoHinhDiem();
+}
+
+/**
+ * Nhãn Hoàng Sa · Trường Sa lên TRÊN CÙNG, trên cả lớp 3D. Gọi sau mọi
+ * `addLayer` không kèm beforeId. Trước 2026-09-23 lớp phủ thêm sau nằm đè lên
+ * nhãn: điểm «Quần đảo Hoàng Sa» (bản đồ cổ), «Hải chiến Hoàng Sa 1974» và
+ * «Sự kiện Gạc Ma» che mất chữ — nhãn vẫn được vẽ nên V4 cũ vẫn xanh.
+ * verify:chuquyen V4 giờ báo đỏ khi có lớp phủ nào nằm trên nhãn.
+ */
+function nhanChuQuyenLenTren(): void {
+  if (map.getLayer("chu-quyen-labels")) map.moveLayer("chu-quyen-labels");
 }
 
 // --- Lớp «Tên đường theo danh nhân» (thí điểm HN·HCM·ĐN) ---------------------
@@ -2136,21 +2436,22 @@ async function applyStreets(on: boolean): Promise<void> {
       "icon-ignore-placement": ICON_VA_CHAM_THEO_ZOOM,
     },
   });
+  nhanChuQuyenLenTren();
   const onStreetClick = (e: MapLayerMouseEvent) => {
     const f = e.features?.[0];
     if (!f) return;
     const p = f.properties as Record<string, unknown>;
     const sai =
       Number(p.osm_sai_dau) === 1
-        ? `<br/><span style="color:#b45309;font-size:0.72rem">⚠ OSM gõ sai dấu — đã nối theo nguồn đã xác minh</span>`
+        ? `<br/><span style="color:var(--luu-chu);font-size:0.72rem">⚠ OSM gõ sai dấu — đã nối theo nguồn đã xác minh</span>`
         : "";
     moPopup(
       map,
       e.lngLat,
       `<strong>Đường ${esc(str(p.ten_duong))}</strong><br/>` +
         `Đặt theo danh nhân: <b>${esc(str(p.danh_nhan))}</b><br/>` +
-        `<span style="color:#57534e;font-size:0.8rem">${esc(str(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
-        `<span style="color:#78716c;font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
+        `<span style="color:var(--chu-mem);font-size:0.8rem">${esc(str(p.ten_tp))} · ${Number(p.so_doan)} đoạn</span>${sai}<br/>` +
+        `<span style="color:var(--chu-nhat);font-size:0.72rem">Nguồn tên đường: © OpenStreetMap contributors (ODbL)</span>`,
       { maxWidth: "300px" },
     );
   };
@@ -2204,6 +2505,12 @@ function buildLayerControl(): void {
         ).join("")}
       </select>
       <p class="lc-note" id="lc-ghi-chu"></p>
+      <label class="lc-nhan-chon" for="lc-doi-chieu">${ten("nhan:lc-nhan-doi-chieu", "Đối chiếu với")}</label>
+      <select id="lc-doi-chieu" name="doi-chieu">
+        <option value="">— không —</option>
+        ${ERAS.map((e) => `<option value="${e.id}">${e.label}</option>`).join("")}
+      </select>
+      <p class="lc-note" id="lc-doi-chieu-ghi-chu"></p>
     </div>
     <details class="lc-sec" open>
       <summary>📌 ${ten("nhan:lc-lop-phu", "Lớp phủ")} <span class="lc-badge">${OVERLAYS.length}</span></summary>
@@ -2261,6 +2568,7 @@ function buildLayerControl(): void {
       daDoiThoiKy = true;
       setPeriod(Number(t.value));
     }
+    if (t.name === "doi-chieu") datDoiChieu(t.value);
     if (t.name === "overlay") void toggleOverlay(t.value, t.checked);
     if (t.name === "palette") applyColorMode(t.value as "default" | "ruc-ro" | "pastel");
     if (t.name === "labels") applyLabels(t.checked);
@@ -2305,9 +2613,11 @@ function apTuVungTheoCheDo(): void {
 // ("phỏng dựng xấp xỉ", "bản đồ chủ quyền") — trẻ em đọc không ra nghĩa gì, mà
 // đây lại là câu KHÔNG được phép hiểu sai. Nên viết hẳn hai bản, giữ nguyên hai
 // điều bắt buộc: đây là phỏng dựng, và nó KHÔNG phải bản đồ chủ quyền.
+const GHI_CHU_CUONG_VUC_NGUOI_LON =
+  "⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).";
 const GHI_CHU_CUONG_VUC: Record<CheDo, string> = {
-  "nguoi-lon":
-    "⚠️ Cương vực cổ là phỏng dựng xấp xỉ — KHÔNG phải bản đồ chủ quyền. Nam Việt→Đại Nam hiện mới có TÊN NƯỚC (đường biên chính xác đang tra nguồn).",
+  "nguoi-lon": GHI_CHU_CUONG_VUC_NGUOI_LON,
+  toi: GHI_CHU_CUONG_VUC_NGUOI_LON,
   "tre-em":
     "⚠️ Hình nước ta thời xưa chỉ là bản vẽ phỏng đoán cho dễ hình dung, KHÔNG phải bản đồ biên giới chính thức. Từ Nam Việt đến Đại Nam mới có tên nước thôi — đường biên giới thật thế nào thì các nhà sử học vẫn đang tra cứu.",
 };

@@ -1,12 +1,14 @@
 {
-  "ghi_chu": "Sa đồ trận Trấn Ninh — Nhật Lệ 1672 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Trấn Ninh — Nhật Lệ 1672 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Đây là NỘI CHIẾN giữa hai thế lực người Việt, nên khai loai_xung_dot=noi-chien. Quân số hai bên được các nguồn chép rất khác nhau — nêu song song ở khối luc_luong, KHÔNG chọn một con số.",
   "id": "tran-ninh-nhat-le-1672",
   "ten": "Trận Trấn Ninh — Nhật Lệ (1672), kết thúc chiến tranh Trịnh-Nguyễn",
   "nam": 1672,
   "sa_do_kieu": "tong-quat",
+  "loai_xung_dot": "noi-chien",
   "chi_huy": "Nguyễn Phúc Tần",
   "doi_thu": "Chúa Trịnh (Trịnh Tạc)",
   "dia_diem": "Luỹ Trấn Ninh và cửa Nhật Lệ, Đồng Hới, Quảng Bình (nay tỉnh Quảng Trị)",
+  "thoi_gian": "Năm Nhâm Tí (1672) — quân Trịnh rút về tháng 12/1672",
   "lien_quan_tinh": [
     "quang-tri"
   ],
@@ -15,160 +17,353 @@
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          1000,
-          320
-        ]
+        [56, 132],
+        [300, 160],
+        [540, 152],
+        [792, 126]
       ],
-      "nhan": "Sông Gianh"
+      "nhan": "Sông Gianh (Linh Giang)"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [880, 48],
+        [914, 232],
+        [920, 422],
+        [888, 572]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [298, 474],
+        [500, 424],
+        [690, 344],
+        [818, 282]
+      ],
+      "nhan": "Sông Nhật Lệ"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [218, 302],
+        [380, 334],
+        [540, 354],
+        [690, 328],
+        [800, 288]
+      ],
+      "nhan": "Tuyến luỹ Nhật Lệ — Trấn Ninh"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [106, 334],
+        [198, 276],
+        [298, 342]
+      ],
+      "nhan": "Núi Đầu Mâu"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-vua-le-than-chinh",
+      "id": "vua-le-gia-tong",
       "kieu": "quan",
       "ben": "dich",
-      "x": 750,
-      "y": 150,
-      "nhan": "Trịnh Tạc ép vua Lê thân chinh"
+      "x": 162,
+      "y": 78,
+      "nhan": "Vua Lê Gia Tông được dẫn theo trong cuộc thân chinh"
+    },
+    {
+      "id": "trinh-can",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 404,
+      "y": 62,
+      "nhan": "Thái uý Trịnh Căn cùng tướng Lê Thì Hiến"
+    },
+    {
+      "id": "song-gianh",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 156,
+      "nhan": "Sông Gianh — nơi quân Trịnh vượt sang"
+    },
+    {
+      "id": "mui-vuot-song",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [432, 116],
+      "den": [524, 194],
+      "nhan": "Vượt sông Gianh đánh vào cửa Nhật Lệ"
     },
     {
       "id": "luy-tran-ninh",
       "kieu": "cong-su",
-      "ben": "dich",
-      "x": 650,
-      "y": 250,
-      "nhan": "Lũy Trấn Ninh bị chiếm"
-    },
-    {
-      "id": "quan-dich-3van",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 600,
-      "y": 200,
-      "nhan": "3 vạn quân vượt sông Gianh"
+      "ben": "ta",
+      "x": 566,
+      "y": 216,
+      "nhan": "Luỹ Trấn Ninh — bị quân Trịnh chiếm"
     },
     {
       "id": "luy-nhat-le",
       "kieu": "cong-su",
       "ben": "ta",
-      "x": 400,
-      "y": 350,
-      "nhan": "Lũy Nhật Lệ (Lũy Thầy)"
+      "x": 486,
+      "y": 372,
+      "nhan": "Luỹ Nhật Lệ — mặt luỹ chính"
     },
     {
-      "id": "quan-ta-day-lui",
+      "id": "cua-nhat-le",
+      "kieu": "dia-danh",
+      "x": 828,
+      "y": 302,
+      "nhan": "Cửa biển Nhật Lệ"
+    },
+    {
+      "id": "quan-nguyen",
       "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 400,
-      "nhan": "Quân Nguyễn đẩy lùi 6 đợt công phá"
+      "x": 388,
+      "y": 446,
+      "nhan": "Chúa Nguyễn Phúc Tần khởi toàn quân nghênh chiến"
     },
     {
-      "id": "mui-cong-pha",
+      "id": "nguyen-huu-dat",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 636,
+      "y": 448,
+      "nhan": "Các danh tướng Nguyễn Hữu Dật, Nguyễn Hữu Tiến"
+    },
+    {
+      "id": "mui-cong-luy-1",
       "kieu": "mui-ten",
       "ben": "dich",
-      "tu": [
-        600,
-        230
-      ],
-      "den": [
-        420,
-        340
-      ],
-      "nhan": "6 đợt công phá liên tiếp"
+      "tu": [556, 258],
+      "den": [512, 344],
+      "nhan": "Đợt công luỹ thứ nhất"
     },
     {
-      "id": "co-giang-hoa",
+      "id": "mui-cong-luy-2",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [702, 246],
+      "den": [644, 334],
+      "nhan": "Các đợt công luỹ nối tiếp"
+    },
+    {
+      "id": "sau-lan-cong",
+      "kieu": "dia-danh",
+      "x": 718,
+      "y": 412,
+      "nhan": "Sáu lần liên tục tấn công mặt luỹ, đều không hạ được"
+    },
+    {
+      "id": "trinh-rut-quan",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [470, 176],
+      "den": [286, 100],
+      "nhan": "Tháng 12/1672, Trịnh Tạc rút đại binh về"
+    },
+    {
+      "id": "nghe-an",
+      "kieu": "dia-danh",
+      "x": 104,
+      "y": 194,
+      "nhan": "Nghệ An — Lê Thì Hiến ở lại trấn giữ"
+    },
+    {
+      "id": "gioi-tuyen",
+      "kieu": "dia-danh",
+      "x": 754,
+      "y": 154,
+      "nhan": "Sông Gianh thành giới tuyến, cửa Nhật Lệ là ranh giới hưu chiến"
+    },
+    {
+      "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 500,
-      "y": 430,
-      "nhan": "Giảng hòa, lấy sông Gianh làm giới tuyến"
+      "x": 194,
+      "y": 470,
+      "nhan": "45 năm giao tranh Trịnh – Nguyễn khép lại"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Trịnh Tạc ép vua Lê thân chinh",
-      "mo_ta": "Trịnh Tạc ép vua Lê đem đại quân đánh một trận lớn ở châu Bố Chính.",
+      "tieu_de": "Trịnh Tạc ép vua Lê thân chinh vào Nam",
+      "thoi_gian": "Năm Nhâm Tí (1672)",
+      "dia_danh": "Thăng Long — châu Bố Chính",
+      "mo_ta": "Năm Nhâm Tí 1672, Trịnh Tạc ép vua Lê đem quân vào đánh chúa Nguyễn một trận lớn ở châu Bố Chính. Chúa Trịnh sai con là Thái uý Trịnh Căn cùng tướng Lê Thì Hiến cầm quân, dẫn theo vua Lê Gia Tông. Đây là lần giao tranh lớn thứ bảy, cũng là lần cuối cùng, của cuộc chiến kéo dài từ năm 1627; cả hai bên đều dốc lực lượng vào một trận quyết định ở dải đất hẹp giữa sông Gianh và cửa Nhật Lệ.",
       "hien": [
-        "quan-dich-vua-le-than-chinh"
+        "vua-le-gia-tong",
+        "trinh-can",
+        "song-gianh"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html",
+        "Báo Nhân Dân — https://nhandan.vn/di-qua-nhung-vet-han-lich-su-post695041.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Chiếm lũy Trấn Ninh",
-      "mo_ta": "Quân Trịnh chiếm được lũy Trấn Ninh.",
+      "tieu_de": "Vượt sông Gianh, chiếm luỹ Trấn Ninh",
+      "dia_danh": "Sông Gianh — luỹ Trấn Ninh",
+      "mo_ta": "Quân Trịnh chiếm được luỹ Trấn Ninh, rồi huy động 3 vạn quân vượt sông Gianh đánh vào cửa Nhật Lệ. Việc mất một mắt xích của hệ thống luỹ ngay từ đầu chiến dịch khiến mặt luỹ Nhật Lệ trở thành tuyến chặn cuối cùng: sau lưng nó không còn công trình phòng ngự nào tương đương trước khi tới đất Thuận Hoá.",
       "hien": [
-        "luy-tran-ninh"
+        "mui-vuot-song",
+        "luy-tran-ninh",
+        "song-gianh",
+        "trinh-can"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Vây lũy Nhật Lệ với 3 vạn quân",
-      "mo_ta": "Trịnh Tạc điều khoảng 3 vạn quân vượt sông Gianh vây lũy Nhật Lệ (hệ thống Lũy Thầy).",
+      "tieu_de": "Chúa Nguyễn Phúc Tần khởi toàn quân giữ luỹ",
+      "dia_danh": "Luỹ Nhật Lệ",
+      "mo_ta": "Chúa Nguyễn Phúc Tần cùng các danh tướng Nguyễn Hữu Dật, Nguyễn Hữu Tiến cũng khởi toàn quân ra giữ mặt luỹ Nhật Lệ. Về quân số hai bên, các nguồn chép rất khác nhau: Báo Nhân Dân ghi Trịnh Căn cùng Lê Thì Hiến khởi tới 10 vạn quân mà nói phao lên là 18 vạn, còn quân Nguyễn nói phao lên là 26 vạn; Cổng thông tin scov.gov.vn chỉ ghi 3 vạn quân Trịnh vượt sông Gianh. Điểm mọi nguồn thống nhất là quân Nguyễn ra sức chống cự nhờ có hệ thống thành luỹ kiên cố.",
       "hien": [
-        "luy-tran-ninh",
-        "quan-dich-3van"
+        "quan-nguyen",
+        "nguyen-huu-dat",
+        "luy-nhat-le"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — https://nhandan.vn/di-qua-nhung-vet-han-lich-su-post695041.html",
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Quân Nguyễn đẩy lùi 6 đợt công phá",
-      "mo_ta": "Quân Nguyễn phòng thủ vững chắc, đẩy lùi liên tiếp 6 đợt tấn công của quân Trịnh.",
+      "tieu_de": "Sáu lần liên tục công phá mặt luỹ",
+      "dia_danh": "Mặt luỹ Nhật Lệ",
+      "mo_ta": "Quân Trịnh với lực lượng hùng hậu tiến đánh vào luỹ Nhật Lệ; đây là lần giao tranh ác liệt nhất trong lịch sử cuộc nội chiến, với sáu lần liên tục tấn công vào mặt luỹ nhưng vẫn không được. Mỗi đợt công luỹ đều vấp phải tuyến hoả lực bố trí dọc thân luỹ mà Đào Duy Từ đã tính từ bốn mươi năm trước, và cuối cùng quân Trịnh phải ôm hận rút lui, không cách nào hạ được luỹ.",
       "hien": [
+        "mui-cong-luy-1",
+        "mui-cong-luy-2",
+        "sau-lan-cong",
         "luy-nhat-le",
-        "quan-ta-day-lui",
-        "mui-cong-pha"
+        "cua-nhat-le"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Quân Trịnh rút lui trong bế tắc",
-      "mo_ta": "Quân Trịnh rút lui trong bế tắc sau nhiều tháng vây hãm không thành.",
+      "tieu_de": "Tháng 12/1672, Trịnh Tạc rút đại binh về Bắc",
+      "thoi_gian": "Tháng 12/1672",
+      "dia_danh": "Nhật Lệ — Nghệ An",
+      "mo_ta": "Không hạ nổi mặt luỹ sau sáu đợt tấn công, tháng 12/1672 Trịnh Tạc phải rút đại binh về, chỉ để Lê Thì Hiến trấn giữ Nghệ An. Cuộc thân chinh mở màn bằng việc ép vua Lê đi theo kết thúc mà không giành thêm được một tấc đất nào phía nam sông Gianh, trong khi lực lượng hai bên đều đã kiệt sau bảy lần giao tranh trong 45 năm.",
       "hien": [
-        "quan-dich-3van",
-        "luy-nhat-le"
+        "trinh-rut-quan",
+        "nghe-an",
+        "vua-le-gia-tong"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Giảng hòa, lấy sông Gianh làm giới tuyến",
-      "mo_ta": "Hai họ giảng hòa, lấy sông Gianh làm giới tuyến, kết thúc chiến tranh 45 năm qua 7 lần giao tranh lớn.",
+      "tieu_de": "Lấy sông Gianh làm giới tuyến",
+      "dia_danh": "Sông Gianh — cửa biển Nhật Lệ",
+      "mo_ta": "Từ đó Đàng Ngoài và Đàng Trong tạm ngừng chiến, lấy sông Gianh làm giới tuyến; cửa biển Nhật Lệ cũng được xác định là ranh giới hưu chiến. Dòng sông trở thành một lằn ranh của lịch sử nước nhà, chia đôi đất nước trong hơn 150 năm cho tới khi phong trào Tây Sơn xoá bỏ ranh giới ấy.",
       "hien": [
-        "co-giang-hoa"
+        "gioi-tuyen",
+        "song-gianh",
+        "cua-nhat-le"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html",
+        "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thang-tram-cua-bien-mien-trung-chien-truong-khoc-liet-196241002082215875.htm"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Bốn mươi lăm năm giao tranh khép lại",
+      "thoi_gian": "1627 – 1672",
+      "dia_danh": "Đàng Trong — Đàng Ngoài",
+      "mo_ta": "Bảy lần giao tranh lớn trong 45 năm kết thúc mà không bên nào thắng. Suốt một thế kỷ rưỡi với những cuộc giao tranh không hồi kết, dòng sông Gianh đã chứng kiến biết bao nỗi tang tóc; các cuộc giao tranh lớn, kéo dài đã bào mòn nhân lực, vật lực, đẩy người dân hai miền Đàng Trong – Đàng Ngoài vào cảnh khổ cực tột cùng. Đó là cái giá mà cả hai phía cùng trả cho một cuộc chiến giữa những người cùng một nước.",
+      "hien": [
+        "co-thang",
+        "gioi-tuyen"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — https://nhandan.vn/song-gianh-vi-thanh-cua-ky-uc-va-hoa-binh-post955576.html"
       ]
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "khởi toàn quân nghênh chiến, nói phao lên là 26 vạn",
+          "nguon": "Báo Nhân Dân"
+        }
+      ],
+      "don_vi": [
+        "Quân Đàng Trong do chúa Nguyễn Phúc Tần thống lĩnh",
+        "Các danh tướng Nguyễn Hữu Dật, Nguyễn Hữu Tiến"
+      ],
+      "vu_khi": [
+        "Hệ thống thành luỹ kiên cố Nhật Lệ – Trấn Ninh – Trường Sa"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "khởi tới 10 vạn quân, nói phao lên là 18 vạn",
+          "nguon": "Báo Nhân Dân"
+        },
+        {
+          "so": "3 vạn quân vượt sông Gianh đánh vào cửa Nhật Lệ",
+          "nguon": "scov.gov.vn — Tóm tắt biên niên sử Việt Nam"
+        }
+      ],
+      "don_vi": [
+        "Thái uý Trịnh Căn cùng tướng Lê Thì Hiến, dẫn theo vua Lê Gia Tông"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — https://nhandan.vn/di-qua-nhung-vet-han-lich-su-post695041.html",
+      "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html"
+    ]
+  },
   "ket_qua": "Quân Trịnh chiếm lũy Trấn Ninh nhưng 6 đợt công phá lũy Nhật Lệ liên tiếp đều thất bại; cuối 1672 quân Trịnh rút lui, hai bên tạm hòa lấy sông Gianh làm ranh giới.",
   "y_nghia": "Kết thúc chiến tranh Trịnh-Nguyễn 45 năm qua 7 lần giao tranh lớn, mở đầu hơn 100 năm Đàng Trong - Đàng Ngoài phân chia trước khi Tây Sơn thống nhất.",
   "trang_thai": "draft",
   "nguon": [
     "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Thời kỳ Trịnh - Nguyễn phân tranh (phần 1)",
     "Đại Nam Thực Lục — Tiền biên",
-    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html",
+    "Báo Nhân Dân — https://nhandan.vn/di-qua-nhung-vet-han-lich-su-post695041.html",
+    "Báo Nhân Dân — https://nhandan.vn/song-gianh-vi-thanh-cua-ky-uc-va-hoa-binh-post955576.html",
+    "Báo Tuổi Trẻ — https://tuoitre.vn/nld/thang-tram-cua-bien-mien-trung-chien-truong-khoc-liet-196241002082215875.htm"
   ],
   "trich_van_tich": [
     {
       "sach": "Biên niên sử Việt Nam (theo scov.gov.vn, không nêu tên bộ sử cụ thể) — mục Thời kỳ Trịnh - Nguyễn phân tranh (phần 1)",
       "doan": "Năm Nhâm Tí - 1672, Trịnh Tạc ép vua Lê đem quân vào đánh chúa Nguyễn một trận lớn ở châu Bố Chính, quân Trịnh chiếm được luỹ Trấn Ninh, huy động 3 vạn quân vượt sông Gianh đánh vào cửa Nhật Lệ.",
       "nguon_trich": "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html",
-      "buoc": 3
+      "buoc": 2
     },
     {
       "sach": "Biên niên sử Việt Nam (theo scov.gov.vn, không nêu tên bộ sử cụ thể) — mục Thời kỳ Trịnh - Nguyễn phân tranh (phần 1)",
       "doan": "Quân Nguyễn ra sức chống cự nhờ có hệ thống thành luỹ kiên cố, tháng 12/1672, Trịnh Tạc phải rút đại binh về chỉ để Lê Thời Hiến trấn giữ Nghệ An.",
       "nguon_trich": "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/tom-tat-bien-nien-su-vn/thoi-ky-trinh-nguyen-phan-tranh-phan-1-.html",
       "buoc": 5
+    },
+    {
+      "sach": "Bài «Lũy Thầy» — Cổng thông tin điện tử Uỷ ban Nhà nước về người Việt Nam ở nước ngoài",
+      "doan": "Đến năm 1672 quân Trịnh với lực lượng hùng hậu đã tiến đánh vào luỹ Nhật Lệ và đây là lần giao tranh ác liệt nhất trong lịch sử cuộc nội chiến với 6 lần liên tục tấn công vào mặt luỹ nhưng vẫn không được.",
+      "nguon_trich": "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/luy-thay.html",
+      "buoc": 4
     }
   ]
 }

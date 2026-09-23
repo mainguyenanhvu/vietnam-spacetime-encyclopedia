@@ -1,0 +1,129 @@
+{
+  "ghi_chu": "Sa đồ Chốt chặn Tàu Ô trên đường 13, 1972 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "tran-tau-o-duong-13-1972",
+  "ten": "Chốt chặn Tàu Ô trên đường 13",
+  "nam": 1972,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Sư đoàn 7, Quân Giải phóng miền Nam",
+  "doi_thu": "Sư đoàn 18, 21, 25 và Lữ đoàn thiết giáp 15, quân đội Sài Gòn",
+  "dia_diem": "Khu vực Tàu Ô — Xóm Ruộng, đường 13, nay thuộc phường Tân Khai, thị xã Hớn Quản, tỉnh Đồng Nai",
+  "lien_quan_tinh": [
+    "dong-nai"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "duong",
+      "diem": [
+        [500, 50],
+        [500, 500],
+        [500, 950]
+      ],
+      "nhan": "Đường 13 — Bình Long xuống Chơn Thành"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [200, 300],
+        [350, 500],
+        [200, 700]
+      ],
+      "nhan": "Rừng cao su ven đường 13"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "chot-tau-o",
+      "kieu": "cong-su",
+      "ben": "ta",
+      "x": 500,
+      "y": 480,
+      "nhan": "Chốt Tàu Ô — điểm chốt trung tâm"
+    },
+    {
+      "id": "an-loc-phia-bac",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 100,
+      "nhan": "An Lộc, phía bắc"
+    },
+    {
+      "id": "chon-thanh-phia-nam",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 900,
+      "nhan": "Chơn Thành, phía nam"
+    },
+    {
+      "id": "doan-tiep-vien-dich",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 750,
+      "nhan": "Đoàn tiếp viện, Sư đoàn 18, 21, 25 và thiết giáp"
+    },
+    {
+      "id": "phao-binh-dich-ban-pha",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 700,
+      "y": 600,
+      "nhan": "Pháo binh địch bắn phá trận địa chốt"
+    },
+    {
+      "id": "bo-doi-ta-bam-tru",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 550,
+      "nhan": "Bộ đội Sư đoàn 7 bám trụ công sự"
+    },
+    {
+      "id": "mui-phan-kich-dich",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [500, 800],
+      "den": [500, 550],
+      "nhan": "Các đợt tiến công phá chốt"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Nhiệm vụ chốt chặn đường 13",
+      "mo_ta": "Trong Chiến dịch Nguyễn Huệ 1972, Sư đoàn 7 được giao chốt chặn đường 13 dài gần 20km từ nam Bình Long đến bắc Chơn Thành, lấy Tàu Ô làm điểm chốt trung tâm để cắt đường tiếp viện lên An Lộc.",
+      "hien": ["chot-tau-o", "an-loc-phia-bac", "chon-thanh-phia-nam"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Địch dồn ba sư đoàn phá chốt",
+      "mo_ta": "Từ 16/5/1972, quân đội Sài Gòn huy động Sư đoàn 18, 21, 25, Lữ đoàn thiết giáp 15 và một lữ đoàn dù liên tục mở các đợt tiến công nhằm giải toả chốt Tàu Ô.",
+      "hien": ["chot-tau-o", "doan-tiep-vien-dich"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Hơn 35.000 quả đạn pháo dội xuống trận địa",
+      "mo_ta": "Địch sử dụng hơn 35.000 quả đạn pháo 105mm và 155mm bắn phá liên tục vào trận địa chốt.",
+      "hien": ["chot-tau-o", "phao-binh-dich-ban-pha"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Bám trụ đánh bật các đợt xung phong",
+      "mo_ta": "Bộ đội ta bám trụ công sự, đánh bật nhiều đợt xung phong của địch có xe tăng, máy bay yểm trợ.",
+      "hien": ["bo-doi-ta-bam-tru", "mui-phan-kich-dich"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Gần bốn tháng giữ chốt",
+      "mo_ta": "Cuộc chiến đấu chốt chặn kéo dài từ 16/5 đến 28/8/1972, đường 13 tiếp tục bị cắt đứt trong suốt thời gian này.",
+      "hien": ["chot-tau-o", "bo-doi-ta-bam-tru"]
+    }
+  ],
+  "ket_qua": "Chốt Tàu Ô đứng vững sau gần bốn tháng giao tranh liên tục (16/5 – 28/8/1972); đường 13 tiếp tục bị cắt, quân đội Sài Gòn không giải toả được tuyến chi viện đường bộ lên An Lộc.",
+  "y_nghia": "Chốt chặn Tàu Ô được xem là \"bức tường thép\" trên đường 13, góp phần cùng cuộc chiến đấu tại An Lộc làm nên thế trận chung của Chiến dịch Nguyễn Huệ 1972.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Chiến thắng chốt chặn Tàu Ô trong chiến dịch Nguyễn Huệ năm 1972 — Cổng Thông tin điện tử tỉnh Bình Phước — https://binhphuoc.gov.vn/vi/stttt/thong-tin-doi-ngoai/chien-thang-chot-chan-tau-o-trong-chien-dich-nguyen-hue-nam-1972-1209.html"
+  ],
+  "ghi_chu_bien_tap": "Nguồn binhphuoc.gov.vn (cổng tỉnh, gov.vn — tỉnh Bình Phước cũ, nay hợp nhất vào Đồng Nai theo NQ 202/2025/QH15) đã mở, xác nhận đơn vị Sư đoàn 7, phạm vi chốt gần 20km, lực lượng địch (Sư đoàn 18/21/25, Lữ đoàn thiết giáp 15, 1 lữ đoàn dù), hơn 35.000 quả đạn pháo, thời gian 16/5-28/8/1972. lien_quan_tinh dùng 'dong-nai' theo tên tỉnh hiện hành sau sáp nhập."
+}

@@ -63,13 +63,14 @@
   font-size: var(--co-lg);
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: var(--mat);
+  color: var(--tieu-de-tren-nghich);
 }
 
 #topbar .subtitle {
   font-weight: 400;
   font-size: var(--co-sm);
-  opacity: 0.88;
+  /* Không hạ opacity: 0.88 kéo 4,74:1 xuống 3,97:1 (người lớn) và 4,35:1
+     (trẻ em). Thứ bậc với tên sản phẩm đã có nhờ cỡ, độ đậm và màu. */
   color: var(--chu-tren-nghich);
 }
 
@@ -444,8 +445,12 @@
   cursor: pointer;
 }
 
+/* Khung truyện thiếu nhi đổi topbar sang dải đậm. Bản cũ đi từ --nhan-sang
+   (vàng sáng) nên chữ vàng nhạt trên đó chỉ 1,49:1 — gần như vô hình
+   (verify_tuong_phan 2026-09-23). Dải này: người lớn 8,27:1 trở lên, trẻ em
+   (chữ trắng) 5,18:1 trở lên. */
 body.kid-mode #topbar {
-  background: linear-gradient(90deg, var(--nhan-sang), var(--brand));
+  background: linear-gradient(90deg, var(--brand-sau), var(--brand-dam));
 }
 
 .story-line {
@@ -570,7 +575,7 @@ body.kid-mode #topbar {
      #b45309 (đã dùng sẵn trong bảng màu ở nơi khác) để đạt 4.84:1.
      Giá trị đã lên token: #b45309 → var(--nhan), #fffbeb → var(--mat). */
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   border-radius: var(--bo-vua);
   padding: 0 0.4rem;
   font-size: var(--co-xs);
@@ -621,9 +626,12 @@ body.kid-mode #topbar {
   cursor: pointer;
 }
 
+.ol-scorebar .muted {
+  color: inherit; /* .muted xám trên dải màu đặc: 1,44–1,93:1 */
+}
 .ol-scorebar {
   background: var(--brand-dam);
-  color: var(--mat-3);
+  color: var(--chu-tren-dac);
   border-radius: var(--bo-nho);
   padding: 0.35rem 0.6rem;
   font-size: var(--co-md);
@@ -652,6 +660,11 @@ body.kid-mode #topbar {
 
 #olympia-content button:hover:not(:disabled) {
   background: var(--brand);
+}
+/* --brand trẻ em (#ea580c) SÁNG hơn --brand-dam: hover làm chữ kem tụt còn
+   3,11:1. Trẻ em thì hover đi về phía tối. */
+:root[data-che-do="tre-em"] #olympia-content button:hover:not(:disabled) {
+  background: var(--brand-sau);
 }
 
 .ol-question {
@@ -830,7 +843,7 @@ body.kid-mode #topbar {
 .panel-actions button:hover,
 .panel-actions button.active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 
 .model3d-gallery {
@@ -854,7 +867,7 @@ body.kid-mode #topbar {
 .model3d-gallery button.active {
   background: var(--nhan);
   border-color: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 .model3d-stage {
   width: 100%;
@@ -863,6 +876,12 @@ body.kid-mode #topbar {
   background: radial-gradient(circle at 50% 35%, var(--mat-chim), var(--vien-ro));
   overflow: hidden;
   touch-action: none;
+}
+/* Chữ «Đang tải mô hình…» nằm trên gradient tới --vien-ro: --chu-mem chỉ
+   4,15:1 ở đầu tối của gradient. */
+.model3d-stage .muted,
+.journey-stage .muted {
+  color: var(--chu);
 }
 .model3d-stage canvas {
   display: block;
@@ -1051,7 +1070,7 @@ body.kid-mode #topbar {
 }
 .qg-tab.active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
 }
 .qg-note {
   font-size: var(--co-xs);
@@ -1131,7 +1150,7 @@ body.kid-mode #topbar {
   border: 1px solid var(--vien-ro);
 }
 .qg-badge-state { background: var(--dung-nen); color: var(--dung-chu); border-color: var(--dung-vien); }
-.qg-badge-khac { background: var(--qg-badge-khac-nen); color: var(--brand); border-color: var(--sai-vien); }
+.qg-badge-khac { background: var(--qg-badge-khac-nen); color: var(--brand-chu); border-color: var(--sai-vien); }
 .qg-draft { background: var(--mat-3); color: var(--luu-chu); border-color: var(--nhan-mo); }
 .qg-card-multi .qg-version { margin-top: 0.5rem; }
 .qg-version-by { font-size: var(--co-sm); font-weight: 600; margin: 0.2rem 0; color: var(--chu-mem); }
@@ -1178,7 +1197,7 @@ body.kid-mode #topbar {
 .tl-note { font-size: var(--co-xs); color: var(--luu-chu); background: var(--mat-3); border: 1px solid var(--nhan-mo); border-radius: var(--bo-nho); padding: 0.4rem 0.6rem; margin: 0 0 0.7rem; }
 .tl-filters { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.9rem; }
 .tl-filter { border: 1px solid var(--nhan); background: var(--mat-2); color: var(--nhan); border-radius: var(--bo-vien-tron); padding: 0.25rem 0.7rem; cursor: pointer; font-size: var(--co-sm); font-weight: 600; }
-.tl-filter.active { background: var(--nhan); color: var(--mat); }
+.tl-filter.active { background: var(--nhan); color: var(--chu-tren-dac); }
 .tl-list { list-style: none; margin: 0; padding: 0; border-left: 3px solid var(--nhan-mo); }
 .tl-item { position: relative; padding: 0 0 1rem 1.1rem; }
 .tl-item::before { content: ""; position: absolute; left: -0.5rem; top: 0.35rem; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--nhan); border: 2px solid var(--mat); }
@@ -1375,7 +1394,7 @@ body.kid-mode #topbar {
 #olympia-close:hover,
 #namtien-close:hover {
   background: var(--lop-brand-vua);
-  color: var(--brand);
+  color: var(--brand-chu);
   transform: rotate(90deg);
 }
 
@@ -1409,7 +1428,7 @@ body.kid-mode #topbar {
   margin-bottom: 0.5rem;
 }
 #layer-control strong {
-  color: var(--brand);
+  color: var(--brand-chu);
   font-size: var(--co-md);
   letter-spacing: 0.2px;
 }
@@ -1426,7 +1445,7 @@ body.kid-mode #topbar {
   gap: 0.4rem;
   padding: 0.4rem 0.15rem;
   font-weight: 600;
-  color: var(--brand);
+  color: var(--brand-chu);
   user-select: none;
 }
 #layer-control .lc-sec > summary::-webkit-details-marker {
@@ -1444,7 +1463,7 @@ body.kid-mode #topbar {
 #layer-control .lc-badge {
   margin-left: auto;
   background: var(--lop-brand-vua);
-  color: var(--brand);
+  color: var(--brand-chu);
   border-radius: var(--bo-vien-tron);
   padding: 0.05rem 0.5rem;
   font-size: var(--co-2xs);
@@ -1488,13 +1507,20 @@ body.kid-mode #topbar {
    thành callout: cùng lượng chữ nhưng mắt biết ngay đây là chú thích. */
 #layer-control .lc-note {
   font-size: var(--co-2xs);
-  color: var(--nhan);
+  /* --nhan chỉ 3,12:1 trên nền callout. Đây là ghi chú PHÁP LÝ về cương vực
+     — thứ cuối cùng được phép khó đọc. --luu-chu: 6,00:1. */
+  color: var(--luu-chu);
   line-height: 1.45;
   margin: 0.5rem 0 0.15rem;
   padding: 0.45rem 0.6rem;
   background: var(--lop-brand-nhe);
   border-left: 3px solid var(--brand-nhat);
   border-radius: 0 var(--bo-nho) var(--bo-nho) 0;
+}
+/* Ghi chú đối chiếu rỗng khi chưa chọn gì — không có :empty thì còn trơ lại
+   vạch viền đỏ không chữ. */
+#layer-control .lc-note:empty {
+  display: none;
 }
 #layer-control label {
   display: flex;
@@ -1538,6 +1564,14 @@ input[type="range"] {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
   border-radius: 4px;
+}
+/* --focus đo trên nền SÁNG. Topbar đỏ và thanh dòng thời gian đen là nền SẪM:
+   vàng #b3791f trên topbar chỉ 1,85:1, tím chế độ trẻ em 1,10:1, tím trên
+   thanh đen 2,46:1 (verify:tuongphan lượt hover/focus, 2026-09-23). Ở đây
+   vòng focus là màu chữ tiêu đề trên nền đặc — sáng ở cả ba chế độ. */
+#topbar,
+#timeline-bar {
+  --focus: var(--tieu-de-tren-nghich);
 }
 
 /* Thanh cuộn mảnh trong panel */
@@ -1606,6 +1640,8 @@ input[type="range"] {
 
 /* Popup MapLibre — bo tròn, bóng mềm, mũi nhọn ăn theo nền */
 .maplibregl-popup-content {
+  /* CSS gốc của MapLibre tô #fff cứng — ban đêm thành chữ ngà trên nền trắng. */
+  background: var(--mat);
   border-radius: var(--bo-nho) !important;
   box-shadow: var(--bong-2) !important;
   padding: 0.7rem 0.85rem !important;
@@ -1631,7 +1667,7 @@ input[type="range"] {
 
 /* Panel Nam tiến — nhấn tiến trình bằng dải màu Bắc→Nam ở tiêu đề */
 #namtien-content h2 {
-  color: var(--brand);
+  color: var(--brand-chu);
 }
 .namtien-controls button {
   border-radius: var(--bo-vien-tron) !important;
@@ -1990,6 +2026,12 @@ input[type="range"] {
 .maplibregl-ctrl-group button:hover {
   background: var(--lop-brand-vua) !important;
 }
+/* Icon +/−/la bàn là SVG data-URI màu đen của MapLibre, không đọc var() được.
+   Ban đêm nền nhóm nút đã tối nên icon chìm hẳn — đảo sáng icon, giữ nguyên
+   sắc (hue-rotate bù lại phép đảo cho mũi kim la bàn đỏ). */
+:root[data-che-do="toi"] .maplibregl-ctrl-group .maplibregl-ctrl-icon {
+  filter: invert(1) hue-rotate(180deg);
+}
 .maplibregl-ctrl-scale {
   background: var(--mat-kinh) !important;
   border-color: var(--vien-ro) !important;
@@ -2023,8 +2065,13 @@ input[type="range"] {
   text-transform: uppercase;
   color: var(--chu-mem);
   margin-bottom: 0.3rem;
+  /* `#layer-control label` ép 44px cho dòng checkbox. Nhãn này chỉ đứng trên
+     ô chọn — ô chọn đã 44px, ép thêm ở đây chỉ đẻ khoảng trống lớn. */
+  min-height: 0;
+  padding: 0;
 }
-#layer-control #lc-period {
+#layer-control #lc-period,
+#layer-control #lc-doi-chieu {
   width: 100%;
   padding: 0.42rem 0.6rem;
   border-radius: var(--bo-nho);
@@ -2035,7 +2082,8 @@ input[type="range"] {
   font-size: var(--co-sm);
   cursor: pointer;
 }
-#layer-control #lc-period:hover {
+#layer-control #lc-period:hover,
+#layer-control #lc-doi-chieu:hover {
   border-color: var(--brand-nhat);
 }
 
@@ -2084,7 +2132,7 @@ input[type="range"] {
 .hcm-nhom {
   margin: 1rem 0 0.4rem;
   font-size: var(--co-md);
-  color: var(--brand);
+  color: var(--brand-chu);
   border-bottom: 1px dashed var(--vien);
   padding-bottom: 0.25rem;
 }
@@ -2149,8 +2197,11 @@ input[type="range"] {
   transition: transform var(--dur-nhanh) var(--ease),
     box-shadow var(--dur-nhanh) var(--ease);
 }
+/* Hover làm TỐI nền, không làm sáng: vàng pha lên đỏ đẩy nền về #b83d2a,
+   chữ --chu-tren-nghich chỉ còn 3,88:1. Chế độ trẻ em có quy tắc .chip riêng
+   (nền --mat) đứng sau, nên không bị dòng này chạm tới. */
 .chip:hover {
-  background: var(--vien-nhan-nhe);
+  background: color-mix(in srgb, var(--brand-sau) 34%, transparent);
   transform: translateY(-1px);
 }
 .chip.chip-active {
@@ -2167,8 +2218,8 @@ input[type="range"] {
   padding: 0 0.4rem;
 }
 .chip-tat {
+  /* Không hạ opacity: lúc hover chữ còn 3,52:1. Nét đứt đã đủ phân biệt. */
   border-style: dashed;
-  opacity: 0.92;
 }
 :root[data-che-do="tre-em"] .chip {
   background: var(--mat);
@@ -2177,7 +2228,7 @@ input[type="range"] {
 }
 :root[data-che-do="tre-em"] .chip.chip-active {
   background: var(--nhan);
-  color: var(--mat);
+  color: var(--chu-tren-dac);
   border-color: var(--nhan);
 }
 
@@ -2261,7 +2312,7 @@ input[type="range"] {
   content: "?";
   font-size: 0.68em;
   font-weight: 700;
-  color: var(--brand);
+  color: var(--brand-chu);
   vertical-align: super;
   margin-left: 0.08em;
 }
@@ -2359,7 +2410,7 @@ input[type="range"] {
   background: var(--nhan-mo);
 }
 .chip-mui:focus-visible {
-  outline: 3px solid var(--nhan);
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 
@@ -2467,11 +2518,32 @@ input[type="range"] {
   color: var(--chu-mem);
 }
 
-/* Tên tác phẩm / trích dẫn: in nghiêng thay cho « ». Xem nhamNhay() trong
-   popup-noi-dung.ts — dữ liệu vẫn giữ nguyên dấu, chỉ lớp trình bày đổi. */
+/* Tên tác phẩm: in nghiêng thay cho « ». Xem nhamNhay() trong
+   popup-noi-dung.ts — dữ liệu vẫn giữ nguyên dấu, chỉ lớp trình bày đổi.
+
+   `color: inherit` chứ KHÔNG `var(--chu)`: từ 2026-08-27 lớp này còn chạy
+   trong dòng phụ mờ của thư viện và trang tỉnh. Ghim màu chữ chính ở đó làm
+   tên tác phẩm sáng bật khỏi câu chứa nó — nhấn mạnh sai chỗ, và phá thang
+   tương phản đã đo của hai chế độ.
+
+   Chữ Việt in nghiêng hay dính vào chữ đứng liền sau: nét nghiêng cuối của
+   `Xuân` chạm nét đứng đầu của `của`. Bốn phần trăm em tách ra mà mắt không
+   đọc thành khoảng trắng thừa. */
 .pu-nhan {
   font-style: italic;
-  color: var(--chu);
+  color: inherit;
+  margin-right: 0.04em;
+}
+
+/* Nghiêng LỒNG trong nghiêng thì đảo về chữ đứng — quy ước typo có từ thời
+   sách in, và ở đây là chuyện đọc được hay không: .lib-loi-binh, .poem và
+   .lib-tho in nghiêng cả khối, nên tên tác phẩm nghiêng bên trong chúng trông
+   y hệt chữ xung quanh. Đo trên Chrome thật: cả hai cùng ra `italic`. */
+.lib-loi-binh .pu-nhan,
+.lib-tho .pu-nhan,
+.poem .pu-nhan,
+.lib-y-nghia em .pu-nhan {
+  font-style: normal;
 }
 
 .pu-canh-bao {
@@ -2538,6 +2610,11 @@ input[type="range"] {
   padding-left: 0;
   list-style: none;
   display: grid;
+  /* Cột PHẢI khai minmax(0, 1fr). Cột `auto` mặc định co theo max-content, mà
+     max-content của <li> bị ẢNH kéo ra: đo thật 2026-09-19 trong popup Hoàng Sa
+     — popup rộng 360px, <ul> 314px, nhưng <li> phình 892px vì ảnh nội tại 960px.
+     Ảnh tràn ngang khỏi khung và bị cắt. Không lỗi console, tsc vẫn xanh. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.45rem;
 }
 .pu-ds li {
@@ -2549,7 +2626,218 @@ input[type="range"] {
   font-weight: var(--dam-manh);
   font-variant-numeric: tabular-nums;
 }
+.pu-ds .pu-ds-anh {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin: 0.4rem 0 0.15rem;
+  border-radius: 4px;
+  background: var(--pu-anh-nen, rgba(0, 0, 0, 0.04));
+}
+
 .pu-ds .pu-ds-phu {
   display: block;
   color: var(--chu-nhat);
+}
+
+/* ── Trường dữ liệu vốn nằm im trong JSON, nay hiện ra (2026-08-28) ────────
+   Mọi màu ở đây đi qua token của theme.css. Gõ thẳng hex là cách hai bảng màu
+   người lớn / trẻ em dừng lại ở mép popup, lỗi mà file này vừa mới đi chữa. */
+
+/* `ghi_chu` — dòng phụ khép lại thân bài. Nằm TRONG <p class="pu-than"> nên
+   phải là <span> chuyển display:block, không được là <p>. */
+.pu-ghi-chu {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: var(--co-2xs);
+  line-height: 1.5;
+  color: var(--chu-nhat);
+}
+
+/* `loi_trich` — ca dao, câu sử. In nghiêng và lùi vào để mắt đọc ra ngay đây
+   là lời của người khác chứ không phải câu do trang viết. */
+.pu-trich {
+  margin: 0.6rem 0 0;
+  padding: 0.1rem 0 0.1rem 0.7rem;
+  border-left: 2px solid var(--vien-nhan);
+  font-size: var(--co-sm);
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--chu-mem);
+}
+
+/* `can_tra_them` — dải cảnh báo. Nền vàng chứ không phải viền mảnh như
+   .pu-canh-bao: hai thứ nói hai chuyện khác nhau (một bên là toạ độ chưa
+   chắc, một bên là NỘI DUNG chưa soát xong) nên không được trông giống nhau. */
+.pu-can-tra {
+  margin: 0.55rem 0 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--bo-nho);
+  background: var(--luu-nen);
+  color: var(--luu-chu);
+  font-size: var(--co-2xs);
+  line-height: 1.5;
+}
+
+/* `diem_thanh_phan` — khối gập, dùng lại bộ xương .pu-ds của lớp bản đồ cổ;
+   `.pu-tp` là phạm vi, giữ bốn luật dưới đây không rơi sang khối gập khác. */
+.pu-tp .pu-tp-luu-y {
+  margin: 0.45rem 0 0;
+  padding: 0.35rem 0.55rem;
+  border-radius: var(--bo-nho);
+  background: var(--mat-chim);
+  color: var(--chu-mem);
+  line-height: 1.5;
+}
+.pu-tp .pu-tp-ten {
+  font-size: var(--co-xs);
+  font-weight: var(--dam-manh);
+  color: var(--chu);
+}
+/* Nhãn «trùng UNESCO»: không xuống dòng giữa biểu tượng và chữ. */
+.pu-tp .pu-tp-co {
+  margin-left: 0.4em;
+  color: var(--tin-chu);
+  white-space: nowrap;
+}
+.pu-tp .pu-tp-mo-ta {
+  display: block;
+  margin-top: 0.2rem;
+  line-height: 1.55;
+  color: var(--chu-mem);
+}
+
+/* «Bạn có nhớ?» — câu hỏi sinh từ chính mục vừa đọc, đáp án nằm sau một cú bấm
+   (docs/research/trinh-bay-de-nho.md, bảng D mục 2).
+
+   Nền brand rất nhạt để mắt nhận ra đây là chỗ MỜI làm gì đó, khác hẳn khối
+   nguồn im tiếng ngay dưới. Không viền dày, không đổ bóng: nó đứng gần cuối
+   popup và người chỉ muốn đọc phải lướt qua được mà không bị chặn. */
+.pu-nho {
+  margin: 0.6rem 0 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--bo-nho);
+  background: var(--lop-brand-nhe);
+  font-size: var(--co-xs);
+  line-height: 1.5;
+}
+.pu-nho > summary {
+  cursor: pointer;
+  color: var(--chu-mem);
+  list-style: none;
+}
+.pu-nho > summary::-webkit-details-marker {
+  display: none;
+}
+.pu-nho > summary::after {
+  content: " ▸";
+  color: var(--chu-nhat);
+}
+.pu-nho[open] > summary::after {
+  content: " ▾";
+}
+.pu-nho .pu-nho-nhan {
+  font-weight: var(--dam-manh);
+  color: var(--brand-chu);
+}
+/* Đáp án: đủ tương phản để đọc ngay khi vừa mở, vì đây là lúc người ta đối
+   chiếu với thứ mình vừa nhớ ra. */
+.pu-nho > p {
+  margin: 0.35rem 0 0;
+  color: var(--chu);
+}
+
+/* ── NHIỀU MỤC CHỒNG KHÍT MỘT ĐIỂM ────────────────────────────────────────
+   526 mục cùng lớp tụ ở 185 điểm (gộp mọi lớp: 988 mục / 368 điểm). Popup cũ
+   lấy đúng feature đầu, nên ở điểm 16 bảo vật Hoàng thành thì 15 mục không có
+   cách nào bấm tới. Danh sách này là đường vào của 15 mục đó. */
+.pu-nh > .pu-nh-vi-sao {
+  margin: 0.35rem 0 0;
+  padding: 0.4rem 0.55rem;
+  border-radius: var(--bo-nho);
+  background: var(--mat-chim);
+  font-size: var(--co-2xs);
+  line-height: 1.5;
+  color: var(--chu-mem);
+}
+.pu-nh > .pu-nh-ds {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1px;
+}
+
+/* Dòng bấm được. `min-height: 44px` là số TUYỆT ĐỐI chứ không rem: đây là kích
+   thước ngón tay, không phải kích thước chữ, nên nó không được co theo cỡ chữ
+   của chế độ xem. */
+.pu-nh-muc > summary {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.3rem 0.45rem;
+  border-radius: var(--bo-nho);
+  cursor: pointer;
+  list-style: none;
+  /* DÍNH ở mép trên khung cuộn của popup: mở một mục ra thì thân bài dài hơn
+     màn hình, mà đây là đường DUY NHẤT để thu lại và quay về danh sách (không
+     có JS thì không đặt được nút «quay lại» ở cuối). Nền phải đục, nếu không
+     chữ bên dưới chạy xuyên qua. */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--mat);
+}
+.pu-nh-muc > summary::-webkit-details-marker {
+  display: none;
+}
+/* Hai trạng thái dưới đây phải CHỒNG màu nhấn lên nền đục, không thay nền.
+   `--lop-hover` và `--lop-brand-nhe` đều là màu TRONG SUỐT (rgba / color-mix
+   với transparent). Gán thẳng chúng vào `background` của một dòng đang dính thì
+   dòng mất nền đục và chữ thân bài chạy xuyên qua — đo được trên ảnh chụp thật
+   lúc cuộn 300px, không cổng nào bắt. Lớp gradient đặc chỉ để làm nền màu. */
+.pu-nh-muc > summary:hover {
+  background:
+    linear-gradient(var(--lop-hover), var(--lop-hover)),
+    var(--mat);
+}
+.pu-nh-muc[open] > summary {
+  background:
+    linear-gradient(var(--lop-brand-nhe), var(--lop-brand-nhe)),
+    var(--mat);
+}
+.pu-nh-muc > summary::after {
+  content: "▸";
+  margin-left: auto;
+  color: var(--chu-nhat);
+}
+.pu-nh-muc[open] > summary::after {
+  content: "▾";
+}
+.pu-nh-icon {
+  flex: none;
+}
+.pu-nh-chu {
+  min-width: 0;
+}
+.pu-nh-ten {
+  display: block;
+  font-size: var(--co-sm);
+  font-weight: var(--dam-manh);
+  line-height: 1.3;
+  color: var(--chu);
+}
+.pu-nh-phu {
+  display: block;
+  font-size: var(--co-2xs);
+  line-height: 1.35;
+  color: var(--chu-nhat);
+}
+/* Popup đầy đủ của mục đang mở, thụt vào để thấy rõ nó thuộc dòng nào. */
+.pu-nh-day {
+  margin: 0.3rem 0 0.5rem 0.6rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--vien-nhan);
 }

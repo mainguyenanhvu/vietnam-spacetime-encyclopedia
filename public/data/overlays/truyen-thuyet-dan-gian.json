@@ -1,6 +1,6 @@
 {
   "ghi_chu": "Sóng 11: văn học dân gian gắn với địa danh cụ thể trên bản đồ — sự tích, truyền thuyết, thần thoại, cổ tích, ca dao, tục ngữ. Nguồn: cổng thông tin tỉnh/huyện, báo Đảng bộ tỉnh, Cục Di sản văn hóa, Sở VHTTDL, Giáo hội Phật giáo VN, TTXVN — không dùng Wikipedia hay trang tổng hợp thương mại. Một số địa danh đã sáp nhập địa giới hành chính 2025, dia_diem ghi cả tên cũ trong ngoặc để tra cứu.",
-  "ngay_cap_nhat": "2026-08-27",
+  "ngay_cap_nhat": "2026-08-28",
   "sources": [
     "Xem nguồn chi tiết trong từng mục (nguon[])",
     "VnExpress — https://vnexpress.net",
@@ -86,7 +86,8 @@
       "trang_thai": "reviewed",
       "nguon": [
         "Hai Phong News (haiphongnews.gov.vn) — Danh thắng Núi Voi - Những giá trị lịch sử văn hóa dân gian độc đáo — https://haiphongnews.gov.vn/vn/du-lich/danh-thang-nui-voi-nhung-gia-tri-lich-su-van-hoa-dan-gian-doc-dao-ct680.html"
-      ]
+      ],
+      "loi_trich": "Đứng trên đỉnh núi ta thề\nKhông giết được giặc không về núi Voi.\n— Lời thề của đội du kích Núi Voi, dẫn theo Hai Phong News (haiphongnews.gov.vn)"
     },
     {
       "id": "su-tich-dau-chan-khong-lo-nui-cau",
@@ -705,7 +706,8 @@
       "nguon": [
         "Ban Quản lý Di tích Danh thắng Ngũ Hành Sơn — https://nguhanhson.org/news/tong-quan/vi-tri-dac-diem-dia-chat-quan-the-ngu-hanh-son/"
       ],
-      "trang_thai": "reviewed"
+      "trang_thai": "reviewed",
+      "loi_trich": "Phù nhất thiên nhiên dĩ tiên ngũ hành hải đảo,\nNhất thiên niên hậu, vi ngũ hành nhất danh sơn.\n(Một ngàn năm về trước Ngũ Hành Sơn là một hải đảo, một ngàn năm về sau đến bây giờ Ngũ Hành Sơn là một danh thắng.)\n— Văn bia tại chùa Linh Ứng, dẫn theo Ban Quản lý Di tích Danh thắng Ngũ Hành Sơn"
     },
     {
       "id": "tt-hon-chong-nha-trang",
@@ -970,7 +972,8 @@
       "trang_thai": "draft",
       "nguon": [
         "Cổng thông tin điện tử Ủy ban Nhà nước về người Việt Nam ở nước ngoài (scov.gov.vn) — Sự tích chùa Thiên Mụ — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/su-tich-chua-thien-mu.html"
-      ]
+      ],
+      "loi_trich": "Bao giờ cạn nước Đồng Nai\nNát chùa Thiên Mụ mới sai tấc lòng.\n— Ca dao, dẫn theo Cổng TTĐT Uỷ ban Nhà nước về người Việt Nam ở nước ngoài"
     },
     {
       "id": "su-tich-den-ba-de-do-son",
@@ -1151,6 +1154,379 @@
       "nguon": [
         "Cổng thông tin điện tử UBND phường Rạch Giá, tỉnh An Giang (rachgia.angiang.gov.vn) — Lịch sử hình thành thành phố Rạch Giá — https://rachgia.angiang.gov.vn/lich-su-hinh-thanh-thanh-pho-rach-gia"
       ]
+    },
+    {
+      "id": "su-tich-ho-nui-coc-thai-nguyen",
+      "ten": "Sự tích hồ Núi Cốc (chàng Cốc – nàng Công)",
+      "lon": 105.65,
+      "lat": 21.57,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết cổ, không rõ niên đại",
+      "mo_ta": "Dân gian vùng Đại Từ kể chàng Cốc, trai nghèo đốn củi thổi sáo giỏi, yêu nàng Công — con gái nhà Quan Lang giàu có, hát hay múa giỏi. Cha nàng ngăn cản, chia lìa đôi lứa. Chàng Cốc sầu nhớ hóa thành quả núi, mắt vẫn hướng về nơi người yêu; nàng Công khóc thương tan thành dòng nước chảy mãi tìm về núi Cốc — thành sông Công. Cụm ba cây thông gần hồ gắn thêm một tích tình yêu ngang trái khác, được Ngọc Hoàng hóa phép thành ba cây, hai hình nam một hình nữ.",
+      "dia_diem": "Hồ Núi Cốc, huyện Đại Từ, tỉnh Thái Nguyên",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Công an Nhân dân điện tử (cand.vn) — Hồ Núi Cốc, động 3 cây thông và huyền thoại tình yêu — https://cand.vn/van-hoa/24-19-8-Ho-Nui-Coc-dong-3-cay-thong-va-huyen-thoai-tinh-yeu-i443848/"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-go-thap-muoi-dong-thap",
+      "ten": "Truyền thuyết Gò Tháp Mười (mười ngôi tháp)",
+      "lon": 105.85,
+      "lat": 10.55,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết dân gian, không rõ niên đại",
+      "mo_ta": "Dân gian Đồng Tháp Mười truyền tụng vùng đất từng có mười ngôi tháp cổ, gắn với mười đời quốc vương xây tháp làm nơi an nghỉ — từ đó địa danh «Tháp Mười» hình thành, gọi trại thành tên gọi cả vùng Đồng Tháp Mười rộng lớn. Một dị bản khác cho rằng đây là ngôi tháp thứ mười tính từ đất Lục Chân Lạp cũ xuống. Khảo cổ tại Gò Tháp phát hiện dấu tích văn hóa Óc Eo hơn 1.500 năm cùng nhiều nền gạch tháp cổ, phần nào củng cố truyền thuyết mười tháp.",
+      "dia_diem": "Khu di tích Gò Tháp, xã Tháp Mười, tỉnh Đồng Tháp",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Cần Thơ Online — Gò Tháp Mười - Truyền thuyết và lịch sử — https://baocantho.com.vn/go-thap-muoi-truyen-thuyet-va-lich-su-a20279.html"
+      ],
+      "ghi_chu_bien_tap": "Không nhầm với các mục khảo cổ/di tích Gò Tháp đã có ở lớp khác (nếu có) — mục này chỉ ghi phần truyền thuyết dân gian về tên gọi, không phải hồ sơ khảo cổ học."
+    },
+    {
+      "id": "truyen-thuyet-son-tinh-thuy-tinh-ba-vi",
+      "ten": "Truyền thuyết Sơn Tinh trị thủy ở núi Ba Vì",
+      "lon": 105.37,
+      "lat": 21.09,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết thời Hùng Vương, không rõ niên đại",
+      "mo_ta": "Lĩnh Nam Chích Quái chép Sơn Tinh (Tản Viên Sơn Thánh) sinh trong gia đình nghèo, mồ côi cha, được bà Ma Thị Cao Sơn — thần cai quản núi Tản Viên — cưu mang, giao coi cả vùng đất từ núi Tản đến Nghĩa Lĩnh. Ngài dùng gậy thần «đầu sinh đầu tử» trừ thú dữ, cứu sống con trai vua Thủy Tề, rồi kết duyên cùng công chúa Ngọc Hoa, con gái Hùng Vương thứ 18 — khởi nguồn cuộc tranh vợ với Thủy Tinh dẫn tới trận đại hồng thủy dâng nước đánh núi mỗi năm trong dân gian truyền tụng. Huyện Ba Vì hiện có hơn 100 di tích thờ Đức Thánh Tản, riêng cụm đền Thượng – Trung – Hạ neo trực tiếp vào tích trị thủy này.",
+      "dia_diem": "Cụm đền Thượng – Trung – Hạ thờ Tản Viên Sơn Thánh, xã Ba Vì – Minh Quang, huyện Ba Vì, TP Hà Nội",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hóa và Thể thao TP Hà Nội (scov.gov.vn) — Tín ngưỡng thờ Tản Viên Sơn Thánh ở Ba Vì — https://scov.gov.vn/ban-sac-van-hoa/tin-nguong-tho-tan-vien-son-thanh-o-ba-vi.html",
+        "Lĩnh Nam Chích Quái — Truyện Tản Viên Sơn thần"
+      ],
+      "ghi_chu_bien_tap": "Nhân vật Tản Viên Sơn Thánh đã có mục riêng ở lớp huyen-su-khai-quoc.json (id tan-vien-son-thanh, neo vào đền Và, Sơn Tây) — mục này KHÁC vai: ghi phần tích truyện Sơn Tinh–Thủy Tinh trị thủy, neo vào cụm đền Thượng–Trung–Hạ trên chính núi Ba Vì, nơi tích truyện diễn ra."
+    },
+    {
+      "id": "truyen-thuyet-cu-lao-may-vinh-long",
+      "ten": "Sự tích cù lao Mây (Vân Châu)",
+      "lon": 105.9,
+      "lat": 9.98,
+      "loai": "su-tich-dia-danh",
+      "nam_hien_thi": "truyền tụng gắn sự kiện cuối thế kỷ 18",
+      "mo_ta": "Tương truyền cuối thế kỷ 18, khi bị quân Tây Sơn truy đuổi, Nguyễn Ánh nhìn từ xa thấy một vùng đất nổi lên giữa sông như áng mây là đà trên mặt nước, bèn ghé vào ẩn náu — từ đó vùng đất được gọi là Vân Châu (cù lao Mây theo âm Hán Việt), dần trở thành tên gọi dân gian quen thuộc. Các làng cổ Phú Mỹ, Hậu Thạnh, Long Hưng trên cù lao hình thành từ đầu thế kỷ 19.",
+      "dia_diem": "Cù lao Mây, xã Lục Sỹ Thành, tỉnh Vĩnh Long",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Vĩnh Long điện tử — Cù lao Mây: Từ dấu ấn khẩn hoang đến địa linh của miền sông nước — https://baovinhlong.com.vn/nhip-song-dong-bang/202507/cu-lao-may-tu-dau-an-khan-hoang-den-dia-linh-cua-mien-song-nuoc-34d0353/"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-ca-ong-ly-son",
+      "ten": "Truyền thuyết cá Ông (thần Nam Hải) ở Lý Sơn",
+      "lon": 109.11,
+      "lat": 15.38,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền tụng khoảng 300 năm nay, không rõ niên đại chính xác",
+      "mo_ta": "Ngư dân Lý Sơn truyền tụng cá Ông (cá voi), tôn xưng là Ngài Nam Hải, nhiều lần rẽ sóng cứu thuyền chài gặp bão giông. Có lần Ngài dạt vào bờ mang thương tích nặng, trước khi lụy còn dùng sức tàn nhảy lên khỏi mặt nước, phun cột nước cao cả trăm mét. Đảo hiện có 13 lăng, miếu thờ cá Ông; lớn nhất là Lăng Tân (còn gọi lăng thờ Đồng Đình Đại Vương) — nơi lưu giữ bộ xương cá voi lớn nhất Việt Nam.",
+      "dia_diem": "Lăng Tân (lăng Đồng Đình Đại Vương), xã An Vĩnh, huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Công an TP Đà Nẵng (cadn.com.vn) — Đến Lý Sơn nghe truyền thuyết cá voi cứu người — https://cadn.com.vn/den-ly-son-nghe-truyen-thuyet-ca-voi-cuu-nguoi-post130800.html"
+      ]
+    },
+    {
+      "id": "su-tich-nui-voi-thanh-hoa-voi-hoa-da",
+      "ten": "Sự tích núi Voi (voi nghĩa quân Bà Triệu hóa đá)",
+      "lon": 105.75,
+      "lat": 19.78,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "gắn thời khởi nghĩa Bà Triệu, năm 248",
+      "mo_ta": "Dân gian xứ Thanh kể khi Bà Triệu dấy binh chống quân Đông Ngô năm 248, một con voi chiến của nghĩa quân đã quỳ xuống, phủ phục thân mình chắn lối quân giặc, rồi hóa thành đá để bảo vệ đoàn quân. Ngọn núi mang hình con voi phục từ đó có tên núi Voi — biểu tượng cho lòng dũng cảm và tinh thần bất khuất của nghĩa quân Bà Triệu.",
+      "dia_diem": "Phường Quảng Phú, TP Thanh Hóa, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Văn Hóa Online (baovanhoa.vn) — Huyền tích núi Voi và hòn Vọng Phu – biểu tượng ngàn năm xứ Thanh — https://baovanhoa.vn/van-hoa/nui-voi-hon-vong-phu-khi-da-ke-chuyen-ngan-nam-xu-thanh-166456.html"
+      ]
+    },
+    {
+      "id": "su-tich-hon-vong-phu-nui-nhoi",
+      "ten": "Sự tích hòn Vọng Phu núi Nhồi",
+      "lon": 105.72,
+      "lat": 19.77,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết cổ, không rõ niên đại",
+      "mo_ta": "Trên đỉnh núi Nhồi (núi An Hoạch) có khối đá cao chừng 20 mét mang hình dáng một người phụ nữ bồng con, ánh mắt dõi ra phía biển. Truyền thuyết kể người vợ ôm con đứng đợi chồng đi xa mãi không về, cuối cùng hóa thành đá, trở thành biểu tượng lòng thủy chung, son sắt. Hòn Vọng Phu được công nhận Di tích Quốc gia năm 1992; núi bị sạt lở năm 2022, tỉnh Thanh Hóa phê duyệt 13,6 tỷ đồng để bảo tồn năm 2025.",
+      "dia_diem": "Núi Nhồi (núi An Hoạch), phường Hạc Thành, TP Thanh Hóa, tỉnh Thanh Hóa",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Văn Hóa Online (baovanhoa.vn) — Huyền tích núi Voi và hòn Vọng Phu – biểu tượng ngàn năm xứ Thanh — https://baovanhoa.vn/van-hoa/nui-voi-hon-vong-phu-khi-da-ke-chuyen-ngan-nam-xu-thanh-166456.html"
+      ],
+      "ghi_chu_bien_tap": "Việt Nam có nhiều tích Vọng Phu khác nhau ở nhiều tỉnh — đây là dị bản riêng gắn với núi Nhồi, Thanh Hóa, không liên quan đến tích Vọng Phu ở Lạng Sơn (đã có trong CSDL, id tt-nang-to-thi-lang-son) hay các tranh cãi về Đá Bia (Phú Yên)."
+    },
+    {
+      "id": "su-tich-suoi-nong-binh-chau",
+      "ten": "Sự tích suối nước nóng Bình Châu",
+      "lon": 107.48,
+      "lat": 10.57,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết dân gian, không rõ niên đại",
+      "mo_ta": "Chuyện xưa kể một đôi vợ chồng trẻ sống hạnh phúc bên nhau; người chồng theo tiếng chim lạ vào núi, bị cảnh đẹp và bóng mỹ nữ mê hoặc nên quên đường về, quên cả vợ. Người vợ ở nhà bên chảo nước sôi chờ chồng mang thức ăn về; hay tin chồng phụ bạc, nàng phẫn uất hất đổ chảo nước sôi như lời thề đoạn tuyệt. Chảo nước ấy đổ ra tạo thành mạch suối nước nóng tuôn chảy đến ngày nay.",
+      "dia_diem": "Khu suối nước nóng Bình Châu, xã Bình Châu (huyện Xuyên Mộc cũ), tỉnh Bà Rịa – Vũng Tàu",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hóa và Thể thao TP Hà Nội (scov.gov.vn) — Giải mã bí ẩn dòng suối nóng nhất Việt Nam — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/giai-ma-bi-an-dong-suoi-nong-nhat-viet-nam.html"
+      ],
+      "ghi_chu_bien_tap": "Trang nguồn ghi nhầm huyện 'Bình Xuyên' — theo địa lý thực tế suối nóng Bình Châu thuộc xã Bình Châu, huyện Xuyên Mộc cũ (đã sửa lại tên huyện đúng trong dia_diem, không theo nguyên văn lỗi của nguồn)."
+    },
+    {
+      "id": "su-tich-to-nghe-trong-doi-tam",
+      "ten": "Sự tích tổ nghề trống Đọi Tam",
+      "lon": 105.95,
+      "lat": 20.55,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "gắn năm 986",
+      "mo_ta": "Tương truyền năm 986, khi vua Lê Đại Hành về làng làm lễ Tịch điền khuyến nông, hai anh em Nguyễn Đức Năng và Nguyễn Đức Bản đã tự tay làm một chiếc trống lớn để đón vua. Từ đó nghề làm trống hình thành và được dân làng gìn giữ, truyền qua nhiều thế hệ hơn nghìn năm cho tới nay. Nghề làm trống Đọi Tam được đưa vào Danh mục Di sản văn hóa phi vật thể quốc gia theo Quyết định 4608/QĐ-BVHTTDL ngày 20/12/2019.",
+      "dia_diem": "Làng Đọi Tam, xã Đọi Sơn, huyện Duy Tiên cũ, tỉnh Hà Nam",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Trống Đọi Tam: Huyền thoại một thời — https://danviet.vn/trong-doi-tam-huyen-thoai-mot-thoi-20201229200645642-d925773.html"
+      ],
+      "ghi_chu_bien_tap": "Khác vai với lớp lễ hội — «Lễ hội Tịch điền Đọi Sơn» đã có sẵn (id le-hoi-tich-dien-doi-son); mục này ghi riêng sự tích khai sinh nghề làm trống, không phải lễ hội tịch điền."
+    },
+    {
+      "id": "truyen-thuyet-lang-biang-lam-dong",
+      "ten": "Truyền thuyết Lang Biang (chàng K'Lang – nàng H'Biang)",
+      "lon": 108.44,
+      "lat": 12.05,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết dân tộc K'Ho, không rõ niên đại",
+      "mo_ta": "Truyền thuyết người K'Ho kể chàng K'Lang (người Lát) và nàng H'Biang (người Chil) yêu nhau say đắm nhưng bị luật tục hai bộ tộc ngăn cấm vì mối hiềm khích giữa các dòng họ. Không thể chia lìa, đôi trẻ ngồi bên nhau trên đỉnh núi giữa mưa gió cho đến khi qua đời. Cảm động trước sự hy sinh của con gái, cha nàng H'Biang đứng ra hợp nhất ba tộc người Lát, Chil, Sré thành người K'Ho, xóa bỏ hiềm khích, cho phép các tộc thông hôn. Hai đỉnh núi liền kề nơi đôi tình nhân an nghỉ được gọi là núi Ông – núi Bà, hợp thành tên Lang Biang.",
+      "dia_diem": "Núi Lang Biang, xã Lát, huyện Lạc Dương cũ, tỉnh Lâm Đồng",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đắk Lắk điện tử — Lang Biang - vùng đất huyền thoại — https://baodaklak.vn/channel/3624/201011/lang-biang-vung-dat-huyen-thoai-1967542/"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-ong-dung-99-nui-hong-linh",
+      "ten": "Truyền thuyết ông Đùng xếp núi Hồng Lĩnh",
+      "lon": 105.71,
+      "lat": 18.53,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết thời khai thiên lập địa, không rõ niên đại",
+      "mo_ta": "Thuở khai thiên lập địa, vùng đất Nghệ – Tĩnh núi non ngổn ngang chưa thành hình. Ông Đùng ngỏ lời cầu hôn bà Đùng; bà thách ông phải xếp đủ một trăm quả núi trước khi gà gáy sáng thì mới ưng thuận. Ông Đùng miệt mài kéo xếp từng ngọn núi, quên cả ăn ngủ, xếp được 99 ngọn liền một dải. Bà Đùng sốt ruột giả tiếng gà gáy, ông Đùng tưởng trời đã sáng nên bỏ dở, để lại một quả núi lẻ loi bên bờ bắc sông Lam — nay là núi Quyết. Từ đó dãy Hồng Lĩnh mang đúng 99 ngọn núi, còn gọi Ngàn Hống, một trong chín ngọn núi khắc trên Cửu Đỉnh ở Huế.",
+      "dia_diem": "Dãy núi Hồng Lĩnh, thị xã Hồng Lĩnh, tỉnh Hà Tĩnh",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Thanh Niên — Những ngọn núi thiêng: Ngàn Hống - Nơi lưu dấu tổ tiên Hồng Lạc — https://thanhnien.vn/nhung-ngon-nui-thieng-ngan-hong-noi-luu-dau-to-tien-hong-lac-185240927224740705.htm"
+      ],
+      "ghi_chu_bien_tap": "Ngọn núi lẻ (núi Quyết) nằm về phía Nghệ An chứ không phải Hà Tĩnh — mục vẫn neo tọa độ ở dãy Hồng Lĩnh, Hà Tĩnh vì đây là nơi 99 ngọn núi chính tọa lạc, đúng theo mô tả nguồn."
+    },
+    {
+      "id": "truyen-thuyet-thac-yaly",
+      "ten": "Truyền thuyết thác Yaly (nước mắt nàng H'Ly)",
+      "lon": 107.85,
+      "lat": 14.23,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết người Gia Rai, không rõ niên đại",
+      "mo_ta": "Theo tiếng Gia Rai, tên thác Yaly gắn với nước mắt của nàng H'Ly, con gái một trưởng làng. Nàng yêu chàng Rốc, nhưng chàng ra đi vượt dòng Sê San và không bao giờ trở lại. Nàng H'Ly khóc thương người yêu cho đến khi qua đời; dòng nước mắt của nàng hóa thành dòng thác đổ mãi không ngừng, người đời gọi là thác Yaly.",
+      "dia_diem": "Thác Yaly (Ialy), sông Sê San, ranh giới huyện Sa Thầy (Kon Tum) và huyện Chư Păh (Gia Lai)",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đài Hà Nội (hanoionline.vn) — Truyện ngắn 'Truyền thuyết Yaly' (Trung Trung Đỉnh) — https://hanoionline.vn/truyen-ngan-truyen-thuyet-yaly-trung-trung-dinh--186024.htm"
+      ],
+      "ghi_chu_bien_tap": "Nhiều trang du lịch (không tính là nguồn hợp lệ) kể thêm chi tiết chàng Y Rít, cuộc thi tài bắt hổ — các chi tiết đó KHÔNG có trong nguồn nhà nước đã tự mở (Đài Hà Nội), nên không đưa vào mo_ta, chỉ giữ cốt truyện đã xác nhận được. Thác nay đã ngập trong lòng hồ thủy điện Yaly (khởi công 1993)."
+    },
+    {
+      "id": "truyen-thuyet-linh-son-thanh-mau-nui-ba-den",
+      "ten": "Sự tích núi Bà Đen — dị bản Lý Thị Thiên Hương (Tây Ninh)",
+      "lon": 106.17,
+      "lat": 11.38,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết thời Nguyễn, không rõ niên đại chính xác",
+      "mo_ta": "Đây là dị bản phổ biến nhất về tên núi Bà Đen, lưu truyền song song với một dị bản khác của người S'tiêng kể về hai chị em Bà Lom – Bà Giêng. Theo dị bản này, Lý Thị Thiên Hương, con quan trấn nhậm vùng Trảng Bàng, đã hứa hôn cùng Lê Sĩ Triệt. Một lần bị kẻ xấu vây bắt định làm nhục, nàng chống cự quyết liệt để giữ trọn tiết hạnh rồi gieo mình xuống vực sâu tử tiết. Sau khi mất, bà nhiều lần hiển linh giúp đỡ dân lành; vua Gia Long sắc phong bà là Linh Sơn Thánh Mẫu. Vì sinh thời có nước da ngăm đen, dân gian gọi thân thương là Bà Đen — từ đó ngọn núi mang tên núi Bà Đen.",
+      "dia_diem": "Núi Bà Đen, TP Tây Ninh, tỉnh Tây Ninh",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hóa và Thể thao TP Hà Nội (scov.gov.vn) — Truyền thuyết về Bà Linh Sơn Thánh Mẫu Núi Bà Đen – Tây Ninh — https://scov.gov.vn/dat-nuoc-con-nguoi/truyen-thuyet-ve-ba-linh-son-thanh-mau-nui-ba-den-tay-ninh.html"
+      ],
+      "ghi_chu_bien_tap": "CSDL đã có một dị bản khác về núi Bà Đen (id su-tich-nui-ba-ra-chi-em-ba-den — truyền thuyết người S'tiêng về hai chị em Bà Lom – Bà Giêng). Đây là dị bản phổ biến nhất, gắn với nhân vật Lý Thị Thiên Hương thời Nguyễn — cả hai dị bản đều lưu truyền song song, không dị bản nào loại trừ dị bản kia, đúng tinh thần bất biến #4 của dự án (nêu chỗ vênh, không chọn bản gọn hơn)."
+    },
+    {
+      "id": "truyen-thuyet-cong-chua-po-sah-inu",
+      "ten": "Truyền thuyết công chúa Po Sah Inư",
+      "lon": 108.1136,
+      "lat": 10.9308,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết Chăm cổ, không rõ niên đại",
+      "mo_ta": "Po Sah Inư là công chúa Chăm tài sắc vẹn toàn, theo đạo Bà-la-môn, đem lòng yêu chàng Pôchok theo đạo Bà-ni. Vì khác biệt tôn giáo, đôi lứa không thể kết duyên; nghe lời khuyên vua cha, công chúa từ bỏ mối tình, trở về giúp vua cha xây dựng cơ nghiệp. Bà có công dạy dân cách ứng xử, nghề đánh cá, làm gốm, dệt vải; khi mất được nhân dân thần thánh hóa, lập đền thờ tại chân tháp.",
+      "dia_diem": "Tháp Po Sah Inư, đồi Bà Nài, phường Phú Hài, TP Phan Thiết, tỉnh Bình Thuận",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hóa và Thể thao TP Hà Nội (scov.gov.vn) — Huyền bí tháp Po Sah Inư – Bình Thuận — https://scov.gov.vn/dat-nuoc-con-nguoi/huyen-bi-thap-po-sah-inu-binh-thuan.html"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-thien-y-a-na-thap-ba-ponagar",
+      "ten": "Truyền thuyết Thiên Y A Na – Tháp Bà Ponagar",
+      "lon": 109.1945,
+      "lat": 12.266,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết Chăm cổ, không rõ niên đại",
+      "mo_ta": "Mộc bản triều Nguyễn (Đại Nam nhất thống chí) chép truyền thuyết một nàng tiên giáng xuống núi Đại Điền, được một cặp vợ chồng già nhận nuôi. Sau khi bị mắng, nàng nhập vào khúc gỗ hương trôi ra biển Bắc, được một thái tử vớt được rồi cưới làm vợ, sinh hai con. Về sau nàng trở lại phương Nam dạy dân trồng lúa, nuôi tằm, dệt vải, may vá, rồi bay về trời. Dân gian suy tôn bà là Thiên Y A Na, tin bà nhiều lần hiển linh giúp đỡ nhân dân trên núi Cù Lao. Lễ hội Tháp Bà Ponagar (20–23 tháng Ba Âm lịch) được công nhận Di sản văn hóa phi vật thể quốc gia năm 2012.",
+      "dia_diem": "Tháp Bà Ponagar, đồi Cù Lao, bên sông Cái, TP Nha Trang, tỉnh Khánh Hòa",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Trung tâm Lưu trữ quốc gia IV — Mộc bản triều Nguyễn (mocban.vn) — Truyền thuyết Tháp Bà Ponagar Nha Trang — https://mocban.vn/truyen-thuyet-thap-ba-ponagar-nha-trang/"
+      ]
+    },
+    {
+      "id": "su-tich-thac-tri-an-dong-nai",
+      "ten": "Sự tích thác Trị An (Sora Đina – Điểu Du)",
+      "lon": 107.03,
+      "lat": 11.09,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết dân gian người Mạ – Chơro, không rõ niên đại",
+      "mo_ta": "Điểu Du, con gái tộc trưởng Chơro Điểu Lôi, giỏi phóng lao; Sora Đina, con tộc trưởng Mạ ở hạ nguồn, nổi tiếng thiện xạ. Hai người gặp nhau, yêu nhau rồi nên duyên theo luật tục hai tộc. Thầy mo Sang Mô đem lòng yêu Điểu Du nhưng không được đáp lại nên sinh oán hận, bắt đôi vợ chồng trẻ thả trôi sông; cả hai chết tại con thác cuối cùng của dòng Đồng Nai. Sang My, em gái Sang Mô, hy sinh tính mạng cứu sống đứa con trai của họ. Cảm động trước tấm lòng của Sang My, hai vị tộc trưởng Mạ và Chơro tha chết cho Sang Mô, đặt tên thác là Tri Ân — sau này người đời đọc trại thành Trị An.",
+      "dia_diem": "Thác Trị An (nay ngập trong lòng hồ Trị An), huyện Vĩnh Cửu cũ, tỉnh Đồng Nai",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đồng Nai điện tử — Hùng vĩ thác Trị An xưa (dẫn 'Truyện dân gian Đồng Nai' của Huỳnh Văn Tới) — https://baodongnai.com.vn/vanhoa/201808/hung-vi-thac-tri-an-xua-2907203/"
+      ],
+      "ghi_chu_bien_tap": "Thác nguyên bản nay đã ngập dưới lòng hồ thủy điện Trị An (hình thành thập niên 1980) — địa điểm ghi theo vị trí thác cũ trên sông Đồng Nai, huyện Vĩnh Cửu."
+    },
+    {
+      "id": "truyen-thuyet-ong-trong-thong-ba-cay-re-con-son",
+      "ten": "Truyền thuyết «Ông trồng thông, bà cấy rễ» ở Côn Sơn",
+      "lon": 106.38,
+      "lat": 21.16,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "gắn thời điểm Trần Nguyên Đán về ở ẩn, năm 1385",
+      "mo_ta": "Tương truyền khi quan Tư đồ Trần Nguyên Đán (ông ngoại Nguyễn Trãi) về làm ẩn sĩ ở Côn Sơn từ năm 1385, ngày ngày cụ ông trồng thông trên núi Côn Sơn, còn cụ bà cấy cây rễ phủ khắp vùng đất hoang sơ dưới chân núi. Trải hàng trăm năm, công sức của đôi vợ chồng hình thành nên rừng thông xanh mướt và cánh đồng cây rễ nên thơ, trở thành một trong những cảnh sắc đặc trưng của Côn Sơn ngày nay.",
+      "dia_diem": "Khu bãi cây rễ và rừng thông Côn Sơn, khu dân cư Tiên Sơn, phường Cộng Hòa, TP Chí Linh, tỉnh Hải Dương",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Dân Việt — Nơi nông dân Hải Dương biến truyền thuyết 'Ông trồng thông, bà cấy rễ' thành khu du lịch đẹp mê hồn — https://danviet.vn/noi-nong-dan-hai-duong-bien-truyen-thuyet-ong-trong-thong-ba-cay-re-thanh-khu-du-lich-dep-me-hon-20221124161850068.htm"
+      ],
+      "ghi_chu_bien_tap": "Địa điểm trùng khu vực với «Lễ hội Côn Sơn – Kiếp Bạc» đã có ở lớp lễ hội (id con-son-kiep-bac) — mục này khác vai, chỉ ghi riêng truyền thuyết dân gian về nguồn gốc rừng thông, không phải lễ hội."
+    },
+    {
+      "id": "truyen-thuyet-ba-chua-thac-bo",
+      "ten": "Truyền thuyết Bà Chúa Thác Bờ",
+      "lon": 105.13,
+      "lat": 20.83,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "gắn thời khởi nghĩa Lam Sơn, thế kỷ 15",
+      "mo_ta": "Đền thờ hai nữ tướng: Đinh Thị Vân, người Mường, và một nữ tướng người Dao không rõ tên. Tương truyền dưới thời vua Lê Lợi dấy binh đánh quân Minh, hai bà giúp dân và nghĩa quân vận chuyển lương thực, thuyền bè vượt qua ghềnh thác Bờ hiểm trở để tiến đánh giặc ở vùng Tây Bắc. Sau khi mất, hai bà thường hiển linh giúp thuyền bè qua thác an toàn; triều đình giao đất cho hai bà cai quản, dân trong vùng được chỉ dạy ổn định đời sống, sản xuất nông nghiệp. Động Thác Bờ trong quần thể đền được công nhận Di tích danh lam thắng cảnh cấp quốc gia năm 2009.",
+      "dia_diem": "Đền Chúa Thác Bờ, xã Vầy Nưa, huyện Đà Bắc cũ, tỉnh Hòa Bình",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "VietnamPlus (Thông tấn xã Việt Nam) — Khám phá đền Chúa Thác Bờ: Không gian linh thiêng hòa quyện với vẻ đẹp hoang sơ — https://www.vietnamplus.vn/kham-pha-den-chua-thac-bo-khong-gian-linh-thieng-hoa-quyen-voi-ve-dep-hoang-so-post965994.vnp"
+      ],
+      "ghi_chu_bien_tap": "Đền có hai phần thờ ở hai xã khác nhau (Thung Nai, huyện Cao Phong cũ và Vầy Nưa, huyện Đà Bắc cũ) theo một nguồn khác chưa tự mở — mục này neo theo xã Vầy Nưa, nơi nguồn đã mở trực tiếp xác nhận."
+    },
+    {
+      "id": "su-tich-ten-goi-go-cong",
+      "ten": "Sự tích tên gọi Gò Công",
+      "lon": 106.67,
+      "lat": 10.36,
+      "loai": "su-tich-dia-danh",
+      "nam_hien_thi": "địa danh học dân gian, không rõ niên đại",
+      "mo_ta": "Dân gian truyền tụng tên gọi Gò Công bắt nguồn từ một gò đất cao ráo, nơi có nhiều chim công về làm tổ, sinh sôi nảy nở qua nhiều thế hệ — những lưu dân thuở khai hoang chọn vùng đất cao này để lập làng, từ đó thành tên gọi Gò Công. Vùng đất Gò Công sau này gắn liền với phong trào kháng Pháp của Trương Công Định và Thủ Khoa Huân, nhờ địa thế sông rạch chằng chịt, rừng đước rậm rạp thuận lợi cho chiến tranh du kích.",
+      "dia_diem": "TP Gò Công và các huyện Gò Công Đông, Gò Công Tây, Tân Phú Đông, tỉnh Tiền Giang",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — Kỳ thú chuyện về vùng đất linh thiêng Gò Công — https://baophapluat.vn/ky-thu-chuyen-ve-vung-dat-linh-thieng-go-cong-post291477.html"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-dao-con-co-dong-loi-reng",
+      "ten": "Truyền thuyết đảo Cồn Cỏ và động Lòi Reng",
+      "lon": 107.34,
+      "lat": 17.17,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết dân gian vùng Vĩnh Linh, không rõ niên đại",
+      "mo_ta": "Dân gian vùng Vĩnh Linh kể một người khổng lồ tên Thồ Lồ được giao việc đào đất đắp núi. Gánh đất quá nặng khiến đòn gánh gãy đôi, hai sọt đất văng ra hai hướng: một sọt rơi trên đất liền tạo thành động Lòi Reng, sọt kia rơi xuống biển tạo thành đảo Cồn Cỏ. Đòn gánh gãy hóa thành cầu vồng nối trời đất, còn dấu chân ông để lại tạo nên các giếng nước trong vùng. Truyền thuyết phản ánh khát vọng chinh phục thiên nhiên buổi khai canh lập làng và sự cộng cư, hòa nhập giữa hai cộng đồng Chăm – Việt trên đất Quảng Trị xưa.",
+      "dia_diem": "Đảo Cồn Cỏ và động Lòi Reng, vùng Vĩnh Linh (các xã Vĩnh Thủy, Vĩnh Nam, Vĩnh Lâm), tỉnh Quảng Trị",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Tạp chí điện tử Thế giới Di sản — Giải mã truyền thuyết về đảo Cồn Cỏ và động Lòi Reng — http://thegioidisan.vn/vi/giai-ma-truyen-thuyet-ve-dao-con-co-va-dong-loi-reng.html"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-nui-mat-quy-quy-mon-quan",
+      "ten": "Truyền thuyết núi Mặt Quỷ (Quỷ Môn Quan)",
+      "lon": 106.5,
+      "lat": 21.67,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết cổ, gắn các trận thắng năm 981 và 1427",
+      "mo_ta": "Trên triền núi ở Ải Chi Lăng có hình thù kỳ lạ giống một khuôn mặt quái vật — hai hốc mắt, sống mũi lồi lõm màu nâu đỏ — suốt hàng nghìn năm không cây cỏ nào mọc được, nên xưa gọi là Quỷ Môn Quan (cửa mặt quỷ). Dân gian tin ngọn núi mặt quỷ này chứng kiến và trấn giữ những chiến thắng quan trọng của dân tộc chống giặc phương Bắc, từ trận Lê Hoàn phá quân Tống năm 981 đến các trận đánh quân Minh năm 1427. Quân giặc khiếp sợ nơi này, truyền tụng câu «đi qua cửa ải Quỷ Môn, mười người đi thì chỉ có một người quay lại». Với người dân địa phương, núi mặt quỷ lại là biểu tượng bảo vệ, ban phước lành cho làng bản.",
+      "dia_diem": "Núi Mặt Quỷ, thôn Quán Thanh, xã Chi Lăng, huyện Chi Lăng cũ, tỉnh Lạng Sơn (trong Khu di tích Ải Chi Lăng)",
+      "do_tin_cay_toa_do": "trung-binh",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Pháp luật Việt Nam — Truyền thuyết về núi Mặt Quỷ nơi Ải Chi Lăng — https://baophapluat.vn/truyen-thuyet-ve-nui-mat-quy-noi-ai-chi-lang-post456391.html"
+      ]
+    },
+    {
+      "id": "su-tich-chua-chuong-pho-hien",
+      "ten": "Sự tích chùa Chuông (Kim Chung Tự)",
+      "lon": 106.06,
+      "lat": 20.65,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết dân gian, không rõ niên đại",
+      "mo_ta": "Tương truyền trong một trận lũ lớn, một khúc gỗ mang theo quả chuông vàng rất đẹp trôi theo dòng nước, qua nhiều nơi mà không dừng lại. Đến thôn Nhân Dục, dân làng tìm cách kéo chuông vào bờ nhưng không được, chỉ đến khi các bô lão trong chùa ra thỉnh mới đưa được chuông về chùa. Dân làng coi đó là báu vật trời ban, cùng nhau góp công dựng gác chuông, từ đó chùa mang tên Kim Chung Tự — chùa Chuông. Chùa được xếp hạng Di tích kiến trúc nghệ thuật quốc gia năm 1992, là một trong những di tích tiêu biểu của quần thể Di tích quốc gia đặc biệt Phố Hiến.",
+      "dia_diem": "Chùa Chuông, thôn Nhân Dục, phường Hiến Nam, TP Hưng Yên, tỉnh Hưng Yên",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Đài Tiếng nói Việt Nam - VOV World (vovworld.vn) — Cổ kính Chùa Chuông - Phố Hiến — https://vovworld.vn/vi-VN/viet-nam-dat-nuoc-con-nguoi/co-kinh-chua-chuong-pho-hien-604065.vov"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-con-hen-hue",
+      "ten": "Truyền thuyết Cồn Hến",
+      "lon": 107.6,
+      "lat": 16.47,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "gắn thời chúa Nguyễn Phúc Khoát (thế kỷ 18)",
+      "mo_ta": "Tương truyền một bà chúa từ xã Diên Đại, trong lần du ngoạn trên sông Hương thời chúa Nguyễn Phúc Khoát, phát hiện một cồn cát nổi lên giữa dòng, mến cảnh đẹp nên kết duyên cùng một người họ Nguyễn rồi dựng chòi sinh sống trên cồn. Đôi vợ chồng trồng rau quả, sống hòa thuận cùng chim muông đến đầu bạc răng long. Cồn có hình dáng như trái tim, được ví như «hòn đảo tình yêu», và cũng là nơi sản sinh hai sản vật tiến vua nổi tiếng: hến và ngô — sơn hào hải vị của triều đình Huế.",
+      "dia_diem": "Cồn Hến, giữa sông Hương (hạ lưu, nơi hợp lưu hai nhánh Đan Điền – Kim Trà), TP Huế",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Sở Văn hóa và Thể thao TP Hà Nội (scov.gov.vn) — Kỳ bí Cồn Hến — https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/ky-bi-con-hen.html"
+      ]
+    },
+    {
+      "id": "truyen-thuyet-dinh-ban-co-son-tra",
+      "ten": "Truyền thuyết đỉnh Bàn Cờ và bãi Tiên Sa (Sơn Trà)",
+      "lon": 108.28,
+      "lat": 16.12,
+      "loai": "truyen-thuyet",
+      "nam_hien_thi": "truyền thuyết cổ, ghi lại trong sách thời Lê trung hưng",
+      "mo_ta": "Sử gia Lê Quý Đôn từng ghi chép núi Sơn Trà, dân gian còn gọi Hòn Nghê, tương truyền có ngọc trên núi tỏa sáng ra tận biển ban đêm; các tiên nữ thường xuống bãi biển dưới chân núi tắm nên nơi đó gọi là bãi Tiên Sa. Trên đỉnh núi, hai vị tiên ông ngồi đánh cờ nhiều ngày không phân thắng bại; một hôm mải nhìn các tiên nữ đùa giỡn dưới biển mà thua cuộc, vị tiên tức giận đá văng bàn cờ xuống biển rồi bay về trời. Người đời dựng tượng Đế Thích ngồi cạnh tảng đá hình bàn cờ trên đỉnh núi, từ đó gọi là đỉnh Bàn Cờ.",
+      "dia_diem": "Đỉnh Bàn Cờ, bán đảo Sơn Trà, TP Đà Nẵng",
+      "do_tin_cay_toa_do": "cao",
+      "trang_thai": "draft",
+      "nguon": [
+        "Báo Đà Nẵng điện tử — Đỉnh Bàn Cờ - Đà Nẵng — https://baodanang.vn/du-lich-da-nang/diem-den/201410/dinh-ban-co-da-nang-2364017/index.htm"
+      ],
+      "ghi_chu_bien_tap": "Bài báo nhắc 'ghi chép của Lê Quý Đôn' nhưng không nêu rõ tên tác phẩm cụ thể (có thể là Phủ Biên Tạp Lục) — không khẳng định tên sách trong mo_ta để tránh gán sai nguồn."
     }
   ]
 }

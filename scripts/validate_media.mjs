@@ -88,8 +88,25 @@ if (existsSync(BAN_DO)) {
     if (!b.ten || !b.tac_gia) fail(w, "thiếu ten/tac_gia");
     if (!b.mo_ta) fail(w, "thiếu mo_ta");
     if (!NHOM.has(b.nhom)) fail(w, `nhom "${b.nhom}" không thuộc {${[...NHOM].join("|")}}`);
-    if (b.anh && !/^https:\/\/upload\.wikimedia\.org\//.test(b.anh))
-      fail(w, "ảnh phải nằm trên upload.wikimedia.org (CSP chặn host khác)");
+    // Hai host được phép, khớp đúng `img-src` trong index.html. Thêm host ở
+    // đây mà quên CSP thì ảnh chết câm: không lỗi build, không lỗi cổng, chỉ
+    // là một ô trống trên trang.
+    const laCommons = /^https:\/\/upload\.wikimedia\.org\//.test(b.anh ?? "");
+    const laGallica = /^https:\/\/gallica\.bnf\.fr\/iiif\/ark:\/12148\//.test(b.anh ?? "");
+    if (b.anh && !laCommons && !laGallica)
+      fail(w, "ảnh phải nằm trên upload.wikimedia.org hoặc gallica.bnf.fr/iiif (CSP chặn host khác)");
+    // Điều khoản Gallica (đọc nguyên văn 2026-09-19 tại
+    // gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica):
+    // «La réutilisation non commerciale de ces contenus est libre et gratuite
+    //  dans le respect de la législation en vigueur et notamment du maintien de
+    //  la mention de source des contenus telle que précisée ci-après :
+    //  "Source gallica.bnf.fr / Bibliothèque nationale de France"».
+    // Ghi công là ĐIỀU KIỆN của giấy phép, không phải phép lịch sự — nên nó là
+    // cổng, không phải quy ước. Bỏ quên một dòng ghi công là dùng sai giấy phép.
+    if (laGallica && !/Source gallica\.bnf\.fr \/ Biblioth[eè]que nationale de France/.test(b.anh_nguon ?? ""))
+      fail(w, "ảnh Gallica phải có anh_nguon chứa đúng chuỗi ghi công BnF bắt buộc");
+    if (laGallica && !/[?&]|\/full\/\d+,\/0\/native\.jpg$/.test(b.anh ?? ""))
+      fail(w, "ảnh Gallica phải trỏ bản IIIF có khai bề rộng (…/full/<rộng>,/0/native.jpg) — bản full nặng hàng chục MB");
     if (!b.anh && !b.anh_ghi_chu)
       fail(w, "không có ảnh thì phải ghi anh_ghi_chu nói rõ bản gốc ở đâu");
     if (!Array.isArray(b.nguon) || !b.nguon.length) fail(w, "thiếu nguon[]");

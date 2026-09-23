@@ -3,6 +3,7 @@
   "id": "khoi-nghia-ba-trieu-248",
   "ten": "Khởi nghĩa Bà Triệu 248",
   "nam": 248,
+  "thoi_gian": "Năm 248 (Mậu Thìn)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Triệu Thị Trinh (Bà Triệu), Triệu Quốc Đạt",
   "doi_thu": "Nhà Ngô (tướng Lục Dận)",
@@ -11,168 +12,367 @@
     "thanh-hoa"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "Quân số có tới hàng vạn người khi thế lực lên mạnh",
+      "don_vi": [
+        "Bà Triệu tự xưng Nhuỵ Kiều tướng quân, chỉ huy toàn quân sau khi Triệu Quốc Đạt tử trận",
+        "Anh em họ Lý — Lý Hoằng Công, Lý Mỹ Công, Lý Thành Công — cùng chỉ huy xây hệ thống đồn luỹ ở Bồ Điền"
+      ],
+      "vu_khi": [
+        "Voi chiến — mỗi khi ra trận Bà Triệu thường cưỡi voi, đi guốc ngà, mặc áo giáp vàng, chít khăn vàng",
+        "Hệ thống đồn luỹ vững chắc dựa vào địa hình hiểm yếu vùng Bồ Điền",
+        "Tuyến phòng thủ từ vùng núi ra cửa biển Thần Phù"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "8.000 quân tiếp viện do Lục Dận đem sang, cộng với lực lượng đô hộ tại chỗ",
+      "don_vi": [
+        "Lục Dận — Thứ sử Giao Châu kiêm chức Hiệu uý"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
+      "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924"
+    ]
+  },
+  "ton_that": {
+    "ta": "Trên toàn tuyến phòng thủ phía bắc đã diễn ra khoảng 30 trận giao chiến. Quân Ngô hơn hẳn về tổ chức và vũ khí; lực lượng nghĩa quân còn non trẻ, suy yếu dần rồi tan vỡ trước đạo binh lớn hơn gấp bội.",
+    "doi_thu": "Các thành ấp của quân Ngô ở Cửu Chân lần lượt bị hạ, Thứ sử Châu Giao bị giết. Cuộc tấn công vào Cửu Chân kéo dài hơn hai tháng mà căn cứ Bồ Điền vẫn đứng vững, khiến lực lượng giặc tổn thất nặng nề và Lục Dận phải điều thêm binh sĩ tăng cường bao vây.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
+      "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          450
-        ],
-        [
-          400,
-          500
-        ],
-        [
-          700,
-          460
-        ]
+        [158, 182],
+        [258, 152],
+        [358, 182]
       ],
-      "nhan": "Vùng núi Nưa – núi Tùng (Thanh Hóa)"
+      "nhan": "Ngàn Nưa"
     },
     {
-      "kieu": "duong",
+      "kieu": "song",
       "diem": [
-        [
-          850,
-          60
-        ],
-        [
-          600,
-          200
-        ],
-        [
-          450,
-          350
-        ]
+        [118, 302],
+        [280, 286],
+        [440, 302]
       ],
-      "nhan": "Đường tiến quân đàn áp của Lục Dận"
+      "nhan": "Sông Chu"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [178, 402],
+        [380, 386],
+        [582, 406],
+        [762, 392]
+      ],
+      "nhan": "Sông Mã"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [560, 182],
+        [652, 156],
+        [742, 184]
+      ],
+      "nhan": "Núi Tùng Sơn"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [1000, 58],
+        [882, 100],
+        [900, 540],
+        [1000, 560]
+      ],
+      "nhan": "Biển Đông"
     }
   ],
   "phan_tu": [
     {
-      "id": "co-ta-nui-nua",
-      "kieu": "co",
-      "ben": "ta",
-      "x": 150,
-      "y": 420,
-      "nhan": "Cờ khởi nghĩa núi Nưa"
-    },
-    {
-      "id": "quan-ta-ba-trieu",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 255,
-      "y": 541,
-      "nhan": "Bà Triệu, Triệu Quốc Đạt chỉ huy nghĩa quân"
-    },
-    {
-      "id": "mui-lan-rong",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        250,
-        460
-      ],
-      "den": [
-        550,
-        430
-      ],
-      "nhan": "Uy thế lan khắp Cửu Chân – Giao Chỉ – Nhật Nam"
-    },
-    {
-      "id": "quan-dich-luc-dan",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 770,
-      "y": 200,
-      "nhan": "Đại quân Lục Dận (nhà Ngô)"
-    },
-    {
-      "id": "mui-dich-tien",
-      "kieu": "mui-ten",
-      "ben": "dich",
-      "tu": [
-        700,
-        220
-      ],
-      "den": [
-        500,
-        380
-      ],
-      "nhan": "Tiến đánh đàn áp"
-    },
-    {
-      "id": "quan-ta-cuoi-voi",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 420,
-      "y": 400,
-      "nhan": "Bà Triệu cưỡi voi chiến đấu"
-    },
-    {
-      "id": "nui-tung",
+      "id": "quan-yen",
       "kieu": "dia-danh",
-      "x": 550,
-      "y": 500,
-      "nhan": "Núi Tùng"
+      "x": 218,
+      "y": 98,
+      "nhan": "Quân Yên — quê Bà Triệu"
     },
     {
-      "id": "co-tuan-tiet",
-      "kieu": "co",
+      "id": "nui-nua",
+      "kieu": "cong-su",
+      "x": 258,
+      "y": 226,
+      "nhan": "Căn cứ Ngàn Nưa",
+      "quy_mo": "Mài gươm, luyện võ, tích lương"
+    },
+    {
+      "id": "trieu-quoc-dat",
+      "kieu": "quan",
       "ben": "ta",
-      "x": 620,
-      "y": 460,
-      "nhan": "Bà Triệu tuẫn tiết"
+      "x": 132,
+      "y": 246,
+      "nhan": "Triệu Quốc Đạt"
+    },
+    {
+      "id": "ba-trieu",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 396,
+      "y": 250,
+      "nhan": "Bà Triệu",
+      "quy_mo": "Nhuỵ Kiều tướng quân, cưỡi voi ra trận"
+    },
+    {
+      "id": "thanh-tu-pho",
+      "kieu": "thanh",
+      "ben": "dich",
+      "x": 430,
+      "y": 344,
+      "nhan": "Thành Tư Phố",
+      "quy_mo": "Cơ quan đầu não chính quyền đô hộ"
+    },
+    {
+      "id": "mui-danh-tu-pho",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [320, 268],
+      "den": [408, 322],
+      "nhan": "Đánh hạ Tư Phố"
+    },
+    {
+      "id": "mui-huong-nam",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [428, 378],
+      "den": [326, 478],
+      "nhan": "Hướng thứ nhất xuống phía nam"
+    },
+    {
+      "id": "cac-huyen-phia-nam",
+      "kieu": "dia-danh",
+      "x": 274,
+      "y": 512,
+      "nhan": "Trạm Ngô · Tòng Nguyên · Thường Lạc"
+    },
+    {
+      "id": "mui-huong-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [468, 322],
+      "den": [590, 296],
+      "nhan": "Hướng thứ hai ra Bồ Điền"
+    },
+    {
+      "id": "bo-dien",
+      "kieu": "cong-su",
+      "x": 626,
+      "y": 302,
+      "nhan": "Căn cứ Bồ Điền",
+      "quy_mo": "Hệ thống đồn luỹ vững chắc"
+    },
+    {
+      "id": "anh-em-ho-ly",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 700,
+      "y": 372,
+      "nhan": "Anh em họ Lý",
+      "quy_mo": "Lý Hoằng Công · Lý Mỹ Công · Lý Thành Công"
+    },
+    {
+      "id": "phong-tuyen-than-phu",
+      "kieu": "cong-su",
+      "x": 794,
+      "y": 216,
+      "nhan": "Tuyến phòng thủ ra cửa Thần Phù"
+    },
+    {
+      "id": "luc-dan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 948,
+      "y": 268,
+      "nhan": "Lục Dận",
+      "quy_mo": "Thứ sử Giao Châu, 8.000 quân tiếp viện"
+    },
+    {
+      "id": "mui-thuy-bac",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [884, 232],
+      "den": [706, 268],
+      "nhan": "Mũi từ Tạc Khẩu ngược sông Lèn"
+    },
+    {
+      "id": "lach-truong",
+      "kieu": "dia-danh",
+      "x": 862,
+      "y": 432,
+      "nhan": "Cửa Lạch Trường"
+    },
+    {
+      "id": "mui-thuy-nam",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [846, 400],
+      "den": [688, 336],
+      "nhan": "Mũi đường biển đánh phía nam"
+    },
+    {
+      "id": "noi-tuan-tiet",
+      "kieu": "dia-danh",
+      "x": 552,
+      "y": 122,
+      "nhan": "Nơi Bà Triệu tuẫn tiết"
+    },
+    {
+      "id": "chau-giao",
+      "kieu": "dia-danh",
+      "x": 520,
+      "y": 490,
+      "nhan": "Châu Giao chấn động"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Dấy binh khởi nghĩa ở núi Nưa",
-      "mo_ta": "Năm 248, Bà Triệu cùng anh Triệu Quốc Đạt tập hợp nghĩa quân, dựng cờ khởi nghĩa chống ách đô hộ nhà Ngô.",
+      "tieu_de": "Ách đô hộ nhà Ngô — cống nạp vơ vét",
+      "thoi_gian": "Nửa đầu thế kỷ 3",
+      "dia_danh": "Cửu Chân · Giao Chỉ",
+      "mo_ta": "Sau khi triều Đông Hán sụp đổ năm 220, Trung Quốc hình thành thế cục tam quốc. Dưới ách thống trị của nhà Ngô, nhân dân ta bị áp bức khắc nghiệt: cùng với các loại thuế, bọn cai trị còn đòi cống nạp đủ thứ sản vật quý hiếm như ngọc trai, ngọc lưu ly, đồi mồi, ngà voi, hương thơm; mùa nào thức ấy còn phải nộp chuối tiêu, dứa, nhãn để cung đốn cho quan lại. Chế độ bóc lột ấy làm tài sản người Việt ngày càng kiệt quệ, đời sống ngày càng điêu đứng.",
       "hien": [
-        "co-ta-nui-nua",
-        "quan-ta-ba-trieu"
+        "thanh-tu-pho",
+        "chau-giao"
+      ],
+      "nguon": [
+        "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924",
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Làm chủ vùng Cửu Chân",
-      "mo_ta": "Nghĩa quân nhanh chóng đánh chiếm nhiều thành ấp, làm chủ cả vùng Cửu Chân (Thanh Hóa ngày nay).",
+      "tieu_de": "Chí lớn từ tuổi mười chín — tụ nghĩa trên đỉnh núi Nưa",
+      "thoi_gian": "Khoảng năm 245 – 248",
+      "dia_danh": "Quân Yên · Ngàn Nưa",
+      "mo_ta": "Triệu Thị Trinh sinh ngày 2 tháng 10 năm 226 tại miền núi Quân Yên, quận Cửu Chân, trong một gia đình hào trưởng. Từ nhỏ bà đã tỏ chí khí hơn người; khi cha hỏi về chí hướng mai sau, bà thưa rằng lớn lên sẽ đi đánh giặc như bà Trưng Trắc, Trưng Nhị. Họ hàng khuyên lấy chồng, bà khảng khái từ chối bằng câu nói còn truyền tới nay. Từ năm 19 tuổi, bà cùng anh là Triệu Quốc Đạt tập hợp nghĩa sĩ trên đỉnh núi Nưa, ngày đêm mài gươm, luyện tập võ nghệ, chuẩn bị lương thảo.",
       "hien": [
-        "co-ta-nui-nua",
-        "quan-ta-ba-trieu",
-        "mui-lan-rong"
+        "quan-yen",
+        "nui-nua",
+        "ba-trieu",
+        "trieu-quoc-dat"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Uy thế lan rộng, nhà Ngô cử đại quân đàn áp",
-      "mo_ta": "Cuộc khởi nghĩa lan rộng, khiến quan lại đô hộ khiếp sợ; nhà Ngô phải cử tướng Lục Dận đem đại quân sang đàn áp.",
+      "tieu_de": "Năm 248 khởi nghĩa bùng nổ — hạ thành Tư Phố",
+      "thoi_gian": "Năm 248",
+      "dia_danh": "Ngàn Nưa · thành Tư Phố",
+      "mo_ta": "Cuộc khởi nghĩa bùng nổ năm 248, được nhân dân quận Cửu Chân hưởng ứng nhiệt liệt. Bà làm hịch truyền đi khắp nơi, kể tội nhà Ngô và kêu gọi mọi người đứng dậy đánh đuổi quân Ngô. Từ vùng núi rừng Ngàn Nưa, nghĩa quân tràn xuống tấn công thành Tư Phố — nơi đặt cơ quan đầu não của chính quyền đô hộ — và mau chóng giành thắng lợi trọn vẹn, khiến chính quyền đô hộ không kịp trở tay, trở nên hoảng loạn.",
       "hien": [
-        "mui-lan-rong",
-        "quan-dich-luc-dan",
-        "mui-dich-tien"
+        "nui-nua",
+        "ba-trieu",
+        "trieu-quoc-dat",
+        "mui-danh-tu-pho",
+        "thanh-tu-pho"
+      ],
+      "nguon": [
+        "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924",
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Bà Triệu cưỡi voi chiến đấu",
-      "mo_ta": "Bà Triệu đích thân cưỡi voi ra trận, chỉ huy nghĩa quân chiến đấu ngoan cường trước thế giặc mạnh.",
+      "tieu_de": "Chia hai hướng, dựng căn cứ Bồ Điền",
+      "thoi_gian": "Năm 248",
+      "dia_danh": "Bồ Điền (Triệu Lộc, Hậu Lộc) · các huyện phía nam",
+      "mo_ta": "Sau khi chiếm được Tư Phố, Bà Triệu chia quân thành hai hướng. Hướng thứ nhất tiến xuống giải phóng các huyện Trạm Ngô, Tòng Nguyên, Thường Lạc. Hướng thứ hai tiến ra vùng Bồ Điền, hợp quân với ba anh em họ Lý, đánh chiếm các huyện phía bắc. Vùng Bồ Điền có đủ yếu tố cho cả công lẫn thủ: từ đây có thể ngược sông Lèn, sông Âu ra sông Mã rút lên mạn Quân Yên hoặc về căn cứ núi Nưa lúc cần, lại có thể chủ động tấn công ra phía bắc theo lối Thần Phù để khống chế địch.",
       "hien": [
-        "quan-ta-cuoi-voi",
-        "quan-dich-luc-dan",
-        "mui-dich-tien"
+        "mui-huong-nam",
+        "cac-huyen-phia-nam",
+        "mui-huong-bac",
+        "bo-dien",
+        "anh-em-ho-ly",
+        "phong-tuyen-than-phu"
+      ],
+      "nguon": [
+        "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924",
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Tuẫn tiết trên núi Tùng",
-      "mo_ta": "Trước thế giặc quá mạnh, nghĩa quân tan vỡ; Bà Triệu tuẫn tiết trên núi Tùng để giữ khí tiết, trở thành biểu tượng bất khuất của dân tộc.",
+      "tieu_de": "Châu Giao chấn động — Bà Triệu lên làm chủ tướng",
+      "thoi_gian": "Năm 248",
+      "dia_danh": "Cửu Chân · Giao Chỉ · Cửu Đức · Nhật Nam",
+      "mo_ta": "Thanh thế nghĩa quân ngày càng lớn, khắp hai quận Cửu Chân và Giao Chỉ nhân dân một lòng hưởng ứng. Các thành ấp của giặc Ngô ở Cửu Chân lần lượt bị hạ; cuộc khởi nghĩa lan ra Giao Chỉ, vào tận Cửu Đức và Nhật Nam. Thứ sử Châu Giao bị giết, quan lại đô hộ hết sức hoảng sợ. Khi Triệu Quốc Đạt tử trận, Bà Triệu lãnh đạo toàn bộ quân khởi nghĩa, tự xưng Nhuỵ Kiều tướng quân; nghĩa quân đánh liên tiếp nhiều trận, quân số có tới hàng vạn người.",
       "hien": [
-        "nui-tung",
-        "co-tuan-tiet"
+        "chau-giao",
+        "ba-trieu",
+        "bo-dien",
+        "anh-em-ho-ly"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Nhà Ngô cử Lục Dận đem 8.000 quân sang đàn áp",
+      "thoi_gian": "Năm 248",
+      "dia_danh": "Giao Châu",
+      "mo_ta": "Quân Ngô ở miền Cửu Chân không đủ sức phá nổi nghĩa quân, nên vua Ngô phải cử viên danh tướng Lục Dận làm Thứ sử Giao Châu kiêm chức Hiệu uý, đem thêm 8.000 quân sang nước ta đàn áp phong trào. Đến đất Giao Châu, Lục Dận một mặt ra sức trấn áp nhân dân, mặt khác dùng thủ đoạn xảo quyệt đem của cải, tiền bạc mua chuộc một vài thủ lĩnh địa phương nhằm ổn định Giao Chỉ trước, rồi mới tập trung lực lượng tấn công Cửu Chân.",
+      "hien": [
+        "luc-dan",
+        "chau-giao",
+        "bo-dien"
+      ],
+      "nguon": [
+        "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924",
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Hai mũi thuỷ đánh vào Cửu Chân — Bồ Điền cầm cự hơn hai tháng",
+      "thoi_gian": "Năm 248",
+      "dia_danh": "Tạc Khẩu · sông Lèn · cửa Lạch Trường · Bồ Điền",
+      "mo_ta": "Ổn định được Giao Chỉ, Lục Dận đem toàn bộ lực lượng tấn công Cửu Chân theo hai đường thuỷ: một mũi từ Tạc Khẩu qua hành lang Hoàng Cương – Chính Đại – Bạch Ác ngược sông Lèn vây bức phía bắc, một mũi theo đường biển vòng qua sông Sung và Vích, tức cửa Lạch Trường, đánh vào phía nam. Bà Triệu cùng nghĩa quân chặn đánh giặc từ các cửa biển Thần Phù, Lạch Trường; trên toàn tuyến phòng thủ phía bắc đã diễn ra khoảng 30 trận giao chiến. Cuộc tấn công kéo dài hơn hai tháng mà căn cứ Bồ Điền vẫn đứng vững.",
+      "hien": [
+        "luc-dan",
+        "mui-thuy-bac",
+        "lach-truong",
+        "mui-thuy-nam",
+        "bo-dien",
+        "phong-tuyen-than-phu"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
+        "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Rút về núi Tùng — «Sinh vi tướng, tử vi thần»",
+      "thoi_gian": "Năm Mậu Thìn 248 — hai nguồn chép hai ngày",
+      "dia_danh": "Núi Tùng (Triệu Lộc, Hậu Lộc)",
+      "mo_ta": "Lục Dận tập trung lực lượng tấn công vào các doanh trại nghĩa quân. Quân Ngô hơn hẳn về tổ chức và vũ khí, quân khởi nghĩa suy yếu dần rồi tan vỡ. Bà Triệu và nghĩa quân chiến đấu dũng cảm phá vòng vây, rút về núi Tùng; trong trận quyết chiến cuối cùng, bà quỳ vái trời đất rồi rút gươm tự vẫn. Ngày mất được chép khác nhau: Bảo tàng Lịch sử Quốc gia và Sở VHTTDL Thanh Hoá ghi ngày 22 tháng 2 năm Mậu Thìn, còn Cục Di sản Văn hoá ghi ngày 22 tháng Tám năm Mậu Thìn, khi bà mới tròn 23 tuổi — sa đồ nêu cả hai.",
+      "hien": [
+        "noi-tuan-tiet",
+        "ba-trieu",
+        "bo-dien",
+        "luc-dan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
+        "Cục Di sản Văn hoá — Khu di tích Bà Triệu — https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-khu-di-tich-ba-trieu-1237"
       ]
     }
   ],
@@ -182,26 +382,40 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Ngoại kỷ",
     "SGK Lịch sử 6 — NXB Giáo dục Việt Nam",
-    "Cục Di sản văn hóa — Khu di tích Bà Triệu (dsvh.gov.vn)"
+    "Cục Di sản văn hóa — Khu di tích Bà Triệu (dsvh.gov.vn)",
+    "Bảo tàng Lịch sử Quốc gia — Cuộc khởi nghĩa của Triệu Thị Trinh — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
+    "Sở VHTTDL Thanh Hoá — Khởi nghĩa Bà Triệu, bài 1 — https://svhttdl.thanhhoa.gov.vn/van-hoa/khoi-nghia-ba-trieu-dau-moc-choi-loi-tren-chang-duong-dau-tranh-dung-nuoc-va-giu-nuoc-cua-dan-toc-viet-nam-bai-1-mot-su-kien-lich-su-hao-hung-va-bi-trang-1006924"
   ],
   "trich_van_tich": [
+    {
+      "sach": "Lời Triệu Thị Trinh đáp cha khi còn nhỏ (Bảo tàng Lịch sử Quốc gia dẫn, không nêu tên bộ sử cụ thể)",
+      "doan": "lớn lên con sẽ đi đánh giặc như bà Trưng Trắc, Trưng Nhị",
+      "nguon_trich": "Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
+      "buoc": 2
+    },
     {
       "sach": "Lời Bà Triệu khi từ chối lấy chồng (Bảo tàng Lịch sử quốc gia dẫn, không nêu tên bộ sử cụ thể)",
       "doan": "Tôi chỉ muốn cưỡi cơn gió mạnh, đạp luồng sóng dữ, chém cá trường kình ở biển Đông, lấy lại giang sơn, dựng nền độc lập, cởi ách nô lệ, chứ đâu chịu khom lưng làm tì thiếp cho người.",
       "nguon_trich": "Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
-      "buoc": 1
+      "buoc": 2
+    },
+    {
+      "sach": "Cùng câu nói ấy, bản dẫn của Cục Di sản Văn hoá",
+      "doan": "Tôi muốn cưỡi cơn gió mạnh, đạp luồng sóng dữ, chém cá trường kình ở biển Đông, đánh đuổi quân Ngô giành lại giang sơn, cởi ách nô lệ, chứ không chịu khom lưng làm tỳ thiếp cho người!",
+      "nguon_trich": "Cục Di sản Văn hoá — https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-khu-di-tich-ba-trieu-1237",
+      "buoc": 2
     },
     {
       "sach": "Sử nhà Ngô (Bảo tàng Lịch sử quốc gia dẫn, không nêu tên bộ sử cụ thể)",
       "doan": "toàn thể Châu Giao đều chấn động",
       "nguon_trich": "Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
-      "buoc": 3
+      "buoc": 5
     },
     {
       "sach": "Lời Bà Triệu vái trời đất trên núi Tùng trước khi tuẫn tiết (nghĩa: Sống làm tướng, chết làm thần)",
       "doan": "Sinh vi tướng, tử vi thần",
       "nguon_trich": "Bảo tàng Lịch sử quốc gia — https://baotanglichsu.vn/vi/Articles/3098/14281/cuoc-khoi-nghia-cua-trieu-thi-trinh.html",
-      "buoc": 5
+      "buoc": 8
     }
   ]
 }

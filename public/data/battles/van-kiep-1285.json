@@ -3,6 +3,7 @@
   "id": "van-kiep-1285",
   "ten": "Trận Vạn Kiếp 1285",
   "nam": 1285,
+  "thoi_gian": "Tháng 5 – tháng 6 năm Ất Dậu (1285)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Hưng Đạo Đại Vương Trần Quốc Tuấn",
   "doi_thu": "Quân Nguyên (Thoát Hoan, Lý Hằng)",
@@ -11,133 +12,334 @@
     "hai-phong"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": "3 vạn quân phục sẵn bên sông Vạn Kiếp, cùng 3 vạn quân đi đường Hải Dương ra Quảng Yên",
+      "don_vi": [
+        "Nguyễn Khoái và Phạm Ngũ Lão dẫn 3 vạn quân phục sẵn bên sông Vạn Kiếp",
+        "Hưng Võ Vương Nghiễn và Hưng Hiếu Vương Úy dẫn 3 vạn quân theo đường Hải Dương ra Quảng Yên, chặn đường về châu Tư Minh",
+        "Hưng Đạo Vương tự dẫn đại quân tấn công Thoát Hoan ở Bắc Giang"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Đại quân Thoát Hoan rút từ Bắc Giang về Vạn Kiếp",
+        "Cánh quân của viên tả thừa Tang-Gu-Tai",
+        "Các tướng Phàn Tiếp, A-Bát-Xích, Lý Quán, Lý Hằng"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": "Một bộ phận lớn quân giặc bị tiêu diệt ở Bắc Giang; cánh quân Tang-Gu-Tai bị phục binh đánh, xô đạp nhau chạy làm đứt cả cầu phao, ngã xuống sông chết đuối rất nhiều. Tướng Lý Hằng bị bắn chết trong lúc truy kích, Lý Quán trúng tên chết gần châu Tư Minh; Thoát Hoan chạy thoát nhờ A-Bát-Xích liều chết bảo vệ.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          1000,
-          320
-        ]
+        [120, 342],
+        [320, 302],
+        [520, 290],
+        [720, 262],
+        [930, 240]
+      ],
+      "nhan": "Sông Sách (đoạn sông Thương qua Vạn Kiếp)"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [520, 290],
+        [562, 420],
+        [602, 546]
       ],
       "nhan": "Lục Đầu Giang"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [376, 182],
+        [478, 156],
+        [578, 182]
+      ],
+      "nhan": "Dãy núi Vạn Kiếp"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [676, 332],
+        [818, 310],
+        [880, 370],
+        [740, 406],
+        [656, 382]
+      ],
+      "nhan": "Rừng phục binh"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [520, 240],
+        [682, 168],
+        [842, 112],
+        [962, 80]
+      ],
+      "nhan": "Đường về châu Tư Minh"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-co-cum",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 700,
-      "y": 250,
-      "nhan": "Thoát Hoan, Lý Hằng co cụm về Vạn Kiếp"
+      "id": "bac-giang",
+      "kieu": "dia-danh",
+      "x": 196,
+      "y": 418,
+      "nhan": "Bắc Giang"
     },
     {
-      "id": "quan-ta-tran-quoc-tuan",
+      "id": "quan-thoat-hoan",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 300,
+      "y": 474,
+      "nhan": "Thoát Hoan",
+      "quy_mo": "Đại quân co cụm"
+    },
+    {
+      "id": "hung-dao-vuong",
       "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 350,
-      "nhan": "Trần Quốc Tuấn dẫn đại quân"
+      "x": 146,
+      "y": 524,
+      "nhan": "Hưng Đạo Vương",
+      "quy_mo": "Tự dẫn đại quân"
     },
     {
-      "id": "mui-vay-danh",
+      "id": "mui-tan-cong-bac-giang",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        420,
-        330
-      ],
-      "den": [
-        650,
-        270
-      ],
-      "nhan": "Vây đánh Vạn Kiếp"
+      "tu": [188, 492],
+      "den": [280, 456],
+      "nhan": "Tấn công ở Bắc Giang"
     },
     {
-      "id": "thuyen-dich-chim",
-      "kieu": "thuyen",
+      "id": "van-kiep",
+      "kieu": "thanh",
       "ben": "dich",
-      "x": 750,
-      "y": 200,
-      "nhan": "Hàng trăm chiến thuyền bị đánh chìm"
+      "x": 452,
+      "y": 356,
+      "nhan": "Vạn Kiếp"
     },
     {
-      "id": "quan-dich-ly-hang-tu-tran",
-      "kieu": "quan",
+      "id": "cau-phao",
+      "kieu": "cong-su",
+      "x": 528,
+      "y": 248,
+      "nhan": "Cầu phao vượt sông Sách"
+    },
+    {
+      "id": "mui-vuot-song",
+      "kieu": "mui-ten",
       "ben": "dich",
-      "x": 800,
-      "y": 150,
-      "nhan": "Lý Hằng tử trận"
+      "tu": [468, 324],
+      "den": [524, 274],
+      "nhan": "Vượt sông tháo chạy"
     },
     {
-      "id": "co-thoat-hoan-chay",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 600,
-      "y": 120,
-      "nhan": "Thoát Hoan chui ống đồng trốn thoát"
-    },
-    {
-      "id": "dan-binh-dia-phuong",
+      "id": "phuc-binh-nguyen-khoai",
       "kieu": "quan",
       "ben": "ta",
-      "x": 500,
-      "y": 430,
-      "nhan": "Dân binh sông nước địa phương hỗ trợ"
+      "x": 716,
+      "y": 386,
+      "nhan": "Nguyễn Khoái · Phạm Ngũ Lão",
+      "quy_mo": "3 vạn quân phục sẵn bên sông"
+    },
+    {
+      "id": "mui-phuc-binh",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [682, 352],
+      "den": [566, 278],
+      "nhan": "Phục binh đổ ra đánh"
+    },
+    {
+      "id": "quan-tang-gu-tai",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 628,
+      "y": 206,
+      "nhan": "Cánh quân Tang-Gu-Tai"
+    },
+    {
+      "id": "cau-phao-dut",
+      "kieu": "cong-su",
+      "x": 512,
+      "y": 172,
+      "nhan": "Cầu phao đứt, quân chết đuối"
+    },
+    {
+      "id": "hai-con-hung-dao",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 872,
+      "y": 208,
+      "nhan": "Hưng Võ Vương Nghiễn · Hưng Hiếu Vương Úy",
+      "quy_mo": "3 vạn quân, đường Hải Dương ra Quảng Yên"
+    },
+    {
+      "id": "mui-giang-ro",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [864, 176],
+      "den": [934, 122],
+      "nhan": "Giăng rọ chờ sẵn"
+    },
+    {
+      "id": "ly-hang-tu-tran",
+      "kieu": "dia-danh",
+      "x": 716,
+      "y": 140,
+      "nhan": "Lý Hằng trúng tên chết"
+    },
+    {
+      "id": "thoat-hoan-ong-dong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 812,
+      "y": 92,
+      "nhan": "Thoát Hoan chui ống đồng"
+    },
+    {
+      "id": "chau-tu-minh",
+      "kieu": "dia-danh",
+      "x": 958,
+      "y": 66,
+      "nhan": "Châu Tư Minh"
+    },
+    {
+      "id": "co-thang",
+      "kieu": "co",
+      "ben": "ta",
+      "x": 252,
+      "y": 208,
+      "nhan": "Toàn thắng"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Thoát Hoan, Lý Hằng co cụm thủy binh về Vạn Kiếp",
-      "mo_ta": "Sau các thất bại liên tiếp, cánh thủy binh của Thoát Hoan và Lý Hằng co cụm rút về Vạn Kiếp.",
+      "tieu_de": "Mất Toa Đô, Thoát Hoan bàn cách rút chạy",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Bắc Giang",
+      "mo_ta": "Tin Toa Đô bị chém ở Tây Kết và Ô Mã Nhi bỏ chạy ra biển làm Thoát Hoan cùng tướng sĩ Nguyên đều hoảng sợ, bàn cách rút về nước. Cánh quân từng vào Thăng Long với khí thế áp đảo nay phải tính đường thoát thân, trong khi hai vua Trần và Hưng Đạo Vương đã đoán biết ý đồ ấy và chuẩn bị đón sẵn trên đúng con đường chúng buộc phải đi.",
       "hien": [
-        "quan-dich-co-cum"
+        "quan-thoat-hoan",
+        "bac-giang",
+        "hung-dao-vuong"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Trần Quốc Tuấn dẫn đại quân vây đánh",
-      "mo_ta": "Hưng Đạo Đại vương Trần Quốc Tuấn dẫn đại quân vây đánh cánh thủy binh tại Vạn Kiếp.",
+      "tieu_de": "Ba mũi chặn đường rút",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Vạn Kiếp · Hải Dương · Quảng Yên",
+      "mo_ta": "Hưng Đạo Vương sai tướng Nguyễn Khoái và Phạm Ngũ Lão dẫn 3 vạn quân phục sẵn bên sông Vạn Kiếp. Hai con ông là Hưng Võ Vương Nghiễn và Hưng Hiếu Vương Úy dẫn 3 vạn quân theo đường Hải Dương ra Quảng Yên, mục đích không cho địch chạy về châu Tư Minh. Bản thân Hưng Đạo Vương tự dẫn đại quân tấn công Thoát Hoan ở Bắc Giang — ba mũi khép lại thành một cái rọ trên toàn tuyến rút chạy của giặc.",
       "hien": [
-        "quan-ta-tran-quoc-tuan",
-        "quan-dich-co-cum"
+        "phuc-binh-nguyen-khoai",
+        "hai-con-hung-dao",
+        "hung-dao-vuong",
+        "van-kiep",
+        "chau-tu-minh"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Đánh chìm hàng trăm chiến thuyền",
-      "mo_ta": "Hàng trăm chiến thuyền giặc bị đánh chìm trên sông Lục Đầu Giang.",
+      "tieu_de": "Đánh Thoát Hoan ở Bắc Giang",
+      "thoi_gian": "Tháng 5 năm 1285",
+      "dia_danh": "Bắc Giang",
+      "mo_ta": "Hưng Đạo Vương tự mình dẫn đại quân tấn công Thoát Hoan ở Bắc Giang, tiêu diệt một bộ phận lớn quân giặc. Thoát Hoan cố sống cố chết chạy về Vạn Kiếp, tưởng đã thoát thân. Đòn này vừa tiêu hao lực lượng địch, vừa dồn chúng vào đúng hướng mà hai mũi kia đang chờ — cách đánh quen thuộc của quân Trần trong cả ba lần kháng chiến: không chặn đứng ở phía trước mà lùa địch vào chỗ đã bày sẵn.",
       "hien": [
-        "quan-ta-tran-quoc-tuan",
-        "mui-vay-danh",
-        "thuyen-dich-chim"
+        "quan-thoat-hoan",
+        "hung-dao-vuong",
+        "mui-tan-cong-bac-giang",
+        "van-kiep"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Chém tướng Lý Hằng",
-      "mo_ta": "Tướng Lý Hằng tử trận trong trận đánh.",
+      "tieu_de": "Bắc cầu phao vượt sông Sách",
+      "thoi_gian": "Tháng 5 – tháng 6 năm 1285",
+      "dia_danh": "Vạn Kiếp — sông Sách",
+      "mo_ta": "Về tới Vạn Kiếp, Thoát Hoan chưa kịp hoàn hồn thì bị phục binh của ta đổ ra đánh. Quân giặc vội vã bắc cầu phao để vượt sông Sách — tức đoạn sông Thương chảy qua vùng Vạn Kiếp. Cả một đạo quân đông đảo dồn lên một lối vượt sông duy nhất, đúng vào chỗ mà 3 vạn quân của Nguyễn Khoái và Phạm Ngũ Lão đã nằm chờ từ trước bên bờ sông.",
       "hien": [
-        "quan-dich-ly-hang-tu-tran"
+        "van-kiep",
+        "cau-phao",
+        "mui-vuot-song",
+        "quan-thoat-hoan",
+        "phuc-binh-nguyen-khoai"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Thoát Hoan chui ống đồng trốn thoát",
-      "mo_ta": "Thoát Hoan phải chui vào ống đồng trốn thoát, với sự tham gia hỗ trợ của dân binh sông nước địa phương.",
+      "tieu_de": "Phục binh đổ ra — cầu phao đứt giữa dòng",
+      "thoi_gian": "Tháng 6 năm 1285",
+      "dia_danh": "Bến vượt sông Sách",
+      "mo_ta": "Cánh quân của viên tả thừa Tang-Gu-Tai chưa kịp qua sông thì bị quân mai phục của ta từ trong rừng đổ ra đánh. Chúng xô đạp nhau chạy làm đứt cả cầu phao, ngã xuống sông chết đuối rất nhiều. Đây là chỗ mà mọi ưu thế của kỵ binh Nguyên trở thành vô dụng: quân đông dồn trên một lối hẹp, phía sau là quân truy kích, phía trước là dòng sông và một cây cầu đã gãy.",
       "hien": [
-        "co-thoat-hoan-chay",
-        "dan-binh-dia-phuong"
+        "quan-tang-gu-tai",
+        "cau-phao-dut",
+        "mui-phuc-binh",
+        "phuc-binh-nguyen-khoai"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Truy kích — tướng Lý Hằng bị bắn chết",
+      "thoi_gian": "Tháng 6 năm 1285",
+      "dia_danh": "Trên đường rút về biên giới",
+      "mo_ta": "Quân ta do tướng Nguyễn Khoái chỉ huy liên tiếp truy kích giặc trên suốt chặng đường chúng chạy về biên giới. Tướng Nguyên là Lý Hằng bị bắn chết. Thoát Hoan cùng Phàn Tiếp, A-Bát-Xích, Lý Quán phải cố sức đánh mở đường máu mà chạy. Đội hình rút lui vỡ thành từng mảnh, mạnh ai nấy chạy, không còn giữ được trật tự hành quân nào.",
+      "hien": [
+        "ly-hang-tu-tran",
+        "phuc-binh-nguyen-khoai",
+        "quan-thoat-hoan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Chui ống đồng — cái rọ cuối cùng ở châu Tư Minh",
+      "thoi_gian": "Tháng 6 năm 1285",
+      "dia_danh": "Gần châu Tư Minh",
+      "mo_ta": "Bị quân ta đuổi riết, Thoát Hoan phải chui vào một cái ống đồng đặt lên xe, bắt quân lính kéo chạy về phía biên giới. Đến gần châu Tư Minh, tưởng đã thoát thân, quân giặc định nghỉ ngơi rồi đi tiếp thì lại bị Hưng Võ Vương Nghiễn và Hưng Hiếu Vương Úy giăng rọ chờ sẵn từ trước, đổ ra đánh. Lý Quán bị tên bắn chết ngay tại trận; Thoát Hoan nhờ có A-Bát-Xích liều chết bảo vệ nên chạy thoát về bên kia biên giới.",
+      "hien": [
+        "thoat-hoan-ong-dong",
+        "hai-con-hung-dao",
+        "mui-giang-ro",
+        "chau-tu-minh",
+        "co-thang"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
       ]
     }
   ],
@@ -147,13 +349,20 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Bản kỷ, Kỷ nhà Trần",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Danh tướng ngự đền Cổ Phao"
+    "Sự kiện & Nhân chứng — Báo QĐND (sknc.qdnd.vn) — Danh tướng ngự đền Cổ Phao",
+    "Bảo tàng Lịch sử Quốc gia — Trận đánh kinh động cả thế giới của người Việt — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html"
   ],
   "trich_van_tich": [
     {
       "sach": "Câu đối tại đền Kiếp Bạc",
       "doan": "Vạn Kiếp hữu sơn giai kiếm khí / Lục Đầu vô thủy bất thu thanh",
       "nguon_trich": "Báo Hải Phòng — https://baohaiphong.vn/dong-song-day-song-bai-1-van-kiep-oai-hung-369867.html"
+    },
+    {
+      "sach": "Sử biên niên của nhà sử học Ba Tư Ra-xít-út-đin, thế kỷ 13",
+      "doan": "Nước đó có vương quốc riêng, không thần phục Hãn (Vua Mông Cổ), Tu Gan (Thoát Hoan) con trai của Hãn chỉ huy đội quân để ngăn ngừa và chống lại những ai không khuất phục. Một lần Tu Gan đem quân vào nước đó, chiếm lấy các thành thị ven biển và thống trị ở đấy, nhưng bỗng nhiên xuất hiện những đội quân (Giao Chỉ) từ biển, từ rừng, từ núi, đánh tan quân Tu Gan (Thoát Hoan) đang cướp bóc, Tu Gan trốn thoát",
+      "nguon_trich": "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3096/12006/tran-djanh-kinh-djong-ca-the-gioi-cua-nguoi-viet.html",
+      "buoc": 7
     }
   ]
 }

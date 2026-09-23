@@ -1,5 +1,5 @@
 {
-  "ghi_chu": "CHỈ metadata + giới thiệu ngắn, KHÔNG chép lời bài hát (Điều 25 Luật SHTT). youtube_id trỏ tới bản nhúng youtube-nocookie đã kiểm tra công khai + cho phép nhúng (oEmbed 200, 2026-07-18). kenh_chinh_chu=false = kênh không có dấu hiệu chính chủ (giữ theo chính sách «bản hay nhất hiện có», cần soát lại khi có bản chính chủ).",
+  "ghi_chu": "CHỈ metadata + giới thiệu ngắn, KHÔNG chép lời bài hát (Điều 25 Luật SHTT). youtube_id trỏ tới bản nhúng youtube-nocookie đã kiểm tra công khai + cho phép nhúng (oEmbed 200, soát lại toàn bộ 32 mục ngày 2026-08-28). kenh_chinh_chu=true chỉ dành cho bốn nhóm: kênh của đài phát thanh - truyền hình nhà nước, kênh của nhà hát hoặc bảo tàng công lập, kênh riêng của chính nghệ sĩ hoặc hãng đĩa giữ quyền, và kênh «- Topic» do YouTube sinh từ bản thu bên giữ quyền nộp lên. Kênh tuyển tập, kênh đăng lại và kênh karaoke đều là false, dù có dấu xác minh.",
   "items": [
     {
       "id": "nguoi-ha-noi",
@@ -20,7 +20,9 @@
         "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản hòa nhạc giao hưởng Hanoi Concert 2024; video không ghi tên người hát."
     },
     {
       "id": "tien-ve-ha-noi",
@@ -32,8 +34,8 @@
       "lien_quan_tinh": [
         "ha-noi"
       ],
-      "youtube_id": "069ZqjCX2ZU",
-      "kenh_youtube": "Nhạc Hay Việt Nam",
+      "youtube_id": "dc6tdPqSTR8",
+      "kenh_youtube": "ĐÔNG HÙNG Official",
       "gioi_thieu": "Sáng tác năm 1949, năm năm trước ngày giải phóng Thủ đô (10/10/1954) — như một lời tiên đoán về đoàn quân trở về giữa cờ hoa. Nhạc sĩ Văn Cao còn là tác giả Quốc ca «Tiến quân ca».",
       "ban_quyen": "cited-excerpt",
       "nguon": [
@@ -41,7 +43,10 @@
         "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Đông Hùng",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Thay bản cũ trên kênh «Nhạc Hay Việt Nam» — kênh đăng lại, không xác minh được quyền."
     },
     {
       "id": "beo-dat-may-troi",
@@ -60,8 +65,11 @@
         "Hội Nhạc sĩ Việt Nam",
         "UNESCO — Hồ sơ Dân ca Quan họ Bắc Ninh (2009)"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Thu Huyền",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Kênh «Dân Ca Quan Họ» là kênh tuyển tập, không phải bên giữ quyền. Chưa tìm được bản trên kênh đài hoặc nhà hát công lập."
     },
     {
       "id": "nguoi-oi-nguoi-o-dung-ve",
@@ -81,7 +89,9 @@
         "UNESCO — Hồ sơ Dân ca Quan họ Bắc Ninh (2009)"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Trần Quỳnh Trang",
+      "loai_video": "hat"
     },
     {
       "id": "trong-com",
@@ -100,8 +110,11 @@
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Candy Ngọc Hà",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Kênh của BH Media — đơn vị khai thác quyền, không phải bên sáng tạo bản thu; xếp ngoài diện chính chủ."
     },
     {
       "id": "quang-binh-que-ta-oi",
@@ -113,8 +126,8 @@
       "lien_quan_tinh": [
         "quang-tri"
       ],
-      "youtube_id": "qDWuNIkiFZY",
-      "kenh_youtube": "Ca Nhạc Dân Ca",
+      "youtube_id": "k29QCVsI_vA",
+      "kenh_youtube": "Nam Giang",
       "gioi_thieu": "Ra đời năm 1964 giữa những năm chiến tranh phá hoại miền Bắc, trở thành nhạc hiệu quen thuộc của đài phát thanh Quảng Bình (nay là vùng đất thuộc tỉnh Quảng Trị hợp nhất).",
       "ban_quyen": "cited-excerpt",
       "nguon": [
@@ -122,7 +135,10 @@
         "Viện Âm nhạc Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Nam Giang",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Kênh riêng của ca sĩ, có dấu xác minh nghệ sĩ của YouTube; video không có phần giới thiệu nên không đối chiếu được tên nhạc sĩ. Thay bản cũ trên kênh «Ca Nhạc Dân Ca» — đó là liên khúc nhạc sống remix dài 47 phút."
     },
     {
       "id": "cau-ho-ben-bo-hien-luong",
@@ -134,8 +150,8 @@
       "lien_quan_tinh": [
         "quang-tri"
       ],
-      "youtube_id": "qvtXmkUbiVQ",
-      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
+      "youtube_id": "DqxQg4vkNLc",
+      "kenh_youtube": "Thu Hiền - Topic",
       "gioi_thieu": "Ca khúc về nỗi nhớ thương đôi bờ sông Bến Hải — cầu Hiền Lương, giới tuyến quân sự tạm thời chia cắt đất nước 1954–1975, nay thuộc tỉnh Quảng Trị.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
@@ -143,7 +159,10 @@
         "Bài hát Việt Nam thế kỷ XX (tuyển tập) — Viện Âm nhạc / NXB Âm nhạc"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Thu Hiền",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu «℗ 2015 Hãng Phim Trẻ». Thay bản cũ trên kênh «Nhạc Cách Mạng Tiền Chiến» — kênh đăng lại."
     },
     {
       "id": "hue-thuong",
@@ -162,7 +181,10 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Vân Khánh",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Vafaco là hãng sản xuất băng đĩa, đăng bản thu trong kho của chính mình."
     },
     {
       "id": "ai-ra-xu-hue",
@@ -180,8 +202,11 @@
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Quang Lê · Ngọc Hạ",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu của Thúy Nga Paris By Night — hãng tư nhân ở nước ngoài. Chưa tìm được bản trên kênh đài trong nước."
     },
     {
       "id": "chao-em-co-gai-lam-hong",
@@ -202,7 +227,9 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Dương Đức",
+      "loai_video": "hat"
     },
     {
       "id": "nguoi-con-gai-song-la",
@@ -213,15 +240,18 @@
       "lien_quan_tinh": [
         "ha-tinh"
       ],
-      "youtube_id": "90o-KwNd3l8",
-      "kenh_youtube": "Nhạc Xứ Nghệ Để Đời",
+      "youtube_id": "dlDCMUpUeSY",
+      "kenh_youtube": "Anh Thơ Official",
       "gioi_thieu": "Ca khúc phổ thơ, ca ngợi hình ảnh người con gái bên dòng sông La — con sông biểu tượng của Hà Tĩnh.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Anh Thơ",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Thay bản cũ trên kênh «Nhạc Xứ Nghệ Để Đời» — kênh đăng lại."
     },
     {
       "id": "neo-dau-ben-que",
@@ -233,14 +263,16 @@
         "nghe-an"
       ],
       "youtube_id": "2PVNqmAnwn4",
-      "kenh_youtube": "Vũ Thắng Lợi Official",
+      "kenh_youtube": "Vũ Thắng Lợi Official (Phúc Hưng)",
       "gioi_thieu": "Ca khúc trữ tình về nỗi nhớ quê hương xứ Nghệ của nhạc sĩ An Thuyên (quê Quỳnh Lưu, Nghệ An), đậm chất dân ca ví giặm.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "NSƯT Vũ Thắng Lợi",
+      "loai_video": "hat"
     },
     {
       "id": "giua-mac-tu-khoa-nghe-cau-ho-nghe-tinh",
@@ -252,15 +284,18 @@
         "nghe-an",
         "ha-tinh"
       ],
-      "youtube_id": "b4pyIHqYL5A",
-      "kenh_youtube": "Nhạc Trữ Tình Chọn Lọc",
+      "youtube_id": "xNXILoQ7KXg",
+      "kenh_youtube": "Thu Hiền - Topic",
       "gioi_thieu": "Ca khúc nổi tiếng viết trong chuyến công tác tại Liên Xô, nỗi nhớ câu hò ví giặm quê nhà Nghệ Tĩnh giữa trời Âu xa xôi.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Thu Hiền",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu «℗ 2018 Dihavina». Đặt tên theo cách gọi «câu hò ví dặm»; cùng một ca khúc của Trần Hoàn với tên phổ biến «câu hò Nghệ Tĩnh»."
     },
     {
       "id": "nguoi-di-xay-ho-ke-go",
@@ -280,7 +315,9 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Minh Sơn · Lê Na",
+      "loai_video": "hat"
     },
     {
       "id": "mot-khuc-tam-tinh-nguoi-ha-tinh",
@@ -291,15 +328,18 @@
       "lien_quan_tinh": [
         "ha-tinh"
       ],
-      "youtube_id": "BpWGzCSEXZA",
-      "kenh_youtube": "Nhạc Trữ Tình Chọn Lọc",
+      "youtube_id": "f-BD4_1J4m4",
+      "kenh_youtube": "Hà Quỳnh Như - Topic",
       "gioi_thieu": "Ca khúc quen thuộc ca ngợi con người và cảnh sắc Hà Tĩnh, một trong những bài hát «tỉnh ca» được yêu thích nhất miền Trung.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Hà Quỳnh Như",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu «℗ 2022 NS Records», tín dụng ghi nhạc sĩ Nguyễn Văn Tý. Không tra được NS Records giữ quyền tới đâu, nên để cờ chính chủ là false."
     },
     {
       "id": "dang-dung-ben-tre",
@@ -318,8 +358,11 @@
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "NSND Thu Hiền",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Kênh «Nụ Cười Vàng TV» là kênh giải trí tư nhân đăng lại tiết mục Tết Vạn Lộc."
     },
     {
       "id": "ao-moi-ca-mau",
@@ -338,7 +381,9 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Nguyễn Phú Quí",
+      "loai_video": "hat"
     },
     {
       "id": "dem-ganh-hao-nghe-dieu-hoai-lang",
@@ -350,14 +395,16 @@
         "ca-mau"
       ],
       "youtube_id": "2hvN4nRVqBM",
-      "kenh_youtube": "Cẩm Ly Official",
+      "kenh_youtube": "CẨM LY OFFICIAL",
       "gioi_thieu": "Ca khúc lấy cảm hứng từ điệu «Dạ cổ hoài lang» và thị trấn Gành Hào (Đông Hải, Bạc Liêu cũ — nay thuộc Cà Mau), viết về nỗi hoài vọng của người phụ nữ chờ chồng.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Cẩm Ly",
+      "loai_video": "hat"
     },
     {
       "id": "da-co-hoai-lang",
@@ -377,8 +424,11 @@
         "Hội Nhạc sĩ Việt Nam",
         "Viện Âm nhạc Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Hương Lan",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu của Thúy Nga Paris By Night — hãng tư nhân ở nước ngoài. Chưa tìm được bản trên kênh đài trong nước."
     },
     {
       "id": "tinh-ca-tay-bac",
@@ -399,7 +449,9 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Đặng Hồng Nhung",
+      "loai_video": "hat"
     },
     {
       "id": "inh-la-oi",
@@ -419,8 +471,10 @@
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Sắc Màu Club",
+      "ghi_chu_bien_tap": "Video là tiết mục MÚA trên chương trình VTC6 do một kênh tổng hợp đăng lại, không phải bản thu thanh của làn điệu. Nên thay khi có bản hát trên kênh đài."
     },
     {
       "id": "chiec-khan-pieu",
@@ -433,14 +487,16 @@
         "dien-bien"
       ],
       "youtube_id": "TjY1TZk71eo",
-      "kenh_youtube": "Tùng Dương Official",
+      "kenh_youtube": "TUNG DUONG OFFICIAL",
       "gioi_thieu": "Ca khúc nổi tiếng lấy cảm hứng từ chiếc khăn piêu — vật dụng truyền thống của phụ nữ Thái vùng Tây Bắc.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Tùng Dương · Soobin Hoàng Sơn",
+      "loai_video": "hat"
     },
     {
       "id": "gui-em-o-cuoi-song-hong",
@@ -459,8 +515,11 @@
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Lê Thu Uyên",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Kênh «Nhạc Xứ Nghệ Để Đời» là kênh tuyển tập, không phải bên giữ quyền."
     },
     {
       "id": "ai-len-xu-hoa-dao",
@@ -472,14 +531,16 @@
         "lam-dong"
       ],
       "youtube_id": "T0x3xykLlpE",
-      "kenh_youtube": "Cẩm Ly Official",
+      "kenh_youtube": "CẨM LY OFFICIAL",
       "gioi_thieu": "Ca khúc kinh điển về thành phố Đà Lạt sương mù và hoa đào — một trong những bài hát gắn liền nhất với hình ảnh Đà Lạt (nay thuộc tỉnh Lâm Đồng hợp nhất).",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Cẩm Ly",
+      "loai_video": "hat"
     },
     {
       "id": "thanh-pho-hoa-phuong-do",
@@ -498,7 +559,10 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": false,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Tuấn RC",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Kênh cá nhân, giữ nguyên cờ chính chủ = false. Chưa tìm được bản trên kênh Đài Phát thanh - Truyền hình Hải Phòng."
     },
     {
       "id": "truong-son-dong-truong-son-tay",
@@ -510,15 +574,18 @@
       "lien_quan_tinh": [
         "quang-tri"
       ],
-      "youtube_id": "7p3rPsrf550",
-      "kenh_youtube": "Từ Như Tài Official",
+      "youtube_id": "kBiJsf_qaIg",
+      "kenh_youtube": "Trọng Tấn Official",
       "gioi_thieu": "Ca khúc phổ thơ Phạm Tiến Duật, ca ngợi những người lính, thanh niên xung phong mở đường Trường Sơn qua dải Quảng Trị – Quảng Bình thời chống Mỹ.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Anh Thơ · Trọng Tấn",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Thay bản cũ trên kênh «Từ Như Tài Official»."
     },
     {
       "id": "tieng-chay-tren-soc-bom-bo",
@@ -530,15 +597,18 @@
       "lien_quan_tinh": [
         "dong-nai"
       ],
-      "youtube_id": "b-rdEImFqYE",
-      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
+      "youtube_id": "crG3HTMYsW4",
+      "kenh_youtube": "Tuyết Thanh - Topic",
       "gioi_thieu": "Ca khúc lấy cảm hứng từ tục giã gạo nuôi quân ban đêm của đồng bào Xtiêng ở sóc Bom Bo (Phước Long, nay thuộc tỉnh Đồng Nai hợp nhất) thời kháng chiến chống Mỹ.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Tuyết Thanh · Hợp ca nam nữ Đài Tiếng nói Việt Nam",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu do chính Đài Tiếng nói Việt Nam giữ quyền — phần tín dụng của bản nhạc ghi «℗ 2022 VOV». Thay bản cũ trên kênh «Nhạc Cách Mạng Tiền Chiến»."
     },
     {
       "id": "tinh-dat-do-mien-dong",
@@ -550,15 +620,18 @@
         "tay-ninh",
         "dong-nai"
       ],
-      "youtube_id": "oKMGTxubvBs",
-      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
+      "youtube_id": "TY1C4cFwSuo",
+      "kenh_youtube": "Trọng Tấn Official",
       "gioi_thieu": "Ca khúc ca ngợi vùng đất đỏ miền Đông Nam Bộ và tinh thần chiến đấu kiên cường của quân dân nơi đây.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Trọng Tấn",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Thay bản cũ trên kênh «Nhạc Cách Mạng Tiền Chiến» — kênh đăng lại."
     },
     {
       "id": "vam-co-dong",
@@ -578,7 +651,10 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": false,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Quang Lý",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Kênh mang tên nhạc sĩ Trương Quang Lục nhưng không có dấu xác minh và không có phần giới thiệu kênh, nên chưa nâng cờ chính chủ."
     },
     {
       "id": "co-gai-vot-chong",
@@ -597,7 +673,10 @@
         "Hội Nhạc sĩ Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "NSND Tường Vi",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu «℗ 2018 Dihavina», nằm trong album «Giọng ca NSND Tường Vi»."
     },
     {
       "id": "truong-ca-song-lo",
@@ -610,8 +689,8 @@
         "phu-tho",
         "tuyen-quang"
       ],
-      "youtube_id": "PtrG6v5XQ7A",
-      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
+      "youtube_id": "lhRpFF1c2bU",
+      "kenh_youtube": "Quang Thọ - Topic",
       "gioi_thieu": "Trường ca lớn của Văn Cao viết sau chiến thắng sông Lô năm 1947, khi ông đi dọc sông Lô qua vùng Đoan Hùng (Phú Thọ) lên chiến khu Việt Bắc.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
@@ -619,7 +698,10 @@
         "Viện Âm nhạc Việt Nam"
       ],
       "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Quang Thọ",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu «℗ 2005 Hãng Phim Trẻ». Thay bản cũ trên kênh «Nhạc Cách Mạng Tiền Chiến» — kênh đăng lại."
     },
     {
       "id": "dat-nuoc-tron-niem-vui",
@@ -631,15 +713,18 @@
       "lien_quan_tinh": [
         "thanh-pho-ho-chi-minh"
       ],
-      "youtube_id": "6KXKVhqQ2l4",
-      "kenh_youtube": "Nhạc Cách Mạng Tiền Chiến",
+      "youtube_id": "T2jaqer50N8",
+      "kenh_youtube": "Tạ Minh Tâm - Topic",
       "gioi_thieu": "Ca khúc ra đời ngay sau ngày 30/4/1975, mừng ngày đất nước thống nhất, thành phố Sài Gòn được giải phóng.",
       "ban_quyen": "cited-excerpt",
       "nguon": [
         "Hội Nhạc sĩ Việt Nam"
       ],
-      "kenh_chinh_chu": true,
-      "chu_de": "ca-khuc-que-huong"
+      "kenh_chinh_chu": false,
+      "chu_de": "ca-khuc-que-huong",
+      "nguoi_trinh_bay": "Tạ Minh Tâm",
+      "loai_video": "hat",
+      "ghi_chu_bien_tap": "Bản thu «℗ 2017 Tuan Trinh Production», phát hành qua CDBaby — không tra được đơn vị này giữ quyền tới đâu, nên để cờ chính chủ là false. Vẫn hơn bản cũ trên kênh đăng lại «Nhạc Cách Mạng Tiền Chiến»."
     }
   ],
   "ngay_cap_nhat": "2026-08-05"

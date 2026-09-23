@@ -1,11 +1,13 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Biên giới Thu Đông 1950 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Biên giới Thu Đông 1950 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Hai chỗ hai nguồn nhà nước chép khác nhau, GIỮ CẢ HAI theo bất biến #4, ĐỪNG SỬA thành một: tổng số địch bị loại khỏi vòng chiến (10 tiểu đoàn ~8.300 theo Báo Nhân Dân · gần 10 tiểu đoàn, hơn 8.000 theo Báo QĐND) · cấp bậc hai chỉ huy binh đoàn (Trung tá Charton theo bài Cốc Xá – 477; «hai đại uý tiểu đoàn trưởng» theo bài Bác Hồ đi chiến dịch). Bản ghi này dùng cách gọi «binh đoàn» không kèm cấp bậc ở phần mô tả.",
   "id": "chien-dich-bien-gioi-thu-dong-1950",
   "ten": "Chiến dịch Biên giới Thu Đông 1950",
   "nam": 1950,
+  "thoi_gian": "16/9/1950 – 14/10/1950",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Đại tướng Võ Nguyên Giáp",
-  "doi_thu": "Quân đội Pháp (tuyến Đường số 4)",
+  "chi_huy": "Đại tướng Võ Nguyên Giáp — Bí thư Đảng uỷ mặt trận, Chỉ huy trưởng kiêm Chính uỷ chiến dịch",
+  "doi_thu": "Quân đội Pháp (Liên khu biên giới đông bắc, tuyến Đường số 4)",
   "dia_diem": "Đông Khê – Thất Khê – Cao Bằng – Lạng Sơn",
   "lien_quan_tinh": [
     "cao-bang",
@@ -14,163 +16,517 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
-      "kieu": "duong",
+      "kieu": "nui",
       "diem": [
-        [
-          500,
-          60
-        ],
-        [
-          480,
-          250
-        ],
-        [
-          460,
-          420
-        ],
-        [
-          440,
-          560
-        ]
+        [40, 60],
+        [230, 25],
+        [470, 30],
+        [700, 60]
       ],
-      "nhan": "Đường số 4 (Cao Bằng – Lạng Sơn)"
+      "nhan": "Biên giới Việt – Trung"
     },
     {
       "kieu": "nui",
       "diem": [
-        [
-          100,
-          50
-        ],
-        [
-          500,
-          30
-        ],
-        [
-          900,
-          60
-        ]
+        [190, 260],
+        [300, 285],
+        [400, 330],
+        [430, 400]
       ],
-      "nhan": "Vùng rừng núi biên giới Việt – Trung"
+      "nhan": "Vùng núi Cốc Xá – điểm cao 477"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [255, 120],
+        [370, 210],
+        [470, 300],
+        [575, 450],
+        [700, 520],
+        [830, 575]
+      ],
+      "nhan": "Đường số 4 — Cao Bằng qua Đông Khê, Thất Khê, Na Sầm về Lạng Sơn"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [235, 110],
+        [195, 175],
+        [230, 265]
+      ],
+      "nhan": "Đường Cao Bằng – Quang Liệt"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [600, 470],
+        [740, 430],
+        [880, 415]
+      ],
+      "nhan": "Hướng nghi binh Thái Nguyên"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [400, 210],
+        [510, 225],
+        [520, 300],
+        [405, 300]
+      ],
+      "nhan": "Rừng núi quanh Đông Khê"
     }
   ],
   "phan_tu": [
     {
-      "id": "cao-bang",
+      "id": "bien-gioi-viet-trung",
       "kieu": "dia-danh",
-      "x": 460,
-      "y": 100,
-      "nhan": "Cao Bằng"
+      "x": 140,
+      "y": 40,
+      "nhan": "Biên giới Việt – Trung"
     },
     {
-      "id": "cu-diem-dong-khe",
+      "id": "bd-charton",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 180,
+      "y": 130,
+      "nhan": "Binh đoàn Charton",
+      "quy_mo": "3 tiểu đoàn rút khỏi Cao Bằng"
+    },
+    {
+      "id": "cao-bang",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 90,
+      "nhan": "Thị xã Cao Bằng"
+    },
+    {
+      "id": "trung-doan-174",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 480,
+      "y": 130,
+      "nhan": "Trung đoàn 174"
+    },
+    {
+      "id": "so-chi-huy",
+      "kieu": "dia-danh",
+      "x": 760,
+      "y": 130,
+      "nhan": "Sở Chỉ huy chiến dịch"
+    },
+    {
+      "id": "quang-liet",
+      "kieu": "dia-danh",
+      "x": 200,
+      "y": 200,
+      "nhan": "Đường Quang Liệt"
+    },
+    {
+      "id": "dd308",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 620,
+      "y": 200,
+      "nhan": "Đại đoàn 308",
+      "quy_mo": "Trung đoàn 36 · Trung đoàn 88 · Trung đoàn 102"
+    },
+    {
+      "id": "dong-khe",
       "kieu": "cong-su",
       "ben": "dich",
-      "x": 460,
-      "y": 250,
+      "x": 450,
+      "y": 260,
       "nhan": "Cụm cứ điểm Đông Khê"
     },
     {
-      "id": "quan-ta-cong-kich",
+      "id": "trung-doan-209",
       "kieu": "quan",
       "ben": "ta",
-      "x": 300,
-      "y": 260,
-      "nhan": "Trung đoàn 174, 209 tiến công"
+      "x": 150,
+      "y": 300,
+      "nhan": "Trung đoàn 209"
+    },
+    {
+      "id": "diem-cao-477",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 270,
+      "y": 330,
+      "nhan": "Điểm cao 477"
+    },
+    {
+      "id": "coc-xa",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 355,
+      "y": 300,
+      "nhan": "Cốc Xá"
+    },
+    {
+      "id": "bd-le-page",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 505,
+      "y": 340,
+      "nhan": "Binh đoàn Le Page",
+      "quy_mo": "4 tiểu đoàn từ Thất Khê lên"
+    },
+    {
+      "id": "lung-phay",
+      "kieu": "dia-danh",
+      "x": 630,
+      "y": 340,
+      "nhan": "Lũng Phầy"
+    },
+    {
+      "id": "na-cao",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 385,
+      "nhan": "Nà Cao"
+    },
+    {
+      "id": "trung-doan-36",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 440,
+      "y": 425,
+      "nhan": "Trung đoàn 36",
+      "quy_mo": "Được tăng cường Tiểu đoàn 154"
     },
     {
       "id": "that-khe",
-      "kieu": "dia-danh",
-      "x": 440,
-      "y": 400,
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 575,
+      "y": 445,
       "nhan": "Thất Khê"
     },
     {
-      "id": "quan-dich-tiep-vien",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 620,
-      "y": 340,
-      "nhan": "Binh đoàn Pháp ứng cứu"
-    },
-    {
-      "id": "quan-ta-phuc-kich",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 350,
-      "y": 370,
-      "nhan": "Quân ta phục kích trên Đường số 4"
-    },
-    {
-      "id": "lang-son",
+      "id": "thai-nguyen",
       "kieu": "dia-danh",
-      "x": 420,
-      "y": 540,
-      "nhan": "Lạng Sơn"
+      "x": 890,
+      "y": 410,
+      "nhan": "Hướng Thái Nguyên — cuộc hành quân nghi binh của Pháp"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 550,
-      "y": 200,
-      "nhan": "Khai thông biên giới Việt – Trung"
+      "x": 760,
+      "y": 300,
+      "nhan": "Khai thông biên giới, giải phóng 750km"
+    },
+    {
+      "id": "na-sam",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 690,
+      "y": 520,
+      "nhan": "Na Sầm"
+    },
+    {
+      "id": "lang-son",
+      "kieu": "dia-danh",
+      "x": 840,
+      "y": 565,
+      "nhan": "Lạng Sơn · Đồng Đăng"
+    },
+    {
+      "id": "tieu-doan-lang-son",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 480,
+      "y": 555,
+      "nhan": "Tiểu đoàn 428 · 888",
+      "quy_mo": "Mặt trận Na Sầm – Lạng Sơn"
+    },
+    {
+      "id": "mui-danh-dong-khe",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [560, 218],
+      "den": [478, 250],
+      "nhan": "Trận mở màn Đông Khê 16/9"
+    },
+    {
+      "id": "mui-charton-rut",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [212, 152],
+      "den": [285, 300],
+      "nhan": "Binh đoàn Charton rút khỏi Cao Bằng"
+    },
+    {
+      "id": "mui-le-page-len",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [548, 412],
+      "den": [478, 300],
+      "nhan": "Binh đoàn Le Page từ Thất Khê lên"
+    },
+    {
+      "id": "mui-truy-kich",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [520, 420],
+      "den": [700, 545],
+      "nhan": "Truy kích xuống Thất Khê, Na Sầm, Lạng Sơn"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "gần 3 vạn cán bộ, chiến sĩ",
+          "nguon": "Báo Quân đội nhân dân — Chiến dịch Biên giới (16/9 – 14/10/1950)"
+        }
+      ],
+      "don_vi": [
+        "Đại đoàn 308",
+        "Trung đoàn 209",
+        "Trung đoàn 174",
+        "Trung đoàn 74 được tăng cường 2 tiểu đoàn",
+        "3 tiểu đoàn chủ lực tỉnh Lạng Sơn: 426, 428, 888",
+        "5 đại đội công binh"
+      ],
+      "vu_khi": [
+        "4 đại đội sơn pháo với 20 khẩu 70mm và 75mm",
+        "1 tiểu đoàn pháo 75mm ở mặt trận Đông Khê"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "khoảng 11 tiểu đoàn và 9 đại đội bộ binh, phần lớn là lính Âu – Phi",
+          "nguon": "Báo Nhân Dân · Báo Quân đội nhân dân"
+        }
+      ],
+      "don_vi": [
+        "11 tiểu đoàn bộ binh",
+        "9 đại đội bộ binh",
+        "4 đại đội cơ giới",
+        "4 đại đội công binh",
+        "Bố trí thành hai khu Lạng Sơn, An Châu và hai phân khu Cao Bằng, Thất Khê"
+      ],
+      "vu_khi": [
+        "27 khẩu pháo các loại",
+        "8 máy bay"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+      "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950), bước ngoặt cuộc kháng chiến — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-bien-gioi-16-9-14-10-1950-buoc-ngoat-cuoc-khang-chien-796808"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "10 tiểu đoàn với khoảng 8.300 tên bị loại khỏi vòng chiến đấu, 3.576 tên bị bắt sống; thu hơn 3.000 tấn vũ khí và phương tiện chiến tranh",
+        "nguon": "Báo Nhân Dân — Chiến dịch Biên giới"
+      },
+      {
+        "so": "gần 10 tiểu đoàn, khoảng hơn 8.000 tên; trong đó diệt 7 tiểu đoàn Âu – Phi và 1 tiểu đoàn nguỵ; thu hơn 3.000 tấn vũ khí, có 58 khẩu pháo cối các loại",
+        "nguon": "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950)"
+      }
+    ],
+    "nguon": [
+      "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+      "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950), bước ngoặt cuộc kháng chiến — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-bien-gioi-16-9-14-10-1950-buoc-ngoat-cuoc-khang-chien-796808"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Mở màn tiến công Đông Khê (16/9/1950)",
-      "mo_ta": "Trung đoàn 174 và 209 nổ súng tiến công cụm cứ điểm Đông Khê, cắt đôi tuyến phòng ngự Đường số 4 của Pháp.",
+      "tieu_de": "Kế hoạch Rơve khoá chặt biên giới",
+      "thoi_gian": "Tháng 6/1950",
+      "dia_danh": "Tuyến Đường số 4 · biên giới đông bắc",
+      "mo_ta": "Thực dân Pháp được Mỹ giúp sức, ráo riết thực hiện Kế hoạch Rơve: tập trung lực lượng mở rộng chiếm đóng vùng trung du và đồng bằng Bắc Bộ, phong toả biên giới để ngăn sự chi viện của cách mạng Trung Quốc, bao vây và cô lập căn cứ địa Việt Bắc. Mùa hè 1950, quân Pháp ở Liên khu biên giới đông bắc có khoảng 11 tiểu đoàn, 9 đại đội bộ binh, 4 đại đội cơ giới, 4 đại đội công binh, 27 khẩu pháo các loại và 8 máy bay, bố trí thành hai khu Lạng Sơn, An Châu cùng hai phân khu Cao Bằng, Thất Khê. Tại mỗi vị trí chiếm đóng chúng xây cụm cứ điểm với binh lực từ hai đại đội trở lên, có đồn chính và các đồn tiền tiêu, hệ thống giao thông hào, lô cốt, hầm ngầm. Tháng 6/1950, Trung ương Đảng chủ trương mở chiến dịch lớn trên tuyến biên giới Việt – Trung.",
       "hien": [
+        "bien-gioi-viet-trung",
         "cao-bang",
-        "cu-diem-dong-khe",
-        "quan-ta-cong-kich"
+        "dong-khe",
+        "that-khe",
+        "na-sam",
+        "lang-son",
+        "quang-liet"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+        "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950) — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-bien-gioi-16-9-14-10-1950-buoc-ngoat-cuoc-khang-chien-796808"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Chiếm Đông Khê sau 54 giờ chiến đấu",
-      "mo_ta": "Sáng 18/9/1950, quân ta làm chủ hoàn toàn Đông Khê, cô lập Cao Bằng khỏi Thất Khê, Lạng Sơn.",
+      "tieu_de": "Lệnh mở chiến dịch Lê Hồng Phong 2, Bác Hồ ra mặt trận",
+      "thoi_gian": "7/7 – trung tuần tháng 9/1950",
+      "dia_danh": "Sở Chỉ huy chiến dịch",
+      "mo_ta": "Ngày 7/7/1950, Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam ra lệnh mở Chiến dịch Biên giới Cao – Lạng, mật danh chiến dịch Lê Hồng Phong 2, nhằm tiêu diệt một bộ phận sinh lực địch, giải phóng một vùng đất đai, mở đường giao lưu với các nước bè bạn, mở rộng và củng cố căn cứ địa Việt Bắc. Theo quyết định của Thường vụ Trung ương Đảng, Đảng uỷ mặt trận biên giới được thành lập, đồng chí Võ Nguyên Giáp làm Bí thư đồng thời là Chỉ huy trưởng kiêm Chính uỷ chiến dịch. Chủ tịch Hồ Chí Minh đích thân lên đường ra mặt trận cùng Bộ chỉ huy trực tiếp chỉ đạo chiến dịch. Lực lượng ta gồm Đại đoàn 308, các trung đoàn 209 và 174, ba tiểu đoàn chủ lực tỉnh Lạng Sơn, bốn đại đội sơn pháo với 20 khẩu 70mm và 75mm, năm đại đội công binh cùng bộ đội địa phương và dân quân du kích, hình thành ba mặt trận.",
       "hien": [
-        "cu-diem-dong-khe",
-        "quan-ta-cong-kich"
+        "so-chi-huy",
+        "dd308",
+        "trung-doan-174",
+        "trung-doan-209",
+        "trung-doan-36",
+        "tieu-doan-lang-son",
+        "dong-khe"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+        "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950) — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-bien-gioi-16-9-14-10-1950-buoc-ngoat-cuoc-khang-chien-796808"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Pháp điều binh ứng cứu, rơi vào phục kích",
-      "mo_ta": "Pháp cho binh đoàn từ Thất Khê lên đón cánh quân rút từ Cao Bằng và một cánh nhảy dù xuống Thất Khê hòng giải cứu; cả hai bị quân ta phục kích, đánh tan trên Đường số 4.",
+      "tieu_de": "Bỏ Cao Bằng, chọn Đông Khê — «đánh điểm, diệt viện»",
+      "thoi_gian": "Đầu tháng 8 – trung tuần tháng 9/1950",
+      "dia_danh": "Cao Bằng · Đông Khê · Thất Khê",
+      "mo_ta": "Ý định ban đầu là đánh Cao Bằng trước rồi mới chuyển xuống Đông Khê, Thất Khê. Đầu tháng 8/1950, Bộ chỉ huy chiến dịch trinh sát thực địa Cao Bằng và thấy nơi này tuy bị cô lập nhưng là một thị xã lớn, có hệ thống đồn trại và pháo đài kiên cố do hai tiểu đoàn chốt giữ, thực sự là cụm cứ điểm mạnh nhất của địch trên Đường số 4; chọn nó làm hướng chủ yếu thì khó thắng chắc. Đại tướng Võ Nguyên Giáp còn nêu một lý do nữa: Cao Bằng là tỉnh biên giới không có cửa khẩu, giải phóng Cao Bằng trước rồi mới đánh Lạng Sơn thì chẳng khác nào báo trước cho địch chuẩn bị đối phó. Đảng uỷ mặt trận quyết định dùng lối «đánh điểm, diệt viện»: đánh Đông Khê trước, tổ chức diệt quân ứng cứu, sau đó đánh xuống Thất Khê rồi đánh lên Cao Bằng; nếu địch rút khỏi Cao Bằng thì tập trung tiêu diệt số quân rút chạy.",
       "hien": [
+        "cao-bang",
+        "dong-khe",
         "that-khe",
-        "quan-dich-tiep-vien",
-        "quan-ta-phuc-kich"
+        "so-chi-huy",
+        "mui-danh-dong-khe",
+        "dd308"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+        "Báo Quân đội nhân dân — Trận điểm huyệt Đông Khê, Thất Khê — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/tran-diem-huyet-dong-khe-that-khe-439389"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Truy kích, giải phóng Thất Khê",
-      "mo_ta": "Quân ta truy kích các cánh quân Pháp tháo chạy, tiếp tục giải phóng Thất Khê và mở rộng vùng kiểm soát dọc biên giới.",
+      "tieu_de": "52 giờ đánh Đông Khê",
+      "thoi_gian": "5 giờ sáng 16/9/1950 và 52 giờ chiến đấu sau đó",
+      "dia_danh": "Cụm cứ điểm Đông Khê",
+      "mo_ta": "Đúng 5 giờ sáng 16/9/1950, quân ta nổ súng tiến công cụm cứ điểm Đông Khê. Mặt trận Đông Khê do Trung đoàn 74 được tăng cường hai tiểu đoàn, Trung đoàn 209, Trung đoàn 36 của Đại đoàn 308 và Tiểu đoàn pháo 75mm đảm nhiệm, vừa đánh cụm cứ điểm vừa sẵn sàng đánh quân tăng viện xung quanh. Mặt trận đánh quân ứng chiến do Đại đoàn 308 thiếu Trung đoàn 36 bố trí trên đoạn đường giữa Đông Khê và Thất Khê. Mặt trận Na Sầm – Lạng Sơn gồm các tiểu đoàn 428 và 888 tiêu hao quấy rối, phá đường ngăn chặn địch vận chuyển và phục kích trên đường Thất Khê – Lạng Sơn. Sau 52 giờ chiến đấu, bộ đội ta tiêu diệt hoàn toàn cụm cứ điểm Đông Khê, loại khỏi vòng chiến đấu khoảng 300 tên địch, kết thúc thắng lợi trận mở đầu chiến dịch.",
       "hien": [
-        "that-khe",
-        "quan-ta-phuc-kich",
-        "quan-dich-tiep-vien"
+        "dong-khe",
+        "trung-doan-209",
+        "trung-doan-36",
+        "dd308",
+        "mui-danh-dong-khe",
+        "tieu-doan-lang-son",
+        "that-khe"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+        "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950) — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-bien-gioi-16-9-14-10-1950-buoc-ngoat-cuoc-khang-chien-796808"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Khai thông biên giới Việt – Trung",
-      "mo_ta": "Sau gần một tháng chiến đấu (16/9–14/10/1950), quân ta loại khỏi vòng chiến hơn 8.000 quân Pháp, chấm dứt thế cô lập của căn cứ địa Việt Bắc, giành quyền chủ động chiến lược trên chiến trường chính Bắc Bộ.",
+      "tieu_de": "Mất Đông Khê, Pháp bỏ Cao Bằng và tung hai binh đoàn",
+      "thoi_gian": "Sau khi mất Đông Khê – đêm 30/9/1950",
+      "dia_danh": "Cao Bằng · Thất Khê · hướng Thái Nguyên",
+      "mo_ta": "Mất Đông Khê, bộ chỉ huy quân Pháp vội vàng quyết định rút quân khỏi Cao Bằng, đồng thời tổ chức một binh đoàn do Le Page chỉ huy từ Thất Khê tiến lên Đông Khê, hy vọng hợp cùng lực lượng từ Cao Bằng về rồi cùng nhau lui trở lại Thất Khê. Phối hợp kế hoạch rút quân, địch mở cuộc hành quân lớn đánh lên Thái Nguyên nhằm thu hút và phân tán lực lượng ta. Chờ lâu không thấy địch lên, Bộ chỉ huy ta một mặt kiên trì chờ viện, mặt khác sẵn sàng đánh xuống Thất Khê; riêng hướng Thái Nguyên ta không điều chủ lực về mà chỉ dùng lực lượng tại chỗ. Đêm 30/9, binh đoàn Le Page gồm bốn tiểu đoàn bí mật tiến quân dọc Đường số 4 theo kiểu sâu đo, định bất ngờ đánh chiếm lại Đông Khê nhưng không thành, phải dừng chờ pháo binh từ Na Sầm lên. Cùng lúc, binh đoàn Charton từ Cao Bằng bắt đầu rút về phía Đông Khê.",
       "hien": [
+        "bd-le-page",
+        "bd-charton",
+        "mui-le-page-len",
+        "mui-charton-rut",
+        "cao-bang",
+        "dong-khe",
+        "that-khe",
+        "thai-nguyen",
+        "na-sam"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Bám đánh binh đoàn Le Page, cắt nó làm đôi",
+      "thoi_gian": "2 – 4/10/1950",
+      "dia_danh": "Khâu Áng · Khâu Luông · Chốt Ngà · Nà Mục · Nà Kéo",
+      "mo_ta": "Nhận định nếu quân của Le Page bị tiêu diệt thì quân của Charton sẽ dễ tan vỡ, Bộ chỉ huy chiến dịch chủ trương tập trung lực lượng tiêu diệt từng cánh quân, trước hết diệt binh đoàn Le Page rồi diệt nốt binh đoàn Charton. Chiều 2/10, ta nổ súng đánh quân Le Page ở Khâu Áng, Khâu Luông, Chốt Ngà, Nà Mục. Bị bám đánh gắt gao, đến ngày 3/10 binh đoàn Le Page vẫn chỉ quanh quẩn ở khu vực Khâu Áng – Nà Kéo; hơn thế, lực lượng của binh đoàn bị cắt làm đôi, một nửa ở khu vực Khâu Luông – Nà Pá, một nửa cùng sở chỉ huy binh đoàn ở khu vực Xuân Hoà. Liên tục bị đánh, một phần bị thương vong, phần khác sức lực sút kém và tinh thần hoảng loạn, chúng bỏ ý định lên Nậm Nàng, rút toàn bộ lực lượng về Cốc Xá chờ hội quân với lực lượng của Charton.",
+      "hien": [
+        "bd-le-page",
+        "coc-xa",
+        "dong-khe",
+        "dd308",
+        "trung-doan-36",
+        "mui-le-page-len",
+        "bd-charton"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Cốc Xá — vòng vây bốn mặt khép lại",
+      "thoi_gian": "17 giờ ngày 5/10 – chiều 8/10/1950",
+      "dia_danh": "Cốc Xá · Nà Cao",
+      "mo_ta": "Bộ chỉ huy chiến dịch giao Đại đoàn 308 trực tiếp sử dụng Trung đoàn 36 thiếu Tiểu đoàn 84, được tăng cường Tiểu đoàn 154 của Trung đoàn 209, nhanh chóng bao vây tiêu diệt binh đoàn Le Page tại Cốc Xá; Trung đoàn 209 đánh chặn binh đoàn Charton từ Nậm Nàng về điểm cao 477, tạo thế chia cắt không cho hai binh đoàn gặp nhau. Địa hình Cốc Xá hiểm trở, địch sơ hở và chủ quan; ta bố trí thế trận bao vây từ hướng đông là hướng chủ yếu, hướng bắc và nam là thứ yếu, đồng thời chốt chặn không cho địch từ Cốc Xá chạy sang điểm cao 477. 17 giờ ngày 5/10/1950, bộ đội ta nổ súng tiến công từ các hướng, đập tan nhiều đợt phản kích, khép dần vòng vây; một mũi luồn sâu chiếm điểm cao rồi bất ngờ đánh xuống làm rối loạn đội hình địch. Đến chiều 8/10, ta diệt và bắt hầu hết quân địch ở Nà Cao, trong đó có Le Page cùng ban tham mưu đã thoát khỏi vòng vây chạy xuống phía nam.",
+      "hien": [
+        "coc-xa",
+        "na-cao",
+        "bd-le-page",
+        "trung-doan-36",
+        "trung-doan-209",
+        "diem-cao-477",
+        "dd308"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến thuật vận động tiến công trong trận Cốc Xá – điểm cao 477 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/chien-thuat-van-dong-tien-cong-trong-tran-coc-xa-diem-cao-477-1017920",
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Điểm cao 477 — mười hai giờ diệt binh đoàn Charton",
+      "thoi_gian": "7 giờ – chiều 7/10/1950",
+      "dia_danh": "Điểm cao 477 · Lán Hai · Bản Ca · Lũng Phầy",
+      "mo_ta": "Ba tiểu đoàn của cánh quân Charton chuyển hướng vào đường Quang Liệt, tối 6/10 về tới Lán Hai và điểm cao 477, cách Cốc Xá 3km về phía tây. Nắm được ý đồ hội quân của hai binh đoàn địch đang chờ quân cứu viện từ Thất Khê lên, ta kịp thời tổ chức lực lượng bao vây điểm cao và lực lượng đón lõng ở Bản Ca. 7 giờ sáng 7/10, bộ đội ta đánh chặn địch ở khu vực giữa điểm cao 477 và Cốc Xá, phối hợp chặt chẽ với các tiểu đoàn trên các hướng tây nam, đông bắc và bắc cùng vận động tiến công mạnh vào đội hình binh đoàn Charton. Bị đánh bất ngờ, quân địch chạy về Bản Ca lại bị chặn đánh. Sau 12 giờ chiến đấu, toàn bộ binh đoàn Charton bị loại khỏi vòng chiến đấu, phần lớn bị bắt làm tù binh, trong đó có cả ban tham mưu và Charton. Chiều 7/10, bộ chỉ huy Liên khu biên giới đông bắc tập trung bốn đại đội Âu Phi từ Thất Khê lên Lũng Phầy đón lực lượng rút về, nhưng bị ta chặn đánh phải quay về.",
+      "hien": [
+        "diem-cao-477",
+        "bd-charton",
+        "trung-doan-209",
+        "coc-xa",
+        "lung-phay",
+        "that-khe",
+        "quang-liet",
+        "dd308"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến thuật vận động tiến công trong trận Cốc Xá – điểm cao 477 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/chien-thuat-van-dong-tien-cong-trong-tran-coc-xa-diem-cao-477-1017920",
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "Truy kích xuống Thất Khê, Na Sầm — biên giới khai thông",
+      "thoi_gian": "10 – 14/10/1950",
+      "dia_danh": "Thất Khê · Na Sầm · Đồng Đăng · Lạng Sơn",
+      "mo_ta": "Để kịp thời khuếch trương thắng lợi, Bộ chỉ huy chiến dịch chuyển lực lượng xuống phía nam tiêu diệt địch ở Thất Khê. Trong khi các lực lượng ta đang tiến về, đêm 10/10 địch bắt đầu rút khỏi thị trấn này; bộ đội ta chuyển sang truy kích. Ngày 14/10, địch rút chạy khỏi Na Sầm, tiếp đó là các vị trí trên đường Na Sầm – Đồng Đăng. Chiến dịch kết thúc ngày 14/10/1950 sau 29 ngày chiến đấu. Ta làm tan vỡ toàn bộ hệ thống bố trí của địch ở Liên khu biên giới đông bắc; số địch bị loại khỏi vòng chiến đấu được chép hai cách — 10 tiểu đoàn với khoảng 8.300 tên, hoặc gần 10 tiểu đoàn với hơn 8.000 tên — trong đó 3.576 tên bị bắt sống, có toàn bộ ban tham mưu hai binh đoàn và chỉ huy đồn Đông Khê. Ta thu hơn 3.000 tấn vũ khí và phương tiện chiến tranh. Một dãy biên giới phía bắc dài 750km với khoảng 35 vạn dân được giải phóng.",
+      "hien": [
+        "that-khe",
+        "na-sam",
         "lang-son",
-        "co-thang"
+        "mui-truy-kich",
+        "tieu-doan-lang-son",
+        "co-thang",
+        "bien-gioi-viet-trung",
+        "cao-bang"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+        "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950) — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-bien-gioi-16-9-14-10-1950-buoc-ngoat-cuoc-khang-chien-796808"
       ]
     }
   ],
-  "ket_qua": "Loại khỏi vòng chiến hơn 8.000 quân Pháp, thu 3.000 tấn vũ khí, khai thông biên giới Việt – Trung, chấm dứt thế bị cô lập của căn cứ địa Việt Bắc.",
-  "y_nghia": "Chiến dịch phản công lớn đầu tiên của quân đội ta, giành quyền chủ động chiến lược, khai thông biên giới với các nước xã hội chủ nghĩa.",
+  "ket_qua": "Loại khỏi vòng chiến hơn 8.000 quân Pháp, bắt sống 3.576 tên cùng ban tham mưu hai binh đoàn, thu hơn 3.000 tấn vũ khí, giải phóng dải biên giới phía bắc dài 750km với khoảng 35 vạn dân.",
+  "y_nghia": "Chiến dịch tiến công lớn đầu tiên của quân đội ta, giành quyền chủ động chiến lược, khai thông biên giới với các nước xã hội chủ nghĩa và chấm dứt thế bị cô lập của căn cứ địa Việt Bắc.",
   "trang_thai": "draft",
   "nguon": [
+    "Báo Nhân Dân — Chiến dịch Biên giới — https://special.nhandan.vn/chien-dich-bien-gioi/index.html",
+    "Báo Quân đội nhân dân — Chiến dịch Biên giới (16-9 – 14-10-1950), bước ngoặt cuộc kháng chiến — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-dich-bien-gioi-16-9-14-10-1950-buoc-ngoat-cuoc-khang-chien-796808",
+    "Báo Quân đội nhân dân — Chiến thuật vận động tiến công trong trận Cốc Xá – điểm cao 477 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/chien-thuat-van-dong-tien-cong-trong-tran-coc-xa-diem-cao-477-1017920",
+    "Báo Quân đội nhân dân — Trận điểm huyệt Đông Khê, Thất Khê — https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/tran-diem-huyet-dong-khe-that-khe-439389",
     "Lịch sử Việt Nam (Viện Sử học)",
     "tulieuvankien.dangcongsan.vn — Chiến dịch Biên giới 1950 (16/9–17/10/1950)",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam"
@@ -179,19 +535,20 @@
     {
       "sach": "Lời dặn của Chủ tịch Hồ Chí Minh trước Chiến dịch Biên giới, 1950",
       "doan": "Chiến dịch này hết sức quan trọng, chỉ được thắng không được thua!",
-      "nguon_trich": "Cổng TTĐT VOV — https://vov.gov.vn/chien-dich-bien-gioi-1950-va-phong-cach-cam-quan-dac-trung-cua-dai-tuong-vo-ngu-dtnew-208581"
+      "nguon_trich": "Cổng TTĐT VOV — https://vov.gov.vn/chien-dich-bien-gioi-1950-va-phong-cach-cam-quan-dac-trung-cua-dai-tuong-vo-ngu-dtnew-208581",
+      "buoc": 2
     },
     {
       "sach": "Chỉ thị của Chủ tịch Hồ Chí Minh tại Sở Chỉ huy chiến dịch, 11/9/1950",
       "doan": "Chưa đánh thắng thì chưa được coi là chuẩn bị xong. Quân sự thì phải chuẩn bị mãi. Thắng xong trận này cũng mới chỉ là chuẩn bị xong một đợt. Khi nào toàn thắng mới là chuẩn bị xong",
       "nguon_trich": "Báo Cao Bằng điện tử — https://baocaobang.vn/-12849.html",
-      "buoc": 1
+      "buoc": 3
     },
     {
       "sach": "Lời Chủ tịch Hồ Chí Minh sau thắng lợi Chiến dịch Biên giới, 1950",
       "doan": "Không vì thắng lợi mà kiêu căng, chủ quan, khinh địch, chúng ta phải nhớ rằng: trong toàn cuộc trường kỳ kháng chiến thì thắng lợi này mới chỉ là bước đầu. Chúng ta cần phải đánh thắng nhiều trận gay go hơn, to tát hơn nữa, mới đi đến thắng lợi hoàn toàn",
       "nguon_trich": "Báo Cao Bằng điện tử — https://baocaobang.vn/-12849.html",
-      "buoc": 5
+      "buoc": 9
     }
   ]
 }

@@ -3,6 +3,7 @@
   "id": "bach-dang-981",
   "ten": "Kháng chiến chống Tống lần I – Chiến thắng Bạch Đằng 981",
   "nam": 981,
+  "thoi_gian": "Cuối năm Canh Thìn (980) – tháng 4 năm Tân Tỵ (981)",
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Lê Hoàn (Lê Đại Hành)",
   "doi_thu": "Nhà Tống (Hầu Nhân Bảo, Tôn Toàn Hưng)",
@@ -12,171 +13,352 @@
     "quang-ninh"
   ],
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "loai_xung_dot": "ngoai-xam",
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "15.000 quân giao chiến ở sông Bạch Đằng — con số do sử liệu phía Tống chép, không có trong chính sử nước ta",
+          "nguon": "Tục tư trị thông giám, dẫn trong Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
+        }
+      ],
+      "don_vi": [
+        "Đại quân do Hoàng đế Lê Hoàn trực tiếp cầm, hành dinh vùng Thuỷ Nguyên – Chí Linh",
+        "Phạm Cự Lạng giữ chức đại tướng quân"
+      ],
+      "vu_khi": [
+        "Cọc gỗ đóng trên sông Bạch Đằng theo phép của Ngô Quyền",
+        "Chiến hạm và trận địa mai phục trên bộ"
+      ]
+    },
+    "doi_thu": {
+      "don_vi": [
+        "Hầu Nhân Bảo — Tổng chỉ huy; Tôn Toàn Hưng — Phó tổng chỉ huy",
+        "Trần Khâm Tộ, Hắc Thủ Tuấn, Thôi Lượng — cánh quân bộ",
+        "Lưu Trừng, Vương Soạn, Giả Thực — cánh quân thuỷ"
+      ]
+    },
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981: Kháng chiến chống quân Tống lần thứ nhất thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html",
+      "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
+    ]
+  },
+  "ton_that": {
+    "ta": "Những ngày đầu chặn thuỷ quân Tống, nhiều chiến thuyền bị địch cướp và hơn một nghìn binh sĩ hy sinh; sử liệu phía Tống chép quân Tống chém được hơn 1.000 thủ cấp và lấy 200 chiến hạm trong trận Bạch Đằng ngày 28-4-981.",
+    "doi_thu": "Quân Tống bị tiêu diệt phần lớn: chủ tướng Hầu Nhân Bảo tử trận, quá nửa cánh quân Trần Khâm Tộ chết tại trận, các tướng Quách Quân Biện và Triệu Phụng Huân bị bắt sống.",
+    "nguon": [
+      "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981: Kháng chiến chống quân Tống lần thứ nhất thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html",
+      "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
+    ]
+  },
   "dia_hinh": [
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          420
-        ],
-        [
-          500,
-          400
-        ],
-        [
-          1000,
-          440
-        ]
+        [905, 205],
+        [790, 228],
+        [660, 262],
+        [520, 300]
       ],
       "nhan": "Sông Bạch Đằng"
     },
     {
-      "kieu": "duong",
+      "kieu": "bien",
       "diem": [
-        [
-          80,
-          60
-        ],
-        [
-          400,
-          150
-        ],
-        [
-          600,
-          280
-        ]
+        [1000, 40],
+        [890, 72],
+        [918, 330],
+        [1000, 362]
       ],
-      "nhan": "Đường bộ quân Tống (Tôn Toàn Hưng)"
+      "nhan": "Biển"
+    },
+    {
+      "kieu": "nui",
+      "diem": [
+        [618, 122],
+        [712, 98],
+        [815, 122]
+      ],
+      "nhan": "Núi rừng đông bắc"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [600, 420],
+        [450, 448],
+        [300, 462],
+        [150, 488]
+      ],
+      "nhan": "Sông Hồng"
     }
   ],
   "phan_tu": [
     {
-      "id": "coc-bach-dang",
+      "id": "ung-chau",
+      "kieu": "dia-danh",
+      "x": 950,
+      "y": 130,
+      "nhan": "Ung Châu"
+    },
+    {
+      "id": "quan-tong-bo",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 872,
+      "y": 152,
+      "nhan": "Bộ binh Tống",
+      "quy_mo": "Hầu Nhân Bảo · Tôn Toàn Hưng"
+    },
+    {
+      "id": "thuy-quan-tong",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 842,
+      "y": 258,
+      "nhan": "Thuỷ quân Tống",
+      "quy_mo": "Lưu Trừng · Giả Thực"
+    },
+    {
+      "id": "lang-son",
+      "kieu": "dia-danh",
+      "x": 752,
+      "y": 158,
+      "nhan": "Lãng Sơn (sử chép hai cách)"
+    },
+    {
+      "id": "bai-coc-981",
       "kieu": "cong-su",
-      "ben": "ta",
-      "x": 439,
-      "y": 465,
-      "nhan": "Bãi cọc ngầm sông Bạch Đằng"
+      "x": 648,
+      "y": 300,
+      "nhan": "Cọc đóng trên sông"
     },
     {
-      "id": "quan-ta-mai-phuc",
+      "id": "le-hoan",
       "kieu": "quan",
       "ben": "ta",
-      "x": 350,
-      "y": 500,
-      "nhan": "Quân Lê Hoàn mai phục"
+      "x": 540,
+      "y": 205,
+      "nhan": "Lê Hoàn",
+      "quy_mo": "Hành dinh Thuỷ Nguyên – Chí Linh"
     },
     {
-      "id": "thuyen-dich-tien",
-      "kieu": "thuyen",
-      "ben": "dich",
-      "x": 880,
-      "y": 400,
-      "nhan": "Thuỷ quân Hầu Nhân Bảo"
+      "id": "mui-chan-thuy",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [590, 262],
+      "den": [740, 272],
+      "nhan": "Chặn thuỷ quân ở cửa sông"
     },
     {
-      "id": "quan-dich-bo",
+      "id": "mui-tra-hang",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [560, 348],
+      "den": [672, 330],
+      "nhan": "Trá hàng, dụ chủ tướng"
+    },
+    {
+      "id": "noi-hnb-tu-tran",
+      "kieu": "dia-danh",
+      "x": 712,
+      "y": 372,
+      "nhan": "Nơi Hầu Nhân Bảo tử trận"
+    },
+    {
+      "id": "binh-lo",
+      "kieu": "dia-danh",
+      "x": 396,
+      "y": 196,
+      "nhan": "Bình Lỗ – Phù Lỗ"
+    },
+    {
+      "id": "mai-phuc-binh-lo",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 320,
+      "y": 128,
+      "nhan": "Trận địa mai phục"
+    },
+    {
+      "id": "tay-ket",
+      "kieu": "dia-danh",
+      "x": 462,
+      "y": 472,
+      "nhan": "Tây Kết"
+    },
+    {
+      "id": "quan-kham-to",
       "kieu": "quan",
       "ben": "dich",
-      "x": 280,
-      "y": 180,
-      "nhan": "Bộ binh Tôn Toàn Hưng (đường Lạng Sơn)"
+      "x": 596,
+      "y": 468,
+      "nhan": "Trần Khâm Tộ"
     },
     {
-      "id": "mui-nhu-dich",
+      "id": "mui-truy-kich",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        520,
-        470
-      ],
-      "den": [
-        800,
-        405
-      ],
-      "nhan": "Trá hàng, nhử địch vào bãi cọc"
+      "tu": [398, 448],
+      "den": [538, 462],
+      "nhan": "Truy kích"
     },
     {
-      "id": "thuyen-dich-mac-can",
-      "kieu": "thuyen",
+      "id": "mui-tong-rut",
+      "kieu": "mui-ten",
       "ben": "dich",
-      "x": 620,
-      "y": 450,
-      "nhan": "Thuyền Tống vướng cọc, mắc cạn"
+      "tu": [700, 132],
+      "den": [858, 104],
+      "nhan": "Quân Tống rút về nước"
     },
     {
-      "id": "mui-phan-cong",
-      "kieu": "mui-ten",
+      "id": "hoa-lu",
+      "kieu": "thanh",
       "ben": "ta",
-      "tu": [
-        350,
-        490
-      ],
-      "den": [
-        610,
-        455
-      ],
-      "nhan": "Tổng phản công"
+      "x": 118,
+      "y": 336,
+      "nhan": "Hoa Lư",
+      "quy_mo": "Kinh đô Đại Cồ Việt"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 500,
-      "y": 330,
-      "nhan": "Hầu Nhân Bảo tử trận, quân Tống rút"
+      "x": 196,
+      "y": 196,
+      "nhan": "Toàn thắng"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Tống chia hai đường bộ – thủy tiến đánh",
-      "mo_ta": "Đầu năm 981, quân Tống chia hai đường: Hầu Nhân Bảo chỉ huy thủy quân theo sông Bạch Đằng, Tôn Toàn Hưng dẫn bộ quân qua ngả Lạng Sơn.",
+      "tieu_de": "Biến loạn Hoa Lư — nhà Tống chớp thời cơ",
+      "thoi_gian": "Tháng 11 năm 979 – tháng 7 năm Canh Thìn (980)",
+      "dia_danh": "Hoa Lư · Ung Châu",
+      "mo_ta": "Tháng 11 năm 979, Đinh Tiên Hoàng và Thái tử Đinh Liễn bị Đỗ Thích sát hại ngay trong cung đình Hoa Lư, triều chính rối loạn, người kế vị là Đinh Toàn mới sáu tuổi. Hầu Nhân Bảo, đang giữ chức Tri Ung Châu, dâng thư khuyên vua Tống nhân lúc này đem quân sang đánh lấy. Tống Thái Tông nghe theo, tháng 7 năm Canh Thìn (980) lập bộ chỉ huy quân xâm lược và lệnh cho các cánh quân thuỷ bộ lên đường nam chinh.",
       "hien": [
-        "quan-dich-bo",
-        "coc-bach-dang"
+        "hoa-lu",
+        "ung-chau",
+        "quan-tong-bo"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Lê Hoàn đóng cọc trên sông Bạch Đằng",
-      "mo_ta": "Lê Hoàn vận dụng lại kế đóng cọc của Ngô Quyền năm 938, bố trí quân mai phục hai bên bờ sông.",
-      "thuy_trieu": "len",
+      "tieu_de": "Tôn Lê Hoàn lên ngôi rồi mới xuất quân",
+      "thoi_gian": "Tháng 8 năm Canh Thìn (980)",
+      "dia_danh": "Hoa Lư",
+      "mo_ta": "Trước nạn ngoại xâm, triều đình Hoa Lư chọn kháng chiến và cử Phạm Cự Lạng làm đại tướng quân. Đang bàn kế xuất quân thì Phạm Cự Lạng cùng các tướng mặc áo trận đi thẳng vào Nội phủ, nêu lẽ rằng chúa thượng còn trẻ thơ, quân sĩ liều chết đánh giặc mà không ai biết công, chi bằng tôn Thập đạo tướng quân Lê Hoàn lên làm Thiên tử rồi hãy xuất quân. Quân sĩ hô vạn tuế; Dương Thái hậu sai lấy áo long cổn khoác lên người Lê Hoàn, mời lên ngôi Hoàng đế.",
       "hien": [
-        "coc-bach-dang",
-        "quan-ta-mai-phuc"
+        "hoa-lu",
+        "le-hoan"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018",
+        "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981 — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Trá hàng, nhử địch vào trận địa",
-      "mo_ta": "Lê Hoàn cho sứ giả trá xin hàng để hoãn binh, dụ thủy quân Tống tiến sâu vào khu vực đã cắm cọc.",
-      "thuy_trieu": "len",
+      "tieu_de": "Quân Tống chia hai đường thuỷ – bộ tiến vào",
+      "thoi_gian": "Tháng 3 năm Tân Tỵ (981)",
+      "dia_danh": "Lãng Sơn · Bạch Đằng · Tây Kết",
+      "mo_ta": "Chính sử nước ta chép chiến sự bắt đầu tháng 3 năm Tân Tỵ (981), khi Hầu Nhân Bảo đến Lãng Sơn, Trần Khâm Tộ đến Tây Kết, Lưu Trừng đến sông Bạch Đằng. Ở đây các bộ sử vênh nhau ngay ở một chữ: Đại Việt sử lược chép «Lãng Sơn», Đại Việt sử ký toàn thư và Khâm định Việt sử thông giám cương mục chép thành «Lạng Sơn» — khác biệt đó kéo theo hai cách hình dung khác hẳn nhau về đường tiến binh của giặc. Sử liệu gốc Trung Quốc lại cho thấy giao tranh đã nổ ra từ cuối tháng Chạp năm Canh Thìn, trước mốc tháng 3 mà sử cũ nước ta ghi.",
       "hien": [
-        "coc-bach-dang",
-        "thuyen-dich-tien",
-        "mui-nhu-dich"
+        "lang-son",
+        "quan-tong-bo",
+        "thuy-quan-tong",
+        "tay-ket",
+        "quan-kham-to"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Quyết chiến ngày 28/4/981",
-      "mo_ta": "Quân ta đánh mạnh, thủy quân Tống vướng cọc rối loạn; chủ tướng Hầu Nhân Bảo tử trận ngay trên sông.",
-      "thuy_trieu": "xuong",
+      "tieu_de": "Chặn thuỷ quân Lưu Trừng, cầm chân hai tháng",
+      "thoi_gian": "Tháng 2 – tháng 4 năm 981",
+      "dia_danh": "Cửa sông Bạch Đằng",
+      "mo_ta": "Lê Hoàn trước hết cho quân chặn đường thuỷ. Đạo quân Lưu Trừng tiến vào sông Bạch Đằng vấp ngay sự kháng cự của quân ta. Những ngày đầu thế địch rất mạnh, nhiều chiến thuyền của ta bị cướp, hơn một nghìn binh sĩ hy sinh. Cọc đóng trên sông lần này không phát huy tác dụng như thời Ngô Quyền nhưng vẫn gây cho địch nhiều trở ngại. Lê Hoàn kiên trì dựa vào thế hiểm của sông núi Bạch Đằng cầm chân giặc; trận đánh kéo dài suốt hai tháng, từ tháng 2 đến tháng 4 năm 981.",
       "hien": [
-        "thuyen-dich-mac-can",
-        "mui-phan-cong"
+        "thuy-quan-tong",
+        "bai-coc-981",
+        "le-hoan",
+        "mui-chan-thuy"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981 — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Toàn thắng, quân Tống rút",
-      "mo_ta": "Cánh bộ binh của Tôn Toàn Hưng nghe tin thủy quân thua cũng phải rút chạy; nhà Tống buộc phải công nhận Lê Hoàn cai trị Đại Cồ Việt.",
-      "thuy_trieu": "xuong",
+      "tieu_de": "Hai đạo quân Tống mất nhịp, co cụm chờ nhau",
+      "thoi_gian": "Tháng 3 – tháng 4 năm 981",
+      "dia_danh": "Ngân Sơn · sông Cầu · vùng tập kết Hoa Bộ",
+      "mo_ta": "Hầu Nhân Bảo tiến đến Ngân Sơn, vào sông Cầu chờ quân phối hợp. Tôn Toàn Hưng lại nhất định án binh bất động cho tới khi biết tin Lưu Trừng. Mãi khi Lưu Trừng phá được vòng vây kéo lên, hai đạo quân Tống mới hội được với nhau, đi tìm đại quân Việt để giao chiến thì tìm không thấy, đành cùng quay về chỗ Tôn Toàn Hưng đóng. Ý đồ chiến lược bị bẻ gãy, thế trận liên kết không thành; chủ lực giặc lui về tập kết ở vùng sử sách Trung Quốc gọi là «Hoa Bộ», nay được xác định là vùng đất và quả núi U Bò bên bờ giữa dòng Bạch Đằng, thuộc Thuỷ Nguyên, Hải Phòng.",
       "hien": [
-        "thuyen-dich-mac-can",
-        "co-thang"
+        "quan-tong-bo",
+        "thuy-quan-tong",
+        "bai-coc-981",
+        "le-hoan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981 — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html",
+        "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
+      ]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Trá hàng — chủ tướng Hầu Nhân Bảo tử trận",
+      "thoi_gian": "Ngày 28-4-981 (ngày Kỷ Mùi, tháng 3, Thái Bình Hưng Quốc năm thứ 6)",
+      "dia_danh": "Khúc giữa sông Bạch Đằng — hoặc Bình Lỗ, vùng Phù Lỗ",
+      "mo_ta": "Hai nguồn nhà nước chép hai nơi khác nhau, sa đồ nêu cả hai. Bảo tàng Lịch sử Quốc gia chép Hầu Nhân Bảo không nhận được tin hai đạo quân kia, lại tổ chức đánh xuống Bình Lỗ, sa vào trận địa mai phục lớn Lê Hoàn bố trí sẵn ở vùng Phù Lỗ (Sóc Sơn, Hà Nội), quân Tống đại bại và chủ tướng bị chém chết tại trận. Báo Quân đội nhân dân dẫn Tống sử, Tục tư trị thông giám và An Nam chí nguyên thì chép Lê Hoàn bày trận lớn ở khúc giữa sông Bạch Đằng, dùng kế trá hàng dụ Hầu Nhân Bảo, giết được kẻ cầm đầu ngày 28-4-981, ta phải chịu tổn thất nặng để đổi lấy đòn «đập nát đầu rắn» ấy.",
+      "hien": [
+        "mui-tra-hang",
+        "noi-hnb-tu-tran",
+        "binh-lo",
+        "mai-phuc-binh-lo",
+        "quan-tong-bo"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981 — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html",
+        "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Diệt cánh quân Trần Khâm Tộ ở Tây Kết",
+      "thoi_gian": "Sau ngày 28-4-981",
+      "dia_danh": "Tây Kết (Hưng Yên)",
+      "mo_ta": "Mất chủ tướng, toàn bộ cuộc xâm lược lâm cảnh rắn mất đầu. Lê Hoàn thừa thắng mở tiếp những trận tiêu diệt ở khắp nơi, kể cả cánh quân đã vào sâu tới trung tâm đồng bằng châu thổ sông Hồng ở Tây Kết. Đạo quân của Tôn Toàn Hưng và Trần Khâm Tộ nghe tin hai cánh bên phải, bên trái đều bị đánh bại thì hoảng sợ rút chạy; quân ta xuất binh truy kích, quá nửa cánh quân Trần Khâm Tộ chết tại trận.",
+      "hien": [
+        "tay-ket",
+        "quan-kham-to",
+        "mui-truy-kich",
+        "le-hoan"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981 — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html",
+        "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Vua Tống bãi binh, trị tội tướng bại trận",
+      "thoi_gian": "Sau tháng 4 năm 981",
+      "dia_danh": "Biên giới đông bắc · Ung Châu",
+      "mo_ta": "Vua Tống hạ lệnh rút quân và trút tội lên đầu các tướng: Lưu Trừng và Giả Thực bị giết ở chợ Ung Châu, Tôn Toàn Hưng bị bắt về triều hạ ngục rồi cũng bị giết, Vương Soạn bị xử tội chết. Các tướng Quách Quân Biện, Triệu Phụng Huân bị bắt sống, điệu về giam ở Hoa Lư. Nhà Tống buộc phải kiêng nể, thi hành quan hệ bình đẳng hơn với Đại Cồ Việt; đất nước được thanh bình trong gần một thế kỷ.",
+      "hien": [
+        "mui-tong-rut",
+        "ung-chau",
+        "co-thang",
+        "hoa-lu"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981 — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html",
+        "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
       ]
     }
   ],
@@ -186,26 +368,52 @@
   "nguon": [
     "Đại Việt sử ký toàn thư — Ngoại kỷ, Kỷ nhà Lê (Tiền Lê)",
     "SGK Lịch sử 7 — NXB Giáo dục Việt Nam",
-    "Bộ CHQS thành phố Hải Phòng — Lê Đại Hành và chiến thắng Bạch Đằng năm 981 (quansu.haiphong.gov.vn)"
+    "Bộ CHQS thành phố Hải Phòng — Lê Đại Hành và chiến thắng Bạch Đằng năm 981 (quansu.haiphong.gov.vn)",
+    "Bảo tàng Lịch sử Quốc gia — Mùa Xuân năm 981: Kháng chiến chống quân Tống lần thứ nhất thắng lợi — https://baotanglichsu.vn/vi/Articles/3097/15910/mua-xuan-nam-981-khang-chien-chong-quan-tong-lan-thu-nhat-thang-loi.html",
+    "Báo Quân đội nhân dân — Trận Bạch Đằng thứ hai đã diễn ra như thế nào? — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018"
   ],
   "trich_van_tich": [
+    {
+      "sach": "Đại Việt sử ký toàn thư — lời Phạm Cự Lạng cùng các tướng quân",
+      "doan": "Chi bằng trước hãy tôn ông Thập đạo (Tướng quân Lê Hoàn) làm Thiên tử, sau đó hãy xuất quân thì hơn",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018",
+      "buoc": 2
+    },
+    {
+      "sach": "Đại Việt sử lược",
+      "doan": "Hầu Nhân Bảo đến Lãng Sơn, Trần Khâm Tộ đến Tây Kết, Lưu Trừng đến sông Bạch Đằng",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018",
+      "buoc": 3
+    },
     {
       "sach": "Khâm định Việt sử thông giám cương mục — Chính biên, quyển 1",
       "doan": "Nhà vua (chỉ Lê Hoàn) tự mình làm tướng để chống giặc, sai quân đóng cọc gỗ ở sông Bạch Đằng để cản đối phương.",
       "nguon_trich": "Cổng TTĐT scov.gov.vn (Ủy ban Nhà nước về người Việt Nam ở nước ngoài) — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/thuong-hai-thay-tuong-quan-hau-nhan-bao.html",
-      "buoc": 2
+      "buoc": 4
+    },
+    {
+      "sach": "Tống sử",
+      "doan": "Đến đây, Lê Hoàn giả vờ xin hàng để đánh lừa Nhân Bảo. Nhân Bảo bèn bị giết chết",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018",
+      "buoc": 6
+    },
+    {
+      "sach": "Tục tư trị thông giám",
+      "doan": "Giao Châu hành doanh của quân Tống phá được 15.000 quân của Lê Hoàn ở sông Bạch Đằng, chém được hơn 1.000 thủ cấp, lấy được 200 chiến hạm, thu được hàng vạn mũi tên, áo giáp.",
+      "nguon_trich": "Báo Quân đội nhân dân — http://sknc.qdnd.vn/chuyen-xua-nay/tran-bach-dang-thu-hai-da-dien-ra-nhu-the-nao-501018",
+      "buoc": 6
     },
     {
       "sach": "Khâm định Việt sử thông giám cương mục — Chính biên, quyển 1",
       "doan": "Khi quân Hầu Nhân Bảo tới, Nhà vua sai người trá hàng rồi lập mưu, dụ bắt được Hầu Nhân Bảo đem chém.",
       "nguon_trich": "Cổng TTĐT scov.gov.vn (Ủy ban Nhà nước về người Việt Nam ở nước ngoài) — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/thuong-hai-thay-tuong-quan-hau-nhan-bao.html",
-      "buoc": 3
+      "buoc": 6
     },
     {
       "sach": "Khâm định Việt sử thông giám cương mục — Chính biên, quyển 1",
       "doan": "Bọn Lưu Trừng sợ mà rút lui, Trần Khâm Tộ nghe tin cũng tháo chạy trở về. Nhà vua sai tướng xuất quân truy kích. Trần Khâm Tộ thua to, quân lính chết hơn quá nửa... Vua Tống bèn hạ lệnh rút lui.",
       "nguon_trich": "Cổng TTĐT scov.gov.vn (Ủy ban Nhà nước về người Việt Nam ở nước ngoài) — https://scov.gov.vn/ban-sac-van-hoa/viet-su-giai-thoai/thuong-hai-thay-tuong-quan-hau-nhan-bao.html",
-      "buoc": 5
+      "buoc": 7
     }
   ]
 }

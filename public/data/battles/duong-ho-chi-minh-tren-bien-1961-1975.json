@@ -1,0 +1,135 @@
+{
+  "ghi_chu": "Sa đồ Đường Hồ Chí Minh trên biển 1961-1975 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "duong-ho-chi-minh-tren-bien-1961-1975",
+  "ten": "Đường Hồ Chí Minh trên biển",
+  "nam": 1961,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Đoàn 759 vận tải thuỷ, sau là Lữ đoàn 125 Hải quân",
+  "doi_thu": "Hải quân, không quân Mỹ và chính quyền Sài Gòn phong toả trên biển",
+  "dia_diem": "Từ bến Đồ Sơn (Hải Phòng) dọc theo biển Đông tới các bến tiếp nhận ở Cà Mau, Trà Vinh, Bến Tre",
+  "lien_quan_tinh": [
+    "hai-phong",
+    "ca-mau"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "bien",
+      "diem": [
+        [50, 50],
+        [200, 500],
+        [50, 950]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [150, 100],
+        [500, 450],
+        [300, 900]
+      ],
+      "nhan": "Hải trình bí mật ven biển"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "ben-do-son",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 100,
+      "nhan": "Bến Đồ Sơn, Hải Phòng — điểm xuất phát"
+    },
+    {
+      "id": "tau-go-dau-tien",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 250,
+      "y": 250,
+      "nhan": "Tàu gỗ đầu tiên, đêm 11/10/1962"
+    },
+    {
+      "id": "luoi-phong-toa-my",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 600,
+      "y": 400,
+      "nhan": "Lưới phong toả hải quân, không quân Mỹ"
+    },
+    {
+      "id": "tau-danh-ca-nguy-trang",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 400,
+      "y": 550,
+      "nhan": "Tàu cải hoán thành tàu đánh cá không số hiệu"
+    },
+    {
+      "id": "ben-vam-lung",
+      "kieu": "dia-danh",
+      "x": 300,
+      "y": 880,
+      "nhan": "Bến Vàm Lũng, Cà Mau — điểm cập bến đầu tiên"
+    },
+    {
+      "id": "tau-vo-sat",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 350,
+      "y": 750,
+      "nhan": "Tàu vỏ sắt đầu tiên, 17/3/1963"
+    },
+    {
+      "id": "ben-tra-vinh",
+      "kieu": "dia-danh",
+      "x": 380,
+      "y": 830,
+      "nhan": "Bến Trà Vinh"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Thành lập Đoàn 759, mở tuyến chi viện chiến lược trên biển",
+      "mo_ta": "Ngày 23/10/1961, Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam quyết định thành lập Đoàn 759 vận tải thuỷ, tiền thân của Lữ đoàn 125 Hải quân, mở tuyến chi viện vũ khí cho chiến trường miền Nam bằng đường biển.",
+      "hien": ["ben-do-son"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Chuyến tàu gỗ đầu tiên rời bến Đồ Sơn",
+      "mo_ta": "Đêm 11/10/1962, chiếc tàu gỗ đầu tiên rời bến Đồ Sơn, chở 30 tấn vũ khí, vượt biển Đông cập bến Vàm Lũng, Cà Mau an toàn.",
+      "hien": ["ben-do-son", "tau-go-dau-tien", "ben-vam-lung"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Tàu vỏ sắt đầu tiên cập bến Trà Vinh",
+      "mo_ta": "Ngày 17/3/1963, chiếc tàu vỏ sắt đầu tiên chở 44 tấn vũ khí lên đường và cập bến Trà Vinh, mở rộng thêm một điểm tiếp nhận mới trên tuyến.",
+      "hien": ["tau-vo-sat", "ben-tra-vinh"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "\"Đoàn tàu không số\" giữa vòng phong toả",
+      "mo_ta": "Để giữ bí mật trước lưới phong toả của hải quân, không quân Mỹ, các tàu được cải hoán thành tàu đánh cá không có số hiệu cố định, trà trộn vào đoàn tàu của ngư dân địa phương trên biển — từ đó có tên gọi \"đoàn tàu không số\".",
+      "hien": ["tau-danh-ca-nguy-trang", "luoi-phong-toa-my"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Hơn 4.000 tấn vũ khí trong ba năm đầu",
+      "mo_ta": "Từ 1962 đến 1964, Đoàn 759 vận chuyển hơn 4.000 tấn vũ khí trang bị vào chiến trường miền Nam bằng đường biển.",
+      "hien": ["tau-danh-ca-nguy-trang", "ben-vam-lung", "ben-tra-vinh"]
+    },
+    {
+      "id": 6,
+      "tieu_de": "Cao điểm vận chuyển những năm cuối chiến tranh",
+      "mo_ta": "Riêng hai năm 1973-1974, tuyến vận tải huy động 380 lượt tàu, chở hơn 43.000 tấn hàng vào các bến miền Nam.",
+      "hien": ["tau-danh-ca-nguy-trang", "ben-vam-lung"]
+    }
+  ],
+  "ket_qua": "Từ 1961 đến 1975, Đoàn 759 và Lữ đoàn 125 Hải quân duy trì tuyến vận tải biển bí mật, vận chuyển hàng chục nghìn tấn vũ khí, trang bị từ miền Bắc chi viện các chiến trường Nam Bộ, Nam Trung Bộ.",
+  "y_nghia": "Đường Hồ Chí Minh trên biển cùng đường Trường Sơn trên bộ tạo thành hai tuyến chi viện chiến lược song song, góp phần quyết định vào thắng lợi của cuộc kháng chiến chống Mỹ.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Đường Hồ Chí Minh trên biển và kỳ tích những \"Đoàn tàu không số\" — Báo Hà Tĩnh điện tử — https://baohatinh.vn/duong-ho-chi-minh-tren-bien-va-ky-tich-nhung-doan-tau-khong-so-post221308.html"
+  ],
+  "ghi_chu_bien_tap": "Nguồn baohatinh.vn (báo đảng bộ tỉnh) đã mở, xác nhận ngày 23/10/1961, tàu gỗ đầu tiên rời Đồ Sơn 11/10/1962 cập Vàm Lũng, tàu vỏ sắt 17/3/1963 cập Trà Vinh, số liệu 1962-1964 và 1973-1974. lien_quan_tinh dùng hai đầu mối đã xác định rõ trong nguồn (Hải Phòng nơi xuất phát, Cà Mau nơi cập bến đầu tiên) — tuyến thực tế còn qua nhiều tỉnh ven biển khác chưa liệt kê hết. Toạ độ pin (mục overlay) neo tại di tích Bến K15 Đồ Sơn, do_tin_cay_toa_do=trung-binh vì chưa tra ra toạ độ số thập phân từ nguồn đã mở."
+}

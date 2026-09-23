@@ -47,6 +47,7 @@ import type { Map as MlMap } from "maplibre-gl";
 import { esc } from "./util/html";
 import { fetchJson } from "./util/fetch";
 import { str, num, rec, itemsOf } from "./types/parse";
+import { escVan } from "./popup-noi-dung";
 
 /** Cấu hình tối thiểu 1 lớp phủ mà module này cần — main truyền OVERLAYS
  * (kiểu rộng hơn, có thêm circleColor/nguon/popup) vào đây vẫn khớp vì
@@ -225,8 +226,8 @@ export function initSearch(
         (r, i) => `
         <li id="vn-search-opt-${i}" role="option" class="vn-search-opt${i === activeIdx ? " active" : ""}" aria-selected="${i === activeIdx}">
           <span class="vn-search-icon">${esc(r.overlayIcon)}</span>
-          <span class="vn-search-name">${esc(r.ten)}</span>
-          <span class="vn-search-loc">${esc(r.diaDiem)}</span>
+          <span class="vn-search-name">${escVan(r.ten)}</span>
+          <span class="vn-search-loc">${escVan(r.diaDiem)}</span>
         </li>`,
       )
       .join("");
@@ -259,8 +260,8 @@ export function initSearch(
     moPopup(
       map,
       [item.lon, item.lat],
-      `<strong>${esc(item.overlayIcon)} ${esc(item.ten)}</strong><br/>` +
-        `<span style="font-size:0.82em;color:#57534e">${esc(item.diaDiem)}</span>`,
+      `<strong>${esc(item.overlayIcon)} ${escVan(item.ten)}</strong><br/>` +
+        `<span style="font-size:0.82em;color:var(--chu-mem)">${escVan(item.diaDiem)}</span>`,
       { maxWidth: "280px" },
     );
   }

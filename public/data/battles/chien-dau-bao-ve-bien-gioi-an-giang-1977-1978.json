@@ -1,0 +1,123 @@
+{
+  "ghi_chu": "Sa đồ Chiến đấu bảo vệ biên giới An Giang 1977-1978 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "id": "chien-dau-bao-ve-bien-gioi-an-giang-1977-1978",
+  "ten": "Chiến đấu bảo vệ biên giới An Giang",
+  "nam": 1977,
+  "sa_do_kieu": "tong-quat",
+  "chi_huy": "Sư đoàn 330 (Quân khu 9) cùng lực lượng vũ trang địa phương An Giang",
+  "doi_thu": "Lực lượng vũ trang Campuchia Dân chủ (Khmer Đỏ)",
+  "dia_diem": "Tuyến biên giới An Giang, khu vực Bảy Núi — Tịnh Biên — Tri Tôn — Châu Đốc",
+  "lien_quan_tinh": [
+    "an-giang"
+  ],
+  "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý chính xác.",
+  "dia_hinh": [
+    {
+      "kieu": "nui",
+      "diem": [
+        [300, 200],
+        [500, 150],
+        [700, 220]
+      ],
+      "nhan": "Vùng Bảy Núi"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [200, 600],
+        [500, 550],
+        [800, 600]
+      ],
+      "nhan": "Đường biên giới An Giang"
+    }
+  ],
+  "phan_tu": [
+    {
+      "id": "quan-pol-pot-tan-cong",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 500,
+      "y": 550,
+      "nhan": "Quân Pol Pot đánh vào 14/16 xã biên giới, 30/4/1977"
+    },
+    {
+      "id": "trung-doan-1-chau-doc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 250,
+      "y": 500,
+      "nhan": "Trung đoàn 1 lên Châu Đốc"
+    },
+    {
+      "id": "trung-doan-2-tinh-bien",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 450,
+      "y": 400,
+      "nhan": "Trung đoàn 2 lên Tịnh Biên"
+    },
+    {
+      "id": "trung-doan-3-ba-chuc",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 600,
+      "y": 350,
+      "nhan": "Trung đoàn 3 lên Ba Chúc, Tri Tôn"
+    },
+    {
+      "id": "van-giao-cau-bung-tien",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 520,
+      "y": 300,
+      "nhan": "Địch chiếm xã Văn Giáo, đánh sập cầu Bưng Tiền, 28/4/1978"
+    },
+    {
+      "id": "mui-phan-cong-bay-nui",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [450, 400],
+      "den": [520, 300],
+      "nhan": "Phản công toàn tuyến Bảy Núi, 1-3/5/1978"
+    }
+  ],
+  "buoc": [
+    {
+      "id": 1,
+      "tieu_de": "Đánh đồng loạt vào 14 xã biên giới",
+      "mo_ta": "Ngày 30/4/1977, quân Pol Pot đồng loạt tiến công 14 trong 16 xã biên giới tỉnh An Giang, tàn phá làng mạc, trường học.",
+      "hien": ["quan-pol-pot-tan-cong"]
+    },
+    {
+      "id": 2,
+      "tieu_de": "Sư đoàn 330 cơ động lên ba hướng biên giới",
+      "mo_ta": "Ngay trong đêm 30/4/1977, Sư đoàn 330 được lệnh cơ động chiến đấu lên biên giới An Giang: Trung đoàn 1 lên khu vực thị xã Châu Đốc, Trung đoàn 2 lên Tịnh Biên, Trung đoàn 3 lên Ba Chúc, huyện Tri Tôn.",
+      "hien": ["quan-pol-pot-tan-cong", "trung-doan-1-chau-doc", "trung-doan-2-tinh-bien", "trung-doan-3-ba-chuc"]
+    },
+    {
+      "id": 3,
+      "tieu_de": "Chủ động tiến công trước khi địch ra tay",
+      "mo_ta": "Từ trung tuần tháng 12/1977 đến đầu tháng 1/1978, nắm được quân Pol Pot đang tập trung lực lượng chuẩn bị tấn công lớn vào khu vực Bảy Núi, Sư đoàn 330 cùng lực lượng vũ trang An Giang chủ động tiến công trước.",
+      "hien": ["trung-doan-2-tinh-bien", "trung-doan-3-ba-chuc"]
+    },
+    {
+      "id": 4,
+      "tieu_de": "Địch đánh chiếm Văn Giáo, cắt đường Nhà Bàn — Chi Lăng",
+      "mo_ta": "Ngày 28/4/1978, địch từ núi Rô đánh chiếm Uỷ ban xã Văn Giáo, đánh sập cầu Bưng Tiền, cắt đứt tuyến đường Nhà Bàn — Chi Lăng.",
+      "hien": ["van-giao-cau-bung-tien"]
+    },
+    {
+      "id": 5,
+      "tieu_de": "Phản công toàn tuyến Bảy Núi",
+      "mo_ta": "Ngày 1/5/1978, quân ta phản công đánh địch trên toàn vùng Bảy Núi; đến ngày 3/5, chiếm lại toàn bộ khu vực đã mất, phá tan âm mưu chiếm Bảy Núi của địch.",
+      "hien": ["van-giao-cau-bung-tien", "mui-phan-cong-bay-nui", "trung-doan-2-tinh-bien"]
+    }
+  ],
+  "ket_qua": "Quân và dân An Giang cùng Sư đoàn 330 đánh lui các đợt tiến công của quân Pol Pot năm 1977, giữ vững toàn tuyến biên giới; đợt phản công tháng 5/1978 tại Bảy Núi thu hồi toàn bộ khu vực bị chiếm, phá tan âm mưu đánh chiếm vùng này của địch.",
+  "y_nghia": "Cuộc chiến đấu bảo vệ biên giới An Giang 1977-1978 là một mặt trận trọng yếu trong cuộc chiến tranh bảo vệ biên giới Tây Nam, mở đầu quá trình quân và dân Việt Nam đánh bại quân Khmer Đỏ trên toàn tuyến biên giới.",
+  "trang_thai": "draft",
+  "nguon": [
+    "Chiến trường An Giang trong cuộc chiến tranh biên giới Tây Nam 1977-1979 — Văn Nghệ An Giang, Sở Văn hoá, Thể thao và Du lịch An Giang — https://vannghe.angiang.gov.vn/chien-truong-an-giang-trong-cuoc-chien-tranh-bien-gioi-tay-nam-1977-1979/"
+  ],
+  "ghi_chu_bien_tap": "Nguồn vannghe.angiang.gov.vn (cổng Sở VHTTDL An Giang, gov.vn) đã mở, xác nhận ngày 30/4/1977, Sư đoàn 330 và ba trung đoàn, diễn biến Văn Giáo — cầu Bưng Tiền 28/4/1978 và phản công 1-3/5/1978. Số liệu thương vong tổng thể cả giai đoạn 1977-1979 (nguồn nêu 4.542 địch bị diệt, 637 quân ta hy sinh, thảm sát Ba Chúc hơn 3.000 dân) KHÔNG đưa vào mo_ta/ket_qua vì đó là số liệu toàn chiến trường An Giang cả giai đoạn, không riêng đợt 1977-1978 đang thuật ở đây — tránh gán nhầm số liệu diện rộng cho sự kiện hẹp."
+}

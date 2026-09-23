@@ -1,12 +1,13 @@
 {
-  "ghi_chu": "Sa đồ trận Rạch Gầm – Xoài Mút 1785 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Con số 'gần 5 vạn quân Xiêm' theo cách chép truyền thống (Đại Nam chính biên liệt truyện / Hoàng Lê nhất thống chí), mang tính ước lệ — cần tra thêm nếu muốn đối chiếu số liệu hiện đại. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ trận Rạch Gầm – Xoài Mút 1785 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Hai mốc ngày và hai con số tổn thất của địch được nêu song song vì các nguồn nhà nước chép khác nhau; xem trường ton_that và thoi_gian.",
   "id": "rach-gam-xoai-mut-1785",
   "ten": "Rạch Gầm – Xoài Mút 1785",
   "nam": 1785,
   "sa_do_kieu": "tong-quat",
   "chi_huy": "Nguyễn Huệ",
-  "doi_thu": "Quân Xiêm (theo Nguyễn Ánh)",
-  "dia_diem": "Khúc sông Tiền Rạch Gầm – Xoài Mút, Tiền Giang (nay tỉnh Đồng Tháp)",
+  "doi_thu": "Quân Xiêm (Chiêu Tăng, Chiêu Sương) cùng quân Nguyễn Ánh",
+  "dia_diem": "Khúc sông Tiền từ Rạch Gầm đến Xoài Mút, xã Kim Sơn, Châu Thành, Tiền Giang (nay tỉnh Đồng Tháp)",
+  "thoi_gian": "Đêm 19 rạng sáng 20/1/1785 — Bảo tàng Lịch sử Quốc gia chép đêm 18 rạng sáng 19/1/1785 (8 tháng Chạp năm Giáp Thìn)",
   "lien_quan_tinh": [
     "dong-thap"
   ],
@@ -15,196 +16,384 @@
     {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          300
-        ],
-        [
-          500,
-          280
-        ],
-        [
-          1000,
-          320
-        ]
+        [0, 300],
+        [300, 285],
+        [620, 295],
+        [1000, 312]
       ],
-      "nhan": "Sông Tiền"
+      "nhan": "Sông Tiền — khúc mai phục dài khoảng 7 km, rộng 1–2 km"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [366, 110],
+        [374, 205],
+        [384, 286]
+      ],
+      "nhan": "Rạch Gầm"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [772, 110],
+        [766, 205],
+        [758, 290]
+      ],
+      "nhan": "Rạch Xoài Mút"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [478, 312],
+        [560, 300],
+        [664, 314],
+        [702, 344],
+        [576, 362],
+        [488, 342]
+      ],
+      "nhan": "Cù lao Thới Sơn — cây cối rậm rạp, thuận cho giấu quân"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [520, 486],
+        [372, 526],
+        [214, 560]
+      ],
+      "nhan": "Đường bộ tàn quân Xiêm rút qua Chân Lạp"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-xiem",
+      "id": "tra-tan",
+      "kieu": "dia-danh",
+      "x": 118,
+      "y": 128,
+      "nhan": "Trà Tân — nơi quân Xiêm đóng",
+      "quy_mo": "cách Rạch Gầm khoảng 15 km về phía thượng nguồn"
+    },
+    {
+      "id": "thuy-quan-xiem",
       "kieu": "thuyen",
       "ben": "dich",
-      "x": 150,
-      "y": 280,
-      "nhan": "Thuỷ quân Xiêm (theo Nguyễn Ánh)"
+      "x": 196,
+      "y": 300,
+      "nhan": "Thuỷ quân Xiêm — Chiêu Tăng, Chiêu Sương",
+      "quy_mo": "300 chiến thuyền · 5 vạn quân"
     },
     {
-      "id": "cu-lao",
+      "id": "rach-gam",
       "kieu": "dia-danh",
-      "x": 500,
-      "y": 270,
-      "nhan": "Cù lao giữa sông"
+      "x": 374,
+      "y": 196,
+      "nhan": "Cửa Rạch Gầm — nơi khoá đuôi"
     },
     {
-      "id": "quan-ta-phuc-kich-bac",
-      "kieu": "quan",
-      "ben": "ta",
-      "x": 450,
-      "y": 150,
-      "nhan": "Đại bác, quân Tây Sơn mai phục bờ bắc"
+      "id": "xoai-mut",
+      "kieu": "dia-danh",
+      "x": 768,
+      "y": 196,
+      "nhan": "Cửa Xoài Mút — nơi chặn đầu"
     },
     {
-      "id": "quan-ta-phuc-kich-nam",
+      "id": "cu-lao-thoi-son",
+      "kieu": "dia-danh",
+      "x": 566,
+      "y": 336,
+      "nhan": "Cù lao Thới Sơn"
+    },
+    {
+      "id": "phuc-kich-bo-bac",
       "kieu": "quan",
       "ben": "ta",
-      "x": 450,
-      "y": 430,
-      "nhan": "Quân Tây Sơn mai phục bờ nam"
+      "x": 528,
+      "y": 104,
+      "nhan": "Bộ binh, pháo binh Tây Sơn mai phục bờ bắc"
+    },
+    {
+      "id": "phuc-kich-bo-nam",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 528,
+      "y": 512,
+      "nhan": "Bộ binh, pháo binh Tây Sơn mai phục bờ nam"
+    },
+    {
+      "id": "phao-tren-cu-lao",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 712,
+      "y": 420,
+      "nhan": "Pháo binh Tây Sơn giấu trên cù lao"
     },
     {
       "id": "mui-nhu-dich",
       "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        300,
-        290
-      ],
-      "den": [
-        500,
-        280
-      ],
-      "nhan": "Nhử quân Xiêm vào giữa trận địa"
+      "ben": "dich",
+      "tu": [268, 292],
+      "den": [462, 282],
+      "nhan": "Đoàn thuyền Xiêm xuôi dòng đánh xuống Mỹ Tho"
     },
     {
-      "id": "mui-hoa-cong-bac",
+      "id": "mui-chan-dau",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        450,
-        170
-      ],
-      "den": [
-        550,
-        270
-      ],
-      "nhan": "Hỏa công, đại bác từ bờ bắc"
+      "tu": [782, 254],
+      "den": [692, 284],
+      "nhan": "Thuỷ binh Tây Sơn từ Xoài Mút lao ra chặn đầu"
     },
     {
-      "id": "mui-hoa-cong-nam",
+      "id": "mui-khoa-duoi",
       "kieu": "mui-ten",
       "ben": "ta",
-      "tu": [
-        450,
-        410
-      ],
-      "den": [
-        550,
-        300
-      ],
-      "nhan": "Hỏa công, đại bác từ bờ nam"
+      "tu": [356, 248],
+      "den": [438, 286],
+      "nhan": "Thuỷ binh Tây Sơn từ Rạch Gầm lao ra khoá đuôi"
     },
     {
       "id": "thuyen-dich-chim",
       "kieu": "thuyen",
       "ben": "dich",
-      "x": 650,
-      "y": 290,
-      "nhan": "Thuyền Xiêm bị nhấn chìm"
+      "x": 636,
+      "y": 246,
+      "nhan": "Chiến thuyền Xiêm bị đánh chìm và bốc cháy"
+    },
+    {
+      "id": "duong-chay-chan-lap",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [512, 470],
+      "den": [286, 542],
+      "nhan": "Tàn quân mở đường máu, chạy bộ qua Chân Lạp"
+    },
+    {
+      "id": "my-tho",
+      "kieu": "dia-danh",
+      "x": 912,
+      "y": 356,
+      "nhan": "Mỹ Tho — hướng tiến công của quân Xiêm"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 800,
-      "y": 230,
-      "nhan": "Quân Xiêm gần như bị tiêu diệt trong một đêm"
+      "x": 884,
+      "y": 468,
+      "nhan": "Toàn thắng — trận đánh kết thúc lúc trời rạng sáng"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Quân Xiêm theo Nguyễn Ánh vào Nam Bộ",
-      "mo_ta": "Cuối 1784, được Nguyễn Ánh cầu viện, quân Xiêm tiến vào chiếm đóng nhiều vùng ở Nam Bộ, cướp phá gây oán ghét trong dân.",
+      "tieu_de": "Quân Xiêm theo Nguyễn Ánh vào Gia Định",
+      "thoi_gian": "Cuối năm 1784",
+      "dia_danh": "Trà Tân — Mỹ Tho",
+      "mo_ta": "Được Nguyễn Ánh cầu viện, vua Xiêm cử hai tướng Chiêu Tăng và Chiêu Sương đem 5 vạn quân cùng 300 chiến thuyền sang đánh Đại Việt. Đại quân Xiêm dừng lại ở Trà Tân, cách cửa Rạch Gầm khoảng 15 km về phía thượng nguồn, lấy đó làm bàn đạp để đánh xuống Mỹ Tho. Trên đường tiến quân, lính Xiêm cướp phá làng mạc khiến dân chúng Nam Bộ oán ghét, và chính sự oán ghét đó về sau trở thành tai mắt cho quân Tây Sơn nắm được đường đi nước bước của địch.",
       "hien": [
-        "quan-dich-xiem"
+        "tra-tan",
+        "thuy-quan-xiem",
+        "my-tho"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-dia-diem-chien-thang-rach-gam-xoai-mut-1209",
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3091/19881/di-tich-lich-su-rach-gam-xoai-mut.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nguyễn Huệ chọn khúc sông làm trận địa",
-      "mo_ta": "Nhận thấy địa hình có cù lao, lòng sông hẹp thuận lợi mai phục, Nguyễn Huệ bí mật bố trí đại bác, thuyền chiến ở hai bên bờ và trên các cù lao.",
+      "tieu_de": "Nguyễn Huệ chọn khúc sông Rạch Gầm – Xoài Mút làm trận địa",
+      "thoi_gian": "Đầu tháng 1/1785",
+      "dia_danh": "Khúc sông Tiền dài khoảng 7 km",
+      "mo_ta": "Nguyễn Huệ chọn đoạn sông Tiền từ cửa Rạch Gầm đến cửa Xoài Mút, dài khoảng 7 km và rộng từ 1 đến 2 km, làm nơi quyết chiến. Hai rạch nhỏ đổ vào sông Tiền ở hai đầu khúc sông cho phép giấu thuyền chiến rồi bất ngờ lao ra khoá cả đầu lẫn đuôi đội hình địch. Giữa dòng có cù lao Thới Sơn cây cối rậm rạp, rất thuận cho việc giấu quân và mai phục. Địa hình đó biến một khúc sông rộng thành cái túi khép kín.",
       "hien": [
-        "quan-dich-xiem",
-        "cu-lao",
-        "quan-ta-phuc-kich-bac",
-        "quan-ta-phuc-kich-nam"
+        "rach-gam",
+        "xoai-mut",
+        "cu-lao-thoi-son",
+        "thuy-quan-xiem"
+      ],
+      "nguon": [
+        "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3091/19881/di-tich-lich-su-rach-gam-xoai-mut.html",
+        "Báo Đồng Tháp — https://baodongthap.vn/am-vang-chien-thang-rach-gam-xoai-mut-a102666.html"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Nhử quân Xiêm vào trận địa mai phục",
-      "mo_ta": "Quân Tây Sơn cho thuyền nhỏ khiêu chiến rồi giả thua, dẫn dụ đoàn thuyền Xiêm tiến vào giữa khúc sông đã bố trí sẵn.",
+      "tieu_de": "Bố trí trận địa mai phục hai bờ và trên cù lao",
+      "dia_danh": "Bờ bắc · bờ nam · cù lao Thới Sơn",
+      "mo_ta": "Quân Tây Sơn bí mật đặt pháo binh trên cả hai bờ sông và trên cù lao, đồng thời giấu thuỷ binh trong hai rạch Gầm và Xoài Mút. Một bộ phận được bố trí ở cù lao Thới Sơn và cù lao Phú Túc để ngăn địch tháo chạy sang ngả Bến Tre. Toàn bộ việc bố trí hoàn tất trong đêm và giữ được bí mật, nên đến lúc nổ súng đoàn thuyền Xiêm vẫn đi vào giữa trận địa mà không hay biết.",
       "hien": [
-        "quan-dich-xiem",
-        "cu-lao",
-        "mui-nhu-dich"
+        "phuc-kich-bo-bac",
+        "phuc-kich-bo-nam",
+        "phao-tren-cu-lao",
+        "cu-lao-thoi-son",
+        "rach-gam",
+        "xoai-mut"
+      ],
+      "nguon": [
+        "Báo Đồng Tháp — https://baodongthap.vn/am-vang-chien-thang-rach-gam-xoai-mut-a102666.html",
+        "Tạp chí Hậu cần Quân đội — http://hc.qdnd.vn/lich-su-hau-can/chien-thang-rach-gam-xoai-mut-va-bai-hoc-ve-cong-tac-hau-can-482369"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Bất ngờ dùng hỏa công, đại bác đánh úp",
-      "mo_ta": "Đêm 19 rạng 20/1/1785, quân Tây Sơn đồng loạt nã đại bác và phóng hỏa từ hai bờ, chặn cả đầu lẫn cuối đoàn thuyền địch.",
+      "tieu_de": "Đoàn thuyền Xiêm rời Trà Tân, xuôi dòng lọt vào trận địa",
+      "thoi_gian": "Đêm 19 rạng sáng 20/1/1785 (có nguồn chép đêm 18 rạng 19/1/1785)",
+      "dia_danh": "Từ Trà Tân xuôi qua cửa Rạch Gầm",
+      "mo_ta": "Từ Trà Tân, 300 chiến thuyền Xiêm dưới quyền Chiêu Tăng xuôi dòng tấn công Mỹ Tho. Vừa qua khỏi Rạch Gầm, toàn bộ đoàn thuyền lọt vào trận địa mai phục của quân Tây Sơn. Nguyễn Huệ chờ cho lực lượng đi đầu của địch đến cửa sông Xoài Mút và lực lượng cuối cùng vừa qua hết cửa Rạch Gầm mới hạ lệnh công kích — thời điểm mà cả đội hình dài hàng cây số nằm gọn trong đoạn sông đã cài sẵn hoả lực hai bờ.",
       "hien": [
-        "cu-lao",
-        "mui-hoa-cong-bac",
-        "mui-hoa-cong-nam"
+        "tra-tan",
+        "thuy-quan-xiem",
+        "mui-nhu-dich",
+        "rach-gam",
+        "xoai-mut"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-dia-diem-chien-thang-rach-gam-xoai-mut-1209",
+        "Tạp chí Hậu cần Quân đội — http://hc.qdnd.vn/lich-su-hau-can/chien-thang-rach-gam-xoai-mut-va-bai-hoc-ve-cong-tac-hau-can-482369"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Quân Xiêm gần như bị tiêu diệt trong một đêm",
-      "mo_ta": "Phần lớn chiến thuyền và quân Xiêm bị nhấn chìm; số ít sống sót phải chạy bộ về nước.",
+      "tieu_de": "Chặn đầu ở Xoài Mút, khoá đuôi ở Rạch Gầm",
+      "dia_danh": "Cửa Rạch Gầm · cửa Xoài Mút",
+      "mo_ta": "Thuỷ binh Tây Sơn từ Rạch Gầm và Xoài Mút bất ngờ lao ra chặn đầu và khoá đuôi, dồn toàn bộ thuyền chiến của địch vào vòng vây. Đội hình hành quân dài của quân Xiêm bị cắt làm nhiều khúc, mất khả năng ứng cứu lẫn nhau, cũng không còn đường quay lại thượng nguồn. Trên một khúc sông chỉ rộng một tới hai cây số, 300 chiến thuyền chen chúc trở thành mục tiêu không thể trượt cho pháo binh đặt sẵn trên bờ.",
       "hien": [
-        "thuyen-dich-chim",
-        "co-thang"
+        "mui-chan-dau",
+        "mui-khoa-duoi",
+        "thuy-quan-xiem",
+        "cu-lao-thoi-son"
+      ],
+      "nguon": [
+        "Tạp chí Hậu cần Quân đội — http://hc.qdnd.vn/lich-su-hau-can/chien-thang-rach-gam-xoai-mut-va-bai-hoc-ve-cong-tac-hau-can-482369",
+        "Đài Tiếng nói Việt Nam — https://vov.vn/xa-hoi/tien-giang-long-trong-ky-niem-240-nam-chien-thang-rach-gam-xoai-mut-post1147089.vov"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Nguyễn Ánh chạy sang Xiêm lánh nạn",
-      "mo_ta": "Trận đại thắng bảo vệ vẹn toàn Nam Bộ, đánh tan mưu đồ dựa ngoại bang của Nguyễn Ánh trong giai đoạn này.",
+      "tieu_de": "Pháo binh hai bờ và trên cù lao nã vào đội hình địch",
+      "dia_danh": "Hai bờ sông Tiền · cù lao Thới Sơn",
+      "mo_ta": "Pháo binh Tây Sơn từ trên bờ và từ cù lao bắn mãnh liệt vào đội hình quân giặc. Nguyễn Huệ trực tiếp đốc chiến. Mọi cố gắng chống cự của địch đều bị đập tan, các chiến thuyền bị đánh chìm hoặc bốc cháy. Đội hình thuỷ quân Xiêm tan vỡ ngay trong lòng cái túi đã khép, không mở được đường ra ở bất cứ đầu nào của khúc sông.",
       "hien": [
+        "phuc-kich-bo-bac",
+        "phuc-kich-bo-nam",
+        "phao-tren-cu-lao",
+        "thuyen-dich-chim"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-dia-diem-chien-thang-rach-gam-xoai-mut-1209",
+        "Tạp chí Hậu cần Quân đội — http://hc.qdnd.vn/lich-su-hau-can/chien-thang-rach-gam-xoai-mut-va-bai-hoc-ve-cong-tac-hau-can-482369"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Trận đánh kết thúc lúc trời rạng sáng",
+      "thoi_gian": "Trời vừa rạng sáng",
+      "dia_danh": "Khúc sông Rạch Gầm – Xoài Mút",
+      "mo_ta": "Trận thuỷ chiến kết thúc khi trời vừa rạng sáng, chưa đầy một ngày kể từ lúc nổ súng. Hơn 300 chiến thuyền Xiêm bị nhấn chìm; tàn quân phải liều chết mở đường máu mới thoát được thân, bỏ thuyền chạy bộ qua Chân Lạp. Về số quân địch bị diệt, các nguồn nhà nước chép khác nhau: Cục Di sản văn hoá và báo địa phương ghi gần 5 vạn quân Xiêm – Nguyễn, Tạp chí Hậu cần Quân đội ghi gần 4 vạn quân bị giết tại trận.",
+      "hien": [
+        "thuyen-dich-chim",
+        "duong-chay-chan-lap",
         "co-thang"
+      ],
+      "nguon": [
+        "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-dia-diem-chien-thang-rach-gam-xoai-mut-1209",
+        "Tạp chí Hậu cần Quân đội — http://hc.qdnd.vn/lich-su-hau-can/chien-thang-rach-gam-xoai-mut-va-bai-hoc-ve-cong-tac-hau-can-482369"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Nguyễn Ánh lưu vong, Nam Bộ được giữ vẹn",
+      "dia_danh": "Nam Bộ",
+      "mo_ta": "Mất đội quân ngoại viện chỉ trong một trận, Nguyễn Ánh phải chạy sang Xiêm lánh nạn. Toàn bộ vùng đất Nam Bộ được giữ vẹn, mưu đồ dựa vào ngoại bang để giành lại quyền lực bị chặn đứng trong giai đoạn này. Trận đánh cũng để lại một bài học được chính sử ghi lại bằng lời của người trong cuộc: từ đó người Xiêm miệng tuy nói khoác mà lòng thì sợ quân Tây Sơn.",
+      "hien": [
+        "co-thang",
+        "my-tho"
+      ],
+      "nguon": [
+        "Đài Tiếng nói Việt Nam — https://vov.vn/xa-hoi/tien-giang-long-trong-ky-niem-240-nam-chien-thang-rach-gam-xoai-mut-post1147089.vov"
       ]
     }
   ],
-  "ket_qua": "Nhấn chìm gần như toàn bộ đoàn thuyền quân Xiêm chỉ trong một đêm, Nguyễn Ánh phải chạy sang Xiêm lánh nạn, bảo vệ vẹn toàn Nam Bộ.",
-  "y_nghia": "Một trong những trận thủy chiến lớn nhất lịch sử Việt Nam, đập tan âm mưu dựa vào ngoại bang của Nguyễn Ánh, bảo vệ vẹn toàn Nam Bộ.",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Thuỷ binh Tây Sơn giấu trong rạch Gầm và rạch Xoài Mút",
+        "Pháo binh bố trí trên hai bờ sông và trên cù lao Thới Sơn"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "5 vạn quân",
+          "nguon": "Cục Di sản văn hoá · Bảo tàng Lịch sử Quốc gia"
+        },
+        {
+          "so": "50.000 quân",
+          "nguon": "Báo Đồng Tháp"
+        }
+      ],
+      "don_vi": [
+        "Quân Xiêm do Chiêu Tăng và Chiêu Sương chỉ huy, có Lục Côn và Sa Uyển",
+        "Quân của chúa Nguyễn đi theo"
+      ],
+      "vu_khi": [
+        "300 chiến thuyền"
+      ]
+    },
+    "nguon": [
+      "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-dia-diem-chien-thang-rach-gam-xoai-mut-1209",
+      "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3091/19881/di-tich-lich-su-rach-gam-xoai-mut.html",
+      "Báo Đồng Tháp — https://baodongthap.vn/am-vang-chien-thang-rach-gam-xoai-mut-a102666.html"
+    ]
+  },
+  "ton_that": {
+    "doi_thu": [
+      {
+        "so": "gần 5 vạn quân Xiêm – Nguyễn bị tiêu diệt, hơn 300 chiến thuyền bị nhấn chìm",
+        "nguon": "Cục Di sản văn hoá · Báo Đồng Tháp · Đài Tiếng nói Việt Nam"
+      },
+      {
+        "so": "300 thuyền chiến bị đánh chìm và đốt cháy, gần 4 vạn quân bị giết tại trận",
+        "nguon": "Tạp chí Hậu cần Quân đội"
+      }
+    ],
+    "nguon": [
+      "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-dia-diem-chien-thang-rach-gam-xoai-mut-1209",
+      "Tạp chí Hậu cần Quân đội — http://hc.qdnd.vn/lich-su-hau-can/chien-thang-rach-gam-xoai-mut-va-bai-hoc-ve-cong-tac-hau-can-482369",
+      "Đài Tiếng nói Việt Nam — https://vov.vn/xa-hoi/tien-giang-long-trong-ky-niem-240-nam-chien-thang-rach-gam-xoai-mut-post1147089.vov"
+    ]
+  },
+  "ket_qua": "Hơn 300 chiến thuyền Xiêm bị nhấn chìm, đại quân Xiêm bị tiêu diệt chỉ trong chưa đầy một ngày; tàn quân phải bỏ thuyền chạy bộ qua Chân Lạp, Nguyễn Ánh chạy sang Xiêm lánh nạn.",
+  "y_nghia": "Một trong những trận thuỷ chiến lớn nhất lịch sử Việt Nam, đập tan âm mưu dựa vào ngoại bang của Nguyễn Ánh, bảo vệ vẹn toàn Nam Bộ.",
   "trang_thai": "draft",
   "nguon": [
     "Đại Nam chính biên liệt truyện",
     "Hoàng Lê nhất thống chí",
-    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "Cục Di sản văn hoá — https://dsvh.gov.vn/di-tich-lich-su-dia-diem-chien-thang-rach-gam-xoai-mut-1209",
+    "Bảo tàng Lịch sử Quốc gia — https://baotanglichsu.vn/vi/Articles/3091/19881/di-tich-lich-su-rach-gam-xoai-mut.html",
+    "Tạp chí Hậu cần Quân đội — http://hc.qdnd.vn/lich-su-hau-can/chien-thang-rach-gam-xoai-mut-va-bai-hoc-ve-cong-tac-hau-can-482369",
+    "Báo Đồng Tháp — https://baodongthap.vn/am-vang-chien-thang-rach-gam-xoai-mut-a102666.html",
+    "Đài Tiếng nói Việt Nam — https://vov.vn/xa-hoi/tien-giang-long-trong-ky-niem-240-nam-chien-thang-rach-gam-xoai-mut-post1147089.vov"
   ],
   "trich_van_tich": [
     {
       "sach": "Đại Nam thực lục",
       "doan": "Người Xiêm từ sau cuộc bại trận năm Giáp Thìn, miệng tuy nói khoác mà lòng thì sợ Tây Sơn như cọp",
-      "nguon_trich": "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-rach-gam-xoai-mut-nam-1785-post205619.gd"
+      "nguon_trich": "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-rach-gam-xoai-mut-nam-1785-post205619.gd",
+      "buoc": 8
     },
     {
       "sach": "Đại Nam thực lục chính biên",
       "doan": "Lê Văn Quân và các quân cũng đều tan vỡ, bỏ chạy",
       "nguon_trich": "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-rach-gam-xoai-mut-nam-1785-post205619.gd",
-      "buoc": 6
+      "buoc": 7
     },
     {
       "sach": "Mạc thị gia phả — Vũ Thế Dinh",
       "doan": "Lúc ở Xiêm La ra đi, thủy binh và bộ binh tổng cộng là năm vạn, đến đây chỉ còn hơn một vạn. Chiêu Tăng rất lấy làm hổ thẹn...",
       "nguon_trich": "Tạp chí điện tử Giáo dục Việt Nam — https://giaoduc.net.vn/nhin-lai-tran-rach-gam-xoai-mut-nam-1785-post205619.gd",
-      "buoc": 5
+      "buoc": 7
     }
   ]
 }

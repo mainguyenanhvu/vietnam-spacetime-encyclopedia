@@ -1,12 +1,14 @@
 {
-  "ghi_chu": "Sa đồ Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long 1786 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long 1786 — MINH HOẠ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý. Đây là NỘI CHIẾN giữa hai thế lực người Việt, nên khai loai_xung_dot=noi-chien.",
   "id": "nguyen-hue-diet-trinh-1786",
   "ten": "Nguyễn Huệ diệt họ Trịnh, giải phóng Thăng Long (1786)",
   "nam": 1786,
   "sa_do_kieu": "tong-quat",
+  "loai_xung_dot": "noi-chien",
   "chi_huy": "Nguyễn Huệ",
   "doi_thu": "Chúa Trịnh (Trịnh Khải)",
-  "dia_diem": "Thành Sơn Nam, sông Vị Hoàng, kinh thành Thăng Long",
+  "dia_diem": "Thành Phú Xuân, cửa Đại An, sông Vị Hoàng, thành Sơn Nam, kinh thành Thăng Long",
+  "thoi_gian": "Tháng 5 – tháng 7 năm Bính Ngọ (1786)",
   "lien_quan_tinh": [
     "ha-noi",
     "hung-yen"
@@ -14,156 +16,393 @@
   "sa_do_ghi_chu": "Sa đồ minh hoạ theo diễn biến chính sử, KHÔNG theo tỉ lệ địa lý chính xác.",
   "dia_hinh": [
     {
+      "kieu": "nui",
+      "diem": [
+        [40, 580],
+        [130, 534],
+        [232, 570]
+      ],
+      "nhan": "Dãy Hải Vân"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [200, 518],
+        [360, 468],
+        [500, 392],
+        [600, 322],
+        [500, 180]
+      ],
+      "nhan": "Đường tiến quân thuỷ bộ của Tây Sơn ra Bắc Hà"
+    },
+    {
+      "kieu": "bien",
+      "diem": [
+        [900, 600],
+        [932, 420],
+        [940, 240],
+        [910, 80]
+      ],
+      "nhan": "Biển Đông"
+    },
+    {
       "kieu": "song",
       "diem": [
-        [
-          0,
-          400
-        ],
-        [
-          500,
-          380
-        ],
-        [
-          1000,
-          420
-        ]
+        [822, 344],
+        [760, 300],
+        [700, 270],
+        [658, 240]
       ],
-      "nhan": "Sông Hồng"
+      "nhan": "Sông Vị Hoàng đổ ra cửa Đại An"
+    },
+    {
+      "kieu": "song",
+      "diem": [
+        [398, 108],
+        [520, 152],
+        [660, 206],
+        [800, 266]
+      ],
+      "nhan": "Sông Nhị Hà qua Thăng Long"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-ta-phu-le-diet-trinh",
+      "id": "thanh-phu-xuan",
+      "kieu": "thanh",
+      "x": 172,
+      "y": 496,
+      "nhan": "Thành Phú Xuân — Phạm Ngô Cầu trấn thủ"
+    },
+    {
+      "id": "dong-hai-van",
+      "kieu": "cong-su",
+      "ben": "dich",
+      "x": 106,
+      "y": 562,
+      "nhan": "Đồn Hải Vân — Hoàng Nghĩa Hồ tử trận"
+    },
+    {
+      "id": "quan-tay-son",
       "kieu": "quan",
       "ben": "ta",
-      "x": 150,
-      "y": 500,
-      "nhan": "'Phù Lê diệt Trịnh' — quân Tây Sơn ra Bắc"
+      "x": 306,
+      "y": 542,
+      "nhan": "Quân Tây Sơn — Nguyễn Huệ làm tiết chế",
+      "quy_mo": "Vũ Văn Nhậm tả quân đô đốc · Nguyễn Hữu Chỉnh hữu quân đô đốc"
+    },
+    {
+      "id": "mui-danh-phu-xuan",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [272, 518],
+      "den": [200, 494],
+      "nhan": "Thuỷ bộ hai mặt cùng đánh Phú Xuân"
+    },
+    {
+      "id": "hoang-dinh-the",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 250,
+      "y": 418,
+      "nhan": "Hoàng Đình Thể ra trận, bắn hết thuốc đạn"
+    },
+    {
+      "id": "song-la-ha",
+      "kieu": "dia-danh",
+      "x": 396,
+      "y": 470,
+      "nhan": "Sông La Hà — địa giới cũ định giữ"
+    },
+    {
+      "id": "mui-ra-bac",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [346, 458],
+      "den": [508, 358],
+      "nhan": "Kéo quân ra Bắc Hà"
+    },
+    {
+      "id": "cua-dai-an",
+      "kieu": "dia-danh",
+      "x": 862,
+      "y": 340,
+      "nhan": "Cửa Đại An"
+    },
+    {
+      "id": "mui-tien-phong",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [842, 376],
+      "den": [724, 288],
+      "nhan": "Nguyễn Hữu Chỉnh đem thuỷ binh đi tiên phong"
+    },
+    {
+      "id": "kho-luong-vi-hoang",
+      "kieu": "dia-danh",
+      "x": 698,
+      "y": 258,
+      "nhan": "Kho lương bên sông Vị Hoàng",
+      "quy_mo": "hơn trăm vạn hộc lương"
+    },
+    {
+      "id": "thuy-quan-trinh",
+      "kieu": "thuyen",
+      "ben": "dich",
+      "x": 766,
+      "y": 434,
+      "nhan": "Đinh Tích Nhưỡng giữ cửa Luộc"
+    },
+    {
+      "id": "tuong-go",
+      "kieu": "thuyen",
+      "ben": "ta",
+      "x": 636,
+      "y": 402,
+      "nhan": "Thuyền chở tượng gỗ, đánh trống kéo cờ nghi binh"
+    },
+    {
+      "id": "bo-binh-trinh",
+      "kieu": "quan",
+      "ben": "dich",
+      "x": 512,
+      "y": 406,
+      "nhan": "Trịnh Tự Quyền giữ Kim Động · Bùi Thế Dận đóng ở Phù Sa"
     },
     {
       "id": "thanh-son-nam",
       "kieu": "thanh",
-      "ben": "dich",
-      "x": 350,
-      "y": 450,
+      "x": 598,
+      "y": 328,
       "nhan": "Thành Sơn Nam"
     },
     {
-      "id": "tuyen-phong-thu-trinh",
-      "kieu": "cong-su",
-      "ben": "dich",
-      "x": 600,
-      "y": 450,
-      "nhan": "Tuyến phòng thủ Kim Động, Phù Sa, cửa Luộc"
+      "id": "ho-van-xuan",
+      "kieu": "dia-danh",
+      "x": 350,
+      "y": 222,
+      "nhan": "Hồ Vạn Xuân — Hoàng Phùng Cơ đóng quân"
     },
     {
-      "id": "mui-tien-thang-long-2",
-      "kieu": "mui-ten",
-      "ben": "ta",
-      "tu": [
-        400,
-        420
-      ],
-      "den": [
-        650,
-        300
-      ],
-      "nhan": "Tiến vào Thăng Long"
+      "id": "ben-tay-long",
+      "kieu": "dia-danh",
+      "x": 594,
+      "y": 194,
+      "nhan": "Bến Tây Long — thuỷ binh nhà Trịnh"
     },
     {
-      "id": "thang-long-1786",
+      "id": "thanh-thang-long",
       "kieu": "thanh",
-      "ben": "dich",
-      "x": 700,
-      "y": 270,
+      "x": 462,
+      "y": 138,
       "nhan": "Kinh thành Thăng Long"
     },
     {
-      "id": "trinh-khai-bo-chay",
-      "kieu": "quan",
-      "ben": "dich",
-      "x": 800,
-      "y": 200,
-      "nhan": "Trịnh Khải bỏ chạy, bị bắt, tự vẫn"
+      "id": "mui-len-thang-long",
+      "kieu": "mui-ten",
+      "ben": "ta",
+      "tu": [590, 300],
+      "den": [486, 170],
+      "nhan": "Kéo quân lên lấy Thăng Long"
     },
     {
-      "id": "co-thang-1786",
+      "id": "trinh-khai-chay",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [428, 124],
+      "den": [244, 88],
+      "nhan": "Trịnh Khải bỏ chạy lên Sơn Tây"
+    },
+    {
+      "id": "ha-loi",
+      "kieu": "dia-danh",
+      "x": 192,
+      "y": 72,
+      "nhan": "Làng Hạ Lôi, huyện Yên Lãng"
+    },
+    {
+      "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 700,
-      "y": 220,
-      "nhan": "Nguyễn Huệ yết kiến vua Lê"
+      "x": 706,
+      "y": 116,
+      "nhan": "216 năm nghiệp chúa Trịnh chấm dứt"
     }
   ],
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Lấy danh nghĩa 'phù Lê diệt Trịnh'",
-      "mo_ta": "Sau khi hạ thành Phú Xuân, lấy danh nghĩa 'phù Lê diệt Trịnh', Nguyễn Huệ đưa quân Tây Sơn ra Bắc.",
+      "tieu_de": "Bắc Hà rối loạn, kiêu binh lộng hành",
+      "thoi_gian": "1782 – 1784",
+      "dia_danh": "Kinh thành Thăng Long",
+      "mo_ta": "Trịnh Sâm mất năm 1782, phủ chúa chia bè đảng vì việc tranh ngôi thế tử. Quân tam phủ giết Hoàng Đình Bảo, bỏ Trịnh Cán và lập Trịnh Khải lên làm chúa, rồi từ đó một ngày một kiêu, cứ đi cướp phá các nhà, không ai kềm chế được. Đến năm Giáp Thìn 1784, quân kiêu binh kéo nhau hàng trăm hàng nghìn đi cướp phá các làng, quân với dân xem nhau như cừu địch, các văn thần võ tướng bó tay chịu không làm sao được.",
       "hien": [
-        "quan-ta-phu-le-diet-trinh"
+        "thanh-thang-long",
+        "ben-tay-long"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Hạ thành Sơn Nam",
-      "mo_ta": "Quân Tây Sơn lần lượt hạ thành Sơn Nam.",
+      "tieu_de": "Tây Sơn ra đánh Thuận Hoá",
+      "thoi_gian": "Tháng 5 năm Bính Ngọ (1786)",
+      "dia_danh": "Đồn Hải Vân — Phú Xuân",
+      "mo_ta": "Nắm được tin đất Thuận Hoá không phòng bị vì trấn thủ Phạm Ngô Cầu là người nhu nhược vô mưu, chỉ lo việc làm giàu chứ không nghĩ gì đến việc binh, vua Tây Sơn sai em là Nguyễn Huệ làm tiết chế, rể là Vũ Văn Nhậm làm tả quân đô đốc, Nguyễn Hữu Chỉnh làm hữu quân đô đốc, đem quân thuỷ bộ ra đánh Thuận Hoá. Quân Tây Sơn lấy được đồn Hải Vân, tướng giữ đồn là Hoàng Nghĩa Hồ tử trận; cùng lúc thuỷ quân tiến vào cửa bể, hai mặt đều kéo đến đánh.",
       "hien": [
-        "quan-ta-phu-le-diet-trinh",
-        "thanh-son-nam"
+        "quan-tay-son",
+        "dong-hai-van",
+        "thanh-phu-xuan",
+        "mui-danh-phu-xuan"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html",
+        "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/thuan-hoa-phu-xuan-hue-trong-dong-lich-su.htm"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Phá các tuyến phòng thủ quân Trịnh",
-      "mo_ta": "Quân Tây Sơn phá các tuyến phòng thủ quân Trịnh ở Kim Động, Phù Sa, cửa Luộc.",
+      "tieu_de": "Kế ly gián, thành Phú Xuân treo cờ trắng",
+      "dia_danh": "Thành Phú Xuân",
+      "mo_ta": "Biết Phạm Ngô Cầu có tính đa nghi, Nguyễn Hữu Chỉnh viết một bức thư đề ngoài gửi cho phó tướng Hoàng Đình Thể rủ về hàng Tây Sơn, rồi giả tảng sai người đưa nhầm sang cho Ngô Cầu. Ngô Cầu bắt được thư ấy, nghi Hoàng Đình Thể hai lòng. Đến khi quân Tây Sơn đánh, Hoàng Đình Thể đem quân bản bộ ra trận đối địch, bắn hết thuốc đạn mà Ngô Cầu đóng cửa thành không ra tiếp ứng; Hoàng Đình Thể cùng hai con và tì tướng Vũ Tá Kiên đều tử trận. Phạm Ngô Cầu kéo cờ trắng mở cửa thành ra hàng. Chỉ trong mấy ngày, đất Thuận Hoá ra đến Linh Giang đều về Tây Sơn.",
       "hien": [
-        "thanh-son-nam",
-        "tuyen-phong-thu-trinh"
+        "thanh-phu-xuan",
+        "hoang-dinh-the",
+        "mui-danh-phu-xuan"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Tiến vào Thăng Long",
-      "mo_ta": "Quân Tây Sơn áp sát rồi tiến vào kinh thành Thăng Long.",
+      "tieu_de": "Quyết định ra Bắc, nêu nghĩa «phù Lê diệt Trịnh»",
+      "dia_danh": "Sông La Hà — đồn Đồng Hới",
+      "mo_ta": "Hạ xong Phú Xuân, Nguyễn Huệ hội các tướng bàn sai người ra sửa sang đồn Đồng Hới và định giữ địa giới cũ ở sông La Hà. Nguyễn Hữu Chỉnh can rằng ở Bắc Hà tướng thì lười, quân thì kiêu, triều đình không có kỷ cương gì cả, nên nhân uy thanh này mà tiến ra. Nguyễn Huệ e lòng người chưa theo, Hữu Chỉnh đáp rằng họ Trịnh tiếng là phù Lê nhưng thực là hiếp chế nên cả nước không ai phục. Nguyễn Huệ nghe theo, kéo quân ra Bắc.",
       "hien": [
-        "tuyen-phong-thu-trinh",
-        "thang-long-1786",
-        "mui-tien-thang-long-2"
+        "song-la-ha",
+        "quan-tay-son",
+        "mui-ra-bac"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Trịnh Khải bỏ chạy, bị bắt và tự vẫn",
-      "mo_ta": "Chúa Trịnh Khải bỏ kinh thành chạy trốn nhưng bị dân binh bắt tại làng Hạ Lôi và tự vẫn.",
+      "tieu_de": "Tiên phong vào cửa Đại An, chiếm kho lương Vị Hoàng",
+      "dia_danh": "Cửa Đại An — sông Vị Hoàng",
+      "mo_ta": "Nguyễn Huệ sai Nguyễn Hữu Chỉnh đem thuỷ binh đi tiên phong vào cửa Đại An đánh lấy kho lương bên sông Vị Hoàng, hẹn khi đến nơi thì đốt lửa lên làm hiệu. Hữu Chỉnh đem quân đi qua Nghệ An, Thanh Hoá, quan trấn thủ là Bùi Thế Toại và Tạ Danh Thuỳ không ai dám ra cự địch; khi ra đến Vị Hoàng, quan coi đồn ở đấy bỏ chạy. Hữu Chỉnh lấy được hơn trăm vạn hộc lương rồi đốt lửa làm hiệu, đại quân Nguyễn Huệ kéo đến đóng giữ ở đấy.",
       "hien": [
-        "thang-long-1786",
-        "trinh-khai-bo-chay"
+        "cua-dai-an",
+        "mui-tien-phong",
+        "kho-luong-vi-hoang"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Nguyễn Huệ yết kiến vua Lê, chấm dứt chúa Trịnh",
-      "mo_ta": "Nguyễn Huệ vào thành yết kiến vua Lê Hiển Tông, chấm dứt hơn 200 năm cầm quyền họ Trịnh.",
+      "tieu_de": "Nghi binh bằng tượng gỗ, hạ thành Sơn Nam",
+      "dia_danh": "Cửa Luộc — Kim Động — Phù Sa — thành Sơn Nam",
+      "mo_ta": "Phía Trịnh, Trịnh Tự Quyền đem binh xuống giữ mặt Kim Động, trấn thủ Sơn Nam là Bùi Thế Dận đem bộ binh đóng ở xã Phù Sa huyện Đông An, Đinh Tích Nhưỡng đem thuỷ quân ra giữ cửa Luộc. Nhân gió đông nam thổi to, ban đêm Nguyễn Huệ sai lấy tượng gỗ để lên mấy chiếc thuyền, đánh trống kéo cờ rồi thả trôi. Đinh Tích Nhưỡng tưởng quân Tây Sơn tới, dàn thuyền thành trận chữ nhất mà bắn mãi, sau mới biết trên thuyền là tượng gỗ. Đến lúc quân Tây Sơn tiến lên đánh thì thuốc đạn đã hết, Nhưỡng phải bỏ thuyền mà chạy, quân Bùi Thế Dận và Trịnh Tự Quyền cũng tan cả. Nguyễn Huệ hạ được thành Sơn Nam.",
       "hien": [
-        "co-thang-1786"
+        "tuong-go",
+        "thuy-quan-trinh",
+        "bo-binh-trinh",
+        "thanh-son-nam"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đánh tan thuỷ quân bến Tây Long, vào Thăng Long",
+      "thoi_gian": "Tháng 7/1786",
+      "dia_danh": "Hồ Vạn Xuân — bến Tây Long — Thăng Long",
+      "mo_ta": "Trịnh Khải cho gọi Hoàng Phùng Cơ ở Sơn Tây về, đem quân đóng ở hồ Vạn Xuân, còn thuỷ binh thì đóng ở bến Tây Long để phòng giữ. Quân Tây Sơn tiến lên đánh tan thuỷ quân nhà Trịnh, Hoàng Phùng Cơ phải bỏ chạy. Trịnh Khải mặc áo nhung y, cầm cờ lên voi thúc quân vào đánh, nhưng thế Tây Sơn mạnh nên đánh không được. Chỉ đánh trong một đêm đến sáng, quân chúa Trịnh hoàn toàn tan rã; ngay sau đó Nguyễn Huệ cho đại quân tiến vào Thăng Long.",
+      "hien": [
+        "mui-len-thang-long",
+        "ho-van-xuan",
+        "ben-tay-long",
+        "thanh-thang-long"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html",
+        "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Trịnh Khải tự tận, 216 năm nghiệp chúa chấm dứt",
+      "thoi_gian": "Năm Bính Ngọ (1786)",
+      "dia_danh": "Làng Hạ Lôi — làng Nhất Chiêu",
+      "mo_ta": "Trịnh Khải bỏ chạy lên Sơn Tây, đi đến làng Hạ Lôi huyện Yên Lãng thì gặp Nguyễn Trang đánh lừa bắt đem nộp cho Tây Sơn; trên đường về đến làng Nhất Chiêu, ông lấy gươm cắt cổ tự tận. Nguyễn Huệ cho lấy vương lễ mà tống táng cho chúa Trịnh rồi vào thành Thăng Long yết kiến vua Lê. Nghiệp chúa họ Trịnh, lưu truyền từ Trịnh Tùng đến Trịnh Khải được 216 năm, đến đấy là hết. Ngày 1/8/1786, vua Lê phong Nguyễn Huệ làm Uy Quốc công và gả công chúa Ngọc Hân.",
+      "hien": [
+        "trinh-khai-chay",
+        "ha-loi",
+        "co-thang",
+        "thanh-thang-long"
+      ],
+      "nguon": [
+        "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html",
+        "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html"
       ]
     }
   ],
-  "ket_qua": "Quân Tây Sơn hạ thành Sơn Nam, phá các tuyến phòng thủ quân Trịnh, tiến vào Thăng Long; chúa Trịnh Khải bỏ chạy, bị bắt và tự vẫn — chấm dứt hơn 200 năm cầm quyền họ Trịnh.",
+  "luc_luong": {
+    "ta": {
+      "don_vi": [
+        "Quân thuỷ bộ Tây Sơn — Nguyễn Huệ làm tiết chế",
+        "Vũ Văn Nhậm làm tả quân đô đốc",
+        "Nguyễn Hữu Chỉnh làm hữu quân đô đốc, đi tiên phong đường thuỷ"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": "Hơn 3 vạn quân cùng toàn thể tướng lĩnh cao cấp của nhà Trịnh tại Thuận Hoá bị tiêu diệt",
+      "don_vi": [
+        "Quân Trịnh ở Thuận Hoá — Phạm Ngô Cầu trấn thủ, Hoàng Đình Thể phó tướng",
+        "Trịnh Tự Quyền đem 27 cơ vào giữ Nghệ An, sau lui về Kim Động",
+        "Bùi Thế Dận — bộ binh Sơn Nam; Đinh Tích Nhưỡng — thuỷ quân cửa Luộc",
+        "Hoàng Phùng Cơ — quân Sơn Tây về giữ hồ Vạn Xuân"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html",
+      "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html"
+    ]
+  },
+  "ket_qua": "Quân Tây Sơn hạ thành Phú Xuân rồi hạ thành Sơn Nam, phá các tuyến phòng thủ quân Trịnh và tiến vào Thăng Long; chúa Trịnh Khải bỏ chạy, bị bắt và tự vẫn — chấm dứt 216 năm cầm quyền của họ Trịnh.",
   "y_nghia": "Kết thúc vai trò lịch sử của chúa Trịnh sau hơn hai thế kỷ, thể hiện tốc độ hành quân thần tốc đặc trưng của Nguyễn Huệ.",
   "trang_thai": "draft",
   "nguon": [
     "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Việt Nam sử lược, Nhà Hậu Lê, Chương IX",
-    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam"
+    "SGK Lịch sử 8 — NXB Giáo dục Việt Nam",
+    "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html",
+    "Báo Nhân Dân — https://nhandan.vn/anh-hung-dan-toc-nguyen-hue-mot-thien-tai-post520998.html",
+    "Cục Văn thư và Lưu trữ Nhà nước — https://archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/thuan-hoa-phu-xuan-hue-trong-dong-lich-su.htm"
   ],
   "trich_van_tich": [
     {
       "sach": "Việt Nam sử lược (Trần Trọng Kim) — Tự chủ thời đại, Nhà Hậu Lê, chương IX: Họ Trịnh mất nghiệp chúa",
+      "doan": "Nay Bắc Hà có vua lại có chúa, ấy là một sự cổ kim đại biến. Họ Trịnh tiếng rằng phù Lê, thực là hiếp chế, cả nước không ai phục.",
+      "nguon_trich": "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html",
+      "buoc": 4
+    },
+    {
+      "sach": "Việt Nam sử lược (Trần Trọng Kim) — Tự chủ thời đại, Nhà Hậu Lê, chương IX: Họ Trịnh mất nghiệp chúa",
+      "doan": "Bấy giờ gió đông nam thổi to đến đêm Nguyễn Huệ sai lấy tượng gỗ để lên trên mấy chiếc thuyền rồi đánh trống kéo cờ thả cho thuyền trôi đi.",
+      "nguon_trich": "scov.gov.vn — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html",
+      "buoc": 6
+    },
+    {
+      "sach": "Việt Nam sử lược (Trần Trọng Kim) — Tự chủ thời đại, Nhà Hậu Lê, chương IX: Họ Trịnh mất nghiệp chúa",
       "doan": "Đi đến làng Hạ Lôi, huyện Yên Lãng gặp tên Nguyễn Trang đánh lừa bắt đem nộp cho Tây Sơn. Trịnh Khải về đến làng Nhất Chiêu lấy gươm cắt cổ tự tận",
       "nguon_trich": "Cổng TTĐT Bộ VHTTDL (scov.gov.vn) — Tự chủ thời đại – Nhà Hậu Lê. Chương IX. Họ Trịnh mất nghiệp chúa — https://scov.gov.vn/dat-nuoc-con-nguoi/viet-nam-su-luoc/tu-chu-thoi-dai-nha-hau-le.-chuong-ix.-ho-trinh-mat-nghiep-chua.html",
-      "buoc": 5
+      "buoc": 8
     }
   ]
 }

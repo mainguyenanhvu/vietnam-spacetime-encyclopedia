@@ -1,11 +1,13 @@
 {
-  "ghi_chu": "Sa đồ Chiến dịch Việt Bắc Thu Đông 1947 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý. Mục T2 nhạy cảm theo docs/section9-sensitive.json — bám sát mo_ta đã duyệt trong chien-dich-tran-danh.json. trang_thai=draft chờ soát §9.",
+  "ghi_chu": "Sa đồ Chiến dịch Việt Bắc Thu Đông 1947 — MINH HOẠ theo diễn biến chính sử/tư liệu nhà nước, KHÔNG theo tỉ lệ địa lý.",
+  "ghi_chu_bien_tap": "Mục T2 theo docs/section9-sensitive.json. Ba chỗ hai nguồn nhà nước chép khác nhau, GIỮ CẢ HAI theo bất biến #4, ĐỪNG SỬA thành một: tháng thông qua kế hoạch Léa (tháng 6 vs đầu tháng 7/1947) · số tiểu đoàn dù Pháp (2 vs 3) · quy mô lực lượng ta (7 trung đoàn vs 13 trung đoàn và 11 tiểu đoàn).",
   "id": "viet-bac-thu-dong-1947",
   "ten": "Chiến dịch Việt Bắc Thu Đông 1947",
   "nam": 1947,
+  "thoi_gian": "7/10/1947 – 20/12/1947",
   "sa_do_kieu": "tong-quat",
-  "chi_huy": "Bộ Tổng chỉ huy (Võ Nguyên Giáp)",
-  "doi_thu": "Quân đội Pháp",
+  "chi_huy": "Bộ Tổng chỉ huy — Chỉ huy trưởng chiến dịch Võ Nguyên Giáp",
+  "doi_thu": "Quân đội Pháp (kế hoạch Léa – Cloclo của tướng Salan)",
   "dia_diem": "Căn cứ địa Việt Bắc (Bắc Kạn, Cao Bằng, Lạng Sơn, Thái Nguyên, Tuyên Quang)",
   "lien_quan_tinh": [
     "thai-nguyen",
@@ -17,197 +19,521 @@
     {
       "kieu": "nui",
       "diem": [
-        [
-          50,
-          50
-        ],
-        [
-          500,
-          20
-        ],
-        [
-          950,
-          60
-        ]
+        [30, 120],
+        [230, 60],
+        [500, 35],
+        [760, 55],
+        [980, 110]
       ],
-      "nhan": "Căn cứ địa Việt Bắc"
+      "nhan": "Núi rừng Việt Bắc"
     },
     {
       "kieu": "song",
       "diem": [
-        [
-          600,
-          550
-        ],
-        [
-          550,
-          300
-        ],
-        [
-          500,
-          100
-        ]
+        [230, 175],
+        [220, 290],
+        [255, 400],
+        [180, 500],
+        [110, 570]
       ],
       "nhan": "Sông Lô"
     },
     {
+      "kieu": "song",
+      "diem": [
+        [300, 120],
+        [265, 200],
+        [235, 280]
+      ],
+      "nhan": "Sông Gâm"
+    },
+    {
       "kieu": "duong",
       "diem": [
-        [
-          850,
-          500
-        ],
-        [
-          700,
-          300
-        ],
-        [
-          550,
-          150
-        ]
+        [860, 545],
+        [800, 400],
+        [700, 250],
+        [640, 130],
+        [615, 75]
       ],
-      "nhan": "Đường số 4 từ Lạng Sơn"
+      "nhan": "Đường số 4 — Lạng Sơn đi Cao Bằng"
+    },
+    {
+      "kieu": "duong",
+      "diem": [
+        [625, 470],
+        [605, 340],
+        [585, 225],
+        [610, 120],
+        [630, 78]
+      ],
+      "nhan": "Đường số 3 — Thái Nguyên đi Bắc Kạn, Cao Bằng"
+    },
+    {
+      "kieu": "rung",
+      "diem": [
+        [420, 370],
+        [520, 385],
+        [540, 445],
+        [430, 455]
+      ],
+      "nhan": "Rừng An toàn khu Định Hoá"
     }
   ],
   "phan_tu": [
     {
-      "id": "quan-dich-nhay-du",
+      "id": "cao-bang",
+      "kieu": "dia-danh",
+      "x": 630,
+      "y": 60,
+      "nhan": "Cao Bằng"
+    },
+    {
+      "id": "deo-bong-lau",
+      "kieu": "dia-danh",
+      "x": 800,
+      "y": 140,
+      "nhan": "Đèo Bông Lau – Lũng Phầy"
+    },
+    {
+      "id": "deo-giang",
+      "kieu": "dia-danh",
+      "x": 555,
+      "y": 130,
+      "nhan": "Đèo Giàng"
+    },
+    {
+      "id": "dai-thi",
+      "kieu": "dia-danh",
+      "x": 290,
+      "y": 145,
+      "nhan": "Đài Thị — nơi Pháp định khép hai gọng kìm"
+    },
+    {
+      "id": "chiem-hoa",
+      "kieu": "dia-danh",
+      "x": 170,
+      "y": 205,
+      "nhan": "Chiêm Hoá"
+    },
+    {
+      "id": "cho-don",
+      "kieu": "dia-danh",
+      "x": 390,
+      "y": 205,
+      "nhan": "Chợ Đồn"
+    },
+    {
+      "id": "bac-kan",
+      "kieu": "dia-danh",
+      "x": 590,
+      "y": 205,
+      "nhan": "Bắc Kạn"
+    },
+    {
+      "id": "du-bac-kan",
       "kieu": "quan",
       "ben": "dich",
-      "x": 480,
-      "y": 150,
-      "nhan": "Quân Pháp nhảy dù xuống Bắc Kạn"
+      "x": 690,
+      "y": 165,
+      "nhan": "Quân dù Pháp đổ xuống",
+      "quy_mo": "7/10/1947 — Bắc Kạn, Chợ Mới, Chợ Đồn"
     },
     {
-      "id": "co-quan-dau-nao",
-      "kieu": "dia-danh",
-      "x": 420,
-      "y": 200,
-      "nhan": "Cơ quan đầu não kháng chiến (đã sơ tán)"
-    },
-    {
-      "id": "quan-dich-duong-bo",
-      "kieu": "quan",
+      "id": "phu-thong",
+      "kieu": "cong-su",
       "ben": "dich",
-      "x": 750,
-      "y": 450,
-      "nhan": "Cánh đường bộ từ Lạng Sơn"
+      "x": 620,
+      "y": 268,
+      "nhan": "Đồn Phủ Thông"
     },
     {
-      "id": "dia-diem-bong-lau",
+      "id": "cho-moi",
       "kieu": "dia-danh",
-      "x": 750,
-      "y": 350,
-      "nhan": "Đèo Bông Lau"
+      "x": 500,
+      "y": 300,
+      "nhan": "Chợ Mới"
     },
     {
-      "id": "mui-phuc-kich-bong-lau",
-      "kieu": "mui-ten",
+      "id": "lang-son",
+      "kieu": "dia-danh",
+      "x": 860,
+      "y": 290,
+      "nhan": "Lạng Sơn"
+    },
+    {
+      "id": "tuyen-quang",
+      "kieu": "dia-danh",
+      "x": 215,
+      "y": 300,
+      "nhan": "Thị xã Tuyên Quang"
+    },
+    {
+      "id": "dai-doi-doc-lap",
+      "kieu": "quan",
       "ben": "ta",
-      "tu": [
-        600,
-        380
-      ],
-      "den": [
-        700,
-        400
-      ],
-      "nhan": "Phục kích Bông Lau"
+      "x": 430,
+      "y": 265,
+      "nhan": "Đại đội độc lập",
+      "quy_mo": "Gần 30 đại đội về các huyện trọng điểm"
     },
     {
-      "id": "quan-dich-duong-thuy",
+      "id": "cho-chu",
+      "kieu": "dia-danh",
+      "x": 390,
+      "y": 345,
+      "nhan": "Chợ Chu"
+    },
+    {
+      "id": "khoan-bo",
+      "kieu": "dia-danh",
+      "x": 150,
+      "y": 370,
+      "nhan": "Khoan Bộ"
+    },
+    {
+      "id": "atk",
+      "kieu": "dia-danh",
+      "x": 500,
+      "y": 400,
+      "nhan": "An toàn khu — cơ quan đầu não kháng chiến"
+    },
+    {
+      "id": "binh-ca",
+      "kieu": "dia-danh",
+      "x": 250,
+      "y": 430,
+      "nhan": "Bến Bình Ca"
+    },
+    {
+      "id": "thai-nguyen",
+      "kieu": "dia-danh",
+      "x": 620,
+      "y": 450,
+      "nhan": "Thái Nguyên"
+    },
+    {
+      "id": "doan-hung",
+      "kieu": "dia-danh",
+      "x": 120,
+      "y": 480,
+      "nhan": "Đoan Hùng"
+    },
+    {
+      "id": "son-duong",
+      "kieu": "dia-danh",
+      "x": 330,
+      "y": 500,
+      "nhan": "Sơn Dương"
+    },
+    {
+      "id": "thuy-doi",
       "kieu": "thuyen",
       "ben": "dich",
-      "x": 550,
-      "y": 500,
-      "nhan": "Cánh đường thủy trên sông Lô"
+      "x": 95,
+      "y": 400,
+      "nhan": "Thuỷ đội xung kích Pháp",
+      "quy_mo": "3 thuỷ đội — 40 tàu, xuồng"
     },
     {
-      "id": "mui-danh-chim-tau",
-      "kieu": "mui-ten",
+      "id": "tieu-doan-42",
+      "kieu": "quan",
       "ben": "ta",
-      "tu": [
-        500,
-        400
-      ],
-      "den": [
-        540,
-        480
-      ],
-      "nhan": "Đánh chìm tàu, ca nô"
+      "x": 185,
+      "y": 470,
+      "nhan": "Tiểu đoàn 42",
+      "quy_mo": "«Sống chết với con đường Bình Ca – Thái Nguyên»"
+    },
+    {
+      "id": "mt-duong-4",
+      "kieu": "quan",
+      "ben": "ta",
+      "x": 900,
+      "y": 195,
+      "nhan": "Mặt trận Đường số 4",
+      "quy_mo": "Vô hiệu hoá gọng kìm phía đông"
     },
     {
       "id": "co-thang",
       "kieu": "co",
       "ben": "ta",
-      "x": 420,
-      "y": 280,
-      "nhan": "Pháp buộc phải rút quân"
+      "x": 760,
+      "y": 400,
+      "nhan": "Căn cứ địa Việt Bắc được giữ vững"
+    },
+    {
+      "id": "gong-kim-dong",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [880, 262],
+      "den": [700, 110],
+      "nhan": "Gọng kìm phía đông — Lạng Sơn lên Cao Bằng"
+    },
+    {
+      "id": "gong-kim-tay",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [108, 455],
+      "den": [232, 232],
+      "nhan": "Gọng kìm phía tây — ngược sông Lô, sông Gâm"
+    },
+    {
+      "id": "mui-rut-quan",
+      "kieu": "mui-ten",
+      "ben": "dich",
+      "tu": [520, 322],
+      "den": [640, 425],
+      "nhan": "Pháp rút quân khỏi Việt Bắc từ 21/11"
     }
   ],
+  "luc_luong": {
+    "ta": {
+      "quan_so": [
+        {
+          "so": "7 trung đoàn bộ binh của Bộ và các khu 1, 10, 12, cùng 30 đại đội độc lập và dân quân du kích 5 tỉnh",
+          "nguon": "Báo Nhân Dân · Báo Quân đội nhân dân"
+        },
+        {
+          "so": "13 trung đoàn, 11 tiểu đoàn chủ lực và lực lượng vũ trang địa phương Việt Bắc",
+          "nguon": "Báo Quân đội nhân dân — Nghệ thuật phản công trong Chiến dịch Việt Bắc Thu Đông 1947"
+        }
+      ],
+      "don_vi": [
+        "Chủ lực của Bộ và các khu 1, 10, 12, phân tán thành 18 tiểu đoàn trên ba mặt trận",
+        "Gần 30 đại đội độc lập về hoạt động ở các huyện trọng điểm",
+        "Tiểu đoàn 42 giữ cửa ngõ phía tây An toàn khu"
+      ],
+      "vu_khi": [
+        "Súng trường nhiều loại, mỗi khẩu 10 viên đạn, bắn xong giữ vỏ nộp lên nhồi lại",
+        "Trung liên cũ, đại đao, bom, mìn, lựu đạn",
+        "Ba-dô-ca do quân giới Việt Nam chế tạo"
+      ]
+    },
+    "doi_thu": {
+      "quan_so": [
+        {
+          "so": "hơn 10.000 quân",
+          "nguon": "Báo Nhân Dân · Báo Quân đội nhân dân"
+        }
+      ],
+      "don_vi": [
+        "5 trung đoàn bộ binh",
+        "2 tiểu đoàn dù theo Báo Nhân Dân, 3 tiểu đoàn dù theo Báo Quân đội nhân dân",
+        "2 tiểu đoàn pháo binh",
+        "2 tiểu đoàn công binh",
+        "3 đại đội cơ giới"
+      ],
+      "vu_khi": [
+        "2 phi đội với 40 máy bay",
+        "3 thuỷ đội xung kích với 40 tàu, xuồng"
+      ]
+    },
+    "nguon": [
+      "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html",
+      "Báo Quân đội nhân dân — Chiến thắng Việt Bắc Thu Đông 1947, bước trưởng thành của lực lượng vũ trang nhân dân Việt Nam — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-viet-bac-thu-dong-1947-buoc-truong-thanh-cua-luc-luong-vu-trang-nhan-dan-viet-nam-797321",
+      "Báo Quân đội nhân dân — Nghệ thuật phản công trong Chiến dịch Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/nghe-thuat-phan-cong-trong-chien-dich-viet-bac-thu-dong-1947-762107"
+    ]
+  },
+  "ton_that": {
+    "ta": "hy sinh 260, bị thương 168 người",
+    "doi_thu": "trên 7.200 quân bị loại khỏi vòng chiến đấu, 18 máy bay bị bắn rơi, 54 tàu và xuồng bị đánh chìm, 255 xe quân sự bị phá huỷ; ta thu 25 khẩu pháo cỡ 20 đến 105mm và hơn 2.000 súng bộ binh",
+    "nguon": [
+      "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html"
+    ]
+  },
   "buoc": [
     {
       "id": 1,
-      "tieu_de": "Pháp mở gọng kìm tiến công Việt Bắc (7/10/1947)",
-      "mo_ta": "Quân Pháp huy động khoảng 12.000 quân, nhảy dù xuống Bắc Kạn kết hợp hai cánh đường bộ và đường thủy, hòng bao vây tiêu diệt cơ quan đầu não kháng chiến.",
+      "tieu_de": "Pháp soạn kế hoạch Léa – Cloclo, nhắm vào cơ quan đầu não",
+      "thoi_gian": "Tháng 6 – tháng 7/1947",
+      "dia_danh": "Bắc Kạn · Chợ Đồn · Chợ Mới · Đài Thị",
+      "mo_ta": "Sau khi giải pháp chính trị lập chính phủ bù nhìn bế tắc, Pháp chuyển sang đòn quân sự. Tổng tư lệnh Valluy giao tướng Salan soạn kế hoạch tiến công lên Việt Bắc, được Chính phủ Pháp thông qua với hai bước. Bước 1 mang tên Léa dùng hai gọng kìm bao vây toàn bộ khu căn cứ, trọng tâm là khu tam giác Bắc Kạn – Chợ Đồn – Chợ Mới: quân dù đổ bộ chiếm ba nơi này, cánh quân hướng đông từ Lạng Sơn tiến lên Cao Bằng rồi vòng xuống Bắc Kạn, cánh quân hướng tây theo đường thuỷ từ sông Hồng ngược sông Lô, sông Gâm lên Tuyên Quang, Chiêm Hoá; hai gọng kìm dự tính khép lại ở Đài Thị ngày 13/10/1947. Bước 2 mang tên Cloclo càn quét khu tam giác Bắc Kạn – Chợ Chu – Chợ Mới. Mốc thông qua kế hoạch được chép hai cách: tháng 6/1947 và đầu tháng 7/1947. Salan tuyên bố chỉ cần ba tuần lễ để đập tan đầu não của Việt Minh.",
       "hien": [
-        "quan-dich-nhay-du",
-        "quan-dich-duong-bo",
-        "quan-dich-duong-thuy"
+        "bac-kan",
+        "cho-don",
+        "cho-moi",
+        "cho-chu",
+        "dai-thi",
+        "chiem-hoa",
+        "cao-bang",
+        "lang-son",
+        "tuyen-quang",
+        "atk"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html",
+        "Báo Quân đội nhân dân — Chiến thắng Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-viet-bac-thu-dong-1947-buoc-truong-thanh-cua-luc-luong-vu-trang-nhan-dan-viet-nam-797321"
       ]
     },
     {
       "id": 2,
-      "tieu_de": "Nhảy dù xuống Bắc Kạn",
-      "mo_ta": "Một cánh quân Pháp nhảy dù xuống thị xã Bắc Kạn, Chợ Mới, Chợ Đồn hòng đánh úp cơ quan lãnh đạo kháng chiến, nhưng cơ quan đầu não đã kịp sơ tán an toàn.",
+      "tieu_de": "7/10/1947: quân dù đổ xuống, hai gọng kìm khép lại",
+      "thoi_gian": "7 – 12/10/1947",
+      "dia_danh": "Bắc Kạn · sông Lô · Đường số 4",
+      "mo_ta": "Ngày 7/10/1947, Pháp huy động hơn 10.000 quân gồm 5 trung đoàn bộ binh, tiểu đoàn dù, 2 tiểu đoàn pháo binh, 2 tiểu đoàn công binh, 3 đại đội cơ giới, 2 phi đội với 40 máy bay và 3 thuỷ đội với 40 tàu xuồng, hình thành hai gọng kìm kẹp chặt căn cứ địa Việt Bắc, trọng điểm càn quét là khu tam giác Bắc Kạn – Chợ Đồn – Chợ Mới. Ta phán đoán được địch sẽ đánh lên Việt Bắc nhưng chưa lường được việc chúng mạo hiểm cho quân nhảy dù xuống trung tâm căn cứ địa cũng như các hướng tiến công, nên tuần đầu bố trí lực lượng và thế trận chưa hợp lý, bị bất ngờ và chịu một số tổn thất. Cụ Nguyễn Văn Tố, Trưởng ban Thường trực Quốc hội, bị địch sát hại.",
       "hien": [
-        "quan-dich-nhay-du",
-        "co-quan-dau-nao"
+        "du-bac-kan",
+        "gong-kim-dong",
+        "gong-kim-tay",
+        "bac-kan",
+        "cho-don",
+        "cho-moi",
+        "thuy-doi",
+        "cao-bang",
+        "lang-son",
+        "atk"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Chiến thắng Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-viet-bac-thu-dong-1947-buoc-truong-thanh-cua-luc-luong-vu-trang-nhan-dan-viet-nam-797321"
       ]
     },
     {
       "id": 3,
-      "tieu_de": "Chặn đánh cánh đường bộ từ Lạng Sơn",
-      "mo_ta": "Quân ta phục kích, chặn đánh quyết liệt cánh quân bộ tiến từ Lạng Sơn, tiêu biểu là trận phục kích Bông Lau trên đường số 4.",
+      "tieu_de": "Bản kế hoạch rơi từ máy bay bị bắn hạ",
+      "thoi_gian": "9 – 13/10/1947",
+      "dia_danh": "Cao Bằng · Bộ Tổng chỉ huy",
+      "mo_ta": "Ngày 9/10/1947, ta bắn rơi một chiếc máy bay ở Cao Bằng. Ngày 13/10, Bộ Tổng chỉ huy nhận được bản kế hoạch tiến công Việt Bắc của địch lấy từ chiếc máy bay đó. Trước đó, Thường vụ Trung ương Đảng đã ra chỉ thị «Phải phá cuộc tấn công mùa đông của giặc Pháp», vạch rõ điểm yếu chí mạng của địch là khâu tiếp tế, vận chuyển: xa hậu phương, gặp khó khăn lớn khi cơ động cơ giới, bảo đảm hậu cần, tăng viện, ứng cứu. Có bản kế hoạch trong tay, Bộ Tổng chỉ huy quyết định điều chỉnh phương án tác chiến và tổ chức lại lực lượng. Chỉ huy trưởng chiến dịch là đồng chí Võ Nguyên Giáp; do không gian chiến dịch rộng khắp 5 tỉnh và trình độ chỉ huy cấp khu còn hạn chế, Bộ Tổng chỉ huy trực tiếp chỉ đạo và chỉ huy.",
       "hien": [
-        "quan-dich-duong-bo",
-        "dia-diem-bong-lau",
-        "mui-phuc-kich-bong-lau"
+        "cao-bang",
+        "atk",
+        "bac-kan",
+        "du-bac-kan",
+        "gong-kim-dong",
+        "gong-kim-tay"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html",
+        "Báo Quân đội nhân dân — Nghệ thuật phản công trong Chiến dịch Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/nghe-thuat-phan-cong-trong-chien-dich-viet-bac-thu-dong-1947-762107"
       ]
     },
     {
       "id": 4,
-      "tieu_de": "Đánh chặn cánh đường thủy trên sông Lô",
-      "mo_ta": "Quân ta tổ chức phục kích, pháo kích đánh chìm nhiều tàu chiến, ca nô của cánh quân thủy tiến theo sông Hồng, sông Lô.",
+      "tieu_de": "Ba mặt trận, đại đội độc lập và tiểu đoàn tập trung",
+      "thoi_gian": "Từ 13/10/1947",
+      "dia_danh": "Sông Lô – đường 2 · Bắc Kạn – đường 3 · Đường số 4",
+      "mo_ta": "Bộ Tổng chỉ huy chọn loại hình phản công, đánh vận động và đánh du kích thay cho phòng ngự giữ đất. Chủ lực của Bộ và các khu 1, 10, 12 được phân tán thành 18 tiểu đoàn tác chiến trên ba mặt trận, đồng thời gần 30 đại đội chuyển về hoạt động độc lập ở các huyện trọng điểm để phát động chiến tranh du kích rộng khắp. Ba mặt trận được lập ra: Sông Lô – đường số 2 ở hướng tây, đánh địch trên sông và trên đường bộ để bẻ gãy gọng kìm phía tây; đường số 3 ở hướng Bắc Kạn, đánh địch trên đường Bắc Kạn – Cao Bằng và bảo vệ cơ quan Trung ương; đường số 4 ở hướng đông, đánh địch trên đường Lạng Sơn – Cao Bằng. Hình thức tác chiến chủ yếu là phục kích để tiêu hao, tiêu diệt từng bộ phận quân cơ động của địch.",
       "hien": [
-        "quan-dich-duong-thuy",
-        "mui-danh-chim-tau"
+        "dai-doi-doc-lap",
+        "mt-duong-4",
+        "tieu-doan-42",
+        "bac-kan",
+        "tuyen-quang",
+        "lang-son",
+        "cao-bang",
+        "atk"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Nghệ thuật phản công trong Chiến dịch Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/nghe-thuat-phan-cong-trong-chien-dich-viet-bac-thu-dong-1947-762107"
       ]
     },
     {
       "id": 5,
-      "tieu_de": "Phản công trên khắp các mặt trận",
-      "mo_ta": "Quân và dân ta phản công đều khắp, loại khỏi vòng chiến hơn 7.200 địch, bắn rơi 18 máy bay, đánh chìm 54 tàu xuồng.",
+      "tieu_de": "Bình Ca — chiếc tàu chiến đầu tiên chìm trên sông Lô",
+      "thoi_gian": "12 – 13/10/1947",
+      "dia_danh": "Bến Bình Ca, sông Lô",
+      "mo_ta": "Tiểu đoàn 42, đơn vị chủ lực của Bộ hình thành từ các chiến sĩ quyết tử Trung đoàn Thủ Đô rút khỏi Hà Nội, nhận mệnh lệnh viết tay của Tổng chỉ huy Võ Nguyên Giáp: «Tiểu đoàn 42 sống chết với con đường Bình Ca – Thái Nguyên». Đại đội 4 giữ Bình Ca, cửa ngõ quan trọng phía tây An toàn khu; trung đội 12 trấn giữ bến. Trang bị rất yếu: mỗi tiểu đội chỉ có hai đến ba khẩu súng trường đủ loại, mỗi khẩu 10 viên đạn, bắn xong phải nhặt vỏ giữ lấy nộp lên nhồi lại. Lần này tiểu đoàn được trang bị một khẩu ba-dô-ca do quân giới Việt Nam chế tạo, đặt ven đồi cao hơn mặt nước sông một mét. Chiều 12/10/1947, với ba phát đạn ba-dô-ca, tiểu đội Trần Chất do trung đội trưởng Vũ Phương chỉ huy bắn chìm một chiếc LCVP — chiếc tàu địch đầu tiên bị bắn chìm trên sông Lô. Sáng 13/10, quân địch đổ bộ lên bến Bình Ca lọt vào trận địa phục kích, ta giật bom mìn, ném lựu đạn, xung phong tiêu diệt 20 tên và đánh lui cuộc đổ bộ.",
       "hien": [
-        "dia-diem-bong-lau",
-        "quan-dich-duong-thuy",
-        "co-thang"
+        "binh-ca",
+        "tieu-doan-42",
+        "thuy-doi",
+        "tuyen-quang",
+        "atk",
+        "gong-kim-tay"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Sống chết với con đường Bình Ca – Thái Nguyên — https://www.qdnd.vn/ho-so-su-kien/dai-tuong-vo-nguyen-giap/bai-3-song-chet-voi-con-duong-binh-ca-thai-nguyen-260601"
       ]
     },
     {
       "id": 6,
-      "tieu_de": "Pháp buộc phải rút quân",
-      "mo_ta": "Sau hơn hai tháng, Pháp thất bại trong mục tiêu tiêu diệt cơ quan đầu não và bộ đội chủ lực, buộc phải rút quân khỏi Việt Bắc — chiến dịch phản công đầu tiên và thắng lợi hoàn toàn của Quân đội nhân dân Việt Nam.",
+      "tieu_de": "Mặt trận Sông Lô — bẻ gãy gọng kìm phía tây",
+      "thoi_gian": "22/10 – 10/11/1947",
+      "dia_danh": "Kilômét số 7 · Khoan Bộ · Đoan Hùng",
+      "mo_ta": "Trên hướng tây, ta lấy phục kích đánh địch vận chuyển trên bộ và trên sông làm chính, nhằm vào chỗ yếu của địch là buộc phải cơ động trên đường bộ và đường sông để tăng viện, tiếp tế. Các trận điển hình gồm phục kích ở Kilômét số 7 đoạn Tuyên Quang – Hà Giang ngày 22/10, Khoan Bộ ngày 23/10 và Đoan Hùng ngày 24/10. Chiến thắng Sông Lô được ghi nhận ở các mốc 23, 24/10 và 10/11/1947. Trong chiến dịch, ta kết hợp bộ binh với pháo binh và công binh đánh trên sông, nhằm vào các đơn vị nhỏ của địch đang cơ động hoặc tạm dừng, tiêu diệt từng bộ phận và gây cho chúng những tổn thất nghiêm trọng. Cách đánh này vô hiệu hoá dần rồi bẻ gãy gọng kìm phía tây, phá thế hợp vây của địch.",
       "hien": [
-        "co-thang"
+        "khoan-bo",
+        "doan-hung",
+        "tuyen-quang",
+        "thuy-doi",
+        "chiem-hoa",
+        "dai-thi",
+        "gong-kim-tay"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Nghệ thuật phản công trong Chiến dịch Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/nghe-thuat-phan-cong-trong-chien-dich-viet-bac-thu-dong-1947-762107",
+        "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html"
+      ]
+    },
+    {
+      "id": 7,
+      "tieu_de": "Đường số 4 và Bông Lau — gọng kìm phía đông tê liệt",
+      "thoi_gian": "15/10 – 30/10/1947",
+      "dia_danh": "Chợ Mới · Chợ Đồn · Bông Lau – Lũng Phầy",
+      "mo_ta": "Trên hướng đông và hướng Bắc Kạn, các tiểu đoàn tập trung đánh vào những đoàn xe và đơn vị địch đang cơ động. Ta tập kích địch ở Chợ Mới ngày 15/10 và Chợ Đồn ngày 21/10, rồi phục kích trên Đường số 4 ở Bông Lau – Lũng Phầy ngày 30/10. Đường số 4 nối Lạng Sơn với Cao Bằng là tuyến tiếp tế duy nhất của cánh quân phía đông, nên mỗi trận phục kích ở đây đều cắt vào đúng khâu yếu nhất của địch. Cùng lúc, mặt trận đường số 3 đánh địch trên đoạn Bắc Kạn – Cao Bằng và bảo vệ cơ quan Trung ương. Chuỗi trận đánh này tiêu hao một bộ phận quan trọng sinh lực địch và buộc chúng phải tính đến chuyện rút lui.",
+      "hien": [
+        "deo-bong-lau",
+        "mt-duong-4",
+        "cho-moi",
+        "cho-don",
+        "lang-son",
+        "cao-bang",
+        "bac-kan",
+        "gong-kim-dong"
+      ],
+      "nguon": [
+        "Báo Quân đội nhân dân — Nghệ thuật phản công trong Chiến dịch Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/nghe-thuat-phan-cong-trong-chien-dich-viet-bac-thu-dong-1947-762107"
+      ]
+    },
+    {
+      "id": 8,
+      "tieu_de": "Pháp bí mật rút quân, ta bám đánh trên đường rút",
+      "thoi_gian": "21/11 – 15/12/1947",
+      "dia_danh": "Tuyên Quang · Phủ Thông · Sơn Dương · Đèo Khế · Đèo Giàng",
+      "mo_ta": "Sau hơn một tháng tung quân vào núi rừng Việt Bắc, ngoài việc đốt phá một ít kho tàng và chiếm đóng một vài nơi, quân Pháp không thực hiện được mục tiêu cơ bản là tiêu diệt cơ quan đầu não kháng chiến, trong khi sinh lực ngày càng bị tiêu hao. Từ ngày 21/11/1947, địch bắt đầu bí mật rút quân khỏi Việt Bắc; cùng ngày chúng rút khỏi thị xã Tuyên Quang, trừ một bộ phận nhỏ xuôi sông Lô, đại bộ phận rút theo đường bộ qua Bình Ca về Thái Nguyên. Ta kịp thời tổ chức lực lượng đánh địch trên nhiều hướng: tập kích đồn Phủ Thông ngày 30/11, phục kích nhiều trận ở Sơn Dương, Bình Ca, Đèo Khế, Phan Lương và Đèo Giàng ngày 15/12. Tiểu đoàn 42 tổ chức nhiều trận phục kích, tập kích và truy kích trên con đường Bình Ca – Thái Nguyên.",
+      "hien": [
+        "mui-rut-quan",
+        "phu-thong",
+        "son-duong",
+        "binh-ca",
+        "deo-giang",
+        "tuyen-quang",
+        "thai-nguyen",
+        "tieu-doan-42"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html",
+        "Báo Quân đội nhân dân — Sống chết với con đường Bình Ca – Thái Nguyên — https://www.qdnd.vn/ho-so-su-kien/dai-tuong-vo-nguyen-giap/bai-3-song-chet-voi-con-duong-binh-ca-thai-nguyen-260601"
+      ]
+    },
+    {
+      "id": 9,
+      "tieu_de": "20/12/1947: chiến dịch phản công đầu tiên toàn thắng",
+      "thoi_gian": "20/12/1947",
+      "dia_danh": "Toàn khu căn cứ Việt Bắc",
+      "mo_ta": "Ngày 20/12/1947, chiến dịch kết thúc thắng lợi. Quân và dân ta loại khỏi vòng chiến đấu trên 7.200 quân địch, bắn rơi 18 máy bay, đánh chìm 54 tàu và xuồng, phá huỷ 255 xe quân sự, thu 25 khẩu pháo cỡ 20 đến 105mm cùng hơn 2.000 súng bộ binh; ta hy sinh 260 và bị thương 168 người. Cơ quan đầu não kháng chiến và căn cứ địa Việt Bắc được bảo vệ an toàn, kế hoạch «đánh nhanh, thắng nhanh» của Pháp phá sản. Đây là chiến dịch đầu tiên của Quân đội ta trong kháng chiến chống Pháp, cũng là chiến dịch phản công đầu tiên, lần đầu vận dụng thành công nghệ thuật chiến dịch «tiến công trong phản công địch trên địa hình rừng núi».",
+      "hien": [
+        "co-thang",
+        "atk",
+        "bac-kan",
+        "cao-bang",
+        "lang-son",
+        "tuyen-quang",
+        "thai-nguyen"
+      ],
+      "nguon": [
+        "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html",
+        "Báo Quân đội nhân dân — Chiến thắng Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-viet-bac-thu-dong-1947-buoc-truong-thanh-cua-luc-luong-vu-trang-nhan-dan-viet-nam-797321"
       ]
     }
   ],
-  "ket_qua": "Loại khỏi vòng chiến hơn 7.200 địch, bắn rơi 18 máy bay, đánh chìm 54 tàu xuồng, buộc Pháp phải rút quân khỏi Việt Bắc.",
+  "ket_qua": "Loại khỏi vòng chiến trên 7.200 địch, bắn rơi 18 máy bay, đánh chìm 54 tàu xuồng, phá huỷ 255 xe quân sự, buộc Pháp phải rút quân khỏi Việt Bắc.",
   "y_nghia": "Chiến dịch phản công đầu tiên và thắng lợi hoàn toàn của Quân đội nhân dân Việt Nam, bảo vệ vững chắc căn cứ địa kháng chiến.",
   "trang_thai": "draft",
   "nguon": [
-    "Báo Nhân Dân (special.nhandan.vn) — Chiến dịch Việt Bắc Thu Đông",
+    "Báo Nhân Dân — Chiến dịch Việt Bắc Thu Đông — https://special.nhandan.vn/chien-dich-viet-bac-thu-dong/index.html",
+    "Báo Quân đội nhân dân — Chiến thắng Việt Bắc Thu Đông 1947, bước trưởng thành của lực lượng vũ trang nhân dân Việt Nam — https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-viet-bac-thu-dong-1947-buoc-truong-thanh-cua-luc-luong-vu-trang-nhan-dan-viet-nam-797321",
+    "Báo Quân đội nhân dân — Nghệ thuật phản công trong Chiến dịch Việt Bắc Thu Đông 1947 — https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/nghe-thuat-phan-cong-trong-chien-dich-viet-bac-thu-dong-1947-762107",
+    "Báo Quân đội nhân dân — Sống chết với con đường Bình Ca – Thái Nguyên — https://www.qdnd.vn/ho-so-su-kien/dai-tuong-vo-nguyen-giap/bai-3-song-chet-voi-con-duong-binh-ca-thai-nguyen-260601",
     "SGK Lịch sử 9 — NXB Giáo dục Việt Nam",
     "Lịch sử Việt Nam (Viện Sử học)"
   ],
@@ -222,13 +548,19 @@
       "sach": "Nhật lệnh và quân lệnh của Bộ Tổng chỉ huy, 8-10-1947",
       "doan": "chiến đấu theo mệnh lệnh đã định để phối hợp với Việt Bắc",
       "nguon_trich": "Chiến thắng Việt Bắc Thu Đông 1947 — Báo Nhân Dân điện tử — https://nhandan.vn/chien-thang-viet-bac-thu-dong-1947-post591881.html",
-      "buoc": 1
+      "buoc": 3
     },
     {
       "sach": "Chỉ thị \"Nhiệm vụ và cách đánh của đại đội độc lập\" của Bộ Tổng chỉ huy (in trong Những tài liệu chỉ đạo các chiến dịch của Trung ương Đảng, Tổng Quân ủy và Bộ Tổng Tư lệnh, Bộ Tổng Tham mưu xuất bản năm 1963)",
       "doan": "cùng với du kích phát triển chiến tranh nhân dân, dùng chiến thuật du kích quấy rối, tiêu hao địch... đối với những vị trí nhỏ, bao vây tiêu diệt, nếu không có điều kiện thì luôn luôn uy hiếp để bức rút, bức hàng, tăng cường địa lôi chiến, phục kích các đường rừng, đánh đường sông.",
       "nguon_trich": "Chiến thắng Việt Bắc Thu Đông 1947 — Báo Nhân Dân điện tử — https://nhandan.vn/chien-thang-viet-bac-thu-dong-1947-post591881.html",
-      "buoc": 3
+      "buoc": 4
+    },
+    {
+      "sach": "Mệnh lệnh viết tay của Tổng chỉ huy Võ Nguyên Giáp gửi Tiểu đoàn 42, tháng 10/1947",
+      "doan": "Tiểu đoàn 42 sống chết với con đường Bình Ca-Thái Nguyên",
+      "nguon_trich": "Báo Quân đội nhân dân — https://www.qdnd.vn/ho-so-su-kien/dai-tuong-vo-nguyen-giap/bai-3-song-chet-voi-con-duong-binh-ca-thai-nguyen-260601",
+      "buoc": 5
     }
   ]
 }

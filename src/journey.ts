@@ -37,8 +37,9 @@ interface JourneyData {
 // Handle tối thiểu khớp figures3d.mountFigure3D (tránh import tĩnh Three.js).
 type Figure3DHandle = { dispose(): void };
 
-import { esc, sourcesHtml } from "./util/html";
+import { sourcesHtml } from "./util/html";
 import { registerPanel, showOnly, hidePanel } from "./panels";
+import { escVan } from "./popup-noi-dung";
 
 const DATA_URL = `${import.meta.env.BASE_URL}data/journey/hanh-trinh.json`;
 const CHUA_PHAN_KY = "Chưa phân kỳ";
@@ -130,13 +131,13 @@ function renderMapHtml(eras: EraGroup[]): string {
           return `<li>
             <button type="button" class="jn-step ${state}" data-idx="${idx}"${ariaCurrent}>
               <span class="jn-step-dot" aria-hidden="true">${dot}</span>
-              <span class="jn-step-label">${esc(scene.tieu_de)} <em>— ${esc(scene.nam)}</em></span>
+              <span class="jn-step-label">${escVan(scene.tieu_de)} <em>— ${escVan(scene.nam)}</em></span>
             </button>
           </li>`;
         })
         .join("");
       return `<div class="jn-era">
-        <h3 class="jn-era-title ${cls}">${esc(era.label)}</h3>
+        <h3 class="jn-era-title ${cls}">${escVan(era.label)}</h3>
         <ol class="jn-era-steps">${steps}</ol>
       </div>`;
     })
@@ -218,17 +219,17 @@ function buildScene(c: HTMLElement): void {
         current === total - 1 ? " disabled" : ""
       }>▶</button>
     </div>
-    <p class="jn-progress-text" aria-live="polite">Chặng ${current + 1}/${total} · ${esc(sceneEraLabel)}</p>
+    <p class="jn-progress-text" aria-live="polite">Chặng ${current + 1}/${total} · ${escVan(sceneEraLabel)}</p>
 
     <article class="jn-scene jn-scene-in">
       <header class="jn-scene-head">
-        <span class="jn-scene-era ${sceneEraClass}">${esc(sceneEraLabel)}</span>
-        <h2 class="jn-scene-title">${esc(scene.tieu_de)} <span class="jn-scene-year">— ${esc(scene.nam)}</span>${
+        <span class="jn-scene-era ${sceneEraClass}">${escVan(sceneEraLabel)}</span>
+        <h2 class="jn-scene-title">${escVan(scene.tieu_de)} <span class="jn-scene-year">— ${escVan(scene.nam)}</span>${
           isDraft ? ` <span class="draft-badge">Bản nháp</span>` : ""
         }</h2>
       </header>
-      <blockquote class="jn-narration">${esc(scene.loi_dan)}</blockquote>
-      <p class="jn-context">📍 ${esc(scene.boi_canh)}</p>
+      <blockquote class="jn-narration">${escVan(scene.loi_dan)}</blockquote>
+      <p class="jn-context">📍 ${escVan(scene.boi_canh)}</p>
       <div class="journey-stage" id="journey-stage"><p class="muted">Đang dựng mô hình…</p></div>
       ${
         scene.battle_id

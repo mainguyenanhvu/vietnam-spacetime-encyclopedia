@@ -52,6 +52,39 @@ interface PhanTu {
   tu?: Diem;
   den?: Diem;
   nhan?: string;
+  /** Nhãn phụ dưới nhãn chính — «Đại đoàn 312», «3 vạn quân». Vẽ thành tspan
+   *  dòng thứ hai CỦA CHÍNH nhãn chính, không phải một nhãn rời: chỉ như vậy
+   *  thuật toán gỡ chồng mới không tách nó khỏi thứ nó chú thích. */
+  quy_mo?: string;
+}
+
+/**
+ * Một con số có thể vênh nhau giữa các nguồn.
+ *
+ * Bất biến #4 của dự án: nguồn mâu thuẫn thì NÊU CẢ HAI. Chuỗi đơn dùng cho ca
+ * mọi nguồn đã thống nhất; mảng `{so, nguon}` dùng cho ca hai nguồn nhà nước
+ * chép hai con số — ép về một con số là lặng lẽ chọn bản gọn hơn.
+ */
+type SoLieu = string | { so: string; nguon?: string }[];
+
+interface LucLuongBen {
+  quan_so?: SoLieu;
+  don_vi?: string[];
+  vu_khi?: string[];
+}
+
+/** Tương quan lực lượng hai bên. `nguon` BẮT BUỘC — khối không nguồn không hiện. */
+interface LucLuong {
+  ta?: LucLuongBen;
+  doi_thu?: LucLuongBen;
+  nguon?: string[];
+}
+
+/** Tổn thất hai bên. `nguon` BẮT BUỘC — số liệu về người chết không nguồn thì không hiện. */
+interface TonThat {
+  ta?: SoLieu;
+  doi_thu?: SoLieu;
+  nguon?: string[];
 }
 
 interface BattleStep {
@@ -61,6 +94,14 @@ interface BattleStep {
   /** Chỉ sa đồ sông nước mới dùng; vắng mặt thì không hiện chỉ báo thuỷ triều. */
   thuy_trieu?: TideDir;
   hien: LayerKey[];
+  /** Mốc thời gian của riêng bước — «13–17/3/1954». Có ít nhất một bước khai
+   *  trường này thì dải bước chuyển thành DÒNG THỜI GIAN có mốc thật. */
+  thoi_gian?: string;
+  /** Địa danh của riêng bước — «Him Lam · Độc Lập · Bản Kéo». */
+  dia_danh?: string;
+  /** Nguồn RIÊNG của bước. Trước đây chỉ có nguồn cấp TRẬN, nên câu cụ thể
+   *  nhất trên màn hình lại là câu không truy được về đâu. */
+  nguon?: string[];
 }
 
 /** Trích dẫn nguyên văn từ văn tịch/chính sử — hiển thị ở khối «Văn tịch chép».
@@ -100,6 +141,11 @@ interface Battle {
   sa_do_kieu?: "tong-quat";
   dia_hinh?: DiaHinh[];
   phan_tu?: PhanTu[];
+  /** Khoảng thời gian toàn trận — «13/3/1954 – 7/5/1954». Có trường này thì ô
+   *  «Năm» trong khối thông tin nhường chỗ cho nó. */
+  thoi_gian?: string;
+  luc_luong?: LucLuong;
+  ton_that?: TonThat;
 }
 
 /** Một mục trong kho 168 trận — dùng cho Màn A và Màn B rút gọn (chưa có sa đồ). */
@@ -501,12 +547,20 @@ function netMem(pts: Diem[]): string {
   return d;
 }
 
-/** Nhãn chữ có quầng --mat (kỹ thuật bản đồ chuẩn cho chữ đè nền đổi màu). */
-function nhanSvg(x: number, y: number, chu: string, phu = false): string {
+/** Nhãn chữ có quầng --mat (kỹ thuật bản đồ chuẩn cho chữ đè nền đổi màu).
+ *
+ *  `quyMo` thành DÒNG THỨ HAI của cùng một `<text>`, không phải một nhãn rời:
+ *  getBBox() khi đó trả hộp bao của cả hai dòng, nên `veNenNhan()` vẽ một tấm
+ *  nền chung và đẩy cả cụm cùng lúc. Nhãn phụ rời sẽ bị đẩy đi nơi khác và
+ *  không còn chú thích cho ai. */
+function nhanSvg(x: number, y: number, chu: string, phu = false, quyMo?: string): string {
   // Bọc trong <g> để `veNenNhan()` chèn được tấm nền phía sau lúc chạy —
   // bề rộng chữ chỉ đo được sau khi trình duyệt dựng font, không tính trước
   // ở khâu sinh chuỗi được.
-  return `<g class="sd-nhan-g"><text class="sd-nhan${phu ? " sd-nhan-phu" : ""}" x="${r1(x)}" y="${r1(y)}" text-anchor="middle">${esc(chu)}</text></g>`;
+  const dong2 = quyMo?.trim()
+    ? `<tspan class="sd-nhan-quy-mo" x="${r1(x)}" dy="19">${esc(quyMo.trim())}</tspan>`
+    : "";
+  return `<g class="sd-nhan-g"><text class="sd-nhan${phu ? " sd-nhan-phu" : ""}" x="${r1(x)}" y="${r1(y)}" text-anchor="middle">${esc(chu)}${dong2}</text></g>`;
 }
 
 /**
@@ -518,14 +572,19 @@ function nhanSvg(x: number, y: number, chu: string, phu = false): string {
  * này lại ăn vào glyph của dòng kia.
  *
  * Cách xử: đo hộp bao thật bằng getBBox(), vẽ nền bo góc, rồi quét từ trên
- * xuống đẩy nhãn nào còn chạm nhau xuống dưới. Chỉ đẩy DỌC — đẩy ngang sẽ
- * kéo nhãn rời khỏi thứ nó chú thích.
+ * xuống dời nhãn nào còn chạm nhau sang chỗ trống GẦN NHẤT — chủ yếu theo
+ * chiều dọc, cộng ba nấc lách ngang nhỏ (≤52 đơn vị) để nhãn vẫn nằm trên thứ
+ * nó chú thích. Dời quá một dòng chữ thì vẽ vạch nối về chỗ gốc.
  */
 export function veNenNhan(svg: SVGSVGElement): void {
-  // Dọn kết quả lượt trước: bỏ tấm nền cũ và trả nhãn về đúng chỗ gốc.
-  // Không dọn thì mỗi lần đổi bước lại cộng dồn một lớp `dy` nữa.
-  for (const r of svg.querySelectorAll(".sd-nhan-nen")) r.remove();
+  // Dọn kết quả lượt trước: bỏ tấm nền + vạch nối cũ và trả nhãn về đúng chỗ
+  // gốc. Không dọn thì mỗi lần đổi bước lại cộng dồn một lớp `dy` nữa.
+  for (const r of svg.querySelectorAll(".sd-nhan-nen, .sd-nhan-noi")) r.remove();
   for (const t of svg.querySelectorAll("text.sd-nhan")) t.removeAttribute("dy");
+  // Dịch NGANG đặt trên <g>, không phải trên <text>: nhãn hai dòng có tspan
+  // khai `x` tuyệt đối, nên `dx` trên <text> chỉ dịch dòng một và tách đôi
+  // nhãn. Transform trên nhóm kéo cả chữ, tấm nền lẫn vạch nối đi cùng.
+  for (const g of svg.querySelectorAll(".sd-nhan-g")) g.removeAttribute("transform");
 
   const nhom = [...svg.querySelectorAll<SVGGElement>(".sd-nhan-g")];
   const hop: { g: SVGGElement; t: SVGTextElement; b: DOMRect }[] = [];
@@ -552,37 +611,99 @@ export function veNenNhan(svg: SVGSVGElement): void {
   // Đáy khung: đẩy quá mức này là nhãn rơi ra ngoài viewBox và mất hẳn — đã
   // gặp đúng ca đó với «Ô Mã Nhi bị bắt sống» ở bước cuối trận Bạch Đằng.
   const DAY = TQ_CAO - 26;
-  const cham = (x: number, y: number, w: number, hgt: number): boolean =>
-    daDat.some(
-      (r) =>
-        x < r.x + r.width + DEM &&
-        x + w + DEM > r.x &&
-        y < r.y + r.height + DEM &&
-        y + hgt + DEM > r.y,
-    );
+  /** DIỆN TÍCH chồng lấn, không phải cờ đúng/sai: sa đồ dày tới mức không còn
+   *  chỗ trống nào thì vẫn phải chọn được chỗ ÍT ĐÈ NHẤT. Trả 0 đúng khi phép
+   *  thử va chạm cũ trả false, nên hành vi ở mật độ thấp không đổi. */
+  const deChong = (x: number, y: number, w: number, hgt: number): number => {
+    let s = 0;
+    for (const r of daDat) {
+      const ox = Math.min(x + w + DEM, r.x + r.width + DEM) - Math.max(x, r.x);
+      const oy = Math.min(y + hgt + DEM, r.y + r.height + DEM) - Math.max(y, r.y);
+      if (ox > 0 && oy > 0) s += ox * oy;
+    }
+    return s;
+  };
+  // Biên chừa quanh khung vẽ khi kẹp nhãn vào trong.
+  const BIEN = 6;
   for (const h of hop) {
     const buoc = h.b.height + DEM * 2;
-    // Danh sách vị trí ứng viên theo thứ tự ƯU TIÊN: đứng yên trước, rồi
-    // xuống một nấc, lên một nấc, xuống hai nấc… Nhận vị trí ĐẦU TIÊN vừa
-    // không đè ai vừa còn nằm trong khung.
+    // Danh sách vị trí ứng viên duyệt theo KHOẢNG CÁCH tăng dần: đứng yên
+    // trước, rồi các chỗ gần nhất. Nhận vị trí ĐẦU TIÊN vừa không đè ai vừa
+    // còn nằm trong khung.
     //
     // Bản trước tôi viết kiểu «đẩy xuống, hết chỗ thì quay sang đẩy lên» rồi
     // `break` mà KHÔNG kiểm lại vị trí vừa chọn — kết quả đo được là 0 cặp
     // chồng nhau thành 3. Duyệt ứng viên thì không có nhánh nào thoát mà
     // chưa kiểm.
-    const ungVien = [0];
-    for (let k = 1; k <= 6; k++) ungVien.push(k * buoc, -k * buoc);
+    //
+    // Ba thay đổi cho sa đồ dày, cả ba đều đo trên hồ sơ 24 phần tử:
+    //   · nấc NỬA dòng — gấp đôi số chỗ thử trong cùng một tầm, nên nhãn hay
+    //     tìm được khe sát bên cạnh thay vì phải nhảy hẳn một dòng;
+    //   · tầm đẩy dọc chặn ở 160 đơn vị (hơn ¼ chiều cao khung), tính theo
+    //     KHOẢNG CÁCH chứ không theo số nấc. Chặn theo nấc thì nhãn hai dòng
+    //     (có quy_mo) cao gấp đôi nên 6 nấc của nó thành 288 đơn vị — đo được
+    //     một nhãn văng 191 đơn vị khỏi khối quân nó chú thích, sạch mà sai;
+    //   · thêm ba nấc NGANG nhỏ (±26, ±52). Ghi chú cũ của hàm nói «chỉ đẩy
+    //     dọc» là đúng với đẩy ngang TỰ DO — nhưng một cú lách 26 đơn vị (hơn
+    //     một chữ) vẫn để nhãn nằm trên chính khối nó chú thích, mà mở thêm
+    //     gấp năm số chỗ trống. Xa hơn thì vạch nối ở cuối hàm gánh.
+    const nua = buoc / 2;
+    const dyUv = [0];
+    for (let k = 1; k <= 12 && k * nua <= 160; k++) dyUv.push(k * nua, -k * nua);
+    const ungVien: [number, number][] = [];
+    for (const uy of dyUv) for (const ux of [0, 26, -26, 52, -52]) ungVien.push([ux, uy]);
+    ungVien.sort((a, z) => Math.hypot(a[0], a[1]) - Math.hypot(z[0], z[1]));
     let dy = 0;
-    for (const ứ of ungVien) {
-      const y = h.b.y + ứ;
+    let dx = 0;
+    let itNhat = Number.POSITIVE_INFINITY;
+    let totNhat: [number, number] | null = null;
+    for (const [ux, uy] of ungVien) {
+      const x = h.b.x + ux;
+      const y = h.b.y + uy;
       if (y < 8 || y + h.b.height > DAY) continue;
-      if (cham(h.b.x, y, h.b.width, h.b.height)) continue;
-      dy = ứ;
-      break;
+      if (x < BIEN || x + h.b.width > TQ_RONG - BIEN) continue;
+      const de = deChong(x, y, h.b.width, h.b.height);
+      if (de === 0) {
+        dx = ux;
+        dy = uy;
+        totNhat = null;
+        break;
+      }
+      if (de < itNhat) {
+        itNhat = de;
+        totNhat = [ux, uy];
+      }
     }
-    if (dy) h.t.setAttribute("dy", String(dy));
+    if (totNhat !== null) [dx, dy] = totNhat;
+    // KẸP VÀO KHUNG, làm sau cùng. Không có bước này thì nhãn nào vốn đã nằm
+    // ngoài khung (nhãn địa hình đặt ở `giua[1] - 22` với đỉnh núi sát mép
+    // trên) sẽ không có ứng viên nào hợp lệ, giữ nguyên chỗ cũ và bị
+    // `overflow: hidden` của <svg> cắt mất — đo được 5 nhãn kiểu này trên
+    // bach-dang-1288 sau khi hồ sơ dày lên.
+    const yTho = h.b.y + dy;
+    dy += Math.min(Math.max(yTho, 8), Math.max(8, DAY - h.b.height)) - yTho;
+    const xTho = h.b.x + dx;
+    dx += Math.min(Math.max(xTho, BIEN), Math.max(BIEN, TQ_RONG - BIEN - h.b.width)) - xTho;
+    if (dy) h.t.setAttribute("dy", String(Math.round(dy * 10) / 10));
+    if (dx) h.g.setAttribute("transform", `translate(${Math.round(dx)},0)`);
     const y = h.b.y + dy;
-    daDat.push(new DOMRect(h.b.x, y, h.b.width, h.b.height));
+    daDat.push(new DOMRect(h.b.x + dx, y, h.b.width, h.b.height));
+    // Nhãn bị đẩy xa thì nối lại bằng một vạch chấm về chỗ cũ. Không có vạch,
+    // người xem đọc nhãn như đang chú thích cho thứ nằm dưới chỗ MỚI của nó —
+    // sa đồ nói sai mà trông vẫn sạch sẽ. Ngưỡng 22 đơn vị ≈ một dòng chữ:
+    // dịch trong một dòng thì mắt vẫn ghép đúng, không cần vạch.
+    if (Math.abs(dy) >= 22 || Math.abs(dx) >= 14) {
+      // Toạ độ ghi trong hệ CỤC BỘ của <g>, mà <g> đã dịch ngang dx — nên đầu
+      // vạch trỏ về gốc phải trừ lại dx.
+      const gx = h.b.x + h.b.width / 2;
+      const noi = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      noi.setAttribute("class", "sd-nhan-noi");
+      noi.setAttribute("x1", String(Math.round(gx - dx)));
+      noi.setAttribute("y1", String(Math.round(h.b.y + h.b.height / 2)));
+      noi.setAttribute("x2", String(Math.round(gx)));
+      noi.setAttribute("y2", String(Math.round(y + h.b.height / 2)));
+      h.g.insertBefore(noi, h.t);
+    }
     const nen = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     nen.setAttribute("class", "sd-nhan-nen");
     nen.setAttribute("x", String(h.b.x - 6));
@@ -777,6 +898,16 @@ function diaDanhSvg(): string {
     <circle class="sd-dia-danh-tam" r="4"/>`;
 }
 
+/** Tách nhãn chính / nhãn phụ của một phần tử. Khai `quy_mo` mà bỏ trống
+ *  `nhan` thì `quy_mo` lên làm nhãn chính — không có lý do giấu đi chữ duy
+ *  nhất người soạn đã viết cho phần tử đó. */
+function nhanCua(p: PhanTu): { chinh: string; phu?: string } {
+  const nhan = p.nhan?.trim() ?? "";
+  const quyMo = p.quy_mo?.trim() ?? "";
+  if (nhan) return quyMo ? { chinh: nhan, phu: quyMo } : { chinh: nhan };
+  return { chinh: quyMo };
+}
+
 function muiTenSvg(p: PhanTu, m: BenMau): string {
   const tu = diemDon(p.tu);
   const den = diemDon(p.den);
@@ -805,9 +936,10 @@ function muiTenSvg(p: PhanTu, m: BenMau): string {
   const ny = (tu[1] + 2 * cy + den[1]) / 4 + ny0 * 26;
   // Vạch hành quân: nét đứt sáng chạy DỌC THÂN mũi tên (CSS bật qua class
   // .sd-dong-on, applyStep giới hạn 3 mũi/bước vì dashoffset tốn paint).
+  const nh = nhanCua(p);
   return `<path class="sd-arrow" d="${d}" fill="none" stroke="${m.chu}" stroke-width="5.5" stroke-linecap="round" marker-end="url(#${dau})"${duoi}/>
     <path class="sd-arrow-dong" d="${d}" fill="none" aria-hidden="true"/>
-    ${p.nhan ? nhanSvg(nx, ny + 6, p.nhan) : ""}`;
+    ${nh.chinh ? nhanSvg(nx, ny + 6, nh.chinh, false, nh.phu) : ""}`;
 }
 
 function phanTuSvg(p: PhanTu): string {
@@ -839,19 +971,26 @@ function phanTuSvg(p: PhanTu): string {
     "dia-danh": 36,
     "mui-ten": 0,
   };
+  const nh = nhanCua(p);
   const than =
     p.kieu === "mui-ten"
       ? muiTenSvg(p, m)
       : `<g class="sd-khoi" transform="translate(${r1(so(p.x))},${r1(so(p.y))})">${noiDung}</g>${
-          p.nhan ? nhanSvg(so(p.x), so(p.y) + nhanDuoi[p.kieu], p.nhan) : ""
+          nh.chinh ? nhanSvg(so(p.x), so(p.y) + nhanDuoi[p.kieu], nh.chinh, false, nh.phu) : ""
         }`;
   return `<g class="sd-layer" data-key="${esc(p.id)}">${than}</g>`;
 }
 
+/** Ngưỡng «sa đồ dày»: quá số này thì nhãn thu nhỏ một nấc.
+ *  Đo 2026-08-28 trên 290 hồ sơ: 289 hồ sơ ≤ 13 phần tử, dày nhất 19
+ *  (chi-lang-1427). Đặt ở 14 nên chỉ hồ sơ thật sự chật mới đổi cỡ chữ. */
+const TQ_NGUONG_DAY = 14;
+
 function buildTongQuatSvg(b: Battle): string {
   const diaHinh = (b.dia_hinh ?? []).map(diaHinhSvg).join("");
   const phanTu = (b.phan_tu ?? []).map(phanTuSvg).join("");
-  return `<svg class="sd-svg sd-svg-tq" viewBox="0 0 ${TQ_RONG} ${TQ_CAO}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Sa đồ minh hoạ ${esc(b.ten)}">
+  const day = (b.phan_tu ?? []).length > TQ_NGUONG_DAY ? " sd-day" : "";
+  return `<svg class="sd-svg sd-svg-tq${day}" viewBox="0 0 ${TQ_RONG} ${TQ_CAO}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Sa đồ minh hoạ ${esc(b.ten)}">
     ${saDoDefs()}
     <rect class="sd-nen-dat" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}"/>
     <rect class="sd-nen-hat" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}" filter="url(#sd-f-giay)" aria-hidden="true"/>
@@ -861,6 +1000,258 @@ function buildTongQuatSvg(b: Battle): string {
     <rect class="sd-nen-vien" x="0" y="0" width="${TQ_RONG}" height="${TQ_CAO}" aria-hidden="true"/>
     <text class="sd-note-tq" x="${TQ_RONG / 2}" y="${TQ_CAO - 12}" text-anchor="middle">Sa đồ minh hoạ — không theo tỉ lệ</text>
   </svg>`;
+}
+
+// ── Chú giải ký hiệu ──────────────────────────────────────────────────────
+//
+// Sa đồ 24 phần tử mà không có chú giải thì không đọc được. Ký hiệu trong chú
+// giải do CHÍNH các hàm vẽ phần tử sinh ra, không vẽ lại bằng tay: chú giải
+// lệch với sa đồ là loại sai không cổng nào bắt được.
+//
+// Hoạ tiết (#sd-hatch-*) và đầu mũi tên (#sd-tq-mui-*) tham chiếu <defs> của
+// sa đồ chính. `url(#id)` phân giải trong PHẠM VI TÀI LIỆU, không phải trong
+// phạm vi một thẻ <svg>, nên tham chiếu chéo hợp lệ — và sa đồ chính luôn
+// dựng cùng lúc với chú giải trong renderFullDetail().
+
+/** Tên bên đối phương dùng cho CHỮ. Nội chiến không có «quân địch»: tên lấy
+ *  thẳng từ `doi_thu` của hồ sơ, đúng quy ước mà cặp token --sd-doi-* đã theo. */
+function benTen(b: Battle, ben: Ben | undefined): string {
+  if (ben === "ta") return "quân ta";
+  if (ben !== "dich") return "";
+  const ten = b.doi_thu?.trim();
+  if (ten) return ten;
+  return b.loai_xung_dot === "noi-chien" ? "phía đối phương" : "quân đối phương";
+}
+
+const hoaDau = (s: string): string => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
+
+// Khung nhìn riêng từng ký hiệu: các hình có tầm vóc rất khác nhau (thành
+// rộng 126 đơn vị, địa danh chỉ 26) nên một khung chung sẽ làm cái thì tràn,
+// cái thì bé bằng hạt gạo.
+const LG_KHUNG: Record<PhanTuKieu, string> = {
+  quan: "-26 -33 66 60",
+  thanh: "-70 -50 140 92",
+  thuyen: "-44 -48 88 80",
+  co: "-10 -74 76 84",
+  "cong-su": "-70 -26 140 62",
+  "dia-danh": "-22 -22 44 44",
+  "mui-ten": "0 0 92 46",
+};
+
+const LG_TEN: Record<PhanTuKieu, string> = {
+  quan: "Khối quân",
+  thanh: "Thành, cứ điểm",
+  thuyen: "Thuyền chiến",
+  "cong-su": "Công sự — bãi cọc, luỹ, chiến hào",
+  co: "Cờ hiệu",
+  "dia-danh": "Địa danh",
+  "mui-ten": "Hướng tiến quân",
+};
+
+// Hai ký hiệu này KHÔNG đổi hình theo phe (congSuSvg/diaDanhSvg bỏ qua `ben`).
+// Liệt kê chúng ba lần cho ba phe là hứa một sự phân biệt không có thật.
+const LG_TRUNG_TINH: PhanTuKieu[] = ["cong-su", "dia-danh"];
+
+function kyHieuSvg(kieu: PhanTuKieu, ben: Ben | undefined): string {
+  const m = benMau(ben);
+  const than = ((): string => {
+    switch (kieu) {
+      case "quan":
+        return quanSvg(m, ben);
+      case "thanh":
+        return thanhSvg(m, ben);
+      case "thuyen":
+        return thuyenSvg(m, ben);
+      case "co":
+        return coSvg(m, ben);
+      case "cong-su":
+        return congSuSvg();
+      case "dia-danh":
+        return diaDanhSvg();
+      case "mui-ten": {
+        const dau =
+          ben === "ta" ? "sd-tq-mui-ta" : ben === "dich" ? "sd-tq-mui-doi" : "sd-tq-mui-trung";
+        const duoi = ben === "dich" ? ` marker-start="url(#sd-tq-duoi-doi)"` : "";
+        return `<path d="M8,36 Q38,4 64,22" fill="none" stroke="${m.chu}" stroke-width="5.5" stroke-linecap="round" marker-end="url(#${dau})"${duoi}/>`;
+      }
+    }
+  })();
+  return `<svg class="sd-lg-hinh" viewBox="${LG_KHUNG[kieu]}" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">${than}</svg>`;
+}
+
+function chuGiaiHtml(b: Battle): string {
+  const ds = b.phan_tu ?? [];
+  const THU_TU: PhanTuKieu[] = ["quan", "thanh", "cong-su", "thuyen", "co", "dia-danh", "mui-ten"];
+  const cap: { kieu: PhanTuKieu; ben?: Ben; chung?: boolean }[] = [];
+  for (const kieu of THU_TU) {
+    const cua = ds.filter((p) => p.kieu === kieu);
+    if (cua.length === 0) continue;
+    if (LG_TRUNG_TINH.includes(kieu)) {
+      cap.push({ kieu, chung: cua.some((p) => !!p.ben) });
+      continue;
+    }
+    for (const ben of ["ta", "dich", undefined] as (Ben | undefined)[])
+      if (cua.some((p) => p.ben === ben)) cap.push({ kieu, ben });
+  }
+  // Hồ sơ không khai phan_tu[] — giữ nguyên chú giải hai ô như trước, không
+  // để trống chỗ này.
+  if (cap.length === 0)
+    return `<div class="sd-legend">
+      <span class="sd-legend-item"><span class="sd-legend-swatch sd-legend-ta"></span> Quân ta — nét gạch chéo, khối tròn</span>
+      <span class="sd-legend-item"><span class="sd-legend-swatch sd-legend-doi"></span> ${esc(hoaDau(benTen(b, "dich")))} — nét ca-rô, khối thoi</span>
+    </div>`;
+  const muc = cap
+    .map(({ kieu, ben, chung }) => {
+      const phu = chung ? "ký hiệu chung cho cả hai bên" : benTen(b, ben);
+      return `<li class="sd-lg-muc">${kyHieuSvg(kieu, ben)}<span class="sd-lg-chu"><b>${esc(LG_TEN[kieu])}</b>${phu ? `<span class="sd-lg-ben muted">${esc(phu)}</span>` : ""}</span></li>`;
+    })
+    .join("");
+  return `<div class="sd-legend sd-legend-ky-hieu">
+    <h3 class="sd-lg-title">🔎 Chú giải ký hiệu</h3>
+    <ul class="sd-lg-ds">${muc}</ul>
+  </div>`;
+}
+
+// ── Tương quan lực lượng · tổn thất ───────────────────────────────────────
+
+/** Một con số, hoặc nhiều con số vênh nhau — mỗi con số đi kèm ĐÚNG nguồn của
+ *  nó. Gộp về một dòng là lặng lẽ chọn bản gọn hơn (bất biến #4). */
+function soLieuHtml(v: SoLieu | undefined): string {
+  // «4.020 hy sinh» đáng in đậm cỡ lớn; một đoạn văn nêu chỗ vênh giữa hai
+  // nguồn thì không — in đậm cả đoạn chỉ làm khối tổn thất thành một mảng chữ
+  // gào lên. Ngưỡng 60 ký tự tách hai ca đó.
+  const dai = (s: string): string => (s.length > 60 ? " sd-so-dai" : "");
+  if (typeof v === "string")
+    return v.trim() ? `<p class="sd-so-lieu${dai(v.trim())}">${esc(v.trim())}</p>` : "";
+  if (!Array.isArray(v)) return "";
+  const ds = v.filter((x) => x && typeof x.so === "string" && x.so.trim());
+  if (ds.length === 0) return "";
+  return `<ul class="sd-so-lieu-ds">${ds
+    .map(
+      (x) =>
+        `<li><span class="sd-so${dai(x.so.trim())}">${esc(x.so.trim())}</span>${
+          x.nguon?.trim() ? `<span class="sd-so-nguon muted">theo ${esc(x.nguon.trim())}</span>` : ""
+        }</li>`,
+    )
+    .join("")}</ul>`;
+}
+
+function dsHtml(nhan: string, ds: string[] | undefined): string {
+  const sach = (ds ?? []).map((s) => String(s).trim()).filter(Boolean);
+  if (sach.length === 0) return "";
+  return `<div class="sd-ll-muc"><dt>${esc(nhan)}</dt><dd><ul>${sach
+    .map((s) => `<li>${esc(s)}</li>`)
+    .join("")}</ul></dd></div>`;
+}
+
+function cotLucLuongHtml(tieuDe: string, lop: string, c: LucLuongBen | undefined): string {
+  if (!c) return "";
+  const quanSo = soLieuHtml(c.quan_so);
+  const dv = dsHtml("Đơn vị", c.don_vi);
+  const vk = dsHtml("Vũ khí, khí tài", c.vu_khi);
+  if (!quanSo && !dv && !vk) return "";
+  return `<div class="sd-ll-cot ${lop}">
+    <h4 class="sd-ll-ten">${esc(tieuDe)}</h4>
+    ${quanSo ? `<div class="sd-ll-quan-so">${quanSo}</div>` : ""}
+    ${dv || vk ? `<dl class="sd-ll-dl">${dv}${vk}</dl>` : ""}
+  </div>`;
+}
+
+/** 🔴 Bất biến #3: `luc_luong.nguon` rỗng thì khối KHÔNG hiện. Cổng
+ *  validate_battles.mjs chặn ở khâu dữ liệu; đây là lớp thứ hai cho hồ sơ
+ *  soạn trước khi luật đó ra đời. */
+function lucLuongHtml(b: Battle): string {
+  const ll = b.luc_luong;
+  if (!ll) return "";
+  const nguon = (ll.nguon ?? []).map((s) => String(s).trim()).filter(Boolean);
+  if (nguon.length === 0) return "";
+  const ta = cotLucLuongHtml("Quân ta", "sd-ll-ta", ll.ta);
+  const doi = cotLucLuongHtml(hoaDau(benTen(b, "dich")), "sd-ll-doi", ll.doi_thu);
+  if (!ta && !doi) return "";
+  return `<section class="sd-luc-luong">
+    <h3 class="sd-ll-title">⚖️ Tương quan lực lượng</h3>
+    <div class="sd-ll-bang">${ta}${doi}</div>
+    ${sourcesHtml(nguon, "sources sd-ll-nguon")}
+  </section>`;
+}
+
+function tonThatHtml(b: Battle): string {
+  const tt = b.ton_that;
+  if (!tt) return "";
+  const nguon = (tt.nguon ?? []).map((s) => String(s).trim()).filter(Boolean);
+  if (nguon.length === 0) return "";
+  const ta = soLieuHtml(tt.ta);
+  const doi = soLieuHtml(tt.doi_thu);
+  if (!ta && !doi) return "";
+  // Lời nhắc chỉ hiện khi dữ liệu THẬT SỰ có chỗ vênh — hiện lúc nào cũng có
+  // thì thành câu trang trí, và người đọc thôi để ý.
+  const venh = [tt.ta, tt.doi_thu].some((v) => Array.isArray(v) && v.length > 1);
+  return `<section class="sd-ton-that">
+    <h3 class="sd-tt-title">🕯️ Tổn thất</h3>
+    <div class="sd-tt-bang">
+      ${ta ? `<div class="sd-tt-cot sd-tt-ta"><h4 class="sd-tt-ten">Quân ta</h4>${ta}</div>` : ""}
+      ${doi ? `<div class="sd-tt-cot sd-tt-doi"><h4 class="sd-tt-ten">${esc(hoaDau(benTen(b, "dich")))}</h4>${doi}</div>` : ""}
+    </div>
+    ${venh ? `<p class="sd-tt-venh muted">Các nguồn công bố những con số khác nhau; bảng trên nêu đủ, không quy về một con số.</p>` : ""}
+    ${sourcesHtml(nguon, "sources sd-tt-nguon")}
+  </section>`;
+}
+
+// ── Câu hỏi đoán trước bước quyết định ────────────────────────────────────
+//
+// Hỏi TRƯỚC khi hiện đáp án thì phần được hỏi nhớ lâu hơn hẳn — nhưng chỉ
+// ĐÚNG phần được hỏi, phần còn lại gần như không đổi. Nên câu hỏi phải nhắm
+// vào bước quyết định của trận, tức bước cuối.
+//
+// 🔴 Đáp án VÀ hai mồi nhử đều là tiêu đề bước CÓ THẬT trong hồ sơ. Bịa một
+// diễn biến không xảy ra để làm mồi nhử là cách chắc chắn nhất để người đọc
+// nhớ nhầm nó — chính câu hỏi là thứ đọng lại.
+//
+// Thẻ này KHÔNG chặn điều hướng: nó nằm trong khối tường thuật, người xem bấm
+// «Bước sau ▶» lúc nào cũng được, y như trước.
+
+interface CauDoan {
+  hoi: string;
+  dapAn: { chu: string; dung: boolean; buoc: number }[];
+}
+
+function dungCauDoan(b: Battle): CauDoan | null {
+  const n = b.buoc.length;
+  // Dưới 4 bước thì không đủ hai mồi nhử thật, và cũng chẳng còn gì để đoán.
+  if (n < 4) return null;
+  const dung = b.buoc[n - 1];
+  // Mồi nhử lấy trong các bước ĐÃ QUA, bỏ cả bước cuối lẫn bước đang xem: đưa
+  // đúng cái đang hiện trên màn hình vào làm lựa chọn thì câu hỏi thành trò
+  // đánh đố chứ không phải phép nhớ lại.
+  const truoc = b.buoc.slice(0, n - 2);
+  if (truoc.length < 2) return null;
+  const i1 = Math.floor(truoc.length / 3);
+  let i2 = truoc.length - 1 - Math.floor(truoc.length / 3);
+  if (i2 === i1) i2 = (i1 + 1) % truoc.length;
+  const moi = [truoc[i1], truoc[i2]];
+  if (moi.some((s) => !s || !s.tieu_de)) return null;
+  const ds = [
+    { chu: moi[0].tieu_de, dung: false, buoc: moi[0].id },
+    { chu: moi[1].tieu_de, dung: false, buoc: moi[1].id },
+  ];
+  // Chỗ đứng của đáp án suy từ số bước — cùng một trận luôn ra cùng một thứ
+  // tự, nhưng không phải trận nào đáp án cũng nằm cuối.
+  ds.splice(n % 3, 0, { chu: dung.tieu_de, dung: true, buoc: dung.id });
+  return { hoi: "Bước cuối, bên ta làm gì?", dapAn: ds };
+}
+
+function cauDoanHtml(cd: CauDoan): string {
+  const nut = cd.dapAn
+    .map(
+      (a, i) =>
+        `<li><button type="button" class="sd-doan-nut" data-dung="${a.dung ? "1" : "0"}" data-buoc="${a.buoc}">${esc(String.fromCharCode(65 + i))}. ${esc(a.chu)}</button></li>`,
+    )
+    .join("");
+  return `<div class="sd-doan">
+    <p class="sd-doan-hoi">🤔 Đoán thử trước khi xem: ${esc(cd.hoi)}</p>
+    <ul class="sd-doan-ds">${nut}</ul>
+    <p class="sd-doan-loi" role="status" hidden></p>
+  </div>`;
 }
 
 // ── Điều khiển hiển thị theo bước ─────────────────────────────────────────
@@ -1092,7 +1483,55 @@ function applyStep(content: HTMLElement): void {
   };
   set("battle-step-count", `Bước ${stepIdx + 1}/${n}`);
   set("battle-step-title", `${esc(String(step.id))}. ${esc(step.tieu_de)}`);
+  // Mốc thời gian + địa danh của riêng bước. Thiếu cả hai thì ẩn hẳn dòng,
+  // không để lại một dòng trống đẩy chữ xuống.
+  const meta = document.getElementById("battle-step-meta");
+  if (meta) {
+    const phan: string[] = [];
+    if (step.thoi_gian?.trim())
+      phan.push(`<span class="sd-bm-thoi">🕘 ${esc(step.thoi_gian.trim())}</span>`);
+    if (step.dia_danh?.trim())
+      phan.push(`<span class="sd-bm-dia">📍 ${esc(step.dia_danh.trim())}</span>`);
+    meta.innerHTML = phan.join("");
+    meta.hidden = phan.length === 0;
+  }
   set("battle-step-desc", esc(step.mo_ta));
+  // Nguồn RIÊNG của bước, đặt ngay dưới câu nó chống lưng. Nguồn cấp trận vẫn
+  // ở cuối trang, hai khối không thay nhau — nên nhãn phải nói rõ đây là nguồn
+  // của BƯỚC, nếu không hai dòng «📚 Nguồn» giống hệt nhau trên cùng màn hình.
+  const nguonBuoc = (step.nguon ?? []).map((s) => String(s).trim()).filter(Boolean);
+  set(
+    "battle-step-nguon",
+    nguonBuoc.length
+      ? `<details class="sources sd-buoc-nguon"><summary>📚 Nguồn của bước này</summary><ul>${nguonBuoc
+          .map((s) => `<li>${esc(s)}</li>`)
+          .join("")}</ul></details>`
+      : "",
+  );
+
+  // Thẻ đoán: chỉ hiện ở bước áp chót, ngay trước lúc lộ bước cuối.
+  const oDoan = document.getElementById("battle-doan");
+  if (oDoan) {
+    const cd = stepIdx === n - 2 ? dungCauDoan(b) : null;
+    oDoan.innerHTML = cd ? cauDoanHtml(cd) : "";
+    oDoan.querySelectorAll<HTMLButtonElement>(".sd-doan-nut").forEach((nut) => {
+      nut.addEventListener("click", () => {
+        const loi = oDoan.querySelector<HTMLElement>(".sd-doan-loi");
+        if (!loi) return;
+        const dung = nut.dataset["dung"] === "1";
+        nut.classList.add(dung ? "sd-doan-dung" : "sd-doan-sai");
+        loi.textContent = dung
+          ? "✅ Đúng. Bấm «Bước sau ▶» để xem diễn biến."
+          : `❌ Chưa phải — đó là diễn biến ở bước ${nut.dataset["buoc"] ?? "?"}. Thử lại.`;
+        loi.hidden = false;
+        if (dung)
+          oDoan
+            .querySelectorAll<HTMLButtonElement>(".sd-doan-nut")
+            .forEach((x) => (x.disabled = true));
+      });
+    });
+  }
+
   if (step.thuy_trieu) {
     set("battle-tide", step.thuy_trieu === "len" ? "▲ Triều lên" : "▼ Triều xuống");
     const tide = document.getElementById("battle-tide");
@@ -1115,8 +1554,25 @@ function applyStep(content: HTMLElement): void {
       idx < stepIdx ? "sd-step-done" : idx === stepIdx ? "sd-step-current" : "sd-step-upcoming",
     );
     dot.setAttribute("aria-selected", String(idx === stepIdx));
-    dot.textContent = idx < stepIdx ? "✓" : String(idx + 1);
+    // Chỉ thay CON SỐ, không thay cả nội dung nút: ở chế độ dòng thời gian
+    // nút còn mang mốc thời gian và địa danh, ghi đè textContent là xoá sạch.
+    const oSo = dot.querySelector<HTMLElement>(".sd-step-so");
+    if (oSo) oSo.textContent = idx < stepIdx ? "✓" : String(idx + 1);
   });
+
+  // Dòng thời gian dài hơn bề ngang thì kéo mốc đang xem về giữa. Cuộn CHÍNH
+  // dải mốc chứ không scrollIntoView: scrollIntoView kéo theo cả trang, làm
+  // sa đồ nhảy khỏi tầm mắt mỗi lần đổi bước.
+  const rail = content.querySelector<HTMLElement>(".sd-step-rail-moc");
+  const moc = rail?.querySelector<HTMLElement>(".sd-step-current");
+  if (rail && moc && rail.scrollWidth > rail.clientWidth + 1) {
+    const rb = rail.getBoundingClientRect();
+    const mb = moc.getBoundingClientRect();
+    rail.scrollTo({
+      left: Math.max(0, rail.scrollLeft + (mb.left - rb.left) - (rb.width - mb.width) / 2),
+      behavior: yenTinh ? "auto" : "smooth",
+    });
+  }
 
   // Khối văn tịch: đoạn trích gắn với bước đang xem thì sáng lên. Không ẩn
   // các đoạn khác — người đọc vẫn thấy toàn cảnh tư liệu.
@@ -1153,11 +1609,20 @@ function renderFullDetail(content: HTMLElement): void {
   );
   const coThuyTrieu = b.buoc.some((s) => !!s.thuy_trieu);
 
+  // Dải bước thành DÒNG THỜI GIAN khi có ít nhất một bước khai `thoi_gian`
+  // hoặc `dia_danh`. Không có bước nào khai thì giữ nguyên dải chấm tròn cũ —
+  // 290 hồ sơ hiện có không đổi một pixel nào.
+  const coMoc = b.buoc.some((s) => !!s.thoi_gian?.trim() || !!s.dia_danh?.trim());
   const stepRail = b.buoc
-    .map(
-      (_step, i) =>
-        `<button type="button" class="sd-step-dot ${i === 0 ? "sd-step-current" : "sd-step-upcoming"}" role="tab" aria-selected="${i === 0}" data-step="${i}">${i + 1}</button>`,
-    )
+    .map((s, i) => {
+      // Bước không khai mốc vẫn hiện bình thường, chỉ thiếu dòng chữ phụ.
+      const phu = coMoc
+        ? `${s.thoi_gian?.trim() ? `<span class="sd-moc-thoi">${esc(s.thoi_gian.trim())}</span>` : ""}${
+            s.dia_danh?.trim() ? `<span class="sd-moc-dia">${esc(s.dia_danh.trim())}</span>` : ""
+          }`
+        : "";
+      return `<button type="button" class="sd-step-dot${coMoc ? " sd-step-moc" : ""} ${i === 0 ? "sd-step-current" : "sd-step-upcoming"}" role="tab" aria-selected="${i === 0}" data-step="${i}"><span class="sd-step-so">${i + 1}</span>${phu}</button>`;
+    })
     .join("");
 
   content.innerHTML = `<div class="sd-detail" id="sd-detail" data-xung-dot="${xungDot}">
@@ -1170,21 +1635,23 @@ function renderFullDetail(content: HTMLElement): void {
           ${b.chi_huy ? `<div><dt>Chỉ huy</dt><dd>${esc(b.chi_huy)}</dd></div>` : ""}
           ${b.doi_thu ? `<div><dt>Đối thủ</dt><dd>${esc(b.doi_thu)}</dd></div>` : ""}
           ${b.dia_diem ? `<div><dt>Địa điểm</dt><dd>${esc(b.dia_diem)}</dd></div>` : ""}
-          <div><dt>Năm</dt><dd>${esc(String(b.nam))}</dd></div>
+          ${
+            b.thoi_gian?.trim()
+              ? `<div><dt>Thời gian</dt><dd>${esc(b.thoi_gian.trim())}</dd></div>`
+              : `<div><dt>Năm</dt><dd>${esc(String(b.nam))}</dd></div>`
+          }
         </dl>
         <div class="sd-vi-tri" id="sd-vi-tri" data-battle="${esc(b.id)}" hidden></div>
       </div>
     </header>
+    ${lucLuongHtml(b)}
 
     <div class="sd-stage-wrap">
-      ${buildTongQuatSvg(b)}
-      <div class="sd-step-rail" role="tablist" aria-label="Các bước diễn biến">${stepRail}</div>
+      <div class="sd-svg-cuon">${buildTongQuatSvg(b)}</div>
+      <div class="sd-step-rail${coMoc ? " sd-step-rail-moc" : ""}" role="tablist" aria-label="Các bước diễn biến">${stepRail}</div>
     </div>
 
-    <div class="sd-legend">
-      <span class="sd-legend-item"><span class="sd-legend-swatch sd-legend-ta"></span> Quân ta — nét gạch chéo, khối tròn</span>
-      <span class="sd-legend-item"><span class="sd-legend-swatch sd-legend-doi"></span> ${esc(b.doi_thu || "Quân đối phương")} — nét ca-rô, khối thoi</span>
-    </div>
+    ${chuGiaiHtml(b)}
 
     <div class="sd-controls">
       <button id="battle-prev" type="button" class="sd-nav">◀ Bước trước</button>
@@ -1197,7 +1664,10 @@ function renderFullDetail(content: HTMLElement): void {
 
     <div class="sd-narrative">
       <h3 id="battle-step-title"></h3>
+      <p class="sd-buoc-meta" id="battle-step-meta" hidden></p>
       <p id="battle-step-desc"></p>
+      <div id="battle-step-nguon"></div>
+      <div id="battle-doan"></div>
     </div>
     ${vanTichHtml(b)}
 
@@ -1205,6 +1675,7 @@ function renderFullDetail(content: HTMLElement): void {
       ${b.ket_qua ? `<p><b>🏁 Kết quả:</b> ${esc(b.ket_qua)}</p>` : ""}
       ${b.y_nghia ? `<p><b>🌟 Ý nghĩa:</b> ${esc(b.y_nghia)}</p>` : ""}
     </div>
+    ${tonThatHtml(b)}
     ${sourcesHtml(b.nguon)}
   </div>`;
 
