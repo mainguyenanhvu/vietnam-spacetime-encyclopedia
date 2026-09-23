@@ -179,6 +179,65 @@ export const ICON_VE_TAY: Record<string, IconVe> = {
       },
     ],
   },
+
+  // --- Năm lớp trước đó dùng chung emoji: ⚔️ ×3, 🐉 ×2 (thêm 2026-09-23).
+
+  // Chiến dịch · trận đánh — hai kiếm bắt chéo
+  "chien-dich-tran-danh": {
+    mau: "#374151",
+    hinh: [
+      { d: "M4 4 L16.5 16.5", net: 2.2 },
+      { d: "M20 4 L7.5 16.5", net: 2.2 },
+      { d: "M14 19 L19 14 M5 14 L10 19", net: 2 },
+      { d: "M18 18 L20.5 20.5 M6 18 L3.5 20.5", net: 2.4 },
+    ],
+  },
+  // Danh tướng cổ–trung đại — khiên mang sao. KHÔNG dựng kiếm giữa khiên:
+  // thử rồi, ở 16px nó đọc thành thánh giá.
+  "danh-nhan-quan-su-co-trung-dai": {
+    mau: "#1e3a8a",
+    hinh: [
+      { d: "M12 2.5 L20 5.5 V11.5 C20 16.5 16.5 19.8 12 21.5 C7.5 19.8 4 16.5 4 11.5 V5.5 Z" },
+      {
+        d: "M12 6.5 L13.3 10.2 L17.2 10.3 L14.1 12.7 L15.2 16.4 L12 14.2 L8.8 16.4 L9.9 12.7 L6.8 10.3 L10.7 10.2 Z",
+        mau: "#ffffff",
+        khongVien: true,
+      },
+    ],
+  },
+  // Cần Vương — cờ đuôi nheo trên cán giáo
+  "nghia-si-can-vuong": {
+    mau: "#a16207",
+    hinh: [
+      { d: "M6 5 V21.5", net: 1.6 },
+      { d: "M6 1.8 L7.6 5 H4.4 Z" },
+      { d: "M7.2 5.5 L20.5 9 L7.2 12.5 Z" },
+    ],
+  },
+  // Huyền sử khai quốc — chim Lạc bay (hoa văn trống đồng)
+  "huyen-su-khai-quoc": {
+    mau: "#0f766e",
+    hinh: [
+      // cánh vươn lên
+      { d: "M7.5 13 C8.5 8.5 11 5 15.5 2.5 C14.5 6.5 14 9.5 13.5 12.5 Z" },
+      {
+        // thân, đuôi xoè dưới trái, cổ + đầu bên phải, mỏ dài
+        d:
+          "M2.5 14.5 C6 12 10.5 11.3 14.5 12.3 L16.8 10.6 C17.8 10 19 10.2 19.4 11 L23 11.6 " +
+          "L19.2 12.7 C18.2 15.3 14.2 17.3 9.8 17 L4 20.5 L5.8 16.3 Z",
+      },
+      // mào
+      { d: "M17.2 10.4 L15.8 6.8 L18.6 9.9 Z" },
+    ],
+  },
+  // Truyền thuyết dân gian — sách mở
+  "truyen-thuyet-dan-gian": {
+    mau: "#6d28d9",
+    hinh: [
+      { d: "M2.5 5.5 C5.5 4.5 9 4.8 11.3 6.5 V20 C9 18.5 5.5 18.3 2.5 19.2 Z" },
+      { d: "M21.5 5.5 C18.5 4.5 15 4.8 12.7 6.5 V20 C15 18.5 18.5 18.3 21.5 19.2 Z" },
+    ],
+  },
 };
 
 // I06 — ngôi sao vàng trên nền đỏ, dùng chung cho hai lớp như đặc tả ghi.
